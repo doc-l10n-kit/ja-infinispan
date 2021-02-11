@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:12
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 8.2.0.Beta2 and 8.1.2.Final\n"
+"permalink: /blog/:year/:month/:day/infinispan-820beta2-and-812final\n"
+"date: '2016-02-17T16:02:00.003-08:00'\n"
+"author: ttarrant\n"
+"tags: [ \"beta\",\n"
+"\"release\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8612907802238240813\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/02/infinispan-820beta2-and-812final.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:14
+msgid "Dear Infinispan community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:18
+msgid "we're proud to announce two fresh releases today.  First off is 8.2.0.Beta2, from our development branch. It is packed with a bunch of goodies:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:26
+msgid "lots of enhancements and additions to the administration console for Infinispan Server, such as cluster event views, task management, container administration and deployments. Some of these will be further refined before the upcoming Final release. If you prefer to manage your servers from the good ol' command-line, the CLI commands have also been similarly enhanced."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:30
+msgid "performance improvements for clustered reads, bulk and stream ops, and a sensible reduction in memory allocation rate. More improvements will come as we are rewriting some parts of the core to allow further optimizations."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:35
+msgid "a new distributed executor, https://docs.jboss.org/infinispan/8.2/apidocs/org/infinispan/manager/ClusterExecutor.html[ClusterExecutor] which does not require an existing distributed cache and which comes complete with Java 8 goodness such as CompletableFutures and lambda support. This nicely complements our existing Streams support."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:38
+msgid "a new, experimental index manager to store indexes on Infinispan with better scalability and indexing throughput. Additionally we've upgraded Lucene to 5.4.1 and Hibernate Search to 5.6.0.Alpha1"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:40
+msgid "the ability to indicate a number of nodes for initial cluster formation"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:41
+msgid "lots of bug fixes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:43
+msgid "We're still on track for a Final release at the end of the month."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:46
+msgid "We've also been fixing bugs in our stable 8.1 stream, which means we have a freshly released 8.1.2.Final."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:55
+msgid "Check out the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12328084[development release notes], the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12329500[stable release notes], http://infinispan.org/download/[download] the releases and tell us all about it on the https://developer.jboss.org/en/infinispan/content[forum], on our https://issues.jboss.org/projects/ISPN[issue tracker] or on IRC on the #infinispan channel on https://issues.jboss.org/projects/ISPN[Freenode]."
+msgstr ""

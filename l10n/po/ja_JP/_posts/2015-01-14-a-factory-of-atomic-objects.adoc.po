@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: 'A Factory of Atomic Objects '\n"
+"permalink: /blog/:year/:month/:day/a-factory-of-atomic-objects\n"
+"date: '2015-01-14T03:34:00.000-08:00'\n"
+"author: infinispan\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7119280900298638951\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/01/a-factory-of-atomic-objects.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:25
+msgid "Distributed systems aggregate large numbers of heterogeneous components that are subject to failures and asynchrony. To tame such a capricious nature, systems designers resort to non-blocking techniques such as http://en.wikipedia.org/wiki/State_machine_replication[state machine replication.] This approach provides consistent http://en.wikipedia.org/wiki/Non-blocking_algorithm[non-blocking] operations to a shared object replicated at a quorum of machines. State machine replication is a classical paradigm to consistently orchestrate concurrency between remote processes in a distributed system, and as such a weapon of choice to manage metadata operations. This approach is at work in many services such as Apache http://zookeeper.apache.org/[ZooKeeper], Google http://en.wikipedia.org/wiki/Distributed_lock_manager[Chubby], or http://openreplica.org/[Open Replica]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:37
+msgid "The (experimental)  https://github.com/otrack/Leads-infinispan/tree/atomicObjectFactory/atomic-factory[atomic object factory] module is an implementation of the state machine replication paradigm over Infinispan. Using the factory is as simple as employing the synchronized keyword in Java: it suffices to call it with a Serializable class, and it wraps for you the dependability, consistency and liveness guarantees of the instantiated object over multiple Infinispan servers. The factory is universal in the sense that it can instantiate an object of any (serializable) class atop an Infinispan cache, making transparently the object replicated and durable, while ensuring strong consistency despite concurrent access."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:39
+msgid "Basic Usage"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:43
+msgid "Using the AtomicObjectFactory is fairly simple. We illustrate below a base use case. Additional examples are provided in the maven test directories."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:53
+msgid "AtomicObjectFactory factory = new AtomicObjectFactory(c1); // c1 is a cache Set set = (Set) factory.getInstanceOf(HashSet.class, \"k\"); // k is the storage key set.add(\"something\"); // some call examples System.out.println(set.toString())  set.addAll(set); factory.disposeInstanceOf(HashSet.class, \"set\", true); // to persistently store the object"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:55
+msgid "Limitations & Guarantees"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:60
+msgid "The implementation requires that all the arguments of the methods of the object are Serializable, as well as the object itself. An object created by the factory is atomic provided that the cache which supports it is both synchronous and transactional."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:62
+msgid "Going Further"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:69
+#, no-wrap
+msgid ""
+"*White Paper.*\n"
+"The factory is described in Section 4 of the paper titled \"On the\n"
+"Support of Versioning in Distributed Key-Value Stores\" published at the\n"
+"33rd IEEE Symposium on Reliable Distributed Systems (SRDS'14). A\n"
+"preprint version of this paper is available at the following\n"
+"https://drive.google.com/file/d/0BwFkGepvBDQoTEdPS0x6VXhqMW8/edit?usp=sharing[location].\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:76
+#, no-wrap
+msgid ""
+"*High-level Implementation Details.*\n"
+"We built the factory on top of the transactional facility of Infinispan.\n"
+"In more details, when the object is created, we store both a local copy\n"
+"and a proxy registered as a cache listener. We serialize every call in a\n"
+"transaction consisting of a single put operation. When the call is\n"
+"de-serialized, it is applied to the local copy and, in case the calling\n"
+"process was local, the response value is returned.\n"
+msgstr ""

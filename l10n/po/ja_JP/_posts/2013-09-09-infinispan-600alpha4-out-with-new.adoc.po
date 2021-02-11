@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2013-09-09-infinispan-600alpha4-out-with-new.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-09-infinispan-600alpha4-out-with-new.adoc:17
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 6.0.0.Alpha4 out with new CacheLoader/CacheWriter API!\n"
+"permalink: /blog/:year/:month/:day/infinispan-600alpha4-out-with-new\n"
+"date: '2013-09-09T02:26:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"release\",\n"
+"\"leveldb\",\n"
+"\"listeners\",\n"
+"\"alpha\",\n"
+"\"rest\",\n"
+"\"cache store\",\n"
+"\"query\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8106316007662212850\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/09/infinispan-600alpha4-out-with-new.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-09-infinispan-600alpha4-out-with-new.adoc:35
+msgid "Infinispan 6.0.0.Alpha4 is now with a few very important changes, particularly around cache stores. We've completely revamped the cache store/loader API to align it a bit better with JSR-107 (old CacheStore has become CacheWriter) and to simplify creation of new implementations.  The new https://github.com/infinispan/infinispan/blob/6.0.0.Alpha4/core/src/main/java/org/infinispan/persistence/spi/CacheLoader.java[CacheLoader] and https://github.com/infinispan/infinispan/blob/6.0.0.Alpha4/core/src/main/java/org/infinispan/persistence/spi/CacheWriter.java[CacheWriter] should help implementors focus on the important operations and reduce the coding time. We've also created https://github.com/infinispan/infinispan/blob/6.0.0.Alpha4/core/src/main/java/org/infinispan/persistence/spi/AdvancedCacheLoader.java[AdvancedCacheLoader] and https://github.com/infinispan/infinispan/blob/6.0.0.Alpha4/core/src/main/java/org/infinispan/persistence/spi/AdvancedCacheWriter.java[AdvancedCacheWriter] in order to separate for bulk operations or purging for those implementations that wish optionally implement them. Expect a blog post from Mircea in the next few days providing many more details on this topic."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-09-infinispan-600alpha4-out-with-new.adoc:37
+msgid "This new Infinispan version comes with other important goodies:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-09-infinispan-600alpha4-out-with-new.adoc:39
+msgid "Rolling upgrades of a Infinsipan REST cluster"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-09-infinispan-600alpha4-out-with-new.adoc:40
+msgid "Support for Cache-Control headers for REST operations"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-09-infinispan-600alpha4-out-with-new.adoc:41
+msgid "Remote querying server modules and Hot Rod client update"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-09-infinispan-600alpha4-out-with-new.adoc:42
+msgid "REST and LevelDB stores added to Infinispan Server"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-09-infinispan-600alpha4-out-with-new.adoc:44
+msgid "https://github.com/infinispan/infinispan/blob/6.0.0.Alpha4/core/src/main/java/org/infinispan/notifications/KeyFilter.java[KeyFilters] can now be applied to Cache listeners"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-09-infinispan-600alpha4-out-with-new.adoc:46
+msgid "Allow Cache listener events to be invoked only on the primary data owner"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-09-infinispan-600alpha4-out-with-new.adoc:55
+msgid "For a complete list of features and fixes included in this release please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12321856[release notes]. Visit our http://www.jboss.org/infinispan/downloads[downloads] section to find the latest release and if you have any questions please check http://www.jboss.org/infinispan/forums[our forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-09-infinispan-600alpha4-out-with-new.adoc:59
+msgid "Cheers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-09-infinispan-600alpha4-out-with-new.adoc:60
+msgid "Galder"
+msgstr ""

@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: What's so cool about an asynchronous API?\n"
+"permalink: /blog/:year/:month/:day/whats-so-cool-about-asynchronous-api\n"
+"date: '2009-05-13T15:13:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \" asynchronous\", \"future\", \"API\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7174737965854828621\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/05/whats-so-cool-about-asynchronous-api.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:16
+msgid "Inspired by some thoughts from a recent conversation with http://jbossfox.blogspot.com/[JBoss Messaging's Tim Fox], I've decided to go ahead and implement a new, https://jira.jboss.org/jira/browse/ISPN-72[asynchronous API] for Infinispan."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:19
+msgid "To sum things up, this new API - additional methods on http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/Cache.html[Cache]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:25
+msgid "allow for asynchronous versions of put(), putIfAbsent(), putAll(), remove(), replace(), clear() and their various overloaded forms.  Unimaginatively called putAsync(), putIfAbsentAsync(), etc., these new methods return a http://java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/Future.html[Future] rather than the expected return type. E.g.,"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:31
+#, no-wrap
+msgid ""
+"V put(K key, V value);\n"
+"Future<V> putAsync(K key, V value);\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:34
+#, no-wrap
+msgid ""
+"boolean remove(K key, V value);\n"
+"Future<Boolean> removeAsync(K key, V value);\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:37
+#, no-wrap
+msgid ""
+"void clear();\n"
+"Future<Void> clearAsync();\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:39
+#, no-wrap
+msgid "// ... etc ...\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:49
+msgid "You guessed it, these methods do not block. They return immediately, and how cool is that! If you care about return values - or indeed simply want to wait until the operation completes - you do a Future.get(), which will block until the call completes. Why is this useful? Mainly because, in the case of clustered caches, it allows you to get the best of both worlds when it comes to synchronous and asynchronous mode transports."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:57
+msgid "Synchronous transports are normally recommended because of the guarantees they offer - the caller always knows that a call has properly propagated across the network, and is aware of any potential exceptions.  However, asynchronous transports give you greater parallelism. You can start on the next operation even before the first one has made it across the network. But this is at a cost: losing out on the knowledge that a call has safely completed."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:60
+msgid "With this powerful new API though, you can have your cake and eat it too. Consider:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:69
+#, no-wrap
+msgid ""
+"Cache<String, String> cache = getCache();\n"
+"Future<String> f1 = cache.putAsync(k1, v1);\n"
+"Future<String> f2 = cache.putAsync(k2, v2);\n"
+"Future<String> f3 = cache.putAsync(k3, v3);\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:73
+#, no-wrap
+msgid ""
+"f1.get();\n"
+"f2.get();\n"
+"f3.get();\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:87
+msgid "The network calls - possibly the most expensive part of a clustered write - involved for the 3 put calls can now happen in parallel. This is even more useful if the cache is distributed, and k1, k2 and k3 map to different nodes in the cluster - the processing required to handle the put operation on the remote nodes can happen simultaneously, on different nodes. And all the same, when calling Future.get(), we block until the calls have completed successfully. And we are aware of any exceptions thrown. With this approach, elapsed time taken to process all 3 puts should - theoretically, anyway - only be as slow as the single, slowest put()."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:91
+msgid "This new API is now in Infinispan's trunk and yours to enjoy. It will be a main feature of my next release, which should be out in a few days.  Please do give it a spin - I'd love to hear your thoughts and experiences."
+msgstr ""

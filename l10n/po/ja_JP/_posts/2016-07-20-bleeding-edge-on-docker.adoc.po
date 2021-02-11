@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2016-07-20-bleeding-edge-on-docker.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-07-20-bleeding-edge-on-docker.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Bleeding edge on Docker\n"
+"permalink: /blog/:year/:month/:day/bleeding-edge-on-docker\n"
+"date: '2016-07-20T01:21:00.000-07:00'\n"
+"author: slaskawiec\n"
+"tags: [ \" docker\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5999698996115777673\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/07/bleeding-edge-on-docker.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-07-20-bleeding-edge-on-docker.adoc:16
+msgid "As you may have noticed our https://hub.docker.com/r/jboss/infinispan-server[Docker images] are published together with (or very soon after) releases. But what if you want to try out some brand features which have just been merged? In that case you need to build an image by yourself."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2016-07-20-bleeding-edge-on-docker.adoc:18
+#, no-wrap
+msgid "Step #1 - Clone JBoss Docker image repository"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-07-20-bleeding-edge-on-docker.adoc:23
+msgid "At first you will need to clone our Infinispan Docker images:"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2016-07-20-bleeding-edge-on-docker.adoc:26
+#, no-wrap
+msgid "Step #2 - Build or download the latest SNAPSHOT"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-07-20-bleeding-edge-on-docker.adoc:34
+msgid "There are two options here - you can build the distribution yourself or use SNAPSHOTs available on https://repository.jboss.org/nexus/content/repositories/snapshots/org/infinispan/[JBoss Nexus repository]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-07-20-bleeding-edge-on-docker.adoc:39
+msgid "The first option requires checking out the Infinispan source code and performing a Maven build:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-07-20-bleeding-edge-on-docker.adoc:43
+msgid "The second one is much simpler (Infinispan SNAPSHOTs are pushed into the repository after each successful build:"
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2016-07-20-bleeding-edge-on-docker.adoc:46
+#, no-wrap
+msgid "Step #3 - building Infinispan Docker image"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-07-20-bleeding-edge-on-docker.adoc:54
+msgid "One of the steps for building Infinispan Docker image is to download the distribution from http://infinispan.org/download/[Infinispan Download] page. We need to slightly modify this step and use our manually downloaded packages."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-07-20-bleeding-edge-on-docker.adoc:58
+msgid "Modify the Dockerfile as shown below:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-07-20-bleeding-edge-on-docker.adoc:60
+msgid "Now you are ready to invoke the Docker build:"
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2016-07-20-bleeding-edge-on-docker.adoc:65
+#, no-wrap
+msgid "Conclusion"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-07-20-bleeding-edge-on-docker.adoc:73
+msgid "As you can see building a SNAPSHOT based docker image is very simple.  From my own experience I can tell you that pushing it into Docker Hub is the fastest way to start playing with it in any PaaS environment (e.g.  https://www.openshift.com/devpreview/register.html[Openshift Online])"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-07-20-bleeding-edge-on-docker.adoc:75
+msgid "Happy building!"
+msgstr ""

@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: The road to Infinispan 10 (Alpha1)\n"
+"permalink: /blog/:year/:month/:day/the-road-to-infinispan-10-alpha1\n"
+"date: '2018-11-21T00:57:00.005-08:00'\n"
+"author: ttarrant\n"
+"tags: [ \" release\", \"final\", \"alpha\", \"roadmap\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2331026949984411099\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/11/the-road-to-infinispan-10-alpha1.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:12
+msgid "Dear all,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:14
+msgid "Today we are releasing 10.0.0.Alpha1 and 9.4.2.Final."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:17
+msgid "Infinispan 9.4.2.Final comes with a number of bug fixes and some small additional features:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:21
+msgid "https://issues.jboss.org/browse/ISPN-9655[ISPN-9655] REST Access Log headers"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:24
+msgid "https://issues.jboss.org/browse/ISPN-8144[ISPN-8144] & https://issues.jboss.org/browse/ISPN-9661[ISPN-9661] Cross-Site replication statistics"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:26
+msgid "https://issues.jboss.org/browse/ISPN-9708[ISPN-9708] Expose the executor services through JMX"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:28
+msgid "https://issues.jboss.org/browse/ISPN-9732[ISPN-9732] Local iteration optimization with write behind is valid for non shared stores"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:30
+msgid "https://issues.jboss.org/browse/ISPN-9717[ISPN-9717] Fix Integer overflow for lifespan and maxIdle"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:34
+msgid "We have begun working on what will become Infinispan 10. As with all new major releases, this will come with a number of important changes."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:44
+#, no-wrap
+msgid ""
+"*New Server*\n"
+"We are working on a new lightweight server, currently dubbed _ServerNG_,\n"
+"which will supersede the current WildFly-based offering. The new server\n"
+"will have a smaller disk and memory footprint, a new RESTful admin\n"
+"interface, improved security. It will still use familiar components\n"
+"(Elytron for security, Narayana for transactions, etc) but we hope that\n"
+"the installation and usability experience will be most improved. A\n"
+"dedicated blog post will describe in detail what is coming.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:48
+#, no-wrap
+msgid ""
+"*Long-term Storage Format*\n"
+"The persistent storage format will be changed so that it will be easier\n"
+"to transparently make changes to it without requiring further\n"
+"exporters/importers.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:51
+#, no-wrap
+msgid ""
+"*Non-blocking listeners*\n"
+"The listener implementation will be replaced with a non-blocking\n"
+"implementation.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:54
+#, no-wrap
+msgid ""
+"*Asynchronous CacheLoader/Store*\n"
+"Store operations will be ran in another thread to provide non blocking\n"
+"for main threads\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:60
+#, no-wrap
+msgid ""
+"*Improved statistics*\n"
+"Infinispan statistics have been traditionally over-simplistic, offering\n"
+"mostly basic averages for writes and reads. We are going to implement\n"
+"percentiles on a histogram as well as recording tracing information so\n"
+"that you will be able to know how much time is being spent in the\n"
+"various subsystems (clustering, persistence, etc.)\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:67
+#, no-wrap
+msgid ""
+"*New API*\n"
+"The current Infinispan API, based around Java's _ConcurrentHashMap_\n"
+"design, does not offer the flexibility required to support modern\n"
+"reactive designs as well as the various extensions we've added over the\n"
+"years (counters, multimaps, etc). We are therefore working on a new\n"
+"modern API design which we will be describing with a number of blog\n"
+"posts in the near future.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:70
+#, no-wrap
+msgid ""
+"*Agroal JDBC Connection Pool*\n"
+"We are replacing the JDBC connection pool implementation with\n"
+"https://agroal.github.io/[Agroal].\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:75
+#, no-wrap
+msgid ""
+"*Kubernetes Operators*\n"
+"Operators are all the rage in the Kubernetes world, and we are working\n"
+"on an Infinispan Operator which will take care of managing and\n"
+"monitoring the health of an Infinispan cluster, handle scale up/scale\n"
+"down safely, perform upgrades and more.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:80
+msgid "Infinispan 10.0.0.Alpha1 is the first release from our development branch. It currently includes the following features on top of what is in 9.4.2.Final:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:84
+msgid "https://issues.jboss.org/browse/ISPN-9666[ISPN-9666] Agroal JDBC Connection pool"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:86
+msgid "https://issues.jboss.org/browse/ISPN-9688[ISPN-9688] Internal REST server modularization"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-21-the-road-to-infinispan-10-alpha1.adoc:92
+msgid "Please report any issues in our https://issues.jboss.org/browse/ISPN[issue tracker] and join the conversation in our https://infinispan.zulipchat.com/[Zulip Chat] to shape up our next release."
+msgstr ""

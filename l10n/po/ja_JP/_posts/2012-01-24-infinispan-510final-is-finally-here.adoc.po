@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 5.1.0.FINAL is finally here!!\n"
+"permalink: /blog/:year/:month/:day/infinispan-510final-is-finally-here\n"
+"date: '2012-01-24T10:06:00.000-08:00'\n"
+"author: galder\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-665025444535275258\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/01/infinispan-510final-is-finally-here.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:14
+msgid "After over 4 months of development, testing, profiling...etc, I'm extremely pleased to announce that Infinispan 5.1.0.FINAL 'Brahma' is out now! It comes with some very important brand new features such as:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:21
+msgid "http://infinispan.blogspot.com/2011/10/transaction-remake-in-infinispan-51.html[O]http://infinispan.blogspot.com/2011/10/transaction-remake-in-infinispan-51.html[ptimistic vs pessimistic locking separation], http://infinispan.blogspot.com/2011/11/more-locking-improvements-in-infinispan.html[single node locking] and https://community.jboss.org/wiki/LockReorderingForAvoidingDeadlocks[lock reordering]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:23
+msgid "http://infinispan.blogspot.com/2011/10/infinispan-510beta2-is-out-and.html[A]http://infinispan.blogspot.com/2011/10/infinispan-510beta2-is-out-and.html[symmetric cluster supports]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:25
+msgid "http://infinispan.blogspot.com/2011/10/infinispan-510beta3-is-out-with-atomic.html[Fine-grained atomic maps]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:27
+msgid "We've also implemented a bunch of improvements such as:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:30
+msgid "http://infinispan.blogspot.com/2012/01/configuration-changes-in-infinispan.html[Move to Stax XML parser and new programmatic configuration]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:33
+msgid "http://infinispan.blogspot.com/2011/10/infinispan-510beta3-is-out-with-atomic.html[Hot Rod protocol 1.1 to provide better support for environments with virtual nodes enabled]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:35
+msgid "http://infinispan.blogspot.com/2011/12/startup-performance.html[Startup performance]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:37
+msgid "http://infinispan.blogspot.com/2011/09/next-infinispan-510-alpha-hits-streets.html[Push-based state transfer for replicated caches]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:42
+msgid "This has been a huge effort by all the Infinispan community including forum users, which have been giving us tremendous feedback, occasional community contributors and core developers. Thank you very much for all the effort you've put in!!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:49
+msgid "We've build a migration guide for anyone upgrading for 5.0.0.FINAL to 5.1.0.FINAL, so make sure you https://docs.jboss.org/author/display/ISPN/Upgrading+from+5.0+to+5.1[read it] if you're upgrading."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:60
+msgid "As usual, http://www.jboss.org/infinispan/downloads[download] the release, provide http://community.jboss.org/en/infinispan?view=discussions[feedback], read through the detailed https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12313470[changelog].  And check out our https://docs.jboss.org/author/display/ISPN51/Home[documentation] for this version too."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:64
+msgid "Cheers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:65
+msgid "Galder"
+msgstr ""

@@ -1,0 +1,368 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:13
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: New Redis Cache Store Introduced in Infinispan 8\n"
+"permalink: /blog/:year/:month/:day/new-redis-cache-store-introduced-in\n"
+"date: '2015-09-14T00:40:00.000-07:00'\n"
+"author: infinispan\n"
+"tags: [ \"release\",\n"
+"\"redis\",\n"
+"\"cache store\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6539755624644109074\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/09/new-redis-cache-store-introduced-in.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:18
+msgid "A new cache store for storage of cache data within the Redis key/value server has been introduced with Infinispan 8. This allows all storage of cache data to be stored in a centralised Redis deployment which all Infinispan clients access."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:24
+msgid "The cache store supports 3 Redis deployment topologies. They are, single server, Sentinel and cluster (Redis v3 required). Redis versions 2.8+ and 3.0+ are currently supported."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:29
+msgid "Data expiration and purging is handled via Redis itself, reducing workload from Infinispan servers to manually delete cache entries."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:32
+#, no-wrap
+msgid "*Topologies*"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:34
+#, no-wrap
+msgid "*Single Server*"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:41
+msgid "In a single server deployment, the cache store is given the location of a Redis master server with which it connects to directly to handle all data storage. Using this topology, Redis has no fault tolerance unless a custom solution is built on top of Redis. To declare a single server local cache store:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:47
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:119
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:196
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:271
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:333
+msgid "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:49
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:121
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:198
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:273
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:335
+msgid "<infinispan"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:51
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:123
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:200
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:275
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:337
+msgid "    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\""
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:54
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:126
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:203
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:278
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:340
+msgid "    xsi:schemaLocation=\"urn:infinispan:config:8.0 http://www.infinispan.org/schemas/infinispan-config-8.0.xsd"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:57
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:129
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:206
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:281
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:343
+msgid "                          urn:infinispan:config:store:redis:8.0 http://www.infinispan.org/schemas/infinispan-cachestore-redis-config-8.0.xsd\""
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:59
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:131
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:208
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:283
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:345
+msgid "    xmlns=\"urn:infinispan:config:8.0\""
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:61
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:133
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:210
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:285
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:347
+msgid "    xmlns:redis=\"urn:infinispan:config:store:redis:8.0\" >"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:65
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:137
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:214
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:289
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:351
+msgid "    <cache-container>"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:67
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:139
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:216
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:291
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:353
+msgid "        <local-cache>"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:69
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:141
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:218
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:293
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:355
+msgid "            <persistence passivation=\"false\">"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:72
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:144
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:221
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:296
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:358
+msgid "                <redis-store xmlns=\"urn:infinispan:config:store:redis:8.0\""
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:75
+msgid "                    topology=\"server\" socket-timeout=\"10000\" connection-timeout=\"10000\">"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:77
+msgid "                    <redis-server host=\"server1\" />"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:81
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:157
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:234
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:309
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:371
+msgid "                    <connection-pool min-idle=\"6\" max-idle=\"10\" max-total=\"20\" min-evictable-idle-time=\"30000\" time-between-eviction-runs=\"30000\" />"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:83
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:159
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:236
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:311
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:373
+msgid "                </redis-store>"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:85
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:161
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:238
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:313
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:375
+msgid "            </persistence>"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:87
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:163
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:240
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:315
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:377
+msgid "        </local-cache>"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:89
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:165
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:242
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:317
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:379
+msgid "    </cache-container>"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:91
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:167
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:244
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:319
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:381
+msgid "</infinispan>"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:104
+msgid "Note the topology attribute is declared as *server*. This is needed to ensure a single server Redis topology is applied by the cache store.  Only a single Redis server need be declared (only the first server will be used if multiple servers are declared) and the port will default to the Redis port 6379, but can be overridden using the port attribute. All connections are handled via a connection pool, which can optionally also test the validity of a connection on creation, lease, return from and when idling in the connection the pool."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:105
+#, no-wrap
+msgid "*Sentinel*"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:113
+msgid "The Sentinel topology relies on Redis Sentinel servers to connect to a Redis master server. Here, Infinispan connects to Redis Sentinel servers, requesting a master server name, then gets forwarded on to the correct location of the Redis master server. This topology gives resilience via Redis Sentinel, providing failure detection and automatic failover of Redis servers."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:147
+msgid "                    topology=\"sentinel\" master-name=\"mymaster\" socket-timeout=\"10000\" connection-timeout=\"10000\">"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:149
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:301
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:363
+msgid "                    <sentinel-server host=\"server1\" />"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:151
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:303
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:365
+msgid "                    <sentinel-server host=\"server2\" />"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:153
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:305
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:367
+msgid "                    <sentinel-server host=\"server3\" />"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:182
+msgid "For a Sentinel deployment, the topology attribute changes to *sentinel*.  A master name must also be specified to select the correct Redis master required as Sentinel can monitor multiple Redis master servers. The Sentinel server is declared using a sentinel-server XML tag, which you’ll notice is different to the main Redis servers used in single server and cluster topologies. This is to allow defaulting of the Sentinel port to 26379 if not declared. At least one Sentinel server must be declared, though if you run more Sentinel servers, they should all be declared too for the benefit of failure detection of the Sentinel servers themselves."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:183
+#, no-wrap
+msgid "*Cluster*"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:190
+msgid "A cluster topology gives Infinispan the ability to connect to a Redis cluster. One or more cluster nodes are declared to infinispan (the more the better) which are then used to store all data. Redis cluster supports failure detection so if a master node in the cluster fails, a slave takes over. Redis v3 is required to run a Redis cluster."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:224
+msgid "                    topology=\"cluster\" socket-timeout=\"10000\" connection-timeout=\"10000\">"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:226
+msgid "                    <redis-server host=\"server1\" port=\"6379\" />"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:228
+msgid "                    <redis-server host=\"server2\" port=\"6379\" />"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:230
+msgid "                    <redis-server host=\"server3\" port=\"6379\" />"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:253
+msgid "For cluster deployments, the topology attribute must change to *cluster.* One or more Redis cluster nodes must be declared to access the cluster which uses the redis-server XML tag. Note that when operating a cluster, database IDs are not supported."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:256
+#, no-wrap
+msgid "*Multiple Cache Stores, Single Redis Deployment*"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:265
+msgid "Redis single server and Sentinel deployments support the option of database IDs. A database ID allows a single Redis server to host multiple individual databases, referenced via an integer ID number. This allows Infinispan to support multiple cache stores on the same Redis deployment, isolating the data between the stores. Redis cluster does not support the database ID. A database ID is defined using the database attribute on the redis-store XML tag."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:299
+msgid "                    topology=\"sentinel\" master-name=\"mymaster\" socket-timeout=\"10000\" connection-timeout=\"10000\" database=\"5\">"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:321
+#, no-wrap
+msgid "*Redis Password Authentication*"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:327
+msgid "In order to secure access to a Redis server, a password can optionally be used in Redis. This then requires the cache store to declare the password when connecting. The password is added via a password attribute on the redis-store XML tag."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:361
+msgid "                    topology=\"sentinel\" master-name=\"mymaster\" socket-timeout=\"10000\" connection-timeout=\"10000\" password=\"mysecret\">"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:383
+#, no-wrap
+msgid "*What about SSL support?*"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:389
+msgid "Redis does not provide protocol encryption, instead leaving this to other specialist software. At this time, the Redis client used to integrate Infinispan with Redis servers (Jedis) does not yet support SSL connection negotiation natively."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:390
+#, no-wrap
+msgid "**\n"
+msgstr ""

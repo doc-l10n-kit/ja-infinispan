@@ -1,0 +1,307 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 11.0.0.Final\n"
+"permalink: /blog/:year/:month/:day/infinispan-11\n"
+"date: '2020-06-15T12:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:10
+#, no-wrap
+msgid "Infinispan 11.0.0.Final \"Corona Extra\""
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:13
+msgid "Dear Infinispan community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:16
+msgid "We're proud to announce the release of Infinispan 11. In the tradition of assigning beer codenames to our releases, we decided that \"Corona Extra\" would be a significant representation of the period during which most of the development has happened.  We hope that you, your families and friends have not been impacted by the pandemic."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:17
+#, no-wrap
+msgid "But didn't you release 10.x not long ago ?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:20
+msgid "Indeed, but version numbers are just that: numbers. We are still continuing our near-quarterly releases, but, from now on, these will be identified by major version numbers."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:22
+#, no-wrap
+msgid "So, what's new in Infinispan 11 ?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:24
+msgid "As usual we added new features, improved existing ones and prepared the groundwork for upcoming features."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:26
+#, no-wrap
+msgid "Conflict detection and resolution for Asynchronous Cross-Site Replication"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:28
+msgid "Cross-site replication is one of our most used features, as it enables a number of very useful use-cases such as geographical load distribution, zero-downtime disaster recovery and follow-the-sun data centers."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:31
+msgid "In this release we completely overhauled the way we implement asynchronous cross-site replication by introducing conflict resolution, based on vector clocks, as well as multiple site masters to increase throughput and reliability.  This means that you can have multiple active sites safely replicating data between each other."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:33
+#, no-wrap
+msgid "Server security overhaul"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:37
+msgid "Infinispan Server's security, while very powerful, was also tricky to set up because of the configuration complexity.  Since we wanted to make the link:/blog/2020/06/04/server-secure-by-default/[server secure by default], we put a lot of work in simplifying the configuration and removing all of the boilerplate.  Additionally, if you are securing the server with https://keycloak.org[Keycloak], accessing the console will correctly obtain credentials through the realm login page."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:39
+#, no-wrap
+msgid "Non-blocking internals"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:43
+msgid "Our quest to make better use of the available hardware resources in all deployment models (bare-metal, containerized, virtualized) continues as we've now consolidated a lot of thread-pools into just two: non-blocking and blocking.  Most of the code now makes use of the non-blocking pool. Paths which may block, such as certain persistent stores, use the blocking pool so that they don't hold up work that may be processed without blocking.  This release also includes a new non-blocking Store SPI, so that you can take advantage of stores with real non-blocking I/O."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:45
+#, no-wrap
+msgid "Clustering"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:48
+msgid "As Infinispan is participating in https://cloudbutton.eu/[CloudButton], a Serverless Data Analytics Platform which is part of the https://ec.europa.eu/programmes/horizon2020/[European Union's Horizon 2020 research and innovation programme], we have introduced a new optional feature which allows scaling by adding new nodes to a cluster without state-transfer. This means that you can add capacity with zero-impact to your operations. Obviously this comes at the cost of reduced resilience in case of failures, but, for scenarios where high availability is not required, this gives you a highly scalable in-memory storage solution."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:50
+msgid "If high availability is your thing, the rebalancing algorithm which decides how segments (our subdivision of the data space) are mapped to nodes has been overhauled to be much more accurate and fairer."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:52
+#, no-wrap
+msgid "Query/Indexing"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:55
+msgid "Querying and indexing will be the major focus in Infinispan 12 (with the long awaited upgrade to https://hibernate.org/search/[Hibernate Search 6] and https://lucene.apache.org/[Lucene 8]).  In preparation for that, *a lot* of work has gone into deprecations, usability, clean ups and documentation."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:57
+#, no-wrap
+msgid "Hot Rod Client improvements"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:59
+msgid "Many usability changes have been added to our Java Hot Rod client:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:61
+msgid "a Hot Rod URI as a compact way to configure a connection"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:62
+msgid "automatic creation of caches on demand using supplied configurations/templates with support for wildcards"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:63
+msgid "improved iteration of entries by concurrently splitting work across segments/nodes"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:64
+#, no-wrap
+msgid "Other Server changes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:66
+msgid "If you are using the JDBC cache store to persist your cache entries to a database, Infinispan Server now restores the ability to create shared datasources which was lost when we abandoned the WildFly base."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:67
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:70
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:71
+#, no-wrap
+msgid "CLI"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:69
+msgid "The CLI received a number of new features such as logging manipulation, obtaining sever reports and user management, superseding the `user-tool` script."
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:71
+#, no-wrap
+msgid "ispn101welcome.png"
+msgstr ""
+
+#. type: Named 'caption' AttributeList argument for style 'caption'
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:73
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:81
+#, no-wrap
+msgid "Console"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:76
+msgid "Our console overhaul, which started in 10, continues with lots of new features, integrations and polishing.  Highlights are:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:78
+msgid "entry creation dialog box"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:79
+msgid "querying"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:80
+msgid "KeyCloak integration"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:82
+#, no-wrap
+msgid "onsole"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:82
+#, no-wrap
+msgid "ispn110console.png"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:84
+#, no-wrap
+msgid "Clouds, containers and operators"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:87
+msgid "Our Infinispan Server image is now based on `ubi-minimal:8.2`."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:89
+msgid "And thanks to our friends over at https://quarkus.io[Quarkus], Infinispan Server is now also available as a native image built using https://graalvm.org[GraalVM]. This image is available on Quay.io and Docker Hub."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:91
+msgid "The Kubernetes Operator adds a new Cache Custom Resource and the ability to expose services via Ingress and Routes."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:92
+#, no-wrap
+msgid "Documentation"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:94
+msgid "Documentation has also received a lot of love in all areas:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:96
+msgid "Added procedural content for rolling upgrades, Cache CR with the Operator, server patching, misc CLI commands, using RemoteCacheConfigurationBuilder."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:97
+msgid "Procedural content for different upgrade and migration tasks included in Upgrade Guide."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:98
+msgid "Operator and Spring Boot Starter guides now provide stable and development versions from the index page."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:99
+msgid "Updated index.html and throughout documentation to improve high-level context and aid retrievability."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:100
+msgid "Getting Started content updated and streamlined."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:101
+msgid "Applied several modifications, additions, and removals to documentation via community feedback."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:102
+#, no-wrap
+msgid "What's next ?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:105
+msgid "As briefly mentioned above, Infinispan 12 will be our next release, scheduled for this autumn. We will be working on query/index improvements, backup/restore capabilities as well as the usual load of improvements, clean-ups across the board. We will keep you posted with development release and blogs about upcoming highlights. If you'd like to contribute, just get in touch."
+msgstr ""

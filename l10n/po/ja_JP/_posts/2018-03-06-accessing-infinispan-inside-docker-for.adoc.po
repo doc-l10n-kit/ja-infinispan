@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-03-06-accessing-infinispan-inside-docker-for.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-06-accessing-infinispan-inside-docker-for.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Accessing Infinispan inside Docker for Mac\n"
+"permalink: /blog/:year/:month/:day/accessing-infinispan-inside-docker-for\n"
+"date: '2018-03-06T03:00:00.000-08:00'\n"
+"author: galder\n"
+"tags: [ \" docker\", \"mac\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1613527818432752116\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/03/accessing-infinispan-inside-docker-for.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-06-accessing-infinispan-inside-docker-for.adoc:15
+msgid "Connecting to Infinispan instances that run inside Docker for Mac using the Java Hot Rod client can be tricky. In this blog post we'll be analyzing what makes this environment tricky and how to get around the issue."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-06-accessing-infinispan-inside-docker-for.adoc:23
+msgid "The tricky thing about Docker for Mac is that internal container IP addresses are not accessible externally. This is a https://github.com/docker/for-mac/issues/155[known issue] and it can be hard to workaround it. In container orchestrators such as Openshift, you can use Routes to allow external access to the containers. However, if running vanilla Docker for Mac, the simplest option is to map ports over to the local machine."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-06-accessing-infinispan-inside-docker-for.adoc:29
+msgid "Why is this important? When someone connects using the Hot Rod protocol, the server returns the current topology to the client. When Infinispan runs inside of Docker, this topology by default contains internal IP addresses. Since those are not accessible externally in Docker for Mac, the client won't be able to connect."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-06-accessing-infinispan-inside-docker-for.adoc:40
+msgid "To workaround the issue, Infinispan server Hot Rod endpoint can be configured with external host/port combination, but doing this would require modifying the server's configuration. A simpler method to get around the issue is to configure the client's intelligence to be Basic.  By doing this the server won't send topology updates nor will the client be able to locate where keys are located using hashing. This has a negative performance impact since all requests to Infinispan single server or server cluster would need to go over the same IP+port.  However, for demo or sample applications on Mac environments, this is reasonable thing to do."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-06-accessing-infinispan-inside-docker-for.adoc:42
+msgid "So, how do we do all of this?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-06-accessing-infinispan-inside-docker-for.adoc:45
+msgid "First, start Infinispan server and map Hot Rod's default port 11222 to the local 11222 port:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-06-accessing-infinispan-inside-docker-for.adoc:47
+msgid "docker run -it -p 11222:11222 jboss/infinispan-server:9.2.0.Final"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-06-accessing-infinispan-inside-docker-for.adoc:49
+msgid "Open your IDE and create a project with this dependencies:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-06-accessing-infinispan-inside-docker-for.adoc:55
+msgid "Finally, create a class that connects to Infinispan and does a simple put/get sequence:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-06-accessing-infinispan-inside-docker-for.adoc:60
+msgid "Cheers, Galder"
+msgstr ""

@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2012-08-30-hotrod-c-client-beta1-is-out.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-08-30-hotrod-c-client-beta1-is-out.adoc:13
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: HotRod C# client Beta1 is out!\n"
+"permalink: /blog/:year/:month/:day/hotrod-c-client-beta1-is-out\n"
+"date: '2012-08-30T13:04:00.000-07:00'\n"
+"author: mmarkus\n"
+"tags: [ \"csharp\",\n"
+"\"hotrod\",\n"
+"\"gsoc\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6420755109991399954\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/08/hotrod-c-client-beta1-is-out.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-08-30-hotrod-c-client-beta1-is-out.adoc:16
+msgid "Thanks to a sustained effort from  http://twitter.com/sunimalr[Sunimal Rathnayake], the C# HotRod client has evolved quite a bit:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-08-30-hotrod-c-client-beta1-is-out.adoc:19
+msgid "the public API was polished and finalized"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-08-30-hotrod-c-client-beta1-is-out.adoc:23
+msgid "the client was upgraded to 2nd level of intelligence: that means that it can automatically piggyback cluster's topology information from the servers. E.g. if a new server is added, the client is made aware of it and can start balancing requests towards that server"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-08-30-hotrod-c-client-beta1-is-out.adoc:24
+msgid "a pluggable load balancing policy was added (defaults to round robin) "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-08-30-hotrod-c-client-beta1-is-out.adoc:25
+msgid "various other bug fixes backed by an growing test suite"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-08-30-hotrod-c-client-beta1-is-out.adoc:30
+msgid "We've also set up https://community.jboss.org/wiki/HotRodCClientDevelopmentSetup[a development setupiv document] to speed you up in case you want to take a look at the code or contribute. "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-08-30-hotrod-c-client-beta1-is-out.adoc:38
+msgid "You can download it from https://github.com/infinispan/dotnet-client/downloads[here] - please give it a try and don't hesitate to post your comments to our http://www.jboss.org/infinispan/mailinglists[forums], http://www.jboss.org/infinispan/mailinglists[the mailing list]  or irc://irc.freenode.org/infinispan[contact us directly on IRC] for a chat!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-08-30-hotrod-c-client-beta1-is-out.adoc:42
+msgid "Cheers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-08-30-hotrod-c-client-beta1-is-out.adoc:44
+msgid "Mircea"
+msgstr ""

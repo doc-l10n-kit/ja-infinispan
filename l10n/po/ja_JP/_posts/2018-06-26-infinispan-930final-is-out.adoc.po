@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 9.3.0.Final is out!\n"
+"permalink: /blog/:year/:month/:day/infinispan-930final-is-out\n"
+"date: '2018-06-26T00:12:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \" release\", \"final\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2386516872349736916\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/06/infinispan-930final-is-out.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:14
+msgid "We're delighted to announce the release of Infinispan 9.3.0.Final, which is a culmination of several months of hard work by the entire Infinispan community. Here's a summary of what you can find within it:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:18
+msgid "First final release to work with both Java 8 and Java 10. Note that Infinispan only works in classpath mode."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:22
+msgid "Transaction support Hot Rod. The java Hot Rod client can participate in Java transactions via Synchronization or XA enlistment. Note that recovery isn't supported yet."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:25
+msgid "Caches can now configure the maximum number of attempts to start a CacheWriter/CacheLoader on startup before cache creation fails."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:27
+msgid "Write-behind stores are now fault-tolerant by default."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:30
+msgid "Segmented On Heap Data Container. It improves performance of stream operations."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:32
+msgid "Server upgraded to Wildfly 13."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:37
+msgid "We have introduced several WildFly feature packs to make it easier for Infinispan to be utilised on WildFly instances via the Server Provisioning Plugin. The following feature packs have been created, most notably:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:39
+msgid "infinispan-feature-pack-client"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:42
+msgid "All of the modules required to connect to a hotrod server via the client"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:44
+msgid "infinispan-feature-pack-embedded"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:46
+msgid "The modules required for embedded instances of Infinispan"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:48
+msgid "infinispan-feature-pack-embedded-query"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:50
+msgid "The same as above but with query capabilities"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:52
+msgid "infinispan-feature-pack-wf-modules"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:54
+msgid "This is equivalent to the Wildfly-modules.zip"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:56
+msgid "Hibernate second-level cache provider works with Hibernate ORM 5.3."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:61
+msgid "The Hot Rod Server allows now to use multiple protocols with a Single Port. The initial version supports HTTP/1.1, HTTP/2 and Hot Rod.  Switching protocols can be done using TLS/ALPN and HTTP/1.1 Upgrade header."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:64
+msgid "Admin console - improved all editors (schema, scripts, JSON data) to include syntax highlighting."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:68
+msgid "Several enhancements in the Java Hot Rod client allowing to read and write data in different formats such as JSON, for cache operations and deployed filters/converters."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:70
+msgid "Cluster wide max idle expiration."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:72
+msgid "Component Upgrades"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:74
+msgid "Hibernate Search 5.10"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:75
+msgid "Hibernate ORM 5.3"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:77
+msgid "Numerous bug fixes which improve stability"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:81
+msgid "For more details, please check our https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12336209[issue tracking release notes]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:85
+msgid "Thanks to everyone involved in this release! Onward to Infinispan 9.4!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:89
+msgid "Cheers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:90
+msgid "Galder"
+msgstr ""

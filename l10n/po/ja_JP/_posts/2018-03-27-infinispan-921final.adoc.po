@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-03-27-infinispan-921final.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-27-infinispan-921final.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 9.2.1.Final\n"
+"permalink: /blog/:year/:month/:day/infinispan-921final\n"
+"date: '2018-03-27T14:24:00.002-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \" release\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-462822867096479785\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/03/infinispan-921final.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-27-infinispan-921final.adoc:12
+msgid "Infinispan users,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-27-infinispan-921final.adoc:16
+msgid "we have just released 9.2.1.Final which includes https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12337077[65 fixes]. Highlights of this release include:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-27-infinispan-921final.adoc:18
+msgid "Many fixes/improvements to the REST endpoint"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-27-infinispan-921final.adoc:20
+msgid "Configurable CORS settings"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-27-infinispan-921final.adoc:21
+msgid "HTTP/2 now works"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-27-infinispan-921final.adoc:22
+msgid "Accept-Encoding and Content-Encoding handling"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-27-infinispan-921final.adoc:24
+msgid "It is now possible to retrieve the list of cache names over Hot Rod"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-27-infinispan-921final.adoc:26
+msgid "Substantial performance improvements when iterating over the file store"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-27-infinispan-921final.adoc:28
+msgid "Lots of bug fixes, test fixes and documentation improvements"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-27-infinispan-921final.adoc:33
+msgid "As usual you can find all the bits on our http://infinispan.org/download/[website]. If you find any issues, don't hesitate to report them on our https://issues.jboss.org/projects/ISPN[issue tracker.]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-27-infinispan-921final.adoc:35
+msgid "Enjoy"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-27-infinispan-921final.adoc:36
+msgid "The Infinispan Team"
+msgstr ""

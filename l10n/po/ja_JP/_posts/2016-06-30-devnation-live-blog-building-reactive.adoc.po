@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:14
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: 'DevNation Live Blog: Building Reactive Applications with Node.js and Red Hat\n"
+"permalink: /blog/:year/:month/:day/devnation-live-blog-building-reactive\n"
+"  JBoss Data Grid'\n"
+"date: '2016-06-30T16:47:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"conference\",\n"
+"\"javascript\",\n"
+"\"devnation\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6175313800583532718\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/06/devnation-live-blog-building-reactive.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:22
+msgid "Last Tuesday I gave a talk at DevNation 2016 on building Reactive Applications with Node.js and Red Hat JBoss Data Grid. The slides for it will be uploaded to the DevNation site shortly, but for those who want to play around with the application demoed in the talk, you can find the code and instructions in https://github.com/galderz/infinispan-events/tree/june16[this repository]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:25
+msgid "The Red Hat Developers blog posted a review of the talk in this address: http://developers.redhat.com/blog/2016/06/29/devnation-live-blog-building-reactive-applications-with-node-js-and-red-hat-jboss-data-grid/"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:27
+msgid "Please find below review as written by Rob Terzi:"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:29
+#, no-wrap
+msgid "DevNation Live Blog: Building Reactive Applications with Node.js and Red Hat JBoss Data Grid"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:33
+msgid "Posted by http://developers.redhat.com/blog/author/rctkv/[Rob Terzi] on June 29, 2016"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:42
+msgid "At DevNation, Red Hat’s Galder Zamarreño gave a talk with a live demo, Building reactive applications with Node.js and Red Hat JBoss Data Grid. The demo consisted of building an event-based three tier web application using JBoss Data Grid (JDG) as the data layer, an event manager running on Node.js, and a web client. Recently, support for Node.js clients was added to JDG, opening up the performance of a horizontally scalable in-memory data grid, to reactive web and mobile applications."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:47
+msgid "JDG is capable of processing and storing real-time streams of data, while maintaining very fast response times. It does this by using the memory available from a dynamically scalable grid of machines. Galder described JDG as a four-in-one package capable of being:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:49
+msgid "a distributed cache."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:50
+msgid "a high performance NoSQL primary data store."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:52
+msgid "an event-driven data store, particularly for real time event processing."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:53
+msgid "a big data and Internet of Things (IoT) data store."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:55
+msgid "The three-tiered web app in the demo consisted of:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:63
+msgid "A web client written in Elm, which is a functional language that compiles to JavaScript.  It is statically typed, which the presenter feels leads to well architected code. Elm competes with platforms such as React and Angular. Any of those other platforms could be used, but Galder chose Elm for the live demo, particularly given the useful error messages the compiler generates as a virtue of using a statically typed language."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:64
+msgid "An event manager running on Node.js using Express.js."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:67
+msgid "JBoss Data Grid as the data store.  Three nodes were used, running on the same laptop. Each element was guaranteed to be stored in two nodes, providing redundancy for fail over."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:75
+msgid "Node.js based applications have become very popular. Many use JavaScript on all three tiers, including NoSQL data stores. However, most of those data stores can’t match the scalability and response times of JDG.  Traditionally, developers have needed to use Java to take advantage of JBoss Data Grid. The new fully asynchronous Node.js interface to JBoss Data Grid should enable developers to build some truly interesting next-generation reactive applications."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:79
+msgid "You can download JBoss Data Grid from http://developers.redhat.com/downloads/[developers.redhat.com]. If you’d like to get involved, join the open source community at http://infinispan.org/[infinispan.org]."
+msgstr ""

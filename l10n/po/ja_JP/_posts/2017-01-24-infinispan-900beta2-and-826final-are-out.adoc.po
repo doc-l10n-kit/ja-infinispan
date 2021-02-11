@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 9.0.0.Beta2 and 8.2.6.Final are out!\n"
+"permalink: /blog/:year/:month/:day/infinispan-900beta2-and-826final-are-out\n"
+"date: '2017-01-24T05:50:00.002-08:00'\n"
+"author: galder\n"
+"tags: [ \" beta\", \"release\", \"stable\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-437701447542440150\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/01/infinispan-900beta2-and-826final-are-out.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:13
+msgid "It's release day at Infinispan HQ and we've just released a couple of new versions:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:15
+msgid "Infinispan 9.0.0.Beta2 includes:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:17
+msgid "New:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:20
+msgid "Multi-tenancy support for Hot Rod and REST endpoints improve Infinispan Server experience on OpenShift."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:21
+msgid "Transactional support for Functional API (thx Radim!)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:26
+msgid "Internal data container changes, see Will's blog posts (http://blog.infinispan.org/2016/12/data-container-changes-part-1.html[here] and http://blog.infinispan.org/2017/01/data-container-changes-part-2.html[here])  for more info."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:27
+msgid "Off-heap bounded data container has been added."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:28
+msgid "ElasticSearch storage for indexes."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:29
+msgid "Multiple additions and enhancements to the management console."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:30
+msgid "Further performance improvements."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:32
+msgid "Backwards compatibility:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:37
+msgid "Binary and mixed JDBC cache stores have been removed. To migrate data over, use the http://infinispan.org/docs/dev/user_guide/user_guide.html#jdbc_migrator[JDBC cache store migrator]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:38
+msgid "Dropped default cache inheritance."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:41
+msgid "https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12330026[Full release notes]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:43
+msgid "Infinispan 8.2.6.Final includes multiple bug fixes."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:46
+msgid "https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12332803[Full release notes]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:50
+msgid "Cheers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:51
+msgid "Galder"
+msgstr ""

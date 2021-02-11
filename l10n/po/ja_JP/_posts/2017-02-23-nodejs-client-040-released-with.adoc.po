@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-nodejs-client-040-released-with.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-nodejs-client-040-released-with.adoc:16
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Node.js client 0.4.0 released with encryption and cross-site failover\n"
+"permalink: /blog/:year/:month/:day/nodejs-client-040-released-with\n"
+"date: '2017-02-23T23:56:00.000-08:00'\n"
+"author: galder\n"
+"tags: [ \"release\",\n"
+"\"security\",\n"
+"\"xsite\",\n"
+"\"javascript\",\n"
+"\"js-client\",\n"
+"\"node.js\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2026888715027465503\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/02/nodejs-client-040-released-with.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-nodejs-client-040-released-with.adoc:21
+msgid "We've just released Infinispan Node.js Client version https://www.npmjs.com/package/infinispan[0.4.0] which comes with encrypted client connectivity via SSL/TLS (with optional TLS/SNI support), as well as cross-site client failover."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-nodejs-client-040-released-with.adoc:27
+msgid "Thanks to the encryption integration, Node.js Hot Rod clients can talk to Hot Rod servers via an encrypted channel, allowing trusted client and/or authenticated clients to connect. Check the https://github.com/infinispan/js-client/tree/v0.4.0#encryption[documentation] for information on how to enable encryption in Node.js Hot Rod client."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-nodejs-client-040-released-with.adoc:36
+msgid "Also, we've added the possibility for the client to connect to multiple clusters. Normally, the client is connected to a single cluster, but if all nodes fail to respond, the client can failover to a different cluster, as long as one or more initial addresses have been provided. On top of that, clients can manually switch clusters using switchToCluster and switchToDefaultCluster APIs. Check https://github.com/infinispan/js-client/tree/v0.4.0#working-with-sites[documentation] for more info."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-nodejs-client-040-released-with.adoc:39
+msgid "On top of that, we've applied several bug fixes that further tighten the inner workings of the Node.js client."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-nodejs-client-040-released-with.adoc:44
+msgid "If you're a Node.js user and want to store data remotely in Infinispan Server instances, please give the client a go and tell us what you think of it via our https://developer.jboss.org/en/infinispan/content[forum], via our https://issues.jboss.org/projects/HRJS[issue tracker] or via IRC on the #infinispan channel on Freenode."
+msgstr ""

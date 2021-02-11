@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2012-05-29-distributed-execution-framework.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-05-29-distributed-execution-framework.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Distributed execution framework enhancements\n"
+"permalink: /blog/:year/:month/:day/distributed-execution-framework\n"
+"date: '2012-05-29T08:57:00.000-07:00'\n"
+"author: vblagojevic\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6108118107992670379\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/05/distributed-execution-framework.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-05-29-distributed-execution-framework.adoc:34
+msgid "The initial release of the distributed execution included in Infinispan 5.0 was meant to be more of an experiment -- a testing ground -- rather than an industrial solution for distributed execution. We provided a simple http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/distexec/DistributedExecutorService.html[interface] similar to a familiar http://docs.oracle.com/javase/1.5.0/docs/api/java/util/concurrent/ExecutorService.html[ExecutorService] API and adapted it for execution on the Infinispan cluster. To our own surprise, use of the distributed execution framework took off and people started using it even in production environments. After the initial release users enthusiastically provided feedback and asked for enhancements. Some of these minor enhancements were integrated in subsequent Infinispan 5.1 and 5.2 releases. However, major improvements were put aside on a shelf, until now! The time is ripe to respond to these major enhancements so they can be ready for the Infinispan 6.0 release time. We have started a dedicated design https://community.jboss.org/wiki/Infinispan60-DistributedExecutionEnhancements[page] for distributed executor enhancements where you can provide your input and influence the design of the next iteration of the Infinispan distributed execution framework. Looking forward to more of your feedback!"
+msgstr ""

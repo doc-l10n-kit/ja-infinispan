@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2010-09-07-42alpha1-ursus-is-out.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-09-07-42alpha1-ursus-is-out.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: 4.2.ALPHA1 \"Ursus\" is out!\n"
+"permalink: /blog/:year/:month/:day/42alpha1-ursus-is-out\n"
+"date: '2010-09-07T12:23:00.000-07:00'\n"
+"author: mmarkus\n"
+"tags: [ \"alpha\", \"release\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5701948157832015952\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/09/42alpha1-ursus-is-out.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-09-07-42alpha1-ursus-is-out.adoc:12
+msgid "Hi *,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-09-07-42alpha1-ursus-is-out.adoc:15
+msgid "4.2.ALPHA1 has just been released! Besides other things, it contains following two features:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-09-07-42alpha1-ursus-is-out.adoc:16
+msgid "supports deadlock detection for eagerly locking transactions (new)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-09-07-42alpha1-ursus-is-out.adoc:25
+msgid "an very interesting optimisation for eager locking, which allows one to benefit from eager locking semantics with the same performance as \"lazy\" locking. You can read more about this http://community.jboss.org/wiki/LockingandConcurrency#Locking_a_single_remote_node[here].  For download information go http://www.jboss.org/infinispan/downloads[here]. For a detailed list of features refer to https://jira.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12315393[the release notes]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-09-07-42alpha1-ursus-is-out.adoc:29
+msgid "Enjoy and please share your thoughts on our http://community.jboss.org/en/infinispan?view=discussions[forums]!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-09-07-42alpha1-ursus-is-out.adoc:31
+msgid "Mircea"
+msgstr ""

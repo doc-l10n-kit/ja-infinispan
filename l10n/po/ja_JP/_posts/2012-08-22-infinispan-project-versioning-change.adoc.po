@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan project versioning change\n"
+"permalink: /blog/:year/:month/:day/infinispan-project-versioning-change\n"
+"date: '2012-08-22T05:40:00.002-07:00'\n"
+"author: mmarkus\n"
+"tags: [ \" release\", \"versioning\", \"maven\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-494471917659897797\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/08/infinispan-project-versioning-change.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:17
+msgid "Mainly for consistency reason, starting with the next Infinispan releases, we'll switch to https://community.jboss.org/wiki/JBossProjectVersioning[JBoss' release naming conventions]. In practical terms this means that the names of the releases(Maven artifacts, JIRA) would be different.  E.g."
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:21
+#, no-wrap
+msgid "Old release name"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:22
+#, no-wrap
+msgid "New release name"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:22
+#, no-wrap
+msgid "5.2.0.ALPHA2"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:23
+#, no-wrap
+msgid "5.2.0.Alpha3"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:23
+#, no-wrap
+msgid "5.1.0.BETA1"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:24
+#, no-wrap
+msgid "5.2.0.Beta1"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:24
+#, no-wrap
+msgid "5.1.0.CR1"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:25
+#, no-wrap
+msgid "5.2.0.CR1"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:25
+#, no-wrap
+msgid "5.1.0.FINAL"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:26
+#, no-wrap
+msgid "5.2.0.Final"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:33
+msgid "The names of the releases in JIRA have also https://issues.jboss.org/plugins/servlet/project-config/ISPN/versions[been changed] startting with 5.1.2.Alpha3."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:37
+msgid "Cheers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:38
+msgid "Mircea "
+msgstr ""

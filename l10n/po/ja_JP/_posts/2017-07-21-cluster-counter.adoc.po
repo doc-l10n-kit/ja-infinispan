@@ -1,0 +1,211 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Cluster Counter\n"
+"permalink: /blog/:year/:month/:day/cluster-counter\n"
+"date: '2017-07-21T09:33:00.000-07:00'\n"
+"author: pruivo\n"
+"tags: [ \"counter\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5343955017767092509\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/07/cluster-counter.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:14
+msgid "In Infinispan 9.1 we introduce the clustered counters. It is a counter distributed and shared among all nodes in the cluster and today we are going to know more about it."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:16
+#, no-wrap
+msgid "Installation"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:21
+msgid "To use a counter in your Infinispan cluster, first you have to add the maven dependency to your project. As you can see, it is simple as doing:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:25
+msgid "After adding the module, you can retrieve the CounterManager and start creating and using counters."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:27
+#, no-wrap
+msgid "CounterManager"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:31
+msgid "Each CounterManager is associated to a CacheManager. But, before showing how to use it, first we have some configuration to be done."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:36
+msgid "There are two attributes that you can configure: The num-owner - that represents the number of copies of the counter's value in a cluster; and the reliability - that represents the behavior of the counters in case of partitions."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:39
+msgid "Below, is the configuration example with their default values.  XML:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:41
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:74
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:119
+msgid "Programatically:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:44
+msgid "Then, you can retrieve the CounterManager from the CacheManager, as shown below, and start using the counters!"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:47
+#, no-wrap
+msgid "Counter"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:52
+msgid "A counter is identified by its name. Also, it is initialized with an initial value (by default 0) and it can be persisted, if the value needs to survive a cluster restart."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:56
+msgid "There are 2 types of counters: strong and weak counters."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:58
+#, no-wrap
+msgid "Strong Counters"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:64
+msgid "The strong counter provides higher consistency. Its value is known during the update and its updates are applied atomically. This allows to set boundaries and provides conditional operation (as compare-and-set)."
+msgstr ""
+
+#. type: Title =====
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:65
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:109
+#, no-wrap
+msgid "Configuration"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:70
+msgid "A strong counter can be configured in the configuration file or programatically. They can be also created dynamically at runtime. Below shows us how it can be done:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:72
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:117
+msgid "XML:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:76
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:121
+msgid "Runtime:"
+msgstr ""
+
+#. type: Title =====
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:79
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:124
+#, no-wrap
+msgid "Use Case"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:82
+msgid "The strong counter fits the following uses cases:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:84
+msgid "Global Id Generator"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:87
+msgid "Due to its strong consistency, it can be used as a global identifier generator, as in the example below:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:91
+msgid "Rate Limiter"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:94
+msgid "If bounded, it can be used as a simple rate limiter. Just don't forget to invoke reset()..."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:98
+msgid "Simply count \"stuff\""
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:100
+msgid "Well, it is a counter after all..."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:103
+#, no-wrap
+msgid "Weak Counters"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:108
+msgid "The weak counter provides eventual consistency and its value is not known during updates. It provides faster writes when comparing with the strong counter."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:115
+msgid "As in strong counter, the weak counter can be configure its name and its initial value. In addition, a concurrency-level can be configure to set the number of concurrent updates that can be handled in parallel. Below shows us how to configure it:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:129
+msgid "The main use case for the weak counter includes all scenarios where its value isn't needed while updating the counter. For example, it can be used to count the number of visits to some resource:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-07-21-cluster-counter.adoc:138
+msgid "For more information, take a look at the http://infinispan.org/docs/9.1.x/user_guide/user_guide.html#clustered_counters[documentation].  If you have any feedback, or would like to request some new features, or found some issue, let us know via the https://developer.jboss.org/en/infinispan/content[forum], https://issues.jboss.org/projects/ISPN[issue tracker] or the #infinispan channel onhttp://webchat.freenode.net/?channels=%23infinispan[ Freenode]."
+msgstr ""

@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2016-02-01-infinispan-820beta1-and-811final-are-out.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-02-01-infinispan-820beta1-and-811final-are-out.adoc:13
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 8.2.0.Beta1 and 8.1.1.Final are out!\n"
+"permalink: /blog/:year/:month/:day/infinispan-820beta1-and-811final-are-out\n"
+"date: '2016-02-01T06:24:00.001-08:00'\n"
+"author: ttarrant\n"
+"tags: [ \"beta\",\n"
+"\"release\",\n"
+"\"final\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8968219584260881281\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/02/infinispan-820beta1-and-811final-are-out.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-02-01-infinispan-820beta1-and-811final-are-out.adoc:15
+msgid "Dear all,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-02-01-infinispan-820beta1-and-811final-are-out.adoc:17
+msgid "We are proud to announce two releases today:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-02-01-infinispan-820beta1-and-811final-are-out.adoc:23
+#, no-wrap
+msgid ""
+"*Infinispan 8.2.0.Beta1* is the first release in the 8.2 cycle. It\n"
+"doesn't have big new features, but there are a few significant changes\n"
+"in addition to the usual\n"
+"https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12328082[bug\n"
+"fixes]:\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-02-01-infinispan-820beta1-and-811final-are-out.adoc:28
+#, no-wrap
+msgid ""
+"*SyncConsistentHashFactory* is now the default consistent hash factory\n"
+"(https://issues.jboss.org/browse/ISPN-4851[ISPN-4851]). This means the\n"
+"owners of a key are going to be the same in all the caches, as long as\n"
+"the caches have the same members and the same number of owners.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-02-01-infinispan-820beta1-and-811final-are-out.adoc:34
+#, no-wrap
+msgid ""
+"We now have a new way for applications to determine the location of\n"
+"keys: the *KeyPartitioner* interface\n"
+"(https://issues.jboss.org/browse/ISPN-5465[ISPN-5465]). In spirit it is\n"
+"very similar to the existing *Grouper* interface, but it is\n"
+"segment-aware. Note that none of the HotRod clients support\n"
+"*Keypartitioner* in this release.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-02-01-infinispan-820beta1-and-811final-are-out.adoc:36
+#, no-wrap
+msgid ""
+"We improved the rolling upgrade performance\n"
+"(https://issues.jboss.org/browse/ISPN-6046[ISPN-6046]).\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-02-01-infinispan-820beta1-and-811final-are-out.adoc:41
+#, no-wrap
+msgid ""
+"We added a new event logger that records cluster membership, cache\n"
+"topology, and cache availability changes\n"
+"(https://issues.jboss.org/browse/ISPN-5816[ISPN-5816]). In the next\n"
+"release, it will also be accessible through the server's management\n"
+"console.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-02-01-infinispan-820beta1-and-811final-are-out.adoc:45
+#, no-wrap
+msgid ""
+"*Infinispan 8.1.1.Final* includes a number of\n"
+"https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12329050[bug\n"
+"fixes]. All users of 8.1.0.Final are encouraged to upgrade.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-02-01-infinispan-820beta1-and-811final-are-out.adoc:51
+msgid "You can get both releases from our http://infinispan.org/download/[download page]. If you are new to Infinispan, you can http://infinispan.org/tutorials/[learn] how to use it, and http://infinispan.org/getinvolved/[help] us continually improve it."
+msgstr ""

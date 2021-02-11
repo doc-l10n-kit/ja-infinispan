@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 9.4.0.CR3, 9.3.3 and codename vote\n"
+"permalink: /blog/:year/:month/:day/infinispan-940cr3-933-and-codename-vote\n"
+"date: '2018-09-17T00:15:00.000-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \" release\", \"release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2978225566464217508\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/09/infinispan-940cr3-933-and-codename-vote.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:12
+msgid "Hi Infinispan Community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:17
+msgid "our original plan was to release 9.4 Final today, but we have decided to delay the release by an extra sprint (3 weeks).  So today we are announcing 9.4.0.CR3 instead, which comes with the following fixes:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:20
+msgid "Segmented off-heap data container"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:21
+msgid "Performance improvements for Near Caches"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:22
+msgid "Hot Rod client-side statistics"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:24
+msgid "Removal of the old compatibility mode in favor of the new transcoding capabilities is now complete"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:25
+msgid "Server rebased on top of WildFly 14"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:26
+msgid "Lots of code cleanups, especially around query"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:27
+msgid "Bug fixes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:30
+msgid "For those of you on our stable branch, we also released a 9.3.3 with some bug fixes."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:36
+msgid "Please http://infinispan.org/download/[download], https://issues.jboss.org/projects/ISPN[report bugs], https://infinispan.zulipchat.com/[chat with us], ask questions on the https://developer.jboss.org/en/infinispan/content[forum] or on https://stackoverflow.com/questions/tagged/?tagnames=infinispan&sort=newest[StackOverflow]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:39
+msgid "As this release is yet unnamed, please make sure you vote for the name:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:41
+msgid "Loading..."
+msgstr ""

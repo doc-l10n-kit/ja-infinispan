@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2009-05-14-alpha3-ready-to-rumble.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-14-alpha3-ready-to-rumble.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Alpha3 ready to rumble!\n"
+"permalink: /blog/:year/:month/:day/alpha3-ready-to-rumble\n"
+"date: '2009-05-14T17:57:00.001-07:00'\n"
+"author: msurtani\n"
+"tags: [ \"release\", \"asynchronous\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3917630399504427566\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/05/alpha3-ready-to-rumble.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-14-alpha3-ready-to-rumble.adoc:15
+msgid "So I've just tagged and cut Infinispan 4.0.0.ALPHA3. (Why are we starting with release 4.0.0? http://www.jboss.org/community/wiki/InfinispanProjectFAQs[Read our FAQs]!)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-14-alpha3-ready-to-rumble.adoc:26
+msgid "As I mentioned http://infinispan.blogspot.com/2009/05/implementing-performant-thread-safe.html[recently], I've implemented an uber-cool new asynchronous API for the cache and am dying to show it off/get some feedback on it. Yes, Alpha3 contains the async APIs. Why is this so important? Because it allows you to get the best of both worlds when it comes to synchronous and asynchronous network communications, and harnesses the parallelism and scalability you'd naturally expect from a halfway-decent data grid. And, as far as I know, we're the first distributed cache - open or closed source - to offer such an API."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-14-alpha3-ready-to-rumble.adoc:30
+msgid "The release also contains other fixes, performance and stability improvements, and better javadocs throughout. One step closer to a full release."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-14-alpha3-ready-to-rumble.adoc:35
+msgid "Enjoy the release - available on our http://www.jboss.org/infinispan/downloads[download page] - and please do post feedback on the http://www.jboss.org/infinispan/forums.html[Infinispan User Forums]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-14-alpha3-ready-to-rumble.adoc:37
+msgid "Cheers Manik"
+msgstr ""

@@ -1,0 +1,197 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 12.0.0.Dev03\n"
+"permalink: /blog/:year/:month/:day/infinispan-12\n"
+"date: '2020-09-08T12:00:00.000-00:00'\n"
+"author: karesti\n"
+"tags: [ \"release\", \"development\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:10
+#, no-wrap
+msgid "Infinispan 12.0.0.Dev03"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:13
+msgid "Dear Infinispan community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:15
+msgid "Infinispan 12 development release 03 is here!"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:16
+#, no-wrap
+msgid "Cross Site Replication"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:20
+msgid "With the new asynchronous cross-site replication algorithm introduced in Infinispan 11, this release brings a long desired feature: *conflict resolution*."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:24
+msgid "It is possible to configure a merge policy where, in case of conflict between updates of different sites, the value can be merged. Some predefined merge policies can be found https://docs.jboss.org/infinispan/12.0/apidocs/org/infinispan/xsite/spi/XSiteMergePolicy.html[here]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:26
+msgid "See the docs for more https://infinispan.org/docs/dev/titles/xsite/xsite.html#conflict_resolution-xsite[information about conflict resolution]."
+msgstr ""
+
+#. type: Block title
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:27
+#, no-wrap
+msgid "Performance improvement"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:33
+msgid "Another small improvement has been made to cross-site replication in this release.  When sites get requests targeting caches that don't exist or aren't started, sender sites stop retrying the requests, which takes the backup location offline.  Administrators must then bring the sites back online and perform state transfer to sync possible out-of-date data."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:34
+#, no-wrap
+msgid "Infinispan Server"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:38
+msgid "This version includes a new version of the web console, including mainly fixes, but also the ability to filter between Strong and Weak counters and to remove counters from the list."
+msgstr ""
+
+#. type: Named 'caption' AttributeList argument for style 'caption'
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:39
+#, no-wrap
+msgid "Console: counters list"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:40
+#, no-wrap
+msgid "Console Counters Filter"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:40
+#, no-wrap
+msgid "/assets/images/blog/ispnDev03console1.png"
+msgstr ""
+
+#. type: Named 'caption' AttributeList argument for style 'caption'
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:42
+#, no-wrap
+msgid "Console: counters remove button"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:43
+#, no-wrap
+msgid "Console Counters Remove Button"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:43
+#, no-wrap
+msgid "/assets/images/blog/ispnDev03console2.png"
+msgstr ""
+
+#. type: Named 'caption' AttributeList argument for style 'caption'
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:45
+#, no-wrap
+msgid "Console: counters remove modal"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:46
+#, no-wrap
+msgid "Console Counters Remove Modal"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:46
+#, no-wrap
+msgid "/assets/images/blog/ispnDev03console3.png"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:49
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:65
+msgid "You can look at the https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12347011[release notes] to see what has changed."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:50
+#, no-wrap
+msgid "Documentation"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:54
+msgid "https://infinispan.org/docs/dev/index.html[Our documentation has been updated] with some additional content as well as improvements for clarity and technical accuracy, notably:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:55
+msgid "Infinispan Operator Guide"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:56
+msgid "Server Guide"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:57
+msgid "Guide to Cross-Site Replication"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:58
+msgid "Security Guide"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:62
+msgid "As always, the Infinispan team hope you find the documentation useful and complete. We’d love to hear from you and really value feedback from our community. If you think something is missing from the docs or spot a correction, please get in touch and we’ll get on it straight away."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:63
+#, no-wrap
+msgid "Release notes"
+msgstr ""

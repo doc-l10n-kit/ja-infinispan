@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 9.4.1.Final and Infinispan Spring Boot Starter 2.1.0.Final are out!\n"
+"permalink: /blog/:year/:month/:day/infinispan-941final-and-infinispan\n"
+"date: '2018-11-09T03:18:00.001-08:00'\n"
+"author: karesti\n"
+"tags: [ \" release\", \"spring boot\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8397659590599295483\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/11/infinispan-941final-and-infinispan.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:12
+msgid "Dear Infinispan and Spring Boot users,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:17
+msgid "We have just released https://github.com/infinispan/infinispan[Infinispan] *9.4.1.Final* and https://github.com/infinispan/infinispan-spring-boot[Infinispan Spring Boot] *2.1.0.Final*."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:19
+msgid "Highlights of the *Infinispan* release include:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:22
+msgid "Export Data Grid stats to https://prometheus.io/[Prometheus] (https://issues.jboss.org/browse/ISPN-9558[ISPN-9558])"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:24
+msgid "Upgrade https://rocksdb.org/[RocksDB] version (https://issues.jboss.org/browse/ISPN-9603[ISPN-9603])"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:26
+msgid "Upgrade http://narayana.io/[Narayana] to version 5.9.0.Final (https://issues.jboss.org/browse/ISPN-9639[ISPN-9639])"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:29
+msgid "Upgrade to https://github.com/infinispan/protostream[protostream-4.2.2.Final] (https://issues.jboss.org/browse/ISPN-9654[ISPN-9654])"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:31
+msgid "Update Cassandra Store to Infinispan 9.4(https://issues.jboss.org/browse/ISPN-9595[ISPN-9595])"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:33
+msgid "Handle ClientCacheEntryExpired into InvalidatedNearCacheListener (https://issues.jboss.org/browse/ISPN-7087[ISPN-7087])"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:34
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:50
+msgid "Bug fixes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:37
+msgid "Additional https://github.com/infinispan/infinispan-simple-tutorials[code simple examples] such as remote multimap or near caching "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:41
+msgid "Complete release notes can be read https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12339377[here]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:43
+msgid "Highlights of the *Infinispan-Spring-Boot* release include:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:46
+msgid "Upgrade *Spring-Boot* version to https://spring.io/blog/2018/10/30/spring-boot-2-1-0[2.1.0]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:47
+msgid "Upgrade *Infinispan* version to 9.4.1"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:49
+msgid "Integration with Spring Actuator, to expose production ready metrics (https://issues.jboss.org/browse/ISPN-9668[ISPN-9668])"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:53
+msgid "Additional https://github.com/infinispan/infinispan-spring-boot/tree/master/infinispan-spring-boot-samples[code examples]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:55
+msgid "You can find these releases in the maven central repository."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:60
+msgid "Please report any issues in our https://issues.jboss.org/projects/ISPN[issue tracker] and join the conversation in our https://infinispan.zulipchat.com/[Zulip Chat] to shape up our next release."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:62
+msgid "Enjoy,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:63
+msgid "The Infinispan Team"
+msgstr ""

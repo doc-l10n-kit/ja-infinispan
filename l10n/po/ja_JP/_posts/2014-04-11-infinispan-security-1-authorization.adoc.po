@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: 'Infinispan Security #1: Authorization'\n"
+"permalink: /blog/:year/:month/:day/infinispan-security-1-authorization\n"
+"date: '2014-04-11T04:28:00.000-07:00'\n"
+"author: ttarrant\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7889564347101732588\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/04/infinispan-security-1-authorization.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:16
+msgid "Dear all, with the release of 7.0.0.Alpha3, Infinispan has finally gained the ability to perform Access Control (aka Authorization) on CacheManagers and Caches. This is the first stepping-stone towards the full-fledged security work that will be completed during the 7.0 cycle."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:20
+msgid "Infinispan authorization is built around the standard security features available in a JDK near you, such as JAAS and the SecurityManager.  Here's a worked example."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:22
+#, no-wrap
+msgid "Running within a SecurityManager"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:27
+msgid "In order for Infinispan to be able to enforce access restrictions, you should enable the SecurityManager in your JVM. This can be done from the command-line:"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:31
+#, no-wrap
+msgid "java -Djava.security.manager ...\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:35
+msgid "or programmatically:"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:39
+#, no-wrap
+msgid "System.setSecurityManager(new SecurityManager());\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:48
+msgid "You don't have to use the default implementation that comes with the JDK, but if you do you need to supply an appropriate policy file. The Infinispan distribution comes with an example policy file which illustrates the permissions required by some of Infinispan's JAR files.  Integrate these permissions with the ones required by your application."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:52
+msgid "While Infinispan's authorization _can_ work without a SecurityManager for the basic cache operations (put, get, etc), some more complex tasks (distexec, map/reduce, query) will fail without one."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:53
+#, no-wrap
+msgid "Configuring Infinispan for authorization"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:58
+msgid "Authorization in Infinispan is configured at two levels: at the cache container and at the single cache.  Let's look at cache containers (aka CacheManagers) first:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:60
+msgid "Each cache container determines the following:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:62
+msgid "whether to use authorization, via the _enabled_ attribute. "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:63
+msgid "a class which will map the user's principals to a set of roles"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:64
+msgid "a set of named roles and the permissions they represent"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:66
+msgid "We then need to define the specific roles for each cache:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:70
+msgid "As you can see you can choose to use only a subset of the roles defined at the container level."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:73
+msgid "Before you can start using a secured cache, you need to get yourself a _javax.security.auth.Subject_."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:74
+#, no-wrap
+msgid "Obtaining a Subject"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:90
+msgid "Infinispan is not fussy about how you obtain a JAAS http://docs.oracle.com/javase/7/docs/api/javax/security/auth/Subject.html[Subject]: you may use your container's features, or a third-party library (such as https://www.jboss.org/picketbox[JBoss PicketBox] or https://shiro.apache.org/[Apache Shiro]). The important thing is that your Subject should be populated with a set of http://docs.oracle.com/javase/7/docs/api/java/security/Principal.html[Principals] which represent the user and the groups it belongs to in your security domain (e.g. LDAP, Active Directory, etc).  It is then the duty of the _mapper_ to look through the principals associated with the Subject and convert them into roles suitable for matching those you have defined at the container level.  Once you have a Subject, you interact with the Cache within the context of a _PrivilegedAction_ as follows:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:94
+msgid "Obviously if you're lucky enough to use Java 8, you can use the following, more concise, lambda-enabled code:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:102
+msgid "For more details consult the http://infinispan.org/docs/7.0.x/user_guide/user_guide.html#_security[Security chapter] in the Infinispan documentation and the https://docs.jboss.org/infinispan/7.0/apidocs/org/infinispan/security/package-summary.html[org.infinispan.security] JavaDocs."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:103
+msgid "Stay tuned for the next parts in the Infinispan security saga !"
+msgstr ""

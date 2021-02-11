@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2019-03-04-first-openshfit-operator-pre-release.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-04-first-openshfit-operator-pre-release.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: First OpenShift Operator pre-release for Infinispan is here!\n"
+"permalink: /blog/:year/:month/:day/first-openshfit-operator-pre-release\n"
+"date: '2019-03-04T01:14:00.000-08:00'\n"
+"author: galder\n"
+"tags: [ \" release\", \"openshift\", \"operator\", \"beta\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8128141108234319538\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/03/first-openshfit-operator-pre-release.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-04-first-openshfit-operator-pre-release.adoc:15
+msgid "https://hub.docker.com/r/jboss/infinispan-operator[Infinispan Operator] is a new method of packaging, deploying and managing Infinispan clusters on OpenShift. You can think of the Infinispan Operator as the runtime that manages Infinispan clusters on OpenShift."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-04-first-openshfit-operator-pre-release.adoc:19
+msgid "We've just done our first Infinispan Operator pre-release, version 0.1.0, which allows you to easily boot up an Infinispan cluster on OpenShift."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-04-first-openshfit-operator-pre-release.adoc:24
+msgid "Using the operator is as simple as installing the Infinispan Operator (requires admin access) on OpenShift, and then create a YAML descriptor that defines the Infinispan cluster. The example below shows how to create a 3-node Infinispan cluster:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-04-first-openshfit-operator-pre-release.adoc:27
+msgid "And then call:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-04-first-openshfit-operator-pre-release.adoc:29
+msgid "$ oc apply -f example-infinispan.yaml"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-04-first-openshfit-operator-pre-release.adoc:33
+msgid "A more detailed tutorial on using the Infinispan Operator can be found https://github.com/infinispan/infinispan-simple-tutorials/tree/master/operator[here].  We highly recommend you give it a go and let us know what you think."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-04-first-openshfit-operator-pre-release.adoc:39
+msgid "Over the next few versions we'll be adding more features that make the most of the capabilities the https://coreos.com/blog/introducing-operator-framework[Operator framework] offers to automatically manage the health and status of running Infinispan clusters."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-04-first-openshfit-operator-pre-release.adoc:42
+msgid "Please also note that as we work towards the 1.0 release, some things might change :)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-04-first-openshfit-operator-pre-release.adoc:44
+msgid "Cheers Galder"
+msgstr ""

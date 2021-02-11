@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2012-07-11-infinispans-distributed-executors-and.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-07-11-infinispans-distributed-executors-and.adoc:11
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan's distributed executors and Map/Reduce in spotlight at JUDCon and\n"
+"permalink: /blog/:year/:month/:day/infinispans-distributed-executors-and\n"
+"  JBW\n"
+"date: '2012-07-11T09:17:00.000-07:00'\n"
+"author: vblagojevic\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1380154181411916972\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/07/infinispans-distributed-executors-and.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-07-11-infinispans-distributed-executors-and.adoc:20
+msgid "JUDCon and JBoss World 2012 finished just a bit over a week ago in Boston and were a complete blast. Several of my colleagues presented their talks on the JBoss Data Grid and EAP clustering performance. However, JUDCon and JBoss World were particularly appealing to me personally as they made me aware of an increasing demand for large scale computing, and in particular, use of Infinispan's own distributed executors and Map/Reduce."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-07-11-infinispans-distributed-executors-and.adoc:27
+msgid "Anil Saldhana's http://www.jboss.org/dms/judcon/2012boston/presentations/judcon2012boston_day1track3session2.pdf[talk] about Big Data and Hadoop at JUDCon investigated the Hadoop setup in the JBoss ecosystem and its use for log analysis. In our discussion Anil contrasted the cumbersome Hadoop setup and API to our own Infinispan Map/Reduce solution."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-07-11-infinispans-distributed-executors-and.adoc:38
+msgid "Mark Addy's JUDCon http://www.jboss.org/dms/judcon/2012boston/presentations/judcon2012boston_day1track3session4.pdf[\"Infinispan from POC to Production\"] presentation was particularly engaging. Mark and his team at C2B2 developed a search engine for a UK based global on-line travel company using Infinspan as one of the key system components. One of their use cases involved extracting a particular pricing info from Infinispan cluster where distributed executors framework was an excellent fit. Long story short the response time improvement was an order of magnitude faster and the parallel execution on Infinispan cluster using distributed executors saved the day. "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-07-11-infinispans-distributed-executors-and.adoc:41
+msgid "Erik Salter's presentation http://www.redhat.com/summit/2012/presentations/jbossworld/[\"Infinispan"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2012-07-11-infinispans-distributed-executors-and.adoc:41
+#, no-wrap
+msgid "Profit: A Start-up’s Success with JBoss Community"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-07-11-infinispans-distributed-executors-and.adoc:47
+msgid "Software\"] summarized interesting details about video on demand service that Erik and his team developed for Cisco. Erik used the Infinispan cluster for session setup and management and found distributed executors and Map/Reduce to be a particularly good fit for a range of design trade offs he and his team faced. "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-07-11-infinispans-distributed-executors-and.adoc:49
+msgid "Stay tuned for more good things to come in this area!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-07-11-infinispans-distributed-executors-and.adoc:51
+msgid "Cheers, Vladimir"
+msgstr ""

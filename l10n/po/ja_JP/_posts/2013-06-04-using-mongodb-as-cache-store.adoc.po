@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2013-06-04-using-mongodb-as-cache-store.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-06-04-using-mongodb-as-cache-store.adoc:12
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Using MongoDB as a cache store\n"
+"permalink: /blog/:year/:month/:day/using-mongodb-as-cache-store\n"
+"date: '2013-06-04T02:41:00.000-07:00'\n"
+"author: infinispan\n"
+"tags: [ \"mongodb\",\n"
+"\"cache store\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4872331039631682834\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/06/using-mongodb-as-cache-store.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-06-04-using-mongodb-as-cache-store.adoc:15
+msgid "With the 5.3 release, there is a brand new feature. I'm glad to announce that you will be able to use MongoDB as a cache store."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-06-04-using-mongodb-as-cache-store.adoc:19
+msgid "For those who don't know MongoDB, it's an open-source document oriented NoSQL database developped by 10Gen. You can more information about it on http://www.mongodb.org/[http://www.mongodb.org]/."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-06-04-using-mongodb-as-cache-store.adoc:23
+msgid "The question you have right now, it probably, how to use it cool cache store ? Simple, as for the other cache store you have to add a loader in your Infinispan configuration file."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-06-04-using-mongodb-as-cache-store.adoc:25
+msgid "Here is an exemple:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-06-04-using-mongodb-as-cache-store.adoc:28
+msgid "If you prefer the programmatic API:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-06-04-using-mongodb-as-cache-store.adoc:34
+msgid "For more information about the configuration possibilities (default values, options, etc) , you can refer to the https://docs.jboss.org/author/display/ISPN/Cache+Loaders+and+Stores#CacheLoadersandStores-MongoDBcacheloader[documentation page]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-06-04-using-mongodb-as-cache-store.adoc:39
+msgid "Cheers, Guillaume Hibernate OGM & Infinispan contributor http://www.gscheibel.net/[Blog] / http://www.twitter.com/g_scheibel[@g_scheibel]"
+msgstr ""

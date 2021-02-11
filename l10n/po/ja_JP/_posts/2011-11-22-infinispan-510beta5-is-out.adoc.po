@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2011-11-22-infinispan-510beta5-is-out.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-22-infinispan-510beta5-is-out.adoc:13
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 5.1.0.BETA5 is out!\n"
+"permalink: /blog/:year/:month/:day/infinispan-510beta5-is-out\n"
+"date: '2011-11-22T00:46:00.001-08:00'\n"
+"author: galder\n"
+"tags: [ \"locking\",\n"
+"\"configuration\",\n"
+"\"demo\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7558807606468412767\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/11/infinispan-510beta5-is-out.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-22-infinispan-510beta5-is-out.adoc:16
+msgid "Infinispan 5.1.0.BETA5 has just been the released with a few interesting additions and important fixes:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-22-infinispan-510beta5-is-out.adoc:21
+msgid "Locks acquired within a transaction are now reordered in order to avoid deadlocks. There's no new configuration required to take advantage of this feature. More information on how lock reordering works can be found http://community.jboss.org/docs/DOC-16975[here]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-22-infinispan-510beta5-is-out.adoc:25
+msgid "One of the aims of Infinispan 5.1 'Brahma' series is to move away from JAXB and instead use Stax based XML parsing. Ahead of that, a new configuration API based on builders has been developed. Expect to hear more about it and examples on using the API in the next few days."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-22-infinispan-510beta5-is-out.adoc:27
+msgid "Amongst the fixes included in this release, it's worth mentioning:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-22-infinispan-510beta5-is-out.adoc:29
+msgid "The demo paths that were broken in 5.1.0.BETA4 have now been fixed."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-22-infinispan-510beta5-is-out.adoc:34
+msgid "Some of the Infinispan jars in 5.1.0.BETA4 were showing duplicate classes. This was the result of an OSGI bundle generation bug, and so to avoid the issue 5.1.0.BETA5 OSGI bundle generation has been disabled.  This functionality will be re-enabled once the issue has been fixed by the Maven Felix plugin."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-22-infinispan-510beta5-is-out.adoc:40
+msgid "As always, please keep the http://community.jboss.org/en/infinispan?view=discussions[feedback] coming.  You can http://www.jboss.org/infinispan/downloads[download] the release from here and you get further details on the issues addressed in the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12318502[changelog]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-22-infinispan-510beta5-is-out.adoc:44
+msgid "Cheers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-22-infinispan-510beta5-is-out.adoc:45
+msgid "Galder"
+msgstr ""

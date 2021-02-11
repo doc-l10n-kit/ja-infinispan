@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:17
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: New persistence API in Infinispan 6.0.0.Alpha4\n"
+"permalink: /blog/:year/:month/:day/new-persistence-api-in-infinispan\n"
+"date: '2013-09-16T04:56:00.000-07:00'\n"
+"author: mmarkus\n"
+"tags: [ \"persistence\",\n"
+"\"jsr 107\",\n"
+"\"loader\",\n"
+"\"store\",\n"
+"\"performance\",\n"
+"\"API\",\n"
+"]\n"
+"thumbnail: http://1.bp.blogspot.com/-aqX4MDbuzy4/Ujbq-om6YsI/AAAAAAAAMkQ/taQggrqe7Kc/s72-c/new_loader_API.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4642793728339636562\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/09/new-persistence-api-in-infinispan.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:22
+msgid "The existing CacheLoader/CacheStore API has been around since Infinispan 4.0. In this release of Infinispan we've taken a major step forward in both simplifying the integration with persistence and opening the door for some pretty significant performance improvements."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:24
+#, no-wrap
+msgid "What's new"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:29
+msgid "So here's what the new persistence integration brings to the table:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:41
+msgid "alignment with http://jcp.org/en/jsr/detail?id=107[JSR-107]: now we have a http://docs.jboss.org/infinispan/6.0/apidocs/org/infinispan/persistence/spi/CacheWriter.html[CacheWriter] and http://docs.jboss.org/infinispan/6.0/apidocs/org/infinispan/persistence/spi/CacheLoader.html[CacheLoader] interface similar to the the https://github.com/jsr107/jsr107spec/blob/master/src/main/java/javax/cache/integration/CacheLoader.java[loader] and https://github.com/jsr107/jsr107spec/blob/master/src/main/java/javax/cache/integration/CacheWriter.java[writer] in JSR 107, which should considerably help writing portable stores across JCache compliant vendors"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:46
+msgid "simplified transaction integration: all the locking is now handled within the Infinispan layer, so implementors don't have to be concerned coordinating concurrent access to the store (old http://docs.jboss.org/infinispan/4.1/apidocs/org/infinispan/loaders/LockSupportCacheStore.html[LockSupportCacheStore] is dropped for that reason)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:51
+msgid "parallel iteration: it is now possible to iterate over entries in the store with multiple threads in parallel. Map/Reduce tasks immediately benefit from this, as the map/reduce  tasks now run in parallel over both the nodes in the cluster and within the same node (multiple threads)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:58
+msgid "https://issues.jboss.org/browse/ISPN-3512[reduced serialization] (translated in less CPU usage): the new API allows exposing the stored entries in serialized format. If an entry is fetched from persistent storage for the sole purpose of being sent remotely, we no longer need to deserialize it (when reading from the store) and serialize it back (when writing to the wire). Now we can write to the wire the serialized format as read fro the storage directly"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:59
+#, no-wrap
+msgid "API"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:64
+msgid "Now let's take a look at the API in more detail:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:66
+msgid "http://1.bp.blogspot.com/-aqX4MDbuzy4/Ujbq-om6YsI/AAAAAAAAMkQ/taQggrqe7Kc/s1600/new_loader_API.png[image:http://1.bp.blogspot.com/-aqX4MDbuzy4/Ujbq-om6YsI/AAAAAAAAMkQ/taQggrqe7Kc/s320/new_loader_API.png[image,width=320,height=305]]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:72
+msgid "  The diagram above shows the main classes in the API:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:74
+msgid "http://docs.jboss.org/infinispan/6.0/apidocs/org/infinispan/commons/io/ByteBuffer.html[ByteBuffer]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:75
+msgid "abstracts the serialized form on an object"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:83
+msgid "http://docs.jboss.org/infinispan/6.0/apidocs/org/infinispan/persistence/spi/MarshalledEntry.html[MarshalledEntry] - abstracts the information held within a persistent store corresponding to a key-value added to the cache. Provides method for reading this information both in serialized (http://docs.jboss.org/infinispan/6.0/apidocs/org/infinispan/commons/io/ByteBuffer.html[ByteBuffer])  and deserialized (Object) format. Normally data read from the store is kept in serialized format and lazily deserialized on demand, within the http://docs.jboss.org/infinispan/6.0/apidocs/org/infinispan/persistence/spi/MarshalledEntry.html[MarshalledEntry] implementation"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:85
+msgid " http://docs.jboss.org/infinispan/6.0/apidocs/org/infinispan/persistence/spi/CacheWriter.html[CacheWriter] and http://docs.jboss.org/infinispan/6.0/apidocs/org/infinispan/persistence/spi/CacheLoader.html[CacheLoader]  provide basic methods for reading and writing to a store"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:90
+msgid "http://docs.jboss.org/infinispan/6.0/apidocs/org/infinispan/persistence/spi/AdvancedCacheLoader.html[AdvancedCacheLoader] and http://docs.jboss.org/infinispan/6.0/apidocs/org/infinispan/persistence/spi/AdvancedCacheWriter.html[AdvancedCacheWriter] provide operations to manipulate the underlaying storage in bulk: parallel iteration and purging of expired entries, clear and size. "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:92
+msgid "A provider might choose to only implement a subset of these interfaces:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:96
+msgid "Not implementing the  http://docs.jboss.org/infinispan/6.0/apidocs/org/infinispan/persistence/spi/AdvancedCacheWriter.html[AdvancedCacheWriter] makes the given writer not usable for purging expired entries or clear"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:100
+msgid "Not implementing  the http://docs.jboss.org/infinispan/6.0/apidocs/org/infinispan/persistence/spi/AdvancedCacheLoader.html[AdvancedCacheLoader] makes the information stored in the given loader not used for preloading, nor for the map/reduce iteration"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:105
+msgid "If you're looking at migrating your existing store to the new API, looking at the https://github.com/infinispan/infinispan/blob/master/core/src/main/java/org/infinispan/persistence/file/SingleFileStore.java[SingleFileStore]  for inspiration can be of great help."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:108
+#, no-wrap
+msgid "Configuration"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:113
+msgid "And finally, the way the stores are configured has changed:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:115
+msgid "the 5.x _loaders_ element is now replaced with _persistence_"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:117
+msgid "both the loaders and writers are configured through a unique _store_ element  (vs _loader_ and  _store_, as allowed in 5.x)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:120
+msgid "the _preload_ and _shared_ attributes are configured at each individual store, giving more flexibility when it comes to configuring multiple chained stores "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:122
+msgid "Cheers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-16-new-persistence-api-in-infinispan.adoc:123
+msgid "Mircea"
+msgstr ""

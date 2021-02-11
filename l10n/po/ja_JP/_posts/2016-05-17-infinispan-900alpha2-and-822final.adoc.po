@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2016-05-17-infinispan-900alpha2-and-822final.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-05-17-infinispan-900alpha2-and-822final.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 9.0.0.Alpha2 (and 8.2.2.Final)\n"
+"permalink: /blog/:year/:month/:day/infinispan-900alpha2-and-822final\n"
+"date: '2016-05-17T05:54:00.000-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\", \"final\", \"alpha\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-133431108787102014\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/05/infinispan-900alpha2-and-822final.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-05-17-infinispan-900alpha2-and-822final.adoc:12
+msgid "Dear Infinispan users,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-05-17-infinispan-900alpha2-and-822final.adoc:14
+msgid "we have baked two fresh releases for you today."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-05-17-infinispan-900alpha2-and-822final.adoc:21
+msgid "First off we have a new micro release of our stable 8.2 branch which fixes https://issues.jboss.org/jira/secure/ReleaseNote.jspa?projectId=12310799&version=12330034[57 issues]. If you are using any other 8.x release, please upgrade to 8.2.2.Final as this contains a bunch of bugfixes and performance improvements in all areas."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-05-17-infinispan-900alpha2-and-822final.adoc:24
+msgid "On top of that we have a brand new Alpha release from our development branch: 9.0.0.Alpha2 which comes loaded with a few goodies:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-05-17-infinispan-900alpha2-and-822final.adoc:27
+msgid "SNI support for HotRod, which paves the way for server multi-tenancy"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-05-17-infinispan-900alpha2-and-822final.adoc:28
+msgid "JDBC cache stores can use upsert (one of our oldest bugs !!!)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-05-17-infinispan-900alpha2-and-822final.adoc:29
+msgid "An httpd-style access log for server"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-05-17-infinispan-900alpha2-and-822final.adoc:30
+msgid "The new sequential interceptor architecture"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-05-17-infinispan-900alpha2-and-822final.adoc:31
+msgid "Lucene query caching"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-05-17-infinispan-900alpha2-and-822final.adoc:32
+msgid "A grand total of 138 issues were resolved"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-05-17-infinispan-900alpha2-and-822final.adoc:35
+msgid "Don't forget to check-out our http://infinispan.org/roadmap/[roadmap] to see the schedule and the things we want to do"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-05-17-infinispan-900alpha2-and-822final.adoc:40
+msgid "http://infinispan.org/download/[Download] it now, try it and tell us what you think on the infinispan https://developer.jboss.org/en/infinispan/content[forums] or come and meet us on IRC: channel `#infinispan `on Freenode. "
+msgstr ""

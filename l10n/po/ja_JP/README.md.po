@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title #
+#: upstream/README.md:1
+#, no-wrap
+msgid "Upstream Community Theme"
+msgstr ""
+
+#. type: Plain text
+#: upstream/README.md:4
+#, no-wrap
+msgid "The Upstream Community Theme is a ready-to-use [Jekyll](https://jekyllrb.com/) theme to help you create a basic static site for your project. It was designed with the Red Hat Upstream Community in mind, but can be used by anyone looking to create a simple, lightweight site.\n"
+msgstr ""
+
+#. type: Title ##
+#: upstream/README.md:5
+#, no-wrap
+msgid "Getting Started"
+msgstr ""
+
+#. type: Plain text
+#: upstream/README.md:8
+#, no-wrap
+msgid "These instructions will get you a copy of the project up and running on your local machine for development purposes. See deployment for notes on how to deploy the project on [GitHub Pages](https://pages.github.com/).\n"
+msgstr ""
+
+#. type: Title ###
+#: upstream/README.md:9
+#, no-wrap
+msgid "Prerequisites"
+msgstr ""
+
+#. type: Bullet: ' - '
+#: upstream/README.md:14
+msgid "Install a full [Ruby development environment](https://www.ruby-lang.org/en/downloads/). Ruby version 2.4.0 or above is required, including all development headers. You can run `ruby -v` to check your current Ruby version."
+msgstr ""
+
+#. type: Bullet: ' - '
+#: upstream/README.md:14
+msgid "[RubyGems](https://rubygems.org/pages/download). You can run `gem -v` to check if you have RubyGems installed."
+msgstr ""
+
+#. type: Bullet: ' - '
+#: upstream/README.md:14
+msgid "[GCC](https://gcc.gnu.org/install/) and [Make](https://www.gnu.org/software/make/). You can run `gcc -v`,`g++ -v` and `make -v` to see if your system already has them installed."
+msgstr ""
+
+#. type: Title ###
+#: upstream/README.md:15
+#, no-wrap
+msgid "Installing the theme"
+msgstr ""
+
+#. type: Plain text
+#: upstream/README.md:18
+#, no-wrap
+msgid "*[Jekyll documentation pages](https://jekyllrb.com/docs/)*\n"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: upstream/README.md:20
+msgid "The Jekyll site provides detailed installation instructions for each operating system:"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: upstream/README.md:25
+msgid "[Mac](https://jekyllrb.com/docs/installation/macos/)"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: upstream/README.md:25
+msgid "[Linux distributions including Red Hat Linux](https://jekyllrb.com/docs/installation/other-linux)"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: upstream/README.md:25
+msgid "[Ubuntu Linux](https://jekyllrb.com/docs/installation/ubuntu/)"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: upstream/README.md:25
+msgid "[Windows](https://jekyllrb.com/docs/installation/windows/)"
+msgstr ""
+
+#. type: Bullet: '3. '
+#: upstream/README.md:40
+msgid "Fork this repository by clicking the _Fork_ button in the top right corner of this page."
+msgstr ""
+
+#. type: Plain text
+#: upstream/README.md:40
+#, no-wrap
+msgid ""
+"4. Clone your fork (please ensure you have current version of git installed) by running: \n"
+"  `git clone git@github.com:YOUR_USER_NAME/infinispan.github.io.git`\n"
+"5. Change into the project directory\n"
+"  `cd infinispan.github.io`\n"
+"6. Optionally, set bundle install path\n"
+"  `bundle config set path $HOME/.bundle`\n"
+"7. Download and install required RubyGems\n"
+"  `bundle install`\n"
+"8. Optionally, forced documentation downloading on every `jekyll serve` can be skipped with\n"
+"  `export FORCE_DOCUMENTATION_DOWNLOAD=false`\n"
+"9. Build the site and make it available on a local server\n"
+"  `bundle exec jekyll serve`\n"
+"10. To preview your site, browse to http://localhost:4000\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/README.md:42
+#, no-wrap
+msgid "> If you encounter any unexpected errors during the above, please refer to the [troubleshooting](https://jekyllrb.com/docs/troubleshooting/#configuration-problems) page or the [requirements](https://jekyllrb.com/docs/installation/#requirements) page, as you might be missing development headers or other prerequisites.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/README.md:44
+#, no-wrap
+msgid "_For more information regarding the use of Jekyll, please refer to the [Jekyll Step by Step Tutorial](https://jekyllrb.com/docs/step-by-step/01-setup/)._\n"
+msgstr ""
+
+#. type: Title ##
+#: upstream/README.md:45
+#, no-wrap
+msgid "Deployment on GitHub Pages"
+msgstr ""
+
+#. type: Plain text
+#: upstream/README.md:48
+#, no-wrap
+msgid "To deploy your site using GitHub Pages you will need to add the [github-pages gem](https://github.com/github/pages-gem).\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/README.md:50
+#, no-wrap
+msgid "> Note that GitHub Pages runs in `safe` mode and only allows a set of [whitelisted plugins](https://help.github.com/articles/configuring-jekyll-plugins/#default-plugins).\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/README.md:52
+#, no-wrap
+msgid "To use the github-pages gem, you'll need to add the following on your `Gemfile`:\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/README.md:53
+#, no-wrap
+msgid ""
+"source \"https://rubygems.org\"\n"
+"gem \"github-pages\", group: :jekyll_plugins\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/README.md:58
+#, no-wrap
+msgid "And then run `bundle update`.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/README.md:60
+#, no-wrap
+msgid "To deploy a project page that is kept in the same repository as the project they are for, please refer to the *Project Pages* section in [Deploying Jekyll to GitHub Pages](https://jekyllrb.com/docs/github-pages/#deploying-jekyll-to-github-pages).\n"
+msgstr ""
+
+#. type: Title ##
+#: upstream/README.md:62
+#, no-wrap
+msgid "Contributing"
+msgstr ""
+
+#. type: Plain text
+#: upstream/README.md:65
+#, no-wrap
+msgid "Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on the process for submitting pull requests to us.\n"
+msgstr ""
+
+#. type: Title ##
+#: upstream/README.md:66
+#, no-wrap
+msgid "Authors"
+msgstr ""
+
+#. type: Bullet: '* '
+#: upstream/README.md:70
+msgid "[**Adela Sofia A.**](https://github.com/adelasofia) - *Initial theme implementation*"
+msgstr ""
+
+#. type: Bullet: '* '
+#: upstream/README.md:70
+msgid "[**James Cobb**](https://github.com/insectengine) - *Visual Designer*"
+msgstr ""
+
+#. type: Title ##
+#: upstream/README.md:71
+#, no-wrap
+msgid "License"
+msgstr ""
+
+#. type: Plain text
+#: upstream/README.md:73
+#, no-wrap
+msgid "This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.\n"
+msgstr ""

@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2015-08-05-radargun-2.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-08-05-radargun-2.adoc:12
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: \n"
+"permalink: /blog/:year/:month/:day/radargun-2\n"
+"date: '2015-08-05T00:45:00.000-07:00'\n"
+"author: infinispan\n"
+"tags: [ \"radargun\",\n"
+"\"release\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7323902196441743407\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/08/radargun-2.html\n"
+"---\n"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2015-08-05-radargun-2.adoc:13
+#, no-wrap
+msgid "[.underline]#RadarGun 2.1.0.Final#"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-08-05-radargun-2.adoc:20
+msgid "I'm happy to announce RadarGun 2.1.0.Final is officialy out. RadarGun is a multi purpose testing tool, which provides means to measure performance and test features specific to distributed systems (data grids, caches in particular).  "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-08-05-radargun-2.adoc:22
+msgid "The release contains multiple fixes and improvements listed below:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-08-05-radargun-2.adoc:24
+msgid "New plugins: jdg65, infinispan71, infinispan72, infinispan80, jcache"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-08-05-radargun-2.adoc:26
+msgid "Reporting improvements (perfrepo reporter, percentile chart, net/gross throughput)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-08-05-radargun-2.adoc:27
+msgid "GaussianKeySelector"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-08-05-radargun-2.adoc:28
+msgid "Enhanced listener support"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-08-05-radargun-2.adoc:29
+msgid "JMX invocation stage now supports setting attributes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-08-05-radargun-2.adoc:30
+msgid "LogLogic improvements"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-08-05-radargun-2.adoc:31
+msgid "Enanced TopologyHistory & WaitForTopologySettle stage"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-08-05-radargun-2.adoc:32
+msgid "Better test coverage"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-08-05-radargun-2.adoc:33
+msgid "Multiple bug fixes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-08-05-radargun-2.adoc:38
+msgid "From this point on, the main development will continue in 3.x line. We are preparing considerable design changes, so that RadarGun can be easily utilized to measure performance of other areas as well (e.g.  JPA)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-08-05-radargun-2.adoc:46
+msgid "For more information about RadarGun, feel free to visit our https://github.com/radargun/radargun/wiki[wiki page], or try https://github.com/radargun/radargun/wiki/Five-Minute-Tutorial[five minute tutorial]. In case of any issues, please refer to our https://github.com/radargun/radargun/issues[issue tracker]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-08-05-radargun-2.adoc:49
+msgid "Thanks everyone for their contributions!"
+msgstr ""

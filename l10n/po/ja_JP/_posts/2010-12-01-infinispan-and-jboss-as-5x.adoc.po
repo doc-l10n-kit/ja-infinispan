@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2010-12-01-infinispan-and-jboss-as-5x.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-12-01-infinispan-and-jboss-as-5x.adoc:14
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan and JBoss AS 5.x\n"
+"permalink: /blog/:year/:month/:day/infinispan-and-jboss-as-5x\n"
+"date: '2010-12-01T07:06:00.000-08:00'\n"
+"author: msurtani\n"
+"tags: [ \"jboss as 5\",\n"
+"\"as5\",\n"
+"\"hibernate\",\n"
+"\"second level cache provider\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6192851714726793888\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/12/infinispan-and-jboss-as-5x.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-12-01-infinispan-and-jboss-as-5x.adoc:20
+msgid "A lot of people have asked about being able to use Infinispan as a second level cache for http://www.hibernate.org/[Hibernate] within http://jboss.org/jbossas/docs/5-x[JBoss AS 5.x] (and its http://www.jboss.com/products/platforms/application/[EAP 5.x cousins])."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-12-01-infinispan-and-jboss-as-5x.adoc:27
+msgid "While Infinispan can be used as a http://community.jboss.org/wiki/UsingInfinispanasJPAHibernateSecondLevelCacheProvider[Hibernate second level cache with Hibernate 3.5 onwards], Bill deCoste has written http://community.jboss.org/wiki/InfinispanasHibernate2nd-LevelCacheinJBossAS5x[a guide] to getting Infinispan to work in older versions of Hibernate, specifically with JBoss AS 5.x.  Hope you find this useful!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-12-01-infinispan-and-jboss-as-5x.adoc:29
+msgid "Cheers Manik"
+msgstr ""

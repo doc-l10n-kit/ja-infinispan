@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2017-05-23-kubeping-093-released.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-05-23-kubeping-093-released.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: KUBE_PING 0.9.3 released\n"
+"permalink: /blog/:year/:month/:day/kubeping-093-released\n"
+"date: '2017-05-23T06:22:00.004-07:00'\n"
+"author: slaskawiec\n"
+"tags: [ \" kubernetes\", \"jgroups\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8012995611485347780\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/05/kubeping-093-released.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-05-23-kubeping-093-released.adoc:13
+msgid "I'm happy to announce that JGroups KUBE_PING 0.9.3 was released. The major changes include:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-05-23-kubeping-093-released.adoc:15
+msgid "Fixed releasing connections for embedded HTTP Server"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-05-23-kubeping-093-released.adoc:16
+msgid "Fixed JGroups 3/4 compatibility issues"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-05-23-kubeping-093-released.adoc:17
+msgid "Fixed test suite"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-05-23-kubeping-093-released.adoc:18
+msgid "Fixed `Message.setSrc` compatibility issues"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-05-23-kubeping-093-released.adoc:19
+msgid "Updated documentation"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-05-23-kubeping-093-released.adoc:25
+msgid "The bits might be downloaded from https://repository.jboss.org/nexus/content/repositories/public-jboss/org/jgroups/kubernetes/kubernetes/0.9.3/[JBoss Repository] as soon as the sync completes. Please download them from https://origin-repository.jboss.org/nexus/content/repositories/public-jboss/org/jgroups/kubernetes/kubernetes/0.9.3/[here] in the meantime. "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-05-23-kubeping-093-released.adoc:35
+msgid "I would also like to recommend you http://belaban.blogspot.com/2017/05/running-infinispan-cluster-with.html[recent blog post created by Bela Ban]. KUBE_PING was completely revamped (no embedded HTTP Server, reduced dependencies) and we plan to use new, 1.0.0 version in Infinispan soon! If you'd like to try it out, grab it from https://repository.jboss.org/nexus/content/repositories/public-jboss/org/jgroups/kubernetes/kubernetes/1.0.0-SNAPSHOT/[here]."
+msgstr ""

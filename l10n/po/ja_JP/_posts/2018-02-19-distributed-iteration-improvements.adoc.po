@@ -1,0 +1,301 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Distributed iteration improvements\n"
+"permalink: /blog/:year/:month/:day/distributed-iteration-improvements\n"
+"date: '2018-02-19T03:00:00.000-08:00'\n"
+"author: wburns\n"
+"tags: [ \" performance\", \"streams\", \"distribution\", \"iteration\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7355108497333904806\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/02/distributed-iteration-improvements.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:19
+msgid "Infinispan hasn't always provided a way for iterating upon entries in a distributed cache. In fact the https://issues.jboss.org/browse/ISPN-4222[first iteration] wasn't until Infinispan 7. Then in Infinispan 8, with the addition of Java 8, we fully integrated this into http://blog.infinispan.org/2015/09/distributed-streams.html[distributed streams], which brought some minor iteration improvements in performance."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:24
+msgid "We are proud to announce that with Infinispan 9.2 there are even more improvements. This contains no API changes, although those will surely come in the future. This one is purely for performance and utilization."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:26
+#, no-wrap
+msgid "New implementation details"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:28
+#, no-wrap
+msgid " "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:38
+msgid "There are a few different aspects that have been changed.  A lot of these revolve around the amount of entries being retrieved at once, which if you are familiar with DistributedStreams can be configured via the https://docs.jboss.org/infinispan/9.2/apidocs/org/infinispan/BaseCacheStream.html#distributedBatchSize-int-[distributedBatchSize] method. Note that if this is not specified it defaults to the https://docs.jboss.org/infinispan/9.2/apidocs/org/infinispan/configuration/cache/StateTransferConfigurationBuilder.html#chunkSize-int-[chunk size] in state transfer."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:39
+#, no-wrap
+msgid "Entry retrieval is now pull based instead of push"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:47
+msgid "Infinispan core (embedded) has added https://github.com/ReactiveX/RxJava/tree/2.x[rxjava2] and https://github.com/reactive-streams/reactive-streams-jvm[reactive streams] as dependencies and rewrote all of the old push style iterator code over to pull style to fully utilize the Publisher and Subscriber interfaces."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:55
+msgid "With this we only pull up to the batchSize in entries at a time from any set of nodes. The old style utilized push with call stack blocking, which could return up two times the amount of entries. Also since we aren't performing call stack blocking, we don't have to waste threads as these calls to retrieve entries are done async and finish very quickly irrespective of user interaction. The old method required multiple threads to be reserved for this purpose."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:56
+#, no-wrap
+msgid "Streamed batches"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:63
+msgid "The responses from a remote node are written directly to the output stream so there are no intermediate collections allocated. This means we only have to iterate upon the data once as we retain the iterator between requests. On the originator we still have to store the batches in a collection to be enqueued for the user to pull."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:64
+#, no-wrap
+msgid "Rewritten Parallel Distribution"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:69
+msgid "Great care was taken to implement parallel distribution in a way to vastly reduce contention and ensure that we properly follow the batchSize configuration."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:78
+msgid "When parallel distribution is in use the new implementation will start 4 remote node requests sharing the batch size (so each one gets 1/4). This way we can guarantee that we only have the desired size irrespective of the number of nodes in the cluster. The old implementation would request batchSize from all nodes at the same time. So not only did it reserve a thread for node but could easily swamp your JVM memory, causing OutOfMemoryErrors (which no one likes). The latter alone made us force the default to be sequential distribution when using an iterator."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:83
+msgid "The old implementation would write entries from all nodes (including local) to the same shared queue. The new implementation has a different queue for each request, which allows for faster queues with no locking to be used."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:87
+msgid "Due to these changes and other isolations between threads, we can now make parallel distribution the default setting for the iterator method.  And as you will see this has improved performance nicely."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:89
+#, no-wrap
+msgid "Performance"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:98
+msgid "We have written a http://openjdk.java.net/projects/code-tools/jmh/[JMH] test harness specifically for this blog post, testing 9.1.5.Final https://github.com/infinispan/infinispan/releases/tag/9.1.5.Final[build] against latest 9.2.0.SNAPSHOT. The test runs by default with 4GB of heap with 6 nodes in a distributed cache with 2 owners. It has varying entry count, entry sizes and distributed batch sizes."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:106
+msgid "Due to the variance in each test a large number of tests were ran and with different permutations to make sure it covered a large amount of test cases. The JMH test that was ran can be found at https://github.com/infinispan/infinispan-benchmarks/tree/master/iteration[github].  All the default settings were used for the run except -t4 (runs with 4 worker threads) was provided. This was all ran on my measly laptop (i7-4810MQ and 16 GB) - maxing out the CPU was not a hard task."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:111
+#, no-wrap
+msgid ""
+"*CAVEAT*: The tests don't do anything with the iterator and just try to\n"
+"pull them as fast as they can. Obviously if you have a lot of processing\n"
+"done between iterations you will likely not see as good of a performance\n"
+"increase.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:116
+msgid "The entire results can be found https://docs.google.com/spreadsheets/d/18v8e6vG-4aX8Pk-ihB3p1H5cQvsSQlFMhQSKxPhSLf0/edit?usp=sharing[here].  It shows each permutation and how many operations per second and finds the difference (green shows 5% or more and red shows -5% or less)."
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:122
+#, no-wrap
+msgid "Operation"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:122
+#, no-wrap
+msgid "Average Gain"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:123
+#, no-wrap
+msgid "Code"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:123
+#, no-wrap
+msgid "Specified Distribution Mode"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:124
+#, no-wrap
+msgid "3.5%"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:126
+#, no-wrap
+msgid ".entrySet().stream().sequentialDistribution.iterator()"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:126
+#, no-wrap
+msgid "Default"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:126
+#, no-wrap
+msgid "11%"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:128
+#, no-wrap
+msgid ".entrySet().iterator()"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:128
+#, no-wrap
+msgid "No Rehash"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:128
+#, no-wrap
+msgid "14%"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:129
+#, no-wrap
+msgid ".entrySet().stream().disableRehashAware().iterator()"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:139
+msgid "The above 3 rows show a few different ways you could have been invoking the iterator method. The second row is probably by far the most used case. In this case you should see around a *11*% increase in performance (results will vary). This is due to the new pulling method as well as parallel distribution becoming the new default running mode. It is unlikely a user was using the other 2 methods, but are provided for a more complete view."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:144
+msgid "If you were specifying a distribution mode manually, either sequential or distribution you will only see a few percent faster run (*3.5*%), but every little bit helps! Also if you can switch to parallel you may want to think about doing so."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:150
+msgid "Also you can see if you were running with rehash disabled prior, it has even more gains (*14*%). Those don't even include the fact that no rehash was *28*% faster than with before (which means it is about *32*% faster in general now). So if you can get away with a _at most once_ guarantee, disabling rehash will provide the best throughput."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:152
+#, no-wrap
+msgid "Whats next? "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:158
+msgid "As was mentioned this is not exposed to the user directly. You still interact with the iterator as you would normally. We should remedy this at some point."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:159
+#, no-wrap
+msgid "Expose new method"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:164
+msgid "We would love to eventually expose a method to return a Publisher directly to the user so that they can get the full benefits of having a pull based implementation underneath."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:172
+msgid "This way any intermediate operations applied to the stream before would be distributed and anything applied to the Publisher would be done locally. And just like the iterator method this publisher would be fully rehash aware if you have it configured to do so and would make sure you get all entries delivered in an _exactly once_ fashion (rehash disabled guarantees _at most once_)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:177
+msgid "Another side benefit is that the Subscriber methods could be called on different threads so there is no overhead required on the ISPN side for coordinating these into queue(s). Thus the Subscriber _should_ be able to retrieve all entries faster than just doing an iterator."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:178
+#, no-wrap
+msgid "Java 9 Flow"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:185
+msgid "Also many of you may be wondering why we aren't using the new Flow API introduced in Java 9. Luckily the Flow API is a 1:1 conversion of reactive streams. So whenever Infinispan will start supporting Java 9 interfaces/classes, we hope to properly expose these as the JDK classes."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:187
+#, no-wrap
+msgid "Segment Based Iteration "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:197
+msgid "With Infinispan 9.3, we hope to introduce https://issues.jboss.org/browse/ISPN-5451[data container] and https://issues.jboss.org/browse/ISPN-6026[cache store] segment aware iteration. This means when iterating over either we would only have to process entries that map to a given segment. This should reduce the time and processing for iteration substantially, especially for cache stores.  Keep your eyes out for a future blog post detailing these as 9.3 development commences."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:198
+#, no-wrap
+msgid "Give us Feedback"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:203
+msgid "We hope you find a bit more performance when working with your distributed iteration. Also we value any feedback on what you want our APIs to look like or find any bugs. As always let us know at any of the places listed http://infinispan.org/community/[here]."
+msgstr ""

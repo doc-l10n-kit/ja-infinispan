@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2013-02-08-infinispan-521final-is-out.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-02-08-infinispan-521final-is-out.adoc:12
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 5.2.1.Final is out!\n"
+"permalink: /blog/:year/:month/:day/infinispan-521final-is-out\n"
+"date: '2013-02-08T10:05:00.004-08:00'\n"
+"author: mmarkus\n"
+"tags: [ \"release\",\n"
+"\"final\"\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3124060478719865792\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/02/infinispan-521final-is-out.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-02-08-infinispan-521final-is-out.adoc:14
+msgid "This release fixes two critical memory-leaks:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-02-08-infinispan-521final-is-out.adoc:17
+msgid "https://issues.jboss.org/browse/ISPN-2803[ISPN-2803] - Memory leak on every cache write.operation"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-02-08-infinispan-521final-is-out.adoc:19
+msgid "https://issues.jboss.org/browse/ISPN-2804[ISPN-2804] - Memory Leak: TransactionTable never cleans up complete transactions"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-02-08-infinispan-521final-is-out.adoc:22
+msgid "A big thanks to http://www.linkedin.com/pub/dir/Erik/Salter[Erik Salter] for spotting and patching the above issues!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-02-08-infinispan-521final-is-out.adoc:32
+msgid "For a complete list of things included please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12320700[release notes]. Remember to visit our http://www.jboss.org/infinispan/downloads[downloads] section to find the latest release and if you have any questions please check our http://www.jboss.org/infinispan/forums[forums], our mailing lists or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-02-08-infinispan-521final-is-out.adoc:36
+msgid "Cheers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-02-08-infinispan-521final-is-out.adoc:38
+msgid "Mircea"
+msgstr ""

@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:13
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 8.0.0.Alpha1\n"
+"permalink: /blog/:year/:month/:day/infinispan-800alpha1\n"
+"date: '2015-05-25T12:21:00.002-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\",\n"
+"\"alpha\",\n"
+"]\n"
+"thumbnail: http://3.bp.blogspot.com/-7XudyRuEXwM/VV83FAJL_6I/AAAAAAAAIJE/8jSlC5nglfE/s72-c/infinispan8_logo_r1v1.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1585647794897414775\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/05/infinispan-800alpha1.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:15
+msgid "http://3.bp.blogspot.com/-7XudyRuEXwM/VV83FAJL_6I/AAAAAAAAIJE/8jSlC5nglfE/s1600/infinispan8_logo_r1v1.png[image:http://3.bp.blogspot.com/-7XudyRuEXwM/VV83FAJL_6I/AAAAAAAAIJE/8jSlC5nglfE/s320/infinispan8_logo_r1v1.png[image,width=320,height=103]]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:19
+msgid "Dear Infinispan community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:26
+msgid "it is with great pleasure that we are announcing the release of Infinispan 8.0.0.Alpha1. This is the first release of Infinispan that requires Java 8 to compile and run. We have great plans in store for our Java 8 API, and this is the first step in getting there. Don't worry, however: we intend to maintain backwards compatibility for both configuration and API."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:28
+msgid "This release brings some highly requested features:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:34
+msgid "the introduction of size-based eviction, i.e. the ability to set a maximum amount of heap used by a cache. Please note that this requires enabling storeAsBinary. This feature has only been tested with HotSpot, and other JVMs (e.g. IBM J9) will not behave as expected. We welcome any improvements you can give us to help with alternate JVMs."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:40
+msgid "the ability to run non-indexed queries on indexed data: this means that if you issue a query with predicates which involve non-indexed fields, Infinispan will still be able to execute the query. In the future we intend to also add support for hybrid queries, i.e. queries which can take advantage of indexed fields but which also need to discern on non-indexed ones."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:43
+msgid "and many many bugfixes, consult our issue tracker for a https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12327279[list of things] we have fixed. "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:47
+msgid "We have also removed asynchronous marshalling which never worked quite right, and also imposed several limitations on applications. Good riddance !"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:51
+msgid "Don't forget to also check-out our http://infinispan.org/roadmap/[roadmap] to see the things we plan to get done during the 8.0 cycle."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:55
+msgid "http://infinispan.org/download/[Download] it now and tell us what you think on our https://developer.jboss.org/en/infinispan/content[forums] or come and meet us on IRC: channel `#infinispan `on Freenode.  ``"
+msgstr ""

@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2009-08-12-coalesced-asynchronous-cache-store.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-08-12-coalesced-asynchronous-cache-store.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Coalesced Asynchronous Cache Store\n"
+"permalink: /blog/:year/:month/:day/coalesced-asynchronous-cache-store\n"
+"date: '2009-08-12T02:06:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"cache stores\", \"asynchronous\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8048638839617624185\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/08/coalesced-asynchronous-cache-store.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-08-12-coalesced-asynchronous-cache-store.adoc:14
+msgid "As we prepare for Infinispan's beta release, let me introduce to you one of the recent enhancements implemented which improves the way the current asynchronous (or write-behind) cache store works."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-08-12-coalesced-asynchronous-cache-store.adoc:20
+msgid "Right until now, the asynchronous cache store simply queued modifications, while a set of threads would apply them. However, if the queue contained N put operations on the same key, these threads would apply each and every modification one after the other, which is not very efficient."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-08-12-coalesced-asynchronous-cache-store.adoc:26
+msgid "Thanks to the excellent feedback from the Infinispan community, we've now improved the asynchronous cache store so that it coalesces changes and only applies the latest modification on a key. So, if N put operations on the same key are queued, only the last modification will be applied to the cache store."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-08-12-coalesced-asynchronous-cache-store.adoc:32
+msgid "Internally, the asynchronous concurrent queueing mechanism used performs in O(1) by keeping an map with the latest values for each key. So, this maps acts like the queue but there's a not a need for a queue as such, we only care about making sure the latest values are stored hence, order is not important."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-08-12-coalesced-asynchronous-cache-store.adoc:41
+msgid "Note that the way threads apply these modifications is that they start working as soon as there are any changes available and so to see these changes coalesced, the system needs to be relatively busy or a lot of changes on the same key need to happen in a relatively short period of time. We could have made these threads work periodically, i.e. every X seconds, but by doing that, we would be letting modifications pile up and the time between operations and the cache store updates would go up, hence increasing the chance that the cache store is outdated."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-08-12-coalesced-asynchronous-cache-store.adoc:45
+msgid "Finally, there's no configuration modifications required to get the asynchronous cache store to work in the coalesced way, it just works like this out-of-the-box. Example:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2009-08-12-coalesced-asynchronous-cache-store.adoc:61
+#, no-wrap
+msgid ""
+"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+"<infinispan xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"urn:infinispan:config:4.0\">\n"
+"  <namedCache name=\"persistentCache\">\n"
+"     <loaders passivation=\"false\" shared=\"false\" preload=\"true\">\n"
+"        <loader class=\"org.infinispan.loaders.file.FileCacheStore\" fetchPersistentState=\"true\" ignoreModifications=\"false\" purgeOnStartup=\"false\">\n"
+"           <properties>\n"
+"              <property name=\"location\" value=\"/tmp\"/>\n"
+"           </properties>\n"
+"           <async enabled=\"true\" threadPoolSize=\"10\"/>\n"
+"        </loader>\n"
+"     </loaders>\n"
+"  </namedCache>\n"
+"</infinispan>\n"
+msgstr ""

@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:14
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: 'DevNation 2016: Galder Zamarreño on “Building reactive applications with Node.js\n"
+"permalink: /blog/:year/:month/:day/devnation-2016-galder-zamarreno-on\n"
+"  and Red Hat JBoss Data Grid”'\n"
+"date: '2016-06-20T06:55:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"conference\",\n"
+"\"javascript\",\n"
+"\"devnation\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7332250071342700362\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/06/devnation-2016-galder-zamarreno-on.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:20
+msgid "Earlier this month I did an interview with the DevNation 2016 organizers to talk about my talk on forthcoming talk on building reactive applications with Node.js and JBoss Data Grid, the Infinispan version for which Red Hat provides professional support, certified integration, patches...etc."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:24
+msgid "The talk will be happen next Tuesday, 28th June at 3:30pm PDT, so if you're in DevNation and want to find out more about Infinispan and our new Node.js Javascript client, make sure you join us then!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:27
+msgid "Originally posted in: http://developers.redhat.com/blog/2016/06/09/devnation-2016-galder-zamarreno-on-building-reactive-applications-with-node-js-and-red-hat-jboss-data-grid/[http://developers.redhat.com/blog/2016/06/09/devnation-2016-galder-zamarreno-on-building-reactive-applications-with-node-js-and-red-hat-jboss-data-grid]"
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:29
+#, no-wrap
+msgid "Building reactive applications with Node.js and Red Hat JBoss Data Grid"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:35
+msgid "JBoss Data Grid is a distributed in-memory key/value data store from Red Hat, which can be used for caching, temporary and permanent storage.  Although Java developers were its primary audience initially, the team has been expanding its appeal to C++, C# and even Javascript developers."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:40
+msgid "The latest JBoss Data Grid release includes a fully asynchronous Node.js client for interacting with JBoss Data Grid servers and my talk at DevNation is focused on how Javascript developers can make the most of the client to cache or store their data."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:50
+msgid "The talk has been designed around a web application that promotes JBoss Data Grid talks in forthcoming conferences, user groups… etc. The application will contain a Node.js component whose job will be to interact with the backend JBoss Data Grid servers to store and retrieve data, as well as receiving events when new information has been added to the backend. Through the live coding of this application, the audience will get an understanding of how to interact with the newly released Node.js JBoss Data Grid client, and after the talk they’ll have access to the code to be able to try it themselves."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:54
+msgid "_Tuesday_ _3:30 p.m. to 4:30 p.m._ _Room 133_"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:56
+msgid "https://rhdevelopers.files.wordpress.com/2016/05/galder.jpg[image:https://rhdevelopers.files.wordpress.com/2016/05/galder.jpg?w=640[galder]]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:58
+#, no-wrap
+msgid "*About the presenter:*\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:63
+msgid "This will be my first time speaking at DevNation and I’m really excited about it because it brings together speaks and attendees not only from the Java/JVM space, but from other important developer communities such as Javascript."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:68
+msgid "Although I started as a Java developer, over the past decade I’ve become more and more interested in other programming languages, in particular functional programming languages such as Scala and Javascript, which I’ve been able to apply directly at my job."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:75
+msgid "These days I’m hugely interested by the purely functional ones such as Haskell, Elm or Purescript because the lack of mutability makes their solutions both elegant and easier to reason about. I’m also keeping a close eye as well on the Erlang ecosystem, e.g. Elixir, because I feel that the predictable latency offered by the Erlang VM is something that it’s not so easy to achieve in Java Virtual Machine."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:78
+msgid "I think learning other programming languages is one of the best things a developer can do, because it opens your mind to different points of view, different ways to solve problems, and widens the solution space."
+msgstr ""

@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2011-11-09-single-lock-owner-important-step.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-09-single-lock-owner-important-step.adoc:14
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: 'Single lock owner: an important step forward'\n"
+"permalink: /blog/:year/:month/:day/single-lock-owner-important-step\n"
+"date: '2011-11-09T12:57:00.000-08:00'\n"
+"author: mmarkus\n"
+"tags: [ \"radargun\",\n"
+"\"transactions\",\n"
+"\"locking\",\n"
+"\"deadlock detection\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7886295445675479442\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/11/single-lock-owner-important-step.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-09-single-lock-owner-important-step.adoc:19
+msgid "The single lock owner is a highly requested Infinispan improvement. The basic idea behind it is that, when writing to a key, locks are no longer acquired on all the nodes that own that key, but only on a single designated node (named \"main owner\")."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2011-11-09-single-lock-owner-important-step.adoc:21
+#, no-wrap
+msgid "How does it help me?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-09-single-lock-owner-important-step.adoc:27
+msgid "Short version: if you use transactions that concurrently write to the same keys, this improvement significantly increases your system' throughput."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-09-single-lock-owner-important-step.adoc:40
+msgid "Long version: If you're using Infinispan with transactions that modify the same key(s) concurrently then you can easily end up in a deadlock. A deadlock can also occur if two transaction modify the same key at the same time - which is both inefficient and counter-intuitive. Such a deadlock means that at one transaction(or both) eventually rollback but also the lock on the key is held for the duration of a lockAquistionTimout config option (defaults to 10 seconds). These deadlocks reduces the throughput significantly as transactions threads are held inactive during deadlock time. On top of that, other transactions that want to operate on that key are also delayed, potentially resulting in a cascade effect."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2011-11-09-single-lock-owner-important-step.adoc:42
+#, no-wrap
+msgid "What's the added performance penalty?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-09-single-lock-owner-important-step.adoc:57
+msgid "The only encountered performance penalty is during cluster topology changes. At that point the cluster needs to perform some additional computation (no RPC involved) to fail-over the acquired locks from previous to new owners.  Another noticeable aspect is that locks are now being released asynchronously, after the transaction commits. This doesn't add any burden to the transaction duration, but it means that locks are being held slightly longer. That's not something to be concerned about if you're not using transactions that compete for same locks though.  We plan to benchmark this feature using http://radargun.sourceforge.net/[Radargun] benchmark tool - we'll report back!"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2011-11-09-single-lock-owner-important-step.adoc:59
+#, no-wrap
+msgid "Want to know more?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-09-single-lock-owner-important-step.adoc:65
+msgid "You can read the http://community.jboss.org/wiki/SingleNodeLockingModel[single lock owner design wiki] or/and follow the JIRA https://issues.jboss.org/browse/ISPN-1137[JIRA] discussions."
+msgstr ""

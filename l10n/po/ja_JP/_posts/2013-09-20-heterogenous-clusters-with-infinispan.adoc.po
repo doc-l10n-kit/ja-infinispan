@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2013-09-20-heterogenous-clusters-with-infinispan.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-20-heterogenous-clusters-with-infinispan.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Heterogenous clusters with Infinispan 6.0.0.Beta1\n"
+"permalink: /blog/:year/:month/:day/heterogenous-clusters-with-infinispan\n"
+"date: '2013-09-20T08:38:00.000-07:00'\n"
+"author: infinispan\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-298238953577386573\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/09/heterogenous-clusters-with-infinispan.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-20-heterogenous-clusters-with-infinispan.adoc:17
+msgid "One of the basic rules of participating in an Infinispan cluster was that everyone must pay their fair share. Sure, each node was able to run a diferent set of caches (i.e. the cluster didn't have to be symmetric).  But when a node started up a distributed cache, it automatically took ownership of a share of the keys equal to all the other members of the cache."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-20-heterogenous-clusters-with-infinispan.adoc:24
+msgid "With the implementation of https://issues.jboss.org/browse/ISPN-3051[ISPN-3051] in 6.0.0.Beta1, that is no longer the case. Each node can now opt to own more or less keys, using the new capacityFactor setting. The default capacity factor is 1.0, and nodes can specify both a higher and a lower value via configuration API:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-20-heterogenous-clusters-with-infinispan.adoc:28
+msgid "Or via the XML configuration:  "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-20-heterogenous-clusters-with-infinispan.adoc:35
+msgid "Note that we don't guarantee that the number of keys owned by a node will be exactly proportional to its capacity factor. In particular, custom ConsistentHashFactory implementations are free to ignore the capacityFactor setting completely. But the default ConsistentHashFactory will try to respect it as much as it can."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-20-heterogenous-clusters-with-infinispan.adoc:43
+msgid "One interesting use case is nodes with a capacity factor of 0. This could be useful when some nodes are too short-lived to be useful as data owners, but they can't use HotRod (or other remote protocols) because they need transactions. With cross-site replication as well, the \"site master\" should only deal with forwarding commands between sites and shouldn't handle user requests, so it makes sense to configure it with a capacity factor of 0."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-20-heterogenous-clusters-with-infinispan.adoc:47
+msgid "A final note: Infinispan server 6.0.0.Beta1 also supports this feature, but the setting is called capacity-factor to match the AS naming convention."
+msgstr ""

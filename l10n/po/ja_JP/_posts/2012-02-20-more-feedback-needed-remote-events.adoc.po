@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2012-02-20-more-feedback-needed-remote-events.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-02-20-more-feedback-needed-remote-events.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: More feedback needed! Remote events coming to Hot Rod\n"
+"permalink: /blog/:year/:month/:day/more-feedback-needed-remote-events\n"
+"date: '2012-02-20T06:40:00.000-08:00'\n"
+"author: galder\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1323943292648612926\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/02/more-feedback-needed-remote-events.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-02-20-more-feedback-needed-remote-events.adoc:20
+msgid "With 7 votes already, https://issues.jboss.org/browse/ISPN-374[remote event handling] in Hot Rod is https://issues.jboss.org/browse/ISPN#selectedTab=com.atlassian.jira.plugin.system.project%3Apopularissues-panel[one of the most demanded features] in Infinispan, and we've just started designing it. You can find out more about the design in https://community.jboss.org/docs/DOC-17571[this article] and I've also started a Infinispan Development mailing list discussion in order to http://lists.jboss.org/pipermail/infinispan-dev/2012-February/010239.html[open a debate] on this article."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-02-20-more-feedback-needed-remote-events.adoc:27
+msgid "Remember that remote event handling is the key piece that allows https://www.jboss.org/dms/judcon/presentations/London2011/day1track2session2.pdf[near-cache like patterns] to be built in Infinispan and we know for a fact that this is one of the most demanded Infinispan patterns. So, if you have an interest in near caches, please provide any feedback you might have on the kind of event subscriptions and notifications you're interested."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-02-20-more-feedback-needed-remote-events.adoc:33
+msgid "To provide feedback, either comment on the https://community.jboss.org/wiki/DesignOfRemoteEventHandlingInHotRod[linked article], or join https://lists.jboss.org/mailman/listinfo/infinispan-dev[Infinispan's Development mailing list] and reply to the mail thread."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-02-20-more-feedback-needed-remote-events.adoc:35
+msgid "Cheers, Galder"
+msgstr ""

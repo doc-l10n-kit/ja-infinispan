@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2011-09-13-infinispan-510alpha1-released.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-09-13-infinispan-510alpha1-released.adoc:11
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: 'Infinispan 5.1.0.ALPHA1 released: Distributed Queries are here!'\n"
+"permalink: /blog/:year/:month/:day/infinispan-510alpha1-released\n"
+"date: '2011-09-13T07:21:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"distributed queries\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1678195337732558335\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/09/infinispan-510alpha1-released.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-09-13-infinispan-510alpha1-released.adoc:17
+msgid "Having released Infinispan 5.0.1.FINAL yesterday, today is the turn of releasing Infinispan 5.1.0.ALPHA1 _\"Brahma\"_. This is the first in a series of alpha releases which will give Infinispan users the chance to play with the newest features. Here're some highlights of what's included in this release:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-09-13-infinispan-510alpha1-released.adoc:25
+msgid "Thanks to Israel Lacerra, Infinispan now supports fully distributed queries which allows queries to be parallelised across all nodes.  Creating a distributed query is very easy, simply call http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/query/SearchManager.html#getClusteredQuery(org.apache.lucene.search.Query,%20java.lang.Class...)[SearchManager.getClusteredQuery].  Please note that this feature is experimental and the API is likely to change before the final release."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-09-13-infinispan-510alpha1-released.adoc:26
+msgid "Infnispan Query module uses Hibernate Search 4 now."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-09-13-infinispan-510alpha1-released.adoc:35
+msgid "In Infinispan 5.0, we introduced the possibility of executing operations against a cache in such way that class loading could occur with a user-provided classloader. In this new release, we've extended the use case to allow data that's stored in binary format to be unmarshalled with the given classloader. This is particularly handy for those users that are deploying Infinispan in modular, or OSGI-like environments. For more information, check http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/AdvancedCache.html#with(java.lang.ClassLoader)[AdvancedCache.with(ClassLoader)  API]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-09-13-infinispan-510alpha1-released.adoc:39
+msgid "Please keep the feedback coming, and as always, you can download the release from here and you get further details on the issues addressed in the changelog."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-09-13-infinispan-510alpha1-released.adoc:49
+msgid "By the way, remember that members of the Infinispan team will be speaking in events such as http://www.oracle.com/javaone/index.html[JavaOne], http://soft-shake.ch/en/conference/sessions.html[SoftShake], http://www.jboss.org/events/JUDCon/2011/london.html[JUDCon London], http://www.devoxx.com/display/DV11/Home[Devoxx]...etc across the globe.  Don't miss them!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-09-13-infinispan-510alpha1-released.adoc:53
+msgid "Cheers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-09-13-infinispan-510alpha1-released.adoc:54
+msgid "Galder"
+msgstr ""

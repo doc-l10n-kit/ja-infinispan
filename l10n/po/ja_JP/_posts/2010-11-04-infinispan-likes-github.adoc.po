@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:13
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan likes GitHub\n"
+"permalink: /blog/:year/:month/:day/infinispan-likes-github\n"
+"date: '2010-11-04T06:23:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \"SCM\",\n"
+"\"git\",\n"
+"\"github\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3613864799147622855\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/11/infinispan-likes-github.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:27
+msgid "http://t3.gstatic.com/images?q=tbn:OriLIv0A-ru3IM:https://ds-plone.cs.technion.ac.il/DSL/docs/howtos/programming-tasks/version-control/git-logo.png&t=1[image:http://t3.gstatic.com/images?q=tbn:OriLIv0A-ru3IM:https://ds-plone.cs.technion.ac.il/DSL/docs/howtos/programming-tasks/version-control/git-logo.png&t=1[image]]It had to happen someday - Infinispan's primary source code repository has now moved to https://github.com/[GitHub].  We have abandoned http://subversion.tigris.org/[Subversion] as a version control tool for the far superior http://en.wikipedia.org/wiki/Distributed_revision_control[distributed VCS] which has found favour in many large and complex open source projects.  I've been experimenting with a GitHub setup for the past few weeks, with a snapshot of the Infinispan repository, and http://git-scm.com/[git] is a sheer joy to use - a sublime experience, once you get your head around the concepts of distributed version control.  GitHub makes things even sweeter, with an awesome web based UI."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:29
+msgid "Anyway, a quick summary:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:31
+msgid "Infinispan sources are no longer in Subversion, on JBoss.org"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:34
+msgid "The http://anonsvn.jboss.org/repos/infinispan/[Infinispan Subversion repository] is still browseable, in _*read-only mode!*_"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:37
+msgid "The primary repository for Infinispan is now http://github.com/infinispan/infinispan"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:39
+msgid "Clone this repository at will!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:40
+msgid "Contributions should take the form of pull requests on GitHub"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:43
+msgid "Infinispan's Hudson, release tooling and other systems have been updated to reflect this change"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:48
+msgid "For those used to working with Infinispan's Subversion-based setup, or those new to git, I've put together a http://community.jboss.org/wiki/InfinispanFromSvnToGit[short wiki page] on getting started with Infinispan on GitHub."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:53
+msgid "http://git-scm.com/images/github.png[image:http://git-scm.com/images/github.png[image]]Oh, and I'd love to hear your feedback on this move."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:57
+msgid "Happy cloning!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:58
+msgid "Manik"
+msgstr ""

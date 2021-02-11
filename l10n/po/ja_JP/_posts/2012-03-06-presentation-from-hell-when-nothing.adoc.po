@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:9
+msgid "layout: blog title: 'A presentation from hell: when nothing else could possibly go wrong' permalink: /blog/:year/:month/:day/presentation-from-hell-when-nothing date: '2012-03-06T23:25:00.000-08:00' author: msurtani tags: [ \"presentations\", \"event\","
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:14
+#, no-wrap
+msgid ""
+"\"user groups\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6463540072396856579\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/03/presentation-from-hell-when-nothing.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:27
+msgid "As a seasoned public speaker, I don't easily get flustered by minor glitches that inevitably occur when presenting or doing live code demos.   I expected a recent http://java.sun.com/community/usergroups/[JUG] and http://www.jboss.org/usergroups[JBUG] tour of the American mid-west to be no different. I was prepared to speak about http://jcp.org/en/jsr/detail?id=107[JSR 107] and http://jcp.org/en/jsr/detail?id=347[JSR 347], http://www.infinispan.org/[Infinispan], and a wee bit on http://ogm.hibernate.org/[Hibernate OGM] and NoSQL. All subjects I'm pretty familiar with, totalling to about an hour of yacking. Followed by a live coding demo to walk people through Infinispan's core API.  Simple."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:47
+msgid "http://www.mobilewhack.com/wp-content/pics/2010/01/15-280x210.jpg[image:http://www.mobilewhack.com/wp-content/pics/2010/01/15-280x210.jpg[image]]So where does one start when talking about what went embarrassingly wrong at the http://www.wjug.org/madjug/[Madison Java User Group] on the 29th of Feb? Well, I suppose mistaking my http://store.apple.com/us/product/MC552ZM/B[iPad VGA connector] for the http://store.apple.com/us/product/MB572Z/A[mini displayport to VGA connector] for my MacBook when leaving London was a start. Mix in the fact that this realisation only happened in a room full of people, with a few minutes to go before the start of the talk. Nice. Unable to connect my laptop to the projector, I had no choice but to present off my iPad instead. Which was fine, except that ten minutes into my talk, my iPad spuriously decided to shut down. Epic fail. But who needs slides, right?  Not _me_, for sure - I'm way too cool for that.  So I continued on, unfazed. Now try explaining http://www.cs.berkeley.edu/~brewer/[Eric Brewer]'s http://en.wikipedia.org/wiki/CAP_theorem[CAP theorem] without any visual aids. Fun, right? I tried to use the whiteboard. No pens! The organiser rushed out to find some. And none of them worked! Even old-school technology was failing on me that day."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:58
+msgid "Then come demo time, I was able to borrow a Linux laptop from Red Hatter Jey Paulraj who was in the audience, and transfer my demo to it. Given that the laptop didn't have the tools needed to actually run the demo, the entire demo consisted of me just walking people through an http://docs.jboss.org/infinispan/5.1/configdocs/[Infinispan configuration XML file]. For half an hour. Suspenseful and thrilling! Well, peppered with anecdotes about the life of an open source developer and several tangents on the architecture of various parts of Infinispan, the time did actually fly by (and the audience did seem at least somewhat engaged!)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:66
+msgid "http://osoyoosdutyfree.com/wp-content/uploads/2011/05/Patron_osoyoos.jpg[image:http://osoyoosdutyfree.com/wp-content/uploads/2011/05/Patron_osoyoos.jpg[image,width=200,height=165]]The clincher, though - I had a PDF containing URLs where people could download the demo, and learn more about the JSRs and Infinispan.  Bringing this PDF up on Jey's laptop, still projecting for the benefit of the room, resulted in his PDF viewer crashing. That's when I threw in the towel - any more information from me would require tequila, preferably delivered intravenously!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:70
+msgid "Now for the moral of the story, don't trust technology. Always be prepared to get your message across with no visual aids whatsoever. Oh, and don't forget your Macbook's VGA adapter. :)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:75
+msgid "http://www.climbers.org/files/images/bill_starting_on_malignant_mushroom.preview.jpg[image:http://www.climbers.org/files/images/bill_starting_on_malignant_mushroom.preview.jpg[image,width=131,height=200]]**[.underline]#Addendum:#** I repeated the talk a few times in Milwaukee and Chicago, and everything ran really well - after a quick trip to the local Apple store to replace my VGA adapter!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:78
+#, no-wrap
+msgid ""
+"*[.underline]#Addendum 2:#* I now am on a short break climbing in the\n"
+"Canadian Rockies, but will soon be presenting the same in Washington DC\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:79
+#, no-wrap
+msgid "drop by if you're in the neighbourhood!\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:81
+msgid "Cheers Manik"
+msgstr ""

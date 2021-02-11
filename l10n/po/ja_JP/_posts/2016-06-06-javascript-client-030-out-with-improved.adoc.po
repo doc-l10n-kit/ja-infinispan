@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2016-06-06-javascript-client-030-out-with-improved.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-06-javascript-client-030-out-with-improved.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Node.js Javascript Client 0.3.0 out with improved stability and API docs\n"
+"permalink: /blog/:year/:month/:day/javascript-client-030-out-with-improved\n"
+"date: '2016-06-06T04:02:00.001-07:00'\n"
+"author: galder\n"
+"tags: [ \"release\", \"javascript\", \"nodejs\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6089572645607578053\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/06/javascript-client-030-out-with-improved.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-06-javascript-client-030-out-with-improved.adoc:14
+msgid "Earlier today Infinispan Javascript client version 0.3.0 was released whose primary focus has been stabilising and tightening existing functionality, deprecating some older methods, and documentation:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-06-javascript-client-030-out-with-improved.adoc:18
+msgid "Multiple fixes around remote execution, remote listeners and iteration."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-06-javascript-client-030-out-with-improved.adoc:20
+msgid "Improved failover handling logic to correctly deal with socket error and remote disconnect situations."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-06-javascript-client-030-out-with-improved.adoc:23
+msgid "Removed getVersioned, getBulk and getBulkKeys methods since these are deprecated in favour of getWithMetadata and getAll. The examples in the README file have been updated."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-06-javascript-client-030-out-with-improved.adoc:26
+msgid "Added API documentation for Javascript client. Online API docs for Javascript client can be found http://docs.jboss.org/infinispan/hotrod-clients/javascript/1.0/apidocs/module-infinispan.html[here]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-06-javascript-client-030-out-with-improved.adoc:33
+msgid "If you're a Javascript user and want to store data remotely in Infinispan Server instances, please give the client a go and tell us what you think of it via our https://developer.jboss.org/en/infinispan/content[forum], via our https://issues.jboss.org/projects/ISPN[issue tracker] or via IRC on the #infinispan channel on Freenode."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-06-javascript-client-030-out-with-improved.adoc:37
+msgid "Cheers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-06-javascript-client-030-out-with-improved.adoc:39
+msgid "Galder"
+msgstr ""

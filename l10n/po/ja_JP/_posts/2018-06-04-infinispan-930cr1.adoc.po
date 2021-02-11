@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 9.3.0.CR1\n"
+"permalink: /blog/:year/:month/:day/infinispan-930cr1\n"
+"date: '2018-06-04T01:01:00.000-07:00'\n"
+"author: rigazilla\n"
+"tags: [ \" release\", \"release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8632938471945003078\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/06/infinispan-930cr1.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:12
+msgid "Dear Infinispan Community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:14
+msgid "we're glad to announce that 9.3.0.CR1 is out!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:18
+msgid "This is the first release which works with both Java 8 and Java 10.  Pre-releases of Java 11 work too. Note that Infinispan still only works in classpath mode."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:20
+msgid "Highlights of this release include:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:25
+msgid "[#docs-internal-guid-fcf54778-c9b3-e418-2086-683286f85b79]#Expanded transaction support in Hot Rod, which can now participate in Java transactions via Sync or Xa enlistment. Transaction recovery isn't supported yet.#"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:28
+msgid "Caches can now configure the maximum number of attempts to start a CacheWriter/CacheLoader on startup before cache creation fails."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:30
+msgid "Write-behind stores are now fault-tolerant by default"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:32
+msgid "Segmented On-Heap Data Container improves stream operation performance"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:37
+msgid "We have introduced several WildFly feature packs to make it easier for Infinispan to be utilised on WildFly instances via the https://github.com/wildfly/wildfly-build-tools[Server Provisioning Plugin]. The following feature packs have been created:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:40
+msgid "infinispan-feature-pack-client: all of the modules required to connect to a hotrod server via the client"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:42
+msgid "infinispan-feature-pack-embedded: the modules required for embedded instances of Infinispan"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:44
+msgid "infinispan-feature-pack-embedded-query: the same as above but with query capabilities"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:46
+msgid "infinispan-feature-pack-wf-modules: this is equivalent to the wildfly-modules.zip"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:48
+msgid "2-Level cache now works with Hibernate ORM 5.3"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:52
+msgid "The server now allows multiple protocols with a Single Port. The initial version supports HTTP/1.1, HTTP/2 and Hot Rod. Switching protocols can be done using TLS/ALPN and HTTP/1.1 Upgrade header."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:55
+msgid "Admin console - improved all editors (schema, scripts, JSON data) to include syntax highlighting"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:57
+msgid "Component Upgrades: Hibernate Search 5.10 and Hibernate ORM 5.3"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:61
+msgid "Numerous bug fixes which improve stability are also included (https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12337256[here] is the full list of the solved issues)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:66
+msgid "As usual, you can find all the bits on our http://infinispan.org/download/[website]. If you find any issues, don't hesitate to report them on our https://issues.jboss.org/projects/ISPN[issue tracker.]"
+msgstr ""

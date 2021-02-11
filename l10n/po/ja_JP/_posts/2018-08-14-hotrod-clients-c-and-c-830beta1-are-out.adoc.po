@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-08-14-hotrod-clients-c-and-c-830beta1-are-out.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-08-14-hotrod-clients-c-and-c-830beta1-are-out.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Hotrod clients C++ and C# 8.3.0.Beta1 are out!\n"
+"permalink: /blog/:year/:month/:day/hotrod-clients-c-and-c-830beta1-are-out\n"
+"date: '2018-08-14T00:11:00.000-07:00'\n"
+"author: rigazilla\n"
+"tags: [ \" beta\", \"c++\", \"release\", \"c#\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4629039114216315474\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/08/hotrod-clients-c-and-c-830beta1-are-out.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-08-14-hotrod-clients-c-and-c-830beta1-are-out.adoc:12
+msgid "Dear Infinispanners,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-08-14-hotrod-clients-c-and-c-830beta1-are-out.adoc:14
+msgid "The C++ and C# 8.3.0.Beta1 releases are available!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-08-14-hotrod-clients-c-and-c-830beta1-are-out.adoc:20
+msgid "Main feature for this release is: transactions. Clients can now run sequence of hotrod operations in a transactional way. Basic methods are provided to begin, commit or rollback a transaction over an hotrod connection (hotrod 2.7 and Infinispan 9.3+ are required).  API are quite easy to use:"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2018-08-14-hotrod-clients-c-and-c-830beta1-are-out.adoc:36
+#, no-wrap
+msgid ""
+"Source code, binaries and docs are at the usual place. Thank you for\n"
+"following us!\n"
+"The Infinispan Team\n"
+"[1]\n"
+"https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314125&version=12338869[Release\n"
+"notes]\n"
+"[2++] https://github.com/infinispan/cpp-client/tree/8.3.0.Beta1[C++ code\n"
+"for 8.3.0.Beta1]\n"
+"[2#] https://github.com/infinispan/dotnet-client/tree/8.3.0.Beta1[C#\n"
+"code for 8.3.0.Beta1]\n"
+"[3] http://infinispan.org/hotrod-clients/[Downloads]"
+msgstr ""

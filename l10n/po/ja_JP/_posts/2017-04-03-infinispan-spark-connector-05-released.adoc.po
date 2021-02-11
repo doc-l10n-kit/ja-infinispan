@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:12
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan Spark connector 0.5 released!\n"
+"permalink: /blog/:year/:month/:day/infinispan-spark-connector-05-released\n"
+"date: '2017-04-03T02:15:00.000-07:00'\n"
+"author: gustavonalle\n"
+"tags: [ \"spark\",\n"
+"\"server\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-534996395361083814\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/04/infinispan-spark-connector-05-released.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:18
+msgid "The Infinispan Spark connector offers seamless integration between Apache Spark and Infinispan Servers.  Apart from supporting Infinispan 9.0.0.Final and Spark 2.1.0, this release brings many usability improvements, and support for another major Spark API."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:20
+#, no-wrap
+msgid "Configuration changes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:27
+msgid "The connector no longer uses a _java.util.Properties_ object to hold configuration, that's now duty of _org.infinispan.spark.config.ConnectorConfiguration_, type safe and both Java and Scala friendly:"
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:31
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:91
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:101
+#, no-wrap
+msgid " "
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:33
+#, no-wrap
+msgid "Filtering by query String"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:40
+msgid "The previous version introduced the possibility of filtering an InfinispanRDD by providing a _Query_ instance, that required going through the QueryDSL which in turn required a properly configured remote cache."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:42
+msgid "It's now possible to simply use an Ickle query string:"
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:47
+#, no-wrap
+msgid "Improved support for Protocol Buffers"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:54
+msgid "Support for reading from a Cache with protobuf encoding was present in the previous connector version, but now it's possible to also write using protobuf encoding and also have protobuf schema registration automatically handled."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:57
+msgid "To see this in practice, consider an arbitrary non-Infinispan based _RDD<Integer, Hotel>_ where Hotel is given by:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:61
+msgid "In order to write this RDD to Infinispan it's just a matter of doing:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:67
+msgid "Internally the connector will trigger the auto-generation of the _.proto_ file and message marshallers related to the configured entity(ies) and will handle registration of schemas in the server prior to writing."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:71
+#, no-wrap
+msgid "Splitter is now pluggable"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:79
+msgid "The _Splitter_ is the interface responsible to create one or more partitions from a Infinispan cache, being each partition related to one or more segments. The Infinispan Spark connector now can be created using a custom implementation of Splitter allowing for different data partitioning strategies during the job processing."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:82
+#, no-wrap
+msgid "Goodbye Scala 2.10"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:88
+msgid "Scala 2.10 support was removed, Scala 2.11 is currently the only supported version. Scala 2.12 support will follow https://issues.apache.org/jira/browse/SPARK-14220"
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:93
+#, no-wrap
+msgid "Streams with initial state"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:99
+msgid "It is possible to configure the _[.pl-en]#InfinispanInputDStream#_ with an extra boolean parameter to receive the current cache state as events."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:103
+#, no-wrap
+msgid "Dataset support"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:109
+msgid "The Infinispan Spark connector now ships with support for Spark's Dataset API, with support for pushing down predicates, similar to _rdd.filterByQuery_. The entry point of this API is the Spark session:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:114
+msgid "To create an Infinispan based Dataframe, the \"infinispan\" data source need to be used, along with the usual connector configuration:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:117
+msgid "From here it's possible to use the untyped API, for example:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:120
+msgid "or execute SQL queries by setting a view:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:125
+msgid "In both cases above, the predicates and the required columns will be converted to an Infinispan Ickle filter, thus filtering data at the source rather than at Spark processing phase."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:135
+msgid "For the full list of changes see the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12316820&version=12331257[release notes.] For more information about the connector, the https://github.com/infinispan/infinispan-spark/blob/master/README.md[official documentation] is the place to go. Also check the https://github.com/infinispan/infinispan-spark/tree/master/examples/twitter[twitter data processing sample] and to report bugs or request new features use the https://issues.jboss.org/projects/ISPRK[project JIRA]."
+msgstr ""

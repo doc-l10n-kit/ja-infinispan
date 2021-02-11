@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 7.0.0.Beta2 is out!\n"
+"permalink: /blog/:year/:month/:day/infinispan-700beta2-is-out\n"
+"date: '2014-09-16T12:03:00.001-07:00'\n"
+"author: infinispan\n"
+"tags: [ \"releaase\", \"beta\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4065421858652334216\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/09/infinispan-700beta2-is-out.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:13
+msgid "Dear Infinispan Community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:15
+msgid "We are happy to announce the second Beta release of Infinispan 7.0.0!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:17
+msgid "This release brings many improvements and fixes:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:23
+msgid "Many fixes and performance optimizations for non-indexed queries (https://issues.jboss.org/browse/ISPN-4670[ISPN-4670], https://issues.jboss.org/browse/ISPN-4700[ISPN-4700])"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:26
+msgid "Significant improvements to the reliability of indexed (i.e. Lucene based) queries:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:29
+msgid "InfinispanIndexManager reworked to handle locking on topology changes (https://issues.jboss.org/browse/ISPN-4599[ISPN-4599])"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:31
+msgid "MassIndexer 20x performance improvement (https://issues.jboss.org/browse/ISPN-4644[ISPN-4644])"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:33
+msgid "Some race conditions fixed in the Lucene Directory (https://issues.jboss.org/browse/ISPN-2981[ISPN-2981])"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:35
+msgid "Fixed serialization of indexing messages under high load (https://issues.jboss.org/browse/ISPN-4573[ISPN-4573])"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:37
+msgid "Resolved a race condition in (indexed) Cache initializations (https://issues.jboss.org/browse/ISPN-4719[ISPN-4719])"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:40
+msgid "Improved classloading when run in containers (https://issues.jboss.org/browse/ISPN-4226[ISPN-4226], https://issues.jboss.org/browse/ISPN-4667[ISPN-4667])"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:42
+msgid "Fixed JBoss modules to use Externalizers when run in containers (https://issues.jboss.org/browse/ISPN-4685[ISPN-4685])"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:43
+msgid "(and many more minor improvements)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:47
+msgid "https://issues.jboss.org/browse/ISPN-4574[ISPN-4574] - Partition handling improvements for replicated caches and distributed caches with _numOwners_ > cluster size / 2"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:49
+msgid "https://issues.jboss.org/browse/ISPN-4646[ISPN-4646] - Eviction performance improvements, thanks to Karsten Blees"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:57
+msgid "For a complete list of features and bug fixes included in this release please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12324508[release notes].  Visit our http://infinispan.org/download/[downloads] section to find the latest release."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:62
+msgid "If you have any questions please check our http://infinispan.org/community/[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:64
+msgid "Cheers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:65
+msgid "The Infinispan team."
+msgstr ""

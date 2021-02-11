@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan Query breaks into 4.0.0.CR1\n"
+"permalink: /blog/:year/:month/:day/infinispan-query-breaks-into-400cr1_23\n"
+"date: '2009-09-23T02:31:00.001-07:00'\n"
+"author: infinispan\n"
+"tags: [ \" jboss cache\", \"lucene\", \"hibernate\", \"hibernate search\", \"index\", \"query\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2624603811930835812\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/09/infinispan-query-breaks-into-400cr1_23.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:13
+msgid "Hello all,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:17
+msgid "Querying is an important feature for Infinispan, so we've decided to include a technology preview of this for 4.0.0.CR1 and 4.0.0.GA, even though it is only really scheduled for Infinispan 4.1.0."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:21
+msgid "Browse to http://www.jboss.org/community/wiki/QueryingInfinispan[this wiki page] to see how the new API works for querying, along with usage examples.#"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:32
+msgid "# Origins# Some of the API has come from http://www.jboss.org/community/wiki/JBossCacheSearchable[JBoss Cache Searchable] but has been enhanced and runs slicker. A lot more work is being done under the hood so it makes it easier for users. For example, the API method on the #QueryFactory.getBasicQuery()# just needs two Strings and builds a basic Lucene #Query# instance, as opposed to forcing the user to create a Lucene query manually. This is still possible however, should a user want to create a more complex query."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:35
+msgid "The indexing for Lucene is now done through interceptors as opposed to listeners, and hence more tightly integrated into Infinispan's core."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:46
+msgid "You can also choose how indexes are maintained. If indexes are shared (perhaps stored on a network mounted drive), then you only want nodes to index changes made locally. On the other hand, if each node maintains its own indexes (either in-memory on on a local filesystem) then you want each node to index changes made, regardless of where the changes are made. This behaviour is controlled by a system property - -#Dinfinispan.query.indexLocalOnly=true.# However, this is system property #temporary# and will be replaced with a proper configuration property once the feature is out of technology preview."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:55
+msgid "What's coming up? Future releases of Hibernate Search and Infinispan will have improvements that will change the way that querying works. The QueryHelper class - as documented in the wiki - is temporary so that will eventually be removed, as you will not need to provide the class definitions of the types you wish to index upfront. We will be able to detect this on the fly (see http://opensource.atlassian.com/projects/hibernate/browse/HSEARCH-397[HSEARCH-397])"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:59
+msgid "There will be a better system for running distributed queries. And the system properties will disappear in favour of proper configuration attributes."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:62
+#: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:70
+msgid "## ##"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:67
+msgid "And also, http://code.google.com/soc/[GSoC] student Lukasz Moren's work involving an Infinispan-based Lucene Directory implementation will allow indexes to be shared cluster-wide by using Infinispan itself to distribute these indexes. All very clever stuff."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:72
+msgid "Thanks for reading!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:74
+msgid "Navin."
+msgstr ""

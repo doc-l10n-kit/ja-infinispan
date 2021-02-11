@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2012-09-04-speeding-up-cache-calls-with.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-09-04-speeding-up-cache-calls-with.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Speeding up Cache calls with IGNORE_RETURN_VALUES invocation flag\n"
+"permalink: /blog/:year/:month/:day/speeding-up-cache-calls-with\n"
+"date: '2012-09-04T02:47:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"flags\", \"performance\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-253397893654517340\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/09/speeding-up-cache-calls-with.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-09-04-speeding-up-cache-calls-with.adoc:15
+msgid "Starting with http://infinispan.blogspot.cz/2012/09/infinispan-520alpha3-is-out.html[Infinispan 5.2.0.Alpha3], a new Infinispan invocation flag has been added called http://docs.jboss.org/infinispan/5.2/apidocs/org/infinispan/context/Flag.html#IGNORE_RETURN_VALUES[IGNORE_RETURN_VALUES]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-09-04-speeding-up-cache-calls-with.adoc:25
+msgid "This flag signals that the client that calls an Infinispan Cache operation () which has some kind of return, i.e.  http://docs.oracle.com/javase/6/docs/api/java/util/Map.html#put(K,%20V)[java.util.Map#put(Object, Object)] (remember that Infinispan's Cache interface extends java.util.Map), the return value (which in the case of http://docs.oracle.com/javase/6/docs/api/java/util/Map.html#put(K,%20V)[java.util.Map#put(Object, Object)] represents the previous value) will be ignored by the client application. A typical client application that ignores the return value would use code like this:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-09-04-speeding-up-cache-calls-with.adoc:30
+msgid "In this example, both cache put call are ignoring the return of the put call, which returns the previous value. In other words, when we cache the last login date, we don't care what the previous value was, so this is a great opportunity for the client code to be re-written in this way:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-09-04-speeding-up-cache-calls-with.adoc:32
+msgid "Or even better:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-09-04-speeding-up-cache-calls-with.adoc:39
+msgid "Thanks to such hints, *Infinispan caches can behave in a more efficient way and can potentially do operations faster*, because work associated with the production of the return value will be skipped. Such work can on occasions involve network calls, or access to persistent cache stores, so by avoiding this work, the cache calls are effectively faster."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-09-04-speeding-up-cache-calls-with.adoc:51
+msgid "In previous Infinispan versions, a similar effect could be achieved with flags with a narrower target and which are considered too brittle for end user consumption such as http://docs.jboss.org/infinispan/5.2/apidocs/org/infinispan/context/Flag.html#SKIP_REMOTE_LOOKUP[SKIP_REMOTE_LOOKUP] or http://docs.jboss.org/infinispan/5.2/apidocs/org/infinispan/context/Flag.html#SKIP_CACHE_LOAD[SKIP_CACHE_LOAD].  So, if you're using either of these flags in your Infinispan client codebase, we highly recommend that from Infinispan 5.2.0.Alpha3 you start using http://docs.jboss.org/infinispan/5.2/apidocs/org/infinispan/context/Flag.html#IGNORE_RETURN_VALUES[IGNORE_RETURN_VALUES] instead."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-09-04-speeding-up-cache-calls-with.adoc:52
+msgid "Cheers, Galder"
+msgstr ""

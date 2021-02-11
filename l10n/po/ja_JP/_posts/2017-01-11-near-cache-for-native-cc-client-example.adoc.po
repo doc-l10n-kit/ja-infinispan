@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2017-01-11-near-cache-for-native-cc-client-example.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-11-near-cache-for-native-cc-client-example.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Near Cache for native C++/C# Client example\n"
+"permalink: /blog/:year/:month/:day/near-cache-for-native-cc-client-example\n"
+"date: '2017-01-11T07:11:00.001-08:00'\n"
+"author: rigazilla\n"
+"tags: [ \" c++\", \"hotrod\", \"near caching\", \"8.1.0\", \"cpp-client\", \"dotnet-client\", \"c#\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7743170217750163171\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/01/near-cache-for-native-cc-client-example.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-11-near-cache-for-native-cc-client-example.adoc:12
+msgid "Dear Readers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-11-near-cache-for-native-cc-client-example.adoc:16
+msgid "as mentioned in our previous post about the new C++/C# release http://blog.infinispan.org/2017/01/hotrod-clients-cc-810beta1-released.html[8.1.0.Beta1], clients are now equipped with near cache support."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-11-near-cache-for-native-cc-client-example.adoc:21
+msgid "The near cache is an additional cache level that keeps the most recently used cache entries in an \"in memory\" data structure. Near cached objects are synchronized with the remote server value in the background and can be get as fast as a map[] operation."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-11-near-cache-for-native-cc-client-example.adoc:25
+msgid "So, your client tends to periodically focus the operations on a subset of your entries? This feature could be of help: it's easy to use, just enable it and you'll have near cache seamless under the wood."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-11-near-cache-for-native-cc-client-example.adoc:27
+msgid "A C++ example of a cache with near cache configuration"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-11-near-cache-for-native-cc-client-example.adoc:38
+msgid "The last line does the magic, the INVALIDATED mode is the active mode for the near cache (default mode is DISABLED which means no near cache, see Java docs), maxEntries is the maximum number of entries that can be stored nearly. If the near cache is full the oldest entry will be evicted. Set maxEntries=0 for unbounded cache (do you have enough memory?)  Now a full example of application that just does some gets and puts and counts how many of them are served remote and how many are served nearly. As you can see the cache object is an instance of the \"well known\" RemoteCache class"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-11-near-cache-for-native-cc-client-example.adoc:43
+msgid "Entries values in the near cache are kept aligned with the remote cache state via the events subsystem: if something changes in the server, an update event (modified, expired, removed) is sent to the client that updates the cache accordingly."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-11-near-cache-for-native-cc-client-example.adoc:46
+msgid "By the way: do you know that C++/C# clients can subscribe listener to events? In the next \"native\" post we will see how."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-01-11-near-cache-for-native-cc-client-example.adoc:48
+msgid "Cheers! and thank you for reading."
+msgstr ""

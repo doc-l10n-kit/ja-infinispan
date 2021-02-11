@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2010-04-28-infinispan-websocket-server.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-04-28-infinispan-websocket-server.adoc:12
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan WebSocket Server\n"
+"permalink: /blog/:year/:month/:day/infinispan-websocket-server\n"
+"date: '2010-04-28T09:16:00.000-07:00'\n"
+"author: tfennelly\n"
+"tags: [ \"websockets\",\n"
+"\"server\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-627809709724459897\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/04/infinispan-websocket-server.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-04-28-infinispan-websocket-server.adoc:16
+msgid "The HTML 5 http://dev.w3.org/html5/websockets/[WebSocket Interface] seems like a nice way of exposing an Infinispan Cache to web clients that are WebSocket enabled."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-04-28-infinispan-websocket-server.adoc:19
+msgid "I just committed a first cut of the new Infinispan WebSocket Server to Subversion."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-04-28-infinispan-websocket-server.adoc:22
+msgid "You get a very simple Cache object in your web page Javascript that supports:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-04-28-infinispan-websocket-server.adoc:24
+msgid "put/get/remove operations on your Infinispan Cache."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-04-28-infinispan-websocket-server.adoc:26
+msgid "notify/unnotify mechanism through which your web page can manage Cache entry update notifications, pushed to the browser."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-04-28-infinispan-websocket-server.adoc:28
+msgid "Take a look at:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-04-28-infinispan-websocket-server.adoc:31
+msgid "http://community.jboss.org/wiki/InfinispanWebSocketServer[the docs here]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-04-28-infinispan-websocket-server.adoc:31
+msgid "http://www.screencast.com/t/ZGEzNDJlY[a short Screencast demo]."
+msgstr ""

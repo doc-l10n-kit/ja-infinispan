@@ -1,0 +1,285 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Near caching with Spring-Boot and Infinispan\n"
+"permalink: /blog/:year/:month/:day/near-caching-with-spring-boot-and\n"
+"date: '2018-11-02T01:27:00.000-07:00'\n"
+"author: karesti\n"
+"tags: [ \"hotrod\", \"near caching\", \"spring\", \"spring boot\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4258344245989877564\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/11/near-caching-with-spring-boot-and.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:17
+msgid "We have recently released https://github.com/infinispan/infinispan-spring-boot[infinispan-spring-boot-starter] *2.0.0.Final*. This version supports https://spring.io/projects/spring-boot[Spring Boot 2.1] and http://infinispan.org/[Infinispan 9.4.0.Final]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:24
+msgid "Before this release, some important features - such as near caching - were only configurable by code.  From now on, we can set all of the Hot Rod client configuration using the *hotrod.properties* file or the https://issues.jboss.org/browse/ISPN-9437[Spring application YAML].  The latter is an important community requirement we had."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:28
+msgid "Let's see how to speed up our applications performance with http://infinispan.org/docs/stable/user_guide/user_guide.html#near_caching[near caching]!"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:35
+#, no-wrap
+msgid "Hot Rod"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:37
+#, no-wrap
+msgid " "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:47
+msgid "Just as a quick reminder, Infinispan can be used embedded in your application or in *client/server* mode. To connect you application to a server you can use an http://infinispan.org/hotrod-clients/[Infinispan Client] and the Infinispan http://infinispan.org/docs/stable/user_guide/user_guide.html#hot_rod_server_usage[“Hot Rod Protocol”]. Other protocols are available, such as REST, but Hot Rod is the most recommended way since it is the one that supports most of the Infinispan functionalities."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:49
+#, no-wrap
+msgid "Near cache"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:60
+msgid "From the Infinispan http://infinispan.org/docs/stable/user_guide/user_guide.html#near_caching[documentation]: Hot Rod client can keep a local cache that stores recently used data.  Enabling near caching can significantly improve the performance of read operations *get* and *getVersioned* since data can potentially be located locally within the Hot Rod client instead of having to go remote."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:62
+#, no-wrap
+msgid "When should I use it? "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:72
+msgid "Near caching can improve the performance of an application when most of the accesses to a given cache are read-only and the accessed dataset is relatively small.  When an application is doing lots of writes to a cache, invalidations, evictions and updates to the near cache need to happen. In this scenario we won't probably get much benefit."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:76
+msgid "As I said in the introduction, the good news is that *this feature can be activated just by configuration*. Code doesn't change, so we can measure the benefits, if such exist, in a very straightforward way."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:78
+#, no-wrap
+msgid "Spring-Boot"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:88
+msgid "I have created a very simple application, available https://github.com/infinispan-demos/infinispan-near-cache[here]. Maven, Java 8 and an Infinispan server are required to run it. You can http://downloads.jboss.org/infinispan/9.4.0.Final/infinispan-server-9.4.0.Final.zip[download the server] or use https://hub.docker.com/r/jboss/infinispan-server/[docker]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:92
+msgid "Docker: docker run -it -p 11222:11222 jboss/infinispan-server:9.4.0.Final"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:94
+msgid "Standalone: PATH/infinispan-server-9.4.0.Final/bin/standalone.sh"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:96
+msgid "Once the server is up and running, build the application using maven "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:98
+msgid ">> infinispan-near-cache: mvn clean install"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:101
+#, no-wrap
+msgid "Writer "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:106
+msgid "This application loads the required data to a remote cache: a list of some of the Infinispan contributors over the last decade."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:110
+msgid ">> writer: mvn spring-boot:run"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:115
+#, no-wrap
+msgid "Reader "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:121
+msgid "The reader application does 10.000 accesses to the contributors cache.  Using a random id, I call 10.000 times the get method. The job gets done in my laptop in ~4000 milliseconds."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:123
+msgid ">> reader-no-near-cache: mvn spring-boot:run"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:128
+#, no-wrap
+msgid "Activating the near cache"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:133
+msgid "I need to configure two properties:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:136
+#, no-wrap
+msgid ""
+"*Near Cache Mode:* DISABLED or INVALIDATED. Default value is DISABLED,\n"
+"so I turn it on with *INVALIDATED*.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:138
+#, no-wrap
+msgid ""
+"*Max Entries:* Integer value that sets the max size of the near\n"
+"caches. There is no default value, so I set up one.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:144
+msgid "The hotrod client configuration is [.underline]#for each client#, [.underline]#not for each cache# (this might change in the future). With that in mind, note that configuring the previous properties will activate near caching *for all the caches*. If you need to activate it just for *some of them*, add the following property:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:148
+#, no-wrap
+msgid ""
+"*Cache Name Pattern:*  String pattern. For example \"i8n-.*\" will\n"
+"activate the near caching for all the caches whose name starts by\n"
+"\"i8n-\".\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:152
+msgid "Configuration can be placed in the *hotrod-client.properties*, *Spring-boot configuration* or *code*."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:153
+#, no-wrap
+msgid "hotrod-client.properties"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:156
+#, no-wrap
+msgid "**infinispan.client.hotrod.near_cache.mode=**INVALIDATED\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:158
+#, no-wrap
+msgid "**infinispan.client.hotrod.near_cache.max_entries=**40\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:160
+#, no-wrap
+msgid "*infinispan.client.hotrod.near_cache.cache_name_pattern=*i8n-.*\n"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:163
+#, no-wrap
+msgid "application.yaml (or properties)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:170
+#, no-wrap
+msgid ""
+"*infinispan:*\n"
+"   *remote:*\n"
+"     *near-cache-mode:* INVALIDATED\n"
+"     *near-cache-max-entries:* 10\n"
+"     *near-cache-cache-name-pattern:* i8n-.*\n"
+msgstr ""
+
+#. type: Title =====
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:171
+#, no-wrap
+msgid "code "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:175
+msgid "With the Infinispan Spring-Boot Starter, I can add custom configuration using the *InfinispanRemoteCacheCustomizer*."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:179
+#, no-wrap
+msgid "Results"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:188
+msgid "My dataset contains 25 contributors. If I activate the near cache with max 12 entries and I run my reader again, I get the job done in ~1900 milliseconds, which is already an improvement. If I configure it to hold the complete dataset, I get it done in ~220 milliseconds, which is a big one!"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:190
+#, no-wrap
+msgid "Conclusions"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:200
+msgid "Near caching can help us speed up our client applications if configured properly. We can test our tuning easily because we only need to add some configuration to the client. Finally, the https://github.com/infinispan/infinispan-spring-boot[Spring-Boot Infinispan Starter] helps us build services with Spring-Boot and Infinispan. "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:209
+msgid "Further work will be done to help Spring-Boot users work with Infinispan, so stay tuned! Any feedback on the starter or any requirement from the community is more that welcome. Find us in https://infinispan.zulipchat.com/[Zulip Chat] for direct contact or post your questions in https://stackoverflow.com/questions/tagged/?tagnames=infinispan&sort=newest[StackOverflow]!"
+msgstr ""

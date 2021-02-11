@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 8.0.1.Final (and 7.2.5.Final)\n"
+"permalink: /blog/:year/:month/:day/infinispan-801final-and-725final\n"
+"date: '2015-09-10T13:49:00.001-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3296095565508041899\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/09/infinispan-801final-and-725final.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:12
+msgid "Dear all,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:15
+msgid "we've just cooked two new point releases of Infinispan to address a number of issues."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:18
+msgid "The highlights for 8.0.1.Final are:  "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:20
+msgid "ISPN-5717 Notify continuous query also when entry expires"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:26
+msgid "ISPN-5591 Simple local cache without interceptor stack. This is an extremely fast cache with very few features (no transactions, no indexing, no persistence, etc). Its primary intendend usage is as a 2nd-level cache for Hibernate, but we're sure you can find lot's of other applications for it, provided you don't require all the bells and whistles that come with our fully-fledged caches."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:27
+msgid "Bump Hibernate Search to 5.5.0.CR1 and Lucene to 5.3.0"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:30
+msgid "A number of query fixes, including indexing and searching of null non-string properties, aggregation expressions in orderBy, filter with both 'where' and 'having' in the same query"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:31
+msgid "ISPN-5731 Cannot use aggregation expression in orderBy"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:34
+msgid "Read the complete https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12328068[release notes]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:37
+msgid "The highlights for 7.2.5.Final are:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:39
+msgid "ISPN-5607 Preemptively invalidate near cache after writes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:40
+msgid "ISPN-5670 Hot Rod server sets -1 for lifespan or maxIdle as default"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:41
+msgid "ISPN-5677 RemoteCache async methods use flags"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:42
+msgid "ISPN-5684 Make getAll work with compatibility mode in DIST"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:45
+msgid "Read the complete https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12327781[release notes]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:50
+msgid "http://infinispan.org/download/[Get] it, http://infinispan.org/tutorials/[learn] how to use it, http://infinispan.org/getinvolved/[help] us improve it."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:52
+msgid "Enjoy !"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:55
+msgid "The Infinispan team"
+msgstr ""

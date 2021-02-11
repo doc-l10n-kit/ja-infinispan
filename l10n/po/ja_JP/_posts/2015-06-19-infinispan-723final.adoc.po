@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2015-06-19-infinispan-723final.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-06-19-infinispan-723final.adoc:12
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 7.2.3.Final\n"
+"permalink: /blog/:year/:month/:day/infinispan-723final\n"
+"date: '2015-06-19T08:34:00.004-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \"bugfix\",\n"
+"\"release\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1090510311518587084\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/06/infinispan-723final.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-06-19-infinispan-723final.adoc:14
+msgid "Dear Infinispan users,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-06-19-infinispan-723final.adoc:18
+msgid "thanks to your help, a few bugs have been found and fixed in the Infinispan 7.2 branch. So if you are affected by any of the bugs below, now is the time to upgrade."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2015-06-19-infinispan-723final.adoc:20
+#, no-wrap
+msgid "Bug"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-06-19-infinispan-723final.adoc:24
+msgid "[https://issues.jboss.org/browse/ISPN-4123[ISPN-4123]] - Remote Query tests random failures"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-06-19-infinispan-723final.adoc:26
+msgid "[https://issues.jboss.org/browse/ISPN-5444[ISPN-5444]] - Filter/converters in server can't unmarshall custom cached classes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-06-19-infinispan-723final.adoc:28
+msgid "[https://issues.jboss.org/browse/ISPN-5522[ISPN-5522]] - LIRS BoundedConcurrentHashMapv8 eviction for tree bin missing check"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-06-19-infinispan-723final.adoc:30
+msgid "[https://issues.jboss.org/browse/ISPN-5524[ISPN-5524]] - Race condition in SemaphoreCompletionService.executeFront()"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-06-19-infinispan-723final.adoc:32
+msgid "[https://issues.jboss.org/browse/ISPN-5527[ISPN-5527]] - Java system properties no longer supported in leveldb expiration path"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-06-19-infinispan-723final.adoc:35
+msgid "[https://issues.jboss.org/browse/ISPN-5531[ISPN-5531]] - java.lang.UnsupportedOperationException during remove (using RemoteCacheManager)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-06-19-infinispan-723final.adoc:37
+msgid "[https://issues.jboss.org/browse/ISPN-5543[ISPN-5543]] - Bad tracef arguments are causing IllegalFormatConversionException"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-06-19-infinispan-723final.adoc:39
+msgid "[https://issues.jboss.org/browse/ISPN-5560[ISPN-5560]] - NotSerializableException for invalidation-cache"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-06-19-infinispan-723final.adoc:41
+msgid "[https://issues.jboss.org/browse/ISPN-5565[ISPN-5565]] - Memory leak in Hot Rod client tests"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-06-19-infinispan-723final.adoc:43
+msgid "[https://issues.jboss.org/browse/ISPN-5566[ISPN-5566]] - Listener Observation is not obeyed for non CacheEntryEvents"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2015-06-19-infinispan-723final.adoc:44
+#, no-wrap
+msgid "Enhancement"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-06-19-infinispan-723final.adoc:48
+msgid "[https://issues.jboss.org/browse/ISPN-5519[ISPN-5519]] - Cannot choose to run index-less query on an indexed cache in compat mode "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-06-19-infinispan-723final.adoc:52
+msgid "Again, http://infinispan.org/download/[downloads] and http://infinispan.org/release-notes/[release notes] are at the usual pages, so go and check them out !"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-06-19-infinispan-723final.adoc:54
+msgid "Happy hacking."
+msgstr ""

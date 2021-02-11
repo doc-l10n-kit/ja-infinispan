@@ -1,0 +1,388 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Introducing distributed execution and MapReduce framework\n"
+"permalink: /blog/:year/:month/:day/introducing-distributed-execution-and\n"
+"date: '2011-01-19T07:39:00.000-08:00'\n"
+"author: vblagojevic\n"
+"tags: [ \"distributed executors\", \"map reduce\", \"API\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6571330426716478650\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/01/introducing-distributed-execution-and.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:20
+msgid "In case you did not pay attention to the area of large scale distributed computing – there is a revolution going on! It is becoming increasingly evident that the software ecosystems built around so called Big Data are at the forefront of cloud computing innovation. Unfortunately, there has been more http://openlife.cc/blogs/2011/january/terabytes-not-big-data-petabytes[debate] around determining how big Big Data actually is rather than defining common set of requirements for the large scale Big Data computational platforms."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:29
+msgid "Stephen O'Grady of RedMonk http://redmonk.com/sogrady/2011/01/13/apache-hadoop/[summarized] this phenomena succinctly: “Big Data, like NoSQL, has become a liability in most contexts. Setting aside the lack of a consistent definition, the term is of little utility because it is single-dimensional. Larger dataset sizes present unique computational challenges. But the structure, workload, accessibility and even location of the data may prove equally challenging.”"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:39
+msgid "Zack Urlocker, an advisor and board member to several startup companies in the area of SaaS was equally vocal in his http://www.theopenforce.com/2010/09/do-we-programming-language-big-data.html[criticism] regarding complexity of the existing systems : “You pretty much gotta be near genius level to build systems on top of Cassandra, Hadoop and the like today. These are powerful tools, but very low-level, equivalent to programming client server applications in assembly language. When it works its [_sic_] great, but the effort is significant and it’s probably beyond the scope of mainstream IT organizations.”"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:51
+msgid "This is exactly where we are positioning Infinispan's roadmap as we are announcing initial steps into the area of distributed execution and MapReduce framework built on top of Infinispan. Infinispan's distributed data grid is a most natural fit for such a platform. We have already built an infrastructure for essentially unlimited linear in-memory data scaling. However, having such a data grid without an ability to execute large scale computation on it is like having a Ferrari without a drivers licence. Listening to the criticism regarding the lack of direction in Big Data field and complexity of the existing distributed execution frameworks our focus was primarily on simplicity without sacrificing power and a rich feature set such a framework should have."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:55
+#, no-wrap
+msgid "Simple distributed execution model "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:74
+msgid "The main interfaces for simple distributed task execution are https://github.com/infinispan/infinispan/blob/master/core/src/main/java/org/infinispan/distexec/DistributedCallable.java[DistributedCallable] and https://github.com/infinispan/infinispan/blob/master/core/src/main/java/org/infinispan/distexec/DistributedExecutorService.java[DistributedExecutorService].  DistributedCallable is essentially a version of the existing Callable from java.util.concurrent package except that DistributedCallable can be executed in remote JVM and receive input from Infinispan cache. Tasks' main algorithm is essentially unchanged, only the input source is changed. Exisiting Callable implementation most likely gets its input in a form of some Java object/primitive while DistributedCallable gets its input from Infinispan cache. Therefore, users who have already implemented Callable interface to describe their task units would simply extend DistributedCallable and use keys from Infinispan execution environment as input for the task. Implentation of DistributedCallable can in fact continue to support implementation of an already existing Callable while simultaneously be ready for distribited execution by extending DistributedCallable."
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:91
+#, no-wrap
+msgid ""
+"public interface DistributedCallable extends Callable {\n"
+"/**\n"
+"* Invoked by execution environment after DistributedCallable\n"
+"* has been migrated for execution to\n"
+"* a specific Infinispan node.\n"
+"*\n"
+"* @param cache\n"
+"*           cache whose keys are used as input data for\n"
+"* this DistributedCallable task\n"
+"* @param inputKeys\n"
+"*           keys used as input for this DistributedCallable task\n"
+"*/\n"
+"public void setEnvironment(Cache cache, Set inputKeys);\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:102
+msgid "DistributedExecutorService is an simple extension of a familiar ExecutorService from java.util.concurrent package. However, the advantages of DistributedExecutorService are not to be overlooked. For the existing Callable tasks users would submit to ExecutorService there is an option to submit them for an execution on Infinispan cluster.  Infinispan execution environment would migrate this task to an execution node, run the task and return the results to the calling node. Of course, not all Callable task would benefit from this feature. Excellent candidates are long running and computationally intensive tasks."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:113
+msgid "The second advantage of the DistributedExecutorService is that it allows a quick and simple implementation of tasks that take input from Infinispan cache nodes, execute certain computation and return results to the caller. Users would specify which keys to use as input for specified DistributedCallable and submit that callable for execution on Infinispan cluster. Infinispan runtime would locate the appriate keys, migrate DistributedCallable to target execution node(s) and finally return a list of results for each executed Callable. Of course, users can omit specifying input keys in which case Infinispan would execute DistributedCallable on all keys for a specified cache."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:117
+#, no-wrap
+msgid "MapReduce model"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:122
+msgid "Infinispan's own MapReduce model is an adaptation of Google's original MapReduce. There are four main components in each map reduce task: Mapper, Reducer, Collator and MapReduceTask."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:128
+msgid "[.cm]#Implementation of a Mapper class is a component of a MapReduceTask invoked once for each input entry K,V. Every Mapper instance migrated to an Infinispan node, given a cache entry K,V input pair transforms that input pair into a result T. Intermediate result T is further reduced using a Reducer.#"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:132
+#, no-wrap
+msgid "public interface Mapper {\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:144
+#, no-wrap
+msgid ""
+"/**\n"
+"* Invoked once for each input cache entry\n"
+"* K,V transforms that input into a result T.\n"
+"*\n"
+"* @param key\n"
+"*           the kay\n"
+"* @param value\n"
+"*           the value\n"
+"* @return result T\n"
+"*/\n"
+"T map(K key, V value);\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:146
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:179
+#, no-wrap
+msgid "}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:151
+msgid "[.cm]#Reducer, as its name implies, reduces a list of results T from map phase of MapReduceTask. Infinispan distributed execution environment creates one instance of Reducer per execution node.#"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:155
+#, no-wrap
+msgid "public interface Reducer {\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:177
+#, no-wrap
+msgid ""
+"/**\n"
+"* Reduces a result T from map phase and return R.\n"
+"* Assume that on Infinispan node N, an instance\n"
+"* of Mapper was mapped and invoked on k many\n"
+"* key/value pairs. Each T(i) in the list of all\n"
+"* T's returned from map phase executed on\n"
+"* Infinispan node N is passed to reducer along\n"
+"* with previsouly computed R(i-1). Finally the last\n"
+"* invocation of reducer on T(k), R is returned to a\n"
+"* distributed task that originated map/reduce\n"
+"* request.\n"
+"*\n"
+"* @param mapResult\n"
+"*           result T of map phase\n"
+"* @param previouslyReduced\n"
+"*           previously accumulated reduced result\n"
+"* @return result R\n"
+"*\n"
+"*/ \n"
+"R reduce(T mapResult, R previouslyReduced);\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:184
+msgid "[.cm]#Collator coordinates results from Reducers executed on Infinispan cluster and assembles a final result returned to an invoker of MapReduceTask. #[.cm]# #"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:188
+#, no-wrap
+msgid "public interface Collator {\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:196
+#, no-wrap
+msgid ""
+"/**\n"
+"* Collates all results added so far and\n"
+"* returns result R to invoker of distributed task.\n"
+"*\n"
+"* @return final result of distributed task computation\n"
+"*/\n"
+"R collate();\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:209
+#, no-wrap
+msgid ""
+"/**\n"
+"* Invoked by runtime every time reduced result\n"
+"* R is received from executed Reducer on remote\n"
+"* nodes.\n"
+"*\n"
+"* @param remoteNode\n"
+"*           address of the node where reduce phase occurred\n"
+"* @param remoteResult\n"
+"*           the result R of reduce phase\n"
+"*/\n"
+"void reducedResultReceived(Address remoteNode, R remoteResult);\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:221
+msgid "[.cm]#Finally, https://github.com/infinispan/infinispan/blob/master/core/src/main/java/org/infinispan/distexec/mapreduce/MapReduceTask.java[MapReduceTask] is a distributed task uniting Mapper, Reducer and Collator into a cohesive large scale computation to be transparently parallelized across Infinispan cluster nodes. Users of MapReduceTask need to provide a cache whose data is used as input for this task. Infinispan execution environment will instantiate and migrate instances of provided mappers and reducers seamlessly across Infinispan nodes. Unless otherwise specified using onKeys method input keys filter all available key value pairs of a specified cache will be used as input data for this task. #"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:226
+msgid "[.cm]#MapReduceTask implements a slightly different execution model from the original MapReduce proposed by Google. Here is the pseudocode of the MapReduceTask.  #"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:233
+#, no-wrap
+msgid ""
+"mapped = list()\n"
+"for entry in cache.entries:\n"
+"t = mapper.map(entry.key, entry.value)\n"
+"mapped.add(t)\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:238
+#, no-wrap
+msgid ""
+"r = null\n"
+"for t in mapped:\n"
+"r = reducer.reduce(t, r)\n"
+"return r to Infinispan node that invoked the task\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:245
+#, no-wrap
+msgid ""
+"On Infinispan node invoking this task:\n"
+"reduced_results = invoke map reduce task on all nodes, retrieve map{address:result}\n"
+"for r in reduced_results.entries:\n"
+"remote_address = r.key\n"
+"remote_reduced_result = r.value\n"
+"collator.add(remote_address, remote_reduced_result)\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:247
+#, no-wrap
+msgid "return collator.collate()\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:250
+#, no-wrap
+msgid "Examples"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:256
+msgid "In order to get a better feel for MapReduce framework lets have a look at the example related to Infinispan's grid file system. How would we calculate total size of all files in the system using MapReduce framework? Easy! Have a look at GridFileSizeExample."
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:261
+#, no-wrap
+msgid ""
+"public class GridFileSizeExample {\n"
+" public static void main(String arg[]) throws Exception {\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:264
+#, no-wrap
+msgid ""
+"Cache  cache = null;\n"
+"MapReduceTask task =\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:266
+#, no-wrap
+msgid "new MapReduceTask(cache);\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:268
+#, no-wrap
+msgid "Long result = task.mappedWith(new Mapper() {\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:273
+#, no-wrap
+msgid ""
+"@Override\n"
+"public Long map(String key, GridFile.Metadata value) {\n"
+"return (long) value.getLength();\n"
+"}\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:275
+#, no-wrap
+msgid "}).reducedWith(new Reducer() {\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:280
+#, no-wrap
+msgid ""
+"@Override\n"
+"public Long reduce(Long mapResult, Long previouslyReduced) {\n"
+"return previouslyReduced == null ? mapResult : mapResult + previouslyReduced;\n"
+"}\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:282
+#, no-wrap
+msgid "}).collate(new Collator(){\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:284
+#, no-wrap
+msgid "private Long result = 0L;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:289
+#, no-wrap
+msgid ""
+"@Override\n"
+"public Long collate() {\n"
+"return result;\n"
+"}\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:294
+#, no-wrap
+msgid ""
+"@Override\n"
+"public void reducedResultReceived(Address remoteNode, Long remoteResult) {\n"
+"result += remoteResult;\n"
+"}});\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:296
+#, no-wrap
+msgid "System.out.println(\"Total filesystem size is \" + result + \" bytes\");\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:299
+#, no-wrap
+msgid ""
+"}\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:308
+msgid "In conclusion, this is not a perfect and final distributed execution and MapReduce API that can satisfy requirements of all users but it is a good start. As we push forward and make it more feature rich while keeping it simple we are continuously looking for your feedback.  Together we can reach the ambitious goals set out in the beginning of this article."
+msgstr ""

@@ -1,0 +1,220 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:15
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Cache Store Batch Operations\n"
+"permalink: /blog/:year/:month/:day/cache-store-batch-operations\n"
+"date: '2017-10-20T06:43:00.000-07:00'\n"
+"author: remerson\n"
+"tags: [ \"jdbc\",\n"
+"\"rocksdb\",\n"
+"\"jpa\",\n"
+"\"leveldb\",\n"
+"\"cache store\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1552930257334265766\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/10/cache-store-batch-operations.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:20
+msgid "Infinispan 9.1.x introduces batch write and delete operations for cache stores. The introduction of batching should greatly improve performance when utilising write-behind cache stores, using putAll operations and committing transactions in non-transactional stores."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:29
+#, no-wrap
+msgid "CacheWriter Interface Additions"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:39
+msgid "The CacheWriter interface has been extended so that it exposes two additional methods: deleteBatch and writeBatch.  For the sake of backwards compatibility a default implementation of these methods is provided, however if your cache store is able to utilise batching we strongly recommend you create your  own implementations. The additional methods and docs are show below: "
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:46
+#, no-wrap
+msgid "Updated Stores"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:52
+msgid "Currently the JDBC, JPA, RocksDB and Remote stores have all been modified to take advantage of these latest changes."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:59
+#, no-wrap
+msgid "Configuration Changes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:70
+msgid "As each store implementations has different batching capabilities, it was necessary to introduce a max-batch-size attribute to the AbstractStoreConfiguration. This attribute defines the maximum number of entries that should be included in a single batch operation to the store. If a value less than one is provided, then the underlying store implementation should not place a upper limit on the number of entries in a batch. "
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:71
+#, no-wrap
+msgid "Deprecated Attributes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:76
+msgid "Both TableManipulationConfiguration#batchSize and JpaStoreConfiguration#batchSize have been deprecated, as they serve the same purpose as AbstractStoreConfiguration#maxBatchSize."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:78
+#, no-wrap
+msgid "Store Benchmark"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:90
+msgid "To measure the impact of batch writes on Cache.putAll, we created a https://github.com/ryanemerson/benchmarks/tree/master/store[simple benchmark] to compare the performance of Infinispan 9.1.1.Final (with batching) and 9.0.3.Final (without).  The benchmark consisted of 20 threads inserting 100000 cache entries as fast as possible into a cache via putAll; with each putAll operation containing 20 cache entries and the max-batch-size of each store being set to 20. The table below shows the average time taken for each store type after the benchmark was executed three times."
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:97
+#, no-wrap
+msgid "Store Type"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:97
+#, no-wrap
+msgid "9.0.3.Final"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:97
+#, no-wrap
+msgid "9.1.1-Final"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:98
+#, no-wrap
+msgid "Latency Decrease"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:98
+#, no-wrap
+msgid "JdbcStringBasedStore"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:98
+#, no-wrap
+msgid "29368ms"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:98
+#, no-wrap
+msgid "2597ms"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:99
+#, no-wrap
+msgid "91.12%"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:99
+#, no-wrap
+msgid "JPAStore"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:99
+#, no-wrap
+msgid "30798ms"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:99
+#, no-wrap
+msgid "16640ms"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:100
+#, no-wrap
+msgid "45.97%"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:100
+#, no-wrap
+msgid "RocksDBStore"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:100
+#, no-wrap
+msgid "1164ms"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:100
+#, no-wrap
+msgid "209ms"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:101
+#, no-wrap
+msgid "82.04%"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:105
+msgid "The benchmark results above clearly show that performance is increased dramatically when utilising batch updates at the store level."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:106
+#, no-wrap
+msgid "Conclusions"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:112
+msgid "Infinispan 9.1.x introduces batching capabilities to the CacheWriter interface in order to improve performance. If you currently utilise a custom cache store, we strongly recommend that you provide your own implementation of the delete and write batch methods. "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:119
+msgid "If you have any feedback on the CacheWriter changes, or would like to request some new features/optimisations, let us know via the https://developer.jboss.org/en/infinispan/content[forum], https://issues.jboss.org/projects/ISPN[issue tracker] or the #infinispan channel onhttp://webchat.freenode.net/?channels=%23infinispan[ Freenode]."
+msgstr ""

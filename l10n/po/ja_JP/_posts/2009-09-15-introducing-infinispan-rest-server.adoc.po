@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:11
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Introducing the Infinispan (REST) server\n"
+"permalink: /blog/:year/:month/:day/introducing-infinispan-rest-server\n"
+"date: '2009-09-15T22:05:00.000-07:00'\n"
+"author: mneale\n"
+"tags: [ \"rest\", \"server\" ]\n"
+"thumbnail: http://2.bp.blogspot.com/_KukQ8TlQMz8/SrB2KhHxy3I/AAAAAAAAAhg/lG99zU5N-s8/s72-c/Screen+shot+2009-09-16+at+2.37.51+PM.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4350270346450609745\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/09/introducing-infinispan-rest-server.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:15
+msgid "Introducing the http://www.jboss.org/community/wiki/InfinispanRESTserver[Infinispan RESTful server] !"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:17
+msgid "http://2.bp.blogspot.com/_KukQ8TlQMz8/SrB2KhHxy3I/AAAAAAAAAhg/lG99zU5N-s8/s1600-h/Screen+shot+2009-09-16+at+2.37.51+PM.png[image:http://2.bp.blogspot.com/_KukQ8TlQMz8/SrB2KhHxy3I/AAAAAAAAAhg/lG99zU5N-s8/s400/Screen+shot+2009-09-16+at+2.37.51+PM.png[image]]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:21
+msgid "The Infinispan RESTful server combines the whole grain goodness of http://www.jboss.org/resteasy/[RESTEasy] (JAX-RS, or JSR-311) with Infinispan to provide a web-ready RESTful data grid."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:28
+msgid "Recently I (Michael) spoke to Manik about an interesting use case, and he indicated great interest in such a server. It wasn't a huge amount of work to do the initial version - given that JAX-RS is designed to make things easy."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:37
+msgid "For those that don't know: RESTful design is using the well proven and established http/web standards for providing services (as a simple alternative to WS-*) - if that still isn't enough, you can read more http://en.wikipedia.org/wiki/Representational_State_Transfer[here]. So for Infinispan that means that any type of client can place data in the Infinispan grid."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:45
+msgid "So what would you use it for? For non java clients, or clients where you need to use HTTP as the transport mechanism for caching/data grid needs. A content delivery network (?) - push data into the grid, let Infinispan spread it around and serve it out via the nearest server. See here for details on using http://www.jboss.org/community/wiki/AccessingdatainInfinispanviaRESTfulinterface[http and URLs] with it."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:50
+msgid "In terms of clients - you only need HTTP - no binary dependencies or libraries needed (the wiki page has some http://www.jboss.org/community/wiki/InfinispanRESTserver[samples] in ruby/python, also in the project source)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:54
+msgid "Where does it live? The server is a module in Infinispan under /server/rest (for the moment, we may re-arrange the sources at a later date)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:62
+msgid "Getting it.  Currently you can download the war from the http://www.jboss.org/community/wiki/InfinispanRESTserver[wiki page,] or build it yourself (as it is still new, early days). This is at present a war file (tested on JBoss AS and Jetty) which should work in most containers - we plan to deliver a stand alone server (with an embedded JBoss AS) Real Soon Now."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:64
+msgid "Questions: (find me on the dev list, or poke around the wiki)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:72
+msgid "http://4.bp.blogspot.com/_KukQ8TlQMz8/SrB46z6O6AI/AAAAAAAAAho/oFV6rUOZ7Ak/s1600-h/Picture+2.png[image:http://4.bp.blogspot.com/_KukQ8TlQMz8/SrB46z6O6AI/AAAAAAAAAho/oFV6rUOZ7Ak/s400/Picture+2.png[image]] http://2.bp.blogspot.com/_KukQ8TlQMz8/SrB5D7j0a5I/AAAAAAAAAhw/GVkHgiPakIA/s1600-h/Picture+3.png[image:http://2.bp.blogspot.com/_KukQ8TlQMz8/SrB5D7j0a5I/AAAAAAAAAhw/GVkHgiPakIA/s400/Picture+3.png[image]]Implemented in scala: After chatting with Manik and co, we decided this would serve as a good test bed to \"test the waters\" on Scala - so this module is written in scala - it worked just fine with RESTEasy, and Infinispan (which one would reasonably expect, but nice when things do work as advertised !)."
+msgstr ""

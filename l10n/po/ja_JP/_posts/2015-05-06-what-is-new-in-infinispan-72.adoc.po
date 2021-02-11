@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: What is new in Infinispan 7.2?\n"
+"permalink: /blog/:year/:month/:day/what-is-new-in-infinispan-72\n"
+"date: '2015-05-06T10:49:00.000-07:00'\n"
+"author: pruivo\n"
+"tags: [ \"release\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-622029915334608496\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/05/what-is-new-in-infinispan-72.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:12
+msgid "Dear community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:18
+msgid "We have recently released Infinispan 7.2, and we feel it deserves a more detailed introduction. This release brings important new features, code optimizations and major bug fixes."
+msgstr ""
+
+#. type: Bullet: '*
+#. type: '
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:21
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:26
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:41
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:46
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:59
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:64
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:76
+msgid "*"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:23
+msgid "What features can be found?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:30
+msgid "We have introduced a new factory for the atomic object. The new factory is based on a replicated state machine, and it allows object creation on top of Infinispan cache e.g. Java collections. "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:33
+msgid "Server-side scripting allows custom script installation in Infinispan server and their invocation over Hot Rod. You can now use map/reduce and distributed executor over Hot Rod as well. "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:34
+msgid "JCache (JSR-107) support over Hot Rod."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:35
+msgid "Near cache support for Hot Rod Java client."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:36
+msgid "Support for defining filters using the Query DSL for event listeners."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:37
+msgid "DSL-based filters are indexed for faster and more scalable evaluation."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:38
+msgid "Custom cache stores deployment in Infinispan server."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:43
+msgid "What optimizations have been made?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:49
+msgid "Eviction improvements with new long size support and more accurate eviction."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:50
+msgid "Many indexing improvements."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:52
+msgid "Faster bulk operations (putAll() and getAll()) for both embedded and Hot Rod client."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:54
+msgid "Cache creation and configuration changes do not require Infinispan server restart. "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:56
+msgid "Faster clear operation. It is now lock-free and non-transactional, and it shouldn't be invoked with other concurrent operations."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:61
+msgid "What bugs have been fixed?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:69
+msgid "DummyTransactionManager has been fixed and made more reliable.  Although we recommend a use of a proper TransactionManager, it can be used for simpler applications which don't involve additional resource enlistments."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:71
+msgid "Fixed deadlocks and errors during topology changes. Adding and removing nodes works smoothly and faster now."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:72
+msgid "Multiple tweaks in CLI operations."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:73
+msgid "Other small bug fixes."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:81
+msgid "Finally, we would like thank all community members involved in this release. A special thank you to *Pierre Sutra* (atomic object factory contribution), *Damiano Albani* (dependency fixes) and *Karl von Randow* (configuration fixes) "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:85
+msgid "The Infinispan team"
+msgstr ""

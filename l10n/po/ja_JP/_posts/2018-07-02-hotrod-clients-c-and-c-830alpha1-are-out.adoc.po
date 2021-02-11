@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Hotrod clients C++ and C# 8.3.0.Alpha1 are out!\n"
+"permalink: /blog/:year/:month/:day/hotrod-clients-c-and-c-830alpha1-are-out\n"
+"date: '2018-07-02T01:51:00.000-07:00'\n"
+"author: rigazilla\n"
+"tags: [ \" c++\", \"release\", \"minor release\", \"alpha\", \"c#\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6648254076647805231\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/07/hotrod-clients-c-and-c-830alpha1-are-out.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:12
+msgid "Dear Infinispanners,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:14
+msgid "The C++ and C# 8.3.0.Alpha1 releases are available!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:16
+msgid "Both the clients come with these new features:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:18
+msgid "counter operations, to use cluster distributed counters [1]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:19
+msgid "admin operations, to create/remove cache programmatically at runtime"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:24
+msgid "For the .NET Core lovers, there's a work in progress to implement the dotnet core build for the C# client [3].  Features list, code and bits are available as usual: [4] [5] [6]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:27
+msgid "Cheers, The Infinispan Team"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:31
+msgid "http://infinispan.org/docs/stable/user_guide/user_guide.html#clustered_counters[Clustered Counters]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:34
+msgid "http://infinispan.org/docs/stable/user_guide/user_guide.html#hot_rod_admin_tasks[Hot Rod Admin Tasks]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:37
+msgid "https://github.com/infinispan/dotnet-client/blob/master/README.md[How to build à la .NET Core manière]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:42
+msgid "https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314125&version=12337514[Release notes] [5++] https://github.com/infinispan/cpp-client/tree/8.3.0.Alpha1[C++ code for 8.3.0.Alpha1]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:45
+msgid "https://github.com/infinispan/dotnet-client/tree/8.3.0.Alpha1https://github.com/infinispan/dotnet-client/tree/8.3.0.Alpha1[C# code for 8.3.0.Alpha1]"
+msgstr ""

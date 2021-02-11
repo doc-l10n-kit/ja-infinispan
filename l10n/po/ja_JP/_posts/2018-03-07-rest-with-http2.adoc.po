@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:11
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: REST with HTTP/2\n"
+"permalink: /blog/:year/:month/:day/rest-with-http2\n"
+"date: '2018-03-07T05:00:00.000-08:00'\n"
+"author: slaskawiec\n"
+"tags: [ \" docker\", \"server\", \"http/2\", \"rest\" ]\n"
+"thumbnail: https://lh6.googleusercontent.com/QGDSTl40Vz0ROc0koZA_QWHQ_yGB1M_rEISrd42_mQv4MA9WJCUyag6RUsfTkCx0juSiZnbGiTXLvJDr86REpdAPWDEfntqVjaXh8zN3uDf3J1qRugr9nsk3wfqCR4WkZ1jLtg-s=s72-c\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-258887962327865096\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/03/rest-with-http2.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:25
+msgid "HTTP has become one of the most successful and heavily used network protocols around the world. Version 1.0 was created in 1996 and received a minor update 3 years later. But it took more than a decade to create HTTP/2 (which was approved in 2015). Why did it take so long? Well, I wouldn’t tell you all the truth if I didn’t mention an https://developers.google.com/web/fundamentals/performance/http2/[experimental protocol, called SPDY]. SPDY was primarily focused on improving performance. The initial results were very promising and inside Google’s lab, the developers https://blog.chromium.org/2009/11/2x-faster-web.html[measured 55% speed improvement]. This work and experience was converted into HTTP/2 proposal back in 2012. A few years later, we can all use HTTP/2 (sometimes called h2) along with its older brother - HTTP/1.1."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:26
+#, no-wrap
+msgid "Main differences between HTTP/1.1 and HTTP/2"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:29
+msgid "image:https://lh6.googleusercontent.com/QGDSTl40Vz0ROc0koZA_QWHQ_yGB1M_rEISrd42_mQv4MA9WJCUyag6RUsfTkCx0juSiZnbGiTXLvJDr86REpdAPWDEfntqVjaXh8zN3uDf3J1qRugr9nsk3wfqCR4WkZ1jLtg-s[image,width=624,height=515]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:39
+msgid "HTTP/1.1 is a text-based protocol. Sometimes this is very convenient, since you can use low level tools, such as Telnet, for hacking. But it doesn’t work very well for transporting large, binary payloads. HTTP/2 solves this problem by using a completely redesigned architecture. Each HTTP message (a request or a response) consists of one or more frames. A frame is the smallest portion of data travelling through a TCP connection. A set of messages is aggregated into a, so called stream."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:42
+msgid "image:https://lh3.googleusercontent.com/PYdtYy6RLlUFY3pUVfg-E_5_AomfRZW9O1EHTkytWnkKDXhlCkjsf-D4N7_CiG9AndYDZ7tAYTkrMQEeDi56PvcnvPaZ-9YNqswuTtqUY0IsTzo6UtXJrInhTKTc_SzGy-Zh_u0V[image,width=624,height=171]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:50
+msgid "HTTP/2 allows to lower the number of physical connections between the server and the client by multiplexing logical connections into one TCP connection. Streams allow the server to recognize, which frame belongs to which conversation."
+msgstr ""
+
+#. type: Title =====
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:51
+#, no-wrap
+msgid "How to connect using HTTP/2?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:54
+msgid "There are two ways for starting an HTTP/2 conversation."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:61
+msgid "The first one, and the most commonly used one, is https://tools.ietf.org/html/rfc7301[TLS/ALPN]. During TLS handshake the server and the client negotiate protocol for further communication.  Unfortunately JDK below 9 doesn’t support it by default (there are a couple of workarounds but please refer to your favorite HTTP client’s manual to find some suggestions)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:66
+msgid "The second one, much less popular, is so called plain text upgrade.  During HTTP/1.1 conversation, the client issues an HTTP/1.1 Upgrade header and proposes new conversation protocol. If the server agrees, they start using it. If not, they stick with HTTP/1.1."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:71
+msgid "The good news is that Infinispan supports both those upgrade paths.  Thanks to the ALPN Hack Engine (the credit goes to Stuart Douglas from the Wildfly Team), we support TLS/ALPN without any bootstrap classpath modification."
+msgstr ""
+
+#. type: Title =====
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:72
+#, no-wrap
+msgid "Configuring Infinispan server for HTTP/2"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:81
+msgid "Infinispan’s REST server already supports plain text upgrades out of the box. TLS/ALPN however, requires additional configuration since the server needs to use a Keystore. In order to make it even more convenient, we support http://infinispan.org/docs/stable/server_guide/server_guide.html#security:hotrod_rest_encryption[generating keystores automatically when needed]. Here’s an example showing how to configure a security realm:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:84
+msgid "The next step is to bind the security realm to a REST endpoint:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:90
+msgid "You may also use one of our configuration examples. The easiest way to get it working is to use our https://github.com/jboss-dockerfiles/infinispan/tree/master/server[Docker image]:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:93
+msgid "Let’s explain a couple of things from the command above:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:96
+msgid "-e \"APP_USER=test\" - This is a user name we will be used for REST authentication."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:97
+msgid "-e \"APP_PASS=test\" - Corresponding password."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:99
+msgid "../../docs/examples/configs/standalone-rest-ssl.xml - Here is a ready-to-go configuration with REST and TLS/ALPN support"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:104
+msgid "Unfortunately, HTTP/2 functionality https://issues.jboss.org/browse/ISPN-8896[has been broken in 9.2.0.Final]. But we promise to fix it as soon as we can :) Please use 9.1.5.Final in the meantime."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:105
+#, no-wrap
+msgid "Testing using CURL"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:111
+msgid "https://linux.die.net/man/1/curl[Curl] is one of my favorite tools. It’s very simple, powerful, and… it supports HTTP/2. Assuming that you already started Infinispan server using `docker run` command, you can put something into the cache:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:115
+msgid "Once, it’s there, let’s try to get it back:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:119
+msgid "Let’s analyze CURL switches one by one:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:122
+msgid "-k - Ignores certificate validation. All automatically generated certificates and self-signed and not trusted by default."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:123
+msgid "-v - Debug logging."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:124
+msgid "-u test:test - Username and password for authentication."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:125
+msgid "-d test - This is the payload when invoking HTTP POST."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:127
+msgid "-H “Accept: text/plain” - This tells the server what type of data we’d like to get in return."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:128
+#, no-wrap
+msgid "Conclusions and links"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:134
+msgid "I hope you enjoyed this small tutorial about HTTP/2. I highly encourage you to have a look at the links below to learn some more things about this topic. You may also measure the performance of your app when using HTTP/1.1 and HTTP/2. You will be surprised!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:138
+msgid "https://hpbn.co/[High Performance Browser Networking] - One of the best books about HTTP and network performance. Most of the graphics in this article has been copied from that book. I highly recommend it!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:139
+msgid "https://linux.die.net/man/1/curl[Curl manual]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-07-rest-with-http2.adoc:140
+msgid "https://hub.docker.com/r/jboss/infinispan-server/[Infinispan on Docker Hub]"
+msgstr ""

@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan Spring Boot Starter 2.1.5.Final and 1.0.7.Final are out!\n"
+"permalink: /blog/:year/:month/:day/infinispan-spring-boot-starter-215final\n"
+"date: '2019-04-05T02:48:00.003-07:00'\n"
+"author: karesti\n"
+"tags: [ \"release\", \"spring boot\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6961437587141942321\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/04/infinispan-spring-boot-starter-215final.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:13
+msgid "Dear Infinispan and Spring Boot users,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:17
+msgid "We have just released https://github.com/infinispan/infinispan-spring-boot[Infinispan Spring Boot Starter] **2.1.5.Final **and *1.0.7.Final*."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:19
+#, no-wrap
+msgid "*2.1.5.Final*"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:22
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:92
+#, no-wrap
+msgid "*\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:24
+#, no-wrap
+msgid ""
+"**2.1.5.Final** is using** Infinispan 9.4.11.Final** and **Spring-Boot\n"
+"2.1.4.RELEASE**.\n"
+msgstr ""
+
+#. type: Title =====
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:25
+#, no-wrap
+msgid "*Important Spring-Boot bug fix*"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:38
+msgid "Previous versions of Spring-Boot 2.1.x contained a bug related to the https://openjdk.java.net/jeps/238[multi-release jars]. Infinispan contains multi-release jars, in consequence, we could not run our applications using java -jar with Java 11 (Java 8 worked fine). For additional explanations, read https://stackoverflow.com/questions/54635814/why-does-infinispan-fail-with-noclassdeffounderror-on-spring-boot-java-11[here].  Spring-Boot team has fixed this https://github.com/spring-projects/spring-boot/issues/15981[bug] and released the correction in Spring-Boot 2.1.4.RELEASE, along with https://github.com/spring-projects/spring-boot/releases/tag/v2.1.4.RELEASE[many other features and bug fixes], so consider upgrading soon."
+msgstr ""
+
+#. type: Title =====
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:39
+#, no-wrap
+msgid "*Statistics on Client/Server mode and Actuator*"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:47
+msgid "Statistics configuration in client/server mode for the client evolved in the latest Infinispan versions. As a remainder, to activate actuator statistics in client/server mode : \"Configure 'infinispan.remote.statistics=true' in the\", *application.properties* [.underline]#or#"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:50
+msgid "Configure ''infinispan.client.hotrod.statistics=true\" in the *hotrod-client.properties* [.underline]#or#"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:51
+msgid "Configure by code, for example:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:57
+msgid "@Bean public InfinispanRemoteConfigurer infinispanRemoteConfigurer() \\{     return () -> new ConfigurationBuilder().statistics().enable().build(); }"
+msgstr ""
+
+#. type: Title =====
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:60
+#, no-wrap
+msgid "JMX"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:67
+msgid "If you want to use Infinispan and JMX, for example on Client/Server mode, set the 'jmx' property 'true' as explained above with the 'statistics' property. However, you might get a javax.management.InstanceAlreadyExistsException because both Infinispan and Spring will try to register the MXBean."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:71
+msgid "The correction will land on the next starter release. If you need to avoid this error today, you can tell Spring-Boot not to register the bean with the following code (Thanks Stéphane Nicoll for the tip!):"
+msgstr ""
+
+#. type: Title =====
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:77
+#, no-wrap
+msgid "Testcontainers"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:86
+msgid "This version includes an integration test using https://testcontainers.org/[Testcontainers], https://junit.org/junit5/[JUnit5] and the https://hub.docker.com/r/jboss/infinispan-server[Infinispan Server].  Grab a look https://github.com/infinispan/infinispan-spring-boot/blob/90e79a81dd32a6c9462e76bfdfb175e2c751b3f0/infinispan-spring-boot-starter-remote/src/test/java/test/org/infinispan/spring/starter/remote/actuator/RemoteCacheMetricBinderTest.java[here] if you are curious."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:89
+#, no-wrap
+msgid "*1.0.7.Final*"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:94
+#, no-wrap
+msgid ""
+"*1.0.7.Final* upgrades to *1.5.19.RELEASE* and Infinispan\n"
+"*9.4.11.Final*.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:99
+msgid "⭐ Don't forget to *star* the project in https://github.com/infinispan/infinispan-spring-boot[GitHub] if you like the starter! ⭐"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:103
+msgid "You can find these releases in the maven central repository."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:108
+msgid "Please report any issues in our https://issues.jboss.org/projects/ISPN[issue tracker] and join the conversation in our https://infinispan.zulipchat.com/[Zulip Chat] to shape up our next release."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:110
+msgid "Enjoy,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:111
+msgid "The Infinispan Team"
+msgstr ""

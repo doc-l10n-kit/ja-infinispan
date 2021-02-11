@@ -1,0 +1,290 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 10.1.0.Final\n"
+"permalink: /blog/:year/:month/:day/infinispan-10\n"
+"date: '2019-12-23T12:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:10
+#, no-wrap
+msgid "Infinispan 10.1 \"Turia\""
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:13
+msgid "Hi there,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:15
+msgid "we finish 2019 in style with the Final release of Infinispan 10.1, codenamed https://www.cervezaturia.es[\"Turia\"]."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:16
+#, no-wrap
+msgid "Server console"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:20
+msgid "The highlight of this release is the new server console which is now based on https://www.patternfly.org/v4/[Patterfly 4] and https://reactjs.org/[React.js].  We will soon have a blog post detailing the work that has been done and our future plans. In the meantime, here are a few screenshots:"
+msgstr ""
+
+#. type: Named 'caption' AttributeList argument for style 'caption'
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:21
+#, no-wrap
+msgid "Welcome"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:22
+#, no-wrap
+msgid "Welcome Page"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:22
+#, no-wrap
+msgid "ispn101welcome.png"
+msgstr ""
+
+#. type: Named 'caption' AttributeList argument for style 'caption'
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:24
+#, no-wrap
+msgid "Console: caches"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:25
+#, no-wrap
+msgid "Console Caches"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:25
+#, no-wrap
+msgid "thumb-ispn101console.png"
+msgstr ""
+
+#. type: Named 'caption' AttributeList argument for style 'caption'
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:27
+#, no-wrap
+msgid "Console: cache stats"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:28
+#, no-wrap
+msgid "Console Cache Stats"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:28
+#, no-wrap
+msgid "thumb-ispn101console2.png"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:30
+#, no-wrap
+msgid "Security"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:33
+msgid "Many changes related to security have happened since 10.0:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:35
+msgid "Native SSL/TLS provided by https://github.com/wildfly-security/wildfly-openssl[WildFly OpenSSL]. The server only ships with native libraries for Linux x86_64, but you can download natives for other platforms and architectures"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:36
+msgid "Improved usability of the Hot Rod client configuration with better defaults"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:37
+msgid "Full support for authorization for admin operations via the RESTful endpoint"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:38
+msgid "Console authentication support"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:39
+msgid "Kerberos authentication for both Hot Rod (GSSAPI, GS2) and HTTP/Rest (SPNEGO)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:40
+msgid "Improved LDAP realm configuration with connection tuning and attribute references"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:41
+msgid "Rewritten client/server security documentation including examples on how to create certificate chains, connecting to various LDAP directories and https://www.keycloak.org/[KeyCloak], etc."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:42
+#, no-wrap
+msgid "Server"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:45
+msgid "A command-line switch to specify an alternate logging configuration file"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:46
+msgid "Query and indexing operations/stats are now exposed over the RESTful API"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:47
+msgid "Tasks and Scripting support"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:48
+msgid "Support for binding the endpoints to 0.0.0.0 / ::0 (aka INADDR_ANY)"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:49
+#, no-wrap
+msgid "Non-blocking"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:52
+msgid "More work has landed on the quest to completely remove blocking calls from our internals. The following have been made non-blocking:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:54
+msgid "State transfer"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:55
+msgid "The size operation"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:56
+msgid "Cache stream ops with primitive types"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:58
+msgid "Additionally caches now have a reactive Publisher which is intended as a fully non-blocking approach to distributed operations."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:59
+#, no-wrap
+msgid "Query"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:62
+msgid "The query components have been reorganized so that they are more modular."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:63
+#, no-wrap
+msgid "Monitoring"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:66
+msgid "The introduction of histogram and timer metrics."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:67
+msgid "The `/metrics` endpoint now includes `base` and `vendor` microprofile metrics"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:68
+#, no-wrap
+msgid "Stores"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:71
+msgid "The REST cache store has been updated to use the v2 RESTful API."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:72
+#, no-wrap
+msgid "Removals and deprecations"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:75
+msgid "The old RESTful API (v1) has been partially reinstated until 11.0. Bulk ops are disabled."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:76
+msgid "The Infinispan Lucene Directory has been deprecated."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:77
+msgid "The memcached protocol server has been deprecated. If you were relying on this, come and talk to us about working on a binary protocol implementation."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:78
+#, no-wrap
+msgid "Bug fixes, clean-ups and documentation"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:81
+msgid "Over 160 issues fixed including a lot of documentation updates. See the https://issues.redhat.com/issues/?filter=12344079[full list of changes and fixes]"
+msgstr ""

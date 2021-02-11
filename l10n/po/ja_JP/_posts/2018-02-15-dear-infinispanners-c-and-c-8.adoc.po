@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-02-15-dear-infinispanners-c-and-c-8.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-15-dear-infinispanners-c-and-c-8.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: \"  Hotrod clients C++/C# 8.2.0.Beta1 are out!\"\n"
+"permalink: /blog/:year/:month/:day/dear-infinispanners-c-and-c-8\n"
+"date: '2018-02-15T07:07:00.000-08:00'\n"
+"author: rigazilla\n"
+"tags: [ \" beta\", \"c++\", \"release\", \"minor release\", \"c#\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2081627779678751596\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/02/dear-infinispanners-c-and-c-8.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-15-dear-infinispanners-c-and-c-8.adoc:13
+msgid "Dear Infinispanners, C++ and C# 8.2.0.Beta1 releases are available!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-15-dear-infinispanners-c-and-c-8.adoc:15
+msgid "These releases contain all the 8.2.0 features."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-15-dear-infinispanners-c-and-c-8.adoc:20
+msgid "Worth a mention is the improvement in the remote execution API: we moved the JBossMarshaller basic implementation from test to the distro in order to simplify the data management on the application side. Test examples"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-15-dear-infinispanners-c-and-c-8.adoc:22
+msgid "and"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-15-dear-infinispanners-c-and-c-8.adoc:24
+msgid "have been updated accordingly."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-15-dear-infinispanners-c-and-c-8.adoc:27
+msgid "Next step will be a CR release containing improvements on API docs (doxygen)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-15-dear-infinispanners-c-and-c-8.adoc:34
+msgid "Check the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314125&version=12333563[release notes], browse the source code (https://github.com/infinispan/cpp-client/tree/8.2.0.Beta1[C++], https://github.com/infinispan/dotnet-client/tree/8.2.0.Beta1[C#]) or http://infinispan.org/hotrod-clients/[download] the releases!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-15-dear-infinispanners-c-and-c-8.adoc:36
+msgid "Cheers, The Infinispan Team"
+msgstr ""

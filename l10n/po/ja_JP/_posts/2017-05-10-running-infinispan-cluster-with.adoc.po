@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2017-05-10-running-infinispan-cluster-with.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-05-10-running-infinispan-cluster-with.adoc:13
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Running an Infinispan cluster with Kubernetes on Google Container Engine (GKE)\n"
+"permalink: /blog/:year/:month/:day/running-infinispan-cluster-with\n"
+"date: '2017-05-10T01:40:00.003-07:00'\n"
+"author: galder\n"
+"tags: [ \"gke\",\n"
+"\"kubernetes\",\n"
+"\"google\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5619118391531112845\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/05/running-infinispan-cluster-with.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-05-10-running-infinispan-cluster-with.adoc:19
+msgid "Over the past few years we've been blogging a lot on how to use Infinispan in cloud environments based on http://blog.infinispan.org/search/label/docker[Docker], http://blog.infinispan.org/search/label/kubernetes[Kubernetes] or http://blog.infinispan.org/search/label/openshift[OpenShift]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-05-10-running-infinispan-cluster-with.adoc:27
+msgid "Continuing with this series of blog posts, http://www.jgroups.org/members.html[Bela Ban], chief-in-charge of JGroups, posted an unmissable blog post yesterday not only how to run Infinispan with Kubernetes on https://cloud.google.com/container-engine/[Google Container Engine (GKE)], but also how to load test it with https://github.com/belaban/IspnPerfTest[IspnPerfTest]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-05-10-running-infinispan-cluster-with.adoc:32
+msgid "If any of these topics interests you, don't miss out and head to Bela's blog to http://belaban.blogspot.ch/2017/05/running-infinispan-cluster-with.html[read all about it]!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-05-10-running-infinispan-cluster-with.adoc:34
+msgid "Thanks Bela for the blog post!!!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-05-10-running-infinispan-cluster-with.adoc:36
+msgid "Cheers, Galder"
+msgstr ""

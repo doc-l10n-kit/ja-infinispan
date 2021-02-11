@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2011-11-09-more-locking-improvements-in-infinispan.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-09-more-locking-improvements-in-infinispan.adoc:12
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: More locking improvements in Infinispan 5.1.0.BETA4\n"
+"permalink: /blog/:year/:month/:day/more-locking-improvements-in-infinispan\n"
+"date: '2011-11-09T09:57:00.000-08:00'\n"
+"author: galder\n"
+"tags: [ \"locking\",\n"
+"\"API\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8970710709023571162\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/11/more-locking-improvements-in-infinispan.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-09-more-locking-improvements-in-infinispan.adoc:15
+msgid "The latest beta in the Infinispan 5.1 \"Brahma\" series is out. So, what's in Infinispan 5.1.0.BETA4? Here are the highlights:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-09-more-locking-improvements-in-infinispan.adoc:26
+msgid "A hugely important lock acquisition improvement has been implemented that results in locks being acquired in only a single node in the cluster. This means that deadlocks as a result of multiple nodes updating the same key are no longer possible. Concurrent updates on a single key will now be queued in the node that 'owns' that key. For more info, please check the http://community.jboss.org/docs/DOC-16974[design wiki] and keep an eye on this blog because Mircea Markus, who's the author of this enhancement, will be explaining it in more detail very shortly. Please note that you don't need to make any configuration or code changes to take advantage of this improvement."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-09-more-locking-improvements-in-infinispan.adoc:42
+msgid "A bunch of classes and interfaces in the core/ module have been migrated to an api/ and commons/ module in order to reduce the size of the dependencies that the https://docs.jboss.org/author/x/NgY5[Hot Rod Java client] had. As a result, there's been a change in the hierarchy of http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/Cache.html[Cache] and http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/manager/CacheContainer.html[CacheContainer] classes, with the introduction of http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/BasicCache.html[BasicCache] and http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/manager/BasicCacheContainer.html[BasicCacheContainer], which are parent classes of existing Cache and CacheContainer classes respectively. What's important is that Hot Rod clients must now code againts BasicCache and BasicCacheContainers rather than Cache and CacheContainer. So previous code that was written like this will no longer compile:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-11-09-more-locking-improvements-in-infinispan.adoc:50
+#, no-wrap
+msgid ""
+"import org.infinispan.Cache;\n"
+"import org.infinispan.manager.CacheContainer;\n"
+"import org.infinispan.client.hotrod.RemoteCacheManager;\n"
+"...\n"
+"CacheContainer cacheContainer = new RemoteCacheManager();\n"
+"Cache cache = cacheContainer.getCache();\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-09-more-locking-improvements-in-infinispan.adoc:54
+msgid "Instead, if Hot Rod clients want to continue using interfaces higher up the hierarchy from the remote cache/container classes, they'll have to write:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-11-09-more-locking-improvements-in-infinispan.adoc:62
+#, no-wrap
+msgid ""
+"import org.infinispan.BasicCache;\n"
+"import org.infinispan.manager.BasicCacheContainer;\n"
+"import org.infinispan.client.hotrod.RemoteCacheManager;\n"
+"...\n"
+"BasicCacheContainer cacheContainer = new RemoteCacheManager();\n"
+"BasicCache cache = cacheContainer.getCache();\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-09-more-locking-improvements-in-infinispan.adoc:68
+msgid "Previous code that interacted against the http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/client/hotrod/RemoteCache.html[RemoteCache] and http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/client/hotrod/RemoteCacheManager.html[RemoteCacheManager] should work as it used to:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-11-09-more-locking-improvements-in-infinispan.adoc:75
+#, no-wrap
+msgid ""
+"import org.infinispan.client.hotrod.RemoteCache;\n"
+"import org.infinispan.client.hotrod.RemoteCacheManager;\n"
+"...\n"
+"RemoteCacheManager cacheContainer = new RemoteCacheManager();\n"
+"RemoteCache cache = cacheContainer.getCache();\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-09-more-locking-improvements-in-infinispan.adoc:79
+msgid "We apologise for any inconvenience caused, but we think that the Hot Rod clients will hugely benefit from this vastly reducing the number of dependencies they need."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-09-more-locking-improvements-in-infinispan.adoc:88
+msgid "Finally, a few words about the ZIP distribution file. In BETA4 we've added some cache store implementations that were missing from previous releases, such as the http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/loaders/remote/RemoteCacheStore.html[RemoteCacheStore] that talks to https://docs.jboss.org/author/x/OgY5[Hot Rod servers], and we've added a brand new demo application that implements a near-caching pattern using JMS. Please be aware that this demo is just a simple prototype of how near caches could be built using Infinispan and HornetQ."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-09-more-locking-improvements-in-infinispan.adoc:96
+msgid "As always, please keep the http://community.jboss.org/en/infinispan?view=discussions[feedback] coming. You can http://www.jboss.org/infinispan/downloads[download] the release from here and you get further details on the issues addressed in the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12318437[changelog]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-09-more-locking-improvements-in-infinispan.adoc:98
+msgid "Cheers, Galder"
+msgstr ""

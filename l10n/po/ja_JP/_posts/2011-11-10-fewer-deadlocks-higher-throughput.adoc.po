@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2011-11-10-fewer-deadlocks-higher-throughput.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-10-fewer-deadlocks-higher-throughput.adoc:13
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Fewer deadlocks, higher throughput\n"
+"permalink: /blog/:year/:month/:day/fewer-deadlocks-higher-throughput\n"
+"date: '2011-11-10T17:20:00.000-08:00'\n"
+"author: mmarkus\n"
+"tags: [ \"transactions\",\n"
+"\"locking\",\n"
+"\"deadlock detection\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-9085832372211986870\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/11/fewer-deadlocks-higher-throughput.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-10-fewer-deadlocks-higher-throughput.adoc:21
+msgid "Here's the problem: first transaction (_T1_) writes to key a and b in this order. Second transaction (_T2_) writes to key b and a - again order is relevant. Now with some \"right timing\" _T1_ manages to acquire lock on _a_ and _T2_ acquires lock on b. And then they wait one for the other to release locks so that they can progress. This is what is called a deadlock and is really bad for your system throughput - but I won't insist on this aspect, as I've mentioned it a lot in my previous posts."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-10-fewer-deadlocks-higher-throughput.adoc:27
+msgid "What I want to talk about though is a way to solve this problem. Quit a simple way - just force an order on your transaction writes and you're guaranteed not to deadlock: if both _T1_ and _T2_ write to a then __b (__lexicographical order) there won't be any deadlock. Ever."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-10-fewer-deadlocks-higher-throughput.adoc:31
+msgid "But there's a catch. It's not always possible to define this order, simply because you can't or because you don't know all your keys at the very beginning of the transaction."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-10-fewer-deadlocks-higher-throughput.adoc:38
+msgid "Now here's the good news: Infinispan orders the keys touched in a transaction for you. And it even defines an order so that you won't have to do that. Actually you don't have to anything, not even enable this feature, as it is already enabled for you by default."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-10-fewer-deadlocks-higher-throughput.adoc:43
+msgid "Does it sound too good to be true? That's because it's only partially true. That is lock reordering only works if you're using optimistic locking. For pessimistic locking you still have to do it the old way - order your locks (that's of course if you can)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-10-fewer-deadlocks-higher-throughput.adoc:48
+msgid "Wanna know more about it? Read http://community.jboss.org/wiki/LockReorderingForAvoidingDeadlocks[this]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-10-fewer-deadlocks-higher-throughput.adoc:52
+msgid "Expect and enjoy this feature in our next release 5.1.0.BETA5."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-10-fewer-deadlocks-higher-throughput.adoc:56
+msgid "Stay tunned!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-10-fewer-deadlocks-higher-throughput.adoc:57
+msgid "Mircea"
+msgstr ""

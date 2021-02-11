@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2011-03-28-better-hibernate-integration.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-03-28-better-hibernate-integration.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Better Hibernate integration!\n"
+"permalink: /blog/:year/:month/:day/better-hibernate-integration\n"
+"date: '2011-03-28T05:26:00.000-07:00'\n"
+"author: mmarkus\n"
+"tags: [ \"hibernate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2876719761694737128\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/03/better-hibernate-integration.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-03-28-better-hibernate-integration.adoc:12
+msgid "Hi,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-03-28-better-hibernate-integration.adoc:21
+msgid "Starting with 5.0 Infinispan's transaction support was https://issues.jboss.org/browse/ISPN-888?focusedCommentId=12592115#comment-12592115[enhanced] to allow Synchronization-based enlistment in transactions (v.s.  XAResource). A main use case for this is Hibernate's second level cache: by using Synchronization the transaction manager doesn't have to write the log on the disk. On the short, better performance!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-03-28-better-hibernate-integration.adoc:27
+msgid "You can read more about it http://community.jboss.org/wiki/Infinispantransactions#Enlisting_Synchronization[here].  Thanks to Galder Zamarreno, the integration will be released together with http://opensource.atlassian.com/projects/hibernate/browse/HHH-6062[HHH-6062]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-03-28-better-hibernate-integration.adoc:31
+msgid "Cheers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-03-28-better-hibernate-integration.adoc:32
+msgid "Mircea"
+msgstr ""

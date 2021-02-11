@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan Operator 1.1.2 is out!\n"
+"permalink: /blog/:year/:month/:day/infinispan-operator-1\n"
+"date: '2020-06-08T12:00:00.000-00:00'\n"
+"author: rigazilla\n"
+"tags: [ \"release\", \"operator\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:13
+msgid "We're pleased to announce https://operatorhub.io/operator/infinispan[version 1.1.2 of the Infinispan Operator] for Kubernetes and Red Hat OpenShift."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:15
+msgid "Release highlights:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:17
+msgid "Simplified configuration for external services."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:18
+msgid "Improved readability of CR yaml output."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:19
+msgid "Now available from the https://quay.io/repository/infinispan/operator?tag=latest&tab=tags[Operator image registry] at quay.io."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:21
+msgid "Get full release information at https://github.com/infinispan/infinispan-operator/milestone/10?closed=1[version 1.1.2]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:24
+msgid "Our community documentation has also been updated and improved! Be sure to check out the https://infinispan.org/infinispan-operator/1.1.x/operator.html[Infinispan Operator v1.1.x Guide]."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:25
+#, no-wrap
+msgid "Update Channels and Automatic Upgrades on OpenShift"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:28
+msgid "Starting with this release we are moving channels from a stable/preview structure to a micro-stream structure. This means you'll get channels for each major.minor version of Infinispan."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:31
+msgid "For now version 1.1.x is available on the dev-preview channel but you should switch your Operator subscription to the 1.1.x channel before the next release to continue receiving updates."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:34
+msgid "If you use the Automatic Approval upgrade policy on OpenShift, your cluster is now running Infinispan Operator version 1.1.2 with the Infinispan 10.1.7.Final server image."
+msgstr ""

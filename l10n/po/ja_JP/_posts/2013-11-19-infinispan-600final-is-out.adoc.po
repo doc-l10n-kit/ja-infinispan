@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:17
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 6.0.0.Final is out!\n"
+"permalink: /blog/:year/:month/:day/infinispan-600final-is-out\n"
+"date: '2013-11-19T11:51:00.000-08:00'\n"
+"author: infinispan\n"
+"tags: [ \"hotrod\",\n"
+"\"persistence\",\n"
+"\"jsr 107\",\n"
+"\"jcache\",\n"
+"\"Protobuf\",\n"
+"\"remote query\",\n"
+"\"query\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3649191298037716193\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/11/infinispan-600final-is-out.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:20
+msgid "Dear Infinispan community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:30
+msgid "We're pleased to announce the final release of Infinispan 6.0 \"Infinium\". As http://infinispan.blogspot.co.uk/2013/05/infinispan-to-adopt-apache-software.html[announced], this is the first Infinispan stable version to be released under the terms of http://www.apache.org/licenses/LICENSE-2.0.html[Apache License v2.0]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:36
+msgid "This release brings some highly demanded features besides many stability enhancements and bug fixes:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:50
+msgid "Support for http://blog.infinispan.org/2013/09/embedded-and-remote-query-in-infinispan.html[remote query]. It is now possible for the HotRod clients to query an Infinispan grid using a new expressive query DSL. This querying functionality is built on top of Apache Lucene and Google Protobuf and lays the foundation for storing information and querying an Infinispan server in a language neutral manner. The Java HotRod client has already been enhanced to support this, the soon-to-be announced C++ HotRod client will also contain this functionality (initially for write/read, then full blown querying)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:56
+msgid "C++ HotRod client.  Allows C++ applications to read and write information from an Infinispan server. This is a fully fledged HotRod client that is topology (level 2) and consistent hash aware (level 3)  and will be released in the following days. Some features (such as Remote Query and SSL support) will be developed during the next iteration so that it maintains feature parity with its Java counterpart."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:63
+msgid "Better persistence integration. We’ve revisited the entire cache loader API and we’re quite pleased with the result: the new http://blog.infinispan.org/2013/09/new-persistence-api-in-infinispan.html[Persistence API] brought by Infinispan 6.0 supports parallel iteration of the stored entries, reduces the overall serialization overhead and also is aligned with the http://jcp.org/en/jsr/detail?id=107[JSR-107] specification, which makes implementations more portable."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:70
+msgid "A more efficient FileCacheStore http://blog.infinispan.org/2013/07/faster-file-cache-store-no-extra.html[implementation].  This file store is built with efficiency in mind: it outperforms the existing file store with up to 2 levels of magnitude. This comes at a cost though, as keys need to be kept  in memory. Thanks to https://github.com/kblees[Karsten Blees] for contributing this!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:77
+msgid "Support for http://blog.infinispan.org/2013/09/heterogenous-clusters-with-infinispan.html[heterogeneous clusters]. Up to this release, every member of the cluster owns an equal share of the cluster’s data. This doesn’t work well if one machine is more powerful than the other cluster participants. This functionality allows specifying the amount of data, compared with the average, held by a particular machine."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:81
+msgid "A new set of usage and performance https://issues.jboss.org/browse/ISPN-2861[statistics] developed within the scope of the CloudTM projecthttps://issues.jboss.org/browse/ISPN-3234[]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:84
+msgid "https://issues.jboss.org/browse/ISPN-3234[JCache] (JSR-107)  implementation upgrade. First released in Infinispan 5.3.0, the standard caching support is now upgraded to version 1.0.0-PFD."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:92
+msgid "For a complete list of features included in this release please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12322480[release notes]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:96
+msgid "The user documentation for this release has been revamped and migrated to the http://infinispan.org/documentation/[new website] - we think it looks much better and hope you’ll like it too!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:105
+msgid "This release has spread over a period of 5 months: a sustained effort from the core development team, QE team and our growing community - a BIG thanks to everybody involved! Please visit our http://infinispan.org/download/[downloads] section to find the latest release. Also if you have any questions please check our http://infinispan.org/community/[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:110
+msgid "Cheers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:112
+msgid "Adrian"
+msgstr ""

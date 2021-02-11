@@ -1,0 +1,243 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2020-02-20-server-config.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-20-server-config.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan Server configuration\n"
+"permalink: /blog/:year/:month/:day/server-config\n"
+"date: '2020-02-20T12:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"server\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-20-server-config.adoc:11
+msgid "The new Infinispan Server introduced in version 10.0 is quite different from the WildFly-based one we had up to 9.x.  One of the big differences is that the new server's configuration is just an extension of the embedded configuration."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-20-server-config.adoc:13
+msgid "The XML snippet below shows the configuration used by the server \"out-of-the-box\":"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2020-02-20-server-config.adoc:22
+#: upstream/_posts/2020-02-20-server-config.adoc:85
+#, no-wrap
+msgid ""
+"<infinispan\n"
+"        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n"
+"        xsi:schemaLocation=\"urn:infinispan:config:10.1 https://infinispan.org/schemas/infinispan-config-10.1.xsd\n"
+"                            urn:infinispan:server:10.1 https://infinispan.org/schemas/infinispan-server-10.1.xsd\"\n"
+"        xmlns=\"urn:infinispan:config:10.1\"\n"
+"        xmlns:server=\"urn:infinispan:server:10.1\">\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2020-02-20-server-config.adoc:26
+#, no-wrap
+msgid ""
+"   <cache-container name=\"default\" statistics=\"true\"> <1>\n"
+"      <transport cluster=\"${infinispan.cluster.name}\" stack=\"${infinispan.cluster.stack:tcp}\" node-name=\"${infinispan.node.name:}\"/>\n"
+"   </cache-container>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2020-02-20-server-config.adoc:33
+#, no-wrap
+msgid ""
+"   <server xmlns=\"urn:infinispan:server:10.1\"> <2>\n"
+"      <interfaces>\n"
+"         <interface name=\"public\"> <3>\n"
+"            <inet-address value=\"${infinispan.bind.address:127.0.0.1}\"/>\n"
+"         </interface>\n"
+"      </interfaces>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2020-02-20-server-config.adoc:38
+#, no-wrap
+msgid ""
+"      <socket-bindings default-interface=\"public\" port-offset=\"${infinispan.socket.binding.port-offset:0}\"> <4>\n"
+"         <socket-binding name=\"default\" port=\"${infinispan.bind.port:11222}\"/>\n"
+"         <socket-binding name=\"memcached\" port=\"11221\"/>\n"
+"      </socket-bindings>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2020-02-20-server-config.adoc:57
+#, no-wrap
+msgid ""
+"      <security> <5>\n"
+"         <security-realms>\n"
+"            <security-realm name=\"default\">\n"
+"               <!-- Uncomment to enable TLS on the realm -->\n"
+"               <!-- server-identities>\n"
+"                  <ssl>\n"
+"                     <keystore path=\"application.keystore\" relative-to=\"infinispan.server.config.path\"\n"
+"                               keystore-password=\"password\" alias=\"server\" key-password=\"password\"\n"
+"                               generate-self-signed-certificate-host=\"localhost\"/>\n"
+"                  </ssl>\n"
+"               </server-identities-->\n"
+"               <properties-realm groups-attribute=\"Roles\">\n"
+"                  <user-properties path=\"users.properties\" relative-to=\"infinispan.server.config.path\" plain-text=\"true\"/>\n"
+"                  <group-properties path=\"groups.properties\" relative-to=\"infinispan.server.config.path\" />\n"
+"               </properties-realm>\n"
+"            </security-realm>\n"
+"         </security-realms>\n"
+"      </security>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2020-02-20-server-config.adoc:64
+#, no-wrap
+msgid ""
+"      <endpoints socket-binding=\"default\" security-realm=\"default\"> <6>\n"
+"         <hotrod-connector name=\"hotrod\"/>\n"
+"         <rest-connector name=\"rest\"/>\n"
+"      </endpoints>\n"
+"   </server>\n"
+"</infinispan>\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-20-server-config.adoc:67
+msgid "Let's have a look at the various elements, describing their purposes:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-20-server-config.adoc:69
+msgid "The `cache-container` element is a standard Infinispan cache manager configuration like you'd use in embedded deployments. You can decide to leave it empty and create any caches at runtime using the CLI, Console or Hot Rod and RESTful APIs, or statically predefine your caches here."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-20-server-config.adoc:70
+msgid "The `server` element holds the server-specific configuration which includes network, security and protocols."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-20-server-config.adoc:71
+msgid "The `interface` element declares named interfaces which are associated with specific addresses/interfaces. The default `public` interface will use the loopback address `127.0.0.1` unless overridden with the `-b` switch or the `infinispan.bind.address` system property. Refer to https://infinispan.org/docs/stable/titles/server/server.html#server_interfaces-server[server interfaces] documentation for a detailed list of all possible ways of selecting an address."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-20-server-config.adoc:72
+msgid "The `socket-bindings` element associates addresses and ports with unique names you can use later on configuring the protocol endpoints. For convenience, a _port offset_ can be added to all port numbers to ease starting multiple servers on the same host. Use the `-o` switch or the `infinispan.socket.binding.port-offset` system property to change the offset."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-20-server-config.adoc:73
+msgid "The `security` element configures the server's realms and identities. We will ignore this for now as this deserves its own dedicated blog post in the near future."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-20-server-config.adoc:74
+msgid "The `endpoints` element configures the various protocol servers. Unless overridden, all sub protocols are aggregated into a _single-port_ endpoint which, as its name suggests, listens on a single port and automatically detects the incoming protocol, delegating to the appropriate handler."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-20-server-config.adoc:76
+msgid "The `rest-connector` has a special role in the new server, since it now also handles administrative tasks. It is therefore required if you want to use the CLI or the Console. You may wish to have the protocols listen on different ports, as outlined in the configuration below:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2020-02-20-server-config.adoc:89
+#, no-wrap
+msgid ""
+"   <cache-container name=\"default\" statistics=\"true\">\n"
+"      <transport cluster=\"${infinispan.cluster.name}\" stack=\"${infinispan.cluster.stack:tcp}\" node-name=\"${infinispan.node.name:}\"/>\n"
+"   </cache-container>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2020-02-20-server-config.adoc:99
+#, no-wrap
+msgid ""
+"   <server xmlns=\"urn:infinispan:server:10.1\">\n"
+"      <interfaces>\n"
+"         <interface name=\"public\">\n"
+"            <match-interface value=\"eth0\"/>\n"
+"         </interface>\n"
+"         <interface name=\"admin\">\n"
+"            <loopback/>\n"
+"         </interface>\n"
+"      </interfaces>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2020-02-20-server-config.adoc:104
+#, no-wrap
+msgid ""
+"      <socket-bindings default-interface=\"public\" port-offset=\"${infinispan.socket.binding.port-offset:0}\">\n"
+"         <socket-binding name=\"public\" port=\"${infinispan.bind.port:11222}\"/>\n"
+"         <socket-binding name=\"admin\" interface=\"admin\" port=\"${infinispan.bind.port:11222}\"/>\n"
+"      </socket-bindings>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2020-02-20-server-config.adoc:115
+#, no-wrap
+msgid ""
+"      <security>\n"
+"         <security-realms>\n"
+"            <security-realm name=\"default\">\n"
+"               <properties-realm groups-attribute=\"Roles\">\n"
+"                  <user-properties path=\"users.properties\" relative-to=\"infinispan.server.config.path\" plain-text=\"true\"/>\n"
+"                  <group-properties path=\"groups.properties\" relative-to=\"infinispan.server.config.path\" />\n"
+"               </properties-realm>\n"
+"            </security-realm>\n"
+"         </security-realms>\n"
+"      </security>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2020-02-20-server-config.adoc:122
+#, no-wrap
+msgid ""
+"      <endpoints socket-binding=\"admin\" security-realm=\"default\">\n"
+"         <hotrod-connector name=\"hotrod\" socket-binding=\"public\"/>\n"
+"         <rest-connector name=\"rest\"/>\n"
+"      </endpoints>\n"
+"   </server>\n"
+"</infinispan>\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-20-server-config.adoc:125
+msgid "This creates two _socket bindings_, one named *public* bound to the `eth0` interface and one named *admin* bound to the loopback interface. The server will therefore listen for Hot Rod traffic only on the *public* network and for HTTP/REST traffic on the *admin* network."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-20-server-config.adoc:127
+msgid "For more details on how to configure Infinispan Server, refer to our https://infinispan.org/docs/stable/titles/server/server.html[documentation]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-20-server-config.adoc:128
+msgid "In the next blog post we will have an in-depth look at security."
+msgstr ""

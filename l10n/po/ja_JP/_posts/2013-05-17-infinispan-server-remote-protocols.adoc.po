@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: 'Infinispan Server: remote protocols improvements'\n"
+"permalink: /blog/:year/:month/:day/infinispan-server-remote-protocols\n"
+"date: '2013-05-17T11:42:00.000-07:00'\n"
+"author: ttarrant\n"
+"tags: [remote]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5455091021820104003\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-server-remote-protocols.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:19
+msgid "A couple of weeks ago, Infinispan 5.3.0.Beta1 was released, which brought a slew of improvements to two of the remoting protocols: Hot Rod and REST. This week's 5.3.0.Beta2 brings even more goodies: the ability to expose the same container over multiple Hot Rod endpoints and the integration of the WebSocket endpoint. We've also been working on fleshing out the https://docs.jboss.org/author/display/ISPN/Infinispan+Server[documentation] for the server."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:21
+#, no-wrap
+msgid "Hot Rod SSL"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:34
+msgid "Hot Rod, Infinispan's own high-performance, topology aware protocol, has gained the ability to encrypt the communication using SSL and optionally require client certificate authentication. While this is still not the full-blown authentication/authorization infrastructure we will be implementing for Infinispan 6.0, it is the first step in that direction.  In the context of the Infinispan Server, setting this up is quite simple. Download the Infinispan Server distribution from http://www.jboss.org/infinispan/downloads and unzip it.  Next create a keystore with a self-signed certificate:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:54
+msgid "$ keytool -genkey -alias hotrod -keyalg RSA -keystore keystore.jks -keysize 2048 Enter keystore password:  secret Re-enter new password: secret What is your first and last name?   [Unknown]:  HotRod What is the name of your organizational unit?   [Unknown]:  Infinispan What is the name of your organization?   [Unknown]:  JBoss What is the name of your City or Locality?   [Unknown]:  Red Hat What is the name of your State or Province?   [Unknown]:  World What is the two-letter country code for this unit?   [Unknown]:  WW Is CN=HotRod, OU=Infinispan, O=JBoss, L=Red Hat, ST=World, C=WW correct?   [no]:  yes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:57
+msgid "Enter key password for <hotrod>     (RETURN if same as keystore password):"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:65
+msgid "Put the keystore in the standalone/configuration directory together with the standalone-hotrod-ssl.xml from the docs/examples/configs directory.  Now start the server using bin/standalone.sh -c standalone-hotrod-ssl.xml This will start a server with a HotRod endpoint on port 11222 which will only accept SSL connections."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:67
+msgid "Now we need a client:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:70
+msgid "This client needs to find the keystore.jks file you generated above."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:72
+#, no-wrap
+msgid "Hot Rod container sharing"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:82
+msgid "Another feature added to the Hot Rod endpoint is the ability to share the same container between multiple endpoints, and exposing them on different interfaces. This could be used to offer an unencrypted backend endpoint to be used by \"internal\" servers to populate the cache and an encrypted frontend endpoint to be used by \"external\" applications. With the future addition of authorization, this will offer the ability to handle many types of security scenarios."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:84
+#, no-wrap
+msgid "REST Extended Headers"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:91
+msgid "The REST endpoint now returns the Expires header for mortal entries. It will also return additional headers when the extended query parameter is added, e.g. GET /cacheName/cacheKey?extended will return the following custom headers:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:93
+msgid "Cluster-Primary-Owner: the node name of the primary owner for this key"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:95
+msgid "Cluster-Node-Name: the JGroups node name of the server that has handled the request"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:97
+msgid "Cluster-Physical-Address: the physical JGroups address of the server that has handled the request."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:101
+msgid "With the introduction of custom metadata, courtesy of https://jira.jboss.org/browse/ISPN-2281[ISPN-2281], we will also allow returning that information too."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:103
+#, no-wrap
+msgid "REST Collections"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:111
+msgid "Another improvement made to the REST endpoint is the ability to retrieve all keys in a cache, by simply invoking a GET /cacheName This will return a list of keys present in the given cacheName as the body of the response. The format of the response can be controlled via the Accept header as follows:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:113
+msgid "application/xml - the list of keys will be returned in XML format."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:114
+msgid "application/json - the list of keys will be return in JSON format."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:115
+msgid "text/html - the list of keys will be returned in HTML format."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:117
+msgid "text/plain - the list of keys will be returned in plain text format, one key per line"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:122
+msgid "If the cache identified by cacheName is distributed, only the keys owned by the node handling the request will be returned. To return all keys, append the \"global\" parameter to the query, as follows: GET /cacheName?global"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:124
+#, no-wrap
+msgid "WebSocket endpoint"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:131
+msgid "The WebSocket endpoint is now finally part of the new Infinispan Server package. Bear in mind that this is just a pure WebSocket server. When we will be able to upgrade our base from AS 7.x to WildFly 8 we will be able to take advantage of the new Undertow web server which has native support for WebSockets."
+msgstr ""

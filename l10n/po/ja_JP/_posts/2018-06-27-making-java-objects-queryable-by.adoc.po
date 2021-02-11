@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Making Java objects queryable by Infinispan remote clients\n"
+"permalink: /blog/:year/:month/:day/making-java-objects-queryable-by\n"
+"date: '2018-06-27T04:46:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \" remote query\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7670094109988265383\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/06/making-java-objects-queryable-by.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:12
+msgid "The following is a common question amongst Infinispan community users:"
+msgstr ""
+
+#. type: delimited block _
+#: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:15
+#, no-wrap
+msgid "*How do I make my Java objects queryable by remote clients?* \n"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:19
+#, no-wrap
+msgid "Annotation Method"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:26
+msgid "The simplest way is to take advantage https://github.com/infinispan/protostream[Infinispan Protostream] annotations to mark your objects queryable and decide how each object field should be indexed. Example:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:33
+msgid "Then, the https://github.com/infinispan/protostream/blob/master/core/src/main/java/org/infinispan/protostream/annotations/ProtoSchemaBuilder.java[ProtoSchemaBuilder] can inspect the annotated class and derive a https://developers.google.com/protocol-buffers/[Google Protocol Buffers] schema file from it. Example:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:37
+msgid "Finally, the schema file needs to be registered in the “___protobuf_metadata” cache:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:44
+msgid "Although this is by far the easiest way to make your Java objects queryable, this method might not always be viable. For example, you might not be able to modify the Java object classes to add the annotations. For such use cases, a more verbose method is available that does not require modifying the source code of the Java object."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:46
+#, no-wrap
+msgid "Plain Object Method"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:50
+msgid "For example, given this Java object:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:54
+msgid "A Protocol Buffers schema must be defined where comments are used to define the object as queryable and decide how each field is indexed:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:60
+msgid "This method also requires a https://github.com/infinispan/protostream/blob/master/core/src/main/java/org/infinispan/protostream/MessageMarshaller.java[Protostream message marshaller] to be defined which specifies how each field is serialized/deserialized:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:65
+msgid "This method still requires the Protocol Buffers schema to be registered remotely, but on top of that, the schema and marshaller need to be registered in the client:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:71
+msgid "Clearly, this second method is a lot more verbose and more laborious when refactoring. If any changes are made to the Java object, the marshaller and Protocol Buffer schema need to also be changed accordingly. This is done automatically in the first method."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:75
+msgid "Both methods are demonstrated in full in the https://github.com/infinispan-demos/queryable-pojos[queryable-pojos demo]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:78
+msgid "Cheers Galder"
+msgstr ""

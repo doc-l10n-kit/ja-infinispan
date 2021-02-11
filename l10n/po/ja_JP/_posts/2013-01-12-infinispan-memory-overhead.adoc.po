@@ -1,0 +1,346 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:13
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan memory overhead\n"
+"permalink: /blog/:year/:month/:day/infinispan-memory-overhead\n"
+"date: '2013-01-12T08:53:00.000-08:00'\n"
+"author: mgencur\n"
+"tags: [ \"overhead\",\n"
+"\"memory\",\n"
+"\"performance\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2015345639455049711\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/01/infinispan-memory-overhead.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:17
+msgid "Have you ever wondered how much Java heap memory is actually consumed when data is stored in Infinispan cache? Let's look at some numbers obtained through real measurement."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:19
+msgid "The strategy was the following:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:22
+msgid "Start Infinispan server in local mode (only one server instance, eviction disabled)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:26
+msgid "Keep calling full garbage collection (via JMX or directly via System.gc() when Infinispan is deployed as a library) until the difference in consumed memory by the running server gets under 100kB between two consecutive runs of GC"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:28
+msgid "Load the cache with *100MB* of data via respective client (or directly store in the cache when Infinispan is deployed as a library)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:29
+msgid "Keep calling the GC until the used memory is stabilised"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:31
+msgid "Measure the difference between the final values of consumed memory after the first and second cycle of GC runs"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:33
+msgid "Repeat steps 3, 4 and 5 four times to get an average value (first iteration ignored)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:37
+msgid "The amount of consumed memory was obtained from a verbose GC log (related JVM options: -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -Xloggc:/tmp/gc.log)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:39
+msgid "The test output looks like this: https://gist.github.com/4512589"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:44
+msgid "The operating system (Ubuntu) as well as JVM (Oracle JDK 1.6) were 64-bit. Infinispan 5.2.0.Beta6. Keys were kept intentionally small (10 character Strings) with byte arrays as values. The target entry size is a sum of key size and value size."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:46
+#, no-wrap
+msgid "*Memory overhead of Infinispan accessed through clients*"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:52
+#, no-wrap
+msgid "*HotRod client*\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:55
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:83
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:110
+msgid "entry size -> overall memory"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:57
+msgid "512B       -> 137144kB"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:59
+msgid "1kB        -> 120184kB"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:61
+msgid "10kB       -> 104145kB"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:63
+msgid "1MB        -> 102424kB"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:66
+msgid "So how much additional memory is consumed on top of each entry?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:69
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:95
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:122
+msgid "entry size/actual memory per entry -> overhead per entry"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:71
+msgid "512B/686B                -> ~174B"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:73
+msgid "1kB(1024B)/1202B         -> ~178B"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:75
+msgid "10kB(10240B)/10414B      -> ~176B"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:77
+msgid "1MB(1048576B)/1048821B   -> ~245B"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:80
+#, no-wrap
+msgid "*MemCached client (text protocol, SpyMemcached client) *\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:85
+msgid "512B       -> 139197kB"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:87
+msgid "1kB        -> 120517kB"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:89
+msgid "10kB       -> 104226kB"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:91
+msgid "1MB        -> N/A (SpyMemcached allows max. 20kB per entry)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:97
+msgid "512B/696B               -> ~184B"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:99
+msgid "1kB(1024B)/1205B        -> ~181B"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:101
+msgid "10kB(10240B)/10422B     -> ~182B"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:107
+#, no-wrap
+msgid "*REST client (Content-Type: application/octet-stream)*\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:112
+msgid "512B       -> 143998kB"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:114
+msgid "1kB        -> 122909kB"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:116
+msgid "10kB       -> 104466kB"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:118
+msgid "1MB        -> 102412kB"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:124
+msgid "512B/720B               -> ~208B"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:126
+msgid "1kB(1024B)/1229B        -> ~205B"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:128
+msgid "10kB(10240B)/10446B     -> ~206B"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:130
+msgid "1MB(1048576B)/1048698B  -> ~123B"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:135
+msgid "The memory overhead for individual entries seems to be more or less constant across different cache entry sizes."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:137
+#, no-wrap
+msgid "Memory overhead of Infinispan deployed as a library"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:142
+msgid "Infinispan was deployed to http://www.jboss.org/jbossas[JBoss Application Server 7] using http://arquillian.org/[Arquillian]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:145
+msgid "entry size -> overall memory/overall with storeAsBinary"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:147
+msgid "512B       -> 132736kB / 132733kB"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:149
+msgid "1kB        -> 117568kB / 117568kB"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:151
+msgid "10kB       -> 103953kB / 103950kB"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:153
+msgid "1MB        -> 102414kB / 102415kB"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:157
+msgid "There was almost no difference in overall consumed memory when enabling or disabling storeAsBinary."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:161
+msgid "entry size/actual memory per entry-> overhead per entry (w/o storeAsBinary)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:163
+msgid "512B/663B               -> ~151B"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:165
+msgid "1kB(1024B)/1175B        -> ~151B"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:167
+msgid "10kB(10240B)/10395B     -> ~155B"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:169
+msgid "1MB(1048576B)/1048719B  -> ~143B"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:173
+msgid "As you can see, the overhead per entry is constant across different entry sizes and is ~151 bytes."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:175
+#, no-wrap
+msgid "Conclusion"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:185
+msgid "The memory overhead is slightly more than 150 bytes per entry when storing data into the cache locally. When accessing the cache via remote clients, the memory overhead is a little bit higher and ranges from ~170 to ~250 bytes, depending on remote client type and cache entry size. If we ignored the statistics for 1MB entries, which could be affected by a small number of entries (100) stored in the cache, the range would have been even narrower."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:188
+msgid "Cheers, Martin"
+msgstr ""

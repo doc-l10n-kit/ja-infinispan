@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-02-01-executing-code-in-grid.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-01-executing-code-in-grid.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Executing Code in the Grid\n"
+"permalink: /blog/:year/:month/:day/executing-code-in-grid\n"
+"date: '2018-02-01T06:37:00.000-08:00'\n"
+"author: wburns\n"
+"tags: [ \"distributed executors\", \"streams\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1414237157030497931\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/02/executing-code-in-grid.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-01-executing-code-in-grid.adoc:16
+msgid "Infinispan has quite a few spectacular ways of executing code in the grid. But I bet you haven't heard or aren't really familiar with those, which is disappointing. I hope to fix this, however, as we have added more information to the user guide and wanted to detail that here in this blog."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-01-executing-code-in-grid.adoc:21
+msgid "As I am sure you are aware Infinispan can be used in embedded (in your JVM) and remote (in a standalone server). Unfortunately, this means there are different ways of executing code based on which mode you are in."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2018-02-01-executing-code-in-grid.adoc:23
+#, no-wrap
+msgid "Embedded"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-01-executing-code-in-grid.adoc:28
+msgid "The embedded mode has the most features available and is the easiest to use. The appropriate section can be found http://infinispan.org/docs/dev/user_guide/user_guide.html#executing_code_in_the_grid[here]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-01-executing-code-in-grid.adoc:36
+msgid "One question that seems to come up more than others is how a user can perform cache operations on all data, such as remove all elements that match a given filter. If you are curious about this one, you should check out the http://infinispan.org/docs/dev/user_guide/user_guide.html#examples_2[Examples] section with the example named \"*Remove specific entries\"* as it details how a user would do exactly that."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-01-executing-code-in-grid.adoc:45
+msgid "I should also point out the new http://infinispan.org/docs/dev/user_guide/user_guide.html#cluster_executor[Cluster Executor] section, which is similar to Streams that replaced Map Reduce, is here to replace the old Distributed Executor. With Cluster Executor and Distributed Streams there is a clearer distinction between executing code on nodes (Cluster Executor) and executing code based on data (Distributed Streams).  **"
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2018-02-01-executing-code-in-grid.adoc:46
+#, no-wrap
+msgid "Server"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-01-executing-code-in-grid.adoc:53
+msgid "The server is a bit more interesting and usually requires configuration ahead of time, unlike Embedded. It can be found in this http://infinispan.org/docs/dev/user_guide/user_guide.html#executing_code_in_the_remote_grid[section].  The benefit of the server is most of these can invoke embedded operations internally."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-01-executing-code-in-grid.adoc:58
+msgid "Scripting is by far the easiest to use - just insert your script and execute - but has some https://issues.jboss.org/browse/ISPN-6173[limitations] that we haven't been able to fix yet."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-01-executing-code-in-grid.adoc:64
+msgid "Server tasks can run pretty much any Java but require registering classes beforehand. Unfortunately, this section still needs to be filled in and should be added sometime in the near future. I would say, until then, if you are interested, you can look at some tests in https://github.com/infinispan/infinispan/tree/master/server/integration/testsuite/src/test/java/org/infinispan/server/test/task/servertask[github]."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2018-02-01-executing-code-in-grid.adoc:66
+#, no-wrap
+msgid "Takeaway"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-01-executing-code-in-grid.adoc:73
+msgid "I hope this has helped users be able to find out some more information about the various ways of executing arbitrary code for your data. If you have any questions or need more clarification about the features highlighted here, please don't hesitate to let us know at any of these http://infinispan.org/community/[places]."
+msgstr ""

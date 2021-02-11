@@ -1,0 +1,363 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 9.2.0.Final\n"
+"permalink: /blog/:year/:month/:day/infinispan-920final\n"
+"date: '2018-02-28T15:20:00.002-08:00'\n"
+"author: ttarrant\n"
+"tags: [ \" release\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6180087022210305887\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/02/infinispan-920final.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:13
+msgid "Infinispan 9.2.0.Final \"Gaina\" is out !"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:19
+msgid "Our three-month time-boxing for a minor release plan got a little bit skewed this time in order to accommodate for some additional overhauls.  This also means that, for a minor release, this is much meatier than usual."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:21
+#, no-wrap
+msgid "Core improvements"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:28
+#, no-wrap
+msgid ""
+"*Conflict resolution*\n"
+"Automatic conflict resolution after a partition merge is now supported\n"
+"for all partition handling strategies and is enabled by default.\n"
+"Furthermore, it is now possible to deploy custom EntryMergePolicy\n"
+"implementations to the server\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:31
+#, no-wrap
+msgid ""
+"*Reactive streams-based distributed Iteration improvements*\n"
+"Distributed iterator now uses less threads and allows for efficient\n"
+"parallel retrieval providing for improved throughput\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:35
+#, no-wrap
+msgid ""
+"*Biased reads for scattered caches*\n"
+"Originator can read the ‘backup’ copy locally until the data gets\n"
+"overwritten again. Together with improved read performance this migrates\n"
+"data to nodes that use it. \n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:38
+#, no-wrap
+msgid ""
+"*Off-heap sizing*\n"
+"Off-heap requires less overhead per entry and provides for more accurate\n"
+"sizing allowing you to maximize your memory used\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:41
+#, no-wrap
+msgid ""
+"**Exception based eviction**A new \"eviction\" that instead of removing\n"
+"old entries prevents new entries being inserted (supported by all memory\n"
+"storage and eviction types)\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:42
+#, no-wrap
+msgid "API improvements"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:47
+#, no-wrap
+msgid ""
+"*Multimap caches*\n"
+"Available for both Embedded and for Hot Rod, these maps which can store\n"
+"multiple values for the same key\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:50
+#, no-wrap
+msgid ""
+"*Clustered Counters*\n"
+"Clustered counters are now available for Hot Rod and in non-clustered\n"
+"deployments.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:53
+#, no-wrap
+msgid ""
+"*Clustered Locks*\n"
+"Available in embedded mode. They allow concurrent synchronization\n"
+"between nodes in the same cluster\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:58
+#, no-wrap
+msgid ""
+"*Wildcard configurations*\n"
+"Implicitly use a predefined configuration for all caches whose name\n"
+"matches a wildcard. This is particularly useful when using Infinispan\n"
+"through an API which doesn't allow for additional configuration\n"
+"properties (such as JCache).\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:63
+#, no-wrap
+msgid ""
+"*Cluster-wide cache admin with optional persistence*\n"
+"The CacheManager API has been enhanced with methods to create/destroy\n"
+"caches across a cluster, in both Embedded and Hot Rod scenarios (REST\n"
+"will come in 9.3). Optionally, configurations can be made persistent\n"
+"across restarts.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:66
+#, no-wrap
+msgid ""
+"*Cache Stream*\n"
+"Overloaded collect() method to take Supplier so that collect() in\n"
+"clustered environments is more user-friendly.\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:67
+#, no-wrap
+msgid "Data Interoperability"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:76
+msgid "Transcoding is a powerful new feature which allows for transparent conversion between a number of formats across different endpoints. For example, it is now possible to write ProtoBuf-encoded data through the Hot Rod endpoint and retrieve that same data as a JSON document through the REST endpoint and vice versa. Additionally, such data is also indexable and queryable."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:77
+#, no-wrap
+msgid "Indexing and Query"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:83
+#, no-wrap
+msgid ""
+"*POJO queries over Hot Rod*\n"
+"It is now possible to directly use Hibernate Search-annotated objects\n"
+"through JBoss Marshalling/Java serialization without the need for\n"
+"ProtoBuf over Hot Rod.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:86
+#, no-wrap
+msgid ""
+"*Broadcast queries*\n"
+"Clustered queries have been unified with non-clustered queries under a\n"
+"single API, making their use transparent.\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:87
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:105
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:113
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:133
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:144
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:160
+#, no-wrap
+msgid " "
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:89
+#, no-wrap
+msgid "Infinispan Server"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:93
+#, no-wrap
+msgid ""
+"*Rebased on WildFly 11*\n"
+"The server baseline has been updated to WildFly 11\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:96
+#, no-wrap
+msgid ""
+"*Async Hot Rod server*\n"
+"The Hot Rod server now uses async ops, sparing CPU cycles from\n"
+"context-switching and reducing the latency.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:100
+#, no-wrap
+msgid ""
+"*Queries over REST*\n"
+"The REST endpoint now supports running Ickle queries. This is fully\n"
+"integrated with the above-mentioned JSON support, so your results will\n"
+"be returned to you as JSON documents.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:104
+#, no-wrap
+msgid ""
+"*Netty Hot Rod Client*\n"
+"The Hot Rod Java client network layer has been completely rewritten to\n"
+"use Netty, bringing true asynchronous calls and some performance\n"
+"benefits.\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:107
+#, no-wrap
+msgid "Management, monitoring and logging"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:110
+msgid "    Console support for counters"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:111
+msgid "    Improved remote protocol access logging"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:112
+msgid "    Jolokia is now integrated as a part of the server."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:115
+#, no-wrap
+msgid "Infinispan on OpenShift"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:121
+msgid "We have been doing a lot of work in making Infinispan a first-class citizen of OpenShift. Check out the OpenShift templates for more details."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:122
+#, no-wrap
+msgid "Integrations"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:126
+#, no-wrap
+msgid ""
+"*JCache 1.1*\n"
+"This release is now aligned with JCache 1.1.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:130
+#, no-wrap
+msgid ""
+"*Hibernate second-level cache provider*\n"
+"Traditionally shipped by our friends on the Hibernate ORM team, this\n"
+"component has now changed ownership over to us. This release includes a\n"
+"provider for both Hibernate 5.1 and 5.2.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:132
+#, no-wrap
+msgid ""
+"**Azure cloud discovery**Courtesy of JGroups' extras, we now support\n"
+"discovery in Azure.\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:135
+#, no-wrap
+msgid "The codename"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:140
+msgid "In the grand-old tradition of giving major and minor Infinispan releases a beer-themed codename, 9.2 is no exception."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:143
+msgid "\"_Gaina_\", which means \"chicken\" in the milanese dialect, also happens to be one of the great beers of the Birrificio Lambrate in Milan."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:146
+#, no-wrap
+msgid "Onwards to 9.3"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:159
+msgid "We have already started working on our next release, 9.3 which should be with you at the end of May. This will continue the work to make Infinispan fully asynchronous inside out, reducing resource usage and increasing performance. We are also working on a new modular API which will improve usability, increase interoperability between embedded and remote scenarios and take advantage of reactive designs. Transactions should finally make their appearance in Hot Rod and security will be greatly enhanced, by taking advantages of the great work done by our friends over on the Elytron team. We have much more planned, so please consult our roadmap for details."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:162
+#, no-wrap
+msgid "Download, learn and play"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:167
+msgid "You will find downloads, documentation, tutorials, quickstarts and demos over on our website."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-28-infinispan-920final.adoc:171
+msgid "Please let us know on our forum, on IRC, on our issue tracker if you have any issues with this release, if there is any feature you would like to see in the future, or just to chat."
+msgstr ""

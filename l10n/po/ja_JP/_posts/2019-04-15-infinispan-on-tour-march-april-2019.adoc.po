@@ -1,0 +1,278 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:11
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan on tour, March-April 2019\n"
+"permalink: /blog/:year/:month/:day/infinispan-on-tour-march-april-2019\n"
+"date: '2019-04-15T04:08:00.002-07:00'\n"
+"author: karesti\n"
+"tags: [ \" conference\", \"public speaking\", \"greach conf\", \"breizh camp\", \"voxxed days milano\" ]\n"
+"thumbnail: https://2.bp.blogspot.com/-VB--7t2qCfs/XLRiXygkwOI/AAAAAAAACiI/idqpzL07zNsD4_ozwPYvzfIKzM9Lv4jWQCLcBGAs/s72-c/Katia_BreizhCamp.jpg\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8551575506327129182\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/04/infinispan-on-tour-march-april-2019.html\n"
+"---\n"
+msgstr ""
+
+#. type: Bullet: '*
+#. type: '
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:14
+msgid "*"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:16
+#, no-wrap
+msgid "*Infinispan has been on tour!!*\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:22
+msgid " I - https://twitter.com/karesti[karesti] - had the chance to present 3 talks in 3 different conferences and countries during the last month:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:25
+msgid "https://www.breizhcamp.org/[Breizh Camp 2019] the 22th March, Rennes (France)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:29
+msgid "image:https://www.breizhcamp.org/img/logo.png[BreizhCamp - 9Ã¨me Ã©dition - 20, 21 et 22 Mars 2019 logo]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:34
+msgid "https://www.greachconf.com/[Greach Conf 2019], 29th March, Madrid (Spain)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:38
+msgid "image:https://static1.squarespace.com/static/5bbb8964ab1a624b2849c12c/t/5bbb89d3ec212de44fe418ea/1553429592481/?format=1500w[Greach 2019,width=200,height=57]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:42
+msgid "https://voxxeddays.com/milan/[Voxxed Days Milano 2019], 13th April, Milan (Italy)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:46
+msgid "image:https://voxxeddays.com/milan/wp-content/uploads/sites/47/2018/06/Milano-grey.png[VoxxedDays Milan,width=200,height=55]"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:50
+#, no-wrap
+msgid "Breizh Camp"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:54
+msgid "2019 has been BreizhCamp's 9th - Code Busters - edition and they sold-out the conference in a matter of hours (wow)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:60
+msgid "I did not have the time to attend any talk. Unfortunately, due to my personal schedule, I arrived on Thursday night, and I was presenting on Friday after lunch. This was the second time I was giving this presentation, but I did lot's of changes since the first time, including:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:62
+msgid "Big upgrades to my presentation look and feel "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:67
+msgid "Harry-Potterize my https://github.com/karesti/harry-potter-vertx[Vert.x Clustered Infinispan Embedded]. An original demo containing more examples of Vert.x and Infinispan can be found https://github.com/infinispan-demos/vertx-api[here]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:70
+msgid "Creating and live-coding an https://github.com/infinispan-demos/harry-potter-quarkus[Infinispan Client/Server + Quarkus Demo]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:74
+msgid "Using https://blog.infinispan.org/2019/04/operator-021-out-with-dns-ping-and.html[Infinispan Operator] to create an Infinispan Cluster in https://www.devoxx.fr/[Openshift 4]"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:81
+#, no-wrap
+msgid "https://2.bp.blogspot.com/-VB--7t2qCfs/XLRiXygkwOI/AAAAAAAACiI/idqpzL07zNsD4_ozwPYvzfIKzM9Lv4jWQCLcBGAs/s1600/Katia_BreizhCamp.jpg[image:https://2.bp.blogspot.com/-VB--7t2qCfs/XLRiXygkwOI/AAAAAAAACiI/idqpzL07zNsD4_ozwPYvzfIKzM9Lv4jWQCLcBGAs/s400/Katia_BreizhCamp.jpg[image,width=400,height=301]]"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:82
+#, no-wrap
+msgid "Breizh Camp Code Busters Edition, Photo credit @BreizhCamp 2019"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:91
+msgid "On Friday morning I was stressed and I ran my presentation at the hotel.  I arrived at the venue, delivered my talk and headed back to Paris. I deeply regretted not spending more time hanging out with other speakers and attendees, but I really couldn't make it this time :("
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:93
+#, no-wrap
+msgid "Greach Conf"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:98
+msgid "Greach Conf is a lovely conference held in Madrid (Spain) for several years now. A 100% international conference, it has been organized by the Groovy community. "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:102
+msgid "This year they have changed the conference lineup adding an Android/Testing track and focusing on a bigger spectrum of technologies around the JVM."
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:111
+#, no-wrap
+msgid "https://2.bp.blogspot.com/-4m4cQgITzVo/XLRd37LS7wI/AAAAAAAAChw/u1Locua7ykEBUMoP0EfQW8p2dN1VsxsiQCLcBGAs/s1600/Katia_Greach.jpg[image:https://2.bp.blogspot.com/-4m4cQgITzVo/XLRd37LS7wI/AAAAAAAAChw/u1Locua7ykEBUMoP0EfQW8p2dN1VsxsiQCLcBGAs/s400/Katia_Greach.jpg[image,width=400,height=266]]"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:112
+#, no-wrap
+msgid "Greach Conf 2019. Photo credit José Miguel Rodríguez"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:128
+msgid "I learned a bunch of new things, including content related to https://sdkman.io/[SDKMan!], https://gradle.org/[Gradle], the future of https://grails.org/[Grails] and of course, https://micronaut.io/[Micronaut]. As the principal maintainer of https://github.com/infinispan/infinispan-spring-boot[Spring-Boot and Infinispan integration], Micronaut felt new and familiar at the same time. I really enjoyed the workshop delivered by https://twitter.com/alvaro_sanchez[Alvaro Sánchez] who will be in https://www.devoxx.fr/[Devoxx France] this week. The framework *is really impressive*. Give it a try!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:133
+#, no-wrap
+msgid ""
+"*You will find on Twitter a complete thread about my Greach Conf\n"
+"impressions:*\n"
+msgstr ""
+
+#. type: delimited block _
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:140
+msgid "Coming back to Paris after 3 amazing days in Madrid as speaker and attendee at https://twitter.com/greachconf?ref_src=twsrc%5Etfw[@greachconf] https://twitter.com/hashtag/greach?src=hash&ref_src=twsrc%5Etfw[#greach] opening a thread 👇🏻"
+msgstr ""
+
+#. type: delimited block _
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:144
+msgid "— karesti (@karesti)  https://twitter.com/karesti/status/1112041858270748672?ref_src=twsrc%5Etfw[30 mars 2019]"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:148
+#, no-wrap
+msgid "Voxxed Days Milano"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:154
+msgid "Voxxed Days Milano (Italy) was organizing the first edition this year and I really loved this conference in every aspect of it! Thanks, https://twitter.com/mariofusco[Mario Fusco] and all the team involved for making it possible!"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:160
+#, no-wrap
+msgid "https://1.bp.blogspot.com/-e6wRSpBEK20/XLRgR20WmkI/AAAAAAAACh8/pREi8mad0ikM2KAjzYB57moGyjXXw3_mQCLcBGAs/s1600/Katia_VoxxedMilano.jpg[image:https://1.bp.blogspot.com/-e6wRSpBEK20/XLRgR20WmkI/AAAAAAAACh8/pREi8mad0ikM2KAjzYB57moGyjXXw3_mQCLcBGAs/s400/Katia_VoxxedMilano.jpg[image,width=400,height=194]]"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:161
+#, no-wrap
+msgid "Voxxed Days Milano - Photo credit Sanne Grinovero "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:168
+msgid "I've written a full thread on Twitter with my impressions. You can find it attached to the tweet where I share *all the content I've used in Greach Conf, BreizhCamp and Voxxed Days Milano:*"
+msgstr ""
+
+#. type: delimited block _
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:175
+msgid "My presentation content https://twitter.com/hashtag/VDM19?src=hash&ref_src=twsrc%5Etfw[#VDM19] is available! https://twitter.com/VoxxedMilano?ref_src=twsrc%5Etfw[@VoxxedMilano] ! Thanks for attending!"
+msgstr ""
+
+#. type: delimited block _
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:180
+msgid "The code of https://twitter.com/vertx_project?ref_src=twsrc%5Etfw[@vertx_project] and https://twitter.com/Infinispan?ref_src=twsrc%5Etfw[@Infinispan] embeddedhttps://t.co/KYNUJRzauU"
+msgstr ""
+
+#. type: delimited block _
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:185
+msgid "The code of https://twitter.com/QuarkusIO?ref_src=twsrc%5Etfw[@QuarkusIO] and https://twitter.com/Infinispan?ref_src=twsrc%5Etfw[@Infinispan] client/serverhttps://t.co/9TV9tPBaeI"
+msgstr ""
+
+#. type: delimited block _
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:187
+msgid "Deck: https://t.co/HR8nMR7xlL"
+msgstr ""
+
+#. type: delimited block _
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:191
+msgid "— karesti (@karesti)  https://twitter.com/karesti/status/1117012866354307072?ref_src=twsrc%5Etfw[13 avril 2019]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:199
+#, no-wrap
+msgid ""
+"*Thanks to Breizh Camp, Greach Conf and Voxxed Days Milano for the\n"
+"opportunity to share around distributed caches and for the amazing time\n"
+"I've had during this month in each of the conferences.*\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:208
+msgid "This tour is now over for a while but will continue before summer. I will be presenting this talk (with upgrades, so stay tuned) in https://devfest.gdglille.org/[Dev Fest Lille in June 2019] (France), in https://comunidadcode.com/[Comunidad CODE (Virtual talk)] and https://www.meetup.com/fr-FR/Software-Crafters-Bilbao/[Software Crafters Bilbao] in Spanish."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:210
+#, no-wrap
+msgid "*Devoxx France *"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:216
+msgid "https://www.devoxx.fr/[Devoxx France] is taking place this week in Paris. *I will be there,* so if you want to chat about Distributed caches, Datagrids, NoSQL Key-Value databases, or integration with your favorite framework *feel free to reach me on twitter*!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:220
+msgid "There are lot's of *new features and Reactive APIs to be done for Infinispan 10*, so my main focus will be there for a bit."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-04-15-infinispan-on-tour-march-april-2019.adoc:224
+msgid "Stay Tuned And Happy Coding!"
+msgstr ""

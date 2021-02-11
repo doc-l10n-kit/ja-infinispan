@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 9.2.0.Alpha2 & 9.1.2.Final released\n"
+"permalink: /blog/:year/:month/:day/infinispan-920alpha2-912final-released\n"
+"date: '2017-10-27T11:01:00.000-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8892880545538431411\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/10/infinispan-920alpha2-912final-released.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:12
+msgid "Dear Infinispan Community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:17
+msgid "We have 2 new releases ready for everyone. We have our newest and greatest, 9.2.0.Alpha2 and an updated Final for our stable branch 9.1.2.  As usual, both can be found on our download http://infinispan.org/download/[page]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:19
+msgid "9.2.0.Alpha2 contain the following new features"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:23
+msgid "New Counters can be removed https://issues.jboss.org/browse/ISPN-8093[ISPN-8093]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:27
+msgid "Interoperability between JSON and Protobuf, allowing to retrieve Protobuf content (written via Hot Rod) as JSON via Rest; also JSON documents written via Rest can be automatically converted to Protobuf and indexed. https://issues.jboss.org/browse/ISPN-7422[ISPN-7422]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:29
+msgid "Wildcard cache configurations allowing for multiple caches from 1 config https://issues.jboss.org/browse/ISPN-8379[ISPN-8379]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:32
+msgid "Reactive streams based iterator implementation providing better throughput and less resources usage https://issues.jboss.org/browse/ISPN-7865[ISPN-7865]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:35
+msgid "An experimental evalAll like method on the LockedStream interface allowing for exclusive operation on entries and a return value https://issues.jboss.org/browse/ISPN-8310[ISPN-8310]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:38
+msgid "9.1.2.Final and  9.2.0.Alpha both added"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:41
+msgid "Updates to third party JGroups, Hibernate and Hibernate Search"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:42
+msgid "Off heap improvements and fixes for Query & Encoding"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:50
+msgid "Besides these there were also quite a few bug fixes and code clean ups.  Full details of the new features and enhancements included in this release can be found https://issues.jboss.org/secure/ReleaseNote.jspa?version=12335606&projectId=12310799[here] and https://issues.jboss.org/secure/ReleaseNote.jspa?version=12335604&styleName=Html&projectId=12310799[here]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:53
+msgid "We have even more exciting features still coming up for Infinispan 9.2.  Thank you for following us and stay tuned!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:54
+msgid "The Infinispan Team"
+msgstr ""

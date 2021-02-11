@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 9.2.0.CR3\n"
+"permalink: /blog/:year/:month/:day/infinispan-920cr3\n"
+"date: '2018-02-21T14:30:00.002-08:00'\n"
+"author: ttarrant\n"
+"tags: [ \" release\", \"release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-510479361083171549\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/02/infinispan-920cr3.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:16
+msgid "This should have been the announcement for Final, but we discovered a number of performance regressions as well as a few important bugs that needed fixing. We also slipped in a few features and improvements. So, without further ado, here's what is new and noteworthy in Infinispan 9.2.0.CR3:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:18
+msgid "Various component upgrades"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:20
+msgid "Netty 4.1.21"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:21
+msgid "Hibernate Search 5.9.0.Final"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:22
+msgid "Protostream to 4.2.0.CR1"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:24
+msgid "Features/Enhancements"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:26
+msgid "Azure discovery"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:27
+msgid "Use async ops in the Hot Rod server"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:28
+msgid "Simplified client configuration when security is enabled"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:30
+msgid "Lots of documentation updates"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:32
+msgid "REST server changes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:33
+msgid "Data Encoding"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:34
+msgid "Server tasks"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:36
+msgid "And many bugfixes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:44
+msgid "Get your artifacts from maven, the distributions from our http://infinispan.org/download/[download page], the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12336887[fixed issues] from our issue tracker and read the updated http://infinispan.org/docs/dev/index.html[documentation]. Come and talk to us on IRC (#infinispan on Freenode) or ask questions on the https://developer.jboss.org/en/infinispan/content[forum]."
+msgstr ""

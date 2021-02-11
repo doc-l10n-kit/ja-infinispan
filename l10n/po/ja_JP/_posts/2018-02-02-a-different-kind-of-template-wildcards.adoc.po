@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-02-02-a-different-kind-of-template-wildcards.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-02-a-different-kind-of-template-wildcards.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: 'A different kind of template: wildcards'\n"
+"permalink: /blog/:year/:month/:day/a-different-kind-of-template-wildcards\n"
+"date: '2018-02-02T00:24:00.001-08:00'\n"
+"author: ttarrant\n"
+"tags: [ \" jcache\", \"configuration\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-870560324254081062\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/02/a-different-kind-of-template-wildcards.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-02-a-different-kind-of-template-wildcards.adoc:15
+msgid "Infinispan's configuration templates are an extremely flexible way to create multiple caches using the same configuration. Configuration inheritance works by explicitly declaring the configuration a specific cache should use."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-02-a-different-kind-of-template-wildcards.adoc:20
+msgid "This works fine when you know the caches you are going to use upfront, but in more dynamic scenarios, this might not be possible. Additionally, if you are using the JCache API, there is no way for you to specify the configuration template you want to use."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-02-a-different-kind-of-template-wildcards.adoc:25
+msgid "Infinispan 9.2 introduces an alternative way to apply templates to caches: wildcards. By creating a template with a wildcard in its name, e.g. `basecache*`, any cache whose name matches the template name will inherit that configuration."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-02-a-different-kind-of-template-wildcards.adoc:27
+msgid "Let's show an example:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-02-a-different-kind-of-template-wildcards.adoc:32
+msgid "Above, caches `basecache-1` and `basecache-2` will use the `basecache*` configuration. This behaviour also applies when retrieving caches programmatically:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-02-a-different-kind-of-template-wildcards.adoc:37
+msgid "When using the JCache API, using the XML file above and the following code will achieve the same result:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-02-a-different-kind-of-template-wildcards.adoc:42
+msgid "If a cache name matches multiple wildcards, i.e. it is ambiguous, an exception will be thrown."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-02-02-a-different-kind-of-template-wildcards.adoc:44
+msgid "I will be introducing other new features that Infinispan 9.2 brings to cache configuration in an upcoming blog post. Stay tuned !"
+msgstr ""

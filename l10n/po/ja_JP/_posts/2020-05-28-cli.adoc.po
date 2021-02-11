@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2020-05-28-cli.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-28-cli.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: CLI enhancements\n"
+"permalink: /blog/:year/:month/:day/cli\n"
+"date: '2020-05-28T12:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"cli\", \"server\", \"management\", \"administration\", \"logging\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2020-05-28-cli.adoc:10
+#, no-wrap
+msgid "CLI enhancements"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-28-cli.adoc:13
+msgid "One of the key aspects of our new server architecture is the management API exposed through the single port."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-28-cli.adoc:16
+msgid "While I'm sure there will be those of you who like to write scripts with plenty of `curl/wget` magic, and those who prefer the comfort of our new web console, the Infinispan CLI offers a powerful tool which combines the power of the former with the usability of the latter."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-28-cli.adoc:18
+msgid "During the Infinispan 11 development cycle, the CLI has received numerous enhancements. Let's look at some of them !"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2020-05-28-cli.adoc:19
+#, no-wrap
+msgid "User management"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-28-cli.adoc:23
+msgid "When using the built-in properties-based security realm, you had to use the `user-tool` script to manage users, passwords and groups. That functionality has now been built into the CLI:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2020-05-28-cli.adoc:29
+#, no-wrap
+msgid ""
+"[disconnected]> user create --password=secret --groups=admin john\n"
+"[disconnected]> connect --username=joe --password=secret\n"
+"[infinispan-29934@cluster//containers/default]>\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2020-05-28-cli.adoc:31
+#, no-wrap
+msgid "Remote logging configuration"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-28-cli.adoc:35
+msgid "You can now modify the server logging configuration from the CLI.  For example, to enable TRACE logging for the `org.jgroups` category, use the following:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2020-05-28-cli.adoc:39
+#, no-wrap
+msgid "[infinispan-29934@cluster//containers/default]> logging set --level=TRACE org.jgroups\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-28-cli.adoc:42
+msgid "logging configuration changes are volatile, i.e. they will be lost when restarting a node."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2020-05-28-cli.adoc:43
+#, no-wrap
+msgid "Server report"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-28-cli.adoc:46
+msgid "To help with debugging issues, the server now implements an aggregate log which includes information such as a thread dump, memory configuration, open sockets/files, etc."
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2020-05-28-cli.adoc:51
+#, no-wrap
+msgid ""
+"[bespin-29934@cluster//containers/default]> server report \n"
+"Downloaded report 'infinispan-bespin-29934-20200522114559-report.tar.gz'\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-28-cli.adoc:54
+msgid "this feature currently only works on Linux/Unix systems."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2020-05-28-cli.adoc:55
+#, no-wrap
+msgid "Real CLI mode"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-28-cli.adoc:58
+msgid "It is now possible to invoke all CLI commands directly from the command-line, without having to resort to interactive mode or a batch. For example:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2020-05-28-cli.adoc:62
+#, no-wrap
+msgid "cli.sh user create --password=secret --groups=admin john\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2020-05-28-cli.adoc:64
+#, no-wrap
+msgid "Native CLI"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-28-cli.adoc:66
+msgid "The CLI can now be built as a native executable, courtesy of https://www.graalvm.org/[GraalVM]'s `native-image` tool. We will soon be shipping binaries/images of this, so look out for an announcement."
+msgstr ""

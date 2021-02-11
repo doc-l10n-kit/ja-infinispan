@@ -1,0 +1,166 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Hot Rod URI\n"
+"permalink: /blog/:year/:month/:day/hotrod-uri\n"
+"date: '2020-05-26T12:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"documentation\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:10
+#, no-wrap
+msgid "Hot Rod URI"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:13
+msgid "Traditionally, the Java Hot Rod client has always been configured either via a properties file or through a programmatic builder API."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:15
+msgid "While both approaches offer a great amount of flexibility, they always felt a bit too complex for straightforward scenarios."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:17
+msgid "Starting with Infinispan 11 you will be able to specify the connection to an Infinispan Server via a URI, just like you'd connect to a database via a JDBC driver URL."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:19
+msgid "The Hot Rod URI allows you to specify the addresses of the server cluster, authentication parameters and any other property in a simple compact String format."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:21
+msgid "The URI specification is:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:23
+msgid "`hotrod[s]://[username:password]@host[:port][,host[:port]...][?property=value[&property=value...]]`"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:25
+msgid "the protocol can be either `hotrod` (plain, unencrypted) or `hotrods` (TLS/SSL, encrypted)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:26
+msgid "if username and password are specified, they will be used to authenticate with the server"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:27
+msgid "one or more addresses. If a port is not specified, the default `11222` will be used"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:28
+msgid "zero or more https://docs.jboss.org/infinispan/11.0/apidocs/org/infinispan/client/hotrod/configuration/package-summary.html[properties], without the `infinispan.client.hotrod` prefix, through which you can configure all other aspects such as connection pooling, authentication mechanisms, near caching, etc."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:30
+msgid "Here are some examples:"
+msgstr ""
+
+#. type: Labeled list
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:31
+#, no-wrap
+msgid "`hotrod://localhost`"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:33
+msgid "simple connection to a server running on `localhost` using the default port"
+msgstr ""
+
+#. type: Labeled list
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:34
+#, no-wrap
+msgid "`hotrod://joe:secret@infinispan-host-1:11222,infinispan-host-2:11222`"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:36
+msgid "authenticated connection to `infinispan-host-1` and `infinispan-host-2` with explicit port"
+msgstr ""
+
+#. type: Labeled list
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:37
+#, no-wrap
+msgid "`hotrods://infinispan-host-1?socket_timeout=1000&connect_timeout=2000`"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:39
+msgid "TLS/SSL connection to `infinispan-host-1` using the default port and with custom connection and socket timeouts"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:41
+msgid "The URI format can also be used as a starting point in your usual properties file or API configuration and further enriched using the traditional methods:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:48
+#, no-wrap
+msgid ""
+"infinispan.client.hotrod.uri=hotrod://joe:secret@infinispan-host-1:11222,infinispan-host-2:11222\n"
+"infinispan.client.hotrod.connect_timeout=100\n"
+"infinispan.client.hotrod.socket_timeout=100\n"
+"infinispan.client.hotrod.tcp_keep_alive=true\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:57
+#, no-wrap
+msgid ""
+"ConfigurationBuilder builder = new ConfigurationBuilder()\n"
+"    .uri(\"hotrod://joe:secret@infinispan-host-1:11222,infinispan-host-2:11222\")\n"
+"    .socketTimeout(100)\n"
+"    .connectionTimeout(100)\n"
+"    tcpKeepAlive(true);\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:60
+msgid "We hope this makes configuration simpler."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-26-hotrod-uri.adoc:61
+msgid "Happy coding!"
+msgstr ""

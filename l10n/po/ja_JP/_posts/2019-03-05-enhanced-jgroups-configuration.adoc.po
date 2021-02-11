@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Enhanced JGroups configuration\n"
+"permalink: /blog/:year/:month/:day/enhanced-jgroups-configuration\n"
+"date: '2019-03-05T05:27:00.000-08:00'\n"
+"author: ttarrant\n"
+"tags: [ \" configuration\", \"jgroups\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7381321340134963595\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/03/enhanced-jgroups-configuration.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:16
+msgid "Infinispan uses http://www.jgroups.org/[JGroups] as its underlying clustering layer. In order to configure the finer details of clustering (discovery, flow control, cross-site, etc) you have to provide a separate XML file with the desired configuration and reference it from your Infinispan XML file as follows:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:23
+msgid "For simple configurations this is usually fine, but configuring complex setups, such as cross-site replication, means juggling multiple files (one for the local stack, one for the cross-site stack and one for the relay configuration)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:26
+msgid "Starting with Infinispan 10 Alpha2 we have introduced a number of changes to make your life with JGroups configurations a lot easier."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:28
+#, no-wrap
+msgid "Default stacks"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:33
+msgid "Infinispan now comes with two pre-declared stacks: `tcp` and `udp`.  Using them is as simple as just referencing their names in the `<transport>` element."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:35
+#, no-wrap
+msgid "Inline stacks"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:39
+msgid "Inlining a stack means you can put the JGroups configuration inside the Infinispan one as follows:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:43
+msgid "You can use the full JGroups schema, and by using XML namespaces you get full validation."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:44
+#, no-wrap
+msgid "Stack inheritance"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:51
+msgid "Most of the time you want to reuse one of the pre-declared stacks but just override some of the parameters (e.g. discovery) to suit your environment. The following example creates a new `tcpgossip` stack which is based on the default tcp stack but replaces the discovery protocol with `TCPGOSSIP`:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:63
+msgid "In the above example you can see that we have enhanced the JGroups protocol declarations with two new attributes: `ispn:stack.combine` and `ispn:stack.position` which affect how and where protocol changes are applied on the parent configuration to obtain a new configuration.  `stack.combine` can be one of `COMBINE` (the default, possibly overriding any specified attributes), `REPLACE` (which completely replaces the protocol and resets all attributes), `REMOVE` (removes the protocol) and `INSERT_AFTER` (which places this protocol in the stack immediately after the protocol specified by `stack.position`)."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:64
+#, no-wrap
+msgid "Multiple stacks and Cross-site"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:73
+msgid "The inline configuration really shows its usefulness in cross-site configurations. In fact, the JGroups stack declaration has been extended with a special element which replaces the need for a separate relay XML file and can reference other stacks just by name. The following configuration uses the default `udp` stack for the local cluster transport and uses the default `tcp` stack for connecting to a remote site:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:81
+msgid "Having the entire configuration in a single place greatly simplifies management. Of course you can combine all of the above features to obtain the configuration you need for your environment. You can find more details and examples in the http://infinispan.org/docs/dev/user_guide/user_guide.html#cache_configuration_clustered[documentation].  Enjoy ! Tristan"
+msgstr ""

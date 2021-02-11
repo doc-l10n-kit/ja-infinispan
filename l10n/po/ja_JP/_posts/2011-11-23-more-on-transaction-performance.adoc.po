@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:12
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: 'More on transaction performance: use1PcForAutoCommitTransactions'\n"
+"permalink: /blog/:year/:month/:day/more-on-transaction-performance\n"
+"date: '2011-11-23T08:21:00.000-08:00'\n"
+"author: mmarkus\n"
+"tags: [ \"transactions\",\n"
+"\"performance\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8720447815938181630\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/11/more-on-transaction-performance.html\n"
+"---\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:13
+#, no-wrap
+msgid "What's _use1PcForAutoCommitTransactions_ all about?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:31
+msgid "Don't be scared the name, _use1PcForAutoCommitTransactions_ is a new feature (5.1.CR1) that does quite a cool thing: increases your transactions's performance.  Let me explain.  Before Infinispan 5.1 you could access the cache both transactional and non-transactional. Naturally the non-transactional access is faster and offers less consistency guarantees.But we don't support mixed access in Infinispan 5.1, so what what's to be done when you need the speed of non-transactional access and you are ready to trade some consistency guarantees for it? Well here is where _use1PcForAutoCommitTransactions_ helps you. What is does is forces an induced (_autoCommit=true_) transaction to commit in a single phase. So only 1 RPC instead of 2RPCs as in the case of a full 2 Phase Commit (2PC)."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:33
+#, no-wrap
+msgid "At what cost?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:40
+msgid "You might end up with inconsistent data if multiple transactions modify the same key concurrently. But if you know that's not the case, or you can live with it then _use1PcForAutoCommitTransactions_ will help your performance considerably."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:42
+#, no-wrap
+msgid "An example"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:47
+msgid "Let's say you do a simple put operation outside the scope of a transaction:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:52
+msgid "Now let's see how this would behave if the cache has several different transaction configurations:"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:53
+#, no-wrap
+msgid "Not using 1PC..."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:60
+msgid "The put will happen in two RPCs/steps: a prepare message is sent around and then a commit."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:62
+#, no-wrap
+msgid "Using 1PC..."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:69
+msgid "The put happens in one RPC as the prepare and the commit are merged.  Better performance."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:71
+#, no-wrap
+msgid "Not using autoCommit"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:78
+msgid "An exception is thrown, as this is a transactional cache and invocations must happen within the scope of a transaction."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:80
+msgid "Enjoy! Mircea"
+msgstr ""

@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-400cr4.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-400cr4.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 4.0.0.CR4\n"
+"permalink: /blog/:year/:month/:day/infinispan-400cr4\n"
+"date: '2010-02-02T09:22:00.000-08:00'\n"
+"author: msurtani\n"
+"tags: [ \"release candidate\", \"release\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5630558684887907493\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/02/infinispan-400cr4.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-400cr4.adoc:14
+msgid "In the run-up to preparing Infinispan for a public release, we've been busy on a number of interesting things, which have led to a decision to release another CR instead."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-400cr4.adoc:23
+msgid "The main driver behind this is that we've finally managed to get our hands on a sizeable cluster large enough to truly test scalability.  Expect interesting public benchmarks to be published soon, watch this space. (I recently http://infinispan.blogspot.com/2010/02/infinispan-as-local-cache.html[blogged about some local-mode benchmarks])"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-400cr4.adoc:33
+msgid "To enable such benchmarks, we've renewed efforts on building out the http://sourceforge.net/apps/trac/cachebenchfwk/wiki[Cache Benchmarking Framework]. This framework was originally a part of JBoss Cache's http://anonsvn.jboss.org/repos/jbosscache/benchmarks/benchmark-fwk/trunk/[source tree], and has now been extracted and migrated to SourceForge. We welcome others contributing additional plugins for more distributed cache/data grid products, as well as more tests and access patterns."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-400cr4.adoc:42
+msgid "Finally, extensive community feedback over the past few weeks have resulted in lots of bugs fixed and performance patches applied. Also, we finally have http://code.google.com/p/jclouds/[a beta release of JClouds] and an all-new http://fisheye.jboss.org/browse/Infinispan/trunk/cachestore/cloud/src/main/java/org/infinispan/loaders/cloud/CloudCacheStoreConfig.java?r=1430[CloudCacheStore] for folks to play with."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-400cr4.adoc:51
+msgid "The release is available in its http://www.jboss.org/infinispan/downloads[usual place.] I look forward to getting http://community.jboss.org/en/infinispan?view=discussions[feedback] on this release, this time truly a release candidate, i.e., one that, unchanged, could very well become the final release."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-400cr4.adoc:55
+msgid "Your last chance for feedback on this release, people!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-400cr4.adoc:59
+msgid "Cheers"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-400cr4.adoc:60
+msgid "Manik"
+msgstr ""

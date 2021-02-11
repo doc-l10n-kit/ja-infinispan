@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2012-03-12-jdk-8-backported-concurrenthashmaps-in.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-03-12-jdk-8-backported-concurrenthashmaps-in.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: JDK 8 backported ConcurrentHashMaps in Infinispan\n"
+"permalink: /blog/:year/:month/:day/jdk-8-backported-concurrenthashmaps-in\n"
+"date: '2012-03-12T12:12:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \"event\", \"performance\", \"community\", \"garbage collection\", \"concurrency\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5270338356031830164\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/03/jdk-8-backported-concurrenthashmaps-in.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-03-12-jdk-8-backported-concurrenthashmaps-in.adoc:20
+msgid "http://g.oswego.edu/[Doug Lea] and the folks on the http://altair.cs.oswego.edu/mailman/listinfo/concurrency-interest[concurrency-interest group] have been hard at work on an update of http://jcp.org/en/jsr/detail?id=166[JSR 166] (concurrency utilities) for Java 8 - called http://cs.oswego.edu/pipermail/concurrency-interest/2011-July/008084.html[JSR 166e].  These include some pretty impressive changes in a building-block we've all come to rely pretty heavily on, the http://docs.oracle.com/javase/1.5.0/docs/api/java/util/concurrent/ConcurrentHashMap.html[ConcurrentHashMap]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-03-12-jdk-8-backported-concurrenthashmaps-in.adoc:25
+msgid "One if the big drawbacks in the ConcurrentHashMap, since it was introduced in Java 5, has always been memory footprint.  It is kinda bulky, especially when compared to a regular HashMap - 1.6 kb in memory versus about 100 _bytes_!  Yes, these are for _empty_ maps."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-03-12-jdk-8-backported-concurrenthashmaps-in.adoc:34
+msgid "In Java 8, one of the improvements in the ConcurrentHashMap has been memory footprint - now closer to a regular HashMap.  In addition to that, the new Java 8 CHM performs better under concurrent load when compared to its original form.  See http://concurrency.markmail.org/message/kbqxdfapp5n6u7j3?q=JDK8+CHM[this discussion] and http://gee.cs.oswego.edu/cgi-bin/viewcvs.cgi/jsr166/src/jsr166e/ConcurrentHashMapV8.java?revision=1.37&view=markup[comments] in the proposed ConcurrentHashMapV8 sources for more details."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-03-12-jdk-8-backported-concurrenthashmaps-in.adoc:43
+msgid "So, http://www.jboss.org/infinispan/[Infinispan] makes pretty heavy use of ConcurrentHashMaps internally.  One change in the recently released http://infinispan.blogspot.com/2012/03/infinispan-512final-is-available-now.html[Infinispan 5.1.2.Final] is these internal CHMs are built using a factory, and we've included a version of the Java 8 CHM in Infinispan.  So by default, Infinispan uses the JDK's provided CHM.  But if you wish to force Infinispan to use the backported Java 8 CHM, all you need to do is include the following JVM parameter when you start Infinispan:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-03-12-jdk-8-backported-concurrenthashmaps-in.adoc:45
+msgid "-Dinfinispan.unsafe.allow_jdk8_chm=true"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-03-12-jdk-8-backported-concurrenthashmaps-in.adoc:52
+msgid "We'd love to hear what you have to say about this, in terms of memory footprint, garbage collection and overall performance.  Please use the Infinispan https://community.jboss.org/en/infinispan?view=discussions[user forums] to provide your feedback."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-03-12-jdk-8-backported-concurrenthashmaps-in.adoc:55
+msgid "Thanks Manik"
+msgstr ""

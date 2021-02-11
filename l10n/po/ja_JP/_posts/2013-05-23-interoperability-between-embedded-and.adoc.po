@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2013-05-23-interoperability-between-embedded-and.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-23-interoperability-between-embedded-and.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Interoperability between Embedded and Server Endpoints is here!\n"
+"permalink: /blog/:year/:month/:day/interoperability-between-embedded-and\n"
+"date: '2013-05-23T09:13:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"hotrod\", \"interoperability\", \"memcached\", \"rest\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8046586356126773629\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/05/interoperability-between-embedded-and.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-23-interoperability-between-embedded-and.adoc:16
+msgid "As mentioned by Mircea in the http://infinispan.blogspot.com.es/2013/05/infinispan-530beta2-is-out.html[Infinispan 5.3.0.Beta2 release blog post], interoperability between embedded Infinispan and remote Infinispan modes, including Hot Rod, Memcached and REST is now here!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-23-interoperability-between-embedded-and.adoc:21
+msgid "What this means is that you should be able to store data via one of the endpoints and retrieve data from a different one. So, I can store an Java object using the Java Hot Rod client, and I can retrieve it using the embedded interface."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-23-interoperability-between-embedded-and.adoc:26
+msgid "Documentation for this new interoperability, or compatibility mode, can be found https://docs.jboss.org/author/x/kYH2Aw[here], including the key aspects of this new functionality, configuration and links to some examples."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-23-interoperability-between-embedded-and.adoc:30
+msgid "As we head towards the later part of the Infinispan 5.3 series, if you're interested in accessing data in multiple ways, give it a go and let us know what you think!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-23-interoperability-between-embedded-and.adoc:32
+msgid "Cheers, Galder"
+msgstr ""

@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-10-31-native-json-and-node-811-baseline-in.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-10-31-native-json-and-node-811-baseline-in.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Native JSON and Node 8.11 baseline in Node.js client 0.6.0!!\n"
+"permalink: /blog/:year/:month/:day/native-json-and-node-811-baseline-in\n"
+"date: '2018-10-31T05:10:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \" release\", \"javascript\", \"node.js\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8447513288421285828\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/10/native-json-and-node-811-baseline-in.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-10-31-native-json-and-node-811-baseline-in.adoc:12
+msgid "Infinispan Node.js client 0.6.0 is out now!! :)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-10-31-native-json-and-node-811-baseline-in.adoc:16
+msgid "As well as updating the client so that it understand the latest Hot Rod protocols in Infinispan 9.4.0.Final, this version comes with native JSON object support."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-10-31-native-json-and-node-811-baseline-in.adoc:22
+msgid "To make the Node.js client backwards compatible, the client still treats key/value pairs as String by default. If you want to use native JSON objects, you have to explicitly configure the Node.js client to do so (see https://github.com/infinispan/js-client#supported-data-types[example])."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-10-31-native-json-and-node-811-baseline-in.adoc:28
+msgid "Starting with this version, we've upgraded the base Node version requirement to 8.11, which is the latest stable release branch at the time of writing. With such upgrade, the client no longer needs to use external promise dependency which was know to https://issues.jboss.org/browse/HRJS-63[leak]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-10-31-native-json-and-node-811-baseline-in.adoc:35
+msgid "If you're a Node.js user and want to store data remotely in Infinispan server instances, please give the client a go and tell us what you think of it via our https://developer.jboss.org/en/infinispan/content[forum], via our https://issues.jboss.org/projects/HRJS[issue tracker] or via https://zulipchat.com/[Zulip] on https://infinispan.zulipchat.com/[Infinispan channel]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-10-31-native-json-and-node-811-baseline-in.adoc:37
+msgid "Cheers Galder"
+msgstr ""

@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2017-11-21-infinispan-spark-connector-06-is-out.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-11-21-infinispan-spark-connector-06-is-out.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan Spark connector 0.6 is out!\n"
+"permalink: /blog/:year/:month/:day/infinispan-spark-connector-06-is-out\n"
+"date: '2017-11-21T11:58:00.000-08:00'\n"
+"author: gustavonalle\n"
+"tags: [ \"spark\" , \"release\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6192432962439970774\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/11/infinispan-spark-connector-06-is-out.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-11-21-infinispan-spark-connector-06-is-out.adoc:14
+msgid "This is a http://infinispan.org/integrations/[small release] to align with Infinispan 9.2.x and Spark 2.2, and it also has an improvement to the Java API related to filterByQuery."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-11-21-infinispan-spark-connector-06-is-out.adoc:22
+msgid "For a full list of changes, please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12316820&version=12333973[release notes]. Make sure to also check the https://github.com/infinispan/infinispan-spark/blob/master/README.md[improved documentation] and the https://github.com/infinispan/infinispan-spark/tree/master/examples/twitter[Twitter demo]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-11-21-infinispan-spark-connector-06-is-out.adoc:24
+msgid "Enjoy!"
+msgstr ""

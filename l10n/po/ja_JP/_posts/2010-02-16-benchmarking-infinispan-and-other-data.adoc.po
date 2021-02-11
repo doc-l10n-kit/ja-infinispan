@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2010-02-16-benchmarking-infinispan-and-other-data.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-16-benchmarking-infinispan-and-other-data.adoc:11
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Benchmarking Infinispan and other Data Grid software\n"
+"permalink: /blog/:year/:month/:day/benchmarking-infinispan-and-other-data\n"
+"date: '2010-02-16T23:23:00.000-08:00'\n"
+"author: mmarkus\n"
+"tags: [ \"benchmark\" ]\n"
+"thumbnail: http://2.bp.blogspot.com/_ISQfVF8ALAQ/S3vFPokOXGI/AAAAAAAABvw/LljfAUuIWKo/s72-c/Replicated_PUT.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4560166791217568692\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/02/benchmarking-infinispan-and-other-data.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-16-benchmarking-infinispan-and-other-data.adoc:20
+msgid "Why benchmarking? Benchmarking is an important aspect for us: we want to monitor our performance improvements between releases and compare ourselves with other products as well. Benchmarking a data grid product such as Infinispan is not a trivial task: one needs to start multiple processes over multiple machines, coordinate between them to make sure everything runs at once and centralize reports. Then there is the question of what access patterns the benchmark should stress."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-16-benchmarking-infinispan-and-other-data.adoc:26
+msgid "#*Introducing the cache benchmarking framework (CBF)  *#What we've come up with is a tool to help us run our benchmarks and generate reports and charts. And more:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-16-benchmarking-infinispan-and-other-data.adoc:27
+msgid "simple to configure (see config sample bellow)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-16-benchmarking-infinispan-and-other-data.adoc:29
+msgid "simple to run. We supply a set of .sh scripts that connect to remote nodes and start cluster instances for you."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-16-benchmarking-infinispan-and-other-data.adoc:32
+msgid "open source. Everybody can download it, read the code and run the benchmarks by themselves. Published results can be easily verified and validated."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-16-benchmarking-infinispan-and-other-data.adoc:35
+msgid "extensible. It's easy to extend the framework in order to benchmark against additional products. It's also easy to write different data access patterns to be tested."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-16-benchmarking-infinispan-and-other-data.adoc:38
+msgid "scalable. At this moment we've used CBF for benchmarking up to 62 nodes."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-16-benchmarking-infinispan-and-other-data.adoc:46
+msgid "users can test products, configurations, and access patterns on _their own hardware_ and network. This is crucial, since it means educated decisions can be made based on _relevant_ and _use-case specific_ statistics and measurements. Further, the benchmark can even be used to compare performance of different configurations and tuning parameters of a single data grid product, to help users choose a configuration that works best for them"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-16-benchmarking-infinispan-and-other-data.adoc:48
+msgid "Below is a sample configuration file and generated report."
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2010-02-16-benchmarking-infinispan-and-other-data.adoc:52
+#, no-wrap
+msgid "<bench-config>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2010-02-16-benchmarking-infinispan-and-other-data.adoc:54
+#, no-wrap
+msgid "  <master bindAddress=\"${127.0.0.1:master.address}\" port=\"${2103:master.port}\"/>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2010-02-16-benchmarking-infinispan-and-other-data.adoc:63
+#, no-wrap
+msgid ""
+"  <benchmark initSize=\"2\" maxSize=\"${4:slaves}\" increment=\"1\">\n"
+"    <DestroyWrapper runOnAllSlaves=\"true\"/>\n"
+"    <StartCluster/>\n"
+"    <ClusterValidation partialReplication=\"false\"/>\n"
+"    <Warmup operationCount=\"1000\"/>\n"
+"    <WebSessionBenchmark numberOfRequests=\"2500\" numOfThreads=\"2\"/>\n"
+"    <CsvReportGeneration/>\n"
+"  </benchmark>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2010-02-16-benchmarking-infinispan-and-other-data.adoc:74
+#, no-wrap
+msgid ""
+"  <products>\n"
+"    <jbosscache3>\n"
+"      <config name=\"mvcc/mvcc-repl-sync.xml\"/>\n"
+"    </jbosscache3>\n"
+"    <infinispan4>\n"
+"      <config name=\"repl-sync.xml\"/>\n"
+"      <config name=\"dist-sync.xml\"/>\n"
+"      <config name=\"dist-sync-l1.xml\"/>\n"
+"    </infinispan4>\n"
+"  </products>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2010-02-16-benchmarking-infinispan-and-other-data.adoc:85
+#, no-wrap
+msgid ""
+"  <reports>\n"
+"    <report name=\"Replicated\">\n"
+"      <item product=\"infinispan4\" config=\"repl-sync.xml\"/>\n"
+"      <item product=\"jbosscache3\" config=\"mvcc/mvcc-repl-sync.xml\"/>\n"
+"    </report>\n"
+"    <report name=\"Distributed\">\n"
+"      <item product=\"infinispan4\" config=\"dist-*\"/>\n"
+"    </report>\n"
+"    <report name=\"All\" includeAll=\"true\"/>\n"
+"  </reports>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2010-02-16-benchmarking-infinispan-and-other-data.adoc:87
+#, no-wrap
+msgid "</bench-config>\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-16-benchmarking-infinispan-and-other-data.adoc:92
+msgid "And this is what a generated charts look like:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-16-benchmarking-infinispan-and-other-data.adoc:94
+msgid "http://2.bp.blogspot.com/_ISQfVF8ALAQ/S3vFPokOXGI/AAAAAAAABvw/LljfAUuIWKo/s1600-h/Replicated_PUT.png[image:http://2.bp.blogspot.com/_ISQfVF8ALAQ/S3vFPokOXGI/AAAAAAAABvw/LljfAUuIWKo/s400/Replicated_PUT.png[image]]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-16-benchmarking-infinispan-and-other-data.adoc:101
+msgid "Where can you find CBF? CBF can be found https://sourceforge.net/apps/trac/cachebenchfwk/wiki[here]. For a quick way of getting up to speed with it we recommend the https://sourceforge.net/apps/trac/cachebenchfwk/wiki/FiveMinutesTutorial[5 minutes tutorial]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-16-benchmarking-infinispan-and-other-data.adoc:103
+msgid "Enjoy!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-16-benchmarking-infinispan-and-other-data.adoc:105
+msgid "Mircea"
+msgstr ""

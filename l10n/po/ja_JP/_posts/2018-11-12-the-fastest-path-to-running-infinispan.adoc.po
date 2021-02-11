@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-11-12-the-fastest-path-to-running-infinispan.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-12-the-fastest-path-to-running-infinispan.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: The fastest path to running Infinispan on OpenShift!\n"
+"permalink: /blog/:year/:month/:day/the-fastest-path-to-running-infinispan\n"
+"date: '2018-11-12T00:41:00.000-08:00'\n"
+"author: galder\n"
+"tags: [ \" openshift\", \"minishift\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-9055955096757720557\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/11/the-fastest-path-to-running-infinispan.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-12-the-fastest-path-to-running-infinispan.adoc:15
+msgid "Creating an Infinispan Server cluster in OpenShift has never been easier! We've just given the OpenShift templates for Infinispan server their biggest makeover yet which should help both Infinispan and OpenShift users:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-12-the-fastest-path-to-running-infinispan.adoc:22
+msgid "The https://github.com/infinispan/infinispan-openshift-templates[repository] has been simplified and flattened out to only leave essential information. https://www.okd.io/minishift/[Minishift] is the preferred way to get started with Infinispan and OpenShift, so we've tailored the instructions for this set up."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-12-the-fastest-path-to-running-infinispan.adoc:28
+msgid "OpenShift templates are now https://github.com/infinispan/infinispan-openshift-templates/blob/master/infinispan-ephemeral.yaml[YAML based] which is less verbose, but more importantly, allows Infinispan Server XML configuration to be shown as-is. This makes it easier to directly modify the XML in the template itself."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-12-the-fastest-path-to-running-infinispan.adoc:34
+msgid "The fastest way to get started with Infinispan and OpenShift is to simply fire up Minishift, set a profile, checkout our Infinipan OpenShift https://github.com/infinispan/infinispan-openshift-templates[repository] and then call:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-12-the-fastest-path-to-running-infinispan.adoc:37
+msgid "oc create -f infinispan-ephemeral.yaml oc new-app infinispan-ephemeral"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-12-the-fastest-path-to-running-infinispan.adoc:43
+msgid "These two simple steps will get you a single node Infinispan Server running! A more detailed getting started guide can be found in the repository's https://github.com/infinispan/infinispan-openshift-templates/blob/master/README.asciidoc[README] file."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-12-the-fastest-path-to-running-infinispan.adoc:46
+msgid "Go and try it out and let us know what you think. You can find us on this https://infinispan.zulipchat.com/[Zulip chat] :)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-12-the-fastest-path-to-running-infinispan.adoc:48
+msgid "Cheers, Galder"
+msgstr ""

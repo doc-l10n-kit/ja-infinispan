@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/use-cases/backup-across-data-centers.md:4
+#, no-wrap
+msgid ""
+"layout: use-case-single\n"
+"title: Backup Across Data Centers\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/use-cases/backup-across-data-centers.md:7
+#, no-wrap
+msgid "Infinispan clusters running in different geographical locations can form global clusters to back up your data across sites. If sites go offline clients can immediately switch to an available cluster, making sure data center faults do not cause service interruptions.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/use-cases/backup-across-data-centers.md:9
+#, no-wrap
+msgid "When using the Infinispan Operator with Kubernetes environments such as Red Hat OpenShift,  cross-site replication capabilities make your data ready for hybrid and multi cloud deployments.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/use-cases/backup-across-data-centers.md:10
+#, no-wrap
+msgid "Infinispan also guarantees data consistency when using cross-site replication, even in cases where clients make concurrent writes at different locations that use asynchronous replication. So your data is always there and always accurate, no matter where you’re running.\n"
+msgstr ""

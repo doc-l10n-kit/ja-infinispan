@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2015-10-16-stored-script-execution.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-16-stored-script-execution.adoc:16
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Stored Script Execution\n"
+"permalink: /blog/:year/:month/:day/stored-script-execution\n"
+"date: '2015-10-16T02:22:00.000-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \"hotrod\",\n"
+"\"remote\",\n"
+"\"scripting\",\n"
+"\"javascript\",\n"
+"\"server\",\n"
+"\"nashorn\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1897146103126485394\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/10/stored-script-execution.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-16-stored-script-execution.adoc:19
+msgid "One of the questions we get asked a lot is: when will I be able to run Map/Reduce and DistExec jobs over HotRod."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-16-stored-script-execution.adoc:21
+msgid "I'm happy to say: now !"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-16-stored-script-execution.adoc:32
+msgid "Infinispan Server comes with Stored Script Execution which means that remote clients can invoke named scripts on the server. If you're familiar with the concept of Stored Procedures of the SQL world, then you already have an idea of what this feature is about. The types of scripts you can run are those handled by Java's scripting API. Out of the box this means Javascript (which uses either the Nashorn engine on JDK 8+), but you can add many more (Groovy, Scala, JRuby, Jython, Lua, etc). Scripts are stored in a dedicated script cache (\"___scriptcache\")  so that they can be easily created/modified using the standard cache operations (put/get/etc.)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-16-stored-script-execution.adoc:34
+msgid "Here's an example of a very simple script:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-16-stored-script-execution.adoc:43
+msgid "The script above just obtains the default cache, retrieves the value with key 'a' and returns it (the Javascript script engine uses the last evaluated expression of a script as its return value).  The first line of the script is special: it looks like a comment, but, like the first line in Unix shell scripts, it actually provides instructions on how the script should be run in the form of properties."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-16-stored-script-execution.adoc:49
+msgid "The mode property instructs the execution engine where we want to run the script: _local_ for running the script on the node that is handling the request and _distributed_ for running the script wrapped by a distributed executor. Bear in mind that you can certainly use clustered operations in _local_ mode."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-16-stored-script-execution.adoc:52
+msgid "Scripts can also take named parameters which will \"appear\" as bindings in the execution scope."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-16-stored-script-execution.adoc:55
+msgid "Invoking it from a Java HotRod client would look like this:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-16-stored-script-execution.adoc:61
+msgid "Server-side scripts will be evolving quite a bit in Infinispan 8.1 where we will add support for the broader concept of server-side tasks which will include both scripts and deployable code which can be invoked in the same way, all managed and configured by the upcoming changes in the Infinispan Server console."
+msgstr ""

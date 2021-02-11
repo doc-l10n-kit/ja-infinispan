@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Microservices with Wildfly Swarm and Infinispan\n"
+"permalink: /blog/:year/:month/:day/microservices-with-wildfly-swarm-and\n"
+"date: '2016-10-11T00:20:00.001-07:00'\n"
+"author: slaskawiec\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6101441236279944854\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/10/microservices-with-wildfly-swarm-and.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:12
+msgid "Everybody loves Microservices, right?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:17
+msgid "Today, all of us have slightly different understanding what Microservices are but, among all those definitions and attributes, there's probably one thing that fits them all - they need to be [.underline]#simple#."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:21
+msgid "So let's have a look at some practical example of creating a REST service with Infinispan as a storage wired together using CDI. We will use http://wildfly-swarm.io/[Wildfly Swarm] as a running platform."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:23
+#, no-wrap
+msgid "Bootstrapping new project"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:30
+msgid "A good way to start a new Wildfly Swarm project is to http://wildfly-swarm.io/generator/[generate it]. The only requirement here is to add \"JAX-RS with CDI\" and \"JPA\" as dependencies."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:35
+msgid "The next step is to add _infinispan-embedded_ artifact. The final _pom.xml_ should look like the following:"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:40
+#, no-wrap
+msgid "Writing some code"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:47
+msgid "http://infinispan.org/docs/dev/user_guide/user_guide.html#cdi_support[Infinispan CDI Extension] will take care of bootstrapping Infinispan, so we can dive directly into JAX-RS code:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:55
+msgid "And that's it!"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:58
+#, no-wrap
+msgid "What's next?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:67
+msgid "If you'd like to have a look at the complete example, check out https://github.com/slaskawi/infinispan-wf-swarm-example[my repository]. The code is based on fresh build from Infinispan master branch which contains lots of improvements for CDI. You might build it yourself or just wait for _9.0.0.Beta1_."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:70
+msgid "Have a lot of fun with Microservices!"
+msgstr ""

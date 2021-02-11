@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2010-12-17-announcing-project-radargun.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-12-17-announcing-project-radargun.adoc:13
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Announcing project Radargun\n"
+"permalink: /blog/:year/:month/:day/announcing-project-radargun\n"
+"date: '2010-12-17T03:00:00.000-08:00'\n"
+"author: mmarkus\n"
+"tags: [ \"radargun\",\n"
+"\"benchmarks\",\n"
+"\"cache benchmark framework\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8622280226275112053\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/12/announcing-project-radargun.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-12-17-announcing-project-radargun.adoc:15
+msgid "Hi all,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-12-17-announcing-project-radargun.adoc:27
+msgid "Radargun is a tool we've developed and used for benchmarking Infinispan's performance both between releases and compared with other similar products. Initially we shipped under the (poorly named) Cache Benchmark Framework.  Due to increase community interest and the fact that this reached a certain maturity (we used it for benchmarking 100+ nodes clusters) we decided to revamp it a little and also come with another name: Radargun.  You can read more about it http://radargun.sourceforge.net/[here]. A good start is the https://sourceforge.net/apps/trac/radargun/wiki/FiveMinutesTutorial[5MinutesTutorial]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-12-17-announcing-project-radargun.adoc:29
+msgid "Cheers, Mircea"
+msgstr ""

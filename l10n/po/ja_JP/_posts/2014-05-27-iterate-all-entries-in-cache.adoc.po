@@ -1,0 +1,225 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Iterate all the entries in the cache\n"
+"permalink: /blog/:year/:month/:day/iterate-all-entries-in-cache\n"
+"date: '2014-05-27T13:17:00.001-07:00'\n"
+"author: infinispan\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8467800185644192234\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/05/iterate-all-entries-in-cache.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:20
+msgid "Dear all, with the release of http://blog.infinispan.org/2014/05/infinispan-700alpha4-is-out.html[7.0.0.Alpha4] it was mentioned that we now support Distributed Entry Iterator which allows for iteration over all entries in the cache.  Iterating over all the entries in the cache has always been an highly demanded community feature. Existing methods (entrySet, keySet, size) were not a good fit because of potential OOM and were causing a lot of user annoyance. Voila a nice distributed solution :-)  https://issues.jboss.org/browse/ISPN-4222[ISPN-4222]"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:22
+#, no-wrap
+msgid "Public Interface Additions"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:26
+msgid "The added public API changes are as follows:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:27
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:35
+#, no-wrap
+msgid "===\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:29
+msgid "AdvancedCache"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:34
+msgid "This returns an EntryIterable that can be used directly as an Iterable over the contents or also to pass a converter to convert the resulting value that is returned to another value or even type itself."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:37
+msgid "EntryIterable"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:44
+msgid "EntryIterable also implements AutoCloseable and as such should be closed after iteration or if an exception case occurs.  Thus the Java 7 try with resources syntax should be used."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:49
+msgid "Note that EntryIterable has a method that allows you to also provide an optional Converter to change the values to another type if desired. This conversion is done on the remote nodes and is preferable to be used when the values can be reduced in size to reduce overall payload size."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:51
+msgid "An example of how to perform the iteration with any cache type."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:54
+#, no-wrap
+msgid "General Algorithm"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:67
+msgid "Essentially when the iterator is generated it will start an iteration process on the local node to retrieve all values local to that node (including from loader) and also a remote thread that will do the same thing on nodes one at at time. As values are retrieved they are made available to the iterator for processing. The chunkSize configuration for the State Transfer configuration will limit how many values are available to be waiting to be iterated on at a time (loader, local and remotely retrieved values count towards this). This is important to limit how many values are stored in memory when both using a loader and in distributed caches to help prevent an OOM condition from occurring."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:75
+msgid "The provided KeyValueFilter is used on the various nodes to limit what entries are returned to the iterator and are sent to the remote node(s)  when using a Distributed cache to limit how many results are returned. A converter is similar to the KeyValueFilter but it is ran on any entry that passes the filter to possibly converter the value to another such as a projection view if desired. Both the KeyValueFilter and Converter must be serializable for proper operation!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:80
+msgid "The operation is also aware of rehash events occurring, since this could alter which node owns what entry. This is handled automatically by the iterator by tracking what segments have moved and requesting them from the other node if needed."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:82
+#, no-wrap
+msgid "Local, Replicated and Invalidation Cache Optimizations"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:87
+msgid "These caches have some additional optimizations from above in the following"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:89
+msgid "The KeyValueFilter and Converter do not need to be Serializable"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:90
+msgid "KeyValueFilter optimization is only relevant when using a loader"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:92
+msgid "Converter optimization is minimial, the main benefit being it allows code to be the same between cache types"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:93
+#, no-wrap
+msgid "Gotchas"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:98
+msgid "This is just to talk about some various cases that users should be aware of."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:99
+#, no-wrap
+msgid "Transactional Behaviour"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:104
+msgid "When using the entry iterator in a transactional context, all of the values are retrieved outside of the current transaction if there is one, and no transaction is started if there isn't one."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:109
+msgid "This is done due to the behaviour of Repeatable Read isolation level.  If not then then all of the retrieved values would have to be stored locally in the current context for that transaction, which would most likely cause an OOM condition in many cases."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:110
+#, no-wrap
+msgid "Removal using Iterator"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:116
+msgid "Since the iteration process does not take part of transactions, the remove operation of the iterator is not supported as well.  If desired the user should just invoke the remove method from the Cache itself to do this."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:117
+#, no-wrap
+msgid "Consistency Guarantees"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:127
+msgid "This iterator only guarantees consistency in regards to each value independently. That is it will show a view of each value that existed during the period of when the iteration began and when it completed.  Thus it is entirely possible to see a subset of values if say a transaction was committed at the same time as iteration. This would require additional isolation level changes outside of the scope of the iterator to implement this, such as adding Serializable isolation level."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:128
+#, no-wrap
+msgid "Return type change"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:134
+msgid "Before ISPN 7 is released, it is still needed to change the return type from Map.Entry to instead be CacheEntry as users may need the Metadata stored with the entry as well. This will come in https://issues.jboss.org/browse/ISPN-4326[ISPN-4326]"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:136
+#, no-wrap
+msgid "Try it out"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:141
+msgid "Let us know if and how you guys plan on using this and any feedback would be appreciated!"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:143
+#, no-wrap
+msgid "*Update* Oct 31, 2014"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:149
+msgid "As of Infinispan 7.0.0.Final the Entry Iterator now properly supports transactional data and thus will show the most up to date value if there is a pending change (however read values are not brought into the context to prevent OOM errors)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:153
+msgid "The remove operation on the iterator is fully supported and will perform the operation in the current transactional context if there is one.  Caution though as you must use the iterator in the thread it was retrieved from for it to work properly."
+msgstr ""

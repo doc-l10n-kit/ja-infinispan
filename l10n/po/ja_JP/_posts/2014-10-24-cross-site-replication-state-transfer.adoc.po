@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2014-10-24-cross-site-replication-state-transfer.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-10-24-cross-site-replication-state-transfer.adoc:12
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: 'Cross-Site Replication: state transfer is here!'\n"
+"permalink: /blog/:year/:month/:day/cross-site-replication-state-transfer\n"
+"date: '2014-10-24T08:59:00.002-07:00'\n"
+"author: pruivo\n"
+"tags: [ \"state transfer\",\n"
+"\"cross site replication\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6391498188955029086\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/10/cross-site-replication-state-transfer.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-10-24-cross-site-replication-state-transfer.adoc:14
+msgid "Hello community."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-10-24-cross-site-replication-state-transfer.adoc:22
+msgid "Since the initial release of Cross-Site Replication, the state transfer between sites was really needed. When a new site is brought online, there was not way to synchronize the data between them. Finally, these days are over and it is possible synchronize geographically replicated sites. How to use is described in http://infinispan.org/docs/7.0.x/user_guide/user_guide.html#_state_transfer_between_sites[Infinispan's Manual]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-10-24-cross-site-replication-state-transfer.adoc:25
+msgid "For the curious, the solution is described https://github.com/infinispan/infinispan/wiki/Design-For-Cross-Site-Replication#state-transfer-between-sites-version-2[here]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-10-24-cross-site-replication-state-transfer.adoc:31
+msgid "Any question can be asked in the https://developer.jboss.org/en/infinispan/content?filterID=contentstatus%5Bpublished%5D~objecttype~objecttype%5Bthread%5D[forum], mailing list or directly with us in the irc://irc.freenode.org/infinispan[IRC]. If you found a bug please report it in https://issues.jboss.org/browse/ISPN/[here]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-10-24-cross-site-replication-state-transfer.adoc:33
+msgid "Happy coding, fellows."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-10-24-cross-site-replication-state-transfer.adoc:34
+msgid "Infinispan Team."
+msgstr ""

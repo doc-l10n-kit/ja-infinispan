@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 10.0.0.Beta2 and 9.4.8\n"
+"permalink: /blog/:year/:month/:day/infinispan-1000beta2-and-948\n"
+"date: '2019-02-21T08:31:00.000-08:00'\n"
+"author: ttarrant\n"
+"tags: [ \" beta\", \"release\", \"final\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2539171124591722906\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/02/infinispan-1000beta2-and-948.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:12
+msgid "Hello Infinispan users,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:17
+msgid "What ? You're wondering where Beta1 is ? And what happened to 9.4.7 ? Unfortunately, those releases, while tagged and available on your closest Maven Central mirror will only work with Java 11, so we had to rebuild and re-release."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:19
+msgid "So, without further ado, I give you 10.0.0.Beta2 and 9.4.8.Final."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:26
+msgid "The first change I should outline is one that will impact you if you are building Infinispan from source. The previous build structure required having both JDK 8 and JDK 11 in order to compile a release which worked on both. In order to simplify the build process, as well as ensuring that the output is always consistent we now require Java 11 only. Don't worry: the resulting binaries will still work on Java 8 and greater."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:28
+#, no-wrap
+msgid "10.0.0.Beta2"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:32
+msgid "The first beta of our next major release contains a number of enhancements:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:39
+msgid "[https://issues.jboss.org/browse/ISPN-9847[ISPN-9847]] - Extend configuration to allow inline JGroups configuration and inheritance [https://issues.jboss.org/browse/ISPN-9699[ISPN-9699]] - Cluster member owning no data [https://issues.jboss.org/browse/ISPN-8124[ISPN-8124]] - ServerNG: Initial implementation"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:41
+msgid "We will soon be posting about these features individually."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:46
+msgid "The work on persistent storage long-term compatibility is progressing with [https://issues.jboss.org/browse/ISPN-9845[ISPN-9845]] - Stop exposing InternalMetadata via the persistence SPI"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:48
+msgid "Notable fixes:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:51
+msgid "[https://issues.jboss.org/browse/ISPN-4075[ISPN-4075]] - State transfer should preserve the creation timestamp of entries"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:56
+msgid "And if you were still using the old Distributed Executor, that has been finally removed in [https://issues.jboss.org/browse/ISPN-9784[ISPN-9784]] - Remove Distributed Executor"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:58
+#, no-wrap
+msgid "9.4.8.Final"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:62
+msgid "Our latest point release contains lots of bug fixes and minor enhancements."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:68
+msgid "As usual you can ask questions on the https://developer.jboss.org/en/infinispan/content[forum], https://stackoverflow.com/questions/tagged/?tagnames=infinispan&sort=newest[StackOverflow] and interactively on our http://infinispan.zulipchat.com/[Zulip Chat].  Please report any bugs you find on our https://issues.jboss.org/projects/ISPN/summary[Issue Tracker]"
+msgstr ""

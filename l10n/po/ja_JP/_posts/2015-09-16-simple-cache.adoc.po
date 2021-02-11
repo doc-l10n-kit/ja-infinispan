@@ -1,0 +1,322 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Simple cache\n"
+"permalink: /blog/:year/:month/:day/simple-cache\n"
+"date: '2015-09-16T01:53:00.001-07:00'\n"
+"author: infinispan\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5484858756758012613\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/09/simple-cache.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:14
+msgid "Infinispan *local caches* have several features that make it more than just a map - expiration and eviction, listeners, statistics, transactions, cache stores and so forth. However, this comes at a price"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:16
+msgid "due to all the hooks and object allocation, plain ConcurrentHashMap is faster than local cache."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:23
+msgid "There are applications that need something in between - great performance but some of those features, too. In our case, the motivation were internal caches in Hibernate Second Level Cache. Therefore Infinispan *8.0.1.Final* brings the *simple cache* - alternative implementation of the _AdvancedCache_ interface optimized for maximum performance when you need just the basics."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:25
+msgid "The table below shows which features are available in simple cache:"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2015-09-16-simple-cache.adoc:29
+#, no-wrap
+msgid "Feature"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2015-09-16-simple-cache.adoc:30
+#, no-wrap
+msgid "Availability"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2015-09-16-simple-cache.adoc:30
+#, no-wrap
+msgid "Basic map-like API"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2015-09-16-simple-cache.adoc:31
+#: upstream/_posts/2015-09-16-simple-cache.adoc:32
+#: upstream/_posts/2015-09-16-simple-cache.adoc:33
+#: upstream/_posts/2015-09-16-simple-cache.adoc:34
+#: upstream/_posts/2015-09-16-simple-cache.adoc:35
+#: upstream/_posts/2015-09-16-simple-cache.adoc:36
+#: upstream/_posts/2015-09-16-simple-cache.adoc:37
+#, no-wrap
+msgid "✔"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2015-09-16-simple-cache.adoc:31
+#, no-wrap
+msgid "Cache listeners (non-clustered)"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2015-09-16-simple-cache.adoc:32
+#, no-wrap
+msgid "Expiration"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2015-09-16-simple-cache.adoc:33
+#, no-wrap
+msgid "Eviction"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2015-09-16-simple-cache.adoc:34
+#, no-wrap
+msgid "Security"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2015-09-16-simple-cache.adoc:35
+#, no-wrap
+msgid "JMX access"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2015-09-16-simple-cache.adoc:36
+#, no-wrap
+msgid "Statistics"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2015-09-16-simple-cache.adoc:37
+#, no-wrap
+msgid "Transactions"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2015-09-16-simple-cache.adoc:38
+#: upstream/_posts/2015-09-16-simple-cache.adoc:39
+#: upstream/_posts/2015-09-16-simple-cache.adoc:40
+#: upstream/_posts/2015-09-16-simple-cache.adoc:41
+#: upstream/_posts/2015-09-16-simple-cache.adoc:42
+#: upstream/_posts/2015-09-16-simple-cache.adoc:43
+#: upstream/_posts/2015-09-16-simple-cache.adoc:44
+#: upstream/_posts/2015-09-16-simple-cache.adoc:45
+#: upstream/_posts/2015-09-16-simple-cache.adoc:46
+#, no-wrap
+msgid "✘"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2015-09-16-simple-cache.adoc:38
+#, no-wrap
+msgid "Invocation batching"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2015-09-16-simple-cache.adoc:39
+#, no-wrap
+msgid "Persistence (cache stores and loader)"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2015-09-16-simple-cache.adoc:40
+#, no-wrap
+msgid "Map Reduce Framework"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2015-09-16-simple-cache.adoc:41
+#, no-wrap
+msgid "Distributed Executors Framework"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2015-09-16-simple-cache.adoc:42
+#, no-wrap
+msgid "Custom interceptors"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2015-09-16-simple-cache.adoc:43
+#, no-wrap
+msgid "Indexing (querying)"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2015-09-16-simple-cache.adoc:44
+#, no-wrap
+msgid "Compatibility (embedded/server)"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2015-09-16-simple-cache.adoc:45
+#, no-wrap
+msgid "Store as binary"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:52
+msgid "Configuring simple cache is as simple as adding one attribute to the XML configuration:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:57
+msgid "While configuration schema allows to set up the unsupported features, doing so results in an exception when the cache is created."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:59
+msgid "You can also configure simple cache programmatically:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:66
+msgid "So, what kind of performance improvement can you expect? We had run basic (single-threaded) benchmark using http://openjdk.java.net/projects/code-tools/jmh/[JMH] and this is what we got:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:69
+msgid "Implementation"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:71
+msgid "get() (operations/s)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:73
+msgid "put() (operations/s)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:75
+msgid "ConcurrentHashMap"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:77
+msgid "128,354,135"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:79
+#: upstream/_posts/2015-09-16-simple-cache.adoc:85
+#: upstream/_posts/2015-09-16-simple-cache.adoc:93
+#: upstream/_posts/2015-09-16-simple-cache.adoc:99
+#: upstream/_posts/2015-09-16-simple-cache.adoc:107
+#: upstream/_posts/2015-09-16-simple-cache.adoc:113
+msgid "±"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:81
+msgid "2,178,755"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:83
+msgid "33,980,088"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:87
+msgid "28,487"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:89
+msgid "Simple cache"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:91
+msgid "86,969,897"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:95
+msgid "738,935"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:97
+msgid "14,044,642"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:101
+msgid "14,280"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:103
+msgid "Local cache"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:105
+msgid "17,280,018"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:109
+msgid "361,910"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:111
+msgid "2,267,850"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:115
+msgid "44,814"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:120
+msgid "This gives us about 5✕ speedup for reads and 6✕ for writes. Your mileage may vary, but it's certain that simple cache provides substantial performance benefits."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-16-simple-cache.adoc:123
+msgid "So, if your use-case allows it, try out simple cache and let us know.  It's as simple as one configuration attribute!"
+msgstr ""

@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2013-05-30-infinispan-530cr1-is-out.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-30-infinispan-530cr1-is-out.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 5.3.0.CR1 is out!\n"
+"permalink: /blog/:year/:month/:day/infinispan-530cr1-is-out\n"
+"date: '2013-05-30T12:16:00.000-07:00'\n"
+"author: mmarkus\n"
+"tags: [ \"cachestore\", \"jpa\", \"mongodb\", \"loader\", \"release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3023424489329992094\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-530cr1-is-out.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-30-infinispan-530cr1-is-out.adoc:13
+msgid "Besides a handful of fixes, this release contains two very important contributions:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-30-infinispan-530cr1-is-out.adoc:17
+msgid "a http://www.mongodb.org/[mongoDB] cache store which allows using Infinispan  as a cache on top of a mongodb instance. Courtesy of  http://fr.linkedin.com/in/guillaumescheibel[Guillaume Scheibel]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-30-infinispan-530cr1-is-out.adoc:22
+msgid "a http://www.oracle.com/technetwork/java/javaee/tech/persistence-jsp-140049.html[JPA] based cache store that allows an easy setup for Infinispan as a cache in front of a database. Courtesy of http://www.linkedin.com/in/rayjtsang[Ray Tsang]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-30-infinispan-530cr1-is-out.adoc:24
+msgid "Please stay tuned for blogs detailing these features."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-30-infinispan-530cr1-is-out.adoc:28
+msgid "For a complete list of features included in this release refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12321180[release notes]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-30-infinispan-530cr1-is-out.adoc:34
+msgid "Visit our http://www.jboss.org/infinispan/downloads[downloads] section to find the latest release and if you have any questions please check our http://www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-30-infinispan-530cr1-is-out.adoc:38
+msgid "Cheers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-05-30-infinispan-530cr1-is-out.adoc:39
+msgid "Mircea"
+msgstr ""

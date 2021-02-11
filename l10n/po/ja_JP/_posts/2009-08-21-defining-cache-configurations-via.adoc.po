@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Defining cache configurations via CacheManager in Beta1\n"
+"permalink: /blog/:year/:month/:day/defining-cache-configurations-via\n"
+"date: '2009-08-21T03:18:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"configuration\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7730713046943098622\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/08/defining-cache-configurations-via.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:15
+msgid "Infinispan's first beta release is just around the corner and in preparation, I'd like to introduce to the Infinispan users an important API change in org.infinispan.manager.CacheManager class that will be part of this beta release."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:20
+msgid "As a result of the development of the Infinispan second level cache provider for Hibernate, we have discovered that the CacheManager API for definition and retrieval of Configuration instances was a bit limited.  So, for this coming release, the following method has been deleted:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:24
+#, no-wrap
+msgid "void defineCache(String cacheName, Configuration configurationOverride)\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:28
+msgid "And instead, the following two methods have been added:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:34
+#, no-wrap
+msgid ""
+"Configuration defineConfiguration(String cacheName, Configuration configurationOverride);\n"
+"Configuration defineConfiguration(String cacheName, String templateCacheName, \n"
+"   Configuration configurationOverride);\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:44
+msgid "The primary driver for this change has been the development of the Infinispan cache provider, where we wanted to enable users to configure or override most commonly modified Infinispan parameters via hibernate configuration file. This would avoid users having to modify different files for the most commonly modified parameters, hence improving usability of the Infinispan cache provider. However, to be able to implement this, we needed CacheManager's API to be enhanced so that:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:51
+msgid "Existing defined cache configurations could be overriden. This enables use cases like this: Sample Infinispan cache provider configuration will contain a generic cache definition to be used for entities. Via hibernate configuration file, users could redefine the maximum number of entries to be allowed before eviction kicks in for all entities. The code would look something like this:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:62
+#, no-wrap
+msgid ""
+"// Assume that 'cache-provider-configs.xml' contains \n"
+"// a named cache for entities called 'entity'\n"
+"CacheManager cacheManager = new DefaultCacheManager(\n"
+"   \"/home/me/infinispan/cache-provider-configs.xml\");\n"
+"Configuration overridingConfiguration = new Configuration();\n"
+"overridingConfiguration.setEvictionMaxEntries(20000); // max entries to 20.000\n"
+"// Override existing 'entity' configuration so that eviction max entries are 20.000.\n"
+"cacheManager.defineConfiguration(\"entity\", overridingConfiguration);\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:70
+msgid "Be able to define new cache configurations based on the configuration of a given cache instance, optionally applying some overrides. This enables uses cases like the following: A user wants to define eviction wake up interval for a specific entity which is different to the wake up interval used for the rest of entities."
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:83
+#, no-wrap
+msgid ""
+"// Assume that 'cache-provider-configs.xml' contains \n"
+"// a named cache for entities called 'entity'\n"
+"CacheManager cacheManager = new DefaultCacheManager(\n"
+"   \"/home/me/infinispan/cache-provider-configs.xml\");\n"
+"Configuration overridingConfiguration = new Configuration();\n"
+"// set wake up interval to 240 seconds\n"
+"overridingConfiguration.setEvictionWakeUpInterval(240000L);\n"
+"// Create a new cache configuration for com.acme.Person entity \n"
+"// based on 'entity' configuration, overriding the wake up interval to be 240 seconds\n"
+"cacheManager.defineConfiguration(\"com.acme.Person\", \"entity\", overridingConfiguration);\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:92
+msgid "Another limitation of the previous API, which we've solved with this API change, is that in the past the only way to get a cache's Configuration required the cache to be started because the only way to get the Configuration instance was from the Cache API. However, with this API change, we can now retrieve a cache's Configuration instance via the CacheManager API. Example:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:103
+#, no-wrap
+msgid ""
+"// Assume that 'cache-provider-configs.xml' contains \n"
+"// a named cache for entities called 'entity'\n"
+"CacheManager cacheManager = new DefaultCacheManager(\n"
+"   \"/home/me/infinispan/cache-provider-configs.xml\");\n"
+"// Pass a brand new Configuration instance without overrides \n"
+"// and it will return the given cache name's Configuration\n"
+"Configuration entityConfiguration = cacheManager.defineConfiguration(\"entity\", \n"
+"new Configuration());\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:108
+msgid "If you would like to provide any feedback to this post, either respond to this blog entry or go to http://www.jboss.org/infinispan/forums.html[Infinispan's user forums]."
+msgstr ""

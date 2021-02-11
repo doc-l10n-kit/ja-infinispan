@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:11
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan triple connector release!\n"
+"permalink: /blog/:year/:month/:day/infinispan-triple-connector-release\n"
+"date: '2018-11-02T03:57:00.000-07:00'\n"
+"author: gustavonalle\n"
+"tags: [ \" release\", \"kafka\", \"spark\", \"hadoop\" ]\n"
+"thumbnail: https://3.bp.blogspot.com/-ZU37uOY-U6o/W9wW5BsT2eI/AAAAAAAAAm8/XTAKrrcdvK8eo3j_gMdvtbshHOYR10aPwCEwYBhgL/s72-c/connectors.jpg\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1409181687570428914\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/11/infinispan-triple-connector-release.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:14
+msgid "Infinispan Spark, Infinispan Hadoop and Infinispan Kafka have a new fresh release each!"
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:17
+#, no-wrap
+msgid "[.underline]#Infinispan Spark 0.9#"
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:19
+#: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:53
+#, no-wrap
+msgid " "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:26
+msgid "The native Apache Spark connector now supports Infinispan 9.4.x and Spark 2.3.2, and it exposes Infinispan's new transcoding capabilities, enabling the _InfinispanRDD_ and _InfinispanDStream_ to operate with multiple data formats. For more details see the https://github.com/infinispan/infinispan-spark/blob/master/README.md#using-multiple-data-formats[documentation]."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:31
+#, no-wrap
+msgid "[.underline]#Infinispan Hadoop 0.3#"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:44
+msgid "The connector that allows accessing Infinispan using standard Input/OutputFormat interfaces now offers compatibility with Infinispan 9.4.x and has been certified to run with the Hadoop 3.1.1 runtime. For more details about this connector, see the https://github.com/infinispan/infinispan-hadoop/blob/master/README.md[user manual]. Also make sure to check the docker based demos: https://github.com/infinispan/infinispan-hadoop/tree/master/samples/mapreduce[Infinispan"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:46
+msgid "Yarn] and https://github.com/infinispan/infinispan-hadoop/tree/master/samples/flink[Infinispan"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:47
+msgid "Apache Flink]."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:51
+#, no-wrap
+msgid "[.underline]#Infinispan Kafka 0.3#"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:61
+msgid "Last but not least, the https://github.com/infinispan/infinispan-kafka[Infinispan Kafka connector] was upgraded to work with the latest Kafka (2.0.x) and Infinispan releases (9.4.x). Many thanks to https://github.com/oscerd[Andrea Cosentino] for contributing this integration."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:67
+msgid "https://3.bp.blogspot.com/-ZU37uOY-U6o/W9wW5BsT2eI/AAAAAAAAAm8/XTAKrrcdvK8eo3j_gMdvtbshHOYR10aPwCEwYBhgL/s1600/connectors.jpg[image:https://3.bp.blogspot.com/-ZU37uOY-U6o/W9wW5BsT2eI/AAAAAAAAAm8/XTAKrrcdvK8eo3j_gMdvtbshHOYR10aPwCEwYBhgL/s320/connectors.jpg[image,width=320,height=207]]"
+msgstr ""

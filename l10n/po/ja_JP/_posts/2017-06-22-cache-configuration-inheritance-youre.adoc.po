@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2017-06-22-cache-configuration-inheritance-youre.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-06-22-cache-configuration-inheritance-youre.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: 'Cache configuration inheritance: you''re no son of mine'\n"
+"permalink: /blog/:year/:month/:day/cache-configuration-inheritance-youre\n"
+"date: '2017-06-22T04:58:00.000-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \" configuration\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1238316106220715134\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/06/cache-configuration-inheritance-youre.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-06-22-cache-configuration-inheritance-youre.adoc:12
+msgid "Once upon a time Infinispan cache configurations were all orphans."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-06-22-cache-configuration-inheritance-youre.adoc:18
+msgid "Actually, it wasn't as sad as that: they all shared a single parent - the default cache. While this gave caches a limited form of inheritance, it led to confusion as users weren't really aware of it and it was impossible to turn it off: the limited gene pool was propagating possibly unwanted traits to all of its children."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2017-06-22-cache-configuration-inheritance-youre.adoc:20
+#, no-wrap
+msgid "Templates and real configuration inheritance"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-06-22-cache-configuration-inheritance-youre.adoc:25
+msgid "Infinispan 7.2 finally introduced proper configuration templates and inheritance. But there was a catch. Backwards compatibility dictated that the \"default mother of all caches\" behaviour survived."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-06-22-cache-configuration-inheritance-youre.adoc:35
+msgid "In the above example, the default cache is a replicated cache with a file store. The distributed cache inherits the _\"transactional\"_ configuration. However, because of default inheritance present up to Infinispan 8.2, the distributed-cache also ended up having a file store.  Confusing or what !?! The best workaround was to never give it a specific configuration, let Infinispan use its internal defaults and essentially avoid it. Just like the black sheep in the family."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2017-06-22-cache-configuration-inheritance-youre.adoc:37
+#, no-wrap
+msgid "Bye bye default cache "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-06-22-cache-configuration-inheritance-youre.adoc:44
+msgid "With Infinispan 9.0 we decided it was finally time to cut the umbilical cord between the default cache and all the other caches: if you declare one, it will never be used as default inheritance for every other cache.  In the above example, the distributed cache won't have a file store any more."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-06-22-cache-configuration-inheritance-youre.adoc:47
+msgid "We've gone even further: unless you declare a default cache, we will not even set one up for you, not even one with default settings!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-06-22-cache-configuration-inheritance-youre.adoc:51
+msgid "Aleksandr Sergeevich Serebrovskii, the Russian geneticist  who first formulated the concept of the gene pool and the diversity benefits it brings, would be proud of us."
+msgstr ""

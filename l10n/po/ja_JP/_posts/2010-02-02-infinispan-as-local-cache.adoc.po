@@ -1,0 +1,212 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:17
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan as a LOCAL cache\n"
+"permalink: /blog/:year/:month/:day/infinispan-as-local-cache\n"
+"date: '2010-02-02T08:09:00.000-08:00'\n"
+"author: msurtani\n"
+"tags: [ \"benchmarks\",\n"
+"\"jboss cache\",\n"
+"\"hibernate\",\n"
+"\"local mode\",\n"
+"\"second level cache provider\",\n"
+"\"ehcache\",\n"
+"]\n"
+"thumbnail: http://3.bp.blogspot.com/_ca0W9t-Ryos/S2hZiNeYXuI/AAAAAAAAA9g/S2x8rzncn4c/s72-c/local_puts_all_included.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5269275166795892814\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/02/infinispan-as-local-cache.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:21
+msgid "While Infinispan has got the distributed, in-memory data grid market firmly it in its sight, there is also another aspect of Infinispan which I feel people would find interesting."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:30
+msgid "At its heart Infinispan is a highly concurrent, extremely performant data structure than can be distributed, or could be used in a standalone, local mode - as a cache. But why would people use Infinispan over, say, a http://java.sun.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html[#ConcurrentHashMap#]? Here are some reasons."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:34
+#, no-wrap
+msgid "*_#Feature-rich#_*\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:36
+#, no-wrap
+msgid "*Eviction.* Built-in eviction ensures you don't run out of memory.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:41
+#, no-wrap
+msgid ""
+"*Write-through and write-behind caching.* Going beyond memory and onto\n"
+"disk (or any other pluggable\n"
+"http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/loaders/CacheStore.html[#CacheStore#])\n"
+"means that your state survives restarts, and preloaded hot caches can be\n"
+"configured.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:45
+#, no-wrap
+msgid ""
+"*JTA support and XA compliance.* Participate in ongoing transactions\n"
+"with any\n"
+"http://java.sun.com/javaee/technologies/jta/index.jsp[JTA]-compliant\n"
+"transaction manager.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:47
+#, no-wrap
+msgid ""
+"*MVCC-based concurrency.* Highly optimized for fast, non-blocking\n"
+"readers.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:52
+#, no-wrap
+msgid ""
+"*Manageability.*\n"
+"http://docs.jboss.org/infinispan/4.0/apidocs/jmxComponents.html[Simple\n"
+"JMX] or rich GUI management console via\n"
+"http://community.jboss.org/wiki/MonitoringInfinispanwithJOPR[JOPR], you\n"
+"have a choice.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:59
+#, no-wrap
+msgid ""
+"*Not just for the JVM.*\n"
+"http://community.jboss.org/wiki/InfinispanRESTserver[RESTful API], and\n"
+"upcoming\n"
+"http://community.jboss.org/wiki/Clientandservermodules[client/server\n"
+"modules] speaking Memcached and\n"
+"http://community.jboss.org/wiki/HotRodProtocol[HotRod] protocols help\n"
+"non-JVM platforms use Infinispan.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:60
+#, no-wrap
+msgid "*Cluster-ready.* Should the need arise.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:62
+msgid "_*#Easy to configure, easy to use#*_"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:64
+msgid "The simplest configuration file containing just"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:68
+#, no-wrap
+msgid "<infinispan />\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:74
+msgid "is enough to get you started, with sensible defaults abound. (More detailed documentation is http://docs.jboss.org/infinispan/4.0/apidocs/config.html[also available])."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:88
+msgid "All the features above are exposed via an easy-to-use http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/Cache.html[#Cache#] interface, which extends http://java.sun.com/javase/6/docs/api/java/util/concurrent/ConcurrentMap.html[#ConcurrentMap#] and is compatible with many other cache systems. Infinispan even ships with http://community.jboss.org/wiki/ConfigurationMigrationTools[migration tools] to help you move off other cache solutions onto Infinispan, whether you need a cache to store data retrieved remotely or simply as a http://community.jboss.org/wiki/usinginfinispanasjpahibernatesecondlevelcacheprovider[2nd level cache for Hibernate]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:92
+msgid "_*#Performance#*_"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:98
+msgid "In the process of testing and tuning Infinispan on very large clusters, we have started to put together a http://cachebenchfwk.sourceforge.net/[benchmarking framework]. As a part of this framework, we have the ability to measure cache performance in standalone, local mode. So in the context of this blog post, I'd"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:102
+msgid "like to share some recent performance numbers of Infinispan - a recent snapshot - compared against the latest JBoss Cache release (3.2.2.GA)  and EHCache (1.7.2). Some background on the tests:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:105
+msgid "Used a latest snapshot of the http://cachebenchfwk.sourceforge.net/[CacheBenchFwk]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:107
+msgid "Run on a http://www.redhat.com/rhel/[RHEL] 5 server with 4 Intel Xeon cores, 4GB of RAM"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:108
+msgid "Sun JDK 1.6.0_18, with #-Xms1g -Xmx1g#"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:111
+msgid "Test run on a single node, with 25 concurrent threads, using randomly generated Strings as keys and values and a 1kb payload for each entry, with a 80/20 read/write ratio."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:112
+msgid "Performance measured in transactions per second (higher = better)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:114
+msgid "http://lh5.ggpht.com/_ca0W9t-Ryos/S2hZiNeYXuI/AAAAAAAAA9g/S2x8rzncn4c/local_puts_all_included.png[image:http://3.bp.blogspot.com/_ca0W9t-Ryos/S2hZiNeYXuI/AAAAAAAAA9g/S2x8rzncn4c/s400/local_puts_all_included.png[image]]http://lh5.ggpht.com/_ca0W9t-Ryos/S2hhquciCeI/AAAAAAAAA-A/_QV9adRs9pI/local_gets_all_included.png[image:http://4.bp.blogspot.com/_ca0W9t-Ryos/S2hZLhCbDaI/AAAAAAAAA9Y/ofGNnjxmdBw/s400/local_gets_all_included.png[image]]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:120
+msgid "In summary, what we have here is that when run in local mode, Infinispan is a high-performance standalone caching engine which offers a rich set of features while still being trivially simple to configure and use."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:124
+msgid "Enjoy,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:126
+msgid "Manik"
+msgstr ""

@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-06-05-thanks-great-indian-developer-summit.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-05-thanks-great-indian-developer-summit.adoc:11
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Thanks Great Indian Developer Summit & Voxxed Days Zurich\n"
+"permalink: /blog/:year/:month/:day/thanks-great-indian-developer-summit\n"
+"date: '2018-06-05T07:00:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \" conference\" ]\n"
+"thumbnail: https://i.ytimg.com/vi/oU0oduarh94/0.jpg\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-575358979214011181\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/06/thanks-great-indian-developer-summit.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-05-thanks-great-indian-developer-summit.adoc:27
+msgid "A few days after https://blog.infinispan.org/2018/04/danke-javaland-merci-devoxx-france.html[Devoxx France], I headed for http://www.developermarch.com/developersummit/[Great Indian Developer Summit] in Bangalore where I spoke about handling streaming data on top of a Kubernetes platform. This was a very similar talk to the one I gave at https://www.jfokus.se/[JFokus] but with some important changes.  Together with Clement we created a small https://github.com/ReactiveX/RxJava[RxJava 2] façade for Infinispan.  When combined with https://vertx.io/docs/vertx-rx/java2/[Vert.x RxJava 2 API], we could finally have an idiomatic way of handling streaming data asynchronously and coordinating events purely using RxJava 2 APIs. This is crucial for working with streaming data in an efficient way. On top of that, I made some changes to push the binary data used by the demo outside of the deployment."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-05-thanks-great-indian-developer-summit.adoc:37
+msgid "Unfortunately Murphy struck during the presentation and I was unable to run the live coding demo. A problem with Docker size image during preparation combined with a cleanup I ran before the talk meant some of the images had to be re-downloaded. The wireless internet connection at the conference nor the mobile connection were good enough for me to recover it. Once back in the hotel where I had a stable connection I was able to record a screencast of the steps I would have followed during the Great Indian Developer Summit talk. You can find this screencast below:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-05-thanks-great-indian-developer-summit.adoc:46
+msgid "The code from the demo can be found https://github.com/infinispan-demos/streaming-data-kubernetes[here].  The live coding steps I followed are defined https://github.com/infinispan-demos/streaming-data-kubernetes/blob/master/live-coding/gids-18.org[here].  Finally the slides can be found here:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-05-thanks-great-indian-developer-summit.adoc:53
+msgid "Finally, for something slightly different, back in March I joined Ray Tsang for a talk at https://voxxeddays.com/zurich/[Voxxed Days Zurich].  This was a really fun talk to be part of! We combined past stories of my time at JBoss support with Ray's Kubernetes troubleshooting experience to create an engaging talk :). You can find the video below:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-05-thanks-great-indian-developer-summit.adoc:62
+msgid "The week after slaskawiec and I travelled to Red Hat Summit as part of the work we did to integrate Red Hat Data Grid (Infinispan product version) into the Scavenger Hunt game presented on the keynote of the last day. Both Sebastian and I have been working on a blog series which will be published very soon."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-06-05-thanks-great-indian-developer-summit.adoc:64
+msgid "Cheers, Galder"
+msgstr ""

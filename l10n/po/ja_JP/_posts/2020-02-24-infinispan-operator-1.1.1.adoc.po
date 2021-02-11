@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan Operator 1.1.1 is out!\n"
+"permalink: /blog/:year/:month/:day/infinispan-operator-1\n"
+"date: '2020-02-24T12:00:00.000-00:00'\n"
+"author: rigazilla\n"
+"tags: [ \"release\", \"operator\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:13
+msgid "We're pleased to announce https://operatorhub.io/operator/infinispan[version 1.1.1 of the Infinispan Operator] for Kubernetes and OpenShift."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:15
+msgid "This release has focused on fixing bugs and improving robustness, mainly related to the following:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:17
+msgid "improving reconcile flow stability"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:18
+msgid "reducing Operator CPU load"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:19
+msgid "cleaning up logs"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:22
+msgid "Our community documentation on https://infinispan.org/documentation has also been updated and improved. You can find some of the changes at:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:24
+msgid "https://infinispan.org/infinispan-operator/master/operator.html#creating_services[Creating Infinispan Services]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:25
+msgid "https://infinispan.org/infinispan-operator/master/operator.html#network_services[Setting Up Network Services]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:26
+msgid "https://infinispan.org/infinispan-operator/master/operator.html#prometheus[Monitoring Infinispan with Prometheus]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:27
+msgid "https://infinispan.org/infinispan-operator/master/operator.html#remote_connections[Connecting to Infinispan Clusters]"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:28
+#, no-wrap
+msgid "Automatic Upgrades"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:31
+msgid "If you installed the Infinispan Operator on Red Hat OpenShift with the Automatic Approval upgrade policy, your cluster should already be running the latest versions (Infinispan Operator 1.1.1 with Infinispan 10.1.2.Final)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:34
+msgid "We would like to hear opinions from you about the automated upgrade process, so get in touch if you have any issues or want to give any feedback."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:35
+#, no-wrap
+msgid "Operator: Get it, Use it, Ask us!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:39
+msgid "A detailed list of issues and features for this version can be found https://github.com/infinispan/infinispan-operator/issues?q=milestone%3A1.1.1+is%3Aclosed[here]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:43
+msgid "Try the https://github.com/infinispan/infinispan-simple-tutorials/tree/master/operator[simple tutorial] for the Operator, which has been updated for this version."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:44
+msgid "You can https://github.com/infinispan/infinispan-operator/issues[report bugs]"
+msgstr ""

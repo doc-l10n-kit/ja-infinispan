@@ -1,0 +1,263 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Non Blocking Saga\n"
+"permalink: /blog/:year/:month/:day/nonblocking_nearing\n"
+"date: '2020-08-31T12:00:00.000-00:00'\n"
+"author: wburns\n"
+"tags: [ \"non-blocking\", \"server\", \"embedded\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:10
+#, no-wrap
+msgid "Non Blocking Journey"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:16
+msgid "As many you are probably aware recent trends have shown that making applications non blocking provides quite a few benefits allowing for greater scalability with less resources. Infinispan has been written and rewriting parts to take advantage of this as we can for both embedded and server use cases."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:17
+#, no-wrap
+msgid "Before Infinispan 11"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:26
+msgid "The Infinispan Server has always utilized netty, however we may not have been the best about ensuring we didn't block the event loop.  The HotRod Client in 9.2.0 also utilizes netty to provide for non blocking operations.  The internal embedded interceptors were rewritten in 9.0.0 to provide for non blocking support for internal cache operations, which include put/get.  Cache store operations in 10.0.0 were offloaded to a blocking thread pool to provide non blocking support."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:27
+#, no-wrap
+msgid "Infinispan 11 Non Blocking Changes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:34
+msgid "With the newest release we have rewritten lots of the internals of Infinispan to take advantage of non blocking as much as possible.  The amount of changes is quite large and a bit hard to describe them all in this blog post.  The various JIRA can be seen from https://issues.redhat.com/browse/ISPN-10309, which isn't even complete yet despite how many different changes we have done."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:39
+msgid "The persistence SPI was completely rewritten in 11 with non blocking in mind as well and this will be covered in a future post as it has much more detailing it.  For now you can rest assure that all prior stores will still work, however they may have or can be optimized to take into account non blocking support."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:40
+#, no-wrap
+msgid "Conversions"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:45
+msgid "Pretty much every module in the Infinispan code base has been changed to support non blocking.  If code relies upon an API that is blocking that is known to be blocking, we offload those calls to a blocking thread pool to ensure we never block the non blocking thread."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:51
+msgid "Unfortunately some modules have not yet been updated and those are ones related to query.  Query is in the middle of a giant refactoring and doing so would have caused massive conflicts and thus has been delayed to Infinispan 12.  The server works around this by ensuring write operations performed upon a cache with query are always done in a blocking thread to ensure safety."
+msgstr ""
+
+#. type: Block title
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:52
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:58
+#, no-wrap
+msgid "Thread Pools"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:57
+msgid "Infinispan utilizes various thread pools for handling of operations.  This table details how many thread pools each version of Infinispan can have."
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:60
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:78
+#, no-wrap
+msgid "Version"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:60
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:78
+#, no-wrap
+msgid "Embedded"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:62
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:80
+#, no-wrap
+msgid "Server"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:63
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:81
+#, no-wrap
+msgid "ISPN 10"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:64
+#, no-wrap
+msgid "5"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:66
+#, no-wrap
+msgid "7"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:67
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:85
+#, no-wrap
+msgid "ISPN 11"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:68
+#, no-wrap
+msgid "2"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:69
+#, no-wrap
+msgid "3"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:75
+msgid "As you can see there is more than a 50 percent reduction of the number of thread pools in both embedded and server modes. This in turn has allowed for a reduction of the default number of threads as well as seen in the next table. Note that N is how many cores that are available to the JVM."
+msgstr ""
+
+#. type: Block title
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:76
+#, no-wrap
+msgid "Maximum Default Thread Count"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:82
+#, no-wrap
+msgid "310 + N"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:84
+#, no-wrap
+msgid "470 + (2 * N)"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:86
+#, no-wrap
+msgid "150 + (2 * N)"
+msgstr ""
+
+#. type: Table
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:87
+#, no-wrap
+msgid "150 + (4 * N)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:92
+msgid "After this consolidation we have non blocking and blocking thread pools.  As you can see this allows us to reduce the maximum number of threads in embedded by about half and the server to a third of what it used to be before."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:96
+msgid "The server has an additional thread pool for the netty event loop and unfortunately we cannot consolidate this thread pool, but it is planned for Infinispan 12, which will get us to the same number of threads and thread pools for both embedded and server modes."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:98
+msgid "Note that this doesn't talk about the JGroups thread pool as this is unchanged and is the same."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:99
+#, no-wrap
+msgid "BlockHound"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:107
+msgid "If you are familiar with making code non blocking it can be a very difficult task as even the most mundane call can be hiding something blocking, even if it is very brief.  We could write something to do detect such calls, but there is already an open source tool that does exactly what we needed.  This tool is BlockHound, which can detect blocking calls at runtime.  More information about it can be found at https://github.com/reactor/BlockHound."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:114
+msgid "Infinispan takes advantage of blockhound in that we configure it at the module level.  This allows the end user to even add block hound with Infinispan in embedded mode and it should work to test out to ensure that interactions with Infinispan are not blocking when needed.  Note that we do not yet support block hound for the client, despite many methods are not blocking today."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:115
+#, no-wrap
+msgid "What remains for Infinispan 12"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:118
+msgid "Infinispan 12 should bring the entire non blocking saga to its hopfully final completion."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:120
+msgid "The aforementioned query modules need to be revamped"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:121
+msgid "Existing supported cache stores need to be rewritten to directly support non blocking"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:122
+msgid "Cache retrieval needs to be offloaded to a blocking thread"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:123
+msgid "Combine server event loop with non blocking thread pool"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:125
+msgid "Also if time permits the Infinispan Client would be ensured to be fully non blocking and integrate with BlockHound to ensure client apps behave properly."
+msgstr ""

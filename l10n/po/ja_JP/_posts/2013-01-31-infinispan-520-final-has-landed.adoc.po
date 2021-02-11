@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2013-01-31-infinispan-520-final-has-landed.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-31-infinispan-520-final-has-landed.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: 'Infinispan 5.2.0 Final has landed! '\n"
+"permalink: /blog/:year/:month/:day/infinispan-520-final-has-landed\n"
+"date: '2013-01-31T11:29:00.000-08:00'\n"
+"author: mmarkus\n"
+"tags: [ \"release\", \"final\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1170451411540085494\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/01/infinispan-520-final-has-landed.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-31-infinispan-520-final-has-landed.adoc:12
+msgid "Dear Infinispan community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-31-infinispan-520-final-has-landed.adoc:20
+msgid "I am pleased to announce the much awaited final release of Infinispan 5.2.0. With more than https://issues.jboss.org/issues/?jql=project%20%3D%20ISPN%20AND%20issuetype%20in%20(Enhancement%2C%20%22Feature%20Request%22)%20AND%20fixVersion%20%3D%20%225.2.0.Final%22%20AND%20status%20in%20(Resolved%2C%20Closed)%20ORDER%20BY%20priority%20DESC%2C%20assignee%20ASC%2C%20key%20DESC[100 new features and enhancements] and https://issues.jboss.org/issues/?jql=project%20%3D%20ISPN%20AND%20issuetype%20%3D%20Bug%20AND%20fixVersion%20%3D%20%225.2.0.Final%22%20AND%20status%20in%20(Resolved%2C%20Closed)%20ORDER%20BY%20priority%20DESC%2C%20assignee%20ASC%2C%20key%20DESC[150 bug fixes] this the most stable Infinispan version to date.  Highlights:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-31-infinispan-520-final-has-landed.adoc:26
+msgid "The https://community.jboss.org/wiki/Non-BlockingStateTransferV2[non-blocking state transfer] which is a much more efficient and flexible implementation of the functionality that allows Infinispan to serve requests during nodes joining/leaving. "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-31-infinispan-520-final-has-landed.adoc:30
+msgid "https://docs.jboss.org/author/display/ISPN/Cross+site+replication[The cross-site replication] functionality which allows backing up data between geographically distributed clusters in order to protect against catastrophic failures"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-31-infinispan-520-final-has-landed.adoc:32
+msgid "https://issues.jboss.org/browse/ISPN-1410[Rolling upgrades] of the hotrod clusters (zero downtime for upgrades)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-31-infinispan-520-final-has-landed.adoc:34
+msgid "https://issues.jboss.org/issues/?jql=project%20%3D%20ISPN%20AND%20issuetype%20in%20(standardIssueTypes()%2C%20subTaskIssueTypes()%2C%20Bug%2C%20Enhancement%2C%20%22Feature%20Request%22)%20AND%20fixVersion%20%3D%20%225.2.0.Final%22%20AND%20status%20in%20(Resolved%2C%20Closed)%20ORDER%20BY%20priority%20DESC%2C%20assignee%20ASC%2C%20key%20DESC[A handful of fixes and improvements] for the Map/Reduce framework"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-31-infinispan-520-final-has-landed.adoc:39
+msgid "This release has spread over a period of 8 months, with a total of 4 Alpha, 6 Beta and 3 CR releases: a** sustained** effort from  the core development team, QA team and our growing community - a BIG thanks to everybody involved!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-31-infinispan-520-final-has-landed.adoc:47
+msgid "Remember to visit our http://www.jboss.org/infinispan/downloads[downloads] section to find the latest release and if you have any questions please check our http://www.jboss.org/infinispan/forums[forums], our mailing lists or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-31-infinispan-520-final-has-landed.adoc:51
+msgid "Cheers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-31-infinispan-520-final-has-landed.adoc:53
+msgid "Mircea"
+msgstr ""

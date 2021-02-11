@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:11
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 8.2.0.Final is out!\n"
+"permalink: /blog/:year/:month/:day/infinispan-820final-is-out\n"
+"date: '2016-03-08T15:05:00.001-08:00'\n"
+"author: pruivo\n"
+"tags: [ \"release\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-555425407157620245\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/03/infinispan-820final-is-out.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:13
+msgid "Dear community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:17
+msgid "We are proud to announce the release of Infinispan 8.2.0.Final.  http://infinispan.org/download#stable[Download it here]** **and try it out!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:21
+msgid "This release is highlighted by performance improvements and multiple fixes, and it introduces some new cool features. We emphasize the following:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:25
+msgid "New algorithm for remote reads in distributed mode that reduces the network usage"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:28
+msgid "From now on, the consistent hash is shared among caches with the same membership - entries in different caches using the same key will be co-located"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:32
+msgid "A new lambda-enabled http://infinispan.org/docs/8.2.x/user_guide/user_guide.html#_cluster_executor[Cluster Executor] which does not require a clustered cache, but can be constructed directly from a DefaultCacheManager."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:33
+msgid "Protostream 3.0.5, Lucene 5.5, Hibernate Search 5.6.0.Alpha2"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:34
+msgid "And many tweaks and improvements overall."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:36
+msgid "Infinispan Server obviously deserves a list of its own:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:41
+msgid "Infinispan Server was gifted with a brand new event logger. Now it is possible to check the last 7 days events like caches starting/stopping, nodes join/leaving, task execution and security audits. In addition, it is based on Wildfly 10."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:43
+msgid "Admin Console improvements"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:45
+msgid "Persistent login session which survives browser refresh"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:46
+msgid "Deployment / undeployment of user code"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:47
+msgid "Management of ProtoBuf schemas for indexing"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:48
+msgid "Management of Scripts for task execution"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:49
+msgid "Event viewing"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:50
+msgid "Much improved cache and template configuration"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:51
+msgid "Cache container configuration"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:52
+msgid "PatternFly 3.2"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:56
+msgid "We are now preparing the next development cycle and we will introduce new features and improvements. Stay tuned to know what is coming in Infinispan 9.0. "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:66
+msgid "Check out the http://infinispan.org/release-notes/#8.2[stable release notes], http://infinispan.org/download/[download the releases]** **and tell us all about it on the https://developer.jboss.org/en/infinispan/content[forum], on our https://issues.jboss.org/projects/ISPN[issue tracker] or on IRC on the #infinispan channel on http://webchat.freenode.net/?channels=%23infinispan[Freenode]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:68
+msgid "Cheers, The Infinispan team."
+msgstr ""

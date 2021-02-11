@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2010-09-02-410final-is-out-and-announcing-420.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-09-02-410final-is-out-and-announcing-420.adoc:9
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: 4.1.0.FINAL is out - and announcing 4.2.0\n"
+"permalink: /blog/:year/:month/:day/410final-is-out-and-announcing-420\n"
+"date: '2010-09-02T06:51:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \"release\", \"final\", \"radegast\" ]\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/09/410final-is-out-and-announcing-420.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-09-02-410final-is-out-and-announcing-420.adoc:15
+msgid "Yes, things have been quiet on this blog as of late, but a lot has been going on.  Let's start with the big news.  After much work on feedback reported on the last Radegast release candidate, Infinispan 4.1.0.FINAL is finally ready.  Many thanks to the community who have worked tirelessly in testing stuff, reporting stuff."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-09-02-410final-is-out-and-announcing-420.adoc:28
+msgid "This is a very important release.  If you are using 4.0.0 (Starobrno), I strongly recommend upgrading to Radegast as we have a whole host of big fixes, performance improvements and new features for you.  A full changelog is https://jira.jboss.org/secure/ConfigureReport.jspa?atl_token=jCbk7mSW2a&versions=12313466&sections=all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira.plugin.release-notes-report-plugin:releasenotes&Next=Next[available on JIRA], but a few key features to note are http://infinispan.blogspot.com/2010/05/clientserver-architectures-strike-back.html[server endpoints], a Java-based http://community.jboss.org/wiki/JavaHotRodclient[client] for the Hot Rod protocol, and the new http://infinispan.blogspot.com/2010/03/infinispan-eviction-batching-updates.html[LIRS eviction algorithm]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-09-02-410final-is-out-and-announcing-420.adoc:33
+msgid "http://www.jboss.org/infinispan/downloads[Download] it, give it a go, and talk about it on the http://community.jboss.org/en/infinispan?view=discussions[forums].  Tell your friends about it, tweet about it."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-09-02-410final-is-out-and-announcing-420.adoc:40
+msgid "The other interesting piece of news is the announcement of a 4.2.0 release.  We've decided to take a few key new features from 5.0.0 and release them earlier, as 4.2.0 - codenamed _Ursus_.  If you are interested in what's going to be in Ursus, have a look at https://jira.jboss.org/secure/ConfigureReport.jspa?atl_token=jCbk7mSW2a&versions=12315303&sections=all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira.plugin.release-notes-report-plugin:releasenotes&Next=Next[this feature set], and expect a beta on Ursus pretty soon now!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-09-02-410final-is-out-and-announcing-420.adoc:42
+msgid "Enjoy! Manik"
+msgstr ""

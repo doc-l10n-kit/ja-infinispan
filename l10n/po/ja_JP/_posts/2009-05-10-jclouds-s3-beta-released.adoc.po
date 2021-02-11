@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2009-05-10-jclouds-s3-beta-released.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-10-jclouds-s3-beta-released.adoc:11
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: jclouds-s3 beta released\n"
+"permalink: /blog/:year/:month/:day/jclouds-s3-beta-released\n"
+"date: '2009-05-10T22:09:00.000-07:00'\n"
+"author: acole\n"
+"tags: [ \" jclouds\", \"s3\" ]\n"
+"thumbnail: http://1.bp.blogspot.com/_6tbw51Qly0U/Sge1OyaMntI/AAAAAAAAAAM/jsBcDN4W1Xg/s72-c/jclouds_logo.jpg\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7237733767582798870\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/05/jclouds-s3-beta-released.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-10-jclouds-s3-beta-released.adoc:13
+msgid "http://1.bp.blogspot.com/_6tbw51Qly0U/Sge1OyaMntI/AAAAAAAAAAM/jsBcDN4W1Xg/s1600-h/jclouds_logo.jpg[image:http://1.bp.blogspot.com/_6tbw51Qly0U/Sge1OyaMntI/AAAAAAAAAAM/jsBcDN4W1Xg/s320/jclouds_logo.jpg[image]]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-10-jclouds-s3-beta-released.adoc:17
+msgid "http://code.google.com/p/jclouds/[jclouds]-s3 is the glue between Infinispan and Amazon S3. jclouds provides a cachestore plugin that allows you to persist your infinispan cluster to S3."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-10-jclouds-s3-beta-released.adoc:20
+msgid "Over the last few months, jclouds has evolved with Infinispan's concurrent context."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-10-jclouds-s3-beta-released.adoc:24
+msgid "Under the hood, jclouds is made for infinispan. Its non-blocking engine and FutureCommand design were crafted to meet the challenge of Infinispan's grueling integration tests."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-10-jclouds-s3-beta-released.adoc:27
+msgid "jclouds-s3 is also quite user-friendly, exposing services to S3 in a simple Map interface."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-10-jclouds-s3-beta-released.adoc:31
+msgid "As we are now in beta, please do try out jclouds-s3 and let us know where we can improve. If you have some spare cycles, feel free to lend a hand :)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-10-jclouds-s3-beta-released.adoc:33
+msgid "Regardless, we hope you enjoy the product."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2009-05-10-jclouds-s3-beta-released.adoc:35
+msgid "http://code.google.com/p/jclouds/ http://jclouds.tumblr.com/"
+msgstr ""

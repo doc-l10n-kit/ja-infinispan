@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: 5.0.0.ALPHA3 is here with more goodies!\n"
+"permalink: /blog/:year/:month/:day/500alpha3-is-here-with-more-goodies\n"
+"date: '2011-02-18T05:29:00.000-08:00'\n"
+"author: galder\n"
+"tags: [ \"asynchronous\", \"alpha\", \"configuration\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1447646935341359713\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/02/500alpha3-is-here-with-more-goodies.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:14
+msgid "For those who can't wait to get hold on the newest Infinispan features, we've just released the third alpha release of the 5.0 series, called 5.0.0.ALPHA3."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:26
+msgid "Apart from including fixes in https://issues.jboss.org/secure/ConfigureReport.jspa?atl_token=c0ee1b92ed270815b460be3704d78af9ead2f994&versions=12316042&sections=all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira.plugin.release-notes-report-plugin:releasenotes&Next=Next[4.2.1.CR2], it allows users to prefetch data in advance in parallel thanks to the new getAsync() method. Why is this useful? Imagine the following scenario: A cache is configured with distribution and an app that requires values associated with k1, k2, and k3 in order to do its job.  In the worst case scenario assume that all these keys located in remote nodes. Previously, before 5.0.0.ALPHA3, you'd have written something like this:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:34
+#, no-wrap
+msgid ""
+"Value v1 = cache.get(\"k1\");\n"
+"Value v2 = cache.get(\"k2\");\n"
+"Value v3 = cache.get(\"k3\");\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:42
+msgid "The problem with this code is that each get() is sequential, so the second get() call must wait for first get() to retrieve data from the remote node before it can execute. This is clearly not very optimal.  From 5.0.0.ALPHA3 onwards, you can do this instead:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:54
+#, no-wrap
+msgid ""
+"NotifyingFuture<Value> f1 = cache.getAsync(\"k1\");\n"
+"NotifyingFuture<Value> f2 = cache.getAsync(\"k2\");\n"
+"NotifyingFuture<Value> f3 = cache.getAsync(\"k3\");\n"
+"...\n"
+"Value v1 = f1.get(); // blocks until value has been returned\n"
+"Value v2 = f2.get();\n"
+"Value v3 = f3.get();\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:62
+msgid "The clear advantage here is that the get requests, via getAsync(), can be fired in parallel and they don't need to wait for each other.  Afterwards, when the value is needed, simply call get() on the future received."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:74
+msgid "Amongst other API enhancements, such as https://issues.jboss.org/browse/ISPN-900[RemoteCache implementing size()  and isEmpty()], or https://issues.jboss.org/browse/ISPN-906[the ability to delete AtomicMap instances via AtomicMapLookup], it's worth highlighting that we've taken http://community.jboss.org/thread/161913[your feedback on board with regards to how Infinispan is configured programmatically], and from 5.0.0.ALPHA3 onwards, we provide a more fluent way of configuring Infinispan. For example:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:80
+#, no-wrap
+msgid "GlobalConfiguration gc = new GlobalConfiguration();\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:83
+#, no-wrap
+msgid ""
+"GlobalJmxStatisticsConfig jmxStatistics = gc.configureGlobalJmxStatistics();\n"
+"jmxStatistics.allowDuplicateDomains(true).enabled(true);\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:86
+#, no-wrap
+msgid ""
+"TransportConfig transport = gc.configureTransport();\n"
+"transport.clusterName(\"blah\").machineId(\"id\").rackId(\"rack\").strictPeerToPeer(true);\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:103
+msgid "You can find more examples of this new configuration https://github.com/infinispan/infinispan/blob/master/core/src/test/java/org/infinispan/config/ProgrammaticConfigurationTest.java[here].  Note that this fluent API is likely to evolve further before we go final with 5.0.0 as shown in this http://community.jboss.org/message/588125#588125[forum discussion], but please keep your feedback coming! Finally, details of what's fixed is in the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12315984[release notes]. As always, please use the http://community.jboss.org/en/infinispan?view=discussions[user forums] to report back, grab the release http://www.jboss.org/infinispan/downloads[here], enjoy and keep the feedback coming."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:107
+msgid "Cheers, Galder"
+msgstr ""

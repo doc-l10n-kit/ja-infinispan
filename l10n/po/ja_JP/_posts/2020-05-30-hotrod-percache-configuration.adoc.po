@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:7
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Hot Rod per-cache configuration\n"
+"permalink: /blog/:year/:month/:day/hotrod-percache-configuration\n"
+"author: ttarrant\n"
+"tags: [ \"hot rod\", \"configuration\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:9
+#, no-wrap
+msgid "Hot Rod per-cache configuration"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:12
+msgid "Aside from being able to configure a Java Hot Rod client through a https://infinispan.org/blog/[compact URI] representation, Infinispan 11 brings some additional changes to remote cache configuration."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:14
+msgid "While remote caches did have some client-side configuration, this was never implemented cleanly, resorting to multiple overloaded variations on the `getCache()` method, for example to obtain a transactional cache, or enabling near-caching."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:16
+msgid "Infinispan 11 now allows specifying per-cache configuration both through the API and through the declarative properties file."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:18
+msgid "Let's look at a few examples."
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:29
+#, no-wrap
+msgid ""
+"ConfigurationBuilder builder = new ConfigurationBuilder()\n"
+"    .uri(\"hotrod://127.0.0.1\");\n"
+"    .remoteCache(\"closecache\")\n"
+"        .nearCacheMode(NearCacheMode.INVALIDATED)\n"
+"        .nearCacheMaxEntries(10000)\n"
+"    .remoteCache(\"txcache\")\n"
+"        .transactionMode(TransactionMode.NON_XA);\n"
+"RemoteCacheManager manager = new RemoteCacheManager(builder.build());\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:32
+msgid "In the above code snippet, we enable near-caching for the cache `closecache` and we enable NON_XA transactions on the cache `txcache`."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:34
+msgid "The equivalent `hotrod-client.properties` file:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:41
+#, no-wrap
+msgid ""
+"infinispan.client.hotrod.uri=hotrod://127.0.0.1\n"
+"infinispan.client.hotrod.cache.closecache.near_cache.mode=INVALIDATED\n"
+"infinispan.client.hotrod.cache.closecache.near_cache.max_entries=10000\n"
+"infinispan.client.hotrod.cache.txcache.transaction.transaction_mode=NON_XA\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:43
+#, no-wrap
+msgid "Automatic cache creation"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:46
+msgid "A neat feature that has been implemented as part of per-cache configuration, is the ability to automatically create a cache on the server on first use, if it is missing, by supplying either an existing template or a full-blown configuration."
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:56
+#, no-wrap
+msgid ""
+"ConfigurationBuilder builder = new ConfigurationBuilder()\n"
+"    .uri(\"hotrod://127.0.0.1\");\n"
+"    .remoteCache(\"mydistcache\")\n"
+"        .templateName(\"org.infinispan.DIST_SYNC\");\n"
+"RemoteCacheManager manager = new RemoteCacheManager(builder.build());\n"
+"Cache<String, String> cache = manager.getCache(\"mydistcache\");\n"
+"...\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:59
+msgid "The above example using a properties file would look like:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:64
+#, no-wrap
+msgid ""
+"infinispan.client.hotrod.uri=hotrod://127.0.0.1\n"
+"infinispan.client.hotrod.cache.mydistcache.template=org.infinispan.DIST_SYNC\n"
+msgstr ""

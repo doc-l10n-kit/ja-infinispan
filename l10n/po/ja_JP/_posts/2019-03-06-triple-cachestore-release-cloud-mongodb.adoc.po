@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2019-03-06-triple-cachestore-release-cloud-mongodb.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-06-triple-cachestore-release-cloud-mongodb.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: 'Triple cachestore release: Cloud, MongoDB and Cassandra'\n"
+"permalink: /blog/:year/:month/:day/triple-cachestore-release-cloud-mongodb\n"
+"date: '2019-03-06T07:07:00.000-08:00'\n"
+"author: ttarrant\n"
+"tags: [ \" release\", \"cache store\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8095288746060415020\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/03/triple-cachestore-release-cloud-mongodb.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-06-triple-cachestore-release-cloud-mongodb.adoc:13
+msgid "Today we present to you a trifecta of cache store releases which align to Infinispan 9.x"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-03-06-triple-cachestore-release-cloud-mongodb.adoc:14
+#, no-wrap
+msgid "Cassandra Cache Store"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-06-triple-cachestore-release-cloud-mongodb.adoc:19
+msgid "The Cassandra cache store now implements the https://docs.jboss.org/infinispan/9.4/apidocs/org/infinispan/persistence/spi/AdvancedCacheLoader.html#publishEntries(java.util.function.Predicate,boolean,boolean)[publishEntries/publishKeys] methods."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-03-06-triple-cachestore-release-cloud-mongodb.adoc:20
+#, no-wrap
+msgid "Cloud Cache Store"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-06-triple-cachestore-release-cloud-mongodb.adoc:27
+msgid "The Cloud cache store uses the Apache jclouds library to store data on cloud storage providers such as Amazon’s S3, Rackspace’s Cloudfiles or any other such provider supported by JClouds.  The store has been updated to Infinispan 9.x's persistence SPI and uses jclouds 2.1.x"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-03-06-triple-cachestore-release-cloud-mongodb.adoc:28
+#, no-wrap
+msgid "MongoDB Cache Store"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-06-triple-cachestore-release-cloud-mongodb.adoc:32
+msgid "This cache store has also been updated to the Infinispan 9.x persistence SPI."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-03-06-triple-cachestore-release-cloud-mongodb.adoc:34
+msgid "You can get documentation and maven coordinates from our http://infinispan.org/cache-store-implementations/[Cache Store page]"
+msgstr ""

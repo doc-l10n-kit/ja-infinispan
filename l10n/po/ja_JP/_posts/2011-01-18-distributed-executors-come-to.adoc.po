@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2011-01-18-distributed-executors-come-to.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-01-18-distributed-executors-come-to.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Distributed executors come to Infinispan 5.0.0.ALPHA2\n"
+"permalink: /blog/:year/:month/:day/distributed-executors-come-to\n"
+"date: '2011-01-18T01:36:00.000-08:00'\n"
+"author: galder\n"
+"tags: [ \" release\", \"distributed executors\", \"alpha\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1721390460201494863\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/01/distributed-executors-come-to.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-01-18-distributed-executors-come-to.adoc:20
+msgid "I'm delighted to announce the release of Infinispan 5.0.0.ALPHA2 that includes the very first version of http://community.jboss.org/docs/DOC-15622[Infinispan's Distributed Executor Framework]. Make sure you have a look at the javadocs for the http://docs.jboss.org/infinispan/5.0/apidocs/org/infinispan/distexec/package-summary.html[distributed executor package] and the http://docs.jboss.org/infinispan/5.0/apidocs/org/infinispan/distexec/mapreduce/package-summary.html[map/reduce package]. Watch out for a forthcoming blog entry from Vladimir with plenty more information and examples!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-01-18-distributed-executors-come-to.adoc:32
+msgid "On top of this, http://community.jboss.org/docs/DOC-16198[the mechanism to plug user-defined externalizers] has changed for ALPHA2 based on invaluable feedback from the community, making it easier for third party applications to abstract Infinispan's Externalizer framework and hide it from end users. From ALPHA2 onwards, Infinispan Lucene directory provides its own http://docs.jboss.org/infinispan/5.0/apidocs/org/infinispan/marshall/Externalizer.html[Externalizer] implementations and so expect a performance improvement in the RPC calls it mades."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-01-18-distributed-executors-come-to.adoc:41
+msgid "As usual Infinispan 5.0.0.ALPHA2 is available for download from http://www.jboss.org/infinispan/downloads[here], issues fixed can be found https://issues.jboss.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+ISPN+AND+fixVersion+%3D+%225.0.0.ALPHA2%22[here], and provide feedback http://community.jboss.org/en/infinispan?view=discussions[here]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-01-18-distributed-executors-come-to.adoc:45
+msgid "Cheers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-01-18-distributed-executors-come-to.adoc:46
+msgid "Galder"
+msgstr ""

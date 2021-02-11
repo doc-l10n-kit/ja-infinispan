@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-clustered-cache-quickstart-updates.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-clustered-cache-quickstart-updates.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Clustered cache quickstart updates\n"
+"permalink: /blog/:year/:month/:day/clustered-cache-quickstart-updates\n"
+"date: '2014-04-11T08:48:00.000-07:00'\n"
+"author: infinispan\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7591605069885098464\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/04/clustered-cache-quickstart-updates.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-clustered-cache-quickstart-updates.adoc:16
+msgid "As developers, it's always easy for us to \"forget\" about documentation and tutorials, and let them get out of date. And this is exactly what happened with our http://infinispan.org/docs/6.0.x/getting_started/getting_started.html#_using_infinispan_as_an_embedded_data_grid_in_java_se[clustered cache tutorial]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-clustered-cache-quickstart-updates.adoc:21
+msgid "Even though we kept updating the tutorial to use the latest configuration style, the core of the tutorial was still assuming that state transfer was disabled by default - something that we changed back in Infinispan 5.0.0.Final."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-04-11-clustered-cache-quickstart-updates.adoc:27
+msgid "This was causing a bit of confusion, so I'm happy to report that I've updated the tutorial and I've removed all traces of the ClusterValidation class. Now the tutorial allows you to start as many nodes as you want, and it also shows how a joining node receives data from the existing members during startup."
+msgstr ""

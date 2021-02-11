@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2011-04-06-first-50-beta-now-available.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-04-06-first-50-beta-now-available.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: First 5.0 beta now available!\n"
+"permalink: /blog/:year/:month/:day/first-50-beta-now-available\n"
+"date: '2011-04-06T10:20:00.000-07:00'\n"
+"author: galder\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5952053735752335872\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/04/first-50-beta-now-available.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-04-06-first-50-beta-now-available.adoc:22
+msgid "We've just released our first beta version of Infinispan 5.0 \"Pagoa\".  The main highlight in this release is the introduction of our brand new Map/Reduce API to compliment the existing distributed executor API release in a previous alpha version. We had countless discussions around these APIs and the result can be see in our http://docs.jboss.org/infinispan/5.0/apidocs/org/infinispan/distexec/mapreduce/package-frame.html[javadocs] and this http://community.jboss.org/docs/DOC-15622[wiki] which explains the distributed executor and Map/Reduce framework. Please download the http://sourceforge.net/projects/infinispan/files/infinispan/5.0.0.BETA1/[5.0.0.BETA1] distribution and play with it! Your feedback is invaluable at this stage as we start to aim towards CR and Final release."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-04-06-first-50-beta-now-available.adoc:34
+msgid "In other news, the query API has received a major overhaul and apart from providing a more intuitive and powerful API, it hooks into Hibernate Search new SPI making it easier to maintain. Infinispan users now get access to http://docs.jboss.org/hibernate/search/3.4/reference/en-US/html/search-query.html#d0e5541[Faceting] via Hibernate Search as well. A revision of the Infinispan Querying wiki is on its way, but the javadocs available http://docs.jboss.org/infinispan/5.0/apidocs/org/infinispan/query/package-summary.html[here] are full pointers to get you going."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-04-06-first-50-beta-now-available.adoc:38
+msgid "Finally, here's a few notes on other interesting improvements:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-04-06-first-50-beta-now-available.adoc:41
+msgid "Distribution uses now MurmurHash3 hash function which is more performant and provides more even spread."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-04-06-first-50-beta-now-available.adoc:52
+msgid "EmbeddedCacheManager has been enhanced with some new methods that allow caches http://docs.jboss.org/infinispan/5.0/apidocs/org/infinispan/manager/EmbeddedCacheManager.html#removeCache(java.lang.String)[to be removed] all together. That is, remove the contents of a cache cluster wide and in the persistent store. A couple of other methods to go along with this have been added such as http://docs.jboss.org/infinispan/5.0/apidocs/org/infinispan/manager/EmbeddedCacheManager.html#cacheExists(java.lang.String)[cacheExists()] and http://docs.jboss.org/infinispan/5.0/apidocs/org/infinispan/manager/EmbeddedCacheManager.html#getCache(java.lang.String,%20boolean)[a conditional getCache()] that can inform the user when the cache has been completely been removed the system."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-04-06-first-50-beta-now-available.adoc:56
+msgid "Increased performance of Hot Rod client/server architectures as a result of fixing a couple of issues, one in the Hot Rod client and another in the server, so if you're a Hot Rod user, make sure you upgrade!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-04-06-first-50-beta-now-available.adoc:64
+msgid "There's some other minor API changes and fixes as show in the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12313467[release notes]. As always, please use the http://community.jboss.org/en/infinispan?view=discussions[user forums] to report back, grab the release http://www.jboss.org/infinispan/downloads[here], enjoy and keep the feedback coming."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-04-06-first-50-beta-now-available.adoc:68
+msgid "Cheers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-04-06-first-50-beta-now-available.adoc:69
+msgid "Galder"
+msgstr ""

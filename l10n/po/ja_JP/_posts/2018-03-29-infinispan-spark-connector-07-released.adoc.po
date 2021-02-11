@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-03-29-infinispan-spark-connector-07-released.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-29-infinispan-spark-connector-07-released.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan Spark connector 0.7 released!\n"
+"permalink: /blog/:year/:month/:day/infinispan-spark-connector-07-released\n"
+"date: '2018-03-29T01:17:00.001-07:00'\n"
+"author: gustavonalle\n"
+"tags: [ \" release\", \"spark\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7249155212589129668\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/03/infinispan-spark-connector-07-released.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-29-infinispan-spark-connector-07-released.adoc:13
+msgid "A new version of connector that integrates Infinispan and Apache Spark has just been released!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-29-infinispan-spark-connector-07-released.adoc:16
+msgid "This release brings compatibility with Infinispan 9.2.x and Spark 2.3.0."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-29-infinispan-spark-connector-07-released.adoc:21
+msgid "Also included a new feature that allows to create and delete caches on demand, passing custom configurations when required. For more details, please consult the https://github.com/infinispan/infinispan-spark/blob/master/README.md#cache-lifecycle-control[documentation]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-29-infinispan-spark-connector-07-released.adoc:26
+msgid "To quickly try the connector, make sure to check the https://github.com/infinispan/infinispan-spark/tree/master/examples/twitter[Twitter demo], and for any issues or suggestions, please report them on our https://issues.jboss.org/projects/ISPRK/[JIRA]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-03-29-infinispan-spark-connector-07-released.adoc:28
+msgid "Cheers!"
+msgstr ""

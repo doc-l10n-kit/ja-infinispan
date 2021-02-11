@@ -1,0 +1,191 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:11
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Running Infinispan cluster on Kubernetes\n"
+"permalink: /blog/:year/:month/:day/running-infinispan-cluster-on-kubernetes\n"
+"date: '2016-08-18T02:27:00.000-07:00'\n"
+"author: slaskawiec\n"
+"tags: [ \"kubernetes\" ]\n"
+"thumbnail: https://2.bp.blogspot.com/-SxPVOKzEEH8/V62_FFizzhI/AAAAAAAAHI8/ARH6rBWLOtwwibGis3djKZk9vCDAvFipgCLcB/s72-c/Infinispan%2B%252B%2BKubernetes.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6707507324892990682\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/08/running-infinispan-cluster-on-kubernetes.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:16
+msgid "In the http://blog.infinispan.org/2016/08/running-infinispan-cluster-on-openshift.html[previous post] we looked how to run Infinispan on OpenShift. Today, our goal is exactly the same, but we'll focus on Kubernetes."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:23
+msgid "Running Infinispan on Kubernetes requires using proper discovery protocol. This blog post uses https://github.com/jgroups-extras/jgroups-kubernetes[Kubernetes Ping] but it's also possible to use http://blog.infinispan.org/2016/07/improved-infinispan-docker-image.html[Gossip Router]."
+msgstr ""
+
+#. type: Title =====
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:24
+#, no-wrap
+msgid "Our goal"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:30
+msgid "We'd like to build Infinispan cluster based on Kubernetes hosted locally (using https://github.com/kubernetes/minikube[Minikube]). We will expose a service and route it to our local machine. Finally, we will use it to put data into the grid."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:36
+msgid "https://2.bp.blogspot.com/-SxPVOKzEEH8/V62_FFizzhI/AAAAAAAAHI8/ARH6rBWLOtwwibGis3djKZk9vCDAvFipgCLcB/s1600/Infinispan%2B%252B%2BKubernetes.png[image:https://2.bp.blogspot.com/-SxPVOKzEEH8/V62_FFizzhI/AAAAAAAAHI8/ARH6rBWLOtwwibGis3djKZk9vCDAvFipgCLcB/s320/Infinispan%2B%252B%2BKubernetes.png[image,width=240,height=320]]"
+msgstr ""
+
+#. type: Title =====
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:41
+#, no-wrap
+msgid "Spinning local Kubernetes cluster"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:55
+msgid "There are many ways to spin up a local Kubernetes cluster. One of my favorites is https://github.com/kubernetes/minikube[Minikube]. At first you will need the 'minikube' binary, which can be downloaded from https://github.com/kubernetes/minikube/releases[Github releases page]. I usually copy it into '/usr/bin' which makes it very convenient to use.  The next step is to download 'kubectl' binary. I usually use Kubernetes https://github.com/kubernetes/kubernetes/releases[Github releases page] for this. The 'kubectl' binary is stored inside the release archive under 'kubernetes/platforms/<your_platform>/<your_architecture>/kubectl'. I'm using linux/amd64 since I'm running Fedora F23. I also copy the binary to '/usr/bin'."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:59
+msgid "We are ready to spin up Kubernetes:"
+msgstr ""
+
+#. type: Title =====
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:64
+#, no-wrap
+msgid "Deploying Infinispan cluster"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:69
+msgid "This time we'll focus on automation, so there will be no 'kubectl edit' commands. Below is the yaml file for creating all necessary components in Kubernetes cluster:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:73
+msgid "(lines 23 - 24) - We added additional arguments to the bootstrap scipt"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:75
+msgid "(lines 26 - 30) - We used Downward API for pass the current namespace to the Infinispan"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:76
+msgid "(lines 34 - 45) - We defined all ports used by the Pod"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:78
+msgid "(lines 49 - 66) - We created a service for port 8080 (the REST interface)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:81
+msgid "(line 64) - We used http://kubernetes.io/docs/user-guide/services/#type-nodeport[NodePort service type] which we will expose via Minikube in the next paragraph"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:85
+msgid "Save it somewhere on the disk and execute 'kubectl create' command:"
+msgstr ""
+
+#. type: Title =====
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:90
+#, no-wrap
+msgid "Exposing the service port"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:102
+msgid "One of the https://github.com/kubernetes/minikube#known-issues[Minikube's limitations] is that it can't use http://kubernetes.io/docs/user-guide/ingress/[Ingress API] and expose services to the outside world. Thankfully there's other way - use Node Port service type. With this simple trick we will be able to access the service using '<minikube_ip>:<node_port_number>'. The port number was specified in the yaml file (we could leave it blank and let Kubernetes assign random one). The node port can easily be checked using the following command:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:107
+msgid "In order to obtain the Kubernetes node IP, use the following command:"
+msgstr ""
+
+#. type: Title =====
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:112
+#, no-wrap
+msgid "Testing the setup"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:116
+msgid "Testing is quite simple and the only thing to remember is to use the proper address - <minikube_ip>:<node_port>:"
+msgstr ""
+
+#. type: Title =====
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:121
+#, no-wrap
+msgid "Clean up"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:124
+msgid "Minikube has all-in-one command to do the clean up:"
+msgstr ""
+
+#. type: Title =====
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:129
+#, no-wrap
+msgid "Conclusion"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:133
+msgid "Kubernetes setup is almost identical to the OpenShift one but there are a couple of differences to keep in mind:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:136
+msgid "OpenShift's DeploymentConfiguration is similar Kubernetes Deployment with ReplicaSets"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:137
+msgid "OpenShift's Services work the same way as in Kubernetes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:138
+msgid "OpenShift's Routes are similar to Kubernetes' Ingresses"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:142
+msgid "Happy scaling and don't forget to check if Infinispan formed a cluster (hint - look into the http://blog.infinispan.org/2016/08/running-infinispan-cluster-on-openshift.html[previous post])."
+msgstr ""

@@ -1,0 +1,391 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: \" Embedded and remote queries in Infinispan 6.0.0.Beta1\"\n"
+"permalink: /blog/:year/:month/:day/embedded-and-remote-queries-in\n"
+"date: '2013-09-26T14:21:00.002-07:00'\n"
+"author: infinispan\n"
+"tags: [ \" protostream\", \"hotrod\", \"lucene\", \"Protobuf\", \"remote query\", \"hibernate search\",\"embedded query\", \"Infinispan Query\", \"DSL\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2234619140778632353\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/09/embedded-and-remote-queries-in.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:16
+msgid "If you're following Infinispan's mailing lists you've probably caught a glimpse of the new developments in the Query land: a new DSL, remote querying via Hot Rod client, a new marshaller based on Google's Protobuf. Time to unveil these properly!"
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:20
+#, no-wrap
+msgid "The new Query DSL"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:37
+msgid "Starting with version 6.0 Infinispan offers a new (experimental) way of running queries against your cached entities based on a simple filtering DSL. The aim of the new DSL is to simplify the way you write queries and to be agnostic of the underlying query mechanism(s) making it possible to provide alternative query engines in the future besides Lucene and still being able to use the same query language/API. The previous Hibernate Search & Lucene based https://docs.jboss.org/author/display/ISPN/Querying+Infinispan[approach] is still in place and will continue to be supported and in fact the new DSL is currently implemented right on top of it. The future will surely bring index-less searching based on map-reduce and possibly other new cool search technologies."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:43
+msgid "Running DSL-based queries in embedded mode is almost identical to running the existing Lucene-based queries. All you need to do is have infinispan-query-dsl.jar and infinispan-query.jar in your classpath (besides Infinispan and its dependecies), enable indexing for your caches, annotate your POJO cache values and your're ready."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:44
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:61
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:88
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:226
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:248
+#, no-wrap
+msgid "__\n"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:49
+#, no-wrap
+msgid ""
+"ConfigurationBuilder cfg = new ConfigurationBuilder();\n"
+"cfg.indexing().enable();\n"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:51
+#, no-wrap
+msgid "DefaultCacheManager cacheManager = new DefaultCacheManager(cfg.build());\n"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:53
+#, no-wrap
+msgid "Cache cache = cacheManager.getCache();\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:58
+msgid "____Alternatively, indexing (and everything else) can also be configured via XML configuration, as already described in the user guide, so we'll not delve into details here."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:60
+msgid "Your Hibernate Search annotated entity might look like this."
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:66
+#, no-wrap
+msgid ""
+"import org.hibernate.search.annotations.*;\n"
+"...\n"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:69
+#, no-wrap
+msgid ""
+"@Indexed\n"
+"public class User {\n"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:72
+#, no-wrap
+msgid ""
+"    @Field(store = Store.YES, analyze = Analyze.NO)\n"
+"    private String name;\n"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:75
+#, no-wrap
+msgid ""
+"    @Field(store = Store.YES, analyze = Analyze.NO, indexNullAs = Field.DEFAULT_NULL_TOKEN)\n"
+"    private String surname;\n"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:78
+#, no-wrap
+msgid ""
+"    @IndexedEmbedded(indexNullAs = Field.DEFAULT_NULL_TOKEN)\n"
+"    private List addresses;\n"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:81
+#, no-wrap
+msgid ""
+"    // .. the rest omitted for brevity\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:87
+msgid "____Running a DSL based query involves obtaining a _https://github.com/infinispan/infinispan/blob/6.0.0.Beta1/query-dsl/src/main/java/org/infinispan/query/dsl/QueryFactory.java[QueryFactory]_ from the (cache scoped) _SearchManager_ and then constructing the query as follows:"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:95
+#, no-wrap
+msgid ""
+"import org.infinispan.query.Search;\n"
+"import org.infinispan.query.dsl.QueryFactory;\n"
+"import org.infinispan.query.dsl.Query;\n"
+"...\n"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:97
+#, no-wrap
+msgid "QueryFactory qf = Search.getSearchManager(cache).getQueryFactory();\n"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:101
+#, no-wrap
+msgid ""
+"Query q = qf.from(User.class)\n"
+"    .having(\"name\").eq(\"John\")\n"
+"    .toBuilder().build();\n"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:103
+#, no-wrap
+msgid "List list = q.list();\n"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:107
+#, no-wrap
+msgid ""
+"assertEquals(1, list.size());\n"
+"assertEquals(\"John\", list.get(0).getName());\n"
+"assertEquals(\"Doe\", list.get(0).getSurname());\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:115
+msgid "____That's it! I'm sure this raised your curiosity as to what the DSL is actually capable of so you might want to look at the list of supported filter operators in _https://github.com/infinispan/infinispan/blob/6.0.0.Beta1/query-dsl/src/main/java/org/infinispan/query/dsl/FilterConditionEndContext.java[FilterConditionEndContext]_.  Combining multiple conditions with boolean operators, including sub-conditions, is also possible:"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:123
+#, no-wrap
+msgid ""
+"Query q = qf.from(User.class)\n"
+"    .having(\"name\").eq(\"John\")\n"
+"    .and().having(\"surname\").eq(\"Doe\")\n"
+"    .and().not(qf.having(\"address.street\").like(\"%Tanzania%\").or().having(\"address.postCode\").in(\"TZ13\", \"TZ22\"))\n"
+"    .toBuilder().build();\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:135
+msgid "The DSL is pretty nifty right now and will surely be expanded in the future based on your feedback. It also provides support for result pagination, sorting, projections, embedded objects, all demonstrated in _https://github.com/infinispan/infinispan/blob/6.0.0.Beta1/query/src/test/java/org/infinispan/query/dsl/embedded/QueryDslConditionsTest.java[QueryDslConditionsTest]_ which I encourage you to look at until the proper user guide is published. Still, this is not a relational database, so keep in mind that all queries are written in the scope of the _single_ targeted entity (and its embedded entities). There are no joins (yet), no correlated subqueries, no grouping or aggregations."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:144
+msgid "Moving further, probably the most exciting thing about the new DSL is using it remotely via the Hot Rod client. But to make this leap we first had to adopt a common format for storing our cache entries and marshalling them over the wire that would also be cross-language and robust enough to support evolving object schemas. But probably most of all, this format had to have a schema rather than just being an opaque blob otherwise indexing and searching are meaningless. Enter Protocol Buffers."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:146
+#, no-wrap
+msgid "The Protobuf marshaller"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:151
+#, no-wrap
+msgid ""
+"Configuring the _RemoteCacheManager_ of the Java Hot Rod client to use\n"
+"it is straight forward:\n"
+"__\n"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:156
+#, no-wrap
+msgid ""
+"import org.infinispan.client.hotrod.configuration.ConfigurationBuilder;\n"
+"...\n"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:161
+#, no-wrap
+msgid ""
+"ConfigurationBuilder clientBuilder = new ConfigurationBuilder();\n"
+"clientBuilder.addServer()\n"
+"    .host(\"127.0.0.1\").port(11234)\n"
+"    .marshaller(new ProtoStreamMarshaller());\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:165
+msgid "____Now you'll be able to store and get from the remote cache your _User_ instaces encoded in protobuf format provided that:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:171
+msgid "a Protobuf type was declared for your entity in a _.proto_ https://github.com/infinispan/protostream/blob/1.0.0.Alpha6/sample-domain-definition/src/main/resources/bank.proto[file] which was then compiled into a _.protobin_ https://developers.google.com/protocol-buffers/docs/techniques?hl=ro#self-description[binary descriptor]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:174
+#, no-wrap
+msgid ""
+"the binary descriptor was registered with your _RemoteCacheManager_'s\n"
+"_ProtoStreamMarshaller_ instance like this:\n"
+"__\n"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:179
+#, no-wrap
+msgid ""
+"ProtoStreamMarshaller.getSerializationContext(remoteCacheManager)\n"
+"    .registerProtofile(\"my-test-schema.protobin\");\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:182
+#, no-wrap
+msgid ""
+"____3. a per-entity marshaller was registered:\n"
+"__\n"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:187
+#, no-wrap
+msgid ""
+"ProtoStreamMarshaller.getSerializationContext(remoteCacheManager)\n"
+"    .registerMarshaller(User.class, new UserMarshaller());\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:195
+msgid "____Steps 2 and 3 are closely tied to the way https://github.com/infinispan/protostream[Protosteam] library works, which is pretty straight forward but cannot be detailed here. Having a look at our https://github.com/infinispan/protostream/blob/1.0.0.Alpha6/sample-domain-implementation/src/main/java/org/infinispan/protostream/sampledomain/marshallers/UserMarshaller.java[_UserMarshaller_] sample should clear this up."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:200
+msgid "Keeping your objects stored in protobuf format has the benefit of being able to consume them with compatible clients written in other languages.  But if this does not sound enticing enough probably the fact they can now be easily indexed should be more appealing."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:202
+#, no-wrap
+msgid "Remote querying via the Hot Rod client"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:207
+msgid "Given a _RemoteCacheManager_ configured as previously described the next steps to enable remote query over its caches are:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:211
+msgid "add the DSL jar to client's classpath, infinispan-remote-query-server.jar to server's classpath and infinispan-remote-query-client.jar to both"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:213
+msgid "enable indexing in your cache configuration - same as for embedded mode"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:216
+msgid "register your protobuf binary descriptor by invoking the '_registerProtofile_' method of the server's _ProtobufMetadataManager_ MBean (one instance per _EmbeddedCacheManager_)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:221
+msgid "All data placed in cache now is being indexed without the need to annotate your entities for Hibernate Search. In fact these classes are only meaningful to the Java client and do not even exist on the server."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:225
+msgid "Running the queries over the Hot Rod client is now very similar to embedded mode. The DSL is in fact the same. The only part that is slightly different is how you obtain the _QueryFactory_:"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:233
+#, no-wrap
+msgid ""
+"import org.infinispan.client.hotrod.Search;\n"
+"import org.infinispan.query.dsl.QueryFactory;\n"
+"import org.infinispan.query.dsl.Query;\n"
+"...\n"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:235
+#, no-wrap
+msgid "remoteCache.put(2, new User(\"John\", \"Doe\", 33));\n"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:237
+#, no-wrap
+msgid "QueryFactory qf = Search.getQueryFactory(remoteCache);\n"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:241
+#, no-wrap
+msgid ""
+"Query query = qf.from(User.class)\n"
+"    .having(\"name\").eq(\"John\")\n"
+"    .toBuilder().build();\n"
+msgstr ""
+
+#. type: delimited block .
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:246
+#, no-wrap
+msgid ""
+"List list = query.list();\n"
+"assertEquals(1, list.size());\n"
+"assertEquals(\"John\", list.get(0).getName());\n"
+"assertEquals(\"Doe\", list.get(0).getSurname());\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:251
+msgid "_ _ "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:254
+msgid "Voila! The end of our journey for today! Stay tuned, keep an eye on Infinispan Query and please share your comments with us."
+msgstr ""

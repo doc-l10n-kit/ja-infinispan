@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2015-02-05-infinispan-embedded-tutorial.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-02-05-infinispan-embedded-tutorial.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan Embedded Tutorial\n"
+"permalink: /blog/:year/:month/:day/infinispan-embedded-tutorial\n"
+"date: '2015-02-05T08:14:00.004-08:00'\n"
+"author: ttarrant\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3602830112570827523\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/02/infinispan-embedded-tutorial.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-02-05-infinispan-embedded-tutorial.adoc:18
+msgid "If you want to get your feet wet with Infinispan, but you thought the idea a bit daunting, you should worry no longer ! We have developed a very simple application which starts without Infinispan, and, step by step, grows into a fully-fledged distributed application complete with clustered listeners, externalizers and map/reduce. http://infinispan.org/tutorials/embedded/[Check it out] in our new http://infinispan.org/tutorials/[tutorials section]. We will soon be adding more tutorials exploring different aspects of Infinispan."
+msgstr ""

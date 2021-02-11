@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:14
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: 'Infinispan Docker image: custom configuration'\n"
+"permalink: /blog/:year/:month/:day/infinispan-docker-image-custom\n"
+"date: '2016-10-28T03:57:00.000-07:00'\n"
+"author: gustavonalle\n"
+"tags: [ \"docker\",\n"
+"\"server\",\n"
+"\"configuration\",\n"
+"\"cli\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6156455781570179027\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/10/infinispan-docker-image-custom.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:21
+msgid "In the http://blog.infinispan.org/2016/07/improved-infinispan-docker-image.html[previous post] we introduced the improved Docker image for Infinispan and showed how to run it with different parameters in order to create standalone, clustered and domain mode servers."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:25
+msgid "This post will show how to address more advanced configuration changes than swapping the JGroups stack, covering cases like creating extra caches or using a pre-existent configuration file."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:27
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:65
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:92
+#, no-wrap
+msgid " "
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:29
+#, no-wrap
+msgid "Runtime configuration changes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:34
+msgid "Since the Infinispan server is based on Wildfly, it also supports the Command Line Interface (CLI) to change configurations at runtime."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:40
+msgid "Let's consider an example of a custom indexed cache with Infinispan storage. In order to configure it, we need 4 caches, one cache to hold our data, called _testCache_ and other three caches to hold the indexes:  _LuceneIndexesMetadata_, _LuceneIndexesData_ and _LuceneIndexesLocking_."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:43
+msgid "This is normally achieved by adding this piece of configuration to the server xml:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:47
+msgid "This is equivalent to the following script:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:52
+msgid "To apply it to the server, save the script to a file, and run:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:55
+msgid "where CONTAINER is the id of the running container."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:59
+msgid "Everything that is applied using the CLI is automatically persisted in the server, and to check what the script produced, use the command to dump the config to a local file called _config.xml._"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:63
+msgid "Check the file _config.xml_: it should contain all four caches created via the CLI."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:67
+#, no-wrap
+msgid " Using an existent configuration file"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:75
+msgid "Most of the time changing configuration at runtime is sufficient, but it may be desirable to run the server with an existent xml, or change configurations that cannot be applied without a restart. For those cases, the easier option is to mount a volume in the Docker container and start the container with the provided configuration."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:79
+msgid "This can be achieved with Docker's volume support. Consider an xml file called _customConfig.xml_ located on a local folder _/home/user/config_.  The following command:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:84
+msgid "will create a volume inside the container at the _/opt/jboss/infinispan-server/standalone/configuration/extra/_ directory, with the contents of the local folder _/home/user/config_."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:90
+msgid "The container is then launched with the entrypoint _extra/customConfig_, which means it will use a configuration named _customConfig_ located under the _extra_ folder relative to where the configurations are usually located at _/opt/jboss/infinispan-server/standalone/configuration_."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:94
+#, no-wrap
+msgid "Conclusion"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:99
+msgid "And that's all about custom configuration using the Infinispan Docker image."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:102
+msgid "Stay tuned for the next post where we'll dive into multi-host clusters with the Infinispan Docker image."
+msgstr ""

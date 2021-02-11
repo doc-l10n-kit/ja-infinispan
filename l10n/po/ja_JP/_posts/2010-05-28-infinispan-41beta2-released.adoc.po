@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2010-05-28-infinispan-41beta2-released.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-05-28-infinispan-41beta2-released.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 4.1Beta2 released\n"
+"permalink: /blog/:year/:month/:day/infinispan-41beta2-released\n"
+"date: '2010-05-28T08:25:00.000-07:00'\n"
+"author: mmarkus\n"
+"tags: [ \"release\", \"beta\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5473029962399353191\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/05/infinispan-41beta2-released.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-05-28-infinispan-41beta2-released.adoc:12
+msgid "Hi,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-05-28-infinispan-41beta2-released.adoc:18
+msgid "The second and hopefully last Beta for 4.1 has just been released.  Thanks to excellent community feedback, several HotRod client/server issues were fixed. Besides this and other bug-fixes (check https://jira.jboss.org/secure/IssueNavigator.jspa?mode=hide&requestId=12313283[this] for complete list), following new features were added:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-05-28-infinispan-41beta2-released.adoc:20
+#, no-wrap
+msgid ""
+"an http://community.jboss.org/wiki/Keyaffinityservice[key affinity\n"
+"service] that generates keys to be distributed to specific nodes\n"
+"-\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-05-28-infinispan-41beta2-released.adoc:23
+msgid "http://docs.jboss.org/infinispan/4.1/apidocs/org/infinispan/loaders/remote/RemoteCacheStore.html[RemoteCacheStore] that allow an Infinspan cluster to be used as an remote data store"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-05-28-infinispan-41beta2-released.adoc:25
+msgid "Enjoy! Mircea"
+msgstr ""

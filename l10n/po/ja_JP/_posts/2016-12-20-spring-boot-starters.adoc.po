@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2016-12-20-spring-boot-starters.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-20-spring-boot-starters.adoc:11
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Spring Boot Starters\n"
+"permalink: /blog/:year/:month/:day/spring-boot-starters\n"
+"date: '2016-12-20T07:06:00.000-08:00'\n"
+"author: slaskawiec\n"
+"tags: [ \"spring\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8263782875884715019\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/12/spring-boot-starters.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-20-spring-boot-starters.adoc:14
+msgid "Ho, ho, hooo! It looks like all members of Infinispan Community have been nice and Santa brought you Spring Boot Starters!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-20-spring-boot-starters.adoc:18
+msgid "https://cdn.meme.am/cache/instances/folder65/500x/74064065.jpg[image:https://cdn.meme.am/cache/instances/folder65/500x/74064065.jpg[image,width=320,height=320]]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-20-spring-boot-starters.adoc:22
+msgid "This will make you even more productive and your code less verbose!"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2016-12-20-spring-boot-starters.adoc:25
+#, no-wrap
+msgid "Why do I need starters?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-20-spring-boot-starters.adoc:32
+msgid "Spring Boot Starters make the bootstrapping process much easier and faster. The starter brings you required Maven dependencies as well as some predefined configuration bits."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2016-12-20-spring-boot-starters.adoc:35
+#, no-wrap
+msgid "What do I need to get started?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-20-spring-boot-starters.adoc:45
+msgid "The starter can operate in two modes: client/server (when you connect to a remote Infinispan Server cluster) and embedded (packaged along with your app). The former is the default. It's also possible to use both those modes at the same time (store some data along with your app and connect to a remote Infinispan Server cluster to perform some other type of operations)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-20-spring-boot-starters.adoc:50
+msgid "Assuming you have an Infinispan Server running on IP address 192.168.0.17, all you need to do is to use the following dependencies:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-20-spring-boot-starters.adoc:57
+msgid "By default, the starter will try to locate _hotrod-client.properties_ file. The file should contain at least the server list:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-20-spring-boot-starters.adoc:64
+msgid "It is also possible to create _RemoteCacheManager_'s configuration manually:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-20-spring-boot-starters.adoc:71
+msgid "That's it! Your app should successfully connect to a remote cluster and you should be able to inject _RemoteCacheManager_."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-20-spring-boot-starters.adoc:76
+msgid "Using Infinispan embedded is even simpler than that. All you need to do is to add additional dependency to the classpath:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-20-spring-boot-starters.adoc:83
+msgid "The starter will provide you a preconfigured _EmbeddedCacheManager_. In order to customize the configuration, use the following code snippet:"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2016-12-20-spring-boot-starters.adoc:86
+#, no-wrap
+msgid "Further reading"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-20-spring-boot-starters.adoc:95
+msgid "There are two link I highly recommend you to read. The first is the https://github.com/infinispan/infinispan-simple-tutorials/tree/master/spring-boot[Spring Boot tutorial] and the second is the https://github.com/infinispan/infinispan-spring-boot[Github page of the Starters project]. "
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2016-12-20-spring-boot-starters.adoc:100
+#, no-wrap
+msgid "Kudos"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-20-spring-boot-starters.adoc:107
+msgid "Special thanks go to Marco Yuen, who donated us with Spring Boot Starters code and Tomasz Zabłocki, who updated them to current version and Stéphane Nicoll who spent tremendous amount of time reviewing the Starters."
+msgstr ""

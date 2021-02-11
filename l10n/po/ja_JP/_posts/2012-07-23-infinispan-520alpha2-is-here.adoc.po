@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2012-07-23-infinispan-520alpha2-is-here.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-07-23-infinispan-520alpha2-is-here.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 5.2.0.ALPHA2 is here!\n"
+"permalink: /blog/:year/:month/:day/infinispan-520alpha2-is-here\n"
+"date: '2012-07-23T00:47:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"release\", \"alpha\", \"map reduce\", \"cache store\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-9109363856700838345\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/07/infinispan-520alpha2-is-here.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-07-23-infinispan-520alpha2-is-here.adoc:15
+msgid "Infinispan 5.2.0.ALPHA2 was released last Friday with several additions for those that like to test Infinispan's bleeding edge capabilities. In this case, it's out Map/Reduce functionality that's the star of the show:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-07-23-infinispan-520alpha2-is-here.adoc:18
+msgid "https://issues.jboss.org/browse/ISPN-1665[A combiner can now be used between the Map and Reduce phases]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-07-23-infinispan-520alpha2-is-here.adoc:20
+msgid "https://community.jboss.org/docs/DOC-18188[Reduce phase can now be distributed]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-07-23-infinispan-520alpha2-is-here.adoc:22
+msgid "https://issues.jboss.org/browse/ISPN-2037[Map/Reduce now processes entries in cache stores too]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-07-23-infinispan-520alpha2-is-here.adoc:26
+msgid "Vladimir Blagojevic, one of our Infinispan developers, will be explaining all about these features in a blog post coming right up, so stay tuned! :)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-07-23-infinispan-520alpha2-is-here.adoc:32
+msgid "Finally Adrian Nistor, the latest addition to the Infinispan team, has been working on reducing the size of our distribution files by avoiding duplication of jars."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-07-23-infinispan-520alpha2-is-here.adoc:36
+msgid "Cheers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-07-23-infinispan-520alpha2-is-here.adoc:38
+msgid "Galder"
+msgstr ""

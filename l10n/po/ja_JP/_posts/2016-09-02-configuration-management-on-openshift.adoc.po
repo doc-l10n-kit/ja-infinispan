@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Configuration management on OpenShift, Kubernetes and Docker\n"
+"permalink: /blog/:year/:month/:day/configuration-management-on-openshift\n"
+"date: '2016-09-02T03:51:00.000-07:00'\n"
+"author: slaskawiec\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-30544979481083473\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/09/configuration-management-on-openshift.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:14
+msgid "When deploying Infinispan on Docker based Cloud environments, the most critical thing is how to manage configuration. In this blog post we'll explore some of the options."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:15
+#, no-wrap
+msgid "Extending our Docker image"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:24
+msgid "Creating your own Docker image based on jboss/infinispan-server is quite simple. At first you need to prepare a configuration XML file, which is shipped with Infinispan release. Go to http://infinispan.org/download/[Infinispan download section] and grap a server release corresponding to a chosen Docker image tag.  After unpacking it, grab the configuration (I use cloud.xml as a template) and introduce all necessary changes. "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:28
+msgid "Finally, build your image:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:34
+msgid "Now, that was quick! Wasn't it?"
+msgstr ""
+
+#. type: Title =====
+#: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:35
+#, no-wrap
+msgid "Using ConfigMaps with OpenShift"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:42
+msgid "If you're using https://www.openshift.org/[OpenShift], there's a sophisticated tool called https://docs.openshift.org/latest/dev_guide/configmaps.html[ConfigMap].  A ConfigMap can store a configuration file (or a configuration directory) and mount it somewhere in the Pod."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:45
+msgid "Use the command below to create a ConfigMap based on a configuration file:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:51
+msgid "Now create Infinispan application based on the configuration below (you can use 'oc create -f <file.yaml>' for this):"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:55
+msgid "(lines 50 - 52) - ConfigMap volume declaration"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:57
+msgid "(lines 45 - 47) - Mounting configuration into _/opt/jboss/infinispan-server/standalone/configuration/custom_"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:59
+msgid "(line 22) - bootstrapping the Infinispan with custom configuration (note there is no xml extension there)"
+msgstr ""
+
+#. type: Title =====
+#: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:60
+#, no-wrap
+msgid "Using ConfigMaps with Kubernetes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:64
+msgid "Kubernetes http://kubernetes.io/docs/user-guide/configmap/[ConfigMaps] work exactly the same way as in OpenShift."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:68
+msgid "The command below creates a ConfigMap:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:72
+msgid "The second step is to create a Deployment with ConfigMap:"
+msgstr ""
+
+#. type: Title =====
+#: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:75
+#, no-wrap
+msgid "Conclusion"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:79
+msgid "If you're using any Docker orchestration tool - have a look at provided tools. OpenShift and Kubernetes ConfigMaps are really great for this."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:83
+msgid "However if you need a fine grained control - either extend our Docker image (this is the preferred way) or simply fork and modify it."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:86
+msgid "Happy configuring and scaling!"
+msgstr ""

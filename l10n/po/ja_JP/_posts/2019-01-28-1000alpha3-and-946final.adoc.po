@@ -1,0 +1,140 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: 10.0.0.Alpha3 and 9.4.6.Final\n"
+"permalink: /blog/:year/:month/:day/1000alpha3-and-946final\n"
+"date: '2019-01-28T01:35:00.001-08:00'\n"
+"author: ttarrant\n"
+"tags: [ \" release\", \"alpha\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1707835156921122618\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/01/1000alpha3-and-946final.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:12
+msgid "Hey there,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:14
+msgid "the Infinispan team has cooked two releases for you today:"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:16
+#, no-wrap
+msgid "10.0.0.Alpha3"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:19
+msgid "This release contains 3 features:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:24
+msgid "[ISPN-4075] - State transfer should preserve the creation timestamp of entries"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:25
+msgid "[ISPN-9320] - Automatic hot rod client version selection"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:26
+msgid "[ISPN-9625] - Make clustered locks configuration possible by XML"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:27
+msgid "[ISPN-9771] - Support for configuration in JSON format"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:33
+msgid "We've also started removing code which was deprecated in the past, so check the http://infinispan.org/docs/dev/upgrading/upgrading.html[upgrading document] to see what you need to adapt in your application. This document will receive further changes during the 10.0 cycle."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:36
+msgid "https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12339174[The complete list of issues resolved in 10.0.0.Alpha3.]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:41
+msgid "Some other features are in the works and should be landing during the beta period. Check the https://blog.infinispan.org/2018/11/the-road-to-infinispan-10-alpha1.html[first of the alpha posts] to learn more about the new stuff."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:44
+#, no-wrap
+msgid "9.4.6.Final"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:47
+msgid "The stabilization of 9.4 continues with this micro release."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:49
+msgid "Highlights are:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:54
+msgid "[ISPN-7889] - BaseDistributionInterceptor.remoteGet may cause concurrency issues [ISPN-8889] - Data race in NonTxInvocationContext"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:55
+msgid "[ISPN-9873] - Remove listeners when the lock is removed"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:56
+msgid "[ISPN-9822] - BasicComponentRegistryImpl fails with security manager"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:58
+msgid "[ISPN-9819] - Improve Spring-Session events handling in remote and embedded"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:62
+msgid "https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12340282[The complete list of issues resolved in 9.4.6.Final.]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:67
+msgid "Please report any issues in our https://issues.jboss.org/browse/ISPN[issue tracker] and join the conversation in our https://infinispan.zulipchat.com/[Zulip Chat] to shape up our next release."
+msgstr ""

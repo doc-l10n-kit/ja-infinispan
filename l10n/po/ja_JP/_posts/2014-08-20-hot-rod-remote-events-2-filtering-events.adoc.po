@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: 'Hot Rod Remote Events #2: Filtering events'\n"
+"permalink: /blog/:year/:month/:day/hot-rod-remote-events-2-filtering-events\n"
+"date: '2014-08-20T08:18:00.001-07:00'\n"
+"author: galder\n"
+"tags: [ \" hotrod\", \"event\", \"remote events\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1409533794181251932\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/08/hot-rod-remote-events-2-filtering-events.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:17
+msgid "This blog post is the second in a series that looks at the forthcoming Hot Rod Remote Events functionality included in Infinispan 7.0. In the http://blog.infinispan.org/2014/08/hot-rod-remote-events-1-getting-started.html[first blog post] we looked at how to get started receiving remote events from Hot Rod servers. This time we are going to focus on how to filter events directly in the server."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:23
+msgid "Sending events to remote clients has a cost which increases as the number of clients. The more clients register remote listeners, the more events the server has to send. This cost also goes up as the number of modifications are executed against the cache. The more cache modifications, the more events that need to be sent."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:28
+msgid "A way to reduce this cost is by filtering the events to send server-side. If at the server level custom code decides that clients are not interested in a particular event, the event does not even need to leave the server, improving the overall performance of the system."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:34
+msgid "Remote event filters are created by implementing a org.infinispan.notifications.cachelistener.filter.CacheEventFilterFactory class. Each factory must have a name associated to it via the org.infinispan.notifications.cachelistener.filter.NamedFactory annotation."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:40
+msgid "When a listener is added, we can provide the name of a key value filter factory to use with this listener, and when the listener is added, the server will look up the factory and invoke getFilter method to get a org.infinispan.notifications.cachelistener.filter.CacheEventFilterFactory class instance to filter events server side."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:44
+msgid "Filtering can be done based on key or value information, and even based on cached entry metadata. Here's a sample implementation which will filter key \"2\" out of the events sent to clients:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:50
+msgid "Plugging the server with this key value filter requires deploying this filter factory (and associated filter class) within a jar file including a service definition inside the META-INF/services/org.infinispan.notifications.cachelistener.filter.CacheEventFilterFactory file:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:58
+msgid "With the server plugged with the filter, the next step is adding a remote client listener that will use this filter. For this example, we'll extend the EventLogListener implementation provided in the http://blog.infinispan.org/2014/08/hot-rod-remote-events-1-getting-started.html[first blog post] in the series and we override the @ClientListener annotation to indicate the filter factory to use with this listener:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:62
+msgid "Next, we add the listener via the RemoteCache API and we execute some operations against the remote cache:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:70
+msgid "If we checkout the system output we'll see that the client receives events for all keys except those that have been filtered:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:82
+msgid "Finally, with Hot Rod remote events we have tried to provide additional flexibility at the client side, which is why when adding client listeners, users can provide parameters to the filter factory so that filter instances with different behaviours can be generated out of a single filter factory based on client side information. To show this in action, we are going to enhance the filter factory above so that instead of filtering on a statically given key, it can filter dynamically based on the key provided when adding the listener. Here's the revised version:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:85
+msgid "Finally, here's how we can now filter by \"3\" instead of \"2\":"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:88
+msgid "And the output:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:95
+msgid "To summarise, we've seen how Hot Rod remote events can be filtered providing key/value filter factories that can create instances that filter which events are sent to clients, and how these filters can act on client provided information."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:99
+msgid "In the next blog post, we'll look at how to customize remote events in order to reduce the amount of information sent to the clients, or on the contrary, provide even more information to our clients."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:101
+msgid "Cheers, Galder"
+msgstr ""

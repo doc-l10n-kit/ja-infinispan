@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:13
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 9.0 CR2 is out!\n"
+"permalink: /blog/:year/:month/:day/infinispan-90-cr2-is-out\n"
+"date: '2017-02-23T15:40:00.000-08:00'\n"
+"author: pruivo\n"
+"tags: [\n"
+"\"release\",\n"
+"\"release candidate\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6591186462723574726\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/02/infinispan-90-cr2-is-out.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:15
+msgid "Dear community."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:18
+msgid "We are one step closer to the final release of Infinispan 9: we gladly announce the release of Infinispan 9.0.0.CR2."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:20
+#, no-wrap
+msgid "The highlights of this release are:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:23
+msgid "Many dependencies have been upgraded to the latest and greatest:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:25
+msgid "JGroups 4.0.0.Final"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:26
+msgid "Apache Lucene 5.5.4"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:27
+msgid "Hibernate Search 5.7.0.Final"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:28
+msgid "Protostream 4.0.0.Alpha7 "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:30
+msgid "Transactional caches changes:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:33
+msgid "Removed asynchronous configuration since it won't be supported anymore."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:35
+msgid "Introduced EmbeddedTransactionManager: a basic transaction manager implementation."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:37
+msgid "Query now supports java.time.Instant natively"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:39
+msgid "Changes in the configuration;"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:42
+msgid "Significant performance improvements for embedded and client/server mode;"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:44
+msgid "And finally, quite a few bug fixes preparing us for the final release !"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:50
+msgid "You can read all about these in the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12330030[release notes.]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:55
+msgid "Keep an eye on the http://infinispan.org/docs/dev/upgrading/upgrading.html[upgrade guide] and start prepare your project for the final Infinispan 9 release."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:63
+msgid "So, please head over to the http://infinispan.org/download/[download page] and try it out. If you have an issue, please report it in our https://issues.jboss.org/projects/ISPN/summary[bug tracker], ask us on the https://developer.jboss.org/en/infinispan/content[forum], or join us for a friendly chat on the #infinispan IRC channel on http://webchat.freenode.net/[Freenode.]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:65
+msgid "Regards, Infinispan Team."
+msgstr ""

@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:17
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan on Openshift v3\n"
+"permalink: /blog/:year/:month/:day/infinispan-on-openshift-v3\n"
+"date: '2015-03-13T09:50:00.000-07:00'\n"
+"author: gustavonalle\n"
+"tags: [ \"docker\",\n"
+"\"openshift\",\n"
+"\"kubernetes\",\n"
+"\"paas\",\n"
+"\"server\",\n"
+"\"jgroups\",\n"
+"\"vagrant\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6642105538994535091\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/03/infinispan-on-openshift-v3.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:23
+msgid "Openshift v3 is the open source next generation of Paas, where applications run on https://www.docker.com/[Docker] containers and are orchestrated/controlled/scheduled by http://kubernetes.io/[Kubernetes]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:26
+msgid "In this post I'll show how to create an Infinispan cluster on Openshift v3 and resize it with a snap of a finger."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:28
+#, no-wrap
+msgid "Installing Openshift v3"
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:30
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:57
+#, no-wrap
+msgid " "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:39
+msgid "Openshift v3 has not been released yet, so I'm going to use the code from https://github.com/openshift/origin[origin].  There are http://docs.openshift.org/latest/getting_started/installation.html[many ways] to install Openshift v3, but for simplicity, I'll run a full multinode cluster locally on top of VirtualBoxes using the provided https://www.vagrantup.com/[Vagrant] scripts."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:41
+msgid "Let's start by checking out and building the sources:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:49
+msgid "To boot Openshift, it's a simple matter of starting up the desired number of nodes:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:53
+msgid "Grab a beer while the cluster is being provisioned, after a while you should be able to see 3 instances running:"
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:59
+#, no-wrap
+msgid "Creating the Infinispan template"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:66
+msgid "The following template defines a 2 node Infinispan cluster communicating via TCP, and discovery done using the http://www.jgroups.org/javadoc/org/jgroups/stack/GossipRouter.html[JGroups gossip router]:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:70
+msgid "There are few different components declared in this template:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:76
+msgid "A service with id _jgroups-gossip-service_ that will expose a JGroups gossip router service on port 11000, around the https://registry.hub.docker.com/u/gustavonalle/jgroups-gossip/[JGroups Gossip container]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:82
+msgid "A ReplicationController with id _jgroups-gossip-controller_.  Replication Controllers are used to ensure that, at any moment, there will be a certain number of replicas of a pod (a group of related docker containers) running. If for some reason a node crashes, the ReplicationController will instantiate a new pod elsewhere, keeping the service endpoint address unchanged."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:92
+msgid "Another ReplicationController with id _infinispan-controller_. This controller will start 2 replicas of the _infinispan-pod_. As it happens with the _jgroups-pod_, the _infinispan-pod_ has only one container defined: the infinispan-server container (based on https://registry.hub.docker.com/u/jboss/infinispan-server/[jboss/infinispan-server])  , that is started with the 'clustered.xml' profile and configured with the 'jgroups-gossip-service' address. By defining the gossip router as a service, Openshift guarantees that environment variables such as[.pl-s1]# JGROUPS_GOSSIP_SERVICE_SERVICE_HOST are# available to other pods (consumers)."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:96
+#, no-wrap
+msgid "Applying the template"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:101
+msgid "To apply the template via cmd line:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:107
+msgid "Grab another beer, it can take a while since in this case the docker images need to be fetched on each of the minions from the public registry. In the meantime, to inspect the pods, along with their containers and statuses:"
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:111
+#, no-wrap
+msgid "Resizing the cluster"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:118
+msgid "Changing the number of pods (and thus the number of nodes in the Infinispan cluster) is a simple matter of manipulating the number of replicas in the Replication Controller. To increase the number of nodes to 4:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:123
+msgid "This should take only a few seconds, since the docker images are already present in all the minions."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:132
+msgid "And this concludes the post, be sure to check other cool features of Openshift in the http://docs.openshift.org/latest/welcome/index.html#[project documentation] and try out other https://github.com/openshift/origin/tree/master/examples[samples]."
+msgstr ""

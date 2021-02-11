@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2013-01-19-infinispan-520cr2-is-out.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-19-infinispan-520cr2-is-out.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 5.2.0.CR2 is out!\n"
+"permalink: /blog/:year/:month/:day/infinispan-520cr2-is-out\n"
+"date: '2013-01-19T07:26:00.001-08:00'\n"
+"author: mmarkus\n"
+"tags: [ \"hotrod\", \"release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5593638309792247753\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/01/infinispan-520cr2-is-out.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-19-infinispan-520cr2-is-out.adoc:12
+msgid "Dear Infinispan users,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-19-infinispan-520cr2-is-out.adoc:30
+msgid "This is hopefully the last CR release of the long expected infinispan 5.2 series. It contains some final touches and bug fixes, especially around the new non-blocking state transfer functionality but also a https://issues.jboss.org/browse/ISPN-2656[very useful enhancement] to the HotRod protocol (and the Java client) which allows users to fetch the list of keys existing in the cluster - a big thanks to http://www.linkedin.com/in/rayjtsang[Ray Tsang] for contributing this feature! For the complete list of features please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12320896[release notes].  You can http://www.jboss.org/infinispan/downloads[download] the distribution or the https://repository.jboss.org/nexus/content/repositories/releases/org/infinispan/[maven artifact]. If you have any questions please check our http://www.jboss.org/infinispan/forums[forums], our mailing lists or ping us directly on irc://irc.freenode.org/infinispan[IRC]!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-01-19-infinispan-520cr2-is-out.adoc:32
+msgid "Cheers, Mircea"
+msgstr ""

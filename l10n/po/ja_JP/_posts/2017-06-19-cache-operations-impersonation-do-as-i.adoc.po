@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2017-06-19-cache-operations-impersonation-do-as-i.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-06-19-cache-operations-impersonation-do-as-i.adoc:12
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: 'Cache operations impersonation: do as I say (or maybe as she says)'\n"
+"permalink: /blog/:year/:month/:day/cache-operations-impersonation-do-as-i\n"
+"date: '2017-06-19T00:22:00.000-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \"security\",\n"
+"\"API\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4778146125056025393\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/06/cache-operations-impersonation-do-as-i.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-06-19-cache-operations-impersonation-do-as-i.adoc:17
+msgid "The implementation of cache authorization in Infinispan has traditionally followed the JAAS model of wrapping calls in a PrivilegedAction invoked through Subject.doAs(). This led to the following cumbersome pattern:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-06-19-cache-operations-impersonation-do-as-i.adoc:23
+msgid "We also provided an implementation which, instead of relying on enabling the SecurityManager, could use a lighter and faster ThreadLocal for storing the Subject:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-06-19-cache-operations-impersonation-do-as-i.adoc:30
+msgid "While this solves the performance issue, it still leads to unreadable code.  This is why, in Infinispan 9.1 we have introduced a new way to perform authorization on caches:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-06-19-cache-operations-impersonation-do-as-i.adoc:35
+msgid "Obviously, for multiple invocations, you can hold on to the \"impersonated\" cache and reuse it:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2017-06-19-cache-operations-impersonation-do-as-i.adoc:37
+msgid "We hope this will make your life simpler and your code more readable !"
+msgstr ""

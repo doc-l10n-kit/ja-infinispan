@@ -1,0 +1,198 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 9.0.0.Beta1 \"Ruppaner\"\n"
+"permalink: /blog/:year/:month/:day/infinispan-900beta1-ruppaner\n"
+"date: '2016-12-05T13:56:00.004-08:00'\n"
+"author: ttarrant\n"
+"tags: [ \"beta\", \"release\", \"marshalling\", \"off-heap\", \"performance\", \"query\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8652333474784512280\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/12/infinispan-900beta1-ruppaner.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:12
+msgid "http://design.jboss.org/infinispan/infinispan9/logo/final/infinispan9_pixelsizes_600.gif[image:http://design.jboss.org/infinispan/infinispan9/logo/final/infinispan9_pixelsizes_600.gif[image,width=320,height=77]]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:16
+msgid "It took us quite a bit to get here, but we're finally ready to announce Infinispan 9.0.0.Beta1, which comes loaded with a ton of goodies."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:19
+msgid "Performance improvements"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:21
+msgid "JGroups 4"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:23
+msgid "A new algorithm for non-transactional writes (aka the Triangle) which reduces the number of RPCs required when performing writes "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:24
+msgid "A new faster internal marshaller which produced smaller payloads. "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:25
+msgid "A new asynchronous interceptor core"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:27
+msgid "Off-Heap support"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:29
+msgid "Avoid the size of the data in the caches affecting your GC times"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:32
+msgid "https://github.com/ben-manes/caffeine[CaffeineMap]-based bounded data container"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:34
+msgid "Superior performance"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:35
+msgid "More reliable eviction"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:37
+msgid "Ickle, Infinispan's new query language"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:39
+msgid "A limited yet powerful subset of JPQL"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:40
+msgid "Supports full-text predicates"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:42
+msgid "The Server Admin console now supports both Standalone and Domain modes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:44
+msgid "Pluggable marshallers for Kryo and ProtoStuff"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:47
+msgid "The LevelDB cache store has been replaced with the better-maintained and faster http://rocksdb.org/[RocksDB] "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:49
+msgid "Spring Session support"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:51
+msgid "Upgraded Spring to 4.3.4.RELEASE"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:54
+msgid "We will be blogging about the above in detail over the coming weeks, including benchmarks and tutorials."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:57
+msgid "The following improvements were also present in our previous Alpha releases:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:59
+msgid "Graceful clustered shutdown / restart with persistent state"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:62
+msgid "Support for streaming values over Hot Rod, useful when you are dealing with very large entries"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:64
+msgid "Cloud and Containers"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:66
+msgid "Out-of-the box support for Kubernetes discovery"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:68
+msgid "Cache store improvements"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:72
+msgid "The JDBC cache store now use transactions and upserts. Also the internal connection pool is now based on https://brettwooldridge.github.io/HikariCP/[HikariCP]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:76
+msgid "Also, our documentation has received a big overhaul and we believe it is vastly superior than before."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:79
+msgid "There will be one more Beta including further performance improvements as well as additional features, so stay tuned."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:84
+msgid "Infinispan 9 is codenamed \"Ruppaner\" in honor of the http://www.ruppaner-bodensee.de/die-brauerei/[Konstanz brewery], since many of the improvements of this release have been brewed on the shores of the Bodensee !"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:85
+msgid "Prost!"
+msgstr ""

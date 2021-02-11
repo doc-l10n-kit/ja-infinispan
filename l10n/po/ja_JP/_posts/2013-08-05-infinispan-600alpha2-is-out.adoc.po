@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2013-08-05-infinispan-600alpha2-is-out.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-08-05-infinispan-600alpha2-is-out.adoc:12
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 6.0.0.Alpha2 is out!\n"
+"permalink: /blog/:year/:month/:day/infinispan-600alpha2-is-out\n"
+"date: '2013-08-05T05:57:00.000-07:00'\n"
+"author: infinispan\n"
+"tags: [ \"release\",\n"
+"\"alpha\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-911382729991642744\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/08/infinispan-600alpha2-is-out.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-08-05-infinispan-600alpha2-is-out.adoc:14
+msgid "Dear Infinispan community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-08-05-infinispan-600alpha2-is-out.adoc:17
+msgid "We're proud to announce the second Alpha release of Infinispan 6.0.0, and also the second release using the Apache Software Licence."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-08-05-infinispan-600alpha2-is-out.adoc:19
+msgid "New features in this release:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-08-05-infinispan-600alpha2-is-out.adoc:22
+msgid "A new https://issues.jboss.org/browse/ISPN-3169[query DSL] that is usable both in embedded/library mode and over HotRod."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-08-05-infinispan-600alpha2-is-out.adoc:25
+msgid "Support for https://issues.jboss.org/browse/ISPN-3234[JCache 0.8], the Public Review Draft version of the JSR-107 specification."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-08-05-infinispan-600alpha2-is-out.adoc:29
+msgid "A slimmer distribution, thanks to moving non-core cache store implementations to https://issues.jboss.org/browse/ISPN-3377[separate repositories]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-08-05-infinispan-600alpha2-is-out.adoc:39
+msgid "For a complete list of features and fixes included in this release please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12321854[release notes].  Visit our http://www.jboss.org/infinispan/downloads[downloads] section to find the latest release and if you have any questions please check our http://www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on http://www.blogger.com/null[IRC]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-08-05-infinispan-600alpha2-is-out.adoc:41
+msgid "Thanks to everyone for their involvement and contribution!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-08-05-infinispan-600alpha2-is-out.adoc:44
+msgid "Cheers Dan"
+msgstr ""

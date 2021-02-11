@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:12
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan Arquillian Container 1.1.0.Alpha1 released\n"
+"permalink: /blog/:year/:month/:day/infinispan-arquillian-container\n"
+"date: '2013-11-05T06:53:00.000-08:00'\n"
+"author: mgencur\n"
+"tags: [ \"testing\",\n"
+"\"announcement\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8879034544490361982\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/11/infinispan-arquillian-container.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:21
+msgid "Dear Infinispan users, a new version of Infinispan Arquillian Container has been released into JBoss Maven Repository as maven artifacts. The previous version was announced by http://blog.infinispan.org/2012/09/infinispan-arquillian-container-100cr1.html The blog post contains information related to setup of JBoss Maven Repository, including its address as well as address of the Infinispan Arquillian Container itself."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:26
+msgid "Maybe we should now call the project Infinispan Arquillian extension rather than Infinispan Arquillian Container because, since version 5.3, Infinispan Server has been based on JBoss Application Server 7 and the submodule called infinispan-arquillian-container could be removed."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:29
+msgid "As a result, the configuration of Arquillian with respect to Infinispan Server was simplified."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:31
+#, no-wrap
+msgid "Developing tests with Infinispan Server"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:35
+msgid "Now there's only one way to compose the arquillian.xml file:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:40
+msgid "The property ispnHome no longer exists. The path to the Infinispan Server is now specified via jbossHome. The serverConfig attribute then specifies the correct configuration file for the server."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:45
+msgid "In order to run tests with Infinispan Arquillian extension, one should use the following dependencies: org.jboss.as:jboss-as-arquillian-container-managed:jar:7.2.0.Final:test org.infinispan.arquillian.container:infinispan-arquillian-impl:jar:1.1.0.Alpha1:test"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:49
+msgid "Now that we've configured the server to run in our tests, it's time to introduce a few enhancements which will help you write tests more effectively."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:51
+#, no-wrap
+msgid "RemoteInfinispanServers"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:56
+msgid "You can still inject the reference to a running Infinispan Server by annotating an instance variable of type RemoteInfinispanServer with @InfinispanResource."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:60
+msgid "When there are more Infinispan servers to be injected, you can now use the following snippet instead of injecting each server independently:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:67
+msgid "  Then you can retrieve individual servers by calling .getServer(name) on the servers variable. The name must correspond to an existing container definition within arquillian.xml. The results of this call will be of type RemoteInfinispanServer."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:69
+#, no-wrap
+msgid "WithRunningServer"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:76
+msgid "So far users were forced to start the Infinispan Server either before the whole test suite (mode=\"suite\") or before each class separately (mode=\"class\"). The annotation WithRunningServer enables users to automatically start the server before a test method and stop it after the method. Example:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:81
+msgid "Note that in this case containers should be marked as mode=\"manual\" in arquillian.xml file so that Infinispan Arquillian extension can handle lifecycle of these servers by itself."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:85
+msgid "When @WithRunningServer annotation is placed on a class, the server(s)  will be started before the first method call in the test class, and stopped when JUnit @AfterClass event is triggered."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:87
+#, no-wrap
+msgid "IPv6 support"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:91
+msgid "Infinispan Arquillian extension can now work with Infinispan Server running on IPv6 as it can correctly connect to the server via JMX."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:93
+#, no-wrap
+msgid "Testing embedded Infinispan"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:99
+msgid "Running tests with plain Infinispan libraries instead of Infinispan Server has not changed since the last release. Read more about it in the previous blog post."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:102
+msgid "Thanks to Michal Linhard and Vitalii Chepeliuk who helped move the project one step further."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-11-05-infinispan-arquillian-container.adoc:105
+msgid "Cheers, Martin"
+msgstr ""

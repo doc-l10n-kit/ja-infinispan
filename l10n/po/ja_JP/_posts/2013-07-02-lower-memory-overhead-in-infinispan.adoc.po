@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:13
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Lower memory overhead in Infinispan 5.3.0.Final\n"
+"permalink: /blog/:year/:month/:day/lower-memory-overhead-in-infinispan\n"
+"date: '2013-07-02T02:26:00.002-07:00'\n"
+"author: galder\n"
+"tags: [ \"overhead\",\n"
+"\"memory\",\n"
+"\"performance\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4922983360989592166\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/07/lower-memory-overhead-in-infinispan.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:21
+msgid "Infinispan users worried about memory consumption should upgrade to http://infinispan.blogspot.cz/2013/06/infinispan-530final-is-out.html[Infinispan 5.3.0.Final] as soon as possible, because as part of the work we've done to https://docs.jboss.org/author/x/2oD2Aw[support storing byte arrays without wrappers], and the development of the http://infinispan.blogspot.co.uk/2013/05/interoperability-between-embedded-and.html[interoperability mode], we've been working to reduce Infinispan's memory overhead."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:26
+msgid "To measure overhead, we've used http://infinispan.blogspot.cz/2013/01/infinispan-memory-overhead.html[Martin Gencur's excellent memory consumption tests]. The results for entries with 512 bytes are:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:31
+msgid "Infinispan memory overhead, used in library mode: Infinispan 5.2.0.Final: ~151 bytes Infinispan 5.3.0.Final: ~135 bytes Memory consumption reduction: ~12%"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:36
+msgid "Infinispan memory overhead, for the Hot Rod server: Infinispan 5.2.0.Final: ~174 bytes Infinispan 5.3.0.Final: ~151 bytes Memory consumption reduction: ~15%"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:43
+msgid "Infinispan memory overhead, for the REST server: Infinispan 5.2.0.Final: ~208 bytes Infinispan 5.3.0.Final: ~172 bytes Memory consumption reduction: ~21%"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:47
+msgid "Infinispan memory overhead, for the Memcached server:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:49
+msgid "Infinispan 5.2.0.Final: ~184 bytes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:52
+msgid "Infinispan 5.3.0.Final: ~180 bytes Memory consumption reduction: ~2%"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:58
+msgid "This is great news for the Infinispan community but our effort doesn't end here. We'll be working on further improvements in next releases to bring down cost even further."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:61
+msgid "Cheers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:62
+msgid "Galder"
+msgstr ""

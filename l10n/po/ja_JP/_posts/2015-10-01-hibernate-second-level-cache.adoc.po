@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:13
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Hibernate Second Level Cache improvements\n"
+"permalink: /blog/:year/:month/:day/hibernate-second-level-cache\n"
+"date: '2015-10-01T06:41:00.003-07:00'\n"
+"author: infinispan\n"
+"tags: [ \"jpa\",\n"
+"\"hibernate\",\n"
+"\"second level cache provider\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2426495200310961025\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/10/hibernate-second-level-cache.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:21
+msgid "Infinispan has been implementing *Hibernate Second Level Cache* for a long time, replacing the previous JBoss Cache implementation with very similar logic. The main aim of the implementation has always been to have very fast reads, keeping the overhead of cache during reads on minimum. This was achieved using local reads in invalidation-mode cache and Infinispan's _putForExternalRead_ operation, where the request to cache never blocks."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:31
+msgid "Recently we've looked on the implementation again to see whether we can speed it up even more. For a long time you could use only transactional caches to keep the cache in sync with database. However transactions come at some cost so we thought about a way to get around it. And we have found it, through custom interceptors we have managed to do two-phase updates to the cache and now the non-transactional caches are the default configuration. So, if you're using Hibernate with your own configuration, don't forget to update that when migrating to Hibernate ORM 5!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:44
+msgid "With transactions gone, our task was not over. So far entity/collection caching has been implemented for invalidation mode caches, but it's tempting to consider replication mode, too. For replicated caches, we got rid of a special cache for _pending puts_ (this local cache detects out-of-date reads, keeping the entity cache consistent). Instead, we used different technique where a logical removal from the cache is substituted by replace with a token called _tombstone_, and updates pre-invalidate the cache in a similar way. This change opened the possibility for *non-transactional replicated* and *distributed* caches (transactional mode is not supported). We were pleased to see the results of some benchmark where the high hit ratio in replicated caches has dramatically speeded up all operations."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:51
+msgid "There is one downside of the current implementation - in replication mode, you *should not use eviction*, as eviction cannot tell regular entity (which can be evicted) from the tombstone. If tombstone was evicted, there's a risk of inconsistent reads. So when using replicated caches, you should rely on expiration to keep your cache slender. We hope that eventually we'll remove this limitation."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:56
+msgid "All modes described above give us cache without any stale reads. That comes at a cost - each modification (insert, update or removal) requires 2 accesses to the cache (though, sometimes the second access can be asynchronous). Some applications do not require such strict consistency"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:64
+msgid "and that's where _nonstrict-read-write_ comes to the scene. Here we guarantee that the cache will provide the same result as DB after the modifying transaction commits - between DB commit and transaction commit a stale value can be provided. If you use asynchronous cache, this may be delayed even more but unless the operation fails (e.g. due to locking timeout) the cache will eventually get into a state consistent with DB.  This allows us to limit modifications to single cache access per modification."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:70
+msgid "Note that _nonstrict-read-write_ mode is supported only for *versioned* entities/collections (that way we can find out which entity is actually newer). Also, you cannot use eviction in nonstrict-read-write mode, for the same reason as in tombstone-based modes. Invalidation cache mode is not supported neither."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:78
+msgid "If you'll try out the most recent Hibernate ORM, you'll find out that *Infinispan 7.2.x* is used there. This is because ORM 5.0.0.Final was released before Infinispan 8.0.0.Final went out and we can't change the major version of dependency in micro-release. However, we try to keep *Infinispan 8.0.x* binary compatible (in parts used by Hibernate), and therefore you can just replace the dependencies on classpath and use the most recent Infinispan, if you prefer to do so."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:80
+msgid "To sum things up, here is the table of supported configurations:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:85
+msgid "Concurrency strategy"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:87
+msgid "Cache transactions"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:89
+msgid "Cache mode"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:91
+msgid "Implementation"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:93
+msgid "Eviction"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:95
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:97
+msgid "transactional"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:99
+msgid "invalidation"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:101
+msgid "pending puts"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:103
+msgid "yes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:105
+msgid "read-write"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:107
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:109
+msgid "non-transactional"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:111
+msgid "replicated/distributed"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:113
+msgid "tombstones"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:115
+msgid "no"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:117
+msgid "nonstrict-read-write"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:119
+msgid "versioned entries"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:128
+msgid "There's also the _read-only_ mode - this can be used instead of both _transactional_ or _read-write_ modes, but at this point it does not offer any further performance gains, since we have to make sure that you don't see a removed value. Actually, it also does not matter whether you specify transactional or read-write mode; the proper strategy will be picked according to your cache configuration (transactional vs.  non-transactional)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:132
+msgid "We hope that you'll try these new modes and many consistency fixes included along (you should use Hibernate ORM *5.0.2.Final* or later), and tell us about your experience."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:134
+msgid "Happy caching!"
+msgstr ""

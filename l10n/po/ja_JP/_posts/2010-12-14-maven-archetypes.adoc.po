@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2010-12-14-maven-archetypes.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-12-14-maven-archetypes.adoc:12
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Maven Archetypes\n"
+"permalink: /blog/:year/:month/:day/maven-archetypes\n"
+"date: '2010-12-14T10:26:00.000-08:00'\n"
+"author: msurtani\n"
+"tags: [ \"archetype\",\n"
+"\"maven\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5841657906823405007\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/12/maven-archetypes.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-12-14-maven-archetypes.adoc:20
+msgid "To help you jump-start a new project using Infinispan, we now have Maven Archetypes you can use.  If you don't know what a Maven Archetype is, you should read http://maven.apache.org/guides/introduction/introduction-to-archetypes.html[this article] which explains archetypes in more detail.  Of course, this assumes that you are using http://maven.apache.org/[Maven] as a build tool."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-12-14-maven-archetypes.adoc:28
+msgid "We've created two separate archetypes for Infinispan.  The first sets you up with a clean, new directory structure and sample code for a new Infinispan project, including sample configuration files and skeleton code, as well as a Maven pom.xml descriptor containing all necessary dependencies."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-12-14-maven-archetypes.adoc:38
+msgid "The second archetype is targeted towards people using Infinispan and want to report bugs and contribute tests to the project.  It sets up a new project with a skeleton functional test, including all of Infinispan's test helper utilities to simulate network setup and failure from within a test.  More important, the generated skeleton test is structured such that it can easily be assimilated into Infinispan's core test suite if necessary."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-12-14-maven-archetypes.adoc:44
+msgid "For more information on these archetypes, including a simple step-by-step guide, read http://community.jboss.org/wiki/InfinispanMavenArchetypes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-12-14-maven-archetypes.adoc:48
+msgid "Enjoy"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2010-12-14-maven-archetypes.adoc:49
+msgid "Manik"
+msgstr ""

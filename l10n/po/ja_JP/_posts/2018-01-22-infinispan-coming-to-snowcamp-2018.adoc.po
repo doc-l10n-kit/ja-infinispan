@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-01-22-infinispan-coming-to-snowcamp-2018.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-01-22-infinispan-coming-to-snowcamp-2018.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan coming to Snowcamp 2018\n"
+"permalink: /blog/:year/:month/:day/infinispan-coming-to-snowcamp-2018\n"
+"date: '2018-01-22T06:15:00.000-08:00'\n"
+"author: karesti\n"
+"tags: [ \" conference\", \"snowcamp\", \"clustered locks\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6482689838138072736\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/01/infinispan-coming-to-snowcamp-2018.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-01-22-infinispan-coming-to-snowcamp-2018.adoc:24
+msgid "This week, the 25th of January, I will be presenting a talk about http://infinispan.org/docs/dev/user_guide/user_guide.html#clustered_lock[Clustered Locks] at the http://snowcamp.io/en/[Snowcamp 2018 conference] in Grenoble (France). During the live-coding talk, I will share the design and code I've been working on to create this first version of the clustered locks. These locks will be used by the http://vertx.io/docs/vertx-infinispan/java/[Vert.x Cluster Manager], but they can be useful to any Infinispan user since version 9.2 (final release coming very soon!!). If you are planning to use this API, we would love to hear from you to give us some feedback and keep us posted on your use case!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-01-22-infinispan-coming-to-snowcamp-2018.adoc:30
+msgid "If you are attending the conference, fell free to reach me to discuss about Infinispan+Vert.x, locks, http://infinispan.org/docs/dev/user_guide/user_guide.html#multimap_cache[Multimap], http://blog.infinispan.org/2017/12/first-steps-with-vertx-and-infinispan-rest-api.html[cute names] or any other topic that you care about!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-01-22-infinispan-coming-to-snowcamp-2018.adoc:32
+msgid "See you!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-01-22-infinispan-coming-to-snowcamp-2018.adoc:34
+msgid "Katia"
+msgstr ""

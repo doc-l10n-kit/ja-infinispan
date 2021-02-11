@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2015-09-21-introducing-infinispan-hadoop-connector.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-21-introducing-infinispan-hadoop-connector.adoc:14
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Introducing the Infinispan Hadoop Connector\n"
+"permalink: /blog/:year/:month/:day/introducing-infinispan-hadoop-connector\n"
+"date: '2015-09-21T12:45:00.000-07:00'\n"
+"author: gustavonalle\n"
+"tags: [ \"yarn\",\n"
+"\"hadoop\",\n"
+"\"server\",\n"
+"\"flink\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2425361303736535353\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/09/introducing-infinispan-hadoop-connector.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-21-introducing-infinispan-hadoop-connector.adoc:17
+msgid "The version 0.1 of the Infinispan Hadoop connector has just been made available!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-21-introducing-infinispan-hadoop-connector.adoc:22
+msgid "The connector will host several integrations with Hadoop related projects, and in this first release it supports converting Infinispan server into a Hadoop compliant data source, by providing an implementation of InputFormat and OutputFormat."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2015-09-21-introducing-infinispan-hadoop-connector.adoc:24
+#, no-wrap
+msgid "The InfinispanInputFormat and InfinispanOutputFormat"
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2015-09-21-introducing-infinispan-hadoop-connector.adoc:26
+#: upstream/_posts/2015-09-21-introducing-infinispan-hadoop-connector.adoc:73
+#, no-wrap
+msgid " "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-21-introducing-infinispan-hadoop-connector.adoc:33
+msgid "A Hadoop InputFormat is a specification of how a certain data source can be partitioned and how to read data from each of the partitions.  Conversely, OutputFormat is used to write."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-21-introducing-infinispan-hadoop-connector.adoc:36
+msgid "Looking closely at the Hadoop's InputFormat interface, we can see two methods:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-21-introducing-infinispan-hadoop-connector.adoc:41
+msgid "    List<InputSplit> getSplits(JobContext context);       RecordReader<K,V> createRecordReader(InputSplit split,TaskAttemptContext context);"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-21-introducing-infinispan-hadoop-connector.adoc:48
+msgid "The first method defines essentially a data partitioner, calculating one or more InputSplits that contain information about a certain partition of the data. With possession of a InputSplit, one can use it to obtain a RecordReader to iterate over the data. These two operations allow for parallelization of data processing across multiple nodes, and that's how Hadoop map reduce achieves a high throughput over large datasets."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-21-introducing-infinispan-hadoop-connector.adoc:54
+msgid "In Infinispan terms, each partition is a set of segments on a certain server, and a record reader is a remote iterator over those segments.  The default partitioner shipped with the connector will create as many partitions as servers in the cluster, and each partition will contain the segments that are associated with that specific server."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2015-09-21-introducing-infinispan-hadoop-connector.adoc:56
+#, no-wrap
+msgid "Not only map reduce"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-21-introducing-infinispan-hadoop-connector.adoc:68
+msgid "Although the InfinispanInputFormat and InfinispanOutputformat can be used to run traditional Hadoop map reduce jobs over Infinispan data, it is not coupled to the Hadoop map reduce runtime. It is possible to leverage the connector to integrate Infinispan with other tools that, besides supporting Hadoop I/O interfaces, are able to read and write data more efficiently. One of those tools is https://flink.apache.org/[Apache Flink], that has a dataflow engine capable of doing batch and stream data processing that supersedes the classic two stage map reduce approach. "
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2015-09-21-introducing-infinispan-hadoop-connector.adoc:71
+#, no-wrap
+msgid "Apache Flink example"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-21-introducing-infinispan-hadoop-connector.adoc:79
+msgid "Apache Flink supports Hadoop's InputFormat as a data source to execute batch jobs, so to integrate with Infinispan it's straightforward:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-21-introducing-infinispan-hadoop-connector.adoc:87
+msgid "Please refer to the https://github.com/infinispan/infinispan-hadoop/tree/master/samples/flink[complete sample] that has docker images for both Apache Flink and Infinispan server, and detailed instructions on how to execute and customise job."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2015-09-21-introducing-infinispan-hadoop-connector.adoc:89
+#, no-wrap
+msgid "Stay tuned"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-21-introducing-infinispan-hadoop-connector.adoc:95
+msgid "More details about the connector, maven coordinates, configuration options, sources and samples can be found at the https://github.com/infinispan/infinispan-hadoop[project repository]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2015-09-21-introducing-infinispan-hadoop-connector.adoc:102
+msgid "In upcoming versions we expect to have a tighter integration with the Hadoop platform in order to run Infinispan clusters as a YARN application (https://issues.jboss.org/browse/ISPN-5709[ISPN-5709]), and also support other tools from the ecosystem such as https://pig.apache.org/[Apache Pig] (https://issues.jboss.org/browse/ISPN-5749[ISPN-5749])"
+msgstr ""

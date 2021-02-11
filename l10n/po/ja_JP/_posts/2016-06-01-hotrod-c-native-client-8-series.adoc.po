@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:12
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: HotRod C++ Native Client 8 Series\n"
+"permalink: /blog/:year/:month/:day/hotrod-c-native-client-8-series\n"
+"date: '2016-06-01T01:16:00.000-07:00'\n"
+"author: rigazilla\n"
+"tags: [ \"c++\",\n"
+"\"hotrod\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3077813811486842269\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/06/hotrod-c-native-client-8-series.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:16
+msgid "The Infinispan Team started the development of the new HotRod C++ Client (version 8) with two main goals in mind: update and refresh the code and reduce the feature gap between the C++ client and its Java big brother."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:22
+msgid "The work is still in progress, but since we're close to the 8.0.0.Final release, I would like to describe, in this and in the following posts, what's changed as of today."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:30
+msgid "Although there are a lot of changes and improvements in the code (protocol updates, segments topology, configurable balancing strategy...  you can have a detailed view of the activities stream browsing to the https://issues.jboss.org/projects/HRCPP/issues[Jira issues]), I would like to focus on the following three big changes:"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:32
+#: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:35
+#, no-wrap
+msgid "C++11 Standard"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:33
+msgid "Remote Execution"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:34
+msgid "Queries"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:44
+msgid "Activities grouped under this title are motivated by the change in the development approach of the new features. Until version 7 [#result_box]#we have followed the approach of keeping the baseline compiler requirements quite low to ensure a broad client portability, even to platforms with old compilers/libraries, #[#result_box]#but when we started development for the 8 series we felt that this principle would excessively complicate the implementation of new features.#"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:51
+msgid "With this in mind, we have fully embraced the new C++11 language feature (such as lambda function in the asynchronous interface method, or variadic templates) and pushed for extensive use of standard library container classes in lieu of our custom ones."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:59
+msgid "We know that in this way we may have limited use of the client to more recent platforms (bye bye RHEL 6) but fortunately the source is open and we have a very good build procedure based on cmake that can easily generates builder for the most used pair <compiler model, compiler version>."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:66
+msgid "The work on C++11 language adoption is still in progress and the goal on this front is to update the code wherever it results in improved readability (i.e. the _auto_ keyword is a simple but powerful way to reduce code verbosity)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:75
+msgid "Because in this cycle we have added a few new features that required the introduction of some library dependencies and automatic code generation, [#result_box]#the build process has become more complex, but we're doing our best to keep it manageable. We want to ensure that our packaging structure is what users expect on all of our platforms with respect to libraries, headers and documentation.#"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:78
+#: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:84
+#: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:90
+#: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:95
+msgid "[#result_box]# #"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:81
+msgid "[#result_box]#I will be glad to hear from any of you about any thoughts and suggestions, especially on the portability issues.#"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:87
+msgid "[#result_box]#In the next post I will show an example of the new Remote Script Execution features.#"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:92
+msgid "[#result_box]#Cheers#"
+msgstr ""

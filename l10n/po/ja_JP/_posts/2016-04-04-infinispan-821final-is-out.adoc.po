@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2016-04-04-infinispan-821final-is-out.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-04-04-infinispan-821final-is-out.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 8.2.1.Final is out!\n"
+"permalink: /blog/:year/:month/:day/infinispan-821final-is-out\n"
+"date: '2016-04-04T10:08:00.000-07:00'\n"
+"author: slaskawiec\n"
+"tags: [ \" release\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8777765907690133234\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/04/infinispan-821final-is-out.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-04-04-infinispan-821final-is-out.adoc:12
+msgid "Dear community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-04-04-infinispan-821final-is-out.adoc:16
+msgid "We are proud to announce the release of Infinispan 8.2.1.Final. http://infinispan.org/download#stable[Download it here]** **and try it out!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-04-04-infinispan-821final-is-out.adoc:18
+msgid "The release contains the following changes:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-04-04-infinispan-821final-is-out.adoc:21
+msgid "Improved test suite stability"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-04-04-infinispan-821final-is-out.adoc:22
+msgid "Fixed deadlock and default cache race condition during server start"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-04-04-infinispan-821final-is-out.adoc:23
+msgid "Fixed ShardIndexManager stop order"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-04-04-infinispan-821final-is-out.adoc:24
+msgid "Rebalance start now contains node info"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-04-04-infinispan-821final-is-out.adoc:25
+msgid "Fixed Timeout updating the JGroups view after killing one node"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-04-04-infinispan-821final-is-out.adoc:26
+msgid "Boolean projections will work correctly in compatibility mode"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-04-04-infinispan-821final-is-out.adoc:28
+msgid "We also upgraded some of our components:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-04-04-infinispan-821final-is-out.adoc:30
+msgid "Hibernate Search was upgraded to 5.6.0.Alpha3"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-04-04-infinispan-821final-is-out.adoc:31
+msgid "XStream was upgraded to 1.4.9"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-04-04-infinispan-821final-is-out.adoc:39
+msgid "Check out the http://infinispan.org/release-notes/#8.2[stable release notes], http://infinispan.org/download/[download the releases]** **and tell us all about it on the https://developer.jboss.org/en/infinispan/content[forum], on our https://issues.jboss.org/projects/ISPN[issue tracker ]or on IRC on the #infinispan channel on http://webchat.freenode.net/?channels=%23infinispan[Freenode]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2016-04-04-infinispan-821final-is-out.adoc:41
+msgid "Cheers, The Infinispan team"
+msgstr ""

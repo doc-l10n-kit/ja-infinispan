@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/cache-store-implementations.md:4
+#, no-wrap
+msgid ""
+"layout: cache-store-implementations\n"
+"title: Persistent Cache Stores\n"
+msgstr ""
+
+#. type: Title ###
+#: upstream/cache-store-implementations.md:6
+#, no-wrap
+msgid "Persistent Cache Stores"
+msgstr ""
+
+#. type: Plain text
+#: upstream/cache-store-implementations.md:8
+#, no-wrap
+msgid "A cache store is how Infinispan optional persists data - either to disk or some other form of durable storage. A number of cache store implementations are available for you to use, and you can even implement your own custom cache store quite easily. A good way to do so is to look at the source code of an existing cache store and modifying it accordingly. Learn more about Cache Stores and how to configure and use them in the docs.\n"
+msgstr ""

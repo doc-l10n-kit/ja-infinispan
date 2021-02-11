@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:15
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan CLI\n"
+"permalink: /blog/:year/:month/:day/infinispan-cli\n"
+"date: '2012-06-22T12:44:00.002-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \"command line interface\",\n"
+"\"monitoring\",\n"
+"\"data entry\",\n"
+"\"shell\",\n"
+"\"cli\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7295457461495208487\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/06/infinispan-cli.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:20
+msgid "When using Infinispan, both embedded as a library in an application or as a standalone server, I always longed for a simple standalone tool for interacting with the caches and the data within them. As all itches go, I had to scratch it, and so I present you with Infinispan's own CLI !"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:24
+msgid "The CLI allows you to inspect and modify the data within an Infinispan cache and also provides access to some of the more advanced features (such as transactions)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:31
+msgid "The CLI is built out of two elements: a server-side module and the client command tool. The server-side module is optional, and provides the actual interpreter for the commands. Currently the server (and the client) use the JMX protocol to communicate, but in a future release we plan to support other communication protocols (in particular our own HotRod)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:34
+msgid "To get started, you need at least Infinispan 5.2.0.ALPHA1. Unzip the distribution and start a server:"
+msgstr ""
+
+#. type: Block title
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:36
+#, no-wrap
+msgid "/bin/startServer.sh -r hotrod"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:42
+msgid "The startServer.sh script automatically enables remote JMX connections and you can discover the port by running the jps command (part of the JDK/JRE) as follows:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:45
+msgid "jps -v"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:48
+msgid "which should display something like"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:56
+msgid "26532 Jps -Dapplication.home=/usr/lib/jvm/jdk1.7.0_04 -Xms8m 20508 Main -Djava.net.preferIPv4Stack=true -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=50434 -Dsun.nio.ch.bugLevel=\"\" -Dlog4j.configuration=file:////home/tst/Downloads/infinispan-5.2.0-SNAPSHOT/etc/log4j.xml"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:60
+msgid "Now we can connect to the Infinispan instance using the CLI as follows:"
+msgstr ""
+
+#. type: Block title
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:62
+#, no-wrap
+msgid "/bin/ispn-cli.sh -c jmx://localhost:50434"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:66
+msgid "You will be presented with a prompt:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:69
+msgid "[jmx://localhost:50434]MyCacheManager>"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:73
+msgid "The above prompt shows which host we're currently connected to and which CacheManager is being used (in this case: MyCacheManager)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:75
+msgid "Let's try putting some data in the cache"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:78
+msgid "put a a"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:82
+msgid "Now let's check that the cache actually contains the entry we've just put"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:85
+msgid "get a"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:88
+msgid "Which will display a glorious"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:91
+msgid "a"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:94
+msgid "The CLI understands several commands. Just type"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:96
+msgid "help"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:98
+msgid "to get a list of them and then"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:100
+msgid "help [commandname]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:102
+msgid "to get help on a specific command's syntax."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:108
+msgid "The CLI uses the wonderful https://github.com/stalep/jreadline[JReadline], so it supports all sorts of fancy buffer editing, history navigation and tab-completion as if you were in your comfortable OS shell (sorry Windows, cmd is not exactly a modern shell)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:115
+msgid "An important aspect of an Infinispan cache is that you can store whatever data you want in it. The CLI tries to interpret the data from the input you give it. It understands most of the Java native types (int, long, float, double, boolean, String), some additional fancy types (such as UUIDs) and a JSON syntax for mapping any type of Java class, so that you can write:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:117
+msgid "put user1 \\{ \"package.MyClass\": \\{\"i\": 5, \"x\": null, \"b\": true } };"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:120
+msgid "Conversely, when performing a get, the interpreter will output a JSON representation of your classes."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:128
+msgid "The CLI is still work in progress and will evolve and mature during Infinispan's 5.2 development cycle. You are all welcome to try it out and provide feedback on the https://community.jboss.org/en/infinispan?view=discussions[forums], on IRC on channel #infinispan and using our https://issues.jboss.org/browse/ISPN[issue tracker] to report bugs and ask for enhancements."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:131
+msgid "I will soon be blogging again, hopefully with a video which will illustrate some of the more fanciful features of the CLI. Enjoy."
+msgstr ""

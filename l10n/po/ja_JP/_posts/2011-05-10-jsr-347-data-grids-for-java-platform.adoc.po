@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2011-05-10-jsr-347-data-grids-for-java-platform.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-05-10-jsr-347-data-grids-for-java-platform.adoc:12
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: 'JSR 347: Data Grids for the Java platform, a call for EG members'\n"
+"permalink: /blog/:year/:month/:day/jsr-347-data-grids-for-java-platform\n"
+"date: '2011-05-10T06:34:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \"jsr 107\",\n"
+"\"jsr 347\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4868472173012970919\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/05/jsr-347-data-grids-for-java-platform.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-05-10-jsr-347-data-grids-for-java-platform.adoc:23
+msgid "Exciting times; today the JCP voted in a new JSR that I have proposed, http://www.jcp.org/en/jsr/detail?id=347[JSR 347: Data Grids for the Java platform].    I http://infinispan.blogspot.com/2011/04/following-up-on-my-previous-response-to.html[blogged about the original JSR proposal], and posted a http://infinispan.blogspot.com/2011/04/in-response-to-pcworld.html[follow-up] to some criticisms around the proposal some weeks ago.  The proposal, however, went ahead, was assigned a number (347!) and has just been voted in by the JCP http://www.jcp.org/en/participation/committee[executive committee]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-05-10-jsr-347-data-grids-for-java-platform.adoc:27
+msgid "Before I go into the details of 347 and my plans around it, I'd like to highlight some concerns in the community, in the area of overlap with http://www.jcp.org/en/jsr/detail?id=107[JSR 107]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-05-10-jsr-347-data-grids-for-java-platform.adoc:30
+#, no-wrap
+msgid ""
+"*Is JSR 107 dead?*\n"
+"No.  In very recent months, there has been a flurry of activity in JSR\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-05-10-jsr-347-data-grids-for-java-platform.adoc:32
+#, no-wrap
+msgid ""
+" Activity which I am a part of, and hope will drive 107 to\n"
+"completion.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-05-10-jsr-347-data-grids-for-java-platform.adoc:40
+#, no-wrap
+msgid ""
+"*Does JSR 107 compete with JSR 347?*\n"
+"No.  JSR 347 aims to build upon JSR 107.  JSR 107's goals is to provide\n"
+"a temporary caching API for the Java SE platform.  JSR 347 plans to\n"
+"reuse JSR 107's APIs, adding additional features such as an asynchronous\n"
+"API, as well as defining mandatory characteristics such as behaviour\n"
+"with XA/JTA transactions and distributed workloads, thus targeting the\n"
+"Java EE platform.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-05-10-jsr-347-data-grids-for-java-platform.adoc:44
+#, no-wrap
+msgid ""
+"*Will JSR 347 retard the progress of JSR 107?*\n"
+"No.  If anything, JSR 347's need for JSR 107 to complete will add\n"
+"impetus to the JSR 107 effort.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-05-10-jsr-347-data-grids-for-java-platform.adoc:48
+msgid "I sincerely hope the existing expert group of JSR 107 (of which I am a member) can and will work well with (and join!) the nascent expert group of JSR 347, to drive both JSRs to successful completion."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-05-10-jsr-347-data-grids-for-java-platform.adoc:53
+msgid "Now onto next steps with JSR 347: forming an expert group to put together an early draft.  I would like to open invitations to join the expert group, please sign up on the http://www.jcp.org/en/jsr/egnom?id=347[JCP website]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-05-10-jsr-347-data-grids-for-java-platform.adoc:61
+msgid "With regards to process, with my background in open source and working with http://bob.mcwhirter.org/blog/2010/09/13/remote-worker-distributed-team/[distributed teams], I intend this JSR to be developed in the public, making use of public mailing lists, public IRC channels and the like.  I've even set up a http://twitter.com/#!/jsr347[twitter account for JSR 347] so people interested in its progress may follow it!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2011-05-10-jsr-347-data-grids-for-java-platform.adoc:63
+msgid "Cheers Manik"
+msgstr ""

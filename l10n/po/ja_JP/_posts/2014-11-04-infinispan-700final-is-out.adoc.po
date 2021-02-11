@@ -1,0 +1,299 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:12
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 7.0.0.Final is out!!\n"
+"permalink: /blog/:year/:month/:day/infinispan-700final-is-out\n"
+"date: '2014-11-04T04:09:00.000-08:00'\n"
+"author: galder\n"
+"tags: [ \"release\",\n"
+"\"final\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7730902732186547984\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/11/infinispan-700final-is-out.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:14
+msgid "Hi all,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:17
+msgid "We are really proud to announce the release of *Infinispan 7.0.0.Final*!!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:22
+msgid "This is the culmination of several months of development which has focused on on Security, Cluster Partition handling, JSR-107 JCache 1.0.0 support, Clustered Listeners, Remote Events, Query improvements and brand new XML configuration."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:27
+msgid "To mark the occasion, the team has prepared a http://infinispan.org/infinispan-7.0/[*thorough release notes page*] highlighting all the major features and enhancements implemented in Infinispan 7.0 series."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:30
+msgid "The Infinispan team would like to recognise all the community members that have contributed to this release, in no particular order:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:35
+#, no-wrap
+msgid ""
+"*Radim Vansa* for his\n"
+"http://blog.infinispan.org/2014/10/soft-index-file-store.html[Soft-Index\n"
+"File Store] and many more enhancements and fixes\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:38
+#, no-wrap
+msgid ""
+"*Takayoshi Kimura* for fixes such\n"
+"as http://issues.jboss.org/browse/ISPN-3752[ISPN-3752], https://issues.jboss.org/browse/ISPN-4476[ISPN-4476]\n"
+"and https://issues.jboss.org/browse/ISPN-4477[ISPN-4477]\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:41
+#, no-wrap
+msgid ""
+"*Jiri Holusa* for his tremendous work to improve our test coverage\n"
+"work and fixing issues like\n"
+"https://issues.jboss.org/browse/ISPN-3442[ISPN-3442] \n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:45
+#, no-wrap
+msgid ""
+"*Karl von Randow* for his documentation fixes, init.d fixes in\n"
+"https://issues.jboss.org/browse/ISPN-4141[ISPN-4141] and enhancements\n"
+"to putForExternalRead method as part of\n"
+"https://issues.jboss.org/browse/ISPN-3792[ISPN-3792]\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:48
+#, no-wrap
+msgid ""
+"*Jakub Markos* for his work to optimise the Infinispan Server\n"
+"testsuite in https://issues.jboss.org/browse/ISPN-4317[ISPN-4317] and\n"
+"many fixes and test suite enhancements\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:50
+#, no-wrap
+msgid ""
+"*Michal Linhard* fox his\n"
+"https://issues.jboss.org/browse/ISPN-3750[ISPN-3750] fix\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:52
+#, no-wrap
+msgid ""
+"*Vitalii Chepeliuk* for his work on extending test coverage and fixes\n"
+"such as https://issues.jboss.org/browse/ISPN-3880[ISPN-3880]\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:55
+#, no-wrap
+msgid ""
+"*Wolf Dieter-Fink* for fixes such as\n"
+"https://issues.jboss.org/browse/ISPN-3916[ISPN-3916] and\n"
+"https://issues.jboss.org/browse/ISPN-3912[ISPN-3912]\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:58
+#, no-wrap
+msgid ""
+"*Vojtech Juranek* for his continued work to improve Infinispan with\n"
+"fixes such as https://issues.jboss.org/browse/ISPN-4072[ISPN-4072] and\n"
+"his work to increase the test coverage\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:61
+#, no-wrap
+msgid ""
+"*Martin Gencur* for the many issues he fixed\n"
+"including https://issues.jboss.org/browse/ISPN-3771[ISPN-3771], https://issues.jboss.org/browse/ISPN-4499[ISPN-4499]\n"
+"and others...\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:63
+#, no-wrap
+msgid ""
+"*Norman Maurer* for porting Infinispan Servers to use\n"
+"http://netty.io/[Netty 4]\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:66
+#, no-wrap
+msgid ""
+"*Alan Field* for fixes such\n"
+"as https://issues.jboss.org/browse/ISPN-4645[ISPN-4645]\n"
+"and https://issues.jboss.org/browse/ISPN-4376[ISPN-4376]\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:70
+#, no-wrap
+msgid ""
+"*Tomáš Sýkora* for fixes such\n"
+"as https://issues.jboss.org/browse/ISPN-3136[ISPN-3136] and\n"
+"https://issues.jboss.org/browse/ISPN-4076[ISPN-4076], and improved test\n"
+"coverage\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:73
+#, no-wrap
+msgid ""
+"*Paul Ferraro* for many fixes including fixes such\n"
+"as https://issues.jboss.org/browse/ISPN-4375[ISPN-4375]\n"
+"and https://issues.jboss.org/browse/ISPN-4374[ISPN-4374]\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:75
+#, no-wrap
+msgid ""
+"*Nicolas Filotto* for\n"
+"his https://issues.jboss.org/browse/ISPN-3689[ISPN-3689] fix\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:78
+#, no-wrap
+msgid ""
+"*Rajesh Jangam* for\n"
+"his https://issues.jboss.org/browse/ISPN-3877[ISPN-3877]\n"
+"and https://issues.jboss.org/browse/ISPN-3894[ISPN-3894] fixes\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:82
+#, no-wrap
+msgid ""
+"*Brett Meyer* for his amazing work to get Infinispan working in OSGI\n"
+"environments as part\n"
+"of https://issues.jboss.org/browse/ISPN-800[ISPN-800] and many related\n"
+"fixes\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:83
+#, no-wrap
+msgid "*Radoslav Husar* for his several fixes\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:85
+#, no-wrap
+msgid ""
+"*slaskawiec* for his work to improve our CDI integration and\n"
+"moving to Jackson for JSON\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:86
+#, no-wrap
+msgid "*Karsten Blees* for his LIRS eviction fixes\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:88
+#, no-wrap
+msgid ""
+"*Niels Bertramn* for\n"
+"his https://issues.jboss.org/browse/ISPN-4679[ISPN-4679] fix\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:90
+#, no-wrap
+msgid ""
+"*Duncan Doyle* for his work on\n"
+"https://issues.jboss.org/browse/ISPN-4637[ISPN-4637]\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:91
+#, no-wrap
+msgid "*Emmanuel Bernard* for his documentation improvements\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:92
+#, no-wrap
+msgid "*Gabriel Francisco* for his work to revamp the Mongo DB cache store\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:93
+#, no-wrap
+msgid "*Bilgin Ibryam* for his OSGI fixes\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:95
+#, no-wrap
+msgid ""
+"*Erik Salter* for his work on orphaned transactions and fixes such\n"
+"as https://issues.jboss.org/browse/ISPN-4872[ISPN-4872]\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:98
+msgid "Thanks to all contributors for your amazing work and effort! We hope you carry on contributing in future releases."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:105
+msgid "Finally, during the Infinispan 7.0 series, Gustavo Fernandes has joined the team making outstanding contributions in our Query project, and Tristan Tarrant has joined the team full time taking on Infinispan's Security layer. Thanks to both!!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:109
+msgid "Cheers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:111
+msgid "Galder"
+msgstr ""

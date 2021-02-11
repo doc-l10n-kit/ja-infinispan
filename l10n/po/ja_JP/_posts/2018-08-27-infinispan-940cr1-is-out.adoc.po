@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:10
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 9.4.0.CR1 is out!\n"
+"permalink: /blog/:year/:month/:day/infinispan-940cr1-is-out\n"
+"date: '2018-08-27T01:34:00.001-07:00'\n"
+"author: karesti\n"
+"tags: [ \" release\", \"release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8732546449779560601\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/08/infinispan-940cr1-is-out.html\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:12
+msgid "Dear Infinispan users,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:15
+msgid "We have just released *9.4.0.CR1* which includes bug fixes and improvements."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:17
+msgid "Highlights of this release include:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:20
+msgid "Near cache and client side TTL (https://issues.jboss.org/browse/ISPN-9098[ISPN-9098]) "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:22
+msgid "Allow configuring near cache from hot rod properties (https://issues.jboss.org/browse/ISPN-9385[ISPN-9385]) "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:23
+msgid "Initial support for JSON format in scripts "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:25
+msgid "Default analyzers are provided to use with remote queries (https://issues.jboss.org/browse/ISPN-9429[ISPN-9429]) "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:27
+msgid "Prevent user from configuring passivation with a shared store (https://issues.jboss.org/browse/ISPN-7168[ISPN-7168]) "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:29
+msgid "Enhance RemoteStore to support segmentation (https://issues.jboss.org/browse/ISPN-9376[ISPN-9376]) "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:31
+msgid "Upgrade to RxJava 2.2.0 (https://issues.jboss.org/browse/ISPN-9418[ISPN-9418]) "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:34
+msgid "Hot Rod configuration properties have setters now to ease integration with other frameworks (https://issues.jboss.org/browse/ISPN-9398[ISPN-9398]) "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:37
+msgid "The full list of 9.4.0.CR1 fixes are https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12337826[here]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:43
+msgid "You can find the release on our http://infinispan.org/download/[download page]. Please report any issues in our https://issues.jboss.org/projects/ISPN[issue tracker] and join the conversation in our https://infinispan.zulipchat.com/[Zulip Chat] to shape up our next release."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:45
+msgid "Enjoy,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:46
+msgid "The Infinispan Team"
+msgstr ""
