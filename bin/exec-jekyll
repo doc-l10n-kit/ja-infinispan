@@ -15,12 +15,13 @@ bundle exec jekyll build -d $L10N_HOME/docs/
 
 #TODO: This workaround should be removed by migrating to an another service
 # Remove some documents not to violate surge.sh capacity limit
+cd $L10N_HOME
 rm -rf docs/docs/9.4.x
 rm -rf docs/docs/10.0.x
 rm -rf docs/docs/10.1.x
 rm -rf docs/docs/11.0.x
 rm -rf docs/docs/12.0.x
-rm -rf docs/docs/hotrod-clients
-rm -rf docs/docs/infinispan-operator
-rm -rf docs/docs/infinispan-spring-boot
-
+#rm -rf docs/docs/hotrod-clients
+#rm -rf docs/docs/infinispan-operator
+#rm -rf docs/docs/infinispan-spring-boot
+#
