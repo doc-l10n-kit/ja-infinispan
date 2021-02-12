@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-02-12 12:17+0000\n"
+"POT-Creation-Date: 2021-02-12 16:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,7 @@ msgstr ""
 msgid ""
 "layout: blog\n"
 "title: Infinispan 12.0.1.Final\n"
-"permalink: /blog/:year/:month/:day/infinispan-11\n"
+"permalink: /blog/:year/:month/:day/infinispan-12-0-1\n"
 "date: '2021-02-12T12:00:00.000-00:00'\n"
 "author: remerson\n"
 "tags: [ \"release\" ]\n"
@@ -69,8 +69,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:23
-#, no-wrap
-msgid "    https://issues.redhat.com/browse/ISPN-12729[ISPN-12729] - Upgrade console to 0.13.1.Final\n"
+msgid "link:https://issues.redhat.com/browse/ISPN-12729[ISPN-12729] - Upgrade console to 0.13.1.Final"
 msgstr ""
 
 #. type: Title ==
@@ -80,12 +79,18 @@ msgid "Enhancement"
 msgstr ""
 
 #. type: Plain text
+#: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:26
+msgid "link:https://issues.redhat.com/browse/ISPN-12370[ISPN-12370] - Implement proper form login and digest login"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:27
+msgid "link:https://issues.redhat.com/browse/ISPN-12636[ISPN-12636] - Implicit connectors for the single-port endpoint"
+msgstr ""
+
+#. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:28
-#, no-wrap
-msgid ""
-"    https://issues.redhat.com/browse/ISPN-12370[ISPN-12370] - Implement proper form login and digest login\n"
-"    https://issues.redhat.com/browse/ISPN-12636[ISPN-12636] - Implicit connectors for the single-port endpoint\n"
-"    https://issues.redhat.com/browse/ISPN-12718[ISPN-12718] - Add addtional DEBUG logs to Backup/Restore operations\n"
+msgid "link:https://issues.redhat.com/browse/ISPN-12718[ISPN-12718] - Add addtional DEBUG logs to Backup/Restore operations"
 msgstr ""
 
 #. type: Title ==
@@ -96,8 +101,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:31
-#, no-wrap
-msgid "    https://issues.redhat.com/browse/ISPN-12660[ISPN-12660] - Add property to disable test execution\n"
+msgid "link:https://issues.redhat.com/browse/ISPN-12660[ISPN-12660] - Add property to disable test execution"
 msgstr ""
 
 #. type: Title ==
@@ -107,26 +111,88 @@ msgid "Bug"
 msgstr ""
 
 #. type: Plain text
+#: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:34
+msgid "link:https://issues.redhat.com/browse/ISPN-12548[ISPN-12548] - Replicated cache get ignores value in zero-capacity nodes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:35
+msgid "link:https://issues.redhat.com/browse/ISPN-12651[ISPN-12651] - CacheEntryCloudEventsTest test failures"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:36
+msgid "link:https://issues.redhat.com/browse/ISPN-12654[ISPN-12654] - Get entry broken in protobuf caches"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:37
+msgid "link:https://issues.redhat.com/browse/ISPN-12658[ISPN-12658] - Fix IracWriteSkewTest test"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:38
+msgid "link:https://issues.redhat.com/browse/ISPN-12659[ISPN-12659] - StatsTest random failures"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:39
+msgid "link:https://issues.redhat.com/browse/ISPN-12661[ISPN-12661] - Licenses are not properly generated in console"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:40
+msgid "link:https://issues.redhat.com/browse/ISPN-12662[ISPN-12662] - Functional commands break in replicated caches on zero-capacity nodes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:41
+msgid "link:https://issues.redhat.com/browse/ISPN-12663[ISPN-12663] - LocalIndexSyncStateTransferTest random failures"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:42
+msgid "link:https://issues.redhat.com/browse/ISPN-12666[ISPN-12666] - ReplicationIndexTest random failures"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:43
+msgid "link:https://issues.redhat.com/browse/ISPN-12667[ISPN-12667] - GlobalState incompatibility between 11.x and 12.x"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:44
+msgid "link:https://issues.redhat.com/browse/ISPN-12669[ISPN-12669] - Tests failing due to relying on published images"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:45
+msgid "link:https://issues.redhat.com/browse/ISPN-12700[ISPN-12700] - CLI Batch files returns exit code 0 on error"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:46
+msgid "link:https://issues.redhat.com/browse/ISPN-12709[ISPN-12709] - Cannot retrieve the keyset of a cache (ISPN000287)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:47
+msgid "link:https://issues.redhat.com/browse/ISPN-12710[ISPN-12710] - IllegalArgumentException in VoidResponseCollector: Self-suppression not permitted"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:48
+msgid "link:https://issues.redhat.com/browse/ISPN-12716[ISPN-12716] - Hot Rod iteration shouldn't require ADMIN permission"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:49
+msgid "link:https://issues.redhat.com/browse/ISPN-12719[ISPN-12719] - When a value is json but not protobuf the console fails"
+msgstr ""
+
+#. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:50
-#, no-wrap
-msgid ""
-"    https://issues.redhat.com/browse/ISPN-12548[ISPN-12548] - Replicated cache get ignores value in zero-capacity nodes\n"
-"    https://issues.redhat.com/browse/ISPN-12651[ISPN-12651] - CacheEntryCloudEventsTest test failures\n"
-"    https://issues.redhat.com/browse/ISPN-12654[ISPN-12654] - Get entry broken in protobuf caches\n"
-"    https://issues.redhat.com/browse/ISPN-12658[ISPN-12658] - Fix IracWriteSkewTest test\n"
-"    https://issues.redhat.com/browse/ISPN-12659[ISPN-12659] - StatsTest random failures\n"
-"    https://issues.redhat.com/browse/ISPN-12661[ISPN-12661] - Licenses are not properly generated in console\n"
-"    https://issues.redhat.com/browse/ISPN-12662[ISPN-12662] - Functional commands break in replicated caches on zero-capacity nodes\n"
-"    https://issues.redhat.com/browse/ISPN-12663[ISPN-12663] - LocalIndexSyncStateTransferTest random failures\n"
-"    https://issues.redhat.com/browse/ISPN-12666[ISPN-12666] - ReplicationIndexTest random failures\n"
-"    https://issues.redhat.com/browse/ISPN-12667[ISPN-12667] - GlobalState incompatibility between 11.x and 12.x\n"
-"    https://issues.redhat.com/browse/ISPN-12669[ISPN-12669] - Tests failing due to relying on published images\n"
-"    https://issues.redhat.com/browse/ISPN-12700[ISPN-12700] - CLI Batch files returns exit code 0 on error\n"
-"    https://issues.redhat.com/browse/ISPN-12709[ISPN-12709] - Cannot retrieve the keyset of a cache (ISPN000287)\n"
-"    https://issues.redhat.com/browse/ISPN-12710[ISPN-12710] - IllegalArgumentException in VoidResponseCollector: Self-suppression not permitted\n"
-"    https://issues.redhat.com/browse/ISPN-12716[ISPN-12716] - Hot Rod iteration shouldn't require ADMIN permission\n"
-"    https://issues.redhat.com/browse/ISPN-12719[ISPN-12719] - When a value is json but not protobuf the console fails\n"
-"    https://issues.redhat.com/browse/ISPN-12724[ISPN-12724] - Hot Rod client has too many Elytron dependencies\n"
+msgid "link:https://issues.redhat.com/browse/ISPN-12724[ISPN-12724] - Hot Rod client has too many Elytron dependencies"
 msgstr ""
 
 #. type: Title ==
@@ -136,7 +202,6 @@ msgid "Task"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:53
-#, no-wrap
-msgid "    https://issues.redhat.com/browse/ISPN-12681[ISPN-12681] - Upgrade logo in Operator Hub\n"
+#: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:52
+msgid "link:https://issues.redhat.com/browse/ISPN-12681[ISPN-12681] - Upgrade logo in Operator Hub"
 msgstr ""
