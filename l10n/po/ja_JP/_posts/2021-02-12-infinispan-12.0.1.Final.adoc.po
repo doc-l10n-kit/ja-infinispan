@@ -2,29 +2,29 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-#, fuzzy
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "POT-Creation-Date: 2021-02-12 16:19+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-02-18 21:55+0900\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.2\n"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:1
-#, no-wrap, fuzzy
+#, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:8
-#, no-wrap, fuzzy
+#, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 12.0.1.Final\n"
@@ -44,295 +44,171 @@ msgstr ""
 
 #. type: Title =
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:10
-#, no-wrap, fuzzy
+#, no-wrap
 msgid "Infinispan 12.0.1.Final \"Lockdown\""
 msgstr "Infinispan 12.0.1.Final \"Lockdown\""
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:13
-#, fuzzy
 msgid "Dear Infinispan community,"
-msgstr "インフィニスパンのコミュニティへ"
+msgstr "Infinispanコミュニティへ"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:15
-#, fuzzy
-msgid ""
-"we hope you've been enjoying all the new goodies included in our latest "
-"major release, Infinispan 12."
-msgstr "最新のメジャーリリースである「Infinispan 12」に収録されている新しいグッズをお楽しみいただけましたでしょうか。"
+msgid "we hope you've been enjoying all the new goodies included in our latest major release, Infinispan 12."
+msgstr "最新のメジャーリリースである「Infinispan 12」に収録されている新しい素敵な機能をお楽しみいただけていますでしょうか。"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:17
-#, fuzzy
-msgid ""
-"We now have a brand new micro release for you which addresses a number of "
-"issues."
-msgstr "私たちは今、あなたのために多くの問題に対処するための新しいマイクロリリースを持っています。"
+msgid "We now have a brand new micro release for you which addresses a number of issues."
+msgstr "私たちは今、多くの問題に対処するための新しいマイクロリリースが出来ました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:19
-#, fuzzy
 msgid "The following list shows what we have fixed:"
 msgstr "以下のリストは、修正したものを示しています。"
 
 #. type: Title ==
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:20
-#, no-wrap, fuzzy
+#, no-wrap
 msgid "Component Upgrade"
 msgstr "コンポーネントのアップグレード"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:23
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12729[ISPN-12729] - Upgrade "
-"console to 0.13.1.Final"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12729[ISPN-12729] - コンソールを0.13.1."
-"Finalにアップグレード"
+msgid "link:https://issues.redhat.com/browse/ISPN-12729[ISPN-12729] - Upgrade console to 0.13.1.Final"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12729[ISPN-12729] - コンソールを0.13.1.Finalにアップグレード"
 
 #. type: Title ==
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:24
-#, no-wrap, fuzzy
+#, no-wrap
 msgid "Enhancement"
-msgstr "エンハンスメント"
+msgstr "改善"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:26
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12370[ISPN-12370] - Implement "
-"proper form login and digest login"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12370[ISPN-12370] - "
-"適切なフォームログインとダイジェストログインの実装"
+msgid "link:https://issues.redhat.com/browse/ISPN-12370[ISPN-12370] - Implement proper form login and digest login"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12370[ISPN-12370] - 適切なフォームログインとダイジェストログインの実装"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:27
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12636[ISPN-12636] - Implicit "
-"connectors for the single-port endpoint"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12636[ISPN-12636] - "
-"シングルポートエンドポイント用の暗黙のコネクタ"
+msgid "link:https://issues.redhat.com/browse/ISPN-12636[ISPN-12636] - Implicit connectors for the single-port endpoint"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12636[ISPN-12636] - 単一ポートエンドポイント用の暗黙のコネクタ"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:28
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12718[ISPN-12718] - Add addtional "
-"DEBUG logs to Backup/Restore operations"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12718[ISPN-12718] - バックアップ/"
-"リストア操作にDEBUGログを追加。"
+msgid "link:https://issues.redhat.com/browse/ISPN-12718[ISPN-12718] - Add addtional DEBUG logs to Backup/Restore operations"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12718[ISPN-12718] - バックアップ/リストア操作にDEBUGログを追加"
 
 #. type: Title ==
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:29
-#, no-wrap, fuzzy
+#, no-wrap
 msgid "Feature Request"
 msgstr "機能リクエスト"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:31
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12660[ISPN-12660] - Add property "
-"to disable test execution"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12660[ISPN-12660] - "
-"テスト実行を無効にするプロパティの追加"
+msgid "link:https://issues.redhat.com/browse/ISPN-12660[ISPN-12660] - Add property to disable test execution"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12660[ISPN-12660] - テスト実行を無効にするプロパティの追加"
 
 #. type: Title ==
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:32
-#, no-wrap, fuzzy
+#, no-wrap
 msgid "Bug"
-msgstr "虫"
+msgstr "バグ"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:34
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12548[ISPN-12548] - Replicated "
-"cache get ignores value in zero-capacity nodes"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12548[ISPN-12548] - "
-"容量ゼロノードでの複製キャッシュ取得が値を無視する"
+msgid "link:https://issues.redhat.com/browse/ISPN-12548[ISPN-12548] - Replicated cache get ignores value in zero-capacity nodes"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12548[ISPN-12548] - 容量ゼロノードでのReplicated Cache取得が値を無視する"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:35
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12651[ISPN-12651] - "
-"CacheEntryCloudEventsTest test failures"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12651[ISPN-12651] - "
-"CacheEntryCloudEventsTest テストの失敗"
+msgid "link:https://issues.redhat.com/browse/ISPN-12651[ISPN-12651] - CacheEntryCloudEventsTest test failures"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12651[ISPN-12651] - CacheEntryCloudEventsTest テストの失敗"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:36
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12654[ISPN-12654] - Get entry "
-"broken in protobuf caches"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12654[ISPN-12654] - protobuf "
-"キャッシュでエントリが壊れています。"
+msgid "link:https://issues.redhat.com/browse/ISPN-12654[ISPN-12654] - Get entry broken in protobuf caches"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12654[ISPN-12654] - protobuf キャッシュでエントリが壊れている"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:37
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12658[ISPN-12658] - Fix "
-"IracWriteSkewTest test"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12658[ISPN-12658] - "
-"IracWriteSkewTest テストの修正"
+msgid "link:https://issues.redhat.com/browse/ISPN-12658[ISPN-12658] - Fix IracWriteSkewTest test"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12658[ISPN-12658] - IracWriteSkewTest テストの修正"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:38
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12659[ISPN-12659] - StatsTest "
-"random failures"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12659[ISPN-12659] - StatsTest "
-"ランダム失敗"
+msgid "link:https://issues.redhat.com/browse/ISPN-12659[ISPN-12659] - StatsTest random failures"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12659[ISPN-12659] - StatsTest のランダムな失敗"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:39
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12661[ISPN-12661] - Licenses are "
-"not properly generated in console"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12661[ISPN-12661] - "
-"コンソールでライセンスが正しく生成されません。"
+msgid "link:https://issues.redhat.com/browse/ISPN-12661[ISPN-12661] - Licenses are not properly generated in console"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12661[ISPN-12661] - コンソールでライセンスが正しく生成されません。"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:40
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12662[ISPN-12662] - Functional "
-"commands break in replicated caches on zero-capacity nodes"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12662[ISPN-12662] - "
-"容量ゼロノードのレプリケートキャッシュでの機能コマンドのブレーク"
+msgid "link:https://issues.redhat.com/browse/ISPN-12662[ISPN-12662] - Functional commands break in replicated caches on zero-capacity nodes"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12662[ISPN-12662] - 容量ゼロノードのReplicated Cacheでの機能コマンドの故障"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:41
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12663[ISPN-12663] - "
-"LocalIndexSyncStateTransferTest random failures"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12663[ISPN-12663] - "
-"LocalIndexSyncStateTransferTest のランダムな失敗"
+msgid "link:https://issues.redhat.com/browse/ISPN-12663[ISPN-12663] - LocalIndexSyncStateTransferTest random failures"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12663[ISPN-12663] - LocalIndexSyncStateTransferTest のランダムな失敗"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:42
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12666[ISPN-12666] - "
-"ReplicationIndexTest random failures"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12666[ISPN-12666] - "
-"ReplicationIndexTest のランダムな失敗"
+msgid "link:https://issues.redhat.com/browse/ISPN-12666[ISPN-12666] - ReplicationIndexTest random failures"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12666[ISPN-12666] - ReplicationIndexTest のランダムな失敗"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:43
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12667[ISPN-12667] - GlobalState "
-"incompatibility between 11.x and 12.x"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12667[ISPN-12667] - 11.x と 12.x "
-"の間の GlobalState の非互換性"
+msgid "link:https://issues.redhat.com/browse/ISPN-12667[ISPN-12667] - GlobalState incompatibility between 11.x and 12.x"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12667[ISPN-12667] - 11.x と 12.x の間の GlobalState の非互換性"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:44
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12669[ISPN-12669] - Tests failing "
-"due to relying on published images"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12669[ISPN-12669] - "
-"公開されている画像に依存しているため、テストが失敗する"
+msgid "link:https://issues.redhat.com/browse/ISPN-12669[ISPN-12669] - Tests failing due to relying on published images"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12669[ISPN-12669] - 公開されているイメージに依存しているため、テストが失敗する"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:45
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12700[ISPN-12700] - CLI Batch "
-"files returns exit code 0 on error"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12700[ISPN-12700] - CLI "
-"バッチファイルがエラーで終了コード 0 を返す"
+msgid "link:https://issues.redhat.com/browse/ISPN-12700[ISPN-12700] - CLI Batch files returns exit code 0 on error"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12700[ISPN-12700] - CLI バッチファイルがエラーで終了コード 0 を返す"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:46
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12709[ISPN-12709] - Cannot "
-"retrieve the keyset of a cache (ISPN000287)"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12709[ISPN-12709] - "
-"キャッシュのキーセットを取得できない (ISPN000287)"
+msgid "link:https://issues.redhat.com/browse/ISPN-12709[ISPN-12709] - Cannot retrieve the keyset of a cache (ISPN000287)"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12709[ISPN-12709] - キャッシュのキーセットを取得できない (ISPN000287)"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:47
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12710[ISPN-12710] - "
-"IllegalArgumentException in VoidResponseCollector: Self-suppression not "
-"permitted"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12710[ISPN-12710] - "
-"VoidResponseCollector での IllegalArgumentException.自己抑制が許可されていない"
+msgid "link:https://issues.redhat.com/browse/ISPN-12710[ISPN-12710] - IllegalArgumentException in VoidResponseCollector: Self-suppression not permitted"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12710[ISPN-12710] - VoidResponseCollectorでのIllegalArgumentException: Self-suppression not permitted"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:48
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12716[ISPN-12716] - Hot Rod "
-"iteration shouldn't require ADMIN permission"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12716[ISPN-12716] - "
-"ホットロッドの反復はADMIN権限を必要とすべきではない"
+msgid "link:https://issues.redhat.com/browse/ISPN-12716[ISPN-12716] - Hot Rod iteration shouldn't require ADMIN permission"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12716[ISPN-12716] - Hot Rodの反復はADMIN権限を必要とすべきではない"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:49
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12719[ISPN-12719] - When a value "
-"is json but not protobuf the console fails"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12719[ISPN-12719] - "
-"値がjsonでprotobufでない場合、コンソールが失敗する。"
+msgid "link:https://issues.redhat.com/browse/ISPN-12719[ISPN-12719] - When a value is json but not protobuf the console fails"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12719[ISPN-12719] - 値がjsonでprotobufでない場合、コンソールが失敗する"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:50
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12724[ISPN-12724] - Hot Rod "
-"client has too many Elytron dependencies"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12724[ISPN-12724] - Hot Rod "
-"クライアントに Elytron の依存関係が多すぎます。"
+msgid "link:https://issues.redhat.com/browse/ISPN-12724[ISPN-12724] - Hot Rod client has too many Elytron dependencies"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12724[ISPN-12724] - Hot Rod クライアントの Elytron の依存関係が多すぎる"
 
 #. type: Title ==
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:51
-#, no-wrap, fuzzy
+#, no-wrap
 msgid "Task"
 msgstr "タスク"
 
 #. type: Plain text
 #: upstream/_posts/2021-02-12-infinispan-12.0.1.Final.adoc:52
-#, fuzzy
-msgid ""
-"link:https://issues.redhat.com/browse/ISPN-12681[ISPN-12681] - Upgrade logo "
-"in Operator Hub"
-msgstr ""
-"link:https://issues.redhat.com/browse/ISPN-12681[ISPN-12681] - "
-"オペレータハブのアップグレードロゴ"
+msgid "link:https://issues.redhat.com/browse/ISPN-12681[ISPN-12681] - Upgrade logo in Operator Hub"
+msgstr "link:https://issues.redhat.com/browse/ISPN-12681[ISPN-12681] - Operator Hubのロゴのアップグレード"
