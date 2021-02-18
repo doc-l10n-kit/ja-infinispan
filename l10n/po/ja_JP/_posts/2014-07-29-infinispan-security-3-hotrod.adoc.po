@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-07-29-infinispan-security-3-hotrod.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-29-infinispan-security-3-hotrod.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 'Infinispan Security #3: HotRod authentication'\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2014-07-29T06:07:00.000-07:00'\n"
 "author: ttarrant\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7391181056901936565\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/07/infinispan-security-3-"
-"hotrod.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7391181056901936565\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/07/infinispan-security-3-hotrod.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,64 +42,38 @@ msgstr ""
 "date: '2014-07-29T06:07:00.000-07:00'\n"
 "author: ttarrant\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7391181056901936565\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/07/infinispan-security-3-"
-"hotrod.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7391181056901936565\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/07/infinispan-security-3-hotrod.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-29-infinispan-security-3-hotrod.adoc:15
 #, fuzzy
-msgid ""
-"Let's continue our excursus into the security features that are being "
-"developed within Infinispan 7.0 by having a look at how our high-performance "
-"cache remoting protocol HotRod was enhanced to support authentication."
-msgstr ""
-"Infinispan 7.0 で開発されているセキュリティ機能について、当社の高性能キャッシュリモートプロトコル HotRod "
-"が認証をサポートするためにどのように強化されたかを見てみましょう。"
+msgid "Let's continue our excursus into the security features that are being developed within Infinispan 7.0 by having a look at how our high-performance cache remoting protocol HotRod was enhanced to support authentication."
+msgstr "Infinispan 7.0 で開発されているセキュリティ機能について、当社の高性能キャッシュリモートプロトコル HotRod が認証をサポートするためにどのように強化されたかを見てみましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-29-infinispan-security-3-hotrod.adoc:23
 #, fuzzy
-msgid ""
-"Since Infinispan 5.3, HotRod has featured SSL/TLS support which, aside from "
-"encryption, also provides some form of authentication by optionally "
-"requiring client certificates. While this does indeed stop unauthorized "
-"clients from connecting to a remote cache, the level of access-control ends "
-"there. Now that we have full role-based authorization checks at the cache "
-"and container level, we want to be able to recognize users and map their "
-"roles accordingly."
-msgstr ""
-"Infinispan 5.3 以降、HotRod は SSL/TLS "
-"をサポートしており、暗号化とは別に、オプションでクライアント証明書を要求することで何らかの認証を提供しています。これは確かに未承認のクライアントがリモートキャッシュに接続するのを防ぐことができますが、アクセス制御のレベルはそこで終わります。キャッシュとコンテナレベルで完全なロールベースの認証チェックができるようになったので、ユーザーを認識し、それに応じてロールをマッピングできるようにしたいと思います。"
+msgid "Since Infinispan 5.3, HotRod has featured SSL/TLS support which, aside from encryption, also provides some form of authentication by optionally requiring client certificates. While this does indeed stop unauthorized clients from connecting to a remote cache, the level of access-control ends there. Now that we have full role-based authorization checks at the cache and container level, we want to be able to recognize users and map their roles accordingly."
+msgstr "Infinispan 5.3 以降、HotRod は SSL/TLS をサポートしており、暗号化とは別に、オプションでクライアント証明書を要求することで何らかの認証を提供しています。これは確かに未承認のクライアントがリモートキャッシュに接続するのを防ぐことができますが、アクセス制御のレベルはそこで終わります。キャッシュとコンテナレベルで完全なロールベースの認証チェックができるようになったので、ユーザーを認識し、それに応じてロールをマッピングできるようにしたいと思います。"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-29-infinispan-security-3-hotrod.adoc:29
 #, fuzzy
-msgid ""
-"As usual, we didn't want to reinvent the wheel, but leverage existing "
-"security frameworks and integrate them into our existing platform. For this "
-"reason, the protocol chosen to implement HotRod authentication is SASL, "
-"which is in widespread use in other connection-oriented transports (e.g. "
-"LDAP, Memached, etc)."
-msgstr ""
-"いつものように、私たちは車輪を再発明するのではなく、既存のセキュリティフレームワークを活用し、既存のプラットフォームに統合したいと考えていました。この理由から、HotRod認証を実装するために選ばれたプロトコルはSASLで、他の接続指向のトランスポート（LDAP、Memachedなど）で広く使用されています。"
+msgid "As usual, we didn't want to reinvent the wheel, but leverage existing security frameworks and integrate them into our existing platform. For this reason, the protocol chosen to implement HotRod authentication is SASL, which is in widespread use in other connection-oriented transports (e.g. LDAP, Memached, etc)."
+msgstr "いつものように、私たちは車輪を再発明するのではなく、既存のセキュリティフレームワークを活用し、既存のプラットフォームに統合したいと考えていました。この理由から、HotRod認証を実装するために選ばれたプロトコルはSASLで、他の接続指向のトランスポート（LDAP、Memachedなど）で広く使用されています。"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-29-infinispan-security-3-hotrod.adoc:32
 #, fuzzy
-msgid ""
-"Using SASL we can support the following authentication mechanisms out of the "
-"box (since they are part of the standard JDK/JRE):"
+msgid "Using SASL we can support the following authentication mechanisms out of the box (since they are part of the standard JDK/JRE):"
 msgstr "SASLを使うと、以下の認証メカニズムをすぐにサポートすることができます (これらは標準JDK/JREの一部なので)。"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-29-infinispan-security-3-hotrod.adoc:35
 #, fuzzy
-msgid ""
-"PLAIN where credentials are exchanged in clear-text (insecure, but easieast "
-"to setup)"
+msgid "PLAIN where credentials are exchanged in clear-text (insecure, but easieast to setup)"
 msgstr "認証情報がクリアテキストで交換される PLAIN (安全ではありませんが、セットアップは簡単です)"
 
 #. type: Plain text
@@ -119,69 +91,35 @@ msgstr "クライアントがKerberosトークンを利用できるGSSAPI"
 #. type: Plain text
 #: upstream/_posts/2014-07-29-infinispan-security-3-hotrod.adoc:39
 #, fuzzy
-msgid ""
-"EXTERNAL where the client-certificate identity of the underlying transport "
-"is used as the credentials"
+msgid "EXTERNAL where the client-certificate identity of the underlying transport is used as the credentials"
 msgstr "基礎となるトランスポートのクライアント証明書のIDがクレデンシャルとして使用される EXTERNAL。"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-29-infinispan-security-3-hotrod.adoc:42
 #, fuzzy
-msgid ""
-"More SASL mechanisms can be plugged in by using the Java Cryptography "
-"Archictecture (JCA)."
-msgstr ""
-"Java Cryptography Archictecture (JCA) を使用することで、より多くの SASL "
-"メカニズムをプラグインすることができます。"
+msgid "More SASL mechanisms can be plugged in by using the Java Cryptography Archictecture (JCA)."
+msgstr "Java Cryptography Archictecture (JCA) を使用することで、より多くの SASL メカニズムをプラグインすることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-29-infinispan-security-3-hotrod.adoc:48
 #, fuzzy
-msgid ""
-"Since our preferred server distribution is based on a stripped-down WildFly "
-"server, we are essentially reusing the Security Realms of the container. "
-"This gives us the ability to validate users and to also retrieve group "
-"membership. against a number of sources (property files, LDAP, etc)."
-msgstr ""
-"私たちが好んで使用しているサーバ・ディストリビューションは、Stripped-down WildFly "
-"サーバをベースにしているため、基本的にはコンテナのセキュリティ領域を再利用しています。これにより、ユーザーを検証したり、多くのソース "
-"(プロパティファイル、LDAP など) に対してグループのメンバーシップを取得したりすることができます。"
+msgid "Since our preferred server distribution is based on a stripped-down WildFly server, we are essentially reusing the Security Realms of the container. This gives us the ability to validate users and to also retrieve group membership. against a number of sources (property files, LDAP, etc)."
+msgstr "私たちが好んで使用しているサーバ・ディストリビューションは、Stripped-down WildFly サーバをベースにしているため、基本的にはコンテナのセキュリティ領域を再利用しています。これにより、ユーザーを検証したり、多くのソース (プロパティファイル、LDAP など) に対してグループのメンバーシップを取得したりすることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-29-infinispan-security-3-hotrod.adoc:58
 #, fuzzy
-msgid ""
-"The following is an example server configuration which uses the "
-"_ApplicationRealm_ to authenticate and authorize users. Since the _<identity-"
-"role-mapper>_ is in use, role names will be mapped 1:1 from the realm into "
-"Infinispan roles.  The HotRod endpoint is using the SASL PLAIN mechanism. "
-"Note that two caches have been defined: the _default_ cache, without "
-"authorization, and a _secured_ cache, which instead requires authorization. "
-"This means that remote clients can access the _default_ cache anonymously, "
-"but they will need to authenticate if they want to access the _secured_ "
-"cache."
-msgstr ""
-"以下は、 _ApplicationRealm_ を使用してユーザーの認証と認証を行うサーバー構成例です。 _<identity-role-"
-"mapper>_ が使用されているため、ロール名はレルムからInfinispanロールに1:1でマッピングされます。HotRodエンドポイントはSASL "
-"PLAINメカニズムを使用しています。2つのキャッシュが定義されていることに注意してください：認証なしの _デフォルト_ キャッシュと、認証を必要とする "
-"_セキュアキャッシュ_ です。これは、リモートクライアントが _デフォルト_ キャッシュに匿名でアクセスできることを意味しますが、 "
-"_セキュリティ保護された_ キャッシュにアクセスするには認証が必要です。"
+msgid "The following is an example server configuration which uses the _ApplicationRealm_ to authenticate and authorize users. Since the _<identity-role-mapper>_ is in use, role names will be mapped 1:1 from the realm into Infinispan roles.  The HotRod endpoint is using the SASL PLAIN mechanism. Note that two caches have been defined: the _default_ cache, without authorization, and a _secured_ cache, which instead requires authorization. This means that remote clients can access the _default_ cache anonymously, but they will need to authenticate if they want to access the _secured_ cache."
+msgstr "以下は、 _ApplicationRealm_ を使用してユーザーの認証と認証を行うサーバー構成例です。 _<identity-role-mapper>_ が使用されているため、ロール名はレルムからInfinispanロールに1:1でマッピングされます。HotRodエンドポイントはSASL PLAINメカニズムを使用しています。2つのキャッシュが定義されていることに注意してください：認証なしの _デフォルト_ キャッシュと、認証を必要とする _セキュアキャッシュ_ です。これは、リモートクライアントが _デフォルト_ キャッシュに匿名でアクセスできることを意味しますが、 _セキュリティ保護された_ キャッシュにアクセスするには認証が必要です。"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-29-infinispan-security-3-hotrod.adoc:62
 #, fuzzy
-msgid ""
-"The following bit of code explains how to use the HotRod Java client to "
-"connect to the secured cache defined above:"
+msgid "The following bit of code explains how to use the HotRod Java client to connect to the secured cache defined above:"
 msgstr "以下のコードは、HotRod Javaクライアントを使用して、上記で定義されたセキュアなキャッシュに接続する方法を説明しています。"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-29-infinispan-security-3-hotrod.adoc:65
 #, fuzzy
-msgid ""
-"All of the above is already available in Infinispan 7.0.0.Alpha5, so head on "
-"over to the http://infinispan.org/download/[download page] to experience the "
-"goodness."
-msgstr ""
-"上記のすべてはInfinispan 7.0.0.0.Alpha5ですでに利用可能ですので、 link:http://infinispan.org/"
-"download/[ダウンロードページ] にアクセスしてその良さを体験してください。"
+msgid "All of the above is already available in Infinispan 7.0.0.Alpha5, so head on over to the http://infinispan.org/download/[download page] to experience the goodness."
+msgstr "上記のすべてはInfinispan 7.0.0.0.Alpha5ですでに利用可能ですので、 link:http://infinispan.org/download/[ダウンロードページ] にアクセスしてその良さを体験してください。"

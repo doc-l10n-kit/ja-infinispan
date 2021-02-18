@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-05-22-infinispan-spring-boot-starters.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-22-infinispan-spring-boot-starters.adoc:11
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan Spring Boot Starters 1.0.0.Final released\n"
@@ -33,10 +33,8 @@ msgid ""
 "author: slaskawiec\n"
 "tags: [ \"spring\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8749214607330527318\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/05/infinispan-spring-boot-"
-"starters.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8749214607330527318\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/05/infinispan-spring-boot-starters.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -46,18 +44,14 @@ msgstr ""
 "author: slaskawiec\n"
 "tags: [ \"spring\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8749214607330527318\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/05/infinispan-spring-boot-"
-"starters.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8749214607330527318\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/05/infinispan-spring-boot-starters.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-22-infinispan-spring-boot-starters.adoc:14
 #, fuzzy
-msgid ""
-"We are happy to announce that Infinispan Spring Boot Starters 1.0.0.Final "
-"have been released."
+msgid "We are happy to announce that Infinispan Spring Boot Starters 1.0.0.Final have been released."
 msgstr "Infinispan Spring Boot Starters 1.0.0.Finalをリリースしました。"
 
 #. type: Plain text
@@ -69,46 +63,23 @@ msgstr "変更リスト。"
 #. type: Plain text
 #: upstream/_posts/2017-05-22-infinispan-spring-boot-starters.adoc:23
 #, fuzzy
-msgid ""
-"[https://github.com/infinispan/infinispan-spring-boot/pull/27] Infinispan 9."
-"0.0.Final is used by default"
-msgstr ""
-"https://github.com/infinispan/infinispan-spring-boot/pull/27 ] Infinispan 9."
-"0.0.Finalがデフォルトで使用されています。"
+msgid "[https://github.com/infinispan/infinispan-spring-boot/pull/27] Infinispan 9.0.0.Final is used by default"
+msgstr "https://github.com/infinispan/infinispan-spring-boot/pull/27 ] Infinispan 9.0.0.Finalがデフォルトで使用されています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-22-infinispan-spring-boot-starters.adoc:25
 #, fuzzy
-msgid ""
-"[https://github.com/infinispan/infinispan-spring-boot/pull/25] Added "
-"metadata description. Thanks a lot Luca for contributing this!"
-msgstr ""
-"https://github.com/infinispan/infinispan-spring-boot/pull/25 ] "
-"メタデータの説明を追加しました。貢献してくれたLucaに感謝します。"
+msgid "[https://github.com/infinispan/infinispan-spring-boot/pull/25] Added metadata description. Thanks a lot Luca for contributing this!"
+msgstr "https://github.com/infinispan/infinispan-spring-boot/pull/25 ] メタデータの説明を追加しました。貢献してくれたLucaに感謝します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-22-infinispan-spring-boot-starters.adoc:27
 #, fuzzy
-msgid ""
-"[https://github.com/infinispan/infinispan-spring-boot/pull/26] Added more "
-"documentation"
-msgstr ""
-"https://github.com/infinispan/infinispan-spring-boot/pull/26 ] "
-"ドキュメントを追加しました。"
+msgid "[https://github.com/infinispan/infinispan-spring-boot/pull/26] Added more documentation"
+msgstr "https://github.com/infinispan/infinispan-spring-boot/pull/26 ] ドキュメントを追加しました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-22-infinispan-spring-boot-starters.adoc:33
 #, fuzzy
-msgid ""
-"You can grab the bits from https://repository.jboss.org/nexus/content/"
-"repositories/public-jboss/org/infinispan/infinispan-spring-boot-starter/1.0."
-"0.Final/[JBoss Repository] after the sync is complete. In the meantime, grab "
-"them from https://origin-repository.jboss.org/nexus/content/repositories/"
-"public-jboss/org/infinispan/infinispan-spring-boot-starter/1.0.0.Final/"
-"[here]."
-msgstr ""
-"同期が完了したら、 link:https://repository.jboss.org/nexus/content/repositories/"
-"public-jboss/org/infinispan/infinispan-spring-boot-starter/1.0.0.Final/"
-"[JBoss Repository] からビットを取得できます。それまでの間は、 link:https://origin-repository."
-"jboss.org/nexus/content/repositories/public-jboss/org/infinispan/infinispan-"
-"spring-boot-starter/1.0.0.Final/[ここ] から取得してください。"
+msgid "You can grab the bits from https://repository.jboss.org/nexus/content/repositories/public-jboss/org/infinispan/infinispan-spring-boot-starter/1.0.0.Final/[JBoss Repository] after the sync is complete. In the meantime, grab them from https://origin-repository.jboss.org/nexus/content/repositories/public-jboss/org/infinispan/infinispan-spring-boot-starter/1.0.0.Final/[here]."
+msgstr "同期が完了したら、 link:https://repository.jboss.org/nexus/content/repositories/public-jboss/org/infinispan/infinispan-spring-boot-starter/1.0.0.Final/[JBoss Repository] からビットを取得できます。それまでの間は、 link:https://origin-repository.jboss.org/nexus/content/repositories/public-jboss/org/infinispan/infinispan-spring-boot-starter/1.0.0.Final/[ここ] から取得してください。"

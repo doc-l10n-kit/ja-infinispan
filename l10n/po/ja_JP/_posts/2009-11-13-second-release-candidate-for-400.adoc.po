@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-11-13-second-release-candidate-for-400.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-11-13-second-release-candidate-for-400.adoc:11
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Second release candidate for 4.0.0\n"
@@ -33,10 +33,8 @@ msgid ""
 "author: msurtani\n"
 "tags: [ \"release candidate\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1555452140431338887\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/11/second-release-"
-"candidate-for-400.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1555452140431338887\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/11/second-release-candidate-for-400.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -46,10 +44,8 @@ msgstr ""
 "author: msurtani\n"
 "tags: [ \"release candidate\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1555452140431338887\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/11/second-release-"
-"candidate-for-400.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1555452140431338887\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/11/second-release-candidate-for-400.html\n"
 "---\n"
 
 #. type: Plain text
@@ -61,69 +57,26 @@ msgstr "こんにちは"
 #. type: Plain text
 #: upstream/_posts/2009-11-13-second-release-candidate-for-400.adoc:21
 #, fuzzy
-msgid ""
-"I'm pleased to announce a second release candidate for Infinispan 4.0.0.  "
-"CR2 builds on CR1, fixing a whole pile of issues reported - thanks for the "
-"feedback, everyone! In addition, we have started benchmarking and profiling "
-"Infinispan using the http://cachebenchfwk.sourceforge.net/[CacheBenchFwk] "
-"project, and based on our findings have tweaked and tuned things accordingly."
-" We will publish results of these tests soon."
-msgstr ""
-"Infinispan 4.0.0.0 "
-"の第二のリリース候補を発表できることを嬉しく思います。CR2はCR1をベースに構築されており、報告された山積みの問題を修正しています。さらに、 link:"
-"http://cachebenchfwk.sourceforge.net/[CacheBenchFwk] プロジェクトを使用して Infinispan "
-"のベンチマークとプロファイリングを開始しました。これらのテストの結果は、近日中に公表する予定です。"
+msgid "I'm pleased to announce a second release candidate for Infinispan 4.0.0.  CR2 builds on CR1, fixing a whole pile of issues reported - thanks for the feedback, everyone! In addition, we have started benchmarking and profiling Infinispan using the http://cachebenchfwk.sourceforge.net/[CacheBenchFwk] project, and based on our findings have tweaked and tuned things accordingly. We will publish results of these tests soon."
+msgstr "Infinispan 4.0.0.0 の第二のリリース候補を発表できることを嬉しく思います。CR2はCR1をベースに構築されており、報告された山積みの問題を修正しています。さらに、 link:http://cachebenchfwk.sourceforge.net/[CacheBenchFwk] プロジェクトを使用して Infinispan のベンチマークとプロファイリングを開始しました。これらのテストの結果は、近日中に公表する予定です。"
 
 #. type: Plain text
 #: upstream/_posts/2009-11-13-second-release-candidate-for-400.adoc:33
 #, fuzzy
-msgid ""
-"This release also brings along another tech preview - the http://lucene."
-"apache.org/[Lucene] Directory Provider, courtesy of http://code.google.com/"
-"soc/[Google Summer of Code] student http://www.jboss.org/community/people/"
-"lmoren[Lukasz Moren] and frequent contributor http://www.jboss.org/community/"
-"people/sannegrinovero[Sanne Grinovero]. Excellent work, guys, finally a "
-"distributed, in-memory store for Lucene indexes! This provider is bundled in "
-"the Infinispan distro, as is a demo showing off the capabilities of such a "
-"directory provider.  More details on http://www.jboss.org/community/wiki/"
-"InfinispanasaDirectoryforLucene[this wiki page]."
-msgstr ""
-"それは、 link:http://code.google.com/soc/[Google Summer of Code の] 学生である link:"
-"http://www.jboss.org/community/people/lmoren[Lukasz Moren] と link:http://www."
-"jboss.org/community/people/sannegrinovero[Sanne Grinovero] による link:http://"
-"lucene.apache.org/[Lucene] Directory Provider です。Lucene "
-"インデックスのための分散型インメモリストアがついに誕生しました。このプロバイダはInfinispanディストロにバンドルされており、そのようなディレクトリプロバイダの機能を示すデモもあります。詳細は "
-"link:http://www.jboss.org/community/wiki/InfinispanasaDirectoryforLucene[この "
-"wiki ページを] 参照してください。"
+msgid "This release also brings along another tech preview - the http://lucene.apache.org/[Lucene] Directory Provider, courtesy of http://code.google.com/soc/[Google Summer of Code] student http://www.jboss.org/community/people/lmoren[Lukasz Moren] and frequent contributor http://www.jboss.org/community/people/sannegrinovero[Sanne Grinovero]. Excellent work, guys, finally a distributed, in-memory store for Lucene indexes! This provider is bundled in the Infinispan distro, as is a demo showing off the capabilities of such a directory provider.  More details on http://www.jboss.org/community/wiki/InfinispanasaDirectoryforLucene[this wiki page]."
+msgstr "それは、 link:http://code.google.com/soc/[Google Summer of Code の] 学生である link:http://www.jboss.org/community/people/lmoren[Lukasz Moren] と link:http://www.jboss.org/community/people/sannegrinovero[Sanne Grinovero] による link:http://lucene.apache.org/[Lucene] Directory Provider です。Lucene インデックスのための分散型インメモリストアがついに誕生しました。このプロバイダはInfinispanディストロにバンドルされており、そのようなディレクトリプロバイダの機能を示すデモもあります。詳細は link:http://www.jboss.org/community/wiki/InfinispanasaDirectoryforLucene[この wiki ページを] 参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2009-11-13-second-release-candidate-for-400.adoc:37
 #, fuzzy
-msgid ""
-"For full details on what's changed, have a look at the https://jira.jboss."
-"org/jira/secure/ConfigureReport.jspa?versions=12314154&sections=.1.7.2.4.10."
-"9.8.3.12.11.5&style=none&selectedProjectId=12310799&reportKey=pl.net."
-"mamut%3Areleasenotes&Next=Next[release notes report in JIRA]."
-msgstr ""
-"何が変更されたかの詳細については、 link:https://jira.jboss.org/jira/secure/ConfigureReport."
-"jspa?versions=12314154&sections=.1.7.2.4.10.9.8.3.12.11.5&style="
-"none&selectedProjectId=12310799&reportKey=pl.net.mamut%3Areleasenotes&Next="
-"Next[JIRA のリリースノートレポートを] ご覧ください。"
+msgid "For full details on what's changed, have a look at the https://jira.jboss.org/jira/secure/ConfigureReport.jspa?versions=12314154&sections=.1.7.2.4.10.9.8.3.12.11.5&style=none&selectedProjectId=12310799&reportKey=pl.net.mamut%3Areleasenotes&Next=Next[release notes report in JIRA]."
+msgstr "何が変更されたかの詳細については、 link:https://jira.jboss.org/jira/secure/ConfigureReport.jspa?versions=12314154&sections=.1.7.2.4.10.9.8.3.12.11.5&style=none&selectedProjectId=12310799&reportKey=pl.net.mamut%3Areleasenotes&Next=Next[JIRA のリリースノートレポートを] ご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2009-11-13-second-release-candidate-for-400.adoc:44
 #, fuzzy
-msgid ""
-"As always, we need feedback, especially as close as we are to a final "
-"release. http://www.jboss.org/community/people/sannegrinovero[Download] this "
-"release (or add it as a http://www.jboss.org/infinispan/downloads.html[Maven "
-"dependency]), and http://www.jboss.org/index.html?module=bb&op=viewforum&f="
-"309[report] feedback!"
-msgstr ""
-"いつものように、私たちはフィードバックを必要としています。このリリースを link:http://www.jboss.org/community/"
-"people/sannegrinovero[ダウンロードして] (または link:http://www.jboss.org/infinispan/"
-"downloads.html[Maven 依存関係] として追加して)、フィードバックを link:http://www.jboss.org/index."
-"html?module=bb&op=viewforum&f=309[報告して] ください!"
+msgid "As always, we need feedback, especially as close as we are to a final release. http://www.jboss.org/community/people/sannegrinovero[Download] this release (or add it as a http://www.jboss.org/infinispan/downloads.html[Maven dependency]), and http://www.jboss.org/index.html?module=bb&op=viewforum&f=309[report] feedback!"
+msgstr "いつものように、私たちはフィードバックを必要としています。このリリースを link:http://www.jboss.org/community/people/sannegrinovero[ダウンロードして] (または link:http://www.jboss.org/infinispan/downloads.html[Maven 依存関係] として追加して)、フィードバックを link:http://www.jboss.org/index.html?module=bb&op=viewforum&f=309[報告して] ください!"
 
 #. type: Plain text
 #: upstream/_posts/2009-11-13-second-release-candidate-for-400.adoc:46

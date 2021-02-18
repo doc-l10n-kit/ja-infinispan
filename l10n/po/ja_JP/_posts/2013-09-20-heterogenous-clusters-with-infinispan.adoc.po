@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-09-20-heterogenous-clusters-with-infinispan.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-20-heterogenous-clusters-with-infinispan.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Heterogenous clusters with Infinispan 6.0.0.Beta1\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2013-09-20T08:38:00.000-07:00'\n"
 "author: infinispan\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"298238953577386573\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/09/heterogenous-clusters-"
-"with-infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-298238953577386573\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/09/heterogenous-clusters-with-infinispan.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,38 +42,21 @@ msgstr ""
 "date: '2013-09-20T08:38:00.000-07:00'\n"
 "author: infinispan\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"298238953577386573\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/09/heterogenous-clusters-"
-"with-infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-298238953577386573\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/09/heterogenous-clusters-with-infinispan.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-20-heterogenous-clusters-with-infinispan.adoc:17
 #, fuzzy
-msgid ""
-"One of the basic rules of participating in an Infinispan cluster was that "
-"everyone must pay their fair share. Sure, each node was able to run a "
-"diferent set of caches (i.e. the cluster didn't have to be symmetric).  But "
-"when a node started up a distributed cache, it automatically took ownership "
-"of a share of the keys equal to all the other members of the cache."
-msgstr ""
-"Infinispanクラスタに参加する際の基本的なルールの一つは、誰もが公平な取り分を支払わなければならないということでした。もちろん、各ノードは異なるキャッシュのセットを実行することができました(つまり、クラスタが対称である必要はありませんでした)。しかし、あるノードが分散キャッシュを起動すると、そのノードは自動的にキャッシュの他のすべてのメンバーと同等の鍵のシェアを所有することになります。"
+msgid "One of the basic rules of participating in an Infinispan cluster was that everyone must pay their fair share. Sure, each node was able to run a diferent set of caches (i.e. the cluster didn't have to be symmetric).  But when a node started up a distributed cache, it automatically took ownership of a share of the keys equal to all the other members of the cache."
+msgstr "Infinispanクラスタに参加する際の基本的なルールの一つは、誰もが公平な取り分を支払わなければならないということでした。もちろん、各ノードは異なるキャッシュのセットを実行することができました(つまり、クラスタが対称である必要はありませんでした)。しかし、あるノードが分散キャッシュを起動すると、そのノードは自動的にキャッシュの他のすべてのメンバーと同等の鍵のシェアを所有することになります。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-20-heterogenous-clusters-with-infinispan.adoc:24
 #, fuzzy
-msgid ""
-"With the implementation of https://issues.jboss.org/browse/ISPN-3051[ISPN-"
-"3051] in 6.0.0.Beta1, that is no longer the case. Each node can now opt to "
-"own more or less keys, using the new capacityFactor setting. The default "
-"capacity factor is 1.0, and nodes can specify both a higher and a lower "
-"value via configuration API:"
-msgstr ""
-"6.0.0.0.Beta1での link:https://issues.jboss.org/browse/ISPN-3051[ISPN-3051] "
-"の実装では、そのようなことはなくなりました。各ノードは、新しい capacityFactor "
-"設定を使用して、より多くの鍵を所有するか、より少ない鍵を所有するかを選択できるようになりました。デフォルトのキャパシティファクターは1."
-"0で、ノードは設定APIを介して高い値と低い値の両方を指定することができます。"
+msgid "With the implementation of https://issues.jboss.org/browse/ISPN-3051[ISPN-3051] in 6.0.0.Beta1, that is no longer the case. Each node can now opt to own more or less keys, using the new capacityFactor setting. The default capacity factor is 1.0, and nodes can specify both a higher and a lower value via configuration API:"
+msgstr "6.0.0.0.Beta1での link:https://issues.jboss.org/browse/ISPN-3051[ISPN-3051] の実装では、そのようなことはなくなりました。各ノードは、新しい capacityFactor 設定を使用して、より多くの鍵を所有するか、より少ない鍵を所有するかを選択できるようになりました。デフォルトのキャパシティファクターは1.0で、ノードは設定APIを介して高い値と低い値の両方を指定することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-20-heterogenous-clusters-with-infinispan.adoc:28
@@ -86,36 +67,17 @@ msgstr "または、XML設定を介して。"
 #. type: Plain text
 #: upstream/_posts/2013-09-20-heterogenous-clusters-with-infinispan.adoc:35
 #, fuzzy
-msgid ""
-"Note that we don't guarantee that the number of keys owned by a node will be "
-"exactly proportional to its capacity factor. In particular, custom "
-"ConsistentHashFactory implementations are free to ignore the capacityFactor "
-"setting completely. But the default ConsistentHashFactory will try to "
-"respect it as much as it can."
-msgstr ""
-"ノードが所有する鍵の数がその容量係数に正確に比例することを保証するものではないことに注意してください。特に、カスタムのConsistentHashFactory実装では、capacityFactorの設定を完全に無視することができます。しかし、デフォルトのConsistentHashFactoryは可能な限りそれを尊重しようとします。"
+msgid "Note that we don't guarantee that the number of keys owned by a node will be exactly proportional to its capacity factor. In particular, custom ConsistentHashFactory implementations are free to ignore the capacityFactor setting completely. But the default ConsistentHashFactory will try to respect it as much as it can."
+msgstr "ノードが所有する鍵の数がその容量係数に正確に比例することを保証するものではないことに注意してください。特に、カスタムのConsistentHashFactory実装では、capacityFactorの設定を完全に無視することができます。しかし、デフォルトのConsistentHashFactoryは可能な限りそれを尊重しようとします。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-20-heterogenous-clusters-with-infinispan.adoc:43
 #, fuzzy
-msgid ""
-"One interesting use case is nodes with a capacity factor of 0. This could be "
-"useful when some nodes are too short-lived to be useful as data owners, but "
-"they can't use HotRod (or other remote protocols) because they need "
-"transactions. With cross-site replication as well, the \"site master\" "
-"should only deal with forwarding commands between sites and shouldn't handle "
-"user requests, so it makes sense to configure it with a capacity factor of 0."
-""
-msgstr ""
-"興味深いユースケースとしては、キャパシティファクタ0のノードがあります。 "
-"これは、一部のノードが短命すぎてデータオーナーとしては使えないが、トランザクションが必要なのでHotRod(または他のリモートプロトコル)が使えないという場合に便利です。クロスサイトレプリケーションにおいても、\"サイトマスタ\"はサイト間の転送コマンドを扱うだけで、ユーザのリクエストを扱うべきではないので、キャパシティファクタ0で設定することは理にかなっています。"
+msgid "One interesting use case is nodes with a capacity factor of 0. This could be useful when some nodes are too short-lived to be useful as data owners, but they can't use HotRod (or other remote protocols) because they need transactions. With cross-site replication as well, the \"site master\" should only deal with forwarding commands between sites and shouldn't handle user requests, so it makes sense to configure it with a capacity factor of 0."
+msgstr "興味深いユースケースとしては、キャパシティファクタ0のノードがあります。 これは、一部のノードが短命すぎてデータオーナーとしては使えないが、トランザクションが必要なのでHotRod(または他のリモートプロトコル)が使えないという場合に便利です。クロスサイトレプリケーションにおいても、\"サイトマスタ\"はサイト間の転送コマンドを扱うだけで、ユーザのリクエストを扱うべきではないので、キャパシティファクタ0で設定することは理にかなっています。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-20-heterogenous-clusters-with-infinispan.adoc:47
 #, fuzzy
-msgid ""
-"A final note: Infinispan server 6.0.0.Beta1 also supports this feature, but "
-"the setting is called capacity-factor to match the AS naming convention."
-msgstr ""
-"最後の注意：Infinispan サーバー 6.0.0.Beta1 もこの機能をサポートしていますが、AS の命名規則に合わせて capacity-"
-"factor と呼ばれる設定になっています。"
+msgid "A final note: Infinispan server 6.0.0.Beta1 also supports this feature, but the setting is called capacity-factor to match the AS naming convention."
+msgstr "最後の注意：Infinispan サーバー 6.0.0.Beta1 もこの機能をサポートしていますが、AS の命名規則に合わせて capacity-factor と呼ばれる設定になっています。"

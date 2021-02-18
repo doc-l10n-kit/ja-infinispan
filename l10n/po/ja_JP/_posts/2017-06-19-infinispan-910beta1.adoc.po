@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-06-19-infinispan-910beta1.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-19-infinispan-910beta1.adoc:12
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.1.0.Beta1\n"
@@ -34,10 +34,8 @@ msgid ""
 "tags: [ \"beta\",\n"
 "\"release\"\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2920701766566803247\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/06/infinispan-910beta1."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2920701766566803247\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/06/infinispan-910beta1.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -48,10 +46,8 @@ msgstr ""
 "tags: [ \"beta\",\n"
 "\"release\"\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2920701766566803247\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/06/infinispan-910beta1."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2920701766566803247\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/06/infinispan-910beta1.html\n"
 "---\n"
 
 #. type: Plain text
@@ -63,20 +59,13 @@ msgstr "Infinispanコミュニティの皆様へ。"
 #. type: Plain text
 #: upstream/_posts/2017-06-19-infinispan-910beta1.adoc:17
 #, fuzzy
-msgid ""
-"the Infinispan 9.1.0.Beta1 is out and can be found on our http://infinispan."
-"org/download/[downloads page]."
-msgstr ""
-"Infinispan 9.1.0.Beta1がリリースされ、 link:http://infinispan.org/download/"
-"[ダウンロードページ] に掲載されています。"
+msgid "the Infinispan 9.1.0.Beta1 is out and can be found on our http://infinispan.org/download/[downloads page]."
+msgstr "Infinispan 9.1.0.Beta1がリリースされ、 link:http://infinispan.org/download/[ダウンロードページ] に掲載されています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-19-infinispan-910beta1.adoc:22
 #, fuzzy
-msgid ""
-"Full details of the new features and enhancements included in this release "
-"can be found https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12310799&version=12334823[here]."
+msgid "Full details of the new features and enhancements included in this release can be found https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12334823[here]."
 msgstr "このリリースに含まれる新機能と機能強化の詳細については、こちらをご覧ください。"
 
 #. type: Plain text
@@ -88,9 +77,7 @@ msgstr "ハイライトのショートリスト。"
 #. type: Plain text
 #: upstream/_posts/2017-06-19-infinispan-910beta1.adoc:27
 #, fuzzy
-msgid ""
-"[ISPN-7114] Consistency Checker, Conflict Resolution and Automatic merge "
-"policies"
+msgid "[ISPN-7114] Consistency Checker, Conflict Resolution and Automatic merge policies"
 msgstr "ISPN-7114] 一貫性チェッカー、コンフリクト解決、自動マージポリシー"
 
 #. type: Plain text
@@ -114,15 +101,13 @@ msgstr "ISPN-6676] TLS/ALPNアップグレードによるRESTエンドポイン�
 #. type: Plain text
 #: upstream/_posts/2017-06-19-infinispan-910beta1.adoc:32
 #, fuzzy
-msgid ""
-"[ISPN-7841] Add stream operations that can operate upon data exclusively"
+msgid "[ISPN-7841] Add stream operations that can operate upon data exclusively"
 msgstr "ISPN-7841] データのみで動作するストリーム操作を追加しました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-19-infinispan-910beta1.adoc:34
 #, fuzzy
-msgid ""
-"[ISPN-7868] Add encryption and authentication support to the Remote Store"
+msgid "[ISPN-7868] Add encryption and authentication support to the Remote Store"
 msgstr "ISPN-7868] リモートストアに暗号化・認証機能を追加します。"
 
 #. type: Plain text
@@ -134,9 +119,7 @@ msgstr "ISPN-7772] Hot Rod Client のキャッシュの作成/削除操作"
 #. type: Plain text
 #: upstream/_posts/2017-06-19-infinispan-910beta1.adoc:37
 #, fuzzy
-msgid ""
-"[ISPN-6994] Add an AdvancedCache.withSubject(Subject) method for explicit "
-"impersonation"
+msgid "[ISPN-6994] Add an AdvancedCache.withSubject(Subject) method for explicit impersonation"
 msgstr "ISPN-6994] 明示的ななりすましのためのAdvancedCache.withSubject(Subject)メソッドの追加"
 
 #. type: Plain text
@@ -160,10 +143,5 @@ msgstr "いつものように、それぞれの特徴や改善点をブログで
 #. type: Plain text
 #: upstream/_posts/2017-06-19-infinispan-910beta1.adoc:45
 #, fuzzy
-msgid ""
-"Always consult the http://infinispan.org/docs/dev/upgrading/upgrading."
-"html[Upgrading guide] to see what has changed. thank you for following us "
-"and stay tuned! The Infinispan Team"
-msgstr ""
-"何が変更されたかについては、常に link:http://infinispan.org/docs/dev/upgrading/upgrading."
-"html[アップグレードガイド] を参照してください。Infinispanチーム"
+msgid "Always consult the http://infinispan.org/docs/dev/upgrading/upgrading.html[Upgrading guide] to see what has changed. thank you for following us and stay tuned! The Infinispan Team"
+msgstr "何が変更されたかについては、常に link:http://infinispan.org/docs/dev/upgrading/upgrading.html[アップグレードガイド] を参照してください。Infinispanチーム"

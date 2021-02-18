@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-06-05-thanks-great-indian-developer-summit.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-05-thanks-great-indian-developer-summit.adoc:11
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Thanks Great Indian Developer Summit & Voxxed Days Zurich\n"
@@ -33,10 +33,8 @@ msgid ""
 "author: galder\n"
 "tags: [ \" conference\" ]\n"
 "thumbnail: https://i.ytimg.com/vi/oU0oduarh94/0.jpg\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"575358979214011181\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/06/thanks-great-indian-"
-"developer-summit.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-575358979214011181\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/06/thanks-great-indian-developer-summit.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -46,98 +44,39 @@ msgstr ""
 "author: galder\n"
 "tags: [ \" conference\" ]\n"
 "thumbnail: https://i.ytimg.com/vi/oU0oduarh94/0.jpg\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"575358979214011181\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/06/thanks-great-indian-"
-"developer-summit.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-575358979214011181\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/06/thanks-great-indian-developer-summit.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-05-thanks-great-indian-developer-summit.adoc:27
 #, fuzzy
-msgid ""
-"A few days after https://blog.infinispan.org/2018/04/danke-javaland-merci-"
-"devoxx-france.html[Devoxx France], I headed for http://www.developermarch."
-"com/developersummit/[Great Indian Developer Summit] in Bangalore where I "
-"spoke about handling streaming data on top of a Kubernetes platform. This "
-"was a very similar talk to the one I gave at https://www.jfokus.se/[JFokus] "
-"but with some important changes.  Together with Clement we created a small "
-"https://github.com/ReactiveX/RxJava[RxJava 2] façade for Infinispan.  When "
-"combined with https://vertx.io/docs/vertx-rx/java2/[Vert.x RxJava 2 API], we "
-"could finally have an idiomatic way of handling streaming data "
-"asynchronously and coordinating events purely using RxJava 2 APIs. This is "
-"crucial for working with streaming data in an efficient way. On top of that, "
-"I made some changes to push the binary data used by the demo outside of the "
-"deployment."
-msgstr ""
-"link:https://blog.infinispan.org/2018/04/danke-javaland-merci-devoxx-france."
-"html[Devoxx Franceの] 数日後、私はバンガロールで開催された link:http://www.developermarch.com/"
-"developersummit/[Great Indian Developer Summit] "
-"に向かい、Kubernetesプラットフォーム上でのストリーミングデータの取り扱いについて話しました。これは link:https://www."
-"jfokus.se/[JFokus] "
-"で行った講演と非常に似ていますが、いくつか重要な変更点がありました。Clementと一緒に、私たちはInfinispanのための小さな link:"
-"https://github.com/ReactiveX/RxJava[RxJava 2] ファサードを作成しました。 link:https://"
-"vertx.io/docs/vertx-rx/java2/[Vert.x RxJava 2 API] "
-"と組み合わせることで、ストリーミングデータを非同期に処理し、RxJava 2 "
-"APIを使って純粋にイベントを調整するためのイディオムな方法を最終的に手に入れることができました。これはストリーミングデータを効率的に扱う上で非常に重要なことです。その上で、デモで使用されているバイナリデータをデプロイメントの外にプッシュするようにいくつか変更を加えました。"
+msgid "A few days after https://blog.infinispan.org/2018/04/danke-javaland-merci-devoxx-france.html[Devoxx France], I headed for http://www.developermarch.com/developersummit/[Great Indian Developer Summit] in Bangalore where I spoke about handling streaming data on top of a Kubernetes platform. This was a very similar talk to the one I gave at https://www.jfokus.se/[JFokus] but with some important changes.  Together with Clement we created a small https://github.com/ReactiveX/RxJava[RxJava 2] façade for Infinispan.  When combined with https://vertx.io/docs/vertx-rx/java2/[Vert.x RxJava 2 API], we could finally have an idiomatic way of handling streaming data asynchronously and coordinating events purely using RxJava 2 APIs. This is crucial for working with streaming data in an efficient way. On top of that, I made some changes to push the binary data used by the demo outside of the deployment."
+msgstr "link:https://blog.infinispan.org/2018/04/danke-javaland-merci-devoxx-france.html[Devoxx Franceの] 数日後、私はバンガロールで開催された link:http://www.developermarch.com/developersummit/[Great Indian Developer Summit] に向かい、Kubernetesプラットフォーム上でのストリーミングデータの取り扱いについて話しました。これは link:https://www.jfokus.se/[JFokus] で行った講演と非常に似ていますが、いくつか重要な変更点がありました。Clementと一緒に、私たちはInfinispanのための小さな link:https://github.com/ReactiveX/RxJava[RxJava 2] ファサードを作成しました。 link:https://vertx.io/docs/vertx-rx/java2/[Vert.x RxJava 2 API] と組み合わせることで、ストリーミングデータを非同期に処理し、RxJava 2 APIを使って純粋にイベントを調整するためのイディオムな方法を最終的に手に入れることができました。これはストリーミングデータを効率的に扱う上で非常に重要なことです。その上で、デモで使用されているバイナリデータをデプロイメントの外にプッシュするようにいくつか変更を加えました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-05-thanks-great-indian-developer-summit.adoc:37
 #, fuzzy
-msgid ""
-"Unfortunately Murphy struck during the presentation and I was unable to run "
-"the live coding demo. A problem with Docker size image during preparation "
-"combined with a cleanup I ran before the talk meant some of the images had "
-"to be re-downloaded. The wireless internet connection at the conference nor "
-"the mobile connection were good enough for me to recover it. Once back in "
-"the hotel where I had a stable connection I was able to record a screencast "
-"of the steps I would have followed during the Great Indian Developer Summit "
-"talk. You can find this screencast below:"
-msgstr ""
-"残念ながら、プレゼン中にマーフィーが倒れてしまい、ライブのコーディングデモを実行することができませんでした。準備中のDockerサイズのイメージの問題と、講演前に実行したクリーンアップの組み合わせにより、イメージの一部を再ダウンロードしなければなりませんでした。カンファレンスでの無線インターネット接続もモバイル接続も、私がそれを回復するのに十分なものではありませんでした。安定した接続があるホテルに戻ってからは、Great "
-"Indian Developer Summit "
-"の講演中に行ったであろう手順をスクリーンキャストで録画することができました。このスクリーンキャストは以下で見ることができます。"
+msgid "Unfortunately Murphy struck during the presentation and I was unable to run the live coding demo. A problem with Docker size image during preparation combined with a cleanup I ran before the talk meant some of the images had to be re-downloaded. The wireless internet connection at the conference nor the mobile connection were good enough for me to recover it. Once back in the hotel where I had a stable connection I was able to record a screencast of the steps I would have followed during the Great Indian Developer Summit talk. You can find this screencast below:"
+msgstr "残念ながら、プレゼン中にマーフィーが倒れてしまい、ライブのコーディングデモを実行することができませんでした。準備中のDockerサイズのイメージの問題と、講演前に実行したクリーンアップの組み合わせにより、イメージの一部を再ダウンロードしなければなりませんでした。カンファレンスでの無線インターネット接続もモバイル接続も、私がそれを回復するのに十分なものではありませんでした。安定した接続があるホテルに戻ってからは、Great Indian Developer Summit の講演中に行ったであろう手順をスクリーンキャストで録画することができました。このスクリーンキャストは以下で見ることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-05-thanks-great-indian-developer-summit.adoc:46
 #, fuzzy
-msgid ""
-"The code from the demo can be found https://github.com/infinispan-demos/"
-"streaming-data-kubernetes[here].  The live coding steps I followed are "
-"defined https://github.com/infinispan-demos/streaming-data-kubernetes/blob/"
-"master/live-coding/gids-18.org[here].  Finally the slides can be found here:"
-msgstr ""
-"デモのコードはここにあります。私が従ったライブコーディングの手順は link:https://github.com/infinispan-demos/"
-"streaming-data-kubernetes/blob/master/live-coding/gids-18.org[ここで] "
-"定義されています。最後にスライドはここで見ることができます。"
+msgid "The code from the demo can be found https://github.com/infinispan-demos/streaming-data-kubernetes[here].  The live coding steps I followed are defined https://github.com/infinispan-demos/streaming-data-kubernetes/blob/master/live-coding/gids-18.org[here].  Finally the slides can be found here:"
+msgstr "デモのコードはここにあります。私が従ったライブコーディングの手順は link:https://github.com/infinispan-demos/streaming-data-kubernetes/blob/master/live-coding/gids-18.org[ここで] 定義されています。最後にスライドはここで見ることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-05-thanks-great-indian-developer-summit.adoc:53
 #, fuzzy
-msgid ""
-"Finally, for something slightly different, back in March I joined Ray Tsang "
-"for a talk at https://voxxeddays.com/zurich/[Voxxed Days Zurich].  This was "
-"a really fun talk to be part of! We combined past stories of my time at "
-"JBoss support with Ray's Kubernetes troubleshooting experience to create an "
-"engaging talk :). You can find the video below:"
-msgstr ""
-"最後に、少し変わったことですが、3月の link:https://voxxeddays.com/zurich/[Voxxed Days Zurich] "
-"での講演にRay "
-"Tsangと一緒に参加しました。これは本当に楽しいトークでした。JBossのサポートにいた頃の過去の話とRayのKubernetesのトラブルシューティングの経験を組み合わせて、魅力的なトークを展開しました。)動画は以下からご覧いただけます。"
+msgid "Finally, for something slightly different, back in March I joined Ray Tsang for a talk at https://voxxeddays.com/zurich/[Voxxed Days Zurich].  This was a really fun talk to be part of! We combined past stories of my time at JBoss support with Ray's Kubernetes troubleshooting experience to create an engaging talk :). You can find the video below:"
+msgstr "最後に、少し変わったことですが、3月の link:https://voxxeddays.com/zurich/[Voxxed Days Zurich] での講演にRay Tsangと一緒に参加しました。これは本当に楽しいトークでした。JBossのサポートにいた頃の過去の話とRayのKubernetesのトラブルシューティングの経験を組み合わせて、魅力的なトークを展開しました。)動画は以下からご覧いただけます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-05-thanks-great-indian-developer-summit.adoc:62
 #, fuzzy
-msgid ""
-"The week after slaskawiec and I travelled to Red Hat Summit as part of the "
-"work we did to integrate Red Hat Data Grid (Infinispan product version) into "
-"the Scavenger Hunt game presented on the keynote of the last day. Both "
-"Sebastian and I have been working on a blog series which will be published "
-"very soon."
-msgstr ""
-"slaskawiec と私は、最終日の基調講演で発表された Scavenger Hunt ゲームに Red Hat Data Grid "
-"(Infinispan 製品版) を統合するための作業の一環として Red Hat Summit に行った翌週に行ってきました。Sebastian "
-"と私は、近日中に公開されるブログシリーズに取り組んでいます。"
+msgid "The week after slaskawiec and I travelled to Red Hat Summit as part of the work we did to integrate Red Hat Data Grid (Infinispan product version) into the Scavenger Hunt game presented on the keynote of the last day. Both Sebastian and I have been working on a blog series which will be published very soon."
+msgstr "slaskawiec と私は、最終日の基調講演で発表された Scavenger Hunt ゲームに Red Hat Data Grid (Infinispan 製品版) を統合するための作業の一環として Red Hat Summit に行った翌週に行ってきました。Sebastian と私は、近日中に公開されるブログシリーズに取り組んでいます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-05-thanks-great-indian-developer-summit.adoc:64

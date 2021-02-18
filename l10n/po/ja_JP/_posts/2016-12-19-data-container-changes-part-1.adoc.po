@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Data Container Changes Part 1\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2016-12-19T12:50:00.001-08:00'\n"
 "author: wburns\n"
 "tags: [storage]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7630210085989661942\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/12/data-container-changes-"
-"part-1.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7630210085989661942\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/12/data-container-changes-part-1.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,172 +42,87 @@ msgstr ""
 "date: '2016-12-19T12:50:00.001-08:00'\n"
 "author: wburns\n"
 "tags: [storage]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7630210085989661942\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/12/data-container-changes-"
-"part-1.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7630210085989661942\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/12/data-container-changes-part-1.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:14
 #, fuzzy
-msgid ""
-"Infinispan 9.0 Beta 1 introduces some big changes to the Infinispan data "
-"container.  This is the first of two blog posts detailing those changes."
-msgstr ""
-"Infinispan 9.0 Beta 1では、Infinispanデータコンテナにいくつかの大きな変更点が導入されています。 "
-"これは、これらの変更点を詳細に説明する2つのブログ記事の最初のものです。"
+msgid "Infinispan 9.0 Beta 1 introduces some big changes to the Infinispan data container.  This is the first of two blog posts detailing those changes."
+msgstr "Infinispan 9.0 Beta 1では、Infinispanデータコンテナにいくつかの大きな変更点が導入されています。 これは、これらの変更点を詳細に説明する2つのブログ記事の最初のものです。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:22
 #, fuzzy
-msgid ""
-"This post will cover the changes to eviction which utilizes a new provider, "
-"https://github.com/ben-manes/caffeine[Caffeine].  As you may already know "
-"Infinispan has supported our own implementations of https://en.wikipedia.org/"
-"wiki/Cache_replacement_policies#LRU[LRU] (Least Recently Used) and https://"
-"en.wikipedia.org/wiki/LIRS_caching_algorithm[LIRS] (Low Inter-reference "
-"Receny Set) algorithms for our bounded caches."
-msgstr ""
-"この記事では、新しいプロバイダである link:https://github.com/ben-manes/caffeine[Caffeine] "
-"を利用したevictionの変更点について説明します。 ご存知の方も多いと思いますが、InfinispanはバウンデッドキャッシュのためにLRU "
-"link:https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU[(Le] ast "
-"Recently Used)とLIRS link:https://en.wikipedia.org/wiki/"
-"LIRS_caching_algorithm[(Low] Inter-reference Receny "
-"Set)アルゴリズムの独自実装をサポートしています。"
+msgid "This post will cover the changes to eviction which utilizes a new provider, https://github.com/ben-manes/caffeine[Caffeine].  As you may already know Infinispan has supported our own implementations of https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU[LRU] (Least Recently Used) and https://en.wikipedia.org/wiki/LIRS_caching_algorithm[LIRS] (Low Inter-reference Receny Set) algorithms for our bounded caches."
+msgstr "この記事では、新しいプロバイダである link:https://github.com/ben-manes/caffeine[Caffeine] を利用したevictionの変更点について説明します。 ご存知の方も多いと思いますが、InfinispanはバウンデッドキャッシュのためにLRU link:https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU[(Le] ast Recently Used)とLIRS link:https://en.wikipedia.org/wiki/LIRS_caching_algorithm[(Low] Inter-reference Receny Set)アルゴリズムの独自実装をサポートしています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:33
 #, fuzzy
-msgid ""
-"Our implementations of eviction were even rewritten for Infinispan 8, but we "
-"found we still had some issues or limitations with them, especially LIRS.  "
-"Our old implementation had some problems with keeping the correct number of "
-"entries.  The new implementation while not having that issue had others, "
-"such as being considerably more complex.  And while it implemented the "
-"entire LIRS specification, it could have memory usage https://issues.jboss."
-"org/browse/ISPN-7171[issues].  This led us to looking at alternatives and "
-"Caffeine seemed like a logical fit as well as being well maintained and the "
-"author, Ben Manes, is quite responsive."
-msgstr ""
-"私たちの退去の実装はInfinispan 8用に書き換えられましたが、特にLIRSにはまだいくつかの問題や制限があることがわかりました。 "
-"私たちの古い実装には正しいエントリ数を維持するための問題がありましたが、新しい実装にはそのような問題はありませんでしたが、かなり複雑になるなどの他の問題がありました。そして、それはLIRS仕様全体を実装していますが、メモリ使用量に問題がある可能性がありました。 "
-"link:https://issues.jboss.org/browse/ISPN-7171[このため、] 私たちは代替案を検討することになりました。"
+msgid "Our implementations of eviction were even rewritten for Infinispan 8, but we found we still had some issues or limitations with them, especially LIRS.  Our old implementation had some problems with keeping the correct number of entries.  The new implementation while not having that issue had others, such as being considerably more complex.  And while it implemented the entire LIRS specification, it could have memory usage https://issues.jboss.org/browse/ISPN-7171[issues].  This led us to looking at alternatives and Caffeine seemed like a logical fit as well as being well maintained and the author, Ben Manes, is quite responsive."
+msgstr "私たちの退去の実装はInfinispan 8用に書き換えられましたが、特にLIRSにはまだいくつかの問題や制限があることがわかりました。 私たちの古い実装には正しいエントリ数を維持するための問題がありましたが、新しい実装にはそのような問題はありませんでしたが、かなり複雑になるなどの他の問題がありました。そして、それはLIRS仕様全体を実装していますが、メモリ使用量に問題がある可能性がありました。 link:https://issues.jboss.org/browse/ISPN-7171[このため、] 私たちは代替案を検討することになりました。"
 
 #. type: Title ==
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:35
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Enter Caffeine"
 msgstr "カフェインを入力してください"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:44
 #, fuzzy
-msgid ""
-"Caffeine doesn't utilize LRU or LIRS for its eviction algorithm and instead "
-"implements https://arxiv.org/abs/1512.00727[TinyLFU] with an admission "
-"window.  This has the benefit of the high hit ratio like LIRS, while also "
-"requiring low memory overhead like LRU.  Caffeine also provides custom "
-"weighting for objects, which allow us to reuse the code that was developed "
-"for MEMORY based eviction as well."
-msgstr ""
-"Caffeineは退避アルゴリズムにLRUやLIRSを利用せず、代わりにアドミッションウィンドウを持つ link:https://arxiv.org/"
-"abs/1512.00727[TinyLFUを] 実装しています。 "
-"これはLIRSのようにヒット率が高いという利点がありますが、LRUのように低いメモリオーバーヘッドを必要としません。 "
-"Caffeineはオブジェクトにカスタムの重み付けを提供しており、メモリベースの退避のために開発されたコードを再利用することができます。"
+msgid "Caffeine doesn't utilize LRU or LIRS for its eviction algorithm and instead implements https://arxiv.org/abs/1512.00727[TinyLFU] with an admission window.  This has the benefit of the high hit ratio like LIRS, while also requiring low memory overhead like LRU.  Caffeine also provides custom weighting for objects, which allow us to reuse the code that was developed for MEMORY based eviction as well."
+msgstr "Caffeineは退避アルゴリズムにLRUやLIRSを利用せず、代わりにアドミッションウィンドウを持つ link:https://arxiv.org/abs/1512.00727[TinyLFUを] 実装しています。 これはLIRSのようにヒット率が高いという利点がありますが、LRUのように低いメモリオーバーヘッドを必要としません。 Caffeineはオブジェクトにカスタムの重み付けを提供しており、メモリベースの退避のために開発されたコードを再利用することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:50
 #, fuzzy
-msgid ""
-"The only thing that Caffeine doesn't support is our idea of a custom https://"
-"docs.jboss.org/infinispan/8.2/apidocs/org/infinispan/commons/equivalence/"
-"Equivalence.html[Equivalence].  Thus Infinispan now wraps byte[] instances "
-"to ensure equals and hashCode methods work properly.  This also gives us a "
-"good opportunity to reevaluate the dataContainer configuration element."
-msgstr ""
-"Caffeineがサポートしていない唯一のことは、カスタム link:https://docs.jboss.org/infinispan/8.2/"
-"apidocs/org/infinispan/commons/equivalence/Equivalence.html[Equivalence] "
-"のアイデアです。 "
-"したがって、Infinispanは、equalsとhashCodeメソッドが適切に動作することを保証するために、byte[]インスタンスをラップするようになりました。 "
-"これはまた、dataContainerの設定要素を再評価する良い機会を与えてくれます。"
+msgid "The only thing that Caffeine doesn't support is our idea of a custom https://docs.jboss.org/infinispan/8.2/apidocs/org/infinispan/commons/equivalence/Equivalence.html[Equivalence].  Thus Infinispan now wraps byte[] instances to ensure equals and hashCode methods work properly.  This also gives us a good opportunity to reevaluate the dataContainer configuration element."
+msgstr "Caffeineがサポートしていない唯一のことは、カスタム link:https://docs.jboss.org/infinispan/8.2/apidocs/org/infinispan/commons/equivalence/Equivalence.html[Equivalence] のアイデアです。 したがって、Infinispanは、equalsとhashCodeメソッドが適切に動作することを保証するために、byte[]インスタンスをラップするようになりました。 これはまた、dataContainerの設定要素を再評価する良い機会を与えてくれます。"
 
 #. type: Title ==
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:52
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Deprecations"
 msgstr "非推奨"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:62
 #, fuzzy
-msgid ""
-"The data container configuration has thus been deprecated and is now "
-"replaced by a new configuration element named memory.   Also since we are "
-"adding a new element the eviction configuration could also be consolidated "
-"into memory, and thus eviction is also deprecated.  And last but not least "
-"the storeAsBinary configuration element has also been integrated into the "
-"new memory configuration element.  Now we have 1 configuration element "
-"instead of 3, can't beat that!"
-msgstr ""
-"データコンテナの設定は非推奨となり、現在はmemoryという新しい設定要素に置き換えられています。 "
-"また、新しい要素を追加しているので、退避設定もmemoryに統合され、退避も非推奨となります。 "
-"最後に、storeAsBinaryの設定要素も新しいmemoryの設定要素に統合されました。 これで3つの設定要素から1つの設定要素になりました。"
+msgid "The data container configuration has thus been deprecated and is now replaced by a new configuration element named memory.   Also since we are adding a new element the eviction configuration could also be consolidated into memory, and thus eviction is also deprecated.  And last but not least the storeAsBinary configuration element has also been integrated into the new memory configuration element.  Now we have 1 configuration element instead of 3, can't beat that!"
+msgstr "データコンテナの設定は非推奨となり、現在はmemoryという新しい設定要素に置き換えられています。 また、新しい要素を追加しているので、退避設定もmemoryに統合され、退避も非推奨となります。 最後に、storeAsBinaryの設定要素も新しいmemoryの設定要素に統合されました。 これで3つの設定要素から1つの設定要素になりました。"
 
 #. type: Title ==
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:64
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "New Configuration"
 msgstr "新しい設定"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:72
 #, fuzzy
-msgid ""
-"The new memory configuration will start out pretty simple and new elements "
-"can be added as there is a need.  The memory element will be composed of a "
-"single sub element that can be of three different choices.  For this post we "
-"will go over two of the sub elements: OBJECT and BINARY."
-msgstr ""
-"新しいメモリ構成は非常にシンプルで、必要に応じて新しい要素を追加することができます。 "
-"メモリ要素は、3つの異なる選択が可能な単一のサブ要素で構成されます。 "
-"この記事では、サブ要素のうちの2つの要素について説明します。OBJECTとBINARYです。"
+msgid "The new memory configuration will start out pretty simple and new elements can be added as there is a need.  The memory element will be composed of a single sub element that can be of three different choices.  For this post we will go over two of the sub elements: OBJECT and BINARY."
+msgstr "新しいメモリ構成は非常にシンプルで、必要に応じて新しい要素を追加することができます。 メモリ要素は、3つの異なる選択が可能な単一のサブ要素で構成されます。 この記事では、サブ要素のうちの2つの要素について説明します。OBJECTとBINARYです。"
 
 #. type: Title ===
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:74
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "OBJECT"
 msgstr "オブジェクト"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:82
 #, fuzzy
-msgid ""
-"Object storage stores the actual objects as provided from the user in the "
-"Java Heap.  This is the default storage method when no memory configuration "
-"is provided.  This method will provide the best performance when using "
-"operations that operate upon the entire data set, such as distributed "
-"streams, indexing and local reads etc."
-msgstr ""
-"オブジェクト・ストレージは、ユーザーから提供された実際のオブジェクトをJavaヒープに格納します。 "
-"これは、メモリ構成が提供されていない場合のデフォルトのストレージ・メソッドです。 "
-"このメソッドは、分散ストリーム、インデックス作成、ローカル・リードなど、データ・セット全体を操作する操作を使用する場合に、最高のパフォーマンスを提供します。"
+msgid "Object storage stores the actual objects as provided from the user in the Java Heap.  This is the default storage method when no memory configuration is provided.  This method will provide the best performance when using operations that operate upon the entire data set, such as distributed streams, indexing and local reads etc."
+msgstr "オブジェクト・ストレージは、ユーザーから提供された実際のオブジェクトをJavaヒープに格納します。 これは、メモリ構成が提供されていない場合のデフォルトのストレージ・メソッドです。 このメソッドは、分散ストリーム、インデックス作成、ローカル・リードなど、データ・セット全体を操作する操作を使用する場合に、最高のパフォーマンスを提供します。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:91
 #, fuzzy
-msgid ""
-"Unfortunately OBJECT storage only allows for COUNT based eviction as we "
-"cannot properly estimate user object types properly.  This could be improved "
-"in a feature version if there is enough interest. Note that you can "
-"technically configured MEMORY eviction type with the OBJECT storage type "
-"with declarative configuration, but it will throw an exception when you "
-"build the configuration.  Therefore OBJECT only has a single element named "
-"size to determine the amount of entries that can be stored in the cache."
-msgstr ""
-"残念ながらOBJECTストレージはCOUNTベースの退避しかできません。 "
-"これは十分な関心があれば機能版で改善されるかもしれません。技術的には宣言的な設定でOBJECTストレージ・タイプでMEMORY退避タイプを設定することができますが、設定をビルドする時に例外が投げられることに注意してください。 "
-"そのため、OBJECTはキャッシュに格納できるエントリの量を決定するためにsizeという名前の単一の要素を持っているだけです。"
+msgid "Unfortunately OBJECT storage only allows for COUNT based eviction as we cannot properly estimate user object types properly.  This could be improved in a feature version if there is enough interest. Note that you can technically configured MEMORY eviction type with the OBJECT storage type with declarative configuration, but it will throw an exception when you build the configuration.  Therefore OBJECT only has a single element named size to determine the amount of entries that can be stored in the cache."
+msgstr "残念ながらOBJECTストレージはCOUNTベースの退避しかできません。 これは十分な関心があれば機能版で改善されるかもしれません。技術的には宣言的な設定でOBJECTストレージ・タイプでMEMORY退避タイプを設定することができますが、設定をビルドする時に例外が投げられることに注意してください。 そのため、OBJECTはキャッシュに格納できるエントリの量を決定するためにsizeという名前の単一の要素を持っているだけです。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:93
@@ -220,7 +133,7 @@ msgstr "オブジェクトストレージの設定方法の一例です。"
 #. type: Title ====
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:94
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:117
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "XML"
 msgstr "エックスエムエル"
 
@@ -233,36 +146,21 @@ msgstr "宣言的"
 
 #. type: Title ===
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:100
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "BINARY"
 msgstr "バイナリー"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:110
 #, fuzzy
-msgid ""
-"Binary storage stores the object in its serialized form in a byte array.  "
-"This has an interesting side effect of objects are always stored as a deep "
-"copy.  This can be useful if you want to modify an object after retrieving "
-"it without affecting the underlying cache stored object.  Since objects have "
-"to be deserialized when performing operations on them some things such as "
-"distributed streams and local gets will be a little bit slower."
-msgstr ""
-"バイナリストレージは、オブジェクトをシリアル化した状態でバイト配列に格納します。 "
-"これは、オブジェクトが常にディープコピーとして格納されるという興味深い副作用があります。 "
-"これは、キャッシュに格納されているオブジェクトに影響を与えずにオブジェクトを取得した後に変更したい場合に便利です。 "
-"オブジェクトに対する操作を実行する際にはオブジェクトをデシリアライズしなければならないので、分散ストリームやローカル取得のようなものは少し遅くなります。"
+msgid "Binary storage stores the object in its serialized form in a byte array.  This has an interesting side effect of objects are always stored as a deep copy.  This can be useful if you want to modify an object after retrieving it without affecting the underlying cache stored object.  Since objects have to be deserialized when performing operations on them some things such as distributed streams and local gets will be a little bit slower."
+msgstr "バイナリストレージは、オブジェクトをシリアル化した状態でバイト配列に格納します。 これは、オブジェクトが常にディープコピーとして格納されるという興味深い副作用があります。 これは、キャッシュに格納されているオブジェクトに影響を与えずにオブジェクトを取得した後に変更したい場合に便利です。 オブジェクトに対する操作を実行する際にはオブジェクトをデシリアライズしなければならないので、分散ストリームやローカル取得のようなものは少し遅くなります。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:114
 #, fuzzy
-msgid ""
-"A nice benefit of storing entries as BINARY is that we can estimate the "
-"total on heap size of the object.  Thus BINARY supports both COUNT and "
-"MEMORY based eviction types."
-msgstr ""
-"エントリをBINARYとして格納する利点は、オブジェクトのヒープサイズの合計を推定できることです。 "
-"したがって、BINARYはCOUNTとMEMORYベースの退避タイプの両方をサポートしています。"
+msgid "A nice benefit of storing entries as BINARY is that we can estimate the total on heap size of the object.  Thus BINARY supports both COUNT and MEMORY based eviction types."
+msgstr "エントリをBINARYとして格納する利点は、オブジェクトのヒープサイズの合計を推定できることです。 したがって、BINARYはCOUNTとMEMORYベースの退避タイプの両方をサポートしています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:116
@@ -272,47 +170,30 @@ msgstr "バイナリストレージの設定方法の一例です。"
 
 #. type: Title ===
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:123
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "OFF-HEAP"
 msgstr "オフヒープ"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:128
 #, fuzzy
-msgid ""
-"This option will be described in more detail in the next blog post.  Stay "
-"tuned!"
+msgid "This option will be described in more detail in the next blog post.  Stay tuned!"
 msgstr "このオプションについては、次のブログ記事で詳しく説明します。 ご期待ください。"
 
 #. type: Title ==
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:130
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Conclusion"
 msgstr "結論"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:136
 #, fuzzy
-msgid ""
-"Caffeine should bring us a great solution, while also reducing a lot of "
-"maintenance ourselves.  The new memory configuration also provides a simpler "
-"solution by removing two other configuration elements."
-msgstr ""
-"Caffeineは素晴らしい解決策をもたらしてくれるはずです。 "
-"また、新しいメモリ構成では、他の2つの構成要素を削除することで、よりシンプルな解決策を提供してくれます。"
+msgid "Caffeine should bring us a great solution, while also reducing a lot of maintenance ourselves.  The new memory configuration also provides a simpler solution by removing two other configuration elements."
+msgstr "Caffeineは素晴らしい解決策をもたらしてくれるはずです。 また、新しいメモリ構成では、他の2つの構成要素を削除することで、よりシンプルな解決策を提供してくれます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-19-data-container-changes-part-1.adoc:142
 #, fuzzy
-msgid ""
-"We hope you enjoy the new changes to the data container and look out for "
-"another blog post coming soon to detail the other new changes to the data "
-"container!  In the meantime please check out our latest http://infinispan."
-"org/download/[Infinispan 9.0] before it goes final and give us any feedback "
-"on irc://irc.freenode.net/infinispan[IRC] or https://jira.jboss.org/browse/"
-"ISPN[JIRA]"
-msgstr ""
-"データコンテナへの新しい変更点を楽しんでいただきたいと思います。 "
-"データコンテナへの他の新しい変更点の詳細については、近日中に別のブログ記事でお知らせします。 その間、最新の link:http://"
-"infinispan.org/download/[Infinispan 9.0] が最終版になる前にチェックしていただき、IRC link:irc://"
-"irc.freenode.net/infinispan[やJIRA] についてフィードバックをお願いします。"
+msgid "We hope you enjoy the new changes to the data container and look out for another blog post coming soon to detail the other new changes to the data container!  In the meantime please check out our latest http://infinispan.org/download/[Infinispan 9.0] before it goes final and give us any feedback on irc://irc.freenode.net/infinispan[IRC] or https://jira.jboss.org/browse/ISPN[JIRA]"
+msgstr "データコンテナへの新しい変更点を楽しんでいただきたいと思います。 データコンテナへの他の新しい変更点の詳細については、近日中に別のブログ記事でお知らせします。 その間、最新の link:http://infinispan.org/download/[Infinispan 9.0] が最終版になる前にチェックしていただき、IRC link:irc://irc.freenode.net/infinispan[やJIRA] についてフィードバックをお願いします。"

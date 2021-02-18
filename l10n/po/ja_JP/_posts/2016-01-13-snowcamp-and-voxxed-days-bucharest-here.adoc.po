@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-01-13-snowcamp-and-voxxed-days-bucharest-here.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-01-13-snowcamp-and-voxxed-days-bucharest-here.adoc:14
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: SnowCamp and Voxxed Days Bucharest, here I come!!\n"
@@ -35,12 +35,9 @@ msgid ""
 "\"snowcamp\",\n"
 "\"voxxed\",\n"
 "]\n"
-"thumbnail: http://1.bp.blogspot.com/--vcGnhk50II/VpYOp5ZxZOI/AAAAAAAAEgs/fd0-"
-"yqcy5SE/s72-c/logo.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"5195204085239960950\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/01/snowcamp-and-voxxed-"
-"days-bucharest-here.html\n"
+"thumbnail: http://1.bp.blogspot.com/--vcGnhk50II/VpYOp5ZxZOI/AAAAAAAAEgs/fd0-yqcy5SE/s72-c/logo.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5195204085239960950\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/01/snowcamp-and-voxxed-days-bucharest-here.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -52,79 +49,46 @@ msgstr ""
 "\"snowcamp\",\n"
 "\"voxxed\",\n"
 "]\n"
-"thumbnail: http://1.bp.blogspot.com/--vcGnhk50II/VpYOp5ZxZOI/AAAAAAAAEgs/fd0-"
-"yqcy5SE/s72-c/logo.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"5195204085239960950\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/01/snowcamp-and-voxxed-"
-"days-bucharest-here.html\n"
+"thumbnail: http://1.bp.blogspot.com/--vcGnhk50II/VpYOp5ZxZOI/AAAAAAAAEgs/fd0-yqcy5SE/s72-c/logo.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5195204085239960950\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/01/snowcamp-and-voxxed-days-bucharest-here.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-01-13-snowcamp-and-voxxed-days-bucharest-here.adoc:17
 #, fuzzy
-msgid ""
-"I'll be presenting about Infinispan's in a couple of conferences over the "
-"next few months:"
+msgid "I'll be presenting about Infinispan's in a couple of conferences over the next few months:"
 msgstr "これから数ヶ月間、数回の会議でインフィニスパンのことを発表します。"
 
 #. type: Plain text
 #: upstream/_posts/2016-01-13-snowcamp-and-voxxed-days-bucharest-here.adoc:19
 #, fuzzy
-msgid ""
-"http://snowcamp.io/2016/en/[image:http://1.bp.blogspot.com/--vcGnhk50II/"
-"VpYOp5ZxZOI/AAAAAAAAEgs/fd0-yqcy5SE/s320/logo.png[image,width=320,height="
-"109]]"
+msgid "http://snowcamp.io/2016/en/[image:http://1.bp.blogspot.com/--vcGnhk50II/VpYOp5ZxZOI/AAAAAAAAEgs/fd0-yqcy5SE/s320/logo.png[image,width=320,height=109]]"
 msgstr "link:http://snowcamp.io/2016/en/[]"
 
 #. type: Plain text
 #: upstream/_posts/2016-01-13-snowcamp-and-voxxed-days-bucharest-here.adoc:30
 #, fuzzy
-msgid ""
-"First up is http://snowcamp.io/2016/en/[SnowCamp 2016], a conference taking "
-"place in Grenoble from 21st to 23rd January. The talk I'm presenting is "
-"titled https://snowcamp2016.sched.org/event/5meE/distributed-data-processing-"
-"with-infinispan-and-java-streams?iframe=no[\"Distributed Data Processing "
-"with Infinispan and Java Streams\"]. Java 8 has made data processing easier "
-"than ever and with the help of Infinispan, that data processing can easily "
-"be done in a distributed manner. This talk is focused on showing how to use "
-"Java Streams to do distributed data processing with Infinispan, and how this "
-"approach compares with other data processing APIs Infinispan exposes."
-msgstr ""
-"まずは1月21日から23日までグルノーブルで開催されるカンファレンス「 link:http://snowcamp.io/2016/en/"
-"[SnowCamp 2016] 」です。私が発表するのは link:https://snowcamp2016.sched.org/event/5meE/"
-"distributed-data-processing-with-infinispan-and-java-streams?iframe="
-"no[「InfinispanとJava Streamsによる分散データ処理」という] タイトルの講演です。Java "
-"8はデータ処理をこれまで以上に簡単にし、Infinispanの助けを借りて、そのデータ処理を分散型で簡単に行うことができるようになりました。この講演では、Javaストリームを使ってInfinispanで分散データ処理を行う方法と、このアプローチがInfinispanが公開している他のデータ処理APIとどのように比較するかに焦点を当てています。"
+msgid "First up is http://snowcamp.io/2016/en/[SnowCamp 2016], a conference taking place in Grenoble from 21st to 23rd January. The talk I'm presenting is titled https://snowcamp2016.sched.org/event/5meE/distributed-data-processing-with-infinispan-and-java-streams?iframe=no[\"Distributed Data Processing with Infinispan and Java Streams\"]. Java 8 has made data processing easier than ever and with the help of Infinispan, that data processing can easily be done in a distributed manner. This talk is focused on showing how to use Java Streams to do distributed data processing with Infinispan, and how this approach compares with other data processing APIs Infinispan exposes."
+msgstr "まずは1月21日から23日までグルノーブルで開催されるカンファレンス「 link:http://snowcamp.io/2016/en/[SnowCamp 2016] 」です。私が発表するのは link:https://snowcamp2016.sched.org/event/5meE/distributed-data-processing-with-infinispan-and-java-streams?iframe=no[「InfinispanとJava Streamsによる分散データ処理」という] タイトルの講演です。Java 8はデータ処理をこれまで以上に簡単にし、Infinispanの助けを借りて、そのデータ処理を分散型で簡単に行うことができるようになりました。この講演では、Javaストリームを使ってInfinispanで分散データ処理を行う方法と、このアプローチがInfinispanが公開している他のデータ処理APIとどのように比較するかに焦点を当てています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-01-13-snowcamp-and-voxxed-days-bucharest-here.adoc:32
 #, fuzzy
-msgid ""
-"https://voxxeddays.com/bucharest/[image:http://1.bp.blogspot.com/-"
-"aJWql8T0Ndw/VpYOIcRPyNI/AAAAAAAAEgg/9-wXlismU6I/s320/speaking-black-on-white."
-"png[image,width=320,height=147]]"
+msgid "https://voxxeddays.com/bucharest/[image:http://1.bp.blogspot.com/-aJWql8T0Ndw/VpYOIcRPyNI/AAAAAAAAEgg/9-wXlismU6I/s320/speaking-black-on-white.png[image,width=320,height=147]]"
 msgstr "link:https://voxxeddays.com/bucharest/[]"
 
 #. type: Plain text
 #: upstream/_posts/2016-01-13-snowcamp-and-voxxed-days-bucharest-here.adoc:37
 #, fuzzy
-msgid ""
-"Next, on the 11th of March I'll be in Bucharest to speak at Voxxed Days "
-"Bucharest where I'll again be talking about http://voxxeddays.com/bucharest/"
-"2016/01/09/distributed-data-processing-with-infinispan-and-java-streams/"
-"[Distributed Data Processing with Infinispan and Java Streams]."
+msgid "Next, on the 11th of March I'll be in Bucharest to speak at Voxxed Days Bucharest where I'll again be talking about http://voxxeddays.com/bucharest/2016/01/09/distributed-data-processing-with-infinispan-and-java-streams/[Distributed Data Processing with Infinispan and Java Streams]."
 msgstr "次に、3月11日にはブカレストのVoxxed Days Bucharestで講演します。"
 
 #. type: Plain text
 #: upstream/_posts/2016-01-13-snowcamp-and-voxxed-days-bucharest-here.adoc:40
 #, fuzzy
-msgid ""
-"So, if you're in Grenoble or Bucharest, make sure you come to SnowCamp or "
-"Voxxed Days Bucharest to learn about Infinispan!! :)"
-msgstr ""
-"というわけで、グルノーブルやブカレストにお住まいの方は、ぜひSnowCampやVoxxed Days "
-"Bucharestに来て、Infinispanについて学んでみてくださいね！ :)"
+msgid "So, if you're in Grenoble or Bucharest, make sure you come to SnowCamp or Voxxed Days Bucharest to learn about Infinispan!! :)"
+msgstr "というわけで、グルノーブルやブカレストにお住まいの方は、ぜひSnowCampやVoxxed Days Bucharestに来て、Infinispanについて学んでみてくださいね！ :)"
 
 #. type: Plain text
 #: upstream/_posts/2016-01-13-snowcamp-and-voxxed-days-bucharest-here.adoc:42

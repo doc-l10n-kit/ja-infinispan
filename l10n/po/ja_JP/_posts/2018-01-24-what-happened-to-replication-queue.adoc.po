@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-01-24-what-happened-to-replication-queue.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-24-what-happened-to-replication-queue.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: What happened to the replication queue?\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2018-01-24T06:00:00.000-08:00'\n"
 "author: galder\n"
 "tags: [ \" replication queue\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1280263803711217091\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/01/what-happened-to-"
-"replication-queue.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1280263803711217091\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/01/what-happened-to-replication-queue.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,94 +42,57 @@ msgstr ""
 "date: '2018-01-24T06:00:00.000-08:00'\n"
 "author: galder\n"
 "tags: [ \" replication queue\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1280263803711217091\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/01/what-happened-to-"
-"replication-queue.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1280263803711217091\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/01/what-happened-to-replication-queue.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-24-what-happened-to-replication-queue.adoc:15
 #, fuzzy
-msgid ""
-"Recently I saw an Infinispan user that was having issues using the "
-"replication queue, a clustering functionality that had been part of "
-"Infinispan since it's first release. Looking at the latest Infinispan "
-"codebase I realised it wasn't there any more, what happened to it?"
-msgstr ""
-"最近、ある Infinispan "
-"ユーザがレプリケーションキューを使用して問題を抱えているのを見かけました。最新のInfinispanのコードベースを見てみると、それはもう存在しないことに気づきました。"
+msgid "Recently I saw an Infinispan user that was having issues using the replication queue, a clustering functionality that had been part of Infinispan since it's first release. Looking at the latest Infinispan codebase I realised it wasn't there any more, what happened to it?"
+msgstr "最近、ある Infinispan ユーザがレプリケーションキューを使用して問題を抱えているのを見かけました。最新のInfinispanのコードベースを見てみると、それはもう存在しないことに気づきました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-24-what-happened-to-replication-queue.adoc:19
 #, fuzzy
-msgid ""
-"The aim of the replication queue was to batch individual cache operations "
-"and send them as one to other nodes, rather than sending them each operation "
-"individually."
+msgid "The aim of the replication queue was to batch individual cache operations and send them as one to other nodes, rather than sending them each operation individually."
 msgstr "レプリケーションキューの目的は、個々のキャッシュ操作を個別に送信するのではなく、一括して他のノードに送信することでした。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-24-what-happened-to-replication-queue.adoc:22
 #, fuzzy
-msgid ""
-"Over time we started considering whether the replication queue could be "
-"removed:"
+msgid "Over time we started considering whether the replication queue could be removed:"
 msgstr "そのうちに、レプリケーションキューを削除できるかどうかを検討し始めました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-24-what-happened-to-replication-queue.adoc:27
 #, fuzzy
-msgid ""
-"The replication queue was duplicating functionality: JGroups, which manages "
-"the group communication layer, already bundles messages and the network "
-"stack can do it too."
-msgstr ""
-"レプリケーションキューは機能を重複させていました。グループ通信層を管理するJGroupsはすでにメッセージを束ねており、ネットワークスタックでも可能です。"
+msgid "The replication queue was duplicating functionality: JGroups, which manages the group communication layer, already bundles messages and the network stack can do it too."
+msgstr "レプリケーションキューは機能を重複させていました。グループ通信層を管理するJGroupsはすでにメッセージを束ねており、ネットワークスタックでも可能です。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-24-what-happened-to-replication-queue.adoc:31
 #, fuzzy
-msgid ""
-"Using the replication queue was not more efficient because when the message "
-"is delivered in the remote node, the messages are processed sequentially. If "
-"processing first message blocks, the other commands are not processed until "
-"it finishes."
-msgstr ""
-"レプリケーションキューを使用すると、リモートノードでメッセージが配信されると、順次メッセージが処理されていくため、効率が悪くなります。最初のメッセージブロックを処理すると、それが終わるまで他のコマンドは処理されない。"
+msgid "Using the replication queue was not more efficient because when the message is delivered in the remote node, the messages are processed sequentially. If processing first message blocks, the other commands are not processed until it finishes."
+msgstr "レプリケーションキューを使用すると、リモートノードでメッセージが配信されると、順次メッセージが処理されていくため、効率が悪くなります。最初のメッセージブロックを処理すると、それが終わるまで他のコマンドは処理されない。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-24-what-happened-to-replication-queue.adoc:33
 #, fuzzy
-msgid ""
-"It can add complexity if messages with different order requirements come in "
-"same batch, e.g. no order, FIFO or total."
+msgid "It can add complexity if messages with different order requirements come in same batch, e.g. no order, FIFO or total."
 msgstr "順序が異なるメッセージが同じバッチに入ってくると、複雑さが増すことがあります。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-24-what-happened-to-replication-queue.adoc:39
 #, fuzzy
-msgid ""
-"In essence, Infinispan's replication queue was doing the same as JGroups' "
-"message bundler. Whereas JGroups' message bundler had been evolving and "
-"different options had been developed, Infinispan's replication queue was "
-"still using same algorithm as in its first release."
-msgstr ""
-"本質的には、Infinispan のレプリケーションキューは JGroups "
-"のメッセージバンドルラーと同じことをしていました。JGroupsのメッセージバンドルラーが進化し、異なるオプションが開発されていたのに対し、Infinispanのレプリケーションキューは最初のリリース時と同じアルゴリズムを使用していました。"
+msgid "In essence, Infinispan's replication queue was doing the same as JGroups' message bundler. Whereas JGroups' message bundler had been evolving and different options had been developed, Infinispan's replication queue was still using same algorithm as in its first release."
+msgstr "本質的には、Infinispan のレプリケーションキューは JGroups のメッセージバンドルラーと同じことをしていました。JGroupsのメッセージバンドルラーが進化し、異なるオプションが開発されていたのに対し、Infinispanのレプリケーションキューは最初のリリース時と同じアルゴリズムを使用していました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-24-what-happened-to-replication-queue.adoc:45
 #, fuzzy
-msgid ""
-"So in Infinispan 8.2 the replication queue was deprecated and in 9.0 it was "
-"finally removed. If you ever find the need to batch your changes, configure "
-"http://www.jgroups.org/manual/html/user-advanced."
-"html#MessageBundling[JGroups' message bundler]."
-msgstr ""
-"そのため、Infinispan 8.2ではレプリケーションキューは非推奨となり、9.0では最終的に削除されました。変更をバッチ処理する必要がある場合は、 "
-"link:http://www.jgroups.org/manual/html/user-advanced."
-"html#MessageBundling[JGroups のメッセージバンドルを] 設定してください。"
+msgid "So in Infinispan 8.2 the replication queue was deprecated and in 9.0 it was finally removed. If you ever find the need to batch your changes, configure http://www.jgroups.org/manual/html/user-advanced.html#MessageBundling[JGroups' message bundler]."
+msgstr "そのため、Infinispan 8.2ではレプリケーションキューは非推奨となり、9.0では最終的に削除されました。変更をバッチ処理する必要がある場合は、 link:http://www.jgroups.org/manual/html/user-advanced.html#MessageBundling[JGroups のメッセージバンドルを] 設定してください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-24-what-happened-to-replication-queue.adoc:47

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-06-02-another-alpha-for-infinispan.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-06-02-another-alpha-for-infinispan.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Another alpha for Infinispan\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2009-06-02T04:44:00.001-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8891825691098254965\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/06/another-alpha-for-"
-"infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8891825691098254965\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/06/another-alpha-for-infinispan.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,112 +42,51 @@ msgstr ""
 "date: '2009-06-02T04:44:00.001-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8891825691098254965\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/06/another-alpha-for-"
-"infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8891825691098254965\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/06/another-alpha-for-infinispan.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-06-02-another-alpha-for-infinispan.adoc:13
 #, fuzzy
-msgid ""
-"http://airstripone.files.wordpress.com/2007/11/4fingers1.jpg[image:http://"
-"airstripone.files.wordpress.com/2007/11/4fingers1.jpg[image]]Yes, Infinispan "
-"4.0.0.ALPHA4 is ready for a sound thrashing."
-msgstr ""
-"link:http://airstripone.files.wordpress.com/2007/11/4fingers1.jpg[] "
-"そう、Infinispan 4.0.0.ALPHA4は、サウンドスラッシュの準備ができています。"
+msgid "http://airstripone.files.wordpress.com/2007/11/4fingers1.jpg[image:http://airstripone.files.wordpress.com/2007/11/4fingers1.jpg[image]]Yes, Infinispan 4.0.0.ALPHA4 is ready for a sound thrashing."
+msgstr "link:http://airstripone.files.wordpress.com/2007/11/4fingers1.jpg[] そう、Infinispan 4.0.0.ALPHA4は、サウンドスラッシュの準備ができています。"
 
 #. type: Plain text
 #: upstream/_posts/2009-06-02-another-alpha-for-infinispan.adoc:24
 #, fuzzy
-msgid ""
-"What's new? Galder Zamarreño's recent contribution of ripping out the "
-"marshalling framework Infinispan \"inherited\" from JBoss Cache and "
-"replacing it with JBoss Marshalling has made the marshalling code much "
-"leaner, more modular and more testable, and comes with a nifty performance "
-"boost too. What's also interesting is that he has overcome issues with "
-"object stream caching (see my blog on the subject) by using JBoss "
-"Marshalling streams which can be reset. This too provides a very handy "
-"performance boost for short lived streams. (See https://jira.jboss.org/jira/"
-"browse/ISPN-42[ISPN-42], https://jira.jboss.org/jira/browse/ISPN-84[ISPN-"
-"84])"
-msgstr ""
-"何が新しくなったのか？Galder Zamarreño氏の最近の貢献は、JBoss "
-"Cacheから「継承」されたInfinispanのマーシャリングフレームワークを削除し、JBoss "
-"Marshallingに置き換えることで、マーシャリングコードをより無駄のない、よりモジュール化された、よりテスト可能なものにし、さらに気の利いたパフォーマンスの向上をもたらしました。また、興味深いのは、リセット可能な "
-"JBoss Marshalling "
-"ストリームを使用することで、オブジェクトストリームキャッシングの問題を克服したことです（この問題については私のブログを参照）。これもまた、短命のストリームに対して非常に便利なパフォーマンスの向上を提供している。( "
-"link:https://jira.jboss.org/jira/browse/ISPN-42[ISPN-42] 、 link:https://jira."
-"jboss.org/jira/browse/ISPN-84[ISPN-84] を参照)"
+msgid "What's new? Galder Zamarreño's recent contribution of ripping out the marshalling framework Infinispan \"inherited\" from JBoss Cache and replacing it with JBoss Marshalling has made the marshalling code much leaner, more modular and more testable, and comes with a nifty performance boost too. What's also interesting is that he has overcome issues with object stream caching (see my blog on the subject) by using JBoss Marshalling streams which can be reset. This too provides a very handy performance boost for short lived streams. (See https://jira.jboss.org/jira/browse/ISPN-42[ISPN-42], https://jira.jboss.org/jira/browse/ISPN-84[ISPN-84])"
+msgstr "何が新しくなったのか？Galder Zamarreño氏の最近の貢献は、JBoss Cacheから「継承」されたInfinispanのマーシャリングフレームワークを削除し、JBoss Marshallingに置き換えることで、マーシャリングコードをより無駄のない、よりモジュール化された、よりテスト可能なものにし、さらに気の利いたパフォーマンスの向上をもたらしました。また、興味深いのは、リセット可能な JBoss Marshalling ストリームを使用することで、オブジェクトストリームキャッシングの問題を克服したことです（この問題については私のブログを参照）。これもまた、短命のストリームに対して非常に便利なパフォーマンスの向上を提供している。( link:https://jira.jboss.org/jira/browse/ISPN-42[ISPN-42] 、 link:https://jira.jboss.org/jira/browse/ISPN-84[ISPN-84] を参照)"
 
 #. type: Plain text
 #: upstream/_posts/2009-06-02-another-alpha-for-infinispan.adoc:30
 #, fuzzy
-msgid ""
-"Mircea Markus has put together a bunch of migration scripts to migrate your "
-"JBoss Cache 3.x configuration to Infinispan. More migration scripts are on "
-"their way. (See https://jira.jboss.org/jira/browse/ISPN-53[ISPN-53], https://"
-"jira.jboss.org/jira/browse/ISPN-54[ISPN-54])"
-msgstr ""
-"Mircea Markus は、JBoss Cache 3.x 構成を Infinispan "
-"に移行するための移行スクリプトをまとめました。他にも移行スクリプトが追加される予定です。( link:https://jira.jboss.org/"
-"jira/browse/ISPN-53[ISPN-53] 、 link:https://jira.jboss.org/jira/browse/ISPN-"
-"54[ISPN-54] を参照)"
+msgid "Mircea Markus has put together a bunch of migration scripts to migrate your JBoss Cache 3.x configuration to Infinispan. More migration scripts are on their way. (See https://jira.jboss.org/jira/browse/ISPN-53[ISPN-53], https://jira.jboss.org/jira/browse/ISPN-54[ISPN-54])"
+msgstr "Mircea Markus は、JBoss Cache 3.x 構成を Infinispan に移行するための移行スクリプトをまとめました。他にも移行スクリプトが追加される予定です。( link:https://jira.jboss.org/jira/browse/ISPN-53[ISPN-53] 、 link:https://jira.jboss.org/jira/browse/ISPN-54[ISPN-54] を参照)"
 
 #. type: Plain text
 #: upstream/_posts/2009-06-02-another-alpha-for-infinispan.adoc:34
 #, fuzzy
-msgid ""
-"Vladimir Blagojevic has contributed the new lock() API - which allows for "
-"explicit, eager cluster-wide locks. (See https://jira.jboss.org/jira/browse/"
-"ISPN-48[ISPN-48])"
-msgstr ""
-"Vladimir Blagojevic さんが新しい lock() API を寄稿しました。( link:https://jira.jboss.org/"
-"jira/browse/ISPN-48[ISPN-48] を参照)"
+msgid "Vladimir Blagojevic has contributed the new lock() API - which allows for explicit, eager cluster-wide locks. (See https://jira.jboss.org/jira/browse/ISPN-48[ISPN-48])"
+msgstr "Vladimir Blagojevic さんが新しい lock() API を寄稿しました。( link:https://jira.jboss.org/jira/browse/ISPN-48[ISPN-48] を参照)"
 
 #. type: Plain text
 #: upstream/_posts/2009-06-02-another-alpha-for-infinispan.adoc:42
 #, fuzzy
-msgid ""
-"Heiko Rupp has contributed the early days of a JOPR plugin, allowing "
-"Infinispan instances to be managed by http://dandreadis.blogspot.com/2009/04/"
-"as-510cr1-with-embedded-jopr-is-out.html[JBoss AS 5.1.0's embedded console] "
-"as well as other environments. Read his guide to http://www.jboss.org/"
-"community/wiki/MonitoringInfinispanwithJopr[managing Infinispan with JOPR] "
-"for more details."
-msgstr ""
-"Heiko Rupp は、JOPR プラグインの初期段階で貢献し、 link:http://dandreadis.blogspot.com/2009/"
-"04/as-510cr1-with-embedded-jopr-is-out.html[JBoss AS 5.1.0 の組み込みコンソール] "
-"や他の環境で Infinispan インスタンスを管理できるようにしました。詳細は、 link:http://www.jboss.org/"
-"community/wiki/MonitoringInfinispanwithJopr[JOPR で Infinispan を管理する] "
-"ための彼のガイドをお読みください。"
+msgid "Heiko Rupp has contributed the early days of a JOPR plugin, allowing Infinispan instances to be managed by http://dandreadis.blogspot.com/2009/04/as-510cr1-with-embedded-jopr-is-out.html[JBoss AS 5.1.0's embedded console] as well as other environments. Read his guide to http://www.jboss.org/community/wiki/MonitoringInfinispanwithJopr[managing Infinispan with JOPR] for more details."
+msgstr "Heiko Rupp は、JOPR プラグインの初期段階で貢献し、 link:http://dandreadis.blogspot.com/2009/04/as-510cr1-with-embedded-jopr-is-out.html[JBoss AS 5.1.0 の組み込みコンソール] や他の環境で Infinispan インスタンスを管理できるようにしました。詳細は、 link:http://www.jboss.org/community/wiki/MonitoringInfinispanwithJopr[JOPR で Infinispan を管理する] ための彼のガイドをお読みください。"
 
 #. type: Plain text
 #: upstream/_posts/2009-06-02-another-alpha-for-infinispan.adoc:50
 #, fuzzy
-msgid ""
-"And I've implemented some enhancements to the Future API. Now, rather than "
-"returning Futures, the xxxAsync() methods return a NotifyingFuture.  "
-"NotifyingFuture extends Future, adding the ability to register a notifier "
-"such that the caller can be notified when the Future completes.  Note that "
-"Future completion could mean any of successful completion, exception or "
-"cancellation, so the listener should check the state of the Future using "
-"get() on notification. For example:"
-msgstr ""
-"そして、Future API にいくつかの拡張機能を実装しました。今では、Futures を返すのではなく、xxxAsync() メソッドは "
-"NotifyingFuture "
-"を返すようになりました。NotifyingFutureはFutureを拡張し、Futureが完了したときに呼び出し元に通知されるように通知器を登録する機能を追加しました。Future "
-"の完了は、成功した完了、例外、キャンセルのいずれかを意味する可能性があるので、リスナーは通知時に get() を使用して Future "
-"の状態を確認する必要があることに注意してください。例えば、以下のようになります。"
+msgid "And I've implemented some enhancements to the Future API. Now, rather than returning Futures, the xxxAsync() methods return a NotifyingFuture.  NotifyingFuture extends Future, adding the ability to register a notifier such that the caller can be notified when the Future completes.  Note that Future completion could mean any of successful completion, exception or cancellation, so the listener should check the state of the Future using get() on notification. For example:"
+msgstr "そして、Future API にいくつかの拡張機能を実装しました。今では、Futures を返すのではなく、xxxAsync() メソッドは NotifyingFuture を返すようになりました。NotifyingFutureはFutureを拡張し、Futureが完了したときに呼び出し元に通知されるように通知器を登録する機能を追加しました。Future の完了は、成功した完了、例外、キャンセルのいずれかを意味する可能性があるので、リスナーは通知時に get() を使用して Future の状態を確認する必要があることに注意してください。例えば、以下のようになります。"
 
 #. type: delimited block -
 #: upstream/_posts/2009-06-02-another-alpha-for-infinispan.adoc:61
 #, no-wrap
 msgid ""
-"NotifyingFuture<Void> f = cache.clearAsync().attachListener(new "
-"FutureListener<Void>() {\n"
+"NotifyingFuture<Void> f = cache.clearAsync().attachListener(new FutureListener<Void>() {\n"
 " public void futureDone(Future<Void> f) {\n"
 "   if (f.get() && !f.isCancelled()) {\n"
 "     System.out.println(\"clear operation succeeded\");\n"
@@ -161,20 +98,8 @@ msgstr ""
 #. type: Plain text
 #: upstream/_posts/2009-06-02-another-alpha-for-infinispan.adoc:69
 #, fuzzy
-msgid ""
-"The full change log for this release is https://jira.jboss.org/jira/secure/"
-"ConfigureReport.jspa?versions=12313646&sections=.1.7.2.4.10.9.8.3.12.11."
-"5&style=none&selectedProjectId=12310799&reportKey=pl.net."
-"mamut%3Areleasenotes&Next=Next[available on JIRA]. http://www.jboss.org/"
-"infinispan/downloads.html[Download] this release, and provide feedback on "
-"the http://www.jboss.org/infinispan/forums.html[Infinispan user forums]."
-msgstr ""
-"このリリースの完全な変更ログは link:https://jira.jboss.org/jira/secure/ConfigureReport."
-"jspa?versions=12313646&sections=.1.7.2.4.10.9.8.3.12.11.5&style="
-"none&selectedProjectId=12310799&reportKey=pl.net.mamut%3Areleasenotes&Next="
-"Next[JIRA で入手可能] です。このリリースを link:http://www.jboss.org/infinispan/downloads."
-"html[ダウンロードして] 、 link:http://www.jboss.org/infinispan/forums.html[Infinispan "
-"ユーザーフォーラム] でフィードバックを提供してください。"
+msgid "The full change log for this release is https://jira.jboss.org/jira/secure/ConfigureReport.jspa?versions=12313646&sections=.1.7.2.4.10.9.8.3.12.11.5&style=none&selectedProjectId=12310799&reportKey=pl.net.mamut%3Areleasenotes&Next=Next[available on JIRA]. http://www.jboss.org/infinispan/downloads.html[Download] this release, and provide feedback on the http://www.jboss.org/infinispan/forums.html[Infinispan user forums]."
+msgstr "このリリースの完全な変更ログは link:https://jira.jboss.org/jira/secure/ConfigureReport.jspa?versions=12313646&sections=.1.7.2.4.10.9.8.3.12.11.5&style=none&selectedProjectId=12310799&reportKey=pl.net.mamut%3Areleasenotes&Next=Next[JIRA で入手可能] です。このリリースを link:http://www.jboss.org/infinispan/downloads.html[ダウンロードして] 、 link:http://www.jboss.org/infinispan/forums.html[Infinispan ユーザーフォーラム] でフィードバックを提供してください。"
 
 #. type: Plain text
 #: upstream/_posts/2009-06-02-another-alpha-for-infinispan.adoc:71

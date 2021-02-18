@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,17 +18,16 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-06-07-faster-infinispan-based-second-level.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-07-faster-infinispan-based-second-level.adoc:15
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
-"title: Faster Infinispan-based Second Level Cache coming to a JPA app near "
-"you!\n"
+"title: Faster Infinispan-based Second Level Cache coming to a JPA app near you!\n"
 "permalink: /blog/:year/:month/:day/faster-infinispan-based-second-level\n"
 "date: '2011-06-07T01:32:00.000-07:00'\n"
 "author: galder\n"
@@ -38,10 +37,8 @@ msgid ""
 "\"hibernate\",\n"
 "\"second level cache provider\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1092133868177441060\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/06/faster-infinispan-"
-"based-second-level.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1092133868177441060\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/06/faster-infinispan-based-second-level.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -55,92 +52,46 @@ msgstr ""
 "\"hibernate\",\n"
 "\"second level cache provider\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1092133868177441060\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/06/faster-infinispan-"
-"based-second-level.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1092133868177441060\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/06/faster-infinispan-based-second-level.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-07-faster-infinispan-based-second-level.adoc:24
 #, fuzzy
-msgid ""
-"Starting with Hibernate 4.0.0.Beta1, Infinispan second level cache interacts "
-"with the transaction manager as a JTA Synchronization instead of an XA "
-"resource. Based on some testing we've done in JBoss AS 7, this has resulted "
-"in a huge performance increase http://community.jboss.org/wiki/"
-"InfinispanTransactions#Enlisting_Synchronization[thanks to the optimisations "
-"the transaction manager can apply] to Synchronizations, which work very well "
-"when Infinispan is used as a cache rather than as a authoritative data store."
-""
-msgstr ""
-"Hibernate 4.0.0.0.Beta1 以降、Infinispan の第 2 レベルキャッシュは XA リソースの代わりに JTA "
-"Synchronization としてトランザクションマネージャと相互作用します。JBoss AS 7 で行ったいくつかのテストに基づいて、 link:"
-"http://community.jboss.org/wiki/"
-"InfinispanTransactions#Enlisting_Synchronization[トランザクションマネージャが] 同期に link:"
-"http://community.jboss.org/wiki/"
-"InfinispanTransactions#Enlisting_Synchronization[適用できる最適化のおかげで、] "
-"パフォーマンスが大幅に向上しました。"
+msgid "Starting with Hibernate 4.0.0.Beta1, Infinispan second level cache interacts with the transaction manager as a JTA Synchronization instead of an XA resource. Based on some testing we've done in JBoss AS 7, this has resulted in a huge performance increase http://community.jboss.org/wiki/InfinispanTransactions#Enlisting_Synchronization[thanks to the optimisations the transaction manager can apply] to Synchronizations, which work very well when Infinispan is used as a cache rather than as a authoritative data store."
+msgstr "Hibernate 4.0.0.0.Beta1 以降、Infinispan の第 2 レベルキャッシュは XA リソースの代わりに JTA Synchronization としてトランザクションマネージャと相互作用します。JBoss AS 7 で行ったいくつかのテストに基づいて、 link:http://community.jboss.org/wiki/InfinispanTransactions#Enlisting_Synchronization[トランザクションマネージャが] 同期に link:http://community.jboss.org/wiki/InfinispanTransactions#Enlisting_Synchronization[適用できる最適化のおかげで、] パフォーマンスが大幅に向上しました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-07-faster-infinispan-based-second-level.adoc:36
 #, fuzzy
-msgid ""
-"From an Infinispan configuration perspective, nothing needs changing.  The "
-"Infinispan provider still uses the same https://github.com/hibernate/"
-"hibernate-core/blob/master/hibernate-infinispan/src/main/resources/org/"
-"hibernate/cache/infinispan/builder/infinispan-configs.xml[base "
-"configuration] by default. Transactional configuration happens within the "
-"cache provider itself and it's here where the Infinispan is configured with "
-"Hibernate's transaction manager and where Infinispan is configured to "
-"participate as a JTA synchronization. This is the default configuration, so "
-"from an user perspective, there's nothing you have to do to take advantage "
-"of this new change."
-msgstr ""
-"Infinispan の設定の観点からは、何も変更する必要はありません。Infinispan プロバイダはデフォルトでは同じ link:https://"
-"github.com/hibernate/hibernate-core/blob/master/hibernate-infinispan/src/"
-"main/resources/org/hibernate/cache/infinispan/builder/infinispan-configs."
-"xml[基本設定] "
-"を使用しています。トランザクションの設定はキャッシュプロバイダ自体の中で行われ、ここでHibernateのトランザクションマネージャを使用してInfinispanを設定し、JTA同期として参加するようにInfinispanを設定します。これがデフォルトの設定なので、ユーザーの立場からすると、この新しい変更を利用するためにしなければならないことは何もありません。"
+msgid "From an Infinispan configuration perspective, nothing needs changing.  The Infinispan provider still uses the same https://github.com/hibernate/hibernate-core/blob/master/hibernate-infinispan/src/main/resources/org/hibernate/cache/infinispan/builder/infinispan-configs.xml[base configuration] by default. Transactional configuration happens within the cache provider itself and it's here where the Infinispan is configured with Hibernate's transaction manager and where Infinispan is configured to participate as a JTA synchronization. This is the default configuration, so from an user perspective, there's nothing you have to do to take advantage of this new change."
+msgstr "Infinispan の設定の観点からは、何も変更する必要はありません。Infinispan プロバイダはデフォルトでは同じ link:https://github.com/hibernate/hibernate-core/blob/master/hibernate-infinispan/src/main/resources/org/hibernate/cache/infinispan/builder/infinispan-configs.xml[基本設定] を使用しています。トランザクションの設定はキャッシュプロバイダ自体の中で行われ、ここでHibernateのトランザクションマネージャを使用してInfinispanを設定し、JTA同期として参加するようにInfinispanを設定します。これがデフォルトの設定なので、ユーザーの立場からすると、この新しい変更を利用するためにしなければならないことは何もありません。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-07-faster-infinispan-based-second-level.adoc:42
 #, fuzzy
-msgid ""
-"However, you can always switch back to previous behaviour where Infinispan "
-"interacted as an XA resource via a dedicated Hibernate property called "
-"_hibernate.cache.infinispan.use_synchronization_"
-msgstr ""
-"しかし、hibernate _.cache.infinispan.use_synchronization_ "
-"という専用のHibernateプロパティを使用して、InfinispanがXAリソースとして相互作用する以前の動作にいつでも切り替えることができます。"
+msgid "However, you can always switch back to previous behaviour where Infinispan interacted as an XA resource via a dedicated Hibernate property called _hibernate.cache.infinispan.use_synchronization_"
+msgstr "しかし、hibernate _.cache.infinispan.use_synchronization_ という専用のHibernateプロパティを使用して、InfinispanがXAリソースとして相互作用する以前の動作にいつでも切り替えることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-07-faster-infinispan-based-second-level.adoc:43
 #: upstream/_posts/2011-06-07-faster-infinispan-based-second-level.adoc:44
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "_\n"
 msgstr "_"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-07-faster-infinispan-based-second-level.adoc:48
 #, fuzzy
-msgid ""
-"By default this property is set to _true_. If you set it _false_, Infinispan "
-"will interact with the transaction manager as an XA resource."
-msgstr ""
-"デフォルトでは、このプロパティは _true_ に設定されています。 _false_ に設定すると、Infinispan は XA "
-"リソースとしてトランザクション マネージャと対話します。"
+msgid "By default this property is set to _true_. If you set it _false_, Infinispan will interact with the transaction manager as an XA resource."
+msgstr "デフォルトでは、このプロパティは _true_ に設定されています。 _false_ に設定すると、Infinispan は XA リソースとしてトランザクション マネージャと対話します。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-07-faster-infinispan-based-second-level.adoc:54
 #, fuzzy
-msgid ""
-"For more detailed information, check the \"http://community.jboss.org/docs/"
-"DOC-14105[Using Infinispan As JPA Hibernate Second Level Cache Provider]\" "
-"wiki."
-msgstr ""
-"詳細については、wiki link:http://community.jboss.org/docs/DOC-14105[「Using "
-"Infinispan As JPA Hibernate Second Level Cache Provider] 」を確認してください。"
+msgid "For more detailed information, check the \"http://community.jboss.org/docs/DOC-14105[Using Infinispan As JPA Hibernate Second Level Cache Provider]\" wiki."
+msgstr "詳細については、wiki link:http://community.jboss.org/docs/DOC-14105[「Using Infinispan As JPA Hibernate Second Level Cache Provider] 」を確認してください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-07-faster-infinispan-based-second-level.adoc:58

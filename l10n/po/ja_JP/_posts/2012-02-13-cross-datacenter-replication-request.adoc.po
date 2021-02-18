@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-02-13-cross-datacenter-replication-request.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-02-13-cross-datacenter-replication-request.adoc:11
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 'Cross-datacenter replication: your feedback is needed!'\n"
@@ -32,12 +32,9 @@ msgid ""
 "date: '2012-02-13T09:40:00.000-08:00'\n"
 "author: mmarkus\n"
 "tags: []\n"
-"thumbnail: http://2.bp.blogspot.com/-vtavRRFtRss/TzlNu6HnFFI/AAAAAAAACCw/"
-"0mYCNFQ1MmQ/s72-c/needyou.jpg\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8205202437329386057\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/02/cross-datacenter-"
-"replication-request.html\n"
+"thumbnail: http://2.bp.blogspot.com/-vtavRRFtRss/TzlNu6HnFFI/AAAAAAAACCw/0mYCNFQ1MmQ/s72-c/needyou.jpg\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8205202437329386057\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/02/cross-datacenter-replication-request.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -46,40 +43,22 @@ msgstr ""
 "date: '2012-02-13T09:40:00.000-08:00'\n"
 "author: mmarkus\n"
 "tags: []\n"
-"thumbnail: http://2.bp.blogspot.com/-vtavRRFtRss/TzlNu6HnFFI/AAAAAAAACCw/"
-"0mYCNFQ1MmQ/s72-c/needyou.jpg\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8205202437329386057\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/02/cross-datacenter-"
-"replication-request.html\n"
+"thumbnail: http://2.bp.blogspot.com/-vtavRRFtRss/TzlNu6HnFFI/AAAAAAAACCw/0mYCNFQ1MmQ/s72-c/needyou.jpg\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8205202437329386057\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/02/cross-datacenter-replication-request.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-02-13-cross-datacenter-replication-request.adoc:14
 #, fuzzy
-msgid ""
-"http://2.bp.blogspot.com/-vtavRRFtRss/TzlNu6HnFFI/AAAAAAAACCw/0mYCNFQ1MmQ/"
-"s1600/needyou.jpg[image:http://2.bp.blogspot.com/-vtavRRFtRss/TzlNu6HnFFI/"
-"AAAAAAAACCw/0mYCNFQ1MmQ/s400/needyou.jpg[image]] Hi,"
-msgstr ""
-"link:http://2.bp.blogspot.com/-vtavRRFtRss/TzlNu6HnFFI/AAAAAAAACCw/"
-"0mYCNFQ1MmQ/s1600/needyou.jpg[] こんにちは。"
+msgid "http://2.bp.blogspot.com/-vtavRRFtRss/TzlNu6HnFFI/AAAAAAAACCw/0mYCNFQ1MmQ/s1600/needyou.jpg[image:http://2.bp.blogspot.com/-vtavRRFtRss/TzlNu6HnFFI/AAAAAAAACCw/0mYCNFQ1MmQ/s400/needyou.jpg[image]] Hi,"
+msgstr "link:http://2.bp.blogspot.com/-vtavRRFtRss/TzlNu6HnFFI/AAAAAAAACCw/0mYCNFQ1MmQ/s1600/needyou.jpg[] こんにちは。"
 
 #. type: Plain text
 #: upstream/_posts/2012-02-13-cross-datacenter-replication-request.adoc:22
 #, fuzzy
-msgid ""
-"Cross datacenter replication has been for a while one of the most requested "
-"features in Infinispan. In order to support this as good as possible we are "
-"looking for as many use cases that require this functionality. So if you've "
-"ever came to this problem or you think you will, or you simply feel like "
-"brainstorming about an interesting failover situation please add your "
-"comments https://community.jboss.org/wiki/CrossDatacenterReplication-"
-"Design[here]."
-msgstr ""
-"クロスデータセンターレプリケーションは、しばらくの間、Infinispanで最も要望の多かった機能の一つです。これを可能な限りサポートするために、この機能を必要とする多くのユースケースを募集しています。もし、この問題に直面したことがある方、または直面すると思われる方、または単に面白いフェイルオーバーの状況についてブレインストーミングしたいと思われる方は、 "
-"link:https://community.jboss.org/wiki/CrossDatacenterReplication-Design[ここに] "
-"コメントを追加してください。"
+msgid "Cross datacenter replication has been for a while one of the most requested features in Infinispan. In order to support this as good as possible we are looking for as many use cases that require this functionality. So if you've ever came to this problem or you think you will, or you simply feel like brainstorming about an interesting failover situation please add your comments https://community.jboss.org/wiki/CrossDatacenterReplication-Design[here]."
+msgstr "クロスデータセンターレプリケーションは、しばらくの間、Infinispanで最も要望の多かった機能の一つです。これを可能な限りサポートするために、この機能を必要とする多くのユースケースを募集しています。もし、この問題に直面したことがある方、または直面すると思われる方、または単に面白いフェイルオーバーの状況についてブレインストーミングしたいと思われる方は、 link:https://community.jboss.org/wiki/CrossDatacenterReplication-Design[ここに] コメントを追加してください。"
 
 #. type: Plain text
 #: upstream/_posts/2012-02-13-cross-datacenter-replication-request.adoc:24

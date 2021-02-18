@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-02-15-dear-infinispanners-c-and-c-8.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-15-dear-infinispanners-c-and-c-8.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: \"  Hotrod clients C++/C# 8.2.0.Beta1 are out!\"\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2018-02-15T07:07:00.000-08:00'\n"
 "author: rigazilla\n"
 "tags: [ \" beta\", \"c++\", \"release\", \"minor release\", \"c#\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2081627779678751596\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/02/dear-infinispanners-c-"
-"and-c-8.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2081627779678751596\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/02/dear-infinispanners-c-and-c-8.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,10 +42,8 @@ msgstr ""
 "date: '2018-02-15T07:07:00.000-08:00'\n"
 "author: rigazilla\n"
 "tags: [ \" beta\", \"c++\", \"release\", \"minor release\", \"c#\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2081627779678751596\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/02/dear-infinispanners-c-"
-"and-c-8.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2081627779678751596\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/02/dear-infinispanners-c-and-c-8.html\n"
 "---\n"
 
 #. type: Plain text
@@ -65,13 +61,8 @@ msgstr "これらのリリースには、8.2.0のすべての機能が含まれ�
 #. type: Plain text
 #: upstream/_posts/2018-02-15-dear-infinispanners-c-and-c-8.adoc:20
 #, fuzzy
-msgid ""
-"Worth a mention is the improvement in the remote execution API: we moved the "
-"JBossMarshaller basic implementation from test to the distro in order to "
-"simplify the data management on the application side. Test examples"
-msgstr ""
-"特筆すべきは、リモート実行 API の改善です: アプリケーション側のデータ管理を簡素化するため、JBossMarshaller "
-"の基本実装をテストからディストロに移動しました。テスト例"
+msgid "Worth a mention is the improvement in the remote execution API: we moved the JBossMarshaller basic implementation from test to the distro in order to simplify the data management on the application side. Test examples"
+msgstr "特筆すべきは、リモート実行 API の改善です: アプリケーション側のデータ管理を簡素化するため、JBossMarshaller の基本実装をテストからディストロに移動しました。テスト例"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-15-dear-infinispanners-c-and-c-8.adoc:22
@@ -88,25 +79,14 @@ msgstr "はそれに合わせて更新されました。"
 #. type: Plain text
 #: upstream/_posts/2018-02-15-dear-infinispanners-c-and-c-8.adoc:27
 #, fuzzy
-msgid ""
-"Next step will be a CR release containing improvements on API docs (doxygen)"
+msgid "Next step will be a CR release containing improvements on API docs (doxygen)"
 msgstr "次のステップは、APIドキュメントの改善を含むCRリリースになります。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-15-dear-infinispanners-c-and-c-8.adoc:34
 #, fuzzy
-msgid ""
-"Check the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12314125&version=12333563[release notes], browse the source code (https://"
-"github.com/infinispan/cpp-client/tree/8.2.0.Beta1[C++], https://github.com/"
-"infinispan/dotnet-client/tree/8.2.0.Beta1[C#]) or http://infinispan.org/"
-"hotrod-clients/[download] the releases!"
-msgstr ""
-"link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12314125&version=12333563[リリースノートを] 確認したり、ソースコード link:https://github.com/"
-"infinispan/cpp-client/tree/8.2.0.Beta1[(C++、] C link:https://github.com/"
-"infinispan/dotnet-client/tree/8.2.0.Beta1[#)] を閲覧したり、リリースを link:http://"
-"infinispan.org/hotrod-clients/[ダウンロードし] たりしてください。"
+msgid "Check the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314125&version=12333563[release notes], browse the source code (https://github.com/infinispan/cpp-client/tree/8.2.0.Beta1[C++], https://github.com/infinispan/dotnet-client/tree/8.2.0.Beta1[C#]) or http://infinispan.org/hotrod-clients/[download] the releases!"
+msgstr "link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314125&version=12333563[リリースノートを] 確認したり、ソースコード link:https://github.com/infinispan/cpp-client/tree/8.2.0.Beta1[(C++、] C link:https://github.com/infinispan/dotnet-client/tree/8.2.0.Beta1[#)] を閲覧したり、リリースを link:http://infinispan.org/hotrod-clients/[ダウンロードし] たりしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-15-dear-infinispanners-c-and-c-8.adoc:36

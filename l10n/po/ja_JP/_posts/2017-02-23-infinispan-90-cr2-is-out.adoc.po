@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:13
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.0 CR2 is out!\n"
@@ -35,10 +35,8 @@ msgid ""
 "\"release\",\n"
 "\"release candidate\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6591186462723574726\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/02/infinispan-90-cr2-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6591186462723574726\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/02/infinispan-90-cr2-is-out.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -50,10 +48,8 @@ msgstr ""
 "\"release\",\n"
 "\"release candidate\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6591186462723574726\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/02/infinispan-90-cr2-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6591186462723574726\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/02/infinispan-90-cr2-is-out.html\n"
 "---\n"
 
 #. type: Plain text
@@ -65,14 +61,12 @@ msgstr "地域の皆様へ"
 #. type: Plain text
 #: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:18
 #, fuzzy
-msgid ""
-"We are one step closer to the final release of Infinispan 9: we gladly "
-"announce the release of Infinispan 9.0.0.CR2."
+msgid "We are one step closer to the final release of Infinispan 9: we gladly announce the release of Infinispan 9.0.0.CR2."
 msgstr "Infinispan 9 の最終リリースまであと一歩です。"
 
 #. type: Title ==
 #: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:20
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "The highlights of this release are:"
 msgstr "今回のリリースのハイライトは"
 
@@ -115,16 +109,13 @@ msgstr "トランザクションキャッシュが変更されます。"
 #. type: Plain text
 #: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:33
 #, fuzzy
-msgid ""
-"Removed asynchronous configuration since it won't be supported anymore."
+msgid "Removed asynchronous configuration since it won't be supported anymore."
 msgstr "非同期設定はサポートされなくなるので削除しました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:35
 #, fuzzy
-msgid ""
-"Introduced EmbeddedTransactionManager: a basic transaction manager "
-"implementation."
+msgid "Introduced EmbeddedTransactionManager: a basic transaction manager implementation."
 msgstr "EmbeddedTransactionManager: トランザクションマネージャの基本的な実装を紹介しました。"
 
 #. type: Plain text
@@ -142,55 +133,32 @@ msgstr "構成の変更。"
 #. type: Plain text
 #: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:42
 #, fuzzy
-msgid ""
-"Significant performance improvements for embedded and client/server mode;"
+msgid "Significant performance improvements for embedded and client/server mode;"
 msgstr "組み込みモードとクライアント/サーバーモードのパフォーマンスが大幅に向上。"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:44
 #, fuzzy
-msgid ""
-"And finally, quite a few bug fixes preparing us for the final release !"
+msgid "And finally, quite a few bug fixes preparing us for the final release !"
 msgstr "そして最後に、最終リリースに向けてかなりの数のバグフィックスを行いました"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:50
 #, fuzzy
-msgid ""
-"You can read all about these in the https://issues.jboss.org/secure/"
-"ReleaseNote.jspa?projectId=12310799&version=12330030[release notes.]"
-msgstr ""
-"これらのことは、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12310799&version=12330030[リリースノート] ですべて読むことができます。"
+msgid "You can read all about these in the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12330030[release notes.]"
+msgstr "これらのことは、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12330030[リリースノート] ですべて読むことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:55
 #, fuzzy
-msgid ""
-"Keep an eye on the http://infinispan.org/docs/dev/upgrading/upgrading."
-"html[upgrade guide] and start prepare your project for the final Infinispan "
-"9 release."
-msgstr ""
-"link:http://infinispan.org/docs/dev/upgrading/upgrading.html[アップグレードガイドに] "
-"注意して、Infinispan 9の最終リリースに向けてプロジェクトの準備を始めてください。"
+msgid "Keep an eye on the http://infinispan.org/docs/dev/upgrading/upgrading.html[upgrade guide] and start prepare your project for the final Infinispan 9 release."
+msgstr "link:http://infinispan.org/docs/dev/upgrading/upgrading.html[アップグレードガイドに] 注意して、Infinispan 9の最終リリースに向けてプロジェクトの準備を始めてください。"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:63
 #, fuzzy
-msgid ""
-"So, please head over to the http://infinispan.org/download/[download "
-"page] and try it out. If you have an issue, please report it in our https://"
-"issues.jboss.org/projects/ISPN/summary[bug tracker], ask us on the https://"
-"developer.jboss.org/en/infinispan/content[forum], or join us for a friendly "
-"chat on the #infinispan IRC channel on http://webchat.freenode.net/[Freenode."
-"]"
-msgstr ""
-"link:http://infinispan.org/download/[ダウンロードページ] にアクセスして試してみてください。もし問題があれば、 "
-"link:https://issues.jboss.org/projects/ISPN/summary[バグトラッカー] で報告する link:"
-"https://issues.jboss.org/projects/ISPN/summary[か、] フォーラムで link:https://"
-"issues.jboss.org/projects/ISPN/summary[質問する] か、Freenodeの#infinispan "
-"IRCチャンネルでフレンドリーなチャットに link:https://developer.jboss.org/en/infinispan/"
-"content[参加して] ください。"
+msgid "So, please head over to the http://infinispan.org/download/[download page] and try it out. If you have an issue, please report it in our https://issues.jboss.org/projects/ISPN/summary[bug tracker], ask us on the https://developer.jboss.org/en/infinispan/content[forum], or join us for a friendly chat on the #infinispan IRC channel on http://webchat.freenode.net/[Freenode.]"
+msgstr "link:http://infinispan.org/download/[ダウンロードページ] にアクセスして試してみてください。もし問題があれば、 link:https://issues.jboss.org/projects/ISPN/summary[バグトラッカー] で報告する link:https://issues.jboss.org/projects/ISPN/summary[か、] フォーラムで link:https://issues.jboss.org/projects/ISPN/summary[質問する] か、Freenodeの#infinispan IRCチャンネルでフレンドリーなチャットに link:https://developer.jboss.org/en/infinispan/content[参加して] ください。"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-23-infinispan-90-cr2-is-out.adoc:65

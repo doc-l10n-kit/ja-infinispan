@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-05-15-one-more-micro-release-infinispan.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-15-one-more-micro-release-infinispan.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: One more micro release, Infinispan 5.1.5.CR1 out now!\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2012-05-15T09:51:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \"release\", \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6509722402222759103\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/05/one-more-micro-release-"
-"infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6509722402222759103\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/05/one-more-micro-release-infinispan.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,60 +42,27 @@ msgstr ""
 "date: '2012-05-15T09:51:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \"release\", \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6509722402222759103\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/05/one-more-micro-release-"
-"infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6509722402222759103\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/05/one-more-micro-release-infinispan.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-15-one-more-micro-release-infinispan.adoc:18
 #, fuzzy
-msgid ""
-"Infinispan 5.1.5.CR1 has just been released with a handful of crucial issues "
-"that we considered required another community release. If you're a https://"
-"issues.jboss.org/browse/ISPN-2036[tree module user in JBoss AS7], or a https:"
-"//issues.jboss.org/browse/ISPN-1995[an elastic Hot Rod server user],  or "
-"https://issues.jboss.org/browse/ISPN-2023[use XA datasources with Infinispan "
-"JDBC cache store], you should definitely upgrade to this version!"
-msgstr ""
-"Infinispan 5.1.5.CR1がリリースされました。 link:https://issues.jboss.org/browse/ISPN-"
-"2036[JBoss AS7のツリーモジュールユーザー、] link:https://issues.jboss.org/browse/ISPN-"
-"1995[エラスティックホットロッドサーバーユーザー、または] link:https://issues.jboss.org/browse/ISPN-"
-"2023[Infinispan JDBCキャッシュストアで] XA link:https://issues.jboss.org/browse/ISPN-"
-"2023[データソースを] 使用している方は、ぜひこのバージョンにアップグレードしてください。"
+msgid "Infinispan 5.1.5.CR1 has just been released with a handful of crucial issues that we considered required another community release. If you're a https://issues.jboss.org/browse/ISPN-2036[tree module user in JBoss AS7], or a https://issues.jboss.org/browse/ISPN-1995[an elastic Hot Rod server user],  or https://issues.jboss.org/browse/ISPN-2023[use XA datasources with Infinispan JDBC cache store], you should definitely upgrade to this version!"
+msgstr "Infinispan 5.1.5.CR1がリリースされました。 link:https://issues.jboss.org/browse/ISPN-2036[JBoss AS7のツリーモジュールユーザー、] link:https://issues.jboss.org/browse/ISPN-1995[エラスティックホットロッドサーバーユーザー、または] link:https://issues.jboss.org/browse/ISPN-2023[Infinispan JDBCキャッシュストアで] XA link:https://issues.jboss.org/browse/ISPN-2023[データソースを] 使用している方は、ぜひこのバージョンにアップグレードしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-15-one-more-micro-release-infinispan.adoc:27
 #, fuzzy
-msgid ""
-"Infinispan 5.1 _'Brahma'_ is a key component for a lot of projects both "
-"within and outside the boundaries of Red Hat, and this is reflected in all "
-"the micro releases we've done for _'Brahma'_ as Infinispan consumers near "
-"their final releases. From here I'd like to personally thank all the people "
-"behind these projects who have been crucial to the development of Infinispan."
-" Expect a 5.1.5.FINAL in the next days which should wrap up the _'Brahma'_ "
-"release lifecycle barring a show-stopper! :)"
-msgstr ""
-"Infinispan 5.1 _'Brahma' は_ Red Hat の内外を問わず多くのプロジェクトにとって重要なコンポーネントであり、これは "
-"Infinispan の最終リリースが近づくにつれ、 _'Brahma' の_ ために行ってきたすべてのマイクロリリースに反映されています。 "
-"ここからは、Infinispan "
-"の開発に重要な役割を果たしてくれたこれらのプロジェクトの背後にいるすべての人々に個人的に感謝の意を表したいと思います。近日中に5.1.5.5."
-"FINALがリリースされることを期待していますが、これで _'Brahma'の_ リリースのライフサイクルはショーストッパーを除いて終了するはずです。)"
+msgid "Infinispan 5.1 _'Brahma'_ is a key component for a lot of projects both within and outside the boundaries of Red Hat, and this is reflected in all the micro releases we've done for _'Brahma'_ as Infinispan consumers near their final releases. From here I'd like to personally thank all the people behind these projects who have been crucial to the development of Infinispan. Expect a 5.1.5.FINAL in the next days which should wrap up the _'Brahma'_ release lifecycle barring a show-stopper! :)"
+msgstr "Infinispan 5.1 _'Brahma' は_ Red Hat の内外を問わず多くのプロジェクトにとって重要なコンポーネントであり、これは Infinispan の最終リリースが近づくにつれ、 _'Brahma' の_ ために行ってきたすべてのマイクロリリースに反映されています。 ここからは、Infinispan の開発に重要な役割を果たしてくれたこれらのプロジェクトの背後にいるすべての人々に個人的に感謝の意を表したいと思います。近日中に5.1.5.5.FINALがリリースされることを期待していますが、これで _'Brahma'の_ リリースのライフサイクルはショーストッパーを除いて終了するはずです。)"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-15-one-more-micro-release-infinispan.adoc:36
 #, fuzzy
-msgid ""
-"As always, full details of what has been fixed can be found https://issues."
-"jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12319504[here], "
-"and if you have feedback, please visit our http://community.jboss.org/en/"
-"infinispan?view=discussions[forums].  Finally, as always, you can download "
-"the release from http://www.jboss.org/infinispan/downloads[here]."
-msgstr ""
-"いつものように、修正された内容の完全な詳細は link:https://issues.jboss.org/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12319504[ここに] 掲載されています。最後に、いつものように、 link:"
-"http://www.jboss.org/infinispan/downloads[ここ] からリリースをダウンロードすることができます。"
+msgid "As always, full details of what has been fixed can be found https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12319504[here], and if you have feedback, please visit our http://community.jboss.org/en/infinispan?view=discussions[forums].  Finally, as always, you can download the release from http://www.jboss.org/infinispan/downloads[here]."
+msgstr "いつものように、修正された内容の完全な詳細は link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12319504[ここに] 掲載されています。最後に、いつものように、 link:http://www.jboss.org/infinispan/downloads[ここ] からリリースをダウンロードすることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-15-one-more-micro-release-infinispan.adoc:40

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-11-19-infinispan-devoxx-2012-hackergarten.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-11-19-infinispan-devoxx-2012-hackergarten.adoc:14
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan @ Devoxx 2012 Hackergarten\n"
@@ -36,10 +36,8 @@ msgid ""
 "\"event\",\n"
 "\"hackergarten\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2740204643405635909\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/11/infinispan-devoxx-2012-"
-"hackergarten.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2740204643405635909\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/11/infinispan-devoxx-2012-hackergarten.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -52,63 +50,27 @@ msgstr ""
 "\"event\",\n"
 "\"hackergarten\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2740204643405635909\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/11/infinispan-devoxx-2012-"
-"hackergarten.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2740204643405635909\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/11/infinispan-devoxx-2012-hackergarten.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-11-19-infinispan-devoxx-2012-hackergarten.adoc:21
 #, fuzzy
-msgid ""
-"Just came back from http://www.devoxx.com/display/DV12/Home[Devoxx], and "
-"once again it didn't let me down! Great conference, with awesome talks, and "
-"fantastic networking opportunities (hackergarten, party...etc). As far as "
-"Infinispan is concerned, I joined the http://www.jroller.com/aalmiray/entry/"
-"hackergarten_devoxx_2012[Hackergarten] on Tuesday morning to try lure some "
-"contributors into our project :)."
-msgstr ""
-"link:http://www.devoxx.com/display/DV12/Home[Devoxx] "
-"から戻ってきたばかりだが、またしても期待を裏切らないカンファレンスだったよ！素晴らしい講演と素晴らしいネットワーキングの機会（hackergarten、パーティーなど）があった。素晴らしい講演と素晴らしいネットワーキングの機会（hackergarten、パーティー."
-"..など）があって、素晴らしいカンファレンスでした。 Infinispanに関しては、私は火曜日の朝に link:http://www.jroller."
-"com/aalmiray/entry/hackergarten_devoxx_2012[Hackergarten] "
-"に参加して、何人かの貢献者を私たちのプロジェクトに誘き出そうとしました :)。"
+msgid "Just came back from http://www.devoxx.com/display/DV12/Home[Devoxx], and once again it didn't let me down! Great conference, with awesome talks, and fantastic networking opportunities (hackergarten, party...etc). As far as Infinispan is concerned, I joined the http://www.jroller.com/aalmiray/entry/hackergarten_devoxx_2012[Hackergarten] on Tuesday morning to try lure some contributors into our project :)."
+msgstr "link:http://www.devoxx.com/display/DV12/Home[Devoxx] から戻ってきたばかりだが、またしても期待を裏切らないカンファレンスだったよ！素晴らしい講演と素晴らしいネットワーキングの機会（hackergarten、パーティーなど）があった。素晴らしい講演と素晴らしいネットワーキングの機会（hackergarten、パーティー...など）があって、素晴らしいカンファレンスでした。 Infinispanに関しては、私は火曜日の朝に link:http://www.jroller.com/aalmiray/entry/hackergarten_devoxx_2012[Hackergarten] に参加して、何人かの貢献者を私たちのプロジェクトに誘き出そうとしました :)。"
 
 #. type: Plain text
 #: upstream/_posts/2012-11-19-infinispan-devoxx-2012-hackergarten.adoc:29
 #, fuzzy
-msgid ""
-"One of the most promising opportunities came from https://github.com/"
-"lordofthejars[Alex Soto], who's founder and lead of https://github.com/"
-"lordofthejars/nosql-unit[NoSQLUnit], which is a JUnit extension that helps "
-"you write NoSQL unit tests. He already has support for a number of NoSQL "
-"engines and he was explaining me the challenges of supporting multiple "
-"engines. We also discussed the possibility of supporting Infinispan as well :"
-"D."
-msgstr ""
-"その中で最も有望な機会の一つが、 link:https://github.com/lordofthejars/nosql-unit[NoSQLUnit] "
-"の創設者であり、NoSQLユニットテストを書くのに役立つJUnit拡張機能であるNoSQLUnitのリーダーである link:https://"
-"github.com/lordofthejars[Alex Soto] "
-"氏からのオファーでした。彼はすでに多くのNoSQLエンジンをサポートしており、複数のエンジンをサポートすることの難しさを説明してくれていました。また、Infinispanのサポートの可能性についても話をしました "
-":D。"
+msgid "One of the most promising opportunities came from https://github.com/lordofthejars[Alex Soto], who's founder and lead of https://github.com/lordofthejars/nosql-unit[NoSQLUnit], which is a JUnit extension that helps you write NoSQL unit tests. He already has support for a number of NoSQL engines and he was explaining me the challenges of supporting multiple engines. We also discussed the possibility of supporting Infinispan as well :D."
+msgstr "その中で最も有望な機会の一つが、 link:https://github.com/lordofthejars/nosql-unit[NoSQLUnit] の創設者であり、NoSQLユニットテストを書くのに役立つJUnit拡張機能であるNoSQLUnitのリーダーである link:https://github.com/lordofthejars[Alex Soto] 氏からのオファーでした。彼はすでに多くのNoSQLエンジンをサポートしており、複数のエンジンをサポートすることの難しさを説明してくれていました。また、Infinispanのサポートの可能性についても話をしました :D。"
 
 #. type: Plain text
 #: upstream/_posts/2012-11-19-infinispan-devoxx-2012-hackergarten.adoc:39
 #, fuzzy
-msgid ""
-"During the Hackergarten I also met http://www.jroller.com/aalmiray/[Andrés "
-"Almiray], which is the http://griffon.codehaus.org/[Griffon] founder, and we "
-"briefly discussed the possibility of adding integrating https://docs.jboss."
-"org/author/x/NgY5[Infinispan's Hot Rod client] with Griffon clients. "
-"Unfortunately we didn't have time to get into some coding, but since he "
-"lives close-by and he organises Hackergartens in Basel, I might pop in next "
-"time around and sit down with him to work on this integration :)."
-msgstr ""
-"Hackergartenでは、 link:http://griffon.codehaus.org/[Griffonの] 創設者である link:http:"
-"//www.jroller.com/aalmiray/[Andrés Almiray] にも会い、 link:https://docs.jboss."
-"org/author/x/NgY5[InfinispanのHot Rod] "
-"クライアントをGriffonクライアントに統合できないかという話をしました。残念ながらコーディングをする時間がなかったのですが、彼は近くに住んでいてバーゼルでHackergartensを開催しているので、次回は彼と一緒にこの統合の作業をしてみようかなと思っています。)"
+msgid "During the Hackergarten I also met http://www.jroller.com/aalmiray/[Andrés Almiray], which is the http://griffon.codehaus.org/[Griffon] founder, and we briefly discussed the possibility of adding integrating https://docs.jboss.org/author/x/NgY5[Infinispan's Hot Rod client] with Griffon clients. Unfortunately we didn't have time to get into some coding, but since he lives close-by and he organises Hackergartens in Basel, I might pop in next time around and sit down with him to work on this integration :)."
+msgstr "Hackergartenでは、 link:http://griffon.codehaus.org/[Griffonの] 創設者である link:http://www.jroller.com/aalmiray/[Andrés Almiray] にも会い、 link:https://docs.jboss.org/author/x/NgY5[InfinispanのHot Rod] クライアントをGriffonクライアントに統合できないかという話をしました。残念ながらコーディングをする時間がなかったのですが、彼は近くに住んでいてバーゼルでHackergartensを開催しているので、次回は彼と一緒にこの統合の作業をしてみようかなと思っています。)"
 
 #. type: Plain text
 #: upstream/_posts/2012-11-19-infinispan-devoxx-2012-hackergarten.adoc:41

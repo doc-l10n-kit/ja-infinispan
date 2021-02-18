@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-01-08-improving-collect-for-distributed-java.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-08-improving-collect-for-distributed-java.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Improving collect() for distributed Java Streams in Infinispan 9.2\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2018-01-08T06:00:00.000-08:00'\n"
 "author: galder\n"
 "tags: [ \" streams\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"9094884866394960354\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/01/improving-collect-for-"
-"distributed-java.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-9094884866394960354\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/01/improving-collect-for-distributed-java.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,135 +42,63 @@ msgstr ""
 "date: '2018-01-08T06:00:00.000-08:00'\n"
 "author: galder\n"
 "tags: [ \" streams\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"9094884866394960354\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/01/improving-collect-for-"
-"distributed-java.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-9094884866394960354\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/01/improving-collect-for-distributed-java.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-08-improving-collect-for-distributed-java.adoc:14
 #, fuzzy
-msgid ""
-"As we progress with the release of Infinispan 9.2 pre-releases, it's "
-"important to highlight some of the more interesting improvements from an end-"
-"user perspective."
-msgstr ""
-"Infinispan 9.2 のプレリリースを進めていく中で、エンドユーザーの視点から、より興味深い改善点をいくつか紹介することが重要です。"
+msgid "As we progress with the release of Infinispan 9.2 pre-releases, it's important to highlight some of the more interesting improvements from an end-user perspective."
+msgstr "Infinispan 9.2 のプレリリースを進めていく中で、エンドユーザーの視点から、より興味深い改善点をいくつか紹介することが重要です。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-08-improving-collect-for-distributed-java.adoc:28
 #, fuzzy
-msgid ""
-"As mentioned http://blog.infinispan.org/2017/05/reactive-big-data-on-"
-"openshift-in.html[before], http://infinispan.org/docs/stable/user_guide/"
-"user_guide.html#streams[Infinispan Distributed Java Streams] can be used to "
-"calculate analytics over existing data. Through overloading of methods, "
-"Infinispan is able to offer a simple way of passing lambdas that are made to "
-"be Serializable without the need of explicit casting. Being able to produce "
-"binary formats for the lambdas is an important step for java streams "
-"executions to be distributed. In this example, the cached values are being "
-"filtered to find those that have a delay bigger than 0. This lambda can be "
-"safely distributed without the need to cast to Serializable because values()."
-"stream() returns org.infinispan.CacheStream that overloads filter to take a "
-"SerializablePredicate:"
-msgstr ""
-"link:http://blog.infinispan.org/2017/05/reactive-big-data-on-openshift-in."
-"html[前述] したように、 link:http://infinispan.org/docs/stable/user_guide/user_guide."
-"html#streams[Infinispan Distributed Java Streams は] "
-"、既存のデータの上にアナリティクスを計算するために使用することができます。メソッドのオーバーロードを通じて、Infinispan "
-"は、明示的なキャストを必要とせずにシリアル化可能なラムダを渡す簡単な方法を提供することができます。ラムダ用のバイナリ形式を生成できることは、Java "
-"ストリームの実行を分散するための重要なステップです。この例では、キャッシュされた値をフィルタリングして、遅延が 0 よりも大きい値を見つけています。 "
-"values().stream() は、serializablePredicate を取るためにフィルタをオーバーロードする org."
-"infinispan.CacheStream を返すので、このラムダは、Serializable "
-"へのキャストを必要とせずに安全に配布することができます。"
+msgid "As mentioned http://blog.infinispan.org/2017/05/reactive-big-data-on-openshift-in.html[before], http://infinispan.org/docs/stable/user_guide/user_guide.html#streams[Infinispan Distributed Java Streams] can be used to calculate analytics over existing data. Through overloading of methods, Infinispan is able to offer a simple way of passing lambdas that are made to be Serializable without the need of explicit casting. Being able to produce binary formats for the lambdas is an important step for java streams executions to be distributed. In this example, the cached values are being filtered to find those that have a delay bigger than 0. This lambda can be safely distributed without the need to cast to Serializable because values().stream() returns org.infinispan.CacheStream that overloads filter to take a SerializablePredicate:"
+msgstr "link:http://blog.infinispan.org/2017/05/reactive-big-data-on-openshift-in.html[前述] したように、 link:http://infinispan.org/docs/stable/user_guide/user_guide.html#streams[Infinispan Distributed Java Streams は] 、既存のデータの上にアナリティクスを計算するために使用することができます。メソッドのオーバーロードを通じて、Infinispan は、明示的なキャストを必要とせずにシリアル化可能なラムダを渡す簡単な方法を提供することができます。ラムダ用のバイナリ形式を生成できることは、Java ストリームの実行を分散するための重要なステップです。この例では、キャッシュされた値をフィルタリングして、遅延が 0 よりも大きい値を見つけています。 values().stream() は、serializablePredicate を取るためにフィルタをオーバーロードする org.infinispan.CacheStream を返すので、このラムダは、Serializable へのキャストを必要とせずに安全に配布することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-08-improving-collect-for-distributed-java.adoc:32
 #, fuzzy
-msgid ""
-"Cache<String, Stop> cache = ...  cache.values().stream()    .filter(e -> e."
-"delayMin > 0);"
-msgstr ""
-"Cache<String, Stop> cache = ... cache.values().stream() .filter(e → e."
-"delayMin > 0)."
+msgid "Cache<String, Stop> cache = ...  cache.values().stream()    .filter(e -> e.delayMin > 0);"
+msgstr "Cache<String, Stop> cache = ... cache.values().stream() .filter(e → e.delayMin > 0)."
 
 #. type: Plain text
 #: upstream/_posts/2018-01-08-improving-collect-for-distributed-java.adoc:39
 #, fuzzy
-msgid ""
-"However, there was one area which was still a bit clunky to use: Java "
-"Collectors. When Java Streams came out, the JDK provided a class called java."
-"util.stream.Collectors which includes a lot of helper methods for collecting "
-"results after stream processing. The problem with the Collector instances "
-"returned by the helper methods is that they're not Serializable."
-msgstr ""
-"ただ、やはり使いづらい部分がありました。それは、Java Collectors です。Java Streams が登場したとき、JDK は java."
-"util.stream.Collectors と呼ばれるクラスを提供しました。ヘルパーメソッドが返す Collector "
-"インスタンスの問題は、Serializable ではないということです。"
+msgid "However, there was one area which was still a bit clunky to use: Java Collectors. When Java Streams came out, the JDK provided a class called java.util.stream.Collectors which includes a lot of helper methods for collecting results after stream processing. The problem with the Collector instances returned by the helper methods is that they're not Serializable."
+msgstr "ただ、やはり使いづらい部分がありました。それは、Java Collectors です。Java Streams が登場したとき、JDK は java.util.stream.Collectors と呼ばれるクラスを提供しました。ヘルパーメソッドが返す Collector インスタンスの問題は、Serializable ではないということです。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-08-improving-collect-for-distributed-java.adoc:47
 #, fuzzy
-msgid ""
-"Before Infinispan 9.2, we worked around this problem with the help of org."
-"infinispan.stream.CacheCollectors which defined a serializableCollector "
-"method that took a SerializableSupplier<Collector<T, ?, R>>. The aim here "
-"was this: even if the Collector instance is not Serializable, the function "
-"that creates the Collector can be made to be Serializable. It could be used "
-"this way:"
-msgstr ""
-"Infinispan 9.2 より前のバージョンでは、org.infinispan.stream.CacheCollectors "
-"の助けを借りてこの問題を回避していましたが、SerializableSupplier<Collector<T, ?, R>> を取る "
-"serializableCollector メソッドを定義していました。ここでの目的は、Collector "
-"のインスタンスがシリアライズ可能でなくても、Collector を作成する関数をシリアライズ可能にすることです。このように使うことができます。"
+msgid "Before Infinispan 9.2, we worked around this problem with the help of org.infinispan.stream.CacheCollectors which defined a serializableCollector method that took a SerializableSupplier<Collector<T, ?, R>>. The aim here was this: even if the Collector instance is not Serializable, the function that creates the Collector can be made to be Serializable. It could be used this way:"
+msgstr "Infinispan 9.2 より前のバージョンでは、org.infinispan.stream.CacheCollectors の助けを借りてこの問題を回避していましたが、SerializableSupplier<Collector<T, ?, R>> を取る serializableCollector メソッドを定義していました。ここでの目的は、Collector のインスタンスがシリアライズ可能でなくても、Collector を作成する関数をシリアライズ可能にすることです。このように使うことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-08-improving-collect-for-distributed-java.adoc:54
 #, fuzzy
-msgid ""
-"Cache<String, Stop> cache = ...  cache.values().stream().collect(   "
-"CacheCollectors.serializableCollector(() -> Collectors.groupingBy(       e -"
-"> getHourOfDay(e.departureTs),       Collectors.counting()  )));"
-msgstr ""
-"Cache<String, Stop> cache = ... cache.values().stream().collector( "
-"CacheCollectors.serializableCollector) → Collectors.groupingBy( e → "
-"getHourOfDay(e.departureTs), Collectors.counting()."
+msgid "Cache<String, Stop> cache = ...  cache.values().stream().collect(   CacheCollectors.serializableCollector(() -> Collectors.groupingBy(       e -> getHourOfDay(e.departureTs),       Collectors.counting()  )));"
+msgstr "Cache<String, Stop> cache = ... cache.values().stream().collector( CacheCollectors.serializableCollector) → Collectors.groupingBy( e → getHourOfDay(e.departureTs), Collectors.counting()."
 
 #. type: Plain text
 #: upstream/_posts/2018-01-08-improving-collect-for-distributed-java.adoc:59
 #, fuzzy
-msgid ""
-"Although this worked, it was a clunky, so in Infinispan 9.2 we overloaded "
-"collect() in org.infinispan.CacheStream to "
-"take SerializableSupplier<Collector<T, ?, R>>. This means that in Infinispan "
-"9.2, the code above can be written like this instead:"
-msgstr ""
-"これはうまくいったのですが、不便だったので、Infinispan 9.2では、org.infinispan."
-"CacheStreamのcollect()をオーバーロードして、SerializableSupplier<Collector<T, ?, "
-"R>>を取るようにしました。つまり、Infinispan 9.2では、上のコードは代わりにこのように書くことができます。"
+msgid "Although this worked, it was a clunky, so in Infinispan 9.2 we overloaded collect() in org.infinispan.CacheStream to take SerializableSupplier<Collector<T, ?, R>>. This means that in Infinispan 9.2, the code above can be written like this instead:"
+msgstr "これはうまくいったのですが、不便だったので、Infinispan 9.2では、org.infinispan.CacheStreamのcollect()をオーバーロードして、SerializableSupplier<Collector<T, ?, R>>を取るようにしました。つまり、Infinispan 9.2では、上のコードは代わりにこのように書くことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-08-improving-collect-for-distributed-java.adoc:66
 #, fuzzy
-msgid ""
-"Cache<String, Stop> cache = ...  cache.values().stream().collect(   () -> "
-"Collectors.groupingBy(       e -> getHourOfDay(e.departureTs),       "
-"Collectors.counting()  ));"
-msgstr ""
-"Cache<String, Stop> cache = ... cache.values().stream().collect( () → "
-"Collectors.groupingBy( e → getHourOfDay(e.departureTs), Collectors."
-"counting() )."
+msgid "Cache<String, Stop> cache = ...  cache.values().stream().collect(   () -> Collectors.groupingBy(       e -> getHourOfDay(e.departureTs),       Collectors.counting()  ));"
+msgstr "Cache<String, Stop> cache = ... cache.values().stream().collect( () → Collectors.groupingBy( e → getHourOfDay(e.departureTs), Collectors.counting() )."
 
 #. type: Plain text
 #: upstream/_posts/2018-01-08-improving-collect-for-distributed-java.adoc:69
 #, fuzzy
-msgid ""
-"This is a cleaner way of making sure Collector instances returned by java."
-"util.stream.Collectors can be distributed."
-msgstr ""
-"これは、java.util.stream."
-"Collectorsによって返されたCollectorインスタンスを確実に配布できるようにする、よりクリーンな方法です。"
+msgid "This is a cleaner way of making sure Collector instances returned by java.util.stream.Collectors can be distributed."
+msgstr "これは、java.util.stream.Collectorsによって返されたCollectorインスタンスを確実に配布できるようにする、よりクリーンな方法です。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-08-improving-collect-for-distributed-java.adoc:71

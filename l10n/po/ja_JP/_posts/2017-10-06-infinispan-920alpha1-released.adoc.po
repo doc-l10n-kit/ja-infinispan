@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-10-06-infinispan-920alpha1-released.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-06-infinispan-920alpha1-released.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.2.0.Alpha1 released\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2017-10-06T01:30:00.001-07:00'\n"
 "author: vblagojevic\n"
 "tags: [ \"release\", \"alpha\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7407564931708101647\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/10/infinispan-920alpha1-"
-"released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7407564931708101647\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/10/infinispan-920alpha1-released.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,10 +42,8 @@ msgstr ""
 "date: '2017-10-06T01:30:00.001-07:00'\n"
 "author: vblagojevic\n"
 "tags: [ \"release\", \"alpha\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7407564931708101647\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/10/infinispan-920alpha1-"
-"released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7407564931708101647\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/10/infinispan-920alpha1-released.html\n"
 "---\n"
 
 #. type: Plain text
@@ -59,56 +55,31 @@ msgstr "Infinispanコミュニティの皆様へ。"
 #. type: Plain text
 #: upstream/_posts/2017-10-06-infinispan-920alpha1-released.adoc:16
 #, fuzzy
-msgid ""
-"Today we continue with our time-boxed releases, this time on 9.2 release "
-"branch! We prepared The Infinispan 9.2.0.Alpha1 for you. As usual, it can be "
-"found on our download http://infinispan.org/download/[page]."
-msgstr ""
-"今日は、タイムボックスリリースの続きで、今回は9.2リリースブランチです。The Infinispan 9.2.0."
-"Alpha1を用意しました。いつものように、ダウンロードページにあります。"
+msgid "Today we continue with our time-boxed releases, this time on 9.2 release branch! We prepared The Infinispan 9.2.0.Alpha1 for you. As usual, it can be found on our download http://infinispan.org/download/[page]."
+msgstr "今日は、タイムボックスリリースの続きで、今回は9.2リリースブランチです。The Infinispan 9.2.0.Alpha1を用意しました。いつものように、ダウンロードページにあります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-06-infinispan-920alpha1-released.adoc:19
 #, fuzzy
-msgid ""
-"9.2.0.Alpha1 brings Infinispan https://github.com/infinispan/infinispan/blob/"
-"cb025dab181b9ebd16aa05512f641c39aa1fb84f/documentation/src/main/asciidoc/"
-"user_guide/multimapcache.adoc[MultimapCache]"
-msgstr ""
-"9.2.0.Alpha1ではInfinispan link:https://github.com/infinispan/infinispan/blob/"
-"cb025dab181b9ebd16aa05512f641c39aa1fb84f/documentation/src/main/asciidoc/"
-"user_guide/multimapcache.adoc[MultimapCacheが] 導入されました。"
+msgid "9.2.0.Alpha1 brings Infinispan https://github.com/infinispan/infinispan/blob/cb025dab181b9ebd16aa05512f641c39aa1fb84f/documentation/src/main/asciidoc/user_guide/multimapcache.adoc[MultimapCache]"
+msgstr "9.2.0.Alpha1ではInfinispan link:https://github.com/infinispan/infinispan/blob/cb025dab181b9ebd16aa05512f641c39aa1fb84f/documentation/src/main/asciidoc/user_guide/multimapcache.adoc[MultimapCacheが] 導入されました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-06-infinispan-920alpha1-released.adoc:24
 #, fuzzy
-msgid ""
-"a new distributed and clustered collection type that maps keys to values in "
-"which each key can contain multiple values. We rolled out support for "
-"embedded cache mode, but upcoming releases will have support for other "
-"Infinispan modes, including client invocation through hotrod."
-msgstr ""
-"これは、キーを値にマッピングし、各キーに複数の値を含むことができる新しい分散型およびクラスタ型コレクションタイプです。埋め込みキャッシュモードのサポートをロールアウトしましたが、今後のリリースでは、ホットロッドからのクライアント呼び出しを含む他のInfinispanモードもサポートする予定です。"
+msgid "a new distributed and clustered collection type that maps keys to values in which each key can contain multiple values. We rolled out support for embedded cache mode, but upcoming releases will have support for other Infinispan modes, including client invocation through hotrod."
+msgstr "これは、キーを値にマッピングし、各キーに複数の値を含むことができる新しい分散型およびクラスタ型コレクションタイプです。埋め込みキャッシュモードのサポートをロールアウトしましたが、今後のリリースでは、ホットロッドからのクライアント呼び出しを含む他のInfinispanモードもサポートする予定です。"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-06-infinispan-920alpha1-released.adoc:29
 #, fuzzy
-msgid ""
-"Aside from MultimapCache we also include the usual slew of bug fixes, clean "
-"ups, and general improvements. Full details of the new features and "
-"enhancements included in this release can be found https://issues.jboss.org/"
-"secure/ReleaseNote.jspa?version=12335605&projectId=12310799[here]."
-msgstr ""
-"MultimapCache以外にも、バグ修正、クリーンアップ、一般的な改善が含まれています。このリリースに含まれる新機能と機能強化の詳細は link:"
-"https://issues.jboss.org/secure/ReleaseNote.jspa?version=12335605&projectId="
-"12310799[こちら] をご覧ください。"
+msgid "Aside from MultimapCache we also include the usual slew of bug fixes, clean ups, and general improvements. Full details of the new features and enhancements included in this release can be found https://issues.jboss.org/secure/ReleaseNote.jspa?version=12335605&projectId=12310799[here]."
+msgstr "MultimapCache以外にも、バグ修正、クリーンアップ、一般的な改善が含まれています。このリリースに含まれる新機能と機能強化の詳細は link:https://issues.jboss.org/secure/ReleaseNote.jspa?version=12335605&projectId=12310799[こちら] をご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-06-infinispan-920alpha1-released.adoc:32
 #, fuzzy
-msgid ""
-"We have a lot more exciting features coming up on Infinispan 9.2 branch.  "
-"Thank you for following us and stay tuned!"
+msgid "We have a lot more exciting features coming up on Infinispan 9.2 branch.  Thank you for following us and stay tuned!"
 msgstr "Infinispan 9.2ブランチでは、さらに多くのエキサイティングな機能をご用意しています。フォローしていただきありがとうございます。"
 
 #. type: Plain text

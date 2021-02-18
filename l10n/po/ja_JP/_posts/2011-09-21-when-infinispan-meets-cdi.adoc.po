@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: When Infinispan meets CDI\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2011-09-21T06:37:00.000-07:00'\n"
 "author: Kevin Pollet\n"
 "tags: [ \"jsr 107\", \"cdi\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"4649985884255161785\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/09/when-infinispan-meets-"
-"cdi.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4649985884255161785\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/09/when-infinispan-meets-cdi.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,25 +42,15 @@ msgstr ""
 "date: '2011-09-21T06:37:00.000-07:00'\n"
 "author: Kevin Pollet\n"
 "tags: [ \"jsr 107\", \"cdi\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"4649985884255161785\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/09/when-infinispan-meets-"
-"cdi.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4649985884255161785\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/09/when-infinispan-meets-cdi.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:15
 #, fuzzy
-msgid ""
-"Since version 5.0 (Pagoa) Infinispan has a new module. This module is a "
-"portable http://jcp.org/en/jsr/detail?id=299[CDI] extension which integrates "
-"Infinispan with the CDI programming model. Here are some highlights of what "
-"is provided:"
-msgstr ""
-"バージョン5."
-"0（Pagoa）以降、Infinispanは新しいモジュールを持っています。このモジュールは、CDIプログラミングモデルとInfinispanを統合するポータブル "
-"link:http://jcp.org/en/jsr/detail?id=299[CDI] "
-"拡張です。ここでは、提供されているもののいくつかのハイライトを紹介します。"
+msgid "Since version 5.0 (Pagoa) Infinispan has a new module. This module is a portable http://jcp.org/en/jsr/detail?id=299[CDI] extension which integrates Infinispan with the CDI programming model. Here are some highlights of what is provided:"
+msgstr "バージョン5.0（Pagoa）以降、Infinispanは新しいモジュールを持っています。このモジュールは、CDIプログラミングモデルとInfinispanを統合するポータブル link:http://jcp.org/en/jsr/detail?id=299[CDI] 拡張です。ここでは、提供されているもののいくつかのハイライトを紹介します。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:17
@@ -72,22 +60,20 @@ msgstr "*Java EE 6* との完全な統合"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:18
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "**typesafe **cache (and cache manager) injection\n"
 msgstr "*タイプセーフ* キャッシュ(およびキャッシュマネージャ)注入"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:19
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "**JCACHE **annotations support\n"
 msgstr "*JCACHE* アノテーションのサポート"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:22
 #, fuzzy
-msgid ""
-"Please note that this module is a technology preview and its API can still "
-"change. Next let's discuss some of its details."
+msgid "Please note that this module is a technology preview and its API can still change. Next let's discuss some of its details."
 msgstr "このモジュールは技術プレビューであり、APIはまだ変更される可能性があることに注意してください。次に、その詳細について説明しましょう。"
 
 #. type: Plain text
@@ -99,69 +85,38 @@ msgstr "タイプセーフの注入とキャッシュの設定"
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:35
 #, fuzzy
-msgid ""
-"The first feature you can use out of the box is the *typesafe* injection of "
-"the _Cache_ and the _CacheManager_. Without any configuration you can inject "
-"the default cache, as well as the cache manager used by the extension. This "
-"injection can be performed in any bean managed by Java EE like EJB, Servlet "
-"and CDI beans. The only thing to do is to use the _@Inject_ annotation:"
-msgstr ""
-"すぐに使用できる最初の機能は、 _Cache_ と _CacheManager_ の *タイプセーフ* "
-"注入です。設定なしで、デフォルトのキャッシュだけでなく、拡張機能で使用されるキャッシュマネージャを注入することができます。このインジェクションは、EJB、サーブレット、CDI豆のようなJava "
-"EEで管理されている任意の豆で実行することができます。やることは@ _Inject_ アノテーションを使うことだけです。"
+msgid "The first feature you can use out of the box is the *typesafe* injection of the _Cache_ and the _CacheManager_. Without any configuration you can inject the default cache, as well as the cache manager used by the extension. This injection can be performed in any bean managed by Java EE like EJB, Servlet and CDI beans. The only thing to do is to use the _@Inject_ annotation:"
+msgstr "すぐに使用できる最初の機能は、 _Cache_ と _CacheManager_ の *タイプセーフ* 注入です。設定なしで、デフォルトのキャッシュだけでなく、拡張機能で使用されるキャッシュマネージャを注入することができます。このインジェクションは、EJB、サーブレット、CDI豆のようなJava EEで管理されている任意の豆で実行することができます。やることは@ _Inject_ アノテーションを使うことだけです。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:44
 #, fuzzy
-msgid ""
-"Please note that the cache injection is typed. In this case, only _String_ "
-"typed Java objects could be added as key and value."
-msgstr ""
-"キャッシュインジェクションは型付きであることに注意してください。この場合、キーと値として追加できるのは _String_ "
-"型のJavaオブジェクトのみでした。"
+msgid "Please note that the cache injection is typed. In this case, only _String_ typed Java objects could be added as key and value."
+msgstr "キャッシュインジェクションは型付きであることに注意してください。この場合、キーと値として追加できるのは _String_ 型のJavaオブジェクトのみでした。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:50
 #, fuzzy
-msgid ""
-"It's also possible to configure the injected cache using CDI. The first step "
-"is to create a CDI qualifier, and then create the cache configuration "
-"producer, annotated with _@ConfigureCache_. The qualifier is used to qualify "
-"the injection point and the cache configuration producer:"
-msgstr ""
-"CDI を使用して注入されたキャッシュを設定することも可能です。最初のステップは、CDI の修飾子を作成し、 _@ConfigureCache_ "
-"でアノテーションされたキャッシュ構成プロデューサを作成することです。この修飾子は、インジェクションポイントとキャッシュ構成プロデューサを修飾するために使用されます。"
+msgid "It's also possible to configure the injected cache using CDI. The first step is to create a CDI qualifier, and then create the cache configuration producer, annotated with _@ConfigureCache_. The qualifier is used to qualify the injection point and the cache configuration producer:"
+msgstr "CDI を使用して注入されたキャッシュを設定することも可能です。最初のステップは、CDI の修飾子を作成し、 _@ConfigureCache_ でアノテーションされたキャッシュ構成プロデューサを作成することです。この修飾子は、インジェクションポイントとキャッシュ構成プロデューサを修飾するために使用されます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:56
 #, fuzzy
-msgid ""
-"In the same way, a cache can be defined with the default configuration of "
-"the cache manager in use, using a producer field:"
+msgid "In the same way, a cache can be defined with the default configuration of the cache manager in use, using a producer field:"
 msgstr "同様に、使用中のキャッシュマネージャのデフォルト設定で、プロデューサーフィールドを使用してキャッシュを定義することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:63
 #, fuzzy
-msgid ""
-"One advantage of this approach is that all cache configurations of the "
-"entire application can be gathered together into a single _Configuration_ "
-"class."
+msgid "One advantage of this approach is that all cache configurations of the entire application can be gathered together into a single _Configuration_ class."
 msgstr "このアプローチの利点は、アプリケーション全体のすべてのキャッシュ設定を単一の _設定_ クラスにまとめることができることです。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:69
 #, fuzzy
-msgid ""
-"The Infinispan CDI extension provides a cache manager with a default "
-"configuration (and it is used by default). You can also override the default "
-"configuration (used by the default cache manager), as well as the default "
-"cache manager. You can find more information https://docs.jboss.org/author/x/"
-"BAFZ[here]."
-msgstr ""
-"Infinispan CDI "
-"拡張機能は、デフォルトの構成を持つキャッシュマネージャを提供します（デフォルトで使用されます）。また、デフォルトのキャッシュマネージャだけでなく、デフォルトの設定（デフォルトのキャッシュマネージャで使用されている）をオーバーライドすることもできます。詳細は "
-"link:https://docs.jboss.org/author/x/BAFZ[こちら] をご覧ください。"
+msgid "The Infinispan CDI extension provides a cache manager with a default configuration (and it is used by default). You can also override the default configuration (used by the default cache manager), as well as the default cache manager. You can find more information https://docs.jboss.org/author/x/BAFZ[here]."
+msgstr "Infinispan CDI 拡張機能は、デフォルトの構成を持つキャッシュマネージャを提供します（デフォルトで使用されます）。また、デフォルトのキャッシュマネージャだけでなく、デフォルトの設定（デフォルトのキャッシュマネージャで使用されている）をオーバーライドすることもできます。詳細は link:https://docs.jboss.org/author/x/BAFZ[こちら] をご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:71
@@ -172,27 +127,14 @@ msgstr "JCache アノテーションは"
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:76
 #, fuzzy
-msgid ""
-"JCache (aka http://jcp.org/en/jsr/detail?id=107[JSR-107]) is famous as the "
-"oldest open JSR. However, this JSR has recently seen extensive progress, and "
-"is a candidate for inclusion in Java EE 7 (http://jcp.org/en/jsr/detail?id="
-"342[JSR-342])."
-msgstr ""
-"JCache(別名 link:http://jcp.org/en/jsr/detail?id=107[JSR-107] "
-")は、最も古いオープンなJSRとして有名です。しかし、このJSRは最近になって大幅な進歩を遂げ、Java EE 7 link:http://jcp."
-"org/en/jsr/detail?id=342[(JSR-342] )に含まれる候補となっています。"
+msgid "JCache (aka http://jcp.org/en/jsr/detail?id=107[JSR-107]) is famous as the oldest open JSR. However, this JSR has recently seen extensive progress, and is a candidate for inclusion in Java EE 7 (http://jcp.org/en/jsr/detail?id=342[JSR-342])."
+msgstr "JCache(別名 link:http://jcp.org/en/jsr/detail?id=107[JSR-107] )は、最も古いオープンなJSRとして有名です。しかし、このJSRは最近になって大幅な進歩を遂げ、Java EE 7 link:http://jcp.org/en/jsr/detail?id=342[(JSR-342] )に含まれる候補となっています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:82
 #, fuzzy
-msgid ""
-"This specification defines a standard caching API to work with a standalone "
-"cache, as well as a distributed cache. An interesting part of the "
-"specification are the annotations which are designed to solve common caching "
-"use cases. Some of the annotations defined by this specification are:"
-msgstr ""
-"この仕様では、スタンドアロンキャッシュや分散キャッシュで動作するための標準的なキャッシュ API "
-"を定義しています。この仕様の興味深い部分は、一般的なキャッシュのユースケースを解決するために設計されたアノテーションです。この仕様で定義されているアノテーションのいくつかは以下の通りです。"
+msgid "This specification defines a standard caching API to work with a standalone cache, as well as a distributed cache. An interesting part of the specification are the annotations which are designed to solve common caching use cases. Some of the annotations defined by this specification are:"
+msgstr "この仕様では、スタンドアロンキャッシュや分散キャッシュで動作するための標準的なキャッシュ API を定義しています。この仕様の興味深い部分は、一般的なキャッシュのユースケースを解決するために設計されたアノテーションです。この仕様で定義されているアノテーションのいくつかは以下の通りです。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:84
@@ -227,15 +169,8 @@ msgstr "以下の例では、これらのアノテーションの使用方法を
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:98
 #, fuzzy
-msgid ""
-"The Infinispan CDI extension adds support for these annotations. The only "
-"thing to do is to enable the CDI interceptors in your application _beans."
-"xml_ - you can find more information https://docs.jboss.org/author/x/"
-"BAFZ[here]."
-msgstr ""
-"Infinispan CDI 拡張機能は、これらのアノテーションのサポートを追加します。やるべきことは、アプリケーション _beans.xml_ で "
-"CDI インターセプターを有効にすることだけです - 詳細は link:https://docs.jboss.org/author/x/"
-"BAFZ[こちらを] ご覧ください。"
+msgid "The Infinispan CDI extension adds support for these annotations. The only thing to do is to enable the CDI interceptors in your application _beans.xml_ - you can find more information https://docs.jboss.org/author/x/BAFZ[here]."
+msgstr "Infinispan CDI 拡張機能は、これらのアノテーションのサポートを追加します。やるべきことは、アプリケーション _beans.xml_ で CDI インターセプターを有効にすることだけです - 詳細は link:https://docs.jboss.org/author/x/BAFZ[こちらを] ご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:100
@@ -246,37 +181,19 @@ msgstr "Infinispan CDI と JBoss AS 7"
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:107
 #, fuzzy
-msgid ""
-"With JBoss AS 7, you can setup an Infinispan cache manager in the server "
-"configuration file. This allows you to externalize your Infinispan "
-"configuration and also to lookup the cache manager from JNDI, normally with "
-"the _@Resource_ annotation. This http://infinispan.blogspot.com/2011/07/"
-"infinispan-in-jboss-as7.html[post] has more details on the subject."
-msgstr ""
-"JBoss AS 7 では、サーバー設定ファイルで Infinispan キャッシュマネージャーを設定できます。これにより、Infinispan "
-"設定を外部化することができ、通常は _@Resource_ アノテーションを使用して JNDI からキャッシュマネージャーを検索することもできます。この "
-"link:http://infinispan.blogspot.com/2011/07/infinispan-in-jboss-as7.html[記事] "
-"に詳細があります。"
+msgid "With JBoss AS 7, you can setup an Infinispan cache manager in the server configuration file. This allows you to externalize your Infinispan configuration and also to lookup the cache manager from JNDI, normally with the _@Resource_ annotation. This http://infinispan.blogspot.com/2011/07/infinispan-in-jboss-as7.html[post] has more details on the subject."
+msgstr "JBoss AS 7 では、サーバー設定ファイルで Infinispan キャッシュマネージャーを設定できます。これにより、Infinispan 設定を外部化することができ、通常は _@Resource_ アノテーションを使用して JNDI からキャッシュマネージャーを検索することもできます。この link:http://infinispan.blogspot.com/2011/07/infinispan-in-jboss-as7.html[記事] に詳細があります。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:113
 #, fuzzy
-msgid ""
-"As we mentioned earlier, you can override the default cache manager used by "
-"the Infinispan CDI extension. To use a JBoss AS 7 configured cache, you need "
-"to use the cache manager defined in JBoss AS 7. You only need to annotate "
-"the default cache manager producer with _@Resource_.  Simple!"
-msgstr ""
-"前述したように、Infinispan CDI 拡張機能で使用されるデフォルトのキャッシュマネージャーをオーバーライドすることができます。JBoss AS "
-"7 で設定されたキャッシュを使用するには、JBoss AS 7 "
-"で定義されたキャッシュマネージャーを使用する必要があります。デフォルトのキャッシュマネージャーのプロデューサーに _@Resource_ "
-"をアノテーションするだけです。シンプルです!"
+msgid "As we mentioned earlier, you can override the default cache manager used by the Infinispan CDI extension. To use a JBoss AS 7 configured cache, you need to use the cache manager defined in JBoss AS 7. You only need to annotate the default cache manager producer with _@Resource_.  Simple!"
+msgstr "前述したように、Infinispan CDI 拡張機能で使用されるデフォルトのキャッシュマネージャーをオーバーライドすることができます。JBoss AS 7 で設定されたキャッシュを使用するには、JBoss AS 7 で定義されたキャッシュマネージャーを使用する必要があります。デフォルトのキャッシュマネージャーのプロデューサーに _@Resource_ をアノテーションするだけです。シンプルです!"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:119
 #, fuzzy
-msgid ""
-"Now, you can inject the cache defined in JBoss AS 7 as we described earlier."
+msgid "Now, you can inject the cache defined in JBoss AS 7 as we described earlier."
 msgstr "さて、先ほど説明したようにJBoss AS 7で定義されているキャッシュを注入することができます。"
 
 #. type: Plain text
@@ -318,43 +235,26 @@ msgstr "などなど、欲しいものがあれば教えてください。)"
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:132
 #, fuzzy
-msgid ""
-"As usual you can open issues and features request on the Infinispan https://"
-"issues.jboss.org/browse/ISPN[JIRA] (component _CDI Integration_)."
-msgstr ""
-"いつものように、Infinispan link:https://issues.jboss.org/browse/ISPN[JIRA] "
-"(component _CDI Integration_ )上で問題や機能のリクエストを開くことができます。"
+msgid "As usual you can open issues and features request on the Infinispan https://issues.jboss.org/browse/ISPN[JIRA] (component _CDI Integration_)."
+msgstr "いつものように、Infinispan link:https://issues.jboss.org/browse/ISPN[JIRA] (component _CDI Integration_ )上で問題や機能のリクエストを開くことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:136
 #, fuzzy
-msgid ""
-"Feel free to open a topic in the Infinispan http://community.jboss.org/en/"
-"infinispan?view=discussions[forum] if you need help."
-msgstr ""
-"助けが必要な場合は、Infinispan link:http://community.jboss.org/en/infinispan?view="
-"discussions[フォーラム] でトピックを開いてください。"
+msgid "Feel free to open a topic in the Infinispan http://community.jboss.org/en/infinispan?view=discussions[forum] if you need help."
+msgstr "助けが必要な場合は、Infinispan link:http://community.jboss.org/en/infinispan?view=discussions[フォーラム] でトピックを開いてください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:139
 #, fuzzy
-msgid ""
-"The Infinispan CDI documentation is https://docs.jboss.org/author/x/"
-"BAFZ[here]."
-msgstr ""
-"Infinispan CDIのドキュメントは link:https://docs.jboss.org/author/x/BAFZ[こちら] です。"
+msgid "The Infinispan CDI documentation is https://docs.jboss.org/author/x/BAFZ[here]."
+msgstr "Infinispan CDIのドキュメントは link:https://docs.jboss.org/author/x/BAFZ[こちら] です。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:144
 #, fuzzy
-msgid ""
-"To see the Infinispan CDI extension in action you can browse and run the "
-"quickstart application https://github.com/infinispan/infinispan-quickstart/"
-"tree/master/cdi[here] or watch this http://vimeo.com/27596937[screencast]."
-msgstr ""
-"Infinispan CDIエクステンションの動作を見るには、 link:https://github.com/infinispan/"
-"infinispan-quickstart/tree/master/cdi[ここで] クイックスタートアプリケーションをブラウズして実行するか、この "
-"link:http://vimeo.com/27596937[スクリーンキャスト] を見ることができます。"
+msgid "To see the Infinispan CDI extension in action you can browse and run the quickstart application https://github.com/infinispan/infinispan-quickstart/tree/master/cdi[here] or watch this http://vimeo.com/27596937[screencast]."
+msgstr "Infinispan CDIエクステンションの動作を見るには、 link:https://github.com/infinispan/infinispan-quickstart/tree/master/cdi[ここで] クイックスタートアプリケーションをブラウズして実行するか、この link:http://vimeo.com/27596937[スクリーンキャスト] を見ることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:146
@@ -364,7 +264,7 @@ msgstr "楽しもう"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-when-infinispan-meets-cdi.adoc:156
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "*About the author*\n"
 "# #\n"
@@ -374,9 +274,4 @@ msgid ""
 "Hibernate Validator, both at SERLI and at home. He is also involved in\n"
 "the Poitou-Charentes JUG and has spoken in many JUG events. He enjoys\n"
 "attending Java events like JUDCon, JBoss World and Devoxx.\n"
-msgstr ""
-"*著者について* Kevin Pollet氏は、フランスに拠点を置くコンサルティング＆ソフトウェアエンジニアリング会社SERLI link:http://"
-"www.serli.com/[の] ソフトウェアエンジニアです。彼はオープンソースの支持者であり、InfinispanやHibernate "
-"Validatorなど多くのプロジェクトに貢献しています。また、Poitou-Charentes "
-"JUGにも参加しており、多くのJUGイベントで講演を行っています。JUDCon、JBoss "
-"World、DevoxxなどのJavaイベントに参加することを楽しんでいます。"
+msgstr "*著者について* Kevin Pollet氏は、フランスに拠点を置くコンサルティング＆ソフトウェアエンジニアリング会社SERLI link:http://www.serli.com/[の] ソフトウェアエンジニアです。彼はオープンソースの支持者であり、InfinispanやHibernate Validatorなど多くのプロジェクトに貢献しています。また、Poitou-Charentes JUGにも参加しており、多くのJUGイベントで講演を行っています。JUDCon、JBoss World、DevoxxなどのJavaイベントに参加することを楽しんでいます。"

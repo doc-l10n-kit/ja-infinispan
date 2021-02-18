@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.3.0.CR1\n"
@@ -32,8 +32,7 @@ msgid ""
 "date: '2018-06-04T01:01:00.000-07:00'\n"
 "author: rigazilla\n"
 "tags: [ \" release\", \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8632938471945003078\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8632938471945003078\n"
 "blogger_orig_url: https://blog.infinispan.org/2018/06/infinispan-930cr1.html\n"
 "---\n"
 msgstr ""
@@ -43,8 +42,7 @@ msgstr ""
 "date: '2018-06-04T01:01:00.000-07:00'\n"
 "author: rigazilla\n"
 "tags: [ \" release\", \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8632938471945003078\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8632938471945003078\n"
 "blogger_orig_url: https://blog.infinispan.org/2018/06/infinispan-930cr1.html\n"
 "---\n"
 
@@ -63,13 +61,8 @@ msgstr "9.3.0.CR1がリリースされました。"
 #. type: Plain text
 #: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:18
 #, fuzzy
-msgid ""
-"This is the first release which works with both Java 8 and Java 10.  Pre-"
-"releases of Java 11 work too. Note that Infinispan still only works in "
-"classpath mode."
-msgstr ""
-"これはJava 8とJava 10の両方で動作する最初のリリースです。Java "
-"11のプレリリースも動作します。Infinispanはまだクラスパスモードでしか動作しないことに注意してください。"
+msgid "This is the first release which works with both Java 8 and Java 10.  Pre-releases of Java 11 work too. Note that Infinispan still only works in classpath mode."
+msgstr "これはJava 8とJava 10の両方で動作する最初のリリースです。Java 11のプレリリースも動作します。Infinispanはまだクラスパスモードでしか動作しないことに注意してください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:20
@@ -80,21 +73,13 @@ msgstr "このリリースのハイライトは以下の通りです。"
 #. type: Plain text
 #: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:25
 #, fuzzy
-msgid ""
-"[#docs-internal-guid-fcf54778-c9b3-e418-2086-683286f85b79]#Expanded "
-"transaction support in Hot Rod, which can now participate in Java "
-"transactions via Sync or Xa enlistment. Transaction recovery isn't supported "
-"yet.#"
-msgstr ""
-"Hot "
-"Rodでのトランザクションサポートが拡張され、SyncやXa入隊経由でJavaトランザクションに参加できるようになりました。トランザクションの回復はまだサポートされていません。"
+msgid "[#docs-internal-guid-fcf54778-c9b3-e418-2086-683286f85b79]#Expanded transaction support in Hot Rod, which can now participate in Java transactions via Sync or Xa enlistment. Transaction recovery isn't supported yet.#"
+msgstr "Hot Rodでのトランザクションサポートが拡張され、SyncやXa入隊経由でJavaトランザクションに参加できるようになりました。トランザクションの回復はまだサポートされていません。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:28
 #, fuzzy
-msgid ""
-"Caches can now configure the maximum number of attempts to start a "
-"CacheWriter/CacheLoader on startup before cache creation fails."
+msgid "Caches can now configure the maximum number of attempts to start a CacheWriter/CacheLoader on startup before cache creation fails."
 msgstr "キャッシュの作成に失敗する前に、起動時にCacheWriter/CacheLoaderを起動する最大試行回数を設定できるようになりました。"
 
 #. type: Plain text
@@ -112,47 +97,31 @@ msgstr "セグメント化されたオンヒープデータコンテナでスト
 #. type: Plain text
 #: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:37
 #, fuzzy
-msgid ""
-"We have introduced several WildFly feature packs to make it easier for "
-"Infinispan to be utilised on WildFly instances via the https://github.com/"
-"wildfly/wildfly-build-tools[Server Provisioning Plugin]. The following "
-"feature packs have been created:"
-msgstr ""
-"link:https://github.com/wildfly/wildfly-build-tools[Server Provisioning "
-"Plugin] を通じて Infinispan を WildFly インスタンスで簡単に利用できるようにするために、いくつかの WildFly "
-"機能パックを導入しました。以下の機能パックが作成されました。"
+msgid "We have introduced several WildFly feature packs to make it easier for Infinispan to be utilised on WildFly instances via the https://github.com/wildfly/wildfly-build-tools[Server Provisioning Plugin]. The following feature packs have been created:"
+msgstr "link:https://github.com/wildfly/wildfly-build-tools[Server Provisioning Plugin] を通じて Infinispan を WildFly インスタンスで簡単に利用できるようにするために、いくつかの WildFly 機能パックを導入しました。以下の機能パックが作成されました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:40
 #, fuzzy
-msgid ""
-"infinispan-feature-pack-client: all of the modules required to connect to a "
-"hotrod server via the client"
-msgstr ""
-"infinispan-feature-pack-client: クライアント経由でhotrodサーバーに接続するために必要なすべてのモジュール。"
+msgid "infinispan-feature-pack-client: all of the modules required to connect to a hotrod server via the client"
+msgstr "infinispan-feature-pack-client: クライアント経由でhotrodサーバーに接続するために必要なすべてのモジュール。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:42
 #, fuzzy
-msgid ""
-"infinispan-feature-pack-embedded: the modules required for embedded "
-"instances of Infinispan"
+msgid "infinispan-feature-pack-embedded: the modules required for embedded instances of Infinispan"
 msgstr "infinispan-feature-pack-embedded: Infinispan の組み込みインスタンスに必要なモジュール。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:44
 #, fuzzy
-msgid ""
-"infinispan-feature-pack-embedded-query: the same as above but with query "
-"capabilities"
+msgid "infinispan-feature-pack-embedded-query: the same as above but with query capabilities"
 msgstr "infinispan-feature-pack-embedded-query: 上記と同じですが、クエリ機能があります。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:46
 #, fuzzy
-msgid ""
-"infinispan-feature-pack-wf-modules: this is equivalent to the wildfly-"
-"modules.zip"
+msgid "infinispan-feature-pack-wf-modules: this is equivalent to the wildfly-modules.zip"
 msgstr "infinispan-feature-pack-wf-modules: これは wildfly-modules.zip と同じです。"
 
 #. type: Plain text
@@ -164,20 +133,13 @@ msgstr "2レベルキャッシュがHibernate ORM 5.3で動作するようにな
 #. type: Plain text
 #: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:52
 #, fuzzy
-msgid ""
-"The server now allows multiple protocols with a Single Port. The initial "
-"version supports HTTP/1.1, HTTP/2 and Hot Rod. Switching protocols can be "
-"done using TLS/ALPN and HTTP/1.1 Upgrade header."
-msgstr ""
-"サーバーは、シングルポートで複数のプロトコルを使用できるようになりました。初期バージョンではHTTP/1.1、HTTP/2、Hot "
-"Rodをサポートしています。プロトコルの切り替えは、TLS/ALPNとHTTP/1.1アップグレードヘッダを使用して行うことができます。"
+msgid "The server now allows multiple protocols with a Single Port. The initial version supports HTTP/1.1, HTTP/2 and Hot Rod. Switching protocols can be done using TLS/ALPN and HTTP/1.1 Upgrade header."
+msgstr "サーバーは、シングルポートで複数のプロトコルを使用できるようになりました。初期バージョンではHTTP/1.1、HTTP/2、Hot Rodをサポートしています。プロトコルの切り替えは、TLS/ALPNとHTTP/1.1アップグレードヘッダを使用して行うことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:55
 #, fuzzy
-msgid ""
-"Admin console - improved all editors (schema, scripts, JSON data) to include "
-"syntax highlighting"
+msgid "Admin console - improved all editors (schema, scripts, JSON data) to include syntax highlighting"
 msgstr "管理者コンソール - すべてのエディタ（スキーマ、スクリプト、JSONデータ）にシンタックスハイライトを追加しました。"
 
 #. type: Plain text
@@ -189,22 +151,11 @@ msgstr "コンポーネントのアップグレード。Hibernate Search 5.10と
 #. type: Plain text
 #: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:61
 #, fuzzy
-msgid ""
-"Numerous bug fixes which improve stability are also included (https://issues."
-"jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12337256[here] "
-"is the full list of the solved issues)."
-msgstr ""
-"安定性を向上させる多数のバグフィックスも含まれています link:https://issues.jboss.org/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12337256[(ここには] 解決済みの問題の完全なリストがあります)。"
+msgid "Numerous bug fixes which improve stability are also included (https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12337256[here] is the full list of the solved issues)."
+msgstr "安定性を向上させる多数のバグフィックスも含まれています link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12337256[(ここには] 解決済みの問題の完全なリストがあります)。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-04-infinispan-930cr1.adoc:66
 #, fuzzy
-msgid ""
-"As usual, you can find all the bits on our http://infinispan.org/download/"
-"[website]. If you find any issues, don't hesitate to report them on "
-"our https://issues.jboss.org/projects/ISPN[issue tracker.]"
-msgstr ""
-"いつものように、私たちの link:http://infinispan.org/download/[ウェブサイト] "
-"ですべてのビットを見つけることができます。何か問題を見つけたら、遠慮なく私たちの問題 link:https://issues.jboss.org/"
-"projects/ISPN[追跡] に報告してください。"
+msgid "As usual, you can find all the bits on our http://infinispan.org/download/[website]. If you find any issues, don't hesitate to report them on our https://issues.jboss.org/projects/ISPN[issue tracker.]"
+msgstr "いつものように、私たちの link:http://infinispan.org/download/[ウェブサイト] ですべてのビットを見つけることができます。何か問題を見つけたら、遠慮なく私たちの問題 link:https://issues.jboss.org/projects/ISPN[追跡] に報告してください。"

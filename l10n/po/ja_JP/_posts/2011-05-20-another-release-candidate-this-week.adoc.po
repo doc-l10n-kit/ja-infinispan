@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-05-20-another-release-candidate-this-week.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-20-another-release-candidate-this-week.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Another release candidate this week\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2011-05-20T05:57:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"colocation\", \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7317309262421611263\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/05/another-release-"
-"candidate-this-week.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7317309262421611263\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/05/another-release-candidate-this-week.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,84 +42,33 @@ msgstr ""
 "date: '2011-05-20T05:57:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"colocation\", \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7317309262421611263\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/05/another-release-"
-"candidate-this-week.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7317309262421611263\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/05/another-release-candidate-this-week.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-20-another-release-candidate-this-week.adoc:14
 #, fuzzy
-msgid ""
-"We're in a period of frequent release candidates now, getting Infinispan 5.0 "
-"ever closer to a final release.  Thanks to everyone who provided excellent "
-"feedback on last week's CR2."
+msgid "We're in a period of frequent release candidates now, getting Infinispan 5.0 ever closer to a final release.  Thanks to everyone who provided excellent feedback on last week's CR2."
 msgstr "先週のCR2に素晴らしいフィードバックを提供してくださった皆様、ありがとうございました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-20-another-release-candidate-this-week.adoc:28
 #, fuzzy
-msgid ""
-"This week's release candidate - CR3 - fixes a number of reported bugs "
-"including https://issues.jboss.org/browse/ISPN-1049[ISPN-1049], https://"
-"issues.jboss.org/browse/ISPN-965[ISPN-965] and https://issues.jboss.org/"
-"browse/ISPN-977[ISPN-977] and others (https://issues.jboss.org/secure/"
-"ConfigureReport.jspa?atl_token=AQZJ-FV3A-N91S-"
-"UDEU%7C65aee2eedcb75cb0f1eda240bb0e292e324dacbd%7Clin&versions="
-"12316437&sections=all&style=none&selectedProjectId=12310799&reportKey=org."
-"jboss.labs.jira.plugin.release-notes-report-plugin%3Areleasenotes&Next="
-"Next[full ChangeLog in JIRA]).  Better documentation on the http://community."
-"jboss.org/wiki/"
-"ConfiguringCacheProgrammatically#Fluent_Programmatic_Configuration_new_in_Infinispan_50[new "
-"fluent configuration], a wiki page on http://community.jboss.org/wiki/Per-"
-"InvocationFlags[advanced Flag usage] thanks to Galder, as well as https://"
-"issues.jboss.org/browse/ISPN-1125[better log messages] to help you size "
-"tables in an RDBMS when using the JDBC CacheStore thanks to Sanne also made "
-"it in this timeframe."
-msgstr ""
-"今週のリリース候補 - CR3 - は link:https://issues.jboss.org/browse/ISPN-1049[ISPN-"
-"1049] 、ISPN- link:https://issues.jboss.org/browse/ISPN-965[965] 、 link:https:"
-"//issues.jboss.org/browse/ISPN-977[ISPN-977] を含む多くの報告されているバグを修正しました。 新しい "
-"link:http://community.jboss.org/wiki/"
-"ConfiguringCacheProgrammatically#Fluent_Programmatic_Configuration_new_in_Infinispan_50[fluent "
-"設定] に関するより良いドキュメント link:http://community.jboss.org/wiki/"
-"ConfiguringCacheProgrammatically#Fluent_Programmatic_Configuration_new_in_Infinispan_50[、] "
-"Galder 氏による link:http://community.jboss.org/wiki/Per-"
-"InvocationFlags[高度なフラグの使用法] に関する wiki ページ、Sanne 氏による JDBC CacheStore を使用する際に "
-"RDBMS のテーブルのサイズを調整する link:https://issues.jboss.org/browse/ISPN-1125[のに役立つ] "
-"より良いログ link:https://issues.jboss.org/browse/ISPN-1125[メッセージも] この時期に作成されました。"
+msgid "This week's release candidate - CR3 - fixes a number of reported bugs including https://issues.jboss.org/browse/ISPN-1049[ISPN-1049], https://issues.jboss.org/browse/ISPN-965[ISPN-965] and https://issues.jboss.org/browse/ISPN-977[ISPN-977] and others (https://issues.jboss.org/secure/ConfigureReport.jspa?atl_token=AQZJ-FV3A-N91S-UDEU%7C65aee2eedcb75cb0f1eda240bb0e292e324dacbd%7Clin&versions=12316437&sections=all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira.plugin.release-notes-report-plugin%3Areleasenotes&Next=Next[full ChangeLog in JIRA]).  Better documentation on the http://community.jboss.org/wiki/ConfiguringCacheProgrammatically#Fluent_Programmatic_Configuration_new_in_Infinispan_50[new fluent configuration], a wiki page on http://community.jboss.org/wiki/Per-InvocationFlags[advanced Flag usage] thanks to Galder, as well as https://issues.jboss.org/browse/ISPN-1125[better log messages] to help you size tables in an RDBMS when using the JDBC CacheStore thanks to Sanne also made it in this timeframe."
+msgstr "今週のリリース候補 - CR3 - は link:https://issues.jboss.org/browse/ISPN-1049[ISPN-1049] 、ISPN- link:https://issues.jboss.org/browse/ISPN-965[965] 、 link:https://issues.jboss.org/browse/ISPN-977[ISPN-977] を含む多くの報告されているバグを修正しました。 新しい link:http://community.jboss.org/wiki/ConfiguringCacheProgrammatically#Fluent_Programmatic_Configuration_new_in_Infinispan_50[fluent 設定] に関するより良いドキュメント link:http://community.jboss.org/wiki/ConfiguringCacheProgrammatically#Fluent_Programmatic_Configuration_new_in_Infinispan_50[、] Galder 氏による link:http://community.jboss.org/wiki/Per-InvocationFlags[高度なフラグの使用法] に関する wiki ページ、Sanne 氏による JDBC CacheStore を使用する際に RDBMS のテーブルのサイズを調整する link:https://issues.jboss.org/browse/ISPN-1125[のに役立つ] より良いログ link:https://issues.jboss.org/browse/ISPN-1125[メッセージも] この時期に作成されました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-20-another-release-candidate-this-week.adoc:39
 #, fuzzy
-msgid ""
-"And finally, a few new things - https://issues.jboss.org/browse/ISPN-360[new "
-"notifications] to inform you of when rehashes start and end, and a new, "
-"experimental https://issues.jboss.org/browse/ISPN-312[grouping API] to give "
-"you control over where entries are stored in a distributed cluster, enabling "
-"you to specify which entries get colocated together.   http://in.relation.to/"
-"user/pete[Pete Muir] - of http://www.jcp.org/en/jsr/detail?id=299[CDI] and "
-"http://seamframework.org/[Seam] fame - contributed this patch, we'd love "
-"your feedback on it."
-msgstr ""
-"そして最後に、いくつかの新しい機能が追加されました - リハッシュの開始時刻と終了時刻を通知する link:https://issues.jboss."
-"org/browse/ISPN-360[新しい通知] 機能と、分散クラスタ内のエントリの保存場所を制御するための新しい実験的な link:https://"
-"issues.jboss.org/browse/ISPN-312[グルーピング API] です。 CDI link:http://www.jcp.org/"
-"en/jsr/detail?id=299[と] Seam で link:http://seamframework.org/[有名な] Pete link:"
-"http://in.relation.to/user/pete[Muir] がこのパッチを提供してくれました。"
+msgid "And finally, a few new things - https://issues.jboss.org/browse/ISPN-360[new notifications] to inform you of when rehashes start and end, and a new, experimental https://issues.jboss.org/browse/ISPN-312[grouping API] to give you control over where entries are stored in a distributed cluster, enabling you to specify which entries get colocated together.   http://in.relation.to/user/pete[Pete Muir] - of http://www.jcp.org/en/jsr/detail?id=299[CDI] and http://seamframework.org/[Seam] fame - contributed this patch, we'd love your feedback on it."
+msgstr "そして最後に、いくつかの新しい機能が追加されました - リハッシュの開始時刻と終了時刻を通知する link:https://issues.jboss.org/browse/ISPN-360[新しい通知] 機能と、分散クラスタ内のエントリの保存場所を制御するための新しい実験的な link:https://issues.jboss.org/browse/ISPN-312[グルーピング API] です。 CDI link:http://www.jcp.org/en/jsr/detail?id=299[と] Seam で link:http://seamframework.org/[有名な] Pete link:http://in.relation.to/user/pete[Muir] がこのパッチを提供してくれました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-20-another-release-candidate-this-week.adoc:44
 #, fuzzy
-msgid ""
-"As per usual, http://www.jboss.org/infinispan/downloads[downloads] are in "
-"the usual place, use the http://community.jboss.org/en/infinispan?view="
-"discussions[forums] to provide feedback and report any issues."
-msgstr ""
-"いつものように、 link:http://www.jboss.org/infinispan/downloads[ダウンロードは] いつもの場所で、 "
-"link:http://community.jboss.org/en/infinispan?view=discussions[フォーラムを] "
-"使ってフィードバックを提供したり、問題を報告したりしています。"
+msgid "As per usual, http://www.jboss.org/infinispan/downloads[downloads] are in the usual place, use the http://community.jboss.org/en/infinispan?view=discussions[forums] to provide feedback and report any issues."
+msgstr "いつものように、 link:http://www.jboss.org/infinispan/downloads[ダウンロードは] いつもの場所で、 link:http://community.jboss.org/en/infinispan?view=discussions[フォーラムを] 使ってフィードバックを提供したり、問題を報告したりしています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-20-another-release-candidate-this-week.adoc:46

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-04-09-infinispan-530alpha1-is-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-09-infinispan-530alpha1-is-out.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 5.3.0.Alpha1  is out!\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2013-04-09T16:36:00.001-07:00'\n"
 "author: mmarkus\n"
 "tags: [ \"release\", \"alpha\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1401113139672672401\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/04/infinispan-530alpha1-"
-"is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1401113139672672401\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/04/infinispan-530alpha1-is-out.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,89 +42,51 @@ msgstr ""
 "date: '2013-04-09T16:36:00.001-07:00'\n"
 "author: mmarkus\n"
 "tags: [ \"release\", \"alpha\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1401113139672672401\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/04/infinispan-530alpha1-"
-"is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1401113139672672401\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/04/infinispan-530alpha1-is-out.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-09-infinispan-530alpha1-is-out.adoc:15
 #, fuzzy
-msgid ""
-"With a code name hard to match - http://www.brewdog.com/product/tactical-"
-"nuclear-penguin[Tactical Nuclear Penguin] - and besides almost 50 bug fixes, "
-"this release contains several important features:"
-msgstr ""
-"一致するのが難しいコード名 - link:http://www.brewdog.com/product/tactical-nuclear-"
-"penguin[Tactical Nuclear Penguin] - "
-"と、約50のバグフィックスに加えて、このリリースにはいくつかの重要な機能が含まれています。"
+msgid "With a code name hard to match - http://www.brewdog.com/product/tactical-nuclear-penguin[Tactical Nuclear Penguin] - and besides almost 50 bug fixes, this release contains several important features:"
+msgstr "一致するのが難しいコード名 - link:http://www.brewdog.com/product/tactical-nuclear-penguin[Tactical Nuclear Penguin] - と、約50のバグフィックスに加えて、このリリースにはいくつかの重要な機能が含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-09-infinispan-530alpha1-is-out.adoc:20
 #, fuzzy
-msgid ""
-"Total Order (TO) transaction protocol developed within the scope of the http:"
-"//www.cloudtm.eu/[CloudTM] project. The TO exhibits very good throughput in "
-"scenarios in which multiple transactions modify the same key set "
-"concurrently (high contention)"
-msgstr ""
-"Total Order (TO) トランザクションプロトコルは、 link:http://www.cloudtm.eu/[CloudTM] "
-"プロジェクトの範囲内で開発されたものです。TO "
-"は、複数のトランザクションが同時に同じキーセットを変更するシナリオで非常に優れたスループットを発揮します（高コンテンション）。"
+msgid "Total Order (TO) transaction protocol developed within the scope of the http://www.cloudtm.eu/[CloudTM] project. The TO exhibits very good throughput in scenarios in which multiple transactions modify the same key set concurrently (high contention)"
+msgstr "Total Order (TO) トランザクションプロトコルは、 link:http://www.cloudtm.eu/[CloudTM] プロジェクトの範囲内で開発されたものです。TO は、複数のトランザクションが同時に同じキーセットを変更するシナリオで非常に優れたスループットを発揮します（高コンテンション）。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-09-infinispan-530alpha1-is-out.adoc:23
 #, fuzzy
-msgid ""
-"support for https://github.com/jsr107/jsr107spec[JSR-107] (Java Caching API) "
-"implementation, allowing Infinispan to be used as a cache provider "
-msgstr ""
-"link:https://github.com/jsr107/jsr107spec[JSR-107] (Java Caching API) "
-"の実装をサポートし、Infinispan をキャッシュプロバイダとして使用できるようになりました。"
+msgid "support for https://github.com/jsr107/jsr107spec[JSR-107] (Java Caching API) implementation, allowing Infinispan to be used as a cache provider "
+msgstr "link:https://github.com/jsr107/jsr107spec[JSR-107] (Java Caching API) の実装をサポートし、Infinispan をキャッシュプロバイダとして使用できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-09-infinispan-530alpha1-is-out.adoc:26
 #, fuzzy
-msgid ""
-"A new implementation of the Lucene Directory for Infinispan based on Lucene "
-"4. Compatible now with all versions of Apache Lucene from 2.4 to 4.2."
-msgstr ""
-"Lucene 4 をベースにした Infinispan 用 Lucene Directory の新しい実装です。Apache Lucene 2.4 から "
-"4.2 までのすべてのバージョンと互換性があります。"
+msgid "A new implementation of the Lucene Directory for Infinispan based on Lucene 4. Compatible now with all versions of Apache Lucene from 2.4 to 4.2."
+msgstr "Lucene 4 をベースにした Infinispan 用 Lucene Directory の新しい実装です。Apache Lucene 2.4 から 4.2 までのすべてのバージョンと互換性があります。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-09-infinispan-530alpha1-is-out.adoc:28
 #, fuzzy
-msgid ""
-"A new packaging for the Infinispan server modules, based on the JBoss AS"
+msgid "A new packaging for the Infinispan server modules, based on the JBoss AS"
 msgstr "JBoss AS をベースにした Infinispan サーバーモジュールの新しいパッケージング"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-09-infinispan-530alpha1-is-out.adoc:33
 #, fuzzy
-msgid ""
-"Please stay tuned for blogs detailing all these features. For a complete "
-"list of features included in this release refer to the https://issues.jboss."
-"org/secure/ReleaseNote.jspa?projectId=12310799&version=12320761[release "
-"notes]."
-msgstr ""
-"これらの機能の詳細については、ブログをご覧ください。このリリースに含まれる機能の完全なリストについては、 link:https://issues."
-"jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
-"12320761[リリースノート] を参照してください。"
+msgid "Please stay tuned for blogs detailing all these features. For a complete list of features included in this release refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12320761[release notes]."
+msgstr "これらの機能の詳細については、ブログをご覧ください。このリリースに含まれる機能の完全なリストについては、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12320761[リリースノート] を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-09-infinispan-530alpha1-is-out.adoc:39
 #, fuzzy
-msgid ""
-"Visit our http://www.jboss.org/infinispan/downloads[downloads] section to "
-"find the latest release and if you have any questions please check our http:/"
-"/www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/"
-"mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://"
-"irc.freenode.org/infinispan[IRC]."
-msgstr ""
-"最新のリリースは link:http://www.jboss.org/infinispan/downloads[ダウンロード] "
-"セクションをご覧ください。"
+msgid "Visit our http://www.jboss.org/infinispan/downloads[downloads] section to find the latest release and if you have any questions please check our http://www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+msgstr "最新のリリースは link:http://www.jboss.org/infinispan/downloads[ダウンロード] セクションをご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-09-infinispan-530alpha1-is-out.adoc:43

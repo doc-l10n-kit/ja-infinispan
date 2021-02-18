@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-9x-jdbc-store-improvements.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-9x-jdbc-store-improvements.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 9.x JDBC Store Improvements\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2017-01-23T09:23:00.000-08:00'\n"
 "author: remerson\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8996251127832570573\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/01/9x-jdbc-store-"
-"improvements.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8996251127832570573\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/01/9x-jdbc-store-improvements.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,17 +42,14 @@ msgstr ""
 "date: '2017-01-23T09:23:00.000-08:00'\n"
 "author: remerson\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8996251127832570573\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/01/9x-jdbc-store-"
-"improvements.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8996251127832570573\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/01/9x-jdbc-store-improvements.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-9x-jdbc-store-improvements.adoc:13
 #, fuzzy
-msgid ""
-"Infinispan 9 introduces several changes to the JDBC stores, in summary:"
+msgid "Infinispan 9 introduces several changes to the JDBC stores, in summary:"
 msgstr "Infinispan 9では、要約するとJDBCストアにいくつかの変更が導入されています。"
 
 #. type: Plain text
@@ -78,42 +73,26 @@ msgstr "タイムスタンプのインデキシング"
 #. type: Plain text
 #: upstream/_posts/2017-01-23-9x-jdbc-store-improvements.adoc:19
 #, fuzzy
-msgid ""
-"http://www.mchange.com/projects/c3p0/[c3p0] connection pool replaced "
-"by https://github.com/brettwooldridge/HikariCP[HikariCP]"
-msgstr ""
-"link:http://www.mchange.com/projects/c3p0/[c3p0] 接続プールをHikariCPに置き換えました。"
+msgid "http://www.mchange.com/projects/c3p0/[c3p0] connection pool replaced by https://github.com/brettwooldridge/HikariCP[HikariCP]"
+msgstr "link:http://www.mchange.com/projects/c3p0/[c3p0] 接続プールをHikariCPに置き換えました。"
 
 #. type: Title ==
 #: upstream/_posts/2017-01-23-9x-jdbc-store-improvements.adoc:22
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "DB Version Configuration"
 msgstr "DBのバージョン構成"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-9x-jdbc-store-improvements.adoc:31
 #, fuzzy
-msgid ""
-"Previously when configuring a JDBC store it was only possible for a user to "
-"specify the vendor of the underlying DB. Consequently, it was not possible "
-"for Infinispan to utilise more recent features of DB as the SQL utilised by "
-"our JDBC stores had to satisfy the capabilities of the oldest supported DB "
-"version."
-msgstr ""
-"以前は、JDBCストアを設定する際に、ユーザーが基礎となるDBのベンダーを指定することしかできませんでした。その結果、JDBCストアで利用されるSQLは、サポートされているDBの古いバージョンの機能を満たす必要があるため、InfinispanはDBのより新しい機能を利用することができませんでした。"
+msgid "Previously when configuring a JDBC store it was only possible for a user to specify the vendor of the underlying DB. Consequently, it was not possible for Infinispan to utilise more recent features of DB as the SQL utilised by our JDBC stores had to satisfy the capabilities of the oldest supported DB version."
+msgstr "以前は、JDBCストアを設定する際に、ユーザーが基礎となるDBのベンダーを指定することしかできませんでした。その結果、JDBCストアで利用されるSQLは、サポートされているDBの古いバージョンの機能を満たす必要があるため、InfinispanはDBのより新しい機能を利用することができませんでした。"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-9x-jdbc-store-improvements.adoc:37
 #, fuzzy
-msgid ""
-"In Infinispan 9 we have completely refactored the code responsible for "
-"generating SQL queries.  Enabling our JDBC stores to take greater advantage "
-"of optimisations and features applicable to a given database vendor and "
-"version. See the below gist for examples of how to specify the major and "
-"minor versions of your database."
-msgstr ""
-"Infinispan 9 では、SQL クエリの生成を担当するコードを完全にリファクタリングしました。 これにより、JDBC "
-"ストアでは、データベースのベンダーやバージョンに応じた最適化や機能を最大限に活用できるようになりました。データベースのメジャーバージョンとマイナーバージョンを指定する方法の例を以下に示します。"
+msgid "In Infinispan 9 we have completely refactored the code responsible for generating SQL queries.  Enabling our JDBC stores to take greater advantage of optimisations and features applicable to a given database vendor and version. See the below gist for examples of how to specify the major and minor versions of your database."
+msgstr "Infinispan 9 では、SQL クエリの生成を担当するコードを完全にリファクタリングしました。 これにより、JDBC ストアでは、データベースのベンダーやバージョンに応じた最適化や機能を最大限に活用できるようになりました。データベースのメジャーバージョンとマイナーバージョンを指定する方法の例を以下に示します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-9x-jdbc-store-improvements.adoc:39
@@ -129,127 +108,73 @@ msgstr "XMLコンフィグ。"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-9x-jdbc-store-improvements.adoc:46
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "*Note*: If no version information is provided, then we attempt to\n"
 "retrieve version data via the JDBC driver.  This is not always possible\n"
 "and in such cases we default to SQL queries which are compatible with\n"
 "the lowest supported version of the specified DB dialect.\n"
-msgstr ""
-"*注意* : "
-"バージョン情報が提供されていない場合は、JDBCドライバを介してバージョンデータを取得しようとしますが、これが常に可能であるとは限らず、そのような場合は、指定されたDBの方言のうち、最もサポートされているバージョンが低いものと互換性のあるSQLクエリをデフォルトとして使用します。"
+msgstr "*注意* : バージョン情報が提供されていない場合は、JDBCドライバを介してバージョンデータを取得しようとしますが、これが常に可能であるとは限らず、そのような場合は、指定されたDBの方言のうち、最もサポートされているバージョンが低いものと互換性のあるSQLクエリをデフォルトとして使用します。"
 
 #. type: Title ===
 #: upstream/_posts/2017-01-23-9x-jdbc-store-improvements.adoc:48
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Upsert Support"
 msgstr "アップサートサポート"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-9x-jdbc-store-improvements.adoc:56
 #, fuzzy
-msgid ""
-"As a consequence of the refactoring mentioned above, writes to the JDBC "
-"stores finally utilise upserts. Previously, the JDBC stores had to first "
-"select an entry, before inserting or updating a DB row depending on whether "
-"the entry previously existed.  Now, in supported DBs, store writes are "
-"performed atomically via a single SQL statement."
-msgstr ""
-"上記のリファクタリングの結果、JDBC ストアへの書き込みは、最終的にアップサートを利用するようになりました。以前は、JDBC "
-"ストアは最初にエントリを選択してから、エントリが以前に存在していたかどうかに応じて DB 行を挿入または更新しなければなりませんでした。 "
-"現在では、サポートされている DB では、ストアの書き込みは単一の SQL 文を介してアトム単位で実行されます。"
+msgid "As a consequence of the refactoring mentioned above, writes to the JDBC stores finally utilise upserts. Previously, the JDBC stores had to first select an entry, before inserting or updating a DB row depending on whether the entry previously existed.  Now, in supported DBs, store writes are performed atomically via a single SQL statement."
+msgstr "上記のリファクタリングの結果、JDBC ストアへの書き込みは、最終的にアップサートを利用するようになりました。以前は、JDBC ストアは最初にエントリを選択してから、エントリが以前に存在していたかどうかに応じて DB 行を挿入または更新しなければなりませんでした。 現在では、サポートされている DB では、ストアの書き込みは単一の SQL 文を介してアトム単位で実行されます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-9x-jdbc-store-improvements.adoc:61
 #, fuzzy
-msgid ""
-"In some cases it may be desirable for the previous store behaviour to be "
-"utilised, in such cases the following property should be passed to your "
-"store's configuration and set to true: `infinispan.jdbc.upsert.disabled`."
-msgstr ""
-"場合によっては、以前のストアの動作を利用することが望ましい場合があります。そのような場合は、以下のプロパティをストアの設定に渡して true "
-"に設定してください: `infinispan.jdbc.upsert.disabled` ."
+msgid "In some cases it may be desirable for the previous store behaviour to be utilised, in such cases the following property should be passed to your store's configuration and set to true: `infinispan.jdbc.upsert.disabled`."
+msgstr "場合によっては、以前のストアの動作を利用することが望ましい場合があります。そのような場合は、以下のプロパティをストアの設定に渡して true に設定してください: `infinispan.jdbc.upsert.disabled` ."
 
 #. type: Title ===
 #: upstream/_posts/2017-01-23-9x-jdbc-store-improvements.adoc:63
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Timestamp Indexing"
 msgstr "タイムスタンプインデックス"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-9x-jdbc-store-improvements.adoc:74
 #, fuzzy
-msgid ""
-"By default an index is now created on the `timestamp-column` of a JDBC store "
-"when the \"create-on-start\" option is set to true for a store's table.  The "
-"advantage of this index is that it prevents the DB from having to perform "
-"full table searches when purging a table of expired cache entries.  Similar "
-"to upsert support, this index is optional an can be disabled by setting the "
-"property `infinispan.jdbc.indexing.disabled` to true.  "
-msgstr ""
-"デフォルトでは、ストアのテーブルに対して \"create-on-start\" オプションが true に設定されている場合、JDBC ストアの "
-"`timestamp-column` にインデックスが作成されるようになりました。 "
-"このインデックスの利点は、有効期限切れのキャッシュエントリをテーブルから削除する際に、DB がテーブル全体を検索する必要がなくなることです。 "
-"upsert サポートと同様に、このインデックスはオプションであり、プロパティ `infinispan.jdbc.indexing.disabled` "
-"を true に設定することで無効にすることができます。"
+msgid "By default an index is now created on the `timestamp-column` of a JDBC store when the \"create-on-start\" option is set to true for a store's table.  The advantage of this index is that it prevents the DB from having to perform full table searches when purging a table of expired cache entries.  Similar to upsert support, this index is optional an can be disabled by setting the property `infinispan.jdbc.indexing.disabled` to true.  "
+msgstr "デフォルトでは、ストアのテーブルに対して \"create-on-start\" オプションが true に設定されている場合、JDBC ストアの `timestamp-column` にインデックスが作成されるようになりました。 このインデックスの利点は、有効期限切れのキャッシュエントリをテーブルから削除する際に、DB がテーブル全体を検索する必要がなくなることです。 upsert サポートと同様に、このインデックスはオプションであり、プロパティ `infinispan.jdbc.indexing.disabled` を true に設定することで無効にすることができます。"
 
 #. type: Title ==
 #: upstream/_posts/2017-01-23-9x-jdbc-store-improvements.adoc:77
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Hello HikariCP"
 msgstr "ひかりCPさんこんにちは"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-9x-jdbc-store-improvements.adoc:91
 #, fuzzy
-msgid ""
-"In Infinispan 9 we welcome HikariCP as the new default implementation for "
-"the JDBC PooledConnectionFactory. HikariCP provides superior performance to "
-"c3p0 (the previous default), whilst also providing a much smaller footprint. "
-"The PooledConnectionFactoryConfiguration remains the same as before, expect "
-"we now include the ability to explicitly define a properties file where "
-"additional configuration parameters can be specified for the underlying "
-"HikariCP. For a full list of the available HikariCP configuration "
-"properties, please see the https://github.com/brettwooldridge/"
-"HikariCP#configuration-knobs-baby[official documentation]. "
-msgstr ""
-"Infinispan 9 では、JDBC PooledConnectionFactory の新しいデフォルト実装として HikariCP "
-"を歓迎します。HikariCPは、c3p0（以前のデフォルト）よりも優れたパフォーマンスを提供すると同時に、はるかに小さなフットプリントを提供します。PooledConnectionFactoryConfigurationは以前と同じですが、基礎となるHikariCPのために追加の構成パラメータを指定できるプロパティファイルを明示的に定義する機能が含まれるようになりました。利用可能なHikariCP設定プロパティの完全なリストについては、 "
-"link:https://github.com/brettwooldridge/HikariCP#configuration-knobs-"
-"baby[公式ドキュメントを] 参照してください。"
+msgid "In Infinispan 9 we welcome HikariCP as the new default implementation for the JDBC PooledConnectionFactory. HikariCP provides superior performance to c3p0 (the previous default), whilst also providing a much smaller footprint. The PooledConnectionFactoryConfiguration remains the same as before, expect we now include the ability to explicitly define a properties file where additional configuration parameters can be specified for the underlying HikariCP. For a full list of the available HikariCP configuration properties, please see the https://github.com/brettwooldridge/HikariCP#configuration-knobs-baby[official documentation]. "
+msgstr "Infinispan 9 では、JDBC PooledConnectionFactory の新しいデフォルト実装として HikariCP を歓迎します。HikariCPは、c3p0（以前のデフォルト）よりも優れたパフォーマンスを提供すると同時に、はるかに小さなフットプリントを提供します。PooledConnectionFactoryConfigurationは以前と同じですが、基礎となるHikariCPのために追加の構成パラメータを指定できるプロパティファイルを明示的に定義する機能が含まれるようになりました。利用可能なHikariCP設定プロパティの完全なリストについては、 link:https://github.com/brettwooldridge/HikariCP#configuration-knobs-baby[公式ドキュメントを] 参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-9x-jdbc-store-improvements.adoc:97
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "*Note:* Support for c3p0 has been deprecated and will be removed in a\n"
 "future release. However, users can force c3p0 to be utilised as before\n"
 "by providing the system property `-Dinfinispan.jdbc.c3p0.force=true`.\n"
-msgstr ""
-"*注意:* c3p0 のサポートは非推奨となっており、将来のリリースでは削除される予定です。しかし、ユーザーはシステムプロパティ `-"
-"Dinfinispan.jdbc.c3p0.force=true` を提供することで、c3p0 を以前と同じように強制的に利用することができます。"
+msgstr "*注意:* c3p0 のサポートは非推奨となっており、将来のリリースでは削除される予定です。しかし、ユーザーはシステムプロパティ `-Dinfinispan.jdbc.c3p0.force=true` を提供することで、c3p0 を以前と同じように強制的に利用することができます。"
 
 #. type: Title ==
 #: upstream/_posts/2017-01-23-9x-jdbc-store-improvements.adoc:102
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Summary"
 msgstr "概要"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-9x-jdbc-store-improvements.adoc:112
 #, fuzzy
-msgid ""
-"We have introduced the above new features to the JDBC stores in order to "
-"improve performance and to enable us to further the store's capabilities in "
-"the future. If you're a user of the JDBC stores and have any feedback on the "
-"latest changes, or would like to request some new features/optimisations, "
-"let us know via the https://developer.jboss.org/en/infinispan/"
-"content[forum], https://issues.jboss.org/projects/ISPN[issue tracker] or the "
-"#infinispan channel onhttp://webchat.freenode.net/?channels="
-"%23infinispan[ Freenode]. "
-msgstr ""
-"JDBC ストアに上記の新機能を導入したのは、パフォーマンスを向上させ、将来的にストアの機能をさらに向上させるためです。JDBC "
-"ストアのユーザで、最新の変更点に関するフィードバックや新機能/最適化のリクエストがある場合は、フォーラム link:https://developer."
-"jboss.org/en/infinispan/content[、] link:https://issues.jboss.org/projects/"
-"ISPN[イシュートラッカー、#] infinispan チャンネル（http://webchat.freenode.net/?channels="
-"%23infinispan[ Freenode]）でお知らせください。"
+msgid "We have introduced the above new features to the JDBC stores in order to improve performance and to enable us to further the store's capabilities in the future. If you're a user of the JDBC stores and have any feedback on the latest changes, or would like to request some new features/optimisations, let us know via the https://developer.jboss.org/en/infinispan/content[forum], https://issues.jboss.org/projects/ISPN[issue tracker] or the #infinispan channel onhttp://webchat.freenode.net/?channels=%23infinispan[ Freenode]. "
+msgstr "JDBC ストアに上記の新機能を導入したのは、パフォーマンスを向上させ、将来的にストアの機能をさらに向上させるためです。JDBC ストアのユーザで、最新の変更点に関するフィードバックや新機能/最適化のリクエストがある場合は、フォーラム link:https://developer.jboss.org/en/infinispan/content[、] link:https://issues.jboss.org/projects/ISPN[イシュートラッカー、#] infinispan チャンネル（http://webchat.freenode.net/?channels=%23infinispan[ Freenode]）でお知らせください。"

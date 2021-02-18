@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-06-17-so-you-want-jpa-like-access-to.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-17-so-you-want-jpa-like-access-to.adoc:14
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: So you want JPA-like access to Infinispan?\n"
@@ -36,10 +36,8 @@ msgid ""
 "\"hibernate\",\n"
 "\"API\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8542135788864166002\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/06/so-you-want-jpa-like-"
-"access-to.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8542135788864166002\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/06/so-you-want-jpa-like-access-to.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -52,96 +50,39 @@ msgstr ""
 "\"hibernate\",\n"
 "\"API\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8542135788864166002\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/06/so-you-want-jpa-like-"
-"access-to.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8542135788864166002\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/06/so-you-want-jpa-like-access-to.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-17-so-you-want-jpa-like-access-to.adoc:26
 #, fuzzy
-msgid ""
-"Back in the early days of Infinispan (since our first public announcement, "
-"in fact) we always had it in mind to expose a http://en.wikibooks.org/wiki/"
-"Java_Persistence/What_is_JPA%3F[JPA]-like layer to Infinispan.  Initially "
-"this was as a replacement to the fine-grained replication that http://www."
-"jboss.org/jbosscache[JBoss Cache]'s http://docs.jboss.org/jbosscache/2.0.0."
-"GA/PojoCache/en/html_single/index.html#intro[POJO Cache] variant offered, "
-"but it grew beyond just a technique to do fine-grained replication on "
-"complex object graphs.  The fact that it offered a familiar data storage API "
-"to Java developers was big.  Huge, in fact."
-msgstr ""
-"Infinispanの初期の頃（実際には最初の発表以来）、私たちは常に link:http://en.wikibooks.org/wiki/"
-"Java_Persistence/What_is_JPA%3F[JPAの] ようなレイヤーをInfinispanに公開することを念頭に置いていました。 "
-"当初、これはJBoss link:http://www.jboss.org/jbosscache[CacheのPOJO] link:http://"
-"docs.jboss.org/jbosscache/2.0.0.GA/PojoCache/en/html_single/index."
-"html#intro[Cacheバリア] "
-"ントが提供していた細かい粒度のレプリケーションに代わるものでしたが、複雑なオブジェクトグラフ上で細かい粒度のレプリケーションを行うための単なる技術を超えて成長しました。 "
-"これがJava開発者に身近なデータストレージAPIを提供したことは、大きな意味を持ちました。 実際、大きな意味を持ちました。"
+msgid "Back in the early days of Infinispan (since our first public announcement, in fact) we always had it in mind to expose a http://en.wikibooks.org/wiki/Java_Persistence/What_is_JPA%3F[JPA]-like layer to Infinispan.  Initially this was as a replacement to the fine-grained replication that http://www.jboss.org/jbosscache[JBoss Cache]'s http://docs.jboss.org/jbosscache/2.0.0.GA/PojoCache/en/html_single/index.html#intro[POJO Cache] variant offered, but it grew beyond just a technique to do fine-grained replication on complex object graphs.  The fact that it offered a familiar data storage API to Java developers was big.  Huge, in fact."
+msgstr "Infinispanの初期の頃（実際には最初の発表以来）、私たちは常に link:http://en.wikibooks.org/wiki/Java_Persistence/What_is_JPA%3F[JPAの] ようなレイヤーをInfinispanに公開することを念頭に置いていました。 当初、これはJBoss link:http://www.jboss.org/jbosscache[CacheのPOJO] link:http://docs.jboss.org/jbosscache/2.0.0.GA/PojoCache/en/html_single/index.html#intro[Cacheバリア] ントが提供していた細かい粒度のレプリケーションに代わるものでしたが、複雑なオブジェクトグラフ上で細かい粒度のレプリケーションを行うための単なる技術を超えて成長しました。 これがJava開発者に身近なデータストレージAPIを提供したことは、大きな意味を持ちました。 実際、大きな意味を持ちました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-17-so-you-want-jpa-like-access-to.adoc:29
 #, fuzzy
-msgid ""
-"http://upload.wikimedia.org/wikibooks/en/d/d1/Java-persistence.PNG[image:"
-"http://upload.wikimedia.org/wikibooks/en/d/d1/Java-persistence."
-"PNG[image,width=320,height=140]]"
-msgstr ""
-"link:http://upload.wikimedia.org/wikibooks/en/d/d1/Java-persistence.PNG[]"
+msgid "http://upload.wikimedia.org/wikibooks/en/d/d1/Java-persistence.PNG[image:http://upload.wikimedia.org/wikibooks/en/d/d1/Java-persistence.PNG[image,width=320,height=140]]"
+msgstr "link:http://upload.wikimedia.org/wikibooks/en/d/d1/Java-persistence.PNG[]"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-17-so-you-want-jpa-like-access-to.adoc:41
 #, fuzzy
-msgid ""
-"So we realised JPA-on-Infinispan was firmly on the roadmap.  The original "
-"plan was to implement the entire set of JPA APIs from scratch, but this was "
-"a daunting and Herculean task.  After much discussion with core Hibernate "
-"architects and Infinispan contributors Emmanuel Bernard and Sanne Grinovero, "
-"we came to a decision that rather than implementing all this from scratch, "
-"it served both Infinispan and the community better to fork Hibernate's core "
-"http://www.hibernate.org/about/orm[ORM] engine, and replace the relational "
-"database mappings with key/value store mappings.  And we get to reuse the "
-"mature codebase of Hibernate's session and transaction management, object "
-"graph dehydration code, proxies, etc."
-msgstr ""
-"当初の計画では、JPA API "
-"の全セットをゼロから実装する予定でしたが、これは非常に困難な作業でした。HibernateのコアアーキテクトやInfinispanの貢献者であるEmmanuel "
-"Bernard氏とSanne "
-"Grinovero氏と多くの議論をした後、私たちは、これらすべてをゼロから実装するよりも、HibernateのコアORMエンジンをフォークして、リレーショナルデータベースのマッピングをキー/"
-"バリューストアのマッピングに置き換える方が、Infinispanにとってもコミュニティにとっても有益であるという結論に達しました。また、Hibernateのセッションやトランザクション管理、オブジェクトグラフの脱水コード、プロキシなどの成熟したコードベースを再利用することができます。"
+msgid "So we realised JPA-on-Infinispan was firmly on the roadmap.  The original plan was to implement the entire set of JPA APIs from scratch, but this was a daunting and Herculean task.  After much discussion with core Hibernate architects and Infinispan contributors Emmanuel Bernard and Sanne Grinovero, we came to a decision that rather than implementing all this from scratch, it served both Infinispan and the community better to fork Hibernate's core http://www.hibernate.org/about/orm[ORM] engine, and replace the relational database mappings with key/value store mappings.  And we get to reuse the mature codebase of Hibernate's session and transaction management, object graph dehydration code, proxies, etc."
+msgstr "当初の計画では、JPA API の全セットをゼロから実装する予定でしたが、これは非常に困難な作業でした。HibernateのコアアーキテクトやInfinispanの貢献者であるEmmanuel Bernard氏とSanne Grinovero氏と多くの議論をした後、私たちは、これらすべてをゼロから実装するよりも、HibernateのコアORMエンジンをフォークして、リレーショナルデータベースのマッピングをキー/バリューストアのマッピングに置き換える方が、Infinispanにとってもコミュニティにとっても有益であるという結論に達しました。また、Hibernateのセッションやトランザクション管理、オブジェクトグラフの脱水コード、プロキシなどの成熟したコードベースを再利用することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-17-so-you-want-jpa-like-access-to.adoc:49
 #, fuzzy
-msgid ""
-"And Hibernate OGM (Object-Grid Mapping) was born.  After initial experiments "
-"and even a large-scale public demo at the http://www.jboss.org/"
-"jbw2011keynote[JBoss World 2011 Keynote], Emmanuel has officially http://in."
-"relation.to/Bloggers/HibernateOGMBirthAnnouncement[blogged] about the launch "
-"of Hibernate OGM.  Very exciting times, Infinispan now has a JPA-like layer. "
-" :-)"
-msgstr ""
-"そして、Hibernate OGM (Object-Grid Mapping) が誕生しました。 初期の実験や、JBoss link:http://"
-"www.jboss.org/jbw2011keynote[World 2011 Keynote] での大規模なパブリックデモの後、 link:http:/"
-"/www.jboss.org/jbw2011keynote[Emmanuel] 氏がHibernate OGMの立ち上げについて公式にブログで発表 "
-"link:http://in.relation.to/Bloggers/HibernateOGMBirthAnnouncement[しました] 。 "
-"非常にエキサイティングな時代になり、InfinispanはJPAのようなレイヤーを持つようになりました。)"
+msgid "And Hibernate OGM (Object-Grid Mapping) was born.  After initial experiments and even a large-scale public demo at the http://www.jboss.org/jbw2011keynote[JBoss World 2011 Keynote], Emmanuel has officially http://in.relation.to/Bloggers/HibernateOGMBirthAnnouncement[blogged] about the launch of Hibernate OGM.  Very exciting times, Infinispan now has a JPA-like layer.  :-)"
+msgstr "そして、Hibernate OGM (Object-Grid Mapping) が誕生しました。 初期の実験や、JBoss link:http://www.jboss.org/jbw2011keynote[World 2011 Keynote] での大規模なパブリックデモの後、 link:http://www.jboss.org/jbw2011keynote[Emmanuel] 氏がHibernate OGMの立ち上げについて公式にブログで発表 link:http://in.relation.to/Bloggers/HibernateOGMBirthAnnouncement[しました] 。 非常にエキサイティングな時代になり、InfinispanはJPAのようなレイヤーを持つようになりました。)"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-17-so-you-want-jpa-like-access-to.adoc:56
 #, fuzzy
-msgid ""
-"To reiterate a key point from Emmanuel's blog, Hibernate OGM is still in its "
-"infancy.  It needs community participation to help it grow up and mature. "
-" This is where the Infinispan community should step in; consider Hibernate "
-"OGM as Infinispan's JPA-like layer and get involved.  For more details, "
-"please read Emmanuel's http://in.relation.to/Bloggers/"
-"HibernateOGMBirthAnnouncement[announcement]."
-msgstr ""
-"Emmanuelさんのブログのポイントをもう一度言いますと、Hibernate OGMはまだ初期段階にあります。 "
-"成長して成熟するためにはコミュニティの参加が必要です。 そこでInfinispanのコミュニティは、Hibernate "
-"OGMをInfinispanのJPAライクなレイヤーとして考え、参加するべきです。 詳細については、Emmanuelさんの発表を読んでください。"
+msgid "To reiterate a key point from Emmanuel's blog, Hibernate OGM is still in its infancy.  It needs community participation to help it grow up and mature.  This is where the Infinispan community should step in; consider Hibernate OGM as Infinispan's JPA-like layer and get involved.  For more details, please read Emmanuel's http://in.relation.to/Bloggers/HibernateOGMBirthAnnouncement[announcement]."
+msgstr "Emmanuelさんのブログのポイントをもう一度言いますと、Hibernate OGMはまだ初期段階にあります。 成長して成熟するためにはコミュニティの参加が必要です。 そこでInfinispanのコミュニティは、Hibernate OGMをInfinispanのJPAライクなレイヤーとして考え、参加するべきです。 詳細については、Emmanuelさんの発表を読んでください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-17-so-you-want-jpa-like-access-to.adoc:58

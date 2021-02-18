@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:7
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Hot Rod per-cache configuration\n"
@@ -32,46 +32,30 @@ msgid ""
 "author: ttarrant\n"
 "tags: [ \"hot rod\", \"configuration\" ]\n"
 "---\n"
-msgstr ""
-"layout: blog title: Hot Rod per-cache configuration permalink./blog/:year/:"
-"month/:day/hotrod-percache-configuration author: ttarrant tags.[ \"hot "
-"rod\", \"configuration\" ] --- ---。"
+msgstr "layout: blog title: Hot Rod per-cache configuration permalink./blog/:year/:month/:day/hotrod-percache-configuration author: ttarrant tags.[ \"hot rod\", \"configuration\" ] --- ---。"
 
 #. type: Title =
 #: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:9
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Hot Rod per-cache configuration"
 msgstr "ホットロッドのキャッシュあたりの設定"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:12
 #, fuzzy
-msgid ""
-"Aside from being able to configure a Java Hot Rod client through a https://"
-"infinispan.org/blog/[compact URI] representation, Infinispan 11 brings some "
-"additional changes to remote cache configuration."
-msgstr ""
-"link:https://infinispan.org/blog/[コンパクトなURI] 表現を介してJava Hot "
-"Rodクライアントを設定できるようになっただけでなく、Infinispan 11はリモートキャッシュの設定にもいくつかの追加の変更をもたらしました。"
+msgid "Aside from being able to configure a Java Hot Rod client through a https://infinispan.org/blog/[compact URI] representation, Infinispan 11 brings some additional changes to remote cache configuration."
+msgstr "link:https://infinispan.org/blog/[コンパクトなURI] 表現を介してJava Hot Rodクライアントを設定できるようになっただけでなく、Infinispan 11はリモートキャッシュの設定にもいくつかの追加の変更をもたらしました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:14
 #, fuzzy
-msgid ""
-"While remote caches did have some client-side configuration, this was never "
-"implemented cleanly, resorting to multiple overloaded variations on the "
-"`getCache()` method, for example to obtain a transactional cache, or "
-"enabling near-caching."
-msgstr ""
-"リモートキャッシュにはクライアント側の設定がありましたが、これは決してクリーンに実装されておらず、例えばトランザクションキャッシュを取得したり、ニアキャッシュを有効にしたりといったように、 "
-"`getCache()` メソッドの複数のオーバーロードされたバリエーションに頼っていました。"
+msgid "While remote caches did have some client-side configuration, this was never implemented cleanly, resorting to multiple overloaded variations on the `getCache()` method, for example to obtain a transactional cache, or enabling near-caching."
+msgstr "リモートキャッシュにはクライアント側の設定がありましたが、これは決してクリーンに実装されておらず、例えばトランザクションキャッシュを取得したり、ニアキャッシュを有効にしたりといったように、 `getCache()` メソッドの複数のオーバーロードされたバリエーションに頼っていました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:16
 #, fuzzy
-msgid ""
-"Infinispan 11 now allows specifying per-cache configuration both through the "
-"API and through the declarative properties file."
+msgid "Infinispan 11 now allows specifying per-cache configuration both through the API and through the declarative properties file."
 msgstr "Infinispan 11 では、API と宣言的プロパティファイルの両方でキャッシュごとの設定を指定できるようになりました。"
 
 #. type: Plain text
@@ -97,12 +81,8 @@ msgstr ""
 #. type: Plain text
 #: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:32
 #, fuzzy
-msgid ""
-"In the above code snippet, we enable near-caching for the cache `closecache` "
-"and we enable NON_XA transactions on the cache `txcache`."
-msgstr ""
-"上記のコードスニペットでは、キャッシュ `closecache` でニアキャッシングを有効にし、キャッシュ `txcache` で NON_XA "
-"トランザクションを有効にしています。"
+msgid "In the above code snippet, we enable near-caching for the cache `closecache` and we enable NON_XA transactions on the cache `txcache`."
+msgstr "上記のコードスニペットでは、キャッシュ `closecache` でニアキャッシングを有効にし、キャッシュ `txcache` で NON_XA トランザクションを有効にしています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:34
@@ -122,20 +102,15 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:43
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Automatic cache creation"
 msgstr "キャッシュの自動作成"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:46
 #, fuzzy
-msgid ""
-"A neat feature that has been implemented as part of per-cache configuration, "
-"is the ability to automatically create a cache on the server on first use, "
-"if it is missing, by supplying either an existing template or a full-blown "
-"configuration."
-msgstr ""
-"キャッシュごとの設定の一部として実装されている優れた機能は、既存のテンプレートまたは本格的な設定を提供することで、キャッシュが不足している場合、最初の使用時に自動的にサーバー上にキャッシュを作成する機能です。"
+msgid "A neat feature that has been implemented as part of per-cache configuration, is the ability to automatically create a cache on the server on first use, if it is missing, by supplying either an existing template or a full-blown configuration."
+msgstr "キャッシュごとの設定の一部として実装されている優れた機能は、既存のテンプレートまたは本格的な設定を提供することで、キャッシュが不足している場合、最初の使用時に自動的にサーバー上にキャッシュを作成する機能です。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-05-30-hotrod-percache-configuration.adoc:56
@@ -161,6 +136,5 @@ msgstr "プロパティファイルを使用した上記の例は次のように
 #, no-wrap
 msgid ""
 "infinispan.client.hotrod.uri=hotrod://127.0.0.1\n"
-"infinispan.client.hotrod.cache.mydistcache.template=org.infinispan."
-"DIST_SYNC\n"
+"infinispan.client.hotrod.cache.mydistcache.template=org.infinispan.DIST_SYNC\n"
 msgstr ""

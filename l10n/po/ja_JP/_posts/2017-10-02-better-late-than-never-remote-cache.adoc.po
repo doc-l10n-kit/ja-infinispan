@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-10-02-better-late-than-never-remote-cache.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-02-better-late-than-never-remote-cache.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 'Better Late than Never: Remote Cache collections'\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2017-10-02T09:40:00.001-07:00'\n"
 "author: ttarrant\n"
 "tags: [ \" hotrod\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1067286530354658911\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/10/better-late-than-never-"
-"remote-cache.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1067286530354658911\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/10/better-late-than-never-remote-cache.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,138 +42,60 @@ msgstr ""
 "date: '2017-10-02T09:40:00.001-07:00'\n"
 "author: ttarrant\n"
 "tags: [ \" hotrod\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1067286530354658911\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/10/better-late-than-never-"
-"remote-cache.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1067286530354658911\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/10/better-late-than-never-remote-cache.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-02-better-late-than-never-remote-cache.adoc:16
 #, fuzzy
-msgid ""
-"One of the main benefits of Infinispan extending the java.util.Map interface "
-"when we introduced our https://docs.jboss.org/infinispan/9.1/apidocs/org/"
-"infinispan/Cache.html[Cache] interface  was that users would immediately be "
-"able to use a well established and familiar API."
-msgstr ""
-"link:https://docs.jboss.org/infinispan/9.1/apidocs/org/infinispan/Cache."
-"html[Cache] インターフェイスを導入した際に、Infinispanがjava.util."
-"Mapインターフェイスを拡張した主な利点の1つは、ユーザーが確立された使い慣れたAPIをすぐに使用できることでした。"
+msgid "One of the main benefits of Infinispan extending the java.util.Map interface when we introduced our https://docs.jboss.org/infinispan/9.1/apidocs/org/infinispan/Cache.html[Cache] interface  was that users would immediately be able to use a well established and familiar API."
+msgstr "link:https://docs.jboss.org/infinispan/9.1/apidocs/org/infinispan/Cache.html[Cache] インターフェイスを導入した際に、Infinispanがjava.util.Mapインターフェイスを拡張した主な利点の1つは、ユーザーが確立された使い慣れたAPIをすぐに使用できることでした。"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-02-better-late-than-never-remote-cache.adoc:22
 #, fuzzy
-msgid ""
-"The unfortunate thing about this relationship is that now the Cache "
-"interface also has to implement all of the other methods such as keySet, "
-"values and entrySet. Originally Infinispan didn't implement these "
-"collections or returned an immutable copy (requiring all elements to be in "
-"memory). Neither choice is obviously desirable."
-msgstr ""
-"この関係で残念なことは、Cache インタフェースは、keySet、values、および entrySet "
-"などの他のすべてのメソッドも実装する必要があることです。元々 Infinispan "
-"はこれらのコレクションを実装していなかったか、または不変コピーを返していました "
-"(すべての要素がメモリ内にある必要があります)。どちらの選択も明らかに望ましいものではありません。"
+msgid "The unfortunate thing about this relationship is that now the Cache interface also has to implement all of the other methods such as keySet, values and entrySet. Originally Infinispan didn't implement these collections or returned an immutable copy (requiring all elements to be in memory). Neither choice is obviously desirable."
+msgstr "この関係で残念なことは、Cache インタフェースは、keySet、values、および entrySet などの他のすべてのメソッドも実装する必要があることです。元々 Infinispan はこれらのコレクションを実装していなかったか、または不変コピーを返していました (すべての要素がメモリ内にある必要があります)。どちらの選択も明らかに望ましいものではありません。"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-02-better-late-than-never-remote-cache.adoc:33
 #, fuzzy
-msgid ""
-"This all changed with https://issues.jboss.org/browse/ISPN-4836[ISPN-4836] "
-"which provided backing implementations of keySet, values and entrySet "
-"collections. This means that all methods were now provided and would keep up "
-"to date with changes to the underlying Cache and updates to these "
-"collections would be persisted down to the Cache. The implementation also "
-"didn't keep a copy of all contents and instead allowed for memory efficient "
-"iteration.  And if the user still wanted to use a copy they could still do "
-"that, by iterating over the collection and copying themselves. This later "
-"spring boarded our implementation of Distributed Stream as well."
-msgstr ""
-"これは link:https://issues.jboss.org/browse/ISPN-4836[ISPN-4836] "
-"ですべてが変更され、keySet、values、および entrySet "
-"コレクションのバッキング実装が提供されました。これは、すべてのメソッドが提供されるようになり、基礎となる Cache "
-"への変更に合わせて最新の状態を維持し、これらのコレクションへの更新が Cache "
-"にまで持続するようになったことを意味します。この実装では、すべてのコンテンツのコピーを保持せず、代わりにメモリ効率の良い反復処理が可能になりました。ユーザーがまだコピーを使用したい場合は、コレクションを反復処理して自分自身をコピーすることで、コピーを使用することができます。このことは、後に私たちの分散ストリームの実装にも影響を与えました。"
+msgid "This all changed with https://issues.jboss.org/browse/ISPN-4836[ISPN-4836] which provided backing implementations of keySet, values and entrySet collections. This means that all methods were now provided and would keep up to date with changes to the underlying Cache and updates to these collections would be persisted down to the Cache. The implementation also didn't keep a copy of all contents and instead allowed for memory efficient iteration.  And if the user still wanted to use a copy they could still do that, by iterating over the collection and copying themselves. This later spring boarded our implementation of Distributed Stream as well."
+msgstr "これは link:https://issues.jboss.org/browse/ISPN-4836[ISPN-4836] ですべてが変更され、keySet、values、および entrySet コレクションのバッキング実装が提供されました。これは、すべてのメソッドが提供されるようになり、基礎となる Cache への変更に合わせて最新の状態を維持し、これらのコレクションへの更新が Cache にまで持続するようになったことを意味します。この実装では、すべてのコンテンツのコピーを保持せず、代わりにメモリ効率の良い反復処理が可能になりました。ユーザーがまだコピーを使用したい場合は、コレクションを反復処理して自分自身をコピーすることで、コピーを使用することができます。このことは、後に私たちの分散ストリームの実装にも影響を与えました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-02-better-late-than-never-remote-cache.adoc:37
 #, fuzzy
-msgid ""
-"The problem was that the RemoteCache was left in the old state, where some "
-"things weren't implemented and others were copies just like how embedded "
-"caches used to be."
-msgstr ""
-"問題は、RemoteCacheが昔の状態のままで、実装されていないものもあれば、昔の埋め込みキャッシュがどうだったかのようにコピーされているものもありました。"
+msgid "The problem was that the RemoteCache was left in the old state, where some things weren't implemented and others were copies just like how embedded caches used to be."
+msgstr "問題は、RemoteCacheが昔の状態のままで、実装されていないものもあれば、昔の埋め込みキャッシュがどうだったかのようにコピーされているものもありました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-02-better-late-than-never-remote-cache.adoc:44
 #, fuzzy
-msgid ""
-"Well I can now gladly say with the release of Infinispan 9.1 that "
-"RemoteCache now has backing implementations of keySet, values and entrySet "
-"implemented via https://issues.jboss.org/browse/ISPN-7900[ISPN-7900]. Thus "
-"these collections support all methods on these collections and are backed by "
-"the underlying RemoteCache."
-msgstr ""
-"Infinispan 9.1 のリリースにより、RemoteCache は link:https://issues.jboss.org/browse/"
-"ISPN-7900[ISPN-7900] を介して実装された keySet、values、entrySet "
-"の実装をサポートするようになりました。これにより、これらのコレクションは、これらのコレクション上のすべてのメソッドをサポートし、基礎となる "
-"RemoteCache によってバックアップされています。"
+msgid "Well I can now gladly say with the release of Infinispan 9.1 that RemoteCache now has backing implementations of keySet, values and entrySet implemented via https://issues.jboss.org/browse/ISPN-7900[ISPN-7900]. Thus these collections support all methods on these collections and are backed by the underlying RemoteCache."
+msgstr "Infinispan 9.1 のリリースにより、RemoteCache は link:https://issues.jboss.org/browse/ISPN-7900[ISPN-7900] を介して実装された keySet、values、entrySet の実装をサポートするようになりました。これにより、これらのコレクションは、これらのコレクション上のすべてのメソッドをサポートし、基礎となる RemoteCache によってバックアップされています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-02-better-late-than-never-remote-cache.adoc:58
 #, fuzzy
-msgid ""
-"Unfortunately the Stream methods on these collections are not distributed "
-"like embedded, but we hope to someday improve that as well.  Instead these "
-"streams must iterate over the cache to perform the operations locally. By "
-"default these will pull 10,000 entries at a time to try to make sure that "
-"memory is not overburdened on the client. If you want to decrease this "
-"number (less memory - lower performance) or increase (more memory - higher "
-"performance) you can tweak this by changing the *batchSize* parameter via "
-"https://docs.jboss.org/infinispan/9.1/apidocs/org/infinispan/client/hotrod/"
-"configuration/ConfigurationBuilder.html#batchSize-int-[ConfigurationBuilder] "
-"or **[.blob-code-inner]#[.pl-c]#infinispan.client.hotrod.batch_Size##**[."
-"blob-code-inner]#[.pl-c]# if you use a property based file.##"
-msgstr ""
-"残念ながら、これらのコレクションのStreamメソッドは組み込みのように分散されていませんが、いつかそれも改善したいと考えています。その代わりに、これらのストリームはキャッシュを反復処理してローカルで処理を実行しなければなりません。デフォルトでは、クライアントのメモリに過大な負荷がかからないようにするために、一度に10,000エントリを引き出します。この数を減らしたい（メモリが少ないとパフォーマンスが低下する）場合や増やしたい（メモリが多いとパフォーマンスが向上する）場合は、 "
-"link:https://docs.jboss.org/infinispan/9.1/apidocs/org/infinispan/client/"
-"hotrod/configuration/ConfigurationBuilder.html#batchSize-int-"
-"[ConfigurationBuilder] で *batchSize* パラメータを変更するか、プロパティベースのファイルを使用している場合は[ *."
-"pl-c]#infinispan.client.hotrod.batch_Size* [.blob-code-inner][.pl-"
-"c]#を使用して調整することができます。"
+msgid "Unfortunately the Stream methods on these collections are not distributed like embedded, but we hope to someday improve that as well.  Instead these streams must iterate over the cache to perform the operations locally. By default these will pull 10,000 entries at a time to try to make sure that memory is not overburdened on the client. If you want to decrease this number (less memory - lower performance) or increase (more memory - higher performance) you can tweak this by changing the *batchSize* parameter via https://docs.jboss.org/infinispan/9.1/apidocs/org/infinispan/client/hotrod/configuration/ConfigurationBuilder.html#batchSize-int-[ConfigurationBuilder] or **[.blob-code-inner]#[.pl-c]#infinispan.client.hotrod.batch_Size##**[.blob-code-inner]#[.pl-c]# if you use a property based file.##"
+msgstr "残念ながら、これらのコレクションのStreamメソッドは組み込みのように分散されていませんが、いつかそれも改善したいと考えています。その代わりに、これらのストリームはキャッシュを反復処理してローカルで処理を実行しなければなりません。デフォルトでは、クライアントのメモリに過大な負荷がかからないようにするために、一度に10,000エントリを引き出します。この数を減らしたい（メモリが少ないとパフォーマンスが低下する）場合や増やしたい（メモリが多いとパフォーマンスが向上する）場合は、 link:https://docs.jboss.org/infinispan/9.1/apidocs/org/infinispan/client/hotrod/configuration/ConfigurationBuilder.html#batchSize-int-[ConfigurationBuilder] で *batchSize* パラメータを変更するか、プロパティベースのファイルを使用している場合は[ *.pl-c]#infinispan.client.hotrod.batch_Size* [.blob-code-inner][.pl-c]#を使用して調整することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-02-better-late-than-never-remote-cache.adoc:63
 #, fuzzy
-msgid ""
-"[.blob-code-inner]#[.pl-c]#You can read more about this and the remote "
-"iterator which drives these collections on our http://infinispan.org/docs/"
-"stable/user_guide/user_guide.html#remotecache_keyset_entryset_values[user "
-"guide]. ##"
-msgstr ""
-"[.pl-c]#このことと、これらのコレクションを駆動するリモートイテレータについては、 link:http://infinispan.org/docs/"
-"stable/user_guide/user_guide."
-"html#remotecache_keyset_entryset_values[ユーザーガイドを]参照してください。#"
+msgid "[.blob-code-inner]#[.pl-c]#You can read more about this and the remote iterator which drives these collections on our http://infinispan.org/docs/stable/user_guide/user_guide.html#remotecache_keyset_entryset_values[user guide]. ##"
+msgstr "[.pl-c]#このことと、これらのコレクションを駆動するリモートイテレータについては、 link:http://infinispan.org/docs/stable/user_guide/user_guide.html#remotecache_keyset_entryset_values[ユーザーガイドを]参照してください。#"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-02-better-late-than-never-remote-cache.adoc:68
 #, fuzzy
-msgid ""
-"[.blob-code-inner]#[.pl-c]#We hope you find that this improves your usage of "
-"RemoteCaches in the future by allowing you to have backed collections that "
-"also allow you to use the improvements of Java 8 with Streams.##"
-msgstr ""
-"[.pl-c]#私たちは、これが将来的にRemoteCachesの使用法を改善することを発見することを期待しています、また、Java "
-"8の改善点をStreamsで使用できるようにするためのバックコレクションを持つことができます。#"
+msgid "[.blob-code-inner]#[.pl-c]#We hope you find that this improves your usage of RemoteCaches in the future by allowing you to have backed collections that also allow you to use the improvements of Java 8 with Streams.##"
+msgstr "[.pl-c]#私たちは、これが将来的にRemoteCachesの使用法を改善することを発見することを期待しています、また、Java 8の改善点をStreamsで使用できるようにするためのバックコレクションを持つことができます。#"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-02-better-late-than-never-remote-cache.adoc:70
 #, fuzzy
-msgid ""
-"[.blob-code-inner]#[.pl-c]#If you have yet you can acquire Infinispan 9.1.1 "
-"or the latest stable version at http://infinispan.org/download/##"
-msgstr ""
-"[.pl-c]#If you have yet if you have been obtained Infinispan 9.1.1.1 or "
-"latest stable version at http://infinispan.org/download/ で取得することができます。"
+msgid "[.blob-code-inner]#[.pl-c]#If you have yet you can acquire Infinispan 9.1.1 or the latest stable version at http://infinispan.org/download/##"
+msgstr "[.pl-c]#If you have yet if you have been obtained Infinispan 9.1.1.1 or latest stable version at http://infinispan.org/download/ で取得することができます。"

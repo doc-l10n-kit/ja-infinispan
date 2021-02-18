@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:13
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: New Redis Cache Store Introduced in Infinispan 8\n"
@@ -35,10 +35,8 @@ msgid ""
 "\"redis\",\n"
 "\"cache store\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6539755624644109074\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/09/new-redis-cache-store-"
-"introduced-in.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6539755624644109074\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/09/new-redis-cache-store-introduced-in.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -50,67 +48,45 @@ msgstr ""
 "\"redis\",\n"
 "\"cache store\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6539755624644109074\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/09/new-redis-cache-store-"
-"introduced-in.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6539755624644109074\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/09/new-redis-cache-store-introduced-in.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:18
 #, fuzzy
-msgid ""
-"A new cache store for storage of cache data within the Redis key/value "
-"server has been introduced with Infinispan 8. This allows all storage of "
-"cache data to be stored in a centralised Redis deployment which all "
-"Infinispan clients access."
-msgstr ""
-"これにより、すべてのキャッシュデータの保存は、すべてのInfinispanクライアントがアクセスできるRedisの集中管理された展開に保存されるようになりました。"
+msgid "A new cache store for storage of cache data within the Redis key/value server has been introduced with Infinispan 8. This allows all storage of cache data to be stored in a centralised Redis deployment which all Infinispan clients access."
+msgstr "これにより、すべてのキャッシュデータの保存は、すべてのInfinispanクライアントがアクセスできるRedisの集中管理された展開に保存されるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:24
 #, fuzzy
-msgid ""
-"The cache store supports 3 Redis deployment topologies. They are, single "
-"server, Sentinel and cluster (Redis v3 required). Redis versions 2.8+ and 3."
-"0+ are currently supported."
-msgstr ""
-"キャッシュストアは、3つのRedis導入トポロジをサポートしています。それは、シングルサーバ、Sentinel、クラスタ（Redis "
-"v3が必要）です。Redis バージョン 2.8+ と 3.0+ が現在サポートされています。"
+msgid "The cache store supports 3 Redis deployment topologies. They are, single server, Sentinel and cluster (Redis v3 required). Redis versions 2.8+ and 3.0+ are currently supported."
+msgstr "キャッシュストアは、3つのRedis導入トポロジをサポートしています。それは、シングルサーバ、Sentinel、クラスタ（Redis v3が必要）です。Redis バージョン 2.8+ と 3.0+ が現在サポートされています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:29
 #, fuzzy
-msgid ""
-"Data expiration and purging is handled via Redis itself, reducing workload "
-"from Infinispan servers to manually delete cache entries."
-msgstr ""
-"データの有効期限切れとパージは Redis 自体を介して処理され、Infinispan "
-"サーバーから手動でキャッシュエントリを削除するための作業負荷が軽減されます。"
+msgid "Data expiration and purging is handled via Redis itself, reducing workload from Infinispan servers to manually delete cache entries."
+msgstr "データの有効期限切れとパージは Redis 自体を介して処理され、Infinispan サーバーから手動でキャッシュエントリを削除するための作業負荷が軽減されます。"
 
 #. type: Title ==
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:32
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "*Topologies*"
 msgstr "*トポロジー*"
 
 #. type: Title ===
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:34
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "*Single Server*"
 msgstr "*シングルサーバー*"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:41
 #, fuzzy
-msgid ""
-"In a single server deployment, the cache store is given the location of a "
-"Redis master server with which it connects to directly to handle all data "
-"storage. Using this topology, Redis has no fault tolerance unless a custom "
-"solution is built on top of Redis. To declare a single server local cache "
-"store:"
-msgstr ""
-"単一サーバーの展開では、キャッシュストアは、すべてのデータストレージを処理するために直接接続するRedisマスターサーバーの場所を与えられます。このトポロジーを使用すると、Redisの上にカスタムソリューションを構築しない限り、Redisはフォールトトレランスを持ちません。単一サーバーのローカルキャッシュストアを宣言するには、以下のようにします。"
+msgid "In a single server deployment, the cache store is given the location of a Redis master server with which it connects to directly to handle all data storage. Using this topology, Redis has no fault tolerance unless a custom solution is built on top of Redis. To declare a single server local cache store:"
+msgstr "単一サーバーの展開では、キャッシュストアは、すべてのデータストレージを処理するために直接接続するRedisマスターサーバーの場所を与えられます。このトポロジーを使用すると、Redisの上にカスタムソリューションを構築しない限り、Redisはフォールトトレランスを持ちません。単一サーバーのローカルキャッシュストアを宣言するには、以下のようにします。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:47
@@ -149,12 +125,8 @@ msgstr "xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\""
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:278
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:340
 #, fuzzy
-msgid ""
-"    xsi:schemaLocation=\"urn:infinispan:config:8.0 http://www.infinispan.org/"
-"schemas/infinispan-config-8.0.xsd"
-msgstr ""
-"xsi:schemaLocation=\"urn:infinispan:config:8.0 http://www.infinispan.org/"
-"schemas/infinispan-config-8.0.xsd"
+msgid "    xsi:schemaLocation=\"urn:infinispan:config:8.0 http://www.infinispan.org/schemas/infinispan-config-8.0.xsd"
+msgstr "xsi:schemaLocation=\"urn:infinispan:config:8.0 http://www.infinispan.org/schemas/infinispan-config-8.0.xsd"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:57
@@ -163,12 +135,8 @@ msgstr ""
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:281
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:343
 #, fuzzy
-msgid ""
-"                          urn:infinispan:config:store:redis:8.0 http://www."
-"infinispan.org/schemas/infinispan-cachestore-redis-config-8.0.xsd\""
-msgstr ""
-"urn:infinispan:config:store:redis:8.0 http://www.infinispan.org/schemas/"
-"infinispan-cachestore-redis-config-8.0.xsd"
+msgid "                          urn:infinispan:config:store:redis:8.0 http://www.infinispan.org/schemas/infinispan-cachestore-redis-config-8.0.xsd\""
+msgstr "urn:infinispan:config:store:redis:8.0 http://www.infinispan.org/schemas/infinispan-cachestore-redis-config-8.0.xsd"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:59
@@ -227,16 +195,13 @@ msgstr "<persistence passivation=\"false\">"
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:296
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:358
 #, fuzzy
-msgid ""
-"                <redis-store xmlns=\"urn:infinispan:config:store:redis:8.0\""
+msgid "                <redis-store xmlns=\"urn:infinispan:config:store:redis:8.0\""
 msgstr "<redis-store xmlns=\"urn:infinispan:config:store:redis:8.0\""
 
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:75
 #, fuzzy
-msgid ""
-"                    topology=\"server\" socket-timeout=\"10000\" connection-"
-"timeout=\"10000\">"
+msgid "                    topology=\"server\" socket-timeout=\"10000\" connection-timeout=\"10000\">"
 msgstr "topology=\"server\" socket-timeout=\"10000\" connection-timeout=\"10000\">"
 
 #. type: Plain text
@@ -252,13 +217,8 @@ msgstr "<redis-server host=\"server1\" />。"
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:309
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:371
 #, fuzzy
-msgid ""
-"                    <connection-pool min-idle=\"6\" max-idle=\"10\" max-"
-"total=\"20\" min-evictable-idle-time=\"30000\" time-between-eviction-runs="
-"\"30000\" />"
-msgstr ""
-"<connection-pool min-idle=\"6\" max-idle=\"10\" max-total=\"20\" min-"
-"evictable-idle-time=\"30000\" time-between-eviction-run=\"30000\" />"
+msgid "                    <connection-pool min-idle=\"6\" max-idle=\"10\" max-total=\"20\" min-evictable-idle-time=\"30000\" time-between-eviction-runs=\"30000\" />"
+msgstr "<connection-pool min-idle=\"6\" max-idle=\"10\" max-total=\"20\" min-evictable-idle-time=\"30000\" time-between-eviction-run=\"30000\" />"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:83
@@ -313,52 +273,26 @@ msgstr "</infinispan>。"
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:104
 #, fuzzy
-msgid ""
-"Note the topology attribute is declared as *server*. This is needed to "
-"ensure a single server Redis topology is applied by the cache store.  Only a "
-"single Redis server need be declared (only the first server will be used if "
-"multiple servers are declared) and the port will default to the Redis port "
-"6379, but can be overridden using the port attribute. All connections are "
-"handled via a connection pool, which can optionally also test the validity "
-"of a connection on creation, lease, return from and when idling in the "
-"connection the pool."
-msgstr ""
-"トポロジー属性が *server* と宣言されていることに注意してください。これはキャッシュストアが単一サーバの Redis "
-"トポロジーを確実に適用するために必要です。単一の Redis サーバのみを宣言する必要があります "
-"(複数のサーバが宣言されている場合は最初のサーバのみが使用されます)。ポートは Redis ポート 6379 がデフォルトですが、port "
-"属性を使用して上書きすることができます。すべての接続は接続プールを介して処理されます。これは、オプションで接続プールの作成、リース、接続からの復帰、および接続のアイドリング時に接続の有効性をテストすることもできます。"
+msgid "Note the topology attribute is declared as *server*. This is needed to ensure a single server Redis topology is applied by the cache store.  Only a single Redis server need be declared (only the first server will be used if multiple servers are declared) and the port will default to the Redis port 6379, but can be overridden using the port attribute. All connections are handled via a connection pool, which can optionally also test the validity of a connection on creation, lease, return from and when idling in the connection the pool."
+msgstr "トポロジー属性が *server* と宣言されていることに注意してください。これはキャッシュストアが単一サーバの Redis トポロジーを確実に適用するために必要です。単一の Redis サーバのみを宣言する必要があります (複数のサーバが宣言されている場合は最初のサーバのみが使用されます)。ポートは Redis ポート 6379 がデフォルトですが、port 属性を使用して上書きすることができます。すべての接続は接続プールを介して処理されます。これは、オプションで接続プールの作成、リース、接続からの復帰、および接続のアイドリング時に接続の有効性をテストすることもできます。"
 
 #. type: Title ===
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:105
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "*Sentinel*"
 msgstr "*センチネル*"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:113
 #, fuzzy
-msgid ""
-"The Sentinel topology relies on Redis Sentinel servers to connect to a Redis "
-"master server. Here, Infinispan connects to Redis Sentinel servers, "
-"requesting a master server name, then gets forwarded on to the correct "
-"location of the Redis master server. This topology gives resilience via "
-"Redis Sentinel, providing failure detection and automatic failover of Redis "
-"servers."
-msgstr ""
-"Sentinel トポロジーは、Redis マスターサーバに接続するために、Redis Sentinel "
-"サーバに依存します。ここでは、InfinispanはRedis "
-"Sentinelサーバに接続し、マスターサーバ名を要求し、Redisマスターサーバの正しい場所に転送されます。このトポロジーは、Redis "
-"Sentinel を通じて回復力を与え、障害検出と Redis サーバの自動フェイルオーバーを提供します。"
+msgid "The Sentinel topology relies on Redis Sentinel servers to connect to a Redis master server. Here, Infinispan connects to Redis Sentinel servers, requesting a master server name, then gets forwarded on to the correct location of the Redis master server. This topology gives resilience via Redis Sentinel, providing failure detection and automatic failover of Redis servers."
+msgstr "Sentinel トポロジーは、Redis マスターサーバに接続するために、Redis Sentinel サーバに依存します。ここでは、InfinispanはRedis Sentinelサーバに接続し、マスターサーバ名を要求し、Redisマスターサーバの正しい場所に転送されます。このトポロジーは、Redis Sentinel を通じて回復力を与え、障害検出と Redis サーバの自動フェイルオーバーを提供します。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:147
 #, fuzzy
-msgid ""
-"                    topology=\"sentinel\" master-name=\"mymaster\" socket-"
-"timeout=\"10000\" connection-timeout=\"10000\">"
-msgstr ""
-"topology=\"sentinel\" master-name=\"mymaster\" socket-timeout=\"10000\" "
-"connection-timeout=\"10000\">"
+msgid "                    topology=\"sentinel\" master-name=\"mymaster\" socket-timeout=\"10000\" connection-timeout=\"10000\">"
+msgstr "topology=\"sentinel\" master-name=\"mymaster\" socket-timeout=\"10000\" connection-timeout=\"10000\">"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:149
@@ -387,48 +321,25 @@ msgstr "<sentinel-server host=\"server3\" />"
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:182
 #, fuzzy
-msgid ""
-"For a Sentinel deployment, the topology attribute changes to *sentinel*.  A "
-"master name must also be specified to select the correct Redis master "
-"required as Sentinel can monitor multiple Redis master servers. The Sentinel "
-"server is declared using a sentinel-server XML tag, which you’ll notice is "
-"different to the main Redis servers used in single server and cluster "
-"topologies. This is to allow defaulting of the Sentinel port to 26379 if not "
-"declared. At least one Sentinel server must be declared, though if you run "
-"more Sentinel servers, they should all be declared too for the benefit of "
-"failure detection of the Sentinel servers themselves."
-msgstr ""
-"Sentinelの展開では、トポロジー属性が *sentinel* に変更されます。Sentinel は複数の Redis "
-"マスターサーバを監視できるので、必要な正しい Redis マスターを選択するために、マスター名も指定する必要があります。Sentinel サーバは "
-"sentinel-server XML タグを使用して宣言されます。これは、宣言されていない場合、Sentinel のポートを 26379 "
-"にデフォルト設定できるようにするためです。少なくとも一つのSentinelサーバは宣言されなければなりませんが、もしSentinelサーバをより多く実行しているのであれば、Sentinelサーバ自体の障害検出の利益のために、すべてのSentinelサーバも宣言されるべきです。"
+msgid "For a Sentinel deployment, the topology attribute changes to *sentinel*.  A master name must also be specified to select the correct Redis master required as Sentinel can monitor multiple Redis master servers. The Sentinel server is declared using a sentinel-server XML tag, which you’ll notice is different to the main Redis servers used in single server and cluster topologies. This is to allow defaulting of the Sentinel port to 26379 if not declared. At least one Sentinel server must be declared, though if you run more Sentinel servers, they should all be declared too for the benefit of failure detection of the Sentinel servers themselves."
+msgstr "Sentinelの展開では、トポロジー属性が *sentinel* に変更されます。Sentinel は複数の Redis マスターサーバを監視できるので、必要な正しい Redis マスターを選択するために、マスター名も指定する必要があります。Sentinel サーバは sentinel-server XML タグを使用して宣言されます。これは、宣言されていない場合、Sentinel のポートを 26379 にデフォルト設定できるようにするためです。少なくとも一つのSentinelサーバは宣言されなければなりませんが、もしSentinelサーバをより多く実行しているのであれば、Sentinelサーバ自体の障害検出の利益のために、すべてのSentinelサーバも宣言されるべきです。"
 
 #. type: Title ===
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:183
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "*Cluster*"
 msgstr "*クラスター*"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:190
 #, fuzzy
-msgid ""
-"A cluster topology gives Infinispan the ability to connect to a Redis "
-"cluster. One or more cluster nodes are declared to infinispan (the more the "
-"better) which are then used to store all data. Redis cluster supports "
-"failure detection so if a master node in the cluster fails, a slave takes "
-"over. Redis v3 is required to run a Redis cluster."
-msgstr ""
-"クラスタトポロジーにより、Infinispan は Redis "
-"クラスタに接続することができます。1つまたは複数のクラスタノードがInfinispanに宣言され（多ければ多いほど良い）、すべてのデータを保存するために使用されます。Redisクラスタは障害検出をサポートしているので、クラスタ内のマスターノードに障害が発生した場合、スレーブが引き継ぐことができます。Redis "
-"クラスタを実行するには Redis v3 が必要です。"
+msgid "A cluster topology gives Infinispan the ability to connect to a Redis cluster. One or more cluster nodes are declared to infinispan (the more the better) which are then used to store all data. Redis cluster supports failure detection so if a master node in the cluster fails, a slave takes over. Redis v3 is required to run a Redis cluster."
+msgstr "クラスタトポロジーにより、Infinispan は Redis クラスタに接続することができます。1つまたは複数のクラスタノードがInfinispanに宣言され（多ければ多いほど良い）、すべてのデータを保存するために使用されます。Redisクラスタは障害検出をサポートしているので、クラスタ内のマスターノードに障害が発生した場合、スレーブが引き継ぐことができます。Redis クラスタを実行するには Redis v3 が必要です。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:224
 #, fuzzy
-msgid ""
-"                    topology=\"cluster\" socket-timeout=\"10000\" connection-"
-"timeout=\"10000\">"
+msgid "                    topology=\"cluster\" socket-timeout=\"10000\" connection-timeout=\"10000\">"
 msgstr "topology=\"cluster\" socket-timeout=\"10000\" connection-timeout=\"10000\">"
 
 #. type: Plain text
@@ -452,98 +363,59 @@ msgstr "<redis-server host=\"server3\" port=\"6379\" />"
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:253
 #, fuzzy
-msgid ""
-"For cluster deployments, the topology attribute must change to *cluster.* "
-"One or more Redis cluster nodes must be declared to access the cluster which "
-"uses the redis-server XML tag. Note that when operating a cluster, database "
-"IDs are not supported."
-msgstr ""
-"クラスタ展開の場合、topology 属性を *cluster* に変更する必要があります。redis-server "
-"XMLタグを使用するクラスタにアクセスするには、1つ以上のRedisクラスタノードを宣言する必要があります。クラスタを運用する場合、データベース ID "
-"はサポートされていないことに注意してください。"
+msgid "For cluster deployments, the topology attribute must change to *cluster.* One or more Redis cluster nodes must be declared to access the cluster which uses the redis-server XML tag. Note that when operating a cluster, database IDs are not supported."
+msgstr "クラスタ展開の場合、topology 属性を *cluster* に変更する必要があります。redis-server XMLタグを使用するクラスタにアクセスするには、1つ以上のRedisクラスタノードを宣言する必要があります。クラスタを運用する場合、データベース ID はサポートされていないことに注意してください。"
 
 #. type: Title ==
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:256
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "*Multiple Cache Stores, Single Redis Deployment*"
 msgstr "*複数のキャッシュストア、単一のRedis導入*"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:265
 #, fuzzy
-msgid ""
-"Redis single server and Sentinel deployments support the option of database "
-"IDs. A database ID allows a single Redis server to host multiple individual "
-"databases, referenced via an integer ID number. This allows Infinispan to "
-"support multiple cache stores on the same Redis deployment, isolating the "
-"data between the stores. Redis cluster does not support the database ID. A "
-"database ID is defined using the database attribute on the redis-store XML "
-"tag."
-msgstr ""
-"RedisシングルサーバとSentinelデプロイメントは、データベースIDのオプションをサポートしています。データベース ID は、単一の Redis "
-"サーバが複数の個別のデータベースをホストすることを可能にし、整数の ID 番号を介して参照します。これにより、Infinispan は同じ Redis "
-"配置で複数のキャッシュストアをサポートし、ストア間のデータを分離することができます。RedisクラスタはデータベースIDをサポートしていません。データベースIDは、redis-"
-"store XMLタグのdatabase属性を使用して定義されます。"
+msgid "Redis single server and Sentinel deployments support the option of database IDs. A database ID allows a single Redis server to host multiple individual databases, referenced via an integer ID number. This allows Infinispan to support multiple cache stores on the same Redis deployment, isolating the data between the stores. Redis cluster does not support the database ID. A database ID is defined using the database attribute on the redis-store XML tag."
+msgstr "RedisシングルサーバとSentinelデプロイメントは、データベースIDのオプションをサポートしています。データベース ID は、単一の Redis サーバが複数の個別のデータベースをホストすることを可能にし、整数の ID 番号を介して参照します。これにより、Infinispan は同じ Redis 配置で複数のキャッシュストアをサポートし、ストア間のデータを分離することができます。RedisクラスタはデータベースIDをサポートしていません。データベースIDは、redis-store XMLタグのdatabase属性を使用して定義されます。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:299
 #, fuzzy
-msgid ""
-"                    topology=\"sentinel\" master-name=\"mymaster\" socket-"
-"timeout=\"10000\" connection-timeout=\"10000\" database=\"5\">"
-msgstr ""
-"topology=\"sentinel\" master-name=\"mymaster\" socket-timeout=\"10000\" "
-"connection-timeout=\"10000\" database=\"5\">"
+msgid "                    topology=\"sentinel\" master-name=\"mymaster\" socket-timeout=\"10000\" connection-timeout=\"10000\" database=\"5\">"
+msgstr "topology=\"sentinel\" master-name=\"mymaster\" socket-timeout=\"10000\" connection-timeout=\"10000\" database=\"5\">"
 
 #. type: Title ==
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:321
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "*Redis Password Authentication*"
 msgstr "*Redisパスワード認証*"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:327
 #, fuzzy
-msgid ""
-"In order to secure access to a Redis server, a password can optionally be "
-"used in Redis. This then requires the cache store to declare the password "
-"when connecting. The password is added via a password attribute on the redis-"
-"store XML tag."
-msgstr ""
-"Redis サーバへのアクセスを安全にするために、Redis "
-"でパスワードをオプションで使用することができます。これにより、キャッシュストアは接続時にパスワードを宣言する必要があります。パスワードは、redis-"
-"store XML タグの password 属性を介して追加されます。"
+msgid "In order to secure access to a Redis server, a password can optionally be used in Redis. This then requires the cache store to declare the password when connecting. The password is added via a password attribute on the redis-store XML tag."
+msgstr "Redis サーバへのアクセスを安全にするために、Redis でパスワードをオプションで使用することができます。これにより、キャッシュストアは接続時にパスワードを宣言する必要があります。パスワードは、redis-store XML タグの password 属性を介して追加されます。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:361
 #, fuzzy
-msgid ""
-"                    topology=\"sentinel\" master-name=\"mymaster\" socket-"
-"timeout=\"10000\" connection-timeout=\"10000\" password=\"mysecret\">"
-msgstr ""
-"topology=\"sentinel\" master-name=\"mymaster\" socket-timeout=\"10000\" "
-"connection-timeout=\"10000\" password=\"mysecret\">."
+msgid "                    topology=\"sentinel\" master-name=\"mymaster\" socket-timeout=\"10000\" connection-timeout=\"10000\" password=\"mysecret\">"
+msgstr "topology=\"sentinel\" master-name=\"mymaster\" socket-timeout=\"10000\" connection-timeout=\"10000\" password=\"mysecret\">."
 
 #. type: Title ==
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:383
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "*What about SSL support?*"
 msgstr "*SSL対応は？*"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:389
 #, fuzzy
-msgid ""
-"Redis does not provide protocol encryption, instead leaving this to other "
-"specialist software. At this time, the Redis client used to integrate "
-"Infinispan with Redis servers (Jedis) does not yet support SSL connection "
-"negotiation natively."
-msgstr ""
-"Redisはプロトコルの暗号化を提供しておらず、その代わりに他の専門家のソフトウェアに任せています。現時点では、Infinispan を Redis "
-"サーバ (Jedis) と統合するために使用される Redis クライアントは、SSL 接続ネゴシエーションをネイティブにサポートしていません。"
+msgid "Redis does not provide protocol encryption, instead leaving this to other specialist software. At this time, the Redis client used to integrate Infinispan with Redis servers (Jedis) does not yet support SSL connection negotiation natively."
+msgstr "Redisはプロトコルの暗号化を提供しておらず、その代わりに他の専門家のソフトウェアに任せています。現時点では、Infinispan を Redis サーバ (Jedis) と統合するために使用される Redis クライアントは、SSL 接続ネゴシエーションをネイティブにサポートしていません。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-14-new-redis-cache-store-introduced-in.adoc:390
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "**\n"
 msgstr "**"

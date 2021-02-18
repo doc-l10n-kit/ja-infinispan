@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-04-24-gsoc-and-infinispan.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-04-24-gsoc-and-infinispan.adoc:11
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: GSoC and Infinispan\n"
@@ -32,12 +32,9 @@ msgid ""
 "date: '2012-04-24T04:43:00.000-07:00'\n"
 "author: mmarkus\n"
 "tags: [ \" hotrod\", \"gsoc\" ]\n"
-"thumbnail: http://4.bp.blogspot.com/-1C6R_2PP8fk/UCRNXx3BLyI/AAAAAAAAJ8w/"
-"1IYMv5JL2Zk/s72-c/GSoC2012_300x200.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3252445073725226035\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/04/gsoc-and-infinispan."
-"html\n"
+"thumbnail: http://4.bp.blogspot.com/-1C6R_2PP8fk/UCRNXx3BLyI/AAAAAAAAJ8w/1IYMv5JL2Zk/s72-c/GSoC2012_300x200.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3252445073725226035\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/04/gsoc-and-infinispan.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -46,45 +43,26 @@ msgstr ""
 "date: '2012-04-24T04:43:00.000-07:00'\n"
 "author: mmarkus\n"
 "tags: [ \" hotrod\", \"gsoc\" ]\n"
-"thumbnail: http://4.bp.blogspot.com/-1C6R_2PP8fk/UCRNXx3BLyI/AAAAAAAAJ8w/"
-"1IYMv5JL2Zk/s72-c/GSoC2012_300x200.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3252445073725226035\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/04/gsoc-and-infinispan."
-"html\n"
+"thumbnail: http://4.bp.blogspot.com/-1C6R_2PP8fk/UCRNXx3BLyI/AAAAAAAAJ8w/1IYMv5JL2Zk/s72-c/GSoC2012_300x200.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3252445073725226035\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/04/gsoc-and-infinispan.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-04-24-gsoc-and-infinispan.adoc:13
 #, fuzzy
-msgid ""
-"http://4.bp.blogspot.com/-1C6R_2PP8fk/UCRNXx3BLyI/AAAAAAAAJ8w/1IYMv5JL2Zk/"
-"s1600/GSoC2012_300x200.png[image:http://4.bp.blogspot.com/-1C6R_2PP8fk/"
-"UCRNXx3BLyI/AAAAAAAAJ8w/1IYMv5JL2Zk/s200/GSoC2012_300x200.png[image,width="
-"200,height=133]]"
-msgstr ""
-"link:http://4.bp.blogspot.com/-1C6R_2PP8fk/UCRNXx3BLyI/AAAAAAAAJ8w/"
-"1IYMv5JL2Zk/s1600/GSoC2012_300x200.png[]"
+msgid "http://4.bp.blogspot.com/-1C6R_2PP8fk/UCRNXx3BLyI/AAAAAAAAJ8w/1IYMv5JL2Zk/s1600/GSoC2012_300x200.png[image:http://4.bp.blogspot.com/-1C6R_2PP8fk/UCRNXx3BLyI/AAAAAAAAJ8w/1IYMv5JL2Zk/s200/GSoC2012_300x200.png[image,width=200,height=133]]"
+msgstr "link:http://4.bp.blogspot.com/-1C6R_2PP8fk/UCRNXx3BLyI/AAAAAAAAJ8w/1IYMv5JL2Zk/s1600/GSoC2012_300x200.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2012-04-24-gsoc-and-infinispan.adoc:20
 #, fuzzy
-msgid ""
-"I am delighted to announce that one of our submissions for http://code."
-"google.com/soc/[GSoC] was accepted! http://www.twitter.com/sunimalr[Sunimal "
-"Rathnayake] will join the infinispan team for implementing a https://docs."
-"jboss.org/author/display/ISPN/Hot+Rod+Protocol[HotRod] client in C#. This "
-"would allow Infinispan clusters to be consumed by"
-msgstr ""
-"私たちの link:http://code.google.com/soc/[GSoC] "
-"への提出物の1つが受理されたことを発表できることを嬉しく思います！ link:http://www.twitter.com/"
-"sunimalr[Sunimal Rathnayake] はC#で link:https://docs.jboss.org/author/display/"
-"ISPN/Hot+Rod+Protocol[HotRod] クライアントを実装するためにinfinispanチームに参加することに link:http:/"
-"/www.twitter.com/sunimalr[なり] ました。これにより、Infinispanクラスタが"
+msgid "I am delighted to announce that one of our submissions for http://code.google.com/soc/[GSoC] was accepted! http://www.twitter.com/sunimalr[Sunimal Rathnayake] will join the infinispan team for implementing a https://docs.jboss.org/author/display/ISPN/Hot+Rod+Protocol[HotRod] client in C#. This would allow Infinispan clusters to be consumed by"
+msgstr "私たちの link:http://code.google.com/soc/[GSoC] への提出物の1つが受理されたことを発表できることを嬉しく思います！ link:http://www.twitter.com/sunimalr[Sunimal Rathnayake] はC#で link:https://docs.jboss.org/author/display/ISPN/Hot+Rod+Protocol[HotRod] クライアントを実装するためにinfinispanチームに参加することに link:http://www.twitter.com/sunimalr[なり] ました。これにより、Infinispanクラスタが"
 
 #. type: Block title
 #: upstream/_posts/2012-04-24-gsoc-and-infinispan.adoc:20
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "NET clients which something we've planned adding for a long time."
 msgstr ".NETクライアントは、長い間追加することを計画していました。"
 

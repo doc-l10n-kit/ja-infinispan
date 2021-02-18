@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:13
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Lower memory overhead in Infinispan 5.3.0.Final\n"
@@ -35,10 +35,8 @@ msgid ""
 "\"memory\",\n"
 "\"performance\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"4922983360989592166\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/07/lower-memory-overhead-"
-"in-infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4922983360989592166\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/07/lower-memory-overhead-in-infinispan.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -50,75 +48,39 @@ msgstr ""
 "\"memory\",\n"
 "\"performance\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"4922983360989592166\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/07/lower-memory-overhead-"
-"in-infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4922983360989592166\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/07/lower-memory-overhead-in-infinispan.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:21
 #, fuzzy
-msgid ""
-"Infinispan users worried about memory consumption should upgrade to http://"
-"infinispan.blogspot.cz/2013/06/infinispan-530final-is-out.html[Infinispan 5."
-"3.0.Final] as soon as possible, because as part of the work we've done to "
-"https://docs.jboss.org/author/x/2oD2Aw[support storing byte arrays without "
-"wrappers], and the development of the http://infinispan.blogspot.co.uk/2013/"
-"05/interoperability-between-embedded-and.html[interoperability mode], we've "
-"been working to reduce Infinispan's memory overhead."
-msgstr ""
-"メモリ消費を心配するInfinispanユーザーは、 link:https://docs.jboss.org/author/x/"
-"2oD2Aw[ラッパーなしでバイト配列を格納することをサポートする] ための作業や、 link:http://infinispan.blogspot."
-"co.uk/2013/05/interoperability-between-embedded-and.html[相互運用モードの] "
-"開発の一環として、Infinispanのメモリオーバーヘッドを削減するための作業を行ってきたため、できるだけ早くInfinispan link:http:"
-"//infinispan.blogspot.cz/2013/06/infinispan-530final-is-out.html[5.3.0."
-"Final] にアップグレードする必要があります。"
+msgid "Infinispan users worried about memory consumption should upgrade to http://infinispan.blogspot.cz/2013/06/infinispan-530final-is-out.html[Infinispan 5.3.0.Final] as soon as possible, because as part of the work we've done to https://docs.jboss.org/author/x/2oD2Aw[support storing byte arrays without wrappers], and the development of the http://infinispan.blogspot.co.uk/2013/05/interoperability-between-embedded-and.html[interoperability mode], we've been working to reduce Infinispan's memory overhead."
+msgstr "メモリ消費を心配するInfinispanユーザーは、 link:https://docs.jboss.org/author/x/2oD2Aw[ラッパーなしでバイト配列を格納することをサポートする] ための作業や、 link:http://infinispan.blogspot.co.uk/2013/05/interoperability-between-embedded-and.html[相互運用モードの] 開発の一環として、Infinispanのメモリオーバーヘッドを削減するための作業を行ってきたため、できるだけ早くInfinispan link:http://infinispan.blogspot.cz/2013/06/infinispan-530final-is-out.html[5.3.0.Final] にアップグレードする必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:26
 #, fuzzy
-msgid ""
-"To measure overhead, we've used http://infinispan.blogspot.cz/2013/01/"
-"infinispan-memory-overhead.html[Martin Gencur's excellent memory consumption "
-"tests]. The results for entries with 512 bytes are:"
-msgstr ""
-"オーバーヘッドを測定するために、 link:http://infinispan.blogspot.cz/2013/01/infinispan-"
-"memory-overhead.html[Martin Gencurの優れたメモリ消費テストを] "
-"使用しました。512バイトのエントリについての結果です。"
+msgid "To measure overhead, we've used http://infinispan.blogspot.cz/2013/01/infinispan-memory-overhead.html[Martin Gencur's excellent memory consumption tests]. The results for entries with 512 bytes are:"
+msgstr "オーバーヘッドを測定するために、 link:http://infinispan.blogspot.cz/2013/01/infinispan-memory-overhead.html[Martin Gencurの優れたメモリ消費テストを] 使用しました。512バイトのエントリについての結果です。"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:31
 #, fuzzy
-msgid ""
-"Infinispan memory overhead, used in library mode: Infinispan 5.2.0.Final: "
-"~151 bytes Infinispan 5.3.0.Final: ~135 bytes Memory consumption reduction: "
-"~12%"
-msgstr ""
-"Infinispanのメモリオーバーヘッド、ライブラリモードで使用。Infinispan 5.2.0.Final.~151 バイト Infinispan "
-"5.3.0.Final.~135 バイト メモリ消費量の削減。~12%"
+msgid "Infinispan memory overhead, used in library mode: Infinispan 5.2.0.Final: ~151 bytes Infinispan 5.3.0.Final: ~135 bytes Memory consumption reduction: ~12%"
+msgstr "Infinispanのメモリオーバーヘッド、ライブラリモードで使用。Infinispan 5.2.0.Final.~151 バイト Infinispan 5.3.0.Final.~135 バイト メモリ消費量の削減。~12%"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:36
 #, fuzzy
-msgid ""
-"Infinispan memory overhead, for the Hot Rod server: Infinispan 5.2.0.Final: "
-"~174 bytes Infinispan 5.3.0.Final: ~151 bytes Memory consumption reduction: "
-"~15%"
-msgstr ""
-"Infinispanのメモリオーバーヘッド、Hot Rodサーバー用。Infinispan 5.2.0.Final.~174 バイト "
-"Infinispan 5.3.0.Final.~151 バイト メモリ消費量の削減。~15%"
+msgid "Infinispan memory overhead, for the Hot Rod server: Infinispan 5.2.0.Final: ~174 bytes Infinispan 5.3.0.Final: ~151 bytes Memory consumption reduction: ~15%"
+msgstr "Infinispanのメモリオーバーヘッド、Hot Rodサーバー用。Infinispan 5.2.0.Final.~174 バイト Infinispan 5.3.0.Final.~151 バイト メモリ消費量の削減。~15%"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:43
 #, fuzzy
-msgid ""
-"Infinispan memory overhead, for the REST server: Infinispan 5.2.0.Final: "
-"~208 bytes Infinispan 5.3.0.Final: ~172 bytes Memory consumption reduction: "
-"~21%"
-msgstr ""
-"Infinispanのメモリオーバーヘッド、RESTサーバー用。Infinispan 5.2.0.Final.~208 バイト Infinispan 5."
-"3.0.Final.~172 バイト メモリ消費量の削減。~21%"
+msgid "Infinispan memory overhead, for the REST server: Infinispan 5.2.0.Final: ~208 bytes Infinispan 5.3.0.Final: ~172 bytes Memory consumption reduction: ~21%"
+msgstr "Infinispanのメモリオーバーヘッド、RESTサーバー用。Infinispan 5.2.0.Final.~208 バイト Infinispan 5.3.0.Final.~172 バイト メモリ消費量の削減。~21%"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:47
@@ -141,12 +103,8 @@ msgstr "Infinispan 5.3.0.Final。~180バイト メモリ消費量の削減。~2%
 #. type: Plain text
 #: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:58
 #, fuzzy
-msgid ""
-"This is great news for the Infinispan community but our effort doesn't end "
-"here. We'll be working on further improvements in next releases to bring "
-"down cost even further."
-msgstr ""
-"これはInfinispanコミュニティにとって素晴らしいニュースですが、私たちの努力はこれで終わりではありません。次のリリースでは、さらにコストを下げるために、さらなる改善に取り組んでいきます。"
+msgid "This is great news for the Infinispan community but our effort doesn't end here. We'll be working on further improvements in next releases to bring down cost even further."
+msgstr "これはInfinispanコミュニティにとって素晴らしいニュースですが、私たちの努力はこれで終わりではありません。次のリリースでは、さらにコストを下げるために、さらなる改善に取り組んでいきます。"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-02-lower-memory-overhead-in-infinispan.adoc:61

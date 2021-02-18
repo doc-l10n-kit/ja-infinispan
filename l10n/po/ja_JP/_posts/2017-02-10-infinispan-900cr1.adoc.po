@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-02-10-infinispan-900cr1.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-10-infinispan-900cr1.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.0.0.CR1\n"
@@ -32,8 +32,7 @@ msgid ""
 "date: '2017-02-10T12:28:00.002-08:00'\n"
 "author: ttarrant\n"
 "tags: [ \"release\", \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"315882200584722469\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-315882200584722469\n"
 "blogger_orig_url: https://blog.infinispan.org/2017/02/infinispan-900cr1.html\n"
 "---\n"
 msgstr ""
@@ -43,28 +42,15 @@ msgstr ""
 "date: '2017-02-10T12:28:00.002-08:00'\n"
 "author: ttarrant\n"
 "tags: [ \"release\", \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"315882200584722469\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-315882200584722469\n"
 "blogger_orig_url: https://blog.infinispan.org/2017/02/infinispan-900cr1.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-10-infinispan-900cr1.adoc:19
 #, fuzzy
-msgid ""
-"Those busy hackers over in the Infinispan dungeon have brewed up a new "
-"release, and it is the first candidate on the road to the final 9.  "
-"Infinispan 9.0.0.CR1 (codenamed \"https://www.ruppaner-bodensee.de/die-"
-"brauerei/[Ruppaner]\") includes a number of fixes and component upgrades "
-"over the last Beta release. You can read all about these in the https://"
-"issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
-"12330027[fixed issues]"
-msgstr ""
-"Infinispanダンジョンで忙しいハッカー達が新しいリリースを作ってくれました。Infinispan 9.0.0.0.CR1 (コードネームは "
-"link:https://www.ruppaner-bodensee.de/die-brauerei/[\"Ruppaner] "
-"\"です)には、前回のベータ版からの多くの修正とコンポーネントのアップグレードが含まれています。これらについては、 link:https://"
-"issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
-"12330027[修正された問題集] ですべて読むことができます。"
+msgid "Those busy hackers over in the Infinispan dungeon have brewed up a new release, and it is the first candidate on the road to the final 9.  Infinispan 9.0.0.CR1 (codenamed \"https://www.ruppaner-bodensee.de/die-brauerei/[Ruppaner]\") includes a number of fixes and component upgrades over the last Beta release. You can read all about these in the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12330027[fixed issues]"
+msgstr "Infinispanダンジョンで忙しいハッカー達が新しいリリースを作ってくれました。Infinispan 9.0.0.0.CR1 (コードネームは link:https://www.ruppaner-bodensee.de/die-brauerei/[\"Ruppaner] \"です)には、前回のベータ版からの多くの修正とコンポーネントのアップグレードが含まれています。これらについては、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12330027[修正された問題集] ですべて読むことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-10-infinispan-900cr1.adoc:21
@@ -75,33 +61,14 @@ msgstr " "
 #. type: Plain text
 #: upstream/_posts/2017-02-10-infinispan-900cr1.adoc:27
 #, fuzzy
-msgid ""
-"We have also done a lot of work to restructure the http://infinispan.org/"
-"docs/dev/user_guide/user_guide.html[user guide], http://infinispan.org/docs/"
-"dev/upgrading/upgrading.html[upgrade guide] and http://infinispan.org/docs/"
-"dev/server_guide/server_guide.html[server admin guide] to make it easier to "
-"find the answers you need."
-msgstr ""
-"また、 link:http://infinispan.org/docs/dev/user_guide/user_guide.html[ユーザーガイド] "
-"、 link:http://infinispan.org/docs/dev/upgrading/upgrading.html[アップグレードガイド] 、 "
-"link:http://infinispan.org/docs/dev/server_guide/server_guide."
-"html[サーバー管理者ガイド] の再構築にも力を入れており、必要な回答を見つけやすくしています。"
+msgid "We have also done a lot of work to restructure the http://infinispan.org/docs/dev/user_guide/user_guide.html[user guide], http://infinispan.org/docs/dev/upgrading/upgrading.html[upgrade guide] and http://infinispan.org/docs/dev/server_guide/server_guide.html[server admin guide] to make it easier to find the answers you need."
+msgstr "また、 link:http://infinispan.org/docs/dev/user_guide/user_guide.html[ユーザーガイド] 、 link:http://infinispan.org/docs/dev/upgrading/upgrading.html[アップグレードガイド] 、 link:http://infinispan.org/docs/dev/server_guide/server_guide.html[サーバー管理者ガイド] の再構築にも力を入れており、必要な回答を見つけやすくしています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-10-infinispan-900cr1.adoc:35
 #, fuzzy
-msgid ""
-"So, please head over to the http://infinispan.org/download/[download page] "
-"and try it out. If you have an issue, please report it in our https://issues."
-"jboss.org/projects/ISPN/summary[bug tracker], ask us on the https://"
-"developer.jboss.org/en/infinispan/content[forum], or join us for a friendly "
-"chat on the #infinispan IRC channel on http://webchat.freenode.net/[Freenode."
-"]"
-msgstr ""
-"link:http://infinispan.org/download/[ダウンロードページ] にアクセスして試してみてください。もし問題があれば、 "
-"link:https://issues.jboss.org/projects/ISPN/summary[バグトラッカー] で報告するか、 link:"
-"https://developer.jboss.org/en/infinispan/content[フォーラム] で質問するか、 link:http://"
-"webchat.freenode.net/[Freenode] の#infinispan IRCチャンネルでフレンドリーなチャットに参加してください。"
+msgid "So, please head over to the http://infinispan.org/download/[download page] and try it out. If you have an issue, please report it in our https://issues.jboss.org/projects/ISPN/summary[bug tracker], ask us on the https://developer.jboss.org/en/infinispan/content[forum], or join us for a friendly chat on the #infinispan IRC channel on http://webchat.freenode.net/[Freenode.]"
+msgstr "link:http://infinispan.org/download/[ダウンロードページ] にアクセスして試してみてください。もし問題があれば、 link:https://issues.jboss.org/projects/ISPN/summary[バグトラッカー] で報告するか、 link:https://developer.jboss.org/en/infinispan/content[フォーラム] で質問するか、 link:http://webchat.freenode.net/[Freenode] の#infinispan IRCチャンネルでフレンドリーなチャットに参加してください。"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-10-infinispan-900cr1.adoc:37

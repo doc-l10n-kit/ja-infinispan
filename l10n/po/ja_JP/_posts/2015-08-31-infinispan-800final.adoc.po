@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:12
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 8.0.0.Final\n"
@@ -33,12 +33,9 @@ msgid ""
 "author: ttarrant\n"
 "tags: [ \"release\",\n"
 "]\n"
-"thumbnail: http://1.bp.blogspot.com/-Lpj9nKgBhfg/VUx71csPPWI/AAAAAAAAIBE/"
-"ny7hhnn8W2A/s72-c/infinispan8.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1469711468601727922\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/08/infinispan-800final."
-"html\n"
+"thumbnail: http://1.bp.blogspot.com/-Lpj9nKgBhfg/VUx71csPPWI/AAAAAAAAIBE/ny7hhnn8W2A/s72-c/infinispan8.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1469711468601727922\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/08/infinispan-800final.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -48,12 +45,9 @@ msgstr ""
 "author: ttarrant\n"
 "tags: [ \"release\",\n"
 "]\n"
-"thumbnail: http://1.bp.blogspot.com/-Lpj9nKgBhfg/VUx71csPPWI/AAAAAAAAIBE/"
-"ny7hhnn8W2A/s72-c/infinispan8.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1469711468601727922\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/08/infinispan-800final."
-"html\n"
+"thumbnail: http://1.bp.blogspot.com/-Lpj9nKgBhfg/VUx71csPPWI/AAAAAAAAIBE/ny7hhnn8W2A/s72-c/infinispan8.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1469711468601727922\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/08/infinispan-800final.html\n"
 "---\n"
 
 #. type: Plain text
@@ -65,22 +59,14 @@ msgstr "皆さんへ"
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:17
 #, fuzzy
-msgid ""
-"it is with the greatest pleasure that we announce the first stable release "
-"of Infinispan 8."
+msgid "it is with the greatest pleasure that we announce the first stable release of Infinispan 8."
 msgstr "Infinispan 8の最初の安定版リリースを発表できることを大変嬉しく思います。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:20
 #, fuzzy
-msgid ""
-"http://1.bp.blogspot.com/-Lpj9nKgBhfg/VUx71csPPWI/AAAAAAAAIBE/ny7hhnn8W2A/"
-"s1600/infinispan8.png[image:http://1.bp.blogspot.com/-Lpj9nKgBhfg/"
-"VUx71csPPWI/AAAAAAAAIBE/ny7hhnn8W2A/s320/infinispan8.png[image,width="
-"320,height=94]]"
-msgstr ""
-"link:http://1.bp.blogspot.com/-Lpj9nKgBhfg/VUx71csPPWI/AAAAAAAAIBE/"
-"ny7hhnn8W2A/s1600/infinispan8.png[]"
+msgid "http://1.bp.blogspot.com/-Lpj9nKgBhfg/VUx71csPPWI/AAAAAAAAIBE/ny7hhnn8W2A/s1600/infinispan8.png[image:http://1.bp.blogspot.com/-Lpj9nKgBhfg/VUx71csPPWI/AAAAAAAAIBE/ny7hhnn8W2A/s320/infinispan8.png[image,width=320,height=94]]"
+msgstr "link:http://1.bp.blogspot.com/-Lpj9nKgBhfg/VUx71csPPWI/AAAAAAAAIBE/ny7hhnn8W2A/s1600/infinispan8.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:23
@@ -91,9 +77,7 @@ msgstr "8」という数字は、2つの理由からインフィニスパンに�
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:26
 #, fuzzy
-msgid ""
-"it has been embedded in our logo, disguised as the infinity symbol, since "
-"the very beginning"
+msgid "it has been embedded in our logo, disguised as the infinity symbol, since the very beginning"
 msgstr "無限大のシンボルマークに偽装して、最初から私たちのロゴに組み込まれています。"
 
 #. type: Plain text
@@ -105,139 +89,85 @@ msgstr "InfinispanのコードベースがJava 8に移行したことを示し�
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:30
 #, fuzzy
-msgid ""
-"So without further ado, let's see what Infinispan 8 brings to the table:"
+msgid "So without further ado, let's see what Infinispan 8 brings to the table:"
 msgstr "というわけで、早速Infinispan 8が何をもたらしたのかを見てみましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:38
 #, fuzzy
-msgid ""
-"A new functional-style API for interacting with caches which takes advantage "
-"of all the language goodies introduced by Java 8, such as lambdas, Optional, "
-"CompletableFuture, etc. We have already http://blog.infinispan.org/2015/08/"
-"new-functional-map-api-in-infinispan-8.html[started] a blog series "
-"describing the API, and the reasoning behind it and we want your opinion too."
-""
-msgstr ""
-"lambdas、Optional、CompletableFutureなど、Java "
-"8で導入されたすべての言語の利点を活用した、キャッシュと対話するための新しい機能スタイルのAPIです。私たちはすでにAPIとその背後にある理由を説明するブログシリーズを "
-"link:http://blog.infinispan.org/2015/08/new-functional-map-api-in-infinispan-"
-"8.html[開始して] おり、あなたの意見も求めています。"
+msgid "A new functional-style API for interacting with caches which takes advantage of all the language goodies introduced by Java 8, such as lambdas, Optional, CompletableFuture, etc. We have already http://blog.infinispan.org/2015/08/new-functional-map-api-in-infinispan-8.html[started] a blog series describing the API, and the reasoning behind it and we want your opinion too."
+msgstr "lambdas、Optional、CompletableFutureなど、Java 8で導入されたすべての言語の利点を活用した、キャッシュと対話するための新しい機能スタイルのAPIです。私たちはすでにAPIとその背後にある理由を説明するブログシリーズを link:http://blog.infinispan.org/2015/08/new-functional-map-api-in-infinispan-8.html[開始して] おり、あなたの意見も求めています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:41
 #, fuzzy
-msgid ""
-"Support for the Java 8's Streams API which, in the context of Infinispan, "
-"becomes fully distributed: parallel streams become truly parallel !"
+msgid "Support for the Java 8's Streams API which, in the context of Infinispan, becomes fully distributed: parallel streams become truly parallel !"
 msgstr "Infinispanのコンテキストでは、完全に分散化されたJava 8のStreams APIをサポートしています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:44
 #, fuzzy
-msgid ""
-"Indexing and querying received a host of new features: Continuous querying, "
-"grouping and aggregation, simultaneous querying on both indexed and non-"
-"indexed fields."
-msgstr ""
-"インデックスとクエリには、多くの新機能が追加されました。継続的な問い合わせ、グループ化と集約、インデックス化されたフィールドとインデックス化されていないフィールドの両方での同時問い合わせ。"
+msgid "Indexing and querying received a host of new features: Continuous querying, grouping and aggregation, simultaneous querying on both indexed and non-indexed fields."
+msgstr "インデックスとクエリには、多くの新機能が追加されました。継続的な問い合わせ、グループ化と集約、インデックス化されたフィールドとインデックス化されていないフィールドの両方での同時問い合わせ。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:47
 #, fuzzy
-msgid ""
-"Expired entries now trigger events, thus allowing your applications to "
-"perform operations like refresh from an external datasource, archiving, etc."
-msgstr ""
-"期限切れのエントリがイベントをトリガーするようになったため、外部データソースからの更新やアーカイブなどの操作をアプリケーションで実行できるようになりました。"
+msgid "Expired entries now trigger events, thus allowing your applications to perform operations like refresh from an external datasource, archiving, etc."
+msgstr "期限切れのエントリがイベントをトリガーするようになったため、外部データソースからの更新やアーカイブなどの操作をアプリケーションで実行できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:50
 #, fuzzy
-msgid ""
-"Eviction is now memory size-aware, so you can define the maximum amount of "
-"memory you want a cache to grow to, before entries are removed or passivated "
-"to an external store. "
-msgstr ""
-"エビクションはメモリサイズを意識したものになったので、エントリが削除されたり外部ストアにパッシベートされたりする前に、キャッシュを成長させる最大メモリ量を定義することができます。"
+msgid "Eviction is now memory size-aware, so you can define the maximum amount of memory you want a cache to grow to, before entries are removed or passivated to an external store. "
+msgstr "エビクションはメモリサイズを意識したものになったので、エントリが削除されたり外部ストアにパッシベートされたりする前に、キャッシュを成長させる最大メモリ量を定義することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:52
 #, fuzzy
-msgid ""
-"Infinispan Server now fully supports domain mode, and that is now the "
-"recommended way for clustered operations."
-msgstr ""
-"Infinispan Serverはドメインモードを完全にサポートするようになり、これがクラスター化された運用に推奨される方法となりました。"
+msgid "Infinispan Server now fully supports domain mode, and that is now the recommended way for clustered operations."
+msgstr "Infinispan Serverはドメインモードを完全にサポートするようになり、これがクラスター化された運用に推奨される方法となりました。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:56
 #, fuzzy
-msgid ""
-"We have a new management console for Infinispan Server which will greatly "
-"simplify configuration and monitoring without requiring an external console. "
-"This is evolving rapidly and we will be adding quite a lot of functionality "
-"in the following months."
-msgstr ""
-"Infinispan "
-"Server用の新しい管理コンソールを用意しましたので、外部コンソールを必要とせずに設定と監視を大幅に簡素化することができます。これは急速に進化しており、今後数ヶ月の間にかなり多くの機能を追加していく予定です。"
+msgid "We have a new management console for Infinispan Server which will greatly simplify configuration and monitoring without requiring an external console. This is evolving rapidly and we will be adding quite a lot of functionality in the following months."
+msgstr "Infinispan Server用の新しい管理コンソールを用意しましたので、外部コンソールを必要とせずに設定と監視を大幅に簡素化することができます。これは急速に進化しており、今後数ヶ月の間にかなり多くの機能を追加していく予定です。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:60
 #, fuzzy
-msgid ""
-"We are working hard to reduce the number of resources used by Infinispan and "
-"removing many internal locks and increasing concurrency.  This work is "
-"ongoing and you will see further improvements during the 8.x series."
-msgstr ""
-"Infinispanが使用するリソースの数を減らし、多くの内部ロックを削除し、同時実行性を高めるために努力しています。この作業は現在進行中で、8."
-"xシリーズではさらなる改善が見られるでしょう。"
+msgid "We are working hard to reduce the number of resources used by Infinispan and removing many internal locks and increasing concurrency.  This work is ongoing and you will see further improvements during the 8.x series."
+msgstr "Infinispanが使用するリソースの数を減らし、多くの内部ロックを削除し、同時実行性を高めるために努力しています。この作業は現在進行中で、8.xシリーズではさらなる改善が見られるでしょう。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:64
 #, fuzzy
-msgid ""
-"We now provide integrations with http://spark.apache.org/[Spark] and http://"
-"hadoop.apache.org/[Hadoop] so that you can use all of the wonderful "
-"processing tools from those ecosystem against data stored in Infinispan."
-msgstr ""
-"現在は link:http://spark.apache.org/[Spark] と link:http://hadoop.apache.org/"
-"[Hadoop] "
-"との統合を提供しており、Infinispanに保存されているデータに対してこれらのエコシステムの素晴らしい処理ツールをすべて使用できるようにしています。"
+msgid "We now provide integrations with http://spark.apache.org/[Spark] and http://hadoop.apache.org/[Hadoop] so that you can use all of the wonderful processing tools from those ecosystem against data stored in Infinispan."
+msgstr "現在は link:http://spark.apache.org/[Spark] と link:http://hadoop.apache.org/[Hadoop] との統合を提供しており、Infinispanに保存されているデータに対してこれらのエコシステムの素晴らしい処理ツールをすべて使用できるようにしています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:68
 #, fuzzy
-msgid ""
-"Both the declarative and programmatic configuration API have been enhanced "
-"to support templates and configuration inheritance. It should make your life "
-"easier when you need many caches configured in the same way."
-msgstr ""
-"宣言的な設定APIとプログラマティックな設定APIの両方が強化され、テンプレートと設定の継承をサポートするようになりました。多くのキャッシュを同じように設定する必要がある場合に、生活が楽になるはずです。"
+msgid "Both the declarative and programmatic configuration API have been enhanced to support templates and configuration inheritance. It should make your life easier when you need many caches configured in the same way."
+msgstr "宣言的な設定APIとプログラマティックな設定APIの両方が強化され、テンプレートと設定の継承をサポートするようになりました。多くのキャッシュを同じように設定する必要がある場合に、生活が楽になるはずです。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:70
 #, fuzzy
-msgid ""
-"A cache store for http://redis.io/[Redis] implemented by Simon Paulger. "
-"Thanks for the contribution !"
-msgstr ""
-"Simon Paulger氏が実装した link:http://redis.io/[Redis] 用のキャッシュストアです。貢献に感謝します。"
+msgid "A cache store for http://redis.io/[Redis] implemented by Simon Paulger. Thanks for the contribution !"
+msgstr "Simon Paulger氏が実装した link:http://redis.io/[Redis] 用のキャッシュストアです。貢献に感謝します。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:72
 #, fuzzy
-msgid ""
-"Lots more... Look at the resolved issues to find out what else we've fixed."
+msgid "Lots more... Look at the resolved issues to find out what else we've fixed."
 msgstr "解決済みの問題を見て、私たちが解決した他の問題を見つけてください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:75
 #, fuzzy
-msgid ""
-"We have also made some significant changes to our http://infinispan.org/"
-"[website]:"
+msgid "We have also made some significant changes to our http://infinispan.org/[website]:"
 msgstr "また、弊社の link:http://infinispan.org/[ホームページも] 大幅に変更させていただきました。"
 
 #. type: Plain text
@@ -255,39 +185,23 @@ msgstr "新しいユースケースドリブンの例"
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:82
 #, fuzzy
-msgid ""
-"the download page for cache stores are now clearly divides core cache stores "
-"(i.e. the ones included in Infinispan release), extra stores (i.e. ones that "
-"need to be downloaded separately) and the version compatibility"
-msgstr ""
-"キャッシュストアのダウンロードページは、コアキャッシュストア（すなわち Infinispan "
-"リリースに含まれているもの）、追加ストア（すなわち別々にダウンロードする必要があるもの）、およびバージョンの互換性を明確に分けるようになりました。"
+msgid "the download page for cache stores are now clearly divides core cache stores (i.e. the ones included in Infinispan release), extra stores (i.e. ones that need to be downloaded separately) and the version compatibility"
+msgstr "キャッシュストアのダウンロードページは、コアキャッシュストア（すなわち Infinispan リリースに含まれているもの）、追加ストア（すなわち別々にダウンロードする必要があるもの）、およびバージョンの互換性を明確に分けるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:84
 #, fuzzy
-msgid ""
-"project references, i.e. other open-source projects which use Infinispan"
+msgid "project references, i.e. other open-source projects which use Infinispan"
 msgstr "プロジェクト参照、つまり Infinispan を使用している他のオープンソースプロジェクト。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:89
 #, fuzzy
-msgid ""
-"The 8.0 release marks only the beginning of a number of exciting things we "
-"will be working on, so please check out our http://infinispan.org/roadmap/"
-"[roadmap]."
-msgstr ""
-"8.0のリリースは、私たちが取り組んでいる多くのエキサイティングなことの始まりに過ぎませんので、ぜひ link:http://infinispan."
-"org/roadmap/[ロードマップを] ご覧ください。"
+msgid "The 8.0 release marks only the beginning of a number of exciting things we will be working on, so please check out our http://infinispan.org/roadmap/[roadmap]."
+msgstr "8.0のリリースは、私たちが取り組んでいる多くのエキサイティングなことの始まりに過ぎませんので、ぜひ link:http://infinispan.org/roadmap/[ロードマップを] ご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-31-infinispan-800final.adoc:93
 #, fuzzy
-msgid ""
-"An important note: we will be maintaining the 7.2 branch of Infinispan for "
-"quite a while, so, if you are still stuck with Java 7, you shouldn't worry "
-"about upgrading just yet... unless you want to use the new stuff :)"
-msgstr ""
-"重要な注意：私たちはInfinispanの7.2ブランチをかなりの間維持しているので、もしまだJava "
-"7に行き詰っているのであれば、まだアップグレードを心配する必要はありません...新しいものを使いたい場合を除いては。)"
+msgid "An important note: we will be maintaining the 7.2 branch of Infinispan for quite a while, so, if you are still stuck with Java 7, you shouldn't worry about upgrading just yet... unless you want to use the new stuff :)"
+msgstr "重要な注意：私たちはInfinispanの7.2ブランチをかなりの間維持しているので、もしまだJava 7に行き詰っているのであれば、まだアップグレードを心配する必要はありません...新しいものを使いたい場合を除いては。)"

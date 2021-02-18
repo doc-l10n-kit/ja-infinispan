@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-02-28-infinispan-700alpha1-release.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-02-28-infinispan-700alpha1-release.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 7.0.0.Alpha1 release\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2014-02-28T03:40:00.001-08:00'\n"
 "author: infinispan\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1001084350189905088\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/02/infinispan-700alpha1-"
-"release.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1001084350189905088\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/02/infinispan-700alpha1-release.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,10 +42,8 @@ msgstr ""
 "date: '2014-02-28T03:40:00.001-08:00'\n"
 "author: infinispan\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1001084350189905088\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/02/infinispan-700alpha1-"
-"release.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1001084350189905088\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/02/infinispan-700alpha1-release.html\n"
 "---\n"
 
 #. type: Plain text
@@ -71,80 +67,41 @@ msgstr "このリリースでは、いくつかの新機能が追加されてい
 #. type: Plain text
 #: upstream/_posts/2014-02-28-infinispan-700alpha1-release.adoc:21
 #, fuzzy
-msgid ""
-"Support for clustered listeners. One of the limitation of Infinispan's "
-"distributed mode used to be that listeners could only receive events for "
-"cache modifications on their own node. That's no longer the case, and it "
-"paves the way for a long-requested feature: HotRod listeners."
-msgstr ""
-"クラスタ化されたリスナーのサポート。Infinispan "
-"の分散モードの制限の一つは、リスナーが自分のノードでしかキャッシュ変更のイベントを受信できないことでした。これはもはやそうではなく、待望の機能への道を開きます。HotRodリスナーです。"
+msgid "Support for clustered listeners. One of the limitation of Infinispan's distributed mode used to be that listeners could only receive events for cache modifications on their own node. That's no longer the case, and it paves the way for a long-requested feature: HotRod listeners."
+msgstr "クラスタ化されたリスナーのサポート。Infinispan の分散モードの制限の一つは、リスナーが自分のノードでしかキャッシュ変更のイベントを受信できないことでした。これはもはやそうではなく、待望の機能への道を開きます。HotRodリスナーです。"
 
 #. type: Plain text
 #: upstream/_posts/2014-02-28-infinispan-700alpha1-release.adoc:26
 #, fuzzy
-msgid ""
-"Map/Reduce tasks can now execute the mapper/combiner/reducer http://blog."
-"infinispan.org/2014/02/mapreduce-parallel-execution.html[on multiple "
-"threads]. Stay tuned for more Map/Reduce improvements in the near future."
-msgstr ""
-"Map/Reduceタスクは、 link:http://blog.infinispan.org/2014/02/mapreduce-parallel-"
-"execution.html[複数のスレッドで] Mapper/combiner/reducerを実行できるようになった。近い将来のMap/"
-"Reduceの改良点にご期待ください。"
+msgid "Map/Reduce tasks can now execute the mapper/combiner/reducer http://blog.infinispan.org/2014/02/mapreduce-parallel-execution.html[on multiple threads]. Stay tuned for more Map/Reduce improvements in the near future."
+msgstr "Map/Reduceタスクは、 link:http://blog.infinispan.org/2014/02/mapreduce-parallel-execution.html[複数のスレッドで] Mapper/combiner/reducerを実行できるようになった。近い将来のMap/Reduceの改良点にご期待ください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-02-28-infinispan-700alpha1-release.adoc:30
 #, fuzzy
-msgid ""
-"The first essential component of cache security has been added, which will "
-"be the building block for remote protocol authentication and authorization."
+msgid "The first essential component of cache security has been added, which will be the building block for remote protocol authentication and authorization."
 msgstr "キャッシュセキュリティの最初の必須コンポーネントが追加され、リモートプロトコルの認証と認可のためのビルディングブロックとなります。"
 
 #. type: Plain text
 #: upstream/_posts/2014-02-28-infinispan-700alpha1-release.adoc:34
 #, fuzzy
-msgid ""
-"Improved OSGi support in the HotRod Java client. The core components are "
-"also getting into shape for OSGi, expect more on this front in the next "
-"release."
-msgstr ""
-"HotRod "
-"JavaクライアントでのOSGiサポートの改善。コアコンポーネントもOSGiのための形になりつつあり、次のリリースでは、この面でより多くのことを期待しています。"
+msgid "Improved OSGi support in the HotRod Java client. The core components are also getting into shape for OSGi, expect more on this front in the next release."
+msgstr "HotRod JavaクライアントでのOSGiサポートの改善。コアコンポーネントもOSGiのための形になりつつあり、次のリリースでは、この面でより多くのことを期待しています。"
 
 #. type: Plain text
 #: upstream/_posts/2014-02-28-infinispan-700alpha1-release.adoc:43
 #, fuzzy
-msgid ""
-"As you can see, many of the new features are stepping stones for bigger "
-"things yet to come. Feel free to join us and shape the future releases "
-"on our http://www.jboss.org/infinispan/forums[forums], our https://lists."
-"jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or our http://"
-"webchat.freenode.net/?channels=%23infinispan[#infinispan] IRC channel."
-msgstr ""
-"ご覧のように、新機能の多くは、これからの大きなものへの足がかりとなっています。フォーラム、メーリングリスト link:https://lists."
-"jboss.org/mailman/listinfo/infinispan-dev[、#infinispan] IRC link:http://"
-"webchat.freenode.net/?channels=%23infinispan[チャンネル] "
-"で、気軽に参加して、将来のリリースを形にしてください。"
+msgid "As you can see, many of the new features are stepping stones for bigger things yet to come. Feel free to join us and shape the future releases on our http://www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or our http://webchat.freenode.net/?channels=%23infinispan[#infinispan] IRC channel."
+msgstr "ご覧のように、新機能の多くは、これからの大きなものへの足がかりとなっています。フォーラム、メーリングリスト link:https://lists.jboss.org/mailman/listinfo/infinispan-dev[、#infinispan] IRC link:http://webchat.freenode.net/?channels=%23infinispan[チャンネル] で、気軽に参加して、将来のリリースを形にしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-02-28-infinispan-700alpha1-release.adoc:50
 #, fuzzy
-msgid ""
-"For a complete list of features and bug fixes included in this release "
-"please refer to the https://issues.jboss.org/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12323785[release notes]. Visit our http://"
-"www.jboss.org/infinispan/downloads[downloads] section to find the latest "
-"release."
-msgstr ""
-"このリリースに含まれる機能とバグフィックスの完全なリストについては、 link:https://issues.jboss.org/secure/"
-"ReleaseNote.jspa?projectId=12310799&version=12323785[リリースノートを] 参照してください link:"
-"https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
-"12323785[。] 最新のリリースを見つける link:http://www.jboss.org/infinispan/downloads[ために] "
-"私たちのダウンロード link:http://www.jboss.org/infinispan/downloads[セクションを] 参照してください。"
+msgid "For a complete list of features and bug fixes included in this release please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12323785[release notes]. Visit our http://www.jboss.org/infinispan/downloads[downloads] section to find the latest release."
+msgstr "このリリースに含まれる機能とバグフィックスの完全なリストについては、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12323785[リリースノートを] 参照してください link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12323785[。] 最新のリリースを見つける link:http://www.jboss.org/infinispan/downloads[ために] 私たちのダウンロード link:http://www.jboss.org/infinispan/downloads[セクションを] 参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-02-28-infinispan-700alpha1-release.adoc:53
 #, fuzzy
-msgid ""
-"Thanks to everyone for their involvement and contribution! Happy hacking!"
+msgid "Thanks to everyone for their involvement and contribution! Happy hacking!"
 msgstr "みんなの参加と貢献に感謝しています!ハッピーハッキング"

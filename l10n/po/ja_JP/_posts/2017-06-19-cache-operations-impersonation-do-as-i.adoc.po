@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-06-19-cache-operations-impersonation-do-as-i.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-19-cache-operations-impersonation-do-as-i.adoc:12
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 'Cache operations impersonation: do as I say (or maybe as she says)'\n"
@@ -34,10 +34,8 @@ msgid ""
 "tags: [ \"security\",\n"
 "\"API\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"4778146125056025393\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/06/cache-operations-"
-"impersonation-do-as-i.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4778146125056025393\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/06/cache-operations-impersonation-do-as-i.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -48,50 +46,32 @@ msgstr ""
 "tags: [ \"security\",\n"
 "\"API\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"4778146125056025393\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/06/cache-operations-"
-"impersonation-do-as-i.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4778146125056025393\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/06/cache-operations-impersonation-do-as-i.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-19-cache-operations-impersonation-do-as-i.adoc:17
 #, fuzzy
-msgid ""
-"The implementation of cache authorization in Infinispan has traditionally "
-"followed the JAAS model of wrapping calls in a PrivilegedAction invoked "
-"through Subject.doAs(). This led to the following cumbersome pattern:"
-msgstr ""
-"Infinispan でのキャッシュ認証の実装は、伝統的に、Subject.doAs() を通して呼び出された PrivilegedAction "
-"で呼び出しをラップするという JAAS モデルに従ってきました。このため、以下のような面倒なパターンになっていました。"
+msgid "The implementation of cache authorization in Infinispan has traditionally followed the JAAS model of wrapping calls in a PrivilegedAction invoked through Subject.doAs(). This led to the following cumbersome pattern:"
+msgstr "Infinispan でのキャッシュ認証の実装は、伝統的に、Subject.doAs() を通して呼び出された PrivilegedAction で呼び出しをラップするという JAAS モデルに従ってきました。このため、以下のような面倒なパターンになっていました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-19-cache-operations-impersonation-do-as-i.adoc:23
 #, fuzzy
-msgid ""
-"We also provided an implementation which, instead of relying on enabling the "
-"SecurityManager, could use a lighter and faster ThreadLocal for storing the "
-"Subject:"
-msgstr ""
-"また、SecurityManagerの有効化に頼るのではなく、より軽量で高速なThreadLocalを使用してSubjectを格納する実装も提供しました。"
+msgid "We also provided an implementation which, instead of relying on enabling the SecurityManager, could use a lighter and faster ThreadLocal for storing the Subject:"
+msgstr "また、SecurityManagerの有効化に頼るのではなく、より軽量で高速なThreadLocalを使用してSubjectを格納する実装も提供しました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-19-cache-operations-impersonation-do-as-i.adoc:30
 #, fuzzy
-msgid ""
-"While this solves the performance issue, it still leads to unreadable code.  "
-"This is why, in Infinispan 9.1 we have introduced a new way to perform "
-"authorization on caches:"
-msgstr ""
-"これによりパフォーマンスの問題は解決されますが、読めないコードが発生することには変わりありません。このため、Infinispan 9.1 "
-"では、キャッシュに対して認証を実行する新しい方法を導入しました。"
+msgid "While this solves the performance issue, it still leads to unreadable code.  This is why, in Infinispan 9.1 we have introduced a new way to perform authorization on caches:"
+msgstr "これによりパフォーマンスの問題は解決されますが、読めないコードが発生することには変わりありません。このため、Infinispan 9.1 では、キャッシュに対して認証を実行する新しい方法を導入しました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-19-cache-operations-impersonation-do-as-i.adoc:35
 #, fuzzy
-msgid ""
-"Obviously, for multiple invocations, you can hold on to the \"impersonated\" "
-"cache and reuse it:"
+msgid "Obviously, for multiple invocations, you can hold on to the \"impersonated\" cache and reuse it:"
 msgstr "明らかに、複数回の呼び出しでは、「なりすまし」キャッシュを保持して再利用することができます。"
 
 #. type: Plain text

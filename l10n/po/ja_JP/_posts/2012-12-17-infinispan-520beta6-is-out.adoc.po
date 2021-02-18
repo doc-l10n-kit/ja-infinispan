@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-12-17-infinispan-520beta6-is-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-12-17-infinispan-520beta6-is-out.adoc:13
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 5.2.0.Beta6 is out!\n"
@@ -35,10 +35,8 @@ msgid ""
 "\"release\",\n"
 "\"state transfer\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"4788085598648497184\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/12/infinispan-520beta6-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4788085598648497184\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/12/infinispan-520beta6-is-out.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -50,60 +48,27 @@ msgstr ""
 "\"release\",\n"
 "\"state transfer\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"4788085598648497184\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/12/infinispan-520beta6-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4788085598648497184\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/12/infinispan-520beta6-is-out.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-12-17-infinispan-520beta6-is-out.adoc:27
 #, fuzzy
-msgid ""
-"5.2.0.Beta6 brings a new batch of fixes around Non-Blocking State Transfer, "
-"Map/Reduce and command line interface.  But it's not only that, it also "
-"brings a bran new pice of functionality: support of concurrent updates for "
-"non-transactional caches(https://issues.jboss.org/browse/ISPN-2552[ISPN-"
-"2552]) . Prior Infinispan 5.2.0.Beta6, there was a high chance for a "
-"deadlock to occur when two threads concurrently update the same key. This "
-"caused significant performance costs and throughput degradation, linear to "
-"the amount of contention. This functionality is enabled by default even "
-"though a compatibility mode is still available. You can read more about it "
-"https://docs.jboss.org/author/display/ISPN/"
-"Locking+and+Concurrency#LockingandConcurrency-"
-"Nontransactionalcachesandconcurrentupdates%26nbsp%3B[here]."
-msgstr ""
-"5.2.0.0.Beta6では、ノンブロッキング状態転送、マップ/"
-"再デュース、コマンドラインインターフェースの修正が行われました。しかし、それだけではありません。Infinispan 5.2.0.0."
-"Beta6以前のバージョンでは、2つのスレッドが同じキーを同時に更新するとデッドロックが発生する可能性が高かった。このため、競合の量に比例して、パフォーマンスコストとスループットが大幅に低下していました。この機能は、互換性モードが残っているにもかかわらず、デフォルトで有効になっています。この機能についての詳細は "
-"link:https://docs.jboss.org/author/display/ISPN/"
-"Locking+and+Concurrency#LockingandConcurrency-"
-"Nontransactionalcachesandconcurrentupdates%26nbsp%3B[こちら] を参照してください。"
+msgid "5.2.0.Beta6 brings a new batch of fixes around Non-Blocking State Transfer, Map/Reduce and command line interface.  But it's not only that, it also brings a bran new pice of functionality: support of concurrent updates for non-transactional caches(https://issues.jboss.org/browse/ISPN-2552[ISPN-2552]) . Prior Infinispan 5.2.0.Beta6, there was a high chance for a deadlock to occur when two threads concurrently update the same key. This caused significant performance costs and throughput degradation, linear to the amount of contention. This functionality is enabled by default even though a compatibility mode is still available. You can read more about it https://docs.jboss.org/author/display/ISPN/Locking+and+Concurrency#LockingandConcurrency-Nontransactionalcachesandconcurrentupdates%26nbsp%3B[here]."
+msgstr "5.2.0.0.Beta6では、ノンブロッキング状態転送、マップ/再デュース、コマンドラインインターフェースの修正が行われました。しかし、それだけではありません。Infinispan 5.2.0.0.Beta6以前のバージョンでは、2つのスレッドが同じキーを同時に更新するとデッドロックが発生する可能性が高かった。このため、競合の量に比例して、パフォーマンスコストとスループットが大幅に低下していました。この機能は、互換性モードが残っているにもかかわらず、デフォルトで有効になっています。この機能についての詳細は link:https://docs.jboss.org/author/display/ISPN/Locking+and+Concurrency#LockingandConcurrency-Nontransactionalcachesandconcurrentupdates%26nbsp%3B[こちら] を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2012-12-17-infinispan-520beta6-is-out.adoc:32
 #, fuzzy
-msgid ""
-"For a detailed list of all the issues fixed please refer thehttps://issues."
-"jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
-"12320690[ release notes]."
-msgstr ""
-"修正されたすべての問題の詳細なリストは、https://issues.jboss.org/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12320690[リリースノート]を参照してください。"
+msgid "For a detailed list of all the issues fixed please refer thehttps://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12320690[ release notes]."
+msgstr "修正されたすべての問題の詳細なリストは、https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12320690[リリースノート]を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2012-12-17-infinispan-520beta6-is-out.adoc:39
 #, fuzzy
-msgid ""
-"You can http://www.jboss.org/infinispan/downloads[download] the distribution "
-"or the https://repository.jboss.org/nexus/content/repositories/releases/org/"
-"infinispan/[maven artifact]. If you have any questions please check our http:"
-"//www.jboss.org/infinispan/forums[forums], our mailing lists or ping us "
-"directly on irc://irc.freenode.org/infinispan[IRC]!"
-msgstr ""
-"ディストリビューションまたは maven アーティファクトを link:http://www.jboss.org/infinispan/"
-"downloads[ダウンロードする] ことができます。質問がある場合は、 link:http://www.jboss.org/infinispan/"
-"forums[フォーラムや] メーリングリストをチェックするか、IRCで直接質問してください!"
+msgid "You can http://www.jboss.org/infinispan/downloads[download] the distribution or the https://repository.jboss.org/nexus/content/repositories/releases/org/infinispan/[maven artifact]. If you have any questions please check our http://www.jboss.org/infinispan/forums[forums], our mailing lists or ping us directly on irc://irc.freenode.org/infinispan[IRC]!"
+msgstr "ディストリビューションまたは maven アーティファクトを link:http://www.jboss.org/infinispan/downloads[ダウンロードする] ことができます。質問がある場合は、 link:http://www.jboss.org/infinispan/forums[フォーラムや] メーリングリストをチェックするか、IRCで直接質問してください!"
 
 #. type: Plain text
 #: upstream/_posts/2012-12-17-infinispan-520beta6-is-out.adoc:44

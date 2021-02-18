@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:8
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 12.0.0.Dev03\n"
@@ -44,7 +44,7 @@ msgstr ""
 
 #. type: Title =
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Infinispan 12.0.0.Dev03"
 msgstr "Infinispan 12.0.0.0.Dev03"
 
@@ -62,87 +62,61 @@ msgstr "Infinispan 12 開発リリース03はこちら!"
 
 #. type: Title ==
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:16
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Cross Site Replication"
 msgstr "クロスサイトレプリケーション"
 
 #. type: Plain text
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:20
 #, fuzzy
-msgid ""
-"With the new asynchronous cross-site replication algorithm introduced in "
-"Infinispan 11, this release brings a long desired feature: *conflict "
-"resolution*."
-msgstr ""
-"Infinispan 11で導入された新しい非同期クロスサイトレプリケーションアルゴリズムにより、このリリースでは、長い間望まれていた機能である "
-"*競合の解決* が実現しました。"
+msgid "With the new asynchronous cross-site replication algorithm introduced in Infinispan 11, this release brings a long desired feature: *conflict resolution*."
+msgstr "Infinispan 11で導入された新しい非同期クロスサイトレプリケーションアルゴリズムにより、このリリースでは、長い間望まれていた機能である *競合の解決* が実現しました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:24
 #, fuzzy
-msgid ""
-"It is possible to configure a merge policy where, in case of conflict "
-"between updates of different sites, the value can be merged. Some predefined "
-"merge policies can be found https://docs.jboss.org/infinispan/12.0/apidocs/"
-"org/infinispan/xsite/spi/XSiteMergePolicy.html[here]."
-msgstr ""
-"異なるサイトの更新が衝突した場合に、値をマージするマージポリシーを設定することができます。いくつかの定義済みマージポリシーは、 link:https://"
-"docs.jboss.org/infinispan/12.0/apidocs/org/infinispan/xsite/spi/"
-"XSiteMergePolicy.html[ここで] 見つけることができます。"
+msgid "It is possible to configure a merge policy where, in case of conflict between updates of different sites, the value can be merged. Some predefined merge policies can be found https://docs.jboss.org/infinispan/12.0/apidocs/org/infinispan/xsite/spi/XSiteMergePolicy.html[here]."
+msgstr "異なるサイトの更新が衝突した場合に、値をマージするマージポリシーを設定することができます。いくつかの定義済みマージポリシーは、 link:https://docs.jboss.org/infinispan/12.0/apidocs/org/infinispan/xsite/spi/XSiteMergePolicy.html[ここで] 見つけることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:26
 #, fuzzy
-msgid ""
-"See the docs for more https://infinispan.org/docs/dev/titles/xsite/xsite."
-"html#conflict_resolution-xsite[information about conflict resolution]."
-msgstr ""
-"link:https://infinispan.org/docs/dev/titles/xsite/xsite."
-"html#conflict_resolution-xsite[紛争解決の] 詳細については、ドキュメントを参照してください。"
+msgid "See the docs for more https://infinispan.org/docs/dev/titles/xsite/xsite.html#conflict_resolution-xsite[information about conflict resolution]."
+msgstr "link:https://infinispan.org/docs/dev/titles/xsite/xsite.html#conflict_resolution-xsite[紛争解決の] 詳細については、ドキュメントを参照してください。"
 
 #. type: Block title
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:27
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Performance improvement"
 msgstr "業績向上"
 
 #. type: Plain text
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:33
 #, fuzzy
-msgid ""
-"Another small improvement has been made to cross-site replication in this "
-"release.  When sites get requests targeting caches that don't exist or "
-"aren't started, sender sites stop retrying the requests, which takes the "
-"backup location offline.  Administrators must then bring the sites back "
-"online and perform state transfer to sync possible out-of-date data."
-msgstr ""
-"このリリースでは、クロスサイトレプリケーションにも小さな改良が加えられています。サイトが存在しない、または起動していないキャッシュをターゲットにしたリクエストを受け取ると、送信元のサイトはリクエストの再試行を停止し、バックアップ先をオフラインにします。管理者は、その後、サイトをオンラインに戻し、古いデータを同期させるために状態遷移を実行しなければなりません。"
+msgid "Another small improvement has been made to cross-site replication in this release.  When sites get requests targeting caches that don't exist or aren't started, sender sites stop retrying the requests, which takes the backup location offline.  Administrators must then bring the sites back online and perform state transfer to sync possible out-of-date data."
+msgstr "このリリースでは、クロスサイトレプリケーションにも小さな改良が加えられています。サイトが存在しない、または起動していないキャッシュをターゲットにしたリクエストを受け取ると、送信元のサイトはリクエストの再試行を停止し、バックアップ先をオフラインにします。管理者は、その後、サイトをオンラインに戻し、古いデータを同期させるために状態遷移を実行しなければなりません。"
 
 #. type: Title ==
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:34
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Infinispan Server"
 msgstr "インフィニスパンサーバー"
 
 #. type: Plain text
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:38
 #, fuzzy
-msgid ""
-"This version includes a new version of the web console, including mainly "
-"fixes, but also the ability to filter between Strong and Weak counters and "
-"to remove counters from the list."
-msgstr ""
-"このバージョンでは、主に修正を含むウェブコンソールの新バージョンが追加されていますが、StrongカウンターとWeakカウンターの間でフィルターをかけたり、カウンターをリストから削除したりする機能も追加されています。"
+msgid "This version includes a new version of the web console, including mainly fixes, but also the ability to filter between Strong and Weak counters and to remove counters from the list."
+msgstr "このバージョンでは、主に修正を含むウェブコンソールの新バージョンが追加されていますが、StrongカウンターとWeakカウンターの間でフィルターをかけたり、カウンターをリストから削除したりする機能も追加されています。"
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:39
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Console: counters list"
 msgstr "コンソール: カウンタリスト"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:40
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Console Counters Filter"
 msgstr "コンソールカウンタフィルタ"
 
@@ -154,13 +128,13 @@ msgstr ""
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:42
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Console: counters remove button"
 msgstr "コンソール: カウンターはボタンを削除します。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:43
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Console Counters Remove Button"
 msgstr "コンソールカウンターはボタンを削除します。"
 
@@ -172,13 +146,13 @@ msgstr ""
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:45
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Console: counters remove modal"
 msgstr "コンソール: カウンタはモーダルを削除します。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:46
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Console Counters Remove Modal"
 msgstr "コンソールカウンターは、モーダルを削除します。"
 
@@ -192,31 +166,20 @@ msgstr ""
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:49
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:65
 #, fuzzy
-msgid ""
-"You can look at the https://issues.redhat.com/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12347011[release notes] to see what has "
-"changed."
-msgstr ""
-"何が変わったのかは、 link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId="
-"12310799&version=12347011[リリースノート] を見ればわかります。"
+msgid "You can look at the https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12347011[release notes] to see what has changed."
+msgstr "何が変わったのかは、 link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12347011[リリースノート] を見ればわかります。"
 
 #. type: Title ==
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:50
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Documentation"
 msgstr "ドキュメント"
 
 #. type: Plain text
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:54
 #, fuzzy
-msgid ""
-"https://infinispan.org/docs/dev/index.html[Our documentation has been "
-"updated] with some additional content as well as improvements for clarity "
-"and technical accuracy, notably:"
-msgstr ""
-"link:https://infinispan.org/docs/dev/index.html[当社のドキュメントは] "
-"、特に分かりやすさと技術的な正確さを向上させるとともに、いくつかの追加コンテンツで link:https://infinispan.org/docs/"
-"dev/index.html[更新され] ています。"
+msgid "https://infinispan.org/docs/dev/index.html[Our documentation has been updated] with some additional content as well as improvements for clarity and technical accuracy, notably:"
+msgstr "link:https://infinispan.org/docs/dev/index.html[当社のドキュメントは] 、特に分かりやすさと技術的な正確さを向上させるとともに、いくつかの追加コンテンツで link:https://infinispan.org/docs/dev/index.html[更新され] ています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:55
@@ -245,16 +208,11 @@ msgstr "セキュリティガイド"
 #. type: Plain text
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:62
 #, fuzzy
-msgid ""
-"As always, the Infinispan team hope you find the documentation useful and "
-"complete. We’d love to hear from you and really value feedback from our "
-"community. If you think something is missing from the docs or spot a "
-"correction, please get in touch and we’ll get on it straight away."
-msgstr ""
-"いつものように、Infinispanチームは、このドキュメントが有用で完全なものであることをご理解いただけることを願っています。皆様からのご意見をお待ちしており、コミュニティからのフィードバックを本当に大切にしています。ドキュメントに何かが欠けていると思われる場合や、修正点がある場合は、ご連絡ください。"
+msgid "As always, the Infinispan team hope you find the documentation useful and complete. We’d love to hear from you and really value feedback from our community. If you think something is missing from the docs or spot a correction, please get in touch and we’ll get on it straight away."
+msgstr "いつものように、Infinispanチームは、このドキュメントが有用で完全なものであることをご理解いただけることを願っています。皆様からのご意見をお待ちしており、コミュニティからのフィードバックを本当に大切にしています。ドキュメントに何かが欠けていると思われる場合や、修正点がある場合は、ご連絡ください。"
 
 #. type: Title ==
 #: upstream/_posts/2020-09-08-infinispan-12.0.0.Dev03.adoc:63
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Release notes"
 msgstr "リリースノート"

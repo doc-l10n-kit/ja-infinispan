@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.3.0.Beta1\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2018-05-11T09:07:00.000-07:00'\n"
 "author: ttarrant\n"
 "tags: [ \" beta\", \"release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"5595840981273473609\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/05/infinispan-930beta1."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5595840981273473609\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/05/infinispan-930beta1.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,10 +42,8 @@ msgstr ""
 "date: '2018-05-11T09:07:00.000-07:00'\n"
 "author: ttarrant\n"
 "tags: [ \" beta\", \"release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"5595840981273473609\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/05/infinispan-930beta1."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5595840981273473609\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/05/infinispan-930beta1.html\n"
 "---\n"
 
 #. type: Plain text
@@ -59,13 +55,8 @@ msgstr "Infinispanユーザー。"
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:16
 #, fuzzy
-msgid ""
-"We have just released 9.3.0.Beta1 which includes https://issues.jboss.org/"
-"secure/ReleaseNote.jspa?projectId=12310799&version=12337255[38 fixes]. "
-"Highlights of this release include:"
-msgstr ""
-"9.3.0.0.Beta1 をリリースしました link:https://issues.jboss.org/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12337255[。] このリリースのハイライトは以下の通りです。"
+msgid "We have just released 9.3.0.Beta1 which includes https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12337255[38 fixes]. Highlights of this release include:"
+msgstr "9.3.0.0.Beta1 をリリースしました link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12337255[。] このリリースのハイライトは以下の通りです。"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:18
@@ -82,9 +73,7 @@ msgstr "MergePolicy.NONE はデフォルトのマージポリシーになりま�
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:22
 #, fuzzy
-msgid ""
-"Conflict Resolution during a merge is now non-blocking and tolerant of node "
-"failures"
+msgid "Conflict Resolution during a merge is now non-blocking and tolerant of node failures"
 msgstr "マージ中のコンフリクト解決がノンブロッキングになり、ノードの障害を許容するようになりました。"
 
 #. type: Plain text
@@ -132,14 +121,8 @@ msgstr "多くのバグ修正、テスト修正、ドキュメントの改善"
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:41
 #, fuzzy
-msgid ""
-"As usual, you can find all the bits on our http://infinispan.org/download/"
-"[website]. If you find any issues, don't hesitate to report them on "
-"our https://issues.jboss.org/projects/ISPN[issue tracker.]"
-msgstr ""
-"いつものように、私たちの link:http://infinispan.org/download/[ウェブサイト] "
-"ですべてのビットを見つけることができます。何か問題を見つけたら、遠慮なく私たちの問題 link:https://issues.jboss.org/"
-"projects/ISPN[追跡] に報告してください。"
+msgid "As usual, you can find all the bits on our http://infinispan.org/download/[website]. If you find any issues, don't hesitate to report them on our https://issues.jboss.org/projects/ISPN[issue tracker.]"
+msgstr "いつものように、私たちの link:http://infinispan.org/download/[ウェブサイト] ですべてのビットを見つけることができます。何か問題を見つけたら、遠慮なく私たちの問題 link:https://issues.jboss.org/projects/ISPN[追跡] に報告してください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:43

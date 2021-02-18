@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,38 +18,32 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
-"title: Infinispan 9.4.1.Final and Infinispan Spring Boot Starter 2.1.0.Final "
-"are out!\n"
+"title: Infinispan 9.4.1.Final and Infinispan Spring Boot Starter 2.1.0.Final are out!\n"
 "permalink: /blog/:year/:month/:day/infinispan-941final-and-infinispan\n"
 "date: '2018-11-09T03:18:00.001-08:00'\n"
 "author: karesti\n"
 "tags: [ \" release\", \"spring boot\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8397659590599295483\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/11/infinispan-941final-"
-"and-infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8397659590599295483\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/11/infinispan-941final-and-infinispan.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
-"title: Infinispan 9.4.1.FinalとInfinispan Spring Boot Starter 2.1.0."
-"Finalがリリースされました。\n"
+"title: Infinispan 9.4.1.FinalとInfinispan Spring Boot Starter 2.1.0.Finalがリリースされました。\n"
 "permalink: /blog/:year/:month/:day/infinispan-941final-and-infinispan\n"
 "date: '2018-11-09T03:18:00.001-08:00'\n"
 "author: karesti\n"
 "tags: [ \" release\", \"spring boot\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8397659590599295483\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/11/infinispan-941final-"
-"and-infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8397659590599295483\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/11/infinispan-941final-and-infinispan.html\n"
 "---\n"
 
 #. type: Plain text
@@ -61,15 +55,8 @@ msgstr "InfinispanとSpring Bootをご利用の皆様。"
 #. type: Plain text
 #: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:17
 #, fuzzy
-msgid ""
-"We have just released https://github.com/infinispan/infinispan[Infinispan] "
-"*9.4.1.Final* and https://github.com/infinispan/infinispan-spring-"
-"boot[Infinispan Spring Boot] *2.1.0.Final*."
-msgstr ""
-"先日、 link:https://github.com/infinispan/infinispan[Infinispan] *9.4.1.Final* "
-"とInfinispan link:https://github.com/infinispan/infinispan-spring-boot[Spring "
-"Boot] 2 link:https://github.com/infinispan/infinispan-spring-boot[.1] .0. "
-"*Final* をリリースしました。"
+msgid "We have just released https://github.com/infinispan/infinispan[Infinispan] *9.4.1.Final* and https://github.com/infinispan/infinispan-spring-boot[Infinispan Spring Boot] *2.1.0.Final*."
+msgstr "先日、 link:https://github.com/infinispan/infinispan[Infinispan] *9.4.1.Final* とInfinispan link:https://github.com/infinispan/infinispan-spring-boot[Spring Boot] 2 link:https://github.com/infinispan/infinispan-spring-boot[.1] .0. *Final* をリリースしました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:19
@@ -80,62 +67,38 @@ msgstr "*Infinispanの* リリースのハイライトは以下の通りです�
 #. type: Plain text
 #: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:22
 #, fuzzy
-msgid ""
-"Export Data Grid stats to https://prometheus.io/[Prometheus] (https://issues."
-"jboss.org/browse/ISPN-9558[ISPN-9558])"
-msgstr ""
-"link:https://prometheus.io/[Prometheus] link:https://issues.jboss.org/browse/"
-"ISPN-9558[(ISPN-9558)] へのデータグリッド統計のエクスポート"
+msgid "Export Data Grid stats to https://prometheus.io/[Prometheus] (https://issues.jboss.org/browse/ISPN-9558[ISPN-9558])"
+msgstr "link:https://prometheus.io/[Prometheus] link:https://issues.jboss.org/browse/ISPN-9558[(ISPN-9558)] へのデータグリッド統計のエクスポート"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:24
 #, fuzzy
-msgid ""
-"Upgrade https://rocksdb.org/[RocksDB] version (https://issues.jboss.org/"
-"browse/ISPN-9603[ISPN-9603])"
-msgstr ""
-"link:https://rocksdb.org/[RocksDBの] バージョンアップ link:https://issues.jboss.org/"
-"browse/ISPN-9603[(ISPN-9603] )"
+msgid "Upgrade https://rocksdb.org/[RocksDB] version (https://issues.jboss.org/browse/ISPN-9603[ISPN-9603])"
+msgstr "link:https://rocksdb.org/[RocksDBの] バージョンアップ link:https://issues.jboss.org/browse/ISPN-9603[(ISPN-9603] )"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:26
 #, fuzzy
-msgid ""
-"Upgrade http://narayana.io/[Narayana] to version 5.9.0.Final (https://issues."
-"jboss.org/browse/ISPN-9639[ISPN-9639])"
-msgstr ""
-"link:http://narayana.io/[ナラヤナを] バージョン5.9.0.0.Finalにアップグレード link:https://"
-"issues.jboss.org/browse/ISPN-9639[（ISPN-9639]"
+msgid "Upgrade http://narayana.io/[Narayana] to version 5.9.0.Final (https://issues.jboss.org/browse/ISPN-9639[ISPN-9639])"
+msgstr "link:http://narayana.io/[ナラヤナを] バージョン5.9.0.0.Finalにアップグレード link:https://issues.jboss.org/browse/ISPN-9639[（ISPN-9639]"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:29
 #, fuzzy
-msgid ""
-"Upgrade to https://github.com/infinispan/protostream[protostream-4.2.2."
-"Final] (https://issues.jboss.org/browse/ISPN-9654[ISPN-9654])"
-msgstr ""
-"link:https://github.com/infinispan/protostream[protostream-4.2.2.2.Final] "
-"へのアップグレード link:https://issues.jboss.org/browse/ISPN-9654[(ISPN-9654] )"
+msgid "Upgrade to https://github.com/infinispan/protostream[protostream-4.2.2.Final] (https://issues.jboss.org/browse/ISPN-9654[ISPN-9654])"
+msgstr "link:https://github.com/infinispan/protostream[protostream-4.2.2.2.Final] へのアップグレード link:https://issues.jboss.org/browse/ISPN-9654[(ISPN-9654] )"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:31
 #, fuzzy
-msgid ""
-"Update Cassandra Store to Infinispan 9.4(https://issues.jboss.org/browse/"
-"ISPN-9595[ISPN-9595])"
-msgstr ""
-"Cassandra StoreをInfinispan 9.4 link:https://issues.jboss.org/browse/ISPN-"
-"9595[(ISPN-9595] )にアップデートしました。"
+msgid "Update Cassandra Store to Infinispan 9.4(https://issues.jboss.org/browse/ISPN-9595[ISPN-9595])"
+msgstr "Cassandra StoreをInfinispan 9.4 link:https://issues.jboss.org/browse/ISPN-9595[(ISPN-9595] )にアップデートしました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:33
 #, fuzzy
-msgid ""
-"Handle ClientCacheEntryExpired into InvalidatedNearCacheListener (https://"
-"issues.jboss.org/browse/ISPN-7087[ISPN-7087])"
-msgstr ""
-"InvalidatedNearCacheListener link:https://issues.jboss.org/browse/ISPN-"
-"7087[（ISPN-7087] ）にClientCacheEntryExpiredをハンドルします。"
+msgid "Handle ClientCacheEntryExpired into InvalidatedNearCacheListener (https://issues.jboss.org/browse/ISPN-7087[ISPN-7087])"
+msgstr "InvalidatedNearCacheListener link:https://issues.jboss.org/browse/ISPN-7087[（ISPN-7087] ）にClientCacheEntryExpiredをハンドルします。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:34
@@ -147,19 +110,13 @@ msgstr "バグ修正"
 #. type: Plain text
 #: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:37
 #, fuzzy
-msgid ""
-"Additional https://github.com/infinispan/infinispan-simple-tutorials[code "
-"simple examples] such as remote multimap or near caching "
-msgstr ""
-"リモートマルチマップやニアキャッシングのような追加 link:https://github.com/infinispan/infinispan-"
-"simple-tutorials[コードの簡単な例]"
+msgid "Additional https://github.com/infinispan/infinispan-simple-tutorials[code simple examples] such as remote multimap or near caching "
+msgstr "リモートマルチマップやニアキャッシングのような追加 link:https://github.com/infinispan/infinispan-simple-tutorials[コードの簡単な例]"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:41
 #, fuzzy
-msgid ""
-"Complete release notes can be read https://issues.jboss.org/secure/"
-"ReleaseNote.jspa?projectId=12310799&version=12339377[here]."
+msgid "Complete release notes can be read https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12339377[here]."
 msgstr "完全なリリースノートはこちらから読むことができます。"
 
 #. type: Plain text
@@ -171,12 +128,8 @@ msgstr "*Infinispan-Spring-Boot* リリースのハイライトは以下の通�
 #. type: Plain text
 #: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:46
 #, fuzzy
-msgid ""
-"Upgrade *Spring-Boot* version to https://spring.io/blog/2018/10/30/spring-"
-"boot-2-1-0[2.1.0]"
-msgstr ""
-"*Spring-Boot* のバージョンを link:https://spring.io/blog/2018/10/30/spring-boot-2-1-"
-"0[2.1.0] にアップグレードする"
+msgid "Upgrade *Spring-Boot* version to https://spring.io/blog/2018/10/30/spring-boot-2-1-0[2.1.0]"
+msgstr "*Spring-Boot* のバージョンを link:https://spring.io/blog/2018/10/30/spring-boot-2-1-0[2.1.0] にアップグレードする"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:47
@@ -187,22 +140,14 @@ msgstr "*Infinispan の* バージョンを 9.4.1 にアップグレードしま
 #. type: Plain text
 #: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:49
 #, fuzzy
-msgid ""
-"Integration with Spring Actuator, to expose production ready metrics (https:/"
-"/issues.jboss.org/browse/ISPN-9668[ISPN-9668])"
-msgstr ""
-"Spring Actuatorとの統合により、生産準備の整ったメトリクスを公開 link:https://issues.jboss.org/browse/"
-"ISPN-9668[(ISPN-9668] )"
+msgid "Integration with Spring Actuator, to expose production ready metrics (https://issues.jboss.org/browse/ISPN-9668[ISPN-9668])"
+msgstr "Spring Actuatorとの統合により、生産準備の整ったメトリクスを公開 link:https://issues.jboss.org/browse/ISPN-9668[(ISPN-9668] )"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:53
 #, fuzzy
-msgid ""
-"Additional https://github.com/infinispan/infinispan-spring-boot/tree/master/"
-"infinispan-spring-boot-samples[code examples]"
-msgstr ""
-"その他の link:https://github.com/infinispan/infinispan-spring-boot/tree/master/"
-"infinispan-spring-boot-samples[コード例]"
+msgid "Additional https://github.com/infinispan/infinispan-spring-boot/tree/master/infinispan-spring-boot-samples[code examples]"
+msgstr "その他の link:https://github.com/infinispan/infinispan-spring-boot/tree/master/infinispan-spring-boot-samples[コード例]"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:55
@@ -213,14 +158,8 @@ msgstr "これらのリリースは、mavenのセントラルリポジトリで�
 #. type: Plain text
 #: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:60
 #, fuzzy
-msgid ""
-"Please report any issues in our https://issues.jboss.org/projects/ISPN[issue "
-"tracker] and join the conversation in our https://infinispan.zulipchat.com/"
-"[Zulip Chat] to shape up our next release."
-msgstr ""
-"私たちの問題 link:https://issues.jboss.org/projects/ISPN[追跡] に問題があれば報告し link:https:"
-"//issues.jboss.org/projects/ISPN[、] 次のリリースを link:https://infinispan."
-"zulipchat.com/[形作る] ためにZulipチャットで会話に参加してください。"
+msgid "Please report any issues in our https://issues.jboss.org/projects/ISPN[issue tracker] and join the conversation in our https://infinispan.zulipchat.com/[Zulip Chat] to shape up our next release."
+msgstr "私たちの問題 link:https://issues.jboss.org/projects/ISPN[追跡] に問題があれば報告し link:https://issues.jboss.org/projects/ISPN[、] 次のリリースを link:https://infinispan.zulipchat.com/[形作る] ためにZulipチャットで会話に参加してください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-09-infinispan-941final-and-infinispan.adoc:62

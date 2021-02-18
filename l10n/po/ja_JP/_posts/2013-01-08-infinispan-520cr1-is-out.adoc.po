@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-01-08-infinispan-520cr1-is-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-08-infinispan-520cr1-is-out.adoc:12
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 'Infinispan 5.2.0.CR1 is out! '\n"
@@ -34,10 +34,8 @@ msgid ""
 "tags: [\n"
 "\"release candidate\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"319421470277571751\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/01/infinispan-520cr1-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-319421470277571751\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/01/infinispan-520cr1-is-out.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -48,10 +46,8 @@ msgstr ""
 "tags: [\n"
 "\"release candidate\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"319421470277571751\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/01/infinispan-520cr1-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-319421470277571751\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/01/infinispan-520cr1-is-out.html\n"
 "---\n"
 
 #. type: Plain text
@@ -63,62 +59,32 @@ msgstr "Infinispanユーザーの皆さん、こんにちは。"
 #. type: Plain text
 #: upstream/_posts/2013-01-08-infinispan-520cr1-is-out.adoc:21
 #, fuzzy
-msgid ""
-"I'm very glad to announce first CR from the 5.2 branch. This contains a "
-"handful of fixes and enhancements especially around https://community.jboss."
-"org/wiki/Non-BlockingStateTransferV2[non-blocking state transfer "
-"functionality] (refer to the https://issues.jboss.org/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12320615[release note] for complete lists)."
-msgstr ""
-"5.2 ブランチからの最初の CR を発表できることをとても嬉しく思います。これには、特にノンブ link:https://community."
-"jboss.org/wiki/Non-BlockingStateTransferV2[ロッキング状態の転送機能] "
-"に関する一握りの修正と強化が含まれています link:https://community.jboss.org/wiki/Non-"
-"BlockingStateTransferV2[(] 完全なリストは link:https://issues.jboss.org/secure/"
-"ReleaseNote.jspa?projectId=12310799&version=12320615[リリースノート] を参照してください)。"
+msgid "I'm very glad to announce first CR from the 5.2 branch. This contains a handful of fixes and enhancements especially around https://community.jboss.org/wiki/Non-BlockingStateTransferV2[non-blocking state transfer functionality] (refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12320615[release note] for complete lists)."
+msgstr "5.2 ブランチからの最初の CR を発表できることをとても嬉しく思います。これには、特にノンブ link:https://community.jboss.org/wiki/Non-BlockingStateTransferV2[ロッキング状態の転送機能] に関する一握りの修正と強化が含まれています link:https://community.jboss.org/wiki/Non-BlockingStateTransferV2[(] 完全なリストは link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12320615[リリースノート] を参照してください)。"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-08-infinispan-520cr1-is-out.adoc:24
 #, fuzzy
-msgid ""
-"Also here's an summary of the main features that are being developed in "
-"Infinispan 5.2:"
+msgid "Also here's an summary of the main features that are being developed in Infinispan 5.2:"
 msgstr "また、Infinispan 5.2で開発されている主な機能をまとめてみました。"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-08-infinispan-520cr1-is-out.adoc:29
 #, fuzzy
-msgid ""
-"The https://community.jboss.org/wiki/Non-BlockingStateTransferV2[non-"
-"blocking state transfer functionality] which is a much more efficient and "
-"flexible implementation of the functionality that allows Infinispan to serve "
-"requests during nodes joining/leaving "
-msgstr ""
-"ノンブ link:https://community.jboss.org/wiki/Non-"
-"BlockingStateTransferV2[ロッキング状態転送機能] は、ノードの結合/"
-"離脱中にInfinispanがリクエストを処理することを可能にする機能を、より効率的かつ柔軟に実装したものです。"
+msgid "The https://community.jboss.org/wiki/Non-BlockingStateTransferV2[non-blocking state transfer functionality] which is a much more efficient and flexible implementation of the functionality that allows Infinispan to serve requests during nodes joining/leaving "
+msgstr "ノンブ link:https://community.jboss.org/wiki/Non-BlockingStateTransferV2[ロッキング状態転送機能] は、ノードの結合/離脱中にInfinispanがリクエストを処理することを可能にする機能を、より効率的かつ柔軟に実装したものです。"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-08-infinispan-520cr1-is-out.adoc:34
 #, fuzzy
-msgid ""
-"The https://docs.jboss.org/author/display/ISPN/Cross+site+replication[cross-"
-"site replication] functionality which allows backing up data "
-"between geographically distributed clusters in order to protect "
-"against catastrophic failures"
-msgstr ""
-"link:https://docs.jboss.org/author/display/ISPN/"
-"Cross+site+replication[クロスサイトレプリケーション] "
-"機能により、地理的に分散したクラスタ間でデータをバックアップし、致命的な障害から保護することができます。"
+msgid "The https://docs.jboss.org/author/display/ISPN/Cross+site+replication[cross-site replication] functionality which allows backing up data between geographically distributed clusters in order to protect against catastrophic failures"
+msgstr "link:https://docs.jboss.org/author/display/ISPN/Cross+site+replication[クロスサイトレプリケーション] 機能により、地理的に分散したクラスタ間でデータをバックアップし、致命的な障害から保護することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-08-infinispan-520cr1-is-out.adoc:36
 #, fuzzy
-msgid ""
-"https://issues.jboss.org/browse/ISPN-1410[Rolling upgrades] of the hotrod "
-"clusters (zero downtime for upgrades)"
-msgstr ""
-"ホットロッドクラスタの link:https://issues.jboss.org/browse/ISPN-1410[ローリングアップグレード] "
-"（アップグレードのためのダウンタイムゼロ"
+msgid "https://issues.jboss.org/browse/ISPN-1410[Rolling upgrades] of the hotrod clusters (zero downtime for upgrades)"
+msgstr "ホットロッドクラスタの link:https://issues.jboss.org/browse/ISPN-1410[ローリングアップグレード] （アップグレードのためのダウンタイムゼロ"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-08-infinispan-520cr1-is-out.adoc:37
@@ -129,16 +95,8 @@ msgstr "Map/Reduceフレームワークの様々な修正と改善"
 #. type: Plain text
 #: upstream/_posts/2013-01-08-infinispan-520cr1-is-out.adoc:44
 #, fuzzy
-msgid ""
-"You can http://www.jboss.org/infinispan/downloads[download] the distribution "
-"or the https://repository.jboss.org/nexus/content/repositories/releases/org/"
-"infinispan/[maven artifact]. If you have any questions please check our http:"
-"//www.jboss.org/infinispan/forums[forums], our mailing lists or ping us "
-"directly on irc://irc.freenode.org/infinispan[IRC]!"
-msgstr ""
-"ディストリビューションまたは maven アーティファクトを link:http://www.jboss.org/infinispan/"
-"downloads[ダウンロードする] ことができます。質問がある場合は、 link:http://www.jboss.org/infinispan/"
-"forums[フォーラムや] メーリングリストをチェックするか、IRCで直接質問してください!"
+msgid "You can http://www.jboss.org/infinispan/downloads[download] the distribution or the https://repository.jboss.org/nexus/content/repositories/releases/org/infinispan/[maven artifact]. If you have any questions please check our http://www.jboss.org/infinispan/forums[forums], our mailing lists or ping us directly on irc://irc.freenode.org/infinispan[IRC]!"
+msgstr "ディストリビューションまたは maven アーティファクトを link:http://www.jboss.org/infinispan/downloads[ダウンロードする] ことができます。質問がある場合は、 link:http://www.jboss.org/infinispan/forums[フォーラムや] メーリングリストをチェックするか、IRCで直接質問してください!"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-08-infinispan-520cr1-is-out.adoc:50

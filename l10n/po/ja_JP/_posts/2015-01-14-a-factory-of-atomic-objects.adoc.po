@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 'A Factory of Atomic Objects '\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2015-01-14T03:34:00.000-08:00'\n"
 "author: infinispan\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7119280900298638951\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/01/a-factory-of-atomic-"
-"objects.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7119280900298638951\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/01/a-factory-of-atomic-objects.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,58 +42,21 @@ msgstr ""
 "date: '2015-01-14T03:34:00.000-08:00'\n"
 "author: infinispan\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7119280900298638951\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/01/a-factory-of-atomic-"
-"objects.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7119280900298638951\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/01/a-factory-of-atomic-objects.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:25
 #, fuzzy
-msgid ""
-"Distributed systems aggregate large numbers of heterogeneous components that "
-"are subject to failures and asynchrony. To tame such a capricious nature, "
-"systems designers resort to non-blocking techniques such as http://en."
-"wikipedia.org/wiki/State_machine_replication[state machine replication.] "
-"This approach provides consistent http://en.wikipedia.org/wiki/Non-"
-"blocking_algorithm[non-blocking] operations to a shared object replicated at "
-"a quorum of machines. State machine replication is a classical paradigm to "
-"consistently orchestrate concurrency between remote processes in a "
-"distributed system, and as such a weapon of choice to manage metadata "
-"operations. This approach is at work in many services such as Apache http://"
-"zookeeper.apache.org/[ZooKeeper], Google http://en.wikipedia.org/wiki/"
-"Distributed_lock_manager[Chubby], or http://openreplica.org/[Open Replica]."
-msgstr ""
-"分散システムは、故障や非同期の影響を受ける異種コンポーネントを多数集積しています。このような気まぐれな性質を飼いならすために、システム設計者は link:"
-"http://en.wikipedia.org/wiki/State_machine_replication[ステートマシンレプリケーションの] "
-"ようなノンブロッキング技術に頼っています。このアプローチでは、マシンの定足数でレプリケートされた共有オブジェクトに対して、一貫した link:http:/"
-"/en.wikipedia.org/wiki/Non-blocking_algorithm[ノンブ] "
-"ロッキング操作を提供します。ステートマシンレプリケーションは、分散システムにおけるリモートプロセス間の同時実行性を一貫してオーケストレーションするための古典的なパラダイムであり、メタデータ操作を管理するための選択の武器となっています。このアプローチは、Apache "
-"link:http://zookeeper.apache.org/[ZooKeeper] 、Google link:http://en."
-"wikipedia.org/wiki/Distributed_lock_manager[Chubby] 、Open link:http://"
-"openreplica.org/[Replica] などの多くのサービスで採用されています。"
+msgid "Distributed systems aggregate large numbers of heterogeneous components that are subject to failures and asynchrony. To tame such a capricious nature, systems designers resort to non-blocking techniques such as http://en.wikipedia.org/wiki/State_machine_replication[state machine replication.] This approach provides consistent http://en.wikipedia.org/wiki/Non-blocking_algorithm[non-blocking] operations to a shared object replicated at a quorum of machines. State machine replication is a classical paradigm to consistently orchestrate concurrency between remote processes in a distributed system, and as such a weapon of choice to manage metadata operations. This approach is at work in many services such as Apache http://zookeeper.apache.org/[ZooKeeper], Google http://en.wikipedia.org/wiki/Distributed_lock_manager[Chubby], or http://openreplica.org/[Open Replica]."
+msgstr "分散システムは、故障や非同期の影響を受ける異種コンポーネントを多数集積しています。このような気まぐれな性質を飼いならすために、システム設計者は link:http://en.wikipedia.org/wiki/State_machine_replication[ステートマシンレプリケーションの] ようなノンブロッキング技術に頼っています。このアプローチでは、マシンの定足数でレプリケートされた共有オブジェクトに対して、一貫した link:http://en.wikipedia.org/wiki/Non-blocking_algorithm[ノンブ] ロッキング操作を提供します。ステートマシンレプリケーションは、分散システムにおけるリモートプロセス間の同時実行性を一貫してオーケストレーションするための古典的なパラダイムであり、メタデータ操作を管理するための選択の武器となっています。このアプローチは、Apache link:http://zookeeper.apache.org/[ZooKeeper] 、Google link:http://en.wikipedia.org/wiki/Distributed_lock_manager[Chubby] 、Open link:http://openreplica.org/[Replica] などの多くのサービスで採用されています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:37
 #, fuzzy
-msgid ""
-"The (experimental)  https://github.com/otrack/Leads-infinispan/tree/"
-"atomicObjectFactory/atomic-factory[atomic object factory] module is an "
-"implementation of the state machine replication paradigm over Infinispan. "
-"Using the factory is as simple as employing the synchronized keyword in Java:"
-" it suffices to call it with a Serializable class, and it wraps for you the "
-"dependability, consistency and liveness guarantees of the instantiated "
-"object over multiple Infinispan servers. The factory is universal in the "
-"sense that it can instantiate an object of any (serializable) class atop an "
-"Infinispan cache, making transparently the object replicated and durable, "
-"while ensuring strong consistency despite concurrent access."
-msgstr ""
-"(実験的な link:https://github.com/otrack/Leads-infinispan/tree/"
-"atomicObjectFactory/atomic-factory[)アトミック・オブジェクト・ファクトリー・モジュール] "
-"は、Infinispan上のステートマシン・レプリケーション・パラダイムの実装です。ファクトリーを使うのは、Java の synchronized "
-"キーワードを使うのと同じくらい簡単です。シリアライズ可能なクラスで呼び出すだけで十分で、複数の Infinispan "
-"サーバ上でインスタンス化されたオブジェクトの信頼性、一貫性、生き生きとした動作を保証してくれます。ファクトリーは、Infinispanキャッシュの上に任意の（シリアライズ可能な）クラスのオブジェクトをインスタンス化することができるという意味で普遍的です。"
+msgid "The (experimental)  https://github.com/otrack/Leads-infinispan/tree/atomicObjectFactory/atomic-factory[atomic object factory] module is an implementation of the state machine replication paradigm over Infinispan. Using the factory is as simple as employing the synchronized keyword in Java: it suffices to call it with a Serializable class, and it wraps for you the dependability, consistency and liveness guarantees of the instantiated object over multiple Infinispan servers. The factory is universal in the sense that it can instantiate an object of any (serializable) class atop an Infinispan cache, making transparently the object replicated and durable, while ensuring strong consistency despite concurrent access."
+msgstr "(実験的な link:https://github.com/otrack/Leads-infinispan/tree/atomicObjectFactory/atomic-factory[)アトミック・オブジェクト・ファクトリー・モジュール] は、Infinispan上のステートマシン・レプリケーション・パラダイムの実装です。ファクトリーを使うのは、Java の synchronized キーワードを使うのと同じくらい簡単です。シリアライズ可能なクラスで呼び出すだけで十分で、複数の Infinispan サーバ上でインスタンス化されたオブジェクトの信頼性、一貫性、生き生きとした動作を保証してくれます。ファクトリーは、Infinispanキャッシュの上に任意の（シリアライズ可能な）クラスのオブジェクトをインスタンス化することができるという意味で普遍的です。"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:39
@@ -106,28 +67,14 @@ msgstr "基本的な使い方"
 #. type: Plain text
 #: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:43
 #, fuzzy
-msgid ""
-"Using the AtomicObjectFactory is fairly simple. We illustrate below a base "
-"use case. Additional examples are provided in the maven test directories."
-msgstr ""
-"AtomicObjectFactoryの使用方法は非常に簡単です。以下に基本的なユースケースを示します。その他の例は maven "
-"のテストディレクトリにあります。"
+msgid "Using the AtomicObjectFactory is fairly simple. We illustrate below a base use case. Additional examples are provided in the maven test directories."
+msgstr "AtomicObjectFactoryの使用方法は非常に簡単です。以下に基本的なユースケースを示します。その他の例は maven のテストディレクトリにあります。"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:53
 #, fuzzy
-msgid ""
-"AtomicObjectFactory factory = new AtomicObjectFactory(c1); // c1 is a cache "
-"Set set = (Set) factory.getInstanceOf(HashSet.class, \"k\"); // k is the "
-"storage key set.add(\"something\"); // some call examples System.out."
-"println(set.toString())  set.addAll(set); factory.disposeInstanceOf(HashSet."
-"class, \"set\", true); // to persistently store the object"
-msgstr ""
-"AtomicObjectFactory factory = new AtomicObjectFactory(c1); // c1はキャッシュ Set "
-"set = (Set) factory.getInstanceOf(HashSet.class, \"k\"); // kはストレージキー "
-"setです。add(\"something\"); // いくつかの呼び出し例 System.out.println(set.toString()) "
-"set.addAll(set); factory.disposeInstanceOf(HashSet.class, \"set\", true); // "
-"オブジェクトを永続的に保存するには"
+msgid "AtomicObjectFactory factory = new AtomicObjectFactory(c1); // c1 is a cache Set set = (Set) factory.getInstanceOf(HashSet.class, \"k\"); // k is the storage key set.add(\"something\"); // some call examples System.out.println(set.toString())  set.addAll(set); factory.disposeInstanceOf(HashSet.class, \"set\", true); // to persistently store the object"
+msgstr "AtomicObjectFactory factory = new AtomicObjectFactory(c1); // c1はキャッシュ Set set = (Set) factory.getInstanceOf(HashSet.class, \"k\"); // kはストレージキー setです。add(\"something\"); // いくつかの呼び出し例 System.out.println(set.toString()) set.addAll(set); factory.disposeInstanceOf(HashSet.class, \"set\", true); // オブジェクトを永続的に保存するには"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:55
@@ -138,14 +85,8 @@ msgstr "制限と保証"
 #. type: Plain text
 #: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:60
 #, fuzzy
-msgid ""
-"The implementation requires that all the arguments of the methods of the "
-"object are Serializable, as well as the object itself. An object created by "
-"the factory is atomic provided that the cache which supports it is both "
-"synchronous and transactional."
-msgstr ""
-"実装では、オブジェクト自体と同様に、オブジェクトのメソッドのすべての引数が Serializable "
-"であることが要求されます。ファクトリーによって作成されたオブジェクトは、それをサポートするキャッシュが同期的でトランザクション的であればアトミックです。"
+msgid "The implementation requires that all the arguments of the methods of the object are Serializable, as well as the object itself. An object created by the factory is atomic provided that the cache which supports it is both synchronous and transactional."
+msgstr "実装では、オブジェクト自体と同様に、オブジェクトのメソッドのすべての引数が Serializable であることが要求されます。ファクトリーによって作成されたオブジェクトは、それをサポートするキャッシュが同期的でトランザクション的であればアトミックです。"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:62
@@ -155,25 +96,19 @@ msgstr "さらなる飛躍を目指して"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:69
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "*White Paper.*\n"
 "The factory is described in Section 4 of the paper titled \"On the\n"
 "Support of Versioning in Distributed Key-Value Stores\" published at the\n"
 "33rd IEEE Symposium on Reliable Distributed Systems (SRDS'14). A\n"
 "preprint version of this paper is available at the following\n"
-"https://drive.google.com/file/d/0BwFkGepvBDQoTEdPS0x6VXhqMW8/edit?usp="
-"sharing[location].\n"
-msgstr ""
-"*ホワイトペーパーに掲載されています。* 第33回IEEE Symposium on Reliable Distributed Systems "
-"(SRDS'14)で発表された「On the Support of Versioning in Distributed Key-Value "
-"Stores」というタイトルの論文のセクション4で、ファクトリーについて説明されています。本論文のプレプリント版は以下の link:https://"
-"drive.google.com/file/d/0BwFkGepvBDQoTEdPS0x6VXhqMW8/edit?usp=sharing[場所] "
-"で入手可能です。"
+"https://drive.google.com/file/d/0BwFkGepvBDQoTEdPS0x6VXhqMW8/edit?usp=sharing[location].\n"
+msgstr "*ホワイトペーパーに掲載されています。* 第33回IEEE Symposium on Reliable Distributed Systems (SRDS'14)で発表された「On the Support of Versioning in Distributed Key-Value Stores」というタイトルの論文のセクション4で、ファクトリーについて説明されています。本論文のプレプリント版は以下の link:https://drive.google.com/file/d/0BwFkGepvBDQoTEdPS0x6VXhqMW8/edit?usp=sharing[場所] で入手可能です。"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-14-a-factory-of-atomic-objects.adoc:76
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "*High-level Implementation Details.*\n"
 "We built the factory on top of the transactional facility of Infinispan.\n"
@@ -182,6 +117,4 @@ msgid ""
 "transaction consisting of a single put operation. When the call is\n"
 "de-serialized, it is applied to the local copy and, in case the calling\n"
 "process was local, the response value is returned.\n"
-msgstr ""
-"*ハイレベルな実装内容。I* "
-"nfinispanのトランザクション機能の上にファクトリーを構築しました。より詳細には、オブジェクトが作成されると、ローカルコピーとキャッシュリスナーとして登録されたプロキシの両方を格納します。単一のプット操作で構成されるトランザクション内のすべてのコールをシリアライズします。呼び出しがデシリアライズされると、それはローカルコピーに適用され、呼び出しプロセスがローカルであった場合には、応答値が返されます。"
+msgstr "*ハイレベルな実装内容。I* nfinispanのトランザクション機能の上にファクトリーを構築しました。より詳細には、オブジェクトが作成されると、ローカルコピーとキャッシュリスナーとして登録されたプロキシの両方を格納します。単一のプット操作で構成されるトランザクション内のすべてのコールをシリアライズします。呼び出しがデシリアライズされると、それはローカルコピーに適用され、呼び出しプロセスがローカルであった場合には、応答値が返されます。"

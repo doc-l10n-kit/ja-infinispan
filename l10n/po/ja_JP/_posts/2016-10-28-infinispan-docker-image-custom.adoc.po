@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:14
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 'Infinispan Docker image: custom configuration'\n"
@@ -36,10 +36,8 @@ msgid ""
 "\"configuration\",\n"
 "\"cli\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6156455781570179027\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/10/infinispan-docker-"
-"image-custom.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6156455781570179027\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/10/infinispan-docker-image-custom.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -52,78 +50,52 @@ msgstr ""
 "\"configuration\",\n"
 "\"cli\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6156455781570179027\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/10/infinispan-docker-"
-"image-custom.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6156455781570179027\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/10/infinispan-docker-image-custom.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:21
 #, fuzzy
-msgid ""
-"In the http://blog.infinispan.org/2016/07/improved-infinispan-docker-image."
-"html[previous post] we introduced the improved Docker image for Infinispan "
-"and showed how to run it with different parameters in order to create "
-"standalone, clustered and domain mode servers."
-msgstr ""
-"link:http://blog.infinispan.org/2016/07/improved-infinispan-docker-image."
-"html[前回の記事] "
-"では、Infinispan用に改良されたDockerイメージを紹介し、スタンドアロン、クラスター化、ドメインモードのサーバーを作成するために、さまざまなパラメータで実行する方法を紹介しました。"
+msgid "In the http://blog.infinispan.org/2016/07/improved-infinispan-docker-image.html[previous post] we introduced the improved Docker image for Infinispan and showed how to run it with different parameters in order to create standalone, clustered and domain mode servers."
+msgstr "link:http://blog.infinispan.org/2016/07/improved-infinispan-docker-image.html[前回の記事] では、Infinispan用に改良されたDockerイメージを紹介し、スタンドアロン、クラスター化、ドメインモードのサーバーを作成するために、さまざまなパラメータで実行する方法を紹介しました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:25
 #, fuzzy
-msgid ""
-"This post will show how to address more advanced configuration changes than "
-"swapping the JGroups stack, covering cases like creating extra caches or "
-"using a pre-existent configuration file."
-msgstr ""
-"この記事では、JGroups "
-"スタックのスワップよりも高度な設定変更に対応する方法を紹介し、追加キャッシュの作成や既存の設定ファイルの使用などのケースをカバーします。"
+msgid "This post will show how to address more advanced configuration changes than swapping the JGroups stack, covering cases like creating extra caches or using a pre-existent configuration file."
+msgstr "この記事では、JGroups スタックのスワップよりも高度な設定変更に対応する方法を紹介し、追加キャッシュの作成や既存の設定ファイルの使用などのケースをカバーします。"
 
 #. type: Title ====
 #: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:27
 #: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:65
 #: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:92
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid " "
 msgstr " "
 
 #. type: Title ====
 #: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:29
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Runtime configuration changes"
 msgstr "ランタイム設定の変更"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:34
 #, fuzzy
-msgid ""
-"Since the Infinispan server is based on Wildfly, it also supports the "
-"Command Line Interface (CLI) to change configurations at runtime."
-msgstr ""
-"InfinispanサーバーはWildflyをベースにしているため、実行時に設定を変更するためのコマンドラインインターフェイス（CLI）にも対応しています。"
+msgid "Since the Infinispan server is based on Wildfly, it also supports the Command Line Interface (CLI) to change configurations at runtime."
+msgstr "InfinispanサーバーはWildflyをベースにしているため、実行時に設定を変更するためのコマンドラインインターフェイス（CLI）にも対応しています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:40
 #, fuzzy
-msgid ""
-"Let's consider an example of a custom indexed cache with Infinispan storage. "
-"In order to configure it, we need 4 caches, one cache to hold our data, "
-"called _testCache_ and other three caches to hold the indexes:  "
-"_LuceneIndexesMetadata_, _LuceneIndexesData_ and _LuceneIndexesLocking_."
-msgstr ""
-"Infinispan ストレージを使用したカスタムインデックスキャッシュの例を考えてみましょう。これを設定するためには、4 つのキャッシュが必要です。1 "
-"つはデータを保持するキャッシュで _testCache_ と呼ばれ、残りの 3 つはインデックスを保持するキャッシュです: "
-"_LuceneIndexesMetadata,_ _LuceneIndexesData_ _,_ _LuceneIndexesLocking_ 。"
+msgid "Let's consider an example of a custom indexed cache with Infinispan storage. In order to configure it, we need 4 caches, one cache to hold our data, called _testCache_ and other three caches to hold the indexes:  _LuceneIndexesMetadata_, _LuceneIndexesData_ and _LuceneIndexesLocking_."
+msgstr "Infinispan ストレージを使用したカスタムインデックスキャッシュの例を考えてみましょう。これを設定するためには、4 つのキャッシュが必要です。1 つはデータを保持するキャッシュで _testCache_ と呼ばれ、残りの 3 つはインデックスを保持するキャッシュです: _LuceneIndexesMetadata,_ _LuceneIndexesData_ _,_ _LuceneIndexesLocking_ 。"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:43
 #, fuzzy
-msgid ""
-"This is normally achieved by adding this piece of configuration to the "
-"server xml:"
+msgid "This is normally achieved by adding this piece of configuration to the server xml:"
 msgstr "これは通常、この設定の一部をサーバのxmlに追加することで実現されます。"
 
 #. type: Plain text
@@ -147,92 +119,59 @@ msgstr "ここで CONTAINER は実行中のコンテナの ID です。"
 #. type: Plain text
 #: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:59
 #, fuzzy
-msgid ""
-"Everything that is applied using the CLI is automatically persisted in the "
-"server, and to check what the script produced, use the command to dump the "
-"config to a local file called _config.xml._"
-msgstr ""
-"CLIを使って適用されたものはすべてサーバに自動的に永続化され、スクリプトが生成したものを確認するには、config _.xml_ "
-"というローカルファイルにconfigをダンプするコマンドを使用します。"
+msgid "Everything that is applied using the CLI is automatically persisted in the server, and to check what the script produced, use the command to dump the config to a local file called _config.xml._"
+msgstr "CLIを使って適用されたものはすべてサーバに自動的に永続化され、スクリプトが生成したものを確認するには、config _.xml_ というローカルファイルにconfigをダンプするコマンドを使用します。"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:63
 #, fuzzy
-msgid ""
-"Check the file _config.xml_: it should contain all four caches created via "
-"the CLI."
+msgid "Check the file _config.xml_: it should contain all four caches created via the CLI."
 msgstr "_config.xml_ ファイルを確認してください。CLI経由で作成された4つのキャッシュがすべて含まれているはずです。"
 
 #. type: Title ====
 #: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:67
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid " Using an existent configuration file"
 msgstr "既存の設定ファイルの使用"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:75
 #, fuzzy
-msgid ""
-"Most of the time changing configuration at runtime is sufficient, but it may "
-"be desirable to run the server with an existent xml, or change "
-"configurations that cannot be applied without a restart. For those cases, "
-"the easier option is to mount a volume in the Docker container and start the "
-"container with the provided configuration."
-msgstr ""
-"ほとんどの場合、実行時に設定を変更するだけで十分ですが、既存のxmlを使ってサーバを実行したり、再起動しないと適用できない設定を変更したりすることが望ましい場合があります。そのような場合には、Dockerコンテナにボリュームをマウントして、指定された設定でコンテナを起動するのが簡単な方法です。"
+msgid "Most of the time changing configuration at runtime is sufficient, but it may be desirable to run the server with an existent xml, or change configurations that cannot be applied without a restart. For those cases, the easier option is to mount a volume in the Docker container and start the container with the provided configuration."
+msgstr "ほとんどの場合、実行時に設定を変更するだけで十分ですが、既存のxmlを使ってサーバを実行したり、再起動しないと適用できない設定を変更したりすることが望ましい場合があります。そのような場合には、Dockerコンテナにボリュームをマウントして、指定された設定でコンテナを起動するのが簡単な方法です。"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:79
 #, fuzzy
-msgid ""
-"This can be achieved with Docker's volume support. Consider an xml file "
-"called _customConfig.xml_ located on a local folder _/home/user/config_.  "
-"The following command:"
-msgstr ""
-"これはDockerのボリュームサポートで実現できます。ローカルフォルダ _/home/user/config_ にある _customConfig."
-"xml_ というxmlファイルを考えてみましょう。以下のコマンドを実行します。"
+msgid "This can be achieved with Docker's volume support. Consider an xml file called _customConfig.xml_ located on a local folder _/home/user/config_.  The following command:"
+msgstr "これはDockerのボリュームサポートで実現できます。ローカルフォルダ _/home/user/config_ にある _customConfig.xml_ というxmlファイルを考えてみましょう。以下のコマンドを実行します。"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:84
 #, fuzzy
-msgid ""
-"will create a volume inside the container at the _/opt/jboss/infinispan-"
-"server/standalone/configuration/extra/_ directory, with the contents of the "
-"local folder _/home/user/config_."
-msgstr ""
-"は、コンテナ内のボリュームを _/opt/jboss/infinispan-server/standalone/configuration/extra/"
-"_ ディレクトリに作成し、ローカルフォルダ _/home/user/config_ の内容を使用します。"
+msgid "will create a volume inside the container at the _/opt/jboss/infinispan-server/standalone/configuration/extra/_ directory, with the contents of the local folder _/home/user/config_."
+msgstr "は、コンテナ内のボリュームを _/opt/jboss/infinispan-server/standalone/configuration/extra/_ ディレクトリに作成し、ローカルフォルダ _/home/user/config_ の内容を使用します。"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:90
 #, fuzzy
-msgid ""
-"The container is then launched with the entrypoint _extra/customConfig_, "
-"which means it will use a configuration named _customConfig_ located under "
-"the _extra_ folder relative to where the configurations are usually located "
-"at _/opt/jboss/infinispan-server/standalone/configuration_."
-msgstr ""
-"これは、コンテナが _extra/customConfig_ というエントリポイントで起動され、通常 _/opt/jboss/infinispan-"
-"server/standalone/configuration_ にある設定の場所に相対的な _extra_ フォルダの下にある "
-"_customConfig_ という名前の設定を使用することを意味しています。"
+msgid "The container is then launched with the entrypoint _extra/customConfig_, which means it will use a configuration named _customConfig_ located under the _extra_ folder relative to where the configurations are usually located at _/opt/jboss/infinispan-server/standalone/configuration_."
+msgstr "これは、コンテナが _extra/customConfig_ というエントリポイントで起動され、通常 _/opt/jboss/infinispan-server/standalone/configuration_ にある設定の場所に相対的な _extra_ フォルダの下にある _customConfig_ という名前の設定を使用することを意味しています。"
 
 #. type: Title ====
 #: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:94
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Conclusion"
 msgstr "結論"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:99
 #, fuzzy
-msgid ""
-"And that's all about custom configuration using the Infinispan Docker image."
+msgid "And that's all about custom configuration using the Infinispan Docker image."
 msgstr "そして、InfinispanのDockerイメージを使ったカスタム設定については以上です。"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-28-infinispan-docker-image-custom.adoc:102
 #, fuzzy
-msgid ""
-"Stay tuned for the next post where we'll dive into multi-host clusters with "
-"the Infinispan Docker image."
+msgid "Stay tuned for the next post where we'll dive into multi-host clusters with the Infinispan Docker image."
 msgstr "次回の記事では、InfinispanのDockerイメージを使ってマルチホストクラスタに飛び込んでみます。"

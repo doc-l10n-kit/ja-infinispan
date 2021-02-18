@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-10-31-native-json-and-node-811-baseline-in.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-31-native-json-and-node-811-baseline-in.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Native JSON and Node 8.11 baseline in Node.js client 0.6.0!!\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2018-10-31T05:10:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \" release\", \"javascript\", \"node.js\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8447513288421285828\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/10/native-json-and-node-"
-"811-baseline-in.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8447513288421285828\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/10/native-json-and-node-811-baseline-in.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,10 +42,8 @@ msgstr ""
 "date: '2018-10-31T05:10:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \" release\", \"javascript\", \"node.js\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8447513288421285828\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/10/native-json-and-node-"
-"811-baseline-in.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8447513288421285828\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/10/native-json-and-node-811-baseline-in.html\n"
 "---\n"
 
 #. type: Plain text
@@ -59,57 +55,26 @@ msgstr "Infinispan Node.jsクライアント0.6.0がリリースされました!
 #. type: Plain text
 #: upstream/_posts/2018-10-31-native-json-and-node-811-baseline-in.adoc:16
 #, fuzzy
-msgid ""
-"As well as updating the client so that it understand the latest Hot Rod "
-"protocols in Infinispan 9.4.0.Final, this version comes with native JSON "
-"object support."
-msgstr ""
-"Infinispan 9.4.0.Finalの最新のHot "
-"Rodプロトコルを理解できるようにクライアントを更新しただけでなく、このバージョンではネイティブのJSONオブジェクトをサポートしています。"
+msgid "As well as updating the client so that it understand the latest Hot Rod protocols in Infinispan 9.4.0.Final, this version comes with native JSON object support."
+msgstr "Infinispan 9.4.0.Finalの最新のHot Rodプロトコルを理解できるようにクライアントを更新しただけでなく、このバージョンではネイティブのJSONオブジェクトをサポートしています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-31-native-json-and-node-811-baseline-in.adoc:22
 #, fuzzy
-msgid ""
-"To make the Node.js client backwards compatible, the client still treats key/"
-"value pairs as String by default. If you want to use native JSON objects, "
-"you have to explicitly configure the Node.js client to do so (see https://"
-"github.com/infinispan/js-client#supported-data-types[example])."
-msgstr ""
-"Node."
-"jsクライアントの下位互換性を確保するために、クライアントはキーと値のペアをデフォルトではまだStringとして扱います。ネイティブのJSONオブジェクトを使用したい場合は、Node."
-"jsクライアントを明示的に設定する必要があります( link:https://github.com/infinispan/js-"
-"client#supported-data-types[例を] 参照)。"
+msgid "To make the Node.js client backwards compatible, the client still treats key/value pairs as String by default. If you want to use native JSON objects, you have to explicitly configure the Node.js client to do so (see https://github.com/infinispan/js-client#supported-data-types[example])."
+msgstr "Node.jsクライアントの下位互換性を確保するために、クライアントはキーと値のペアをデフォルトではまだStringとして扱います。ネイティブのJSONオブジェクトを使用したい場合は、Node.jsクライアントを明示的に設定する必要があります( link:https://github.com/infinispan/js-client#supported-data-types[例を] 参照)。"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-31-native-json-and-node-811-baseline-in.adoc:28
 #, fuzzy
-msgid ""
-"Starting with this version, we've upgraded the base Node version requirement "
-"to 8.11, which is the latest stable release branch at the time of writing. "
-"With such upgrade, the client no longer needs to use external promise "
-"dependency which was know to https://issues.jboss.org/browse/HRJS-63[leak]."
-msgstr ""
-"このバージョンから、ベースとなる Node のバージョン要件を 8.11 にアップグレードしました。このようなアップグレードにより、 link:"
-"https://issues.jboss.org/browse/HRJS-63[リークする] "
-"ことが知られていた外部のプロミス依存関係を使用する必要がなくなりました。"
+msgid "Starting with this version, we've upgraded the base Node version requirement to 8.11, which is the latest stable release branch at the time of writing. With such upgrade, the client no longer needs to use external promise dependency which was know to https://issues.jboss.org/browse/HRJS-63[leak]."
+msgstr "このバージョンから、ベースとなる Node のバージョン要件を 8.11 にアップグレードしました。このようなアップグレードにより、 link:https://issues.jboss.org/browse/HRJS-63[リークする] ことが知られていた外部のプロミス依存関係を使用する必要がなくなりました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-31-native-json-and-node-811-baseline-in.adoc:35
 #, fuzzy
-msgid ""
-"If you're a Node.js user and want to store data remotely in Infinispan "
-"server instances, please give the client a go and tell us what you think of "
-"it via our https://developer.jboss.org/en/infinispan/content[forum], via our "
-"https://issues.jboss.org/projects/HRJS[issue tracker] or via https://"
-"zulipchat.com/[Zulip] on https://infinispan.zulipchat.com/[Infinispan "
-"channel]."
-msgstr ""
-"もしあなたがNode."
-"jsのユーザーで、Infinispanのサーバーインスタンスにリモートでデータを保存したいと思っているのであれば、ぜひこのクライアントを試してみて、 "
-"link:https://developer.jboss.org/en/infinispan/content[フォーラム] や link:https://"
-"issues.jboss.org/projects/HRJS[問題追跡] 、または link:https://infinispan.zulipchat."
-"com/[Infinispanチャンネル] の link:https://zulipchat.com/[Zulip] で感想を教えてください。"
+msgid "If you're a Node.js user and want to store data remotely in Infinispan server instances, please give the client a go and tell us what you think of it via our https://developer.jboss.org/en/infinispan/content[forum], via our https://issues.jboss.org/projects/HRJS[issue tracker] or via https://zulipchat.com/[Zulip] on https://infinispan.zulipchat.com/[Infinispan channel]."
+msgstr "もしあなたがNode.jsのユーザーで、Infinispanのサーバーインスタンスにリモートでデータを保存したいと思っているのであれば、ぜひこのクライアントを試してみて、 link:https://developer.jboss.org/en/infinispan/content[フォーラム] や link:https://issues.jboss.org/projects/HRJS[問題追跡] 、または link:https://infinispan.zulipchat.com/[Infinispanチャンネル] の link:https://zulipchat.com/[Zulip] で感想を教えてください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-31-native-json-and-node-811-baseline-in.adoc:37

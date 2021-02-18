@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-09-02-functional-map-api-working-with-single.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-02-functional-map-api-working-with-single.adoc:14
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 'Functional Map API: Working with single entries'\n"
@@ -36,10 +36,8 @@ msgid ""
 "\"API\",\n"
 "\"lambda\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6141964976245959693\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/09/functional-map-api-"
-"working-with-single.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6141964976245959693\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/09/functional-map-api-working-with-single.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -52,259 +50,92 @@ msgstr ""
 "\"API\",\n"
 "\"lambda\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6141964976245959693\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/09/functional-map-api-"
-"working-with-single.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6141964976245959693\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/09/functional-map-api-working-with-single.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-02-functional-map-api-working-with-single.adoc:20
 #, fuzzy
-msgid ""
-"In this blog post we'll continue with the introduction of the experimental "
-"Functional Map API, which was released as part of http://blog.infinispan.org/"
-"2015/08/infinispan-800final.html[Infinispan 8.0.0.Final], focusing on how to "
-"manipulate data using single-key operations."
-msgstr ""
-"今回のブログ記事では、 link:http://blog.infinispan.org/2015/08/infinispan-800final."
-"html[Infinispan 8.0.0.Final] の一環として公開された実験的なFunctional Map "
-"APIの紹介の続きで、シングルキー操作を使ってデータを操作する方法を中心に紹介していきます。"
+msgid "In this blog post we'll continue with the introduction of the experimental Functional Map API, which was released as part of http://blog.infinispan.org/2015/08/infinispan-800final.html[Infinispan 8.0.0.Final], focusing on how to manipulate data using single-key operations."
+msgstr "今回のブログ記事では、 link:http://blog.infinispan.org/2015/08/infinispan-800final.html[Infinispan 8.0.0.Final] の一環として公開された実験的なFunctional Map APIの紹介の続きで、シングルキー操作を使ってデータを操作する方法を中心に紹介していきます。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-02-functional-map-api-working-with-single.adoc:31
 #, fuzzy
-msgid ""
-"As mentioned in the http://blog.infinispan.org/2015/08/new-functional-map-"
-"api-in-infinispan-8.html[Functional Map API introduction], there are three "
-"types of operations that can be executed against a functional map: read-only "
-"operations (executed via https://docs.jboss.org/infinispan/8.0/apidocs/org/"
-"infinispan/commons/api/functional/FunctionalMap.ReadOnlyMap."
-"html[ReadOnlyMap]), write-only operations (executed via https://docs.jboss."
-"org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/"
-"FunctionalMap.WriteOnlyMap.html[WriteOnlyMap]), and read-write operations "
-"(executed via https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/"
-"commons/api/functional/FunctionalMap.ReadWriteMap.html[ReadWriteMap])  and ."
-msgstr ""
-"機能マップ link:http://blog.infinispan.org/2015/08/new-functional-map-api-in-"
-"infinispan-8.html[API の紹介] でも述べましたが、機能マップに対して実行できる操作には、読み取り専用操作（ link:https:/"
-"/docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/"
-"FunctionalMap.ReadOnlyMap.html[ReadOnlyMap] で実行）、書き込み専用操作（ link:https://docs."
-"jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/"
-"FunctionalMap.WriteOnlyMap.html[WriteOnlyMap] で実行）、読み書き操作（ link:https://docs."
-"jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/"
-"FunctionalMap.ReadWriteMap.html[ReadWriteMap] で実行）の 3 種類があります。"
+msgid "As mentioned in the http://blog.infinispan.org/2015/08/new-functional-map-api-in-infinispan-8.html[Functional Map API introduction], there are three types of operations that can be executed against a functional map: read-only operations (executed via https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.ReadOnlyMap.html[ReadOnlyMap]), write-only operations (executed via https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html[WriteOnlyMap]), and read-write operations (executed via https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.ReadWriteMap.html[ReadWriteMap])  and ."
+msgstr "機能マップ link:http://blog.infinispan.org/2015/08/new-functional-map-api-in-infinispan-8.html[API の紹介] でも述べましたが、機能マップに対して実行できる操作には、読み取り専用操作（ link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.ReadOnlyMap.html[ReadOnlyMap] で実行）、書き込み専用操作（ link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html[WriteOnlyMap] で実行）、読み書き操作（ link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.ReadWriteMap.html[ReadWriteMap] で実行）の 3 種類があります。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-02-functional-map-api-working-with-single.adoc:38
 #, fuzzy
-msgid ""
-"Firstly, we need construct instances of https://docs.jboss.org/infinispan/8."
-"0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.ReadOnlyMap."
-"html[ReadOnlyMap], https://docs.jboss.org/infinispan/8.0/apidocs/org/"
-"infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap."
-"html[WriteOnlyMap] and https://docs.jboss.org/infinispan/8.0/apidocs/org/"
-"infinispan/commons/api/functional/FunctionalMap.ReadWriteMap."
-"html[ReadWriteMap] to be able to work with them:"
-msgstr ""
-"まず、 link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/"
-"commons/api/functional/FunctionalMap.ReadOnlyMap.html[ReadOnlyMap] 、 link:"
-"https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/"
-"functional/FunctionalMap.WriteOnlyMap.html[WriteOnlyMap] 、 link:https://docs."
-"jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/"
-"FunctionalMap.ReadWriteMap.html[ReadWriteMap] "
-"のインスタンスを構築して、それらを扱えるようにする必要があります。"
+msgid "Firstly, we need construct instances of https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.ReadOnlyMap.html[ReadOnlyMap], https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html[WriteOnlyMap] and https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.ReadWriteMap.html[ReadWriteMap] to be able to work with them:"
+msgstr "まず、 link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.ReadOnlyMap.html[ReadOnlyMap] 、 link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html[WriteOnlyMap] 、 link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.ReadWriteMap.html[ReadWriteMap] のインスタンスを構築して、それらを扱えるようにする必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-02-functional-map-api-working-with-single.adoc:43
 #, fuzzy
-msgid ""
-"Next, let's see all three types of operations in action, chaining them to "
-"store a single key/value pair along with some metadata, then read it and "
-"finally delete a returning the previously stored data:"
-msgstr ""
-"次に、3 種類の操作の動作を見てみましょう。これらの操作を連鎖させて、1 "
-"つのキーと値のペアをメタデータと一緒に保存し、それを読み込み、最後に以前に保存したデータを返す削除を行います。"
+msgid "Next, let's see all three types of operations in action, chaining them to store a single key/value pair along with some metadata, then read it and finally delete a returning the previously stored data:"
+msgstr "次に、3 種類の操作の動作を見てみましょう。これらの操作を連鎖させて、1 つのキーと値のペアをメタデータと一緒に保存し、それを読み込み、最後に以前に保存したデータを返す削除を行います。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-02-functional-map-api-working-with-single.adoc:47
 #, fuzzy
-msgid ""
-"This example demonstrates some of the key aspects of working with single "
-"entries using the Functional Map API:"
+msgid "This example demonstrates some of the key aspects of working with single entries using the Functional Map API:"
 msgstr "この例では、Functional Map API を使用して単一のエントリを操作する際の重要な側面をいくつか示しています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-02-functional-map-api-working-with-single.adoc:58
 #, fuzzy
-msgid ""
-"Single entry methods are asynchronous returning https://docs.oracle.com/"
-"javase/8/docs/api/java/util/concurrent/CompletableFuture."
-"html[CompletableFuture] instances which provide methods to compose and chain "
-"operations so that it can feel is they're being executed sequentially. "
-"Unfortunately Java does not have https://en.wikibooks.org/wiki/Haskell/"
-"do_notation[Haskell's do notation] or http://docs.scala-lang.org/tutorials/"
-"FAQ/yield.html[Scala's for comprehensions] to make it more palatable, but "
-"it's great news that Java finally offers mechanisms to work with "
-"CompletableFutures in a non-blocking way, even if they're a bit more verbose "
-"than what's proposed in other languages."
-msgstr ""
-"シングルエントリーメソッドは、非同期で link:https://docs.oracle.com/javase/8/docs/api/java/util/"
-"concurrent/CompletableFuture.html[CompletableFuture] "
-"インスタンスを返すもので、操作を構成して連鎖させるためのメソッドを提供しているので、順次実行されていると感じることができます。残念ながらJavaには "
-"link:https://en.wikibooks.org/wiki/Haskell/do_notation[Haskellのdo記法] や link:"
-"http://docs.scala-lang.org/tutorials/FAQ/yield.html[Scalaの内包] "
-"表現がないため、より分かりやすいものになっていませんが、他の言語で提案されているものよりも少し冗長ではありますが、JavaがついにCompletableFutureをノンブロッキングで動作させるメカニズムを提供するようになったのは嬉しいニュースです。"
+msgid "Single entry methods are asynchronous returning https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html[CompletableFuture] instances which provide methods to compose and chain operations so that it can feel is they're being executed sequentially. Unfortunately Java does not have https://en.wikibooks.org/wiki/Haskell/do_notation[Haskell's do notation] or http://docs.scala-lang.org/tutorials/FAQ/yield.html[Scala's for comprehensions] to make it more palatable, but it's great news that Java finally offers mechanisms to work with CompletableFutures in a non-blocking way, even if they're a bit more verbose than what's proposed in other languages."
+msgstr "シングルエントリーメソッドは、非同期で link:https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html[CompletableFuture] インスタンスを返すもので、操作を構成して連鎖させるためのメソッドを提供しているので、順次実行されていると感じることができます。残念ながらJavaには link:https://en.wikibooks.org/wiki/Haskell/do_notation[Haskellのdo記法] や link:http://docs.scala-lang.org/tutorials/FAQ/yield.html[Scalaの内包] 表現がないため、より分かりやすいものになっていませんが、他の言語で提案されているものよりも少し冗長ではありますが、JavaがついにCompletableFutureをノンブロッキングで動作させるメカニズムを提供するようになったのは嬉しいニュースです。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-02-functional-map-api-working-with-single.adoc:65
 #, fuzzy
-msgid ""
-"All data-handling methods for https://docs.jboss.org/infinispan/8.0/apidocs/"
-"org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap."
-"html[WriteOnlyMap] return https://docs.oracle.com/javase/8/docs/api/java/"
-"util/concurrent/CompletableFuture.html[CompletableFuture<Void>], meaning "
-"that the user can find out when the operation has completed but nothing "
-"else, because there's nothing the function can provide that could not be "
-"computed in advance or outside the function."
-msgstr ""
-"link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/"
-"api/functional/FunctionalMap.WriteOnlyMap.html[WriteOnlyMap の] "
-"すべてのデータ処理メソッドは link:https://docs.oracle.com/javase/8/docs/api/java/util/"
-"concurrent/CompletableFuture.html[CompletableFuture<Void> を] 返します． "
-"つまり，ユーザは操作が完了したときに知ることができますが，それ以外には何もありません．"
+msgid "All data-handling methods for https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html[WriteOnlyMap] return https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html[CompletableFuture<Void>], meaning that the user can find out when the operation has completed but nothing else, because there's nothing the function can provide that could not be computed in advance or outside the function."
+msgstr "link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html[WriteOnlyMap の] すべてのデータ処理メソッドは link:https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html[CompletableFuture<Void> を] 返します． つまり，ユーザは操作が完了したときに知ることができますが，それ以外には何もありません．"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-02-functional-map-api-working-with-single.adoc:73
 #, fuzzy
-msgid ""
-"The return type for most of the data handling methods in https://docs.jboss."
-"org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/"
-"FunctionalMap.ReadOnlyMap.html[ReadOnlyMap] (and https://docs.jboss.org/"
-"infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap."
-"ReadWriteMap.html[ReadWriteMap])  are quite flexible. So, a function can "
-"decide to return value information, or metadata, or for convenience, it can "
-"also return the ReadEntryView it receives as parameter. This can be useful "
-"for users wanting to return both value and metadata parameter information."
-msgstr ""
-"link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/"
-"api/functional/FunctionalMap.ReadOnlyMap.html[ReadOnlyMap] （および link:https://"
-"docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/"
-"FunctionalMap.ReadWriteMap.html[ReadWriteMap] "
-"）のデータ処理メソッドのほとんどの戻り値の型は、非常に柔軟性があります。つまり、関数は値の情報を返すか、メタデータを返すかを決めることができますし、便宜上、パラメータとして受け取ったReadEntryViewを返すこともできます。これは、値とメタデータの両方のパラメータ情報を返したい場合に便利です。"
+msgid "The return type for most of the data handling methods in https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.ReadOnlyMap.html[ReadOnlyMap] (and https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.ReadWriteMap.html[ReadWriteMap])  are quite flexible. So, a function can decide to return value information, or metadata, or for convenience, it can also return the ReadEntryView it receives as parameter. This can be useful for users wanting to return both value and metadata parameter information."
+msgstr "link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.ReadOnlyMap.html[ReadOnlyMap] （および link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.ReadWriteMap.html[ReadWriteMap] ）のデータ処理メソッドのほとんどの戻り値の型は、非常に柔軟性があります。つまり、関数は値の情報を返すか、メタデータを返すかを決めることができますし、便宜上、パラメータとして受け取ったReadEntryViewを返すこともできます。これは、値とメタデータの両方のパラメータ情報を返したい場合に便利です。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-02-functional-map-api-working-with-single.adoc:83
 #, fuzzy
-msgid ""
-"The read-write operation demonstrated above showed how to remove an entry "
-"and return the previously associated value. In this particular case, we know "
-"there's a value associated with the entry and hence we called https://docs."
-"jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/"
-"EntryView.ReadEntryView.html[ReadEntryView.get()] directly, but if we were "
-"not sure if the value is present or not, https://docs.jboss.org/infinispan/8."
-"0/apidocs/org/infinispan/commons/api/functional/EntryView.ReadEntryView."
-"html#find--[ReadEntryView.find()] should be called and return the https://"
-"docs.oracle.com/javase/8/docs/api/java/util/Optional.html[Optional] instance "
-"instead."
-msgstr ""
-"上の例では、エントリを削除して以前に関連付けられていた値を返す方法を示しました。この特定のケースでは、エントリに関連付けられた値があることがわかっているので、 "
-"link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/"
-"api/functional/EntryView.ReadEntryView.html[ReadEntryView.get()を] "
-"直接呼び出しましたが、値があるかどうかわからない場合は、 link:https://docs.jboss.org/infinispan/8.0/"
-"apidocs/org/infinispan/commons/api/functional/EntryView.ReadEntryView."
-"html#find--[ReadEntryView.find()を] 呼び出して代わりに link:https://docs.oracle.com/"
-"javase/8/docs/api/java/util/Optional.html[Optionalの] インスタンスを返す必要があります。"
+msgid "The read-write operation demonstrated above showed how to remove an entry and return the previously associated value. In this particular case, we know there's a value associated with the entry and hence we called https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/EntryView.ReadEntryView.html[ReadEntryView.get()] directly, but if we were not sure if the value is present or not, https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/EntryView.ReadEntryView.html#find--[ReadEntryView.find()] should be called and return the https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html[Optional] instance instead."
+msgstr "上の例では、エントリを削除して以前に関連付けられていた値を返す方法を示しました。この特定のケースでは、エントリに関連付けられた値があることがわかっているので、 link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/EntryView.ReadEntryView.html[ReadEntryView.get()を] 直接呼び出しましたが、値があるかどうかわからない場合は、 link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/EntryView.ReadEntryView.html#find--[ReadEntryView.find()を] 呼び出して代わりに link:https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html[Optionalの] インスタンスを返す必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-02-functional-map-api-working-with-single.adoc:90
 #, fuzzy
-msgid ""
-"In the example, https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/"
-"commons/api/functional/MetaParam.MetaLifespan.html[Lifespan metadata "
-"parameter] is constructed using the new Java Time API available in Java 8, "
-"but it could have been done equally with http://docs.oracle.com/javase/8/"
-"docs/api/java/util/concurrent/TimeUnit.html[java.util.concurrent.TimeUnit] "
-"as long as the conversion was done to number of milliseconds during which "
-"the entry should be accessible."
-msgstr ""
-"この例では、 link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/"
-"commons/api/functional/MetaParam.MetaLifespan.html[Lifespanメタデータ・パラメータは] "
-"Java 8で利用可能な新しいJava Time APIを使用して構築されていますが、エントリがアクセス可能なミリ秒数に変換されていれば、java "
-"link:http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit."
-"html[.util.concurrent.TimeUnit] でも同様に行うことができます。"
+msgid "In the example, https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/MetaParam.MetaLifespan.html[Lifespan metadata parameter] is constructed using the new Java Time API available in Java 8, but it could have been done equally with http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html[java.util.concurrent.TimeUnit] as long as the conversion was done to number of milliseconds during which the entry should be accessible."
+msgstr "この例では、 link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/MetaParam.MetaLifespan.html[Lifespanメタデータ・パラメータは] Java 8で利用可能な新しいJava Time APIを使用して構築されていますが、エントリがアクセス可能なミリ秒数に変換されていれば、java link:http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html[.util.concurrent.TimeUnit] でも同様に行うことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-02-functional-map-api-working-with-single.adoc:94
 #, fuzzy
-msgid ""
-"Lifespan-based expiration works just as it does with other Infinispan APIs, "
-"so you can easily modify the example to lower the lifespan, wait for "
-"duration to pass and then verify that the value is not present any more."
-msgstr ""
-"ライフスパンベースの有効期限は、他の Infinispan API "
-"と同じように動作するので、例を簡単に変更して、ライフスパンを下げて、デュレーションが通過するのを待ってから、値がもう存在しないことを確認することができます。"
+msgid "Lifespan-based expiration works just as it does with other Infinispan APIs, so you can easily modify the example to lower the lifespan, wait for duration to pass and then verify that the value is not present any more."
+msgstr "ライフスパンベースの有効期限は、他の Infinispan API と同じように動作するので、例を簡単に変更して、ライフスパンを下げて、デュレーションが通過するのを待ってから、値がもう存在しないことを確認することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-02-functional-map-api-working-with-single.adoc:109
 #, fuzzy
-msgid ""
-"If storing a constant value, https://docs.jboss.org/infinispan/8.0/apidocs/"
-"org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html#eval-K-"
-"java.util.function.Consumer-[WriteOnlyMap.eval(K, Consumer)] could be used "
-"instead of https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/"
-"commons/api/functional/FunctionalMap.WriteOnlyMap.html#eval-K-V-java.util."
-"function.BiConsumer-[WriteOnlyMap.eval(K, V, Consumer)], making the code "
-"clearer, but if the value is variable, https://docs.jboss.org/infinispan/8.0/"
-"apidocs/org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap."
-"html#eval-K-V-java.util.function.BiConsumer-[WriteOnlyMap.eval(K, V, "
-"Consumer)] should be used to avoid, as much as possible, functions capturing "
-"external variables. Clearly, operations exposed by functional map can't "
-"cover all scenarios and there might be situations where external variables "
-"are captured by functions, but these should in general, should be a minority."
-" Here is as example showing how to implement http://docs.oracle.com/javase/8/"
-"docs/api/java/util/concurrent/ConcurrentSkipListMap.html#replace-K-V-V-"
-"[ConcurrentMap.replace(K, V, V)] where external variable capturing is "
-"required:"
-msgstr ""
-"定数値を格納する場合は、WriteOnly link:https://docs.jboss.org/infinispan/8.0/apidocs/org/"
-"infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html#eval-K-V-"
-"java.util.function.BiConsumer-[Map.eval(K, V, Consumer)] の代わりに WriteOnlyMap."
-"eval(K, V, Consumer) link:https://docs.jboss.org/infinispan/8.0/apidocs/org/"
-"infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html#eval-K-"
-"java.util.function.Consumer-[を] "
-"使用することでコードをより明確にすることができますが、値が変数の場合は、WriteOnlyMap.eval(K link:https://docs."
-"jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/"
-"FunctionalMap.WriteOnlyMap.html#eval-K-V-java.util.function.BiConsumer-[, V, "
-"Consumer] ) を使用して、関数が外部変数を捕捉することを可能な限り避ける link:https://docs.jboss.org/"
-"infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap."
-"WriteOnlyMap.html#eval-K-V-java.util.function.BiConsumer-[べきです] "
-"。明らかに、関数マップによって公開される操作はすべてのシナリオをカバーすることはできませんし、外部変数が関数によって捕捉される状況もあるかもしれませんが、一般的には少数派であるべきです。ここでは、外部変数の捕捉が必要な場合の "
-"link:http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/"
-"ConcurrentSkipListMap.html#replace-K-V-V-[ConcurrentMap.replace(K, V, V) の] "
-"実装方法を例に挙げています。"
+msgid "If storing a constant value, https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html#eval-K-java.util.function.Consumer-[WriteOnlyMap.eval(K, Consumer)] could be used instead of https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html#eval-K-V-java.util.function.BiConsumer-[WriteOnlyMap.eval(K, V, Consumer)], making the code clearer, but if the value is variable, https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html#eval-K-V-java.util.function.BiConsumer-[WriteOnlyMap.eval(K, V, Consumer)] should be used to avoid, as much as possible, functions capturing external variables. Clearly, operations exposed by functional map can't cover all scenarios and there might be situations where external variables are captured by functions, but these should in general, should be a minority. Here is as example showing how to implement http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#replace-K-V-V-[ConcurrentMap.replace(K, V, V)] where external variable capturing is required:"
+msgstr "定数値を格納する場合は、WriteOnly link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html#eval-K-V-java.util.function.BiConsumer-[Map.eval(K, V, Consumer)] の代わりに WriteOnlyMap.eval(K, V, Consumer) link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html#eval-K-java.util.function.Consumer-[を] 使用することでコードをより明確にすることができますが、値が変数の場合は、WriteOnlyMap.eval(K link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html#eval-K-V-java.util.function.BiConsumer-[, V, Consumer] ) を使用して、関数が外部変数を捕捉することを可能な限り避ける link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html#eval-K-V-java.util.function.BiConsumer-[べきです] 。明らかに、関数マップによって公開される操作はすべてのシナリオをカバーすることはできませんし、外部変数が関数によって捕捉される状況もあるかもしれませんが、一般的には少数派であるべきです。ここでは、外部変数の捕捉が必要な場合の link:http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#replace-K-V-V-[ConcurrentMap.replace(K, V, V) の] 実装方法を例に挙げています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-02-functional-map-api-working-with-single.adoc:120
 #, fuzzy
-msgid ""
-"The reason we didn't add a WriteOnly.eval(K, V, V, Consumer) to the API is "
-"because value-equality-based replace comparisons are just one type of "
-"replace operations that could be executed. In other cases, metadata "
-"parameter based comparison might be more suitable, e.g. Hot Rod replace "
-"operation where version (a type of metadata parameter) equality is the "
-"deciding factor to determine whether the replace should happen or not."
-msgstr ""
-"APIにWriteOnly.eval(K, V, V, "
-"Consumer)を追加しなかった理由は、値と等質性に基づく置換比較は、実行可能な置換操作の一種類に過ぎないからです。他のケースでは、メタデータパラメータに基づく比較の方が適しているかもしれません。例えば、バージョン（メタデータパラメータの一種である）の等号性が置換を行うかどうかの決定要因となるHot "
-"Rodの置換操作などです。"
+msgid "The reason we didn't add a WriteOnly.eval(K, V, V, Consumer) to the API is because value-equality-based replace comparisons are just one type of replace operations that could be executed. In other cases, metadata parameter based comparison might be more suitable, e.g. Hot Rod replace operation where version (a type of metadata parameter) equality is the deciding factor to determine whether the replace should happen or not."
+msgstr "APIにWriteOnly.eval(K, V, V, Consumer)を追加しなかった理由は、値と等質性に基づく置換比較は、実行可能な置換操作の一種類に過ぎないからです。他のケースでは、メタデータパラメータに基づく比較の方が適しているかもしれません。例えば、バージョン（メタデータパラメータの一種である）の等号性が置換を行うかどうかの決定要因となるHot Rodの置換操作などです。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-02-functional-map-api-working-with-single.adoc:123
 #, fuzzy
-msgid ""
-"In the next blog post, we'll be looking at how to work with multiple entries "
-"using the Functional Map API."
+msgid "In the next blog post, we'll be looking at how to work with multiple entries using the Functional Map API."
 msgstr "次回のブログ記事では、Functional Map APIを使って複数のエントリを扱う方法を見ていきたいと思います。"
 
 #. type: Plain text

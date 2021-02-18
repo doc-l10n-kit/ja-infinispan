@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-05-14-infinispan-700alpha4-is-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-14-infinispan-700alpha4-is-out.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 7.0.0.Alpha4 is out!\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2014-05-14T03:00:00.000-07:00'\n"
 "author: pruivo\n"
 "tags: [ \" security\", \"hotrod\", \"infinispan\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1315063477974879014\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/05/infinispan-700alpha4-"
-"is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1315063477974879014\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/05/infinispan-700alpha4-is-out.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,10 +42,8 @@ msgstr ""
 "date: '2014-05-14T03:00:00.000-07:00'\n"
 "author: pruivo\n"
 "tags: [ \" security\", \"hotrod\", \"infinispan\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1315063477974879014\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/05/infinispan-700alpha4-"
-"is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1315063477974879014\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/05/infinispan-700alpha4-is-out.html\n"
 "---\n"
 
 #. type: Plain text
@@ -70,7 +66,7 @@ msgstr "リリースのハイライトは"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-14-infinispan-700alpha4-is-out.adoc:25
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "*HotRod* protocol now supports *authorization* and the\n"
 "*SKIP_CACHE_LOAD* flag;\n"
@@ -78,7 +74,7 @@ msgstr "*HotRod* プロトコルが *認可* と *SKIP_CACHE_LOAD* フラグを�
 
 #. type: Plain text
 #: upstream/_posts/2014-05-14-infinispan-700alpha4-is-out.adoc:28
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "*Distributed entry iterator* which allows iterate over all entries in\n"
 "the cluster;\n"
@@ -92,7 +88,7 @@ msgstr "クエリDSLを使ったオブジェクトのフィルタリングとプ
 
 #. type: Plain text
 #: upstream/_posts/2014-05-14-infinispan-700alpha4-is-out.adoc:33
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "*Apache Lucene 4.8.0* is now supported and JGroups was upgraded to\n"
 "3.5.0.Beta5;\n"
@@ -107,29 +103,14 @@ msgstr "複数の改善とバグ修正"
 #. type: Plain text
 #: upstream/_posts/2014-05-14-infinispan-700alpha4-is-out.adoc:43
 #, fuzzy
-msgid ""
-"For a complete list of features and bug fixes included in this release "
-"please refer to the https://issues.jboss.org/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12324506[release notes]. Visit our http://"
-"infinispan.org/download/[downloads] section to find the latest release."
-msgstr ""
-"このリリースに含まれる機能とバグフィックスの完全なリストについては、 link:https://issues.jboss.org/secure/"
-"ReleaseNote.jspa?projectId=12310799&version=12324506[リリースノート] "
-"を参照してください。最新のリリースについては、 link:http://infinispan.org/download/[ダウンロード] "
-"セクションをご覧ください。"
+msgid "For a complete list of features and bug fixes included in this release please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12324506[release notes]. Visit our http://infinispan.org/download/[downloads] section to find the latest release."
+msgstr "このリリースに含まれる機能とバグフィックスの完全なリストについては、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12324506[リリースノート] を参照してください。最新のリリースについては、 link:http://infinispan.org/download/[ダウンロード] セクションをご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-14-infinispan-700alpha4-is-out.adoc:50
 #, fuzzy
-msgid ""
-"If you have any questions please check our http://infinispan.org/community/"
-"[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-"
-"dev[mailing lists] or ping us directly on irc://irc.freenode.org/"
-"infinispan[IRC]."
-msgstr ""
-"質問がある場合は、 link:http://infinispan.org/community/[フォーラム] や link:https://lists."
-"jboss.org/mailman/listinfo/infinispan-dev[メーリングリストを] チェックするか、 link:irc://irc."
-"freenode.org/infinispan[IRC] で直接pingしてください。"
+msgid "If you have any questions please check our http://infinispan.org/community/[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+msgstr "質問がある場合は、 link:http://infinispan.org/community/[フォーラム] や link:https://lists.jboss.org/mailman/listinfo/infinispan-dev[メーリングリストを] チェックするか、 link:irc://irc.freenode.org/infinispan[IRC] で直接pingしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-14-infinispan-700alpha4-is-out.adoc:54

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 10.0.0.Alpha3 and 9.4.6.Final\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2019-01-28T01:35:00.001-08:00'\n"
 "author: ttarrant\n"
 "tags: [ \" release\", \"alpha\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1707835156921122618\n"
-"blogger_orig_url: https://blog.infinispan.org/2019/01/1000alpha3-and-"
-"946final.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1707835156921122618\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/01/1000alpha3-and-946final.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,10 +42,8 @@ msgstr ""
 "date: '2019-01-28T01:35:00.001-08:00'\n"
 "author: ttarrant\n"
 "tags: [ \" release\", \"alpha\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1707835156921122618\n"
-"blogger_orig_url: https://blog.infinispan.org/2019/01/1000alpha3-and-"
-"946final.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1707835156921122618\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/01/1000alpha3-and-946final.html\n"
 "---\n"
 
 #. type: Plain text
@@ -64,7 +60,7 @@ msgstr "Infinispanチームは今日、あなたのために2つのリリース�
 
 #. type: Title ==
 #: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:16
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "10.0.0.Alpha3"
 msgstr "10.0.0.0.Alpha3"
 
@@ -77,9 +73,7 @@ msgstr "このリリースには3つの機能が含まれています。"
 #. type: Plain text
 #: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:24
 #, fuzzy
-msgid ""
-"[ISPN-4075] - State transfer should preserve the creation timestamp of "
-"entries"
+msgid "[ISPN-4075] - State transfer should preserve the creation timestamp of entries"
 msgstr "ISPN-4075] - 状態遷移はエントリの作成タイムスタンプを保持する必要があります。"
 
 #. type: Plain text
@@ -103,41 +97,24 @@ msgstr "ISPN-9771] - JSON形式での設定に対応しました。"
 #. type: Plain text
 #: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:33
 #, fuzzy
-msgid ""
-"We've also started removing code which was deprecated in the past, so check "
-"the http://infinispan.org/docs/dev/upgrading/upgrading.html[upgrading "
-"document] to see what you need to adapt in your application. This document "
-"will receive further changes during the 10.0 cycle."
-msgstr ""
-"また、過去に非推奨とされていたコードの削除も開始しましたので、 link:http://infinispan.org/docs/dev/"
-"upgrading/upgrading.html[アップグレードドキュメント] "
-"をチェックして、アプリケーションに適応させる必要があるものを確認してください。このドキュメントは 10.0 "
-"サイクルの間にさらに変更が加えられる予定です。"
+msgid "We've also started removing code which was deprecated in the past, so check the http://infinispan.org/docs/dev/upgrading/upgrading.html[upgrading document] to see what you need to adapt in your application. This document will receive further changes during the 10.0 cycle."
+msgstr "また、過去に非推奨とされていたコードの削除も開始しましたので、 link:http://infinispan.org/docs/dev/upgrading/upgrading.html[アップグレードドキュメント] をチェックして、アプリケーションに適応させる必要があるものを確認してください。このドキュメントは 10.0 サイクルの間にさらに変更が加えられる予定です。"
 
 #. type: Plain text
 #: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:36
 #, fuzzy
-msgid ""
-"https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
-"12339174[The complete list of issues resolved in 10.0.0.Alpha3.]"
-msgstr ""
-"link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12310799&version=12339174[10.0.0.0.Alpha3で解決された問題の完全なリストです。]"
+msgid "https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12339174[The complete list of issues resolved in 10.0.0.Alpha3.]"
+msgstr "link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12339174[10.0.0.0.Alpha3で解決された問題の完全なリストです。]"
 
 #. type: Plain text
 #: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:41
 #, fuzzy
-msgid ""
-"Some other features are in the works and should be landing during the beta "
-"period. Check the https://blog.infinispan.org/2018/11/the-road-to-infinispan-"
-"10-alpha1.html[first of the alpha posts] to learn more about the new stuff."
-msgstr ""
-"他にもいくつかの機能が準備中で、ベータ期間中には実装されるはずです。 link:https://blog.infinispan.org/2018/11/"
-"the-road-to-infinispan-10-alpha1.html[アルファ版の最初の投稿] をチェックして、新機能の詳細を確認してください。"
+msgid "Some other features are in the works and should be landing during the beta period. Check the https://blog.infinispan.org/2018/11/the-road-to-infinispan-10-alpha1.html[first of the alpha posts] to learn more about the new stuff."
+msgstr "他にもいくつかの機能が準備中で、ベータ期間中には実装されるはずです。 link:https://blog.infinispan.org/2018/11/the-road-to-infinispan-10-alpha1.html[アルファ版の最初の投稿] をチェックして、新機能の詳細を確認してください。"
 
 #. type: Title ==
 #: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:44
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "9.4.6.Final"
 msgstr "9.4.6.最終"
 
@@ -156,12 +133,8 @@ msgstr "ハイライトは"
 #. type: Plain text
 #: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:54
 #, fuzzy
-msgid ""
-"[ISPN-7889] - BaseDistributionInterceptor.remoteGet may cause concurrency "
-"issues [ISPN-8889] - Data race in NonTxInvocationContext"
-msgstr ""
-"ISPN-7889] - BaseDistributionInterceptor.remoteGetで同時実行の問題が発生する可能性があります "
-"[ISPN-8889] - NonTxInvocationContextでデータ競合が発生します。"
+msgid "[ISPN-7889] - BaseDistributionInterceptor.remoteGet may cause concurrency issues [ISPN-8889] - Data race in NonTxInvocationContext"
+msgstr "ISPN-7889] - BaseDistributionInterceptor.remoteGetで同時実行の問題が発生する可能性があります [ISPN-8889] - NonTxInvocationContextでデータ競合が発生します。"
 
 #. type: Plain text
 #: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:55
@@ -178,28 +151,17 @@ msgstr "ISPN-9822] - BasicComponentRegistryImplがセキュリティマネージ
 #. type: Plain text
 #: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:58
 #, fuzzy
-msgid ""
-"[ISPN-9819] - Improve Spring-Session events handling in remote and embedded"
+msgid "[ISPN-9819] - Improve Spring-Session events handling in remote and embedded"
 msgstr "ISPN-9819] - リモートおよび組み込みのSpring-Sessionイベント処理の改善"
 
 #. type: Plain text
 #: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:62
 #, fuzzy
-msgid ""
-"https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
-"12340282[The complete list of issues resolved in 9.4.6.Final.]"
-msgstr ""
-"link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12310799&version=12340282[9.4.6.Finalで解決された問題の完全なリスト。]"
+msgid "https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12340282[The complete list of issues resolved in 9.4.6.Final.]"
+msgstr "link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12340282[9.4.6.Finalで解決された問題の完全なリスト。]"
 
 #. type: Plain text
 #: upstream/_posts/2019-01-28-1000alpha3-and-946final.adoc:67
 #, fuzzy
-msgid ""
-"Please report any issues in our https://issues.jboss.org/browse/ISPN[issue "
-"tracker] and join the conversation in our https://infinispan.zulipchat.com/"
-"[Zulip Chat] to shape up our next release."
-msgstr ""
-"私たちの問題 link:https://issues.jboss.org/browse/ISPN[追跡] "
-"に問題があれば報告し、次のリリースを形作るために link:https://infinispan.zulipchat.com/[Zulipチャット] "
-"で会話に参加してください。"
+msgid "Please report any issues in our https://issues.jboss.org/browse/ISPN[issue tracker] and join the conversation in our https://infinispan.zulipchat.com/[Zulip Chat] to shape up our next release."
+msgstr "私たちの問題 link:https://issues.jboss.org/browse/ISPN[追跡] に問題があれば報告し、次のリリースを形作るために link:https://infinispan.zulipchat.com/[Zulipチャット] で会話に参加してください。"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:8
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 12.0.0.Final\n"
@@ -44,7 +44,7 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Infinispan 12.0.0.Final"
 msgstr "Infinispan 12.0.0.Final"
 
@@ -57,43 +57,25 @@ msgstr "インフィニスパンのコミュニティへ"
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:16
 #, fuzzy
-msgid ""
-"we hope you, your families and colleagues are doing well in these trying "
-"times.  We've been working hard over the last few months to bring you a "
-"brand-new release of Infinispan. Infinispan 12, aptly codenamed https://"
-"kildarebrewing.ie/Lockdown-IPA-2-0-5-7-12-Pack-p191649230[Lockdown] comes "
-"loaded with a number of notable features as well as the usual slew of fixes "
-"and cleanups."
-msgstr ""
-"皆様、ご家族、同僚の皆様におかれましては、この困難な時代を元気に過ごされていることを願っております。私たちはこの数ヶ月間、Infinispanの新しいリリースをお届けするために努力してきました。Infinispan "
-"12は、コードネーム「 link:https://kildarebrewing.ie/Lockdown-IPA-2-0-5-7-12-Pack-"
-"p191649230[Lockdown」] と名付けられ、多くの注目すべき機能を搭載しており、通常の修正やクリーンアップも多数含まれています。"
+msgid "we hope you, your families and colleagues are doing well in these trying times.  We've been working hard over the last few months to bring you a brand-new release of Infinispan. Infinispan 12, aptly codenamed https://kildarebrewing.ie/Lockdown-IPA-2-0-5-7-12-Pack-p191649230[Lockdown] comes loaded with a number of notable features as well as the usual slew of fixes and cleanups."
+msgstr "皆様、ご家族、同僚の皆様におかれましては、この困難な時代を元気に過ごされていることを願っております。私たちはこの数ヶ月間、Infinispanの新しいリリースをお届けするために努力してきました。Infinispan 12は、コードネーム「 link:https://kildarebrewing.ie/Lockdown-IPA-2-0-5-7-12-Pack-p191649230[Lockdown」] と名付けられ、多くの注目すべき機能を搭載しており、通常の修正やクリーンアップも多数含まれています。"
 
 #. type: Title ===
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:17
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Indexing and Search"
 msgstr "インデックスと検索"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:22
 #, fuzzy
-msgid ""
-"Our good friends over at http://hibernate.org/search/[Hibernate Search] have "
-"been working hard on delivering an awesome https://in.relation.to/2020/12/11/"
-"hibernate-search-6-0-0-Final/[new release] and have also helped us integrate "
-"it in Infinispan. This is not just an upgrade: we have taken the opportunity "
-"to evolve our indexing configuration:"
-msgstr ""
-"link:http://hibernate.org/search/[Hibernate Search] の友人たちは、素晴らしい link:https:/"
-"/in.relation.to/2020/12/11/hibernate-search-6-0-0-Final/[新しいリリースを] "
-"提供するために懸命に働き、Infinispanへの統合にも協力してくれました。これは単なるアップグレードではありません。"
+msgid "Our good friends over at http://hibernate.org/search/[Hibernate Search] have been working hard on delivering an awesome https://in.relation.to/2020/12/11/hibernate-search-6-0-0-Final/[new release] and have also helped us integrate it in Infinispan. This is not just an upgrade: we have taken the opportunity to evolve our indexing configuration:"
+msgstr "link:http://hibernate.org/search/[Hibernate Search] の友人たちは、素晴らしい link:https://in.relation.to/2020/12/11/hibernate-search-6-0-0-Final/[新しいリリースを] 提供するために懸命に働き、Infinispanへの統合にも協力してくれました。これは単なるアップグレードではありません。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:24
 #, fuzzy
-msgid ""
-"Upgraded to Hibernate Search 6, that brings support for Lucene 8 indexes"
+msgid "Upgraded to Hibernate Search 6, that brings support for Lucene 8 indexes"
 msgstr "Hibernate Search 6 にアップグレードし、Lucene 8 のインデックスをサポートしました。"
 
 #. type: Plain text
@@ -111,24 +93,18 @@ msgstr "インデックス付き、インデックスなし、ハイブリッド
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:27
 #, fuzzy
-msgid ""
-"Introduced strong typed indexing configuration that replaces the string key/"
-"value properties."
+msgid "Introduced strong typed indexing configuration that replaces the string key/value properties."
 msgstr "文字列のキー/値のプロパティを置き換える強力な型付きインデックス設定を導入しました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:29
 #, fuzzy
-msgid ""
-"Head over to the much improved https://infinispan.org/docs/stable/titles/"
-"developing/developing.html#search_api[documentation]."
-msgstr ""
-"改良された link:https://infinispan.org/docs/stable/titles/developing/developing."
-"html#search_api[ドキュメントを] ご覧ください。"
+msgid "Head over to the much improved https://infinispan.org/docs/stable/titles/developing/developing.html#search_api[documentation]."
+msgstr "改良された link:https://infinispan.org/docs/stable/titles/developing/developing.html#search_api[ドキュメントを] ご覧ください。"
 
 #. type: Title ===
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:30
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Configuration"
 msgstr "構成"
 
@@ -141,51 +117,32 @@ msgstr "設定APIの改善点をいくつか紹介しました。"
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:35
 #, fuzzy
-msgid ""
-"Runtime creation of templates: the remote APIs now allow creating "
-"configuration templates."
+msgid "Runtime creation of templates: the remote APIs now allow creating configuration templates."
 msgstr "テンプレートのランタイム作成：リモートAPIで設定テンプレートを作成できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:38
 #, fuzzy
-msgid ""
-"Configuration Fragments: when creating caches and templates via the remote "
-"APIs, you no longer need to wrap their configuration in the "
-"`<infinispan><cache-container>...</cache-container></infinispan>` elements, "
-"but you can simply use the cache definition directly, e.g.: `<distributed-"
-"cache name=”mycache”/>`"
-msgstr ""
-"設定の断片: リモート API を介してキャッシュやテンプレートを作成する際に、 `<infinispan><cache-container>…</"
-"cache-container></infinispan>` "
-"要素でそれらの設定をラップする必要がなくなりましたが、キャッシュ定義を直接使用することができます。 `<distributed-cache name="
-"”mycache”/>`"
+msgid "Configuration Fragments: when creating caches and templates via the remote APIs, you no longer need to wrap their configuration in the `<infinispan><cache-container>...</cache-container></infinispan>` elements, but you can simply use the cache definition directly, e.g.: `<distributed-cache name=”mycache”/>`"
+msgstr "設定の断片: リモート API を介してキャッシュやテンプレートを作成する際に、 `<infinispan><cache-container>…</cache-container></infinispan>` 要素でそれらの設定をラップする必要がなくなりましたが、キャッシュ定義を直接使用することができます。 `<distributed-cache name=”mycache”/>`"
 
 #. type: Title ===
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:39
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Marshalling"
 msgstr "マーシャリング"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:42
 #, fuzzy
-msgid ""
-"A new `@ProtoAdapter` annotation has been added to ProtoStream for "
-"generating `.proto` files and marshallers for third party classes"
-msgstr ""
-"新しい `@ProtoAdapter` アノテーションが ProtoStream に追加され、サードパーティクラス用の `.proto` "
-"ファイルとマーシャラーが生成されるようになりました。"
+msgid "A new `@ProtoAdapter` annotation has been added to ProtoStream for generating `.proto` files and marshallers for third party classes"
+msgstr "新しい `@ProtoAdapter` アノテーションが ProtoStream に追加され、サードパーティクラス用の `.proto` ファイルとマーシャラーが生成されるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:43
 #, fuzzy
-msgid ""
-"`SerializationContextInitializer` implementations are automatically "
-"discovered and configured via Java ServiceLoader."
-msgstr ""
-"`SerializationContextInitializer` 実装は、Java ServiceLoader "
-"を通じて自動的に検出され、設定されます。"
+msgid "`SerializationContextInitializer` implementations are automatically discovered and configured via Java ServiceLoader."
+msgstr "`SerializationContextInitializer` 実装は、Java ServiceLoader を通じて自動的に検出され、設定されます。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:44
@@ -195,119 +152,75 @@ msgstr "ユーザータイプがInfinispan内部のコンテキストから完�
 
 #. type: Title ===
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:45
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Cross Site Replication"
 msgstr "クロスサイトレプリケーション"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:48
 #, fuzzy
-msgid ""
-"Our work on improving asynchronous cross-site replication continues with the "
-"following improvements:"
+msgid "Our work on improving asynchronous cross-site replication continues with the following improvements:"
 msgstr "非同期クロスサイトレプリケーションを改善するための作業は、以下のような改善を続けています。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:51
 #, fuzzy
-msgid ""
-"a new SPI for merging conflicting values: if two (or more) write operations "
-"happen simultaneously in different sites, the conflict is detected and the "
-"SPI is invoked to merge the values. Merge policies determine which action "
-"will be taken in case of conflict between updates of different sites. Some "
-"predefined merge policies can be found https://docs.jboss.org/infinispan/12."
-"0/apidocs/org/infinispan/xsite/spi/XSiteMergePolicy.html[here]."
-msgstr ""
-"競合する値をマージするための新しい SPI: 異なるサイトで 2 つ (またはそれ以上) の書き込み操作が同時に発生した場合、競合が検出され、SPI "
-"が呼び出されて値をマージします。マージポリシーは、異なるサイトの更新が競合した場合にどのようなアクションを取るかを決定します。定義済みのマージポリシーのいくつかは "
-"link:https://docs.jboss.org/infinispan/12.0/apidocs/org/infinispan/xsite/spi/"
-"XSiteMergePolicy.html[こちら] を参照してください。"
+msgid "a new SPI for merging conflicting values: if two (or more) write operations happen simultaneously in different sites, the conflict is detected and the SPI is invoked to merge the values. Merge policies determine which action will be taken in case of conflict between updates of different sites. Some predefined merge policies can be found https://docs.jboss.org/infinispan/12.0/apidocs/org/infinispan/xsite/spi/XSiteMergePolicy.html[here]."
+msgstr "競合する値をマージするための新しい SPI: 異なるサイトで 2 つ (またはそれ以上) の書き込み操作が同時に発生した場合、競合が検出され、SPI が呼び出されて値をマージします。マージポリシーは、異なるサイトの更新が競合した場合にどのようなアクションを取るかを決定します。定義済みのマージポリシーのいくつかは link:https://docs.jboss.org/infinispan/12.0/apidocs/org/infinispan/xsite/spi/XSiteMergePolicy.html[こちら] を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:52
 #, fuzzy
-msgid ""
-"Exponential back-off added for network failures: ff the network between the "
-"sites disconnects, Infinispan will retry less frequently before giving up. "
-"It helps reduce the CPU utilization."
-msgstr ""
-"ネットワーク障害に指数関数的なバックオフを追加: "
-"サイト間のネットワークが切断された場合、Infinispanはリトライの頻度を減らしてから、諦めます。これはCPUの使用率を下げるのに役立ちます。"
+msgid "Exponential back-off added for network failures: ff the network between the sites disconnects, Infinispan will retry less frequently before giving up. It helps reduce the CPU utilization."
+msgstr "ネットワーク障害に指数関数的なバックオフを追加: サイト間のネットワークが切断された場合、Infinispanはリトライの頻度を減らしてから、諦めます。これはCPUの使用率を下げるのに役立ちます。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:53
 #, fuzzy
-msgid ""
-"Automatic disconnection if the cache configuration does not exist or is "
-"incorrect: if Infinispan tries to backup to a remote site and the remote "
-"site doesn’t have the cache defined, the remote site is automatically taken "
-"offline."
-msgstr ""
-"キャッシュ設定が存在しない場合や不正な場合の自動切断: Infinispan "
-"がリモートサイトにバックアップしようとしたときに、リモートサイトにキャッシュが定義されていない場合、リモートサイトは自動的にオフラインになります。"
+msgid "Automatic disconnection if the cache configuration does not exist or is incorrect: if Infinispan tries to backup to a remote site and the remote site doesn’t have the cache defined, the remote site is automatically taken offline."
+msgstr "キャッシュ設定が存在しない場合や不正な場合の自動切断: Infinispan がリモートサイトにバックアップしようとしたときに、リモートサイトにキャッシュが定義されていない場合、リモートサイトは自動的にオフラインになります。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:54
 #, fuzzy
-msgid ""
-"Internal code improvements: the code is now non-blocking to reduce the CPU "
-"usage."
+msgid "Internal code improvements: the code is now non-blocking to reduce the CPU usage."
 msgstr "内部コードの改善：コードがノンブロッキングになり、CPUの使用量が減りました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:56
 #, fuzzy
-msgid ""
-"See https://infinispan.org/docs/stable/titles/xsite/xsite.html[cross-site "
-"replication documentation] for more information."
-msgstr ""
-"詳細については、 link:https://infinispan.org/docs/stable/titles/xsite/xsite."
-"html[クロスサイトレプリケーションのドキュメントを] 参照してください。"
+msgid "See https://infinispan.org/docs/stable/titles/xsite/xsite.html[cross-site replication documentation] for more information."
+msgstr "詳細については、 link:https://infinispan.org/docs/stable/titles/xsite/xsite.html[クロスサイトレプリケーションのドキュメントを] 参照してください。"
 
 #. type: Title ===
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:57
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Server"
 msgstr "サーバー"
 
 #. type: Title ====
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:59
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Backup/Restore"
 msgstr "バックアップ/復元"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:61
 #, fuzzy
-msgid ""
-"A backup archive, that contains container resources (caches, cache "
-"templates, counters, Protobuf schemas, server tasks)  currently stored in "
-"the cache manager, can now be created. The backup archive can then be used "
-"to restore Infinispan clusters content after a restart or migration. This "
-"feature is exposed via the REST endpoint, however backups can also be "
-"created via the Infinispan CLI or with Backup/Restore CRs when using the "
-"operator."
-msgstr ""
-"現在キャッシュマネージャに保存されているコンテナリソース（キャッシュ、キャッシュテンプレート、カウンタ、Protobufスキーマ、サーバータスク）を含むバックアップアーカイブを作成できるようになりました。バックアップアーカイブは、再起動や移行後にInfinispanクラスタのコンテンツを復元するために使用することができます。この機能はRESTエンドポイントを介して公開されていますが、バックアップはInfinispan "
-"CLIを介して、またはオペレータを使用している場合はBackup/Restore CRを使用して作成することもできます。"
+msgid "A backup archive, that contains container resources (caches, cache templates, counters, Protobuf schemas, server tasks)  currently stored in the cache manager, can now be created. The backup archive can then be used to restore Infinispan clusters content after a restart or migration. This feature is exposed via the REST endpoint, however backups can also be created via the Infinispan CLI or with Backup/Restore CRs when using the operator."
+msgstr "現在キャッシュマネージャに保存されているコンテナリソース（キャッシュ、キャッシュテンプレート、カウンタ、Protobufスキーマ、サーバータスク）を含むバックアップアーカイブを作成できるようになりました。バックアップアーカイブは、再起動や移行後にInfinispanクラスタのコンテンツを復元するために使用することができます。この機能はRESTエンドポイントを介して公開されていますが、バックアップはInfinispan CLIを介して、またはオペレータを使用している場合はBackup/Restore CRを使用して作成することもできます。"
 
 #. type: Title ====
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:62
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Credential Stores"
 msgstr "クレデンシャルストア"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:64
 #, fuzzy
-msgid ""
-"To protect sensitive text strings, such as passwords, in the server "
-"configuration, you can add them to a credential keystore and reference them. "
-"You can then configure the server to decrypt passwords for establishing "
-"connections with services such as databases or LDAP directories."
-msgstr ""
-"サーバ構成でパスワードなどの機密性の高い文字列を保護するには、それらをクレデンシャル・キーストアに追加して参照します。その後、データベースや LDAP "
-"ディレクトリなどのサービスとの接続を確立するためにパスワードを復号化するようにサーバを構成することができます。"
+msgid "To protect sensitive text strings, such as passwords, in the server configuration, you can add them to a credential keystore and reference them. You can then configure the server to decrypt passwords for establishing connections with services such as databases or LDAP directories."
+msgstr "サーバ構成でパスワードなどの機密性の高い文字列を保護するには、それらをクレデンシャル・キーストアに追加して参照します。その後、データベースや LDAP ディレクトリなどのサービスとの接続を確立するためにパスワードを復号化するようにサーバを構成することができます。"
 
 #. type: delimited block -
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:83
@@ -333,53 +246,38 @@ msgstr ""
 
 #. type: Title ====
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:85
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Multiple endpoints"
 msgstr "複数のエンドポイント"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:87
 #, fuzzy
-msgid ""
-"The server now allows definining multiple single-port endpoints, each one "
-"mapped to a separate socket binding and with its own security realm. This is "
-"useful if you want to expose an admin endpoint on an internal, management-"
-"only network as well as an endpoint for application uses."
-msgstr ""
-"サーバは複数のシングルポートのエンドポイントを定義できるようになりました。これは、管理者専用の内部ネットワーク上で admin "
-"エンドポイントを公開したい場合や、アプリケーション用のエンドポイントを公開したい場合に便利です。"
+msgid "The server now allows definining multiple single-port endpoints, each one mapped to a separate socket binding and with its own security realm. This is useful if you want to expose an admin endpoint on an internal, management-only network as well as an endpoint for application uses."
+msgstr "サーバは複数のシングルポートのエンドポイントを定義できるようになりました。これは、管理者専用の内部ネットワーク上で admin エンドポイントを公開したい場合や、アプリケーション用のエンドポイントを公開したい場合に便利です。"
 
 #. type: Title ====
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:88
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Optional authentication for metrics endpoint"
 msgstr "メトリクス・エンドポイントのオプション認証"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:90
 #, fuzzy
-msgid ""
-"Previously, the Prometheus-compatible metrics endpoint, published at http://"
-"infinispan:11222/metrics, used the same security semantics as the single "
-"port endpoint. It's now possible to allow anonymous connections to this "
-"endpoint, to simplify integration with your Prometheus scraper."
-msgstr ""
-"以前は、 http://infinispan:11222/metrics で公開されている Prometheus "
-"互換のメトリクスエンドポイントは、シングルポートエンドポイントと同じセキュリティセマンティクスを使用していました。このエンドポイントへの匿名接続を許可することで、Prometheus "
-"スクレーパーとの統合を簡素化することができるようになりました。"
+msgid "Previously, the Prometheus-compatible metrics endpoint, published at http://infinispan:11222/metrics, used the same security semantics as the single port endpoint. It's now possible to allow anonymous connections to this endpoint, to simplify integration with your Prometheus scraper."
+msgstr "以前は、 http://infinispan:11222/metrics で公開されている Prometheus 互換のメトリクスエンドポイントは、シングルポートエンドポイントと同じセキュリティセマンティクスを使用していました。このエンドポイントへの匿名接続を許可することで、Prometheus スクレーパーとの統合を簡素化することができるようになりました。"
 
 #. type: Title ====
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:91
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Custom server paths"
 msgstr "カスタムサーバーパス"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:93
 #, fuzzy
-msgid ""
-"It’s now possible to start the server by overriding each of the paths "
-"individually."
+msgid "It’s now possible to start the server by overriding each of the paths individually."
 msgstr "それぞれのパスを個別にオーバーライドしてサーバを起動することができるようになりました。"
 
 #. type: delimited block -
@@ -395,211 +293,150 @@ msgstr ""
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:103
 #, fuzzy
-msgid ""
-"Moreover, the server library path now supports multiple directories which "
-"will be scanned recursively for both JARs and bare resources such as "
-"property files."
-msgstr ""
-"さらに、サーバーライブラリのパスは複数のディレクトリをサポートしており、JARとプロパティファイルなどのベアリソースの両方を再帰的にスキャンします。"
+msgid "Moreover, the server library path now supports multiple directories which will be scanned recursively for both JARs and bare resources such as property files."
+msgstr "さらに、サーバーライブラリのパスは複数のディレクトリをサポートしており、JARとプロパティファイルなどのベアリソースの両方を再帰的にスキャンします。"
 
 #. type: Title ====
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:104
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Near caches with bloom filter"
 msgstr "ブルームフィルターが付いている付近のキャッシュ"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:106
 #, fuzzy
-msgid ""
-"The remote client has near caches that allow for values retrieved from the "
-"remote server to be cached locally on the client. This works great for "
-"workloads that are primarily read only. However, to provide consistency we "
-"have to listen to remote modification/removal events from the server, which "
-"can make work loads with a lot of writes not scale. As such we are "
-"introducing bloom filter assisted notifications that will reduce the amount "
-"of modification/removal events received from the server and thus would "
-"increase the scalability of write heavy applications using the near cache. "
-"This needs to be enabled in addition to near caching, which can be done via "
-"the client configuration xml or programmatic classes."
-msgstr ""
-"リモートクライアントにはニアキャッシュがあり、リモートサーバから取得した値をクライアントのローカルにキャッシュすることができます。これは主に読み取り専用のワークロードには最適です。しかし、一貫性を持たせるためには、サーバからのリモートの変更/"
-"削除イベントをリッスンしなければならず、大量の書き込みを伴う作業負荷をスケーリングできない可能性があります。そのため、私たちは bloom "
-"フィルタを使った通知機能を導入しています。これにより、サーバから受信する変更/"
-"削除イベントの量を減らすことができ、ニアキャッシュを使用する書き込みの多いアプリケーションのスケーラビリティを向上させることができます。これはニアキャッシュに加えて有効にする必要がありますが、これはクライアントの設定xmlやプログラマティッククラスを介して行うことができます。"
+msgid "The remote client has near caches that allow for values retrieved from the remote server to be cached locally on the client. This works great for workloads that are primarily read only. However, to provide consistency we have to listen to remote modification/removal events from the server, which can make work loads with a lot of writes not scale. As such we are introducing bloom filter assisted notifications that will reduce the amount of modification/removal events received from the server and thus would increase the scalability of write heavy applications using the near cache. This needs to be enabled in addition to near caching, which can be done via the client configuration xml or programmatic classes."
+msgstr "リモートクライアントにはニアキャッシュがあり、リモートサーバから取得した値をクライアントのローカルにキャッシュすることができます。これは主に読み取り専用のワークロードには最適です。しかし、一貫性を持たせるためには、サーバからのリモートの変更/削除イベントをリッスンしなければならず、大量の書き込みを伴う作業負荷をスケーリングできない可能性があります。そのため、私たちは bloom フィルタを使った通知機能を導入しています。これにより、サーバから受信する変更/削除イベントの量を減らすことができ、ニアキャッシュを使用する書き込みの多いアプリケーションのスケーラビリティを向上させることができます。これはニアキャッシュに加えて有効にする必要がありますが、これはクライアントの設定xmlやプログラマティッククラスを介して行うことができます。"
 
 #. type: Title ====
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:107
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Distributed tracing"
 msgstr "分散トレース"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:110
 #, fuzzy
-msgid ""
-"You can now integrate Infinispan's server with OpenTracing to perform "
-"distributed tracing."
+msgid "You can now integrate Infinispan's server with OpenTracing to perform distributed tracing."
 msgstr "InfinispanのサーバーをOpenTracingと統合して分散トレースを実行できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:112
 #, fuzzy
-msgid ""
-"Only track Hot Rod cache write requests (i.e. no counters, multimap etc.)"
+msgid "Only track Hot Rod cache write requests (i.e. no counters, multimap etc.)"
 msgstr "Hot Rod キャッシュ書き込みリクエストのみを追跡してください（つまり、カウンタやマルチマップなどはありません）。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:113
 #, fuzzy
-msgid ""
-"Select the OpenTracing implementation via the `infinispan.opentracing."
-"factory.class` and `infinispan.opentracing.factory.method` system properties."
-""
-msgstr ""
-"`infinispan.opentracing.factory.class` と `infinispan.opentracing.factory."
-"method` のシステムプロパティから OpenTracing の実装を選択します。"
+msgid "Select the OpenTracing implementation via the `infinispan.opentracing.factory.class` and `infinispan.opentracing.factory.method` system properties."
+msgstr "`infinispan.opentracing.factory.class` と `infinispan.opentracing.factory.method` のシステムプロパティから OpenTracing の実装を選択します。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:114
 #, fuzzy
-msgid ""
-"An OpenTracing implementation (is not included: instead it must be added to "
-"the server/lib directory (for example: the Jaeger OpenTracing "
-"implementation)."
-msgstr ""
-"OpenTracingの実装(含まれていません: 代わりにサーバ/libディレクトリに追加されなければなりません(例: Jaeger "
-"OpenTracingの実装)。"
+msgid "An OpenTracing implementation (is not included: instead it must be added to the server/lib directory (for example: the Jaeger OpenTracing implementation)."
+msgstr "OpenTracingの実装(含まれていません: 代わりにサーバ/libディレクトリに追加されなければなりません(例: Jaeger OpenTracingの実装)。"
 
 #. type: Title ===
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:115
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "CLI"
 msgstr "CLI"
 
 #. type: Title ====
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:117
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Benchmark tool"
 msgstr "ベンチマークツール"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:119
 #, fuzzy
-msgid ""
-"The CLI now includes a small convenience benchmark tool which allows you to "
-"measure latency and throughput of an Infinispan server using a specific "
-"configuration. You can use this when sizing resources based on your "
-"requirements."
-msgstr ""
-"CLIには、特定の構成を使用してInfinispanサーバのレイテンシとスループットを測定できる小さな便利なベンチマークツールが追加されました。これは、要件に基づいてリソースをサイジングする際に使用できます。"
+msgid "The CLI now includes a small convenience benchmark tool which allows you to measure latency and throughput of an Infinispan server using a specific configuration. You can use this when sizing resources based on your requirements."
+msgstr "CLIには、特定の構成を使用してInfinispanサーバのレイテンシとスループットを測定できる小さな便利なベンチマークツールが追加されました。これは、要件に基づいてリソースをサイジングする際に使用できます。"
 
 #. type: Title ====
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:120
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Native build"
 msgstr "ネイティブビルド"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:122
 #, fuzzy
-msgid ""
-"The CLI is available as a native build, thanks to https://quarkus.io/"
-"[Quarkus]. The binaries for Linux, Mac and Windows can be found https://"
-"github.com/infinispan/infinispan-quarkus/releases/tag/12.0.0.Final[here]."
-msgstr ""
-"CLIは link:https://quarkus.io/[Quarkusの] "
-"おかげでネイティブビルドで利用できます。Linux、Mac、Windows用のバイナリは link:https://github.com/"
-"infinispan/infinispan-quarkus/releases/tag/12.0.0.Final[ここに] あります。"
+msgid "The CLI is available as a native build, thanks to https://quarkus.io/[Quarkus]. The binaries for Linux, Mac and Windows can be found https://github.com/infinispan/infinispan-quarkus/releases/tag/12.0.0.Final[here]."
+msgstr "CLIは link:https://quarkus.io/[Quarkusの] おかげでネイティブビルドで利用できます。Linux、Mac、Windows用のバイナリは link:https://github.com/infinispan/infinispan-quarkus/releases/tag/12.0.0.Final[ここに] あります。"
 
 #. type: Title ====
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:123
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Kubernetes CLI"
 msgstr "Kubernetes CLI"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:125
 #, fuzzy
-msgid ""
-"When installing the native CLI as `kubectl-infinispan`, the CLI gains "
-"additional functionality to control the Infinispan operator, simplifying "
-"many operations. This includes the ability to install and uninstall the "
-"operator, create and delete Infinispan clusters and obtain information about "
-"various resources."
-msgstr ""
-"ネイティブ CLI を `kubectl-infinispan` としてインストールすると、CLI は Infinispan "
-"オペレータを制御するための追加機能を獲得し、多くの操作を簡素化します。これには、オペレータのインストールとアンインストール、Infinispanクラスタの作成と削除、さまざまなリソースに関する情報の取得などの機能が含まれます。"
+msgid "When installing the native CLI as `kubectl-infinispan`, the CLI gains additional functionality to control the Infinispan operator, simplifying many operations. This includes the ability to install and uninstall the operator, create and delete Infinispan clusters and obtain information about various resources."
+msgstr "ネイティブ CLI を `kubectl-infinispan` としてインストールすると、CLI は Infinispan オペレータを制御するための追加機能を獲得し、多くの操作を簡素化します。これには、オペレータのインストールとアンインストール、Infinispanクラスタの作成と削除、さまざまなリソースに関する情報の取得などの機能が含まれます。"
 
 #. type: Title ====
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:126
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Configuration improvements"
 msgstr "設定の改善"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:128
 #, fuzzy
-msgid ""
-"The CLI can persist some configuration properties which you wish to apply to "
-"all your sessions:"
+msgid "The CLI can persist some configuration properties which you wish to apply to all your sessions:"
 msgstr "CLIでは、すべてのセッションに適用したいいくつかの構成プロパティを保持することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:130
 #, fuzzy
-msgid ""
-"`autoconnect-url`: Specifies the URL to which the CLI automatically connects "
-"on startup."
+msgid "`autoconnect-url`: Specifies the URL to which the CLI automatically connects on startup."
 msgstr "`autoconnect-url` : 起動時にCLIが自動的に接続するURLを指定します。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:131
 #, fuzzy
-msgid ""
-"`autoexec`: Specifies the path of a CLI batch file to execute on startup."
+msgid "`autoexec`: Specifies the path of a CLI batch file to execute on startup."
 msgstr "`autoexec` : 起動時に実行するCLIバッチファイルのパスを指定します。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:132
 #, fuzzy
-msgid ""
-"`truststore`: Specifies the path of a truststore to validate server "
-"certificates."
+msgid "`truststore`: Specifies the path of a truststore to validate server certificates."
 msgstr "`truststore` : サーバ証明書を検証するためのトラストストアのパスを指定します。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:133
 #, fuzzy
-msgid ""
-"`trustall`: Specifies whether to trust all server certificates without "
-"supplying a trust store."
+msgid "`trustall`: Specifies whether to trust all server certificates without supplying a trust store."
 msgstr "`trustall` : トラストストアを供給せずにすべてのサーバ証明書を信頼するかどうかを指定します。"
 
 #. type: Title ===
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:134
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Console"
 msgstr "コンソール"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:138
 #, fuzzy
-msgid ""
-"This version includes a new version of the web console, including mainly "
-"fixes, but also the ability to finally view cache entries and their details:"
-msgstr ""
-"このバージョンでは、主に修正を含む新しいバージョンのウェブコンソールが含まれていますが、最終的にキャッシュエントリとその詳細を表示する機能も含まれています。"
+msgid "This version includes a new version of the web console, including mainly fixes, but also the ability to finally view cache entries and their details:"
+msgstr "このバージョンでは、主に修正を含む新しいバージョンのウェブコンソールが含まれていますが、最終的にキャッシュエントリとその詳細を表示する機能も含まれています。"
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:139
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Console: cache entries"
 msgstr "コンソール: キャッシュエントリ"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:140
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Cache entries"
 msgstr "キャッシュエントリ"
 
@@ -611,13 +448,13 @@ msgstr ""
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:142
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Console: selecting key types"
 msgstr "コンソール：キータイプの選択"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:143
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Key types"
 msgstr "キータイプ"
 
@@ -629,13 +466,13 @@ msgstr ""
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:145
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Console: integer keys"
 msgstr "コンソール: 整数キー"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:146
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Integer keys"
 msgstr "整数キー"
 
@@ -647,21 +484,15 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:148
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Cloud Events integration"
 msgstr "クラウドイベントの統合"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:152
 #, fuzzy
-msgid ""
-"The Infinispan https://cloudevents.io/[CloudEvents] integration is a new "
-"experimental module which converts Infinispan events to CloudEvents events "
-"and sends them to a Kafka topic in structured mode. This allows Infinispan "
-"be further used as a Knative source.  There are two broad kinds of events:"
-msgstr ""
-"Infinispan link:https://cloudevents.io/[CloudEvents] "
-"統合は、InfinispanのイベントをCloudEventsイベントに変換し、構造化モードでKafkaトピックに送信する新しい実験的なモジュールです。これにより、InfinispanをさらにKnativeソースとして使用することができます。イベントには大きく分けて2種類あります。"
+msgid "The Infinispan https://cloudevents.io/[CloudEvents] integration is a new experimental module which converts Infinispan events to CloudEvents events and sends them to a Kafka topic in structured mode. This allows Infinispan be further used as a Knative source.  There are two broad kinds of events:"
+msgstr "Infinispan link:https://cloudevents.io/[CloudEvents] 統合は、InfinispanのイベントをCloudEventsイベントに変換し、構造化モードでKafkaトピックに送信する新しい実験的なモジュールです。これにより、InfinispanをさらにKnativeソースとして使用することができます。イベントには大きく分けて2種類あります。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:154
@@ -677,44 +508,33 @@ msgstr "監査イベント：ユーザーログイン、アクセス拒否"
 
 #. type: Title ===
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:156
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Images"
 msgstr "画像"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:159
 #, fuzzy
-msgid ""
-"A natively compiled version of the CLI is now available as a container via "
-"the https://quay.io/repository/infinispan/cli[infinispan/cli] image."
-msgstr ""
-"ネイティブにコンパイルされたCLIのバージョンが、 link:https://quay.io/repository/infinispan/"
-"cli[infinispan/cli] イメージを介してコンテナとして利用できるようになりました。"
+msgid "A natively compiled version of the CLI is now available as a container via the https://quay.io/repository/infinispan/cli[infinispan/cli] image."
+msgstr "ネイティブにコンパイルされたCLIのバージョンが、 link:https://quay.io/repository/infinispan/cli[infinispan/cli] イメージを介してコンテナとして利用できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:160
 #, fuzzy
-msgid ""
-"The server images have also added support for configuring zero-capacity as "
-"well as allowing JGroups properties to be overridden at runtime."
-msgstr ""
-"サーバーイメージでは、ゼロキャパシティの設定や、実行時に JGroups プロパティをオーバーライドできるようにするためのサポートも追加されました。"
+msgid "The server images have also added support for configuring zero-capacity as well as allowing JGroups properties to be overridden at runtime."
+msgstr "サーバーイメージでは、ゼロキャパシティの設定や、実行時に JGroups プロパティをオーバーライドできるようにするためのサポートも追加されました。"
 
 #. type: Title ===
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:161
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Operator"
 msgstr "オペレーター"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:164
 #, fuzzy
-msgid ""
-"The operator continues to improve and evolve so that installing and managing "
-"Infinispan clusters on Kubernetes/OpenShift is a breeze:"
-msgstr ""
-"オペレーターは、Kubernetes/"
-"OpenShift上にInfinispanクラスタをインストールして管理することが容易になるように、改善と進化を続けています。"
+msgid "The operator continues to improve and evolve so that installing and managing Infinispan clusters on Kubernetes/OpenShift is a breeze:"
+msgstr "オペレーターは、Kubernetes/OpenShift上にInfinispanクラスタをインストールして管理することが容易になるように、改善と進化を続けています。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:166
@@ -755,9 +575,7 @@ msgstr "マルチネームスペースとグローバルインストールモー
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:172
 #, fuzzy
-msgid ""
-"TLS can be disabled via CR configuration, even in environments where "
-"certificate management is built-in (e.g. OpenShift)."
+msgid "TLS can be disabled via CR configuration, even in environments where certificate management is built-in (e.g. OpenShift)."
 msgstr "証明書管理が組み込まれている環境（OpenShiftなど）でも、CR設定でTLSを無効にすることができます。"
 
 #. type: Plain text
@@ -774,170 +592,102 @@ msgstr "アンチアフィニティの設定。"
 
 #. type: Title ==
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:175
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Documentation"
 msgstr "ドキュメント"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:178
 #, fuzzy
-msgid ""
-"Documentation for configuring cluster transport was overhauled in Infinispan "
-"12. We made numerous changes, based on direct feedback from the community, "
-"to our JGroups content. We also added details on how to configure "
-"SYM_ENCRYPT and ASYM_ENCRYPT protocols, which were previously available only "
-"in the JGroups documentation set."
-msgstr ""
-"クラスタトランスポートを設定するためのドキュメントは、Infinispan "
-"12でオーバーホールされました。コミュニティからの直接のフィードバックに基づいて、JGroupsのコンテンツに多数の変更を加えました。また、以前は "
-"JGroups のドキュメントセットでのみ利用可能だった SYM_ENCRYPT と ASYM_ENCRYPT "
-"プロトコルの構成方法の詳細を追加しました。"
+msgid "Documentation for configuring cluster transport was overhauled in Infinispan 12. We made numerous changes, based on direct feedback from the community, to our JGroups content. We also added details on how to configure SYM_ENCRYPT and ASYM_ENCRYPT protocols, which were previously available only in the JGroups documentation set."
+msgstr "クラスタトランスポートを設定するためのドキュメントは、Infinispan 12でオーバーホールされました。コミュニティからの直接のフィードバックに基づいて、JGroupsのコンテンツに多数の変更を加えました。また、以前は JGroups のドキュメントセットでのみ利用可能だった SYM_ENCRYPT と ASYM_ENCRYPT プロトコルの構成方法の詳細を追加しました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:179
 #, fuzzy
-msgid ""
-"You can find new chapters on Configuring Cluster Transport in the Server "
-"Guide and Embedding Infinispan Guide. The details for JGroups encryption are "
-"also available in the guide for Securing Infinispan."
-msgstr ""
-"サーバーガイドとInfinispanのエンベッディングガイドには、クラスタトランスポートの設定に関する新しい章が掲載されています。JGroups "
-"の暗号化の詳細は、Infinispan のセキュリティを確保するためのガイドにも記載されています。"
+msgid "You can find new chapters on Configuring Cluster Transport in the Server Guide and Embedding Infinispan Guide. The details for JGroups encryption are also available in the guide for Securing Infinispan."
+msgstr "サーバーガイドとInfinispanのエンベッディングガイドには、クラスタトランスポートの設定に関する新しい章が掲載されています。JGroups の暗号化の詳細は、Infinispan のセキュリティを確保するためのガイドにも記載されています。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:180
 #, fuzzy
-msgid ""
-"Off-Heap configuration has often been misunderstood and we’ve had several "
-"questions about what it actually means to store data in native memory "
-"outside the JVM heap. To address these questions, and spell out some of the "
-"benefits and potential downsides of using off-heap storage, we’ve added some "
-"conceptual information to our Configuration Guide."
-msgstr ""
-"オフヒープ構成はしばしば誤解されており、JVMヒープ外のネイティブメモリにデータを格納することが実際にどのような意味を持つのかについて、いくつかの質問を受けてきました。これらの質問に対処し、オフヒープストレージを使用することの利点と潜在的な欠点を説明するために、構成ガイドにいくつかの概念的な情報を追加しました。"
+msgid "Off-Heap configuration has often been misunderstood and we’ve had several questions about what it actually means to store data in native memory outside the JVM heap. To address these questions, and spell out some of the benefits and potential downsides of using off-heap storage, we’ve added some conceptual information to our Configuration Guide."
+msgstr "オフヒープ構成はしばしば誤解されており、JVMヒープ外のネイティブメモリにデータを格納することが実際にどのような意味を持つのかについて、いくつかの質問を受けてきました。これらの質問に対処し、オフヒープストレージを使用することの利点と潜在的な欠点を説明するために、構成ガイドにいくつかの概念的な情報を追加しました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:181
 #, fuzzy
-msgid ""
-"Our documentation on Configuring Infinispan to Marshall Java Objects is also "
-"updated in an effort to improve clarity and be more task-oriented."
-msgstr ""
-"Infinispan の設定と Java Objects の Marshall "
-"に関するドキュメントも更新され、よりわかりやすく、よりタスク指向性の高いものになりました。"
+msgid "Our documentation on Configuring Infinispan to Marshall Java Objects is also updated in an effort to improve clarity and be more task-oriented."
+msgstr "Infinispan の設定と Java Objects の Marshall に関するドキュメントも更新され、よりわかりやすく、よりタスク指向性の高いものになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:182
 #, fuzzy
-msgid ""
-"Along with all the refactoring and improvements that have been made to the "
-"Search API, we’ve made some improvements to our documentation for Querying "
-"Values in Infinispan Caches."
-msgstr ""
-"Search APIのリファクタリングと改善に伴い、Infinispan Cachesでの値の問い合わせに関するドキュメントも改善されました。"
+msgid "Along with all the refactoring and improvements that have been made to the Search API, we’ve made some improvements to our documentation for Querying Values in Infinispan Caches."
+msgstr "Search APIのリファクタリングと改善に伴い、Infinispan Cachesでの値の問い合わせに関するドキュメントも改善されました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:183
 #, fuzzy
-msgid ""
-"Lastly, we noticed that the documentation for Clustered Locks was a little "
-"out of date and potentially confusing so we spent time to rework that "
-"content to make sure it’s accurate."
+msgid "Lastly, we noticed that the documentation for Clustered Locks was a little out of date and potentially confusing so we spent time to rework that content to make sure it’s accurate."
 msgstr "最後に、Clustered Locks のドキュメントが少し古く、混乱を招く可能性があることに気付きました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:187
 #, fuzzy
-msgid ""
-"As always, the Infinispan team hope you find the documentation useful and "
-"complete. We’d love to hear from you and really value feedback from our "
-"community. If you think something is missing from the docs or spot a "
-"correction, please get in touch and we’ll get on it straight away."
-msgstr ""
-"いつものように、Infinispanチームは、このドキュメントが有用で完全なものであることをご理解いただけることを願っています。皆様からのご意見をお待ちしており、コミュニティからのフィードバックを本当に大切にしています。ドキュメントに何かが欠けていると思われる場合や、修正点がある場合は、ご連絡ください。"
+msgid "As always, the Infinispan team hope you find the documentation useful and complete. We’d love to hear from you and really value feedback from our community. If you think something is missing from the docs or spot a correction, please get in touch and we’ll get on it straight away."
+msgstr "いつものように、Infinispanチームは、このドキュメントが有用で完全なものであることをご理解いただけることを願っています。皆様からのご意見をお待ちしており、コミュニティからのフィードバックを本当に大切にしています。ドキュメントに何かが欠けていると思われる場合や、修正点がある場合は、ご連絡ください。"
 
 #. type: Title ==
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:188
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Other"
 msgstr "その他"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:191
 #, fuzzy
-msgid ""
-"We have decided to adopt https://github.com/conscious-lang/conscious-lang-"
-"docs[Conscious language] in Infinispan, both in our code and in our "
-"documentation. For example, Infinispan's way of configuring which classes "
-"are allowed to be marshalled/unmarshalled is now called _allow list_. If you "
-"find other places where we are using inappropriate terms, please don't "
-"hesitate to contact us."
-msgstr ""
-"Infinispanでは、コードとドキュメントの両方で link:https://github.com/conscious-lang/conscious-"
-"lang-docs[Conscious言語を] 採用することにしました。例えば、どのクラスをマーシャル/"
-"アンマーシャルすることが許可されているかを設定する Infinispan の方法は、現在では _allow list_ "
-"と呼ばれています。他にも不適切な用語を使用している箇所がありましたら、遠慮なくご連絡ください。"
+msgid "We have decided to adopt https://github.com/conscious-lang/conscious-lang-docs[Conscious language] in Infinispan, both in our code and in our documentation. For example, Infinispan's way of configuring which classes are allowed to be marshalled/unmarshalled is now called _allow list_. If you find other places where we are using inappropriate terms, please don't hesitate to contact us."
+msgstr "Infinispanでは、コードとドキュメントの両方で link:https://github.com/conscious-lang/conscious-lang-docs[Conscious言語を] 採用することにしました。例えば、どのクラスをマーシャル/アンマーシャルすることが許可されているかを設定する Infinispan の方法は、現在では _allow list_ と呼ばれています。他にも不適切な用語を使用している箇所がありましたら、遠慮なくご連絡ください。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:192
 #, fuzzy
-msgid ""
-"We’ve added some UI writing guidelines and Infinispan terminology to our "
-"Contributor’s Guide in an effort to create a consistent user experience."
-msgstr ""
-"一貫したユーザーエクスペリエンスを実現するために、コントリビューターズガイドにUIライティングガイドラインとInfinispanの用語を追加しました。"
+msgid "We’ve added some UI writing guidelines and Infinispan terminology to our Contributor’s Guide in an effort to create a consistent user experience."
+msgstr "一貫したユーザーエクスペリエンスを実現するために、コントリビューターズガイドにUIライティングガイドラインとInfinispanの用語を追加しました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:193
 #, fuzzy
-msgid ""
-"As you may have noticed, our website has gone through some extensive "
-"redesign."
+msgid "As you may have noticed, our website has gone through some extensive redesign."
 msgstr "お気づきかもしれませんが、当社のウェブサイトは、いくつかの大規模な再設計を経ています。"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:194
 #, fuzzy
-msgid ""
-"Bye bye OSGI (it even rhymes !): we've removed support for OSGi since it was "
-"quite a maintenance burden."
+msgid "Bye bye OSGI (it even rhymes !): we've removed support for OSGi since it was quite a maintenance burden."
 msgstr "バイバイOSGI (it even rhymes ! ) : メンテナンスの負担が大きかったので、OSGiのサポートを削除しました。"
 
 #. type: Title ==
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:196
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Release notes and upgrading"
 msgstr "リリースノートとアップグレード"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:200
 #, fuzzy
-msgid ""
-"You can look at the detailed https://issues.redhat.com/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12345018[release notes] to see what has "
-"changed since CR1.  If you are upgrading from a previous version of "
-"Infinispan, please checkout our https://infinispan.org/docs/stable/titles/"
-"upgrading/upgrading.html[Upgrading guide]."
-msgstr ""
-"CR1からの変更点については、 link:https://issues.redhat.com/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12345018[リリースノートを] "
-"ご覧ください。以前のバージョンのInfinispanからアップグレードする場合は、 link:https://infinispan.org/docs/"
-"stable/titles/upgrading/upgrading.html[アップグレードガイドを] ご覧ください。"
+msgid "You can look at the detailed https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12345018[release notes] to see what has changed since CR1.  If you are upgrading from a previous version of Infinispan, please checkout our https://infinispan.org/docs/stable/titles/upgrading/upgrading.html[Upgrading guide]."
+msgstr "CR1からの変更点については、 link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12345018[リリースノートを] ご覧ください。以前のバージョンのInfinispanからアップグレードする場合は、 link:https://infinispan.org/docs/stable/titles/upgrading/upgrading.html[アップグレードガイドを] ご覧ください。"
 
 #. type: Title ==
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:201
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "What's next ?"
 msgstr "次は何をするの？"
 
 #. type: Plain text
 #: upstream/_posts/2021-01-25-infinispan-12.0.0.Final.adoc:203
 #, fuzzy
-msgid ""
-"Our next release, 12.1, will be a quick one, mostly focused on polishing and "
-"small API improvemnets, before we move on to bigger things. As usual, look "
-"out for blog postings about upcoming highlights. If you'd like to "
-"contribute, just get in touch."
-msgstr ""
-"次のリリースである 12.1 は、より大きなものに移る前に、主に研磨と小さな API "
-"のインプロビゼーションに焦点を当てた短いリリースになる予定です。いつものように、今後のハイライトについてのブログ記事に注目してください。貢献したい方は、ご連絡ください。"
+msgid "Our next release, 12.1, will be a quick one, mostly focused on polishing and small API improvemnets, before we move on to bigger things. As usual, look out for blog postings about upcoming highlights. If you'd like to contribute, just get in touch."
+msgstr "次のリリースである 12.1 は、より大きなものに移る前に、主に研磨と小さな API のインプロビゼーションに焦点を当てた短いリリースになる予定です。いつものように、今後のハイライトについてのブログ記事に注目してください。貢献したい方は、ご連絡ください。"

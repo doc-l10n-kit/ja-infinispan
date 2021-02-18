@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-12-06-distributed-stream-quality-of-life.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-06-distributed-stream-quality-of-life.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Distributed Stream Quality of Life Improvements\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2016-12-06T11:54:00.000-08:00'\n"
 "author: wburns\n"
 "tags: [ \"streams\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7859244941475556914\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/12/distributed-stream-"
-"quality-of-life.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7859244941475556914\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/12/distributed-stream-quality-of-life.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,72 +42,39 @@ msgstr ""
 "date: '2016-12-06T11:54:00.000-08:00'\n"
 "author: wburns\n"
 "tags: [ \"streams\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7859244941475556914\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/12/distributed-stream-"
-"quality-of-life.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7859244941475556914\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/12/distributed-stream-quality-of-life.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-06-distributed-stream-quality-of-life.adoc:18
 #, fuzzy
-msgid ""
-"As I hope most people reading this already know, since Infinispan 8 you can "
-"utilize the entire Java 8 Stream API and have it be distributed across your "
-"cluster.  This performs the various intermediate and terminal operations on "
-"the data local to the node it lives on, providing for extreme performance.  "
-"There are some limitations and things to know as was explained at http://"
-"blog.infinispan.org/2015/09/distributed-streams.html[distributed-streams]."
-msgstr ""
-"これを読んでいるほとんどの人がすでに知っていると思いますが、Infinispan 8以降、Java 8 Stream "
-"API全体を利用して、クラスタ全体に分散させることができます。 "
-"これにより、それが住んでいるノードのローカルデータに対して様々な中間処理や端末処理を実行し、非常に高いパフォーマンスを提供します。 link:http:/"
-"/blog.infinispan.org/2015/09/distributed-streams.html[distributed-streams] "
-"で説明されたように、いくつかの制限や知っておくべきことがあります。"
+msgid "As I hope most people reading this already know, since Infinispan 8 you can utilize the entire Java 8 Stream API and have it be distributed across your cluster.  This performs the various intermediate and terminal operations on the data local to the node it lives on, providing for extreme performance.  There are some limitations and things to know as was explained at http://blog.infinispan.org/2015/09/distributed-streams.html[distributed-streams]."
+msgstr "これを読んでいるほとんどの人がすでに知っていると思いますが、Infinispan 8以降、Java 8 Stream API全体を利用して、クラスタ全体に分散させることができます。 これにより、それが住んでいるノードのローカルデータに対して様々な中間処理や端末処理を実行し、非常に高いパフォーマンスを提供します。 link:http://blog.infinispan.org/2015/09/distributed-streams.html[distributed-streams] で説明されたように、いくつかの制限や知っておくべきことがあります。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-06-distributed-stream-quality-of-life.adoc:22
 #, fuzzy
-msgid ""
-"The problem with the API up to now was that, if you wanted to use lambdas, "
-"it was quite an ugly scene.  Take for example the following code snippet:"
-msgstr ""
-"これまでのAPIの問題点は、ラムダを使おうとすると、かなり醜いシーンになってしまうことでした。 例えば、以下のコードスニペットを見てみましょう。"
+msgid "The problem with the API up to now was that, if you wanted to use lambdas, it was quite an ugly scene.  Take for example the following code snippet:"
+msgstr "これまでのAPIの問題点は、ラムダを使おうとすると、かなり醜いシーンになってしまうことでした。 例えば、以下のコードスニペットを見てみましょう。"
 
 #. type: Title ==
 #: upstream/_posts/2016-12-06-distributed-stream-quality-of-life.adoc:24
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "8.0 Distributed Streams Example"
 msgstr "8.0 分散ストリームの例"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-06-distributed-stream-quality-of-life.adoc:28
 #, fuzzy
-msgid ""
-"However, for Infinispan 9 we utilize a little syntax feature added with Java "
-"8"
+msgid "However, for Infinispan 9 we utilize a little syntax feature added with Java 8"
 msgstr "しかし、Infinispan 9では、Java 8で追加された構文機能を利用しています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-06-distributed-stream-quality-of-life.adoc:37
 #, fuzzy
-msgid ""
-"to add some much needed quality of life improvements.  This allows the most "
-"specific interface to be chosen when a method is overloaded.  This allows "
-"for a neat interaction when we add some new interfaces that implement "
-"Serializable and the various function interfaces (SerializableFunction, "
-"SerializablePredicate, SerializableSupplier, etc).  All of the Stream "
-"methods have been overridden on the https://docs.jboss.org/infinispan/9.0/"
-"apidocs/org/infinispan/CacheStream.html[CacheStream] interface to take these "
-"arguments."
-msgstr ""
-"これにより、メソッドがオーバーロードされたときに最も特定のインターフェイスを選択できるようになります。 これにより、Serializable "
-"とさまざまな関数インターフェイス "
-"(SerializableFunction、SerializablePredicate、SerializableSupplier など) "
-"を実装する新しいインターフェイスを追加したときに、すっきりとした相互作用が可能になります。 すべての Stream メソッドは、これらの引数を取る "
-"link:https://docs.jboss.org/infinispan/9.0/apidocs/org/infinispan/"
-"CacheStream.html[ために] CacheStream link:https://docs.jboss.org/infinispan/9.0/"
-"apidocs/org/infinispan/CacheStream.html[インターフェイス] 上でオーバーライドされています。"
+msgid "to add some much needed quality of life improvements.  This allows the most specific interface to be chosen when a method is overloaded.  This allows for a neat interaction when we add some new interfaces that implement Serializable and the various function interfaces (SerializableFunction, SerializablePredicate, SerializableSupplier, etc).  All of the Stream methods have been overridden on the https://docs.jboss.org/infinispan/9.0/apidocs/org/infinispan/CacheStream.html[CacheStream] interface to take these arguments."
+msgstr "これにより、メソッドがオーバーロードされたときに最も特定のインターフェイスを選択できるようになります。 これにより、Serializable とさまざまな関数インターフェイス (SerializableFunction、SerializablePredicate、SerializableSupplier など) を実装する新しいインターフェイスを追加したときに、すっきりとした相互作用が可能になります。 すべての Stream メソッドは、これらの引数を取る link:https://docs.jboss.org/infinispan/9.0/apidocs/org/infinispan/CacheStream.html[ために] CacheStream link:https://docs.jboss.org/infinispan/9.0/apidocs/org/infinispan/CacheStream.html[インターフェイス] 上でオーバーライドされています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-06-distributed-stream-quality-of-life.adoc:39
@@ -119,7 +84,7 @@ msgstr "これにより、ここで見られるように、コードをよりき
 
 #. type: Title ==
 #: upstream/_posts/2016-12-06-distributed-stream-quality-of-life.adoc:40
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "9.0 Distributed Streams Example"
 msgstr "9.0 分散ストリームの例"
 
@@ -132,26 +97,8 @@ msgstr "おまけの方法"
 #. type: Plain text
 #: upstream/_posts/2016-12-06-distributed-stream-quality-of-life.adoc:54
 #, fuzzy
-msgid ""
-"This is not the only benefit of providing the *CacheStream* interface: we "
-"can also provide new methods that aren't available on the standard https://"
-"docs.oracle.com/javase/8/docs/api/?java/util/stream/Stream.html[Stream] "
-"interface.  One example is the https://docs.jboss.org/infinispan/9.0/apidocs/"
-"org/infinispan/CacheStream.html#forEach-org.infinispan.util.function."
-"SerializableBiConsumer-[forEach] method which allows the user to more easily "
-"provide a Cache that is injected on each node as required.  This way you "
-"don't have to use the clumsy https://docs.jboss.org/infinispan/9.0/apidocs/"
-"org/infinispan/stream/CacheAware.html[CacheAware] interface and can directly "
-"use lambdas as desired."
-msgstr ""
-"*CacheStream* インタフェースを提供する利点はこれだけではありません。 標準の link:https://docs.oracle.com/"
-"javase/8/docs/api/?java/util/stream/Stream.html[Stream] "
-"インタフェースにはない新しいメソッドを提供することもできます。 一例として、必要に応じて各ノードに注入される Cache をより簡単に提供できる "
-"link:https://docs.jboss.org/infinispan/9.0/apidocs/org/infinispan/"
-"CacheStream.html#forEach-org.infinispan.util.function.SerializableBiConsumer-"
-"[forEach] メソッドがあります。 この方法では、不器用な CacheAware link:https://docs.jboss.org/"
-"infinispan/9.0/apidocs/org/infinispan/stream/CacheAware.html[インタフェースを] "
-"使用する必要はなく、必要に応じてラムダを直接使用できます。"
+msgid "This is not the only benefit of providing the *CacheStream* interface: we can also provide new methods that aren't available on the standard https://docs.oracle.com/javase/8/docs/api/?java/util/stream/Stream.html[Stream] interface.  One example is the https://docs.jboss.org/infinispan/9.0/apidocs/org/infinispan/CacheStream.html#forEach-org.infinispan.util.function.SerializableBiConsumer-[forEach] method which allows the user to more easily provide a Cache that is injected on each node as required.  This way you don't have to use the clumsy https://docs.jboss.org/infinispan/9.0/apidocs/org/infinispan/stream/CacheAware.html[CacheAware] interface and can directly use lambdas as desired."
+msgstr "*CacheStream* インタフェースを提供する利点はこれだけではありません。 標準の link:https://docs.oracle.com/javase/8/docs/api/?java/util/stream/Stream.html[Stream] インタフェースにはない新しいメソッドを提供することもできます。 一例として、必要に応じて各ノードに注入される Cache をより簡単に提供できる link:https://docs.jboss.org/infinispan/9.0/apidocs/org/infinispan/CacheStream.html#forEach-org.infinispan.util.function.SerializableBiConsumer-[forEach] メソッドがあります。 この方法では、不器用な CacheAware link:https://docs.jboss.org/infinispan/9.0/apidocs/org/infinispan/stream/CacheAware.html[インタフェースを] 使用する必要はなく、必要に応じてラムダを直接使用できます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-06-distributed-stream-quality-of-life.adoc:56
@@ -162,23 +109,11 @@ msgstr "ここでは、新しい *forEach* メソッドの動作例を示しま�
 #. type: Plain text
 #: upstream/_posts/2016-12-06-distributed-stream-quality-of-life.adoc:61
 #, fuzzy
-msgid ""
-"In this example we take a cache and, based on the keys in it, write those "
-"values into another cache. Since *forEach* doesn't have to be side effect "
-"free, you can do whatever you want inside here."
-msgstr ""
-"この例では、キャッシュを取得し、その中のキーに基づいて、それらの値を別のキャッシュに書き込みます。 *forEach* "
-"は副作用のないものである必要はありませんので、ここでは何でも好きなことをすることができます。"
+msgid "In this example we take a cache and, based on the keys in it, write those values into another cache. Since *forEach* doesn't have to be side effect free, you can do whatever you want inside here."
+msgstr "この例では、キャッシュを取得し、その中のキーに基づいて、それらの値を別のキャッシュに書き込みます。 *forEach* は副作用のないものである必要はありませんので、ここでは何でも好きなことをすることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-06-distributed-stream-quality-of-life.adoc:65
 #, fuzzy
-msgid ""
-"All in all these improvements should make using Distributed Streams with "
-"Infinispan much easier.  The extra methods could be extended further if "
-"users have use cases they would love to suggest.  Just let us know, and I "
-"hope you enjoy using Infinispan!"
-msgstr ""
-"これらの改善により、Infinispanでの分散ストリームの使用がより簡単になりました。 "
-"ユーザーが提案したいユースケースがあれば、追加のメソッドをさらに拡張することができます。 "
-"Infinispanの使用を楽しんでいただけることを願っています。"
+msgid "All in all these improvements should make using Distributed Streams with Infinispan much easier.  The extra methods could be extended further if users have use cases they would love to suggest.  Just let us know, and I hope you enjoy using Infinispan!"
+msgstr "これらの改善により、Infinispanでの分散ストリームの使用がより簡単になりました。 ユーザーが提案したいユースケースがあれば、追加のメソッドをさらに拡張することができます。 Infinispanの使用を楽しんでいただけることを願っています。"

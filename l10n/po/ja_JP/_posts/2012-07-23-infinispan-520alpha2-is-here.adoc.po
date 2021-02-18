@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-07-23-infinispan-520alpha2-is-here.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-23-infinispan-520alpha2-is-here.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 5.2.0.ALPHA2 is here!\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2012-07-23T00:47:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \"release\", \"alpha\", \"map reduce\", \"cache store\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"9109363856700838345\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/07/infinispan-520alpha2-"
-"is-here.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-9109363856700838345\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/07/infinispan-520alpha2-is-here.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,69 +42,45 @@ msgstr ""
 "date: '2012-07-23T00:47:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \"release\", \"alpha\", \"map reduce\", \"cache store\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"9109363856700838345\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/07/infinispan-520alpha2-"
-"is-here.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-9109363856700838345\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/07/infinispan-520alpha2-is-here.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-23-infinispan-520alpha2-is-here.adoc:15
 #, fuzzy
-msgid ""
-"Infinispan 5.2.0.ALPHA2 was released last Friday with several additions for "
-"those that like to test Infinispan's bleeding edge capabilities. In this "
-"case, it's out Map/Reduce functionality that's the star of the show:"
-msgstr ""
-"Infinispan 5.2.0."
-"ALPHA2は先週の金曜日にリリースされ、Infinispanの最先端の機能をテストしたい人のためにいくつかの機能が追加されました。この場合の主役はMap/"
-"Reduce機能です。"
+msgid "Infinispan 5.2.0.ALPHA2 was released last Friday with several additions for those that like to test Infinispan's bleeding edge capabilities. In this case, it's out Map/Reduce functionality that's the star of the show:"
+msgstr "Infinispan 5.2.0.ALPHA2は先週の金曜日にリリースされ、Infinispanの最先端の機能をテストしたい人のためにいくつかの機能が追加されました。この場合の主役はMap/Reduce機能です。"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-23-infinispan-520alpha2-is-here.adoc:18
 #, fuzzy
-msgid ""
-"https://issues.jboss.org/browse/ISPN-1665[A combiner can now be used between "
-"the Map and Reduce phases]"
-msgstr ""
-"link:https://issues.jboss.org/browse/ISPN-"
-"1665[コンバイナがマップフェーズとリデュースフェーズの間で使用できるようになりました。]"
+msgid "https://issues.jboss.org/browse/ISPN-1665[A combiner can now be used between the Map and Reduce phases]"
+msgstr "link:https://issues.jboss.org/browse/ISPN-1665[コンバイナがマップフェーズとリデュースフェーズの間で使用できるようになりました。]"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-23-infinispan-520alpha2-is-here.adoc:20
 #, fuzzy
-msgid ""
-"https://community.jboss.org/docs/DOC-18188[Reduce phase can now be "
-"distributed]"
+msgid "https://community.jboss.org/docs/DOC-18188[Reduce phase can now be distributed]"
 msgstr "link:https://community.jboss.org/docs/DOC-18188[リデュースフェーズの分散が可能に]"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-23-infinispan-520alpha2-is-here.adoc:22
 #, fuzzy
-msgid ""
-"https://issues.jboss.org/browse/ISPN-2037[Map/Reduce now processes entries "
-"in cache stores too]"
-msgstr ""
-"link:https://issues.jboss.org/browse/ISPN-2037[Map/"
-"Reduceはキャッシュストアのエントリも処理するようになりました。]"
+msgid "https://issues.jboss.org/browse/ISPN-2037[Map/Reduce now processes entries in cache stores too]"
+msgstr "link:https://issues.jboss.org/browse/ISPN-2037[Map/Reduceはキャッシュストアのエントリも処理するようになりました。]"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-23-infinispan-520alpha2-is-here.adoc:26
 #, fuzzy
-msgid ""
-"Vladimir Blagojevic, one of our Infinispan developers, will be explaining "
-"all about these features in a blog post coming right up, so stay tuned! :)"
+msgid "Vladimir Blagojevic, one of our Infinispan developers, will be explaining all about these features in a blog post coming right up, so stay tuned! :)"
 msgstr "Infinispanの開発者の一人であるVladimir Blagojevicがこれらの機能について説明します。:)"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-23-infinispan-520alpha2-is-here.adoc:32
 #, fuzzy
-msgid ""
-"Finally Adrian Nistor, the latest addition to the Infinispan team, has been "
-"working on reducing the size of our distribution files by avoiding "
-"duplication of jars."
-msgstr ""
-"最後に、Infinispanチームに加わったAdrian Nistorは、jarの重複を避けることで配布ファイルのサイズを縮小する作業を行っています。"
+msgid "Finally Adrian Nistor, the latest addition to the Infinispan team, has been working on reducing the size of our distribution files by avoiding duplication of jars."
+msgstr "最後に、Infinispanチームに加わったAdrian Nistorは、jarの重複を避けることで配布ファイルのサイズを縮小する作業を行っています。"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-23-infinispan-520alpha2-is-here.adoc:36

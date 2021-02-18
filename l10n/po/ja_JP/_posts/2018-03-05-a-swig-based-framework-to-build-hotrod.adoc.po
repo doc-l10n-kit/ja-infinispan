@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,25 +18,22 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-03-05-a-swig-based-framework-to-build-hotrod.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-05-a-swig-based-framework-to-build-hotrod.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
-"title: A SWIG based framework to build Hotrod client prototype in your "
-"preferred language\n"
+"title: A SWIG based framework to build Hotrod client prototype in your preferred language\n"
 "permalink: /blog/:year/:month/:day/a-swig-based-framework-to-build-hotrod\n"
 "date: '2018-03-05T00:27:00.000-08:00'\n"
 "author: rigazilla\n"
 "tags: [ \" hotrod\", \"ruby\", \"cpp-client\", \"python\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6006176110724567508\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/03/a-swig-based-framework-"
-"to-build-hotrod.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6006176110724567508\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/03/a-swig-based-framework-to-build-hotrod.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -45,69 +42,45 @@ msgstr ""
 "date: '2018-03-05T00:27:00.000-08:00'\n"
 "author: rigazilla\n"
 "tags: [ \" hotrod\", \"ruby\", \"cpp-client\", \"python\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6006176110724567508\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/03/a-swig-based-framework-"
-"to-build-hotrod.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6006176110724567508\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/03/a-swig-based-framework-to-build-hotrod.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-05-a-swig-based-framework-to-build-hotrod.adoc:14
 #, fuzzy
-msgid ""
-"If your are working on a non Java/C++/C#/JS application and you need to "
-"interact with Infinispan via Hotrod you may be interested in the idea behind "
-"the HotSwig[1] project."
-msgstr ""
-"Java/C++/C#/"
-"JS以外のアプリケーションで作業をしていて、Hotrodを介してInfinispanと対話する必要がある場合、HotSwig[1]プロジェクトの背後にあるアイデアに興味があるかもしれません。"
+msgid "If your are working on a non Java/C++/C#/JS application and you need to interact with Infinispan via Hotrod you may be interested in the idea behind the HotSwig[1] project."
+msgstr "Java/C++/C#/JS以外のアプリケーションで作業をしていて、Hotrodを介してInfinispanと対話する必要がある場合、HotSwig[1]プロジェクトの背後にあるアイデアに興味があるかもしれません。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-05-a-swig-based-framework-to-build-hotrod.adoc:19
 #, fuzzy
-msgid ""
-"Hotswig proposes a framework to build Hotrod client prototypes quickly and "
-"for a generic SWIG[2] supported language.  As people familiar with C++ and "
-"C# Infinispan native clients know, SWIG plays a role in both the projects:"
-msgstr ""
-"Hotswigは、Hotrodクライアントのプロトタイプを迅速に構築するためのフレームワークを提案しており、一般的なSWIG[2]をサポートする言語に対応しています。C++とC#のInfinispanネイティブクライアントに精通している人は知っていると思いますが、SWIGは両方のプロジェクトで役割を果たしています。"
+msgid "Hotswig proposes a framework to build Hotrod client prototypes quickly and for a generic SWIG[2] supported language.  As people familiar with C++ and C# Infinispan native clients know, SWIG plays a role in both the projects:"
+msgstr "Hotswigは、Hotrodクライアントのプロトタイプを迅速に構築するためのフレームワークを提案しており、一般的なSWIG[2]をサポートする言語に対応しています。C++とC#のInfinispanネイティブクライアントに精通している人は知っていると思いますが、SWIGは両方のプロジェクトで役割を果たしています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-05-a-swig-based-framework-to-build-hotrod.adoc:23
 #, fuzzy
-msgid ""
-"is used to build the base of the C# client wrapping the C++ core with a C# "
-"layer;"
+msgid "is used to build the base of the C# client wrapping the C++ core with a C# layer;"
 msgstr "は、C#クライアントのベースを構築するために使用され、C++コアをC#レイヤーでラップしています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-05-a-swig-based-framework-to-build-hotrod.adoc:27
 #, fuzzy
-msgid ""
-"is used in the C++ project to run (part of) the Java test suite against the "
-"client, in this way: a Java wrapper is built via SWIG to make the C++ client "
-"looks like its Java big brother so it can be tested with the Java test suite."
-""
+msgid "is used in the C++ project to run (part of) the Java test suite against the client, in this way: a Java wrapper is built via SWIG to make the C++ client looks like its Java big brother so it can be tested with the Java test suite."
 msgstr "はCプロジェクトの中で、クライアントに対してJavaテストスイートを(一部)実行するために使われます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-05-a-swig-based-framework-to-build-hotrod.adoc:32
 #, fuzzy
-msgid ""
-"The main goal was to produce for a specific language an almost complete "
-"client reusing the C++ core features and the following workflow has been "
-"setup to do that:"
-msgstr ""
-"主な目的は、特定の言語のために、C++のコア機能を再利用したほぼ完全なクライアントを作成することであり、そのために以下のようなワークフローが設定されています。"
+msgid "The main goal was to produce for a specific language an almost complete client reusing the C++ core features and the following workflow has been setup to do that:"
+msgstr "主な目的は、特定の言語のために、C++のコア機能を再利用したほぼ完全なクライアントを作成することであり、そのために以下のようなワークフローが設定されています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-05-a-swig-based-framework-to-build-hotrod.adoc:36
 #, fuzzy
-msgid ""
-"the whole C++ interface is processed by SWIG. The resulting wrapper exposes "
-"almost all the C++ functions;"
-msgstr ""
-"を使用すると、C インターフェース全体が SWIG によって処理されます。結果として得られるラッパーは、ほとんどすべてのC言語の関数を公開しています。"
+msgid "the whole C++ interface is processed by SWIG. The resulting wrapper exposes almost all the C++ functions;"
+msgstr "を使用すると、C インターフェース全体が SWIG によって処理されます。結果として得られるラッパーは、ほとんどすべてのC言語の関数を公開しています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-05-a-swig-based-framework-to-build-hotrod.adoc:37
@@ -118,38 +91,25 @@ msgstr "ユーザーフレンドリーな適応レイヤーがSWIGの結果の�
 #. type: Plain text
 #: upstream/_posts/2018-03-05-a-swig-based-framework-to-build-hotrod.adoc:42
 #, fuzzy
-msgid ""
-"This approach doesn't work for the HotSwig goal, mainly because the effort "
-"need by the second step is usually not-negligible and prevents the rapid "
-"development of prototype in a generic language."
-msgstr ""
-"このアプローチはHotSwigの目標には機能しません。主に、第2ステップまでに必要とされる労力は通常無視できないものであり、汎用言語でのプロトタイプの迅速な開発を妨げるからです。"
+msgid "This approach doesn't work for the HotSwig goal, mainly because the effort need by the second step is usually not-negligible and prevents the rapid development of prototype in a generic language."
+msgstr "このアプローチはHotSwigの目標には機能しません。主に、第2ステップまでに必要とされる労力は通常無視できないものであり、汎用言語でのプロトタイプの迅速な開発を妨げるからです。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-05-a-swig-based-framework-to-build-hotrod.adoc:47
 #, fuzzy
-msgid ""
-"In the HotSwig approach, this limitation is removed moving the adaptation "
-"layer from the target language to the C++ side and then letting SWIG "
-"generate a ready to use client prototype. So the HotSwig workflow is the "
-"following:"
-msgstr ""
-"HotSwigのアプローチでは、適応レイヤーをターゲット言語からC++側に移動させ、SWIGにすぐに使えるクライアントプロトタイプを生成させることで、この制限は取り除かれています。したがって、HotSwigのワークフローは以下のようになります。"
+msgid "In the HotSwig approach, this limitation is removed moving the adaptation layer from the target language to the C++ side and then letting SWIG generate a ready to use client prototype. So the HotSwig workflow is the following:"
+msgstr "HotSwigのアプローチでは、適応レイヤーをターゲット言語からC++側に移動させ、SWIGにすぐに使えるクライアントプロトタイプを生成させることで、この制限は取り除かれています。したがって、HotSwigのワークフローは以下のようになります。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-05-a-swig-based-framework-to-build-hotrod.adoc:51
 #, fuzzy
-msgid ""
-"build an adaptation facade around the C++ core to make it SWIG friendly (do "
-"the adaptation work once for all on the C++ side);"
+msgid "build an adaptation facade around the C++ core to make it SWIG friendly (do the adaptation work once for all on the C++ side);"
 msgstr "Cコアの周りに適応ファサードを構築してSWIGフレンドリーにする (C側で適応作業を一度に行う)"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-05-a-swig-based-framework-to-build-hotrod.adoc:53
 #, fuzzy
-msgid ""
-"explicitly define what we want in the produced SWIG wrapper (keep things "
-"simple excluding everything by default);"
+msgid "explicitly define what we want in the produced SWIG wrapper (keep things simple excluding everything by default);"
 msgstr "生成されたSWIGラッパーで何をしたいかを明示的に定義します(デフォルトでは全てを除いてシンプルにします)。"
 
 #. type: Plain text
@@ -161,38 +121,20 @@ msgstr "クライアントを生成するためにSWIGを実行します。"
 #. type: Plain text
 #: upstream/_posts/2018-03-05-a-swig-based-framework-to-build-hotrod.adoc:62
 #, fuzzy
-msgid ""
-"At the moment HotSwig is just a proof of concept, but you can try to run it "
-"and produce a ready to work Infinispan client for the language you need. "
-"Examples are already provided for python, ruby and Octave, but HotSwig "
-"should work with all the SWIG supported languages. If you get it to run in "
-"your preferred programming language, please share your experience with us."
-msgstr ""
-"現時点ではHotSwigは概念の証明に過ぎませんが、あなたはそれを実行してみて、必要な言語ですぐに動作するInfinispanクライアントを作成することができます。Python、ruby、Octaveの例は既に提供されていますが、HotSwigはSWIGがサポートする全ての言語で動作するはずです。もし、お好みのプログラミング言語で動作させることができたら、あなたの経験を共有してください。"
+msgid "At the moment HotSwig is just a proof of concept, but you can try to run it and produce a ready to work Infinispan client for the language you need. Examples are already provided for python, ruby and Octave, but HotSwig should work with all the SWIG supported languages. If you get it to run in your preferred programming language, please share your experience with us."
+msgstr "現時点ではHotSwigは概念の証明に過ぎませんが、あなたはそれを実行してみて、必要な言語ですぐに動作するInfinispanクライアントを作成することができます。Python、ruby、Octaveの例は既に提供されていますが、HotSwigはSWIGがサポートする全ての言語で動作するはずです。もし、お好みのプログラミング言語で動作させることができたら、あなたの経験を共有してください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-05-a-swig-based-framework-to-build-hotrod.adoc:67
 #, fuzzy
-msgid ""
-"I've listed here[3] some tasks for the roadmap, with the idea to test the "
-"flexibility of the framework trying to extend it in different directions. "
-"Maybe the idea is good and it can grow up from a PoC to something that can "
-"really help devs. You can add you ideas of course."
-msgstr ""
-"ここにロードマップのためのタスクをいくつか挙げてみました[3]。もしかしたら、このアイデアは良いもので、PoCから開発者を本当に助けられるものへと成長させることができるかもしれません。もちろん、あなたのアイデアを追加することができます。"
+msgid "I've listed here[3] some tasks for the roadmap, with the idea to test the flexibility of the framework trying to extend it in different directions. Maybe the idea is good and it can grow up from a PoC to something that can really help devs. You can add you ideas of course."
+msgstr "ここにロードマップのためのタスクをいくつか挙げてみました[3]。もしかしたら、このアイデアは良いもので、PoCから開発者を本当に助けられるものへと成長させることができるかもしれません。もちろん、あなたのアイデアを追加することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-05-a-swig-based-framework-to-build-hotrod.adoc:73
 #, fuzzy
-msgid ""
-"So if you need to do math against your Infinispan data set why don't you try "
-"the Octave client? Or maybe you want to do analytics with R, or presentation "
-"with PHP. Or you just like parenthesis and you want to use Lisp. Or you're "
-"working for the Klingon empire and you must use ylDoghQo'[4]... well ok just "
-"joking now..."
-msgstr ""
-"もしあなたがInfinispanのデータセットに対して数学を行う必要があるならば，なぜあなたはOctaveクライアントを試してみないのですか?あるいは、Rで分析をしたり、PHPでプレゼンテーションをしたりしたいかもしれません。あるいは、括弧が好きでLispを使いたいと思っているかもしれません。あるいは、あなたはクリンゴン帝国のために働いていて、 "
-"ylDoghQo'[4]を使わなければならないのかもしれません......まあ、今は冗談ですが......。"
+msgid "So if you need to do math against your Infinispan data set why don't you try the Octave client? Or maybe you want to do analytics with R, or presentation with PHP. Or you just like parenthesis and you want to use Lisp. Or you're working for the Klingon empire and you must use ylDoghQo'[4]... well ok just joking now..."
+msgstr "もしあなたがInfinispanのデータセットに対して数学を行う必要があるならば，なぜあなたはOctaveクライアントを試してみないのですか?あるいは、Rで分析をしたり、PHPでプレゼンテーションをしたりしたいかもしれません。あるいは、括弧が好きでLispを使いたいと思っているかもしれません。あるいは、あなたはクリンゴン帝国のために働いていて、 ylDoghQo'[4]を使わなければならないのかもしれません......まあ、今は冗談ですが......。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-05-a-swig-based-framework-to-build-hotrod.adoc:75
@@ -209,11 +151,5 @@ msgstr "乾杯！インフィニスパンチーム"
 #. type: Plain text
 #: upstream/_posts/2018-03-05-a-swig-based-framework-to-build-hotrod.adoc:83
 #, fuzzy
-msgid ""
-"[1] https://github.com/rigazilla/hotswig [2] http://www.swig.org/ [3] https:/"
-"/github.com/rigazilla/hotswig/issues [4] https://www.kli.org/about-klingon/"
-"klingon-phrases"
-msgstr ""
-"[1 https://github.com/rigazilla/hotswig [2 http://www.swig.org/ [3] https://"
-"github.com/rigazilla/hotswig/issues [4 https://www.kli.org/about-klingon/"
-"klingon-phrases"
+msgid "[1] https://github.com/rigazilla/hotswig [2] http://www.swig.org/ [3] https://github.com/rigazilla/hotswig/issues [4] https://www.kli.org/about-klingon/klingon-phrases"
+msgstr "[1 https://github.com/rigazilla/hotswig [2 http://www.swig.org/ [3] https://github.com/rigazilla/hotswig/issues [4 https://www.kli.org/about-klingon/klingon-phrases"

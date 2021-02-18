@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Distributed Streams\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2015-09-07T00:11:00.000-07:00'\n"
 "author: infinispan\n"
 "tags: [ \" java 8\", \"streams\", \"API\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"757252011322901230\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/09/distributed-streams."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-757252011322901230\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/09/distributed-streams.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,378 +42,200 @@ msgstr ""
 "date: '2015-09-07T00:11:00.000-07:00'\n"
 "author: infinispan\n"
 "tags: [ \" java 8\", \"streams\", \"API\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"757252011322901230\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/09/distributed-streams."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-757252011322901230\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/09/distributed-streams.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:19
 #, fuzzy
-msgid ""
-"Now that Infinispan supports Java 8, we can take full advantage of some of "
-"the new features.  One of the big features of Java 8 is the new https://docs."
-"oracle.com/javase/8/docs/api/java/util/stream/Stream.html[Stream] classes.  "
-"This flips the head on processing data so that instead of having to iterate "
-"upon the data yourself the underlying Stream handles that and you just "
-"provide the operations to perform on it.  This lends itself great to "
-"distributed processing as the iteration is handled entirely by the "
-"implementation (in this case Infinispan)."
-msgstr ""
-"InfinispanがJava 8をサポートするようになったので、新機能をフルに活用することができます。 Java 8の大きな特徴の一つは、新しい "
-"link:https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream."
-"html[ストリーム] クラスです。 "
-"これは、データの処理を反転させて、自分でデータの反復処理を行う代わりに、基礎となるストリームが処理を行い、自分はその上で実行する操作を提供するだけです。 "
-"これは、反復処理が実装（この場合はInfinispan）によって完全に処理されるので、分散処理に適していると言えます。"
+msgid "Now that Infinispan supports Java 8, we can take full advantage of some of the new features.  One of the big features of Java 8 is the new https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html[Stream] classes.  This flips the head on processing data so that instead of having to iterate upon the data yourself the underlying Stream handles that and you just provide the operations to perform on it.  This lends itself great to distributed processing as the iteration is handled entirely by the implementation (in this case Infinispan)."
+msgstr "InfinispanがJava 8をサポートするようになったので、新機能をフルに活用することができます。 Java 8の大きな特徴の一つは、新しい link:https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html[ストリーム] クラスです。 これは、データの処理を反転させて、自分でデータの反復処理を行う代わりに、基礎となるストリームが処理を行い、自分はその上で実行する操作を提供するだけです。 これは、反復処理が実装（この場合はInfinispan）によって完全に処理されるので、分散処理に適していると言えます。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:25
 #, fuzzy
-msgid ""
-"I therefore am glad to introduce for Infinispan 8, the feature Distributed "
-"Streams!  This allows for any operation you can perform on a regular Stream "
-"to also be performed on a Distributed cache (assuming the operation and data "
-"is http://infinispan.org/docs/8.0.x/user_guide/user_guide."
-"html#_marshalling[marshallable])."
-msgstr ""
-"そこで、Infinispan 8 に Distributed Streams という機能を紹介します！これにより、通常の Stream "
-"で実行できる操作を、Distributed キャッシュでも実行できるようになります（操作とデータがマーシャル link:http://"
-"infinispan.org/docs/8.0.x/user_guide/user_guide.html#_marshalling[可能] "
-"であることを前提としています link:http://infinispan.org/docs/8.0.x/user_guide/user_guide."
-"html#_marshalling[）] 。"
+msgid "I therefore am glad to introduce for Infinispan 8, the feature Distributed Streams!  This allows for any operation you can perform on a regular Stream to also be performed on a Distributed cache (assuming the operation and data is http://infinispan.org/docs/8.0.x/user_guide/user_guide.html#_marshalling[marshallable])."
+msgstr "そこで、Infinispan 8 に Distributed Streams という機能を紹介します！これにより、通常の Stream で実行できる操作を、Distributed キャッシュでも実行できるようになります（操作とデータがマーシャル link:http://infinispan.org/docs/8.0.x/user_guide/user_guide.html#_marshalling[可能] であることを前提としています link:http://infinispan.org/docs/8.0.x/user_guide/user_guide.html#_marshalling[）] 。"
 
 #. type: Title ==
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:27
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Marshallability"
 msgstr "マーシャル可能性"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:35
 #, fuzzy
-msgid ""
-"When using a distributed or replicated cache, the keys and values of the "
-"cache must be marshallable.  This is the same case for intermediate and "
-"terminal operations when using the distributed streams.  Normally you would "
-"have to provide an instance of some new class that is either Serializable or "
-"has an Externalizer registered for it as described in the marshallable "
-"section of the user guide."
-msgstr ""
-"分散キャッシュやレプリケートされたキャッシュを使用する場合、キャッシュのキーと値はマーシャル可能でなければなりません。 "
-"これは分散ストリームを使用する場合の中間処理や端末処理も同様です。 "
-"通常、ユーザーガイドのマーシャル可能のセクションで説明されているように、Serializable または Externalizer "
-"を登録した新しいクラスのインスタンスを提供しなければなりません。"
+msgid "When using a distributed or replicated cache, the keys and values of the cache must be marshallable.  This is the same case for intermediate and terminal operations when using the distributed streams.  Normally you would have to provide an instance of some new class that is either Serializable or has an Externalizer registered for it as described in the marshallable section of the user guide."
+msgstr "分散キャッシュやレプリケートされたキャッシュを使用する場合、キャッシュのキーと値はマーシャル可能でなければなりません。 これは分散ストリームを使用する場合の中間処理や端末処理も同様です。 通常、ユーザーガイドのマーシャル可能のセクションで説明されているように、Serializable または Externalizer を登録した新しいクラスのインスタンスを提供しなければなりません。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:40
 #, fuzzy
-msgid ""
-"However, Java 8 also introduced lambdas, which can be defined as "
-"serializable very easily (although it is a bit awkward).  An example of this "
-"serialization can be found http://infinispan.org/tutorials/simple/streams/"
-"[here]."
-msgstr ""
-"しかし、Java 8ではラムダも導入されており、これはシリアライズ可能なものとして非常に簡単に定義することができます(少し厄介ですが)。 "
-"このシリアライズの例はこちらで見ることができます。"
+msgid "However, Java 8 also introduced lambdas, which can be defined as serializable very easily (although it is a bit awkward).  An example of this serialization can be found http://infinispan.org/tutorials/simple/streams/[here]."
+msgstr "しかし、Java 8ではラムダも導入されており、これはシリアライズ可能なものとして非常に簡単に定義することができます(少し厄介ですが)。 このシリアライズの例はこちらで見ることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:50
 #, fuzzy
-msgid ""
-"Some of you may also be aware of the https://docs.oracle.com/javase/8/docs/"
-"api/java/util/stream/Collectors.html[Collectors] class which is used with "
-"the collect method on a stream.  Unfortunately, all of the Collectors "
-"produced are not able to be marshalled.  As such, Infinispan has added a "
-"https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/stream/"
-"CacheCollectors.html[utility class] that can work in conjunction with the "
-"Collectors class.  This allows you to still use any combination of the "
-"Collectors classes and still work properly when everything is required to be "
-"marshalled."
-msgstr ""
-"また、ストリーム上のcollectメソッドで使用される link:https://docs.oracle.com/javase/8/docs/api/"
-"java/util/stream/Collectors.html[Collectors] クラスをご存知の方もいらっしゃるかもしれません。 "
-"残念ながら、生成されたCollectorsはすべてマーシャリングすることができません。 "
-"そのため、InfinispanではCollectorsクラスと連携して動作するユーティリティ link:https://docs.jboss.org/"
-"infinispan/8.0/apidocs/org/infinispan/stream/CacheCollectors.html[クラス] "
-"を追加しました。 "
-"これにより、Collectorsクラスの任意の組み合わせを使用することができ、すべてをマーシャリングする必要がある場合でも適切に動作させることができます。"
+msgid "Some of you may also be aware of the https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collectors.html[Collectors] class which is used with the collect method on a stream.  Unfortunately, all of the Collectors produced are not able to be marshalled.  As such, Infinispan has added a https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/stream/CacheCollectors.html[utility class] that can work in conjunction with the Collectors class.  This allows you to still use any combination of the Collectors classes and still work properly when everything is required to be marshalled."
+msgstr "また、ストリーム上のcollectメソッドで使用される link:https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collectors.html[Collectors] クラスをご存知の方もいらっしゃるかもしれません。 残念ながら、生成されたCollectorsはすべてマーシャリングすることができません。 そのため、InfinispanではCollectorsクラスと連携して動作するユーティリティ link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/stream/CacheCollectors.html[クラス] を追加しました。 これにより、Collectorsクラスの任意の組み合わせを使用することができ、すべてをマーシャリングする必要がある場合でも適切に動作させることができます。"
 
 #. type: Title ==
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:52
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Parallelism"
 msgstr "パラレリズム"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:63
 #, fuzzy
-msgid ""
-"Java 8 streams naturally have a sense of parallelism.  That is that the "
-"stream can be marked as being parallel.  This in turn allows for the "
-"operations to be performed in parallel using multiple threads.  The best "
-"part is how simple it is to do.  The stream can be made parallel when first "
-"retrieving it by invoking https://docs.oracle.com/javase/8/docs/api/java/"
-"util/Collection.html#parallelStream--[parallelStream] or you can optionally "
-"enable it after the Stream is retrieved by just invoking https://docs.oracle."
-"com/javase/8/docs/api/java/util/stream/BaseStream.html#parallel--[parallel]."
-msgstr ""
-"Java 8 のストリームは当然ながら並列性を持っています。 つまり、ストリームを並列であるとマークすることができます。 "
-"これにより、複数のスレッドを使って並列に操作を行うことができます。 一番の利点は、その操作がとても簡単なことです。 最初にストリームを取得するときに "
-"parallelStream を呼び出すことでストリームを並列化することができますし、ストリームを取得した後に parallel "
-"を呼び出すことで並列化を有効にする link:https://docs.oracle.com/javase/8/docs/api/java/util/"
-"Collection.html#parallelStream--[こともできます] 。"
+msgid "Java 8 streams naturally have a sense of parallelism.  That is that the stream can be marked as being parallel.  This in turn allows for the operations to be performed in parallel using multiple threads.  The best part is how simple it is to do.  The stream can be made parallel when first retrieving it by invoking https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#parallelStream--[parallelStream] or you can optionally enable it after the Stream is retrieved by just invoking https://docs.oracle.com/javase/8/docs/api/java/util/stream/BaseStream.html#parallel--[parallel]."
+msgstr "Java 8 のストリームは当然ながら並列性を持っています。 つまり、ストリームを並列であるとマークすることができます。 これにより、複数のスレッドを使って並列に操作を行うことができます。 一番の利点は、その操作がとても簡単なことです。 最初にストリームを取得するときに parallelStream を呼び出すことでストリームを並列化することができますし、ストリームを取得した後に parallel を呼び出すことで並列化を有効にする link:https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#parallelStream--[こともできます] 。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:73
 #, fuzzy
-msgid ""
-"The new Distributed streams from Infinispan take this one step further, "
-"which I am calling parallel distribution.  That is that since data is "
-"already partitioned across nodes we can also allow operations to be ran "
-"simultaneously on different nodes at the same time.  This option is enabled "
-"by default.  However this can be controlled by using the new CacheStream "
-"interface discussed just below.  Also, to be clear, the Java 8 parallel can "
-"be used in conjunction with parallel distribution.  This just means you will "
-"have concurrent operations running on multiple nodes across multiple threads "
-"on each node."
-msgstr ""
-"Infinispanの新しい分散ストリームは、これをさらに一歩進めたもので、私はこれを並列分散と呼んでいます。 "
-"つまり、データはすでにノード間で分割されているので、異なるノードで同時に操作を実行できるようにすることができます。 "
-"このオプションはデフォルトで有効になっています。このオプションはデフォルトで有効になっていますが、後述する新しい CacheStream "
-"インターフェイスを使用して制御することができます。 また、明確にしておきますが、Java 8 parallel "
-"は並列分散と組み合わせて使用することができます。 "
-"これは、各ノードの複数のスレッドにまたがって複数のノードで同時に実行される操作があることを意味しています。"
+msgid "The new Distributed streams from Infinispan take this one step further, which I am calling parallel distribution.  That is that since data is already partitioned across nodes we can also allow operations to be ran simultaneously on different nodes at the same time.  This option is enabled by default.  However this can be controlled by using the new CacheStream interface discussed just below.  Also, to be clear, the Java 8 parallel can be used in conjunction with parallel distribution.  This just means you will have concurrent operations running on multiple nodes across multiple threads on each node."
+msgstr "Infinispanの新しい分散ストリームは、これをさらに一歩進めたもので、私はこれを並列分散と呼んでいます。 つまり、データはすでにノード間で分割されているので、異なるノードで同時に操作を実行できるようにすることができます。 このオプションはデフォルトで有効になっています。このオプションはデフォルトで有効になっていますが、後述する新しい CacheStream インターフェイスを使用して制御することができます。 また、明確にしておきますが、Java 8 parallel は並列分散と組み合わせて使用することができます。 これは、各ノードの複数のスレッドにまたがって複数のノードで同時に実行される操作があることを意味しています。"
 
 #. type: Title ==
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:75
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "CacheStream interface"
 msgstr "CacheStream インターフェース"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:82
 #, fuzzy
-msgid ""
-"There is a new interface https://docs.jboss.org/infinispan/8.0/apidocs/org/"
-"infinispan/CacheStream.html[Cachestream] provided that allows for "
-"controlling additional options when using a Distributed Stream.  I am "
-"highlighting the added methods (note comments have been removed from gist)"
-msgstr ""
-"分散ストリームを使用する際に追加のオプションを制御するための新しいインターフェイス link:https://docs.jboss.org/"
-"infinispan/8.0/apidocs/org/infinispan/CacheStream.html[Cachestream] "
-"が提供されました。 追加されたメソッドをハイライトしています（コメントは gist から削除されています）。"
+msgid "There is a new interface https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/CacheStream.html[Cachestream] provided that allows for controlling additional options when using a Distributed Stream.  I am highlighting the added methods (note comments have been removed from gist)"
+msgstr "分散ストリームを使用する際に追加のオプションを制御するための新しいインターフェイス link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/CacheStream.html[Cachestream] が提供されました。 追加されたメソッドをハイライトしています（コメントは gist から削除されています）。"
 
 #. type: Title ===
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:86
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "distributedBatchSize"
 msgstr "ぶんさんバッチサイズ"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:94
 #, fuzzy
-msgid ""
-"This method controls how many elements are brought back at one time for "
-"operations that are key aware.  These operations are (spl)iterator and "
-"forEach.  This is useful to tweak how many keys are held in memory from a "
-"remote node.  Thus it is a tradeoff of performance (more keys) versus memory."
-"  This defaults to the chunk size as configured by state transfer."
-msgstr ""
-"このメソッドは、鍵を意識した操作に対して、一度に何個の要素を持ち帰るかを制御します。 これらの操作は、(spl)iteratorとforEachです。 "
-"これは、リモートノードからのメモリに保持される鍵の数を調整するのに便利です。 したがって、パフォーマンス(鍵の数)とメモリのトレードオフになります。 "
-"デフォルトでは、状態転送で設定されたチャンクサイズが設定されています。"
+msgid "This method controls how many elements are brought back at one time for operations that are key aware.  These operations are (spl)iterator and forEach.  This is useful to tweak how many keys are held in memory from a remote node.  Thus it is a tradeoff of performance (more keys) versus memory.  This defaults to the chunk size as configured by state transfer."
+msgstr "このメソッドは、鍵を意識した操作に対して、一度に何個の要素を持ち帰るかを制御します。 これらの操作は、(spl)iteratorとforEachです。 これは、リモートノードからのメモリに保持される鍵の数を調整するのに便利です。 したがって、パフォーマンス(鍵の数)とメモリのトレードオフになります。 デフォルトでは、状態転送で設定されたチャンクサイズが設定されています。"
 
 #. type: Title ===
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:96
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "parallelDistribution / sequentialDistribution"
 msgstr "parallelDistribution / sequentialDistribution"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:101
 #, fuzzy
-msgid ""
-"This was discussed in the parallelism section above.  Note that all commands "
-"have this enabled by default except for spl(iterator)  methods."
-msgstr ""
-"これは上記の並列性のセクションで説明しました。 spl(iterator) "
-"メソッドを除いて、すべてのコマンドはデフォルトでこれを有効にしていることに注意してください。"
+msgid "This was discussed in the parallelism section above.  Note that all commands have this enabled by default except for spl(iterator)  methods."
+msgstr "これは上記の並列性のセクションで説明しました。 spl(iterator) メソッドを除いて、すべてのコマンドはデフォルトでこれを有効にしていることに注意してください。"
 
 #. type: Title ===
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:103
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "filterKeys"
 msgstr "フィルタキー"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:111
 #, fuzzy
-msgid ""
-"This method can be used to have the distributed stream only operate on a "
-"given set of keys.  This is done in a very efficient way as it will only "
-"perform the operation on node(s) that own the given keys.  Using a given set "
-"of keys also allows for constant access time from the data container/store "
-"as the cache doesn't have to look at every single entry in the cache."
-msgstr ""
-"この方法は、分散ストリームが与えられたキーのセットに対してのみ動作するようにするために使用できます。 "
-"これは、与えられたキーを所有するノードに対してのみ動作を実行するため、非常に効率的な方法で行われます。 "
-"また、与えられたキーのセットを使用することで、キャッシュがキャッシュ内のすべてのエントリを見る必要がないため、データコンテナ/"
-"ストアからのアクセス時間を一定に保つことができます。"
+msgid "This method can be used to have the distributed stream only operate on a given set of keys.  This is done in a very efficient way as it will only perform the operation on node(s) that own the given keys.  Using a given set of keys also allows for constant access time from the data container/store as the cache doesn't have to look at every single entry in the cache."
+msgstr "この方法は、分散ストリームが与えられたキーのセットに対してのみ動作するようにするために使用できます。 これは、与えられたキーを所有するノードに対してのみ動作を実行するため、非常に効率的な方法で行われます。 また、与えられたキーのセットを使用することで、キャッシュがキャッシュ内のすべてのエントリを見る必要がないため、データコンテナ/ストアからのアクセス時間を一定に保つことができます。"
 
 #. type: Title ===
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:112
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "filterKeySegments (advanced users only)"
 msgstr "filterKeySegments (上級者のみ)"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:120
 #, fuzzy
-msgid ""
-"This is useful to do filtering of instances in a more performant way.  "
-"Normally, you could use the filter intermediate operation, but this method "
-"is performed before any of the operations are performed to most efficiently "
-"limit the entries that are presented for stream processing.  For example, if "
-"only a subset of segments are required, it may not have to send a remote "
-"request."
-msgstr ""
-"これは、よりパフォーマンスの高い方法でインスタンスのフィルタリングを行うのに便利です。 "
-"通常はfilter中間操作を使用することができますが、この方法は、ストリーム処理のために提示されるエントリを最も効率的に制限するために、どの操作も実行される前に実行されます。 "
-"例えば、セグメントのサブセットのみが必要な場合は、リモートリクエストを送信する必要がないかもしれません。"
+msgid "This is useful to do filtering of instances in a more performant way.  Normally, you could use the filter intermediate operation, but this method is performed before any of the operations are performed to most efficiently limit the entries that are presented for stream processing.  For example, if only a subset of segments are required, it may not have to send a remote request."
+msgstr "これは、よりパフォーマンスの高い方法でインスタンスのフィルタリングを行うのに便利です。 通常はfilter中間操作を使用することができますが、この方法は、ストリーム処理のために提示されるエントリを最も効率的に制限するために、どの操作も実行される前に実行されます。 例えば、セグメントのサブセットのみが必要な場合は、リモートリクエストを送信する必要がないかもしれません。"
 
 #. type: Title ===
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:121
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "segmentCompletionListener (advanced users only)"
 msgstr "segmentCompletionListener (上級者専用)"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:129
 #, fuzzy
-msgid ""
-"Similar to the previous method, this is related to key segments.  This "
-"listener allows for the end user to be notified when a segment has been "
-"completed for processing.  This can be useful if you want to keep track of "
-"completion and if this node goes down, you can rerun the processing with "
-"only the unprocessed segments.  Currently, this listener is only supported "
-"for spl(iterator) methods."
-msgstr ""
-"前のメソッドと同様に、これはキーセグメントに関連しています。 "
-"このリスナーは、セグメントが処理のために完了したときにエンドユーザーに通知することができます。 "
-"これは、完了を追跡したい場合に便利で、もしこのノードがダウンした場合には、未処理のセグメントだけで処理を再実行することができます。 "
-"現在のところ、このリスナーは spl(iterator) メソッドでのみサポートされています。"
+msgid "Similar to the previous method, this is related to key segments.  This listener allows for the end user to be notified when a segment has been completed for processing.  This can be useful if you want to keep track of completion and if this node goes down, you can rerun the processing with only the unprocessed segments.  Currently, this listener is only supported for spl(iterator) methods."
+msgstr "前のメソッドと同様に、これはキーセグメントに関連しています。 このリスナーは、セグメントが処理のために完了したときにエンドユーザーに通知することができます。 これは、完了を追跡したい場合に便利で、もしこのノードがダウンした場合には、未処理のセグメントだけで処理を再実行することができます。 現在のところ、このリスナーは spl(iterator) メソッドでのみサポートされています。"
 
 #. type: Title ===
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:130
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "disableRehashAware (advanced users only)"
 msgstr "disableRehashAware (上級者のみ)"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:136
 #, fuzzy
-msgid ""
-"By default, all stream operations are what is called rehash aware.  That is "
-"if a node joins or leaves the cluster while the operation is in progress the "
-"cluster will be aware of this and ensure that all data is processed properly "
-"with no loss (assuming no data was actually lost)."
-msgstr ""
-"デフォルトでは、すべてのストリーム操作は、いわゆるリハッシュを意識したものになっています。 "
-"つまり、操作の進行中にノードがクラスタに参加したり退出したりした場合、クラスタはそれを認識し、すべてのデータが損失なく適切に処理されるようにします "
-"(実際にデータが失われなかったと仮定して)。"
+msgid "By default, all stream operations are what is called rehash aware.  That is if a node joins or leaves the cluster while the operation is in progress the cluster will be aware of this and ensure that all data is processed properly with no loss (assuming no data was actually lost)."
+msgstr "デフォルトでは、すべてのストリーム操作は、いわゆるリハッシュを意識したものになっています。 つまり、操作の進行中にノードがクラスタに参加したり退出したりした場合、クラスタはそれを認識し、すべてのデータが損失なく適切に処理されるようにします (実際にデータが失われなかったと仮定して)。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:141
 #, fuzzy
-msgid ""
-"This can be disabled by calling disableRehashAware; however, if a rehash is "
-"to occur in the middle of the operation, it is possible that all data may "
-"not be processed.  It should be noted that data is not processed multiple "
-"times with this disabled, only a loss of data can occur."
-msgstr ""
-"disableRehashAwareを呼び出すことで無効化することができますが、途中でリハッシュが発生した場合、全てのデータが処理されない可能性があります。 "
-"この無効化した状態では、データが複数回処理されることはなく、データの消失のみが発生するので注意が必要です。"
+msgid "This can be disabled by calling disableRehashAware; however, if a rehash is to occur in the middle of the operation, it is possible that all data may not be processed.  It should be noted that data is not processed multiple times with this disabled, only a loss of data can occur."
+msgstr "disableRehashAwareを呼び出すことで無効化することができますが、途中でリハッシュが発生した場合、全てのデータが処理されない可能性があります。 この無効化した状態では、データが複数回処理されることはなく、データの消失のみが発生するので注意が必要です。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:146
 #, fuzzy
-msgid ""
-"This option is not normally recommended unless you have a situation where "
-"you can afford to only operate on a subset of data.  The tradeoff is that "
-"the operation can perform faster, especially (spl)iterator and forEach "
-"methods."
-msgstr ""
-"このオプションは、データのサブセットに対してのみ操作を行う余裕がある状況でない限り、通常は推奨されません。 "
-"トレードオフは、特に(spl)iteratorやforEachメソッドのように、操作がより速く実行できることです。"
+msgid "This option is not normally recommended unless you have a situation where you can afford to only operate on a subset of data.  The tradeoff is that the operation can perform faster, especially (spl)iterator and forEach methods."
+msgstr "このオプションは、データのサブセットに対してのみ操作を行う余裕がある状況でない限り、通常は推奨されません。 トレードオフは、特に(spl)iteratorやforEachメソッドのように、操作がより速く実行できることです。"
 
 #. type: Title ==
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:149
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Map/Reduce"
 msgstr "地図/レデュース"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:158
 #, fuzzy
-msgid ""
-"The age old example of map/reduce is always word count.  Streams allow you "
-"to do that as well!  Here is an equivalent word count example assuming you "
-"have a Cache containing String keys and values and you want the count of all "
-"words in the values.  Some of you may be wondering how this  relates to our "
-"existing map/reduce framework.  The plan is to deprecate the existing Map/"
-"Reduce and replace it completely with the new distributed streams at a later "
-"point."
-msgstr ""
-"map/Reduceの古くからの例は、常にワードカウントです。 "
-"ストリームを使えば、これも可能です！これは、文字列のキーと値を含むCacheを持っていて、その値に含まれるすべての単語のカウントが欲しいと仮定した場合に、等価なワードカウントの例です。 "
-"これが既存のmap/Reduceフレームワークとどのように関係しているのか疑問に思う人もいるかもしれません。 計画では、既存のmap/"
-"Reduceを非推奨にして、後で新しい分散ストリームで完全に置き換えることになっています。"
+msgid "The age old example of map/reduce is always word count.  Streams allow you to do that as well!  Here is an equivalent word count example assuming you have a Cache containing String keys and values and you want the count of all words in the values.  Some of you may be wondering how this  relates to our existing map/reduce framework.  The plan is to deprecate the existing Map/Reduce and replace it completely with the new distributed streams at a later point."
+msgstr "map/Reduceの古くからの例は、常にワードカウントです。 ストリームを使えば、これも可能です！これは、文字列のキーと値を含むCacheを持っていて、その値に含まれるすべての単語のカウントが欲しいと仮定した場合に、等価なワードカウントの例です。 これが既存のmap/Reduceフレームワークとどのように関係しているのか疑問に思う人もいるかもしれません。 計画では、既存のmap/Reduceを非推奨にして、後で新しい分散ストリームで完全に置き換えることになっています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:165
 #, fuzzy
-msgid ""
-"Remember though that distributed streams can do so much more than just map/"
-"reduce. And there are a lot of examples already out there for streams. To "
-"use the distributed streams, you just need to make sure your operations are "
-"marshallable, and you are good to go."
-msgstr ""
-"しかし、分散ストリームは単にマップ/"
-"縮小するだけではなく、それ以上のことができることを覚えておいてください。そして、既に多くのストリームの例が存在しています。分散ストリームを使うためには、操作がマーシャル可能であることを確認する必要があります。"
+msgid "Remember though that distributed streams can do so much more than just map/reduce. And there are a lot of examples already out there for streams. To use the distributed streams, you just need to make sure your operations are marshallable, and you are good to go."
+msgstr "しかし、分散ストリームは単にマップ/縮小するだけではなく、それ以上のことができることを覚えておいてください。そして、既に多くのストリームの例が存在しています。分散ストリームを使うためには、操作がマーシャル可能であることを確認する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:168
 #, fuzzy
-msgid ""
-"Here are a few pages with examples of how to use streams straight from "
-"Oracle:"
+msgid "Here are a few pages with examples of how to use streams straight from Oracle:"
 msgstr "ここでは、Oracleから直接ストリームを使用する方法の例をいくつかのページで紹介しています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:171
 #, fuzzy
-msgid ""
-"http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-"
-"2177646.html http://www.oracle.com/technetwork/articles/java/architect-"
-"streams-pt2-2227132.html"
-msgstr ""
-"http://www.oracle.com/technetwork/articles/java/architect-streams-pt2-"
-"2227132.html"
+msgid "http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html http://www.oracle.com/technetwork/articles/java/architect-streams-pt2-2227132.html"
+msgstr "http://www.oracle.com/technetwork/articles/java/architect-streams-pt2-2227132.html"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:174
 #, fuzzy
-msgid ""
-"I hope you enjoy Distributed Streams.  We hope they change how you interact "
-"with your data in the cluster!"
+msgid "I hope you enjoy Distributed Streams.  We hope they change how you interact with your data in the cluster!"
 msgstr "Distributed Streamsを楽しんでいただければ幸いです。 クラスタでのデータの扱い方を変えてくれることを願っています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-07-distributed-streams.adoc:177
 #, fuzzy
-msgid ""
-"Let us know what you think, any issues or usages you would love to share!"
+msgid "Let us know what you think, any issues or usages you would love to share!"
 msgstr "私たちはあなたが何を考えているか、あなたが共有するのが大好きな問題や使用法を教えてください"
 
 #. type: Plain text

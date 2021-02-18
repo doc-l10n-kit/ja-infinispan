@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:11
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 'Infinispan: the Start of a New Era in Open Source Data Grids'\n"
@@ -32,12 +32,9 @@ msgid ""
 "date: '2009-04-28T14:00:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"data grids\", \"announcement\" ]\n"
-"thumbnail: http://1.bp.blogspot.com/_ca0W9t-Ryos/Sfhee24rNUI/AAAAAAAAAJg/"
-"hRj8RbeGgAE/s72-c/1159192_woman.jpg\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1032424688975648985\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/04/infinispan-start-of-"
-"new-era-in-open.html\n"
+"thumbnail: http://1.bp.blogspot.com/_ca0W9t-Ryos/Sfhee24rNUI/AAAAAAAAAJg/hRj8RbeGgAE/s72-c/1159192_woman.jpg\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1032424688975648985\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/04/infinispan-start-of-new-era-in-open.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -46,224 +43,100 @@ msgstr ""
 "date: '2009-04-28T14:00:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"data grids\", \"announcement\" ]\n"
-"thumbnail: http://1.bp.blogspot.com/_ca0W9t-Ryos/Sfhee24rNUI/AAAAAAAAAJg/"
-"hRj8RbeGgAE/s72-c/1159192_woman.jpg\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1032424688975648985\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/04/infinispan-start-of-"
-"new-era-in-open.html\n"
+"thumbnail: http://1.bp.blogspot.com/_ca0W9t-Ryos/Sfhee24rNUI/AAAAAAAAAJg/hRj8RbeGgAE/s72-c/1159192_woman.jpg\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1032424688975648985\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/04/infinispan-start-of-new-era-in-open.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:17
 #, fuzzy
-msgid ""
-"Over the past few months we've been flying under the radar preparing for the "
-"launch of a new, open source, highly scalable distributed data grid platform."
-" We've finally got to a stage where we can announce it publicly and I would "
-"like to say that http://www.jboss.org/infinispan[Infinispan] is now ready to "
-"take on the world!"
-msgstr ""
-"ここ数ヶ月間、私たちはオープンソースで拡張性の高い新しい分散データグリッドプラットフォームの立ち上げに向けて、水面下で準備を進めてきました。ようやく公に発表できる段階に来たので、 "
-"link:http://www.jboss.org/infinispan[Infinispanは] 世界に挑戦する準備ができたと言いたいです。"
+msgid "Over the past few months we've been flying under the radar preparing for the launch of a new, open source, highly scalable distributed data grid platform. We've finally got to a stage where we can announce it publicly and I would like to say that http://www.jboss.org/infinispan[Infinispan] is now ready to take on the world!"
+msgstr "ここ数ヶ月間、私たちはオープンソースで拡張性の高い新しい分散データグリッドプラットフォームの立ち上げに向けて、水面下で準備を進めてきました。ようやく公に発表できる段階に来たので、 link:http://www.jboss.org/infinispan[Infinispanは] 世界に挑戦する準備ができたと言いたいです。"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:25
 #, fuzzy
-msgid ""
-"The way we write computer software is changing. The demise of the http://"
-"java.dzone.com/articles/caching-parallelism-scalability[Quake Rule] has made "
-"hardware manufacturers cram more cores on a CPU, more CPUs in a server. To "
-"achieve the levels of throughput and resilience that modern applications "
-"demand, compute grids are becoming increasingly popular. All this serves to "
-"exacerbate existing database bottlenecks; hence the need for a data grid "
-"platform."
-msgstr ""
-"コンピュータソフトウェアの書き方が変わってきています。 link:http://java.dzone.com/articles/caching-"
-"parallelism-scalability[Quake Rule] の終焉により、ハードウェアメーカーは CPU のコア数を増やし、サーバーの "
-"CPU "
-"を増やしました。現代のアプリケーションが要求するスループットと回復力のレベルを達成するために、コンピュートグリッドがますます普及してきています。これらはすべて、既存のデータベースのボトルネックを悪化させることになり、データグリッド・プラットフォームの必要性が高まっています。"
+msgid "The way we write computer software is changing. The demise of the http://java.dzone.com/articles/caching-parallelism-scalability[Quake Rule] has made hardware manufacturers cram more cores on a CPU, more CPUs in a server. To achieve the levels of throughput and resilience that modern applications demand, compute grids are becoming increasingly popular. All this serves to exacerbate existing database bottlenecks; hence the need for a data grid platform."
+msgstr "コンピュータソフトウェアの書き方が変わってきています。 link:http://java.dzone.com/articles/caching-parallelism-scalability[Quake Rule] の終焉により、ハードウェアメーカーは CPU のコア数を増やし、サーバーの CPU を増やしました。現代のアプリケーションが要求するスループットと回復力のレベルを達成するために、コンピュートグリッドがますます普及してきています。これらはすべて、既存のデータベースのボトルネックを悪化させることになり、データグリッド・プラットフォームの必要性が高まっています。"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:28
 #, fuzzy
-msgid ""
-"http://1.bp.blogspot.com/_ca0W9t-Ryos/Sfhee24rNUI/AAAAAAAAAJg/hRj8RbeGgAE/"
-"s1600-h/1159192_woman.jpg[image:http://1.bp.blogspot.com/_ca0W9t-Ryos/"
-"Sfhee24rNUI/AAAAAAAAAJg/hRj8RbeGgAE/s400/1159192_woman.jpg[image]]So why is "
-"Infinispan sexy?"
-msgstr ""
-"link:http://1.bp.blogspot.com/_ca0W9t-Ryos/Sfhee24rNUI/AAAAAAAAAJg/"
-"hRj8RbeGgAE/s1600-h/1159192_woman.jpg[] では、なぜインフィニスパンはセクシーなのか？"
+msgid "http://1.bp.blogspot.com/_ca0W9t-Ryos/Sfhee24rNUI/AAAAAAAAAJg/hRj8RbeGgAE/s1600-h/1159192_woman.jpg[image:http://1.bp.blogspot.com/_ca0W9t-Ryos/Sfhee24rNUI/AAAAAAAAAJg/hRj8RbeGgAE/s400/1159192_woman.jpg[image]]So why is Infinispan sexy?"
+msgstr "link:http://1.bp.blogspot.com/_ca0W9t-Ryos/Sfhee24rNUI/AAAAAAAAAJg/hRj8RbeGgAE/s1600-h/1159192_woman.jpg[] では、なぜインフィニスパンはセクシーなのか？"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:42
 #, fuzzy
-msgid ""
-"Massive heap - If you have 100 blade servers, and each node has 2GB of space "
-"to dedicate to a replicated cache, you end up with 2 GB of total data. Every "
-"server is just a copy. On the other hand, with a distributed grid - assuming "
-"you want 1 copy per data item - you get a 100 GB memory backed virtual heap "
-"that is efficiently accessible from anywhere in the grid. Session affinity "
-"is not required, so you don't need fancy load balancing policies. Of course "
-"you can still use them for further optimisation. If a server fails, the grid "
-"simply creates new copies of the lost data, and puts them on other servers. "
-"This means that applications looking for ultimate performance are no longer "
-"forced to delegate the majority of their data lookups to a large single "
-"database server - that massive bottleneck that exists in over 80% of "
-"enterprise applications!"
-msgstr ""
-"大量のヒープ - "
-"100台のブレードサーバーがあり、各ノードに2GBのスペースがあり、レプリケートされたキャッシュに割り当てられている場合、合計2GBのデータが必要になります。すべてのサーバはコピーに過ぎません。一方、分散型グリッドでは、データアイテムごとに1つのコピーが必要だと仮定すると、グリッド内のどこからでも効率的にアクセスできる100GBのメモリにバックアップされた仮想ヒープが得られます。セッションアフィニティは必要ありませんので、派手なロードバランシングポリシーは必要ありません。もちろん、さらなる最適化のためにそれらを使用することもできます。サーバーに障害が発生した場合、グリッドは単に失われたデータの新しいコピーを作成し、他のサーバーに置くだけです。これにより、究極のパフォーマンスを求めるアプリケーションは、データ検索の大部分を単一の大規模なデータベースサーバに任せる必要がなくなります。"
+msgid "Massive heap - If you have 100 blade servers, and each node has 2GB of space to dedicate to a replicated cache, you end up with 2 GB of total data. Every server is just a copy. On the other hand, with a distributed grid - assuming you want 1 copy per data item - you get a 100 GB memory backed virtual heap that is efficiently accessible from anywhere in the grid. Session affinity is not required, so you don't need fancy load balancing policies. Of course you can still use them for further optimisation. If a server fails, the grid simply creates new copies of the lost data, and puts them on other servers. This means that applications looking for ultimate performance are no longer forced to delegate the majority of their data lookups to a large single database server - that massive bottleneck that exists in over 80% of enterprise applications!"
+msgstr "大量のヒープ - 100台のブレードサーバーがあり、各ノードに2GBのスペースがあり、レプリケートされたキャッシュに割り当てられている場合、合計2GBのデータが必要になります。すべてのサーバはコピーに過ぎません。一方、分散型グリッドでは、データアイテムごとに1つのコピーが必要だと仮定すると、グリッド内のどこからでも効率的にアクセスできる100GBのメモリにバックアップされた仮想ヒープが得られます。セッションアフィニティは必要ありませんので、派手なロードバランシングポリシーは必要ありません。もちろん、さらなる最適化のためにそれらを使用することもできます。サーバーに障害が発生した場合、グリッドは単に失われたデータの新しいコピーを作成し、他のサーバーに置くだけです。これにより、究極のパフォーマンスを求めるアプリケーションは、データ検索の大部分を単一の大規模なデータベースサーバに任せる必要がなくなります。"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:48
 #, fuzzy
-msgid ""
-"Extreme scalability - Since data is evenly distributed, there is essentially "
-"no major limit to the size of the grid, except group communication on the "
-"network - which is minimised to just discovery of new nodes. All data access "
-"patterns use peer-to-peer communication where nodes directly speak to each "
-"other, which scales very well."
-msgstr ""
-"極端なスケーラビリティ - "
-"データが均等に分散されているため、ネットワーク上でのグループ通信を除いて、グリッドのサイズには基本的に大きな制限はありません。すべてのデータアクセスパターンでは、ノード同士が直接会話するピアツーピア通信を使用しているため、非常に拡張性が高くなっています。"
+msgid "Extreme scalability - Since data is evenly distributed, there is essentially no major limit to the size of the grid, except group communication on the network - which is minimised to just discovery of new nodes. All data access patterns use peer-to-peer communication where nodes directly speak to each other, which scales very well."
+msgstr "極端なスケーラビリティ - データが均等に分散されているため、ネットワーク上でのグループ通信を除いて、グリッドのサイズには基本的に大きな制限はありません。すべてのデータアクセスパターンでは、ノード同士が直接会話するピアツーピア通信を使用しているため、非常に拡張性が高くなっています。"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:58
 #, fuzzy
-msgid ""
-"Very fast and lightweight core - The internal data structures of Infinispan "
-"are simple, very lightweight and heavily optimised for high concurrency. "
-"Early benchmarks have indicated 3-5 times less memory usage, and around 50% "
-"better CPU performance than the latest and greatest JBoss Cache release. "
-"Unlike other popular, competing commercial software, Infinispan scales when "
-"there are many local threads accessing the grid at the same time. Even "
-"though non-clustered caching (LOCAL mode) is not its primary goal, "
-"Infinispan still is very competitive here."
-msgstr ""
-"非常に高速で軽量なコア - Infinispan "
-"の内部データ構造はシンプルで非常に軽量で、高い同時実行性を実現するために大きく最適化されています。初期のベンチマークでは、最新の JBoss Cache "
-"リリースと比較して、メモリ使用量が 3～5 倍少なく、CPU パフォーマンスが約 50% "
-"向上していることが示されています。競合する他の一般的な商用ソフトウェアとは異なり、Infinispan "
-"は、グリッドに同時にアクセスするローカルスレッドが多数ある場合にスケーリングします。非クラスタリングキャッシング（ローカルモード）が主な目的ではないにもかかわらず、Infinispan "
-"はここでも非常に競争力があります。"
+msgid "Very fast and lightweight core - The internal data structures of Infinispan are simple, very lightweight and heavily optimised for high concurrency. Early benchmarks have indicated 3-5 times less memory usage, and around 50% better CPU performance than the latest and greatest JBoss Cache release. Unlike other popular, competing commercial software, Infinispan scales when there are many local threads accessing the grid at the same time. Even though non-clustered caching (LOCAL mode) is not its primary goal, Infinispan still is very competitive here."
+msgstr "非常に高速で軽量なコア - Infinispan の内部データ構造はシンプルで非常に軽量で、高い同時実行性を実現するために大きく最適化されています。初期のベンチマークでは、最新の JBoss Cache リリースと比較して、メモリ使用量が 3～5 倍少なく、CPU パフォーマンスが約 50% 向上していることが示されています。競合する他の一般的な商用ソフトウェアとは異なり、Infinispan は、グリッドに同時にアクセスするローカルスレッドが多数ある場合にスケーリングします。非クラスタリングキャッシング（ローカルモード）が主な目的ではないにもかかわらず、Infinispan はここでも非常に競争力があります。"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:67
 #, fuzzy
-msgid ""
-"Not Just for Java (PHP, Python, Ruby, C, etc.) - The http://www.jboss.org/"
-"community/wiki/InfinispanRoadmap[roadmap] has a plan for a language-"
-"independent server module. This will support both the popular memcached "
-"protocol - with existing clients for almost every popular programming "
-"language - as well as an optimised Infinispan-specific protocol. This means "
-"that Infinispan is not just useful to Java. Any major website or application "
-"that wants to take advantage of a fast data grid will be able to do so."
-msgstr ""
-"Java だけでなく (PHP、Python、Ruby、C など) - link:http://www.jboss.org/community/wiki/"
-"InfinispanRoadmap[ロードマップ] "
-"には、言語に依存しないサーバモジュールの計画があります。これは、ほとんどすべての一般的なプログラミング言語に対応した既存のクライアントを持つ一般的な "
-"memcached プロトコルと、最適化された Infinispan "
-"固有のプロトコルの両方をサポートします。これは、InfinispanがJavaだけに役立つわけではないことを意味しています。高速なデータグリッドを利用したいと考えている主要なウェブサイトやアプリケーションであれば、どのようなものでも利用できます。"
+msgid "Not Just for Java (PHP, Python, Ruby, C, etc.) - The http://www.jboss.org/community/wiki/InfinispanRoadmap[roadmap] has a plan for a language-independent server module. This will support both the popular memcached protocol - with existing clients for almost every popular programming language - as well as an optimised Infinispan-specific protocol. This means that Infinispan is not just useful to Java. Any major website or application that wants to take advantage of a fast data grid will be able to do so."
+msgstr "Java だけでなく (PHP、Python、Ruby、C など) - link:http://www.jboss.org/community/wiki/InfinispanRoadmap[ロードマップ] には、言語に依存しないサーバモジュールの計画があります。これは、ほとんどすべての一般的なプログラミング言語に対応した既存のクライアントを持つ一般的な memcached プロトコルと、最適化された Infinispan 固有のプロトコルの両方をサポートします。これは、InfinispanがJavaだけに役立つわけではないことを意味しています。高速なデータグリッドを利用したいと考えている主要なウェブサイトやアプリケーションであれば、どのようなものでも利用できます。"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:75
 #, fuzzy
-msgid ""
-"Support for Compute Grids - Also on the roadmap is the ability to pass a "
-"Runnable around the grid. You will be able to push complex processing "
-"towards the server where data is local, and pull back results using a Future."
-" This http://labs.google.com/papers/mapreduce.html[map/reduce] style "
-"paradigm is common in applications where a large amount of data is needed to "
-"compute relatively small results."
-msgstr ""
-"コンピュートグリッドのサポート - "
-"ロードマップには、グリッドの周りにRunnableを渡す機能も含まれています。データがローカルにあるサーバーに向かって複雑な処理をプッシュし、Futureを使って結果をプルバックすることができるようになります。この "
-"link:http://labs.google.com/papers/mapreduce.html[map/reduce] "
-"スタイルのパラダイムは、比較的小さな結果を計算するために大量のデータが必要なアプリケーションでは一般的です。"
+msgid "Support for Compute Grids - Also on the roadmap is the ability to pass a Runnable around the grid. You will be able to push complex processing towards the server where data is local, and pull back results using a Future. This http://labs.google.com/papers/mapreduce.html[map/reduce] style paradigm is common in applications where a large amount of data is needed to compute relatively small results."
+msgstr "コンピュートグリッドのサポート - ロードマップには、グリッドの周りにRunnableを渡す機能も含まれています。データがローカルにあるサーバーに向かって複雑な処理をプッシュし、Futureを使って結果をプルバックすることができるようになります。この link:http://labs.google.com/papers/mapreduce.html[map/reduce] スタイルのパラダイムは、比較的小さな結果を計算するために大量のデータが必要なアプリケーションでは一般的です。"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:80
 #, fuzzy
-msgid ""
-"Management is key! - When you start thinking about running a grid on several "
-"hundred servers, management is no longer an extra, it becomes a necessity. "
-"This is on Infinispan's roadmap. We aim to provide rich tooling in this "
-"area, with many integration opportunities."
-msgstr ""
-"管理がカギ!- "
-"数百台のサーバーでグリッドを運用することを考え始めると、管理はもはや余計なものではなく、必要不可欠なものになります。これはInfinispanのロードマップに記載されています。私たちは、この分野の豊富なツールを提供し、多くの統合の機会を提供することを目指しています。"
+msgid "Management is key! - When you start thinking about running a grid on several hundred servers, management is no longer an extra, it becomes a necessity. This is on Infinispan's roadmap. We aim to provide rich tooling in this area, with many integration opportunities."
+msgstr "管理がカギ!- 数百台のサーバーでグリッドを運用することを考え始めると、管理はもはや余計なものではなく、必要不可欠なものになります。これはInfinispanのロードマップに記載されています。私たちは、この分野の豊富なツールを提供し、多くの統合の機会を提供することを目指しています。"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:84
 #, fuzzy
-msgid ""
-"Competition is Proprietary - All of the major, viable competitors in the "
-"space are not open-source, and are very expensive. Enough said.  :-)"
+msgid "Competition is Proprietary - All of the major, viable competitors in the space are not open-source, and are very expensive. Enough said.  :-)"
 msgstr "競争相手はプロプライエタリ - この分野の主要で実行可能な競合他社はすべてオープンソースではなく、非常に高価です。もういいだろ :-)"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:87
 #, fuzzy
-msgid ""
-"What are data grids?http://www.arcatoglobal.com/images/ag_serverfarm."
-"jpg[image:http://www.arcatoglobal.com/images/ag_serverfarm.jpg[image]]"
-msgstr ""
-"データグリッドとは? http://www.arcatoglobal.com/images/ag_serverfarm.jpg[image:http://"
-"www.arcatoglobal.com/images/ag_serverfarm.jpg[alt=\"image\"]]"
+msgid "What are data grids?http://www.arcatoglobal.com/images/ag_serverfarm.jpg[image:http://www.arcatoglobal.com/images/ag_serverfarm.jpg[image]]"
+msgstr "データグリッドとは? http://www.arcatoglobal.com/images/ag_serverfarm.jpg[image:http://www.arcatoglobal.com/images/ag_serverfarm.jpg[alt=\"image\"]]"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:93
 #, fuzzy
-msgid ""
-"Data grids are, to put it simply, highly concurrent distributed data "
-"structures. Data grids typically allow you to address a large amount of "
-"memory and store data in a way that it is quick to access. They also tend to "
-"feature low latency retrieval, and maintain adequate copies across a network "
-"to provide resilience to server failure."
-msgstr ""
-"データグリッドとは、簡単に言えば、高度に並列化された分散データ構造体のことです。データグリッドは一般的に、大量のメモリを使用し、素早くアクセスできる方法でデータを保存することができます。また、低レイテンシの検索を特徴とし、ネットワーク上で適切なコピーを維持することで、サーバーの障害に対する回復力を提供する傾向があります。"
+msgid "Data grids are, to put it simply, highly concurrent distributed data structures. Data grids typically allow you to address a large amount of memory and store data in a way that it is quick to access. They also tend to feature low latency retrieval, and maintain adequate copies across a network to provide resilience to server failure."
+msgstr "データグリッドとは、簡単に言えば、高度に並列化された分散データ構造体のことです。データグリッドは一般的に、大量のメモリを使用し、素早くアクセスできる方法でデータを保存することができます。また、低レイテンシの検索を特徴とし、ネットワーク上で適切なコピーを維持することで、サーバーの障害に対する回復力を提供する傾向があります。"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:102
 #, fuzzy
-msgid ""
-"As such, at its core, Infinispan presents a humble data structure. But this "
-"is also a high specialised data structure, tuned to and geared for a great "
-"degree of concurrency - especially on multi-CPU/multi-core architectures. "
-"Most of the internals are essentially lock- and synchronization-free, "
-"favouring state-of-the-art non-blocking algorithms and techniques wherever "
-"possible. This translates to a data structure that is extremely quick even "
-"when it deals with a large number of concurrent accesses."
-msgstr ""
-"このように、Infinispan のコアは地味なデータ構造です。しかし、これは高度に専門化されたデータ構造でもあり、特にマルチCPU/"
-"マルチコアアーキテクチャ上での同時実行性を考慮して調整され、調整されています。内部構造のほとんどは基本的にロックや同期がなく、可能な限り最新のノンブロッキングアルゴリズムや技術を採用しています。これにより、多数の同時アクセスを処理する場合でも非常に高速なデータ構造が実現されます。"
+msgid "As such, at its core, Infinispan presents a humble data structure. But this is also a high specialised data structure, tuned to and geared for a great degree of concurrency - especially on multi-CPU/multi-core architectures. Most of the internals are essentially lock- and synchronization-free, favouring state-of-the-art non-blocking algorithms and techniques wherever possible. This translates to a data structure that is extremely quick even when it deals with a large number of concurrent accesses."
+msgstr "このように、Infinispan のコアは地味なデータ構造です。しかし、これは高度に専門化されたデータ構造でもあり、特にマルチCPU/マルチコアアーキテクチャ上での同時実行性を考慮して調整され、調整されています。内部構造のほとんどは基本的にロックや同期がなく、可能な限り最新のノンブロッキングアルゴリズムや技術を採用しています。これにより、多数の同時アクセスを処理する場合でも非常に高速なデータ構造が実現されます。"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:108
 #, fuzzy
-msgid ""
-"Beyond this, Infinispan is also a distributed data structure. It farms data "
-"out across a cluster of in-memory containers. It does so with a configurable "
-"degree of redundancy and various parameters to tune the performance-versus-"
-"resilience trade-off. Local \"L1\" caches are also maintained for quick "
-"reads of frequently accessed data."
-msgstr ""
-"これを超えて、Infinispanは分散データ構造でもあります。Infinispanは、インメモリコンテナのクラスタを介してデータをファームアウトします。これは、設定可能な程度の冗長性と様々なパラメータを使用して、パフォーマンスとレジリエンスのトレードオフを調整するために行われます。頻繁にアクセスされるデータを素早く読み取るために、ローカルの「L1」キャッシュも維持されています。"
+msgid "Beyond this, Infinispan is also a distributed data structure. It farms data out across a cluster of in-memory containers. It does so with a configurable degree of redundancy and various parameters to tune the performance-versus-resilience trade-off. Local \"L1\" caches are also maintained for quick reads of frequently accessed data."
+msgstr "これを超えて、Infinispanは分散データ構造でもあります。Infinispanは、インメモリコンテナのクラスタを介してデータをファームアウトします。これは、設定可能な程度の冗長性と様々なパラメータを使用して、パフォーマンスとレジリエンスのトレードオフを調整するために行われます。頻繁にアクセスされるデータを素早く読み取るために、ローカルの「L1」キャッシュも維持されています。"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:114
 #, fuzzy
-msgid ""
-"Further, Infinispan supports http://en.wikipedia.org/wiki/"
-"Java_Transaction_API[JTA] transactions. It also offers eviction strategies "
-"to ensure individual nodes do not run out of memory and passivation/overflow "
-"to disk. Warm-starts using preloads are also supported."
-msgstr ""
-"さらに、Infinispanは link:http://en.wikipedia.org/wiki/Java_Transaction_API[JTA] "
-"トランザクションをサポートしています。また、個々のノードがメモリを使い果たしたり、ディスクへのパッシベーション/"
-"オーバーフローを行わないようにするためのエヴィクション戦略も提供しています。プリロードを使用したウォームスタートもサポートしています。"
+msgid "Further, Infinispan supports http://en.wikipedia.org/wiki/Java_Transaction_API[JTA] transactions. It also offers eviction strategies to ensure individual nodes do not run out of memory and passivation/overflow to disk. Warm-starts using preloads are also supported."
+msgstr "さらに、Infinispanは link:http://en.wikipedia.org/wiki/Java_Transaction_API[JTA] トランザクションをサポートしています。また、個々のノードがメモリを使い果たしたり、ディスクへのパッシベーション/オーバーフローを行わないようにするためのエヴィクション戦略も提供しています。プリロードを使用したウォームスタートもサポートしています。"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:116
@@ -274,126 +147,56 @@ msgstr "JBoss Cache と Infinispan"
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:124
 #, fuzzy
-msgid ""
-"So where does Infinispan stand against the competition? Let's start with "
-"http://www.jbosscache.org/[JBoss Cache]. It is no surprise that there are "
-"many similarities between JBoss Cache and Infinispan, given that they share "
-"the same minds! Infinispan is an evolution of JBoss Cache in that it borrows "
-"ideas, designs and some code, but for all practical purposes it is a brand "
-"new project and a new, much more streamlined codebase."
-msgstr ""
-"では、Infinispanは競合他社とどこに差をつけているのでしょうか？まずは link:http://www.jbosscache.org/"
-"[JBoss Cache] から始めよう。JBoss "
-"CacheとInfinispanは同じ考え方を共有していることを考えると、多くの類似点があるのは当然のことである。Infinispan "
-"は、アイデア、デザイン、コードの一部を拝借しているという点で JBoss Cache "
-"を進化させたものですが、実用的な目的では、全く新しいプロジェクトであり、新しい、より合理化されたコードベースとなっています。"
+msgid "So where does Infinispan stand against the competition? Let's start with http://www.jbosscache.org/[JBoss Cache]. It is no surprise that there are many similarities between JBoss Cache and Infinispan, given that they share the same minds! Infinispan is an evolution of JBoss Cache in that it borrows ideas, designs and some code, but for all practical purposes it is a brand new project and a new, much more streamlined codebase."
+msgstr "では、Infinispanは競合他社とどこに差をつけているのでしょうか？まずは link:http://www.jbosscache.org/[JBoss Cache] から始めよう。JBoss CacheとInfinispanは同じ考え方を共有していることを考えると、多くの類似点があるのは当然のことである。Infinispan は、アイデア、デザイン、コードの一部を拝借しているという点で JBoss Cache を進化させたものですが、実用的な目的では、全く新しいプロジェクトであり、新しい、より合理化されたコードベースとなっています。"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:130
 #, fuzzy
-msgid ""
-"JBoss Cache has evolved from a basic replicated tree structure to include "
-"custom, high performance marshalling (in version 1.4), Buddy Replication (1."
-"4), a new simplified API (2.X), high concurrency MVCC locking (3.0.X) and a "
-"new non-blocking state transfer mechanism (3.1.X).  These were all "
-"incremental steps, but it is time for a quantum leap."
-msgstr ""
-"JBoss Cache は、基本的なレプリケートされたツリー構造から、カスタムの高性能マーシャリング (バージョン 1.4)、バディレプリケーション "
-"(1.4)、新しいシンプルな API (2.X)、高同時実行性 MVCC ロック (3.0.X)、新しいノンブロッキング状態転送メカニズム (3.1."
-"X) を含むように進化しました。これらはすべてインクリメンタルなステップでしたが、そろそろ量子的な飛躍の時です。"
+msgid "JBoss Cache has evolved from a basic replicated tree structure to include custom, high performance marshalling (in version 1.4), Buddy Replication (1.4), a new simplified API (2.X), high concurrency MVCC locking (3.0.X) and a new non-blocking state transfer mechanism (3.1.X).  These were all incremental steps, but it is time for a quantum leap."
+msgstr "JBoss Cache は、基本的なレプリケートされたツリー構造から、カスタムの高性能マーシャリング (バージョン 1.4)、バディレプリケーション (1.4)、新しいシンプルな API (2.X)、高同時実行性 MVCC ロック (3.0.X)、新しいノンブロッキング状態転送メカニズム (3.1.X) を含むように進化しました。これらはすべてインクリメンタルなステップでしたが、そろそろ量子的な飛躍の時です。"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:134
 #, fuzzy
-msgid ""
-"Hence Infinispan. Infinispan is a whole new project - not just JBoss Cache 4."
-"0! - because it is far wider in scope and goals - not to mention target "
-"audience. Here are a few points summarising the differences:"
-msgstr ""
-"それゆえに Infinispan。Infinispan は全く新しいプロジェクトであり、JBoss Cache 4.0 だけではありません。- "
-"対象者は言うまでもなく、範囲も目標もはるかに広いからです。以下に、相違点をまとめてみました。"
+msgid "Hence Infinispan. Infinispan is a whole new project - not just JBoss Cache 4.0! - because it is far wider in scope and goals - not to mention target audience. Here are a few points summarising the differences:"
+msgstr "それゆえに Infinispan。Infinispan は全く新しいプロジェクトであり、JBoss Cache 4.0 だけではありません。- 対象者は言うまでもなく、範囲も目標もはるかに広いからです。以下に、相違点をまとめてみました。"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:137
 #, fuzzy
-msgid ""
-"JBoss Cache is a clustering library. Infinispan's goal is to be a data grid "
-"platform, complete with management and migration tooling."
-msgstr ""
-"JBoss Cache "
-"はクラスタリングライブラリです。Infinispanの目標は、管理と移行ツールを完備したデータグリッドプラットフォームになることです。"
+msgid "JBoss Cache is a clustering library. Infinispan's goal is to be a data grid platform, complete with management and migration tooling."
+msgstr "JBoss Cache はクラスタリングライブラリです。Infinispanの目標は、管理と移行ツールを完備したデータグリッドプラットフォームになることです。"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:142
 #, fuzzy
-msgid ""
-"JBoss Cache's focus has been on clustering, using replication. This has "
-"allowed it to scale to several 10s (occasionally even over 100)  nodes. "
-"Infinispan's goals are far greater - to scale to grids of several 100's of "
-"nodes, eventually exceeding 1000's of nodes. This is achieved using "
-"consistent hash based data distribution."
-msgstr ""
-"JBoss Cache "
-"は、レプリケーションを使用したクラスタリングに重点を置いています。これにより、数十ノード（時には100ノードを超えることもある）までスケーリングすることができました。Infinispan "
-"の目標はそれよりもはるかに大きく、数百ノードのグリッドにスケールし、最終的には1000ノードを超えることです。これは、一貫したハッシュベースのデータ分散を使用して実現しています。"
+msgid "JBoss Cache's focus has been on clustering, using replication. This has allowed it to scale to several 10s (occasionally even over 100)  nodes. Infinispan's goals are far greater - to scale to grids of several 100's of nodes, eventually exceeding 1000's of nodes. This is achieved using consistent hash based data distribution."
+msgstr "JBoss Cache は、レプリケーションを使用したクラスタリングに重点を置いています。これにより、数十ノード（時には100ノードを超えることもある）までスケーリングすることができました。Infinispan の目標はそれよりもはるかに大きく、数百ノードのグリッドにスケールし、最終的には1000ノードを超えることです。これは、一貫したハッシュベースのデータ分散を使用して実現しています。"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:148
 #, fuzzy
-msgid ""
-"Infinispan's data structure design is significantly different to that of "
-"JBoss Cache. This is to help achieve the target CPU and memory performance. "
-"Internally, data is stored in a flat, map-like container rather than a tree. "
-"That said, a tree-like compatibility layer - implemented on top of the flat "
-"container - is provided to aid migration from JBoss Cache."
-msgstr ""
-"Infinispanのデータ構造設計は、JBoss "
-"Cacheとは大きく異なります。これは、目標とするCPUとメモリの性能を達成するためです。内部的には、データはツリーではなく、フラットでマップのようなコンテナに格納されます。とはいえ、フラットコンテナの上に実装されたツリーのような互換性レイヤーは、JBoss "
-"Cache からの移行を支援するために提供されています。"
+msgid "Infinispan's data structure design is significantly different to that of JBoss Cache. This is to help achieve the target CPU and memory performance. Internally, data is stored in a flat, map-like container rather than a tree. That said, a tree-like compatibility layer - implemented on top of the flat container - is provided to aid migration from JBoss Cache."
+msgstr "Infinispanのデータ構造設計は、JBoss Cacheとは大きく異なります。これは、目標とするCPUとメモリの性能を達成するためです。内部的には、データはツリーではなく、フラットでマップのようなコンテナに格納されます。とはいえ、フラットコンテナの上に実装されたツリーのような互換性レイヤーは、JBoss Cache からの移行を支援するために提供されています。"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:151
 #, fuzzy
-msgid ""
-"JBoss Cache traditionally competed against other frameworks like EHCache and "
-"Terracotta. Infinispan, on the other hand, goes head to head against "
-"Oracle's Coherence, Gemfire and Gigaspaces."
-msgstr ""
-"JBoss "
-"Cacheは伝統的にEHCacheやTerracottaなどの他のフレームワークと競合していた。一方、Infinispanは、OracleのCoherence、Gemfire、Gigaspacesと真っ向から対決する。"
+msgid "JBoss Cache traditionally competed against other frameworks like EHCache and Terracotta. Infinispan, on the other hand, goes head to head against Oracle's Coherence, Gemfire and Gigaspaces."
+msgstr "JBoss Cacheは伝統的にEHCacheやTerracottaなどの他のフレームワークと競合していた。一方、Infinispanは、OracleのCoherence、Gemfire、Gigaspacesと真っ向から対決する。"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:159
 #, fuzzy
-msgid ""
-"I have put up some http://www.jboss.org/community/wiki/"
-"InfinispanFrequentlyAskedQuestions[FAQs on the project]. A http://www.jboss."
-"org/community/wiki/InfinispanRoadmap[project roadmap] is also available, as "
-"well as http://www.jboss.org/community/wiki/5minutetutorialonInfinispan[a 5-"
-"minute guide to using Infinispan]."
-msgstr ""
-"link:http://www.jboss.org/community/wiki/"
-"InfinispanFrequentlyAskedQuestions[プロジェクトに関するFAQを] いくつか載せてみました。 link:http://"
-"www.jboss.org/community/wiki/InfinispanRoadmap[プロジェクトのロードマップ] や、 link:http://"
-"www.jboss.org/community/wiki/"
-"5minutetutorialonInfinispan[Infinispanを使うための5分間のガイド] もあります。"
+msgid "I have put up some http://www.jboss.org/community/wiki/InfinispanFrequentlyAskedQuestions[FAQs on the project]. A http://www.jboss.org/community/wiki/InfinispanRoadmap[project roadmap] is also available, as well as http://www.jboss.org/community/wiki/5minutetutorialonInfinispan[a 5-minute guide to using Infinispan]."
+msgstr "link:http://www.jboss.org/community/wiki/InfinispanFrequentlyAskedQuestions[プロジェクトに関するFAQを] いくつか載せてみました。 link:http://www.jboss.org/community/wiki/InfinispanRoadmap[プロジェクトのロードマップ] や、 link:http://www.jboss.org/community/wiki/5minutetutorialonInfinispan[Infinispanを使うための5分間のガイド] もあります。"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:167
 #, fuzzy
-msgid ""
-"Have a look at https://jira.jboss.org/jira/browse/ISPN?report=com.atlassian."
-"jira.plugin.system.project:roadmap-panel[JIRA] or grab the code from our "
-"http://www.jboss.org/infinispan/sourcecode[Subversion repository] to see "
-"where we are with things. If you are interested in participating in "
-"Infinispan, be sure to read our http://www.jboss.org/infinispan/"
-"community[community page]."
-msgstr ""
-"link:https://jira.jboss.org/jira/browse/ISPN?report=com.atlassian.jira."
-"plugin.system.project:roadmap-panel[JIRA を] 見たり、 link:http://www.jboss.org/"
-"infinispan/sourcecode[Subversion リポジトリ] "
-"からコードを取得して、私たちがどのような状況にあるかを確認してください。Infinispan に参加することに興味があれば、 link:http://"
-"www.jboss.org/infinispan/community[コミュニティページを] 必ず読んでください。"
+msgid "Have a look at https://jira.jboss.org/jira/browse/ISPN?report=com.atlassian.jira.plugin.system.project:roadmap-panel[JIRA] or grab the code from our http://www.jboss.org/infinispan/sourcecode[Subversion repository] to see where we are with things. If you are interested in participating in Infinispan, be sure to read our http://www.jboss.org/infinispan/community[community page]."
+msgstr "link:https://jira.jboss.org/jira/browse/ISPN?report=com.atlassian.jira.plugin.system.project:roadmap-panel[JIRA を] 見たり、 link:http://www.jboss.org/infinispan/sourcecode[Subversion リポジトリ] からコードを取得して、私たちがどのような状況にあるかを確認してください。Infinispan に参加することに興味があれば、 link:http://www.jboss.org/infinispan/community[コミュニティページを] 必ず読んでください。"
 
 #. type: Plain text
 #: upstream/_posts/2009-04-28-infinispan-start-of-new-era-in-open.adoc:169

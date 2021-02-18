@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-07-13-400alpha6-another-alpha-for-infinispan.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-13-400alpha6-another-alpha-for-infinispan.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 4.0.0.ALPHA6 - another alpha for Infinispan.\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2009-07-13T05:06:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"alpha\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1061660947867336536\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/07/400alpha6-another-"
-"alpha-for-infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1061660947867336536\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/07/400alpha6-another-alpha-for-infinispan.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,70 +42,33 @@ msgstr ""
 "date: '2009-07-13T05:06:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"alpha\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1061660947867336536\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/07/400alpha6-another-"
-"alpha-for-infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1061660947867336536\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/07/400alpha6-another-alpha-for-infinispan.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-13-400alpha6-another-alpha-for-infinispan.adoc:16
 #, fuzzy
-msgid ""
-"Yes, we've felt the need for one more Alpha. This alpha contains a number of "
-"bug fixes over Alpha5, as well as some new minor features.  Please have a "
-"look at the https://jira.jboss.org/jira/secure/ConfigureReport.jspa?versions="
-"12313761&sections=.1.7.2.4.10.9.8.3.12.11.5&style=none&selectedProjectId="
-"12310799&reportKey=pl.net.mamut%3Areleasenotes&Next=Next[release notes] for "
-"details."
-msgstr ""
-"はい、私たちはもう一つのアルファの必要性を感じています。このアルファには、Alpha5のバグフィックスといくつかの新しいマイナー機能が含まれています。詳細は "
-"link:https://jira.jboss.org/jira/secure/ConfigureReport.jspa?versions="
-"12313761&sections=.1.7.2.4.10.9.8.3.12.11.5&style=none&selectedProjectId="
-"12310799&reportKey=pl.net.mamut%3Areleasenotes&Next=Next[リリースノート] をご覧ください。"
+msgid "Yes, we've felt the need for one more Alpha. This alpha contains a number of bug fixes over Alpha5, as well as some new minor features.  Please have a look at the https://jira.jboss.org/jira/secure/ConfigureReport.jspa?versions=12313761&sections=.1.7.2.4.10.9.8.3.12.11.5&style=none&selectedProjectId=12310799&reportKey=pl.net.mamut%3Areleasenotes&Next=Next[release notes] for details."
+msgstr "はい、私たちはもう一つのアルファの必要性を感じています。このアルファには、Alpha5のバグフィックスといくつかの新しいマイナー機能が含まれています。詳細は link:https://jira.jboss.org/jira/secure/ConfigureReport.jspa?versions=12313761&sections=.1.7.2.4.10.9.8.3.12.11.5&style=none&selectedProjectId=12310799&reportKey=pl.net.mamut%3Areleasenotes&Next=Next[リリースノート] をご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-13-400alpha6-another-alpha-for-infinispan.adoc:24
 #, fuzzy
-msgid ""
-"In addition to code changes, Vladimir Blagojevic has contributed a Doclet to "
-"generate a configuration reference. Check this out http://infinispan."
-"sourceforge.net/4.0/apidocs/config.html[here]. While not all config elements "
-"are properly annotated in this release - and as such the configuration "
-"reference is somewhat sparse - thanks to this tool, a more complete and up-"
-"to-date configuration reference is something you can look forward to in "
-"future releases."
-msgstr ""
-"コードの変更に加えて、Vladimir Blagojevic氏は設定参照を生成するためのDocletを寄稿しています。 link:http://"
-"infinispan.sourceforge.net/4.0/apidocs/config.html[こちら] "
-"をチェックしてみてください。このリリースでは、すべての設定要素が適切に注釈されているわけではありませんが、このツールのおかげで、より完全で最新の設定リファレンスが作成できるようになりました。"
+msgid "In addition to code changes, Vladimir Blagojevic has contributed a Doclet to generate a configuration reference. Check this out http://infinispan.sourceforge.net/4.0/apidocs/config.html[here]. While not all config elements are properly annotated in this release - and as such the configuration reference is somewhat sparse - thanks to this tool, a more complete and up-to-date configuration reference is something you can look forward to in future releases."
+msgstr "コードの変更に加えて、Vladimir Blagojevic氏は設定参照を生成するためのDocletを寄稿しています。 link:http://infinispan.sourceforge.net/4.0/apidocs/config.html[こちら] をチェックしてみてください。このリリースでは、すべての設定要素が適切に注釈されているわけではありませんが、このツールのおかげで、より完全で最新の設定リファレンスが作成できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-13-400alpha6-another-alpha-for-infinispan.adoc:31
 #, fuzzy
-msgid ""
-"Further, Alejandro Montenegro has started compiling steps for an http://www."
-"jboss.org/community/wiki/Infinispaninteractivetutorial[interactive tutorial]."
-" Making use of a Groovy shell, this tutorial guides readers through most of "
-"Infinispan's APIs in an interactive manner that would hopefully make it easy "
-"to learn about Infispan. Please do give this a try and provide Alejandro "
-"with feedback!"
-msgstr ""
-"さらに、Alejandro Montenegro氏は、 link:http://www.jboss.org/community/wiki/"
-"Infinispaninteractivetutorial[対話型チュートリアル] "
-"のステップのコンパイルを開始しました。Groovyシェルを利用したこのチュートリアルでは、InfinispanのAPIのほとんどをインタラクティブな方法で読者に案内しています。ぜひ試してみて、Alejandroにフィードバックを提供してください。"
+msgid "Further, Alejandro Montenegro has started compiling steps for an http://www.jboss.org/community/wiki/Infinispaninteractivetutorial[interactive tutorial]. Making use of a Groovy shell, this tutorial guides readers through most of Infinispan's APIs in an interactive manner that would hopefully make it easy to learn about Infispan. Please do give this a try and provide Alejandro with feedback!"
+msgstr "さらに、Alejandro Montenegro氏は、 link:http://www.jboss.org/community/wiki/Infinispaninteractivetutorial[対話型チュートリアル] のステップのコンパイルを開始しました。Groovyシェルを利用したこのチュートリアルでは、InfinispanのAPIのほとんどをインタラクティブな方法で読者に案内しています。ぜひ試してみて、Alejandroにフィードバックを提供してください。"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-13-400alpha6-another-alpha-for-infinispan.adoc:36
 #, fuzzy
-msgid ""
-"Please http://www.jboss.org/infinispan/downloads[download] and try out this "
-"release, and http://www.jboss.org/index.html?module=bb&op=viewforum&f="
-"309[feed back] with your thoughts and experiences!"
-msgstr ""
-"このリリースを link:http://www.jboss.org/infinispan/downloads[ダウンロードして] "
-"試してみて、あなたの考えや経験を link:http://www.jboss.org/index.html?module=bb&op="
-"viewforum&f=309[フィードバックし] てください。"
+msgid "Please http://www.jboss.org/infinispan/downloads[download] and try out this release, and http://www.jboss.org/index.html?module=bb&op=viewforum&f=309[feed back] with your thoughts and experiences!"
+msgstr "このリリースを link:http://www.jboss.org/infinispan/downloads[ダウンロードして] 試してみて、あなたの考えや経験を link:http://www.jboss.org/index.html?module=bb&op=viewforum&f=309[フィードバックし] てください。"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-13-400alpha6-another-alpha-for-infinispan.adoc:38

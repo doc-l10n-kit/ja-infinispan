@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.2.0.Alpha2 & 9.1.2.Final released\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2017-10-27T11:01:00.000-07:00'\n"
 "author: ttarrant\n"
 "tags: [ \"release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8892880545538431411\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/10/infinispan-920alpha2-"
-"912final-released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8892880545538431411\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/10/infinispan-920alpha2-912final-released.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,10 +42,8 @@ msgstr ""
 "date: '2017-10-27T11:01:00.000-07:00'\n"
 "author: ttarrant\n"
 "tags: [ \"release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8892880545538431411\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/10/infinispan-920alpha2-"
-"912final-released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8892880545538431411\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/10/infinispan-920alpha2-912final-released.html\n"
 "---\n"
 
 #. type: Plain text
@@ -59,13 +55,8 @@ msgstr "Infinispanコミュニティの皆様へ。"
 #. type: Plain text
 #: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:17
 #, fuzzy
-msgid ""
-"We have 2 new releases ready for everyone. We have our newest and greatest, "
-"9.2.0.Alpha2 and an updated Final for our stable branch 9.1.2.  As usual, "
-"both can be found on our download http://infinispan.org/download/[page]."
-msgstr ""
-"2つの新しいリリースを用意しています。最新かつ最高の 9.2.0.Alpha2 と、安定版ブランチ 9.1.2 の更新版 Final "
-"です。いつものように、両方ともダウンロードページにあります。"
+msgid "We have 2 new releases ready for everyone. We have our newest and greatest, 9.2.0.Alpha2 and an updated Final for our stable branch 9.1.2.  As usual, both can be found on our download http://infinispan.org/download/[page]."
+msgstr "2つの新しいリリースを用意しています。最新かつ最高の 9.2.0.Alpha2 と、安定版ブランチ 9.1.2 の更新版 Final です。いつものように、両方ともダウンロードページにあります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:19
@@ -76,56 +67,32 @@ msgstr "9.2.0.Alpha2には以下の新機能が含まれています。"
 #. type: Plain text
 #: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:23
 #, fuzzy
-msgid ""
-"New Counters can be removed https://issues.jboss.org/browse/ISPN-8093[ISPN-"
-"8093]"
-msgstr ""
-"新規カウンタの削除が可能 link:https://issues.jboss.org/browse/ISPN-8093[ISPN-8093]"
+msgid "New Counters can be removed https://issues.jboss.org/browse/ISPN-8093[ISPN-8093]"
+msgstr "新規カウンタの削除が可能 link:https://issues.jboss.org/browse/ISPN-8093[ISPN-8093]"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:27
 #, fuzzy
-msgid ""
-"Interoperability between JSON and Protobuf, allowing to retrieve Protobuf "
-"content (written via Hot Rod) as JSON via Rest; also JSON documents written "
-"via Rest can be automatically converted to Protobuf and indexed. https://"
-"issues.jboss.org/browse/ISPN-7422[ISPN-7422]"
-msgstr ""
-"JSONとProtobufの相互運用性があり、Protobufのコンテンツ（Hot "
-"Rod経由で書かれたもの）をRest経由でJSONとして取得することができます。 link:https://issues.jboss.org/"
-"browse/ISPN-7422[ISPN-7422]"
+msgid "Interoperability between JSON and Protobuf, allowing to retrieve Protobuf content (written via Hot Rod) as JSON via Rest; also JSON documents written via Rest can be automatically converted to Protobuf and indexed. https://issues.jboss.org/browse/ISPN-7422[ISPN-7422]"
+msgstr "JSONとProtobufの相互運用性があり、Protobufのコンテンツ（Hot Rod経由で書かれたもの）をRest経由でJSONとして取得することができます。 link:https://issues.jboss.org/browse/ISPN-7422[ISPN-7422]"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:29
 #, fuzzy
-msgid ""
-"Wildcard cache configurations allowing for multiple caches from 1 "
-"config https://issues.jboss.org/browse/ISPN-8379[ISPN-8379]"
-msgstr ""
-"ワイルドカードキャッシュの設定で、1つの設定 ISPN link:https://issues.jboss.org/browse/ISPN-8379[-"
-"8379] から複数のキャッシュを使用できるようになります。"
+msgid "Wildcard cache configurations allowing for multiple caches from 1 config https://issues.jboss.org/browse/ISPN-8379[ISPN-8379]"
+msgstr "ワイルドカードキャッシュの設定で、1つの設定 ISPN link:https://issues.jboss.org/browse/ISPN-8379[-8379] から複数のキャッシュを使用できるようになります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:32
 #, fuzzy
-msgid ""
-"Reactive streams based iterator implementation providing better throughput "
-"and less resources usage https://issues.jboss.org/browse/ISPN-7865[ISPN-"
-"7865]"
-msgstr ""
-"リアクティブ・ストリーム・ベースのイテレータ実装により、より良いスループットとより少ないリソース使用量を実現 link:https://issues."
-"jboss.org/browse/ISPN-7865[ISPN-7865]"
+msgid "Reactive streams based iterator implementation providing better throughput and less resources usage https://issues.jboss.org/browse/ISPN-7865[ISPN-7865]"
+msgstr "リアクティブ・ストリーム・ベースのイテレータ実装により、より良いスループットとより少ないリソース使用量を実現 link:https://issues.jboss.org/browse/ISPN-7865[ISPN-7865]"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:35
 #, fuzzy
-msgid ""
-"An experimental evalAll like method on the LockedStream interface allowing "
-"for exclusive operation on entries and a return value https://issues.jboss."
-"org/browse/ISPN-8310[ISPN-8310]"
-msgstr ""
-"エントリと戻り値の排他的な操作を可能にする LockedStream インターフェース上の実験的な evalAll ライクなメソッド link:"
-"https://issues.jboss.org/browse/ISPN-8310[ISPN-8310]"
+msgid "An experimental evalAll like method on the LockedStream interface allowing for exclusive operation on entries and a return value https://issues.jboss.org/browse/ISPN-8310[ISPN-8310]"
+msgstr "エントリと戻り値の排他的な操作を可能にする LockedStream インターフェース上の実験的な evalAll ライクなメソッド link:https://issues.jboss.org/browse/ISPN-8310[ISPN-8310]"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:38
@@ -148,24 +115,13 @@ msgstr "クエリとエンコーディングのオフヒープの改善と修正
 #. type: Plain text
 #: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:50
 #, fuzzy
-msgid ""
-"Besides these there were also quite a few bug fixes and code clean ups.  "
-"Full details of the new features and enhancements included in this release "
-"can be found https://issues.jboss.org/secure/ReleaseNote.jspa?version="
-"12335606&projectId=12310799[here] and https://issues.jboss.org/secure/"
-"ReleaseNote.jspa?version=12335604&styleName=Html&projectId=12310799[here]."
-msgstr ""
-"これらの他にも、かなりの数のバグ修正とコードのクリーンアップが行われました。このリリースに含まれる新機能と機能強化の詳細については、 link:"
-"https://issues.jboss.org/secure/ReleaseNote.jspa?version=12335606&projectId="
-"12310799[こちら] と link:https://issues.jboss.org/secure/ReleaseNote."
-"jspa?version=12335604&styleName=Html&projectId=12310799[こちら] をご覧ください。"
+msgid "Besides these there were also quite a few bug fixes and code clean ups.  Full details of the new features and enhancements included in this release can be found https://issues.jboss.org/secure/ReleaseNote.jspa?version=12335606&projectId=12310799[here] and https://issues.jboss.org/secure/ReleaseNote.jspa?version=12335604&styleName=Html&projectId=12310799[here]."
+msgstr "これらの他にも、かなりの数のバグ修正とコードのクリーンアップが行われました。このリリースに含まれる新機能と機能強化の詳細については、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?version=12335606&projectId=12310799[こちら] と link:https://issues.jboss.org/secure/ReleaseNote.jspa?version=12335604&styleName=Html&projectId=12310799[こちら] をご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-27-infinispan-920alpha2-912final-released.adoc:53
 #, fuzzy
-msgid ""
-"We have even more exciting features still coming up for Infinispan 9.2.  "
-"Thank you for following us and stay tuned!"
+msgid "We have even more exciting features still coming up for Infinispan 9.2.  Thank you for following us and stay tuned!"
 msgstr "Infinispan 9.2では、さらにエキサイティングな機能をご用意しています。フォローしていただきありがとうございます。"
 
 #. type: Plain text

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Making Java objects queryable by Infinispan remote clients\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2018-06-27T04:46:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \" remote query\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7670094109988265383\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/06/making-java-objects-"
-"queryable-by.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7670094109988265383\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/06/making-java-objects-queryable-by.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,10 +42,8 @@ msgstr ""
 "date: '2018-06-27T04:46:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \" remote query\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7670094109988265383\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/06/making-java-objects-"
-"queryable-by.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7670094109988265383\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/06/making-java-objects-queryable-by.html\n"
 "---\n"
 
 #. type: Plain text
@@ -58,67 +54,43 @@ msgstr "Infinispanコミュニティユーザーの間では、以下のよう�
 
 #. type: delimited block _
 #: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:15
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "*How do I make my Java objects queryable by remote clients?* \n"
 msgstr "*自分のJavaオブジェクトをリモートクライアントから問い合わせ可能にするにはどうすればいいですか？*"
 
 #. type: Title ===
 #: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:19
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Annotation Method"
 msgstr "アノテーション方法"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:26
 #, fuzzy
-msgid ""
-"The simplest way is to take advantage https://github.com/infinispan/"
-"protostream[Infinispan Protostream] annotations to mark your objects "
-"queryable and decide how each object field should be indexed. Example:"
-msgstr ""
-"最も簡単な方法は、 link:https://github.com/infinispan/protostream[Infinispan "
-"Protostream] "
-"アノテーションを利用して、オブジェクトにクエリー可能なマークを付け、各オブジェクトフィールドがどのようにインデックス化されるべきかを決定することです。例"
+msgid "The simplest way is to take advantage https://github.com/infinispan/protostream[Infinispan Protostream] annotations to mark your objects queryable and decide how each object field should be indexed. Example:"
+msgstr "最も簡単な方法は、 link:https://github.com/infinispan/protostream[Infinispan Protostream] アノテーションを利用して、オブジェクトにクエリー可能なマークを付け、各オブジェクトフィールドがどのようにインデックス化されるべきかを決定することです。例"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:33
 #, fuzzy
-msgid ""
-"Then, the https://github.com/infinispan/protostream/blob/master/core/src/"
-"main/java/org/infinispan/protostream/annotations/ProtoSchemaBuilder."
-"java[ProtoSchemaBuilder] can inspect the annotated class and derive a https:/"
-"/developers.google.com/protocol-buffers/[Google Protocol Buffers] schema "
-"file from it. Example:"
-msgstr ""
-"その後、 link:https://github.com/infinispan/protostream/blob/master/core/src/"
-"main/java/org/infinispan/protostream/annotations/ProtoSchemaBuilder."
-"java[ProtoSchemaBuilder は] 、アノテーションされたクラスを検査し、そこから link:https://developers."
-"google.com/protocol-buffers/[Google Protocol Buffers] "
-"スキーマファイルを導出することができます。例。"
+msgid "Then, the https://github.com/infinispan/protostream/blob/master/core/src/main/java/org/infinispan/protostream/annotations/ProtoSchemaBuilder.java[ProtoSchemaBuilder] can inspect the annotated class and derive a https://developers.google.com/protocol-buffers/[Google Protocol Buffers] schema file from it. Example:"
+msgstr "その後、 link:https://github.com/infinispan/protostream/blob/master/core/src/main/java/org/infinispan/protostream/annotations/ProtoSchemaBuilder.java[ProtoSchemaBuilder は] 、アノテーションされたクラスを検査し、そこから link:https://developers.google.com/protocol-buffers/[Google Protocol Buffers] スキーマファイルを導出することができます。例。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:37
 #, fuzzy
-msgid ""
-"Finally, the schema file needs to be registered in the "
-"“___protobuf_metadata” cache:"
+msgid "Finally, the schema file needs to be registered in the “___protobuf_metadata” cache:"
 msgstr "最後に、スキーマファイルを「___protobuf_metadata」キャッシュに登録する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:44
 #, fuzzy
-msgid ""
-"Although this is by far the easiest way to make your Java objects queryable, "
-"this method might not always be viable. For example, you might not be able "
-"to modify the Java object classes to add the annotations. For such use "
-"cases, a more verbose method is available that does not require modifying "
-"the source code of the Java object."
-msgstr ""
-"これは、Javaオブジェクトをクエリ可能にする最も簡単な方法ですが、この方法は必ずしも実行可能とは限りません。例えば、注釈を追加するためにJavaオブジェクト・クラスを変更できないかもしれません。そのような場合には、Javaオブジェクトのソース・コードを修正する必要のない、より冗長なメソッドが利用可能です。"
+msgid "Although this is by far the easiest way to make your Java objects queryable, this method might not always be viable. For example, you might not be able to modify the Java object classes to add the annotations. For such use cases, a more verbose method is available that does not require modifying the source code of the Java object."
+msgstr "これは、Javaオブジェクトをクエリ可能にする最も簡単な方法ですが、この方法は必ずしも実行可能とは限りません。例えば、注釈を追加するためにJavaオブジェクト・クラスを変更できないかもしれません。そのような場合には、Javaオブジェクトのソース・コードを修正する必要のない、より冗長なメソッドが利用可能です。"
 
 #. type: Title ===
 #: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:46
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Plain Object Method"
 msgstr "プレーンオブジェクトメソッド"
 
@@ -131,56 +103,32 @@ msgstr "例えば、このJavaオブジェクトが与えられたとします�
 #. type: Plain text
 #: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:54
 #, fuzzy
-msgid ""
-"A Protocol Buffers schema must be defined where comments are used to define "
-"the object as queryable and decide how each field is indexed:"
-msgstr ""
-"Protocol Buffers "
-"スキーマは、コメントを使用してオブジェクトをクエリ可能なものとして定義し、各フィールドがどのようにインデックス化されるかを決定するために定義されなければなりません。"
+msgid "A Protocol Buffers schema must be defined where comments are used to define the object as queryable and decide how each field is indexed:"
+msgstr "Protocol Buffers スキーマは、コメントを使用してオブジェクトをクエリ可能なものとして定義し、各フィールドがどのようにインデックス化されるかを決定するために定義されなければなりません。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:60
 #, fuzzy
-msgid ""
-"This method also requires a https://github.com/infinispan/protostream/blob/"
-"master/core/src/main/java/org/infinispan/protostream/MessageMarshaller."
-"java[Protostream message marshaller] to be defined which specifies how each "
-"field is serialized/deserialized:"
-msgstr ""
-"このメソッドは、各フィールドがどのようにシリアライズ/デシリアライズされるかを指定する link:https://github.com/"
-"infinispan/protostream/blob/master/core/src/main/java/org/infinispan/"
-"protostream/MessageMarshaller.java[Protostream メッセージ・マーシャラー] も定義する必要があります。"
+msgid "This method also requires a https://github.com/infinispan/protostream/blob/master/core/src/main/java/org/infinispan/protostream/MessageMarshaller.java[Protostream message marshaller] to be defined which specifies how each field is serialized/deserialized:"
+msgstr "このメソッドは、各フィールドがどのようにシリアライズ/デシリアライズされるかを指定する link:https://github.com/infinispan/protostream/blob/master/core/src/main/java/org/infinispan/protostream/MessageMarshaller.java[Protostream メッセージ・マーシャラー] も定義する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:65
 #, fuzzy
-msgid ""
-"This method still requires the Protocol Buffers schema to be registered "
-"remotely, but on top of that, the schema and marshaller need to be "
-"registered in the client:"
-msgstr ""
-"この方法でもプロトコルバッファースキーマをリモートで登録する必要がありますが、その上でスキーマとマーシャラーをクライアントに登録する必要があります。"
+msgid "This method still requires the Protocol Buffers schema to be registered remotely, but on top of that, the schema and marshaller need to be registered in the client:"
+msgstr "この方法でもプロトコルバッファースキーマをリモートで登録する必要がありますが、その上でスキーマとマーシャラーをクライアントに登録する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:71
 #, fuzzy
-msgid ""
-"Clearly, this second method is a lot more verbose and more laborious when "
-"refactoring. If any changes are made to the Java object, the marshaller and "
-"Protocol Buffer schema need to also be changed accordingly. This is done "
-"automatically in the first method."
-msgstr ""
-"明らかに、この2番目のメソッドは、リファクタリングの際に、より冗長で手間がかかります。Javaオブジェクトに変更が加えられた場合、マーシャラーとプロトコルバッファのスキーマもそれに応じて変更する必要があります。これは最初のメソッドで自動的に行われます。"
+msgid "Clearly, this second method is a lot more verbose and more laborious when refactoring. If any changes are made to the Java object, the marshaller and Protocol Buffer schema need to also be changed accordingly. This is done automatically in the first method."
+msgstr "明らかに、この2番目のメソッドは、リファクタリングの際に、より冗長で手間がかかります。Javaオブジェクトに変更が加えられた場合、マーシャラーとプロトコルバッファのスキーマもそれに応じて変更する必要があります。これは最初のメソッドで自動的に行われます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:75
 #, fuzzy
-msgid ""
-"Both methods are demonstrated in full in the https://github.com/infinispan-"
-"demos/queryable-pojos[queryable-pojos demo]."
-msgstr ""
-"どちらのメソッドも link:https://github.com/infinispan-demos/queryable-pojos[queryable-"
-"pojos のデモ] で完全にデモされています。"
+msgid "Both methods are demonstrated in full in the https://github.com/infinispan-demos/queryable-pojos[queryable-pojos demo]."
+msgstr "どちらのメソッドも link:https://github.com/infinispan-demos/queryable-pojos[queryable-pojos のデモ] で完全にデモされています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-27-making-java-objects-queryable-by.adoc:78

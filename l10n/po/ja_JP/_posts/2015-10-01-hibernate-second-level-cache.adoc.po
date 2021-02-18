@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:13
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Hibernate Second Level Cache improvements\n"
@@ -35,10 +35,8 @@ msgid ""
 "\"hibernate\",\n"
 "\"second level cache provider\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2426495200310961025\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/10/hibernate-second-level-"
-"cache.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2426495200310961025\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/10/hibernate-second-level-cache.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -50,140 +48,57 @@ msgstr ""
 "\"hibernate\",\n"
 "\"second level cache provider\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2426495200310961025\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/10/hibernate-second-level-"
-"cache.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2426495200310961025\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/10/hibernate-second-level-cache.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:21
 #, fuzzy
-msgid ""
-"Infinispan has been implementing *Hibernate Second Level Cache* for a long "
-"time, replacing the previous JBoss Cache implementation with very similar "
-"logic. The main aim of the implementation has always been to have very fast "
-"reads, keeping the overhead of cache during reads on minimum. This was "
-"achieved using local reads in invalidation-mode cache and Infinispan's "
-"_putForExternalRead_ operation, where the request to cache never blocks."
-msgstr ""
-"Infinispan は長い間 *Hibernate Second Level Cache* を実装しており、以前の JBoss Cache "
-"の実装を非常に類似したロジックで置き換えています。この実装の主な目的は、リード中のキャッシュのオーバーヘッドを最小限に抑え、非常に高速なリードを実現することでした。これは、無効モードキャッシュでのローカルリードと "
-"Infinispan の _putForExternalRead_ 操作を使用して達成されました。"
+msgid "Infinispan has been implementing *Hibernate Second Level Cache* for a long time, replacing the previous JBoss Cache implementation with very similar logic. The main aim of the implementation has always been to have very fast reads, keeping the overhead of cache during reads on minimum. This was achieved using local reads in invalidation-mode cache and Infinispan's _putForExternalRead_ operation, where the request to cache never blocks."
+msgstr "Infinispan は長い間 *Hibernate Second Level Cache* を実装しており、以前の JBoss Cache の実装を非常に類似したロジックで置き換えています。この実装の主な目的は、リード中のキャッシュのオーバーヘッドを最小限に抑え、非常に高速なリードを実現することでした。これは、無効モードキャッシュでのローカルリードと Infinispan の _putForExternalRead_ 操作を使用して達成されました。"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:31
 #, fuzzy
-msgid ""
-"Recently we've looked on the implementation again to see whether we can "
-"speed it up even more. For a long time you could use only transactional "
-"caches to keep the cache in sync with database. However transactions come at "
-"some cost so we thought about a way to get around it. And we have found it, "
-"through custom interceptors we have managed to do two-phase updates to the "
-"cache and now the non-transactional caches are the default configuration. "
-"So, if you're using Hibernate with your own configuration, don't forget to "
-"update that when migrating to Hibernate ORM 5!"
-msgstr ""
-"最近になって、さらに高速化できないかと、改めて実装を見てみました。長い間、データベースと同期してキャッシュを維持するためにトランザクションキャッシュだけを使うことができました。しかし、トランザクションにはコストがかかるので、それを回避する方法を考えました。そして、カスタムインターセプターを使って、キャッシュの二段階の更新を行うことができました。ということで、もしあなたが独自の設定でHibernateを使っているのであれば、Hibernate "
-"ORM 5に移行する際には、その更新を忘れずに行ってくださいね"
+msgid "Recently we've looked on the implementation again to see whether we can speed it up even more. For a long time you could use only transactional caches to keep the cache in sync with database. However transactions come at some cost so we thought about a way to get around it. And we have found it, through custom interceptors we have managed to do two-phase updates to the cache and now the non-transactional caches are the default configuration. So, if you're using Hibernate with your own configuration, don't forget to update that when migrating to Hibernate ORM 5!"
+msgstr "最近になって、さらに高速化できないかと、改めて実装を見てみました。長い間、データベースと同期してキャッシュを維持するためにトランザクションキャッシュだけを使うことができました。しかし、トランザクションにはコストがかかるので、それを回避する方法を考えました。そして、カスタムインターセプターを使って、キャッシュの二段階の更新を行うことができました。ということで、もしあなたが独自の設定でHibernateを使っているのであれば、Hibernate ORM 5に移行する際には、その更新を忘れずに行ってくださいね"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:44
 #, fuzzy
-msgid ""
-"With transactions gone, our task was not over. So far entity/collection "
-"caching has been implemented for invalidation mode caches, but it's tempting "
-"to consider replication mode, too. For replicated caches, we got rid of a "
-"special cache for _pending puts_ (this local cache detects out-of-date "
-"reads, keeping the entity cache consistent). Instead, we used different "
-"technique where a logical removal from the cache is substituted by replace "
-"with a token called _tombstone_, and updates pre-invalidate the cache in a "
-"similar way. This change opened the possibility for *non-transactional "
-"replicated* and *distributed* caches (transactional mode is not supported). "
-"We were pleased to see the results of some benchmark where the high hit "
-"ratio in replicated caches has dramatically speeded up all operations."
-msgstr ""
-"トランザクションがなくなっても、私たちの仕事は終わりませんでした。これまでのところ、エンティティ/"
-"コレクションキャッシュは無効モードのキャッシュに実装されていましたが、レプリケーションモードも考えたくなります。レプリケートされたキャッシュについては、保留中の "
-"_プット_ "
-"のための特別なキャッシュを取り除きました(このローカルキャッシュは古いリードを検出し、エンティティキャッシュの一貫性を保ちます)。その代わりに、キャッシュからの論理的な削除を "
-"_トームストーン_ と呼ばれるトークンで置き換え、更新も同様の方法でキャッシュを事前に無効化するという別のテクニックを使用しました。この変更により、 "
-"*非トランザクション型の複製* キャッシュと *分散* "
-"キャッシュの可能性が開けました（トランザクションモードはサポートされていません）。レプリケートされたキャッシュのヒット率が高いことで、すべての操作が劇的に高速化されたというベンチマークがいくつかありましたが、その結果に満足しています。"
+msgid "With transactions gone, our task was not over. So far entity/collection caching has been implemented for invalidation mode caches, but it's tempting to consider replication mode, too. For replicated caches, we got rid of a special cache for _pending puts_ (this local cache detects out-of-date reads, keeping the entity cache consistent). Instead, we used different technique where a logical removal from the cache is substituted by replace with a token called _tombstone_, and updates pre-invalidate the cache in a similar way. This change opened the possibility for *non-transactional replicated* and *distributed* caches (transactional mode is not supported). We were pleased to see the results of some benchmark where the high hit ratio in replicated caches has dramatically speeded up all operations."
+msgstr "トランザクションがなくなっても、私たちの仕事は終わりませんでした。これまでのところ、エンティティ/コレクションキャッシュは無効モードのキャッシュに実装されていましたが、レプリケーションモードも考えたくなります。レプリケートされたキャッシュについては、保留中の _プット_ のための特別なキャッシュを取り除きました(このローカルキャッシュは古いリードを検出し、エンティティキャッシュの一貫性を保ちます)。その代わりに、キャッシュからの論理的な削除を _トームストーン_ と呼ばれるトークンで置き換え、更新も同様の方法でキャッシュを事前に無効化するという別のテクニックを使用しました。この変更により、 *非トランザクション型の複製* キャッシュと *分散* キャッシュの可能性が開けました（トランザクションモードはサポートされていません）。レプリケートされたキャッシュのヒット率が高いことで、すべての操作が劇的に高速化されたというベンチマークがいくつかありましたが、その結果に満足しています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:51
 #, fuzzy
-msgid ""
-"There is one downside of the current implementation - in replication mode, "
-"you *should not use eviction*, as eviction cannot tell regular entity (which "
-"can be evicted) from the tombstone. If tombstone was evicted, there's a risk "
-"of inconsistent reads. So when using replicated caches, you should rely on "
-"expiration to keep your cache slender. We hope that eventually we'll remove "
-"this limitation."
-msgstr ""
-"現在の実装には1つの欠点があります - レプリケーションモードでは、evictionを *使用すべきではありません、eviction* "
-"では通常のエンティティ（evictedが可能なもの）とtombstoneを区別できないからです。もしtombstoneがevictedされていた場合、一貫性のない読み込みのリスクがあります。そのため、レプリケートされたキャッシュを使用する場合は、キャッシュをスリムに保つために、expirationに頼るべきです。いずれはこの制限がなくなることを期待しています。"
+msgid "There is one downside of the current implementation - in replication mode, you *should not use eviction*, as eviction cannot tell regular entity (which can be evicted) from the tombstone. If tombstone was evicted, there's a risk of inconsistent reads. So when using replicated caches, you should rely on expiration to keep your cache slender. We hope that eventually we'll remove this limitation."
+msgstr "現在の実装には1つの欠点があります - レプリケーションモードでは、evictionを *使用すべきではありません、eviction* では通常のエンティティ（evictedが可能なもの）とtombstoneを区別できないからです。もしtombstoneがevictedされていた場合、一貫性のない読み込みのリスクがあります。そのため、レプリケートされたキャッシュを使用する場合は、キャッシュをスリムに保つために、expirationに頼るべきです。いずれはこの制限がなくなることを期待しています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:56
 #, fuzzy
-msgid ""
-"All modes described above give us cache without any stale reads. That comes "
-"at a cost - each modification (insert, update or removal) requires 2 "
-"accesses to the cache (though, sometimes the second access can be "
-"asynchronous). Some applications do not require such strict consistency"
-msgstr ""
-"上記で説明したすべてのモードでは、スタールリードのないキャッシュを得ることができます。これにはコストがかかります - 各変更 (挿入、更新、削除) "
-"はキャッシュへの 2 回のアクセスを必要とします (ただし、2 "
-"回目のアクセスは非同期である場合もあります)。アプリケーションによっては、このような厳密な一貫性を必要としないものもあります。"
+msgid "All modes described above give us cache without any stale reads. That comes at a cost - each modification (insert, update or removal) requires 2 accesses to the cache (though, sometimes the second access can be asynchronous). Some applications do not require such strict consistency"
+msgstr "上記で説明したすべてのモードでは、スタールリードのないキャッシュを得ることができます。これにはコストがかかります - 各変更 (挿入、更新、削除) はキャッシュへの 2 回のアクセスを必要とします (ただし、2 回目のアクセスは非同期である場合もあります)。アプリケーションによっては、このような厳密な一貫性を必要としないものもあります。"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:64
 #, fuzzy
-msgid ""
-"and that's where _nonstrict-read-write_ comes to the scene. Here we "
-"guarantee that the cache will provide the same result as DB after the "
-"modifying transaction commits - between DB commit and transaction commit a "
-"stale value can be provided. If you use asynchronous cache, this may be "
-"delayed even more but unless the operation fails (e.g. due to locking "
-"timeout) the cache will eventually get into a state consistent with DB.  "
-"This allows us to limit modifications to single cache access per "
-"modification."
-msgstr ""
-"そして、ここで _nonstrict-_ read-write "
-"が登場します。ここでは、変更中のトランザクションがコミットした後にキャッシュがDBと同じ結果を提供することを保証しています - "
-"DBのコミットとトランザクションのコミットの間に古い値を提供することができます。非同期キャッシュを使用している場合、これはさらに遅れるかもしれませんが、操作が失敗しない限り（例えばロックのタイムアウトによる）、キャッシュは最終的にDBと一致した状態になります。これにより、1回の修正につき1回のキャッシュアクセスに限定することができます。"
+msgid "and that's where _nonstrict-read-write_ comes to the scene. Here we guarantee that the cache will provide the same result as DB after the modifying transaction commits - between DB commit and transaction commit a stale value can be provided. If you use asynchronous cache, this may be delayed even more but unless the operation fails (e.g. due to locking timeout) the cache will eventually get into a state consistent with DB.  This allows us to limit modifications to single cache access per modification."
+msgstr "そして、ここで _nonstrict-_ read-write が登場します。ここでは、変更中のトランザクションがコミットした後にキャッシュがDBと同じ結果を提供することを保証しています - DBのコミットとトランザクションのコミットの間に古い値を提供することができます。非同期キャッシュを使用している場合、これはさらに遅れるかもしれませんが、操作が失敗しない限り（例えばロックのタイムアウトによる）、キャッシュは最終的にDBと一致した状態になります。これにより、1回の修正につき1回のキャッシュアクセスに限定することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:70
 #, fuzzy
-msgid ""
-"Note that _nonstrict-read-write_ mode is supported only for *versioned* "
-"entities/collections (that way we can find out which entity is actually "
-"newer). Also, you cannot use eviction in nonstrict-read-write mode, for the "
-"same reason as in tombstone-based modes. Invalidation cache mode is not "
-"supported neither."
-msgstr ""
-"non- _strict_ -read-writeモードは、 *バージョン管理された* エンティティ/"
-"コレクションに対してのみサポートされていることに注意してください(これにより、どのエンティティが実際には新しいものであるかを知ることができます)。また、tombstoneベースのモードと同じ理由で、非文字列読取り書込みモードではイビクションを使うことはできません。無効キャッシュモードもサポートされていません。"
+msgid "Note that _nonstrict-read-write_ mode is supported only for *versioned* entities/collections (that way we can find out which entity is actually newer). Also, you cannot use eviction in nonstrict-read-write mode, for the same reason as in tombstone-based modes. Invalidation cache mode is not supported neither."
+msgstr "non- _strict_ -read-writeモードは、 *バージョン管理された* エンティティ/コレクションに対してのみサポートされていることに注意してください(これにより、どのエンティティが実際には新しいものであるかを知ることができます)。また、tombstoneベースのモードと同じ理由で、非文字列読取り書込みモードではイビクションを使うことはできません。無効キャッシュモードもサポートされていません。"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:78
 #, fuzzy
-msgid ""
-"If you'll try out the most recent Hibernate ORM, you'll find out that "
-"*Infinispan 7.2.x* is used there. This is because ORM 5.0.0.Final was "
-"released before Infinispan 8.0.0.Final went out and we can't change the "
-"major version of dependency in micro-release. However, we try to keep "
-"*Infinispan 8.0.x* binary compatible (in parts used by Hibernate), and "
-"therefore you can just replace the dependencies on classpath and use the "
-"most recent Infinispan, if you prefer to do so."
-msgstr ""
-"最新のHibernate ORMを試してみると、そこには *Infinispan 7.2.x* "
-"が使われていることがわかります。これは、Infinispan 8.0.0.0.Finalが出る前にORM 5.0.0."
-"Finalがリリースされていて、マイクロリリースで依存関係のメジャーバージョンを変更できないからです。ただし、Infin *ispan 8.0.xの* "
-"バイナリ互換性を保つようにしています（Hibernateで使われている部分では）ので、クラスパス上の依存関係を入れ替えて最新のInfinispanを使うだけでも構いませんが、お好みであれば、そのようにしてください。"
+msgid "If you'll try out the most recent Hibernate ORM, you'll find out that *Infinispan 7.2.x* is used there. This is because ORM 5.0.0.Final was released before Infinispan 8.0.0.Final went out and we can't change the major version of dependency in micro-release. However, we try to keep *Infinispan 8.0.x* binary compatible (in parts used by Hibernate), and therefore you can just replace the dependencies on classpath and use the most recent Infinispan, if you prefer to do so."
+msgstr "最新のHibernate ORMを試してみると、そこには *Infinispan 7.2.x* が使われていることがわかります。これは、Infinispan 8.0.0.0.Finalが出る前にORM 5.0.0.Finalがリリースされていて、マイクロリリースで依存関係のメジャーバージョンを変更できないからです。ただし、Infin *ispan 8.0.xの* バイナリ互換性を保つようにしています（Hibernateで使われている部分では）ので、クラスパス上の依存関係を入れ替えて最新のInfinispanを使うだけでも構いませんが、お好みであれば、そのようにしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:80
@@ -292,29 +207,14 @@ msgstr "バージョン化された項目"
 #. type: Plain text
 #: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:128
 #, fuzzy
-msgid ""
-"There's also the _read-only_ mode - this can be used instead of both "
-"_transactional_ or _read-write_ modes, but at this point it does not offer "
-"any further performance gains, since we have to make sure that you don't see "
-"a removed value. Actually, it also does not matter whether you specify "
-"transactional or read-write mode; the proper strategy will be picked "
-"according to your cache configuration (transactional vs.  non-transactional)."
-""
-msgstr ""
-"_読み取り専用_ モードもあります - これは _トランザクション_ モードと _読み書き_ "
-"モードの両方の代わりに使うことができますが、現時点では、削除された値が表示されないことを確認しなければならないので、これ以上のパフォーマンスの向上はありません。実際には、トランザクションモードとリードライトモードのどちらを指定しても問題ではありません; "
-"適切な戦略はキャッシュの設定 (トランザクションモードか非トランザクションモードか) に応じて選択されます。"
+msgid "There's also the _read-only_ mode - this can be used instead of both _transactional_ or _read-write_ modes, but at this point it does not offer any further performance gains, since we have to make sure that you don't see a removed value. Actually, it also does not matter whether you specify transactional or read-write mode; the proper strategy will be picked according to your cache configuration (transactional vs.  non-transactional)."
+msgstr "_読み取り専用_ モードもあります - これは _トランザクション_ モードと _読み書き_ モードの両方の代わりに使うことができますが、現時点では、削除された値が表示されないことを確認しなければならないので、これ以上のパフォーマンスの向上はありません。実際には、トランザクションモードとリードライトモードのどちらを指定しても問題ではありません; 適切な戦略はキャッシュの設定 (トランザクションモードか非トランザクションモードか) に応じて選択されます。"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:132
 #, fuzzy
-msgid ""
-"We hope that you'll try these new modes and many consistency fixes included "
-"along (you should use Hibernate ORM *5.0.2.Final* or later), and tell us "
-"about your experience."
-msgstr ""
-"私たちは、あなたがこれらの新しいモードを試してみて、多くの一貫性のある修正が含まれていることを願っています (Hibernate ORM *5.0.2."
-"Final* 以降を使用する必要があります) そして、あなたの経験について教えてください。"
+msgid "We hope that you'll try these new modes and many consistency fixes included along (you should use Hibernate ORM *5.0.2.Final* or later), and tell us about your experience."
+msgstr "私たちは、あなたがこれらの新しいモードを試してみて、多くの一貫性のある修正が含まれていることを願っています (Hibernate ORM *5.0.2.Final* 以降を使用する必要があります) そして、あなたの経験について教えてください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-01-hibernate-second-level-cache.adoc:134

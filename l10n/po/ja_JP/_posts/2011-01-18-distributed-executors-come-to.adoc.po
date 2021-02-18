@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-01-18-distributed-executors-come-to.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-01-18-distributed-executors-come-to.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Distributed executors come to Infinispan 5.0.0.ALPHA2\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2011-01-18T01:36:00.000-08:00'\n"
 "author: galder\n"
 "tags: [ \" release\", \"distributed executors\", \"alpha\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1721390460201494863\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/01/distributed-executors-"
-"come-to.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1721390460201494863\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/01/distributed-executors-come-to.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,68 +42,27 @@ msgstr ""
 "date: '2011-01-18T01:36:00.000-08:00'\n"
 "author: galder\n"
 "tags: [ \" release\", \"distributed executors\", \"alpha\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1721390460201494863\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/01/distributed-executors-"
-"come-to.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1721390460201494863\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/01/distributed-executors-come-to.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-01-18-distributed-executors-come-to.adoc:20
 #, fuzzy
-msgid ""
-"I'm delighted to announce the release of Infinispan 5.0.0.ALPHA2 that "
-"includes the very first version of http://community.jboss.org/docs/DOC-"
-"15622[Infinispan's Distributed Executor Framework]. Make sure you have a "
-"look at the javadocs for the http://docs.jboss.org/infinispan/5.0/apidocs/"
-"org/infinispan/distexec/package-summary.html[distributed executor package] "
-"and the http://docs.jboss.org/infinispan/5.0/apidocs/org/infinispan/distexec/"
-"mapreduce/package-summary.html[map/reduce package]. Watch out for a "
-"forthcoming blog entry from Vladimir with plenty more information and "
-"examples!"
-msgstr ""
-"link:http://community.jboss.org/docs/DOC-15622[Infinispan] 5.0.0.0."
-"ALPHA2のリリースを発表できることを嬉しく思います。このリリースには、InfinispanのDistributed Executor "
-"Frameworkの最初のバージョンが含まれています。 link:http://docs.jboss.org/infinispan/5.0/"
-"apidocs/org/infinispan/distexec/package-summary.html[分散エグゼキュータパッケージ] と link:"
-"http://docs.jboss.org/infinispan/5.0/apidocs/org/infinispan/distexec/"
-"mapreduce/package-summary.html[map/reduceパッケージの] javadocsを必ずご覧ください。Vladimir "
-"からのブログエントリを楽しみにしていてください。"
+msgid "I'm delighted to announce the release of Infinispan 5.0.0.ALPHA2 that includes the very first version of http://community.jboss.org/docs/DOC-15622[Infinispan's Distributed Executor Framework]. Make sure you have a look at the javadocs for the http://docs.jboss.org/infinispan/5.0/apidocs/org/infinispan/distexec/package-summary.html[distributed executor package] and the http://docs.jboss.org/infinispan/5.0/apidocs/org/infinispan/distexec/mapreduce/package-summary.html[map/reduce package]. Watch out for a forthcoming blog entry from Vladimir with plenty more information and examples!"
+msgstr "link:http://community.jboss.org/docs/DOC-15622[Infinispan] 5.0.0.0.ALPHA2のリリースを発表できることを嬉しく思います。このリリースには、InfinispanのDistributed Executor Frameworkの最初のバージョンが含まれています。 link:http://docs.jboss.org/infinispan/5.0/apidocs/org/infinispan/distexec/package-summary.html[分散エグゼキュータパッケージ] と link:http://docs.jboss.org/infinispan/5.0/apidocs/org/infinispan/distexec/mapreduce/package-summary.html[map/reduceパッケージの] javadocsを必ずご覧ください。Vladimir からのブログエントリを楽しみにしていてください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-01-18-distributed-executors-come-to.adoc:32
 #, fuzzy
-msgid ""
-"On top of this, http://community.jboss.org/docs/DOC-16198[the mechanism to "
-"plug user-defined externalizers] has changed for ALPHA2 based on invaluable "
-"feedback from the community, making it easier for third party applications "
-"to abstract Infinispan's Externalizer framework and hide it from end users. "
-"From ALPHA2 onwards, Infinispan Lucene directory provides its own http://"
-"docs.jboss.org/infinispan/5.0/apidocs/org/infinispan/marshall/Externalizer."
-"html[Externalizer] implementations and so expect a performance improvement "
-"in the RPC calls it mades."
-msgstr ""
-"これに加えて、コミュニティからの貴重なフィードバックに基づいて、 link:http://community.jboss.org/docs/DOC-"
-"16198[ユーザー定義のExternalizerをプラグインするメカニズムが] "
-"ALPHA2で変更され、サードパーティアプリケーションがInfinispanのExternalizerフレームワークを抽象化してエンドユーザーから隠すことが容易になりました。ALPHA2以降では、Infinispan "
-"Luceneディレクトリが独自の link:http://docs.jboss.org/infinispan/5.0/apidocs/org/"
-"infinispan/marshall/Externalizer.html[Externalizer] "
-"実装を提供しているため、作成するRPCコールのパフォーマンス向上が期待できます。"
+msgid "On top of this, http://community.jboss.org/docs/DOC-16198[the mechanism to plug user-defined externalizers] has changed for ALPHA2 based on invaluable feedback from the community, making it easier for third party applications to abstract Infinispan's Externalizer framework and hide it from end users. From ALPHA2 onwards, Infinispan Lucene directory provides its own http://docs.jboss.org/infinispan/5.0/apidocs/org/infinispan/marshall/Externalizer.html[Externalizer] implementations and so expect a performance improvement in the RPC calls it mades."
+msgstr "これに加えて、コミュニティからの貴重なフィードバックに基づいて、 link:http://community.jboss.org/docs/DOC-16198[ユーザー定義のExternalizerをプラグインするメカニズムが] ALPHA2で変更され、サードパーティアプリケーションがInfinispanのExternalizerフレームワークを抽象化してエンドユーザーから隠すことが容易になりました。ALPHA2以降では、Infinispan Luceneディレクトリが独自の link:http://docs.jboss.org/infinispan/5.0/apidocs/org/infinispan/marshall/Externalizer.html[Externalizer] 実装を提供しているため、作成するRPCコールのパフォーマンス向上が期待できます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-01-18-distributed-executors-come-to.adoc:41
 #, fuzzy
-msgid ""
-"As usual Infinispan 5.0.0.ALPHA2 is available for download from http://www."
-"jboss.org/infinispan/downloads[here], issues fixed can be found https://"
-"issues.jboss.org/secure/IssueNavigator.jspa?reset=true&jqlQuery="
-"project+%3D+ISPN+AND+fixVersion+%3D+%225.0.0.ALPHA2%22[here], and provide "
-"feedback http://community.jboss.org/en/infinispan?view=discussions[here]."
-msgstr ""
-"いつものようにInfinispan 5.0.0.0.ALPHA2は link:https://issues.jboss.org/secure/"
-"IssueNavigator.jspa?reset=true&jqlQuery="
-"project+%3D+ISPN+AND+fixVersion+%3D+%225.0.0.ALPHA2%22[こちら] link:http://"
-"community.jboss.org/en/infinispan?view=discussions[から] ダウンロードできます。"
+msgid "As usual Infinispan 5.0.0.ALPHA2 is available for download from http://www.jboss.org/infinispan/downloads[here], issues fixed can be found https://issues.jboss.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+ISPN+AND+fixVersion+%3D+%225.0.0.ALPHA2%22[here], and provide feedback http://community.jboss.org/en/infinispan?view=discussions[here]."
+msgstr "いつものようにInfinispan 5.0.0.0.ALPHA2は link:https://issues.jboss.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+ISPN+AND+fixVersion+%3D+%225.0.0.ALPHA2%22[こちら] link:http://community.jboss.org/en/infinispan?view=discussions[から] ダウンロードできます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-01-18-distributed-executors-come-to.adoc:45

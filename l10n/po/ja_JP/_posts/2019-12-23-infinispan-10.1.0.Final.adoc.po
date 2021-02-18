@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:8
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 10.1.0.Final\n"
@@ -44,7 +44,7 @@ msgstr ""
 
 #. type: Title =
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Infinispan 10.1 \"Turia\""
 msgstr "インフィニスパン10.1 \"トゥーリア\""
 
@@ -57,41 +57,30 @@ msgstr "こんにちは。"
 #. type: Plain text
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:15
 #, fuzzy
-msgid ""
-"we finish 2019 in style with the Final release of Infinispan 10.1, codenamed "
-"https://www.cervezaturia.es[\"Turia\"]."
-msgstr ""
-"私たちは、Infinispan 10.1の最終リリース、コードネーム link:https://www.cervezaturia.es[「Turia」] "
-"で2019年をスタイリッシュに締めくくります。"
+msgid "we finish 2019 in style with the Final release of Infinispan 10.1, codenamed https://www.cervezaturia.es[\"Turia\"]."
+msgstr "私たちは、Infinispan 10.1の最終リリース、コードネーム link:https://www.cervezaturia.es[「Turia」] で2019年をスタイリッシュに締めくくります。"
 
 #. type: Title ==
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:16
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Server console"
 msgstr "サーバーコンソール"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:20
 #, fuzzy
-msgid ""
-"The highlight of this release is the new server console which is now based "
-"on https://www.patternfly.org/v4/[Patterfly 4] and https://reactjs.org/"
-"[React.js].  We will soon have a blog post detailing the work that has been "
-"done and our future plans. In the meantime, here are a few screenshots:"
-msgstr ""
-"今回のリリースのハイライトは、 link:https://www.patternfly.org/v4/[Patterfly 4] と link:"
-"https://reactjs.org/[React.js] "
-"をベースにした新しいサーバーコンソールです。近日中に、この作業の詳細と今後の計画についてのブログ記事を掲載する予定です。それまでの間、スクリーンショットをいくつかご紹介します。"
+msgid "The highlight of this release is the new server console which is now based on https://www.patternfly.org/v4/[Patterfly 4] and https://reactjs.org/[React.js].  We will soon have a blog post detailing the work that has been done and our future plans. In the meantime, here are a few screenshots:"
+msgstr "今回のリリースのハイライトは、 link:https://www.patternfly.org/v4/[Patterfly 4] と link:https://reactjs.org/[React.js] をベースにした新しいサーバーコンソールです。近日中に、この作業の詳細と今後の計画についてのブログ記事を掲載する予定です。それまでの間、スクリーンショットをいくつかご紹介します。"
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:21
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Welcome"
 msgstr "歓迎"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:22
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Welcome Page"
 msgstr "ようこそのページ"
 
@@ -103,13 +92,13 @@ msgstr ""
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:24
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Console: caches"
 msgstr "コンソール: キャッシュ"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:25
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Console Caches"
 msgstr "コンソールキャッシュ"
 
@@ -121,13 +110,13 @@ msgstr ""
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:27
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Console: cache stats"
 msgstr "コンソール: キャッシュ統計"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:28
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Console Cache Stats"
 msgstr "コンソール キャッシュ統計"
 
@@ -139,7 +128,7 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:30
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Security"
 msgstr "セキュリティ"
 
@@ -152,28 +141,19 @@ msgstr "10.0以降、セキュリティに関する多くの変更が行われ�
 #. type: Plain text
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:35
 #, fuzzy
-msgid ""
-"Native SSL/TLS provided by https://github.com/wildfly-security/wildfly-"
-"openssl[WildFly OpenSSL]. The server only ships with native libraries for "
-"Linux x86_64, but you can download natives for other platforms and "
-"architectures"
-msgstr ""
-"link:https://github.com/wildfly-security/wildfly-openssl[WildFly OpenSSLが] "
-"提供するネイティブSSL/TLS。サーバには Linux x86_64 "
-"用のネイティブライブラリのみが同梱されていますが、他のプラットフォームやアーキテクチャ用のネイティブライブラリをダウンロードすることができます。"
+msgid "Native SSL/TLS provided by https://github.com/wildfly-security/wildfly-openssl[WildFly OpenSSL]. The server only ships with native libraries for Linux x86_64, but you can download natives for other platforms and architectures"
+msgstr "link:https://github.com/wildfly-security/wildfly-openssl[WildFly OpenSSLが] 提供するネイティブSSL/TLS。サーバには Linux x86_64 用のネイティブライブラリのみが同梱されていますが、他のプラットフォームやアーキテクチャ用のネイティブライブラリをダウンロードすることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:36
 #, fuzzy
-msgid ""
-"Improved usability of the Hot Rod client configuration with better defaults"
+msgid "Improved usability of the Hot Rod client configuration with better defaults"
 msgstr "Hot Rodクライアント設定のデフォルト値を改善し、使い勝手を向上させました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:37
 #, fuzzy
-msgid ""
-"Full support for authorization for admin operations via the RESTful endpoint"
+msgid "Full support for authorization for admin operations via the RESTful endpoint"
 msgstr "RESTfulエンドポイントを介した管理者操作の権限付与を完全サポート"
 
 #. type: Plain text
@@ -185,48 +165,37 @@ msgstr "コンソール認証のサポート"
 #. type: Plain text
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:39
 #, fuzzy
-msgid ""
-"Kerberos authentication for both Hot Rod (GSSAPI, GS2) and HTTP/Rest "
-"(SPNEGO)"
+msgid "Kerberos authentication for both Hot Rod (GSSAPI, GS2) and HTTP/Rest (SPNEGO)"
 msgstr "Hot Rod (GSSAPI, GS2) と HTTP/Rest (SPNEGO) の両方に対応した Kerberos 認証"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:40
 #, fuzzy
-msgid ""
-"Improved LDAP realm configuration with connection tuning and attribute "
-"references"
+msgid "Improved LDAP realm configuration with connection tuning and attribute references"
 msgstr "接続チューニングと属性参照によるLDAPレルム設定の改善"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:41
 #, fuzzy
-msgid ""
-"Rewritten client/server security documentation including examples on how to "
-"create certificate chains, connecting to various LDAP directories and https:/"
-"/www.keycloak.org/[KeyCloak], etc."
-msgstr ""
-"証明書チェーンの作成方法、様々なLDAPディレクトリへの接続、 link:https://www.keycloak.org/[KeyCloak] "
-"などの例を含む、クライアント/サーバのセキュリティ文書を書き直しました。"
+msgid "Rewritten client/server security documentation including examples on how to create certificate chains, connecting to various LDAP directories and https://www.keycloak.org/[KeyCloak], etc."
+msgstr "証明書チェーンの作成方法、様々なLDAPディレクトリへの接続、 link:https://www.keycloak.org/[KeyCloak] などの例を含む、クライアント/サーバのセキュリティ文書を書き直しました。"
 
 #. type: Title ==
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:42
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Server"
 msgstr "サーバー"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:45
 #, fuzzy
-msgid ""
-"A command-line switch to specify an alternate logging configuration file"
+msgid "A command-line switch to specify an alternate logging configuration file"
 msgstr "代替のロギング設定ファイルを指定するコマンドラインスイッチ"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:46
 #, fuzzy
-msgid ""
-"Query and indexing operations/stats are now exposed over the RESTful API"
+msgid "Query and indexing operations/stats are now exposed over the RESTful API"
 msgstr "クエリとインデックスの操作/統計がRESTful APIを介して公開されるようになりました。"
 
 #. type: Plain text
@@ -243,16 +212,14 @@ msgstr "エンドポイントを 0.0.0.0.0 / ::0 (別名 INADDR_ANY) にバイ�
 
 #. type: Title ==
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:49
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Non-blocking"
 msgstr "ノンブロッキング"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:52
 #, fuzzy
-msgid ""
-"More work has landed on the quest to completely remove blocking calls from "
-"our internals. The following have been made non-blocking:"
+msgid "More work has landed on the quest to completely remove blocking calls from our internals. The following have been made non-blocking:"
 msgstr "我々の内部からのブロッキングコールを完全に除去するための探求に、より多くの作業が着地しました。以下のものが非ブロッキングになりました。"
 
 #. type: Plain text
@@ -276,27 +243,24 @@ msgstr "プリミティブ型を使用したキャッシュストリーム演算
 #. type: Plain text
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:58
 #, fuzzy
-msgid ""
-"Additionally caches now have a reactive Publisher which is intended as a "
-"fully non-blocking approach to distributed operations."
+msgid "Additionally caches now have a reactive Publisher which is intended as a fully non-blocking approach to distributed operations."
 msgstr "さらに、キャッシュには、分散処理に対する完全にノンブロッキングなアプローチとして意図された反応性のあるパブリッシャーがあります。"
 
 #. type: Title ==
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:59
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Query"
 msgstr "クエリ"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:62
 #, fuzzy
-msgid ""
-"The query components have been reorganized so that they are more modular."
+msgid "The query components have been reorganized so that they are more modular."
 msgstr "クエリコンポーネントは、よりモジュール化されるように再編成されました。"
 
 #. type: Title ==
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:63
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Monitoring"
 msgstr "モニタリング"
 
@@ -309,14 +273,12 @@ msgstr "ヒストグラムとタイマーメトリクスの紹介です。"
 #. type: Plain text
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:67
 #, fuzzy
-msgid ""
-"The `/metrics` endpoint now includes `base` and `vendor` microprofile "
-"metrics"
+msgid "The `/metrics` endpoint now includes `base` and `vendor` microprofile metrics"
 msgstr "`/metrics` エンドポイントに `base` と `vendor` マイクロプロファイルのメトリクスが含まれるようになりました。"
 
 #. type: Title ==
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:68
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Stores"
 msgstr "店舗情報"
 
@@ -328,16 +290,14 @@ msgstr "RESTキャッシュストアがv2のRESTful APIを使用するように�
 
 #. type: Title ==
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:72
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Removals and deprecations"
 msgstr "削除と廃止予定"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:75
 #, fuzzy
-msgid ""
-"The old RESTful API (v1) has been partially reinstated until 11.0. Bulk ops "
-"are disabled."
+msgid "The old RESTful API (v1) has been partially reinstated until 11.0. Bulk ops are disabled."
 msgstr "旧RESTful API(v1)を11.0まで一部復活させました。Bulk opsは無効化されています。"
 
 #. type: Plain text
@@ -349,26 +309,17 @@ msgstr "Infinispan Lucene Directoryは非推奨となりました。"
 #. type: Plain text
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:77
 #, fuzzy
-msgid ""
-"The memcached protocol server has been deprecated. If you were relying on "
-"this, come and talk to us about working on a binary protocol implementation."
-msgstr ""
-"memcached "
-"プロトコルサーバは非推奨になりました。これに頼っていたのであれば、バイナリプロトコルの実装に取り組むことについて話をしに来てください。"
+msgid "The memcached protocol server has been deprecated. If you were relying on this, come and talk to us about working on a binary protocol implementation."
+msgstr "memcached プロトコルサーバは非推奨になりました。これに頼っていたのであれば、バイナリプロトコルの実装に取り組むことについて話をしに来てください。"
 
 #. type: Title ==
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:78
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Bug fixes, clean-ups and documentation"
 msgstr "バグ修正、クリーンアップ、ドキュメント"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-23-infinispan-10.1.0.Final.adoc:81
 #, fuzzy
-msgid ""
-"Over 160 issues fixed including a lot of documentation updates. See the "
-"https://issues.redhat.com/issues/?filter=12344079[full list of changes and "
-"fixes]"
-msgstr ""
-"多くのドキュメントの更新を含め、160以上の問題が修正されました。 link:https://issues.redhat.com/issues/"
-"?filter=12344079[変更点と修正点の全リストを] 見る"
+msgid "Over 160 issues fixed including a lot of documentation updates. See the https://issues.redhat.com/issues/?filter=12344079[full list of changes and fixes]"
+msgstr "多くのドキュメントの更新を含め、160以上の問題が修正されました。 link:https://issues.redhat.com/issues/?filter=12344079[変更点と修正点の全リストを] 見る"

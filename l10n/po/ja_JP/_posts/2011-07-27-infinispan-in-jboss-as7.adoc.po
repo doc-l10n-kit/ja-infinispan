@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan in JBoss AS7\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2011-07-27T08:05:00.000-07:00'\n"
 "author: pferraro\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1844624835675185038\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/07/infinispan-in-jboss-"
-"as7.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1844624835675185038\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/07/infinispan-in-jboss-as7.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,183 +42,117 @@ msgstr ""
 "date: '2011-07-27T08:05:00.000-07:00'\n"
 "author: pferraro\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1844624835675185038\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/07/infinispan-in-jboss-"
-"as7.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1844624835675185038\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/07/infinispan-in-jboss-as7.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:15
 #, fuzzy
-msgid ""
-"A couple weeks ago saw the final release of JBoss AS 7.0. Like AS6 before "
-"it, AS7 uses Infinispan as the distributed caching solution behind its "
-"clustering functionality. So what do you need to know about using Infinispan "
-"in AS7?"
-msgstr ""
-"数週間前に JBoss AS 7.0 の最終リリースがあった。AS7 はその前の AS6 "
-"と同様に、クラスタリング機能の背後にある分散キャッシュソリューションとして Infinispan を使用しています。では、AS7 での "
-"Infinispan の使用について何を知っておく必要があるのでしょうか？"
+msgid "A couple weeks ago saw the final release of JBoss AS 7.0. Like AS6 before it, AS7 uses Infinispan as the distributed caching solution behind its clustering functionality. So what do you need to know about using Infinispan in AS7?"
+msgstr "数週間前に JBoss AS 7.0 の最終リリースがあった。AS7 はその前の AS6 と同様に、クラスタリング機能の背後にある分散キャッシュソリューションとして Infinispan を使用しています。では、AS7 での Infinispan の使用について何を知っておく必要があるのでしょうか？"
 
 #. type: Title ==
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:17
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Configuration"
 msgstr "構成"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:24
 #, fuzzy
-msgid ""
-"Unlike previous releases of JBoss AS, AS7 centralizes all server "
-"configuration into one location. This include Infinispan cache "
-"configurations, which are defined by the Infinispan subsystem, within domain."
-"xml or standalone.xml:"
-msgstr ""
-"JBoss AS の以前のリリースとは異なり、AS7 はすべてのサーバー構成を 1 つの場所に集中管理します。これには、Infinispan "
-"サブシステムによって定義された domain.xml または standalone.xml 内の Infinispan キャッシュ設定が含まれます。"
+msgid "Unlike previous releases of JBoss AS, AS7 centralizes all server configuration into one location. This include Infinispan cache configurations, which are defined by the Infinispan subsystem, within domain.xml or standalone.xml:"
+msgstr "JBoss AS の以前のリリースとは異なり、AS7 はすべてのサーバー構成を 1 つの場所に集中管理します。これには、Infinispan サブシステムによって定義された domain.xml または standalone.xml 内の Infinispan キャッシュ設定が含まれます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:26
 #, fuzzy
-msgid ""
-"https://raw.github.com/jbossas/jboss-as/7.0.0.Final/build/src/main/resources/"
-"domain/configuration/domain.xml[$JBOSS_HOME/domain/configuration/domain.xml]"
-msgstr ""
-"link:https://raw.github.com/jbossas/jboss-as/7.0.0.Final/build/src/main/"
-"resources/domain/configuration/domain.xml[JBOSS_HOME/ドメイン/設定/ドメイン.xml]"
+msgid "https://raw.github.com/jbossas/jboss-as/7.0.0.Final/build/src/main/resources/domain/configuration/domain.xml[$JBOSS_HOME/domain/configuration/domain.xml]"
+msgstr "link:https://raw.github.com/jbossas/jboss-as/7.0.0.Final/build/src/main/resources/domain/configuration/domain.xml[JBOSS_HOME/ドメイン/設定/ドメイン.xml]"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:28
 #, fuzzy
-msgid ""
-"https://raw.github.com/jbossas/jboss-as/7.0.0.Final/build/src/main/resources/"
-"standalone/configuration/standalone-ha.xml[$JBOSS_HOME/standalone/"
-"configuration/standalone-ha.xml]"
-msgstr ""
-"link:https://raw.github.com/jbossas/jboss-as/7.0.0.Final/build/src/main/"
-"resources/standalone/configuration/standalone-ha.xml[JBOSS_HOME/standalone/"
-"configuration/standalone-ha.xml]"
+msgid "https://raw.github.com/jbossas/jboss-as/7.0.0.Final/build/src/main/resources/standalone/configuration/standalone-ha.xml[$JBOSS_HOME/standalone/configuration/standalone-ha.xml]"
+msgstr "link:https://raw.github.com/jbossas/jboss-as/7.0.0.Final/build/src/main/resources/standalone/configuration/standalone-ha.xml[JBOSS_HOME/standalone/configuration/standalone-ha.xml]"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:32
 #, fuzzy
-msgid ""
-"The complete schema for the Infinispan subsystem is included in the AS7 "
-"binary distribution:"
+msgid "The complete schema for the Infinispan subsystem is included in the AS7 binary distribution:"
 msgstr "Infinispanサブシステムの完全なスキーマは、AS7バイナリディストリビューションに含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:34
 #, fuzzy
-msgid ""
-"https://raw.github.com/jbossas/jboss-as/7.0.0.Final/build/src/main/resources/"
-"docs/schema/jboss-infinispan.xsd[$JBOSS_HOME/docs/schema/jboss-infinispan."
-"xsd]"
-msgstr ""
-"link:https://raw.github.com/jbossas/jboss-as/7.0.0.Final/build/src/main/"
-"resources/docs/schema/jboss-infinispan.xsd[JBOSS_HOME/docs/schema/jboss-"
-"infinispan.xsd]"
+msgid "https://raw.github.com/jbossas/jboss-as/7.0.0.Final/build/src/main/resources/docs/schema/jboss-infinispan.xsd[$JBOSS_HOME/docs/schema/jboss-infinispan.xsd]"
+msgstr "link:https://raw.github.com/jbossas/jboss-as/7.0.0.Final/build/src/main/resources/docs/schema/jboss-infinispan.xsd[JBOSS_HOME/docs/schema/jboss-infinispan.xsd]"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:39
 #, fuzzy
-msgid ""
-"If you are familiar with Infinispan's native configuration file format or "
-"the corresponding configuration file from AS6, you'll notice some obvious "
-"similarities, but some noteworthy differences."
-msgstr ""
-"Infinispanのネイティブ設定ファイル形式やAS6の対応する設定ファイルに慣れている方は、いくつかの類似点と注目すべき相違点があることに気づくでしょう。"
+msgid "If you are familiar with Infinispan's native configuration file format or the corresponding configuration file from AS6, you'll notice some obvious similarities, but some noteworthy differences."
+msgstr "Infinispanのネイティブ設定ファイル形式やAS6の対応する設定ファイルに慣れている方は、いくつかの類似点と注目すべき相違点があることに気づくでしょう。"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:45
 #, fuzzy
-msgid ""
-"While a native Infinispan configuration file contains cache configurations "
-"for a single cache container, like AS6, the Infinispan subsystem "
-"configuration defines multiple cache containers, each identified by a name. "
-"As with AS6, cache containers can have 1 or more aliases."
-msgstr ""
-"ネイティブのInfinispan構成ファイルには、AS6のように単一のキャッシュコンテナのキャッシュ構成が含まれていますが、Infinispanサブシステム構成では複数のキャッシュコンテナを定義し、それぞれが名前で識別されます。AS6と同様に、キャッシュコンテナは1つ以上のエイリアスを持つことができます。"
+msgid "While a native Infinispan configuration file contains cache configurations for a single cache container, like AS6, the Infinispan subsystem configuration defines multiple cache containers, each identified by a name. As with AS6, cache containers can have 1 or more aliases."
+msgstr "ネイティブのInfinispan構成ファイルには、AS6のように単一のキャッシュコンテナのキャッシュ構成が含まれていますが、Infinispanサブシステム構成では複数のキャッシュコンテナを定義し、それぞれが名前で識別されます。AS6と同様に、キャッシュコンテナは1つ以上のエイリアスを持つことができます。"
 
 #. type: Title ===
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:47
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Being concise"
 msgstr "簡潔であること"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:53
 #, fuzzy
-msgid ""
-"The Infinispan subsystem's configuration schema attempts to be more concise "
-"than the equivalent configuration in AS6. This is a direct result of the "
-"following changes:"
+msgid "The Infinispan subsystem's configuration schema attempts to be more concise than the equivalent configuration in AS6. This is a direct result of the following changes:"
 msgstr "Infinispan サブシステムの構成スキーマは、AS6 の同等の構成よりも簡潔にしようとしています。これは以下の変更の直接の結果です。"
 
 #. type: Title ====
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:54
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Where is <global/>?"
 msgstr "<global/>はどこにありますか？"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:60
 #, fuzzy
-msgid ""
-"Much of the global configuration contains references to other AS services. "
-"In AS7, these services are auto-injected behind the scenes.  This includes "
-"things like thread pools (described below), the JGroups transport (also "
-"described below), and the mbean server."
-msgstr ""
-"グローバル構成の多くは、他のASサービスへの参照を含んでいます。AS7 "
-"では、これらのサービスは舞台裏で自動投入される。これには、スレッドプール（後述）、JGroups トランスポート（後述）、mbean "
-"サーバなどが含まれる。"
+msgid "Much of the global configuration contains references to other AS services. In AS7, these services are auto-injected behind the scenes.  This includes things like thread pools (described below), the JGroups transport (also described below), and the mbean server."
+msgstr "グローバル構成の多くは、他のASサービスへの参照を含んでいます。AS7 では、これらのサービスは舞台裏で自動投入される。これには、スレッドプール（後述）、JGroups トランスポート（後述）、mbean サーバなどが含まれる。"
 
 #. type: Title ====
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:61
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Configuration default values"
 msgstr "設定のデフォルト値"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:66
 #, fuzzy
-msgid ""
-"AS7 supplies a set of custom default values for various configuration "
-"properties. These defaults differ depending on the cache mode. The complete "
-"set of default values can be found here:"
-msgstr ""
-"AS7 "
-"は、様々な設定プロパティのカスタムデフォルト値のセットを提供します。これらのデフォルト値はキャッシュモードによって異なります。デフォルト値の完全なセットはここにあります。"
+msgid "AS7 supplies a set of custom default values for various configuration properties. These defaults differ depending on the cache mode. The complete set of default values can be found here:"
+msgstr "AS7 は、様々な設定プロパティのカスタムデフォルト値のセットを提供します。これらのデフォルト値はキャッシュモードによって異なります。デフォルト値の完全なセットはここにあります。"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:68
 #, fuzzy
-msgid ""
-"https://github.com/jbossas/jboss-as/blob/master/clustering/infinispan/src/"
-"main/resources/infinispan-defaults.xml"
-msgstr ""
-"https://github.com/jbossas/jboss-as/blob/master/clustering/infinispan/src/"
-"main/resources/infinispan-defaults.xml"
+msgid "https://github.com/jbossas/jboss-as/blob/master/clustering/infinispan/src/main/resources/infinispan-defaults.xml"
+msgstr "https://github.com/jbossas/jboss-as/blob/master/clustering/infinispan/src/main/resources/infinispan-defaults.xml"
 
 #. type: Title ====
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:69
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "File-based cache store"
 msgstr "ファイルベースのキャッシュストア"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:75
 #, fuzzy
-msgid ""
-"Because clustering services use the file-based cache store frequently, we've "
-"simplified its definition. First, by using a distinctive element, you no "
-"longer need to specify the class name. The location of the store is defined "
-"by 2 attributes:"
-msgstr ""
-"クラスタリングサービスはファイルベースのキャッシュストアを頻繁に使用するため、その定義を簡略化しました。まず、特徴的な要素を使うことで、クラス名を指定する必要がなくなりました。ストアの場所は2つの属性で定義します。"
+msgid "Because clustering services use the file-based cache store frequently, we've simplified its definition. First, by using a distinctive element, you no longer need to specify the class name. The location of the store is defined by 2 attributes:"
+msgstr "クラスタリングサービスはファイルベースのキャッシュストアを頻繁に使用するため、その定義を簡略化しました。まず、特徴的な要素を使うことで、クラス名を指定する必要がなくなりました。ストアの場所は2つの属性で定義します。"
 
 #. type: delimited block _
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:78
@@ -231,74 +163,44 @@ msgstr "<file-store relative-to=\"...\" path=\"..."
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:84
 #, fuzzy
-msgid ""
-"The _relative-to_ attribute defines a named path, and defaults to the "
-"server's data directory; whereas the _path_ attribute specifies the "
-"directory within _relative-to_, and defaults to the cache container name."
+msgid "The _relative-to_ attribute defines a named path, and defaults to the server's data directory; whereas the _path_ attribute specifies the directory within _relative-to_, and defaults to the cache container name."
 msgstr "_relative_ _-_ _to_ 属性は名前付きのパスを定義し、サーバのデータディレクトリをデフォルトとし _ます_ 。"
 
 #. type: Title ====
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:85
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Specifying cache mode"
 msgstr "キャッシュモードの指定"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:92
 #, fuzzy
-msgid ""
-"Instead of defining the cache mode via a separate <clustering mode=\"...\"/> "
-"attribute, each cache mode uses it's own element, the child elements of "
-"which are specific to that cache mode. For example, rehashing properties are "
-"only available within the <distributed-cache/> element."
-msgstr ""
-"キャッシュモードを個別の <clustering mode=\"....\"/> "
-"属性で定義する代わりに、各キャッシュモードはそれ自身の要素を使用し、その子要素はそのキャッシュモードに固有のものとなります。例えば、リハッシュプロパティは "
-"<distributed-cache/> 要素内でのみ利用可能です。"
+msgid "Instead of defining the cache mode via a separate <clustering mode=\"...\"/> attribute, each cache mode uses it's own element, the child elements of which are specific to that cache mode. For example, rehashing properties are only available within the <distributed-cache/> element."
+msgstr "キャッシュモードを個別の <clustering mode=\"....\"/> 属性で定義する代わりに、各キャッシュモードはそれ自身の要素を使用し、その子要素はそのキャッシュモードに固有のものとなります。例えば、リハッシュプロパティは <distributed-cache/> 要素内でのみ利用可能です。"
 
 #. type: Title ====
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:93
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Where is <default/>?"
 msgstr "<default/>はどこにありますか？"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:105
 #, fuzzy
-msgid ""
-"The semantics of the default cache of a cache container are different in AS7 "
-"than in native Infinispan. In native Infinispan, the configuration within "
-"<default/> defines the cache returned by calls to _CacheContainer."
-"getCache()_, while <namedCache/> entries inherit the configuration from the "
-"default cache.  In AS7, all caches defined in the Infinispan subsystem are "
-"named caches.  The _default-cache_ attribute identifies which named cache "
-"should be returned by calls to _CacheContainer.getCache()_. This lets you "
-"easily modify the default cache of a cache container, without having to "
-"worry about rearranging configuration property inheritance."
-msgstr ""
-"キャッシュコンテナのデフォルトキャッシュのセマンティクスは、ネイティブの Infinispan とは異なります。ネイティブ Infinispan "
-"では、<default/> 内の設定は _CacheContainer.getCache()_ "
-"の呼び出しによって返されるキャッシュを定義し、<namedCache/> エントリはデフォルトキャッシュから設定を継承します。AS7 "
-"では、Infinispan サブシステムで定義されているすべてのキャッシュは名前付きキャッシュです。 _default-cache_ 属性は、 "
-"_CacheContainer.getCache()_ "
-"の呼び出しによって返される名前付きキャッシュを特定します。これにより、構成プロパティの継承の再配置を気にすることなく、キャッシュコンテナのデフォルトキャッシュを簡単に変更することができます。"
+msgid "The semantics of the default cache of a cache container are different in AS7 than in native Infinispan. In native Infinispan, the configuration within <default/> defines the cache returned by calls to _CacheContainer.getCache()_, while <namedCache/> entries inherit the configuration from the default cache.  In AS7, all caches defined in the Infinispan subsystem are named caches.  The _default-cache_ attribute identifies which named cache should be returned by calls to _CacheContainer.getCache()_. This lets you easily modify the default cache of a cache container, without having to worry about rearranging configuration property inheritance."
+msgstr "キャッシュコンテナのデフォルトキャッシュのセマンティクスは、ネイティブの Infinispan とは異なります。ネイティブ Infinispan では、<default/> 内の設定は _CacheContainer.getCache()_ の呼び出しによって返されるキャッシュを定義し、<namedCache/> エントリはデフォルトキャッシュから設定を継承します。AS7 では、Infinispan サブシステムで定義されているすべてのキャッシュは名前付きキャッシュです。 _default-cache_ 属性は、 _CacheContainer.getCache()_ の呼び出しによって返される名前付きキャッシュを特定します。これにより、構成プロパティの継承の再配置を気にすることなく、キャッシュコンテナのデフォルトキャッシュを簡単に変更することができます。"
 
 #. type: Title ===
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:107
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Specifying a transport"
 msgstr "トランスポートの指定"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:113
 #, fuzzy
-msgid ""
-"The Infinispan subsystem uses with the JGroups subsystem to provide it's "
-"JGroups channel. By default, cache containers use the _default-stack_ as "
-"defined by the JGroups subsystem."
-msgstr ""
-"Infinispan サブシステムは、JGroups サブシステムと一緒に使用して、JGroups "
-"チャネルを提供します。デフォルトでは、キャッシュコンテナは、JGroups サブシステムで定義された _デフォルト_ スタックを使用します。"
+msgid "The Infinispan subsystem uses with the JGroups subsystem to provide it's JGroups channel. By default, cache containers use the _default-stack_ as defined by the JGroups subsystem."
+msgstr "Infinispan サブシステムは、JGroups サブシステムと一緒に使用して、JGroups チャネルを提供します。デフォルトでは、キャッシュコンテナは、JGroups サブシステムで定義された _デフォルト_ スタックを使用します。"
 
 #. type: delimited block _
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:117
@@ -341,15 +243,8 @@ msgstr "</subsystem> </subsystem"
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:137
 #, fuzzy
-msgid ""
-"Changing the default stack for all clustering services is a simple as "
-"changing the _default-stack_ attribute defined in the JGroups subsystem.  An "
-"individual cache-container can opt to use a particular stack by specifying a "
-"_stack_ attribute within its _transport_ element."
-msgstr ""
-"すべてのクラスタリングサービスのデフォルトスタックを変更するのは、JGroups サブシステムで定義されている _default-stack_ "
-"属性を変更するのと同じくらい簡単です。個々のキャッシュコンテナは、その _transport_ 要素内で _stack_ "
-"属性を指定することで、特定のスタックを使用することを選択することができます。"
+msgid "Changing the default stack for all clustering services is a simple as changing the _default-stack_ attribute defined in the JGroups subsystem.  An individual cache-container can opt to use a particular stack by specifying a _stack_ attribute within its _transport_ element."
+msgstr "すべてのクラスタリングサービスのデフォルトスタックを変更するのは、JGroups サブシステムで定義されている _default-stack_ 属性を変更するのと同じくらい簡単です。個々のキャッシュコンテナは、その _transport_ 要素内で _stack_ 属性を指定することで、特定のスタックを使用することを選択することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:139
@@ -413,23 +308,15 @@ msgstr "JGroups のチャンネルは、キャッシュコンテナ名を使用�
 
 #. type: Title ===
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:160
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Defining thread pools"
 msgstr "スレッドプールの定義"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:168
 #, fuzzy
-msgid ""
-"Cache containers defined by the Infinispan subsystem can reference thread "
-"pools defined by the threading subsystem. Externalizing thread pool in this "
-"way has the additional advantage of being able to manage the thread pools "
-"via native JBoss AS management mechanisms, and allows you to share thread "
-"pools across cache containers."
-msgstr ""
-"Infinispan "
-"サブシステムによって定義されたキャッシュコンテナは、スレッド化サブシステムによって定義されたスレッドプールを参照することができます。この方法でスレッドプールを外部化すると、ネイティブの "
-"JBoss AS 管理メカニズムを介してスレッドプールを管理できるという追加の利点があり、キャッシュコンテナ間でスレッドプールを共有することができます。"
+msgid "Cache containers defined by the Infinispan subsystem can reference thread pools defined by the threading subsystem. Externalizing thread pool in this way has the additional advantage of being able to manage the thread pools via native JBoss AS management mechanisms, and allows you to share thread pools across cache containers."
+msgstr "Infinispan サブシステムによって定義されたキャッシュコンテナは、スレッド化サブシステムによって定義されたスレッドプールを参照することができます。この方法でスレッドプールを外部化すると、ネイティブの JBoss AS 管理メカニズムを介してスレッドプールを管理できるという追加の利点があり、キャッシュコンテナ間でスレッドプールを共有することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:170
@@ -441,14 +328,8 @@ msgstr "例え"
 #. type: delimited block _
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:176
 #, fuzzy
-msgid ""
-"#<cache-container name=\"web\" default-cache=\"repl\" listener-executor="
-"\"infinispan-listener\" eviction-executor=\"infinispan-eviction\" "
-"replication-queue-executor=\"infinispan-repl-queue\">#"
-msgstr ""
-"<cache-container name=\"web\" default-cache=\"repl\" listener-executor="
-"\"infinispan-listener\" eviction-executor=\"infinispan-eviction\" "
-"replication-queue-executor=\"infinispan-repl-queue\">。"
+msgid "#<cache-container name=\"web\" default-cache=\"repl\" listener-executor=\"infinispan-listener\" eviction-executor=\"infinispan-eviction\" replication-queue-executor=\"infinispan-repl-queue\">#"
+msgstr "<cache-container name=\"web\" default-cache=\"repl\" listener-executor=\"infinispan-listener\" eviction-executor=\"infinispan-eviction\" replication-queue-executor=\"infinispan-repl-queue\">。"
 
 #. type: delimited block _
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:178
@@ -574,46 +455,21 @@ msgstr "#</subsystem> #"
 
 #. type: Title ==
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:248
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Cache container lifecycle"
 msgstr "キャッシュ コンテナのライフサイクル"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:265
 #, fuzzy
-msgid ""
-"During AS6 server startup, the _CacheContainerRegistry_ service would create "
-"and start all cache containers defined within its _infinispan-configs.xml_ "
-"file. Individual caches were started and stopped as needed. Lifecycle "
-"control of a cache was the complete responsibility of the application or "
-"service that used it.  Instead of a separate _CacheContainerRegistry_, AS7 "
-"uses the generic _ServiceRegistry_ from the jboss-msc project (i.e. JBoss "
-"Modular Service Container). When AS7 starts, it creates on-demand services "
-"for each cache and cache container defined in the Infinispan subsystem. A "
-"service or deployment that needs to use a given cache or cache container "
-"simply adds a dependency on the relevant service name. When the service or "
-"deployment stops, dependent services are stopped as well, provided they are "
-"not still demanded by some other service or deployment. In this way, AS7 "
-"handles cache and cache container lifecycle for you."
-msgstr ""
-"AS6 サーバーの起動時に、 _CacheContainerRegistry_ サービスは、その _infinispan-configs.xml_ "
-"ファイル内に定義されているすべてのキャッシュ "
-"コンテナを作成して起動します。個々のキャッシュは、必要に応じて開始および停止されます。キャッシュのライフサイクル制御は、それを使用するアプリケーションまたはサービスが完全に責任を負います。別々の "
-"_CacheContainerRegistry_ の代わりに、AS7 は jboss-msc プロジェクト (すなわち、JBoss Modular "
-"Service Container) の汎用 _ServiceRegistry_ を使用します。AS7 が起動すると、Infinispan "
-"サブシステムで定義された各キャッシュとキャッシュコンテナ用のオンデマンドサービスが作成されます。特定のキャッシュまたはキャッシュコンテナを使用する必要があるサービスまたはデプロイメントは、関連するサービス名に依存関係を追加するだけです。サービスやデプロイメントが停止すると、他のサービスやデプロイメントから要求されない限り、依存するサービスも停止します。このようにして、AS7 "
-"はキャッシュとキャッシュコンテナのライフサイクルを処理します。"
+msgid "During AS6 server startup, the _CacheContainerRegistry_ service would create and start all cache containers defined within its _infinispan-configs.xml_ file. Individual caches were started and stopped as needed. Lifecycle control of a cache was the complete responsibility of the application or service that used it.  Instead of a separate _CacheContainerRegistry_, AS7 uses the generic _ServiceRegistry_ from the jboss-msc project (i.e. JBoss Modular Service Container). When AS7 starts, it creates on-demand services for each cache and cache container defined in the Infinispan subsystem. A service or deployment that needs to use a given cache or cache container simply adds a dependency on the relevant service name. When the service or deployment stops, dependent services are stopped as well, provided they are not still demanded by some other service or deployment. In this way, AS7 handles cache and cache container lifecycle for you."
+msgstr "AS6 サーバーの起動時に、 _CacheContainerRegistry_ サービスは、その _infinispan-configs.xml_ ファイル内に定義されているすべてのキャッシュ コンテナを作成して起動します。個々のキャッシュは、必要に応じて開始および停止されます。キャッシュのライフサイクル制御は、それを使用するアプリケーションまたはサービスが完全に責任を負います。別々の _CacheContainerRegistry_ の代わりに、AS7 は jboss-msc プロジェクト (すなわち、JBoss Modular Service Container) の汎用 _ServiceRegistry_ を使用します。AS7 が起動すると、Infinispan サブシステムで定義された各キャッシュとキャッシュコンテナ用のオンデマンドサービスが作成されます。特定のキャッシュまたはキャッシュコンテナを使用する必要があるサービスまたはデプロイメントは、関連するサービス名に依存関係を追加するだけです。サービスやデプロイメントが停止すると、他のサービスやデプロイメントから要求されない限り、依存するサービスも停止します。このようにして、AS7 はキャッシュとキャッシュコンテナのライフサイクルを処理します。"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:270
 #, fuzzy
-msgid ""
-"There may be an occasion where you'd like a cache to start eagerly when the "
-"server starts, without requiring a dependency from some service or "
-"deployment. This can be achieve by using the start attribute of a cache."
-msgstr ""
-"サービスやデプロイメントに依存することなく、サーバの起動時にキャッシュを熱心に起動させたい場合があるかもしれません。これはキャッシュの start "
-"属性を使用することで実現できます。"
+msgid "There may be an occasion where you'd like a cache to start eagerly when the server starts, without requiring a dependency from some service or deployment. This can be achieve by using the start attribute of a cache."
+msgstr "サービスやデプロイメントに依存することなく、サーバの起動時にキャッシュを熱心に起動させたい場合があるかもしれません。これはキャッシュの start 属性を使用することで実現できます。"
 
 #. type: delimited block _
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:276
@@ -630,28 +486,20 @@ msgstr "<alias>ha-partition</alias>"
 #. type: delimited block _
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:281
 #, fuzzy
-msgid ""
-"#  <replicated-cache name=\"default\" mode=\"SYNC\" batching=\"true\" start="
-"\"EAGER\">#"
-msgstr ""
-"<replicated-cache name=\"default\" mode=\"SYNC\" batching=\"true\" start="
-"\"EAGER\">"
+msgid "#  <replicated-cache name=\"default\" mode=\"SYNC\" batching=\"true\" start=\"EAGER\">#"
+msgstr "<replicated-cache name=\"default\" mode=\"SYNC\" batching=\"true\" start=\"EAGER\">"
 
 #. type: Title ==
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:291
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Using an Infinispan cache directly"
 msgstr "Infinispanのキャッシュを直接使用する"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:297
 #, fuzzy
-msgid ""
-"AS7 adds the ability to inject an Infinispan cache into your application "
-"using standard JEE mechanisms. This is perhaps best explained by an example:"
-msgstr ""
-"AS7 では、標準の JEE メカニズムを使用して Infinispan "
-"キャッシュをアプリケーションに注入する機能が追加されています。これは例を挙げて説明するのが一番良いでしょう。"
+msgid "AS7 adds the ability to inject an Infinispan cache into your application using standard JEE mechanisms. This is perhaps best explained by an example:"
+msgstr "AS7 では、標準の JEE メカニズムを使用して Infinispan キャッシュをアプリケーションに注入する機能が追加されています。これは例を挙げて説明するのが一番良いでしょう。"
 
 #. type: delimited block _
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:300
@@ -722,9 +570,7 @@ msgstr "}"
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:326
 #, fuzzy
-msgid ""
-"That's it! No JBoss specific classes required - only standard JEE "
-"annotations. Pretty neat, no?"
+msgid "That's it! No JBoss specific classes required - only standard JEE annotations. Pretty neat, no?"
 msgstr "それだけです!JBoss 特有のクラスは必要ありません - 標準の JEE アノテーションだけです。とても良いでしょう?"
 
 #. type: Plain text
@@ -737,16 +583,8 @@ msgstr "##"
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:335
 #, fuzzy
-msgid ""
-"There's only one catch - due to the AS's use of modular classloading, "
-"Infinispan classes are not available to deployments by default. You need to "
-"explicitly tell the AS to import the Infinispan API into your application. "
-"This is most easily done by adding the following line to your application's "
-"_META-INF/MANIFEST.MF_:"
-msgstr ""
-"ASがモジュール式クラスロードを使用しているため、デプロイメントではInfinispanクラスはデフォルトでは利用できません。アプリケーションにInfinispan "
-"APIをインポートするようにASに明示的に指示する必要があります。これは、アプリケーションの _META-INF/MANIFEST.MF_ "
-"に以下の行を追加することで簡単に行えます。"
+msgid "There's only one catch - due to the AS's use of modular classloading, Infinispan classes are not available to deployments by default. You need to explicitly tell the AS to import the Infinispan API into your application. This is most easily done by adding the following line to your application's _META-INF/MANIFEST.MF_:"
+msgstr "ASがモジュール式クラスロードを使用しているため、デプロイメントではInfinispanクラスはデフォルトでは利用できません。アプリケーションにInfinispan APIをインポートするようにASに明示的に指示する必要があります。これは、アプリケーションの _META-INF/MANIFEST.MF_ に以下の行を追加することで簡単に行えます。"
 
 #. type: delimited block _
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:340
@@ -757,31 +595,12 @@ msgstr "依存関係: org.infinispan export"
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:355
 #, fuzzy
-msgid ""
-"So, how does it all work? If you recall, during server startup, the AS "
-"creates and registers an on-demand service for every Infinispan cache "
-"container defined in the Infinispan subsystem. For every cache container, "
-"the Infinispan subsystem also creates and registers a JNDI binding service "
-"that depends on the associated cache container service.  When the AS "
-"deployer encounters the _@Resource(lookup)_ annotation, it automatically "
-"adds a dependency to the application on the JNDI binding service associated "
-"with the specified JNDI name. In the case of the Infinispan JNDI binding, "
-"the binding itself already depends on the relevant Infinispan cache "
-"container service. The net effect is, your application will include a "
-"dependency on the requested cache container.  Consequently, the cache "
-"container will automatically start on deploy, and stop (including all "
-"caches) on undeploy."
-msgstr ""
-"では、どのように動作するのでしょうか？思い起こせば、サーバーの起動時に、AS は Infinispan サブシステムで定義された Infinispan "
-"キャッシュコンテナごとにオンデマンドサービスを作成して登録します。各キャッシュコンテナに対して、Infinispanサブシステムはまた、関連するキャッシュコンテナサービスに依存するJNDIバインディングサービスを作成して登録します。AS "
-"デプロイアが _@Resource(lookup)_ アノテーションに遭遇すると、指定された JNDI 名に関連付けられた JNDI "
-"バインディングサービスへの依存関係を自動的にアプリケーションに追加します。Infinispan JNDI "
-"バインディングの場合、バインディング自体はすでに関連する Infinispan "
-"キャッシュコンテナサービスに依存しています。その結果、アプリケーションは要求されたキャッシュコンテナへの依存関係を含むことになります。その結果、キャッシュコンテナはデプロイ時に自動的に起動し、アンデプロイ時には（すべてのキャッシュを含めて）停止します。"
+msgid "So, how does it all work? If you recall, during server startup, the AS creates and registers an on-demand service for every Infinispan cache container defined in the Infinispan subsystem. For every cache container, the Infinispan subsystem also creates and registers a JNDI binding service that depends on the associated cache container service.  When the AS deployer encounters the _@Resource(lookup)_ annotation, it automatically adds a dependency to the application on the JNDI binding service associated with the specified JNDI name. In the case of the Infinispan JNDI binding, the binding itself already depends on the relevant Infinispan cache container service. The net effect is, your application will include a dependency on the requested cache container.  Consequently, the cache container will automatically start on deploy, and stop (including all caches) on undeploy."
+msgstr "では、どのように動作するのでしょうか？思い起こせば、サーバーの起動時に、AS は Infinispan サブシステムで定義された Infinispan キャッシュコンテナごとにオンデマンドサービスを作成して登録します。各キャッシュコンテナに対して、Infinispanサブシステムはまた、関連するキャッシュコンテナサービスに依存するJNDIバインディングサービスを作成して登録します。AS デプロイアが _@Resource(lookup)_ アノテーションに遭遇すると、指定された JNDI 名に関連付けられた JNDI バインディングサービスへの依存関係を自動的にアプリケーションに追加します。Infinispan JNDI バインディングの場合、バインディング自体はすでに関連する Infinispan キャッシュコンテナサービスに依存しています。その結果、アプリケーションは要求されたキャッシュコンテナへの依存関係を含むことになります。その結果、キャッシュコンテナはデプロイ時に自動的に起動し、アンデプロイ時には（すべてのキャッシュを含めて）停止します。"
 
 #. type: Title ==
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:357
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Sounds great! Where do I get it?"
 msgstr "いい音だ！どこで手に入るの？"
 
@@ -824,15 +643,12 @@ msgstr "http://community.jboss.org/en/jbossas/as7_users?view=discussions"
 #. type: Plain text
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:378
 #, fuzzy
-msgid ""
-"Keep a look out for the 7.0.1 release expected in the coming weeks, which "
-"contains a number of clustering fixes identified since the initial final "
-"release."
+msgid "Keep a look out for the 7.0.1 release expected in the coming weeks, which contains a number of clustering fixes identified since the initial final release."
 msgstr "7.0.1 のリリースは数週間後に予定されており、最初の最終リリース以降に確認されたクラスタリングの修正が含まれています。"
 
 #. type: Title ==
 #: upstream/_posts/2011-07-27-infinispan-in-jboss-as7.adoc:380
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "How can I contribute?"
 msgstr "貢献するにはどうしたらいいですか？"
 

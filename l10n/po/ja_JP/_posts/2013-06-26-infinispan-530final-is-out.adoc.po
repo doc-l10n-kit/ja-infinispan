@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-06-26-infinispan-530final-is-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-26-infinispan-530final-is-out.adoc:12
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 5.3.0.Final is out!\n"
@@ -34,10 +34,8 @@ msgid ""
 "tags: [ \"release\",\n"
 "\"final\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"5653059016562051755\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/06/infinispan-530final-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5653059016562051755\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/06/infinispan-530final-is-out.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -48,10 +46,8 @@ msgstr ""
 "tags: [ \"release\",\n"
 "\"final\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"5653059016562051755\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/06/infinispan-530final-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5653059016562051755\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/06/infinispan-530final-is-out.html\n"
 "---\n"
 
 #. type: Plain text
@@ -63,145 +59,74 @@ msgstr "インフィニスパンのコミュニティへ"
 #. type: Plain text
 #: upstream/_posts/2013-06-26-infinispan-530final-is-out.adoc:19
 #, fuzzy
-msgid ""
-"We're proud to announce the final release of Infinispan 5.3.0 \"http://www."
-"masterofmalt.com/beer/brewdog-tactical-nuclear-penguin-375cl-beer/[Tactical "
-"Nuclear Penguin]\". Besides increased stability (130+ bug fixes) this "
-"release also brings some highly demanded features:"
-msgstr ""
-"Infinispan 5.3.0 link:http://www.masterofmalt.com/beer/brewdog-tactical-"
-"nuclear-penguin-375cl-beer/[\"Tactical Nuclear Penguin] "
-"\"の最終リリースを発表できることを誇りに思います。安定性の向上（130以上のバグフィックス）に加えて、このリリースではいくつかの要望の多かった機能が追加されています。"
+msgid "We're proud to announce the final release of Infinispan 5.3.0 \"http://www.masterofmalt.com/beer/brewdog-tactical-nuclear-penguin-375cl-beer/[Tactical Nuclear Penguin]\". Besides increased stability (130+ bug fixes) this release also brings some highly demanded features:"
+msgstr "Infinispan 5.3.0 link:http://www.masterofmalt.com/beer/brewdog-tactical-nuclear-penguin-375cl-beer/[\"Tactical Nuclear Penguin] \"の最終リリースを発表できることを誇りに思います。安定性の向上（130以上のバグフィックス）に加えて、このリリースではいくつかの要望の多かった機能が追加されています。"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-26-infinispan-530final-is-out.adoc:24
 #, fuzzy
-msgid ""
-"http://infinispan.blogspot.co.uk/2013/04/faster-transaction-protocols-in."
-"html[Total Order transaction protocol] developed within the scope of the "
-"CloudTM project yielding significant performance improvements under "
-"concurrent access"
-msgstr ""
-"CloudTMプロジェクトの範囲内で開発された link:http://infinispan.blogspot.co.uk/2013/04/faster-"
-"transaction-protocols-in.html[トータルオーダートランザクションプロトコル] "
-"により、同時アクセス時のパフォーマンスが大幅に向上しました。"
+msgid "http://infinispan.blogspot.co.uk/2013/04/faster-transaction-protocols-in.html[Total Order transaction protocol] developed within the scope of the CloudTM project yielding significant performance improvements under concurrent access"
+msgstr "CloudTMプロジェクトの範囲内で開発された link:http://infinispan.blogspot.co.uk/2013/04/faster-transaction-protocols-in.html[トータルオーダートランザクションプロトコル] により、同時アクセス時のパフォーマンスが大幅に向上しました。"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-26-infinispan-530final-is-out.adoc:26
 #, fuzzy
-msgid ""
-"http://infinispan.blogspot.co.uk/2013/04/give-java-caching-standard-api-go-"
-"using.html[Support for JSR-107] (Java Caching API) implementation"
-msgstr ""
-"link:http://infinispan.blogspot.co.uk/2013/04/give-java-caching-standard-api-"
-"go-using.html[JSR-107] (Java Caching API) の実装に link:http://infinispan."
-"blogspot.co.uk/2013/04/give-java-caching-standard-api-go-using.html[対応し] "
-"ました。"
+msgid "http://infinispan.blogspot.co.uk/2013/04/give-java-caching-standard-api-go-using.html[Support for JSR-107] (Java Caching API) implementation"
+msgstr "link:http://infinispan.blogspot.co.uk/2013/04/give-java-caching-standard-api-go-using.html[JSR-107] (Java Caching API) の実装に link:http://infinispan.blogspot.co.uk/2013/04/give-java-caching-standard-api-go-using.html[対応し] ました。"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-26-infinispan-530final-is-out.adoc:28
 #, fuzzy
-msgid ""
-"A new implementation of the Lucene Directory for Infinispan based on Lucene "
-"4"
+msgid "A new implementation of the Lucene Directory for Infinispan based on Lucene 4"
 msgstr "Lucene 4 をベースにした Infinispan 用 Lucene Directory の新しい実装"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-26-infinispan-530final-is-out.adoc:31
 #, fuzzy
-msgid ""
-"A http://infinispan.blogspot.co.uk/2013/04/infinispan-server-530alpha1."
-"html[new packaging] for the Infinispan server modules, based on the JBoss AS"
-msgstr ""
-"JBoss AS をベースにした Infinispan サーバーモジュールの link:http://infinispan.blogspot.co.uk/"
-"2013/04/infinispan-server-530alpha1.html[新しいパッケージング]"
+msgid "A http://infinispan.blogspot.co.uk/2013/04/infinispan-server-530alpha1.html[new packaging] for the Infinispan server modules, based on the JBoss AS"
+msgstr "JBoss AS をベースにした Infinispan サーバーモジュールの link:http://infinispan.blogspot.co.uk/2013/04/infinispan-server-530alpha1.html[新しいパッケージング]"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-26-infinispan-530final-is-out.adoc:33
 #, fuzzy
-msgid ""
-"http://infinispan.blogspot.co.uk/2013/05/infinispan-server-remote-protocols."
-"html[SSL access to Hot Rod]"
-msgstr ""
-"link:http://infinispan.blogspot.co.uk/2013/05/infinispan-server-remote-"
-"protocols.html[ホットロッドへのSSLアクセス]"
+msgid "http://infinispan.blogspot.co.uk/2013/05/infinispan-server-remote-protocols.html[SSL access to Hot Rod]"
+msgstr "link:http://infinispan.blogspot.co.uk/2013/05/infinispan-server-remote-protocols.html[ホットロッドへのSSLアクセス]"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-26-infinispan-530final-is-out.adoc:35
 #, fuzzy
-msgid ""
-"http://infinispan.blogspot.co.uk/2013/05/interoperability-between-embedded-"
-"and.html[Interoperability] between Hot Rod, Memcached, REST and embedded "
-"mode"
-msgstr ""
-"Hot Rod、Memcached、REST、組み込みモード間の link:http://infinispan.blogspot.co.uk/2013/"
-"05/interoperability-between-embedded-and.html[相互運用性]"
+msgid "http://infinispan.blogspot.co.uk/2013/05/interoperability-between-embedded-and.html[Interoperability] between Hot Rod, Memcached, REST and embedded mode"
+msgstr "Hot Rod、Memcached、REST、組み込みモード間の link:http://infinispan.blogspot.co.uk/2013/05/interoperability-between-embedded-and.html[相互運用性]"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-26-infinispan-530final-is-out.adoc:37
 #, fuzzy
-msgid ""
-"https://docs.jboss.org/author/display/ISPN/Storing+objects+%28e.g."
-"+arrays%29+with+custom+Equivalence+functions[Storing arrays] in Infinispan "
-"as keys and values"
-msgstr ""
-"配列をキーと値としてInfinispanに link:https://docs.jboss.org/author/display/ISPN/"
-"Storing+objects+%28e.g.+arrays%29+with+custom+Equivalence+functions[格納する]"
+msgid "https://docs.jboss.org/author/display/ISPN/Storing+objects+%28e.g.+arrays%29+with+custom+Equivalence+functions[Storing arrays] in Infinispan as keys and values"
+msgstr "配列をキーと値としてInfinispanに link:https://docs.jboss.org/author/display/ISPN/Storing+objects+%28e.g.+arrays%29+with+custom+Equivalence+functions[格納する]"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-26-infinispan-530final-is-out.adoc:44
 #, fuzzy
-msgid ""
-"Several new cache stores: a http://infinispan.blogspot.co.uk/2013/06/using-"
-"mongodb-as-cache-store.html[mongoDB cache store] (courtesy of  Guillaume "
-"Scheibel), a http://infinispan.blogspot.co.uk/2013/05/introducing-jpa-cache-"
-"store.html[ JPA based cache store] and a https://issues.jboss.org/browse/"
-"ISPN-2657[LevelDB cache store] (courtesy of Ray Tsang)"
-msgstr ""
-"いくつかの新しいキャッシュストア: link:http://infinispan.blogspot.co.uk/2013/06/using-"
-"mongodb-as-cache-store.html[mongoDB キャッシュストア] (Guillaume Scheibel 氏提供)、JPA "
-"link:http://infinispan.blogspot.co.uk/2013/05/introducing-jpa-cache-store."
-"html[ベースのキャッシュストア、] LevelDB link:https://issues.jboss.org/browse/ISPN-"
-"2657[キャッシュストア (] Ray Tsang 氏提供)"
+msgid "Several new cache stores: a http://infinispan.blogspot.co.uk/2013/06/using-mongodb-as-cache-store.html[mongoDB cache store] (courtesy of  Guillaume Scheibel), a http://infinispan.blogspot.co.uk/2013/05/introducing-jpa-cache-store.html[ JPA based cache store] and a https://issues.jboss.org/browse/ISPN-2657[LevelDB cache store] (courtesy of Ray Tsang)"
+msgstr "いくつかの新しいキャッシュストア: link:http://infinispan.blogspot.co.uk/2013/06/using-mongodb-as-cache-store.html[mongoDB キャッシュストア] (Guillaume Scheibel 氏提供)、JPA link:http://infinispan.blogspot.co.uk/2013/05/introducing-jpa-cache-store.html[ベースのキャッシュストア、] LevelDB link:https://issues.jboss.org/browse/ISPN-2657[キャッシュストア (] Ray Tsang 氏提供)"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-26-infinispan-530final-is-out.adoc:48
 #, fuzzy
-msgid ""
-"For a complete list of features included in this release refer to the https:/"
-"/issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
-"12320550[release notes]."
-msgstr ""
-"このリリースに含まれる機能の完全なリストについては、 link:https://issues.jboss.org/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12320550[リリースノートを] 参照してください。"
+msgid "For a complete list of features included in this release refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12320550[release notes]."
+msgstr "このリリースに含まれる機能の完全なリストについては、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12320550[リリースノートを] 参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-26-infinispan-530final-is-out.adoc:54
 #, fuzzy
-msgid ""
-"Visit our http://www.jboss.org/infinispan/downloads[downloads] section to "
-"find the latest release and if you have any questions please check our http:/"
-"/www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/"
-"mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://"
-"irc.freenode.org/infinispan[IRC]."
-msgstr ""
-"最新のリリースは link:http://www.jboss.org/infinispan/downloads[ダウンロード] "
-"セクションをご覧ください。"
+msgid "Visit our http://www.jboss.org/infinispan/downloads[downloads] section to find the latest release and if you have any questions please check our http://www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+msgstr "最新のリリースは link:http://www.jboss.org/infinispan/downloads[ダウンロード] セクションをご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-26-infinispan-530final-is-out.adoc:63
 #, fuzzy
-msgid ""
-"Time to move forward now: Infinispan 6.0 will bring some https://community."
-"jboss.org/en/infinispan?view=documents[significant improvements] to "
-"the Inifinispan ecosystem  and also a shift in licence to http://infinispan."
-"blogspot.co.uk/2013/05/infinispan-to-adopt-apache-software.html[Apache "
-"Software Licence] "
-msgstr ""
-"今こそ前進する時です。Infinispan 6.0はInifinispanのエコシステムに link:https://community.jboss."
-"org/en/infinispan?view=documents[大きな改善を] もたらし、ライセンスもApacheソフトウェア link:http://"
-"infinispan.blogspot.co.uk/2013/05/infinispan-to-adopt-apache-software."
-"html[ライセンス] に移行します。"
+msgid "Time to move forward now: Infinispan 6.0 will bring some https://community.jboss.org/en/infinispan?view=documents[significant improvements] to the Inifinispan ecosystem  and also a shift in licence to http://infinispan.blogspot.co.uk/2013/05/infinispan-to-adopt-apache-software.html[Apache Software Licence] "
+msgstr "今こそ前進する時です。Infinispan 6.0はInifinispanのエコシステムに link:https://community.jboss.org/en/infinispan?view=documents[大きな改善を] もたらし、ライセンスもApacheソフトウェア link:http://infinispan.blogspot.co.uk/2013/05/infinispan-to-adopt-apache-software.html[ライセンス] に移行します。"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-26-infinispan-530final-is-out.adoc:65

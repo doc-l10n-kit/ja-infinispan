@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:8
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan Operator 1.1.2 is out!\n"
@@ -45,12 +45,8 @@ msgstr ""
 #. type: Plain text
 #: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:13
 #, fuzzy
-msgid ""
-"We're pleased to announce https://operatorhub.io/operator/infinispan[version "
-"1.1.2 of the Infinispan Operator] for Kubernetes and Red Hat OpenShift."
-msgstr ""
-"Kubernetes と Red Hat OpenShift 用の link:https://operatorhub.io/operator/"
-"infinispan[Infinispan Operator のバージョン 1.1] .2 を発表します。"
+msgid "We're pleased to announce https://operatorhub.io/operator/infinispan[version 1.1.2 of the Infinispan Operator] for Kubernetes and Red Hat OpenShift."
+msgstr "Kubernetes と Red Hat OpenShift 用の link:https://operatorhub.io/operator/infinispan[Infinispan Operator のバージョン 1.1] .2 を発表します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:15
@@ -73,69 +69,41 @@ msgstr "CR yaml出力の可読性を向上させました。"
 #. type: Plain text
 #: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:19
 #, fuzzy
-msgid ""
-"Now available from the https://quay.io/repository/infinispan/operator?tag="
-"latest&tab=tags[Operator image registry] at quay.io."
-msgstr ""
-"quay.ioの link:https://quay.io/repository/infinispan/operator?tag=latest&tab="
-"tags[Operatorイメージレジストリ] から利用可能になりました。"
+msgid "Now available from the https://quay.io/repository/infinispan/operator?tag=latest&tab=tags[Operator image registry] at quay.io."
+msgstr "quay.ioの link:https://quay.io/repository/infinispan/operator?tag=latest&tab=tags[Operatorイメージレジストリ] から利用可能になりました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:21
 #, fuzzy
-msgid ""
-"Get full release information at https://github.com/infinispan/infinispan-"
-"operator/milestone/10?closed=1[version 1.1.2]."
-msgstr ""
-"link:https://github.com/infinispan/infinispan-operator/milestone/10?closed="
-"1[バージョン1.1.1.2の] 完全なリリース情報を取得します。"
+msgid "Get full release information at https://github.com/infinispan/infinispan-operator/milestone/10?closed=1[version 1.1.2]."
+msgstr "link:https://github.com/infinispan/infinispan-operator/milestone/10?closed=1[バージョン1.1.1.2の] 完全なリリース情報を取得します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:24
 #, fuzzy
-msgid ""
-"Our community documentation has also been updated and improved! Be sure to "
-"check out the https://infinispan.org/infinispan-operator/1.1.x/operator."
-"html[Infinispan Operator v1.1.x Guide]."
-msgstr ""
-"コミュニティのドキュメントも更新され、改善されました。 link:https://infinispan.org/infinispan-operator/"
-"1.1.x/operator.html[Infinispan Operator v1.1.xガイド] を必ずチェックしてください。"
+msgid "Our community documentation has also been updated and improved! Be sure to check out the https://infinispan.org/infinispan-operator/1.1.x/operator.html[Infinispan Operator v1.1.x Guide]."
+msgstr "コミュニティのドキュメントも更新され、改善されました。 link:https://infinispan.org/infinispan-operator/1.1.x/operator.html[Infinispan Operator v1.1.xガイド] を必ずチェックしてください。"
 
 #. type: Title ==
 #: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:25
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Update Channels and Automatic Upgrades on OpenShift"
 msgstr "OpenShift上でのチャネルの更新と自動アップグレード"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:28
 #, fuzzy
-msgid ""
-"Starting with this release we are moving channels from a stable/preview "
-"structure to a micro-stream structure. This means you'll get channels for "
-"each major.minor version of Infinispan."
-msgstr ""
-"このリリースから、私たちはチャンネルを安定版/"
-"プレビュー版の構造からマイクロストリームの構造に移行します。これは、あなたがInfinispanのメジャーバージョンとマイナーバージョンのそれぞれのチャンネルを取得することを意味します。"
+msgid "Starting with this release we are moving channels from a stable/preview structure to a micro-stream structure. This means you'll get channels for each major.minor version of Infinispan."
+msgstr "このリリースから、私たちはチャンネルを安定版/プレビュー版の構造からマイクロストリームの構造に移行します。これは、あなたがInfinispanのメジャーバージョンとマイナーバージョンのそれぞれのチャンネルを取得することを意味します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:31
 #, fuzzy
-msgid ""
-"For now version 1.1.x is available on the dev-preview channel but you should "
-"switch your Operator subscription to the 1.1.x channel before the next "
-"release to continue receiving updates."
-msgstr ""
-"今のところバージョン 1.1.1.x は dev-preview チャンネルで利用可能ですが、次のリリースまでに Operator "
-"のサブスクリプションを 1.1.x チャンネルに切り替えて、アップデートを継続して受け取るようにしてください。"
+msgid "For now version 1.1.x is available on the dev-preview channel but you should switch your Operator subscription to the 1.1.x channel before the next release to continue receiving updates."
+msgstr "今のところバージョン 1.1.1.x は dev-preview チャンネルで利用可能ですが、次のリリースまでに Operator のサブスクリプションを 1.1.x チャンネルに切り替えて、アップデートを継続して受け取るようにしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-08-infinispan-operator-1.1.2.adoc:34
 #, fuzzy
-msgid ""
-"If you use the Automatic Approval upgrade policy on OpenShift, your cluster "
-"is now running Infinispan Operator version 1.1.2 with the Infinispan 10.1.7."
-"Final server image."
-msgstr ""
-"OpenShift上で自動承認アップグレードポリシーを使用している場合、クラスタは現在Infinispan Operatorバージョン1.1."
-"2をInfinispan 10.1.7.Finalサーバーイメージで実行しています。"
+msgid "If you use the Automatic Approval upgrade policy on OpenShift, your cluster is now running Infinispan Operator version 1.1.2 with the Infinispan 10.1.7.Final server image."
+msgstr "OpenShift上で自動承認アップグレードポリシーを使用している場合、クラスタは現在Infinispan Operatorバージョン1.1.2をInfinispan 10.1.7.Finalサーバーイメージで実行しています。"

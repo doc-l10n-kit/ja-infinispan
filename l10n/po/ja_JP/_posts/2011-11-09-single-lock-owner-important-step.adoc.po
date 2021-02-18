@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-11-09-single-lock-owner-important-step.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-09-single-lock-owner-important-step.adoc:14
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 'Single lock owner: an important step forward'\n"
@@ -36,10 +36,8 @@ msgid ""
 "\"locking\",\n"
 "\"deadlock detection\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7886295445675479442\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/11/single-lock-owner-"
-"important-step.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7886295445675479442\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/11/single-lock-owner-important-step.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -52,94 +50,54 @@ msgstr ""
 "\"locking\",\n"
 "\"deadlock detection\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7886295445675479442\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/11/single-lock-owner-"
-"important-step.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7886295445675479442\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/11/single-lock-owner-important-step.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-09-single-lock-owner-important-step.adoc:19
 #, fuzzy
-msgid ""
-"The single lock owner is a highly requested Infinispan improvement. The "
-"basic idea behind it is that, when writing to a key, locks are no longer "
-"acquired on all the nodes that own that key, but only on a single designated "
-"node (named \"main owner\")."
-msgstr ""
-"シングル・ロック・オーナーは、Infinispanの改良点として非常に要望の多かったものです。この機能の基本的な考え方は、鍵に書き込む際に、その鍵を所有するすべてのノードでロックが取得されるのではなく、単一の指定されたノード（「メインオーナー」という名前）でのみロックが取得されるというものです。"
+msgid "The single lock owner is a highly requested Infinispan improvement. The basic idea behind it is that, when writing to a key, locks are no longer acquired on all the nodes that own that key, but only on a single designated node (named \"main owner\")."
+msgstr "シングル・ロック・オーナーは、Infinispanの改良点として非常に要望の多かったものです。この機能の基本的な考え方は、鍵に書き込む際に、その鍵を所有するすべてのノードでロックが取得されるのではなく、単一の指定されたノード（「メインオーナー」という名前）でのみロックが取得されるというものです。"
 
 #. type: Title ==
 #: upstream/_posts/2011-11-09-single-lock-owner-important-step.adoc:21
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "How does it help me?"
 msgstr "どうやって役にたつのか？"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-09-single-lock-owner-important-step.adoc:27
 #, fuzzy
-msgid ""
-"Short version: if you use transactions that concurrently write to the same "
-"keys, this improvement significantly increases your system' throughput."
+msgid "Short version: if you use transactions that concurrently write to the same keys, this improvement significantly increases your system' throughput."
 msgstr "短いバージョン: 同じキーに同時に書き込むトランザクションを使用している場合、この改善によりシステムのスループットが大幅に向上します。"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-09-single-lock-owner-important-step.adoc:40
 #, fuzzy
-msgid ""
-"Long version: If you're using Infinispan with transactions that modify the "
-"same key(s) concurrently then you can easily end up in a deadlock. A "
-"deadlock can also occur if two transaction modify the same key at the same "
-"time - which is both inefficient and counter-intuitive. Such a deadlock "
-"means that at one transaction(or both) eventually rollback but also the lock "
-"on the key is held for the duration of a lockAquistionTimout config option "
-"(defaults to 10 seconds). These deadlocks reduces the throughput "
-"significantly as transactions threads are held inactive during deadlock time."
-" On top of that, other transactions that want to operate on that key are "
-"also delayed, potentially resulting in a cascade effect."
-msgstr ""
-"ロングバージョンです。同じキーを同時に変更するトランザクションで Infinispan "
-"を使用している場合、簡単にデッドロックに陥る可能性があります。デッドロックは、2つのトランザクションが同時に同じキーを変更した場合にも発生する可能性があります。このようなデッドロックは、1つのトランザクション(または両方)で最終的にロールバックされることを意味しますが、キーのロックはlockAquistionTimout設定オプション(デフォルトは10秒)の期間中保持されます。これらのデッドロックは、デッドロック時間中にトランザクションスレッドが非アクティブな状態で保持されるため、スループットを大幅に低下させます。その上、そのキーで操作したい他のトランザクションも遅延し、カスケード効果が発生する可能性があります。"
+msgid "Long version: If you're using Infinispan with transactions that modify the same key(s) concurrently then you can easily end up in a deadlock. A deadlock can also occur if two transaction modify the same key at the same time - which is both inefficient and counter-intuitive. Such a deadlock means that at one transaction(or both) eventually rollback but also the lock on the key is held for the duration of a lockAquistionTimout config option (defaults to 10 seconds). These deadlocks reduces the throughput significantly as transactions threads are held inactive during deadlock time. On top of that, other transactions that want to operate on that key are also delayed, potentially resulting in a cascade effect."
+msgstr "ロングバージョンです。同じキーを同時に変更するトランザクションで Infinispan を使用している場合、簡単にデッドロックに陥る可能性があります。デッドロックは、2つのトランザクションが同時に同じキーを変更した場合にも発生する可能性があります。このようなデッドロックは、1つのトランザクション(または両方)で最終的にロールバックされることを意味しますが、キーのロックはlockAquistionTimout設定オプション(デフォルトは10秒)の期間中保持されます。これらのデッドロックは、デッドロック時間中にトランザクションスレッドが非アクティブな状態で保持されるため、スループットを大幅に低下させます。その上、そのキーで操作したい他のトランザクションも遅延し、カスケード効果が発生する可能性があります。"
 
 #. type: Title ==
 #: upstream/_posts/2011-11-09-single-lock-owner-important-step.adoc:42
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "What's the added performance penalty?"
 msgstr "追加性能ペナルティってなんだよ"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-09-single-lock-owner-important-step.adoc:57
 #, fuzzy
-msgid ""
-"The only encountered performance penalty is during cluster topology changes. "
-"At that point the cluster needs to perform some additional computation (no "
-"RPC involved) to fail-over the acquired locks from previous to new owners.  "
-"Another noticeable aspect is that locks are now being released "
-"asynchronously, after the transaction commits. This doesn't add any burden "
-"to the transaction duration, but it means that locks are being held slightly "
-"longer. That's not something to be concerned about if you're not using "
-"transactions that compete for same locks though.  We plan to benchmark this "
-"feature using http://radargun.sourceforge.net/[Radargun] benchmark tool - "
-"we'll report back!"
-msgstr ""
-"パフォーマンスの低下が発生するのは、クラスタのトポロジーが変更されたときだけです。その際には、以前の所有者から新しい所有者に取得したロックをフェイルオーバーするために、クラスタは追加の計算を実行する必要があります（RPCは関与しません）。もう一つの注目すべき点は、トランザクションのコミット後に非同期でロックが解放されるようになったことです。これはトランザクションの持続時間に負担をかけるものではありませんが、ロックの保持時間が若干長くなっていることを意味します。同じロックを争うようなトランザクションを使用していないのであれば、気にする必要はありませんが。 "
-"link:http://radargun.sourceforge.net/[Radargun] "
-"ベンチマークツールを使ってこの機能をベンチマークする予定です。"
+msgid "The only encountered performance penalty is during cluster topology changes. At that point the cluster needs to perform some additional computation (no RPC involved) to fail-over the acquired locks from previous to new owners.  Another noticeable aspect is that locks are now being released asynchronously, after the transaction commits. This doesn't add any burden to the transaction duration, but it means that locks are being held slightly longer. That's not something to be concerned about if you're not using transactions that compete for same locks though.  We plan to benchmark this feature using http://radargun.sourceforge.net/[Radargun] benchmark tool - we'll report back!"
+msgstr "パフォーマンスの低下が発生するのは、クラスタのトポロジーが変更されたときだけです。その際には、以前の所有者から新しい所有者に取得したロックをフェイルオーバーするために、クラスタは追加の計算を実行する必要があります（RPCは関与しません）。もう一つの注目すべき点は、トランザクションのコミット後に非同期でロックが解放されるようになったことです。これはトランザクションの持続時間に負担をかけるものではありませんが、ロックの保持時間が若干長くなっていることを意味します。同じロックを争うようなトランザクションを使用していないのであれば、気にする必要はありませんが。 link:http://radargun.sourceforge.net/[Radargun] ベンチマークツールを使ってこの機能をベンチマークする予定です。"
 
 #. type: Title ==
 #: upstream/_posts/2011-11-09-single-lock-owner-important-step.adoc:59
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Want to know more?"
 msgstr "もっと知りたいですか？"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-09-single-lock-owner-important-step.adoc:65
 #, fuzzy
-msgid ""
-"You can read the http://community.jboss.org/wiki/"
-"SingleNodeLockingModel[single lock owner design wiki] or/and follow the JIRA "
-"https://issues.jboss.org/browse/ISPN-1137[JIRA] discussions."
-msgstr ""
-"link:http://community.jboss.org/wiki/"
-"SingleNodeLockingModel[シングルロックのオーナーデザインwiki] を読んだり、JIRA link:https://issues."
-"jboss.org/browse/ISPN-1137[JIRAの] 議論をフォローしたりすることができます。"
+msgid "You can read the http://community.jboss.org/wiki/SingleNodeLockingModel[single lock owner design wiki] or/and follow the JIRA https://issues.jboss.org/browse/ISPN-1137[JIRA] discussions."
+msgstr "link:http://community.jboss.org/wiki/SingleNodeLockingModel[シングルロックのオーナーデザインwiki] を読んだり、JIRA link:https://issues.jboss.org/browse/ISPN-1137[JIRAの] 議論をフォローしたりすることができます。"

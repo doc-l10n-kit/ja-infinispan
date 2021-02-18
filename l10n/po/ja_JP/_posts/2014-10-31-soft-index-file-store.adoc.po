@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-10-31-soft-index-file-store.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-31-soft-index-file-store.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Soft-Index File Store\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2014-10-31T07:14:00.000-07:00'\n"
 "author: infinispan\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"9086839281399482868\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/10/soft-index-file-store."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-9086839281399482868\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/10/soft-index-file-store.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,101 +42,49 @@ msgstr ""
 "date: '2014-10-31T07:14:00.000-07:00'\n"
 "author: infinispan\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"9086839281399482868\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/10/soft-index-file-store."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-9086839281399482868\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/10/soft-index-file-store.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-31-soft-index-file-store.adoc:15
 #, fuzzy
-msgid ""
-"Recently, Infinispan got a new local file-based cache store, called Soft-"
-"Index File Store. Why have we created just another cache store, what "
-"problems is it solving, what are its limitations and how is it designed?"
-msgstr ""
-"最近、InfinispanはSoft-Index File "
-"Storeと呼ばれる新しいローカルファイルベースのキャッシュストアを手に入れました。なぜただのキャッシュストアを作ってしまったのか、どんな問題を解決しているのか、その限界はどこにあるのか、どのように設計されているのか。"
+msgid "Recently, Infinispan got a new local file-based cache store, called Soft-Index File Store. Why have we created just another cache store, what problems is it solving, what are its limitations and how is it designed?"
+msgstr "最近、InfinispanはSoft-Index File Storeと呼ばれる新しいローカルファイルベースのキャッシュストアを手に入れました。なぜただのキャッシュストアを作ってしまったのか、どんな問題を解決しているのか、その限界はどこにあるのか、どのように設計されているのか。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-31-soft-index-file-store.adoc:25
 #, fuzzy
-msgid ""
-"Single File Store is a well performing cache store, but it stores all keys "
-"in-memory; that limits the number of keys you can store. File fragmentation "
-"could be even more of an issue: if you store larger and larger values (that "
-"happens quite a lot, as users e.g. add stuff into their shopping carts), the "
-"space is not reused and instead the entry is appended at the end of the file."
-" The space (now empty) is reused only if you write entry that can fit there. "
-"Also, even if you remove all entries from the cache, the file won't shrink, "
-"and neither won't be de-fragmented."
-msgstr ""
-"シングルファイルストアは性能の良いキャッシュストアですが、すべてのキーをメモリ内に保存します。ファイルの断片化はさらに問題になります: "
-"より大きな値を保存した場合 "
-"(ショッピングカートに商品を追加するなど、よくあることです)、スペースは再利用されず、代わりにエントリがファイルの最後に追加されてしまいます。空きスペース(現在は空)は、そこに収まるエントリを書いた場合にのみ再利用されます。また、キャッシュからすべてのエントリを削除しても、ファイルは縮小しませんし、どちらもデフラグされません。"
+msgid "Single File Store is a well performing cache store, but it stores all keys in-memory; that limits the number of keys you can store. File fragmentation could be even more of an issue: if you store larger and larger values (that happens quite a lot, as users e.g. add stuff into their shopping carts), the space is not reused and instead the entry is appended at the end of the file. The space (now empty) is reused only if you write entry that can fit there. Also, even if you remove all entries from the cache, the file won't shrink, and neither won't be de-fragmented."
+msgstr "シングルファイルストアは性能の良いキャッシュストアですが、すべてのキーをメモリ内に保存します。ファイルの断片化はさらに問題になります: より大きな値を保存した場合 (ショッピングカートに商品を追加するなど、よくあることです)、スペースは再利用されず、代わりにエントリがファイルの最後に追加されてしまいます。空きスペース(現在は空)は、そこに収まるエントリを書いた場合にのみ再利用されます。また、キャッシュからすべてのエントリを削除しても、ファイルは縮小しませんし、どちらもデフラグされません。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-31-soft-index-file-store.adoc:30
 #, fuzzy
-msgid ""
-"LevelDB uses quite well performing Google's library written in native code. "
-"The major drawback is the native code - if LevelDB has a bug that ends in "
-"segfault, whole JVM crashes, bringing you application server down."
-msgstr ""
-"LevelDBは、ネイティブコードで書かれた非常に高性能なGoogleのライブラリを使用しています。主な欠点はネイティブコードにあります。LevelDBにバグがあってセグフォルトに終わると、JVM全体がクラッシュしてアプリケーションサーバがダウンしてしまいます。"
+msgid "LevelDB uses quite well performing Google's library written in native code. The major drawback is the native code - if LevelDB has a bug that ends in segfault, whole JVM crashes, bringing you application server down."
+msgstr "LevelDBは、ネイティブコードで書かれた非常に高性能なGoogleのライブラリを使用しています。主な欠点はネイティブコードにあります。LevelDBにバグがあってセグフォルトに終わると、JVM全体がクラッシュしてアプリケーションサーバがダウンしてしまいます。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-31-soft-index-file-store.adoc:40
 #, fuzzy
-msgid ""
-"Our new Soft Index File Store is pure Java implementation that tries to get "
-"around Single File Store's drawbacks by implementing a variant of *B+ tree* "
-"that is cached in-memory using Java's *soft references* - here's where the "
-"name Soft Index File Store comes from. This B+ tree (called Index) is "
-"offloaded on filesystem to single file: in fact, this has theoretically "
-"similar problems with fragmentation as Single File Store - but in practice "
-"it shouldn't cause such problems. This index file does not need to be "
-"persisted - it is purged and rebuilt when the cache store restarts, its "
-"purpose is only offloading."
-msgstr ""
-"私たちの新しいソフトインデックスファイルストアは純粋なJavaの実装で、Javaの *ソフトリファレンス* を使ってメモリ内にキャッシュされる "
-"*B+ツリーの* 変形を実装することで、シングルファイルストアの欠点を回避しようとしています - "
-"ソフトインデックスファイルストアという名前の由来はここから来ています。この B+ ツリー (Index と呼ばれる) "
-"はファイルシステム上で単一のファイルにオフロードされます。実際には、理論的には Single File Store "
-"と同様に断片化の問題がありますが、実際にはそのような問題は起こらないはずです。このインデックスファイルは永続化される必要はありません - "
-"キャッシュストアが再起動したときにパージされて再構築され、その目的はオフロードされるだけです。"
+msgid "Our new Soft Index File Store is pure Java implementation that tries to get around Single File Store's drawbacks by implementing a variant of *B+ tree* that is cached in-memory using Java's *soft references* - here's where the name Soft Index File Store comes from. This B+ tree (called Index) is offloaded on filesystem to single file: in fact, this has theoretically similar problems with fragmentation as Single File Store - but in practice it shouldn't cause such problems. This index file does not need to be persisted - it is purged and rebuilt when the cache store restarts, its purpose is only offloading."
+msgstr "私たちの新しいソフトインデックスファイルストアは純粋なJavaの実装で、Javaの *ソフトリファレンス* を使ってメモリ内にキャッシュされる *B+ツリーの* 変形を実装することで、シングルファイルストアの欠点を回避しようとしています - ソフトインデックスファイルストアという名前の由来はここから来ています。この B+ ツリー (Index と呼ばれる) はファイルシステム上で単一のファイルにオフロードされます。実際には、理論的には Single File Store と同様に断片化の問題がありますが、実際にはそのような問題は起こらないはずです。このインデックスファイルは永続化される必要はありません - キャッシュストアが再起動したときにパージされて再構築され、その目的はオフロードされるだけです。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-31-soft-index-file-store.adoc:49
 #, fuzzy
-msgid ""
-"The data that should be persisted are stored in a set of files that are "
-"written in append-only way - that means that if you store this on "
-"conventional magnetic disk, it does not have to seek when writing a burst of "
-"entries. It is not stored in a single file but in a set of files. When any "
-"of these files drops below 50% of usage (the entries are marked as removed "
-"or overwritten), the file starts being collected, moving live entries into "
-"another file and in the end removing the old file from disk."
-msgstr ""
-"永続されるべきデータは、ファイルのセットに保存されていて、それは append-only の方法で書かれている - "
-"つまり、従来の磁気ディスクにこれを保存する場合、それは、エントリのバーストを書き込むときにシークする必要がないことを意味します。また、単一のファイルに格納されるのではなく、ファイルのセットに格納される。これらのファイルのいずれかが使用率の50％以下に低下すると（エントリは削除または上書きとマークされます）、ファイルの収集が開始され、ライブエントリを別のファイルに移動し、最終的にはディスクから古いファイルを削除します。"
+msgid "The data that should be persisted are stored in a set of files that are written in append-only way - that means that if you store this on conventional magnetic disk, it does not have to seek when writing a burst of entries. It is not stored in a single file but in a set of files. When any of these files drops below 50% of usage (the entries are marked as removed or overwritten), the file starts being collected, moving live entries into another file and in the end removing the old file from disk."
+msgstr "永続されるべきデータは、ファイルのセットに保存されていて、それは append-only の方法で書かれている - つまり、従来の磁気ディスクにこれを保存する場合、それは、エントリのバーストを書き込むときにシークする必要がないことを意味します。また、単一のファイルに格納されるのではなく、ファイルのセットに格納される。これらのファイルのいずれかが使用率の50％以下に低下すると（エントリは削除または上書きとマークされます）、ファイルの収集が開始され、ライブエントリを別のファイルに移動し、最終的にはディスクから古いファイルを削除します。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-31-soft-index-file-store.adoc:54
 #, fuzzy
-msgid ""
-"Most of the in-memory structures in Soft Index File Store are bounded, "
-"therefore you don't have to be afraid of OOMEs. You can also configure the "
-"limits for concurrently open files as well (so that you don't run out of "
-"file descriptors)."
-msgstr ""
-"ソフトインデックスファイルストアのインメモリ構造体のほとんどはバウンディングされているので、OOMEを恐れる必要はありません。また、同時に開くファイルの制限を設定することもできます "
-"(ファイルディスクリプタを使い切らないように)。"
+msgid "Most of the in-memory structures in Soft Index File Store are bounded, therefore you don't have to be afraid of OOMEs. You can also configure the limits for concurrently open files as well (so that you don't run out of file descriptors)."
+msgstr "ソフトインデックスファイルストアのインメモリ構造体のほとんどはバウンディングされているので、OOMEを恐れる必要はありません。また、同時に開くファイルの制限を設定することもできます (ファイルディスクリプタを使い切らないように)。"
 
 #. type: Title ==
 #: upstream/_posts/2014-10-31-soft-index-file-store.adoc:55
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "How to configure SIFS"
 msgstr "SIFSの設定方法"
 
@@ -150,140 +96,72 @@ msgstr "構成は通常のキャッシュストアと変わりません。"
 
 #. type: Title ==
 #: upstream/_posts/2014-10-31-soft-index-file-store.adoc:61
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Implementation details"
 msgstr "実施内容"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-31-soft-index-file-store.adoc:69
 #, fuzzy
-msgid ""
-"The Index does not use single file, in fact it can be split into multiple "
-"segments. That's because the algorithm updating this B+ tree is designed as "
-"single writer - multiple readers, but that could make the writer thread "
-"(called 'Index Updater') the bottleneck. Therefore, you can set how many "
-"segments should the Index be split into (according to keys' hashCode())."
-msgstr ""
-"インデックスは単一のファイルを使用しておらず、実際には複数のセグメントに分割することができます。これは、この B+ "
-"ツリーを更新するアルゴリズムがシングルライタ-複数のリーダとして設計されているためですが、ライタースレッド ('Index Updater' "
-"と呼ばれる) "
-"がボトルネックになる可能性があるからです。そのため、(keysのhashCode()に応じて)インデックスをいくつのセグメントに分割するかを設定することができます。"
+msgid "The Index does not use single file, in fact it can be split into multiple segments. That's because the algorithm updating this B+ tree is designed as single writer - multiple readers, but that could make the writer thread (called 'Index Updater') the bottleneck. Therefore, you can set how many segments should the Index be split into (according to keys' hashCode())."
+msgstr "インデックスは単一のファイルを使用しておらず、実際には複数のセグメントに分割することができます。これは、この B+ ツリーを更新するアルゴリズムがシングルライタ-複数のリーダとして設計されているためですが、ライタースレッド ('Index Updater' と呼ばれる) がボトルネックになる可能性があるからです。そのため、(keysのhashCode()に応じて)インデックスをいくつのセグメントに分割するかを設定することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-31-soft-index-file-store.adoc:76
 #, fuzzy
-msgid ""
-"Each node in the Index stores 'prefix' of all keys (or rather the serialized "
-"forms) used in the node in order to reduce the space required for the node. "
-"This comes with the assumption that the prefixes are often similar (e.g. "
-"when you use key \"user000001\" and \"user000002\"). If you can change how "
-"the keys are serialized, it is encouraged to move the changing part of the "
-"key to the end of the serialized data."
-msgstr ""
-"インデックスの各ノードは、ノードに必要なスペースを減らすために、そのノードで使用されているすべてのキー(というか、シリアル化された形式)の「接頭辞」を格納します。これは、接頭辞が似ていることが多いという前提に基づいています(例えば、\"user000001\"と\"user000002\"というキーを使っている場合など)。キーのシリアライズ方法を変更できる場合は、キーの変更部分をシリアライズデータの最後に移動させることが推奨されます。"
+msgid "Each node in the Index stores 'prefix' of all keys (or rather the serialized forms) used in the node in order to reduce the space required for the node. This comes with the assumption that the prefixes are often similar (e.g. when you use key \"user000001\" and \"user000002\"). If you can change how the keys are serialized, it is encouraged to move the changing part of the key to the end of the serialized data."
+msgstr "インデックスの各ノードは、ノードに必要なスペースを減らすために、そのノードで使用されているすべてのキー(というか、シリアル化された形式)の「接頭辞」を格納します。これは、接頭辞が似ていることが多いという前提に基づいています(例えば、\"user000001\"と\"user000002\"というキーを使っている場合など)。キーのシリアライズ方法を変更できる場合は、キーの変更部分をシリアライズデータの最後に移動させることが推奨されます。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-31-soft-index-file-store.adoc:86
 #, fuzzy
-msgid ""
-"The data are written by single thread as well, the 'Log Appender'.  There's "
-"no reason to let threads that access the cache store compete over file-"
-"system - Log Appender queues the write results, writes them into the file "
-"and wakes up the waiting thread. There are 2 possibly unnecessary context-"
-"switches, but in the original design we wanted to allow the write request to "
-"return only after the data have been fsynced.  By batching the writes, Log "
-"Appender allows this as a configuration option - then you can be sure that "
-"the data are already on disk when the call returns."
-msgstr ""
-"データの書き込みも「Log "
-"Appender」という単一のスレッドによって行われています。キャッシュストアにアクセスするスレッドをファイルシステム上で競合させる理由はありません - "
-"ログアペンダは書き込み結果をキューに入れ、ファイルに書き込み、待機中のスレッドをウェイクアップします。2つの不要なコンテキストスイッチがあるかもしれませんが、元々の設計では、データがfsyncされた後にのみ書き込み要求を返すようにしたかったのです。書き込みをバッチ処理することで、ログアペンダはこれを設定オプションとして許可します "
-"- 呼び出しが戻ってきたときに、データがすでにディスク上にあることを確認できます。"
+msgid "The data are written by single thread as well, the 'Log Appender'.  There's no reason to let threads that access the cache store compete over file-system - Log Appender queues the write results, writes them into the file and wakes up the waiting thread. There are 2 possibly unnecessary context-switches, but in the original design we wanted to allow the write request to return only after the data have been fsynced.  By batching the writes, Log Appender allows this as a configuration option - then you can be sure that the data are already on disk when the call returns."
+msgstr "データの書き込みも「Log Appender」という単一のスレッドによって行われています。キャッシュストアにアクセスするスレッドをファイルシステム上で競合させる理由はありません - ログアペンダは書き込み結果をキューに入れ、ファイルに書き込み、待機中のスレッドをウェイクアップします。2つの不要なコンテキストスイッチがあるかもしれませんが、元々の設計では、データがfsyncされた後にのみ書き込み要求を返すようにしたかったのです。書き込みをバッチ処理することで、ログアペンダはこれを設定オプションとして許可します - 呼び出しが戻ってきたときに、データがすでにディスク上にあることを確認できます。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-31-soft-index-file-store.adoc:91
 #, fuzzy
-msgid ""
-"When the entry is modified, the Index needs to be updated. The request is "
-"sent to Index Updater via bounded queue and the newest entry location is "
-"stored in Temporary Table until this is stored in the Index. The updated "
-"nodes are eventually offloaded onto disk in this way."
-msgstr ""
-"エントリが変更されると、インデックスを更新する必要があります。この要求はバウンドキューを介してインデックスアップデータに送られ、最新のエントリの位置がインデックスに格納されるまで一時テーブルに格納されます。更新されたノードは、最終的にはこのようにしてディスクにオフロードされます。"
+msgid "When the entry is modified, the Index needs to be updated. The request is sent to Index Updater via bounded queue and the newest entry location is stored in Temporary Table until this is stored in the Index. The updated nodes are eventually offloaded onto disk in this way."
+msgstr "エントリが変更されると、インデックスを更新する必要があります。この要求はバウンドキューを介してインデックスアップデータに送られ、最新のエントリの位置がインデックスに格納されるまで一時テーブルに格納されます。更新されたノードは、最終的にはこのようにしてディスクにオフロードされます。"
 
 #. type: Title ==
 #: upstream/_posts/2014-10-31-soft-index-file-store.adoc:92
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Known limitations"
 msgstr "既知の制限"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-31-soft-index-file-store.adoc:101
 #, fuzzy
-msgid ""
-"Size of a node in the Index is limited, by default it is 4096 bytes, though "
-"it can be configured. This size also limits the key length (or rather the "
-"length of the serialized form): you can't use keys longer than size of the "
-"node - 15 bytes. Moreover, the key length is stored as 'short', limiting it "
-"to 32767 bytes. There's no way how you can use longer keys - SIFS throws an "
-"exception when the key is longer after serialization."
-msgstr ""
-"インデックス内のノードのサイズは制限されており、デフォルトでは4096バイトですが、設定することもできます。このサイズはキーの長さ（というか、シリアル化された形式の長さ）にも制限があります:"
-" ノードのサイズ - 15 "
-"バイトより長いキーは使えません。さらに、鍵の長さは「short」として保存され、32767バイトに制限されています。シリアライズ後にキーが長くなると、SIFS "
-"は例外をスローします。"
+msgid "Size of a node in the Index is limited, by default it is 4096 bytes, though it can be configured. This size also limits the key length (or rather the length of the serialized form): you can't use keys longer than size of the node - 15 bytes. Moreover, the key length is stored as 'short', limiting it to 32767 bytes. There's no way how you can use longer keys - SIFS throws an exception when the key is longer after serialization."
+msgstr "インデックス内のノードのサイズは制限されており、デフォルトでは4096バイトですが、設定することもできます。このサイズはキーの長さ（というか、シリアル化された形式の長さ）にも制限があります: ノードのサイズ - 15 バイトより長いキーは使えません。さらに、鍵の長さは「short」として保存され、32767バイトに制限されています。シリアライズ後にキーが長くなると、SIFS は例外をスローします。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-31-soft-index-file-store.adoc:106
 #, fuzzy
-msgid ""
-"When entries are stored with expiration, SIFS does not discover the a file "
-"is full of expired entries and the compaction of old data files may not be "
-"started ever (method AdvancedStore.purgeExpired() is not implemented). This "
-"can lead to excessive file-system space usage."
-msgstr ""
-"エントリが有効期限付きで保存されている場合、SIFS "
-"はファイルが有効期限の切れたエントリで一杯になっていることを発見せず、古いデータファイルの圧縮が開始されないことがあります (AdvancedStore."
-"purgeExpired() メソッドは実装されていません)。これは、ファイルシステムのスペースを過剰に使用してしまう可能性があります。"
+msgid "When entries are stored with expiration, SIFS does not discover the a file is full of expired entries and the compaction of old data files may not be started ever (method AdvancedStore.purgeExpired() is not implemented). This can lead to excessive file-system space usage."
+msgstr "エントリが有効期限付きで保存されている場合、SIFS はファイルが有効期限の切れたエントリで一杯になっていることを発見せず、古いデータファイルの圧縮が開始されないことがあります (AdvancedStore.purgeExpired() メソッドは実装されていません)。これは、ファイルシステムのスペースを過剰に使用してしまう可能性があります。"
 
 #. type: Title ==
 #: upstream/_posts/2014-10-31-soft-index-file-store.adoc:107
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Future work"
 msgstr "今後の仕事"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-31-soft-index-file-store.adoc:113
 #, fuzzy
-msgid ""
-"What we need to do know is to benchmark SIFS in many configurations and set "
-"the optimal values as defaults. However, we run mostly synthetic benchmarks -"
-" and that's where you can help. Let's play with Soft Index File Store a bit "
-"and tell us what configuration works best for you!"
-msgstr ""
-"知っておく必要があるのは、多くの構成でSIFSをベンチマークし、最適値をデフォルトとして設定することです。しかし、私たちはほとんどの場合、合成ベンチマークを実行しています。では、Soft "
-"Index File Store を少し遊んでみて、どのような設定が最適か教えてください。"
+msgid "What we need to do know is to benchmark SIFS in many configurations and set the optimal values as defaults. However, we run mostly synthetic benchmarks - and that's where you can help. Let's play with Soft Index File Store a bit and tell us what configuration works best for you!"
+msgstr "知っておく必要があるのは、多くの構成でSIFSをベンチマークし、最適値をデフォルトとして設定することです。しかし、私たちはほとんどの場合、合成ベンチマークを実行しています。では、Soft Index File Store を少し遊んでみて、どのような設定が最適か教えてください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-31-soft-index-file-store.adoc:117
 #, fuzzy
-msgid ""
-"For storing large keys, building the B+ tree of hashCodes could perform "
-"better that storing the whole keys, though it would need additional handling "
-"for collisions. Tell us what keys do you use, please!"
-msgstr ""
-"大きな鍵を保存するためには、ハッシュコードのB+木を構築した方が全体の鍵を保存するよりも良いパフォーマンスが得られますが、衝突のための追加の処理が必要になります。どのような鍵を使っているのか教えてください。"
+msgid "For storing large keys, building the B+ tree of hashCodes could perform better that storing the whole keys, though it would need additional handling for collisions. Tell us what keys do you use, please!"
+msgstr "大きな鍵を保存するためには、ハッシュコードのB+木を構築した方が全体の鍵を保存するよりも良いパフォーマンスが得られますが、衝突のための追加の処理が必要になります。どのような鍵を使っているのか教えてください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-31-soft-index-file-store.adoc:124
 #, fuzzy
-msgid ""
-"Currently, each index update needs to be eventually stored, and that means "
-"one or more writes into the file-system even when this is not necessary. In "
-"the future, we might try to use phantom references instead of soft "
-"references to write the Index only when it needs to release some memory. "
-"However, this requires a lot of further work, so test SIFS today and let us "
-"now how do you like it!"
-msgstr ""
-"現在のところ、各インデックスの更新は最終的に保存される必要があり、これは必要ない場合でもファイルシステムへの書き込みを意味します。将来的には、ソフト参照の代わりにファントム参照を使用して、インデックスがメモリを解放する必要があるときにのみ書き込みを行うようにするかもしれません。今日、SIFS "
-"をテストしてみて、どうでしたか？"
+msgid "Currently, each index update needs to be eventually stored, and that means one or more writes into the file-system even when this is not necessary. In the future, we might try to use phantom references instead of soft references to write the Index only when it needs to release some memory. However, this requires a lot of further work, so test SIFS today and let us now how do you like it!"
+msgstr "現在のところ、各インデックスの更新は最終的に保存される必要があり、これは必要ない場合でもファイルシステムへの書き込みを意味します。将来的には、ソフト参照の代わりにファントム参照を使用して、インデックスがメモリを解放する必要があるときにのみ書き込みを行うようにするかもしれません。今日、SIFS をテストしてみて、どうでしたか？"

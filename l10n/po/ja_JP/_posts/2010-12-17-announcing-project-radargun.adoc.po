@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-12-17-announcing-project-radargun.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-17-announcing-project-radargun.adoc:13
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Announcing project Radargun\n"
@@ -35,10 +35,8 @@ msgid ""
 "\"benchmarks\",\n"
 "\"cache benchmark framework\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8622280226275112053\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/12/announcing-project-"
-"radargun.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8622280226275112053\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/12/announcing-project-radargun.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -50,10 +48,8 @@ msgstr ""
 "\"benchmarks\",\n"
 "\"cache benchmark framework\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8622280226275112053\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/12/announcing-project-"
-"radargun.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8622280226275112053\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/12/announcing-project-radargun.html\n"
 "---\n"
 
 #. type: Plain text
@@ -65,23 +61,8 @@ msgstr "皆さん、こんにちは。"
 #. type: Plain text
 #: upstream/_posts/2010-12-17-announcing-project-radargun.adoc:27
 #, fuzzy
-msgid ""
-"Radargun is a tool we've developed and used for benchmarking Infinispan's "
-"performance both between releases and compared with other similar products. "
-"Initially we shipped under the (poorly named) Cache Benchmark Framework.  "
-"Due to increase community interest and the fact that this reached a certain "
-"maturity (we used it for benchmarking 100+ nodes clusters) we decided to "
-"revamp it a little and also come with another name: Radargun.  You can read "
-"more about it http://radargun.sourceforge.net/[here]. A good start is the "
-"https://sourceforge.net/apps/trac/radargun/wiki/"
-"FiveMinutesTutorial[5MinutesTutorial]."
-msgstr ""
-"Radargunは、リリース間や他の類似製品と比較してInfinispanのパフォーマンスをベンチマークするために開発し、使用してきたツールです。当初は、（名前の悪い）Cache "
-"Benchmark "
-"Frameworkで出荷していました。コミュニティの関心の高まりと、これが一定の成熟度に達したため（100ノード以上のクラスタのベンチマークに使用しました）、少し改良して別の名前をつけることにしました。Radargunです。それについての詳細は "
-"link:http://radargun.sourceforge.net/[ここで] 読むことができます。良いスタートは link:https://"
-"sourceforge.net/apps/trac/radargun/wiki/"
-"FiveMinutesTutorial[5MinutesTutorial] です。"
+msgid "Radargun is a tool we've developed and used for benchmarking Infinispan's performance both between releases and compared with other similar products. Initially we shipped under the (poorly named) Cache Benchmark Framework.  Due to increase community interest and the fact that this reached a certain maturity (we used it for benchmarking 100+ nodes clusters) we decided to revamp it a little and also come with another name: Radargun.  You can read more about it http://radargun.sourceforge.net/[here]. A good start is the https://sourceforge.net/apps/trac/radargun/wiki/FiveMinutesTutorial[5MinutesTutorial]."
+msgstr "Radargunは、リリース間や他の類似製品と比較してInfinispanのパフォーマンスをベンチマークするために開発し、使用してきたツールです。当初は、（名前の悪い）Cache Benchmark Frameworkで出荷していました。コミュニティの関心の高まりと、これが一定の成熟度に達したため（100ノード以上のクラスタのベンチマークに使用しました）、少し改良して別の名前をつけることにしました。Radargunです。それについての詳細は link:http://radargun.sourceforge.net/[ここで] 読むことができます。良いスタートは link:https://sourceforge.net/apps/trac/radargun/wiki/FiveMinutesTutorial[5MinutesTutorial] です。"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-17-announcing-project-radargun.adoc:29

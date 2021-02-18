@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 'Hot Rod Remote Events #2: Filtering events'\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2014-08-20T08:18:00.001-07:00'\n"
 "author: galder\n"
 "tags: [ \" hotrod\", \"event\", \"remote events\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1409533794181251932\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/08/hot-rod-remote-events-"
-"2-filtering-events.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1409533794181251932\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/08/hot-rod-remote-events-2-filtering-events.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,149 +42,75 @@ msgstr ""
 "date: '2014-08-20T08:18:00.001-07:00'\n"
 "author: galder\n"
 "tags: [ \" hotrod\", \"event\", \"remote events\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1409533794181251932\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/08/hot-rod-remote-events-"
-"2-filtering-events.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1409533794181251932\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/08/hot-rod-remote-events-2-filtering-events.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:17
 #, fuzzy
-msgid ""
-"This blog post is the second in a series that looks at the forthcoming Hot "
-"Rod Remote Events functionality included in Infinispan 7.0. In the http://"
-"blog.infinispan.org/2014/08/hot-rod-remote-events-1-getting-started."
-"html[first blog post] we looked at how to get started receiving remote "
-"events from Hot Rod servers. This time we are going to focus on how to "
-"filter events directly in the server."
-msgstr ""
-"このブログ記事は、Infinispan 7.0に搭載される予定のHot Rodリモートイベント機能を見ていくシリーズの第2回目です。 link:http:"
-"//blog.infinispan.org/2014/08/hot-rod-remote-events-1-getting-started."
-"html[最初のブログ記事] では、Hot "
-"Rodサーバーからリモートイベントを受信する方法を見てきました。今回は、サーバー内で直接イベントをフィルタリングする方法に焦点を当てます。"
+msgid "This blog post is the second in a series that looks at the forthcoming Hot Rod Remote Events functionality included in Infinispan 7.0. In the http://blog.infinispan.org/2014/08/hot-rod-remote-events-1-getting-started.html[first blog post] we looked at how to get started receiving remote events from Hot Rod servers. This time we are going to focus on how to filter events directly in the server."
+msgstr "このブログ記事は、Infinispan 7.0に搭載される予定のHot Rodリモートイベント機能を見ていくシリーズの第2回目です。 link:http://blog.infinispan.org/2014/08/hot-rod-remote-events-1-getting-started.html[最初のブログ記事] では、Hot Rodサーバーからリモートイベントを受信する方法を見てきました。今回は、サーバー内で直接イベントをフィルタリングする方法に焦点を当てます。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:23
 #, fuzzy
-msgid ""
-"Sending events to remote clients has a cost which increases as the number of "
-"clients. The more clients register remote listeners, the more events the "
-"server has to send. This cost also goes up as the number of modifications "
-"are executed against the cache. The more cache modifications, the more "
-"events that need to be sent."
-msgstr ""
-"リモートクライアントにイベントを送信するには、クライアントの数が増えれば増えるほどコストがかかります。クライアントがリモートリスナーを登録すればするほど、サーバが送信しなければならないイベントが増えます。このコストは、キャッシュに対して実行される修正の数が多いほど高くなります。キャッシュの修正が多ければ多いほど、送信しなければならないイベントも多くなります。"
+msgid "Sending events to remote clients has a cost which increases as the number of clients. The more clients register remote listeners, the more events the server has to send. This cost also goes up as the number of modifications are executed against the cache. The more cache modifications, the more events that need to be sent."
+msgstr "リモートクライアントにイベントを送信するには、クライアントの数が増えれば増えるほどコストがかかります。クライアントがリモートリスナーを登録すればするほど、サーバが送信しなければならないイベントが増えます。このコストは、キャッシュに対して実行される修正の数が多いほど高くなります。キャッシュの修正が多ければ多いほど、送信しなければならないイベントも多くなります。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:28
 #, fuzzy
-msgid ""
-"A way to reduce this cost is by filtering the events to send server-side. If "
-"at the server level custom code decides that clients are not interested in a "
-"particular event, the event does not even need to leave the server, "
-"improving the overall performance of the system."
-msgstr ""
-"このコストを削減する方法は、サーバーサイドで送信するイベントをフィルタリングすることです。サーバーレベルでカスタムコードがクライアントが特定のイベントに興味がないと判断した場合、イベントはサーバーを離れる必要がなく、システムの全体的なパフォーマンスが向上します。"
+msgid "A way to reduce this cost is by filtering the events to send server-side. If at the server level custom code decides that clients are not interested in a particular event, the event does not even need to leave the server, improving the overall performance of the system."
+msgstr "このコストを削減する方法は、サーバーサイドで送信するイベントをフィルタリングすることです。サーバーレベルでカスタムコードがクライアントが特定のイベントに興味がないと判断した場合、イベントはサーバーを離れる必要がなく、システムの全体的なパフォーマンスが向上します。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:34
 #, fuzzy
-msgid ""
-"Remote event filters are created by implementing a org.infinispan."
-"notifications.cachelistener.filter.CacheEventFilterFactory class. Each "
-"factory must have a name associated to it via the org.infinispan."
-"notifications.cachelistener.filter.NamedFactory annotation."
-msgstr ""
-"リモートイベントフィルタは、org.infinispan.notifications.cachelistener.filter."
-"CacheEventFilterFactoryクラスを実装することで作成されます。各ファクトリーは、org.infinispan."
-"notifications.cachelistener.filter.NamedFactory "
-"アノテーションを介してそれに関連付けられた名前を持つ必要があります。"
+msgid "Remote event filters are created by implementing a org.infinispan.notifications.cachelistener.filter.CacheEventFilterFactory class. Each factory must have a name associated to it via the org.infinispan.notifications.cachelistener.filter.NamedFactory annotation."
+msgstr "リモートイベントフィルタは、org.infinispan.notifications.cachelistener.filter.CacheEventFilterFactoryクラスを実装することで作成されます。各ファクトリーは、org.infinispan.notifications.cachelistener.filter.NamedFactory アノテーションを介してそれに関連付けられた名前を持つ必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:40
 #, fuzzy
-msgid ""
-"When a listener is added, we can provide the name of a key value filter "
-"factory to use with this listener, and when the listener is added, the "
-"server will look up the factory and invoke getFilter method to get a org."
-"infinispan.notifications.cachelistener.filter.CacheEventFilterFactory class "
-"instance to filter events server side."
-msgstr ""
-"リスナーが追加されたら、このリスナーで使用するキーバリューフィルタのファクトリーの名前を指定し、リスナーが追加されたら、サーバー側でファクトリーを調べてgetFilterメソッドを呼び出して、サーバー側でイベントをフィルタリングするためのorg."
-"infinispan.notifications.cachelistener.filter."
-"CacheEventFilterFactoryクラスのインスタンスを取得します。"
+msgid "When a listener is added, we can provide the name of a key value filter factory to use with this listener, and when the listener is added, the server will look up the factory and invoke getFilter method to get a org.infinispan.notifications.cachelistener.filter.CacheEventFilterFactory class instance to filter events server side."
+msgstr "リスナーが追加されたら、このリスナーで使用するキーバリューフィルタのファクトリーの名前を指定し、リスナーが追加されたら、サーバー側でファクトリーを調べてgetFilterメソッドを呼び出して、サーバー側でイベントをフィルタリングするためのorg.infinispan.notifications.cachelistener.filter.CacheEventFilterFactoryクラスのインスタンスを取得します。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:44
 #, fuzzy
-msgid ""
-"Filtering can be done based on key or value information, and even based on "
-"cached entry metadata. Here's a sample implementation which will filter key "
-"\"2\" out of the events sent to clients:"
-msgstr ""
-"フィルタリングは、キーまたは値の情報に基づいて行うことができ、さらには、キャッシュされたエントリのメタデータに基づいて行うことができる。ここでは、クライアントに送信されたイベントからキー「2」をフィルタリングする実装例を示します。"
+msgid "Filtering can be done based on key or value information, and even based on cached entry metadata. Here's a sample implementation which will filter key \"2\" out of the events sent to clients:"
+msgstr "フィルタリングは、キーまたは値の情報に基づいて行うことができ、さらには、キャッシュされたエントリのメタデータに基づいて行うことができる。ここでは、クライアントに送信されたイベントからキー「2」をフィルタリングする実装例を示します。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:50
 #, fuzzy
-msgid ""
-"Plugging the server with this key value filter requires deploying this "
-"filter factory (and associated filter class) within a jar file including a "
-"service definition inside the META-INF/services/org.infinispan.notifications."
-"cachelistener.filter.CacheEventFilterFactory file:"
-msgstr ""
-"このキー値フィルタをサーバーに接続するには、META-INF/services/org.infinispan.notifications."
-"cachelistener.filter.CacheEventFilterFactory ファイル内のサービス定義を含む jar "
-"ファイル内に、このフィルタ ファクトリ (および関連するフィルタ クラス) を配置する必要があります。"
+msgid "Plugging the server with this key value filter requires deploying this filter factory (and associated filter class) within a jar file including a service definition inside the META-INF/services/org.infinispan.notifications.cachelistener.filter.CacheEventFilterFactory file:"
+msgstr "このキー値フィルタをサーバーに接続するには、META-INF/services/org.infinispan.notifications.cachelistener.filter.CacheEventFilterFactory ファイル内のサービス定義を含む jar ファイル内に、このフィルタ ファクトリ (および関連するフィルタ クラス) を配置する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:58
 #, fuzzy
-msgid ""
-"With the server plugged with the filter, the next step is adding a remote "
-"client listener that will use this filter. For this example, we'll extend "
-"the EventLogListener implementation provided in the http://blog.infinispan."
-"org/2014/08/hot-rod-remote-events-1-getting-started.html[first blog post] in "
-"the series and we override the @ClientListener annotation to indicate the "
-"filter factory to use with this listener:"
-msgstr ""
-"サーバにフィルタが接続されているので、次のステップはこのフィルタを使用するリモートクライアントリスナーを追加することです。この例では、このシリーズの最初の "
-"link:http://blog.infinispan.org/2014/08/hot-rod-remote-events-1-getting-"
-"started.html[ブログ記事] で提供された EventLogListener "
-"の実装を拡張し、このリスナーで使用するフィルタファクトリを示すために @ClientListener アノテーションをオーバーライドします。"
+msgid "With the server plugged with the filter, the next step is adding a remote client listener that will use this filter. For this example, we'll extend the EventLogListener implementation provided in the http://blog.infinispan.org/2014/08/hot-rod-remote-events-1-getting-started.html[first blog post] in the series and we override the @ClientListener annotation to indicate the filter factory to use with this listener:"
+msgstr "サーバにフィルタが接続されているので、次のステップはこのフィルタを使用するリモートクライアントリスナーを追加することです。この例では、このシリーズの最初の link:http://blog.infinispan.org/2014/08/hot-rod-remote-events-1-getting-started.html[ブログ記事] で提供された EventLogListener の実装を拡張し、このリスナーで使用するフィルタファクトリを示すために @ClientListener アノテーションをオーバーライドします。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:62
 #, fuzzy
-msgid ""
-"Next, we add the listener via the RemoteCache API and we execute some "
-"operations against the remote cache:"
+msgid "Next, we add the listener via the RemoteCache API and we execute some operations against the remote cache:"
 msgstr "次に、RemoteCache API を介してリスナーを追加し、リモートキャッシュに対していくつかの操作を実行します。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:70
 #, fuzzy
-msgid ""
-"If we checkout the system output we'll see that the client receives events "
-"for all keys except those that have been filtered:"
+msgid "If we checkout the system output we'll see that the client receives events for all keys except those that have been filtered:"
 msgstr "システムの出力をチェックアウトすると、フィルタリングされたキー以外のすべてのキーのイベントをクライアントが受信していることがわかります。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:82
 #, fuzzy
-msgid ""
-"Finally, with Hot Rod remote events we have tried to provide additional "
-"flexibility at the client side, which is why when adding client listeners, "
-"users can provide parameters to the filter factory so that filter instances "
-"with different behaviours can be generated out of a single filter factory "
-"based on client side information. To show this in action, we are going to "
-"enhance the filter factory above so that instead of filtering on a "
-"statically given key, it can filter dynamically based on the key provided "
-"when adding the listener. Here's the revised version:"
-msgstr ""
-"最後に、Hot "
-"Rodのリモートイベントでは、クライアント側でさらなる柔軟性を提供しようとしてきました。クライアントリスナーを追加する際に、ユーザーはフィルターファクトリーにパラメータを提供することができます。これを実際に動作させるために、上のフィルタファクトリを強化して、静的に与えられたキーに基づいてフィルタリングするのではなく、リスナーを追加するときに与えられたキーに基づいて動的にフィルタリングできるようにしてみましょう。これが修正版です。"
+msgid "Finally, with Hot Rod remote events we have tried to provide additional flexibility at the client side, which is why when adding client listeners, users can provide parameters to the filter factory so that filter instances with different behaviours can be generated out of a single filter factory based on client side information. To show this in action, we are going to enhance the filter factory above so that instead of filtering on a statically given key, it can filter dynamically based on the key provided when adding the listener. Here's the revised version:"
+msgstr "最後に、Hot Rodのリモートイベントでは、クライアント側でさらなる柔軟性を提供しようとしてきました。クライアントリスナーを追加する際に、ユーザーはフィルターファクトリーにパラメータを提供することができます。これを実際に動作させるために、上のフィルタファクトリを強化して、静的に与えられたキーに基づいてフィルタリングするのではなく、リスナーを追加するときに与えられたキーに基づいて動的にフィルタリングできるようにしてみましょう。これが修正版です。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:85
@@ -203,25 +127,14 @@ msgstr "そしてアウトプット。"
 #. type: Plain text
 #: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:95
 #, fuzzy
-msgid ""
-"To summarise, we've seen how Hot Rod remote events can be filtered providing "
-"key/value filter factories that can create instances that filter which "
-"events are sent to clients, and how these filters can act on client provided "
-"information."
-msgstr ""
-"要約すると、Hot Rod "
-"のリモートイベントがどのようにフィルタリングされるかを見てきましたが、これはクライアントに送信されるイベントをフィルタリングするインスタンスを作成することができるキー/"
-"値フィルタファクトリーを提供し、これらのフィルタがクライアントから提供された情報にどのように作用するかを見てきました。"
+msgid "To summarise, we've seen how Hot Rod remote events can be filtered providing key/value filter factories that can create instances that filter which events are sent to clients, and how these filters can act on client provided information."
+msgstr "要約すると、Hot Rod のリモートイベントがどのようにフィルタリングされるかを見てきましたが、これはクライアントに送信されるイベントをフィルタリングするインスタンスを作成することができるキー/値フィルタファクトリーを提供し、これらのフィルタがクライアントから提供された情報にどのように作用するかを見てきました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:99
 #, fuzzy
-msgid ""
-"In the next blog post, we'll look at how to customize remote events in order "
-"to reduce the amount of information sent to the clients, or on the contrary, "
-"provide even more information to our clients."
-msgstr ""
-"次回のブログ記事では、クライアントに送る情報量を減らすために、あるいは逆にクライアントにさらに多くの情報を提供するために、リモートイベントをカスタマイズする方法を見ていきたいと思います。"
+msgid "In the next blog post, we'll look at how to customize remote events in order to reduce the amount of information sent to the clients, or on the contrary, provide even more information to our clients."
+msgstr "次回のブログ記事では、クライアントに送る情報量を減らすために、あるいは逆にクライアントにさらに多くの情報を提供するために、リモートイベントをカスタマイズする方法を見ていきたいと思います。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-20-hot-rod-remote-events-2-filtering-events.adoc:101

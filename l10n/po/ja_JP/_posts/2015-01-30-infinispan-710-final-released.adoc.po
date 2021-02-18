@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-01-30-infinispan-710-final-released.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-30-infinispan-710-final-released.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 7.1.0 Final Released\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2015-01-30T15:07:00.001-08:00'\n"
 "author: infinispan\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8499804137575292203\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/01/infinispan-710-final-"
-"released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8499804137575292203\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/01/infinispan-710-final-released.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,10 +42,8 @@ msgstr ""
 "date: '2015-01-30T15:07:00.001-08:00'\n"
 "author: infinispan\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8499804137575292203\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/01/infinispan-710-final-"
-"released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8499804137575292203\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/01/infinispan-710-final-released.html\n"
 "---\n"
 
 #. type: Plain text
@@ -65,13 +61,8 @@ msgstr "本日、Infinispan 7.1.0 Finalのリリースを発表できること�
 #. type: Plain text
 #: upstream/_posts/2015-01-30-infinispan-710-final-released.adoc:19
 #, fuzzy
-msgid ""
-"This release contains a couple new features and a handful of enhancements to "
-"features introduced in 7.0.  You can find out more details at the http://"
-"infinispan.org/release-notes[Current Release Notes] page."
-msgstr ""
-"このリリースには、いくつかの新機能と 7.0 で導入された機能の強化が含まれています。 詳細については、 link:http://infinispan."
-"org/release-notes[現在のリリースノートのページを] 参照してください。"
+msgid "This release contains a couple new features and a handful of enhancements to features introduced in 7.0.  You can find out more details at the http://infinispan.org/release-notes[Current Release Notes] page."
+msgstr "このリリースには、いくつかの新機能と 7.0 で導入された機能の強化が含まれています。 詳細については、 link:http://infinispan.org/release-notes[現在のリリースノートのページを] 参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-30-infinispan-710-final-released.adoc:21
@@ -83,9 +74,7 @@ msgstr " "
 #. type: Plain text
 #: upstream/_posts/2015-01-30-infinispan-710-final-released.adoc:24
 #, fuzzy
-msgid ""
-"The highlighted features/enhancements are (in case if the release notes page "
-"isn't updating)"
+msgid "The highlighted features/enhancements are (in case if the release notes page isn't updating)"
 msgstr "ハイライトされた機能/拡張機能は以下の通りです(リリースノートのページが更新されていない場合に備えて)"
 
 #. type: Plain text
@@ -133,32 +122,14 @@ msgstr "新しいCLIのuber jar"
 #. type: Plain text
 #: upstream/_posts/2015-01-30-infinispan-710-final-released.adoc:39
 #, fuzzy
-msgid ""
-"Feel free to join us and shape the future releases on our http://www.jboss."
-"org/infinispan/forums[forums], our https://lists.jboss.org/mailman/listinfo/"
-"infinispan-dev[mailing lists] or our http://webchat.freenode.net/?channels="
-"%23infinispan[#infinispan] IRC channel."
-msgstr ""
-"link:http://www.jboss.org/infinispan/forums[フォーラム、] link:https://lists.jboss."
-"org/mailman/listinfo/infinispan-dev[メーリングリスト、#] infinispan IRC link:http://"
-"webchat.freenode.net/?channels=%23infinispan[チャンネル] "
-"で、気軽に参加して、将来のリリースを形にしてください。"
+msgid "Feel free to join us and shape the future releases on our http://www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or our http://webchat.freenode.net/?channels=%23infinispan[#infinispan] IRC channel."
+msgstr "link:http://www.jboss.org/infinispan/forums[フォーラム、] link:https://lists.jboss.org/mailman/listinfo/infinispan-dev[メーリングリスト、#] infinispan IRC link:http://webchat.freenode.net/?channels=%23infinispan[チャンネル] で、気軽に参加して、将来のリリースを形にしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-30-infinispan-710-final-released.adoc:46
 #, fuzzy
-msgid ""
-"For a complete list of features and bug fixes included in this release, "
-"please refer to the https://issues.jboss.org/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12325807[release notes].  There are quite a "
-"few other issues not mentioned here. Visit our http://infinispan.org/"
-"download/[downloads] section to find the latest release."
-msgstr ""
-"このリリースに含まれる機能とバグフィックスの完全なリストについては、 link:https://issues.jboss.org/secure/"
-"ReleaseNote.jspa?projectId=12310799&version=12325807[リリースノート] を参照してください link:"
-"https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
-"12325807[。] ここに記載されていない問題がかなりあります。最新のリリースは link:http://infinispan.org/"
-"download/[ダウンロード] セクションをご覧ください。"
+msgid "For a complete list of features and bug fixes included in this release, please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12325807[release notes].  There are quite a few other issues not mentioned here. Visit our http://infinispan.org/download/[downloads] section to find the latest release."
+msgstr "このリリースに含まれる機能とバグフィックスの完全なリストについては、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12325807[リリースノート] を参照してください link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12325807[。] ここに記載されていない問題がかなりあります。最新のリリースは link:http://infinispan.org/download/[ダウンロード] セクションをご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-30-infinispan-710-final-released.adoc:49

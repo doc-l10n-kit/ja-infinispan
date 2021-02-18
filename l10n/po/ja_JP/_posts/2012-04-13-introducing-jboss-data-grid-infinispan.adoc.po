@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-04-13-introducing-jboss-data-grid-infinispan.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-04-13-introducing-jboss-data-grid-infinispan.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 'Introducing the JBoss Data Grid: Infinispan, with support!'\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2012-04-13T09:31:00.002-07:00'\n"
 "author: msurtani\n"
 "tags: [ \" jdg\", \"announcement\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6336737285004999433\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/04/introducing-jboss-data-"
-"grid-infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6336737285004999433\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/04/introducing-jboss-data-grid-infinispan.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,68 +42,27 @@ msgstr ""
 "date: '2012-04-13T09:31:00.002-07:00'\n"
 "author: msurtani\n"
 "tags: [ \" jdg\", \"announcement\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6336737285004999433\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/04/introducing-jboss-data-"
-"grid-infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6336737285004999433\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/04/introducing-jboss-data-grid-infinispan.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-04-13-introducing-jboss-data-grid-infinispan.adoc:25
 #, fuzzy
-msgid ""
-"To many who are familiar with http://www.redhat.com/[Red Hat]'s model of "
-"unsupported upstream projects with supported, heavily tested and certified "
-"controlled-release \"products\", the announcement of the JBoss Data Grid "
-"(JDG) will come as no surprise.  JDG is to http://www.infinispan.org/"
-"[Infinispan] what http://www.redhat.com/products/enterprise-linux/[Red Hat "
-"Enterprise Linux] is to http://fedoraproject.org/[Fedora], or what http://"
-"www.redhat.com/products/jbossenterprisemiddleware/application-platform/"
-"[JBoss Enterprise Application Platform] (EAP) is to http://www.jboss.org/"
-"jbossas[JBoss AS].  Folks considering deploying Infinispan in a mission-"
-"critical production environment should consider JDG instead, not only to "
-"gain the benefits of a more thorough quality control and certification "
-"process but also to allow Red Hat to provide development and production "
-"support and consultancy."
-msgstr ""
-"link:http://www.redhat.com/[Red Hat] "
-"のサポートされていないアップストリームプロジェクトと、サポートされており、厳しくテストされ、認証されたコントロールリリースの「製品」というモデルに慣れ親しんでいる多くの人にとって、JBoss "
-"Data Grid (JDG) の発表は驚くことではないでしょう。 JDG は、 link:http://www.infinispan.org/"
-"[Infinispan に] とって Red link:http://www.redhat.com/products/enterprise-linux/"
-"[Hat Enterprise Linux と] link:http://fedoraproject.org/[Fedora、] JBoss link:"
-"http://www.jboss.org/jbossas[AS] にとって JBoss link:http://www.redhat.com/"
-"products/jbossenterprisemiddleware/application-platform/[Enterprise "
-"Application Platform (EAP] ) と同じような存在です。ミッションクリティカルな本番環境への Infinispan "
-"の導入を検討している方は、JDG を検討してみてはいかがでしょうか。"
+msgid "To many who are familiar with http://www.redhat.com/[Red Hat]'s model of unsupported upstream projects with supported, heavily tested and certified controlled-release \"products\", the announcement of the JBoss Data Grid (JDG) will come as no surprise.  JDG is to http://www.infinispan.org/[Infinispan] what http://www.redhat.com/products/enterprise-linux/[Red Hat Enterprise Linux] is to http://fedoraproject.org/[Fedora], or what http://www.redhat.com/products/jbossenterprisemiddleware/application-platform/[JBoss Enterprise Application Platform] (EAP) is to http://www.jboss.org/jbossas[JBoss AS].  Folks considering deploying Infinispan in a mission-critical production environment should consider JDG instead, not only to gain the benefits of a more thorough quality control and certification process but also to allow Red Hat to provide development and production support and consultancy."
+msgstr "link:http://www.redhat.com/[Red Hat] のサポートされていないアップストリームプロジェクトと、サポートされており、厳しくテストされ、認証されたコントロールリリースの「製品」というモデルに慣れ親しんでいる多くの人にとって、JBoss Data Grid (JDG) の発表は驚くことではないでしょう。 JDG は、 link:http://www.infinispan.org/[Infinispan に] とって Red link:http://www.redhat.com/products/enterprise-linux/[Hat Enterprise Linux と] link:http://fedoraproject.org/[Fedora、] JBoss link:http://www.jboss.org/jbossas[AS] にとって JBoss link:http://www.redhat.com/products/jbossenterprisemiddleware/application-platform/[Enterprise Application Platform (EAP] ) と同じような存在です。ミッションクリティカルな本番環境への Infinispan の導入を検討している方は、JDG を検討してみてはいかがでしょうか。"
 
 #. type: Plain text
 #: upstream/_posts/2012-04-13-introducing-jboss-data-grid-infinispan.adoc:28
 #, fuzzy
-msgid ""
-"http://blog.softwhere.org/wp-content/uploads/2012/04/Screen-Shot-2012-04-13-"
-"at-10.11.51-AM.png[image:http://blog.softwhere.org/wp-content/uploads/2012/"
-"04/Screen-Shot-2012-04-13-at-10.11.51-AM.png[image,width=640,height=129]]"
-msgstr ""
-"link:http://blog.softwhere.org/wp-content/uploads/2012/04/Screen-Shot-2012-"
-"04-13-at-10.11.51-AM.png[]"
+msgid "http://blog.softwhere.org/wp-content/uploads/2012/04/Screen-Shot-2012-04-13-at-10.11.51-AM.png[image:http://blog.softwhere.org/wp-content/uploads/2012/04/Screen-Shot-2012-04-13-at-10.11.51-AM.png[image,width=640,height=129]]"
+msgstr "link:http://blog.softwhere.org/wp-content/uploads/2012/04/Screen-Shot-2012-04-13-at-10.11.51-AM.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2012-04-13-introducing-jboss-data-grid-infinispan.adoc:38
 #, fuzzy
-msgid ""
-"JDG was announced at Red Hat Summit/JBoss World last year, and http://"
-"infinispan.blogspot.co.uk/2011/05/red-hat-announces-enterprise-data-grid."
-"html[I blogged about it] here, and now JDG has reached a stage where it is "
-"http://www.redhat.com/promo/dg6beta/[available as a public beta] with a GA "
-"release coming soon.  If you are interested in JDG, or supportable "
-"Infinispan, I encourage you to register your interest in the http://www."
-"redhat.com/promo/dg6beta/[JDG Beta]."
-msgstr ""
-"JDGは昨年のRed Hat Summit/JBoss Worldで発表され、こちらのブログでも link:http://infinispan."
-"blogspot.co.uk/2011/05/red-hat-announces-enterprise-data-grid.html[紹介しました] "
-"が、このたびJDGが link:http://www.redhat.com/promo/dg6beta/[パブリックベータとして利用できる] "
-"段階になり、間もなくGAリリースが予定されています。 JDGに興味のある方、サポート可能なInfinispanに興味のある方は、ぜひJDG link:"
-"http://www.redhat.com/promo/dg6beta/[ベータ] に興味を持って登録してみてください。"
+msgid "JDG was announced at Red Hat Summit/JBoss World last year, and http://infinispan.blogspot.co.uk/2011/05/red-hat-announces-enterprise-data-grid.html[I blogged about it] here, and now JDG has reached a stage where it is http://www.redhat.com/promo/dg6beta/[available as a public beta] with a GA release coming soon.  If you are interested in JDG, or supportable Infinispan, I encourage you to register your interest in the http://www.redhat.com/promo/dg6beta/[JDG Beta]."
+msgstr "JDGは昨年のRed Hat Summit/JBoss Worldで発表され、こちらのブログでも link:http://infinispan.blogspot.co.uk/2011/05/red-hat-announces-enterprise-data-grid.html[紹介しました] が、このたびJDGが link:http://www.redhat.com/promo/dg6beta/[パブリックベータとして利用できる] 段階になり、間もなくGAリリースが予定されています。 JDGに興味のある方、サポート可能なInfinispanに興味のある方は、ぜひJDG link:http://www.redhat.com/promo/dg6beta/[ベータ] に興味を持って登録してみてください。"
 
 #. type: Plain text
 #: upstream/_posts/2012-04-13-introducing-jboss-data-grid-infinispan.adoc:40

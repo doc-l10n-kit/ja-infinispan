@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-03-12-no-time-to-rest-410alpha1-is-here.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-03-12-no-time-to-rest-410alpha1-is-here.adoc:12
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: No time to rest, 4.1.0.Alpha1 is here!\n"
@@ -34,10 +34,8 @@ msgid ""
 "tags: [ \"release\",\n"
 "\"memcached\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2969518133167288910\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/03/no-time-to-rest-"
-"410alpha1-is-here.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2969518133167288910\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/03/no-time-to-rest-410alpha1-is-here.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -48,97 +46,39 @@ msgstr ""
 "tags: [ \"release\",\n"
 "\"memcached\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2969518133167288910\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/03/no-time-to-rest-"
-"410alpha1-is-here.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2969518133167288910\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/03/no-time-to-rest-410alpha1-is-here.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-03-12-no-time-to-rest-410alpha1-is-here.adoc:22
 #, fuzzy
-msgid ""
-"\"Release quick, release often\", that's one of our mottos at Infinispan.  "
-"Barely a couple of weeks after http://infinispan.blogspot.com/2010/02/"
-"infinispan-400final-has-landed.html[releasing Infinispan 4.0.0.Final], here "
-"comes http://www.jboss.org/infinispan/downloads[4.1.0.Alpha1] with new "
-"goodies. The main star for this release is the new server module "
-"implementing http://github.com/trondn/memcached/blob/master/doc/protocol."
-"txt[Memcached's text protocol]."
-msgstr ""
-"\"Release quick, release often\"、これはInfinispanのモットーの一つです。Infin link:http://"
-"infinispan.blogspot.com/2010/02/infinispan-400final-has-landed.html[ispan 4."
-"0.0.Final] をリリースしてから数週間で、 link:http://www.jboss.org/infinispan/downloads[4.1."
-"0.Alpha1 が] リリースされました。このリリースの主役は、 link:http://github.com/trondn/memcached/"
-"blob/master/doc/protocol.txt[Memcached のテキストプロトコルを] 実装した新しいサーバモジュールです。"
+msgid "\"Release quick, release often\", that's one of our mottos at Infinispan.  Barely a couple of weeks after http://infinispan.blogspot.com/2010/02/infinispan-400final-has-landed.html[releasing Infinispan 4.0.0.Final], here comes http://www.jboss.org/infinispan/downloads[4.1.0.Alpha1] with new goodies. The main star for this release is the new server module implementing http://github.com/trondn/memcached/blob/master/doc/protocol.txt[Memcached's text protocol]."
+msgstr "\"Release quick, release often\"、これはInfinispanのモットーの一つです。Infin link:http://infinispan.blogspot.com/2010/02/infinispan-400final-has-landed.html[ispan 4.0.0.Final] をリリースしてから数週間で、 link:http://www.jboss.org/infinispan/downloads[4.1.0.Alpha1 が] リリースされました。このリリースの主役は、 link:http://github.com/trondn/memcached/blob/master/doc/protocol.txt[Memcached のテキストプロトコルを] 実装した新しいサーバモジュールです。"
 
 #. type: Plain text
 #: upstream/_posts/2010-03-12-no-time-to-rest-410alpha1-is-here.adoc:32
 #, fuzzy
-msgid ""
-"This new module enables you to use Infinispan as a replacement for any of "
-"your http://memcached.org/[Memcached servers] with the added bonus that "
-"Infinispan's Memcached server module allows you to start several instances "
-"forming a cluster so that they http://community.jboss.org/docs/DOC-"
-"14853#replicated[replicate], http://community.jboss.org/docs/DOC-"
-"14853#replicated[invalidate] or http://community.jboss.org/docs/DOC-"
-"14853#distribution[distribute] data between these instances, a feature not "
-"present in http://memcached.org/[default Memcached implementation]."
-msgstr ""
-"この新しいモジュールは、Infinispanの link:http://memcached.org/[Memcached] "
-"サーバモジュールでクラスタを形成している複数のインスタンスを起動して、これらのインスタンス間でデータを link:http://community."
-"jboss.org/docs/DOC-14853#replicated[複製] 、 link:http://community.jboss.org/"
-"docs/DOC-14853#replicated[無効化] 、 link:http://community.jboss.org/docs/DOC-"
-"14853#distribution[分散する] ことができるという付加的なボーナスと、 link:http://memcached.org/"
-"[デフォルトのMemcachedの実装] にはない機能を備えています。"
+msgid "This new module enables you to use Infinispan as a replacement for any of your http://memcached.org/[Memcached servers] with the added bonus that Infinispan's Memcached server module allows you to start several instances forming a cluster so that they http://community.jboss.org/docs/DOC-14853#replicated[replicate], http://community.jboss.org/docs/DOC-14853#replicated[invalidate] or http://community.jboss.org/docs/DOC-14853#distribution[distribute] data between these instances, a feature not present in http://memcached.org/[default Memcached implementation]."
+msgstr "この新しいモジュールは、Infinispanの link:http://memcached.org/[Memcached] サーバモジュールでクラスタを形成している複数のインスタンスを起動して、これらのインスタンス間でデータを link:http://community.jboss.org/docs/DOC-14853#replicated[複製] 、 link:http://community.jboss.org/docs/DOC-14853#replicated[無効化] 、 link:http://community.jboss.org/docs/DOC-14853#distribution[分散する] ことができるという付加的なボーナスと、 link:http://memcached.org/[デフォルトのMemcachedの実装] にはない機能を備えています。"
 
 #. type: Plain text
 #: upstream/_posts/2010-03-12-no-time-to-rest-410alpha1-is-here.adoc:38
 #, fuzzy
-msgid ""
-"On top of the clustering capabilities Infinispan memcached server module "
-"gets in-built http://community.jboss.org/docs/DOC-14873[eviction], http://"
-"community.jboss.org/docs/DOC-14893[cache store support], http://community."
-"jboss.org/docs/DOC-14865[JMX/Jopr monitoring] etc...  for free."
-msgstr ""
-"クラスタリング機能に加えて、Infinispan memcached サーバモジュールには、内蔵の link:http://community."
-"jboss.org/docs/DOC-14873[イビクション] 、 link:http://community.jboss.org/docs/DOC-"
-"14893[キャッシュストアのサポート] 、 link:http://community.jboss.org/docs/DOC-14865[JMX/"
-"Jopr の監視] などが無料で提供されています。"
+msgid "On top of the clustering capabilities Infinispan memcached server module gets in-built http://community.jboss.org/docs/DOC-14873[eviction], http://community.jboss.org/docs/DOC-14893[cache store support], http://community.jboss.org/docs/DOC-14865[JMX/Jopr monitoring] etc...  for free."
+msgstr "クラスタリング機能に加えて、Infinispan memcached サーバモジュールには、内蔵の link:http://community.jboss.org/docs/DOC-14873[イビクション] 、 link:http://community.jboss.org/docs/DOC-14893[キャッシュストアのサポート] 、 link:http://community.jboss.org/docs/DOC-14865[JMX/Jopr の監視] などが無料で提供されています。"
 
 #. type: Plain text
 #: upstream/_posts/2010-03-12-no-time-to-rest-410alpha1-is-here.adoc:49
 #, fuzzy
-msgid ""
-"To get started, first http://www.jboss.org/infinispan/downloads."
-"html[download Infinispan 4.1.0.Alpha1]. Then, go to http://community.jboss."
-"org/docs/DOC-14644[\"Using Infinispan Memcached Server\" wiki] and follow "
-"the instructions there. If you're interested in finding out how to set up "
-"multiple Infinispan memcached servers in a cluster, head to http://community."
-"jboss.org/docs/DOC-14773[\"Talking To Infinispan Memcached Servers From Non-"
-"Java Clients\" wiki] where you'll also find out how to access our Memcached "
-"implementation from non-Java clients."
-msgstr ""
-"まず、 link:http://www.jboss.org/infinispan/downloads.html[Infinispan 4.1.0."
-"Alpha1をダウンロードし] ます。その後、 link:http://community.jboss.org/docs/DOC-"
-"14644[\"Using Infinispan Memcached Server\" wiki] "
-"にアクセスし、そこにある指示に従ってください。クラスタ内で複数の Infinispan memcached "
-"サーバをセットアップする方法を知りたい場合は、 link:http://community.jboss.org/docs/DOC-"
-"14773[\"Talking To Infinispan Memcached Servers From Non-Java Clients\" "
-"wiki] を参照してください。"
+msgid "To get started, first http://www.jboss.org/infinispan/downloads.html[download Infinispan 4.1.0.Alpha1]. Then, go to http://community.jboss.org/docs/DOC-14644[\"Using Infinispan Memcached Server\" wiki] and follow the instructions there. If you're interested in finding out how to set up multiple Infinispan memcached servers in a cluster, head to http://community.jboss.org/docs/DOC-14773[\"Talking To Infinispan Memcached Servers From Non-Java Clients\" wiki] where you'll also find out how to access our Memcached implementation from non-Java clients."
+msgstr "まず、 link:http://www.jboss.org/infinispan/downloads.html[Infinispan 4.1.0.Alpha1をダウンロードし] ます。その後、 link:http://community.jboss.org/docs/DOC-14644[\"Using Infinispan Memcached Server\" wiki] にアクセスし、そこにある指示に従ってください。クラスタ内で複数の Infinispan memcached サーバをセットアップする方法を知りたい場合は、 link:http://community.jboss.org/docs/DOC-14773[\"Talking To Infinispan Memcached Servers From Non-Java Clients\" wiki] を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2010-03-12-no-time-to-rest-410alpha1-is-here.adoc:54
 #, fuzzy
-msgid ""
-"Finally, you can find the API docs for 4.1.0.Alpha 1 http://infinispan."
-"sourceforge.net/documentation/4.1/apidocs/[here] and note that this is an "
-"unstable release that is meant to gather feedback on the Memcached server "
-"module as early as possible."
-msgstr ""
-"最後に、4.1.0.Alpha 1 の API ドキュメントは link:http://infinispan.sourceforge.net/"
-"documentation/4.1/apidocs/[こちらに] あります。これは、Memcached "
-"サーバモジュールに対するフィードバックをできるだけ早く集めるための不安定なリリースであることに注意してください。"
+msgid "Finally, you can find the API docs for 4.1.0.Alpha 1 http://infinispan.sourceforge.net/documentation/4.1/apidocs/[here] and note that this is an unstable release that is meant to gather feedback on the Memcached server module as early as possible."
+msgstr "最後に、4.1.0.Alpha 1 の API ドキュメントは link:http://infinispan.sourceforge.net/documentation/4.1/apidocs/[こちらに] あります。これは、Memcached サーバモジュールに対するフィードバックをできるだけ早く集めるための不安定なリリースであることに注意してください。"
 
 #. type: Plain text
 #: upstream/_posts/2010-03-12-no-time-to-rest-410alpha1-is-here.adoc:56

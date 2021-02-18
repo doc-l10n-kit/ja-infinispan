@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,27 +18,24 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-10-27-infinispan-510beta3-is-out-with-atomic.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-27-infinispan-510beta3-is-out-with-atomic.adoc:12
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
-"title: Infinispan 5.1.0.BETA3 is out with Atomic Map and Hot Rod "
-"improvements\n"
+"title: Infinispan 5.1.0.BETA3 is out with Atomic Map and Hot Rod improvements\n"
 "permalink: /blog/:year/:month/:day/infinispan-510beta3-is-out-with-atomic\n"
 "date: '2011-10-27T07:18:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \"atomic maps\",\n"
 "\"hotrod\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2421527612611464807\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/10/infinispan-510beta3-is-"
-"out-with-atomic.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2421527612611464807\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/10/infinispan-510beta3-is-out-with-atomic.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -49,25 +46,15 @@ msgstr ""
 "tags: [ \"atomic maps\",\n"
 "\"hotrod\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2421527612611464807\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/10/infinispan-510beta3-is-"
-"out-with-atomic.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2421527612611464807\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/10/infinispan-510beta3-is-out-with-atomic.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-27-infinispan-510beta3-is-out-with-atomic.adoc:18
 #, fuzzy
-msgid ""
-"I'm very proud to announce yet another beta release in the 5.1 '_Brahma_' "
-"series. This time is the turn of Infinispan 5.1.0.BETA3 which apart from "
-"containing https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12310799&version=12318377[many small fixes], it comes with two major "
-"improvements:"
-msgstr ""
-"5.1 _'Brahma_ ' シリーズのベータリリースを発表できることを大変誇りに思います。今回はInfinispan 5.1.0."
-"BETA3の番ですが、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12310799&version=12318377[多くの小さな修正を] 含んでいますが、2つの大きな改善が含まれています。"
+msgid "I'm very proud to announce yet another beta release in the 5.1 '_Brahma_' series. This time is the turn of Infinispan 5.1.0.BETA3 which apart from containing https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12318377[many small fixes], it comes with two major improvements:"
+msgstr "5.1 _'Brahma_ ' シリーズのベータリリースを発表できることを大変誇りに思います。今回はInfinispan 5.1.0.BETA3の番ですが、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12318377[多くの小さな修正を] 含んでいますが、2つの大きな改善が含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-27-infinispan-510beta3-is-out-with-atomic.adoc:20
@@ -78,62 +65,26 @@ msgstr "*精密な原子地図*"
 #. type: Plain text
 #: upstream/_posts/2011-10-27-infinispan-510beta3-is-out-with-atomic.adoc:27
 #, fuzzy
-msgid ""
-"http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/atomic/AtomicMap."
-"html[Atomic Maps] are special constructs that users can use to bundle data "
-"into the value side of a key/value pair. What's special about them is that "
-"when the map changes, only the changes or deltas of that map are transfered, "
-"which makes Atomic Maps very efficient from a replication perspective when "
-"individual elements are modified."
-msgstr ""
-"link:http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/atomic/"
-"AtomicMap.html[アトミックマップ] は、ユーザーがデータをキー/"
-"値のペアの値側にバンドルするために使用できる特別な構造体です。アトミックマップが特別なのは、マップが変更されたときに、そのマップの変更またはデルタのみが転送されることです。"
+msgid "http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/atomic/AtomicMap.html[Atomic Maps] are special constructs that users can use to bundle data into the value side of a key/value pair. What's special about them is that when the map changes, only the changes or deltas of that map are transfered, which makes Atomic Maps very efficient from a replication perspective when individual elements are modified."
+msgstr "link:http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/atomic/AtomicMap.html[アトミックマップ] は、ユーザーがデータをキー/値のペアの値側にバンドルするために使用できる特別な構造体です。アトミックマップが特別なのは、マップが変更されたときに、そのマップの変更またはデルタのみが転送されることです。"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-27-infinispan-510beta3-is-out-with-atomic.adoc:33
 #, fuzzy
-msgid ""
-"Up until Infinispan 5.1.0.BETA2, the other interesting characteristic of "
-"these Atomic Maps was the fact that Atomic Map locking and isolation "
-"happened at the the level of the entire Atomic Map. So, if a single key/"
-"value pair in the Atomic Map was modified, the entire map was locked."
-msgstr ""
-"Infinispan 5.1.0.BETA2 "
-"までは、これらのアトミックマップのもう一つの興味深い特徴は、アトミックマップのロックと分離がアトミックマップ全体のレベルで行われるという事実でした。つまり、アトミックマップ内の単一のキー/"
-"値のペアが変更された場合、マップ全体がロックされていました。"
+msgid "Up until Infinispan 5.1.0.BETA2, the other interesting characteristic of these Atomic Maps was the fact that Atomic Map locking and isolation happened at the the level of the entire Atomic Map. So, if a single key/value pair in the Atomic Map was modified, the entire map was locked."
+msgstr "Infinispan 5.1.0.BETA2 までは、これらのアトミックマップのもう一つの興味深い特徴は、アトミックマップのロックと分離がアトミックマップ全体のレベルで行われるという事実でした。つまり、アトミックマップ内の単一のキー/値のペアが変更された場合、マップ全体がロックされていました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-27-infinispan-510beta3-is-out-with-atomic.adoc:40
 #, fuzzy
-msgid ""
-"Starting with Infinispan 5.1.0.BETA3, thanks to Vladimir Blagojevic, Atomic "
-"Maps supporting fine-grained locking are available http://docs.jboss.org/"
-"infinispan/5.1/apidocs/org/infinispan/atomic/AtomicMapLookup."
-"html#getFineGrainedAtomicMap(org.infinispan.Cache,%20MK)[as well]. What this "
-"means is that an Atomic Map's key/value pairs can be modified "
-"in parallel thanks to the ability to lock individual map entries as opposed "
-"to the entire map."
-msgstr ""
-"Infinispan 5.1.0.0.BETA3から、Vladimir "
-"Blagojevic氏のおかげで、きめ細かなロックをサポートするアトミックマップも利用できるようになりました link:http://docs."
-"jboss.org/infinispan/5.1/apidocs/org/infinispan/atomic/AtomicMapLookup."
-"html#getFineGrainedAtomicMap(org.infinispan.Cache,%20MK)[。] "
-"これが意味するのは、マップ全体ではなく個々のマップエントリをロックする機能のおかげで、アトミックマップのキー/"
-"値のペアを並行して変更できるということです。"
+msgid "Starting with Infinispan 5.1.0.BETA3, thanks to Vladimir Blagojevic, Atomic Maps supporting fine-grained locking are available http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/atomic/AtomicMapLookup.html#getFineGrainedAtomicMap(org.infinispan.Cache,%20MK)[as well]. What this means is that an Atomic Map's key/value pairs can be modified in parallel thanks to the ability to lock individual map entries as opposed to the entire map."
+msgstr "Infinispan 5.1.0.0.BETA3から、Vladimir Blagojevic氏のおかげで、きめ細かなロックをサポートするアトミックマップも利用できるようになりました link:http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/atomic/AtomicMapLookup.html#getFineGrainedAtomicMap(org.infinispan.Cache,%20MK)[。] これが意味するのは、マップ全体ではなく個々のマップエントリをロックする機能のおかげで、アトミックマップのキー/値のペアを並行して変更できるということです。"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-27-infinispan-510beta3-is-out-with-atomic.adoc:46
 #, fuzzy
-msgid ""
-"This will be particularly handy for heavy Atomic Map users such as http://"
-"www.jboss.org/as7[JBoss Application Server 7] which uses Atomic Maps for "
-"maintaining HTTP sessions, and http://www.hibernate.org/subprojects/ogm."
-"html[Hibernate OGM] which decomposes entities into Atomic Maps."
-msgstr ""
-"HTTPセッションの維持にAtomic Mapsを使用する link:http://www.jboss.org/as7[JBoss "
-"Application Server 7] や、エンティティをAtomic Mapsに分解する link:http://www.hibernate."
-"org/subprojects/ogm.html[Hibernate OGM] など、Atomic Mapを多用するユーザーには特に便利だろう。"
+msgid "This will be particularly handy for heavy Atomic Map users such as http://www.jboss.org/as7[JBoss Application Server 7] which uses Atomic Maps for maintaining HTTP sessions, and http://www.hibernate.org/subprojects/ogm.html[Hibernate OGM] which decomposes entities into Atomic Maps."
+msgstr "HTTPセッションの維持にAtomic Mapsを使用する link:http://www.jboss.org/as7[JBoss Application Server 7] や、エンティティをAtomic Mapsに分解する link:http://www.hibernate.org/subprojects/ogm.html[Hibernate OGM] など、Atomic Mapを多用するユーザーには特に便利だろう。"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-27-infinispan-510beta3-is-out-with-atomic.adoc:48
@@ -144,81 +95,38 @@ msgstr "*ホットロッドサーバーのトポロジーの改善*"
 #. type: Plain text
 #: upstream/_posts/2011-10-27-infinispan-510beta3-is-out-with-atomic.adoc:54
 #, fuzzy
-msgid ""
-"When we originally designed https://docs.jboss.org/author/x/OoJa[Hot Rod "
-"protocol version 1.0], we decided that whenever a distributed cache wanted "
-"to send information about the topology of the backend servers to the "
-"clients, we'd send the hash ids of each of these nodes. At the time, this "
-"seemed like a good idea, until virtual nodes were implemented..."
-msgstr ""
-"私たちが link:https://docs.jboss.org/author/x/OoJa[Hot Rodプロトコルバージョン1.0を] "
-"設計したとき、分散キャッシュがバックエンドサーバのトポロジーに関する情報をクライアントに送信したいときはいつでも、これらの各ノードのハッシュIDを送信することにしました。当時は、仮想ノードが実装されるまでは、これは良いアイデアだと思いましたが."
-".."
+msgid "When we originally designed https://docs.jboss.org/author/x/OoJa[Hot Rod protocol version 1.0], we decided that whenever a distributed cache wanted to send information about the topology of the backend servers to the clients, we'd send the hash ids of each of these nodes. At the time, this seemed like a good idea, until virtual nodes were implemented..."
+msgstr "私たちが link:https://docs.jboss.org/author/x/OoJa[Hot Rodプロトコルバージョン1.0を] 設計したとき、分散キャッシュがバックエンドサーバのトポロジーに関する情報をクライアントに送信したいときはいつでも、これらの各ノードのハッシュIDを送信することにしました。当時は、仮想ノードが実装されるまでは、これは良いアイデアだと思いましたが..."
 
 #. type: Plain text
 #: upstream/_posts/2011-10-27-infinispan-510beta3-is-out-with-atomic.adoc:63
 #, fuzzy
-msgid ""
-"With virtual nodes, each physical Hot Rod server can potentially represent "
-"tens, hundreds or even thousands of different virtual nodes.  If we stuck "
-"with the original protocol, that would mean that we'd have to send each "
-"virtual node's hash id back to the client. So, for a cluster of 8 nodes, and "
-"1000 virtual nodes, that'd be at least 80kb of hash ids being transfered "
-"back to the client, on top of tons of redundant information about a node's "
-"host and port, which is very inefficient."
-msgstr ""
-"仮想ノードでは、各物理的なHot "
-"Rodサーバーは潜在的に何十、何百、何千もの異なる仮想ノードを表現することができます。もしオリジナルのプロトコルにこだわるならば、各仮想ノードのハッシュIDをクライアントに送り返さなければならないことになります。だから、8ノードのクラスタ、および1000仮想ノードのために、それは非常に非効率的であるノードのホストとポートに関する冗長な情報のトンの上に、クライアントに戻って転送されているハッシュIDの少なくとも80キロバイトになるでしょう。"
+msgid "With virtual nodes, each physical Hot Rod server can potentially represent tens, hundreds or even thousands of different virtual nodes.  If we stuck with the original protocol, that would mean that we'd have to send each virtual node's hash id back to the client. So, for a cluster of 8 nodes, and 1000 virtual nodes, that'd be at least 80kb of hash ids being transfered back to the client, on top of tons of redundant information about a node's host and port, which is very inefficient."
+msgstr "仮想ノードでは、各物理的なHot Rodサーバーは潜在的に何十、何百、何千もの異なる仮想ノードを表現することができます。もしオリジナルのプロトコルにこだわるならば、各仮想ノードのハッシュIDをクライアントに送り返さなければならないことになります。だから、8ノードのクラスタ、および1000仮想ノードのために、それは非常に非効率的であるノードのホストとポートに関する冗長な情報のトンの上に、クライアントに戻って転送されているハッシュIDの少なくとも80キロバイトになるでしょう。"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-27-infinispan-510beta3-is-out-with-atomic.adoc:71
 #, fuzzy
-msgid ""
-"So, after having some discussions, we decided to evolve the https://docs."
-"jboss.org/author/x/eICQ[Hot Rod protocol to version 1.1] in order to address "
-"this issue. The end result is that now it's the responsibility of the Hot "
-"Rod client to generate the hash ids of each of the physical nodes. We do "
-"that by sticking to a general formula to generate a Hot Rod server's hash id "
-"which both the Hot Rod server and clients can implement."
-msgstr ""
-"そこで、いくつかの議論をした後、この問題に対処するために link:https://docs.jboss.org/author/x/eICQ[Hot "
-"Rodプロトコルをバージョン1.1に] 進化させることにしました。最終的な結果として、各物理ノードのハッシュIDを生成するのはHot "
-"Rodクライアントの責任になりました。私たちは、Hot Rodサーバとクライアントの両方が実装できる、Hot "
-"RodサーバのハッシュIDを生成するための一般的な公式に固執することで、これを実現しています。"
+msgid "So, after having some discussions, we decided to evolve the https://docs.jboss.org/author/x/eICQ[Hot Rod protocol to version 1.1] in order to address this issue. The end result is that now it's the responsibility of the Hot Rod client to generate the hash ids of each of the physical nodes. We do that by sticking to a general formula to generate a Hot Rod server's hash id which both the Hot Rod server and clients can implement."
+msgstr "そこで、いくつかの議論をした後、この問題に対処するために link:https://docs.jboss.org/author/x/eICQ[Hot Rodプロトコルをバージョン1.1に] 進化させることにしました。最終的な結果として、各物理ノードのハッシュIDを生成するのはHot Rodクライアントの責任になりました。私たちは、Hot Rodサーバとクライアントの両方が実装できる、Hot RodサーバのハッシュIDを生成するための一般的な公式に固執することで、これを実現しています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-27-infinispan-510beta3-is-out-with-atomic.adoc:75
 #, fuzzy
-msgid ""
-"This improvement has also lead to the significant decrease in memory "
-"consumption of the Hot Rod server because it does not need to cache those "
-"hash ids anymore."
+msgid "This improvement has also lead to the significant decrease in memory consumption of the Hot Rod server because it does not need to cache those hash ids anymore."
 msgstr "この改善により、Hot Rodサーバのメモリ消費量が大幅に減少しました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-27-infinispan-510beta3-is-out-with-atomic.adoc:81
 #, fuzzy
-msgid ""
-"So, if you are using Infinispan Hot Rod servers and in particular you'are "
-"configuring virtual nodes, you definitely should be upgrading your Hot Rod "
-"server and client libraries. From a client code perspective, no changes are "
-"necessary because starting with 5.1.0.BETA3, Hot Rod clients talk to servers "
-"using this latest protocol."
-msgstr ""
-"Infinispan Hot Rodサーバを使用していて、特に仮想ノードを設定している場合、Hot "
-"Rodサーバとクライアントのライブラリをアップグレードする必要があります。クライアントコードの観点からは、5.1.0.BETA3からHot "
-"Rodクライアントはこの最新のプロトコルを使用してサーバーと通信するので、変更は必要ありません。"
+msgid "So, if you are using Infinispan Hot Rod servers and in particular you'are configuring virtual nodes, you definitely should be upgrading your Hot Rod server and client libraries. From a client code perspective, no changes are necessary because starting with 5.1.0.BETA3, Hot Rod clients talk to servers using this latest protocol."
+msgstr "Infinispan Hot Rodサーバを使用していて、特に仮想ノードを設定している場合、Hot Rodサーバとクライアントのライブラリをアップグレードする必要があります。クライアントコードの観点からは、5.1.0.BETA3からHot Rodクライアントはこの最新のプロトコルを使用してサーバーと通信するので、変更は必要ありません。"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-27-infinispan-510beta3-is-out-with-atomic.adoc:87
 #, fuzzy
-msgid ""
-"Finally, remember to use http://community.jboss.org/en/infinispan?view="
-"discussions[user forums] to report back, grab the release http://www.jboss."
-"org/infinispan/downloads[here], enjoy and keep the feedback coming!!"
-msgstr ""
-"最後に、 link:http://community.jboss.org/en/infinispan?view="
-"discussions[ユーザーフォーラムを] 使用して報告することを忘れないでください。"
+msgid "Finally, remember to use http://community.jboss.org/en/infinispan?view=discussions[user forums] to report back, grab the release http://www.jboss.org/infinispan/downloads[here], enjoy and keep the feedback coming!!"
+msgstr "最後に、 link:http://community.jboss.org/en/infinispan?view=discussions[ユーザーフォーラムを] 使用して報告することを忘れないでください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-27-infinispan-510beta3-is-out-with-atomic.adoc:89

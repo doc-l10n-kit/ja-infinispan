@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,23 +18,21 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-10-21-infinispan-7.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-21-infinispan-7.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 7.0.0.CR2 released!\n"
 "permalink: /blog/:year/:month/:day/infinispan-7\n"
 "date: '2014-10-21T04:39:00.000-07:00'\n"
 "author: gustavonalle\n"
-"tags: [ \" spring\",\"partition handling\", \"osgi\", \"release candidate\" "
-"]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1085545134076261593\n"
+"tags: [ \" spring\",\"partition handling\", \"osgi\", \"release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1085545134076261593\n"
 "blogger_orig_url: https://blog.infinispan.org/2014/10/infinispan-7.html\n"
 "---\n"
 msgstr ""
@@ -43,10 +41,8 @@ msgstr ""
 "permalink: /blog/:year/:month/:day/infinispan-7\n"
 "date: '2014-10-21T04:39:00.000-07:00'\n"
 "author: gustavonalle\n"
-"tags: [ \" spring\",\"partition handling\", \"osgi\", \"release candidate\" "
-"]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1085545134076261593\n"
+"tags: [ \" spring\",\"partition handling\", \"osgi\", \"release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1085545134076261593\n"
 "blogger_orig_url: https://blog.infinispan.org/2014/10/infinispan-7.html\n"
 "---\n"
 
@@ -59,13 +55,8 @@ msgstr "コミュニティの皆様、Infinispan 7の第2のリリース候補�
 #. type: Plain text
 #: upstream/_posts/2014-10-21-infinispan-7.adoc:23
 #, fuzzy
-msgid ""
-"As we approach final release, the main themes of this CR were bugfixes and "
-"enhancements, many related to http://infinispan.org/docs/7.0.x/user_guide/"
-"user_guide.html#_partition_handling[Partition Handling]"
-msgstr ""
-"最終リリースに向けて、このCRの主なテーマはバグ修正と機能強化で、その多くは link:http://infinispan.org/docs/7.0.x/"
-"user_guide/user_guide.html#_partition_handling[パーティション処理] に関連しています。"
+msgid "As we approach final release, the main themes of this CR were bugfixes and enhancements, many related to http://infinispan.org/docs/7.0.x/user_guide/user_guide.html#_partition_handling[Partition Handling]"
+msgstr "最終リリースに向けて、このCRの主なテーマはバグ修正と機能強化で、その多くは link:http://infinispan.org/docs/7.0.x/user_guide/user_guide.html#_partition_handling[パーティション処理] に関連しています。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-21-infinispan-7.adoc:25
@@ -76,19 +67,14 @@ msgstr "も含まれています。"
 #. type: Plain text
 #: upstream/_posts/2014-10-21-infinispan-7.adoc:29
 #, fuzzy
-msgid ""
-"Spring Cache Provider support for Spring 4.1 (thanks Sebastian Łaskawiec)"
+msgid "Spring Cache Provider support for Spring 4.1 (thanks Sebastian Łaskawiec)"
 msgstr "Spring 4.1でのSpring Cache Providerのサポート (sebastian Łaskawiecさんに感謝します)"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-21-infinispan-7.adoc:31
 #, fuzzy
-msgid ""
-"Infinispan caches can now be exposed as OSGI managed services (thanks https:/"
-"/github.com/bibryam[Bilgin Ibryam] for the contribution!)"
-msgstr ""
-"InfinispanのキャッシュがOSGIマネージドサービスとして公開されるようになりました（貢献してくれた link:https://github."
-"com/bibryam[Bilgin Ibryam] に感謝します！）。"
+msgid "Infinispan caches can now be exposed as OSGI managed services (thanks https://github.com/bibryam[Bilgin Ibryam] for the contribution!)"
+msgstr "InfinispanのキャッシュがOSGIマネージドサービスとして公開されるようになりました（貢献してくれた link:https://github.com/bibryam[Bilgin Ibryam] に感謝します！）。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-21-infinispan-7.adoc:32
@@ -99,32 +85,17 @@ msgstr "パーティション処理でのレプリケートキャッシュのサ
 #. type: Plain text
 #: upstream/_posts/2014-10-21-infinispan-7.adoc:34
 #, fuzzy
-msgid ""
-"Cache.size( ) method now returns count across entire cluster instead of "
-"local"
+msgid "Cache.size( ) method now returns count across entire cluster instead of local"
 msgstr "Cache.size( ) メソッドは、ローカルではなくクラスタ全体のカウントを返すようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-21-infinispan-7.adoc:39
 #, fuzzy
-msgid ""
-"For the complete list of changes, please consult the https://issues.jboss."
-"org/secure/ReleaseNote.jspa?projectId=12310799&version=12324511[release "
-"notes]"
-msgstr ""
-"変更点の完全なリストについては、 link:https://issues.jboss.org/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12324511[リリースノートを] 参照してください。"
+msgid "For the complete list of changes, please consult the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12324511[release notes]"
+msgstr "変更点の完全なリストについては、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12324511[リリースノートを] 参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-21-infinispan-7.adoc:46
 #, fuzzy
-msgid ""
-"If you have any questions, ask it on our http://www.jboss.org/infinispan/"
-"forums[forums], https://lists.jboss.org/mailman/listinfo/infinispan-"
-"dev[mailing lists] or directly on irc://irc.freenode.org/infinispan[IRC.] "
-"irc://irc.freenode.org/infinispan[ ]irc://irc.freenode.org/infinispan[ ]"
-msgstr ""
-"質問があれば、 link:http://www.jboss.org/infinispan/forums[フォーラム] や link:https://"
-"lists.jboss.org/mailman/listinfo/infinispan-dev[メーリングリスト] 、 link:irc://irc."
-"freenode.org/infinispan[IRC] で直接質問してください。 link:irc://irc.freenode.org/"
-"infinispan[] irc://irc.freenode.org/infinispan[]"
+msgid "If you have any questions, ask it on our http://www.jboss.org/infinispan/forums[forums], https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or directly on irc://irc.freenode.org/infinispan[IRC.] irc://irc.freenode.org/infinispan[ ]irc://irc.freenode.org/infinispan[ ]"
+msgstr "質問があれば、 link:http://www.jboss.org/infinispan/forums[フォーラム] や link:https://lists.jboss.org/mailman/listinfo/infinispan-dev[メーリングリスト] 、 link:irc://irc.freenode.org/infinispan[IRC] で直接質問してください。 link:irc://irc.freenode.org/infinispan[] irc://irc.freenode.org/infinispan[]"

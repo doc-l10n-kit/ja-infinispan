@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-04-04-infinispan-813final-is-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-04-04-infinispan-813final-is-out.adoc:12
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 8.1.3.Final is out!\n"
@@ -34,10 +34,8 @@ msgid ""
 "tags: [\n"
 "\"release\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1454507398265576570\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/04/infinispan-813final-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1454507398265576570\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/04/infinispan-813final-is-out.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -48,10 +46,8 @@ msgstr ""
 "tags: [\n"
 "\"release\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1454507398265576570\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/04/infinispan-813final-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1454507398265576570\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/04/infinispan-813final-is-out.html\n"
 "---\n"
 
 #. type: Plain text
@@ -63,12 +59,8 @@ msgstr "地域の皆様へ"
 #. type: Plain text
 #: upstream/_posts/2016-04-04-infinispan-813final-is-out.adoc:18
 #, fuzzy
-msgid ""
-"We are proud to announce the release of Infinispan 8.1.3.Final. http://"
-"infinispan.org/download[Download it here]** **and try it out!"
-msgstr ""
-"Infinispan 8.1.3.Finalのリリースをお知らせします。http://infinispan.org/download http://"
-"infinispan.org/download ぜひお *試しください* 。"
+msgid "We are proud to announce the release of Infinispan 8.1.3.Final. http://infinispan.org/download[Download it here]** **and try it out!"
+msgstr "Infinispan 8.1.3.Finalのリリースをお知らせします。http://infinispan.org/download http://infinispan.org/download ぜひお *試しください* 。"
 
 #. type: Plain text
 #: upstream/_posts/2016-04-04-infinispan-813final-is-out.adoc:20
@@ -103,8 +95,7 @@ msgstr "テストスイートの安定性の向上"
 #. type: Plain text
 #: upstream/_posts/2016-04-04-infinispan-813final-is-out.adoc:28
 #, fuzzy
-msgid ""
-"Fixed registering clustered listener (previously it cased SuspectException)"
+msgid "Fixed registering clustered listener (previously it cased SuspectException)"
 msgstr "クラスタ化されたリスナーの登録を修正（以前はSuspectExceptionが発生していた"
 
 #. type: Plain text
@@ -128,18 +119,8 @@ msgstr "XStream を 1.4.9 にアップグレードしました。"
 #. type: Plain text
 #: upstream/_posts/2016-04-04-infinispan-813final-is-out.adoc:44
 #, fuzzy
-msgid ""
-"Check out the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12310799&version=12329829[fixed issues], http://infinispan.org/download/"
-"[download the releases]** **and tell us all about it on the https://"
-"developer.jboss.org/en/infinispan/content[forum], on our https://issues."
-"jboss.org/projects/ISPN[issue tracker ]or on IRC on the #infinispan channel "
-"on http://webchat.freenode.net/?channels=%23infinispan[Freenode]."
-msgstr ""
-"修正された link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12310799&version=12329829[問題を] チェックしてください。http://infinispan.org/download/ "
-"http://infinispan.org/download/ フォーラム、問題追跡、IRCでFreenodeの link:https://issues."
-"jboss.org/projects/ISPN[#infinispan] チャンネルをご覧ください。"
+msgid "Check out the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12329829[fixed issues], http://infinispan.org/download/[download the releases]** **and tell us all about it on the https://developer.jboss.org/en/infinispan/content[forum], on our https://issues.jboss.org/projects/ISPN[issue tracker ]or on IRC on the #infinispan channel on http://webchat.freenode.net/?channels=%23infinispan[Freenode]."
+msgstr "修正された link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12329829[問題を] チェックしてください。http://infinispan.org/download/ http://infinispan.org/download/ フォーラム、問題追跡、IRCでFreenodeの link:https://issues.jboss.org/projects/ISPN[#infinispan] チャンネルをご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2016-04-04-infinispan-813final-is-out.adoc:46

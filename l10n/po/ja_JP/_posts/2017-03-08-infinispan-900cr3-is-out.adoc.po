@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-03-08-infinispan-900cr3-is-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-08-infinispan-900cr3-is-out.adoc:12
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.0.0.CR3 is out!\n"
@@ -34,10 +34,8 @@ msgid ""
 "tags: [\n"
 "\"release candidate\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1464267671140472481\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/03/infinispan-900cr3-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1464267671140472481\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/03/infinispan-900cr3-is-out.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -48,10 +46,8 @@ msgstr ""
 "tags: [\n"
 "\"release candidate\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1464267671140472481\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/03/infinispan-900cr3-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1464267671140472481\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/03/infinispan-900cr3-is-out.html\n"
 "---\n"
 
 #. type: Plain text
@@ -63,9 +59,7 @@ msgstr "ユーザーの皆様、Infinispan 9 の最後のリリース候補が�
 #. type: Plain text
 #: upstream/_posts/2017-03-08-infinispan-900cr3-is-out.adoc:17
 #, fuzzy
-msgid ""
-"This milestone contains mostly bug fixes and documentation improvements "
-"ahead of 9.0.0.Final. Noteworthy changes:"
+msgid "This milestone contains mostly bug fixes and documentation improvements ahead of 9.0.0.Final. Noteworthy changes:"
 msgstr "このマイルストーンには、9.0.0.Finalに向けたバグフィックスとドキュメントの改善が主に含まれています。注目すべき変更点。"
 
 #. type: Plain text
@@ -89,9 +83,7 @@ msgstr "ライブラリの更新。JGroups 4.0.1、Protostream 4.0.0.0.Alpha9、
 #. type: Plain text
 #: upstream/_posts/2017-03-08-infinispan-900cr3-is-out.adoc:23
 #, fuzzy
-msgid ""
-"The deadlock detection hasn't keep up with the improvements of our locking "
-"algorithm and has been removed."
+msgid "The deadlock detection hasn't keep up with the improvements of our locking algorithm and has been removed."
 msgstr "デッドロック検出がロックアルゴリズムの改良に追いついておらず、削除されました。"
 
 #. type: Plain text
@@ -103,17 +95,8 @@ msgstr "Restエンドポイントでの認証のサポート"
 #. type: Plain text
 #: upstream/_posts/2017-03-08-infinispan-900cr3-is-out.adoc:30
 #, fuzzy
-msgid ""
-"For the full list of changes check the https://issues.jboss.org/secure/"
-"ReleaseNote.jspa?projectId=12310799&version=12334065[release notes], http://"
-"infinispan.org/download/[download] the 9.0.0.CR3 release and http://stg-ispn."
-"rhcloud.com/community/[let us know] if you have any questions or suggestions."
-""
-msgstr ""
-"変更点の全リストについては、 link:https://issues.jboss.org/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12334065[リリースノートを] 確認し、9.0.0.0.CR3リリースを link:"
-"http://infinispan.org/download/[ダウンロードして] 、質問や提案があれば link:http://stg-ispn."
-"rhcloud.com/community/[私たちに知らせてください] 。"
+msgid "For the full list of changes check the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12334065[release notes], http://infinispan.org/download/[download] the 9.0.0.CR3 release and http://stg-ispn.rhcloud.com/community/[let us know] if you have any questions or suggestions."
+msgstr "変更点の全リストについては、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12334065[リリースノートを] 確認し、9.0.0.0.CR3リリースを link:http://infinispan.org/download/[ダウンロードして] 、質問や提案があれば link:http://stg-ispn.rhcloud.com/community/[私たちに知らせてください] 。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-08-infinispan-900cr3-is-out.adoc:33

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-07-27-infinispan-12.0.0.Dev01.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-27-infinispan-12.0.0.Dev01.adoc:8
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 12.0.0.Dev01\n"
@@ -44,7 +44,7 @@ msgstr ""
 
 #. type: Title =
 #: upstream/_posts/2020-07-27-infinispan-12.0.0.Dev01.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Infinispan 12.0.0.Dev01"
 msgstr "Infinispan 12.0.0.0.Dev01"
 
@@ -57,36 +57,17 @@ msgstr "インフィニスパンのコミュニティへ"
 #. type: Plain text
 #: upstream/_posts/2020-07-27-infinispan-12.0.0.Dev01.adoc:15
 #, fuzzy
-msgid ""
-"The first of our development releases of Infinispan 12 is here and it "
-"features our upgrade to https://hibernate.org/search/[Hibernate Search 6] "
-"which finally allows us to upgrade to https://lucene.apache.org/[Lucene 8.x]."
-" We've had to change a few things in our query implementation to accommodate "
-"the latest and greatest and to make the feature simpler to use. As expected, "
-"being a development release, there are some rough edges and we'd really love "
-"*YOUR* help in making sure that we get everything right for the final "
-"release later this year."
-msgstr ""
-"Infinispan 12 の開発リリースの第一弾はこちらで、 link:https://hibernate.org/search/[Hibernate "
-"Search 6] へのアップグレードを行い、ついに link:https://lucene.apache.org/[Lucene 8.x] "
-"へのアップグレードが可能になりました。予想通り、開発リリースであるため、いくつかの荒削りな部分がありますが、 "
-"今年後半の最終リリースに向けて、すべてを正しい状態にできるようにするために、 *皆様の* ご協力をお待ちしています。"
+msgid "The first of our development releases of Infinispan 12 is here and it features our upgrade to https://hibernate.org/search/[Hibernate Search 6] which finally allows us to upgrade to https://lucene.apache.org/[Lucene 8.x]. We've had to change a few things in our query implementation to accommodate the latest and greatest and to make the feature simpler to use. As expected, being a development release, there are some rough edges and we'd really love *YOUR* help in making sure that we get everything right for the final release later this year."
+msgstr "Infinispan 12 の開発リリースの第一弾はこちらで、 link:https://hibernate.org/search/[Hibernate Search 6] へのアップグレードを行い、ついに link:https://lucene.apache.org/[Lucene 8.x] へのアップグレードが可能になりました。予想通り、開発リリースであるため、いくつかの荒削りな部分がありますが、 今年後半の最終リリースに向けて、すべてを正しい状態にできるようにするために、 *皆様の* ご協力をお待ちしています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-27-infinispan-12.0.0.Dev01.adoc:17
 #, fuzzy
-msgid ""
-"You can look at the https://issues.redhat.com/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12346555[release notes] to see what has "
-"changed."
-msgstr ""
-"何が変わったのかは、 link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId="
-"12310799&version=12346555[リリースノート] を見ればわかります。"
+msgid "You can look at the https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12346555[release notes] to see what has changed."
+msgstr "何が変わったのかは、 link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12346555[リリースノート] を見ればわかります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-27-infinispan-12.0.0.Dev01.adoc:18
 #, fuzzy
-msgid ""
-"We're hard at work on new features, improvements and fixes, so watch this "
-"space for more announcements!"
+msgid "We're hard at work on new features, improvements and fixes, so watch this space for more announcements!"
 msgstr "私たちは新機能、改善、修正に取り組んでいます。"

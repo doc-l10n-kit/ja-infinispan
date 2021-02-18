@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-08-12-infinispan-cloud-cachestore-801final.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-12-infinispan-cloud-cachestore-801final.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan Cloud Cachestore 8.0.1.Final\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2016-08-12T08:55:00.000-07:00'\n"
 "author: ttarrant\n"
 "tags: [ \"release\", \"jclouds\", \"cloud storage\", \"cache store\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6487342970175840498\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/08/infinispan-cloud-"
-"cachestore-801final.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6487342970175840498\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/08/infinispan-cloud-cachestore-801final.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,40 +42,21 @@ msgstr ""
 "date: '2016-08-12T08:55:00.000-07:00'\n"
 "author: ttarrant\n"
 "tags: [ \"release\", \"jclouds\", \"cloud storage\", \"cache store\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6487342970175840498\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/08/infinispan-cloud-"
-"cachestore-801final.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6487342970175840498\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/08/infinispan-cloud-cachestore-801final.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-12-infinispan-cloud-cachestore-801final.adoc:21
 #, fuzzy
-msgid ""
-"After bringing the MongoDB up-to-date a few days ago, this time it's the "
-"turn of the Cloud Cache Store, our https://jclouds.apache.org/[JClouds]-"
-"based store which allows you to use any of the JClouds BlobStore providers "
-"to persist your cache data. This includes AWS S3, Google Cloud Storage, "
-"Azure Blob Storage and Rackspace Cloud Files.  In a perfect world this would "
-"have been 8.0.0.Final, but Sod's law rules, so I give you 8.0.1.Final "
-"instead :) So head on over to our http://infinispan.org/cache-store-"
-"implementations/[store download page] and try it out."
-msgstr ""
-"数日前にMongoDBを最新の状態にした後、今度は link:https://jclouds.apache.org/[JClouds] "
-"ベースのストアであるCloud Cache Storeの番です。これには、AWS S3、Google Cloud Storage、Azure Blob "
-"Storage、Rackspace Cloud Filesが含まれます。完璧な世界では8.0.0.0."
-"Finalになっていたでしょうが、ソッドの法則に従っているので、代わりに8.0.1.Finalを提供します。) link:http://"
-"infinispan.org/cache-store-implementations/[ストアのダウンロードページ] にアクセスして試してみてください。"
+msgid "After bringing the MongoDB up-to-date a few days ago, this time it's the turn of the Cloud Cache Store, our https://jclouds.apache.org/[JClouds]-based store which allows you to use any of the JClouds BlobStore providers to persist your cache data. This includes AWS S3, Google Cloud Storage, Azure Blob Storage and Rackspace Cloud Files.  In a perfect world this would have been 8.0.0.Final, but Sod's law rules, so I give you 8.0.1.Final instead :) So head on over to our http://infinispan.org/cache-store-implementations/[store download page] and try it out."
+msgstr "数日前にMongoDBを最新の状態にした後、今度は link:https://jclouds.apache.org/[JClouds] ベースのストアであるCloud Cache Storeの番です。これには、AWS S3、Google Cloud Storage、Azure Blob Storage、Rackspace Cloud Filesが含まれます。完璧な世界では8.0.0.0.Finalになっていたでしょうが、ソッドの法則に従っているので、代わりに8.0.1.Finalを提供します。) link:http://infinispan.org/cache-store-implementations/[ストアのダウンロードページ] にアクセスして試してみてください。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-12-infinispan-cloud-cachestore-801final.adoc:26
 #, fuzzy
-msgid ""
-"The actual configuration of the cachestore depends on the provider, so refer "
-"to the JClouds documentation. The following is a programmatic example using "
-"the \"transient\" provider:  "
-msgstr ""
-"実際のキャッシュストアの設定はプロバイダに依存しますので、JCloudsのドキュメントを参照してください。以下は、\"transient\"プロバイダを使用したプログラム例です。"
+msgid "The actual configuration of the cachestore depends on the provider, so refer to the JClouds documentation. The following is a programmatic example using the \"transient\" provider:  "
+msgstr "実際のキャッシュストアの設定はプロバイダに依存しますので、JCloudsのドキュメントを参照してください。以下は、\"transient\"プロバイダを使用したプログラム例です。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-12-infinispan-cloud-cachestore-801final.adoc:29

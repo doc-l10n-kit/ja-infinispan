@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,169 +18,74 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:9
 #, fuzzy
-msgid ""
-"layout: blog title: 'A presentation from hell: when nothing else could "
-"possibly go wrong' permalink: /blog/:year/:month/:day/presentation-from-hell-"
-"when-nothing date: '2012-03-06T23:25:00.000-08:00' author: msurtani tags: [ "
-"\"presentations\", \"event\","
-msgstr ""
-"layout: blog title: 'A presentation from hell: when nothing else could could "
-"possibly go wrong' permalink./blog/:year/:month/:day/presentation-from-hell-"
-"when-nothing date: '2012-03-06T23:25:00.000-08:00' author: msurtani tags.[ "
-"\"プレゼンテーション\", \"イベント\""
+msgid "layout: blog title: 'A presentation from hell: when nothing else could possibly go wrong' permalink: /blog/:year/:month/:day/presentation-from-hell-when-nothing date: '2012-03-06T23:25:00.000-08:00' author: msurtani tags: [ \"presentations\", \"event\","
+msgstr "layout: blog title: 'A presentation from hell: when nothing else could could possibly go wrong' permalink./blog/:year/:month/:day/presentation-from-hell-when-nothing date: '2012-03-06T23:25:00.000-08:00' author: msurtani tags.[ \"プレゼンテーション\", \"イベント\""
 
 #. type: Plain text
 #: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:14
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "\"user groups\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6463540072396856579\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/03/presentation-from-hell-"
-"when-nothing.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6463540072396856579\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/03/presentation-from-hell-when-nothing.html\n"
 "---\n"
-msgstr ""
-"\"ユーザーグループ\", ] blogger_id: tag:blogger.com,1999:blog-5717179571414330874."
-"post-6463540072396856579 blogger_orig_url: https://blog.infinispan.org/2012/"
-"03/presentation-from-hell-when-nothing.html ---."
+msgstr "\"ユーザーグループ\", ] blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6463540072396856579 blogger_orig_url: https://blog.infinispan.org/2012/03/presentation-from-hell-when-nothing.html ---."
 
 #. type: Plain text
 #: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:27
 #, fuzzy
-msgid ""
-"As a seasoned public speaker, I don't easily get flustered by minor glitches "
-"that inevitably occur when presenting or doing live code demos.   I expected "
-"a recent http://java.sun.com/community/usergroups/[JUG] and http://www.jboss."
-"org/usergroups[JBUG] tour of the American mid-west to be no different. I was "
-"prepared to speak about http://jcp.org/en/jsr/detail?id=107[JSR 107] and "
-"http://jcp.org/en/jsr/detail?id=347[JSR 347], http://www.infinispan.org/"
-"[Infinispan], and a wee bit on http://ogm.hibernate.org/[Hibernate OGM] and "
-"NoSQL. All subjects I'm pretty familiar with, totalling to about an hour of "
-"yacking. Followed by a live coding demo to walk people through Infinispan's "
-"core API.  Simple."
-msgstr ""
-"人前で話すことに慣れている私は、発表やライブコードデモを行う際に発生する些細な不具合に簡単に動揺することはありません。 "
-"最近アメリカ中西部で行われたJUG link:http://java.sun.com/community/usergroups/[と] JBUGの "
-"link:http://www.jboss.org/usergroups[ツアー] でも、そのようなことはないと予想していました。私は link:"
-"http://jcp.org/en/jsr/detail?id=107[JSR 107] と link:http://jcp.org/en/jsr/"
-"detail?id=347[JSR 347] 、 link:http://www.infinispan.org/[Infinispan] 、そして "
-"link:http://ogm.hibernate.org/[Hibernate OGM] と NoSQL "
-"について少し話す準備をしていました。どれも私がよく知っているテーマで、合計すると約1時間の話になります。その後、InfinispanのコアAPIを介して人々を導くためのライブコーディングデモが行われました。単純な話だ。"
+msgid "As a seasoned public speaker, I don't easily get flustered by minor glitches that inevitably occur when presenting or doing live code demos.   I expected a recent http://java.sun.com/community/usergroups/[JUG] and http://www.jboss.org/usergroups[JBUG] tour of the American mid-west to be no different. I was prepared to speak about http://jcp.org/en/jsr/detail?id=107[JSR 107] and http://jcp.org/en/jsr/detail?id=347[JSR 347], http://www.infinispan.org/[Infinispan], and a wee bit on http://ogm.hibernate.org/[Hibernate OGM] and NoSQL. All subjects I'm pretty familiar with, totalling to about an hour of yacking. Followed by a live coding demo to walk people through Infinispan's core API.  Simple."
+msgstr "人前で話すことに慣れている私は、発表やライブコードデモを行う際に発生する些細な不具合に簡単に動揺することはありません。 最近アメリカ中西部で行われたJUG link:http://java.sun.com/community/usergroups/[と] JBUGの link:http://www.jboss.org/usergroups[ツアー] でも、そのようなことはないと予想していました。私は link:http://jcp.org/en/jsr/detail?id=107[JSR 107] と link:http://jcp.org/en/jsr/detail?id=347[JSR 347] 、 link:http://www.infinispan.org/[Infinispan] 、そして link:http://ogm.hibernate.org/[Hibernate OGM] と NoSQL について少し話す準備をしていました。どれも私がよく知っているテーマで、合計すると約1時間の話になります。その後、InfinispanのコアAPIを介して人々を導くためのライブコーディングデモが行われました。単純な話だ。"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:47
 #, fuzzy
-msgid ""
-"http://www.mobilewhack.com/wp-content/pics/2010/01/15-280x210.jpg[image:http:"
-"//www.mobilewhack.com/wp-content/pics/2010/01/15-280x210.jpg[image]]So where "
-"does one start when talking about what went embarrassingly wrong at the http:"
-"//www.wjug.org/madjug/[Madison Java User Group] on the 29th of Feb? Well, I "
-"suppose mistaking my http://store.apple.com/us/product/MC552ZM/B[iPad VGA "
-"connector] for the http://store.apple.com/us/product/MB572Z/A[mini "
-"displayport to VGA connector] for my MacBook when leaving London was a start."
-" Mix in the fact that this realisation only happened in a room full of "
-"people, with a few minutes to go before the start of the talk. Nice. Unable "
-"to connect my laptop to the projector, I had no choice but to present off my "
-"iPad instead. Which was fine, except that ten minutes into my talk, my iPad "
-"spuriously decided to shut down. Epic fail. But who needs slides, right? "
-" Not _me_, for sure - I'm way too cool for that.  So I continued on, unfazed."
-" Now try explaining http://www.cs.berkeley.edu/~brewer/[Eric Brewer]'s http:/"
-"/en.wikipedia.org/wiki/CAP_theorem[CAP theorem] without any visual aids. "
-"Fun, right? I tried to use the whiteboard. No pens! The organiser rushed out "
-"to find some. And none of them worked! Even old-school technology was "
-"failing on me that day."
-msgstr ""
-"link:http://www.mobilewhack.com/wp-content/pics/2010/01/15-280x210.jpg[] "
-"では、2月29日の link:http://www.wjug.org/madjug/[Madison Java User Group] "
-"で恥ずかしいほど間違っていたことについて話すとき、どこから話を始めればいいのでしょうか？ロンドンを出発するときに、私の link:http://"
-"store.apple.com/us/product/MC552ZM/B[iPadのVGAコネクタを] MacBookの link:http://"
-"store.apple.com/us/product/MB572Z/A[VGAコネクタへのミニディスプレイポート] "
-"と間違えたことが始まりだと思います。それに加えて、この気付きが起こったのは満員の部屋の中で、講演開始までに数分しかなかったという事実。いいですね。ノートパソコンをプロジェクターに接続することができなかったので、代わりにiPadを使って発表するしかありませんでした。それは良かったのですが、講演開始10分前にiPadが突然シャットダウンしてしまったことを除けば。大失敗でした。でも、スライドは必要ないでしょう？ "
-"私はクールすぎるので、 _平然と_ 話を続けました。では、 link:http://www.cs.berkeley.edu/~brewer/"
-"[エリック・ブリュワー] の link:http://en.wikipedia.org/wiki/CAP_theorem[CAP] "
-"定理を視覚的な補助具なしで説明してみましょう。楽しいでしょ？ホワイトボードを使ってみました。ペンがない！主催者は急いで探してきましたどれもダメだった！この日は昔ながらの技術でさえ失敗していた"
+msgid "http://www.mobilewhack.com/wp-content/pics/2010/01/15-280x210.jpg[image:http://www.mobilewhack.com/wp-content/pics/2010/01/15-280x210.jpg[image]]So where does one start when talking about what went embarrassingly wrong at the http://www.wjug.org/madjug/[Madison Java User Group] on the 29th of Feb? Well, I suppose mistaking my http://store.apple.com/us/product/MC552ZM/B[iPad VGA connector] for the http://store.apple.com/us/product/MB572Z/A[mini displayport to VGA connector] for my MacBook when leaving London was a start. Mix in the fact that this realisation only happened in a room full of people, with a few minutes to go before the start of the talk. Nice. Unable to connect my laptop to the projector, I had no choice but to present off my iPad instead. Which was fine, except that ten minutes into my talk, my iPad spuriously decided to shut down. Epic fail. But who needs slides, right?  Not _me_, for sure - I'm way too cool for that.  So I continued on, unfazed. Now try explaining http://www.cs.berkeley.edu/~brewer/[Eric Brewer]'s http://en.wikipedia.org/wiki/CAP_theorem[CAP theorem] without any visual aids. Fun, right? I tried to use the whiteboard. No pens! The organiser rushed out to find some. And none of them worked! Even old-school technology was failing on me that day."
+msgstr "link:http://www.mobilewhack.com/wp-content/pics/2010/01/15-280x210.jpg[] では、2月29日の link:http://www.wjug.org/madjug/[Madison Java User Group] で恥ずかしいほど間違っていたことについて話すとき、どこから話を始めればいいのでしょうか？ロンドンを出発するときに、私の link:http://store.apple.com/us/product/MC552ZM/B[iPadのVGAコネクタを] MacBookの link:http://store.apple.com/us/product/MB572Z/A[VGAコネクタへのミニディスプレイポート] と間違えたことが始まりだと思います。それに加えて、この気付きが起こったのは満員の部屋の中で、講演開始までに数分しかなかったという事実。いいですね。ノートパソコンをプロジェクターに接続することができなかったので、代わりにiPadを使って発表するしかありませんでした。それは良かったのですが、講演開始10分前にiPadが突然シャットダウンしてしまったことを除けば。大失敗でした。でも、スライドは必要ないでしょう？ 私はクールすぎるので、 _平然と_ 話を続けました。では、 link:http://www.cs.berkeley.edu/~brewer/[エリック・ブリュワー] の link:http://en.wikipedia.org/wiki/CAP_theorem[CAP] 定理を視覚的な補助具なしで説明してみましょう。楽しいでしょ？ホワイトボードを使ってみました。ペンがない！主催者は急いで探してきましたどれもダメだった！この日は昔ながらの技術でさえ失敗していた"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:58
 #, fuzzy
-msgid ""
-"Then come demo time, I was able to borrow a Linux laptop from Red Hatter Jey "
-"Paulraj who was in the audience, and transfer my demo to it. Given that the "
-"laptop didn't have the tools needed to actually run the demo, the entire "
-"demo consisted of me just walking people through an http://docs.jboss.org/"
-"infinispan/5.1/configdocs/[Infinispan configuration XML file]. For half an "
-"hour. Suspenseful and thrilling! Well, peppered with anecdotes about the "
-"life of an open source developer and several tangents on the architecture of "
-"various parts of Infinispan, the time did actually fly by (and the audience "
-"did seem at least somewhat engaged!)"
-msgstr ""
-"デモの時間になると、会場にいたレッドハッターのJey "
-"Paulraj氏からLinuxのラップトップを借りて、デモを転送することができました。そのラップトップには実際にデモを実行するのに必要なツールがなかったため、デモ全体の構成は私が "
-"link:http://docs.jboss.org/infinispan/5.1/configdocs/[Infinispanの設定XMLファイル] "
-"を使って人々に説明するだけでした。30分ほど。サスペンスフルでスリリングでした。オープンソース開発者の人生についての逸話や、Infinispanの様々な部分のアーキテクチャについての余談を交えながら、実際には時間はあっという間に過ぎていきました（聴衆は少なくとも多少は興味を持っていたようです）。"
+msgid "Then come demo time, I was able to borrow a Linux laptop from Red Hatter Jey Paulraj who was in the audience, and transfer my demo to it. Given that the laptop didn't have the tools needed to actually run the demo, the entire demo consisted of me just walking people through an http://docs.jboss.org/infinispan/5.1/configdocs/[Infinispan configuration XML file]. For half an hour. Suspenseful and thrilling! Well, peppered with anecdotes about the life of an open source developer and several tangents on the architecture of various parts of Infinispan, the time did actually fly by (and the audience did seem at least somewhat engaged!)"
+msgstr "デモの時間になると、会場にいたレッドハッターのJey Paulraj氏からLinuxのラップトップを借りて、デモを転送することができました。そのラップトップには実際にデモを実行するのに必要なツールがなかったため、デモ全体の構成は私が link:http://docs.jboss.org/infinispan/5.1/configdocs/[Infinispanの設定XMLファイル] を使って人々に説明するだけでした。30分ほど。サスペンスフルでスリリングでした。オープンソース開発者の人生についての逸話や、Infinispanの様々な部分のアーキテクチャについての余談を交えながら、実際には時間はあっという間に過ぎていきました（聴衆は少なくとも多少は興味を持っていたようです）。"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:66
 #, fuzzy
-msgid ""
-"http://osoyoosdutyfree.com/wp-content/uploads/2011/05/Patron_osoyoos."
-"jpg[image:http://osoyoosdutyfree.com/wp-content/uploads/2011/05/"
-"Patron_osoyoos.jpg[image,width=200,height=165]]The clincher, though - I had "
-"a PDF containing URLs where people could download the demo, and learn more "
-"about the JSRs and Infinispan.  Bringing this PDF up on Jey's laptop, still "
-"projecting for the benefit of the room, resulted in his PDF viewer crashing. "
-"That's when I threw in the towel - any more information from me would "
-"require tequila, preferably delivered intravenously!"
-msgstr ""
-"link:http://osoyoosdutyfree.com/wp-content/uploads/2011/05/Patron_osoyoos."
-"jpg[] "
-"私は、人々がデモをダウンロードし、JSRとInfinispanについての詳細を学ぶことができるURLを含むPDFを持っていました。このPDFをジェイのラップトップにアップロードすると、部屋のためにまだ投影していたので、彼のPDFビューアはクラッシュしてしまいました。これ以上の情報を得るには、テキーラが必要で、できれば静脈注射が必要なのです。"
+msgid "http://osoyoosdutyfree.com/wp-content/uploads/2011/05/Patron_osoyoos.jpg[image:http://osoyoosdutyfree.com/wp-content/uploads/2011/05/Patron_osoyoos.jpg[image,width=200,height=165]]The clincher, though - I had a PDF containing URLs where people could download the demo, and learn more about the JSRs and Infinispan.  Bringing this PDF up on Jey's laptop, still projecting for the benefit of the room, resulted in his PDF viewer crashing. That's when I threw in the towel - any more information from me would require tequila, preferably delivered intravenously!"
+msgstr "link:http://osoyoosdutyfree.com/wp-content/uploads/2011/05/Patron_osoyoos.jpg[] 私は、人々がデモをダウンロードし、JSRとInfinispanについての詳細を学ぶことができるURLを含むPDFを持っていました。このPDFをジェイのラップトップにアップロードすると、部屋のためにまだ投影していたので、彼のPDFビューアはクラッシュしてしまいました。これ以上の情報を得るには、テキーラが必要で、できれば静脈注射が必要なのです。"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:70
 #, fuzzy
-msgid ""
-"Now for the moral of the story, don't trust technology. Always be prepared "
-"to get your message across with no visual aids whatsoever. Oh, and don't "
-"forget your Macbook's VGA adapter. :)"
-msgstr ""
-"さて、この話の教訓として、テクノロジーを信用してはいけません。常に、視覚的な補助具を使わずにメッセージを伝える準備をしておきましょう。あ、MacbookのVGAアダプタも忘れずに。)"
+msgid "Now for the moral of the story, don't trust technology. Always be prepared to get your message across with no visual aids whatsoever. Oh, and don't forget your Macbook's VGA adapter. :)"
+msgstr "さて、この話の教訓として、テクノロジーを信用してはいけません。常に、視覚的な補助具を使わずにメッセージを伝える準備をしておきましょう。あ、MacbookのVGAアダプタも忘れずに。)"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:75
 #, fuzzy
-msgid ""
-"http://www.climbers.org/files/images/bill_starting_on_malignant_mushroom."
-"preview.jpg[image:http://www.climbers.org/files/images/"
-"bill_starting_on_malignant_mushroom.preview.jpg[image,width=131,height="
-"200]]**[.underline]#Addendum:#** I repeated the talk a few times in "
-"Milwaukee and Chicago, and everything ran really well - after a quick trip "
-"to the local Apple store to replace my VGA adapter!"
-msgstr ""
-"link:http://www.climbers.org/files/images/"
-"bill_starting_on_malignant_mushroom.preview.jpg[] 追記 *：* "
-"私はミルウォーキーとシカゴでこの話を何度か繰り返しましたが、すべてがうまくいきました。"
+msgid "http://www.climbers.org/files/images/bill_starting_on_malignant_mushroom.preview.jpg[image:http://www.climbers.org/files/images/bill_starting_on_malignant_mushroom.preview.jpg[image,width=131,height=200]]**[.underline]#Addendum:#** I repeated the talk a few times in Milwaukee and Chicago, and everything ran really well - after a quick trip to the local Apple store to replace my VGA adapter!"
+msgstr "link:http://www.climbers.org/files/images/bill_starting_on_malignant_mushroom.preview.jpg[] 追記 *：* 私はミルウォーキーとシカゴでこの話を何度か繰り返しましたが、すべてがうまくいきました。"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:78
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "*[.underline]#Addendum 2:#* I now am on a short break climbing in the\n"
 "Canadian Rockies, but will soon be presenting the same in Washington DC\n"
-msgstr ""
-"追 *記2：* 私は今、カナディアンロッキーで短い休みを取ってクライミングをしていますが、すぐにワシントンDCで同じことを発表する予定です。"
+msgstr "追 *記2：* 私は今、カナディアンロッキーで短い休みを取ってクライミングをしていますが、すぐにワシントンDCで同じことを発表する予定です。"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-06-presentation-from-hell-when-nothing.adoc:79
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "drop by if you're in the neighbourhood!\n"
 msgstr "お近くにお越しの際はお立ち寄りください。"
 

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:11
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 8.2.0.Final is out!\n"
@@ -33,10 +33,8 @@ msgid ""
 "author: pruivo\n"
 "tags: [ \"release\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"555425407157620245\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/03/infinispan-820final-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-555425407157620245\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/03/infinispan-820final-is-out.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -46,10 +44,8 @@ msgstr ""
 "author: pruivo\n"
 "tags: [ \"release\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"555425407157620245\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/03/infinispan-820final-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-555425407157620245\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/03/infinispan-820final-is-out.html\n"
 "---\n"
 
 #. type: Plain text
@@ -61,50 +57,32 @@ msgstr "地域の皆様へ"
 #. type: Plain text
 #: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:17
 #, fuzzy
-msgid ""
-"We are proud to announce the release of Infinispan 8.2.0.Final.  http://"
-"infinispan.org/download#stable[Download it here]** **and try it out!"
-msgstr ""
-"Infinispan 8.2.0.Finalのリリースを発表します http://infinispan.org/download#stable http:"
-"//infinispan.org/download#stable *、* ぜひお試しください。"
+msgid "We are proud to announce the release of Infinispan 8.2.0.Final.  http://infinispan.org/download#stable[Download it here]** **and try it out!"
+msgstr "Infinispan 8.2.0.Finalのリリースを発表します http://infinispan.org/download#stable http://infinispan.org/download#stable *、* ぜひお試しください。"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:21
 #, fuzzy
-msgid ""
-"This release is highlighted by performance improvements and multiple fixes, "
-"and it introduces some new cool features. We emphasize the following:"
-msgstr ""
-"このリリースは、パフォーマンスの向上と複数の修正によって強調されており、いくつかの新しいクールな機能が導入されています。私たちは以下の点を強調しています。"
+msgid "This release is highlighted by performance improvements and multiple fixes, and it introduces some new cool features. We emphasize the following:"
+msgstr "このリリースは、パフォーマンスの向上と複数の修正によって強調されており、いくつかの新しいクールな機能が導入されています。私たちは以下の点を強調しています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:25
 #, fuzzy
-msgid ""
-"New algorithm for remote reads in distributed mode that reduces the network "
-"usage"
+msgid "New algorithm for remote reads in distributed mode that reduces the network usage"
 msgstr "ネットワーク使用量を削減する分散モードでのリモートリードのための新しいアルゴリズム"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:28
 #, fuzzy
-msgid ""
-"From now on, the consistent hash is shared among caches with the same "
-"membership - entries in different caches using the same key will be co-"
-"located"
+msgid "From now on, the consistent hash is shared among caches with the same membership - entries in different caches using the same key will be co-located"
 msgstr "今後は、一貫性のあるハッシュが同じメンバーシップを持つキャッシュ間で共有されるようになります。"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:32
 #, fuzzy
-msgid ""
-"A new lambda-enabled http://infinispan.org/docs/8.2.x/user_guide/user_guide."
-"html#_cluster_executor[Cluster Executor] which does not require a clustered "
-"cache, but can be constructed directly from a DefaultCacheManager."
-msgstr ""
-"クラスタキャッシュを必要とせず、DefaultCacheManager から直接構築できるラムダ対応の新しい link:http://"
-"infinispan.org/docs/8.2.x/user_guide/user_guide."
-"html#_cluster_executor[クラスタエグゼキュータ] です。"
+msgid "A new lambda-enabled http://infinispan.org/docs/8.2.x/user_guide/user_guide.html#_cluster_executor[Cluster Executor] which does not require a clustered cache, but can be constructed directly from a DefaultCacheManager."
+msgstr "クラスタキャッシュを必要とせず、DefaultCacheManager から直接構築できるラムダ対応の新しい link:http://infinispan.org/docs/8.2.x/user_guide/user_guide.html#_cluster_executor[クラスタエグゼキュータ] です。"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:33
@@ -127,14 +105,8 @@ msgstr "Infinispan Serverは、明らかにそれ自身のリストに値する�
 #. type: Plain text
 #: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:41
 #, fuzzy
-msgid ""
-"Infinispan Server was gifted with a brand new event logger. Now it is "
-"possible to check the last 7 days events like caches starting/stopping, "
-"nodes join/leaving, task execution and security audits. In addition, it is "
-"based on Wildfly 10."
-msgstr ""
-"Infinispan Serverには、新しいイベントロガーが搭載されました。これにより、キャッシュの開始/停止、ノードの参加/"
-"離脱、タスクの実行、セキュリティ監査など、過去7日間のイベントをチェックすることが可能になりました。さらに、Wildfly 10をベースにしています。"
+msgid "Infinispan Server was gifted with a brand new event logger. Now it is possible to check the last 7 days events like caches starting/stopping, nodes join/leaving, task execution and security audits. In addition, it is based on Wildfly 10."
+msgstr "Infinispan Serverには、新しいイベントロガーが搭載されました。これにより、キャッシュの開始/停止、ノードの参加/離脱、タスクの実行、セキュリティ監査など、過去7日間のイベントをチェックすることが可能になりました。さらに、Wildfly 10をベースにしています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:43
@@ -193,29 +165,14 @@ msgstr "PatternFly 3.2"
 #. type: Plain text
 #: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:56
 #, fuzzy
-msgid ""
-"We are now preparing the next development cycle and we will introduce new "
-"features and improvements. Stay tuned to know what is coming in Infinispan 9."
-"0. "
-msgstr ""
-"私たちは現在、次の開発サイクルの準備をしており、新機能や改善点を紹介していきます。Infinispan 9.0に何が来るのかを知るためにご期待ください。"
+msgid "We are now preparing the next development cycle and we will introduce new features and improvements. Stay tuned to know what is coming in Infinispan 9.0. "
+msgstr "私たちは現在、次の開発サイクルの準備をしており、新機能や改善点を紹介していきます。Infinispan 9.0に何が来るのかを知るためにご期待ください。"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:66
 #, fuzzy
-msgid ""
-"Check out the http://infinispan.org/release-notes/#8.2[stable release "
-"notes], http://infinispan.org/download/[download the releases]** **and tell "
-"us all about it on the https://developer.jboss.org/en/infinispan/"
-"content[forum], on our https://issues.jboss.org/projects/ISPN[issue tracker] "
-"or on IRC on the #infinispan channel on http://webchat.freenode.net/"
-"?channels=%23infinispan[Freenode]."
-msgstr ""
-"link:http://infinispan.org/release-notes/#8.2[安定版リリースノート] * http://"
-"infinispan.org/download/* をチェックして、フォーラム link:https://developer.jboss.org/en/"
-"infinispan/content[や] 問題 link:https://issues.jboss.org/projects/ISPN[追跡、] "
-"IRC の #infinispan チャンネル ( link:http://webchat.freenode.net/?channels="
-"%23infinispan[Freenode] ) で教えてください。"
+msgid "Check out the http://infinispan.org/release-notes/#8.2[stable release notes], http://infinispan.org/download/[download the releases]** **and tell us all about it on the https://developer.jboss.org/en/infinispan/content[forum], on our https://issues.jboss.org/projects/ISPN[issue tracker] or on IRC on the #infinispan channel on http://webchat.freenode.net/?channels=%23infinispan[Freenode]."
+msgstr "link:http://infinispan.org/release-notes/#8.2[安定版リリースノート] * http://infinispan.org/download/* をチェックして、フォーラム link:https://developer.jboss.org/en/infinispan/content[や] 問題 link:https://issues.jboss.org/projects/ISPN[追跡、] IRC の #infinispan チャンネル ( link:http://webchat.freenode.net/?channels=%23infinispan[Freenode] ) で教えてください。"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-08-infinispan-820final-is-out.adoc:68

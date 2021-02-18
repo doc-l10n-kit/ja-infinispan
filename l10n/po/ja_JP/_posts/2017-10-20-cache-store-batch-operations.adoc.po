@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:15
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Cache Store Batch Operations\n"
@@ -37,10 +37,8 @@ msgid ""
 "\"leveldb\",\n"
 "\"cache store\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1552930257334265766\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/10/cache-store-batch-"
-"operations.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1552930257334265766\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/10/cache-store-batch-operations.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -54,255 +52,192 @@ msgstr ""
 "\"leveldb\",\n"
 "\"cache store\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1552930257334265766\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/10/cache-store-batch-"
-"operations.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1552930257334265766\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/10/cache-store-batch-operations.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:20
 #, fuzzy
-msgid ""
-"Infinispan 9.1.x introduces batch write and delete operations for cache "
-"stores. The introduction of batching should greatly improve performance when "
-"utilising write-behind cache stores, using putAll operations and committing "
-"transactions in non-transactional stores."
-msgstr ""
-"Infinispan 9.1.x "
-"では、キャッシュストアの書き込みと削除のバッチ処理が導入されました。バッチングの導入により、キャッシュストアへの書き込みを利用したり、putAll "
-"オペレーションを使用したり、非トランザクションストアでトランザクションをコミットしたりする際のパフォーマンスが大幅に向上するはずです。"
+msgid "Infinispan 9.1.x introduces batch write and delete operations for cache stores. The introduction of batching should greatly improve performance when utilising write-behind cache stores, using putAll operations and committing transactions in non-transactional stores."
+msgstr "Infinispan 9.1.x では、キャッシュストアの書き込みと削除のバッチ処理が導入されました。バッチングの導入により、キャッシュストアへの書き込みを利用したり、putAll オペレーションを使用したり、非トランザクションストアでトランザクションをコミットしたりする際のパフォーマンスが大幅に向上するはずです。"
 
 #. type: Title ==
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:29
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "CacheWriter Interface Additions"
 msgstr "CacheWriter インタフェースの追加"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:39
 #, fuzzy
-msgid ""
-"The CacheWriter interface has been extended so that it exposes two "
-"additional methods: deleteBatch and writeBatch.  For the sake of backwards "
-"compatibility a default implementation of these methods is provided, however "
-"if your cache store is able to utilise batching we strongly recommend you "
-"create your  own implementations. The additional methods and docs are show "
-"below: "
-msgstr ""
-"CacheWriter インタフェースが拡張され、deleteBatch と writeBatch という 2 つのメソッドが追加されました。 "
-"後方互換性のために、これらのメソッドの既定の実装が提供されていますが、キャッシュ・ストアがバッチングを利用できる場合は、独自の実装を作成することを強くお勧めします。追加のメソッドとドキュメントを以下に示します。"
+msgid "The CacheWriter interface has been extended so that it exposes two additional methods: deleteBatch and writeBatch.  For the sake of backwards compatibility a default implementation of these methods is provided, however if your cache store is able to utilise batching we strongly recommend you create your  own implementations. The additional methods and docs are show below: "
+msgstr "CacheWriter インタフェースが拡張され、deleteBatch と writeBatch という 2 つのメソッドが追加されました。 後方互換性のために、これらのメソッドの既定の実装が提供されていますが、キャッシュ・ストアがバッチングを利用できる場合は、独自の実装を作成することを強くお勧めします。追加のメソッドとドキュメントを以下に示します。"
 
 #. type: Title ===
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:46
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Updated Stores"
 msgstr "更新された店舗"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:52
 #, fuzzy
-msgid ""
-"Currently the JDBC, JPA, RocksDB and Remote stores have all been modified to "
-"take advantage of these latest changes."
+msgid "Currently the JDBC, JPA, RocksDB and Remote stores have all been modified to take advantage of these latest changes."
 msgstr "現在のところ、JDBC、JPA、RocksDB、およびリモートストアはすべて、これらの最新の変更を利用できるように変更されています。"
 
 #. type: Title ==
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:59
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Configuration Changes"
 msgstr "設定の変更"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:70
 #, fuzzy
-msgid ""
-"As each store implementations has different batching capabilities, it was "
-"necessary to introduce a max-batch-size attribute to the "
-"AbstractStoreConfiguration. This attribute defines the maximum number of "
-"entries that should be included in a single batch operation to the store. If "
-"a value less than one is provided, then the underlying store implementation "
-"should not place a upper limit on the number of entries in a batch. "
-msgstr ""
-"ストアの実装ごとにバッチ処理の機能が異なるため、AbstractStoreConfigurationにmax-batch-"
-"size属性を導入する必要がありました。この属性は、ストアへの単一のバッチ処理に含まれるべきエントリの最大数を定義します。1未満の値が提供されている場合、基礎となるストアの実装は、バッチ内のエントリ数に上限を置くべきではありません。"
+msgid "As each store implementations has different batching capabilities, it was necessary to introduce a max-batch-size attribute to the AbstractStoreConfiguration. This attribute defines the maximum number of entries that should be included in a single batch operation to the store. If a value less than one is provided, then the underlying store implementation should not place a upper limit on the number of entries in a batch. "
+msgstr "ストアの実装ごとにバッチ処理の機能が異なるため、AbstractStoreConfigurationにmax-batch-size属性を導入する必要がありました。この属性は、ストアへの単一のバッチ処理に含まれるべきエントリの最大数を定義します。1未満の値が提供されている場合、基礎となるストアの実装は、バッチ内のエントリ数に上限を置くべきではありません。"
 
 #. type: Title ===
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:71
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Deprecated Attributes"
 msgstr "非推奨属性"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:76
 #, fuzzy
-msgid ""
-"Both TableManipulationConfiguration#batchSize and "
-"JpaStoreConfiguration#batchSize have been deprecated, as they serve the same "
-"purpose as AbstractStoreConfiguration#maxBatchSize."
-msgstr ""
-"TableManipulationConfiguration#batchSize と JpaStoreConfiguration#batchSize "
-"の両方とも、AbstractStoreConfiguration#maxBatchSize と同じ目的を果たすため、非推奨となりました。"
+msgid "Both TableManipulationConfiguration#batchSize and JpaStoreConfiguration#batchSize have been deprecated, as they serve the same purpose as AbstractStoreConfiguration#maxBatchSize."
+msgstr "TableManipulationConfiguration#batchSize と JpaStoreConfiguration#batchSize の両方とも、AbstractStoreConfiguration#maxBatchSize と同じ目的を果たすため、非推奨となりました。"
 
 #. type: Title ==
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:78
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Store Benchmark"
 msgstr "ストアベンチマーク"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:90
 #, fuzzy
-msgid ""
-"To measure the impact of batch writes on Cache.putAll, we created a https://"
-"github.com/ryanemerson/benchmarks/tree/master/store[simple benchmark] to "
-"compare the performance of Infinispan 9.1.1.Final (with batching) and 9.0.3."
-"Final (without).  The benchmark consisted of 20 threads inserting 100000 "
-"cache entries as fast as possible into a cache via putAll; with each putAll "
-"operation containing 20 cache entries and the max-batch-size of each store "
-"being set to 20. The table below shows the average time taken for each store "
-"type after the benchmark was executed three times."
-msgstr ""
-"バッチ書き込みが Cache.putAll に与える影響を測定するために、Infinispan 9.1.1.1.Final (バッチ処理あり) と 9."
-"0.3.Final (バッチ処理なし) のパフォーマンスを比較する link:https://github.com/ryanemerson/"
-"benchmarks/tree/master/store[簡単なベンチマークを] 作成しました。 ベンチマークは、20 個のスレッドが putAll "
-"を使用して 100000 個のキャッシュ・エントリを可能な限り高速にキャッシュに挿入し、各 putAll 操作には 20 "
-"個のキャッシュ・エントリが含まれ、各ストアの最大バッチ・サイズは 20 "
-"に設定されています。下の表は、ベンチマークを3回実行した後の各ストアタイプの平均時間を示しています。"
+msgid "To measure the impact of batch writes on Cache.putAll, we created a https://github.com/ryanemerson/benchmarks/tree/master/store[simple benchmark] to compare the performance of Infinispan 9.1.1.Final (with batching) and 9.0.3.Final (without).  The benchmark consisted of 20 threads inserting 100000 cache entries as fast as possible into a cache via putAll; with each putAll operation containing 20 cache entries and the max-batch-size of each store being set to 20. The table below shows the average time taken for each store type after the benchmark was executed three times."
+msgstr "バッチ書き込みが Cache.putAll に与える影響を測定するために、Infinispan 9.1.1.1.Final (バッチ処理あり) と 9.0.3.Final (バッチ処理なし) のパフォーマンスを比較する link:https://github.com/ryanemerson/benchmarks/tree/master/store[簡単なベンチマークを] 作成しました。 ベンチマークは、20 個のスレッドが putAll を使用して 100000 個のキャッシュ・エントリを可能な限り高速にキャッシュに挿入し、各 putAll 操作には 20 個のキャッシュ・エントリが含まれ、各ストアの最大バッチ・サイズは 20 に設定されています。下の表は、ベンチマークを3回実行した後の各ストアタイプの平均時間を示しています。"
 
 #. type: Table
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:97
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Store Type"
 msgstr "店舗タイプ"
 
 #. type: Table
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:97
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "9.0.3.Final"
 msgstr "9.0.3.最終"
 
 #. type: Table
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:97
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "9.1.1-Final"
 msgstr "9.1.1-最終"
 
 #. type: Table
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:98
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Latency Decrease"
 msgstr "遅延の減少"
 
 #. type: Table
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:98
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "JdbcStringBasedStore"
 msgstr "JdbcStringBasedStore"
 
 #. type: Table
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:98
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "29368ms"
 msgstr "２９３６８ミリ秒"
 
 #. type: Table
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:98
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "2597ms"
 msgstr "２５９７ミリ秒"
 
 #. type: Table
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:99
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "91.12%"
 msgstr "91.12%"
 
 #. type: Table
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:99
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "JPAStore"
 msgstr "ジェーパストア"
 
 #. type: Table
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:99
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "30798ms"
 msgstr "三百七十九十八ミリ秒"
 
 #. type: Table
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:99
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "16640ms"
 msgstr "１６６４０ミリ秒"
 
 #. type: Table
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:100
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "45.97%"
 msgstr "45.97%"
 
 #. type: Table
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:100
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "RocksDBStore"
 msgstr "ロックスディービーストア"
 
 #. type: Table
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:100
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "1164ms"
 msgstr "１１６４ミリ秒"
 
 #. type: Table
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:100
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "209ms"
 msgstr "２０９ミリ秒"
 
 #. type: Table
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:101
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "82.04%"
 msgstr "82.04%"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:105
 #, fuzzy
-msgid ""
-"The benchmark results above clearly show that performance is increased "
-"dramatically when utilising batch updates at the store level."
+msgid "The benchmark results above clearly show that performance is increased dramatically when utilising batch updates at the store level."
 msgstr "上記のベンチマーク結果は、店舗レベルでバッチ更新を利用するとパフォーマンスが劇的に向上することを明確に示しています。"
 
 #. type: Title ==
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:106
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Conclusions"
 msgstr "結論"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:112
 #, fuzzy
-msgid ""
-"Infinispan 9.1.x introduces batching capabilities to the CacheWriter "
-"interface in order to improve performance. If you currently utilise a custom "
-"cache store, we strongly recommend that you provide your own implementation "
-"of the delete and write batch methods. "
-msgstr ""
-"Infinispan 9.1.x では、パフォーマンスを向上させるために CacheWriter "
-"インタフェースにバッチ機能が導入されました。現在カスタム・キャッシュ・ストアを使用している場合は、削除および書き込みバッチ・メソッドの独自の実装を提供することを強くお勧めします。"
+msgid "Infinispan 9.1.x introduces batching capabilities to the CacheWriter interface in order to improve performance. If you currently utilise a custom cache store, we strongly recommend that you provide your own implementation of the delete and write batch methods. "
+msgstr "Infinispan 9.1.x では、パフォーマンスを向上させるために CacheWriter インタフェースにバッチ機能が導入されました。現在カスタム・キャッシュ・ストアを使用している場合は、削除および書き込みバッチ・メソッドの独自の実装を提供することを強くお勧めします。"
 
 #. type: Plain text
 #: upstream/_posts/2017-10-20-cache-store-batch-operations.adoc:119
 #, fuzzy
-msgid ""
-"If you have any feedback on the CacheWriter changes, or would like to "
-"request some new features/optimisations, let us know via the https://"
-"developer.jboss.org/en/infinispan/content[forum], https://issues.jboss.org/"
-"projects/ISPN[issue tracker] or the #infinispan channel onhttp://webchat."
-"freenode.net/?channels=%23infinispan[ Freenode]."
-msgstr ""
-"CacheWriter の変更に関するフィードバックや新機能/最適化のリクエストがある場合は、フォーラム link:https://developer."
-"jboss.org/en/infinispan/content[、] link:https://issues.jboss.org/projects/"
-"ISPN[イシュー・トラッカー、または #] infinispan チャンネル（http://webchat.freenode.net/"
-"?channels=%23infinispan[ Freenode]）でお知らせください。"
+msgid "If you have any feedback on the CacheWriter changes, or would like to request some new features/optimisations, let us know via the https://developer.jboss.org/en/infinispan/content[forum], https://issues.jboss.org/projects/ISPN[issue tracker] or the #infinispan channel onhttp://webchat.freenode.net/?channels=%23infinispan[ Freenode]."
+msgstr "CacheWriter の変更に関するフィードバックや新機能/最適化のリクエストがある場合は、フォーラム link:https://developer.jboss.org/en/infinispan/content[、] link:https://issues.jboss.org/projects/ISPN[イシュー・トラッカー、または #] infinispan チャンネル（http://webchat.freenode.net/?channels=%23infinispan[ Freenode]）でお知らせください。"

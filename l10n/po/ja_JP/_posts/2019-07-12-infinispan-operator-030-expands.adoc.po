@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,25 +18,22 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2019-07-12-infinispan-operator-030-expands.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-12-infinispan-operator-030-expands.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
-"title: Infinispan Operator 0.3.0 expands container and security "
-"configuration!\n"
+"title: Infinispan Operator 0.3.0 expands container and security configuration!\n"
 "permalink: /blog/:year/:month/:day/infinispan-operator-030-expands\n"
 "date: '2019-07-12T02:58:00.003-07:00'\n"
 "author: galder\n"
 "tags: [ \"release\", \"openshift\", \"kubernetes\", \"operator\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1518498045995593649\n"
-"blogger_orig_url: https://blog.infinispan.org/2019/07/infinispan-operator-"
-"030-expands.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1518498045995593649\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/07/infinispan-operator-030-expands.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -45,186 +42,123 @@ msgstr ""
 "date: '2019-07-12T02:58:00.003-07:00'\n"
 "author: galder\n"
 "tags: [ \"release\", \"openshift\", \"kubernetes\", \"operator\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1518498045995593649\n"
-"blogger_orig_url: https://blog.infinispan.org/2019/07/infinispan-operator-"
-"030-expands.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1518498045995593649\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/07/infinispan-operator-030-expands.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-12-infinispan-operator-030-expands.adoc:13
 #, fuzzy
-msgid ""
-"Infinispan Operator 0.3.0 is now available with expanded configuration and "
-"security options:"
+msgid "Infinispan Operator 0.3.0 is now available with expanded configuration and security options:"
 msgstr "Infinispan Operator 0.3.0は、拡張された設定とセキュリティオプションが利用可能になりました。"
 
 #. type: Title ===
 #: upstream/_posts/2019-07-12-infinispan-operator-030-expands.adoc:15
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Container Configuration"
 msgstr "コンテナの構成"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-12-infinispan-operator-030-expands.adoc:21
 #, fuzzy
-msgid ""
-"With this release of the Infinispan Operator, you can configure explicit CPU "
-"and memory limits for individual containers. The defaults are 0.5 CPUs "
-"and 512Mi of memory."
-msgstr ""
-"このリリースのInfinispan Operatorでは、個々のコンテナのCPUとメモリの制限を明示的に設定することができます。デフォルトは、CPU 0."
-"5、メモリ 512Mi です。"
+msgid "With this release of the Infinispan Operator, you can configure explicit CPU and memory limits for individual containers. The defaults are 0.5 CPUs and 512Mi of memory."
+msgstr "このリリースのInfinispan Operatorでは、個々のコンテナのCPUとメモリの制限を明示的に設定することができます。デフォルトは、CPU 0.5、メモリ 512Mi です。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-12-infinispan-operator-030-expands.adoc:24
 #, fuzzy
-msgid ""
-"The Operator also lets you pass extra JVM options, which is useful for "
-"tracking native memory consumption or extra GC logging parameters."
+msgid "The Operator also lets you pass extra JVM options, which is useful for tracking native memory consumption or extra GC logging parameters."
 msgstr "オペレータでは、ネイティブメモリ消費量やGC ロギングパラメータの追加を追跡するのに便利な追加のJVMオプションを渡すこともできます。"
 
 #. type: Title ===
 #: upstream/_posts/2019-07-12-infinispan-operator-030-expands.adoc:28
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Security Configuration"
 msgstr "セキュリティ設定"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-12-infinispan-operator-030-expands.adoc:34
 #, fuzzy
-msgid ""
-"Starting with 0.3.0, credentials are automatically generated for data "
-"connector and management users when you instantiate the Infinispan Operator."
-msgstr ""
-"0.3.0 以降、Infinispan オペレータのインスタンスを作成すると、データコネクタと管理ユーザーのためにクレデンシャルが自動的に生成されます。"
+msgid "Starting with 0.3.0, credentials are automatically generated for data connector and management users when you instantiate the Infinispan Operator."
+msgstr "0.3.0 以降、Infinispan オペレータのインスタンスを作成すると、データコネクタと管理ユーザーのためにクレデンシャルが自動的に生成されます。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-12-infinispan-operator-030-expands.adoc:37
 #, fuzzy
-msgid ""
-"The default usernames are developer and admin for the data connector user "
-"and management user, respectively."
+msgid "The default usernames are developer and admin for the data connector user and management user, respectively."
 msgstr "デフォルトのユーザ名は、データコネクタユーザのdeveloperとadminです。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-12-infinispan-operator-030-expands.adoc:41
 #, fuzzy
-msgid ""
-"Generated passwords are stored in Kubernetes https://kubernetes.io/docs/"
-"concepts/configuration/secret/[Secret] instances.  You can extract the "
-"passwords as follows:"
-msgstr ""
-"生成されたパスワードは、Kubernetes link:https://kubernetes.io/docs/concepts/"
-"configuration/secret/[Secret] インスタンスに保存されます。以下のようにパスワードを抽出することができます。"
+msgid "Generated passwords are stored in Kubernetes https://kubernetes.io/docs/concepts/configuration/secret/[Secret] instances.  You can extract the passwords as follows:"
+msgstr "生成されたパスワードは、Kubernetes link:https://kubernetes.io/docs/concepts/configuration/secret/[Secret] インスタンスに保存されます。以下のようにパスワードを抽出することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-12-infinispan-operator-030-expands.adoc:46
 #, fuzzy
-msgid ""
-"For convenience, the default usernames are also stored in the secret.  Using "
-"the https://stedolan.github.io/jq/[jq] command line tool, you can inspect "
-"both the username and password values with a single command:"
-msgstr ""
-"便宜上、デフォルトのユーザ名もシークレットに保存されています。jqコマンドラインツールを使うと、1つのコマンドでユーザ名とパスワードの両方の値を調べることができます。"
+msgid "For convenience, the default usernames are also stored in the secret.  Using the https://stedolan.github.io/jq/[jq] command line tool, you can inspect both the username and password values with a single command:"
+msgstr "便宜上、デフォルトのユーザ名もシークレットに保存されています。jqコマンドラインツールを使うと、1つのコマンドでユーザ名とパスワードの両方の値を調べることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-12-infinispan-operator-030-expands.adoc:50
 #, fuzzy
-msgid ""
-"If you want to set custom credentials for the data connector and management "
-"users, create Kubernetes Secret instances as follows:"
+msgid "If you want to set custom credentials for the data connector and management users, create Kubernetes Secret instances as follows:"
 msgstr "データコネクタと管理ユーザーにカスタム認証情報を設定したい場合は、以下のようにKubernetes Secretインスタンスを作成します。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-12-infinispan-operator-030-expands.adoc:54
 #, fuzzy
-msgid ""
-"When using a Credentials type authentication, the referenced secrets must "
-"contain username and password fields."
+msgid "When using a Credentials type authentication, the referenced secrets must contain username and password fields."
 msgstr "クレデンシャル型認証を使用する場合、参照される秘密にはユーザ名とパスワードのフィールドが含まれていなければならない。"
 
 #. type: Title ===
 #: upstream/_posts/2019-07-12-infinispan-operator-030-expands.adoc:56
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Trying It Out!"
 msgstr "試してみよう！"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-12-infinispan-operator-030-expands.adoc:63
 #, fuzzy
-msgid ""
-"The easiest way to get started with the Infinispan Operator is via the https:"
-"//github.com/infinispan/infinispan-simple-tutorials/tree/master/"
-"operator[simple tutorial]. The Operator is compatible with vanilla "
-"Kubernetes environments, such as Minikube, as well as Red Hat OpenShift."
-msgstr ""
-"Infinispan Operatorを使い始める最も簡単な方法は、 link:https://github.com/infinispan/"
-"infinispan-simple-tutorials/tree/master/operator[簡単なチュートリアル] "
-"を参照することです。Operatorは、Red Hat "
-"OpenShiftだけでなく、MinikubeなどのバニラKubernetes環境にも対応しています。"
+msgid "The easiest way to get started with the Infinispan Operator is via the https://github.com/infinispan/infinispan-simple-tutorials/tree/master/operator[simple tutorial]. The Operator is compatible with vanilla Kubernetes environments, such as Minikube, as well as Red Hat OpenShift."
+msgstr "Infinispan Operatorを使い始める最も簡単な方法は、 link:https://github.com/infinispan/infinispan-simple-tutorials/tree/master/operator[簡単なチュートリアル] を参照することです。Operatorは、Red Hat OpenShiftだけでなく、MinikubeなどのバニラKubernetes環境にも対応しています。"
 
 #. type: Title ===
 #: upstream/_posts/2019-07-12-infinispan-operator-030-expands.adoc:65
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Available via Operator Hub"
 msgstr "オペレーターハブ経由で利用可能"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-12-infinispan-operator-030-expands.adoc:72
 #, fuzzy
-msgid ""
-"Install the Infinispan Operator directly from the Operator Hub, which is "
-"available out of the box on all OpenShift 4 versions. If you're using a "
-"vanilla Kubernertes environment, you might need to install the Operator "
-"Lifecycle Manager before you can install via the Operator Hub."
-msgstr ""
-"Infinispan Operatorは、すべてのOpenShift 4バージョンで利用可能なOperator "
-"Hubから直接インストールします。バニラのKubernertes環境を使用している場合は、Operator "
-"Hub経由でインストールする前にOperator Lifecycle Managerをインストールする必要があるかもしれません。"
+msgid "Install the Infinispan Operator directly from the Operator Hub, which is available out of the box on all OpenShift 4 versions. If you're using a vanilla Kubernertes environment, you might need to install the Operator Lifecycle Manager before you can install via the Operator Hub."
+msgstr "Infinispan Operatorは、すべてのOpenShift 4バージョンで利用可能なOperator Hubから直接インストールします。バニラのKubernertes環境を使用している場合は、Operator Hub経由でインストールする前にOperator Lifecycle Managerをインストールする必要があるかもしれません。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-12-infinispan-operator-030-expands.adoc:76
 #, fuzzy
-msgid ""
-"The Infinispan Operator is also included in the community for Kubernetes "
-"Operators is available from https://operatorhub.io/operator/"
-"infinispan[operatorhub.io]."
-msgstr ""
-"Infinispan Operatorは、Kubernetes Operatorsのコミュニティにも含まれており、 link:https://"
-"operatorhub.io/operator/infinispan[operatorhub.io] から利用可能です。"
+msgid "The Infinispan Operator is also included in the community for Kubernetes Operators is available from https://operatorhub.io/operator/infinispan[operatorhub.io]."
+msgstr "Infinispan Operatorは、Kubernetes Operatorsのコミュニティにも含まれており、 link:https://operatorhub.io/operator/infinispan[operatorhub.io] から利用可能です。"
 
 #. type: Title ===
 #: upstream/_posts/2019-07-12-infinispan-operator-030-expands.adoc:78
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "What's Next?"
 msgstr "次は何をするの？"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-12-infinispan-operator-030-expands.adoc:87
 #, fuzzy
-msgid ""
-"The Operator configuration does not yet provide all capabilities available "
-"for Infinispan servers. We're working through a process of configuration "
-"specification that distills the server configuration into a simple, easy to "
-"use, set of configuration options. The current proposal is being discussed "
-"openly https://github.com/infinispan/infinispan-operator/pull/77[here]."
-msgstr ""
-"オペレータ構成では、Infinispan "
-"サーバで利用可能なすべての機能を提供しているわけではありません。私たちは、サーバー構成をシンプルで使いやすい構成オプションのセットに蒸留する構成仕様のプロセスを進めています。現在の提案は、 "
-"link:https://github.com/infinispan/infinispan-operator/pull/77[ここで] "
-"オープンに議論されています。"
+msgid "The Operator configuration does not yet provide all capabilities available for Infinispan servers. We're working through a process of configuration specification that distills the server configuration into a simple, easy to use, set of configuration options. The current proposal is being discussed openly https://github.com/infinispan/infinispan-operator/pull/77[here]."
+msgstr "オペレータ構成では、Infinispan サーバで利用可能なすべての機能を提供しているわけではありません。私たちは、サーバー構成をシンプルで使いやすい構成オプションのセットに蒸留する構成仕様のプロセスを進めています。現在の提案は、 link:https://github.com/infinispan/infinispan-operator/pull/77[ここで] オープンに議論されています。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-12-infinispan-operator-030-expands.adoc:92
 #, fuzzy
-msgid ""
-"Infinispan 10 brings a brand new server that's no longer based on WildFly. "
-"The Operator 0.x series will remain focused on Infinispan 9.x server, with "
-"Operator 1.x series focusing on Infinispan 10 and onwards."
-msgstr ""
-"Infinispan 10では、もはやWildFlyをベースにしていない全く新しいサーバーが登場します。Operator 0."
-"xシリーズは引き続きInfinispan 9.xサーバーに焦点を当て、Operator 1.xシリーズはInfinispan 10以降に焦点を当てます。"
+msgid "Infinispan 10 brings a brand new server that's no longer based on WildFly. The Operator 0.x series will remain focused on Infinispan 9.x server, with Operator 1.x series focusing on Infinispan 10 and onwards."
+msgstr "Infinispan 10では、もはやWildFlyをベースにしていない全く新しいサーバーが登場します。Operator 0.xシリーズは引き続きInfinispan 9.xサーバーに焦点を当て、Operator 1.xシリーズはInfinispan 10以降に焦点を当てます。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-12-infinispan-operator-030-expands.adoc:95

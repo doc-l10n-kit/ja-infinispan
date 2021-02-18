@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-10-08-infinispan-940final.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-08-infinispan-940final.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.4.0.Final\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2018-10-08T00:34:00.000-07:00'\n"
 "author: ttarrant\n"
 "tags: [ \" release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7653318797303846822\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/10/infinispan-940final."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7653318797303846822\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/10/infinispan-940final.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,41 +42,37 @@ msgstr ""
 "date: '2018-10-08T00:34:00.000-07:00'\n"
 "author: ttarrant\n"
 "tags: [ \" release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7653318797303846822\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/10/infinispan-940final."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7653318797303846822\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/10/infinispan-940final.html\n"
 "---\n"
 
 #. type: Title ==
 #: upstream/_posts/2018-10-08-infinispan-940final.adoc:11
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Infinispan 9.4.0.Final “Infinity Minus ONE +2”"
 msgstr "Infinispan 9.4.0.Final \"Infinity Minus ONE +2\""
 
 #. type: Title ==
 #: upstream/_posts/2018-10-08-infinispan-940final.adoc:13
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid " "
 msgstr " "
 
 #. type: Title ===
 #: upstream/_posts/2018-10-08-infinispan-940final.adoc:15
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "10 years of Infinispan"
 msgstr "インフィニスパンの10年"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-08-infinispan-940final.adoc:19
 #, fuzzy
-msgid ""
-"Infinispan is 10 years old this month, and what better way to celebrate than "
-"with a brand new Final release !!!"
+msgid "Infinispan is 10 years old this month, and what better way to celebrate than with a brand new Final release !!!"
 msgstr "Infinispanは今月で10周年を迎えました。"
 
 #. type: Title ===
 #: upstream/_posts/2018-10-08-infinispan-940final.adoc:21
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "What's new"
 msgstr "新着情報"
 
@@ -91,26 +85,14 @@ msgstr "Infinispan 9.4には、以下の新機能/改善が搭載されていま
 #. type: Plain text
 #: upstream/_posts/2018-10-08-infinispan-940final.adoc:30
 #, fuzzy
-msgid ""
-"Segments everywhere 9.3 brought the segmented on-heap memory container. 9.4 "
-"extends this to provide the benefits of segmentation to off-heap as well as "
-"all of the core cache stores. Watch as your bulk operations (size, "
-"iteration, streams) get a big performance boost !"
-msgstr ""
-"どこでもセグメンテーション 9.3では、セグメント化されたオンヒープメモリコンテナが導入されました。9.4 "
-"ではこれを拡張し、オフヒープやすべてのコアキャッシュストアにセグメンテーションの利点を提供します。バルク処理(サイズ、反復、ストリーム)のパフォーマンスが大幅に向上しています。"
+msgid "Segments everywhere 9.3 brought the segmented on-heap memory container. 9.4 extends this to provide the benefits of segmentation to off-heap as well as all of the core cache stores. Watch as your bulk operations (size, iteration, streams) get a big performance boost !"
+msgstr "どこでもセグメンテーション 9.3では、セグメント化されたオンヒープメモリコンテナが導入されました。9.4 ではこれを拡張し、オフヒープやすべてのコアキャッシュストアにセグメンテーションの利点を提供します。バルク処理(サイズ、反復、ストリーム)のパフォーマンスが大幅に向上しています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-08-infinispan-940final.adoc:36
 #, fuzzy
-msgid ""
-"Transcoding everywhere To paraphrase the Grand Moff Tarkin, “The last "
-"remnants of Compatibility Mode have been swept away”. Transcoding, i.e. the "
-"ability to transparently convert between a number of formats across "
-"different endpoints, is now “fully operational”."
-msgstr ""
-"どこでもトランスコーディング Grand Moff "
-"Tarkinの言葉を借りるならば、「互換モードの最後の名残が一掃された」ということになります。トランスコーディング、つまり、異なるエンドポイント間で様々なフォーマットを透過的に変換する機能は、今では「完全に動作する」ようになりました。"
+msgid "Transcoding everywhere To paraphrase the Grand Moff Tarkin, “The last remnants of Compatibility Mode have been swept away”. Transcoding, i.e. the ability to transparently convert between a number of formats across different endpoints, is now “fully operational”."
+msgstr "どこでもトランスコーディング Grand Moff Tarkinの言葉を借りるならば、「互換モードの最後の名残が一掃された」ということになります。トランスコーディング、つまり、異なるエンドポイント間で様々なフォーマットを透過的に変換する機能は、今では「完全に動作する」ようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-08-infinispan-940final.adoc:39
@@ -121,9 +103,7 @@ msgstr "どこでも取引 ホットロッドの取引は回復をサポート�
 #. type: Plain text
 #: upstream/_posts/2018-10-08-infinispan-940final.adoc:42
 #, fuzzy
-msgid ""
-"Hot Rod client improvements The Hot Rod client has received many "
-"improvements:"
+msgid "Hot Rod client improvements The Hot Rod client has received many improvements:"
 msgstr "ホットロッドクライアントの改善 ホットロッドクライアントは、多くの改善を受けています。"
 
 #. type: Plain text
@@ -141,9 +121,7 @@ msgstr "ニアキャッシュのスケーラビリティと挙動の改善"
 #. type: Plain text
 #: upstream/_posts/2018-10-08-infinispan-940final.adoc:48
 #, fuzzy
-msgid ""
-"All of the configuration can now be supplied via the properties, which also "
-"means easier integration with other frameworks, such as Spring Boot."
+msgid "All of the configuration can now be supplied via the properties, which also means easier integration with other frameworks, such as Spring Boot."
 msgstr "すべての設定はプロパティから提供できるようになり、Spring Bootのような他のフレームワークとの統合も容易になりました。"
 
 #. type: Plain text
@@ -155,13 +133,8 @@ msgstr "クエリの改善 多数のクリーンアップと改善"
 #. type: Plain text
 #: upstream/_posts/2018-10-08-infinispan-940final.adoc:56
 #, fuzzy
-msgid ""
-"Bugfixes, stability, reliability Although not as exciting as new features, "
-"we continued our work to improve the stability, reliability and performance "
-"of all aspects of Infinispan."
-msgstr ""
-"バグフィックス、安定性、信頼性 "
-"新機能ほどエキサイティングなものではありませんが、Infinispanのすべての面で安定性、信頼性、パフォーマンスを向上させるための作業を継続しました。"
+msgid "Bugfixes, stability, reliability Although not as exciting as new features, we continued our work to improve the stability, reliability and performance of all aspects of Infinispan."
+msgstr "バグフィックス、安定性、信頼性 新機能ほどエキサイティングなものではありませんが、Infinispanのすべての面で安定性、信頼性、パフォーマンスを向上させるための作業を継続しました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-08-infinispan-940final.adoc:58

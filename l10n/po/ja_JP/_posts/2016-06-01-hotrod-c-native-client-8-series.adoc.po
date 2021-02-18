@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:12
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: HotRod C++ Native Client 8 Series\n"
@@ -34,10 +34,8 @@ msgid ""
 "tags: [ \"c++\",\n"
 "\"hotrod\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3077813811486842269\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/06/hotrod-c-native-client-"
-"8-series.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3077813811486842269\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/06/hotrod-c-native-client-8-series.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -48,51 +46,32 @@ msgstr ""
 "tags: [ \"c++\",\n"
 "\"hotrod\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3077813811486842269\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/06/hotrod-c-native-client-"
-"8-series.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3077813811486842269\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/06/hotrod-c-native-client-8-series.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:16
 #, fuzzy
-msgid ""
-"The Infinispan Team started the development of the new HotRod C++ Client "
-"(version 8) with two main goals in mind: update and refresh the code and "
-"reduce the feature gap between the C++ client and its Java big brother."
-msgstr ""
-"Infinispanチームは、新しいHotRod "
-"Cクライアント（バージョン8）の開発を2つの主な目標を念頭に置いて開始しました：コードの更新とリフレッシュ、CクライアントとJavaの兄貴分との間の機能ギャップの縮小です。"
+msgid "The Infinispan Team started the development of the new HotRod C++ Client (version 8) with two main goals in mind: update and refresh the code and reduce the feature gap between the C++ client and its Java big brother."
+msgstr "Infinispanチームは、新しいHotRod Cクライアント（バージョン8）の開発を2つの主な目標を念頭に置いて開始しました：コードの更新とリフレッシュ、CクライアントとJavaの兄貴分との間の機能ギャップの縮小です。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:22
 #, fuzzy
-msgid ""
-"The work is still in progress, but since we're close to the 8.0.0.Final "
-"release, I would like to describe, in this and in the following posts, "
-"what's changed as of today."
-msgstr ""
-"まだまだ作業は続いていますが、8.0.0.Finalリリースが近いので、今日現在で何が変わったのかを、この記事と以下の記事で説明していきたいと思います。"
+msgid "The work is still in progress, but since we're close to the 8.0.0.Final release, I would like to describe, in this and in the following posts, what's changed as of today."
+msgstr "まだまだ作業は続いていますが、8.0.0.Finalリリースが近いので、今日現在で何が変わったのかを、この記事と以下の記事で説明していきたいと思います。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:30
 #, fuzzy
-msgid ""
-"Although there are a lot of changes and improvements in the code (protocol "
-"updates, segments topology, configurable balancing strategy...  you can have "
-"a detailed view of the activities stream browsing to the https://issues."
-"jboss.org/projects/HRCPP/issues[Jira issues]), I would like to focus on the "
-"following three big changes:"
-msgstr ""
-"コードには多くの変更点や改善点がありますが（プロトコルの更新、セグメントのトポロジー、設定可能なバランシング戦略... link:https://"
-"issues.jboss.org/projects/HRCPP/issues[Jiraの課題] "
-"に閲覧するアクティビティストリームの詳細なビューを持つことができます）、私は次の3つの大きな変更点に焦点を当てたいと思います。"
+msgid "Although there are a lot of changes and improvements in the code (protocol updates, segments topology, configurable balancing strategy...  you can have a detailed view of the activities stream browsing to the https://issues.jboss.org/projects/HRCPP/issues[Jira issues]), I would like to focus on the following three big changes:"
+msgstr "コードには多くの変更点や改善点がありますが（プロトコルの更新、セグメントのトポロジー、設定可能なバランシング戦略... link:https://issues.jboss.org/projects/HRCPP/issues[Jiraの課題] に閲覧するアクティビティストリームの詳細なビューを持つことができます）、私は次の3つの大きな変更点に焦点を当てたいと思います。"
 
 #. type: Title ==
 #: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:32
 #: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:35
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "C++11 Standard"
 msgstr "C++11標準"
 
@@ -111,66 +90,32 @@ msgstr "クエリー"
 #. type: Plain text
 #: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:44
 #, fuzzy
-msgid ""
-"Activities grouped under this title are motivated by the change in the "
-"development approach of the new features. Until version 7 [#result_box]#we "
-"have followed the approach of keeping the baseline compiler requirements "
-"quite low to ensure a broad client portability, even to platforms with old "
-"compilers/libraries, #[#result_box]#but when we started development for the "
-"8 series we felt that this principle would excessively complicate the "
-"implementation of new features.#"
-msgstr ""
-"このタイトルの下にグループ化された活動は、新機能の開発アプローチの変更を動機としています。バージョン7までは、古いコンパイラ/"
-"ライブラリを使用しているプラットフォームでもクライアントの移植性を広く確保するために、ベースラインのコンパイラ要件をかなり低く抑えるというアプローチをとってきましたが、#[#result_box]#8シリーズの開発を開始したときに、この原則が新機能の実装を過度に複雑にすると感じました。"
+msgid "Activities grouped under this title are motivated by the change in the development approach of the new features. Until version 7 [#result_box]#we have followed the approach of keeping the baseline compiler requirements quite low to ensure a broad client portability, even to platforms with old compilers/libraries, #[#result_box]#but when we started development for the 8 series we felt that this principle would excessively complicate the implementation of new features.#"
+msgstr "このタイトルの下にグループ化された活動は、新機能の開発アプローチの変更を動機としています。バージョン7までは、古いコンパイラ/ライブラリを使用しているプラットフォームでもクライアントの移植性を広く確保するために、ベースラインのコンパイラ要件をかなり低く抑えるというアプローチをとってきましたが、#[#result_box]#8シリーズの開発を開始したときに、この原則が新機能の実装を過度に複雑にすると感じました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:51
 #, fuzzy
-msgid ""
-"With this in mind, we have fully embraced the new C++11 language feature "
-"(such as lambda function in the asynchronous interface method, or variadic "
-"templates) and pushed for extensive use of standard library container "
-"classes in lieu of our custom ones."
-msgstr ""
-"これを念頭に置いて、C++11 "
-"の新しい言語機能（非同期インターフェイス・メソッドのラムダ関数やバリアディック・テンプレートなど）を完全に取り入れ、カスタムのライブラリ・コンテナ・クラスの代わりに標準ライブラリ・コンテナ・クラスを幅広く使用することを推し進めてきました。"
+msgid "With this in mind, we have fully embraced the new C++11 language feature (such as lambda function in the asynchronous interface method, or variadic templates) and pushed for extensive use of standard library container classes in lieu of our custom ones."
+msgstr "これを念頭に置いて、C++11 の新しい言語機能（非同期インターフェイス・メソッドのラムダ関数やバリアディック・テンプレートなど）を完全に取り入れ、カスタムのライブラリ・コンテナ・クラスの代わりに標準ライブラリ・コンテナ・クラスを幅広く使用することを推し進めてきました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:59
 #, fuzzy
-msgid ""
-"We know that in this way we may have limited use of the client to more "
-"recent platforms (bye bye RHEL 6) but fortunately the source is open and we "
-"have a very good build procedure based on cmake that can easily generates "
-"builder for the most used pair <compiler model, compiler version>."
-msgstr ""
-"この方法では、より最近のプラットフォーム(バイバイRHEL "
-"6)でのクライアントの使用が制限されるかもしれないことを知っていますが、幸いにもソースはオープンで、最も使用されているペア(<コンパイラモデル、コンパイラバージョン>)のビルダーを簡単に生成できるcmakeをベースとした非常に優れたビルド手順を持っています。"
+msgid "We know that in this way we may have limited use of the client to more recent platforms (bye bye RHEL 6) but fortunately the source is open and we have a very good build procedure based on cmake that can easily generates builder for the most used pair <compiler model, compiler version>."
+msgstr "この方法では、より最近のプラットフォーム(バイバイRHEL 6)でのクライアントの使用が制限されるかもしれないことを知っていますが、幸いにもソースはオープンで、最も使用されているペア(<コンパイラモデル、コンパイラバージョン>)のビルダーを簡単に生成できるcmakeをベースとした非常に優れたビルド手順を持っています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:66
 #, fuzzy
-msgid ""
-"The work on C++11 language adoption is still in progress and the goal on "
-"this front is to update the code wherever it results in improved readability "
-"(i.e. the _auto_ keyword is a simple but powerful way to reduce code "
-"verbosity)."
-msgstr ""
-"C++11 言語の採用に関する作業はまだ進行中であり、この前線での目標は、可読性の向上につながるところはどこでもコードを更新することです（つまり、 "
-"_自動_ キーワードは、コードの冗長性を減らすためのシンプルだが強力な方法です）。"
+msgid "The work on C++11 language adoption is still in progress and the goal on this front is to update the code wherever it results in improved readability (i.e. the _auto_ keyword is a simple but powerful way to reduce code verbosity)."
+msgstr "C++11 言語の採用に関する作業はまだ進行中であり、この前線での目標は、可読性の向上につながるところはどこでもコードを更新することです（つまり、 _自動_ キーワードは、コードの冗長性を減らすためのシンプルだが強力な方法です）。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:75
 #, fuzzy
-msgid ""
-"Because in this cycle we have added a few new features that required the "
-"introduction of some library dependencies and automatic code generation, "
-"[#result_box]#the build process has become more complex, but we're doing our "
-"best to keep it manageable. We want to ensure that our packaging structure "
-"is what users expect on all of our platforms with respect to libraries, "
-"headers and documentation.#"
-msgstr ""
-"このサイクルでは、いくつかのライブラリ依存関係の導入と自動コード生成を必要とするいくつかの新機能を追加したため、ビルドプロセスはより複雑になっていますが、管理しやすい状態を維持するために最善を尽くしています。私たちのパッケージ構造が、ライブラリ、ヘッダ、ドキュメントに関して、すべてのプラットフォームでユーザーが期待するものであることを保証したいと考えています。"
+msgid "Because in this cycle we have added a few new features that required the introduction of some library dependencies and automatic code generation, [#result_box]#the build process has become more complex, but we're doing our best to keep it manageable. We want to ensure that our packaging structure is what users expect on all of our platforms with respect to libraries, headers and documentation.#"
+msgstr "このサイクルでは、いくつかのライブラリ依存関係の導入と自動コード生成を必要とするいくつかの新機能を追加したため、ビルドプロセスはより複雑になっていますが、管理しやすい状態を維持するために最善を尽くしています。私たちのパッケージ構造が、ライブラリ、ヘッダ、ドキュメントに関して、すべてのプラットフォームでユーザーが期待するものであることを保証したいと考えています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:78
@@ -184,17 +129,13 @@ msgstr "[result_box] #"
 #. type: Plain text
 #: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:81
 #, fuzzy
-msgid ""
-"[#result_box]#I will be glad to hear from any of you about any thoughts and "
-"suggestions, especially on the portability issues.#"
+msgid "[#result_box]#I will be glad to hear from any of you about any thoughts and suggestions, especially on the portability issues.#"
 msgstr "特に携帯性の問題について、何かご意見やご提案があればお聞かせいただければ幸いです。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-01-hotrod-c-native-client-8-series.adoc:87
 #, fuzzy
-msgid ""
-"[#result_box]#In the next post I will show an example of the new Remote "
-"Script Execution features.#"
+msgid "[#result_box]#In the next post I will show an example of the new Remote Script Execution features.#"
 msgstr "次の記事では、新しいリモートスクリプト実行機能の例を紹介します。"
 
 #. type: Plain text

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:13
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan memory overhead\n"
@@ -35,10 +35,8 @@ msgid ""
 "\"memory\",\n"
 "\"performance\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2015345639455049711\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/01/infinispan-memory-"
-"overhead.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2015345639455049711\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/01/infinispan-memory-overhead.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -50,21 +48,15 @@ msgstr ""
 "\"memory\",\n"
 "\"performance\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2015345639455049711\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/01/infinispan-memory-"
-"overhead.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2015345639455049711\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/01/infinispan-memory-overhead.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:17
 #, fuzzy
-msgid ""
-"Have you ever wondered how much Java heap memory is actually consumed when "
-"data is stored in Infinispan cache? Let's look at some numbers obtained "
-"through real measurement."
-msgstr ""
-"Infinispanのキャッシュにデータを保存する際に、実際にJavaのヒープメモリがどれくらい消費されているのか気になったことはありませんか？実測で得られた数字を見てみましょう。"
+msgid "Have you ever wondered how much Java heap memory is actually consumed when data is stored in Infinispan cache? Let's look at some numbers obtained through real measurement."
+msgstr "Infinispanのキャッシュにデータを保存する際に、実際にJavaのヒープメモリがどれくらい消費されているのか気になったことはありませんか？実測で得られた数字を見てみましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:19
@@ -75,31 +67,20 @@ msgstr "戦略は次のようなものでした。"
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:22
 #, fuzzy
-msgid ""
-"Start Infinispan server in local mode (only one server instance, eviction "
-"disabled)"
+msgid "Start Infinispan server in local mode (only one server instance, eviction disabled)"
 msgstr "ローカルモードでInfinispanサーバを起動します。"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:26
 #, fuzzy
-msgid ""
-"Keep calling full garbage collection (via JMX or directly via System.gc() "
-"when Infinispan is deployed as a library) until the difference in consumed "
-"memory by the running server gets under 100kB between two consecutive runs "
-"of GC"
-msgstr ""
-"の2つの連続実行の間に、実行中のサーバーで消費されるメモリの差が100kB以下になるまで、フルガベージコレクション（JMXを介して、またはInfinispanがライブラリとしてデプロイされている場合はSystem."
-"gc()を介して直接）を呼び出し続けます。"
+msgid "Keep calling full garbage collection (via JMX or directly via System.gc() when Infinispan is deployed as a library) until the difference in consumed memory by the running server gets under 100kB between two consecutive runs of GC"
+msgstr "の2つの連続実行の間に、実行中のサーバーで消費されるメモリの差が100kB以下になるまで、フルガベージコレクション（JMXを介して、またはInfinispanがライブラリとしてデプロイされている場合はSystem.gc()を介して直接）を呼び出し続けます。"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:28
 #, fuzzy
-msgid ""
-"Load the cache with *100MB* of data via respective client (or directly store "
-"in the cache when Infinispan is deployed as a library)"
-msgstr ""
-"各クライアント経由で *100MB* のデータをキャッシュにロード（Infinispanがライブラリとして展開されている場合は直接キャッシュに格納）。"
+msgid "Load the cache with *100MB* of data via respective client (or directly store in the cache when Infinispan is deployed as a library)"
+msgstr "各クライアント経由で *100MB* のデータをキャッシュにロード（Infinispanがライブラリとして展開されている場合は直接キャッシュに格納）。"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:29
@@ -110,29 +91,20 @@ msgstr "使用済みメモリが安定するまでGCを呼び出し続ける"
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:31
 #, fuzzy
-msgid ""
-"Measure the difference between the final values of consumed memory after the "
-"first and second cycle of GC runs"
+msgid "Measure the difference between the final values of consumed memory after the first and second cycle of GC runs"
 msgstr "GC の 1 サイクル目と 2 サイクル目の実行後の消費メモリの最終値の差を測定します。"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:33
 #, fuzzy
-msgid ""
-"Repeat steps 3, 4 and 5 four times to get an average value (first iteration "
-"ignored)"
+msgid "Repeat steps 3, 4 and 5 four times to get an average value (first iteration ignored)"
 msgstr "ステップ3、4、5を4回繰り返して平均値を得る（最初の反復は無視される）。"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:37
 #, fuzzy
-msgid ""
-"The amount of consumed memory was obtained from a verbose GC log (related "
-"JVM options: -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -Xloggc:/"
-"tmp/gc.log)"
-msgstr ""
-"消費されたメモリの量は、冗長なGCログから取得されました（関連するJVMオプション。-Verbose:gc -XX:+PrintGCDetails -"
-"XX:+PrintGCTimeStamps -Xloggc:/tmp/gc.log)"
+msgid "The amount of consumed memory was obtained from a verbose GC log (related JVM options: -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -Xloggc:/tmp/gc.log)"
+msgstr "消費されたメモリの量は、冗長なGCログから取得されました（関連するJVMオプション。-Verbose:gc -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -Xloggc:/tmp/gc.log)"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:39
@@ -143,24 +115,18 @@ msgstr "テスト出力は以下のようになります: https://gist.github.co
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:44
 #, fuzzy
-msgid ""
-"The operating system (Ubuntu) as well as JVM (Oracle JDK 1.6) were 64-bit. "
-"Infinispan 5.2.0.Beta6. Keys were kept intentionally small (10 character "
-"Strings) with byte arrays as values. The target entry size is a sum of key "
-"size and value size."
-msgstr ""
-"OS（Ubuntu）だけでなく、JVM（Oracle JDK 1.6）も64bitでした。Infinispan 5.2.0."
-"Beta6でした。キーは意図的に小さく（10文字の文字列）し、値はバイト配列とした。目標とするエントリサイズは、キーサイズと値のサイズの合計です。"
+msgid "The operating system (Ubuntu) as well as JVM (Oracle JDK 1.6) were 64-bit. Infinispan 5.2.0.Beta6. Keys were kept intentionally small (10 character Strings) with byte arrays as values. The target entry size is a sum of key size and value size."
+msgstr "OS（Ubuntu）だけでなく、JVM（Oracle JDK 1.6）も64bitでした。Infinispan 5.2.0.Beta6でした。キーは意図的に小さく（10文字の文字列）し、値はバイト配列とした。目標とするエントリサイズは、キーサイズと値のサイズの合計です。"
 
 #. type: Title ==
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:46
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "*Memory overhead of Infinispan accessed through clients*"
 msgstr "*クライアントからアクセスされるInfinispanのメモリオーバーヘッド*"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:52
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "*HotRod client*\n"
 msgstr "*ホットロッドクライアント*"
 
@@ -236,7 +202,7 @@ msgstr "1MB(1048576B)/1048821B → ～245B"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:80
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "*MemCached client (text protocol, SpyMemcached client) *\n"
 msgstr "*MemCached クライアント (テキスト プロトコル、SpyMemcached クライアント)*"
 
@@ -284,7 +250,7 @@ msgstr "10kB(10240B)/10422B → ～182B"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:107
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "*REST client (Content-Type: application/octet-stream)*\n"
 msgstr "*REST クライアント (Content-Type: application/octet-stream)*"
 
@@ -339,26 +305,20 @@ msgstr "1MB(1048576B)/1048698B → ～123B"
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:135
 #, fuzzy
-msgid ""
-"The memory overhead for individual entries seems to be more or less constant "
-"across different cache entry sizes."
+msgid "The memory overhead for individual entries seems to be more or less constant across different cache entry sizes."
 msgstr "個々のエントリのメモリオーバーヘッドは、異なるキャッシュエントリサイズの間で多かれ少なかれ一定であるように思われます。"
 
 #. type: Title ==
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:137
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Memory overhead of Infinispan deployed as a library"
 msgstr "ライブラリとしてデプロイされたInfinispanのメモリオーバーヘッド"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:142
 #, fuzzy
-msgid ""
-"Infinispan was deployed to http://www.jboss.org/jbossas[JBoss Application "
-"Server 7] using http://arquillian.org/[Arquillian]."
-msgstr ""
-"Infinispan は link:http://arquillian.org/[Arquillian を] 使用して link:http://www."
-"jboss.org/jbossas[JBoss Application Server 7] にデプロイされました。"
+msgid "Infinispan was deployed to http://www.jboss.org/jbossas[JBoss Application Server 7] using http://arquillian.org/[Arquillian]."
+msgstr "Infinispan は link:http://arquillian.org/[Arquillian を] 使用して link:http://www.jboss.org/jbossas[JBoss Application Server 7] にデプロイされました。"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:145
@@ -393,16 +353,13 @@ msgstr "1MB → 102414kB / 102415kB"
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:157
 #, fuzzy
-msgid ""
-"There was almost no difference in overall consumed memory when enabling or "
-"disabling storeAsBinary."
+msgid "There was almost no difference in overall consumed memory when enabling or disabling storeAsBinary."
 msgstr "storeAsBinaryを有効にしても無効にしても、全体的な消費メモリにはほとんど差がありませんでした。"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:161
 #, fuzzy
-msgid ""
-"entry size/actual memory per entry-> overhead per entry (w/o storeAsBinary)"
+msgid "entry size/actual memory per entry-> overhead per entry (w/o storeAsBinary)"
 msgstr "エントリサイズ/エントリあたりの実メモリ→ エントリあたりのオーバーヘッド (storeAsBinaryを使用しない場合)"
 
 #. type: Plain text
@@ -432,32 +389,20 @@ msgstr "1MB(1048576B)/1048719B → ～143B"
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:173
 #, fuzzy
-msgid ""
-"As you can see, the overhead per entry is constant across different entry "
-"sizes and is ~151 bytes."
+msgid "As you can see, the overhead per entry is constant across different entry sizes and is ~151 bytes."
 msgstr "ご覧のように、エントリあたりのオーバーヘッドは、異なるエントリサイズの間で一定で、~151バイトです。"
 
 #. type: Title ==
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:175
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Conclusion"
 msgstr "結論"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:185
 #, fuzzy
-msgid ""
-"The memory overhead is slightly more than 150 bytes per entry when storing "
-"data into the cache locally. When accessing the cache via remote clients, "
-"the memory overhead is a little bit higher and ranges from ~170 to ~250 "
-"bytes, depending on remote client type and cache entry size. If we ignored "
-"the statistics for 1MB entries, which could be affected by a small number of "
-"entries (100) stored in the cache, the range would have been even narrower."
-msgstr ""
-"メモリオーバーヘッドは、ローカルでキャッシュにデータを保存する場合、1 エントリあたり 150 "
-"バイトをわずかに超えます。リモートクライアントを経由してキャッシュにアクセスする場合、メモリオーバーヘッドは少し高く、リモートクライアントのタイプとキャッシュエントリのサイズに応じて "
-"~170 バイトから ~250 "
-"バイトの範囲になります。キャッシュに格納されているエントリ数が少ない（100）場合に影響を受ける可能性のある1MBエントリの統計を無視した場合、範囲はさらに狭くなっていたでしょう。"
+msgid "The memory overhead is slightly more than 150 bytes per entry when storing data into the cache locally. When accessing the cache via remote clients, the memory overhead is a little bit higher and ranges from ~170 to ~250 bytes, depending on remote client type and cache entry size. If we ignored the statistics for 1MB entries, which could be affected by a small number of entries (100) stored in the cache, the range would have been even narrower."
+msgstr "メモリオーバーヘッドは、ローカルでキャッシュにデータを保存する場合、1 エントリあたり 150 バイトをわずかに超えます。リモートクライアントを経由してキャッシュにアクセスする場合、メモリオーバーヘッドは少し高く、リモートクライアントのタイプとキャッシュエントリのサイズに応じて ~170 バイトから ~250 バイトの範囲になります。キャッシュに格納されているエントリ数が少ない（100）場合に影響を受ける可能性のある1MBエントリの統計を無視した場合、範囲はさらに狭くなっていたでしょう。"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-12-infinispan-memory-overhead.adoc:188

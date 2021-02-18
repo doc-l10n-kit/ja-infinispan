@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,26 +18,23 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-03-10-jdbc-migrator-or-how-i-learned-to-stop.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-10-jdbc-migrator-or-how-i-learned-to-stop.adoc:11
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
-"title: 'JDBC Migrator or: How I Learned to Stop Worrying About Buckets and "
-"Utilise\n"
+"title: 'JDBC Migrator or: How I Learned to Stop Worrying About Buckets and Utilise\n"
 "permalink: /blog/:year/:month/:day/jdbc-migrator-or-how-i-learned-to-stop\n"
 "  the JdbcStringBasedStore!'\n"
 "date: '2017-03-10T02:27:00.000-08:00'\n"
 "author: remerson\n"
 "tags: [ \"jdbc\", \"cache stores\", \"migration\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8580712697275598944\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/03/jdbc-migrator-or-how-i-"
-"learned-to-stop.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8580712697275598944\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/03/jdbc-migrator-or-how-i-learned-to-stop.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -47,111 +44,63 @@ msgstr ""
 "date: '2017-03-10T02:27:00.000-08:00'\n"
 "author: remerson\n"
 "tags: [ \"jdbc\", \"cache stores\", \"migration\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8580712697275598944\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/03/jdbc-migrator-or-how-i-"
-"learned-to-stop.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8580712697275598944\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/03/jdbc-migrator-or-how-i-learned-to-stop.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-10-jdbc-migrator-or-how-i-learned-to-stop.adoc:19
 #, fuzzy
-msgid ""
-"Infinispan 9 has introduced many improvements to its marshalling codebase in "
-"order to improve performance and allow for greater flexibility. "
-"Consequently, data marshalled and persisted by Infinispan 8.x is no longer "
-"compatible with Infinispan 9.x. Furthermore, as part of our ongoing efforts "
-"to improve the cache stores provided by Infinispan, we have removed both the "
-"JdbcBinaryStore and JdbcMixedStore in Infinispan 9.0."
-msgstr ""
-"Infinispan 9 "
-"では、パフォーマンスを向上させ、柔軟性を高めるために、マーシャリングのコードベースに多くの改良が加えられました。その結果、Infinispan 8."
-"xでマーシャリングされ永続化されたデータはInfinispan 9."
-"xと互換性がなくなりました。さらに、Infinispanが提供するキャッシュストアを改善するための継続的な努力の一環として、Infinispan 9."
-"0ではJdbcBinaryStoreとJdbcMixedStoreの両方を削除しました。"
+msgid "Infinispan 9 has introduced many improvements to its marshalling codebase in order to improve performance and allow for greater flexibility. Consequently, data marshalled and persisted by Infinispan 8.x is no longer compatible with Infinispan 9.x. Furthermore, as part of our ongoing efforts to improve the cache stores provided by Infinispan, we have removed both the JdbcBinaryStore and JdbcMixedStore in Infinispan 9.0."
+msgstr "Infinispan 9 では、パフォーマンスを向上させ、柔軟性を高めるために、マーシャリングのコードベースに多くの改良が加えられました。その結果、Infinispan 8.xでマーシャリングされ永続化されたデータはInfinispan 9.xと互換性がなくなりました。さらに、Infinispanが提供するキャッシュストアを改善するための継続的な努力の一環として、Infinispan 9.0ではJdbcBinaryStoreとJdbcMixedStoreの両方を削除しました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-10-jdbc-migrator-or-how-i-learned-to-stop.adoc:23
 #, fuzzy
-msgid ""
-"To assist users migrating from Infinispan 8.x, we have created the JDBC "
-"Migrator that enables existing JDBC stores to be migrated to Infinispan 9's "
-"JdbcStringBasedStore."
-msgstr ""
-"Infinispan 8.xからの移行を支援するために、既存のJDBCストアをInfinispan "
-"9のJdbcStringBasedStoreに移行できるようにするJDBC Migratorを作成しました。"
+msgid "To assist users migrating from Infinispan 8.x, we have created the JDBC Migrator that enables existing JDBC stores to be migrated to Infinispan 9's JdbcStringBasedStore."
+msgstr "Infinispan 8.xからの移行を支援するために、既存のJDBCストアをInfinispan 9のJdbcStringBasedStoreに移行できるようにするJDBC Migratorを作成しました。"
 
 #. type: Title ==
 #: upstream/_posts/2017-03-10-jdbc-migrator-or-how-i-learned-to-stop.adoc:26
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "No More Binary Keyed Stores!"
 msgstr "バイナリーキーの店はもういらない!"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-10-jdbc-migrator-or-how-i-learned-to-stop.adoc:39
 #, fuzzy
-msgid ""
-"The original intention of the JdbcBinaryStore was to provide greater "
-"flexibility over the JdbcStringBasedStore as it did not require a "
-"Key2StringMapper implementation.  This was achieved by utilising the "
-"hashcode of an entries key for a table's ID column entry.  However, due to "
-"the possibility of hash collisions all entries had to be placed inside a "
-"Bucket object which was then serialised and inserted into the underlying "
-"table. Utilising buckets in this manner was far from optimal as each read/"
-"write to the underlying table required an existing bucket for a given hash "
-"to be retrieved, deserialised, updated, serialised and then re-inserted back "
-"into the db."
-msgstr ""
-"JdbcBinaryStoreの当初の意図は、Key2StringMapperの実装を必要としないため、JdbcStringBasedStoreよりも柔軟性が高いことでした。 "
-"これは、テーブルのIDカラムエントリのエントリキーのハッシュコードを利用することで達成されました。 "
-"しかし、ハッシュの衝突の可能性があるため、すべてのエントリはバケットオブジェクトの中に配置され、シリアライズされて基になるテーブルに挿入されなければなりませんでした。この方法でバケットを利用することは最適ではありませんでした。"
+msgid "The original intention of the JdbcBinaryStore was to provide greater flexibility over the JdbcStringBasedStore as it did not require a Key2StringMapper implementation.  This was achieved by utilising the hashcode of an entries key for a table's ID column entry.  However, due to the possibility of hash collisions all entries had to be placed inside a Bucket object which was then serialised and inserted into the underlying table. Utilising buckets in this manner was far from optimal as each read/write to the underlying table required an existing bucket for a given hash to be retrieved, deserialised, updated, serialised and then re-inserted back into the db."
+msgstr "JdbcBinaryStoreの当初の意図は、Key2StringMapperの実装を必要としないため、JdbcStringBasedStoreよりも柔軟性が高いことでした。 これは、テーブルのIDカラムエントリのエントリキーのハッシュコードを利用することで達成されました。 しかし、ハッシュの衝突の可能性があるため、すべてのエントリはバケットオブジェクトの中に配置され、シリアライズされて基になるテーブルに挿入されなければなりませんでした。この方法でバケットを利用することは最適ではありませんでした。"
 
 #. type: Title ==
 #: upstream/_posts/2017-03-10-jdbc-migrator-or-how-i-learned-to-stop.adoc:42
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Introducing JDBC Migrator"
 msgstr "JDBCマイグレータの紹介"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-10-jdbc-migrator-or-how-i-learned-to-stop.adoc:52
 #, fuzzy
-msgid ""
-"The JDBCMigrator is a standalone application that takes a single argument, "
-"the path to a .properties file which must contain the configuration "
-"properties for both the source and target stores.  To use the migrator you "
-"need the infinispan-tools-9.x.jar, as well as the jdbc drivers required by "
-"your source and target databases, on your classpath."
-msgstr ""
-"JDBCMigratorはスタンドアロンのアプリケーションで、ソースとターゲットの両方のストアの設定プロパティを含む必要がある."
-"propertiesファイルへのパスを1つの引数として受け取ります。 マイグレータを使用するには、infinispan-tools-9.x."
-"jarと、ソースとターゲットのデータベースに必要なjdbcドライバがクラスパス上に必要となります。"
+msgid "The JDBCMigrator is a standalone application that takes a single argument, the path to a .properties file which must contain the configuration properties for both the source and target stores.  To use the migrator you need the infinispan-tools-9.x.jar, as well as the jdbc drivers required by your source and target databases, on your classpath."
+msgstr "JDBCMigratorはスタンドアロンのアプリケーションで、ソースとターゲットの両方のストアの設定プロパティを含む必要がある.propertiesファイルへのパスを1つの引数として受け取ります。 マイグレータを使用するには、infinispan-tools-9.x.jarと、ソースとターゲットのデータベースに必要なjdbcドライバがクラスパス上に必要となります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-10-jdbc-migrator-or-how-i-learned-to-stop.adoc:55
 #, fuzzy
-msgid ""
-"An example maven pom that launches the migrator via mvn exec:java is "
-"presented below:"
+msgid "An example maven pom that launches the migrator via mvn exec:java is presented below:"
 msgstr "mvn exec:java経由でマイグレータを起動するmaven pomの例を以下に示します。"
 
 #. type: Title ===
 #: upstream/_posts/2017-03-10-jdbc-migrator-or-how-i-learned-to-stop.adoc:60
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Migration Examples"
 msgstr "移行の例"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-10-jdbc-migrator-or-how-i-learned-to-stop.adoc:68
 #, fuzzy
-msgid ""
-"Below are several example .properties files used for migrating various "
-"stores, however an exhaustive list of all available properties can be found "
-"in the http://infinispan.org/docs/9.0.x/user_guide/user_guide."
-"html#jdbc_migrator[Infinispan user guide].  "
-msgstr ""
-"以下に、様々なストアの移行に使用されるいくつかの.propertiesファイルの例を示しますが、利用可能なすべてのプロパティの網羅的なリストは、 "
-"link:http://infinispan.org/docs/9.0.x/user_guide/user_guide."
-"html#jdbc_migrator[Infinispanのユーザーガイド] に記載されています。"
+msgid "Below are several example .properties files used for migrating various stores, however an exhaustive list of all available properties can be found in the http://infinispan.org/docs/9.0.x/user_guide/user_guide.html#jdbc_migrator[Infinispan user guide].  "
+msgstr "以下に、様々なストアの移行に使用されるいくつかの.propertiesファイルの例を示しますが、利用可能なすべてのプロパティの網羅的なリストは、 link:http://infinispan.org/docs/9.0.x/user_guide/user_guide.html#jdbc_migrator[Infinispanのユーザーガイド] に記載されています。"
 
 #. type: Bullet: '*
 #. type: '
@@ -162,7 +111,7 @@ msgstr "*"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-10-jdbc-migrator-or-how-i-learned-to-stop.adoc:76
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "*Before attempting to migrate your existing stores please ensure you\n"
 "have backed up your database!*\n"
@@ -172,85 +121,48 @@ msgstr "*既存の店舗の移行を試みる前に、データベースのバ�
 
 #. type: Title ====
 #: upstream/_posts/2017-03-10-jdbc-migrator-or-how-i-learned-to-stop.adoc:77
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "8.x JdbcBinaryStore -> 9.x JdbcStringBasedStore"
 msgstr "8.x JdbcBinaryStore → 9.x JdbcStringBasedStore"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-10-jdbc-migrator-or-how-i-learned-to-stop.adoc:85
 #, fuzzy
-msgid ""
-"The most important property to set in this example is \"source.marshaller."
-"type=LEGACY\" as this instructs the migrator to utilise the Infinispan 8.x "
-"marshaller to unmarshall data stored in your existing DB tables. "
-msgstr ""
-"この例で設定する最も重要なプロパティは、\"source.marshaller.type="
-"LEGACY\"です。これは、マイグレータがInfinispan 8.x "
-"marshallerを使用して、既存のDBテーブルに格納されているデータのマーシャリングを解除するように指示するためです。"
+msgid "The most important property to set in this example is \"source.marshaller.type=LEGACY\" as this instructs the migrator to utilise the Infinispan 8.x marshaller to unmarshall data stored in your existing DB tables. "
+msgstr "この例で設定する最も重要なプロパティは、\"source.marshaller.type=LEGACY\"です。これは、マイグレータがInfinispan 8.x marshallerを使用して、既存のDBテーブルに格納されているデータのマーシャリングを解除するように指示するためです。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-10-jdbc-migrator-or-how-i-learned-to-stop.adoc:97
 #, fuzzy
-msgid ""
-"If you specified custom AdvancedExternalizer implementations in your "
-"Infinispan 8.x configuration, then it is necessary for you to specify these "
-"in the migrator configuration and ensure that they are available on the "
-"migrators classpath.  To Specify the AdvancedExternalizers to load, it is "
-"necessary to define the \"source.marshaller.externalizers\" property with a "
-"comma-separated list of class names. If an ID was explicitly set for your "
-"externalizer, then it is possible to prepend the externalizers class name "
-"with \"<id>:\" to ensure the IDs is respected by the marshaller. "
-msgstr ""
-"Infinispan 8.x 構成でカスタム AdvancedExternalizer "
-"実装を指定した場合は、マイグレータ構成でこれらを指定し、マイグレータのクラスパスで利用可能であることを確認する必要があります。 ロードする "
-"AdvancedExternalizer を指定するには、\"source.marshaller.externalizers\" "
-"プロパティにクラス名のカンマ区切りリストを定義する必要があります。IDが明示的に外部ライザに設定されている場合は、外部ライザのクラス名の前に\"<id>:"
-"\"を付けて、マーシャラーでIDが尊重されるようにすることができます。"
+msgid "If you specified custom AdvancedExternalizer implementations in your Infinispan 8.x configuration, then it is necessary for you to specify these in the migrator configuration and ensure that they are available on the migrators classpath.  To Specify the AdvancedExternalizers to load, it is necessary to define the \"source.marshaller.externalizers\" property with a comma-separated list of class names. If an ID was explicitly set for your externalizer, then it is possible to prepend the externalizers class name with \"<id>:\" to ensure the IDs is respected by the marshaller. "
+msgstr "Infinispan 8.x 構成でカスタム AdvancedExternalizer 実装を指定した場合は、マイグレータ構成でこれらを指定し、マイグレータのクラスパスで利用可能であることを確認する必要があります。 ロードする AdvancedExternalizer を指定するには、\"source.marshaller.externalizers\" プロパティにクラス名のカンマ区切りリストを定義する必要があります。IDが明示的に外部ライザに設定されている場合は、外部ライザのクラス名の前に\"<id>:\"を付けて、マーシャラーでIDが尊重されるようにすることができます。"
 
 #. type: Title ====
 #: upstream/_posts/2017-03-10-jdbc-migrator-or-how-i-learned-to-stop.adoc:104
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "TwoWayKey2StringMapper Migration"
 msgstr "TwoWayKey2StringMapper マイグレーション"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-10-jdbc-migrator-or-how-i-learned-to-stop.adoc:111
 #, fuzzy
-msgid ""
-"As well as using the JDBC Migrator to migrate from Infinispan 8.x, it is "
-"also possible to utilise it to migrate from one DB dialect to another or to "
-"migrate from one TwoWayKey2StringMapper implementation to another. "
-msgstr ""
-"JDBC Migrator を使用して Infinispan 8.x から移行するだけでなく、JDBC Migrator を使用して、ある DB "
-"の方言から別の DB への移行や、ある TwoWayKey2StringMapper の実装から別の実装への移行を行うことも可能です。"
+msgid "As well as using the JDBC Migrator to migrate from Infinispan 8.x, it is also possible to utilise it to migrate from one DB dialect to another or to migrate from one TwoWayKey2StringMapper implementation to another. "
+msgstr "JDBC Migrator を使用して Infinispan 8.x から移行するだけでなく、JDBC Migrator を使用して、ある DB の方言から別の DB への移行や、ある TwoWayKey2StringMapper の実装から別の実装への移行を行うことも可能です。"
 
 #. type: Title ===
 #: upstream/_posts/2017-03-10-jdbc-migrator-or-how-i-learned-to-stop.adoc:118
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Summary"
 msgstr "概要"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-10-jdbc-migrator-or-how-i-learned-to-stop.adoc:128
 #, fuzzy
-msgid ""
-"Infinispan 9 stores are no longer compatible with Infinispan 8.x stores due "
-"to internal marshalling changes. Furthermore, the JdbcBinary and JdbcMixed "
-"stores have been removed due to their poor performance characteristics.  To "
-"aid users in their transition from Infinispan 8.x we have created the JDBC "
-"Migrator to enable users to migrate their existing JDBC stores."
-msgstr ""
-"内部のマーシャリングの変更により、Infinispan 9 ストアは Infinispan 8.x "
-"ストアと互換性がなくなりました。さらに、JdbcBinary および JdbcMixed ストアは、パフォーマンスの特性が悪いため削除されました。 "
-"Infinispan 8.x からの移行を支援するために、ユーザーが既存の JDBC ストアを移行できるように JDBC Migrator "
-"を作成しました。"
+msgid "Infinispan 9 stores are no longer compatible with Infinispan 8.x stores due to internal marshalling changes. Furthermore, the JdbcBinary and JdbcMixed stores have been removed due to their poor performance characteristics.  To aid users in their transition from Infinispan 8.x we have created the JDBC Migrator to enable users to migrate their existing JDBC stores."
+msgstr "内部のマーシャリングの変更により、Infinispan 9 ストアは Infinispan 8.x ストアと互換性がなくなりました。さらに、JdbcBinary および JdbcMixed ストアは、パフォーマンスの特性が悪いため削除されました。 Infinispan 8.x からの移行を支援するために、ユーザーが既存の JDBC ストアを移行できるように JDBC Migrator を作成しました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-10-jdbc-migrator-or-how-i-learned-to-stop.adoc:132
 #, fuzzy
-msgid ""
-"If you're a user of the JDBC stores and have any feedback on the latest "
-"changes, let us know via the forum, issue tracker or the #infinispan channel "
-"on Freenode. "
-msgstr ""
-"JDBCストアのユーザーで、最新の変更点についてのフィードバックがあれば、フォーラム、イシュートラッカー、またはFreenodeの#infinispanチャンネルでお知らせください。"
+msgid "If you're a user of the JDBC stores and have any feedback on the latest changes, let us know via the forum, issue tracker or the #infinispan channel on Freenode. "
+msgstr "JDBCストアのユーザーで、最新の変更点についてのフィードバックがあれば、フォーラム、イシュートラッカー、またはFreenodeの#infinispanチャンネルでお知らせください。"

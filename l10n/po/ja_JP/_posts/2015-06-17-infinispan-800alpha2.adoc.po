@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-06-17-infinispan-800alpha2.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-06-17-infinispan-800alpha2.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 8.0.0.Alpha2\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2015-06-17T06:02:00.000-07:00'\n"
 "author: infinispan\n"
 "tags: [ \" release\",\"alpha\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2904340850111060223\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/06/infinispan-800alpha2."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2904340850111060223\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/06/infinispan-800alpha2.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,10 +42,8 @@ msgstr ""
 "date: '2015-06-17T06:02:00.000-07:00'\n"
 "author: infinispan\n"
 "tags: [ \" release\",\"alpha\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2904340850111060223\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/06/infinispan-800alpha2."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2904340850111060223\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/06/infinispan-800alpha2.html\n"
 "---\n"
 
 #. type: Plain text
@@ -59,9 +55,7 @@ msgstr "インフィニスパンのコミュニティへ"
 #. type: Plain text
 #: upstream/_posts/2015-06-17-infinispan-800alpha2.adoc:15
 #, fuzzy
-msgid ""
-"it is with great pleasure that we are announcing the release of Infinispan 8."
-"0.0.Alpha2 as we continue forward."
+msgid "it is with great pleasure that we are announcing the release of Infinispan 8.0.0.Alpha2 as we continue forward."
 msgstr "Infinispan 8.0.0.0.Alpha2のリリースを発表できることを大変嬉しく思います。"
 
 #. type: Plain text
@@ -73,83 +67,41 @@ msgstr "このリリースでは、いくつかの非常に便利な機能が追
 #. type: Plain text
 #: upstream/_posts/2015-06-17-infinispan-800alpha2.adoc:22
 #, fuzzy
-msgid ""
-"https://issues.jboss.org/browse/ISPN-5509[second batch for size-based "
-"eviction]: sized based eviction has been updated to work when storeAsBinary "
-"is enabled or if the cache only contains primitive wrapper types (Integer, "
-"Long.. etc), Strings or byte[]."
-msgstr ""
-"サイズベース link:https://issues.jboss.org/browse/ISPN-5509[のイビクションの第2バッチ] : "
-"サイズベースのイビクションは、storeAsBinaryが有効な場合、またはキャッシュにプリミティブなラッパー型(Integer、Long..."
-"など)、文字列、またはbyte[]しか含まれていない場合に動作するように更新されました。"
+msgid "https://issues.jboss.org/browse/ISPN-5509[second batch for size-based eviction]: sized based eviction has been updated to work when storeAsBinary is enabled or if the cache only contains primitive wrapper types (Integer, Long.. etc), Strings or byte[]."
+msgstr "サイズベース link:https://issues.jboss.org/browse/ISPN-5509[のイビクションの第2バッチ] : サイズベースのイビクションは、storeAsBinaryが有効な場合、またはキャッシュにプリミティブなラッパー型(Integer、Long...など)、文字列、またはbyte[]しか含まれていない場合に動作するように更新されました。"
 
 #. type: Plain text
 #: upstream/_posts/2015-06-17-infinispan-800alpha2.adoc:27
 #, fuzzy
-msgid ""
-"https://issues.jboss.org/browse/ISPN-5219[entry iterator over HotRod]: it is "
-"now possible to iterate over all the entries in a cache even in distributed "
-"mode using HotRod.  This provides full consistency guarantees under a rehash "
-"event (node goes up or down) and batches data to help prevent memory issues "
-"on the client."
-msgstr ""
-"HotR link:https://issues.jboss.org/browse/ISPN-5219[od上のエントリイテレータ] : "
-"HotRodを使用して分散モードでもキャッシュ内のすべてのエントリを反復処理することができるようになりました。 "
-"これにより、リハッシュイベント(ノードが上がったり下がったり)の下での完全な一貫性が保証され、クライアント上のメモリ問題を防ぐためにデータをバッチ化することが可能になりました。"
+msgid "https://issues.jboss.org/browse/ISPN-5219[entry iterator over HotRod]: it is now possible to iterate over all the entries in a cache even in distributed mode using HotRod.  This provides full consistency guarantees under a rehash event (node goes up or down) and batches data to help prevent memory issues on the client."
+msgstr "HotR link:https://issues.jboss.org/browse/ISPN-5219[od上のエントリイテレータ] : HotRodを使用して分散モードでもキャッシュ内のすべてのエントリを反復処理することができるようになりました。 これにより、リハッシュイベント(ノードが上がったり下がったり)の下での完全な一貫性が保証され、クライアント上のメモリ問題を防ぐためにデータをバッチ化することが可能になりました。"
 
 #. type: Plain text
 #: upstream/_posts/2015-06-17-infinispan-800alpha2.adoc:29
 #, fuzzy
-msgid ""
-"non-indexed query over indexed cache with https://issues.jboss.org/browse/"
-"ISPN-5519[compatiblity]"
-msgstr ""
-"互換性 link:https://issues.jboss.org/browse/ISPN-5519[の] "
-"あるインデックス化キャッシュに対するインデックス化されていない問い合わせ"
+msgid "non-indexed query over indexed cache with https://issues.jboss.org/browse/ISPN-5519[compatiblity]"
+msgstr "互換性 link:https://issues.jboss.org/browse/ISPN-5519[の] あるインデックス化キャッシュに対するインデックス化されていない問い合わせ"
 
 #. type: Plain text
 #: upstream/_posts/2015-06-17-infinispan-800alpha2.adoc:36
 #, fuzzy
-msgid ""
-"first batch for infinispan core threading changes: we are improving our "
-"thread utilization significantly with the 8.0 release cycle and we already "
-"have reduced https://issues.jboss.org/browse/ISPN-5484[transport thread "
-"usage] and added a configurable https://issues.jboss.org/browse/ISPN-"
-"5518[thread pool for async operations] to prevent internal thread pool "
-"exhaustion.  There will be even more enhancements for this in future "
-"releases!"
-msgstr ""
-"infinispanコアスレッドの変更の最初のバッチ: 8.0リリースサイクルでスレッド使用率を大幅に改善しており、すでに link:https://"
-"issues.jboss.org/browse/ISPN-5484[トランスポートスレッドの使用量を] 減らし、内部スレッドプールの枯渇を防ぐために "
-"link:https://issues.jboss.org/browse/ISPN-5518[非同期操作用に] 設定可能な link:https://"
-"issues.jboss.org/browse/ISPN-5518[スレッドプールを] 追加しています。 "
-"これについては、今後のリリースでさらに強化される予定です!"
+msgid "first batch for infinispan core threading changes: we are improving our thread utilization significantly with the 8.0 release cycle and we already have reduced https://issues.jboss.org/browse/ISPN-5484[transport thread usage] and added a configurable https://issues.jboss.org/browse/ISPN-5518[thread pool for async operations] to prevent internal thread pool exhaustion.  There will be even more enhancements for this in future releases!"
+msgstr "infinispanコアスレッドの変更の最初のバッチ: 8.0リリースサイクルでスレッド使用率を大幅に改善しており、すでに link:https://issues.jboss.org/browse/ISPN-5484[トランスポートスレッドの使用量を] 減らし、内部スレッドプールの枯渇を防ぐために link:https://issues.jboss.org/browse/ISPN-5518[非同期操作用に] 設定可能な link:https://issues.jboss.org/browse/ISPN-5518[スレッドプールを] 追加しています。 これについては、今後のリリースでさらに強化される予定です!"
 
 #. type: Plain text
 #: upstream/_posts/2015-06-17-infinispan-800alpha2.adoc:38
 #, fuzzy
-msgid ""
-"and many many bugfixes, consult our issue tracker for a list of things we "
-"have fixed."
+msgid "and many many bugfixes, consult our issue tracker for a list of things we have fixed."
 msgstr "また、多くのバグ修正を行っていますので、私たちが修正したもののリストは、私たちの問題追跡システムを参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-06-17-infinispan-800alpha2.adoc:43
 #, fuzzy
-msgid ""
-"Don't forget to also check-out our http://infinispan.org/roadmap/[roadmap] "
-"to see the things we plan to get done during the 8.0 cycle."
-msgstr ""
-"8.0サイクルの間に予定していることを確認するための link:http://infinispan.org/roadmap/[ロードマップの] "
-"チェックもお忘れなく。"
+msgid "Don't forget to also check-out our http://infinispan.org/roadmap/[roadmap] to see the things we plan to get done during the 8.0 cycle."
+msgstr "8.0サイクルの間に予定していることを確認するための link:http://infinispan.org/roadmap/[ロードマップの] チェックもお忘れなく。"
 
 #. type: Plain text
 #: upstream/_posts/2015-06-17-infinispan-800alpha2.adoc:46
 #, fuzzy
-msgid ""
-"http://infinispan.org/download/[Download] it now and tell us what you think "
-"on our https://developer.jboss.org/en/infinispan/content[forums] or come and "
-"meet us on IRC: channel #infinispan on Freenode."
-msgstr ""
-"今すぐ link:http://infinispan.org/download/[ダウンロードして] 、私たちの link:https://"
-"developer.jboss.org/en/infinispan/content[フォーラム] で感想を言ってください。"
+msgid "http://infinispan.org/download/[Download] it now and tell us what you think on our https://developer.jboss.org/en/infinispan/content[forums] or come and meet us on IRC: channel #infinispan on Freenode."
+msgstr "今すぐ link:http://infinispan.org/download/[ダウンロードして] 、私たちの link:https://developer.jboss.org/en/infinispan/content[フォーラム] で感想を言ってください。"

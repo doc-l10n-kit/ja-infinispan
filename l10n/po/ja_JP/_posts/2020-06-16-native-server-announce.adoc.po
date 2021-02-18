@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-06-16-native-server-announce.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-16-native-server-announce.adoc:8
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan Native Server Image\n"
@@ -45,25 +45,20 @@ msgstr ""
 #. type: Plain text
 #: upstream/_posts/2020-06-16-native-server-announce.adoc:10
 #, fuzzy
-msgid ""
-"Starting with Infinispan 11, it's now possible to create a natively compiled "
-"version of the Infinispan server."
+msgid "Starting with Infinispan 11, it's now possible to create a natively compiled version of the Infinispan server."
 msgstr "Infinispan 11 から、ネイティブにコンパイルされたバージョンの Infinispan サーバーを作成できるようになりました。"
 
 #. type: Title ==
 #: upstream/_posts/2020-06-16-native-server-announce.adoc:11
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "TL;DR"
 msgstr "ティーエルディーアール"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-16-native-server-announce.adoc:13
 #, fuzzy
-msgid ""
-"We have a new image that contains a natively compiled Infinispan server and "
-"has a footprint of only 286MB. Try it now:"
-msgstr ""
-"ネイティブにコンパイルされたInfinispanサーバーを含み、フットプリントがわずか286MBの新しいイメージがあります。今すぐお試しください。"
+msgid "We have a new image that contains a natively compiled Infinispan server and has a footprint of only 286MB. Try it now:"
+msgstr "ネイティブにコンパイルされたInfinispanサーバーを含み、フットプリントがわずか286MBの新しいイメージがあります。今すぐお試しください。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-16-native-server-announce.adoc:16
@@ -73,28 +68,15 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_posts/2020-06-16-native-server-announce.adoc:18
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Infinispan Quarkus Extensions"
 msgstr "Infinispan Quarkusの拡張機能"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-16-native-server-announce.adoc:25
 #, fuzzy
-msgid ""
-"https://quarkus.io/[Quarkus] provides built in support for generating native "
-"executables, providing several abstractions to improve the development "
-"experience of creating native binaries. Building upon the https://infinispan."
-"org/blog/2019/11/11/serverng/[new server], the Infinispan team have created "
-"a https://github.com/infinispan/infinispan-quarkus[Quarkus extension] for "
-"both embedded and server use-cases.  These extensions allow a native binary "
-"version of the server to be compiled and ran by simply executing:"
-msgstr ""
-"link:https://quarkus.io/[Quarkusでは] "
-"、ネイティブの実行ファイルを生成するためのサポートが組み込まれており、ネイティブバイナリを作成する際の開発経験を向上させるためのいくつかの抽象化が提供されています。 "
-"link:https://infinispan.org/blog/2019/11/11/serverng/[新しいサーバーを] "
-"ベースに、Infinispanチームは、組み込みとサーバーの両方のユースケースに対応する link:https://github.com/"
-"infinispan/infinispan-quarkus[Quarkus拡張機能を] "
-"作成しました。これらの拡張機能により、サーバーのネイティブバイナリバージョンをコンパイルし、実行するだけで実行できるようになりました。"
+msgid "https://quarkus.io/[Quarkus] provides built in support for generating native executables, providing several abstractions to improve the development experience of creating native binaries. Building upon the https://infinispan.org/blog/2019/11/11/serverng/[new server], the Infinispan team have created a https://github.com/infinispan/infinispan-quarkus[Quarkus extension] for both embedded and server use-cases.  These extensions allow a native binary version of the server to be compiled and ran by simply executing:"
+msgstr "link:https://quarkus.io/[Quarkusでは] 、ネイティブの実行ファイルを生成するためのサポートが組み込まれており、ネイティブバイナリを作成する際の開発経験を向上させるためのいくつかの抽象化が提供されています。 link:https://infinispan.org/blog/2019/11/11/serverng/[新しいサーバーを] ベースに、Infinispanチームは、組み込みとサーバーの両方のユースケースに対応する link:https://github.com/infinispan/infinispan-quarkus[Quarkus拡張機能を] 作成しました。これらの拡張機能により、サーバーのネイティブバイナリバージョンをコンパイルし、実行するだけで実行できるようになりました。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-16-native-server-announce.adoc:33
@@ -110,50 +92,32 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_posts/2020-06-16-native-server-announce.adoc:35
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Native Server Image"
 msgstr "ネイティブサーバイメージ"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-16-native-server-announce.adoc:40
 #, fuzzy
-msgid ""
-"For many developers compiling your own Infinispan native binary manually is "
-"not desirable, therefore we provide the `infinispan/server-native` image "
-"that uses a native server binary. The advantage of this over our JVM based "
-"`infinispan/server` image is that we can no provide a much smaller image, "
-"286 vs 468 MB, as we no longer need to include an openjdk JVM in the image."
-msgstr ""
-"多くの開発者にとって、Infinispanのネイティブバイナリを手動でコンパイルすることは望ましくないため、ネイティブサーババイナリを使用した "
-"`infinispan/server-native` イメージを提供しています。JVMベースの `infinispan/server` "
-"イメージと比較した場合の利点は、openjdk JVMをイメージに含める必要がないため、286 MB vs 468 "
-"MBと大幅に小さいイメージを提供できないことです。"
+msgid "For many developers compiling your own Infinispan native binary manually is not desirable, therefore we provide the `infinispan/server-native` image that uses a native server binary. The advantage of this over our JVM based `infinispan/server` image is that we can no provide a much smaller image, 286 vs 468 MB, as we no longer need to include an openjdk JVM in the image."
+msgstr "多くの開発者にとって、Infinispanのネイティブバイナリを手動でコンパイルすることは望ましくないため、ネイティブサーババイナリを使用した `infinispan/server-native` イメージを提供しています。JVMベースの `infinispan/server` イメージと比較した場合の利点は、openjdk JVMをイメージに含める必要がないため、286 MB vs 468 MBと大幅に小さいイメージを提供できないことです。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-16-native-server-announce.adoc:43
 #, fuzzy
-msgid ""
-"The `server-native` image is configured exactly the same as the JVM based "
-"`infinispan/server` image. We can run an authenticated Infinispan server "
-"with a single user with the following command:"
-msgstr ""
-"`server-native` イメージは、JVM ベースの `infinispan/server` "
-"イメージとまったく同じように構成されています。次のコマンドを使用して、認証済みのInfinispanサーバーを1人のユーザーで実行することができます。"
+msgid "The `server-native` image is configured exactly the same as the JVM based `infinispan/server` image. We can run an authenticated Infinispan server with a single user with the following command:"
+msgstr "`server-native` イメージは、JVM ベースの `infinispan/server` イメージとまったく同じように構成されています。次のコマンドを使用して、認証済みのInfinispanサーバーを1人のユーザーで実行することができます。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-16-native-server-announce.adoc:46
 #, no-wrap
-msgid ""
-"docker run -p 11222:11222 -e USER=\"user\" -e PASS=\"pass\" quay.io/"
-"infinispan/server-native:11.0\n"
+msgid "docker run -p 11222:11222 -e USER=\"user\" -e PASS=\"pass\" quay.io/infinispan/server-native:11.0\n"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-06-16-native-server-announce.adoc:49
 #, fuzzy
-msgid ""
-"From the output below, you can see the Quarkus banner as well various `io."
-"quarkus` logs indicating which extensions are being used."
+msgid "From the output below, you can see the Quarkus banner as well various `io.quarkus` logs indicating which extensions are being used."
 msgstr "以下の出力から、Quarkusのバナーや、どの拡張機能が使用されているかを示す様々な `io.quarkus` ログを見ることができます。"
 
 #. type: delimited block -
@@ -161,68 +125,39 @@ msgstr "以下の出力から、Quarkusのバナーや、どの拡張機能が�
 #, no-wrap
 msgid ""
 "################################################################################\n"
-"#                                                                            "
-"  #\n"
-"# IDENTITIES_PATH not specified                                              "
-"  #\n"
-"# Generating Identities yaml using USER and PASS env vars.                   "
-"  #\n"
+"#                                                                              #\n"
+"# IDENTITIES_PATH not specified                                                #\n"
+"# Generating Identities yaml using USER and PASS env vars.                     #\n"
 "################################################################################\n"
-"2020-06-16 09:27:39,638 INFO  [io.quarkus] (main) config-generator 2.0.0."
-"Final native (powered by Quarkus 1.5.0.Final) started in 0.069s. \n"
+"2020-06-16 09:27:39,638 INFO  [io.quarkus] (main) config-generator 2.0.0.Final native (powered by Quarkus 1.5.0.Final) started in 0.069s. \n"
 "2020-06-16 09:27:39,643 INFO  [io.quarkus] (main) Profile prod activated. \n"
-"2020-06-16 09:27:39,643 INFO  [io.quarkus] (main) Installed features: [cdi, "
-"qute]\n"
-"2020-06-16 09:27:39,671 INFO  [io.quarkus] (main) config-generator stopped "
-"in 0.001s\n"
-"2020-06-16 09:27:40,306 INFO  [ListenerBean] (main) The application is "
-"starting...\n"
-"2020-06-16 09:27:40,481 INFO  [org.inf.CONTAINER] (main) ISPN000128: "
-"Infinispan version: Infinispan 'Corona Extra' 11.0.0.Final\n"
-"2020-06-16 09:27:40,489 INFO  [org.inf.CLUSTER] (main) ISPN000078: Starting "
-"JGroups channel infinispan with stack image-tcp\n"
-"2020-06-16 09:27:45,560 INFO  [org.inf.CLUSTER] (main) ISPN000094: Received "
-"new cluster view for channel infinispan: [82914efa63fe-12913|0] (1) "
-"[82914efa63fe-12913]\n"
-"2020-06-16 09:27:45,562 INFO  [org.inf.CLUSTER] (main) ISPN000079: Channel "
-"infinispan local address is 82914efa63fe-12913, physical addresses are [10.0."
-"2.100:7800]\n"
-"2020-06-16 09:27:45,566 INFO  [org.inf.CONTAINER] (main) ISPN000390: "
-"Persisted state, version=11.0.0.Final timestamp=2020-06-16T09:27:45.563303Z\n"
-"2020-06-16 09:27:45,584 INFO  [org.inf.CONTAINER] (main) ISPN000104: Using "
-"EmbeddedTransactionManager\n"
-"2020-06-16 09:27:45,617 INFO  [org.inf.SERVER] (ForkJoinPool.commonPool-"
-"worker-3) ISPN080018: Protocol HotRod (internal)\n"
-"2020-06-16 09:27:45,618 INFO  [org.inf.SERVER] (main) ISPN080018: Protocol "
-"REST (internal)\n"
-"2020-06-16 09:27:45,629 INFO  [org.inf.SERVER] (main) ISPN080004: Protocol "
-"SINGLE_PORT listening on 10.0.2.100:11222\n"
-"2020-06-16 09:27:45,629 INFO  [org.inf.SERVER] (main) ISPN080034: Server "
-"'82914efa63fe-12913' listening on http://10.0.2.100:11222\n"
-"2020-06-16 09:27:45,629 INFO  [org.inf.SERVER] (main) ISPN080001: Infinispan "
-"Server 11.0.0.Final started in 5457ms\n"
-"2020-06-16 09:27:45,629 INFO  [io.quarkus] (main) infinispan-quarkus-server-"
-"runner 11.0.0.Final native (powered by Quarkus 1.5.0.Final) started in 5."
-"618s. \n"
+"2020-06-16 09:27:39,643 INFO  [io.quarkus] (main) Installed features: [cdi, qute]\n"
+"2020-06-16 09:27:39,671 INFO  [io.quarkus] (main) config-generator stopped in 0.001s\n"
+"2020-06-16 09:27:40,306 INFO  [ListenerBean] (main) The application is starting...\n"
+"2020-06-16 09:27:40,481 INFO  [org.inf.CONTAINER] (main) ISPN000128: Infinispan version: Infinispan 'Corona Extra' 11.0.0.Final\n"
+"2020-06-16 09:27:40,489 INFO  [org.inf.CLUSTER] (main) ISPN000078: Starting JGroups channel infinispan with stack image-tcp\n"
+"2020-06-16 09:27:45,560 INFO  [org.inf.CLUSTER] (main) ISPN000094: Received new cluster view for channel infinispan: [82914efa63fe-12913|0] (1) [82914efa63fe-12913]\n"
+"2020-06-16 09:27:45,562 INFO  [org.inf.CLUSTER] (main) ISPN000079: Channel infinispan local address is 82914efa63fe-12913, physical addresses are [10.0.2.100:7800]\n"
+"2020-06-16 09:27:45,566 INFO  [org.inf.CONTAINER] (main) ISPN000390: Persisted state, version=11.0.0.Final timestamp=2020-06-16T09:27:45.563303Z\n"
+"2020-06-16 09:27:45,584 INFO  [org.inf.CONTAINER] (main) ISPN000104: Using EmbeddedTransactionManager\n"
+"2020-06-16 09:27:45,617 INFO  [org.inf.SERVER] (ForkJoinPool.commonPool-worker-3) ISPN080018: Protocol HotRod (internal)\n"
+"2020-06-16 09:27:45,618 INFO  [org.inf.SERVER] (main) ISPN080018: Protocol REST (internal)\n"
+"2020-06-16 09:27:45,629 INFO  [org.inf.SERVER] (main) ISPN080004: Protocol SINGLE_PORT listening on 10.0.2.100:11222\n"
+"2020-06-16 09:27:45,629 INFO  [org.inf.SERVER] (main) ISPN080034: Server '82914efa63fe-12913' listening on http://10.0.2.100:11222\n"
+"2020-06-16 09:27:45,629 INFO  [org.inf.SERVER] (main) ISPN080001: Infinispan Server 11.0.0.Final started in 5457ms\n"
+"2020-06-16 09:27:45,629 INFO  [io.quarkus] (main) infinispan-quarkus-server-runner 11.0.0.Final native (powered by Quarkus 1.5.0.Final) started in 5.618s. \n"
 "2020-06-16 09:27:45,629 INFO  [io.quarkus] (main) Profile prod activated. \n"
-"2020-06-16 09:27:45,629 INFO  [io.quarkus] (main) Installed features: [cdi, "
-"infinispan-embedded, infinispan-server]\n"
+"2020-06-16 09:27:45,629 INFO  [io.quarkus] (main) Installed features: [cdi, infinispan-embedded, infinispan-server]\n"
 msgstr ""
 
 #. type: Title ==
 #: upstream/_posts/2020-06-16-native-server-announce.adoc:77
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Further Reading"
 msgstr "続きを読む"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-16-native-server-announce.adoc:80
 #, fuzzy
-msgid ""
-"For more detailed information abou how to use the `infinispan/server` and "
-"`infinispan/server-native` image, please consult the https://github.com/"
-"infinispan/infinispan-images/blob/master/README.md[official documentation]."
-msgstr ""
-"`infinispan/server` および `infinispan/server-native` の画像の使用方法の詳細については、 link:"
-"https://github.com/infinispan/infinispan-images/blob/master/README."
-"md[公式ドキュメントを] 参照してください。"
+msgid "For more detailed information abou how to use the `infinispan/server` and `infinispan/server-native` image, please consult the https://github.com/infinispan/infinispan-images/blob/master/README.md[official documentation]."
+msgstr "`infinispan/server` および `infinispan/server-native` の画像の使用方法の詳細については、 link:https://github.com/infinispan/infinispan-images/blob/master/README.md[公式ドキュメントを] 参照してください。"

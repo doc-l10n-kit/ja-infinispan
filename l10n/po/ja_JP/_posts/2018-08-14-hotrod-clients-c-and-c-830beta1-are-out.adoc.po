@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-08-14-hotrod-clients-c-and-c-830beta1-are-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-08-14-hotrod-clients-c-and-c-830beta1-are-out.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Hotrod clients C++ and C# 8.3.0.Beta1 are out!\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2018-08-14T00:11:00.000-07:00'\n"
 "author: rigazilla\n"
 "tags: [ \" beta\", \"c++\", \"release\", \"c#\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"4629039114216315474\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/08/hotrod-clients-c-and-c-"
-"830beta1-are-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4629039114216315474\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/08/hotrod-clients-c-and-c-830beta1-are-out.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,10 +42,8 @@ msgstr ""
 "date: '2018-08-14T00:11:00.000-07:00'\n"
 "author: rigazilla\n"
 "tags: [ \" beta\", \"c++\", \"release\", \"c#\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"4629039114216315474\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/08/hotrod-clients-c-and-c-"
-"830beta1-are-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4629039114216315474\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/08/hotrod-clients-c-and-c-830beta1-are-out.html\n"
 "---\n"
 
 #. type: Plain text
@@ -65,25 +61,18 @@ msgstr "C++とC#の8.3.0.Beta1のリリースです!"
 #. type: Plain text
 #: upstream/_posts/2018-08-14-hotrod-clients-c-and-c-830beta1-are-out.adoc:20
 #, fuzzy
-msgid ""
-"Main feature for this release is: transactions. Clients can now run sequence "
-"of hotrod operations in a transactional way. Basic methods are provided to "
-"begin, commit or rollback a transaction over an hotrod connection (hotrod 2."
-"7 and Infinispan 9.3+ are required).  API are quite easy to use:"
-msgstr ""
-"このリリースの主な機能は、トランザクションです。クライアントは、トランザクションの方法で一連のホットロッド操作を実行できるようになりました。hotrod接続を介してトランザクションを開始、コミット、ロールバックするための基本的なメソッドが提供されています（hotrod "
-"2.7とInfinispan 9.3+が必要です）。APIは非常に使いやすいです。"
+msgid "Main feature for this release is: transactions. Clients can now run sequence of hotrod operations in a transactional way. Basic methods are provided to begin, commit or rollback a transaction over an hotrod connection (hotrod 2.7 and Infinispan 9.3+ are required).  API are quite easy to use:"
+msgstr "このリリースの主な機能は、トランザクションです。クライアントは、トランザクションの方法で一連のホットロッド操作を実行できるようになりました。hotrod接続を介してトランザクションを開始、コミット、ロールバックするための基本的なメソッドが提供されています（hotrod 2.7とInfinispan 9.3+が必要です）。APIは非常に使いやすいです。"
 
 #. type: Table
 #: upstream/_posts/2018-08-14-hotrod-clients-c-and-c-830beta1-are-out.adoc:36
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "Source code, binaries and docs are at the usual place. Thank you for\n"
 "following us!\n"
 "The Infinispan Team\n"
 "[1]\n"
-"https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314125&version="
-"12338869[Release\n"
+"https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314125&version=12338869[Release\n"
 "notes]\n"
 "[2++] https://github.com/infinispan/cpp-client/tree/8.3.0.Beta1[C++ code\n"
 "for 8.3.0.Beta1]\n"

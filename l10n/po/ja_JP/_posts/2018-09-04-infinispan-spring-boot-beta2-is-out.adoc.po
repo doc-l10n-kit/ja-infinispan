@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-09-04-infinispan-spring-boot-beta2-is-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-09-04-infinispan-spring-boot-beta2-is-out.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan Spring Boot Beta2 is out!\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2018-09-04T07:23:00.002-07:00'\n"
 "author: karesti\n"
 "tags: [ \"release\", \"spring boot\", \"spring\", \"beta\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3499594030224524967\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/09/infinispan-spring-boot-"
-"beta2-is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3499594030224524967\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/09/infinispan-spring-boot-beta2-is-out.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,10 +42,8 @@ msgstr ""
 "date: '2018-09-04T07:23:00.002-07:00'\n"
 "author: karesti\n"
 "tags: [ \"release\", \"spring boot\", \"spring\", \"beta\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3499594030224524967\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/09/infinispan-spring-boot-"
-"beta2-is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3499594030224524967\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/09/infinispan-spring-boot-beta2-is-out.html\n"
 "---\n"
 
 #. type: Plain text
@@ -59,12 +55,8 @@ msgstr "InfinispanとSpring Bootをご利用の皆様。"
 #. type: Plain text
 #: upstream/_posts/2018-09-04-infinispan-spring-boot-beta2-is-out.adoc:16
 #, fuzzy
-msgid ""
-"We have just released https://github.com/infinispan/infinispan-spring-"
-"boot[Infinispan Spring Boot] *2.0.0.Beta2*."
-msgstr ""
-"先ほど link:https://github.com/infinispan/infinispan-spring-boot[Infinispan "
-"Spring Boot] 2.0.0 *.Beta2を* リリースしました。"
+msgid "We have just released https://github.com/infinispan/infinispan-spring-boot[Infinispan Spring Boot] *2.0.0.Beta2*."
+msgstr "先ほど link:https://github.com/infinispan/infinispan-spring-boot[Infinispan Spring Boot] 2.0.0 *.Beta2を* リリースしました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-09-04-infinispan-spring-boot-beta2-is-out.adoc:18
@@ -75,21 +67,14 @@ msgstr "このリリースのハイライトは以下の通りです。"
 #. type: Plain text
 #: upstream/_posts/2018-09-04-infinispan-spring-boot-beta2-is-out.adoc:21
 #, fuzzy
-msgid ""
-"Upgrade to https://spring.io/projects/spring-boot[Spring Boot] 2.0.3.RELEASE"
-msgstr ""
-"link:https://spring.io/projects/spring-boot[Spring Boot] 2.0.3."
-"RELEASEへのアップグレード"
+msgid "Upgrade to https://spring.io/projects/spring-boot[Spring Boot] 2.0.3.RELEASE"
+msgstr "link:https://spring.io/projects/spring-boot[Spring Boot] 2.0.3.RELEASEへのアップグレード"
 
 #. type: Plain text
 #: upstream/_posts/2018-09-04-infinispan-spring-boot-beta2-is-out.adoc:23
 #, fuzzy
-msgid ""
-"RemoteCache can be injected now. Example https://github.com/infinispan/"
-"infinispan-simple-tutorials/tree/master/spring-boot/remote[here] "
-msgstr ""
-"RemoteCacheを注入できるようになりました。例は link:https://github.com/infinispan/infinispan-"
-"simple-tutorials/tree/master/spring-boot/remote[こちら]"
+msgid "RemoteCache can be injected now. Example https://github.com/infinispan/infinispan-simple-tutorials/tree/master/spring-boot/remote[here] "
+msgstr "RemoteCacheを注入できるようになりました。例は link:https://github.com/infinispan/infinispan-simple-tutorials/tree/master/spring-boot/remote[こちら]"
 
 #. type: Plain text
 #: upstream/_posts/2018-09-04-infinispan-spring-boot-beta2-is-out.adoc:26
@@ -100,14 +85,8 @@ msgstr "リリースはmavenのセントラルリポジトリにあります。"
 #. type: Plain text
 #: upstream/_posts/2018-09-04-infinispan-spring-boot-beta2-is-out.adoc:31
 #, fuzzy
-msgid ""
-"Please report any issues in our https://issues.jboss.org/projects/ISPN[issue "
-"tracker] and join the conversation in our https://infinispan.zulipchat.com/"
-"[Zulip Chat] to shape up our next release."
-msgstr ""
-"私たちの問題 link:https://issues.jboss.org/projects/ISPN[追跡] に問題があれば報告し link:https:"
-"//issues.jboss.org/projects/ISPN[、] 次のリリースを link:https://infinispan."
-"zulipchat.com/[形作る] ためにZulipチャットで会話に参加してください。"
+msgid "Please report any issues in our https://issues.jboss.org/projects/ISPN[issue tracker] and join the conversation in our https://infinispan.zulipchat.com/[Zulip Chat] to shape up our next release."
+msgstr "私たちの問題 link:https://issues.jboss.org/projects/ISPN[追跡] に問題があれば報告し link:https://issues.jboss.org/projects/ISPN[、] 次のリリースを link:https://infinispan.zulipchat.com/[形作る] ためにZulipチャットで会話に参加してください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-09-04-infinispan-spring-boot-beta2-is-out.adoc:33

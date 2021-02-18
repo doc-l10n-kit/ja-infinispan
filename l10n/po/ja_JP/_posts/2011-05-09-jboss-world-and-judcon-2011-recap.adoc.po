@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-05-09-jboss-world-and-judcon-2011-recap.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-09-jboss-world-and-judcon-2011-recap.adoc:14
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: JBoss World and JUDCon 2011 recap\n"
@@ -36,10 +36,8 @@ msgid ""
 "\"jbossworld\",\n"
 "]\n"
 "thumbnail: http://farm6.static.flickr.com/5069/5696495944_d93a64e89c_t.jpg\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2713303261523461186\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/05/jboss-world-and-judcon-"
-"2011-recap.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2713303261523461186\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/05/jboss-world-and-judcon-2011-recap.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -52,162 +50,51 @@ msgstr ""
 "\"jbossworld\",\n"
 "]\n"
 "thumbnail: http://farm6.static.flickr.com/5069/5696495944_d93a64e89c_t.jpg\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2713303261523461186\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/05/jboss-world-and-judcon-"
-"2011-recap.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2713303261523461186\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/05/jboss-world-and-judcon-2011-recap.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-09-jboss-world-and-judcon-2011-recap.adoc:19
 #, fuzzy
-msgid ""
-"So I finally get to recap on http://www.jboss.org/events/JUDCon[JUDCon] in "
-"Boston and http://www.redhat.com/summit/[JBoss World/Red Hat Summit] from "
-"last week.  And wow what a week it was too; I work with some brilliant minds."
-"  Massively inspiring and innovative people."
-msgstr ""
-"先週のボストンでの link:http://www.jboss.org/events/JUDCon[JUDCon] と link:http://www."
-"redhat.com/summit/[JBoss World/Red Hat Summit の] 報告をすることができました。 "
-"私は素晴らしい頭脳を持った人たちと仕事をしています。"
+msgid "So I finally get to recap on http://www.jboss.org/events/JUDCon[JUDCon] in Boston and http://www.redhat.com/summit/[JBoss World/Red Hat Summit] from last week.  And wow what a week it was too; I work with some brilliant minds.  Massively inspiring and innovative people."
+msgstr "先週のボストンでの link:http://www.jboss.org/events/JUDCon[JUDCon] と link:http://www.redhat.com/summit/[JBoss World/Red Hat Summit の] 報告をすることができました。 私は素晴らしい頭脳を持った人たちと仕事をしています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-09-jboss-world-and-judcon-2011-recap.adoc:38
 #, fuzzy
-msgid ""
-"JUDCon started well, at the World Trade Centre in Boston.  With over 200 "
-"people attending, it was the largest JUDCon we've ever done, with three "
-"parallel tracks of some of the coolest tech, many by non-Red Hat employees. "
-" With regards to Infinispan, Mircea did a http://www.jboss.org/events/JUDCon/"
-"day2track2.html#930AM[deep-dive] covering how Infinispan works \"under the "
-"hood\".  Sanne did a talk on http://www.jboss.org/events/JUDCon/day2track2."
-"html#230PM[advanced querying across a data grid], including making use of "
-"map/reduce techniques.  I delivered a talk specifically on http://www."
-"slideshare.net/maniksurtani/mapreduce-in-the-cloud-infinispan-distributed-"
-"task-execution-framework[map/reduce and distributed code execution] across "
-"Infinispan nodes - a talk I delivered on behalf of Vladimir as he sadly "
-"couldn't make the event due to personal reasons.  The first day ended in a "
-"pizza-and-beer-fuelled hackathon that went on till 2am.  Hopefully this will "
-"give you an idea of what JUDCon is all about, including the quality and "
-"focus of talks, and whet your appetite - make you want to attend the next "
-"such event.   :-)  Trust me, for techies, there's no better way of immersing "
-"yourself in it."
-msgstr ""
-"JUDCon はボストンのワールドトレードセンターで開催され、200人以上の参加者を集め、これまでで最大規模の JUDCon となりました。 "
-"Infinispan については、Mircea は Infinispan がどのように動くのかを深く掘り下げて link:http://www."
-"jboss.org/events/JUDCon/day2track2.html#930AM[説明] しました。 Sanne は link:http://"
-"www.jboss.org/events/JUDCon/day2track2.html#230PM[データグリッド上での] "
-"高度なクエリーについて、Map/Reduce 技術の活用を link:http://www.jboss.org/events/JUDCon/"
-"day2track2.html#230PM[含む] 講演を行いました。私は特にMap/ link:http://www.slideshare.net/"
-"maniksurtani/mapreduce-in-the-cloud-infinispan-distributed-task-execution-"
-"framework[reduceと] Infinispanノード間での link:http://www.slideshare.net/"
-"maniksurtani/mapreduce-in-the-cloud-infinispan-distributed-task-execution-"
-"framework[分散コード実行] についての講演を行った。 "
-"初日はピザとビールを飲みながら深夜2時まで続いたハッカソンで幕を閉じた。願わくば、これを読めばトークの質や焦点など、JUDConがどんなものなのかを知ることができ、次のイベントに参加したいと思わせることができるでしょう。"
+msgid "JUDCon started well, at the World Trade Centre in Boston.  With over 200 people attending, it was the largest JUDCon we've ever done, with three parallel tracks of some of the coolest tech, many by non-Red Hat employees.  With regards to Infinispan, Mircea did a http://www.jboss.org/events/JUDCon/day2track2.html#930AM[deep-dive] covering how Infinispan works \"under the hood\".  Sanne did a talk on http://www.jboss.org/events/JUDCon/day2track2.html#230PM[advanced querying across a data grid], including making use of map/reduce techniques.  I delivered a talk specifically on http://www.slideshare.net/maniksurtani/mapreduce-in-the-cloud-infinispan-distributed-task-execution-framework[map/reduce and distributed code execution] across Infinispan nodes - a talk I delivered on behalf of Vladimir as he sadly couldn't make the event due to personal reasons.  The first day ended in a pizza-and-beer-fuelled hackathon that went on till 2am.  Hopefully this will give you an idea of what JUDCon is all about, including the quality and focus of talks, and whet your appetite - make you want to attend the next such event.   :-)  Trust me, for techies, there's no better way of immersing yourself in it."
+msgstr "JUDCon はボストンのワールドトレードセンターで開催され、200人以上の参加者を集め、これまでで最大規模の JUDCon となりました。 Infinispan については、Mircea は Infinispan がどのように動くのかを深く掘り下げて link:http://www.jboss.org/events/JUDCon/day2track2.html#930AM[説明] しました。 Sanne は link:http://www.jboss.org/events/JUDCon/day2track2.html#230PM[データグリッド上での] 高度なクエリーについて、Map/Reduce 技術の活用を link:http://www.jboss.org/events/JUDCon/day2track2.html#230PM[含む] 講演を行いました。私は特にMap/ link:http://www.slideshare.net/maniksurtani/mapreduce-in-the-cloud-infinispan-distributed-task-execution-framework[reduceと] Infinispanノード間での link:http://www.slideshare.net/maniksurtani/mapreduce-in-the-cloud-infinispan-distributed-task-execution-framework[分散コード実行] についての講演を行った。 初日はピザとビールを飲みながら深夜2時まで続いたハッカソンで幕を閉じた。願わくば、これを読めばトークの質や焦点など、JUDConがどんなものなのかを知ることができ、次のイベントに参加したいと思わせることができるでしょう。"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-09-jboss-world-and-judcon-2011-recap.adoc:40
 #, fuzzy
-msgid ""
-"http://farm6.static.flickr.com/5069/5696495944_d93a64e89c.jpg[image:http://"
-"farm6.static.flickr.com/5069/5696495944_d93a64e89c.jpg[image,width="
-"213,height=320]]"
+msgid "http://farm6.static.flickr.com/5069/5696495944_d93a64e89c.jpg[image:http://farm6.static.flickr.com/5069/5696495944_d93a64e89c.jpg[image,width=213,height=320]]"
 msgstr "link:http://farm6.static.flickr.com/5069/5696495944_d93a64e89c.jpg[]"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-09-jboss-world-and-judcon-2011-recap.adoc:56
 #, fuzzy
-msgid ""
-"And then there was JBoss World.  As many in the industry keeps saying, JBoss "
-"has got its mojo back.  Coolness reminiscent of Marc Fleury's early http://"
-"www.businessweek.com/magazine/content/06_15/b3979098.htm[bad-boy JBoss] - a "
-"poke in the eye of establishment, disruptive and brazen, JBoss has gone back "
-"to its roots.  Craig Muzilla talked numbers and new products, Mark Little "
-"talked about his vision of ubiquitous computing and http://community.jboss."
-"org/blogs/mark.little/2011/05/08/jboss-everywhere[JBoss Everywhere], and "
-"then the much tweeted, much talked-about demo started.   Many said we were "
-"nuts to try and pull off a live demo of such scale and complexity - let me "
-"put it this way, we had no backup.  :-) I'm not going to spoil the demo for "
-"you, a recording of the keynote including the demo is http://vimeo.com/"
-"24798138[here] (the demo starts 39 minutes into the video)."
-msgstr ""
-"業界の多くの人が言い続けているように、JBossはその魅力を取り戻し、Marc Fleuryの初期の悪党 link:http://www."
-"businessweek.com/magazine/content/06_15/b3979098.htm[JBoss] "
-"を彷彿とさせるようなクールさ、確立された目を突くような破壊的で大胆なJBossは、そのルーツに立ち返った。Craig "
-"Muzilla氏は数字と新製品について語り、Mark Little氏はユビキタスコンピューティングとJBoss link:http://"
-"community.jboss.org/blogs/mark.little/2011/05/08/jboss-"
-"everywhere[Everywhere] のビジョンについて語り、その後、多くのツイートや話題のデモが始まりました。 "
-"多くの人は、このような規模と複雑さのライブデモを成功させようとするのは気が狂っていると言っていましたが、私たちにはバックアップがありませんでした。)デモを含む基調講演の録画は "
-"link:http://vimeo.com/24798138[こちら] です（デモは動画の39分から始まります）。"
+msgid "And then there was JBoss World.  As many in the industry keeps saying, JBoss has got its mojo back.  Coolness reminiscent of Marc Fleury's early http://www.businessweek.com/magazine/content/06_15/b3979098.htm[bad-boy JBoss] - a poke in the eye of establishment, disruptive and brazen, JBoss has gone back to its roots.  Craig Muzilla talked numbers and new products, Mark Little talked about his vision of ubiquitous computing and http://community.jboss.org/blogs/mark.little/2011/05/08/jboss-everywhere[JBoss Everywhere], and then the much tweeted, much talked-about demo started.   Many said we were nuts to try and pull off a live demo of such scale and complexity - let me put it this way, we had no backup.  :-) I'm not going to spoil the demo for you, a recording of the keynote including the demo is http://vimeo.com/24798138[here] (the demo starts 39 minutes into the video)."
+msgstr "業界の多くの人が言い続けているように、JBossはその魅力を取り戻し、Marc Fleuryの初期の悪党 link:http://www.businessweek.com/magazine/content/06_15/b3979098.htm[JBoss] を彷彿とさせるようなクールさ、確立された目を突くような破壊的で大胆なJBossは、そのルーツに立ち返った。Craig Muzilla氏は数字と新製品について語り、Mark Little氏はユビキタスコンピューティングとJBoss link:http://community.jboss.org/blogs/mark.little/2011/05/08/jboss-everywhere[Everywhere] のビジョンについて語り、その後、多くのツイートや話題のデモが始まりました。 多くの人は、このような規模と複雑さのライブデモを成功させようとするのは気が狂っていると言っていましたが、私たちにはバックアップがありませんでした。)デモを含む基調講演の録画は link:http://vimeo.com/24798138[こちら] です（デモは動画の39分から始まります）。"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-09-jboss-world-and-judcon-2011-recap.adoc:69
 #, fuzzy
-msgid ""
-"Demos aside, JBoss World/Summit was an excellent event.  The biggest of its "
-"kind to date, I presented on http://www.redhat.com/summit/2011/presentations/"
-"jbossworld/decoding_the_code/wednesday/"
-"surtani_w_1400_Highly_Scalable_Data_Grids_and_Distributed_Caching_with_Infinispan."
-"pdf[use cases and design patterns] involving Infinispan, Bela spoke about "
-"http://www.redhat.com/summit/highlights/[geographic failover] (click on the "
-"JBoss World tab for the video).  Sanne and Emmanuel talked about http://www."
-"redhat.com/summit/2011/presentations/jbossworld/whats_new/wednesday/"
-"bernard_w_420_jpa_in_hibernate.pdf[Hibernate OGM], the ultra-cool JPA layer "
-"over Infinispan that so many people want to get their hands on.  Craig Bomba "
-"from http://www.cboe.com/[CBOE] - the largest options exchange in the world -"
-" talked about going live with Infinispan, stressing on keeping close to the "
-"community, participating and being \"good open source citizens\".  Something "
-"we all applaud."
-msgstr ""
-"デモはさておき、JBoss World/Summitは素晴らしいイベントだった。 "
-"この種のイベントとしては過去最大規模で、私はInfinispanに関わるユース link:http://www.redhat.com/summit/"
-"2011/presentations/jbossworld/decoding_the_code/wednesday/"
-"surtani_w_1400_Highly_Scalable_Data_Grids_and_Distributed_Caching_with_Infinispan."
-"pdf[ケースとデザインパターン] について発表し、Belaは link:http://www.redhat.com/summit/highlights/"
-"[地理的フェイルオーバー] について話した link:http://www.redhat.com/summit/highlights/[（] "
-"ビデオはJBoss Worldタブをクリックしてください）。Sanne と Emmanuel は link:http://www.redhat.com/"
-"summit/2011/presentations/jbossworld/whats_new/wednesday/"
-"bernard_w_420_jpa_in_hibernate.pdf[Hibernate OGM] について話しました。 "
-"世界最大のオプション取引所である CBOE の Craig Bomba は Infinispan "
-"との連携について話し、コミュニティに密着し、参加し、\"良いオープンソース市民\"であることを強調しました。 私たちは皆で拍手喝采しています。"
+msgid "Demos aside, JBoss World/Summit was an excellent event.  The biggest of its kind to date, I presented on http://www.redhat.com/summit/2011/presentations/jbossworld/decoding_the_code/wednesday/surtani_w_1400_Highly_Scalable_Data_Grids_and_Distributed_Caching_with_Infinispan.pdf[use cases and design patterns] involving Infinispan, Bela spoke about http://www.redhat.com/summit/highlights/[geographic failover] (click on the JBoss World tab for the video).  Sanne and Emmanuel talked about http://www.redhat.com/summit/2011/presentations/jbossworld/whats_new/wednesday/bernard_w_420_jpa_in_hibernate.pdf[Hibernate OGM], the ultra-cool JPA layer over Infinispan that so many people want to get their hands on.  Craig Bomba from http://www.cboe.com/[CBOE] - the largest options exchange in the world - talked about going live with Infinispan, stressing on keeping close to the community, participating and being \"good open source citizens\".  Something we all applaud."
+msgstr "デモはさておき、JBoss World/Summitは素晴らしいイベントだった。 この種のイベントとしては過去最大規模で、私はInfinispanに関わるユース link:http://www.redhat.com/summit/2011/presentations/jbossworld/decoding_the_code/wednesday/surtani_w_1400_Highly_Scalable_Data_Grids_and_Distributed_Caching_with_Infinispan.pdf[ケースとデザインパターン] について発表し、Belaは link:http://www.redhat.com/summit/highlights/[地理的フェイルオーバー] について話した link:http://www.redhat.com/summit/highlights/[（] ビデオはJBoss Worldタブをクリックしてください）。Sanne と Emmanuel は link:http://www.redhat.com/summit/2011/presentations/jbossworld/whats_new/wednesday/bernard_w_420_jpa_in_hibernate.pdf[Hibernate OGM] について話しました。 世界最大のオプション取引所である CBOE の Craig Bomba は Infinispan との連携について話し、コミュニティに密着し、参加し、\"良いオープンソース市民\"であることを強調しました。 私たちは皆で拍手喝采しています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-09-jboss-world-and-judcon-2011-recap.adoc:77
 #, fuzzy
-msgid ""
-"But for many folks, the biggest thing was the announcement of the http://www."
-"jboss.com/edg6-early-access[JBoss Enterprise Data Grid platform].  A fully "
-"supported data grid, based on Infinispan.  This enables users to buy "
-"production support, consultancy and training around Infinispan.  The "
-"announcement even made its way to the http://online.wsj.com/article/PR-CO-"
-"20110503-906624.html[Wall Street Journal], among many other illustrious "
-"publications!"
-msgstr ""
-"しかし、多くの人にとって最も大きかったのは、 link:http://www.jboss.com/edg6-early-access[JBoss "
-"Enterprise Data Gridプラットフォームの] 発表でした。 "
-"Infinispanをベースとした完全にサポートされたデータグリッドで、ユーザーはInfinispanを中心とした本番サポート、コンサルティング、トレーニングを購入することができます。 "
-"この発表は、多く link:http://online.wsj.com/article/PR-CO-20110503-906624.html[の] "
-"著名な出版物の link:http://online.wsj.com/article/PR-CO-20110503-906624."
-"html[中でも、ウォールストリートジャーナル] にも掲載されました！この発表は、多く link:http://online.wsj.com/"
-"article/PR-CO-20110503-906624.html[の] 著名な出版物の link:http://online.wsj.com/"
-"article/PR-CO-20110503-906624.html[中でも、ウォールストリートジャーナル] にも掲載されました。"
+msgid "But for many folks, the biggest thing was the announcement of the http://www.jboss.com/edg6-early-access[JBoss Enterprise Data Grid platform].  A fully supported data grid, based on Infinispan.  This enables users to buy production support, consultancy and training around Infinispan.  The announcement even made its way to the http://online.wsj.com/article/PR-CO-20110503-906624.html[Wall Street Journal], among many other illustrious publications!"
+msgstr "しかし、多くの人にとって最も大きかったのは、 link:http://www.jboss.com/edg6-early-access[JBoss Enterprise Data Gridプラットフォームの] 発表でした。 Infinispanをベースとした完全にサポートされたデータグリッドで、ユーザーはInfinispanを中心とした本番サポート、コンサルティング、トレーニングを購入することができます。 この発表は、多く link:http://online.wsj.com/article/PR-CO-20110503-906624.html[の] 著名な出版物の link:http://online.wsj.com/article/PR-CO-20110503-906624.html[中でも、ウォールストリートジャーナル] にも掲載されました！この発表は、多く link:http://online.wsj.com/article/PR-CO-20110503-906624.html[の] 著名な出版物の link:http://online.wsj.com/article/PR-CO-20110503-906624.html[中でも、ウォールストリートジャーナル] にも掲載されました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-09-jboss-world-and-judcon-2011-recap.adoc:84
 #, fuzzy
-msgid ""
-"So now with all the adrenalin - and http://cocktails.about.com/od/"
-"atozcocktailrecipes/r/old_fshned_cktl.htm[old-fashioneds] at our favourite "
-"bar, http://www.yelp.com/biz/drink-boston-2[Drink] - of last week behind me, "
-"it's time to focus on getting Infinispan 5.0 into a stable state and cutting "
-"what will be the fastest, most feature-rich and ultimately usable Infinispan "
-"release ever.  Watch this space."
-msgstr ""
-"さて、先週のアドレナリンとお気に入りのバー「 link:http://www.yelp.com/biz/drink-boston-2[Drink] "
-"」での古風な link:http://cocktails.about.com/od/atozcocktailrecipes/r/"
-"old_fshned_cktl.htm[お喋りを] 思い出しながら、Infinispan 5."
-"0を安定した状態にして、これまでで最も速く、最も機能が豊富で、最終的には使いやすいInfinispanのリリースに集中する時が来ました。 "
-"ここを見ていてください。"
+msgid "So now with all the adrenalin - and http://cocktails.about.com/od/atozcocktailrecipes/r/old_fshned_cktl.htm[old-fashioneds] at our favourite bar, http://www.yelp.com/biz/drink-boston-2[Drink] - of last week behind me, it's time to focus on getting Infinispan 5.0 into a stable state and cutting what will be the fastest, most feature-rich and ultimately usable Infinispan release ever.  Watch this space."
+msgstr "さて、先週のアドレナリンとお気に入りのバー「 link:http://www.yelp.com/biz/drink-boston-2[Drink] 」での古風な link:http://cocktails.about.com/od/atozcocktailrecipes/r/old_fshned_cktl.htm[お喋りを] 思い出しながら、Infinispan 5.0を安定した状態にして、これまでで最も速く、最も機能が豊富で、最終的には使いやすいInfinispanのリリースに集中する時が来ました。 ここを見ていてください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-09-jboss-world-and-judcon-2011-recap.adoc:86

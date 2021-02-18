@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-03-27-infinispan-921final.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-27-infinispan-921final.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.2.1.Final\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2018-03-27T14:24:00.002-07:00'\n"
 "author: ttarrant\n"
 "tags: [ \" release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"462822867096479785\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/03/infinispan-921final."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-462822867096479785\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/03/infinispan-921final.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,10 +42,8 @@ msgstr ""
 "date: '2018-03-27T14:24:00.002-07:00'\n"
 "author: ttarrant\n"
 "tags: [ \" release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"462822867096479785\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/03/infinispan-921final."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-462822867096479785\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/03/infinispan-921final.html\n"
 "---\n"
 
 #. type: Plain text
@@ -59,14 +55,8 @@ msgstr "Infinispanユーザー。"
 #. type: Plain text
 #: upstream/_posts/2018-03-27-infinispan-921final.adoc:16
 #, fuzzy
-msgid ""
-"we have just released 9.2.1.Final which includes https://issues.jboss.org/"
-"secure/ReleaseNote.jspa?projectId=12310799&version=12337077[65 fixes]. "
-"Highlights of this release include:"
-msgstr ""
-"link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12310799&version=12337077[65 の修正を] 含む 9.2.1.Final "
-"をリリースしました。このリリースのハイライトは以下の通りです。"
+msgid "we have just released 9.2.1.Final which includes https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12337077[65 fixes]. Highlights of this release include:"
+msgstr "link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12337077[65 の修正を] 含む 9.2.1.Final をリリースしました。このリリースのハイライトは以下の通りです。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-27-infinispan-921final.adoc:18
@@ -101,8 +91,7 @@ msgstr "Hot Rodを介してキャッシュ名のリストを取得すること�
 #. type: Plain text
 #: upstream/_posts/2018-03-27-infinispan-921final.adoc:26
 #, fuzzy
-msgid ""
-"Substantial performance improvements when iterating over the file store"
+msgid "Substantial performance improvements when iterating over the file store"
 msgstr "ファイルストアを反復処理する際のパフォーマンスが大幅に改善されました。"
 
 #. type: Plain text
@@ -114,14 +103,8 @@ msgstr "多くのバグ修正、テスト修正、ドキュメントの改善"
 #. type: Plain text
 #: upstream/_posts/2018-03-27-infinispan-921final.adoc:33
 #, fuzzy
-msgid ""
-"As usual you can find all the bits on our http://infinispan.org/download/"
-"[website]. If you find any issues, don't hesitate to report them on our "
-"https://issues.jboss.org/projects/ISPN[issue tracker.]"
-msgstr ""
-"いつものように、私たちの link:http://infinispan.org/download/[ウェブサイト] "
-"ですべてのビットを見つけることができます。何か問題を発見した場合は、遠慮なく私たちの link:https://issues.jboss.org/"
-"projects/ISPN[イシュートラッカー] に報告してください。"
+msgid "As usual you can find all the bits on our http://infinispan.org/download/[website]. If you find any issues, don't hesitate to report them on our https://issues.jboss.org/projects/ISPN[issue tracker.]"
+msgstr "いつものように、私たちの link:http://infinispan.org/download/[ウェブサイト] ですべてのビットを見つけることができます。何か問題を発見した場合は、遠慮なく私たちの link:https://issues.jboss.org/projects/ISPN[イシュートラッカー] に報告してください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-27-infinispan-921final.adoc:35

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,25 +18,22 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-10-16-new-book-performance-of-open-source.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-10-16-new-book-performance-of-open-source.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
-"title: 'New book: Performance of Open Source Applications, with a chapter on "
-"Infinispan'\n"
+"title: 'New book: Performance of Open Source Applications, with a chapter on Infinispan'\n"
 "permalink: /blog/:year/:month/:day/new-book-performance-of-open-source\n"
 "date: '2013-10-16T23:30:00.001-07:00'\n"
 "author: msurtani\n"
 "tags: [ \" performance\", \"book\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7968506264489363481\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/10/new-book-performance-"
-"of-open-source.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7968506264489363481\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/10/new-book-performance-of-open-source.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -45,55 +42,27 @@ msgstr ""
 "date: '2013-10-16T23:30:00.001-07:00'\n"
 "author: msurtani\n"
 "tags: [ \" performance\", \"book\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7968506264489363481\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/10/new-book-performance-"
-"of-open-source.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7968506264489363481\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/10/new-book-performance-of-open-source.html\n"
 "---\n"
 
 #. type: Title ==
 #: upstream/_posts/2013-10-16-new-book-performance-of-open-source.adoc:11
-#, no-wrap, fuzzy
-msgid ""
-"_*NOTE:* Cross-posted from http://manik.surtani.org/2013/10/new-book-"
-"performance-of-open-source.html[Manik's personal blog]_"
+#, fuzzy, no-wrap
+msgid "_*NOTE:* Cross-posted from http://manik.surtani.org/2013/10/new-book-performance-of-open-source.html[Manik's personal blog]_"
 msgstr "_*注：*Manikさんの個人ブログ_ からのクロスポストです。"
 
 #. type: Plain text
 #: upstream/_posts/2013-10-16-new-book-performance-of-open-source.adoc:20
 #, fuzzy
-msgid ""
-"http://aosabook.org/en/index.html[image:http://aosabook.org/images/posa-"
-"cover.png[image,width=242,height=320]]From the good folks who brought you "
-"the excellent http://aosabook.org/en/index.html[Architecture of Open Source "
-"Applications] (AOSA), available for free online, as a PDF, for e-book "
-"readers or as a good old-fashioned dead tree, we're now treated to a new "
-"tome - the http://aosabook.org/en/index.html[Performance of Open Source "
-"Applications] (POSA)."
-msgstr ""
-"link:http://aosabook.org/en/index.html[] オープンソースアプリケーションの優れた link:http://"
-"aosabook.org/en/index.html[アーキテクチャ (AOSA] ) "
-"をもたらした善良な人々から、PDFとして、電子書籍リーダーのために、または古風な枯れ木として、無料でオンラインで利用できるように、我々は今、新しい文書に扱われています "
-"- link:http://aosabook.org/en/index.html[オープンソースアプリケーションの] パフォーマンス link:http:"
-"//aosabook.org/en/index.html[(POSA)。]"
+msgid "http://aosabook.org/en/index.html[image:http://aosabook.org/images/posa-cover.png[image,width=242,height=320]]From the good folks who brought you the excellent http://aosabook.org/en/index.html[Architecture of Open Source Applications] (AOSA), available for free online, as a PDF, for e-book readers or as a good old-fashioned dead tree, we're now treated to a new tome - the http://aosabook.org/en/index.html[Performance of Open Source Applications] (POSA)."
+msgstr "link:http://aosabook.org/en/index.html[] オープンソースアプリケーションの優れた link:http://aosabook.org/en/index.html[アーキテクチャ (AOSA] ) をもたらした善良な人々から、PDFとして、電子書籍リーダーのために、または古風な枯れ木として、無料でオンラインで利用できるように、我々は今、新しい文書に扱われています - link:http://aosabook.org/en/index.html[オープンソースアプリケーションの] パフォーマンス link:http://aosabook.org/en/index.html[(POSA)。]"
 
 #. type: Plain text
 #: upstream/_posts/2013-10-16-new-book-performance-of-open-source.adoc:29
 #, fuzzy
-msgid ""
-"POSA follows the same concept as AOSA - a different authoritative figure in "
-"the open source community is responsible for each chapter, providing you "
-"with excellent insight on how some of the most popular open source "
-"applications have been designed and built.  POSA focuses specifically on "
-"performance rather than general software architecture, and I've contributed "
-"a chapter on the performance related work conducted for Infinispan (see http:"
-"//aosabook.org/en/posa/infinispan.html[Chapter 7])."
-msgstr ""
-"POSA は AOSA と同じコンセプトを踏襲しています。 "
-"オープンソースコミュニティの異なる権威ある人物が各章を担当し、最も人気のあるオープンソースアプリケーションのいくつかがどのように設計され、構築されてきたかについての優れた洞察を提供します。 "
-"POSA は一般的なソフトウェアアーキテクチャよりも特にパフォーマンスに焦点を当てており、私は Infinispan "
-"のために実施されたパフォーマンス関連の作業についての章を寄稿しました (第 7 章を参照 link:http://aosabook.org/en/"
-"posa/infinispan.html[)。]"
+msgid "POSA follows the same concept as AOSA - a different authoritative figure in the open source community is responsible for each chapter, providing you with excellent insight on how some of the most popular open source applications have been designed and built.  POSA focuses specifically on performance rather than general software architecture, and I've contributed a chapter on the performance related work conducted for Infinispan (see http://aosabook.org/en/posa/infinispan.html[Chapter 7])."
+msgstr "POSA は AOSA と同じコンセプトを踏襲しています。 オープンソースコミュニティの異なる権威ある人物が各章を担当し、最も人気のあるオープンソースアプリケーションのいくつかがどのように設計され、構築されてきたかについての優れた洞察を提供します。 POSA は一般的なソフトウェアアーキテクチャよりも特にパフォーマンスに焦点を当てており、私は Infinispan のために実施されたパフォーマンス関連の作業についての章を寄稿しました (第 7 章を参照 link:http://aosabook.org/en/posa/infinispan.html[)。]"
 
 #. type: Plain text
 #: upstream/_posts/2013-10-16-new-book-performance-of-open-source.adoc:31

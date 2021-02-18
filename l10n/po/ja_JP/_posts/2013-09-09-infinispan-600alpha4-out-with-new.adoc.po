@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-09-09-infinispan-600alpha4-out-with-new.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-09-infinispan-600alpha4-out-with-new.adoc:17
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 6.0.0.Alpha4 out with new CacheLoader/CacheWriter API!\n"
@@ -39,10 +39,8 @@ msgid ""
 "\"cache store\",\n"
 "\"query\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8106316007662212850\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/09/infinispan-600alpha4-"
-"out-with-new.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8106316007662212850\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/09/infinispan-600alpha4-out-with-new.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -58,48 +56,15 @@ msgstr ""
 "\"cache store\",\n"
 "\"query\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8106316007662212850\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/09/infinispan-600alpha4-"
-"out-with-new.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8106316007662212850\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/09/infinispan-600alpha4-out-with-new.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-09-infinispan-600alpha4-out-with-new.adoc:35
 #, fuzzy
-msgid ""
-"Infinispan 6.0.0.Alpha4 is now with a few very important changes, "
-"particularly around cache stores. We've completely revamped the cache store/"
-"loader API to align it a bit better with JSR-107 (old CacheStore has become "
-"CacheWriter) and to simplify creation of new implementations.  The new https:"
-"//github.com/infinispan/infinispan/blob/6.0.0.Alpha4/core/src/main/java/org/"
-"infinispan/persistence/spi/CacheLoader.java[CacheLoader] and https://github."
-"com/infinispan/infinispan/blob/6.0.0.Alpha4/core/src/main/java/org/"
-"infinispan/persistence/spi/CacheWriter.java[CacheWriter] should help "
-"implementors focus on the important operations and reduce the coding time. "
-"We've also created https://github.com/infinispan/infinispan/blob/6.0.0."
-"Alpha4/core/src/main/java/org/infinispan/persistence/spi/AdvancedCacheLoader."
-"java[AdvancedCacheLoader] and https://github.com/infinispan/infinispan/blob/"
-"6.0.0.Alpha4/core/src/main/java/org/infinispan/persistence/spi/"
-"AdvancedCacheWriter.java[AdvancedCacheWriter] in order to separate for bulk "
-"operations or purging for those implementations that wish optionally "
-"implement them. Expect a blog post from Mircea in the next few days "
-"providing many more details on this topic."
-msgstr ""
-"Infinispan 6.0.0.0.Alpha4は、いくつかの非常に重要な変更点があります。JSR-"
-"107との整合性を少し良くするために、キャッシュストア/"
-"ローダAPIを完全に刷新しました（古いCacheStoreはCacheWriterになりました）。新しい link:https://github.com/"
-"infinispan/infinispan/blob/6.0.0.Alpha4/core/src/main/java/org/infinispan/"
-"persistence/spi/CacheLoader.java[CacheLoader] と link:https://github.com/"
-"infinispan/infinispan/blob/6.0.0.Alpha4/core/src/main/java/org/infinispan/"
-"persistence/spi/CacheWriter.java[CacheWriter] "
-"は、実装者が重要な操作に集中し、コーディング時間を短縮するのに役立つはずです。また、オプションで実装を希望する実装のために、バルク操作やパージのために分離するために、 "
-"link:https://github.com/infinispan/infinispan/blob/6.0.0.Alpha4/core/src/"
-"main/java/org/infinispan/persistence/spi/AdvancedCacheLoader."
-"java[AdvancedCacheLoader] と link:https://github.com/infinispan/infinispan/"
-"blob/6.0.0.Alpha4/core/src/main/java/org/infinispan/persistence/spi/"
-"AdvancedCacheWriter.java[AdvancedCacheWriter] を作成しました。このトピックについては、近日中に "
-"Mircea からのブログ記事を期待しています。"
+msgid "Infinispan 6.0.0.Alpha4 is now with a few very important changes, particularly around cache stores. We've completely revamped the cache store/loader API to align it a bit better with JSR-107 (old CacheStore has become CacheWriter) and to simplify creation of new implementations.  The new https://github.com/infinispan/infinispan/blob/6.0.0.Alpha4/core/src/main/java/org/infinispan/persistence/spi/CacheLoader.java[CacheLoader] and https://github.com/infinispan/infinispan/blob/6.0.0.Alpha4/core/src/main/java/org/infinispan/persistence/spi/CacheWriter.java[CacheWriter] should help implementors focus on the important operations and reduce the coding time. We've also created https://github.com/infinispan/infinispan/blob/6.0.0.Alpha4/core/src/main/java/org/infinispan/persistence/spi/AdvancedCacheLoader.java[AdvancedCacheLoader] and https://github.com/infinispan/infinispan/blob/6.0.0.Alpha4/core/src/main/java/org/infinispan/persistence/spi/AdvancedCacheWriter.java[AdvancedCacheWriter] in order to separate for bulk operations or purging for those implementations that wish optionally implement them. Expect a blog post from Mircea in the next few days providing many more details on this topic."
+msgstr "Infinispan 6.0.0.0.Alpha4は、いくつかの非常に重要な変更点があります。JSR-107との整合性を少し良くするために、キャッシュストア/ローダAPIを完全に刷新しました（古いCacheStoreはCacheWriterになりました）。新しい link:https://github.com/infinispan/infinispan/blob/6.0.0.Alpha4/core/src/main/java/org/infinispan/persistence/spi/CacheLoader.java[CacheLoader] と link:https://github.com/infinispan/infinispan/blob/6.0.0.Alpha4/core/src/main/java/org/infinispan/persistence/spi/CacheWriter.java[CacheWriter] は、実装者が重要な操作に集中し、コーディング時間を短縮するのに役立つはずです。また、オプションで実装を希望する実装のために、バルク操作やパージのために分離するために、 link:https://github.com/infinispan/infinispan/blob/6.0.0.Alpha4/core/src/main/java/org/infinispan/persistence/spi/AdvancedCacheLoader.java[AdvancedCacheLoader] と link:https://github.com/infinispan/infinispan/blob/6.0.0.Alpha4/core/src/main/java/org/infinispan/persistence/spi/AdvancedCacheWriter.java[AdvancedCacheWriter] を作成しました。このトピックについては、近日中に Mircea からのブログ記事を期待しています。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-09-infinispan-600alpha4-out-with-new.adoc:37
@@ -134,41 +99,20 @@ msgstr "Infinispan ServerにRESTとLevelDBストアが追加されました。"
 #. type: Plain text
 #: upstream/_posts/2013-09-09-infinispan-600alpha4-out-with-new.adoc:44
 #, fuzzy
-msgid ""
-"https://github.com/infinispan/infinispan/blob/6.0.0.Alpha4/core/src/main/"
-"java/org/infinispan/notifications/KeyFilter.java[KeyFilters] can now be "
-"applied to Cache listeners"
-msgstr ""
-"link:https://github.com/infinispan/infinispan/blob/6.0.0.Alpha4/core/src/"
-"main/java/org/infinispan/notifications/KeyFilter.java[KeyFilters を] Cache "
-"リスナーに適用できるようになりました。"
+msgid "https://github.com/infinispan/infinispan/blob/6.0.0.Alpha4/core/src/main/java/org/infinispan/notifications/KeyFilter.java[KeyFilters] can now be applied to Cache listeners"
+msgstr "link:https://github.com/infinispan/infinispan/blob/6.0.0.Alpha4/core/src/main/java/org/infinispan/notifications/KeyFilter.java[KeyFilters を] Cache リスナーに適用できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-09-infinispan-600alpha4-out-with-new.adoc:46
 #, fuzzy
-msgid ""
-"Allow Cache listener events to be invoked only on the primary data owner"
+msgid "Allow Cache listener events to be invoked only on the primary data owner"
 msgstr "プライマリ・データ所有者に対してのみ、キャッシュ・リスナー・イベントを起動できるようにします。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-09-infinispan-600alpha4-out-with-new.adoc:55
 #, fuzzy
-msgid ""
-"For a complete list of features and fixes included in this release please "
-"refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12310799&version=12321856[release notes]. Visit our http://www.jboss.org/"
-"infinispan/downloads[downloads] section to find the latest release and if "
-"you have any questions please check http://www.jboss.org/infinispan/"
-"forums[our forums], our https://lists.jboss.org/mailman/listinfo/infinispan-"
-"dev[mailing lists] or ping us directly on irc://irc.freenode.org/"
-"infinispan[IRC]."
-msgstr ""
-"このリリースに含まれる機能と修正の完全なリストについては、 link:https://issues.jboss.org/secure/"
-"ReleaseNote.jspa?projectId=12310799&version=12321856[リリースノート] "
-"を参照してください。最新のリリースは link:http://www.jboss.org/infinispan/downloads[ダウンロード] "
-"セクションをご覧ください。質問がある場合は、 link:http://www.jboss.org/infinispan/forums[フォーラム] 、 "
-"link:https://lists.jboss.org/mailman/listinfo/infinispan-dev[メーリングリスト] 、または "
-"link:irc://irc.freenode.org/infinispan[IRC] で直接 ping してください。"
+msgid "For a complete list of features and fixes included in this release please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12321856[release notes]. Visit our http://www.jboss.org/infinispan/downloads[downloads] section to find the latest release and if you have any questions please check http://www.jboss.org/infinispan/forums[our forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+msgstr "このリリースに含まれる機能と修正の完全なリストについては、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12321856[リリースノート] を参照してください。最新のリリースは link:http://www.jboss.org/infinispan/downloads[ダウンロード] セクションをご覧ください。質問がある場合は、 link:http://www.jboss.org/infinispan/forums[フォーラム] 、 link:https://lists.jboss.org/mailman/listinfo/infinispan-dev[メーリングリスト] 、または link:irc://irc.freenode.org/infinispan[IRC] で直接 ping してください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-09-infinispan-600alpha4-out-with-new.adoc:59

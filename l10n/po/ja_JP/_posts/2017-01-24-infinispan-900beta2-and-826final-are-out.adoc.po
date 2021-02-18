@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.0.0.Beta2 and 8.2.6.Final are out!\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2017-01-24T05:50:00.002-08:00'\n"
 "author: galder\n"
 "tags: [ \" beta\", \"release\", \"stable\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"437701447542440150\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/01/infinispan-900beta2-"
-"and-826final-are-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-437701447542440150\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/01/infinispan-900beta2-and-826final-are-out.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,18 +42,14 @@ msgstr ""
 "date: '2017-01-24T05:50:00.002-08:00'\n"
 "author: galder\n"
 "tags: [ \" beta\", \"release\", \"stable\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"437701447542440150\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/01/infinispan-900beta2-"
-"and-826final-are-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-437701447542440150\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/01/infinispan-900beta2-and-826final-are-out.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:13
 #, fuzzy
-msgid ""
-"It's release day at Infinispan HQ and we've just released a couple of new "
-"versions:"
+msgid "It's release day at Infinispan HQ and we've just released a couple of new versions:"
 msgstr "今日はInfinispan本社のリリース日で、いくつかの新バージョンをリリースしました。"
 
 #. type: Plain text
@@ -73,12 +67,8 @@ msgstr "新品です。"
 #. type: Plain text
 #: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:20
 #, fuzzy
-msgid ""
-"Multi-tenancy support for Hot Rod and REST endpoints improve Infinispan "
-"Server experience on OpenShift."
-msgstr ""
-"Hot RodとRESTエンドポイントのマルチテナンシーサポートにより、OpenShift上でのInfinispan "
-"Serverのエクスペリエンスが向上します。"
+msgid "Multi-tenancy support for Hot Rod and REST endpoints improve Infinispan Server experience on OpenShift."
+msgstr "Hot RodとRESTエンドポイントのマルチテナンシーサポートにより、OpenShift上でのInfinispan Serverのエクスペリエンスが向上します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:21
@@ -89,15 +79,8 @@ msgstr "Functional API のトランザクションサポート (thx Radim!)"
 #. type: Plain text
 #: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:26
 #, fuzzy
-msgid ""
-"Internal data container changes, see Will's blog posts (http://blog."
-"infinispan.org/2016/12/data-container-changes-part-1.html[here] and http://"
-"blog.infinispan.org/2017/01/data-container-changes-part-2.html[here])  for "
-"more info."
-msgstr ""
-"内部データコンテナの変更については、ウィルのブログ記事 link:http://blog.infinispan.org/2016/12/data-"
-"container-changes-part-1.html[（ここ] と link:http://blog.infinispan.org/2017/01/"
-"data-container-changes-part-2.html[ここ] ）を参照してください。"
+msgid "Internal data container changes, see Will's blog posts (http://blog.infinispan.org/2016/12/data-container-changes-part-1.html[here] and http://blog.infinispan.org/2017/01/data-container-changes-part-2.html[here])  for more info."
+msgstr "内部データコンテナの変更については、ウィルのブログ記事 link:http://blog.infinispan.org/2016/12/data-container-changes-part-1.html[（ここ] と link:http://blog.infinispan.org/2017/01/data-container-changes-part-2.html[ここ] ）を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:27
@@ -132,13 +115,8 @@ msgstr "下位互換性があります。"
 #. type: Plain text
 #: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:37
 #, fuzzy
-msgid ""
-"Binary and mixed JDBC cache stores have been removed. To migrate data over, "
-"use the http://infinispan.org/docs/dev/user_guide/user_guide."
-"html#jdbc_migrator[JDBC cache store migrator]."
-msgstr ""
-"バイナリおよび混合 JDBC キャッシュストアは削除されました。データを移行するには、 link:http://infinispan.org/docs/"
-"dev/user_guide/user_guide.html#jdbc_migrator[JDBCキャッシュストアマイグレータを] 使用します。"
+msgid "Binary and mixed JDBC cache stores have been removed. To migrate data over, use the http://infinispan.org/docs/dev/user_guide/user_guide.html#jdbc_migrator[JDBC cache store migrator]."
+msgstr "バイナリおよび混合 JDBC キャッシュストアは削除されました。データを移行するには、 link:http://infinispan.org/docs/dev/user_guide/user_guide.html#jdbc_migrator[JDBCキャッシュストアマイグレータを] 使用します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:38
@@ -149,12 +127,8 @@ msgstr "デフォルトのキャッシュ継承を削除しました。"
 #. type: Plain text
 #: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:41
 #, fuzzy
-msgid ""
-"https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
-"12330026[Full release notes]."
-msgstr ""
-"link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12310799&version=12330026[完全なリリースノート] 。"
+msgid "https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12330026[Full release notes]."
+msgstr "link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12330026[完全なリリースノート] 。"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:43
@@ -165,12 +139,8 @@ msgstr "Infinispan 8.2.6.Finalには複数のバグフィックスが含まれ�
 #. type: Plain text
 #: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:46
 #, fuzzy
-msgid ""
-"https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
-"12332803[Full release notes]."
-msgstr ""
-"link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12310799&version=12332803[完全なリリースノート] 。"
+msgid "https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12332803[Full release notes]."
+msgstr "link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12332803[完全なリリースノート] 。"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-24-infinispan-900beta2-and-826final-are-out.adoc:50

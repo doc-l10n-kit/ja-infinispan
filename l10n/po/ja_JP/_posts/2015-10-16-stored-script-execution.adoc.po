@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-10-16-stored-script-execution.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-16-stored-script-execution.adoc:16
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Stored Script Execution\n"
@@ -38,10 +38,8 @@ msgid ""
 "\"server\",\n"
 "\"nashorn\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1897146103126485394\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/10/stored-script-"
-"execution.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1897146103126485394\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/10/stored-script-execution.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -56,20 +54,15 @@ msgstr ""
 "\"server\",\n"
 "\"nashorn\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1897146103126485394\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/10/stored-script-"
-"execution.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1897146103126485394\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/10/stored-script-execution.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-16-stored-script-execution.adoc:19
 #, fuzzy
-msgid ""
-"One of the questions we get asked a lot is: when will I be able to run Map/"
-"Reduce and DistExec jobs over HotRod."
-msgstr ""
-"よく聞かれる質問の一つに、HotRod上でMap/ReduceやDistExecのジョブをいつ実行できるようになるのかというものがあります。"
+msgid "One of the questions we get asked a lot is: when will I be able to run Map/Reduce and DistExec jobs over HotRod."
+msgstr "よく聞かれる質問の一つに、HotRod上でMap/ReduceやDistExecのジョブをいつ実行できるようになるのかというものがあります。"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-16-stored-script-execution.adoc:21
@@ -80,22 +73,8 @@ msgstr "嬉しい限りです。"
 #. type: Plain text
 #: upstream/_posts/2015-10-16-stored-script-execution.adoc:32
 #, fuzzy
-msgid ""
-"Infinispan Server comes with Stored Script Execution which means that remote "
-"clients can invoke named scripts on the server. If you're familiar with the "
-"concept of Stored Procedures of the SQL world, then you already have an idea "
-"of what this feature is about. The types of scripts you can run are those "
-"handled by Java's scripting API. Out of the box this means Javascript (which "
-"uses either the Nashorn engine on JDK 8+), but you can add many more "
-"(Groovy, Scala, JRuby, Jython, Lua, etc). Scripts are stored in a dedicated "
-"script cache (\"___scriptcache\")  so that they can be easily created/"
-"modified using the standard cache operations (put/get/etc.)."
-msgstr ""
-"Infinispan Server "
-"にはストアドスクリプト実行機能が搭載されており、リモートクライアントがサーバー上で名前のついたスクリプトを呼び出すことができます。SQL "
-"の世界のストアドプロシージャの概念に精通している方は、この機能がどのようなものであるかをすでに理解しているでしょう。実行できるスクリプトの種類は、JavaのスクリプトAPIで処理されるものです。これは、Javascript（JDK "
-"8+のNashornエンジンのいずれかを使用）を意味しますが、他にも多くのスクリプト（Groovy、Scala、JRuby、Jython、Luaなど）を追加することができます。スクリプトは専用のスクリプトキャッシュ(\"___scriptcache\")に格納され、標準的なキャッシュ操作(put/"
-"get/etc.)で簡単に作成/変更できるようになっています。"
+msgid "Infinispan Server comes with Stored Script Execution which means that remote clients can invoke named scripts on the server. If you're familiar with the concept of Stored Procedures of the SQL world, then you already have an idea of what this feature is about. The types of scripts you can run are those handled by Java's scripting API. Out of the box this means Javascript (which uses either the Nashorn engine on JDK 8+), but you can add many more (Groovy, Scala, JRuby, Jython, Lua, etc). Scripts are stored in a dedicated script cache (\"___scriptcache\")  so that they can be easily created/modified using the standard cache operations (put/get/etc.)."
+msgstr "Infinispan Server にはストアドスクリプト実行機能が搭載されており、リモートクライアントがサーバー上で名前のついたスクリプトを呼び出すことができます。SQL の世界のストアドプロシージャの概念に精通している方は、この機能がどのようなものであるかをすでに理解しているでしょう。実行できるスクリプトの種類は、JavaのスクリプトAPIで処理されるものです。これは、Javascript（JDK 8+のNashornエンジンのいずれかを使用）を意味しますが、他にも多くのスクリプト（Groovy、Scala、JRuby、Jython、Luaなど）を追加することができます。スクリプトは専用のスクリプトキャッシュ(\"___scriptcache\")に格納され、標準的なキャッシュ操作(put/get/etc.)で簡単に作成/変更できるようになっています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-16-stored-script-execution.adoc:34
@@ -106,37 +85,19 @@ msgstr "非常にシンプルなスクリプトの例をご紹介します。"
 #. type: Plain text
 #: upstream/_posts/2015-10-16-stored-script-execution.adoc:43
 #, fuzzy
-msgid ""
-"The script above just obtains the default cache, retrieves the value with "
-"key 'a' and returns it (the Javascript script engine uses the last evaluated "
-"expression of a script as its return value).  The first line of the script "
-"is special: it looks like a comment, but, like the first line in Unix shell "
-"scripts, it actually provides instructions on how the script should be run "
-"in the form of properties."
-msgstr ""
-"上のスクリプトはデフォルトのキャッシュを取得し、キー 'a' を持つ値を取得してそれを返します (Javascript "
-"スクリプトエンジンはスクリプトの最後に評価された式をその戻り値として使用します)。スクリプトの最初の行は特別です。コメントのように見えますが、Unix "
-"シェルスクリプトの最初の行のように、実際にはプロパティの形でスクリプトの実行方法についての指示を提供しています。"
+msgid "The script above just obtains the default cache, retrieves the value with key 'a' and returns it (the Javascript script engine uses the last evaluated expression of a script as its return value).  The first line of the script is special: it looks like a comment, but, like the first line in Unix shell scripts, it actually provides instructions on how the script should be run in the form of properties."
+msgstr "上のスクリプトはデフォルトのキャッシュを取得し、キー 'a' を持つ値を取得してそれを返します (Javascript スクリプトエンジンはスクリプトの最後に評価された式をその戻り値として使用します)。スクリプトの最初の行は特別です。コメントのように見えますが、Unix シェルスクリプトの最初の行のように、実際にはプロパティの形でスクリプトの実行方法についての指示を提供しています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-16-stored-script-execution.adoc:49
 #, fuzzy
-msgid ""
-"The mode property instructs the execution engine where we want to run the "
-"script: _local_ for running the script on the node that is handling the "
-"request and _distributed_ for running the script wrapped by a distributed "
-"executor. Bear in mind that you can certainly use clustered operations in "
-"_local_ mode."
-msgstr ""
-"リクエストを処理しているノード上でスクリプトを実行する場合は _local_ 、 _分散_ 型の実行者によってラップされたスクリプトを実行する場合は "
-"distributed となります。 _ローカル_ モードでクラスタ化された操作を確実に使用できることを覚えておいてください。"
+msgid "The mode property instructs the execution engine where we want to run the script: _local_ for running the script on the node that is handling the request and _distributed_ for running the script wrapped by a distributed executor. Bear in mind that you can certainly use clustered operations in _local_ mode."
+msgstr "リクエストを処理しているノード上でスクリプトを実行する場合は _local_ 、 _分散_ 型の実行者によってラップされたスクリプトを実行する場合は distributed となります。 _ローカル_ モードでクラスタ化された操作を確実に使用できることを覚えておいてください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-16-stored-script-execution.adoc:52
 #, fuzzy
-msgid ""
-"Scripts can also take named parameters which will \"appear\" as bindings in "
-"the execution scope."
+msgid "Scripts can also take named parameters which will \"appear\" as bindings in the execution scope."
 msgstr "スクリプトは、実行スコープ内のバインディングとして\"表示\"される名前付きのパラメータを取ることもできます。"
 
 #. type: Plain text
@@ -148,10 +109,5 @@ msgstr "Java HotRodクライアントから呼び出すと、次のようにな�
 #. type: Plain text
 #: upstream/_posts/2015-10-16-stored-script-execution.adoc:61
 #, fuzzy
-msgid ""
-"Server-side scripts will be evolving quite a bit in Infinispan 8.1 where we "
-"will add support for the broader concept of server-side tasks which will "
-"include both scripts and deployable code which can be invoked in the same "
-"way, all managed and configured by the upcoming changes in the Infinispan "
-"Server console."
+msgid "Server-side scripts will be evolving quite a bit in Infinispan 8.1 where we will add support for the broader concept of server-side tasks which will include both scripts and deployable code which can be invoked in the same way, all managed and configured by the upcoming changes in the Infinispan Server console."
 msgstr "サーバーサイドスクリプトは、Infinispan 8.1ではかなり進化する予定です。"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Data Container Changes Part 2\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2017-01-23T13:35:00.002-08:00'\n"
 "author: wburns\n"
 "tags: [data, storage]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3597184894679767136\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/01/data-container-changes-"
-"part-2.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3597184894679767136\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/01/data-container-changes-part-2.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,310 +42,186 @@ msgstr ""
 "date: '2017-01-23T13:35:00.002-08:00'\n"
 "author: wburns\n"
 "tags: [data, storage]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3597184894679767136\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/01/data-container-changes-"
-"part-2.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3597184894679767136\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/01/data-container-changes-part-2.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:19
 #, fuzzy
-msgid ""
-"Before the end of the year I wrote a http://blog.infinispan.org/2016/12/data-"
-"container-changes-part-1.html[blog post] detailing some of the more recent "
-"changes that Infinispan introduced with the in memory data container.  As "
-"was mentioned in the previous post we would be detailing some other new "
-"changes. If you poked around in our new https://docs.jboss.org/infinispan/9."
-"0/configdocs/infinispan-config-9.0.html[schema] after Beta 1 you may have "
-"spoiled the surprise for yourself."
-msgstr ""
-"年末の前に、インメモリデータコンテナで導入されたInfinispanの最近の変更点の詳細について link:http://blog.infinispan."
-"org/2016/12/data-container-changes-part-1.html[ブログ記事] を書きました。 "
-"前の記事でも触れましたが、他にもいくつかの新しい変更点について詳細に説明する予定です。ベータ1の後に新しい link:https://docs."
-"jboss.org/infinispan/9.0/configdocs/infinispan-config-9.0.html[スキーマ] "
-"を覗いてみたら、自分でもびっくりするような変更点があったかもしれません。"
+msgid "Before the end of the year I wrote a http://blog.infinispan.org/2016/12/data-container-changes-part-1.html[blog post] detailing some of the more recent changes that Infinispan introduced with the in memory data container.  As was mentioned in the previous post we would be detailing some other new changes. If you poked around in our new https://docs.jboss.org/infinispan/9.0/configdocs/infinispan-config-9.0.html[schema] after Beta 1 you may have spoiled the surprise for yourself."
+msgstr "年末の前に、インメモリデータコンテナで導入されたInfinispanの最近の変更点の詳細について link:http://blog.infinispan.org/2016/12/data-container-changes-part-1.html[ブログ記事] を書きました。 前の記事でも触れましたが、他にもいくつかの新しい変更点について詳細に説明する予定です。ベータ1の後に新しい link:https://docs.jboss.org/infinispan/9.0/configdocs/infinispan-config-9.0.html[スキーマ] を覗いてみたら、自分でもびっくりするような変更点があったかもしれません。"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:26
 #, fuzzy
-msgid ""
-"With the upcoming 9.0 Beta 2, I am excited to announce that Infinispan will "
-"have support for entries being stored *off heap*, as in outside of the JVM "
-"heap. This has some interesting benefits and drawbacks, but we hope you can "
-"agree the benefits in many cases far outweigh the drawbacks. But before we "
-"get into that lets first see how you can configure your cache to utilize off "
-"heap."
-msgstr ""
-"来る9.0ベータ2では、Infinispanが *ヒープから離れ* "
-"た場所、つまりJVMヒープの外側にエントリを保存できるようになることを発表したいと思います。これにはいくつかの興味深い利点と欠点がありますが、多くの場合、利点が欠点をはるかに上回ることにご同意いただけると幸いです。しかし、その前に、オフヒープを利用するためのキャッシュの設定方法を見てみましょう。"
+msgid "With the upcoming 9.0 Beta 2, I am excited to announce that Infinispan will have support for entries being stored *off heap*, as in outside of the JVM heap. This has some interesting benefits and drawbacks, but we hope you can agree the benefits in many cases far outweigh the drawbacks. But before we get into that lets first see how you can configure your cache to utilize off heap."
+msgstr "来る9.0ベータ2では、Infinispanが *ヒープから離れ* た場所、つまりJVMヒープの外側にエントリを保存できるようになることを発表したいと思います。これにはいくつかの興味深い利点と欠点がありますが、多くの場合、利点が欠点をはるかに上回ることにご同意いただけると幸いです。しかし、その前に、オフヒープを利用するためのキャッシュの設定方法を見てみましょう。"
 
 #. type: Title ==
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:28
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "New Configuration"
 msgstr "新しい設定"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:35
 #, fuzzy
-msgid ""
-"The off heap configuration is another option under the new memory element "
-"that was discussed in the previous post. It is used in the same way that "
-"either OBJECT or BINARY is used.  You can use either COUNT or MEMORY "
-"eviciton types, the example below shows the latter."
-msgstr ""
-"オフヒープ設定は、前の投稿で説明した新しいメモリ要素の下にあるもう一つのオプションです。これはOBJECTまたはBINARYが使用されるのと同じ方法で使用されます。 "
-"COUNTまたはMEMORY evicitonタイプのいずれかを使用することができ、以下の例では後者を示しています。"
+msgid "The off heap configuration is another option under the new memory element that was discussed in the previous post. It is used in the same way that either OBJECT or BINARY is used.  You can use either COUNT or MEMORY eviciton types, the example below shows the latter."
+msgstr "オフヒープ設定は、前の投稿で説明した新しいメモリ要素の下にあるもう一つのオプションです。これはOBJECTまたはBINARYが使用されるのと同じ方法で使用されます。 COUNTまたはMEMORY evicitonタイプのいずれかを使用することができ、以下の例では後者を示しています。"
 
 #. type: Title ===
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:36
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "XML"
 msgstr "エックスエムエル"
 
 #. type: Title ===
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:40
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "DECLARATIVE"
 msgstr "宣言的"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:45
 #, fuzzy
-msgid ""
-"As you can see the configuration is almost identical to the other types of "
-"storage. The only real difference is the new address pointer argument, which "
-"will be explained below."
-msgstr ""
-"ご覧のように、構成は他のタイプのストレージとほぼ同じです。唯一の本当の違いは、新しいアドレスポインタの引数ですが、これについては後述します。"
+msgid "As you can see the configuration is almost identical to the other types of storage. The only real difference is the new address pointer argument, which will be explained below."
+msgstr "ご覧のように、構成は他のタイプのストレージとほぼ同じです。唯一の本当の違いは、新しいアドレスポインタの引数ですが、これについては後述します。"
 
 #. type: Title ==
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:47
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Requirements"
 msgstr "必要条件"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:53
 #, fuzzy
-msgid ""
-"Our off heap implementation supports all existing features of Infinispan. "
-"There are some limitations and drawbacks of using the feature. This section "
-"will describe these in further detail."
-msgstr ""
-"私たちのオフヒープ実装は、Infinispanの既存のすべての機能をサポートしています。この機能を使用することにはいくつかの制限と欠点があります。このセクションでは、これらについてさらに詳しく説明します。"
+msgid "Our off heap implementation supports all existing features of Infinispan. There are some limitations and drawbacks of using the feature. This section will describe these in further detail."
+msgstr "私たちのオフヒープ実装は、Infinispanの既存のすべての機能をサポートしています。この機能を使用することにはいくつかの制限と欠点があります。このセクションでは、これらについてさらに詳しく説明します。"
 
 #. type: Title ===
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:55
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Serialization"
 msgstr "シリアル化"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:62
 #, fuzzy
-msgid ""
-"Off Heap runs in essentially BINARY mode, which requires entries to be "
-"serialized into their byte[] forms. Thus all keys and entries must be "
-"Serializable or have provided Infinispan http://infinispan.org/docs/dev/"
-"user_guide/user_guide.html#marshalling[Externalizers]."
-msgstr ""
-"Off Heap は基本的に BINARY モードで動作し、エントリを byte[] "
-"形式にシリアライズする必要があります。したがって、すべてのキーとエントリはシリアライズ可能か、Infinispan link:http://"
-"infinispan.org/docs/dev/user_guide/user_guide.html#marshalling[Externalizers "
-"を] 提供している必要があります。"
+msgid "Off Heap runs in essentially BINARY mode, which requires entries to be serialized into their byte[] forms. Thus all keys and entries must be Serializable or have provided Infinispan http://infinispan.org/docs/dev/user_guide/user_guide.html#marshalling[Externalizers]."
+msgstr "Off Heap は基本的に BINARY モードで動作し、エントリを byte[] 形式にシリアライズする必要があります。したがって、すべてのキーとエントリはシリアライズ可能か、Infinispan link:http://infinispan.org/docs/dev/user_guide/user_guide.html#marshalling[Externalizers を] 提供している必要があります。"
 
 #. type: Title ===
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:64
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Size"
 msgstr "サイズ"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:72
 #, fuzzy
-msgid ""
-"Currently a key and a value must be able to be stored in a byte[].  "
-"Therefore a key or value in serialized form cannot be more than just over 2 "
-"Gigabytes.  This could be enhanced possibly at a later point, if the need "
-"arose.  I hope you aren't transferring this over your network though!"
-msgstr ""
-"現在のところ、キーと値は byte[] に格納できなければなりません。そのため、シリアル化されたキーや値は2ギガバイトを超えることはできません。 "
-"これは、必要に応じて後から強化される可能性があります。 ネットワーク経由で転送されないことを願いますが!"
+msgid "Currently a key and a value must be able to be stored in a byte[].  Therefore a key or value in serialized form cannot be more than just over 2 Gigabytes.  This could be enhanced possibly at a later point, if the need arose.  I hope you aren't transferring this over your network though!"
+msgstr "現在のところ、キーと値は byte[] に格納できなければなりません。そのため、シリアル化されたキーや値は2ギガバイトを超えることはできません。 これは、必要に応じて後から強化される可能性があります。 ネットワーク経由で転送されないことを願いますが!"
 
 #. type: Title ==
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:75
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Implementation Details "
 msgstr "実施内容"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:85
 #, fuzzy
-msgid ""
-"Our off heap implementation uses the Java Unsafe to allocate memory outside "
-"of the Java heap. This data is stored as a bucket of linked list pointers, "
-"just like a standard Java HashMap. When an entry is added the key's "
-"serialized byte[] is hashed and an appropriate offset is found in the bucket."
-" Then the entry is added to the bucket as the first element or if an "
-"entry(ies) is present it is added to the rear of the linked list."
-msgstr ""
-"私たちのオフヒープ実装では、Java Unsafeを使用してJavaヒープの外側にメモリを割り当てています。このデータは、標準的なJava "
-"HashMapのように、リンクされたリスト・ポインタのバケットとして格納されます。エントリが追加されると、キーのシリアライズされたバイト[]がハッシュ化され、適切なオフセットがバケット内で見つかります。そして、そのエントリが最初の要素としてバケットに追加され、もしエントリが存在する場合には、リンクされたリストの後ろに追加されます。"
+msgid "Our off heap implementation uses the Java Unsafe to allocate memory outside of the Java heap. This data is stored as a bucket of linked list pointers, just like a standard Java HashMap. When an entry is added the key's serialized byte[] is hashed and an appropriate offset is found in the bucket. Then the entry is added to the bucket as the first element or if an entry(ies) is present it is added to the rear of the linked list."
+msgstr "私たちのオフヒープ実装では、Java Unsafeを使用してJavaヒープの外側にメモリを割り当てています。このデータは、標準的なJava HashMapのように、リンクされたリスト・ポインタのバケットとして格納されます。エントリが追加されると、キーのシリアライズされたバイト[]がハッシュ化され、適切なオフセットがバケット内で見つかります。そして、そのエントリが最初の要素としてバケットに追加され、もしエントリが存在する場合には、リンクされたリストの後ろに追加されます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:93
 #, fuzzy
-msgid ""
-"All of this data is protected by an array of ReadWriteLock instances.  The "
-"number of address pointers is evenly divisible by the number of lock "
-"instances.  The number of lock instances is how many cores your machines "
-"doubled and rounded to the nearest power of two.  Thus each lock protects an "
-"equivalent amount of address spaces.  This provides for good lock "
-"granularity and reads will not block each other but unfortunately writes "
-"will wait and block all reads."
-msgstr ""
-"このデータはすべてReadWriteLockインスタンスの配列で保護されています。 "
-"アドレスポインタの数は、ロックインスタンスの数で均等に割られています。 "
-"ロックインスタンスの数は、マシンのコア数を2倍にして2の最も近い乗に四捨五入したものです。 したがって、各ロックは同等のアドレス空間を保護します。 "
-"これにより、良好なロックの粒度が提供され、リードはお互いにブロックされませんが、残念ながら、書き込みは待機してすべてのリードをブロックします。"
+msgid "All of this data is protected by an array of ReadWriteLock instances.  The number of address pointers is evenly divisible by the number of lock instances.  The number of lock instances is how many cores your machines doubled and rounded to the nearest power of two.  Thus each lock protects an equivalent amount of address spaces.  This provides for good lock granularity and reads will not block each other but unfortunately writes will wait and block all reads."
+msgstr "このデータはすべてReadWriteLockインスタンスの配列で保護されています。 アドレスポインタの数は、ロックインスタンスの数で均等に割られています。 ロックインスタンスの数は、マシンのコア数を2倍にして2の最も近い乗に四捨五入したものです。 したがって、各ロックは同等のアドレス空間を保護します。 これにより、良好なロックの粒度が提供され、リードはお互いにブロックされませんが、残念ながら、書き込みは待機してすべてのリードをブロックします。"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:98
 #, fuzzy
-msgid ""
-"If you are using a bounded off heap container either by count or memory this "
-"will create a backing LRU doubly linked list to keep track of which elements "
-"were accessed most recently and removes the least recently accessed element "
-"when there are too many present in the cache."
-msgstr ""
-"カウントまたはメモリでバウンデッドオフヒープコンテナを使用している場合、これはLRUの二重リンクリストを作成して、直近にアクセスされた要素を追跡し、キャッシュ内の要素が多すぎる場合には直近にアクセスされた要素を削除するようにします。"
+msgid "If you are using a bounded off heap container either by count or memory this will create a backing LRU doubly linked list to keep track of which elements were accessed most recently and removes the least recently accessed element when there are too many present in the cache."
+msgstr "カウントまたはメモリでバウンデッドオフヒープコンテナを使用している場合、これはLRUの二重リンクリストを作成して、直近にアクセスされた要素を追跡し、キャッシュ内の要素が多すぎる場合には直近にアクセスされた要素を削除するようにします。"
 
 #. type: Title ===
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:99
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid " "
 msgstr " "
 
 #. type: Title ===
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:101
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Memory Overhead"
 msgstr "メモリオーバーヘッド"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:108
 #, fuzzy
-msgid ""
-"As with all cache implementations there is overhead required to store these "
-"entries. We have a fixed and variable overhead which scales with the amount "
-"of entries. I will detail these and briefly mention what they are used for."
-msgstr ""
-"すべてのキャッシュ実装と同様に、これらのエントリを保存するために必要なオーバーヘッドがあります。エントリの量に応じて固定と可変のオーバーヘッドがあります。これらについて詳しく説明し、何のために使用されるのかを簡単に説明します。"
+msgid "As with all cache implementations there is overhead required to store these entries. We have a fixed and variable overhead which scales with the amount of entries. I will detail these and briefly mention what they are used for."
+msgstr "すべてのキャッシュ実装と同様に、これらのエントリを保存するために必要なオーバーヘッドがあります。エントリの量に応じて固定と可変のオーバーヘッドがあります。これらについて詳しく説明し、何のために使用されるのかを簡単に説明します。"
 
 #. type: Title ====
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:109
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Fixed overhead"
 msgstr "固定オーバーヘッド"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:123
 #, fuzzy
-msgid ""
-"As was mentioned there is a new address count parameter when configuring off "
-"heap. This value is used to determine how many linked list pointers are "
-"available. Normally you want to have more node pointers than you have "
-"entries in the cache, since then chances are you have one element in each "
-"linked list.  This is very similar to the https://docs.oracle.com/javase/7/"
-"docs/api/java/util/HashMap.html#HashMap%28int%29[int argument constructor] "
-"for HashMap.  It is also rounded up to the nearest power of two.  The big "
-"difference being that this off heap implementation will not resize.  Thus "
-"your read/write times will be slower if you have a lot of collisions. The "
-"overhead of a pointer is 8 bytes, so for approximately one million pointers "
-"it will be 8 Megabytes of off heap."
-msgstr ""
-"前述したように、オフヒープを設定する際に新しいアドレスカウントパラメータがあります。この値は、利用可能なリンクリストのポインタの数を決定するために使用されます。通常はキャッシュのエントリ数よりも多くのノードポインターが必要です。 "
-"これは HashMap の int link:https://docs.oracle.com/javase/7/docs/api/java/util/"
-"HashMap.html#HashMap%28int%29[引数のコンストラクタ] と非常に似ています。 また、2 の累乗に近い値に切り上げられます。 "
-"大きな違いは、このオフヒープの実装ではリサイズが行われないことです。 "
-"そのため、多くの衝突がある場合には読み書きの時間が遅くなります。ポインタのオーバーヘッドは8バイトなので、約100万個のポインタでは8メガバイトのオフヒープになります。"
+msgid "As was mentioned there is a new address count parameter when configuring off heap. This value is used to determine how many linked list pointers are available. Normally you want to have more node pointers than you have entries in the cache, since then chances are you have one element in each linked list.  This is very similar to the https://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html#HashMap%28int%29[int argument constructor] for HashMap.  It is also rounded up to the nearest power of two.  The big difference being that this off heap implementation will not resize.  Thus your read/write times will be slower if you have a lot of collisions. The overhead of a pointer is 8 bytes, so for approximately one million pointers it will be 8 Megabytes of off heap."
+msgstr "前述したように、オフヒープを設定する際に新しいアドレスカウントパラメータがあります。この値は、利用可能なリンクリストのポインタの数を決定するために使用されます。通常はキャッシュのエントリ数よりも多くのノードポインターが必要です。 これは HashMap の int link:https://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html#HashMap%28int%29[引数のコンストラクタ] と非常に似ています。 また、2 の累乗に近い値に切り上げられます。 大きな違いは、このオフヒープの実装ではリサイズが行われないことです。 そのため、多くの衝突がある場合には読み書きの時間が遅くなります。ポインタのオーバーヘッドは8バイトなので、約100万個のポインタでは8メガバイトのオフヒープになります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:126
 #, fuzzy
-msgid ""
-"Bounded off heap requires very little fixed memory, just 32 bytes for head/"
-"tail pointers and a counter and an additional Java lock object."
-msgstr ""
-"バウンド・オフ・ヒープは固定メモリをほとんど必要とせず、ヘッド/"
-"テール・ポインタ用に32バイト、カウンタと追加のJavaロック・オブジェクトだけを必要とします。"
+msgid "Bounded off heap requires very little fixed memory, just 32 bytes for head/tail pointers and a counter and an additional Java lock object."
+msgstr "バウンド・オフ・ヒープは固定メモリをほとんど必要とせず、ヘッド/テール・ポインタ用に32バイト、カウンタと追加のJavaロック・オブジェクトだけを必要とします。"
 
 #. type: Title ====
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:127
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Variable overhead"
 msgstr "可変オーバーヘッド"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:133
 #, fuzzy
-msgid ""
-"Unfortunately to store your entries we may need to wrap them with some data. "
-"Thus for every entry you add to the cache we store an additional 25 bytes "
-"for each entry.  This data is used for header information and also our "
-"linked list forward pointer."
-msgstr ""
-"残念ながら、あなたのエントリを保存するために、いくつかのデータをラップする必要があるかもしれません。このデータはヘッダ情報とリンクされたリストのフォワードポインタに使用されます。"
+msgid "Unfortunately to store your entries we may need to wrap them with some data. Thus for every entry you add to the cache we store an additional 25 bytes for each entry.  This data is used for header information and also our linked list forward pointer."
+msgstr "残念ながら、あなたのエントリを保存するために、いくつかのデータをラップする必要があるかもしれません。このデータはヘッダ情報とリンクされたリストのフォワードポインタに使用されます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:138
 #, fuzzy
-msgid ""
-"Bounded off heap requires additional housekeeping for its LRU list nodes.  "
-"Thus each entry adds an additional 36 bytes above the number above. It is "
-"larger due to requiring a doubly linked list and having to have pointers to "
-"and from the entry and eviction node."
-msgstr ""
-"バウンドオフヒープでは、LRU リストノードのハウスキーピングが必要になります。 したがって、各エントリは上記の数よりもさらに 36 "
-"バイト増えます。これは、二重リンクされたリストを必要とし、エントリと退避ノードとの間のポインタを持たなければならないため、より大きくなります。"
+msgid "Bounded off heap requires additional housekeeping for its LRU list nodes.  Thus each entry adds an additional 36 bytes above the number above. It is larger due to requiring a doubly linked list and having to have pointers to and from the entry and eviction node."
+msgstr "バウンドオフヒープでは、LRU リストノードのハウスキーピングが必要になります。 したがって、各エントリは上記の数よりもさらに 36 バイト増えます。これは、二重リンクされたリストを必要とし、エントリと退避ノードとの間のポインタを持たなければならないため、より大きくなります。"
 
 #. type: Title ===
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:140
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Performance"
 msgstr "パフォーマンス"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:147
 #, fuzzy
-msgid ""
-"The off heap container was designed with the intent that key lookups are "
-"quite fast. In general these should be about the same performance.  However "
-"local reads and stream operations can be a little slower as there is an "
-"additional deserialization phase required."
-msgstr ""
-"オフヒープコンテナは、キールックアップがかなり高速であることを意図して設計されています。一般的には、これらはほぼ同じパフォーマンスであるべきです。しかし、ローカルの読み込みやストリーム操作は、追加のデシリアライズフェーズが必要となるため、少し遅くなる可能性があります。"
+msgid "The off heap container was designed with the intent that key lookups are quite fast. In general these should be about the same performance.  However local reads and stream operations can be a little slower as there is an additional deserialization phase required."
+msgstr "オフヒープコンテナは、キールックアップがかなり高速であることを意図して設計されています。一般的には、これらはほぼ同じパフォーマンスであるべきです。しかし、ローカルの読み込みやストリーム操作は、追加のデシリアライズフェーズが必要となるため、少し遅くなる可能性があります。"
 
 #. type: Title ==
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:149
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Summary"
 msgstr "概要"
 
 #. type: Plain text
 #: upstream/_posts/2017-01-23-data-container-changes-part-2.adoc:158
 #, fuzzy
-msgid ""
-"We hope you all try out our new off heap feature! Please make sure to "
-"contact us if you have any feedback, find any bugs or have any questions!  "
-"You can get in contact with us on our https://developer.jboss.org/en/"
-"infinispan/content[forum], https://issues.jboss.org/projects/ISPN[issue "
-"tracker], or directly on IRC freenode channel http://webchat.freenode.net/"
-"?channels=%23infinispan[Infinispan]. "
-msgstr ""
-"新しいオフヒープ機能をぜひお試しください。フィードバックやバグを見つけたり、質問がある場合は、必ず私たちに連絡してください！フォーラム link:"
-"https://developer.jboss.org/en/infinispan/content[、] link:https://issues."
-"jboss.org/projects/ISPN[イシュートラッカー、] IRC freenodeチャンネル link:http://webchat."
-"freenode.net/?channels=%23infinispan[Infinispan] で直接連絡を取ることができます。"
+msgid "We hope you all try out our new off heap feature! Please make sure to contact us if you have any feedback, find any bugs or have any questions!  You can get in contact with us on our https://developer.jboss.org/en/infinispan/content[forum], https://issues.jboss.org/projects/ISPN[issue tracker], or directly on IRC freenode channel http://webchat.freenode.net/?channels=%23infinispan[Infinispan]. "
+msgstr "新しいオフヒープ機能をぜひお試しください。フィードバックやバグを見つけたり、質問がある場合は、必ず私たちに連絡してください！フォーラム link:https://developer.jboss.org/en/infinispan/content[、] link:https://issues.jboss.org/projects/ISPN[イシュートラッカー、] IRC freenodeチャンネル link:http://webchat.freenode.net/?channels=%23infinispan[Infinispan] で直接連絡を取ることができます。"

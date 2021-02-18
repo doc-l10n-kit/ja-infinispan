@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:11
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Implementing a performant, thread-safe ordered data container\n"
@@ -32,12 +32,9 @@ msgid ""
 "date: '2009-05-12T08:00:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"algorithms\", \"eviction\", \"concurrency\", \"data structures\" ]\n"
-"thumbnail: http://3.bp.blogspot.com/_ca0W9t-Ryos/SgGwA2iw_vI/AAAAAAAAAKA/"
-"TpVMWo2Rq9U/s72-c/FIFODataContainer.jpeg\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8504267898869156624\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/05/implementing-"
-"performant-thread-safe.html\n"
+"thumbnail: http://3.bp.blogspot.com/_ca0W9t-Ryos/SgGwA2iw_vI/AAAAAAAAAKA/TpVMWo2Rq9U/s72-c/FIFODataContainer.jpeg\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8504267898869156624\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/05/implementing-performant-thread-safe.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -46,73 +43,28 @@ msgstr ""
 "date: '2009-05-12T08:00:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"algorithms\", \"eviction\", \"concurrency\", \"data structures\" ]\n"
-"thumbnail: http://3.bp.blogspot.com/_ca0W9t-Ryos/SgGwA2iw_vI/AAAAAAAAAKA/"
-"TpVMWo2Rq9U/s72-c/FIFODataContainer.jpeg\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8504267898869156624\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/05/implementing-"
-"performant-thread-safe.html\n"
+"thumbnail: http://3.bp.blogspot.com/_ca0W9t-Ryos/SgGwA2iw_vI/AAAAAAAAAKA/TpVMWo2Rq9U/s72-c/FIFODataContainer.jpeg\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8504267898869156624\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/05/implementing-performant-thread-safe.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:24
 #, fuzzy
-msgid ""
-"To achieve efficient ordering of entries in the http://docs.jboss.org/"
-"infinispan/4.0/apidocs/org/infinispan/container/DataContainer."
-"html[DataContainer] interface for configurations that support eviction, "
-"there was a need for a linked HashMap implementation that was thread-safe "
-"and performant.  Below, I specifically discuss the implementations of the "
-"http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/"
-"FIFODataContainer.html[FIFODataContainer] and http://docs.jboss.org/"
-"infinispan/4.0/apidocs/org/infinispan/container/LRUDataContainer."
-"html[LRUDataContainer] in Infinispan 4.0.x. Wherever this document "
-"references http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/"
-"container/FIFODataContainer.html[FIFODataContainer], this also applies to "
-"http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/"
-"LRUDataContainer.html[LRUDataContainer]"
-msgstr ""
-"エビクションをサポートする構成の link:http://docs.jboss.org/infinispan/4.0/apidocs/org/"
-"infinispan/container/DataContainer.html[DataContainer] "
-"インターフェイスでエントリの効率的な順序付けを実現するために、スレッドセーフでパフォーマンスの高いリンクされたHashMapの実装が必要でした。以下では、Infinispan "
-"4.0.xにおける link:http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/"
-"container/FIFODataContainer.html[FIFODataContainer] と link:http://docs.jboss."
-"org/infinispan/4.0/apidocs/org/infinispan/container/LRUDataContainer."
-"html[LRUDataContainer] の実装について具体的に説明する。"
+msgid "To achieve efficient ordering of entries in the http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/DataContainer.html[DataContainer] interface for configurations that support eviction, there was a need for a linked HashMap implementation that was thread-safe and performant.  Below, I specifically discuss the implementations of the http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/FIFODataContainer.html[FIFODataContainer] and http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/LRUDataContainer.html[LRUDataContainer] in Infinispan 4.0.x. Wherever this document references http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/FIFODataContainer.html[FIFODataContainer], this also applies to http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/LRUDataContainer.html[LRUDataContainer]"
+msgstr "エビクションをサポートする構成の link:http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/DataContainer.html[DataContainer] インターフェイスでエントリの効率的な順序付けを実現するために、スレッドセーフでパフォーマンスの高いリンクされたHashMapの実装が必要でした。以下では、Infinispan 4.0.xにおける link:http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/FIFODataContainer.html[FIFODataContainer] と link:http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/LRUDataContainer.html[LRUDataContainer] の実装について具体的に説明する。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:29
 #, fuzzy
-msgid ""
-"which extends http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/"
-"container/FIFODataContainer.html[FIFODataContainer].  The only difference is "
-"that http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/"
-"LRUDataContainer.html[LRUDataContainer] updates links whenever an entry is "
-"visited as well as added."
-msgstr ""
-"は link:http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/"
-"FIFODataContainer.html[FIFODataContainerを] 継承したものである。唯一の違いは、 link:http://"
-"docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/"
-"LRUDataContainer.html[LRUDataContainerは] エントリが訪問されたときと追加されたときにリンクを更新することである。"
+msgid "which extends http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/FIFODataContainer.html[FIFODataContainer].  The only difference is that http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/LRUDataContainer.html[LRUDataContainer] updates links whenever an entry is visited as well as added."
+msgstr "は link:http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/FIFODataContainer.html[FIFODataContainerを] 継承したものである。唯一の違いは、 link:http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/LRUDataContainer.html[LRUDataContainerは] エントリが訪問されたときと追加されたときにリンクを更新することである。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:38
 #, fuzzy
-msgid ""
-"After analysing and considering a few different approaches, the one I "
-"settled on is a subset of the algorithms described by H. Sundell and P.  "
-"Tsigas in their 2008 paper titled http://www.md.chalmers.se/%7Etsigas/papers/"
-"Lock-Free-Deques-Doubly-Lists-JPDC.pdf[Lock-Free Deques and Doubly Linked "
-"Lists], combined with the approach used by Sun's JDK6 for reference marking "
-"in http://java.sun.com/javase/6/docs/api/java/util/concurrent/"
-"ConcurrentSkipListMap.html[ConcurrentSkipListMap]'s implementation."
-msgstr ""
-"いくつかの異なるアプローチを分析し、検討した結果、私が決めたのは、H. SundellとP. Tsigasが2008年に発表した論文「 link:"
-"http://www.md.chalmers.se/%7Etsigas/papers/Lock-Free-Deques-Doubly-Lists-"
-"JPDC.pdf[Lock-Free Deques and Doubly Linked Lists] "
-"」で説明したアルゴリズムのサブセットに、SunのJDK6で使用されている link:http://java.sun.com/javase/6/docs/"
-"api/java/util/concurrent/ConcurrentSkipListMap.html[ConcurrentSkipListMap] "
-"の実装での参照マーキングのためのアプローチを組み合わせたものです。"
+msgid "After analysing and considering a few different approaches, the one I settled on is a subset of the algorithms described by H. Sundell and P.  Tsigas in their 2008 paper titled http://www.md.chalmers.se/%7Etsigas/papers/Lock-Free-Deques-Doubly-Lists-JPDC.pdf[Lock-Free Deques and Doubly Linked Lists], combined with the approach used by Sun's JDK6 for reference marking in http://java.sun.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html[ConcurrentSkipListMap]'s implementation."
+msgstr "いくつかの異なるアプローチを分析し、検討した結果、私が決めたのは、H. SundellとP. Tsigasが2008年に発表した論文「 link:http://www.md.chalmers.se/%7Etsigas/papers/Lock-Free-Deques-Doubly-Lists-JPDC.pdf[Lock-Free Deques and Doubly Linked Lists] 」で説明したアルゴリズムのサブセットに、SunのJDK6で使用されている link:http://java.sun.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html[ConcurrentSkipListMap] の実装での参照マーキングのためのアプローチを組み合わせたものです。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:40
@@ -123,61 +75,20 @@ msgstr "リファレンスマーク？それは何ですか？"
 #. type: Plain text
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:53
 #, fuzzy
-msgid ""
-"Compare-and-swap (CAS) is a common technique today for atomically updating a "
-"variable or a reference without the use of a mutual exclusion mechanism like "
-"a lock. But this only works when you modify a single memory location at a "
-"time, be it a reference or a primitive. Sometimes you need to atomically "
-"update two separate bits of information in a single go, such as a reference, "
-"as well as some information about that reference. Hence reference marking. "
-"In C, this is sometimes done by making use of the assumption that an entire "
-"word in memory is not needed to store a pointer to another memory location, "
-"and some bits of this word can be used to store additional flags via "
-"bitmasking. This allows for atomic updates of both the reference and this "
-"extra information using a single CAS operation."
-msgstr ""
-"比較スワップ(CAS)は、ロックのような相互排除メカニズムを使わずに、変数や参照をアトミックに更新するための今日の一般的なテクニックです。しかし、これは参照やプリミティブのように一度に1つのメモリ位置を変更する場合にのみ機能します。時々、参照のような2つの別々の情報と、その参照に関するいくつかの情報を一度にアトミックに更新しなければならないことがあります。これが参照マークです。C言語では、別のメモリ位置へのポインタを格納するためにメモリ内のワード全体を必要としないという仮定を利用して、このワードのいくつかのビットをビットマスクを介して追加のフラグを格納するために使用することで、このようなことが行われることがあります。これにより、単一のCAS演算を使用して、参照とこの追加情報の両方をアトミックに更新することができます。"
+msgid "Compare-and-swap (CAS) is a common technique today for atomically updating a variable or a reference without the use of a mutual exclusion mechanism like a lock. But this only works when you modify a single memory location at a time, be it a reference or a primitive. Sometimes you need to atomically update two separate bits of information in a single go, such as a reference, as well as some information about that reference. Hence reference marking. In C, this is sometimes done by making use of the assumption that an entire word in memory is not needed to store a pointer to another memory location, and some bits of this word can be used to store additional flags via bitmasking. This allows for atomic updates of both the reference and this extra information using a single CAS operation."
+msgstr "比較スワップ(CAS)は、ロックのような相互排除メカニズムを使わずに、変数や参照をアトミックに更新するための今日の一般的なテクニックです。しかし、これは参照やプリミティブのように一度に1つのメモリ位置を変更する場合にのみ機能します。時々、参照のような2つの別々の情報と、その参照に関するいくつかの情報を一度にアトミックに更新しなければならないことがあります。これが参照マークです。C言語では、別のメモリ位置へのポインタを格納するためにメモリ内のワード全体を必要としないという仮定を利用して、このワードのいくつかのビットをビットマスクを介して追加のフラグを格納するために使用することで、このようなことが行われることがあります。これにより、単一のCAS演算を使用して、参照とこの追加情報の両方をアトミックに更新することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:64
 #, fuzzy
-msgid ""
-"This is possible in Java too using http://java.sun.com/j2se/1.5.0/docs/api/"
-"java/util/concurrent/atomic/AtomicMarkableReference."
-"html[AtomicMarkableReference], but is usually considered overly complex, "
-"slow and space-inefficient.  Instead, what we do is borrow a technique from "
-"http://java.sun.com/javase/6/docs/api/java/util/concurrent/"
-"ConcurrentSkipListMap.html[ConcurrentSkipListMap] and use an intermediate, "
-"delegating entry. While this adds a little more complexity in traversal (you "
-"need to be aware of the presence of these marker entries when traversing the "
-"linked list), this performs better than an http://java.sun.com/j2se/1.5.0/"
-"docs/api/java/util/concurrent/atomic/AtomicMarkableReference."
-"html[AtomicMarkableReference]."
-msgstr ""
-"これは link:http://java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/atomic/"
-"AtomicMarkableReference.html[AtomicMarkableReferenceを] "
-"使ってJavaでも可能ですが、通常は複雑すぎて遅く、スペース効率が悪いと考えられています。その代わりに、 link:http://java.sun."
-"com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap."
-"html[ConcurrentSkipListMap] "
-"からテクニックを借りて、中間的にデリゲートされたエントリを使用します。これにより、探索が少し複雑になりますが（リンクされたリストを探索する際には、これらのマーカー項目の存在を意識する必要があります）、 "
-"link:http://java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/atomic/"
-"AtomicMarkableReference.html[AtomicMarkableReference] よりも優れた性能を発揮します。"
+msgid "This is possible in Java too using http://java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/atomic/AtomicMarkableReference.html[AtomicMarkableReference], but is usually considered overly complex, slow and space-inefficient.  Instead, what we do is borrow a technique from http://java.sun.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html[ConcurrentSkipListMap] and use an intermediate, delegating entry. While this adds a little more complexity in traversal (you need to be aware of the presence of these marker entries when traversing the linked list), this performs better than an http://java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/atomic/AtomicMarkableReference.html[AtomicMarkableReference]."
+msgstr "これは link:http://java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/atomic/AtomicMarkableReference.html[AtomicMarkableReferenceを] 使ってJavaでも可能ですが、通常は複雑すぎて遅く、スペース効率が悪いと考えられています。その代わりに、 link:http://java.sun.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html[ConcurrentSkipListMap] からテクニックを借りて、中間的にデリゲートされたエントリを使用します。これにより、探索が少し複雑になりますが（リンクされたリストを探索する際には、これらのマーカー項目の存在を意識する必要があります）、 link:http://java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/atomic/AtomicMarkableReference.html[AtomicMarkableReference] よりも優れた性能を発揮します。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:73
 #, fuzzy
-msgid ""
-"In this specific implementation, the 'extra information' stored in a "
-"reference is the fact that the entry holding the reference is in the process "
-"of being deleted. It is a common problem with lock-free linked lists when "
-"you have concurrent insert and delete operations that the newly inserted "
-"entry gets deleted as well, since it attaches itself to the entry being "
-"concurrently deleted. When the entry to be removed marks its references, "
-"however, this makes other threads aware of the fact and cause CAS operations "
-"on the reference to fail and retry."
-msgstr ""
-"この特定の実装では、参照に格納されている「余分な情報」は、参照を保持しているエントリが削除される過程にあるという事実です。ロックフリーのリンクリストでよくある問題は、挿入と削除操作が同時に行われているときに、新しく挿入されたエントリも削除されてしまうということです。しかし、削除されるエントリがその参照をマークすると、他のスレッドがその事実を認識してしまい、その参照に対する "
-"CAS 操作が失敗して再試行される原因となります。"
+msgid "In this specific implementation, the 'extra information' stored in a reference is the fact that the entry holding the reference is in the process of being deleted. It is a common problem with lock-free linked lists when you have concurrent insert and delete operations that the newly inserted entry gets deleted as well, since it attaches itself to the entry being concurrently deleted. When the entry to be removed marks its references, however, this makes other threads aware of the fact and cause CAS operations on the reference to fail and retry."
+msgstr "この特定の実装では、参照に格納されている「余分な情報」は、参照を保持しているエントリが削除される過程にあるという事実です。ロックフリーのリンクリストでよくある問題は、挿入と削除操作が同時に行われているときに、新しく挿入されたエントリも削除されてしまうということです。しかし、削除されるエントリがその参照をマークすると、他のスレッドがその事実を認識してしまい、その参照に対する CAS 操作が失敗して再試行される原因となります。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:75
@@ -188,150 +99,56 @@ msgstr "パフォーマンス"
 #. type: Plain text
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:80
 #, fuzzy
-msgid ""
-"Aside from maintaining order of entries and being thread-safe, performance "
-"was one of the other goals. The target is to achieve constant-time "
-"performance - O(1) - for all operations on http://docs.jboss.org/infinispan/"
-"4.0/apidocs/org/infinispan/container/DataContainer.html[DataContainer]."
-msgstr ""
-"エントリの順序を維持し、スレッドセーフであることはさておき、パフォーマンスは他の目標の1つでした。目標は、 link:http://docs.jboss."
-"org/infinispan/4.0/apidocs/org/infinispan/container/DataContainer."
-"html[DataContainer] 上のすべての操作について、一定時間のパフォーマンス（O(1)）を達成することです。"
+msgid "Aside from maintaining order of entries and being thread-safe, performance was one of the other goals. The target is to achieve constant-time performance - O(1) - for all operations on http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/DataContainer.html[DataContainer]."
+msgstr "エントリの順序を維持し、スレッドセーフであることはさておき、パフォーマンスは他の目標の1つでした。目標は、 link:http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/DataContainer.html[DataContainer] 上のすべての操作について、一定時間のパフォーマンス（O(1)）を達成することです。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:93
 #, fuzzy
-msgid ""
-"The clhttp://3.bp.blogspot.com/_ca0W9t-Ryos/SgGwA2iw_vI/AAAAAAAAAKA/"
-"TpVMWo2Rq9U/s1600-h/FIFODataContainer.jpeg[image:http://3.bp.blogspot.com/"
-"_ca0W9t-Ryos/SgGwA2iw_vI/AAAAAAAAAKA/TpVMWo2Rq9U/s400/FIFODataContainer."
-"jpeg[image]]ass diagram (click to view in full-size) depicts the http://docs."
-"jboss.org/infinispan/4.0/apidocs/org/infinispan/container/FIFODataContainer."
-"html[FIFODataContainer] class. At its heart the http://docs.jboss.org/"
-"infinispan/4.0/apidocs/org/infinispan/container/FIFODataContainer."
-"html[FIFODataContainer] mimics a JDK http://java.sun.com/j2se/1.5.0/docs/api/"
-"java/util/concurrent/ConcurrentHashMap.html[ConcurrentHashMap] (CHM), making "
-"use of hashtable-like lockable segments. Unlike the segments in CHM, "
-"however, these segments are simpler as they support a much smaller set of "
-"operations."
-msgstr ""
-"clhttp://3.bp.blogspot.com/_ca0W9t-Ryos/SgGwA2iw_vI/AAAAAAAAAKA/TpVMWo2Rq9U/"
-"s1600-h/FIFODataContainer.jpeg[image:http://3.bp.blogspot.com/_ca0W9t-Ryos/"
-"SgGwA2iw_vI/AAAAAAAAAKA/TpVMWo2Rq9U/s400/FIFODataContainer.jpeg[alt="
-"\"image\"]の図（クリックするとフルサイズで表示されます）は、 link:http://docs.jboss.org/infinispan/4."
-"0/apidocs/org/infinispan/container/FIFODataContainer.html[FIFODataContainer] "
-"クラスを示しています。 link:http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/"
-"container/FIFODataContainer.html[FIFODataContainer は] 、JDK の link:http://"
-"java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/ConcurrentHashMap."
-"html[ConcurrentHashMap] (CHM) を真似て、ハッシュテーブルのようなロック可能なセグメントを使用しています。しかし、CHM "
-"のセグメントとは異なり、これらのセグメントはサポートする操作のセットが非常に小さいため、よりシンプルになっています。"
+msgid "The clhttp://3.bp.blogspot.com/_ca0W9t-Ryos/SgGwA2iw_vI/AAAAAAAAAKA/TpVMWo2Rq9U/s1600-h/FIFODataContainer.jpeg[image:http://3.bp.blogspot.com/_ca0W9t-Ryos/SgGwA2iw_vI/AAAAAAAAAKA/TpVMWo2Rq9U/s400/FIFODataContainer.jpeg[image]]ass diagram (click to view in full-size) depicts the http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/FIFODataContainer.html[FIFODataContainer] class. At its heart the http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/FIFODataContainer.html[FIFODataContainer] mimics a JDK http://java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/ConcurrentHashMap.html[ConcurrentHashMap] (CHM), making use of hashtable-like lockable segments. Unlike the segments in CHM, however, these segments are simpler as they support a much smaller set of operations."
+msgstr "clhttp://3.bp.blogspot.com/_ca0W9t-Ryos/SgGwA2iw_vI/AAAAAAAAAKA/TpVMWo2Rq9U/s1600-h/FIFODataContainer.jpeg[image:http://3.bp.blogspot.com/_ca0W9t-Ryos/SgGwA2iw_vI/AAAAAAAAAKA/TpVMWo2Rq9U/s400/FIFODataContainer.jpeg[alt=\"image\"]の図（クリックするとフルサイズで表示されます）は、 link:http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/FIFODataContainer.html[FIFODataContainer] クラスを示しています。 link:http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/FIFODataContainer.html[FIFODataContainer は] 、JDK の link:http://java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/ConcurrentHashMap.html[ConcurrentHashMap] (CHM) を真似て、ハッシュテーブルのようなロック可能なセグメントを使用しています。しかし、CHM のセグメントとは異なり、これらのセグメントはサポートする操作のセットが非常に小さいため、よりシンプルになっています。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:98
 #, fuzzy
-msgid ""
-"Retrieving data from the container The use of segments allow for constant-"
-"time thread-safe get() and containsKey() operations. Iterators obtained from "
-"the http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/"
-"DataContainer.html[DataContainer]"
-msgstr ""
-"コンテナからのデータの取得 セグメントを使用することで、一定時間のスレッドセーフな get() および containsKey() "
-"操作が可能になります。 link:http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/"
-"container/DataContainer.html[DataContainer] から取得したイテレータ"
+msgid "Retrieving data from the container The use of segments allow for constant-time thread-safe get() and containsKey() operations. Iterators obtained from the http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/DataContainer.html[DataContainer]"
+msgstr "コンテナからのデータの取得 セグメントを使用することで、一定時間のスレッドセーフな get() および containsKey() 操作が可能になります。 link:http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/DataContainer.html[DataContainer] から取得したイテレータ"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:102
 #, fuzzy
-msgid ""
-"which implements Iterable, and hence usable in for-each loops - and keySet() "
-"are immutable, thread-safe and efficient, using traversal of the linked list "
-"- making use of getNext() and getPrev() helpers. See below for details. "
-"Traversal is efficient and constant-time."
-msgstr ""
-"これは Iterable を実装しており、したがって for-each ループで使用可能です - keySet() "
-"は不変で、スレッドセーフで効率的です。詳細は以下を参照してください。探索は効率的で一定時間で行われます。"
+msgid "which implements Iterable, and hence usable in for-each loops - and keySet() are immutable, thread-safe and efficient, using traversal of the linked list - making use of getNext() and getPrev() helpers. See below for details. Traversal is efficient and constant-time."
+msgstr "これは Iterable を実装しており、したがって for-each ループで使用可能です - keySet() は不変で、スレッドセーフで効率的です。詳細は以下を参照してください。探索は効率的で一定時間で行われます。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:111
 #, fuzzy
-msgid ""
-"Updating the container When removing an entry, remove() locks the segment in "
-"question, removes the entry, and unlinks the entry. Both operations are "
-"thread-safe and constant-time. Locking the segment and removing the entry is "
-"pretty straightforward. Unlinking involves marking references, and then an "
-"attempt at CAS'ing next and previous references to bypass the removed entry. "
-"Order here is important - updates to the next reference needs to happen "
-"first, read on for more details as to why."
-msgstr ""
-"コンテナの更新 エントリを削除する場合、remove() "
-"は該当するセグメントをロックし、エントリを削除し、エントリのリンクを解除します。どちらの操作もスレッドセーフで、一定時間で実行されます。セグメントをロックしてエントリを削除するのは非常に簡単です。リンクを解除するには、参照をマークし、次に、削除されたエントリを迂回するために次の参照と前の参照をCASします。ここでは順序が重要です "
-"- 次の参照への更新が最初に行われる必要があります。"
+msgid "Updating the container When removing an entry, remove() locks the segment in question, removes the entry, and unlinks the entry. Both operations are thread-safe and constant-time. Locking the segment and removing the entry is pretty straightforward. Unlinking involves marking references, and then an attempt at CAS'ing next and previous references to bypass the removed entry. Order here is important - updates to the next reference needs to happen first, read on for more details as to why."
+msgstr "コンテナの更新 エントリを削除する場合、remove() は該当するセグメントをロックし、エントリを削除し、エントリのリンクを解除します。どちらの操作もスレッドセーフで、一定時間で実行されます。セグメントをロックしてエントリを削除するのは非常に簡単です。リンクを解除するには、参照をマークし、次に、削除されたエントリを迂回するために次の参照と前の参照をCASします。ここでは順序が重要です - 次の参照への更新が最初に行われる必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:117
 #, fuzzy
-msgid ""
-"When performing a put(), the entry is created, segment locked and entry "
-"inserted into the segment. The entry is then inserted at the tail of the "
-"linked list. Again, both operations are thread-safe and constant-time.  "
-"Linking at the tail involves careful CAS'ing of references on the new entry, "
-"the tail dummy entry and the former last entry in the list."
-msgstr ""
-"put() "
-"を実行すると、エントリが作成され、セグメントがロックされ、セグメントにエントリが挿入されます。そして、リンクされたリストの最後尾にエントリが挿入されます。ここでも、どちらの操作もスレッドセーフで一定時間で行われます。最後尾でのリンクは、新しいエントリ、最後尾のダミーエントリ、リスト内の前の最後のエントリの参照を慎重にCASします。"
+msgid "When performing a put(), the entry is created, segment locked and entry inserted into the segment. The entry is then inserted at the tail of the linked list. Again, both operations are thread-safe and constant-time.  Linking at the tail involves careful CAS'ing of references on the new entry, the tail dummy entry and the former last entry in the list."
+msgstr "put() を実行すると、エントリが作成され、セグメントがロックされ、セグメントにエントリが挿入されます。そして、リンクされたリストの最後尾にエントリが挿入されます。ここでも、どちらの操作もスレッドセーフで一定時間で行われます。最後尾でのリンクは、新しいエントリ、最後尾のダミーエントリ、リスト内の前の最後のエントリの参照を慎重にCASします。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:128
 #, fuzzy
-msgid ""
-"Maintaining a lock-free, concurrent doubly linked list It is important to "
-"note that the entries in this implementation are doubly linked. This is "
-"critical since, unlike the JDK's http://java.sun.com/javase/6/docs/api/java/"
-"util/concurrent/ConcurrentSkipListMap.html[ConcurrentSkipListMap], we use a "
-"hashtable to look up entries to be removed, to achieve constant time "
-"performance in lookup. Locating the parent entry to update a reference needs "
-"to be constant-time as well, and hence the need for a previous reference. "
-"Doubly-linked lists make things much trickier though, as there two "
-"references to update atomically (yes, that sounds wrong!)"
-msgstr ""
-"ロックのない並行二重リンクリストの維持 この実装では、エントリが二重リンクされていることに注意することが重要です。JDK の link:http://"
-"java.sun.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap."
-"html[ConcurrentSkipListMap] "
-"とは異なり、削除するエントリの検索にハッシュテーブルを使用しているため、これは非常に重要です。参照を更新するための親エントリの検索も同様に一定時間で行う必要があり、そのために前の参照が必要になります。アトミックに更新するためには2つの参照が必要になるからです(そう、これは間違っているように聞こえます！)。"
+msgid "Maintaining a lock-free, concurrent doubly linked list It is important to note that the entries in this implementation are doubly linked. This is critical since, unlike the JDK's http://java.sun.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html[ConcurrentSkipListMap], we use a hashtable to look up entries to be removed, to achieve constant time performance in lookup. Locating the parent entry to update a reference needs to be constant-time as well, and hence the need for a previous reference. Doubly-linked lists make things much trickier though, as there two references to update atomically (yes, that sounds wrong!)"
+msgstr "ロックのない並行二重リンクリストの維持 この実装では、エントリが二重リンクされていることに注意することが重要です。JDK の link:http://java.sun.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html[ConcurrentSkipListMap] とは異なり、削除するエントリの検索にハッシュテーブルを使用しているため、これは非常に重要です。参照を更新するための親エントリの検索も同様に一定時間で行う必要があり、そのために前の参照が必要になります。アトミックに更新するためには2つの参照が必要になるからです(そう、これは間違っているように聞こえます！)。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:144
 #, fuzzy
-msgid ""
-"Crucially, what we do not care about - and do not support - is reverse-order "
-"traversal. This means that we only really care about maintaining accuracy in "
-"the forward direction of the linked list, and treat the previous reference "
-"as an approximation to an entry somewhere behind the current entry. Previous "
-"references can then be corrected - using the correctPrev() helper method "
-"described below - to locate the precise entry behind the current entry. By "
-"placing greater importance on the forward direction of the list, this allows "
-"us to reliably CAS the forward reference even if the previous reference CAS "
-"fails. It is hence critical that whenever any references are updated, the "
-"next reference is CAS'd first, and only on this success the previous "
-"reference CAS is attempted. The same order applies with marking references. "
-"Also, it is important that any process that touches an entry that observes "
-"that the next pointer is marked but the previous pointer is not, attempts to "
-"mark the previous pointer before attempting any further steps."
-msgstr ""
-"重要なことに、私たちが気にしていない（サポートしていない）のは、逆順探索です。これは、リンクされたリストの順方向の精度を維持することにのみ注意を払い、前の参照を現在のエントリのどこか後ろのエントリへの近似値として扱うことを意味します。前の参照は、後述の "
-"correctPrev() "
-"ヘルパーメソッドを使用して、現在のエントリの後ろにある正確なエントリを見つけるために修正することができます。リストの前方の方向を重視することで、前の参照のCASが失敗した場合でも、前方の参照を確実にCASすることができるようになります。したがって、参照が更新されるたびに、次の参照が最初にCASされ、この成功時にのみ前の参照のCASが試みられることが重要です。マーキング参照にも同じ順序が適用されます。また、次のポインタがマークされているのに前のポインタがマークされていないことを観測したエントリに触れたプロセスは、それ以上のステップを試みる前に前のポインタをマークしようとすることが重要です。"
+msgid "Crucially, what we do not care about - and do not support - is reverse-order traversal. This means that we only really care about maintaining accuracy in the forward direction of the linked list, and treat the previous reference as an approximation to an entry somewhere behind the current entry. Previous references can then be corrected - using the correctPrev() helper method described below - to locate the precise entry behind the current entry. By placing greater importance on the forward direction of the list, this allows us to reliably CAS the forward reference even if the previous reference CAS fails. It is hence critical that whenever any references are updated, the next reference is CAS'd first, and only on this success the previous reference CAS is attempted. The same order applies with marking references. Also, it is important that any process that touches an entry that observes that the next pointer is marked but the previous pointer is not, attempts to mark the previous pointer before attempting any further steps."
+msgstr "重要なことに、私たちが気にしていない（サポートしていない）のは、逆順探索です。これは、リンクされたリストの順方向の精度を維持することにのみ注意を払い、前の参照を現在のエントリのどこか後ろのエントリへの近似値として扱うことを意味します。前の参照は、後述の correctPrev() ヘルパーメソッドを使用して、現在のエントリの後ろにある正確なエントリを見つけるために修正することができます。リストの前方の方向を重視することで、前の参照のCASが失敗した場合でも、前方の参照を確実にCASすることができるようになります。したがって、参照が更新されるたびに、次の参照が最初にCASされ、この成功時にのみ前の参照のCASが試みられることが重要です。マーキング参照にも同じ順序が適用されます。また、次のポインタがマークされているのに前のポインタがマークされていないことを観測したエントリに触れたプロセスは、それ以上のステップを試みる前に前のポインタをマークしようとすることが重要です。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:148
 #, fuzzy
-msgid ""
-"The specific functions we need to expose, to support http://docs.jboss.org/"
-"infinispan/4.0/apidocs/org/infinispan/container/DataContainer."
-"html[DataContainer] operations, are:"
-msgstr ""
-"link:http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/"
-"DataContainer.html[DataContainerの] 操作をサポートするために公開する必要がある特定の関数は以下の通りです。"
+msgid "The specific functions we need to expose, to support http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/DataContainer.html[DataContainer] operations, are:"
+msgstr "link:http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/DataContainer.html[DataContainerの] 操作をサポートするために公開する必要がある特定の関数は以下の通りです。"
 
 #. type: delimited block -
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:154
@@ -348,8 +165,7 @@ msgstr ""
 #. type: delimited block -
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:158
 #, no-wrap
-msgid ""
-"LinkedEntry correctPrev(LinkedEntry suggestedPrev, LinkedEntry current);\n"
+msgid "LinkedEntry correctPrev(LinkedEntry suggestedPrev, LinkedEntry current);\n"
 msgstr ""
 
 #. type: delimited block -
@@ -367,32 +183,11 @@ msgstr ""
 #. type: Plain text
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:174
 #, fuzzy
-msgid ""
-"These are exposed as protected final methods, usable by http://docs.jboss."
-"org/infinispan/4.0/apidocs/org/infinispan/container/FIFODataContainer."
-"html[FIFODataContainer] and its subclasses. The implementations themselves "
-"use a combination of CAS's on a LinkedEntry's next and previous pointers, "
-"marking references, and helper correction of previous pointers when using "
-"getNext() and getPrevious() to traverse the list. Note that it is important "
-"that only the last two methods are used when traversing rather than directly "
-"accessing a LinkedEntry's references - since markers need to be stepped over "
-"and links corrected."
-msgstr ""
-"これらは、 link:http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/"
-"container/FIFODataContainer.html[FIFODataContainer] とそのサブクラスで使用できる protected "
-"な最終メソッドとして公開されています。実装自体は、GetNext() および getPrevious() "
-"を使用してリストをトラバースする際に、LinkedEntry の次のポインタと前のポインタの CAS "
-"の組み合わせ、参照のマーキング、および前のポインタのヘルパー補正を使用します。LinkedEntry の参照に直接アクセスするのではなく、最後の 2 "
-"つのメソッドを使用することが重要であることに注意しましょう。"
+msgid "These are exposed as protected final methods, usable by http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/FIFODataContainer.html[FIFODataContainer] and its subclasses. The implementations themselves use a combination of CAS's on a LinkedEntry's next and previous pointers, marking references, and helper correction of previous pointers when using getNext() and getPrevious() to traverse the list. Note that it is important that only the last two methods are used when traversing rather than directly accessing a LinkedEntry's references - since markers need to be stepped over and links corrected."
+msgstr "これらは、 link:http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/container/FIFODataContainer.html[FIFODataContainer] とそのサブクラスで使用できる protected な最終メソッドとして公開されています。実装自体は、GetNext() および getPrevious() を使用してリストをトラバースする際に、LinkedEntry の次のポインタと前のポインタの CAS の組み合わせ、参照のマーキング、および前のポインタのヘルパー補正を使用します。LinkedEntry の参照に直接アクセスするのではなく、最後の 2 つのメソッドを使用することが重要であることに注意しましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-12-implementing-performant-thread-safe.adoc:177
 #, fuzzy
-msgid ""
-"Please refer to http://www.md.chalmers.se/%7Etsigas/papers/Lock-Free-Deques-"
-"Doubly-Lists-JPDC.pdf[Lock-Free Deques and Doubly Linked Lists] for details "
-"of the algorithm steps."
-msgstr ""
-"アルゴリズムのステップの詳細については、 link:http://www.md.chalmers.se/%7Etsigas/papers/Lock-"
-"Free-Deques-Doubly-Lists-JPDC.pdf[Lock-Free DequesとDoubly Linked Lists] "
-"を参照してください。"
+msgid "Please refer to http://www.md.chalmers.se/%7Etsigas/papers/Lock-Free-Deques-Doubly-Lists-JPDC.pdf[Lock-Free Deques and Doubly Linked Lists] for details of the algorithm steps."
+msgstr "アルゴリズムのステップの詳細については、 link:http://www.md.chalmers.se/%7Etsigas/papers/Lock-Free-Deques-Doubly-Lists-JPDC.pdf[Lock-Free DequesとDoubly Linked Lists] を参照してください。"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-05-28-infinispan-to-adopt-apache-software.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-28-infinispan-to-adopt-apache-software.adoc:14
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan to adopt the Apache Software License\n"
@@ -36,10 +36,8 @@ msgid ""
 "\"LGPL\",\n"
 "\"asl2\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7789591497500654607\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-to-adopt-"
-"apache-software.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7789591497500654607\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-to-adopt-apache-software.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -52,36 +50,20 @@ msgstr ""
 "\"LGPL\",\n"
 "\"asl2\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7789591497500654607\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-to-adopt-"
-"apache-software.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7789591497500654607\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-to-adopt-apache-software.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-28-infinispan-to-adopt-apache-software.adoc:25
 #, fuzzy
-msgid ""
-"Starting with Infinispan 6.0, the project will move from its current http://"
-"www.gnu.org/licenses/lgpl-2.1.html[GNU Lesser General Public License] (LGPL) "
-"v.2.1 licence to the http://www.apache.org/licenses/LICENSE-2.0.html[Apache "
-"License] (AL)  v.2.0.  The switch from the weak copyleft LGPL license to the "
-"more permissive AL one is in response to continued requests from the wider "
-"open source community who intend to integrate Infinispan into open source "
-"projects that aren’t LGPL-friendly.  A more permissive license broadens "
-"Infinispan’s community, ecosystem and general appeal."
-msgstr ""
-"Infinispan 6.0から、プロジェクトは現在の link:http://www.gnu.org/licenses/lgpl-2.1."
-"html[GNU Lesser General Public License] (LGPL) v.2.1から link:http://www."
-"apache.org/licenses/LICENSE-2.0.html[Apache License] (AL) v.2."
-"0に移行します。コピーレフトの弱いLGPLライセンスからより寛容なALライセンスへの移行は、LGPLに優しくないオープンソースプロジェクトにInfinispanを統合しようとするより広いオープンソースコミュニティからの継続的な要求に応えたものです。 "
-"より寛容なライセンスはInfinispanのコミュニティ、エコシステム、一般的なアピールの幅を広げます。"
+msgid "Starting with Infinispan 6.0, the project will move from its current http://www.gnu.org/licenses/lgpl-2.1.html[GNU Lesser General Public License] (LGPL) v.2.1 licence to the http://www.apache.org/licenses/LICENSE-2.0.html[Apache License] (AL)  v.2.0.  The switch from the weak copyleft LGPL license to the more permissive AL one is in response to continued requests from the wider open source community who intend to integrate Infinispan into open source projects that aren’t LGPL-friendly.  A more permissive license broadens Infinispan’s community, ecosystem and general appeal."
+msgstr "Infinispan 6.0から、プロジェクトは現在の link:http://www.gnu.org/licenses/lgpl-2.1.html[GNU Lesser General Public License] (LGPL) v.2.1から link:http://www.apache.org/licenses/LICENSE-2.0.html[Apache License] (AL) v.2.0に移行します。コピーレフトの弱いLGPLライセンスからより寛容なALライセンスへの移行は、LGPLに優しくないオープンソースプロジェクトにInfinispanを統合しようとするより広いオープンソースコミュニティからの継続的な要求に応えたものです。 より寛容なライセンスはInfinispanのコミュニティ、エコシステム、一般的なアピールの幅を広げます。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-28-infinispan-to-adopt-apache-software.adoc:28
 #, fuzzy
-msgid ""
-"To deal with any concerns you may have, I've put together some FAQs below:"
+msgid "To deal with any concerns you may have, I've put together some FAQs below:"
 msgstr "気になることがあった場合の対処法として、以下にいくつかのFAQをまとめてみました。"
 
 #. type: Plain text
@@ -93,9 +75,7 @@ msgstr "まだオープンソースなのかな？"
 #. type: Plain text
 #: upstream/_posts/2013-05-28-infinispan-to-adopt-apache-software.adoc:34
 #, fuzzy
-msgid ""
-"Yes.  The source code for Infinispan is and always will be open and freely "
-"accessible."
+msgid "Yes.  The source code for Infinispan is and always will be open and freely accessible."
 msgstr "Infinispanのソースコードは常にオープンで自由にアクセスできます。"
 
 #. type: Plain text
@@ -119,9 +99,7 @@ msgstr "それが既存のユーザーにどのような影響を与えるのか
 #. type: Plain text
 #: upstream/_posts/2013-05-28-infinispan-to-adopt-apache-software.adoc:43
 #, fuzzy
-msgid ""
-"It doesn't.  You are just as free to use, contribute, and participate in the "
-"project."
+msgid "It doesn't.  You are just as free to use, contribute, and participate in the project."
 msgstr "そうではなく、あなたがプロジェクトを利用したり、貢献したり、参加したりするのも自由です。"
 
 #. type: Plain text
@@ -133,21 +111,13 @@ msgstr "それが投稿者にどう影響するのか？"
 #. type: Plain text
 #: upstream/_posts/2013-05-28-infinispan-to-adopt-apache-software.adoc:49
 #, fuzzy
-msgid ""
-"In accordance with the JBoss Contributor License Agreement, all past "
-"contributions to Infinispan will be re-licensed to the AL.  Future "
-"contributions will be licensed under the AL too."
-msgstr ""
-"JBoss コントリビューターライセンス契約に基づき、Infinispan への過去の貢献はすべて AL に再ライセンスされます。 将来の貢献も AL "
-"の下でライセンスされます。"
+msgid "In accordance with the JBoss Contributor License Agreement, all past contributions to Infinispan will be re-licensed to the AL.  Future contributions will be licensed under the AL too."
+msgstr "JBoss コントリビューターライセンス契約に基づき、Infinispan への過去の貢献はすべて AL に再ライセンスされます。 将来の貢献も AL の下でライセンスされます。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-28-infinispan-to-adopt-apache-software.adoc:54
 #, fuzzy
-msgid ""
-"This relicensing is part of our ongoing effort to build and maintain a "
-"strong and inclusive open source community, and I hope you're on our side "
-"with this move."
+msgid "This relicensing is part of our ongoing effort to build and maintain a strong and inclusive open source community, and I hope you're on our side with this move."
 msgstr "今回の再ライセンスは、強力で包括的なオープンソース・コミュニティを構築し、維持するための継続的な取り組みの一環です。"
 
 #. type: Plain text
@@ -164,7 +134,7 @@ msgstr "お疲れ様でした"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-28-infinispan-to-adopt-apache-software.adoc:63
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "*Manik Surtani*\n"
 msgstr "*マニック・スルタニ*"
 

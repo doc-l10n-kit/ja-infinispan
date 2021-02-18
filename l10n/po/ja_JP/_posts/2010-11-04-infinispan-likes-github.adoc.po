@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:13
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan likes GitHub\n"
@@ -35,10 +35,8 @@ msgid ""
 "\"git\",\n"
 "\"github\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3613864799147622855\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/11/infinispan-likes-"
-"github.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3613864799147622855\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/11/infinispan-likes-github.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -50,39 +48,15 @@ msgstr ""
 "\"git\",\n"
 "\"github\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3613864799147622855\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/11/infinispan-likes-"
-"github.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3613864799147622855\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/11/infinispan-likes-github.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:27
 #, fuzzy
-msgid ""
-"http://t3.gstatic.com/images?q=tbn:OriLIv0A-ru3IM:https://ds-plone.cs."
-"technion.ac.il/DSL/docs/howtos/programming-tasks/version-control/git-logo."
-"png&t=1[image:http://t3.gstatic.com/images?q=tbn:OriLIv0A-ru3IM:https://ds-"
-"plone.cs.technion.ac.il/DSL/docs/howtos/programming-tasks/version-control/"
-"git-logo.png&t=1[image]]It had to happen someday - Infinispan's primary "
-"source code repository has now moved to https://github.com/[GitHub].  We "
-"have abandoned http://subversion.tigris.org/[Subversion] as a version "
-"control tool for the far superior http://en.wikipedia.org/wiki/"
-"Distributed_revision_control[distributed VCS] which has found favour in many "
-"large and complex open source projects.  I've been experimenting with a "
-"GitHub setup for the past few weeks, with a snapshot of the Infinispan "
-"repository, and http://git-scm.com/[git] is a sheer joy to use - a sublime "
-"experience, once you get your head around the concepts of distributed "
-"version control.  GitHub makes things even sweeter, with an awesome web "
-"based UI."
-msgstr ""
-"link:http://t3.gstatic.com/images?q=tbn:OriLIv0A-ru3IM:https://ds-plone.cs."
-"technion.ac.il/DSL/docs/howtos/programming-tasks/version-control/git-logo."
-"png&t=1[] 私たちはバージョン管理ツール link:http://subversion.tigris.org/[としての Subversion "
-"を] 捨て、多くの大規模で複雑なオープンソースプロジェクトで好まれている link:http://en.wikipedia.org/wiki/"
-"Distributed_revision_control[分散型の VCS] を採用しました。私は link:http://git-scm.com/"
-"[ここ] 数週間、Infinispanのリポジトリのスナップショットを使ってGitHubのセットアップを試してみました。 "
-"GitHubは、ウェブベースのUIが素晴らしいので、さらに素晴らしいものになっています。"
+msgid "http://t3.gstatic.com/images?q=tbn:OriLIv0A-ru3IM:https://ds-plone.cs.technion.ac.il/DSL/docs/howtos/programming-tasks/version-control/git-logo.png&t=1[image:http://t3.gstatic.com/images?q=tbn:OriLIv0A-ru3IM:https://ds-plone.cs.technion.ac.il/DSL/docs/howtos/programming-tasks/version-control/git-logo.png&t=1[image]]It had to happen someday - Infinispan's primary source code repository has now moved to https://github.com/[GitHub].  We have abandoned http://subversion.tigris.org/[Subversion] as a version control tool for the far superior http://en.wikipedia.org/wiki/Distributed_revision_control[distributed VCS] which has found favour in many large and complex open source projects.  I've been experimenting with a GitHub setup for the past few weeks, with a snapshot of the Infinispan repository, and http://git-scm.com/[git] is a sheer joy to use - a sublime experience, once you get your head around the concepts of distributed version control.  GitHub makes things even sweeter, with an awesome web based UI."
+msgstr "link:http://t3.gstatic.com/images?q=tbn:OriLIv0A-ru3IM:https://ds-plone.cs.technion.ac.il/DSL/docs/howtos/programming-tasks/version-control/git-logo.png&t=1[] 私たちはバージョン管理ツール link:http://subversion.tigris.org/[としての Subversion を] 捨て、多くの大規模で複雑なオープンソースプロジェクトで好まれている link:http://en.wikipedia.org/wiki/Distributed_revision_control[分散型の VCS] を採用しました。私は link:http://git-scm.com/[ここ] 数週間、Infinispanのリポジトリのスナップショットを使ってGitHubのセットアップを試してみました。 GitHubは、ウェブベースのUIが素晴らしいので、さらに素晴らしいものになっています。"
 
 #. type: Plain text
 #: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:29
@@ -99,19 +73,13 @@ msgstr "Infinispan のソースは、JBoss.org の Subversion にはありませ
 #. type: Plain text
 #: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:34
 #, fuzzy
-msgid ""
-"The http://anonsvn.jboss.org/repos/infinispan/[Infinispan Subversion "
-"repository] is still browseable, in _*read-only mode!*_"
-msgstr ""
-"link:http://anonsvn.jboss.org/repos/infinispan/[Infinispan Subversion "
-"リポジトリは] 、まだ閲覧可能です _。_"
+msgid "The http://anonsvn.jboss.org/repos/infinispan/[Infinispan Subversion repository] is still browseable, in _*read-only mode!*_"
+msgstr "link:http://anonsvn.jboss.org/repos/infinispan/[Infinispan Subversion リポジトリは] 、まだ閲覧可能です _。_"
 
 #. type: Plain text
 #: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:37
 #, fuzzy
-msgid ""
-"The primary repository for Infinispan is now http://github.com/infinispan/"
-"infinispan"
+msgid "The primary repository for Infinispan is now http://github.com/infinispan/infinispan"
 msgstr "Infinispan の主要なリポジトリは現在 http://github.com/infinispan/infinispan です。"
 
 #. type: Plain text
@@ -129,32 +97,20 @@ msgstr "貢献はGitHub上でプルリクエストの形で行う必要があり
 #. type: Plain text
 #: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:43
 #, fuzzy
-msgid ""
-"Infinispan's Hudson, release tooling and other systems have been updated to "
-"reflect this change"
+msgid "Infinispan's Hudson, release tooling and other systems have been updated to reflect this change"
 msgstr "Infinispanのハドソン、リリースツールなどのシステムがこの変更を反映して更新されました。"
 
 #. type: Plain text
 #: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:48
 #, fuzzy
-msgid ""
-"For those used to working with Infinispan's Subversion-based setup, or those "
-"new to git, I've put together a http://community.jboss.org/wiki/"
-"InfinispanFromSvnToGit[short wiki page] on getting started with Infinispan "
-"on GitHub."
-msgstr ""
-"Infinispan の Subversion ベースの設定に慣れている人や git を初めて使う人のために、GitHub で Infinispan "
-"を使い始めるための link:http://community.jboss.org/wiki/InfinispanFromSvnToGit[短い "
-"wiki ページを] まとめました。"
+msgid "For those used to working with Infinispan's Subversion-based setup, or those new to git, I've put together a http://community.jboss.org/wiki/InfinispanFromSvnToGit[short wiki page] on getting started with Infinispan on GitHub."
+msgstr "Infinispan の Subversion ベースの設定に慣れている人や git を初めて使う人のために、GitHub で Infinispan を使い始めるための link:http://community.jboss.org/wiki/InfinispanFromSvnToGit[短い wiki ページを] まとめました。"
 
 #. type: Plain text
 #: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:53
 #, fuzzy
-msgid ""
-"http://git-scm.com/images/github.png[image:http://git-scm.com/images/github."
-"png[image]]Oh, and I'd love to hear your feedback on this move."
-msgstr ""
-"link:http://git-scm.com/images/github.png[] ああ、それと、この動きについてのご意見をお聞きしたいです。"
+msgid "http://git-scm.com/images/github.png[image:http://git-scm.com/images/github.png[image]]Oh, and I'd love to hear your feedback on this move."
+msgstr "link:http://git-scm.com/images/github.png[] ああ、それと、この動きについてのご意見をお聞きしたいです。"
 
 #. type: Plain text
 #: upstream/_posts/2010-11-04-infinispan-likes-github.adoc:57

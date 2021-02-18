@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-03-20-memory-and-cpu-constraints-inside.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-20-memory-and-cpu-constraints-inside.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Memory and CPU constraints inside a Docker Container\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2017-03-20T01:40:00.000-07:00'\n"
 "author: slaskawiec\n"
 "tags: [ \" docker\", \"openshift\", \"kubernetes\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7557678252341598874\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/03/memory-and-cpu-"
-"constraints-inside.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7557678252341598874\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/03/memory-and-cpu-constraints-inside.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,84 +42,45 @@ msgstr ""
 "date: '2017-03-20T01:40:00.000-07:00'\n"
 "author: slaskawiec\n"
 "tags: [ \" docker\", \"openshift\", \"kubernetes\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7557678252341598874\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/03/memory-and-cpu-"
-"constraints-inside.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7557678252341598874\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/03/memory-and-cpu-constraints-inside.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-20-memory-and-cpu-constraints-inside.adoc:16
 #, fuzzy
-msgid ""
-"In one of the http://blog.infinispan.org/2016/07/improved-infinispan-docker-"
-"image.html[previous blog posts] we wrote about different configuration "
-"options for our Docker image. Now we did another step adding auto-"
-"configuration steps for memory and CPU constraints."
-msgstr ""
-"link:http://blog.infinispan.org/2016/07/improved-infinispan-docker-image."
-"html[以前のブログ記事] "
-"では、Dockerイメージの様々な設定オプションについて書きました。今回は、メモリとCPUの制約のための自動設定ステップを追加しました。"
+msgid "In one of the http://blog.infinispan.org/2016/07/improved-infinispan-docker-image.html[previous blog posts] we wrote about different configuration options for our Docker image. Now we did another step adding auto-configuration steps for memory and CPU constraints."
+msgstr "link:http://blog.infinispan.org/2016/07/improved-infinispan-docker-image.html[以前のブログ記事] では、Dockerイメージの様々な設定オプションについて書きました。今回は、メモリとCPUの制約のための自動設定ステップを追加しました。"
 
 #. type: Title ==
 #: upstream/_posts/2017-03-20-memory-and-cpu-constraints-inside.adoc:18
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Before we dig in..."
 msgstr "掘り下げる前に..."
 
 #. type: Plain text
 #: upstream/_posts/2017-03-20-memory-and-cpu-constraints-inside.adoc:29
 #, fuzzy
-msgid ""
-"Setting memory and CPU constraints to containers is very popular technique "
-"especially for public cloud offerings (such as https://docs.openshift.org/"
-"latest/dev_guide/compute_resources.html[OpenShift]).  Behind the scenes "
-"everything works based on adding https://docs.docker.com/engine/admin/"
-"resource_constraints/[additional Docker settings] to the containers. There "
-"are two very popular switches: _--memory_ (which is responsible for setting "
-"the amount of available memory) and _--cpu-quota_ (which throttles CPU "
-"usage)."
-msgstr ""
-"コンテナにメモリとCPUの制約を設定することは、特にパブリッククラウドのオファリング（ link:https://docs.openshift.org/"
-"latest/dev_guide/compute_resources.html[OpenShift] "
-"など）では非常にポピュラーなテクニックです。裏では、コンテナに link:https://docs.docker.com/engine/admin/"
-"resource_constraints/[追加のDocker設定を] 追加することに基づいてすべてが動作します。非常に人気のあるスイッチは2つあります:"
-" -- _memory (_ これは利用可能なメモリの量を設定する責任があります) と --cpu-quota _(これ_ "
-"はCPUの使用量を絞り込みます)。"
+msgid "Setting memory and CPU constraints to containers is very popular technique especially for public cloud offerings (such as https://docs.openshift.org/latest/dev_guide/compute_resources.html[OpenShift]).  Behind the scenes everything works based on adding https://docs.docker.com/engine/admin/resource_constraints/[additional Docker settings] to the containers. There are two very popular switches: _--memory_ (which is responsible for setting the amount of available memory) and _--cpu-quota_ (which throttles CPU usage)."
+msgstr "コンテナにメモリとCPUの制約を設定することは、特にパブリッククラウドのオファリング（ link:https://docs.openshift.org/latest/dev_guide/compute_resources.html[OpenShift] など）では非常にポピュラーなテクニックです。裏では、コンテナに link:https://docs.docker.com/engine/admin/resource_constraints/[追加のDocker設定を] 追加することに基づいてすべてが動作します。非常に人気のあるスイッチは2つあります: -- _memory (_ これは利用可能なメモリの量を設定する責任があります) と --cpu-quota _(これ_ はCPUの使用量を絞り込みます)。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-20-memory-and-cpu-constraints-inside.adoc:34
 #, fuzzy
-msgid ""
-"Now here comes the best part... JDK has no idea about those settings! We "
-"will probably need to wait until http://hg.openjdk.java.net/jdk9/jdk9/"
-"hotspot/rev/5f1d1df0ea49[JDK9] for getting full CGroups support."
-msgstr ""
-"ここからが一番いいところです... JDK はこれらの設定について何も考えていません!私達はおそらく完全な CGroups のサポートを得るために "
-"link:http://hg.openjdk.java.net/jdk9/jdk9/hotspot/rev/5f1d1df0ea49[JDK9] "
-"まで待つ必要があります。"
+msgid "Now here comes the best part... JDK has no idea about those settings! We will probably need to wait until http://hg.openjdk.java.net/jdk9/jdk9/hotspot/rev/5f1d1df0ea49[JDK9] for getting full CGroups support."
+msgstr "ここからが一番いいところです... JDK はこれらの設定について何も考えていません!私達はおそらく完全な CGroups のサポートを得るために link:http://hg.openjdk.java.net/jdk9/jdk9/hotspot/rev/5f1d1df0ea49[JDK9] まで待つ必要があります。"
 
 #. type: Title ==
 #: upstream/_posts/2017-03-20-memory-and-cpu-constraints-inside.adoc:36
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "What can we do about it?"
 msgstr "どうすればいいのかな？"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-20-memory-and-cpu-constraints-inside.adoc:43
 #, fuzzy
-msgid ""
-"The answer is very simple, we need to tell JDK what is the available memory "
-"(at least by setting _Xmx_) and available number of CPUs (by setting http://"
-"www.oracle.com/technetwork/articles/java/g1gc-1984535.html[_XX:"
-"ParallelGCThreads_, _XX:ConcGCThreads_] and _https://docs.oracle.com/javase/"
-"8/docs/api/java/util/concurrent/ForkJoinPool.html[Djava.util.concurrent."
-"ForkJoinPool.common.parallelism]_)."
-msgstr ""
-"答えは非常に簡単で、（少なくとも _Xmxを_ 設定することで）利用可能なメモリと利用可能なCPUの数をJDKに伝える必要があります（XX link:"
-"http://www.oracle.com/technetwork/articles/java/g1gc-1984535.html[_:"
-"ParallelGCThreads、XX_ : _ConcGCThreads、Djava_] .util. _concurrent."
-"ForkJoinPool.common.parallelism_ を設定することで _）_ 。"
+msgid "The answer is very simple, we need to tell JDK what is the available memory (at least by setting _Xmx_) and available number of CPUs (by setting http://www.oracle.com/technetwork/articles/java/g1gc-1984535.html[_XX:ParallelGCThreads_, _XX:ConcGCThreads_] and _https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinPool.html[Djava.util.concurrent.ForkJoinPool.common.parallelism]_)."
+msgstr "答えは非常に簡単で、（少なくとも _Xmxを_ 設定することで）利用可能なメモリと利用可能なCPUの数をJDKに伝える必要があります（XX link:http://www.oracle.com/technetwork/articles/java/g1gc-1984535.html[_:ParallelGCThreads、XX_ : _ConcGCThreads、Djava_] .util. _concurrent.ForkJoinPool.common.parallelism_ を設定することで _）_ 。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-20-memory-and-cpu-constraints-inside.adoc:45
@@ -131,7 +90,7 @@ msgstr "そして、とても良いニュースがあります!私たちはす�
 
 #. type: Title ==
 #: upstream/_posts/2017-03-20-memory-and-cpu-constraints-inside.adoc:47
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Let's test it out!"
 msgstr "試してみよう！"
 
@@ -150,63 +109,43 @@ msgstr "そして、以下のコマンドでCPUとメモリの制限をかけて
 #. type: Plain text
 #: upstream/_posts/2017-03-20-memory-and-cpu-constraints-inside.adoc:58
 #, fuzzy
-msgid ""
-"Note that JAVA_OPTS variable was overridden. Let's have a look what had "
-"happened:"
+msgid "Note that JAVA_OPTS variable was overridden. Let's have a look what had happened:"
 msgstr "JAVA_OPTS変数がオーバーライドされていたことに注意してください。何が起こっていたのか見てみましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-20-memory-and-cpu-constraints-inside.adoc:63
 #, fuzzy
-msgid ""
-"-Xms64m -Xmx350m - it is always a good idea to https://developers.redhat.com/"
-"blog/2014/07/15/dude-wheres-my-paas-memory-tuning-javas-footprint-in-"
-"openshift-part-1/[set _Xmn_] inside a Docker container. Next we set _Xmx_ to "
-"70% of available memory. "
-msgstr ""
-"-Xms64m -Xmx350m - link:https://developers.redhat.com/blog/2014/07/15/dude-"
-"wheres-my-paas-memory-tuning-javas-footprint-in-openshift-part-1/[Xmnを] "
-"Dockerコンテナ内に設定するのはいつものことです。次に _Xmxを_ 利用可能なメモリの70%に設定します。"
+msgid "-Xms64m -Xmx350m - it is always a good idea to https://developers.redhat.com/blog/2014/07/15/dude-wheres-my-paas-memory-tuning-javas-footprint-in-openshift-part-1/[set _Xmn_] inside a Docker container. Next we set _Xmx_ to 70% of available memory. "
+msgstr "-Xms64m -Xmx350m - link:https://developers.redhat.com/blog/2014/07/15/dude-wheres-my-paas-memory-tuning-javas-footprint-in-openshift-part-1/[Xmnを] Dockerコンテナ内に設定するのはいつものことです。次に _Xmxを_ 利用可能なメモリの70%に設定します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-20-memory-and-cpu-constraints-inside.adoc:66
 #, fuzzy
-msgid ""
-"-XX:ParallelGCThreads=6 -XX:ConcGCThreads=6 -Djava.util.concurrent."
-"ForkJoinPool.common.parallelism=6 - The next thing is setting CPU throttling "
-"as I explained above."
-msgstr ""
-"-XX:ParallelGCThreads=6 -XX:ConcGCThreads=6 -Djava.util.concurrent."
-"ForkJoinPool.common.parallelism=6 -次は上で説明したようにCPUスロットルの設定です。"
+msgid "-XX:ParallelGCThreads=6 -XX:ConcGCThreads=6 -Djava.util.concurrent.ForkJoinPool.common.parallelism=6 - The next thing is setting CPU throttling as I explained above."
+msgstr "-XX:ParallelGCThreads=6 -XX:ConcGCThreads=6 -Djava.util.concurrent.ForkJoinPool.common.parallelism=6 -次は上で説明したようにCPUスロットルの設定です。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-20-memory-and-cpu-constraints-inside.adoc:70
 #, fuzzy
-msgid ""
-"There might be some cases where you wouldn't like to set those properties "
-"automatically. In that case, just pass _-n_ switch to the starter script:"
+msgid "There might be some cases where you wouldn't like to set those properties automatically. In that case, just pass _-n_ switch to the starter script:"
 msgstr "これらのプロパティを自動的に設定したくない場合もあるでしょう。その場合は、スタータスクリプトに _-n_ スイッチを渡してください。"
 
 #. type: Title ===
 #: upstream/_posts/2017-03-20-memory-and-cpu-constraints-inside.adoc:77
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "More reading"
 msgstr "続きを読む"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-20-memory-and-cpu-constraints-inside.adoc:83
 #, fuzzy
-msgid ""
-"If this topic sounds interesting to you, do not forget to have a look at "
-"those links:"
+msgid "If this topic sounds interesting to you, do not forget to have a look at those links:"
 msgstr "このトピックがあなたに興味を持って聞こえる場合は、これらのリンクを見ていることを忘れないでください。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-20-memory-and-cpu-constraints-inside.adoc:86
 #, fuzzy
-msgid ""
-"A great series of articles about memory and CPU in the containers by Andrew "
-"Dinn"
+msgid "A great series of articles about memory and CPU in the containers by Andrew Dinn"
 msgstr "Andrew Dinn氏によるコンテナ内のメモリとCPUに関する素晴らしい連載記事"
 
 #. type: Plain text

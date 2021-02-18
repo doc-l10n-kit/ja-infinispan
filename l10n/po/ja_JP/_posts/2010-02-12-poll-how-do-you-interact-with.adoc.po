@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,60 +18,38 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-02-12-poll-how-do-you-interact-with.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-12-poll-how-do-you-interact-with.adoc:9
 #, fuzzy
-msgid ""
-"layout: blog title: 'Poll: How do you interact with Infinispan?' permalink: /"
-"blog/:year/:month/:day/poll-how-do-you-interact-with date: '2010-02-12T07:28:"
-"00.000-08:00' author: galder tags: [ \"hotrod\", \"memcached\","
-msgstr ""
-"layout: blog title: 'Poll: How do you interact with Infinispan?' permalink./"
-"blog/:year/:month/:day/poll-how-do-you-interact-with date: '2010-02-12T07:28:"
-"00:00.000-08:00' author: galder tags.[ \" hotrod\", \"memcached\"."
+msgid "layout: blog title: 'Poll: How do you interact with Infinispan?' permalink: /blog/:year/:month/:day/poll-how-do-you-interact-with date: '2010-02-12T07:28:00.000-08:00' author: galder tags: [ \"hotrod\", \"memcached\","
+msgstr "layout: blog title: 'Poll: How do you interact with Infinispan?' permalink./blog/:year/:month/:day/poll-how-do-you-interact-with date: '2010-02-12T07:28:00:00.000-08:00' author: galder tags.[ \" hotrod\", \"memcached\"."
 
 #. type: Plain text
 #: upstream/_posts/2010-02-12-poll-how-do-you-interact-with.adoc:14
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "\"rest\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3002708472392048330\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/02/poll-how-do-you-"
-"interact-with.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3002708472392048330\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/02/poll-how-do-you-interact-with.html\n"
 "---\n"
-msgstr ""
-"\"rest\", ] blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3002708472392048330 blogger_orig_url: https://blog.infinispan.org/2010/02/"
-"poll-how-do-you-interact-with.html ---"
+msgstr "\"rest\", ] blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3002708472392048330 blogger_orig_url: https://blog.infinispan.org/2010/02/poll-how-do-you-interact-with.html ---"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-12-poll-how-do-you-interact-with.adoc:20
 #, fuzzy
-msgid ""
-"While discussing the different ways to interact with Infinispan, we decided "
-"to open up a poll so that people tell us how they expect to be using "
-"Infinispan. Do you use Infinispan directly on the same VM? Or do you use "
-"REST? Are you planning to interact via memcached or Hot Rod interface?"
-msgstr ""
-"Infinispanとのさまざまな対話方法について議論している間に、人々がどのようにInfinispanを使用することを期待しているかを教えてくれるように、投票を行うことにしました。同じVM上で直接Infinispanを使用していますか？それともRESTを使っていますか？memcached "
-"や Hot Rod インターフェイスを介して対話する予定はありますか？"
+msgid "While discussing the different ways to interact with Infinispan, we decided to open up a poll so that people tell us how they expect to be using Infinispan. Do you use Infinispan directly on the same VM? Or do you use REST? Are you planning to interact via memcached or Hot Rod interface?"
+msgstr "Infinispanとのさまざまな対話方法について議論している間に、人々がどのようにInfinispanを使用することを期待しているかを教えてくれるように、投票を行うことにしました。同じVM上で直接Infinispanを使用していますか？それともRESTを使っていますか？memcached や Hot Rod インターフェイスを介して対話する予定はありますか？"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-12-poll-how-do-you-interact-with.adoc:25
 #, fuzzy
-msgid ""
-"The poll can be found http://community.jboss.org/poll.jspa?poll=1035[here]. "
-"Please make sure that if you vote, you add a comment indicating the reasons "
-"why you chosen that option."
-msgstr ""
-"投票は link:http://community.jboss.org/poll.jspa?poll=1035[ここで] "
-"行うことができます。投票する場合は、そのオプションを選択した理由を示すコメントを追加することを確認してください。"
+msgid "The poll can be found http://community.jboss.org/poll.jspa?poll=1035[here]. Please make sure that if you vote, you add a comment indicating the reasons why you chosen that option."
+msgstr "投票は link:http://community.jboss.org/poll.jspa?poll=1035[ここで] 行うことができます。投票する場合は、そのオプションを選択した理由を示すコメントを追加することを確認してください。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-12-poll-how-do-you-interact-with.adoc:27

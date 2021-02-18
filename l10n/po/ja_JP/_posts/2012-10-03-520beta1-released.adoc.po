@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-10-03-520beta1-released.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-10-03-520beta1-released.adoc:11
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 5.2.0.Beta1 released!\n"
@@ -33,8 +33,7 @@ msgid ""
 "author: mmarkus\n"
 "tags: [ \"beta\", \"release\"\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"106912085477451315\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-106912085477451315\n"
 "blogger_orig_url: https://blog.infinispan.org/2012/10/520beta1-released.html\n"
 "---\n"
 msgstr ""
@@ -45,78 +44,45 @@ msgstr ""
 "author: mmarkus\n"
 "tags: [ \"beta\", \"release\"\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"106912085477451315\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-106912085477451315\n"
 "blogger_orig_url: https://blog.infinispan.org/2012/10/520beta1-released.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-10-03-520beta1-released.adoc:14
 #, fuzzy
-msgid ""
-"https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
-"12320085[This] is the complete list of bugs/features released. Highlights:"
-msgstr ""
-"公開されたバグ/機能の一覧 link:https://issues.jboss.org/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12320085[です] 。ハイライトです。"
+msgid "https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12320085[This] is the complete list of bugs/features released. Highlights:"
+msgstr "公開されたバグ/機能の一覧 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12320085[です] 。ハイライトです。"
 
 #. type: Plain text
 #: upstream/_posts/2012-10-03-520beta1-released.adoc:17
 #, fuzzy
-msgid ""
-"Various enhancements for the distributed executor framework (https://issues."
-"jboss.org/browse/ISPN-2287[ISPN-2287], https://issues.jboss.org/browse/ISPN-"
-"2286[ISPN-2286], https://issues.jboss.org/browse/ISPN-1513[ISPN-1513])"
-msgstr ""
-"分散エグゼキュータフレームワークの各種機能強化 link:https://issues.jboss.org/browse/ISPN-2287[(ISPN-"
-"2287] 、ISPN link:https://issues.jboss.org/browse/ISPN-2286[-2286、] ISPN-"
-"1513)"
+msgid "Various enhancements for the distributed executor framework (https://issues.jboss.org/browse/ISPN-2287[ISPN-2287], https://issues.jboss.org/browse/ISPN-2286[ISPN-2286], https://issues.jboss.org/browse/ISPN-1513[ISPN-1513])"
+msgstr "分散エグゼキュータフレームワークの各種機能強化 link:https://issues.jboss.org/browse/ISPN-2287[(ISPN-2287] 、ISPN link:https://issues.jboss.org/browse/ISPN-2286[-2286、] ISPN-1513)"
 
 #. type: Plain text
 #: upstream/_posts/2012-10-03-520beta1-released.adoc:20
 #, fuzzy
-msgid ""
-"A new, faster, more efficient and elegant implementation of the "
-"AsyncCacheStore - big thanks to https://github.com/kblees[Karsten Blees] for "
-"contributing it!"
-msgstr ""
-"新しい、より速く、より効率的でエレガントな AsyncCacheStore の実装 - 貢献してくれた Karsten link:https://"
-"github.com/kblees[Blees] に感謝します。"
+msgid "A new, faster, more efficient and elegant implementation of the AsyncCacheStore - big thanks to https://github.com/kblees[Karsten Blees] for contributing it!"
+msgstr "新しい、より速く、より効率的でエレガントな AsyncCacheStore の実装 - 貢献してくれた Karsten link:https://github.com/kblees[Blees] に感謝します。"
 
 #. type: Plain text
 #: upstream/_posts/2012-10-03-520beta1-released.adoc:23
 #, fuzzy
-msgid ""
-"The default transaction enlistment model has changed from \"xa\" to "
-"\"synchronization\". You should only care about this if you're using "
-"recovery (https://issues.jboss.org/browse/ISPN-1284[ISPN-1284])."
-msgstr ""
-"デフォルトのトランザクション入隊モデルが「xa」から「同期」に変更されました。リカバリー link:https://issues.jboss.org/"
-"browse/ISPN-1284[(ISPN-1284] )を使用している場合のみ気にする必要があります。"
+msgid "The default transaction enlistment model has changed from \"xa\" to \"synchronization\". You should only care about this if you're using recovery (https://issues.jboss.org/browse/ISPN-1284[ISPN-1284])."
+msgstr "デフォルトのトランザクション入隊モデルが「xa」から「同期」に変更されました。リカバリー link:https://issues.jboss.org/browse/ISPN-1284[(ISPN-1284] )を使用している場合のみ気にする必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2012-10-03-520beta1-released.adoc:25
 #, fuzzy
-msgid ""
-"The ability to mark a site as offline after a certain number of request "
-"(https://issues.jboss.org/browse/ISPN-2319[ISPN-2319])"
-msgstr ""
-"一定回数のリクエスト後にサイトをオフラインにする機能 link:https://issues.jboss.org/browse/ISPN-"
-"2319[(ISPN-2319] )"
+msgid "The ability to mark a site as offline after a certain number of request (https://issues.jboss.org/browse/ISPN-2319[ISPN-2319])"
+msgstr "一定回数のリクエスト後にサイトをオフラインにする機能 link:https://issues.jboss.org/browse/ISPN-2319[(ISPN-2319] )"
 
 #. type: Plain text
 #: upstream/_posts/2012-10-03-520beta1-released.adoc:32
 #, fuzzy
-msgid ""
-"You can http://www.jboss.org/infinispan/downloads[download] the distribution "
-"or the https://repository.jboss.org/nexus/content/repositories/releases/org/"
-"infinispan/[maven artifact]. If you have any questions please check our http:"
-"//www.jboss.org/infinispan/forums[forums], our mailing lists or ping us "
-"directly on irc://irc.freenode.org/infinispan[IRC]!"
-msgstr ""
-"ディストリビューションまたは maven アーティファクトを link:http://www.jboss.org/infinispan/"
-"downloads[ダウンロードする] ことができます。質問がある場合は、 link:http://www.jboss.org/infinispan/"
-"forums[フォーラムや] メーリングリストをチェックするか、IRCで直接質問してください!"
+msgid "You can http://www.jboss.org/infinispan/downloads[download] the distribution or the https://repository.jboss.org/nexus/content/repositories/releases/org/infinispan/[maven artifact]. If you have any questions please check our http://www.jboss.org/infinispan/forums[forums], our mailing lists or ping us directly on irc://irc.freenode.org/infinispan[IRC]!"
+msgstr "ディストリビューションまたは maven アーティファクトを link:http://www.jboss.org/infinispan/downloads[ダウンロードする] ことができます。質問がある場合は、 link:http://www.jboss.org/infinispan/forums[フォーラムや] メーリングリストをチェックするか、IRCで直接質問してください!"
 
 #. type: Plain text
 #: upstream/_posts/2012-10-03-520beta1-released.adoc:34

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:16
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Multi-tenancy - Infinispan as a Service (also on OpenShift)\n"
@@ -37,13 +37,9 @@ msgid ""
 "\"multi-tenancy\",\n"
 "\"rest\",\n"
 "]\n"
-"thumbnail: https://4.bp.blogspot.com/-9gJn1KCZK1Y/WUjMfn5VKXI/AAAAAAAAJrg/"
-"m6QfOjXjpPU6mfAsvn3kGnt5YYFOas1iQCLcBGAs/s72-c/multiple-data-containers-and-"
-"router.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8520787527949373872\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/09/multi-tenancy-"
-"infinispan-as-service.html\n"
+"thumbnail: https://4.bp.blogspot.com/-9gJn1KCZK1Y/WUjMfn5VKXI/AAAAAAAAJrg/m6QfOjXjpPU6mfAsvn3kGnt5YYFOas1iQCLcBGAs/s72-c/multiple-data-containers-and-router.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8520787527949373872\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/09/multi-tenancy-infinispan-as-service.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -57,159 +53,64 @@ msgstr ""
 "\"multi-tenancy\",\n"
 "\"rest\",\n"
 "]\n"
-"thumbnail: https://4.bp.blogspot.com/-9gJn1KCZK1Y/WUjMfn5VKXI/AAAAAAAAJrg/"
-"m6QfOjXjpPU6mfAsvn3kGnt5YYFOas1iQCLcBGAs/s72-c/multiple-data-containers-and-"
-"router.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8520787527949373872\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/09/multi-tenancy-"
-"infinispan-as-service.html\n"
+"thumbnail: https://4.bp.blogspot.com/-9gJn1KCZK1Y/WUjMfn5VKXI/AAAAAAAAJrg/m6QfOjXjpPU6mfAsvn3kGnt5YYFOas1iQCLcBGAs/s72-c/multiple-data-containers-and-router.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8520787527949373872\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/09/multi-tenancy-infinispan-as-service.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:21
 #, fuzzy
-msgid ""
-"In recent years Software as a Service concept has gained a lot of traction. "
-"I'm pretty sure you've used it many times before. Let's take a look at a "
-"practical example and explain what's going on behind the scenes."
-msgstr ""
-"近年、Software as a "
-"Serviceのコンセプトが浸透してきています。皆さんも何度も利用したことがあるのではないでしょうか。実例を見ながら、その裏で何が起こっているのかを説明してみましょう。"
+msgid "In recent years Software as a Service concept has gained a lot of traction. I'm pretty sure you've used it many times before. Let's take a look at a practical example and explain what's going on behind the scenes."
+msgstr "近年、Software as a Serviceのコンセプトが浸透してきています。皆さんも何度も利用したことがあるのではないでしょうか。実例を見ながら、その裏で何が起こっているのかを説明してみましょう。"
 
 #. type: Title =====
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:22
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Practical example - photo album application"
 msgstr "実践例 - フォトアルバムアプリケーション"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:29
 #, fuzzy
-msgid ""
-"Imagine a very simple photo album application hosted within the cloud.  Upon "
-"the first usage you are asked to create an account. Once you sign up, a new "
-"tenant is created for you in the application with all necessary details and "
-"some dedicated storage just for you. Starting from this point you can start "
-"using the album - download and upload photos. "
-msgstr ""
-"クラウド上でホストされている非常にシンプルなフォトアルバムアプリケーションを想像してみてください。最初の使用時には、アカウントの作成を求められます。サインアップすると、アプリケーション内に必要な詳細と専用のストレージが作成されます。この時点からアルバムの使用を開始することができます "
-"- 写真をダウンロードしてアップロードします。"
+msgid "Imagine a very simple photo album application hosted within the cloud.  Upon the first usage you are asked to create an account. Once you sign up, a new tenant is created for you in the application with all necessary details and some dedicated storage just for you. Starting from this point you can start using the album - download and upload photos. "
+msgstr "クラウド上でホストされている非常にシンプルなフォトアルバムアプリケーションを想像してみてください。最初の使用時には、アカウントの作成を求められます。サインアップすると、アプリケーション内に必要な詳細と専用のストレージが作成されます。この時点からアルバムの使用を開始することができます - 写真をダウンロードしてアップロードします。"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:39
 #, fuzzy
-msgid ""
-"The software provider that created the photo album application can also "
-"celebrate. They have a new client! But with a new client the system needs to "
-"increase its capacity to ensure it can store all those lovely photos. There "
-"are also other concerns - how to prevent leaking photos and other data from "
-"one account into another? And finally, since all the content will be "
-"transferred through the Internet, how to secure transmission?"
-msgstr ""
-"フォトアルバムアプリを作成したソフト提供者もお祝いできます。新しいクライアントができたのです。しかし、新しいクライアントができたことで、システムの容量を増やして、素敵な写真をすべて保存できるようにする必要があります。また、写真やその他のデータがあるアカウントから別のアカウントに漏れないようにするにはどうすればいいのでしょうか？そして最後に、すべてのコンテンツはインターネットを介して転送されるので、どのようにして安全な転送を行うのでしょうか？"
+msgid "The software provider that created the photo album application can also celebrate. They have a new client! But with a new client the system needs to increase its capacity to ensure it can store all those lovely photos. There are also other concerns - how to prevent leaking photos and other data from one account into another? And finally, since all the content will be transferred through the Internet, how to secure transmission?"
+msgstr "フォトアルバムアプリを作成したソフト提供者もお祝いできます。新しいクライアントができたのです。しかし、新しいクライアントができたことで、システムの容量を増やして、素敵な写真をすべて保存できるようにする必要があります。また、写真やその他のデータがあるアカウントから別のアカウントに漏れないようにするにはどうすればいいのでしょうか？そして最後に、すべてのコンテンツはインターネットを介して転送されるので、どのようにして安全な転送を行うのでしょうか？"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:45
 #, fuzzy
-msgid ""
-"As you can see, multi-tenancy is not that easy as it would seem. The good "
-"news is that if it's properly configured and secured, it might be beneficial "
-"both for the client and for the software provider. "
-msgstr ""
-"ご覧のように、マルチテナンシーは見た目ほど簡単ではありません。良いニュースは、適切に設定され、セキュリティが確保されていれば、クライアントとソフトウェアプロバイダの両方にとって有益なものになるかもしれないということです。"
+msgid "As you can see, multi-tenancy is not that easy as it would seem. The good news is that if it's properly configured and secured, it might be beneficial both for the client and for the software provider. "
+msgstr "ご覧のように、マルチテナンシーは見た目ほど簡単ではありません。良いニュースは、適切に設定され、セキュリティが確保されていれば、クライアントとソフトウェアプロバイダの両方にとって有益なものになるかもしれないということです。"
 
 #. type: Title =====
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:46
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Multi-tenancy in Infinispan"
 msgstr "インフィニスパンのマルチテナント"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:70
 #, fuzzy
-msgid ""
-"Let's think again about our photo album application for a moment.  Whenever "
-"a new client signs up we need to create a new account for him and dedicate "
-"some storage. Translating that into Infinispan concepts this would mean "
-"creating a new https://docs.jboss.org/infinispan/9.1/apidocs/org/infinispan/"
-"manager/CacheContainer.html[CacheContainer].  Within a CacheContainer we can "
-"create multiple Caches for user details, metadata and photos. You might be "
-"wondering why creating a new https://docs.jboss.org/infinispan/9.1/apidocs/"
-"org/infinispan/Cache.html[Cache] is not sufficient? It turns out that when a "
-"Hot Rod client connects to a cluster, it connects to a CacheContainer "
-"exposed via a Hot Rod Endpoint.  Such a client has access to all Caches. "
-"Considering our example, your friends could possibly see your photos. That's "
-"definitely not good! So we need to create a CacheContainer per tenant. "
-"Before we introduced Multi-tenancy, you could expose each CacheContainer "
-"using a separate port (using separate Hot Rod Endpoint for each of them). In "
-"many scenarios this is impractical because of proliferation of ports. For "
-"this reason we introduced the Router concept. It allows multiple clients to "
-"access their own CacheContainers through a single endpoint and also prevents "
-"them from accessing data which doesn't belong to them. The final piece of "
-"the puzzle is transmitting sensitive data through an unsecured channel such "
-"as the Internet. The use of TLS encryption solves this problem. The final "
-"outcome should look like the following:"
-msgstr ""
-"私たちのフォトアルバムアプリケーションについてもう一度考えてみましょう。新しいクライアントがサインアップするたびに、そのクライアントのために新しいアカウントを作成してストレージを確保する必要があります。これを "
-"Infinispan の概念に変換すると、新しい link:https://docs.jboss.org/infinispan/9.1/apidocs/"
-"org/infinispan/manager/CacheContainer.html[CacheContainer を] "
-"作成することになります。CacheContainer の中に、ユーザーの詳細、メタデータ、写真用の複数のキャッシュを作成することができます。 なぜ新しい "
-"Cache を作成するだけ link:https://docs.jboss.org/infinispan/9.1/apidocs/org/"
-"infinispan/Cache.html[で] は十分ではないのかと疑問に思うかもしれません。Hot Rodクライアントがクラスタに接続すると、Hot "
-"Rodエンドポイントを介して公開されているCacheContainerに接続します。そのようなクライアントはすべてのキャッシュにアクセスできます。この例を考えると、あなたの友人があなたの写真を見てしまう可能性があります。これは絶対に良くないことです。そこで、テナントごとに "
-"CacheContainer を作成する必要があります。マルチテナンシーを導入する前は、別々のポートを使用して各 CacheContainer "
-"を公開することができました（それぞれの CacheContainer に対して別々の Hot Rod Endpoint "
-"を使用します）。多くのシナリオでは、ポートの数が増えるため、これは現実的ではありません。このため、Router "
-"の概念を導入しました。これにより、複数のクライアントが単一のエンドポイントを介して自分の CacheContainers "
-"にアクセスできるようになり、自分のものではないデータへのアクセスを防ぐことができます。パズルの最後のピースは、インターネットなどの安全でないチャネルを介して機密データを送信することです。TLS "
-"暗号化を使用することで、この問題を解決します。最終的な結果は以下のようになります。"
+msgid "Let's think again about our photo album application for a moment.  Whenever a new client signs up we need to create a new account for him and dedicate some storage. Translating that into Infinispan concepts this would mean creating a new https://docs.jboss.org/infinispan/9.1/apidocs/org/infinispan/manager/CacheContainer.html[CacheContainer].  Within a CacheContainer we can create multiple Caches for user details, metadata and photos. You might be wondering why creating a new https://docs.jboss.org/infinispan/9.1/apidocs/org/infinispan/Cache.html[Cache] is not sufficient? It turns out that when a Hot Rod client connects to a cluster, it connects to a CacheContainer exposed via a Hot Rod Endpoint.  Such a client has access to all Caches. Considering our example, your friends could possibly see your photos. That's definitely not good! So we need to create a CacheContainer per tenant. Before we introduced Multi-tenancy, you could expose each CacheContainer using a separate port (using separate Hot Rod Endpoint for each of them). In many scenarios this is impractical because of proliferation of ports. For this reason we introduced the Router concept. It allows multiple clients to access their own CacheContainers through a single endpoint and also prevents them from accessing data which doesn't belong to them. The final piece of the puzzle is transmitting sensitive data through an unsecured channel such as the Internet. The use of TLS encryption solves this problem. The final outcome should look like the following:"
+msgstr "私たちのフォトアルバムアプリケーションについてもう一度考えてみましょう。新しいクライアントがサインアップするたびに、そのクライアントのために新しいアカウントを作成してストレージを確保する必要があります。これを Infinispan の概念に変換すると、新しい link:https://docs.jboss.org/infinispan/9.1/apidocs/org/infinispan/manager/CacheContainer.html[CacheContainer を] 作成することになります。CacheContainer の中に、ユーザーの詳細、メタデータ、写真用の複数のキャッシュを作成することができます。 なぜ新しい Cache を作成するだけ link:https://docs.jboss.org/infinispan/9.1/apidocs/org/infinispan/Cache.html[で] は十分ではないのかと疑問に思うかもしれません。Hot Rodクライアントがクラスタに接続すると、Hot Rodエンドポイントを介して公開されているCacheContainerに接続します。そのようなクライアントはすべてのキャッシュにアクセスできます。この例を考えると、あなたの友人があなたの写真を見てしまう可能性があります。これは絶対に良くないことです。そこで、テナントごとに CacheContainer を作成する必要があります。マルチテナンシーを導入する前は、別々のポートを使用して各 CacheContainer を公開することができました（それぞれの CacheContainer に対して別々の Hot Rod Endpoint を使用します）。多くのシナリオでは、ポートの数が増えるため、これは現実的ではありません。このため、Router の概念を導入しました。これにより、複数のクライアントが単一のエンドポイントを介して自分の CacheContainers にアクセスできるようになり、自分のものではないデータへのアクセスを防ぐことができます。パズルの最後のピースは、インターネットなどの安全でないチャネルを介して機密データを送信することです。TLS 暗号化を使用することで、この問題を解決します。最終的な結果は以下のようになります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:74
 #, fuzzy
-msgid ""
-"https://4.bp.blogspot.com/-9gJn1KCZK1Y/WUjMfn5VKXI/AAAAAAAAJrg/"
-"m6QfOjXjpPU6mfAsvn3kGnt5YYFOas1iQCLcBGAs/s1600/multiple-data-containers-and-"
-"router.png[image:https://4.bp.blogspot.com/-9gJn1KCZK1Y/WUjMfn5VKXI/"
-"AAAAAAAAJrg/m6QfOjXjpPU6mfAsvn3kGnt5YYFOas1iQCLcBGAs/s320/multiple-data-"
-"containers-and-router.png[image,width=320,height=170]]"
-msgstr ""
-"link:https://4.bp.blogspot.com/-9gJn1KCZK1Y/WUjMfn5VKXI/AAAAAAAAJrg/"
-"m6QfOjXjpPU6mfAsvn3kGnt5YYFOas1iQCLcBGAs/s1600/multiple-data-containers-and-"
-"router.png[]"
+msgid "https://4.bp.blogspot.com/-9gJn1KCZK1Y/WUjMfn5VKXI/AAAAAAAAJrg/m6QfOjXjpPU6mfAsvn3kGnt5YYFOas1iQCLcBGAs/s1600/multiple-data-containers-and-router.png[image:https://4.bp.blogspot.com/-9gJn1KCZK1Y/WUjMfn5VKXI/AAAAAAAAJrg/m6QfOjXjpPU6mfAsvn3kGnt5YYFOas1iQCLcBGAs/s320/multiple-data-containers-and-router.png[image,width=320,height=170]]"
+msgstr "link:https://4.bp.blogspot.com/-9gJn1KCZK1Y/WUjMfn5VKXI/AAAAAAAAJrg/m6QfOjXjpPU6mfAsvn3kGnt5YYFOas1iQCLcBGAs/s1600/multiple-data-containers-and-router.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:95
 #, fuzzy
-msgid ""
-"The Router component on the diagram above is responsible for recognizing "
-"data from each client and redirecting it to the appropriate Hot Rod endpoint."
-"  As the name implies, the router inspects incoming traffic and reroutes it "
-"to the appropriate underlying CacheContainer. To do this it can use two "
-"different strategies depending on the protocol: https://en.wikipedia.org/"
-"wiki/Server_Name_Indication[TLS/SNI] for the Hot Rod protocol, matching each "
-"server certificate to a specific cache container  and path prefixes for REST."
-"  The SNI strategy detects the SNI Host Name (which is used as tenant) and "
-"also requires TLS certificates to match. By creating proper trust stores we "
-"can match which tenant can access which CacheContainers.  URL path prefix is "
-"very easy to understand, but it is also less secure unless you enable "
-"authentication. For this reason it should not be used in production unless "
-"you know what you are doing (the SNI strategy for the REST endpoint will be "
-"implemented in the near future). Each client has its own unique REST path "
-"prefix that needs to be used for accessing the data (e.g. _http://127.0.0.1:"
-"8080/rest/*client1*/fotos/2_)."
-msgstr ""
-"上図の Router コンポーネントは、各クライアントからのデータを認識し、適切な Hot Rod "
-"エンドポイントにリダイレクトします。その名が示すように、ルータは受信トラフィックを検査し、適切な基礎となる CacheContainer "
-"にリダイレクトします。これを行うには、プロトコルに応じて 2 つの異なる戦略を使用します。Hot Rod プロトコル用の link:https://en."
-"wikipedia.org/wiki/Server_Name_Indication[TLS/SNI] "
-"、各サーバー証明書を特定のキャッシュ・コンテナにマッチングさせ、REST 用のパス・プレフィックスを使用します。SNI 戦略では SNI "
-"ホスト名（テナントとして使用される）を検出し、TLS "
-"証明書を一致させる必要があります。適切なトラストストアを作成することで、どのテナントがどのキャッシュコンテナにアクセスできるかを一致させることができます。URL "
-"パスのプレフィックスは非常にわかりやすいですが、認証を有効にしない限りセキュリティが低くなります。このため、何をしているのかわからない場合を除き、本番環境では使用すべきではありません "
-"(REST エンドポイントの SNI 戦略は近い将来実装される予定です)。各クライアントは、データへのアクセスに使用する必要がある独自の REST "
-"パスプレフィックスを持っています (例: http: _//127.0.0.1:8080/rest/client1/fotos/2_ )。"
+msgid "The Router component on the diagram above is responsible for recognizing data from each client and redirecting it to the appropriate Hot Rod endpoint.  As the name implies, the router inspects incoming traffic and reroutes it to the appropriate underlying CacheContainer. To do this it can use two different strategies depending on the protocol: https://en.wikipedia.org/wiki/Server_Name_Indication[TLS/SNI] for the Hot Rod protocol, matching each server certificate to a specific cache container  and path prefixes for REST.  The SNI strategy detects the SNI Host Name (which is used as tenant) and also requires TLS certificates to match. By creating proper trust stores we can match which tenant can access which CacheContainers.  URL path prefix is very easy to understand, but it is also less secure unless you enable authentication. For this reason it should not be used in production unless you know what you are doing (the SNI strategy for the REST endpoint will be implemented in the near future). Each client has its own unique REST path prefix that needs to be used for accessing the data (e.g. _http://127.0.0.1:8080/rest/*client1*/fotos/2_)."
+msgstr "上図の Router コンポーネントは、各クライアントからのデータを認識し、適切な Hot Rod エンドポイントにリダイレクトします。その名が示すように、ルータは受信トラフィックを検査し、適切な基礎となる CacheContainer にリダイレクトします。これを行うには、プロトコルに応じて 2 つの異なる戦略を使用します。Hot Rod プロトコル用の link:https://en.wikipedia.org/wiki/Server_Name_Indication[TLS/SNI] 、各サーバー証明書を特定のキャッシュ・コンテナにマッチングさせ、REST 用のパス・プレフィックスを使用します。SNI 戦略では SNI ホスト名（テナントとして使用される）を検出し、TLS 証明書を一致させる必要があります。適切なトラストストアを作成することで、どのテナントがどのキャッシュコンテナにアクセスできるかを一致させることができます。URL パスのプレフィックスは非常にわかりやすいですが、認証を有効にしない限りセキュリティが低くなります。このため、何をしているのかわからない場合を除き、本番環境では使用すべきではありません (REST エンドポイントの SNI 戦略は近い将来実装される予定です)。各クライアントは、データへのアクセスに使用する必要がある独自の REST パスプレフィックスを持っています (例: http: _//127.0.0.1:8080/rest/client1/fotos/2_ )。"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:99
@@ -219,24 +120,20 @@ msgstr "混乱していませんか？例を挙げて明確にしてみましょ
 
 #. type: Title =====
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:100
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Foto application sample configuration"
 msgstr "写真アプリケーションのサンプル設定"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:104
 #, fuzzy
-msgid ""
-"The first step is to generate proper key/trust stores for the server and "
-"client:"
+msgid "The first step is to generate proper key/trust stores for the server and client:"
 msgstr "最初のステップは、サーバとクライアントのための適切なキー/トラストストアを生成することです。"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:111
 #, fuzzy
-msgid ""
-"The next step is to configure the server. The snippet below shows only the "
-"most important parts:"
+msgid "The next step is to configure the server. The snippet below shows only the most important parts:"
 msgstr "次のステップでは、サーバーの設定を行います。以下のスニペットでは、最も重要な部分だけを示しています。"
 
 #. type: Plain text
@@ -260,94 +157,50 @@ msgstr "25、30 - 別々の CacheContainers を使用することを強く推奨
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:123
 #, fuzzy
-msgid ""
-"38, 39 - A Hot Rod connector (but without socket binding) is required to "
-"provide proper mapping to CacheContainer. You can also use many useful "
-"settings on this level (like ignored caches or authentication)."
-msgstr ""
-"38、39 - CacheContainer への適切なマッピングを提供するには、ホット・ロッド・コネクタ (ただし、ソケット・バインディングなし) "
-"が必要です。このレベルでは、多くの便利な設定を使用することもできます (無視されるキャッシュや認証など)。"
+msgid "38, 39 - A Hot Rod connector (but without socket binding) is required to provide proper mapping to CacheContainer. You can also use many useful settings on this level (like ignored caches or authentication)."
+msgstr "38、39 - CacheContainer への適切なマッピングを提供するには、ホット・ロッド・コネクタ (ただし、ソケット・バインディングなし) が必要です。このレベルでは、多くの便利な設定を使用することもできます (無視されるキャッシュや認証など)。"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:125
 #, fuzzy
-msgid ""
-"42 - Router definition which binds into default Hot Rod and REST ports."
+msgid "42 - Router definition which binds into default Hot Rod and REST ports."
 msgstr "42 - デフォルトの Hot Rod および REST ポートにバインドするルータ定義。"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:130
 #, fuzzy
-msgid ""
-"44 - 46 - The most important bit which states that only a client using "
-"_SSLRealm1_ (which uses trust store corresponding "
-"to _client_1_server_keystore.jks_) and TLS/SNI Host name _client-1_ can "
-"access Hot Rod endpoint named _multi-tenant-hotrod-1_ (which points to "
-"CacheContainer _multi-tenancy-1_)."
-msgstr ""
-"44 - 46 - _SSLRealm1_ ( _client_1_server_keystore.jks_ に対応するトラスト・ストアを使用する _) "
-"と_ TLS/SNI ホスト名 _client-1 を_ 使用するクライアントのみが、 _multi-tenant-hotrod-1 (_ "
-"CacheContainer multi- _tenancy-1_ をポイントする _)_ という名前の Hot Rod エンドポイントにアクセス "
-"_できること_ を示す最も重要なビットです _。_"
+msgid "44 - 46 - The most important bit which states that only a client using _SSLRealm1_ (which uses trust store corresponding to _client_1_server_keystore.jks_) and TLS/SNI Host name _client-1_ can access Hot Rod endpoint named _multi-tenant-hotrod-1_ (which points to CacheContainer _multi-tenancy-1_)."
+msgstr "44 - 46 - _SSLRealm1_ ( _client_1_server_keystore.jks_ に対応するトラスト・ストアを使用する _) と_ TLS/SNI ホスト名 _client-1 を_ 使用するクライアントのみが、 _multi-tenant-hotrod-1 (_ CacheContainer multi- _tenancy-1_ をポイントする _)_ という名前の Hot Rod エンドポイントにアクセス _できること_ を示す最も重要なビットです _。_"
 
 #. type: Title =====
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:131
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Improving the application by using OpenShift"
 msgstr "OpenShiftを利用したアプリケーションの改善"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:136
 #, fuzzy
-msgid ""
-"_Hint: You might be interested in looking at our previous blog posts about "
-"hosting Infinispan on OpenShift. You may find them at the bottom of the page."
-"_"
-msgstr ""
-"_ヒント: OpenShift上でのInfinispanのホスティングに関する以前のブログ記事をご覧ください。ページの一番下にあるかもしれません。_"
+msgid "_Hint: You might be interested in looking at our previous blog posts about hosting Infinispan on OpenShift. You may find them at the bottom of the page._"
+msgstr "_ヒント: OpenShift上でのInfinispanのホスティングに関する以前のブログ記事をご覧ください。ページの一番下にあるかもしれません。_"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:144
 #, fuzzy
-msgid ""
-"So far we've learned how to create and configure a new CacheContainer per "
-"tenant. But we also need to remember that system capacity needs to be "
-"increased with each new tenant. OpenShift is a perfect tool for scaling the "
-"system up and down. The configuration we created in the previous step almost "
-"matches our needs but needs some tuning."
-msgstr ""
-"ここまでで、テナントごとに新しい CacheContainer "
-"を作成して構成する方法を学びました。しかし、新しいテナントごとにシステムの容量を増やす必要があることも覚えておく必要があります。OpenShiftはシステムをスケールアップしたり、スケールダウンしたりするのに最適なツールです。前のステップで作成した構成は、ほぼニーズにマッチしていますが、若干のチューニングが必要です。"
+msgid "So far we've learned how to create and configure a new CacheContainer per tenant. But we also need to remember that system capacity needs to be increased with each new tenant. OpenShift is a perfect tool for scaling the system up and down. The configuration we created in the previous step almost matches our needs but needs some tuning."
+msgstr "ここまでで、テナントごとに新しい CacheContainer を作成して構成する方法を学びました。しかし、新しいテナントごとにシステムの容量を増やす必要があることも覚えておく必要があります。OpenShiftはシステムをスケールアップしたり、スケールダウンしたりするのに最適なツールです。前のステップで作成した構成は、ほぼニーズにマッチしていますが、若干のチューニングが必要です。"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:155
 #, fuzzy
-msgid ""
-"As we mentioned earlier, we need to encrypt transport between the client and "
-"the server. The main disadvantage is that OpenShift Router will not be able "
-"to inspect it and take routing decisions. A https://docs.openshift.org/"
-"latest/architecture/core_concepts/routes.html#secured-routes[passthrough "
-"Route] fits perfectly in this scenario but requires creating TLS/SNI Host "
-"Names as Fully Qualified Application Names. So if you start OpenShift "
-"locally (using _oc cluster up_) the tenant names will look like the "
-"following: _client-1-fotoalbum.192.168.0.17.nip.io_. "
-msgstr ""
-"先ほども述べたように、クライアントとサーバー間のトランスポートを暗号化する必要があります。主な欠点は、OpenShift "
-"Routerがそれを検査してルーティングの判断を下すことができないことです。 link:https://docs.openshift.org/"
-"latest/architecture/core_concepts/routes.html#secured-routes[パススルールート] "
-"はこのシナリオに完全に適合しますが、完全修飾アプリケーション名としてTLS/"
-"SNIホスト名を作成する必要があります。そのため、ローカルでOpenShiftを起動すると（ _ocクラスタアップ_ "
-"を使用して）、テナント名は次のようになります。"
+msgid "As we mentioned earlier, we need to encrypt transport between the client and the server. The main disadvantage is that OpenShift Router will not be able to inspect it and take routing decisions. A https://docs.openshift.org/latest/architecture/core_concepts/routes.html#secured-routes[passthrough Route] fits perfectly in this scenario but requires creating TLS/SNI Host Names as Fully Qualified Application Names. So if you start OpenShift locally (using _oc cluster up_) the tenant names will look like the following: _client-1-fotoalbum.192.168.0.17.nip.io_. "
+msgstr "先ほども述べたように、クライアントとサーバー間のトランスポートを暗号化する必要があります。主な欠点は、OpenShift Routerがそれを検査してルーティングの判断を下すことができないことです。 link:https://docs.openshift.org/latest/architecture/core_concepts/routes.html#secured-routes[パススルールート] はこのシナリオに完全に適合しますが、完全修飾アプリケーション名としてTLS/SNIホスト名を作成する必要があります。そのため、ローカルでOpenShiftを起動すると（ _ocクラスタアップ_ を使用して）、テナント名は次のようになります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:161
 #, fuzzy
-msgid ""
-"We also need to think how to store generated key stores. The easiest way is "
-"to use https://docs.openshift.org/latest/dev_guide/secrets.html[Secrets]:"
-msgstr ""
-"また、生成されたキーストアをどのように格納するかを考える必要があります。最も簡単な方法は link:https://docs.openshift.org/"
-"latest/dev_guide/secrets.html[Secrets] を使うことです。"
+msgid "We also need to think how to store generated key stores. The easiest way is to use https://docs.openshift.org/latest/dev_guide/secrets.html[Secrets]:"
+msgstr "また、生成されたキーストアをどのように格納するかを考える必要があります。最も簡単な方法は link:https://docs.openshift.org/latest/dev_guide/secrets.html[Secrets] を使うことです。"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:167
@@ -358,58 +211,35 @@ msgstr "最後に、完全なDeploymentConfigurationです。"
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:179
 #, fuzzy
-msgid ""
-"If you're interested in playing with the demo by yourself, you might find a "
-"working example https://github.com/infinispan-demos/infinispan-openshift-"
-"multitenancy[here].  It mainly targets OpenShift but the concept and "
-"configuration are also applicable for local deployment."
-msgstr ""
-"自分でデモをプレイしてみたいという方は、 link:https://github.com/infinispan-demos/infinispan-"
-"openshift-multitenancy[こちらに] "
-"動作例があるかもしれません。これは主にOpenShiftを対象としていますが、コンセプトや設定はローカルデプロイにも適用できます。"
+msgid "If you're interested in playing with the demo by yourself, you might find a working example https://github.com/infinispan-demos/infinispan-openshift-multitenancy[here].  It mainly targets OpenShift but the concept and configuration are also applicable for local deployment."
+msgstr "自分でデモをプレイしてみたいという方は、 link:https://github.com/infinispan-demos/infinispan-openshift-multitenancy[こちらに] 動作例があるかもしれません。これは主にOpenShiftを対象としていますが、コンセプトや設定はローカルデプロイにも適用できます。"
 
 #. type: Title =====
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:180
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Links"
 msgstr "リンク"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:184
 #, fuzzy
-msgid ""
-"http://blog.infinispan.org/2016/08/running-infinispan-cluster-on-openshift."
-"html[Running Infinispan cluster on OpenShift]"
-msgstr ""
-"link:http://blog.infinispan.org/2016/08/running-infinispan-cluster-on-"
-"openshift.html[OpenShift上でInfinispanクラスタを実行する]"
+msgid "http://blog.infinispan.org/2016/08/running-infinispan-cluster-on-openshift.html[Running Infinispan cluster on OpenShift]"
+msgstr "link:http://blog.infinispan.org/2016/08/running-infinispan-cluster-on-openshift.html[OpenShift上でInfinispanクラスタを実行する]"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:186
 #, fuzzy
-msgid ""
-"http://blog.infinispan.org/2016/09/configuration-management-on-openshift."
-"html[Configuration management on OpenShift, Kubernetes and Docker]"
-msgstr ""
-"link:http://blog.infinispan.org/2016/09/configuration-management-on-"
-"openshift.html[OpenShift、Kubernetes、Dockerでの構成管理]"
+msgid "http://blog.infinispan.org/2016/09/configuration-management-on-openshift.html[Configuration management on OpenShift, Kubernetes and Docker]"
+msgstr "link:http://blog.infinispan.org/2016/09/configuration-management-on-openshift.html[OpenShift、Kubernetes、Dockerでの構成管理]"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:188
 #, fuzzy
-msgid ""
-"http://blog.infinispan.org/2017/03/checking-infinispan-cluster-health-and."
-"html[Checking Infinispan cluster health and Kubernetes/OpenShift]"
-msgstr ""
-"link:http://blog.infinispan.org/2017/03/checking-infinispan-cluster-health-"
-"and.html[Infinispanクラスタの健全性とKubernetes/OpenShiftのチェック]"
+msgid "http://blog.infinispan.org/2017/03/checking-infinispan-cluster-health-and.html[Checking Infinispan cluster health and Kubernetes/OpenShift]"
+msgstr "link:http://blog.infinispan.org/2017/03/checking-infinispan-cluster-health-and.html[Infinispanクラスタの健全性とKubernetes/OpenShiftのチェック]"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-10-multi-tenancy-infinispan-as-service.adoc:189
 #, fuzzy
-msgid ""
-"https://github.com/infinispan-demos/infinispan-openshift-multitenancy[Source "
-"code for the demo]"
-msgstr ""
-"link:https://github.com/infinispan-demos/infinispan-openshift-"
-"multitenancy[デモのソースコード]"
+msgid "https://github.com/infinispan-demos/infinispan-openshift-multitenancy[Source code for the demo]"
+msgstr "link:https://github.com/infinispan-demos/infinispan-openshift-multitenancy[デモのソースコード]"

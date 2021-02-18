@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-11-20-hotrod-clients-cc-820alpha2-are-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-11-20-hotrod-clients-cc-820alpha2-are-out.adoc:15
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: \"  Hotrod clients C++/C# 8.2.0.Alpha2 are out!\"\n"
@@ -37,10 +37,8 @@ msgid ""
 "\"alpha\",\n"
 "\"c#\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3192777094504392011\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/11/hotrod-clients-cc-"
-"820alpha2-are-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3192777094504392011\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/11/hotrod-clients-cc-820alpha2-are-out.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -54,10 +52,8 @@ msgstr ""
 "\"alpha\",\n"
 "\"c#\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3192777094504392011\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/11/hotrod-clients-cc-"
-"820alpha2-are-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3192777094504392011\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/11/hotrod-clients-cc-820alpha2-are-out.html\n"
 "---\n"
 
 #. type: Plain text
@@ -75,9 +71,7 @@ msgstr "C++とC# 8.2.0.Alpha2のリリースをお知らせします。"
 #. type: Plain text
 #: upstream/_posts/2017-11-20-hotrod-clients-cc-820alpha2-are-out.adoc:22
 #, fuzzy
-msgid ""
-"Code for continuous queries (CQ) and SASL is almost complete. Worth "
-"mentioning improvements for Alpha2 are:"
+msgid "Code for continuous queries (CQ) and SASL is almost complete. Worth mentioning improvements for Alpha2 are:"
 msgstr "継続的クエリ(CQ)とSASLのコードはほぼ完成しています。Alpha2の改善点は特筆すべきものがあります。"
 
 #. type: Plain text
@@ -107,15 +101,5 @@ msgstr "追加されたバグよりも多くのバグが解決されました :)
 #. type: Plain text
 #: upstream/_posts/2017-11-20-hotrod-clients-cc-820alpha2-are-out.adoc:36
 #, fuzzy
-msgid ""
-"Check the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12314125&version=12333562[release notes], browse the source code (https://"
-"github.com/infinispan/cpp-client/tree/8.2.0.Alpha2[C++], https://github.com/"
-"infinispan/dotnet-client/tree/8.2.0.Alpha2[C#]) or just http://infinispan."
-"org/hotrod-clients/[download] and try it! Cheers, The Infinispan Team"
-msgstr ""
-"link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12314125&version=12333562[リリースノートを] チェックしたり、ソースコード link:https://github.com/"
-"infinispan/cpp-client/tree/8.2.0.Alpha2[(C] link:https://github.com/"
-"infinispan/dotnet-client/tree/8.2.0.Alpha2[++, C#)] を閲覧したり、 link:http://"
-"infinispan.org/hotrod-clients/[ダウンロードして] 試してみてください。乾杯、Infinispanチーム"
+msgid "Check the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314125&version=12333562[release notes], browse the source code (https://github.com/infinispan/cpp-client/tree/8.2.0.Alpha2[C++], https://github.com/infinispan/dotnet-client/tree/8.2.0.Alpha2[C#]) or just http://infinispan.org/hotrod-clients/[download] and try it! Cheers, The Infinispan Team"
+msgstr "link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314125&version=12333562[リリースノートを] チェックしたり、ソースコード link:https://github.com/infinispan/cpp-client/tree/8.2.0.Alpha2[(C] link:https://github.com/infinispan/dotnet-client/tree/8.2.0.Alpha2[++, C#)] を閲覧したり、 link:http://infinispan.org/hotrod-clients/[ダウンロードして] 試してみてください。乾杯、Infinispanチーム"

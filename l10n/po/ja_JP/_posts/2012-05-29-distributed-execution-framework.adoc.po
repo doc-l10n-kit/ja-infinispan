@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-05-29-distributed-execution-framework.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-29-distributed-execution-framework.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Distributed execution framework enhancements\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2012-05-29T08:57:00.000-07:00'\n"
 "author: vblagojevic\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6108118107992670379\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/05/distributed-execution-"
-"framework.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6108118107992670379\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/05/distributed-execution-framework.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,44 +42,12 @@ msgstr ""
 "date: '2012-05-29T08:57:00.000-07:00'\n"
 "author: vblagojevic\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6108118107992670379\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/05/distributed-execution-"
-"framework.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6108118107992670379\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/05/distributed-execution-framework.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-29-distributed-execution-framework.adoc:34
 #, fuzzy
-msgid ""
-"The initial release of the distributed execution included in Infinispan 5.0 "
-"was meant to be more of an experiment -- a testing ground -- rather than an "
-"industrial solution for distributed execution. We provided a simple http://"
-"docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/distexec/"
-"DistributedExecutorService.html[interface] similar to a familiar http://docs."
-"oracle.com/javase/1.5.0/docs/api/java/util/concurrent/ExecutorService."
-"html[ExecutorService] API and adapted it for execution on the Infinispan "
-"cluster. To our own surprise, use of the distributed execution framework "
-"took off and people started using it even in production environments. After "
-"the initial release users enthusiastically provided feedback and asked for "
-"enhancements. Some of these minor enhancements were integrated in subsequent "
-"Infinispan 5.1 and 5.2 releases. However, major improvements were put aside "
-"on a shelf, until now! The time is ripe to respond to these major "
-"enhancements so they can be ready for the Infinispan 6.0 release time. We "
-"have started a dedicated design https://community.jboss.org/wiki/"
-"Infinispan60-DistributedExecutionEnhancements[page] for distributed executor "
-"enhancements where you can provide your input and influence the design of "
-"the next iteration of the Infinispan distributed execution framework. "
-"Looking forward to more of your feedback!"
-msgstr ""
-"Infinispan 5.0 "
-"に含まれる分散実行の初期リリースは、分散実行のための工業的なソリューションというよりも、むしろ実験的なものになることを意図していました。私たちは、使い慣れた "
-"link:http://docs.oracle.com/javase/1.5.0/docs/api/java/util/concurrent/"
-"ExecutorService.html[ExecutorService] API に似たシンプルな link:http://docs.jboss."
-"org/infinispan/5.1/apidocs/org/infinispan/distexec/"
-"DistributedExecutorService.html[インターフェイスを] 提供し、Infinispan "
-"クラスタ上での実行に適応させました。驚いたことに、分散実行フレームワークの使用が開始され、本番環境でも使用されるようになりました。最初のリリース後、ユーザは熱心にフィードバックを提供し、機能強化を求めました。これらのマイナーな機能強化のいくつかは、その後のInfinispan "
-"5.1と5.2のリリースに統合されました。しかし、主要な改善点は今まで棚に上げられていました。Infinispan 6."
-"0のリリースに間に合うように、これらの主要な機能強化に対応する時期が来ています。Infinispan分散実行フレームワークの次のイテレーションのデザインに影響を与えるために、分散実行機能の強化のための専用デザイン "
-"link:https://community.jboss.org/wiki/Infinispan60-"
-"DistributedExecutionEnhancements[ページを] 開始しました。より多くのフィードバックをお待ちしています。"
+msgid "The initial release of the distributed execution included in Infinispan 5.0 was meant to be more of an experiment -- a testing ground -- rather than an industrial solution for distributed execution. We provided a simple http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/distexec/DistributedExecutorService.html[interface] similar to a familiar http://docs.oracle.com/javase/1.5.0/docs/api/java/util/concurrent/ExecutorService.html[ExecutorService] API and adapted it for execution on the Infinispan cluster. To our own surprise, use of the distributed execution framework took off and people started using it even in production environments. After the initial release users enthusiastically provided feedback and asked for enhancements. Some of these minor enhancements were integrated in subsequent Infinispan 5.1 and 5.2 releases. However, major improvements were put aside on a shelf, until now! The time is ripe to respond to these major enhancements so they can be ready for the Infinispan 6.0 release time. We have started a dedicated design https://community.jboss.org/wiki/Infinispan60-DistributedExecutionEnhancements[page] for distributed executor enhancements where you can provide your input and influence the design of the next iteration of the Infinispan distributed execution framework. Looking forward to more of your feedback!"
+msgstr "Infinispan 5.0 に含まれる分散実行の初期リリースは、分散実行のための工業的なソリューションというよりも、むしろ実験的なものになることを意図していました。私たちは、使い慣れた link:http://docs.oracle.com/javase/1.5.0/docs/api/java/util/concurrent/ExecutorService.html[ExecutorService] API に似たシンプルな link:http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/distexec/DistributedExecutorService.html[インターフェイスを] 提供し、Infinispan クラスタ上での実行に適応させました。驚いたことに、分散実行フレームワークの使用が開始され、本番環境でも使用されるようになりました。最初のリリース後、ユーザは熱心にフィードバックを提供し、機能強化を求めました。これらのマイナーな機能強化のいくつかは、その後のInfinispan 5.1と5.2のリリースに統合されました。しかし、主要な改善点は今まで棚に上げられていました。Infinispan 6.0のリリースに間に合うように、これらの主要な機能強化に対応する時期が来ています。Infinispan分散実行フレームワークの次のイテレーションのデザインに影響を与えるために、分散実行機能の強化のための専用デザイン link:https://community.jboss.org/wiki/Infinispan60-DistributedExecutionEnhancements[ページを] 開始しました。より多くのフィードバックをお待ちしています。"

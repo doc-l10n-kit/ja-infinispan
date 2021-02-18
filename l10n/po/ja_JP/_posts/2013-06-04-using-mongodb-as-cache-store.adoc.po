@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-06-04-using-mongodb-as-cache-store.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-04-using-mongodb-as-cache-store.adoc:12
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Using MongoDB as a cache store\n"
@@ -34,10 +34,8 @@ msgid ""
 "tags: [ \"mongodb\",\n"
 "\"cache store\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"4872331039631682834\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/06/using-mongodb-as-cache-"
-"store.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4872331039631682834\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/06/using-mongodb-as-cache-store.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -48,40 +46,27 @@ msgstr ""
 "tags: [ \"mongodb\",\n"
 "\"cache store\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"4872331039631682834\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/06/using-mongodb-as-cache-"
-"store.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4872331039631682834\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/06/using-mongodb-as-cache-store.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-04-using-mongodb-as-cache-store.adoc:15
 #, fuzzy
-msgid ""
-"With the 5.3 release, there is a brand new feature. I'm glad to announce "
-"that you will be able to use MongoDB as a cache store."
+msgid "With the 5.3 release, there is a brand new feature. I'm glad to announce that you will be able to use MongoDB as a cache store."
 msgstr "5.3のリリースに伴い、全く新しい機能が追加されました。MongoDBをキャッシュストアとして使えるようになるのは嬉しいですね。"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-04-using-mongodb-as-cache-store.adoc:19
 #, fuzzy
-msgid ""
-"For those who don't know MongoDB, it's an open-source document oriented "
-"NoSQL database developped by 10Gen. You can more information about it "
-"on http://www.mongodb.org/[http://www.mongodb.org]/."
-msgstr ""
-"MongoDBをご存じない方のために、10Genが開発したオープンソースのドキュメント指向NoSQLデータベースです。 MongoDBについての詳細は "
-"http://www.mongodb.org/ をご覧ください link:http://www.mongodb.org/[。]"
+msgid "For those who don't know MongoDB, it's an open-source document oriented NoSQL database developped by 10Gen. You can more information about it on http://www.mongodb.org/[http://www.mongodb.org]/."
+msgstr "MongoDBをご存じない方のために、10Genが開発したオープンソースのドキュメント指向NoSQLデータベースです。 MongoDBについての詳細は http://www.mongodb.org/ をご覧ください link:http://www.mongodb.org/[。]"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-04-using-mongodb-as-cache-store.adoc:23
 #, fuzzy
-msgid ""
-"The question you have right now, it probably, how to use it cool cache store "
-"? Simple, as for the other cache store you have to add a loader in your "
-"Infinispan configuration file."
-msgstr ""
-"あなたが今持っている質問は、おそらく、どのようにクールなキャッシュストアを使用するか？簡単なことですが、他のキャッシュストアのように、Infinispanの設定ファイルにローダーを追加する必要があります。"
+msgid "The question you have right now, it probably, how to use it cool cache store ? Simple, as for the other cache store you have to add a loader in your Infinispan configuration file."
+msgstr "あなたが今持っている質問は、おそらく、どのようにクールなキャッシュストアを使用するか？簡単なことですが、他のキャッシュストアのように、Infinispanの設定ファイルにローダーを追加する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-04-using-mongodb-as-cache-store.adoc:25
@@ -98,22 +83,11 @@ msgstr "プログラマティックAPIをお望みの場合。"
 #. type: Plain text
 #: upstream/_posts/2013-06-04-using-mongodb-as-cache-store.adoc:34
 #, fuzzy
-msgid ""
-"For more information about the configuration possibilities (default values, "
-"options, etc) , you can refer to the https://docs.jboss.org/author/display/"
-"ISPN/Cache+Loaders+and+Stores#CacheLoadersandStores-"
-"MongoDBcacheloader[documentation page]"
-msgstr ""
-"設定の可能性（デフォルト値、オプションなど）の詳細については、 link:https://docs.jboss.org/author/display/"
-"ISPN/Cache+Loaders+and+Stores#CacheLoadersandStores-"
-"MongoDBcacheloader[ドキュメントのページを] 参照してください。"
+msgid "For more information about the configuration possibilities (default values, options, etc) , you can refer to the https://docs.jboss.org/author/display/ISPN/Cache+Loaders+and+Stores#CacheLoadersandStores-MongoDBcacheloader[documentation page]"
+msgstr "設定の可能性（デフォルト値、オプションなど）の詳細については、 link:https://docs.jboss.org/author/display/ISPN/Cache+Loaders+and+Stores#CacheLoadersandStores-MongoDBcacheloader[ドキュメントのページを] 参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-04-using-mongodb-as-cache-store.adoc:39
 #, fuzzy
-msgid ""
-"Cheers, Guillaume Hibernate OGM & Infinispan contributor http://www."
-"gscheibel.net/[Blog] / http://www.twitter.com/g_scheibel[@g_scheibel]"
-msgstr ""
-"乾杯！ギョーム・ヒベルネートOGM＆インフィニスパン投稿者ブログ link:http://www.gscheibel.net/[/ @] g_ link:"
-"http://www.twitter.com/g_scheibel[scheibel]"
+msgid "Cheers, Guillaume Hibernate OGM & Infinispan contributor http://www.gscheibel.net/[Blog] / http://www.twitter.com/g_scheibel[@g_scheibel]"
+msgstr "乾杯！ギョーム・ヒベルネートOGM＆インフィニスパン投稿者ブログ link:http://www.gscheibel.net/[/ @] g_ link:http://www.twitter.com/g_scheibel[scheibel]"

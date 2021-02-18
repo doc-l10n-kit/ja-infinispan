@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-02-02-infinispan-920cr2-is-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-02-infinispan-920cr2-is-out.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.2.0.CR2 is out!\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2018-02-02T01:12:00.000-08:00'\n"
 "author: gustavonalle\n"
 "tags: [ \" release\", \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1126457374060584278\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/02/infinispan-920cr2-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1126457374060584278\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/02/infinispan-920cr2-is-out.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,18 +42,14 @@ msgstr ""
 "date: '2018-02-02T01:12:00.000-08:00'\n"
 "author: gustavonalle\n"
 "tags: [ \" release\", \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1126457374060584278\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/02/infinispan-920cr2-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1126457374060584278\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/02/infinispan-920cr2-is-out.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-02-infinispan-920cr2-is-out.adoc:13
 #, fuzzy
-msgid ""
-"The Infinispan team is proud to announce that Infinispan 9.2.0.CR2 has been "
-"released!"
+msgid "The Infinispan team is proud to announce that Infinispan 9.2.0.CR2 has been released!"
 msgstr "Infinispanチームは、Infinispan 9.2.0.CR2をリリースしました。"
 
 #. type: Plain text
@@ -67,10 +61,8 @@ msgstr "今回のリリースで新たに注目すべき点があります。"
 #. type: Plain text
 #: upstream/_posts/2018-02-02-infinispan-920cr2-is-out.adoc:18
 #, fuzzy
-msgid ""
-"[https://issues.jboss.org/browse/ISPN-8641[ISPN-8641]] Wildfly 11 support"
-msgstr ""
-"link:https://issues.jboss.org/browse/ISPN-8641[ISPN-8641] ] ワイルドフライ11対応"
+msgid "[https://issues.jboss.org/browse/ISPN-8641[ISPN-8641]] Wildfly 11 support"
+msgstr "link:https://issues.jboss.org/browse/ISPN-8641[ISPN-8641] ] ワイルドフライ11対応"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-02-infinispan-920cr2-is-out.adoc:20
@@ -81,55 +73,32 @@ msgstr "link:https://issues.jboss.org/browse/ISPN-8715[ISPN-8715] ] ローカル
 #. type: Plain text
 #: upstream/_posts/2018-02-02-infinispan-920cr2-is-out.adoc:22
 #, fuzzy
-msgid ""
-"[https://issues.jboss.org/browse/ISPN-8695[ISPN-8695]] Creation of caches "
-"from remote clients with custom configuration"
-msgstr ""
-"link:https://issues.jboss.org/browse/ISPN-8695[ISPN-8695] ] "
-"カスタム設定によるリモートクライアントからのキャッシュの作成"
+msgid "[https://issues.jboss.org/browse/ISPN-8695[ISPN-8695]] Creation of caches from remote clients with custom configuration"
+msgstr "link:https://issues.jboss.org/browse/ISPN-8695[ISPN-8695] ] カスタム設定によるリモートクライアントからのキャッシュの作成"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-02-infinispan-920cr2-is-out.adoc:24
 #, fuzzy
-msgid ""
-"[https://issues.jboss.org/browse/ISPN-8427[ISPN-8427]] Support for non-"
-"String keys in the REST server"
-msgstr ""
-"link:https://issues.jboss.org/browse/ISPN-8427[ISPN-8427] ] "
-"RESTサーバにおける非文字列キーのサポート"
+msgid "[https://issues.jboss.org/browse/ISPN-8427[ISPN-8427]] Support for non-String keys in the REST server"
+msgstr "link:https://issues.jboss.org/browse/ISPN-8427[ISPN-8427] ] RESTサーバにおける非文字列キーのサポート"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-02-infinispan-920cr2-is-out.adoc:26
 #, fuzzy
-msgid ""
-"[https://issues.jboss.org/browse/ISPN-8619[ISPN-8619]] Java Hot Rod client "
-"rewritten using Netty"
-msgstr ""
-"link:https://issues.jboss.org/browse/ISPN-8619[ISPN-8619] ] Java Hot "
-"RodクライアントをNettyで書き換える"
+msgid "[https://issues.jboss.org/browse/ISPN-8619[ISPN-8619]] Java Hot Rod client rewritten using Netty"
+msgstr "link:https://issues.jboss.org/browse/ISPN-8619[ISPN-8619] ] Java Hot RodクライアントをNettyで書き換える"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-02-infinispan-920cr2-is-out.adoc:30
 #, fuzzy
-msgid ""
-"For more details, consult the https://issues.jboss.org/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12336632[release notes.]"
-msgstr ""
-"詳細については、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12310799&version=12336632[リリースノート] を参照してください。"
+msgid "For more details, consult the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12336632[release notes.]"
+msgstr "詳細については、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12336632[リリースノート] を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-02-infinispan-920cr2-is-out.adoc:35
 #, fuzzy
-msgid ""
-"As we approach the final version release quickly, users are encouraged to "
-"try it and send feedback. So, please head over to the http://infinispan.org/"
-"download/[download page] and try it out. Or if you prefer you can run using "
-"Docker with:"
-msgstr ""
-"最終バージョンのリリースが急速に近づいているため、ユーザーの皆様にはぜひお試しいただき、フィードバックを送っていただきたいと思います。 link:"
-"http://infinispan.org/download/[ダウンロードページ] "
-"にアクセスして試してみてください。あるいは、Dockerを使って実行することもできます。"
+msgid "As we approach the final version release quickly, users are encouraged to try it and send feedback. So, please head over to the http://infinispan.org/download/[download page] and try it out. Or if you prefer you can run using Docker with:"
+msgstr "最終バージョンのリリースが急速に近づいているため、ユーザーの皆様にはぜひお試しいただき、フィードバックを送っていただきたいと思います。 link:http://infinispan.org/download/[ダウンロードページ] にアクセスして試してみてください。あるいは、Dockerを使って実行することもできます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-02-infinispan-920cr2-is-out.adoc:37
@@ -140,17 +109,8 @@ msgstr "docker run -it jboss/infinispan-server:9.2.0.CR2"
 #. type: Plain text
 #: upstream/_posts/2018-02-02-infinispan-920cr2-is-out.adoc:43
 #, fuzzy
-msgid ""
-"If you have any issues, please report it in our https://issues.jboss.org/"
-"projects/ISPN/summary[bug tracker], ask us on the https://developer.jboss."
-"org/en/infinispan/content[forum], or join us for a friendly chat on the "
-"#infinispan IRC channel on http://webchat.freenode.net/[Freenode.]"
-msgstr ""
-"何か問題があれば、 link:https://issues.jboss.org/projects/ISPN/summary[バグトラッカー] で報告し "
-"link:https://issues.jboss.org/projects/ISPN/summary[たり、] フォーラムで link:https://"
-"issues.jboss.org/projects/ISPN/summary[質問したり] 、Freenode の #infinispan IRC "
-"チャンネルでフレンドリーなチャットに link:https://developer.jboss.org/en/infinispan/"
-"content[参加して] ください。"
+msgid "If you have any issues, please report it in our https://issues.jboss.org/projects/ISPN/summary[bug tracker], ask us on the https://developer.jboss.org/en/infinispan/content[forum], or join us for a friendly chat on the #infinispan IRC channel on http://webchat.freenode.net/[Freenode.]"
+msgstr "何か問題があれば、 link:https://issues.jboss.org/projects/ISPN/summary[バグトラッカー] で報告し link:https://issues.jboss.org/projects/ISPN/summary[たり、] フォーラムで link:https://issues.jboss.org/projects/ISPN/summary[質問したり] 、Freenode の #infinispan IRC チャンネルでフレンドリーなチャットに link:https://developer.jboss.org/en/infinispan/content[参加して] ください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-02-infinispan-920cr2-is-out.adoc:45

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:17
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 7.1.0.Beta1\n"
@@ -39,10 +39,8 @@ msgid ""
 "\"indexing\",\n"
 "\"annotations\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2672091286286934912\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/01/infinispan-710beta1."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2672091286286934912\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/01/infinispan-710beta1.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -58,10 +56,8 @@ msgstr ""
 "\"indexing\",\n"
 "\"annotations\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2672091286286934912\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/01/infinispan-710beta1."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2672091286286934912\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/01/infinispan-710beta1.html\n"
 "---\n"
 
 #. type: Plain text
@@ -91,19 +87,13 @@ msgstr "リモートHotRodキャッシュのニアキャッシュサポート"
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:28
 #, fuzzy
-msgid ""
-"Annotation-based generation of ProtoBuf serializers which removes the need "
-"to write the schema files by hand and greatly improves usability of Remote "
-"Queries"
-msgstr ""
-"アノテーションベースのProtoBufシリアライザの生成により、スキーマファイルを手書きする必要がなくなり、リモートクエリの使い勝手が大幅に向上します。"
+msgid "Annotation-based generation of ProtoBuf serializers which removes the need to write the schema files by hand and greatly improves usability of Remote Queries"
+msgstr "アノテーションベースのProtoBufシリアライザの生成により、スキーマファイルを手書きする必要がなくなり、リモートクエリの使い勝手が大幅に向上します。"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:30
 #, fuzzy
-msgid ""
-"Cluster Listener Event Batching, which coalesces events for better "
-"performance"
+msgid "Cluster Listener Event Batching, which coalesces events for better performance"
 msgstr "イベントを統合してパフォーマンスを向上させるクラスターリスナーイベントバッチ"
 
 #. type: Plain text
@@ -127,48 +117,26 @@ msgstr "サーバー内のドメインモードとセキュリティ保管庫の
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:36
 #, fuzzy
-msgid ""
-"Further improvements to the Partition Handling with many stability fixes and "
-"the removal of the Unavailable mode: a cluster can now be either Available "
-"or Degraded."
-msgstr ""
-"多くの安定性の修正と利用不可モードの削除により、パーティション処理がさらに改善されました：クラスタは利用可能または劣化のどちらかになりました。"
+msgid "Further improvements to the Partition Handling with many stability fixes and the removal of the Unavailable mode: a cluster can now be either Available or Degraded."
+msgstr "多くの安定性の修正と利用不可モードの削除により、パーティション処理がさらに改善されました：クラスタは利用可能または劣化のどちらかになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:39
 #, fuzzy
-msgid ""
-"Of course there's also the usual slew of bug fixes, performance and memory "
-"usage improvements and documentation cleanups."
+msgid "Of course there's also the usual slew of bug fixes, performance and memory usage improvements and documentation cleanups."
 msgstr "もちろん、バグの修正、パフォーマンスやメモリ使用量の改善、ドキュメントのクリーンアップなども通常通り行われています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:45
 #, fuzzy
-msgid ""
-"Feel free to join us and shape the future releases on our http://www.jboss."
-"org/infinispan/forums[forums], our https://lists.jboss.org/mailman/listinfo/"
-"infinispan-dev[mailing lists] or our http://webchat.freenode.net/?channels="
-"%23infinispan[#infinispan] IRC channel."
-msgstr ""
-"link:http://www.jboss.org/infinispan/forums[フォーラム] 、 link:https://lists."
-"jboss.org/mailman/listinfo/infinispan-dev[メーリングリスト] 、 link:http://webchat."
-"freenode.net/?channels=%23infinispan[#infinispan] "
-"IRCチャンネルで、気軽に参加して、将来のリリースを形にしてください。"
+msgid "Feel free to join us and shape the future releases on our http://www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or our http://webchat.freenode.net/?channels=%23infinispan[#infinispan] IRC channel."
+msgstr "link:http://www.jboss.org/infinispan/forums[フォーラム] 、 link:https://lists.jboss.org/mailman/listinfo/infinispan-dev[メーリングリスト] 、 link:http://webchat.freenode.net/?channels=%23infinispan[#infinispan] IRCチャンネルで、気軽に参加して、将来のリリースを形にしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:51
 #, fuzzy
-msgid ""
-"For a complete list of features and bug fixes included in this release "
-"please refer to the https://issues.jboss.org/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12325979[release notes]. Visit our http://"
-"infinispan.org/download/[downloads] section to find the latest release."
-msgstr ""
-"このリリースに含まれる機能とバグフィックスの完全なリストについては、 link:https://issues.jboss.org/secure/"
-"ReleaseNote.jspa?projectId=12310799&version=12325979[リリースノート] "
-"を参照してください。最新のリリースについては、 link:http://infinispan.org/download/[ダウンロード] "
-"セクションをご覧ください。"
+msgid "For a complete list of features and bug fixes included in this release please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12325979[release notes]. Visit our http://infinispan.org/download/[downloads] section to find the latest release."
+msgstr "このリリースに含まれる機能とバグフィックスの完全なリストについては、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12325979[リリースノート] を参照してください。最新のリリースについては、 link:http://infinispan.org/download/[ダウンロード] セクションをご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:53

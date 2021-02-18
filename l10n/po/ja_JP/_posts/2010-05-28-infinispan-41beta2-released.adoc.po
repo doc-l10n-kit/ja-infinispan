@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-05-28-infinispan-41beta2-released.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-28-infinispan-41beta2-released.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 4.1Beta2 released\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2010-05-28T08:25:00.000-07:00'\n"
 "author: mmarkus\n"
 "tags: [ \"release\", \"beta\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"5473029962399353191\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/05/infinispan-41beta2-"
-"released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5473029962399353191\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/05/infinispan-41beta2-released.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,10 +42,8 @@ msgstr ""
 "date: '2010-05-28T08:25:00.000-07:00'\n"
 "author: mmarkus\n"
 "tags: [ \"release\", \"beta\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"5473029962399353191\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/05/infinispan-41beta2-"
-"released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5473029962399353191\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/05/infinispan-41beta2-released.html\n"
 "---\n"
 
 #. type: Plain text
@@ -59,40 +55,23 @@ msgstr "こんにちは。"
 #. type: Plain text
 #: upstream/_posts/2010-05-28-infinispan-41beta2-released.adoc:18
 #, fuzzy
-msgid ""
-"The second and hopefully last Beta for 4.1 has just been released.  Thanks "
-"to excellent community feedback, several HotRod client/server issues were "
-"fixed. Besides this and other bug-fixes (check https://jira.jboss.org/secure/"
-"IssueNavigator.jspa?mode=hide&requestId=12313283[this] for complete list), "
-"following new features were added:"
-msgstr ""
-"4.1の第二弾、そしてできれば最後のベータ版がリリースされました。優れたコミュニティからのフィードバックのおかげで、いくつかのHotRodクライアント/"
-"サーバの問題が修正されました。これと他のバグ修正（完全なリストは link:https://jira.jboss.org/secure/"
-"IssueNavigator.jspa?mode=hide&requestId=12313283[こちらを] "
-"ご覧ください）に加えて、以下の新機能が追加されました。"
+msgid "The second and hopefully last Beta for 4.1 has just been released.  Thanks to excellent community feedback, several HotRod client/server issues were fixed. Besides this and other bug-fixes (check https://jira.jboss.org/secure/IssueNavigator.jspa?mode=hide&requestId=12313283[this] for complete list), following new features were added:"
+msgstr "4.1の第二弾、そしてできれば最後のベータ版がリリースされました。優れたコミュニティからのフィードバックのおかげで、いくつかのHotRodクライアント/サーバの問題が修正されました。これと他のバグ修正（完全なリストは link:https://jira.jboss.org/secure/IssueNavigator.jspa?mode=hide&requestId=12313283[こちらを] ご覧ください）に加えて、以下の新機能が追加されました。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-28-infinispan-41beta2-released.adoc:20
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "an http://community.jboss.org/wiki/Keyaffinityservice[key affinity\n"
 "service] that generates keys to be distributed to specific nodes\n"
 "-\n"
-msgstr ""
-"特定のノードに配布される鍵を生成する link:http://community.jboss.org/wiki/"
-"Keyaffinityservice[キーアフィニティサービス]"
+msgstr "特定のノードに配布される鍵を生成する link:http://community.jboss.org/wiki/Keyaffinityservice[キーアフィニティサービス]"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-28-infinispan-41beta2-released.adoc:23
 #, fuzzy
-msgid ""
-"http://docs.jboss.org/infinispan/4.1/apidocs/org/infinispan/loaders/remote/"
-"RemoteCacheStore.html[RemoteCacheStore] that allow an Infinspan cluster to "
-"be used as an remote data store"
-msgstr ""
-"Infinspanクラスタをリモートデータストアとして使用できるようにする link:http://docs.jboss.org/infinispan/"
-"4.1/apidocs/org/infinispan/loaders/remote/RemoteCacheStore."
-"html[RemoteCacheStore]"
+msgid "http://docs.jboss.org/infinispan/4.1/apidocs/org/infinispan/loaders/remote/RemoteCacheStore.html[RemoteCacheStore] that allow an Infinspan cluster to be used as an remote data store"
+msgstr "Infinspanクラスタをリモートデータストアとして使用できるようにする link:http://docs.jboss.org/infinispan/4.1/apidocs/org/infinispan/loaders/remote/RemoteCacheStore.html[RemoteCacheStore]"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-28-infinispan-41beta2-released.adoc:25

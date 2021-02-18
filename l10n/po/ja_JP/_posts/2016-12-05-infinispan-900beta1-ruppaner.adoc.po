@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,25 +18,22 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.0.0.Beta1 \"Ruppaner\"\n"
 "permalink: /blog/:year/:month/:day/infinispan-900beta1-ruppaner\n"
 "date: '2016-12-05T13:56:00.004-08:00'\n"
 "author: ttarrant\n"
-"tags: [ \"beta\", \"release\", \"marshalling\", \"off-heap\", "
-"\"performance\", \"query\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8652333474784512280\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/12/infinispan-900beta1-"
-"ruppaner.html\n"
+"tags: [ \"beta\", \"release\", \"marshalling\", \"off-heap\", \"performance\", \"query\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8652333474784512280\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/12/infinispan-900beta1-ruppaner.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,32 +41,21 @@ msgstr ""
 "permalink: /blog/:year/:month/:day/infinispan-900beta1-ruppaner\n"
 "date: '2016-12-05T13:56:00.004-08:00'\n"
 "author: ttarrant\n"
-"tags: [ \"beta\", \"release\", \"marshalling\", \"off-heap\", "
-"\"performance\", \"query\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8652333474784512280\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/12/infinispan-900beta1-"
-"ruppaner.html\n"
+"tags: [ \"beta\", \"release\", \"marshalling\", \"off-heap\", \"performance\", \"query\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8652333474784512280\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/12/infinispan-900beta1-ruppaner.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:12
 #, fuzzy
-msgid ""
-"http://design.jboss.org/infinispan/infinispan9/logo/final/"
-"infinispan9_pixelsizes_600.gif[image:http://design.jboss.org/infinispan/"
-"infinispan9/logo/final/infinispan9_pixelsizes_600.gif[image,width=320,height="
-"77]]"
-msgstr ""
-"link:http://design.jboss.org/infinispan/infinispan9/logo/final/"
-"infinispan9_pixelsizes_600.gif[]"
+msgid "http://design.jboss.org/infinispan/infinispan9/logo/final/infinispan9_pixelsizes_600.gif[image:http://design.jboss.org/infinispan/infinispan9/logo/final/infinispan9_pixelsizes_600.gif[image,width=320,height=77]]"
+msgstr "link:http://design.jboss.org/infinispan/infinispan9/logo/final/infinispan9_pixelsizes_600.gif[]"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:16
 #, fuzzy
-msgid ""
-"It took us quite a bit to get here, but we're finally ready to announce "
-"Infinispan 9.0.0.Beta1, which comes loaded with a ton of goodies."
+msgid "It took us quite a bit to get here, but we're finally ready to announce Infinispan 9.0.0.Beta1, which comes loaded with a ton of goodies."
 msgstr "ここにたどり着くまでにかなり時間がかかりましたが、ついにInfinispan 9.0.0.0.Beta1を発表する準備が整いました。"
 
 #. type: Plain text
@@ -87,11 +73,8 @@ msgstr "Jグループ4"
 #. type: Plain text
 #: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:23
 #, fuzzy
-msgid ""
-"A new algorithm for non-transactional writes (aka the Triangle) which "
-"reduces the number of RPCs required when performing writes "
-msgstr ""
-"非トランザクション型の書き込みのための新しいアルゴリズム (別名トライアングル) で、書き込みを実行する際に必要な RPC の数を減らすことができます。"
+msgid "A new algorithm for non-transactional writes (aka the Triangle) which reduces the number of RPCs required when performing writes "
+msgstr "非トランザクション型の書き込みのための新しいアルゴリズム (別名トライアングル) で、書き込みを実行する際に必要な RPC の数を減らすことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:24
@@ -120,9 +103,7 @@ msgstr "キャッシュ内のデータのサイズがGC時間に影響するの�
 #. type: Plain text
 #: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:32
 #, fuzzy
-msgid ""
-"https://github.com/ben-manes/caffeine[CaffeineMap]-based bounded data "
-"container"
+msgid "https://github.com/ben-manes/caffeine[CaffeineMap]-based bounded data container"
 msgstr "link:https://github.com/ben-manes/caffeine[カフェインマップベース] の束縛されたデータコンテナ"
 
 #. type: Plain text
@@ -170,12 +151,8 @@ msgstr "Kryo と ProtoStuff 用のプラグ可能なマーシャラー"
 #. type: Plain text
 #: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:47
 #, fuzzy
-msgid ""
-"The LevelDB cache store has been replaced with the better-maintained and "
-"faster http://rocksdb.org/[RocksDB] "
-msgstr ""
-"LevelDB キャッシュストアは、メンテナンス性が高く、より高速な link:http://rocksdb.org/[RocksDB に] "
-"置き換えられました。"
+msgid "The LevelDB cache store has been replaced with the better-maintained and faster http://rocksdb.org/[RocksDB] "
+msgstr "LevelDB キャッシュストアは、メンテナンス性が高く、より高速な link:http://rocksdb.org/[RocksDB に] 置き換えられました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:49
@@ -192,16 +169,13 @@ msgstr "Springを4.3.4.RELEASEにバージョンアップ"
 #. type: Plain text
 #: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:54
 #, fuzzy
-msgid ""
-"We will be blogging about the above in detail over the coming weeks, "
-"including benchmarks and tutorials."
+msgid "We will be blogging about the above in detail over the coming weeks, including benchmarks and tutorials."
 msgstr "ベンチマークやチュートリアルなど、今後数週間かけて上記の内容を詳しくブログで紹介していきます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:57
 #, fuzzy
-msgid ""
-"The following improvements were also present in our previous Alpha releases:"
+msgid "The following improvements were also present in our previous Alpha releases:"
 msgstr "前回のアルファリリースでも以下のような改善点がありました。"
 
 #. type: Plain text
@@ -213,9 +187,7 @@ msgstr "永続的な状態での優美なクラスタ化されたシャットダ
 #. type: Plain text
 #: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:62
 #, fuzzy
-msgid ""
-"Support for streaming values over Hot Rod, useful when you are dealing with "
-"very large entries"
+msgid "Support for streaming values over Hot Rod, useful when you are dealing with very large entries"
 msgstr "Hot Rod上での値のストリーミングをサポートしており、非常に大きなエントリを扱う場合に便利です。"
 
 #. type: Plain text
@@ -239,40 +211,26 @@ msgstr "キャッシュストアの改善"
 #. type: Plain text
 #: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:72
 #, fuzzy
-msgid ""
-"The JDBC cache store now use transactions and upserts. Also the internal "
-"connection pool is now based on https://brettwooldridge.github.io/HikariCP/"
-"[HikariCP]"
-msgstr ""
-"JDBCキャッシュストアは、トランザクションとアップサートを使用するようになりました。また、内部接続プールは、 link:https://"
-"brettwooldridge.github.io/HikariCP/[HikariCP]"
+msgid "The JDBC cache store now use transactions and upserts. Also the internal connection pool is now based on https://brettwooldridge.github.io/HikariCP/[HikariCP]"
+msgstr "JDBCキャッシュストアは、トランザクションとアップサートを使用するようになりました。また、内部接続プールは、 link:https://brettwooldridge.github.io/HikariCP/[HikariCP]"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:76
 #, fuzzy
-msgid ""
-"Also, our documentation has received a big overhaul and we believe it is "
-"vastly superior than before."
+msgid "Also, our documentation has received a big overhaul and we believe it is vastly superior than before."
 msgstr "また、当社のドキュメントも大幅なオーバーホールを受けており、以前よりも格段に優れていると考えています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:79
 #, fuzzy
-msgid ""
-"There will be one more Beta including further performance improvements as "
-"well as additional features, so stay tuned."
+msgid "There will be one more Beta including further performance improvements as well as additional features, so stay tuned."
 msgstr "さらなるパフォーマンスの向上と追加機能を含むベータ版がもう1つありますので、ご期待ください。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:84
 #, fuzzy
-msgid ""
-"Infinispan 9 is codenamed \"Ruppaner\" in honor of the http://www.ruppaner-"
-"bodensee.de/die-brauerei/[Konstanz brewery], since many of the improvements "
-"of this release have been brewed on the shores of the Bodensee !"
-msgstr ""
-"Infinispan 9は、このリリースの改良の多くがボーデンゼーの海岸で醸造されているので、 link:http://www.ruppaner-"
-"bodensee.de/die-brauerei/[コンスタンツの醸造所に] 敬意を表して「Ruppaner」というコードネームが付けられています。"
+msgid "Infinispan 9 is codenamed \"Ruppaner\" in honor of the http://www.ruppaner-bodensee.de/die-brauerei/[Konstanz brewery], since many of the improvements of this release have been brewed on the shores of the Bodensee !"
+msgstr "Infinispan 9は、このリリースの改良の多くがボーデンゼーの海岸で醸造されているので、 link:http://www.ruppaner-bodensee.de/die-brauerei/[コンスタンツの醸造所に] 敬意を表して「Ruppaner」というコードネームが付けられています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-infinispan-900beta1-ruppaner.adoc:85

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-07-17-infinispan-600alpha1-is-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-17-infinispan-600alpha1-is-out.adoc:15
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 6.0.0.Alpha1 is out!\n"
@@ -37,10 +37,8 @@ msgid ""
 "\"persistence\",\n"
 "\"alpha\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1233434594766275628\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/07/infinispan-600alpha1-"
-"is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1233434594766275628\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/07/infinispan-600alpha1-is-out.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -54,10 +52,8 @@ msgstr ""
 "\"persistence\",\n"
 "\"alpha\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1233434594766275628\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/07/infinispan-600alpha1-"
-"is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1233434594766275628\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/07/infinispan-600alpha1-is-out.html\n"
 "---\n"
 
 #. type: Plain text
@@ -69,77 +65,44 @@ msgstr "インフィニスパンのコミュニティへ"
 #. type: Plain text
 #: upstream/_posts/2013-07-17-infinispan-600alpha1-is-out.adoc:22
 #, fuzzy
-msgid ""
-"We're proud to announce the first Alpha release of Infinispan 6.0.0.  "
-"Starting with this release, Infinispan license is moving to the terms of the "
-"http://www.apache.org/licenses/LICENSE-2.0[Apache Software Licence version 2."
-"0]."
-msgstr ""
-"Infinispan 6.0.0の最初のアルファリリースを発表できることを誇りに思います。 このリリースから、Infinispanのライセンスは "
-"link:http://www.apache.org/licenses/LICENSE-2.0[Apacheソフトウェアライセンスバージョン2.0] "
-"の条件に移行します。"
+msgid "We're proud to announce the first Alpha release of Infinispan 6.0.0.  Starting with this release, Infinispan license is moving to the terms of the http://www.apache.org/licenses/LICENSE-2.0[Apache Software Licence version 2.0]."
+msgstr "Infinispan 6.0.0の最初のアルファリリースを発表できることを誇りに思います。 このリリースから、Infinispanのライセンスは link:http://www.apache.org/licenses/LICENSE-2.0[Apacheソフトウェアライセンスバージョン2.0] の条件に移行します。"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-17-infinispan-600alpha1-is-out.adoc:25
 #, fuzzy
-msgid ""
-"Besides increased stability (about 30 bug fixes) this release also brings "
-"several new features:"
+msgid "Besides increased stability (about 30 bug fixes) this release also brings several new features:"
 msgstr "安定性の向上 (約30のバグフィックス) に加えて、このリリースではいくつかの新機能が追加されました。"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-17-infinispan-600alpha1-is-out.adoc:29
 #, fuzzy
-msgid ""
-"A more efficient FileCacheStore implementation (courtesy Karsten Blees)"
+msgid "A more efficient FileCacheStore implementation (courtesy Karsten Blees)"
 msgstr "より効率的な FileCacheStore の実装 (提供: Karsten Blees)"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-17-infinispan-600alpha1-is-out.adoc:31
 #, fuzzy
-msgid ""
-"A new set of usage and performance statistics developed within the scope of "
-"the CloudTM project"
+msgid "A new set of usage and performance statistics developed within the scope of the CloudTM project"
 msgstr "CloudTMプロジェクトの範囲内で開発された新しい使用状況とパフォーマンス統計のセット"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-17-infinispan-600alpha1-is-out.adoc:37
 #, fuzzy
-msgid ""
-"A new (experimental) marshaller for Hot Rod based on http://code.google.com/"
-"p/protobuf/[protobuf], which will be primarily used by the upcoming remote "
-"querying feature. Since this has reuse potential in other projects it was "
-"promoted to an independent project named https://github.com/infinispan/"
-"protostream[_protostream_] under the Infinispan umbrella"
-msgstr ""
-"link:http://code.google.com/p/protobuf/[protobuf] をベースにした Hot Rod 用の新しい "
-"(実験的な) マーシャラーで、主に今後のリモートクエリ機能で使用される予定です。これは他のプロジェクトでの再利用の可能性があるので、Infinispan "
-"の傘の下で link:https://github.com/infinispan/protostream[_protostream_] "
-"という名前の独立したプロジェクトに昇格されました。"
+msgid "A new (experimental) marshaller for Hot Rod based on http://code.google.com/p/protobuf/[protobuf], which will be primarily used by the upcoming remote querying feature. Since this has reuse potential in other projects it was promoted to an independent project named https://github.com/infinispan/protostream[_protostream_] under the Infinispan umbrella"
+msgstr "link:http://code.google.com/p/protobuf/[protobuf] をベースにした Hot Rod 用の新しい (実験的な) マーシャラーで、主に今後のリモートクエリ機能で使用される予定です。これは他のプロジェクトでの再利用の可能性があるので、Infinispan の傘の下で link:https://github.com/infinispan/protostream[_protostream_] という名前の独立したプロジェクトに昇格されました。"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-17-infinispan-600alpha1-is-out.adoc:42
 #, fuzzy
-msgid ""
-"For a complete list of features and fixes included in this release please "
-"refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12310799&version=12320762[release notes]."
-msgstr ""
-"このリリースに含まれる機能と修正の完全なリストについては、 link:https://issues.jboss.org/secure/"
-"ReleaseNote.jspa?projectId=12310799&version=12320762[リリースノートを] 参照してください。"
+msgid "For a complete list of features and fixes included in this release please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12320762[release notes]."
+msgstr "このリリースに含まれる機能と修正の完全なリストについては、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12320762[リリースノートを] 参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-17-infinispan-600alpha1-is-out.adoc:48
 #, fuzzy
-msgid ""
-"Visit our http://www.jboss.org/infinispan/downloads[downloads] section to "
-"find the latest release and if you have any questions please check our http:/"
-"/www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/"
-"mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on http://"
-"www.blogger.com/null[IRC]."
-msgstr ""
-"最新のリリースは link:http://www.jboss.org/infinispan/downloads[ダウンロード] "
-"セクションをご覧ください。"
+msgid "Visit our http://www.jboss.org/infinispan/downloads[downloads] section to find the latest release and if you have any questions please check our http://www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on http://www.blogger.com/null[IRC]."
+msgstr "最新のリリースは link:http://www.jboss.org/infinispan/downloads[ダウンロード] セクションをご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-17-infinispan-600alpha1-is-out.adoc:52

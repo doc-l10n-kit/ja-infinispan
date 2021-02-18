@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-04-11-infinispan-at-jboss-worldred-hat.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-11-infinispan-at-jboss-worldred-hat.adoc:14
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan at JBoss World/Red Hat Summit/JUDCon in Boston, May 2011\n"
@@ -35,12 +35,9 @@ msgid ""
 "\"judcon\",\n"
 "\"jbossworld\",\n"
 "]\n"
-"thumbnail: http://1.bp.blogspot.com/-V9o1WhPk4sU/TaKqwCiL5rI/AAAAAAAABas/"
-"wTrQHAW7s30/s72-c/JUDCon_Logo.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3955504401453399636\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/04/infinispan-at-jboss-"
-"worldred-hat.html\n"
+"thumbnail: http://1.bp.blogspot.com/-V9o1WhPk4sU/TaKqwCiL5rI/AAAAAAAABas/wTrQHAW7s30/s72-c/JUDCon_Logo.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3955504401453399636\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/04/infinispan-at-jboss-worldred-hat.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -52,158 +49,87 @@ msgstr ""
 "\"judcon\",\n"
 "\"jbossworld\",\n"
 "]\n"
-"thumbnail: http://1.bp.blogspot.com/-V9o1WhPk4sU/TaKqwCiL5rI/AAAAAAAABas/"
-"wTrQHAW7s30/s72-c/JUDCon_Logo.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3955504401453399636\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/04/infinispan-at-jboss-"
-"worldred-hat.html\n"
+"thumbnail: http://1.bp.blogspot.com/-V9o1WhPk4sU/TaKqwCiL5rI/AAAAAAAABas/wTrQHAW7s30/s72-c/JUDCon_Logo.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3955504401453399636\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/04/infinispan-at-jboss-worldred-hat.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-11-infinispan-at-jboss-worldred-hat.adoc:20
 #, fuzzy
-msgid ""
-"It's that time of year again, and http://www.redhat.com/summit/[Red Hat "
-"Summit/JBoss World 2011] looms ever larger on the horizon.  Back in Boston "
-"again this year, it will be co-located with another http://www.jboss.org/"
-"events/JUDCon[JUDCon], the JBoss Users and Developers Conference."
-msgstr ""
-"今年もボストンで開催される link:http://www.redhat.com/summit/[Red Hat Summit/JBoss World "
-"2011] は、 link:http://www.jboss.org/events/JUDCon[JUDCon] （JBoss Users and "
-"Developers Conference）との同時開催となります。"
+msgid "It's that time of year again, and http://www.redhat.com/summit/[Red Hat Summit/JBoss World 2011] looms ever larger on the horizon.  Back in Boston again this year, it will be co-located with another http://www.jboss.org/events/JUDCon[JUDCon], the JBoss Users and Developers Conference."
+msgstr "今年もボストンで開催される link:http://www.redhat.com/summit/[Red Hat Summit/JBoss World 2011] は、 link:http://www.jboss.org/events/JUDCon[JUDCon] （JBoss Users and Developers Conference）との同時開催となります。"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-11-infinispan-at-jboss-worldred-hat.adoc:23
 #, fuzzy
-msgid ""
-"http://www.redhat.com/summit/img/logo-banner-small_new3.png[image:http://www."
-"redhat.com/summit/img/logo-banner-small_new3.png[image]]"
+msgid "http://www.redhat.com/summit/img/logo-banner-small_new3.png[image:http://www.redhat.com/summit/img/logo-banner-small_new3.png[image]]"
 msgstr "link:http://www.redhat.com/summit/img/logo-banner-small_new3.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-11-infinispan-at-jboss-worldred-hat.adoc:31
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "*[.underline]#Red Hat Summit/JBoss World#*\n"
 "Infinispan is well-represented again at Summit/JBW,\n"
-"http://infinispan.blogspot.com/2010/04/boston-are-you-ready-for-infinispan."
-"html[as\n"
+"http://infinispan.blogspot.com/2010/04/boston-are-you-ready-for-infinispan.html[as\n"
 "it was last year].  I will be\n"
 "http://www.redhat.com/summit/sessions/jboss.html#606[speaking] on using\n"
 "Infinispan to solve a number of scalability and availability issues,\n"
 "including reducing database bottlenecks.\n"
-msgstr ""
-"*Red Hat Summit/JBoss World* Summit/JBWでは、昨年に link:http://infinispan."
-"blogspot.com/2010/04/boston-are-you-ready-for-infinispan.html[引き続き] "
-"Infinispanがよく紹介されています。 "
-"私は、データベースのボトルネックを減らすことを含め、スケーラビリティや可用性の問題を解決するためにInfinispanを使用する方法 link:http:"
-"//www.redhat.com/summit/sessions/jboss.html#606[について講演します] 。"
+msgstr "*Red Hat Summit/JBoss World* Summit/JBWでは、昨年に link:http://infinispan.blogspot.com/2010/04/boston-are-you-ready-for-infinispan.html[引き続き] Infinispanがよく紹介されています。 私は、データベースのボトルネックを減らすことを含め、スケーラビリティや可用性の問題を解決するためにInfinispanを使用する方法 link:http://www.redhat.com/summit/sessions/jboss.html#606[について講演します] 。"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-11-infinispan-at-jboss-worldred-hat.adoc:40
 #, fuzzy
-msgid ""
-"http://www.redhat.com/summit/speakers/session.html#ebernard[Emmanuel "
-"Bernard] and http://www.redhat.com/summit/speakers/session."
-"html#sgrinovero[Sanne Grinovero] will be speaking on http://community.jboss."
-"org/en/hibernate/ogm[Hibernate OGM] - an awesomely cool project to provide "
-"JPA-like access to Infinispan (details of the session http://www.redhat.com/"
-"summit/sessions/jboss.html#83[available here])."
-msgstr ""
-"link:http://www.redhat.com/summit/speakers/session.html#ebernard[Emmanuel "
-"Bernard] と link:http://www.redhat.com/summit/speakers/session."
-"html#sgrinovero[Sanne Grinovero] が link:http://community.jboss.org/en/"
-"hibernate/ogm[Hibernate OGM] - InfinispanにJPAライクなアクセスを提供する非常にクールなプロジェクト-"
-"について講演します（セッションの詳細は link:http://www.redhat.com/summit/sessions/jboss."
-"html#83[こちらを] ご覧ください）。"
+msgid "http://www.redhat.com/summit/speakers/session.html#ebernard[Emmanuel Bernard] and http://www.redhat.com/summit/speakers/session.html#sgrinovero[Sanne Grinovero] will be speaking on http://community.jboss.org/en/hibernate/ogm[Hibernate OGM] - an awesomely cool project to provide JPA-like access to Infinispan (details of the session http://www.redhat.com/summit/sessions/jboss.html#83[available here])."
+msgstr "link:http://www.redhat.com/summit/speakers/session.html#ebernard[Emmanuel Bernard] と link:http://www.redhat.com/summit/speakers/session.html#sgrinovero[Sanne Grinovero] が link:http://community.jboss.org/en/hibernate/ogm[Hibernate OGM] - InfinispanにJPAライクなアクセスを提供する非常にクールなプロジェクト-について講演します（セッションの詳細は link:http://www.redhat.com/summit/sessions/jboss.html#83[こちらを] ご覧ください）。"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-11-infinispan-at-jboss-worldred-hat.adoc:48
 #, fuzzy
-msgid ""
-"http://www.redhat.com/summit/speakers/session.html#cbomba[Craig Bomba] and "
-"http://www.redhat.com/summit/speakers/session.html#sjohnson[Shane Johnson] "
-"will talk about http://www.redhat.com/summit/sessions/jboss."
-"html#325[optimising Infinispan for performance and consistency] based on "
-"lessons learned using Infinispan at the http://www.cboe.com/[Chicago Board "
-"of Options Exchange], the world's largest options exchange."
-msgstr ""
-"世界最大のオプション取引所である link:http://www.cboe.com/[シカゴ・ボード・オブ・オプション] 取引所にて、 link:"
-"http://www.redhat.com/summit/speakers/session.html#cbomba[クレイグ・ボンバ] 氏と link:"
-"http://www.redhat.com/summit/speakers/session.html#sjohnson[シェーン・ジョンソン氏] "
-"が、Infinispanを使用して得られた教訓をもとに、 link:http://www.redhat.com/summit/sessions/"
-"jboss.html#325[パフォーマンスと一貫性のためにInfinispanを最適化する方法] について講演します。"
+msgid "http://www.redhat.com/summit/speakers/session.html#cbomba[Craig Bomba] and http://www.redhat.com/summit/speakers/session.html#sjohnson[Shane Johnson] will talk about http://www.redhat.com/summit/sessions/jboss.html#325[optimising Infinispan for performance and consistency] based on lessons learned using Infinispan at the http://www.cboe.com/[Chicago Board of Options Exchange], the world's largest options exchange."
+msgstr "世界最大のオプション取引所である link:http://www.cboe.com/[シカゴ・ボード・オブ・オプション] 取引所にて、 link:http://www.redhat.com/summit/speakers/session.html#cbomba[クレイグ・ボンバ] 氏と link:http://www.redhat.com/summit/speakers/session.html#sjohnson[シェーン・ジョンソン氏] が、Infinispanを使用して得られた教訓をもとに、 link:http://www.redhat.com/summit/sessions/jboss.html#325[パフォーマンスと一貫性のためにInfinispanを最適化する方法] について講演します。"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-11-infinispan-at-jboss-worldred-hat.adoc:57
 #, fuzzy
-msgid ""
-"Further, for the first time, we intend to http://www.redhat.com/summit/"
-"sessions/labs.html[run a hands-on lab] on Infinispan, coordinated by http://"
-"www.redhat.com/summit/speakers/session.html#jtyrrell[Jim Tyrrell].  An "
-"awesome chance to learn about the practical aspects of working with "
-"Infinispan, with core Infinispan engineers on hand to answer questions, etc. "
-" This sort of opportunity doesn't come about every day!  :-)"
-msgstr ""
-"さらに、 link:http://www.redhat.com/summit/speakers/session.html#jtyrrell[Jim "
-"Tyrrell] 氏がコーディネートしたInfinispanの link:http://www.redhat.com/summit/sessions/"
-"labs.html[ハンズオンラボを開催し] ます。 "
-"Infinispanのコアエンジニアが質問に答えてくれるなど、Infinispanでの作業の実践的な側面を学ぶことができる素晴らしい機会です。)"
+msgid "Further, for the first time, we intend to http://www.redhat.com/summit/sessions/labs.html[run a hands-on lab] on Infinispan, coordinated by http://www.redhat.com/summit/speakers/session.html#jtyrrell[Jim Tyrrell].  An awesome chance to learn about the practical aspects of working with Infinispan, with core Infinispan engineers on hand to answer questions, etc.  This sort of opportunity doesn't come about every day!  :-)"
+msgstr "さらに、 link:http://www.redhat.com/summit/speakers/session.html#jtyrrell[Jim Tyrrell] 氏がコーディネートしたInfinispanの link:http://www.redhat.com/summit/sessions/labs.html[ハンズオンラボを開催し] ます。 Infinispanのコアエンジニアが質問に答えてくれるなど、Infinispanでの作業の実践的な側面を学ぶことができる素晴らしい機会です。)"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-11-infinispan-at-jboss-worldred-hat.adoc:60
 #, fuzzy
-msgid ""
-"http://1.bp.blogspot.com/-V9o1WhPk4sU/TaKqwCiL5rI/AAAAAAAABas/wTrQHAW7s30/"
-"s1600/JUDCon_Logo.png[image:http://1.bp.blogspot.com/-V9o1WhPk4sU/"
-"TaKqwCiL5rI/AAAAAAAABas/wTrQHAW7s30/s320/JUDCon_Logo.png[image,width="
-"320,height=124]]"
-msgstr ""
-"link:http://1.bp.blogspot.com/-V9o1WhPk4sU/TaKqwCiL5rI/AAAAAAAABas/"
-"wTrQHAW7s30/s1600/JUDCon_Logo.png[]"
+msgid "http://1.bp.blogspot.com/-V9o1WhPk4sU/TaKqwCiL5rI/AAAAAAAABas/wTrQHAW7s30/s1600/JUDCon_Logo.png[image:http://1.bp.blogspot.com/-V9o1WhPk4sU/TaKqwCiL5rI/AAAAAAAABas/wTrQHAW7s30/s320/JUDCon_Logo.png[image,width=320,height=124]]"
+msgstr "link:http://1.bp.blogspot.com/-V9o1WhPk4sU/TaKqwCiL5rI/AAAAAAAABas/wTrQHAW7s30/s1600/JUDCon_Logo.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-11-infinispan-at-jboss-worldred-hat.adoc:68
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "*[.underline]#JUDCon#*\n"
 "JUDCon attendees too will get their fill of your favourite data grid\n"
 "with a talk titled\n"
 "_http://www.jboss.org/events/JUDCon/agenda.html[Infinispan for Ninja\n"
 "Developers]_ and one on Infinispan's new\n"
-"http://infinispan.blogspot.com/2011/01/introducing-distributed-execution-and."
-"html[Map/Reduce\n"
+"http://infinispan.blogspot.com/2011/01/introducing-distributed-execution-and.html[Map/Reduce\n"
 "capabilities].  Fun, hands-on, developer-focused deep dives.\n"
-msgstr ""
-"*JUDCon* JUDConの参加者は、 _Infinispan for Ninja Developers_ とInfinispanの新しい link:"
-"http://infinispan.blogspot.com/2011/01/introducing-distributed-execution-and."
-"html[Map/Reduce機能] についての講演で、お気に入りのデータグリッドでいっぱいになります。 "
-"楽しく、ハンズオンで、開発者に焦点を当てたディープダイブを行います。"
+msgstr "*JUDCon* JUDConの参加者は、 _Infinispan for Ninja Developers_ とInfinispanの新しい link:http://infinispan.blogspot.com/2011/01/introducing-distributed-execution-and.html[Map/Reduce機能] についての講演で、お気に入りのデータグリッドでいっぱいになります。 楽しく、ハンズオンで、開発者に焦点を当てたディープダイブを行います。"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-11-infinispan-at-jboss-worldred-hat.adoc:73
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "*UPDATE:* I forgot to mention, Sanne Grinovero will also be\n"
 "http://www.jboss.org/events/JUDCon/day2track2.html#230PM[talking about\n"
 "advanced querying on Infinispan].  More cool stuff.\n"
-msgstr ""
-"*UPDATE:* 言い忘れていましたが、Sanne Grinoveroも link:http://www.jboss.org/events/"
-"JUDCon/day2track2.html#230PM[Infinispanで高度なクエリについて話します] 。 もっとクールなものがあります。"
+msgstr "*UPDATE:* 言い忘れていましたが、Sanne Grinoveroも link:http://www.jboss.org/events/JUDCon/day2track2.html#230PM[Infinispanで高度なクエリについて話します] 。 もっとクールなものがあります。"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-11-infinispan-at-jboss-worldred-hat.adoc:80
 #, fuzzy
-msgid ""
-"For a summary of what happened at JUDCon and Summit/JBW last year, check out "
-"http://infinispan.blogspot.com/2010/06/jbossworld-and-judcon-post-mortem."
-"html[this blog entry].  It's still not too late to get tickets, you may even "
-"qualify for early-bird discounts if you hurry!"
-msgstr ""
-"昨年のJUDConとSummit/JBWでの出来事のまとめは、 link:http://infinispan.blogspot.com/2010/06/"
-"jbossworld-and-judcon-post-mortem.html[こちらのブログ] 記事をチェックしてください。 "
-"チケットの入手はまだ遅くありません。"
+msgid "For a summary of what happened at JUDCon and Summit/JBW last year, check out http://infinispan.blogspot.com/2010/06/jbossworld-and-judcon-post-mortem.html[this blog entry].  It's still not too late to get tickets, you may even qualify for early-bird discounts if you hurry!"
+msgstr "昨年のJUDConとSummit/JBWでの出来事のまとめは、 link:http://infinispan.blogspot.com/2010/06/jbossworld-and-judcon-post-mortem.html[こちらのブログ] 記事をチェックしてください。 チケットの入手はまだ遅くありません。"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-11-infinispan-at-jboss-worldred-hat.adoc:83

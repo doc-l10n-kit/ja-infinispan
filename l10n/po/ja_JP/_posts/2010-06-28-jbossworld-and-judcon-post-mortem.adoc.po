@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-06-28-jbossworld-and-judcon-post-mortem.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-06-28-jbossworld-and-judcon-post-mortem.adoc:11
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: JBossWorld and JUDCon post-mortem\n"
@@ -32,12 +32,9 @@ msgid ""
 "date: '2010-06-28T09:18:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \" judcon\", \"jbossworld\" ]\n"
-"thumbnail: http://lh6.ggpht.com/_QCx-DhxeDfs/TCC8tpnH20I/AAAAAAAAANg/"
-"cM0dih4a2xg/s72-c/IMG_4501.JPG\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3400693840569860689\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/06/jbossworld-and-judcon-"
-"post-mortem.html\n"
+"thumbnail: http://lh6.ggpht.com/_QCx-DhxeDfs/TCC8tpnH20I/AAAAAAAAANg/cM0dih4a2xg/s72-c/IMG_4501.JPG\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3400693840569860689\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/06/jbossworld-and-judcon-post-mortem.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -46,183 +43,89 @@ msgstr ""
 "date: '2010-06-28T09:18:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \" judcon\", \"jbossworld\" ]\n"
-"thumbnail: http://lh6.ggpht.com/_QCx-DhxeDfs/TCC8tpnH20I/AAAAAAAAANg/"
-"cM0dih4a2xg/s72-c/IMG_4501.JPG\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3400693840569860689\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/06/jbossworld-and-judcon-"
-"post-mortem.html\n"
+"thumbnail: http://lh6.ggpht.com/_QCx-DhxeDfs/TCC8tpnH20I/AAAAAAAAANg/cM0dih4a2xg/s72-c/IMG_4501.JPG\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3400693840569860689\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/06/jbossworld-and-judcon-post-mortem.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-06-28-jbossworld-and-judcon-post-mortem.adoc:14
 #, fuzzy
-msgid ""
-"Wow, what a week.  We all know Infinispan is sexy and gets a lot of "
-"attention, but the last week has been unprecedented!"
-msgstr ""
-"うわー、なんという一週間だったんだろう、インフィニスパンがセクシーで注目されているのはみんな知っているけど、この一週間は前代未聞の出来事だったんだなー"
+msgid "Wow, what a week.  We all know Infinispan is sexy and gets a lot of attention, but the last week has been unprecedented!"
+msgstr "うわー、なんという一週間だったんだろう、インフィニスパンがセクシーで注目されているのはみんな知っているけど、この一週間は前代未聞の出来事だったんだなー"
 
 #. type: Plain text
 #: upstream/_posts/2010-06-28-jbossworld-and-judcon-post-mortem.adoc:17
 #, fuzzy
-msgid ""
-"http://lh6.ggpht.com/_QCx-DhxeDfs/TCC8tpnH20I/AAAAAAAAANg/cM0dih4a2xg/s1600/"
-"IMG_4501.JPG[image:http://lh6.ggpht.com/_QCx-DhxeDfs/TCC8tpnH20I/AAAAAAAAANg/"
-"cM0dih4a2xg/s320/IMG_4501.JPG[image]]"
-msgstr ""
-"link:http://lh6.ggpht.com/_QCx-DhxeDfs/TCC8tpnH20I/AAAAAAAAANg/cM0dih4a2xg/"
-"s1600/IMG_4501.JPG[]"
+msgid "http://lh6.ggpht.com/_QCx-DhxeDfs/TCC8tpnH20I/AAAAAAAAANg/cM0dih4a2xg/s1600/IMG_4501.JPG[image:http://lh6.ggpht.com/_QCx-DhxeDfs/TCC8tpnH20I/AAAAAAAAANg/cM0dih4a2xg/s320/IMG_4501.JPG[image]]"
+msgstr "link:http://lh6.ggpht.com/_QCx-DhxeDfs/TCC8tpnH20I/AAAAAAAAANg/cM0dih4a2xg/s1600/IMG_4501.JPG[]"
 
 #. type: Plain text
 #: upstream/_posts/2010-06-28-jbossworld-and-judcon-post-mortem.adoc:23
 #, fuzzy
-msgid ""
-"The first-ever JUDCon, the developer conference that took place the day "
-"before JBoss World and Red Hat Summit, was great and I look forward to "
-"future JUDCons around the world.  Pics from the first-ever JUDCon are now "
-"http://www.jboss.org/events/JUDCon.html[online], along with some video "
-"interviews with Jason Greene and Pete Muir."
-msgstr ""
-"JBoss World と Red Hat Summit の前日に開催された開発者向けカンファレンス、第 1 回目の JUDCon "
-"は素晴らしいものでした。 第 1 回目の JUDCon の写真が link:http://www.jboss.org/events/JUDCon."
-"html[オンラインで] 公開されており、Jason Greene と Pete Muir のビデオインタビューも掲載されています。"
+msgid "The first-ever JUDCon, the developer conference that took place the day before JBoss World and Red Hat Summit, was great and I look forward to future JUDCons around the world.  Pics from the first-ever JUDCon are now http://www.jboss.org/events/JUDCon.html[online], along with some video interviews with Jason Greene and Pete Muir."
+msgstr "JBoss World と Red Hat Summit の前日に開催された開発者向けカンファレンス、第 1 回目の JUDCon は素晴らしいものでした。 第 1 回目の JUDCon の写真が link:http://www.jboss.org/events/JUDCon.html[オンラインで] 公開されており、Jason Greene と Pete Muir のビデオインタビューも掲載されています。"
 
 #. type: Plain text
 #: upstream/_posts/2010-06-28-jbossworld-and-judcon-post-mortem.adoc:30
 #, fuzzy
-msgid ""
-"Some of the great presentations at JUDCon include Galder Zamarreño's talk on "
-"Infinispan's Hot Rod protocol (slides https://www.jboss.org/dms/judcon/"
-"presentations/JUDCon2010_HotRodProtocolinInfinispan.pdf[here])  and a talk I "
-"did with Mircea Markus on the cache benchmarking framework and benchmarking "
-"Infinispan (slides https://www.jboss.org/dms/judcon/presentations/"
-"JUDCon2010_BenchmarkingAndTestingInfinispan.pdf[here])."
-msgstr ""
-"JUDConでの素晴らしいプレゼンテーションには、Galder Zamarreño氏によるInfinispanのHot "
-"Rodプロトコルに関する講演（スライドは link:https://www.jboss.org/dms/judcon/presentations/"
-"JUDCon2010_HotRodProtocolinInfinispan.pdf[こちら] ）や、Mircea "
-"Markus氏と一緒に行ったキャッシュベンチマークフレームワークとInfinispanのベンチマークに関する講演（スライドは link:https://"
-"www.jboss.org/dms/judcon/presentations/"
-"JUDCon2010_BenchmarkingAndTestingInfinispan.pdf[こちら] ）などがあります。"
+msgid "Some of the great presentations at JUDCon include Galder Zamarreño's talk on Infinispan's Hot Rod protocol (slides https://www.jboss.org/dms/judcon/presentations/JUDCon2010_HotRodProtocolinInfinispan.pdf[here])  and a talk I did with Mircea Markus on the cache benchmarking framework and benchmarking Infinispan (slides https://www.jboss.org/dms/judcon/presentations/JUDCon2010_BenchmarkingAndTestingInfinispan.pdf[here])."
+msgstr "JUDConでの素晴らしいプレゼンテーションには、Galder Zamarreño氏によるInfinispanのHot Rodプロトコルに関する講演（スライドは link:https://www.jboss.org/dms/judcon/presentations/JUDCon2010_HotRodProtocolinInfinispan.pdf[こちら] ）や、Mircea Markus氏と一緒に行ったキャッシュベンチマークフレームワークとInfinispanのベンチマークに関する講演（スライドは link:https://www.jboss.org/dms/judcon/presentations/JUDCon2010_BenchmarkingAndTestingInfinispan.pdf[こちら] ）などがあります。"
 
 #. type: Plain text
 #: upstream/_posts/2010-06-28-jbossworld-and-judcon-post-mortem.adoc:35
 #, fuzzy
-msgid ""
-"JBoss World/Red Hat Summit was also very interesting.  There is clearly a "
-"lot of excitement around Infinispan, and we heard about interesting "
-"deployments and use cases, lots of ideas and thoughts for further "
-"improvement from customers, contributors and partners."
-msgstr ""
-"JBoss World/Red Hat Summitも非常に興味深いものでした。 "
-"Infinispanには明らかに多くの興奮があり、興味深いデプロイメントやユースケース、顧客、貢献者、パートナーからの更なる改善のためのアイデアや考えをたくさん聞くことができました。"
+msgid "JBoss World/Red Hat Summit was also very interesting.  There is clearly a lot of excitement around Infinispan, and we heard about interesting deployments and use cases, lots of ideas and thoughts for further improvement from customers, contributors and partners."
+msgstr "JBoss World/Red Hat Summitも非常に興味深いものでした。 Infinispanには明らかに多くの興奮があり、興味深いデプロイメントやユースケース、顧客、貢献者、パートナーからの更なる改善のためのアイデアや考えをたくさん聞くことができました。"
 
 #. type: Plain text
 #: upstream/_posts/2010-06-28-jbossworld-and-judcon-post-mortem.adoc:45
 #, fuzzy
-msgid ""
-"From JBoss World, there were three talks on Infinispan, including _Storing "
-"Data on Cloud Infrastructure in a Scalable, Durable Manner_ which I "
-"presented along with Mircea Markus (http://www.redhat.com/promo/summit/2010/"
-"presentations/cloud/wed/msurtani-2-storing-data/msurtani-2-storing."
-"pdf[slides]), _Why RESTful Design for the Cloud is Best_ by Galder Zamarreño "
-"(http://www.redhat.com/promo/summit/2010/presentations/cloud/fri/galder-945-"
-"why-RESTful/RestfulDesignJBWRH2010.pdf[slides])  and _Using Infinispan for "
-"High Availability, Load Balancing, & Extreme Performance_ which I presented "
-"along with Galder Zamarreño (http://www.redhat.com/promo/summit/2010/"
-"presentations/jbossworld/developer-insights/thurs/msurtani-1130-infinispan/"
-"Using-Infinispan-for-High-Availability-Load-Balancing-Extreme-Performance."
-"pdf[slides])."
-msgstr ""
-"JBoss Worldからは、Infinispanに関する3つの講演があり、私は _Mircea_ "
-"Markusと一緒に発表しました（スライド）。ガルダー・ザマレーニョ氏による「 _クラウドのためのRESTful Designがベストな理由_ 」（ "
-"link:http://www.redhat.com/promo/summit/2010/presentations/cloud/fri/galder-"
-"945-why-RESTful/RestfulDesignJBWRH2010.pdf[スライド）、] ガルダー・ザマレーニョ氏と一緒に発表した「 "
-"_高可用性、ロードバランシング、エクストリームパフォーマンスのための_ Infinispanの使用」（スライド）です。"
+msgid "From JBoss World, there were three talks on Infinispan, including _Storing Data on Cloud Infrastructure in a Scalable, Durable Manner_ which I presented along with Mircea Markus (http://www.redhat.com/promo/summit/2010/presentations/cloud/wed/msurtani-2-storing-data/msurtani-2-storing.pdf[slides]), _Why RESTful Design for the Cloud is Best_ by Galder Zamarreño (http://www.redhat.com/promo/summit/2010/presentations/cloud/fri/galder-945-why-RESTful/RestfulDesignJBWRH2010.pdf[slides])  and _Using Infinispan for High Availability, Load Balancing, & Extreme Performance_ which I presented along with Galder Zamarreño (http://www.redhat.com/promo/summit/2010/presentations/jbossworld/developer-insights/thurs/msurtani-1130-infinispan/Using-Infinispan-for-High-Availability-Load-Balancing-Extreme-Performance.pdf[slides])."
+msgstr "JBoss Worldからは、Infinispanに関する3つの講演があり、私は _Mircea_ Markusと一緒に発表しました（スライド）。ガルダー・ザマレーニョ氏による「 _クラウドのためのRESTful Designがベストな理由_ 」（ link:http://www.redhat.com/promo/summit/2010/presentations/cloud/fri/galder-945-why-RESTful/RestfulDesignJBWRH2010.pdf[スライド）、] ガルダー・ザマレーニョ氏と一緒に発表した「 _高可用性、ロードバランシング、エクストリームパフォーマンスのための_ Infinispanの使用」（スライド）です。"
 
 #. type: Plain text
 #: upstream/_posts/2010-06-28-jbossworld-and-judcon-post-mortem.adoc:48
 #, fuzzy
-msgid ""
-"In addition to the slides, the first talk was even recorded so if you missed "
-"it, you can watch it below:"
+msgid "In addition to the slides, the first talk was even recorded so if you missed it, you can watch it below:"
 msgstr "スライドに加えて、最初のトークまで収録されていたので、見逃した方は下でご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2010-06-28-jbossworld-and-judcon-post-mortem.adoc:50
 #, fuzzy
-msgid ""
-"image:http://counters.gigya.com/wildfire/IMP/CXNID=2000002.0NXC/"
-"bT*xJmx*PTEyNzc3NDEyNDk*OTUmcHQ9MTI3Nzc*MTQyMjA2NSZwPTE5ODY4MSZkPTBfNXN6N21wdmImZz*yJm89ZTgwOTEyMThk/"
-"YTk3NGY4MjhjM2U2ZTdlYjk4NDNlMWImb2Y9MA==.gif[image,width=0,height=0]"
-msgstr ""
-"image:http://counters.gigya.com/wildfire/IMP/CXNID=2000002.0NXC/"
-"bT*xJmx*PTEyNzc3NDEyNDk*OTUmcHQ9MTI3Nzc*MTQyMjA2NSZwPTE5ODY4MSZkPTBfNXN6N21wdmImZz*yJm89ZTgwOTEyMThk/"
-"YTk3NGY4MjhjM2U2ZTdlYjk4NDNlMWImb2Y9MA==.gif[alt=\"image\", width=\"0\", "
-"height=\"0\"]"
+msgid "image:http://counters.gigya.com/wildfire/IMP/CXNID=2000002.0NXC/bT*xJmx*PTEyNzc3NDEyNDk*OTUmcHQ9MTI3Nzc*MTQyMjA2NSZwPTE5ODY4MSZkPTBfNXN6N21wdmImZz*yJm89ZTgwOTEyMThk/YTk3NGY4MjhjM2U2ZTdlYjk4NDNlMWImb2Y9MA==.gif[image,width=0,height=0]"
+msgstr "image:http://counters.gigya.com/wildfire/IMP/CXNID=2000002.0NXC/bT*xJmx*PTEyNzc3NDEyNDk*OTUmcHQ9MTI3Nzc*MTQyMjA2NSZwPTE5ODY4MSZkPTBfNXN6N21wdmImZz*yJm89ZTgwOTEyMThk/YTk3NGY4MjhjM2U2ZTdlYjk4NDNlMWImb2Y9MA==.gif[alt=\"image\", width=\"0\", height=\"0\"]"
 
 #. type: Plain text
 #: upstream/_posts/2010-06-28-jbossworld-and-judcon-post-mortem.adoc:55
 #: upstream/_posts/2010-06-28-jbossworld-and-judcon-post-mortem.adoc:68
 #, fuzzy
-msgid ""
-"http://corp.kaltura.com[video platform] http://corp.kaltura.com/technology/"
-"video_management[video management] http://corp.kaltura.com/solutions/"
-"overview[video solutions] http://corp.kaltura.com/technology/"
-"video_player[video player]"
-msgstr ""
-"link:http://corp.kaltura.com[ビデオプラットフォーム] ビデオ link:http://corp.kaltura.com/"
-"technology/video_management[管理] link:http://corp.kaltura.com/solutions/"
-"overview[ビデオソリューション] link:http://corp.kaltura.com/technology/"
-"video_player[ビデオプレーヤー]"
+msgid "http://corp.kaltura.com[video platform] http://corp.kaltura.com/technology/video_management[video management] http://corp.kaltura.com/solutions/overview[video solutions] http://corp.kaltura.com/technology/video_player[video player]"
+msgstr "link:http://corp.kaltura.com[ビデオプラットフォーム] ビデオ link:http://corp.kaltura.com/technology/video_management[管理] link:http://corp.kaltura.com/solutions/overview[ビデオソリューション] link:http://corp.kaltura.com/technology/video_player[ビデオプレーヤー]"
 
 #. type: Plain text
 #: upstream/_posts/2010-06-28-jbossworld-and-judcon-post-mortem.adoc:61
 #, fuzzy
-msgid ""
-"Further, Infinispan was showcased on Red Hat CTO Brian Stevens' keynote "
-"speech (about 28:15 into the video) where Brian talks about data grids and "
-"their importance, and I demonstrate Infinispan."
-msgstr ""
-"さらに、Red HatのCTOであるBrian Stevens氏の基調講演（動画の28:"
-"15頃）では、Brian氏がデータグリッドとその重要性について語り、私がInfinispanのデモを行っています。"
+msgid "Further, Infinispan was showcased on Red Hat CTO Brian Stevens' keynote speech (about 28:15 into the video) where Brian talks about data grids and their importance, and I demonstrate Infinispan."
+msgstr "さらに、Red HatのCTOであるBrian Stevens氏の基調講演（動画の28:15頃）では、Brian氏がデータグリッドとその重要性について語り、私がInfinispanのデモを行っています。"
 
 #. type: Plain text
 #: upstream/_posts/2010-06-28-jbossworld-and-judcon-post-mortem.adoc:63
 #, fuzzy
-msgid ""
-"image:http://counters.gigya.com/wildfire/IMP/CXNID=2000002.0NXC/"
-"bT*xJmx*PTEyNzc3NDE3MTczMjImcHQ9MTI3Nzc*MTcyMDEyNCZwPTE5ODY4MSZkPTBfbmZ2MmszNmomZz*yJm89ZTgwOTEyMThk/"
-"YTk3NGY4MjhjM2U2ZTdlYjk4NDNlMWImb2Y9MA==.gif[image,width=0,height=0]"
-msgstr ""
-"image:http://counters.gigya.com/wildfire/IMP/CXNID=2000002.0NXC/"
-"bT*xJmx*PTEyNzc3NDE3MTczMjImcHQ9MTI3Nzc*MTcyMDEyNCZwPTE5ODY4MSZkPTBfbmZ2MmszNmomZz*yJm89ZTgwOTEyMThk/"
-"YTk3NGY4MjhjM2U2ZTdlYjk4NDNlMWImb2Y9MA==.gif[alt=\"image\", width=\"0\", "
-"height=\"0\"]"
+msgid "image:http://counters.gigya.com/wildfire/IMP/CXNID=2000002.0NXC/bT*xJmx*PTEyNzc3NDE3MTczMjImcHQ9MTI3Nzc*MTcyMDEyNCZwPTE5ODY4MSZkPTBfbmZ2MmszNmomZz*yJm89ZTgwOTEyMThk/YTk3NGY4MjhjM2U2ZTdlYjk4NDNlMWImb2Y9MA==.gif[image,width=0,height=0]"
+msgstr "image:http://counters.gigya.com/wildfire/IMP/CXNID=2000002.0NXC/bT*xJmx*PTEyNzc3NDE3MTczMjImcHQ9MTI3Nzc*MTcyMDEyNCZwPTE5ODY4MSZkPTBfbmZ2MmszNmomZz*yJm89ZTgwOTEyMThk/YTk3NGY4MjhjM2U2ZTdlYjk4NDNlMWImb2Y9MA==.gif[alt=\"image\", width=\"0\", height=\"0\"]"
 
 #. type: Plain text
 #: upstream/_posts/2010-06-28-jbossworld-and-judcon-post-mortem.adoc:75
 #, fuzzy
-msgid ""
-"We even had an open roadmap and design session for Infinispan 5.0, which "
-"included not just core Infinispan engineers, but contributors, end-users and "
-"anyone who had any sort of interest.  I'll post again later with details of "
-"5.0 and what our plans for it will be."
-msgstr ""
-"私たちは、Infinispan 5.0のオープンなロードマップとデザインセッションも行いました。 "
-"Infinispanのコアエンジニアだけでなく、コントリビューター、エンドユーザー、その他興味のある人たちが参加しました。 5."
-"0の詳細とその計画については、また後日投稿します。"
+msgid "We even had an open roadmap and design session for Infinispan 5.0, which included not just core Infinispan engineers, but contributors, end-users and anyone who had any sort of interest.  I'll post again later with details of 5.0 and what our plans for it will be."
+msgstr "私たちは、Infinispan 5.0のオープンなロードマップとデザインセッションも行いました。 Infinispanのコアエンジニアだけでなく、コントリビューター、エンドユーザー、その他興味のある人たちが参加しました。 5.0の詳細とその計画については、また後日投稿します。"
 
 #. type: Plain text
 #: upstream/_posts/2010-06-28-jbossworld-and-judcon-post-mortem.adoc:79
 #, fuzzy
-msgid ""
-"For those of you who couldn't make it to JUDCon and JBoss World, hope the "
-"slides and videos on this post will help give you an idea of what went on."
-msgstr ""
-"JUDCon と JBoss World "
-"に参加できなかった人のために、この記事のスライドとビデオが何が起こったかのアイデアを与えるのに役立つことを願っています。"
+msgid "For those of you who couldn't make it to JUDCon and JBoss World, hope the slides and videos on this post will help give you an idea of what went on."
+msgstr "JUDCon と JBoss World に参加できなかった人のために、この記事のスライドとビデオが何が起こったかのアイデアを与えるのに役立つことを願っています。"
 
 #. type: Plain text
 #: upstream/_posts/2010-06-28-jbossworld-and-judcon-post-mortem.adoc:81

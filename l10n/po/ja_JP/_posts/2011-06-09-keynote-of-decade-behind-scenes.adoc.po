@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:13
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 'Keynote of the decade: behind the scenes, an Infinispan perspective'\n"
@@ -34,12 +34,9 @@ msgid ""
 "tags: [ \"jbossworld\",\n"
 "\"demo\",\n"
 "]\n"
-"thumbnail: http://1.bp.blogspot.com/-BU_Th8gwcGQ/Te_F39JVgLI/AAAAAAAABfg/"
-"lFNL0VBpmIw/s72-c/Screen+shot+2011-06-08+at+19.55.50.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7468026689122770664\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/06/keynote-of-decade-"
-"behind-scenes.html\n"
+"thumbnail: http://1.bp.blogspot.com/-BU_Th8gwcGQ/Te_F39JVgLI/AAAAAAAABfg/lFNL0VBpmIw/s72-c/Screen+shot+2011-06-08+at+19.55.50.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7468026689122770664\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/06/keynote-of-decade-behind-scenes.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -50,109 +47,52 @@ msgstr ""
 "tags: [ \"jbossworld\",\n"
 "\"demo\",\n"
 "]\n"
-"thumbnail: http://1.bp.blogspot.com/-BU_Th8gwcGQ/Te_F39JVgLI/AAAAAAAABfg/"
-"lFNL0VBpmIw/s72-c/Screen+shot+2011-06-08+at+19.55.50.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7468026689122770664\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/06/keynote-of-decade-"
-"behind-scenes.html\n"
+"thumbnail: http://1.bp.blogspot.com/-BU_Th8gwcGQ/Te_F39JVgLI/AAAAAAAABfg/lFNL0VBpmIw/s72-c/Screen+shot+2011-06-08+at+19.55.50.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7468026689122770664\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/06/keynote-of-decade-behind-scenes.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:20
 #, fuzzy
-msgid ""
-"http://www.redhat.com/summit/[JBoss World 2011]'s much talked about keynote "
-"ended with a big bang - a live demo that many thought we were insane to even "
-"try and pull off - and has sparked off a lot of interest, many claiming "
-"JBoss _has got its mojo back_.  One of the things people keep asking is, "
-"what actually went on?  How did we build such a demo?  How can we do the "
-"same?"
-msgstr ""
-"link:http://www.redhat.com/summit/[JBoss World 2011 の] 話題のキーノートは大成功で幕を閉じました -"
-" ライブデモは、多くの人が私たちがそれを成功させようとしたのは非常識だと思っていましたが、多くの人の関心を呼び起こし、多くの人が JBoss の "
-"_魅力を取り戻した_ と主張しています。 "
-"人々が尋ね続けていることの一つは、実際に何が起こったのか、どのようにしてこのようなデモを構築したのか、どのようにして同じことができるのか、と言うことです。"
+msgid "http://www.redhat.com/summit/[JBoss World 2011]'s much talked about keynote ended with a big bang - a live demo that many thought we were insane to even try and pull off - and has sparked off a lot of interest, many claiming JBoss _has got its mojo back_.  One of the things people keep asking is, what actually went on?  How did we build such a demo?  How can we do the same?"
+msgstr "link:http://www.redhat.com/summit/[JBoss World 2011 の] 話題のキーノートは大成功で幕を閉じました - ライブデモは、多くの人が私たちがそれを成功させようとしたのは非常識だと思っていましたが、多くの人の関心を呼び起こし、多くの人が JBoss の _魅力を取り戻した_ と主張しています。 人々が尋ね続けていることの一つは、実際に何が起こったのか、どのようにしてこのようなデモを構築したのか、どのようにして同じことができるのか、と言うことです。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:28
 #, fuzzy
-msgid ""
-"http://1.bp.blogspot.com/-BU_Th8gwcGQ/Te_F39JVgLI/AAAAAAAABfg/lFNL0VBpmIw/"
-"s1600/Screen+shot+2011-06-08+at+19.55.50.png[image:http://1.bp.blogspot.com/-"
-"BU_Th8gwcGQ/Te_F39JVgLI/AAAAAAAABfg/lFNL0VBpmIw/s320/Screen+shot+2011-06-"
-"08+at+19.55.50.png[image,width=320,height=240]]Firstly, if you did not "
-"attend the keynote or did not watch it online, I recommend that you *stop "
-"reading this now, and go and watch the keynote.* http://www.jboss.org/"
-"jbw2011keynote[A recording is available online] (the demo starts at about "
-"minute 35)."
-msgstr ""
-"link:http://1.bp.blogspot.com/-BU_Th8gwcGQ/Te_F39JVgLI/AAAAAAAABfg/"
-"lFNL0VBpmIw/s1600/Screen+shot+2011-06-08+at+19.55.50.png[] "
-"まず、キーノートに参加していない人、オンラインで見ていない人は、 *今すぐこれを読むのはやめて、キーノートを見に行く* ことをお勧めします。 link:"
-"http://www.jboss.org/jbw2011keynote[録画がオンラインで] 公開されています（デモは35分くらいからです）。"
+msgid "http://1.bp.blogspot.com/-BU_Th8gwcGQ/Te_F39JVgLI/AAAAAAAABfg/lFNL0VBpmIw/s1600/Screen+shot+2011-06-08+at+19.55.50.png[image:http://1.bp.blogspot.com/-BU_Th8gwcGQ/Te_F39JVgLI/AAAAAAAABfg/lFNL0VBpmIw/s320/Screen+shot+2011-06-08+at+19.55.50.png[image,width=320,height=240]]Firstly, if you did not attend the keynote or did not watch it online, I recommend that you *stop reading this now, and go and watch the keynote.* http://www.jboss.org/jbw2011keynote[A recording is available online] (the demo starts at about minute 35)."
+msgstr "link:http://1.bp.blogspot.com/-BU_Th8gwcGQ/Te_F39JVgLI/AAAAAAAABfg/lFNL0VBpmIw/s1600/Screen+shot+2011-06-08+at+19.55.50.png[] まず、キーノートに参加していない人、オンラインで見ていない人は、 *今すぐこれを読むのはやめて、キーノートを見に行く* ことをお勧めします。 link:http://www.jboss.org/jbw2011keynote[録画がオンラインで] 公開されています（デモは35分くらいからです）。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:40
 #, fuzzy
-msgid ""
-"Ok, now that you've been primed, lets talk about the role Infinispan played "
-"in that demo.  The demo involved reading mass volumes of real-time data off "
-"a Twitter stream, and storing these tweets in an Infinispan grid. This "
-"_primary grid_ (known as Grid-A), and ran off 3 large rack-mount servers. "
-"The Infinispan nodes were standalone, bootstrapped off a simple Main class, "
-"and formed a cluster, running in asynchronous http://community.jboss.org/"
-"docs/DOC-14853#distribution[distributed mode] with 2 data owners."
-msgstr ""
-"デモでは、Twitterのストリームから大量のリアルタイムデータを読み込み、そのツイートをInfinispanのグリッドに保存していました。この "
-"_プライマリグリッド_ （Grid-"
-"Aとして知られている）は、3台の大型ラックマウントサーバーで動作していました。Infinispanノードはスタンドアロンで、シンプルなMainクラスからブートストラップされ、クラスタを形成し、2人のデータ所有者と非同期 "
-"link:http://community.jboss.org/docs/DOC-14853#distribution[分散モード] "
-"で動作していました。"
+msgid "Ok, now that you've been primed, lets talk about the role Infinispan played in that demo.  The demo involved reading mass volumes of real-time data off a Twitter stream, and storing these tweets in an Infinispan grid. This _primary grid_ (known as Grid-A), and ran off 3 large rack-mount servers. The Infinispan nodes were standalone, bootstrapped off a simple Main class, and formed a cluster, running in asynchronous http://community.jboss.org/docs/DOC-14853#distribution[distributed mode] with 2 data owners."
+msgstr "デモでは、Twitterのストリームから大量のリアルタイムデータを読み込み、そのツイートをInfinispanのグリッドに保存していました。この _プライマリグリッド_ （Grid-Aとして知られている）は、3台の大型ラックマウントサーバーで動作していました。Infinispanノードはスタンドアロンで、シンプルなMainクラスからブートストラップされ、クラスタを形成し、2人のデータ所有者と非同期 link:http://community.jboss.org/docs/DOC-14853#distribution[分散モード] で動作していました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:49
 #, fuzzy
-msgid ""
-"Andrew Sacamano did an excellent job of building an HTML 5-based webapp to "
-"visualise what goes on in such a grid, making use of http://community.jboss."
-"org/docs/DOC-14871[cache listeners] pushing events to browsers and browsers "
-"rendering the \"spinning spheres\" using HTML 5's canvas tag.  So now we "
-"could visualise data and data movement within a grid of Infinispan nodes."
-msgstr ""
-"Andrew Sacamano氏は、このようなグリッドの中で何が起こっているかを可視化するために、HTML "
-"5ベースのウェブアプリを構築するという素晴らしい仕事をしてくれました。 link:http://community.jboss.org/docs/DOC-"
-"14871[キャッシュリスナーを] 利用してイベントをブラウザにプッシュしたり、HTML "
-"5のcanvasタグを使って「回転する球体」をブラウザでレンダリングしたりしています。 "
-"これで、Infinispanノードのグリッド内でのデータやデータの動きを可視化することができるようになりました。"
+msgid "Andrew Sacamano did an excellent job of building an HTML 5-based webapp to visualise what goes on in such a grid, making use of http://community.jboss.org/docs/DOC-14871[cache listeners] pushing events to browsers and browsers rendering the \"spinning spheres\" using HTML 5's canvas tag.  So now we could visualise data and data movement within a grid of Infinispan nodes."
+msgstr "Andrew Sacamano氏は、このようなグリッドの中で何が起こっているかを可視化するために、HTML 5ベースのウェブアプリを構築するという素晴らしい仕事をしてくれました。 link:http://community.jboss.org/docs/DOC-14871[キャッシュリスナーを] 利用してイベントをブラウザにプッシュしたり、HTML 5のcanvasタグを使って「回転する球体」をブラウザでレンダリングしたりしています。 これで、Infinispanノードのグリッド内でのデータやデータの動きを可視化することができるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:57
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
-"http://1.bp.blogspot.com/-72Xfg5uM8Bk/Te_GgGQ4pQI/AAAAAAAABfk/ZphDf8ES4R8/"
-"s1600/Screen+shot+2011-06-08+at+19.58.06.png[image:http://1.bp.blogspot.com/-"
-"72Xfg5uM8Bk/Te_GgGQ4pQI/AAAAAAAABfk/ZphDf8ES4R8/s320/Screen+shot+2011-06-"
-"08+at+19.58.06.png[image,width=320,height=214]]As\n"
+"http://1.bp.blogspot.com/-72Xfg5uM8Bk/Te_GgGQ4pQI/AAAAAAAABfk/ZphDf8ES4R8/s1600/Screen+shot+2011-06-08+at+19.58.06.png[image:http://1.bp.blogspot.com/-72Xfg5uM8Bk/Te_GgGQ4pQI/AAAAAAAABfk/ZphDf8ES4R8/s320/Screen+shot+2011-06-08+at+19.58.06.png[image,width=320,height=214]]As\n"
 "Twitter data started to populate the grid, we fired up a second grid\n"
 "(Grid-B) consisting of 8 nodes. Again, these nodes were configured using\n"
 "asynchronous distribution and 2 data owners, but this time these nodes\n"
 "were running on very small and cheap plugtop computers.  These plugtops\n"
 "-\n"
-msgstr ""
-"link:http://1.bp.blogspot.com/-72Xfg5uM8Bk/Te_GgGQ4pQI/AAAAAAAABfk/"
-"ZphDf8ES4R8/s1600/Screen+shot+2011-06-08+at+19.58.06.png[] "
-"Twitterのデータがグリッドに入り始めたので、8つのノードからなる2つ目のグリッド（Grid-"
-"B）を立ち上げました。ここでも、これらのノードは非同期分散と2人のデータ所有者を使って構成されていますが、今回は非常に小さくて安価なプラグトップコンピュータで動作しています。 "
-"これらのプラグトップは、以下のようなものです。"
+msgstr "link:http://1.bp.blogspot.com/-72Xfg5uM8Bk/Te_GgGQ4pQI/AAAAAAAABfk/ZphDf8ES4R8/s1600/Screen+shot+2011-06-08+at+19.58.06.png[] Twitterのデータがグリッドに入り始めたので、8つのノードからなる2つ目のグリッド（Grid-B）を立ち上げました。ここでも、これらのノードは非同期分散と2人のデータ所有者を使って構成されていますが、今回は非常に小さくて安価なプラグトップコンピュータで動作しています。 これらのプラグトップは、以下のようなものです。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:59
 #, fuzzy
-msgid ""
-"http://www.globalscaletechnologies.com/t-guruplugdetails.aspx[GuruPlugs]"
-msgstr ""
-"link:http://www.globalscaletechnologies.com/t-guruplugdetails.aspx[達人プラグ]"
+msgid "http://www.globalscaletechnologies.com/t-guruplugdetails.aspx[GuruPlugs]"
+msgstr "link:http://www.globalscaletechnologies.com/t-guruplugdetails.aspx[達人プラグ]"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:60
@@ -163,126 +103,50 @@ msgstr "は、512MBのRAM、1GHzのARMプロセッサを搭載した制約のあ
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:63
 #, fuzzy
-msgid ""
-"Yes, your iPhone has more grunt :-) And yes, these sub-iPhone devices were "
-"running a real data grid!"
-msgstr ""
-"はい、あなたのiPhoneはより多くのgrunt :-"
-")を持っています。そして、そう、これらのサブiPhoneデバイスは、実際のデータグリッドを実行していました!"
+msgid "Yes, your iPhone has more grunt :-) And yes, these sub-iPhone devices were running a real data grid!"
+msgstr "はい、あなたのiPhoneはより多くのgrunt :-)を持っています。そして、そう、これらのサブiPhoneデバイスは、実際のデータグリッドを実行していました!"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:71
 #, fuzzy
-msgid ""
-"The purpose of this was to demonstrate the extremely low footprint and "
-"overhead Infinispan imposes on your hardware (we even had to run http://"
-"today.java.net/pub/a/today/2009/05/21/zero-and-shark-openjdk-port.html[the "
-"zero assembly port of OpenJDK], an interpreted-mode JVM, since the processor "
-"only had a 16-bit bus!). We also had a server running JBossAS running "
-"Andrew's cool visualisation webapp rendering the contents of Grid-B, so "
-"people could \"see\" the data in both grids."
-msgstr ""
-"この目的は、Infinispanがハードウェアに課すフットプリントとオーバーヘッドが非常に少ないことを実証することでした（プロセッサには16ビットのバスしかなかったので、 "
-"link:http://today.java.net/pub/a/today/2009/05/21/zero-and-shark-openjdk-"
-"port.html[OpenJDKのゼロアセンブリポート] "
-"、インタープリタドモードのJVMを実行する必要がありました！）。また、JBossASを稼働させているサーバでは、Andrew氏のクールなビジュアライゼーションウェブアプリがGrid-"
-"Bのコンテンツをレンダリングしていたので、人々は両方のグリッドのデータを「見る」ことができました。"
+msgid "The purpose of this was to demonstrate the extremely low footprint and overhead Infinispan imposes on your hardware (we even had to run http://today.java.net/pub/a/today/2009/05/21/zero-and-shark-openjdk-port.html[the zero assembly port of OpenJDK], an interpreted-mode JVM, since the processor only had a 16-bit bus!). We also had a server running JBossAS running Andrew's cool visualisation webapp rendering the contents of Grid-B, so people could \"see\" the data in both grids."
+msgstr "この目的は、Infinispanがハードウェアに課すフットプリントとオーバーヘッドが非常に少ないことを実証することでした（プロセッサには16ビットのバスしかなかったので、 link:http://today.java.net/pub/a/today/2009/05/21/zero-and-shark-openjdk-port.html[OpenJDKのゼロアセンブリポート] 、インタープリタドモードのJVMを実行する必要がありました！）。また、JBossASを稼働させているサーバでは、Andrew氏のクールなビジュアライゼーションウェブアプリがGrid-Bのコンテンツをレンダリングしていたので、人々は両方のグリッドのデータを「見る」ことができました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:83
 #, fuzzy
-msgid ""
-"We then fired up http://www.jboss.org/drools[Drools] to have it mine the "
-"contents of Grid-A and send it to Grid-B applying some rules to select the "
-"interesting tweets, namely the ones having the hashtag *#JBW*. With this in "
-"place, we then invited the audience to participate - by tweeting with "
-"hashtag #JBW, as well as the hashtag of your favourite JBoss project - e.g., "
-"#infinispan :-)  People were allowed to vote for more than one project, and "
-"the most prolific tweeter was to win a prize.   This started a frenzy of "
-"tweeting, and was reflected in the two grid visualisations."
-msgstr ""
-"次に、 link:http://www.jboss.org/drools[Drools] を起動し、Grid-AのコンテンツをマイニングしてGrid-"
-"Bに送信し、いくつかのルールを適用して、興味深いツイート、つまりハッシュタグ *#JBW* "
-"を持つツイートを選択しました。そして、ハッシュタグ#JBWとお気に入りのJBossプロジェクトのハッシュタグ（例：#infinispan :-"
-"）を付けてツイートすることで、視聴者に参加を呼びかけました。 複数のプロジェクトに投票することができ、最も多くのツイートをした人には賞品が与えられます。 "
-"これによりツイートの熱狂が始まり、2つのグリッドの可視化に反映されました。"
+msgid "We then fired up http://www.jboss.org/drools[Drools] to have it mine the contents of Grid-A and send it to Grid-B applying some rules to select the interesting tweets, namely the ones having the hashtag *#JBW*. With this in place, we then invited the audience to participate - by tweeting with hashtag #JBW, as well as the hashtag of your favourite JBoss project - e.g., #infinispan :-)  People were allowed to vote for more than one project, and the most prolific tweeter was to win a prize.   This started a frenzy of tweeting, and was reflected in the two grid visualisations."
+msgstr "次に、 link:http://www.jboss.org/drools[Drools] を起動し、Grid-AのコンテンツをマイニングしてGrid-Bに送信し、いくつかのルールを適用して、興味深いツイート、つまりハッシュタグ *#JBW* を持つツイートを選択しました。そして、ハッシュタグ#JBWとお気に入りのJBossプロジェクトのハッシュタグ（例：#infinispan :-）を付けてツイートすることで、視聴者に参加を呼びかけました。 複数のプロジェクトに投票することができ、最も多くのツイートをした人には賞品が与えられます。 これによりツイートの熱狂が始まり、2つのグリッドの可視化に反映されました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:90
 #, fuzzy
-msgid ""
-"Not only Infinispan is very quick here: needless to say, Drools was sending "
-"the tweets from Grid-A to Grid-B using http://www.jboss.org/"
-"hornetq[HornetQ], the fastest JMS implementation on the planet."
-msgstr ""
-"言うまでもなく、Droolsは地球上で最速のJMS実装である link:http://www.jboss.org/hornetq[HornetQ] "
-"を使用して、グリッドAからグリッドBにツイートを送信していました。"
+msgid "Not only Infinispan is very quick here: needless to say, Drools was sending the tweets from Grid-A to Grid-B using http://www.jboss.org/hornetq[HornetQ], the fastest JMS implementation on the planet."
+msgstr "言うまでもなく、Droolsは地球上で最速のJMS実装である link:http://www.jboss.org/hornetq[HornetQ] を使用して、グリッドAからグリッドBにツイートを送信していました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:100
 #, fuzzy
-msgid ""
-"Jay Balunas of http://www.jboss.org/richfaces[Richfaces] built a "
-"TwitterStream app with live updates of these tweets for various devices, "
-"including iPhones, iPads, Android phones and tablets, and of course, desktop "
-"web browsers, grabbing data off Grid-B.  Christian Sadilek and Mike Brock "
-"from the http://www.jboss.org/errai[Errai] team also built a tag-cloud "
-"application visualising popular tags as a tag cloud, again off Grid-B, "
-"making use of Errai to push events to the browser."
-msgstr ""
-"link:http://www.jboss.org/richfaces[Richfaces] のJay Balunas氏は、Grid-"
-"Bからデータを取得して、iPhone、iPad、Android携帯電話、タブレット、そしてもちろんデスクトップのウェブブラウザを含む様々なデバイス向けに、これらのツイートをライブで更新するTwitterStreamアプリを構築した。また、Errai "
-"link:http://www.jboss.org/errai[チーム] のChristian Sadilek氏とMike "
-"Brock氏は、人気のあるタグをタグクラウドとして可視化するタグクラウドアプリケーションを構築した。"
+msgid "Jay Balunas of http://www.jboss.org/richfaces[Richfaces] built a TwitterStream app with live updates of these tweets for various devices, including iPhones, iPads, Android phones and tablets, and of course, desktop web browsers, grabbing data off Grid-B.  Christian Sadilek and Mike Brock from the http://www.jboss.org/errai[Errai] team also built a tag-cloud application visualising popular tags as a tag cloud, again off Grid-B, making use of Errai to push events to the browser."
+msgstr "link:http://www.jboss.org/richfaces[Richfaces] のJay Balunas氏は、Grid-Bからデータを取得して、iPhone、iPad、Android携帯電話、タブレット、そしてもちろんデスクトップのウェブブラウザを含む様々なデバイス向けに、これらのツイートをライブで更新するTwitterStreamアプリを構築した。また、Errai link:http://www.jboss.org/errai[チーム] のChristian Sadilek氏とMike Brock氏は、人気のあるタグをタグクラウドとして可視化するタグクラウドアプリケーションを構築した。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:107
 #, fuzzy
-msgid ""
-"After simulating Mark Proctor to try cheating the system with a script, we "
-"could recover the correct votes: clear Grid-B, update the Drools rules to "
-"have it discard the cheat tweets, and have a cleaned up stream of tweets "
-"flow to Grid-B."
-msgstr ""
-"Mark Proctorをシミュレートしてスクリプトでシステムを騙してみたところ、Grid-"
-"Bをクリアし、Droolsのルールを更新して不正なツイートを破棄させ、クリーンアップされたツイートがGrid-"
-"Bに流れるようにすることで、正しい票を取り戻すことができました。"
+msgid "After simulating Mark Proctor to try cheating the system with a script, we could recover the correct votes: clear Grid-B, update the Drools rules to have it discard the cheat tweets, and have a cleaned up stream of tweets flow to Grid-B."
+msgstr "Mark Proctorをシミュレートしてスクリプトでシステムを騙してみたところ、Grid-Bをクリアし、Droolsのルールを更新して不正なツイートを破棄させ、クリーンアップされたツイートがGrid-Bに流れるようにすることで、正しい票を取り戻すことができました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:119
 #, fuzzy
-msgid ""
-"All applications, including Drools and the visualizations, where using a JPA "
-"interface to store or load the tweets: it was powered by an early preview of "
-"http://community.jboss.org/docs/DOC-16273[HibernateOGM], which aims to "
-"abstract any NoSQL store as a JPA persistence store while still providing "
-"some level of consistency. As HibernateOGM is not feature complete, it was "
-"using http://search.hibernate.org/[Hibernate Search] to provide query "
-"capabilities via a Lucene index, and using the Infinispan integration of "
-"Hibernate Search to distribute the index on Infinispan."
-msgstr ""
-"Droolsやビジュアライゼーションを含むすべてのアプリケーションでは、JPAインターフェイスを使用してツイートを保存したりロードしたりしていました：それは "
-"link:http://community.jboss.org/docs/DOC-16273[HibernateOGM] "
-"の初期のプレビューを使用していました。HibernateOGMの機能は完全ではないので、Hibern link:http://search."
-"hibernate.org/[ate Searchを] "
-"使用してLuceneインデックスを介してクエリ機能を提供し、Infinispan上でインデックスを配布するためにHibernate "
-"SearchのInfinispan統合を使用していました。"
+msgid "All applications, including Drools and the visualizations, where using a JPA interface to store or load the tweets: it was powered by an early preview of http://community.jboss.org/docs/DOC-16273[HibernateOGM], which aims to abstract any NoSQL store as a JPA persistence store while still providing some level of consistency. As HibernateOGM is not feature complete, it was using http://search.hibernate.org/[Hibernate Search] to provide query capabilities via a Lucene index, and using the Infinispan integration of Hibernate Search to distribute the index on Infinispan."
+msgstr "Droolsやビジュアライゼーションを含むすべてのアプリケーションでは、JPAインターフェイスを使用してツイートを保存したりロードしたりしていました：それは link:http://community.jboss.org/docs/DOC-16273[HibernateOGM] の初期のプレビューを使用していました。HibernateOGMの機能は完全ではないので、Hibern link:http://search.hibernate.org/[ate Searchを] 使用してLuceneインデックスを介してクエリ機能を提供し、Infinispan上でインデックスを配布するためにHibernate SearchのInfinispan統合を使用していました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:129
 #, fuzzy
-msgid ""
-"We then demonstrated failover, as we invited the winner to come up on stage "
-"to choose and brutally un-plug one of the plugtops of his choice from Grid-B "
-"- this plugtop became his prize. Important to note, the webapps running off "
-"the grid did not risk to lose any data, Drools pulling stuff off Grid-A onto "
-"Grid-B was still able to continue running, the Lucene index could "
-"continually be updated and queried by the remaining nodes."
-msgstr ""
-"その後、フェイルオーバーのデモンストレーションを行い、勝者にステージに上がってもらい、Grid-"
-"Bから好きなプラグトップを選択し、残酷にプラグを抜いてもらいました。重要なことは、グリッド外で実行しているWebappsはデータを失うリスクがなく、Grid-"
-"AからGrid-"
-"Bに引っ張ってきたDroolsはまだ実行を続けることができ、Luceneのインデックスは継続的に更新され、残りのノードからクエリを取得することができました。"
+msgid "We then demonstrated failover, as we invited the winner to come up on stage to choose and brutally un-plug one of the plugtops of his choice from Grid-B - this plugtop became his prize. Important to note, the webapps running off the grid did not risk to lose any data, Drools pulling stuff off Grid-A onto Grid-B was still able to continue running, the Lucene index could continually be updated and queried by the remaining nodes."
+msgstr "その後、フェイルオーバーのデモンストレーションを行い、勝者にステージに上がってもらい、Grid-Bから好きなプラグトップを選択し、残酷にプラグを抜いてもらいました。重要なことは、グリッド外で実行しているWebappsはデータを失うリスクがなく、Grid-AからGrid-Bに引っ張ってきたDroolsはまだ実行を続けることができ、Luceneのインデックスは継続的に更新され、残りのノードからクエリを取得することができました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:133
@@ -311,99 +175,55 @@ msgstr "link:http://www.jboss.org/jbosstm[JBossTS] とのJTA統合"
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:139
 #, fuzzy
-msgid ""
-"http://community.jboss.org/docs/DOC-14871[Cache listeners] to notify "
-"applications of changes in data and topology"
-msgstr ""
-"データやトポロジーの変更をアプリケーションに通知するための link:http://community.jboss.org/docs/DOC-"
-"14871[キャッシュリスナー]"
+msgid "http://community.jboss.org/docs/DOC-14871[Cache listeners] to notify applications of changes in data and topology"
+msgstr "データやトポロジーの変更をアプリケーションに通知するための link:http://community.jboss.org/docs/DOC-14871[キャッシュリスナー]"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:141
 #, fuzzy
-msgid ""
-"The http://community.jboss.org/docs/DOC-14332[Infinispan Lucene Directory] "
-"distributing the Lucene index on the grid"
-msgstr ""
-"グリッド上でLuceneインデックスを配布している link:http://community.jboss.org/docs/DOC-"
-"14332[Infinispan Luceneディレクトリ]"
+msgid "The http://community.jboss.org/docs/DOC-14332[Infinispan Lucene Directory] distributing the Lucene index on the grid"
+msgstr "グリッド上でLuceneインデックスを配布している link:http://community.jboss.org/docs/DOC-14332[Infinispan Luceneディレクトリ]"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:145
 #, fuzzy
-msgid ""
-"So a fairly simple setup, using simple embeddable components, cheap "
-"hardware, to build a fairly complex application with excellent failover and "
-"scalability properties."
-msgstr ""
-"シンプルな埋め込み可能なコンポーネント、安価なハードウェアを使用して、フェイルオーバーとスケーラビリティの特性に優れた、かなり複雑なアプリケーションを構築するための、かなりシンプルなセットアップです。"
+msgid "So a fairly simple setup, using simple embeddable components, cheap hardware, to build a fairly complex application with excellent failover and scalability properties."
+msgstr "シンプルな埋め込み可能なコンポーネント、安価なハードウェアを使用して、フェイルオーバーとスケーラビリティの特性に優れた、かなり複雑なアプリケーションを構築するための、かなりシンプルなセットアップです。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:150
 #, fuzzy
-msgid ""
-"So we where depending on wi-fi connectivity, internet access, a live tweet "
-"stream, technology previews and people's cooperation!"
+msgid "So we where depending on wi-fi connectivity, internet access, a live tweet stream, technology previews and people's cooperation!"
 msgstr "そこで私たちは、wi-fi接続、インターネットアクセス、ライブツイートストリーム、技術プレビュー、人々の協力に依存しています"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:161
 #, fuzzy
-msgid ""
-"To make things more interesting, the day before the demo one of the servers "
-"died; hardware failure: didn't survive the trip. A second server, meant to "
-"serve the UI webapps, started reporting failures on all network interfaces "
-"just before starting the demo: it could not figure out hardware addresses of "
-"cluster peers, and we had no time to replace him: its backup was already "
-"dead. Interesting enough we could tap in some advanced parameters of the "
-"JGroups configuration to workaround this issue."
-msgstr ""
-"物事をより面白くするために、デモの前日にサーバーの1つが死亡しました。2台目のサーバはUIのWebappsを提供することを目的としていましたが、デモを開始する直前にすべてのネットワークインターフェースで障害を報告し始めました。興味深いことに、この問題を回避するために "
-"JGroups 設定の高度なパラメータをいくつか使用することができました。"
+msgid "To make things more interesting, the day before the demo one of the servers died; hardware failure: didn't survive the trip. A second server, meant to serve the UI webapps, started reporting failures on all network interfaces just before starting the demo: it could not figure out hardware addresses of cluster peers, and we had no time to replace him: its backup was already dead. Interesting enough we could tap in some advanced parameters of the JGroups configuration to workaround this issue."
+msgstr "物事をより面白くするために、デモの前日にサーバーの1つが死亡しました。2台目のサーバはUIのWebappsを提供することを目的としていましたが、デモを開始する直前にすべてのネットワークインターフェースで障害を報告し始めました。興味深いことに、この問題を回避するために JGroups 設定の高度なパラメータをいくつか使用することができました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:168
 #, fuzzy
-msgid ""
-"http://in.relation.to/service/File/13429[image:http://in.relation.to/service/"
-"File/13429[image,width=200,height=194]]Nothing was pre-recorded! Actually "
-"the backup plan was to have Mark Little dancing a tip-tap; next year we will "
-"try to stretch our demo even more so you might see that dance!"
-msgstr ""
-"link:http://in.relation.to/service/File/13429[] "
-"事前に録音されたものは何もありませんでした。来年はもっとデモを伸ばそうと思っているので、そのダンスが見られるかもしれません。"
+msgid "http://in.relation.to/service/File/13429[image:http://in.relation.to/service/File/13429[image,width=200,height=194]]Nothing was pre-recorded! Actually the backup plan was to have Mark Little dancing a tip-tap; next year we will try to stretch our demo even more so you might see that dance!"
+msgstr "link:http://in.relation.to/service/File/13429[] 事前に録音されたものは何もありませんでした。来年はもっとデモを伸ばそうと思っているので、そのダンスが見られるかもしれません。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:172
 #, fuzzy
-msgid ""
-"So here you can see the recording of the event: http://www.jboss.org/"
-"jbw2011keynote or listen to the http://bit.ly/lELbAy[behind the scenes "
-"podcast]."
-msgstr ""
-"ここではイベントの録画を見ることができます： http://www.jboss.org/jbw2011keynote http://www.jboss."
-"org/jbw2011keynote link:http://bit.ly/lELbAy[舞台裏のポッドキャストを] 聞くことができます。"
+msgid "So here you can see the recording of the event: http://www.jboss.org/jbw2011keynote or listen to the http://bit.ly/lELbAy[behind the scenes podcast]."
+msgstr "ここではイベントの録画を見ることができます： http://www.jboss.org/jbw2011keynote http://www.jboss.org/jbw2011keynote link:http://bit.ly/lELbAy[舞台裏のポッドキャストを] 聞くことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:181
 #, fuzzy
-msgid ""
-"After the demo, we did hear of a large commercial application using "
-"Infinispan and Drools in precisely this manner - except instead of Twitter, "
-"the large data stream was flight seat pricing, changing dynamically and "
-"constantly, and eventually rendered to web pages of various travel sites - "
-"oh, and they weren't running on plugtops in case you were thinking ;)  So, "
-"the example isn't completely artificial."
-msgstr ""
-"デモの後、私たちはInfinispanとDroolsを正確にこのような方法で使用している大規模な商用アプリケーションの話を聞きました - "
-"Twitterの代わりに、大規模なデータストリームはフライトシートの価格で、動的に絶えず変化し、最終的には様々な旅行サイトのウェブページにレンダリングされていました "
-"- ああ、そして、あなたが考えている場合に備えて、それらはプラグトップ上で実行されていませんでした。"
+msgid "After the demo, we did hear of a large commercial application using Infinispan and Drools in precisely this manner - except instead of Twitter, the large data stream was flight seat pricing, changing dynamically and constantly, and eventually rendered to web pages of various travel sites - oh, and they weren't running on plugtops in case you were thinking ;)  So, the example isn't completely artificial."
+msgstr "デモの後、私たちはInfinispanとDroolsを正確にこのような方法で使用している大規模な商用アプリケーションの話を聞きました - Twitterの代わりに、大規模なデータストリームはフライトシートの価格で、動的に絶えず変化し、最終的には様々な旅行サイトのウェブページにレンダリングされていました - ああ、そして、あなたが考えている場合に備えて、それらはプラグトップ上で実行されていませんでした。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-09-keynote-of-decade-behind-scenes.adoc:185
 #, fuzzy
-msgid ""
-"How do you use Infinispan?  We'd love for you to share stories with us."
+msgid "How do you use Infinispan?  We'd love for you to share stories with us."
 msgstr "Infinispanをどのように使っていますか？ 是非、体験談をお聞かせください。"
 
 #. type: Plain text

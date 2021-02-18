@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-12-01-infinispan-and-jboss-as-5x.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-01-infinispan-and-jboss-as-5x.adoc:14
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan and JBoss AS 5.x\n"
@@ -36,10 +36,8 @@ msgid ""
 "\"hibernate\",\n"
 "\"second level cache provider\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6192851714726793888\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/12/infinispan-and-jboss-"
-"as-5x.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6192851714726793888\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/12/infinispan-and-jboss-as-5x.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -52,42 +50,21 @@ msgstr ""
 "\"hibernate\",\n"
 "\"second level cache provider\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6192851714726793888\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/12/infinispan-and-jboss-"
-"as-5x.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6192851714726793888\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/12/infinispan-and-jboss-as-5x.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-01-infinispan-and-jboss-as-5x.adoc:20
 #, fuzzy
-msgid ""
-"A lot of people have asked about being able to use Infinispan as a second "
-"level cache for http://www.hibernate.org/[Hibernate] within http://jboss.org/"
-"jbossas/docs/5-x[JBoss AS 5.x] (and its http://www.jboss.com/products/"
-"platforms/application/[EAP 5.x cousins])."
-msgstr ""
-"多くの人が、 link:http://jboss.org/jbossas/docs/5-x[JBoss AS 5.x] (および link:http://"
-"www.jboss.com/products/platforms/application/[EAP 5.x] の従兄弟) 内で link:http://"
-"www.hibernate.org/[Hibernate] の第二レベルキャッシュとして Infinispan "
-"を使用できることについて質問してきました。"
+msgid "A lot of people have asked about being able to use Infinispan as a second level cache for http://www.hibernate.org/[Hibernate] within http://jboss.org/jbossas/docs/5-x[JBoss AS 5.x] (and its http://www.jboss.com/products/platforms/application/[EAP 5.x cousins])."
+msgstr "多くの人が、 link:http://jboss.org/jbossas/docs/5-x[JBoss AS 5.x] (および link:http://www.jboss.com/products/platforms/application/[EAP 5.x] の従兄弟) 内で link:http://www.hibernate.org/[Hibernate] の第二レベルキャッシュとして Infinispan を使用できることについて質問してきました。"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-01-infinispan-and-jboss-as-5x.adoc:27
 #, fuzzy
-msgid ""
-"While Infinispan can be used as a http://community.jboss.org/wiki/"
-"UsingInfinispanasJPAHibernateSecondLevelCacheProvider[Hibernate second level "
-"cache with Hibernate 3.5 onwards], Bill deCoste has written http://community."
-"jboss.org/wiki/InfinispanasHibernate2nd-LevelCacheinJBossAS5x[a guide] to "
-"getting Infinispan to work in older versions of Hibernate, specifically with "
-"JBoss AS 5.x.  Hope you find this useful!"
-msgstr ""
-"Infinispan は Hibernate link:http://community.jboss.org/wiki/"
-"UsingInfinispanasJPAHibernateSecondLevelCacheProvider[3.5 以降で Hibernate "
-"の第二レベルキャッシュ] として使用できますが、Bill deCoste は古いバージョンの Hibernate、特に JBoss AS 5.x で "
-"Infinispan を動作させるための link:http://community.jboss.org/wiki/"
-"InfinispanasHibernate2nd-LevelCacheinJBossAS5x[ガイドを] 書いています。"
+msgid "While Infinispan can be used as a http://community.jboss.org/wiki/UsingInfinispanasJPAHibernateSecondLevelCacheProvider[Hibernate second level cache with Hibernate 3.5 onwards], Bill deCoste has written http://community.jboss.org/wiki/InfinispanasHibernate2nd-LevelCacheinJBossAS5x[a guide] to getting Infinispan to work in older versions of Hibernate, specifically with JBoss AS 5.x.  Hope you find this useful!"
+msgstr "Infinispan は Hibernate link:http://community.jboss.org/wiki/UsingInfinispanasJPAHibernateSecondLevelCacheProvider[3.5 以降で Hibernate の第二レベルキャッシュ] として使用できますが、Bill deCoste は古いバージョンの Hibernate、特に JBoss AS 5.x で Infinispan を動作させるための link:http://community.jboss.org/wiki/InfinispanasHibernate2nd-LevelCacheinJBossAS5x[ガイドを] 書いています。"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-01-infinispan-and-jboss-as-5x.adoc:29

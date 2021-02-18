@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 5.1.0.FINAL is finally here!!\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2012-01-24T10:06:00.000-08:00'\n"
 "author: galder\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"665025444535275258\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/01/infinispan-510final-is-"
-"finally-here.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-665025444535275258\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/01/infinispan-510final-is-finally-here.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,62 +42,33 @@ msgstr ""
 "date: '2012-01-24T10:06:00.000-08:00'\n"
 "author: galder\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"665025444535275258\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/01/infinispan-510final-is-"
-"finally-here.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-665025444535275258\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/01/infinispan-510final-is-finally-here.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:14
 #, fuzzy
-msgid ""
-"After over 4 months of development, testing, profiling...etc, I'm extremely "
-"pleased to announce that Infinispan 5.1.0.FINAL 'Brahma' is out now! It "
-"comes with some very important brand new features such as:"
-msgstr ""
-"4ヶ月以上の開発、テスト、プロファイリングなどを経て、Infinispan 5.1.0."
-"FINALの「Brahma」がリリースされたことを発表できることを大変嬉しく思います。これには、以下のような非常に重要な新機能が含まれています。"
+msgid "After over 4 months of development, testing, profiling...etc, I'm extremely pleased to announce that Infinispan 5.1.0.FINAL 'Brahma' is out now! It comes with some very important brand new features such as:"
+msgstr "4ヶ月以上の開発、テスト、プロファイリングなどを経て、Infinispan 5.1.0.FINALの「Brahma」がリリースされたことを発表できることを大変嬉しく思います。これには、以下のような非常に重要な新機能が含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:21
 #, fuzzy
-msgid ""
-"http://infinispan.blogspot.com/2011/10/transaction-remake-in-infinispan-51."
-"html[O]http://infinispan.blogspot.com/2011/10/transaction-remake-in-"
-"infinispan-51.html[ptimistic vs pessimistic locking separation], http://"
-"infinispan.blogspot.com/2011/11/more-locking-improvements-in-infinispan."
-"html[single node locking] and https://community.jboss.org/wiki/"
-"LockReorderingForAvoidingDeadlocks[lock reordering]"
-msgstr ""
-"link:http://infinispan.blogspot.com/2011/10/transaction-remake-in-infinispan-"
-"51.html[O] http://infinispan.blogspot.com/2011/10/transaction-remake-in-"
-"infinispan-51.html[ptimistic vs pessimistic Lock separation]、 link:http://"
-"infinispan.blogspot.com/2011/11/more-locking-improvements-in-infinispan."
-"html[シングルノードロック] と link:https://community.jboss.org/wiki/"
-"LockReorderingForAvoidingDeadlocks[ロックの再順序付け]"
+msgid "http://infinispan.blogspot.com/2011/10/transaction-remake-in-infinispan-51.html[O]http://infinispan.blogspot.com/2011/10/transaction-remake-in-infinispan-51.html[ptimistic vs pessimistic locking separation], http://infinispan.blogspot.com/2011/11/more-locking-improvements-in-infinispan.html[single node locking] and https://community.jboss.org/wiki/LockReorderingForAvoidingDeadlocks[lock reordering]"
+msgstr "link:http://infinispan.blogspot.com/2011/10/transaction-remake-in-infinispan-51.html[O] http://infinispan.blogspot.com/2011/10/transaction-remake-in-infinispan-51.html[ptimistic vs pessimistic Lock separation]、 link:http://infinispan.blogspot.com/2011/11/more-locking-improvements-in-infinispan.html[シングルノードロック] と link:https://community.jboss.org/wiki/LockReorderingForAvoidingDeadlocks[ロックの再順序付け]"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:23
 #, fuzzy
-msgid ""
-"http://infinispan.blogspot.com/2011/10/infinispan-510beta2-is-out-and."
-"html[A]http://infinispan.blogspot.com/2011/10/infinispan-510beta2-is-out-and."
-"html[symmetric cluster supports]"
-msgstr ""
-"link:http://infinispan.blogspot.com/2011/10/infinispan-510beta2-is-out-and."
-"html[A] http://infinispan.blogspot.com/2011/10/infinispan-510beta2-is-out-"
-"and.html[対称クラスタをサポート]しています。"
+msgid "http://infinispan.blogspot.com/2011/10/infinispan-510beta2-is-out-and.html[A]http://infinispan.blogspot.com/2011/10/infinispan-510beta2-is-out-and.html[symmetric cluster supports]"
+msgstr "link:http://infinispan.blogspot.com/2011/10/infinispan-510beta2-is-out-and.html[A] http://infinispan.blogspot.com/2011/10/infinispan-510beta2-is-out-and.html[対称クラスタをサポート]しています。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:25
 #, fuzzy
-msgid ""
-"http://infinispan.blogspot.com/2011/10/infinispan-510beta3-is-out-with-"
-"atomic.html[Fine-grained atomic maps]"
-msgstr ""
-"link:http://infinispan.blogspot.com/2011/10/infinispan-510beta3-is-out-with-"
-"atomic.html[細かい原子地図]"
+msgid "http://infinispan.blogspot.com/2011/10/infinispan-510beta3-is-out-with-atomic.html[Fine-grained atomic maps]"
+msgstr "link:http://infinispan.blogspot.com/2011/10/infinispan-510beta3-is-out-with-atomic.html[細かい原子地図]"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:27
@@ -110,83 +79,44 @@ msgstr "などの改善も多数実施しています。"
 #. type: Plain text
 #: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:30
 #, fuzzy
-msgid ""
-"http://infinispan.blogspot.com/2012/01/configuration-changes-in-infinispan."
-"html[Move to Stax XML parser and new programmatic configuration]"
-msgstr ""
-"link:http://infinispan.blogspot.com/2012/01/configuration-changes-in-"
-"infinispan.html[Stax XMLパーサーと新しいプログラム構成への移行]"
+msgid "http://infinispan.blogspot.com/2012/01/configuration-changes-in-infinispan.html[Move to Stax XML parser and new programmatic configuration]"
+msgstr "link:http://infinispan.blogspot.com/2012/01/configuration-changes-in-infinispan.html[Stax XMLパーサーと新しいプログラム構成への移行]"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:33
 #, fuzzy
-msgid ""
-"http://infinispan.blogspot.com/2011/10/infinispan-510beta3-is-out-with-"
-"atomic.html[Hot Rod protocol 1.1 to provide better support for environments "
-"with virtual nodes enabled]"
-msgstr ""
-"link:http://infinispan.blogspot.com/2011/10/infinispan-510beta3-is-out-with-"
-"atomic.html[Hot Rod プロトコル 1.1 は、仮想ノードを有効にした環境をより良くサポートします。]"
+msgid "http://infinispan.blogspot.com/2011/10/infinispan-510beta3-is-out-with-atomic.html[Hot Rod protocol 1.1 to provide better support for environments with virtual nodes enabled]"
+msgstr "link:http://infinispan.blogspot.com/2011/10/infinispan-510beta3-is-out-with-atomic.html[Hot Rod プロトコル 1.1 は、仮想ノードを有効にした環境をより良くサポートします。]"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:35
 #, fuzzy
-msgid ""
-"http://infinispan.blogspot.com/2011/12/startup-performance.html[Startup "
-"performance]"
-msgstr ""
-"link:http://infinispan.blogspot.com/2011/12/startup-performance."
-"html[起動時のパフォーマンス]"
+msgid "http://infinispan.blogspot.com/2011/12/startup-performance.html[Startup performance]"
+msgstr "link:http://infinispan.blogspot.com/2011/12/startup-performance.html[起動時のパフォーマンス]"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:37
 #, fuzzy
-msgid ""
-"http://infinispan.blogspot.com/2011/09/next-infinispan-510-alpha-hits-"
-"streets.html[Push-based state transfer for replicated caches]"
-msgstr ""
-"link:http://infinispan.blogspot.com/2011/09/next-infinispan-510-alpha-hits-"
-"streets.html[レプリケートされたキャッシュのためのプッシュベースの状態転送]"
+msgid "http://infinispan.blogspot.com/2011/09/next-infinispan-510-alpha-hits-streets.html[Push-based state transfer for replicated caches]"
+msgstr "link:http://infinispan.blogspot.com/2011/09/next-infinispan-510-alpha-hits-streets.html[レプリケートされたキャッシュのためのプッシュベースの状態転送]"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:42
 #, fuzzy
-msgid ""
-"This has been a huge effort by all the Infinispan community including forum "
-"users, which have been giving us tremendous feedback, occasional community "
-"contributors and core developers. Thank you very much for all the effort "
-"you've put in!!"
-msgstr ""
-"これは、フォーラムユーザーをはじめとするInfinispanコミュニティの皆様の多大なご尽力によるもので、フォーラムユーザーの皆様からは多大なフィードバックをいただきました。あなたの努力に感謝します!"
+msgid "This has been a huge effort by all the Infinispan community including forum users, which have been giving us tremendous feedback, occasional community contributors and core developers. Thank you very much for all the effort you've put in!!"
+msgstr "これは、フォーラムユーザーをはじめとするInfinispanコミュニティの皆様の多大なご尽力によるもので、フォーラムユーザーの皆様からは多大なフィードバックをいただきました。あなたの努力に感謝します!"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:49
 #, fuzzy
-msgid ""
-"We've build a migration guide for anyone upgrading for 5.0.0.FINAL to 5.1.0."
-"FINAL, so make sure you https://docs.jboss.org/author/display/ISPN/"
-"Upgrading+from+5.0+to+5.1[read it] if you're upgrading."
-msgstr ""
-"5.0.0.0.FINALから5.1.0.0.FINALにアップグレードする人のための移行ガイドを作りましたので、アップグレードする人は必ず link:"
-"https://docs.jboss.org/author/display/ISPN/Upgrading+from+5.0+to+5.1[読んで] "
-"ください。"
+msgid "We've build a migration guide for anyone upgrading for 5.0.0.FINAL to 5.1.0.FINAL, so make sure you https://docs.jboss.org/author/display/ISPN/Upgrading+from+5.0+to+5.1[read it] if you're upgrading."
+msgstr "5.0.0.0.FINALから5.1.0.0.FINALにアップグレードする人のための移行ガイドを作りましたので、アップグレードする人は必ず link:https://docs.jboss.org/author/display/ISPN/Upgrading+from+5.0+to+5.1[読んで] ください。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:60
 #, fuzzy
-msgid ""
-"As usual, http://www.jboss.org/infinispan/downloads[download] the release, "
-"provide http://community.jboss.org/en/infinispan?view=discussions[feedback], "
-"read through the detailed https://issues.jboss.org/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12313470[changelog].  And check out our "
-"https://docs.jboss.org/author/display/ISPN51/Home[documentation] for this "
-"version too."
-msgstr ""
-"いつものように、リリースを link:http://www.jboss.org/infinispan/downloads[ダウンロードし] 、 link:"
-"http://community.jboss.org/en/infinispan?view=discussions[フィードバックを] 提供し、詳細な "
-"link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12310799&version=12313470[変更履歴を] 読んでください。そして、このバージョンの link:https://docs."
-"jboss.org/author/display/ISPN51/Home[ドキュメントも] チェックしてください。"
+msgid "As usual, http://www.jboss.org/infinispan/downloads[download] the release, provide http://community.jboss.org/en/infinispan?view=discussions[feedback], read through the detailed https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12313470[changelog].  And check out our https://docs.jboss.org/author/display/ISPN51/Home[documentation] for this version too."
+msgstr "いつものように、リリースを link:http://www.jboss.org/infinispan/downloads[ダウンロードし] 、 link:http://community.jboss.org/en/infinispan?view=discussions[フィードバックを] 提供し、詳細な link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12313470[変更履歴を] 読んでください。そして、このバージョンの link:https://docs.jboss.org/author/display/ISPN51/Home[ドキュメントも] チェックしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-24-infinispan-510final-is-finally-here.adoc:64

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-09-19-dear-infinispan-community-we-are-proud.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-19-dear-infinispan-community-we-are-proud.adoc:13
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 6.0.0.Beta1 is out!\n"
@@ -35,10 +35,8 @@ msgid ""
 "\"remote query\",\n"
 "\"uneven load\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7368154311489946973\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/09/dear-infinispan-"
-"community-we-are-proud.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7368154311489946973\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/09/dear-infinispan-community-we-are-proud.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -50,10 +48,8 @@ msgstr ""
 "\"remote query\",\n"
 "\"uneven load\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7368154311489946973\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/09/dear-infinispan-"
-"community-we-are-proud.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7368154311489946973\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/09/dear-infinispan-community-we-are-proud.html\n"
 "---\n"
 
 #. type: Plain text
@@ -65,10 +61,7 @@ msgstr "インフィニスパンのコミュニティへ"
 #. type: Plain text
 #: upstream/_posts/2013-09-19-dear-infinispan-community-we-are-proud.adoc:19
 #, fuzzy
-msgid ""
-"We are proud to announce the first Beta release of Infinispan 6.0.0.  This "
-"is an important milestone in the 6.0.0 lifecycle: it is feature and API "
-"complete."
+msgid "We are proud to announce the first Beta release of Infinispan 6.0.0.  This is an important milestone in the 6.0.0 lifecycle: it is feature and API complete."
 msgstr "これは6.0.0.0のライフサイクルにおける重要なマイルストーンです。"
 
 #. type: Plain text
@@ -80,33 +73,19 @@ msgstr "このリリースに含まれています。"
 #. type: Plain text
 #: upstream/_posts/2013-09-19-dear-infinispan-community-we-are-proud.adoc:25
 #, fuzzy
-msgid ""
-"a complete implementation of the remote-query functionality, including https:"
-"//issues.jboss.org/browse/ISPN-3172[index management through JMX ].  Adrian "
-"Nistor will blog on this in the following days"
-msgstr ""
-"link:https://issues.jboss.org/browse/ISPN-3172[JMX を通じてインデックス管理を] "
-"含むリモートクエリ機能の完全な実装です link:https://issues.jboss.org/browse/ISPN-3172[。] Adrian "
-"Nistor は次の日にこれについてブログを書く予定です。"
+msgid "a complete implementation of the remote-query functionality, including https://issues.jboss.org/browse/ISPN-3172[index management through JMX ].  Adrian Nistor will blog on this in the following days"
+msgstr "link:https://issues.jboss.org/browse/ISPN-3172[JMX を通じてインデックス管理を] 含むリモートクエリ機能の完全な実装です link:https://issues.jboss.org/browse/ISPN-3172[。] Adrian Nistor は次の日にこれについてブログを書く予定です。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-19-dear-infinispan-community-we-are-proud.adoc:29
 #, fuzzy
-msgid ""
-"https://issues.jboss.org/browse/ISPN-3051[allow configuring] the number of "
-"segments per node allows one to configure an uneven load of data between the "
-"nodes int the cluster. Dan Berindei will add a blog on this shortly"
-msgstr ""
-"は、ノードごとのセグメント数を link:https://issues.jboss.org/browse/ISPN-3051[設定すること] "
-"で、クラスタ内のノード間でデータの負荷が不均一になるように設定することができます。Dan Berindei "
-"がこの件についてのブログをまもなく追加します。"
+msgid "https://issues.jboss.org/browse/ISPN-3051[allow configuring] the number of segments per node allows one to configure an uneven load of data between the nodes int the cluster. Dan Berindei will add a blog on this shortly"
+msgstr "は、ノードごとのセグメント数を link:https://issues.jboss.org/browse/ISPN-3051[設定すること] で、クラスタ内のノード間でデータの負荷が不均一になるように設定することができます。Dan Berindei がこの件についてのブログをまもなく追加します。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-19-dear-infinispan-community-we-are-proud.adoc:32
 #, fuzzy
-msgid ""
-"Together with this release we're also launching our http://infinispan.org/"
-"[new website]:"
+msgid "Together with this release we're also launching our http://infinispan.org/[new website]:"
 msgstr "今回のリリースに合わせて、 link:http://infinispan.org/[新しいサイトも] 立ち上げました。"
 
 #. type: Plain text
@@ -118,93 +97,44 @@ msgstr "アウェストラクトを使って作ったんですね。 そう、�
 #. type: Plain text
 #: upstream/_posts/2013-09-19-dear-infinispan-community-we-are-proud.adoc:36
 #, fuzzy
-msgid ""
-" Hosted on https://github.com/infinispan/infinispan.github.io[GitHub Pages]. "
-" Quick and easy."
-msgstr ""
-"GitHub link:https://github.com/infinispan/infinispan.github.io[Pages] "
-"にホストされています link:https://github.com/infinispan/infinispan.github.io[。]"
+msgid " Hosted on https://github.com/infinispan/infinispan.github.io[GitHub Pages].  Quick and easy."
+msgstr "GitHub link:https://github.com/infinispan/infinispan.github.io[Pages] にホストされています link:https://github.com/infinispan/infinispan.github.io[。]"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-19-dear-infinispan-community-we-are-proud.adoc:38
 #, fuzzy
-msgid ""
-" Styled with JBoss.org Community's flavour of Twitter https://github.com/"
-"jbossorg/bootstrap-community[Bootstrap] "
-msgstr ""
-"JBoss.org CommunityのフレーバーであるTwitter link:https://github.com/jbossorg/"
-"bootstrap-community[Bootstrap] でスタイリングされています。"
+msgid " Styled with JBoss.org Community's flavour of Twitter https://github.com/jbossorg/bootstrap-community[Bootstrap] "
+msgstr "JBoss.org CommunityのフレーバーであるTwitter link:https://github.com/jbossorg/bootstrap-community[Bootstrap] でスタイリングされています。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-19-dear-infinispan-community-we-are-proud.adoc:41
 #, fuzzy
-msgid ""
-" Documentation reformatted/moved from https://github.com/infinispan/"
-"infinispan/tree/5.3.x/documentation[Confluence to AsciiDoc] "
-msgstr ""
-"ドキュメントを link:https://github.com/infinispan/infinispan/tree/5.3.x/"
-"documentation[Confluence] から link:https://github.com/infinispan/infinispan/"
-"tree/5.3.x/documentation[AsciiDocに] 再フォーマット/移動"
+msgid " Documentation reformatted/moved from https://github.com/infinispan/infinispan/tree/5.3.x/documentation[Confluence to AsciiDoc] "
+msgstr "ドキュメントを link:https://github.com/infinispan/infinispan/tree/5.3.x/documentation[Confluence] から link:https://github.com/infinispan/infinispan/tree/5.3.x/documentation[AsciiDocに] 再フォーマット/移動"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-19-dear-infinispan-community-we-are-proud.adoc:48
 #, fuzzy
-msgid ""
-"Among other things, the new site reflects some changes in the way Infinispan "
-"http://infinispan.org/download/[is distributed] - including http://"
-"infinispan.org/cache-store-implementations/[several cache stores] and http://"
-"infinispan.org/hotrod-clients/[Hot Rod clients] being moved out to separate "
-"GitHub repositories and following their own release cycles. "
-msgstr ""
-"とりわけ、新しいサイトは Infinispan の link:http://infinispan.org/download/[配布] 方法にいくつか "
-"link:http://infinispan.org/cache-store-implementations/[の] 変更を反映させています。"
+msgid "Among other things, the new site reflects some changes in the way Infinispan http://infinispan.org/download/[is distributed] - including http://infinispan.org/cache-store-implementations/[several cache stores] and http://infinispan.org/hotrod-clients/[Hot Rod clients] being moved out to separate GitHub repositories and following their own release cycles. "
+msgstr "とりわけ、新しいサイトは Infinispan の link:http://infinispan.org/download/[配布] 方法にいくつか link:http://infinispan.org/cache-store-implementations/[の] 変更を反映させています。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-19-dear-infinispan-community-we-are-proud.adoc:52
 #, fuzzy
-msgid ""
-"We think it's pretty slick and pretty sure you wouldn't guess its written by "
-"a hardcore backed developer! Kudos to Manik Surtani for such a nice job!"
-msgstr ""
-"私たちは、それがかなり巧妙で、筋金入りの開発者によって書かれたとは思えないほどだと思っています!このような素晴らしい仕事をしてくれた Manik "
-"Surtani に感謝します!"
+msgid "We think it's pretty slick and pretty sure you wouldn't guess its written by a hardcore backed developer! Kudos to Manik Surtani for such a nice job!"
+msgstr "私たちは、それがかなり巧妙で、筋金入りの開発者によって書かれたとは思えないほどだと思っています!このような素晴らしい仕事をしてくれた Manik Surtani に感謝します!"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-19-dear-infinispan-community-we-are-proud.adoc:60
 #, fuzzy
-msgid ""
-"Last but certainly not least,  a BIG thanks to our colleagues from the http:/"
-"/in.relation.to/Bloggers/"
-"HibernateSearch440Alpha2TheFastingBeforeTheCheese[Hibernate] team for their "
-"support (that is enhancements, fixes and releases and unreasonable hours) in "
-"getting the support needed for Infinispan's remote query functionality in "
-"time!"
-msgstr ""
-"最後になりましたが、Infinispanのリモートクエリ機能に必要なサポートを間に合わせてくれたHibernate link:http://in."
-"relation.to/Bloggers/HibernateSearch440Alpha2TheFastingBeforeTheCheese[チーム] "
-"の仲間たちに感謝します。"
+msgid "Last but certainly not least,  a BIG thanks to our colleagues from the http://in.relation.to/Bloggers/HibernateSearch440Alpha2TheFastingBeforeTheCheese[Hibernate] team for their support (that is enhancements, fixes and releases and unreasonable hours) in getting the support needed for Infinispan's remote query functionality in time!"
+msgstr "最後になりましたが、Infinispanのリモートクエリ機能に必要なサポートを間に合わせてくれたHibernate link:http://in.relation.to/Bloggers/HibernateSearch440Alpha2TheFastingBeforeTheCheese[チーム] の仲間たちに感謝します。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-19-dear-infinispan-community-we-are-proud.adoc:71
 #, fuzzy
-msgid ""
-"For a complete list of features and fixes included in this release please "
-"refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12310799&version=12321858[release "
-"notes][#goog_1579863183]##[#goog_1579863184]##http://www.blogger.com/[].  "
-"Visit our http://www.jboss.org/infinispan/downloads[downloads] section to "
-"find the latest release and if you have any questions please check our http:/"
-"/www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/"
-"mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://"
-"irc.freenode.org/infinispan[IRC]."
-msgstr ""
-"このリリースに含まれる機能と修正の完全なリストについては、 link:https://issues.jboss.org/secure/"
-"ReleaseNote.jspa?projectId=12310799&version="
-"12321858[リリースノート[#]goog_1579863184 http://www.blogger.com/ 参照してください。最新のリリースは "
-"link:http://www.jboss.org/infinispan/downloads[ダウンロード] "
-"セクションをご覧ください。質問がある場合は、フォーラム、 link:http://www.jboss.org/infinispan/"
-"forums[メーリングリスト] 、または IRC で link:https://lists.jboss.org/mailman/listinfo/"
-"infinispan-dev[直接] ping してください。"
+msgid "For a complete list of features and fixes included in this release please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12321858[release notes][#goog_1579863183]##[#goog_1579863184]##http://www.blogger.com/[].  Visit our http://www.jboss.org/infinispan/downloads[downloads] section to find the latest release and if you have any questions please check our http://www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+msgstr "このリリースに含まれる機能と修正の完全なリストについては、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12321858[リリースノート[#]goog_1579863184 http://www.blogger.com/ 参照してください。最新のリリースは link:http://www.jboss.org/infinispan/downloads[ダウンロード] セクションをご覧ください。質問がある場合は、フォーラム、 link:http://www.jboss.org/infinispan/forums[メーリングリスト] 、または IRC で link:https://lists.jboss.org/mailman/listinfo/infinispan-dev[直接] ping してください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-19-dear-infinispan-community-we-are-proud.adoc:73

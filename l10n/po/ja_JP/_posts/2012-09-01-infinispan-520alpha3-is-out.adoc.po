@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-09-01-infinispan-520alpha3-is-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-01-infinispan-520alpha3-is-out.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 5.2.0.Alpha3 is out!\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2012-09-01T11:48:00.000-07:00'\n"
 "author: mmarkus\n"
 "tags: [ \"release\", \"alpha\", \"state transfer\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8972943655327756646\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/09/infinispan-520alpha3-"
-"is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8972943655327756646\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/09/infinispan-520alpha3-is-out.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,61 +42,39 @@ msgstr ""
 "date: '2012-09-01T11:48:00.000-07:00'\n"
 "author: mmarkus\n"
 "tags: [ \"release\", \"alpha\", \"state transfer\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8972943655327756646\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/09/infinispan-520alpha3-"
-"is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8972943655327756646\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/09/infinispan-520alpha3-is-out.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-01-infinispan-520alpha3-is-out.adoc:16
 #, fuzzy
-msgid ""
-"There are releases and releases. And this one is a big one, containing a "
-"bran new state transfer functionality. Designed and implemented by https://"
-"community.jboss.org/people/dan.berindei[Dan Berindei] and https://community."
-"jboss.org/people/anistor[Adrian Nistor], the new Non Blocking State Transfer "
-"(NBST) has the following goals:"
-msgstr ""
-"リリースとリリースがあります。そして今回のリリースは大きなもので、全く新しい状態転送機能が含まれています。 link:https://community."
-"jboss.org/people/dan.berindei[Dan Berindei] と link:https://community.jboss."
-"org/people/anistor[Adrian Nistor] によって設計・実装された新しいNon Blocking State Transfer "
-"(NBST)は、次のような目標を持っています。"
+msgid "There are releases and releases. And this one is a big one, containing a bran new state transfer functionality. Designed and implemented by https://community.jboss.org/people/dan.berindei[Dan Berindei] and https://community.jboss.org/people/anistor[Adrian Nistor], the new Non Blocking State Transfer (NBST) has the following goals:"
+msgstr "リリースとリリースがあります。そして今回のリリースは大きなもので、全く新しい状態転送機能が含まれています。 link:https://community.jboss.org/people/dan.berindei[Dan Berindei] と link:https://community.jboss.org/people/anistor[Adrian Nistor] によって設計・実装された新しいNon Blocking State Transfer (NBST)は、次のような目標を持っています。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-01-infinispan-520alpha3-is-out.adoc:19
 #, fuzzy
-msgid ""
-"Minimize the interval(s) where the entire cluster can't respond to requests "
-"because of a state transfer in progress."
+msgid "Minimize the interval(s) where the entire cluster can't respond to requests because of a state transfer in progress."
 msgstr "状態遷移が進行中のためにクラスタ全体がリクエストに応答できない間隔を最小化します。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-01-infinispan-520alpha3-is-out.adoc:21
 #, fuzzy
-msgid ""
-"Minimize the interval(s) where an existing member stops responding to "
-"requests because of a state transfer in progress."
+msgid "Minimize the interval(s) where an existing member stops responding to requests because of a state transfer in progress."
 msgstr "状態遷移が進行中のため、既存のメンバーがリクエストへの応答を停止する間隔を最小にする。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-01-infinispan-520alpha3-is-out.adoc:23
 #, fuzzy
-msgid ""
-"Allow the performance of the cluster to drop during state transfer, but it "
-"should not throw any exception"
+msgid "Allow the performance of the cluster to drop during state transfer, but it should not throw any exception"
 msgstr "状態遷移中にクラスタのパフォーマンスが低下することを許容しますが、例外をスローしてはいけません。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-01-infinispan-520alpha3-is-out.adoc:27
 #, fuzzy
-msgid ""
-"Curious to see the magic behind it?  https://community.jboss.org/wiki/Non-"
-"BlockingStateTransferV2[This document] is here to explain you NBST's "
-"internal."
-msgstr ""
-"この資料 link:https://community.jboss.org/wiki/Non-BlockingStateTransferV2[で] "
-"は、NBSTの内部を説明しています。"
+msgid "Curious to see the magic behind it?  https://community.jboss.org/wiki/Non-BlockingStateTransferV2[This document] is here to explain you NBST's internal."
+msgstr "この資料 link:https://community.jboss.org/wiki/Non-BlockingStateTransferV2[で] は、NBSTの内部を説明しています。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-01-infinispan-520alpha3-is-out.adoc:31
@@ -109,49 +85,26 @@ msgstr "このリリースではNBSTの他にも、いくつかのグッズが�
 #. type: Plain text
 #: upstream/_posts/2012-09-01-infinispan-520alpha3-is-out.adoc:36
 #, fuzzy
-msgid ""
-"A new IGNORE_RETURN_VALUES flag to help reduce the number of RPC calls and "
-"increasing performance (to be discussed at large by http://galder.zamarreno."
-"com/[Galder Zamarreño] in a following blog post)  "
-msgstr ""
-"新しい IGNORE_RETURN_VALUES フラグは、RPC 呼び出しの数を減らし、パフォーマンスを向上させるのに役立ちます (次のブログ記事 "
-"link:http://galder.zamarreno.com/[で Galder Zamarreño] によって大々的に議論されます)。"
+msgid "A new IGNORE_RETURN_VALUES flag to help reduce the number of RPC calls and increasing performance (to be discussed at large by http://galder.zamarreno.com/[Galder Zamarreño] in a following blog post)  "
+msgstr "新しい IGNORE_RETURN_VALUES フラグは、RPC 呼び出しの数を減らし、パフォーマンスを向上させるのに役立ちます (次のブログ記事 link:http://galder.zamarreno.com/[で Galder Zamarreño] によって大々的に議論されます)。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-01-infinispan-520alpha3-is-out.adoc:40
 #, fuzzy
-msgid ""
-"A revamped and *much* nicer configuration for submodules such as cache "
-"loaders. More about it in  http://infinispan.blogspot.co.uk/2012/08/"
-"configuration-overhaul.html[Tristan Tarrant's blog]"
-msgstr ""
-"キャッシュローダーのようなサブモジュールのための改良された、 *より* 良い設定。詳細は link:http://infinispan.blogspot."
-"co.uk/2012/08/configuration-overhaul.html[Tristan Tarrant さんのブログ] を参照してください。"
+msgid "A revamped and *much* nicer configuration for submodules such as cache loaders. More about it in  http://infinispan.blogspot.co.uk/2012/08/configuration-overhaul.html[Tristan Tarrant's blog]"
+msgstr "キャッシュローダーのようなサブモジュールのための改良された、 *より* 良い設定。詳細は link:http://infinispan.blogspot.co.uk/2012/08/configuration-overhaul.html[Tristan Tarrant さんのブログ] を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-01-infinispan-520alpha3-is-out.adoc:43
 #, fuzzy
-msgid ""
-"for a complete list of the fixes/enhancements https://issues.jboss.org/"
-"secure/ReleaseNote.jspa?projectId=12310799&version=12319867[refer to JIRA]"
-msgstr ""
-"修正/拡張の完全なリストは link:https://issues.jboss.org/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12319867[JIRA] を参照してください。"
+msgid "for a complete list of the fixes/enhancements https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12319867[refer to JIRA]"
+msgstr "修正/拡張の完全なリストは link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12319867[JIRA] を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-01-infinispan-520alpha3-is-out.adoc:50
 #, fuzzy
-msgid ""
-"Another new thing this release brings is a change in versioning: we've "
-"aligned to JBoss' release versioning pattern. So the name is now Alpha3 vs "
-"ALPHA3(as per the old naming pattern). More about the reason for doing that "
-"in this http://infinispan.blogspot.co.uk/2012/08/infinispan-project-"
-"versioning-change.html[blog post]."
-msgstr ""
-"このリリースがもたらすもう一つの新しいことはバージョン管理の変更です：JBoss "
-"のリリースバージョン管理パターンに合わせています。そのため、名前はAlpha3 vs ALPHA3 (旧命名パターンによる) "
-"になりました。その理由については、この link:http://infinispan.blogspot.co.uk/2012/08/infinispan-"
-"project-versioning-change.html[ブログ記事] で詳しく説明しています。"
+msgid "Another new thing this release brings is a change in versioning: we've aligned to JBoss' release versioning pattern. So the name is now Alpha3 vs ALPHA3(as per the old naming pattern). More about the reason for doing that in this http://infinispan.blogspot.co.uk/2012/08/infinispan-project-versioning-change.html[blog post]."
+msgstr "このリリースがもたらすもう一つの新しいことはバージョン管理の変更です：JBoss のリリースバージョン管理パターンに合わせています。そのため、名前はAlpha3 vs ALPHA3 (旧命名パターンによる) になりました。その理由については、この link:http://infinispan.blogspot.co.uk/2012/08/infinispan-project-versioning-change.html[ブログ記事] で詳しく説明しています。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-01-infinispan-520alpha3-is-out.adoc:52
@@ -162,22 +115,8 @@ msgstr "  "
 #. type: Plain text
 #: upstream/_posts/2012-09-01-infinispan-520alpha3-is-out.adoc:60
 #, fuzzy
-msgid ""
-"The complete list of issues/improvements addressed in this release is "
-"available in https://issues.jboss.org/secure/IssueNavigator.jspa?reset="
-"true&jqlQuery=project+%3D+ISPN+AND+fixVersion+%3D+%225.2.0."
-"Alpha3%22+AND+status+%3D+Resolved+ORDER+BY+priority+DESC[JIRA].  As always, "
-"please give it a try and let us know what you think on the http://www.jboss."
-"org/infinispan/forums[forums], irc://irc.freenode.org/infinispan[irc] or "
-"http://www.jboss.org/infinispan/mailinglists[mailing lists]!"
-msgstr ""
-"このリリースで対処された問題や改善点の完全なリストは link:https://issues.jboss.org/secure/"
-"IssueNavigator.jspa?reset=true&jqlQuery="
-"project+%3D+ISPN+AND+fixVersion+%3D+%225.2.0."
-"Alpha3%22+AND+status+%3D+Resolved+ORDER+BY+priority+DESC[JIRA] "
-"にあります。いつものように、試してみて、 link:http://www.jboss.org/infinispan/forums[フォーラム] や "
-"link:irc://irc.freenode.org/infinispan[irc] 、 link:http://www.jboss.org/"
-"infinispan/mailinglists[メーリングリスト] で感想を聞かせてください!"
+msgid "The complete list of issues/improvements addressed in this release is available in https://issues.jboss.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+ISPN+AND+fixVersion+%3D+%225.2.0.Alpha3%22+AND+status+%3D+Resolved+ORDER+BY+priority+DESC[JIRA].  As always, please give it a try and let us know what you think on the http://www.jboss.org/infinispan/forums[forums], irc://irc.freenode.org/infinispan[irc] or http://www.jboss.org/infinispan/mailinglists[mailing lists]!"
+msgstr "このリリースで対処された問題や改善点の完全なリストは link:https://issues.jboss.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+ISPN+AND+fixVersion+%3D+%225.2.0.Alpha3%22+AND+status+%3D+Resolved+ORDER+BY+priority+DESC[JIRA] にあります。いつものように、試してみて、 link:http://www.jboss.org/infinispan/forums[フォーラム] や link:irc://irc.freenode.org/infinispan[irc] 、 link:http://www.jboss.org/infinispan/mailinglists[メーリングリスト] で感想を聞かせてください!"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-01-infinispan-520alpha3-is-out.adoc:64

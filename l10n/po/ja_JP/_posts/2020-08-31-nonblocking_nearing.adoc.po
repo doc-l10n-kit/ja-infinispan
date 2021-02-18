@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:8
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Non Blocking Saga\n"
@@ -44,309 +44,218 @@ msgstr ""
 
 #. type: Title =
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Non Blocking Journey"
 msgstr "非ブロッキングの旅"
 
 #. type: Plain text
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:16
 #, fuzzy
-msgid ""
-"As many you are probably aware recent trends have shown that making "
-"applications non blocking provides quite a few benefits allowing for greater "
-"scalability with less resources. Infinispan has been written and rewriting "
-"parts to take advantage of this as we can for both embedded and server use "
-"cases."
-msgstr ""
-"ご存知の方も多いと思いますが、最近の傾向として、アプリケーションをノンブロッキングにすることで、より少ないリソースでより大きなスケーラビリティが得られることがわかってきました。Infinispan "
-"は、組み込みとサーバーの両方のユースケースでこの利点を利用できるように書き換えられています。"
+msgid "As many you are probably aware recent trends have shown that making applications non blocking provides quite a few benefits allowing for greater scalability with less resources. Infinispan has been written and rewriting parts to take advantage of this as we can for both embedded and server use cases."
+msgstr "ご存知の方も多いと思いますが、最近の傾向として、アプリケーションをノンブロッキングにすることで、より少ないリソースでより大きなスケーラビリティが得られることがわかってきました。Infinispan は、組み込みとサーバーの両方のユースケースでこの利点を利用できるように書き換えられています。"
 
 #. type: Title ==
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:17
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Before Infinispan 11"
 msgstr "インフィニスパン前 11"
 
 #. type: Plain text
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:26
 #, fuzzy
-msgid ""
-"The Infinispan Server has always utilized netty, however we may not have "
-"been the best about ensuring we didn't block the event loop.  The HotRod "
-"Client in 9.2.0 also utilizes netty to provide for non blocking operations.  "
-"The internal embedded interceptors were rewritten in 9.0.0 to provide for "
-"non blocking support for internal cache operations, which include put/get.  "
-"Cache store operations in 10.0.0 were offloaded to a blocking thread pool to "
-"provide non blocking support."
-msgstr ""
-"Infinispanサーバは常にnettyを利用してきましたが、イベントループをブロックしないようにすることについてはベストではなかったかもしれません。9."
-"2.0のHotRodクライアントもnettyを利用して非ブロッキング操作を提供しています。内部に埋め込まれたインターセプターは9.0."
-"0で書き換えられ、put/getを含む内部キャッシュ操作の非ブロッキングサポートを提供しています。10.0.0.0 "
-"のキャッシュストア操作は、非ブロッキングサポートを提供するために、ブロッキングスレッドプールにオフロードされました。"
+msgid "The Infinispan Server has always utilized netty, however we may not have been the best about ensuring we didn't block the event loop.  The HotRod Client in 9.2.0 also utilizes netty to provide for non blocking operations.  The internal embedded interceptors were rewritten in 9.0.0 to provide for non blocking support for internal cache operations, which include put/get.  Cache store operations in 10.0.0 were offloaded to a blocking thread pool to provide non blocking support."
+msgstr "Infinispanサーバは常にnettyを利用してきましたが、イベントループをブロックしないようにすることについてはベストではなかったかもしれません。9.2.0のHotRodクライアントもnettyを利用して非ブロッキング操作を提供しています。内部に埋め込まれたインターセプターは9.0.0で書き換えられ、put/getを含む内部キャッシュ操作の非ブロッキングサポートを提供しています。10.0.0.0 のキャッシュストア操作は、非ブロッキングサポートを提供するために、ブロッキングスレッドプールにオフロードされました。"
 
 #. type: Title ==
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:27
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Infinispan 11 Non Blocking Changes"
 msgstr "Infinispan 11 ノンブロッキングの変更点"
 
 #. type: Plain text
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:34
 #, fuzzy
-msgid ""
-"With the newest release we have rewritten lots of the internals of "
-"Infinispan to take advantage of non blocking as much as possible.  The "
-"amount of changes is quite large and a bit hard to describe them all in this "
-"blog post.  The various JIRA can be seen from https://issues.redhat.com/"
-"browse/ISPN-10309, which isn't even complete yet despite how many different "
-"changes we have done."
-msgstr ""
-"最新のリリースでは、可能な限りノンブロッキングを活用するために、Infinispan "
-"の内部を多く書き換えました。変更点の量は非常に多く、このブログ記事ですべてを説明するのは少し難しいです。様々な JIRA は https://"
-"issues.redhat.com/browse/ISPN-10309 "
-"から見ることができますが、これはどれだけ多くの変更を行ったにもかかわらず、まだ完成していません。"
+msgid "With the newest release we have rewritten lots of the internals of Infinispan to take advantage of non blocking as much as possible.  The amount of changes is quite large and a bit hard to describe them all in this blog post.  The various JIRA can be seen from https://issues.redhat.com/browse/ISPN-10309, which isn't even complete yet despite how many different changes we have done."
+msgstr "最新のリリースでは、可能な限りノンブロッキングを活用するために、Infinispan の内部を多く書き換えました。変更点の量は非常に多く、このブログ記事ですべてを説明するのは少し難しいです。様々な JIRA は https://issues.redhat.com/browse/ISPN-10309 から見ることができますが、これはどれだけ多くの変更を行ったにもかかわらず、まだ完成していません。"
 
 #. type: Plain text
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:39
 #, fuzzy
-msgid ""
-"The persistence SPI was completely rewritten in 11 with non blocking in mind "
-"as well and this will be covered in a future post as it has much more "
-"detailing it.  For now you can rest assure that all prior stores will still "
-"work, however they may have or can be optimized to take into account non "
-"blocking support."
-msgstr ""
-"永続性SPIは11でノンブロッキングを考慮して完全に書き直されました。今のところ、以前のストアはすべて動作しますが、ノンブロッキングを考慮して最適化されているかもしれませんし、最適化されているかもしれません。"
+msgid "The persistence SPI was completely rewritten in 11 with non blocking in mind as well and this will be covered in a future post as it has much more detailing it.  For now you can rest assure that all prior stores will still work, however they may have or can be optimized to take into account non blocking support."
+msgstr "永続性SPIは11でノンブロッキングを考慮して完全に書き直されました。今のところ、以前のストアはすべて動作しますが、ノンブロッキングを考慮して最適化されているかもしれませんし、最適化されているかもしれません。"
 
 #. type: Title ===
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:40
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Conversions"
 msgstr "変換"
 
 #. type: Plain text
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:45
 #, fuzzy
-msgid ""
-"Pretty much every module in the Infinispan code base has been changed to "
-"support non blocking.  If code relies upon an API that is blocking that is "
-"known to be blocking, we offload those calls to a blocking thread pool to "
-"ensure we never block the non blocking thread."
-msgstr ""
-"Infinispan "
-"のコードベースのほとんどすべてのモジュールが、非ブロッキングをサポートするように変更されました。コードがブロッキングされていることがわかっている API "
-"に依存している場合、ブロッキングされていないスレッドを決してブロッキングしないようにするために、ブロッキングスレッドプールにそれらの呼び出しをオフロードします。"
+msgid "Pretty much every module in the Infinispan code base has been changed to support non blocking.  If code relies upon an API that is blocking that is known to be blocking, we offload those calls to a blocking thread pool to ensure we never block the non blocking thread."
+msgstr "Infinispan のコードベースのほとんどすべてのモジュールが、非ブロッキングをサポートするように変更されました。コードがブロッキングされていることがわかっている API に依存している場合、ブロッキングされていないスレッドを決してブロッキングしないようにするために、ブロッキングスレッドプールにそれらの呼び出しをオフロードします。"
 
 #. type: Plain text
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:51
 #, fuzzy
-msgid ""
-"Unfortunately some modules have not yet been updated and those are ones "
-"related to query.  Query is in the middle of a giant refactoring and doing "
-"so would have caused massive conflicts and thus has been delayed to "
-"Infinispan 12.  The server works around this by ensuring write operations "
-"performed upon a cache with query are always done in a blocking thread to "
-"ensure safety."
-msgstr ""
-"残念ながら、いくつかのモジュールはまだ更新されていません。クエリは大規模なリファクタリングの真っ最中であり、それを行うと大規模なコンフリクトが発生するため、Infinispan "
-"12 "
-"に延期されました。サーバは、安全性を確保するために、クエリを含むキャッシュに対して実行される書き込み操作は常にブロッキングスレッドで行われるようにすることで、この問題を回避しています。"
+msgid "Unfortunately some modules have not yet been updated and those are ones related to query.  Query is in the middle of a giant refactoring and doing so would have caused massive conflicts and thus has been delayed to Infinispan 12.  The server works around this by ensuring write operations performed upon a cache with query are always done in a blocking thread to ensure safety."
+msgstr "残念ながら、いくつかのモジュールはまだ更新されていません。クエリは大規模なリファクタリングの真っ最中であり、それを行うと大規模なコンフリクトが発生するため、Infinispan 12 に延期されました。サーバは、安全性を確保するために、クエリを含むキャッシュに対して実行される書き込み操作は常にブロッキングスレッドで行われるようにすることで、この問題を回避しています。"
 
 #. type: Block title
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:52
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:58
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Thread Pools"
 msgstr "スレッドプール"
 
 #. type: Plain text
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:57
 #, fuzzy
-msgid ""
-"Infinispan utilizes various thread pools for handling of operations.  This "
-"table details how many thread pools each version of Infinispan can have."
-msgstr ""
-"Infinispan は、操作を処理するためにさまざまなスレッドプールを利用します。この表は、Infinispan "
-"の各バージョンが持つことができるスレッドプールの数を詳細に示しています。"
+msgid "Infinispan utilizes various thread pools for handling of operations.  This table details how many thread pools each version of Infinispan can have."
+msgstr "Infinispan は、操作を処理するためにさまざまなスレッドプールを利用します。この表は、Infinispan の各バージョンが持つことができるスレッドプールの数を詳細に示しています。"
 
 #. type: Table
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:60
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:78
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Version"
 msgstr "バージョン"
 
 #. type: Table
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:60
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:78
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Embedded"
 msgstr "埋め込み"
 
 #. type: Table
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:62
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:80
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Server"
 msgstr "サーバー"
 
 #. type: Table
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:63
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:81
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "ISPN 10"
 msgstr "アイエスピーエヌ"
 
 #. type: Table
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:64
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "5"
 msgstr "5"
 
 #. type: Table
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:66
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "7"
 msgstr "7"
 
 #. type: Table
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:67
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:85
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "ISPN 11"
 msgstr "アイエスピーエヌ11"
 
 #. type: Table
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:68
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "2"
 msgstr "2"
 
 #. type: Table
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:69
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "3"
 msgstr "3"
 
 #. type: Plain text
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:75
 #, fuzzy
-msgid ""
-"As you can see there is more than a 50 percent reduction of the number of "
-"thread pools in both embedded and server modes. This in turn has allowed for "
-"a reduction of the default number of threads as well as seen in the next "
-"table. Note that N is how many cores that are available to the JVM."
-msgstr ""
-"ご覧のように、組み込みモードとサーバーモードの両方でスレッドプールの数が50%以上削減されています。これにより、次の表に示すように、デフォルトのスレッド数を削減することができました。Nは、JVMで利用可能なコア数であることに注意してください。"
+msgid "As you can see there is more than a 50 percent reduction of the number of thread pools in both embedded and server modes. This in turn has allowed for a reduction of the default number of threads as well as seen in the next table. Note that N is how many cores that are available to the JVM."
+msgstr "ご覧のように、組み込みモードとサーバーモードの両方でスレッドプールの数が50%以上削減されています。これにより、次の表に示すように、デフォルトのスレッド数を削減することができました。Nは、JVMで利用可能なコア数であることに注意してください。"
 
 #. type: Block title
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:76
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Maximum Default Thread Count"
 msgstr "最大デフォルトのスレッド数"
 
 #. type: Table
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:82
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "310 + N"
 msgstr "310 + N"
 
 #. type: Table
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:84
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "470 + (2 * N)"
 msgstr "470 + (2 * N)"
 
 #. type: Table
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:86
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "150 + (2 * N)"
 msgstr "150 + (2 * N)"
 
 #. type: Table
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:87
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "150 + (4 * N)"
 msgstr "150 + (4 * N)"
 
 #. type: Plain text
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:92
 #, fuzzy
-msgid ""
-"After this consolidation we have non blocking and blocking thread pools.  As "
-"you can see this allows us to reduce the maximum number of threads in "
-"embedded by about half and the server to a third of what it used to be "
-"before."
-msgstr ""
-"この統合の後、私たちは非ブロッキングとブロッキングのスレッドプールを持つようになりました。ご覧のように、これにより、組み込みの最大スレッド数を約半分に減らすことができ、サーバは以前の3分の1になりました。"
+msgid "After this consolidation we have non blocking and blocking thread pools.  As you can see this allows us to reduce the maximum number of threads in embedded by about half and the server to a third of what it used to be before."
+msgstr "この統合の後、私たちは非ブロッキングとブロッキングのスレッドプールを持つようになりました。ご覧のように、これにより、組み込みの最大スレッド数を約半分に減らすことができ、サーバは以前の3分の1になりました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:96
 #, fuzzy
-msgid ""
-"The server has an additional thread pool for the netty event loop and "
-"unfortunately we cannot consolidate this thread pool, but it is planned for "
-"Infinispan 12, which will get us to the same number of threads and thread "
-"pools for both embedded and server modes."
-msgstr ""
-"サーバーにはnettyイベントループ用の追加スレッドプールがあり、残念ながらこのスレッドプールを統合することはできませんが、Infinispan "
-"12で計画されており、組み込みモードとサーバーモードの両方で同じ数のスレッドとスレッドプールを利用できるようになります。"
+msgid "The server has an additional thread pool for the netty event loop and unfortunately we cannot consolidate this thread pool, but it is planned for Infinispan 12, which will get us to the same number of threads and thread pools for both embedded and server modes."
+msgstr "サーバーにはnettyイベントループ用の追加スレッドプールがあり、残念ながらこのスレッドプールを統合することはできませんが、Infinispan 12で計画されており、組み込みモードとサーバーモードの両方で同じ数のスレッドとスレッドプールを利用できるようになります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:98
 #, fuzzy
-msgid ""
-"Note that this doesn't talk about the JGroups thread pool as this is "
-"unchanged and is the same."
-msgstr ""
-"JGroups スレッドプールは変更されておらず同じなので、これは JGroups スレッドプールについての話ではないことに注意してください。"
+msgid "Note that this doesn't talk about the JGroups thread pool as this is unchanged and is the same."
+msgstr "JGroups スレッドプールは変更されておらず同じなので、これは JGroups スレッドプールについての話ではないことに注意してください。"
 
 #. type: Title ===
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:99
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "BlockHound"
 msgstr "ブロックハウンド"
 
 #. type: Plain text
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:107
 #, fuzzy
-msgid ""
-"If you are familiar with making code non blocking it can be a very difficult "
-"task as even the most mundane call can be hiding something blocking, even if "
-"it is very brief.  We could write something to do detect such calls, but "
-"there is already an open source tool that does exactly what we needed.  This "
-"tool is BlockHound, which can detect blocking calls at runtime.  More "
-"information about it can be found at https://github.com/reactor/BlockHound."
-msgstr ""
-"コードを非ブロッキングにすることに慣れている人ならば、非常に平凡な呼び出しでも、たとえそれが非常に短いものであっても、何かがブロッキングされていることを隠している可能性があるので、それは非常に困難な作業になるかもしれません。そのような呼び出しを検出するために何かを書くことができますが、私たちが必要としていたことを正確に行うオープンソースのツールがすでに存在します。このツールはBlockHoundで、実行時にブロッキングコールを検出することができます。このツールについての詳細は "
-"https://github.com/reactor/BlockHound を参照してください。"
+msgid "If you are familiar with making code non blocking it can be a very difficult task as even the most mundane call can be hiding something blocking, even if it is very brief.  We could write something to do detect such calls, but there is already an open source tool that does exactly what we needed.  This tool is BlockHound, which can detect blocking calls at runtime.  More information about it can be found at https://github.com/reactor/BlockHound."
+msgstr "コードを非ブロッキングにすることに慣れている人ならば、非常に平凡な呼び出しでも、たとえそれが非常に短いものであっても、何かがブロッキングされていることを隠している可能性があるので、それは非常に困難な作業になるかもしれません。そのような呼び出しを検出するために何かを書くことができますが、私たちが必要としていたことを正確に行うオープンソースのツールがすでに存在します。このツールはBlockHoundで、実行時にブロッキングコールを検出することができます。このツールについての詳細は https://github.com/reactor/BlockHound を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:114
 #, fuzzy
-msgid ""
-"Infinispan takes advantage of blockhound in that we configure it at the "
-"module level.  This allows the end user to even add block hound with "
-"Infinispan in embedded mode and it should work to test out to ensure that "
-"interactions with Infinispan are not blocking when needed.  Note that we do "
-"not yet support block hound for the client, despite many methods are not "
-"blocking today."
-msgstr ""
-"Infinispan は、モジュールレベルで設定するという点で blockhound "
-"を活用しています。これにより、エンドユーザーは埋め込みモードでInfinispanでブロックハウンドを追加することさえ可能になり、必要なときにInfinispanとの相互作用がブロックされないことを確認するためにテストアウトするために動作するはずです。多くのメソッドが今日ブロッキングされていないにもかかわらず、我々はまだクライアントのためのブロックハウンドをサポートしていないことに注意してください。"
+msgid "Infinispan takes advantage of blockhound in that we configure it at the module level.  This allows the end user to even add block hound with Infinispan in embedded mode and it should work to test out to ensure that interactions with Infinispan are not blocking when needed.  Note that we do not yet support block hound for the client, despite many methods are not blocking today."
+msgstr "Infinispan は、モジュールレベルで設定するという点で blockhound を活用しています。これにより、エンドユーザーは埋め込みモードでInfinispanでブロックハウンドを追加することさえ可能になり、必要なときにInfinispanとの相互作用がブロックされないことを確認するためにテストアウトするために動作するはずです。多くのメソッドが今日ブロッキングされていないにもかかわらず、我々はまだクライアントのためのブロックハウンドをサポートしていないことに注意してください。"
 
 #. type: Title ==
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:115
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "What remains for Infinispan 12"
 msgstr "インフィニスパン12のために残っているもの"
 
 #. type: Plain text
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:118
 #, fuzzy
-msgid ""
-"Infinispan 12 should bring the entire non blocking saga to its hopfully "
-"final completion."
+msgid "Infinispan 12 should bring the entire non blocking saga to its hopfully final completion."
 msgstr "Infinispan 12は、ノンブロッキングのサーガ全体をその希望に満ちた最終的な完成に持ってくるはずです。"
 
 #. type: Plain text
@@ -358,9 +267,7 @@ msgstr "前述のクエリモジュールを改良する必要があります。
 #. type: Plain text
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:121
 #, fuzzy
-msgid ""
-"Existing supported cache stores need to be rewritten to directly support non "
-"blocking"
+msgid "Existing supported cache stores need to be rewritten to directly support non blocking"
 msgstr "既存のサポートされているキャッシュストアは、ノンブロッキングを直接サポートするように書き換える必要があります。"
 
 #. type: Plain text
@@ -378,9 +285,5 @@ msgstr "サーバーイベントループと非ブロッキングスレッドプ
 #. type: Plain text
 #: upstream/_posts/2020-08-31-nonblocking_nearing.adoc:125
 #, fuzzy
-msgid ""
-"Also if time permits the Infinispan Client would be ensured to be fully non "
-"blocking and integrate with BlockHound to ensure client apps behave properly."
-""
-msgstr ""
-"また、時間が許せば、Infinispanクライアントは完全に非ブロッキングであることが保証され、クライアントアプリが適切に動作することを保証するためにBlockHoundと統合されます。"
+msgid "Also if time permits the Infinispan Client would be ensured to be fully non blocking and integrate with BlockHound to ensure client apps behave properly."
+msgstr "また、時間が許せば、Infinispanクライアントは完全に非ブロッキングであることが保証され、クライアントアプリが適切に動作することを保証するためにBlockHoundと統合されます。"

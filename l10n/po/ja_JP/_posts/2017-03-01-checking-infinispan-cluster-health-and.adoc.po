@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:15
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Checking Infinispan cluster health and Kubernetes/OpenShift\n"
@@ -36,13 +36,9 @@ msgid ""
 "\"state transfer\",\n"
 "\"health\",\n"
 "]\n"
-"thumbnail: https://4.bp.blogspot.com/-VGt1uUFgHJc/WLAnfWUl3eI/AAAAAAAAIgA/"
-"aGllPftLOMgnFFkApMeSCgosFhjYCzhOwCLcB/s72-c/Screenshot%2Bfrom%2B2017-02-"
-"24%2B13-30-41.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2204273330727028984\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/03/checking-infinispan-"
-"cluster-health-and.html\n"
+"thumbnail: https://4.bp.blogspot.com/-VGt1uUFgHJc/WLAnfWUl3eI/AAAAAAAAIgA/aGllPftLOMgnFFkApMeSCgosFhjYCzhOwCLcB/s72-c/Screenshot%2Bfrom%2B2017-02-24%2B13-30-41.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2204273330727028984\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/03/checking-infinispan-cluster-health-and.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -55,52 +51,33 @@ msgstr ""
 "\"state transfer\",\n"
 "\"health\",\n"
 "]\n"
-"thumbnail: https://4.bp.blogspot.com/-VGt1uUFgHJc/WLAnfWUl3eI/AAAAAAAAIgA/"
-"aGllPftLOMgnFFkApMeSCgosFhjYCzhOwCLcB/s72-c/Screenshot%2Bfrom%2B2017-02-"
-"24%2B13-30-41.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2204273330727028984\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/03/checking-infinispan-"
-"cluster-health-and.html\n"
+"thumbnail: https://4.bp.blogspot.com/-VGt1uUFgHJc/WLAnfWUl3eI/AAAAAAAAIgA/aGllPftLOMgnFFkApMeSCgosFhjYCzhOwCLcB/s72-c/Screenshot%2Bfrom%2B2017-02-24%2B13-30-41.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2204273330727028984\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/03/checking-infinispan-cluster-health-and.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:20
 #, fuzzy
-msgid ""
-"Modern applications and microservices often need to expose their health "
-"status. A common example is https://docs.spring.io/spring-boot/docs/current-"
-"SNAPSHOT/reference/htmlsingle/#production-ready[Spring Actuator] but there "
-"are also many different ways of doing that. "
-msgstr ""
-"最近のアプリケーションやマイクロサービスは、しばしば健康状態を公開する必要があります。一般的な例としては link:https://docs."
-"spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#production-"
-"ready[Spring Actuator] がありますが、それ以外にも様々な方法があります。"
+msgid "Modern applications and microservices often need to expose their health status. A common example is https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#production-ready[Spring Actuator] but there are also many different ways of doing that. "
+msgstr "最近のアプリケーションやマイクロサービスは、しばしば健康状態を公開する必要があります。一般的な例としては link:https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#production-ready[Spring Actuator] がありますが、それ以外にも様々な方法があります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:26
 #, fuzzy
-msgid ""
-"Starting from Infinispan 9.0.0.Beta2 we introduced the http://infinispan.org/"
-"docs/dev/user_guide/user_guide.html#monitoring_cluster_health[HealthCheck "
-"API]. It is accessible in both Embedded and Client/Server mode. "
-msgstr ""
-"Infinispan 9.0.0.0.Beta2 から、 link:http://infinispan.org/docs/dev/user_guide/"
-"user_guide.html#monitoring_cluster_health[HealthCheck API を] "
-"導入しました。これは、組み込みモードとクライアント/サーバーモードの両方でアクセス可能です。"
+msgid "Starting from Infinispan 9.0.0.Beta2 we introduced the http://infinispan.org/docs/dev/user_guide/user_guide.html#monitoring_cluster_health[HealthCheck API]. It is accessible in both Embedded and Client/Server mode. "
+msgstr "Infinispan 9.0.0.0.Beta2 から、 link:http://infinispan.org/docs/dev/user_guide/user_guide.html#monitoring_cluster_health[HealthCheck API を] 導入しました。これは、組み込みモードとクライアント/サーバーモードの両方でアクセス可能です。"
 
 #. type: Title ==
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:29
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Cluster Health and Embedded Mode"
 msgstr "クラスタの健全性と組み込みモード"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:35
 #, fuzzy
-msgid ""
-"The HealthCheck API might be obtained directly from EmbeddedCacheManager and "
-"it looks like this:"
+msgid "The HealthCheck API might be obtained directly from EmbeddedCacheManager and it looks like this:"
 msgstr "HealthCheck API は EmbeddedCacheManager から直接取得することができ、以下のようになります。"
 
 #. type: Plain text
@@ -112,51 +89,32 @@ msgstr "APIの良いところは、デフォルトでJMXで公開されている
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:45
 #, fuzzy
-msgid ""
-"https://4.bp.blogspot.com/-VGt1uUFgHJc/WLAnfWUl3eI/AAAAAAAAIgA/"
-"aGllPftLOMgnFFkApMeSCgosFhjYCzhOwCLcB/s1600/Screenshot%2Bfrom%2B2017-02-"
-"24%2B13-30-41.png[image:https://4.bp.blogspot.com/-VGt1uUFgHJc/WLAnfWUl3eI/"
-"AAAAAAAAIgA/aGllPftLOMgnFFkApMeSCgosFhjYCzhOwCLcB/s640/"
-"Screenshot%2Bfrom%2B2017-02-24%2B13-30-41.png[image,width=640,height=403]]"
-msgstr ""
-"link:https://4.bp.blogspot.com/-VGt1uUFgHJc/WLAnfWUl3eI/AAAAAAAAIgA/"
-"aGllPftLOMgnFFkApMeSCgosFhjYCzhOwCLcB/s1600/Screenshot%2Bfrom%2B2017-02-"
-"24%2B13-30-41.png[]"
+msgid "https://4.bp.blogspot.com/-VGt1uUFgHJc/WLAnfWUl3eI/AAAAAAAAIgA/aGllPftLOMgnFFkApMeSCgosFhjYCzhOwCLcB/s1600/Screenshot%2Bfrom%2B2017-02-24%2B13-30-41.png[image:https://4.bp.blogspot.com/-VGt1uUFgHJc/WLAnfWUl3eI/AAAAAAAAIgA/aGllPftLOMgnFFkApMeSCgosFhjYCzhOwCLcB/s640/Screenshot%2Bfrom%2B2017-02-24%2B13-30-41.png[image,width=640,height=403]]"
+msgstr "link:https://4.bp.blogspot.com/-VGt1uUFgHJc/WLAnfWUl3eI/AAAAAAAAIgA/aGllPftLOMgnFFkApMeSCgosFhjYCzhOwCLcB/s1600/Screenshot%2Bfrom%2B2017-02-24%2B13-30-41.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:50
 #, fuzzy
-msgid ""
-"More information about using HealthCheck API in Embedded Mode might be found "
-"here:"
+msgid "More information about using HealthCheck API in Embedded Mode might be found here:"
 msgstr "組み込みモードでの HealthCheck API の使用に関する詳細は、こちらを参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:52
 #, fuzzy
-msgid ""
-"http://infinispan.org/docs/dev/user_guide/user_guide."
-"html#monitoring_cluster_health"
-msgstr ""
-"http://infinispan.org/docs/dev/user_guide/user_guide."
-"html#monitoring_cluster_health"
+msgid "http://infinispan.org/docs/dev/user_guide/user_guide.html#monitoring_cluster_health"
+msgstr "http://infinispan.org/docs/dev/user_guide/user_guide.html#monitoring_cluster_health"
 
 #. type: Title ==
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:55
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Cluster Health and Server Mode"
 msgstr "クラスタの健全性とサーバーモード"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:63
 #, fuzzy
-msgid ""
-"Since Infinispan is based on Wildfly, we decided to use CLI as well as built-"
-"in https://docs.jboss.org/author/display/WFLY10/"
-"The+HTTP+management+API[Management REST] interface."
-msgstr ""
-"InfinispanはWildflyをベースにしているので、 link:https://docs.jboss.org/author/display/"
-"WFLY10/The+HTTP+management+API[管理用のREST] インターフェースを内蔵しているだけでなく、CLIを使うことにしました。"
+msgid "Since Infinispan is based on Wildfly, we decided to use CLI as well as built-in https://docs.jboss.org/author/display/WFLY10/The+HTTP+management+API[Management REST] interface."
+msgstr "InfinispanはWildflyをベースにしているので、 link:https://docs.jboss.org/author/display/WFLY10/The+HTTP+management+API[管理用のREST] インターフェースを内蔵しているだけでなく、CLIを使うことにしました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:67
@@ -167,8 +125,7 @@ msgstr "実行中のサーバーの状態を確認する例です。"
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:74
 #, fuzzy
-msgid ""
-"Querying the HealthCheck API using the Management REST is also very simple:"
+msgid "Querying the HealthCheck API using the Management REST is also very simple:"
 msgstr "管理 REST を使用した HealthCheck API のクエリも非常に簡単です。"
 
 #. type: Plain text
@@ -180,105 +137,55 @@ msgstr "REST エンドポイントでは、適切な資格情報を使用しな�
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:85
 #, fuzzy
-msgid ""
-"More information about the HealthCheckA API in Server Mode might be found "
-"here:"
+msgid "More information about the HealthCheckA API in Server Mode might be found here:"
 msgstr "サーバーモードのHealthCheckA APIの詳細については、こちらを参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:87
 #, fuzzy
-msgid ""
-"http://infinispan.org/docs/dev/server_guide/server_guide."
-"html#health_monitoring"
-msgstr ""
-"http://infinispan.org/docs/dev/server_guide/server_guide."
-"html#health_monitoring"
+msgid "http://infinispan.org/docs/dev/server_guide/server_guide.html#health_monitoring"
+msgstr "http://infinispan.org/docs/dev/server_guide/server_guide.html#health_monitoring"
 
 #. type: Title ==
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:90
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Cluster Health and Kubernetes/OpenShift"
 msgstr "クラスタの健全性とKubernetes/OpenShift"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:103
 #, fuzzy
-msgid ""
-"Monitoring cluster health is crucial for Clouds Platforms such as Kubernetes "
-"and OpenShift. Those Clouds use a concept of immutable Pods.  This means "
-"that every time you need change anything in your application (changing "
-"configuration for the instance), you need to replace the old instances with "
-"new ones. There are several ways of doing that but we highly recommend using "
-"https://docs.openshift.org/latest/dev_guide/deployments/"
-"deployment_strategies.html#when-to-use-a-rolling-deployment[Rolling Updates]."
-" We also recommend to tune the configuration and instruct Kubernetes/"
-"OpenShift to replace Pods one by one (I will show you an example in a "
-"moment). "
-msgstr ""
-"クラスタの健全性を監視することは、KubernetesやOpenShiftなどのクラウドプラットフォームにとって非常に重要です。これらのクラウドでは、不変ポッドの概念を使用しています。これは、アプリケーションで何かを変更する（インスタンスの設定を変更する）必要があるたびに、古いインスタンスを新しいインスタンスに置き換える必要があることを意味します。これにはいくつかの方法がありますが、 "
-"link:https://docs.openshift.org/latest/dev_guide/deployments/"
-"deployment_strategies.html#when-to-use-a-rolling-deployment[ローリングアップデート] "
-"を使用することを強くお勧めします。また、構成をチューニングして、Kubernetes/"
-"OpenShiftにPodsを1つずつ入れ替えるように指示することをお勧めします（しばらくしたら例をお見せします）。"
+msgid "Monitoring cluster health is crucial for Clouds Platforms such as Kubernetes and OpenShift. Those Clouds use a concept of immutable Pods.  This means that every time you need change anything in your application (changing configuration for the instance), you need to replace the old instances with new ones. There are several ways of doing that but we highly recommend using https://docs.openshift.org/latest/dev_guide/deployments/deployment_strategies.html#when-to-use-a-rolling-deployment[Rolling Updates]. We also recommend to tune the configuration and instruct Kubernetes/OpenShift to replace Pods one by one (I will show you an example in a moment). "
+msgstr "クラスタの健全性を監視することは、KubernetesやOpenShiftなどのクラウドプラットフォームにとって非常に重要です。これらのクラウドでは、不変ポッドの概念を使用しています。これは、アプリケーションで何かを変更する（インスタンスの設定を変更する）必要があるたびに、古いインスタンスを新しいインスタンスに置き換える必要があることを意味します。これにはいくつかの方法がありますが、 link:https://docs.openshift.org/latest/dev_guide/deployments/deployment_strategies.html#when-to-use-a-rolling-deployment[ローリングアップデート] を使用することを強くお勧めします。また、構成をチューニングして、Kubernetes/OpenShiftにPodsを1つずつ入れ替えるように指示することをお勧めします（しばらくしたら例をお見せします）。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:116
 #, fuzzy
-msgid ""
-"Our goal is to configure Kubernetes/OpenShift in such a way, that each time "
-"a new Pod is joining or leaving the cluster a https://github.com/infinispan/"
-"infinispan/wiki/Non-Blocking-State-Transfer-V2[State Transfer] is triggered. "
-"When data is being transferred between the nodes, the https://docs.openshift."
-"org/latest/dev_guide/application_health.html[Readiness Probe] needs to "
-"report failures and prevent Kubernetes/OpenShift from doing progress in "
-"Rolling Update procedure. Once the cluster is back in stable state, "
-"Kubernetes/OpenShift can replace another node. This process loops until all "
-"nodes are replaced. "
-msgstr ""
-"私たちの目標は、新しいPodがクラスタに参加または離脱するたびに link:https://github.com/infinispan/"
-"infinispan/wiki/Non-Blocking-State-Transfer-V2[状態転送] "
-"がトリガーされるような方法でKubernetes/OpenShiftを構成することです。データがノード間で転送されているとき、 link:https://"
-"docs.openshift.org/latest/dev_guide/application_health.html[Readiness Probe] "
-"は障害を報告し、Kubernetes/OpenShiftがRolling "
-"Update手順で進行するのを防ぐ必要があります。クラスタが安定した状態に戻ると、Kubernetes/"
-"OpenShiftは別のノードを置き換えることができます。このプロセスは、すべてのノードが置換されるまでループします。"
+msgid "Our goal is to configure Kubernetes/OpenShift in such a way, that each time a new Pod is joining or leaving the cluster a https://github.com/infinispan/infinispan/wiki/Non-Blocking-State-Transfer-V2[State Transfer] is triggered. When data is being transferred between the nodes, the https://docs.openshift.org/latest/dev_guide/application_health.html[Readiness Probe] needs to report failures and prevent Kubernetes/OpenShift from doing progress in Rolling Update procedure. Once the cluster is back in stable state, Kubernetes/OpenShift can replace another node. This process loops until all nodes are replaced. "
+msgstr "私たちの目標は、新しいPodがクラスタに参加または離脱するたびに link:https://github.com/infinispan/infinispan/wiki/Non-Blocking-State-Transfer-V2[状態転送] がトリガーされるような方法でKubernetes/OpenShiftを構成することです。データがノード間で転送されているとき、 link:https://docs.openshift.org/latest/dev_guide/application_health.html[Readiness Probe] は障害を報告し、Kubernetes/OpenShiftがRolling Update手順で進行するのを防ぐ必要があります。クラスタが安定した状態に戻ると、Kubernetes/OpenShiftは別のノードを置き換えることができます。このプロセスは、すべてのノードが置換されるまでループします。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:121
 #, fuzzy
-msgid ""
-"Luckily, we introduced two scripts in our Docker image, which can be used "
-"out of the box for Liveness and Readiness Probes:"
-msgstr ""
-"幸いなことに、Dockerイメージの中に2つのスクリプトを導入しましたが、これはLivenessとReadinessのプローブにすぐに使えるものです。"
+msgid "Luckily, we introduced two scripts in our Docker image, which can be used out of the box for Liveness and Readiness Probes:"
+msgstr "幸いなことに、Dockerイメージの中に2つのスクリプトを導入しましたが、これはLivenessとReadinessのプローブにすぐに使えるものです。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:123
 #, fuzzy
-msgid ""
-"https://github.com/jboss-dockerfiles/infinispan/blob/master/server/"
-"is_healthy.sh[/usr/local/bin/is_healthy.sh]"
-msgstr ""
-"link:https://github.com/jboss-dockerfiles/infinispan/blob/master/server/"
-"is_healthy.sh[/usr/local/bin/is_healthy.sh]"
+msgid "https://github.com/jboss-dockerfiles/infinispan/blob/master/server/is_healthy.sh[/usr/local/bin/is_healthy.sh]"
+msgstr "link:https://github.com/jboss-dockerfiles/infinispan/blob/master/server/is_healthy.sh[/usr/local/bin/is_healthy.sh]"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:124
 #, fuzzy
-msgid ""
-"https://github.com/jboss-dockerfiles/infinispan/blob/master/server/"
-"is_running.sh[/usr/local/bin/is_running.sh]"
-msgstr ""
-"link:https://github.com/jboss-dockerfiles/infinispan/blob/master/server/"
-"is_running.sh[/usr/local/bin/is_running.sh]"
+msgid "https://github.com/jboss-dockerfiles/infinispan/blob/master/server/is_running.sh[/usr/local/bin/is_running.sh]"
+msgstr "link:https://github.com/jboss-dockerfiles/infinispan/blob/master/server/is_running.sh[/usr/local/bin/is_running.sh]"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:127
 #, fuzzy
-msgid ""
-"At this point we are ready to put all the things together and assemble "
-"DeploymentConfig:"
+msgid "At this point we are ready to put all the things together and assemble DeploymentConfig:"
 msgstr "この時点で、すべてのものをまとめてDeploymentConfigを組み立てる準備ができました。"
 
 #. type: Plain text
@@ -289,86 +196,63 @@ msgstr "構成の面白いところ。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:137
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "*lines 13 and 14:* We allocate additional capacity for the Rolling\n"
 "Update and allow one Pod to be down. This ensures Kubernetes/OpenShift\n"
 "replaces nodes one by one.\n"
-msgstr ""
-"*13行目と14行目:* ローリングアップデートのために追加の容量を割り当て、1つのPodがダウンすることを許可します。これにより、Kubernetes/"
-"OpenShiftがノードを1つずつ確実に入れ替えます。"
+msgstr "*13行目と14行目:* ローリングアップデートのために追加の容量を割り当て、1つのPodがダウンすることを許可します。これにより、Kubernetes/OpenShiftがノードを1つずつ確実に入れ替えます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:140
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "*line 44:* Sometimes shutting a Pod down takes a little while. It is\n"
 "always better to wait until it terminates gracefully than taking the\n"
 "risk of losing data.\n"
-msgstr ""
-"*44行目* "
-"Podのシャットダウンには少し時間がかかることがあります。データを失うリスクを冒すよりも、潔く終了するまで待った方がいいのはいつものことです。"
+msgstr "*44行目* Podのシャットダウンには少し時間がかかることがあります。データを失うリスクを冒すよりも、潔く終了するまで待った方がいいのはいつものことです。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:143
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "*lines 45 - 53:* The Liveness Probe definition. Note that when a node\n"
 "is transferring the data it might highly occupied. It is wise to set\n"
 "higher value of '_failureThreshold_'.\n"
-msgstr ""
-"*45行目～53行目:* Liveness "
-"Probeの定義。ノードがデータを転送しているときには、ノードが非常に占有されている可能性があることに注意してください。 "
-"_failureThreshold_ ' の値を高く設定するのが賢明です。"
+msgstr "*45行目～53行目:* Liveness Probeの定義。ノードがデータを転送しているときには、ノードが非常に占有されている可能性があることに注意してください。 _failureThreshold_ ' の値を高く設定するのが賢明です。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:146
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "*lines 54 - 62:* The same rule as the above. The bigger the cluster\n"
 "is, the higher the value of '_successThreshold_' as well as\n"
 "'_failureThreshold_'.\n"
-msgstr ""
-"*54行目〜62行目：* 上記と同じルールです。クラスタが大きいほど、 _'_ _failureThreshold_ "
-"_'と同様に'successThreshold_ 'の値も大きくなります。"
+msgstr "*54行目〜62行目：* 上記と同じルールです。クラスタが大きいほど、 _'_ _failureThreshold_ _'と同様に'successThreshold_ 'の値も大きくなります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:149
 #, fuzzy
-msgid ""
-"Feel free to checkout other articles about deploying Infinispan on "
-"Kubernetes/OpenShift:"
+msgid "Feel free to checkout other articles about deploying Infinispan on Kubernetes/OpenShift:"
 msgstr "Kubernetes/OpenShift上でのInfinispanのデプロイについては、他の記事もご自由にご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:151
 #, fuzzy
-msgid ""
-"http://blog.infinispan.org/2016/08/running-infinispan-cluster-on-openshift."
-"html"
-msgstr ""
-"http://blog.infinispan.org/2016/08/running-infinispan-cluster-on-openshift."
-"html"
+msgid "http://blog.infinispan.org/2016/08/running-infinispan-cluster-on-openshift.html"
+msgstr "http://blog.infinispan.org/2016/08/running-infinispan-cluster-on-openshift.html"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:152
 #, fuzzy
-msgid ""
-"http://blog.infinispan.org/2016/08/running-infinispan-cluster-on-kubernetes."
-"html"
-msgstr ""
-"http://blog.infinispan.org/2016/08/running-infinispan-cluster-on-kubernetes."
-"html"
+msgid "http://blog.infinispan.org/2016/08/running-infinispan-cluster-on-kubernetes.html"
+msgstr "http://blog.infinispan.org/2016/08/running-infinispan-cluster-on-kubernetes.html"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:153
 #, fuzzy
-msgid ""
-"http://blog.infinispan.org/2016/09/configuration-management-on-openshift."
-"html"
-msgstr ""
-"http://blog.infinispan.org/2016/09/configuration-management-on-openshift."
-"html"
+msgid "http://blog.infinispan.org/2016/09/configuration-management-on-openshift.html"
+msgstr "http://blog.infinispan.org/2016/09/configuration-management-on-openshift.html"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-01-checking-infinispan-cluster-health-and.adoc:154

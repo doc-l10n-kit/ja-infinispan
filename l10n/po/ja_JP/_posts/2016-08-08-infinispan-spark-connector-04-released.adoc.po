@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-08-08-infinispan-spark-connector-04-released.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-08-infinispan-spark-connector-04-released.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan Spark connector 0.4 released!\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2016-08-08T01:24:00.000-07:00'\n"
 "author: gustavonalle\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"9078392385971166573\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/08/infinispan-spark-"
-"connector-04-released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-9078392385971166573\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/08/infinispan-spark-connector-04-released.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,48 +42,27 @@ msgstr ""
 "date: '2016-08-08T01:24:00.000-07:00'\n"
 "author: gustavonalle\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"9078392385971166573\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/08/infinispan-spark-"
-"connector-04-released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-9078392385971166573\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/08/infinispan-spark-connector-04-released.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-08-infinispan-spark-connector-04-released.adoc:16
 #, fuzzy
-msgid ""
-"This release is compatible with Apache Spark 2.0.0 and has support to "
-"connect to secured Infinispan Servers; for a full list of changes, please "
-"see the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12316820&version=12330066[release notes.]"
-msgstr ""
-"このリリースは Apache Spark 2.0.0.0 と互換性があり、セキュアな Infinispan サーバへの接続をサポートしています link:"
-"https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12316820&version="
-"12330066[。]"
+msgid "This release is compatible with Apache Spark 2.0.0 and has support to connect to secured Infinispan Servers; for a full list of changes, please see the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12316820&version=12330066[release notes.]"
+msgstr "このリリースは Apache Spark 2.0.0.0 と互換性があり、セキュアな Infinispan サーバへの接続をサポートしています link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12316820&version=12330066[。]"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-08-infinispan-spark-connector-04-released.adoc:21
 #, fuzzy
-msgid ""
-"For more information about the connector, including Maven and sbt "
-"coordinates, consult the https://github.com/infinispan/infinispan-spark/blob/"
-"master/README.md[getting start guide.]"
-msgstr ""
-"Maven と sbt の座標を含むコネクタの詳細については、『 link:https://github.com/infinispan/"
-"infinispan-spark/blob/master/README.md[スタートアップガイド] 』を参照してください link:https://"
-"github.com/infinispan/infinispan-spark/blob/master/README.md[。]"
+msgid "For more information about the connector, including Maven and sbt coordinates, consult the https://github.com/infinispan/infinispan-spark/blob/master/README.md[getting start guide.]"
+msgstr "Maven と sbt の座標を含むコネクタの詳細については、『 link:https://github.com/infinispan/infinispan-spark/blob/master/README.md[スタートアップガイド] 』を参照してください link:https://github.com/infinispan/infinispan-spark/blob/master/README.md[。]"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-08-infinispan-spark-connector-04-released.adoc:26
 #, fuzzy
-msgid ""
-"To get help, go to the usual Infinispan channels: #infinispan on freenode, "
-"https://developer.jboss.org/en/infinispan/content[user forum] and the https:/"
-"/lists.jboss.org/mailman/listinfo/infinispan-dev[dev list]."
-msgstr ""
-"助けを求めるには、通常のInfinispanのチャンネルにアクセスしてください。freenodeの#infinispan、 link:https://"
-"developer.jboss.org/en/infinispan/content[ユーザーフォーラム] 、 link:https://lists."
-"jboss.org/mailman/listinfo/infinispan-dev[開発者リスト] 。"
+msgid "To get help, go to the usual Infinispan channels: #infinispan on freenode, https://developer.jboss.org/en/infinispan/content[user forum] and the https://lists.jboss.org/mailman/listinfo/infinispan-dev[dev list]."
+msgstr "助けを求めるには、通常のInfinispanのチャンネルにアクセスしてください。freenodeの#infinispan、 link:https://developer.jboss.org/en/infinispan/content[ユーザーフォーラム] 、 link:https://lists.jboss.org/mailman/listinfo/infinispan-dev[開発者リスト] 。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-08-infinispan-spark-connector-04-released.adoc:28

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:8
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan Operator 1.1.1 is out!\n"
@@ -45,19 +45,13 @@ msgstr ""
 #. type: Plain text
 #: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:13
 #, fuzzy
-msgid ""
-"We're pleased to announce https://operatorhub.io/operator/infinispan[version "
-"1.1.1 of the Infinispan Operator] for Kubernetes and OpenShift."
-msgstr ""
-"Kubernetes と OpenShift 用の link:https://operatorhub.io/operator/"
-"infinispan[Infinispan Operator のバージョン 1.1] .1 を発表します。"
+msgid "We're pleased to announce https://operatorhub.io/operator/infinispan[version 1.1.1 of the Infinispan Operator] for Kubernetes and OpenShift."
+msgstr "Kubernetes と OpenShift 用の link:https://operatorhub.io/operator/infinispan[Infinispan Operator のバージョン 1.1] .1 を発表します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:15
 #, fuzzy
-msgid ""
-"This release has focused on fixing bugs and improving robustness, mainly "
-"related to the following:"
+msgid "This release has focused on fixing bugs and improving robustness, mainly related to the following:"
 msgstr "今回のリリースでは、主に以下に関連するバグの修正と堅牢性の向上に重点を置いています。"
 
 #. type: Plain text
@@ -81,115 +75,71 @@ msgstr "丸太片付け"
 #. type: Plain text
 #: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:22
 #, fuzzy
-msgid ""
-"Our community documentation on https://infinispan.org/documentation has also "
-"been updated and improved. You can find some of the changes at:"
-msgstr ""
-"https://infinispan.org/documentation "
-"のコミュニティ文書も更新され、改善されました。変更点のいくつかはこちらでご覧いただけます。"
+msgid "Our community documentation on https://infinispan.org/documentation has also been updated and improved. You can find some of the changes at:"
+msgstr "https://infinispan.org/documentation のコミュニティ文書も更新され、改善されました。変更点のいくつかはこちらでご覧いただけます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:24
 #, fuzzy
-msgid ""
-"https://infinispan.org/infinispan-operator/master/operator."
-"html#creating_services[Creating Infinispan Services]"
-msgstr ""
-"link:https://infinispan.org/infinispan-operator/master/operator."
-"html#creating_services[インフィニスパンのサービスを作る]"
+msgid "https://infinispan.org/infinispan-operator/master/operator.html#creating_services[Creating Infinispan Services]"
+msgstr "link:https://infinispan.org/infinispan-operator/master/operator.html#creating_services[インフィニスパンのサービスを作る]"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:25
 #, fuzzy
-msgid ""
-"https://infinispan.org/infinispan-operator/master/operator."
-"html#network_services[Setting Up Network Services]"
-msgstr ""
-"link:https://infinispan.org/infinispan-operator/master/operator."
-"html#network_services[ネットワークサービスの設定]"
+msgid "https://infinispan.org/infinispan-operator/master/operator.html#network_services[Setting Up Network Services]"
+msgstr "link:https://infinispan.org/infinispan-operator/master/operator.html#network_services[ネットワークサービスの設定]"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:26
 #, fuzzy
-msgid ""
-"https://infinispan.org/infinispan-operator/master/operator."
-"html#prometheus[Monitoring Infinispan with Prometheus]"
-msgstr ""
-"link:https://infinispan.org/infinispan-operator/master/operator."
-"html#prometheus[プロメテウスでInfinispanを監視する]"
+msgid "https://infinispan.org/infinispan-operator/master/operator.html#prometheus[Monitoring Infinispan with Prometheus]"
+msgstr "link:https://infinispan.org/infinispan-operator/master/operator.html#prometheus[プロメテウスでInfinispanを監視する]"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:27
 #, fuzzy
-msgid ""
-"https://infinispan.org/infinispan-operator/master/operator."
-"html#remote_connections[Connecting to Infinispan Clusters]"
-msgstr ""
-"link:https://infinispan.org/infinispan-operator/master/operator."
-"html#remote_connections[Infinispanクラスターへの接続]"
+msgid "https://infinispan.org/infinispan-operator/master/operator.html#remote_connections[Connecting to Infinispan Clusters]"
+msgstr "link:https://infinispan.org/infinispan-operator/master/operator.html#remote_connections[Infinispanクラスターへの接続]"
 
 #. type: Title ==
 #: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:28
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Automatic Upgrades"
 msgstr "自動アップグレード"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:31
 #, fuzzy
-msgid ""
-"If you installed the Infinispan Operator on Red Hat OpenShift with the "
-"Automatic Approval upgrade policy, your cluster should already be running "
-"the latest versions (Infinispan Operator 1.1.1 with Infinispan 10.1.2.Final)."
-""
-msgstr ""
-"自動承認アップグレードポリシーで Red Hat OpenShift に Infinispan Operator "
-"をインストールした場合、クラスタはすでに最新バージョン（Infinispan Operator 1.1.1.1 with Infinispan 10.1."
-"2.Final）を実行しているはずです。"
+msgid "If you installed the Infinispan Operator on Red Hat OpenShift with the Automatic Approval upgrade policy, your cluster should already be running the latest versions (Infinispan Operator 1.1.1 with Infinispan 10.1.2.Final)."
+msgstr "自動承認アップグレードポリシーで Red Hat OpenShift に Infinispan Operator をインストールした場合、クラスタはすでに最新バージョン（Infinispan Operator 1.1.1.1 with Infinispan 10.1.2.Final）を実行しているはずです。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:34
 #, fuzzy
-msgid ""
-"We would like to hear opinions from you about the automated upgrade process, "
-"so get in touch if you have any issues or want to give any feedback."
-msgstr ""
-"自動アップグレードプロセスについてのご意見をお聞きしたいと思いますので、何か問題がある場合やフィードバックをご希望の場合はお問い合わせください。"
+msgid "We would like to hear opinions from you about the automated upgrade process, so get in touch if you have any issues or want to give any feedback."
+msgstr "自動アップグレードプロセスについてのご意見をお聞きしたいと思いますので、何か問題がある場合やフィードバックをご希望の場合はお問い合わせください。"
 
 #. type: Title ==
 #: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:35
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Operator: Get it, Use it, Ask us!"
 msgstr "運営者です。Get it, Use it, Ask us!"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:39
 #, fuzzy
-msgid ""
-"A detailed list of issues and features for this version can be found https://"
-"github.com/infinispan/infinispan-operator/issues?q=milestone%3A1.1."
-"1+is%3Aclosed[here]."
-msgstr ""
-"本バージョンの問題点や機能の詳細は link:https://github.com/infinispan/infinispan-operator/"
-"issues?q=milestone%3A1.1.1+is%3Aclosed[こちらに] 掲載しています。"
+msgid "A detailed list of issues and features for this version can be found https://github.com/infinispan/infinispan-operator/issues?q=milestone%3A1.1.1+is%3Aclosed[here]."
+msgstr "本バージョンの問題点や機能の詳細は link:https://github.com/infinispan/infinispan-operator/issues?q=milestone%3A1.1.1+is%3Aclosed[こちらに] 掲載しています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:43
 #, fuzzy
-msgid ""
-"Try the https://github.com/infinispan/infinispan-simple-tutorials/tree/"
-"master/operator[simple tutorial] for the Operator, which has been updated "
-"for this version."
-msgstr ""
-"このバージョンのために更新された「オペレーター」の link:https://github.com/infinispan/infinispan-"
-"simple-tutorials/tree/master/operator[簡単なチュートリアル] をお試しください。"
+msgid "Try the https://github.com/infinispan/infinispan-simple-tutorials/tree/master/operator[simple tutorial] for the Operator, which has been updated for this version."
+msgstr "このバージョンのために更新された「オペレーター」の link:https://github.com/infinispan/infinispan-simple-tutorials/tree/master/operator[簡単なチュートリアル] をお試しください。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-infinispan-operator-1.1.1.adoc:44
 #, fuzzy
-msgid ""
-"You can https://github.com/infinispan/infinispan-operator/issues[report "
-"bugs]"
-msgstr ""
-"link:https://github.com/infinispan/infinispan-operator/issues[バグを報告する] "
-"ことができます"
+msgid "You can https://github.com/infinispan/infinispan-operator/issues[report bugs]"
+msgstr "link:https://github.com/infinispan/infinispan-operator/issues[バグを報告する] ことができます"

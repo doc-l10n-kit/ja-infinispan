@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-08-11-infinispan-700beta1-is-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-11-infinispan-700beta1-is-out.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 7.0.0.Beta1 is out!\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2014-08-11T11:03:00.000-07:00'\n"
 "author: infinispan\n"
 "tags: [ \"release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"312570070163728609\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/08/infinispan-700beta1-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-312570070163728609\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/08/infinispan-700beta1-is-out.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,10 +42,8 @@ msgstr ""
 "date: '2014-08-11T11:03:00.000-07:00'\n"
 "author: infinispan\n"
 "tags: [ \"release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"312570070163728609\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/08/infinispan-700beta1-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-312570070163728609\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/08/infinispan-700beta1-is-out.html\n"
 "---\n"
 
 #. type: Plain text
@@ -59,8 +55,7 @@ msgstr "コミュニティの皆様へ"
 #. type: Plain text
 #: upstream/_posts/2014-08-11-infinispan-700beta1-is-out.adoc:15
 #, fuzzy
-msgid ""
-"It is our pleasure to announce the first Beta release of Infinispan 7.0.0!"
+msgid "It is our pleasure to announce the first Beta release of Infinispan 7.0.0!"
 msgstr "Infinispan 7.0.0の最初のベータリリースを発表できることを嬉しく思います。"
 
 #. type: Plain text
@@ -72,62 +67,38 @@ msgstr "リリースのハイライトは"
 #. type: Plain text
 #: upstream/_posts/2014-08-11-infinispan-700beta1-is-out.adoc:20
 #, fuzzy
-msgid ""
-"Initial support for Cluster partitions (aka Split Brain)  https://issues."
-"jboss.org/browse/ISPN-263[ISPN-263]"
-msgstr ""
-"クラスタパーティション（別名：スプリットブレイン）の初期サポート link:https://issues.jboss.org/browse/ISPN-"
-"263[ISPN-263]"
+msgid "Initial support for Cluster partitions (aka Split Brain)  https://issues.jboss.org/browse/ISPN-263[ISPN-263]"
+msgstr "クラスタパーティション（別名：スプリットブレイン）の初期サポート link:https://issues.jboss.org/browse/ISPN-263[ISPN-263]"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-11-infinispan-700beta1-is-out.adoc:22
 #, fuzzy
-msgid ""
-"Added JGroups SASL support to Infinispan Server https://issues.jboss.org/"
-"browse/ISPN-4303[ISPN-4303]"
-msgstr ""
-"Infinispan Server link:https://issues.jboss.org/browse/ISPN-4303[ISPN-4303] "
-"に JGroups SASL サポートを追加しました。"
+msgid "Added JGroups SASL support to Infinispan Server https://issues.jboss.org/browse/ISPN-4303[ISPN-4303]"
+msgstr "Infinispan Server link:https://issues.jboss.org/browse/ISPN-4303[ISPN-4303] に JGroups SASL サポートを追加しました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-11-infinispan-700beta1-is-out.adoc:24
 #, fuzzy
-msgid ""
-"Upgraded internal JGroups version to 3.5.0.CR2 https://issues.jboss.org/"
-"browse/ISPN-4609[ISPN-4609]"
-msgstr ""
-"内部のJGroupsのバージョンを3.5.0.CR2 link:https://issues.jboss.org/browse/ISPN-"
-"4609[ISPN-4609] にアップグレードしました。"
+msgid "Upgraded internal JGroups version to 3.5.0.CR2 https://issues.jboss.org/browse/ISPN-4609[ISPN-4609]"
+msgstr "内部のJGroupsのバージョンを3.5.0.CR2 link:https://issues.jboss.org/browse/ISPN-4609[ISPN-4609] にアップグレードしました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-11-infinispan-700beta1-is-out.adoc:26
 #, fuzzy
-msgid ""
-"Map/Reduce tasks no longer have a timeout by default https://issues.jboss."
-"org/browse/ISPN-4618[ISPN-4618]"
-msgstr ""
-"マップ/Reduceタスクがデフォルトでタイムアウトしないようになった ISPN- link:https://issues.jboss.org/"
-"browse/ISPN-4618[4618]"
+msgid "Map/Reduce tasks no longer have a timeout by default https://issues.jboss.org/browse/ISPN-4618[ISPN-4618]"
+msgstr "マップ/Reduceタスクがデフォルトでタイムアウトしないようになった ISPN- link:https://issues.jboss.org/browse/ISPN-4618[4618]"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-11-infinispan-700beta1-is-out.adoc:28
 #, fuzzy
-msgid ""
-"Merge batching configuration with transaction modes to prevent ambiguity "
-"https://issues.jboss.org/browse/ISPN-4197[ISPN-4197]"
-msgstr ""
-"バッチング設定をトランザクションモードに統合して曖昧さを防ぐ link:https://issues.jboss.org/browse/ISPN-"
-"4197[ISPN-4197]"
+msgid "Merge batching configuration with transaction modes to prevent ambiguity https://issues.jboss.org/browse/ISPN-4197[ISPN-4197]"
+msgstr "バッチング設定をトランザクションモードに統合して曖昧さを防ぐ link:https://issues.jboss.org/browse/ISPN-4197[ISPN-4197]"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-11-infinispan-700beta1-is-out.adoc:30
 #, fuzzy
-msgid ""
-"Improve server test suite run times https://issues.jboss.org/browse/ISPN-"
-"4317[ISPN-4317]"
-msgstr ""
-"サーバーテストスイートの実行時間の改善 ISPN- link:https://issues.jboss.org/browse/ISPN-"
-"4317[4317]"
+msgid "Improve server test suite run times https://issues.jboss.org/browse/ISPN-4317[ISPN-4317]"
+msgstr "サーバーテストスイートの実行時間の改善 ISPN- link:https://issues.jboss.org/browse/ISPN-4317[4317]"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-11-infinispan-700beta1-is-out.adoc:31
@@ -138,29 +109,14 @@ msgstr "複数の改善とバグ修正"
 #. type: Plain text
 #: upstream/_posts/2014-08-11-infinispan-700beta1-is-out.adoc:37
 #, fuzzy
-msgid ""
-"For a complete list of features and bug fixes included in this release "
-"please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?version="
-"12324507&projectId=12310799[release notes].  Visit our http://infinispan.org/"
-"download/[downloads] section to find the latest release."
-msgstr ""
-"このリリースに含まれる機能とバグフィックスの完全なリストについては、 link:https://issues.jboss.org/secure/"
-"ReleaseNote.jspa?version=12324507&projectId=12310799[リリースノートを] 参照してください。 "
-"最新のリリースを見つけるために私たちの link:http://infinispan.org/download/[ダウンロード] "
-"セクションを参照してください。"
+msgid "For a complete list of features and bug fixes included in this release please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?version=12324507&projectId=12310799[release notes].  Visit our http://infinispan.org/download/[downloads] section to find the latest release."
+msgstr "このリリースに含まれる機能とバグフィックスの完全なリストについては、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?version=12324507&projectId=12310799[リリースノートを] 参照してください。 最新のリリースを見つけるために私たちの link:http://infinispan.org/download/[ダウンロード] セクションを参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-11-infinispan-700beta1-is-out.adoc:42
 #, fuzzy
-msgid ""
-"If you have any questions please check our http://infinispan.org/community/"
-"[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-"
-"dev[mailing lists] or ping us directly on irc://irc.freenode.org/"
-"infinispan[IRC]."
-msgstr ""
-"質問がある場合は、 link:http://infinispan.org/community/[フォーラム] や link:https://lists."
-"jboss.org/mailman/listinfo/infinispan-dev[メーリングリストを] チェックするか、 link:irc://irc."
-"freenode.org/infinispan[IRC] で直接pingしてください。"
+msgid "If you have any questions please check our http://infinispan.org/community/[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+msgstr "質問がある場合は、 link:http://infinispan.org/community/[フォーラム] や link:https://lists.jboss.org/mailman/listinfo/infinispan-dev[メーリングリストを] チェックするか、 link:irc://irc.freenode.org/infinispan[IRC] で直接pingしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-11-infinispan-700beta1-is-out.adoc:44

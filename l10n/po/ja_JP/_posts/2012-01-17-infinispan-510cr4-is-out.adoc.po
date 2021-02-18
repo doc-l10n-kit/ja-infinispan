@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-01-17-infinispan-510cr4-is-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-17-infinispan-510cr4-is-out.adoc:11
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 5.1.0.CR4 is out!\n"
@@ -33,10 +33,8 @@ msgid ""
 "author: galder\n"
 "tags: [ \"transactions\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8754876568782814199\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/01/infinispan-510cr4-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8754876568782814199\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/01/infinispan-510cr4-is-out.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -46,57 +44,27 @@ msgstr ""
 "author: galder\n"
 "tags: [ \"transactions\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8754876568782814199\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/01/infinispan-510cr4-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8754876568782814199\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/01/infinispan-510cr4-is-out.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-17-infinispan-510cr4-is-out.adoc:22
 #, fuzzy
-msgid ""
-"Over the past week we've been busy profiling Infinispan, in particular we've "
-"been trying to maximise the performance of Infinispan transactional caches "
-"which received a major overhaul int the 5.1 'Brahma' series, and the result "
-"is that instead of going final, we've decided to cut another candidate "
-"release, Infinispan 5.1.0.CR4 which is now available for download from the "
-"http://www.jboss.org/infinispan/downloads[usual place]. We're confident that "
-"these improvements will be greatly appreciated by Infinispan consumers such "
-"as Hibernate second-level-cache and JBoss Application Server 7 HTTP session "
-"replication."
-msgstr ""
-"この一週間、私たちはInfinispanのプロファイリングに忙しく、特に5."
-"1の「Brahma」シリーズで大幅なオーバーホールを受けたInfinispanトランザクションキャッシュのパフォーマンスを最大化しようとしていましたが、その結果、最終リリースではなく、もう一つの候補リリース "
-"link:http://www.jboss.org/infinispan/downloads[で] あるInfinispan 5.1.0."
-"CR4をカットすることにしました。これらの改善は、Hibernateの第2レベルキャッシュやJBoss Application Server "
-"7のHTTPセッションレプリケーションなど、Infinispanのコンシューマーに大いに評価されるものと確信しています。"
+msgid "Over the past week we've been busy profiling Infinispan, in particular we've been trying to maximise the performance of Infinispan transactional caches which received a major overhaul int the 5.1 'Brahma' series, and the result is that instead of going final, we've decided to cut another candidate release, Infinispan 5.1.0.CR4 which is now available for download from the http://www.jboss.org/infinispan/downloads[usual place]. We're confident that these improvements will be greatly appreciated by Infinispan consumers such as Hibernate second-level-cache and JBoss Application Server 7 HTTP session replication."
+msgstr "この一週間、私たちはInfinispanのプロファイリングに忙しく、特に5.1の「Brahma」シリーズで大幅なオーバーホールを受けたInfinispanトランザクションキャッシュのパフォーマンスを最大化しようとしていましたが、その結果、最終リリースではなく、もう一つの候補リリース link:http://www.jboss.org/infinispan/downloads[で] あるInfinispan 5.1.0.CR4をカットすることにしました。これらの改善は、Hibernateの第2レベルキャッシュやJBoss Application Server 7のHTTPセッションレプリケーションなど、Infinispanのコンシューマーに大いに評価されるものと確信しています。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-17-infinispan-510cr4-is-out.adoc:26
 #, fuzzy
-msgid ""
-"As part of the configuration and parser work, new configuration "
-"documentation has generated which you can now find in http://docs.jboss.org/"
-"infinispan/5.1/configdocs/."
-msgstr ""
-"設定とパーサーの作業の一環として、新しい設定ドキュメントが作成されました http://docs.jboss.org/infinispan/5.1/"
-"configdocs/"
+msgid "As part of the configuration and parser work, new configuration documentation has generated which you can now find in http://docs.jboss.org/infinispan/5.1/configdocs/."
+msgstr "設定とパーサーの作業の一環として、新しい設定ドキュメントが作成されました http://docs.jboss.org/infinispan/5.1/configdocs/"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-17-infinispan-510cr4-is-out.adoc:33
 #, fuzzy
-msgid ""
-"As always, give it a spin to this new candidate release and http://community."
-"jboss.org/en/infinispan?view=discussions[let us know what you think]. You "
-"can find detailed information on the issues fixed in our https://issues."
-"jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
-"12318854[release notes]."
-msgstr ""
-"いつものように、この新しい候補リリースを試してみて、 link:http://community.jboss.org/en/"
-"infinispan?view=discussions[あなたの意見を聞かせ] てください。修正された問題についての詳細な情報は link:https:/"
-"/issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
-"12318854[リリースノート] に記載されています。"
+msgid "As always, give it a spin to this new candidate release and http://community.jboss.org/en/infinispan?view=discussions[let us know what you think]. You can find detailed information on the issues fixed in our https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12318854[release notes]."
+msgstr "いつものように、この新しい候補リリースを試してみて、 link:http://community.jboss.org/en/infinispan?view=discussions[あなたの意見を聞かせ] てください。修正された問題についての詳細な情報は link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12318854[リリースノート] に記載されています。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-17-infinispan-510cr4-is-out.adoc:35

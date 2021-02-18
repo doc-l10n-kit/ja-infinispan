@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-07-20-berlin-and-stuttgart-say-hello-to.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-20-berlin-and-stuttgart-say-hello-to.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Berlin and Stuttgart say hello to Infinispan\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2009-07-20T09:33:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"JUGs\", \"jclouds\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"4238724694797883834\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/07/berlin-and-stuttgart-"
-"say-hello-to.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4238724694797883834\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/07/berlin-and-stuttgart-say-hello-to.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,124 +42,57 @@ msgstr ""
 "date: '2009-07-20T09:33:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"JUGs\", \"jclouds\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"4238724694797883834\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/07/berlin-and-stuttgart-"
-"say-hello-to.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4238724694797883834\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/07/berlin-and-stuttgart-say-hello-to.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-20-berlin-and-stuttgart-say-hello-to.adoc:15
 #, fuzzy
-msgid ""
-"http://justinmcroberts.files.wordpress.com/2008/09/bullhorn.jpg[image:http://"
-"justinmcroberts.files.wordpress.com/2008/09/bullhorn.jpg[image]] Last week I "
-"finally put together my presentation on cloud computing and Infinispan. To "
-"kick things off, I presented it at two JUG events in Germany."
-msgstr ""
-"link:http://justinmcroberts.files.wordpress.com/2008/09/bullhorn.jpg[] "
-"先週、ようやくクラウドコンピューティングとInfinispanについてのプレゼンテーションをまとめることができました。ドイツで開催された2つのJUGイベントで発表しました。"
+msgid "http://justinmcroberts.files.wordpress.com/2008/09/bullhorn.jpg[image:http://justinmcroberts.files.wordpress.com/2008/09/bullhorn.jpg[image]] Last week I finally put together my presentation on cloud computing and Infinispan. To kick things off, I presented it at two JUG events in Germany."
+msgstr "link:http://justinmcroberts.files.wordpress.com/2008/09/bullhorn.jpg[] 先週、ようやくクラウドコンピューティングとInfinispanについてのプレゼンテーションをまとめることができました。ドイツで開催された2つのJUGイベントで発表しました。"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-20-berlin-and-stuttgart-say-hello-to.adoc:31
 #, fuzzy
-msgid ""
-"Berlin's http://www.jug-bb.de/[Brandenburg JUG] organised an event at the "
-"http://www.newthinking-store.de/[NewThinking Store] in Berlin's trendy http:/"
-"/wikitravel.org/en/Berlin/Mitte[Mitte] district. Thanks to Tobias Hartwig "
-"and Ralph Bergmann for organising the event, which drew an audience of about "
-"35 people. Cloud computing was the focus of the evening, and I started the "
-"event with my rather lengthy presentation on cloud computing and specific "
-"issues around persisting data in a cloud.  The bulk of the presentation "
-"focused on Infinispan, what it provides as a data grid platform, and what's "
-"on the roadmap. After a demo and a short break, Infinispan committer Adrian "
-"Cole then spoke about http://code.google.com/p/jclouds/[JClouds], "
-"demonstrating Infinispan's use of JClouds to back cached state onto Amazon's "
-"S3. You can read more about Adrian's presentation on http://anyweight."
-"blogspot.com/2009/07/double-feature-in-mitte.html[his blog]."
-msgstr ""
-"ベルリンの link:http://www.jug-bb.de/[ブランデンブルクJUGは] 、ベルリンの link:http://wikitravel."
-"org/en/Berlin/Mitte[トレンディなミッテ] 地区にある link:http://www.newthinking-store.de/"
-"[NewThinking Store] でイベントを開催しました。Tobias HartwigさんとRalph "
-"Bergmannさんに感謝します。クラウド・コンピューティングに焦点を当てたイベントで、私はクラウド・コンピューティングとクラウドにおけるデータの永続化に関する具体的な問題点についての長めのプレゼンテーションから始めました。プレゼンテーションの大部分は、Infinispan、データグリッドプラットフォームとしてのInfinispanの機能、そして今後のロードマップに焦点を当てました。デモと短い休憩の後、InfinispanのコミッターであるAdrian "
-"Cole氏が link:http://code.google.com/p/jclouds/[JClouds] について話し、Infinispanが "
-"link:http://code.google.com/p/jclouds/[JClouds] "
-"を使用してAmazonのS3にキャッシュされた状態をバックアップするデモを行いました。Adrian氏のプレゼンテーションの詳細は、 link:http:/"
-"/anyweight.blogspot.com/2009/07/double-feature-in-mitte.html[彼のブログ] "
-"で読むことができる。"
+msgid "Berlin's http://www.jug-bb.de/[Brandenburg JUG] organised an event at the http://www.newthinking-store.de/[NewThinking Store] in Berlin's trendy http://wikitravel.org/en/Berlin/Mitte[Mitte] district. Thanks to Tobias Hartwig and Ralph Bergmann for organising the event, which drew an audience of about 35 people. Cloud computing was the focus of the evening, and I started the event with my rather lengthy presentation on cloud computing and specific issues around persisting data in a cloud.  The bulk of the presentation focused on Infinispan, what it provides as a data grid platform, and what's on the roadmap. After a demo and a short break, Infinispan committer Adrian Cole then spoke about http://code.google.com/p/jclouds/[JClouds], demonstrating Infinispan's use of JClouds to back cached state onto Amazon's S3. You can read more about Adrian's presentation on http://anyweight.blogspot.com/2009/07/double-feature-in-mitte.html[his blog]."
+msgstr "ベルリンの link:http://www.jug-bb.de/[ブランデンブルクJUGは] 、ベルリンの link:http://wikitravel.org/en/Berlin/Mitte[トレンディなミッテ] 地区にある link:http://www.newthinking-store.de/[NewThinking Store] でイベントを開催しました。Tobias HartwigさんとRalph Bergmannさんに感謝します。クラウド・コンピューティングに焦点を当てたイベントで、私はクラウド・コンピューティングとクラウドにおけるデータの永続化に関する具体的な問題点についての長めのプレゼンテーションから始めました。プレゼンテーションの大部分は、Infinispan、データグリッドプラットフォームとしてのInfinispanの機能、そして今後のロードマップに焦点を当てました。デモと短い休憩の後、InfinispanのコミッターであるAdrian Cole氏が link:http://code.google.com/p/jclouds/[JClouds] について話し、Infinispanが link:http://code.google.com/p/jclouds/[JClouds] を使用してAmazonのS3にキャッシュされた状態をバックアップするデモを行いました。Adrian氏のプレゼンテーションの詳細は、 link:http://anyweight.blogspot.com/2009/07/double-feature-in-mitte.html[彼のブログ] で読むことができる。"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-20-berlin-and-stuttgart-say-hello-to.adoc:39
 #, fuzzy
-msgid ""
-"Two days later, the http://www.jugs.org/[Stuttgart JUG] arranged for me to "
-"speak to their http://www.jugs.org/sig-jboss.html[JBoss Special Interest "
-"Group] on Infinispan. Thanks to Tobias Frech and http://pilhuhn.blogspot.com/"
-"[Heiko Rupp] for organising this event, which was held in one of Red Hat's "
-"training rooms in Stuttgart. The presentation followed a similar pattern to "
-"what was presented in Berlin, to an audience of about 15 people."
-msgstr ""
-"その 2 日後、シュトゥット link:http://www.jugs.org/[ガルトの JUG] が、彼らの link:http://www."
-"jugs.org/sig-jboss.html[JBoss Special Interest Group] で Infinispan "
-"に関する講演を行うよう手配してくれました。このイベントを企画してくれた Tobias Frech と link:http://pilhuhn."
-"blogspot.com/[Heiko Rupp] に感謝します。プレゼンテーションはベルリンで行われたものと似たようなパターンで、約 15 "
-"人の聴衆を前にして行われました。"
+msgid "Two days later, the http://www.jugs.org/[Stuttgart JUG] arranged for me to speak to their http://www.jugs.org/sig-jboss.html[JBoss Special Interest Group] on Infinispan. Thanks to Tobias Frech and http://pilhuhn.blogspot.com/[Heiko Rupp] for organising this event, which was held in one of Red Hat's training rooms in Stuttgart. The presentation followed a similar pattern to what was presented in Berlin, to an audience of about 15 people."
+msgstr "その 2 日後、シュトゥット link:http://www.jugs.org/[ガルトの JUG] が、彼らの link:http://www.jugs.org/sig-jboss.html[JBoss Special Interest Group] で Infinispan に関する講演を行うよう手配してくれました。このイベントを企画してくれた Tobias Frech と link:http://pilhuhn.blogspot.com/[Heiko Rupp] に感謝します。プレゼンテーションはベルリンで行われたものと似たようなパターンで、約 15 人の聴衆を前にして行われました。"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-20-berlin-and-stuttgart-say-hello-to.adoc:46
 #, fuzzy
-msgid ""
-"In both cases, there was an overwhelming interest in Infinispan as a "
-"distributed storage engine. The https://jira.jboss.org/jira/browse/ISPN-"
-"24[JPA interface] which is on our roadmap generated a lot of interest, as "
-"did the https://jira.jboss.org/jira/browse/ISPN-32[query API] and to a "
-"lesser extent the https://jira.jboss.org/jira/browse/ISPN-72[asynchronous "
-"API]"
-msgstr ""
-"いずれの場合も、分散ストレージエンジンとしての Infinispan への関心が圧倒的に高かった。ロードマップにある link:https://jira."
-"jboss.org/jira/browse/ISPN-24[JPAインターフェイス] は、 link:https://jira.jboss.org/"
-"jira/browse/ISPN-32[クエリAPI] や link:https://jira.jboss.org/jira/browse/ISPN-"
-"72[非同期API] と同様に多くの関心を集めました。"
+msgid "In both cases, there was an overwhelming interest in Infinispan as a distributed storage engine. The https://jira.jboss.org/jira/browse/ISPN-24[JPA interface] which is on our roadmap generated a lot of interest, as did the https://jira.jboss.org/jira/browse/ISPN-32[query API] and to a lesser extent the https://jira.jboss.org/jira/browse/ISPN-72[asynchronous API]"
+msgstr "いずれの場合も、分散ストレージエンジンとしての Infinispan への関心が圧倒的に高かった。ロードマップにある link:https://jira.jboss.org/jira/browse/ISPN-24[JPAインターフェイス] は、 link:https://jira.jboss.org/jira/browse/ISPN-32[クエリAPI] や link:https://jira.jboss.org/jira/browse/ISPN-72[非同期API] と同様に多くの関心を集めました。"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-20-berlin-and-stuttgart-say-hello-to.adoc:48
 #, fuzzy
-msgid ""
-"which could benefit from a better example in my presentation to demonstrate "
-"why this really is a powerful thing."
+msgid "which could benefit from a better example in my presentation to demonstrate why this really is a powerful thing."
 msgstr "これが本当に強力なものである理由を示すために、私のプレゼンテーションの中でより良い例から恩恵を受けることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-20-berlin-and-stuttgart-say-hello-to.adoc:52
 #, fuzzy
-msgid ""
-"Overall, it is good to see that folks are interested in and are aware of the "
-"challenges involved in data storage on clouds, where traditional database "
-"usage is less relevant."
-msgstr ""
-"全体的に見て、人々がクラウド上のデータ・ストレージに興味を持ち、従来のデータベースの使用法との関連性が低いクラウド上のデータ・ストレージに関わる課題を認識していることは良いことだと思います。"
+msgid "Overall, it is good to see that folks are interested in and are aware of the challenges involved in data storage on clouds, where traditional database usage is less relevant."
+msgstr "全体的に見て、人々がクラウド上のデータ・ストレージに興味を持ち、従来のデータベースの使用法との関連性が低いクラウド上のデータ・ストレージに関わる課題を認識していることは良いことだと思います。"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-20-berlin-and-stuttgart-say-hello-to.adoc:56
 #, fuzzy
-msgid ""
-"Many people have asked me for downloadable versions of my slides. Rest "
-"assured I will put them up - either as PDFs or better still, as a podcast - "
-"over the next 2 weeks."
+msgid "Many people have asked me for downloadable versions of my slides. Rest assured I will put them up - either as PDFs or better still, as a podcast - over the next 2 weeks."
 msgstr "多くの方からスライドのダウンロード版を希望されています。次の2週間の間に、PDFでもポッドキャストでも良いので、ご安心ください。"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-20-berlin-and-stuttgart-say-hello-to.adoc:61
 #, fuzzy
-msgid ""
-"Coming up, I will be in Krakow speaking at their JUG on Thursday the 23rd, "
-"and then in Dublin on Tuesday the 29th. Details of these two events are on "
-"the http://www.jboss.org/infinispan/talks[Infinispan Talks Calendar]. Hope "
-"to see you there!"
-msgstr ""
-"近々、23日（木）にはクラクフのJUGで講演し、29日（火）にはダブリンで講演します。この二つのイベントの詳細は link:http://www."
-"jboss.org/infinispan/talks[Infinispan Talks Calendar] "
-"に掲載されています。お会いできるのを楽しみにしています。"
+msgid "Coming up, I will be in Krakow speaking at their JUG on Thursday the 23rd, and then in Dublin on Tuesday the 29th. Details of these two events are on the http://www.jboss.org/infinispan/talks[Infinispan Talks Calendar]. Hope to see you there!"
+msgstr "近々、23日（木）にはクラクフのJUGで講演し、29日（火）にはダブリンで講演します。この二つのイベントの詳細は link:http://www.jboss.org/infinispan/talks[Infinispan Talks Calendar] に掲載されています。お会いできるのを楽しみにしています。"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-20-berlin-and-stuttgart-say-hello-to.adoc:63

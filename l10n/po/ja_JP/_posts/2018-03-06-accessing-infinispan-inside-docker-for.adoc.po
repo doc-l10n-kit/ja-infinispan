@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-03-06-accessing-infinispan-inside-docker-for.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-06-accessing-infinispan-inside-docker-for.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Accessing Infinispan inside Docker for Mac\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2018-03-06T03:00:00.000-08:00'\n"
 "author: galder\n"
 "tags: [ \" docker\", \"mac\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1613527818432752116\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/03/accessing-infinispan-"
-"inside-docker-for.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1613527818432752116\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/03/accessing-infinispan-inside-docker-for.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,71 +42,33 @@ msgstr ""
 "date: '2018-03-06T03:00:00.000-08:00'\n"
 "author: galder\n"
 "tags: [ \" docker\", \"mac\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1613527818432752116\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/03/accessing-infinispan-"
-"inside-docker-for.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1613527818432752116\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/03/accessing-infinispan-inside-docker-for.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-06-accessing-infinispan-inside-docker-for.adoc:15
 #, fuzzy
-msgid ""
-"Connecting to Infinispan instances that run inside Docker for Mac using the "
-"Java Hot Rod client can be tricky. In this blog post we'll be analyzing what "
-"makes this environment tricky and how to get around the issue."
-msgstr ""
-"Java Hot Rodクライアントを使用してDocker for "
-"Macの内部で実行されるInfinispanインスタンスに接続するのは、トリッキーなことがあります。このブログ記事では、何がこの環境をトリッキーにしているのか、そしてその問題を回避する方法を分析していきます。"
+msgid "Connecting to Infinispan instances that run inside Docker for Mac using the Java Hot Rod client can be tricky. In this blog post we'll be analyzing what makes this environment tricky and how to get around the issue."
+msgstr "Java Hot Rodクライアントを使用してDocker for Macの内部で実行されるInfinispanインスタンスに接続するのは、トリッキーなことがあります。このブログ記事では、何がこの環境をトリッキーにしているのか、そしてその問題を回避する方法を分析していきます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-06-accessing-infinispan-inside-docker-for.adoc:23
 #, fuzzy
-msgid ""
-"The tricky thing about Docker for Mac is that internal container IP "
-"addresses are not accessible externally. This is a https://github.com/docker/"
-"for-mac/issues/155[known issue] and it can be hard to workaround it. In "
-"container orchestrators such as Openshift, you can use Routes to allow "
-"external access to the containers. However, if running vanilla Docker for "
-"Mac, the simplest option is to map ports over to the local machine."
-msgstr ""
-"Docker for Macの厄介なところは、内部コンテナのIPアドレスが外部からアクセスできないことです。これは link:https://"
-"github.com/docker/for-mac/issues/155[既知の問題] "
-"であり、これを回避するのは難しいでしょう。Openshiftなどのコンテナオーケストレーターでは、Routesを使ってコンテナへの外部アクセスを許可することができます。しかし、Mac用のバニラDockerを実行している場合、最も簡単なオプションはポートをローカルマシンにマッピングすることです。"
+msgid "The tricky thing about Docker for Mac is that internal container IP addresses are not accessible externally. This is a https://github.com/docker/for-mac/issues/155[known issue] and it can be hard to workaround it. In container orchestrators such as Openshift, you can use Routes to allow external access to the containers. However, if running vanilla Docker for Mac, the simplest option is to map ports over to the local machine."
+msgstr "Docker for Macの厄介なところは、内部コンテナのIPアドレスが外部からアクセスできないことです。これは link:https://github.com/docker/for-mac/issues/155[既知の問題] であり、これを回避するのは難しいでしょう。Openshiftなどのコンテナオーケストレーターでは、Routesを使ってコンテナへの外部アクセスを許可することができます。しかし、Mac用のバニラDockerを実行している場合、最も簡単なオプションはポートをローカルマシンにマッピングすることです。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-06-accessing-infinispan-inside-docker-for.adoc:29
 #, fuzzy
-msgid ""
-"Why is this important? When someone connects using the Hot Rod protocol, the "
-"server returns the current topology to the client. When Infinispan runs "
-"inside of Docker, this topology by default contains internal IP addresses. "
-"Since those are not accessible externally in Docker for Mac, the client "
-"won't be able to connect."
-msgstr ""
-"なぜこれが重要なのでしょうか？誰かがHot "
-"Rodプロトコルを使用して接続すると、サーバーは現在のトポロジーをクライアントに返します。InfinispanがDockerの内部で実行されている場合、デフォルトではこのトポロジーには内部IPアドレスが含まれています。Docker "
-"for Macでは、これらのIPアドレスは外部からアクセスできないため、クライアントは接続できません。"
+msgid "Why is this important? When someone connects using the Hot Rod protocol, the server returns the current topology to the client. When Infinispan runs inside of Docker, this topology by default contains internal IP addresses. Since those are not accessible externally in Docker for Mac, the client won't be able to connect."
+msgstr "なぜこれが重要なのでしょうか？誰かがHot Rodプロトコルを使用して接続すると、サーバーは現在のトポロジーをクライアントに返します。InfinispanがDockerの内部で実行されている場合、デフォルトではこのトポロジーには内部IPアドレスが含まれています。Docker for Macでは、これらのIPアドレスは外部からアクセスできないため、クライアントは接続できません。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-06-accessing-infinispan-inside-docker-for.adoc:40
 #, fuzzy
-msgid ""
-"To workaround the issue, Infinispan server Hot Rod endpoint can be "
-"configured with external host/port combination, but doing this would require "
-"modifying the server's configuration. A simpler method to get around the "
-"issue is to configure the client's intelligence to be Basic.  By doing this "
-"the server won't send topology updates nor will the client be able to locate "
-"where keys are located using hashing. This has a negative performance impact "
-"since all requests to Infinispan single server or server cluster would need "
-"to go over the same IP+port.  However, for demo or sample applications on "
-"Mac environments, this is reasonable thing to do."
-msgstr ""
-"この問題を回避するには、Infinispan サーバーの Hot Rod エンドポイントを外部ホスト/"
-"ポートの組み合わせで設定することができますが、これを行うにはサーバーの設定を変更する必要があります。この問題を回避するより簡単な方法は、クライアントのインテリジェンスをBasicに設定することです。これにより、サーバはトポロジの更新を送信しませんし、クライアントはハッシュを使って鍵の位置を特定することもできません。これは、Infinispan "
-"の単一サーバまたはサーバクラスタへのすべてのリクエストが同じ "
-"IP+ポートを経由する必要があるため、パフォーマンスにマイナスの影響を与えます。しかし、Mac "
-"環境でのデモやサンプルアプリケーションでは、これは合理的なことです。"
+msgid "To workaround the issue, Infinispan server Hot Rod endpoint can be configured with external host/port combination, but doing this would require modifying the server's configuration. A simpler method to get around the issue is to configure the client's intelligence to be Basic.  By doing this the server won't send topology updates nor will the client be able to locate where keys are located using hashing. This has a negative performance impact since all requests to Infinispan single server or server cluster would need to go over the same IP+port.  However, for demo or sample applications on Mac environments, this is reasonable thing to do."
+msgstr "この問題を回避するには、Infinispan サーバーの Hot Rod エンドポイントを外部ホスト/ポートの組み合わせで設定することができますが、これを行うにはサーバーの設定を変更する必要があります。この問題を回避するより簡単な方法は、クライアントのインテリジェンスをBasicに設定することです。これにより、サーバはトポロジの更新を送信しませんし、クライアントはハッシュを使って鍵の位置を特定することもできません。これは、Infinispan の単一サーバまたはサーバクラスタへのすべてのリクエストが同じ IP+ポートを経由する必要があるため、パフォーマンスにマイナスの影響を与えます。しかし、Mac 環境でのデモやサンプルアプリケーションでは、これは合理的なことです。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-06-accessing-infinispan-inside-docker-for.adoc:42
@@ -119,9 +79,7 @@ msgstr "では、どうすればいいのでしょうか？"
 #. type: Plain text
 #: upstream/_posts/2018-03-06-accessing-infinispan-inside-docker-for.adoc:45
 #, fuzzy
-msgid ""
-"First, start Infinispan server and map Hot Rod's default port 11222 to the "
-"local 11222 port:"
+msgid "First, start Infinispan server and map Hot Rod's default port 11222 to the local 11222 port:"
 msgstr "まず、Infinispanサーバーを起動し、Hot Rodのデフォルトポート11222をローカルの11222ポートにマッピングします。"
 
 #. type: Plain text
@@ -139,9 +97,7 @@ msgstr "IDEを開いて、この依存関係を持つプロジェクトを作成
 #. type: Plain text
 #: upstream/_posts/2018-03-06-accessing-infinispan-inside-docker-for.adoc:55
 #, fuzzy
-msgid ""
-"Finally, create a class that connects to Infinispan and does a simple put/"
-"get sequence:"
+msgid "Finally, create a class that connects to Infinispan and does a simple put/get sequence:"
 msgstr "最後に、Infinispanに接続して、簡単なput/getシーケンスを行うクラスを作成します。"
 
 #. type: Plain text

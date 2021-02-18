@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:17
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 6.0.0.Final is out!\n"
@@ -39,10 +39,8 @@ msgid ""
 "\"remote query\",\n"
 "\"query\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3649191298037716193\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/11/infinispan-600final-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3649191298037716193\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/11/infinispan-600final-is-out.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -58,10 +56,8 @@ msgstr ""
 "\"remote query\",\n"
 "\"query\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3649191298037716193\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/11/infinispan-600final-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3649191298037716193\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/11/infinispan-600final-is-out.html\n"
 "---\n"
 
 #. type: Plain text
@@ -73,173 +69,74 @@ msgstr "インフィニスパンのコミュニティへ"
 #. type: Plain text
 #: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:30
 #, fuzzy
-msgid ""
-"We're pleased to announce the final release of Infinispan 6.0 \"Infinium\". "
-"As http://infinispan.blogspot.co.uk/2013/05/infinispan-to-adopt-apache-"
-"software.html[announced], this is the first Infinispan stable version to be "
-"released under the terms of http://www.apache.org/licenses/LICENSE-2.0."
-"html[Apache License v2.0]."
-msgstr ""
-"Infinispan 6.0 \"Infinium\" の最終リリースを発表します。発表 link:http://infinispan.blogspot."
-"co.uk/2013/05/infinispan-to-adopt-apache-software.html[された] 通り、これは link:http:"
-"//www.apache.org/licenses/LICENSE-2.0.html[Apache License v2.0] "
-"の条件でリリースされた最初のInfinispan安定版です。"
+msgid "We're pleased to announce the final release of Infinispan 6.0 \"Infinium\". As http://infinispan.blogspot.co.uk/2013/05/infinispan-to-adopt-apache-software.html[announced], this is the first Infinispan stable version to be released under the terms of http://www.apache.org/licenses/LICENSE-2.0.html[Apache License v2.0]."
+msgstr "Infinispan 6.0 \"Infinium\" の最終リリースを発表します。発表 link:http://infinispan.blogspot.co.uk/2013/05/infinispan-to-adopt-apache-software.html[された] 通り、これは link:http://www.apache.org/licenses/LICENSE-2.0.html[Apache License v2.0] の条件でリリースされた最初のInfinispan安定版です。"
 
 #. type: Plain text
 #: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:36
 #, fuzzy
-msgid ""
-"This release brings some highly demanded features besides many stability "
-"enhancements and bug fixes:"
+msgid "This release brings some highly demanded features besides many stability enhancements and bug fixes:"
 msgstr "今回のリリースでは、多くの安定性の向上やバグ修正に加えて、いくつかの要求の高い機能が追加されました。"
 
 #. type: Plain text
 #: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:50
 #, fuzzy
-msgid ""
-"Support for http://blog.infinispan.org/2013/09/embedded-and-remote-query-in-"
-"infinispan.html[remote query]. It is now possible for the HotRod clients to "
-"query an Infinispan grid using a new expressive query DSL. This querying "
-"functionality is built on top of Apache Lucene and Google Protobuf and lays "
-"the foundation for storing information and querying an Infinispan server in "
-"a language neutral manner. The Java HotRod client has already been enhanced "
-"to support this, the soon-to-be announced C++ HotRod client will also "
-"contain this functionality (initially for write/read, then full blown "
-"querying)."
-msgstr ""
-"link:http://blog.infinispan.org/2013/09/embedded-and-remote-query-in-"
-"infinispan.html[リモートクエリ] "
-"のサポート。HotRodクライアントは、新しい表現力豊かなクエリDSLを使用してInfinispanグリッドにクエリを行うことができるようになりました。このクエリ機能はApache "
-"LuceneとGoogle "
-"Protobufの上に構築されており、言語に依存しない方法でInfinispanサーバに情報を保存し、クエリを行うための基礎を築きます。Java "
-"HotRodクライアントはすでにこの機能をサポートするように強化されています。間もなく発表されるC++ "
-"HotRodクライアントにもこの機能が含まれる予定です（最初は書き込み/読み取り用で、その後本格的な問い合わせ用になります）。"
+msgid "Support for http://blog.infinispan.org/2013/09/embedded-and-remote-query-in-infinispan.html[remote query]. It is now possible for the HotRod clients to query an Infinispan grid using a new expressive query DSL. This querying functionality is built on top of Apache Lucene and Google Protobuf and lays the foundation for storing information and querying an Infinispan server in a language neutral manner. The Java HotRod client has already been enhanced to support this, the soon-to-be announced C++ HotRod client will also contain this functionality (initially for write/read, then full blown querying)."
+msgstr "link:http://blog.infinispan.org/2013/09/embedded-and-remote-query-in-infinispan.html[リモートクエリ] のサポート。HotRodクライアントは、新しい表現力豊かなクエリDSLを使用してInfinispanグリッドにクエリを行うことができるようになりました。このクエリ機能はApache LuceneとGoogle Protobufの上に構築されており、言語に依存しない方法でInfinispanサーバに情報を保存し、クエリを行うための基礎を築きます。Java HotRodクライアントはすでにこの機能をサポートするように強化されています。間もなく発表されるC++ HotRodクライアントにもこの機能が含まれる予定です（最初は書き込み/読み取り用で、その後本格的な問い合わせ用になります）。"
 
 #. type: Plain text
 #: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:56
 #, fuzzy
-msgid ""
-"C++ HotRod client.  Allows C++ applications to read and write information "
-"from an Infinispan server. This is a fully fledged HotRod client that is "
-"topology (level 2) and consistent hash aware (level 3)  and will be released "
-"in the following days. Some features (such as Remote Query and SSL support) "
-"will be developed during the next iteration so that it maintains feature "
-"parity with its Java counterpart."
-msgstr ""
-"CのHotRodクライアントです。 "
-"CアプリケーションがInfinispanサーバから情報を読み書きできるようにします。これはトポロジー(レベル2)と一貫性のあるハッシュ認識(レベル3)を持つ完全に本格的なHotRodクライアントで、近日中にリリースされる予定です。いくつかの機能(リモートクエリやSSLサポートなど)は次のイテレーションの間に開発され、Javaとの機能パリティを維持するようになります。"
+msgid "C++ HotRod client.  Allows C++ applications to read and write information from an Infinispan server. This is a fully fledged HotRod client that is topology (level 2) and consistent hash aware (level 3)  and will be released in the following days. Some features (such as Remote Query and SSL support) will be developed during the next iteration so that it maintains feature parity with its Java counterpart."
+msgstr "CのHotRodクライアントです。 CアプリケーションがInfinispanサーバから情報を読み書きできるようにします。これはトポロジー(レベル2)と一貫性のあるハッシュ認識(レベル3)を持つ完全に本格的なHotRodクライアントで、近日中にリリースされる予定です。いくつかの機能(リモートクエリやSSLサポートなど)は次のイテレーションの間に開発され、Javaとの機能パリティを維持するようになります。"
 
 #. type: Plain text
 #: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:63
 #, fuzzy
-msgid ""
-"Better persistence integration. We’ve revisited the entire cache loader API "
-"and we’re quite pleased with the result: the new http://blog.infinispan.org/"
-"2013/09/new-persistence-api-in-infinispan.html[Persistence API] brought by "
-"Infinispan 6.0 supports parallel iteration of the stored entries, reduces "
-"the overall serialization overhead and also is aligned with the http://jcp."
-"org/en/jsr/detail?id=107[JSR-107] specification, which makes implementations "
-"more portable."
-msgstr ""
-"より良いパーシステンスの統合。Infinispan 6.0によってもたらされた新しい link:http://blog.infinispan.org/"
-"2013/09/new-persistence-api-in-infinispan.html[Persistence APIは] "
-"、保存されたエントリの並列イテレーションをサポートし、全体的なシリアライゼーションのオーバーヘッドを削減し、さらに link:http://jcp."
-"org/en/jsr/detail?id=107[JSR-107] 仕様に準拠しているため、実装をよりポータブルにしています。"
+msgid "Better persistence integration. We’ve revisited the entire cache loader API and we’re quite pleased with the result: the new http://blog.infinispan.org/2013/09/new-persistence-api-in-infinispan.html[Persistence API] brought by Infinispan 6.0 supports parallel iteration of the stored entries, reduces the overall serialization overhead and also is aligned with the http://jcp.org/en/jsr/detail?id=107[JSR-107] specification, which makes implementations more portable."
+msgstr "より良いパーシステンスの統合。Infinispan 6.0によってもたらされた新しい link:http://blog.infinispan.org/2013/09/new-persistence-api-in-infinispan.html[Persistence APIは] 、保存されたエントリの並列イテレーションをサポートし、全体的なシリアライゼーションのオーバーヘッドを削減し、さらに link:http://jcp.org/en/jsr/detail?id=107[JSR-107] 仕様に準拠しているため、実装をよりポータブルにしています。"
 
 #. type: Plain text
 #: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:70
 #, fuzzy
-msgid ""
-"A more efficient FileCacheStore http://blog.infinispan.org/2013/07/faster-"
-"file-cache-store-no-extra.html[implementation].  This file store is built "
-"with efficiency in mind: it outperforms the existing file store with up to 2 "
-"levels of magnitude. This comes at a cost though, as keys need to be kept "
-" in memory. Thanks to https://github.com/kblees[Karsten Blees] for "
-"contributing this!"
-msgstr ""
-"より効率的な FileCacheStore の link:http://blog.infinispan.org/2013/07/faster-file-"
-"cache-store-no-extra.html[実装] "
-"。このファイルストアは効率性を考慮して構築されています。しかし、キーをメモリに保持する必要があるため、これにはコストがかかります。貢献してくれた "
-"link:https://github.com/kblees[Karsten Blees] に感謝します。"
+msgid "A more efficient FileCacheStore http://blog.infinispan.org/2013/07/faster-file-cache-store-no-extra.html[implementation].  This file store is built with efficiency in mind: it outperforms the existing file store with up to 2 levels of magnitude. This comes at a cost though, as keys need to be kept  in memory. Thanks to https://github.com/kblees[Karsten Blees] for contributing this!"
+msgstr "より効率的な FileCacheStore の link:http://blog.infinispan.org/2013/07/faster-file-cache-store-no-extra.html[実装] 。このファイルストアは効率性を考慮して構築されています。しかし、キーをメモリに保持する必要があるため、これにはコストがかかります。貢献してくれた link:https://github.com/kblees[Karsten Blees] に感謝します。"
 
 #. type: Plain text
 #: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:77
 #, fuzzy
-msgid ""
-"Support for http://blog.infinispan.org/2013/09/heterogenous-clusters-with-"
-"infinispan.html[heterogeneous clusters]. Up to this release, every member of "
-"the cluster owns an equal share of the cluster’s data. This doesn’t work "
-"well if one machine is more powerful than the other cluster participants. "
-"This functionality allows specifying the amount of data, compared with the "
-"average, held by a particular machine."
-msgstr ""
-"link:http://blog.infinispan.org/2013/09/heterogenous-clusters-with-"
-"infinispan.html[異種クラ] "
-"スターのサポート。このリリースまでは、クラスタの各メンバーがクラスタのデータを均等に所有していました。これは、1台のマシンが他のクラスタ参加者よりも強力な場合にはうまく機能しません。この機能により、特定のマシンが保持するデータ量を平均値と比較して指定することができます。"
+msgid "Support for http://blog.infinispan.org/2013/09/heterogenous-clusters-with-infinispan.html[heterogeneous clusters]. Up to this release, every member of the cluster owns an equal share of the cluster’s data. This doesn’t work well if one machine is more powerful than the other cluster participants. This functionality allows specifying the amount of data, compared with the average, held by a particular machine."
+msgstr "link:http://blog.infinispan.org/2013/09/heterogenous-clusters-with-infinispan.html[異種クラ] スターのサポート。このリリースまでは、クラスタの各メンバーがクラスタのデータを均等に所有していました。これは、1台のマシンが他のクラスタ参加者よりも強力な場合にはうまく機能しません。この機能により、特定のマシンが保持するデータ量を平均値と比較して指定することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:81
 #, fuzzy
-msgid ""
-"A new set of usage and performance https://issues.jboss.org/browse/ISPN-"
-"2861[statistics] developed within the scope of the CloudTM projecthttps://"
-"issues.jboss.org/browse/ISPN-3234[]."
-msgstr ""
-"CloudTMプロジェクトhttps://issues.jboss.org/browse/ISPN-3234[]の範囲内で開発された新しい利用 link:"
-"https://issues.jboss.org/browse/ISPN-2861[統計] とパフォーマンス link:https://issues."
-"jboss.org/browse/ISPN-2861[統計の] セット。"
+msgid "A new set of usage and performance https://issues.jboss.org/browse/ISPN-2861[statistics] developed within the scope of the CloudTM projecthttps://issues.jboss.org/browse/ISPN-3234[]."
+msgstr "CloudTMプロジェクトhttps://issues.jboss.org/browse/ISPN-3234[]の範囲内で開発された新しい利用 link:https://issues.jboss.org/browse/ISPN-2861[統計] とパフォーマンス link:https://issues.jboss.org/browse/ISPN-2861[統計の] セット。"
 
 #. type: Plain text
 #: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:84
 #, fuzzy
-msgid ""
-"https://issues.jboss.org/browse/ISPN-3234[JCache] (JSR-107)  implementation "
-"upgrade. First released in Infinispan 5.3.0, the standard caching support is "
-"now upgraded to version 1.0.0-PFD."
-msgstr ""
-"link:https://issues.jboss.org/browse/ISPN-3234[JCache] (JSR-107) "
-"の実装アップグレード。Infinispan 5.3.0で最初にリリースされ、標準のキャッシュサポートがバージョン1.0.0-"
-"PFDにアップグレードされました。"
+msgid "https://issues.jboss.org/browse/ISPN-3234[JCache] (JSR-107)  implementation upgrade. First released in Infinispan 5.3.0, the standard caching support is now upgraded to version 1.0.0-PFD."
+msgstr "link:https://issues.jboss.org/browse/ISPN-3234[JCache] (JSR-107) の実装アップグレード。Infinispan 5.3.0で最初にリリースされ、標準のキャッシュサポートがバージョン1.0.0-PFDにアップグレードされました。"
 
 #. type: Plain text
 #: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:92
 #, fuzzy
-msgid ""
-"For a complete list of features included in this release please refer to the "
-"https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
-"12322480[release notes]."
-msgstr ""
-"このリリースに含まれる機能の一覧については、 link:https://issues.jboss.org/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12322480[リリースノートを] 参照してください。"
+msgid "For a complete list of features included in this release please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12322480[release notes]."
+msgstr "このリリースに含まれる機能の一覧については、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12322480[リリースノートを] 参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:96
 #, fuzzy
-msgid ""
-"The user documentation for this release has been revamped and migrated to "
-"the http://infinispan.org/documentation/[new website] - we think it looks "
-"much better and hope you’ll like it too!"
-msgstr ""
-"このリリースのユーザードキュメントは改訂され、 link:http://infinispan.org/documentation/[新しいウェブサイト] "
-"に移行されました。"
+msgid "The user documentation for this release has been revamped and migrated to the http://infinispan.org/documentation/[new website] - we think it looks much better and hope you’ll like it too!"
+msgstr "このリリースのユーザードキュメントは改訂され、 link:http://infinispan.org/documentation/[新しいウェブサイト] に移行されました。"
 
 #. type: Plain text
 #: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:105
 #, fuzzy
-msgid ""
-"This release has spread over a period of 5 months: a sustained effort from "
-"the core development team, QE team and our growing community - a BIG thanks "
-"to everybody involved! Please visit our http://infinispan.org/download/"
-"[downloads] section to find the latest release. Also if you have any "
-"questions please check our http://infinispan.org/community/[forums], our "
-"https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or "
-"ping us directly on irc://irc.freenode.org/infinispan[IRC]."
-msgstr ""
-"このリリースは5ヶ月に渡って行われました。コア開発チーム、QEチーム、そして成長を続けるコミュニティの継続的な努力の賜物です。最新のリリースは link:"
-"http://infinispan.org/download/[ダウンロード] セクションをご覧ください。また、ご質問がある場合は、 link:http:"
-"//infinispan.org/community/[フォーラム] や link:https://lists.jboss.org/mailman/"
-"listinfo/infinispan-dev[メーリングリストを] チェックするか、 link:irc://irc.freenode.org/"
-"infinispan[IRC] で直接pingしてください。"
+msgid "This release has spread over a period of 5 months: a sustained effort from the core development team, QE team and our growing community - a BIG thanks to everybody involved! Please visit our http://infinispan.org/download/[downloads] section to find the latest release. Also if you have any questions please check our http://infinispan.org/community/[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+msgstr "このリリースは5ヶ月に渡って行われました。コア開発チーム、QEチーム、そして成長を続けるコミュニティの継続的な努力の賜物です。最新のリリースは link:http://infinispan.org/download/[ダウンロード] セクションをご覧ください。また、ご質問がある場合は、 link:http://infinispan.org/community/[フォーラム] や link:https://lists.jboss.org/mailman/listinfo/infinispan-dev[メーリングリストを] チェックするか、 link:irc://irc.freenode.org/infinispan[IRC] で直接pingしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-11-19-infinispan-600final-is-out.adoc:110

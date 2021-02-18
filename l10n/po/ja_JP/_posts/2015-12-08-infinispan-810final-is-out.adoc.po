@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-12-08-infinispan-810final-is-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-12-08-infinispan-810final-is-out.adoc:15
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 8.1.0.Final is out!\n"
@@ -37,10 +37,8 @@ msgid ""
 "\"final\",\n"
 "]\n"
 "thumbnail: https://i.ytimg.com/vi/m_j3dz4k4xA/default.jpg\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6874948129897005579\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/12/infinispan-810final-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6874948129897005579\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/12/infinispan-810final-is-out.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -54,10 +52,8 @@ msgstr ""
 "\"final\",\n"
 "]\n"
 "thumbnail: https://i.ytimg.com/vi/m_j3dz4k4xA/default.jpg\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6874948129897005579\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/12/infinispan-810final-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6874948129897005579\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/12/infinispan-810final-is-out.html\n"
 "---\n"
 
 #. type: Plain text
@@ -69,55 +65,25 @@ msgstr "親愛なる皆様。"
 #. type: Plain text
 #: upstream/_posts/2015-12-08-infinispan-810final-is-out.adoc:23
 #, fuzzy
-msgid ""
-"We are proud to announce the release of Infinispan 8.1.0.Final, codenamed "
-"“Mahou”, the culmination of four months of active development."
+msgid "We are proud to announce the release of Infinispan 8.1.0.Final, codenamed “Mahou”, the culmination of four months of active development."
 msgstr "4ヶ月間の積極的な開発の集大成である、Infinispan 8.1.0.Finalのリリースを発表できることを誇りに思います。"
 
 #. type: Plain text
 #: upstream/_posts/2015-12-08-infinispan-810final-is-out.adoc:36
 #, fuzzy
-msgid ""
-"This release brings many enhancements but most of all we would like to "
-"highlight the new Infinispan Web Management Console which is finally ready "
-"for prime time. We have gone through quite a few iterations in UI/UIX design "
-"to make sure the majority of use case scenarios are covered. In 8.2 release "
-"we are going to add further enhancements to configuring and managing "
-"endpoints, server tasks, cache containers and others. Until then, have a "
-"look, try it out and do not forget to provide us with your feedback. As a "
-"teaser, we provide you with the following https://www.youtube.com/watch?v="
-"m_j3dz4k4xA[video] showcasing the new admin console."
-msgstr ""
-"今回のリリースでは多くの機能強化が行われていますが、その中でも特に注目したいのは、新しい Infinispan Web "
-"管理コンソールです。大半のユースケースシナリオをカバーできるように、UI/UIXデザインを何度も繰り返してきました。8."
-"2リリースでは、エンドポイントの設定と管理、サーバータスク、キャッシュコンテナなどの機能をさらに強化する予定です。それまでの間、ご覧になって試してみて、フィードバックを提供することを忘れないでください。ティーザーとして、新しい管理コンソールを紹介する以下の "
-"link:https://www.youtube.com/watch?v=m_j3dz4k4xA[ビデオを] 提供します。"
+msgid "This release brings many enhancements but most of all we would like to highlight the new Infinispan Web Management Console which is finally ready for prime time. We have gone through quite a few iterations in UI/UIX design to make sure the majority of use case scenarios are covered. In 8.2 release we are going to add further enhancements to configuring and managing endpoints, server tasks, cache containers and others. Until then, have a look, try it out and do not forget to provide us with your feedback. As a teaser, we provide you with the following https://www.youtube.com/watch?v=m_j3dz4k4xA[video] showcasing the new admin console."
+msgstr "今回のリリースでは多くの機能強化が行われていますが、その中でも特に注目したいのは、新しい Infinispan Web 管理コンソールです。大半のユースケースシナリオをカバーできるように、UI/UIXデザインを何度も繰り返してきました。8.2リリースでは、エンドポイントの設定と管理、サーバータスク、キャッシュコンテナなどの機能をさらに強化する予定です。それまでの間、ご覧になって試してみて、フィードバックを提供することを忘れないでください。ティーザーとして、新しい管理コンソールを紹介する以下の link:https://www.youtube.com/watch?v=m_j3dz4k4xA[ビデオを] 提供します。"
 
 #. type: Plain text
 #: upstream/_posts/2015-12-08-infinispan-810final-is-out.adoc:47
 #, fuzzy
-msgid ""
-"Discover all the cool new features http://infinispan.org/release-notes/#8."
-"1[here] or read the full release notes https://issues.jboss.org/secure/"
-"ReleaseNote.jspa?projectId=12310799&version=12326665[here].  You can get "
-"this release from ourhttp://infinispan.org/download/[ download page] as "
-"usual. If you are new to Infinispan you can http://infinispan.org/tutorials/"
-"[learn] how to use it and http://infinispan.org/getinvolved/[help] us "
-"continually improve it."
-msgstr ""
-"すべてのクールな新機能を link:http://infinispan.org/release-notes/#8.1[ここで] "
-"発見するか、または完全なリリースノートを link:https://issues.jboss.org/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12326665[ここで] 読んでください。このリリースは、いつものようにhttp://"
-"infinispan.org/download/[ ダウンロードページ]から入手できます。初めてInfinispanをご利用になる方は、使い方を "
-"link:http://infinispan.org/tutorials/[学び] 、継続的な改善にご link:http://infinispan."
-"org/getinvolved/[協力] ください。"
+msgid "Discover all the cool new features http://infinispan.org/release-notes/#8.1[here] or read the full release notes https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12326665[here].  You can get this release from ourhttp://infinispan.org/download/[ download page] as usual. If you are new to Infinispan you can http://infinispan.org/tutorials/[learn] how to use it and http://infinispan.org/getinvolved/[help] us continually improve it."
+msgstr "すべてのクールな新機能を link:http://infinispan.org/release-notes/#8.1[ここで] 発見するか、または完全なリリースノートを link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12326665[ここで] 読んでください。このリリースは、いつものようにhttp://infinispan.org/download/[ ダウンロードページ]から入手できます。初めてInfinispanをご利用になる方は、使い方を link:http://infinispan.org/tutorials/[学び] 、継続的な改善にご link:http://infinispan.org/getinvolved/[協力] ください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-12-08-infinispan-810final-is-out.adoc:52
 #, fuzzy
-msgid ""
-"[#docs-internal-guid-8bc06ea5-82db-0a10-a667-a395ca3ec9be]#Enjoy and stay "
-"tuned for more posts covering the new features!#"
+msgid "[#docs-internal-guid-8bc06ea5-82db-0a10-a667-a395ca3ec9be]#Enjoy and stay tuned for more posts covering the new features!#"
 msgstr "新機能についての記事をお楽しみください。"
 
 #. type: Plain text

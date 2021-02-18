@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-02-03-the-return-of-cassandra-cachestore.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-03-the-return-of-cassandra-cachestore.adoc:13
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: The return of the Cassandra CacheStore\n"
@@ -35,10 +35,8 @@ msgid ""
 "\"cassandra\",\n"
 "\"cache store\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3387044271722101906\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/02/the-return-of-"
-"cassandra-cachestore.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3387044271722101906\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/02/the-return-of-cassandra-cachestore.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -50,133 +48,84 @@ msgstr ""
 "\"cassandra\",\n"
 "\"cache store\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3387044271722101906\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/02/the-return-of-"
-"cassandra-cachestore.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3387044271722101906\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/02/the-return-of-cassandra-cachestore.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-03-the-return-of-cassandra-cachestore.adoc:21
 #, fuzzy
-msgid ""
-"Ever since we spruced up our Cache Store SPI in Infinispan 6.0, some of our "
-"\"extra\" cache stores have lied in a state of semi-abandonment, waiting for "
-"a kind soul with time and determination to bring them back to life.  I'm "
-"glad to announce that such a kind soul, in the form of Jakub Markos, had the "
-"necessary qualities to accomplish the resurrection of the Cassandra Cache "
-"Store."
-msgstr ""
-"Infinispan 6.0 で Cache Store SPI "
-"を刷新して以来、いくつかの「余分な」キャッシュストアは、時間と決意を持った親切な人が復活させてくれるのを待って、半放置状態で横たわっていました。そのような親切な魂、Jakub "
-"Markosの形で、カサンドラキャッシュストアの復活を達成するために必要な資質を持っていたことを発表できることを嬉しく思います。"
+msgid "Ever since we spruced up our Cache Store SPI in Infinispan 6.0, some of our \"extra\" cache stores have lied in a state of semi-abandonment, waiting for a kind soul with time and determination to bring them back to life.  I'm glad to announce that such a kind soul, in the form of Jakub Markos, had the necessary qualities to accomplish the resurrection of the Cassandra Cache Store."
+msgstr "Infinispan 6.0 で Cache Store SPI を刷新して以来、いくつかの「余分な」キャッシュストアは、時間と決意を持った親切な人が復活させてくれるのを待って、半放置状態で横たわっていました。そのような親切な魂、Jakub Markosの形で、カサンドラキャッシュストアの復活を達成するために必要な資質を持っていたことを発表できることを嬉しく思います。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-03-the-return-of-cassandra-cachestore.adoc:28
 #, fuzzy
-msgid ""
-"http://cassandra.apache.org/[Apache Cassandra] is a database with a "
-"distributed architecture which can be used to provide a virtually unlimited, "
-"horizontally scalable persistent store for Infinispan's caches. The new "
-"Cassandra Cache Store leverages the Datastax Cassandra client driver instead "
-"of the old Thrift client approach, which makes it much more robust and "
-"reliable."
-msgstr ""
-"link:http://cassandra.apache.org/[Apache Cassandra] "
-"は、Infinispanのキャッシュのための実質的に無制限で水平方向に拡張可能な永続的なストアを提供するために使用できる分散アーキテクチャのデータベースです。新しいCassandra "
-"Cache Storeは、古いThriftクライアント・アプローチの代わりにDatastax "
-"Cassandraクライアント・ドライバを活用しており、より堅牢で信頼性の高いものになっています。"
+msgid "http://cassandra.apache.org/[Apache Cassandra] is a database with a distributed architecture which can be used to provide a virtually unlimited, horizontally scalable persistent store for Infinispan's caches. The new Cassandra Cache Store leverages the Datastax Cassandra client driver instead of the old Thrift client approach, which makes it much more robust and reliable."
+msgstr "link:http://cassandra.apache.org/[Apache Cassandra] は、Infinispanのキャッシュのための実質的に無制限で水平方向に拡張可能な永続的なストアを提供するために使用できる分散アーキテクチャのデータベースです。新しいCassandra Cache Storeは、古いThriftクライアント・アプローチの代わりにDatastax Cassandraクライアント・ドライバを活用しており、より堅牢で信頼性の高いものになっています。"
 
 #. type: Title ==
 #: upstream/_posts/2016-02-03-the-return-of-cassandra-cachestore.adoc:29
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Configuration"
 msgstr "構成"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-03-the-return-of-cassandra-cachestore.adoc:33
 #, fuzzy
-msgid ""
-"In order to use this cache store you need to add the following dependency to "
-"your project:"
+msgid "In order to use this cache store you need to add the following dependency to your project:"
 msgstr "このキャッシュストアを使用するには、以下の依存関係をプロジェクトに追加する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-03-the-return-of-cassandra-cachestore.adoc:39
 #, fuzzy
-msgid ""
-"You will also need to create an appropriate keyspace on your Cassandra "
-"database, or configure the auto-create-keyspace to create it automatically.  "
-"The following CQL commands show how to configure the keyspace manually "
-"(using cqlsh for example):"
-msgstr ""
-"また、Cassandraデータベースに適切なキースペースを作成するか、自動作成キースペースを構成して自動的に作成する必要があります。以下のCQLコマンドは、キースペースを手動で構成する方法を示しています（例えば、cqlshを使用します）。"
+msgid "You will also need to create an appropriate keyspace on your Cassandra database, or configure the auto-create-keyspace to create it automatically.  The following CQL commands show how to configure the keyspace manually (using cqlsh for example):"
+msgstr "また、Cassandraデータベースに適切なキースペースを作成するか、自動作成キースペースを構成して自動的に作成する必要があります。以下のCQLコマンドは、キースペースを手動で構成する方法を示しています（例えば、cqlshを使用します）。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-03-the-return-of-cassandra-cachestore.adoc:46
 #, fuzzy
-msgid ""
-"You then need to add an appropriate cache declaration to your `infinispan."
-"xml` (or whichever file you use to configure Infinispan):"
-msgstr ""
-"その後、適切なキャッシュ宣言を `infinispan.xml` (または Infinispan を設定するために使用するファイル) "
-"に追加する必要があります。"
+msgid "You then need to add an appropriate cache declaration to your `infinispan.xml` (or whichever file you use to configure Infinispan):"
+msgstr "その後、適切なキャッシュ宣言を `infinispan.xml` (または Infinispan を設定するために使用するファイル) に追加する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-03-the-return-of-cassandra-cachestore.adoc:52
 #, fuzzy
-msgid ""
-"It is important the the shared property on the cassandra-store element is "
-"set to true because all the Infinispan nodes will share the same Cassandra "
-"cluster."
-msgstr ""
-"すべてのInfinispanノードが同じCassandraクラスタを共有するため、cassandra-"
-"store要素のsharedプロパティをtrueに設定することが重要です。"
+msgid "It is important the the shared property on the cassandra-store element is set to true because all the Infinispan nodes will share the same Cassandra cluster."
+msgstr "すべてのInfinispanノードが同じCassandraクラスタを共有するため、cassandra-store要素のsharedプロパティをtrueに設定することが重要です。"
 
 #. type: Title ==
 #: upstream/_posts/2016-02-03-the-return-of-cassandra-cachestore.adoc:54
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Limitations"
 msgstr "制限事項"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-03-the-return-of-cassandra-cachestore.adoc:57
 #, fuzzy
-msgid ""
-"The cache store uses Cassandra's own expiration mechanisms (time to live"
+msgid "The cache store uses Cassandra's own expiration mechanisms (time to live"
 msgstr "キャッシュストアは、Cassandra独自の期限切れメカニズムを使用しています（期限切れまでの時間"
 
 #. type: Title =
 #: upstream/_posts/2016-02-03-the-return-of-cassandra-cachestore.adoc:57
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "TTL) to handle expiration of entries. Since TTL is specified in"
 msgstr "TTL)を使用して、エントリーの期限切れを処理します。でTTLが指定されているので"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-03-the-return-of-cassandra-cachestore.adoc:60
 #, fuzzy
-msgid ""
-"seconds, expiration lifespan and maxIdle values are handled only with "
-"seconds-precision."
+msgid "seconds, expiration lifespan and maxIdle values are handled only with seconds-precision."
 msgstr "秒、有効期限、maxIdleの値は秒精度のみで処理されます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-03-the-return-of-cassandra-cachestore.adoc:64
 #, fuzzy
-msgid ""
-"In addition to this, when both lifespan and maxIdle are used, entries in the "
-"cache store effectively behave as if their lifespan = maxIdle, due to an "
-"existing bug https://issues.jboss.org/browse/ISPN-3202."
-msgstr ""
-"これに加えて、lifespan と maxIdle の両方が使用されている場合、既存のバグのため、キャッシュストアのエントリは事実上、lifespan ="
-" maxIdle であるかのように動作します https://issues.jboss.org/browse/ISPN-3202 。"
+msgid "In addition to this, when both lifespan and maxIdle are used, entries in the cache store effectively behave as if their lifespan = maxIdle, due to an existing bug https://issues.jboss.org/browse/ISPN-3202."
+msgstr "これに加えて、lifespan と maxIdle の両方が使用されている場合、既存のバグのため、キャッシュストアのエントリは事実上、lifespan = maxIdle であるかのように動作します https://issues.jboss.org/browse/ISPN-3202 。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-03-the-return-of-cassandra-cachestore.adoc:67
 #, fuzzy
-msgid ""
-"So, try it out and https://developer.jboss.org/en/infinispan/content[let us "
-"know] about your experience !"
-msgstr ""
-"だから、それを試してみて、 link:https://developer.jboss.org/en/infinispan/content[私たちは] "
-"あなたの経験について link:https://developer.jboss.org/en/infinispan/content[教えてください]"
+msgid "So, try it out and https://developer.jboss.org/en/infinispan/content[let us know] about your experience !"
+msgstr "だから、それを試してみて、 link:https://developer.jboss.org/en/infinispan/content[私たちは] あなたの経験について link:https://developer.jboss.org/en/infinispan/content[教えてください]"

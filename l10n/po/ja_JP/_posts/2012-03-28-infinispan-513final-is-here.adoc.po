@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-03-28-infinispan-513final-is-here.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-28-infinispan-513final-is-here.adoc:15
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 5.1.3.FINAL is here!\n"
@@ -37,10 +37,8 @@ msgid ""
 "\"final\",\n"
 "\"performance\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2072884754714494179\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/03/infinispan-513final-is-"
-"here.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2072884754714494179\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/03/infinispan-513final-is-here.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -54,63 +52,33 @@ msgstr ""
 "\"final\",\n"
 "\"performance\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2072884754714494179\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/03/infinispan-513final-is-"
-"here.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2072884754714494179\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/03/infinispan-513final-is-here.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-28-infinispan-513final-is-here.adoc:23
 #, fuzzy
-msgid ""
-"Infinispan 5.1.3.FINAL is out now after having received very positive "
-"feedback on 5.1.3.CR1 and fixing some other issues on top of that, such as "
-"the https://issues.jboss.org/browse/ISPN-1936[file cache store leaving files "
-"open], https://issues.jboss.org/browse/ISPN-1943[improving standalone "
-"Infinispan Memcached implementation performance], and https://issues.jboss."
-"org/browse/ISPN-1937[including Infinispan CDI extension jars in our "
-"distribution]."
-msgstr ""
-"Infinispan 5.1.3.FINALは、5.1.3.CR1で非常にポジティブなフィードバックを受けた後、 link:https://issues."
-"jboss.org/browse/ISPN-1936[ファイルキャッシュストアがファイルを開いたままにしてしまう] 問題や、 link:https://"
-"issues.jboss.org/browse/ISPN-1943[スタンドアロンのInfinispan Memcached実装のパフォーマンスの改善] "
-"、Infinispan link:https://issues.jboss.org/browse/ISPN-"
-"1937[CDI拡張ジャーのディストリビューションへの追加] など、いくつかの問題を修正してリリースされました。"
+msgid "Infinispan 5.1.3.FINAL is out now after having received very positive feedback on 5.1.3.CR1 and fixing some other issues on top of that, such as the https://issues.jboss.org/browse/ISPN-1936[file cache store leaving files open], https://issues.jboss.org/browse/ISPN-1943[improving standalone Infinispan Memcached implementation performance], and https://issues.jboss.org/browse/ISPN-1937[including Infinispan CDI extension jars in our distribution]."
+msgstr "Infinispan 5.1.3.FINALは、5.1.3.CR1で非常にポジティブなフィードバックを受けた後、 link:https://issues.jboss.org/browse/ISPN-1936[ファイルキャッシュストアがファイルを開いたままにしてしまう] 問題や、 link:https://issues.jboss.org/browse/ISPN-1943[スタンドアロンのInfinispan Memcached実装のパフォーマンスの改善] 、Infinispan link:https://issues.jboss.org/browse/ISPN-1937[CDI拡張ジャーのディストリビューションへの追加] など、いくつかの問題を修正してリリースされました。"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-28-infinispan-513final-is-here.adoc:28
 #, fuzzy
-msgid ""
-"\"Release early, release often\", that's out motto, so we'll carry on taking "
-"feedback onboard and releasing new Infinispan versions where we improve on "
-"what we've done in the past apart from coming out with new goodies."
-msgstr ""
-"\"リリースは早めに、リリースは頻繁に」というのがモットーなので、フィードバックを受けて、新しいグッズをリリースするだけでなく、過去に行ってきたことを改良した新しいInfinispanバージョンをリリースしていきます。"
+msgid "\"Release early, release often\", that's out motto, so we'll carry on taking feedback onboard and releasing new Infinispan versions where we improve on what we've done in the past apart from coming out with new goodies."
+msgstr "\"リリースは早めに、リリースは頻繁に」というのがモットーなので、フィードバックを受けて、新しいグッズをリリースするだけでなく、過去に行ってきたことを改良した新しいInfinispanバージョンをリリースしていきます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-28-infinispan-513final-is-here.adoc:32
 #, fuzzy
-msgid ""
-"Thanks to everyone, both users who have been getting in touch to provide "
-"their feedback and developers who have been quickly reacting to users fixing "
-"issues and implementing requested features."
-msgstr ""
-"フィードバックを提供するために連絡を取っているユーザーと、問題を修正して要求された機能を実装するためにユーザーに迅速に対応している開発者の両方の皆さんに感謝します。"
+msgid "Thanks to everyone, both users who have been getting in touch to provide their feedback and developers who have been quickly reacting to users fixing issues and implementing requested features."
+msgstr "フィードバックを提供するために連絡を取っているユーザーと、問題を修正して要求された機能を実装するためにユーザーに迅速に対応している開発者の両方の皆さんに感謝します。"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-28-infinispan-513final-is-here.adoc:39
 #, fuzzy
-msgid ""
-"Full details of what has been fixed in FINAL (including CR1) can be "
-"found https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12310799&version=12319209[here], and if you have feedback, please visit http:"
-"//community.jboss.org/en/infinispan?view=discussions[our forums]. Finally, "
-"as always, you can download the release from http://www.jboss.org/infinispan/"
-"downloads[here]."
-msgstr ""
-"FINALで修正された内容（CR1を含む）の詳細はこちらに掲載しています link:http://community.jboss.org/en/"
-"infinispan?view=discussions[。] 最後になりましたが、リリースはこちらからダウンロードできます。"
+msgid "Full details of what has been fixed in FINAL (including CR1) can be found https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12319209[here], and if you have feedback, please visit http://community.jboss.org/en/infinispan?view=discussions[our forums]. Finally, as always, you can download the release from http://www.jboss.org/infinispan/downloads[here]."
+msgstr "FINALで修正された内容（CR1を含む）の詳細はこちらに掲載しています link:http://community.jboss.org/en/infinispan?view=discussions[。] 最後になりましたが、リリースはこちらからダウンロードできます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-28-infinispan-513final-is-here.adoc:41

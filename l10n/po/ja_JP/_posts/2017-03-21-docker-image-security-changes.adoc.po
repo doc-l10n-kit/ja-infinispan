@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-03-21-docker-image-security-changes.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-21-docker-image-security-changes.adoc:15
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 'Docker image security changes '\n"
@@ -36,12 +36,9 @@ msgid ""
 "\"server\",\n"
 "\"rest\",\n"
 "]\n"
-"thumbnail: https://1.bp.blogspot.com/-y_wfaayyDoo/WMu8fNe-DdI/AAAAAAAAAbY/"
-"g2zK9M_O4DUnGLoTreUYgEs6Yu5-X1IOQCLcB/s72-c/docker.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"4280586439385801743\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/03/docker-image-security-"
-"changes.html\n"
+"thumbnail: https://1.bp.blogspot.com/-y_wfaayyDoo/WMu8fNe-DdI/AAAAAAAAAbY/g2zK9M_O4DUnGLoTreUYgEs6Yu5-X1IOQCLcB/s72-c/docker.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4280586439385801743\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/03/docker-image-security-changes.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -54,74 +51,43 @@ msgstr ""
 "\"server\",\n"
 "\"rest\",\n"
 "]\n"
-"thumbnail: https://1.bp.blogspot.com/-y_wfaayyDoo/WMu8fNe-DdI/AAAAAAAAAbY/"
-"g2zK9M_O4DUnGLoTreUYgEs6Yu5-X1IOQCLcB/s72-c/docker.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"4280586439385801743\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/03/docker-image-security-"
-"changes.html\n"
+"thumbnail: https://1.bp.blogspot.com/-y_wfaayyDoo/WMu8fNe-DdI/AAAAAAAAAbY/g2zK9M_O4DUnGLoTreUYgEs6Yu5-X1IOQCLcB/s72-c/docker.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4280586439385801743\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/03/docker-image-security-changes.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-21-docker-image-security-changes.adoc:17
 #, fuzzy
-msgid ""
-"https://1.bp.blogspot.com/-y_wfaayyDoo/WMu8fNe-DdI/AAAAAAAAAbY/"
-"g2zK9M_O4DUnGLoTreUYgEs6Yu5-X1IOQCLcB/s1600/docker.png[image:https://1.bp."
-"blogspot.com/-y_wfaayyDoo/WMu8fNe-DdI/AAAAAAAAAbY/"
-"g2zK9M_O4DUnGLoTreUYgEs6Yu5-X1IOQCLcB/s320/docker.png[image,width=320,height="
-"158]]"
-msgstr ""
-"link:https://1.bp.blogspot.com/-y_wfaayyDoo/WMu8fNe-DdI/AAAAAAAAAbY/"
-"g2zK9M_O4DUnGLoTreUYgEs6Yu5-X1IOQCLcB/s1600/docker.png[]"
+msgid "https://1.bp.blogspot.com/-y_wfaayyDoo/WMu8fNe-DdI/AAAAAAAAAbY/g2zK9M_O4DUnGLoTreUYgEs6Yu5-X1IOQCLcB/s1600/docker.png[image:https://1.bp.blogspot.com/-y_wfaayyDoo/WMu8fNe-DdI/AAAAAAAAAbY/g2zK9M_O4DUnGLoTreUYgEs6Yu5-X1IOQCLcB/s320/docker.png[image,width=320,height=158]]"
+msgstr "link:https://1.bp.blogspot.com/-y_wfaayyDoo/WMu8fNe-DdI/AAAAAAAAAbY/g2zK9M_O4DUnGLoTreUYgEs6Yu5-X1IOQCLcB/s1600/docker.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-21-docker-image-security-changes.adoc:21
 #, fuzzy
-msgid ""
-"In the latest 9.0.0.CR3 version, the Infinispan REST endpoint is secured by "
-"default, and in order to facilitate remote access, the Docker image has some "
-"changes related to the security."
-msgstr ""
-"最新のバージョン9.0.0."
-"CR3では、InfinispanのRESTエンドポイントはデフォルトでセキュリティが確保されており、リモートアクセスを容易にするために、Dockerイメージではセキュリティに関連した変更がいくつか行われています。"
+msgid "In the latest 9.0.0.CR3 version, the Infinispan REST endpoint is secured by default, and in order to facilitate remote access, the Docker image has some changes related to the security."
+msgstr "最新のバージョン9.0.0.CR3では、InfinispanのRESTエンドポイントはデフォルトでセキュリティが確保されており、リモートアクセスを容易にするために、Dockerイメージではセキュリティに関連した変更がいくつか行われています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-21-docker-image-security-changes.adoc:24
 #, fuzzy
-msgid ""
-"The image now creates a default user login upon start; this user can be "
-"changed via environment variables if desired:"
+msgid "The image now creates a default user login upon start; this user can be changed via environment variables if desired:"
 msgstr "イメージは起動時にデフォルトのユーザーログインを作成するようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-21-docker-image-security-changes.adoc:29
 #, fuzzy
-msgid ""
-"You can check if the settings are in place by manipulating data via REST. "
-"Trying to do a curl without credentials should lead to a 401 response:"
-msgstr ""
-"REST経由でデータを操作することで設定ができているかどうかを確認できます。資格情報なしでcurlを行おうとすると、401の応答が返ってくるはずです。"
+msgid "You can check if the settings are in place by manipulating data via REST. Trying to do a curl without credentials should lead to a 401 response:"
+msgstr "REST経由でデータを操作することで設定ができているかどうかを確認できます。資格情報なしでcurlを行おうとすると、401の応答が返ってくるはずです。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-21-docker-image-security-changes.adoc:33
 #, fuzzy
-msgid ""
-"So make sure to always include the credentials from now on when interacting "
-"with the Rest endpoint! If using curl, this is the syntax:"
-msgstr ""
-"ですから、今後、Rest エンドポイントと対話する際には、常に資格情報を含めるようにしてください!curl "
-"を使用している場合は、次のような構文になります。"
+msgid "So make sure to always include the credentials from now on when interacting with the Rest endpoint! If using curl, this is the syntax:"
+msgstr "ですから、今後、Rest エンドポイントと対話する際には、常に資格情報を含めるようにしてください!curl を使用している場合は、次のような構文になります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-21-docker-image-security-changes.adoc:39
 #, fuzzy
-msgid ""
-"And that's all for this post. To find out more about the Infinispan Docker "
-"image, check the https://github.com/jboss-dockerfiles/infinispan/blob/master/"
-"server/README.md[documentation], give it a try and let us know if you have "
-"any issues or suggestions!"
-msgstr ""
-"この記事は以上です。InfinispanのDockerイメージについて詳しく知りたい方は、 link:https://github.com/jboss-"
-"dockerfiles/infinispan/blob/master/server/README.md[ドキュメントを] "
-"チェックして、試してみて、何か問題や提案があれば教えてください!"
+msgid "And that's all for this post. To find out more about the Infinispan Docker image, check the https://github.com/jboss-dockerfiles/infinispan/blob/master/server/README.md[documentation], give it a try and let us know if you have any issues or suggestions!"
+msgstr "この記事は以上です。InfinispanのDockerイメージについて詳しく知りたい方は、 link:https://github.com/jboss-dockerfiles/infinispan/blob/master/server/README.md[ドキュメントを] チェックして、試してみて、何か問題や提案があれば教えてください!"

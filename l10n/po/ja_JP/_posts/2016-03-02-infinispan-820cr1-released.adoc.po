@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-03-02-infinispan-820cr1-released.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-02-infinispan-820cr1-released.adoc:11
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 8.2.0.CR1 released!\n"
@@ -32,12 +32,9 @@ msgid ""
 "date: '2016-03-02T01:40:00.000-08:00'\n"
 "author: gustavonalle\n"
 "tags: [ \" console\",\"release candidate\" ]\n"
-"thumbnail: https://2.bp.blogspot.com/-MI65evkDUuw/Vtayjbc5jmI/AAAAAAAAKP8/"
-"psGTiUNtXS4/s72-c/cache-configuration-reorg.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6560516977530951672\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/03/infinispan-820cr1-"
-"released.html\n"
+"thumbnail: https://2.bp.blogspot.com/-MI65evkDUuw/Vtayjbc5jmI/AAAAAAAAKP8/psGTiUNtXS4/s72-c/cache-configuration-reorg.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6560516977530951672\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/03/infinispan-820cr1-released.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -46,125 +43,82 @@ msgstr ""
 "date: '2016-03-02T01:40:00.000-08:00'\n"
 "author: gustavonalle\n"
 "tags: [ \" console\",\"release candidate\" ]\n"
-"thumbnail: https://2.bp.blogspot.com/-MI65evkDUuw/Vtayjbc5jmI/AAAAAAAAKP8/"
-"psGTiUNtXS4/s72-c/cache-configuration-reorg.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6560516977530951672\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/03/infinispan-820cr1-"
-"released.html\n"
+"thumbnail: https://2.bp.blogspot.com/-MI65evkDUuw/Vtayjbc5jmI/AAAAAAAAKP8/psGTiUNtXS4/s72-c/cache-configuration-reorg.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6560516977530951672\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/03/infinispan-820cr1-released.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-02-infinispan-820cr1-released.adoc:14
 #, fuzzy
-msgid ""
-"The first candidate for release Infinispan 8.2 (Infinispan 8.2.0.CR1) is now "
-"http://infinispan.org/download/[available]!"
-msgstr ""
-"Infinispan 8.2 (Infinispan 8.2.0.CR1)のリリース候補第一弾を link:http://infinispan.org/"
-"download/[公開し] ました!"
+msgid "The first candidate for release Infinispan 8.2 (Infinispan 8.2.0.CR1) is now http://infinispan.org/download/[available]!"
+msgstr "Infinispan 8.2 (Infinispan 8.2.0.CR1)のリリース候補第一弾を link:http://infinispan.org/download/[公開し] ました!"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-02-infinispan-820cr1-released.adoc:20
 #, fuzzy
-msgid ""
-"It brings several bug fixes, documentation polishing and support for Apache "
-"Lucene 5.5.0. The management console introduced new operations related to "
-"rebalancing, backup sites, script deployment as well as layout and usability "
-"improvements, e.g. refreshing the page no longer sends you back to the login "
-"page !"
-msgstr ""
-"いくつかのバグ修正、ドキュメントの研磨、Apache Lucene 5.5.5.0 "
-"のサポートが行われました。管理コンソールには、リバランス、バックアップサイト、スクリプトの展開、レイアウトとユーザビリティの改善に関連した新しい操作が導入されました。"
+msgid "It brings several bug fixes, documentation polishing and support for Apache Lucene 5.5.0. The management console introduced new operations related to rebalancing, backup sites, script deployment as well as layout and usability improvements, e.g. refreshing the page no longer sends you back to the login page !"
+msgstr "いくつかのバグ修正、ドキュメントの研磨、Apache Lucene 5.5.5.0 のサポートが行われました。管理コンソールには、リバランス、バックアップサイト、スクリプトの展開、レイアウトとユーザビリティの改善に関連した新しい操作が導入されました。"
 
 #. type: Table
 #: upstream/_posts/2016-03-02-infinispan-820cr1-released.adoc:25
-#, no-wrap, fuzzy
-msgid ""
-"https://2.bp.blogspot.com/-MI65evkDUuw/Vtayjbc5jmI/AAAAAAAAKP8/psGTiUNtXS4/"
-"s1600/cache-configuration-reorg.png[image:https://2.bp.blogspot.com/-"
-"MI65evkDUuw/Vtayjbc5jmI/AAAAAAAAKP8/psGTiUNtXS4/s320/cache-configuration-"
-"reorg.png[image,width=320,height=188]]"
-msgstr ""
-"link:https://2.bp.blogspot.com/-MI65evkDUuw/Vtayjbc5jmI/AAAAAAAAKP8/"
-"psGTiUNtXS4/s1600/cache-configuration-reorg.png[]"
+#, fuzzy, no-wrap
+msgid "https://2.bp.blogspot.com/-MI65evkDUuw/Vtayjbc5jmI/AAAAAAAAKP8/psGTiUNtXS4/s1600/cache-configuration-reorg.png[image:https://2.bp.blogspot.com/-MI65evkDUuw/Vtayjbc5jmI/AAAAAAAAKP8/psGTiUNtXS4/s320/cache-configuration-reorg.png[image,width=320,height=188]]"
+msgstr "link:https://2.bp.blogspot.com/-MI65evkDUuw/Vtayjbc5jmI/AAAAAAAAKP8/psGTiUNtXS4/s1600/cache-configuration-reorg.png[]"
 
 #. type: Table
 #: upstream/_posts/2016-03-02-infinispan-820cr1-released.adoc:26
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Reorganized cache configuration with grouping of related options"
 msgstr "関連するオプションをグループ化したキャッシュ設定の再編成"
 
 #. type: Table
 #: upstream/_posts/2016-03-02-infinispan-820cr1-released.adoc:32
-#, no-wrap, fuzzy
-msgid ""
-"https://4.bp.blogspot.com/-TAv__7QBYNs/VtayjcjktnI/AAAAAAAAKQA/lib_Gtxla3U/"
-"s1600/cache-configuration-indexing.png[image:https://4.bp.blogspot.com/-"
-"TAv__7QBYNs/VtayjcjktnI/AAAAAAAAKQA/lib_Gtxla3U/s320/cache-configuration-"
-"indexing.png[image,width=320,height=173]]"
+#, fuzzy, no-wrap
+msgid "https://4.bp.blogspot.com/-TAv__7QBYNs/VtayjcjktnI/AAAAAAAAKQA/lib_Gtxla3U/s1600/cache-configuration-indexing.png[image:https://4.bp.blogspot.com/-TAv__7QBYNs/VtayjcjktnI/AAAAAAAAKQA/lib_Gtxla3U/s320/cache-configuration-indexing.png[image,width=320,height=173]]"
 msgstr "__"
 
 #. type: Table
 #: upstream/_posts/2016-03-02-infinispan-820cr1-released.adoc:33
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Indexing configuration options now get their own section"
 msgstr "インデックス設定オプションに独自のセクションが追加されました"
 
 #. type: Table
 #: upstream/_posts/2016-03-02-infinispan-820cr1-released.adoc:39
-#, no-wrap, fuzzy
-msgid ""
-"https://3.bp.blogspot.com/-P3ugWaF5ums/Vtay4Xo3qCI/AAAAAAAAKQE/UebUIBBfrzo/"
-"s1600/script-create.png[image:https://3.bp.blogspot.com/-P3ugWaF5ums/"
-"Vtay4Xo3qCI/AAAAAAAAKQE/UebUIBBfrzo/s320/script-create.png[image,width="
-"320,height=140]]"
-msgstr ""
-"link:https://3.bp.blogspot.com/-P3ugWaF5ums/Vtay4Xo3qCI/AAAAAAAAKQE/"
-"UebUIBBfrzo/s1600/script-create.png[]"
+#, fuzzy, no-wrap
+msgid "https://3.bp.blogspot.com/-P3ugWaF5ums/Vtay4Xo3qCI/AAAAAAAAKQE/UebUIBBfrzo/s1600/script-create.png[image:https://3.bp.blogspot.com/-P3ugWaF5ums/Vtay4Xo3qCI/AAAAAAAAKQE/UebUIBBfrzo/s320/script-create.png[image,width=320,height=140]]"
+msgstr "link:https://3.bp.blogspot.com/-P3ugWaF5ums/Vtay4Xo3qCI/AAAAAAAAKQE/UebUIBBfrzo/s1600/script-create.png[]"
 
 #. type: Table
 #: upstream/_posts/2016-03-02-infinispan-820cr1-released.adoc:40
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Creation of a new server-side script task"
 msgstr "サーバーサイドスクリプトタスクの新規作成"
 
 #. type: Table
 #: upstream/_posts/2016-03-02-infinispan-820cr1-released.adoc:47
-#, no-wrap, fuzzy
-msgid ""
-"https://2.bp.blogspot.com/-PIwL00zXpac/Vtay5KCU-jI/AAAAAAAAKQI/CPpxpBwA1y0/"
-"s1600/task-launch.png[image:https://2.bp.blogspot.com/-PIwL00zXpac/Vtay5KCU-"
-"jI/AAAAAAAAKQI/CPpxpBwA1y0/s320/task-launch.png[image,width=320,height=134]]"
-msgstr ""
-"link:https://2.bp.blogspot.com/-PIwL00zXpac/Vtay5KCU-jI/AAAAAAAAKQI/"
-"CPpxpBwA1y0/s1600/task-launch.png[]"
+#, fuzzy, no-wrap
+msgid "https://2.bp.blogspot.com/-PIwL00zXpac/Vtay5KCU-jI/AAAAAAAAKQI/CPpxpBwA1y0/s1600/task-launch.png[image:https://2.bp.blogspot.com/-PIwL00zXpac/Vtay5KCU-jI/AAAAAAAAKQI/CPpxpBwA1y0/s320/task-launch.png[image,width=320,height=134]]"
+msgstr "link:https://2.bp.blogspot.com/-PIwL00zXpac/Vtay5KCU-jI/AAAAAAAAKQI/CPpxpBwA1y0/s1600/task-launch.png[]"
 
 #. type: Table
 #: upstream/_posts/2016-03-02-infinispan-820cr1-released.adoc:49
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Launch of a script task with immediate visualization of the result"
 msgstr "スクリプトタスクの起動と結果の即時可視化"
 
 #. type: Table
 #: upstream/_posts/2016-03-02-infinispan-820cr1-released.adoc:54
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "[cols=\"^\" ]"
 msgstr "[cols=\"^\" ]"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-02-infinispan-820cr1-released.adoc:56
-#, no-wrap, fuzzy
-msgid ""
-"|https://4.bp.blogspot.com/-Vcjl2_TCKUU/Vtay5YMeYFI/AAAAAAAAKQM/Sv8XZxpVX3g/"
-"s1600/task-execution-history.png[image:https://4.bp.blogspot.com/-"
-"Vcjl2_TCKUU/Vtay5YMeYFI/AAAAAAAAKQM/Sv8XZxpVX3g/s320/task-execution-history."
-"png[image,width=320,height=79]]\n"
-msgstr ""
-"|https://4.bp.blogspot.com/-Vcjl2_TCKUU/Vtay5YMeYFI/AAAAAAAAKQM/Sv8XZxpVX3g/"
-"s1600/task-execution-history.png[image:https://4.bp.blogspot.com/-"
-"Vcjl2_TCKUU/Vtay5YMeYFI/AAAAAAAAKQM/Sv8XZxpVX3g/s320/task-execution-history."
-"png[alt=\"image\", width=\"320\", height=\"79\"]]"
+#, fuzzy, no-wrap
+msgid "|https://4.bp.blogspot.com/-Vcjl2_TCKUU/Vtay5YMeYFI/AAAAAAAAKQM/Sv8XZxpVX3g/s1600/task-execution-history.png[image:https://4.bp.blogspot.com/-Vcjl2_TCKUU/Vtay5YMeYFI/AAAAAAAAKQM/Sv8XZxpVX3g/s320/task-execution-history.png[image,width=320,height=79]]\n"
+msgstr "|https://4.bp.blogspot.com/-Vcjl2_TCKUU/Vtay5YMeYFI/AAAAAAAAKQM/Sv8XZxpVX3g/s1600/task-execution-history.png[image:https://4.bp.blogspot.com/-Vcjl2_TCKUU/Vtay5YMeYFI/AAAAAAAAKQM/Sv8XZxpVX3g/s320/task-execution-history.png[alt=\"image\", width=\"320\", height=\"79\"]]"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-02-infinispan-820cr1-released.adoc:58
@@ -175,16 +129,11 @@ msgstr "|タスク実行履歴"
 #. type: Plain text
 #: upstream/_posts/2016-03-02-infinispan-820cr1-released.adoc:64
 #, fuzzy
-msgid ""
-"For more details see the https://issues.jboss.org/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12328083[full list of changes]."
-msgstr ""
-"詳細については、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12310799&version=12328083[変更点の一覧を] ご覧ください。"
+msgid "For more details see the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12328083[full list of changes]."
+msgstr "詳細については、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12328083[変更点の一覧を] ご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-02-infinispan-820cr1-released.adoc:67
 #, fuzzy
-msgid ""
-"Give a try and http://infinispan.org/community/[tell us] what you think."
+msgid "Give a try and http://infinispan.org/community/[tell us] what you think."
 msgstr "試してみて、ご意見をお link:http://infinispan.org/community/[聞かせください] 。"

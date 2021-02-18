@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:11
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan triple connector release!\n"
@@ -32,12 +32,9 @@ msgid ""
 "date: '2018-11-02T03:57:00.000-07:00'\n"
 "author: gustavonalle\n"
 "tags: [ \" release\", \"kafka\", \"spark\", \"hadoop\" ]\n"
-"thumbnail: https://3.bp.blogspot.com/-ZU37uOY-U6o/W9wW5BsT2eI/AAAAAAAAAm8/"
-"XTAKrrcdvK8eo3j_gMdvtbshHOYR10aPwCEwYBhgL/s72-c/connectors.jpg\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1409181687570428914\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/11/infinispan-triple-"
-"connector-release.html\n"
+"thumbnail: https://3.bp.blogspot.com/-ZU37uOY-U6o/W9wW5BsT2eI/AAAAAAAAAm8/XTAKrrcdvK8eo3j_gMdvtbshHOYR10aPwCEwYBhgL/s72-c/connectors.jpg\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1409181687570428914\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/11/infinispan-triple-connector-release.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -46,85 +43,53 @@ msgstr ""
 "date: '2018-11-02T03:57:00.000-07:00'\n"
 "author: gustavonalle\n"
 "tags: [ \" release\", \"kafka\", \"spark\", \"hadoop\" ]\n"
-"thumbnail: https://3.bp.blogspot.com/-ZU37uOY-U6o/W9wW5BsT2eI/AAAAAAAAAm8/"
-"XTAKrrcdvK8eo3j_gMdvtbshHOYR10aPwCEwYBhgL/s72-c/connectors.jpg\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1409181687570428914\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/11/infinispan-triple-"
-"connector-release.html\n"
+"thumbnail: https://3.bp.blogspot.com/-ZU37uOY-U6o/W9wW5BsT2eI/AAAAAAAAAm8/XTAKrrcdvK8eo3j_gMdvtbshHOYR10aPwCEwYBhgL/s72-c/connectors.jpg\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1409181687570428914\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/11/infinispan-triple-connector-release.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:14
 #, fuzzy
-msgid ""
-"Infinispan Spark, Infinispan Hadoop and Infinispan Kafka have a new fresh "
-"release each!"
-msgstr ""
-"Infinispan Spark、Infinispan Hadoop、Infinispan Kafkaがそれぞれ新鮮なリリースをしています!"
+msgid "Infinispan Spark, Infinispan Hadoop and Infinispan Kafka have a new fresh release each!"
+msgstr "Infinispan Spark、Infinispan Hadoop、Infinispan Kafkaがそれぞれ新鮮なリリースをしています!"
 
 #. type: Title ====
 #: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:17
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "[.underline]#Infinispan Spark 0.9#"
 msgstr "Infinispan Spark 0.9"
 
 #. type: Title ====
 #: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:19
 #: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:53
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid " "
 msgstr " "
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:26
 #, fuzzy
-msgid ""
-"The native Apache Spark connector now supports Infinispan 9.4.x and Spark 2."
-"3.2, and it exposes Infinispan's new transcoding capabilities, enabling the "
-"_InfinispanRDD_ and _InfinispanDStream_ to operate with multiple data "
-"formats. For more details see the https://github.com/infinispan/infinispan-"
-"spark/blob/master/README.md#using-multiple-data-formats[documentation]."
-msgstr ""
-"ネイティブのApache SparkコネクタがInfinispan 9.4.xとSpark 2.3."
-"2をサポートするようになり、Infinispanの新しいトランスコーディング機能が公開され、 _InfinispanRDD_ と "
-"_InfinispanDStream_ が複数のデータフォーマットで動作するようになりました。詳細は link:https://github.com/"
-"infinispan/infinispan-spark/blob/master/README.md#using-multiple-data-"
-"formats[ドキュメント] を参照してください。"
+msgid "The native Apache Spark connector now supports Infinispan 9.4.x and Spark 2.3.2, and it exposes Infinispan's new transcoding capabilities, enabling the _InfinispanRDD_ and _InfinispanDStream_ to operate with multiple data formats. For more details see the https://github.com/infinispan/infinispan-spark/blob/master/README.md#using-multiple-data-formats[documentation]."
+msgstr "ネイティブのApache SparkコネクタがInfinispan 9.4.xとSpark 2.3.2をサポートするようになり、Infinispanの新しいトランスコーディング機能が公開され、 _InfinispanRDD_ と _InfinispanDStream_ が複数のデータフォーマットで動作するようになりました。詳細は link:https://github.com/infinispan/infinispan-spark/blob/master/README.md#using-multiple-data-formats[ドキュメント] を参照してください。"
 
 #. type: Title ====
 #: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:31
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "[.underline]#Infinispan Hadoop 0.3#"
 msgstr "Infinispan Hadoop 0.3"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:44
 #, fuzzy
-msgid ""
-"The connector that allows accessing Infinispan using standard Input/"
-"OutputFormat interfaces now offers compatibility with Infinispan 9.4.x and "
-"has been certified to run with the Hadoop 3.1.1 runtime. For more details "
-"about this connector, see the https://github.com/infinispan/infinispan-"
-"hadoop/blob/master/README.md[user manual]. Also make sure to check the "
-"docker based demos: https://github.com/infinispan/infinispan-hadoop/tree/"
-"master/samples/mapreduce[Infinispan"
-msgstr ""
-"標準の Input/OutputFormat インターフェイスを使用して Infinispan にアクセスできるコネクタは、Infinispan 9.4."
-"x との互換性を提供し、Hadoop 3.1.1 ランタイムで動作することが認定されています。このコネクタの詳細については、 link:https://"
-"github.com/infinispan/infinispan-hadoop/blob/master/README.md[ユーザーマニュアル] "
-"を参照してください。また、dockerベースのデモもチェックしてみてください: https://github.com/infinispan/"
-"infinispan-hadoop/tree/master/samples/mapreduce [Infinispan"
+msgid "The connector that allows accessing Infinispan using standard Input/OutputFormat interfaces now offers compatibility with Infinispan 9.4.x and has been certified to run with the Hadoop 3.1.1 runtime. For more details about this connector, see the https://github.com/infinispan/infinispan-hadoop/blob/master/README.md[user manual]. Also make sure to check the docker based demos: https://github.com/infinispan/infinispan-hadoop/tree/master/samples/mapreduce[Infinispan"
+msgstr "標準の Input/OutputFormat インターフェイスを使用して Infinispan にアクセスできるコネクタは、Infinispan 9.4.x との互換性を提供し、Hadoop 3.1.1 ランタイムで動作することが認定されています。このコネクタの詳細については、 link:https://github.com/infinispan/infinispan-hadoop/blob/master/README.md[ユーザーマニュアル] を参照してください。また、dockerベースのデモもチェックしてみてください: https://github.com/infinispan/infinispan-hadoop/tree/master/samples/mapreduce [Infinispan"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:46
 #, fuzzy
-msgid ""
-"Yarn] and https://github.com/infinispan/infinispan-hadoop/tree/master/"
-"samples/flink[Infinispan"
-msgstr ""
-"ヤーン]と https://github.com/infinispan/infinispan-hadoop/tree/master/samples/"
-"flink [インフィニスパン"
+msgid "Yarn] and https://github.com/infinispan/infinispan-hadoop/tree/master/samples/flink[Infinispan"
+msgstr "ヤーン]と https://github.com/infinispan/infinispan-hadoop/tree/master/samples/flink [インフィニスパン"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:47
@@ -134,33 +99,18 @@ msgstr "Apache Flink]。"
 
 #. type: Title ====
 #: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:51
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "[.underline]#Infinispan Kafka 0.3#"
 msgstr "Infinispan Kafka 0.3"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:61
 #, fuzzy
-msgid ""
-"Last but not least, the https://github.com/infinispan/infinispan-"
-"kafka[Infinispan Kafka connector] was upgraded to work with the latest Kafka "
-"(2.0.x) and Infinispan releases (9.4.x). Many thanks to https://github.com/"
-"oscerd[Andrea Cosentino] for contributing this integration."
-msgstr ""
-"最後になりましたが、 link:https://github.com/infinispan/infinispan-kafka[Infinispan "
-"Kafka コネクタは] 、最新の Kafka (2.0.x) と Infinispan リリース (9.4.x) "
-"で動作するようにアップグレードされました。この統合に貢献してくれた link:https://github.com/oscerd[Andrea "
-"Cosentino] に感謝します。"
+msgid "Last but not least, the https://github.com/infinispan/infinispan-kafka[Infinispan Kafka connector] was upgraded to work with the latest Kafka (2.0.x) and Infinispan releases (9.4.x). Many thanks to https://github.com/oscerd[Andrea Cosentino] for contributing this integration."
+msgstr "最後になりましたが、 link:https://github.com/infinispan/infinispan-kafka[Infinispan Kafka コネクタは] 、最新の Kafka (2.0.x) と Infinispan リリース (9.4.x) で動作するようにアップグレードされました。この統合に貢献してくれた link:https://github.com/oscerd[Andrea Cosentino] に感謝します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-infinispan-triple-connector-release.adoc:67
 #, fuzzy
-msgid ""
-"https://3.bp.blogspot.com/-ZU37uOY-U6o/W9wW5BsT2eI/AAAAAAAAAm8/"
-"XTAKrrcdvK8eo3j_gMdvtbshHOYR10aPwCEwYBhgL/s1600/connectors.jpg[image:https://"
-"3.bp.blogspot.com/-ZU37uOY-U6o/W9wW5BsT2eI/AAAAAAAAAm8/"
-"XTAKrrcdvK8eo3j_gMdvtbshHOYR10aPwCEwYBhgL/s320/connectors.jpg[image,width="
-"320,height=207]]"
-msgstr ""
-"link:https://3.bp.blogspot.com/-ZU37uOY-U6o/W9wW5BsT2eI/AAAAAAAAAm8/"
-"XTAKrrcdvK8eo3j_gMdvtbshHOYR10aPwCEwYBhgL/s1600/connectors.jpg[]"
+msgid "https://3.bp.blogspot.com/-ZU37uOY-U6o/W9wW5BsT2eI/AAAAAAAAAm8/XTAKrrcdvK8eo3j_gMdvtbshHOYR10aPwCEwYBhgL/s1600/connectors.jpg[image:https://3.bp.blogspot.com/-ZU37uOY-U6o/W9wW5BsT2eI/AAAAAAAAAm8/XTAKrrcdvK8eo3j_gMdvtbshHOYR10aPwCEwYBhgL/s320/connectors.jpg[image,width=320,height=207]]"
+msgstr "link:https://3.bp.blogspot.com/-ZU37uOY-U6o/W9wW5BsT2eI/AAAAAAAAAm8/XTAKrrcdvK8eo3j_gMdvtbshHOYR10aPwCEwYBhgL/s1600/connectors.jpg[]"

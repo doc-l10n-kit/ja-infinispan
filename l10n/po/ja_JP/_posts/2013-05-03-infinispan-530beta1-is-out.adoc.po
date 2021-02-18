@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-05-03-infinispan-530beta1-is-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-03-infinispan-530beta1-is-out.adoc:12
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 5.3.0.Beta1 is out!\n"
@@ -34,10 +34,8 @@ msgid ""
 "tags: [ \"beta\",\n"
 "\"release\"\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6388975354884447741\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-530beta1-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6388975354884447741\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-530beta1-is-out.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -48,26 +46,20 @@ msgstr ""
 "tags: [ \"beta\",\n"
 "\"release\"\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6388975354884447741\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-530beta1-is-"
-"out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6388975354884447741\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-530beta1-is-out.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-03-infinispan-530beta1-is-out.adoc:16
 #, fuzzy
-msgid ""
-"Besides about 30 fixes and several enhancements, Infinispan 5.3.0.Beta1 "
-"comes with the following features:"
+msgid "Besides about 30 fixes and several enhancements, Infinispan 5.3.0.Beta1 comes with the following features:"
 msgstr "約30の修正といくつかの機能強化に加えて、Infinispan 5.3.0.Beta1には以下の機能が搭載されています。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-03-infinispan-530beta1-is-out.adoc:19
 #, fuzzy
-msgid ""
-"An preview of the functionality allowing an embedded client to read data "
-"written through HotRod and the other way around"
+msgid "An preview of the functionality allowing an embedded client to read data written through HotRod and the other way around"
 msgstr "組み込みクライアントがHotRodを介して書き込まれたデータを読み取ることを可能にする機能のプレビュー。"
 
 #. type: Plain text
@@ -85,38 +77,20 @@ msgstr "クラスタ内のすべての鍵をRESTで取得できるようにな�
 #. type: Plain text
 #: upstream/_posts/2013-05-03-infinispan-530beta1-is-out.adoc:24
 #, fuzzy
-msgid ""
-"better internal structures for holding data which should translate in lower "
-"memory usage, especially when using infinispan in client/server mode "
-msgstr ""
-"データを保持するためのより優れた内部構造により、特にクライアント/"
-"サーバーモードでinfinispanを使用する場合には、メモリ使用量を減らすことができます。"
+msgid "better internal structures for holding data which should translate in lower memory usage, especially when using infinispan in client/server mode "
+msgstr "データを保持するためのより優れた内部構造により、特にクライアント/サーバーモードでinfinispanを使用する場合には、メモリ使用量を減らすことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-03-infinispan-530beta1-is-out.adoc:29
 #, fuzzy
-msgid ""
-"Please stay tuned for blogs detailing all these features. For a complete "
-"list of features included in this release refer to the https://issues.jboss."
-"org/secure/ReleaseNote.jspa?projectId=12310799&version=12321155[release "
-"notes]."
-msgstr ""
-"これらの機能の詳細については、ブログをご覧ください。このリリースに含まれる機能の完全なリストについては、 link:https://issues."
-"jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
-"12321155[リリースノート] を参照してください。"
+msgid "Please stay tuned for blogs detailing all these features. For a complete list of features included in this release refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12321155[release notes]."
+msgstr "これらの機能の詳細については、ブログをご覧ください。このリリースに含まれる機能の完全なリストについては、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12321155[リリースノート] を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-03-infinispan-530beta1-is-out.adoc:35
 #, fuzzy
-msgid ""
-"Visit our http://www.jboss.org/infinispan/downloads[downloads] section to "
-"find the latest release and if you have any questions please check our http:/"
-"/www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/"
-"mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://"
-"irc.freenode.org/infinispan[IRC]."
-msgstr ""
-"最新のリリースは link:http://www.jboss.org/infinispan/downloads[ダウンロード] "
-"セクションをご覧ください。"
+msgid "Visit our http://www.jboss.org/infinispan/downloads[downloads] section to find the latest release and if you have any questions please check our http://www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+msgstr "最新のリリースは link:http://www.jboss.org/infinispan/downloads[ダウンロード] セクションをご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-03-infinispan-530beta1-is-out.adoc:39

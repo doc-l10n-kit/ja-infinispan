@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Enhanced JGroups configuration\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2019-03-05T05:27:00.000-08:00'\n"
 "author: ttarrant\n"
 "tags: [ \" configuration\", \"jgroups\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7381321340134963595\n"
-"blogger_orig_url: https://blog.infinispan.org/2019/03/enhanced-jgroups-"
-"configuration.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7381321340134963595\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/03/enhanced-jgroups-configuration.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,154 +42,90 @@ msgstr ""
 "date: '2019-03-05T05:27:00.000-08:00'\n"
 "author: ttarrant\n"
 "tags: [ \" configuration\", \"jgroups\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7381321340134963595\n"
-"blogger_orig_url: https://blog.infinispan.org/2019/03/enhanced-jgroups-"
-"configuration.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7381321340134963595\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/03/enhanced-jgroups-configuration.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:16
 #, fuzzy
-msgid ""
-"Infinispan uses http://www.jgroups.org/[JGroups] as its underlying "
-"clustering layer. In order to configure the finer details of clustering "
-"(discovery, flow control, cross-site, etc) you have to provide a separate "
-"XML file with the desired configuration and reference it from your "
-"Infinispan XML file as follows:"
-msgstr ""
-"Infinispan はその基礎となるクラスタリング層として link:http://www.jgroups.org/[JGroups を] "
-"使用します。クラスタリングの詳細（ディスカバリー、フローコントロール、クロスサイトなど）を設定するためには、必要な設定を含む別の XML "
-"ファイルを提供し、以下のように Infinispan の XML ファイルからそれを参照する必要があります。"
+msgid "Infinispan uses http://www.jgroups.org/[JGroups] as its underlying clustering layer. In order to configure the finer details of clustering (discovery, flow control, cross-site, etc) you have to provide a separate XML file with the desired configuration and reference it from your Infinispan XML file as follows:"
+msgstr "Infinispan はその基礎となるクラスタリング層として link:http://www.jgroups.org/[JGroups を] 使用します。クラスタリングの詳細（ディスカバリー、フローコントロール、クロスサイトなど）を設定するためには、必要な設定を含む別の XML ファイルを提供し、以下のように Infinispan の XML ファイルからそれを参照する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:23
 #, fuzzy
-msgid ""
-"For simple configurations this is usually fine, but configuring complex "
-"setups, such as cross-site replication, means juggling multiple files (one "
-"for the local stack, one for the cross-site stack and one for the relay "
-"configuration)."
-msgstr ""
-"シンプルな設定の場合、これは通常は問題ありませんが、クロスサイトレプリケーションのような複雑な設定を行う場合、複数のファイル(ローカルスタック用、クロスサイトスタック用、リレー設定用)をジャグリングすることになります。"
+msgid "For simple configurations this is usually fine, but configuring complex setups, such as cross-site replication, means juggling multiple files (one for the local stack, one for the cross-site stack and one for the relay configuration)."
+msgstr "シンプルな設定の場合、これは通常は問題ありませんが、クロスサイトレプリケーションのような複雑な設定を行う場合、複数のファイル(ローカルスタック用、クロスサイトスタック用、リレー設定用)をジャグリングすることになります。"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:26
 #, fuzzy
-msgid ""
-"Starting with Infinispan 10 Alpha2 we have introduced a number of changes to "
-"make your life with JGroups configurations a lot easier."
+msgid "Starting with Infinispan 10 Alpha2 we have introduced a number of changes to make your life with JGroups configurations a lot easier."
 msgstr "Infinispan 10 Alpha2からは、JGroupsの設定をより簡単にするための多くの変更点が導入されました。"
 
 #. type: Title ==
 #: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:28
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Default stacks"
 msgstr "デフォルトのスタック"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:33
 #, fuzzy
-msgid ""
-"Infinispan now comes with two pre-declared stacks: `tcp` and `udp`.  Using "
-"them is as simple as just referencing their names in the `<transport>` "
-"element."
-msgstr ""
-"Infinispan には、 `tcp` と `udp` の 2 つの事前に宣言されたスタックが付属しています。これらを使用するには、 "
-"`<transport>` 要素でそれらの名前を参照するだけで簡単です。"
+msgid "Infinispan now comes with two pre-declared stacks: `tcp` and `udp`.  Using them is as simple as just referencing their names in the `<transport>` element."
+msgstr "Infinispan には、 `tcp` と `udp` の 2 つの事前に宣言されたスタックが付属しています。これらを使用するには、 `<transport>` 要素でそれらの名前を参照するだけで簡単です。"
 
 #. type: Title ==
 #: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:35
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Inline stacks"
 msgstr "インラインスタック"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:39
 #, fuzzy
-msgid ""
-"Inlining a stack means you can put the JGroups configuration inside the "
-"Infinispan one as follows:"
+msgid "Inlining a stack means you can put the JGroups configuration inside the Infinispan one as follows:"
 msgstr "スタックをインライン化するということは、以下のようにJGroupsの設定をInfinispanの中に入れることができるということです。"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:43
 #, fuzzy
-msgid ""
-"You can use the full JGroups schema, and by using XML namespaces you get "
-"full validation."
+msgid "You can use the full JGroups schema, and by using XML namespaces you get full validation."
 msgstr "完全なJGroupsスキーマを使用することができ、XML名前空間を使用することで完全な検証を得ることができます。"
 
 #. type: Title ==
 #: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:44
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Stack inheritance"
 msgstr "スタックの継承"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:51
 #, fuzzy
-msgid ""
-"Most of the time you want to reuse one of the pre-declared stacks but just "
-"override some of the parameters (e.g. discovery) to suit your environment. "
-"The following example creates a new `tcpgossip` stack which is based on the "
-"default tcp stack but replaces the discovery protocol with `TCPGOSSIP`:"
-msgstr ""
-"ほとんどの場合、事前に宣言されたスタックを再利用したいと思うでしょうが、環境に合わせていくつかのパラメータ (ディスカバリなど) "
-"をオーバーライドするだけです。次の例では、デフォルトの tcp スタックをベースにした `tcpgossip` "
-"スタックを新たに作成していますが、ディスカバリプロトコルを `TCPGOSSIP` に置き換えています。"
+msgid "Most of the time you want to reuse one of the pre-declared stacks but just override some of the parameters (e.g. discovery) to suit your environment. The following example creates a new `tcpgossip` stack which is based on the default tcp stack but replaces the discovery protocol with `TCPGOSSIP`:"
+msgstr "ほとんどの場合、事前に宣言されたスタックを再利用したいと思うでしょうが、環境に合わせていくつかのパラメータ (ディスカバリなど) をオーバーライドするだけです。次の例では、デフォルトの tcp スタックをベースにした `tcpgossip` スタックを新たに作成していますが、ディスカバリプロトコルを `TCPGOSSIP` に置き換えています。"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:63
 #, fuzzy
-msgid ""
-"In the above example you can see that we have enhanced the JGroups protocol "
-"declarations with two new attributes: `ispn:stack.combine` and `ispn:stack."
-"position` which affect how and where protocol changes are applied on the "
-"parent configuration to obtain a new configuration.  `stack.combine` can be "
-"one of `COMBINE` (the default, possibly overriding any specified "
-"attributes), `REPLACE` (which completely replaces the protocol and resets "
-"all attributes), `REMOVE` (removes the protocol) and `INSERT_AFTER` (which "
-"places this protocol in the stack immediately after the protocol specified "
-"by `stack.position`)."
-msgstr ""
-"上記の例では、JGroups のプロトコル宣言に `ispn:stack.combine` と `ispn:stack.position` という 2 "
-"つの新しい属性を追加して、JGroups のプロトコル宣言を強化したことがわかります。 `stack.combine` は、 `COMBINE` "
-"(デフォルトで、指定された属性をすべて上書きする可能性があります)、 `REPLACE` (プロトコルを完全に置き換え、すべての属性をリセットする)、 "
-"`REMOVE` (プロトコルを削除する)、 `INSERT_AFTER` ( `stack.position` "
-"で指定されたプロトコルの直後にこのプロトコルをスタックに配置する) のいずれかを指定できます。"
+msgid "In the above example you can see that we have enhanced the JGroups protocol declarations with two new attributes: `ispn:stack.combine` and `ispn:stack.position` which affect how and where protocol changes are applied on the parent configuration to obtain a new configuration.  `stack.combine` can be one of `COMBINE` (the default, possibly overriding any specified attributes), `REPLACE` (which completely replaces the protocol and resets all attributes), `REMOVE` (removes the protocol) and `INSERT_AFTER` (which places this protocol in the stack immediately after the protocol specified by `stack.position`)."
+msgstr "上記の例では、JGroups のプロトコル宣言に `ispn:stack.combine` と `ispn:stack.position` という 2 つの新しい属性を追加して、JGroups のプロトコル宣言を強化したことがわかります。 `stack.combine` は、 `COMBINE` (デフォルトで、指定された属性をすべて上書きする可能性があります)、 `REPLACE` (プロトコルを完全に置き換え、すべての属性をリセットする)、 `REMOVE` (プロトコルを削除する)、 `INSERT_AFTER` ( `stack.position` で指定されたプロトコルの直後にこのプロトコルをスタックに配置する) のいずれかを指定できます。"
 
 #. type: Title ==
 #: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:64
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Multiple stacks and Cross-site"
 msgstr "複数のスタックとクロスサイト"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:73
 #, fuzzy
-msgid ""
-"The inline configuration really shows its usefulness in cross-site "
-"configurations. In fact, the JGroups stack declaration has been extended "
-"with a special element which replaces the need for a separate relay XML file "
-"and can reference other stacks just by name. The following configuration "
-"uses the default `udp` stack for the local cluster transport and uses the "
-"default `tcp` stack for connecting to a remote site:"
-msgstr ""
-"インライン構成は、クロスサイト構成において本当にその有用性を示しています。実際、JGroups スタック宣言は特別な要素で拡張されており、別個のリレー "
-"XML ファイルの必要性を置き換え、名前だけで他のスタックを参照することができます。以下の設定では、ローカルクラスタのトランスポートにデフォルトの "
-"`udp` スタックを使用し、リモートサイトへの接続にデフォルトの `tcp` スタックを使用しています。"
+msgid "The inline configuration really shows its usefulness in cross-site configurations. In fact, the JGroups stack declaration has been extended with a special element which replaces the need for a separate relay XML file and can reference other stacks just by name. The following configuration uses the default `udp` stack for the local cluster transport and uses the default `tcp` stack for connecting to a remote site:"
+msgstr "インライン構成は、クロスサイト構成において本当にその有用性を示しています。実際、JGroups スタック宣言は特別な要素で拡張されており、別個のリレー XML ファイルの必要性を置き換え、名前だけで他のスタックを参照することができます。以下の設定では、ローカルクラスタのトランスポートにデフォルトの `udp` スタックを使用し、リモートサイトへの接続にデフォルトの `tcp` スタックを使用しています。"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-05-enhanced-jgroups-configuration.adoc:81
 #, fuzzy
-msgid ""
-"Having the entire configuration in a single place greatly simplifies "
-"management. Of course you can combine all of the above features to obtain "
-"the configuration you need for your environment. You can find more details "
-"and examples in the http://infinispan.org/docs/dev/user_guide/user_guide."
-"html#cache_configuration_clustered[documentation].  Enjoy ! Tristan"
-msgstr ""
-"構成全体を一箇所にまとめておくことで、管理が大幅に簡素化されます。もちろん、上記の機能をすべて組み合わせて、お使いの環境に必要な設定を得ることもできます。詳細や例は "
-"link:http://infinispan.org/docs/dev/user_guide/user_guide."
-"html#cache_configuration_clustered[ドキュメント] を参照してください。楽しんでください。トリスタン"
+msgid "Having the entire configuration in a single place greatly simplifies management. Of course you can combine all of the above features to obtain the configuration you need for your environment. You can find more details and examples in the http://infinispan.org/docs/dev/user_guide/user_guide.html#cache_configuration_clustered[documentation].  Enjoy ! Tristan"
+msgstr "構成全体を一箇所にまとめておくことで、管理が大幅に簡素化されます。もちろん、上記の機能をすべて組み合わせて、お使いの環境に必要な設定を得ることもできます。詳細や例は link:http://infinispan.org/docs/dev/user_guide/user_guide.html#cache_configuration_clustered[ドキュメント] を参照してください。楽しんでください。トリスタン"

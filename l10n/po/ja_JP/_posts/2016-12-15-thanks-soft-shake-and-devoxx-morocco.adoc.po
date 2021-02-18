@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-12-15-thanks-soft-shake-and-devoxx-morocco.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-15-thanks-soft-shake-and-devoxx-morocco.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Thanks Soft-Shake and Devoxx Morocco!\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2016-12-15T02:12:00.002-08:00'\n"
 "author: galder\n"
 "tags: [ \"conference\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8878242172893872042\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/12/thanks-soft-shake-and-"
-"devoxx-morocco.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8878242172893872042\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/12/thanks-soft-shake-and-devoxx-morocco.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,112 +42,56 @@ msgstr ""
 "date: '2016-12-15T02:12:00.002-08:00'\n"
 "author: galder\n"
 "tags: [ \"conference\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8878242172893872042\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/12/thanks-soft-shake-and-"
-"devoxx-morocco.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8878242172893872042\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/12/thanks-soft-shake-and-devoxx-morocco.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-15-thanks-soft-shake-and-devoxx-morocco.adoc:16
 #, fuzzy
-msgid ""
-"Last month I presented about building functional reactive applications with "
-"Infinispan, Node.js and Elm at both Soft-Shake in Geneva (https://"
-"speakerdeck.com/galderz/learn-how-to-build-functional-reactive-applications-"
-"with-elm-node-dot-js-and-infinispan[slides])  and Devoxx Morocco (https://"
-"speakerdeck.com/galderz/learn-how-to-build-functional-reactive-applications-"
-"with-elm-node-dot-js-and-infinispan-1[slides])."
-msgstr ""
-"先月、私はジュネーブで開催されたSoft-Shake link:https://speakerdeck.com/galderz/learn-how-to-"
-"build-functional-reactive-applications-with-elm-node-dot-js-and-"
-"infinispan[（スライド] ）とDevoxx Morocco link:https://speakerdeck.com/galderz/"
-"learn-how-to-build-functional-reactive-applications-with-elm-node-dot-js-and-"
-"infinispan-1[（スライド] ）の両方で、Infinispan、Node."
-"js、Elmを使った機能的なリアクティブアプリケーションの構築について発表しました。"
+msgid "Last month I presented about building functional reactive applications with Infinispan, Node.js and Elm at both Soft-Shake in Geneva (https://speakerdeck.com/galderz/learn-how-to-build-functional-reactive-applications-with-elm-node-dot-js-and-infinispan[slides])  and Devoxx Morocco (https://speakerdeck.com/galderz/learn-how-to-build-functional-reactive-applications-with-elm-node-dot-js-and-infinispan-1[slides])."
+msgstr "先月、私はジュネーブで開催されたSoft-Shake link:https://speakerdeck.com/galderz/learn-how-to-build-functional-reactive-applications-with-elm-node-dot-js-and-infinispan[（スライド] ）とDevoxx Morocco link:https://speakerdeck.com/galderz/learn-how-to-build-functional-reactive-applications-with-elm-node-dot-js-and-infinispan-1[（スライド] ）の両方で、Infinispan、Node.js、Elmを使った機能的なリアクティブアプリケーションの構築について発表しました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-15-thanks-soft-shake-and-devoxx-morocco.adoc:22
 #, fuzzy
-msgid ""
-"Thanks a lot to all the participants who attended the talks and thanks also "
-"to the organisers for accepting my talk. Both conferences were really "
-"enjoyable!"
-msgstr ""
-"講演に参加してくださった参加者の皆様、そして私の講演を引き受けてくださった主催者の皆様、本当にありがとうございました。どちらのカンファレンスも本当に楽しかったです。"
+msgid "Thanks a lot to all the participants who attended the talks and thanks also to the organisers for accepting my talk. Both conferences were really enjoyable!"
+msgstr "講演に参加してくださった参加者の皆様、そして私の講演を引き受けてくださった主催者の皆様、本当にありがとうございました。どちらのカンファレンスも本当に楽しかったです。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-15-thanks-soft-shake-and-devoxx-morocco.adoc:34
 #, fuzzy
-msgid ""
-"At Soft-Shake I managed to attend a few presentations, and the one that "
-"really stuck with me was the one from Alexandre Masselot on http://www.kora."
-"li/admin.html#/index/p?u=alex_masselot&s=tribulations_CFF&c=softshake&e="
-"Donkey_Kong[\"Données CFF en temps réel: tribulations techniques dans la "
-"stack Big Data\"] (http://www.slideshare.net/alexmass/swiss-transport-in-"
-"real-time-tribulations-in-the-big-data-stack[slides]).  It was a very "
-"interesting use case on doing big data with the information from the Swiss "
-"Rail system. Although there was no live demo, Alexandre gave the link to a "
-"repo where you can run stuff yourself. Very cool!"
-msgstr ""
-"Soft-Shakeでは、いくつかのプレゼンテーションに参加しましたが、特に印象に残ったのは、Alexandre Masselot氏の link:"
-"http://www.kora.li/admin.html#/index/p?u=alex_masselot&s=tribulations_CFF&c="
-"softshake&e=Donkey_Kong[「Données CFF en temps réel: tribulations techniques "
-"dans la stack Big Data」] （ link:http://www.slideshare.net/alexmass/swiss-"
-"transport-in-real-time-tribulations-in-the-big-data-stack[スライド）] "
-"です。スイスの鉄道システムの情報を使ってビッグデータを行うという非常に興味深いユースケースでした。ライブデモはありませんでしたが、Alexandre氏は自分で実行できるレポへのリンクを提供してくれました。とてもかっこいいですね。"
+msgid "At Soft-Shake I managed to attend a few presentations, and the one that really stuck with me was the one from Alexandre Masselot on http://www.kora.li/admin.html#/index/p?u=alex_masselot&s=tribulations_CFF&c=softshake&e=Donkey_Kong[\"Données CFF en temps réel: tribulations techniques dans la stack Big Data\"] (http://www.slideshare.net/alexmass/swiss-transport-in-real-time-tribulations-in-the-big-data-stack[slides]).  It was a very interesting use case on doing big data with the information from the Swiss Rail system. Although there was no live demo, Alexandre gave the link to a repo where you can run stuff yourself. Very cool!"
+msgstr "Soft-Shakeでは、いくつかのプレゼンテーションに参加しましたが、特に印象に残ったのは、Alexandre Masselot氏の link:http://www.kora.li/admin.html#/index/p?u=alex_masselot&s=tribulations_CFF&c=softshake&e=Donkey_Kong[「Données CFF en temps réel: tribulations techniques dans la stack Big Data」] （ link:http://www.slideshare.net/alexmass/swiss-transport-in-real-time-tribulations-in-the-big-data-stack[スライド）] です。スイスの鉄道システムの情報を使ってビッグデータを行うという非常に興味深いユースケースでした。ライブデモはありませんでしたが、Alexandre氏は自分で実行できるレポへのリンクを提供してくれました。とてもかっこいいですね。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-15-thanks-soft-shake-and-devoxx-morocco.adoc:40
 #, fuzzy
-msgid ""
-"On top of that, I also attended a talk by Tom Bujok on Scaling Your "
-"Application Out. Tom happens to be an old friend who since I last met him "
-"has joined Hazelcast ;)"
-msgstr ""
-"それに加えて、Tom Bujok氏の「Scaling Your Application "
-"Out」という講演にも参加しました。Tomは私が最後に会って以来、Hazelcastに参加している旧友です。)"
+msgid "On top of that, I also attended a talk by Tom Bujok on Scaling Your Application Out. Tom happens to be an old friend who since I last met him has joined Hazelcast ;)"
+msgstr "それに加えて、Tom Bujok氏の「Scaling Your Application Out」という講演にも参加しました。Tomは私が最後に会って以来、Hazelcastに参加している旧友です。)"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-15-thanks-soft-shake-and-devoxx-morocco.adoc:44
 #, fuzzy
-msgid ""
-"https://pbs.twimg.com/media/Cv4IVYPXYAAwUF-.jpg[image:https://pbs.twimg.com/"
-"media/Cv4IVYPXYAAwUF-.jpg[image,width=320,height=240]]"
+msgid "https://pbs.twimg.com/media/Cv4IVYPXYAAwUF-.jpg[image:https://pbs.twimg.com/media/Cv4IVYPXYAAwUF-.jpg[image,width=320,height=240]]"
 msgstr "link:https://pbs.twimg.com/media/Cv4IVYPXYAAwUF-.jpg[]"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-15-thanks-soft-shake-and-devoxx-morocco.adoc:53
 #, fuzzy
-msgid ""
-"Shortly after Shoft-Shake I headed to Casablanca to speak at Devoxx Morocco. "
-"This was a fantastic conference with a lot of young attendees.  The room was "
-"almost packed up for my talk and I got good reaction from the audience on "
-"both the talk and the live demo."
-msgstr ""
-"Shoft-Shakeの直後、私はDevoxx "
-"Moroccoで講演するためにカサブランカに向かった。これは若い参加者が多い素晴らしいカンファレンスでした。私の講演のために部屋はほぼ満員で、講演とライブデモの両方で聴衆から良い反応を得ることができました。"
+msgid "Shortly after Shoft-Shake I headed to Casablanca to speak at Devoxx Morocco. This was a fantastic conference with a lot of young attendees.  The room was almost packed up for my talk and I got good reaction from the audience on both the talk and the live demo."
+msgstr "Shoft-Shakeの直後、私はDevoxx Moroccoで講演するためにカサブランカに向かった。これは若い参加者が多い素晴らしいカンファレンスでした。私の講演のために部屋はほぼ満員で、講演とライブデモの両方で聴衆から良い反応を得ることができました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-15-thanks-soft-shake-and-devoxx-morocco.adoc:62
 #, fuzzy
-msgid ""
-"During the conference I also attended other talks, including a couple of "
-"Kubernetes talks by Ray Tsang, who is an Infinispan committer himself.  In "
-"his presentations he uses a https://github.com/saturnism/gcp-live-k8s-"
-"visualizer[Kubernetes visualizer] which is very cool and I'm hoping to use "
-"it in future presentations :)"
-msgstr ""
-"カンファレンスの間、私は他の講演にも参加しました。その中には、彼自身がInfinispanのコミッターであるRay "
-"Tsang氏によるKubernetesの講演もありました。彼のプレゼンテーションでは、 link:https://github.com/"
-"saturnism/gcp-live-k8s-visualizer[Kubernetesのビジュアライザー] を使用しています。)"
+msgid "During the conference I also attended other talks, including a couple of Kubernetes talks by Ray Tsang, who is an Infinispan committer himself.  In his presentations he uses a https://github.com/saturnism/gcp-live-k8s-visualizer[Kubernetes visualizer] which is very cool and I'm hoping to use it in future presentations :)"
+msgstr "カンファレンスの間、私は他の講演にも参加しました。その中には、彼自身がInfinispanのコミッターであるRay Tsang氏によるKubernetesの講演もありました。彼のプレゼンテーションでは、 link:https://github.com/saturnism/gcp-live-k8s-visualizer[Kubernetesのビジュアライザー] を使用しています。)"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-15-thanks-soft-shake-and-devoxx-morocco.adoc:67
 #, fuzzy
-msgid ""
-"No more conferences for this year, thanks to all who've attended Infinispan "
-"presentations throughout the year!"
+msgid "No more conferences for this year, thanks to all who've attended Infinispan presentations throughout the year!"
 msgstr "今年のカンファレンスはもうありません！1年を通してインフィニスパンの発表会に参加してくださった皆様、ありがとうございました"
 
 #. type: Plain text

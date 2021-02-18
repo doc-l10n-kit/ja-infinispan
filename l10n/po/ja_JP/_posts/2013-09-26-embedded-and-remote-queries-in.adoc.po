@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,26 +18,22 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: \" Embedded and remote queries in Infinispan 6.0.0.Beta1\"\n"
 "permalink: /blog/:year/:month/:day/embedded-and-remote-queries-in\n"
 "date: '2013-09-26T14:21:00.002-07:00'\n"
 "author: infinispan\n"
-"tags: [ \" protostream\", \"hotrod\", \"lucene\", \"Protobuf\", \"remote "
-"query\", \"hibernate search\",\"embedded query\", \"Infinispan Query\", "
-"\"DSL\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2234619140778632353\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/09/embedded-and-remote-"
-"queries-in.html\n"
+"tags: [ \" protostream\", \"hotrod\", \"lucene\", \"Protobuf\", \"remote query\", \"hibernate search\",\"embedded query\", \"Infinispan Query\", \"DSL\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2234619140778632353\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/09/embedded-and-remote-queries-in.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -45,70 +41,34 @@ msgstr ""
 "permalink: /blog/:year/:month/:day/embedded-and-remote-queries-in\n"
 "date: '2013-09-26T14:21:00.002-07:00'\n"
 "author: infinispan\n"
-"tags: [ \" protostream\", \"hotrod\", \"lucene\", \"Protobuf\", \"remote "
-"query\", \"hibernate search\",\"embedded query\", \"Infinispan Query\", "
-"\"DSL\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"2234619140778632353\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/09/embedded-and-remote-"
-"queries-in.html\n"
+"tags: [ \" protostream\", \"hotrod\", \"lucene\", \"Protobuf\", \"remote query\", \"hibernate search\",\"embedded query\", \"Infinispan Query\", \"DSL\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2234619140778632353\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/09/embedded-and-remote-queries-in.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:16
 #, fuzzy
-msgid ""
-"If you're following Infinispan's mailing lists you've probably caught a "
-"glimpse of the new developments in the Query land: a new DSL, remote "
-"querying via Hot Rod client, a new marshaller based on Google's Protobuf. "
-"Time to unveil these properly!"
-msgstr ""
-"Infinispanのメーリングリストをご覧になっている方は、新しいDSL、Hot "
-"Rodクライアントによるリモートクエリ、GoogleのProtobufをベースにした新しいマーシャラーなど、クエリの世界での新しい展開を垣間見たことがあるかもしれません。これらを正式に公開する時が来たのです!"
+msgid "If you're following Infinispan's mailing lists you've probably caught a glimpse of the new developments in the Query land: a new DSL, remote querying via Hot Rod client, a new marshaller based on Google's Protobuf. Time to unveil these properly!"
+msgstr "Infinispanのメーリングリストをご覧になっている方は、新しいDSL、Hot Rodクライアントによるリモートクエリ、GoogleのProtobufをベースにした新しいマーシャラーなど、クエリの世界での新しい展開を垣間見たことがあるかもしれません。これらを正式に公開する時が来たのです!"
 
 #. type: Title ====
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:20
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "The new Query DSL"
 msgstr "新しいクエリ DSL"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:37
 #, fuzzy
-msgid ""
-"Starting with version 6.0 Infinispan offers a new (experimental) way of "
-"running queries against your cached entities based on a simple filtering DSL."
-" The aim of the new DSL is to simplify the way you write queries and to be "
-"agnostic of the underlying query mechanism(s) making it possible to provide "
-"alternative query engines in the future besides Lucene and still being able "
-"to use the same query language/API. The previous Hibernate Search & Lucene "
-"based https://docs.jboss.org/author/display/ISPN/"
-"Querying+Infinispan[approach] is still in place and will continue to be "
-"supported and in fact the new DSL is currently implemented right on top of "
-"it. The future will surely bring index-less searching based on map-reduce "
-"and possibly other new cool search technologies."
-msgstr ""
-"バージョン 6.0 以降、Infinispan はシンプルなフィルタリング DSL に基づいてキャッシュされたエンティティに対して新しい (実験的な) "
-"クエリを実行する方法を提供しています。新しい DSL "
-"の目的は、クエリの書き方を単純化し、基礎となるクエリメカニズムに依存しないようにすることで、将来的に Lucene "
-"以外のクエリエンジンを提供することが可能になり、同じクエリ言語/API を使用できるようにすることです。以前のHibernate "
-"SearchとLuceneをベースとした link:https://docs.jboss.org/author/display/ISPN/"
-"Querying+Infinispan[アプローチ] は引き続きサポートされており、実際、新しいDSLは現在その上に実装されています。将来的には、Map-"
-"reduceをベースにしたインデックスレス検索や、他の新しいクールな検索技術が登場することは間違いないでしょう。"
+msgid "Starting with version 6.0 Infinispan offers a new (experimental) way of running queries against your cached entities based on a simple filtering DSL. The aim of the new DSL is to simplify the way you write queries and to be agnostic of the underlying query mechanism(s) making it possible to provide alternative query engines in the future besides Lucene and still being able to use the same query language/API. The previous Hibernate Search & Lucene based https://docs.jboss.org/author/display/ISPN/Querying+Infinispan[approach] is still in place and will continue to be supported and in fact the new DSL is currently implemented right on top of it. The future will surely bring index-less searching based on map-reduce and possibly other new cool search technologies."
+msgstr "バージョン 6.0 以降、Infinispan はシンプルなフィルタリング DSL に基づいてキャッシュされたエンティティに対して新しい (実験的な) クエリを実行する方法を提供しています。新しい DSL の目的は、クエリの書き方を単純化し、基礎となるクエリメカニズムに依存しないようにすることで、将来的に Lucene 以外のクエリエンジンを提供することが可能になり、同じクエリ言語/API を使用できるようにすることです。以前のHibernate SearchとLuceneをベースとした link:https://docs.jboss.org/author/display/ISPN/Querying+Infinispan[アプローチ] は引き続きサポートされており、実際、新しいDSLは現在その上に実装されています。将来的には、Map-reduceをベースにしたインデックスレス検索や、他の新しいクールな検索技術が登場することは間違いないでしょう。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:43
 #, fuzzy
-msgid ""
-"Running DSL-based queries in embedded mode is almost identical to running "
-"the existing Lucene-based queries. All you need to do is have infinispan-"
-"query-dsl.jar and infinispan-query.jar in your classpath (besides Infinispan "
-"and its dependecies), enable indexing for your caches, annotate your POJO "
-"cache values and your're ready."
-msgstr ""
-"組み込みモードで DSL ベースのクエリを実行するのは、既存の Lucene ベースのクエリを実行するのとほぼ同じです。必要なのは、クラスパスに "
-"infinispan-query-dsl.jar と infinispan-query.jar を用意し（Infinispan "
-"とその依存関係に加えて）、キャッシュのインデックスを有効にし、POJO キャッシュの値に注釈を付ければ準備は完了です。"
+msgid "Running DSL-based queries in embedded mode is almost identical to running the existing Lucene-based queries. All you need to do is have infinispan-query-dsl.jar and infinispan-query.jar in your classpath (besides Infinispan and its dependecies), enable indexing for your caches, annotate your POJO cache values and your're ready."
+msgstr "組み込みモードで DSL ベースのクエリを実行するのは、既存の Lucene ベースのクエリを実行するのとほぼ同じです。必要なのは、クラスパスに infinispan-query-dsl.jar と infinispan-query.jar を用意し（Infinispan とその依存関係に加えて）、キャッシュのインデックスを有効にし、POJO キャッシュの値に注釈を付ければ準備は完了です。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:44
@@ -116,44 +76,35 @@ msgstr ""
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:88
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:226
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:248
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "__\n"
 msgstr "__"
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:49
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "ConfigurationBuilder cfg = new ConfigurationBuilder();\n"
 "cfg.indexing().enable();\n"
-msgstr ""
-"ConfigurationBuilder cfg = new ConfigurationBuilder(); cfg.indexing()."
-"enable()。"
+msgstr "ConfigurationBuilder cfg = new ConfigurationBuilder(); cfg.indexing().enable()。"
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:51
-#, no-wrap, fuzzy
-msgid ""
-"DefaultCacheManager cacheManager = new DefaultCacheManager(cfg.build());\n"
-msgstr ""
-"DefaultCacheManager cacheManager = new DefaultCacheManager(cfg.build()."
+#, fuzzy, no-wrap
+msgid "DefaultCacheManager cacheManager = new DefaultCacheManager(cfg.build());\n"
+msgstr "DefaultCacheManager cacheManager = new DefaultCacheManager(cfg.build()."
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:53
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Cache cache = cacheManager.getCache();\n"
 msgstr "キャッシュキャッシュ = cacheManager.getCache()。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:58
 #, fuzzy
-msgid ""
-"____Alternatively, indexing (and everything else) can also be configured via "
-"XML configuration, as already described in the user guide, so we'll not "
-"delve into details here."
-msgstr ""
-"____別の方法として、ユーザーガイドですでに説明されているように、インデキシング (とそれ以外のすべてのもの) を XML "
-"設定で設定することもできますので、ここでは詳細は割愛します。"
+msgid "____Alternatively, indexing (and everything else) can also be configured via XML configuration, as already described in the user guide, so we'll not delve into details here."
+msgstr "____別の方法として、ユーザーガイドですでに説明されているように、インデキシング (とそれ以外のすべてのもの) を XML 設定で設定することもできますので、ここでは詳細は割愛します。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:60
@@ -163,21 +114,23 @@ msgstr "Hibernate Searchのアノテーションされたエンティティは�
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:66
-#, no-wrap, fuzzy
-msgid "import org.hibernate.search.annotations.*;\n"
+#, fuzzy, no-wrap
+msgid ""
+"import org.hibernate.search.annotations.*;\n"
 "...\n"
 msgstr "import org.hibernate.search.annotations.*; ..."
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:69
-#, no-wrap, fuzzy
-msgid "@Indexed\n"
+#, fuzzy, no-wrap
+msgid ""
+"@Indexed\n"
 "public class User {\n"
 msgstr "インデックス付きのパブリッククラス User {"
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:72
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "    @Field(store = Store.YES, analyze = Analyze.NO)\n"
 "    private String name;\n"
@@ -185,171 +138,112 @@ msgstr "@Field(store = Store.YES, analyze = Analyze.NO) private String name."
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:75
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
-"    @Field(store = Store.YES, analyze = Analyze.NO, indexNullAs = Field."
-"DEFAULT_NULL_TOKEN)\n"
+"    @Field(store = Store.YES, analyze = Analyze.NO, indexNullAs = Field.DEFAULT_NULL_TOKEN)\n"
 "    private String surname;\n"
-msgstr ""
-"@Field(store = Store.YES, analyze = Analyze.NO, indexNullAs = Field."
-"DEFAULT_NULL_TOKEN) private String surname."
+msgstr "@Field(store = Store.YES, analyze = Analyze.NO, indexNullAs = Field.DEFAULT_NULL_TOKEN) private String surname."
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:78
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "    @IndexedEmbedded(indexNullAs = Field.DEFAULT_NULL_TOKEN)\n"
 "    private List addresses;\n"
-msgstr ""
-"@IndexedEmbedded(indexNullAs = Field.DEFAULT_NULL_TOKEN) private List "
-"addresses."
+msgstr "@IndexedEmbedded(indexNullAs = Field.DEFAULT_NULL_TOKEN) private List addresses."
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:81
-#, no-wrap, fuzzy
-msgid "    // .. the rest omitted for brevity\n"
+#, fuzzy, no-wrap
+msgid ""
+"    // .. the rest omitted for brevity\n"
 "}\n"
 msgstr "// ...残りは簡潔にするために省略しています。}"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:87
 #, fuzzy
-msgid ""
-"____Running a DSL based query involves obtaining a _https://github.com/"
-"infinispan/infinispan/blob/6.0.0.Beta1/query-dsl/src/main/java/org/"
-"infinispan/query/dsl/QueryFactory.java[QueryFactory]_ from the (cache "
-"scoped) _SearchManager_ and then constructing the query as follows:"
-msgstr ""
-"____DSLベースのクエリを実行するには、_ (キャッシュスコープされた _)SearchManager_ から _https://github."
-"com/infinispan/infinispan/blob/6.0.0.Beta1/query-dsl/src/main/java/org/"
-"infinispan/query/dsl/QueryFactory.java[QueryFactory]を取得し_ 、以下のようにクエリを構築する "
-"_必要があります_ 。"
+msgid "____Running a DSL based query involves obtaining a _https://github.com/infinispan/infinispan/blob/6.0.0.Beta1/query-dsl/src/main/java/org/infinispan/query/dsl/QueryFactory.java[QueryFactory]_ from the (cache scoped) _SearchManager_ and then constructing the query as follows:"
+msgstr "____DSLベースのクエリを実行するには、_ (キャッシュスコープされた _)SearchManager_ から _https://github.com/infinispan/infinispan/blob/6.0.0.Beta1/query-dsl/src/main/java/org/infinispan/query/dsl/QueryFactory.java[QueryFactory]を取得し_ 、以下のようにクエリを構築する _必要があります_ 。"
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:95
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "import org.infinispan.query.Search;\n"
 "import org.infinispan.query.dsl.QueryFactory;\n"
 "import org.infinispan.query.dsl.Query;\n"
 "...\n"
-msgstr ""
-"import org.infinispan.query.Search; import org.infinispan.query.dsl."
-"QueryFactory; import org.infinispan.query.dsl.Query; ..."
+msgstr "import org.infinispan.query.Search; import org.infinispan.query.dsl.QueryFactory; import org.infinispan.query.dsl.Query; ..."
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:97
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "QueryFactory qf = Search.getSearchManager(cache).getQueryFactory();\n"
 msgstr "QueryFactory qf = Search.getSearchManager(cache).getQueryFactory()."
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:101
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "Query q = qf.from(User.class)\n"
 "    .having(\"name\").eq(\"John\")\n"
 "    .toBuilder().build();\n"
-msgstr ""
-"クエリ q = qf.from(User.class) .having(\"name\").eq(\"John\") .toBuilder()."
-"build()."
+msgstr "クエリ q = qf.from(User.class) .having(\"name\").eq(\"John\") .toBuilder().build()."
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:103
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "List list = q.list();\n"
 msgstr "リスト・リスト = q.list()。"
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:107
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "assertEquals(1, list.size());\n"
 "assertEquals(\"John\", list.get(0).getName());\n"
 "assertEquals(\"Doe\", list.get(0).getSurname());\n"
-msgstr ""
-"assertEquals(1, list.size()); assertEquals(\"John\", list.get(0).getName()); "
-"assertEquals(\"Doe\", list.get(0).getSurname())。"
+msgstr "assertEquals(1, list.size()); assertEquals(\"John\", list.get(0).getName()); assertEquals(\"Doe\", list.get(0).getSurname())。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:115
 #, fuzzy
-msgid ""
-"____That's it! I'm sure this raised your curiosity as to what the DSL is "
-"actually capable of so you might want to look at the list of supported "
-"filter operators in _https://github.com/infinispan/infinispan/blob/6.0.0."
-"Beta1/query-dsl/src/main/java/org/infinispan/query/dsl/"
-"FilterConditionEndContext.java[FilterConditionEndContext]_.  Combining "
-"multiple conditions with boolean operators, including sub-conditions, is "
-"also possible:"
-msgstr ""
-"_[FilterConditionEndContext]でサポートされているフィルタ演算子のリストを見てみましょう。_ これ "
-"_でDSLが実際に何ができるのか興味が湧いたと思いますので、https://github.com/infinispan/infinispan/blob/"
-"6.0.0.Beta1/query-dsl/src/main/java/org/infinispan/query/dsl/"
-"FilterConditionEndContext."
-"java[FilterConditionEndContext]でサポートされているフィルタ演算子のリストを見てみては_ "
-"いかがでしょうか。サブ条件を含め、複数の条件をブール演算子で組み合わせることも可能です。"
+msgid "____That's it! I'm sure this raised your curiosity as to what the DSL is actually capable of so you might want to look at the list of supported filter operators in _https://github.com/infinispan/infinispan/blob/6.0.0.Beta1/query-dsl/src/main/java/org/infinispan/query/dsl/FilterConditionEndContext.java[FilterConditionEndContext]_.  Combining multiple conditions with boolean operators, including sub-conditions, is also possible:"
+msgstr "_[FilterConditionEndContext]でサポートされているフィルタ演算子のリストを見てみましょう。_ これ _でDSLが実際に何ができるのか興味が湧いたと思いますので、https://github.com/infinispan/infinispan/blob/6.0.0.Beta1/query-dsl/src/main/java/org/infinispan/query/dsl/FilterConditionEndContext.java[FilterConditionEndContext]でサポートされているフィルタ演算子のリストを見てみては_ いかがでしょうか。サブ条件を含め、複数の条件をブール演算子で組み合わせることも可能です。"
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:123
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "Query q = qf.from(User.class)\n"
 "    .having(\"name\").eq(\"John\")\n"
 "    .and().having(\"surname\").eq(\"Doe\")\n"
-"    .and().not(qf.having(\"address.street\").like(\"%Tanzania%\").or()."
-"having(\"address.postCode\").in(\"TZ13\", \"TZ22\"))\n"
+"    .and().not(qf.having(\"address.street\").like(\"%Tanzania%\").or().having(\"address.postCode\").in(\"TZ13\", \"TZ22\"))\n"
 "    .toBuilder().build();\n"
-msgstr ""
-"クエリ q = qf.from(User.class) .having(\"name\").eq(\"John\") .and()."
-"having(\"surname\").eq(\"Doe\") .and().not(qf.having(\"address.street\")."
-"like(\"%Tanzania%\").or().having(\"address.postCode\").in(\"TZ13\", "
-"\"TZ22\") ) .toBuilder().build() ."
+msgstr "クエリ q = qf.from(User.class) .having(\"name\").eq(\"John\") .and().having(\"surname\").eq(\"Doe\") .and().not(qf.having(\"address.street\").like(\"%Tanzania%\").or().having(\"address.postCode\").in(\"TZ13\", \"TZ22\") ) .toBuilder().build() ."
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:135
 #, fuzzy
-msgid ""
-"The DSL is pretty nifty right now and will surely be expanded in the future "
-"based on your feedback. It also provides support for result pagination, "
-"sorting, projections, embedded objects, all demonstrated in _https://github."
-"com/infinispan/infinispan/blob/6.0.0.Beta1/query/src/test/java/org/"
-"infinispan/query/dsl/embedded/QueryDslConditionsTest."
-"java[QueryDslConditionsTest]_ which I encourage you to look at until the "
-"proper user guide is published. Still, this is not a relational database, so "
-"keep in mind that all queries are written in the scope of the _single_ "
-"targeted entity (and its embedded entities). There are no joins (yet), no "
-"correlated subqueries, no grouping or aggregations."
-msgstr ""
-"この DSL "
-"は今のところ非常に便利なものですが、将来的にはフィードバックに基づいて拡張される予定です。また、結果のページネーション、ソート、投影、埋め込みオブジェクトもサポートしています "
-"_。_ しかし、これはリレーショナルデータベースではないので、すべてのクエリは _単一の_ "
-"対象となるエンティティ(およびその組み込みエンティティ)のスコープで書かれていることを覚えておいてください。結合は（まだ）ありませんし、相関のある副問い合わせも、グループ化や集約もありません。"
+msgid "The DSL is pretty nifty right now and will surely be expanded in the future based on your feedback. It also provides support for result pagination, sorting, projections, embedded objects, all demonstrated in _https://github.com/infinispan/infinispan/blob/6.0.0.Beta1/query/src/test/java/org/infinispan/query/dsl/embedded/QueryDslConditionsTest.java[QueryDslConditionsTest]_ which I encourage you to look at until the proper user guide is published. Still, this is not a relational database, so keep in mind that all queries are written in the scope of the _single_ targeted entity (and its embedded entities). There are no joins (yet), no correlated subqueries, no grouping or aggregations."
+msgstr "この DSL は今のところ非常に便利なものですが、将来的にはフィードバックに基づいて拡張される予定です。また、結果のページネーション、ソート、投影、埋め込みオブジェクトもサポートしています _。_ しかし、これはリレーショナルデータベースではないので、すべてのクエリは _単一の_ 対象となるエンティティ(およびその組み込みエンティティ)のスコープで書かれていることを覚えておいてください。結合は（まだ）ありませんし、相関のある副問い合わせも、グループ化や集約もありません。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:144
 #, fuzzy
-msgid ""
-"Moving further, probably the most exciting thing about the new DSL is using "
-"it remotely via the Hot Rod client. But to make this leap we first had to "
-"adopt a common format for storing our cache entries and marshalling them "
-"over the wire that would also be cross-language and robust enough to support "
-"evolving object schemas. But probably most of all, this format had to have a "
-"schema rather than just being an opaque blob otherwise indexing and "
-"searching are meaningless. Enter Protocol Buffers."
-msgstr ""
-"さらに話を進めると、おそらく新しいDSLで最もエキサイティングなのは、Hot "
-"Rodクライアントを介してリモートでDSLを使用することです。しかし、この飛躍を実現するためには、まず、キャッシュエントリを保存し、ワイヤを介してそれらをマーシャリングするための共通フォーマットを採用しなければなりませんでした。しかし、おそらく最も重要なことは、このフォーマットはただの不透明なブロブではなく、スキーマを持たなければならないということです。プロトコルバッファの登場です。"
+msgid "Moving further, probably the most exciting thing about the new DSL is using it remotely via the Hot Rod client. But to make this leap we first had to adopt a common format for storing our cache entries and marshalling them over the wire that would also be cross-language and robust enough to support evolving object schemas. But probably most of all, this format had to have a schema rather than just being an opaque blob otherwise indexing and searching are meaningless. Enter Protocol Buffers."
+msgstr "さらに話を進めると、おそらく新しいDSLで最もエキサイティングなのは、Hot Rodクライアントを介してリモートでDSLを使用することです。しかし、この飛躍を実現するためには、まず、キャッシュエントリを保存し、ワイヤを介してそれらをマーシャリングするための共通フォーマットを採用しなければなりませんでした。しかし、おそらく最も重要なことは、このフォーマットはただの不透明なブロブではなく、スキーマを持たなければならないということです。プロトコルバッファの登場です。"
 
 #. type: Title ====
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:146
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "The Protobuf marshaller"
 msgstr "プロトバフのマーシャラー"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:151
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "Configuring the _RemoteCacheManager_ of the Java Hot Rod client to use\n"
 "it is straight forward:\n"
@@ -358,227 +252,161 @@ msgstr "Java Hot Rodクライアントの _RemoteCacheManager_ を使用する�
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:156
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "import org.infinispan.client.hotrod.configuration.ConfigurationBuilder;\n"
 "...\n"
-msgstr ""
-"import org.infinispan.client.hotrod.configuration.ConfigurationBuilder; ..."
+msgstr "import org.infinispan.client.hotrod.configuration.ConfigurationBuilder; ..."
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:161
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "ConfigurationBuilder clientBuilder = new ConfigurationBuilder();\n"
 "clientBuilder.addServer()\n"
 "    .host(\"127.0.0.1\").port(11234)\n"
 "    .marshaller(new ProtoStreamMarshaller());\n"
-msgstr ""
-"ConfigurationBuilder clientBuilder = new ConfigurationBuilder(); "
-"clientBuilder.addServer() .host(\"127.0.0.1\").port(11234) .marshaller(new "
-"ProtoStreamMarshaller())."
+msgstr "ConfigurationBuilder clientBuilder = new ConfigurationBuilder(); clientBuilder.addServer() .host(\"127.0.0.1\").port(11234) .marshaller(new ProtoStreamMarshaller())."
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:165
 #, fuzzy
-msgid ""
-"____Now you'll be able to store and get from the remote cache your _User_ "
-"instaces encoded in protobuf format provided that:"
-msgstr ""
-"これ _で、リモートキャッシュ_ にprotobuf形式でエンコードされた "
-"__Userインスタンスを保存したり、リモートキャッシュから取得したりすることができるようになります_ 。"
+msgid "____Now you'll be able to store and get from the remote cache your _User_ instaces encoded in protobuf format provided that:"
+msgstr "これ _で、リモートキャッシュ_ にprotobuf形式でエンコードされた __Userインスタンスを保存したり、リモートキャッシュから取得したりすることができるようになります_ 。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:171
 #, fuzzy
-msgid ""
-"a Protobuf type was declared for your entity in a _.proto_ https://github."
-"com/infinispan/protostream/blob/1.0.0.Alpha6/sample-domain-definition/src/"
-"main/resources/bank.proto[file] which was then compiled into a _.protobin_ "
-"https://developers.google.com/protocol-buffers/docs/techniques?hl=ro#self-"
-"description[binary descriptor]"
-msgstr ""
-"_.proto_ link:https://github.com/infinispan/protostream/blob/1.0.0.Alpha6/"
-"sample-domain-definition/src/main/resources/bank.proto[ファイル] "
-"でエンティティのProtobuf型が宣言され、それが _.protobin_ link:https://developers.google.com/"
-"protocol-buffers/docs/techniques?hl=ro#self-description[バイナリ記述子] "
-"にコンパイルされました。"
+msgid "a Protobuf type was declared for your entity in a _.proto_ https://github.com/infinispan/protostream/blob/1.0.0.Alpha6/sample-domain-definition/src/main/resources/bank.proto[file] which was then compiled into a _.protobin_ https://developers.google.com/protocol-buffers/docs/techniques?hl=ro#self-description[binary descriptor]"
+msgstr "_.proto_ link:https://github.com/infinispan/protostream/blob/1.0.0.Alpha6/sample-domain-definition/src/main/resources/bank.proto[ファイル] でエンティティのProtobuf型が宣言され、それが _.protobin_ link:https://developers.google.com/protocol-buffers/docs/techniques?hl=ro#self-description[バイナリ記述子] にコンパイルされました。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:174
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "the binary descriptor was registered with your _RemoteCacheManager_'s\n"
 "_ProtoStreamMarshaller_ instance like this:\n"
 "__\n"
-msgstr ""
-"バイナリ記述子は次のように _RemoteCacheManager_ の _ProtoStreamMarshaller_ "
-"インスタンスに登録されています。__"
+msgstr "バイナリ記述子は次のように _RemoteCacheManager_ の _ProtoStreamMarshaller_ インスタンスに登録されています。__"
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:179
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "ProtoStreamMarshaller.getSerializationContext(remoteCacheManager)\n"
 "    .registerProtofile(\"my-test-schema.protobin\");\n"
-msgstr ""
-"ProtoStreamMarshaller.getSerializationContext(remoteCacheManager) ."
-"registerProtofile(\"my-test-chema.protobin\")。"
+msgstr "ProtoStreamMarshaller.getSerializationContext(remoteCacheManager) .registerProtofile(\"my-test-chema.protobin\")。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:182
-#, no-wrap, fuzzy
-msgid "____3. a per-entity marshaller was registered:\n"
+#, fuzzy, no-wrap
+msgid ""
+"____3. a per-entity marshaller was registered:\n"
 "__\n"
 msgstr "_乙__3.パー・エンティティー・マーシャラーが登録されていました。 _"
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:187
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "ProtoStreamMarshaller.getSerializationContext(remoteCacheManager)\n"
 "    .registerMarshaller(User.class, new UserMarshaller());\n"
-msgstr ""
-"ProtoStreamMarshaller.getSerializationContext(remoteCacheManager) ."
-"registerMarshaller(User.class, new UserMarshaller())。"
+msgstr "ProtoStreamMarshaller.getSerializationContext(remoteCacheManager) .registerMarshaller(User.class, new UserMarshaller())。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:195
 #, fuzzy
-msgid ""
-"____Steps 2 and 3 are closely tied to the way https://github.com/infinispan/"
-"protostream[Protosteam] library works, which is pretty straight forward but "
-"cannot be detailed here. Having a look at our https://github.com/infinispan/"
-"protostream/blob/1.0.0.Alpha6/sample-domain-implementation/src/main/java/org/"
-"infinispan/protostream/sampledomain/marshallers/UserMarshaller."
-"java[_UserMarshaller_] sample should clear this up."
-msgstr ""
-"____ステップ2と3は、Protosteamライブラリの動作に密接に関係しています。UserMarshallerの_ "
-"サンプルを見ていただければ、このことが明らかになるはずです。"
+msgid "____Steps 2 and 3 are closely tied to the way https://github.com/infinispan/protostream[Protosteam] library works, which is pretty straight forward but cannot be detailed here. Having a look at our https://github.com/infinispan/protostream/blob/1.0.0.Alpha6/sample-domain-implementation/src/main/java/org/infinispan/protostream/sampledomain/marshallers/UserMarshaller.java[_UserMarshaller_] sample should clear this up."
+msgstr "____ステップ2と3は、Protosteamライブラリの動作に密接に関係しています。UserMarshallerの_ サンプルを見ていただければ、このことが明らかになるはずです。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:200
 #, fuzzy
-msgid ""
-"Keeping your objects stored in protobuf format has the benefit of being able "
-"to consume them with compatible clients written in other languages.  But if "
-"this does not sound enticing enough probably the fact they can now be easily "
-"indexed should be more appealing."
-msgstr ""
-"オブジェクトを protobuf "
-"形式で保存しておけば、他の言語で書かれた互換性のあるクライアントでもオブジェクトを利用できるという利点があります。しかし、これが十分に魅力的に聞こえない場合は、簡単にインデックスを作成できるようになったという事実が、より魅力的に聞こえるはずです。"
+msgid "Keeping your objects stored in protobuf format has the benefit of being able to consume them with compatible clients written in other languages.  But if this does not sound enticing enough probably the fact they can now be easily indexed should be more appealing."
+msgstr "オブジェクトを protobuf 形式で保存しておけば、他の言語で書かれた互換性のあるクライアントでもオブジェクトを利用できるという利点があります。しかし、これが十分に魅力的に聞こえない場合は、簡単にインデックスを作成できるようになったという事実が、より魅力的に聞こえるはずです。"
 
 #. type: Title ====
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:202
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Remote querying via the Hot Rod client"
 msgstr "Hot Rodクライアントを介したリモートクエリ"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:207
 #, fuzzy
-msgid ""
-"Given a _RemoteCacheManager_ configured as previously described the next "
-"steps to enable remote query over its caches are:"
-msgstr ""
-"前述のように _RemoteCacheManager が_ "
-"構成されている場合、そのキャッシュに対するリモートクエリを有効にするための次のステップは次のとおりです。"
+msgid "Given a _RemoteCacheManager_ configured as previously described the next steps to enable remote query over its caches are:"
+msgstr "前述のように _RemoteCacheManager が_ 構成されている場合、そのキャッシュに対するリモートクエリを有効にするための次のステップは次のとおりです。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:211
 #, fuzzy
-msgid ""
-"add the DSL jar to client's classpath, infinispan-remote-query-server.jar to "
-"server's classpath and infinispan-remote-query-client.jar to both"
-msgstr ""
-"DSL jar をクライアントのクラスパスに、infinispan-remote-query-server.jar "
-"をサーバーのクラスパスに、infinispan-remote-query-client.jar を両方に追加します。"
+msgid "add the DSL jar to client's classpath, infinispan-remote-query-server.jar to server's classpath and infinispan-remote-query-client.jar to both"
+msgstr "DSL jar をクライアントのクラスパスに、infinispan-remote-query-server.jar をサーバーのクラスパスに、infinispan-remote-query-client.jar を両方に追加します。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:213
 #, fuzzy
-msgid ""
-"enable indexing in your cache configuration - same as for embedded mode"
+msgid "enable indexing in your cache configuration - same as for embedded mode"
 msgstr "キャッシュ設定でインデックス作成を有効にする - 組み込みモードと同じ"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:216
 #, fuzzy
-msgid ""
-"register your protobuf binary descriptor by invoking the "
-"'_registerProtofile_' method of the server's _ProtobufMetadataManager_ MBean "
-"(one instance per _EmbeddedCacheManager_)"
-msgstr ""
-"サーバの _ProtobufMetadataManager_ MBean ( _EmbeddedCacheManager_ ごとに 1 "
-"つのインスタンス) の _'registerProtofile_ ' メソッドを呼び出して、protobuf バイナリ記述子を登録します。"
+msgid "register your protobuf binary descriptor by invoking the '_registerProtofile_' method of the server's _ProtobufMetadataManager_ MBean (one instance per _EmbeddedCacheManager_)"
+msgstr "サーバの _ProtobufMetadataManager_ MBean ( _EmbeddedCacheManager_ ごとに 1 つのインスタンス) の _'registerProtofile_ ' メソッドを呼び出して、protobuf バイナリ記述子を登録します。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:221
 #, fuzzy
-msgid ""
-"All data placed in cache now is being indexed without the need to annotate "
-"your entities for Hibernate Search. In fact these classes are only "
-"meaningful to the Java client and do not even exist on the server."
-msgstr ""
-"キャッシュに置かれたすべてのデータは、Hibernate検索のためにエンティティに注釈を付ける必要なく、インデックス化されます。実際、これらのクラスはJavaクライアントにとってのみ意味があり、サーバ上には存在しません。"
+msgid "All data placed in cache now is being indexed without the need to annotate your entities for Hibernate Search. In fact these classes are only meaningful to the Java client and do not even exist on the server."
+msgstr "キャッシュに置かれたすべてのデータは、Hibernate検索のためにエンティティに注釈を付ける必要なく、インデックス化されます。実際、これらのクラスはJavaクライアントにとってのみ意味があり、サーバ上には存在しません。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:225
 #, fuzzy
-msgid ""
-"Running the queries over the Hot Rod client is now very similar to embedded "
-"mode. The DSL is in fact the same. The only part that is slightly different "
-"is how you obtain the _QueryFactory_:"
-msgstr ""
-"Hot Rodクライアント上でクエリを実行すると、組み込みモードと非常に似たような感じになりました。DSL は実際には同じです。少し違うのは、 "
-"_QueryFactoryの_ 取得方法だけです。"
+msgid "Running the queries over the Hot Rod client is now very similar to embedded mode. The DSL is in fact the same. The only part that is slightly different is how you obtain the _QueryFactory_:"
+msgstr "Hot Rodクライアント上でクエリを実行すると、組み込みモードと非常に似たような感じになりました。DSL は実際には同じです。少し違うのは、 _QueryFactoryの_ 取得方法だけです。"
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:233
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "import org.infinispan.client.hotrod.Search;\n"
 "import org.infinispan.query.dsl.QueryFactory;\n"
 "import org.infinispan.query.dsl.Query;\n"
 "...\n"
-msgstr ""
-"import org.infinispan.client.hotrod.Search; import org.infinispan.query.dsl."
-"QueryFactory; import org.infinispan.query.dsl.Query; ..."
+msgstr "import org.infinispan.client.hotrod.Search; import org.infinispan.query.dsl.QueryFactory; import org.infinispan.query.dsl.Query; ..."
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:235
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "remoteCache.put(2, new User(\"John\", \"Doe\", 33));\n"
 msgstr "remoteCache.put(2, new User(\"John\", \"Doe\", 33))。"
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:237
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "QueryFactory qf = Search.getQueryFactory(remoteCache);\n"
 msgstr "QueryFactory qf = Search.getQueryFactory(remoteCache)."
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:241
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "Query query = qf.from(User.class)\n"
 "    .having(\"name\").eq(\"John\")\n"
 "    .toBuilder().build();\n"
-msgstr ""
-"クエリクエリ = qf.from(User.class) .having(\"name\").eq(\"John\") .toBuilder()."
-"build()."
+msgstr "クエリクエリ = qf.from(User.class) .having(\"name\").eq(\"John\") .toBuilder().build()."
 
 #. type: delimited block .
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:246
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "List list = query.list();\n"
 "assertEquals(1, list.size());\n"
 "assertEquals(\"John\", list.get(0).getName());\n"
 "assertEquals(\"Doe\", list.get(0).getSurname());\n"
-msgstr ""
-"list = query.list(); assertEquals(1, list.size()); assertEquals(\"John\", "
-"list.get(0).getName()); assertEquals(\"Doe\", list.get(0).getSurname())。"
+msgstr "list = query.list(); assertEquals(1, list.size()); assertEquals(\"John\", list.get(0).getName()); assertEquals(\"Doe\", list.get(0).getSurname())。"
 
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:251
@@ -589,7 +417,5 @@ msgstr "_ _ "
 #. type: Plain text
 #: upstream/_posts/2013-09-26-embedded-and-remote-queries-in.adoc:254
 #, fuzzy
-msgid ""
-"Voila! The end of our journey for today! Stay tuned, keep an eye on "
-"Infinispan Query and please share your comments with us."
+msgid "Voila! The end of our journey for today! Stay tuned, keep an eye on Infinispan Query and please share your comments with us."
 msgstr "ほら！今日の旅はこれで終わりです。今後もInfinispan Queryにご期待ください。"

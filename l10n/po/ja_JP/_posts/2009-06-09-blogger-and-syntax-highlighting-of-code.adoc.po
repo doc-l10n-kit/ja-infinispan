@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-06-09-blogger-and-syntax-highlighting-of-code.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-06-09-blogger-and-syntax-highlighting-of-code.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Blogger and syntax highlighting of code\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2009-06-09T09:48:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"syntax highlighting\", \"blogger\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8481875045755800326\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/06/blogger-and-syntax-"
-"highlighting-of-code.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8481875045755800326\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/06/blogger-and-syntax-highlighting-of-code.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,42 +42,21 @@ msgstr ""
 "date: '2009-06-09T09:48:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"syntax highlighting\", \"blogger\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8481875045755800326\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/06/blogger-and-syntax-"
-"highlighting-of-code.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8481875045755800326\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/06/blogger-and-syntax-highlighting-of-code.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-06-09-blogger-and-syntax-highlighting-of-code.adoc:16
 #, fuzzy
-msgid ""
-"If you happen to write a lot of tech articles on Blogger and frequently use "
-"code examples, it can be frustrating that Blogger has no built-in support "
-"for syntax highlighting. After some frustrating initial experiments with my "
-"own styles for code snippets, I found this excellent article:"
-msgstr ""
-"あなたがBloggerで技術的な記事をたくさん書き、コード例を頻繁に使用する場合、Bloggerにはシンタックスハイライトのサポートが組み込まれていないことにイライラすることがあります。コードスニペットのための自分のスタイルを使って、いくつかのイライラする初期実験をした後、私はこの素晴らしい記事を見つけました。"
+msgid "If you happen to write a lot of tech articles on Blogger and frequently use code examples, it can be frustrating that Blogger has no built-in support for syntax highlighting. After some frustrating initial experiments with my own styles for code snippets, I found this excellent article:"
+msgstr "あなたがBloggerで技術的な記事をたくさん書き、コード例を頻繁に使用する場合、Bloggerにはシンタックスハイライトのサポートが組み込まれていないことにイライラすることがあります。コードスニペットのための自分のスタイルを使って、いくつかのイライラする初期実験をした後、私はこの素晴らしい記事を見つけました。"
 
 #. type: Plain text
 #: upstream/_posts/2009-06-09-blogger-and-syntax-highlighting-of-code.adoc:25
 #, fuzzy
-msgid ""
-"http://abhisanoujam.blogspot.com/2008/12/blogger-syntax-highlighting."
-"html[http://abhisanoujam.blogspot.com/2008/12/blogger-syntax-highlighting."
-"html ] In no time flat, I have converted all of my http://infinispan."
-"blogspot.com/2009/06/another-alpha-for-infinispan.html[previous] http://"
-"infinispan.blogspot.com/2009/05/whats-so-cool-about-asynchronous-api."
-"html[blog] http://infinispan.blogspot.com/2009/05/implementing-performant-"
-"thread-safe.html[posts] and they are now properly highlighted, complete with "
-"line numbers. :-)  Lovely stuff."
-msgstr ""
-"http://abhisanoujam.blogspot.com/2008/12/blogger-syntax-highlighting.html "
-"平らな時間で、私は link:http://infinispan.blogspot.com/2009/06/another-alpha-for-"
-"infinispan.html[以前の] link:http://infinispan.blogspot.com/2009/05/whats-so-"
-"cool-about-asynchronous-api.html[ブログ] link:http://infinispan.blogspot.com/"
-"2009/05/implementing-performant-thread-safe.html[記事を] "
-"すべて変換して、それらが適切に強調表示されるようになりました、行番号を完備しています。)素敵なもの。"
+msgid "http://abhisanoujam.blogspot.com/2008/12/blogger-syntax-highlighting.html[http://abhisanoujam.blogspot.com/2008/12/blogger-syntax-highlighting.html ] In no time flat, I have converted all of my http://infinispan.blogspot.com/2009/06/another-alpha-for-infinispan.html[previous] http://infinispan.blogspot.com/2009/05/whats-so-cool-about-asynchronous-api.html[blog] http://infinispan.blogspot.com/2009/05/implementing-performant-thread-safe.html[posts] and they are now properly highlighted, complete with line numbers. :-)  Lovely stuff."
+msgstr "http://abhisanoujam.blogspot.com/2008/12/blogger-syntax-highlighting.html 平らな時間で、私は link:http://infinispan.blogspot.com/2009/06/another-alpha-for-infinispan.html[以前の] link:http://infinispan.blogspot.com/2009/05/whats-so-cool-about-asynchronous-api.html[ブログ] link:http://infinispan.blogspot.com/2009/05/implementing-performant-thread-safe.html[記事を] すべて変換して、それらが適切に強調表示されるようになりました、行番号を完備しています。)素敵なもの。"
 
 #. type: Plain text
 #: upstream/_posts/2009-06-09-blogger-and-syntax-highlighting-of-code.adoc:27

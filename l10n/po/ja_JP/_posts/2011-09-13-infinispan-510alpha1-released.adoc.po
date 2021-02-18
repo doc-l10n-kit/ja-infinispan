@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-09-13-infinispan-510alpha1-released.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-13-infinispan-510alpha1-released.adoc:11
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 'Infinispan 5.1.0.ALPHA1 released: Distributed Queries are here!'\n"
@@ -33,10 +33,8 @@ msgid ""
 "author: galder\n"
 "tags: [ \"distributed queries\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1678195337732558335\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/09/infinispan-510alpha1-"
-"released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1678195337732558335\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/09/infinispan-510alpha1-released.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -46,43 +44,21 @@ msgstr ""
 "author: galder\n"
 "tags: [ \"distributed queries\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1678195337732558335\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/09/infinispan-510alpha1-"
-"released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1678195337732558335\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/09/infinispan-510alpha1-released.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-13-infinispan-510alpha1-released.adoc:17
 #, fuzzy
-msgid ""
-"Having released Infinispan 5.0.1.FINAL yesterday, today is the turn of "
-"releasing Infinispan 5.1.0.ALPHA1 _\"Brahma\"_. This is the first in a "
-"series of alpha releases which will give Infinispan users the chance to play "
-"with the newest features. Here're some highlights of what's included in this "
-"release:"
-msgstr ""
-"昨日、Infinispan 5.0.1.FINALをリリースしましたが、今日はInfinispan 5.1.0.ALPHA1 \" "
-"_Brahma\"を_ "
-"リリースする番です。これはアルファリリースの第一弾で、Infinispanユーザーの皆様に最新の機能を体験していただく機会を提供するものです。このリリースに含まれている内容のハイライトをご紹介します。"
+msgid "Having released Infinispan 5.0.1.FINAL yesterday, today is the turn of releasing Infinispan 5.1.0.ALPHA1 _\"Brahma\"_. This is the first in a series of alpha releases which will give Infinispan users the chance to play with the newest features. Here're some highlights of what's included in this release:"
+msgstr "昨日、Infinispan 5.0.1.FINALをリリースしましたが、今日はInfinispan 5.1.0.ALPHA1 \" _Brahma\"を_ リリースする番です。これはアルファリリースの第一弾で、Infinispanユーザーの皆様に最新の機能を体験していただく機会を提供するものです。このリリースに含まれている内容のハイライトをご紹介します。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-13-infinispan-510alpha1-released.adoc:25
 #, fuzzy
-msgid ""
-"Thanks to Israel Lacerra, Infinispan now supports fully distributed queries "
-"which allows queries to be parallelised across all nodes.  Creating a "
-"distributed query is very easy, simply call http://docs.jboss.org/infinispan/"
-"5.1/apidocs/org/infinispan/query/SearchManager.html#getClusteredQuery(org."
-"apache.lucene.search.Query,%20java.lang.Class...)[SearchManager."
-"getClusteredQuery].  Please note that this feature is experimental and the "
-"API is likely to change before the final release."
-msgstr ""
-"イスラエル・ラセラのおかげで、Infinispanは完全な分散型クエリをサポートしており、これによりすべてのノード間でクエリを並列化することができます。分散クエリの作成は非常に簡単で、 "
-"link:http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/query/"
-"SearchManager.html#getClusteredQuery(org.apache.lucene.search.Query,%20java."
-"lang.Class…)[SearchManager.getClusteredQuery] "
-"を呼び出すだけです。この機能は実験的なものであり、APIは最終リリースまでに変更される可能性があることにご注意ください。"
+msgid "Thanks to Israel Lacerra, Infinispan now supports fully distributed queries which allows queries to be parallelised across all nodes.  Creating a distributed query is very easy, simply call http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/query/SearchManager.html#getClusteredQuery(org.apache.lucene.search.Query,%20java.lang.Class...)[SearchManager.getClusteredQuery].  Please note that this feature is experimental and the API is likely to change before the final release."
+msgstr "イスラエル・ラセラのおかげで、Infinispanは完全な分散型クエリをサポートしており、これによりすべてのノード間でクエリを並列化することができます。分散クエリの作成は非常に簡単で、 link:http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/query/SearchManager.html#getClusteredQuery(org.apache.lucene.search.Query,%20java.lang.Class…)[SearchManager.getClusteredQuery] を呼び出すだけです。この機能は実験的なものであり、APIは最終リリースまでに変更される可能性があることにご注意ください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-13-infinispan-510alpha1-released.adoc:26
@@ -93,48 +69,20 @@ msgstr "Infnispan QueryモジュールはHibernate Search 4を使用するよう
 #. type: Plain text
 #: upstream/_posts/2011-09-13-infinispan-510alpha1-released.adoc:35
 #, fuzzy
-msgid ""
-"In Infinispan 5.0, we introduced the possibility of executing operations "
-"against a cache in such way that class loading could occur with a user-"
-"provided classloader. In this new release, we've extended the use case to "
-"allow data that's stored in binary format to be unmarshalled with the given "
-"classloader. This is particularly handy for those users that are deploying "
-"Infinispan in modular, or OSGI-like environments. For more information, "
-"check http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/"
-"AdvancedCache.html#with(java.lang.ClassLoader)[AdvancedCache."
-"with(ClassLoader)  API]."
-msgstr ""
-"Infinispan 5.0 では、ユーザーが提供するクラスローダを使用してクラスローディングが発生するように、 "
-"キャッシュに対して操作を実行する可能性を導入しました。この新しいリリースでは、バイナリ形式で保存されているデータを、指定されたクラスローダでアンマーシャリングできるようにユースケースを拡張しました。これは、モジュラー環境や "
-"OSGI ライクな環境で Infinispan をデプロイしているユーザーにとって特に便利です。詳細については、 link:http://docs."
-"jboss.org/infinispan/5.1/apidocs/org/infinispan/AdvancedCache.html#with(java."
-"lang.ClassLoader)[AdvancedCache.with(ClassLoader) API を] 参照してください。"
+msgid "In Infinispan 5.0, we introduced the possibility of executing operations against a cache in such way that class loading could occur with a user-provided classloader. In this new release, we've extended the use case to allow data that's stored in binary format to be unmarshalled with the given classloader. This is particularly handy for those users that are deploying Infinispan in modular, or OSGI-like environments. For more information, check http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/AdvancedCache.html#with(java.lang.ClassLoader)[AdvancedCache.with(ClassLoader)  API]."
+msgstr "Infinispan 5.0 では、ユーザーが提供するクラスローダを使用してクラスローディングが発生するように、 キャッシュに対して操作を実行する可能性を導入しました。この新しいリリースでは、バイナリ形式で保存されているデータを、指定されたクラスローダでアンマーシャリングできるようにユースケースを拡張しました。これは、モジュラー環境や OSGI ライクな環境で Infinispan をデプロイしているユーザーにとって特に便利です。詳細については、 link:http://docs.jboss.org/infinispan/5.1/apidocs/org/infinispan/AdvancedCache.html#with(java.lang.ClassLoader)[AdvancedCache.with(ClassLoader) API を] 参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-13-infinispan-510alpha1-released.adoc:39
 #, fuzzy
-msgid ""
-"Please keep the feedback coming, and as always, you can download the release "
-"from here and you get further details on the issues addressed in the "
-"changelog."
-msgstr ""
-"フィードバックをお願いします。いつものように、ここからリリースをダウンロードすることができ、変更履歴で対処された問題の詳細を得ることができます。"
+msgid "Please keep the feedback coming, and as always, you can download the release from here and you get further details on the issues addressed in the changelog."
+msgstr "フィードバックをお願いします。いつものように、ここからリリースをダウンロードすることができ、変更履歴で対処された問題の詳細を得ることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-13-infinispan-510alpha1-released.adoc:49
 #, fuzzy
-msgid ""
-"By the way, remember that members of the Infinispan team will be speaking in "
-"events such as http://www.oracle.com/javaone/index.html[JavaOne], http://"
-"soft-shake.ch/en/conference/sessions.html[SoftShake], http://www.jboss.org/"
-"events/JUDCon/2011/london.html[JUDCon London], http://www.devoxx.com/display/"
-"DV11/Home[Devoxx]...etc across the globe.  Don't miss them!"
-msgstr ""
-"ところで、Infinispanチームのメンバーは、 link:http://www.oracle.com/javaone/index."
-"html[JavaOne] link:http://soft-shake.ch/en/conference/sessions.html[, "
-"SoftShake] link:http://www.jboss.org/events/JUDCon/2011/london.html[, JUDCon "
-"London] link:http://www.devoxx.com/display/DV11/Home[, Devoxx] ..."
-"など、世界中のイベントで講演する予定です。お見逃しなく"
+msgid "By the way, remember that members of the Infinispan team will be speaking in events such as http://www.oracle.com/javaone/index.html[JavaOne], http://soft-shake.ch/en/conference/sessions.html[SoftShake], http://www.jboss.org/events/JUDCon/2011/london.html[JUDCon London], http://www.devoxx.com/display/DV11/Home[Devoxx]...etc across the globe.  Don't miss them!"
+msgstr "ところで、Infinispanチームのメンバーは、 link:http://www.oracle.com/javaone/index.html[JavaOne] link:http://soft-shake.ch/en/conference/sessions.html[, SoftShake] link:http://www.jboss.org/events/JUDCon/2011/london.html[, JUDCon London] link:http://www.devoxx.com/display/DV11/Home[, Devoxx] ...など、世界中のイベントで講演する予定です。お見逃しなく"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-13-infinispan-510alpha1-released.adoc:53

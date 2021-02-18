@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-03-17-infinispan-720beta1-released.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-17-infinispan-720beta1-released.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 7.2.0.Beta1 released\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2015-03-17T14:31:00.002-07:00'\n"
 "author: infinispan\n"
 "tags: [ \"release\", \"hotrod\", \"scripting\", \"eviction\", \"jcache\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"105650331925788301\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/03/infinispan-720beta1-"
-"released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-105650331925788301\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/03/infinispan-720beta1-released.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,10 +42,8 @@ msgstr ""
 "date: '2015-03-17T14:31:00.002-07:00'\n"
 "author: infinispan\n"
 "tags: [ \"release\", \"hotrod\", \"scripting\", \"eviction\", \"jcache\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"105650331925788301\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/03/infinispan-720beta1-"
-"released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-105650331925788301\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/03/infinispan-720beta1-released.html\n"
 "---\n"
 
 #. type: Plain text
@@ -59,75 +55,44 @@ msgstr "インフィニスパンのコミュニティへ"
 #. type: Plain text
 #: upstream/_posts/2015-03-17-infinispan-720beta1-released.adoc:15
 #, fuzzy
-msgid ""
-"We are proud to announce the release of Infinispan http://infinispan.org/"
-"download/[7.2.0.Beta1] today."
-msgstr ""
-"本日、Infinispan link:http://infinispan.org/download/[7.2.0.Beta1の] "
-"リリースを発表いたします。"
+msgid "We are proud to announce the release of Infinispan http://infinispan.org/download/[7.2.0.Beta1] today."
+msgstr "本日、Infinispan link:http://infinispan.org/download/[7.2.0.Beta1の] リリースを発表いたします。"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-17-infinispan-720beta1-released.adoc:18
 #, fuzzy
-msgid ""
-"Along the usual assortment of bug fixes, this release includes a few "
-"exciting new features:"
+msgid "Along the usual assortment of bug fixes, this release includes a few exciting new features:"
 msgstr "通常のバグ修正に加え、このリリースにはいくつかのエキサイティングな新機能が含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-17-infinispan-720beta1-released.adoc:22
 #, fuzzy
-msgid ""
-"Server-side scripting with JSR-223 (https://issues.jboss.org/browse/ISPN-"
-"5013[ISPN-5013])"
-msgstr ""
-"JSR-223を用いたサーバサイドスクリプティング link:https://issues.jboss.org/browse/ISPN-"
-"5013[(ISPN-5013] )"
+msgid "Server-side scripting with JSR-223 (https://issues.jboss.org/browse/ISPN-5013[ISPN-5013])"
+msgstr "JSR-223を用いたサーバサイドスクリプティング link:https://issues.jboss.org/browse/ISPN-5013[(ISPN-5013] )"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-17-infinispan-720beta1-released.adoc:24
 #, fuzzy
-msgid ""
-"Initial support for the JCache API over HotRod (https://issues.jboss.org/"
-"browse/ISPN-4955[ISPN-4955])"
-msgstr ""
-"HotRod上のJCache APIの初期サポート link:https://issues.jboss.org/browse/ISPN-"
-"4955[(ISPN-4955] )"
+msgid "Initial support for the JCache API over HotRod (https://issues.jboss.org/browse/ISPN-4955[ISPN-4955])"
+msgstr "HotRod上のJCache APIの初期サポート link:https://issues.jboss.org/browse/ISPN-4955[(ISPN-4955] )"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-17-infinispan-720beta1-released.adoc:27
 #, fuzzy
-msgid ""
-"Improved size-based eviction, implemented on top of Doug Lea's "
-"ConcurrentHashMapV8 (https://issues.jboss.org/browse/ISPN-3023[ISPN-3023])"
-msgstr ""
-"Doug LeaのConcurrentHashMapV8 link:https://issues.jboss.org/browse/ISPN-"
-"3023[(ISPN-3023] )の上に実装されたサイズベースのイビクションの改良。"
+msgid "Improved size-based eviction, implemented on top of Doug Lea's ConcurrentHashMapV8 (https://issues.jboss.org/browse/ISPN-3023[ISPN-3023])"
+msgstr "Doug LeaのConcurrentHashMapV8 link:https://issues.jboss.org/browse/ISPN-3023[(ISPN-3023] )の上に実装されたサイズベースのイビクションの改良。"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-17-infinispan-720beta1-released.adoc:33
 #, fuzzy
-msgid ""
-"For a complete list of features and bug fixes included in this release, "
-"please refer to the https://issues.jboss.org/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12326574[release notes].  "
-msgstr ""
-"このリリースに含まれる機能とバグフィックスの完全なリストについては、 link:https://issues.jboss.org/secure/"
-"ReleaseNote.jspa?projectId=12310799&version=12326574[リリースノートを] 参照してください。"
+msgid "For a complete list of features and bug fixes included in this release, please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12326574[release notes].  "
+msgstr "このリリースに含まれる機能とバグフィックスの完全なリストについては、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12326574[リリースノートを] 参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-17-infinispan-720beta1-released.adoc:39
 #, fuzzy
-msgid ""
-"Feel free to join us and shape the future releases on our http://www.jboss."
-"org/infinispan/forums[forums], our https://lists.jboss.org/mailman/listinfo/"
-"infinispan-dev[mailing lists] or our http://webchat.freenode.net/?channels="
-"%23infinispan[#infinispan] IRC channel."
-msgstr ""
-"link:http://www.jboss.org/infinispan/forums[フォーラム] 、 link:https://lists."
-"jboss.org/mailman/listinfo/infinispan-dev[メーリングリスト] 、 link:http://webchat."
-"freenode.net/?channels=%23infinispan[#infinispan] "
-"IRCチャンネルで、気軽に参加して、将来のリリースを形にしてください。"
+msgid "Feel free to join us and shape the future releases on our http://www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or our http://webchat.freenode.net/?channels=%23infinispan[#infinispan] IRC channel."
+msgstr "link:http://www.jboss.org/infinispan/forums[フォーラム] 、 link:https://lists.jboss.org/mailman/listinfo/infinispan-dev[メーリングリスト] 、 link:http://webchat.freenode.net/?channels=%23infinispan[#infinispan] IRCチャンネルで、気軽に参加して、将来のリリースを形にしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-17-infinispan-720beta1-released.adoc:41

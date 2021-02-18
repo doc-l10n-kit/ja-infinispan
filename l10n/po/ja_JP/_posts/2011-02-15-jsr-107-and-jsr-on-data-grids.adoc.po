@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: JSR-107 and a JSR on data grids\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2011-02-15T18:00:00.000-08:00'\n"
 "author: msurtani\n"
 "tags: [ \" jcp\", \"data grids\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"263273917917315300\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/02/jsr-107-and-jsr-on-"
-"data-grids.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-263273917917315300\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/02/jsr-107-and-jsr-on-data-grids.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,69 +42,33 @@ msgstr ""
 "date: '2011-02-15T18:00:00.000-08:00'\n"
 "author: msurtani\n"
 "tags: [ \" jcp\", \"data grids\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"263273917917315300\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/02/jsr-107-and-jsr-on-"
-"data-grids.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-263273917917315300\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/02/jsr-107-and-jsr-on-data-grids.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:17
 #, fuzzy
-msgid ""
-"In response to http://agoncal.wordpress.com/2011/02/11/java-ee-7-i-have-a-"
-"few-dreams/[Antonio Goncalves' blog post] on his wish list for Java EE 7 and "
-"particularly on his comments around the inactive http://jcp.org/en/jsr/"
-"summary?id=107[JSR-107] JCACHE spec, I'd like to spend a few moments jotting "
-"down my thoughts on the subject."
-msgstr ""
-"link:http://agoncal.wordpress.com/2011/02/11/java-ee-7-i-have-a-few-dreams/"
-"[Antonio Goncalves氏の] Java EE 7のウィッシュリストに関する link:http://agoncal.wordpress."
-"com/2011/02/11/java-ee-7-i-have-a-few-dreams/[ブログ記事] 、そして特にアクティブではない link:"
-"http://jcp.org/en/jsr/summary?id=107[JSR] -107 "
-"JCACHE仕様に関する彼のコメントに反応して、このテーマについての私の考えを書き留めておきたいと思います。"
+msgid "In response to http://agoncal.wordpress.com/2011/02/11/java-ee-7-i-have-a-few-dreams/[Antonio Goncalves' blog post] on his wish list for Java EE 7 and particularly on his comments around the inactive http://jcp.org/en/jsr/summary?id=107[JSR-107] JCACHE spec, I'd like to spend a few moments jotting down my thoughts on the subject."
+msgstr "link:http://agoncal.wordpress.com/2011/02/11/java-ee-7-i-have-a-few-dreams/[Antonio Goncalves氏の] Java EE 7のウィッシュリストに関する link:http://agoncal.wordpress.com/2011/02/11/java-ee-7-i-have-a-few-dreams/[ブログ記事] 、そして特にアクティブではない link:http://jcp.org/en/jsr/summary?id=107[JSR] -107 JCACHE仕様に関する彼のコメントに反応して、このテーマについての私の考えを書き留めておきたいと思います。"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:21
 #, fuzzy
-msgid ""
-"To start with, I am on the JSR-107 expert group, representing Red Hat.   I "
-"have also been in recent discussions with the JCP about the inactive JSR and "
-"what can be done about it."
-msgstr ""
-"そもそも私は、Red Hatを代表してJSR-"
-"107のエキスパートグループに所属していますが、最近では、JCPとの間で、活動していないJSRとそれについて何ができるのかについて議論をしています。"
+msgid "To start with, I am on the JSR-107 expert group, representing Red Hat.   I have also been in recent discussions with the JCP about the inactive JSR and what can be done about it."
+msgstr "そもそも私は、Red Hatを代表してJSR-107のエキスパートグループに所属していますが、最近では、JCPとの間で、活動していないJSRとそれについて何ができるのかについて議論をしています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:31
 #, fuzzy
-msgid ""
-"My feel is JSR-107 needs to be axed.  It's been inactive for way too long, "
-"it is out of date, and the community is pretty jaded about it.  We do, "
-"however, need a JSR around _distributed_ caches and in-memory data grids. "
-" There is definitely a need in the Java EE 7 umbrella specification, "
-"particularly with increasing focus and alignment with cloud.  Apps designed "
-"to scale would almost certainly need a distributed, in-memory data grid.  If "
-"Java EE is to be the preferred platform to build Software-as-a-Service "
-"offerings, scalability is crucial."
-msgstr ""
-"私が感じているのは、JSR-107は廃止されるべきだということです。 "
-"あまりにも長い間活動していないし、時代遅れだし、コミュニティはかなり時代遅れになっています。 しかし、 _分散キャッシュ_ "
-"とインメモリ・データ・グリッドに関するJSRは必要です。Java EE "
-"7のアンブレラ仕様には、特にクラウドへの注目度が高まっていることから、間違いなく必要性があります。 "
-"スケールするように設計されたアプリは、ほぼ確実に分散型のインメモリ・データ・グリッドを必要とします。 Java EEがSoftware-as-a-"
-"Service製品を構築するために好まれるプラットフォームになるには、スケーラビリティが非常に重要です。"
+msgid "My feel is JSR-107 needs to be axed.  It's been inactive for way too long, it is out of date, and the community is pretty jaded about it.  We do, however, need a JSR around _distributed_ caches and in-memory data grids.  There is definitely a need in the Java EE 7 umbrella specification, particularly with increasing focus and alignment with cloud.  Apps designed to scale would almost certainly need a distributed, in-memory data grid.  If Java EE is to be the preferred platform to build Software-as-a-Service offerings, scalability is crucial."
+msgstr "私が感じているのは、JSR-107は廃止されるべきだということです。 あまりにも長い間活動していないし、時代遅れだし、コミュニティはかなり時代遅れになっています。 しかし、 _分散キャッシュ_ とインメモリ・データ・グリッドに関するJSRは必要です。Java EE 7のアンブレラ仕様には、特にクラウドへの注目度が高まっていることから、間違いなく必要性があります。 スケールするように設計されたアプリは、ほぼ確実に分散型のインメモリ・データ・グリッドを必要とします。 Java EEがSoftware-as-a-Service製品を構築するために好まれるプラットフォームになるには、スケーラビリティが非常に重要です。"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:35
 #, fuzzy
-msgid ""
-"So what should this _data grid JSR_ look like?  Well, let's start with JSR-"
-"107.  After all, I didn't think there was anything _wrong_ with JSR-107, "
-"just that it was too limiting/simplistic."
-msgstr ""
-"では、この _データグリッドJSR_ はどうあるべきかというと、まずはJSR-107から始めようと思います。 結局のところ、 _JSR_ -"
-"107が悪いとは思っていませんでしたが、あまりにも限定的でシンプルなものだったので、JSR-107を使うことにしました。"
+msgid "So what should this _data grid JSR_ look like?  Well, let's start with JSR-107.  After all, I didn't think there was anything _wrong_ with JSR-107, just that it was too limiting/simplistic."
+msgstr "では、この _データグリッドJSR_ はどうあるべきかというと、まずはJSR-107から始めようと思います。 結局のところ、 _JSR_ -107が悪いとは思っていませんでしたが、あまりにも限定的でシンプルなものだったので、JSR-107を使うことにしました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:38
@@ -117,8 +79,7 @@ msgstr "*JSR-107の中身は？* 簡単なまとめです。"
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:41
 #, fuzzy
-msgid ""
-"Primary interface - #javax.cache.Cache# - extending #j.u.c.ConcurrentMap#"
+msgid "Primary interface - #javax.cache.Cache# - extending #j.u.c.ConcurrentMap#"
 msgstr "主なインタフェース -javax.cache.Cache- j.u.c.ConcurrentMapを拡張する"
 
 #. type: Plain text
@@ -136,55 +97,41 @@ msgstr "キャッシュされたデータをロード/保存するためのCache
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:46
 #, fuzzy
-msgid ""
-"Defines an #evict(K) #method, as well as the support for different eviction "
-"algorithms"
+msgid "Defines an #evict(K) #method, as well as the support for different eviction algorithms"
 msgstr "evict(K) #メソッドを定義し、異なる退避アルゴリズムをサポートします。"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:48
 #, fuzzy
-msgid ""
-"Defines a ServiceLocator approach to loading the appropriate implementation "
-"at runtime"
+msgid "Defines a ServiceLocator approach to loading the appropriate implementation at runtime"
 msgstr "実行時に適切な実装をロードするServiceLocatorアプローチを定義します。"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:50
 #, fuzzy
-msgid ""
-"Defines a #CacheManager# interface to construct and retrieve #Cache# "
-"instances"
+msgid "Defines a #CacheManager# interface to construct and retrieve #Cache# instances"
 msgstr "CacheManagerインタフェースを定義し、Cacheインスタンスを構築および取得します。"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:57
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "*[.underline]#What JSR-107 does _not_ cover - but should be included in\n"
 "a Data Grid JSR#*\n"
 "Over and above what JSR-107 proposed, I believe the following features\n"
 "are crucial to a useful data grid standard:\n"
-msgstr ""
-"JSR-107で *はカバーして _いない_ * が、データグリッドJSRに含めるべきもの JSR-"
-"107で提案されている機能以上に、以下の機能が有用なデータグリッド標準のために重要であると考えている。"
+msgstr "JSR-107で *はカバーして _いない_ * が、データグリッドJSRに含めるべきもの JSR-107で提案されている機能以上に、以下の機能が有用なデータグリッド標準のために重要であると考えている。"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:61
 #, fuzzy
-msgid ""
-"JTA interoperability.  The ability to participate in transactions is "
-"necessary, both as an XA resource and as a simple cache to front a RDBMS, "
-"via JPA"
-msgstr ""
-"JTAの相互運用性。 XAリソースとしても、RDBMSの前にJPAを介して単純なキャッシュとしても、トランザクションに参加する機能が必要です。"
+msgid "JTA interoperability.  The ability to participate in transactions is necessary, both as an XA resource and as a simple cache to front a RDBMS, via JPA"
+msgstr "JTAの相互運用性。 XAリソースとしても、RDBMSの前にJPAを介して単純なキャッシュとしても、トランザクションに参加する機能が必要です。"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:64
 #, fuzzy
-msgid ""
-"Define behaviour at certain stages of a tx's lifecycle, particularly with "
-"regards to recovery"
+msgid "Define behaviour at certain stages of a tx's lifecycle, particularly with regards to recovery"
 msgstr "特に回復に関連して、TXのライフサイクルの特定の段階での行動を定義する。"
 
 #. type: Plain text
@@ -196,16 +143,12 @@ msgstr "JPA の第二レベルキャッシュ SPI との相性が良いはずで
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:69
 #, fuzzy
-msgid ""
-"Define and mandate REPLICATION and DISTRIBUTION, as well as SYNCHRONOUS and "
-"ASYNCHRONOUS versions of network communications"
-msgstr ""
-"ネットワーク通信の SYNCHRONOUS および ASYNCHRONOUS バージョンと同様に、REPLICATION および "
-"DISTRIBUTION を定義し、義務化する。"
+msgid "Define and mandate REPLICATION and DISTRIBUTION, as well as SYNCHRONOUS and ASYNCHRONOUS versions of network communications"
+msgstr "ネットワーク通信の SYNCHRONOUS および ASYNCHRONOUS バージョンと同様に、REPLICATION および DISTRIBUTION を定義し、義務化する。"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:72
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "*[.underline]#These _could_ be useful in the JSR, but needs more thought\n"
 "and discussion#*\n"
@@ -214,12 +157,8 @@ msgstr "*これらはJSRでは有用で _ある_ * が、より多くの考察�
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:75
 #, fuzzy
-msgid ""
-"An asynchronous, #Future#-based API (See Infinispan's http://community.jboss."
-"org/wiki/AsynchronousAPI[Async API])"
-msgstr ""
-"非同期、フューチャーベースの API (Infinispan の link:http://community.jboss.org/wiki/"
-"AsynchronousAPI[Async API を] 参照)"
+msgid "An asynchronous, #Future#-based API (See Infinispan's http://community.jboss.org/wiki/AsynchronousAPI[Async API])"
+msgstr "非同期、フューチャーベースの API (Infinispan の link:http://community.jboss.org/wiki/AsynchronousAPI[Async API を] 参照)"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:76
@@ -235,41 +174,27 @@ msgstr "プログラム的なコンフィグ・ビーン・インタフェース
 
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:81
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "*[.underline]#Further interesting thoughts#*\n"
 msgstr "*さらなる興味深い考え*"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:86
 #, fuzzy
-msgid ""
-"These additional, NoSQL-like features would also be very interesting, but "
-"probably more sense in a later revision of this JSR - both for the sake of "
-"manageability as well as to allow more community adoption/feedback on such "
-"APIs."
-msgstr ""
-"これらの追加の NoSQL ライクな機能も非常に興味深いものですが、おそらくこの JSR の後のリビジョンでは、管理性のためと、そのような API "
-"のコミュニティへの採用/フィードバックをより多く行えるようにするために、より意味があるでしょう。"
+msgid "These additional, NoSQL-like features would also be very interesting, but probably more sense in a later revision of this JSR - both for the sake of manageability as well as to allow more community adoption/feedback on such APIs."
+msgstr "これらの追加の NoSQL ライクな機能も非常に興味深いものですが、おそらくこの JSR の後のリビジョンでは、管理性のためと、そのような API のコミュニティへの採用/フィードバックをより多く行えるようにするために、より意味があるでしょう。"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:89
 #, fuzzy
-msgid ""
-"http://infinispan.blogspot.com/2011/01/introducing-distributed-execution-and."
-"html[Distributed code execution API]"
-msgstr ""
-"link:http://infinispan.blogspot.com/2011/01/introducing-distributed-"
-"execution-and.html[分散コード実行API]"
+msgid "http://infinispan.blogspot.com/2011/01/introducing-distributed-execution-and.html[Distributed code execution API]"
+msgstr "link:http://infinispan.blogspot.com/2011/01/introducing-distributed-execution-and.html[分散コード実行API]"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:91
 #, fuzzy
-msgid ""
-"http://infinispan.blogspot.com/2011/01/introducing-distributed-execution-and."
-"html[Map/Reduce API]"
-msgstr ""
-"link:http://infinispan.blogspot.com/2011/01/introducing-distributed-"
-"execution-and.html[マップ/Reduce API]"
+msgid "http://infinispan.blogspot.com/2011/01/introducing-distributed-execution-and.html[Map/Reduce API]"
+msgstr "link:http://infinispan.blogspot.com/2011/01/introducing-distributed-execution-and.html[マップ/Reduce API]"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:92
@@ -280,9 +205,7 @@ msgstr "クエリ/フィルタリングAPI"
 #. type: Plain text
 #: upstream/_posts/2011-02-15-jsr-107-and-jsr-on-data-grids.adoc:97
 #, fuzzy
-msgid ""
-"I'd like to hear your thoughts and opinions around this - please comment "
-"away!"
+msgid "I'd like to hear your thoughts and opinions around this - please comment away!"
 msgstr "この件についてのご意見やご感想をお聞きしたいと思います。"
 
 #. type: Plain text

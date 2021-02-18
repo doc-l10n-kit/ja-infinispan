@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:11
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: REST with HTTP/2\n"
@@ -32,11 +32,8 @@ msgid ""
 "date: '2018-03-07T05:00:00.000-08:00'\n"
 "author: slaskawiec\n"
 "tags: [ \" docker\", \"server\", \"http/2\", \"rest\" ]\n"
-"thumbnail: https://lh6.googleusercontent.com/"
-"QGDSTl40Vz0ROc0koZA_QWHQ_yGB1M_rEISrd42_mQv4MA9WJCUyag6RUsfTkCx0juSiZnbGiTXLvJDr86REpdAPWDEfntqVjaXh8zN3uDf3J1qRugr9nsk3wfqCR4WkZ1jLtg-"
-"s=s72-c\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"258887962327865096\n"
+"thumbnail: https://lh6.googleusercontent.com/QGDSTl40Vz0ROc0koZA_QWHQ_yGB1M_rEISrd42_mQv4MA9WJCUyag6RUsfTkCx0juSiZnbGiTXLvJDr86REpdAPWDEfntqVjaXh8zN3uDf3J1qRugr9nsk3wfqCR4WkZ1jLtg-s=s72-c\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-258887962327865096\n"
 "blogger_orig_url: https://blog.infinispan.org/2018/03/rest-with-http2.html\n"
 "---\n"
 msgstr ""
@@ -46,105 +43,50 @@ msgstr ""
 "date: '2018-03-07T05:00:00.000-08:00'\n"
 "author: slaskawiec\n"
 "tags: [ \" docker\", \"server\", \"http/2\", \"rest\" ]\n"
-"thumbnail: https://lh6.googleusercontent.com/"
-"QGDSTl40Vz0ROc0koZA_QWHQ_yGB1M_rEISrd42_mQv4MA9WJCUyag6RUsfTkCx0juSiZnbGiTXLvJDr86REpdAPWDEfntqVjaXh8zN3uDf3J1qRugr9nsk3wfqCR4WkZ1jLtg-"
-"s=s72-c\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"258887962327865096\n"
+"thumbnail: https://lh6.googleusercontent.com/QGDSTl40Vz0ROc0koZA_QWHQ_yGB1M_rEISrd42_mQv4MA9WJCUyag6RUsfTkCx0juSiZnbGiTXLvJDr86REpdAPWDEfntqVjaXh8zN3uDf3J1qRugr9nsk3wfqCR4WkZ1jLtg-s=s72-c\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-258887962327865096\n"
 "blogger_orig_url: https://blog.infinispan.org/2018/03/rest-with-http2.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:25
 #, fuzzy
-msgid ""
-"HTTP has become one of the most successful and heavily used network "
-"protocols around the world. Version 1.0 was created in 1996 and received a "
-"minor update 3 years later. But it took more than a decade to create HTTP/2 "
-"(which was approved in 2015). Why did it take so long? Well, I wouldn’t tell "
-"you all the truth if I didn’t mention an https://developers.google.com/web/"
-"fundamentals/performance/http2/[experimental protocol, called SPDY]. SPDY "
-"was primarily focused on improving performance. The initial results were "
-"very promising and inside Google’s lab, the developers https://blog.chromium."
-"org/2009/11/2x-faster-web.html[measured 55% speed improvement]. This work "
-"and experience was converted into HTTP/2 proposal back in 2012. A few years "
-"later, we can all use HTTP/2 (sometimes called h2) along with its older "
-"brother - HTTP/1.1."
-msgstr ""
-"HTTP は、世界中で最も成功し、多用されているネットワークプロトコルの一つとなっています。バージョン1."
-"0は1996年に作成され、3年後にマイナーアップデートを受けました。しかし、HTTP/"
-"2（2015年に承認されました）の作成には10年以上かかりました。なぜそんなに時間がかかったのでしょうか？まあ、 link:https://"
-"developers.google.com/web/fundamentals/performance/http2/"
-"[SPDYと呼ばれる実験的なプロトコル] "
-"について言及しなければ、すべての真実を語ることはできないでしょう。SPDYは主にパフォーマンスの向上に焦点を当てていました。初期の結果は非常に有望で、Googleのラボ内では開発者が "
-"link:https://blog.chromium.org/2009/11/2x-faster-web.html[55%の速度向上を計測した] "
-"。この作業と経験は2012年にHTTP/2の提案に変換されました。数年後には、HTTP/2 (h2と呼ばれることもあります)は、その兄貴分であるHTTP/"
-"1.1と一緒に使えるようになりました。"
+msgid "HTTP has become one of the most successful and heavily used network protocols around the world. Version 1.0 was created in 1996 and received a minor update 3 years later. But it took more than a decade to create HTTP/2 (which was approved in 2015). Why did it take so long? Well, I wouldn’t tell you all the truth if I didn’t mention an https://developers.google.com/web/fundamentals/performance/http2/[experimental protocol, called SPDY]. SPDY was primarily focused on improving performance. The initial results were very promising and inside Google’s lab, the developers https://blog.chromium.org/2009/11/2x-faster-web.html[measured 55% speed improvement]. This work and experience was converted into HTTP/2 proposal back in 2012. A few years later, we can all use HTTP/2 (sometimes called h2) along with its older brother - HTTP/1.1."
+msgstr "HTTP は、世界中で最も成功し、多用されているネットワークプロトコルの一つとなっています。バージョン1.0は1996年に作成され、3年後にマイナーアップデートを受けました。しかし、HTTP/2（2015年に承認されました）の作成には10年以上かかりました。なぜそんなに時間がかかったのでしょうか？まあ、 link:https://developers.google.com/web/fundamentals/performance/http2/[SPDYと呼ばれる実験的なプロトコル] について言及しなければ、すべての真実を語ることはできないでしょう。SPDYは主にパフォーマンスの向上に焦点を当てていました。初期の結果は非常に有望で、Googleのラボ内では開発者が link:https://blog.chromium.org/2009/11/2x-faster-web.html[55%の速度向上を計測した] 。この作業と経験は2012年にHTTP/2の提案に変換されました。数年後には、HTTP/2 (h2と呼ばれることもあります)は、その兄貴分であるHTTP/1.1と一緒に使えるようになりました。"
 
 #. type: Title ==
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:26
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Main differences between HTTP/1.1 and HTTP/2"
 msgstr "HTTP/1.1とHTTP/2の主な違い"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:29
 #, fuzzy
-msgid ""
-"image:https://lh6.googleusercontent.com/"
-"QGDSTl40Vz0ROc0koZA_QWHQ_yGB1M_rEISrd42_mQv4MA9WJCUyag6RUsfTkCx0juSiZnbGiTXLvJDr86REpdAPWDEfntqVjaXh8zN3uDf3J1qRugr9nsk3wfqCR4WkZ1jLtg-"
-"s[image,width=624,height=515]"
-msgstr ""
-"image:https://lh6.googleusercontent.com/"
-"QGDSTl40Vz0ROc0koZA_QWHQ_yGB1M_rEISrd42_mQv4MA9WJCUyag6RUsfTkCx0juSiZnbGiTXLvJDr86REpdAPWDEfntqVjaXh8zN3uDf3J1qRugr9nsk3wfqCR4WkZ1jLtg-"
-"s[alt=\"image\", width=\"624\", height=\"515\"]"
+msgid "image:https://lh6.googleusercontent.com/QGDSTl40Vz0ROc0koZA_QWHQ_yGB1M_rEISrd42_mQv4MA9WJCUyag6RUsfTkCx0juSiZnbGiTXLvJDr86REpdAPWDEfntqVjaXh8zN3uDf3J1qRugr9nsk3wfqCR4WkZ1jLtg-s[image,width=624,height=515]"
+msgstr "image:https://lh6.googleusercontent.com/QGDSTl40Vz0ROc0koZA_QWHQ_yGB1M_rEISrd42_mQv4MA9WJCUyag6RUsfTkCx0juSiZnbGiTXLvJDr86REpdAPWDEfntqVjaXh8zN3uDf3J1qRugr9nsk3wfqCR4WkZ1jLtg-s[alt=\"image\", width=\"624\", height=\"515\"]"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:39
 #, fuzzy
-msgid ""
-"HTTP/1.1 is a text-based protocol. Sometimes this is very convenient, since "
-"you can use low level tools, such as Telnet, for hacking. But it doesn’t "
-"work very well for transporting large, binary payloads. HTTP/2 solves this "
-"problem by using a completely redesigned architecture. Each HTTP message (a "
-"request or a response) consists of one or more frames. A frame is the "
-"smallest portion of data travelling through a TCP connection. A set of "
-"messages is aggregated into a, so called stream."
-msgstr ""
-"HTTP/1."
-"1はテキストベースのプロトコルです。Telnetのような低レベルのツールをハッキングに使うことができるので、非常に便利なこともあります。しかし、大規模なバイナリペイロードの転送にはあまりうまく機能しません。HTTP/"
-"2 "
-"は完全に再設計されたアーキテクチャを使うことでこの問題を解決しています。各HTTPメッセージ(リクエストまたはレスポンス)は、1つまたは複数のフレームで構成されています。フレームとは、TCP "
-"接続を通過するデータの最小の部分です。一連のメッセージは、いわゆるストリームに集約されます。"
+msgid "HTTP/1.1 is a text-based protocol. Sometimes this is very convenient, since you can use low level tools, such as Telnet, for hacking. But it doesn’t work very well for transporting large, binary payloads. HTTP/2 solves this problem by using a completely redesigned architecture. Each HTTP message (a request or a response) consists of one or more frames. A frame is the smallest portion of data travelling through a TCP connection. A set of messages is aggregated into a, so called stream."
+msgstr "HTTP/1.1はテキストベースのプロトコルです。Telnetのような低レベルのツールをハッキングに使うことができるので、非常に便利なこともあります。しかし、大規模なバイナリペイロードの転送にはあまりうまく機能しません。HTTP/2 は完全に再設計されたアーキテクチャを使うことでこの問題を解決しています。各HTTPメッセージ(リクエストまたはレスポンス)は、1つまたは複数のフレームで構成されています。フレームとは、TCP 接続を通過するデータの最小の部分です。一連のメッセージは、いわゆるストリームに集約されます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:42
 #, fuzzy
-msgid ""
-"image:https://lh3.googleusercontent.com/PYdtYy6RLlUFY3pUVfg-"
-"E_5_AomfRZW9O1EHTkytWnkKDXhlCkjsf-D4N7_CiG9AndYDZ7tAYTkrMQEeDi56PvcnvPaZ-"
-"9YNqswuTtqUY0IsTzo6UtXJrInhTKTc_SzGy-Zh_u0V[image,width=624,height=171]"
-msgstr ""
-"image:https://lh3.googleusercontent.com/PYdtYy6RLlUFY3pUVfg-"
-"E_5_AomfRZW9O1EHTkytWnkKDXhlCkjsf-D4N7_CiG9AndYDZ7tAYTkrMQEeDi56PvcnvPaZ-"
-"9YNqswuTtqUY0IsTzo6UtXJrInhTKTc_SzGy-Zh_u0V[alt=\"image\", width=\"624\", "
-"height=\"171\"]"
+msgid "image:https://lh3.googleusercontent.com/PYdtYy6RLlUFY3pUVfg-E_5_AomfRZW9O1EHTkytWnkKDXhlCkjsf-D4N7_CiG9AndYDZ7tAYTkrMQEeDi56PvcnvPaZ-9YNqswuTtqUY0IsTzo6UtXJrInhTKTc_SzGy-Zh_u0V[image,width=624,height=171]"
+msgstr "image:https://lh3.googleusercontent.com/PYdtYy6RLlUFY3pUVfg-E_5_AomfRZW9O1EHTkytWnkKDXhlCkjsf-D4N7_CiG9AndYDZ7tAYTkrMQEeDi56PvcnvPaZ-9YNqswuTtqUY0IsTzo6UtXJrInhTKTc_SzGy-Zh_u0V[alt=\"image\", width=\"624\", height=\"171\"]"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:50
 #, fuzzy
-msgid ""
-"HTTP/2 allows to lower the number of physical connections between the server "
-"and the client by multiplexing logical connections into one TCP connection. "
-"Streams allow the server to recognize, which frame belongs to which "
-"conversation."
-msgstr ""
-"HTTP/"
-"2では、論理的な接続を1つのTCP接続に多重化することで、サーバとクライアント間の物理的な接続数を減らすことができます。ストリームにより、サーバはどのフレームがどの会話に属しているかを認識することができます。"
+msgid "HTTP/2 allows to lower the number of physical connections between the server and the client by multiplexing logical connections into one TCP connection. Streams allow the server to recognize, which frame belongs to which conversation."
+msgstr "HTTP/2では、論理的な接続を1つのTCP接続に多重化することで、サーバとクライアント間の物理的な接続数を減らすことができます。ストリームにより、サーバはどのフレームがどの会話に属しているかを認識することができます。"
 
 #. type: Title =====
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:51
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "How to connect using HTTP/2?"
 msgstr "HTTP/2を使って接続するには？"
 
@@ -157,62 +99,32 @@ msgstr "HTTP/2の会話を始めるには2つの方法があります。"
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:61
 #, fuzzy
-msgid ""
-"The first one, and the most commonly used one, is https://tools.ietf.org/"
-"html/rfc7301[TLS/ALPN]. During TLS handshake the server and the client "
-"negotiate protocol for further communication.  Unfortunately JDK below 9 "
-"doesn’t support it by default (there are a couple of workarounds but please "
-"refer to your favorite HTTP client’s manual to find some suggestions)."
-msgstr ""
-"最初のもので、最も一般的に使用されているものは、 link:https://tools.ietf.org/html/rfc7301[TLS/ALPN] "
-"です。TLS "
-"ハンドシェイクの間、サーバーとクライアントはさらなる通信のためのプロトコルをネゴシエートします。残念ながら、9以下のJDKはデフォルトではTLSをサポートしていません（いくつかの回避策がありますが、お気に入りのHTTPクライアントのマニュアルを参照して、いくつかの提案を見つけてください）。"
+msgid "The first one, and the most commonly used one, is https://tools.ietf.org/html/rfc7301[TLS/ALPN]. During TLS handshake the server and the client negotiate protocol for further communication.  Unfortunately JDK below 9 doesn’t support it by default (there are a couple of workarounds but please refer to your favorite HTTP client’s manual to find some suggestions)."
+msgstr "最初のもので、最も一般的に使用されているものは、 link:https://tools.ietf.org/html/rfc7301[TLS/ALPN] です。TLS ハンドシェイクの間、サーバーとクライアントはさらなる通信のためのプロトコルをネゴシエートします。残念ながら、9以下のJDKはデフォルトではTLSをサポートしていません（いくつかの回避策がありますが、お気に入りのHTTPクライアントのマニュアルを参照して、いくつかの提案を見つけてください）。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:66
 #, fuzzy
-msgid ""
-"The second one, much less popular, is so called plain text upgrade.  During "
-"HTTP/1.1 conversation, the client issues an HTTP/1.1 Upgrade header and "
-"proposes new conversation protocol. If the server agrees, they start using "
-"it. If not, they stick with HTTP/1.1."
-msgstr ""
-"2つ目は、はるかに人気のない、いわゆるプレーンテキストアップグレードです。HTTP/1.1 の会話中に、クライアントは HTTP/1.1 Upgrade "
-"ヘッダを発行し、新しい会話プロトコルを提案します。サーバが同意すれば、サーバはそれを使い始めます。そうでなければ、HTTP/1.1 のままです。"
+msgid "The second one, much less popular, is so called plain text upgrade.  During HTTP/1.1 conversation, the client issues an HTTP/1.1 Upgrade header and proposes new conversation protocol. If the server agrees, they start using it. If not, they stick with HTTP/1.1."
+msgstr "2つ目は、はるかに人気のない、いわゆるプレーンテキストアップグレードです。HTTP/1.1 の会話中に、クライアントは HTTP/1.1 Upgrade ヘッダを発行し、新しい会話プロトコルを提案します。サーバが同意すれば、サーバはそれを使い始めます。そうでなければ、HTTP/1.1 のままです。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:71
 #, fuzzy
-msgid ""
-"The good news is that Infinispan supports both those upgrade paths.  Thanks "
-"to the ALPN Hack Engine (the credit goes to Stuart Douglas from the Wildfly "
-"Team), we support TLS/ALPN without any bootstrap classpath modification."
-msgstr ""
-"良いニュースは、Infinispanがこれらの両方のアップグレードパスをサポートしていることです。ALPNハックエンジン（WildflyチームのStuart "
-"Douglas氏の功績）のおかげで、ブートストラップのクラスパスを変更することなく、TLS/ALPNをサポートしています。"
+msgid "The good news is that Infinispan supports both those upgrade paths.  Thanks to the ALPN Hack Engine (the credit goes to Stuart Douglas from the Wildfly Team), we support TLS/ALPN without any bootstrap classpath modification."
+msgstr "良いニュースは、Infinispanがこれらの両方のアップグレードパスをサポートしていることです。ALPNハックエンジン（WildflyチームのStuart Douglas氏の功績）のおかげで、ブートストラップのクラスパスを変更することなく、TLS/ALPNをサポートしています。"
 
 #. type: Title =====
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:72
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Configuring Infinispan server for HTTP/2"
 msgstr "HTTP/2のためのInfinispanサーバの設定"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:81
 #, fuzzy
-msgid ""
-"Infinispan’s REST server already supports plain text upgrades out of the box."
-" TLS/ALPN however, requires additional configuration since the server needs "
-"to use a Keystore. In order to make it even more convenient, we support http:"
-"//infinispan.org/docs/stable/server_guide/server_guide.html#security:"
-"hotrod_rest_encryption[generating keystores automatically when needed]. "
-"Here’s an example showing how to configure a security realm:"
-msgstr ""
-"Infinispan の REST サーバは、すでにプレーンテキストのアップグレードをサポートしています。しかし、TLS/"
-"ALPNでは、サーバーがキーストアを使用する必要があるため、追加の設定が必要です。より便利にするために、 link:http://infinispan."
-"org/docs/stable/server_guide/server_guide.html#security:"
-"hotrod_rest_encryption[必要に応じて自動的にキーストアを生成する] "
-"ことをサポートしています。ここでは、セキュリティ領域を設定する方法を示す例を示します。"
+msgid "Infinispan’s REST server already supports plain text upgrades out of the box. TLS/ALPN however, requires additional configuration since the server needs to use a Keystore. In order to make it even more convenient, we support http://infinispan.org/docs/stable/server_guide/server_guide.html#security:hotrod_rest_encryption[generating keystores automatically when needed]. Here’s an example showing how to configure a security realm:"
+msgstr "Infinispan の REST サーバは、すでにプレーンテキストのアップグレードをサポートしています。しかし、TLS/ALPNでは、サーバーがキーストアを使用する必要があるため、追加の設定が必要です。より便利にするために、 link:http://infinispan.org/docs/stable/server_guide/server_guide.html#security:hotrod_rest_encryption[必要に応じて自動的にキーストアを生成する] ことをサポートしています。ここでは、セキュリティ領域を設定する方法を示す例を示します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:84
@@ -223,13 +135,8 @@ msgstr "次のステップは、セキュリティ領域をRESTエンドポイ�
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:90
 #, fuzzy
-msgid ""
-"You may also use one of our configuration examples. The easiest way to get "
-"it working is to use our https://github.com/jboss-dockerfiles/infinispan/"
-"tree/master/server[Docker image]:"
-msgstr ""
-"私たちの設定例の一つを使用することもできます。最も簡単な方法は、私たちの link:https://github.com/jboss-"
-"dockerfiles/infinispan/tree/master/server[Dockerイメージを] 使うことです。"
+msgid "You may also use one of our configuration examples. The easiest way to get it working is to use our https://github.com/jboss-dockerfiles/infinispan/tree/master/server[Docker image]:"
+msgstr "私たちの設定例の一つを使用することもできます。最も簡単な方法は、私たちの link:https://github.com/jboss-dockerfiles/infinispan/tree/master/server[Dockerイメージを] 使うことです。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:93
@@ -240,9 +147,7 @@ msgstr "上のコマンドからいくつか説明してみましょう。"
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:96
 #, fuzzy
-msgid ""
-"-e \"APP_USER=test\" - This is a user name we will be used for REST "
-"authentication."
+msgid "-e \"APP_USER=test\" - This is a user name we will be used for REST authentication."
 msgstr "-e \"APP_USER=test\" - これは、REST認証に使用するユーザー名です。"
 
 #. type: Plain text
@@ -254,42 +159,26 @@ msgstr "-e \"APP_PASS=test\" -対応するパスワード。"
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:99
 #, fuzzy
-msgid ""
-"../../docs/examples/configs/standalone-rest-ssl.xml - Here is a ready-to-go "
-"configuration with REST and TLS/ALPN support"
-msgstr ""
-"../../docs/examples/configs/standalone-rest-ssl.xml - Here is a ready-to-go "
-"configuration with REST and TLS/ALPN support"
+msgid "../../docs/examples/configs/standalone-rest-ssl.xml - Here is a ready-to-go configuration with REST and TLS/ALPN support"
+msgstr "../../docs/examples/configs/standalone-rest-ssl.xml - Here is a ready-to-go configuration with REST and TLS/ALPN support"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:104
 #, fuzzy
-msgid ""
-"Unfortunately, HTTP/2 functionality https://issues.jboss.org/browse/ISPN-"
-"8896[has been broken in 9.2.0.Final]. But we promise to fix it as soon as we "
-"can :) Please use 9.1.5.Final in the meantime."
-msgstr ""
-"残念ながら、HTTP/2機能は link:https://issues.jboss.org/browse/ISPN-8896[9.2.0."
-"Finalでは壊れて] います。しかし、できる限り早く修正することを約束します。)それまでは9.1.5.Finalをご利用ください。"
+msgid "Unfortunately, HTTP/2 functionality https://issues.jboss.org/browse/ISPN-8896[has been broken in 9.2.0.Final]. But we promise to fix it as soon as we can :) Please use 9.1.5.Final in the meantime."
+msgstr "残念ながら、HTTP/2機能は link:https://issues.jboss.org/browse/ISPN-8896[9.2.0.Finalでは壊れて] います。しかし、できる限り早く修正することを約束します。)それまでは9.1.5.Finalをご利用ください。"
 
 #. type: Title ==
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:105
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Testing using CURL"
 msgstr "CURLを使ったテスト"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:111
 #, fuzzy
-msgid ""
-"https://linux.die.net/man/1/curl[Curl] is one of my favorite tools. It’s "
-"very simple, powerful, and… it supports HTTP/2. Assuming that you already "
-"started Infinispan server using `docker run` command, you can put something "
-"into the cache:"
-msgstr ""
-"link:https://linux.die.net/man/1/curl[Curl は] "
-"私のお気に入りのツールの一つです。非常にシンプルでパワフル、そして... HTTP/2をサポートしています。すでに `docker run` "
-"コマンドを使って Infinispan サーバを起動していると仮定すると、キャッシュに何かを入れることができます。"
+msgid "https://linux.die.net/man/1/curl[Curl] is one of my favorite tools. It’s very simple, powerful, and… it supports HTTP/2. Assuming that you already started Infinispan server using `docker run` command, you can put something into the cache:"
+msgstr "link:https://linux.die.net/man/1/curl[Curl は] 私のお気に入りのツールの一つです。非常にシンプルでパワフル、そして... HTTP/2をサポートしています。すでに `docker run` コマンドを使って Infinispan サーバを起動していると仮定すると、キャッシュに何かを入れることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:115
@@ -306,9 +195,7 @@ msgstr "CURLのスイッチを一つ一つ解析してみましょう。"
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:122
 #, fuzzy
-msgid ""
-"-k - Ignores certificate validation. All automatically generated "
-"certificates and self-signed and not trusted by default."
+msgid "-k - Ignores certificate validation. All automatically generated certificates and self-signed and not trusted by default."
 msgstr "k -k - 証明書の検証を無視します。すべて自動生成された証明書と自己署名された証明書で、デフォルトでは信頼されていません。"
 
 #. type: Plain text
@@ -332,40 +219,26 @@ msgstr "d test -d test - HTTP POSTを呼び出す際のペイロードです。"
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:127
 #, fuzzy
-msgid ""
-"-H “Accept: text/plain” - This tells the server what type of data we’d like "
-"to get in return."
+msgid "-H “Accept: text/plain” - This tells the server what type of data we’d like to get in return."
 msgstr "-H \"Accept: text/plain\" - これはサーバに、どのようなタイプのデータを取得したいかを伝えます。"
 
 #. type: Title ==
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:128
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Conclusions and links"
 msgstr "結論とリンク"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:134
 #, fuzzy
-msgid ""
-"I hope you enjoyed this small tutorial about HTTP/2. I highly encourage you "
-"to have a look at the links below to learn some more things about this topic."
-" You may also measure the performance of your app when using HTTP/1.1 and "
-"HTTP/2. You will be surprised!"
-msgstr ""
-"HTTP/2 "
-"についての小さなチュートリアルを楽しんでいただけたでしょうか。以下のリンクを参照して、このトピックについてもっと多くのことを学ぶことを強くお勧めします。HTTP/"
-"1.1とHTTP/2を使用したときのアプリのパフォーマンスを測定することもできます。驚くことでしょう。"
+msgid "I hope you enjoyed this small tutorial about HTTP/2. I highly encourage you to have a look at the links below to learn some more things about this topic. You may also measure the performance of your app when using HTTP/1.1 and HTTP/2. You will be surprised!"
+msgstr "HTTP/2 についての小さなチュートリアルを楽しんでいただけたでしょうか。以下のリンクを参照して、このトピックについてもっと多くのことを学ぶことを強くお勧めします。HTTP/1.1とHTTP/2を使用したときのアプリのパフォーマンスを測定することもできます。驚くことでしょう。"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:138
 #, fuzzy
-msgid ""
-"https://hpbn.co/[High Performance Browser Networking] - One of the best "
-"books about HTTP and network performance. Most of the graphics in this "
-"article has been copied from that book. I highly recommend it!"
-msgstr ""
-"link:https://hpbn.co/[High Performance Browser Networking] - HTTP "
-"とネットワークパフォーマンスに関する最高の本の一つです。この記事のグラフィックのほとんどは、その本からコピーされています。私はそれを非常にお勧めします!"
+msgid "https://hpbn.co/[High Performance Browser Networking] - One of the best books about HTTP and network performance. Most of the graphics in this article has been copied from that book. I highly recommend it!"
+msgstr "link:https://hpbn.co/[High Performance Browser Networking] - HTTP とネットワークパフォーマンスに関する最高の本の一つです。この記事のグラフィックのほとんどは、その本からコピーされています。私はそれを非常にお勧めします!"
 
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:139
@@ -376,8 +249,5 @@ msgstr "link:https://linux.die.net/man/1/curl[カールマニュアル]"
 #. type: Plain text
 #: upstream/_posts/2018-03-07-rest-with-http2.adoc:140
 #, fuzzy
-msgid ""
-"https://hub.docker.com/r/jboss/infinispan-server/[Infinispan on Docker Hub]"
-msgstr ""
-"link:https://hub.docker.com/r/jboss/infinispan-server/[Docker "
-"Hub上のInfinispan]"
+msgid "https://hub.docker.com/r/jboss/infinispan-server/[Infinispan on Docker Hub]"
+msgstr "link:https://hub.docker.com/r/jboss/infinispan-server/[Docker Hub上のInfinispan]"

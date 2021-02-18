@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-10-28-first-release-candidate-now-available.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-10-28-first-release-candidate-now-available.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: First release candidate now available\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2009-10-28T15:12:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \" release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6519361885432704059\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/10/first-release-"
-"candidate-now-available.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6519361885432704059\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/10/first-release-candidate-now-available.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,48 +42,21 @@ msgstr ""
 "date: '2009-10-28T15:12:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \" release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"6519361885432704059\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/10/first-release-"
-"candidate-now-available.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6519361885432704059\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/10/first-release-candidate-now-available.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-10-28-first-release-candidate-now-available.adoc:16
 #, fuzzy
-msgid ""
-"Infinispan 4.0.0.CR1 is now available for download. This is an important "
-"release, containing several critical bug fixes on the last beta.  "
-"Performance has improved too, with a better default JGroups stack. Many "
-"thanks to the multitude of contributors and committers who have worked hard "
-"to make this release a possibility."
-msgstr ""
-"Infinispan 4.0.0.0."
-"CR1をダウンロードできます。これは重要なリリースで、前回のベータ版でのいくつかの重要なバグ修正が含まれています。パフォーマンスも改善され、デフォルトの "
-"JGroups スタックが改善されました。このリリースを可能にするために懸命に働いてくれた多くの貢献者とコミッターに感謝します。"
+msgid "Infinispan 4.0.0.CR1 is now available for download. This is an important release, containing several critical bug fixes on the last beta.  Performance has improved too, with a better default JGroups stack. Many thanks to the multitude of contributors and committers who have worked hard to make this release a possibility."
+msgstr "Infinispan 4.0.0.0.CR1をダウンロードできます。これは重要なリリースで、前回のベータ版でのいくつかの重要なバグ修正が含まれています。パフォーマンスも改善され、デフォルトの JGroups スタックが改善されました。このリリースを可能にするために懸命に働いてくれた多くの貢献者とコミッターに感謝します。"
 
 #. type: Plain text
 #: upstream/_posts/2009-10-28-first-release-candidate-now-available.adoc:27
 #, fuzzy
-msgid ""
-"A full change log is available on https://jira.jboss.org/jira/secure/"
-"ConfigureReport.jspa?versions=12313671&sections=.1.7.2.4.10.9.8.3.12.11."
-"5&style=none&selectedProjectId=12310799&reportKey=pl.net."
-"mamut%3Areleasenotes&Next=Next[JIRA].  http://www.jboss.org/infinispan/"
-"downloads.html[Downloads] and http://www.jboss.org/community/wiki/"
-"Infinispan[documentation] are in the usual place. Please test this release "
-"with anger; feedback is critical to a high-quality final release. The http://"
-"www.jboss.org/index.html?module=bb&op=viewforum&f=309[user forums] should be "
-"used to provide such feedback."
-msgstr ""
-"完全な変更ログは link:https://jira.jboss.org/jira/secure/ConfigureReport."
-"jspa?versions=12313671&sections=.1.7.2.4.10.9.8.3.12.11.5&style="
-"none&selectedProjectId=12310799&reportKey=pl.net.mamut%3Areleasenotes&Next="
-"Next[JIRA] で入手可能です。 link:http://www.jboss.org/infinispan/downloads."
-"html[ダウンロード] と link:http://www.jboss.org/community/wiki/Infinispan[ドキュメントは] "
-"いつもの場所にあります。このリリースを怒りでテストしてください; フィードバックは高品質の最終リリースに不可欠です。 link:http://www."
-"jboss.org/index.html?module=bb&op=viewforum&f=309[ユーザーフォーラム] "
-"はそのようなフィードバックを提供するために使われるべきです。"
+msgid "A full change log is available on https://jira.jboss.org/jira/secure/ConfigureReport.jspa?versions=12313671&sections=.1.7.2.4.10.9.8.3.12.11.5&style=none&selectedProjectId=12310799&reportKey=pl.net.mamut%3Areleasenotes&Next=Next[JIRA].  http://www.jboss.org/infinispan/downloads.html[Downloads] and http://www.jboss.org/community/wiki/Infinispan[documentation] are in the usual place. Please test this release with anger; feedback is critical to a high-quality final release. The http://www.jboss.org/index.html?module=bb&op=viewforum&f=309[user forums] should be used to provide such feedback."
+msgstr "完全な変更ログは link:https://jira.jboss.org/jira/secure/ConfigureReport.jspa?versions=12313671&sections=.1.7.2.4.10.9.8.3.12.11.5&style=none&selectedProjectId=12310799&reportKey=pl.net.mamut%3Areleasenotes&Next=Next[JIRA] で入手可能です。 link:http://www.jboss.org/infinispan/downloads.html[ダウンロード] と link:http://www.jboss.org/community/wiki/Infinispan[ドキュメントは] いつもの場所にあります。このリリースを怒りでテストしてください; フィードバックは高品質の最終リリースに不可欠です。 link:http://www.jboss.org/index.html?module=bb&op=viewforum&f=309[ユーザーフォーラム] はそのようなフィードバックを提供するために使われるべきです。"
 
 #. type: Plain text
 #: upstream/_posts/2009-10-28-first-release-candidate-now-available.adoc:31

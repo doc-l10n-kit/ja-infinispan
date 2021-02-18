@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-06-19-infinispan-723final.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-06-19-infinispan-723final.adoc:12
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 7.2.3.Final\n"
@@ -34,10 +34,8 @@ msgid ""
 "tags: [ \"bugfix\",\n"
 "\"release\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1090510311518587084\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/06/infinispan-723final."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1090510311518587084\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/06/infinispan-723final.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -48,10 +46,8 @@ msgstr ""
 "tags: [ \"bugfix\",\n"
 "\"release\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1090510311518587084\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/06/infinispan-723final."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1090510311518587084\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/06/infinispan-723final.html\n"
 "---\n"
 
 #. type: Plain text
@@ -63,147 +59,92 @@ msgstr "Infinispanユーザーの皆様。"
 #. type: Plain text
 #: upstream/_posts/2015-06-19-infinispan-723final.adoc:18
 #, fuzzy
-msgid ""
-"thanks to your help, a few bugs have been found and fixed in the Infinispan "
-"7.2 branch. So if you are affected by any of the bugs below, now is the time "
-"to upgrade."
-msgstr ""
-"皆様のご協力のおかげで、Infinispan 7.2 "
-"ブランチでいくつかのバグが発見され、修正されました。もし以下のバグの影響を受けているのであれば、今がアップグレードのチャンスです。"
+msgid "thanks to your help, a few bugs have been found and fixed in the Infinispan 7.2 branch. So if you are affected by any of the bugs below, now is the time to upgrade."
+msgstr "皆様のご協力のおかげで、Infinispan 7.2 ブランチでいくつかのバグが発見され、修正されました。もし以下のバグの影響を受けているのであれば、今がアップグレードのチャンスです。"
 
 #. type: Title ==
 #: upstream/_posts/2015-06-19-infinispan-723final.adoc:20
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Bug"
 msgstr "虫"
 
 #. type: Plain text
 #: upstream/_posts/2015-06-19-infinispan-723final.adoc:24
 #, fuzzy
-msgid ""
-"[https://issues.jboss.org/browse/ISPN-4123[ISPN-4123]] - Remote Query tests "
-"random failures"
-msgstr ""
-"link:https://issues.jboss.org/browse/ISPN-4123[ISPN-4123] ] - "
-"リモートクエリのランダムな失敗のテスト"
+msgid "[https://issues.jboss.org/browse/ISPN-4123[ISPN-4123]] - Remote Query tests random failures"
+msgstr "link:https://issues.jboss.org/browse/ISPN-4123[ISPN-4123] ] - リモートクエリのランダムな失敗のテスト"
 
 #. type: Plain text
 #: upstream/_posts/2015-06-19-infinispan-723final.adoc:26
 #, fuzzy
-msgid ""
-"[https://issues.jboss.org/browse/ISPN-5444[ISPN-5444]] - Filter/converters "
-"in server can't unmarshall custom cached classes"
-msgstr ""
-"link:https://issues.jboss.org/browse/ISPN-5444[ISPN-5444] ] - サーバ内のフィルタ/"
-"コンバータがカスタムキャッシュクラスのマーシャリングを解除できません。"
+msgid "[https://issues.jboss.org/browse/ISPN-5444[ISPN-5444]] - Filter/converters in server can't unmarshall custom cached classes"
+msgstr "link:https://issues.jboss.org/browse/ISPN-5444[ISPN-5444] ] - サーバ内のフィルタ/コンバータがカスタムキャッシュクラスのマーシャリングを解除できません。"
 
 #. type: Plain text
 #: upstream/_posts/2015-06-19-infinispan-723final.adoc:28
 #, fuzzy
-msgid ""
-"[https://issues.jboss.org/browse/ISPN-5522[ISPN-5522]] - LIRS "
-"BoundedConcurrentHashMapv8 eviction for tree bin missing check"
-msgstr ""
-"link:https://issues.jboss.org/browse/ISPN-5522[ISPN-5522] ] - LIRS "
-"BoundedConcurrentHashMapv8によるツリービンのイビクションのチェックが抜けています。"
+msgid "[https://issues.jboss.org/browse/ISPN-5522[ISPN-5522]] - LIRS BoundedConcurrentHashMapv8 eviction for tree bin missing check"
+msgstr "link:https://issues.jboss.org/browse/ISPN-5522[ISPN-5522] ] - LIRS BoundedConcurrentHashMapv8によるツリービンのイビクションのチェックが抜けています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-06-19-infinispan-723final.adoc:30
 #, fuzzy
-msgid ""
-"[https://issues.jboss.org/browse/ISPN-5524[ISPN-5524]] - Race condition in "
-"SemaphoreCompletionService.executeFront()"
-msgstr ""
-"link:https://issues.jboss.org/browse/ISPN-5524[[ISPN-5524] ] - "
-"SemaphoreCompletionService.executeFront()での競合状況について"
+msgid "[https://issues.jboss.org/browse/ISPN-5524[ISPN-5524]] - Race condition in SemaphoreCompletionService.executeFront()"
+msgstr "link:https://issues.jboss.org/browse/ISPN-5524[[ISPN-5524] ] - SemaphoreCompletionService.executeFront()での競合状況について"
 
 #. type: Plain text
 #: upstream/_posts/2015-06-19-infinispan-723final.adoc:32
 #, fuzzy
-msgid ""
-"[https://issues.jboss.org/browse/ISPN-5527[ISPN-5527]] - Java system "
-"properties no longer supported in leveldb expiration path"
-msgstr ""
-"link:https://issues.jboss.org/browse/ISPN-5527[ISPN-5527] ] - Java "
-"システムプロパティが leveldb の有効期限パスでサポートされなくなりました。"
+msgid "[https://issues.jboss.org/browse/ISPN-5527[ISPN-5527]] - Java system properties no longer supported in leveldb expiration path"
+msgstr "link:https://issues.jboss.org/browse/ISPN-5527[ISPN-5527] ] - Java システムプロパティが leveldb の有効期限パスでサポートされなくなりました。"
 
 #. type: Plain text
 #: upstream/_posts/2015-06-19-infinispan-723final.adoc:35
 #, fuzzy
-msgid ""
-"[https://issues.jboss.org/browse/ISPN-5531[ISPN-5531]] - java.lang."
-"UnsupportedOperationException during remove (using RemoteCacheManager)"
-msgstr ""
-"link:https://issues.jboss.org/browse/ISPN-5531[ISPN-5531] ] - java.lang."
-"UnsupportedOperationException for remove (using RemoteCacheManager) - "
-"削除時に発生しました。"
+msgid "[https://issues.jboss.org/browse/ISPN-5531[ISPN-5531]] - java.lang.UnsupportedOperationException during remove (using RemoteCacheManager)"
+msgstr "link:https://issues.jboss.org/browse/ISPN-5531[ISPN-5531] ] - java.lang.UnsupportedOperationException for remove (using RemoteCacheManager) - 削除時に発生しました。"
 
 #. type: Plain text
 #: upstream/_posts/2015-06-19-infinispan-723final.adoc:37
 #, fuzzy
-msgid ""
-"[https://issues.jboss.org/browse/ISPN-5543[ISPN-5543]] - Bad tracef "
-"arguments are causing IllegalFormatConversionException"
-msgstr ""
-"link:https://issues.jboss.org/browse/ISPN-5543[ISPN-5543] ] - Bad tracef "
-"引数が原因で IllegalFormatConversionException が発生しています。"
+msgid "[https://issues.jboss.org/browse/ISPN-5543[ISPN-5543]] - Bad tracef arguments are causing IllegalFormatConversionException"
+msgstr "link:https://issues.jboss.org/browse/ISPN-5543[ISPN-5543] ] - Bad tracef 引数が原因で IllegalFormatConversionException が発生しています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-06-19-infinispan-723final.adoc:39
 #, fuzzy
-msgid ""
-"[https://issues.jboss.org/browse/ISPN-5560[ISPN-5560]] - "
-"NotSerializableException for invalidation-cache"
-msgstr ""
-"link:https://issues.jboss.org/browse/ISPN-5560[ISPN-5560] ] - invalidation-"
-"cache での NotSerializableException"
+msgid "[https://issues.jboss.org/browse/ISPN-5560[ISPN-5560]] - NotSerializableException for invalidation-cache"
+msgstr "link:https://issues.jboss.org/browse/ISPN-5560[ISPN-5560] ] - invalidation-cache での NotSerializableException"
 
 #. type: Plain text
 #: upstream/_posts/2015-06-19-infinispan-723final.adoc:41
 #, fuzzy
-msgid ""
-"[https://issues.jboss.org/browse/ISPN-5565[ISPN-5565]] - Memory leak in Hot "
-"Rod client tests"
-msgstr ""
-"link:https://issues.jboss.org/browse/ISPN-5565[ISPN-5565] ] - Hot "
-"Rodクライアントテストでのメモリリーク"
+msgid "[https://issues.jboss.org/browse/ISPN-5565[ISPN-5565]] - Memory leak in Hot Rod client tests"
+msgstr "link:https://issues.jboss.org/browse/ISPN-5565[ISPN-5565] ] - Hot Rodクライアントテストでのメモリリーク"
 
 #. type: Plain text
 #: upstream/_posts/2015-06-19-infinispan-723final.adoc:43
 #, fuzzy
-msgid ""
-"[https://issues.jboss.org/browse/ISPN-5566[ISPN-5566]] - Listener "
-"Observation is not obeyed for non CacheEntryEvents"
-msgstr ""
-"link:https://issues.jboss.org/browse/ISPN-5566[ISPN-5566] ] - "
-"CacheEntryEvents 以外のイベントでリスナー・オブザベーションが遵守されません。"
+msgid "[https://issues.jboss.org/browse/ISPN-5566[ISPN-5566]] - Listener Observation is not obeyed for non CacheEntryEvents"
+msgstr "link:https://issues.jboss.org/browse/ISPN-5566[ISPN-5566] ] - CacheEntryEvents 以外のイベントでリスナー・オブザベーションが遵守されません。"
 
 #. type: Title ==
 #: upstream/_posts/2015-06-19-infinispan-723final.adoc:44
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Enhancement"
 msgstr "エンハンスメント"
 
 #. type: Plain text
 #: upstream/_posts/2015-06-19-infinispan-723final.adoc:48
 #, fuzzy
-msgid ""
-"[https://issues.jboss.org/browse/ISPN-5519[ISPN-5519]] - Cannot choose to "
-"run index-less query on an indexed cache in compat mode "
-msgstr ""
-"link:https://issues.jboss.org/browse/ISPN-5519[ISPN-5519] ] - "
-"コンパットモードでインデックスキャッシュ上でインデックスレスクエリの実行を選択できません。"
+msgid "[https://issues.jboss.org/browse/ISPN-5519[ISPN-5519]] - Cannot choose to run index-less query on an indexed cache in compat mode "
+msgstr "link:https://issues.jboss.org/browse/ISPN-5519[ISPN-5519] ] - コンパットモードでインデックスキャッシュ上でインデックスレスクエリの実行を選択できません。"
 
 #. type: Plain text
 #: upstream/_posts/2015-06-19-infinispan-723final.adoc:52
 #, fuzzy
-msgid ""
-"Again, http://infinispan.org/download/[downloads] and http://infinispan.org/"
-"release-notes/[release notes] are at the usual pages, so go and check them "
-"out !"
-msgstr ""
-"link:http://infinispan.org/download/[ダウンロード] と link:http://infinispan.org/"
-"release-notes/[リリースノートは] いつものページにあります。"
+msgid "Again, http://infinispan.org/download/[downloads] and http://infinispan.org/release-notes/[release notes] are at the usual pages, so go and check them out !"
+msgstr "link:http://infinispan.org/download/[ダウンロード] と link:http://infinispan.org/release-notes/[リリースノートは] いつものページにあります。"
 
 #. type: Plain text
 #: upstream/_posts/2015-06-19-infinispan-723final.adoc:54

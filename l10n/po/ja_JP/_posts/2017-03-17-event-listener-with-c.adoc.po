@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-03-17-event-listener-with-c.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-17-event-listener-with-c.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Event Listener with C++\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2017-03-17T10:59:00.001-07:00'\n"
 "author: rigazilla\n"
 "tags: [ \"c++\", \"example\", \"quick start\", \"remote events\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3678330413321250526\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/03/event-listener-with-c."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3678330413321250526\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/03/event-listener-with-c.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,10 +42,8 @@ msgstr ""
 "date: '2017-03-17T10:59:00.001-07:00'\n"
 "author: rigazilla\n"
 "tags: [ \"c++\", \"example\", \"quick start\", \"remote events\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3678330413321250526\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/03/event-listener-with-c."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3678330413321250526\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/03/event-listener-with-c.html\n"
 "---\n"
 
 #. type: Plain text
@@ -59,158 +55,80 @@ msgstr "インフィニスパンのコミュニティへ"
 #. type: Plain text
 #: upstream/_posts/2017-03-17-event-listener-with-c.adoc:17
 #, fuzzy
-msgid ""
-"as announced in a previous http://blog.infinispan.org/2016/11/hotrod-clients-"
-"cc-810alpha2-released.html[post], starting from version 8.1.0 also the C++/"
-"C# clients can receive and process Infinispan events."
-msgstr ""
-"前の link:http://blog.infinispan.org/2016/11/hotrod-clients-cc-810alpha2-"
-"released.html[記事] で発表したように、バージョン8.1.0からもC++/"
-"C#クライアントはInfinispanイベントを受信して処理することができます。"
+msgid "as announced in a previous http://blog.infinispan.org/2016/11/hotrod-clients-cc-810alpha2-released.html[post], starting from version 8.1.0 also the C++/C# clients can receive and process Infinispan events."
+msgstr "前の link:http://blog.infinispan.org/2016/11/hotrod-clients-cc-810alpha2-released.html[記事] で発表したように、バージョン8.1.0からもC++/C#クライアントはInfinispanイベントを受信して処理することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-17-event-listener-with-c.adoc:22
 #, fuzzy
-msgid ""
-"Here's an example of usage of C++ event listeners that, with a good dose of "
-"imagination, pretends to be a customer behavior tracking system for our "
-"store chain (don't take this too seriously, we're just trying to add some "
-"fiction)."
-msgstr ""
-"ここに C++ "
-"イベントリスナーの使用例があります。想像力を働かせて、店舗チェーンの顧客行動追跡システムのふりをしています（これをあまり真剣に考えないでください。"
+msgid "Here's an example of usage of C++ event listeners that, with a good dose of imagination, pretends to be a customer behavior tracking system for our store chain (don't take this too seriously, we're just trying to add some fiction)."
+msgstr "ここに C++ イベントリスナーの使用例があります。想像力を働かせて、店舗チェーンの顧客行動追跡システムのふりをしています（これをあまり真剣に考えないでください。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-17-event-listener-with-c.adoc:28
 #, fuzzy
-msgid ""
-"As a first requirement our tracking system will record every single purchase "
-"made in our stores. How many stores we have? 1, 100, millions? It doesn't "
-"matter: we're backed with an Infinispan data grid.  This is version 0.x and "
-"hence the checker must use the keyboard to enter all the needed information."
-msgstr ""
-"最初の要件として、当社のトラッキングシステムは、当社の店舗で行われたすべての単一の購入を記録します。店舗数は？1店舗、100店舗、数百万店舗？それは問題ではありません：私たちはInfinispanのデータグリッドでバックアップされています。これはバージョン0."
-"xのため、チェッカーはキーボードを使って必要な情報を入力しなければなりません。"
+msgid "As a first requirement our tracking system will record every single purchase made in our stores. How many stores we have? 1, 100, millions? It doesn't matter: we're backed with an Infinispan data grid.  This is version 0.x and hence the checker must use the keyboard to enter all the needed information."
+msgstr "最初の要件として、当社のトラッキングシステムは、当社の店舗で行われたすべての単一の購入を記録します。店舗数は？1店舗、100店舗、数百万店舗？それは問題ではありません：私たちはInfinispanのデータグリッドでバックアップされています。これはバージョン0.xのため、チェッカーはキーボードを使って必要な情報を入力しなければなりません。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-17-event-listener-with-c.adoc:45
 #, fuzzy
-msgid ""
-"As you can see our entry key is a concatenation of the product name and the "
-"timestamp and the entry value is an unstructured string, maybe too simply "
-"but it could work for now.  Seems we are at a good point: we have the data "
-"and we can do analytics on it, so far so good but now our boss makes a new "
-"request: he wants a runtime monitor on how's the sales performance. That's a "
-"perfect request to be fulfilled with event listener: the monitor application "
-"will be an Hotrod C++ client that registers a client listener on the server "
-"and receives and show on the boss's laptop the data flow.  A client "
-"listener, once registered on the server, can receive events related to: "
-"creation, modification, deletion, expiration of cache entries; in our "
-"example only the creation and expiration events are processed (expired "
-"events can be useful to do some moving average statistics?). Following a "
-"snip of code that creates and registers a listener that writes the events "
-"key on the stdout."
-msgstr ""
-"ご覧のように、エントリーキーは製品名とタイムスタンプを連結したもので、エントリー値は構造化されていない文字列です。データがあり、それを分析することができ、ここまでは順調でしたが、上司が新たな要求を出しました。これはイベントリスナーで満たすための完璧な要求です：モニターアプリケーションはHotrod "
-"C++クライアントとなり、サーバー上でクライアントリスナーを登録し、データフローを受信して上司のラップトップに表示します。クライアントリスナーは、一度サーバーに登録されると、関連するイベントを受信することができます：作成、変更、削除、キャッシュエントリの有効期限切れ、私たちの例では、作成と有効期限切れイベントのみが処理されます（有効期限切れイベントは、いくつかの移動平均統計を行うために有用である可能性がありますか？次のコードは、標準出力にイベントキーを書き込むリスナーを作成して登録するコードのスニップです。"
+msgid "As you can see our entry key is a concatenation of the product name and the timestamp and the entry value is an unstructured string, maybe too simply but it could work for now.  Seems we are at a good point: we have the data and we can do analytics on it, so far so good but now our boss makes a new request: he wants a runtime monitor on how's the sales performance. That's a perfect request to be fulfilled with event listener: the monitor application will be an Hotrod C++ client that registers a client listener on the server and receives and show on the boss's laptop the data flow.  A client listener, once registered on the server, can receive events related to: creation, modification, deletion, expiration of cache entries; in our example only the creation and expiration events are processed (expired events can be useful to do some moving average statistics?). Following a snip of code that creates and registers a listener that writes the events key on the stdout."
+msgstr "ご覧のように、エントリーキーは製品名とタイムスタンプを連結したもので、エントリー値は構造化されていない文字列です。データがあり、それを分析することができ、ここまでは順調でしたが、上司が新たな要求を出しました。これはイベントリスナーで満たすための完璧な要求です：モニターアプリケーションはHotrod C++クライアントとなり、サーバー上でクライアントリスナーを登録し、データフローを受信して上司のラップトップに表示します。クライアントリスナーは、一度サーバーに登録されると、関連するイベントを受信することができます：作成、変更、削除、キャッシュエントリの有効期限切れ、私たちの例では、作成と有効期限切れイベントのみが処理されます（有効期限切れイベントは、いくつかの移動平均統計を行うために有用である可能性がありますか？次のコードは、標準出力にイベントキーを書き込むリスナーを作成して登録するコードのスニップです。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-17-event-listener-with-c.adoc:53
 #, fuzzy
-msgid ""
-"You can git this quickstart here [https://www.blogger.com/blogger.g?blogID="
-"5717179571414330874#fn1[1]].  On startup a multiple choice menu is shown "
-"with all the available operations. Running several instances you can act as "
-"the checker (data entry) or the boss (installing the listener and seeing the "
-"events flow)."
-msgstr ""
-"クイックスタートはこちらからどうぞ link:https://www.blogger.com/blogger.g?blogID="
-"5717179571414330874#fn1[[1] "
-"]。起動時には、複数の選択肢を持つメニューが表示され、すべての操作が可能です。いくつかのインスタンスを実行すると、チェッカー (データ入力) やボス "
-"(リスナーをインストールしてイベントの流れを見る) の役割を果たすことができます。"
+msgid "You can git this quickstart here [https://www.blogger.com/blogger.g?blogID=5717179571414330874#fn1[1]].  On startup a multiple choice menu is shown with all the available operations. Running several instances you can act as the checker (data entry) or the boss (installing the listener and seeing the events flow)."
+msgstr "クイックスタートはこちらからどうぞ link:https://www.blogger.com/blogger.g?blogID=5717179571414330874#fn1[[1] ]。起動時には、複数の選択肢を持つメニューが表示され、すべての操作が可能です。いくつかのインスタンスを実行すると、チェッカー (データ入力) やボス (リスナーをインストールしてイベントの流れを見る) の役割を果たすことができます。"
 
 #. type: Title ==
 #: upstream/_posts/2017-03-17-event-listener-with-c.adoc:57
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "*Filters*"
 msgstr "*フィルター*"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-17-event-listener-with-c.adoc:65
 #, fuzzy
-msgid ""
-"Again so far so good, but then the marketing department ask support to do "
-"targeted advertising like: soliciting customers that bought product Y to buy "
-"product X.  Let's suppose that X=\"harmonica\" and Y=\"hiking boots\" (it's "
-"a well known fact of life that in the high mountains you feel the desire to "
-"play an harmonica)."
-msgstr ""
-"X=\"ハーモニカ\"とY="
-"\"ハイキングブーツ\"（高山ではハーモニカを演奏したいという欲求を感じることはよく知られている事実です）と仮定してみましょう。"
+msgid "Again so far so good, but then the marketing department ask support to do targeted advertising like: soliciting customers that bought product Y to buy product X.  Let's suppose that X=\"harmonica\" and Y=\"hiking boots\" (it's a well known fact of life that in the high mountains you feel the desire to play an harmonica)."
+msgstr "X=\"ハーモニカ\"とY=\"ハイキングブーツ\"（高山ではハーモニカを演奏したいという欲求を感じることはよく知られている事実です）と仮定してみましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-17-event-listener-with-c.adoc:72
 #, fuzzy
-msgid ""
-"To do that we register on the server another listener, but this time we're "
-"not interested in the whole flow of purchase data: to run our marketing "
-"campaign, we only interested in cache entries having the key starting with "
-"\"hiking\". The Infinispan server can filter out events for us, if we pass "
-"in the AddClientListener operation the name of the wanted filter along with "
-"any configuration arguments."
-msgstr ""
-"そのために、サーバーに別のリスナーを登録しますが、今回は購入データの流れ全体には興味がありません。マーケティングキャンペーンを実行するために、\"ハイキング\"で始まるキーを持つキャッシュエントリだけに興味があります。AddClientListener操作で、設定引数と一緒にフィルタの名前を渡すと、Infinispanサーバがイベントをフィルタリングしてくれます。"
+msgid "To do that we register on the server another listener, but this time we're not interested in the whole flow of purchase data: to run our marketing campaign, we only interested in cache entries having the key starting with \"hiking\". The Infinispan server can filter out events for us, if we pass in the AddClientListener operation the name of the wanted filter along with any configuration arguments."
+msgstr "そのために、サーバーに別のリスナーを登録しますが、今回は購入データの流れ全体には興味がありません。マーケティングキャンペーンを実行するために、\"ハイキング\"で始まるキーを持つキャッシュエントリだけに興味があります。AddClientListener操作で、設定引数と一緒にフィルタの名前を渡すと、Infinispanサーバがイベントをフィルタリングしてくれます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-17-event-listener-with-c.adoc:77
 #, fuzzy
-msgid ""
-"Filter are java classes that must be deployed into the Infinispan server "
-"(more here [https://www.blogger.com/blogger.g?blogID="
-"5717179571414330874#fn2[2]])"
-msgstr ""
-"フィルタは Infinispan サーバにデプロイする必要がある java クラスです (詳細はこちら link:https://www.blogger."
-"com/blogger.g?blogID=5717179571414330874#fn2[[2] ] を参照してください)。"
+msgid "Filter are java classes that must be deployed into the Infinispan server (more here [https://www.blogger.com/blogger.g?blogID=5717179571414330874#fn2[2]])"
+msgstr "フィルタは Infinispan サーバにデプロイする必要がある java クラスです (詳細はこちら link:https://www.blogger.com/blogger.g?blogID=5717179571414330874#fn2[[2] ] を参照してください)。"
 
 #. type: Title ==
 #: upstream/_posts/2017-03-17-event-listener-with-c.adoc:78
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "*and converters*"
 msgstr "*およびコンバーター*"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-17-event-listener-with-c.adoc:85
 #, fuzzy
-msgid ""
-"Predefined events contain very few information: basically the event type and "
-"the entry key, this to prevent to flood the network spreading around very "
-"long entry values. Users can override this limitation using a converter, "
-"that is a java class deployed into the server, that can create custom events "
-"containing every data needed by the application."
-msgstr ""
-"事前に定義されたイベントには、基本的にはイベントタイプとエントリキーという非常に少ない情報が含まれており、これは非常に長いエントリ値がネットワークに拡散することを防ぐためです。ユーザは、アプリケーションが必要とするすべてのデータを含むカスタムイベントを作成することができるサーバにデプロイされたjavaクラスであるコンバータを使用して、この制限をオーバーライドすることができます。"
+msgid "Predefined events contain very few information: basically the event type and the entry key, this to prevent to flood the network spreading around very long entry values. Users can override this limitation using a converter, that is a java class deployed into the server, that can create custom events containing every data needed by the application."
+msgstr "事前に定義されたイベントには、基本的にはイベントタイプとエントリキーという非常に少ない情報が含まれており、これは非常に長いエントリ値がネットワークに拡散することを防ぐためです。ユーザは、アプリケーションが必要とするすべてのデータを含むカスタムイベントを作成することができるサーバにデプロイされたjavaクラスであるコンバータを使用して、この制限をオーバーライドすることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-17-event-listener-with-c.adoc:89
 #, fuzzy
-msgid ""
-"As in the previous case, we pass into the add operation the name of the "
-"converter and the configuration arguments, any."
+msgid "As in the previous case, we pass into the add operation the name of the converter and the configuration arguments, any."
 msgstr "前のケースと同様に、add操作にコンバータの名前と設定引数を渡します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-17-event-listener-with-c.adoc:95
 #, fuzzy
-msgid ""
-"That's all guys, let us know your feedback: do you like it? Could be better? "
-"Tell us how it can be improved creating an issue [https://www.blogger.com/"
-"blogger.g?blogID=5717179571414330874#fn3[3]], or fork and improve it "
-"yourself [https://www.blogger.com/blogger.g?blogID="
-"5717179571414330874#fn4[4]]*!*"
-msgstr ""
-"以上です。もっと良いものはありませんか？問題を作成して改善する方法を教えてください link:https://www.blogger.com/"
-"blogger.g?blogID=5717179571414330874#fn3[[3] ] あるいは、フォークして自分で改善してください link:"
-"https://www.blogger.com/blogger.g?blogID=5717179571414330874#fn4[[4] *]!*"
+msgid "That's all guys, let us know your feedback: do you like it? Could be better? Tell us how it can be improved creating an issue [https://www.blogger.com/blogger.g?blogID=5717179571414330874#fn3[3]], or fork and improve it yourself [https://www.blogger.com/blogger.g?blogID=5717179571414330874#fn4[4]]*!*"
+msgstr "以上です。もっと良いものはありませんか？問題を作成して改善する方法を教えてください link:https://www.blogger.com/blogger.g?blogID=5717179571414330874#fn3[[3] ] あるいは、フォークして自分で改善してください link:https://www.blogger.com/blogger.g?blogID=5717179571414330874#fn4[[4] *]!*"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-17-event-listener-with-c.adoc:98
@@ -221,40 +139,26 @@ msgstr "読んでいただきありがとうございます。インフィニス
 #. type: Plain text
 #: upstream/_posts/2017-03-17-event-listener-with-c.adoc:100
 #, fuzzy
-msgid ""
-"https://github.com/rigazilla/infinispan-simple-tutorials/tree/"
-"new_event_tutorial/c%2B%2B/events"
-msgstr ""
-"https://github.com/rigazilla/infinispan-simple-tutorials/tree/"
-"new_event_tutorial/c%2B%2B/events"
+msgid "https://github.com/rigazilla/infinispan-simple-tutorials/tree/new_event_tutorial/c%2B%2B/events"
+msgstr "https://github.com/rigazilla/infinispan-simple-tutorials/tree/new_event_tutorial/c%2B%2B/events"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-17-event-listener-with-c.adoc:102
 #, fuzzy
-msgid ""
-"http://blog.infinispan.org/2014/08/hot-rod-remote-events-1-getting-started."
-"html"
-msgstr ""
-"http://blog.infinispan.org/2014/08/hot-rod-remote-events-1-getting-started."
-"html"
+msgid "http://blog.infinispan.org/2014/08/hot-rod-remote-events-1-getting-started.html"
+msgstr "http://blog.infinispan.org/2014/08/hot-rod-remote-events-1-getting-started.html"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-17-event-listener-with-c.adoc:104
 #, fuzzy
-msgid ""
-"http://blog.infinispan.org/2014/08/hot-rod-remote-events-2-filtering-events."
-"html"
-msgstr ""
-"http://blog.infinispan.org/2014/08/hot-rod-remote-events-2-filtering-events."
-"html"
+msgid "http://blog.infinispan.org/2014/08/hot-rod-remote-events-2-filtering-events.html"
+msgstr "http://blog.infinispan.org/2014/08/hot-rod-remote-events-2-filtering-events.html"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-17-event-listener-with-c.adoc:106
 #, fuzzy
-msgid ""
-"http://blog.infinispan.org/2014/09/hot-rod-remote-events-3-customizing.html"
-msgstr ""
-"http://blog.infinispan.org/2014/09/hot-rod-remote-events-3-customizing.html"
+msgid "http://blog.infinispan.org/2014/09/hot-rod-remote-events-3-customizing.html"
+msgstr "http://blog.infinispan.org/2014/09/hot-rod-remote-events-3-customizing.html"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-17-event-listener-with-c.adoc:108

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-07-24-infinispan-800beta2.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-07-24-infinispan-800beta2.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 8.0.0.Beta2\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2015-07-24T14:47:00.000-07:00'\n"
 "author: infinispan\n"
 "tags: [ \" grouping and aggregation\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8331970720880631199\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/07/infinispan-800beta2."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8331970720880631199\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/07/infinispan-800beta2.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,10 +42,8 @@ msgstr ""
 "date: '2015-07-24T14:47:00.000-07:00'\n"
 "author: infinispan\n"
 "tags: [ \" grouping and aggregation\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8331970720880631199\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/07/infinispan-800beta2."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8331970720880631199\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/07/infinispan-800beta2.html\n"
 "---\n"
 
 #. type: Plain text
@@ -71,25 +67,14 @@ msgstr "このリリースは多くの改善と修正をもたらします。"
 #. type: Plain text
 #: upstream/_posts/2015-07-24-infinispan-800beta2.adoc:25
 #, fuzzy
-msgid ""
-"Distributed Stream support (https://issues.jboss.org/browse/ISPN-5293[ISPN-"
-"5293]) - Support for distributed java.util.stream.Stream operations allowing "
-"for efficient remote aggregations and others (a detailed blog post will "
-"follow)."
-msgstr ""
-"分散ストリームのサポート link:https://issues.jboss.org/browse/ISPN-5293[(ISPN-5293] ) - "
-"効率的なリモートアグリゲーションなどを可能にする分散型の java.util.stream.Stream 操作をサポートしています "
-"(詳細なブログ記事は後ほど)。"
+msgid "Distributed Stream support (https://issues.jboss.org/browse/ISPN-5293[ISPN-5293]) - Support for distributed java.util.stream.Stream operations allowing for efficient remote aggregations and others (a detailed blog post will follow)."
+msgstr "分散ストリームのサポート link:https://issues.jboss.org/browse/ISPN-5293[(ISPN-5293] ) - 効率的なリモートアグリゲーションなどを可能にする分散型の java.util.stream.Stream 操作をサポートしています (詳細なブログ記事は後ほど)。"
 
 #. type: Plain text
 #: upstream/_posts/2015-07-24-infinispan-800beta2.adoc:28
 #, fuzzy
-msgid ""
-"Grouping and aggregations with DSL based queries (https://issues.jboss.org/"
-"browse/ISPN-5416[ISPN-5416])."
-msgstr ""
-"DSLベースのクエリを使用したグルーピングとアグリゲーション link:https://issues.jboss.org/browse/ISPN-"
-"5416[（ISPN-5416] ）。"
+msgid "Grouping and aggregations with DSL based queries (https://issues.jboss.org/browse/ISPN-5416[ISPN-5416])."
+msgstr "DSLベースのクエリを使用したグルーピングとアグリゲーション link:https://issues.jboss.org/browse/ISPN-5416[（ISPN-5416] ）。"
 
 #. type: Plain text
 #: upstream/_posts/2015-07-24-infinispan-800beta2.adoc:30
@@ -106,59 +91,32 @@ msgstr "サーバーは現在、WildFly 9 をベースにしています。"
 #. type: Plain text
 #: upstream/_posts/2015-07-24-infinispan-800beta2.adoc:35
 #, fuzzy
-msgid ""
-"Improvements in the Remote Iterator that will benefit the upcoming Apache "
-"Spark connector."
+msgid "Improvements in the Remote Iterator that will benefit the upcoming Apache Spark connector."
 msgstr "Remote Iterator の改良により、今後の Apache Spark コネクタに恩恵をもたらします。"
 
 #. type: Plain text
 #: upstream/_posts/2015-07-24-infinispan-800beta2.adoc:41
 #, fuzzy
-msgid ""
-"Development on our web based admin console continues as planned. We have "
-"added cache configuration viewers, updated live cache statistics as well as "
-"an ability to create caches from the admin console. Stay tuned for latest "
-"developments on our admin console project at https://github.com/infinispan/"
-"infinispan-management-console[https://github.com/infinispan/infinispan-"
-"management-console]"
-msgstr ""
-"ウェブベースの管理コンソールの開発は計画通りに進んでいます。キャッシュ設定ビューアを追加し、ライブキャッシュ統計を更新し、管理コンソールからキャッシュを作成する機能を追加しました。管理コンソールプロジェクトの最新の開発については "
-"link:https://github.com/infinispan/infinispan-management-console[https://"
-"github.com/infinispan/infinispan-management-console] をご覧ください。"
+msgid "Development on our web based admin console continues as planned. We have added cache configuration viewers, updated live cache statistics as well as an ability to create caches from the admin console. Stay tuned for latest developments on our admin console project at https://github.com/infinispan/infinispan-management-console[https://github.com/infinispan/infinispan-management-console]"
+msgstr "ウェブベースの管理コンソールの開発は計画通りに進んでいます。キャッシュ設定ビューアを追加し、ライブキャッシュ統計を更新し、管理コンソールからキャッシュを作成する機能を追加しました。管理コンソールプロジェクトの最新の開発については link:https://github.com/infinispan/infinispan-management-console[https://github.com/infinispan/infinispan-management-console] をご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-07-24-infinispan-800beta2.adoc:47
 #, fuzzy
-msgid ""
-"For a complete list of features and bug fixes included in this release "
-"please refer to thehttps://issues.jboss.org/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12327283[ release notes]. Visit ourhttp://"
-"infinispan.org/download/[ downloads] section to find the latest release."
-msgstr ""
-"このリリースに含まれる機能とバグフィックスの完全なリストについては、https://issues.jboss.org/secure/"
-"ReleaseNote.jspa?projectId=12310799&version="
-"12327283[リリースノート]を参照してください。最新のリリースについては、http://infinispan.org/download/[ "
-"ダウンロード]セクションをご覧ください。"
+msgid "For a complete list of features and bug fixes included in this release please refer to thehttps://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12327283[ release notes]. Visit ourhttp://infinispan.org/download/[ downloads] section to find the latest release."
+msgstr "このリリースに含まれる機能とバグフィックスの完全なリストについては、https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12327283[リリースノート]を参照してください。最新のリリースについては、http://infinispan.org/download/[ ダウンロード]セクションをご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-07-24-infinispan-800beta2.adoc:50
 #, fuzzy
-msgid ""
-"We plan to release 8.0.0.Final at the end of August, so please stay tuned "
-"for more exciting developments happening during this cycle."
+msgid "We plan to release 8.0.0.Final at the end of August, so please stay tuned for more exciting developments happening during this cycle."
 msgstr "8月末には8.0.0.0.Finalをリリースする予定です。"
 
 #. type: Plain text
 #: upstream/_posts/2015-07-24-infinispan-800beta2.adoc:58
 #, fuzzy
-msgid ""
-"If you have any questions please check ourhttp://infinispan.org/community/[ "
-"forums], ourhttps://lists.jboss.org/mailman/listinfo/infinispan-dev[ mailing "
-"lists] or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
-msgstr ""
-"質問がある場合は、http://infinispan.org/community/[ フォーラム]、https://lists.jboss.org/"
-"mailman/listinfo/infinispan-dev[ メーリングリスト]をチェックするか、 link:irc://irc.freenode."
-"org/infinispan[IRC] で直接質問してください。"
+msgid "If you have any questions please check ourhttp://infinispan.org/community/[ forums], ourhttps://lists.jboss.org/mailman/listinfo/infinispan-dev[ mailing lists] or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+msgstr "質問がある場合は、http://infinispan.org/community/[ フォーラム]、https://lists.jboss.org/mailman/listinfo/infinispan-dev[ メーリングリスト]をチェックするか、 link:irc://irc.freenode.org/infinispan[IRC] で直接質問してください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-07-24-infinispan-800beta2.adoc:61

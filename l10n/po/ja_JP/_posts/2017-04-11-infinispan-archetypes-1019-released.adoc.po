@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-04-11-infinispan-archetypes-1019-released.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-11-infinispan-archetypes-1019-released.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan Archetype 1.0.19 Released\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2017-04-11T01:58:00.000-07:00'\n"
 "author: remerson\n"
 "tags: [ \"maven\", \"archetypes\", \"release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3540404365299519302\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/04/infinispan-archetypes-"
-"1019-released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3540404365299519302\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/04/infinispan-archetypes-1019-released.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,29 +42,19 @@ msgstr ""
 "date: '2017-04-11T01:58:00.000-07:00'\n"
 "author: remerson\n"
 "tags: [ \"maven\", \"archetypes\", \"release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3540404365299519302\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/04/infinispan-archetypes-"
-"1019-released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3540404365299519302\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/04/infinispan-archetypes-1019-released.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-11-infinispan-archetypes-1019-released.adoc:17
 #, fuzzy
-msgid ""
-"I'm pleased to announce that we have just released version 1.0.19 of the "
-"infinispan-archetype. This release focuses on making the archetype "
-"compatible with http://blog.infinispan.org/2017/03/infinispan-9."
-"html[Infinispan 9.0] as well as adding a store archetype for creating custom "
-"cache writer/loader implementations."
-msgstr ""
-"infinispan-archetypeのバージョン1.0.19をリリースしました。このリリースでは、アーキタイプを link:http://blog."
-"infinispan.org/2017/03/infinispan-9.html[Infinispan 9.0] "
-"と互換性を持たせ、カスタムキャッシュライタ/ローダ実装を作成するためのストアアーキタイプを追加することに焦点を当てています。"
+msgid "I'm pleased to announce that we have just released version 1.0.19 of the infinispan-archetype. This release focuses on making the archetype compatible with http://blog.infinispan.org/2017/03/infinispan-9.html[Infinispan 9.0] as well as adding a store archetype for creating custom cache writer/loader implementations."
+msgstr "infinispan-archetypeのバージョン1.0.19をリリースしました。このリリースでは、アーキタイプを link:http://blog.infinispan.org/2017/03/infinispan-9.html[Infinispan 9.0] と互換性を持たせ、カスタムキャッシュライタ/ローダ実装を作成するためのストアアーキタイプを追加することに焦点を当てています。"
 
 #. type: Title ==
 #: upstream/_posts/2017-04-11-infinispan-archetypes-1019-released.adoc:19
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Archetype Usage"
 msgstr "アーキタイプの使い方"
 
@@ -78,17 +66,12 @@ msgstr "アーキタイプを利用するには、以下のコマンドを使用
 
 #. type: Title ==
 #: upstream/_posts/2017-04-11-infinispan-archetypes-1019-released.adoc:29
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Contributing"
 msgstr "貢献"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-11-infinispan-archetypes-1019-released.adoc:36
 #, fuzzy
-msgid ""
-"If you encounter any issues with the archetypes, or would like to request "
-"additional archetypes, please raise an issue on http://github.com/infinispan/"
-"infinispan-archetypes[GitHub]."
-msgstr ""
-"もしアーキタイプに問題があったり、追加のアーキタイプをリクエストしたい場合は、 link:http://github.com/infinispan/"
-"infinispan-archetypes[GitHub] で問題を提起してください。"
+msgid "If you encounter any issues with the archetypes, or would like to request additional archetypes, please raise an issue on http://github.com/infinispan/infinispan-archetypes[GitHub]."
+msgstr "もしアーキタイプに問題があったり、追加のアーキタイプをリクエストしたい場合は、 link:http://github.com/infinispan/infinispan-archetypes[GitHub] で問題を提起してください。"

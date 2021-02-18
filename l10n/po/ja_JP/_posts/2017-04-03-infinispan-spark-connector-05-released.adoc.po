@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:12
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan Spark connector 0.5 released!\n"
@@ -34,10 +34,8 @@ msgid ""
 "tags: [ \"spark\",\n"
 "\"server\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"534996395361083814\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/04/infinispan-spark-"
-"connector-05-released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-534996395361083814\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/04/infinispan-spark-connector-05-released.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -48,67 +46,47 @@ msgstr ""
 "tags: [ \"spark\",\n"
 "\"server\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"534996395361083814\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/04/infinispan-spark-"
-"connector-05-released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-534996395361083814\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/04/infinispan-spark-connector-05-released.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:18
 #, fuzzy
-msgid ""
-"The Infinispan Spark connector offers seamless integration between Apache "
-"Spark and Infinispan Servers.  Apart from supporting Infinispan 9.0.0.Final "
-"and Spark 2.1.0, this release brings many usability improvements, and "
-"support for another major Spark API."
-msgstr ""
-"Infinispan Sparkコネクタは、Apache "
-"SparkとInfinispanサーバ間のシームレスな統合を提供します。このリリースでは、Infinispan 9.0.0.0.FinalとSpark "
-"2.1.0のサポートの他に、多くのユーザビリティの改善と、もう一つの主要なSpark APIのサポートが追加されました。"
+msgid "The Infinispan Spark connector offers seamless integration between Apache Spark and Infinispan Servers.  Apart from supporting Infinispan 9.0.0.Final and Spark 2.1.0, this release brings many usability improvements, and support for another major Spark API."
+msgstr "Infinispan Sparkコネクタは、Apache SparkとInfinispanサーバ間のシームレスな統合を提供します。このリリースでは、Infinispan 9.0.0.0.FinalとSpark 2.1.0のサポートの他に、多くのユーザビリティの改善と、もう一つの主要なSpark APIのサポートが追加されました。"
 
 #. type: Title ====
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:20
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Configuration changes"
 msgstr "設定変更"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:27
 #, fuzzy
-msgid ""
-"The connector no longer uses a _java.util.Properties_ object to hold "
-"configuration, that's now duty of _org.infinispan.spark.config."
-"ConnectorConfiguration_, type safe and both Java and Scala friendly:"
-msgstr ""
-"コネクタは、設定を保持するために _java.util.Properties_ オブジェクトを使用しなくなりました。これは、 _org."
-"infinispan.spark.config.ConnectorConfiguration_ の義務であり、タイプセーフであり、Java と "
-"Scala の両方に対応しています。"
+msgid "The connector no longer uses a _java.util.Properties_ object to hold configuration, that's now duty of _org.infinispan.spark.config.ConnectorConfiguration_, type safe and both Java and Scala friendly:"
+msgstr "コネクタは、設定を保持するために _java.util.Properties_ オブジェクトを使用しなくなりました。これは、 _org.infinispan.spark.config.ConnectorConfiguration_ の義務であり、タイプセーフであり、Java と Scala の両方に対応しています。"
 
 #. type: Title ====
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:31
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:91
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:101
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid " "
 msgstr " "
 
 #. type: Title ====
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:33
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Filtering by query String"
 msgstr "クエリによるフィルタリング 文字列"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:40
 #, fuzzy
-msgid ""
-"The previous version introduced the possibility of filtering an "
-"InfinispanRDD by providing a _Query_ instance, that required going through "
-"the QueryDSL which in turn required a properly configured remote cache."
-msgstr ""
-"以前のバージョンでは、 _クエリインスタンス_ を提供することで InfinispanRDD をフィルタリングできるようになりましたが、これには "
-"QueryDSL を経由する必要があり、適切に設定されたリモートキャッシュが必要でした。"
+msgid "The previous version introduced the possibility of filtering an InfinispanRDD by providing a _Query_ instance, that required going through the QueryDSL which in turn required a properly configured remote cache."
+msgstr "以前のバージョンでは、 _クエリインスタンス_ を提供することで InfinispanRDD をフィルタリングできるようになりましたが、これには QueryDSL を経由する必要があり、適切に設定されたリモートキャッシュが必要でした。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:42
@@ -118,28 +96,20 @@ msgstr "単純にIckleのクエリ文字列を使うことができるように�
 
 #. type: Title ====
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:47
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Improved support for Protocol Buffers"
 msgstr "プロトコルバッファのサポート強化"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:54
 #, fuzzy
-msgid ""
-"Support for reading from a Cache with protobuf encoding was present in the "
-"previous connector version, but now it's possible to also write using "
-"protobuf encoding and also have protobuf schema registration automatically "
-"handled."
-msgstr ""
-"以前のコネクタ・バージョンでは、protobuf エンコーディングを使用した Cache からの読み込みがサポートされていましたが、protobuf "
-"エンコーディングを使用した書き込みも可能になり、protobuf スキーマ登録も自動的に処理されるようになりました。"
+msgid "Support for reading from a Cache with protobuf encoding was present in the previous connector version, but now it's possible to also write using protobuf encoding and also have protobuf schema registration automatically handled."
+msgstr "以前のコネクタ・バージョンでは、protobuf エンコーディングを使用した Cache からの読み込みがサポートされていましたが、protobuf エンコーディングを使用した書き込みも可能になり、protobuf スキーマ登録も自動的に処理されるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:57
 #, fuzzy
-msgid ""
-"To see this in practice, consider an arbitrary non-Infinispan based "
-"_RDD<Integer, Hotel>_ where Hotel is given by:"
+msgid "To see this in practice, consider an arbitrary non-Infinispan based _RDD<Integer, Hotel>_ where Hotel is given by:"
 msgstr "これを実際に見るために、任意の非Infinispanベースの _RDD<Integer, Hotel>_ を考えてみましょう。"
 
 #. type: Plain text
@@ -151,92 +121,62 @@ msgstr "このRDDをInfinispanに書くためには、それを実行するだ�
 #. type: Plain text
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:67
 #, fuzzy
-msgid ""
-"Internally the connector will trigger the auto-generation of the _.proto_ "
-"file and message marshallers related to the configured entity(ies) and will "
-"handle registration of schemas in the server prior to writing."
-msgstr ""
-"内部的には、コネクタは _.proto_ "
-"ファイルと設定されたエンティティに関連するメッセージマーシャラーの自動生成をトリガし、書き込む前にサーバへのスキーマの登録を処理します。"
+msgid "Internally the connector will trigger the auto-generation of the _.proto_ file and message marshallers related to the configured entity(ies) and will handle registration of schemas in the server prior to writing."
+msgstr "内部的には、コネクタは _.proto_ ファイルと設定されたエンティティに関連するメッセージマーシャラーの自動生成をトリガし、書き込む前にサーバへのスキーマの登録を処理します。"
 
 #. type: Title ====
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:71
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Splitter is now pluggable"
 msgstr "スプリッターがプラグイン可能に"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:79
 #, fuzzy
-msgid ""
-"The _Splitter_ is the interface responsible to create one or more partitions "
-"from a Infinispan cache, being each partition related to one or more "
-"segments. The Infinispan Spark connector now can be created using a custom "
-"implementation of Splitter allowing for different data partitioning "
-"strategies during the job processing."
-msgstr ""
-"_スプリッターは_ Infinispanキャッシュから1つ以上のパーティションを作成するインターフェースです。Infinispan "
-"Sparkコネクタは、Splitterのカスタム実装を使用して作成することができ、ジョブ処理中に異なるデータパーティショニング戦略を可能にします。"
+msgid "The _Splitter_ is the interface responsible to create one or more partitions from a Infinispan cache, being each partition related to one or more segments. The Infinispan Spark connector now can be created using a custom implementation of Splitter allowing for different data partitioning strategies during the job processing."
+msgstr "_スプリッターは_ Infinispanキャッシュから1つ以上のパーティションを作成するインターフェースです。Infinispan Sparkコネクタは、Splitterのカスタム実装を使用して作成することができ、ジョブ処理中に異なるデータパーティショニング戦略を可能にします。"
 
 #. type: Title ====
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:82
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Goodbye Scala 2.10"
 msgstr "さよならScala 2.10"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:88
 #, fuzzy
-msgid ""
-"Scala 2.10 support was removed, Scala 2.11 is currently the only supported "
-"version. Scala 2.12 support will follow https://issues.apache.org/jira/"
-"browse/SPARK-14220"
-msgstr ""
-"Scala 2.10のサポートが終了し、現在はScala 2.11のみがサポートされています。Scala 2.12 のサポートは https://"
-"issues.apache.org/jira/browse/SPARK-14220 に続く予定です。"
+msgid "Scala 2.10 support was removed, Scala 2.11 is currently the only supported version. Scala 2.12 support will follow https://issues.apache.org/jira/browse/SPARK-14220"
+msgstr "Scala 2.10のサポートが終了し、現在はScala 2.11のみがサポートされています。Scala 2.12 のサポートは https://issues.apache.org/jira/browse/SPARK-14220 に続く予定です。"
 
 #. type: Title ====
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:93
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Streams with initial state"
 msgstr "初期状態のストリーム"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:99
 #, fuzzy
-msgid ""
-"It is possible to configure the _[.pl-en]#InfinispanInputDStream#_ with an "
-"extra boolean parameter to receive the current cache state as events."
-msgstr ""
-"現在のキャッシュ状態をイベントとして受信するために、追加のブール値パラメータで _InfinispanInputDStream_ "
-"を設定することができます。"
+msgid "It is possible to configure the _[.pl-en]#InfinispanInputDStream#_ with an extra boolean parameter to receive the current cache state as events."
+msgstr "現在のキャッシュ状態をイベントとして受信するために、追加のブール値パラメータで _InfinispanInputDStream_ を設定することができます。"
 
 #. type: Title ====
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:103
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Dataset support"
 msgstr "データセットのサポート"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:109
 #, fuzzy
-msgid ""
-"The Infinispan Spark connector now ships with support for Spark's Dataset "
-"API, with support for pushing down predicates, similar to _rdd."
-"filterByQuery_. The entry point of this API is the Spark session:"
-msgstr ""
-"InfinispanのSparkコネクタは、 _rdd.filterByQuery_ "
-"と同様に述語のプッシュダウンをサポートしたSparkのDataset "
-"APIをサポートして出荷されるようになりました。このAPIのエントリーポイントはSparkセッションです。"
+msgid "The Infinispan Spark connector now ships with support for Spark's Dataset API, with support for pushing down predicates, similar to _rdd.filterByQuery_. The entry point of this API is the Spark session:"
+msgstr "InfinispanのSparkコネクタは、 _rdd.filterByQuery_ と同様に述語のプッシュダウンをサポートしたSparkのDataset APIをサポートして出荷されるようになりました。このAPIのエントリーポイントはSparkセッションです。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:114
 #, fuzzy
-msgid ""
-"To create an Infinispan based Dataframe, the \"infinispan\" data source need "
-"to be used, along with the usual connector configuration:"
-msgstr ""
-"Infinispanベースのデータフレームを作成するには、「infinispan」データソースを通常のコネクタ構成と共に使用する必要があります。"
+msgid "To create an Infinispan based Dataframe, the \"infinispan\" data source need to be used, along with the usual connector configuration:"
+msgstr "Infinispanベースのデータフレームを作成するには、「infinispan」データソースを通常のコネクタ構成と共に使用する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:117
@@ -253,30 +193,11 @@ msgstr "または、ビューを設定してSQLクエリを実行します。"
 #. type: Plain text
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:125
 #, fuzzy
-msgid ""
-"In both cases above, the predicates and the required columns will be "
-"converted to an Infinispan Ickle filter, thus filtering data at the source "
-"rather than at Spark processing phase."
-msgstr ""
-"上記のいずれの場合も、述語と必要なカラムはInfinispan "
-"Ickleフィルタに変換されるため、Sparkの処理フェーズではなくソースでデータをフィルタリングすることになります。"
+msgid "In both cases above, the predicates and the required columns will be converted to an Infinispan Ickle filter, thus filtering data at the source rather than at Spark processing phase."
+msgstr "上記のいずれの場合も、述語と必要なカラムはInfinispan Ickleフィルタに変換されるため、Sparkの処理フェーズではなくソースでデータをフィルタリングすることになります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-03-infinispan-spark-connector-05-released.adoc:135
 #, fuzzy
-msgid ""
-"For the full list of changes see the https://issues.jboss.org/secure/"
-"ReleaseNote.jspa?projectId=12316820&version=12331257[release notes.] For "
-"more information about the connector, the https://github.com/infinispan/"
-"infinispan-spark/blob/master/README.md[official documentation] is the place "
-"to go. Also check the https://github.com/infinispan/infinispan-spark/tree/"
-"master/examples/twitter[twitter data processing sample] and to report bugs "
-"or request new features use the https://issues.jboss.org/projects/"
-"ISPRK[project JIRA]."
-msgstr ""
-"変更点の全リストは link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12316820&version=12331257[リリースノート] を参照してください。コネクタの詳細については、 link:https://"
-"github.com/infinispan/infinispan-spark/blob/master/README.md[公式ドキュメントを] "
-"参照してください。また、 link:https://github.com/infinispan/infinispan-spark/tree/master/"
-"examples/twitter[twitter のデータ処理サンプル] をチェックして、バグ報告や新機能のリクエストをするには link:https:/"
-"/issues.jboss.org/projects/ISPRK[プロジェクト JIRA] を使用してください。"
+msgid "For the full list of changes see the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12316820&version=12331257[release notes.] For more information about the connector, the https://github.com/infinispan/infinispan-spark/blob/master/README.md[official documentation] is the place to go. Also check the https://github.com/infinispan/infinispan-spark/tree/master/examples/twitter[twitter data processing sample] and to report bugs or request new features use the https://issues.jboss.org/projects/ISPRK[project JIRA]."
+msgstr "変更点の全リストは link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12316820&version=12331257[リリースノート] を参照してください。コネクタの詳細については、 link:https://github.com/infinispan/infinispan-spark/blob/master/README.md[公式ドキュメントを] 参照してください。また、 link:https://github.com/infinispan/infinispan-spark/tree/master/examples/twitter[twitter のデータ処理サンプル] をチェックして、バグ報告や新機能のリクエストをするには link:https://issues.jboss.org/projects/ISPRK[プロジェクト JIRA] を使用してください。"

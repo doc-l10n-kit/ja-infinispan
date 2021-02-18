@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-12-14-420cr4-is-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-14-420cr4-is-out.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 4.2.0.CR4 is out\n"
@@ -32,8 +32,7 @@ msgid ""
 "date: '2010-12-14T16:13:00.000-08:00'\n"
 "author: msurtani\n"
 "tags: [ \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"4700639475270376921\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4700639475270376921\n"
 "blogger_orig_url: https://blog.infinispan.org/2010/12/420cr4-is-out.html\n"
 "---\n"
 msgstr ""
@@ -43,40 +42,21 @@ msgstr ""
 "date: '2010-12-14T16:13:00.000-08:00'\n"
 "author: msurtani\n"
 "tags: [ \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"4700639475270376921\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4700639475270376921\n"
 "blogger_orig_url: https://blog.infinispan.org/2010/12/420cr4-is-out.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-14-420cr4-is-out.adoc:15
 #, fuzzy
-msgid ""
-"Yep, I've just cut Infinispan 4.2.0.CR4.  This is the last release candidate "
-"before a final release, so here is your chance to have your say.  :-)  A few "
-"stability issues around rehashing and distributed locking/transactions have "
-"been resolved, so please do try this out."
+msgid "Yep, I've just cut Infinispan 4.2.0.CR4.  This is the last release candidate before a final release, so here is your chance to have your say.  :-)  A few stability issues around rehashing and distributed locking/transactions have been resolved, so please do try this out."
 msgstr "Infinispan 4.2.0.CR4をカットしました。 これは最終リリース前の最後のリリース候補です。"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-14-420cr4-is-out.adoc:21
 #, fuzzy
-msgid ""
-"Details of issues fixed are https://issues.jboss.org/secure/ConfigureReport."
-"jspa?atl_token=74c4db2a77bd63215da7a981c3a93493a505e5f2&versions="
-"12315770&sections=all&style=none&selectedProjectId=12310799&reportKey=org."
-"jboss.labs.jira.plugin.release-notes-report-plugin:releasenotes&Next="
-"Next[here], the download is http://www.jboss.org/infinispan/downloads[here], "
-"and please report issues http://community.jboss.org/en/infinispan?view="
-"discussions[here]. :-)"
-msgstr ""
-"修正された問題の詳細は link:https://issues.jboss.org/secure/ConfigureReport."
-"jspa?atl_token=74c4db2a77bd63215da7a981c3a93493a505e5f2&versions="
-"12315770&sections=all&style=none&selectedProjectId=12310799&reportKey=org."
-"jboss.labs.jira.plugin.release-notes-report-plugin:releasenotes&Next="
-"Next[こちら] 、ダウンロードは link:http://www.jboss.org/infinispan/downloads[こちら] "
-"、問題の報告は link:http://community.jboss.org/en/infinispan?view=discussions[こちらで] "
-"お願いします。)"
+msgid "Details of issues fixed are https://issues.jboss.org/secure/ConfigureReport.jspa?atl_token=74c4db2a77bd63215da7a981c3a93493a505e5f2&versions=12315770&sections=all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira.plugin.release-notes-report-plugin:releasenotes&Next=Next[here], the download is http://www.jboss.org/infinispan/downloads[here], and please report issues http://community.jboss.org/en/infinispan?view=discussions[here]. :-)"
+msgstr "修正された問題の詳細は link:https://issues.jboss.org/secure/ConfigureReport.jspa?atl_token=74c4db2a77bd63215da7a981c3a93493a505e5f2&versions=12315770&sections=all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira.plugin.release-notes-report-plugin:releasenotes&Next=Next[こちら] 、ダウンロードは link:http://www.jboss.org/infinispan/downloads[こちら] 、問題の報告は link:http://community.jboss.org/en/infinispan?view=discussions[こちらで] お願いします。)"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-14-420cr4-is-out.adoc:23

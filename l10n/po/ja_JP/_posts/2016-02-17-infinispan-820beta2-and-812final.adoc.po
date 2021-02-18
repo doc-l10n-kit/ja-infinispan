@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:12
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 8.2.0.Beta2 and 8.1.2.Final\n"
@@ -34,10 +34,8 @@ msgid ""
 "tags: [ \"beta\",\n"
 "\"release\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8612907802238240813\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/02/infinispan-820beta2-"
-"and-812final.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8612907802238240813\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/02/infinispan-820beta2-and-812final.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -48,10 +46,8 @@ msgstr ""
 "tags: [ \"beta\",\n"
 "\"release\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8612907802238240813\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/02/infinispan-820beta2-"
-"and-812final.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8612907802238240813\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/02/infinispan-820beta2-and-812final.html\n"
 "---\n"
 
 #. type: Plain text
@@ -63,65 +59,37 @@ msgstr "インフィニスパンのコミュニティへ"
 #. type: Plain text
 #: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:18
 #, fuzzy
-msgid ""
-"we're proud to announce two fresh releases today.  First off is 8.2.0.Beta2, "
-"from our development branch. It is packed with a bunch of goodies:"
-msgstr ""
-"今日は2つのリリースを発表できることを誇りに思います。まずは開発ブランチからの 8.2.0.Beta2 "
-"です。これにはたくさんの良いものが詰まっています。"
+msgid "we're proud to announce two fresh releases today.  First off is 8.2.0.Beta2, from our development branch. It is packed with a bunch of goodies:"
+msgstr "今日は2つのリリースを発表できることを誇りに思います。まずは開発ブランチからの 8.2.0.Beta2 です。これにはたくさんの良いものが詰まっています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:26
 #, fuzzy
-msgid ""
-"lots of enhancements and additions to the administration console for "
-"Infinispan Server, such as cluster event views, task management, container "
-"administration and deployments. Some of these will be further refined before "
-"the upcoming Final release. If you prefer to manage your servers from the "
-"good ol' command-line, the CLI commands have also been similarly enhanced."
-msgstr ""
-"Infinispan Server "
-"の管理コンソールには、クラスタイベントビュー、タスク管理、コンテナ管理、デプロイメントなど、多くの機能強化や追加が行われています。これらのいくつかは、次の最終リリースまでにさらに改良される予定です。古き良きコマンドラインからサーバを管理したい場合は、CLIコマンドも同様に強化されています。"
+msgid "lots of enhancements and additions to the administration console for Infinispan Server, such as cluster event views, task management, container administration and deployments. Some of these will be further refined before the upcoming Final release. If you prefer to manage your servers from the good ol' command-line, the CLI commands have also been similarly enhanced."
+msgstr "Infinispan Server の管理コンソールには、クラスタイベントビュー、タスク管理、コンテナ管理、デプロイメントなど、多くの機能強化や追加が行われています。これらのいくつかは、次の最終リリースまでにさらに改良される予定です。古き良きコマンドラインからサーバを管理したい場合は、CLIコマンドも同様に強化されています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:30
 #, fuzzy
-msgid ""
-"performance improvements for clustered reads, bulk and stream ops, and a "
-"sensible reduction in memory allocation rate. More improvements will come as "
-"we are rewriting some parts of the core to allow further optimizations."
-msgstr ""
-"クラスタ化された読み込み、バルクおよびストリーム処理のパフォーマンスが改善され、メモリ割り当て率が合理的に減少しました。さらなる最適化を可能にするためにコアのいくつかの部分を書き換えているため、さらなる改善が予定されています。"
+msgid "performance improvements for clustered reads, bulk and stream ops, and a sensible reduction in memory allocation rate. More improvements will come as we are rewriting some parts of the core to allow further optimizations."
+msgstr "クラスタ化された読み込み、バルクおよびストリーム処理のパフォーマンスが改善され、メモリ割り当て率が合理的に減少しました。さらなる最適化を可能にするためにコアのいくつかの部分を書き換えているため、さらなる改善が予定されています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:35
 #, fuzzy
-msgid ""
-"a new distributed executor, https://docs.jboss.org/infinispan/8.2/apidocs/"
-"org/infinispan/manager/ClusterExecutor.html[ClusterExecutor] which does not "
-"require an existing distributed cache and which comes complete with Java 8 "
-"goodness such as CompletableFutures and lambda support. This nicely "
-"complements our existing Streams support."
-msgstr ""
-"これは既存の分散キャッシュを必要とせず、CompletableFuturesやラムダのサポートのようなJava "
-"8の良さを完全に備えています。これは、既存のストリームのサポートをうまく補完しています。"
+msgid "a new distributed executor, https://docs.jboss.org/infinispan/8.2/apidocs/org/infinispan/manager/ClusterExecutor.html[ClusterExecutor] which does not require an existing distributed cache and which comes complete with Java 8 goodness such as CompletableFutures and lambda support. This nicely complements our existing Streams support."
+msgstr "これは既存の分散キャッシュを必要とせず、CompletableFuturesやラムダのサポートのようなJava 8の良さを完全に備えています。これは、既存のストリームのサポートをうまく補完しています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:38
 #, fuzzy
-msgid ""
-"a new, experimental index manager to store indexes on Infinispan with better "
-"scalability and indexing throughput. Additionally we've upgraded Lucene to 5."
-"4.1 and Hibernate Search to 5.6.0.Alpha1"
-msgstr ""
-"は、Infinispan上にインデックスを保存するための新しい実験的なインデックスマネージャで、より優れたスケーラビリティとインデックス作成のスループットを備えています。さらに、Lucene "
-"を 5.4.1 に、Hibernate Search を 5.6.0.Alpha1 にアップグレードしました。"
+msgid "a new, experimental index manager to store indexes on Infinispan with better scalability and indexing throughput. Additionally we've upgraded Lucene to 5.4.1 and Hibernate Search to 5.6.0.Alpha1"
+msgstr "は、Infinispan上にインデックスを保存するための新しい実験的なインデックスマネージャで、より優れたスケーラビリティとインデックス作成のスループットを備えています。さらに、Lucene を 5.4.1 に、Hibernate Search を 5.6.0.Alpha1 にアップグレードしました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:40
 #, fuzzy
-msgid ""
-"the ability to indicate a number of nodes for initial cluster formation"
+msgid "the ability to indicate a number of nodes for initial cluster formation"
 msgstr "初期クラスタ形成のためのノード数を示す能力"
 
 #. type: Plain text
@@ -139,28 +107,11 @@ msgstr "今月末のファイナルリリースに向けて、まだ軌道に乗
 #. type: Plain text
 #: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:46
 #, fuzzy
-msgid ""
-"We've also been fixing bugs in our stable 8.1 stream, which means we have a "
-"freshly released 8.1.2.Final."
+msgid "We've also been fixing bugs in our stable 8.1 stream, which means we have a freshly released 8.1.2.Final."
 msgstr "また、安定版8.1ストリームのバグ修正を行ってきたので、リリースされたばかりの8.1.2.Finalもあります。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-17-infinispan-820beta2-and-812final.adoc:55
 #, fuzzy
-msgid ""
-"Check out the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12310799&version=12328084[development release notes], the https://issues."
-"jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12329500[stable "
-"release notes], http://infinispan.org/download/[download] the releases and "
-"tell us all about it on the https://developer.jboss.org/en/infinispan/"
-"content[forum], on our https://issues.jboss.org/projects/ISPN[issue tracker] "
-"or on IRC on the #infinispan channel on https://issues.jboss.org/projects/"
-"ISPN[Freenode]."
-msgstr ""
-"link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
-"12310799&version=12328084[開発リリースノート] 、 link:https://issues.jboss.org/secure/"
-"ReleaseNote.jspa?projectId=12310799&version=12329500[安定版リリースノート] "
-"をチェックして、リリースを link:http://infinispan.org/download/[ダウンロードして] 、 link:https://"
-"developer.jboss.org/en/infinispan/content[フォーラム] 、 link:https://issues.jboss."
-"org/projects/ISPN[イシュートラッカー] 、IRCで link:https://issues.jboss.org/projects/"
-"ISPN[Freenode] の#infinispanチャンネルで教えてください。"
+msgid "Check out the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12328084[development release notes], the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12329500[stable release notes], http://infinispan.org/download/[download] the releases and tell us all about it on the https://developer.jboss.org/en/infinispan/content[forum], on our https://issues.jboss.org/projects/ISPN[issue tracker] or on IRC on the #infinispan channel on https://issues.jboss.org/projects/ISPN[Freenode]."
+msgstr "link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12328084[開発リリースノート] 、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12329500[安定版リリースノート] をチェックして、リリースを link:http://infinispan.org/download/[ダウンロードして] 、 link:https://developer.jboss.org/en/infinispan/content[フォーラム] 、 link:https://issues.jboss.org/projects/ISPN[イシュートラッカー] 、IRCで link:https://issues.jboss.org/projects/ISPN[Freenode] の#infinispanチャンネルで教えてください。"

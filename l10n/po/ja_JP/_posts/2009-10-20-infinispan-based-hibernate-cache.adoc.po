@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-10-20-infinispan-based-hibernate-cache.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-10-20-infinispan-based-hibernate-cache.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan based Hibernate Cache Provider available now!\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2009-10-20T07:00:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \"eviction\", \"hibernate\", \"second level cache provider\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7633177093476289603\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/10/infinispan-based-"
-"hibernate-cache.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7633177093476289603\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/10/infinispan-based-hibernate-cache.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,101 +42,45 @@ msgstr ""
 "date: '2009-10-20T07:00:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \"eviction\", \"hibernate\", \"second level cache provider\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7633177093476289603\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/10/infinispan-based-"
-"hibernate-cache.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7633177093476289603\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/10/infinispan-based-hibernate-cache.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-10-20-infinispan-based-hibernate-cache.adoc:20
 #, fuzzy
-msgid ""
-"Update (2009/11/13)! Infinispan 4.0.0.Beta2 based Hibernate second level "
-"cache provider http://in.relation.to/12696.lace[now available in Hibernate 3."
-"5 Beta2]. However, neither Infinispan 4.0.0.Beta2 nor the Infinispan Cache "
-"Provider jar are available in the zip distribution.  Instead, please "
-"download Infinispan 4.0.0.Beta2 from http://sourceforge.net/projects/"
-"infinispan/files/[our download site] and the Infinispan Cache Provider http:/"
-"/repository.jboss.org/maven2/org/hibernate/hibernate-infinispan/3.5.0-Beta-2/"
-"[from our Maven repository]."
-msgstr ""
-"更新（2009/11/13）!Infinispan 4.0.0.0.Beta2ベースのHibernate第2レベルキャッシュプロバイダが link:"
-"http://in.relation.to/12696.lace[Hibernate 3.5 Beta2で利用可能に] "
-"なりました。しかし、Infinispan 4.0.0.0.Beta2もInfinispan Cache Provider "
-"jarもZIPディストリビューションにはありません。代わりに、 link:http://sourceforge.net/projects/"
-"infinispan/files/[ダウンロードサイト] から Infinispan 4.0.0.0.Beta2 をダウンロードし、 link:http:"
-"//repository.jboss.org/maven2/org/hibernate/hibernate-infinispan/3.5.0-Beta-"
-"2/[Maven リポジトリから] Infinispan Cache Provider をダウンロードしてください。"
+msgid "Update (2009/11/13)! Infinispan 4.0.0.Beta2 based Hibernate second level cache provider http://in.relation.to/12696.lace[now available in Hibernate 3.5 Beta2]. However, neither Infinispan 4.0.0.Beta2 nor the Infinispan Cache Provider jar are available in the zip distribution.  Instead, please download Infinispan 4.0.0.Beta2 from http://sourceforge.net/projects/infinispan/files/[our download site] and the Infinispan Cache Provider http://repository.jboss.org/maven2/org/hibernate/hibernate-infinispan/3.5.0-Beta-2/[from our Maven repository]."
+msgstr "更新（2009/11/13）!Infinispan 4.0.0.0.Beta2ベースのHibernate第2レベルキャッシュプロバイダが link:http://in.relation.to/12696.lace[Hibernate 3.5 Beta2で利用可能に] なりました。しかし、Infinispan 4.0.0.0.Beta2もInfinispan Cache Provider jarもZIPディストリビューションにはありません。代わりに、 link:http://sourceforge.net/projects/infinispan/files/[ダウンロードサイト] から Infinispan 4.0.0.0.Beta2 をダウンロードし、 link:http://repository.jboss.org/maven2/org/hibernate/hibernate-infinispan/3.5.0-Beta-2/[Maven リポジトリから] Infinispan Cache Provider をダウンロードしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2009-10-20-infinispan-based-hibernate-cache.adoc:27
 #, fuzzy
-msgid ""
-"I've just finished the development of an Infinispan 4.0 based Hibernate "
-"second level cache provider. This will be included from next Hibernate 3.5 "
-"release onwards but if you cannot wait and wanna play with it in the mean "
-"time, just checkout http://anonsvn.jboss.org/repos/hibernate/core/trunk/"
-"[Hibernate trunk from our SVN repository] and run 'mvn install'."
-msgstr ""
-"Infinispan 4.0ベースのHibernate第二レベルキャッシュプロバイダの開発を終えました。これは次のHibernate 3."
-"5以降のリリースに含まれる予定ですが、それまで待てずに遊びたい方は、私 link:http://anonsvn.jboss.org/repos/"
-"hibernate/core/trunk/[たちのSVNリポジトリからHibernate trunkを] チェックアウトして'mvn "
-"install'を実行してください。"
+msgid "I've just finished the development of an Infinispan 4.0 based Hibernate second level cache provider. This will be included from next Hibernate 3.5 release onwards but if you cannot wait and wanna play with it in the mean time, just checkout http://anonsvn.jboss.org/repos/hibernate/core/trunk/[Hibernate trunk from our SVN repository] and run 'mvn install'."
+msgstr "Infinispan 4.0ベースのHibernate第二レベルキャッシュプロバイダの開発を終えました。これは次のHibernate 3.5以降のリリースに含まれる予定ですが、それまで待てずに遊びたい方は、私 link:http://anonsvn.jboss.org/repos/hibernate/core/trunk/[たちのSVNリポジトリからHibernate trunkを] チェックアウトして'mvn install'を実行してください。"
 
 #. type: Plain text
 #: upstream/_posts/2009-10-20-infinispan-based-hibernate-cache.adoc:32
 #, fuzzy
-msgid ""
-"I've also written http://www.jboss.org/community/docs/DOC-14105[a wiki "
-"called \"Using Infinispan as JPA/Hibernate Second Level Cache Provider\" ] "
-"that should help users understand how to configure the Infinispan cache "
-"provider and how to make the most of it!"
-msgstr ""
-"また、 link:http://www.jboss.org/community/docs/DOC-14105[\"Using Infinispan as "
-"JPA/Hibernate Second Level Cache Provider\"] "
-"というwikiも書きましたが、これはInfinispanキャッシュプロバイダの設定方法とその活用方法をユーザーに理解してもらうためのものです!"
+msgid "I've also written http://www.jboss.org/community/docs/DOC-14105[a wiki called \"Using Infinispan as JPA/Hibernate Second Level Cache Provider\" ] that should help users understand how to configure the Infinispan cache provider and how to make the most of it!"
+msgstr "また、 link:http://www.jboss.org/community/docs/DOC-14105[\"Using Infinispan as JPA/Hibernate Second Level Cache Provider\"] というwikiも書きましたが、これはInfinispanキャッシュプロバイダの設定方法とその活用方法をユーザーに理解してもらうためのものです!"
 
 #. type: Plain text
 #: upstream/_posts/2009-10-20-infinispan-based-hibernate-cache.adoc:37
 #, fuzzy
-msgid ""
-"So, what's good about it? Why should I use it? First of all, since the cache "
-"provider is based on Infinispan, you benefit from all the improvements we've "
-"done to Infinispan in terms of performance and memory consumption so far and "
-"there are more to come!"
-msgstr ""
-"では、何が良いのか？なぜそれを使うべきなのか？まず第一に、キャッシュプロバイダはInfinispanをベースにしているので、パフォーマンスとメモリ消費の面でInfinispanにこれまで行ってきたすべての改善の恩恵を受けることができます。"
+msgid "So, what's good about it? Why should I use it? First of all, since the cache provider is based on Infinispan, you benefit from all the improvements we've done to Infinispan in terms of performance and memory consumption so far and there are more to come!"
+msgstr "では、何が良いのか？なぜそれを使うべきなのか？まず第一に、キャッシュプロバイダはInfinispanをベースにしているので、パフォーマンスとメモリ消費の面でInfinispanにこれまで行ってきたすべての改善の恩恵を受けることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2009-10-20-infinispan-based-hibernate-cache.adoc:47
 #, fuzzy
-msgid ""
-"On top of that, starting with this cache provider, we're aiming to reduce "
-"the number of files needed to modify in order to define the most commonly "
-"tweaked parameters. So, for example, by enabling eviction/expiration "
-"configuration on a per generic Hibernate data type or particular entity/"
-"collection type via hibernate.cfg.xml or persistence.xml, users don't have "
-"to touch to Infinispan's cache configuration file any more. You can find "
-"detailed information on how to do this in the http://www.jboss.org/community/"
-"docs/DOC-14105[\"Using Infinispan as JPA/Hibernate Second Level Cache "
-"Provider\" wiki]"
-msgstr ""
-"その上で、このキャッシュプロバイダを始めとして、最も一般的に微調整されたパラメータを定義するために、修正に必要なファイル数を減らすことを目指しています。例えば、hibernate."
-"cfg.xmlやpersistence.xmlを介して、一般的なHibernateデータ型ごと、または特定のエンティティ/コレクション型ごとに退避/"
-"期限切れの設定を有効にすることで、ユーザーはInfinispanのキャッシュ設定ファイルに触れる必要がなくなります。これを行う方法についての詳細な情報は、 "
-"link:http://www.jboss.org/community/docs/DOC-14105[\"Using Infinispan as JPA/"
-"Hibernate Second Level Cache Provider\" wiki] を参照してください。"
+msgid "On top of that, starting with this cache provider, we're aiming to reduce the number of files needed to modify in order to define the most commonly tweaked parameters. So, for example, by enabling eviction/expiration configuration on a per generic Hibernate data type or particular entity/collection type via hibernate.cfg.xml or persistence.xml, users don't have to touch to Infinispan's cache configuration file any more. You can find detailed information on how to do this in the http://www.jboss.org/community/docs/DOC-14105[\"Using Infinispan as JPA/Hibernate Second Level Cache Provider\" wiki]"
+msgstr "その上で、このキャッシュプロバイダを始めとして、最も一般的に微調整されたパラメータを定義するために、修正に必要なファイル数を減らすことを目指しています。例えば、hibernate.cfg.xmlやpersistence.xmlを介して、一般的なHibernateデータ型ごと、または特定のエンティティ/コレクション型ごとに退避/期限切れの設定を有効にすることで、ユーザーはInfinispanのキャッシュ設定ファイルに触れる必要がなくなります。これを行う方法についての詳細な情報は、 link:http://www.jboss.org/community/docs/DOC-14105[\"Using Infinispan as JPA/Hibernate Second Level Cache Provider\" wiki] を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2009-10-20-infinispan-based-hibernate-cache.adoc:51
 #, fuzzy
-msgid ""
-"Please direct any feedback to the http://www.jboss.org/index.html?module="
-"bb&op=viewforum&f=309[Infinispan user forum]."
-msgstr ""
-"ご意見・ご感想は link:http://www.jboss.org/index.html?module=bb&op=viewforum&f="
-"309[Infinispanユーザーフォーラム] までお願いします。"
+msgid "Please direct any feedback to the http://www.jboss.org/index.html?module=bb&op=viewforum&f=309[Infinispan user forum]."
+msgstr "ご意見・ご感想は link:http://www.jboss.org/index.html?module=bb&op=viewforum&f=309[Infinispanユーザーフォーラム] までお願いします。"
 
 #. type: Plain text
 #: upstream/_posts/2009-10-20-infinispan-based-hibernate-cache.adoc:52

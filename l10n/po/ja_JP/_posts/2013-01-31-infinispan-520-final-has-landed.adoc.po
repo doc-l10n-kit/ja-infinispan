@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-01-31-infinispan-520-final-has-landed.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-31-infinispan-520-final-has-landed.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 'Infinispan 5.2.0 Final has landed! '\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2013-01-31T11:29:00.000-08:00'\n"
 "author: mmarkus\n"
 "tags: [ \"release\", \"final\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1170451411540085494\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/01/infinispan-520-final-"
-"has-landed.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1170451411540085494\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/01/infinispan-520-final-has-landed.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,10 +42,8 @@ msgstr ""
 "date: '2013-01-31T11:29:00.000-08:00'\n"
 "author: mmarkus\n"
 "tags: [ \"release\", \"final\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"1170451411540085494\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/01/infinispan-520-final-"
-"has-landed.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1170451411540085494\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/01/infinispan-520-final-has-landed.html\n"
 "---\n"
 
 #. type: Plain text
@@ -59,112 +55,44 @@ msgstr "インフィニスパンのコミュニティへ"
 #. type: Plain text
 #: upstream/_posts/2013-01-31-infinispan-520-final-has-landed.adoc:20
 #, fuzzy
-msgid ""
-"I am pleased to announce the much awaited final release of Infinispan 5.2.0. "
-"With more than https://issues.jboss.org/issues/?jql="
-"project%20%3D%20ISPN%20AND%20issuetype%20in%20(Enhancement%2C%20%22Feature%20Request%22)%20AND%20fixVersion%20%3D%20%225."
-"2.0."
-"Final%22%20AND%20status%20in%20(Resolved%2C%20Closed)%20ORDER%20BY%20priority%20DESC%2C%20assignee%20ASC%2C%20key%20DESC[100 "
-"new features and enhancements] and https://issues.jboss.org/issues/?jql="
-"project%20%3D%20ISPN%20AND%20issuetype%20%3D%20Bug%20AND%20fixVersion%20%3D%20%225."
-"2.0."
-"Final%22%20AND%20status%20in%20(Resolved%2C%20Closed)%20ORDER%20BY%20priority%20DESC%2C%20assignee%20ASC%2C%20key%20DESC[150 "
-"bug fixes] this the most stable Infinispan version to date.  Highlights:"
-msgstr ""
-"待ちに待ったInfinispan 5.2.0の最終リリースを発表できることを嬉しく思います。 link:https://issues.jboss.org/"
-"issues/?jql="
-"project%20%3D%20ISPN%20AND%20issuetype%20in%20(Enhancement%2C%20%22Feature%20Request%22)%20AND%20fixVersion%20%3D%20%225."
-"2.0."
-"Final%22%20AND%20status%20in%20(Resolved%2C%20Closed)%20ORDER%20BY%20priority%20DESC%2C%20assignee%20ASC%2C%20key%20DESC[100以上の新機能と機能強化、] "
-"150以上のバグ link:https://issues.jboss.org/issues/?jql="
-"project%20%3D%20ISPN%20AND%20issuetype%20%3D%20Bug%20AND%20fixVersion%20%3D%20%225."
-"2.0."
-"Final%22%20AND%20status%20in%20(Resolved%2C%20Closed)%20ORDER%20BY%20priority%20DESC%2C%20assignee%20ASC%2C%20key%20DESC[修正が行われ] "
-"、 link:https://issues.jboss.org/issues/?jql="
-"project%20%3D%20ISPN%20AND%20issuetype%20%3D%20Bug%20AND%20fixVersion%20%3D%20%225."
-"2.0."
-"Final%22%20AND%20status%20in%20(Resolved%2C%20Closed)%20ORDER%20BY%20priority%20DESC%2C%20assignee%20ASC%2C%20key%20DESC[これ] "
-"までで最も安定したInfinispanバージョン link:https://issues.jboss.org/issues/?jql="
-"project%20%3D%20ISPN%20AND%20issuetype%20%3D%20Bug%20AND%20fixVersion%20%3D%20%225."
-"2.0."
-"Final%22%20AND%20status%20in%20(Resolved%2C%20Closed)%20ORDER%20BY%20priority%20DESC%2C%20assignee%20ASC%2C%20key%20DESC[となりまし] "
-"た。ハイライト"
+msgid "I am pleased to announce the much awaited final release of Infinispan 5.2.0. With more than https://issues.jboss.org/issues/?jql=project%20%3D%20ISPN%20AND%20issuetype%20in%20(Enhancement%2C%20%22Feature%20Request%22)%20AND%20fixVersion%20%3D%20%225.2.0.Final%22%20AND%20status%20in%20(Resolved%2C%20Closed)%20ORDER%20BY%20priority%20DESC%2C%20assignee%20ASC%2C%20key%20DESC[100 new features and enhancements] and https://issues.jboss.org/issues/?jql=project%20%3D%20ISPN%20AND%20issuetype%20%3D%20Bug%20AND%20fixVersion%20%3D%20%225.2.0.Final%22%20AND%20status%20in%20(Resolved%2C%20Closed)%20ORDER%20BY%20priority%20DESC%2C%20assignee%20ASC%2C%20key%20DESC[150 bug fixes] this the most stable Infinispan version to date.  Highlights:"
+msgstr "待ちに待ったInfinispan 5.2.0の最終リリースを発表できることを嬉しく思います。 link:https://issues.jboss.org/issues/?jql=project%20%3D%20ISPN%20AND%20issuetype%20in%20(Enhancement%2C%20%22Feature%20Request%22)%20AND%20fixVersion%20%3D%20%225.2.0.Final%22%20AND%20status%20in%20(Resolved%2C%20Closed)%20ORDER%20BY%20priority%20DESC%2C%20assignee%20ASC%2C%20key%20DESC[100以上の新機能と機能強化、] 150以上のバグ link:https://issues.jboss.org/issues/?jql=project%20%3D%20ISPN%20AND%20issuetype%20%3D%20Bug%20AND%20fixVersion%20%3D%20%225.2.0.Final%22%20AND%20status%20in%20(Resolved%2C%20Closed)%20ORDER%20BY%20priority%20DESC%2C%20assignee%20ASC%2C%20key%20DESC[修正が行われ] 、 link:https://issues.jboss.org/issues/?jql=project%20%3D%20ISPN%20AND%20issuetype%20%3D%20Bug%20AND%20fixVersion%20%3D%20%225.2.0.Final%22%20AND%20status%20in%20(Resolved%2C%20Closed)%20ORDER%20BY%20priority%20DESC%2C%20assignee%20ASC%2C%20key%20DESC[これ] までで最も安定したInfinispanバージョン link:https://issues.jboss.org/issues/?jql=project%20%3D%20ISPN%20AND%20issuetype%20%3D%20Bug%20AND%20fixVersion%20%3D%20%225.2.0.Final%22%20AND%20status%20in%20(Resolved%2C%20Closed)%20ORDER%20BY%20priority%20DESC%2C%20assignee%20ASC%2C%20key%20DESC[となりまし] た。ハイライト"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-31-infinispan-520-final-has-landed.adoc:26
 #, fuzzy
-msgid ""
-"The https://community.jboss.org/wiki/Non-BlockingStateTransferV2[non-"
-"blocking state transfer] which is a much more efficient and flexible "
-"implementation of the functionality that allows Infinispan to serve requests "
-"during nodes joining/leaving. "
-msgstr ""
-"link:https://community.jboss.org/wiki/Non-"
-"BlockingStateTransferV2[ノンブロッキング状態転送] は、ノードの結合/"
-"離脱時にInfinispanがリクエストを処理することを可能にする機能を、より効率的かつ柔軟に実装したものです。"
+msgid "The https://community.jboss.org/wiki/Non-BlockingStateTransferV2[non-blocking state transfer] which is a much more efficient and flexible implementation of the functionality that allows Infinispan to serve requests during nodes joining/leaving. "
+msgstr "link:https://community.jboss.org/wiki/Non-BlockingStateTransferV2[ノンブロッキング状態転送] は、ノードの結合/離脱時にInfinispanがリクエストを処理することを可能にする機能を、より効率的かつ柔軟に実装したものです。"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-31-infinispan-520-final-has-landed.adoc:30
 #, fuzzy
-msgid ""
-"https://docs.jboss.org/author/display/ISPN/Cross+site+replication[The cross-"
-"site replication] functionality which allows backing up data between "
-"geographically distributed clusters in order to protect against catastrophic "
-"failures"
-msgstr ""
-"link:https://docs.jboss.org/author/display/ISPN/"
-"Cross+site+replication[クロスサイトレプリケーション] "
-"機能により、地理的に分散したクラスタ間でデータをバックアップし、致命的な障害から保護することができます。"
+msgid "https://docs.jboss.org/author/display/ISPN/Cross+site+replication[The cross-site replication] functionality which allows backing up data between geographically distributed clusters in order to protect against catastrophic failures"
+msgstr "link:https://docs.jboss.org/author/display/ISPN/Cross+site+replication[クロスサイトレプリケーション] 機能により、地理的に分散したクラスタ間でデータをバックアップし、致命的な障害から保護することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-31-infinispan-520-final-has-landed.adoc:32
 #, fuzzy
-msgid ""
-"https://issues.jboss.org/browse/ISPN-1410[Rolling upgrades] of the hotrod "
-"clusters (zero downtime for upgrades)"
-msgstr ""
-"ホットロッドクラスタの link:https://issues.jboss.org/browse/ISPN-1410[ローリングアップグレード] "
-"（アップグレードのためのダウンタイムゼロ"
+msgid "https://issues.jboss.org/browse/ISPN-1410[Rolling upgrades] of the hotrod clusters (zero downtime for upgrades)"
+msgstr "ホットロッドクラスタの link:https://issues.jboss.org/browse/ISPN-1410[ローリングアップグレード] （アップグレードのためのダウンタイムゼロ"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-31-infinispan-520-final-has-landed.adoc:34
 #, fuzzy
-msgid ""
-"https://issues.jboss.org/issues/?jql="
-"project%20%3D%20ISPN%20AND%20issuetype%20in%20(standardIssueTypes()%2C%20subTaskIssueTypes()%2C%20Bug%2C%20Enhancement%2C%20%22Feature%20Request%22)%20AND%20fixVersion%20%3D%20%225."
-"2.0."
-"Final%22%20AND%20status%20in%20(Resolved%2C%20Closed)%20ORDER%20BY%20priority%20DESC%2C%20assignee%20ASC%2C%20key%20DESC[A "
-"handful of fixes and improvements] for the Map/Reduce framework"
-msgstr ""
-"Map/Reduce フレームワークの link:https://issues.jboss.org/issues/?jql="
-"project%20%3D%20ISPN%20AND%20issuetype%20in%20(standardIssueTypes()%2C%20subTaskIssueTypes()%2C%20Bug%2C%20Enhancement%2C%20%22Feature%20Request%22)%20AND%20fixVersion%20%3D%20%225."
-"2.0."
-"Final%22%20AND%20status%20in%20(Resolved%2C%20Closed)%20ORDER%20BY%20priority%20DESC%2C%20assignee%20ASC%2C%20key%20DESC[修正と改善の] "
-"一例"
+msgid "https://issues.jboss.org/issues/?jql=project%20%3D%20ISPN%20AND%20issuetype%20in%20(standardIssueTypes()%2C%20subTaskIssueTypes()%2C%20Bug%2C%20Enhancement%2C%20%22Feature%20Request%22)%20AND%20fixVersion%20%3D%20%225.2.0.Final%22%20AND%20status%20in%20(Resolved%2C%20Closed)%20ORDER%20BY%20priority%20DESC%2C%20assignee%20ASC%2C%20key%20DESC[A handful of fixes and improvements] for the Map/Reduce framework"
+msgstr "Map/Reduce フレームワークの link:https://issues.jboss.org/issues/?jql=project%20%3D%20ISPN%20AND%20issuetype%20in%20(standardIssueTypes()%2C%20subTaskIssueTypes()%2C%20Bug%2C%20Enhancement%2C%20%22Feature%20Request%22)%20AND%20fixVersion%20%3D%20%225.2.0.Final%22%20AND%20status%20in%20(Resolved%2C%20Closed)%20ORDER%20BY%20priority%20DESC%2C%20assignee%20ASC%2C%20key%20DESC[修正と改善の] 一例"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-31-infinispan-520-final-has-landed.adoc:39
 #, fuzzy
-msgid ""
-"This release has spread over a period of 8 months, with a total of 4 Alpha, "
-"6 Beta and 3 CR releases: a** sustained** effort from  the "
-"core development team, QA team and our growing community - a BIG thanks to "
-"everybody involved!"
+msgid "This release has spread over a period of 8 months, with a total of 4 Alpha, 6 Beta and 3 CR releases: a** sustained** effort from  the core development team, QA team and our growing community - a BIG thanks to everybody involved!"
 msgstr "このリリースは8ヶ月間に渡り、4つのアルファ版、6つのベータ版、3つのCR版がリリースされました。"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-31-infinispan-520-final-has-landed.adoc:47
 #, fuzzy
-msgid ""
-"Remember to visit our http://www.jboss.org/infinispan/"
-"downloads[downloads] section to find the latest release and if you have any "
-"questions please check our http://www.jboss.org/infinispan/forums[forums], "
-"our mailing lists or ping us directly on irc://irc.freenode.org/"
-"infinispan[IRC]."
-msgstr ""
-"最新のリリースを見つけるために link:http://www.jboss.org/infinispan/downloads[ダウンロード] "
-"セクションにアクセスすることを忘れずに、質問がある場合は、フォーラム、 link:http://www.jboss.org/infinispan/"
-"forums[メーリングリスト] 、またはIRCで直接pingしてください。"
+msgid "Remember to visit our http://www.jboss.org/infinispan/downloads[downloads] section to find the latest release and if you have any questions please check our http://www.jboss.org/infinispan/forums[forums], our mailing lists or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+msgstr "最新のリリースを見つけるために link:http://www.jboss.org/infinispan/downloads[ダウンロード] セクションにアクセスすることを忘れずに、質問がある場合は、フォーラム、 link:http://www.jboss.org/infinispan/forums[メーリングリスト] 、またはIRCで直接pingしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-01-31-infinispan-520-final-has-landed.adoc:51

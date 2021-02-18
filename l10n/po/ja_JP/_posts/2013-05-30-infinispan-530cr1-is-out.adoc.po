@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,25 +18,22 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-05-30-infinispan-530cr1-is-out.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-30-infinispan-530cr1-is-out.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 5.3.0.CR1 is out!\n"
 "permalink: /blog/:year/:month/:day/infinispan-530cr1-is-out\n"
 "date: '2013-05-30T12:16:00.000-07:00'\n"
 "author: mmarkus\n"
-"tags: [ \"cachestore\", \"jpa\", \"mongodb\", \"loader\", \"release "
-"candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3023424489329992094\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-530cr1-is-"
-"out.html\n"
+"tags: [ \"cachestore\", \"jpa\", \"mongodb\", \"loader\", \"release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3023424489329992094\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-530cr1-is-out.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,46 +41,28 @@ msgstr ""
 "permalink: /blog/:year/:month/:day/infinispan-530cr1-is-out\n"
 "date: '2013-05-30T12:16:00.000-07:00'\n"
 "author: mmarkus\n"
-"tags: [ \"cachestore\", \"jpa\", \"mongodb\", \"loader\", \"release "
-"candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3023424489329992094\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-530cr1-is-"
-"out.html\n"
+"tags: [ \"cachestore\", \"jpa\", \"mongodb\", \"loader\", \"release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3023424489329992094\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-530cr1-is-out.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-30-infinispan-530cr1-is-out.adoc:13
 #, fuzzy
-msgid ""
-"Besides a handful of fixes, this release contains two very important "
-"contributions:"
+msgid "Besides a handful of fixes, this release contains two very important contributions:"
 msgstr "このリリースにはいくつかの修正に加えて、2つの非常に重要な貢献が含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-30-infinispan-530cr1-is-out.adoc:17
 #, fuzzy
-msgid ""
-"a http://www.mongodb.org/[mongoDB] cache store which allows using Infinispan "
-" as a cache on top of a mongodb instance. Courtesy of  http://fr.linkedin."
-"com/in/guillaumescheibel[Guillaume Scheibel]"
-msgstr ""
-"は、mongodbインスタンスの上にキャッシュとしてInfinispanを使用できるようにするための link:http://www.mongodb."
-"org/[mongoDB] キャッシュストアです。 link:http://fr.linkedin.com/in/"
-"guillaumescheibel[Guillaume Scheibel] 氏提供"
+msgid "a http://www.mongodb.org/[mongoDB] cache store which allows using Infinispan  as a cache on top of a mongodb instance. Courtesy of  http://fr.linkedin.com/in/guillaumescheibel[Guillaume Scheibel]"
+msgstr "は、mongodbインスタンスの上にキャッシュとしてInfinispanを使用できるようにするための link:http://www.mongodb.org/[mongoDB] キャッシュストアです。 link:http://fr.linkedin.com/in/guillaumescheibel[Guillaume Scheibel] 氏提供"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-30-infinispan-530cr1-is-out.adoc:22
 #, fuzzy
-msgid ""
-"a http://www.oracle.com/technetwork/java/javaee/tech/persistence-jsp-140049."
-"html[JPA] based cache store that allows an easy setup for Infinispan as a "
-"cache in front of a database. Courtesy of http://www.linkedin.com/in/"
-"rayjtsang[Ray Tsang]"
-msgstr ""
-"データベースの前のキャッシュとしてInfinispanを簡単に設定できる link:http://www.oracle.com/technetwork/"
-"java/javaee/tech/persistence-jsp-140049.html[JPA] ベースのキャッシュストア。 link:http://"
-"www.linkedin.com/in/rayjtsang[Ray Tsang] 氏提供"
+msgid "a http://www.oracle.com/technetwork/java/javaee/tech/persistence-jsp-140049.html[JPA] based cache store that allows an easy setup for Infinispan as a cache in front of a database. Courtesy of http://www.linkedin.com/in/rayjtsang[Ray Tsang]"
+msgstr "データベースの前のキャッシュとしてInfinispanを簡単に設定できる link:http://www.oracle.com/technetwork/java/javaee/tech/persistence-jsp-140049.html[JPA] ベースのキャッシュストア。 link:http://www.linkedin.com/in/rayjtsang[Ray Tsang] 氏提供"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-30-infinispan-530cr1-is-out.adoc:24
@@ -94,26 +73,14 @@ msgstr "これらの特徴を詳しく紹介しているブログにご期待く
 #. type: Plain text
 #: upstream/_posts/2013-05-30-infinispan-530cr1-is-out.adoc:28
 #, fuzzy
-msgid ""
-"For a complete list of features included in this release refer to the https:/"
-"/issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
-"12321180[release notes]."
-msgstr ""
-"このリリースに含まれる機能の完全なリストについては、 link:https://issues.jboss.org/secure/ReleaseNote."
-"jspa?projectId=12310799&version=12321180[リリースノートを参照してください。]"
+msgid "For a complete list of features included in this release refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12321180[release notes]."
+msgstr "このリリースに含まれる機能の完全なリストについては、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12321180[リリースノートを参照してください。]"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-30-infinispan-530cr1-is-out.adoc:34
 #, fuzzy
-msgid ""
-"Visit our http://www.jboss.org/infinispan/downloads[downloads] section to "
-"find the latest release and if you have any questions please check our http:/"
-"/www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/"
-"mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://"
-"irc.freenode.org/infinispan[IRC]."
-msgstr ""
-"最新のリリースは link:http://www.jboss.org/infinispan/downloads[ダウンロード] "
-"セクションをご覧ください。"
+msgid "Visit our http://www.jboss.org/infinispan/downloads[downloads] section to find the latest release and if you have any questions please check our http://www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+msgstr "最新のリリースは link:http://www.jboss.org/infinispan/downloads[ダウンロード] セクションをご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-30-infinispan-530cr1-is-out.adoc:38

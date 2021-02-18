@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: RESTful queries coming to Infinispan 9.2\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2018-02-09T04:00:00.000-08:00'\n"
 "author: gustavonalle\n"
 "tags: [ \" rest query\", \"Protobuf\", \"JSON\", \"query\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"9003477498202325065\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/02/restful-queries-coming-"
-"to-infinispan-92.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-9003477498202325065\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/02/restful-queries-coming-to-infinispan-92.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,118 +42,75 @@ msgstr ""
 "date: '2018-02-09T04:00:00.000-08:00'\n"
 "author: gustavonalle\n"
 "tags: [ \" rest query\", \"Protobuf\", \"JSON\", \"query\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"9003477498202325065\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/02/restful-queries-coming-"
-"to-infinispan-92.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-9003477498202325065\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/02/restful-queries-coming-to-infinispan-92.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:18
 #, fuzzy
-msgid ""
-"One of the interesting features in the upcoming Infinispan 9.2 release is "
-"the possibility to execute queries over the REST endpoint, enabling users to "
-"take advantage of the easy-to-use and expressiveness of the Ickle query "
-"language, that combines a subset of JP-QL with full-text features. You can "
-"learn more info about Ickle in a http://blog.infinispan.org/2016/12/meet-"
-"ickle.html[previous post]."
-msgstr ""
-"今後リリースされるInfinispan 9.2の興味深い機能の1つは、RESTエンドポイントを介してクエリを実行できることで、JP-"
-"QLのサブセットとフルテキスト機能を組み合わせたIckleクエリ言語の使いやすさと表現力を利用できるようになります。Ickle についての詳細は "
-"link:http://blog.infinispan.org/2016/12/meet-ickle.html[以前の記事] で紹介しています。"
+msgid "One of the interesting features in the upcoming Infinispan 9.2 release is the possibility to execute queries over the REST endpoint, enabling users to take advantage of the easy-to-use and expressiveness of the Ickle query language, that combines a subset of JP-QL with full-text features. You can learn more info about Ickle in a http://blog.infinispan.org/2016/12/meet-ickle.html[previous post]."
+msgstr "今後リリースされるInfinispan 9.2の興味深い機能の1つは、RESTエンドポイントを介してクエリを実行できることで、JP-QLのサブセットとフルテキスト機能を組み合わせたIckleクエリ言語の使いやすさと表現力を利用できるようになります。Ickle についての詳細は link:http://blog.infinispan.org/2016/12/meet-ickle.html[以前の記事] で紹介しています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:23
 #, fuzzy
-msgid ""
-"Besides exposing query over REST, Infinispan 9.2 also adds support for "
-"mapping between JSON and Protobuf formats, allowing an efficient storage in "
-"binary format while exposing queries, reading and writing content as JSON "
-"documents."
-msgstr ""
-"REST上でクエリを公開することに加えて、Infinispan 9."
-"2では、JSONとProtobufフォーマット間のマッピングのサポートも追加されており、クエリを公開しながら、バイナリフォーマットでの効率的なストレージを可能にし、コンテンツをJSONドキュメントとして読み書きすることができるようになりました。"
+msgid "Besides exposing query over REST, Infinispan 9.2 also adds support for mapping between JSON and Protobuf formats, allowing an efficient storage in binary format while exposing queries, reading and writing content as JSON documents."
+msgstr "REST上でクエリを公開することに加えて、Infinispan 9.2では、JSONとProtobufフォーマット間のマッピングのサポートも追加されており、クエリを公開しながら、バイナリフォーマットでの効率的なストレージを可能にし、コンテンツをJSONドキュメントとして読み書きすることができるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:26
 #, fuzzy
-msgid ""
-"To illustrate those new capabilities, this post will walk you through a "
-"sample app from scratch!"
+msgid "To illustrate those new capabilities, this post will walk you through a sample app from scratch!"
 msgstr "これらの新しい機能を説明するために、この記事ではゼロからのサンプルアプリを紹介します。"
 
 #. type: Title ===
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:28
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Sample app"
 msgstr "サンプルアプリ"
 
 #. type: Title =====
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:30
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Running the server"
 msgstr "サーバーの実行"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:35
 #, fuzzy
-msgid ""
-"We start by https://github.com/jboss-dockerfiles/infinispan/tree/master/"
-"server[running] the Infinispan Server 9.2.0.CR2 (the latest release "
-"candidate):"
-msgstr ""
-"まずはInfinispan Server 9.2.0.CR2（最新のリリース候補）を link:https://github.com/jboss-"
-"dockerfiles/infinispan/tree/master/server[実行します] 。"
+msgid "We start by https://github.com/jboss-dockerfiles/infinispan/tree/master/server[running] the Infinispan Server 9.2.0.CR2 (the latest release candidate):"
+msgstr "まずはInfinispan Server 9.2.0.CR2（最新のリリース候補）を link:https://github.com/jboss-dockerfiles/infinispan/tree/master/server[実行します] 。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:41
 #, fuzzy
-msgid ""
-"This will get you a fresh instance of Infinispan running, with login and "
-"password 'user' and the REST port 8080 mapped to localhost. TIP: if you run "
-"more than one container, they'll form a cluster automatically."
-msgstr ""
-"これにより、ログインとパスワードが「user」で、REST ポート 8080 が localhost にマップされた Infinispan "
-"の新しいインスタンスが実行されます。ヒント: 複数のコンテナを実行すると、自動的にクラスタを形成します。"
+msgid "This will get you a fresh instance of Infinispan running, with login and password 'user' and the REST port 8080 mapped to localhost. TIP: if you run more than one container, they'll form a cluster automatically."
+msgstr "これにより、ログインとパスワードが「user」で、REST ポート 8080 が localhost にマップされた Infinispan の新しいインスタンスが実行されます。ヒント: 複数のコンテナを実行すると、自動的にクラスタを形成します。"
 
 #. type: Title =====
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:43
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Creating an indexed cache"
 msgstr "インデックス付きキャッシュの作成"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:50
 #, fuzzy
-msgid ""
-"Next step is to create an indexed cache called 'pokemon'. We make use of the "
-"CLI  (Command Line Interface) to create this cache. In the future, with "
-"https://issues.jboss.org/browse/ISPN-8529[ISPN-8529], we'll also be able to "
-"create cache with arbitrary configuration using REST, but for now we execute "
-"a CLI recipe:"
-msgstr ""
-"次のステップは、「pokemon」というインデックス付きのキャッシュを作成することです。このキャッシュの作成にはCLI(Command Line "
-"Interface)を利用しています。将来的には link:https://issues.jboss.org/browse/ISPN-8529[ISPN-"
-"8529] でもRESTを使って任意の設定でキャッシュを作成できるようになると思いますが、今のところはCLIのレシピを実行しています。"
+msgid "Next step is to create an indexed cache called 'pokemon'. We make use of the CLI  (Command Line Interface) to create this cache. In the future, with https://issues.jboss.org/browse/ISPN-8529[ISPN-8529], we'll also be able to create cache with arbitrary configuration using REST, but for now we execute a CLI recipe:"
+msgstr "次のステップは、「pokemon」というインデックス付きのキャッシュを作成することです。このキャッシュの作成にはCLI(Command Line Interface)を利用しています。将来的には link:https://issues.jboss.org/browse/ISPN-8529[ISPN-8529] でもRESTを使って任意の設定でキャッシュを作成できるようになると思いますが、今のところはCLIのレシピを実行しています。"
 
 #. type: Title =====
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:54
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Creating the schema"
 msgstr "スキーマの作成"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:60
 #, fuzzy
-msgid ""
-"In order to be able to query, we need to define a protobuf schema for our "
-"data. The schema follows the Protobuf 2 format (Protobuf 3 support is "
-"coming) and allows for extensions to define indexing properties (analyzers, "
-"storage, etc)."
-msgstr ""
-"クエリを実行するためには、データ用の protobuf スキーマを定義する必要があります。このスキーマはProtobuf 2形式（Protobuf "
-"3のサポートが予定されています）に準拠しており、インデキシングプロパティ（分析器、ストレージなど）を定義するための拡張を可能にしています。"
+msgid "In order to be able to query, we need to define a protobuf schema for our data. The schema follows the Protobuf 2 format (Protobuf 3 support is coming) and allows for extensions to define indexing properties (analyzers, storage, etc)."
+msgstr "クエリを実行するためには、データ用の protobuf スキーマを定義する必要があります。このスキーマはProtobuf 2形式（Protobuf 3のサポートが予定されています）に準拠しており、インデキシングプロパティ（分析器、ストレージなど）を定義するための拡張を可能にしています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:62
@@ -166,18 +121,12 @@ msgstr "こんな感じです。"
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:69
 #, fuzzy
-msgid ""
-"The protobuf schema can contain some comments on top of fields and messages "
-"with \"annotations\" to control indexing. Hibernate Search users will "
-"recognize some of those pseudo annotations we are using here: they resemble "
-"closely their counterpart."
-msgstr ""
-"protobufスキーマは、フィールドやメッセージの上に、インデックス化を制御するための「注釈」を付けたコメントを含めることができます。Hibernate "
-"Searchのユーザーは、ここで使用している擬似的なアノテーションのいくつかを認識することができるでしょう。"
+msgid "The protobuf schema can contain some comments on top of fields and messages with \"annotations\" to control indexing. Hibernate Search users will recognize some of those pseudo annotations we are using here: they resemble closely their counterpart."
+msgstr "protobufスキーマは、フィールドやメッセージの上に、インデックス化を制御するための「注釈」を付けたコメントを含めることができます。Hibernate Searchのユーザーは、ここで使用している擬似的なアノテーションのいくつかを認識することができるでしょう。"
 
 #. type: Title =====
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:72
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Registering the schema"
 msgstr "スキーマの登録"
 
@@ -189,32 +138,21 @@ msgstr "スキーマを取得したら、REST経由で簡単にスキーマを�
 
 #. type: Title =====
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:79
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Populating the cache"
 msgstr "キャッシュの投入"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:85
 #, fuzzy
-msgid ""
-"We're now ready to put some data in the cache. As mentioned earlier, "
-"ingesting can be done by sending JSON documents directly. Once Infinispan "
-"receives those documents, it will convert them to protobuf, index and store "
-"them."
-msgstr ""
-"これで、キャッシュにデータを入れる準備が整いました。前述したように、インジェストはJSONドキュメントを直接送信することで行うことができます。Infinispanがそれらのドキュメントを受信すると、それらのドキュメントをprotobufに変換し、インデックスを付けて保存します。"
+msgid "We're now ready to put some data in the cache. As mentioned earlier, ingesting can be done by sending JSON documents directly. Once Infinispan receives those documents, it will convert them to protobuf, index and store them."
+msgstr "これで、キャッシュにデータを入れる準備が整いました。前述したように、インジェストはJSONドキュメントを直接送信することで行うことができます。Infinispanがそれらのドキュメントを受信すると、それらのドキュメントをprotobufに変換し、インデックスを付けて保存します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:90
 #, fuzzy
-msgid ""
-"In order to match a particular inbound document to an entity in the schema, "
-"Infinispan uses a special meta field called *__type_* that must be provided "
-"in the document. Here's an example of a JSON document that conforms to our "
-"schema:"
-msgstr ""
-"特定のインバウンドドキュメントとスキーマ内のエンティティを一致させるために、Infinispan は、ドキュメント内で提供されなければならない * "
-"__type_ * と呼ばれる特別なメタフィールドを使用します。ここでは、スキーマに適合する JSON ドキュメントの例を示します。"
+msgid "In order to match a particular inbound document to an entity in the schema, Infinispan uses a special meta field called *__type_* that must be provided in the document. Here's an example of a JSON document that conforms to our schema:"
+msgstr "特定のインバウンドドキュメントとスキーマ内のエンティティを一致させるために、Infinispan は、ドキュメント内で提供されなければならない * __type_ * と呼ばれる特別なメタフィールドを使用します。ここでは、スキーマに適合する JSON ドキュメントの例を示します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:93
@@ -230,30 +168,21 @@ msgstr "JSONとしてキーごとにコンテンツを取得することがで�
 
 #. type: Title =====
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:101
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Querying"
 msgstr "問い合わせ"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:107
 #, fuzzy
-msgid ""
-"The new query endpoint can be called with an \"action\" parameter named "
-"\"search\", after the cache name. The simplest query, which returns all data "
-"can be done with:"
-msgstr ""
-"新しいクエリエンドポイントは、キャッシュ名の後に\"search\"という名前の\"action\"パラメータを指定して呼び出すことができます。すべてのデータを返す最も単純なクエリは、以下のようにして行うことができます。"
+msgid "The new query endpoint can be called with an \"action\" parameter named \"search\", after the cache name. The simplest query, which returns all data can be done with:"
+msgstr "新しいクエリエンドポイントは、キャッシュ名の後に\"search\"という名前の\"action\"パラメータを指定して呼び出すことができます。すべてのデータを返す最も単純なクエリは、以下のようにして行うことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:110
 #, fuzzy
-msgid ""
-"http://localhost:8080/rest/pokemon?action=search&query=from%20Pokemon[http://"
-"localhost:8080/rest/pokemon?action=search&query=from Pokemon]"
-msgstr ""
-"link:http://localhost:8080/rest/pokemon?action=search&query="
-"from%20Pokemon[http://localhost:8080/rest/pokemon?action=search&query=from "
-"ポケモン]"
+msgid "http://localhost:8080/rest/pokemon?action=search&query=from%20Pokemon[http://localhost:8080/rest/pokemon?action=search&query=from Pokemon]"
+msgstr "link:http://localhost:8080/rest/pokemon?action=search&query=from%20Pokemon[http://localhost:8080/rest/pokemon?action=search&query=from ポケモン]"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:113
@@ -264,34 +193,20 @@ msgstr "すべてのフィールドを返したくない場合は、 _Select_ �
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:116
 #, fuzzy
-msgid ""
-"http://localhost:8080/rest/pokemon?action=search&query="
-"Select%20name,%20speed%20from%20Pokemon[http://localhost:8080/rest/"
-"pokemon?action=search&query=Select name, speed from Pokemon]"
-msgstr ""
-"link:http://localhost:8080/rest/pokemon?action=search&query="
-"Select%20name,%20speed%20from%20Pokemon[http://localhost:8080/rest/"
-"pokemon?action=search&query=Select 名前]"
+msgid "http://localhost:8080/rest/pokemon?action=search&query=Select%20name,%20speed%20from%20Pokemon[http://localhost:8080/rest/pokemon?action=search&query=Select name, speed from Pokemon]"
+msgstr "link:http://localhost:8080/rest/pokemon?action=search&query=Select%20name,%20speed%20from%20Pokemon[http://localhost:8080/rest/pokemon?action=search&query=Select 名前]"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:120
 #, fuzzy
-msgid ""
-"Pagination can be controlled with the _offset_, _max_results_ URL parameters:"
-""
+msgid "Pagination can be controlled with the _offset_, _max_results_ URL parameters:"
 msgstr "ページネーションは、 _offset_ _, max_results_ URLパラメータで制御できます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:123
 #, fuzzy
-msgid ""
-"http://localhost:8080/rest/pokemon?action=search&query=from%20Pokemon&offset="
-"2&max_results=20[http://localhost:8080/rest/pokemon?action=search&query=from "
-"Pokemon&offset=2&max_results=20]"
-msgstr ""
-"link:http://localhost:8080/rest/pokemon?action=search&query="
-"from%20Pokemon&offset=2&max_results=20[http://localhost:8080/rest/"
-"pokemon?action=search&query=from ポケモン&offset=2&max_results=20]"
+msgid "http://localhost:8080/rest/pokemon?action=search&query=from%20Pokemon&offset=2&max_results=20[http://localhost:8080/rest/pokemon?action=search&query=from Pokemon&offset=2&max_results=20]"
+msgstr "link:http://localhost:8080/rest/pokemon?action=search&query=from%20Pokemon&offset=2&max_results=20[http://localhost:8080/rest/pokemon?action=search&query=from ポケモン&offset=2&max_results=20]"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:126
@@ -302,15 +217,8 @@ msgstr "グループ化も可能です。"
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:129
 #, fuzzy
-msgid ""
-"http://localhost:8080/rest/pokemon?action=search&query=select%20count(p."
-"name)%20from%20Pokemon%20p%20group%20by%20generation[http://localhost:8080/"
-"rest/pokemon?action=search&query=select count(p.name) from Pokemon p group "
-"by generation]"
-msgstr ""
-"link:http://localhost:8080/rest/pokemon?action=search&query=select%20count(p."
-"name)%20from%20Pokemon%20p%20group%20by%20generation[http://localhost:8080/"
-"rest/pokemon?action=search&query=select 世代別ポケモンpグループからのcount(p.name)]"
+msgid "http://localhost:8080/rest/pokemon?action=search&query=select%20count(p.name)%20from%20Pokemon%20p%20group%20by%20generation[http://localhost:8080/rest/pokemon?action=search&query=select count(p.name) from Pokemon p group by generation]"
+msgstr "link:http://localhost:8080/rest/pokemon?action=search&query=select%20count(p.name)%20from%20Pokemon%20p%20group%20by%20generation[http://localhost:8080/rest/pokemon?action=search&query=select 世代別ポケモンpグループからのcount(p.name)]"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:132
@@ -321,16 +229,8 @@ msgstr "クエリ結果の例。"
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:136
 #, fuzzy
-msgid ""
-"http://localhost:8080/rest/pokemon?action=search&query="
-"select%20name,pokedex_number,against_fire%20from%20Pokemon%20order%20by%20against_fire%20asc&max_results="
-"5[http://localhost:8080/rest/pokemon?action=search&query=select "
-"name,pokedex_number,against_fire from Pokemon order by against_fire "
-"asc&max_results=5]"
-msgstr ""
-"link:http://localhost:8080/rest/pokemon?action=search&query="
-"select%20name,pokedex_number,against_fire%20from%20Pokemon%20order%20by%20against_fire%20asc&max_results="
-"5[http://localhost:8080/rest/pokemon?action=search&query=select 名前]"
+msgid "http://localhost:8080/rest/pokemon?action=search&query=select%20name,pokedex_number,against_fire%20from%20Pokemon%20order%20by%20against_fire%20asc&max_results=5[http://localhost:8080/rest/pokemon?action=search&query=select name,pokedex_number,against_fire from Pokemon order by against_fire asc&max_results=5]"
+msgstr "link:http://localhost:8080/rest/pokemon?action=search&query=select%20name,pokedex_number,against_fire%20from%20Pokemon%20order%20by%20against_fire%20asc&max_results=5[http://localhost:8080/rest/pokemon?action=search&query=select 名前]"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:138
@@ -340,52 +240,36 @@ msgstr "結果が出ました。"
 
 #. type: Title ===
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:144
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Conclusion"
 msgstr "結論"
 
 #. type: Title ===
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:146
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid " "
 msgstr " "
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:151
 #, fuzzy
-msgid ""
-"Infinispan 9.2 makes it easier to quickly ingest and query datasets using "
-"the ubiquitous JSON format, without sacrificing type safety and storage size."
-""
-msgstr ""
-"Infinispan 9."
-"2では、型の安全性やストレージサイズを犠牲にすることなく、ユビキタスなJSONフォーマットを使用したデータセットのインジェストやクエリを素早く簡単に行うことができます。"
+msgid "Infinispan 9.2 makes it easier to quickly ingest and query datasets using the ubiquitous JSON format, without sacrificing type safety and storage size."
+msgstr "Infinispan 9.2では、型の安全性やストレージサイズを犠牲にすることなく、ユビキタスなJSONフォーマットを使用したデータセットのインジェストやクエリを素早く簡単に行うことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:155
 #, fuzzy
-msgid ""
-"By storing Protobuf, this will also enable other clients like the Hot Rod C#/"
-"C++ clients to query, read and write data simultaneously with REST clients."
-msgstr ""
-"Protobufを格納することで、Hot Rod C#/"
-"C++クライアントのような他のクライアントも、RESTクライアントと同時にデータの問い合わせ、読み書きができるようになります。"
+msgid "By storing Protobuf, this will also enable other clients like the Hot Rod C#/C++ clients to query, read and write data simultaneously with REST clients."
+msgstr "Protobufを格納することで、Hot Rod C#/C++クライアントのような他のクライアントも、RESTクライアントと同時にデータの問い合わせ、読み書きができるようになります。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:159
 #, fuzzy
-msgid ""
-"The full source code for the demo, along with instructions on how to "
-"populate the whole dataset can be found at https://github.com/infinispan-"
-"demos/infinispan-pokemon[Github]."
-msgstr ""
-"デモ用の完全なソースコードと、データセット全体にデータを投入する方法は link:https://github.com/infinispan-demos/"
-"infinispan-pokemon[Github] で見ることができます。"
+msgid "The full source code for the demo, along with instructions on how to populate the whole dataset can be found at https://github.com/infinispan-demos/infinispan-pokemon[Github]."
+msgstr "デモ用の完全なソースコードと、データセット全体にデータを投入する方法は link:https://github.com/infinispan-demos/infinispan-pokemon[Github] で見ることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-09-restful-queries-coming-to-infinispan-92.adoc:162
 #, fuzzy
-msgid ""
-"Finally, please try out this new feature in your own dataset and let us know "
-"how it goes!"
+msgid "Finally, please try out this new feature in your own dataset and let us know how it goes!"
 msgstr "最後に、この新機能をご自身のデータセットで試してみてください。"

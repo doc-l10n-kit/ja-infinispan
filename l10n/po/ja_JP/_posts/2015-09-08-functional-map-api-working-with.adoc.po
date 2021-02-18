@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-09-08-functional-map-api-working-with.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-08-functional-map-api-working-with.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 'Functional Map API: Working with multiple entries'\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2015-09-08T09:34:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \" functional\",\"API\", \"lambda\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"5220228434807539010\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/09/functional-map-api-"
-"working-with.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5220228434807539010\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/09/functional-map-api-working-with.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,281 +42,116 @@ msgstr ""
 "date: '2015-09-08T09:34:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \" functional\",\"API\", \"lambda\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"5220228434807539010\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/09/functional-map-api-"
-"working-with.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5220228434807539010\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/09/functional-map-api-working-with.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-08-functional-map-api-working-with.adoc:15
 #, fuzzy
-msgid ""
-"We continue with the blog series on the experimental Functional Map API "
-"which was released as part of Infinispan 8.0.0.Final. In this blog post "
-"we'll be focusing on how to work with multiple entries at the same time.  "
-"For reference, here are the previous entries in the series:"
-msgstr ""
-"Infinispan 8.0.0.Finalの一部としてリリースされた実験的なFunctional Map "
-"APIについてのブログシリーズの続きです。今回のブログ記事では、複数のエントリーを同時に操作する方法を中心に紹介します。参考までに、これまでのシリーズのエントリーをご紹介します。"
+msgid "We continue with the blog series on the experimental Functional Map API which was released as part of Infinispan 8.0.0.Final. In this blog post we'll be focusing on how to work with multiple entries at the same time.  For reference, here are the previous entries in the series:"
+msgstr "Infinispan 8.0.0.Finalの一部としてリリースされた実験的なFunctional Map APIについてのブログシリーズの続きです。今回のブログ記事では、複数のエントリーを同時に操作する方法を中心に紹介します。参考までに、これまでのシリーズのエントリーをご紹介します。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-08-functional-map-api-working-with.adoc:18
 #, fuzzy
-msgid ""
-"http://blog.infinispan.org/2015/08/new-functional-map-api-in-infinispan-8."
-"html[Functional Map Introduction]"
-msgstr ""
-"link:http://blog.infinispan.org/2015/08/new-functional-map-api-in-infinispan-"
-"8.html[機能マップの紹介]"
+msgid "http://blog.infinispan.org/2015/08/new-functional-map-api-in-infinispan-8.html[Functional Map Introduction]"
+msgstr "link:http://blog.infinispan.org/2015/08/new-functional-map-api-in-infinispan-8.html[機能マップの紹介]"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-08-functional-map-api-working-with.adoc:20
 #, fuzzy
-msgid ""
-"http://blog.infinispan.org/2015/09/functional-map-api-working-with-single."
-"html[Working with single entries]"
-msgstr ""
-"link:http://blog.infinispan.org/2015/09/functional-map-api-working-with-"
-"single.html[シングルエントリーでの作業]"
+msgid "http://blog.infinispan.org/2015/09/functional-map-api-working-with-single.html[Working with single entries]"
+msgstr "link:http://blog.infinispan.org/2015/09/functional-map-api-working-with-single.html[シングルエントリーでの作業]"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-08-functional-map-api-working-with.adoc:41
 #, fuzzy
-msgid ""
-"The approach taken by the Functional Map API when working with multiple keys "
-"is to provide a lazy, pull-style API. All multi-key operations take a "
-"collection parameter which indicates the keys to work with (and sometimes "
-"contain value information too), and a function to execute for each key/value "
-"pair. Each function's ability depends on the entry view received as function "
-"parameter, which changes depending on the underlying map: https://docs.jboss."
-"org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/EntryView."
-"ReadEntryView.html[ReadEntryView] for https://docs.jboss.org/infinispan/8.0/"
-"apidocs/org/infinispan/commons/api/functional/FunctionalMap.ReadOnlyMap."
-"html[ReadOnlyMap], https://docs.jboss.org/infinispan/8.0/apidocs/org/"
-"infinispan/commons/api/functional/EntryView.WriteEntryView."
-"html[WriteEntryView] for https://docs.jboss.org/infinispan/8.0/apidocs/org/"
-"infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap."
-"html[WriteOnlyMap], or https://docs.jboss.org/infinispan/8.0/apidocs/org/"
-"infinispan/commons/api/functional/EntryView.ReadWriteEntryView."
-"html[ReadWriteView] for https://docs.jboss.org/infinispan/8.0/apidocs/org/"
-"infinispan/commons/api/functional/FunctionalMap.ReadWriteMap."
-"html[ReadWriteMap].  The return type for all multi-key operations, except "
-"the ones from https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/"
-"commons/api/functional/FunctionalMap.WriteOnlyMap.html[WriteOnlyMap], return "
-"an instance of https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/"
-"commons/api/functional/Traversable.html[Traversable] which exposes methods "
-"for working with the returned data from each function execution. Let's see "
-"an example:"
-msgstr ""
-"複数のキーを操作する際に Functional Map API が取るアプローチは、遅延したプルスタイルの API "
-"を提供することです。すべての複数のキー操作は、操作するキーを示すコレクションパラメータと、各キー/"
-"値のペアに対して実行される関数を取ります(場合によっては値の情報も含まれます)。各関数の能力は、関数パラメータとして受け取ったエントリビューに依存します。 "
-"link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/"
-"api/functional/FunctionalMap.ReadOnlyMap.html[ReadOnlyMapの] 場合は link:https://"
-"docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/"
-"EntryView.ReadEntryView.html[ReadEntryView] link:https://docs.jboss.org/"
-"infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap."
-"ReadOnlyMap.html[、] link:https://docs.jboss.org/infinispan/8.0/apidocs/org/"
-"infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap."
-"html[WriteOnlyMap] の場合 link:https://docs.jboss.org/infinispan/8.0/apidocs/"
-"org/infinispan/commons/api/functional/EntryView.WriteEntryView."
-"html[はWriteEntryView] link:https://docs.jboss.org/infinispan/8.0/apidocs/org/"
-"infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html[、] "
-"ReadWriteMapの link:https://docs.jboss.org/infinispan/8.0/apidocs/org/"
-"infinispan/commons/api/functional/EntryView.ReadWriteEntryView."
-"html[場合はReadWriteView] となります。 link:https://docs.jboss.org/infinispan/8.0/"
-"apidocs/org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap."
-"html[WriteOnlyMap] 以外のすべてのマルチキー操作のリターン型は、各関数の実行から返されたデータを操作するためのメソッドを公開する "
-"link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/"
-"api/functional/Traversable.html[Traversable] のインスタンスを返します。例を見てみましょう。"
+msgid "The approach taken by the Functional Map API when working with multiple keys is to provide a lazy, pull-style API. All multi-key operations take a collection parameter which indicates the keys to work with (and sometimes contain value information too), and a function to execute for each key/value pair. Each function's ability depends on the entry view received as function parameter, which changes depending on the underlying map: https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/EntryView.ReadEntryView.html[ReadEntryView] for https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.ReadOnlyMap.html[ReadOnlyMap], https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/EntryView.WriteEntryView.html[WriteEntryView] for https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html[WriteOnlyMap], or https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/EntryView.ReadWriteEntryView.html[ReadWriteView] for https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.ReadWriteMap.html[ReadWriteMap].  The return type for all multi-key operations, except the ones from https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html[WriteOnlyMap], return an instance of https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/Traversable.html[Traversable] which exposes methods for working with the returned data from each function execution. Let's see an example:"
+msgstr "複数のキーを操作する際に Functional Map API が取るアプローチは、遅延したプルスタイルの API を提供することです。すべての複数のキー操作は、操作するキーを示すコレクションパラメータと、各キー/値のペアに対して実行される関数を取ります(場合によっては値の情報も含まれます)。各関数の能力は、関数パラメータとして受け取ったエントリビューに依存します。 link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.ReadOnlyMap.html[ReadOnlyMapの] 場合は link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/EntryView.ReadEntryView.html[ReadEntryView] link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.ReadOnlyMap.html[、] link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html[WriteOnlyMap] の場合 link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/EntryView.WriteEntryView.html[はWriteEntryView] link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html[、] ReadWriteMapの link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/EntryView.ReadWriteEntryView.html[場合はReadWriteView] となります。 link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html[WriteOnlyMap] 以外のすべてのマルチキー操作のリターン型は、各関数の実行から返されたデータを操作するためのメソッドを公開する link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/Traversable.html[Traversable] のインスタンスを返します。例を見てみましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-08-functional-map-api-working-with.adoc:48
 #, fuzzy
-msgid ""
-"This example demonstrates some of the key aspects of working with multiple "
-"entries using the Functional Map API:"
+msgid "This example demonstrates some of the key aspects of working with multiple entries using the Functional Map API:"
 msgstr "この例では、Functional Map API を使用して複数のエントリを操作する際の重要な側面をいくつか示しています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-08-functional-map-api-working-with.adoc:56
 #, fuzzy
-msgid ""
-"As explained in the previous blog post, all data-handling methods (including "
-"multi-key methods) for https://docs.jboss.org/infinispan/8.0/apidocs/org/"
-"infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap."
-"html[WriteOnlyMap] return https://docs.oracle.com/javase/8/docs/api/java/"
-"util/concurrent/CompletableFuture.html[CompletableFuture<Void>], because "
-"there's nothing the function can provide that could not be computed in "
-"advance or outside the function."
-msgstr ""
-"以前のブログ記事で説明したように、 link:https://docs.jboss.org/infinispan/8.0/apidocs/org/"
-"infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap."
-"html[WriteOnlyMap の] すべてのデータ処理メソッド (マルチキーメソッドを含む) は link:https://docs.oracle."
-"com/javase/8/docs/api/java/util/concurrent/CompletableFuture."
-"html[CompletableFuture<Void> を] 返します。"
+msgid "As explained in the previous blog post, all data-handling methods (including multi-key methods) for https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html[WriteOnlyMap] return https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html[CompletableFuture<Void>], because there's nothing the function can provide that could not be computed in advance or outside the function."
+msgstr "以前のブログ記事で説明したように、 link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.WriteOnlyMap.html[WriteOnlyMap の] すべてのデータ処理メソッド (マルチキーメソッドを含む) は link:https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html[CompletableFuture<Void> を] 返します。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-08-functional-map-api-working-with.adoc:60
 #, fuzzy
-msgid ""
-"Normally, the order of the https://docs.jboss.org/infinispan/8.0/apidocs/org/"
-"infinispan/commons/api/functional/Traversable.html[Traversable] matches the "
-"order of the input collection though this is not currently guaranteed."
-msgstr ""
-"通常、 link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/"
-"commons/api/functional/Traversable.html[トラバーサブル] "
-"の順序は入力コレクションの順序と一致しますが、これは現在のところ保証されていません。"
+msgid "Normally, the order of the https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/Traversable.html[Traversable] matches the order of the input collection though this is not currently guaranteed."
+msgstr "通常、 link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/Traversable.html[トラバーサブル] の順序は入力コレクションの順序と一致しますが、これは現在のところ保証されていません。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-08-functional-map-api-working-with.adoc:65
 #, fuzzy
-msgid ""
-"There is a special type of multi-key operations which work on all keys/"
-"entries stored in Infinispan. The behaviour is very similar to the multi-key "
-"operations shown above, with the exception that they do not take a "
-"collection of keys (and/or values) as parameters:"
-msgstr ""
-"特別なタイプのマルチキー操作があり、Infinispan に格納されているすべてのキー/"
-"エントリに対して動作します。動作は上記のマルチキー操作と非常に似ていますが、キー（および/"
-"または値）の集合をパラメータとして取らないという例外があります。"
+msgid "There is a special type of multi-key operations which work on all keys/entries stored in Infinispan. The behaviour is very similar to the multi-key operations shown above, with the exception that they do not take a collection of keys (and/or values) as parameters:"
+msgstr "特別なタイプのマルチキー操作があり、Infinispan に格納されているすべてのキー/エントリに対して動作します。動作は上記のマルチキー操作と非常に似ていますが、キー（および/または値）の集合をパラメータとして取らないという例外があります。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-08-functional-map-api-working-with.adoc:72
 #, fuzzy
-msgid ""
-"There's a few interesting things to note about working with all entries "
-"using the Functional Map API:"
+msgid "There's a few interesting things to note about working with all entries using the Functional Map API:"
 msgstr "Functional Map API を使用してすべてのエントリを操作する際には、いくつかの興味深い点があります。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-08-functional-map-api-working-with.adoc:76
 #, fuzzy
-msgid ""
-"When working with all entries, the order of the https://docs.jboss.org/"
-"infinispan/8.0/apidocs/org/infinispan/commons/api/functional/Traversable."
-"html[Traversable] is not guaranteed."
-msgstr ""
-"すべてのエントリで作業する場合、 link:https://docs.jboss.org/infinispan/8.0/apidocs/org/"
-"infinispan/commons/api/functional/Traversable.html[トラバース可能な] 順序は保証されません。"
+msgid "When working with all entries, the order of the https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/Traversable.html[Traversable] is not guaranteed."
+msgstr "すべてのエントリで作業する場合、 link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/Traversable.html[トラバース可能な] 順序は保証されません。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-08-functional-map-api-working-with.adoc:87
 #, fuzzy
-msgid ""
-"Read-only's https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/"
-"commons/api/functional/FunctionalMap.ReadOnlyMap.html#keys--[keys()] and "
-"https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/"
-"functional/FunctionalMap.ReadOnlyMap.html#entries--[entries()] offer the "
-"possibility to traverse all keys and entries present in the cache. When "
-"traversing entries, both keys and values including metadata are available. "
-"Contrary to Java's http://docs.oracle.com/javase/8/docs/api/java/util/"
-"concurrent/ConcurrentMap.html[ConcurrentMap], there's no possibility to "
-"navigate only the values (and metadata) since there's little to be gained "
-"from such method and once a key's entry has been retrieved, there's no extra "
-"cost to provide the key as well."
-msgstr ""
-"リードオンリーの link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/"
-"commons/api/functional/FunctionalMap.ReadOnlyMap.html#keys--[keys()] と link:"
-"https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/"
-"functional/FunctionalMap.ReadOnlyMap.html#entries--[entries() は] "
-"、キャッシュ内に存在するすべてのキーとエントリを追跡することができます。エントリを探索する際には、メタデータを含むキーと値の両方が利用可能です。Javaの "
-"link:http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/"
-"ConcurrentMap.html[ConcurrentMap] "
-"とは逆に、値(とメタデータ)だけを辿ることはできませんが、このような方法では得るものが少なく、一度キーのエントリを取得してしまえば、キーを提供するための余分なコストがかかりません。"
+msgid "Read-only's https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.ReadOnlyMap.html#keys--[keys()] and https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.ReadOnlyMap.html#entries--[entries()] offer the possibility to traverse all keys and entries present in the cache. When traversing entries, both keys and values including metadata are available. Contrary to Java's http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentMap.html[ConcurrentMap], there's no possibility to navigate only the values (and metadata) since there's little to be gained from such method and once a key's entry has been retrieved, there's no extra cost to provide the key as well."
+msgstr "リードオンリーの link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.ReadOnlyMap.html#keys--[keys()] と link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/FunctionalMap.ReadOnlyMap.html#entries--[entries() は] 、キャッシュ内に存在するすべてのキーとエントリを追跡することができます。エントリを探索する際には、メタデータを含むキーと値の両方が利用可能です。Javaの link:http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentMap.html[ConcurrentMap] とは逆に、値(とメタデータ)だけを辿ることはできませんが、このような方法では得るものが少なく、一度キーのエントリを取得してしまえば、キーを提供するための余分なコストがかかりません。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-08-functional-map-api-working-with.adoc:94
 #, fuzzy
-msgid ""
-"It's worth noting that when we sat down to think about how to work with "
-"multiple entries, we considered having a push-style API where the user would "
-"receive callbacks pushed as the entries to work with were located.  This is "
-"the approach that reactive APIs such as http://reactivex.io/[Rx] follow, but "
-"we decided against using such APIs at this level for several reasons:"
-msgstr ""
-"注目に値するのは、複数のエントリを扱う方法を考えたときに、私たちはプッシュ型のAPIを考えました。これは link:http://reactivex."
-"io/[Rx の] ようなリアクティブ API が採用しているアプローチですが、いくつかの理由から、このレベルではこのような API "
-"を使用しないことにしました。"
+msgid "It's worth noting that when we sat down to think about how to work with multiple entries, we considered having a push-style API where the user would receive callbacks pushed as the entries to work with were located.  This is the approach that reactive APIs such as http://reactivex.io/[Rx] follow, but we decided against using such APIs at this level for several reasons:"
+msgstr "注目に値するのは、複数のエントリを扱う方法を考えたときに、私たちはプッシュ型のAPIを考えました。これは link:http://reactivex.io/[Rx の] ようなリアクティブ API が採用しているアプローチですが、いくつかの理由から、このレベルではこのような API を使用しないことにしました。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-08-functional-map-api-working-with.adoc:99
 #, fuzzy
-msgid ""
-"We have huge interest in providing a Rx-style API for Infinispan, but we "
-"didn't want the core API to have a dependency on http://reactivex.io/[Rx] or "
-"http://www.reactive-streams.org/[Reactive Streams]. "
-msgstr ""
-"InfinispanにRxスタイルのAPIを提供することに大きな関心を持っていましたが、コアAPIが link:http://reactivex.io/"
-"[Rx] や link:http://www.reactive-streams.org/[Reactive Streams] "
-"に依存していることは避けたいと考えていました。"
+msgid "We have huge interest in providing a Rx-style API for Infinispan, but we didn't want the core API to have a dependency on http://reactivex.io/[Rx] or http://www.reactive-streams.org/[Reactive Streams]. "
+msgstr "InfinispanにRxスタイルのAPIを提供することに大きな関心を持っていましたが、コアAPIが link:http://reactivex.io/[Rx] や link:http://www.reactive-streams.org/[Reactive Streams] に依存していることは避けたいと考えていました。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-08-functional-map-api-working-with.adoc:102
 #, fuzzy
-msgid ""
-"We didn't want to reimplement a push-style async API since this is not "
-"trivial to do and requires careful thinking, specially around back-pressure "
-"and flow control."
-msgstr ""
-"プッシュスタイルのasync "
-"APIを再実装したくなかったのは、これを行うには些細なことではなく、特に背圧やフロー制御について慎重に考える必要があるからです。"
+msgid "We didn't want to reimplement a push-style async API since this is not trivial to do and requires careful thinking, specially around back-pressure and flow control."
+msgstr "プッシュスタイルのasync APIを再実装したくなかったのは、これを行うには些細なことではなく、特に背圧やフロー制御について慎重に考える必要があるからです。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-08-functional-map-api-working-with.adoc:104
 #, fuzzy
-msgid ""
-"Push-style APIs require more work on the user side compared to pull-style "
-"APIs."
+msgid "Push-style APIs require more work on the user side compared to pull-style APIs."
 msgstr "プッシュスタイルのAPIは、プルスタイルのAPIと比較して、ユーザー側でより多くの作業を必要とします。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-08-functional-map-api-working-with.adoc:109
 #, fuzzy
-msgid ""
-"Pull-style APIs can still be lazy and partly asynchronous since the user can "
-"decide to work with the https://docs.jboss.org/infinispan/8.0/apidocs/org/"
-"infinispan/commons/api/functional/Traversable.html[Traversable] at a later "
-"stage, and the separation between intermediate and terminating operations "
-"provides a good abstraction to avoid unnecessary computation."
-msgstr ""
-"Pull-style API は、ユーザーが後の段階 link:https://docs.jboss.org/infinispan/8.0/"
-"apidocs/org/infinispan/commons/api/functional/Traversable.html[で "
-"Traversable] "
-"を使って作業することを決めることができるので、まだ怠惰で部分的に非同期である可能性があり、中間操作と終了操作を分離することで不必要な計算を避けるための良い抽象化を提供します。"
+msgid "Pull-style APIs can still be lazy and partly asynchronous since the user can decide to work with the https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/Traversable.html[Traversable] at a later stage, and the separation between intermediate and terminating operations provides a good abstraction to avoid unnecessary computation."
+msgstr "Pull-style API は、ユーザーが後の段階 link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/Traversable.html[で Traversable] を使って作業することを決めることができるので、まだ怠惰で部分的に非同期である可能性があり、中間操作と終了操作を分離することで不必要な計算を避けるための良い抽象化を提供します。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-08-functional-map-api-working-with.adoc:120
 #, fuzzy
-msgid ""
-"In fact, it is this desire to keep a clear separation between intermediate "
-"and terminating operations at https://docs.jboss.org/infinispan/8.0/apidocs/"
-"org/infinispan/commons/api/functional/Traversable.html[Traversable] that has "
-"resulted in having no manual way to iterate over the https://docs.jboss.org/"
-"infinispan/8.0/apidocs/org/infinispan/commons/api/functional/Traversable."
-"html[Traversable].  In other words, there is no iterator() nor spliterator() "
-"methods in https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/"
-"commons/api/functional/Traversable.html[Traversable] since these are often "
-"associated with manual, user-end iteration, and we want to avoid such thing "
-"since in the majority of cases, Infinispan knows best how to exactly iterate "
-"over the data."
-msgstr ""
-"実際には、 link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/"
-"commons/api/functional/Traversable.html[Traversable] "
-"で中間操作と終了操作を明確に分離しておきたいという願望が、結果として link:https://docs.jboss.org/infinispan/8."
-"0/apidocs/org/infinispan/commons/api/functional/Traversable."
-"html[Traversable] 上での反復処理を手動で行う方法を持たないことにつながっています。言い換えれば、 link:https://docs."
-"jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/"
-"Traversable.html[Traversable] "
-"にはイテレータ()やスプリテレータ()メソッドがありません。これは、これらのメソッドは、多くの場合、手動でのユーザーエンドの反復処理に関連しています。"
+msgid "In fact, it is this desire to keep a clear separation between intermediate and terminating operations at https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/Traversable.html[Traversable] that has resulted in having no manual way to iterate over the https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/Traversable.html[Traversable].  In other words, there is no iterator() nor spliterator() methods in https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/Traversable.html[Traversable] since these are often associated with manual, user-end iteration, and we want to avoid such thing since in the majority of cases, Infinispan knows best how to exactly iterate over the data."
+msgstr "実際には、 link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/Traversable.html[Traversable] で中間操作と終了操作を明確に分離しておきたいという願望が、結果として link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/Traversable.html[Traversable] 上での反復処理を手動で行う方法を持たないことにつながっています。言い換えれば、 link:https://docs.jboss.org/infinispan/8.0/apidocs/org/infinispan/commons/api/functional/Traversable.html[Traversable] にはイテレータ()やスプリテレータ()メソッドがありません。これは、これらのメソッドは、多くの場合、手動でのユーザーエンドの反復処理に関連しています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-08-functional-map-api-working-with.adoc:125
 #, fuzzy
-msgid ""
-"In the next blog post, we'll be looking at how to work with listeners using "
-"the Functional Map API."
+msgid "In the next blog post, we'll be looking at how to work with listeners using the Functional Map API."
 msgstr "次回のブログ記事では、Functional Map APIを使ったリスナーとの連携方法を見ていきます。"
 
 #. type: Plain text

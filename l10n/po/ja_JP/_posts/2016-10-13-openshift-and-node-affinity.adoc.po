@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:12
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: OpenShift and Node Affinity\n"
@@ -34,10 +34,8 @@ msgid ""
 "tags: [ \"openshift\",\n"
 "\"affinity\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3808154661837147870\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/10/openshift-and-node-"
-"affinity.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3808154661837147870\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/10/openshift-and-node-affinity.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -48,81 +46,39 @@ msgstr ""
 "tags: [ \"openshift\",\n"
 "\"affinity\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3808154661837147870\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/10/openshift-and-node-"
-"affinity.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3808154661837147870\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/10/openshift-and-node-affinity.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:18
 #, fuzzy
-msgid ""
-"OpenShift (and Kubernetes) has a great feature called https://docs.openshift."
-"org/latest/admin_guide/scheduler.html#affinity[Affinity].  In some "
-"scenarios, it might be beneficial to configure it along with http://"
-"infinispan.org/docs/stable/user_guide/user_guide."
-"html#ServerHinting[Infinispan node affinity]."
-msgstr ""
-"OpenShift（とKubernetes）には link:https://docs.openshift.org/latest/admin_guide/"
-"scheduler.html#affinity[Affinity] という素晴らしい機能があります。シナリオによっては、 link:http://"
-"infinispan.org/docs/stable/user_guide/user_guide."
-"html#ServerHinting[Infinispanのノードアフィニティ] と一緒に設定すると有益かもしれません。"
+msgid "OpenShift (and Kubernetes) has a great feature called https://docs.openshift.org/latest/admin_guide/scheduler.html#affinity[Affinity].  In some scenarios, it might be beneficial to configure it along with http://infinispan.org/docs/stable/user_guide/user_guide.html#ServerHinting[Infinispan node affinity]."
+msgstr "OpenShift（とKubernetes）には link:https://docs.openshift.org/latest/admin_guide/scheduler.html#affinity[Affinity] という素晴らしい機能があります。シナリオによっては、 link:http://infinispan.org/docs/stable/user_guide/user_guide.html#ServerHinting[Infinispanのノードアフィニティ] と一緒に設定すると有益かもしれません。"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:25
 #, fuzzy
-msgid ""
-"Before we start... this tutorial is heavily based on our http://blog."
-"infinispan.org/2016/08/running-infinispan-cluster-on-openshift.html[previous "
-"blog post about deploying Infinispan on Openshift] and OpenShift https://"
-"docs.openshift.org/latest/admin_guide/scheduler.html[Scheduler "
-"functionality]. It is highly recommended to read those articles before "
-"continuing this tutorial."
-msgstr ""
-"始める前に...このチュートリアルは、 link:http://blog.infinispan.org/2016/08/running-"
-"infinispan-cluster-on-openshift.html[Openshift上でのInfinispanのデプロイ] とOpenShift "
-"link:https://docs.openshift.org/latest/admin_guide/scheduler."
-"html[Schedulerの機能] link:http://blog.infinispan.org/2016/08/running-"
-"infinispan-cluster-on-openshift.html[についての以前のブログ記事に] "
-"大きく基づいています。このチュートリアルを続ける前に、これらの記事を読むことを強くお勧めします。"
+msgid "Before we start... this tutorial is heavily based on our http://blog.infinispan.org/2016/08/running-infinispan-cluster-on-openshift.html[previous blog post about deploying Infinispan on Openshift] and OpenShift https://docs.openshift.org/latest/admin_guide/scheduler.html[Scheduler functionality]. It is highly recommended to read those articles before continuing this tutorial."
+msgstr "始める前に...このチュートリアルは、 link:http://blog.infinispan.org/2016/08/running-infinispan-cluster-on-openshift.html[Openshift上でのInfinispanのデプロイ] とOpenShift link:https://docs.openshift.org/latest/admin_guide/scheduler.html[Schedulerの機能] link:http://blog.infinispan.org/2016/08/running-infinispan-cluster-on-openshift.html[についての以前のブログ記事に] 大きく基づいています。このチュートリアルを続ける前に、これらの記事を読むことを強くお勧めします。"
 
 #. type: Title ==
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:26
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "How does the Affinity feature work... in short?"
 msgstr "アフィニティ機能の仕組み...簡単に言うと？"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:36
 #, fuzzy
-msgid ""
-"In order to decide on which node given Pod should be running, OpenShift "
-"looks at so called https://docs.openshift.org/latest/admin_guide/scheduler."
-"html#configurable-predicates[Predicates] and https://docs.openshift.org/"
-"latest/admin_guide/scheduler.html#available-priority-functions[Priority "
-"Functions]. A predicate must match the one configured in "
-"_DeploymentConfiguration_ and Priority Function is responsible for choosing "
-"the best node for running Pods."
-msgstr ""
-"与えられたPodをどのノードで実行するかを決定するために、OpenShiftはいわゆる link:https://docs.openshift.org/"
-"latest/admin_guide/scheduler.html#configurable-predicates[述語] と link:https://"
-"docs.openshift.org/latest/admin_guide/scheduler.html#available-priority-"
-"functions[優先度関数] を調べます。述語は _DeploymentConfiguration_ "
-"で設定されたものと一致している必要があり、Priority関数はPodを実行するのに最適なノードを選択する役割を担っています。"
+msgid "In order to decide on which node given Pod should be running, OpenShift looks at so called https://docs.openshift.org/latest/admin_guide/scheduler.html#configurable-predicates[Predicates] and https://docs.openshift.org/latest/admin_guide/scheduler.html#available-priority-functions[Priority Functions]. A predicate must match the one configured in _DeploymentConfiguration_ and Priority Function is responsible for choosing the best node for running Pods."
+msgstr "与えられたPodをどのノードで実行するかを決定するために、OpenShiftはいわゆる link:https://docs.openshift.org/latest/admin_guide/scheduler.html#configurable-predicates[述語] と link:https://docs.openshift.org/latest/admin_guide/scheduler.html#available-priority-functions[優先度関数] を調べます。述語は _DeploymentConfiguration_ で設定されたものと一致している必要があり、Priority関数はPodを実行するのに最適なノードを選択する役割を担っています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:44
 #, fuzzy
-msgid ""
-"Let's assume that we have a sample policy (similar to https://docs.openshift."
-"org/latest/admin_guide/scheduler.html#scheduler-sample-policies[one provided "
-"in OpenShift manual]), that uses _site_ as a Predicate along with _rack and "
-"machine_ as Priority Functions. Now let's assume we have two nodes:"
-msgstr ""
-"ここでは、 _サイトを_ 述語として使用し、ラック _とマシンを_ 優先度関数 _として_ 使用するサンプルポリシー（ link:https://"
-"docs.openshift.org/latest/admin_guide/scheduler.html#scheduler-sample-"
-"policies[OpenShiftマニュアルに記載されている] ものに似ています）があるとします。ここで、2つのノードがあるとします。"
+msgid "Let's assume that we have a sample policy (similar to https://docs.openshift.org/latest/admin_guide/scheduler.html#scheduler-sample-policies[one provided in OpenShift manual]), that uses _site_ as a Predicate along with _rack and machine_ as Priority Functions. Now let's assume we have two nodes:"
+msgstr "ここでは、 _サイトを_ 述語として使用し、ラック _とマシンを_ 優先度関数 _として_ 使用するサンプルポリシー（ link:https://docs.openshift.org/latest/admin_guide/scheduler.html#scheduler-sample-policies[OpenShiftマニュアルに記載されている] ものに似ています）があるとします。ここで、2つのノードがあるとします。"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:46
@@ -139,13 +95,8 @@ msgstr "ノード2 - サイト=US、ラック=R2、マシン=VM2"
 #. type: Plain text
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:51
 #, fuzzy
-msgid ""
-"And two DeploymentConfiguration with Node Selectors (this tells OpenShift on "
-"which nodes given _DeploymentConfiguration_ wishes to run)  defined as "
-"follows:"
-msgstr ""
-"そして、以下のように定義されたノードセレクタ付きの2つのDeploymentConfiguration（これは、与えられた "
-"_DeploymentConfigurationが_ 実行したいノードをOpenShiftに伝えます）。"
+msgid "And two DeploymentConfiguration with Node Selectors (this tells OpenShift on which nodes given _DeploymentConfiguration_ wishes to run)  defined as follows:"
+msgstr "そして、以下のように定義されたノードセレクタ付きの2つのDeploymentConfiguration（これは、与えられた _DeploymentConfigurationが_ 実行したいノードをOpenShiftに伝えます）。"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:53
@@ -162,94 +113,56 @@ msgstr "DeploymentConfiguration 2 - site=JAP, rack=R5, machine=VM5"
 #. type: Plain text
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:58
 #, fuzzy
-msgid ""
-"With the above example only DeploymentConfiguration 1 will be scheduled (on "
-"Node 1), since _site_ matches the predicate. In this case _rack_ and "
-"_machine_ parameters are not used (because we have only one node)."
-msgstr ""
-"上記の例では、 _サイトが_ 述語に一致するため、DeploymentConfiguration 1 のみがスケジューリングされます（ノード 1 "
-"上）。この場合、 _ラック_ と _マシンの_ パラメータは使用されません（ノードが1つしかないので）。"
+msgid "With the above example only DeploymentConfiguration 1 will be scheduled (on Node 1), since _site_ matches the predicate. In this case _rack_ and _machine_ parameters are not used (because we have only one node)."
+msgstr "上記の例では、 _サイトが_ 述語に一致するため、DeploymentConfiguration 1 のみがスケジューリングされます（ノード 1 上）。この場合、 _ラック_ と _マシンの_ パラメータは使用されません（ノードが1つしかないので）。"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:66
 #, fuzzy
-msgid ""
-"Note that the default OpenShift's configuration uses _region_ (as a "
-"Predicate) and _zone_ (as a Priority Function). However it can be "
-"reconfigured https://docs.openshift.org/latest/admin_guide/scheduler."
-"html[very easily]. "
-msgstr ""
-"OpenShiftのデフォルトの設定では、リー _ジョン_ （Predicateとして）と _ゾーン_ （Priority "
-"Functionとして）を使用していることに注意してください。しかし、これは link:https://docs.openshift.org/"
-"latest/admin_guide/scheduler.html[非常に簡単に] 再構成することができます。"
+msgid "Note that the default OpenShift's configuration uses _region_ (as a Predicate) and _zone_ (as a Priority Function). However it can be reconfigured https://docs.openshift.org/latest/admin_guide/scheduler.html[very easily]. "
+msgstr "OpenShiftのデフォルトの設定では、リー _ジョン_ （Predicateとして）と _ゾーン_ （Priority Functionとして）を使用していることに注意してください。しかし、これは link:https://docs.openshift.org/latest/admin_guide/scheduler.html[非常に簡単に] 再構成することができます。"
 
 #. type: Title ==
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:71
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "And I need it because...."
 msgstr "それが必要なのは...."
 
 #. type: Plain text
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:79
 #, fuzzy
-msgid ""
-"Some OpenShift deployments might span multiple racks in a data center or "
-"even multiple sites. It is important to tell Infinispan where physical "
-"machines are located, which will allow to choose better nodes for backing up "
-"your data (in distribution mode). "
-msgstr ""
-"OpenShiftデプロイメントの中には、データセンター内の複数のラックにまたがるものや、複数のサイトにまたがるものもあります。物理マシンがどこにあるかをInfinispanに伝えることが重要で、これによりデータをバックアップするためのより良いノードを選択することができます（ディストリビューションモード）。"
+msgid "Some OpenShift deployments might span multiple racks in a data center or even multiple sites. It is important to tell Infinispan where physical machines are located, which will allow to choose better nodes for backing up your data (in distribution mode). "
+msgstr "OpenShiftデプロイメントの中には、データセンター内の複数のラックにまたがるものや、複数のサイトにまたがるものもあります。物理マシンがどこにあるかをInfinispanに伝えることが重要で、これによりデータをバックアップするためのより良いノードを選択することができます（ディストリビューションモード）。"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:84
 #, fuzzy
-msgid ""
-"As the matter of fact, Infinispan uses _site_, _rack_ and _machine_. The "
-"main goal is to avoid backing up data on the same host__.__"
-msgstr ""
-"実のところ、インフィニスパンでは _サイト_ 、 _ラック_ 、 _マシンを_ "
-"使用しています。主な目的は、同じホストにデータをバックアップしないようにすることです _。_"
+msgid "As the matter of fact, Infinispan uses _site_, _rack_ and _machine_. The main goal is to avoid backing up data on the same host__.__"
+msgstr "実のところ、インフィニスパンでは _サイト_ 、 _ラック_ 、 _マシンを_ 使用しています。主な目的は、同じホストにデータをバックアップしないようにすることです _。_"
 
 #. type: Title ===
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:89
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "The implementation"
 msgstr "実装は"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:95
 #, fuzzy
-msgid ""
-"The implementation is pretty straightforward but there are several gotchas. "
+msgid "The implementation is pretty straightforward but there are several gotchas. "
 msgstr "実装は非常に簡単ですが、いくつかの問題があります。"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:104
 #, fuzzy
-msgid ""
-"The first one is that OpenShift uses _regions_ and _zones_ by default and "
-"Infinispan uses _sites_, _racks_ and _machines_. The good news is that all "
-"those three are optional, so you have two options - reuse existing _region_ "
-"and _zone_ (map them to rack and site for example)_,_ or adjust OpenShift "
-"scheduler settings. In my example I used the former approach."
-msgstr ""
-"1つ目は、OpenShiftはデフォルトで _リージョン_ と _ゾーン_ を使用し、Infinispanは _サイト_ 、 _ラック_ 、 "
-"_マシンを_ 使用しています。良いニュースは、これら3つはすべてオプションなので、既存の _リージョン_ と _ゾーンを_ "
-"再利用する（例えばラックとサイトにマッピングする）か _、_ "
-"OpenShiftスケジューラの設定を調整するかの2つの選択肢があります。私の例では前者のアプローチを使用しました。"
+msgid "The first one is that OpenShift uses _regions_ and _zones_ by default and Infinispan uses _sites_, _racks_ and _machines_. The good news is that all those three are optional, so you have two options - reuse existing _region_ and _zone_ (map them to rack and site for example)_,_ or adjust OpenShift scheduler settings. In my example I used the former approach."
+msgstr "1つ目は、OpenShiftはデフォルトで _リージョン_ と _ゾーン_ を使用し、Infinispanは _サイト_ 、 _ラック_ 、 _マシンを_ 使用しています。良いニュースは、これら3つはすべてオプションなので、既存の _リージョン_ と _ゾーンを_ 再利用する（例えばラックとサイトにマッピングする）か _、_ OpenShiftスケジューラの設定を調整するかの2つの選択肢があります。私の例では前者のアプローチを使用しました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:111
 #, fuzzy
-msgid ""
-"The second one is the need of hardcoding those parameters into "
-"_DeploymentConfiguration_. Unfortunately Node Selectors are not exposed "
-"through http://kubernetes.io/docs/user-guide/downward-api/[Downward API], so "
-"there's no other way."
-msgstr ""
-"2つ目は、それらのパラメータを _DeploymentConfiguration_ "
-"にハードコーディングする必要があることです。残念ながらノードセレクタは link:http://kubernetes.io/docs/user-"
-"guide/downward-api/[Downward API] では公開されていないので、他に方法がありません。"
+msgid "The second one is the need of hardcoding those parameters into _DeploymentConfiguration_. Unfortunately Node Selectors are not exposed through http://kubernetes.io/docs/user-guide/downward-api/[Downward API], so there's no other way."
+msgstr "2つ目は、それらのパラメータを _DeploymentConfiguration_ にハードコーディングする必要があることです。残念ながらノードセレクタは link:http://kubernetes.io/docs/user-guide/downward-api/[Downward API] では公開されていないので、他に方法がありません。"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:115
@@ -277,23 +190,15 @@ msgstr "57行目～59行目 - ポッドをスケジューリングするため�
 
 #. type: Title ===
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:126
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Conclusion"
 msgstr "結論"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:135
 #, fuzzy
-msgid ""
-"Combining OpenShift Affinity Service and Infinispan Server Hinting allows to "
-"optimize data distribution across the cluster. Keep in mind that your "
-"configuration might be totally different (OpenShift Scheduler is a highly "
-"configurable thing). But once you understand how it works, you can adjust "
-"the hinting strategy for your needs. "
-msgstr ""
-"OpenShift Affinity ServiceとInfinispan Server "
-"Hintingを組み合わせることで、クラスタ全体のデータ配分を最適化することができます。あなたの構成は全く異なるかもしれないことを覚えておいてください（OpenShift "
-"Schedulerは高度に設定可能なものです）。しかし、仕組みを理解してしまえば、必要に応じてヒンティング戦略を調整することができます。"
+msgid "Combining OpenShift Affinity Service and Infinispan Server Hinting allows to optimize data distribution across the cluster. Keep in mind that your configuration might be totally different (OpenShift Scheduler is a highly configurable thing). But once you understand how it works, you can adjust the hinting strategy for your needs. "
+msgstr "OpenShift Affinity ServiceとInfinispan Server Hintingを組み合わせることで、クラスタ全体のデータ配分を最適化することができます。あなたの構成は全く異なるかもしれないことを覚えておいてください（OpenShift Schedulerは高度に設定可能なものです）。しかし、仕組みを理解してしまえば、必要に応じてヒンティング戦略を調整することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-13-openshift-and-node-affinity.adoc:138

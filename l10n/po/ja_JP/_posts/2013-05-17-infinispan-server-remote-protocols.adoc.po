@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 'Infinispan Server: remote protocols improvements'\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2013-05-17T11:42:00.000-07:00'\n"
 "author: ttarrant\n"
 "tags: [remote]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"5455091021820104003\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-server-"
-"remote-protocols.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5455091021820104003\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-server-remote-protocols.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,95 +42,45 @@ msgstr ""
 "date: '2013-05-17T11:42:00.000-07:00'\n"
 "author: ttarrant\n"
 "tags: [remote]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"5455091021820104003\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-server-"
-"remote-protocols.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5455091021820104003\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-server-remote-protocols.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:19
 #, fuzzy
-msgid ""
-"A couple of weeks ago, Infinispan 5.3.0.Beta1 was released, which brought a "
-"slew of improvements to two of the remoting protocols: Hot Rod and REST. "
-"This week's 5.3.0.Beta2 brings even more goodies: the ability to expose the "
-"same container over multiple Hot Rod endpoints and the integration of the "
-"WebSocket endpoint. We've also been working on fleshing out the https://docs."
-"jboss.org/author/display/ISPN/Infinispan+Server[documentation] for the "
-"server."
-msgstr ""
-"数週間前、Infinispan 5.3.0.Beta1 がリリースされました。Hot Rod と REST です。今週の 5.3.0.0.Beta2 "
-"では、複数の Hot Rod エンドポイント上で同じコンテナを公開する機能や WebSocket "
-"エンドポイントの統合など、さらに優れた機能が追加されました。また、サーバの link:https://docs.jboss.org/author/"
-"display/ISPN/Infinispan+Server[ドキュメントの] 改良にも取り組んでいます。"
+msgid "A couple of weeks ago, Infinispan 5.3.0.Beta1 was released, which brought a slew of improvements to two of the remoting protocols: Hot Rod and REST. This week's 5.3.0.Beta2 brings even more goodies: the ability to expose the same container over multiple Hot Rod endpoints and the integration of the WebSocket endpoint. We've also been working on fleshing out the https://docs.jboss.org/author/display/ISPN/Infinispan+Server[documentation] for the server."
+msgstr "数週間前、Infinispan 5.3.0.Beta1 がリリースされました。Hot Rod と REST です。今週の 5.3.0.0.Beta2 では、複数の Hot Rod エンドポイント上で同じコンテナを公開する機能や WebSocket エンドポイントの統合など、さらに優れた機能が追加されました。また、サーバの link:https://docs.jboss.org/author/display/ISPN/Infinispan+Server[ドキュメントの] 改良にも取り組んでいます。"
 
 #. type: Title ==
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:21
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Hot Rod SSL"
 msgstr "ホットロッドSSL"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:34
 #, fuzzy
-msgid ""
-"Hot Rod, Infinispan's own high-performance, topology aware protocol, has "
-"gained the ability to encrypt the communication using SSL and optionally "
-"require client certificate authentication. While this is still not the full-"
-"blown authentication/authorization infrastructure we will be implementing "
-"for Infinispan 6.0, it is the first step in that direction.  In the context "
-"of the Infinispan Server, setting this up is quite simple. Download the "
-"Infinispan Server distribution from http://www.jboss.org/infinispan/"
-"downloads and unzip it.  Next create a keystore with a self-signed "
-"certificate:"
-msgstr ""
-"Hot "
-"Rodは、Infinispan独自の高性能でトポロジーを意識したプロトコルで、SSLを使用して通信を暗号化し、オプションでクライアント証明書認証を必要とする機能を獲得しました。これはまだ "
-"Infinispan 6.0 で実装する予定の本格的な認証/認証インフラストラクチャではありませんが、その方向への第一歩です。Infinispan "
-"Server のコンテキストでは、この設定は非常に簡単です。 http://www.jboss.org/infinispan/downloads から "
-"Infinispan Server ディストリビューションをダウンロードし、解凍します。次に、自己署名証明書付きのキーストアを作成します。"
+msgid "Hot Rod, Infinispan's own high-performance, topology aware protocol, has gained the ability to encrypt the communication using SSL and optionally require client certificate authentication. While this is still not the full-blown authentication/authorization infrastructure we will be implementing for Infinispan 6.0, it is the first step in that direction.  In the context of the Infinispan Server, setting this up is quite simple. Download the Infinispan Server distribution from http://www.jboss.org/infinispan/downloads and unzip it.  Next create a keystore with a self-signed certificate:"
+msgstr "Hot Rodは、Infinispan独自の高性能でトポロジーを意識したプロトコルで、SSLを使用して通信を暗号化し、オプションでクライアント証明書認証を必要とする機能を獲得しました。これはまだ Infinispan 6.0 で実装する予定の本格的な認証/認証インフラストラクチャではありませんが、その方向への第一歩です。Infinispan Server のコンテキストでは、この設定は非常に簡単です。 http://www.jboss.org/infinispan/downloads から Infinispan Server ディストリビューションをダウンロードし、解凍します。次に、自己署名証明書付きのキーストアを作成します。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:54
 #, fuzzy
-msgid ""
-"$ keytool -genkey -alias hotrod -keyalg RSA -keystore keystore.jks -keysize "
-"2048 Enter keystore password:  secret Re-enter new password: secret What is "
-"your first and last name?   [Unknown]:  HotRod What is the name of your "
-"organizational unit?   [Unknown]:  Infinispan What is the name of your "
-"organization?   [Unknown]:  JBoss What is the name of your City or Locality? "
-"  [Unknown]:  Red Hat What is the name of your State or Province?   "
-"[Unknown]:  World What is the two-letter country code for this unit?   "
-"[Unknown]:  WW Is CN=HotRod, OU=Infinispan, O=JBoss, L=Red Hat, ST=World, C="
-"WW correct?   [no]:  yes"
-msgstr ""
-"あなたの最初と最後の名前は何ですか? [不明]: HotRod あなたの組織単位の名前は何ですか? [不明]: Infinispan "
-"あなたの組織の名前は何ですか?不明]: JBoss あなたの市または地域の名前は何ですか？ 不明]: Red Hat "
-"あなたの州または州の名前は何ですか？不明]: World このユニットの 2 文字の国コードは何ですか? 不明]: WW CN=HotRod, OU="
-"Infinispan, O=JBoss, L=Red Hat, ST=World, C=WW は正しいですか?"
+msgid "$ keytool -genkey -alias hotrod -keyalg RSA -keystore keystore.jks -keysize 2048 Enter keystore password:  secret Re-enter new password: secret What is your first and last name?   [Unknown]:  HotRod What is the name of your organizational unit?   [Unknown]:  Infinispan What is the name of your organization?   [Unknown]:  JBoss What is the name of your City or Locality?   [Unknown]:  Red Hat What is the name of your State or Province?   [Unknown]:  World What is the two-letter country code for this unit?   [Unknown]:  WW Is CN=HotRod, OU=Infinispan, O=JBoss, L=Red Hat, ST=World, C=WW correct?   [no]:  yes"
+msgstr "あなたの最初と最後の名前は何ですか? [不明]: HotRod あなたの組織単位の名前は何ですか? [不明]: Infinispan あなたの組織の名前は何ですか?不明]: JBoss あなたの市または地域の名前は何ですか？ 不明]: Red Hat あなたの州または州の名前は何ですか？不明]: World このユニットの 2 文字の国コードは何ですか? 不明]: WW CN=HotRod, OU=Infinispan, O=JBoss, L=Red Hat, ST=World, C=WW は正しいですか?"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:57
 #, fuzzy
-msgid ""
-"Enter key password for <hotrod>     (RETURN if same as keystore password):"
+msgid "Enter key password for <hotrod>     (RETURN if same as keystore password):"
 msgstr "<hotrod>のキーパスワードを入力します（キーストアのパスワードと同じ場合はRETURN）。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:65
 #, fuzzy
-msgid ""
-"Put the keystore in the standalone/configuration directory together with the "
-"standalone-hotrod-ssl.xml from the docs/examples/configs directory.  Now "
-"start the server using bin/standalone.sh -c standalone-hotrod-ssl.xml This "
-"will start a server with a HotRod endpoint on port 11222 which will only "
-"accept SSL connections."
-msgstr ""
-"keystoreをstandalone/configurationディレクトリに、docs/examples/"
-"configsディレクトリにあるstandalone-hotrod-ssl.xmlと一緒に置いてください。bin/standalone.sh -c "
-"standalone-hotrod-ssl."
-"xmlを使用してサーバーを起動します。これで、SSL接続のみを受け入れるポート11222のHotRodエンドポイントでサーバーが起動します。"
+msgid "Put the keystore in the standalone/configuration directory together with the standalone-hotrod-ssl.xml from the docs/examples/configs directory.  Now start the server using bin/standalone.sh -c standalone-hotrod-ssl.xml This will start a server with a HotRod endpoint on port 11222 which will only accept SSL connections."
+msgstr "keystoreをstandalone/configurationディレクトリに、docs/examples/configsディレクトリにあるstandalone-hotrod-ssl.xmlと一緒に置いてください。bin/standalone.sh -c standalone-hotrod-ssl.xmlを使用してサーバーを起動します。これで、SSL接続のみを受け入れるポート11222のHotRodエンドポイントでサーバーが起動します。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:67
@@ -148,42 +96,27 @@ msgstr "このクライアントは、上で生成した keystore.jks ファイ�
 
 #. type: Title ==
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:72
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Hot Rod container sharing"
 msgstr "ホットロッドコンテナの共有"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:82
 #, fuzzy
-msgid ""
-"Another feature added to the Hot Rod endpoint is the ability to share the "
-"same container between multiple endpoints, and exposing them on different "
-"interfaces. This could be used to offer an unencrypted backend endpoint to "
-"be used by \"internal\" servers to populate the cache and an encrypted "
-"frontend endpoint to be used by \"external\" applications. With the future "
-"addition of authorization, this will offer the ability to handle many types "
-"of security scenarios."
-msgstr ""
-"Hot "
-"Rodエンドポイントに追加されたもう一つの機能は、複数のエンドポイント間で同じコンテナを共有し、異なるインターフェースで公開する機能です。これは、「内部」サーバがキャッシュを生成するために使用する暗号化されていないバックエンドエンドポイントと、「外部」アプリケーションが使用する暗号化されたフロントエンドポイントを提供するために使用することができます。将来的には認証を追加することで、多くのタイプのセキュリティシナリオを扱うことができるようになります。"
+msgid "Another feature added to the Hot Rod endpoint is the ability to share the same container between multiple endpoints, and exposing them on different interfaces. This could be used to offer an unencrypted backend endpoint to be used by \"internal\" servers to populate the cache and an encrypted frontend endpoint to be used by \"external\" applications. With the future addition of authorization, this will offer the ability to handle many types of security scenarios."
+msgstr "Hot Rodエンドポイントに追加されたもう一つの機能は、複数のエンドポイント間で同じコンテナを共有し、異なるインターフェースで公開する機能です。これは、「内部」サーバがキャッシュを生成するために使用する暗号化されていないバックエンドエンドポイントと、「外部」アプリケーションが使用する暗号化されたフロントエンドポイントを提供するために使用することができます。将来的には認証を追加することで、多くのタイプのセキュリティシナリオを扱うことができるようになります。"
 
 #. type: Title ==
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:84
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "REST Extended Headers"
 msgstr "REST 拡張ヘッダ"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:91
 #, fuzzy
-msgid ""
-"The REST endpoint now returns the Expires header for mortal entries. It will "
-"also return additional headers when the extended query parameter is added, e."
-"g. GET /cacheName/cacheKey?extended will return the following custom headers:"
-""
-msgstr ""
-"REST エンドポイントは、死亡エントリの Expires "
-"ヘッダを返すようになりました。また、拡張クエリパラメータが追加された場合にも追加のヘッダを返します。"
+msgid "The REST endpoint now returns the Expires header for mortal entries. It will also return additional headers when the extended query parameter is added, e.g. GET /cacheName/cacheKey?extended will return the following custom headers:"
+msgstr "REST エンドポイントは、死亡エントリの Expires ヘッダを返すようになりました。また、拡張クエリパラメータが追加された場合にも追加のヘッダを返します。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:93
@@ -194,48 +127,32 @@ msgstr "Cluster-Primary-Owner: この鍵のプライマリ所有者のノード�
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:95
 #, fuzzy
-msgid ""
-"Cluster-Node-Name: the JGroups node name of the server that has handled the "
-"request"
+msgid "Cluster-Node-Name: the JGroups node name of the server that has handled the request"
 msgstr "クラスタノード名: リクエストを処理したサーバの JGroups ノード名"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:97
 #, fuzzy
-msgid ""
-"Cluster-Physical-Address: the physical JGroups address of the server that "
-"has handled the request."
+msgid "Cluster-Physical-Address: the physical JGroups address of the server that has handled the request."
 msgstr "Cluster-Physical-Address: リクエストを処理したサーバーの物理的なJGroupsアドレス。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:101
 #, fuzzy
-msgid ""
-"With the introduction of custom metadata, courtesy of https://jira.jboss.org/"
-"browse/ISPN-2281[ISPN-2281], we will also allow returning that information "
-"too."
-msgstr ""
-"link:https://jira.jboss.org/browse/ISPN-2281[ISPN-2281] "
-"によるカスタムメタデータの導入により、その情報を返すこともできるようになります。"
+msgid "With the introduction of custom metadata, courtesy of https://jira.jboss.org/browse/ISPN-2281[ISPN-2281], we will also allow returning that information too."
+msgstr "link:https://jira.jboss.org/browse/ISPN-2281[ISPN-2281] によるカスタムメタデータの導入により、その情報を返すこともできるようになります。"
 
 #. type: Title ==
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:103
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "REST Collections"
 msgstr "RESTコレクション"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:111
 #, fuzzy
-msgid ""
-"Another improvement made to the REST endpoint is the ability to retrieve all "
-"keys in a cache, by simply invoking a GET /cacheName This will return a list "
-"of keys present in the given cacheName as the body of the response. The "
-"format of the response can be controlled via the Accept header as follows:"
-msgstr ""
-"REST エンドポイントのもう一つの改良点は、単に GET /cacheName "
-"を実行するだけでキャッシュ内の全てのキーを取得できるようになったことです。 これは、与えられた cacheName "
-"に存在するキーのリストをレスポンスの本文として返します。レスポンスのフォーマットは Accept ヘッダで以下のように制御できます。"
+msgid "Another improvement made to the REST endpoint is the ability to retrieve all keys in a cache, by simply invoking a GET /cacheName This will return a list of keys present in the given cacheName as the body of the response. The format of the response can be controlled via the Accept header as follows:"
+msgstr "REST エンドポイントのもう一つの改良点は、単に GET /cacheName を実行するだけでキャッシュ内の全てのキーを取得できるようになったことです。 これは、与えられた cacheName に存在するキーのリストをレスポンスの本文として返します。レスポンスのフォーマットは Accept ヘッダで以下のように制御できます。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:113
@@ -258,40 +175,23 @@ msgstr "text/html - キーのリストを HTML 形式で返します。"
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:117
 #, fuzzy
-msgid ""
-"text/plain - the list of keys will be returned in plain text format, one key "
-"per line"
+msgid "text/plain - the list of keys will be returned in plain text format, one key per line"
 msgstr "text/plain - キーのリストをプレーンテキスト形式で返します。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:122
 #, fuzzy
-msgid ""
-"If the cache identified by cacheName is distributed, only the keys owned by "
-"the node handling the request will be returned. To return all keys, append "
-"the \"global\" parameter to the query, as follows: GET /cacheName?global"
-msgstr ""
-"cacheNameで識別されるキャッシュが分散されている場合、リクエストを処理しているノードが "
-"所有するキーのみが返される。すべてのキーを返すには、以下のようにクエリに \"global\" パラメータを追加します。GET /"
-"cacheName?global"
+msgid "If the cache identified by cacheName is distributed, only the keys owned by the node handling the request will be returned. To return all keys, append the \"global\" parameter to the query, as follows: GET /cacheName?global"
+msgstr "cacheNameで識別されるキャッシュが分散されている場合、リクエストを処理しているノードが 所有するキーのみが返される。すべてのキーを返すには、以下のようにクエリに \"global\" パラメータを追加します。GET /cacheName?global"
 
 #. type: Title ==
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:124
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "WebSocket endpoint"
 msgstr "ウェブソケットエンドポイント"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-server-remote-protocols.adoc:131
 #, fuzzy
-msgid ""
-"The WebSocket endpoint is now finally part of the new Infinispan Server "
-"package. Bear in mind that this is just a pure WebSocket server. When we "
-"will be able to upgrade our base from AS 7.x to WildFly 8 we will be able to "
-"take advantage of the new Undertow web server which has native support for "
-"WebSockets."
-msgstr ""
-"WebSocket エンドポイントは、ついに新しい Infinispan Server "
-"パッケージの一部になりました。これは純粋なWebSocketサーバであることを覚えておいてください。AS 7.x から WildFly 8 "
-"にアップグレードできるようになったら、WebSocket をネイティブにサポートしている新しい Undertow Web "
-"サーバーを利用できるようになります。"
+msgid "The WebSocket endpoint is now finally part of the new Infinispan Server package. Bear in mind that this is just a pure WebSocket server. When we will be able to upgrade our base from AS 7.x to WildFly 8 we will be able to take advantage of the new Undertow web server which has native support for WebSockets."
+msgstr "WebSocket エンドポイントは、ついに新しい Infinispan Server パッケージの一部になりました。これは純粋なWebSocketサーバであることを覚えておいてください。AS 7.x から WildFly 8 にアップグレードできるようになったら、WebSocket をネイティブにサポートしている新しい Undertow Web サーバーを利用できるようになります。"

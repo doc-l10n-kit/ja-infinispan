@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-08-10-transactions-enhancements-in-50.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-08-10-transactions-enhancements-in-50.adoc:15
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Transactions enhancements in 5.0\n"
@@ -36,12 +36,9 @@ msgid ""
 "\"transactions\",\n"
 "\"benchmarks\",\n"
 "]\n"
-"thumbnail: http://3.bp.blogspot.com/-OBeJ5lxWquM/TgRePeHHFxI/AAAAAAAAB_g/"
-"ob6y0_gHpZ8/s72-c/tx_benchmark.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8754827774130849896\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/06/transactions-"
-"enhancements-in-50.html\n"
+"thumbnail: http://3.bp.blogspot.com/-OBeJ5lxWquM/TgRePeHHFxI/AAAAAAAAB_g/ob6y0_gHpZ8/s72-c/tx_benchmark.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8754827774130849896\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/06/transactions-enhancements-in-50.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -54,78 +51,34 @@ msgstr ""
 "\"transactions\",\n"
 "\"benchmarks\",\n"
 "]\n"
-"thumbnail: http://3.bp.blogspot.com/-OBeJ5lxWquM/TgRePeHHFxI/AAAAAAAAB_g/"
-"ob6y0_gHpZ8/s72-c/tx_benchmark.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8754827774130849896\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/06/transactions-"
-"enhancements-in-50.html\n"
+"thumbnail: http://3.bp.blogspot.com/-OBeJ5lxWquM/TgRePeHHFxI/AAAAAAAAB_g/ob6y0_gHpZ8/s72-c/tx_benchmark.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8754827774130849896\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/06/transactions-enhancements-in-50.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-08-10-transactions-enhancements-in-50.adoc:19
 #, fuzzy
-msgid ""
-"Besides other cool features such as Map reduce and distributed executors, "
-"Infinispan 5.0.0 \"Pagoa\" brings some significant improvements around "
-"transactional functionality:"
-msgstr ""
-"Map reduceや分散実行子のような他のクールな機能に加えて、Infinispan 5.0.0 "
-"\"Pagoa\"は、トランザクション機能に大きな改善をもたらしました。"
+msgid "Besides other cool features such as Map reduce and distributed executors, Infinispan 5.0.0 \"Pagoa\" brings some significant improvements around transactional functionality:"
+msgstr "Map reduceや分散実行子のような他のクールな機能に加えて、Infinispan 5.0.0 \"Pagoa\"は、トランザクション機能に大きな改善をもたらしました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-08-10-transactions-enhancements-in-50.adoc:28
 #, fuzzy
-msgid ""
-"https://docs.jboss.org/author/x/BIF7[transaction recovery] http://community."
-"jboss.org/docs/DOC-16646?uniqueTitle=false[] is now supported, with a set of "
-"tools that allow state reconciliation in case the transaction fails during "
-"2nd phase of 2PC. This is especially useful in the case of transactions "
-"spreading over Infinispan and another resource manager, e.g. a database "
-"(distributed transactions). You can find out more on how to enable and use "
-"transaction recovery https://docs.jboss.org/author/x/BIF7[here]."
-msgstr ""
-"link:https://docs.jboss.org/author/x/BIF7[トランザクションリカバリー] http://community."
-"jboss.org/docs/DOC-16646?uniqueTitle=false がサポートされ、2PC の第 2 "
-"フェーズの間にトランザクションが失敗した場合に、状態の照合を可能にするツールのセットでサポートされるようになりました。これは、Infinispanと別のリソースマネージャ、例えばデータベース(分散トランザクション)に分散しているトランザクションの場合に特に便利です。トランザクションリカバリーを有効にして使用する方法については、 "
-"link:https://docs.jboss.org/author/x/BIF7[こちら] を参照してください。"
+msgid "https://docs.jboss.org/author/x/BIF7[transaction recovery] http://community.jboss.org/docs/DOC-16646?uniqueTitle=false[] is now supported, with a set of tools that allow state reconciliation in case the transaction fails during 2nd phase of 2PC. This is especially useful in the case of transactions spreading over Infinispan and another resource manager, e.g. a database (distributed transactions). You can find out more on how to enable and use transaction recovery https://docs.jboss.org/author/x/BIF7[here]."
+msgstr "link:https://docs.jboss.org/author/x/BIF7[トランザクションリカバリー] http://community.jboss.org/docs/DOC-16646?uniqueTitle=false がサポートされ、2PC の第 2 フェーズの間にトランザクションが失敗した場合に、状態の照合を可能にするツールのセットでサポートされるようになりました。これは、Infinispanと別のリソースマネージャ、例えばデータベース(分散トランザクション)に分散しているトランザクションの場合に特に便利です。トランザクションリカバリーを有効にして使用する方法については、 link:https://docs.jboss.org/author/x/BIF7[こちら] を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-08-10-transactions-enhancements-in-50.adoc:40
 #, fuzzy
-msgid ""
-"http://download.oracle.com/javaee/1.3/api/javax/transaction/Synchronization."
-"html[Synchronization] enlistment is another important feature in this "
-"release. This allows Infinispan to enlist in a transaction as an http://"
-"download.oracle.com/javaee/1.3/api/javax/transaction/Synchronization."
-"html[Synchronization] rather than an http://download.oracle.com/javaee/1.3/"
-"api/javax/transaction/xa/XAResource.html[XAResource].This enlistment allows "
-"the TransactionManager to optimize 2PC with a 1PC where only one other "
-"resource is enlisted with that transaction (http://docs.redhat.com/docs/en-"
-"US/JBoss_Enterprise_Web_Platform/5/html/"
-"Administration_And_Configuration_Guide/ch09s04.html[last resource commit "
-"optimization]). This is particularly important when using Infinispan as a "
-"2nd level cache in Hibernate. You can read more about this feature https://"
-"docs.jboss.org/author/x/_YB7[here]."
-msgstr ""
-"このリリースでは、 link:http://download.oracle.com/javaee/1.3/api/javax/transaction/"
-"Synchronization.html[同期] 化の参加も重要な機能の 1 つです。この参加により、 link:http://download."
-"oracle.com/javaee/1.3/api/javax/transaction/Synchronization."
-"html[TransactionManager] は、他の1つのリソースのみがそのトランザクションに参加している1PCで2PCを最適化することができます "
-"link:http://docs.redhat.com/docs/en-US/JBoss_Enterprise_Web_Platform/5/html/"
-"Administration_And_Configuration_Guide/ch09s04.html[（最後のリソースコミットの最適化] "
-"）。これは、Hibernate の第 2 レベルキャッシュとして Infinispan を使用する場合に特に重要です。この機能についての詳細は link:"
-"https://docs.jboss.org/author/x/_YB7[こちら] をご覧ください。"
+msgid "http://download.oracle.com/javaee/1.3/api/javax/transaction/Synchronization.html[Synchronization] enlistment is another important feature in this release. This allows Infinispan to enlist in a transaction as an http://download.oracle.com/javaee/1.3/api/javax/transaction/Synchronization.html[Synchronization] rather than an http://download.oracle.com/javaee/1.3/api/javax/transaction/xa/XAResource.html[XAResource].This enlistment allows the TransactionManager to optimize 2PC with a 1PC where only one other resource is enlisted with that transaction (http://docs.redhat.com/docs/en-US/JBoss_Enterprise_Web_Platform/5/html/Administration_And_Configuration_Guide/ch09s04.html[last resource commit optimization]). This is particularly important when using Infinispan as a 2nd level cache in Hibernate. You can read more about this feature https://docs.jboss.org/author/x/_YB7[here]."
+msgstr "このリリースでは、 link:http://download.oracle.com/javaee/1.3/api/javax/transaction/Synchronization.html[同期] 化の参加も重要な機能の 1 つです。この参加により、 link:http://download.oracle.com/javaee/1.3/api/javax/transaction/Synchronization.html[TransactionManager] は、他の1つのリソースのみがそのトランザクションに参加している1PCで2PCを最適化することができます link:http://docs.redhat.com/docs/en-US/JBoss_Enterprise_Web_Platform/5/html/Administration_And_Configuration_Guide/ch09s04.html[（最後のリソースコミットの最適化] ）。これは、Hibernate の第 2 レベルキャッシュとして Infinispan を使用する場合に特に重要です。この機能についての詳細は link:https://docs.jboss.org/author/x/_YB7[こちら] をご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-08-10-transactions-enhancements-in-50.adoc:43
 #, fuzzy
-msgid ""
-"besides that several bugs were fixed particularly when it comes to the "
-"integration with a transaction manager - BIG thanks to the community for "
-"reporting and testing them!"
-msgstr ""
-"それ以外にも、いくつかのバグが修正されました。特にトランザクションマネージャーとの統合に関連して - 報告とテストをしてくれたコミュニティに感謝します"
+msgid "besides that several bugs were fixed particularly when it comes to the integration with a transaction manager - BIG thanks to the community for reporting and testing them!"
+msgstr "それ以外にも、いくつかのバグが修正されました。特にトランザクションマネージャーとの統合に関連して - 報告とテストをしてくれたコミュニティに感謝します"
 
 #. type: Plain text
 #: upstream/_posts/2011-08-10-transactions-enhancements-in-50.adoc:45
@@ -142,8 +95,7 @@ msgstr "をリカバリをサポートする本格的な XAResource として使
 #. type: Plain text
 #: upstream/_posts/2011-08-10-transactions-enhancements-in-50.adoc:49
 #, fuzzy
-msgid ""
-"as an XAResource, but without recovery. This is the default configuration"
+msgid "as an XAResource, but without recovery. This is the default configuration"
 msgstr "を XAResource として使用しますが、リカバリはしません。これはデフォルトの設定"
 
 #. type: Plain text
@@ -155,67 +107,25 @@ msgstr "と同期として"
 #. type: Plain text
 #: upstream/_posts/2011-08-10-transactions-enhancements-in-50.adoc:60
 #, fuzzy
-msgid ""
-"In order to analyze the performance of running Infinispan in different "
-"transactional modes I've https://sourceforge.net/apps/trac/radargun/wiki/"
-"BenchmarkingTransactions[enhanced] and used http://sourceforge.net/apps/trac/"
-"radargun/wiki/WikiStart[Radargun]. The diagram below shows a performance "
-"comparison between running Infinispan in all the 3 modes described. The "
-"forth plot in the chart shows the performance of running Infinispan without "
-"transactions - this gives an idea about the cost of using transactions vs. "
-"raw operations."
-msgstr ""
-"異なるトランザクションモードでInfinispanを実行したときのパフォーマンスを分析するために、 link:http://sourceforge."
-"net/apps/trac/radargun/wiki/WikiStart[Radargunを] link:https://sourceforge."
-"net/apps/trac/radargun/wiki/BenchmarkingTransactions[強化して] "
-"使いました。下の図は、説明した3つのモードすべてでInfinispanを実行した場合のパフォーマンスの比較を示しています。この図の4番目のプロットは、トランザクションなしでInfinispanを実行した場合のパフォーマンスを示しています "
-"- これは、トランザクションを使用した場合のコストと生のオペレーションを比較した場合のコストについてのアイデアを与えてくれます。"
+msgid "In order to analyze the performance of running Infinispan in different transactional modes I've https://sourceforge.net/apps/trac/radargun/wiki/BenchmarkingTransactions[enhanced] and used http://sourceforge.net/apps/trac/radargun/wiki/WikiStart[Radargun]. The diagram below shows a performance comparison between running Infinispan in all the 3 modes described. The forth plot in the chart shows the performance of running Infinispan without transactions - this gives an idea about the cost of using transactions vs. raw operations."
+msgstr "異なるトランザクションモードでInfinispanを実行したときのパフォーマンスを分析するために、 link:http://sourceforge.net/apps/trac/radargun/wiki/WikiStart[Radargunを] link:https://sourceforge.net/apps/trac/radargun/wiki/BenchmarkingTransactions[強化して] 使いました。下の図は、説明した3つのモードすべてでInfinispanを実行した場合のパフォーマンスの比較を示しています。この図の4番目のプロットは、トランザクションなしでInfinispanを実行した場合のパフォーマンスを示しています - これは、トランザクションを使用した場合のコストと生のオペレーションを比較した場合のコストについてのアイデアを与えてくれます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-08-10-transactions-enhancements-in-50.adoc:64
 #, fuzzy
-msgid ""
-"http://3.bp.blogspot.com/-OBeJ5lxWquM/TgRePeHHFxI/AAAAAAAAB_g/ob6y0_gHpZ8/"
-"s1600/tx_benchmark.png[image:http://3.bp.blogspot.com/-OBeJ5lxWquM/"
-"TgRePeHHFxI/AAAAAAAAB_g/ob6y0_gHpZ8/s400/tx_benchmark.png[image]]"
-msgstr ""
-"link:http://3.bp.blogspot.com/-OBeJ5lxWquM/TgRePeHHFxI/AAAAAAAAB_g/"
-"ob6y0_gHpZ8/s1600/tx_benchmark.png[]"
+msgid "http://3.bp.blogspot.com/-OBeJ5lxWquM/TgRePeHHFxI/AAAAAAAAB_g/ob6y0_gHpZ8/s1600/tx_benchmark.png[image:http://3.bp.blogspot.com/-OBeJ5lxWquM/TgRePeHHFxI/AAAAAAAAB_g/ob6y0_gHpZ8/s400/tx_benchmark.png[image]]"
+msgstr "link:http://3.bp.blogspot.com/-OBeJ5lxWquM/TgRePeHHFxI/AAAAAAAAB_g/ob6y0_gHpZ8/s1600/tx_benchmark.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2011-08-10-transactions-enhancements-in-50.adoc:77
 #, fuzzy
-msgid ""
-"The benchmark was run on https://github.com/mmarkus/radargun/blob/"
-"blog_13Jun_2011/plugins/infinispan5/src/main/resources/benchmark/benchmark-"
-"tx.xml[this] Radargun configuration, using Infinispan 5.0.0.CR5 configured "
-"as shown https://github.com/mmarkus/radargun/blob/blog_13Jun_2011/plugins/"
-"infinispan5/src/main/resources/dist-tx-sync-commit.xml[here].  As a "
-"TransactionManager https://github.com/mmarkus/radargun/blob/blog_13Jun_2011/"
-"plugins/infinispan5/pom.xml#L38[JBossTS 4.15.0.FINAL] was used, configured "
-"with a VolatileStore as shown https://github.com/mmarkus/radargun/blob/"
-"blog_13Jun_2011/plugins/infinispan5/src/main/java/org/radargun/infinispan/"
-"JBossTMLookup.java[here].  Each node was an http://ark.intel.com/Product."
-"aspx?id=47923[4-core Intel(R) Xeon(R) CPU E5640 @ 2.67GHz], with 4GB RAM."
-msgstr ""
-"ベンチマークは、 link:https://github.com/mmarkus/radargun/blob/blog_13Jun_2011/"
-"plugins/infinispan5/src/main/resources/dist-tx-sync-commit.xml[ここに] "
-"示すように構成された Infinispan 5.0.0.0.CR5 を使用して、 link:https://github.com/mmarkus/"
-"radargun/blob/blog_13Jun_2011/plugins/infinispan5/src/main/resources/"
-"benchmark/benchmark-tx.xml[この] Radargun 構成で実行されました。TransactionManager として "
-"link:https://github.com/mmarkus/radargun/blob/blog_13Jun_2011/plugins/"
-"infinispan5/pom.xml#L38[JBossTS 4.15.0.FINAL] を使用し、 link:https://github.com/"
-"mmarkus/radargun/blob/blog_13Jun_2011/plugins/infinispan5/src/main/java/org/"
-"radargun/infinispan/JBossTMLookup.java[ここに] 示すように VolatileStore "
-"で構成しました。各ノードは、 link:http://ark.intel.com/Product.aspx?id=47923[4 コア Intel® "
-"Xeon® CPU E5640 @ 2.67GHz] 、4GB RAM を使用しました。"
+msgid "The benchmark was run on https://github.com/mmarkus/radargun/blob/blog_13Jun_2011/plugins/infinispan5/src/main/resources/benchmark/benchmark-tx.xml[this] Radargun configuration, using Infinispan 5.0.0.CR5 configured as shown https://github.com/mmarkus/radargun/blob/blog_13Jun_2011/plugins/infinispan5/src/main/resources/dist-tx-sync-commit.xml[here].  As a TransactionManager https://github.com/mmarkus/radargun/blob/blog_13Jun_2011/plugins/infinispan5/pom.xml#L38[JBossTS 4.15.0.FINAL] was used, configured with a VolatileStore as shown https://github.com/mmarkus/radargun/blob/blog_13Jun_2011/plugins/infinispan5/src/main/java/org/radargun/infinispan/JBossTMLookup.java[here].  Each node was an http://ark.intel.com/Product.aspx?id=47923[4-core Intel(R) Xeon(R) CPU E5640 @ 2.67GHz], with 4GB RAM."
+msgstr "ベンチマークは、 link:https://github.com/mmarkus/radargun/blob/blog_13Jun_2011/plugins/infinispan5/src/main/resources/dist-tx-sync-commit.xml[ここに] 示すように構成された Infinispan 5.0.0.0.CR5 を使用して、 link:https://github.com/mmarkus/radargun/blob/blog_13Jun_2011/plugins/infinispan5/src/main/resources/benchmark/benchmark-tx.xml[この] Radargun 構成で実行されました。TransactionManager として link:https://github.com/mmarkus/radargun/blob/blog_13Jun_2011/plugins/infinispan5/pom.xml#L38[JBossTS 4.15.0.FINAL] を使用し、 link:https://github.com/mmarkus/radargun/blob/blog_13Jun_2011/plugins/infinispan5/src/main/java/org/radargun/infinispan/JBossTMLookup.java[ここに] 示すように VolatileStore で構成しました。各ノードは、 link:http://ark.intel.com/Product.aspx?id=47923[4 コア Intel® Xeon® CPU E5640 @ 2.67GHz] 、4GB RAM を使用しました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-08-10-transactions-enhancements-in-50.adoc:80
 #, fuzzy
-msgid ""
-"Each transaction spread over only one put operation. The chart shows the "
-"following:"
+msgid "Each transaction spread over only one put operation. The chart shows the following:"
 msgstr "各トランザクションは、1つのプット操作のみに分散しています。チャートを見ると以下のようになっています。"
 
 #. type: Plain text
@@ -227,39 +137,20 @@ msgstr "非取引のプットは取引のプットよりも約40%速い"
 #. type: Plain text
 #: upstream/_posts/2011-08-10-transactions-enhancements-in-50.adoc:86
 #, fuzzy
-msgid ""
-"http://download.oracle.com/javaee/1.3/api/javax/transaction/Synchronization."
-"html[Synchronization]-enlisted transactions outperform an http://download."
-"oracle.com/javaee/1.3/api/javax/transaction/xa/XAResource.html[XAResource] "
-"enlisted one by about 20%"
-msgstr ""
-"link:http://download.oracle.com/javaee/1.3/api/javax/transaction/"
-"Synchronization.html[同期化] に列挙されたトランザクションは、 link:http://download.oracle.com/"
-"javaee/1.3/api/javax/transaction/xa/XAResource.html[XAResource] "
-"に列挙されたトランザクションよりも約20%優れています。"
+msgid "http://download.oracle.com/javaee/1.3/api/javax/transaction/Synchronization.html[Synchronization]-enlisted transactions outperform an http://download.oracle.com/javaee/1.3/api/javax/transaction/xa/XAResource.html[XAResource] enlisted one by about 20%"
+msgstr "link:http://download.oracle.com/javaee/1.3/api/javax/transaction/Synchronization.html[同期化] に列挙されたトランザクションは、 link:http://download.oracle.com/javaee/1.3/api/javax/transaction/xa/XAResource.html[XAResource] に列挙されたトランザクションよりも約20%優れています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-08-10-transactions-enhancements-in-50.adoc:88
 #, fuzzy
-msgid ""
-"A recoverable cache has about the same performance as a non-recoverable "
-"cache when it comes to transactions."
+msgid "A recoverable cache has about the same performance as a non-recoverable cache when it comes to transactions."
 msgstr "回復可能なキャッシュは、トランザクションに関しては、回復不可能なキャッシュと同程度の性能を持っています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-08-10-transactions-enhancements-in-50.adoc:96
 #, fuzzy
-msgid ""
-"And that's not all! During Infinispan 5.0.0 development we've been thinking "
-"a lot about how we can improve transactional throughput, especially in "
-"scenarios in which multiple transactions are writing on the same key. As a "
-"result we've come up with some improvement suggestions summarised http://"
-"community.jboss.org/wiki/PossibleLockingImprovements[here]: please feel free "
-"to take a look and comment!"
-msgstr ""
-"それだけではありません。Infinispan 5.0.0.0 の開発期間中、特に複数のトランザクションが同じキーに書き込まれるシナリオにおいて、 "
-"トランザクションのスループットを向上させるにはどうしたらよいかについて多くのことを考えてきました。その結果、いくつかの改善案を link:http://"
-"community.jboss.org/wiki/PossibleLockingImprovements[ここに] まとめました。"
+msgid "And that's not all! During Infinispan 5.0.0 development we've been thinking a lot about how we can improve transactional throughput, especially in scenarios in which multiple transactions are writing on the same key. As a result we've come up with some improvement suggestions summarised http://community.jboss.org/wiki/PossibleLockingImprovements[here]: please feel free to take a look and comment!"
+msgstr "それだけではありません。Infinispan 5.0.0.0 の開発期間中、特に複数のトランザクションが同じキーに書き込まれるシナリオにおいて、 トランザクションのスループットを向上させるにはどうしたらよいかについて多くのことを考えてきました。その結果、いくつかの改善案を link:http://community.jboss.org/wiki/PossibleLockingImprovements[ここに] まとめました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-08-10-transactions-enhancements-in-50.adoc:100

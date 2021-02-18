@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:11
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Configuration Changes in Infinispan\n"
@@ -33,10 +33,8 @@ msgid ""
 "author: pmuir\n"
 "tags: [ \"configuration\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3322356438090890382\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/01/configuration-changes-"
-"in-infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3322356438090890382\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/01/configuration-changes-in-infinispan.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -46,42 +44,27 @@ msgstr ""
 "author: pmuir\n"
 "tags: [ \"configuration\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"3322356438090890382\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/01/configuration-changes-"
-"in-infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3322356438090890382\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/01/configuration-changes-in-infinispan.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:15
 #, fuzzy
-msgid ""
-"This blog will introduce both Infinispan users, and Infinispan contributors "
-"to the new configuration system. First, I'll detail the changes for users, "
-"and then for committers."
-msgstr ""
-"このブログでは、Infinispan のユーザーと Infinispan "
-"のコントリビュータの両方に、新しい設定システムについて紹介します。最初に、ユーザー向けの変更点を詳しく説明し、次にコミッター向けの変更点を説明します。"
+msgid "This blog will introduce both Infinispan users, and Infinispan contributors to the new configuration system. First, I'll detail the changes for users, and then for committers."
+msgstr "このブログでは、Infinispan のユーザーと Infinispan のコントリビュータの両方に、新しい設定システムについて紹介します。最初に、ユーザー向けの変更点を詳しく説明し、次にコミッター向けの変更点を説明します。"
 
 #. type: Title ==
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:17
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Users"
 msgstr "利用者"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:26
 #, fuzzy
-msgid ""
-"If you use XML to configure Infinispan, you shouldn't notice any change, "
-"except a much faster startup, courtesy of the Stax based parser.  However, "
-"if you use programmatic configuration, read on for the important differences."
-"  Configuration is now packaged in `org.infinispan.configuration`, and you "
-"must use a builder style:"
-msgstr ""
-"XML を使用して Infinispan を設定する場合、Stax "
-"ベースのパーサーのおかげで起動が格段に速くなった以外には、変化に気づくべきではありません。しかし、プログラム的な設定を使用する場合は、重要な違いがあるので読んでください。設定は "
-"`org.infinispan.configuration` にパッケージ化されており、ビルダー・スタイルを使用する必要があります。"
+msgid "If you use XML to configure Infinispan, you shouldn't notice any change, except a much faster startup, courtesy of the Stax based parser.  However, if you use programmatic configuration, read on for the important differences.  Configuration is now packaged in `org.infinispan.configuration`, and you must use a builder style:"
+msgstr "XML を使用して Infinispan を設定する場合、Stax ベースのパーサーのおかげで起動が格段に速くなった以外には、変化に気づくべきではありません。しかし、プログラム的な設定を使用する場合は、重要な違いがあるので読んでください。設定は `org.infinispan.configuration` にパッケージ化されており、ビルダー・スタイルを使用する必要があります。"
 
 #. type: delimited block -
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:38
@@ -101,14 +84,8 @@ msgstr ""
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:46
 #, fuzzy
-msgid ""
-"The old bean style configuration is now deprecated and will be removed in a "
-"later version.  Configuration properties which can be safely changed at "
-"runtime are mutable, and all others are immutable.  To copy a configuration, "
-"use the `read()` method on the builder, for example:"
-msgstr ""
-"古いビーンスタイルの設定は現在非推奨となっており、後のバージョンでは削除されます。実行時に安全に変更できる設定プロパティは mutable "
-"で、それ以外は不変です。設定をコピーするには、ビルダーの `read()` メソッドを使ってください。"
+msgid "The old bean style configuration is now deprecated and will be removed in a later version.  Configuration properties which can be safely changed at runtime are mutable, and all others are immutable.  To copy a configuration, use the `read()` method on the builder, for example:"
+msgstr "古いビーンスタイルの設定は現在非推奨となっており、後のバージョンでは削除されます。実行時に安全に変更できる設定プロパティは mutable で、それ以外は不変です。設定をコピーするには、ビルダーの `read()` メソッドを使ってください。"
 
 #. type: delimited block -
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:57
@@ -127,31 +104,14 @@ msgstr ""
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:68
 #, fuzzy
-msgid ""
-"This completely replaces the old system of defining a set of overrides on "
-"bean properties. Note that this means the behaviour of Infinispan "
-"configuration is somewhat different when used programmatically. Whilst "
-"before, you could define a default configuration, and any overrides would be "
-"applied on top of *your* defaults when defined, now you must explicitly read "
-"in your defaults to the builder. This allows for much greater flexibility in "
-"your code (you can have a as many \"default\" configurations as you want), "
-"and makes your code more explicit and type safe (finding references works)."
-msgstr ""
-"これは、ビーンのプロパティにオーバーライドのセットを定義するという古いシステムを完全に置き換えます。これは、プログラムで使用する場合、Infinispanコンフィギュレーションの動作が多少異なることを意味することに注意してください。以前はデフォルトの設定を定義することができ、オーバーライドは定義され "
-"*た* "
-"デフォルトの上に適用されていましたが、今ではビルダーにデフォルトを明示的に読み込まなければなりません。これにより、コードの柔軟性が格段に向上し(好きなだけ多くの「デフォルト」設定を持つことができます)、コードがより明確になり、型の安全性が向上します(参照を見つけることができるようになります)。"
+msgid "This completely replaces the old system of defining a set of overrides on bean properties. Note that this means the behaviour of Infinispan configuration is somewhat different when used programmatically. Whilst before, you could define a default configuration, and any overrides would be applied on top of *your* defaults when defined, now you must explicitly read in your defaults to the builder. This allows for much greater flexibility in your code (you can have a as many \"default\" configurations as you want), and makes your code more explicit and type safe (finding references works)."
+msgstr "これは、ビーンのプロパティにオーバーライドのセットを定義するという古いシステムを完全に置き換えます。これは、プログラムで使用する場合、Infinispanコンフィギュレーションの動作が多少異なることを意味することに注意してください。以前はデフォルトの設定を定義することができ、オーバーライドは定義され *た* デフォルトの上に適用されていましたが、今ではビルダーにデフォルトを明示的に読み込まなければなりません。これにより、コードの柔軟性が格段に向上し(好きなだけ多くの「デフォルト」設定を持つことができます)、コードがより明確になり、型の安全性が向上します(参照を見つけることができるようになります)。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:73
 #, fuzzy
-msgid ""
-"The schema is unchanged from before. Infinispan 4.0 configurations are "
-"currently not being parsed. Support for these will be added shortly, however "
-"a warning message will be printed if they are used. To upgrade, just change "
-"the schema definition from:"
-msgstr ""
-"スキーマは以前と変わっていません。Infinispan 4.0 "
-"の設定は現在解析されていません。これらのサポートはまもなく追加される予定ですが、使用されると警告メッセージが表示されます。アップグレードするには、スキーマの定義を以下のように変更してください。"
+msgid "The schema is unchanged from before. Infinispan 4.0 configurations are currently not being parsed. Support for these will be added shortly, however a warning message will be printed if they are used. To upgrade, just change the schema definition from:"
+msgstr "スキーマは以前と変わっていません。Infinispan 4.0 の設定は現在解析されていません。これらのサポートはまもなく追加される予定ですが、使用されると警告メッセージが表示されます。アップグレードするには、スキーマの定義を以下のように変更してください。"
 
 #. type: delimited block -
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:80
@@ -159,8 +119,7 @@ msgstr ""
 msgid ""
 "<infinispan\n"
 "     xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n"
-"     xsi:schemaLocation=\"urn:infinispan:config:4.1 http://www.infinispan."
-"org/schemas/infinispan-config-4.1.xsd\"\n"
+"     xsi:schemaLocation=\"urn:infinispan:config:4.1 http://www.infinispan.org/schemas/infinispan-config-4.1.xsd\"\n"
 "     xmlns=\"urn:infinispan:config:4.1\">\n"
 msgstr ""
 
@@ -176,315 +135,144 @@ msgstr "にとって"
 msgid ""
 "<infinispan\n"
 "     xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n"
-"     xsi:schemaLocation=\"urn:infinispan:config:5.1 http://www.infinispan."
-"org/schemas/infinispan-config-5.1.xsd\"\n"
+"     xsi:schemaLocation=\"urn:infinispan:config:5.1 http://www.infinispan.org/schemas/infinispan-config-5.1.xsd\"\n"
 "     xmlns=\"urn:infinispan:config:5.1\">\n"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:97
 #, fuzzy
-msgid ""
-"The schema documentation has changed format, as it is now produced using the "
-"standard tool x3p. This should be a significant improvement, as better "
-"navigation is offered. Some elements and attributes are missing docs right "
-"now, we are working on adding this. As an added benefit, your IDE should now "
-"show documentation when an xsd referenced (as above)"
-msgstr ""
-"スキーマドキュメントは、標準ツールx3pを使用して作成されるようになり、フォーマットが変更されました。より良いナビゲーションが提供されるようになり、これは重要な改善になるはずです。いくつかの要素と属性は現在ドキュメントが不足しています。追加された利点として、(上記のように) "
-"xsd が参照されたときに IDE がドキュメントを表示するようになりました。"
+msgid "The schema documentation has changed format, as it is now produced using the standard tool x3p. This should be a significant improvement, as better navigation is offered. Some elements and attributes are missing docs right now, we are working on adding this. As an added benefit, your IDE should now show documentation when an xsd referenced (as above)"
+msgstr "スキーマドキュメントは、標準ツールx3pを使用して作成されるようになり、フォーマットが変更されました。より良いナビゲーションが提供されるようになり、これは重要な改善になるはずです。いくつかの要素と属性は現在ドキュメントが不足しています。追加された利点として、(上記のように) xsd が参照されたときに IDE がドキュメントを表示するようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:102
 #, fuzzy
-msgid ""
-"We are in the process of adding in support for this configuration style for "
-"modules (such as cache stores). In the meantime, please use the old "
-"configuration or XML if you require support for cache store module "
-"configuration."
-msgstr ""
-"現在、モジュール（キャッシュストアなど）に対して、この構成スタイルのサポートを追加する作業を行っています。その間、キャッシュストアモジュールの設定のサポートが必要な場合は、古い設定か "
-"XML を使用してください。"
+msgid "We are in the process of adding in support for this configuration style for modules (such as cache stores). In the meantime, please use the old configuration or XML if you require support for cache store module configuration."
+msgstr "現在、モジュール（キャッシュストアなど）に対して、この構成スタイルのサポートを追加する作業を行っています。その間、キャッシュストアモジュールの設定のサポートが必要な場合は、古い設定か XML を使用してください。"
 
 #. type: Title ==
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:104
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Committers"
 msgstr "コミッター"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:112
 #, fuzzy
-msgid ""
-"If you are a committer to Infinispan, you may find the following notes "
-"useful. Note that currently we still use the old configuration system "
-"internally within Infinispan. This makes things a little complicated.  This "
-"will be switched out soon! For now, you need to also add your property to "
-"the old config system as well as the new."
-msgstr ""
-"もしあなたが Infinispan のコミッターであれば、以下の注意事項が役に立つかもしれません。現在も Infinispan "
-"の内部では古い設定システムを使用していることに注意してください。これが少し複雑にしています。これは近日中に変更される予定です。今のところは、新しい設定システムと同様に、古い設定システムに自分のプロパティを追加する必要があります。"
+msgid "If you are a committer to Infinispan, you may find the following notes useful. Note that currently we still use the old configuration system internally within Infinispan. This makes things a little complicated.  This will be switched out soon! For now, you need to also add your property to the old config system as well as the new."
+msgstr "もしあなたが Infinispan のコミッターであれば、以下の注意事項が役に立つかもしれません。現在も Infinispan の内部では古い設定システムを使用していることに注意してください。これが少し複雑にしています。これは近日中に変更される予定です。今のところは、新しい設定システムと同様に、古い設定システムに自分のプロパティを追加する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:115
 #, fuzzy
-msgid ""
-"Note, these guides assume you are adding an element to the cache "
-"configuration, but apply equally to the global configuration."
+msgid "Note, these guides assume you are adding an element to the cache configuration, but apply equally to the global configuration."
 msgstr "注意：これらのガイドは、キャッシュ設定に要素を追加することを前提としていますが、グローバル設定にも同様に適用されます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:120
 #, fuzzy
-msgid ""
-"Before you start adding a configuration property, identify whether you want "
-"to add a property to an existing configuration group/element, or whether you "
-"need to create a child object. We call the configuration group XXX in the "
-"steps below."
-msgstr ""
-"構成プロパティの追加を開始する前に、既存の構成グループ/"
-"要素にプロパティを追加するのか、子オブジェクトを作成する必要があるのかを確認します。以下の手順では、設定グループをXXXと呼びます。"
+msgid "Before you start adding a configuration property, identify whether you want to add a property to an existing configuration group/element, or whether you need to create a child object. We call the configuration group XXX in the steps below."
+msgstr "構成プロパティの追加を開始する前に、既存の構成グループ/要素にプロパティを追加するのか、子オブジェクトを作成する必要があるのかを確認します。以下の手順では、設定グループをXXXと呼びます。"
 
 #. type: Title ===
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:122
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Adding a property"
 msgstr "物件の追加"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:136
 #, fuzzy
-msgid ""
-"Add the property to the relevant `XXXConfiguration` class. Add a private "
-"final field, add a parameter to the constructor, and assign the value to the "
-"field in the constructor body. Add a accessor for the property. If the "
-"property should be mutable at runtime, then add a mutator as well. Most "
-"configuration properties are not mutable at runtime - if the configuration "
-"is runtime mutable, then Infinispan needs to take notice of this update "
-"whilst the cache is running (you can't cache the value of the configuration "
-"in your implementation class).  Mutators and accessors don't use the classic "
-"JavaBean pattern of prepending accessors with \"get\" and mutators with "
-"\"set\". Instead, the name of the property is used for an accessor. A "
-"mutator is an overloaded version of the accessor which takes a parameter, "
-"the new value."
-msgstr ""
-"該当する `XXXConfiguration` "
-"クラスにプロパティを追加します。プライベートな最終フィールドを追加し、コンストラクタにパラメータを追加し、コンストラクタ本体のフィールドに値を代入します。プロパティにアクセサを追加します。実行時にプロパティをミューテータにする必要がある場合は、ミューテータも追加します。ほとんどの設定プロパティは実行時には変更できません。設定が実行時に変更可能な場合、Infinispan "
-"はキャッシュが実行されている間にこの更新を通知する必要があります（実装クラスに設定の値をキャッシュすることはできません）。Mutator "
-"とアクセサは、アクセサの前に \"get\" を、ミューテータの前に \"set\" を付けるという古典的な JavaBean "
-"のパターンを使用しません。その代わり、アクセサにはプロパティの名前が使用されます。ミューテータは、アクセサのオーバーロード版で、パラメータである新しい値を取ります。"
+msgid "Add the property to the relevant `XXXConfiguration` class. Add a private final field, add a parameter to the constructor, and assign the value to the field in the constructor body. Add a accessor for the property. If the property should be mutable at runtime, then add a mutator as well. Most configuration properties are not mutable at runtime - if the configuration is runtime mutable, then Infinispan needs to take notice of this update whilst the cache is running (you can't cache the value of the configuration in your implementation class).  Mutators and accessors don't use the classic JavaBean pattern of prepending accessors with \"get\" and mutators with \"set\". Instead, the name of the property is used for an accessor. A mutator is an overloaded version of the accessor which takes a parameter, the new value."
+msgstr "該当する `XXXConfiguration` クラスにプロパティを追加します。プライベートな最終フィールドを追加し、コンストラクタにパラメータを追加し、コンストラクタ本体のフィールドに値を代入します。プロパティにアクセサを追加します。実行時にプロパティをミューテータにする必要がある場合は、ミューテータも追加します。ほとんどの設定プロパティは実行時には変更できません。設定が実行時に変更可能な場合、Infinispan はキャッシュが実行されている間にこの更新を通知する必要があります（実装クラスに設定の値をキャッシュすることはできません）。Mutator とアクセサは、アクセサの前に \"get\" を、ミューテータの前に \"set\" を付けるという古典的な JavaBean のパターンを使用しません。その代わり、アクセサにはプロパティの名前が使用されます。ミューテータは、アクセサのオーバーロード版で、パラメータである新しい値を取ります。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:140
 #, fuzzy
-msgid ""
-"Add the property to the matching `XXXConfigurationBuilder`. You'll need to "
-"add a mutable field to the class, and initialise it to it's default value in "
-"the field declaration. Add a mutator (following the above pattern)."
-msgstr ""
-"マッチングする `XXXConfigurationBuilder` ."
-"クラスにミューテータブルフィールドを追加し、フィールド宣言でデフォルト値に初期化する必要があります。(上記のパターンに従った)ミューテータを追加します。"
+msgid "Add the property to the matching `XXXConfigurationBuilder`. You'll need to add a mutable field to the class, and initialise it to it's default value in the field declaration. Add a mutator (following the above pattern)."
+msgstr "マッチングする `XXXConfigurationBuilder` .クラスにミューテータブルフィールドを追加し、フィールド宣言でデフォルト値に初期化する必要があります。(上記のパターンに従った)ミューテータを追加します。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:147
 #, fuzzy
-msgid ""
-"The `create()` method is called by the parent object in order to instantiate "
-"the `XXXConfiguration` object from the builder. Therefore, make sure to pass "
-"the value of the field in the builder to the `XXXConfiguration` object's "
-"constructor here. Additionally, if you require a complex default (for "
-"example, the value of a configuration property is defaulted conditionally "
-"based on the value of some other configuration property), then this is the "
-"place to do this."
-msgstr ""
-"`create()` メソッドは、ビルダーから `XXXConfiguration` "
-"オブジェクトをインスタンス化するために、親オブジェクトから呼び出されます。したがって、ビルダーのフィールドの値を必ずここで "
-"`XXXConfiguration` "
-"オブジェクトのコンストラクタに渡すようにしてください。さらに、複雑なデフォルト（例えば、設定プロパティの値が他の設定プロパティの値に基づいて条件付きでデフォルトされるなど）が必要な場合は、ここでこれを行います。"
+msgid "The `create()` method is called by the parent object in order to instantiate the `XXXConfiguration` object from the builder. Therefore, make sure to pass the value of the field in the builder to the `XXXConfiguration` object's constructor here. Additionally, if you require a complex default (for example, the value of a configuration property is defaulted conditionally based on the value of some other configuration property), then this is the place to do this."
+msgstr "`create()` メソッドは、ビルダーから `XXXConfiguration` オブジェクトをインスタンス化するために、親オブジェクトから呼び出されます。したがって、ビルダーのフィールドの値を必ずここで `XXXConfiguration` オブジェクトのコンストラクタに渡すようにしてください。さらに、複雑なデフォルト（例えば、設定プロパティの値が他の設定プロパティの値に基づいて条件付きでデフォルトされるなど）が必要な場合は、ここでこれを行います。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:157
 #, fuzzy
-msgid ""
-"The `validate()` method is called by the parent object to validate the "
-"values the user has passed in. This method may also be called directly by "
-"user code, should they wish to manually validate a configuration object. You "
-"should place any validation logic here related to your configuration "
-"property. If you need to \"cross-validate\" properties (validate the value "
-"of your property conditionally upon the value of another property), and the "
-"other property is on another builder object, increase the visibility of that "
-"other property field to \"default\", and reference it from this builder, by "
-"calling the `getBuilder()` method, which will gives you a handle on the root "
-"configuration builder."
-msgstr ""
-"`validate()` "
-"メソッドは、ユーザが渡した値を検証するために親オブジェクトから呼ばれます。このメソッドは、ユーザーが設定オブジェクトを手動で検証したい場合に、ユーザーコードから直接呼び出されることもあります。設定プロパティに関連する検証ロジックをここに配置しなければなりません。プロパティを「相互に検証」する必要がある場合 "
-"(自分のプロパティの値を他のプロパティの値に条件付きで検証する)、 "
-"他のプロパティが他のビルダオブジェクト上にある場合は、その他のプロパティフィールドの可視性を「default」にして、 `getBuilder()` "
-"メソッドを呼び出して、このビルダから参照します。"
+msgid "The `validate()` method is called by the parent object to validate the values the user has passed in. This method may also be called directly by user code, should they wish to manually validate a configuration object. You should place any validation logic here related to your configuration property. If you need to \"cross-validate\" properties (validate the value of your property conditionally upon the value of another property), and the other property is on another builder object, increase the visibility of that other property field to \"default\", and reference it from this builder, by calling the `getBuilder()` method, which will gives you a handle on the root configuration builder."
+msgstr "`validate()` メソッドは、ユーザが渡した値を検証するために親オブジェクトから呼ばれます。このメソッドは、ユーザーが設定オブジェクトを手動で検証したい場合に、ユーザーコードから直接呼び出されることもあります。設定プロパティに関連する検証ロジックをここに配置しなければなりません。プロパティを「相互に検証」する必要がある場合 (自分のプロパティの値を他のプロパティの値に条件付きで検証する)、 他のプロパティが他のビルダオブジェクト上にある場合は、その他のプロパティフィールドの可視性を「default」にして、 `getBuilder()` メソッドを呼び出して、このビルダから参照します。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:166
 #, fuzzy
-msgid ""
-"The final step is to add parsing logic to the `Parser` class. First, add the "
-"attribute to name to the `Attribute` enum (this class simply provides a "
-"mapping between the non-type-safe name of the attribute in XML and a type-"
-"safe reference to use in the parser). Locate the relevant `parseXXX()` "
-"method on the class, and add a case to the switch statement for the "
-"attribute. Call the builder mutator you created above, performing any XML "
-"related validation (you are unlikely to need this), and type conversion "
-"(using the static methods on the primitive wrapper classes, String class, or "
-"relevant enum class)."
-msgstr ""
-"最後のステップは、 `Parser` クラスに解析ロジックを追加することです。まず、 `Attribute` enum "
-"に属性を追加します（このクラスは、XML の属性の型安全でない名前と、パーサで使用する型安全な参照との間のマッピングを提供します）。クラス上で関連する "
-"`parseXXX()` メソッドを探し、属性の switch ステートメントに case "
-"を追加します。上記で作成したビルダー・ミューテータを呼び出し、XML "
-"関連の検証（これは必要ないでしょう）と型変換（プリミティブ・ラッパー・クラス、String クラス、または関連する enum "
-"クラスのスタティック・メソッドを使用）を行います。"
+msgid "The final step is to add parsing logic to the `Parser` class. First, add the attribute to name to the `Attribute` enum (this class simply provides a mapping between the non-type-safe name of the attribute in XML and a type-safe reference to use in the parser). Locate the relevant `parseXXX()` method on the class, and add a case to the switch statement for the attribute. Call the builder mutator you created above, performing any XML related validation (you are unlikely to need this), and type conversion (using the static methods on the primitive wrapper classes, String class, or relevant enum class)."
+msgstr "最後のステップは、 `Parser` クラスに解析ロジックを追加することです。まず、 `Attribute` enum に属性を追加します（このクラスは、XML の属性の型安全でない名前と、パーサで使用する型安全な参照との間のマッピングを提供します）。クラス上で関連する `parseXXX()` メソッドを探し、属性の switch ステートメントに case を追加します。上記で作成したビルダー・ミューテータを呼び出し、XML 関連の検証（これは必要ないでしょう）と型変換（プリミティブ・ラッパー・クラス、String クラス、または関連する enum クラスのスタティック・メソッドを使用）を行います。"
 
 #. type: Title ===
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:167
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Adding a group"
 msgstr "グループの追加"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:177
 #, fuzzy
-msgid ""
-"In some situations you may additionally want to add a configuration grouping "
-"object, represented in XML as an element. You might want to do this if you "
-"are adding a new area of functionality to Infinispan.  Identify the location "
-"of the new configuration grouping object. It might be added to the root "
-"`Configuration` object, or it might be added to one it's children, "
-"children's children. We'll call the parent YYY in the steps below."
-msgstr ""
-"状況によっては、XML で要素として表される構成グループ化オブジェクトを追加したい場合もあります。これは、Infinispan "
-"に新しい機能を追加する場合に必要な場合があります。新しい構成グループ化オブジェクトの場所を特定します。ルート `Configuration` "
-"オブジェクトに追加されるかもしれませんし、その子や子の子に追加されるかもしれません。以下の手順では、親のYYYと呼ぶことにします。"
+msgid "In some situations you may additionally want to add a configuration grouping object, represented in XML as an element. You might want to do this if you are adding a new area of functionality to Infinispan.  Identify the location of the new configuration grouping object. It might be added to the root `Configuration` object, or it might be added to one it's children, children's children. We'll call the parent YYY in the steps below."
+msgstr "状況によっては、XML で要素として表される構成グループ化オブジェクトを追加したい場合もあります。これは、Infinispan に新しい機能を追加する場合に必要な場合があります。新しい構成グループ化オブジェクトの場所を特定します。ルート `Configuration` オブジェクトに追加されるかもしれませんし、その子や子の子に追加されるかもしれません。以下の手順では、親のYYYと呼ぶことにします。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:181
 #, fuzzy
-msgid ""
-"Create the `XXXConfiguration` object. Add any properties required following "
-"the guide for adding properties. The constructors visibility should be "
-"\"default\"."
-msgstr ""
-"`XXXConfiguration` "
-"オブジェクトを作成します。プロパティの追加ガイドに従って必要なプロパティを追加します。コンストラクタの可視性は\"default\"にする必要があります。"
+msgid "Create the `XXXConfiguration` object. Add any properties required following the guide for adding properties. The constructors visibility should be \"default\"."
+msgstr "`XXXConfiguration` オブジェクトを作成します。プロパティの追加ガイドに従って必要なプロパティを追加します。コンストラクタの可視性は\"default\"にする必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:190
 #, fuzzy
-msgid ""
-"Create the `XXXConfigurationBuilder` object. It should subclass the relevant "
-"configuration child builder -- use the `YYYConfigurationChildBuilder` as the "
-"superclass. This will ensure that all builder methods that allow the user to "
-"\"escape\" are provided correctly (i.e provide access to other grouping "
-"elements), and also require you to provide a create() and validate() method. "
-"The constructor needs to take the the `YYYConfigurationBuilder` as an "
-"argument, and pass this to the superclass (this simply allows access to the "
-"root of the builder tree using the `getBuilder()` method)."
-msgstr ""
-"`XXXConfigurationBuilder` オブジェクトを作成します。このオブジェクトは、関連する設定子ビルダーをサブクラス化し、 "
-"`YYYConfigurationChildBuilder` "
-"をスーパークラスとして使用します。これにより、ユーザが「エスケープ」することを可能にするすべてのビルダーメソッドが正しく提供されるようになります "
-"(つまり、他のグループ化要素へのアクセスを提供することになります)。コンストラクタは `YYYConfigurationBuilder` "
-"を引数にとり、これをスーパークラスに渡す必要があります (これは単に `getBuilder()` "
-"メソッドを使ってビルダーツリーのルートにアクセスできるようにするだけです)。"
+msgid "Create the `XXXConfigurationBuilder` object. It should subclass the relevant configuration child builder -- use the `YYYConfigurationChildBuilder` as the superclass. This will ensure that all builder methods that allow the user to \"escape\" are provided correctly (i.e provide access to other grouping elements), and also require you to provide a create() and validate() method. The constructor needs to take the the `YYYConfigurationBuilder` as an argument, and pass this to the superclass (this simply allows access to the root of the builder tree using the `getBuilder()` method)."
+msgstr "`XXXConfigurationBuilder` オブジェクトを作成します。このオブジェクトは、関連する設定子ビルダーをサブクラス化し、 `YYYConfigurationChildBuilder` をスーパークラスとして使用します。これにより、ユーザが「エスケープ」することを可能にするすべてのビルダーメソッドが正しく提供されるようになります (つまり、他のグループ化要素へのアクセスを提供することになります)。コンストラクタは `YYYConfigurationBuilder` を引数にとり、これをスーパークラスに渡す必要があります (これは単に `getBuilder()` メソッドを使ってビルダーツリーのルートにアクセスできるようにするだけです)。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:194
 #, fuzzy
-msgid ""
-"Follow the property adding guide to add any properties you need to the "
-"builder. The `create()` method needs to return a new instance of the "
-"`XXXConfiguration` object. Implement any validation needed in the "
-"`validate()` method."
-msgstr ""
-"ビルダーに必要なプロパティを追加するには、プロパティ追加ガイドに従ってください。 `create()` メソッドは、 "
-"`XXXConfiguration` オブジェクトの新しいインスタンスを返す必要があります。 `validate()` "
-"メソッドで必要な検証を実装します。"
+msgid "Follow the property adding guide to add any properties you need to the builder. The `create()` method needs to return a new instance of the `XXXConfiguration` object. Implement any validation needed in the `validate()` method."
+msgstr "ビルダーに必要なプロパティを追加するには、プロパティ追加ガイドに従ってください。 `create()` メソッドは、 `XXXConfiguration` オブジェクトの新しいインスタンスを返す必要があります。 `validate()` メソッドで必要な検証を実装します。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:197
 #, fuzzy
-msgid ""
-"In the `YYYConfiguration` object, add your new configuration class as a "
-"private final field, add an accessor, and add initialiser assignment in the "
-"constructor"
-msgstr ""
-"`YYYConfiguration` "
-"オブジェクトで、新しい設定クラスをプライベートな最終フィールドとして追加し、アクセサを追加し、コンストラクタに初期化子の代入を追加します。"
+msgid "In the `YYYConfiguration` object, add your new configuration class as a private final field, add an accessor, and add initialiser assignment in the constructor"
+msgstr "`YYYConfiguration` オブジェクトで、新しい設定クラスをプライベートな最終フィールドとして追加し、アクセサを追加し、コンストラクタに初期化子の代入を追加します。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:201
 #, fuzzy
-msgid ""
-"In the `YYYConfigurationBuilder`, add your new configuration builder as a "
-"private final field, and initialise it in the constructor with a new "
-"instance. Finally, add an accessor for it following the standard pattern "
-"discussed in the guide."
-msgstr ""
-"`YYYConfigurationBuilder` "
-"で、新しい設定ビルダをプライベートな最終フィールドとして追加し、コンストラクタで新しいインスタンスで初期化します。最後に、ガイドで説明されている標準パターンに従ってアクセサを追加します。"
+msgid "In the `YYYConfigurationBuilder`, add your new configuration builder as a private final field, and initialise it in the constructor with a new instance. Finally, add an accessor for it following the standard pattern discussed in the guide."
+msgstr "`YYYConfigurationBuilder` で、新しい設定ビルダをプライベートな最終フィールドとして追加し、コンストラクタで新しいインスタンスで初期化します。最後に、ガイドで説明されている標準パターンに従ってアクセサを追加します。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:205
 #, fuzzy
-msgid ""
-"In the `YYYConfigurationBuilder` ensure that your validate method is called "
-"in it's validate method, and that result of the `XXXConfiguration` "
-"instances' create method is passed to the constructor of `YYYConfiguration`"
-msgstr ""
-"`YYYConfigurationBuilder` では validate メソッドが validate メソッド内で呼び出され、 "
-"`XXXConfiguration` インスタンスの create メソッドの結果が `YYYConfiguration`"
+msgid "In the `YYYConfigurationBuilder` ensure that your validate method is called in it's validate method, and that result of the `XXXConfiguration` instances' create method is passed to the constructor of `YYYConfiguration`"
+msgstr "`YYYConfigurationBuilder` では validate メソッドが validate メソッド内で呼び出され、 `XXXConfiguration` インスタンスの create メソッドの結果が `YYYConfiguration`"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:216
 #, fuzzy
-msgid ""
-"Finally, add this to the parser. First, add the element to the `Element` "
-"class, which provides a type safe representation of the element name in XML. "
-"In the `Parser` class, add a new `parseXXX` method, copying one of the "
-"others that most matches your requirements (parse methods either parse "
-"elements only - look for `ParseUtils,requireNoAttributes()`, attributes only "
-"-- look for `ParseUtils.requireNoContent()` or a combination of both -- look "
-"for an iterator over both elements and attributes). Add any attributes as "
-"discussed in the adding a property guide. Finally, wire this in by locating "
-"the `parseYYY()` method, and adding an element to the switch statement, that "
-"calls your new `parseXXX()` method."
-msgstr ""
-"最後に、これをパーサに追加します。まず、要素を `Element` クラスに追加します。 クラスは、XML での要素名の型安全表現を提供します。 "
-"`Parser` クラスに新しい `parseXXX` メソッドを追加し、要件に最もマッチするものをコピーします "
-"(パース・メソッドは、要素のみをパースして `ParseUtils,requireNoAttributes()` を探すか、属性のみをパースして "
-"`ParseUtils.requireNoContent()` を探すか、両方を組み合わせて "
-"を探すか、要素と属性の両方を対象としたイテレータを探すかのいずれかになります)。プロパティの追加ガイドで説明したように、任意の属性を追加します。最後に、 "
-"`parseYYY()` メソッドの場所を指定し、switch 文に要素を追加して、新しい `parseXXX()` "
-"メソッドを呼び出すように配線します。"
+msgid "Finally, add this to the parser. First, add the element to the `Element` class, which provides a type safe representation of the element name in XML. In the `Parser` class, add a new `parseXXX` method, copying one of the others that most matches your requirements (parse methods either parse elements only - look for `ParseUtils,requireNoAttributes()`, attributes only -- look for `ParseUtils.requireNoContent()` or a combination of both -- look for an iterator over both elements and attributes). Add any attributes as discussed in the adding a property guide. Finally, wire this in by locating the `parseYYY()` method, and adding an element to the switch statement, that calls your new `parseXXX()` method."
+msgstr "最後に、これをパーサに追加します。まず、要素を `Element` クラスに追加します。 クラスは、XML での要素名の型安全表現を提供します。 `Parser` クラスに新しい `parseXXX` メソッドを追加し、要件に最もマッチするものをコピーします (パース・メソッドは、要素のみをパースして `ParseUtils,requireNoAttributes()` を探すか、属性のみをパースして `ParseUtils.requireNoContent()` を探すか、両方を組み合わせて を探すか、要素と属性の両方を対象としたイテレータを探すかのいずれかになります)。プロパティの追加ガイドで説明したように、任意の属性を追加します。最後に、 `parseYYY()` メソッドの場所を指定し、switch 文に要素を追加して、新しい `parseXXX()` メソッドを呼び出すように配線します。"
 
 #. type: Title ===
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:217
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Bridging to the old configuration"
 msgstr "旧構成へのブリッジング"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-04-configuration-changes-in-infinispan.adoc:228
 #, fuzzy
-msgid ""
-"Until we entirely swap out the old configuration you will need to add your "
-"property to the old configuration (no need to worry about jaxb mappings "
-"though!), and then add some code to the `LegacyConfigurationAdaptor` to "
-"adapt both ways. It's fairly straightforward, just locate the relevant point "
-"in the `adapt()` method (near the configuration group you are using) and map "
-"from the legacy configuration to the new configuration, or vs versa. You "
-"will need to map both ways, in both adapt methods."
-msgstr ""
-"古い設定を完全に入れ替えるまでは、古い設定にプロパティを追加して（jaxb のマッピングを気にする必要はありません！）、 "
-"`LegacyConfigurationAdaptor` にコードを追加して両方の方法を適応させる必要があります。これは非常に簡単で、 "
-"`adapt()` "
-"メソッドの関連するポイント（使用している設定グループの近く）を見つけて、レガシー設定から新しい設定にマップするか、またはその逆にマップするだけです。両方の方法で、両方の方法をマップする必要があります。"
+msgid "Until we entirely swap out the old configuration you will need to add your property to the old configuration (no need to worry about jaxb mappings though!), and then add some code to the `LegacyConfigurationAdaptor` to adapt both ways. It's fairly straightforward, just locate the relevant point in the `adapt()` method (near the configuration group you are using) and map from the legacy configuration to the new configuration, or vs versa. You will need to map both ways, in both adapt methods."
+msgstr "古い設定を完全に入れ替えるまでは、古い設定にプロパティを追加して（jaxb のマッピングを気にする必要はありません！）、 `LegacyConfigurationAdaptor` にコードを追加して両方の方法を適応させる必要があります。これは非常に簡単で、 `adapt()` メソッドの関連するポイント（使用している設定グループの近く）を見つけて、レガシー設定から新しい設定にマップするか、またはその逆にマップするだけです。両方の方法で、両方の方法をマップする必要があります。"

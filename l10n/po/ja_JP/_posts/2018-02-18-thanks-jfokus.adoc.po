@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-02-18-thanks-jfokus.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-18-thanks-jfokus.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Thanks JFokus!!\n"
@@ -32,8 +32,7 @@ msgid ""
 "date: '2018-02-18T23:02:00.004-08:00'\n"
 "author: galder\n"
 "tags: [ \" conference\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8236555018106640858\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8236555018106640858\n"
 "blogger_orig_url: https://blog.infinispan.org/2018/02/thanks-jfokus.html\n"
 "---\n"
 msgstr ""
@@ -43,74 +42,39 @@ msgstr ""
 "date: '2018-02-18T23:02:00.004-08:00'\n"
 "author: galder\n"
 "tags: [ \" conference\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8236555018106640858\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8236555018106640858\n"
 "blogger_orig_url: https://blog.infinispan.org/2018/02/thanks-jfokus.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-18-thanks-jfokus.adoc:14
 #, fuzzy
-msgid ""
-"We're now back from JFokus and we'd like to thank organizers, attendees, "
-"volunteers and sponsors for making JFokus a very enjoyable experience! :)"
+msgid "We're now back from JFokus and we'd like to thank organizers, attendees, volunteers and sponsors for making JFokus a very enjoyable experience! :)"
 msgstr "JFokusから戻ってきました！主催者、参加者、ボランティア、スポンサーの皆様、本当にありがとうございました。:)"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-18-thanks-jfokus.adoc:21
 #, fuzzy
-msgid ""
-"From an Infinispan perspective, we started the week with a Streaming Data "
-"deep-dive session presented together with Clement Escoffier. This was a 3h "
-"long session, so there was plenty to go through but we managed to do it on "
-"time. The final demo did not fully work, but this is something we will "
-"improving it in the near future. Slides can be found in [http://bit.ly/"
-"streaming-data-dd-1[1]]"
-msgstr ""
-"Infinispanの観点から、今週はClement Escoffier氏と一緒にStreaming "
-"Dataのディープダイブセッションを行いました。このセッションは3時間の長丁場でしたので、多くのことがありましたが、なんとか時間通りに終えることができました。最終的なデモは完全には動作しませんでしたが、これは近い将来に改善する予定です。スライドは "
-"link:http://bit.ly/streaming-data-dd-1[[1] ]にあります。"
+msgid "From an Infinispan perspective, we started the week with a Streaming Data deep-dive session presented together with Clement Escoffier. This was a 3h long session, so there was plenty to go through but we managed to do it on time. The final demo did not fully work, but this is something we will improving it in the near future. Slides can be found in [http://bit.ly/streaming-data-dd-1[1]]"
+msgstr "Infinispanの観点から、今週はClement Escoffier氏と一緒にStreaming Dataのディープダイブセッションを行いました。このセッションは3時間の長丁場でしたので、多くのことがありましたが、なんとか時間通りに終えることができました。最終的なデモは完全には動作しませんでしたが、これは近い将来に改善する予定です。スライドは link:http://bit.ly/streaming-data-dd-1[[1] ]にあります。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-18-thanks-jfokus.adoc:28
 #, fuzzy
-msgid ""
-"[http://bit.ly/streaming-data-dd-6[6]] and the code can be found http://bit."
-"ly/streaming-data-dd-code[here]. This session was not recorded."
-msgstr ""
-"link:http://bit.ly/streaming-data-dd-6[[6] ]とコードは link:http://bit.ly/"
-"streaming-data-dd-code[ここに] あります。このセッションは記録されていません。"
+msgid "[http://bit.ly/streaming-data-dd-6[6]] and the code can be found http://bit.ly/streaming-data-dd-code[here]. This session was not recorded."
+msgstr "link:http://bit.ly/streaming-data-dd-6[[6] ]とコードは link:http://bit.ly/streaming-data-dd-code[ここに] あります。このセッションは記録されていません。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-18-thanks-jfokus.adoc:38
 #, fuzzy
-msgid ""
-"Next day I had a talk on streaming data analysis on top of Kubernetes where "
-"I went through some of the topics explained in the deep dive. This was "
-"mostly a live coding session showing how to work with streaming data on top "
-"OpenShift/Kubernetes which run on Google Cloud. This session was recorded. "
-"I'll keep an eye for when the video becomes available to share it here. The "
-"code from this session can be found http://bit.ly/sdk8s-code[here], slides "
-"http://bit.ly/sdk8s-jfokus18-slides[here] and the live coding instructions "
-"http://bit.ly/sdk8s-jfokus18-lc[here]."
-msgstr ""
-"翌日はKubernetes上でのストリーミングデータ解析についての講演があり、ディープダイブで説明されたトピックをいくつかスルーしました。これは主にGoogle "
-"Cloud上で動作するOpenShift/"
-"Kubernetes上でのストリーミングデータの扱い方を示すライブコーディングセッションでした。このセッションは録音されていました。ここで共有できるように動画が公開されるようになったら目を離さないようにしたいと思います。このセッションのコードは "
-"link:http://bit.ly/sdk8s-code[こちら] 、スライドは link:http://bit.ly/sdk8s-jfokus18-"
-"slides[こちら] 、ライブコーディングの手順は link:http://bit.ly/sdk8s-jfokus18-lc[こちら] です。"
+msgid "Next day I had a talk on streaming data analysis on top of Kubernetes where I went through some of the topics explained in the deep dive. This was mostly a live coding session showing how to work with streaming data on top OpenShift/Kubernetes which run on Google Cloud. This session was recorded. I'll keep an eye for when the video becomes available to share it here. The code from this session can be found http://bit.ly/sdk8s-code[here], slides http://bit.ly/sdk8s-jfokus18-slides[here] and the live coding instructions http://bit.ly/sdk8s-jfokus18-lc[here]."
+msgstr "翌日はKubernetes上でのストリーミングデータ解析についての講演があり、ディープダイブで説明されたトピックをいくつかスルーしました。これは主にGoogle Cloud上で動作するOpenShift/Kubernetes上でのストリーミングデータの扱い方を示すライブコーディングセッションでした。このセッションは録音されていました。ここで共有できるように動画が公開されるようになったら目を離さないようにしたいと思います。このセッションのコードは link:http://bit.ly/sdk8s-code[こちら] 、スライドは link:http://bit.ly/sdk8s-jfokus18-slides[こちら] 、ライブコーディングの手順は link:http://bit.ly/sdk8s-jfokus18-lc[こちら] です。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-18-thanks-jfokus.adoc:44
 #, fuzzy
-msgid ""
-"The rest of the conference was a blast, with many networking opportunities. "
-"During this networking I started working on an RxJava2 API facade for "
-"Infinispan remote API, which would make it easier to fit with other reactive "
-"toolkits out there, such as Vert.x :). More news on this soon"
-msgstr ""
-"カンファレンスの残りの部分は、多くのネットワーキングの機会に恵まれて、とても楽しいものでした。このネットワーキングの間に、私はInfinispanリモートAPI用のRxJava2 "
-"APIファサードに取り組み始めました。)この件についてのニュースは近日中に発表します。"
+msgid "The rest of the conference was a blast, with many networking opportunities. During this networking I started working on an RxJava2 API facade for Infinispan remote API, which would make it easier to fit with other reactive toolkits out there, such as Vert.x :). More news on this soon"
+msgstr "カンファレンスの残りの部分は、多くのネットワーキングの機会に恵まれて、とても楽しいものでした。このネットワーキングの間に、私はInfinispanリモートAPI用のRxJava2 APIファサードに取り組み始めました。)この件についてのニュースは近日中に発表します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-18-thanks-jfokus.adoc:46

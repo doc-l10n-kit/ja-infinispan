@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:12
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 'More on transaction performance: use1PcForAutoCommitTransactions'\n"
@@ -34,10 +34,8 @@ msgid ""
 "tags: [ \"transactions\",\n"
 "\"performance\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8720447815938181630\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/11/more-on-transaction-"
-"performance.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8720447815938181630\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/11/more-on-transaction-performance.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -48,120 +46,86 @@ msgstr ""
 "tags: [ \"transactions\",\n"
 "\"performance\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"8720447815938181630\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/11/more-on-transaction-"
-"performance.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8720447815938181630\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/11/more-on-transaction-performance.html\n"
 "---\n"
 
 #. type: Title ==
 #: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:13
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "What's _use1PcForAutoCommitTransactions_ all about?"
 msgstr "_use1PcForAutoCommitTransactions_ ってなんだ？"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:31
 #, fuzzy
-msgid ""
-"Don't be scared the name, _use1PcForAutoCommitTransactions_ is a new feature "
-"(5.1.CR1) that does quite a cool thing: increases your transactions's "
-"performance.  Let me explain.  Before Infinispan 5.1 you could access the "
-"cache both transactional and non-transactional. Naturally the non-"
-"transactional access is faster and offers less consistency guarantees.But we "
-"don't support mixed access in Infinispan 5.1, so what what's to be done when "
-"you need the speed of non-transactional access and you are ready to trade "
-"some consistency guarantees for it? Well here is where "
-"_use1PcForAutoCommitTransactions_ helps you. What is does is forces an "
-"induced (_autoCommit=true_) transaction to commit in a single phase. So only "
-"1 RPC instead of 2RPCs as in the case of a full 2 Phase Commit (2PC)."
-msgstr ""
-"_use1PcForAutoCommitTransactionsは_ 新機能(5.1."
-"CR1)で、トランザクションのパフォーマンスを向上させることができます。説明しましょう。Infinispan 5.1 "
-"以前は、トランザクションと非トランザクションの両方でキャッシュにアクセスすることができました。しかし、Infinispan 5."
-"1では混在アクセスをサポートしていないので、非トランザクションアクセスの速度が必要で、その代わりに一貫性の保証を交換したい場合はどうすればいいのでしょうか？さて、ここで "
-"_use1PcForAutoCommitTransactions_ が役立ちます。何をするかというと、誘導された _(autoCommit=true_ "
-")トランザクションを強制的に単一フェーズでコミットさせます。つまり、完全な2フェーズコミット(2PC)の場合のように、2RPCの代わりに1RPCだけを使用します。"
+msgid "Don't be scared the name, _use1PcForAutoCommitTransactions_ is a new feature (5.1.CR1) that does quite a cool thing: increases your transactions's performance.  Let me explain.  Before Infinispan 5.1 you could access the cache both transactional and non-transactional. Naturally the non-transactional access is faster and offers less consistency guarantees.But we don't support mixed access in Infinispan 5.1, so what what's to be done when you need the speed of non-transactional access and you are ready to trade some consistency guarantees for it? Well here is where _use1PcForAutoCommitTransactions_ helps you. What is does is forces an induced (_autoCommit=true_) transaction to commit in a single phase. So only 1 RPC instead of 2RPCs as in the case of a full 2 Phase Commit (2PC)."
+msgstr "_use1PcForAutoCommitTransactionsは_ 新機能(5.1.CR1)で、トランザクションのパフォーマンスを向上させることができます。説明しましょう。Infinispan 5.1 以前は、トランザクションと非トランザクションの両方でキャッシュにアクセスすることができました。しかし、Infinispan 5.1では混在アクセスをサポートしていないので、非トランザクションアクセスの速度が必要で、その代わりに一貫性の保証を交換したい場合はどうすればいいのでしょうか？さて、ここで _use1PcForAutoCommitTransactions_ が役立ちます。何をするかというと、誘導された _(autoCommit=true_ )トランザクションを強制的に単一フェーズでコミットさせます。つまり、完全な2フェーズコミット(2PC)の場合のように、2RPCの代わりに1RPCだけを使用します。"
 
 #. type: Title ==
 #: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:33
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "At what cost?"
 msgstr "何のために？"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:40
 #, fuzzy
-msgid ""
-"You might end up with inconsistent data if multiple transactions modify the "
-"same key concurrently. But if you know that's not the case, or you can live "
-"with it then _use1PcForAutoCommitTransactions_ will help your performance "
-"considerably."
-msgstr ""
-"複数のトランザクションが同時に同じキーを変更した場合、一貫性のないデータになってしまうかもしれません。しかし、そうではないことがわかっている場合、またはそれに耐えられる場合は、 "
-"_use1PcForAutoCommitTransactionsを_ 使用することで、パフォーマンスを大幅に向上させることができます。"
+msgid "You might end up with inconsistent data if multiple transactions modify the same key concurrently. But if you know that's not the case, or you can live with it then _use1PcForAutoCommitTransactions_ will help your performance considerably."
+msgstr "複数のトランザクションが同時に同じキーを変更した場合、一貫性のないデータになってしまうかもしれません。しかし、そうではないことがわかっている場合、またはそれに耐えられる場合は、 _use1PcForAutoCommitTransactionsを_ 使用することで、パフォーマンスを大幅に向上させることができます。"
 
 #. type: Title ==
 #: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:42
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "An example"
 msgstr "一例"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:47
 #, fuzzy
-msgid ""
-"Let's say you do a simple put operation outside the scope of a transaction:"
+msgid "Let's say you do a simple put operation outside the scope of a transaction:"
 msgstr "トランザクションの範囲外で単純なput操作を行うとしましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:52
 #, fuzzy
-msgid ""
-"Now let's see how this would behave if the cache has several different "
-"transaction configurations:"
+msgid "Now let's see how this would behave if the cache has several different transaction configurations:"
 msgstr "では、キャッシュがいくつかの異なるトランザクション構成を持っている場合の動作を見てみましょう。"
 
 #. type: Title ===
 #: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:53
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Not using 1PC..."
 msgstr "1PCを使っていない...。"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:60
 #, fuzzy
-msgid ""
-"The put will happen in two RPCs/steps: a prepare message is sent around and "
-"then a commit."
+msgid "The put will happen in two RPCs/steps: a prepare message is sent around and then a commit."
 msgstr "putは2つのRPC/ステップで行われます: prepareメッセージが周りに送信され、その後にcommitが行われます。"
 
 #. type: Title ===
 #: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:62
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Using 1PC..."
 msgstr "1PCを使って..."
 
 #. type: Plain text
 #: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:69
 #, fuzzy
-msgid ""
-"The put happens in one RPC as the prepare and the commit are merged.  Better "
-"performance."
+msgid "The put happens in one RPC as the prepare and the commit are merged.  Better performance."
 msgstr "prepareとcommitがマージされているので、putは1つのRPCで行われます。パフォーマンスが向上します。"
 
 #. type: Title ===
 #: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:71
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Not using autoCommit"
 msgstr "autoCommitを使用していない"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-23-more-on-transaction-performance.adoc:78
 #, fuzzy
-msgid ""
-"An exception is thrown, as this is a transactional cache and invocations "
-"must happen within the scope of a transaction."
+msgid "An exception is thrown, as this is a transactional cache and invocations must happen within the scope of a transaction."
 msgstr "これはトランザクションキャッシュであり、呼び出しはトランザクションの範囲内で行われなければならないため、例外がスローされます。"
 
 #. type: Plain text

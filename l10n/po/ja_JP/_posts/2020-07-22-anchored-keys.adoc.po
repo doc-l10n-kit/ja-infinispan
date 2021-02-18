@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:8
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Anchored keys - scaling up a cluster without transferring values\n"
@@ -44,209 +44,141 @@ msgstr ""
 
 #. type: Title =
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Introducing the Anchored Keys module"
 msgstr "Anchored Keys モジュールの紹介"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:13
 #, fuzzy
-msgid ""
-"Infinispan version 11 introduces an experimental module that allows scaling "
-"up a cluster and adding new nodes without expensive *state transfer*."
-msgstr ""
-"Infinispanバージョン11では、高価な *状態遷移を* "
-"行わずにクラスタをスケールアップして新しいノードを追加できる実験的なモジュールが導入されています。"
+msgid "Infinispan version 11 introduces an experimental module that allows scaling up a cluster and adding new nodes without expensive *state transfer*."
+msgstr "Infinispanバージョン11では、高価な *状態遷移を* 行わずにクラスタをスケールアップして新しいノードを追加できる実験的なモジュールが導入されています。"
 
 #. type: Title ==
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:14
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Background"
 msgstr "背景"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:20
 #, fuzzy
-msgid ""
-"For background, the preferred way to scale up the storage capacity of a "
-"Infinispan cluster is to use distributed caches.  A distributed cache stores "
-"each key/value pair on `num-owners` nodes, and each node can compute the "
-"location of a key (aka the key owners) directly."
-msgstr ""
-"背景として、Infinispanクラスタのストレージ容量をスケールアップするための好ましい方法は、分散キャッシュを使用することです。分散キャッシュは、 "
-"`num-owners` ノードに各キー/値のペアを格納し、各ノードはキーの位置（キーの所有者と呼ばれる）を直接計算することができます。"
+msgid "For background, the preferred way to scale up the storage capacity of a Infinispan cluster is to use distributed caches.  A distributed cache stores each key/value pair on `num-owners` nodes, and each node can compute the location of a key (aka the key owners) directly."
+msgstr "背景として、Infinispanクラスタのストレージ容量をスケールアップするための好ましい方法は、分散キャッシュを使用することです。分散キャッシュは、 `num-owners` ノードに各キー/値のペアを格納し、各ノードはキーの位置（キーの所有者と呼ばれる）を直接計算することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:28
 #, fuzzy
-msgid ""
-"Infinispan achieves this by statically mapping cache keys to `num-segments` "
-"*consistent hash segments*, and then dynamically mapping segments to nodes "
-"based on the cache's *topology* (roughly the current plus the historical "
-"membership of the cache).  Whenever a new node joins the cluster, the cache "
-"is *rebalanced*, and the new node replaces an existing node as the owner of "
-"some segments.  The key/value pairs in those segments are copied to the new "
-"node and removed from the no-longer-owner node via *state transfer*."
-msgstr ""
-"Infinispan は、キャッシュキーを静的に `num-segments` *一貫性のあるハッシュセグメント* にマッピングし、キャッシュの "
-"*トポロジー* "
-"（現在のものとキャッシュの過去のメンバーシップをほぼ足したもの）に基づいて、セグメントをノードに動的にマッピングすることでこれを実現しています。新しいノードがクラスタに加わるたびにキャッシュはリ "
-"*バランスされ* 、新しいノードが既存のノードをセグメントの所有者として置き換えます。これらのセグメント内のキー/値のペアは新しいノードにコピーされ、 "
-"*状態遷移* によって所有者ではないノードから削除されます。"
+msgid "Infinispan achieves this by statically mapping cache keys to `num-segments` *consistent hash segments*, and then dynamically mapping segments to nodes based on the cache's *topology* (roughly the current plus the historical membership of the cache).  Whenever a new node joins the cluster, the cache is *rebalanced*, and the new node replaces an existing node as the owner of some segments.  The key/value pairs in those segments are copied to the new node and removed from the no-longer-owner node via *state transfer*."
+msgstr "Infinispan は、キャッシュキーを静的に `num-segments` *一貫性のあるハッシュセグメント* にマッピングし、キャッシュの *トポロジー* （現在のものとキャッシュの過去のメンバーシップをほぼ足したもの）に基づいて、セグメントをノードに動的にマッピングすることでこれを実現しています。新しいノードがクラスタに加わるたびにキャッシュはリ *バランスされ* 、新しいノードが既存のノードをセグメントの所有者として置き換えます。これらのセグメント内のキー/値のペアは新しいノードにコピーされ、 *状態遷移* によって所有者ではないノードから削除されます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:33
 #, fuzzy
-msgid ""
-"Because the allocation of segments to nodes is based on random UUIDs "
-"generated at start time, it is common (though less so after link:https://"
-"issues.redhat.com/browse/ISPN-11679[ISPN-11679] ), for segments to also move "
-"from one old node to another old node."
-msgstr ""
-"セグメントのノードへの割り当ては、開始時に生成されたランダムなUUIDに基づいているため、セグメントがある古いノードから別の古いノードに移動することもよくあります（ "
-"link:https://issues.redhat.com/browse/ISPN-11679[ISPN-11679] 以降は少なくなりましたが）。"
+msgid "Because the allocation of segments to nodes is based on random UUIDs generated at start time, it is common (though less so after link:https://issues.redhat.com/browse/ISPN-11679[ISPN-11679] ), for segments to also move from one old node to another old node."
+msgstr "セグメントのノードへの割り当ては、開始時に生成されたランダムなUUIDに基づいているため、セグメントがある古いノードから別の古いノードに移動することもよくあります（ link:https://issues.redhat.com/browse/ISPN-11679[ISPN-11679] 以降は少なくなりましたが）。"
 
 #. type: Title ==
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:35
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Architecture"
 msgstr "建築"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:38
 #, fuzzy
-msgid ""
-"The basic idea is to skip the static mapping of keys to segments and to map "
-"keys directly to nodes."
+msgid "The basic idea is to skip the static mapping of keys to segments and to map keys directly to nodes."
 msgstr "基本的な考え方は、キーのセグメントへの静的マッピングをスキップして、キーを直接ノードにマッピングすることです。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:43
 #, fuzzy
-msgid ""
-"When a key/value pair is inserted into the cache, the newest member becomes "
-"the **anchor owner** of that key, and the only node storing the actual value."
-"  In order to make the anchor location available without an extra remote "
-"lookup, all the other nodes store a reference to the anchor owner."
-msgstr ""
-"キー/値のペアがキャッシュに挿入されると、最新のメンバーがそのキーの *アンカーオーナー* "
-"となり、実際の値を格納する唯一のノードとなります。余分なリモート検索なしでアンカーの位置を利用できるようにするために、他のすべてのノードはアンカーの所有者への参照を格納します。"
+msgid "When a key/value pair is inserted into the cache, the newest member becomes the **anchor owner** of that key, and the only node storing the actual value.  In order to make the anchor location available without an extra remote lookup, all the other nodes store a reference to the anchor owner."
+msgstr "キー/値のペアがキャッシュに挿入されると、最新のメンバーがそのキーの *アンカーオーナー* となり、実際の値を格納する唯一のノードとなります。余分なリモート検索なしでアンカーの位置を利用できるようにするために、他のすべてのノードはアンカーの所有者への参照を格納します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:46
 #, fuzzy
-msgid ""
-"That way, when another node joins, it only needs to receive the location "
-"information from the existing nodes, and values can stay on the anchor "
-"owner, minimizing the amount of traffic."
-msgstr ""
-"そうすることで、別のノードが参加しても、既存のノードから位置情報を受信するだけで済み、値はアンカーの所有者に留まり、トラフィック量を最小限に抑えることができます。"
+msgid "That way, when another node joins, it only needs to receive the location information from the existing nodes, and values can stay on the anchor owner, minimizing the amount of traffic."
+msgstr "そうすることで、別のノードが参加しても、既存のノードから位置情報を受信するだけで済み、値はアンカーの所有者に留まり、トラフィック量を最小限に抑えることができます。"
 
 #. type: Title ==
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:48
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Limitations"
 msgstr "制限事項"
 
 #. type: Labeled list
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:50
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Only one node can be added at a time"
 msgstr "一度に1つのノードのみ追加可能"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:54
 #, fuzzy
-msgid ""
-"An external actor (e.g. a Kubernetes/OpenShift operator, or a human "
-"administrator)  must monitor the load on the current nodes, and add a new "
-"node whenever the newest node is close to \"full\"."
-msgstr ""
-"外部アクター（Kubernetes/"
-"OpenShiftオペレータや人間の管理者など）が現在のノードの負荷を監視し、最新のノードが「満杯」に近づくたびに新しいノードを追加する必要があります。"
+msgid "An external actor (e.g. a Kubernetes/OpenShift operator, or a human administrator)  must monitor the load on the current nodes, and add a new node whenever the newest node is close to \"full\"."
+msgstr "外部アクター（Kubernetes/OpenShiftオペレータや人間の管理者など）が現在のノードの負荷を監視し、最新のノードが「満杯」に近づくたびに新しいノードを追加する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:57
 #, fuzzy
-msgid ""
-"Because the anchor owner information is replicated on all the nodes, and "
-"values are never moved off a node, the memory usage of each node will keep "
-"growing as new entries and nodes are added."
-msgstr ""
-"アンカーの所有者情報はすべてのノードで複製され、値がノードから移動することはないため、新しいエントリやノードが追加されると、各ノードのメモリ使用量は増加し続けます。"
+msgid "Because the anchor owner information is replicated on all the nodes, and values are never moved off a node, the memory usage of each node will keep growing as new entries and nodes are added."
+msgstr "アンカーの所有者情報はすべてのノードで複製され、値がノードから移動することはないため、新しいエントリやノードが追加されると、各ノードのメモリ使用量は増加し続けます。"
 
 #. type: Labeled list
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:58
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "There is no redundancy"
 msgstr "冗長性がない"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:61
 #, fuzzy
-msgid ""
-"Every value is stored on a single node.  When a node crashes or even stops "
-"gracefully, the values stored on that node are lost."
+msgid "Every value is stored on a single node.  When a node crashes or even stops gracefully, the values stored on that node are lost."
 msgstr "すべての値は単一のノードに格納されます。ノードがクラッシュすると、あるいは潔く停止すると、そのノードに格納されている値は失われます。"
 
 #. type: Labeled list
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:62
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Transactions are not supported"
 msgstr "トランザクションはサポートされていません"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:65
 #, fuzzy
-msgid ""
-"A later version may add transaction support, but the fact that any node stop "
-"or crash loses entries makes transactions a lot less valuable compared to a "
-"distributed cache."
-msgstr ""
-"後のバージョンではトランザクションのサポートが追加されるかもしれませんが、どのノードでも停止したりクラッシュしたりするとエントリが失われるため、分散キャッシュに比べてトランザクションの価値が低くなってしまいます。"
+msgid "A later version may add transaction support, but the fact that any node stop or crash loses entries makes transactions a lot less valuable compared to a distributed cache."
+msgstr "後のバージョンではトランザクションのサポートが追加されるかもしれませんが、どのノードでも停止したりクラッシュしたりするとエントリが失われるため、分散キャッシュに比べてトランザクションの価値が低くなってしまいます。"
 
 #. type: Labeled list
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:66
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Hot Rod clients do not know the anchor owner"
 msgstr "ホットロッドのクライアントはアンカーのオーナーを知らない"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:70
 #, fuzzy
-msgid ""
-"Hot Rod clients cannot use the topology information from the servers to "
-"locate the anchor owner.  Instead, the server receiving a Hot Rod get "
-"request must make an additional request to the anchor owner in order to "
-"retrieve the value."
-msgstr ""
-"Hot Rodクライアントは、アンカーの所有者を見つけるためにサーバからのトポロジー情報を使うことはできません。代わりに、Hot Rod get "
-"リクエストを受け取ったサーバーは、値を取得するためにアンカーの所有者に追加のリクエストをしなければなりません。"
+msgid "Hot Rod clients cannot use the topology information from the servers to locate the anchor owner.  Instead, the server receiving a Hot Rod get request must make an additional request to the anchor owner in order to retrieve the value."
+msgstr "Hot Rodクライアントは、アンカーの所有者を見つけるためにサーバからのトポロジー情報を使うことはできません。代わりに、Hot Rod get リクエストを受け取ったサーバーは、値を取得するためにアンカーの所有者に追加のリクエストをしなければなりません。"
 
 #. type: Title ==
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:72
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Configuration"
 msgstr "構成"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:75
 #, fuzzy
-msgid ""
-"The module is still very young and does not yet support many Infinispan "
-"features."
+msgid "The module is still very young and does not yet support many Infinispan features."
 msgstr "このモジュールはまだ非常に歴史が浅く、多くのInfinispan機能をサポートしていません。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:78
 #, fuzzy
-msgid ""
-"Eventually, if it proves useful, it may become another cache mode, just like "
-"scattered caches.  For now, configuring a cache with anchored keys requires "
-"a replicated cache with a custom element `anchored-keys`:"
-msgstr ""
-"最終的には、それが有用であることが証明されれば、散在型キャッシュのように別のキャッシュモードになるかもしれません。今のところ、アンカリングされたキーでキャッシュを設定するには、カスタム要素を持つレプリケートされたキャッシュが必要です "
-"`anchored-keys` ."
+msgid "Eventually, if it proves useful, it may become another cache mode, just like scattered caches.  For now, configuring a cache with anchored keys requires a replicated cache with a custom element `anchored-keys`:"
+msgstr "最終的には、それが有用であることが証明されれば、散在型キャッシュのように別のキャッシュモードになるかもしれません。今のところ、アンカリングされたキーでキャッシュを設定するには、カスタム要素を持つレプリケートされたキャッシュが必要です `anchored-keys` ."
 
 #. type: delimited block -
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:90
@@ -260,8 +192,7 @@ msgid ""
 "      xsi:schemaLocation=\"urn:infinispan:config:11.0\n"
 "            https://infinispan.org/schemas/infinispan-config-11.0.xsd\n"
 "            urn:infinispan:config:anchored:11.0\n"
-"            https://infinispan.org/schemas/infinispan-anchored-config-11.0."
-"xsd\">\n"
+"            https://infinispan.org/schemas/infinispan-anchored-config-11.0.xsd\">\n"
 msgstr ""
 
 #. type: delimited block -
@@ -285,9 +216,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:103
 #, fuzzy
-msgid ""
-"When the `<anchored-keys/>` element is present, the module automatically "
-"enables anchored keys and makes some required configuration changes:"
+msgid "When the `<anchored-keys/>` element is present, the module automatically enables anchored keys and makes some required configuration changes:"
 msgstr "`<anchored-keys/>` 要素が存在すると、モジュールは自動的にアンカリングされたキーを有効にし、必要な設定変更を行います。"
 
 #. type: Plain text
@@ -305,41 +234,30 @@ msgstr "に相当する紛争解決を可能にします。"
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:108
 #, fuzzy
-msgid ""
-"`<partition-handling when-split=\"ALLOW_READ_WRITES\" merge-policy="
-"\"PREFER_NON_NULL\"/>`"
-msgstr ""
-"`<partition-handling when-split=\"ALLOW_READ_WRITES\" merge-policy="
-"\"PREFER_NON_NULL\"/>`"
+msgid "`<partition-handling when-split=\"ALLOW_READ_WRITES\" merge-policy=\"PREFER_NON_NULL\"/>`"
+msgstr "`<partition-handling when-split=\"ALLOW_READ_WRITES\" merge-policy=\"PREFER_NON_NULL\"/>`"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:111
 #, fuzzy
-msgid ""
-"The cache will fail to start if these attributes are explicitly set to other "
-"values, if state transfer is disabled, or if transactions are enabled."
-msgstr ""
-"これらの属性が明示的に他の値に設定されている場合、ステート転送が無効になっている場合、またはトランザクションが有効になっている場合、キャッシュの起動に失敗します。"
+msgid "The cache will fail to start if these attributes are explicitly set to other values, if state transfer is disabled, or if transactions are enabled."
+msgstr "これらの属性が明示的に他の値に設定されている場合、ステート転送が無効になっている場合、またはトランザクションが有効になっている場合、キャッシュの起動に失敗します。"
 
 #. type: Title ==
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:113
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Implementation status"
 msgstr "実施状況"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:116
 #, fuzzy
-msgid ""
-"Basic operations are implemented: `put`, `putIfAbsent`, `get`, `replace`, "
-"`remove`, `putAll`, `getAll`."
-msgstr ""
-"基本操作は、 `put` , `putIfAbsent` , `get` , `replace` , `remove` , `putAll` , "
-"`getAll` ."
+msgid "Basic operations are implemented: `put`, `putIfAbsent`, `get`, `replace`, `remove`, `putAll`, `getAll`."
+msgstr "基本操作は、 `put` , `putIfAbsent` , `get` , `replace` , `remove` , `putAll` , `getAll` ."
 
 #. type: Title ===
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:118
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Functional commands"
 msgstr "機能コマンド"
 
@@ -352,195 +270,125 @@ msgstr "`FunctionalMap` APIは実装されていません。"
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:123
 #, fuzzy
-msgid ""
-"Other operations that rely on the functional API's implementation do not "
-"work either: `merge`, `compute`, `computeIfPresent`, `computeIfAbsent`."
-msgstr ""
-"機能APIの実装に依存するその他の操作も動作しません。 `merge` , `compute` , `computeIfPresent` , , "
-"`computeIfAbsent` ."
+msgid "Other operations that rely on the functional API's implementation do not work either: `merge`, `compute`, `computeIfPresent`, `computeIfAbsent`."
+msgstr "機能APIの実装に依存するその他の操作も動作しません。 `merge` , `compute` , `computeIfPresent` , , `computeIfAbsent` ."
 
 #. type: Title ===
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:124
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Partition handling"
 msgstr "パーティションの取り扱い"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:128
 #, fuzzy
-msgid ""
-"When a node crashes, surviving nodes do not remove anchor references "
-"pointing to that node.  In theory, this could allow merges to skip conflict "
-"resolution, but currently the `PREFERRED_NON_NULL` merge policy is "
-"configured automatically and cannot be changed."
-msgstr ""
-"ノードがクラッシュした場合、生き残ったノードはそのノードを指すアンカー参照を削除しません。理論的には、これにより競合解決をスキップしてマージを行うことができますが、現在のところ "
-"`PREFERRED_NON_NULL` のマージポリシーは自動的に設定されており、変更することはできません。"
+msgid "When a node crashes, surviving nodes do not remove anchor references pointing to that node.  In theory, this could allow merges to skip conflict resolution, but currently the `PREFERRED_NON_NULL` merge policy is configured automatically and cannot be changed."
+msgstr "ノードがクラッシュした場合、生き残ったノードはそのノードを指すアンカー参照を削除しません。理論的には、これにより競合解決をスキップしてマージを行うことができますが、現在のところ `PREFERRED_NON_NULL` のマージポリシーは自動的に設定されており、変更することはできません。"
 
 #. type: Title ===
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:129
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Listeners"
 msgstr "リスナー"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:131
 #, fuzzy
-msgid ""
-"Cluster listeners and client listeners are implemented and receive the "
-"correct notifications."
+msgid "Cluster listeners and client listeners are implemented and receive the correct notifications."
 msgstr "クラスタリスナーとクライアントリスナーが実装され、正しい通知を受信します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:134
 #, fuzzy
-msgid ""
-"Non-clustered embedded listeners currently receive notifications on all the "
-"nodes, not just the node where the value is stored."
+msgid "Non-clustered embedded listeners currently receive notifications on all the nodes, not just the node where the value is stored."
 msgstr "非クラスタ化された埋め込みリスナーは、現在、値が格納されているノードだけでなく、すべてのノードで通知を受信します。"
 
 #. type: Title ==
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:136
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Performance considerations"
 msgstr "パフォーマンスに関する考察"
 
 #. type: Title ===
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:138
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Client/Server Latency"
 msgstr "クライアント/サーバーの待ち時間"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:141
 #, fuzzy
-msgid ""
-"The client always contacts the primary owner, so any read has a `(N-1)/N` "
-"probability of requiring a unicast RPC from the primary to the anchor owner."
-msgstr ""
-"クライアントは常にプライマリ所有者に連絡しているため、どのような読み込みでもプライマリからアンカー所有者へのユニキャストRPCを必要とする確率は `(N-"
-"1)/N` となります。"
+msgid "The client always contacts the primary owner, so any read has a `(N-1)/N` probability of requiring a unicast RPC from the primary to the anchor owner."
+msgstr "クライアントは常にプライマリ所有者に連絡しているため、どのような読み込みでもプライマリからアンカー所有者へのユニキャストRPCを必要とする確率は `(N-1)/N` となります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:144
 #, fuzzy
-msgid ""
-"Writes require the primary to send the value to one node and the anchor "
-"address to all the other nodes, which is currently done with `N-1` unicast "
-"RPCs."
-msgstr ""
-"書き込みでは、プライマリが1つのノードに値を送信し、他のすべてのノードにアンカーアドレスを送信する必要がありますが、これは現在 `N-1` "
-"ユニキャストRPCで行われています。"
+msgid "Writes require the primary to send the value to one node and the anchor address to all the other nodes, which is currently done with `N-1` unicast RPCs."
+msgstr "書き込みでは、プライマリが1つのノードに値を送信し、他のすべてのノードにアンカーアドレスを送信する必要がありますが、これは現在 `N-1` ユニキャストRPCで行われています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:148
 #, fuzzy
-msgid ""
-"In theory we could send in parallel one unicast RPC for the value and one "
-"multicast RPC for the address, but that would need additional logic to "
-"ignore the address on the anchor owner and with TCP multicast RPCs are "
-"implemented as parallel unicasts anyway."
-msgstr ""
-"理論的には、値に対して1つのユニキャストRPCを、アドレスに対して1つのマルチキャストRPCを並列に送信することができますが、そのためにはアンカーの所有者のアドレスを無視するための追加のロジックが必要になり、TCPマルチキャストRPCはいずれにせよ並列ユニキャストとして実装されます。"
+msgid "In theory we could send in parallel one unicast RPC for the value and one multicast RPC for the address, but that would need additional logic to ignore the address on the anchor owner and with TCP multicast RPCs are implemented as parallel unicasts anyway."
+msgstr "理論的には、値に対して1つのユニキャストRPCを、アドレスに対して1つのマルチキャストRPCを並列に送信することができますが、そのためにはアンカーの所有者のアドレスを無視するための追加のロジックが必要になり、TCPマルチキャストRPCはいずれにせよ並列ユニキャストとして実装されます。"
 
 #. type: Title ===
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:150
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Memory overhead"
 msgstr "メモリオーバーヘッド"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:153
 #, fuzzy
-msgid ""
-"Compared to a distributed cache with one owner, an anchored-keys cache "
-"contains copies of all the keys and their locations, plus the overhead of "
-"the cache itself."
-msgstr ""
-"一人の所有者を持つ分散キャッシュと比較して、アンカー付きキーキャッシュは全てのキーとその位置のコピーを含み、さらにキャッシュ自体のオーバーヘッドも含みます。"
+msgid "Compared to a distributed cache with one owner, an anchored-keys cache contains copies of all the keys and their locations, plus the overhead of the cache itself."
+msgstr "一人の所有者を持つ分散キャッシュと比較して、アンカー付きキーキャッシュは全てのキーとその位置のコピーを含み、さらにキャッシュ自体のオーバーヘッドも含みます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:156
 #, fuzzy
-msgid ""
-"Therefore, a node with anchored-keys caches should stop accepting new "
-"entries when it has less than `(<key size> + <per-key overhead>) * <number "
-"of entries not yet inserted>` bytes available."
-msgstr ""
-"したがって、anchored-keys キャッシュを持つノードは、利用可能なバイト数が `(<key size> + <per-key "
-"overhead>) * <number of entries not yet inserted>` "
-"よりも少なくなった時点で、新しいエントリの受け入れを停止すべきです。"
+msgid "Therefore, a node with anchored-keys caches should stop accepting new entries when it has less than `(<key size> + <per-key overhead>) * <number of entries not yet inserted>` bytes available."
+msgstr "したがって、anchored-keys キャッシュを持つノードは、利用可能なバイト数が `(<key size> + <per-key overhead>) * <number of entries not yet inserted>` よりも少なくなった時点で、新しいエントリの受け入れを停止すべきです。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:160
 #, fuzzy
-msgid ""
-"The number of entries not yet inserted is obviously very hard to estimate.  "
-"In the future we may provide a way to limit the overhead of key location "
-"information, e.g. by using a distributed cache."
-msgstr ""
-"まだ挿入されていないエントリの数を推定するのは明らかに非常に困難である。将来的には、例えば分散キャッシュを使用することで、鍵の位置情報のオーバーヘッドを制限する方法を提供するかもしれません。"
+msgid "The number of entries not yet inserted is obviously very hard to estimate.  In the future we may provide a way to limit the overhead of key location information, e.g. by using a distributed cache."
+msgstr "まだ挿入されていないエントリの数を推定するのは明らかに非常に困難である。将来的には、例えば分散キャッシュを使用することで、鍵の位置情報のオーバーヘッドを制限する方法を提供するかもしれません。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:165
 #, fuzzy
-msgid ""
-"The per-key overhead is lowest for off-heap storage, around 63 bytes: 8 "
-"bytes for the entry reference in `MemoryAddressHash.memory`, 29 bytes for "
-"the off-heap entry header, and 26 bytes for the serialized `RemoteMetadata` "
-"with the owner's address."
-msgstr ""
-"キーあたりのオーバーヘッドは、オフヒープストレージの場合が最も低く、約63バイトです。 `MemoryAddressHash.memory` "
-"のエントリ参照が8バイト、オフヒープエントリヘッダが29バイト、所有者のアドレスを含むシリアライズされた `RemoteMetadata` "
-"が26バイトです。"
+msgid "The per-key overhead is lowest for off-heap storage, around 63 bytes: 8 bytes for the entry reference in `MemoryAddressHash.memory`, 29 bytes for the off-heap entry header, and 26 bytes for the serialized `RemoteMetadata` with the owner's address."
+msgstr "キーあたりのオーバーヘッドは、オフヒープストレージの場合が最も低く、約63バイトです。 `MemoryAddressHash.memory` のエントリ参照が8バイト、オフヒープエントリヘッダが29バイト、所有者のアドレスを含むシリアライズされた `RemoteMetadata` が26バイトです。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:170
 #, fuzzy
-msgid ""
-"The per-key overhead of the ConcurrentHashMap-based on-heap cache, assuming "
-"a 64-bit JVM with compressed OOPS, would be around 92 bytes: 32 bytes for "
-"`ConcurrentHashMap.Node`, 32 bytes for `MetadataImmortalCacheEntry`, 24 "
-"bytes for `RemoteMetadata`, and 4 bytes in the `ConcurrentHashMap.table` "
-"array."
-msgstr ""
-"ConcurrentHashMapベースのオンヒープキャッシュのキーあたりのオーバーヘッドは、64ビットのJVMでOOPSを圧縮した場合、約92バイトになります。 "
-"`ConcurrentHashMap.Node` は 32 バイト、 `MetadataImmortalCacheEntry` は 32 バイト、 "
-"`RemoteMetadata` は 24 バイト、 `ConcurrentHashMap.table` は 4 バイトです。"
+msgid "The per-key overhead of the ConcurrentHashMap-based on-heap cache, assuming a 64-bit JVM with compressed OOPS, would be around 92 bytes: 32 bytes for `ConcurrentHashMap.Node`, 32 bytes for `MetadataImmortalCacheEntry`, 24 bytes for `RemoteMetadata`, and 4 bytes in the `ConcurrentHashMap.table` array."
+msgstr "ConcurrentHashMapベースのオンヒープキャッシュのキーあたりのオーバーヘッドは、64ビットのJVMでOOPSを圧縮した場合、約92バイトになります。 `ConcurrentHashMap.Node` は 32 バイト、 `MetadataImmortalCacheEntry` は 32 バイト、 `RemoteMetadata` は 24 バイト、 `ConcurrentHashMap.table` は 4 バイトです。"
 
 #. type: Title ===
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:172
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "State transfer"
 msgstr "州の転送"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:175
 #, fuzzy
-msgid ""
-"State transfer does not transfer the actual values, but it still needs to "
-"transfer all the keys and the anchor owner information."
+msgid "State transfer does not transfer the actual values, but it still needs to transfer all the keys and the anchor owner information."
 msgstr "状態転送では実際の値は転送されませんが、すべてのキーとアンカーの所有者情報を転送する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:180
 #, fuzzy
-msgid ""
-"Assuming that the values are much bigger compared to the keys, the anchor "
-"cache's state transfer should also be much faster compared to the state "
-"transfer of a distributed cache of a similar size.  But for small values, "
-"there may not be a visible improvement."
-msgstr ""
-"値がキーに比べてはるかに大きいと仮定すると、アンカーキャッシュの状態転送もまた、同じようなサイズの分散キャッシュの状態転送に比べてはるかに高速になるはずです。しかし、小さな値の場合は、目に見える改善はないかもしれません。"
+msgid "Assuming that the values are much bigger compared to the keys, the anchor cache's state transfer should also be much faster compared to the state transfer of a distributed cache of a similar size.  But for small values, there may not be a visible improvement."
+msgstr "値がキーに比べてはるかに大きいと仮定すると、アンカーキャッシュの状態転送もまた、同じようなサイズの分散キャッシュの状態転送に比べてはるかに高速になるはずです。しかし、小さな値の場合は、目に見える改善はないかもしれません。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:185
 #, fuzzy
-msgid ""
-"The initial state transfer does not block a joiner from starting, because it "
-"will just ask another node for the anchor owner.  However, the remote "
-"lookups can be expensive, especially in embedded mode, but also in server "
-"mode, if the client is not `HASH_DISTRIBUTION_AWARE`."
-msgstr ""
-"初期状態の転送は、ジョイナーの起動を妨げるものではありません。しかし、リモートでの検索は、特に組み込みモードでは高価になりますが、サーバモードでも、クライアントが "
-"`HASH_DISTRIBUTION_AWARE` ."
+msgid "The initial state transfer does not block a joiner from starting, because it will just ask another node for the anchor owner.  However, the remote lookups can be expensive, especially in embedded mode, but also in server mode, if the client is not `HASH_DISTRIBUTION_AWARE`."
+msgstr "初期状態の転送は、ジョイナーの起動を妨げるものではありません。しかし、リモートでの検索は、特に組み込みモードでは高価になりますが、サーバモードでも、クライアントが `HASH_DISTRIBUTION_AWARE` ."

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,205 +18,117 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: First steps with Vert.x and Infinispan REST API (Part 1)\n"
-"permalink: /blog/:year/:month/:day/first-steps-with-vertx-and-infinispan-"
-"rest-api\n"
+"permalink: /blog/:year/:month/:day/first-steps-with-vertx-and-infinispan-rest-api\n"
 "date: '2017-12-12T08:04:00.000-08:00'\n"
 "author: karesti\n"
 "tags: [ \"vert.x\", \"rest\", \"API\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7661926351614603116\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/12/first-steps-with-vertx-"
-"and-infinispan-rest-api.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7661926351614603116\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/12/first-steps-with-vertx-and-infinispan-rest-api.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
 "title: Vert.xとInfinispan REST APIを使った最初のステップ(その1)\n"
-"permalink: /blog/:year/:month/:day/first-steps-with-vertx-and-infinispan-"
-"rest-api\n"
+"permalink: /blog/:year/:month/:day/first-steps-with-vertx-and-infinispan-rest-api\n"
 "date: '2017-12-12T08:04:00.000-08:00'\n"
 "author: karesti\n"
 "tags: [ \"vert.x\", \"rest\", \"API\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"7661926351614603116\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/12/first-steps-with-vertx-"
-"and-infinispan-rest-api.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7661926351614603116\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/12/first-steps-with-vertx-and-infinispan-rest-api.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:15
 #, fuzzy
-msgid ""
-"Welcome to the first in a multi-part series of blog posts about creating "
-"http://vertx.io/[Eclipse Vert.x] applications with http://infinispan.org/"
-"[Infinispan]. The purpose of this first tutorial is to showcase how to "
-"create a REST API."
-msgstr ""
-"link:http://infinispan.org/[Infinispan] を使用して link:http://vertx.io/[Eclipse "
-"Vert.x] アプリケーションを作成する方法を紹介するブログ記事シリーズの第一回目へようこそ。この最初のチュートリアルの目的は、REST API "
-"の作成方法を紹介することです。"
+msgid "Welcome to the first in a multi-part series of blog posts about creating http://vertx.io/[Eclipse Vert.x] applications with http://infinispan.org/[Infinispan]. The purpose of this first tutorial is to showcase how to create a REST API."
+msgstr "link:http://infinispan.org/[Infinispan] を使用して link:http://vertx.io/[Eclipse Vert.x] アプリケーションを作成する方法を紹介するブログ記事シリーズの第一回目へようこそ。この最初のチュートリアルの目的は、REST API の作成方法を紹介することです。"
 
 #. type: delimited block _
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:21
 #, fuzzy
-msgid ""
-"_All the code of this tutorial is available in this https://github.com/"
-"infinispan-demos/vertx-api[GitHub repository]. The backend is a Java project "
-"using https://maven.apache.org/[Maven], so all the needed dependencies can "
-"be found in the pom.xml._"
-msgstr ""
-"_このチュートリアルのすべてのコードは、このGitHubリポジトリにあります。バックエンドはMaven を_ 使った Java "
-"プロジェクトなので、必要な依存関係はすべて pom.xml にあります。"
+msgid "_All the code of this tutorial is available in this https://github.com/infinispan-demos/vertx-api[GitHub repository]. The backend is a Java project using https://maven.apache.org/[Maven], so all the needed dependencies can be found in the pom.xml._"
+msgstr "_このチュートリアルのすべてのコードは、このGitHubリポジトリにあります。バックエンドはMaven を_ 使った Java プロジェクトなので、必要な依存関係はすべて pom.xml にあります。"
 
 #. type: Title ==
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:25
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "What is Vert.x ?"
 msgstr "Vert.xとは？"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:35
 #, fuzzy
-msgid ""
-"http://vertx.io/[Vert.x] is a tool-kit for building reactive applications on "
-"the JVM. It’s an event driven and non blocking tool-kit.  It is based on the "
-"http://vertx.io/docs/vertx-core/java/#_reactor_and_multi_reactor[Reactor "
-"Pattern], like Node.js, but unlike Node it can easily use all the cores of "
-"your machine so you can create highly concurrent and performant applications."
-" Code examples can be found https://github.com/vert-x3/vertx-examples[in "
-"this repository]."
-msgstr ""
-"link:http://vertx.io/[Vert.xは] "
-"JVM上でリアクティブなアプリケーションを構築するためのツールキットです。イベントドリブンでノンブロッキングのツールキットです。これはNode."
-"jsのような link:http://vertx.io/docs/vertx-core/java/"
-"#_reactor_and_multi_reactor[Reactorパターン] "
-"をベースにしていますが、Nodeとは異なり、マシンのすべてのコアを簡単に使用できるので、高度な同時実行性とパフォーマンスを持つアプリケーションを作成することができます。コード例はこちら "
-"link:https://github.com/vert-x3/vertx-examples[のリポジトリに] あります。"
+msgid "http://vertx.io/[Vert.x] is a tool-kit for building reactive applications on the JVM. It’s an event driven and non blocking tool-kit.  It is based on the http://vertx.io/docs/vertx-core/java/#_reactor_and_multi_reactor[Reactor Pattern], like Node.js, but unlike Node it can easily use all the cores of your machine so you can create highly concurrent and performant applications. Code examples can be found https://github.com/vert-x3/vertx-examples[in this repository]."
+msgstr "link:http://vertx.io/[Vert.xは] JVM上でリアクティブなアプリケーションを構築するためのツールキットです。イベントドリブンでノンブロッキングのツールキットです。これはNode.jsのような link:http://vertx.io/docs/vertx-core/java/#_reactor_and_multi_reactor[Reactorパターン] をベースにしていますが、Nodeとは異なり、マシンのすべてのコアを簡単に使用できるので、高度な同時実行性とパフォーマンスを持つアプリケーションを作成することができます。コード例はこちら link:https://github.com/vert-x3/vertx-examples[のリポジトリに] あります。"
 
 #. type: Title ==
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:40
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "REST API"
 msgstr "ＲＥＳＴ ＡＰＩ"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:52
 #, fuzzy
-msgid ""
-"Let’s start creating a simple endpoint that will display a welcome message "
-"on '/'. In Vert.x this is done by creating a *http://vertx.io/docs/vertx-"
-"core/java/#_verticles[Verticle]*. A verticle is a unit of deployment and "
-"processes incoming events over an event-loop. https://en.wikipedia.org/wiki/"
-"Event_loop[Event-loops] are used in asynchronous programming models. I won't "
-"spend more time here explaining these concepts as this is very well done in "
-"this https://www.youtube.com/watch?v=qL5BGHPXrac[Devoxx Vert.x talk] or in "
-"the documentation available http://vertx.io/docs/guide-for-java-devs/[here]."
-msgstr ""
-"'/' にウェルカムメッセージを表示するシンプルなエンドポイントを作成してみましょう。Vert.xでは、これは *Verticle* "
-"を作成することで行われます。Verticleはデプロイメントの単位であり、イベントループ上で受信イベントを処理します。イベントループ link:"
-"https://en.wikipedia.org/wiki/Event_loop[は] "
-"非同期プログラミングモデルで使用されます。これらの概念についての説明は、この link:https://www.youtube.com/watch?v="
-"qL5BGHPXrac[Devoxx Vert.xのトーク] や link:http://vertx.io/docs/guide-for-java-"
-"devs/[ここで] 入手可能なドキュメントで非常によく説明されているので、ここではこれ以上時間をかけて説明しません。"
+msgid "Let’s start creating a simple endpoint that will display a welcome message on '/'. In Vert.x this is done by creating a *http://vertx.io/docs/vertx-core/java/#_verticles[Verticle]*. A verticle is a unit of deployment and processes incoming events over an event-loop. https://en.wikipedia.org/wiki/Event_loop[Event-loops] are used in asynchronous programming models. I won't spend more time here explaining these concepts as this is very well done in this https://www.youtube.com/watch?v=qL5BGHPXrac[Devoxx Vert.x talk] or in the documentation available http://vertx.io/docs/guide-for-java-devs/[here]."
+msgstr "'/' にウェルカムメッセージを表示するシンプルなエンドポイントを作成してみましょう。Vert.xでは、これは *Verticle* を作成することで行われます。Verticleはデプロイメントの単位であり、イベントループ上で受信イベントを処理します。イベントループ link:https://en.wikipedia.org/wiki/Event_loop[は] 非同期プログラミングモデルで使用されます。これらの概念についての説明は、この link:https://www.youtube.com/watch?v=qL5BGHPXrac[Devoxx Vert.xのトーク] や link:http://vertx.io/docs/guide-for-java-devs/[ここで] 入手可能なドキュメントで非常によく説明されているので、ここではこれ以上時間をかけて説明しません。"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:55
 #, fuzzy
-msgid ""
-"We need to override the start method, create a 'router' so '/' requests can "
-"be handled, and finally create a http server."
+msgid "We need to override the start method, create a 'router' so '/' requests can be handled, and finally create a http server."
 msgstr "startメソッドをオーバーライドし、'/'リクエストを処理できるように'ルータ'を作成し、最後にhttpサーバを作成する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:61
 #, fuzzy
-msgid ""
-"The most important thing to remember about vert.x, is that *we can NEVER "
-"EVER call blocking code* (we will see how to deal with blocking API's just "
-"after). If we do so, we will http://vertx.io/docs/vertx-core/java/"
-"#golden_rule[block the event loop] and we won't be able to serve incoming "
-"requests properly."
-msgstr ""
-"vert.x について覚えておくべき最も重要なことは、絶対にブロッ *キングコードを呼び出してはいけない* ということです (API "
-"のブロッキングをどう処理するかは後ほど説明します)。もしそうすると、 link:http://vertx.io/docs/vertx-core/java/"
-"#golden_rule[イベントループをブロックして] しまい、受信したリクエストを適切に処理できなくなってしまいます。"
+msgid "The most important thing to remember about vert.x, is that *we can NEVER EVER call blocking code* (we will see how to deal with blocking API's just after). If we do so, we will http://vertx.io/docs/vertx-core/java/#golden_rule[block the event loop] and we won't be able to serve incoming requests properly."
+msgstr "vert.x について覚えておくべき最も重要なことは、絶対にブロッ *キングコードを呼び出してはいけない* ということです (API のブロッキングをどう処理するかは後ほど説明します)。もしそうすると、 link:http://vertx.io/docs/vertx-core/java/#golden_rule[イベントループをブロックして] しまい、受信したリクエストを適切に処理できなくなってしまいます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:67
 #, fuzzy
-msgid ""
-"Run the main method, go to your browser to http://localhost:8081/ and we see "
-"the welcome message !"
+msgid "Run the main method, go to your browser to http://localhost:8081/ and we see the welcome message !"
 msgstr "メインメソッドを実行して、ブラウザに行く http://localhost:8081/ and 歓迎のメッセージを参照してください"
 
 #. type: Title ===
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:69
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Connecting with Infinispan"
 msgstr "Infinispanとの接続"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:82
 #, fuzzy
-msgid ""
-"Now we are going to create a *REST API* that uses Infinispan. The purpose "
-"here is to post and get names by id. We are going to use the default cache "
-"in Infinispan for this example, and we will connect to it remotely. To do "
-"that, we are going to use the http://infinispan.org/hotrod-clients/"
-"[Infinispan hotrod protocol], which is the recommended way to do it (but we "
-"could use http://infinispan.org/docs/9.0.x/infinispan_server_guide/"
-"infinispan_server_guide.html#_rest[REST] or http://infinispan.org/docs/9.0.x/"
-"infinispan_server_guide/infinispan_server_guide.html#_memcached[Memcached] "
-"protocol too)"
-msgstr ""
-"今度はInfinispanを使った *REST APIを* "
-"作ってみます。ここでの目的は、投稿してidで名前を取得することです。この例ではInfinispanのデフォルトキャッシュを使用し、リモートで接続します。そのためには、Infin "
-"link:http://infinispan.org/hotrod-clients/[ispanのホットロッドプロトコル] を使用します。"
+msgid "Now we are going to create a *REST API* that uses Infinispan. The purpose here is to post and get names by id. We are going to use the default cache in Infinispan for this example, and we will connect to it remotely. To do that, we are going to use the http://infinispan.org/hotrod-clients/[Infinispan hotrod protocol], which is the recommended way to do it (but we could use http://infinispan.org/docs/9.0.x/infinispan_server_guide/infinispan_server_guide.html#_rest[REST] or http://infinispan.org/docs/9.0.x/infinispan_server_guide/infinispan_server_guide.html#_memcached[Memcached] protocol too)"
+msgstr "今度はInfinispanを使った *REST APIを* 作ってみます。ここでの目的は、投稿してidで名前を取得することです。この例ではInfinispanのデフォルトキャッシュを使用し、リモートで接続します。そのためには、Infin link:http://infinispan.org/hotrod-clients/[ispanのホットロッドプロトコル] を使用します。"
 
 #. type: Title ====
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:84
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Start Infinispan locally"
 msgstr "現地でInfinispanを開始"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:90
 #, fuzzy
-msgid ""
-"The first thing we are going to do is to run an Infinispan Server locally. "
-"We download the Infinispan Server from http://downloads.jboss.org/infinispan/"
-"9.1.3.Final/infinispan-server-9.1.3.Final-bin.zip[here], unzip the "
-"downloaded file and run ./bin/standalone.sh. "
-msgstr ""
-"まずは、ローカルでInfinispan Serverを実行します。 link:http://downloads.jboss.org/infinispan/"
-"9.1.3.Final/infinispan-server-9.1.3.Final-bin.zip[ここ] からInfinispan "
-"Serverをダウンロードし、ダウンロードしたファイルを解凍し、./bin/standalone.shを実行します。"
+msgid "The first thing we are going to do is to run an Infinispan Server locally. We download the Infinispan Server from http://downloads.jboss.org/infinispan/9.1.3.Final/infinispan-server-9.1.3.Final-bin.zip[here], unzip the downloaded file and run ./bin/standalone.sh. "
+msgstr "まずは、ローカルでInfinispan Serverを実行します。 link:http://downloads.jboss.org/infinispan/9.1.3.Final/infinispan-server-9.1.3.Final-bin.zip[ここ] からInfinispan Serverをダウンロードし、ダウンロードしたファイルを解凍し、./bin/standalone.shを実行します。"
 
 #. type: delimited block _
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:100
 #, fuzzy
-msgid ""
-"_If you are using Docker on Linux, you can use the Ihttps://hub.docker.com/r/"
-"jboss/infinispan-server/[nfinispan Docker Image Available] easily. If you "
-"are using Docker for Mac, at the time of this writing there is an issue with "
-"internal IP addresses and they can't be called externally. Different "
-"workarounds exist to solve the problem, but the easiest thing for this "
-"example is simply downloading and running the standalone server locally. We "
-"will see how to use the docker image in Openshift just after._"
-msgstr ""
-"_LinuxでDockerを使っている場合は、Ihttps://hub.docker.com/r/jboss/infinispan-server/"
-"[nfinispan Docker Image "
-"Available]が簡単に使えます。MacでDockerを使っている場合は、この記事を書いている時点で内部IPアドレスに問題があり、外部から呼び出すことができません。この問題を解決するために様々な回避策が存在しますが、今回の例で一番簡単なのはスタンドアロンサーバーをローカルにダウンロードして実行するだけです。直後に "
-"Openshift で docker イメージを使う方法を見てみましょう。_"
+msgid "_If you are using Docker on Linux, you can use the Ihttps://hub.docker.com/r/jboss/infinispan-server/[nfinispan Docker Image Available] easily. If you are using Docker for Mac, at the time of this writing there is an issue with internal IP addresses and they can't be called externally. Different workarounds exist to solve the problem, but the easiest thing for this example is simply downloading and running the standalone server locally. We will see how to use the docker image in Openshift just after._"
+msgstr "_LinuxでDockerを使っている場合は、Ihttps://hub.docker.com/r/jboss/infinispan-server/[nfinispan Docker Image Available]が簡単に使えます。MacでDockerを使っている場合は、この記事を書いている時点で内部IPアドレスに問題があり、外部から呼び出すことができません。この問題を解決するために様々な回避策が存在しますが、今回の例で一番簡単なのはスタンドアロンサーバーをローカルにダウンロードして実行するだけです。直後に Openshift で docker イメージを使う方法を見てみましょう。_"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:103
@@ -226,60 +138,37 @@ msgstr "hotrodサーバはlocalhost:11222で待機しています。"
 
 #. type: Title ====
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:104
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Connect the client to the server"
 msgstr "クライアントをサーバーに接続する"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:108
 #, fuzzy
-msgid ""
-"The code we need to connect with Infinispan from our java application is the "
-"following :"
+msgid "The code we need to connect with Infinispan from our java application is the following :"
 msgstr "java アプリケーションから Infinispan に接続するために必要なコードは以下の通りです。"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:122
 #, fuzzy
-msgid ""
-"This code *is blocking*. As I said before, *we can't block the event loop* "
-"and this will happen if we directly call these API's from a verticle. The "
-"code must be called using http://vertx.io/docs/vertx-core/java/"
-"#blocking_code[vertx.executeBlocking] method, and passing a Handler. The "
-"code in the handler will be executed from a worker thread pool and will pass "
-"the result back asynchronously.  Instead of overriding the start method, we "
-"are going to override start(Future<Void> startFuture). This way, we are "
-"going to be able to handle errors."
-msgstr ""
-"このコードは *ブロック* しています。先ほども言いましたが、 *イベントループをブロックする* "
-"ことはできないので、これらのAPIを直接verticleから呼び出すとこうなります。このコードは link:http://vertx.io/docs/"
-"vertx-core/java/#blocking_code[vertx.executeBlocking] メソッドを使って呼び出し、Handler "
-"を渡す必要があります。ハンドラー内のコードはワーカースレッドプールから実行され、結果を非同期的に返します。startメソッドをオーバーライドする代わりに、start(Future<Void> "
-"startFuture)をオーバーライドします。このようにして、エラーを処理できるようになりそうです。"
+msgid "This code *is blocking*. As I said before, *we can't block the event loop* and this will happen if we directly call these API's from a verticle. The code must be called using http://vertx.io/docs/vertx-core/java/#blocking_code[vertx.executeBlocking] method, and passing a Handler. The code in the handler will be executed from a worker thread pool and will pass the result back asynchronously.  Instead of overriding the start method, we are going to override start(Future<Void> startFuture). This way, we are going to be able to handle errors."
+msgstr "このコードは *ブロック* しています。先ほども言いましたが、 *イベントループをブロックする* ことはできないので、これらのAPIを直接verticleから呼び出すとこうなります。このコードは link:http://vertx.io/docs/vertx-core/java/#blocking_code[vertx.executeBlocking] メソッドを使って呼び出し、Handler を渡す必要があります。ハンドラー内のコードはワーカースレッドプールから実行され、結果を非同期的に返します。startメソッドをオーバーライドする代わりに、start(Future<Void> startFuture)をオーバーライドします。このようにして、エラーを処理できるようになりそうです。"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:125
 #, fuzzy
-msgid ""
-"To stop the client, the API supplies a non blocking method that can be "
-"called when the verticle is stopped, so we are safe on that."
+msgid "To stop the client, the API supplies a non blocking method that can be called when the verticle is stopped, so we are safe on that."
 msgstr "クライアントを停止させるために、APIは頂点が停止したときに呼び出せるノンブロッキングメソッドを提供しているので、その点では安心です。"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:130
 #, fuzzy
-msgid ""
-"We are going to create an abstract CacheAccessVerticle where we will "
-"initialise the manager and get default cache. When everything is correct and "
-"the defautCache variable is initialised, we will log a message and execute "
-"the initSuccess abstract method."
-msgstr ""
-"抽象 CacheAccessVerticle を作成し、マネージャを初期化して既定のキャッシュを取得します。すべてが正しく、defautCache "
-"変数が初期化されたら、メッセージをログに記録し、抽象メソッド initSuccess を実行します。"
+msgid "We are going to create an abstract CacheAccessVerticle where we will initialise the manager and get default cache. When everything is correct and the defautCache variable is initialised, we will log a message and execute the initSuccess abstract method."
+msgstr "抽象 CacheAccessVerticle を作成し、マネージャを初期化して既定のキャッシュを取得します。すべてが正しく、defautCache 変数が初期化されたら、メッセージをログに記録し、抽象メソッド initSuccess を実行します。"
 
 #. type: Title ===
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:134
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "REST API to create names"
 msgstr "名前を作成するREST API"
 
@@ -310,16 +199,12 @@ msgstr "GET /api/cutenames/id idで名前を表示します。"
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:145
 #, fuzzy
-msgid ""
-"CuteNamesRestAPI verticle can now extend this class and override "
-"the initSuccess method instead of the start method."
-msgstr ""
-"CuteNamesRestAPI "
-"verticleは、このクラスを拡張し、startメソッドの代わりにinitSuccessメソッドをオーバーライドできるようになりました。"
+msgid "CuteNamesRestAPI verticle can now extend this class and override the initSuccess method instead of the start method."
+msgstr "CuteNamesRestAPI verticleは、このクラスを拡張し、startメソッドの代わりにinitSuccessメソッドをオーバーライドできるようになりました。"
 
 #. type: Title ====
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:150
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "POST"
 msgstr "ポスト"
 
@@ -332,67 +217,44 @@ msgstr "私たちの目標は、カールを使用してこのような名前を
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:158
 #, fuzzy
-msgid ""
-"curl -X POST \\  -H \"Content-Type: application/json\" \\ -d '\\{\"name\":"
-"\"Oihana\"}' \"http://localhost:8081/api/cutenames\""
+msgid "curl -X POST \\  -H \"Content-Type: application/json\" \\ -d '\\{\"name\":\"Oihana\"}' \"http://localhost:8081/api/cutenames\""
 msgstr "curl -X POST ¶ ¶ -H \"Content-Type: application/json\""
 
 #. type: delimited block _
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:166
 #, fuzzy
-msgid ""
-"_For those that are not familiar with basques names, Oihana means "
-"'rainforest' and is a super cute name. Those who know me will confirm that "
-"I'm absolutely not biased making this statement._"
-msgstr ""
-"_バスク人の名前を知らない人のために、オイハナとは「雨林」という意味で、超キュートな名前です。私のことを知っている人は、私がこの発言をしていることが絶対に偏っていないことを確認してくれるでしょう。_"
+msgid "_For those that are not familiar with basques names, Oihana means 'rainforest' and is a super cute name. Those who know me will confirm that I'm absolutely not biased making this statement._"
+msgstr "_バスク人の名前を知らない人のために、オイハナとは「雨林」という意味で、超キュートな名前です。私のことを知っている人は、私がこの発言をしていることが絶対に偏っていないことを確認してくれるでしょう。_"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:171
 #, fuzzy
-msgid ""
-"To read the body content, we need to *add a body handler* to the route, "
-"otherwise the body won't be parsed. This is done by calling router.route()."
-"handler(BodyHandler.create())."
-msgstr ""
-"ボディの内容を読み込むためには、ルートにボディ *ハンドラを追加する* 必要があります。これは router.route()."
-"handler(BodyHandler.create()) を呼び出すことで行います。"
+msgid "To read the body content, we need to *add a body handler* to the route, otherwise the body won't be parsed. This is done by calling router.route().handler(BodyHandler.create())."
+msgstr "ボディの内容を読み込むためには、ルートにボディ *ハンドラを追加する* 必要があります。これは router.route().handler(BodyHandler.create()) を呼び出すことで行います。"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:175
 #, fuzzy
-msgid ""
-"The handler that will handle the post method in '/api/cutenames' is a "
-"RoutingContext handler. We want to create a new name in the default cache. "
-"For that, we will call putAsync method from the *defaultCache*."
-msgstr ""
-"'/api/"
-"cutenames'のpostメソッドを処理するハンドラはRoutingContextハンドラです。デフォルトのキャッシュに新しい名前を作成したい。そのために "
-"*defaultCache* からputAsyncメソッドを呼び出します。"
+msgid "The handler that will handle the post method in '/api/cutenames' is a RoutingContext handler. We want to create a new name in the default cache. For that, we will call putAsync method from the *defaultCache*."
+msgstr "'/api/cutenames'のpostメソッドを処理するハンドラはRoutingContextハンドラです。デフォルトのキャッシュに新しい名前を作成したい。そのために *defaultCache* からputAsyncメソッドを呼び出します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:182
 #, fuzzy
-msgid ""
-"The server responds 201 when the name is correctly created, and 400 when the "
-"request is not correct."
+msgid "The server responds 201 when the name is correctly created, and 400 when the request is not correct."
 msgstr "サーバは、名前が正しく作成されている場合は201、リクエストが正しくない場合は400を返信します。"
 
 #. type: Title ====
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:184
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "GET by id"
 msgstr "IDでGET"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:189
 #, fuzzy
-msgid ""
-"To create a get endpoint by id, we need to declare a route that will take a "
-"parameter :id. In the route handler, we are going to call getAsync method."
-msgstr ""
-"idによるgetエンドポイントを作成するには、パラメータ:"
-"idを取るルートを宣言する必要があります。ルートハンドラでは、getAsyncメソッドを呼び出します。"
+msgid "To create a get endpoint by id, we need to declare a route that will take a parameter :id. In the route handler, we are going to call getAsync method."
+msgstr "idによるgetエンドポイントを作成するには、パラメータ:idを取るルートを宣言する必要があります。ルートハンドラでは、getAsyncメソッドを呼び出します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:194
@@ -403,48 +265,29 @@ msgstr "メインを実行すると、curl を使って名前を POST したり 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:198
 #, fuzzy
-msgid ""
-" curl -X POST -H \"Content-Type: application/json\" \\  -d '\\{\"id\":"
-"\"42\", \"name\":\"Oihana\"}' \\  \"http://localhost:8081/api/cutenames\" "
-msgstr ""
-" curl -X POST -H \"Content-Type: application/json\" \\  -d '\\{\"id\":"
-"\"42\", \"name\":\"Oihana\"}' \\  \"http://localhost:8081/api/cutenames\" "
+msgid " curl -X POST -H \"Content-Type: application/json\" \\  -d '\\{\"id\":\"42\", \"name\":\"Oihana\"}' \\  \"http://localhost:8081/api/cutenames\" "
+msgstr " curl -X POST -H \"Content-Type: application/json\" \\  -d '\\{\"id\":\"42\", \"name\":\"Oihana\"}' \\  \"http://localhost:8081/api/cutenames\" "
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:200
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "*Cute name added *\n"
 msgstr "*かわいい名前が追加されました*"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:205
 #, fuzzy
-msgid ""
-" curl -X GET -H \"Content-Type: application/json\" \\  \"http://localhost:"
-"8081/api/cutenames/42\" * \\{\"name\":\"Oihana\"}*"
-msgstr ""
-"curl -X GET -H \"Content-Type: application/json\" \"http://localhost:8081/"
-"api/cutenames/42\" * \\{\"name\":\"Oihana\"}*."
+msgid " curl -X GET -H \"Content-Type: application/json\" \\  \"http://localhost:8081/api/cutenames/42\" * \\{\"name\":\"Oihana\"}*"
+msgstr "curl -X GET -H \"Content-Type: application/json\" \"http://localhost:8081/api/cutenames/42\" * \\{\"name\":\"Oihana\"}*."
 
 #. type: Title ==
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:209
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Wrap up"
 msgstr "ラップアップ"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-12-first-steps-with-vertx-and-infinispan-rest-api.adoc:219
 #, fuzzy
-msgid ""
-"We have learned how to create a REST API with Vert.x, powered by Infinispan. "
-"The repository has some unit tests using the http://vertx.io/docs/vertx-web-"
-"client/java/[web client]. Feedback is more than welcome to improve the code "
-"and the provided examples. I hope you enjoyed this tutorial ! On the next "
-"tutorial you will learn how to create a http://blog.infinispan.org/2017/12/"
-"first-steps-with-vertx-and-infinispan-push-api.html[PUSH API]."
-msgstr ""
-"Infinispanが提供するVert.xを使ってREST APIを作成する方法を学びました。リポジトリには link:http://vertx.io/"
-"docs/vertx-web-client/java/[Webクライアント] "
-"を使ったユニットテストがいくつかあります。フィードバックはコードと提供された例を改善するために大歓迎です。このチュートリアルをお楽しみいただけたでしょうか。次のチュートリアルでは "
-"link:http://blog.infinispan.org/2017/12/first-steps-with-vertx-and-"
-"infinispan-push-api.html[PUSH APIの] 作成方法を学びます。"
+msgid "We have learned how to create a REST API with Vert.x, powered by Infinispan. The repository has some unit tests using the http://vertx.io/docs/vertx-web-client/java/[web client]. Feedback is more than welcome to improve the code and the provided examples. I hope you enjoyed this tutorial ! On the next tutorial you will learn how to create a http://blog.infinispan.org/2017/12/first-steps-with-vertx-and-infinispan-push-api.html[PUSH API]."
+msgstr "Infinispanが提供するVert.xを使ってREST APIを作成する方法を学びました。リポジトリには link:http://vertx.io/docs/vertx-web-client/java/[Webクライアント] を使ったユニットテストがいくつかあります。フィードバックはコードと提供された例を改善するために大歓迎です。このチュートリアルをお楽しみいただけたでしょうか。次のチュートリアルでは link:http://blog.infinispan.org/2017/12/first-steps-with-vertx-and-infinispan-push-api.html[PUSH APIの] 作成方法を学びます。"

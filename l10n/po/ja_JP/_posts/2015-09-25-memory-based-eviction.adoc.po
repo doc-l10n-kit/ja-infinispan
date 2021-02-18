@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-09-25-memory-based-eviction.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-25-memory-based-eviction.adoc:13
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Memory based eviction\n"
@@ -35,10 +35,8 @@ msgid ""
 "\"eviction\",\n"
 "\"memory\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"9205619912921210471\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/09/memory-based-eviction."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-9205619912921210471\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/09/memory-based-eviction.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -50,206 +48,123 @@ msgstr ""
 "\"eviction\",\n"
 "\"memory\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"9205619912921210471\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/09/memory-based-eviction."
-"html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-9205619912921210471\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/09/memory-based-eviction.html\n"
 "---\n"
 
 #. type: Title ==
 #: upstream/_posts/2015-09-25-memory-based-eviction.adoc:14
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Eviction Today"
 msgstr "今日の立ち退き"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-25-memory-based-eviction.adoc:26
 #, fuzzy
-msgid ""
-"Infinispan since its inception has supported a way to help users control how "
-"much memory the in memory cache entries consume in the JVM.  This has always "
-"been limited to a number of entries.  In the past users have had to estimate "
-"the average amount of bytes their entries used on the heap.  With this "
-"average you can easily calculate how many entries could safely be stored in "
-"memory without running into issues.  For users who have keys and values that "
-"are relatively similar this can work well.  However when the case requires "
-"entries that vary in size this can be problematic and you end up calculating "
-"the average size based on the worse case."
-msgstr ""
-"Infinispanは、創業以来、ユーザーがJVMでメモリキャッシュエントリが消費するメモリ量を制御する方法をサポートしてきました。 "
-"これは常にエントリ数に制限されてきました。 "
-"過去には、ユーザーはエントリがヒープ上で使用する平均バイト数を推定しなければなりませんでした。この平均値を使用することで、問題が発生することなく安全にメモリに格納できるエントリ数を簡単に計算することができます。 "
-"比較的似たようなキーや値を持つユーザにとっては、これはうまく機能します。 "
-"しかし、サイズの異なるエントリを必要とする場合には、これは問題となり、最悪のケースに基づいて平均サイズを計算してしまうことになりかねません。"
+msgid "Infinispan since its inception has supported a way to help users control how much memory the in memory cache entries consume in the JVM.  This has always been limited to a number of entries.  In the past users have had to estimate the average amount of bytes their entries used on the heap.  With this average you can easily calculate how many entries could safely be stored in memory without running into issues.  For users who have keys and values that are relatively similar this can work well.  However when the case requires entries that vary in size this can be problematic and you end up calculating the average size based on the worse case."
+msgstr "Infinispanは、創業以来、ユーザーがJVMでメモリキャッシュエントリが消費するメモリ量を制御する方法をサポートしてきました。 これは常にエントリ数に制限されてきました。 過去には、ユーザーはエントリがヒープ上で使用する平均バイト数を推定しなければなりませんでした。この平均値を使用することで、問題が発生することなく安全にメモリに格納できるエントリ数を簡単に計算することができます。 比較的似たようなキーや値を持つユーザにとっては、これはうまく機能します。 しかし、サイズの異なるエントリを必要とする場合には、これは問題となり、最悪のケースに基づいて平均サイズを計算してしまうことになりかねません。"
 
 #. type: Title ==
 #: upstream/_posts/2015-09-25-memory-based-eviction.adoc:28
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Enter Memory Based Eviction"
 msgstr "メモリベースのエヴィクションを入力してください"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-25-memory-based-eviction.adoc:35
 #, fuzzy
-msgid ""
-"Infinispan 8 introduces memory based eviction counting.  That is Infinispan "
-"will automatically keep track of how large the key, value and overhead if "
-"possible.  It can use these values then to try to limit the number of "
-"entries instead to a memory count such as 1 Gigabyte."
-msgstr ""
-"Infinispan 8 は、メモリベースの退避カウントを導入しています。 つまり、Infinispan "
-"は、可能であれば、キー、値、オーバーヘッドの大きさを自動的に追跡します。 これらの値を使用して、エントリの数を 1 "
-"ギガバイトのようなメモリカウントに制限することができます。"
+msgid "Infinispan 8 introduces memory based eviction counting.  That is Infinispan will automatically keep track of how large the key, value and overhead if possible.  It can use these values then to try to limit the number of entries instead to a memory count such as 1 Gigabyte."
+msgstr "Infinispan 8 は、メモリベースの退避カウントを導入しています。 つまり、Infinispan は、可能であれば、キー、値、オーバーヘッドの大きさを自動的に追跡します。 これらの値を使用して、エントリの数を 1 ギガバイトのようなメモリカウントに制限することができます。"
 
 #. type: Title ===
 #: upstream/_posts/2015-09-25-memory-based-eviction.adoc:37
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Key/Value limitations"
 msgstr "キー/値の制限"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-25-memory-based-eviction.adoc:46
 #, fuzzy
-msgid ""
-"Unfortunately this is currently limited to only using keys and values stored "
-"as primitives, primitive wrappers (ie. Integer), java.lang.String(s) and any "
-"of the previously mentioned stored in an array.  This means this feature "
-"cannot be used with any custom classes.  If enough feedback is provided we "
-"could provide a SPI to allow the user to plug in their own counter for their "
-"own classes, but this is not planned currently."
-msgstr ""
-"残念ながら、これは現在のところ、プリミティブとして格納されたキーと値、プリミティブのラッパー（例えば整数）、java.lang."
-"String(s)、および配列に格納された前述のいずれかのキーと値の使用に限定されています。 "
-"これは、この機能をカスタムクラスで使用できないことを意味します。 "
-"十分なフィードバックが提供されれば、ユーザが独自のクラスに独自のカウンタをプラグインできるようにするSPIを提供することができますが、これは現在のところ計画されていません。"
+msgid "Unfortunately this is currently limited to only using keys and values stored as primitives, primitive wrappers (ie. Integer), java.lang.String(s) and any of the previously mentioned stored in an array.  This means this feature cannot be used with any custom classes.  If enough feedback is provided we could provide a SPI to allow the user to plug in their own counter for their own classes, but this is not planned currently."
+msgstr "残念ながら、これは現在のところ、プリミティブとして格納されたキーと値、プリミティブのラッパー（例えば整数）、java.lang.String(s)、および配列に格納された前述のいずれかのキーと値の使用に限定されています。 これは、この機能をカスタムクラスで使用できないことを意味します。 十分なフィードバックが提供されれば、ユーザが独自のクラスに独自のカウンタをプラグインできるようにするSPIを提供することができますが、これは現在のところ計画されていません。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-25-memory-based-eviction.adoc:56
 #, fuzzy
-msgid ""
-"There are a couple ways to easily get around this.  One is to use http://"
-"infinispan.org/docs/8.0.x/user_guide/user_guide."
-"html#_store_as_binary[storeAsBinary], which will store your keys and/or "
-"values as byte arrays for you automatically, satisfying this limitation.  A "
-"second way is when you are using the client such as HotRod, in this case the "
-"data is stored in the serialized (byte[]) form.  Note that http://infinispan."
-"org/docs/8.0.x/user_guide/user_guide."
-"html#_enable_compatibility_mode[compatibility mode] will prevent this from "
-"occurring and you are unable to use these configurations together."
-msgstr ""
-"この制限を簡単に回避する方法がいくつかあります。 1つは link:http://infinispan.org/docs/8.0.x/"
-"user_guide/user_guide.html#_store_as_binary[storeAsBinary] "
-"を使用することで、キーや値を自動的にバイト配列として保存し、この制限を満たします。 "
-"2つ目の方法は、HotRodのようなクライアントを使用している場合で、この場合、データはシリアライズされた(byte[])形式で保存されます。 互換性 "
-"link:http://infinispan.org/docs/8.0.x/user_guide/user_guide."
-"html#_enable_compatibility_mode[モードでは] "
-"このようなことは起こらず、これらの設定を一緒に使用することはできないことに注意してください。"
+msgid "There are a couple ways to easily get around this.  One is to use http://infinispan.org/docs/8.0.x/user_guide/user_guide.html#_store_as_binary[storeAsBinary], which will store your keys and/or values as byte arrays for you automatically, satisfying this limitation.  A second way is when you are using the client such as HotRod, in this case the data is stored in the serialized (byte[]) form.  Note that http://infinispan.org/docs/8.0.x/user_guide/user_guide.html#_enable_compatibility_mode[compatibility mode] will prevent this from occurring and you are unable to use these configurations together."
+msgstr "この制限を簡単に回避する方法がいくつかあります。 1つは link:http://infinispan.org/docs/8.0.x/user_guide/user_guide.html#_store_as_binary[storeAsBinary] を使用することで、キーや値を自動的にバイト配列として保存し、この制限を満たします。 2つ目の方法は、HotRodのようなクライアントを使用している場合で、この場合、データはシリアライズされた(byte[])形式で保存されます。 互換性 link:http://infinispan.org/docs/8.0.x/user_guide/user_guide.html#_enable_compatibility_mode[モードでは] このようなことは起こらず、これらの設定を一緒に使用することはできないことに注意してください。"
 
 #. type: Title ===
 #: upstream/_posts/2015-09-25-memory-based-eviction.adoc:57
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Eviction Type limitation"
 msgstr "立ち退きタイプの制限"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-25-memory-based-eviction.adoc:63
 #, fuzzy
-msgid ""
-"Due to the complexity of LIRS, memory based eviction is only supported with "
-"LRU at this time. See the types http://infinispan.org/docs/8.0.x/user_guide/"
-"user_guide.html#_eviction_strategies[here].  This could be enhanced at a "
-"later point, but is also not planned."
-msgstr ""
-"LIRS の複雑さのため、メモリベースのイビクションは現時点では LRU でのみサポートされています。 link:http://infinispan."
-"org/docs/8.0.x/user_guide/user_guide.html#_eviction_strategies[これ] "
-"は後の時点で強化される可能性がありますが、計画されていません。"
+msgid "Due to the complexity of LIRS, memory based eviction is only supported with LRU at this time. See the types http://infinispan.org/docs/8.0.x/user_guide/user_guide.html#_eviction_strategies[here].  This could be enhanced at a later point, but is also not planned."
+msgstr "LIRS の複雑さのため、メモリベースのイビクションは現時点では LRU でのみサポートされています。 link:http://infinispan.org/docs/8.0.x/user_guide/user_guide.html#_eviction_strategies[これ] は後の時点で強化される可能性がありますが、計画されていません。"
 
 #. type: Title ==
 #: upstream/_posts/2015-09-25-memory-based-eviction.adoc:65
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "How to enable"
 msgstr "有効にする方法"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-25-memory-based-eviction.adoc:71
 #, fuzzy
-msgid ""
-"You can enable memory based eviction either through programmatic or "
-"declarative configuration.  Note that Infinispan added long support (limited "
-"to 2^48) for the size value which directly helps memory based eviction if "
-"users want to utilize caches larger than 2 GB."
-msgstr ""
-"プログラム構成または宣言的構成のいずれかでメモリベースのイビクションを有効にすることができます。 "
-"Infinispanはサイズ値に長いサポート(2^48に制限)を追加しました。"
+msgid "You can enable memory based eviction either through programmatic or declarative configuration.  Note that Infinispan added long support (limited to 2^48) for the size value which directly helps memory based eviction if users want to utilize caches larger than 2 GB."
+msgstr "プログラム構成または宣言的構成のいずれかでメモリベースのイビクションを有効にすることができます。 Infinispanはサイズ値に長いサポート(2^48に制限)を追加しました。"
 
 #. type: Title ===
 #: upstream/_posts/2015-09-25-memory-based-eviction.adoc:72
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Programmatic"
 msgstr "プログラム"
 
 #. type: Title ===
 #: upstream/_posts/2015-09-25-memory-based-eviction.adoc:76
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Declarative "
 msgstr "宣言的"
 
 #. type: Title ==
 #: upstream/_posts/2015-09-25-memory-based-eviction.adoc:82
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Supported JVMs"
 msgstr "サポートされているJVM"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-25-memory-based-eviction.adoc:87
 #, fuzzy
-msgid ""
-"This was tested and written specifically for Oracle and OpenJDK JVMs.  In "
-"testing these JVMs showed memory accuracy within 1% of desired value.  Other "
-"JVMs may shown incorrect values."
-msgstr ""
-"これは、OracleとOpenJDKのJVM用に特別にテストされ、書かれています。 "
-"テストでは、これらのJVMは、希望する値の1%以内のメモリ精度を示しました。他のJVMでは、誤った値を示している可能性があります。"
+msgid "This was tested and written specifically for Oracle and OpenJDK JVMs.  In testing these JVMs showed memory accuracy within 1% of desired value.  Other JVMs may shown incorrect values."
+msgstr "これは、OracleとOpenJDKのJVM用に特別にテストされ、書かれています。 テストでは、これらのJVMは、希望する値の1%以内のメモリ精度を示しました。他のJVMでは、誤った値を示している可能性があります。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-25-memory-based-eviction.adoc:92
 #, fuzzy
-msgid ""
-"The algorithm takes into account JVM options, such as compressed pointers "
-"and 32 bit JVM vs 64 bit JVM.  Keep in mind this is only for the data "
-"container and doesn't take into account additional overhead such as created "
-"threads or other runtime objects."
-msgstr ""
-"このアルゴリズムは、圧縮ポインタや32ビットJVM vs 64ビットJVMなどのJVMオプションを考慮しています。 "
-"これはデータコンテナのためだけのものであり、作成されたスレッドや他のランタイムオブジェクトなどの追加のオーバーヘッドは考慮していないことに注意してください。"
+msgid "The algorithm takes into account JVM options, such as compressed pointers and 32 bit JVM vs 64 bit JVM.  Keep in mind this is only for the data container and doesn't take into account additional overhead such as created threads or other runtime objects."
+msgstr "このアルゴリズムは、圧縮ポインタや32ビットJVM vs 64ビットJVMなどのJVMオプションを考慮しています。 これはデータコンテナのためだけのものであり、作成されたスレッドや他のランタイムオブジェクトなどの追加のオーバーヘッドは考慮していないことに注意してください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-25-memory-based-eviction.adoc:97
 #, fuzzy
-msgid ""
-"Other JVMs are not handled such as the IBM JVM which was briefly tested and "
-"showed incorrect numbers greater than 10% of the desired amount.  Support "
-"for other JVMs can be added later as interest is shown for them."
-msgstr ""
-"他のJVMは、IBM JVMのように、簡単にテストされ、希望する金額の10%を超える不正確な数値を示したものは扱いません。 "
-"他のJVMのサポートは、それらのJVMに関心が示されているので、後で追加することができます。"
+msgid "Other JVMs are not handled such as the IBM JVM which was briefly tested and showed incorrect numbers greater than 10% of the desired amount.  Support for other JVMs can be added later as interest is shown for them."
+msgstr "他のJVMは、IBM JVMのように、簡単にテストされ、希望する金額の10%を超える不正確な数値を示したものは扱いません。 他のJVMのサポートは、それらのJVMに関心が示されているので、後で追加することができます。"
 
 #. type: Title ==
 #: upstream/_posts/2015-09-25-memory-based-eviction.adoc:99
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Closing Notes"
 msgstr "クロージングノート"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-25-memory-based-eviction.adoc:105
 #, fuzzy
-msgid ""
-"I hope this feature helps people to better handle their memory constraints "
-"while using Infinispan!  Let us know if you have any http://infinispan.org/"
-"getinvolved/[feedback or concerns]."
-msgstr ""
-"この機能が、Infinispanを使用している間のメモリ制約をより良く処理するのに役立つことを願っています。 何か link:http://"
-"infinispan.org/getinvolved/[フィードバックや懸念事項] がありましたら、お知らせください。"
+msgid "I hope this feature helps people to better handle their memory constraints while using Infinispan!  Let us know if you have any http://infinispan.org/getinvolved/[feedback or concerns]."
+msgstr "この機能が、Infinispanを使用している間のメモリ制約をより良く処理するのに役立つことを願っています。 何か link:http://infinispan.org/getinvolved/[フィードバックや懸念事項] がありましたら、お知らせください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-25-memory-based-eviction.adoc:107

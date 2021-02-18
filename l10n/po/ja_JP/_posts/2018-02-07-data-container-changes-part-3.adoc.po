@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:1
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:10
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: 'Data Container Changes Part 3 '\n"
@@ -32,10 +32,8 @@ msgid ""
 "date: '2018-02-07T23:00:00.000-08:00'\n"
 "author: wburns\n"
 "tags: [ \" off-heap\", \"eviction\", \"configuration\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"402072241702515040\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/02/data-container-changes-"
-"part-3.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-402072241702515040\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/02/data-container-changes-part-3.html\n"
 "---\n"
 msgstr ""
 "layout: blog\n"
@@ -44,133 +42,80 @@ msgstr ""
 "date: '2018-02-07T23:00:00.000-08:00'\n"
 "author: wburns\n"
 "tags: [ \" off-heap\", \"eviction\", \"configuration\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
-"402072241702515040\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/02/data-container-changes-"
-"part-3.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-402072241702515040\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/02/data-container-changes-part-3.html\n"
 "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:19
 #, fuzzy
-msgid ""
-"Just over a year ago we detailed some improvements to the data container, "
-"including the availability of Off Heap storage in http://blog.infinispan.org/"
-"2017/01/data-container-changes-part-2.html[part 2]. There have been quite a "
-"https://issues.jboss.org/browse/ISPN-8454?jql="
-"project%20%3D%20ISPN%20AND%20resolution%20%3D%20Done%20AND%20component%20%3D%20%22Off%20Heap%22[few "
-"fixes] for Off Heap especially around memory size estimations with "
-"Infinispan 9.2. There is also a brand new \"eviction\" strategy that has a "
-"bit of a twist."
-msgstr ""
-"ちょうど1年以上前に、データコンテナの改善点について、 link:http://blog.infinispan.org/2017/01/data-"
-"container-changes-part-2.html[パート2] のOff "
-"Heapストレージの利用可能性を含めて詳細に説明しました。Infinispan 9.2では、特にメモリサイズの推定に関して、Off "
-"Heapに関してかなりの link:https://issues.jboss.org/browse/ISPN-8454?jql="
-"project%20%3D%20ISPN%20AND%20resolution%20%3D%20Done%20AND%20component%20%3D%20%22Off%20Heap%22[修正] "
-"が行われました。また、少しひねりの効いた全く新しい「退避」戦略もあります。"
+msgid "Just over a year ago we detailed some improvements to the data container, including the availability of Off Heap storage in http://blog.infinispan.org/2017/01/data-container-changes-part-2.html[part 2]. There have been quite a https://issues.jboss.org/browse/ISPN-8454?jql=project%20%3D%20ISPN%20AND%20resolution%20%3D%20Done%20AND%20component%20%3D%20%22Off%20Heap%22[few fixes] for Off Heap especially around memory size estimations with Infinispan 9.2. There is also a brand new \"eviction\" strategy that has a bit of a twist."
+msgstr "ちょうど1年以上前に、データコンテナの改善点について、 link:http://blog.infinispan.org/2017/01/data-container-changes-part-2.html[パート2] のOff Heapストレージの利用可能性を含めて詳細に説明しました。Infinispan 9.2では、特にメモリサイズの推定に関して、Off Heapに関してかなりの link:https://issues.jboss.org/browse/ISPN-8454?jql=project%20%3D%20ISPN%20AND%20resolution%20%3D%20Done%20AND%20component%20%3D%20%22Off%20Heap%22[修正] が行われました。また、少しひねりの効いた全く新しい「退避」戦略もあります。"
 
 #. type: Title ==
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:21
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Eviction Strategy Resurrected"
 msgstr "立ち退き戦略復活"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:29
 #, fuzzy
-msgid ""
-"Some of you may have remembered that Infinispan used to have an eviction "
-"strategy. This was originally used to decide what eviction algorithm was "
-"used, such as LRU or LIRS. This was removed when the new data container was "
-"introduced. Well... it is back again, but it will be used for a slightly "
-"different purpose."
-msgstr ""
-"以前、Infinispanには立ち退き戦略があったことを覚えている方もいらっしゃるかもしれません。これはもともと、LRUやLIRSなど、どのような退避アルゴリズムを使用するかを決定するために使用されていました。これは新しいデータコンテナが導入されたときに削除されました。さて."
-"..また戻ってきましたが、少し違う目的で使われることになります。"
+msgid "Some of you may have remembered that Infinispan used to have an eviction strategy. This was originally used to decide what eviction algorithm was used, such as LRU or LIRS. This was removed when the new data container was introduced. Well... it is back again, but it will be used for a slightly different purpose."
+msgstr "以前、Infinispanには立ち退き戦略があったことを覚えている方もいらっしゃるかもしれません。これはもともと、LRUやLIRSなど、どのような退避アルゴリズムを使用するかを決定するために使用されていました。これは新しいデータコンテナが導入されたときに削除されました。さて...また戻ってきましたが、少し違う目的で使われることになります。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:32
 #, fuzzy
-msgid ""
-"The eviction strategy still has *NONE* & *MANUAL* which are exactly the same "
-"as before."
+msgid "The eviction strategy still has *NONE* & *MANUAL* which are exactly the same as before."
 msgstr "立ち退き戦略は、今までと全く同じ *NONE* ＆ *MANUAL* が残っています。"
 
 #. type: Title ===
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:34
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Remove strategy"
 msgstr "戦略の削除"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:40
 #, fuzzy
-msgid ""
-"There is a new *REMOVE* strategy that is configured by default if eviction "
-"size is greater than 0. This strategy essentially enables eviction and "
-"removes old entries as new ones are inserted."
-msgstr ""
-"退避サイズが0より大きい場合にデフォルトで設定される新しい *REMOVE* ストラテジーがあります。 "
-"このストラテジーは基本的に退避を有効にし、新しいエントリが挿入されると古いエントリが削除されます。"
+msgid "There is a new *REMOVE* strategy that is configured by default if eviction size is greater than 0. This strategy essentially enables eviction and removes old entries as new ones are inserted."
+msgstr "退避サイズが0より大きい場合にデフォルトで設定される新しい *REMOVE* ストラテジーがあります。 このストラテジーは基本的に退避を有効にし、新しいエントリが挿入されると古いエントリが削除されます。"
 
 #. type: Title ===
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:42
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Exception strategy"
 msgstr "例外的な戦略"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:50
 #, fuzzy
-msgid ""
-"We have a brand new \"eviction\" strategy that provides new functionality.  "
-"It is unique in that it doesn't really evict, but rather prevent entries "
-"from being inserted.  This is the *EXCEPTION* strategy which blocks new "
-"entries from being inserted (or updated if they exceed memory size) by "
-"throwing a ContainerFullException when the size is reached."
-msgstr ""
-"新しい機能を提供する全く新しい「退避」戦略があります。これは、本当にevictするのではなく、エントリーが挿入されるのを防ぐというユニークなものです。 "
-"これは、サイズに達したときにContainerFullExceptionを投げることで、新しいエントリーが挿入されるのをブロックする（または、メモリサイズを超えた場合は更新される） "
-"*EXCEPTION* 戦略です。"
+msgid "We have a brand new \"eviction\" strategy that provides new functionality.  It is unique in that it doesn't really evict, but rather prevent entries from being inserted.  This is the *EXCEPTION* strategy which blocks new entries from being inserted (or updated if they exceed memory size) by throwing a ContainerFullException when the size is reached."
+msgstr "新しい機能を提供する全く新しい「退避」戦略があります。これは、本当にevictするのではなく、エントリーが挿入されるのを防ぐというユニークなものです。 これは、サイズに達したときにContainerFullExceptionを投げることで、新しいエントリーが挿入されるのをブロックする（または、メモリサイズを超えた場合は更新される） *EXCEPTION* 戦略です。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:56
 #, fuzzy
-msgid ""
-"This strategy only works on transactional caches that always have 2 phase "
-"commit enabled. This can be useful if you want to always have only so many "
-"entries and to give priority to currently inserted entries. This strategy "
-"has better performance than *REMOVE* since it doesn't have to bookkeep all "
-"entries to know what to remove as well."
-msgstr ""
-"このストラテジーは、常に2フェーズコミットを有効にしているトランザクションキャッシュでのみ動作します。これは、常に多くのエントリのみを保持し、現在挿入されているエントリを優先したい場合に便利です。このストラテジーは、削除すべきエントリを知るためにすべてのエントリをブックキーピングする必要がないので、 "
-"*REMOVE* よりもパフォーマンスが良いです。"
+msgid "This strategy only works on transactional caches that always have 2 phase commit enabled. This can be useful if you want to always have only so many entries and to give priority to currently inserted entries. This strategy has better performance than *REMOVE* since it doesn't have to bookkeep all entries to know what to remove as well."
+msgstr "このストラテジーは、常に2フェーズコミットを有効にしているトランザクションキャッシュでのみ動作します。これは、常に多くのエントリのみを保持し、現在挿入されているエントリを優先したい場合に便利です。このストラテジーは、削除すべきエントリを知るためにすべてのエントリをブックキーピングする必要がないので、 *REMOVE* よりもパフォーマンスが良いです。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:61
 #, fuzzy
-msgid ""
-"Note this strategy works across all storage types: OBJECT, BINARY and "
-"OFFHEAP and works with both MEMORY and SIZE based \"eviction types. This "
-"makes it just as flexible as the *REMOVE* eviction strategy and hope it "
-"finds some uses by people."
-msgstr ""
-"この戦略はすべてのストレージタイプで動作することに注意してください。OBJECT、BINARY、OFFHEAP、そしてMEMORYとSIZEベースの\"立ち退きタイプ\"の両方で動作します。これは "
-"*REMOVE* evictionストラテジーと同様に柔軟性があり、人々に利用されることを期待しています。"
+msgid "Note this strategy works across all storage types: OBJECT, BINARY and OFFHEAP and works with both MEMORY and SIZE based \"eviction types. This makes it just as flexible as the *REMOVE* eviction strategy and hope it finds some uses by people."
+msgstr "この戦略はすべてのストレージタイプで動作することに注意してください。OBJECT、BINARY、OFFHEAP、そしてMEMORYとSIZEベースの\"立ち退きタイプ\"の両方で動作します。これは *REMOVE* evictionストラテジーと同様に柔軟性があり、人々に利用されることを期待しています。"
 
 #. type: Title ===
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:63
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "How to Configure EXCEPTION Strategy"
 msgstr "EXCEPTION戦略の設定方法"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:68
 #, fuzzy
-msgid ""
-"This is how you can enable MEMORY based EXCEPTION \"eviction\" using xml "
-"configuration."
+msgid "This is how you can enable MEMORY based EXCEPTION \"eviction\" using xml configuration."
 msgstr "これは、xml設定を使用してMEMORYベースのEXCEPTION\"eviction\"を有効にする方法です。"
 
 #. type: Plain text
@@ -181,122 +126,72 @@ msgstr "同じものをプログラムで設定する方法です。"
 
 #. type: Title ==
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:73
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Off Heap Memory Size Allocations & Estimations"
 msgstr "オフヒープメモリサイズの割り当てと見積もり"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:83
 #, fuzzy
-msgid ""
-"Before the off heap memory based eviction only counted the allocated memory "
-"chunks for the stored entries themselves. This unfortunately meant that the "
-"size estimate is a bit less than what it should have been. There are a few "
-"things that we improved since then, including reducing the overhead of our "
-"allocations. Note all of the below things require no configuration changes "
-"and users should just get the benefits."
-msgstr ""
-"オフヒープメモリベースのイビクションの前は、格納されたエントリ自体に割り当てられたメモリチャンクのみをカウントしていました。これは残念ながら、サイズの推定値が本来あるべきものよりも少し小さくなることを意味していました。割り当てのオーバーヘッドを削減することを含め、それ以降改善された点がいくつかあります。以下のことはすべて設定の変更を必要としないことに注意してください。"
+msgid "Before the off heap memory based eviction only counted the allocated memory chunks for the stored entries themselves. This unfortunately meant that the size estimate is a bit less than what it should have been. There are a few things that we improved since then, including reducing the overhead of our allocations. Note all of the below things require no configuration changes and users should just get the benefits."
+msgstr "オフヒープメモリベースのイビクションの前は、格納されたエントリ自体に割り当てられたメモリチャンクのみをカウントしていました。これは残念ながら、サイズの推定値が本来あるべきものよりも少し小さくなることを意味していました。割り当てのオーバーヘッドを削減することを含め、それ以降改善された点がいくつかあります。以下のことはすべて設定の変更を必要としないことに注意してください。"
 
 #. type: Title ===
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:85
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Reduced per object overhead"
 msgstr "オブジェクトごとのオーバーヘッドを削減"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:95
 #, fuzzy
-msgid ""
-"Prior the overhead for immutable entries with eviction, Infinispan itself "
-"use to allocate 2 chunks of memory with one being 28 bytes and adding 8 "
-"bytes to the actual object. Now we only allocate an additional 16 bytes to "
-"the object memory block itself (saving the extra allocation and requiring "
-"less on the object) when using eviction. Due to memory allocation overhead "
-"this saves much more than the 20 bytes as the allocator also has its own "
-"overhead."
-msgstr ""
-"エビクションによる不変エントリのオーバーヘッドの前には、Infinispan自身は2つのメモリチャンクを割り当てていましたが、1つは28バイトで、実際のオブジェクトに8バイトを追加していました。現在では、イビクションを使用する際には、オブジェクトのメモリブロック自体に16バイトを追加で割り当てるだけです（余分な割り当てを節約し、オブジェクトへの負担を軽減します）。メモリアロケーションのオーバーヘッドのため、アロケータもそれ自身のオーバーヘッドを持っているので、これは20バイトよりもはるかに多くの節約になります。"
+msgid "Prior the overhead for immutable entries with eviction, Infinispan itself use to allocate 2 chunks of memory with one being 28 bytes and adding 8 bytes to the actual object. Now we only allocate an additional 16 bytes to the object memory block itself (saving the extra allocation and requiring less on the object) when using eviction. Due to memory allocation overhead this saves much more than the 20 bytes as the allocator also has its own overhead."
+msgstr "エビクションによる不変エントリのオーバーヘッドの前には、Infinispan自身は2つのメモリチャンクを割り当てていましたが、1つは28バイトで、実際のオブジェクトに8バイトを追加していました。現在では、イビクションを使用する際には、オブジェクトのメモリブロック自体に16バイトを追加で割り当てるだけです（余分な割り当てを節約し、オブジェクトへの負担を軽減します）。メモリアロケーションのオーバーヘッドのため、アロケータもそれ自身のオーバーヘッドを持っているので、これは20バイトよりもはるかに多くの節約になります。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:100
 #, fuzzy
-msgid ""
-"We also shaved off 4 bytes off of all entries if expiration was not used, "
-"meaning overhead for an immutable cache entry without eviction only requires "
-"21 bytes of overhead from ISPN when using off heap (retained in the same "
-"allocation block)."
-msgstr ""
-"また、満了が使用されていない場合には、すべてのエントリから4バイトを削っています。これは、イビクションを使用しない不変キャッシュエントリのオーバーヘッドは、オフヒープを使用している場合（同じアロケーションブロックに保持されている）には、ISPNからの21バイトのオーバーヘッドしか必要としないことを意味します。"
+msgid "We also shaved off 4 bytes off of all entries if expiration was not used, meaning overhead for an immutable cache entry without eviction only requires 21 bytes of overhead from ISPN when using off heap (retained in the same allocation block)."
+msgstr "また、満了が使用されていない場合には、すべてのエントリから4バイトを削っています。これは、イビクションを使用しない不変キャッシュエントリのオーバーヘッドは、オフヒープを使用している場合（同じアロケーションブロックに保持されている）には、ISPNからの21バイトのオーバーヘッドしか必要としないことを意味します。"
 
 #. type: Title ===
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:102
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Per allocation memory sizing estimations"
 msgstr "アロケーションごとのメモリサイジングの推定"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:113
 #, fuzzy
-msgid ""
-"Internally ISPN allocates a new chunk of memory for each object. This is "
-"done currently to leverage the underlying OS allocator to handle features "
-"such as fragmentation or compaction (if the allocator does so).  "
-"Unfortunately this means that each object has its own overhead from the "
-"allocator. Thus we now take that into account when estimating the memory "
-"used by adding 8 bytes overhead and aligning to 16 bytes. This seems to be a "
-"pretty common way for allocators to work. If possible we could allow for "
-"tweaking these values, but they are hard coded currently."
-msgstr ""
-"内部的には、ISPN は各オブジェクトに対して新しいメモリのチャンクを割り当てます。これは現在のところ、基礎となる OS "
-"のアロケータを活用して、フラグメント化やコンパクションなどの機能を処理するために行われています "
-"(アロケータがそうする場合)。残念ながら、これは各オブジェクトがアロケータからの独自のオーバーヘッドを持っていることを意味します。そこで、8 "
-"バイトのオーバーヘッドを追加して 16 "
-"バイトに整列させることで、使用メモリを推定する際にその点を考慮に入れます。これはアロケータが動作するためのかなり一般的な方法のようです。可能であれば、これらの値を微調整できるようにすることもできますが、現在はハードコード化されています。"
+msgid "Internally ISPN allocates a new chunk of memory for each object. This is done currently to leverage the underlying OS allocator to handle features such as fragmentation or compaction (if the allocator does so).  Unfortunately this means that each object has its own overhead from the allocator. Thus we now take that into account when estimating the memory used by adding 8 bytes overhead and aligning to 16 bytes. This seems to be a pretty common way for allocators to work. If possible we could allow for tweaking these values, but they are hard coded currently."
+msgstr "内部的には、ISPN は各オブジェクトに対して新しいメモリのチャンクを割り当てます。これは現在のところ、基礎となる OS のアロケータを活用して、フラグメント化やコンパクションなどの機能を処理するために行われています (アロケータがそうする場合)。残念ながら、これは各オブジェクトがアロケータからの独自のオーバーヘッドを持っていることを意味します。そこで、8 バイトのオーバーヘッドを追加して 16 バイトに整列させることで、使用メモリを推定する際にその点を考慮に入れます。これはアロケータが動作するためのかなり一般的な方法のようです。可能であれば、これらの値を微調整できるようにすることもできますが、現在はハードコード化されています。"
 
 #. type: Title ===
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:115
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Accounting for Address Count"
 msgstr "アドレス数の会計処理"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:124
 #, fuzzy
-msgid ""
-"As was mentioned in the prior blog post about off heap, we allocate a single "
-"block of memory to hold address counters for our lookups when using Off Heap."
-" Unfortunately we didn't account for that in the memory eviction count. We "
-"now account for that in the eviction mechanism, thus your memory eviction "
-"size must be greater than the address count rounded up to the nearest power "
-"of 2, multiplied by 8. What a mouthful..."
-msgstr ""
-"オフヒープについての以前のブログ記事で述べたように、オフヒープを使用する際には、ルックアップのためのアドレスカウンタを保持するためにメモリの1つのブロックを割り当てています。残念ながら、私たちはメモリの退避カウントでそれを考慮していませんでした。現在では、退避メカニズムでそれを考慮しているため、メモリ退避サイズはアドレスカウントを2の最も近い2乗に切り上げて8を掛けたものよりも大きくなければなりません。 "
-"何ということでしょうか...。"
+msgid "As was mentioned in the prior blog post about off heap, we allocate a single block of memory to hold address counters for our lookups when using Off Heap. Unfortunately we didn't account for that in the memory eviction count. We now account for that in the eviction mechanism, thus your memory eviction size must be greater than the address count rounded up to the nearest power of 2, multiplied by 8. What a mouthful..."
+msgstr "オフヒープについての以前のブログ記事で述べたように、オフヒープを使用する際には、ルックアップのためのアドレスカウンタを保持するためにメモリの1つのブロックを割り当てています。残念ながら、私たちはメモリの退避カウントでそれを考慮していませんでした。現在では、退避メカニズムでそれを考慮しているため、メモリ退避サイズはアドレスカウントを2の最も近い2乗に切り上げて8を掛けたものよりも大きくなければなりません。 何ということでしょうか...。"
 
 #. type: Title ===
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:126
-#, no-wrap, fuzzy
+#, fuzzy, no-wrap
 msgid "Wrap up"
 msgstr "ラップアップ"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:133
 #, fuzzy
-msgid ""
-"Off heap has been overhauled quite a bit to try to reduce memory usage, fix "
-"bugs and more accurately estimate the memory used. We hope that along with "
-"the new eviction strategy are welcome additions to various applications."
-msgstr ""
-"オフヒープは、メモリ使用量を減らし、バグを修正し、使用メモリをより正確に推定するために、かなりオーバーホールされました。私たちは、新しい退避戦略とともに、様々なアプリケーションに歓迎すべき追加機能が追加されることを願っています。"
+msgid "Off heap has been overhauled quite a bit to try to reduce memory usage, fix bugs and more accurately estimate the memory used. We hope that along with the new eviction strategy are welcome additions to various applications."
+msgstr "オフヒープは、メモリ使用量を減らし、バグを修正し、使用メモリをより正確に推定するために、かなりオーバーホールされました。私たちは、新しい退避戦略とともに、様々なアプリケーションに歓迎すべき追加機能が追加されることを願っています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-07-data-container-changes-part-3.adoc:137
 #, fuzzy
-msgid ""
-"Please make sure to contact us if you have any feedback, find any bugs or "
-"have any questions! You can get in contact with various places listed on our "
-"http://infinispan.org/community/[website]."
-msgstr ""
-"ご意見・ご感想、バグの発見、ご質問などがありましたら、必ずご連絡をお願いします link:http://infinispan.org/community/"
-"[ホームページ] に掲載されている様々な場所に連絡を取ることができます。"
+msgid "Please make sure to contact us if you have any feedback, find any bugs or have any questions! You can get in contact with various places listed on our http://infinispan.org/community/[website]."
+msgstr "ご意見・ご感想、バグの発見、ご質問などがありましたら、必ずご連絡をお願いします link:http://infinispan.org/community/[ホームページ] に掲載されている様々な場所に連絡を取ることができます。"
