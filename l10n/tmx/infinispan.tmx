@@ -5,6 +5,108 @@
   <body>
     <tu>
       <tuv xml:lang="en">
+        <seg>layout: blog
+title: Infinispan 12.0.1.Final
+permalink: /blog/:year/:month/:day/infinispan-12-0-1
+date: '2021-02-12T12:00:00.000-00:00'
+author: remerson
+tags: [ "release" ]
+---
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>layout: blog
+title: Infinispan 12.0.1.Final
+permalink: /blog/:year/:month/:day/infinispan-12-0-1
+date: '2021-02-12T12:00:00.000-00:00'
+author: remerson
+tags: [ "release" ]
+---
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Infinispan 12.0.1.Final "Lockdown"</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan 12.0.1.Final "Lockdown"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>we hope you've been enjoying all the new goodies included in our latest major release, Infinispan 12.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>最新のメジャーリリースである「Infinispan 12」に収録されている新しい素敵な機能をお楽しみいただけていますでしょうか。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>We now have a brand new micro release for you which addresses a number of issues.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>私たちは今、多くの問題に対処するための新しいマイクロリリースが出来ました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The following list shows what we have fixed:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>以下のリストは、修正したものを示しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Component Upgrade</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>コンポーネントのアップグレード</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Enhancement</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Feature Request</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>機能リクエスト</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Bug</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>バグ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>link:https://issues.redhat.com/browse/ISPN-12661[ISPN-12661] - Licenses are not properly generated in console</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>link:https://issues.redhat.com/browse/ISPN-12661[ISPN-12661] - コンソールでライセンスが正しく生成されません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Task</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>タスク</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>One of the key aspects of our new server architecture is the management API exposed through the single port.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
