@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-07-18-faster-file-cache-store-no-extra.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-18-faster-file-cache-store-no-extra.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Faster file cache store (no extra dependencies!) in 6.0.0.Alpha1\n"
@@ -32,67 +32,163 @@ msgid ""
 "date: '2013-07-18T03:15:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \"persistence\", \"alpha\", \"performance\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5773862411369868337\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/07/faster-file-cache-store-no-extra.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5773862411369868337\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/07/faster-file-cache-"
+"store-no-extra.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 6.0.0.0.Alpha1 のより高速なファイルキャッシュストア (余計な依存関係はありません！)\n"
+"permalink: /blog/:year/:month/:day/faster-file-cache-store-no-extra\n"
+"date: '2013-07-18T03:15:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"persistence\", \"alpha\", \"performance\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5773862411369868337\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/07/faster-file-cache-"
+"store-no-extra.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-18-faster-file-cache-store-no-extra.adoc:18
-msgid "As http://infinispan.blogspot.ch/2013/07/infinispan-600alpha1-is-out.html[announced yesterday by Adrian], the brand new Infinispan 6.0.0.Alpha1 release contains a new file-based cache store which needs no extra dependencies.  This is essentially a replacement of the existing FileCacheStore which didn't perform as expected, and caused major issues due to the number of files it created."
+#, fuzzy
+msgid ""
+"As http://infinispan.blogspot.ch/2013/07/infinispan-600alpha1-is-out."
+"html[announced yesterday by Adrian], the brand new Infinispan 6.0.0.Alpha1 "
+"release contains a new file-based cache store which needs no extra "
+"dependencies.  This is essentially a replacement of the existing "
+"FileCacheStore which didn't perform as expected, and caused major issues due "
+"to the number of files it created."
 msgstr ""
+"link:http://infinispan.blogspot.ch/2013/07/infinispan-600alpha1-is-out."
+"html[昨日 Adrian が発表した] ように、新しい Infinispan 6.0.0.Alpha1 "
+"リリースには、余分な依存関係を必要としない新しいファイルベースのキャッシュストアが含まれています。これは基本的に既存の FileCacheStore "
+"を置き換えるもので、期待通りのパフォーマンスが得られず、作成されるファイルの数が多いために大きな問題を引き起こしていました。"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-18-faster-file-cache-store-no-extra.adoc:27
-msgid "The new cache store, contributed by a https://github.com/kblees[Karsten Blees] (who also contributed an improved asynchronous cache store), is called https://github.com/infinispan/infinispan/blob/master/core/src/main/java/org/infinispan/loaders/file/SingleFileCacheStore.java[SingleFileCacheStore] and it keeps all data in a single file. The way it looks up data is by keeping an in-memory index of keys and the positions of their values in this file. This design outperforms the existing FileCacheStore and even LevelDB based JNI cache store."
+#, fuzzy
+msgid ""
+"The new cache store, contributed by a https://github.com/kblees[Karsten "
+"Blees] (who also contributed an improved asynchronous cache store), is "
+"called https://github.com/infinispan/infinispan/blob/master/core/src/main/"
+"java/org/infinispan/loaders/file/SingleFileCacheStore."
+"java[SingleFileCacheStore] and it keeps all data in a single file. The way "
+"it looks up data is by keeping an in-memory index of keys and the positions "
+"of their values in this file. This design outperforms the existing "
+"FileCacheStore and even LevelDB based JNI cache store."
 msgstr ""
+"link:https://github.com/kblees[Karsten Blees] (彼は改良された非同期キャッシュストアも寄稿しています) "
+"が寄稿した新しいキャッシュストアは link:https://github.com/infinispan/infinispan/blob/master/"
+"core/src/main/java/org/infinispan/loaders/file/SingleFileCacheStore."
+"java[SingleFileCacheStore] "
+"と呼ばれ、すべてのデータを一つのファイルに保持します。データを検索する方法は、キーのインメモリインデックスとその値の位置をこのファイルに保持することです。この設計は、既存のFileCacheStoreやLevelDBベースのJNIキャッシュストアよりも優れています。"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-18-faster-file-cache-store-no-extra.adoc:34
-msgid "The classic case for a file based cache store is when you want to have a cache with a cache store available locally which stores data that has overflowed from memory, having exceeded size and/or time restrictions.  We ran some performance tests to verify how fast different cache store implementations could deal with reading and writing overflowed data, and these are the results we got (in Ks):"
+#, fuzzy
+msgid ""
+"The classic case for a file based cache store is when you want to have a "
+"cache with a cache store available locally which stores data that has "
+"overflowed from memory, having exceeded size and/or time restrictions.  We "
+"ran some performance tests to verify how fast different cache store "
+"implementations could deal with reading and writing overflowed data, and "
+"these are the results we got (in Ks):"
 msgstr ""
+"ファイルベースのキャッシュストアの典型的なケースは、サイズや時間の制限を超えてメモリからオーバーフローしたデータを保存するローカルで利用可能なキャッシュストアを持つキャッシュを持ちたい場合です。異なるキャッシュストアの実装がオーバーフローしたデータの読み書きにどの程度の速度で対処できるかを検証するために、いくつかのパフォーマンステストを実行しました。"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-18-faster-file-cache-store-no-extra.adoc:37
+#, fuzzy
 msgid "FileCacheStore: 0.75k reads/s, 0.285k writes/s"
-msgstr ""
+msgstr "FileCacheStore。0.75kリード/秒、0.285kライト/秒"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-18-faster-file-cache-store-no-extra.adoc:38
+#, fuzzy
 msgid "LevelDB-JNI impl: 46k reads/s, 15.2k writes/s"
-msgstr ""
+msgstr "LevelDB-JNI impl: 46k read/s, 15.2k writes/s"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-18-faster-file-cache-store-no-extra.adoc:39
+#, fuzzy
 msgid "SingleFileCacheStore: 458k reads/s, 137k writes/s"
-msgstr ""
+msgstr "SingleFileCacheStore。読み取り/秒 458k、書き込み/秒 137k"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-18-faster-file-cache-store-no-extra.adoc:46
-msgid "The difference is quite astonishing but as already hinted, this performance increase comes at a cost. Having to maintain an index of keys and positions in the file in memory has a cost in terms of extra memory required, and potential impact on GC. That's why the SingleFileCacheStore is not recommended for use cases where the keys are too big."
+#, fuzzy
+msgid ""
+"The difference is quite astonishing but as already hinted, this performance "
+"increase comes at a cost. Having to maintain an index of keys and positions "
+"in the file in memory has a cost in terms of extra memory required, and "
+"potential impact on GC. That's why the SingleFileCacheStore is not "
+"recommended for use cases where the keys are too big."
 msgstr ""
+"この差は非常に驚くべきものですが、すでに示唆されているように、この性能向上にはコストがかかります。メモリ内のファイル内のキーと位置のインデックスを維持する必要があるため、余分なメモリを必要とし、GC "
+"への潜在的な影響という点でコストがかかります。これが、SingleFileCacheStore がキーが大きすぎる場合に推奨されない理由です。"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-18-faster-file-cache-store-no-extra.adoc:60
-msgid "In order to help tame this memory consumption issues, the http://docs.jboss.org/infinispan/6.0/apidocs/org/infinispan/configuration/cache/SingleFileCacheStoreConfigurationBuilder.html#maxEntries(int)[size of the cache store can be optionally limited, providing a maximum number of entries to store in it]. However, setting this parameter will only work in use cases where Infinispan is used as a cache. When used as a cache, data not present in Infinispan can be recomputed or re-retrieved from the authoritative data store and stored in Infinispan cache. The reason for this limitation is because once the maximum number of entries is reached, older data in the cache store is removed, so if Infinispan was used as an authoritative data store, it would lead to data loss which is not good."
+#, fuzzy
+msgid ""
+"In order to help tame this memory consumption issues, the http://docs.jboss."
+"org/infinispan/6.0/apidocs/org/infinispan/configuration/cache/"
+"SingleFileCacheStoreConfigurationBuilder.html#maxEntries(int)[size of the "
+"cache store can be optionally limited, providing a maximum number of entries "
+"to store in it]. However, setting this parameter will only work in use cases "
+"where Infinispan is used as a cache. When used as a cache, data not present "
+"in Infinispan can be recomputed or re-retrieved from the authoritative data "
+"store and stored in Infinispan cache. The reason for this limitation is "
+"because once the maximum number of entries is reached, older data in the "
+"cache store is removed, so if Infinispan was used as an authoritative data "
+"store, it would lead to data loss which is not good."
 msgstr ""
+"このメモリ消費の問題を抑えるために、 link:http://docs.jboss.org/infinispan/6.0/apidocs/org/"
+"infinispan/configuration/cache/SingleFileCacheStoreConfigurationBuilder."
+"html#maxEntries(int)[キャッシュストアのサイズをオプションで制限することができ、その中に保存するエントリの最大数を指定することができます] "
+"。しかし、このパラメータを設定すると、Infinispan "
+"がキャッシュとして使用される場合にのみ機能します。キャッシュとして使用する場合、Infinispanに存在しないデータは、権威データストアから再計算または再取得してInfinispanキャッシュに格納することができます。この制限の理由は、一度最大エントリ数に達するとキャッシュストア内の古いデータが削除されてしまうため、Infinispanをオーソリティデータストアとして使用した場合には、良くないデータ損失につながるからです。"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-18-faster-file-cache-store-no-extra.adoc:70
-msgid "Existing FileCacheStore users might wonder: what is it gonna happen to the existing FileCacheStore? We're not 100% sure yet what we're going to do with it, but we're looking into some ways to migrate data from the FileCacheStore to the SingleFileCacheStore.  https://issues.jboss.org/browse/ISPN-3318[Some interesting ideas] have already been submitted which we'll investigate in next Infinispan 6.0 pre-releases."
+#, fuzzy
+msgid ""
+"Existing FileCacheStore users might wonder: what is it gonna happen to the "
+"existing FileCacheStore? We're not 100% sure yet what we're going to do with "
+"it, but we're looking into some ways to migrate data from the FileCacheStore "
+"to the SingleFileCacheStore.  https://issues.jboss.org/browse/ISPN-3318[Some "
+"interesting ideas] have already been submitted which we'll investigate in "
+"next Infinispan 6.0 pre-releases."
 msgstr ""
+"既存の FileCacheStore ユーザーは疑問に思うかもしれません：既存の FileCacheStore "
+"はどうなるのでしょうか？FileCacheStoreからSingleFileCacheStoreにデータを移行する方法を検討しています。すでに link:"
+"https://issues.jboss.org/browse/ISPN-3318[いくつかの興味深いアイデアが] 提出されており、次回の "
+"Infinispan 6.0 プレリリースで調査する予定です。"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-18-faster-file-cache-store-no-extra.adoc:77
-msgid "So, if you're a FileCacheStore user, give the new SingleFileCacheStore a go and let us know how it goes! Switching from one to the other is https://github.com/infinispan/infinispan/blob/master/core/src/test/java/org/infinispan/loaders/file/SingleFileCacheStoreFunctionalTest.java#L58[easy] :)"
+#, fuzzy
+msgid ""
+"So, if you're a FileCacheStore user, give the new SingleFileCacheStore a go "
+"and let us know how it goes! Switching from one to the other is https://"
+"github.com/infinispan/infinispan/blob/master/core/src/test/java/org/"
+"infinispan/loaders/file/SingleFileCacheStoreFunctionalTest.java#L58[easy] :)"
 msgstr ""
+"もしあなたがFileCacheStoreユーザーなら、新しいSingleFileCacheStoreを試してみてください。切り替えは link:"
+"https://github.com/infinispan/infinispan/blob/master/core/src/test/java/org/"
+"infinispan/loaders/file/SingleFileCacheStoreFunctionalTest.java#L58[簡単] です :"
+")"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-18-faster-file-cache-store-no-extra.adoc:81
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-18-faster-file-cache-store-no-extra.adoc:82
+#, fuzzy
 msgid "Galder"
-msgstr ""
+msgstr "ガルダー"

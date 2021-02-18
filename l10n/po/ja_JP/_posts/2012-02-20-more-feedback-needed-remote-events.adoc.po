@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-02-20-more-feedback-needed-remote-events.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-02-20-more-feedback-needed-remote-events.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: More feedback needed! Remote events coming to Hot Rod\n"
@@ -32,27 +32,76 @@ msgid ""
 "date: '2012-02-20T06:40:00.000-08:00'\n"
 "author: galder\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1323943292648612926\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/02/more-feedback-needed-remote-events.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1323943292648612926\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/02/more-feedback-needed-"
+"remote-events.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: より多くのフィードバックが必要ですホットロッドに来るリモートイベント\n"
+"permalink: /blog/:year/:month/:day/more-feedback-needed-remote-events\n"
+"date: '2012-02-20T06:40:00.000-08:00'\n"
+"author: galder\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1323943292648612926\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/02/more-feedback-needed-"
+"remote-events.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-02-20-more-feedback-needed-remote-events.adoc:20
-msgid "With 7 votes already, https://issues.jboss.org/browse/ISPN-374[remote event handling] in Hot Rod is https://issues.jboss.org/browse/ISPN#selectedTab=com.atlassian.jira.plugin.system.project%3Apopularissues-panel[one of the most demanded features] in Infinispan, and we've just started designing it. You can find out more about the design in https://community.jboss.org/docs/DOC-17571[this article] and I've also started a Infinispan Development mailing list discussion in order to http://lists.jboss.org/pipermail/infinispan-dev/2012-February/010239.html[open a debate] on this article."
+#, fuzzy
+msgid ""
+"With 7 votes already, https://issues.jboss.org/browse/ISPN-374[remote event "
+"handling] in Hot Rod is https://issues.jboss.org/browse/ISPN#selectedTab=com."
+"atlassian.jira.plugin.system.project%3Apopularissues-panel[one of the most "
+"demanded features] in Infinispan, and we've just started designing it. You "
+"can find out more about the design in https://community.jboss.org/docs/DOC-"
+"17571[this article] and I've also started a Infinispan Development mailing "
+"list discussion in order to http://lists.jboss.org/pipermail/infinispan-dev/"
+"2012-February/010239.html[open a debate] on this article."
 msgstr ""
+"すでに7票を獲得しているHot Rod link:https://issues.jboss.org/browse/ISPN-"
+"374[でのリモートイベントハンドリング] は、Infinispan link:https://issues.jboss.org/browse/"
+"ISPN#selectedTab=com.atlassian.jira.plugin.system.project%3Apopularissues-"
+"panel[で最も要求されている機能の] 1つであり、その設計を始めたばかりです。この記事 link:https://community.jboss."
+"org/docs/DOC-17571[で] 設計についての詳細を知ることができますし、この記事についての議論を link:http://lists."
+"jboss.org/pipermail/infinispan-dev/2012-February/010239.html[開く] "
+"ために、Infinispan Developmentのメーリングリストのディスカッションを始めました。"
 
 #. type: Plain text
 #: upstream/_posts/2012-02-20-more-feedback-needed-remote-events.adoc:27
-msgid "Remember that remote event handling is the key piece that allows https://www.jboss.org/dms/judcon/presentations/London2011/day1track2session2.pdf[near-cache like patterns] to be built in Infinispan and we know for a fact that this is one of the most demanded Infinispan patterns. So, if you have an interest in near caches, please provide any feedback you might have on the kind of event subscriptions and notifications you're interested."
+#, fuzzy
+msgid ""
+"Remember that remote event handling is the key piece that allows https://www."
+"jboss.org/dms/judcon/presentations/London2011/day1track2session2.pdf[near-"
+"cache like patterns] to be built in Infinispan and we know for a fact that "
+"this is one of the most demanded Infinispan patterns. So, if you have an "
+"interest in near caches, please provide any feedback you might have on the "
+"kind of event subscriptions and notifications you're interested."
 msgstr ""
+"リモートイベント処理は、 link:https://www.jboss.org/dms/judcon/presentations/London2011/"
+"day1track2session2.pdf[ニアキャッシュのようなパターンを] "
+"Infinispanで構築するためのキーピースであり、これが最も需要のあるInfinispanのパターンの1つであることを事実として知っていることを忘れないでください。というわけで、ニアキャッシュに興味のある方は、イベントのサブスクリプションや通知の種類について、何かフィードバックをお願いします。"
 
 #. type: Plain text
 #: upstream/_posts/2012-02-20-more-feedback-needed-remote-events.adoc:33
-msgid "To provide feedback, either comment on the https://community.jboss.org/wiki/DesignOfRemoteEventHandlingInHotRod[linked article], or join https://lists.jboss.org/mailman/listinfo/infinispan-dev[Infinispan's Development mailing list] and reply to the mail thread."
+#, fuzzy
+msgid ""
+"To provide feedback, either comment on the https://community.jboss.org/wiki/"
+"DesignOfRemoteEventHandlingInHotRod[linked article], or join https://lists."
+"jboss.org/mailman/listinfo/infinispan-dev[Infinispan's Development mailing "
+"list] and reply to the mail thread."
 msgstr ""
+"フィードバックを提供するには、 link:https://community.jboss.org/wiki/"
+"DesignOfRemoteEventHandlingInHotRod[リンク先の記事] にコメントするか、 link:https://lists."
+"jboss.org/mailman/listinfo/infinispan-dev[Infinispanの開発メーリングリストに] "
+"参加してメールスレッドに返信してください。"
 
 #. type: Plain text
 #: upstream/_posts/2012-02-20-more-feedback-needed-remote-events.adoc:35
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

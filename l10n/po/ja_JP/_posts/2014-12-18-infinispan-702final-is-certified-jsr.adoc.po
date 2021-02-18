@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-12-18-infinispan-702final-is-certified-jsr.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-18-infinispan-702final-is-certified-jsr.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 7.0.2.Final is a certified JSR-107 1.0 implementation\n"
@@ -32,22 +32,58 @@ msgid ""
 "date: '2014-12-18T07:57:00.000-08:00'\n"
 "author: galder\n"
 "tags: [ \"jsr 107\", \"jcache\", \"certification\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7200266025409215039\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/12/infinispan-702final-is-certified-jsr.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7200266025409215039\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/12/infinispan-702final-is-"
+"certified-jsr.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 7.0.2.Finalは、JSR-107 1.0の実装として認定されています。\n"
+"permalink: /blog/:year/:month/:day/infinispan-702final-is-certified-jsr\n"
+"date: '2014-12-18T07:57:00.000-08:00'\n"
+"author: galder\n"
+"tags: [ \"jsr 107\", \"jcache\", \"certification\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7200266025409215039\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/12/infinispan-702final-is-"
+"certified-jsr.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-18-infinispan-702final-is-certified-jsr.adoc:19
-msgid "The infinispan-jcache module in Infinispan 7.0.2.Final has been https://jcp.org/aboutJava/communityprocess/implementations/jsr107/index.html[certified] to be compatible JSR-107 1.0 specification implementation. To get started with Infinispan's JSR-107 implementation, check the Infinispan http://infinispan.org/docs/7.0.x/user_guide/user_guide.html#_using_infinispan_as_a_jsr107_jcache_provider[documentation section] on the topic, and remember that Infinispan also implements the http://infinispan.org/docs/7.0.x/user_guide/user_guide.html#_use_jcache_caching_annotations[JSR-107 annotations for CDI injection of cached values]."
+#, fuzzy
+msgid ""
+"The infinispan-jcache module in Infinispan 7.0.2.Final has been https://jcp."
+"org/aboutJava/communityprocess/implementations/jsr107/index.html[certified] "
+"to be compatible JSR-107 1.0 specification implementation. To get started "
+"with Infinispan's JSR-107 implementation, check the Infinispan http://"
+"infinispan.org/docs/7.0.x/user_guide/user_guide."
+"html#_using_infinispan_as_a_jsr107_jcache_provider[documentation section] on "
+"the topic, and remember that Infinispan also implements the http://"
+"infinispan.org/docs/7.0.x/user_guide/user_guide."
+"html#_use_jcache_caching_annotations[JSR-107 annotations for CDI injection "
+"of cached values]."
 msgstr ""
+"Infinispan 7.0.2.Finalのinfinispan-jcacheモジュールは、互換性のあるJSR-107 1.0仕様の実装であることが "
+"link:https://jcp.org/aboutJava/communityprocess/implementations/jsr107/index."
+"html[認証されて] います。InfinispanのJSR-107実装を始めるには、トピックのInfinispan link:http://"
+"infinispan.org/docs/7.0.x/user_guide/user_guide."
+"html#_using_infinispan_as_a_jsr107_jcache_provider[ドキュメントセクションを] "
+"確認し、Infinispanはキャッシュ link:http://infinispan.org/docs/7.0.x/user_guide/"
+"user_guide.html#_use_jcache_caching_annotations[された値のCDIインジェクションのためのJSR-] "
+"107アノテーションも実装していることを覚えておいてください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-18-infinispan-702final-is-certified-jsr.adoc:22
-msgid "Thanks to everyone who has contributed to the module, and to Greg Luck and Brian Oliver for their help in completing the certification."
-msgstr ""
+#, fuzzy
+msgid ""
+"Thanks to everyone who has contributed to the module, and to Greg Luck and "
+"Brian Oliver for their help in completing the certification."
+msgstr "モジュールに貢献してくださった皆様、そして、資格取得を完了させてくださったグレッグ・ラックさんとブライアン・オリバーさんに感謝しています。"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-18-infinispan-702final-is-certified-jsr.adoc:24
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-08-05-mongodb-cache-store-821final.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-05-mongodb-cache-store-821final.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: MongoDB Cache Store 8.2.1.Final\n"
@@ -35,27 +35,58 @@ msgid ""
 "\"mongodb\",\n"
 "\"cache store\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4189133521605898987\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/08/mongodb-cache-store-821final.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4189133521605898987\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/08/mongodb-cache-store-"
+"821final.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: MongoDB Cache Store 8.2.1.Final\n"
+"permalink: /blog/:year/:month/:day/mongodb-cache-store-821final\n"
+"date: '2016-08-05T07:23:00.003-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\",\n"
+"\"mongodb\",\n"
+"\"cache store\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4189133521605898987\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/08/mongodb-cache-store-"
+"821final.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-05-mongodb-cache-store-821final.adoc:17
-msgid "In the storm of the persistence SPI rework that happened during Infinispan 6.0, the MongoDB cache store, among others, was left in a state of semi-abandonment for a long time."
+#, fuzzy
+msgid ""
+"In the storm of the persistence SPI rework that happened during Infinispan 6."
+"0, the MongoDB cache store, among others, was left in a state of semi-"
+"abandonment for a long time."
 msgstr ""
+"Infinispan 6.0の時に起こった永続化SPIリワークの嵐の中で、特にMongoDBのキャッシュストアなどは長い間半放置状態になっていました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-05-mongodb-cache-store-821final.adoc:20
-msgid "Fortunately a few brave souls came to its rescue and have breathed new life into it so that it can be used with Infinispan 8.x"
-msgstr ""
+#, fuzzy
+msgid ""
+"Fortunately a few brave souls came to its rescue and have breathed new life "
+"into it so that it can be used with Infinispan 8.x"
+msgstr "幸いなことに、数人の勇敢な魂がその救出に来て、Infinispan 8.xで使用できるように新しい命を吹き込んでくれました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-05-mongodb-cache-store-821final.adoc:23
-msgid "In particular I wish to thank Kurt Lehrke for doing most of the work !!!"
-msgstr ""
+#, fuzzy
+msgid ""
+"In particular I wish to thank Kurt Lehrke for doing most of the work !!!"
+msgstr "特に、ほとんどの作業をしてくれたKurt Lehrkeさんに感謝します!"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-05-mongodb-cache-store-821final.adoc:26
-msgid "Get it from the http://infinispan.org/cache-store-implementations/[dedicated cache store download page]."
+#, fuzzy
+msgid ""
+"Get it from the http://infinispan.org/cache-store-implementations/[dedicated "
+"cache store download page]."
 msgstr ""
+"link:http://infinispan.org/cache-store-implementations/"
+"[専用のキャッシュストアのダウンロードページ] から入手してください。"

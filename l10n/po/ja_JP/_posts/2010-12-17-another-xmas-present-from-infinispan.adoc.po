@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-12-17-another-xmas-present-from-infinispan.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-17-another-xmas-present-from-infinispan.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: 'Another X''mas present from Infinispan: 4.2.0.FINAL'\n"
@@ -32,37 +32,110 @@ msgid ""
 "date: '2010-12-17T09:43:00.000-08:00'\n"
 "author: msurtani\n"
 "tags: [ \"release\", \"final\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7125281011265657749\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/12/another-xmas-present-from-infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7125281011265657749\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/12/another-xmas-present-"
+"from-infinispan.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 'Infinispanからもう一つのX''masプレゼント。4.2.0.FINAL'\n"
+"permalink: /blog/:year/:month/:day/another-xmas-present-from-infinispan\n"
+"date: '2010-12-17T09:43:00.000-08:00'\n"
+"author: msurtani\n"
+"tags: [ \"release\", \"final\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7125281011265657749\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/12/another-xmas-present-"
+"from-infinispan.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-17-another-xmas-present-from-infinispan.adoc:12
-msgid "http://lifeisacookie.files.wordpress.com/2009/12/girl-opening-christmas-present-4001.jpg[image:http://lifeisacookie.files.wordpress.com/2009/12/girl-opening-christmas-present-4001.jpg[image,width=320,height=320]]"
+#, fuzzy
+msgid ""
+"http://lifeisacookie.files.wordpress.com/2009/12/girl-opening-christmas-"
+"present-4001.jpg[image:http://lifeisacookie.files.wordpress.com/2009/12/girl-"
+"opening-christmas-present-4001.jpg[image,width=320,height=320]]"
 msgstr ""
+"link:http://lifeisacookie.files.wordpress.com/2009/12/girl-opening-christmas-"
+"present-4001.jpg[]"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-17-another-xmas-present-from-infinispan.adoc:24
-msgid "So Christmas is meant to be full of presents, right?  Yep you heard that right - two releases in one day  :-)  Hot on the heels of Galder's http://infinispan.blogspot.com/2010/12/xmas-arrives-early-for-infinispan-users.html[5.0.0.ALPHA1] release, here's the much-awaited 4.2.0.FINAL.  This is a big release.   Although it only contains a handful of new features - including https://issues.jboss.org/browse/ISPN-180[ISPN-180] and https://issues.jboss.org/browse/ISPN-609[ISPN-609] - it contains a good number of stability and performance improvements over 4.1.0, a complete list of which is https://issues.jboss.org/secure/ConfigureReport.jspa?atl_token=38226e8a5ffb7d2f71dd7ecb7ea7aac0fc443089&versions=12315303&sections=all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira.plugin.release-notes-report-plugin:releasenotes&Next=Next[available here].  Yes, that is over 75 bugs fixed since 4.1.0!!"
+#, fuzzy
+msgid ""
+"So Christmas is meant to be full of presents, right?  Yep you heard that "
+"right - two releases in one day  :-)  Hot on the heels of Galder's http://"
+"infinispan.blogspot.com/2010/12/xmas-arrives-early-for-infinispan-users."
+"html[5.0.0.ALPHA1] release, here's the much-awaited 4.2.0.FINAL.  This is a "
+"big release.   Although it only contains a handful of new features -"
+" including https://issues.jboss.org/browse/ISPN-180[ISPN-180] and https://"
+"issues.jboss.org/browse/ISPN-609[ISPN-609] - it contains a good number of "
+"stability and performance improvements over 4.1.0, a complete list of which "
+"is https://issues.jboss.org/secure/ConfigureReport.jspa?atl_token="
+"38226e8a5ffb7d2f71dd7ecb7ea7aac0fc443089&versions=12315303&sections="
+"all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira."
+"plugin.release-notes-report-plugin:releasenotes&Next=Next[available here]. "
+" Yes, that is over 75 bugs fixed since 4.1.0!!"
 msgstr ""
+"クリスマスはプレゼントでいっぱいですよね？ そうですね、一日で2つのリリースがあります。 ガルダーの5.0.0.0.ALPHA1 link:http://"
+"infinispan.blogspot.com/2010/12/xmas-arrives-early-for-infinispan-users."
+"html[リリース] に続いて、待望の4.2.0.FINALです。 これは大きなリリースです。ISPN-180と link:https://issues."
+"jboss.org/browse/ISPN-180[ISPN-609] を含む、ほんの link:https://issues.jboss.org/"
+"browse/ISPN-609[一] 握りの新機能しか含まれていませんが、4.1.0よりも多くの安定性とパフォーマンスの改善が含まれています。 4.1."
+"0から link:https://issues.jboss.org/secure/ConfigureReport.jspa?atl_token="
+"38226e8a5ffb7d2f71dd7ecb7ea7aac0fc443089&versions=12315303&sections="
+"all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira."
+"plugin.release-notes-report-plugin:releasenotes&Next=Next[75] 以上 link:https:/"
+"/issues.jboss.org/secure/ConfigureReport.jspa?atl_token="
+"38226e8a5ffb7d2f71dd7ecb7ea7aac0fc443089&versions=12315303&sections="
+"all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira."
+"plugin.release-notes-report-plugin:releasenotes&Next=Next[のバグが修正されて] います。"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-17-another-xmas-present-from-infinispan.adoc:31
-msgid "This really is thanks to the community, who have worked extremely hard on testing, benchmarking and pushing 4.1.0  - and subsequent betas and release candidates of 4.2 - which has got us here.  This really is helping the project to mature very, very fast.  And of course the core Infinispan dev team who've pulled some incredible feats to get this release to completion.  You know who you are.  :-)"
+#, fuzzy
+msgid ""
+"This really is thanks to the community, who have worked extremely hard on "
+"testing, benchmarking and pushing 4.1.0  - and subsequent betas and release "
+"candidates of 4.2 - which has got us here.  This really is helping the "
+"project to mature very, very fast.  And of course the core Infinispan dev "
+"team who've pulled some incredible feats to get this release to completion. "
+" You know who you are.  :-)"
 msgstr ""
+"これは、テスト、ベンチマーク、4.1.0、そしてそれに続く4.2のベータとリリース候補のプッシュに非常に熱心に取り組んでくれたコミュニティのおかげです。 "
+"このおかげで、プロジェクトは非常に早く成熟しました。 "
+"そしてもちろん、このリリースを完成させるために信じられないような偉業を成し遂げてくれたInfinispanのコア開発チームにも感謝しています。 "
+"あなたは誰だか知っていますよね :-)"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-17-another-xmas-present-from-infinispan.adoc:35
-msgid "I'd also like to reiterate the availability of Maven Archetypes to jump-start your Infinispan project - read all about that http://infinispan.blogspot.com/2010/12/maven-archetypes.html[here]."
+#, fuzzy
+msgid ""
+"I'd also like to reiterate the availability of Maven Archetypes to jump-"
+"start your Infinispan project - read all about that http://infinispan."
+"blogspot.com/2010/12/maven-archetypes.html[here]."
 msgstr ""
+"また、あなたのInfinispanプロジェクトをジャンプスタートさせるためのMaven "
+"Archetypesの利用可能性についても改めてお伝えしたいと思います - 詳しくは link:http://infinispan.blogspot."
+"com/2010/12/maven-archetypes.html[こちらを] ご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-17-another-xmas-present-from-infinispan.adoc:41
-msgid "So with that, I'd like to leave you with 4.2.0, _Ursus_, and say that we are full steam ahead with 5.0 _Pagoa_ now.  :-)  As usual, download 4.2.0 http://www.jboss.org/infinispan/downloads[here], read about it http://docs.jboss.org/infinispan/4.2/apidocs/[here], provide feedback http://community.jboss.org/en/infinispan?view=discussions[here]."
+#, fuzzy
+msgid ""
+"So with that, I'd like to leave you with 4.2.0, _Ursus_, and say that we are "
+"full steam ahead with 5.0 _Pagoa_ now.  :-)  As usual, download 4.2.0 http://"
+"www.jboss.org/infinispan/downloads[here], read about it http://docs.jboss."
+"org/infinispan/4.2/apidocs/[here], provide feedback http://community.jboss."
+"org/en/infinispan?view=discussions[here]."
 msgstr ""
+"というわけで、4.2.0の _ウルスス_ を残して、5.0の _パゴア_ に向けてフルスチームで進んでいることを link:http://docs."
+"jboss.org/infinispan/4.2/apidocs/[お伝え] したいと思います。"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-17-another-xmas-present-from-infinispan.adoc:43
+#, fuzzy
 msgid "Enjoy, and Happy Holidays! Manik"
-msgstr ""
+msgstr "楽しんで、そしてハッピーホリデーマニク"

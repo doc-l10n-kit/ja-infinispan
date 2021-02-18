@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Hotrod clients C++ and C# 8.3.0.Alpha1 are out!\n"
@@ -32,67 +32,120 @@ msgid ""
 "date: '2018-07-02T01:51:00.000-07:00'\n"
 "author: rigazilla\n"
 "tags: [ \" c++\", \"release\", \"minor release\", \"alpha\", \"c#\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6648254076647805231\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/07/hotrod-clients-c-and-c-830alpha1-are-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6648254076647805231\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/07/hotrod-clients-c-and-c-"
+"830alpha1-are-out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: HotrodクライアントC++とC# 8.3.0.Alpha1が出ました!\n"
+"permalink: /blog/:year/:month/:day/hotrod-clients-c-and-c-830alpha1-are-out\n"
+"date: '2018-07-02T01:51:00.000-07:00'\n"
+"author: rigazilla\n"
+"tags: [ \" c++\", \"release\", \"minor release\", \"alpha\", \"c#\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6648254076647805231\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/07/hotrod-clients-c-and-c-"
+"830alpha1-are-out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:12
+#, fuzzy
 msgid "Dear Infinispanners,"
-msgstr ""
+msgstr "親愛なるインフィニスパナーの皆様。"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:14
+#, fuzzy
 msgid "The C++ and C# 8.3.0.Alpha1 releases are available!"
-msgstr ""
+msgstr "C++とC#の8.3.0.Alpha1のリリースです!"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:16
+#, fuzzy
 msgid "Both the clients come with these new features:"
-msgstr ""
+msgstr "どちらのクライアントにもこれらの新機能が搭載されています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:18
+#, fuzzy
 msgid "counter operations, to use cluster distributed counters [1]"
-msgstr ""
+msgstr "カウンタ操作、クラスタ分散カウンタを使用するために [1]"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:19
+#, fuzzy
 msgid "admin operations, to create/remove cache programmatically at runtime"
-msgstr ""
+msgstr "管理者操作で、実行時にプログラムでキャッシュを作成/削除する"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:24
-msgid "For the .NET Core lovers, there's a work in progress to implement the dotnet core build for the C# client [3].  Features list, code and bits are available as usual: [4] [5] [6]."
+#, fuzzy
+msgid ""
+"For the .NET Core lovers, there's a work in progress to implement the dotnet "
+"core build for the C# client [3].  Features list, code and bits are "
+"available as usual: [4] [5] [6]."
 msgstr ""
+".NET "
+"Core愛好家のために、C#クライアント用のdotnetコアビルドを実装するための作業が進行中です[3]。機能一覧、コード、ビットはいつものように用意されています。[4] "
+"[5] [6]."
 
 #. type: Plain text
 #: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:27
+#, fuzzy
 msgid "Cheers, The Infinispan Team"
-msgstr ""
+msgstr "乾杯、インフィニスパンチーム"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:31
-msgid "http://infinispan.org/docs/stable/user_guide/user_guide.html#clustered_counters[Clustered Counters]"
+#, fuzzy
+msgid ""
+"http://infinispan.org/docs/stable/user_guide/user_guide."
+"html#clustered_counters[Clustered Counters]"
 msgstr ""
+"link:http://infinispan.org/docs/stable/user_guide/user_guide."
+"html#clustered_counters[クラスタ化されたカウンタ]"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:34
-msgid "http://infinispan.org/docs/stable/user_guide/user_guide.html#hot_rod_admin_tasks[Hot Rod Admin Tasks]"
+#, fuzzy
+msgid ""
+"http://infinispan.org/docs/stable/user_guide/user_guide."
+"html#hot_rod_admin_tasks[Hot Rod Admin Tasks]"
 msgstr ""
+"link:http://infinispan.org/docs/stable/user_guide/user_guide."
+"html#hot_rod_admin_tasks[ホットロッドの管理者のタスク]"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:37
-msgid "https://github.com/infinispan/dotnet-client/blob/master/README.md[How to build à la .NET Core manière]"
+#, fuzzy
+msgid ""
+"https://github.com/infinispan/dotnet-client/blob/master/README.md[How to "
+"build à la .NET Core manière]"
 msgstr ""
+"link:https://github.com/infinispan/dotnet-client/blob/master/README.md[.NET "
+"Coreの使い方をビルドする方法]"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:42
-msgid "https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314125&version=12337514[Release notes] [5++] https://github.com/infinispan/cpp-client/tree/8.3.0.Alpha1[C++ code for 8.3.0.Alpha1]"
+#, fuzzy
+msgid ""
+"https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314125&version="
+"12337514[Release notes] [5++] https://github.com/infinispan/cpp-client/tree/"
+"8.3.0.Alpha1[C++ code for 8.3.0.Alpha1]"
 msgstr ""
+"link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
+"12314125&version=12337514[リリースノート] [5] https://github.com/infinispan/cpp-"
+"client/tree/8.3.0.Alpha1[8.3.0.Alpha1のCコード]"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-02-hotrod-clients-c-and-c-830alpha1-are-out.adoc:45
-msgid "https://github.com/infinispan/dotnet-client/tree/8.3.0.Alpha1https://github.com/infinispan/dotnet-client/tree/8.3.0.Alpha1[C# code for 8.3.0.Alpha1]"
+#, fuzzy
+msgid ""
+"https://github.com/infinispan/dotnet-client/tree/8.3.0.Alpha1https://github."
+"com/infinispan/dotnet-client/tree/8.3.0.Alpha1[C# code for 8.3.0.Alpha1]"
 msgstr ""
+"link:https://github.com/infinispan/dotnet-client/tree/8.3.0.Alpha1https://"
+"github.com/infinispan/dotnet-client/tree/8.3.0.Alpha1[8.3.0.0.Alpha1用のC#コード]"

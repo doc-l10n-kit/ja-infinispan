@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-10-06-judcon-brazil-2014-second-edition-of.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-06-judcon-brazil-2014-second-edition-of.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: \n"
@@ -35,43 +35,96 @@ msgid ""
 "\"lucene\",\n"
 "\"cep\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8118758295288640020\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/10/judcon-brazil-2014-second-edition-of.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8118758295288640020\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/10/judcon-brazil-2014-"
+"second-edition-of.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: \n"
+"permalink: /blog/:year/:month/:day/judcon-brazil-2014-second-edition-of\n"
+"date: '2014-10-06T03:44:00.000-07:00'\n"
+"author: gustavonalle\n"
+"tags: [ \"judcon\",\n"
+"\"lucene\",\n"
+"\"cep\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8118758295288640020\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/10/judcon-brazil-2014-"
+"second-edition-of.html\n"
+"---\n"
 
 #. type: Title ===
 #: upstream/_posts/2014-10-06-judcon-brazil-2014-second-edition-of.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.underline]#"
-msgstr ""
+msgstr "[.underline]#"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-06-judcon-brazil-2014-second-edition-of.adoc:16
+#, fuzzy
 msgid "Judcon Brazil 2014#"
-msgstr ""
+msgstr "ジャドコンブラジル2014#"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-06-judcon-brazil-2014-second-edition-of.adoc:21
-msgid "The second edition of Judcon Brazil was held in São Paulo on September 26th, this time in a single day."
-msgstr ""
+#, fuzzy
+msgid ""
+"The second edition of Judcon Brazil was held in São Paulo on September 26th, "
+"this time in a single day."
+msgstr "第2回目となるJudcon Brazilが9月26日にサンパウロで開催され、今回は1日で開催されました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-06-judcon-brazil-2014-second-edition-of.adoc:25
-msgid "Considering the proximity of JavaOne, we had many top quality speakers presenting to a packed house attending the 4 tracks dedicated to Cloud, NoSQL/Data, Rule Process & Integration and 'Cool Stuff'."
+#, fuzzy
+msgid ""
+"Considering the proximity of JavaOne, we had many top quality speakers "
+"presenting to a packed house attending the 4 tracks dedicated to Cloud, "
+"NoSQL/Data, Rule Process & Integration and 'Cool Stuff'."
 msgstr ""
+"JavaOneの近さを考慮して、クラウド、NoSQL/"
+"データ、ルール・プロセスと統合、そして「クール・スタッフ」の4つのトラックに特化した講演を行い、満員の聴衆を前に多くの質の高い講演者が参加しました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-06-judcon-brazil-2014-second-edition-of.adoc:35
-msgid "The talks were delivery both in English and Portuguese (with simultaneous translations) by well known Jboss community members and leaders. I had the privilege to present \"http://www.slideshare.net/gustavonalle/judcon-brazil-2014-lucene-from-bottom-up?qid=116b8a4f-b728-4fde-8c71-46b68ceb4a54&v=qf1&b=&from_search=1[Lucene from the bottom up]\" and received many positive feedbacks after the talk, when I had the opportunity to discuss about Lucene usage inside and outside Infinispan."
+#, fuzzy
+msgid ""
+"The talks were delivery both in English and Portuguese (with simultaneous "
+"translations) by well known Jboss community members and leaders. I had the "
+"privilege to present \"http://www.slideshare.net/gustavonalle/judcon-brazil-"
+"2014-lucene-from-bottom-up?qid=116b8a4f-b728-4fde-8c71-46b68ceb4a54&v=qf1&b="
+"&from_search=1[Lucene from the bottom up]\" and received many positive "
+"feedbacks after the talk, when I had the opportunity to discuss about Lucene "
+"usage inside and outside Infinispan."
 msgstr ""
+"講演は、Jboss コミュニティの著名なメンバーやリーダーの方々によって、英語とポルトガル語（同時通訳付き）で行われました。私は link:http://"
+"www.slideshare.net/gustavonalle/judcon-brazil-2014-lucene-from-bottom-up?qid="
+"116b8a4f-b728-4fde-8c71-46b68ceb4a54&v=qf1&b=&from_search=1[\"Lucene from "
+"the bottom up] \" を発表する機会を得ましたが、講演後には Infinispan の内外での Lucene "
+"の使用法について議論する機会があり、多くの肯定的なフィードバックをいただきました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-06-judcon-brazil-2014-second-edition-of.adoc:40
-msgid "I also took the chance to see \"Real Time Complex Event Monitoring\" delivered by Guna Vijayaratnam showing how to leverage Infinispan in a complex event processing system with real time visualization, a really interesting use case of the Data Grid."
+#, fuzzy
+msgid ""
+"I also took the chance to see \"Real Time Complex Event Monitoring\" "
+"delivered by Guna Vijayaratnam showing how to leverage Infinispan in a "
+"complex event processing system with real time visualization, a really "
+"interesting use case of the Data Grid."
 msgstr ""
+"また、Guna "
+"Vijayaratnam氏による「リアルタイム複雑なイベントの監視」を見る機会もありましたが、これはデータグリッドの興味深いユースケースで、複雑なイベント処理システムにInfinispanをリアルタイムで可視化する方法を紹介しています。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-06-judcon-brazil-2014-second-edition-of.adoc:47
-msgid "Overall the conference had a flawless organization with cool technical content, plus a nice venue surrounded by amazing gastronomical offers (picanha anyone?). Combined with the traditional Brazilian hospitality, Judcon Brazil 2014 was a great success, hope to attend again next year !"
+#, fuzzy
+msgid ""
+"Overall the conference had a flawless organization with cool technical "
+"content, plus a nice venue surrounded by amazing gastronomical offers "
+"(picanha anyone?). Combined with the traditional Brazilian hospitality, "
+"Judcon Brazil 2014 was a great success, hope to attend again next year !"
 msgstr ""
+"全体的には、クールな技術的な内容と、素晴らしい美食の提供に囲まれた素敵な会場で、完璧な組織で開催されました（ピカニャは誰か？ブラジルの伝統的なホスピタリティと相まって、Judcon "
+"Brazil 2014は大成功でした。"

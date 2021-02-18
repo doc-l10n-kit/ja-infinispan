@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-11-17-infinispan-701final-released.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-17-infinispan-701final-released.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 7.0.1.Final released!\n"
@@ -34,32 +34,67 @@ msgid ""
 "tags: [ \"release\",\n"
 "\"final\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2408731485752031503\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/11/infinispan-701final-released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2408731485752031503\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/11/infinispan-701final-"
+"released.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 7.0.1.Finalをリリースしました。\n"
+"permalink: /blog/:year/:month/:day/infinispan-701final-released\n"
+"date: '2014-11-17T22:52:00.000-08:00'\n"
+"author: isavin\n"
+"tags: [ \"release\",\n"
+"\"final\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2408731485752031503\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/11/infinispan-701final-"
+"released.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-17-infinispan-701final-released.adoc:14
+#, fuzzy
 msgid "Dear community,"
-msgstr ""
+msgstr "地域の皆様へ"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-17-infinispan-701final-released.adoc:16
+#, fuzzy
 msgid "Infinispan 7.0.1.Final is now available!"
-msgstr ""
+msgstr "Infinispan 7.0.1.Finalを公開しました!"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-17-infinispan-701final-released.adoc:21
-msgid "This is a bug-fix release and contains query performance improvements.  For the complete list of changes please consult the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12326035[release notes.]"
+#, fuzzy
+msgid ""
+"This is a bug-fix release and contains query performance improvements.  For "
+"the complete list of changes please consult the https://issues.jboss.org/"
+"secure/ReleaseNote.jspa?projectId=12310799&version=12326035[release notes.]"
 msgstr ""
+"これはバグフィックスリリースであり、クエリのパフォーマンスの改善が含まれています。変更点の完全なリストについては、 link:https://"
+"issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
+"12326035[リリースノート] を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-17-infinispan-701final-released.adoc:23
+#, fuzzy
 msgid "Thanks to everyone involved in this release! "
-msgstr ""
+msgstr "今回のリリースに関わってくださった皆様、ありがとうございました"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-17-infinispan-701final-released.adoc:29
-msgid "Visit our http://infinispan.org/hotrod-clients/[downloads] section to find the latest release.  If you have any questions please check our http://infinispan.org/community/[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+#, fuzzy
+msgid ""
+"Visit our http://infinispan.org/hotrod-clients/[downloads] section to find "
+"the latest release.  If you have any questions please check our http://"
+"infinispan.org/community/[forums], our https://lists.jboss.org/mailman/"
+"listinfo/infinispan-dev[mailing lists] or ping us directly on irc://irc."
+"freenode.org/infinispan[IRC]."
 msgstr ""
+"最新のリリースは link:http://infinispan.org/hotrod-clients/[ダウンロード] "
+"セクションをご覧ください。ご質問がある場合は、 link:http://infinispan.org/community/[フォーラム] 、 link:"
+"https://lists.jboss.org/mailman/listinfo/infinispan-dev[メーリングリスト] 、または link:"
+"irc://irc.freenode.org/infinispan[IRC] で直接質問してください。"

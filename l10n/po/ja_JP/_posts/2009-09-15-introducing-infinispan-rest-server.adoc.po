@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Introducing the Infinispan (REST) server\n"
@@ -32,63 +32,165 @@ msgid ""
 "date: '2009-09-15T22:05:00.000-07:00'\n"
 "author: mneale\n"
 "tags: [ \"rest\", \"server\" ]\n"
-"thumbnail: http://2.bp.blogspot.com/_KukQ8TlQMz8/SrB2KhHxy3I/AAAAAAAAAhg/lG99zU5N-s8/s72-c/Screen+shot+2009-09-16+at+2.37.51+PM.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4350270346450609745\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/09/introducing-infinispan-rest-server.html\n"
+"thumbnail: http://2.bp.blogspot.com/_KukQ8TlQMz8/SrB2KhHxy3I/AAAAAAAAAhg/"
+"lG99zU5N-s8/s72-c/Screen+shot+2009-09-16+at+2.37.51+PM.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4350270346450609745\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/09/introducing-infinispan-"
+"rest-server.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan（REST）サーバーの導入\n"
+"permalink: /blog/:year/:month/:day/introducing-infinispan-rest-server\n"
+"date: '2009-09-15T22:05:00.000-07:00'\n"
+"author: mneale\n"
+"tags: [ \"rest\", \"server\" ]\n"
+"thumbnail: http://2.bp.blogspot.com/_KukQ8TlQMz8/SrB2KhHxy3I/AAAAAAAAAhg/"
+"lG99zU5N-s8/s72-c/Screen+shot+2009-09-16+at+2.37.51+PM.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4350270346450609745\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/09/introducing-infinispan-"
+"rest-server.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:15
-msgid "Introducing the http://www.jboss.org/community/wiki/InfinispanRESTserver[Infinispan RESTful server] !"
+#, fuzzy
+msgid ""
+"Introducing the http://www.jboss.org/community/wiki/"
+"InfinispanRESTserver[Infinispan RESTful server] !"
 msgstr ""
+"link:http://www.jboss.org/community/wiki/InfinispanRESTserver[Infinispan "
+"RESTfulサーバーの] ご紹介!"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:17
-msgid "http://2.bp.blogspot.com/_KukQ8TlQMz8/SrB2KhHxy3I/AAAAAAAAAhg/lG99zU5N-s8/s1600-h/Screen+shot+2009-09-16+at+2.37.51+PM.png[image:http://2.bp.blogspot.com/_KukQ8TlQMz8/SrB2KhHxy3I/AAAAAAAAAhg/lG99zU5N-s8/s400/Screen+shot+2009-09-16+at+2.37.51+PM.png[image]]"
+#, fuzzy
+msgid ""
+"http://2.bp.blogspot.com/_KukQ8TlQMz8/SrB2KhHxy3I/AAAAAAAAAhg/lG99zU5N-s8/"
+"s1600-h/Screen+shot+2009-09-16+at+2.37.51+PM.png[image:http://2.bp.blogspot."
+"com/_KukQ8TlQMz8/SrB2KhHxy3I/AAAAAAAAAhg/lG99zU5N-s8/s400/Screen+shot+2009-"
+"09-16+at+2.37.51+PM.png[image]]"
 msgstr ""
+"link:http://2.bp.blogspot.com/_KukQ8TlQMz8/SrB2KhHxy3I/AAAAAAAAAhg/lG99zU5N-"
+"s8/s1600-h/Screen+shot+2009-09-16+at+2.37.51+PM.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:21
-msgid "The Infinispan RESTful server combines the whole grain goodness of http://www.jboss.org/resteasy/[RESTEasy] (JAX-RS, or JSR-311) with Infinispan to provide a web-ready RESTful data grid."
+#, fuzzy
+msgid ""
+"The Infinispan RESTful server combines the whole grain goodness of http://"
+"www.jboss.org/resteasy/[RESTEasy] (JAX-RS, or JSR-311) with Infinispan to "
+"provide a web-ready RESTful data grid."
 msgstr ""
+"Infinispan RESTfulサーバーは、 link:http://www.jboss.org/resteasy/[RESTEasy] （JAX-"
+"RS、またはJSR-311）の全粒粉の良さをInfinispanと組み合わせて、ウェブ対応のRESTfulデータグリッドを提供します。"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:28
-msgid "Recently I (Michael) spoke to Manik about an interesting use case, and he indicated great interest in such a server. It wasn't a huge amount of work to do the initial version - given that JAX-RS is designed to make things easy."
+#, fuzzy
+msgid ""
+"Recently I (Michael) spoke to Manik about an interesting use case, and he "
+"indicated great interest in such a server. It wasn't a huge amount of work "
+"to do the initial version - given that JAX-RS is designed to make things "
+"easy."
 msgstr ""
+"最近、私（マイケル）は Manik に興味深いユースケースについて話をしたのですが、彼はそのようなサーバに大きな関心を示していました。JAX-"
+"RSが簡単にできるように設計されていることを考えると、初期バージョンを作るのはそれほど大変な作業ではありませんでした。"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:37
-msgid "For those that don't know: RESTful design is using the well proven and established http/web standards for providing services (as a simple alternative to WS-*) - if that still isn't enough, you can read more http://en.wikipedia.org/wiki/Representational_State_Transfer[here]. So for Infinispan that means that any type of client can place data in the Infinispan grid."
+#, fuzzy
+msgid ""
+"For those that don't know: RESTful design is using the well proven and "
+"established http/web standards for providing services (as a simple "
+"alternative to WS-*) - if that still isn't enough, you can read more http://"
+"en.wikipedia.org/wiki/Representational_State_Transfer[here]. So for "
+"Infinispan that means that any type of client can place data in the "
+"Infinispan grid."
 msgstr ""
+"ご存知ない方のために。RESTfulデザインとは、サービスを提供するために、実績のある確立されたhttp/web標準を使用することです（WS-"
+"*の簡単な代替として）。Infinispanにとっては、どんなタイプのクライアントでもInfinispanのグリッドにデータを置くことができるということです。"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:45
-msgid "So what would you use it for? For non java clients, or clients where you need to use HTTP as the transport mechanism for caching/data grid needs. A content delivery network (?) - push data into the grid, let Infinispan spread it around and serve it out via the nearest server. See here for details on using http://www.jboss.org/community/wiki/AccessingdatainInfinispanviaRESTfulinterface[http and URLs] with it."
+#, fuzzy
+msgid ""
+"So what would you use it for? For non java clients, or clients where you "
+"need to use HTTP as the transport mechanism for caching/data grid needs. A "
+"content delivery network (?) - push data into the grid, let Infinispan "
+"spread it around and serve it out via the nearest server. See here for "
+"details on using http://www.jboss.org/community/wiki/"
+"AccessingdatainInfinispanviaRESTfulinterface[http and URLs] with it."
 msgstr ""
+"では、何に使うのでしょうか？Java 以外のクライアントや、キャッシュやデータグリッドの必要性のために HTTP "
+"をトランスポート機構として使用する必要があるクライアント。コンテンツ配信ネットワーク(?) - "
+"グリッドにデータをプッシュし、Infinispanにデータを分散させ、最寄りのサーバを経由して配信することができます。 link:http://www."
+"jboss.org/community/wiki/"
+"AccessingdatainInfinispanviaRESTfulinterface[httpとURLの] "
+"使用についての詳細はこちらを参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:50
-msgid "In terms of clients - you only need HTTP - no binary dependencies or libraries needed (the wiki page has some http://www.jboss.org/community/wiki/InfinispanRESTserver[samples] in ruby/python, also in the project source)."
+#, fuzzy
+msgid ""
+"In terms of clients - you only need HTTP - no binary dependencies or "
+"libraries needed (the wiki page has some http://www.jboss.org/community/wiki/"
+"InfinispanRESTserver[samples] in ruby/python, also in the project source)."
 msgstr ""
+"バイナリの依存関係やライブラリは必要ありません(wikiページにはいくつかの link:http://www.jboss.org/community/"
+"wiki/InfinispanRESTserver[サンプル] があり、プロジェクトソースにもあります)。"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:54
-msgid "Where does it live? The server is a module in Infinispan under /server/rest (for the moment, we may re-arrange the sources at a later date)."
+#, fuzzy
+msgid ""
+"Where does it live? The server is a module in Infinispan under /server/rest "
+"(for the moment, we may re-arrange the sources at a later date)."
 msgstr ""
+"どこにあるのでしょうか？サーバはInfinispanの/server/"
+"restの下にあるモジュールです(今のところは、後日ソースを再配置するかもしれません)。"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:62
-msgid "Getting it.  Currently you can download the war from the http://www.jboss.org/community/wiki/InfinispanRESTserver[wiki page,] or build it yourself (as it is still new, early days). This is at present a war file (tested on JBoss AS and Jetty) which should work in most containers - we plan to deliver a stand alone server (with an embedded JBoss AS) Real Soon Now."
+#, fuzzy
+msgid ""
+"Getting it.  Currently you can download the war from the http://www.jboss."
+"org/community/wiki/InfinispanRESTserver[wiki page,] or build it yourself (as "
+"it is still new, early days). This is at present a war file (tested on JBoss "
+"AS and Jetty) which should work in most containers - we plan to deliver a "
+"stand alone server (with an embedded JBoss AS) Real Soon Now."
 msgstr ""
+"入手方法現在のところ、 link:http://www.jboss.org/community/wiki/"
+"InfinispanRESTserver[wiki ページ] からダウンロードするか、自分でビルドすることができます "
+"(まだ新しいので、初期の段階です)。これは現在のところ、ほとんどのコンテナで動作するはずの war ファイル (JBoss AS と Jetty "
+"でテスト済み) である - 我々はスタンドアローンサーバー (JBoss AS を組み込んだ) の提供を計画している。"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:64
+#, fuzzy
 msgid "Questions: (find me on the dev list, or poke around the wiki)."
-msgstr ""
+msgstr "質問があります。(開発者リストに載っているか、wikiを覗いてみてください)。"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-15-introducing-infinispan-rest-server.adoc:72
-msgid "http://4.bp.blogspot.com/_KukQ8TlQMz8/SrB46z6O6AI/AAAAAAAAAho/oFV6rUOZ7Ak/s1600-h/Picture+2.png[image:http://4.bp.blogspot.com/_KukQ8TlQMz8/SrB46z6O6AI/AAAAAAAAAho/oFV6rUOZ7Ak/s400/Picture+2.png[image]] http://2.bp.blogspot.com/_KukQ8TlQMz8/SrB5D7j0a5I/AAAAAAAAAhw/GVkHgiPakIA/s1600-h/Picture+3.png[image:http://2.bp.blogspot.com/_KukQ8TlQMz8/SrB5D7j0a5I/AAAAAAAAAhw/GVkHgiPakIA/s400/Picture+3.png[image]]Implemented in scala: After chatting with Manik and co, we decided this would serve as a good test bed to \"test the waters\" on Scala - so this module is written in scala - it worked just fine with RESTEasy, and Infinispan (which one would reasonably expect, but nice when things do work as advertised !)."
+#, fuzzy
+msgid ""
+"http://4.bp.blogspot.com/_KukQ8TlQMz8/SrB46z6O6AI/AAAAAAAAAho/oFV6rUOZ7Ak/"
+"s1600-h/Picture+2.png[image:http://4.bp.blogspot.com/_KukQ8TlQMz8/"
+"SrB46z6O6AI/AAAAAAAAAho/oFV6rUOZ7Ak/s400/Picture+2.png[image]] http://2.bp."
+"blogspot.com/_KukQ8TlQMz8/SrB5D7j0a5I/AAAAAAAAAhw/GVkHgiPakIA/s1600-h/"
+"Picture+3.png[image:http://2.bp.blogspot.com/_KukQ8TlQMz8/SrB5D7j0a5I/"
+"AAAAAAAAAhw/GVkHgiPakIA/s400/Picture+3.png[image]]Implemented in scala: "
+"After chatting with Manik and co, we decided this would serve as a good test "
+"bed to \"test the waters\" on Scala - so this module is written in scala - "
+"it worked just fine with RESTEasy, and Infinispan (which one would "
+"reasonably expect, but nice when things do work as advertised !)."
 msgstr ""
+"link:http://4.bp.blogspot.com/_KukQ8TlQMz8/SrB46z6O6AI/AAAAAAAAAho/"
+"oFV6rUOZ7Ak/s1600-h/Picture+2.png[] link:http://2.bp.blogspot.com/"
+"_KukQ8TlQMz8/SrB5D7j0a5I/AAAAAAAAAhw/GVkHgiPakIA/s1600-h/Picture+3.png[] "
+"scalaで実装されています。Manikと話した後、これはScala上で「水をテストする」ための良いテストベッドになると判断しました - "
+"このモジュールはscalaで書かれています - "
+"RESTEasyとInfinispanでうまく動作しました（これは合理的に期待されていることですが、宣伝通りに動作すると嬉しいですね！）。"

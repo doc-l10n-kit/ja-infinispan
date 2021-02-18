@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 8.0.1.Final (and 7.2.5.Final)\n"
@@ -32,97 +32,155 @@ msgid ""
 "date: '2015-09-10T13:49:00.001-07:00'\n"
 "author: ttarrant\n"
 "tags: [ \"release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3296095565508041899\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/09/infinispan-801final-and-725final.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3296095565508041899\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/09/infinispan-801final-"
+"and-725final.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 8.0.1.Final (および7.2.5.Final)\n"
+"permalink: /blog/:year/:month/:day/infinispan-801final-and-725final\n"
+"date: '2015-09-10T13:49:00.001-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3296095565508041899\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/09/infinispan-801final-"
+"and-725final.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:12
+#, fuzzy
 msgid "Dear all,"
-msgstr ""
+msgstr "親愛なる皆様。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:15
-msgid "we've just cooked two new point releases of Infinispan to address a number of issues."
-msgstr ""
+#, fuzzy
+msgid ""
+"we've just cooked two new point releases of Infinispan to address a number "
+"of issues."
+msgstr "いくつかの問題に対処するために、Infinispanの2つの新しいポイントリリースを作成しました。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:18
+#, fuzzy
 msgid "The highlights for 8.0.1.Final are:  "
-msgstr ""
+msgstr "8.0.1.Finalのハイライトは以下の通りです。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:20
+#, fuzzy
 msgid "ISPN-5717 Notify continuous query also when entry expires"
-msgstr ""
+msgstr "ISPN-5717 エントリの有効期限が切れた場合にも連続したクエリを通知すること"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:26
-msgid "ISPN-5591 Simple local cache without interceptor stack. This is an extremely fast cache with very few features (no transactions, no indexing, no persistence, etc). Its primary intendend usage is as a 2nd-level cache for Hibernate, but we're sure you can find lot's of other applications for it, provided you don't require all the bells and whistles that come with our fully-fledged caches."
+#, fuzzy
+msgid ""
+"ISPN-5591 Simple local cache without interceptor stack. This is an extremely "
+"fast cache with very few features (no transactions, no indexing, no "
+"persistence, etc). Its primary intendend usage is as a 2nd-level cache for "
+"Hibernate, but we're sure you can find lot's of other applications for it, "
+"provided you don't require all the bells and whistles that come with our "
+"fully-fledged caches."
 msgstr ""
+"ISPN-5591 インターセプタースタックのないシンプルなローカルキャッシュ。これは非常に高速なキャッシュで、ほとんど機能はありません "
+"(トランザクション、インデックス、永続性などはありません)。主な用途はHibernate用の第2レベルキャッシュですが、当社の本格的なキャッシュのような豪華な機能を必要としないのであれば、他にも様々な用途で利用できると思います。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:27
+#, fuzzy
 msgid "Bump Hibernate Search to 5.5.0.CR1 and Lucene to 5.3.0"
-msgstr ""
+msgstr "Hibernate Searchを5.5.0.CR1に、Luceneを5.3.0にバンプしました。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:30
-msgid "A number of query fixes, including indexing and searching of null non-string properties, aggregation expressions in orderBy, filter with both 'where' and 'having' in the same query"
+#, fuzzy
+msgid ""
+"A number of query fixes, including indexing and searching of null non-string "
+"properties, aggregation expressions in orderBy, filter with both 'where' and "
+"'having' in the same query"
 msgstr ""
+"ヌル文字列以外のプロパティのインデックス作成と検索、orderByでの集約式、'where'と'having'の両方を同じクエリに含むフィルタなど、多くのクエリの修正。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:31
+#, fuzzy
 msgid "ISPN-5731 Cannot use aggregation expression in orderBy"
-msgstr ""
+msgstr "ISPN-5731 orderByで集約式が使用できない"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:34
-msgid "Read the complete https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12328068[release notes]"
+#, fuzzy
+msgid ""
+"Read the complete https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
+"12310799&version=12328068[release notes]"
 msgstr ""
+"完全な link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
+"12310799&version=12328068[リリースノートを] 読む"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:37
+#, fuzzy
 msgid "The highlights for 7.2.5.Final are:"
-msgstr ""
+msgstr "7.2.5.Finalの見どころは。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:39
+#, fuzzy
 msgid "ISPN-5607 Preemptively invalidate near cache after writes"
-msgstr ""
+msgstr "ISPN-5607 書き込み後のキャッシュ付近を先制的に無効にする"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:40
+#, fuzzy
 msgid "ISPN-5670 Hot Rod server sets -1 for lifespan or maxIdle as default"
-msgstr ""
+msgstr "ISPN-5670 Hot Rodサーバでは、ライフスパンに-1、maxIdleがデフォルトで設定されています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:41
+#, fuzzy
 msgid "ISPN-5677 RemoteCache async methods use flags"
-msgstr ""
+msgstr "ISPN-5677 RemoteCache の async メソッドはフラグを使用します。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:42
+#, fuzzy
 msgid "ISPN-5684 Make getAll work with compatibility mode in DIST"
-msgstr ""
+msgstr "ISPN-5684 DISTで互換性モードでgetAllが動作するようにする"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:45
-msgid "Read the complete https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12327781[release notes]"
+#, fuzzy
+msgid ""
+"Read the complete https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
+"12310799&version=12327781[release notes]"
 msgstr ""
+"完全な link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
+"12310799&version=12327781[リリースノートを] 読む"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:50
-msgid "http://infinispan.org/download/[Get] it, http://infinispan.org/tutorials/[learn] how to use it, http://infinispan.org/getinvolved/[help] us improve it."
+#, fuzzy
+msgid ""
+"http://infinispan.org/download/[Get] it, http://infinispan.org/tutorials/"
+"[learn] how to use it, http://infinispan.org/getinvolved/[help] us improve "
+"it."
 msgstr ""
+"それを手 link:http://infinispan.org/download/[に入れ] 、使い方を link:http://infinispan."
+"org/tutorials/[学び] 、改善に link:http://infinispan.org/getinvolved/[協力して] ください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:52
+#, fuzzy
 msgid "Enjoy !"
-msgstr ""
+msgstr "お楽しみに"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-10-infinispan-801final-and-725final.adoc:55
+#, fuzzy
 msgid "The Infinispan team"
-msgstr ""
+msgstr "インフィニスパンチーム"

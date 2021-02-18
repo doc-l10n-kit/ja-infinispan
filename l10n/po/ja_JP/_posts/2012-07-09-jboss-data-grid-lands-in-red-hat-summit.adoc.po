@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-07-09-jboss-data-grid-lands-in-red-hat-summit.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-09-jboss-data-grid-lands-in-red-hat-summit.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: JBoss Data Grid lands in Red Hat Summit!\n"
@@ -36,42 +36,107 @@ msgid ""
 "\"event\",\n"
 "\"jbossworld\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-817709402398223036\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/07/jboss-data-grid-lands-in-red-hat-summit.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"817709402398223036\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/07/jboss-data-grid-lands-"
+"in-red-hat-summit.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: JBoss Data GridがRed Hat Summitに上陸!\n"
+"permalink: /blog/:year/:month/:day/jboss-data-grid-lands-in-red-hat-summit\n"
+"date: '2012-07-09T00:34:00.002-07:00'\n"
+"author: galder\n"
+"tags: [ \"conference\",\n"
+"\"jdg\",\n"
+"\"event\",\n"
+"\"jbossworld\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"817709402398223036\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/07/jboss-data-grid-lands-"
+"in-red-hat-summit.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-09-jboss-data-grid-lands-in-red-hat-summit.adoc:26
-msgid "It's just over a week since http://www.redhat.com/summit/[Red Hat Summit/JBoss World 2012] finished and it was a great pleasure to be part of it. Heiko Rupp and I were speaking about \"Effectively Manage & Monitor Red Hat JBoss Data Grid Nodes\" where we presented http://www.redhat.com/products/jbossenterprisemiddleware/data-grid/[JDG] and http://www.redhat.com/products/jbossenterprisemiddleware/operations-network/[JON] at a high level and then we showed a demo of both products interacting with each other. The presentation's slides are now http://rhsummit.files.wordpress.com/2012/03/zamarreno_data_grids.pdf[available for download]."
+#, fuzzy
+msgid ""
+"It's just over a week since http://www.redhat.com/summit/[Red Hat Summit/"
+"JBoss World 2012] finished and it was a great pleasure to be part of it. "
+"Heiko Rupp and I were speaking about \"Effectively Manage & Monitor Red Hat "
+"JBoss Data Grid Nodes\" where we presented http://www.redhat.com/products/"
+"jbossenterprisemiddleware/data-grid/[JDG] and http://www.redhat.com/products/"
+"jbossenterprisemiddleware/operations-network/[JON] at a high level and then "
+"we showed a demo of both products interacting with each other. The "
+"presentation's slides are now http://rhsummit.files.wordpress.com/2012/03/"
+"zamarreno_data_grids.pdf[available for download]."
 msgstr ""
+"link:http://www.redhat.com/summit/[Red Hat Summit/JBoss World 2012] が終了してから "
+"1 週間以上が経ちました。Heiko Rupp と私は \"Effectively Manage & Monitor Red Hat JBoss "
+"Data Grid Nodes\" というテーマで講演を行い、JDG link:http://www.redhat.com/products/"
+"jbossenterprisemiddleware/data-grid/[と] JON を高いレベル link:http://www.redhat."
+"com/products/jbossenterprisemiddleware/operations-network/[で] "
+"紹介した後、両製品の相互作用のデモを行いました。このプレゼンテーションのスライドは、現在ダウンロード link:http://rhsummit."
+"files.wordpress.com/2012/03/zamarreno_data_grids.pdf[可能] です。"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-09-jboss-data-grid-lands-in-red-hat-summit.adoc:34
-msgid "I was not the only one speaking about JBoss Data Grid. Both Manik, the Infinispan project lead, and Alan Santos, the product manager for Infinispan, were also delivering talks on JBoss Data Grid. Although their presentations are not up yet, you'll be able to download them from http://www.redhat.com/summit/2012/presentations/jbossworld/[here]."
+#, fuzzy
+msgid ""
+"I was not the only one speaking about JBoss Data Grid. Both Manik, the "
+"Infinispan project lead, and Alan Santos, the product manager for "
+"Infinispan, were also delivering talks on JBoss Data Grid. Although their "
+"presentations are not up yet, you'll be able to download them from http://"
+"www.redhat.com/summit/2012/presentations/jbossworld/[here]."
 msgstr ""
+"JBoss Data "
+"Gridについて講演していたのは私だけではありませんでした。InfinispanのプロジェクトリーダーであるManikとInfinispanのプロダクトマネージャーであるAlan "
+"SantosもJBoss Data Gridについて講演していた。彼らのプレゼンテーションはまだ公開されていませんが、 link:http://www."
+"redhat.com/summit/2012/presentations/jbossworld/[こちら] からダウンロードすることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-09-jboss-data-grid-lands-in-red-hat-summit.adoc:42
-msgid "I also met some Infinispan customers, such as Erik who's been using Infinispan at a well known telecommunications company, or two of the lead technical guys at a well known Geneva bank. We had some great conversations where we were able to synch up our roadmap with them to make sure any requirements they had are met in the future."
+#, fuzzy
+msgid ""
+"I also met some Infinispan customers, such as Erik who's been using "
+"Infinispan at a well known telecommunications company, or two of the lead "
+"technical guys at a well known Geneva bank. We had some great conversations "
+"where we were able to synch up our roadmap with them to make sure any "
+"requirements they had are met in the future."
 msgstr ""
+"また、有名な通信会社でInfinispanを使用しているErik氏や、有名なジュネーブ銀行の技術担当者2名など、Infinispanのお客様にもお会いしました。私たちは、彼らとロードマップを同期させて、彼らが将来的に必要としている要件を満たすようにするための素晴らしい会話をすることができました。"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-09-jboss-data-grid-lands-in-red-hat-summit.adoc:50
-msgid "Of the presentations I attended, I was particularly impressed by Pete and Marius' 10 minute demo on going from 0 to a fully fledged mobile application running on top of AS7 in OpenShift in the \"What's New in Java Frameworks for Web, Cloud, & Mobile\" BOF. I hope it was recorded cos it was very impressive stuff."
+#, fuzzy
+msgid ""
+"Of the presentations I attended, I was particularly impressed by Pete and "
+"Marius' 10 minute demo on going from 0 to a fully fledged mobile application "
+"running on top of AS7 in OpenShift in the \"What's New in Java Frameworks "
+"for Web, Cloud, & Mobile\" BOF. I hope it was recorded cos it was very "
+"impressive stuff."
 msgstr ""
+"私が参加したプレゼンテーションの中で特に印象的だったのは、「What's New in Java Frameworks for Web, Cloud, "
+"& "
+"Mobile」のBOFで、PeteとMariusがOpenShiftのAS7上で0から完全に本格的なモバイルアプリケーションを実行するまでの10分間のデモを行ったことです。非常に印象的な内容だったので、録画されているといいのですが。"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-09-jboss-data-grid-lands-in-red-hat-summit.adoc:55
-msgid "It was a great week and once again it was a pleasure to be part of the Red Hat Summit and JBoss World :)"
-msgstr ""
+#, fuzzy
+msgid ""
+"It was a great week and once again it was a pleasure to be part of the Red "
+"Hat Summit and JBoss World :)"
+msgstr "素晴らしい一週間で、Red Hat Summit と JBoss World に参加できたことを改めて嬉しく思います :)"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-09-jboss-data-grid-lands-in-red-hat-summit.adoc:59
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-09-jboss-data-grid-lands-in-red-hat-summit.adoc:60
+#, fuzzy
 msgid "Galder"
-msgstr ""
+msgstr "ガルダー"

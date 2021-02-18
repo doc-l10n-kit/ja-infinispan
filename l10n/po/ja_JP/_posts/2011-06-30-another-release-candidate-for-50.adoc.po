@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-06-30-another-release-candidate-for-50.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-30-another-release-candidate-for-50.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Another release candidate for 5.0\n"
@@ -32,22 +32,57 @@ msgid ""
 "date: '2011-06-30T10:53:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2366382468424950103\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/06/another-release-candidate-for-50.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2366382468424950103\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/06/another-release-"
+"candidate-for-50.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 5.0のもう一つのリリース候補\n"
+"permalink: /blog/:year/:month/:day/another-release-candidate-for-50\n"
+"date: '2011-06-30T10:53:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \"release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2366382468424950103\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/06/another-release-"
+"candidate-for-50.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-30-another-release-candidate-for-50.adoc:14
-msgid "I've just released 5.0.0.CR7. Hopefully we won't see any more release candidates before 5.0.0.Final, so give this a good, hearty test and let us know what you think."
-msgstr ""
+#, fuzzy
+msgid ""
+"I've just released 5.0.0.CR7. Hopefully we won't see any more release "
+"candidates before 5.0.0.Final, so give this a good, hearty test and let us "
+"know what you think."
+msgstr "5.0.0.0.CR7をリリースしました。5.0.0.0.Finalまでには、これ以上のリリース候補が出てこないことを願っています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-30-another-release-candidate-for-50.adoc:22
-msgid "A number of important bugs are fixed, details are in https://issues.jboss.org/secure/ConfigureReport.jspa?atl_token=AQZJ-FV3A-N91S-UDEU%7C93feddcb2d61582611c8cee9084a8dbc1c48a672%7Clin&versions=12316850&sections=all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira.plugin.release-notes-report-plugin%3Areleasenotes&Next=Next[JIRA], and you can download the release in the http://www.jboss.org/infinispan/downloads[usual place].  Please provide feedback on the http://community.jboss.org/en/infinispan?view=discussions[user forums]."
+#, fuzzy
+msgid ""
+"A number of important bugs are fixed, details are in https://issues.jboss."
+"org/secure/ConfigureReport.jspa?atl_token=AQZJ-FV3A-N91S-"
+"UDEU%7C93feddcb2d61582611c8cee9084a8dbc1c48a672%7Clin&versions="
+"12316850&sections=all&style=none&selectedProjectId=12310799&reportKey=org."
+"jboss.labs.jira.plugin.release-notes-report-plugin%3Areleasenotes&Next="
+"Next[JIRA], and you can download the release in the http://www.jboss.org/"
+"infinispan/downloads[usual place].  Please provide feedback on the http://"
+"community.jboss.org/en/infinispan?view=discussions[user forums]."
 msgstr ""
+"いくつかの重要なバグが修正され、詳細は link:https://issues.jboss.org/secure/ConfigureReport."
+"jspa?atl_token=AQZJ-FV3A-N91S-"
+"UDEU%7C93feddcb2d61582611c8cee9084a8dbc1c48a672%7Clin&versions="
+"12316850&sections=all&style=none&selectedProjectId=12310799&reportKey=org."
+"jboss.labs.jira.plugin.release-notes-report-plugin%3Areleasenotes&Next="
+"Next[JIRA] にあり、リリースは link:http://www.jboss.org/infinispan/downloads[いつもの場所で] "
+"ダウンロードできます。 ユーザー link:http://community.jboss.org/en/infinispan?view="
+"discussions[フォーラム] でフィードバックをお願いします。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-30-another-release-candidate-for-50.adoc:24
+#, fuzzy
 msgid "Enjoy, and onward to 5.0.0.Final! Manik"
-msgstr ""
+msgstr "5.0.0.0.Finalまでお楽しみください。マニク"

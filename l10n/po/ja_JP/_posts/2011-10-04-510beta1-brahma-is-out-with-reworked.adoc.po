@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-10-04-510beta1-brahma-is-out-with-reworked.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-04-510beta1-brahma-is-out-with-reworked.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: 5.1.0.BETA1 \"Brahma\" is out with reworked transaction handling\n"
@@ -32,25 +32,56 @@ msgid ""
 "date: '2011-10-04T06:02:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \" transactions\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8780699372567464510\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/10/510beta1-brahma-is-out-with-reworked.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8780699372567464510\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/10/510beta1-brahma-is-out-"
+"with-reworked.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 5.1.0.0.BETA1 \"Brahma\"がトランザクション処理を見直して公開されました。\n"
+"permalink: /blog/:year/:month/:day/510beta1-brahma-is-out-with-reworked\n"
+"date: '2011-10-04T06:02:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \" transactions\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8780699372567464510\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/10/510beta1-brahma-is-out-"
+"with-reworked.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-04-510beta1-brahma-is-out-with-reworked.adoc:14
-msgid "It's been a frantic couple of weeks at _chez_ Infinispan with loads of hacking, presentations preparation, team meetings...etc and we're now proud to release Infinispan 5.1.0.BETA1 _\"Brahma\"._"
-msgstr ""
+#, fuzzy
+msgid ""
+"It's been a frantic couple of weeks at _chez_ Infinispan with loads of "
+"hacking, presentations preparation, team meetings...etc and we're now proud "
+"to release Infinispan 5.1.0.BETA1 _\"Brahma\"._"
+msgstr "_この_ 数週間は、 _ハッキング_ 、プレゼンテーションの準備、チームミーティングなどで大変な数週間でした。"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-04-510beta1-brahma-is-out-with-reworked.adoc:21
-msgid "For this first beta release, the transaction layer has been redesigned as explained by Mircea in http://infinispan.blogspot.com/2011/10/transaction-remake-in-infinispan-51.html[this blog post]. This is a very important step in the process of implementing some key locking improvements, so we're very excited about this! Thanks Mircea :)"
+#, fuzzy
+msgid ""
+"For this first beta release, the transaction layer has been redesigned as "
+"explained by Mircea in http://infinispan.blogspot.com/2011/10/transaction-"
+"remake-in-infinispan-51.html[this blog post]. This is a very important step "
+"in the process of implementing some key locking improvements, so we're very "
+"excited about this! Thanks Mircea :)"
 msgstr ""
+"今回の最初のベータリリースでは、この link:http://infinispan.blogspot.com/2011/10/transaction-"
+"remake-in-infinispan-51.html[ブログ記事] "
+"でMirceaさんが説明しているように、トランザクションレイヤーが再設計されました。これは、いくつかのキーロックの改善を実装するための非常に重要なステップなので、これには非常に興奮しています!Mirceaさんありがとうございます。)"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-04-510beta1-brahma-is-out-with-reworked.adoc:25
-msgid "There's a bunch of other little improvements, such as avoiding the use of thread locals for cache operations with flags. As a result, optimisations like the following are now viable:"
+#, fuzzy
+msgid ""
+"There's a bunch of other little improvements, such as avoiding the use of "
+"thread locals for cache operations with flags. As a result, optimisations "
+"like the following are now viable:"
 msgstr ""
+"フラグを使ったキャッシュ操作にスレッドローカルを使わないようにするなど、他にも多くの小さな改善があります。その結果、以下のような最適化が可能になりました。"
 
 #. type: delimited block -
 #: upstream/_posts/2011-10-04-510beta1-brahma-is-out-with-reworked.adoc:33
@@ -65,20 +96,48 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-10-04-510beta1-brahma-is-out-with-reworked.adoc:38
-msgid "Previously each cache invocation would have required withFlags() to be called, but now you only need to do it once and you can cache the \"flagged\" cache and reuse it."
+#, fuzzy
+msgid ""
+"Previously each cache invocation would have required withFlags() to be "
+"called, but now you only need to do it once and you can cache the "
+"\"flagged\" cache and reuse it."
 msgstr ""
+"以前はキャッシュを呼び出すたびに withFlags() "
+"を呼び出す必要がありましたが、今では一度だけで済むようになり、「フラグが付いた」キャッシュをキャッシュして再利用することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-04-510beta1-brahma-is-out-with-reworked.adoc:47
-msgid "Another interesting little improvement is available for JDBC cache store users. Basically, database tables can now be discovered within an implicit schema. So, if each user has a different schema, the tables will be created within their own space. This makes it easier to manage environments where the JDBC cache store is used by multiple caches at the same time because management is limited to adding a user per application, as opposed to adding a user plus prefixing table names.  Thanks to Nicolas Filotto for bringing this up."
+#, fuzzy
+msgid ""
+"Another interesting little improvement is available for JDBC cache store "
+"users. Basically, database tables can now be discovered within an implicit "
+"schema. So, if each user has a different schema, the tables will be created "
+"within their own space. This makes it easier to manage environments where "
+"the JDBC cache store is used by multiple caches at the same time because "
+"management is limited to adding a user per application, as opposed to adding "
+"a user plus prefixing table names.  Thanks to Nicolas Filotto for bringing "
+"this up."
 msgstr ""
+"もう一つの興味深い小さな改善点は、JDBCキャッシュストアのユーザーが利用できることです。基本的に、データベースのテーブルは暗黙のスキーマ内で発見できるようになりました。つまり、各ユーザーが異なるスキーマを持っている場合、テーブルはそれぞれのスペース内で作成されることになります。これにより、JDBCキャッシュストアが複数のキャッシュで同時に利用されている環境では、管理がアプリケーションごとにユーザーを追加することに限定されるため、ユーザーの追加＋テーブル名のプレフィックスの追加に比べて、管理が容易になります。この話を持ち出してくれた "
+"Nicolas Filotto に感謝します。"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-04-510beta1-brahma-is-out-with-reworked.adoc:54
-msgid "Please keep the http://community.jboss.org/en/infinispan?view=discussions[feedback] coming, and as always, you can http://www.jboss.org/infinispan/downloads[download] the release from here and you get further details on the issues addressed in the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12313469[changelog]."
+#, fuzzy
+msgid ""
+"Please keep the http://community.jboss.org/en/infinispan?view="
+"discussions[feedback] coming, and as always, you can http://www.jboss.org/"
+"infinispan/downloads[download] the release from here and you get further "
+"details on the issues addressed in the https://issues.jboss.org/secure/"
+"ReleaseNote.jspa?projectId=12310799&version=12313469[changelog]."
 msgstr ""
+"link:http://community.jboss.org/en/infinispan?view=discussions[フィードバックを] "
+"お願いします。いつものように、ここからリリースを link:http://www.jboss.org/infinispan/"
+"downloads[ダウンロードする] ことができ、 link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12313469[変更履歴] で対処された問題の詳細を得ることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-04-510beta1-brahma-is-out-with-reworked.adoc:56
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

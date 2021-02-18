@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-04-13-infinispan-and-ogm-at-ptjug.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-04-13-infinispan-and-ogm-at-ptjug.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan and OGM at PT.JUG\n"
@@ -35,22 +35,56 @@ msgid ""
 "\"JUGs\",\n"
 "\"event\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6747563178673036399\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/04/infinispan-and-ogm-at-ptjug.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6747563178673036399\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/04/infinispan-and-ogm-at-"
+"ptjug.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: PT.JUGでインフィニスパンとOGM\n"
+"permalink: /blog/:year/:month/:day/infinispan-and-ogm-at-ptjug\n"
+"date: '2012-04-13T01:38:00.002-07:00'\n"
+"author: mmarkus\n"
+"tags: [ \"conference\",\n"
+"\"JUGs\",\n"
+"\"event\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6747563178673036399\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/04/infinispan-and-ogm-at-"
+"ptjug.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-04-13-infinispan-and-ogm-at-ptjug.adoc:23
-msgid "http://codingobsession.blogspot.co.uk/[Sanne Grinovero] and myself will talk about http://www.jboss.org/infinispan/[Infinispan] and http://www.hibernate.org/subprojects/ogm.html[OGM] at Portugal JUG http://www.java.pt/node/293[in Coimbra on the April 18]. This join talk covers an introduction to http://www.jboss.org/infinispan/[Infinispan] and its main use cases followed by a presentation about NoSQL and Hibernate http://www.hibernate.org/subprojects/ogm.html[OGM]. Thanks to http://www.samaxes.com/[Samuel Santos] for inviting us and really looking forward to meet with the community!"
+#, fuzzy
+msgid ""
+"http://codingobsession.blogspot.co.uk/[Sanne Grinovero] and myself will talk "
+"about http://www.jboss.org/infinispan/[Infinispan] and http://www.hibernate."
+"org/subprojects/ogm.html[OGM] at Portugal JUG http://www.java.pt/node/293[in "
+"Coimbra on the April 18]. This join talk covers an introduction to http://"
+"www.jboss.org/infinispan/[Infinispan] and its main use cases followed by a "
+"presentation about NoSQL and Hibernate http://www.hibernate.org/subprojects/"
+"ogm.html[OGM]. Thanks to http://www.samaxes.com/[Samuel Santos] for inviting "
+"us and really looking forward to meet with the community!"
 msgstr ""
+"link:http://www.java.pt/node/293[4月18日にコインブラで開催される] ポルトガルJUGで、 link:http://"
+"codingobsession.blogspot.co.uk/[Sanne Grinovero] と私が link:http://www.jboss."
+"org/infinispan/[Infinispan] と link:http://www.hibernate.org/subprojects/ogm."
+"html[OGM] について話します。今回の講演では、 link:http://www.jboss.org/infinispan/"
+"[Infinispan] とその主なユースケースについて紹介した後、NoSQLとHibernate link:http://www.hibernate."
+"org/subprojects/ogm.html[OGM] についてのプレゼンテーションを行います。招待してくれた link:http://www."
+"samaxes.com/[Samuel Santos] 氏に感謝します。"
 
 #. type: Plain text
 #: upstream/_posts/2012-04-13-infinispan-and-ogm-at-ptjug.adoc:27
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2012-04-13-infinispan-and-ogm-at-ptjug.adoc:28
+#, fuzzy
 msgid "Mircea"
-msgstr ""
+msgstr "ミルチェア"

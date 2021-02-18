@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-clustered-cache-quickstart-updates.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-clustered-cache-quickstart-updates.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Clustered cache quickstart updates\n"
@@ -32,22 +32,58 @@ msgid ""
 "date: '2014-04-11T08:48:00.000-07:00'\n"
 "author: infinispan\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7591605069885098464\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/04/clustered-cache-quickstart-updates.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7591605069885098464\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/04/clustered-cache-"
+"quickstart-updates.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: クラスタ化されたキャッシュのクイックスタート更新\n"
+"permalink: /blog/:year/:month/:day/clustered-cache-quickstart-updates\n"
+"date: '2014-04-11T08:48:00.000-07:00'\n"
+"author: infinispan\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7591605069885098464\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/04/clustered-cache-"
+"quickstart-updates.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-clustered-cache-quickstart-updates.adoc:16
-msgid "As developers, it's always easy for us to \"forget\" about documentation and tutorials, and let them get out of date. And this is exactly what happened with our http://infinispan.org/docs/6.0.x/getting_started/getting_started.html#_using_infinispan_as_an_embedded_data_grid_in_java_se[clustered cache tutorial]."
+#, fuzzy
+msgid ""
+"As developers, it's always easy for us to \"forget\" about documentation and "
+"tutorials, and let them get out of date. And this is exactly what happened "
+"with our http://infinispan.org/docs/6.0.x/getting_started/getting_started."
+"html#_using_infinispan_as_an_embedded_data_grid_in_java_se[clustered cache "
+"tutorial]."
 msgstr ""
+"開発者である私たちは、ドキュメントやチュートリアルを「忘れて」しまいがちです。 link:http://infinispan.org/docs/6.0."
+"x/getting_started/getting_started."
+"html#_using_infinispan_as_an_embedded_data_grid_in_java_se[クラスタ化されたキャッシュのチュートリアル] "
+"では、まさにこのようなことが起こりました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-clustered-cache-quickstart-updates.adoc:21
-msgid "Even though we kept updating the tutorial to use the latest configuration style, the core of the tutorial was still assuming that state transfer was disabled by default - something that we changed back in Infinispan 5.0.0.Final."
+#, fuzzy
+msgid ""
+"Even though we kept updating the tutorial to use the latest configuration "
+"style, the core of the tutorial was still assuming that state transfer was "
+"disabled by default - something that we changed back in Infinispan 5.0.0."
+"Final."
 msgstr ""
+"最新の設定スタイルを使用するためにチュートリアルを更新し続けたにもかかわらず、チュートリアルの核心部分は、デフォルトで状態遷移が無効になっていることを前提としていました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-clustered-cache-quickstart-updates.adoc:27
-msgid "This was causing a bit of confusion, so I'm happy to report that I've updated the tutorial and I've removed all traces of the ClusterValidation class. Now the tutorial allows you to start as many nodes as you want, and it also shows how a joining node receives data from the existing members during startup."
+#, fuzzy
+msgid ""
+"This was causing a bit of confusion, so I'm happy to report that I've "
+"updated the tutorial and I've removed all traces of the ClusterValidation "
+"class. Now the tutorial allows you to start as many nodes as you want, and "
+"it also shows how a joining node receives data from the existing members "
+"during startup."
 msgstr ""
+"これが少し混乱を招いていたので、チュートリアルを更新し、ClusterValidationクラスの痕跡をすべて削除したことを報告します。これでチュートリアルでは、好きなだけノードを起動できるようになりましたし、起動時に結合ノードが既存のメンバーからデータを受信する方法も示されています。"

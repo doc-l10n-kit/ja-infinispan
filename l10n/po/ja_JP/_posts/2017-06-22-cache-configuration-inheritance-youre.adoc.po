@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-06-22-cache-configuration-inheritance-youre.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-22-cache-configuration-inheritance-youre.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: 'Cache configuration inheritance: you''re no son of mine'\n"
@@ -32,54 +32,108 @@ msgid ""
 "date: '2017-06-22T04:58:00.000-07:00'\n"
 "author: ttarrant\n"
 "tags: [ \" configuration\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1238316106220715134\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/06/cache-configuration-inheritance-youre.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1238316106220715134\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/06/cache-configuration-"
+"inheritance-youre.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 'キャッシュ構成の継承: あなたは私の息子ではありません'\n"
+"permalink: /blog/:year/:month/:day/cache-configuration-inheritance-youre\n"
+"date: '2017-06-22T04:58:00.000-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \" configuration\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1238316106220715134\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/06/cache-configuration-"
+"inheritance-youre.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-22-cache-configuration-inheritance-youre.adoc:12
+#, fuzzy
 msgid "Once upon a time Infinispan cache configurations were all orphans."
-msgstr ""
+msgstr "昔々、インフィニスパンのキャッシュ設定は全て孤児だった。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-22-cache-configuration-inheritance-youre.adoc:18
-msgid "Actually, it wasn't as sad as that: they all shared a single parent - the default cache. While this gave caches a limited form of inheritance, it led to confusion as users weren't really aware of it and it was impossible to turn it off: the limited gene pool was propagating possibly unwanted traits to all of its children."
+#, fuzzy
+msgid ""
+"Actually, it wasn't as sad as that: they all shared a single parent - the "
+"default cache. While this gave caches a limited form of inheritance, it led "
+"to confusion as users weren't really aware of it and it was impossible to "
+"turn it off: the limited gene pool was propagating possibly unwanted traits "
+"to all of its children."
 msgstr ""
+"実際には、それほど悲しいことではありませんでした: "
+"これらはすべてデフォルトキャッシュという単一の親を共有していました。これによりキャッシュは限られた形で継承されるようになりましたが、ユーザーはそれに気付いておらず、これをオフにすることは不可能だったため、混乱を招きました。"
 
 #. type: Title ====
 #: upstream/_posts/2017-06-22-cache-configuration-inheritance-youre.adoc:20
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Templates and real configuration inheritance"
-msgstr ""
+msgstr "テンプレートと実設定の継承"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-22-cache-configuration-inheritance-youre.adoc:25
-msgid "Infinispan 7.2 finally introduced proper configuration templates and inheritance. But there was a catch. Backwards compatibility dictated that the \"default mother of all caches\" behaviour survived."
+#, fuzzy
+msgid ""
+"Infinispan 7.2 finally introduced proper configuration templates and "
+"inheritance. But there was a catch. Backwards compatibility dictated that "
+"the \"default mother of all caches\" behaviour survived."
 msgstr ""
+"Infinispan 7."
+"2では、ようやく適切な設定テンプレートと継承が導入されました。しかし、キャッチがありました。下位互換性のため、\"すべてのキャッシュのデフォルトマザー\"の動作が生き残っていました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-22-cache-configuration-inheritance-youre.adoc:35
-msgid "In the above example, the default cache is a replicated cache with a file store. The distributed cache inherits the _\"transactional\"_ configuration. However, because of default inheritance present up to Infinispan 8.2, the distributed-cache also ended up having a file store.  Confusing or what !?! The best workaround was to never give it a specific configuration, let Infinispan use its internal defaults and essentially avoid it. Just like the black sheep in the family."
+#, fuzzy
+msgid ""
+"In the above example, the default cache is a replicated cache with a file "
+"store. The distributed cache inherits the _\"transactional\"_ configuration. "
+"However, because of default inheritance present up to Infinispan 8.2, the "
+"distributed-cache also ended up having a file store.  Confusing or what !?! "
+"The best workaround was to never give it a specific configuration, let "
+"Infinispan use its internal defaults and essentially avoid it. Just like the "
+"black sheep in the family."
 msgstr ""
+"上記の例では、デフォルトのキャッシュはファイルストアを持つレプリケートキャッシュです。分散キャッシュは _「トランザクション」_ "
+"構成を継承しています。しかし、Infinispan 8."
+"2までのデフォルトの継承のため、分散キャッシュもファイルストアを持つことになりました。混乱させてしまったのでしょうか？最良の回避策は、特定の設定を与えず、Infinispanの内部デフォルトを使用させ、本質的にそれを避けることでした。家族の中の黒い羊のように。"
 
 #. type: Title ====
 #: upstream/_posts/2017-06-22-cache-configuration-inheritance-youre.adoc:37
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Bye bye default cache "
-msgstr ""
+msgstr "さようならデフォルトキャッシュ"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-22-cache-configuration-inheritance-youre.adoc:44
-msgid "With Infinispan 9.0 we decided it was finally time to cut the umbilical cord between the default cache and all the other caches: if you declare one, it will never be used as default inheritance for every other cache.  In the above example, the distributed cache won't have a file store any more."
+#, fuzzy
+msgid ""
+"With Infinispan 9.0 we decided it was finally time to cut the umbilical cord "
+"between the default cache and all the other caches: if you declare one, it "
+"will never be used as default inheritance for every other cache.  In the "
+"above example, the distributed cache won't have a file store any more."
 msgstr ""
+"Infinispan 9."
+"0では、デフォルトキャッシュと他のすべてのキャッシュとの間の臍帯を断ち切ることにしました。上の例では、分散キャッシュはファイルストアを持たなくなります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-22-cache-configuration-inheritance-youre.adoc:47
-msgid "We've gone even further: unless you declare a default cache, we will not even set one up for you, not even one with default settings!"
-msgstr ""
+#, fuzzy
+msgid ""
+"We've gone even further: unless you declare a default cache, we will not "
+"even set one up for you, not even one with default settings!"
+msgstr "デフォルトのキャッシュを宣言しない限り、私たちはあなたのためにキャッシュを設定することはありません。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-22-cache-configuration-inheritance-youre.adoc:51
-msgid "Aleksandr Sergeevich Serebrovskii, the Russian geneticist  who first formulated the concept of the gene pool and the diversity benefits it brings, would be proud of us."
+#, fuzzy
+msgid ""
+"Aleksandr Sergeevich Serebrovskii, the Russian geneticist  who first "
+"formulated the concept of the gene pool and the diversity benefits it "
+"brings, would be proud of us."
 msgstr ""
+"遺伝子プールとそれがもたらす多様性の利点の概念を最初に策定したロシアの遺伝学者、アレキサンドロ・セルゲヴィチ・セレブロフスキーは、私たちを誇りに思うでしょう。"

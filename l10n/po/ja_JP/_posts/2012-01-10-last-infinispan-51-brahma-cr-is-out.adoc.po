@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-01-10-last-infinispan-51-brahma-cr-is-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-10-last-infinispan-51-brahma-cr-is-out.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Last Infinispan 5.1 'Brahma' CR is out!\n"
@@ -32,22 +32,50 @@ msgid ""
 "date: '2012-01-10T00:57:00.000-08:00'\n"
 "author: galder\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8134173116499171982\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/01/last-infinispan-51-brahma-cr-is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8134173116499171982\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/01/last-infinispan-51-"
+"brahma-cr-is-out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: ラストインフィニスパン5.1「梵天」のCRが出た!\n"
+"permalink: /blog/:year/:month/:day/last-infinispan-51-brahma-cr-is-out\n"
+"date: '2012-01-10T00:57:00.000-08:00'\n"
+"author: galder\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8134173116499171982\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/01/last-infinispan-51-"
+"brahma-cr-is-out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-10-last-infinispan-51-brahma-cr-is-out.adoc:12
+#, fuzzy
 msgid "First of all, happy new year to all the Infinispan community!"
-msgstr ""
+msgstr "まず最初に、Infinispanコミュニティの皆さん、あけましておめでとうございます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-10-last-infinispan-51-brahma-cr-is-out.adoc:21
-msgid "The final CR of the Infinispan 5.1 'Brahma' series, called 5.1.0.CR3 is http://www.jboss.org/infinispan/downloads[out] with another round of http://goo.gl/lMyin[fixes]. This will be the last of the candidate releases and we expect to go final with the release very shortly, so your help now is crucial. If you're using the last of our stable releases, 5.0.1.FINAL, please upgrade to 5.1.0.CR3 and http://community.jboss.org/en/infinispan?view=discussions[let us know] if you encounter any issues."
+#, fuzzy
+msgid ""
+"The final CR of the Infinispan 5.1 'Brahma' series, called 5.1.0.CR3 is http:"
+"//www.jboss.org/infinispan/downloads[out] with another round of http://goo."
+"gl/lMyin[fixes]. This will be the last of the candidate releases and we "
+"expect to go final with the release very shortly, so your help now is "
+"crucial. If you're using the last of our stable releases, 5.0.1.FINAL, "
+"please upgrade to 5.1.0.CR3 and http://community.jboss.org/en/"
+"infinispan?view=discussions[let us know] if you encounter any issues."
 msgstr ""
+"Infinispan 5.1 'Brahma' シリーズの最後の CR、5.1.0.CR3 は、別のラウンドの link:http://goo.gl/"
+"lMyin[修正] を含んでい link:http://www.jboss.org/infinispan/downloads[ます] "
+"。これが最後の候補リリースとなりますが、まもなく最終リリースを迎える予定です。安定版の最後のリリースである 5.0.1.FINAL をお使いの方は、5."
+"1.0.0.CR3 にアップグレードして link:http://community.jboss.org/en/infinispan?view="
+"discussions[ください] 。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-10-last-infinispan-51-brahma-cr-is-out.adoc:23
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

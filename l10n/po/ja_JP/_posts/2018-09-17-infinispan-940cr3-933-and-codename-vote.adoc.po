@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.4.0.CR3, 9.3.3 and codename vote\n"
@@ -32,72 +32,118 @@ msgid ""
 "date: '2018-09-17T00:15:00.000-07:00'\n"
 "author: ttarrant\n"
 "tags: [ \" release\", \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2978225566464217508\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/09/infinispan-940cr3-933-and-codename-vote.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2978225566464217508\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/09/infinispan-940cr3-933-"
+"and-codename-vote.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 9.4.0.CR3、9.3.3、コードネーム投票\n"
+"permalink: /blog/:year/:month/:day/infinispan-940cr3-933-and-codename-vote\n"
+"date: '2018-09-17T00:15:00.000-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \" release\", \"release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2978225566464217508\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/09/infinispan-940cr3-933-"
+"and-codename-vote.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:12
+#, fuzzy
 msgid "Hi Infinispan Community,"
-msgstr ""
+msgstr "こんにちは、Infinispanコミュニティです。"
 
 #. type: Plain text
 #: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:17
-msgid "our original plan was to release 9.4 Final today, but we have decided to delay the release by an extra sprint (3 weeks).  So today we are announcing 9.4.0.CR3 instead, which comes with the following fixes:"
+#, fuzzy
+msgid ""
+"our original plan was to release 9.4 Final today, but we have decided to "
+"delay the release by an extra sprint (3 weeks).  So today we are announcing "
+"9.4.0.CR3 instead, which comes with the following fixes:"
 msgstr ""
+"当初の計画では 9.4 Final を今日リリースする予定でしたが、追加スプリント (3週間) でリリースを遅らせることにしました。そこで今日は 9.4."
+"0.CR3 を発表します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:20
+#, fuzzy
 msgid "Segmented off-heap data container"
-msgstr ""
+msgstr "セグメント化されたオフヒープデータコンテナ"
 
 #. type: Plain text
 #: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:21
+#, fuzzy
 msgid "Performance improvements for Near Caches"
-msgstr ""
+msgstr "ニアキャッシュのパフォーマンス向上"
 
 #. type: Plain text
 #: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:22
+#, fuzzy
 msgid "Hot Rod client-side statistics"
-msgstr ""
+msgstr "ホットロッドのクライアント側の統計"
 
 #. type: Plain text
 #: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:24
-msgid "Removal of the old compatibility mode in favor of the new transcoding capabilities is now complete"
-msgstr ""
+#, fuzzy
+msgid ""
+"Removal of the old compatibility mode in favor of the new transcoding "
+"capabilities is now complete"
+msgstr "新しいトランスコーディング機能を採用した旧互換モードの削除が完了しました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:25
+#, fuzzy
 msgid "Server rebased on top of WildFly 14"
-msgstr ""
+msgstr "WildFly 14 の上にリベースされたサーバー"
 
 #. type: Plain text
 #: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:26
+#, fuzzy
 msgid "Lots of code cleanups, especially around query"
-msgstr ""
+msgstr "多くのコードのクリーンアップ、特にクエリについて"
 
 #. type: Plain text
 #: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:27
+#, fuzzy
 msgid "Bug fixes"
-msgstr ""
+msgstr "バグ修正"
 
 #. type: Plain text
 #: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:30
-msgid "For those of you on our stable branch, we also released a 9.3.3 with some bug fixes."
-msgstr ""
+#, fuzzy
+msgid ""
+"For those of you on our stable branch, we also released a 9.3.3 with some "
+"bug fixes."
+msgstr "安定版ブランチにいる人のために、いくつかのバグ修正を加えた9.3.3もリリースしました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:36
-msgid "Please http://infinispan.org/download/[download], https://issues.jboss.org/projects/ISPN[report bugs], https://infinispan.zulipchat.com/[chat with us], ask questions on the https://developer.jboss.org/en/infinispan/content[forum] or on https://stackoverflow.com/questions/tagged/?tagnames=infinispan&sort=newest[StackOverflow]."
+#, fuzzy
+msgid ""
+"Please http://infinispan.org/download/[download], https://issues.jboss.org/"
+"projects/ISPN[report bugs], https://infinispan.zulipchat.com/[chat with us], "
+"ask questions on the https://developer.jboss.org/en/infinispan/"
+"content[forum] or on https://stackoverflow.com/questions/tagged/?tagnames="
+"infinispan&sort=newest[StackOverflow]."
 msgstr ""
+"link:http://infinispan.org/download/[ダウンロード] 、 link:https://issues.jboss.org/"
+"projects/ISPN[バグ報告] 、 link:https://infinispan.zulipchat.com/[チャット] 、 link:"
+"https://developer.jboss.org/en/infinispan/content[フォーラム] 、 link:https://"
+"stackoverflow.com/questions/tagged/?tagnames=infinispan&sort="
+"newest[StackOverflow] での質問などをお願いします。"
 
 #. type: Plain text
 #: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:39
-msgid "As this release is yet unnamed, please make sure you vote for the name:"
-msgstr ""
+#, fuzzy
+msgid ""
+"As this release is yet unnamed, please make sure you vote for the name:"
+msgstr "このリリースはまだ名前が出ていないので、必ず投票してください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-09-17-infinispan-940cr3-933-and-codename-vote.adoc:41
+#, fuzzy
 msgid "Loading..."
-msgstr ""
+msgstr "読み込み中..."

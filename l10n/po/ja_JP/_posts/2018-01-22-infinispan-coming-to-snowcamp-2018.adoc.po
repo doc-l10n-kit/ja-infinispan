@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-01-22-infinispan-coming-to-snowcamp-2018.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-22-infinispan-coming-to-snowcamp-2018.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan coming to Snowcamp 2018\n"
@@ -32,27 +32,70 @@ msgid ""
 "date: '2018-01-22T06:15:00.000-08:00'\n"
 "author: karesti\n"
 "tags: [ \" conference\", \"snowcamp\", \"clustered locks\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6482689838138072736\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/01/infinispan-coming-to-snowcamp-2018.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6482689838138072736\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/01/infinispan-coming-to-"
+"snowcamp-2018.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: インフィニスパンがスノーキャンプ2018にやってくる\n"
+"permalink: /blog/:year/:month/:day/infinispan-coming-to-snowcamp-2018\n"
+"date: '2018-01-22T06:15:00.000-08:00'\n"
+"author: karesti\n"
+"tags: [ \" conference\", \"snowcamp\", \"clustered locks\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6482689838138072736\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/01/infinispan-coming-to-"
+"snowcamp-2018.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-22-infinispan-coming-to-snowcamp-2018.adoc:24
-msgid "This week, the 25th of January, I will be presenting a talk about http://infinispan.org/docs/dev/user_guide/user_guide.html#clustered_lock[Clustered Locks] at the http://snowcamp.io/en/[Snowcamp 2018 conference] in Grenoble (France). During the live-coding talk, I will share the design and code I've been working on to create this first version of the clustered locks. These locks will be used by the http://vertx.io/docs/vertx-infinispan/java/[Vert.x Cluster Manager], but they can be useful to any Infinispan user since version 9.2 (final release coming very soon!!). If you are planning to use this API, we would love to hear from you to give us some feedback and keep us posted on your use case!"
+#, fuzzy
+msgid ""
+"This week, the 25th of January, I will be presenting a talk about http://"
+"infinispan.org/docs/dev/user_guide/user_guide.html#clustered_lock[Clustered "
+"Locks] at the http://snowcamp.io/en/[Snowcamp 2018 conference] in Grenoble "
+"(France). During the live-coding talk, I will share the design and code I've "
+"been working on to create this first version of the clustered locks. These "
+"locks will be used by the http://vertx.io/docs/vertx-infinispan/java/[Vert.x "
+"Cluster Manager], but they can be useful to any Infinispan user since "
+"version 9.2 (final release coming very soon!!). If you are planning to use "
+"this API, we would love to hear from you to give us some feedback and keep "
+"us posted on your use case!"
 msgstr ""
+"今週1月25日、グルノーブル（フランス） link:http://snowcamp.io/en/[で開催されるカンファレンス] 「 link:http:/"
+"/snowcamp.io/en/[Snowcamp 2018] 」 link:http://infinispan.org/docs/dev/"
+"user_guide/user_guide.html#clustered_lock[で、クラスター化された] "
+"ロックについてのトークを行います。ライブコーディングのトークの間、私はクラスター化されたロックのこの最初のバージョンを作成するために取り組んできた設計とコードを共有します。これらのロックは "
+"link:http://vertx.io/docs/vertx-infinispan/java/[Vert.x Cluster Manager] "
+"で使用されますが、バージョン9."
+"2以降のInfinispanユーザーであれば誰でも役に立つでしょう（最終リリースはもうすぐです！）。このAPIの使用を計画しているのであれば、ぜひフィードバックをお願いします。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-22-infinispan-coming-to-snowcamp-2018.adoc:30
-msgid "If you are attending the conference, fell free to reach me to discuss about Infinispan+Vert.x, locks, http://infinispan.org/docs/dev/user_guide/user_guide.html#multimap_cache[Multimap], http://blog.infinispan.org/2017/12/first-steps-with-vertx-and-infinispan-rest-api.html[cute names] or any other topic that you care about!"
+#, fuzzy
+msgid ""
+"If you are attending the conference, fell free to reach me to discuss about "
+"Infinispan+Vert.x, locks, http://infinispan.org/docs/dev/user_guide/"
+"user_guide.html#multimap_cache[Multimap], http://blog.infinispan.org/2017/12/"
+"first-steps-with-vertx-and-infinispan-rest-api.html[cute names] or any other "
+"topic that you care about!"
 msgstr ""
+"もしあなたが会議に参加しているならば、Infinispan+Vert.x、ロック、 link:http://infinispan.org/docs/"
+"dev/user_guide/user_guide.html#multimap_cache[Multimap] 、 link:http://blog."
+"infinispan.org/2017/12/first-steps-with-vertx-and-infinispan-rest-api."
+"html[かわいい名前] 、またはあなたが気になる他のトピックについて議論するために私に連絡してください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-22-infinispan-coming-to-snowcamp-2018.adoc:32
+#, fuzzy
 msgid "See you!"
-msgstr ""
+msgstr "またね！"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-22-infinispan-coming-to-snowcamp-2018.adoc:34
+#, fuzzy
 msgid "Katia"
-msgstr ""
+msgstr "カティア"

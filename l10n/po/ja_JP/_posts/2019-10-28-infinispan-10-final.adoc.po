@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:8
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 10.0.0.Final\n"
@@ -34,561 +34,893 @@ msgid ""
 "tags: [ \"final\", \"release\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 10.0.0.Final\n"
+"permalink: /blog/:year/:month/:day/infinispan-10-final\n"
+"date: '2019-10-28T12:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"final\", \"release\" ]\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Infinispan 10.0 “Chupacabra”"
-msgstr ""
+msgstr "インフィニスパン10.0 \"チュパカブラ\""
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:13
+#, fuzzy
 msgid "Dear Infinispan community,"
-msgstr ""
+msgstr "インフィニスパンのコミュニティへ"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:16
-msgid "We are very pleased to announce the release of Infinispan 10.0 codenamed “Chupacabra”! We have been busy making many changes over the last months."
-msgstr ""
+#, fuzzy
+msgid ""
+"We are very pleased to announce the release of Infinispan 10.0 codenamed "
+"“Chupacabra”! We have been busy making many changes over the last months."
+msgstr "Infinispan 10.0のコードネームは「チュパカブラ」です。この数ヶ月間、私たちは多くの変更を行ってきました。"
 
 #. type: Title ==
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:17
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Server"
-msgstr ""
+msgstr "サーバー"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:20
-msgid "Infinispan 10 features a brand new server, replacing the WildFly-based server we’ve had since 5.3 with a smaller, leaner implementation. Here are the highlights:"
+#, fuzzy
+msgid ""
+"Infinispan 10 features a brand new server, replacing the WildFly-based "
+"server we’ve had since 5.3 with a smaller, leaner implementation. Here are "
+"the highlights:"
 msgstr ""
+"Infinispan 10 は、5.3 以降の WildFly "
+"ベースのサーバをより小型で無駄のない実装に置き換えた、まったく新しいサーバを特徴としています。ここにハイライトがあります。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:22
-msgid "Reduced disk (50MB vs 170MB) and memory footprint (18MB vs 40MB at boot)"
-msgstr ""
+#, fuzzy
+msgid ""
+"Reduced disk (50MB vs 170MB) and memory footprint (18MB vs 40MB at boot)"
+msgstr "ディスク（50MB対170MB）とメモリフットプリント（起動時18MB対40MB）の削減"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:23
-msgid "Simpler to configure, since it shares the configuration schema with embedded with server-specific extensions"
-msgstr ""
+#, fuzzy
+msgid ""
+"Simpler to configure, since it shares the configuration schema with embedded "
+"with server-specific extensions"
+msgstr "サーバ固有の拡張機能を備えた埋め込み型と設定スキーマを共有するため、設定がより簡単になります。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:24
-msgid "Single-port design: the Hot Rod, REST and management endpoint are now served through a single port (11222) with automatic protocol detection between HTTP/1.1, HTTP/2 and Hot Rod. The memcached endpoint is handled separately since we don't implement the binary protocol yet."
+#, fuzzy
+msgid ""
+"Single-port design: the Hot Rod, REST and management endpoint are now served "
+"through a single port (11222) with automatic protocol detection between HTTP/"
+"1.1, HTTP/2 and Hot Rod. The memcached endpoint is handled separately since "
+"we don't implement the binary protocol yet."
 msgstr ""
+"シングルポート設計: Hot Rod、REST、管理エンドポイントは、HTTP/1.1、HTTP/2、Hot "
+"Rod間のプロトコルを自動検出して、単一のポート(11222)を介して提供されるようになりました。バイナリプロトコルはまだ実装していないので、memcached "
+"エンドポイントは個別に処理されます。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:25
+#, fuzzy
 msgid "New CLI with data manipulation operations"
-msgstr ""
+msgstr "データ操作ができる新しいCLI"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:26
+#, fuzzy
 msgid "New REST-based API for administration"
-msgstr ""
+msgstr "管理用の新しいRESTベースのAPI"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:27
+#, fuzzy
 msgid "Security implemented using WildFly Elytron:"
-msgstr ""
+msgstr "WildFlytronを使用して実装されたセキュリティ。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:28
-msgid "Hot Rod authentication support for PLAIN, DIGEST-MD5, SCRAM, EXTERNAL, OAUTHBEARER"
-msgstr ""
+#, fuzzy
+msgid ""
+"Hot Rod authentication support for PLAIN, DIGEST-MD5, SCRAM, EXTERNAL, "
+"OAUTHBEARER"
+msgstr "PLAIN、DIGEST-MD5、SCRAM、EXTERNAL、OAUTHBEARERのホットロッド認証に対応しています。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:29
+#, fuzzy
 msgid "HTTP authentication support for BASIC, DIGEST, CLIENT_CERT and TOKEN"
-msgstr ""
+msgstr "BASIC、DIGEST、CLIENT_CERT、TOKEN の HTTP 認証をサポートします。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:30
+#, fuzzy
 msgid "Properties, Certificate Store and LDAP realms"
-msgstr ""
+msgstr "プロパティ、証明書ストア、LDAP領域"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:31
+#, fuzzy
 msgid "Integration with KeyCloak"
-msgstr ""
+msgstr "KeyCloakとの統合"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:32
-msgid "Caches/counters are created and managed dynamically through Hot Rod / REST"
-msgstr ""
+#, fuzzy
+msgid ""
+"Caches/counters are created and managed dynamically through Hot Rod / REST"
+msgstr "キャッシュ/カウンターはHot Rod / RESTを介して動的に作成・管理されます。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:35
-msgid "Because of the amount of restructuring, the web-based Console is not yet available in this release.  We are working on it and it will be included in 10.1."
-msgstr ""
+#, fuzzy
+msgid ""
+"Because of the amount of restructuring, the web-based Console is not yet "
+"available in this release.  We are working on it and it will be included in "
+"10.1."
+msgstr "再構築の量が多いため、今回のリリースではWebベースのConsoleはまだ利用できません。現在作業中で、10.1に含まれる予定です。"
 
 #. type: Title ==
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:36
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "REST Endpoint"
-msgstr ""
+msgstr "RESTエンドポイント"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:39
-msgid "A new API (v2) was introduced and users are encouraged to migrate their applications from the old API."
-msgstr ""
+#, fuzzy
+msgid ""
+"A new API (v2) was introduced and users are encouraged to migrate their "
+"applications from the old API."
+msgstr "新しいAPI(v2)が導入され、ユーザーは古いAPIからアプリケーションを移行することが推奨されています。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:41
-msgid "The v2 API offers a completely redesigned endpoint, including dozens of new operations. Besides allowing to manage caches, it also covers cache containers, counters, cross-site replication, servers and clusters."
+#, fuzzy
+msgid ""
+"The v2 API offers a completely redesigned endpoint, including dozens of new "
+"operations. Besides allowing to manage caches, it also covers cache "
+"containers, counters, cross-site replication, servers and clusters."
 msgstr ""
+"v2 "
+"APIは、数十の新しい操作を含む、完全に再設計されたエンドポイントを提供します。キャッシュの管理に加えて、キャッシュコンテナ、カウンタ、クロスサイトレプリケーション、サーバ、クラスタもカバーしています。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:44
-msgid "Apart from the new API, the REST server is now fully non-blocking and also has better performance than 9.4.x.  It also fully supports authorization."
-msgstr ""
+#, fuzzy
+msgid ""
+"Apart from the new API, the REST server is now fully non-blocking and also "
+"has better performance than 9.4.x.  It also fully supports authorization."
+msgstr "新しい API とは別に、REST サーバは完全にノンブロッキングになり、9.4.x よりもパフォーマンスが向上しました。"
 
 #. type: Title ==
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:45
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Marshalling"
-msgstr ""
+msgstr "マーシャリング"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:48
-msgid "The internal marshalling capabilities of Infinispan have undergone a significant refactoring in 10.0. The marshalling of internal Infinispan objects and user objects are now truly isolated. This means that it's now possible to configure Marshaller implementations in embedded mode or on the server, without having to handle the marshalling of Infinispan internal classes. Consequently, it's possible to easily change the marshaller implementation user for user types, in a similar manner to how users of the HotRod client are accustomed."
+#, fuzzy
+msgid ""
+"The internal marshalling capabilities of Infinispan have undergone a "
+"significant refactoring in 10.0. The marshalling of internal Infinispan "
+"objects and user objects are now truly isolated. This means that it's now "
+"possible to configure Marshaller implementations in embedded mode or on the "
+"server, without having to handle the marshalling of Infinispan internal "
+"classes. Consequently, it's possible to easily change the marshaller "
+"implementation user for user types, in a similar manner to how users of the "
+"HotRod client are accustomed."
 msgstr ""
+"Infinispan の内部マーシャリング機能は、10.0 で大幅にリファクタリングされました。内部の Infinispan "
+"オブジェクトとユーザーオブジェクトのマーシャリングは、現在では完全に分離されています。これは、Infinispan "
+"の内部クラスのマーシャリングを処理しなくても、組み込みモードまたはサーバー上で Marshaller "
+"の実装を設定できるようになったことを意味します。その結果、HotRod "
+"クライアントのユーザーが慣れている方法と同様の方法で、ユーザータイプのマーシャルラー実装のユーザーを簡単に変更することが可能になりました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:50
-msgid "As a consequence of the above changes, the default marshaller used for marshalling user types is no longer based upon JBoss Marshalling. Instead we now utilise the ProtoStream library to store user types in the language agnostic Protocol Buffers format. The ProtoStream library provides several advantages over jboss-marshalling, most notably it does not make use of reflection and so is more suitable for use in AOT environments such as Quarkus."
+#, fuzzy
+msgid ""
+"As a consequence of the above changes, the default marshaller used for "
+"marshalling user types is no longer based upon JBoss Marshalling. Instead we "
+"now utilise the ProtoStream library to store user types in the language "
+"agnostic Protocol Buffers format. The ProtoStream library provides several "
+"advantages over jboss-marshalling, most notably it does not make use of "
+"reflection and so is more suitable for use in AOT environments such as "
+"Quarkus."
 msgstr ""
+"上記の変更の結果、ユーザータイプのマーシャルに使用されるデフォルトのマーシャルラーは、JBoss Marshalling "
+"をベースにしていません。その代わりに、ProtoStream ライブラリを利用して、言語にとらわれない Protocol Buffers "
+"形式でユーザータイプを保存するようになりました。ProtoStream ライブラリは jboss-Marshalling "
+"よりもいくつかの利点を提供します。最も重要なことは、リフレクションを利用しないので、Quarkus のような AOT 環境での使用に適していることです。"
 
 #. type: Title ==
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:51
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Persistence"
-msgstr ""
+msgstr "永続性"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:55
-msgid "The persistence SPI has had some much needed TLC, with several deprecations and additions.  The aim of this work was to ensure that internal Infinispan classes were no longer leaking into the SPI, in order to ensure that custom store implementations only have to be concerned with their data, not internal Infinispan objects."
+#, fuzzy
+msgid ""
+"The persistence SPI has had some much needed TLC, with several deprecations "
+"and additions.  The aim of this work was to ensure that internal Infinispan "
+"classes were no longer leaking into the SPI, in order to ensure that custom "
+"store implementations only have to be concerned with their data, not "
+"internal Infinispan objects."
 msgstr ""
+"永続性SPIは、いくつかの非推奨事項や追加事項があり、非常に必要とされるTLCが行われました。この作業の目的は、カスタムストアの実装が内部のInfinispanオブジェクトではなく、そのデータだけを扱うようにするために、内部のInfinispanクラスがSPIに漏れないようにすることでした。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:60
-msgid "Stores by default are now segmented when the segmented attribute is not set.  A segmented store allows for greater iteration performance and less memory usage.  This is useful for things such as state transfer and other operations that require an entire view of the cache (iteration, size, mass indexer distributed streams etc).  All of our provided stores now provided being segmented; these include file store, soft index file store, rocks db, jdbc and remote stores."
+#, fuzzy
+msgid ""
+"Stores by default are now segmented when the segmented attribute is not set. "
+" A segmented store allows for greater iteration performance and less memory "
+"usage.  This is useful for things such as state transfer and other "
+"operations that require an entire view of the cache (iteration, size, mass "
+"indexer distributed streams etc).  All of our provided stores now provided "
+"being segmented; these include file store, soft index file store, rocks db, "
+"jdbc and remote stores."
 msgstr ""
+"segmented属性が設定されていない場合、デフォルトではストアがセグメント化されるようになりました。セグメント化されたストアは、より大きな反復パフォーマンスとより少ないメモリ使用量を可能にします。これは、ステート転送やキャッシュの全体ビューを必要とする他の操作（反復、サイズ、マスインデクサ分散ストリームなど）のような場合に便利です。現在、提供されているすべてのストアはセグメント化されています; "
+"これらには、ファイルストア、ソフトインデックスファイルストア、ロックスdb、jdbc、リモートストアが含まれます。"
 
 #. type: Title ==
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:61
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Container Image"
-msgstr ""
+msgstr "コンテナイメージ"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:64
-msgid "To accommodate our brand new server, Infinispan 10.0 also introduces a completely new container image which is much smaller than the old one (366MB vs 684MB) and supports the following features:"
+#, fuzzy
+msgid ""
+"To accommodate our brand new server, Infinispan 10.0 also introduces a "
+"completely new container image which is much smaller than the old one (366MB "
+"vs 684MB) and supports the following features:"
 msgstr ""
+"新しいサーバーに対応するために、Infinispan 10."
+"0では、従来のもの（366MB対684MB）よりもはるかに小さい全く新しいコンテナイメージを導入し、以下の機能をサポートしています。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:66
+#, fuzzy
 msgid "Red Hat's Minimal Universal Base Image based"
-msgstr ""
+msgstr "Red Hat のミニマルユニバーサルベースのイメージをベースにした"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:67
+#, fuzzy
 msgid "Java 11"
-msgstr ""
+msgstr "ジャバ１１"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:68
+#, fuzzy
 msgid "Simple yaml configuration"
-msgstr ""
+msgstr "簡単なyamlの設定"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:69
+#, fuzzy
 msgid "Authentication (Enabled by default)"
-msgstr ""
+msgstr "認証 (デフォルトでは有効)"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:70
+#, fuzzy
 msgid "Encryption"
-msgstr ""
+msgstr "暗号化"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:71
+#, fuzzy
 msgid "Logging"
-msgstr ""
+msgstr "ロギング"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:72
+#, fuzzy
 msgid "XSite support"
-msgstr ""
+msgstr "XSite サポート"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:74
+#, fuzzy
 msgid "The new image can be pulled from any of the following repositories:"
-msgstr ""
+msgstr "新しい画像は、以下のいずれかのリポジトリから取得することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:76
+#, fuzzy
 msgid "https://quay.io/infinispan/server"
-msgstr ""
+msgstr "https://quay.io/infinispan/server"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:77
+#, fuzzy
 msgid "https://hub.docker.com/r/infinispan/server"
-msgstr ""
+msgstr "https://hub.docker.com/r/infinispan/server"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:78
+#, fuzzy
 msgid "https://hub.docker.com/r/jboss/infinispan-server/ (deprecated)"
-msgstr ""
+msgstr "https://hub.docker.com/r/jboss/infinispan-server/ (非推奨)"
 
 #. type: Title ==
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:80
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Metrics and Logging"
-msgstr ""
+msgstr "メトリクスとロギング"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:83
-msgid "Infinispan has adopted the MicroProfile Metrics ver. 2.0.2 specification and uses the SmallRye Metrics implementation. MicroProfile Metrics allows applications to gather various metrics and statistics that provide insights into what is happening inside an Infinispan cluster."
+#, fuzzy
+msgid ""
+"Infinispan has adopted the MicroProfile Metrics ver. 2.0.2 specification and "
+"uses the SmallRye Metrics implementation. MicroProfile Metrics allows "
+"applications to gather various metrics and statistics that provide insights "
+"into what is happening inside an Infinispan cluster."
 msgstr ""
+"InfinispanはMicroProfile Metrics ver.2.0.2仕様を採用し、SmallRye "
+"Metricsの実装を使用しています。MicroProfile "
+"Metricsを使用すると、アプリケーションは、Infinispanクラスタ内で何が起こっているかを洞察するための様々なメトリクスや統計情報を収集することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:85
-msgid "The current offering includes both cache container and cache level Gauge type metrics. Histograms and Timers will arrive in the next release of the 10.x stream."
+#, fuzzy
+msgid ""
+"The current offering includes both cache container and cache level Gauge "
+"type metrics. Histograms and Timers will arrive in the next release of the "
+"10.x stream."
 msgstr ""
+"現在提供されているものには、キャッシュコンテナとキャッシュレベルゲージタイプのメトリクスがあります。ヒストグラムとタイマーは、10.x "
+"ストリームの次のリリースで提供される予定です。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:87
-msgid "The metrics can be read remotely at the well-known /metrics REST endpoint and use JSON format or optionally the OpenMetrics format, so that they can be processed, stored, visualized and analyzed by compatible tools such as Prometheus."
+#, fuzzy
+msgid ""
+"The metrics can be read remotely at the well-known /metrics REST endpoint "
+"and use JSON format or optionally the OpenMetrics format, so that they can "
+"be processed, stored, visualized and analyzed by compatible tools such as "
+"Prometheus."
 msgstr ""
+"メトリクスは、よく知られた /metrics REST エンドポイントでリモートで読み取ることができ、JSON 形式またはオプションで "
+"OpenMetrics 形式を使用することができるので、Prometheus のような互換性のあるツールで処理、保存、可視化、分析することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:89
-msgid "But rest assured, the existing JMX support for metrics has not been superseded by REST. JMX is still alive and kicking and we plan to continue developing it and have it available on all runtimes that support it (Quarkus being the notable exception)."
+#, fuzzy
+msgid ""
+"But rest assured, the existing JMX support for metrics has not been "
+"superseded by REST. JMX is still alive and kicking and we plan to continue "
+"developing it and have it available on all runtimes that support it (Quarkus "
+"being the notable exception)."
 msgstr ""
+"しかし、既存のJMXによるメトリクスのサポートはRESTに取って代わられていませんのでご安心ください。JMX "
+"はまだ生きており、私たちはそれを開発し続け、それをサポートするすべてのランタイムで利用できるようにすることを計画しています（Quarkus "
+"は顕著な例外です）。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:92
-msgid "Logging categories for the major subsystems have been introduced (CLUSTER, CONTAINER, PERSISTENCE, SERVER, etc) so that it easier to understand what they refer to.  The server also comes with a JSON logger for easy integration with tools such as Fluentd or the ELK stack."
+#, fuzzy
+msgid ""
+"Logging categories for the major subsystems have been introduced (CLUSTER, "
+"CONTAINER, PERSISTENCE, SERVER, etc) so that it easier to understand what "
+"they refer to.  The server also comes with a JSON logger for easy "
+"integration with tools such as Fluentd or the ELK stack."
 msgstr ""
+"主要なサブシステムのロギングカテゴリ（CLUSTER、CONTAINER、PERSISTENCE、SERVERなど）が導入され、それらが何を参照しているのかを理解しやすくなりました。サーバには、FluentdやELKスタックなどのツールと簡単に統合できるJSONロガーも搭載されています。"
 
 #. type: Title ==
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:94
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Quarkus"
-msgstr ""
+msgstr "クォークス"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:98
-msgid "Infinispan is an official extension in Quarkus! If you wish to find out more about Quarkus you can find it at https://quarkus.io/."
+#, fuzzy
+msgid ""
+"Infinispan is an official extension in Quarkus! If you wish to find out more "
+"about Quarkus you can find it at https://quarkus.io/."
 msgstr ""
+"InfinispanはQuarkusの公式拡張機能です。Quarkusについて詳しく知りたい方は、 https://quarkus.io/ "
+"をご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:102
-msgid "We have a very featureful client extension allowing your Quarkus apps to connect to a remote server with lots of the features you are used to: querying, authentication, encryption, counter, dependency injection and others.  We recently added support for protostream based annotation marshalling.  If you are curious you can find the code at https://github.com/quarkusio/quarkus/tree/master/extensions/infinispan-client."
+#, fuzzy
+msgid ""
+"We have a very featureful client extension allowing your Quarkus apps to "
+"connect to a remote server with lots of the features you are used to: "
+"querying, authentication, encryption, counter, dependency injection and "
+"others.  We recently added support for protostream based annotation "
+"marshalling.  If you are curious you can find the code at https://github.com/"
+"quarkusio/quarkus/tree/master/extensions/infinispan-client."
 msgstr ""
+"Quarkusアプリが、クエリ、認証、暗号化、カウンター、依存性インジェクションなどの多くの機能を備えたリモートサーバーに接続できるようにする、非常に機能的なクライアント拡張機能を提供しています。最近では、プロトストリームベースのアノテーションマーシャリングのサポートが追加されました。興味があれば、 "
+"https://github.com/quarkusio/quarkus/tree/master/extensions/infinispan-"
+"client でコードを見つけることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:107
-msgid "The Infinispan embedded extension was also just added, but has limited functionality due to its infancy.  Although it will allow you to run an embedded clustered cache in a native executable.  If you are curious you can find the code at https://github.com/quarkusio/quarkus/tree/master/extensions/infinispan-embedded."
+#, fuzzy
+msgid ""
+"The Infinispan embedded extension was also just added, but has limited "
+"functionality due to its infancy.  Although it will allow you to run an "
+"embedded clustered cache in a native executable.  If you are curious you can "
+"find the code at https://github.com/quarkusio/quarkus/tree/master/extensions/"
+"infinispan-embedded."
 msgstr ""
+"Infinispanの組み込み拡張も追加されたばかりですが、未熟なため機能が限られています。しかし、ネイティブの実行ファイルに埋め込まれたクラスター化されたキャッシュを実行することができます。興味のある方は "
+"https://github.com/quarkusio/quarkus/tree/master/extensions/infinispan-"
+"embedded にコードがあります。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:110
-msgid "The Infinispan team has also started adding a standalone project to have a Quarkus based Infinispan Server using Infinispan 10 and newer.  This is still a work in progress, but the new repository can be found at https://github.com/infinispan/infinispan-quarkus-server."
+#, fuzzy
+msgid ""
+"The Infinispan team has also started adding a standalone project to have a "
+"Quarkus based Infinispan Server using Infinispan 10 and newer.  This is "
+"still a work in progress, but the new repository can be found at https://"
+"github.com/infinispan/infinispan-quarkus-server."
 msgstr ""
+"Infinispanチームはまた、Infinispan "
+"10以降を使用してQuarkusベースのInfinispanサーバーを持つためのスタンドアロンプロジェクトの追加を開始しました。これはまだ進行中の作業ですが、新しいリポジトリは "
+"https://github.com/infinispan/infinispan-quarkus-server で見つけることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:112
-msgid "Quarkus has a different release cycle than Infinispan, so watch out for more improvements over the following weeks !"
-msgstr ""
+#, fuzzy
+msgid ""
+"Quarkus has a different release cycle than Infinispan, so watch out for more "
+"improvements over the following weeks !"
+msgstr "QuarkusはInfinispanとは異なるリリースサイクルを持っています。"
 
 #. type: Title ==
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:114
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Cross-Site Replication"
-msgstr ""
+msgstr "クロスサイトレプリケーション"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:120
-msgid "Async mode cross-site replication received 3 major improvements: Concurrent requests (i.e. write on different keys for example) will be handled simultaneously instead of sequentially.  Asynchronous mode is now able to detect disconnections between sites and bring the site offline based on <take-offline> configuration (ISPN-10180)  Tracks and exposes some metrics for asynchronous requests (ISPN-9457)"
+#, fuzzy
+msgid ""
+"Async mode cross-site replication received 3 major improvements: Concurrent "
+"requests (i.e. write on different keys for example) will be handled "
+"simultaneously instead of sequentially.  Asynchronous mode is now able to "
+"detect disconnections between sites and bring the site offline based on "
+"<take-offline> configuration (ISPN-10180)  Tracks and exposes some metrics "
+"for asynchronous requests (ISPN-9457)"
 msgstr ""
+"非同期モードのクロスサイトレプリケーションが3つの大きな改善を受けました。並行リクエスト（例えば異なるキーへの書き込みなど）は、順次ではなく同時に処理されるようになりました。非同期モードはサイト間の切断を検出し、<take-"
+"offline>設定に基づいてサイトをオフラインにすることができるようになりました (ISPN-10180) "
+"非同期リクエストを追跡し、いくつかのメトリクスを公開します (ISPN-9457)"
 
 #. type: Title ==
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:122
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Internals"
-msgstr ""
+msgstr "内部"
 
 #. type: Title ===
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:124
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Dependency Injection"
-msgstr ""
+msgstr "依存性注入"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:126
-msgid "Infinispan's internal dependency-injection has been completely rewritten so that factories, components and dependencies are discovered and resolved at compile time instead of using runtime reflection. This, together with the marshalling changes and recent JGroups changes, paves the way for usage and native compilation with Quarkus."
+#, fuzzy
+msgid ""
+"Infinispan's internal dependency-injection has been completely rewritten so "
+"that factories, components and dependencies are discovered and resolved at "
+"compile time instead of using runtime reflection. This, together with the "
+"marshalling changes and recent JGroups changes, paves the way for usage and "
+"native compilation with Quarkus."
 msgstr ""
+"Infinispanの内部依存性注入機能が完全に書き直されたため、ランタイムリフレクションを使用するのではなく、コンパイル時にファクトリー、コンポーネント、依存性が検出され、解決されます。これは、マーシャリングの変更と最近のJGroupsの変更と合わせて、Quarkusでの使用とネイティブコンパイルへの道を開きます。"
 
 #. type: Title ===
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:127
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Non-blocking"
-msgstr ""
+msgstr "ノンブロッキング"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:130
-msgid "Several internal subsystems have been rewritten to be non-blocking, meaning that they will not hold-on to threads while waiting for I/O:"
+#, fuzzy
+msgid ""
+"Several internal subsystems have been rewritten to be non-blocking, meaning "
+"that they will not hold-on to threads while waiting for I/O:"
 msgstr ""
+"いくつかの内部サブシステムがノンブロッキングになるように書き換えられていますが、これは、I/Oを待っている間はスレッドを保持しないことを意味します。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:132
+#, fuzzy
 msgid "Non-blocking Hot Rod authentication (ISPN-9841)"
-msgstr ""
+msgstr "ノンブロッキングホットロッド認証（ISPN-9841"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:133
+#, fuzzy
 msgid "Non-blocking REST endpoint (ISPN-10210)"
-msgstr ""
+msgstr "ノンブロッキングRESTエンドポイント(ISPN-10210)"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:134
-msgid "Update internal remote listener code to support non blocking (ISPN-9716)"
-msgstr ""
+#, fuzzy
+msgid ""
+"Update internal remote listener code to support non blocking (ISPN-9716)"
+msgstr "非ブロッキングをサポートするための内部リモートリスナーコードの更新 (ISPN-9716)"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:135
+#, fuzzy
 msgid "Update internal embedded listeners to be non blocking (ISPN-9715)"
-msgstr ""
+msgstr "内部組み込みリスナーが非ブロッキングであるように更新 (ISPN-9715)"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:136
-msgid "Passivation throughput is increased as well as these operations are done asynchronously."
-msgstr ""
+#, fuzzy
+msgid ""
+"Passivation throughput is increased as well as these operations are done "
+"asynchronously."
+msgstr "これらの操作は非同期で行われるため、パッシベーションのスループットが向上します。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:137
-msgid "In addition cache stores have been made non blocking for the cases of loading an entry and storing into the data container as well write skew checks. With this we should be at a point where we can start consolidating thread pools, so keep a look-out in the upcoming releases."
+#, fuzzy
+msgid ""
+"In addition cache stores have been made non blocking for the cases of "
+"loading an entry and storing into the data container as well write skew "
+"checks. With this we should be at a point where we can start consolidating "
+"thread pools, so keep a look-out in the upcoming releases."
 msgstr ""
+"さらに、キャッシュストアは、エントリをロードしてデータコンテナに格納する場合や、書き込みスキューチェックのために、ノンブロッキングになりました。これにより、スレッドプールの統合を開始できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:138
-msgid "Distributed Streams utilizing a terminal operator that returns a single value use non blocking communication methods (ISPN-9813)"
-msgstr ""
+#, fuzzy
+msgid ""
+"Distributed Streams utilizing a terminal operator that returns a single "
+"value use non blocking communication methods (ISPN-9813)"
+msgstr "単一値を返す端末演算子を利用した分散ストリームは、非ブロッキング通信方式を利用する（ISPN-9813）。"
 
 #. type: Title ===
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:139
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Off Heap Storage Improvements"
-msgstr ""
+msgstr "オフヒープストレージの改善"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:142
-msgid "Off Heap has added a few improvements to increase performance and reduce memory usage."
-msgstr ""
+#, fuzzy
+msgid ""
+"Off Heap has added a few improvements to increase performance and reduce "
+"memory usage."
+msgstr "Off Heapでは、パフォーマンスを向上させ、メモリ使用量を削減するための改善がいくつか追加されました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:144
+#, fuzzy
 msgid "Iteration imrpovements (ISPN-10574)"
-msgstr ""
+msgstr "イテレーションの繰り返し (ISPN-10574)"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:145
+#, fuzzy
 msgid "Removes the need for the address count configuration option"
-msgstr ""
+msgstr "アドレスカウント設定オプションの必要性を削除します。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:146
+#, fuzzy
 msgid "Dynamically resize underlying bucket"
-msgstr ""
+msgstr "下にあるバケットのサイズを動的に変更"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:147
-msgid "Reorder bucket iteration to more CPU friendly, less lock acquisiations as well"
-msgstr ""
+#, fuzzy
+msgid ""
+"Reorder bucket iteration to more CPU friendly, less lock acquisiations as "
+"well"
+msgstr "バケットのイテレーションをよりCPUに優しいものに並び替え、ロックの取得も少なくしました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:148
+#, fuzzy
 msgid "StampedLock instead of ReadWriteLock (ISPN-10681)"
-msgstr ""
+msgstr "ReadWriteLock の代わりに StampedLock を使用 (ISPN-10681)"
 
 #. type: Title ===
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:149
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Expiration Improvements"
-msgstr ""
+msgstr "期限切れの改善"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:152
-msgid "Cluster Expiration has been improved to only expire entries on the primary node to reduce the amount of concurrent expirations from multiple nodes in the cluster.  Also the amount of concurrent expirations on a single node has been improved for better handling."
+#, fuzzy
+msgid ""
+"Cluster Expiration has been improved to only expire entries on the primary "
+"node to reduce the amount of concurrent expirations from multiple nodes in "
+"the cluster.  Also the amount of concurrent expirations on a single node has "
+"been improved for better handling."
 msgstr ""
+"クラスタの有効期限が改善され、クラスタ内の複数のノードからの同時有効期限切れの量を減らすために、プライマリノード上のエントリのみを有効期限切れにするようになりました。また、単一ノードでの同時有効期限切れの量が改善され、より良い処理が可能になりました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:156
-msgid "Additionally, expirations are not replicated cross site to reduce chattiness on the cross site link.  Also to note that lifespan works fine without this and max-idle expiration does not work properly with cross site.  So in this case the messages were providing no benefit."
+#, fuzzy
+msgid ""
+"Additionally, expirations are not replicated cross site to reduce chattiness "
+"on the cross site link.  Also to note that lifespan works fine without this "
+"and max-idle expiration does not work properly with cross site.  So in this "
+"case the messages were providing no benefit."
 msgstr ""
+"また、クロスサイトリンクでのおしゃべりを減らすために、有効期限をクロスサイトに複製しないようにしています。また、lifespanはこれがなくても問題なく動作し、max-"
+"idle expirationはクロスサイトでは正しく動作しないことに注意してください。この場合、メッセージは何のメリットもありませんでした。"
 
 #. type: Title ==
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:157
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "API"
-msgstr ""
+msgstr "API"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:160
-msgid "We now have a proper sizeAsync method on the Cache interface.  This is both for remote and embedded APIs. This method should be preferred over the current size due to not blocking the invoking thread as well as being able to retrieve the size as a long instead of a int."
+#, fuzzy
+msgid ""
+"We now have a proper sizeAsync method on the Cache interface.  This is both "
+"for remote and embedded APIs. This method should be preferred over the "
+"current size due to not blocking the invoking thread as well as being able "
+"to retrieve the size as a long instead of a int."
 msgstr ""
+"Cache インタフェースに適切な sizeAsync メソッドが追加されました。これは、リモート API と組み込み API "
+"の両方のためのものです。このメソッドは、呼び出しスレッドをブロックしないこと、および int ではなく long "
+"としてサイズを取得できることから、現在のサイズよりも優先されるべきです。"
 
 #. type: Title ==
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:161
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuration"
-msgstr ""
+msgstr "構成"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:168
-msgid "It is now possible to configure JGroups stacks directly from the Infinispan configuration file.  We use this ability to also allow easily creating multiple stacks (for easy cross-site configuration).  The distribution comes with several pre-built JGroups stacks for cloud environments which you can quickly adapt for your configuration.  Additionally you can extend existing JGroups configurations replacing individual protocols.  This makes it easy, for example, to use a different discovery without worrying about all the other protocols."
+#, fuzzy
+msgid ""
+"It is now possible to configure JGroups stacks directly from the Infinispan "
+"configuration file.  We use this ability to also allow easily creating "
+"multiple stacks (for easy cross-site configuration).  The distribution comes "
+"with several pre-built JGroups stacks for cloud environments which you can "
+"quickly adapt for your configuration.  Additionally you can extend existing "
+"JGroups configurations replacing individual protocols.  This makes it easy, "
+"for example, to use a different discovery without worrying about all the "
+"other protocols."
 msgstr ""
+"Infinispanの設定ファイルから直接JGroupsスタックを設定できるようになりました。この機能を利用して、複数のスタックを簡単に作成できるようにしています（クロスサイト構成を容易にするため）。ディストリビューションには、クラウド環境用のいくつかの構築済み "
+"JGroups スタックが付属しており、お客様の設定に素早く適応させることができます。さらに、個々のプロトコルを置き換えることで、既存の JGroups "
+"構成を拡張することができます。これにより、例えば、他のすべてのプロトコルを気にすることなく、異なるディスカバリを使用することが容易になります。"
 
 #. type: Title ==
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:169
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Documentation"
-msgstr ""
+msgstr "ドキュメント"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:174
-msgid "Infinispan community documentation has been going through some big changes over the past year.  The Infinispan 10 release marks the first major step towards adopting a modular structure that supports flexible content for specific use cases.  On top of that we’ve also been putting lots of effort into transforming our documentation set to adhere to the principles of minimalism that put focus on user goals and delivering leaner, more concise content."
+#, fuzzy
+msgid ""
+"Infinispan community documentation has been going through some big changes "
+"over the past year.  The Infinispan 10 release marks the first major step "
+"towards adopting a modular structure that supports flexible content for "
+"specific use cases.  On top of that we’ve also been putting lots of effort "
+"into transforming our documentation set to adhere to the principles of "
+"minimalism that put focus on user goals and delivering leaner, more concise "
+"content."
 msgstr ""
+"Infinispanのコミュニティドキュメントは、この1年間で大きな変化を遂げてきました。Infinispan 10 "
+"のリリースは、特定のユースケースに柔軟なコンテンツをサポートするモジュール構造の採用に向けた最初の大きな一歩となりました。それに加えて、ユーザーの目標に焦点を当て、より無駄のない、より簡潔なコンテンツを提供するミニマリズムの原則を遵守するために、ドキュメントセットの変換にも力を入れてきました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:178
-msgid "Our 10.0 release also incorporates work to organize content into three main types: task, concept, and reference.  Mapping content to information types makes it easier to write and maintain content by removing worries about style, scope, and other complexities.  Writers can separate documentation into logical units of information that can stand alone and then assemble topics into tutorials, how-to articles, explanations, and reference material."
+#, fuzzy
+msgid ""
+"Our 10.0 release also incorporates work to organize content into three main "
+"types: task, concept, and reference.  Mapping content to information types "
+"makes it easier to write and maintain content by removing worries about "
+"style, scope, and other complexities.  Writers can separate documentation "
+"into logical units of information that can stand alone and then assemble "
+"topics into tutorials, how-to articles, explanations, and reference material."
+""
 msgstr ""
+"10."
+"0のリリースでは、コンテンツをタスク、コンセプト、リファレンスの3つの主なタイプに整理する作業も組み込まれています。コンテンツを情報タイプにマッピングすることで、スタイル、スコープ、およびその他の複雑な問題を取り除くことができ、コンテンツの作成とメンテナンスが容易になります。ライターは、ドキュメントを独立した情報の論理的な単位に分割し、トピックをチュートリアル、ハウツー記事、説明、および参照資料に組み立てることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:181
-msgid "You might also notice some changes to the documentation section of our site and updates to the index page for Infinispan 10 docs.  Hopefully the new layout makes it easier to navigate and find the information you’re looking for."
+#, fuzzy
+msgid ""
+"You might also notice some changes to the documentation section of our site "
+"and updates to the index page for Infinispan 10 docs.  Hopefully the new "
+"layout makes it easier to navigate and find the information you’re looking "
+"for."
 msgstr ""
+"また、サイトのドキュメントセクションの変更や、Infinispan 10 "
+"ドキュメントのインデックスページの更新にもお気づきかもしれません。新しいレイアウトにより、ナビゲートが容易になり、探している情報を見つけやすくなることを願っています。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:185
-msgid "We hope you find the improvements to the documentation helpful.  As always, we’re keen to get your feedback and would appreciate.  And if you feel like getting involved, see the Contributor’s Guide and start writing Infinispan docs today!"
+#, fuzzy
+msgid ""
+"We hope you find the improvements to the documentation helpful.  As always, "
+"we’re keen to get your feedback and would appreciate.  And if you feel like "
+"getting involved, see the Contributor’s Guide and start writing Infinispan "
+"docs today!"
 msgstr ""
+"ドキュメントの改善がお役に立てることを願っています。いつものように、皆様からのフィードバックをお待ちしています。そして、もしあなたが参加したいと感じたら、コントリビューターズガイドを見て、今日からInfinispanのドキュメントを書き始めてください。"
 
 #. type: Title ==
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:186
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Experimental features"
-msgstr ""
+msgstr "実験的特徴"
 
 #. type: Title ===
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:188
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Reactive API"
-msgstr ""
+msgstr "リアクティブ API"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:193
-msgid "First steps to a new Reactive API. This is still a work in progress and the API will see major changes.  We plan on making this API final and default in Infinispan 11.  The new API includes a new API module and a new KeyValueStore Hot Rod client where search, continuous search and Key Value store methods are included"
+#, fuzzy
+msgid ""
+"First steps to a new Reactive API. This is still a work in progress and the "
+"API will see major changes.  We plan on making this API final and default in "
+"Infinispan 11.  The new API includes a new API module and a new "
+"KeyValueStore Hot Rod client where search, continuous search and Key Value "
+"store methods are included"
 msgstr ""
+"新しいReactive APIへの第一歩。これはまだ進行中の作業であり、APIには大きな変更が加えられる予定です。我々はこのAPIをInfinispan "
+"11の最終的なデフォルトにする予定です。新しいAPIには、新しいAPIモジュールと、検索、連続検索、キーバリューストアメソッドが含まれる新しいKeyValueStore "
+"Hot Rodクライアントが含まれています。"
 
 #. type: Title ==
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:195
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Removal/deprecations"
-msgstr ""
+msgstr "除去/叙述"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:197
+#, fuzzy
 msgid "A new major release is also an opportunity to do some house-cleaning."
-msgstr ""
+msgstr "メジャーリリースの新作は、ハウスクリーニングをするチャンスでもあります。"
 
 #. type: Title ===
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:198
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Deprecations"
-msgstr ""
+msgstr "非推奨"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:200
-msgid "Deprecate GridFileSystem and org.infinispan.io stream implementations (ISPN-10298)"
-msgstr ""
+#, fuzzy
+msgid ""
+"Deprecate GridFileSystem and org.infinispan.io stream implementations (ISPN-"
+"10298)"
+msgstr "GridFileSystemおよびorg.infinispan.ioストリーム実装の非推奨化 (ISPN-10298)"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:201
+#, fuzzy
 msgid "Deprecated Total Order transaction mode (ISPN-10259)"
-msgstr ""
+msgstr "非推奨のトータルオーダートランザクションモード(ISPN-10259)"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:202
-msgid "Deprecated Externalizer, AdvancedExternalizer and @SerializeWith (ISPN-10280)"
-msgstr ""
+#, fuzzy
+msgid ""
+"Deprecated Externalizer, AdvancedExternalizer and @SerializeWith (ISPN-"
+"10280)"
+msgstr "非推奨のExternalizer、AdvancedExternalizer、@SerializeWith (ISPN-10280)"
 
 #. type: Title ===
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:203
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Removals"
-msgstr ""
+msgstr "リムーバル"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:205
+#, fuzzy
 msgid "AtomicMap implementations (ISPN-10230)"
-msgstr ""
+msgstr "アトミックマップの実装 (ISPN-10230)"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:206
+#, fuzzy
 msgid "Deprecated org.infinispan.io classes (ISPN-10297)"
-msgstr ""
+msgstr "非推奨の org.infinispan.io クラス (ISPN-10297)"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:207
+#, fuzzy
 msgid "org.infinispan.tools.ConfigurationConverter (ISPN-10231)"
-msgstr ""
+msgstr "org.infinispan.tools.ConfigurationConverter (ISPN-10231)"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:208
+#, fuzzy
 msgid "Compatibility mode (ISPN-10370)"
-msgstr ""
+msgstr "互換モード(ISPN-10370)"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:209
+#, fuzzy
 msgid "AtomicObjectFactory (ISPN-10414)"
-msgstr ""
+msgstr "AtomicObjectFactory (ISPN-10414)"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:210
+#, fuzzy
 msgid "C3P0 and Hikari Connection Pools (ISPN-8087)"
-msgstr ""
+msgstr "C3P0とひかりの接続プール（ISPN-8087"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:211
+#, fuzzy
 msgid "Delta and DeltaAware interfaces (ISPN-8071)"
-msgstr ""
+msgstr "デルタおよびデルタウェア・インターフェース（ISPN-8071"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:212
+#, fuzzy
 msgid "HotRod 1.x support (ISPN-9169)"
-msgstr ""
+msgstr "HotRod 1.x サポート (ISPN-9169)"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:213
+#, fuzzy
 msgid "Tree module (ISPN-10054)"
-msgstr ""
+msgstr "ツリーモジュール(ISPN-10054)"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:214
+#, fuzzy
 msgid "Distributed Executor (ISPN-9784)"
-msgstr ""
+msgstr "分散型エグゼキュータ (ISPN-9784)"
 
 #. type: Title ==
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:216
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Future"
-msgstr ""
+msgstr "未来"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-28-infinispan-10-final.adoc:220
-msgid "Now that Infinispan 10 is out we plan on delivering a 10.1 release in a couple of months.  10.1 will generally be a polishing release."
+#, fuzzy
+msgid ""
+"Now that Infinispan 10 is out we plan on delivering a 10.1 release in a "
+"couple of months.  10.1 will generally be a polishing release."
 msgstr ""
+"Infinispan 10がリリースされた今、私たちは数ヶ月以内に10.1のリリースを提供する予定です。10.1は通常、研磨リリースとなります。"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-06-29-infinispan-910cr1.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-29-infinispan-910cr1.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.1.0.CR1\n"
@@ -34,62 +34,113 @@ msgid ""
 "tags: [ \"release\",\n"
 "\"scattered cache\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3224183550222104736\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3224183550222104736\n"
 "blogger_orig_url: https://blog.infinispan.org/2017/06/infinispan-910cr1.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 9.1.0.CR1\n"
+"permalink: /blog/:year/:month/:day/infinispan-910cr1\n"
+"date: '2017-06-29T13:23:00.002-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\",\n"
+"\"scattered cache\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3224183550222104736\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/06/infinispan-910cr1.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-29-infinispan-910cr1.adoc:14
+#, fuzzy
 msgid "Dear Infinispan Community,"
-msgstr ""
+msgstr "Infinispanコミュニティの皆様へ。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-29-infinispan-910cr1.adoc:17
-msgid "the Infinispan 9.1.0.CR1 is out and can be found on our http://infinispan.org/download/[downloads page]. Almost Final!"
+#, fuzzy
+msgid ""
+"the Infinispan 9.1.0.CR1 is out and can be found on our http://infinispan."
+"org/download/[downloads page]. Almost Final!"
 msgstr ""
+"Infinispan 9.1.0.CR1がリリースされ、 link:http://infinispan.org/download/[ダウンロードページ] "
+"に掲載されています。もうすぐファイナル"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-29-infinispan-910cr1.adoc:22
-msgid "Full details of the new features and enhancements included in this release can be found https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12334972[here]."
-msgstr ""
+#, fuzzy
+msgid ""
+"Full details of the new features and enhancements included in this release "
+"can be found https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
+"12310799&version=12334972[here]."
+msgstr "このリリースに含まれる新機能と機能強化の詳細については、こちらをご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-29-infinispan-910cr1.adoc:24
+#, fuzzy
 msgid "Short list of highlights:"
-msgstr ""
+msgstr "ハイライトのショートリスト。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-29-infinispan-910cr1.adoc:28
-msgid "[https://issues.jboss.org/browse/ISPN-6245[ISPN-6245]] - Remote query should be able to work with JBoss marshaling, compat mode and hibernate-search annotations"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-6245[ISPN-6245]] - Remote query should "
+"be able to work with JBoss marshaling, compat mode and hibernate-search "
+"annotations"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-6245[ISPN-6245] ] - リモートクエリが JBoss "
+"のマーシャリング、compat モード、および hibernate-search アノテーションで動作するようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-29-infinispan-910cr1.adoc:30
-msgid "[https://issues.jboss.org/browse/ISPN-6645[ISPN-6645]] - Scattered cache"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-6645[ISPN-6645]] - Scattered cache"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-6645[ISPN-6645] ] - 散在するキャッシュ"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-29-infinispan-910cr1.adoc:32
-msgid "[https://issues.jboss.org/browse/ISPN-7900[ISPN-7900]] - Provide entrySet, values, keySet implementation for RemoteCache"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-7900[ISPN-7900]] - Provide entrySet, "
+"values, keySet implementation for RemoteCache"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-7900[ISPN-7900] ] - "
+"RemoteCacheのエントリセット、値、キーセットの実装を提供します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-29-infinispan-910cr1.adoc:34
-msgid "[https://issues.jboss.org/browse/ISPN-7753[ISPN-7753]] - Compute, ComputeIfPresent, ComputeIfAbsent (now distributed)"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-7753[ISPN-7753]] - Compute, "
+"ComputeIfPresent, ComputeIfAbsent (now distributed)"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-7753[ISPN-7753] ] - Compute, "
+"ComputeIfPresent, ComputeIfAbsent (現在配布中)"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-29-infinispan-910cr1.adoc:35
+#, fuzzy
 msgid "The usual slew of bug fixes, clean ups and general improvements."
-msgstr ""
+msgstr "いつものスレでは、バグ修正、クリーンアップ、全般的な改善を行っています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-29-infinispan-910cr1.adoc:37
+#, fuzzy
 msgid "As usual, we will be blogging about each feature and improvement."
-msgstr ""
+msgstr "いつものように、それぞれの特徴や改善点をブログで紹介していきます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-29-infinispan-910cr1.adoc:41
-msgid "Always consult the http://infinispan.org/docs/dev/upgrading/upgrading.html[Upgrading guide] to see what has changed. Thank you for following us and stay tuned! The Infinispan Team"
+#, fuzzy
+msgid ""
+"Always consult the http://infinispan.org/docs/dev/upgrading/upgrading."
+"html[Upgrading guide] to see what has changed. Thank you for following us "
+"and stay tuned! The Infinispan Team"
 msgstr ""
+"何が変わったかは、 link:http://infinispan.org/docs/dev/upgrading/upgrading."
+"html[アップグレードガイド] を常に参照してください。いつもフォローしていただきありがとうございます。Infinispanチーム"

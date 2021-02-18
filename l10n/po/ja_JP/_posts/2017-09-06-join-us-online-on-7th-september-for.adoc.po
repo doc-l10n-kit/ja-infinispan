@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-09-06-join-us-online-on-7th-september-for.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-06-join-us-online-on-7th-september-for.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Join us online on 7th September for DevNation talk on Infinispan!\n"
@@ -34,33 +34,86 @@ msgid ""
 "tags: [ \"conference\",\n"
 "\"devnation\",\n"
 "]\n"
-"thumbnail: https://2.bp.blogspot.com/-yH3OnkU0N7o/WbAJ_qejSYI/AAAAAAAAE5Y/AWCqvsb6dgkmOeUpi2xzs9XC8ANYPiRsQCLcBGAs/s72-c/devnationlive_microsite_banner_desktop_logo_r4v1.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4324317431651297526\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/09/join-us-online-on-7th-september-for.html\n"
+"thumbnail: https://2.bp.blogspot.com/-yH3OnkU0N7o/WbAJ_qejSYI/AAAAAAAAE5Y/"
+"AWCqvsb6dgkmOeUpi2xzs9XC8ANYPiRsQCLcBGAs/s72-c/"
+"devnationlive_microsite_banner_desktop_logo_r4v1.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4324317431651297526\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/09/join-us-online-on-7th-"
+"september-for.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 9月7日に行われるInfinispanのDevNationトークにオンラインで参加しましょう!\n"
+"permalink: /blog/:year/:month/:day/join-us-online-on-7th-september-for\n"
+"date: '2017-09-06T07:45:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"conference\",\n"
+"\"devnation\",\n"
+"]\n"
+"thumbnail: https://2.bp.blogspot.com/-yH3OnkU0N7o/WbAJ_qejSYI/AAAAAAAAE5Y/"
+"AWCqvsb6dgkmOeUpi2xzs9XC8ANYPiRsQCLcBGAs/s72-c/"
+"devnationlive_microsite_banner_desktop_logo_r4v1.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4324317431651297526\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/09/join-us-online-on-7th-"
+"september-for.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-06-join-us-online-on-7th-september-for.adoc:15
-msgid "https://2.bp.blogspot.com/-yH3OnkU0N7o/WbAJ_qejSYI/AAAAAAAAE5Y/AWCqvsb6dgkmOeUpi2xzs9XC8ANYPiRsQCLcBGAs/s1600/devnationlive_microsite_banner_desktop_logo_r4v1.png[image:https://2.bp.blogspot.com/-yH3OnkU0N7o/WbAJ_qejSYI/AAAAAAAAE5Y/AWCqvsb6dgkmOeUpi2xzs9XC8ANYPiRsQCLcBGAs/s320/devnationlive_microsite_banner_desktop_logo_r4v1.png[image,width=320,height=53]]"
+#, fuzzy
+msgid ""
+"https://2.bp.blogspot.com/-yH3OnkU0N7o/WbAJ_qejSYI/AAAAAAAAE5Y/"
+"AWCqvsb6dgkmOeUpi2xzs9XC8ANYPiRsQCLcBGAs/s1600/"
+"devnationlive_microsite_banner_desktop_logo_r4v1.png[image:https://2.bp."
+"blogspot.com/-yH3OnkU0N7o/WbAJ_qejSYI/AAAAAAAAE5Y/"
+"AWCqvsb6dgkmOeUpi2xzs9XC8ANYPiRsQCLcBGAs/s320/"
+"devnationlive_microsite_banner_desktop_logo_r4v1.png[image,width=320,height="
+"53]]"
 msgstr ""
+"link:https://2.bp.blogspot.com/-yH3OnkU0N7o/WbAJ_qejSYI/AAAAAAAAE5Y/"
+"AWCqvsb6dgkmOeUpi2xzs9XC8ANYPiRsQCLcBGAs/s1600/"
+"devnationlive_microsite_banner_desktop_logo_r4v1.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-06-join-us-online-on-7th-september-for.adoc:20
-msgid "Tomorrow, 7th of September at 12:00pm EDT, I will be doing an online live tech talk for Red Hat DevNation on showing how to handle big data with Infinispan."
+#, fuzzy
+msgid ""
+"Tomorrow, 7th of September at 12:00pm EDT, I will be doing an online live "
+"tech talk for Red Hat DevNation on showing how to handle big data with "
+"Infinispan."
 msgstr ""
+"明日 9 月 7 日 12:00pm EDT から、Red Hat DevNation のために、Infinispan "
+"を使ったビッグデータの扱い方についてオンラインでライブトークを行います。"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-06-join-us-online-on-7th-september-for.adoc:27
-msgid "If you didn't manage to attend my talk at http://blog.infinispan.org/2017/05/reactive-big-data-on-openshift-in.html[Great Indian Developer Summit] or http://blog.infinispan.org/2017/06/back-from-berlin-buzzwords-video.html[Berlin Buzzwords], this is your chance to see it live and direct, with live coding demos included!"
+#, fuzzy
+msgid ""
+"If you didn't manage to attend my talk at http://blog.infinispan.org/2017/05/"
+"reactive-big-data-on-openshift-in.html[Great Indian Developer Summit] or "
+"http://blog.infinispan.org/2017/06/back-from-berlin-buzzwords-video."
+"html[Berlin Buzzwords], this is your chance to see it live and direct, with "
+"live coding demos included!"
 msgstr ""
+"link:http://blog.infinispan.org/2017/05/reactive-big-data-on-openshift-in."
+"html[Great Indian Developer Summit] や link:http://blog.infinispan.org/2017/"
+"06/back-from-berlin-buzzwords-video.html[Berlin Buzzwords] "
+"での私の講演に参加できなかった方は、コーディングデモを含めたライブで直接見られるチャンスです。"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-06-join-us-online-on-7th-september-for.adoc:31
-msgid "You can register to see the talk live visiting the https://developers.redhat.com/devnationlive/?sc_cid=701f2000000h6BqAAI[Red Hat DevNation Live site]."
+#, fuzzy
+msgid ""
+"You can register to see the talk live visiting the https://developers.redhat."
+"com/devnationlive/?sc_cid=701f2000000h6BqAAI[Red Hat DevNation Live site]."
 msgstr ""
+"link:https://developers.redhat.com/devnationlive/?sc_cid="
+"701f2000000h6BqAAI[Red Hat DevNation Live のサイト] でトークライブを見るために登録することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-09-06-join-us-online-on-7th-september-for.adoc:34
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Distributed iteration improvements\n"
@@ -32,270 +32,483 @@ msgid ""
 "date: '2018-02-19T03:00:00.000-08:00'\n"
 "author: wburns\n"
 "tags: [ \" performance\", \"streams\", \"distribution\", \"iteration\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7355108497333904806\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/02/distributed-iteration-improvements.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7355108497333904806\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/02/distributed-iteration-"
+"improvements.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 分散型イテレーションの改善\n"
+"permalink: /blog/:year/:month/:day/distributed-iteration-improvements\n"
+"date: '2018-02-19T03:00:00.000-08:00'\n"
+"author: wburns\n"
+"tags: [ \" performance\", \"streams\", \"distribution\", \"iteration\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7355108497333904806\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/02/distributed-iteration-"
+"improvements.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:19
-msgid "Infinispan hasn't always provided a way for iterating upon entries in a distributed cache. In fact the https://issues.jboss.org/browse/ISPN-4222[first iteration] wasn't until Infinispan 7. Then in Infinispan 8, with the addition of Java 8, we fully integrated this into http://blog.infinispan.org/2015/09/distributed-streams.html[distributed streams], which brought some minor iteration improvements in performance."
+#, fuzzy
+msgid ""
+"Infinispan hasn't always provided a way for iterating upon entries in a "
+"distributed cache. In fact the https://issues.jboss.org/browse/ISPN-"
+"4222[first iteration] wasn't until Infinispan 7. Then in Infinispan 8, with "
+"the addition of Java 8, we fully integrated this into http://blog.infinispan."
+"org/2015/09/distributed-streams.html[distributed streams], which brought "
+"some minor iteration improvements in performance."
 msgstr ""
+"Infinispanは、分散キャッシュのエントリを反復処理する方法を常に提供してきたわけではありません。実際、 link:https://issues."
+"jboss.org/browse/ISPN-4222[最初のイテレーションは] Infinispan 7 になってからでしたが、Java 8 "
+"が追加された Infinispan 8 では、 link:http://blog.infinispan.org/2015/09/distributed-"
+"streams.html[分散ストリーム] にこれを完全に統合し、パフォーマンスの小さなイテレーションの改善をもたらしました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:24
-msgid "We are proud to announce that with Infinispan 9.2 there are even more improvements. This contains no API changes, although those will surely come in the future. This one is purely for performance and utilization."
+#, fuzzy
+msgid ""
+"We are proud to announce that with Infinispan 9.2 there are even more "
+"improvements. This contains no API changes, although those will surely come "
+"in the future. This one is purely for performance and utilization."
 msgstr ""
+"Infinispan 9."
+"2では、さらに多くの改善点があることを発表できることを誇りに思います。これにはAPIの変更は含まれていません。これは純粋にパフォーマンスと利用のためのものです。"
 
 #. type: Title ==
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:26
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "New implementation details"
-msgstr ""
+msgstr "新しい実装内容"
 
 #. type: Title ===
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:28
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " "
-msgstr ""
+msgstr " "
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:38
-msgid "There are a few different aspects that have been changed.  A lot of these revolve around the amount of entries being retrieved at once, which if you are familiar with DistributedStreams can be configured via the https://docs.jboss.org/infinispan/9.2/apidocs/org/infinispan/BaseCacheStream.html#distributedBatchSize-int-[distributedBatchSize] method. Note that if this is not specified it defaults to the https://docs.jboss.org/infinispan/9.2/apidocs/org/infinispan/configuration/cache/StateTransferConfigurationBuilder.html#chunkSize-int-[chunk size] in state transfer."
+#, fuzzy
+msgid ""
+"There are a few different aspects that have been changed.  A lot of these "
+"revolve around the amount of entries being retrieved at once, which if you "
+"are familiar with DistributedStreams can be configured via the https://docs."
+"jboss.org/infinispan/9.2/apidocs/org/infinispan/BaseCacheStream."
+"html#distributedBatchSize-int-[distributedBatchSize] method. Note that if "
+"this is not specified it defaults to the https://docs.jboss.org/infinispan/9."
+"2/apidocs/org/infinispan/configuration/cache/"
+"StateTransferConfigurationBuilder.html#chunkSize-int-[chunk size] in state "
+"transfer."
 msgstr ""
+"いくつかの変更点があります。 これらの多くは一度に取得されるエントリの量に関係していますが、DistributedStreamsに慣れている方は "
+"link:https://docs.jboss.org/infinispan/9.2/apidocs/org/infinispan/"
+"BaseCacheStream.html#distributedBatchSize-int-[distributedBatchSize] "
+"メソッドで設定できます。もしこれが指定されていない場合、ステート転送時の link:https://docs.jboss.org/infinispan/"
+"9.2/apidocs/org/infinispan/configuration/cache/"
+"StateTransferConfigurationBuilder.html#chunkSize-int-[チャンクサイズが] "
+"デフォルトになることに注意してください。"
 
 #. type: Title ====
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:39
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Entry retrieval is now pull based instead of push"
-msgstr ""
+msgstr "エントリーの検索がプッシュ型からプル型に変更されました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:47
-msgid "Infinispan core (embedded) has added https://github.com/ReactiveX/RxJava/tree/2.x[rxjava2] and https://github.com/reactive-streams/reactive-streams-jvm[reactive streams] as dependencies and rewrote all of the old push style iterator code over to pull style to fully utilize the Publisher and Subscriber interfaces."
+#, fuzzy
+msgid ""
+"Infinispan core (embedded) has added https://github.com/ReactiveX/RxJava/"
+"tree/2.x[rxjava2] and https://github.com/reactive-streams/reactive-streams-"
+"jvm[reactive streams] as dependencies and rewrote all of the old push style "
+"iterator code over to pull style to fully utilize the Publisher and "
+"Subscriber interfaces."
 msgstr ""
+"Infinispan コア (組み込み) は、依存関係として link:https://github.com/ReactiveX/RxJava/tree/"
+"2.x[rxjava2] と link:https://github.com/reactive-streams/reactive-streams-"
+"jvm[reactive ストリームを] "
+"追加し、古いプッシュスタイルのイテレータコードをすべてプルスタイルに書き換えて、パブリッシャとサブスクライバのインターフェイスを完全に利用できるようにしました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:55
-msgid "With this we only pull up to the batchSize in entries at a time from any set of nodes. The old style utilized push with call stack blocking, which could return up two times the amount of entries. Also since we aren't performing call stack blocking, we don't have to waste threads as these calls to retrieve entries are done async and finish very quickly irrespective of user interaction. The old method required multiple threads to be reserved for this purpose."
+#, fuzzy
+msgid ""
+"With this we only pull up to the batchSize in entries at a time from any set "
+"of nodes. The old style utilized push with call stack blocking, which could "
+"return up two times the amount of entries. Also since we aren't performing "
+"call stack blocking, we don't have to waste threads as these calls to "
+"retrieve entries are done async and finish very quickly irrespective of user "
+"interaction. The old method required multiple threads to be reserved for "
+"this purpose."
 msgstr ""
+"これにより、任意のノードのセットから一度にエントリのバッチサイズまでしか引き出せなくなります。以前のスタイルでは、コールスタックブロッキングを使用したプッシュを使用していましたが、これでは最大2倍のエントリ量を返すことになります。また、コールスタックブロッキングを実行していないので、エントリを取得するためのコールは非同期で行われ、ユーザーのインタラクションに関係なく非常に迅速に終了するので、スレッドを無駄にする必要がありません。以前のメソッドでは、この目的のために複数のスレッドを予約する必要がありました。"
 
 #. type: Title ====
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:56
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Streamed batches"
-msgstr ""
+msgstr "ストリームされたバッチ"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:63
-msgid "The responses from a remote node are written directly to the output stream so there are no intermediate collections allocated. This means we only have to iterate upon the data once as we retain the iterator between requests. On the originator we still have to store the batches in a collection to be enqueued for the user to pull."
+#, fuzzy
+msgid ""
+"The responses from a remote node are written directly to the output stream "
+"so there are no intermediate collections allocated. This means we only have "
+"to iterate upon the data once as we retain the iterator between requests. On "
+"the originator we still have to store the batches in a collection to be "
+"enqueued for the user to pull."
 msgstr ""
+"リモートノードからのレスポンスは出力ストリームに直接書き込まれるので、中間コレクションが割り当てられることはありません。これは、リクエストの間にイテレータを保持しているので、データを一度だけ繰り返し処理する必要があることを意味します。オリジネータでは、ユーザーがプルするためにバッチをコレクションに保存しておく必要があります。"
 
 #. type: Title ====
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:64
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Rewritten Parallel Distribution"
-msgstr ""
+msgstr "書き換えられた並列配信"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:69
-msgid "Great care was taken to implement parallel distribution in a way to vastly reduce contention and ensure that we properly follow the batchSize configuration."
-msgstr ""
+#, fuzzy
+msgid ""
+"Great care was taken to implement parallel distribution in a way to vastly "
+"reduce contention and ensure that we properly follow the batchSize "
+"configuration."
+msgstr "競合を大幅に減らし、バッチサイズの設定に適切に従うことを保証する方法で並列分散を実装するために細心の注意が払われました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:78
-msgid "When parallel distribution is in use the new implementation will start 4 remote node requests sharing the batch size (so each one gets 1/4). This way we can guarantee that we only have the desired size irrespective of the number of nodes in the cluster. The old implementation would request batchSize from all nodes at the same time. So not only did it reserve a thread for node but could easily swamp your JVM memory, causing OutOfMemoryErrors (which no one likes). The latter alone made us force the default to be sequential distribution when using an iterator."
+#, fuzzy
+msgid ""
+"When parallel distribution is in use the new implementation will start 4 "
+"remote node requests sharing the batch size (so each one gets 1/4). This way "
+"we can guarantee that we only have the desired size irrespective of the "
+"number of nodes in the cluster. The old implementation would request "
+"batchSize from all nodes at the same time. So not only did it reserve a "
+"thread for node but could easily swamp your JVM memory, causing "
+"OutOfMemoryErrors (which no one likes). The latter alone made us force the "
+"default to be sequential distribution when using an iterator."
 msgstr ""
+"並列分散が使用されている場合、新しい実装ではバッチサイズを共有する4つのリモートノードのリクエストが開始されます(つまり、それぞれが1/"
+"4のサイズを取得します)。このようにして、クラスタ内のノード数に関係なく、希望のサイズだけを確保することができます。以前の実装では、すべてのノードに同時にバッチサイズを要求していました。そのため、ノードのためにスレッドを確保するだけでなく、JVMのメモリを容易に浪費してしまい、OutOfMemoryErrors（誰も好まない）を引き起こす可能性がありました。後者の問題だけで、イテレータを使用する際には、デフォルトで逐次分布を強制的に使用するようにしました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:83
-msgid "The old implementation would write entries from all nodes (including local) to the same shared queue. The new implementation has a different queue for each request, which allows for faster queues with no locking to be used."
+#, fuzzy
+msgid ""
+"The old implementation would write entries from all nodes (including local) "
+"to the same shared queue. The new implementation has a different queue for "
+"each request, which allows for faster queues with no locking to be used."
 msgstr ""
+"古い実装では、すべてのノード(ローカルを含む)からのエントリを同じ共有キューに書き込むことになっていました。新しい実装では、リクエストごとに異なるキューが用意されているため、ロックをかけずに高速なキューを使用することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:87
-msgid "Due to these changes and other isolations between threads, we can now make parallel distribution the default setting for the iterator method.  And as you will see this has improved performance nicely."
+#, fuzzy
+msgid ""
+"Due to these changes and other isolations between threads, we can now make "
+"parallel distribution the default setting for the iterator method.  And as "
+"you will see this has improved performance nicely."
 msgstr ""
+"これらの変更とスレッド間の他の分離のために、イテレータメソッドのデフォルト設定で並列分散を行うことができるようになりました。そして、ご覧のように、これによりパフォーマンスが改善されました。"
 
 #. type: Title ==
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:89
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Performance"
-msgstr ""
+msgstr "パフォーマンス"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:98
-msgid "We have written a http://openjdk.java.net/projects/code-tools/jmh/[JMH] test harness specifically for this blog post, testing 9.1.5.Final https://github.com/infinispan/infinispan/releases/tag/9.1.5.Final[build] against latest 9.2.0.SNAPSHOT. The test runs by default with 4GB of heap with 6 nodes in a distributed cache with 2 owners. It has varying entry count, entry sizes and distributed batch sizes."
+#, fuzzy
+msgid ""
+"We have written a http://openjdk.java.net/projects/code-tools/jmh/[JMH] test "
+"harness specifically for this blog post, testing 9.1.5.Final https://github."
+"com/infinispan/infinispan/releases/tag/9.1.5.Final[build] against latest 9.2."
+"0.SNAPSHOT. The test runs by default with 4GB of heap with 6 nodes in a "
+"distributed cache with 2 owners. It has varying entry count, entry sizes and "
+"distributed batch sizes."
 msgstr ""
+"このブログ記事のために、9.1.5.Final link:https://github.com/infinispan/infinispan/"
+"releases/tag/9.1.5.Final[build] と最新の 9.2.0.SNAPSHOT をテストするための link:http://"
+"openjdk.java.net/projects/code-tools/jmh/[JMH] "
+"テストハーネスを作成しました。テストはデフォルトで4GBのヒープ、6ノード、オーナー2人の分散キャッシュで実行しています。エントリ数、エントリサイズ、分散バッチサイズを変化させています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:106
-msgid "Due to the variance in each test a large number of tests were ran and with different permutations to make sure it covered a large amount of test cases. The JMH test that was ran can be found at https://github.com/infinispan/infinispan-benchmarks/tree/master/iteration[github].  All the default settings were used for the run except -t4 (runs with 4 worker threads) was provided. This was all ran on my measly laptop (i7-4810MQ and 16 GB) - maxing out the CPU was not a hard task."
+#, fuzzy
+msgid ""
+"Due to the variance in each test a large number of tests were ran and with "
+"different permutations to make sure it covered a large amount of test cases. "
+"The JMH test that was ran can be found at https://github.com/infinispan/"
+"infinispan-benchmarks/tree/master/iteration[github].  All the default "
+"settings were used for the run except -t4 (runs with 4 worker threads) was "
+"provided. This was all ran on my measly laptop (i7-4810MQ and 16 GB) - "
+"maxing out the CPU was not a hard task."
 msgstr ""
+"各テストにばらつきがあったため、多くのテストケースをカバーできるように、多くのテストを実行しました。実行した JMH テストは link:https://"
+"github.com/infinispan/infinispan-benchmarks/tree/master/iteration[github] "
+"にあります。t4(4 ワーカースレッドで実行)を指定した以外は、すべてデフォルトの設定で実行しました。これは私の小さなノートパソコン(i7-"
+"4810MQと16GB)で実行したもので、CPUを最大化することは難しくありませんでした。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:111
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*CAVEAT*: The tests don't do anything with the iterator and just try to\n"
 "pull them as fast as they can. Obviously if you have a lot of processing\n"
 "done between iterations you will likely not see as good of a performance\n"
 "increase.\n"
 msgstr ""
+"*CAVEAT* : "
+"テストはイテレータには何もせず、できる限り高速にイテレータを引っ張るようにしています。明らかに、反復処理の間に多くの処理が行われている場合、パフォーマンスの向上は望めないでしょう。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:116
-msgid "The entire results can be found https://docs.google.com/spreadsheets/d/18v8e6vG-4aX8Pk-ihB3p1H5cQvsSQlFMhQSKxPhSLf0/edit?usp=sharing[here].  It shows each permutation and how many operations per second and finds the difference (green shows 5% or more and red shows -5% or less)."
+#, fuzzy
+msgid ""
+"The entire results can be found https://docs.google.com/spreadsheets/d/"
+"18v8e6vG-4aX8Pk-ihB3p1H5cQvsSQlFMhQSKxPhSLf0/edit?usp=sharing[here].  It "
+"shows each permutation and how many operations per second and finds the "
+"difference (green shows 5% or more and red shows -5% or less)."
 msgstr ""
+"結果の全体像は link:https://docs.google.com/spreadsheets/d/18v8e6vG-4aX8Pk-"
+"ihB3p1H5cQvsSQlFMhQSKxPhSLf0/edit?usp=sharing[ここで] "
+"見ることができます。これは、各順列と1秒あたりの操作数を示し、その差（緑は5%以上、赤は-5%以下）を見つけます。"
 
 #. type: Table
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:122
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Operation"
-msgstr ""
+msgstr "操作"
 
 #. type: Table
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:122
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Average Gain"
-msgstr ""
+msgstr "平均利益"
 
 #. type: Table
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:123
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Code"
-msgstr ""
+msgstr "コード"
 
 #. type: Table
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:123
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Specified Distribution Mode"
-msgstr ""
+msgstr "指定配信モード"
 
 #. type: Table
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:124
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "3.5%"
-msgstr ""
+msgstr "3.5%"
 
 #. type: Table
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:126
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ".entrySet().stream().sequentialDistribution.iterator()"
-msgstr ""
+msgstr ".entrySet().stream().sequentialDistribution.iterator()"
 
 #. type: Table
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:126
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Default"
-msgstr ""
+msgstr "デフォルト"
 
 #. type: Table
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:126
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "11%"
-msgstr ""
+msgstr "11%"
 
 #. type: Table
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:128
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ".entrySet().iterator()"
-msgstr ""
+msgstr ".entrySet().iterator()"
 
 #. type: Table
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:128
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "No Rehash"
-msgstr ""
+msgstr "リハッシュなし"
 
 #. type: Table
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:128
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "14%"
-msgstr ""
+msgstr "14%"
 
 #. type: Table
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:129
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ".entrySet().stream().disableRehashAware().iterator()"
-msgstr ""
+msgstr ".entrySet().stream().disableRehashAware().iterator()"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:139
-msgid "The above 3 rows show a few different ways you could have been invoking the iterator method. The second row is probably by far the most used case. In this case you should see around a *11*% increase in performance (results will vary). This is due to the new pulling method as well as parallel distribution becoming the new default running mode. It is unlikely a user was using the other 2 methods, but are provided for a more complete view."
+#, fuzzy
+msgid ""
+"The above 3 rows show a few different ways you could have been invoking the "
+"iterator method. The second row is probably by far the most used case. In "
+"this case you should see around a *11*% increase in performance (results "
+"will vary). This is due to the new pulling method as well as parallel "
+"distribution becoming the new default running mode. It is unlikely a user "
+"was using the other 2 methods, but are provided for a more complete view."
 msgstr ""
+"上の3つの行は、イテレータメソッドを呼び出すためのいくつかの異なる方法を示しています。2行目は、おそらく最もよく使われるケースです。このケースでは、パフォーマンスが約 "
+"*11* "
+"%向上しています(結果は異なります)。これは、新しいpullingメソッドと並列配布が新しいデフォルトの実行モードになったことによるものです。ユーザーが他の2つの方法を使用している可能性は低いですが、より完全なビューのために提供されています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:144
-msgid "If you were specifying a distribution mode manually, either sequential or distribution you will only see a few percent faster run (*3.5*%), but every little bit helps! Also if you can switch to parallel you may want to think about doing so."
+#, fuzzy
+msgid ""
+"If you were specifying a distribution mode manually, either sequential or "
+"distribution you will only see a few percent faster run (*3.5*%), but every "
+"little bit helps! Also if you can switch to parallel you may want to think "
+"about doing so."
 msgstr ""
+"配布モードを手動で指定していた場合、シーケンシャルか配布モードのどちらかを指定していた場合は、数パーセントしか速くなりませんが *(3.* "
+"5%)、少しずつでも速くなります。また、もし並列に切り替えられるのであれば、そうすることを考えた方がいいかもしれません。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:150
-msgid "Also you can see if you were running with rehash disabled prior, it has even more gains (*14*%). Those don't even include the fact that no rehash was *28*% faster than with before (which means it is about *32*% faster in general now). So if you can get away with a _at most once_ guarantee, disabling rehash will provide the best throughput."
+#, fuzzy
+msgid ""
+"Also you can see if you were running with rehash disabled prior, it has even "
+"more gains (*14*%). Those don't even include the fact that no rehash was "
+"*28*% faster than with before (which means it is about *32*% faster in "
+"general now). So if you can get away with a _at most once_ guarantee, "
+"disabling rehash will provide the best throughput."
 msgstr ""
+"また、あなたが以前にリハッシュを無効にして走っていた場合、それはさらに多くの利益 *（14* "
+"％）を持っていることがわかります。リハッシュを無効にした場合、以前よりも *28* %速くなったという事実は含まれていません（つまり、現在は一般的に約 "
+"*32* %速くなっているということです）。ですから、もしあなたが _一度だけの_ "
+"保証で済むのであれば、リハッシュを無効にすることで最高のスループットが得られるでしょう。"
 
 #. type: Title ==
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:152
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Whats next? "
-msgstr ""
+msgstr "次は何をするの？"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:158
-msgid "As was mentioned this is not exposed to the user directly. You still interact with the iterator as you would normally. We should remedy this at some point."
+#, fuzzy
+msgid ""
+"As was mentioned this is not exposed to the user directly. You still "
+"interact with the iterator as you would normally. We should remedy this at "
+"some point."
 msgstr ""
+"前述したように、これはユーザに直接公開されることはありません。通常通りにイテレータと対話します。これについては、どこかの時点で解決しなければなりません。"
 
 #. type: Title ===
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:159
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Expose new method"
-msgstr ""
+msgstr "新しいメソッドを公開"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:164
-msgid "We would love to eventually expose a method to return a Publisher directly to the user so that they can get the full benefits of having a pull based implementation underneath."
+#, fuzzy
+msgid ""
+"We would love to eventually expose a method to return a Publisher directly "
+"to the user so that they can get the full benefits of having a pull based "
+"implementation underneath."
 msgstr ""
+"最終的には、ユーザーに直接パブリッシャーを返すメソッドを公開して、その下にプルベースの実装があることの利点を十分に享受できるようにしたいと考えています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:172
-msgid "This way any intermediate operations applied to the stream before would be distributed and anything applied to the Publisher would be done locally. And just like the iterator method this publisher would be fully rehash aware if you have it configured to do so and would make sure you get all entries delivered in an _exactly once_ fashion (rehash disabled guarantees _at most once_)."
+#, fuzzy
+msgid ""
+"This way any intermediate operations applied to the stream before would be "
+"distributed and anything applied to the Publisher would be done locally. And "
+"just like the iterator method this publisher would be fully rehash aware if "
+"you have it configured to do so and would make sure you get all entries "
+"delivered in an _exactly once_ fashion (rehash disabled guarantees _at most "
+"once_)."
 msgstr ""
+"このようにして、以前にストリームに適用された中間処理はすべて分散され、パブリッシャーに適用された処理はすべてローカルで実行されます。また、イテレータメソッドと同様に、このパブリッシャーは完全にリハッシュを意識した設定になっており、すべてのエントリが "
+"_正確に一度だけの_ 方法で配信されるようになっています (リハッシュを無効にすると、 _最大で一度だけの_ 配信が保証されます)。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:177
-msgid "Another side benefit is that the Subscriber methods could be called on different threads so there is no overhead required on the ISPN side for coordinating these into queue(s). Thus the Subscriber _should_ be able to retrieve all entries faster than just doing an iterator."
+#, fuzzy
+msgid ""
+"Another side benefit is that the Subscriber methods could be called on "
+"different threads so there is no overhead required on the ISPN side for "
+"coordinating these into queue(s). Thus the Subscriber _should_ be able to "
+"retrieve all entries faster than just doing an iterator."
 msgstr ""
+"もう一つの副次的な利点は、サブスクライバのメソッドが異なるスレッド上で呼び出される可能性があることで、これらをキューに調整するために ISPN "
+"側で必要とされるオーバーヘッドがないことである。したがって、サブスクライバは、単にイテレータを行うよりも速くすべてのエントリを取得することができる "
+"_はずです_ 。"
 
 #. type: Title ===
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:178
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Java 9 Flow"
-msgstr ""
+msgstr "Java 9の流れ"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:185
-msgid "Also many of you may be wondering why we aren't using the new Flow API introduced in Java 9. Luckily the Flow API is a 1:1 conversion of reactive streams. So whenever Infinispan will start supporting Java 9 interfaces/classes, we hope to properly expose these as the JDK classes."
+#, fuzzy
+msgid ""
+"Also many of you may be wondering why we aren't using the new Flow API "
+"introduced in Java 9. Luckily the Flow API is a 1:1 conversion of reactive "
+"streams. So whenever Infinispan will start supporting Java 9 interfaces/"
+"classes, we hope to properly expose these as the JDK classes."
 msgstr ""
+"また、Java 9で導入された新しいFlow APIをなぜ使用していないのか不思議に思われる方も多いと思いますが、幸いにもFlow "
+"APIは反応性のあるストリームを1:1で変換してくれます。InfinispanがJava 9のインターフェース/"
+"クラスのサポートを開始するときはいつでも、JDKクラスとしてこれらを適切に公開したいと考えています。"
 
 #. type: Title ===
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:187
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Segment Based Iteration "
-msgstr ""
+msgstr "セグメントベースの反復処理"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:197
-msgid "With Infinispan 9.3, we hope to introduce https://issues.jboss.org/browse/ISPN-5451[data container] and https://issues.jboss.org/browse/ISPN-6026[cache store] segment aware iteration. This means when iterating over either we would only have to process entries that map to a given segment. This should reduce the time and processing for iteration substantially, especially for cache stores.  Keep your eyes out for a future blog post detailing these as 9.3 development commences."
+#, fuzzy
+msgid ""
+"With Infinispan 9.3, we hope to introduce https://issues.jboss.org/browse/"
+"ISPN-5451[data container] and https://issues.jboss.org/browse/ISPN-"
+"6026[cache store] segment aware iteration. This means when iterating over "
+"either we would only have to process entries that map to a given segment. "
+"This should reduce the time and processing for iteration substantially, "
+"especially for cache stores.  Keep your eyes out for a future blog post "
+"detailing these as 9.3 development commences."
 msgstr ""
+"Infinispan 9.3では、 link:https://issues.jboss.org/browse/ISPN-5451[データコンテナ] と "
+"link:https://issues.jboss.org/browse/ISPN-6026[キャッシュストアの] "
+"セグメントを意識した反復処理を導入したいと考えています。これは、どちらかを反復処理する際に、与えられたセグメントに対応するエントリのみを処理する必要があることを意味します。これにより、特にキャッシュストアの反復処理の時間と処理が大幅に短縮されます。9."
+"3 の開発開始に合わせて、これらの詳細については、今後のブログ記事に注目してください。"
 
 #. type: Title ===
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:198
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Give us Feedback"
-msgstr ""
+msgstr "フィードバックをお願いします"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-19-distributed-iteration-improvements.adoc:203
-msgid "We hope you find a bit more performance when working with your distributed iteration. Also we value any feedback on what you want our APIs to look like or find any bugs. As always let us know at any of the places listed http://infinispan.org/community/[here]."
+#, fuzzy
+msgid ""
+"We hope you find a bit more performance when working with your distributed "
+"iteration. Also we value any feedback on what you want our APIs to look like "
+"or find any bugs. As always let us know at any of the places listed http://"
+"infinispan.org/community/[here]."
 msgstr ""
+"分散イテレーションを行う際に、もう少しパフォーマンスが向上することを期待しています。また、API "
+"をどのようにしたいのか、バグを発見したのかなどのフィードバックもお待ちしています。いつものように、 link:http://infinispan.org/"
+"community/[ここに] 記載されているいずれかの場所でお知らせください。"

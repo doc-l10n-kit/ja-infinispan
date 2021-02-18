@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Near caching with Spring-Boot and Infinispan\n"
@@ -32,212 +32,335 @@ msgid ""
 "date: '2018-11-02T01:27:00.000-07:00'\n"
 "author: karesti\n"
 "tags: [ \"hotrod\", \"near caching\", \"spring\", \"spring boot\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4258344245989877564\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/11/near-caching-with-spring-boot-and.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4258344245989877564\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/11/near-caching-with-"
+"spring-boot-and.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: スプリングブーツとインフィニスパンでのキャッシングに近いもの\n"
+"permalink: /blog/:year/:month/:day/near-caching-with-spring-boot-and\n"
+"date: '2018-11-02T01:27:00.000-07:00'\n"
+"author: karesti\n"
+"tags: [ \"hotrod\", \"near caching\", \"spring\", \"spring boot\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4258344245989877564\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/11/near-caching-with-"
+"spring-boot-and.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:17
-msgid "We have recently released https://github.com/infinispan/infinispan-spring-boot[infinispan-spring-boot-starter] *2.0.0.Final*. This version supports https://spring.io/projects/spring-boot[Spring Boot 2.1] and http://infinispan.org/[Infinispan 9.4.0.Final]."
+#, fuzzy
+msgid ""
+"We have recently released https://github.com/infinispan/infinispan-spring-"
+"boot[infinispan-spring-boot-starter] *2.0.0.Final*. This version supports "
+"https://spring.io/projects/spring-boot[Spring Boot 2.1] and http://"
+"infinispan.org/[Infinispan 9.4.0.Final]."
 msgstr ""
+"先日、 link:https://github.com/infinispan/infinispan-spring-boot[infinispan-"
+"spring-boot-starter] *2.0.0.Final* をリリースしました。このバージョンは link:https://spring.io/"
+"projects/spring-boot[Spring Boot 2.1] と link:http://infinispan.org/"
+"[Infinispan 9.4.0.Final] をサポートしています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:24
-msgid "Before this release, some important features - such as near caching - were only configurable by code.  From now on, we can set all of the Hot Rod client configuration using the *hotrod.properties* file or the https://issues.jboss.org/browse/ISPN-9437[Spring application YAML].  The latter is an important community requirement we had."
+#, fuzzy
+msgid ""
+"Before this release, some important features - such as near caching - were "
+"only configurable by code.  From now on, we can set all of the Hot Rod "
+"client configuration using the *hotrod.properties* file or the https://"
+"issues.jboss.org/browse/ISPN-9437[Spring application YAML].  The latter is "
+"an important community requirement we had."
 msgstr ""
+"このリリース以前は、ニアキャッシングのようないくつかの重要な機能はコードでしか設定できませんでした。今後は、hotrod *.properties* "
+"ファイルや link:https://issues.jboss.org/browse/ISPN-9437[SpringアプリケーションのYAML] "
+"を使って、Hot Rodクライアントの設定をすべて設定できるようになりました。後者は私たちが持っていたコミュニティの重要な要件です。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:28
-msgid "Let's see how to speed up our applications performance with http://infinispan.org/docs/stable/user_guide/user_guide.html#near_caching[near caching]!"
+#, fuzzy
+msgid ""
+"Let's see how to speed up our applications performance with http://"
+"infinispan.org/docs/stable/user_guide/user_guide.html#near_caching[near "
+"caching]!"
 msgstr ""
+"link:http://infinispan.org/docs/stable/user_guide/user_guide."
+"html#near_caching[ニアキャッシング] でアプリのパフォーマンスを高速化する方法を見てみよう"
 
 #. type: Title ==
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:35
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Hot Rod"
-msgstr ""
+msgstr "ホットロッド"
 
 #. type: Title ===
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:37
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " "
-msgstr ""
+msgstr " "
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:47
-msgid "Just as a quick reminder, Infinispan can be used embedded in your application or in *client/server* mode. To connect you application to a server you can use an http://infinispan.org/hotrod-clients/[Infinispan Client] and the Infinispan http://infinispan.org/docs/stable/user_guide/user_guide.html#hot_rod_server_usage[“Hot Rod Protocol”]. Other protocols are available, such as REST, but Hot Rod is the most recommended way since it is the one that supports most of the Infinispan functionalities."
+#, fuzzy
+msgid ""
+"Just as a quick reminder, Infinispan can be used embedded in your "
+"application or in *client/server* mode. To connect you application to a "
+"server you can use an http://infinispan.org/hotrod-clients/[Infinispan "
+"Client] and the Infinispan http://infinispan.org/docs/stable/user_guide/"
+"user_guide.html#hot_rod_server_usage[“Hot Rod Protocol”]. Other protocols "
+"are available, such as REST, but Hot Rod is the most recommended way since "
+"it is the one that supports most of the Infinispan functionalities."
 msgstr ""
+"簡単に言うと、Infinispan はアプリケーションに組み込んで使用することも、 *クライアント/サーバー* "
+"モードで使用することもできます。アプリケーションをサーバに接続するには、Infinispan link:http://infinispan.org/"
+"hotrod-clients/[クライアント] とInfinispan link:http://infinispan.org/docs/stable/"
+"user_guide/user_guide.html#hot_rod_server_usage[\"Hot Rod Protocol\"] "
+"を使用します。REST のような他のプロトコルも利用できますが、Hot Rod は Infinispan "
+"の機能のほとんどをサポートしているので、最もお勧めの方法です。"
 
 #. type: Title ==
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:49
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Near cache"
-msgstr ""
+msgstr "キャッシュ付近"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:60
-msgid "From the Infinispan http://infinispan.org/docs/stable/user_guide/user_guide.html#near_caching[documentation]: Hot Rod client can keep a local cache that stores recently used data.  Enabling near caching can significantly improve the performance of read operations *get* and *getVersioned* since data can potentially be located locally within the Hot Rod client instead of having to go remote."
+#, fuzzy
+msgid ""
+"From the Infinispan http://infinispan.org/docs/stable/user_guide/user_guide."
+"html#near_caching[documentation]: Hot Rod client can keep a local cache that "
+"stores recently used data.  Enabling near caching can significantly improve "
+"the performance of read operations *get* and *getVersioned* since data can "
+"potentially be located locally within the Hot Rod client instead of having "
+"to go remote."
 msgstr ""
+"Infinispanの link:http://infinispan.org/docs/stable/user_guide/user_guide."
+"html#near_caching[ドキュメント] より。Hot "
+"Rodクライアントは、最近使用したデータを保存するローカルキャッシュを保持することができます。ニアキャッシュを有効にすると、データがリモートに行く代わりにHot "
+"Rodクライアント内でローカルに位置する可能性があるので、読み込み操作の *get* と *getVersioned* "
+"のパフォーマンスを大幅に向上させることができます。"
 
 #. type: Title ==
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:62
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "When should I use it? "
-msgstr ""
+msgstr "どのような時に使えばいいのでしょうか？"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:72
-msgid "Near caching can improve the performance of an application when most of the accesses to a given cache are read-only and the accessed dataset is relatively small.  When an application is doing lots of writes to a cache, invalidations, evictions and updates to the near cache need to happen. In this scenario we won't probably get much benefit."
+#, fuzzy
+msgid ""
+"Near caching can improve the performance of an application when most of the "
+"accesses to a given cache are read-only and the accessed dataset is "
+"relatively small.  When an application is doing lots of writes to a cache, "
+"invalidations, evictions and updates to the near cache need to happen. In "
+"this scenario we won't probably get much benefit."
 msgstr ""
+"ニアキャッシュは、与えられたキャッシュへのアクセスのほとんどが読み取り専用で、アクセスされるデータセットが比較的小さい場合に、アプリケーションのパフォーマンスを向上させることができます。アプリケーションがキャッシュへの書き込みを大量に行う場合、ニアキャッシュへの無効化、退避、更新が発生する必要があります。このシナリオでは、おそらくあまり利益を得られないでしょう。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:76
-msgid "As I said in the introduction, the good news is that *this feature can be activated just by configuration*. Code doesn't change, so we can measure the benefits, if such exist, in a very straightforward way."
+#, fuzzy
+msgid ""
+"As I said in the introduction, the good news is that *this feature can be "
+"activated just by configuration*. Code doesn't change, so we can measure the "
+"benefits, if such exist, in a very straightforward way."
 msgstr ""
+"冒頭で述べたように、 *この機能は設定だけで有効に* "
+"できるというのが良いニュースです。コードは変化しないので、もしそのような利点があるならば、非常にわかりやすい方法で測定することができます。"
 
 #. type: Title ==
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:78
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Spring-Boot"
-msgstr ""
+msgstr "スプリングブーツ"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:88
-msgid "I have created a very simple application, available https://github.com/infinispan-demos/infinispan-near-cache[here]. Maven, Java 8 and an Infinispan server are required to run it. You can http://downloads.jboss.org/infinispan/9.4.0.Final/infinispan-server-9.4.0.Final.zip[download the server] or use https://hub.docker.com/r/jboss/infinispan-server/[docker]."
+#, fuzzy
+msgid ""
+"I have created a very simple application, available https://github.com/"
+"infinispan-demos/infinispan-near-cache[here]. Maven, Java 8 and an "
+"Infinispan server are required to run it. You can http://downloads.jboss.org/"
+"infinispan/9.4.0.Final/infinispan-server-9.4.0.Final.zip[download the "
+"server] or use https://hub.docker.com/r/jboss/infinispan-server/[docker]."
 msgstr ""
+"link:https://github.com/infinispan-demos/infinispan-near-cache[非常] "
+"にシンプルなアプリケーションを作成しました。実行にはMaven、Java 8、Infinispanサーバが必要です。サーバーを link:http://"
+"downloads.jboss.org/infinispan/9.4.0.Final/infinispan-server-9.4.0.Final."
+"zip[ダウンロードする] か、 link:https://hub.docker.com/r/jboss/infinispan-server/"
+"[docker] を使ってください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:92
-msgid "Docker: docker run -it -p 11222:11222 jboss/infinispan-server:9.4.0.Final"
+#, fuzzy
+msgid ""
+"Docker: docker run -it -p 11222:11222 jboss/infinispan-server:9.4.0.Final"
 msgstr ""
+"Docker: docker run -it -p 11222:11222 jboss/infinispan-server:9.4.0.Final"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:94
+#, fuzzy
 msgid "Standalone: PATH/infinispan-server-9.4.0.Final/bin/standalone.sh"
-msgstr ""
+msgstr "スタンドアロンです。PATH/infinispan-server-9.4.0.Final/bin/standalone.sh"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:96
+#, fuzzy
 msgid "Once the server is up and running, build the application using maven "
-msgstr ""
+msgstr "サーバーを立ち上げて実行したら、mavenを使ってアプリケーションをビルドします。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:98
+#, fuzzy
 msgid ">> infinispan-near-cache: mvn clean install"
-msgstr ""
+msgstr ">> infinispan-near-cache: mvn クリーンインストール"
 
 #. type: Title ===
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:101
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Writer "
-msgstr ""
+msgstr "ライター"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:106
-msgid "This application loads the required data to a remote cache: a list of some of the Infinispan contributors over the last decade."
-msgstr ""
+#, fuzzy
+msgid ""
+"This application loads the required data to a remote cache: a list of some "
+"of the Infinispan contributors over the last decade."
+msgstr "このアプリケーションは、必要なデータをリモートキャッシュにロードします。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:110
+#, fuzzy
 msgid ">> writer: mvn spring-boot:run"
-msgstr ""
+msgstr ">> writer: mvn spring-boot:run"
 
 #. type: Title ===
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:115
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Reader "
-msgstr ""
+msgstr "読者"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:121
-msgid "The reader application does 10.000 accesses to the contributors cache.  Using a random id, I call 10.000 times the get method. The job gets done in my laptop in ~4000 milliseconds."
+#, fuzzy
+msgid ""
+"The reader application does 10.000 accesses to the contributors cache.  "
+"Using a random id, I call 10.000 times the get method. The job gets done in "
+"my laptop in ~4000 milliseconds."
 msgstr ""
+"リーダーアプリケーションは投稿者キャッシュに10.000回アクセスします。ランダムな ID を使用して、10.000 回 get "
+"メソッドを呼び出します。私のラップトップでは、4000ミリ秒程度で処理が完了します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:123
+#, fuzzy
 msgid ">> reader-no-near-cache: mvn spring-boot:run"
-msgstr ""
+msgstr ">> リーダーのニアキャッシュ: mvn spring-boot:run"
 
 #. type: Title ==
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:128
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Activating the near cache"
-msgstr ""
+msgstr "ニアキャッシュの有効化"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:133
+#, fuzzy
 msgid "I need to configure two properties:"
-msgstr ""
+msgstr "2つのプロパティを設定する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Near Cache Mode:* DISABLED or INVALIDATED. Default value is DISABLED,\n"
 "so I turn it on with *INVALIDATED*.\n"
 msgstr ""
+"*ニア・キャッシュ・モード。* DISABLEDかINVALIDATEDか。デフォルト値はDISABLEDなので、 *INVALIDATED* "
+"でオンにしています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:138
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Max Entries:* Integer value that sets the max size of the near\n"
 "caches. There is no default value, so I set up one.\n"
-msgstr ""
+msgstr "*Max Entries (最大エントリ数)。* ニアキャッシュの最大サイズを設定する整数値。デフォルト値がないので、設定してみました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:144
-msgid "The hotrod client configuration is [.underline]#for each client#, [.underline]#not for each cache# (this might change in the future). With that in mind, note that configuring the previous properties will activate near caching *for all the caches*. If you need to activate it just for *some of them*, add the following property:"
+#, fuzzy
+msgid ""
+"The hotrod client configuration is [.underline]#for each client#, [."
+"underline]#not for each cache# (this might change in the future). With that "
+"in mind, note that configuring the previous properties will activate near "
+"caching *for all the caches*. If you need to activate it just for *some of "
+"them*, add the following property:"
 msgstr ""
+"hotrodクライアントの設定は、各キャッシュではなく、各 "
+"クライアントごとの設定になります（これは将来的に変更される可能性があります）。それを念頭に置いて、前のプロパティを設定すると、 "
+"*すべてのキャッシュに対して* ニアキャッシングが有効になることに注意してください。 *一部* "
+"だけ有効化する必要がある場合は、以下のプロパティを追加します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:148
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Cache Name Pattern:*  String pattern. For example \"i8n-.*\" will\n"
 "activate the near caching for all the caches whose name starts by\n"
 "\"i8n-\".\n"
 msgstr ""
+"*キャッシュ名パターン：* 文字列パターン。例えば、\"i8n-.*\"は、名前が\"i8n-"
+"\"で始まるすべてのキャッシュのニアキャッシングを有効にします。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:152
-msgid "Configuration can be placed in the *hotrod-client.properties*, *Spring-boot configuration* or *code*."
+#, fuzzy
+msgid ""
+"Configuration can be placed in the *hotrod-client.properties*, *Spring-boot "
+"configuration* or *code*."
 msgstr ""
+"設定は、 *hotrod-client.properties* 、 *Spring-boot設定* 、または *コード* に配置することができます。"
 
 #. type: Title ===
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:153
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "hotrod-client.properties"
-msgstr ""
+msgstr "hotrod-client.properties"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:156
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "**infinispan.client.hotrod.near_cache.mode=**INVALIDATED\n"
-msgstr ""
+msgstr "*infinispan.client.hotrod.near_cache.mode=* INVALIDATED"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:158
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "**infinispan.client.hotrod.near_cache.max_entries=**40\n"
-msgstr ""
+msgstr "*infinispan.client.hotrod.near_cache.max_entries=* 40"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:160
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*infinispan.client.hotrod.near_cache.cache_name_pattern=*i8n-.*\n"
-msgstr ""
+msgstr "*infinispan.client.hotrod.near_cache.cache_name_pattern=*i8n-.*"
 
 #. type: Title ===
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:163
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "application.yaml (or properties)"
-msgstr ""
+msgstr "application.yaml (またはプロパティ)"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:170
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*infinispan:*\n"
 "   *remote:*\n"
@@ -245,41 +368,76 @@ msgid ""
 "     *near-cache-max-entries:* 10\n"
 "     *near-cache-cache-name-pattern:* i8n-.*\n"
 msgstr ""
+"*infinispan:* remote: near-cache-mode.INVALIDATED near-cache-max- *entries.* "
+"10 near-cache-cache *-name-pattern: i8n-.**"
 
 #. type: Title =====
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:171
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "code "
-msgstr ""
+msgstr "コード"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:175
-msgid "With the Infinispan Spring-Boot Starter, I can add custom configuration using the *InfinispanRemoteCacheCustomizer*."
+#, fuzzy
+msgid ""
+"With the Infinispan Spring-Boot Starter, I can add custom configuration "
+"using the *InfinispanRemoteCacheCustomizer*."
 msgstr ""
+"Infinispan Spring-Boot Starterでは、Infin *ispanRemoteCacheCustomizer* "
+"を使ってカスタム設定を追加することができます。"
 
 #. type: Title ==
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:179
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Results"
-msgstr ""
+msgstr "結果"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:188
-msgid "My dataset contains 25 contributors. If I activate the near cache with max 12 entries and I run my reader again, I get the job done in ~1900 milliseconds, which is already an improvement. If I configure it to hold the complete dataset, I get it done in ~220 milliseconds, which is a big one!"
+#, fuzzy
+msgid ""
+"My dataset contains 25 contributors. If I activate the near cache with max "
+"12 entries and I run my reader again, I get the job done in ~1900 "
+"milliseconds, which is already an improvement. If I configure it to hold the "
+"complete dataset, I get it done in ~220 milliseconds, which is a big one!"
 msgstr ""
+"私のデータセットには25人の貢献者がいます。最大 12 エントリのニアキャッシュを有効にして、再度リーダーを実行すると、 ~1900 "
+"ミリ秒で処理が完了しますが、これはすでに改善されています。完全なデータセットを保持するように設定した場合、 ~220 ミリ秒で完了します。"
 
 #. type: Title ===
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:190
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Conclusions"
-msgstr ""
+msgstr "結論"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:200
-msgid "Near caching can help us speed up our client applications if configured properly. We can test our tuning easily because we only need to add some configuration to the client. Finally, the https://github.com/infinispan/infinispan-spring-boot[Spring-Boot Infinispan Starter] helps us build services with Spring-Boot and Infinispan. "
+#, fuzzy
+msgid ""
+"Near caching can help us speed up our client applications if configured "
+"properly. We can test our tuning easily because we only need to add some "
+"configuration to the client. Finally, the https://github.com/infinispan/"
+"infinispan-spring-boot[Spring-Boot Infinispan Starter] helps us build "
+"services with Spring-Boot and Infinispan. "
 msgstr ""
+"ニアキャッシングは、適切に設定すればクライアントアプリケーションを高速化するのに役立ちます。クライアントにいくつかの設定を追加するだけなので、チューニングを簡単にテストすることができます。最後に、 "
+"link:https://github.com/infinispan/infinispan-spring-boot[Spring-Boot "
+"Infinispan Starter] は、Spring-BootとInfinispanを使ってサービスを構築するのに役立ちます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-02-near-caching-with-spring-boot-and.adoc:209
-msgid "Further work will be done to help Spring-Boot users work with Infinispan, so stay tuned! Any feedback on the starter or any requirement from the community is more that welcome. Find us in https://infinispan.zulipchat.com/[Zulip Chat] for direct contact or post your questions in https://stackoverflow.com/questions/tagged/?tagnames=infinispan&sort=newest[StackOverflow]!"
+#, fuzzy
+msgid ""
+"Further work will be done to help Spring-Boot users work with Infinispan, so "
+"stay tuned! Any feedback on the starter or any requirement from the "
+"community is more that welcome. Find us in https://infinispan.zulipchat.com/"
+"[Zulip Chat] for direct contact or post your questions in https://"
+"stackoverflow.com/questions/tagged/?tagnames=infinispan&sort="
+"newest[StackOverflow]!"
 msgstr ""
+"Spring-"
+"BootユーザーがInfinispanで動作するように、さらなる作業が行われる予定です。スターターに関するフィードバックやコミュニティからの要望は大歓迎です。Zulip "
+"link:https://infinispan.zulipchat.com/[チャット] で直接連絡を取るか、 link:https://"
+"stackoverflow.com/questions/tagged/?tagnames=infinispan&sort="
+"newest[StackOverflow] に質問を投稿してください。"

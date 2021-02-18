@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-08-04-infinispan-900alpha4.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-04-infinispan-900alpha4.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.0.0.Alpha4\n"
@@ -32,27 +32,58 @@ msgid ""
 "date: '2016-08-04T06:01:00.000-07:00'\n"
 "author: ttarrant\n"
 "tags: [ \"release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1440406979301157228\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/08/infinispan-900alpha4.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1440406979301157228\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/08/infinispan-900alpha4."
+"html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 9.0.0.0.Alpha4\n"
+"permalink: /blog/:year/:month/:day/infinispan-900alpha4\n"
+"date: '2016-08-04T06:01:00.000-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1440406979301157228\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/08/infinispan-900alpha4."
+"html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-04-infinispan-900alpha4.adoc:12
+#, fuzzy
 msgid "Dear Infinispan users,"
-msgstr ""
+msgstr "Infinispanユーザーの皆様。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-04-infinispan-900alpha4.adoc:14
+#, fuzzy
 msgid "I am glad to announce that we have released 9.0.0.Alpha4 for you!"
-msgstr ""
+msgstr "9.0.0.0.Alpha4をリリースしたことをお知らせします!"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-04-infinispan-900alpha4.adoc:21
-msgid "A brand new Alpha release from our development branch: 9.0.0.Alpha4 has a slew of bug fixes, and some more enhancements, among which we single out: transactional JDBC cache store and Kubernetes PING support.  We also have added quite a bit of documentation around querying to help users better understand how to use it."
+#, fuzzy
+msgid ""
+"A brand new Alpha release from our development branch: 9.0.0.Alpha4 has a "
+"slew of bug fixes, and some more enhancements, among which we single out: "
+"transactional JDBC cache store and Kubernetes PING support.  We also have "
+"added quite a bit of documentation around querying to help users better "
+"understand how to use it."
 msgstr ""
+"私たちの開発ブランチからの新しいAlphaリリースです。9.0.0.0."
+"Alpha4では、多くのバグ修正といくつかの機能強化が行われており、その中でも特に、トランザクション型のJDBCキャッシュストアとKubernetes "
+"PINGのサポートが強化されています。 また、クエリの使用方法をよりよく理解できるように、クエリに関するドキュメントをかなり多く追加しました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-04-infinispan-900alpha4.adoc:25
-msgid "http://infinispan.org/download/[Download] it now, try it and tell us what you think on the infinispan https://developer.jboss.org/en/infinispan/content[forums] or come and meet us on IRC: channel #infinispan on Freenode."
+#, fuzzy
+msgid ""
+"http://infinispan.org/download/[Download] it now, try it and tell us what "
+"you think on the infinispan https://developer.jboss.org/en/infinispan/"
+"content[forums] or come and meet us on IRC: channel #infinispan on Freenode."
 msgstr ""
+"今すぐ link:http://infinispan.org/download/[ダウンロードして] 、試してみて、infinispanの link:"
+"https://developer.jboss.org/en/infinispan/content[フォーラム] "
+"で感想を伝えるか、IRCで私たちに会いに来てください: チャンネル #infinispan on Freenode."

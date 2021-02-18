@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-12-05-infinispan-71-codename-and-winner-is.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-05-infinispan-71-codename-and-winner-is.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: 'Infinispan 7.1 Codename: And the winner is...'\n"
@@ -32,98 +32,140 @@ msgid ""
 "date: '2014-12-05T06:23:00.003-08:00'\n"
 "author: ttarrant\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1677400196847909730\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/12/infinispan-71-codename-and-winner-is.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1677400196847909730\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/12/infinispan-71-codename-"
+"and-winner-is.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 'Infinispan 7.1 コードネーム：そして勝者は...'\n"
+"permalink: /blog/:year/:month/:day/infinispan-71-codename-and-winner-is\n"
+"date: '2014-12-05T06:23:00.003-08:00'\n"
+"author: ttarrant\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1677400196847909730\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/12/infinispan-71-codename-"
+"and-winner-is.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-05-infinispan-71-codename-and-winner-is.adoc:12
+#, fuzzy
 msgid "Dear Infinispan community,"
-msgstr ""
+msgstr "インフィニスパンのコミュニティへ"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-05-infinispan-71-codename-and-winner-is.adoc:15
-msgid "the scrutiny is complete and YOU have decided the name of the next Infinispan release, which is going to be:"
-msgstr ""
+#, fuzzy
+msgid ""
+"the scrutiny is complete and YOU have decided the name of the next "
+"Infinispan release, which is going to be:"
+msgstr "精査は完了し、YOUは次のInfinispanのリリースの名前を決定しました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-05-infinispan-71-codename-and-winner-is.adoc:18
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Hoptimus Prime*\n"
-msgstr ""
+msgstr "*ホプティマスプライム*"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-05-infinispan-71-codename-and-winner-is.adoc:21
+#, fuzzy
 msgid "The following is a breakdown of the votes:"
-msgstr ""
+msgstr "票の内訳は以下の通りです。"
 
 #. type: Table
 #: upstream/_posts/2014-12-05-infinispan-71-codename-and-winner-is.adoc:25
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Hoptimus Prime"
-msgstr ""
+msgstr "ホプティマスプライム"
 
 #. type: Table
 #: upstream/_posts/2014-12-05-infinispan-71-codename-and-winner-is.adoc:26
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "30%"
-msgstr ""
+msgstr "30%"
 
 #. type: Table
 #: upstream/_posts/2014-12-05-infinispan-71-codename-and-winner-is.adoc:26
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Insanely Bad Elf"
-msgstr ""
+msgstr "滅茶苦茶悪いエルフ"
 
 #. type: Table
 #: upstream/_posts/2014-12-05-infinispan-71-codename-and-winner-is.adoc:27
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "28%"
-msgstr ""
+msgstr "28%"
 
 #. type: Table
 #: upstream/_posts/2014-12-05-infinispan-71-codename-and-winner-is.adoc:27
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Aventinus"
-msgstr ""
+msgstr "アベンティヌス"
 
 #. type: Table
 #: upstream/_posts/2014-12-05-infinispan-71-codename-and-winner-is.adoc:28
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "23%"
-msgstr ""
+msgstr "23%"
 
 #. type: Table
 #: upstream/_posts/2014-12-05-infinispan-71-codename-and-winner-is.adoc:28
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Amber Shock"
-msgstr ""
+msgstr "アンバーショック"
 
 #. type: Table
 #: upstream/_posts/2014-12-05-infinispan-71-codename-and-winner-is.adoc:29
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "14%"
-msgstr ""
+msgstr "14%"
 
 #. type: Table
 #: upstream/_posts/2014-12-05-infinispan-71-codename-and-winner-is.adoc:29
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Drake's Hopocalypse"
-msgstr ""
+msgstr "ドレイクのホポカリプス"
 
 #. type: Table
 #: upstream/_posts/2014-12-05-infinispan-71-codename-and-winner-is.adoc:30
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "5%"
-msgstr ""
+msgstr "5%"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-05-infinispan-71-codename-and-winner-is.adoc:36
-msgid "Since Hoptimus Prime has been http://www.beeradvocate.com/beer/profile/7773/31941/[retired] we will have to celebrate by drinking one of the other wonderful runners-up. "
+#, fuzzy
+msgid ""
+"Since Hoptimus Prime has been http://www.beeradvocate.com/beer/profile/7773/"
+"31941/[retired] we will have to celebrate by drinking one of the other "
+"wonderful runners-up. "
 msgstr ""
+"ホプティマスプライムが link:http://www.beeradvocate.com/beer/profile/7773/31941/[引退] "
+"したので、もう一人の素晴らしい準優勝者を飲んでお祝いしなければなりません。"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-05-infinispan-71-codename-and-winner-is.adoc:44
-msgid "Remember that, aside from choosing codenames, you can also contribute to Infinispan in many ways: https://github.com/infinispan/infinispan[code], http://infinispan.org/documentation/[documentation], https://issues.jboss.org/browse/ISPN[bug reports], https://developer.jboss.org/en/infinispan/content?filterID=contentstatus%5Bpublished%5D~objecttype~objecttype%5Bthread%5D[helping on the forum], discussing ideas on the http://markmail.org/search/?q=list%3Aorg.jboss.lists.infinispan-dev[mailing list] or just chat with us on #infinispan on Freenode's IRC servers."
+#, fuzzy
+msgid ""
+"Remember that, aside from choosing codenames, you can also contribute to "
+"Infinispan in many ways: https://github.com/infinispan/infinispan[code], "
+"http://infinispan.org/documentation/[documentation], https://issues.jboss."
+"org/browse/ISPN[bug reports], https://developer.jboss.org/en/infinispan/"
+"content?filterID="
+"contentstatus%5Bpublished%5D~objecttype~objecttype%5Bthread%5D[helping on "
+"the forum], discussing ideas on the http://markmail.org/search/?q=list%3Aorg."
+"jboss.lists.infinispan-dev[mailing list] or just chat with us on #infinispan "
+"on Freenode's IRC servers."
 msgstr ""
+"コードネームの選択以外にも、 link:https://github.com/infinispan/infinispan[コード] 、 link:"
+"http://infinispan.org/documentation/[ドキュメント] 、 link:https://issues.jboss.org/"
+"browse/ISPN[バグレポート] 、https://developer.jboss.org/en/infinispan/"
+"content?filterID="
+"contentstatus%5Bpublished%5Dobjecttypeobjecttype%5Bthread%5D[フォーラムでの支援]、 "
+"link:http://markmail.org/search/?q=list%3Aorg.jboss.lists.infinispan-"
+"dev[メーリングリスト] "
+"でのアイデアの議論、FreenodeのIRCサーバの#infinispanでのチャットなど、様々な方法でInfinispanに貢献することができることを覚えておいてください。"

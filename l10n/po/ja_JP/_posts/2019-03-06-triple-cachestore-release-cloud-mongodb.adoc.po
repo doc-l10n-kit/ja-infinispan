@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2019-03-06-triple-cachestore-release-cloud-mongodb.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-06-triple-cachestore-release-cloud-mongodb.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: 'Triple cachestore release: Cloud, MongoDB and Cassandra'\n"
@@ -32,50 +32,90 @@ msgid ""
 "date: '2019-03-06T07:07:00.000-08:00'\n"
 "author: ttarrant\n"
 "tags: [ \" release\", \"cache store\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8095288746060415020\n"
-"blogger_orig_url: https://blog.infinispan.org/2019/03/triple-cachestore-release-cloud-mongodb.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8095288746060415020\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/03/triple-cachestore-"
+"release-cloud-mongodb.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 'トリプルキャッシュストアのリリースクラウド、MongoDB、Cassandra'\n"
+"permalink: /blog/:year/:month/:day/triple-cachestore-release-cloud-mongodb\n"
+"date: '2019-03-06T07:07:00.000-08:00'\n"
+"author: ttarrant\n"
+"tags: [ \" release\", \"cache store\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8095288746060415020\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/03/triple-cachestore-"
+"release-cloud-mongodb.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-06-triple-cachestore-release-cloud-mongodb.adoc:13
-msgid "Today we present to you a trifecta of cache store releases which align to Infinispan 9.x"
-msgstr ""
+#, fuzzy
+msgid ""
+"Today we present to you a trifecta of cache store releases which align to "
+"Infinispan 9.x"
+msgstr "本日は、Infinispan 9.xに対応したキャッシュストアのリリースをご紹介します。"
 
 #. type: Title ==
 #: upstream/_posts/2019-03-06-triple-cachestore-release-cloud-mongodb.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Cassandra Cache Store"
-msgstr ""
+msgstr "カサンドラキャッシュストア"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-06-triple-cachestore-release-cloud-mongodb.adoc:19
-msgid "The Cassandra cache store now implements the https://docs.jboss.org/infinispan/9.4/apidocs/org/infinispan/persistence/spi/AdvancedCacheLoader.html#publishEntries(java.util.function.Predicate,boolean,boolean)[publishEntries/publishKeys] methods."
+#, fuzzy
+msgid ""
+"The Cassandra cache store now implements the https://docs.jboss.org/"
+"infinispan/9.4/apidocs/org/infinispan/persistence/spi/AdvancedCacheLoader."
+"html#publishEntries(java.util.function."
+"Predicate,boolean,boolean)[publishEntries/publishKeys] methods."
 msgstr ""
+"Cassandraキャッシュストアは、 link:https://docs.jboss.org/infinispan/9.4/apidocs/org/"
+"infinispan/persistence/spi/AdvancedCacheLoader.html#publishEntries(java.util."
+"function.Predicate,boolean,boolean)[publishEntries/publishKeys] "
+"メソッドを実装するようになりました。"
 
 #. type: Title ==
 #: upstream/_posts/2019-03-06-triple-cachestore-release-cloud-mongodb.adoc:20
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Cloud Cache Store"
-msgstr ""
+msgstr "クラウドキャッシュストア"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-06-triple-cachestore-release-cloud-mongodb.adoc:27
-msgid "The Cloud cache store uses the Apache jclouds library to store data on cloud storage providers such as Amazon’s S3, Rackspace’s Cloudfiles or any other such provider supported by JClouds.  The store has been updated to Infinispan 9.x's persistence SPI and uses jclouds 2.1.x"
+#, fuzzy
+msgid ""
+"The Cloud cache store uses the Apache jclouds library to store data on cloud "
+"storage providers such as Amazon’s S3, Rackspace’s Cloudfiles or any other "
+"such provider supported by JClouds.  The store has been updated to "
+"Infinispan 9.x's persistence SPI and uses jclouds 2.1.x"
 msgstr ""
+"クラウドキャッシュストアは、AmazonのS3やRackspaceのCloudfilesなど、JCloudsがサポートするクラウドストレージプロバイダにデータを保存するためにApacheのjcloudsライブラリを使用しています。ストアはInfinispan "
+"9.xのパーシステンスSPIにアップデートされ、jclouds 2.1.xを使用しています。"
 
 #. type: Title ==
 #: upstream/_posts/2019-03-06-triple-cachestore-release-cloud-mongodb.adoc:28
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "MongoDB Cache Store"
-msgstr ""
+msgstr "MongoDB キャッシュストア"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-06-triple-cachestore-release-cloud-mongodb.adoc:32
-msgid "This cache store has also been updated to the Infinispan 9.x persistence SPI."
-msgstr ""
+#, fuzzy
+msgid ""
+"This cache store has also been updated to the Infinispan 9.x persistence SPI."
+""
+msgstr "このキャッシュストアもInfinispan 9.x persistence SPIに更新されました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-06-triple-cachestore-release-cloud-mongodb.adoc:34
-msgid "You can get documentation and maven coordinates from our http://infinispan.org/cache-store-implementations/[Cache Store page]"
+#, fuzzy
+msgid ""
+"You can get documentation and maven coordinates from our http://infinispan."
+"org/cache-store-implementations/[Cache Store page]"
 msgstr ""
+"ドキュメントと maven の座標は link:http://infinispan.org/cache-store-implementations/"
+"[Cache Store のページ] から取得できます。"

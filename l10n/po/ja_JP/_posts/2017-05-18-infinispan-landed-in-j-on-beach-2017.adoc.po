@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-05-18-infinispan-landed-in-j-on-beach-2017.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-18-infinispan-landed-in-j-on-beach-2017.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan landed on J On The Beach 2017\n"
@@ -32,17 +32,41 @@ msgid ""
 "date: '2017-05-18T08:02:00.003-07:00'\n"
 "author: galder\n"
 "tags: [ \" conference\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2659820759474627114\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/05/infinispan-landed-in-j-on-beach-2017.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2659820759474627114\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/05/infinispan-landed-in-j-"
+"on-beach-2017.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: インフィニスパンがJオンザビーチ2017に上陸\n"
+"permalink: /blog/:year/:month/:day/infinispan-landed-in-j-on-beach-2017\n"
+"date: '2017-05-18T08:02:00.003-07:00'\n"
+"author: galder\n"
+"tags: [ \" conference\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2659820759474627114\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/05/infinispan-landed-in-j-"
+"on-beach-2017.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-18-infinispan-landed-in-j-on-beach-2017.adoc:16
-msgid "Are you in Malaga for https://jonthebeach.com/[J On The Beach 2017] and want to know more about functional reactive programming with Elm, Node.js and Infinispan? Then, make sure you come to https://jonthebeach.com/schedule[this talk] on Friday, 11am at Mollete Hall. It's a fun, live coding talk that you just can't miss :)"
+#, fuzzy
+msgid ""
+"Are you in Malaga for https://jonthebeach.com/[J On The Beach 2017] and want "
+"to know more about functional reactive programming with Elm, Node.js and "
+"Infinispan? Then, make sure you come to https://jonthebeach.com/"
+"schedule[this talk] on Friday, 11am at Mollete Hall. It's a fun, live coding "
+"talk that you just can't miss :)"
 msgstr ""
+"link:https://jonthebeach.com/[J On The Beach 2017] のためにマラガにいて、Elm、Node."
+"js、Infinispanを使った機能的リアクティブプログラミングについてもっと知りたいですか？それなら、金曜日の午前11時にMollete "
+"Hallで開催される link:https://jonthebeach.com/schedule[このトーク] "
+"に必ず来てください。楽しいライブコーディングトークは見逃せません :)"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-18-infinispan-landed-in-j-on-beach-2017.adoc:18
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

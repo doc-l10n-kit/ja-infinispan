@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.4.0.CR1 is out!\n"
@@ -32,82 +32,151 @@ msgid ""
 "date: '2018-08-27T01:34:00.001-07:00'\n"
 "author: karesti\n"
 "tags: [ \" release\", \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8732546449779560601\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/08/infinispan-940cr1-is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8732546449779560601\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/08/infinispan-940cr1-is-"
+"out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 9.4.0.CR1が出ました!\n"
+"permalink: /blog/:year/:month/:day/infinispan-940cr1-is-out\n"
+"date: '2018-08-27T01:34:00.001-07:00'\n"
+"author: karesti\n"
+"tags: [ \" release\", \"release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8732546449779560601\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/08/infinispan-940cr1-is-"
+"out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:12
+#, fuzzy
 msgid "Dear Infinispan users,"
-msgstr ""
+msgstr "Infinispanユーザーの皆様。"
 
 #. type: Plain text
 #: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:15
-msgid "We have just released *9.4.0.CR1* which includes bug fixes and improvements."
-msgstr ""
+#, fuzzy
+msgid ""
+"We have just released *9.4.0.CR1* which includes bug fixes and improvements."
+msgstr "バグ修正と改善を含む *9.4.0.CR1を* リリースしました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:17
+#, fuzzy
 msgid "Highlights of this release include:"
-msgstr ""
+msgstr "このリリースのハイライトは以下の通りです。"
 
 #. type: Plain text
 #: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:20
-msgid "Near cache and client side TTL (https://issues.jboss.org/browse/ISPN-9098[ISPN-9098]) "
+#, fuzzy
+msgid ""
+"Near cache and client side TTL (https://issues.jboss.org/browse/ISPN-"
+"9098[ISPN-9098]) "
 msgstr ""
+"ニアキャッシュとクライアント側TTL link:https://issues.jboss.org/browse/ISPN-9098[(ISPN-"
+"9098] )"
 
 #. type: Plain text
 #: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:22
-msgid "Allow configuring near cache from hot rod properties (https://issues.jboss.org/browse/ISPN-9385[ISPN-9385]) "
+#, fuzzy
+msgid ""
+"Allow configuring near cache from hot rod properties (https://issues.jboss."
+"org/browse/ISPN-9385[ISPN-9385]) "
 msgstr ""
+"ホットロッドのプロパティからニアキャッシュの設定を許可 link:https://issues.jboss.org/browse/ISPN-"
+"9385[(ISPN-9385] )"
 
 #. type: Plain text
 #: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:23
+#, fuzzy
 msgid "Initial support for JSON format in scripts "
-msgstr ""
+msgstr "スクリプトでのJSONフォーマットの初期サポート"
 
 #. type: Plain text
 #: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:25
-msgid "Default analyzers are provided to use with remote queries (https://issues.jboss.org/browse/ISPN-9429[ISPN-9429]) "
+#, fuzzy
+msgid ""
+"Default analyzers are provided to use with remote queries (https://issues."
+"jboss.org/browse/ISPN-9429[ISPN-9429]) "
 msgstr ""
+"デフォルトのアナライザは、リモートクエリで使用するために提供されています link:https://issues.jboss.org/browse/"
+"ISPN-9429[(ISPN-9429] )"
 
 #. type: Plain text
 #: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:27
-msgid "Prevent user from configuring passivation with a shared store (https://issues.jboss.org/browse/ISPN-7168[ISPN-7168]) "
+#, fuzzy
+msgid ""
+"Prevent user from configuring passivation with a shared store (https://"
+"issues.jboss.org/browse/ISPN-7168[ISPN-7168]) "
 msgstr ""
+"ユーザが共有ストアでパッシベーションを設定できないようにする link:https://issues.jboss.org/browse/ISPN-"
+"7168[(ISPN-7168] )"
 
 #. type: Plain text
 #: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:29
-msgid "Enhance RemoteStore to support segmentation (https://issues.jboss.org/browse/ISPN-9376[ISPN-9376]) "
+#, fuzzy
+msgid ""
+"Enhance RemoteStore to support segmentation (https://issues.jboss.org/browse/"
+"ISPN-9376[ISPN-9376]) "
 msgstr ""
+"セグメンテーションをサポートするためにRemoteStoreを強化 link:https://issues.jboss.org/browse/ISPN-"
+"9376[（ISPN-9376]"
 
 #. type: Plain text
 #: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:31
-msgid "Upgrade to RxJava 2.2.0 (https://issues.jboss.org/browse/ISPN-9418[ISPN-9418]) "
+#, fuzzy
+msgid ""
+"Upgrade to RxJava 2.2.0 (https://issues.jboss.org/browse/ISPN-9418[ISPN-"
+"9418]) "
 msgstr ""
+"RxJava 2.2.0へのアップグレード link:https://issues.jboss.org/browse/ISPN-9418[(ISPN-"
+"9418] )"
 
 #. type: Plain text
 #: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:34
-msgid "Hot Rod configuration properties have setters now to ease integration with other frameworks (https://issues.jboss.org/browse/ISPN-9398[ISPN-9398]) "
+#, fuzzy
+msgid ""
+"Hot Rod configuration properties have setters now to ease integration with "
+"other frameworks (https://issues.jboss.org/browse/ISPN-9398[ISPN-9398]) "
 msgstr ""
+"Hot Rod の設定プロパティにセッターが追加され、他のフレームワークとの統合が容易になりました link:https://issues.jboss."
+"org/browse/ISPN-9398[(ISPN-9398] )。"
 
 #. type: Plain text
 #: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:37
-msgid "The full list of 9.4.0.CR1 fixes are https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12337826[here]."
+#, fuzzy
+msgid ""
+"The full list of 9.4.0.CR1 fixes are https://issues.jboss.org/secure/"
+"ReleaseNote.jspa?projectId=12310799&version=12337826[here]."
 msgstr ""
+"9.4.0.CR1 の全修正リストは link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12337826[こちら] 。"
 
 #. type: Plain text
 #: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:43
-msgid "You can find the release on our http://infinispan.org/download/[download page]. Please report any issues in our https://issues.jboss.org/projects/ISPN[issue tracker] and join the conversation in our https://infinispan.zulipchat.com/[Zulip Chat] to shape up our next release."
+#, fuzzy
+msgid ""
+"You can find the release on our http://infinispan.org/download/[download "
+"page]. Please report any issues in our https://issues.jboss.org/projects/"
+"ISPN[issue tracker] and join the conversation in our https://infinispan."
+"zulipchat.com/[Zulip Chat] to shape up our next release."
 msgstr ""
+"リリースは link:http://infinispan.org/download/[ダウンロードページ] "
+"でご覧いただけます。何か問題があれば、私たちの問題 link:https://issues.jboss.org/projects/ISPN[追跡] "
+"に報告し、次のリリースを形作るために私たちの link:https://infinispan.zulipchat.com/[Zulipチャット] "
+"で会話に参加してください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:45
+#, fuzzy
 msgid "Enjoy,"
-msgstr ""
+msgstr "楽しんでください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-08-27-infinispan-940cr1-is-out.adoc:46
+#, fuzzy
 msgid "The Infinispan Team"
-msgstr ""
+msgstr "インフィニスパンチーム"

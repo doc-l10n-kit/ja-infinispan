@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan Spring Boot Starter 2.1.5.Final and 1.0.7.Final are out!\n"
@@ -32,141 +32,246 @@ msgid ""
 "date: '2019-04-05T02:48:00.003-07:00'\n"
 "author: karesti\n"
 "tags: [ \"release\", \"spring boot\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6961437587141942321\n"
-"blogger_orig_url: https://blog.infinispan.org/2019/04/infinispan-spring-boot-starter-215final.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6961437587141942321\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/04/infinispan-spring-boot-"
+"starter-215final.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan Spring Boot Starter 2.1.5.Finalと1.0.7.Finalがリリースされました。\n"
+"permalink: /blog/:year/:month/:day/infinispan-spring-boot-starter-215final\n"
+"date: '2019-04-05T02:48:00.003-07:00'\n"
+"author: karesti\n"
+"tags: [ \"release\", \"spring boot\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6961437587141942321\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/04/infinispan-spring-boot-"
+"starter-215final.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:13
+#, fuzzy
 msgid "Dear Infinispan and Spring Boot users,"
-msgstr ""
+msgstr "InfinispanとSpring Bootをご利用の皆様。"
 
 #. type: Plain text
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:17
-msgid "We have just released https://github.com/infinispan/infinispan-spring-boot[Infinispan Spring Boot Starter] **2.1.5.Final **and *1.0.7.Final*."
+#, fuzzy
+msgid ""
+"We have just released https://github.com/infinispan/infinispan-spring-"
+"boot[Infinispan Spring Boot Starter] **2.1.5.Final **and *1.0.7.Final*."
 msgstr ""
+"link:https://github.com/infinispan/infinispan-spring-boot[Infinispan Spring "
+"Boot Starter] 2 link:https://github.com/infinispan/infinispan-spring-boot[."
+"1] .5. *Finalと1.0.7.* Finalをリリースしました。"
 
 #. type: Title ====
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:19
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*2.1.5.Final*"
-msgstr ""
+msgstr "*2.1.5.最終*"
 
 #. type: Plain text
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:22
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:92
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*\n"
-msgstr ""
+msgstr "*"
 
 #. type: Plain text
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:24
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "**2.1.5.Final** is using** Infinispan 9.4.11.Final** and **Spring-Boot\n"
 "2.1.4.RELEASE**.\n"
 msgstr ""
+"*2.1.5.Finalは* *Infinispan 9.4.11.Finalと* Spring-Boot 2.1.4. *RELEASE* "
+"を使用しています *。*"
 
 #. type: Title =====
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:25
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Important Spring-Boot bug fix*"
-msgstr ""
+msgstr "*重要なSpring-Bootのバグフィックス*"
 
 #. type: Plain text
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:38
-msgid "Previous versions of Spring-Boot 2.1.x contained a bug related to the https://openjdk.java.net/jeps/238[multi-release jars]. Infinispan contains multi-release jars, in consequence, we could not run our applications using java -jar with Java 11 (Java 8 worked fine). For additional explanations, read https://stackoverflow.com/questions/54635814/why-does-infinispan-fail-with-noclassdeffounderror-on-spring-boot-java-11[here].  Spring-Boot team has fixed this https://github.com/spring-projects/spring-boot/issues/15981[bug] and released the correction in Spring-Boot 2.1.4.RELEASE, along with https://github.com/spring-projects/spring-boot/releases/tag/v2.1.4.RELEASE[many other features and bug fixes], so consider upgrading soon."
+#, fuzzy
+msgid ""
+"Previous versions of Spring-Boot 2.1.x contained a bug related to the https:/"
+"/openjdk.java.net/jeps/238[multi-release jars]. Infinispan contains multi-"
+"release jars, in consequence, we could not run our applications using java -"
+"jar with Java 11 (Java 8 worked fine). For additional explanations, read "
+"https://stackoverflow.com/questions/54635814/why-does-infinispan-fail-with-"
+"noclassdeffounderror-on-spring-boot-java-11[here].  Spring-Boot team has "
+"fixed this https://github.com/spring-projects/spring-boot/issues/"
+"15981[bug] and released the correction in Spring-Boot 2.1.4.RELEASE, along "
+"with https://github.com/spring-projects/spring-boot/releases/tag/v2.1.4."
+"RELEASE[many other features and bug fixes], so consider upgrading soon."
 msgstr ""
+"以前のバージョンのSpring-Boot 2.1.xには、マルチリリース・ジャーに関連したバグがありました link:https://openjdk."
+"java.net/jeps/238[。] Infinispanにはマルチリリースのjarが含まれているため、Java 11でjava -"
+"jarを使ったアプリケーションを実行することができませんでした(Java 8では問題なく動作しました)。追加の説明は link:https://"
+"stackoverflow.com/questions/54635814/why-does-infinispan-fail-with-"
+"noclassdeffounderror-on-spring-boot-java-11[こちらを] 参照してください。Spring-"
+"Bootチームはこのバグを修正し link:https://github.com/spring-projects/spring-boot/issues/"
+"15981[、] Spring-Boot 2.1.4.RELEASEで link:https://github.com/spring-projects/"
+"spring-boot/releases/tag/v2.1.4.RELEASE[修正] をリリースしました。"
 
 #. type: Title =====
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:39
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Statistics on Client/Server mode and Actuator*"
-msgstr ""
+msgstr "*クライアント/サーバモードとアクチュエータの統計*"
 
 #. type: Plain text
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:47
-msgid "Statistics configuration in client/server mode for the client evolved in the latest Infinispan versions. As a remainder, to activate actuator statistics in client/server mode : \"Configure 'infinispan.remote.statistics=true' in the\", *application.properties* [.underline]#or#"
+#, fuzzy
+msgid ""
+"Statistics configuration in client/server mode for the client evolved in the "
+"latest Infinispan versions. As a remainder, to activate actuator statistics "
+"in client/server mode : \"Configure 'infinispan.remote.statistics=true' in "
+"the\", *application.properties* [.underline]#or#"
 msgstr ""
+"クライアントのクライアント/サーバモードでの統計情報の設定は、最新のInfinispanバージョンで進化しました。余談ですが、クライアント/"
+"サーバーモードでアクチュエータの統計情報を有効にするには .\"で'infinispan *.* remote.statistics="
+"true'を設定してください。"
 
 #. type: Plain text
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:50
-msgid "Configure ''infinispan.client.hotrod.statistics=true\" in the *hotrod-client.properties* [.underline]#or#"
+#, fuzzy
+msgid ""
+"Configure ''infinispan.client.hotrod.statistics=true\" in the *hotrod-client."
+"properties* [.underline]#or#"
 msgstr ""
+"設定は、'infinispan.client.hotrod.statistics=true'を *hotrod-client.properties* "
+"または"
 
 #. type: Plain text
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:51
+#, fuzzy
 msgid "Configure by code, for example:"
-msgstr ""
+msgstr "コードなどで設定します。"
 
 #. type: Plain text
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:57
-msgid "@Bean public InfinispanRemoteConfigurer infinispanRemoteConfigurer() \\{     return () -> new ConfigurationBuilder().statistics().enable().build(); }"
+#, fuzzy
+msgid ""
+"@Bean public InfinispanRemoteConfigurer infinispanRemoteConfigurer() \\{     "
+"return () -> new ConfigurationBuilder().statistics().enable().build(); }"
 msgstr ""
+"@Bean public InfinispanRemoteConfigurer infinispanRemoteConfigurer() \\{     "
+"return () -> new ConfigurationBuilder().statistics().enable().build(); }"
 
 #. type: Title =====
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:60
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "JMX"
-msgstr ""
+msgstr "ジェイエムエックス"
 
 #. type: Plain text
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:67
-msgid "If you want to use Infinispan and JMX, for example on Client/Server mode, set the 'jmx' property 'true' as explained above with the 'statistics' property. However, you might get a javax.management.InstanceAlreadyExistsException because both Infinispan and Spring will try to register the MXBean."
+#, fuzzy
+msgid ""
+"If you want to use Infinispan and JMX, for example on Client/Server mode, "
+"set the 'jmx' property 'true' as explained above with the 'statistics' "
+"property. However, you might get a javax.management."
+"InstanceAlreadyExistsException because both Infinispan and Spring will try "
+"to register the MXBean."
 msgstr ""
+"InfinispanとJMXを使いたい場合、例えばクライアント/"
+"サーバーモードで使用する場合は、上で説明したように'statistics'プロパティで'jmx'プロパティを'true'に設定します。しかし、InfinispanもSpringもMXBeanを登録しようとするので、javax."
+"management.InstanceAlreadyExistsExceptionが発生する可能性があります。"
 
 #. type: Plain text
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:71
-msgid "The correction will land on the next starter release. If you need to avoid this error today, you can tell Spring-Boot not to register the bean with the following code (Thanks Stéphane Nicoll for the tip!):"
+#, fuzzy
+msgid ""
+"The correction will land on the next starter release. If you need to avoid "
+"this error today, you can tell Spring-Boot not to register the bean with the "
+"following code (Thanks Stéphane Nicoll for the tip!):"
 msgstr ""
+"修正は次のスターターリリースで行われます。今日中にこのエラーを回避する必要がある場合は、以下のコードでSpring-"
+"Bootにビーンを登録しないように指示することができます(ヒントをくれたStéphane Nicollさんに感謝します！)。"
 
 #. type: Title =====
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:77
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Testcontainers"
-msgstr ""
+msgstr "テストコンテイナー"
 
 #. type: Plain text
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:86
-msgid "This version includes an integration test using https://testcontainers.org/[Testcontainers], https://junit.org/junit5/[JUnit5] and the https://hub.docker.com/r/jboss/infinispan-server[Infinispan Server].  Grab a look https://github.com/infinispan/infinispan-spring-boot/blob/90e79a81dd32a6c9462e76bfdfb175e2c751b3f0/infinispan-spring-boot-starter-remote/src/test/java/test/org/infinispan/spring/starter/remote/actuator/RemoteCacheMetricBinderTest.java[here] if you are curious."
+#, fuzzy
+msgid ""
+"This version includes an integration test using https://testcontainers.org/"
+"[Testcontainers], https://junit.org/junit5/[JUnit5] and the https://hub."
+"docker.com/r/jboss/infinispan-server[Infinispan Server].  Grab a look https:/"
+"/github.com/infinispan/infinispan-spring-boot/blob/"
+"90e79a81dd32a6c9462e76bfdfb175e2c751b3f0/infinispan-spring-boot-starter-"
+"remote/src/test/java/test/org/infinispan/spring/starter/remote/actuator/"
+"RemoteCacheMetricBinderTest.java[here] if you are curious."
 msgstr ""
+"このバージョンには、 link:https://testcontainers.org/[Testcontainers] 、 link:https://"
+"junit.org/junit5/[JUnit5] 、 link:https://hub.docker.com/r/jboss/infinispan-"
+"server[Infinispan Server] を使った統合テストが含まれています。興味のある方は link:https://github.com/"
+"infinispan/infinispan-spring-boot/blob/"
+"90e79a81dd32a6c9462e76bfdfb175e2c751b3f0/infinispan-spring-boot-starter-"
+"remote/src/test/java/test/org/infinispan/spring/starter/remote/actuator/"
+"RemoteCacheMetricBinderTest.java[こちら] をご覧ください。"
 
 #. type: Title ====
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:89
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*1.0.7.Final*"
-msgstr ""
+msgstr "*1.0.7.Final*"
 
 #. type: Plain text
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:94
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*1.0.7.Final* upgrades to *1.5.19.RELEASE* and Infinispan\n"
 "*9.4.11.Final*.\n"
-msgstr ""
+msgstr "*1.0.7* .1.5.19 *.RELEASEとInfinispan* 9.4.11. *Final* にアップグレード *。*"
 
 #. type: Plain text
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:99
-msgid "⭐ Don't forget to *star* the project in https://github.com/infinispan/infinispan-spring-boot[GitHub] if you like the starter! ⭐"
+#, fuzzy
+msgid ""
+"⭐ Don't forget to *star* the project in https://github.com/infinispan/"
+"infinispan-spring-boot[GitHub] if you like the starter! ⭐"
 msgstr ""
+"⭐ 気に入った方は link:https://github.com/infinispan/infinispan-spring-boot[GitHub] "
+"でプロジェクトを *スターターする* のを忘れずに!⭐"
 
 #. type: Plain text
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:103
+#, fuzzy
 msgid "You can find these releases in the maven central repository."
-msgstr ""
+msgstr "これらのリリースは、mavenのセントラルリポジトリで見つけることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:108
-msgid "Please report any issues in our https://issues.jboss.org/projects/ISPN[issue tracker] and join the conversation in our https://infinispan.zulipchat.com/[Zulip Chat] to shape up our next release."
+#, fuzzy
+msgid ""
+"Please report any issues in our https://issues.jboss.org/projects/ISPN[issue "
+"tracker] and join the conversation in our https://infinispan.zulipchat.com/"
+"[Zulip Chat] to shape up our next release."
 msgstr ""
+"私たちの問題 link:https://issues.jboss.org/projects/ISPN[追跡] に問題があれば報告し link:https:"
+"//issues.jboss.org/projects/ISPN[、] 次のリリースを link:https://infinispan."
+"zulipchat.com/[形作る] ためにZulipチャットで会話に参加してください。"
 
 #. type: Plain text
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:110
+#, fuzzy
 msgid "Enjoy,"
-msgstr ""
+msgstr "楽しんでください。"
 
 #. type: Plain text
 #: upstream/_posts/2019-04-05-infinispan-spring-boot-starter-215final.adoc:111
+#, fuzzy
 msgid "The Infinispan Team"
-msgstr ""
+msgstr "インフィニスパンチーム"

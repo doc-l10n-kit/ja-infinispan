@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-09-19-520alpha4-bring-cross-site-replication.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-19-520alpha4-bring-cross-site-replication.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: '5.2.0.Alpha4 brings cross-site replication into Infinispan!  '\n"
@@ -32,17 +32,53 @@ msgid ""
 "date: '2012-09-19T12:53:00.000-07:00'\n"
 "author: mmarkus\n"
 "tags: [ \"xsite\", \"cross site replication\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1963520953941388533\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/09/520alpha4-bring-cross-site-replication.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1963520953941388533\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/09/520alpha4-bring-cross-"
+"site-replication.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: '5.2.0.0.Alpha4はInfinispanにクロスサイトレプリケーションをもたらします!  '\n"
+"permalink: /blog/:year/:month/:day/520alpha4-bring-cross-site-replication\n"
+"date: '2012-09-19T12:53:00.000-07:00'\n"
+"author: mmarkus\n"
+"tags: [ \"xsite\", \"cross site replication\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1963520953941388533\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/09/520alpha4-bring-cross-"
+"site-replication.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-19-520alpha4-bring-cross-site-replication.adoc:26
-msgid "Besides other https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12319891[enhancements and fixes], this release brings the first implementation of the cross-site replication functionality in Infinispan. In other words, you can now use Infinispan for backing up your data across geographically distributed sites or migrate your data where your users are (follow the sun).  More about the x-site replication functionality https://docs.jboss.org/author/display/ISPN/Cross+site+replication[here].  You can http://www.jboss.org/infinispan/downloads[download] the distribution or the https://repository.jboss.org/nexus/content/repositories/releases/org/infinispan/[maven artifact]. If you have any questions please check our http://www.jboss.org/infinispan/forums[forums], our mailing lists or ping us directly on irc://irc.freenode.org/infinispan[IRC]!"
+#, fuzzy
+msgid ""
+"Besides other https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
+"12310799&version=12319891[enhancements and fixes], this release brings the "
+"first implementation of the cross-site replication functionality in "
+"Infinispan. In other words, you can now use Infinispan for backing up your "
+"data across geographically distributed sites or migrate your data where your "
+"users are (follow the sun).  More about the x-site replication "
+"functionality https://docs.jboss.org/author/display/ISPN/"
+"Cross+site+replication[here].  You can http://www.jboss.org/infinispan/"
+"downloads[download] the distribution or the https://repository.jboss.org/"
+"nexus/content/repositories/releases/org/infinispan/[maven artifact]. If you "
+"have any questions please check our http://www.jboss.org/infinispan/"
+"forums[forums], our mailing lists or ping us directly on irc://irc.freenode."
+"org/infinispan[IRC]!"
 msgstr ""
+"その他の link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
+"12310799&version=12319891[機能強化と修正] "
+"に加えて、このリリースでは、Infinispanに初めてクロスサイトレプリケーション機能が実装されました。言い換えれば、地理的に分散したサイト間でデータをバックアップしたり、ユーザーがいる場所にデータを移行したりするためにInfinispanを使用することができるようになりました。xサイトレプリケーション機能についての詳細はこちらをご覧ください。ディストリビューションまたは "
+"link:https://repository.jboss.org/nexus/content/repositories/releases/org/"
+"infinispan/[mavenアーティファクト] を link:http://www.jboss.org/infinispan/"
+"downloads[ダウンロードする] ことができます。質問があれば、 link:http://www.jboss.org/infinispan/"
+"forums[フォーラム] やメーリングリストをチェックするか、 link:irc://irc.freenode.org/infinispan[IRC] "
+"で直接質問してください!"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-19-520alpha4-bring-cross-site-replication.adoc:28
+#, fuzzy
 msgid "Cheers, Mircea"
-msgstr ""
+msgstr "乾杯、ミルセア"

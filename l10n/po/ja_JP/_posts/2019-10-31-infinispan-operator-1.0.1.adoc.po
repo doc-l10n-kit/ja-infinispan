@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-infinispan-operator-1.0.1.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-infinispan-operator-1.0.1.adoc:8
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan Operator 1.0.1\n"
@@ -34,108 +34,183 @@ msgid ""
 "tags: [ \"dev-preview\", \"release\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan Operator 1.0.1\n"
+"permalink: /blog/:year/:month/:day/infinispan-operator-1\n"
+"date: '2019-11-25T12:00:00.000-00:00'\n"
+"author: rigazilla\n"
+"tags: [ \"dev-preview\", \"release\" ]\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_posts/2019-10-31-infinispan-operator-1.0.1.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Infinispan Operator 1.0.1 “Chupacabra Trainer”"
-msgstr ""
+msgstr "インフィニスパン オペレーター 1.0.1 \"チュパカブラトレーナー\""
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-infinispan-operator-1.0.1.adoc:13
+#, fuzzy
 msgid "Dear Infinispan community,"
-msgstr ""
+msgstr "インフィニスパンのコミュニティへ"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-infinispan-operator-1.0.1.adoc:15
-msgid "we know you are happy with the new shining 10.0.0 Infinispan release, but if you are among those who are missing a new operator version for safely running your Infinispan Chupachabra in the clound, this post is for you!"
+#, fuzzy
+msgid ""
+"we know you are happy with the new shining 10.0.0 Infinispan release, but if "
+"you are among those who are missing a new operator version for safely "
+"running your Infinispan Chupachabra in the clound, this post is for you!"
 msgstr ""
+"私たちはあなたが新しい輝く10.0.0 "
+"Infinispanリリースに満足していることを知っていますが、あなたがクラウンドで安全にあなたのInfinispanチュパチャブラを実行するための新しい演算子のバージョンを欠落している人の間にある場合は、この記事はあなたのためです"
 
 #. type: Title ===
 #: upstream/_posts/2019-10-31-infinispan-operator-1.0.1.adoc:16
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Versioning and channels"
-msgstr ""
+msgstr "バージョニングとチャンネル"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-infinispan-operator-1.0.1.adoc:18
-msgid "This is our first blog post about 1.0.x operator series (yeah, sorry 1.0.0 we forgot about you) and as you can notice there's no Alpha, Beta or CR label at the end of the release tag.  This is because OperatorHub and Openshift Catalog only allow numerical version like Maj.Min.Mic and instead of labels we now use the channel to indicate the stability of a release. We have 2 live channels at the moment for the Infinispan operator: `stable` and `dev-preview`. Current `stable` is 0.3.2 which is for the 9.x Infinispan cluster and current `dev-preview` is 1.0.1 which works with 10.x clusters."
+#, fuzzy
+msgid ""
+"This is our first blog post about 1.0.x operator series (yeah, sorry 1.0.0 "
+"we forgot about you) and as you can notice there's no Alpha, Beta or CR "
+"label at the end of the release tag.  This is because OperatorHub and "
+"Openshift Catalog only allow numerical version like Maj.Min.Mic and instead "
+"of labels we now use the channel to indicate the stability of a release. We "
+"have 2 live channels at the moment for the Infinispan operator: `stable` and "
+"`dev-preview`. Current `stable` is 0.3.2 which is for the 9.x Infinispan "
+"cluster and current `dev-preview` is 1.0.1 which works with 10.x clusters."
 msgstr ""
+"これは1.0.xのOperatorシリーズについての最初のブログ記事です(ええ、すみません1.0."
+"0を忘れていました)が、リリースタグの最後にAlpha、Beta、CRのラベルがないことにお気づきでしょうか。これは OperatorHub と "
+"Openshift Catalog が Maj.Min.Mic "
+"のような数値バージョンしか許可していないためで、ラベルの代わりにリリースの安定性を示すためにチャンネルを使用しています。現在、Infinispanオペレータ用に2つのライブチャンネルがあります:"
+" `stable` と `dev-preview` 。現在の `stable` は 9.x Infinispan クラスタ用の 0.3.2 で、現在の "
+"`dev-preview` は 10.x クラスタ用の 1.0.1 です。"
 
 #. type: Title ===
 #: upstream/_posts/2019-10-31-infinispan-operator-1.0.1.adoc:19
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "New features"
-msgstr ""
+msgstr "新機能"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-infinispan-operator-1.0.1.adoc:21
-msgid "New Infinispan image configuration: we cleaned up the image configuration process: instead of rely on a large set of env variables, now the operator configures the Infinispan image via a single .yaml file."
-msgstr ""
+#, fuzzy
+msgid ""
+"New Infinispan image configuration: we cleaned up the image configuration "
+"process: instead of rely on a large set of env variables, now the operator "
+"configures the Infinispan image via a single .yaml file."
+msgstr "新しい Infinispan イメージの設定: イメージの設定プロセスをクリーンアップしました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-infinispan-operator-1.0.1.adoc:22
-msgid "Container configurability: CR .yaml file lets you configure memory and CPU (and also extras Java opts) assigned to the container;"
+#, fuzzy
+msgid ""
+"Container configurability: CR .yaml file lets you configure memory and CPU "
+"(and also extras Java opts) assigned to the container;"
 msgstr ""
+"コンテナの設定可能性。CR .yamlファイルは、コンテナに割り当てられたメモリとCPU(およびその他のJavaオプション)を設定することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-infinispan-operator-1.0.1.adoc:23
-msgid "Encryption: TLS can be setup providing TLS certificates or using platform service as the Openshift seriving certs service (TLS will be on by default in the next release);"
+#, fuzzy
+msgid ""
+"Encryption: TLS can be setup providing TLS certificates or using platform "
+"service as the Openshift seriving certs service (TLS will be on by default "
+"in the next release);"
 msgstr ""
+"暗号化。TLSは、TLS証明書を提供するか、Openshiftが提供する証明書サービスとしてプラットフォームサービスを使用して設定することができます（次のリリースでは、TLSはデフォルトでオンになります）。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-infinispan-operator-1.0.1.adoc:24
-msgid "We now have some good docs: https://infinispan.org/infinispan-operator/master/operator.html;"
+#, fuzzy
+msgid ""
+"We now have some good docs: https://infinispan.org/infinispan-operator/"
+"master/operator.html;"
 msgstr ""
+"現在、私たちはいくつかの良いdocsを持っています: https://infinispan.org/infinispan-operator/master/"
+"operator.html"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-infinispan-operator-1.0.1.adoc:25
-msgid "Project README has been also improved: https://github.com/infinispan/infinispan-operator/blob/1.0.1/README.md;"
+#, fuzzy
+msgid ""
+"Project README has been also improved: https://github.com/infinispan/"
+"infinispan-operator/blob/1.0.1/README.md;"
 msgstr ""
+"Project READMEも改善されました: https://github.com/infinispan/infinispan-operator/"
+"blob/1.0.1/README.md"
 
 #. type: Title ===
 #: upstream/_posts/2019-10-31-infinispan-operator-1.0.1.adoc:26
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Get the operator"
-msgstr ""
+msgstr "演算子の取得"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-infinispan-operator-1.0.1.adoc:28
-msgid "The Infinispan Operator 1.0.1 works on Kind/Kubernetes 1.16 (CI) and Openshift 3.11, 4.x (developed on). You can install it:"
+#, fuzzy
+msgid ""
+"The Infinispan Operator 1.0.1 works on Kind/Kubernetes 1.16 (CI) and "
+"Openshift 3.11, 4.x (developed on). You can install it:"
 msgstr ""
+"Infinispan Operator 1.0.1 は、Kind/Kubernetes 1.16 (CI) と Openshift 3.11, 4.x "
+"(上で開発) で動作します。インストールすることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-infinispan-operator-1.0.1.adoc:30
+#, fuzzy
 msgid "manually, follow the README;"
-msgstr ""
+msgstr "手動で行う場合は、READMEに従ってください。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-infinispan-operator-1.0.1.adoc:31
-msgid "with OLM on Kubernetes, https://operatorhub.io/operator/infinispan/dev-preview/infinispan-operator.v1.0.0"
+#, fuzzy
+msgid ""
+"with OLM on Kubernetes, https://operatorhub.io/operator/infinispan/dev-"
+"preview/infinispan-operator.v1.0.0"
 msgstr ""
+"with OLM on Kubernetes https://operatorhub.io/operator/infinispan/dev-"
+"preview/infinispan-operator.v1.0.0"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-infinispan-operator-1.0.1.adoc:32
+#, fuzzy
 msgid "with OLM from the Openshift Operator Catalog"
-msgstr ""
+msgstr "Openshift オペレータカタログの OLM を使用して"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-infinispan-operator-1.0.1.adoc:34
-msgid "And remember: it's a dev-preview release, you can have a lot of fun with it!"
+#, fuzzy
+msgid ""
+"And remember: it's a dev-preview release, you can have a lot of fun with it!"
 msgstr ""
+"そして、覚えておいてください：それはdev-"
+"previewリリースなので、あなたはそれで多くの楽しみを持つことができます！そして、それはあなたがそれで多くの楽しみを持つことができます。"
 
 #. type: Title ===
 #: upstream/_posts/2019-10-31-infinispan-operator-1.0.1.adoc:35
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Contribute"
-msgstr ""
+msgstr "貢献"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-infinispan-operator-1.0.1.adoc:37
-msgid "As usual source code is open at: https://github.com/infinispan/infinispan-operator. You can see what's going on, comment the code or the new pull requests, ask for new features and also develop them!"
+#, fuzzy
+msgid ""
+"As usual source code is open at: https://github.com/infinispan/infinispan-"
+"operator. You can see what's going on, comment the code or the new pull "
+"requests, ask for new features and also develop them!"
 msgstr ""
+"いつものようにソースコードは https://github.com/infinispan/infinispan-operator "
+"で公開されています。何が起こっているかを見たり、コードや新しいプルリクエストにコメントしたり、新機能のリクエストをしたり、開発したりすることができます!"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-infinispan-operator-1.0.1.adoc:39
+#, fuzzy
 msgid "Thanks for following us, Infinispan"
-msgstr ""
+msgstr "Infinispanさん、フォローありがとうございます。"

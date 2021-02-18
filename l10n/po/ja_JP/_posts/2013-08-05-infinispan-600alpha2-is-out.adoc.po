@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-08-05-infinispan-600alpha2-is-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-08-05-infinispan-600alpha2-is-out.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 6.0.0.Alpha2 is out!\n"
@@ -34,52 +34,106 @@ msgid ""
 "tags: [ \"release\",\n"
 "\"alpha\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-911382729991642744\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/08/infinispan-600alpha2-is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"911382729991642744\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/08/infinispan-600alpha2-"
+"is-out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 6.0.0.Alpha2が出ました!\n"
+"permalink: /blog/:year/:month/:day/infinispan-600alpha2-is-out\n"
+"date: '2013-08-05T05:57:00.000-07:00'\n"
+"author: infinispan\n"
+"tags: [ \"release\",\n"
+"\"alpha\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"911382729991642744\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/08/infinispan-600alpha2-"
+"is-out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-08-05-infinispan-600alpha2-is-out.adoc:14
+#, fuzzy
 msgid "Dear Infinispan community,"
-msgstr ""
+msgstr "インフィニスパンのコミュニティへ"
 
 #. type: Plain text
 #: upstream/_posts/2013-08-05-infinispan-600alpha2-is-out.adoc:17
-msgid "We're proud to announce the second Alpha release of Infinispan 6.0.0, and also the second release using the Apache Software Licence."
+#, fuzzy
+msgid ""
+"We're proud to announce the second Alpha release of Infinispan 6.0.0, and "
+"also the second release using the Apache Software Licence."
 msgstr ""
+"私たちは、Infinispan 6.0."
+"0の2回目のアルファリリースを発表できることを誇りに思っており、Apacheソフトウェアライセンスを使用した2回目のリリースでもあります。"
 
 #. type: Plain text
 #: upstream/_posts/2013-08-05-infinispan-600alpha2-is-out.adoc:19
+#, fuzzy
 msgid "New features in this release:"
-msgstr ""
+msgstr "このリリースの新機能。"
 
 #. type: Plain text
 #: upstream/_posts/2013-08-05-infinispan-600alpha2-is-out.adoc:22
-msgid "A new https://issues.jboss.org/browse/ISPN-3169[query DSL] that is usable both in embedded/library mode and over HotRod."
+#, fuzzy
+msgid ""
+"A new https://issues.jboss.org/browse/ISPN-3169[query DSL] that is usable "
+"both in embedded/library mode and over HotRod."
 msgstr ""
+"組み込み/ライブラリモードでもHotRod上でも使える新しい link:https://issues.jboss.org/browse/ISPN-"
+"3169[クエリDSL] 。"
 
 #. type: Plain text
 #: upstream/_posts/2013-08-05-infinispan-600alpha2-is-out.adoc:25
-msgid "Support for https://issues.jboss.org/browse/ISPN-3234[JCache 0.8], the Public Review Draft version of the JSR-107 specification."
+#, fuzzy
+msgid ""
+"Support for https://issues.jboss.org/browse/ISPN-3234[JCache 0.8], "
+"the Public Review Draft version of the JSR-107 specification."
 msgstr ""
+"JSR-107仕様のパブリックレビュードラフト版「 link:https://issues.jboss.org/browse/ISPN-"
+"3234[JCache 0.8] 」に対応しました。"
 
 #. type: Plain text
 #: upstream/_posts/2013-08-05-infinispan-600alpha2-is-out.adoc:29
-msgid "A slimmer distribution, thanks to moving non-core cache store implementations to https://issues.jboss.org/browse/ISPN-3377[separate repositories]."
+#, fuzzy
+msgid ""
+"A slimmer distribution, thanks to moving non-core cache store "
+"implementations to https://issues.jboss.org/browse/ISPN-3377[separate "
+"repositories]."
 msgstr ""
+"コアではないキャッシュストアの実装を link:https://issues.jboss.org/browse/ISPN-3377[別のリポジトリ] "
+"に移動したことで、配布がよりスリムになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2013-08-05-infinispan-600alpha2-is-out.adoc:39
-msgid "For a complete list of features and fixes included in this release please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12321854[release notes].  Visit our http://www.jboss.org/infinispan/downloads[downloads] section to find the latest release and if you have any questions please check our http://www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on http://www.blogger.com/null[IRC]."
+#, fuzzy
+msgid ""
+"For a complete list of features and fixes included in this release please "
+"refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
+"12310799&version=12321854[release notes].  Visit our http://www.jboss.org/"
+"infinispan/downloads[downloads] section to find the latest release and if "
+"you have any questions please check our http://www.jboss.org/infinispan/"
+"forums[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-"
+"dev[mailing lists] or ping us directly on http://www.blogger.com/null[IRC]."
 msgstr ""
+"このリリースに含まれる機能と修正の完全なリストについては、 link:https://issues.jboss.org/secure/"
+"ReleaseNote.jspa?projectId=12310799&version=12321854[リリースノート] "
+"を参照してください。最新のリリースは link:http://www.jboss.org/infinispan/downloads[ダウンロード] "
+"セクションをご覧ください。質問がある場合は、フォーラム、 link:http://www.jboss.org/infinispan/"
+"forums[メーリングリスト] 、または IRC で link:https://lists.jboss.org/mailman/listinfo/"
+"infinispan-dev[直接] ping してください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-08-05-infinispan-600alpha2-is-out.adoc:41
+#, fuzzy
 msgid "Thanks to everyone for their involvement and contribution!"
-msgstr ""
+msgstr "皆様のご参加、ご投稿ありがとうございました"
 
 #. type: Plain text
 #: upstream/_posts/2013-08-05-infinispan-600alpha2-is-out.adoc:44
+#, fuzzy
 msgid "Cheers Dan"
-msgstr ""
+msgstr "乾杯"

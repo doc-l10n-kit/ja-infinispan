@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Simple cache\n"
@@ -32,48 +32,80 @@ msgid ""
 "date: '2015-09-16T01:53:00.001-07:00'\n"
 "author: infinispan\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5484858756758012613\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5484858756758012613\n"
 "blogger_orig_url: https://blog.infinispan.org/2015/09/simple-cache.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: シンプルなキャッシュ\n"
+"permalink: /blog/:year/:month/:day/simple-cache\n"
+"date: '2015-09-16T01:53:00.001-07:00'\n"
+"author: infinispan\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5484858756758012613\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/09/simple-cache.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:14
-msgid "Infinispan *local caches* have several features that make it more than just a map - expiration and eviction, listeners, statistics, transactions, cache stores and so forth. However, this comes at a price"
+#, fuzzy
+msgid ""
+"Infinispan *local caches* have several features that make it more than just "
+"a map - expiration and eviction, listeners, statistics, transactions, cache "
+"stores and so forth. However, this comes at a price"
 msgstr ""
+"Infinispan *ローカルキャッシュ* "
+"には、有効期限と退避、リスナー、統計、トランザクション、キャッシュストアなど、単なるマップ以上の機能がいくつかあります。しかし、これには代償が伴います。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:16
-msgid "due to all the hooks and object allocation, plain ConcurrentHashMap is faster than local cache."
-msgstr ""
+#, fuzzy
+msgid ""
+"due to all the hooks and object allocation, plain ConcurrentHashMap is "
+"faster than local cache."
+msgstr "すべてのフックとオブジェクトの割り当てのため、プレーンな ConcurrentHashMap はローカルキャッシュよりも高速です。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:23
-msgid "There are applications that need something in between - great performance but some of those features, too. In our case, the motivation were internal caches in Hibernate Second Level Cache. Therefore Infinispan *8.0.1.Final* brings the *simple cache* - alternative implementation of the _AdvancedCache_ interface optimized for maximum performance when you need just the basics."
+#, fuzzy
+msgid ""
+"There are applications that need something in between - great performance "
+"but some of those features, too. In our case, the motivation were internal "
+"caches in Hibernate Second Level Cache. Therefore Infinispan *8.0.1.Final* "
+"brings the *simple cache* - alternative implementation of the "
+"_AdvancedCache_ interface optimized for maximum performance when you need "
+"just the basics."
 msgstr ""
+"その中間の何かを必要とするアプリケーションがあります - "
+"素晴らしいパフォーマンスですが、それらの機能もいくつかあります。私たちの場合、モチベーションはHibernate Second Level "
+"Cacheの内部キャッシュでした。したがって、Infinispan *8.0.1.Final* は、 *シンプルなキャッシュを* もたらします - "
+"あなたが基本的なものだけを必要とするときに最大のパフォーマンスのために最適化された _AdvancedCache_ インターフェイスの代替実装。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:25
+#, fuzzy
 msgid "The table below shows which features are available in simple cache:"
-msgstr ""
+msgstr "下の表は、シンプルキャッシュでどの機能が利用できるかを示したものです。"
 
 #. type: Table
 #: upstream/_posts/2015-09-16-simple-cache.adoc:29
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Feature"
-msgstr ""
+msgstr "特徴"
 
 #. type: Table
 #: upstream/_posts/2015-09-16-simple-cache.adoc:30
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Availability"
-msgstr ""
+msgstr "空室状況"
 
 #. type: Table
 #: upstream/_posts/2015-09-16-simple-cache.adoc:30
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Basic map-like API"
-msgstr ""
+msgstr "基本的な地図のようなAPI"
 
 #. type: Table
 #: upstream/_posts/2015-09-16-simple-cache.adoc:31
@@ -83,51 +115,51 @@ msgstr ""
 #: upstream/_posts/2015-09-16-simple-cache.adoc:35
 #: upstream/_posts/2015-09-16-simple-cache.adoc:36
 #: upstream/_posts/2015-09-16-simple-cache.adoc:37
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "✔"
-msgstr ""
+msgstr "✔"
 
 #. type: Table
 #: upstream/_posts/2015-09-16-simple-cache.adoc:31
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Cache listeners (non-clustered)"
-msgstr ""
+msgstr "キャッシュ・リスナー (非クラスタ化)"
 
 #. type: Table
 #: upstream/_posts/2015-09-16-simple-cache.adoc:32
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Expiration"
-msgstr ""
+msgstr "有効期限"
 
 #. type: Table
 #: upstream/_posts/2015-09-16-simple-cache.adoc:33
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Eviction"
-msgstr ""
+msgstr "立ち退き"
 
 #. type: Table
 #: upstream/_posts/2015-09-16-simple-cache.adoc:34
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Security"
-msgstr ""
+msgstr "セキュリティ"
 
 #. type: Table
 #: upstream/_posts/2015-09-16-simple-cache.adoc:35
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "JMX access"
-msgstr ""
+msgstr "ＪＭＸアクセス"
 
 #. type: Table
 #: upstream/_posts/2015-09-16-simple-cache.adoc:36
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Statistics"
-msgstr ""
+msgstr "統計情報"
 
 #. type: Table
 #: upstream/_posts/2015-09-16-simple-cache.adoc:37
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Transactions"
-msgstr ""
+msgstr "取引"
 
 #. type: Table
 #: upstream/_posts/2015-09-16-simple-cache.adoc:38
@@ -139,102 +171,120 @@ msgstr ""
 #: upstream/_posts/2015-09-16-simple-cache.adoc:44
 #: upstream/_posts/2015-09-16-simple-cache.adoc:45
 #: upstream/_posts/2015-09-16-simple-cache.adoc:46
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "✘"
-msgstr ""
+msgstr "✘"
 
 #. type: Table
 #: upstream/_posts/2015-09-16-simple-cache.adoc:38
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Invocation batching"
-msgstr ""
+msgstr "呼び出しのバッチ処理"
 
 #. type: Table
 #: upstream/_posts/2015-09-16-simple-cache.adoc:39
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Persistence (cache stores and loader)"
-msgstr ""
+msgstr "永続性（キャッシュストアとローダー"
 
 #. type: Table
 #: upstream/_posts/2015-09-16-simple-cache.adoc:40
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Map Reduce Framework"
-msgstr ""
+msgstr "マップ削減フレームワーク"
 
 #. type: Table
 #: upstream/_posts/2015-09-16-simple-cache.adoc:41
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Distributed Executors Framework"
-msgstr ""
+msgstr "分散エグゼキュータフレームワーク"
 
 #. type: Table
 #: upstream/_posts/2015-09-16-simple-cache.adoc:42
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Custom interceptors"
-msgstr ""
+msgstr "カスタムインターセプター"
 
 #. type: Table
 #: upstream/_posts/2015-09-16-simple-cache.adoc:43
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Indexing (querying)"
-msgstr ""
+msgstr "インデックス作成(クエリ)"
 
 #. type: Table
 #: upstream/_posts/2015-09-16-simple-cache.adoc:44
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Compatibility (embedded/server)"
-msgstr ""
+msgstr "互換性(組み込み/サーバ)"
 
 #. type: Table
 #: upstream/_posts/2015-09-16-simple-cache.adoc:45
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Store as binary"
-msgstr ""
+msgstr "バイナリとして保存"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:52
-msgid "Configuring simple cache is as simple as adding one attribute to the XML configuration:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Configuring simple cache is as simple as adding one attribute to the XML "
+"configuration:"
+msgstr "シンプルなキャッシュの設定は、XML設定に1つの属性を追加するだけの簡単なものです。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:57
-msgid "While configuration schema allows to set up the unsupported features, doing so results in an exception when the cache is created."
-msgstr ""
+#, fuzzy
+msgid ""
+"While configuration schema allows to set up the unsupported features, doing "
+"so results in an exception when the cache is created."
+msgstr "設定スキーマではサポートされていない機能を設定することができますが、そうするとキャッシュが作成されたときに例外が発生します。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:59
+#, fuzzy
 msgid "You can also configure simple cache programmatically:"
-msgstr ""
+msgstr "また、プログラムで簡易キャッシュを設定することもできます。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:66
-msgid "So, what kind of performance improvement can you expect? We had run basic (single-threaded) benchmark using http://openjdk.java.net/projects/code-tools/jmh/[JMH] and this is what we got:"
+#, fuzzy
+msgid ""
+"So, what kind of performance improvement can you expect? We had run basic "
+"(single-threaded) benchmark using http://openjdk.java.net/projects/code-"
+"tools/jmh/[JMH] and this is what we got:"
 msgstr ""
+"では、どのような性能向上が期待できるのでしょうか？ link:http://openjdk.java.net/projects/code-tools/"
+"jmh/[JMHを] 使って基本的な（シングルスレッド）ベンチマークを実行してみたところ、こんな感じになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:69
+#, fuzzy
 msgid "Implementation"
-msgstr ""
+msgstr "実施の様子"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:71
+#, fuzzy
 msgid "get() (operations/s)"
-msgstr ""
+msgstr "get() (操作/秒)"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:73
+#, fuzzy
 msgid "put() (operations/s)"
-msgstr ""
+msgstr "put() (操作/秒)"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:75
+#, fuzzy
 msgid "ConcurrentHashMap"
-msgstr ""
+msgstr "コンカレントハッシュマップ"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:77
+#, fuzzy
 msgid "128,354,135"
-msgstr ""
+msgstr "128,354,135"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:79
@@ -243,80 +293,102 @@ msgstr ""
 #: upstream/_posts/2015-09-16-simple-cache.adoc:99
 #: upstream/_posts/2015-09-16-simple-cache.adoc:107
 #: upstream/_posts/2015-09-16-simple-cache.adoc:113
+#, fuzzy
 msgid "±"
-msgstr ""
+msgstr "±"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:81
+#, fuzzy
 msgid "2,178,755"
-msgstr ""
+msgstr "2,178,755"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:83
+#, fuzzy
 msgid "33,980,088"
-msgstr ""
+msgstr "33,980,088"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:87
+#, fuzzy
 msgid "28,487"
-msgstr ""
+msgstr "28,487"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:89
+#, fuzzy
 msgid "Simple cache"
-msgstr ""
+msgstr "シンプルなキャッシュ"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:91
+#, fuzzy
 msgid "86,969,897"
-msgstr ""
+msgstr "86,969,897"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:95
+#, fuzzy
 msgid "738,935"
-msgstr ""
+msgstr "738,935"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:97
+#, fuzzy
 msgid "14,044,642"
-msgstr ""
+msgstr "14,044,642"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:101
+#, fuzzy
 msgid "14,280"
-msgstr ""
+msgstr "14,280"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:103
+#, fuzzy
 msgid "Local cache"
-msgstr ""
+msgstr "ローカルキャッシュ"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:105
+#, fuzzy
 msgid "17,280,018"
-msgstr ""
+msgstr "17,280,018"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:109
+#, fuzzy
 msgid "361,910"
-msgstr ""
+msgstr "361,910"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:111
+#, fuzzy
 msgid "2,267,850"
-msgstr ""
+msgstr "2,267,850"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:115
+#, fuzzy
 msgid "44,814"
-msgstr ""
+msgstr "44,814"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:120
-msgid "This gives us about 5✕ speedup for reads and 6✕ for writes. Your mileage may vary, but it's certain that simple cache provides substantial performance benefits."
+#, fuzzy
+msgid ""
+"This gives us about 5✕ speedup for reads and 6✕ for writes. Your mileage may "
+"vary, but it's certain that simple cache provides substantial performance "
+"benefits."
 msgstr ""
+"これにより、リードで約5✕、ライトで約6✕の高速化を実現しています。マイレージは異なるかもしれませんが、シンプルなキャッシュが性能面で大きなメリットをもたらすことは間違いありません。"
 
 #. type: Plain text
 #: upstream/_posts/2015-09-16-simple-cache.adoc:123
-msgid "So, if your use-case allows it, try out simple cache and let us know.  It's as simple as one configuration attribute!"
-msgstr ""
+#, fuzzy
+msgid ""
+"So, if your use-case allows it, try out simple cache and let us know.  It's "
+"as simple as one configuration attribute!"
+msgstr "というわけで、もしあなたのユースケースが許すのであれば、シンプルなキャッシュを試してみてください。設定属性一つで簡単にできます。"

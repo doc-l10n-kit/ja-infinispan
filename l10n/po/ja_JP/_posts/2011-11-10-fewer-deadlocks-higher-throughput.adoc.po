@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-11-10-fewer-deadlocks-higher-throughput.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-10-fewer-deadlocks-higher-throughput.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Fewer deadlocks, higher throughput\n"
@@ -35,52 +35,111 @@ msgid ""
 "\"locking\",\n"
 "\"deadlock detection\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-9085832372211986870\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/11/fewer-deadlocks-higher-throughput.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"9085832372211986870\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/11/fewer-deadlocks-higher-"
+"throughput.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: デッドロックが少なく、スループットが向上\n"
+"permalink: /blog/:year/:month/:day/fewer-deadlocks-higher-throughput\n"
+"date: '2011-11-10T17:20:00.000-08:00'\n"
+"author: mmarkus\n"
+"tags: [ \"transactions\",\n"
+"\"locking\",\n"
+"\"deadlock detection\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"9085832372211986870\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/11/fewer-deadlocks-higher-"
+"throughput.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-10-fewer-deadlocks-higher-throughput.adoc:21
-msgid "Here's the problem: first transaction (_T1_) writes to key a and b in this order. Second transaction (_T2_) writes to key b and a - again order is relevant. Now with some \"right timing\" _T1_ manages to acquire lock on _a_ and _T2_ acquires lock on b. And then they wait one for the other to release locks so that they can progress. This is what is called a deadlock and is really bad for your system throughput - but I won't insist on this aspect, as I've mentioned it a lot in my previous posts."
+#, fuzzy
+msgid ""
+"Here's the problem: first transaction (_T1_) writes to key a and b in this "
+"order. Second transaction (_T2_) writes to key b and a - again order is "
+"relevant. Now with some \"right timing\" _T1_ manages to acquire lock on _a_ "
+"and _T2_ acquires lock on b. And then they wait one for the other to release "
+"locks so that they can progress. This is what is called a deadlock and is "
+"really bad for your system throughput - but I won't insist on this aspect, "
+"as I've mentioned it a lot in my previous posts."
 msgstr ""
+"最初のトランザクション _(T1_ )は、この順番でキーaとbに書き込む。2番目のトランザクション _(T2_ "
+")は、キーbとaに書き込む。今、いくつかの「正しいタイミング」で、 _T1は_ _aの_ ロックを取得し、 _T2は_ "
+"bのロックを取得します。これはデッドロックと呼ばれるもので、システムのスループットにとって本当に悪いものです。"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-10-fewer-deadlocks-higher-throughput.adoc:27
-msgid "What I want to talk about though is a way to solve this problem. Quit a simple way - just force an order on your transaction writes and you're guaranteed not to deadlock: if both _T1_ and _T2_ write to a then __b (__lexicographical order) there won't be any deadlock. Ever."
+#, fuzzy
+msgid ""
+"What I want to talk about though is a way to solve this problem. Quit a "
+"simple way - just force an order on your transaction writes and you're "
+"guaranteed not to deadlock: if both _T1_ and _T2_ write to a then __b "
+"(__lexicographical order) there won't be any deadlock. Ever."
 msgstr ""
+"私が話したいのは、この問題を解決する方法です。単純な方法で、トランザクションの書き込みに順序を強制するだけで、デッドロックが起こらないことが保証されます： "
+"_T1_ と _T2 の_ 両方が a と _b (_ 辞書順) に書き込む場合、デッドロックは発生しません。絶対に。"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-10-fewer-deadlocks-higher-throughput.adoc:31
-msgid "But there's a catch. It's not always possible to define this order, simply because you can't or because you don't know all your keys at the very beginning of the transaction."
+#, fuzzy
+msgid ""
+"But there's a catch. It's not always possible to define this order, simply "
+"because you can't or because you don't know all your keys at the very "
+"beginning of the transaction."
 msgstr ""
+"しかし、キャッチがあります。この順序を定義することができないのは、単にできないから、あるいは取引の最初の段階ですべてのキーを把握していないからというだけの理由です。"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-10-fewer-deadlocks-higher-throughput.adoc:38
-msgid "Now here's the good news: Infinispan orders the keys touched in a transaction for you. And it even defines an order so that you won't have to do that. Actually you don't have to anything, not even enable this feature, as it is already enabled for you by default."
+#, fuzzy
+msgid ""
+"Now here's the good news: Infinispan orders the keys touched in a "
+"transaction for you. And it even defines an order so that you won't have to "
+"do that. Actually you don't have to anything, not even enable this feature, "
+"as it is already enabled for you by default."
 msgstr ""
+"ここで良いニュースがあります：Infinispanはあなたのために取引で触れられたキーを注文します。そして、それはあなたがそれをする必要がないように注文を定義することさえできます。実際には、この機能はデフォルトで有効になっているので、何もする必要はありません。"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-10-fewer-deadlocks-higher-throughput.adoc:43
-msgid "Does it sound too good to be true? That's because it's only partially true. That is lock reordering only works if you're using optimistic locking. For pessimistic locking you still have to do it the old way - order your locks (that's of course if you can)."
+#, fuzzy
+msgid ""
+"Does it sound too good to be true? That's because it's only partially true. "
+"That is lock reordering only works if you're using optimistic locking. For "
+"pessimistic locking you still have to do it the old way - order your locks "
+"(that's of course if you can)."
 msgstr ""
+"本当だと思うには良すぎますか？それは部分的にしか真実ではないからです。つまり、ロックの並び替えは楽観的なロックを使用している場合にのみ機能します。悲観的なロックのためには、昔の方法でロックを並べ替える必要があります（できるならもちろんですが）。"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-10-fewer-deadlocks-higher-throughput.adoc:48
-msgid "Wanna know more about it? Read http://community.jboss.org/wiki/LockReorderingForAvoidingDeadlocks[this]."
+#, fuzzy
+msgid ""
+"Wanna know more about it? Read http://community.jboss.org/wiki/"
+"LockReorderingForAvoidingDeadlocks[this]."
 msgstr ""
+"もっと知りたい？ link:http://community.jboss.org/wiki/"
+"LockReorderingForAvoidingDeadlocks[これを] 読んで"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-10-fewer-deadlocks-higher-throughput.adoc:52
+#, fuzzy
 msgid "Expect and enjoy this feature in our next release 5.1.0.BETA5."
-msgstr ""
+msgstr "次のリリース5.1.0.BETA5では、この機能を期待して楽しんでください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-10-fewer-deadlocks-higher-throughput.adoc:56
+#, fuzzy
 msgid "Stay tunned!"
-msgstr ""
+msgstr "期待していてください！"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-10-fewer-deadlocks-higher-throughput.adoc:57
+#, fuzzy
 msgid "Mircea"
-msgstr ""
+msgstr "ミルチェア"

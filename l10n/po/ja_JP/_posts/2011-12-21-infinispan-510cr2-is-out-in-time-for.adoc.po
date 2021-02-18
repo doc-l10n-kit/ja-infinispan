@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-12-21-infinispan-510cr2-is-out-in-time-for.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-21-infinispan-510cr2-is-out-in-time-for.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 5.1.0.CR2 is out in time for Xmas!\n"
@@ -34,27 +34,73 @@ msgid ""
 "tags: [ \"custom commands\",\n"
 "\"performance\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6965211698191135082\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/12/infinispan-510cr2-is-out-in-time-for.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6965211698191135082\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/12/infinispan-510cr2-is-"
+"out-in-time-for.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 5.1.0.CR2はXmasに間に合います!\n"
+"permalink: /blog/:year/:month/:day/infinispan-510cr2-is-out-in-time-for\n"
+"date: '2011-12-21T02:05:00.000-08:00'\n"
+"author: galder\n"
+"tags: [ \"custom commands\",\n"
+"\"performance\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6965211698191135082\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/12/infinispan-510cr2-is-"
+"out-in-time-for.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-21-infinispan-510cr2-is-out-in-time-for.adoc:19
-msgid "Infinispan '_Brahma_' 5.1.0.CR2 is out now with a https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12318627[load of fixes] and a few internal changes such the move to a StaX based XML parser as opposed to relying on JAXB which did not get in for CR1. The new parser is a lot faster and has less overhead and does not require any changes from a user perspective."
+#, fuzzy
+msgid ""
+"Infinispan '_Brahma_' 5.1.0.CR2 is out now with a https://issues.jboss.org/"
+"secure/ReleaseNote.jspa?projectId=12310799&version=12318627[load of fixes] "
+"and a few internal changes such the move to a StaX based XML parser as "
+"opposed to relying on JAXB which did not get in for CR1. The new parser is a "
+"lot faster and has less overhead and does not require any changes from a "
+"user perspective."
 msgstr ""
+"Infinispan _'Brahma_ ' 5.1.0.CR2がリリースされました。多く link:https://issues.jboss.org/"
+"secure/ReleaseNote.jspa?projectId=12310799&version=12318627[の修正] "
+"といくつかの内部的な変更が行われ、CR1では導入されなかったJAXBに依存していたXMLパーサーをStaXベースのXMLパーサーに変更しました。新しいパーサーは、より高速でオーバーヘッドが少なく、ユーザーの視点からの変更は必要ありません。"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-21-infinispan-510cr2-is-out-in-time-for.adoc:27
-msgid "We've also worked on improving startup time by indexing annotation metadata at build time and reading it at runtime. From a Infinispan user perspective, there's been some changes to how Infinispan is extended, in particular related to https://docs.jboss.org/author/x/OQFT[custom command implementations], where we know use http://docs.oracle.com/javase/6/docs/api/java/util/ServiceLoader.html[JDK's ServiceLoader] to load them."
+#, fuzzy
+msgid ""
+"We've also worked on improving startup time by indexing annotation metadata "
+"at build time and reading it at runtime. From a Infinispan user perspective, "
+"there's been some changes to how Infinispan is extended, in particular "
+"related to https://docs.jboss.org/author/x/OQFT[custom command "
+"implementations], where we know use http://docs.oracle.com/javase/6/docs/api/"
+"java/util/ServiceLoader.html[JDK's ServiceLoader] to load them."
 msgstr ""
+"また、ビルド時にアノテーションメタデータをインデックス化し、実行時に読み込むことで起動時間の改善にも取り組みました。Infinispan "
+"のユーザーの視点からは、Infinispan の拡張方法、特に link:https://docs.jboss.org/author/x/"
+"OQFT[カスタムコマンドの実装] に関連して、 link:http://docs.oracle.com/javase/6/docs/api/java/"
+"util/ServiceLoader.html[JDK の ServiceLoader を] 使用してロードする方法にいくつかの変更がありました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-21-infinispan-510cr2-is-out-in-time-for.adoc:32
-msgid "As per usual, downloads are in the usual http://www.jboss.org/infinispan/downloads[place], use the http://community.jboss.org/en/infinispan?view=discussions[forums] to provide feedback and report any issues."
+#, fuzzy
+msgid ""
+"As per usual, downloads are in the usual http://www.jboss.org/infinispan/"
+"downloads[place], use the http://community.jboss.org/en/infinispan?view="
+"discussions[forums] to provide feedback and report any issues."
 msgstr ""
+"いつものように、ダウンロードはいつもの link:http://www.jboss.org/infinispan/downloads[場所で] 、 "
+"link:http://community.jboss.org/en/infinispan?view=discussions[フォーラムを] "
+"使ってフィードバックを提供したり、問題を報告したりしています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-21-infinispan-510cr2-is-out-in-time-for.adoc:35
-msgid "Cheers, Merry Christmas and a Happy New Year to all the Infinispan community! :)  Galder"
-msgstr ""
+#, fuzzy
+msgid ""
+"Cheers, Merry Christmas and a Happy New Year to all the Infinispan "
+"community! :)  Galder"
+msgstr "乾杯、メリークリスマス、そして新年明けましておめでとうございます。:)ガルダー"

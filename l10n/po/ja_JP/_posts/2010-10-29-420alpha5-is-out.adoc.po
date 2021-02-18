@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-10-29-420alpha5-is-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-10-29-420alpha5-is-out.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: 4.2.0.ALPHA5 is out!\n"
@@ -32,27 +32,66 @@ msgid ""
 "date: '2010-10-29T07:51:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \" alpha\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4466845666993587192\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4466845666993587192\n"
 "blogger_orig_url: https://blog.infinispan.org/2010/10/420alpha5-is-out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 4.2.0.ALPHA5が出ました!\n"
+"permalink: /blog/:year/:month/:day/420alpha5-is-out\n"
+"date: '2010-10-29T07:51:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \" alpha\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4466845666993587192\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/10/420alpha5-is-out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-10-29-420alpha5-is-out.adoc:17
-msgid "Yes, yet another alpha for Infinispan 4.2.0 codenamed _Ursus_.  What's new in this alpha?  A lot of bug fixes, reported by you the community, on earlier alphas as well as on 4.1.0 _Radegast_.  For a full list of what's changed, please consult https://jira.jboss.org/secure/ConfigureReport.jspa?atl_token=0EvC02PlCu&versions=12315591&sections=all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira.plugin.release-notes-report-plugin:releasenotes&Next=Next[these release notes]."
+#, fuzzy
+msgid ""
+"Yes, yet another alpha for Infinispan 4.2.0 codenamed _Ursus_.  What's new "
+"in this alpha?  A lot of bug fixes, reported by you the community, on "
+"earlier alphas as well as on 4.1.0 _Radegast_.  For a full list of what's "
+"changed, please consult https://jira.jboss.org/secure/ConfigureReport."
+"jspa?atl_token=0EvC02PlCu&versions=12315591&sections=all&style="
+"none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira.plugin.release-"
+"notes-report-plugin:releasenotes&Next=Next[these release notes]."
 msgstr ""
+"はい、Infinispan 4.2.0 のコードネームは _Ursus_ です。 このアルファでは何が新しくなりましたか？ "
+"コミュニティの皆さんから報告された多くのバグ修正ですが、4.1.0 Radegast と同様に以前のアルファでも報告されています。 "
+"変更点の全リストについて _は、_ リリース link:https://jira.jboss.org/secure/ConfigureReport."
+"jspa?atl_token=0EvC02PlCu&versions=12315591&sections=all&style="
+"none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira.plugin.release-"
+"notes-report-plugin:releasenotes&Next=Next[ノートを] 参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2010-10-29-420alpha5-is-out.adoc:21
-msgid "Please do give this release a spin and provide as much feedback as you can.  A feature-complete beta is imminent and we expect it to be very stable - as far as betas go - and all thanks to your feedback."
+#, fuzzy
+msgid ""
+"Please do give this release a spin and provide as much feedback as you can. "
+" A feature-complete beta is imminent and we expect it to be very stable - as "
+"far as betas go - and all thanks to your feedback."
 msgstr ""
+"このリリースを試してみて、できるだけ多くのフィードバックを提供してください。 "
+"機能を完全に備えたベータ版が間近に迫っており、ベータ版としては非常に安定したものになることを期待しています。"
 
 #. type: Plain text
 #: upstream/_posts/2010-10-29-420alpha5-is-out.adoc:26
-msgid "Download the release http://sourceforge.net/projects/infinispan/files/infinispan/4.2.0.ALPHA5/[here], and talk to us about it on the forums http://community.jboss.org/en/infinispan?view=discussions[here]."
+#, fuzzy
+msgid ""
+"Download the release http://sourceforge.net/projects/infinispan/files/"
+"infinispan/4.2.0.ALPHA5/[here], and talk to us about it on the forums http://"
+"community.jboss.org/en/infinispan?view=discussions[here]."
 msgstr ""
+"link:http://community.jboss.org/en/infinispan?view=discussions[ここ] link:http:"
+"//sourceforge.net/projects/infinispan/files/infinispan/4.2.0.ALPHA5/[から] "
+"リリースをダウンロードして、フォーラムで相談してみてください。"
 
 #. type: Plain text
 #: upstream/_posts/2010-10-29-420alpha5-is-out.adoc:28
+#, fuzzy
 msgid "Enjoy, Manik"
-msgstr ""
+msgstr "楽しもう、マニク"

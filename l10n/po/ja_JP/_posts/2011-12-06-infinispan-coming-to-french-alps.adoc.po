@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-12-06-infinispan-coming-to-french-alps.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-06-infinispan-coming-to-french-alps.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan coming to the French Alps!\n"
@@ -32,22 +32,51 @@ msgid ""
 "date: '2011-12-06T05:52:00.001-08:00'\n"
 "author: galder\n"
 "tags: [ \" event\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5611643438510457992\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/12/infinispan-coming-to-french-alps.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5611643438510457992\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/12/infinispan-coming-to-"
+"french-alps.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: インフィニスパンがフランスアルプスにやってくる！？\n"
+"permalink: /blog/:year/:month/:day/infinispan-coming-to-french-alps\n"
+"date: '2011-12-06T05:52:00.001-08:00'\n"
+"author: galder\n"
+"tags: [ \" event\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5611643438510457992\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/12/infinispan-coming-to-"
+"french-alps.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-06-infinispan-coming-to-french-alps.adoc:17
-msgid "http://www.alpesjug.fr/wp-content/themes/atahualpa/images/logo.png[image:http://www.alpesjug.fr/wp-content/themes/atahualpa/images/logo.png[image]]Remember that on the 15th of December, I'll be speaking at the http://www.alpesjug.fr/[Alpes JUG] in Grenoble about Infinispan. This is a great opportunity for anyone interested in topics such as data caching and data grids to come and learn about Infinispan and its ecosystem, including Hibernate second level cache, Hibernate OGM...etc."
+#, fuzzy
+msgid ""
+"http://www.alpesjug.fr/wp-content/themes/atahualpa/images/logo.png[image:"
+"http://www.alpesjug.fr/wp-content/themes/atahualpa/images/logo."
+"png[image]]Remember that on the 15th of December, I'll be speaking at the "
+"http://www.alpesjug.fr/[Alpes JUG] in Grenoble about Infinispan. This is a "
+"great opportunity for anyone interested in topics such as data caching and "
+"data grids to come and learn about Infinispan and its ecosystem, "
+"including Hibernate second level cache, Hibernate OGM...etc."
 msgstr ""
+"link:http://www.alpesjug.fr/wp-content/themes/atahualpa/images/logo.png[] "
+"12月15日にグルノーブルで開催される link:http://www.alpesjug.fr/[Alpes JUG] で Infinispan "
+"について講演します。 データキャッシングやデータグリッドなどのトピックに興味のある方はぜひお越しいただき、Hibernate "
+"の第二レベルキャッシュ、Hibernate OGM...などを含む Infinispan とそのエコシステムについて学んでいただきたいと思います。"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-06-infinispan-coming-to-french-alps.adoc:20
-msgid "Looking forward to meeting Emannuel and the rest of the http://www.alpesjug.fr/[Alpes JUG] gang :)"
-msgstr ""
+#, fuzzy
+msgid ""
+"Looking forward to meeting Emannuel and the rest of the http://www.alpesjug."
+"fr/[Alpes JUG] gang :)"
+msgstr "エマニュエルや他のアルプス link:http://www.alpesjug.fr/[JUG] の仲間に会えるのを楽しみにしています。)"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-06-infinispan-coming-to-french-alps.adoc:22
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-06-17-infinispan-530cr2-is-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-17-infinispan-530cr2-is-out.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 5.3.0.CR2 is out!\n"
@@ -32,47 +32,91 @@ msgid ""
 "date: '2013-06-17T12:56:00.000-07:00'\n"
 "author: mmarkus\n"
 "tags: [ \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4264095696902698540\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/06/infinispan-530cr2-is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4264095696902698540\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/06/infinispan-530cr2-is-"
+"out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 5.3.0.CR2が出ました!\n"
+"permalink: /blog/:year/:month/:day/infinispan-530cr2-is-out\n"
+"date: '2013-06-17T12:56:00.000-07:00'\n"
+"author: mmarkus\n"
+"tags: [ \"release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4264095696902698540\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/06/infinispan-530cr2-is-"
+"out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-17-infinispan-530cr2-is-out.adoc:13
-msgid "Planned to be the last from the 5.3 series, the 5.3.CR2 release contains:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Planned to be the last from the 5.3 series, the 5.3.CR2 release contains:"
+msgstr "5.3シリーズ最後のリリースとなる予定の5.3.CR2には、5.3.CR2が含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-17-infinispan-530cr2-is-out.adoc:16
-msgid "https://issues.jboss.org/browse/ISPN-2657[Support for java LevelDB] cache store. Courtesy of http://www.linkedin.com/in/rayjtsang[Ray Tsang]"
+#, fuzzy
+msgid ""
+"https://issues.jboss.org/browse/ISPN-2657[Support for java LevelDB] cache "
+"store. Courtesy of http://www.linkedin.com/in/rayjtsang[Ray Tsang]"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-2657[javaのLevelDB] キャッシュストアを link:"
+"https://issues.jboss.org/browse/ISPN-2657[サポートしてい] ます。Ray link:http://www."
+"linkedin.com/in/rayjtsang[Tsang] 氏提供"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-17-infinispan-530cr2-is-out.adoc:19
-msgid "An set of https://issues.jboss.org/browse/ISPN-3140[JMX operations that come] handy when it comes to suppressing state transfer in order to shutdown the server, e.g. for maintenance "
+#, fuzzy
+msgid ""
+"An set of https://issues.jboss.org/browse/ISPN-3140[JMX operations that "
+"come] handy when it comes to suppressing state transfer in order to shutdown "
+"the server, e.g. for maintenance "
 msgstr ""
+"メンテナンスなどでサーバをシャットダウンするために状態遷移を抑制する際に便利な link:https://issues.jboss.org/browse/"
+"ISPN-3140[JMX 操作の] セット。"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-17-infinispan-530cr2-is-out.adoc:21
+#, fuzzy
 msgid "Please stay tuned for blogs detailing these features."
-msgstr ""
+msgstr "これらの特徴を詳しく紹介しているブログにご期待ください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-17-infinispan-530cr2-is-out.adoc:25
-msgid "For a complete list of features included in this release refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12321990[release notes]."
+#, fuzzy
+msgid ""
+"For a complete list of features included in this release refer to the https:/"
+"/issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
+"12321990[release notes]."
 msgstr ""
+"このリリースに含まれる機能の完全なリストについては、 link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12321990[リリースノートを参照してください。]"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-17-infinispan-530cr2-is-out.adoc:31
-msgid "Visit our http://www.jboss.org/infinispan/downloads[downloads] section to find the latest release and if you have any questions please check our http://www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+#, fuzzy
+msgid ""
+"Visit our http://www.jboss.org/infinispan/downloads[downloads] section to "
+"find the latest release and if you have any questions please check our http:/"
+"/www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/"
+"mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://"
+"irc.freenode.org/infinispan[IRC]."
 msgstr ""
+"最新のリリースは link:http://www.jboss.org/infinispan/downloads[ダウンロード] "
+"セクションをご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-17-infinispan-530cr2-is-out.adoc:35
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-17-infinispan-530cr2-is-out.adoc:36
+#, fuzzy
 msgid "Mircea"
-msgstr ""
+msgstr "ミルチェア"

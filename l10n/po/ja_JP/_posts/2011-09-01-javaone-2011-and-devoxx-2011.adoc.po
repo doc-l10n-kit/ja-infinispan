@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-09-01-javaone-2011-and-devoxx-2011.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-01-javaone-2011-and-devoxx-2011.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: JavaOne 2011 and Devoxx 2011\n"
@@ -36,32 +36,101 @@ msgid ""
 "\"jsr 347\",\n"
 "\"JavaOne\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4755863147111183037\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/09/javaone-2011-and-devoxx-2011.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4755863147111183037\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/09/javaone-2011-and-"
+"devoxx-2011.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: JavaOne 2011とDevoxx 2011\n"
+"permalink: /blog/:year/:month/:day/javaone-2011-and-devoxx-2011\n"
+"date: '2011-09-01T04:04:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \"devoxx\",\n"
+"\"jsr 107\",\n"
+"\"jsr 347\",\n"
+"\"JavaOne\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4755863147111183037\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/09/javaone-2011-and-"
+"devoxx-2011.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-01-javaone-2011-and-devoxx-2011.adoc:19
-msgid "http://www.oracle.com/javaone/11053828-j1-imspeaking-250x250-427822.gif[image:http://www.oracle.com/javaone/11053828-j1-imspeaking-250x250-427822.gif[image]]I never got around to blogging about this when my talks were accepted for http://www.oracle.com/javaone/index.html[JavaOne] this year, but it's about time."
+#, fuzzy
+msgid ""
+"http://www.oracle.com/javaone/11053828-j1-imspeaking-250x250-427822."
+"gif[image:http://www.oracle.com/javaone/11053828-j1-imspeaking-250x250-"
+"427822.gif[image]]I never got around to blogging about this when my talks "
+"were accepted for http://www.oracle.com/javaone/index.html[JavaOne] this "
+"year, but it's about time."
 msgstr ""
+"link:http://www.oracle.com/javaone/11053828-j1-imspeaking-250x250-427822."
+"gif[] 今年の link:http://www.oracle.com/javaone/index.html[JavaOne] "
+"で講演が受理されたときにはブログに書く機会がなかったのですが、そろそろいい頃ですね。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-01-javaone-2011-and-devoxx-2011.adoc:29
-msgid "I have a conference session titled \"https://oracleus.wingateweb.com/content/sessionDetail.do?SESSION_ID=23382[A Tale About Caching (JSR 107) and Data Grids (JSR 347) in Enterprise Java]\" and a BoF session focused on JSR 347 titled \"https://oracleus.wingateweb.com/content/sessionDetail.do?SESSION_ID=23380[Making Java EE Cloud-Friendly: JSR 347, Data Grids for the Java Platform]\", which I will be delivering with fellow Infinispan developer, JBoss rockstar and overall nice guy http://community.jboss.org/people/petemuir[Pete Muir]."
+#, fuzzy
+msgid ""
+"I have a conference session titled \"https://oracleus.wingateweb.com/content/"
+"sessionDetail.do?SESSION_ID=23382[A Tale About Caching (JSR 107) and Data "
+"Grids (JSR 347) in Enterprise Java]\" and a BoF session focused on JSR 347 "
+"titled \"https://oracleus.wingateweb.com/content/sessionDetail.do?SESSION_ID="
+"23380[Making Java EE Cloud-Friendly: JSR 347, Data Grids for the Java "
+"Platform]\", which I will be delivering with fellow Infinispan developer, "
+"JBoss rockstar and overall nice guy http://community.jboss.org/people/"
+"petemuir[Pete Muir]."
 msgstr ""
+"私は、 link:https://oracleus.wingateweb.com/content/sessionDetail.do?SESSION_ID="
+"23382[\"A Tale About Caching (JSR 107) and Data Grids (JSR 347) in "
+"Enterprise Java] \"というタイトルのカンファレンスセッションと、 link:https://oracleus.wingateweb."
+"com/content/sessionDetail.do?SESSION_ID=23380[\"Making Java EE Cloud-"
+"Friendly] \"というタイトルのJSR 347に焦点を当てたBoFセッションを持っている。JSR link:https://oracleus."
+"wingateweb.com/content/sessionDetail.do?SESSION_ID=23380[347, Data Grids for "
+"the Java Platform] \"と題したJSR "
+"347に焦点を当てたBoFセッションで、Infinispanの開発者仲間であり、JBossのロックスターであり、全体的に良い人であるPete link:"
+"http://community.jboss.org/people/petemuir[Muir] と一緒にお届けする予定です。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-01-javaone-2011-and-devoxx-2011.adoc:37
-msgid "http://www.devoxx.com/download/attachments/5013581/DEVOXX-Banner120x240_V2-anim.gif?version=1&modificationDate=1306928357000[image:http://www.devoxx.com/download/attachments/5013581/DEVOXX-Banner120x240_V2-anim.gif?version=1&modificationDate=1306928357000[image]]Later on in the year, I will also be running a University talk at http://www.devoxx.com/display/DV11/Home[Devoxx] in Antwerp, titled \"http://www.devoxx.com/display/DV11/Real-world+deep-dive+into+Infinispan+-+the+open+source+data+grid+platform[A real-world deep-dive into Infinispan]\".  This too will be with Pete and http://community.jboss.org/people/mircea.markus[Mircea Markus], another core Infinispan developer."
+#, fuzzy
+msgid ""
+"http://www.devoxx.com/download/attachments/5013581/DEVOXX-Banner120x240_V2-"
+"anim.gif?version=1&modificationDate=1306928357000[image:http://www.devoxx."
+"com/download/attachments/5013581/DEVOXX-Banner120x240_V2-anim.gif?version="
+"1&modificationDate=1306928357000[image]]Later on in the year, I will also be "
+"running a University talk at http://www.devoxx.com/display/DV11/Home[Devoxx] "
+"in Antwerp, titled \"http://www.devoxx.com/display/DV11/Real-world+deep-"
+"dive+into+Infinispan+-+the+open+source+data+grid+platform[A real-world deep-"
+"dive into Infinispan]\".  This too will be with Pete and http://community."
+"jboss.org/people/mircea.markus[Mircea Markus], another core Infinispan "
+"developer."
 msgstr ""
+"link:http://www.devoxx.com/download/attachments/5013581/DEVOXX-"
+"Banner120x240_V2-anim.gif?version=1&modificationDate=1306928357000[] "
+"年の後半には、アントワープの link:http://www.devoxx.com/display/DV11/Home[Devoxx] で link:"
+"http://www.devoxx.com/display/DV11/Real-world+deep-dive+into+Infinispan+-"
+"+the+open+source+data+grid+platform[「A real-world deep-dive into Infinispan] "
+"」と題した大学講演を行う予定です。 これもまた、同じくInfinispanのコア開発者であるPeteと link:http://community."
+"jboss.org/people/mircea.markus[Mircea Markus] と一緒に行う予定です。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-01-javaone-2011-and-devoxx-2011.adoc:41
-msgid "This will be a great chance to learn more about Infinispan, data grids, JSR 107 and JSR 347, so if you are attending these conferences, make sure you add these talks to your agenda!  :-)"
+#, fuzzy
+msgid ""
+"This will be a great chance to learn more about Infinispan, data grids, JSR "
+"107 and JSR 347, so if you are attending these conferences, make sure you "
+"add these talks to your agenda!  :-)"
 msgstr ""
+"Infinispan、データグリッド、JSR 107、JSR "
+"347について学ぶ絶好の機会となりますので、これらのカンファレンスに参加される方は、ぜひこれらの講演をアジェンダに加えてください。)"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-01-javaone-2011-and-devoxx-2011.adoc:43
+#, fuzzy
 msgid "Cheers Manik"
-msgstr ""
+msgstr "乾杯 マニク"

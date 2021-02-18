@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: 'Infinispan Security #1: Authorization'\n"
@@ -32,127 +32,226 @@ msgid ""
 "date: '2014-04-11T04:28:00.000-07:00'\n"
 "author: ttarrant\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7889564347101732588\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/04/infinispan-security-1-authorization.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7889564347101732588\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/04/infinispan-security-1-"
+"authorization.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 'Infinispan Security #1: Authorization'\n"
+"permalink: /blog/:year/:month/:day/infinispan-security-1-authorization\n"
+"date: '2014-04-11T04:28:00.000-07:00'\n"
+"author: ttarrant\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7889564347101732588\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/04/infinispan-security-1-"
+"authorization.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:16
-msgid "Dear all, with the release of 7.0.0.Alpha3, Infinispan has finally gained the ability to perform Access Control (aka Authorization) on CacheManagers and Caches. This is the first stepping-stone towards the full-fledged security work that will be completed during the 7.0 cycle."
+#, fuzzy
+msgid ""
+"Dear all, with the release of 7.0.0.Alpha3, Infinispan has finally gained "
+"the ability to perform Access Control (aka Authorization) on CacheManagers "
+"and Caches. This is the first stepping-stone towards the full-fledged "
+"security work that will be completed during the 7.0 cycle."
 msgstr ""
+"7.0.0.0.Alpha3 のリリースにより、Infinispan はついに CacheManagers と Caches でアクセス制御 "
+"(別名、認証) を実行できるようになりました。これは、7.0サイクルで完了する本格的なセキュリティ作業への第一歩です。"
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:20
-msgid "Infinispan authorization is built around the standard security features available in a JDK near you, such as JAAS and the SecurityManager.  Here's a worked example."
+#, fuzzy
+msgid ""
+"Infinispan authorization is built around the standard security features "
+"available in a JDK near you, such as JAAS and the SecurityManager.  Here's a "
+"worked example."
 msgstr ""
+"Infinispan認証は、JAASやSecurityManagerなど、お近くのJDKで利用できる標準的なセキュリティ機能を中心に構築されています。ここでは、実際に使用した例を紹介します。"
 
 #. type: Title ==
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:22
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Running within a SecurityManager"
-msgstr ""
+msgstr "SecurityManager内での実行"
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:27
-msgid "In order for Infinispan to be able to enforce access restrictions, you should enable the SecurityManager in your JVM. This can be done from the command-line:"
+#, fuzzy
+msgid ""
+"In order for Infinispan to be able to enforce access restrictions, you "
+"should enable the SecurityManager in your JVM. This can be done from the "
+"command-line:"
 msgstr ""
+"Infinispan がアクセス制限を実施できるようにするには、JVM で SecurityManager "
+"を有効にする必要があります。これは、コマンドラインから行うことができます。"
 
 #. type: delimited block .
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:31
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "java -Djava.security.manager ...\n"
-msgstr ""
+msgstr "java -Djava.security.manager ..."
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:35
+#, fuzzy
 msgid "or programmatically:"
-msgstr ""
+msgstr "またはプログラム的に。"
 
 #. type: delimited block .
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:39
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "System.setSecurityManager(new SecurityManager());\n"
-msgstr ""
+msgstr "System.setSecurityManager(new SecurityManager()."
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:48
-msgid "You don't have to use the default implementation that comes with the JDK, but if you do you need to supply an appropriate policy file. The Infinispan distribution comes with an example policy file which illustrates the permissions required by some of Infinispan's JAR files.  Integrate these permissions with the ones required by your application."
+#, fuzzy
+msgid ""
+"You don't have to use the default implementation that comes with the JDK, "
+"but if you do you need to supply an appropriate policy file. The Infinispan "
+"distribution comes with an example policy file which illustrates the "
+"permissions required by some of Infinispan's JAR files.  Integrate these "
+"permissions with the ones required by your application."
 msgstr ""
+"JDK に付属するデフォルトの実装を使用する必要はありませんが、使用する場合は適切なポリシーファイルを提供する必要があります。Infinispan "
+"のディストリビューションには、Infinispan の JAR "
+"ファイルのいくつかで必要とされるパーミッションの例を示したポリシーファイルが付属しています。これらのパーミッションをアプリケーションに必要なものと統合してください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:52
-msgid "While Infinispan's authorization _can_ work without a SecurityManager for the basic cache operations (put, get, etc), some more complex tasks (distexec, map/reduce, query) will fail without one."
+#, fuzzy
+msgid ""
+"While Infinispan's authorization _can_ work without a SecurityManager for "
+"the basic cache operations (put, get, etc), some more complex tasks "
+"(distexec, map/reduce, query) will fail without one."
 msgstr ""
+"Infinispan の認証は、基本的なキャッシュ操作（put、get など）では SecurityManager がなくても動作し _ます_ "
+"が、より複雑なタスク（distexec、map/reduce、query）では SecurityManager がないと失敗します。"
 
 #. type: Title ==
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:53
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring Infinispan for authorization"
-msgstr ""
+msgstr "認可のためのInfinispanの設定"
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:58
-msgid "Authorization in Infinispan is configured at two levels: at the cache container and at the single cache.  Let's look at cache containers (aka CacheManagers) first:"
+#, fuzzy
+msgid ""
+"Authorization in Infinispan is configured at two levels: at the cache "
+"container and at the single cache.  Let's look at cache containers (aka "
+"CacheManagers) first:"
 msgstr ""
+"Infinispan の認証は、キャッシュコンテナと単一キャッシュの 2 つのレベルで設定されます。まず、キャッシュコンテナ (別名 "
+"CacheManager) を見てみましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:60
+#, fuzzy
 msgid "Each cache container determines the following:"
-msgstr ""
+msgstr "各キャッシュコンテナは、以下のように決定します。"
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:62
+#, fuzzy
 msgid "whether to use authorization, via the _enabled_ attribute. "
-msgstr ""
+msgstr "認証を使用するかどうかを、 _enabled_ 属性で指定します。"
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:63
+#, fuzzy
 msgid "a class which will map the user's principals to a set of roles"
-msgstr ""
+msgstr "ユーザーのプリンシパルを一連のロールにマッピングするクラス"
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:64
+#, fuzzy
 msgid "a set of named roles and the permissions they represent"
-msgstr ""
+msgstr "名前付きロールとそれを表すパーミッションのセット"
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:66
+#, fuzzy
 msgid "We then need to define the specific roles for each cache:"
-msgstr ""
+msgstr "次に、各キャッシュの特定の役割を定義する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:70
-msgid "As you can see you can choose to use only a subset of the roles defined at the container level."
-msgstr ""
+#, fuzzy
+msgid ""
+"As you can see you can choose to use only a subset of the roles defined at "
+"the container level."
+msgstr "ご覧のように、コンテナレベルで定義されたロールのサブセットのみを使用することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:73
-msgid "Before you can start using a secured cache, you need to get yourself a _javax.security.auth.Subject_."
-msgstr ""
+#, fuzzy
+msgid ""
+"Before you can start using a secured cache, you need to get yourself a "
+"_javax.security.auth.Subject_."
+msgstr "保護されたキャッシュを使い始める前に、 _javax.security.auth.Subject_ を取得する必要があります。"
 
 #. type: Title ==
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:74
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Obtaining a Subject"
-msgstr ""
+msgstr "件名の取得"
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:90
-msgid "Infinispan is not fussy about how you obtain a JAAS http://docs.oracle.com/javase/7/docs/api/javax/security/auth/Subject.html[Subject]: you may use your container's features, or a third-party library (such as https://www.jboss.org/picketbox[JBoss PicketBox] or https://shiro.apache.org/[Apache Shiro]). The important thing is that your Subject should be populated with a set of http://docs.oracle.com/javase/7/docs/api/java/security/Principal.html[Principals] which represent the user and the groups it belongs to in your security domain (e.g. LDAP, Active Directory, etc).  It is then the duty of the _mapper_ to look through the principals associated with the Subject and convert them into roles suitable for matching those you have defined at the container level.  Once you have a Subject, you interact with the Cache within the context of a _PrivilegedAction_ as follows:"
+#, fuzzy
+msgid ""
+"Infinispan is not fussy about how you obtain a JAAS http://docs.oracle.com/"
+"javase/7/docs/api/javax/security/auth/Subject.html[Subject]: you may use "
+"your container's features, or a third-party library (such as https://www."
+"jboss.org/picketbox[JBoss PicketBox] or https://shiro.apache.org/[Apache "
+"Shiro]). The important thing is that your Subject should be populated with a "
+"set of http://docs.oracle.com/javase/7/docs/api/java/security/Principal."
+"html[Principals] which represent the user and the groups it belongs to in "
+"your security domain (e.g. LDAP, Active Directory, etc).  It is then the "
+"duty of the _mapper_ to look through the principals associated with the "
+"Subject and convert them into roles suitable for matching those you have "
+"defined at the container level.  Once you have a Subject, you interact with "
+"the Cache within the context of a _PrivilegedAction_ as follows:"
 msgstr ""
+"Infinispan は、JAAS link:http://docs.oracle.com/javase/7/docs/api/javax/"
+"security/auth/Subject.html[Subject の] "
+"取得方法にこだわることはありません。コンテナの機能を使用してもよいし、サードパーティのライブラリ ( link:https://www.jboss."
+"org/picketbox[JBoss PicketBox] や link:https://shiro.apache.org/[Apache "
+"Shiro] など) を使用してもよいでしょう。重要なことは、サブジェクトには、セキュリティドメイン(LDAP、Active "
+"Directoryなど)内のユーザとそのユーザが所属するグループを表す link:http://docs.oracle.com/javase/7/"
+"docs/api/java/security/Principal.html[プリンシパル] "
+"のセットが含まれている必要があるということです。次に、サブジェクトに関連付けられたプリンシパルを調べて、コンテナレベルで定義したものと一致するのに適したロールに変換するのが "
+"_マッパー_ の役目です。サブジェクトを取得したら、次のように、 _PrivilegedAction の_ コンテキスト内で Cache と対話します。"
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:94
-msgid "Obviously if you're lucky enough to use Java 8, you can use the following, more concise, lambda-enabled code:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Obviously if you're lucky enough to use Java 8, you can use the following, "
+"more concise, lambda-enabled code:"
+msgstr "もちろん、運良くJava 8を使うことができれば、以下のような、より簡潔でラムダ対応のコードを使うことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:102
-msgid "For more details consult the http://infinispan.org/docs/7.0.x/user_guide/user_guide.html#_security[Security chapter] in the Infinispan documentation and the https://docs.jboss.org/infinispan/7.0/apidocs/org/infinispan/security/package-summary.html[org.infinispan.security] JavaDocs."
+#, fuzzy
+msgid ""
+"For more details consult the http://infinispan.org/docs/7.0.x/user_guide/"
+"user_guide.html#_security[Security chapter] in the Infinispan documentation "
+"and the https://docs.jboss.org/infinispan/7.0/apidocs/org/infinispan/"
+"security/package-summary.html[org.infinispan.security] JavaDocs."
 msgstr ""
+"詳細については、Infinispanドキュメントの link:http://infinispan.org/docs/7.0.x/user_guide/"
+"user_guide.html#_security[セキュリティの章] と link:https://docs.jboss.org/infinispan/"
+"7.0/apidocs/org/infinispan/security/package-summary.html[org.infinispan."
+"security] JavaDocs を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-04-11-infinispan-security-1-authorization.adoc:103
+#, fuzzy
 msgid "Stay tuned for the next parts in the Infinispan security saga !"
-msgstr ""
+msgstr "Infinispanのセキュリティ・サーガの次の部分にご期待ください。"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-06-20-another-week-another-release-candidate.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-20-another-week-another-release-candidate.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Another week, another release candidate\n"
@@ -32,27 +32,74 @@ msgid ""
 "date: '2011-06-20T12:10:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1611428758412911981\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/06/another-week-another-release-candidate.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1611428758412911981\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/06/another-week-another-"
+"release-candidate.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: もう一週間、もう一つのリリース候補\n"
+"permalink: /blog/:year/:month/:day/another-week-another-release-candidate\n"
+"date: '2011-06-20T12:10:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \"release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1611428758412911981\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/06/another-week-another-"
+"release-candidate.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-20-another-week-another-release-candidate.adoc:16
-msgid "Infinispan 5.0.0 codenamed _Pagoa_ has yet another release candidate out for you to play with.  CR6 was released earlier today, please switch any tests you have on the 5.0 series to this latest release candidate and provide as much feedback as possible, as we get ever closer to 5.0.0.Final."
+#, fuzzy
+msgid ""
+"Infinispan 5.0.0 codenamed _Pagoa_ has yet another release candidate out for "
+"you to play with.  CR6 was released earlier today, please switch any tests "
+"you have on the 5.0 series to this latest release candidate and provide as "
+"much feedback as possible, as we get ever closer to 5.0.0.Final."
 msgstr ""
+"5.0.0.0.Finalに近づくにつれ、5.0.0.0.Finalに向けて、5.0."
+"0シリーズで使用しているテストをこの最新のリリース候補に切り替え、できるだけ多くのフィードバックを提供してください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-20-another-week-another-release-candidate.adoc:24
-msgid "In addition to http://infinispan.blogspot.com/2011/06/grouping-api.html[Pete's new grouping API], we also have some changes to the way https://issues.jboss.org/browse/ISPN-1096[class loading works], as well as the closure of a https://issues.jboss.org/secure/ConfigureReport.jspa?atl_token=AQZJ-FV3A-N91S-UDEU%7Cf76c84ee9c36d1ae3ae60aa55123a29732c615eb%7Clin&versions=12316793&sections=all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira.plugin.release-notes-report-plugin%3Areleasenotes&Next=Next[host of bugs] reported against previous release candidates."
+#, fuzzy
+msgid ""
+"In addition to http://infinispan.blogspot.com/2011/06/grouping-api."
+"html[Pete's new grouping API], we also have some changes to the way https://"
+"issues.jboss.org/browse/ISPN-1096[class loading works], as well as the "
+"closure of a https://issues.jboss.org/secure/ConfigureReport.jspa?atl_token="
+"AQZJ-FV3A-N91S-"
+"UDEU%7Cf76c84ee9c36d1ae3ae60aa55123a29732c615eb%7Clin&versions="
+"12316793&sections=all&style=none&selectedProjectId=12310799&reportKey=org."
+"jboss.labs.jira.plugin.release-notes-report-plugin%3Areleasenotes&Next="
+"Next[host of bugs] reported against previous release candidates."
 msgstr ""
+"link:http://infinispan.blogspot.com/2011/06/grouping-api.html[Pete の新しいグループ化 "
+"API に] 加えて、 link:https://issues.jboss.org/browse/ISPN-1096[クラスの読み込み] "
+"方法にもいくつかの変更が加えられており、以前のリリース候補に対して報告されていた link:https://issues.jboss.org/"
+"secure/ConfigureReport.jspa?atl_token=AQZJ-FV3A-N91S-"
+"UDEU%7Cf76c84ee9c36d1ae3ae60aa55123a29732c615eb%7Clin&versions="
+"12316793&sections=all&style=none&selectedProjectId=12310799&reportKey=org."
+"jboss.labs.jira.plugin.release-notes-report-plugin%3Areleasenotes&Next="
+"Next[バグのホスト] も閉鎖されています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-20-another-week-another-release-candidate.adoc:30
-msgid "Please provide feedback using the http://community.jboss.org/en/infinispan?view=discussions[forums], grab the release in the http://www.jboss.org/infinispan/downloads[usual place], and report issues on https://issues.jboss.org/browse/ISPN[JIRA]."
+#, fuzzy
+msgid ""
+"Please provide feedback using the http://community.jboss.org/en/"
+"infinispan?view=discussions[forums], grab the release in the http://www."
+"jboss.org/infinispan/downloads[usual place], and report issues on https://"
+"issues.jboss.org/browse/ISPN[JIRA]."
 msgstr ""
+"link:http://community.jboss.org/en/infinispan?view=discussions[フォーラムを] "
+"使ってフィードバックを提供し、 link:http://www.jboss.org/infinispan/downloads[通常の場所で] "
+"リリースをつかみ、 link:https://issues.jboss.org/browse/ISPN[JIRA の] 問題を報告してください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-20-another-week-another-release-candidate.adoc:32
+#, fuzzy
 msgid "Enjoy Manik"
-msgstr ""
+msgstr "マニクを楽しむ"

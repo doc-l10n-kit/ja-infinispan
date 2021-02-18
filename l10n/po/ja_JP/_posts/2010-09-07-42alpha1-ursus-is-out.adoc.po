@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-09-07-42alpha1-ursus-is-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-07-42alpha1-ursus-is-out.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: 4.2.ALPHA1 \"Ursus\" is out!\n"
@@ -32,37 +32,75 @@ msgid ""
 "date: '2010-09-07T12:23:00.000-07:00'\n"
 "author: mmarkus\n"
 "tags: [ \"alpha\", \"release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5701948157832015952\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/09/42alpha1-ursus-is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5701948157832015952\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/09/42alpha1-ursus-is-out."
+"html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 4.2.ALPHA1「ウルスス」が出た！？\n"
+"permalink: /blog/:year/:month/:day/42alpha1-ursus-is-out\n"
+"date: '2010-09-07T12:23:00.000-07:00'\n"
+"author: mmarkus\n"
+"tags: [ \"alpha\", \"release\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5701948157832015952\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/09/42alpha1-ursus-is-out."
+"html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-07-42alpha1-ursus-is-out.adoc:12
+#, fuzzy
 msgid "Hi *,"
-msgstr ""
+msgstr "こんにちは*。"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-07-42alpha1-ursus-is-out.adoc:15
-msgid "4.2.ALPHA1 has just been released! Besides other things, it contains following two features:"
-msgstr ""
+#, fuzzy
+msgid ""
+"4.2.ALPHA1 has just been released! Besides other things, it contains "
+"following two features:"
+msgstr "4.2.ALPHA1がリリースされました。他にも、以下の2つの機能が含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-07-42alpha1-ursus-is-out.adoc:16
+#, fuzzy
 msgid "supports deadlock detection for eagerly locking transactions (new)"
-msgstr ""
+msgstr "熱心にロックしているトランザクションのデッドロック検出をサポートします。"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-07-42alpha1-ursus-is-out.adoc:25
-msgid "an very interesting optimisation for eager locking, which allows one to benefit from eager locking semantics with the same performance as \"lazy\" locking. You can read more about this http://community.jboss.org/wiki/LockingandConcurrency#Locking_a_single_remote_node[here].  For download information go http://www.jboss.org/infinispan/downloads[here]. For a detailed list of features refer to https://jira.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12315393[the release notes]."
+#, fuzzy
+msgid ""
+"an very interesting optimisation for eager locking, which allows one to "
+"benefit from eager locking semantics with the same performance as \"lazy\" "
+"locking. You can read more about this http://community.jboss.org/wiki/"
+"LockingandConcurrency#Locking_a_single_remote_node[here].  For download "
+"information go http://www.jboss.org/infinispan/downloads[here]. For a "
+"detailed list of features refer to https://jira.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12315393[the release notes]."
 msgstr ""
+"イガーロックのための非常に興味深い最適化で、\"レイジー\"ロックと同じパフォーマンスでイガーロックのセマンティクスの恩恵を受けることができます。これについての詳細は "
+"link:http://community.jboss.org/wiki/"
+"LockingandConcurrency#Locking_a_single_remote_node[こちら] を参照してください。ダウンロード情報は "
+"link:http://www.jboss.org/infinispan/downloads[ここをクリック] してください。機能の詳細なリストは "
+"link:https://jira.jboss.org/secure/ReleaseNote.jspa?projectId="
+"12310799&version=12315393[リリースノート] を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-07-42alpha1-ursus-is-out.adoc:29
-msgid "Enjoy and please share your thoughts on our http://community.jboss.org/en/infinispan?view=discussions[forums]!"
+#, fuzzy
+msgid ""
+"Enjoy and please share your thoughts on our http://community.jboss.org/en/"
+"infinispan?view=discussions[forums]!"
 msgstr ""
+"楽しんで、私たちの link:http://community.jboss.org/en/infinispan?view="
+"discussions[フォーラム] であなたの考えを共有してください"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-07-42alpha1-ursus-is-out.adoc:31
+#, fuzzy
 msgid "Mircea"
-msgstr ""
+msgstr "ミルチェア"

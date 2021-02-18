@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-11-15-hotrod-clients-c-and-c-830final-are-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-15-hotrod-clients-c-and-c-830final-are-out.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Hotrod clients C++ and C# 8.3.0.Final are out!\n"
@@ -32,57 +32,90 @@ msgid ""
 "date: '2018-11-15T01:18:00.002-08:00'\n"
 "author: rigazilla\n"
 "tags: [ \" c++\", \"release\", \"final\", \"c#\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6600120144021464236\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/11/hotrod-clients-c-and-c-830final-are-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6600120144021464236\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/11/hotrod-clients-c-and-c-"
+"830final-are-out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: HotrodクライアントC++とC# 8.3.0.Finalが出ました!\n"
+"permalink: /blog/:year/:month/:day/hotrod-clients-c-and-c-830final-are-out\n"
+"date: '2018-11-15T01:18:00.002-08:00'\n"
+"author: rigazilla\n"
+"tags: [ \" c++\", \"release\", \"final\", \"c#\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6600120144021464236\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/11/hotrod-clients-c-and-c-"
+"830final-are-out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-15-hotrod-clients-c-and-c-830final-are-out.adoc:12
+#, fuzzy
 msgid "Dear Infinispanners,"
-msgstr ""
+msgstr "親愛なるインフィニスパナーの皆様。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-15-hotrod-clients-c-and-c-830final-are-out.adoc:14
+#, fuzzy
 msgid "The C++ and C# 8.3.0.Final releases are out!"
-msgstr ""
+msgstr "C++とC#の8.3.0.Finalリリースが出ました!"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-15-hotrod-clients-c-and-c-830final-are-out.adoc:16
+#, fuzzy
 msgid "Main features contained in this release are:"
-msgstr ""
+msgstr "このリリースに含まれる主な機能は以下の通りです。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-15-hotrod-clients-c-and-c-830final-are-out.adoc:18
+#, fuzzy
 msgid "Cache Admin Operations: create and remove cache at runtime;"
-msgstr ""
+msgstr "キャッシュ管理操作：実行時にキャッシュを作成したり削除したりします。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-15-hotrod-clients-c-and-c-830final-are-out.adoc:19
+#, fuzzy
 msgid "Counters: clusterwide counters;"
-msgstr ""
+msgstr "カウンタ：クラスタ全体のカウンタ。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-15-hotrod-clients-c-and-c-830final-are-out.adoc:20
+#, fuzzy
 msgid "Transactions: run a list of operations transactionally;"
-msgstr ""
+msgstr "トランザクション: トランザクション的に操作のリストを実行します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-15-hotrod-clients-c-and-c-830final-are-out.adoc:21
+#, fuzzy
 msgid "Media Types: use differents media-types to encode (key,value) pairs."
-msgstr ""
+msgstr "メディアタイプ: (キーと値) のペアをエンコードするために、異なるメディアタイプを使用します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-15-hotrod-clients-c-and-c-830final-are-out.adoc:24
-msgid "Source code, binaries and docs are available as usual at the links below."
-msgstr ""
+#, fuzzy
+msgid ""
+"Source code, binaries and docs are available as usual at the links below."
+msgstr "ソースコード、バイナリ、ドキュメントは通常通り下記のリンクから入手できます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-15-hotrod-clients-c-and-c-830final-are-out.adoc:27
+#, fuzzy
 msgid "Thank you for reading, The Infinispan Team"
-msgstr ""
+msgstr "インフィニスパンチームの皆様、お読みいただきありがとうございます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-15-hotrod-clients-c-and-c-830final-are-out.adoc:36
-msgid "https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314125&version=12339951[Release notes for the 8.3.0 serie] [2++] https://github.com/infinispan/cpp-client/tree/8.3.0.Final[C++ code for 8.3.0.Final] [2#] https://github.com/infinispan/dotnet-client/tree/8.3.0.Final[C# code for 8.3.0.Final]"
+#, fuzzy
+msgid ""
+"https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314125&version="
+"12339951[Release notes for the 8.3.0 serie] [2++] https://github.com/"
+"infinispan/cpp-client/tree/8.3.0.Final[C++ code for 8.3.0.Final] [2#] https:/"
+"/github.com/infinispan/dotnet-client/tree/8.3.0.Final[C# code for 8.3.0."
+"Final]"
 msgstr ""
+"link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
+"12314125&version=12339951[8.3.0シリーズのリリースノート] [2] https://github.com/"
+"infinispan/cpp-client/tree/8.3.0.Final[8.3.0.Final用Cコード] [2 link:https://"
+"github.com/infinispan/dotnet-client/tree/8.3.0.Final[#] 8.3.0.Final用C#コード]"

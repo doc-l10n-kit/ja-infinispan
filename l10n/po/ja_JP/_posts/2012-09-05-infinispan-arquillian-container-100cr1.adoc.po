@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan Arquillian Container 1.0.0.CR1 released\n"
@@ -34,245 +34,434 @@ msgid ""
 "tags: [ \"testing\",\n"
 "\"data grids\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6353824341744809154\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/09/infinispan-arquillian-container-100cr1.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6353824341744809154\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/09/infinispan-arquillian-"
+"container-100cr1.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan Arquillian Container 1.0.0.CR1をリリースしました。\n"
+"permalink: /blog/:year/:month/:day/infinispan-arquillian-container-100cr1\n"
+"date: '2012-09-05T05:27:00.001-07:00'\n"
+"author: mgencur\n"
+"tags: [ \"testing\",\n"
+"\"data grids\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6353824341744809154\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/09/infinispan-arquillian-"
+"container-100cr1.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:17
-msgid "Infinispan Arquillian Container is an extension to Arquillian that provides several ways to interact with Infinispan, either with a standalone Infinispan server or just with Infinispan libraries. This extension can also communicate with JBoss Data Grid server via JMX."
+#, fuzzy
+msgid ""
+"Infinispan Arquillian Container is an extension to Arquillian that provides "
+"several ways to interact with Infinispan, either with a standalone "
+"Infinispan server or just with Infinispan libraries. This extension can also "
+"communicate with JBoss Data Grid server via JMX."
 msgstr ""
+"Infinispan Arquillian Container は Arquillian の拡張機能で、スタンドアロンの Infinispan "
+"サーバーと、または Infinispan のライブラリだけで Infinispan と対話するためのいくつかの方法を提供します。この拡張機能は JMX "
+"を介して JBoss Data Grid サーバーと通信することもできる。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:21
-msgid "It was released as Maven artifacts in JBoss Maven Repository. It is located at http://repository.jboss.org/nexus/content/groups/public-jboss/%20[http://repository.jboss.org/nexus/content/groups/public-jboss/]"
+#, fuzzy
+msgid ""
+"It was released as Maven artifacts in JBoss Maven Repository. It is located "
+"at http://repository.jboss.org/nexus/content/groups/public-jboss/%20[http://"
+"repository.jboss.org/nexus/content/groups/public-jboss/]"
 msgstr ""
+"JBoss Maven Repository の Maven artifacts としてリリースされました。 link:http://"
+"repository.jboss.org/nexus/content/groups/public-jboss/%20[http://repository."
+"jboss.org/nexus/content/groups/public-jboss/] にあります。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:23
-msgid "More information on how to set up and use the repo can be found at https://community.jboss.org/wiki/MavenGettingStarted-Users"
+#, fuzzy
+msgid ""
+"More information on how to set up and use the repo can be found at https://"
+"community.jboss.org/wiki/MavenGettingStarted-Users"
 msgstr ""
+"レポの設定方法や使い方の詳細は https://community.jboss.org/wiki/MavenGettingStarted-Users "
+"を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:26
-msgid "What does this Arquillian extension offer to you? Let me describe all aspects of this extension one by one."
+#, fuzzy
+msgid ""
+"What does this Arquillian extension offer to you? Let me describe all "
+"aspects of this extension one by one."
 msgstr ""
+"このアーキリアン・エクステンションは、あなたに何を提供してくれるのでしょうか？このエクステンションの全ての側面を一つずつ説明していきましょう。"
 
 #. type: Title ==
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:28
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Developing tests with standalone Infinispan server"
-msgstr ""
+msgstr "スタンドアロンのInfinispanサーバーを使用したテストの開発"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:39
-msgid "When testing, you might want to automatically start the Infinispan server before the test and stop it afterwards. This can be achieved by configuring infinispan-arquillian-container via Arquillian's configuration file. The following is a subset of attributes that can be specified and thus passed to the Infinispan server during startup: masterThreads, workerThreads, cacheConfig, jmxPort, ... The complete list can be found in http://bit.ly/R7j4d1[bit.ly/R7j4d1] (all private fields)."
+#, fuzzy
+msgid ""
+"When testing, you might want to automatically start the Infinispan server "
+"before the test and stop it afterwards. This can be achieved by configuring "
+"infinispan-arquillian-container via Arquillian's configuration file. The "
+"following is a subset of attributes that can be specified and thus passed to "
+"the Infinispan server during startup: masterThreads, workerThreads, "
+"cacheConfig, jmxPort, ... The complete list can be found in http://bit.ly/"
+"R7j4d1[bit.ly/R7j4d1] (all private fields)."
 msgstr ""
+"テスト時には、テスト前にInfinispanサーバーを自動的に起動し、テスト後に停止させたい場合があります。これは、Arquillianの設定ファイルを介してinfinispan-"
+"arquillian-"
+"containerを設定することで実現できます。以下は、起動時に指定してInfinispanサーバーに渡すことができる属性のサブセットです。masterThreads, "
+"workerThreads, cacheConfig, jmxPort, ... 完全なリストは link:http://bit.ly/"
+"R7j4d1[bit.ly/R7j4d1] (すべてのプライベートフィールド) にあります。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:46
-msgid "Examples are not a part of the release, only libraries are. In order to check out examples provided with the project, one has to clone project's repository: https://github.com/mgencur/infinispan-arquillian-container Examples are located in the respective sub-directory."
+#, fuzzy
+msgid ""
+"Examples are not a part of the release, only libraries are. In order to "
+"check out examples provided with the project, one has to clone project's "
+"repository: https://github.com/mgencur/infinispan-arquillian-container "
+"Examples are located in the respective sub-directory."
 msgstr ""
+"例題はリリースの一部ではなく、ライブラリだけが含まれています。プロジェクトで提供されている例をチェックアウトするには、プロジェクトのリポジトリをクローンしなければなりません:"
+" https://github.com/mgencur/infinispan-arquillian-container "
+"例はそれぞれのサブディレクトリにあります。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:48
+#, fuzzy
 msgid "The configuration file then looks similar to the following:"
-msgstr ""
+msgstr "すると、設定ファイルは以下のようになります。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:55
-msgid "Whether these two Infinispan servers are clustered or not depends on the configuration passed to them via cacheConfig (file path) attribute or their default configuration (when no config. file is passed). The configuration in arquillian.xml file just says: \"Start these two instances with whatever configuration is passed to them\"."
+#, fuzzy
+msgid ""
+"Whether these two Infinispan servers are clustered or not depends on the "
+"configuration passed to them via cacheConfig (file path) attribute or their "
+"default configuration (when no config. file is passed). The configuration in "
+"arquillian.xml file just says: \"Start these two instances with whatever "
+"configuration is passed to them\"."
 msgstr ""
+"これら2つのInfinispanサーバがクラスタ化されているかどうかは、cacheConfig(ファイルパス)属性を介して渡された設定、またはデフォルトの設定(config."
+"ファイルが渡されていない場合)に依存します。arquillian."
+"xmlファイルの設定では、「これらの2つのインスタンスを、渡された設定で起動してください」とだけ書かれています。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:57
+#, fuzzy
 msgid "Complete example: http://bit.ly/RkrpEE[bit.ly/RkrpEE]"
-msgstr ""
+msgstr "完全な例： link:http://bit.ly/RkrpEE[bit.ly/RkrpEE]"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:66
-msgid "When we tell Arquillian to work with Infinispan server, we can inject RemoteInfinispanServer object into our test. Such an object provides various information about the running Infinispan server. For example, we can retrieve a hostname and HotRod port and use these pieces of information to create a RemoteCacheManager instance. Besides that users are allowed to retrieve information available via JMX from the server like cluster size, number of entries in the cache, number of cache hits and many more."
+#, fuzzy
+msgid ""
+"When we tell Arquillian to work with Infinispan server, we can inject "
+"RemoteInfinispanServer object into our test. Such an object provides various "
+"information about the running Infinispan server. For example, we can "
+"retrieve a hostname and HotRod port and use these pieces of information to "
+"create a RemoteCacheManager instance. Besides that users are allowed to "
+"retrieve information available via JMX from the server like cluster size, "
+"number of entries in the cache, number of cache hits and many more."
 msgstr ""
+"ArquillianにInfinispanサーバーで動作するように指示すると、RemoteInfinispanServerオブジェクトをテストに注入することができます。このようなオブジェクトは実行中のInfinispanサーバーに関する様々な情報を提供します。例えば、ホスト名と "
+"HotRod ポートを取得し、これらの情報を使用して RemoteCacheManager "
+"インスタンスを作成することができます。さらに、ユーザーは、クラスターサイズ、キャッシュ内のエントリ数、キャッシュヒット数など、JMX "
+"を通じてサーバーから利用可能な情報を取得することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:69
+#, fuzzy
 msgid "Complete example: http://bit.ly/OaCw8q"
-msgstr ""
+msgstr "完全な例: http://bit.ly/OaCw8q"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:71
+#, fuzzy
 msgid "Vital dependencies required for the test to run are:"
-msgstr ""
+msgstr "テストを実行するために必要な重要な依存関係は以下の通りです。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:74
-msgid "org.infinispan.arquillian.container:infinispan-arquillian-container-managed:jar:1.0.0.CR1:test org.infinispan.arquillian.container:infinispan-arquillian-impl:jar:1.0.0.CR1:test"
+#, fuzzy
+msgid ""
+"org.infinispan.arquillian.container:infinispan-arquillian-container-managed:"
+"jar:1.0.0.CR1:test org.infinispan.arquillian.container:infinispan-arquillian-"
+"impl:jar:1.0.0.CR1:test"
 msgstr ""
+"org.infinispan.arquillian.container:infinispan-arquillian-container-managed:"
+"jar:1.0.0.0.CR1:test org.infinispan.arquillian.container:infinispan-"
+"arquillian-impl:jar:1.0.0.CR1:test"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:77
-msgid "Not only with standalone Infinispan server can Infinispan Arquillian extension work."
-msgstr ""
+#, fuzzy
+msgid ""
+"Not only with standalone Infinispan server can Infinispan Arquillian "
+"extension work."
+msgstr "スタンドアロンのInfinispanサーバーだけでなく、Infinispan Arquillian拡張機能も動作します。"
 
 #. type: Title ==
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:79
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Developing tests with JBoss Data Grid (JDG) server"
-msgstr ""
+msgstr "JBoss Data Grid (JDG) サーバーを使用したテストの開発"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:86
-msgid "This time, the properties in Arquillian's configuration file are different and correspond to properties of JBoss Application Server 7.  The most important property is again the path to the server (jbossHome)."
+#, fuzzy
+msgid ""
+"This time, the properties in Arquillian's configuration file are different "
+"and correspond to properties of JBoss Application Server 7.  The most "
+"important property is again the path to the server (jbossHome)."
 msgstr ""
+"今回は Arquillian の設定ファイルのプロパティが異なり、JBoss Application Server 7 "
+"のプロパティに対応しています。最も重要なプロパティは、再びサーバーへのパス (jbossHome) です。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:95
-msgid "Are you interested in what the test looks like? It looks completely the same as tests for standalone Infinispan server, you just have a few more attributes available. JDG server usually starts all three endpoints (HotRod, Memcached, REST) at the same time while for the Infinispan server you have to specify which end point should be started.  Furthermore, Infinispan server does not have the REST endpoint available out-of-the-box."
+#, fuzzy
+msgid ""
+"Are you interested in what the test looks like? It looks completely the same "
+"as tests for standalone Infinispan server, you just have a few more "
+"attributes available. JDG server usually starts all three endpoints (HotRod, "
+"Memcached, REST) at the same time while for the Infinispan server you have "
+"to specify which end point should be started.  Furthermore, Infinispan "
+"server does not have the REST endpoint available out-of-the-box."
 msgstr ""
+"テストがどのように見えるか興味がありますか？スタンドアロンの Infinispan "
+"サーバーのテストと全く同じですが、利用可能な属性がいくつか増えただけです。JDG サーバーは通常、3 "
+"つのエンドポイント（HotRod、Memcached、REST）を同時に起動しますが、Infinispan "
+"サーバーでは、どのエンドポイントを起動するかを指定する必要があります。さらに、Infinispan サーバーには、REST "
+"エンドポイントが用意されていません。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:98
-msgid "As a result, you can call the following methods with JDG in one single test."
-msgstr ""
+#, fuzzy
+msgid ""
+"As a result, you can call the following methods with JDG in one single test."
+msgstr "その結果、1 回のテストで以下のメソッドを JDG で呼び出すことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:102
-msgid "server1.getMemcachedEndpoint().getPort(); server1.getRESTEndpoint().getContextPath(); server1.getHotRodEndpoint().getPort();"
+#, fuzzy
+msgid ""
+"server1.getMemcachedEndpoint().getPort(); server1.getRESTEndpoint()."
+"getContextPath(); server1.getHotRodEndpoint().getPort();"
 msgstr ""
+"server1.getMemcachedEndpoint().getPort(); server1.getRESTEndpoint()."
+"getContextPath(); server1.getHotRodEndpoint().getPort()。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:106
-msgid "The difference is, of course in dependencies. Instead of a handler for standalone Infinispan server, one has to use a handler for JBoss AS 7.  The dependencies then look like this:"
+#, fuzzy
+msgid ""
+"The difference is, of course in dependencies. Instead of a handler for "
+"standalone Infinispan server, one has to use a handler for JBoss AS 7.  The "
+"dependencies then look like this:"
 msgstr ""
+"違いは、もちろん依存関係にあります。スタンドアロン Infinispan サーバー用のハンドラの代わりに、JBoss AS 7 "
+"用のハンドラを使用しなければなりません。依存関係は以下のようになります。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:109
-msgid "org.jboss.as:jboss-as-arquillian-container-managed:jar:7.1.2.Final:test org.infinispan.arquillian.container:infinispan-arquillian-impl:jar:1.0.0.CR1:test"
+#, fuzzy
+msgid ""
+"org.jboss.as:jboss-as-arquillian-container-managed:jar:7.1.2.Final:test org."
+"infinispan.arquillian.container:infinispan-arquillian-impl:jar:1.0.0.CR1:"
+"test"
 msgstr ""
+"org.jboss.as:jboss-as-arquillian-container-managed:jar:7.1.2.Final:test org."
+"infinispan.arquillian.container:infinispan-arquillian-impl:jar:1.0.0.CR1:"
+"test"
 
 #. type: Title ==
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:112
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Testing Infinispan libraries"
-msgstr ""
+msgstr "Infinispan ライブラリのテスト"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:122
-msgid "Sometimes we don't want to use a standalone server. Sometimes we want to test just Infinispan in its basic form - Java libraries. Infinispan has been under development for years and during that time, lots of tests were developed. With tests come utility methods. Infinispan Arquillian Container enables you to leverage these utility methods and call them via an instance of DatagridManager. This instance can be easily injected into a test, no matter which test framework (TestNG, JUnit) you use."
+#, fuzzy
+msgid ""
+"Sometimes we don't want to use a standalone server. Sometimes we want to "
+"test just Infinispan in its basic form - Java libraries. Infinispan has been "
+"under development for years and during that time, lots of tests were "
+"developed. With tests come utility methods. Infinispan Arquillian Container "
+"enables you to leverage these utility methods and call them via an instance "
+"of DatagridManager. This instance can be easily injected into a test, no "
+"matter which test framework (TestNG, JUnit) you use."
 msgstr ""
+"スタンドアロンサーバを使用したくない場合もあります。時には、基本的な形であるJavaライブラリのInfinispanだけをテストしたいこともあります。Infinispanは何年も前から開発されており、その間に多くのテストが開発されてきました。テストにはユーティリティーメソッドがあります。Infinispan "
+"Arquillian Container を使用すると、これらのユーティリティメソッドを活用し、DatagridManager "
+"のインスタンスを介して呼び出すことができます。このインスタンスは、どのテストフレームワーク(TestNG, "
+"JUnit)を使用しても、簡単にテストに注入することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:124
+#, fuzzy
 msgid "DatagridManager class can be found at http://bit.ly/Q0a7ki"
-msgstr ""
+msgstr "DatagridManager クラスは http://bit.ly/Q0a7ki にあります。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:127
-msgid "Can you see the advantage? No? Let me point out some useful methods available in the manager."
-msgstr ""
+#, fuzzy
+msgid ""
+"Can you see the advantage? No? Let me point out some useful methods "
+"available in the manager."
+msgstr "利点がわかりますか？ないのでしょうか？管理人が利用できる便利な方法をいくつか挙げてみましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:131
-msgid "List<Cache<K, V>> createClusteredCaches(int numMembersInCluster, String cacheName, ConfigurationBuilder builder)"
+#, fuzzy
+msgid ""
+"List<Cache<K, V>> createClusteredCaches(int numMembersInCluster, String "
+"cacheName, ConfigurationBuilder builder)"
 msgstr ""
+"List<Cache<K, V>> createClusteredCaches(int numMembersInCluster, String "
+"cacheName, ConfigurationBuilder builder)"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:135
-msgid "creates a cluster of caches with certain name and pre-defined configuration"
-msgstr ""
+#, fuzzy
+msgid ""
+"creates a cluster of caches with certain name and pre-defined configuration"
+msgstr "は、特定の名前と事前に定義された設定でキャッシュのクラスタを作成します。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:138
+#, fuzzy
 msgid "void waitForClusterToForm()"
-msgstr ""
+msgstr "void waitForClusterToForm()"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:141
+#, fuzzy
 msgid "helps to wait until the cluster is up and running"
-msgstr ""
+msgstr "はクラスタが稼働するまで待つのに役立ちます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:144
+#, fuzzy
 msgid "Cache<A, B> cache(int index)"
-msgstr ""
+msgstr "Cache<A, B> cache(int index)"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:147
+#, fuzzy
 msgid "retrieves a cache from certain node according to the index"
-msgstr ""
+msgstr "は、インデックスに応じて特定のノードからキャッシュを取得します。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:150
+#, fuzzy
 msgid "Cache<A, B> cache(int managerIndex, String cacheName)"
-msgstr ""
+msgstr "Cache<A, B> cache(int managerIndex, String cacheName)"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:153
+#, fuzzy
 msgid "retrieves a cache with that name"
-msgstr ""
+msgstr "その名前のキャッシュを取得します"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:156
+#, fuzzy
 msgid "void killMember(int cacheIndex)"
-msgstr ""
+msgstr "void killMember(int cacheIndex)"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:159
+#, fuzzy
 msgid "kills a cache with cacheIndex index"
-msgstr ""
+msgstr "cacheIndex インデックスを持つキャッシュを削除します。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:162
+#, fuzzy
 msgid "AdvancedCache advancedCache(int i)"
-msgstr ""
+msgstr "AdvancedCache advancedCache(int i)"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:165
+#, fuzzy
 msgid "retrieves an advanced cache from node i"
-msgstr ""
+msgstr "ノード i から高度なキャッシュを取得します。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:168
+#, fuzzy
 msgid "Trancation tx(int i)"
-msgstr ""
+msgstr "トランケーション tx(int i)"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:171
+#, fuzzy
 msgid "retrieves a transaction from node i"
-msgstr ""
+msgstr "はノード i からトランザクションを取得します。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:174
+#, fuzzy
 msgid "TransactionManager tm(int i)"
-msgstr ""
+msgstr "TransactionManager tm(int i)"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:177
+#, fuzzy
 msgid "retrieves a transaction manager from node i"
-msgstr ""
+msgstr "はノード i からトランザクションマネージャを取得します。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:179
+#, fuzzy
 msgid "...and much more."
-msgstr ""
+msgstr "...その他もろもろ。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:183
-msgid "The following test can be found among other examples in the GIT repository."
-msgstr ""
+#, fuzzy
+msgid ""
+"The following test can be found among other examples in the GIT repository."
+msgstr "GIT リポジトリの他の例の中には、以下のようなテストがあります。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:186
+#, fuzzy
 msgid "Required dependencies:"
-msgstr ""
+msgstr "必須の依存関係。"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:190
-msgid "org.infinispan:infinispan-core:jar:5.1.5.FINAL:test  -  users should replace this version with the one they want to test org.infinispan.arquillian.container:infinispan-arquillian-impl:jar:1.0.0.CR1:test"
+#, fuzzy
+msgid ""
+"org.infinispan:infinispan-core:jar:5.1.5.FINAL:test  -  users should replace "
+"this version with the one they want to test org.infinispan.arquillian."
+"container:infinispan-arquillian-impl:jar:1.0.0.CR1:test"
 msgstr ""
+"org.infinispan:infinispan-core:jar:5.1.5.FINAL:test - "
+"ユーザーはこのバージョンをテストしたいものに置き換えてください org.infinispan.arquillian.container:"
+"infinispan-arquillian-impl:jar:1.0.0.CR1:test"
 
 #. type: Plain text
 #: upstream/_posts/2012-09-05-infinispan-arquillian-container-100cr1.adoc:196
-msgid "Infinispan Arquillian Container was tested with Infinispan 5.1.5.FINAL and JDG 6.0.0.GA. Nevertheless, it should work smoothly also with other not-very-distinct versions. I'll be updating the project to work with newer versions of both Infinispan and JBoss Data Grid.   "
+#, fuzzy
+msgid ""
+"Infinispan Arquillian Container was tested with Infinispan 5.1.5.FINAL and "
+"JDG 6.0.0.GA. Nevertheless, it should work smoothly also with other not-very-"
+"distinct versions. I'll be updating the project to work with newer versions "
+"of both Infinispan and JBoss Data Grid.   "
 msgstr ""
+"Infinispan Arquillian ContainerはInfinispan 5.1.5.5.FINALとJDG 6.0.0.0."
+"GAでテストしました。しかし、他のバージョンでも問題なく動作するはずです。今後、Infinispan と JBoss Data Grid "
+"の両方の新しいバージョンで動作するようにプロジェクトを更新していく予定です。"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-02-08-infinispan-521final-is-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-02-08-infinispan-521final-is-out.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 5.2.1.Final is out!\n"
@@ -34,42 +34,87 @@ msgid ""
 "tags: [ \"release\",\n"
 "\"final\"\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3124060478719865792\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/02/infinispan-521final-is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3124060478719865792\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/02/infinispan-521final-is-"
+"out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 5.2.1.Finalが出ました!\n"
+"permalink: /blog/:year/:month/:day/infinispan-521final-is-out\n"
+"date: '2013-02-08T10:05:00.004-08:00'\n"
+"author: mmarkus\n"
+"tags: [ \"release\",\n"
+"\"final\"\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3124060478719865792\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/02/infinispan-521final-is-"
+"out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-02-08-infinispan-521final-is-out.adoc:14
+#, fuzzy
 msgid "This release fixes two critical memory-leaks:"
-msgstr ""
+msgstr "このリリースでは、2つの重大なメモリリークを修正しました。"
 
 #. type: Plain text
 #: upstream/_posts/2013-02-08-infinispan-521final-is-out.adoc:17
-msgid "https://issues.jboss.org/browse/ISPN-2803[ISPN-2803] - Memory leak on every cache write.operation"
+#, fuzzy
+msgid ""
+"https://issues.jboss.org/browse/ISPN-2803[ISPN-2803] - Memory leak on every "
+"cache write.operation"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-2803[ISPN-2803] - "
+"キャッシュ書き込み操作毎のメモリリーク"
 
 #. type: Plain text
 #: upstream/_posts/2013-02-08-infinispan-521final-is-out.adoc:19
-msgid "https://issues.jboss.org/browse/ISPN-2804[ISPN-2804] - Memory Leak: TransactionTable never cleans up complete transactions"
+#, fuzzy
+msgid ""
+"https://issues.jboss.org/browse/ISPN-2804[ISPN-2804] - Memory Leak: "
+"TransactionTable never cleans up complete transactions"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-2804[ISPN-2804] - "
+"メモリリーク。TransactionTable が完全なトランザクションをクリーンアップしない"
 
 #. type: Plain text
 #: upstream/_posts/2013-02-08-infinispan-521final-is-out.adoc:22
-msgid "A big thanks to http://www.linkedin.com/pub/dir/Erik/Salter[Erik Salter] for spotting and patching the above issues!"
+#, fuzzy
+msgid ""
+"A big thanks to http://www.linkedin.com/pub/dir/Erik/Salter[Erik Salter] for "
+"spotting and patching the above issues!"
 msgstr ""
+"上記の問題を発見し、パッチを当ててくれた link:http://www.linkedin.com/pub/dir/Erik/Salter[Erik "
+"Salter] に感謝します!"
 
 #. type: Plain text
 #: upstream/_posts/2013-02-08-infinispan-521final-is-out.adoc:32
-msgid "For a complete list of things included please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12320700[release notes]. Remember to visit our http://www.jboss.org/infinispan/downloads[downloads] section to find the latest release and if you have any questions please check our http://www.jboss.org/infinispan/forums[forums], our mailing lists or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+#, fuzzy
+msgid ""
+"For a complete list of things included please refer to the https://issues."
+"jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
+"12320700[release notes]. Remember to visit our http://www.jboss.org/"
+"infinispan/downloads[downloads] section to find the latest release and if "
+"you have any questions please check our http://www.jboss.org/infinispan/"
+"forums[forums], our mailing lists or ping us directly on irc://irc.freenode."
+"org/infinispan[IRC]."
 msgstr ""
+"含まれるものの完全なリストについては、 link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12320700[リリースノート] を参照してください。最新のリリースを見つけるために "
+"link:http://www.jboss.org/infinispan/downloads[ダウンロード] "
+"セクションを訪問することを忘れないでください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-02-08-infinispan-521final-is-out.adoc:36
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2013-02-08-infinispan-521final-is-out.adoc:38
+#, fuzzy
 msgid "Mircea"
-msgstr ""
+msgstr "ミルチェア"

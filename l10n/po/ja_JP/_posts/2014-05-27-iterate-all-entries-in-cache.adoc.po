@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Iterate all the entries in the cache\n"
@@ -32,194 +32,335 @@ msgid ""
 "date: '2014-05-27T13:17:00.001-07:00'\n"
 "author: infinispan\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8467800185644192234\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/05/iterate-all-entries-in-cache.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8467800185644192234\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/05/iterate-all-entries-in-"
+"cache.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: キャッシュ内のすべてのエントリを繰り返し処理します。\n"
+"permalink: /blog/:year/:month/:day/iterate-all-entries-in-cache\n"
+"date: '2014-05-27T13:17:00.001-07:00'\n"
+"author: infinispan\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8467800185644192234\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/05/iterate-all-entries-in-"
+"cache.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:20
-msgid "Dear all, with the release of http://blog.infinispan.org/2014/05/infinispan-700alpha4-is-out.html[7.0.0.Alpha4] it was mentioned that we now support Distributed Entry Iterator which allows for iteration over all entries in the cache.  Iterating over all the entries in the cache has always been an highly demanded community feature. Existing methods (entrySet, keySet, size) were not a good fit because of potential OOM and were causing a lot of user annoyance. Voila a nice distributed solution :-)  https://issues.jboss.org/browse/ISPN-4222[ISPN-4222]"
+#, fuzzy
+msgid ""
+"Dear all, with the release of http://blog.infinispan.org/2014/05/infinispan-"
+"700alpha4-is-out.html[7.0.0.Alpha4] it was mentioned that we now support "
+"Distributed Entry Iterator which allows for iteration over all entries in "
+"the cache.  Iterating over all the entries in the cache has always been an "
+"highly demanded community feature. Existing methods (entrySet, keySet, size) "
+"were not a good fit because of potential OOM and were causing a lot of user "
+"annoyance. Voila a nice distributed solution :-)  https://issues.jboss.org/"
+"browse/ISPN-4222[ISPN-4222]"
 msgstr ""
+"親愛なる皆様、 link:http://blog.infinispan.org/2014/05/infinispan-700alpha4-is-out."
+"html[7.0.0.0.Alpha4 の] リリースに伴い、キャッシュ内のすべてのエントリに対する反復処理を可能にする Distributed "
+"Entry Iterator をサポートするようになったことに触れました。 "
+"キャッシュ内のすべてのエントリに対する反復処理は、常にコミュニティから強く要望されてきた機能でした。既存のメソッド (entrySet, keySet, "
+"size) は、OOM の可能性があり、ユーザーを困らせる原因となっていました。素晴らしい分散ソリューションが完成しました :-) ISPN link:"
+"https://issues.jboss.org/browse/ISPN-4222[-4222]"
 
 #. type: Title ==
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:22
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Public Interface Additions"
-msgstr ""
+msgstr "パブリックインターフェースの追加"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:26
+#, fuzzy
 msgid "The added public API changes are as follows:"
-msgstr ""
+msgstr "追加されたパブリックAPIの変更点は以下の通りです。"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:27
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:35
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "===\n"
-msgstr ""
+msgstr "==="
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:29
+#, fuzzy
 msgid "AdvancedCache"
-msgstr ""
+msgstr "アドバンストキャッシュ"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:34
-msgid "This returns an EntryIterable that can be used directly as an Iterable over the contents or also to pass a converter to convert the resulting value that is returned to another value or even type itself."
+#, fuzzy
+msgid ""
+"This returns an EntryIterable that can be used directly as an Iterable over "
+"the contents or also to pass a converter to convert the resulting value that "
+"is returned to another value or even type itself."
 msgstr ""
+"これは、内容に対するイテレータブルとして直接使用することができるEntryIterableを返します。また、結果として返される値を別の値に変換するためのコンバータを渡すこともできます。"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:37
+#, fuzzy
 msgid "EntryIterable"
-msgstr ""
+msgstr "エントリイテラブル"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:44
-msgid "EntryIterable also implements AutoCloseable and as such should be closed after iteration or if an exception case occurs.  Thus the Java 7 try with resources syntax should be used."
+#, fuzzy
+msgid ""
+"EntryIterable also implements AutoCloseable and as such should be closed "
+"after iteration or if an exception case occurs.  Thus the Java 7 try with "
+"resources syntax should be used."
 msgstr ""
+"EntryIterableもAutoCloseableを実装しているので、反復後や例外が発生した場合には閉じなければなりません。 そのため、Java "
+"7の try with resources構文を使用しなければなりません。"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:49
-msgid "Note that EntryIterable has a method that allows you to also provide an optional Converter to change the values to another type if desired. This conversion is done on the remote nodes and is preferable to be used when the values can be reduced in size to reduce overall payload size."
+#, fuzzy
+msgid ""
+"Note that EntryIterable has a method that allows you to also provide an "
+"optional Converter to change the values to another type if desired. This "
+"conversion is done on the remote nodes and is preferable to be used when the "
+"values can be reduced in size to reduce overall payload size."
 msgstr ""
+"EntryIterableには、必要に応じて値を別の型に変更するためのオプションのConverterも提供できるメソッドがあることに注意してください。この変換はリモートノードで行われ、ペイロード全体のサイズを小さくするために値のサイズを小さくすることができる場合に使用することが望ましいです。"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:51
+#, fuzzy
 msgid "An example of how to perform the iteration with any cache type."
-msgstr ""
+msgstr "任意のキャッシュタイプで反復処理を実行する方法の例。"
 
 #. type: Title ==
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:54
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "General Algorithm"
-msgstr ""
+msgstr "一般的なアルゴリズム"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:67
-msgid "Essentially when the iterator is generated it will start an iteration process on the local node to retrieve all values local to that node (including from loader) and also a remote thread that will do the same thing on nodes one at at time. As values are retrieved they are made available to the iterator for processing. The chunkSize configuration for the State Transfer configuration will limit how many values are available to be waiting to be iterated on at a time (loader, local and remotely retrieved values count towards this). This is important to limit how many values are stored in memory when both using a loader and in distributed caches to help prevent an OOM condition from occurring."
+#, fuzzy
+msgid ""
+"Essentially when the iterator is generated it will start an iteration "
+"process on the local node to retrieve all values local to that node "
+"(including from loader) and also a remote thread that will do the same thing "
+"on nodes one at at time. As values are retrieved they are made available to "
+"the iterator for processing. The chunkSize configuration for the State "
+"Transfer configuration will limit how many values are available to be "
+"waiting to be iterated on at a time (loader, local and remotely retrieved "
+"values count towards this). This is important to limit how many values are "
+"stored in memory when both using a loader and in distributed caches to help "
+"prevent an OOM condition from occurring."
 msgstr ""
+"基本的には、イテレータが生成されると、ローカルノード上で反復処理が開始され、そのノードにローカルにあるすべての値（ローダからの値を含む）を取得し、リモートスレッドがノード上で同じ処理を1つずつ行います。値が取得されると、処理のためにイテレータが利用できるようになります。状態転送設定の "
+"chunkSize "
+"設定では、一度にイテレータで処理されるのを待つために利用可能な値の数を制限します（ローダ、ローカル、リモートで取得された値はこれにカウントされます）。これは、ローダーを使用しているときと分散キャッシュを使用しているときの両方で、OOM状態が発生するのを防ぐために、メモリに保存される値の数を制限するために重要です。"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:75
-msgid "The provided KeyValueFilter is used on the various nodes to limit what entries are returned to the iterator and are sent to the remote node(s)  when using a Distributed cache to limit how many results are returned. A converter is similar to the KeyValueFilter but it is ran on any entry that passes the filter to possibly converter the value to another such as a projection view if desired. Both the KeyValueFilter and Converter must be serializable for proper operation!"
+#, fuzzy
+msgid ""
+"The provided KeyValueFilter is used on the various nodes to limit what "
+"entries are returned to the iterator and are sent to the remote node(s)  "
+"when using a Distributed cache to limit how many results are returned. A "
+"converter is similar to the KeyValueFilter but it is ran on any entry that "
+"passes the filter to possibly converter the value to another such as a "
+"projection view if desired. Both the KeyValueFilter and Converter must be "
+"serializable for proper operation!"
 msgstr ""
+"提供されている KeyValueFilter "
+"は，イテレータに返されるエントリを制限するために様々なノードで利用され，分散キャッシュを利用している場合にはリモートノードに送られます．コンバータは "
+"KeyValueFilter "
+"と似ていますが、フィルタを通過したエントリに対して実行され、必要に応じて値を投影ビューのような別のものに変換することができます。KeyValueFilterとConverterの両方とも、適切に動作させるためにはシリアライズ可能でなければなりません。"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:80
-msgid "The operation is also aware of rehash events occurring, since this could alter which node owns what entry. This is handled automatically by the iterator by tracking what segments have moved and requesting them from the other node if needed."
+#, fuzzy
+msgid ""
+"The operation is also aware of rehash events occurring, since this could "
+"alter which node owns what entry. This is handled automatically by the "
+"iterator by tracking what segments have moved and requesting them from the "
+"other node if needed."
 msgstr ""
+"この操作は、どのノードがどのエントリを所有しているかを変更する可能性があるため、リハッシュイベントが発生していることも認識しています。これは、どのセグメントが移動したかを追跡し、必要に応じて他のノードに要求することで、イテレータによって自動的に処理されます。"
 
 #. type: Title ==
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:82
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Local, Replicated and Invalidation Cache Optimizations"
-msgstr ""
+msgstr "ローカル、複製、および不正キャッシュの最適化"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:87
-msgid "These caches have some additional optimizations from above in the following"
-msgstr ""
+#, fuzzy
+msgid ""
+"These caches have some additional optimizations from above in the following"
+msgstr "これらのキャッシュは、以下のように上からいくつかの追加最適化を行っています。"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:89
+#, fuzzy
 msgid "The KeyValueFilter and Converter do not need to be Serializable"
-msgstr ""
+msgstr "KeyValueFilter と Converter はシリアライズ可能である必要はありません。"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:90
+#, fuzzy
 msgid "KeyValueFilter optimization is only relevant when using a loader"
-msgstr ""
+msgstr "KeyValueFilter の最適化は、ローダを使用している場合にのみ関連します。"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:92
-msgid "Converter optimization is minimial, the main benefit being it allows code to be the same between cache types"
-msgstr ""
+#, fuzzy
+msgid ""
+"Converter optimization is minimial, the main benefit being it allows code to "
+"be the same between cache types"
+msgstr "コンバータの最適化は最小化されており、主な利点は、キャッシュタイプ間でコードを同じにすることができるということです。"
 
 #. type: Title ==
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:93
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Gotchas"
-msgstr ""
+msgstr "ゴッチャ"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:98
-msgid "This is just to talk about some various cases that users should be aware of."
-msgstr ""
+#, fuzzy
+msgid ""
+"This is just to talk about some various cases that users should be aware of."
+msgstr "これはあくまでも、ユーザーが注意すべき様々なケースについての話です。"
 
 #. type: Title ===
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:99
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Transactional Behaviour"
-msgstr ""
+msgstr "トランザクション行動"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:104
-msgid "When using the entry iterator in a transactional context, all of the values are retrieved outside of the current transaction if there is one, and no transaction is started if there isn't one."
+#, fuzzy
+msgid ""
+"When using the entry iterator in a transactional context, all of the values "
+"are retrieved outside of the current transaction if there is one, and no "
+"transaction is started if there isn't one."
 msgstr ""
+"トランザクションコンテキストでエントリイテレータを使用する場合、現在のトランザクションがある場合はすべての値が現在のトランザクションの外側で取得され、トランザクションがない場合はトランザクションは開始されません。"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:109
-msgid "This is done due to the behaviour of Repeatable Read isolation level.  If not then then all of the retrieved values would have to be stored locally in the current context for that transaction, which would most likely cause an OOM condition in many cases."
+#, fuzzy
+msgid ""
+"This is done due to the behaviour of Repeatable Read isolation level.  If "
+"not then then all of the retrieved values would have to be stored locally in "
+"the current context for that transaction, which would most likely cause an "
+"OOM condition in many cases."
 msgstr ""
+"これは、Repeatable Readの分離レベルの振る舞いのために行われます。 "
+"もしそうでなければ、取得されたすべての値は、そのトランザクションの現在のコンテキストにローカルに保存されなければならず、多くの場合、OOM状態を引き起こす可能性が高いでしょう。"
 
 #. type: Title ===
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:110
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Removal using Iterator"
-msgstr ""
+msgstr "イテレータを使用した削除"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:116
-msgid "Since the iteration process does not take part of transactions, the remove operation of the iterator is not supported as well.  If desired the user should just invoke the remove method from the Cache itself to do this."
+#, fuzzy
+msgid ""
+"Since the iteration process does not take part of transactions, the remove "
+"operation of the iterator is not supported as well.  If desired the user "
+"should just invoke the remove method from the Cache itself to do this."
 msgstr ""
+"反復処理はトランザクションの一部を取らないため、イテレータの削除操作もサポートされていません。 必要に応じて、ユーザは Cache 自体から "
+"remove メソッドを呼び出して、これを実行する必要があります。"
 
 #. type: Title ===
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:117
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Consistency Guarantees"
-msgstr ""
+msgstr "一貫性の保証"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:127
-msgid "This iterator only guarantees consistency in regards to each value independently. That is it will show a view of each value that existed during the period of when the iteration began and when it completed.  Thus it is entirely possible to see a subset of values if say a transaction was committed at the same time as iteration. This would require additional isolation level changes outside of the scope of the iterator to implement this, such as adding Serializable isolation level."
+#, fuzzy
+msgid ""
+"This iterator only guarantees consistency in regards to each value "
+"independently. That is it will show a view of each value that existed during "
+"the period of when the iteration began and when it completed.  Thus it is "
+"entirely possible to see a subset of values if say a transaction was "
+"committed at the same time as iteration. This would require additional "
+"isolation level changes outside of the scope of the iterator to implement "
+"this, such as adding Serializable isolation level."
 msgstr ""
+"このイテレータは、各値に関して独立して整合性を保証するだけです。つまり、イテレータは、イテレーションが開始された時と終了した時の期間に存在した各値のビューを表示します。したがって、例えばあるトランザクションがイテレーションと同時にコミットされた場合に、値のサブセットを見ることは完全に可能です。これを実装するためには、シリアライズ可能な分離レベルを追加するなど、イテレータのスコープ外で分離レベルを変更する必要があります。"
 
 #. type: Title ===
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:128
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Return type change"
-msgstr ""
+msgstr "リターン型変更"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:134
-msgid "Before ISPN 7 is released, it is still needed to change the return type from Map.Entry to instead be CacheEntry as users may need the Metadata stored with the entry as well. This will come in https://issues.jboss.org/browse/ISPN-4326[ISPN-4326]"
+#, fuzzy
+msgid ""
+"Before ISPN 7 is released, it is still needed to change the return type from "
+"Map.Entry to instead be CacheEntry as users may need the Metadata stored "
+"with the entry as well. This will come in https://issues.jboss.org/browse/"
+"ISPN-4326[ISPN-4326]"
 msgstr ""
+"ISPN 7 がリリースされる前に、ユーザがエントリと一緒に保存されたメタデータも必要とする可能性があるため、Map.Entry から "
+"CacheEntry へとリターン・タイプを変更する必要があります。これは link:https://issues.jboss.org/browse/"
+"ISPN-4326[ISPN-4326] で提供されます。"
 
 #. type: Title ==
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Try it out"
-msgstr ""
+msgstr "試してみてください"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:141
-msgid "Let us know if and how you guys plan on using this and any feedback would be appreciated!"
-msgstr ""
+#, fuzzy
+msgid ""
+"Let us know if and how you guys plan on using this and any feedback would be "
+"appreciated!"
+msgstr "あなたたちがこれをどのように使用するか、また、どんなフィードバックでも感謝されるかどうかを教えてください"
 
 #. type: Title ==
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:143
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Update* Oct 31, 2014"
-msgstr ""
+msgstr "2014年10月31日 *更新*"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:149
-msgid "As of Infinispan 7.0.0.Final the Entry Iterator now properly supports transactional data and thus will show the most up to date value if there is a pending change (however read values are not brought into the context to prevent OOM errors)."
+#, fuzzy
+msgid ""
+"As of Infinispan 7.0.0.Final the Entry Iterator now properly supports "
+"transactional data and thus will show the most up to date value if there is "
+"a pending change (however read values are not brought into the context to "
+"prevent OOM errors)."
 msgstr ""
+"Infinispan 7.0.0.0.Final 以降、Entry Iterator はトランザクションデータを適切にサポートするようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-05-27-iterate-all-entries-in-cache.adoc:153
-msgid "The remove operation on the iterator is fully supported and will perform the operation in the current transactional context if there is one.  Caution though as you must use the iterator in the thread it was retrieved from for it to work properly."
+#, fuzzy
+msgid ""
+"The remove operation on the iterator is fully supported and will perform the "
+"operation in the current transactional context if there is one.  Caution "
+"though as you must use the iterator in the thread it was retrieved from for "
+"it to work properly."
 msgstr ""
+"イテレータの削除操作は完全にサポートされており、現在のトランザクションコンテキストがあればその中で操作を実行します。 "
+"ただし、正しく動作するためにはイテレータを取得したスレッドで使用しなければならないので注意してください。"

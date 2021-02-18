@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-11-11-hotrod-clients-cc-810alpha2-released.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-11-11-hotrod-clients-cc-810alpha2-released.adoc:16
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Hotrod clients C++/C# 8.1.0.Alpha2 released!\n"
@@ -38,52 +38,87 @@ msgid ""
 "\"dotnet-client\",\n"
 "\"c#\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3732944812075012386\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/11/hotrod-clients-cc-810alpha2-released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3732944812075012386\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/11/hotrod-clients-cc-"
+"810alpha2-released.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Hotrodクライアント C++/C# 8.1.0.Alpha2をリリースしました。\n"
+"permalink: /blog/:year/:month/:day/hotrod-clients-cc-810alpha2-released\n"
+"date: '2016-11-11T06:12:00.002-08:00'\n"
+"author: rigazilla\n"
+"tags: [ \"c++\",\n"
+"\"release\",\n"
+"\"hotrod\",\n"
+"\"cpp-client\",\n"
+"\"dotnet-client\",\n"
+"\"c#\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3732944812075012386\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/11/hotrod-clients-cc-"
+"810alpha2-released.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-11-11-hotrod-clients-cc-810alpha2-released.adoc:18
+#, fuzzy
 msgid "Dear Infinispan community,"
-msgstr ""
+msgstr "インフィニスパンのコミュニティへ"
 
 #. type: Plain text
 #: upstream/_posts/2016-11-11-hotrod-clients-cc-810alpha2-released.adoc:21
-msgid "I'm pleased to announce that the C++/C# clients version 8.1.0.Alpha2 are out!"
-msgstr ""
+#, fuzzy
+msgid ""
+"I'm pleased to announce that the C++/C# clients version 8.1.0.Alpha2 are "
+"out!"
+msgstr "C++/C#クライアントのバージョン8.1.0.Alpha2が出たのでお知らせします!"
 
 #. type: Plain text
 #: upstream/_posts/2016-11-11-hotrod-clients-cc-810alpha2-released.adoc:23
+#, fuzzy
 msgid "Some of the good news coming with this release:"
-msgstr ""
+msgstr "このリリースと一緒に来ているいくつかの良いニュース。"
 
 #. type: Plain text
 #: upstream/_posts/2016-11-11-hotrod-clients-cc-810alpha2-released.adoc:25
+#, fuzzy
 msgid "more bugs fixed than added"
-msgstr ""
+msgstr "追加されたバグよりも修正されたバグの方が多い"
 
 #. type: Plain text
 #: upstream/_posts/2016-11-11-hotrod-clients-cc-810alpha2-released.adoc:26
+#, fuzzy
 msgid "SNI support"
-msgstr ""
+msgstr "ＳＮＩ対応"
 
 #. type: Plain text
 #: upstream/_posts/2016-11-11-hotrod-clients-cc-810alpha2-released.adoc:27
+#, fuzzy
 msgid "C++ Client listener for remote events"
-msgstr ""
+msgstr "C++ リモートイベント用クライアントリスナー"
 
 #. type: Plain text
 #: upstream/_posts/2016-11-11-hotrod-clients-cc-810alpha2-released.adoc:30
+#, fuzzy
 msgid "Download it from the usual link http://infinispan.org/hotrod-clients/"
-msgstr ""
+msgstr "いつものリンクからダウンロード http://infinispan.org/hotrod-clients/"
 
 #. type: Plain text
 #: upstream/_posts/2016-11-11-hotrod-clients-cc-810alpha2-released.adoc:35
-msgid "We're trying to keep track of the 8.1 trip at this Jira url: https://issues.jboss.org/browse/HRCPP-289[Features list for 8.1] Feedbacks, proposals, hints are welcome!"
+#, fuzzy
+msgid ""
+"We're trying to keep track of the 8.1 trip at this Jira url: https://issues."
+"jboss.org/browse/HRCPP-289[Features list for 8.1] Feedbacks, proposals, "
+"hints are welcome!"
 msgstr ""
+"この Jira url で 8.1 の旅を追跡しようとしています。 link:https://issues.jboss.org/browse/HRCPP-"
+"289[8.1のための機能一覧] フィードバック、提案、ヒントを歓迎します!"
 
 #. type: Plain text
 #: upstream/_posts/2016-11-11-hotrod-clients-cc-810alpha2-released.adoc:37
+#, fuzzy
 msgid "Cheers, The Infinispan Team"
-msgstr ""
+msgstr "乾杯、インフィニスパンチーム"

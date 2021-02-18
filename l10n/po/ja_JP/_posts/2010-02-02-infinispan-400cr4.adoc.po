@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-400cr4.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-400cr4.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 4.0.0.CR4\n"
@@ -32,47 +32,109 @@ msgid ""
 "date: '2010-02-02T09:22:00.000-08:00'\n"
 "author: msurtani\n"
 "tags: [ \"release candidate\", \"release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5630558684887907493\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5630558684887907493\n"
 "blogger_orig_url: https://blog.infinispan.org/2010/02/infinispan-400cr4.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 4.0.0.0.CR4\n"
+"permalink: /blog/:year/:month/:day/infinispan-400cr4\n"
+"date: '2010-02-02T09:22:00.000-08:00'\n"
+"author: msurtani\n"
+"tags: [ \"release candidate\", \"release\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5630558684887907493\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/02/infinispan-400cr4.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-400cr4.adoc:14
-msgid "In the run-up to preparing Infinispan for a public release, we've been busy on a number of interesting things, which have led to a decision to release another CR instead."
+#, fuzzy
+msgid ""
+"In the run-up to preparing Infinispan for a public release, we've been busy "
+"on a number of interesting things, which have led to a decision to release "
+"another CR instead."
 msgstr ""
+"Infinispanの一般公開に向けて準備を進めている間、私たちは多くの興味深いことに忙殺されており、代わりに別のCRをリリースすることになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-400cr4.adoc:23
-msgid "The main driver behind this is that we've finally managed to get our hands on a sizeable cluster large enough to truly test scalability.  Expect interesting public benchmarks to be published soon, watch this space. (I recently http://infinispan.blogspot.com/2010/02/infinispan-as-local-cache.html[blogged about some local-mode benchmarks])"
+#, fuzzy
+msgid ""
+"The main driver behind this is that we've finally managed to get our hands "
+"on a sizeable cluster large enough to truly test scalability.  Expect "
+"interesting public benchmarks to be published soon, watch this space. (I "
+"recently http://infinispan.blogspot.com/2010/02/infinispan-as-local-cache."
+"html[blogged about some local-mode benchmarks])"
 msgstr ""
+"この背景にある主な要因は、スケーラビリティを真にテストするのに十分な大きさのクラスタをようやく手に入れることができたということです。近いうちに興味深いベンチマークが公開されることを期待しています。(私は最近、 "
+"link:http://infinispan.blogspot.com/2010/02/infinispan-as-local-cache."
+"html[いくつかのローカルモードベンチマークについてブログに書きました] )"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-400cr4.adoc:33
-msgid "To enable such benchmarks, we've renewed efforts on building out the http://sourceforge.net/apps/trac/cachebenchfwk/wiki[Cache Benchmarking Framework]. This framework was originally a part of JBoss Cache's http://anonsvn.jboss.org/repos/jbosscache/benchmarks/benchmark-fwk/trunk/[source tree], and has now been extracted and migrated to SourceForge. We welcome others contributing additional plugins for more distributed cache/data grid products, as well as more tests and access patterns."
+#, fuzzy
+msgid ""
+"To enable such benchmarks, we've renewed efforts on building out the http://"
+"sourceforge.net/apps/trac/cachebenchfwk/wiki[Cache Benchmarking Framework]. "
+"This framework was originally a part of JBoss Cache's http://anonsvn.jboss."
+"org/repos/jbosscache/benchmarks/benchmark-fwk/trunk/[source tree], and has "
+"now been extracted and migrated to SourceForge. We welcome others "
+"contributing additional plugins for more distributed cache/data grid "
+"products, as well as more tests and access patterns."
 msgstr ""
+"このようなベンチマークを可能にするために、 link:http://sourceforge.net/apps/trac/cachebenchfwk/"
+"wiki[Cache Benchmarking Framework] の構築に新たな取り組みを行いました。このフレームワークは、もともと JBoss "
+"Cache の link:http://anonsvn.jboss.org/repos/jbosscache/benchmarks/benchmark-"
+"fwk/trunk/[ソースツリー] の一部でしたが、現在は抽出されて SourceForge に移行されています。より多くの分散キャッシュ/"
+"データグリッド製品のための追加プラグインや、より多くのテストやアクセスパターンの提供を歓迎します。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-400cr4.adoc:42
-msgid "Finally, extensive community feedback over the past few weeks have resulted in lots of bugs fixed and performance patches applied. Also, we finally have http://code.google.com/p/jclouds/[a beta release of JClouds] and an all-new http://fisheye.jboss.org/browse/Infinispan/trunk/cachestore/cloud/src/main/java/org/infinispan/loaders/cloud/CloudCacheStoreConfig.java?r=1430[CloudCacheStore] for folks to play with."
+#, fuzzy
+msgid ""
+"Finally, extensive community feedback over the past few weeks have resulted "
+"in lots of bugs fixed and performance patches applied. Also, we finally have "
+"http://code.google.com/p/jclouds/[a beta release of JClouds] and an all-new "
+"http://fisheye.jboss.org/browse/Infinispan/trunk/cachestore/cloud/src/main/"
+"java/org/infinispan/loaders/cloud/CloudCacheStoreConfig.java?r="
+"1430[CloudCacheStore] for folks to play with."
 msgstr ""
+"最後に、ここ数週間のコミュニティからの広範なフィードバックにより、多くのバグが修正され、パフォーマンスパッチが適用されました。また、ついに link:"
+"http://code.google.com/p/jclouds/[JCloudsのベータリリース] と全く新しい link:http://"
+"fisheye.jboss.org/browse/Infinispan/trunk/cachestore/cloud/src/main/java/org/"
+"infinispan/loaders/cloud/CloudCacheStoreConfig.java?r=1430[CloudCacheStore] "
+"がリリースされました。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-400cr4.adoc:51
-msgid "The release is available in its http://www.jboss.org/infinispan/downloads[usual place.] I look forward to getting http://community.jboss.org/en/infinispan?view=discussions[feedback] on this release, this time truly a release candidate, i.e., one that, unchanged, could very well become the final release."
+#, fuzzy
+msgid ""
+"The release is available in its http://www.jboss.org/infinispan/"
+"downloads[usual place.] I look forward to getting http://community.jboss.org/"
+"en/infinispan?view=discussions[feedback] on this release, this time truly a "
+"release candidate, i.e., one that, unchanged, could very well become the "
+"final release."
 msgstr ""
+"このリリースは link:http://www.jboss.org/infinispan/downloads[いつもの場所で] "
+"入手できます。私はこのリリースについて link:http://community.jboss.org/en/infinispan?view="
+"discussions[フィードバックを] 得ることを楽しみにしています。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-400cr4.adoc:55
+#, fuzzy
 msgid "Your last chance for feedback on this release, people!"
-msgstr ""
+msgstr "このリリースをフィードバックする最後のチャンスだぞ、みんな！"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-400cr4.adoc:59
+#, fuzzy
 msgid "Cheers"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-400cr4.adoc:60
+#, fuzzy
 msgid "Manik"
-msgstr ""
+msgstr "マニク"

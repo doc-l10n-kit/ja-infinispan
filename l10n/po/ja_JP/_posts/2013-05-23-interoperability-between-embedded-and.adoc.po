@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-05-23-interoperability-between-embedded-and.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-23-interoperability-between-embedded-and.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Interoperability between Embedded and Server Endpoints is here!\n"
@@ -32,32 +32,73 @@ msgid ""
 "date: '2013-05-23T09:13:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \"hotrod\", \"interoperability\", \"memcached\", \"rest\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8046586356126773629\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/05/interoperability-between-embedded-and.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8046586356126773629\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/05/interoperability-"
+"between-embedded-and.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: エンベデッドエンドポイントとサーバエンドポイントの相互運用性はここにあります!\n"
+"permalink: /blog/:year/:month/:day/interoperability-between-embedded-and\n"
+"date: '2013-05-23T09:13:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"hotrod\", \"interoperability\", \"memcached\", \"rest\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8046586356126773629\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/05/interoperability-"
+"between-embedded-and.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-23-interoperability-between-embedded-and.adoc:16
-msgid "As mentioned by Mircea in the http://infinispan.blogspot.com.es/2013/05/infinispan-530beta2-is-out.html[Infinispan 5.3.0.Beta2 release blog post], interoperability between embedded Infinispan and remote Infinispan modes, including Hot Rod, Memcached and REST is now here!"
+#, fuzzy
+msgid ""
+"As mentioned by Mircea in the http://infinispan.blogspot.com.es/2013/05/"
+"infinispan-530beta2-is-out.html[Infinispan 5.3.0.Beta2 release blog post], "
+"interoperability between embedded Infinispan and remote Infinispan modes, "
+"including Hot Rod, Memcached and REST is now here!"
 msgstr ""
+"link:http://infinispan.blogspot.com.es/2013/05/infinispan-530beta2-is-out."
+"html[Infinispan 5.3.0.Beta2のリリースブログ記事] でMircea氏が述べているように、組み込みInfinispanとHot "
+"Rod、Memcached、RESTを含むリモートInfinispanモード間の相互運用性が実現しました!"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-23-interoperability-between-embedded-and.adoc:21
-msgid "What this means is that you should be able to store data via one of the endpoints and retrieve data from a different one. So, I can store an Java object using the Java Hot Rod client, and I can retrieve it using the embedded interface."
+#, fuzzy
+msgid ""
+"What this means is that you should be able to store data via one of the "
+"endpoints and retrieve data from a different one. So, I can store an Java "
+"object using the Java Hot Rod client, and I can retrieve it using the "
+"embedded interface."
 msgstr ""
+"これが意味するのは、あるエンドポイントを経由してデータを保存し、別のエンドポイントからデータを取得できるようにすることです。つまり、Java Hot "
+"Rodクライアントを使ってJavaオブジェクトを保存し、埋め込みインターフェースを使ってそれを取り出すことができるということです。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-23-interoperability-between-embedded-and.adoc:26
-msgid "Documentation for this new interoperability, or compatibility mode, can be found https://docs.jboss.org/author/x/kYH2Aw[here], including the key aspects of this new functionality, configuration and links to some examples."
+#, fuzzy
+msgid ""
+"Documentation for this new interoperability, or compatibility mode, can be "
+"found https://docs.jboss.org/author/x/kYH2Aw[here], including the key "
+"aspects of this new functionality, configuration and links to some examples."
 msgstr ""
+"この新しい相互運用性（互換性モード）のドキュメントは、この新しい機能の主要な側面、設定、およびいくつかの例へのリンクを含む、 link:https://"
+"docs.jboss.org/author/x/kYH2Aw[ここで] 見つけることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-23-interoperability-between-embedded-and.adoc:30
-msgid "As we head towards the later part of the Infinispan 5.3 series, if you're interested in accessing data in multiple ways, give it a go and let us know what you think!"
+#, fuzzy
+msgid ""
+"As we head towards the later part of the Infinispan 5.3 series, if you're "
+"interested in accessing data in multiple ways, give it a go and let us know "
+"what you think!"
 msgstr ""
+"Infinispan 5."
+"3シリーズの後半に向けて、もしあなたが複数の方法でデータにアクセスすることに興味があるならば、試してみて、あなたの考えを教えてください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-23-interoperability-between-embedded-and.adoc:32
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

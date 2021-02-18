@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-03-03-infinispan-11.0.0.Alpha2.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-03-03-infinispan-11.0.0.Alpha2.adoc:8
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 11.0.0.Alpha2 and 10.1.3.Final\n"
@@ -34,40 +34,74 @@ msgid ""
 "tags: [ \"release\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 11.0.0.0.Alpha2および10.1.3.Final\n"
+"permalink: /blog/:year/:month/:day/infinispan-11\n"
+"date: '2020-03-03T12:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\" ]\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_posts/2020-03-03-infinispan-11.0.0.Alpha2.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Infinispan 11.0.0.Alpha2 and 10.1.3.Final"
-msgstr ""
+msgstr "Infinispan 11.0.0.0.Alpha2および10.1.3.Final"
 
 #. type: Plain text
 #: upstream/_posts/2020-03-03-infinispan-11.0.0.Alpha2.adoc:13
+#, fuzzy
 msgid "Dear Infinispan community,"
-msgstr ""
+msgstr "インフィニスパンのコミュニティへ"
 
 #. type: Plain text
 #: upstream/_posts/2020-03-03-infinispan-11.0.0.Alpha2.adoc:15
+#, fuzzy
 msgid "we've just tagged a couple of releases."
-msgstr ""
+msgstr "いくつかのリリースにタグを付けました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-03-03-infinispan-11.0.0.Alpha2.adoc:17
-msgid "First off is the second Alpha release of what will eventually become Infinispan 11. The https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12344572[release notes] may not be exciting, but it is mostly preparatory work for the big features we are working on: vastly improved async cross-site replication, monitoring, query improvements, the console and the CLI, and more."
+#, fuzzy
+msgid ""
+"First off is the second Alpha release of what will eventually become "
+"Infinispan 11. The https://issues.redhat.com/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12344572[release notes] may not be exciting, "
+"but it is mostly preparatory work for the big features we are working on: "
+"vastly improved async cross-site replication, monitoring, query "
+"improvements, the console and the CLI, and more."
 msgstr ""
+"まず最初に、最終的にはInfinispan 11となるものの2回目のアルファリリースです。 link:https://issues.redhat.com/"
+"secure/ReleaseNote.jspa?projectId=12310799&version=12344572[リリースノート] "
+"を見る限りでは刺激的ではないかもしれませんが、ほとんどは私たちが取り組んでいる大きな機能の準備作業です。"
 
 #. type: Plain text
 #: upstream/_posts/2020-03-03-infinispan-11.0.0.Alpha2.adoc:19
-msgid "We also released a micro-update to 10.1 which fixes quite a few bugs, especially in the way we handle JMX and MP metrics and further improves the documentation."
+#, fuzzy
+msgid ""
+"We also released a micro-update to 10.1 which fixes quite a few bugs, "
+"especially in the way we handle JMX and MP metrics and further improves the "
+"documentation."
 msgstr ""
+"また、10."
+"1へのマイクロアップデートをリリースしました。これは、特にJMXとMPメトリクスを扱う方法におけるかなりの数のバグを修正し、ドキュメントをさらに改善したものです。"
 
 #. type: Title ==
 #: upstream/_posts/2020-03-03-infinispan-11.0.0.Alpha2.adoc:20
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "New release naming scheme"
-msgstr ""
+msgstr "新規リリースのネーミングスキーム"
 
 #. type: Plain text
 #: upstream/_posts/2020-03-03-infinispan-11.0.0.Alpha2.adoc:23
-msgid "Starting with the next development release of Infinispan 11, we will be adopting a new naming scheme. We will no longer be using the _Alpha_ and _Beta_ monikers, but we will use a progressive _Dev_ suffix to indicate that it's a development release. The next release will therefore be called 11.0.0.Dev03."
+#, fuzzy
+msgid ""
+"Starting with the next development release of Infinispan 11, we will be "
+"adopting a new naming scheme. We will no longer be using the _Alpha_ and "
+"_Beta_ monikers, but we will use a progressive _Dev_ suffix to indicate that "
+"it's a development release. The next release will therefore be called 11.0.0."
+"Dev03."
 msgstr ""
+"Infinispan 11 の次の開発リリースから、新しい命名法を採用します。 _Alpha_ と _Beta_ "
+"の名称は使用しませんが、開発リリースであることを示すために累進的な _Dev_ という接尾辞を使用します。したがって、次のリリースは 11.0.0.0."
+"Dev03 と呼ばれます。"

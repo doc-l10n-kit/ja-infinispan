@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.3.0.Final is out!\n"
@@ -32,152 +32,232 @@ msgid ""
 "date: '2018-06-26T00:12:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \" release\", \"final\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2386516872349736916\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/06/infinispan-930final-is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2386516872349736916\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/06/infinispan-930final-is-"
+"out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 9.3.0.Finalが出ました!\n"
+"permalink: /blog/:year/:month/:day/infinispan-930final-is-out\n"
+"date: '2018-06-26T00:12:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \" release\", \"final\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2386516872349736916\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/06/infinispan-930final-is-"
+"out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:14
-msgid "We're delighted to announce the release of Infinispan 9.3.0.Final, which is a culmination of several months of hard work by the entire Infinispan community. Here's a summary of what you can find within it:"
-msgstr ""
+#, fuzzy
+msgid ""
+"We're delighted to announce the release of Infinispan 9.3.0.Final, which is "
+"a culmination of several months of hard work by the entire Infinispan "
+"community. Here's a summary of what you can find within it:"
+msgstr "Infinispan 9.3.0.Finalのリリースを発表できることを嬉しく思います。以下にその内容の概要をご紹介します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:18
-msgid "First final release to work with both Java 8 and Java 10. Note that Infinispan only works in classpath mode."
+#, fuzzy
+msgid ""
+"First final release to work with both Java 8 and Java 10. Note that "
+"Infinispan only works in classpath mode."
 msgstr ""
+"Java 8 と Java 10 の両方で動作する最初の最終リリース。Infinispanはクラスパスモードでのみ動作することに注意してください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:22
-msgid "Transaction support Hot Rod. The java Hot Rod client can participate in Java transactions via Synchronization or XA enlistment. Note that recovery isn't supported yet."
+#, fuzzy
+msgid ""
+"Transaction support Hot Rod. The java Hot Rod client can participate in Java "
+"transactions via Synchronization or XA enlistment. Note that recovery isn't "
+"supported yet."
 msgstr ""
+"トランザクションサポートHot Rod.java Hot "
+"Rodクライアントは、SynchronizationまたはXA入隊を介してJavaトランザクションに参加することができます。リカバリーはまだサポートされていないことに注意してください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:25
-msgid "Caches can now configure the maximum number of attempts to start a CacheWriter/CacheLoader on startup before cache creation fails."
-msgstr ""
+#, fuzzy
+msgid ""
+"Caches can now configure the maximum number of attempts to start a "
+"CacheWriter/CacheLoader on startup before cache creation fails."
+msgstr "キャッシュの作成に失敗する前に、起動時にCacheWriter/CacheLoaderを起動する最大試行回数を設定できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:27
+#, fuzzy
 msgid "Write-behind stores are now fault-tolerant by default."
-msgstr ""
+msgstr "書き込み禁止ストアがデフォルトでフォールトトレラントになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:30
-msgid "Segmented On Heap Data Container. It improves performance of stream operations."
-msgstr ""
+#, fuzzy
+msgid ""
+"Segmented On Heap Data Container. It improves performance of stream "
+"operations."
+msgstr "セグメント化されたヒープデータコンテナ。ストリーム演算のパフォーマンスを向上させます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:32
+#, fuzzy
 msgid "Server upgraded to Wildfly 13."
-msgstr ""
+msgstr "サーバーをWildfly 13にアップグレードしました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:37
-msgid "We have introduced several WildFly feature packs to make it easier for Infinispan to be utilised on WildFly instances via the Server Provisioning Plugin. The following feature packs have been created, most notably:"
+#, fuzzy
+msgid ""
+"We have introduced several WildFly feature packs to make it easier for "
+"Infinispan to be utilised on WildFly instances via the Server Provisioning "
+"Plugin. The following feature packs have been created, most notably:"
 msgstr ""
+"Server Provisioning Plugin を通じて Infinispan を WildFly "
+"インスタンスでより簡単に利用できるようにするために、いくつかの WildFly 機能パックを導入しました。特に、以下の機能パックが作成されました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:39
+#, fuzzy
 msgid "infinispan-feature-pack-client"
-msgstr ""
+msgstr "infinispan-feature-pack-client"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:42
-msgid "All of the modules required to connect to a hotrod server via the client"
-msgstr ""
+#, fuzzy
+msgid ""
+"All of the modules required to connect to a hotrod server via the client"
+msgstr "クライアントを介してホットロッドサーバーに接続するために必要なすべてのモジュール"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:44
+#, fuzzy
 msgid "infinispan-feature-pack-embedded"
-msgstr ""
+msgstr "infinispan-feature-pack-embedded"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:46
+#, fuzzy
 msgid "The modules required for embedded instances of Infinispan"
-msgstr ""
+msgstr "Infinispanの組み込みインスタンスに必要なモジュール"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:48
+#, fuzzy
 msgid "infinispan-feature-pack-embedded-query"
-msgstr ""
+msgstr "infinispan-feature-pack-embedded-query"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:50
+#, fuzzy
 msgid "The same as above but with query capabilities"
-msgstr ""
+msgstr "上記と同じですが、クエリ機能があります。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:52
+#, fuzzy
 msgid "infinispan-feature-pack-wf-modules"
-msgstr ""
+msgstr "infinispan-feature-pack-wf-modules"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:54
+#, fuzzy
 msgid "This is equivalent to the Wildfly-modules.zip"
-msgstr ""
+msgstr "これは、Wildfly-modules.zipと同等です。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:56
+#, fuzzy
 msgid "Hibernate second-level cache provider works with Hibernate ORM 5.3."
-msgstr ""
+msgstr "Hibernateの第2レベルキャッシュプロバイダはHibernate ORM 5.3で動作します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:61
-msgid "The Hot Rod Server allows now to use multiple protocols with a Single Port. The initial version supports HTTP/1.1, HTTP/2 and Hot Rod.  Switching protocols can be done using TLS/ALPN and HTTP/1.1 Upgrade header."
+#, fuzzy
+msgid ""
+"The Hot Rod Server allows now to use multiple protocols with a Single Port. "
+"The initial version supports HTTP/1.1, HTTP/2 and Hot Rod.  Switching "
+"protocols can be done using TLS/ALPN and HTTP/1.1 Upgrade header."
 msgstr ""
+"Hot Rod Serverは、単一のポートで複数のプロトコルを使用することができます。初期バージョンではHTTP/1.1、HTTP/2、Hot "
+"Rodをサポートしています。プロトコルの切り替えはTLS/ALPNとHTTP/1.1アップグレードヘッダを使用して行うことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:64
-msgid "Admin console - improved all editors (schema, scripts, JSON data) to include syntax highlighting."
-msgstr ""
+#, fuzzy
+msgid ""
+"Admin console - improved all editors (schema, scripts, JSON data) to include "
+"syntax highlighting."
+msgstr "管理者コンソール - すべてのエディタ（スキーマ、スクリプト、JSONデータ）を改良し、シンタックスハイライトを含むようにしました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:68
-msgid "Several enhancements in the Java Hot Rod client allowing to read and write data in different formats such as JSON, for cache operations and deployed filters/converters."
+#, fuzzy
+msgid ""
+"Several enhancements in the Java Hot Rod client allowing to read and write "
+"data in different formats such as JSON, for cache operations and deployed "
+"filters/converters."
 msgstr ""
+"Java Hot Rodクライアントのいくつかの強化は、キャッシュ操作とデプロイされたフィルタ/"
+"コンバータのために、JSONのような異なるフォーマットでデータを読み書きすることを可能にします。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:70
+#, fuzzy
 msgid "Cluster wide max idle expiration."
-msgstr ""
+msgstr "クラスタ幅の最大アイドル有効期限。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:72
+#, fuzzy
 msgid "Component Upgrades"
-msgstr ""
+msgstr "コンポーネントのアップグレード"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:74
+#, fuzzy
 msgid "Hibernate Search 5.10"
-msgstr ""
+msgstr "Hibernate検索 5.10"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:75
+#, fuzzy
 msgid "Hibernate ORM 5.3"
-msgstr ""
+msgstr "Hibernate ORM 5.3"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:77
+#, fuzzy
 msgid "Numerous bug fixes which improve stability"
-msgstr ""
+msgstr "安定性を向上させる多数のバグ修正"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:81
-msgid "For more details, please check our https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12336209[issue tracking release notes]."
+#, fuzzy
+msgid ""
+"For more details, please check our https://issues.jboss.org/secure/"
+"ReleaseNote.jspa?projectId=12310799&version=12336209[issue tracking release "
+"notes]."
 msgstr ""
+"詳細については、 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
+"12310799&version=12336209[イシュートラッキングのリリースノートを] ご確認ください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:85
+#, fuzzy
 msgid "Thanks to everyone involved in this release! Onward to Infinispan 9.4!"
-msgstr ""
+msgstr "このリリースに関わったすべての人に感謝します!Infinispan 9.4 に向けて!"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:89
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2018-06-26-infinispan-930final-is-out.adoc:90
+#, fuzzy
 msgid "Galder"
-msgstr ""
+msgstr "ガルダー"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-07-20-one-last-release-candidate-for.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-20-one-last-release-candidate-for.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: One last release candidate for Infinispan 5.0\n"
@@ -32,22 +32,62 @@ msgid ""
 "date: '2011-07-20T11:17:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7286654286046979587\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/07/one-last-release-candidate-for.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7286654286046979587\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/07/one-last-release-"
+"candidate-for.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 5.0の最後のリリース候補\n"
+"permalink: /blog/:year/:month/:day/one-last-release-candidate-for\n"
+"date: '2011-07-20T11:17:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \"release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7286654286046979587\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/07/one-last-release-"
+"candidate-for.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-20-one-last-release-candidate-for.adoc:16
-msgid "http://www.ask8ball.net/assets/images/main/8ball.jpg[image:http://www.ask8ball.net/assets/images/main/8ball.jpg[image,width=320,height=187]]Magic 8, baby!  Let's make this release candidate count.  5.0.0.CR8 is out, http://www.jboss.org/infinispan/downloads[download] it, provide http://community.jboss.org/en/infinispan?view=discussions[feedback], we're moving fast towards a final release on _Pagoa_."
+#, fuzzy
+msgid ""
+"http://www.ask8ball.net/assets/images/main/8ball.jpg[image:http://www."
+"ask8ball.net/assets/images/main/8ball.jpg[image,width=320,height=187]]Magic "
+"8, baby!  Let's make this release candidate count.  5.0.0.CR8 is out, http://"
+"www.jboss.org/infinispan/downloads[download] it, provide http://community."
+"jboss.org/en/infinispan?view=discussions[feedback], we're moving fast "
+"towards a final release on _Pagoa_."
 msgstr ""
+"link:http://www.ask8ball.net/assets/images/main/8ball.jpg[] 5.0.0.0."
+"CR8がリリースされました。ダウンロード、フィードバック link:http://www.jboss.org/infinispan/"
+"downloads[、] Pagoaでの最終リリースに向けて急いでい link:http://community.jboss.org/en/"
+"infinispan?view=discussions[ます] 。"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-20-one-last-release-candidate-for.adoc:22
-msgid "A bunch of https://issues.jboss.org/secure/ConfigureReport.jspa?atl_token=AQZJ-FV3A-N91S-UDEU%7C830c959e6f913e242bc3c9df8565631d3af3b0e0%7Clin&versions=12317248&sections=all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira.plugin.release-notes-report-plugin%3Areleasenotes&Next=Next[bugs fixed] over and above CR7, we'd http://community.jboss.org/en/infinispan?view=discussions[love to hear] what you have to say about this release."
+#, fuzzy
+msgid ""
+"A bunch of https://issues.jboss.org/secure/ConfigureReport.jspa?atl_token="
+"AQZJ-FV3A-N91S-"
+"UDEU%7C830c959e6f913e242bc3c9df8565631d3af3b0e0%7Clin&versions="
+"12317248&sections=all&style=none&selectedProjectId=12310799&reportKey=org."
+"jboss.labs.jira.plugin.release-notes-report-plugin%3Areleasenotes&Next="
+"Next[bugs fixed] over and above CR7, we'd http://community.jboss.org/en/"
+"infinispan?view=discussions[love to hear] what you have to say about this "
+"release."
 msgstr ""
+"CR7以上の link:https://issues.jboss.org/secure/ConfigureReport.jspa?atl_token="
+"AQZJ-FV3A-N91S-"
+"UDEU%7C830c959e6f913e242bc3c9df8565631d3af3b0e0%7Clin&versions="
+"12317248&sections=all&style=none&selectedProjectId=12310799&reportKey=org."
+"jboss.labs.jira.plugin.release-notes-report-plugin%3Areleasenotes&Next="
+"Next[バグが修正されています] 。"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-20-one-last-release-candidate-for.adoc:24
+#, fuzzy
 msgid "Cheers Manik"
-msgstr ""
+msgstr "乾杯 マニク"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-05-02-infinispan-chat-moves-to-zulip.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-02-infinispan-chat-moves-to-zulip.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan chat moves to Zulip\n"
@@ -32,48 +32,92 @@ msgid ""
 "date: '2018-05-02T01:21:00.003-07:00'\n"
 "author: ttarrant\n"
 "tags: [ \" chat\", \"zulip\" ]\n"
-"thumbnail: https://3.bp.blogspot.com/-f0WtkEkmNL4/Wul1C2hXJHI/AAAAAAAAzlE/Qmtr1071yAo1o8qPbRWpj_BdZe9RI1tCACLcBGAs/s72-c/zulip-icon-128x128.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6262676813105373322\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/05/infinispan-chat-moves-to-zulip.html\n"
+"thumbnail: https://3.bp.blogspot.com/-f0WtkEkmNL4/Wul1C2hXJHI/AAAAAAAAzlE/"
+"Qmtr1071yAo1o8qPbRWpj_BdZe9RI1tCACLcBGAs/s72-c/zulip-icon-128x128.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6262676813105373322\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/05/infinispan-chat-moves-"
+"to-zulip.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: InfinispanのチャットはZulipに移動します。\n"
+"permalink: /blog/:year/:month/:day/infinispan-chat-moves-to-zulip\n"
+"date: '2018-05-02T01:21:00.003-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \" chat\", \"zulip\" ]\n"
+"thumbnail: https://3.bp.blogspot.com/-f0WtkEkmNL4/Wul1C2hXJHI/AAAAAAAAzlE/"
+"Qmtr1071yAo1o8qPbRWpj_BdZe9RI1tCACLcBGAs/s72-c/zulip-icon-128x128.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6262676813105373322\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/05/infinispan-chat-moves-"
+"to-zulip.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-02-infinispan-chat-moves-to-zulip.adoc:17
-msgid "For over 9 years Infinispan has used IRC for real-time interaction between the development team, contributors and users. While IRC has served us well over the years, we decided that the time has come to start using something better. After trying out a few \"candidates\" we have settled on https://zulipchat.com/[Zulip]"
+#, fuzzy
+msgid ""
+"For over 9 years Infinispan has used IRC for real-time interaction between "
+"the development team, contributors and users. While IRC has served us well "
+"over the years, we decided that the time has come to start using something "
+"better. After trying out a few \"candidates\" we have settled on https://"
+"zulipchat.com/[Zulip]"
 msgstr ""
+"Infinispanは9年以上にわたり、開発チーム、コントリビュータ、ユーザ間のリアルタイムのやりとりにIRCを使用してきました。IRCは何年にもわたって十分に役立ってきましたが、そろそろもっと良いものを使い始める時期に来ていると判断しました。いくつかの「候補」を試した後、私たちは "
+"link:https://zulipchat.com/[Zulip] に落ち着きました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-02-infinispan-chat-moves-to-zulip.adoc:20
-msgid "https://3.bp.blogspot.com/-f0WtkEkmNL4/Wul1C2hXJHI/AAAAAAAAzlE/Qmtr1071yAo1o8qPbRWpj_BdZe9RI1tCACLcBGAs/s1600/zulip-icon-128x128.png[image:https://3.bp.blogspot.com/-f0WtkEkmNL4/Wul1C2hXJHI/AAAAAAAAzlE/Qmtr1071yAo1o8qPbRWpj_BdZe9RI1tCACLcBGAs/s1600/zulip-icon-128x128.png[image]]"
+#, fuzzy
+msgid ""
+"https://3.bp.blogspot.com/-f0WtkEkmNL4/Wul1C2hXJHI/AAAAAAAAzlE/"
+"Qmtr1071yAo1o8qPbRWpj_BdZe9RI1tCACLcBGAs/s1600/zulip-icon-128x128.png[image:"
+"https://3.bp.blogspot.com/-f0WtkEkmNL4/Wul1C2hXJHI/AAAAAAAAzlE/"
+"Qmtr1071yAo1o8qPbRWpj_BdZe9RI1tCACLcBGAs/s1600/zulip-icon-128x128."
+"png[image]]"
 msgstr ""
+"link:https://3.bp.blogspot.com/-f0WtkEkmNL4/Wul1C2hXJHI/AAAAAAAAzlE/"
+"Qmtr1071yAo1o8qPbRWpj_BdZe9RI1tCACLcBGAs/s1600/zulip-icon-128x128.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-02-infinispan-chat-moves-to-zulip.adoc:25
-msgid "Zulip gives us many improvements over IRC and over many of the other alternatives out there. In particular:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Zulip gives us many improvements over IRC and over many of the other "
+"alternatives out there. In particular:"
+msgstr "ZulipはIRCや他の多くの代替手段に比べて多くの改善点を与えてくれます。特に"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-02-infinispan-chat-moves-to-zulip.adoc:27
+#, fuzzy
 msgid "multiple conversation streams"
-msgstr ""
+msgstr "複数の会話の流れ"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-02-infinispan-chat-moves-to-zulip.adoc:28
+#, fuzzy
 msgid "further filtered with the use of topics"
-msgstr ""
+msgstr "トピックを使用してさらにフィルタリング"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-02-infinispan-chat-moves-to-zulip.adoc:29
+#, fuzzy
 msgid "organization management to organize users into groups"
-msgstr ""
+msgstr "グループ化管理"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-02-infinispan-chat-moves-to-zulip.adoc:30
+#, fuzzy
 msgid "it's open source"
-msgstr ""
+msgstr "オープンソース"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-02-infinispan-chat-moves-to-zulip.adoc:33
-msgid "So, if you want to chat with us, join us on the https://infinispan.zulipchat.com/[Infinispan Zulip Organization]."
+#, fuzzy
+msgid ""
+"So, if you want to chat with us, join us on the https://infinispan.zulipchat."
+"com/[Infinispan Zulip Organization]."
 msgstr ""
+"ということで、雑談したい方は link:https://infinispan.zulipchat.com/[インフィニスパン・ズリップ機構] "
+"に参加してみましょう。"

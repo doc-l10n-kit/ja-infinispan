@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-10-27-infinispan-hotrod-c-client-700cr2.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-27-infinispan-hotrod-c-client-700cr2.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan HotRod C++ Client 7.0.0.CR2\n"
@@ -35,42 +35,84 @@ msgid ""
 "\"cpp-client\",\n"
 "\"release candidate\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8686565938288065893\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/10/infinispan-hotrod-c-client-700cr2.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8686565938288065893\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/10/infinispan-hotrod-c-"
+"client-700cr2.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan HotRod C++クライアント 7.0.0.CR2\n"
+"permalink: /blog/:year/:month/:day/infinispan-hotrod-c-client-700cr2\n"
+"date: '2014-10-27T03:31:00.000-07:00'\n"
+"author: isavin\n"
+"tags: [ \"hotrod\",\n"
+"\"cpp-client\",\n"
+"\"release candidate\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8686565938288065893\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/10/infinispan-hotrod-c-"
+"client-700cr2.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-27-infinispan-hotrod-c-client-700cr2.adoc:15
+#, fuzzy
 msgid "Dear community,"
-msgstr ""
+msgstr "地域の皆様へ"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-27-infinispan-hotrod-c-client-700cr2.adoc:17
+#, fuzzy
 msgid "Infinispan HotRod C++ Client 7.0.0.CR2 is now available."
-msgstr ""
+msgstr "Infinispan HotRod C++ Client 7.0.0.CR2を公開しました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-27-infinispan-hotrod-c-client-700cr2.adoc:20
-msgid "This is mostly a bug-fix release. I would like bring to your attention the following changes:"
-msgstr ""
+#, fuzzy
+msgid ""
+"This is mostly a bug-fix release. I would like bring to your attention the "
+"following changes:"
+msgstr "これはほとんどがバグフィックスのリリースです。以下の変更点に注意を喚起したいと思います。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-27-infinispan-hotrod-c-client-700cr2.adoc:23
-msgid "https://issues.jboss.org/browse/HRCPP-151[HRCPP-151] ABI compatibilty changes"
-msgstr ""
+#, fuzzy
+msgid ""
+"https://issues.jboss.org/browse/HRCPP-151[HRCPP-151] ABI compatibilty "
+"changes"
+msgstr "link:https://issues.jboss.org/browse/HRCPP-151[HRCPP-151] ABI 互換性の変更"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-27-infinispan-hotrod-c-client-700cr2.adoc:24
+#, fuzzy
 msgid "https://issues.jboss.org/browse/HRCPP-127[HRCPP-127] 32bit DLL rename"
 msgstr ""
+"link:https://issues.jboss.org/browse/HRCPP-127[HRCPP-127] 32bit DLL の名前変更"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-27-infinispan-hotrod-c-client-700cr2.adoc:34
-msgid "For the complete list of changes please consult the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314125&version=12325992[release notes].  Visit our http://infinispan.org/hotrod-clients/[downloads] section to find the latest release.  If you have any questions please check our http://infinispan.org/community/[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+#, fuzzy
+msgid ""
+"For the complete list of changes please consult the https://issues.jboss.org/"
+"secure/ReleaseNote.jspa?projectId=12314125&version=12325992[release notes].  "
+"Visit our http://infinispan.org/hotrod-clients/[downloads] section to find "
+"the latest release.  If you have any questions please check our http://"
+"infinispan.org/community/[forums], our https://lists.jboss.org/mailman/"
+"listinfo/infinispan-dev[mailing lists] or ping us directly on irc://irc."
+"freenode.org/infinispan[IRC]."
 msgstr ""
+"変更点の完全なリストについては、 link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12314125&version=12325992[リリースノートを] 参照してください。最新のリリースは link:"
+"http://infinispan.org/hotrod-clients/[ダウンロード] セクションをご覧ください。質問がある場合は、 link:"
+"http://infinispan.org/community/[フォーラム] 、 link:https://lists.jboss.org/"
+"mailman/listinfo/infinispan-dev[メーリングリスト] 、または link:irc://irc.freenode.org/"
+"infinispan[IRC] で直接質問してください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-27-infinispan-hotrod-c-client-700cr2.adoc:35
-msgid "Thanks to everyone involved for the changes and bug reports contributed!"
-msgstr ""
+#, fuzzy
+msgid ""
+"Thanks to everyone involved for the changes and bug reports contributed!"
+msgstr "変更点やバグ報告のために貢献してくれた関係者の皆さんに感謝します。"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-03-07-infinispan-related-presentations-on.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-07-infinispan-related-presentations-on.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan related presentations on DevConf.cz 2016\n"
@@ -36,34 +36,79 @@ msgid ""
 "\"spark\",\n"
 "\"infinispan 8\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7005940864960944593\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/03/infinispan-related-presentations-on.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7005940864960944593\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/03/infinispan-related-"
+"presentations-on.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: DevConf.cz 2016でのInfinispan関連のプレゼンテーション\n"
+"permalink: /blog/:year/:month/:day/infinispan-related-presentations-on\n"
+"date: '2016-03-07T08:01:00.001-08:00'\n"
+"author: galder\n"
+"tags: [ \"conference\",\n"
+"\"presentations\",\n"
+"\"spark\",\n"
+"\"infinispan 8\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7005940864960944593\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/03/infinispan-related-"
+"presentations-on.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-07-infinispan-related-presentations-on.adoc:20
-msgid "DevConf.cz (Developer Conference) is a free annual conference for all Linux and JBoss Community Developers, Admins and Linux users organized by Red Hat Czech Republic in cooperation with the Fedora and JBoss communities. See more details on http://devconf.cz/[DevConf's homepage]."
+#, fuzzy
+msgid ""
+"DevConf.cz (Developer Conference) is a free annual conference for all Linux "
+"and JBoss Community Developers, Admins and Linux users organized by Red Hat "
+"Czech Republic in cooperation with the Fedora and JBoss communities. See "
+"more details on http://devconf.cz/[DevConf's homepage]."
 msgstr ""
+"DevConf.cz (Developer Conference) は、Red Hat チェコ共和国が Fedora および JBoss "
+"コミュニティと協力して主催する、すべての Linux および JBoss コミュニティの開発者、管理者、Linux "
+"ユーザーを対象とした無料の年次カンファレンスです。詳細は link:http://devconf.cz/[DevConf のホームページ] "
+"をご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-07-infinispan-related-presentations-on.adoc:26
-msgid "Since it's JBoss related conference, Infinispan cannot be missing there! We had two Infinispan related presentantions. First of them was presented by Jiří Holuša focusing on new features in Infinispan 8. The presentation also covers very gentle introduction to Infinispan in general."
+#, fuzzy
+msgid ""
+"Since it's JBoss related conference, Infinispan cannot be missing there! We "
+"had two Infinispan related presentantions. First of them was presented by "
+"Jiří Holuša focusing on new features in Infinispan 8. The presentation also "
+"covers very gentle introduction to Infinispan in general."
 msgstr ""
+"JBoss関連のカンファレンスなので、Infinispanは見逃せません。Infinispan 関連の発表が2つありました。最初の発表は Jiří "
+"Holuša さんによる Infinispan 8 の新機能に焦点を当てた発表です。 この発表では Infinispan "
+"の一般的な紹介も含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-07-infinispan-related-presentations-on.adoc:33
-msgid "The second one, named \"From Big Data towards Fast Data\",  was given by Vojtěch Juránek and talked about latest trends in Big Data world. The presentation goes through the introduction about Big Data, mentions the problems with it and comes up with the term Fast Data. Some approaches are presented, how to solve this Fast Data phenomenon, ending up with new Infinispan Spark connector as one of the possible solutions."
+#, fuzzy
+msgid ""
+"The second one, named \"From Big Data towards Fast Data\",  was given by "
+"Vojtěch Juránek and talked about latest trends in Big Data world. The "
+"presentation goes through the introduction about Big Data, mentions the "
+"problems with it and comes up with the term Fast Data. Some approaches are "
+"presented, how to solve this Fast Data phenomenon, ending up with new "
+"Infinispan Spark connector as one of the possible solutions."
 msgstr ""
+"2回目は「ビッグデータからファストデータへ」と題して、Vojtěch "
+"Juránek氏がビッグデータの世界の最新動向について発表しました。発表では、ビッグデータについての紹介、ビッグデータの問題点について言及し、ファストデータという言葉が出てきました。また、ファストデータという現象を解決するためにはどうすればよいのか、いくつかのアプローチが紹介され、最後に新しいInfinispan "
+"Sparkコネクタが解決策の一つとして紹介されました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-07-infinispan-related-presentations-on.adoc:35
+#, fuzzy
 msgid "Please, see the links below."
-msgstr ""
+msgstr "以下のリンクをご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-07-infinispan-related-presentations-on.adoc:43
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Presentation \"Infinispan 8 - keeping up with the latest trends\"*\n"
 "Video: https://www.youtube.com/watch?v=r0__NEgldzI\n"
@@ -73,8 +118,13 @@ msgid ""
 "Video: https://www.youtube.com/watch?v=TVXeXM2g7So\n"
 "Slides: http://bit.ly/1PrQ0ZK[bit.ly/1PrQ0ZK]\n"
 msgstr ""
+"*プレゼンテーション「Infinispan 8 - keep up with latest trends」* Video: https: https://"
+"www.youtube.com/watch?v=r0__NEgldzI Slides link:http://bit.ly/1oxAuCM[: bit."
+"ly/1oxAuCM] * プレゼンテーション「ビッグデータから高速データへ」* Video: https://www.youtube.com/"
+"watch?v=TVXeXM2g7So Slides: link:http://bit.ly/1PrQ0ZK[bit.ly/1PrQ0ZK]"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-07-infinispan-related-presentations-on.adoc:45
+#, fuzzy
 msgid "Cheers, Jiří "
-msgstr ""
+msgstr "乾杯 ジルジ"

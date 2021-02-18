@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,16 +18,17 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
-"title: 'DevNation Live Blog: Building Reactive Applications with Node.js and Red Hat\n"
+"title: 'DevNation Live Blog: Building Reactive Applications with Node.js and "
+"Red Hat\n"
 "permalink: /blog/:year/:month/:day/devnation-live-blog-building-reactive\n"
 "  JBoss Data Grid'\n"
 "date: '2016-06-30T16:47:00.000-07:00'\n"
@@ -36,93 +37,202 @@ msgid ""
 "\"javascript\",\n"
 "\"devnation\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6175313800583532718\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/06/devnation-live-blog-building-reactive.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6175313800583532718\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/06/devnation-live-blog-"
+"building-reactive.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 'DevNation Live Blog.Node.jsとRed Hatでリアクティブなアプリケーションを構築する\n"
+"permalink: /blog/:year/:month/:day/devnation-live-blog-building-reactive\n"
+"  JBoss Data Grid'\n"
+"date: '2016-06-30T16:47:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"conference\",\n"
+"\"javascript\",\n"
+"\"devnation\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6175313800583532718\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/06/devnation-live-blog-"
+"building-reactive.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:22
-msgid "Last Tuesday I gave a talk at DevNation 2016 on building Reactive Applications with Node.js and Red Hat JBoss Data Grid. The slides for it will be uploaded to the DevNation site shortly, but for those who want to play around with the application demoed in the talk, you can find the code and instructions in https://github.com/galderz/infinispan-events/tree/june16[this repository]."
+#, fuzzy
+msgid ""
+"Last Tuesday I gave a talk at DevNation 2016 on building Reactive "
+"Applications with Node.js and Red Hat JBoss Data Grid. The slides for it "
+"will be uploaded to the DevNation site shortly, but for those who want to "
+"play around with the application demoed in the talk, you can find the code "
+"and instructions in https://github.com/galderz/infinispan-events/tree/"
+"june16[this repository]."
 msgstr ""
+"先週の火曜日、私は DevNation 2016 で Node.js と Red Hat JBoss Data Grid "
+"を使ったリアクティブアプリケーションの構築について講演しました。そのスライドはまもなく DevNation "
+"のサイトにアップロードされますが、講演でデモしたアプリケーションで遊びたい人のために、コードと手順はこちら link:https://github."
+"com/galderz/infinispan-events/tree/june16[のリポジトリ] にあります。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:25
-msgid "The Red Hat Developers blog posted a review of the talk in this address: http://developers.redhat.com/blog/2016/06/29/devnation-live-blog-building-reactive-applications-with-node-js-and-red-hat-jboss-data-grid/"
+#, fuzzy
+msgid ""
+"The Red Hat Developers blog posted a review of the talk in this address:"
+" http://developers.redhat.com/blog/2016/06/29/devnation-live-blog-building-"
+"reactive-applications-with-node-js-and-red-hat-jboss-data-grid/"
 msgstr ""
+"Red Hat Developers ブログでは、このアドレスにトークのレビューが掲載されています: http://developers.redhat."
+"com/blog/2016/06/29/devnation-live-blog-building-reactive-applications-with-"
+"node-js-and-red-hat-jboss-data-grid/"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:27
+#, fuzzy
 msgid "Please find below review as written by Rob Terzi:"
-msgstr ""
+msgstr "ロブ・テルジが書いた以下のレビューをご覧ください。"
 
 #. type: Title ==
 #: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:29
-#, no-wrap
-msgid "DevNation Live Blog: Building Reactive Applications with Node.js and Red Hat JBoss Data Grid"
+#, no-wrap, fuzzy
+msgid ""
+"DevNation Live Blog: Building Reactive Applications with Node.js and Red Hat "
+"JBoss Data Grid"
 msgstr ""
+"DevNationライブブログ。Node.js と Red Hat JBoss Data Grid を使ったリアクティブなアプリケーションの構築"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:33
-msgid "Posted by http://developers.redhat.com/blog/author/rctkv/[Rob Terzi] on June 29, 2016"
+#, fuzzy
+msgid ""
+"Posted by http://developers.redhat.com/blog/author/rctkv/[Rob Terzi] on June "
+"29, 2016"
 msgstr ""
+"投稿者： link:http://developers.redhat.com/blog/author/rctkv/[ロブ・テルジ] "
+"投稿日：2016年6月29日"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:42
-msgid "At DevNation, Red Hat’s Galder Zamarreño gave a talk with a live demo, Building reactive applications with Node.js and Red Hat JBoss Data Grid. The demo consisted of building an event-based three tier web application using JBoss Data Grid (JDG) as the data layer, an event manager running on Node.js, and a web client. Recently, support for Node.js clients was added to JDG, opening up the performance of a horizontally scalable in-memory data grid, to reactive web and mobile applications."
+#, fuzzy
+msgid ""
+"At DevNation, Red Hat’s Galder Zamarreño gave a talk with a live "
+"demo, Building reactive applications with Node.js and Red Hat JBoss Data "
+"Grid. The demo consisted of building an event-based three tier web "
+"application using JBoss Data Grid (JDG) as the data layer, an event manager "
+"running on Node.js, and a web client. Recently, support for Node.js clients "
+"was added to JDG, opening up the performance of a horizontally scalable in-"
+"memory data grid, to reactive web and mobile applications."
 msgstr ""
+"DevNation で Red Hat の Galder Zamarreño 氏がライブデモ「Building reactive "
+"applications with Node.js and Red Hat JBoss Data Grid」で講演しました。デモでは、JBoss "
+"Data Grid (JDG) をデータレイヤーとして使用し、Node.js 上で動作するイベントマネージャ、Web "
+"クライアントを使用して、イベントベースの 3 層構造の Web アプリケーションを構築するという内容でした。最近、Node.js "
+"クライアントのサポートが JDG に追加され、水平方向にスケーラブルなインメモリデータグリッドのパフォーマンスが、リアクティブな Web "
+"およびモバイルアプリケーションに開放されました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:47
-msgid "JDG is capable of processing and storing real-time streams of data, while maintaining very fast response times. It does this by using the memory available from a dynamically scalable grid of machines. Galder described JDG as a four-in-one package capable of being:"
+#, fuzzy
+msgid ""
+"JDG is capable of processing and storing real-time streams of data, while "
+"maintaining very fast response times. It does this by using the memory "
+"available from a dynamically scalable grid of machines. Galder described JDG "
+"as a four-in-one package capable of being:"
 msgstr ""
+"JDG は、非常に高速な応答時間を維持しながら、リアルタイムのデータ "
+"ストリームを処理して保存することができます。これは、動的にスケーラブルなマシンのグリッドから利用可能なメモリを使用することで実現されます。Galder "
+"氏は、JDG を以下のような 4 つの機能を備えた 1 つのパッケージとして説明しています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:49
+#, fuzzy
 msgid "a distributed cache."
-msgstr ""
+msgstr "分散キャッシュです。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:50
+#, fuzzy
 msgid "a high performance NoSQL primary data store."
-msgstr ""
+msgstr "高性能なNoSQLプライマリデータストアです。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:52
-msgid "an event-driven data store, particularly for real time event processing."
-msgstr ""
+#, fuzzy
+msgid ""
+"an event-driven data store, particularly for real time event processing."
+msgstr "特にリアルタイムのイベント処理のためのイベント駆動型データストア。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:53
+#, fuzzy
 msgid "a big data and Internet of Things (IoT) data store."
-msgstr ""
+msgstr "ビッグデータとIoT（Internet of Things）のデータストア。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:55
+#, fuzzy
 msgid "The three-tiered web app in the demo consisted of:"
-msgstr ""
+msgstr "デモでは3層のWebアプリで構成されていました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:63
-msgid "A web client written in Elm, which is a functional language that compiles to JavaScript.  It is statically typed, which the presenter feels leads to well architected code. Elm competes with platforms such as React and Angular. Any of those other platforms could be used, but Galder chose Elm for the live demo, particularly given the useful error messages the compiler generates as a virtue of using a statically typed language."
+#, fuzzy
+msgid ""
+"A web client written in Elm, which is a functional language that compiles to "
+"JavaScript.  It is statically typed, which the presenter feels leads to well "
+"architected code. Elm competes with platforms such as React and Angular. Any "
+"of those other platforms could be used, but Galder chose Elm for the live "
+"demo, particularly given the useful error messages the compiler generates as "
+"a virtue of using a statically typed language."
 msgstr ""
+"JavaScriptにコンパイルされる関数型言語であるElmで書かれたWebクライアント。 "
+"静的に型付けされているため、よく設計されたコードにつながるとプレゼンターは感じています。Elm は React や Angular "
+"などのプラットフォームと競合します。他のプラットフォームを使用することもできますが、Galder 氏はライブデモで Elm "
+"を選択しました。特に、静的型付けされた言語を使用することで、コンパイラが生成する有用なエラーメッセージを考慮しています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:64
+#, fuzzy
 msgid "An event manager running on Node.js using Express.js."
-msgstr ""
+msgstr "Express.jsを使ってNode.js上で動作するイベントマネージャ。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:67
-msgid "JBoss Data Grid as the data store.  Three nodes were used, running on the same laptop. Each element was guaranteed to be stored in two nodes, providing redundancy for fail over."
+#, fuzzy
+msgid ""
+"JBoss Data Grid as the data store.  Three nodes were used, running on the "
+"same laptop. Each element was guaranteed to be stored in two nodes, "
+"providing redundancy for fail over."
 msgstr ""
+"データストアとして JBoss Data Grid を使用し、同じラップトップ上で実行される 3 つのノードを使用しました。各要素は 2 "
+"つのノードに保存されることが保証され、フェイルオーバーのための冗長性を提供しました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:75
-msgid "Node.js based applications have become very popular. Many use JavaScript on all three tiers, including NoSQL data stores. However, most of those data stores can’t match the scalability and response times of JDG.  Traditionally, developers have needed to use Java to take advantage of JBoss Data Grid. The new fully asynchronous Node.js interface to JBoss Data Grid should enable developers to build some truly interesting next-generation reactive applications."
+#, fuzzy
+msgid ""
+"Node.js based applications have become very popular. Many use JavaScript on "
+"all three tiers, including NoSQL data stores. However, most of those data "
+"stores can’t match the scalability and response times of JDG.  "
+"Traditionally, developers have needed to use Java to take advantage of JBoss "
+"Data Grid. The new fully asynchronous Node.js interface to JBoss Data Grid "
+"should enable developers to build some truly interesting next-generation "
+"reactive applications."
 msgstr ""
+"Node.jsベースのアプリケーションが非常に人気を集めています。多くは、NoSQL データストアを含む 3 層すべてで JavaScript "
+"を使用しています。しかし、それらのデータストアのほとんどは、JDG のスケーラビリティとレスポンスタイムには勝てません。従来、開発者はJBoss "
+"Data Gridを活用するためにJavaを使用する必要がありました。JBoss Data Grid への新しい完全に非同期な Node.js "
+"インターフェイスにより、開発者は本当に興味深い次世代のリアクティブアプリケーションを構築できるようになるはずです。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-30-devnation-live-blog-building-reactive.adoc:79
-msgid "You can download JBoss Data Grid from http://developers.redhat.com/downloads/[developers.redhat.com]. If you’d like to get involved, join the open source community at http://infinispan.org/[infinispan.org]."
+#, fuzzy
+msgid ""
+"You can download JBoss Data Grid from http://developers.redhat.com/downloads/"
+"[developers.redhat.com]. If you’d like to get involved, join the open source "
+"community at http://infinispan.org/[infinispan.org]."
 msgstr ""
+"JBoss Data Grid は link:http://developers.redhat.com/downloads/[developers."
+"redhat.com] からダウンロードできます。参加したい場合は、 link:http://infinispan.org/[infinispan."
+"org] のオープンソースコミュニティに参加してください。"

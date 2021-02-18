@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,51 +18,118 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-04-18-infinispan-coming-to-brazils-judcon.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-18-infinispan-coming-to-brazils-judcon.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan coming to Brazil's JUDCon!!\n"
 "permalink: /blog/:year/:month/:day/infinispan-coming-to-brazils-judcon\n"
 "date: '2013-04-18T12:03:00.000-07:00'\n"
 "author: galder\n"
-"tags: [ \"conference\", \"data grids\", \"event\", \"judcon\", \"hibernate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5672791388121637124\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/04/infinispan-coming-to-brazils-judcon.html\n"
+"tags: [ \"conference\", \"data grids\", \"event\", \"judcon\", \"hibernate\" "
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5672791388121637124\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/04/infinispan-coming-to-"
+"brazils-judcon.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: インフィニスパンがブラジルのJUDConにやってくる!\n"
+"permalink: /blog/:year/:month/:day/infinispan-coming-to-brazils-judcon\n"
+"date: '2013-04-18T12:03:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"conference\", \"data grids\", \"event\", \"judcon\", \"hibernate\" "
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5672791388121637124\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/04/infinispan-coming-to-"
+"brazils-judcon.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-18-infinispan-coming-to-brazils-judcon.adoc:17
-msgid "Infinispan team is coming to http://en.wikipedia.org/wiki/S%C3%A3o_Paulo[São Paulo] (Brazil) to present on multiple topics around caching, data grids and NoSQL in http://www.jboss.org/events/JUDCon/2013/brazil[Brazil's first ever JBoss Users & Developers Conference (JUDCon)]. The event is being held over two days, on 19th and 20th of April."
+#, fuzzy
+msgid ""
+"Infinispan team is coming to http://en.wikipedia.org/wiki/S%C3%A3o_Paulo[São "
+"Paulo] (Brazil) to present on multiple topics around caching, data grids and "
+"NoSQL in http://www.jboss.org/events/JUDCon/2013/brazil[Brazil's first ever "
+"JBoss Users & Developers Conference (JUDCon)]. The event is being held over "
+"two days, on 19th and 20th of April."
 msgstr ""
+"Infinispanチームが link:http://en.wikipedia.org/wiki/S%C3%A3o_Paulo[サンパウロ] "
+"（ブラジル）に来て、 link:http://www.jboss.org/events/JUDCon/2013/brazil[ブラジル初のJBoss "
+"Users & Developers Conference（JUDCon）] "
+"でキャッシング、データグリッド、NoSQLを中心とした複数のトピックについて発表します。このイベントは、4月19日と20日の2日間にわたって開催されます。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-18-infinispan-coming-to-brazils-judcon.adoc:22
-msgid "On the 19th, Manik Surtani and Pete Muir will present on http://www.jboss.org/events/JUDCon/2013/brazil/speakers.html#maniksurtani1[how to supercharge web applications using JBoss Data Grid]. Expect a very lively presentation from these very seasoned presenters :)"
+#, fuzzy
+msgid ""
+"On the 19th, Manik Surtani and Pete Muir will present on http://www.jboss."
+"org/events/JUDCon/2013/brazil/speakers.html#maniksurtani1[how to supercharge "
+"web applications using JBoss Data Grid]. Expect a very lively presentation "
+"from these very seasoned presenters :)"
 msgstr ""
+"19日には、Manik Surtani氏とPete Muir氏が、 link:http://www.jboss.org/events/JUDCon/"
+"2013/brazil/speakers.html#maniksurtani1[JBoss Data "
+"Gridを使用してWebアプリケーションをスーパーチャージする方法] について発表します。経験豊富な二人の活発なプレゼンテーションにご期待ください。)"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-18-infinispan-coming-to-brazils-judcon.adoc:32
-msgid "Another presentation where you'll be able to see Infinispan in action is in Shekhar Gulati's http://www.jboss.org/events/JUDCon/2013/brazil/speakers.html#shekhargulati1[\"Closed PaaS to Open PaaS : Migrate GAE Applications to OpenShift Using CapeDwarf\"] and Randall Hauch's http://www.jboss.org/events/JUDCon/2013/brazil/speakers.html#randallhauch1[\"Elastic Consistent NoSQL Data Storage with ModeShape 3\"] talk, both on the 19th of April, where Shekhar and Randal will demonstrate JBoss projects using Infinispan heavily."
+#, fuzzy
+msgid ""
+"Another presentation where you'll be able to see Infinispan in action is "
+"in Shekhar Gulati's http://www.jboss.org/events/JUDCon/2013/brazil/speakers."
+"html#shekhargulati1[\"Closed PaaS to Open PaaS : Migrate GAE Applications to "
+"OpenShift Using CapeDwarf\"] and Randall Hauch's http://www.jboss.org/events/"
+"JUDCon/2013/brazil/speakers.html#randallhauch1[\"Elastic Consistent NoSQL "
+"Data Storage with ModeShape 3\"] talk, both on the 19th of April, where "
+"Shekhar and Randal will demonstrate JBoss projects using Infinispan heavily."
 msgstr ""
+"Infinispanを実際に見ることができるもう1つのプレゼンテーションは、Shekhar Gulati氏の「 link:http://www."
+"jboss.org/events/JUDCon/2013/brazil/speakers.html#shekhargulati1[Closed PaaS "
+"to Open PaaS .] 4月19日に開催されるShekhar Gulati氏の「 link:http://www.jboss.org/"
+"events/JUDCon/2013/brazil/speakers.html#shekhargulati1[Migrate GAE "
+"Applications to OpenShift Using CapeDwarf」] とRandall Hauch氏の link:http://www."
+"jboss.org/events/JUDCon/2013/brazil/speakers.html#randallhauch1[「Elastic "
+"Consistent NoSQL Data Storage with ModeShape 3」] "
+"では、Shekhar氏とRandal氏がInfinispanを多用したJBossプロジェクトのデモを行います。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-18-infinispan-coming-to-brazils-judcon.adoc:39
-msgid "On 20th of April, I'll be speaking about http://www.jboss.org/events/JUDCon/2013/brazil/speakers.html#galderzamerreno2[scaling up Hibernate/JPA applications with Infinispan second-level cache]. Even if the Infinispan caching provider was created almost 4 years ago, this is the first time I'm presenting about it. Really looking forward to that."
+#, fuzzy
+msgid ""
+"On 20th of April, I'll be speaking about http://www.jboss.org/events/JUDCon/"
+"2013/brazil/speakers.html#galderzamerreno2[scaling up Hibernate/JPA "
+"applications with Infinispan second-level cache]. Even if the Infinispan "
+"caching provider was created almost 4 years ago, this is the first time I'm "
+"presenting about it. Really looking forward to that."
 msgstr ""
+"4月20日に、 link:http://www.jboss.org/events/JUDCon/2013/brazil/speakers."
+"html#galderzamerreno2[Infinispanの第2レベルキャッシュを使ったHibernate/JPAアプリケーションのスケーリング] "
+"についてお話します。Infinispanのキャッシングプロバイダは4年近く前に作られたとはいえ、それについて発表するのは今回が初めてです。本当に楽しみです。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-18-infinispan-coming-to-brazils-judcon.adoc:46
-msgid "Finally, I'll also give the http://www.jboss.org/events/JUDCon/2013/brazil/speakers.html[first ever presentation on Infinispan JCache (JSR-107) API implementation], which will be mostly a live coding session showing different bits about JCache API and the extra capabilities JCache users get from using Infinispan implementation."
+#, fuzzy
+msgid ""
+"Finally, I'll also give the http://www.jboss.org/events/JUDCon/2013/brazil/"
+"speakers.html[first ever presentation on Infinispan JCache (JSR-107) API "
+"implementation], which will be mostly a live coding session showing "
+"different bits about JCache API and the extra capabilities JCache users get "
+"from using Infinispan implementation."
 msgstr ""
+"最後に、 link:http://www.jboss.org/events/JUDCon/2013/brazil/speakers."
+"html[Infinispan JCache (JSR-107) APIの実装に関する初のプレゼンテーションを] 行います。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-18-infinispan-coming-to-brazils-judcon.adoc:48
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

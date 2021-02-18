@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Reactive Big Data on OpenShift In-Memory Data Grids\n"
@@ -34,294 +34,542 @@ msgid ""
 "tags: [ \"conference\",\n"
 "\"demo\",\n"
 "]\n"
-"thumbnail: https://3.bp.blogspot.com/-mu5jN_vRnVk/WQxMd3Ev8aI/AAAAAAAAE2g/R2hUTM9_d4U3sPWsmKl8VyEwoLPwR-VhwCLcB/s72-c/real-time-demo.jpg\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6817289187913426434\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/05/reactive-big-data-on-openshift-in.html\n"
+"thumbnail: https://3.bp.blogspot.com/-mu5jN_vRnVk/WQxMd3Ev8aI/AAAAAAAAE2g/"
+"R2hUTM9_d4U3sPWsmKl8VyEwoLPwR-VhwCLcB/s72-c/real-time-demo.jpg\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6817289187913426434\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/05/reactive-big-data-on-"
+"openshift-in.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: OpenShiftインメモリデータグリッド上のリアクティブビッグデータ\n"
+"permalink: /blog/:year/:month/:day/reactive-big-data-on-openshift-in\n"
+"date: '2017-05-05T02:54:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"conference\",\n"
+"\"demo\",\n"
+"]\n"
+"thumbnail: https://3.bp.blogspot.com/-mu5jN_vRnVk/WQxMd3Ev8aI/AAAAAAAAE2g/"
+"R2hUTM9_d4U3sPWsmKl8VyEwoLPwR-VhwCLcB/s72-c/real-time-demo.jpg\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6817289187913426434\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/05/reactive-big-data-on-"
+"openshift-in.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:17
-msgid "Thanks a lot to everyone who attended the Infinispan sessions I gave in http://www.developermarch.com/developersummit/[Great Indian Developer Summit]! Your questions after the talks were really insightful."
+#, fuzzy
+msgid ""
+"Thanks a lot to everyone who attended the Infinispan sessions I gave in http:"
+"//www.developermarch.com/developersummit/[Great Indian Developer Summit]! "
+"Your questions after the talks were really insightful."
 msgstr ""
+"link:http://www.developermarch.com/developersummit/[Great Indian Developer "
+"Summit] "
+"で行ったInfinispanのセッションに参加してくれた皆さん、ありがとうございました。講演後の皆さんからの質問は本当に参考になりました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:27
-msgid "One of the talks I gave was titled http://www.developermarch.com/developersummit/session.html?insert=Galder1[Big Data In Action with Infinispan] (slides are available https://speakerdeck.com/galderz/big-data-in-action-with-infinispan[here]), where I was looking at how Infinispan based in-memory data grids can help you deal with the problems of real-time big data and how to do big data analytics."
+#, fuzzy
+msgid ""
+"One of the talks I gave was titled http://www.developermarch.com/"
+"developersummit/session.html?insert=Galder1[Big Data In Action with "
+"Infinispan] (slides are available https://speakerdeck.com/galderz/big-data-"
+"in-action-with-infinispan[here]), where I was looking at how Infinispan "
+"based in-memory data grids can help you deal with the problems of real-time "
+"big data and how to do big data analytics."
 msgstr ""
+"私が行った講演の一つに「 link:http://www.developermarch.com/developersummit/session."
+"html?insert=Galder1[Big Data In Action with Infinispan] "
+"」というタイトルの講演がありました（スライドはこちら） link:https://speakerdeck.com/galderz/big-data-in-"
+"action-with-infinispan[。]"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:37
-msgid "During the talk I live coded a demo showing both real-time and analytics parts, running on top of https://www.openshift.org/[OpenShift] and using http://vertx.io/[Vert.x] for joining the different parts. The demo repository contains background information on https://github.com/galderz/swiss-transport-datagrid/blob/master/README.md[instructions] to get started with the demo, but I thought it'd be useful to get focused step-by-step instructions in this blog post."
+#, fuzzy
+msgid ""
+"During the talk I live coded a demo showing both real-time and analytics "
+"parts, running on top of https://www.openshift.org/[OpenShift] and using "
+"http://vertx.io/[Vert.x] for joining the different parts. The demo "
+"repository contains background information on https://github.com/galderz/"
+"swiss-transport-datagrid/blob/master/README.md[instructions] to get started "
+"with the demo, but I thought it'd be useful to get focused step-by-step "
+"instructions in this blog post."
 msgstr ""
+"講演中、私はリアルタイムとアナリティクスの両方の部分を示すデモをライブコーディングし、 link:https://www.openshift.org/"
+"[OpenShiftの] 上で実行し、異なる部分を結合するために link:http://vertx.io/[Vert.xを] "
+"使用しました。デモのリポジトリにはデモを始めるための link:https://github.com/galderz/swiss-transport-"
+"datagrid/blob/master/README.md[手順] "
+"についての背景情報がありますが、このブログ記事では集中的にステップバイステップの手順を知ることができるので便利だと思いました。"
 
 #. type: Title ===
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:40
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Set Up"
-msgstr ""
+msgstr "設定"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:46
-msgid "Before we start with any of the demos, it's necessary to run some set up steps:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Before we start with any of the demos, it's necessary to run some set up "
+"steps:"
+msgstr "デモを始める前に、いくつかのセットアップを行う必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:50
+#, fuzzy
 msgid "    1. Check out git repository:"
-msgstr ""
+msgstr "1.gitリポジトリを確認します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:52
+#, fuzzy
 msgid "    "
-msgstr ""
+msgstr "    "
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:54
+#, fuzzy
 msgid "        git clone https://github.com/galderz/swiss-transport-datagrid"
-msgstr ""
+msgstr "git clone https://github.com/galderz/swiss-transport-datagrid"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:60
-msgid "    2. Install https://www.openshift.org/[OpenShift Origin] or https://www.openshift.org/minishift/[Minishift] to get an OpenShift environment running in your own "
+#, fuzzy
+msgid ""
+"    2. Install https://www.openshift.org/[OpenShift Origin] or https://www."
+"openshift.org/minishift/[Minishift] to get an OpenShift environment running "
+"in your own "
 msgstr ""
+"2.OpenShift link:https://www.openshift.org/[OriginまたはMinishiftを] "
+"インストールして、自分の中でOpenShift環境を稼働させ link:https://www.openshift.org/minishift/[ます] "
+"。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:63
-msgid "        machine. I decided to use OpenShift Origin, so the instructions below are tailored for that "
-msgstr ""
+#, fuzzy
+msgid ""
+"        machine. I decided to use OpenShift Origin, so the instructions "
+"below are tailored for that "
+msgstr "という機械を使っています。私はOpenShift Originを使うことにしたので、以下の手順はそれに合わせています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:66
-msgid "        environment, but similar instructions could be used with Minishift."
-msgstr ""
+#, fuzzy
+msgid ""
+"        environment, but similar instructions could be used with Minishift."
+msgstr "環境でも使用できますが、同様の命令はMinishiftでも使用できます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:71
-msgid "    3. Install https://www.continuum.io/downloads[Anaconda for Python 3], this is required to run Jupyter notebook for plotting."
+#, fuzzy
+msgid ""
+"    3. Install https://www.continuum.io/downloads[Anaconda for Python 3], "
+"this is required to run Jupyter notebook for plotting."
 msgstr ""
+"3.Python link:https://www.continuum.io/downloads[3] 用のAnacondaをインストールし、 link:"
+"https://www.continuum.io/downloads[これは] プロットのためのJupyterノートブックを実行するために link:"
+"https://www.continuum.io/downloads[必要です] 。"
 
 #. type: Title ===
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:74
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Demo Domain"
-msgstr ""
+msgstr "デモドメイン"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:80
-msgid "Once the set up is complete, it's time to talk about the demos before we run them."
-msgstr ""
+#, fuzzy
+msgid ""
+"Once the set up is complete, it's time to talk about the demos before we run "
+"them."
+msgstr "セットアップが完了したら、いよいよ実行前のデモの話です。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:87
-msgid "Both demos shown below work with the same application domain: swiss rail transport systems. In this domain, we differentiate between physical stations, trains, station boards which are located in stations, and finally stops, which are individual entries in station boards."
+#, fuzzy
+msgid ""
+"Both demos shown below work with the same application domain: swiss rail "
+"transport systems. In this domain, we differentiate between physical "
+"stations, trains, station boards which are located in stations, and finally "
+"stops, which are individual entries in station boards."
 msgstr ""
+"以下に示す両方のデモは、同じアプリケーション・ドメインであるスイスの鉄道輸送システムで動作します。このドメインでは、物理的な駅、列車、駅に設置された駅板、そして駅板内の個々のエントリである停留所を区別します。"
 
 #. type: Title ===
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:90
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Real Time Demo"
-msgstr ""
+msgstr "リアルタイムデモ"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:98
-msgid "The first demo is about working with real-time data from station boards around the country and presenting a centralised dashboard of delayed trains around the country. The following diagrams shows how the following components interact with each other to achieve this:"
+#, fuzzy
+msgid ""
+"The first demo is about working with real-time data from station boards "
+"around the country and presenting a centralised dashboard of delayed trains "
+"around the country. The following diagrams shows how the following "
+"components interact with each other to achieve this:"
 msgstr ""
+"最初のデモは、全国の駅板からのリアルタイムデータを使って作業し、全国の列車遅延の集中ダッシュボードを提示することについてです。以下の図は、これを実現するために以下のコンポーネントがどのように相互に作用するかを示しています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:102
-msgid "https://3.bp.blogspot.com/-mu5jN_vRnVk/WQxMd3Ev8aI/AAAAAAAAE2g/R2hUTM9_d4U3sPWsmKl8VyEwoLPwR-VhwCLcB/s1600/real-time-demo.jpg[image:https://3.bp.blogspot.com/-mu5jN_vRnVk/WQxMd3Ev8aI/AAAAAAAAE2g/R2hUTM9_d4U3sPWsmKl8VyEwoLPwR-VhwCLcB/s640/real-time-demo.jpg[image,width=640,height=268]]"
+#, fuzzy
+msgid ""
+"https://3.bp.blogspot.com/-mu5jN_vRnVk/WQxMd3Ev8aI/AAAAAAAAE2g/"
+"R2hUTM9_d4U3sPWsmKl8VyEwoLPwR-VhwCLcB/s1600/real-time-demo.jpg[image:https://"
+"3.bp.blogspot.com/-mu5jN_vRnVk/WQxMd3Ev8aI/AAAAAAAAE2g/"
+"R2hUTM9_d4U3sPWsmKl8VyEwoLPwR-VhwCLcB/s640/real-time-demo.jpg[image,width="
+"640,height=268]]"
 msgstr ""
+"link:https://3.bp.blogspot.com/-mu5jN_vRnVk/WQxMd3Ev8aI/AAAAAAAAE2g/"
+"R2hUTM9_d4U3sPWsmKl8VyEwoLPwR-VhwCLcB/s1600/real-time-demo.jpg[]"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:110
-msgid "Infinispan, which provides the in-memory data grid storage, and Vert.x, which provides the glue for the centralised delayed dashboard to interact with Infinispan, all run within OpenShift cloud. "
+#, fuzzy
+msgid ""
+"Infinispan, which provides the in-memory data grid storage, and Vert.x, "
+"which provides the glue for the centralised delayed dashboard to interact "
+"with Infinispan, all run within OpenShift cloud. "
 msgstr ""
+"インメモリデータグリッドストレージを提供するInfinispanと、Infinispanと対話するための集中型遅延ダッシュボードの接着剤を提供するVert."
+"xは、すべてOpenShiftクラウド内で実行されています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:124
-msgid "Within the cloud, the Injector verticle cycles through station board data and injects it into Infinispan. Also within the cloud, a Vert.x verticle that uses http://infinispan.org/docs/stable/user_guide/user_guide.html#query.continuous[Infinispan's Continuous Query] to listen for station board entries that are delayed, and these are pushed into the Vert.x event bus, which in turn, via a http://vertx.io/docs/vertx-web/java/#_sockjs_event_bus_bridge[SockJS bridge], get consumed via WebSockets from the dashboard. The centralised dashboards is written with http://docs.oracle.com/javase/8/javafx/get-started-tutorial/jfx-overview.htm#JFXST784[JavaFX] and runs outside the cloud."
+#, fuzzy
+msgid ""
+"Within the cloud, the Injector verticle cycles through station board data "
+"and injects it into Infinispan. Also within the cloud, a Vert.x verticle "
+"that uses http://infinispan.org/docs/stable/user_guide/user_guide.html#query."
+"continuous[Infinispan's Continuous Query] to listen for station board "
+"entries that are delayed, and these are pushed into the Vert.x event bus, "
+"which in turn, via a http://vertx.io/docs/vertx-web/java/"
+"#_sockjs_event_bus_bridge[SockJS bridge], get consumed via WebSockets from "
+"the dashboard. The centralised dashboards is written with http://docs.oracle."
+"com/javase/8/javafx/get-started-tutorial/jfx-overview.htm#JFXST784[JavaFX] "
+"and runs outside the cloud."
 msgstr ""
+"クラウド内では、Injector 頂点が駅板データを循環させて Infinispan に注入します。また、クラウド内では、Infin link:http:"
+"//infinispan.org/docs/stable/user_guide/user_guide.html#query."
+"continuous[ispanのContinuous Query] を使用して遅延している駅板エントリをリッスンするVert."
+"xバーティクルがあり、これらはVert.xイベントバスにプッシュされ、 link:http://vertx.io/docs/vertx-web/java/"
+"#_sockjs_event_bus_bridge[SockJSブリッジ] "
+"を介して、ダッシュボードからWebSocketを介して消費されます。集中型ダッシュボードは link:http://docs.oracle.com/"
+"javase/8/javafx/get-started-tutorial/jfx-overview.htm#JFXST784[JavaFX] "
+"で書かれており、クラウドの外で動作します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:128
+#, fuzzy
 msgid "To run the demo, do the following:"
-msgstr ""
+msgstr "デモを実行するには、次のようにします。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:132
+#, fuzzy
 msgid "    1. Start OpenShift Origin if you've not already done so:"
-msgstr ""
+msgstr "1.まだ起動していない場合は、OpenShift Originを起動します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:136
+#, fuzzy
 msgid "        oc cluster up --public-hostname=127.0.0.1"
-msgstr ""
+msgstr "oc クラスタアップ --public-hostname=127.0.0.0.1"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:140
+#, fuzzy
 msgid "    2. Deploy all the OpenShift cloud components:"
-msgstr ""
+msgstr "2.OpenShiftのクラウドコンポーネントをすべてデプロイします。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:144
+#, fuzzy
 msgid "        cd ~/swiss-transport-datagrid"
-msgstr ""
+msgstr "cd ~/swiss-transport-datagrid"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:146
+#, fuzzy
 msgid "        ./deploy-all.sh"
-msgstr ""
+msgstr "./deploy-all.sh"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:152
-msgid "    3. Open the https://127.0.0.1:8443/console/project/myproject/overview[OpenShift console] and verify that all pods are up."
+#, fuzzy
+msgid ""
+"    3. Open the https://127.0.0.1:8443/console/project/myproject/"
+"overview[OpenShift console] and verify that all pods are up."
 msgstr ""
+"3.OpenShift link:https://127.0.0.1:8443/console/project/myproject/"
+"overview[コンソール] を開き link:https://127.0.0.1:8443/console/project/myproject/"
+"overview[、] すべてのポッドが起動していることを link:https://127.0.0.1:8443/console/project/"
+"myproject/overview[確認します] 。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:156
+#, fuzzy
 msgid "    4. Load github repository into your favourite IDE and run"
-msgstr ""
+msgstr "4.お気に入りのIDEにgithubリポジトリをロードして実行します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:159
-msgid "        *delays.query.continuous.fx.FxApp* Java FX application. This will load the"
-msgstr ""
+#, fuzzy
+msgid ""
+"        *delays.query.continuous.fx.FxApp* Java FX application. This will "
+"load the"
+msgstr "delays.query.continuous.fx.FxApp *Java FXアプリケーションです。* をロードします。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:162
-msgid "        centralised dashboard. Within seconds delayed trains will start appearing. For example:"
-msgstr ""
+#, fuzzy
+msgid ""
+"        centralised dashboard. Within seconds delayed trains will start "
+"appearing. For example:"
+msgstr "中央のダッシュボードに表示されます。数秒以内に遅延した列車が表示され始めます。例えば"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:166
-msgid "https://4.bp.blogspot.com/-vyFHhzmswQg/WOdJ1PnoOJI/AAAAAAAAE2E/s7k6FScITP87Kdq4nxTZ-NelS_FsrOgMQCPcB/s1600/Screen%2BShot%2B2017-04-07%2Bat%2B10.11.40.png[image:https://4.bp.blogspot.com/-vyFHhzmswQg/WOdJ1PnoOJI/AAAAAAAAE2E/s7k6FScITP87Kdq4nxTZ-NelS_FsrOgMQCPcB/s320/Screen%2BShot%2B2017-04-07%2Bat%2B10.11.40.png[image,width=320,height=248]]"
+#, fuzzy
+msgid ""
+"https://4.bp.blogspot.com/-vyFHhzmswQg/WOdJ1PnoOJI/AAAAAAAAE2E/"
+"s7k6FScITP87Kdq4nxTZ-NelS_FsrOgMQCPcB/s1600/Screen%2BShot%2B2017-04-"
+"07%2Bat%2B10.11.40.png[image:https://4.bp.blogspot.com/-vyFHhzmswQg/"
+"WOdJ1PnoOJI/AAAAAAAAE2E/s7k6FScITP87Kdq4nxTZ-NelS_FsrOgMQCPcB/s320/"
+"Screen%2BShot%2B2017-04-07%2Bat%2B10.11.40.png[image,width=320,height=248]]"
 msgstr ""
+"link:https://4.bp.blogspot.com/-vyFHhzmswQg/WOdJ1PnoOJI/AAAAAAAAE2E/"
+"s7k6FScITP87Kdq4nxTZ-NelS_FsrOgMQCPcB/s1600/Screen%2BShot%2B2017-04-"
+"07%2Bat%2B10.11.40.png[]"
 
 #. type: Title ===
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:169
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Analytics Demo"
-msgstr ""
+msgstr "アナリティクスのデモ"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:176
-msgid "The first demo is focused on how you can use Infinispan for doing offline analytics. In particular, this demo tries to answer the following question:"
+#, fuzzy
+msgid ""
+"The first demo is focused on how you can use Infinispan for doing offline "
+"analytics. In particular, this demo tries to answer the following question:"
 msgstr ""
+"最初のデモは、Infinispanを使ってオフライン分析を行う方法に焦点を当てています。特に、このデモでは以下の質問に答えようとしています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:181
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:260
-msgid "_Q. What is the time of the day when there is the biggest ratio of delayed trains?_"
-msgstr ""
+#, fuzzy
+msgid ""
+"_Q. What is the time of the day when there is the biggest ratio of delayed "
+"trains?_"
+msgstr "_Q.電車の遅延率が一番高い時間帯は？_"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:187
-msgid "Once again, this demo runs on top of OpenShift cloud, uses Infinispan as in-memory data grid for storage and Vert.x for glueing components together."
+#, fuzzy
+msgid ""
+"Once again, this demo runs on top of OpenShift cloud, uses Infinispan as in-"
+"memory data grid for storage and Vert.x for glueing components together."
 msgstr ""
+"もう一度言いますが、このデモはOpenShiftクラウドの上で実行され、ストレージ用のインメモリデータグリッドとしてInfinispanを使用し、コンポーネント同士を接着するためにVert."
+"xを使用しています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:195
-msgid "To answer this question, Infinispan data grid will be loaded with 3 weeks worth of data from station boards using a Vert.x verticle. Once the data is loaded, the Jupyter notebook will invoke an HTTP restful endpoint which will invoke an Vert.x verticle called *AnalyticsVerticle*. "
+#, fuzzy
+msgid ""
+"To answer this question, Infinispan data grid will be loaded with 3 weeks "
+"worth of data from station boards using a Vert.x verticle. Once the data is "
+"loaded, the Jupyter notebook will invoke an HTTP restful endpoint which will "
+"invoke an Vert.x verticle called *AnalyticsVerticle*. "
 msgstr ""
+"この質問に答えるために、Infinispanのデータグリッドは、Vert.x "
+"verticleを使用してステーションボードから3週間分のデータをロードします。データがロードされると、JupyterノートブックはHTTP "
+"restfulエンドポイントを呼び出し、これは *AnalyticsVerticle* と呼ばれるVerticle.x verticleを呼び出します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:203
-msgid "This verticle will invoke a remote server task which will use http://infinispan.org/docs/stable/user_guide/user_guide.html#streams[Infinispan Distributed Java Streams] to calculate the two pieces of information required to answer the question: per hour, how many trains are going through the system, and out of those, how many are delayed."
+#, fuzzy
+msgid ""
+"This verticle will invoke a remote server task which will use http://"
+"infinispan.org/docs/stable/user_guide/user_guide.html#streams[Infinispan "
+"Distributed Java Streams] to calculate the two pieces of information "
+"required to answer the question: per hour, how many trains are going through "
+"the system, and out of those, how many are delayed."
 msgstr ""
+"この頂点は、質問に答えるために必要な2つの情報を計算するために link:http://infinispan.org/docs/stable/"
+"user_guide/user_guide.html#streams[Infinispan分散Javaストリームを] "
+"使用するリモートサーバータスクを呼び出します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:213
-msgid "An important aspect to bear in mind about this server tasks is that it will only be executed in one of the nodes in the cluster. It does not matter which one. In turn, this node will will ship the lambdas required to do the computation to each of the nodes so that they can executed against their local data. The other nodes will reply with the results and the node where the server task was invoked will aggregate the results."
+#, fuzzy
+msgid ""
+"An important aspect to bear in mind about this server tasks is that it will "
+"only be executed in one of the nodes in the cluster. It does not matter "
+"which one. In turn, this node will will ship the lambdas required to do the "
+"computation to each of the nodes so that they can executed against their "
+"local data. The other nodes will reply with the results and the node where "
+"the server task was invoked will aggregate the results."
 msgstr ""
+"このサーバータスクについて心に留めておくべき重要な点は、クラスタ内のいずれかのノードでのみ実行されるということです。どのノードであっても構いません。順番に、このノードは計算に必要なラムダを各ノードに出荷し、各ノードがローカルデータに対して実行できるようにします。他のノードは結果を返信し、サーバタスクが呼び出されたノードは結果を集約します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:219
-msgid "The results will be sent back to the originating invoker, the Jupyter notebook which will plot the results. The following diagrams shows how the following components interact with each other to achieve this:"
+#, fuzzy
+msgid ""
+"The results will be sent back to the originating invoker, the Jupyter "
+"notebook which will plot the results. The following diagrams shows how the "
+"following components interact with each other to achieve this:"
 msgstr ""
+"結果は元の呼び出し元のJupyterノートブックに送られ、結果をプロットします。以下の図は、これを実現するために以下のコンポーネントがどのように相互作用するかを示しています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:222
-msgid "https://1.bp.blogspot.com/-0BKwklL6rZE/WQxMl-NCG-I/AAAAAAAAE2k/Z0SZLEhVz4YLIkh3AM8p8EMOW0EN-KMGwCLcB/s1600/analytics-demo.jpg[image:https://1.bp.blogspot.com/-0BKwklL6rZE/WQxMl-NCG-I/AAAAAAAAE2k/Z0SZLEhVz4YLIkh3AM8p8EMOW0EN-KMGwCLcB/s640/analytics-demo.jpg[image,width=640,height=354]]"
+#, fuzzy
+msgid ""
+"https://1.bp.blogspot.com/-0BKwklL6rZE/WQxMl-NCG-I/AAAAAAAAE2k/"
+"Z0SZLEhVz4YLIkh3AM8p8EMOW0EN-KMGwCLcB/s1600/analytics-demo.jpg[image:https://"
+"1.bp.blogspot.com/-0BKwklL6rZE/WQxMl-NCG-I/AAAAAAAAE2k/"
+"Z0SZLEhVz4YLIkh3AM8p8EMOW0EN-KMGwCLcB/s640/analytics-demo.jpg[image,width="
+"640,height=354]]"
 msgstr ""
+"link:https://1.bp.blogspot.com/-0BKwklL6rZE/WQxMl-NCG-I/AAAAAAAAE2k/"
+"Z0SZLEhVz4YLIkh3AM8p8EMOW0EN-KMGwCLcB/s1600/analytics-demo.jpg[]"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:226
+#, fuzzy
 msgid "Here is the demo step-by-step guide:"
-msgstr ""
+msgstr "ここでは、デモのステップバイステップガイドです。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:231
-msgid "    1. Start OpenShift Origin and deploy all components as shown in previous demo."
-msgstr ""
+#, fuzzy
+msgid ""
+"    1. Start OpenShift Origin and deploy all components as shown in previous "
+"demo."
+msgstr "1.OpenShift Originを起動し、前回のデモのようにすべてのコンポーネントをデプロイします。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:235
+#, fuzzy
 msgid "    2. Start the Jupyter notebook:"
-msgstr ""
+msgstr "2.ジュピターノートを起動します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:239
+#, fuzzy
 msgid "        cd ~/swiss-transport-datagrid/analytics/analytics-jupyter"
-msgstr ""
+msgstr "cd ~/swiss-transport-datagrid/analytics/analytics-jupyter"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:241
+#, fuzzy
 msgid "        ~/anaconda/bin/jupyter notebook"
-msgstr ""
+msgstr "~/anaconda/bin/jupyter ノートブック"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:247
-msgid "    3.  Once the notebook opens, click open live-demo.ipynb notebook and execute each of the cells in order. You should end up seeing a plot like this:"
+#, fuzzy
+msgid ""
+"    3.  Once the notebook opens, click open live-demo.ipynb notebook and "
+"execute each of the cells in order. You should end up seeing a plot like "
+"this:"
 msgstr ""
+"3.ノートブックが開いたら、Live-demo.ipynb "
+"notebookをクリックして、各セルを順番に実行してください。このようなプロットが表示されるはずです。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:251
-msgid "https://4.bp.blogspot.com/-0WwGpCjfU1g/WOdG4rNJ8QI/AAAAAAAAE14/5Lmb3xhx0345zsWn5f_DGI1v-nIEvwzwQCPcB/s1600/Screen%2BShot%2B2017-04-07%2Bat%2B09.58.56.png[image:https://4.bp.blogspot.com/-0WwGpCjfU1g/WOdG4rNJ8QI/AAAAAAAAE14/5Lmb3xhx0345zsWn5f_DGI1v-nIEvwzwQCPcB/s320/Screen%2BShot%2B2017-04-07%2Bat%2B09.58.56.png[image,width=320,height=240]]"
+#, fuzzy
+msgid ""
+"https://4.bp.blogspot.com/-0WwGpCjfU1g/WOdG4rNJ8QI/AAAAAAAAE14/"
+"5Lmb3xhx0345zsWn5f_DGI1v-nIEvwzwQCPcB/s1600/Screen%2BShot%2B2017-04-"
+"07%2Bat%2B09.58.56.png[image:https://4.bp.blogspot.com/-0WwGpCjfU1g/"
+"WOdG4rNJ8QI/AAAAAAAAE14/5Lmb3xhx0345zsWn5f_DGI1v-nIEvwzwQCPcB/s320/"
+"Screen%2BShot%2B2017-04-07%2Bat%2B09.58.56.png[image,width=320,height=240]]"
 msgstr ""
+"link:https://4.bp.blogspot.com/-0WwGpCjfU1g/WOdG4rNJ8QI/AAAAAAAAE14/"
+"5Lmb3xhx0345zsWn5f_DGI1v-nIEvwzwQCPcB/s1600/Screen%2BShot%2B2017-04-"
+"07%2Bat%2B09.58.56.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:255
+#, fuzzy
 msgid "So, the answer to the question:"
-msgstr ""
+msgstr "ということで、質問の答えです。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:262
-msgid "https://www.blogger.com/blogger.g?blogID=5717179571414330874[]https://www.blogger.com/blogger.g?blogID=5717179571414330874[]https://www.blogger.com/blogger.g?blogID=5717179571414330874[]"
-msgstr ""
+#, fuzzy
+msgid ""
+"https://www.blogger.com/blogger.g?blogID=5717179571414330874[]https://www."
+"blogger.com/blogger.g?blogID=5717179571414330874[]https://www.blogger.com/"
+"blogger.g?blogID=5717179571414330874[]"
+msgstr "https://www.blogger.com/blogger.g?blogID=5717179571414330874"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:265
-msgid "is *2am*! That's because last connecting trains of the day wait for each other to avoid leaving passengers stranded."
-msgstr ""
+#, fuzzy
+msgid ""
+"is *2am*! That's because last connecting trains of the day wait for each "
+"other to avoid leaving passengers stranded."
+msgstr "は *午前2時* ！それは、その日の最後の接続列車は、乗客を置き去りにしないように、お互いに待つからです。"
 
 #. type: Title ===
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:268
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Conclusion"
-msgstr ""
+msgstr "結論"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:278
-msgid "This has been a summary of the demos that I presented at http://www.developermarch.com/developersummit/[Great Indian Developer Summit] with the intention of getting you running these demos as quickly as possible. The repository contains more detailed information of these demos. If there's anything unclear or any of the instructions above are not working, please let us know!"
+#, fuzzy
+msgid ""
+"This has been a summary of the demos that I presented at http://www."
+"developermarch.com/developersummit/[Great Indian Developer Summit] with the "
+"intention of getting you running these demos as quickly as possible. The "
+"repository contains more detailed information of these demos. If there's "
+"anything unclear or any of the instructions above are not working, please "
+"let us know!"
 msgstr ""
+"これは私が Great link:http://www.developermarch.com/developersummit/[Indian "
+"Developer Summit] "
+"で発表したデモをまとめたもので、できるだけ早くこれらのデモを実行してもらうことを意図しています。リポジトリには、これらのデモのより詳細な情報が含まれています。何か不明な点や、上記の説明でうまくいかない点があれば、ぜひ教えてください"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:283
-msgid "Once again, a very special thanks to Alexandre Masselot for being the inspiration for these demos. Merci @Alex!!"
-msgstr ""
+#, fuzzy
+msgid ""
+"Once again, a very special thanks to Alexandre Masselot for being the "
+"inspiration for these demos. Merci @Alex!!"
+msgstr "このデモのインスピレーションを与えてくれたAlexandre Masselotに改めて感謝します。Merci @Alex!"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:288
-msgid "Over the next few months we will be enhancing the demo and hopefully we'll be able to do some more live demonstrations at other conferences."
-msgstr ""
+#, fuzzy
+msgid ""
+"Over the next few months we will be enhancing the demo and hopefully we'll "
+"be able to do some more live demonstrations at other conferences."
+msgstr "今後数ヶ月の間にデモを強化し、他のカンファレンスでもライブデモができるようになることを期待しています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:292
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-05-reactive-big-data-on-openshift-in.adoc:293
+#, fuzzy
 msgid "Galder"
-msgstr ""
+msgstr "ガルダー"

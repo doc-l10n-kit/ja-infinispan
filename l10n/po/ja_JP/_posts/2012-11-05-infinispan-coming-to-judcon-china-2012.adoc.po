@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-11-05-infinispan-coming-to-judcon-china-2012.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-11-05-infinispan-coming-to-judcon-china-2012.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan coming to JUDCon China 2012\n"
@@ -35,57 +35,96 @@ msgid ""
 "\"event\",\n"
 "\"judcon\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-9037314042594091026\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/11/infinispan-coming-to-judcon-china-2012.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"9037314042594091026\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/11/infinispan-coming-to-"
+"judcon-china-2012.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: インフィニスパンが2012年に中国で開催される「JUDCon China」に参加します。\n"
+"permalink: /blog/:year/:month/:day/infinispan-coming-to-judcon-china-2012\n"
+"date: '2012-11-05T10:47:00.001-08:00'\n"
+"author: galder\n"
+"tags: [ \"conference\",\n"
+"\"event\",\n"
+"\"judcon\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"9037314042594091026\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/11/infinispan-coming-to-"
+"judcon-china-2012.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-11-05-infinispan-coming-to-judcon-china-2012.adoc:19
-msgid "The Infinispan team will be well represented in the forthcoming http://www.jboss.org/events/JUDCon/2012/china[JUDCon China 2012 conference] to be celebrated in Beijing on the 29th and 30th of November with no less than http://www.jboss.org/events/JUDCon/2012/china/agenda[9 talks]!"
+#, fuzzy
+msgid ""
+"The Infinispan team will be well represented in the forthcoming http://www."
+"jboss.org/events/JUDCon/2012/china[JUDCon China 2012 conference] to be "
+"celebrated in Beijing on the 29th and 30th of November with no less than "
+"http://www.jboss.org/events/JUDCon/2012/china/agenda[9 talks]!"
 msgstr ""
+"Infinispanチームは、11月29日と30日に北京で開催される「 link:http://www.jboss.org/events/JUDCon/"
+"2012/china[JUDCon China 2012] 」に参加し、 link:http://www.jboss.org/events/JUDCon/"
+"2012/china/agenda[9つの講演を行い] ます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-11-05-infinispan-coming-to-judcon-china-2012.adoc:21
+#, fuzzy
 msgid "We'll be covering all sorts of topics:"
-msgstr ""
+msgstr "様々な話題を取り上げていきます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-11-05-infinispan-coming-to-judcon-china-2012.adoc:22
+#, fuzzy
 msgid "Building transactional Infinispan applications"
-msgstr ""
+msgstr "トランザクショナルなInfinispanアプリケーションの構築"
 
 #. type: Plain text
 #: upstream/_posts/2012-11-05-infinispan-coming-to-judcon-china-2012.adoc:23
+#, fuzzy
 msgid "Performing rolling upgrades for Infinispan based cluster"
-msgstr ""
+msgstr "Infinispanベースのクラスタのローリングアップグレードの実行"
 
 #. type: Plain text
 #: upstream/_posts/2012-11-05-infinispan-coming-to-judcon-china-2012.adoc:25
-msgid "Scaling Hibernate/JPA applications using Infinispan-based second level cache"
-msgstr ""
+#, fuzzy
+msgid ""
+"Scaling Hibernate/JPA applications using Infinispan-based second level cache"
+msgstr "Infinispanベースの第2レベルキャッシュを使用したHibernate/JPAアプリケーションのスケーリング"
 
 #. type: Plain text
 #: upstream/_posts/2012-11-05-infinispan-coming-to-judcon-china-2012.adoc:26
+#, fuzzy
 msgid "Effective querying of Infinispan data grids"
-msgstr ""
+msgstr "Infinispanデータグリッドの効果的なクエリ"
 
 #. type: Plain text
 #: upstream/_posts/2012-11-05-infinispan-coming-to-judcon-china-2012.adoc:27
+#, fuzzy
 msgid "Measuring performance of data grids"
-msgstr ""
+msgstr "データグリッドのパフォーマンス測定"
 
 #. type: Plain text
 #: upstream/_posts/2012-11-05-infinispan-coming-to-judcon-china-2012.adoc:28
+#, fuzzy
 msgid "...etc"
-msgstr ""
+msgstr "抔"
 
 #. type: Plain text
 #: upstream/_posts/2012-11-05-infinispan-coming-to-judcon-china-2012.adoc:32
-msgid "So, if you're interested in data grids, caching or Infinispan, come and http://www.jboss.org/events/JUDCon/2012/china/register[join us]!! It's gonna be a fun a couple of days. Can't wait :)"
+#, fuzzy
+msgid ""
+"So, if you're interested in data grids, caching or Infinispan, come and http:"
+"//www.jboss.org/events/JUDCon/2012/china/register[join us]!! It's gonna be a "
+"fun a couple of days. Can't wait :)"
 msgstr ""
+"というわけで、データグリッドやキャッシング、インフィニスパンに興味のある方はぜひ link:http://www.jboss.org/events/"
+"JUDCon/2012/china/register[参加して] みてください！楽しい数日間になりそうです。待ち遠しいです :)"
 
 #. type: Plain text
 #: upstream/_posts/2012-11-05-infinispan-coming-to-judcon-china-2012.adoc:34
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

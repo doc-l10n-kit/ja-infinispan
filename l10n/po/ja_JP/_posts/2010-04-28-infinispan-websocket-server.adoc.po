@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-04-28-infinispan-websocket-server.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-04-28-infinispan-websocket-server.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan WebSocket Server\n"
@@ -34,47 +34,83 @@ msgid ""
 "tags: [ \"websockets\",\n"
 "\"server\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-627809709724459897\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/04/infinispan-websocket-server.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"627809709724459897\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/04/infinispan-websocket-"
+"server.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan WebSocketサーバ\n"
+"permalink: /blog/:year/:month/:day/infinispan-websocket-server\n"
+"date: '2010-04-28T09:16:00.000-07:00'\n"
+"author: tfennelly\n"
+"tags: [ \"websockets\",\n"
+"\"server\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"627809709724459897\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/04/infinispan-websocket-"
+"server.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-04-28-infinispan-websocket-server.adoc:16
-msgid "The HTML 5 http://dev.w3.org/html5/websockets/[WebSocket Interface] seems like a nice way of exposing an Infinispan Cache to web clients that are WebSocket enabled."
+#, fuzzy
+msgid ""
+"The HTML 5 http://dev.w3.org/html5/websockets/[WebSocket Interface] seems "
+"like a nice way of exposing an Infinispan Cache to web clients that are "
+"WebSocket enabled."
 msgstr ""
+"HTML 5 WebSocket link:http://dev.w3.org/html5/websockets/[インターフェイスは] "
+"、WebSocket を有効にしている Web クライアントに Infinispan Cache を公開する良い方法のようです。"
 
 #. type: Plain text
 #: upstream/_posts/2010-04-28-infinispan-websocket-server.adoc:19
-msgid "I just committed a first cut of the new Infinispan WebSocket Server to Subversion."
-msgstr ""
+#, fuzzy
+msgid ""
+"I just committed a first cut of the new Infinispan WebSocket Server to "
+"Subversion."
+msgstr "新しいInfinispan WebSocket ServerのファーストカットをSubversionにコミットしました。"
 
 #. type: Plain text
 #: upstream/_posts/2010-04-28-infinispan-websocket-server.adoc:22
-msgid "You get a very simple Cache object in your web page Javascript that supports:"
-msgstr ""
+#, fuzzy
+msgid ""
+"You get a very simple Cache object in your web page Javascript that supports:"
+""
+msgstr "あなたは、サポートしているWebページのJavascriptで非常にシンプルなCacheオブジェクトを取得します。"
 
 #. type: Plain text
 #: upstream/_posts/2010-04-28-infinispan-websocket-server.adoc:24
+#, fuzzy
 msgid "put/get/remove operations on your Infinispan Cache."
-msgstr ""
+msgstr "Infinispan キャッシュへの追加/取得/削除操作を行います。"
 
 #. type: Plain text
 #: upstream/_posts/2010-04-28-infinispan-websocket-server.adoc:26
-msgid "notify/unnotify mechanism through which your web page can manage Cache entry update notifications, pushed to the browser."
-msgstr ""
+#, fuzzy
+msgid ""
+"notify/unnotify mechanism through which your web page can manage Cache entry "
+"update notifications, pushed to the browser."
+msgstr "ブラウザにプッシュされたキャッシュエントリの更新通知をWebページで管理できるようにするための通知/通知の仕組みです。"
 
 #. type: Plain text
 #: upstream/_posts/2010-04-28-infinispan-websocket-server.adoc:28
+#, fuzzy
 msgid "Take a look at:"
-msgstr ""
+msgstr "見てみてください。"
 
 #. type: Plain text
 #: upstream/_posts/2010-04-28-infinispan-websocket-server.adoc:31
-msgid "http://community.jboss.org/wiki/InfinispanWebSocketServer[the docs here]."
+#, fuzzy
+msgid ""
+"http://community.jboss.org/wiki/InfinispanWebSocketServer[the docs here]."
 msgstr ""
+"link:http://community.jboss.org/wiki/InfinispanWebSocketServer[ここのドキュメント]"
 
 #. type: Plain text
 #: upstream/_posts/2010-04-28-infinispan-websocket-server.adoc:31
+#, fuzzy
 msgid "http://www.screencast.com/t/ZGEzNDJlY[a short Screencast demo]."
-msgstr ""
+msgstr "link:http://www.screencast.com/t/ZGEzNDJlY[短いスクリーンキャストのデモ] 。"

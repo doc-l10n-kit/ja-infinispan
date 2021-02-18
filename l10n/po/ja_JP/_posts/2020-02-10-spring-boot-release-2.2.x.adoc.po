@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,82 +18,150 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-02-10-spring-boot-release-2.2.x.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-10-spring-boot-release-2.2.x.adoc:8
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
-"title: Infinispan Spring Boot Starter released with Spring Boot 2.2.4.RELEASE\n"
+"title: Infinispan Spring Boot Starter released with Spring Boot 2.2.4."
+"RELEASE\n"
 "permalink: /blog/:year/:month/:day/spring-boot-release-2\n"
 "date: '2020-02-10T12:00:00.000-00:00'\n"
 "author: karesti\n"
 "tags: [ \"release\", \"spring boot\", \"spring\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan Spring Boot StarterがSpring Boot 2.2.4.RELEASEでリリースされました。\n"
+"permalink: /blog/:year/:month/:day/spring-boot-release-2\n"
+"date: '2020-02-10T12:00:00.000-00:00'\n"
+"author: karesti\n"
+"tags: [ \"release\", \"spring boot\", \"spring\" ]\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-10-spring-boot-release-2.2.x.adoc:11
+#, fuzzy
 msgid "Dear Infinispan and Spring Boot users,"
-msgstr ""
+msgstr "InfinispanとSpring Bootをご利用の皆様。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-10-spring-boot-release-2.2.x.adoc:15
-msgid "We are pleased to announce the release of https://github.com/infinispan/infinispan-spring-boot[Infinispan Spring Boot]  *2.1.8.Final* and *2.2.0.Final*."
+#, fuzzy
+msgid ""
+"We are pleased to announce the release of https://github.com/infinispan/"
+"infinispan-spring-boot[Infinispan Spring Boot]  *2.1.8.Final* and *2.2.0."
+"Final*."
 msgstr ""
+"link:https://github.com/infinispan/infinispan-spring-boot[Infinispan Spring "
+"Boot] 2.1.8 *.Finalと* 2.2.0 *.Final* をリリースしました *。*"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-10-spring-boot-release-2.2.x.adoc:17
-#, no-wrap
-msgid "*2.1.8.Final* uses *Infinispan 9.4.17.Final* and *Spring Boot 2.2.2.RELEASE*\n"
-msgstr ""
+#, no-wrap, fuzzy
+msgid ""
+"*2.1.8.Final* uses *Infinispan 9.4.17.Final* and *Spring Boot 2.2.2."
+"RELEASE*\n"
+msgstr "*2.1.8.Final は* *Infinispan 9.4.17.Final と* *Spring Boot を* 使用します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-10-spring-boot-release-2.2.x.adoc:19
-#, no-wrap
-msgid "*2.2.0.Final* uses *Infinispan 10.1.1.Final* and *Spring Boot 2.2.2.RELEASE* \n"
-msgstr ""
+#, no-wrap, fuzzy
+msgid ""
+"*2.2.0.Final* uses *Infinispan 10.1.1.Final* and *Spring Boot 2.2.2."
+"RELEASE* \n"
+msgstr "*2.2.0.Final は* *Infinispan 10.1.1.Final と* *Spring Boot を* 使用します。"
 
 #. type: Title ==
 #: upstream/_posts/2020-02-10-spring-boot-release-2.2.x.adoc:21
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring Marshalling with Infinispan 10.x"
-msgstr ""
+msgstr "Infinispan 10.xでマーシャルを設定する"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-10-spring-boot-release-2.2.x.adoc:24
-msgid "Infinispan 10.x servers have some significant changes to https://infinispan.org/docs/stable/titles/developing/developing.html#marshalling[marshalling] that impact Spring Boot users."
+#, fuzzy
+msgid ""
+"Infinispan 10.x servers have some significant changes to https://infinispan."
+"org/docs/stable/titles/developing/developing.html#marshalling[marshalling] "
+"that impact Spring Boot users."
 msgstr ""
+"Infinispan 10.xサーバーでは、Spring Bootユーザーに影響を与える link:https://infinispan.org/"
+"docs/stable/titles/developing/developing.html#marshalling[マーシャリング] "
+"にいくつかの重要な変更があります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-10-spring-boot-release-2.2.x.adoc:28
-msgid "The default Marshaller for Infinispan 10.x is https://github.com/infinispan/protostream[ProtoStream], which uses https://developers.google.com/protocol-buffers[Protocol Buffers] to provide extensible, language and platform neutral serialization."
+#, fuzzy
+msgid ""
+"The default Marshaller for Infinispan 10.x is https://github.com/infinispan/"
+"protostream[ProtoStream], which uses https://developers.google.com/protocol-"
+"buffers[Protocol Buffers] to provide extensible, language and platform "
+"neutral serialization."
 msgstr ""
+"Infinispan 10.x のデフォルトの Marshaller は link:https://github.com/infinispan/"
+"protostream[ProtoStream] で、 link:https://developers.google.com/protocol-"
+"buffers[Protocol Buffers] を使用して、拡張性があり、言語やプラットフォームに依存しないシリアライゼーションを提供します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-10-spring-boot-release-2.2.x.adoc:32
-msgid "Unfortunately ProtoStream does not currently work with Infinispan Spring Cache and Session support.  As a result, Spring users in Remote Client/Server Mode must use the https://infinispan.org/docs/stable/titles/developing/developing.html#java_serialization_marshaller[Java Serialization Marshaller] and add classes to a Java serialization whitelist."
+#, fuzzy
+msgid ""
+"Unfortunately ProtoStream does not currently work with Infinispan Spring "
+"Cache and Session support.  As a result, Spring users in Remote Client/"
+"Server Mode must use the https://infinispan.org/docs/stable/titles/"
+"developing/developing.html#java_serialization_marshaller[Java Serialization "
+"Marshaller] and add classes to a Java serialization whitelist."
 msgstr ""
+"残念ながら、ProtoStreamは現在のところInfinispanのSpring "
+"CacheとSessionのサポートには対応していません。その結果、リモートクライアント/サーバーモードのSpringユーザーは link:https:/"
+"/infinispan.org/docs/stable/titles/developing/developing."
+"html#java_serialization_marshaller[Java Serialization Marshaller] を使用し、Java "
+"Serializationのホワイトリストにクラスを追加する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-10-spring-boot-release-2.2.x.adoc:34
+#, fuzzy
 msgid "Add the following configuration properties:"
-msgstr ""
+msgstr "以下の構成プロパティを追加します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-10-spring-boot-release-2.2.x.adoc:37
-msgid "`infinispan.remote.marshaller=org.infinispan.commons.marshall.JavaSerializationMarshaller` `infinispan.remote.java-serial-whitelist=org.infinispan.tutorial.simple.spring.remote.*`"
+#, fuzzy
+msgid ""
+"`infinispan.remote.marshaller=org.infinispan.commons.marshall."
+"JavaSerializationMarshaller` `infinispan.remote.java-serial-whitelist=org."
+"infinispan.tutorial.simple.spring.remote.*`"
 msgstr ""
+"`infinispan.remote.marshaller=org.infinispan.commons.marshall."
+"JavaSerializationMarshaller` `infinispan.remote.java-serial-whitelist=org."
+"infinispan.tutorial.simple.spring.remote.*`"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-10-spring-boot-release-2.2.x.adoc:40
-msgid "The `infinispan.remote.java-serial-whitelist` property specifies the classes, or packages, that Java serialization can marshall. Separate multiple class names with a comma (`,`)."
+#, fuzzy
+msgid ""
+"The `infinispan.remote.java-serial-whitelist` property specifies the "
+"classes, or packages, that Java serialization can marshall. Separate "
+"multiple class names with a comma (`,`)."
 msgstr ""
+"`infinispan.remote.java-serial-whitelist` プロパティは、Java "
+"シリアライゼーションがマーシャルできるクラスまたはパッケージを指定します。複数のクラス名はカンマ ( `,` ) で区切ってください。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-10-spring-boot-release-2.2.x.adoc:42
-msgid "Note that, in previous versions, JBoss Marshaller was the default for Infinispan. Spring users can also use https://infinispan.org/docs/stable/titles/developing/developing.html#jboss_marshalling[JBoss Marshalling], but it is deprecated as of Infinispan 10.x."
+#, fuzzy
+msgid ""
+"Note that, in previous versions, JBoss Marshaller was the default for "
+"Infinispan. Spring users can also use https://infinispan.org/docs/stable/"
+"titles/developing/developing.html#jboss_marshalling[JBoss Marshalling], but "
+"it is deprecated as of Infinispan 10.x."
 msgstr ""
+"以前のバージョンでは、Infinispan のデフォルトは JBoss Marshaller であったことに注意してください。Spring ユーザーは "
+"link:https://infinispan.org/docs/stable/titles/developing/developing."
+"html#jboss_marshalling[JBoss Marshalling] を使用することもできますが、Infinispan 10.x "
+"では非推奨となっています。"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-02-16-second-release-candidate-on-421-is-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-16-second-release-candidate-on-421-is-out.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Second release candidate on 4.2.1 is out!\n"
@@ -32,22 +32,62 @@ msgid ""
 "date: '2011-02-16T17:55:00.000-08:00'\n"
 "author: msurtani\n"
 "tags: [ \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8236989244464226947\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/02/second-release-candidate-on-421-is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8236989244464226947\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/02/second-release-"
+"candidate-on-421-is-out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 4.2.1の第2弾リリース候補が出ました\n"
+"permalink: /blog/:year/:month/:day/second-release-candidate-on-421-is-out\n"
+"date: '2011-02-16T17:55:00.000-08:00'\n"
+"author: msurtani\n"
+"tags: [ \"release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8236989244464226947\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/02/second-release-"
+"candidate-on-421-is-out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-16-second-release-candidate-on-421-is-out.adoc:18
-msgid "Yes, the much-awaited CR2 of Infinispan 4.2.1, codenamed \"Ursus\", is finally out.  We've had excellent feedback on 4.2.0 and earlier betas and CRs on 4.2.1, which has led to a large number of bugs fixed and performance improvements implemented.  As always, this is much appreciated, helps make Infinispan a stronger platform for the community, and please do keep this up.  We'd love to hear what you have to say about CR2."
+#, fuzzy
+msgid ""
+"Yes, the much-awaited CR2 of Infinispan 4.2.1, codenamed \"Ursus\", is "
+"finally out.  We've had excellent feedback on 4.2.0 and earlier betas and "
+"CRs on 4.2.1, which has led to a large number of bugs fixed and performance "
+"improvements implemented.  As always, this is much appreciated, helps make "
+"Infinispan a stronger platform for the community, and please do keep this up."
+"  We'd love to hear what you have to say about CR2."
 msgstr ""
+"4.2.0、4.2.1のベータ版とCR版では、多くのバグ修正とパフォーマンス改善が行われました。 "
+"いつものように、これらのフィードバックは非常に高く評価され、Infinispanをより強固なプラットフォームにしてくれます。 "
+"CR2についてのご意見をお聞きしたいと思っています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-16-second-release-candidate-on-421-is-out.adoc:26
-msgid "Details of what's fixed is in the https://issues.jboss.org/secure/ConfigureReport.jspa?atl_token=c0ee1b92ed270815b460be3704d78af9ead2f994&versions=12316042&sections=all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira.plugin.release-notes-report-plugin:releasenotes&Next=Next[release notes].  As always, please use the http://community.jboss.org/en/infinispan?view=discussions[user forums] to report back, grab the release http://www.jboss.org/infinispan/downloads[here], enjoy and keep the feedback coming."
+#, fuzzy
+msgid ""
+"Details of what's fixed is in the https://issues.jboss.org/secure/"
+"ConfigureReport.jspa?atl_token="
+"c0ee1b92ed270815b460be3704d78af9ead2f994&versions=12316042&sections="
+"all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira."
+"plugin.release-notes-report-plugin:releasenotes&Next=Next[release notes]. "
+" As always, please use the http://community.jboss.org/en/infinispan?view="
+"discussions[user forums] to report back, grab the release http://www.jboss."
+"org/infinispan/downloads[here], enjoy and keep the feedback coming."
 msgstr ""
+"修正された内容の詳細は link:https://issues.jboss.org/secure/ConfigureReport."
+"jspa?atl_token=c0ee1b92ed270815b460be3704d78af9ead2f994&versions="
+"12316042&sections=all&style=none&selectedProjectId=12310799&reportKey=org."
+"jboss.labs.jira.plugin.release-notes-report-plugin:releasenotes&Next="
+"Next[リリースノート] に記載されています。 いつものように、ユーザー link:http://community.jboss.org/en/"
+"infinispan?view=discussions[フォーラムを] "
+"利用して報告したり、ここでリリースを掴んだり、楽しんだり、フィードバックを続けたりしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-16-second-release-candidate-on-421-is-out.adoc:28
+#, fuzzy
 msgid "Cheers Manik"
-msgstr ""
+msgstr "乾杯 マニク"

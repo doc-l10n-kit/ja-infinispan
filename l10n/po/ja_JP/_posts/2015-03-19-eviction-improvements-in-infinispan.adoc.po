@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-03-19-eviction-improvements-in-infinispan.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-19-eviction-improvements-in-infinispan.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Eviction Improvements in Infinispan 7.2.0.Beta1\n"
@@ -32,92 +32,167 @@ msgid ""
 "date: '2015-03-19T09:51:00.000-07:00'\n"
 "author: infinispan\n"
 "tags: [ \"eviction\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5218333371495131083\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/03/eviction-improvements-in-infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5218333371495131083\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/03/eviction-improvements-"
+"in-infinispan.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 7.2.0.0.Beta1の立ち退きの改善\n"
+"permalink: /blog/:year/:month/:day/eviction-improvements-in-infinispan\n"
+"date: '2015-03-19T09:51:00.000-07:00'\n"
+"author: infinispan\n"
+"tags: [ \"eviction\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5218333371495131083\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/03/eviction-improvements-"
+"in-infinispan.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-19-eviction-improvements-in-infinispan.adoc:15
-msgid "As many of you are most likely aware Infinispan provides a way to limit how many entries are stored in a single node's memory at a given time.  This is configurable via the eviction element in xml or EvictionConfiguraitonBuilder through the programmatic configuration."
+#, fuzzy
+msgid ""
+"As many of you are most likely aware Infinispan provides a way to limit how "
+"many entries are stored in a single node's memory at a given time.  This is "
+"configurable via the eviction element in xml or EvictionConfiguraitonBuilder "
+"through the programmatic configuration."
 msgstr ""
+"ご存知の方も多いと思いますが、Infinispanは一度に1つのノードのメモリに保存されるエントリの数を制限する方法を提供しています。 "
+"これは、xmlのeviction要素またはEvictionConfiguraitonBuilderを使用してプログラム構成を介して設定することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-19-eviction-improvements-in-infinispan.adoc:21
-msgid "In 7.2.0.Beta1 we have made some internal changes to our internal eviction support.  This mostly entailed moving our implementation to the new https://issues.jboss.org/browse/ISPN-3023[ConcurrentHashMap that was updated for Java 8].  This provides for a few new benefits and behaviors."
+#, fuzzy
+msgid ""
+"In 7.2.0.Beta1 we have made some internal changes to our internal eviction "
+"support.  This mostly entailed moving our implementation to the new https://"
+"issues.jboss.org/browse/ISPN-3023[ConcurrentHashMap that was updated for "
+"Java 8].  This provides for a few new benefits and behaviors."
 msgstr ""
+"7.2.0.0.Beta1では、内部イビクションのサポートにいくつかの内部的な変更を加えました。 これは主に、 link:https://issues."
+"jboss.org/browse/ISPN-3023[Java 8のために更新された] 新しい link:https://issues.jboss."
+"org/browse/ISPN-3023[ConcurrentHashMap] への実装の移動を伴うものです link:https://issues."
+"jboss.org/browse/ISPN-3023[。] これにより、いくつかの新しい利点と動作が提供されます。"
 
 #. type: Title ==
 #: upstream/_posts/2015-03-19-eviction-improvements-in-infinispan.adoc:23
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Long Size Support"
-msgstr ""
+msgstr "ロングサイズ対応"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-19-eviction-improvements-in-infinispan.adoc:28
-msgid "Previously our eviction entry amount was limited to the maximum value of an int (2^31) and was always rounded up to the nearest power of 2 (ie.  100 would be changed to 128 which is 2^7)."
+#, fuzzy
+msgid ""
+"Previously our eviction entry amount was limited to the maximum value of an "
+"int (2^31) and was always rounded up to the nearest power of 2 (ie.  100 "
+"would be changed to 128 which is 2^7)."
 msgstr ""
+"以前の立ち退きエントリーの金額は整数の最大値(2^31)に制限されており、常に2の最も近い2乗に切り上げられていました(例：100は2^7である128に変更されます)。"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-19-eviction-improvements-in-infinispan.adoc:34
-msgid "With the new changes you can store up to a long worth of entries and it is not constrained to a power of 2.  Unfortunately Beta1 does not contain the changes to allow for a long to be configured yet, but this should be https://issues.jboss.org/browse/ISPN-5306[fixed] before 7.2.0.Final is done."
+#, fuzzy
+msgid ""
+"With the new changes you can store up to a long worth of entries and it is "
+"not constrained to a power of 2.  Unfortunately Beta1 does not contain the "
+"changes to allow for a long to be configured yet, but this should be https://"
+"issues.jboss.org/browse/ISPN-5306[fixed] before 7.2.0.Final is done."
 msgstr ""
+"新しい変更点では、長いエントリを保存することができ、2の累乗に制限されません。 "
+"残念ながら、ベータ1には長いエントリを設定できるようにするための変更点がまだ含まれていませんが、これは7.2.0."
+"Finalが行われる前に修正されるべきです。"
 
 #. type: Title ==
 #: upstream/_posts/2015-03-19-eviction-improvements-in-infinispan.adoc:36
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Memory wide eviction size"
-msgstr ""
+msgstr "メモリワイド退避サイズ"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-19-eviction-improvements-in-infinispan.adoc:42
-msgid "The old bounded map performed it's eviction based on evicting elements stored in the same segment.  This could cause the map to evict entries before it actually hit the maximum size.  This is described in detail http://infinispan.org/docs/7.1.x/faqs/faqs.html#_cache_s_number_of_entries_never_reaches_configured_maxentries_why_is_that[here]."
-msgstr ""
+#, fuzzy
+msgid ""
+"The old bounded map performed it's eviction based on evicting elements "
+"stored in the same segment.  This could cause the map to evict entries "
+"before it actually hit the maximum size.  This is described in detail http://"
+"infinispan.org/docs/7.1.x/faqs/faqs."
+"html#_cache_s_number_of_entries_never_reaches_configured_maxentries_why_is_that[here]."
+""
+msgstr "これにより、マップが実際に最大サイズに達する前にエントリを退避させてしまう可能性があります。 これについては、ここで詳しく説明します。"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-19-eviction-improvements-in-infinispan.adoc:49
-msgid "The new ConcurrentHashMap for Java 8 automatically resizes its number of segments.  As such the old method of eviction will not work.  Instead we keep track of all entries in the entire map and only evict when we go over the max size.  This prevents entries from being evicted that may not be the the least recent (previously in the case of when many elements in the same segment were added)."
+#, fuzzy
+msgid ""
+"The new ConcurrentHashMap for Java 8 automatically resizes its number of "
+"segments.  As such the old method of eviction will not work.  Instead we "
+"keep track of all entries in the entire map and only evict when we go over "
+"the max size.  This prevents entries from being evicted that may not be the "
+"the least recent (previously in the case of when many elements in the same "
+"segment were added)."
 msgstr ""
+"新しい ConcurrentHashMap for Java 8 は、セグメントのサイズを自動的に変更します。 そのため、従来の退避方法は機能しません。 "
+"代わりに、マップ全体のすべてのエントリを追跡し、最大サイズを超えた場合にのみ退避します。 "
+"これにより、最新でないエントリが退避されることを防ぎます（以前は、同じセグメント内に多くの要素が追加されていた場合がありました）。"
 
 #. type: Title ==
 #: upstream/_posts/2015-03-19-eviction-improvements-in-infinispan.adoc:51
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Better scalability"
-msgstr ""
+msgstr "スケーラビリティの向上"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-19-eviction-improvements-in-infinispan.adoc:56
-msgid "Since we utilize the new ConcurrentHashMap this automatically resizes the segments based on the amount of entries in the cache.  Increasing the number of segments has some various benefits."
+#, fuzzy
+msgid ""
+"Since we utilize the new ConcurrentHashMap this automatically resizes the "
+"segments based on the amount of entries in the cache.  Increasing the number "
+"of segments has some various benefits."
 msgstr ""
+"新しい ConcurrentHashMap を利用しているので、キャッシュ内のエントリの量に応じてセグメントのサイズを自動的に変更します。 "
+"セグメントの数を増やすと、いくつかの利点があります。"
 
 #. type: Title ===
 #: upstream/_posts/2015-03-19-eviction-improvements-in-infinispan.adoc:57
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Less blocking*"
-msgstr ""
+msgstr "*より少ないブロッキング*"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-19-eviction-improvements-in-infinispan.adoc:62
-msgid "With more segments, that means there is more fine grained locking when updating an entry.  The determination whether an entry needs evicting is done outside of any lock, further reducing contention."
-msgstr ""
+#, fuzzy
+msgid ""
+"With more segments, that means there is more fine grained locking when "
+"updating an entry.  The determination whether an entry needs evicting is "
+"done outside of any lock, further reducing contention."
+msgstr "エントリを退避させる必要があるかどうかの判断は、どのロックの外でも行われ、競合をさらに減らすことができます。"
 
 #. type: Title ===
 #: upstream/_posts/2015-03-19-eviction-improvements-in-infinispan.adoc:63
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Lower time complexity"
-msgstr ""
+msgstr "時間の複雑さを軽減"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-19-eviction-improvements-in-infinispan.adoc:68
-msgid "Since there are more segments there should be fewer hash collisions, which should provide O(1) complexity much more frequently for accessing a given key."
-msgstr ""
+#, fuzzy
+msgid ""
+"Since there are more segments there should be fewer hash collisions, which "
+"should provide O(1) complexity much more frequently for accessing a given "
+"key."
+msgstr "セグメントの数が増えるので、ハッシュの衝突が少なくなり、与えられた鍵にアクセスする際のO(1)の複雑さが格段に向上するはずです。"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-19-eviction-improvements-in-infinispan.adoc:70
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-19-eviction-improvements-in-infinispan.adoc:71
+#, fuzzy
 msgid "Will"
-msgstr ""
+msgstr "遺言"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-02-21-infinispan-421cr3-is-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-21-infinispan-421cr3-is-out.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 4.2.1.CR3 is out!\n"
@@ -32,32 +32,61 @@ msgid ""
 "date: '2011-02-21T17:01:00.000-08:00'\n"
 "author: mmarkus\n"
 "tags: [ \"release\", \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1330384677002139828\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/02/infinispan-421cr3-is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1330384677002139828\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/02/infinispan-421cr3-is-"
+"out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 4.2.1.CR3が出ました!\n"
+"permalink: /blog/:year/:month/:day/infinispan-421cr3-is-out\n"
+"date: '2011-02-21T17:01:00.000-08:00'\n"
+"author: mmarkus\n"
+"tags: [ \"release\", \"release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1330384677002139828\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/02/infinispan-421cr3-is-"
+"out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-21-infinispan-421cr3-is-out.adoc:12
+#, fuzzy
 msgid "Hi,"
-msgstr ""
+msgstr "こんにちは。"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-21-infinispan-421cr3-is-out.adoc:17
-msgid "This release is a fix for the https://issues.jboss.org/browse/ISPN-934[XSD issue from 4.2.1.CR2].  Sorry for the inconvenience caused, we'll make sure that https://issues.jboss.org/browse/ISPN-942[we learn from our mistakes]."
+#, fuzzy
+msgid ""
+"This release is a fix for the https://issues.jboss.org/browse/ISPN-934[XSD "
+"issue from 4.2.1.CR2].  Sorry for the inconvenience caused, we'll make sure "
+"that https://issues.jboss.org/browse/ISPN-942[we learn from our mistakes]."
 msgstr ""
+"今回のリリースは、 link:https://issues.jboss.org/browse/ISPN-934[4.2.1.CR2からのXSD問題の] "
+"修正です。ご迷惑をおかけして申し訳ありません link:https://issues.jboss.org/browse/ISPN-942[でし] た。"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-21-infinispan-421cr3-is-out.adoc:22
-msgid "Please use the http://community.jboss.org/en/infinispan?view=discussions[user forums] to report back and download the release http://www.jboss.org/infinispan/downloads[here]."
+#, fuzzy
+msgid ""
+"Please use the http://community.jboss.org/en/infinispan?view="
+"discussions[user forums] to report back and download the release http://www."
+"jboss.org/infinispan/downloads[here]."
 msgstr ""
+"link:http://community.jboss.org/en/infinispan?view=discussions[ユーザーフォーラムを] "
+"利用して報告し、 link:http://www.jboss.org/infinispan/downloads[こちらから] "
+"リリースをダウンロードしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-21-infinispan-421cr3-is-out.adoc:26
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-21-infinispan-421cr3-is-out.adoc:27
+#, fuzzy
 msgid "Mircea"
-msgstr ""
+msgstr "ミルチェア"

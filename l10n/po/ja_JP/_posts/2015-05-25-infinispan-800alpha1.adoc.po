@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 8.0.0.Alpha1\n"
@@ -34,58 +34,133 @@ msgid ""
 "tags: [ \"release\",\n"
 "\"alpha\",\n"
 "]\n"
-"thumbnail: http://3.bp.blogspot.com/-7XudyRuEXwM/VV83FAJL_6I/AAAAAAAAIJE/8jSlC5nglfE/s72-c/infinispan8_logo_r1v1.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1585647794897414775\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/05/infinispan-800alpha1.html\n"
+"thumbnail: http://3.bp.blogspot.com/-7XudyRuEXwM/VV83FAJL_6I/AAAAAAAAIJE/"
+"8jSlC5nglfE/s72-c/infinispan8_logo_r1v1.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1585647794897414775\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/05/infinispan-800alpha1."
+"html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 8.0.0.0.Alpha1\n"
+"permalink: /blog/:year/:month/:day/infinispan-800alpha1\n"
+"date: '2015-05-25T12:21:00.002-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\",\n"
+"\"alpha\",\n"
+"]\n"
+"thumbnail: http://3.bp.blogspot.com/-7XudyRuEXwM/VV83FAJL_6I/AAAAAAAAIJE/"
+"8jSlC5nglfE/s72-c/infinispan8_logo_r1v1.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1585647794897414775\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/05/infinispan-800alpha1."
+"html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:15
-msgid "http://3.bp.blogspot.com/-7XudyRuEXwM/VV83FAJL_6I/AAAAAAAAIJE/8jSlC5nglfE/s1600/infinispan8_logo_r1v1.png[image:http://3.bp.blogspot.com/-7XudyRuEXwM/VV83FAJL_6I/AAAAAAAAIJE/8jSlC5nglfE/s320/infinispan8_logo_r1v1.png[image,width=320,height=103]]"
+#, fuzzy
+msgid ""
+"http://3.bp.blogspot.com/-7XudyRuEXwM/VV83FAJL_6I/AAAAAAAAIJE/8jSlC5nglfE/"
+"s1600/infinispan8_logo_r1v1.png[image:http://3.bp.blogspot.com/-7XudyRuEXwM/"
+"VV83FAJL_6I/AAAAAAAAIJE/8jSlC5nglfE/s320/infinispan8_logo_r1v1."
+"png[image,width=320,height=103]]"
 msgstr ""
+"link:http://3.bp.blogspot.com/-7XudyRuEXwM/VV83FAJL_6I/AAAAAAAAIJE/"
+"8jSlC5nglfE/s1600/infinispan8_logo_r1v1.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:19
+#, fuzzy
 msgid "Dear Infinispan community,"
-msgstr ""
+msgstr "インフィニスパンのコミュニティへ"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:26
-msgid "it is with great pleasure that we are announcing the release of Infinispan 8.0.0.Alpha1. This is the first release of Infinispan that requires Java 8 to compile and run. We have great plans in store for our Java 8 API, and this is the first step in getting there. Don't worry, however: we intend to maintain backwards compatibility for both configuration and API."
+#, fuzzy
+msgid ""
+"it is with great pleasure that we are announcing the release of Infinispan 8."
+"0.0.Alpha1. This is the first release of Infinispan that requires Java 8 to "
+"compile and run. We have great plans in store for our Java 8 API, and this "
+"is the first step in getting there. Don't worry, however: we intend to "
+"maintain backwards compatibility for both configuration and API."
 msgstr ""
+"この度、Infinispan 8.0.0.0.Alpha1のリリースを発表することになりました。これはコンパイルと実行にJava "
+"8を必要とするInfinispanの最初のリリースです。私たちはJava 8 "
+"APIに大きな計画を持っており、これはその第一歩となります。しかし、心配しないでください: "
+"私たちは、設定とAPIの両方で下位互換性を維持するつもりです。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:28
+#, fuzzy
 msgid "This release brings some highly requested features:"
-msgstr ""
+msgstr "今回のリリースでは、要望の多かった機能がいくつか追加されています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:34
-msgid "the introduction of size-based eviction, i.e. the ability to set a maximum amount of heap used by a cache. Please note that this requires enabling storeAsBinary. This feature has only been tested with HotSpot, and other JVMs (e.g. IBM J9) will not behave as expected. We welcome any improvements you can give us to help with alternate JVMs."
+#, fuzzy
+msgid ""
+"the introduction of size-based eviction, i.e. the ability to set a maximum "
+"amount of heap used by a cache. Please note that this requires enabling "
+"storeAsBinary. This feature has only been tested with HotSpot, and other "
+"JVMs (e.g. IBM J9) will not behave as expected. We welcome any improvements "
+"you can give us to help with alternate JVMs."
 msgstr ""
+"サイズベースのイビクション、つまりキャッシュが使用するヒープの最大量を設定する機能を導入しました。これにはstoreAsBinaryを有効にする必要があることに注意してください。この機能はHotSpotでのみテストされており、他のJVM(IBM "
+"J9など)では期待通りに動作しません。他のJVMに対応するための改善点があれば歓迎します。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:40
-msgid "the ability to run non-indexed queries on indexed data: this means that if you issue a query with predicates which involve non-indexed fields, Infinispan will still be able to execute the query. In the future we intend to also add support for hybrid queries, i.e. queries which can take advantage of indexed fields but which also need to discern on non-indexed ones."
+#, fuzzy
+msgid ""
+"the ability to run non-indexed queries on indexed data: this means that if "
+"you issue a query with predicates which involve non-indexed fields, "
+"Infinispan will still be able to execute the query. In the future we intend "
+"to also add support for hybrid queries, i.e. queries which can take "
+"advantage of indexed fields but which also need to discern on non-indexed "
+"ones."
 msgstr ""
+"インデックス化されたデータに対してインデックス化されていないクエリを実行する機能：これは、インデックス化されていないフィールドを含む述語でクエリを発行しても、Infinispanはクエリを実行することができることを意味します。将来的には、ハイブリッドクエリ、つまりインデックス化されたフィールドを利用できるが、インデックス化されていないフィールドを検出する必要があるクエリのサポートも追加する予定です。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:43
-msgid "and many many bugfixes, consult our issue tracker for a https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12327279[list of things] we have fixed. "
+#, fuzzy
+msgid ""
+"and many many bugfixes, consult our issue tracker for a https://issues.jboss."
+"org/secure/ReleaseNote.jspa?projectId=12310799&version=12327279[list of "
+"things] we have fixed. "
 msgstr ""
+"また、多くのバグ修正を行っていますので、私たちが修正した link:https://issues.jboss.org/secure/"
+"ReleaseNote.jspa?projectId=12310799&version=12327279[もののリストは] "
+"、私たちの問題追跡システムを参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:47
-msgid "We have also removed asynchronous marshalling which never worked quite right, and also imposed several limitations on applications. Good riddance !"
-msgstr ""
+#, fuzzy
+msgid ""
+"We have also removed asynchronous marshalling which never worked quite "
+"right, and also imposed several limitations on applications. Good riddance !"
+msgstr "また、正しく動作しなかった非同期マーシャリングを削除し、アプリケーションにいくつかの制限を課しました。さようなら!"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:51
-msgid "Don't forget to also check-out our http://infinispan.org/roadmap/[roadmap] to see the things we plan to get done during the 8.0 cycle."
+#, fuzzy
+msgid ""
+"Don't forget to also check-out our http://infinispan.org/roadmap/[roadmap] "
+"to see the things we plan to get done during the 8.0 cycle."
 msgstr ""
+"8.0サイクルの間に予定していることを確認するための link:http://infinispan.org/roadmap/[ロードマップの] "
+"チェックもお忘れなく。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-25-infinispan-800alpha1.adoc:55
-msgid "http://infinispan.org/download/[Download] it now and tell us what you think on our https://developer.jboss.org/en/infinispan/content[forums] or come and meet us on IRC: channel `#infinispan `on Freenode.  ``"
+#, fuzzy
+msgid ""
+"http://infinispan.org/download/[Download] it now and tell us what you think "
+"on our https://developer.jboss.org/en/infinispan/content[forums] or come and "
+"meet us on IRC: channel `#infinispan `on Freenode.  ``"
 msgstr ""
+"今すぐ link:http://infinispan.org/download/[ダウンロードして] 、私たちの link:https://"
+"developer.jboss.org/en/infinispan/content[フォーラム] で感想を言うか、IRCで会いに来てください: "
+"channel `#infinispan `on Freenode. ``"

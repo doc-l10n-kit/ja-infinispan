@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:17
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan EC2 Demo\n"
@@ -38,78 +38,151 @@ msgid ""
 "\"demo\",\n"
 "\"aws\",\n"
 "]\n"
-"thumbnail: http://3.bp.blogspot.com/_Ak-ywrHZki4/S_zQaw1dcqI/AAAAAAAAA7A/KOxIqwwmzhw/s72-c/infib1.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1607822191195917457\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/05/infinispan-ec2-demo.html\n"
+"thumbnail: http://3.bp.blogspot.com/_Ak-ywrHZki4/S_zQaw1dcqI/AAAAAAAAA7A/"
+"KOxIqwwmzhw/s72-c/infib1.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1607822191195917457\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/05/infinispan-ec2-demo."
+"html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan EC2のデモ\n"
+"permalink: /blog/:year/:month/:day/infinispan-ec2-demo\n"
+"date: '2010-05-25T22:25:00.000-07:00'\n"
+"author: infinispan\n"
+"tags: [ \"ec2\",\n"
+"\"amazon\",\n"
+"\"jgroups\",\n"
+"\"s3\",\n"
+"\"demo\",\n"
+"\"aws\",\n"
+"]\n"
+"thumbnail: http://3.bp.blogspot.com/_Ak-ywrHZki4/S_zQaw1dcqI/AAAAAAAAA7A/"
+"KOxIqwwmzhw/s72-c/infib1.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1607822191195917457\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/05/infinispan-ec2-demo."
+"html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:22
-msgid "Infinispan's distributed mode is well suited to handling large datasets and scaling the clustered cache by adding nodes as required. These days when inexpensive scaling is thought of, cloud computing immediately comes to mind."
+#, fuzzy
+msgid ""
+"Infinispan's distributed mode is well suited to handling large datasets and "
+"scaling the clustered cache by adding nodes as required. These days when "
+"inexpensive scaling is thought of, cloud computing immediately comes to mind."
+""
 msgstr ""
+"Infinispanの分散モードは、大規模なデータセットを処理し、必要に応じてノードを追加してクラスター化されたキャッシュをスケーリングするのに適しています。最近では、安価なスケーリングといえば、すぐにクラウドコンピューティングが思い浮かびます。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:31
-msgid "One of the largest providers of cloud computing is Amazon with its Amazon Web Services (AWS) offering. AWS provides computing capacity on demand with its EC2 services and storage on demand with its S3 and EBS offerings. EC2 provides just an operating system to run on and it is a relatively straightforward process to get an Infinispan cluster running on EC2. However there is one gotcha, EC2 does not support UDP multicasting at this time and this is the default node discovery approach used by Infinispan to detect nodes running in a cluster."
+#, fuzzy
+msgid ""
+"One of the largest providers of cloud computing is Amazon with its Amazon "
+"Web Services (AWS) offering. AWS provides computing capacity on demand with "
+"its EC2 services and storage on demand with its S3 and EBS offerings. EC2 "
+"provides just an operating system to run on and it is a relatively "
+"straightforward process to get an Infinispan cluster running on EC2. However "
+"there is one gotcha, EC2 does not support UDP multicasting at this time and "
+"this is the default node discovery approach used by Infinispan to detect "
+"nodes running in a cluster."
 msgstr ""
+"クラウドコンピューティングの最大手は、Amazon Web "
+"Services（AWS）を提供しているAmazonである。AWSは、EC2サービスではオンデマンドでコンピューティングキャパシティを提供し、S3とEBSサービスではオンデマンドでストレージを提供しています。EC2は実行するためのオペレーティングシステムを提供するだけで、InfinispanクラスタをEC2上で実行させるのは比較的簡単なプロセスです。しかし、EC2は現時点ではUDPマルチキャストをサポートしておらず、これはInfinispanがクラスタ内で実行されているノードを検出するために使用するデフォルトのノード検出アプローチです。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:33
+#, fuzzy
 msgid "Some background on network communications"
-msgstr ""
+msgstr "ネットワーク通信の背景"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:39
-msgid "Infinispan uses the JGroups library to handle all network communications. JGroups enables cluster node detection, a process called discovery, and reliable data transfer between nodes. JGroups also handles the process of nodes entering and exiting the cluster and master node determination for the cluster."
+#, fuzzy
+msgid ""
+"Infinispan uses the JGroups library to handle all network communications. "
+"JGroups enables cluster node detection, a process called discovery, and "
+"reliable data transfer between nodes. JGroups also handles the process of "
+"nodes entering and exiting the cluster and master node determination for the "
+"cluster."
 msgstr ""
+"Infinispanは、すべてのネットワーク通信を処理するためにJGroupsライブラリを使用しています。JGroups "
+"は、クラスタノードの検出、ディスカバリと呼ばれるプロセス、およびノード間の信頼性の高いデータ転送を可能にします。また、JGroups "
+"は、クラスタへのノードの入退出のプロセスやクラスタのマスターノードの決定も処理します。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:43
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Configuring JGroups in Infinispan*\n"
 "The JGroups configuration details are passed to Infinispan in the\n"
 "infinispan configuration file\n"
 msgstr ""
+"Infinisp *an での JGroups* の設定 JGroups の設定の詳細は、Infinispan の設定ファイルで Infinispan "
+"に渡されます。"
 
 #. type: delimited block -
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:52
 #, no-wrap
 msgid ""
-"<transport clusterName=\"infinispan-cluster\" distributedSyncTimeout=\"50000\"\n"
-"        transportClass=\"org.infinispan.remoting.transport.jgroups.JGroupsTransport\">\n"
+"<transport clusterName=\"infinispan-cluster\" distributedSyncTimeout="
+"\"50000\"\n"
+"        transportClass=\"org.infinispan.remoting.transport.jgroups."
+"JGroupsTransport\">\n"
 "    <properties>\n"
-"       <property name=\"configurationFile\" value=\"jgroups-s3_ping-aws.xml\" />\n"
+"       <property name=\"configurationFile\" value=\"jgroups-s3_ping-aws."
+"xml\" />\n"
 "    </properties>\n"
 " </transport>\n"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:56
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Node Discovery*\n"
-msgstr ""
+msgstr "*ノード発見*"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:59
-msgid "JGroups has three discovery options which can be used for node discovery on EC2."
-msgstr ""
+#, fuzzy
+msgid ""
+"JGroups has three discovery options which can be used for node discovery on "
+"EC2."
+msgstr "JGroupsには3つのディスカバリーオプションがあり、EC2上でのノードディスカバリーに使用することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:64
-msgid "The first is to statically configure the address of each node in the cluster in each of the nodes peers. This simplifies discovery but is not suitable when the IP addresses of each node is dynamic or nodes are added and removed on demand."
+#, fuzzy
+msgid ""
+"The first is to statically configure the address of each node in the cluster "
+"in each of the nodes peers. This simplifies discovery but is not suitable "
+"when the IP addresses of each node is dynamic or nodes are added and removed "
+"on demand."
 msgstr ""
+"1つ目は、クラスタ内の各ノードのアドレスを各ノードのピアに静的に設定することです。これはディスカバリーを簡素化しますが、各ノードのIPアドレスが動的な場合や、ノードがオンデマンドで追加・削除される場合には適していません。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:71
-msgid "The second method is to use a Gossip Router. This is an external Java process which runs and waits for connections from potential cluster nodes. Each node in the cluster needs to be configured with the ip address and port that the Gossip Router is listening on. At node initialization, the node connects to the gossip router and retrieves the list of other nodes in the cluster."
+#, fuzzy
+msgid ""
+"The second method is to use a Gossip Router. This is an external Java "
+"process which runs and waits for connections from potential cluster nodes. "
+"Each node in the cluster needs to be configured with the ip address and port "
+"that the Gossip Router is listening on. At node initialization, the node "
+"connects to the gossip router and retrieves the list of other nodes in the "
+"cluster."
 msgstr ""
+"2つ目の方法は、Gossip "
+"Routerを使用することです。これは外部Javaプロセスで、クラスタの潜在的なノードからの接続を待機します。クラスタ内の各ノードは、ゴシップルーターがリッスンしているIPアドレスとポートを設定する必要があります。ノードの初期化時に、ノードはゴシップ・ルーターに接続し、クラスタ内の他のノードのリストを取得します。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:73
+#, fuzzy
 msgid "Example JGroups gossip router configuration"
-msgstr ""
+msgstr "JGroupsのゴシップルーターの設定例"
 
 #. type: delimited block -
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:86
@@ -127,18 +200,35 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:91
-msgid "The `infinispan-4.1.0-SNAPSHOT/etc/config-samples/` directory has sample configuration files for use with the Gossip Router. The approach works well but the dependency on an external process can be limiting."
+#, fuzzy
+msgid ""
+"The `infinispan-4.1.0-SNAPSHOT/etc/config-samples/` directory has sample "
+"configuration files for use with the Gossip Router. The approach works well "
+"but the dependency on an external process can be limiting."
 msgstr ""
+"`infinispan-4.1.0-SNAPSHOT/etc/config-samples/` ディレクトリには、Gossip "
+"ルータで使用するためのサンプル設定ファイルがあります。このアプローチはうまく動作しますが、外部プロセスへの依存は制限されます。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:98
-msgid "The third method is to use the new `S3_PING` protocol that has been added to JGroups. Using this the user configures a S3 bucket (location)  where each node in the cluster will store its connection details and upon startup each node will see the other nodes in the cluster. This avoids having to have a separate process for node discovery and gets around the static configuration of nodes."
+#, fuzzy
+msgid ""
+"The third method is to use the new `S3_PING` protocol that has been added to "
+"JGroups. Using this the user configures a S3 bucket (location)  where each "
+"node in the cluster will store its connection details and upon startup each "
+"node will see the other nodes in the cluster. This avoids having to have a "
+"separate process for node discovery and gets around the static configuration "
+"of nodes."
 msgstr ""
+"3 つ目の方法は、JGroups に追加された新しい `S3_PING` "
+"プロトコルを使用することです。これを使用して、ユーザーはクラスタ内の各ノードが接続の詳細を保存する S3 "
+"バケット（場所）を設定し、起動時に各ノードはクラスタ内の他のノードを表示します。これにより、ノード発見のために別のプロセスを持つ必要がなくなり、ノードの静的な設定を回避することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:100
+#, fuzzy
 msgid "Example JGroups configuration using the `S3_PING` protocol:"
-msgstr ""
+msgstr "`S3_PING` プロトコルを使用した JGroups の設定例。"
 
 #. type: delimited block -
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:111
@@ -146,7 +236,8 @@ msgstr ""
 msgid ""
 "<config>\n"
 "    <TCP bind_port=\"7800\" />\n"
-"    <S3_PING secret_access_key=\"secretaccess_key\" access_key=\"access_key\"\n"
+"    <S3_PING secret_access_key=\"secretaccess_key\" access_key="
+"\"access_key\"\n"
 "                location=s3_bucket_location\" />\n"
 "    <MERGE2 max_interval=\"30000\" min_interval=\"10000\" />\n"
 "    <FD_SOCK start_port=\"9777\" />\n"
@@ -156,137 +247,216 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:114
+#, fuzzy
 msgid "EC2 demo"
-msgstr ""
+msgstr "EC2デモ"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:120
-msgid "The purpose of this demo is to show how an Infinispan cache running on EC2 can easily form a cluster and retrieve data seamlessly across the nodes in the cluster. The addition of any subsequent Infinispan nodes to the cluster automatically distribute the existing data and offer higher availability in the case of node failure."
+#, fuzzy
+msgid ""
+"The purpose of this demo is to show how an Infinispan cache running on EC2 "
+"can easily form a cluster and retrieve data seamlessly across the nodes in "
+"the cluster. The addition of any subsequent Infinispan nodes to the cluster "
+"automatically distribute the existing data and offer higher availability in "
+"the case of node failure."
 msgstr ""
+"このデモの目的は、EC2上で動作するInfinispanキャッシュがどのように簡単にクラスタを形成し、クラスタ内のノード間でシームレスにデータを取得できるかを示すことです。後続のInfinispanノードをクラスタに追加すると、既存のデータが自動的に分散され、ノード障害が発生した場合でもより高い可用性を提供します。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:126
-msgid "To demonstrate Infinispan, data is required to be added to nodes in the cluster. We will use one of the many public datasets that Amazon host on AWS, the http://developer.amazonwebservices.com/connect/entry.jspa?externalID=2419&categoryID=246[influenza virus] dataset publicly made available by Amazon."
+#, fuzzy
+msgid ""
+"To demonstrate Infinispan, data is required to be added to nodes in the "
+"cluster. We will use one of the many public datasets that Amazon host on "
+"AWS, the http://developer.amazonwebservices.com/connect/entry."
+"jspa?externalID=2419&categoryID=246[influenza virus] dataset publicly made "
+"available by Amazon."
 msgstr ""
+"Infinispanを実証するためには、クラスタ内のノードにデータを追加する必要があります。AWS上でAmazonがホストしている多くの公開データセットのうちの1つ、Amazonが公開している "
+"link:http://developer.amazonwebservices.com/connect/entry.jspa?externalID="
+"2419&categoryID=246[インフルエンザウイルスデータセット] を使用します。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:134
-msgid "This dataset has a number components which make it suitable for the demo. First of all it is not a trivial dataset, there are over 200,000 records. Secondly there are internal relationships within the data which can be used to demonstrate retrieving data from different cache nodes.  The data is made up for viruses, nucleotides and proteins, each influenza virus has a related nucleotide and each nucleotide has one or more proteins. Each are stored in their own cache instance."
+#, fuzzy
+msgid ""
+"This dataset has a number components which make it suitable for the demo. "
+"First of all it is not a trivial dataset, there are over 200,000 records. "
+"Secondly there are internal relationships within the data which can be used "
+"to demonstrate retrieving data from different cache nodes.  The data is made "
+"up for viruses, nucleotides and proteins, each influenza virus has a related "
+"nucleotide and each nucleotide has one or more proteins. Each are stored in "
+"their own cache instance."
 msgstr ""
+"このデータセットはデモに適した要素を持っています。まず第一に、200,000以上のレコードがあり、些細なデータセットではありません。第二に、データ内には内部関係があり、異なるキャッシュノードからのデータ検索のデモに使用できます。データはウイルス、ヌクレオチド、タンパク質で構成されており、各インフルエンザウイルスは関連するヌクレオチドを持ち、各ヌクレオチドは1つ以上のタンパク質を持っています。それぞれが独自のキャッシュインスタンスに格納されています。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:136
-msgid "image:http://3.bp.blogspot.com/_Ak-ywrHZki4/S_zQaw1dcqI/AAAAAAAAA7A/KOxIqwwmzhw/s320/infib1.png[image]"
+#, fuzzy
+msgid ""
+"image:http://3.bp.blogspot.com/_Ak-ywrHZki4/S_zQaw1dcqI/AAAAAAAAA7A/"
+"KOxIqwwmzhw/s320/infib1.png[image]"
 msgstr ""
+"image:http://3.bp.blogspot.com/_Ak-ywrHZki4/S_zQaw1dcqI/AAAAAAAAA7A/"
+"KOxIqwwmzhw/s320/infib1.png[alt=\"image\"]"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:138
+#, fuzzy
 msgid "The caches are populated as follows :"
-msgstr ""
+msgstr "キャッシュは、以下のように入力されます。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:141
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*InfluenzaCache* - populated with data read from the `Influenza.dat`\n"
 "file, approx 82,000 entries\n"
 msgstr ""
+"*InfluenzaCache* - `Influenza.dat` ファイルから読み込んだデータで構成されており、約 82,000 "
+"件のエントリーがあります。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:143
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*ProteinCache* - populated with data read from the `Influenza_aa.dat`\n"
 "file, approx 102,000 entries\n"
 msgstr ""
+"*ProteinCache* - `Influenza_aa.dat` ファイルから読み込んだデータで構成されており、約 102,000 "
+"エントリがあります。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:145
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*NucleotideCache* - populated with data read from the\n"
 "`Influenza_na.dat` file, approx 82,000 entries\n"
-msgstr ""
+msgstr "*NucleotideCache* - `Influenza_na.dat` ファイルから読み込んだデータで構成されています。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:152
-msgid "The demo requires 4 small EC2 instances running Linux, one instance for each cache node and one for the Jboss application server which runs the UI. Each node has to have http://java.sun.com/javase/6/[Sun JDK 1.6] installed in order to run the demos. In order to use the Web-based GUI, http://www.jboss.org/jbossas/downloads.html[JBoss AS 5] should also be installed on one node."
+#, fuzzy
+msgid ""
+"The demo requires 4 small EC2 instances running Linux, one instance for each "
+"cache node and one for the Jboss application server which runs the UI. Each "
+"node has to have http://java.sun.com/javase/6/[Sun JDK 1.6] installed in "
+"order to run the demos. In order to use the Web-based GUI, http://www.jboss."
+"org/jbossas/downloads.html[JBoss AS 5] should also be installed on one node."
 msgstr ""
+"デモを実行するには、Linuxを実行する4つの小さなEC2インスタンスが必要で、各キャッシュノードに1つ、UIを実行するJbossアプリケーションサーバに1つのインスタンスが必要です。各ノードはデモを実行するために "
+"link:http://java.sun.com/javase/6/[Sun JDK 1.6] "
+"がインストールされている必要があります。WebベースのGUIを使用するためには、 link:http://www.jboss.org/jbossas/"
+"downloads.html[JBoss AS 5] も1つのノードにインストールする必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:155
-msgid "In order for the nodes to communicate with each other the EC2 firewall needs to be modified. Each node should have the following ports open:"
-msgstr ""
+#, fuzzy
+msgid ""
+"In order for the nodes to communicate with each other the EC2 firewall needs "
+"to be modified. Each node should have the following ports open:"
+msgstr "ノード同士が通信するためには、EC2ファイアウォールを変更する必要があります。各ノードは以下のポートを開いておく必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:157
+#, fuzzy
 msgid "TCP 22 – For SSH access"
-msgstr ""
+msgstr "TCP 22 - SSH アクセス用"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:158
+#, fuzzy
 msgid "TCP 7800 to TCP 7810 – used for JGroups cluster communications"
-msgstr ""
+msgstr "TCP 7800 から TCP 7810 - JGroups クラスタ通信に使用されます。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:160
-msgid "TCP 8080 – Only required for the node running the AS5 instance in order to access the Web UI."
-msgstr ""
+#, fuzzy
+msgid ""
+"TCP 8080 – Only required for the node running the AS5 instance in order to "
+"access the Web UI."
+msgstr "TCP 8080 - Web UI にアクセスするために AS5 インスタンスを実行しているノードにのみ必要です。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:162
-msgid "TCP 9777 - Required for FD_SOCK, the socket based failure detection module of the JGroups stack."
-msgstr ""
+#, fuzzy
+msgid ""
+"TCP 9777 - Required for FD_SOCK, the socket based failure detection module "
+"of the JGroups stack."
+msgstr "TCP 9777 - JGroups スタックのソケットベースの障害検出モジュール FD_SOCK に必要です。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:167
-msgid "To run the demo, http://sourceforge.net/projects/infinispan/files/[download] the Infinispan \"all\" distribution, (`infinispan-xxx-all.zip`) to a directory on each node and unzip the archive."
+#, fuzzy
+msgid ""
+"To run the demo, http://sourceforge.net/projects/infinispan/files/[download] "
+"the Infinispan \"all\" distribution, (`infinispan-xxx-all.zip`) to a "
+"directory on each node and unzip the archive."
 msgstr ""
+"デモを実行するには、Infinispan \"all\" ディストリビューション ( `infinispan-xxx-all.zip` ) "
+"を各ノードのディレクトリに link:http://sourceforge.net/projects/infinispan/files/"
+"[ダウンロードし、] アーカイブを解凍します。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:170
-msgid "Edit the `etc/config-samples/ec2-demo/jgroups-s3_ping-aws.xml` file to add the correct AWS S3 security credentials and bucket name."
+#, fuzzy
+msgid ""
+"Edit the `etc/config-samples/ec2-demo/jgroups-s3_ping-aws.xml` file to add "
+"the correct AWS S3 security credentials and bucket name."
 msgstr ""
+"`etc/config-samples/ec2-demo/jgroups-s3_ping-aws.xml` ファイルを編集して、正しい AWS S3 "
+"のセキュリティ認証情報とバケット名を追加します。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:173
-msgid "Start the one of the cache instances on each node using one of the following scripts from the `bin` directory:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Start the one of the cache instances on each node using one of the following "
+"scripts from the `bin` directory:"
+msgstr "`bin` ディレクトリにある以下のスクリプトのいずれかを使用して、各ノードのキャッシュインスタンスを起動します。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:175
+#, fuzzy
 msgid "`runEC2Demo-influenza.sh`"
-msgstr ""
+msgstr "`runEC2Demo-influenza.sh`"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:176
+#, fuzzy
 msgid "`runEC2Demo-nucleotide.sh`"
-msgstr ""
+msgstr "`runEC2Demo-nucleotide.sh`"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:177
+#, fuzzy
 msgid "`runEC2Demo-protein.sh`"
-msgstr ""
+msgstr "`runEC2Demo-protein.sh`"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:179
+#, fuzzy
 msgid "Each script will startup and display the following information :"
-msgstr ""
+msgstr "各スクリプトは起動し、以下の情報を表示します。"
 
 #. type: delimited block .
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:214
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
-"[tmp\\] ./runEC2Demo-nucleotide.shCacheBuilder called with /opt/infinispan-4.1.0-SNAPSHOT/etc/config-samples/ec2-demo/infinispan-ec2-config.xml\n"
+"[tmp\\] ./runEC2Demo-nucleotide.shCacheBuilder called with /opt/infinispan-4."
+"1.0-SNAPSHOT/etc/config-samples/ec2-demo/infinispan-ec2-config.xml\n"
 "-------------------------------------------------------------------\n"
-"GMS: address=redlappie-37477, cluster=infinispan-cluster, physical address=192.168.122.1:7800\n"
+"GMS: address=redlappie-37477, cluster=infinispan-cluster, physical address="
+"192.168.122.1:7800\n"
 "-------------------------------------------------------------------\n"
 "Caches created....\n"
 "Starting CacheManagerCache \n"
 "Address=redlappie-57930Cache \n"
 "Address=redlappie-37477Cache \n"
 "Address=redlappie-18122\n"
-"Parsing files....Parsing [/opt/infinispan-4.1.0-SNAPSHOT/etc/Amazon-TestData/influenza_na.dat]\n"
+"Parsing files....Parsing [/opt/infinispan-4.1.0-SNAPSHOT/etc/Amazon-TestData/"
+"influenza_na.dat]\n"
 "About to load 81904 nucleotide elements into NucleiodCache \n"
 "Added 5000 Nucleotide records\n"
 "Added 10000 Nucleotide records\n"
@@ -311,64 +481,125 @@ msgid ""
 "Protein/Influenza/Nucleotide Cache Size-->9572/81904/81904\n"
 "Protein/Influenza/Nucleotide Cache Size-->9572/81904/81904\n"
 msgstr ""
+"tmp] ./runEC2Demo-nucleotide.shCacheBuilder called with /opt/infinispan-4.1."
+"0-SNAPSHOT/etc/config-samples/ec2-demo/infinispan-ec2-config.xmlで呼び出されました。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:224
-msgid "Items of interest in the output are the *Cache Address* lines which display the address of the nodes in the cluster. Also of note is the *Protein/Influenza/Nucleotide* line which displays the number of entries in each cache. As other caches are starting up these numbers will change as cache entries are dynamically moved around through out the Infinispan cluster."
+#, fuzzy
+msgid ""
+"Items of interest in the output are the *Cache Address* lines which display "
+"the address of the nodes in the cluster. Also of note is the *Protein/"
+"Influenza/Nucleotide* line which displays the number of entries in each "
+"cache. As other caches are starting up these numbers will change as cache "
+"entries are dynamically moved around through out the Infinispan cluster."
 msgstr ""
+"出力の注目すべき項目は、クラスタ内のノードのアドレスを表示する *Cache Address* 行です。また、 *Protein/Influenza/"
+"Nucleotide* "
+"行は各キャッシュのエントリ数を表示します。他のキャッシュが起動している間は、キャッシュエントリがInfinispanクラスタ内を動的に移動するため、これらの数字は変化します。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:228
-msgid "To use the web based UI we first of all need to let the server know where the Infinispan configuration files are kept. To do this edit the `jboss-5.1.0.GA/bin/run.conf` file and add the line"
+#, fuzzy
+msgid ""
+"To use the web based UI we first of all need to let the server know where "
+"the Infinispan configuration files are kept. To do this edit the `jboss-5.1."
+"0.GA/bin/run.conf` file and add the line"
 msgstr ""
+"Web ベースの UI を使用するには、まず、Infinispan "
+"の設定ファイルがどこに保存されているかをサーバに知らせる必要があります。これを行うには、 `jboss-5.1.0.GA/bin/run.conf` "
+"ファイルを編集して、次の行を追加します。"
 
 #. type: delimited block -
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:232
 #, no-wrap
-msgid "JAVA_OPTS=\"$JAVA_OPTS -DCFGPath=/opt/infinispan-4.1.0-SNAPSHOT/etc/config-samples/ec2-demo/\"\n"
+msgid ""
+"JAVA_OPTS=\"$JAVA_OPTS -DCFGPath=/opt/infinispan-4.1.0-SNAPSHOT/etc/config-"
+"samples/ec2-demo/\"\n"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:235
+#, fuzzy
 msgid "at the bottom. Replace the path as appropriate."
-msgstr ""
+msgstr "下の方にある適切なパスに置き換えてください。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:239
-msgid "Now start the Jboss application server using the default profile e.g.  `run.sh -c default -b xxx.xxx.xxx.xxx`, where “xxx.xxx.xxx.xxx” is the public IP address of the node that the AS is running on."
+#, fuzzy
+msgid ""
+"Now start the Jboss application server using the default profile e.g.  `run."
+"sh -c default -b xxx.xxx.xxx.xxx`, where “xxx.xxx.xxx.xxx” is the public IP "
+"address of the node that the AS is running on."
 msgstr ""
+"ここで、デフォルトのプロファイルを使用してJbossアプリケーションサーバを起動します(例: `run.sh -c default -b xxx.xxx."
+"xxx.xxx` )。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:242
-msgid "Then drop the `infinispan-ec2-demoui.war` into the jboss-5.1.0.GA `/server/default/deploy` directory."
+#, fuzzy
+msgid ""
+"Then drop the `infinispan-ec2-demoui.war` into the jboss-5.1.0.GA `/server/"
+"default/deploy` directory."
 msgstr ""
+"そして、 `infinispan-ec2-demoui.war` を jboss-5.1.0.GA `/server/default/deploy` "
+"ディレクトリにドロップします。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:246
-msgid "Finally point your web browser to `http://public-ip-address:8080/infinispan-ec2-demoui` and the following page will appear."
+#, fuzzy
+msgid ""
+"Finally point your web browser to `http://public-ip-address:8080/infinispan-"
+"ec2-demoui` and the following page will appear."
 msgstr ""
+"最後にウェブブラウザを `http://public-ip-address:8080/infinispan-ec2-demoui` "
+"と表示され、以下のページが表示されます。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:248
-msgid "http://2.bp.blogspot.com/_Ak-ywrHZki4/S_zRHqENE-I/AAAAAAAAA7I/Ovii36qX3vU/s1600/Screenshot2.png[image:http://2.bp.blogspot.com/_Ak-ywrHZki4/S_zRHqENE-I/AAAAAAAAA7I/Ovii36qX3vU/s320/Screenshot2.png[image]]"
+#, fuzzy
+msgid ""
+"http://2.bp.blogspot.com/_Ak-ywrHZki4/S_zRHqENE-I/AAAAAAAAA7I/Ovii36qX3vU/"
+"s1600/Screenshot2.png[image:http://2.bp.blogspot.com/_Ak-ywrHZki4/S_zRHqENE-"
+"I/AAAAAAAAA7I/Ovii36qX3vU/s320/Screenshot2.png[image]]"
 msgstr ""
+"link:http://2.bp.blogspot.com/_Ak-ywrHZki4/S_zRHqENE-I/AAAAAAAAA7I/"
+"Ovii36qX3vU/s1600/Screenshot2.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:252
-msgid "The search criteria is the values in the first column of the `/etc/Amazon-TestData/influenza.dat` file e.g. `AB000604`, `AB000612`, etc."
+#, fuzzy
+msgid ""
+"The search criteria is the values in the first column of the `/etc/Amazon-"
+"TestData/influenza.dat` file e.g. `AB000604`, `AB000612`, etc."
 msgstr ""
+"`AB000604` `AB000612` 検索条件は、 `/etc/Amazon-TestData/influenza.dat` "
+"ファイルの最初の列にある値です。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:254
-msgid "http://1.bp.blogspot.com/_Ak-ywrHZki4/S_zRrJHi2nI/AAAAAAAAA7Q/F-JHBC08yWw/s1600/Screenshot1.png[image:http://1.bp.blogspot.com/_Ak-ywrHZki4/S_zRrJHi2nI/AAAAAAAAA7Q/F-JHBC08yWw/s320/Screenshot1.png[image]]"
+#, fuzzy
+msgid ""
+"http://1.bp.blogspot.com/_Ak-ywrHZki4/S_zRrJHi2nI/AAAAAAAAA7Q/F-JHBC08yWw/"
+"s1600/Screenshot1.png[image:http://1.bp.blogspot.com/_Ak-ywrHZki4/"
+"S_zRrJHi2nI/AAAAAAAAA7Q/F-JHBC08yWw/s320/Screenshot1.png[image]]"
 msgstr ""
+"link:http://1.bp.blogspot.com/_Ak-ywrHZki4/S_zRrJHi2nI/AAAAAAAAA7Q/F-"
+"JHBC08yWw/s1600/Screenshot1.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:258
-msgid "Note that this demo will be available in Infinispan 4.1.0.BETA2 onwards.  If you are impatient, you can always build it yourself from Infinispan's source code repository."
+#, fuzzy
+msgid ""
+"Note that this demo will be available in Infinispan 4.1.0.BETA2 onwards.  If "
+"you are impatient, you can always build it yourself from Infinispan's source "
+"code repository."
 msgstr ""
+"このデモはInfinispan 4.1.0."
+"BETA2以降で利用可能になることに注意してください。もしせっかちなら、いつでもInfinispanのソースコードリポジトリから自分でビルドすることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2010-05-25-infinispan-ec2-demo.adoc:261
+#, fuzzy
 msgid "Enjoy, Noel"
-msgstr ""
+msgstr "楽しんで ノエル"

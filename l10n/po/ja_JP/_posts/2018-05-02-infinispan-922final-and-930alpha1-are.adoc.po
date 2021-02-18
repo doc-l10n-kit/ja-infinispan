@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,41 +18,75 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-05-02-infinispan-922final-and-930alpha1-are.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-02-infinispan-922final-and-930alpha1-are.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.2.2.Final and 9.3.0.Alpha1 are out\n"
 "permalink: /blog/:year/:month/:day/infinispan-922final-and-930alpha1-are\n"
 "date: '2018-05-02T01:10:00.000-07:00'\n"
 "author: ttarrant\n"
-"tags: [ \" release\", \"final\", \"alpha\", \"hibernate\", \"second level cache provider\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4158170812494458706\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/05/infinispan-922final-and-930alpha1-are.html\n"
+"tags: [ \" release\", \"final\", \"alpha\", \"hibernate\", \"second level "
+"cache provider\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4158170812494458706\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/05/infinispan-922final-"
+"and-930alpha1-are.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 9.2.2.Finalと9.3.0.Alpha1がリリースされました。\n"
+"permalink: /blog/:year/:month/:day/infinispan-922final-and-930alpha1-are\n"
+"date: '2018-05-02T01:10:00.000-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \" release\", \"final\", \"alpha\", \"hibernate\", \"second level "
+"cache provider\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4158170812494458706\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/05/infinispan-922final-"
+"and-930alpha1-are.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-02-infinispan-922final-and-930alpha1-are.adoc:12
+#, fuzzy
 msgid "We have two releases to announce:"
-msgstr ""
+msgstr "2つのリリースを発表します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-02-infinispan-922final-and-930alpha1-are.adoc:18
-msgid "first of all is 9.2.2.Final which introduces a second-level cache provider for the upcoming http://hibernate.org/orm/releases/5.3/[Hibernate ORM 5.3] as well as numerous https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12337245[bugfixes]."
+#, fuzzy
+msgid ""
+"first of all is 9.2.2.Final which introduces a second-level cache provider "
+"for the upcoming http://hibernate.org/orm/releases/5.3/[Hibernate ORM 5.3] "
+"as well as numerous https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12337245[bugfixes]."
 msgstr ""
+"まず第一に、9.2.2.2.Finalは、次期 link:http://hibernate.org/orm/releases/5.3/"
+"[Hibernate ORM 5.3の] ための第二レベルのキャッシュプロバイダと多数の link:https://issues.jboss.org/"
+"secure/ReleaseNote.jspa?projectId=12310799&version=12337245[バグフィックスを] "
+"導入しています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-02-infinispan-922final-and-930alpha1-are.adoc:25
-msgid "Next is 9.3.0.Alpha1 which is the first iteration of our next release.  The main item here, aside from https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12337078[bugfixes] and preparation work for upcoming features, is the upgrade of our server component to WildFly 12."
+#, fuzzy
+msgid ""
+"Next is 9.3.0.Alpha1 which is the first iteration of our next release.  The "
+"main item here, aside from https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12337078[bugfixes] and preparation work for "
+"upcoming features, is the upgrade of our server component to WildFly 12."
 msgstr ""
+"次は 9.3.0.Alpha1 で、これは次のリリースの最初のイテレーションです。ここでの主な項目は、 link:https://issues."
+"jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12337078[バグ修正] "
+"と今後の機能の準備作業とは別に、サーバーコンポーネントをWildFly 12にアップグレードすることです。"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-02-infinispan-922final-and-930alpha1-are.adoc:27
+#, fuzzy
 msgid "Go and get them on our https://infinispan.org/download/[download page]"
-msgstr ""
+msgstr "私たちの link:https://infinispan.org/download/[ダウンロードページ] でそれらを取得してください。"

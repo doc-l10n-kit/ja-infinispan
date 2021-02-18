@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 10.0.0.Beta4\n"
@@ -32,232 +32,424 @@ msgid ""
 "date: '2019-07-15T03:02:00.000-07:00'\n"
 "author: ttarrant\n"
 "tags: [ \"beta\", \"release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3850425274703620788\n"
-"blogger_orig_url: https://blog.infinispan.org/2019/07/infinispan-1000beta4.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3850425274703620788\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/07/infinispan-1000beta4."
+"html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 10.0.0.0.Beta4\n"
+"permalink: /blog/:year/:month/:day/infinispan-1000beta4\n"
+"date: '2019-07-15T03:02:00.000-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \"beta\", \"release\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3850425274703620788\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/07/infinispan-1000beta4."
+"html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:13
+#, fuzzy
 msgid "Dear Infinispan users,"
-msgstr ""
+msgstr "Infinispanユーザーの皆様。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:18
-msgid "it has been a while since our last release and quite a few things have been cooking in the Infinispan furnace. Bear in mind that the list below should just serve as a summary and that dedicated blogs, documentation and examples will appear in the near future."
+#, fuzzy
+msgid ""
+"it has been a while since our last release and quite a few things have been "
+"cooking in the Infinispan furnace. Bear in mind that the list below should "
+"just serve as a summary and that dedicated blogs, documentation and examples "
+"will appear in the near future."
 msgstr ""
+"前回のリリースからしばらくの間、Infinispan "
+"の炉の中ではかなり多くのことが行われていました。以下のリストは単なる要約であり、近い将来、専用のブログやドキュメント、例が登場することを心に留めておいてください。"
 
 #. type: Title ==
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:20
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Server"
-msgstr ""
+msgstr "サーバー"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:31
-msgid "Since 5.3, our server has been built on top of WildFly (JBoss AS7 at the time). WildFly gave us a very solid base, including integration with a lot of useful components (security, datasources, management etc) but it also forced us to maintain a large amount of integration code. We have therefore decided to start from a much leaner base to build the new server which, internally we've been calling ServerNG, but which we're now releasing as \"Infinispan Server\". The old WildFly-based server is still available, but it should be considered \"legacy\" and will no longer receive any feature enhancements."
+#, fuzzy
+msgid ""
+"Since 5.3, our server has been built on top of WildFly (JBoss AS7 at the "
+"time). WildFly gave us a very solid base, including integration with a lot "
+"of useful components (security, datasources, management etc) but it also "
+"forced us to maintain a large amount of integration code. We have therefore "
+"decided to start from a much leaner base to build the new server which, "
+"internally we've been calling ServerNG, but which we're now releasing as "
+"\"Infinispan Server\". The old WildFly-based server is still available, but "
+"it should be considered \"legacy\" and will no longer receive any feature "
+"enhancements."
 msgstr ""
+"5.3 以降、私たちのサーバーは WildFly (当時は JBoss AS7) の上に構築されています。WildFly は多くの有用なコンポーネント "
+"(セキュリティ、データソース、管理など) "
+"との統合を含む非常に強固な基盤を提供してくれましたが、大量の統合コードを維持することを余儀なくされました。そこで、私たちは、社内では ServerNG "
+"と呼んでいましたが、現在は \"Infinispan Server\" "
+"として公開している新しいサーバを構築するために、よりスリムなベースから始めることにしました。古い WildFly "
+"ベースのサーバーはまだ利用可能ですが、「レガシー」とみなされ、機能強化は行われません。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:34
-msgid "The new server deserves its own dedicated post, but its main features are:"
-msgstr ""
+#, fuzzy
+msgid ""
+"The new server deserves its own dedicated post, but its main features are:"
+msgstr "新サーバーは専用ポストに値するが、その主な特徴は"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:36
+#, fuzzy
 msgid "smaller size (36MB vs 130MB)"
-msgstr ""
+msgstr "小容量"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:37
+#, fuzzy
 msgid "smaller memory footprint (20MB heap usage at boot vs 40MB)"
-msgstr ""
+msgstr "メモリフットプリントが小さい (起動時のヒープ使用量が 20MB 対 40MB)"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:41
-msgid "single-port: the Hot Rod, REST and management endpoint are now served through a single-port (11222) with automatic protocol detection between HTTP/1.1, HTTP/2 and Hot Rod. The memcached endpoint is handled separately since we don't implement the binary protocol yet."
+#, fuzzy
+msgid ""
+"single-port: the Hot Rod, REST and management endpoint are now served "
+"through a single-port (11222) with automatic protocol detection between HTTP/"
+"1.1, HTTP/2 and Hot Rod. The memcached endpoint is handled separately since "
+"we don't implement the binary protocol yet."
 msgstr ""
+"シングルポート: Hot Rod、REST、管理エンドポイントは、HTTP/1.1、HTTP/2、Hot "
+"Rod間のプロトコルを自動検出するシングルポート(11222)で提供されるようになりました。memcached "
+"エンドポイントは、まだバイナリプロトコルを実装していないので、個別に処理されます。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:46
-msgid "security implemented using https://docs.jboss.org/author/display/WFLY/WildFly+Elytron+Security[WildFly Elytron] currently supporting PLAIN, DIGEST-MD5, SCRAM, EXTERNAL mechs for Hot Rod, BASIC, DIGEST, CLIENT_CERT for REST/HTTP (OAuth/JWT/GS2/GSSAPI/SPNEGO will be coming in the next releases)"
+#, fuzzy
+msgid ""
+"security implemented using https://docs.jboss.org/author/display/WFLY/"
+"WildFly+Elytron+Security[WildFly Elytron] currently supporting PLAIN, DIGEST-"
+"MD5, SCRAM, EXTERNAL mechs for Hot Rod, BASIC, DIGEST, CLIENT_CERT for REST/"
+"HTTP (OAuth/JWT/GS2/GSSAPI/SPNEGO will be coming in the next releases)"
 msgstr ""
+"link:https://docs.jboss.org/author/display/WFLY/"
+"WildFly+Elytron+Security[WildFlytron を] 使用して実装されたセキュリティは、現在 PLAIN, DIGEST-"
+"MD5, SCRAM, EXTERNAL mechs for Hot Rod, BASIC, DIGEST, CLIENT_CERT for REST/"
+"HTTP (OAuth/JWT/GS2/GSSAPI/SPNEGO は次のリリースで登場予定) をサポートしています。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:47
+#, fuzzy
 msgid "the server configuration extends the embedded configuration scheme"
-msgstr ""
+msgstr "サーバの設定は、組み込みの設定スキームを拡張します。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:49
-msgid "caches/counters are created and managed dynamically through Hot Rod / REST."
-msgstr ""
+#, fuzzy
+msgid ""
+"caches/counters are created and managed dynamically through Hot Rod / REST."
+msgstr "キャッシュ/カウンタはHot Rod / RESTを介して動的に作成され、管理されます。"
 
 #. type: Title ==
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:50
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Marshalling"
-msgstr ""
+msgstr "マーシャリング"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:61
-msgid "Infinispan's marshalling has received a significant overhaul and it is now split into three distinct marshallers: Internal, Persistence and User (https://issues.jboss.org/browse/ISPN-7409[ISPN-7409] https://issues.jboss.org/browse/ISPN-9621[ISPN-9621])  The Persistence marshaller is now based on ProtoBuf allowing for long-term compatibility of data stored in memory and in cache stores.  The Store Migrator has been updated to allow migration from Infinispan 8.x/9.x cache stores to the new format (https://issues.jboss.org/browse/ISPN-10276[ISPN-10276])"
+#, fuzzy
+msgid ""
+"Infinispan's marshalling has received a significant overhaul and it is now "
+"split into three distinct marshallers: Internal, Persistence and User (https:"
+"//issues.jboss.org/browse/ISPN-7409[ISPN-7409] https://issues.jboss.org/"
+"browse/ISPN-9621[ISPN-9621])  The Persistence marshaller is now based on "
+"ProtoBuf allowing for long-term compatibility of data stored in memory and "
+"in cache stores.  The Store Migrator has been updated to allow migration "
+"from Infinispan 8.x/9.x cache stores to the new format (https://issues.jboss."
+"org/browse/ISPN-10276[ISPN-10276])"
 msgstr ""
+"Infinispanのマーシャリングは大幅に改良され、現在では3つの異なるマーシャラーに分割されています。内部マーシャラー、パーシステンスマーシャラー、ユーザマーシャラー "
+"link:https://issues.jboss.org/browse/ISPN-7409[(ISPN-7409] link:https://"
+"issues.jboss.org/browse/ISPN-9621[ISPN-9621] ) パーシステンスマーシャラーは ProtoBuf "
+"をベースにしており、メモリとキャッシュストアに保存されたデータの長期的な互換性を可能にしています。ストアマイグレータが更新され、Infinispan 8."
+"x/9.xキャッシュストアから新しいフォーマットへの移行が可能になりました link:https://issues.jboss.org/browse/"
+"ISPN-10276[(ISPN-10276] )"
 
 #. type: Title ==
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:63
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Core changes"
-msgstr ""
+msgstr "コアの変更"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:71
-msgid "Infinispan's internal dependency-injection has been completely rewritten so that factories, components and dependencies are discovered and resolved at compile time instead of using runtime reflection. This, together with the marshalling changes and recent JGroups changes, paves the way for usage and native compilation with https://quarkus.io/[Quarkus]."
+#, fuzzy
+msgid ""
+"Infinispan's internal dependency-injection has been completely rewritten so "
+"that factories, components and dependencies are discovered and resolved at "
+"compile time instead of using runtime reflection. This, together with the "
+"marshalling changes and recent JGroups changes, paves the way for usage and "
+"native compilation with https://quarkus.io/[Quarkus]."
 msgstr ""
+"Infinispanの内部依存性注入機能が完全に書き直されたため、ランタイムリフレクションを使用するのではなく、コンパイル時にファクトリー、コンポーネント、依存性が検出され、解決されます。これは、マーシャリングの変更と最近のJGroupsの変更と合わせて、 "
+"link:https://quarkus.io/[Quarkus] での使用とネイティブコンパイルへの道を開きます。"
 
 #. type: Title ==
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:72
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "REST"
-msgstr ""
+msgstr "ＲＥＳＴ"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:76
-msgid "The REST API is continuing its overhaul with the following additions to the v2 API"
-msgstr ""
+#, fuzzy
+msgid ""
+"The REST API is continuing its overhaul with the following additions to the "
+"v2 API"
+msgstr "REST API は、v2 API に次のように追加され、オーバーホールを続けています。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:79
-msgid "Cluster Resource (https://issues.jboss.org/browse/ISPN-10268[ISPN-10268])"
+#, fuzzy
+msgid ""
+"Cluster Resource (https://issues.jboss.org/browse/ISPN-10268[ISPN-10268])"
 msgstr ""
+"クラスタリソース link:https://issues.jboss.org/browse/ISPN-10268[(ISPN-10268)]"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:81
-msgid "Cache Resource (https://issues.jboss.org/browse/ISPN-9772[ISPN-9772] https://issues.jboss.org/browse/ISPN-10392[ISPN-10392])"
+#, fuzzy
+msgid ""
+"Cache Resource (https://issues.jboss.org/browse/ISPN-9772[ISPN-9772] https://"
+"issues.jboss.org/browse/ISPN-10392[ISPN-10392])"
 msgstr ""
+"キャッシュリソース link:https://issues.jboss.org/browse/ISPN-9772[(ISPN-9772] link:"
+"https://issues.jboss.org/browse/ISPN-10392[ISPN-10392] )"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:84
-msgid "Counter Resource (https://issues.jboss.org/browse/ISPN-10151[ISPN-10151] https://issues.jboss.org/browse/ISPN-10152[ISPN-10152])"
+#, fuzzy
+msgid ""
+"Counter Resource (https://issues.jboss.org/browse/ISPN-10151[ISPN-10151] "
+"https://issues.jboss.org/browse/ISPN-10152[ISPN-10152])"
 msgstr ""
+"カウンターリソース link:https://issues.jboss.org/browse/ISPN-10151[（ISPN-10151] link:"
+"https://issues.jboss.org/browse/ISPN-10152[ISPN-10152]"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:87
-msgid "The REST endpoint now fully supports authorization (https://issues.jboss.org/browse/ISPN-8736[ISPN-8736])"
+#, fuzzy
+msgid ""
+"The REST endpoint now fully supports authorization (https://issues.jboss.org/"
+"browse/ISPN-8736[ISPN-8736])"
 msgstr ""
+"RESTエンドポイントが認証を完全にサポートするようになりました link:https://issues.jboss.org/browse/ISPN-"
+"8736[(ISPN-8736] )"
 
 #. type: Title ==
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:88
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Reactive API"
-msgstr ""
+msgstr "リアクティブ API"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:96
-msgid "The first implementation of our new Reactive API have been merged. This is still work in progress and the API will receive major changes until the Final release.  The new API includes a new API module and a new KeyValueStore Hot Rod client where search, continuous search and Key Value store methods are included."
+#, fuzzy
+msgid ""
+"The first implementation of our new Reactive API have been merged. This is "
+"still work in progress and the API will receive major changes until the "
+"Final release.  The new API includes a new API module and a new "
+"KeyValueStore Hot Rod client where search, continuous search and Key Value "
+"store methods are included."
 msgstr ""
+"新しいReactive "
+"APIの最初の実装がマージされました。これはまだ進行中の作業であり、APIは最終リリースまで大きな変更を受けることになります。新しいAPIには、新しいAPIモジュールと、検索、連続検索、キーバリューストアメソッドが含まれている新しいKeyValueStore "
+"Hot Rodクライアントが含まれています。"
 
 #. type: Title ==
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:97
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Cross-Site Replication"
-msgstr ""
+msgstr "クロスサイトレプリケーション"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:100
+#, fuzzy
 msgid "Async mode cross-site replication received 2 major improvements:"
-msgstr ""
+msgstr "非同期モードのクロスサイトレプリケーションでは、2つの大きな改善が行われました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:104
-msgid "async mode is now able to detect disconnections between sites and bring the site offline based on <take-offline> configuration (https://issues.jboss.org/browse/ISPN-10180[ISPN-10180])"
+#, fuzzy
+msgid ""
+"async mode is now able to detect disconnections between sites and bring the "
+"site offline based on <take-offline> configuration (https://issues.jboss.org/"
+"browse/ISPN-10180[ISPN-10180])"
 msgstr ""
+"asyncモードでサイト間の切断を検出し、<take-offline>設定に基づいてサイトをオフラインにすることができるようになりました link:"
+"https://issues.jboss.org/browse/ISPN-10180[。]"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:106
-msgid "track and exposes the average replication times for asynchronous requests (https://issues.jboss.org/browse/ISPN-9457[ISPN-9457])"
+#, fuzzy
+msgid ""
+"track and exposes the average replication times for asynchronous requests "
+"(https://issues.jboss.org/browse/ISPN-9457[ISPN-9457])"
 msgstr ""
+"を追跡し、非同期リクエストの平均レプリケーション時間を公開します link:https://issues.jboss.org/browse/ISPN-"
+"9457[(ISPN-9457] )。"
 
 #. type: Title ==
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:109
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Non-blocking"
-msgstr ""
+msgstr "ノンブロッキング"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:115
-msgid "Non-blocking Hot Rod authentication (https://issues.jboss.org/browse/ISPN-9841[ISPN-9841])"
+#, fuzzy
+msgid ""
+"Non-blocking Hot Rod authentication (https://issues.jboss.org/browse/ISPN-"
+"9841[ISPN-9841])"
 msgstr ""
+"ノンブロッキングホットロッド認証 link:https://issues.jboss.org/browse/ISPN-9841[（ISPN-9841]"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:117
-msgid "Non-blocking REST endpoint (https://issues.jboss.org/browse/ISPN-10210[ISPN-10210])"
+#, fuzzy
+msgid ""
+"Non-blocking REST endpoint (https://issues.jboss.org/browse/ISPN-10210[ISPN-"
+"10210])"
 msgstr ""
+"ノンブロッキングRESTエンドポイント link:https://issues.jboss.org/browse/ISPN-10210[(ISPN-"
+"10210)]"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:119
-msgid "Update internal remote listener code to support non blocking (https://issues.jboss.org/browse/ISPN-9716[ISPN-9716])"
+#, fuzzy
+msgid ""
+"Update internal remote listener code to support non blocking (https://issues."
+"jboss.org/browse/ISPN-9716[ISPN-9716])"
 msgstr ""
+"非ブロッキングをサポートするための内部リモートリスナーコードの更新 link:https://issues.jboss.org/browse/ISPN-"
+"9716[(ISPN-9716] )"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:121
-msgid "Update internal embedded listeners to be non blocking (https://issues.jboss.org/browse/ISPN-9715[ISPN-9715])"
+#, fuzzy
+msgid ""
+"Update internal embedded listeners to be non blocking (https://issues.jboss."
+"org/browse/ISPN-9715[ISPN-9715])"
 msgstr ""
+"内部組み込みリスナーが非ブロッキングであるように更新 link:https://issues.jboss.org/browse/ISPN-"
+"9715[(ISPN-9715] )"
 
 #. type: Title ==
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:124
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Removal/deprecations"
-msgstr ""
+msgstr "除去/叙述"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:127
+#, fuzzy
 msgid "A new major release is also an opportunity to do some house cleaning."
-msgstr ""
+msgstr "新しいメジャーリリースは、ハウスクリーニングをするチャンスでもあります。"
 
 #. type: Title ===
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:128
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Deprecations"
-msgstr ""
+msgstr "非推奨"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:134
-msgid "Deprecate GridFileSystem and org.infinispan.io stream implementations (https://issues.jboss.org/browse/ISPN-10298[ISPN-10298])"
+#, fuzzy
+msgid ""
+"Deprecate GridFileSystem and org.infinispan.io stream implementations (https:"
+"//issues.jboss.org/browse/ISPN-10298[ISPN-10298])"
 msgstr ""
+"GridFileSystemおよびorg.infinispan.ioストリーム実装の非推奨化 link:https://issues.jboss.org/"
+"browse/ISPN-10298[(ISPN-10298)]"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:136
-msgid "Deprecated Total Order transaction mode (https://issues.jboss.org/browse/ISPN-10259[ISPN-10259])"
+#, fuzzy
+msgid ""
+"Deprecated Total Order transaction mode (https://issues.jboss.org/browse/"
+"ISPN-10259[ISPN-10259])"
 msgstr ""
+"非推奨のトータルオーダートランザクションモード link:https://issues.jboss.org/browse/ISPN-"
+"10259[(ISPN-10259] )"
 
 #. type: Title ===
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Removals"
-msgstr ""
+msgstr "リムーバル"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:141
-msgid "AtomicMap implementations removed (https://issues.jboss.org/browse/ISPN-10230[ISPN-10230])"
+#, fuzzy
+msgid ""
+"AtomicMap implementations removed (https://issues.jboss.org/browse/ISPN-"
+"10230[ISPN-10230])"
 msgstr ""
+"AtomicMap実装の削除 link:https://issues.jboss.org/browse/ISPN-10230[(ISPN-10230] "
+")"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:143
-msgid "Remove deprecated org.infinispan.io classes (https://issues.jboss.org/browse/ISPN-10297[ISPN-10297])"
+#, fuzzy
+msgid ""
+"Remove deprecated org.infinispan.io classes (https://issues.jboss.org/browse/"
+"ISPN-10297[ISPN-10297])"
 msgstr ""
+"非推奨の org.infinispan.io クラスの削除 link:https://issues.jboss.org/browse/ISPN-"
+"10297[(ISPN-10297] )"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:145
-msgid "Remove org.infinispan.tools.ConfigurationConverter (https://issues.jboss.org/browse/ISPN-10231[ISPN-10231])"
+#, fuzzy
+msgid ""
+"Remove org.infinispan.tools.ConfigurationConverter (https://issues.jboss.org/"
+"browse/ISPN-10231[ISPN-10231])"
 msgstr ""
+"org.infinispan.tools.ConfigurationConverter link:https://issues.jboss.org/"
+"browse/ISPN-10231[(ISPN-10231] ) を削除します。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:147
-msgid "Remove compatibility mode (https://issues.jboss.org/browse/ISPN-10370[ISPN-10370])"
+#, fuzzy
+msgid ""
+"Remove compatibility mode (https://issues.jboss.org/browse/ISPN-10370[ISPN-"
+"10370])"
 msgstr ""
+"互換性モードの解除 link:https://issues.jboss.org/browse/ISPN-10370[(ISPN-10370] )"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-15-infinispan-1000beta4.adoc:159
-msgid "If you are curious you can read the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12340951[detailed release notes] including all fixed issues.  As usual you can ask questions on the https://developer.jboss.org/en/infinispan/content[forum], https://stackoverflow.com/questions/tagged/?tagnames=infinispan&sort=newest[StackOverflow] and interactively on our http://infinispan.zulipchat.com/[Zulip Chat].  Please report any bugs you find on our https://issues.jboss.org/projects/ISPN/summary[Issue Tracker.] Going back to our three-week schedule, our next release will be Beta5, three weeks from now."
+#, fuzzy
+msgid ""
+"If you are curious you can read the https://issues.jboss.org/secure/"
+"ReleaseNote.jspa?projectId=12310799&version=12340951[detailed release notes] "
+"including all fixed issues.  As usual you can ask questions on the https://"
+"developer.jboss.org/en/infinispan/content[forum], https://stackoverflow.com/"
+"questions/tagged/?tagnames=infinispan&sort=newest[StackOverflow] and "
+"interactively on our http://infinispan.zulipchat.com/[Zulip Chat].  Please "
+"report any bugs you find on our https://issues.jboss.org/projects/ISPN/"
+"summary[Issue Tracker.] Going back to our three-week schedule, our next "
+"release will be Beta5, three weeks from now."
 msgstr ""
+"興味があれば、すべての修正された問題を含む link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12340951[詳細なリリースノート] を読むことができます。いつものように link:"
+"https://developer.jboss.org/en/infinispan/content[フォーラム] や link:https://"
+"stackoverflow.com/questions/tagged/?tagnames=infinispan&sort="
+"newest[StackOverflow] 、 link:http://infinispan.zulipchat.com/[Zulipチャット] "
+"で質問することができます。バグを発見した場合は、 link:https://issues.jboss.org/projects/ISPN/"
+"summary[Issue Tracker] で報告してください。3週間のスケジュールに戻りますが、次のリリースは3週間後のBeta5です。"

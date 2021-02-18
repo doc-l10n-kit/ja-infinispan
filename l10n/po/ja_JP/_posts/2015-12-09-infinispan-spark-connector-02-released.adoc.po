@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-12-09-infinispan-spark-connector-02-released.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-12-09-infinispan-spark-connector-02-released.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan Spark connector 0.2 released!\n"
@@ -34,32 +34,79 @@ msgid ""
 "tags: [ \"spark\",\n"
 "\"server\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4923499433809270233\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/12/infinispan-spark-connector-02-released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4923499433809270233\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/12/infinispan-spark-"
+"connector-02-released.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan Sparkコネクタ0.2をリリースしました。\n"
+"permalink: /blog/:year/:month/:day/infinispan-spark-connector-02-released\n"
+"date: '2015-12-09T01:28:00.002-08:00'\n"
+"author: gustavonalle\n"
+"tags: [ \"spark\",\n"
+"\"server\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4923499433809270233\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/12/infinispan-spark-"
+"connector-02-released.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-12-09-infinispan-spark-connector-02-released.adoc:16
-msgid "The connector allows the Infinispan Server to become a data source for Apache Spark, for both batch jobs and stream processing, including read and write."
+#, fuzzy
+msgid ""
+"The connector allows the Infinispan Server to become a data source for "
+"Apache Spark, for both batch jobs and stream processing, including read and "
+"write."
 msgstr ""
+"このコネクタを使用すると、InfinispanサーバがApache "
+"Sparkのデータソースとなり、バッチジョブやストリーム処理（読み書きを含む）の両方に対応できます。"
 
 #. type: Plain text
 #: upstream/_posts/2015-12-09-infinispan-spark-connector-02-released.adoc:20
-msgid "In this release, the highlight is the addition of two new operators to the RDD that support filtering using native capabilities of Infinispan.  The first one is filterByQuery:"
+#, fuzzy
+msgid ""
+"In this release, the highlight is the addition of two new operators to the "
+"RDD that support filtering using native capabilities of Infinispan.  The "
+"first one is filterByQuery:"
 msgstr ""
+"今回のリリースでは、Infinispanのネイティブ機能を使ったフィルタリングをサポートする2つの演算子がRDDに追加されたのが目玉です。1つ目はfilterByQueryです。"
 
 #. type: Plain text
 #: upstream/_posts/2015-12-09-infinispan-spark-connector-02-released.adoc:26
-msgid "The second operator was introduced to replace the previous configuration based filter factory name, and was extended to support arbitrary parameters:"
-msgstr ""
+#, fuzzy
+msgid ""
+"The second operator was introduced to replace the previous configuration "
+"based filter factory name, and was extended to support arbitrary parameters:"
+msgstr "2 番目の演算子は、以前の設定に基づくフィルタの工場名を置き換えるために導入され、任意のパラメータをサポートするように拡張されました。"
 
 #. type: Plain text
 #: upstream/_posts/2015-12-09-infinispan-spark-connector-02-released.adoc:31
-msgid "The connector has also been updated to be compatible with Spark 1.5.2 and Infinispan 8.1.0.Final."
-msgstr ""
+#, fuzzy
+msgid ""
+"The connector has also been updated to be compatible with Spark 1.5.2 and "
+"Infinispan 8.1.0.Final."
+msgstr "コネクタもSpark 1.5.2とInfinispan 8.1.0.Finalに対応するようにアップデートされています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-12-09-infinispan-spark-connector-02-released.adoc:42
-msgid "For more details including full list of changes and download info please visit the http://infinispan.org/integrations/[Connectors Download section].  The project https://github.com/infinispan/infinispan-spark[Github] contains up-to-date info on how to get started with the connector, also make sure to try the included https://github.com/infinispan/infinispan-spark/tree/master/examples/twitter[docker based demo]. To report any issue or to request new features, use the new dedicated https://issues.jboss.org/projects/ISPRK[issue tracker]. We'd love to get your feedback!"
+#, fuzzy
+msgid ""
+"For more details including full list of changes and download info please "
+"visit the http://infinispan.org/integrations/[Connectors Download section].  "
+"The project https://github.com/infinispan/infinispan-spark[Github] contains "
+"up-to-date info on how to get started with the connector, also make sure to "
+"try the included https://github.com/infinispan/infinispan-spark/tree/master/"
+"examples/twitter[docker based demo]. To report any issue or to request new "
+"features, use the new dedicated https://issues.jboss.org/projects/"
+"ISPRK[issue tracker]. We'd love to get your feedback!"
 msgstr ""
+"変更点やダウンロード情報などの詳細については、コネクタの link:http://infinispan.org/integrations/"
+"[ダウンロードセクションを] 参照してください。 プロジェクトの link:https://github.com/infinispan/"
+"infinispan-spark[Githubに] は、コネクタを使い始めるための最新情報が掲載されています link:https://github."
+"com/infinispan/infinispan-spark/tree/master/examples/twitter[。] "
+"問題の報告や新機能のリクエストは、新しい専用の link:https://issues.jboss.org/projects/"
+"ISPRK[イシュートラッカーを] 使用してください。あなたのフィードバックをお待ちしています。"

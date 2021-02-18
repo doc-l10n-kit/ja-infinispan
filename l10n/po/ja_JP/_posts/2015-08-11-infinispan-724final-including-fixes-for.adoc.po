@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,16 +18,17 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-08-11-infinispan-724final-including-fixes-for.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-11-infinispan-724final-including-fixes-for.adoc:15
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
-"title: Infinispan 7.2.4.Final out including fixes for async store, Hot Rod...etc\n"
+"title: Infinispan 7.2.4.Final out including fixes for async store, Hot Rod..."
+"etc\n"
 "permalink: /blog/:year/:month/:day/infinispan-724final-including-fixes-for\n"
 "date: '2015-08-11T00:18:00.004-07:00'\n"
 "author: galder\n"
@@ -37,22 +38,52 @@ msgid ""
 "\"hql\",\n"
 "\"cache store\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8931736639142258535\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/08/infinispan-724final-including-fixes-for.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8931736639142258535\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/08/infinispan-724final-"
+"including-fixes-for.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 7.2.4.Final out は非同期ストア、Hot Rod...などの修正を含む。\n"
+"permalink: /blog/:year/:month/:day/infinispan-724final-including-fixes-for\n"
+"date: '2015-08-11T00:18:00.004-07:00'\n"
+"author: galder\n"
+"tags: [\n"
+"\"release\",\n"
+"\"hotrod\",\n"
+"\"hql\",\n"
+"\"cache store\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8931736639142258535\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/08/infinispan-724final-"
+"including-fixes-for.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-11-infinispan-724final-including-fixes-for.adoc:22
-msgid "Infinispan 7.2.4.Final is just out containing some important fixes in areas such as Hot Rod client and server, async cache store, key set iteration, as well as a Hibernate HQL parser upgrade. You can find more details about the issues fixed in our detailed https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12327543[release notes]."
+#, fuzzy
+msgid ""
+"Infinispan 7.2.4.Final is just out containing some important fixes in areas "
+"such as Hot Rod client and server, async cache store, key set iteration, as "
+"well as a Hibernate HQL parser upgrade. You can find more details about the "
+"issues fixed in our detailed https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12327543[release notes]."
 msgstr ""
+"Infinispan 7.2.4.Finalは、Hot Rodクライアントとサーバー、非同期キャッシュストア、キーセットの反復、Hibernate "
+"HQLパーサーのアップグレードなどの重要な修正が含まれています。修正された問題の詳細については、詳細な link:https://issues."
+"jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
+"12327543[リリースノートを] 参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-11-infinispan-724final-including-fixes-for.adoc:24
+#, fuzzy
 msgid "Happy hacking :)"
-msgstr ""
+msgstr "ハッピーハッキング :)"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-11-infinispan-724final-including-fixes-for.adoc:25
+#, fuzzy
 msgid "Galder"
-msgstr ""
+msgstr "ガルダー"

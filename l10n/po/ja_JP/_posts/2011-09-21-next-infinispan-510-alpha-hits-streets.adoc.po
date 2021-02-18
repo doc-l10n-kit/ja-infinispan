@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-next-infinispan-510-alpha-hits-streets.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-next-infinispan-510-alpha-hits-streets.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Next Infinispan 5.1.0 alpha hits the streets!\n"
@@ -34,27 +34,76 @@ msgid ""
 "tags: [ \"rehashing\",\n"
 "\"state transfer\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6620890573540231470\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/09/next-infinispan-510-alpha-hits-streets.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6620890573540231470\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/09/next-infinispan-510-"
+"alpha-hits-streets.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Next Infinispan 5.1.0 αが登場\n"
+"permalink: /blog/:year/:month/:day/next-infinispan-510-alpha-hits-streets\n"
+"date: '2011-09-21T11:08:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"rehashing\",\n"
+"\"state transfer\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6620890573540231470\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/09/next-infinispan-510-"
+"alpha-hits-streets.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-next-infinispan-510-alpha-hits-streets.adoc:22
-msgid "Infinispan 5.1.0.ALPHA2 _\"Brahma\"_ is out now containing a consolidated push-based approach for both state transfer in replicated caches and rehashing in distributed ones. The new changes don't have great impact on the distributed cache users, but for those that relied on state transfer, it's definitely good news :). State transfer now works in such way that when a node joins, all nodes in the cluster push state to it, rather than the new node getting it from the cluster coordinator. As a result of this, the task of providing the state is paralellized, reducing the load on state providers."
+#, fuzzy
+msgid ""
+"Infinispan 5.1.0.ALPHA2 _\"Brahma\"_ is out now containing a consolidated "
+"push-based approach for both state transfer in replicated caches and "
+"rehashing in distributed ones. The new changes don't have great impact on "
+"the distributed cache users, but for those that relied on state transfer, "
+"it's definitely good news :). State transfer now works in such way that when "
+"a node joins, all nodes in the cluster push state to it, rather than the new "
+"node getting it from the cluster coordinator. As a result of this, the task "
+"of providing the state is paralellized, reducing the load on state providers."
+""
 msgstr ""
+"Infinispan 5.1.0.ALPHA2 _\"Brahma\"は_ "
+"、レプリケートキャッシュでのステート転送と分散キャッシュでのリハッシュの両方のための統合されたプッシュベースのアプローチを含むようになりました。この新しい変更は分散キャッシュのユーザーには大きな影響はありませんが、ステート転送に依存していたユーザーにとっては朗報です。)ステート転送は、あるノードが参加すると、クラスタ内のすべてのノードが、新しいノードがクラスタコーディネータからステートを取得するのではなく、そのノードにステートをプッシュするように動作するようになりました。その結果、ステートを提供するタスクがパラレル化され、ステートプロバイダの負荷が軽減されます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-next-infinispan-510-alpha-hits-streets.adoc:29
-msgid "On top of that, this Infinispan release is the first one to integrate JGroups 3.0 which brings plenty of API changes that simplifies a lot of the Infinispan/JGroups interaction. If you want to find out more about the new JGroups version, make sure you check http://belaban.blogspot.com/[Bela's blog] and the brand new http://www.jgroups.org/manual-3.x/html/index.html[JGroups manual]."
+#, fuzzy
+msgid ""
+"On top of that, this Infinispan release is the first one to integrate "
+"JGroups 3.0 which brings plenty of API changes that simplifies a lot of the "
+"Infinispan/JGroups interaction. If you want to find out more about the new "
+"JGroups version, make sure you check http://belaban.blogspot.com/[Bela's "
+"blog] and the brand new http://www.jgroups.org/manual-3.x/html/index."
+"html[JGroups manual]."
 msgstr ""
+"それに加えて、今回のInfinispanのリリースはJGroups 3."
+"0を統合した最初のリリースで、多くのAPI変更をもたらし、InfinispanとJGroupsの相互作用の多くを簡素化しました。新しいJGroupsバージョンについてもっと知りたい方は、B "
+"link:http://belaban.blogspot.com/[elaのブログ] と新しい link:http://www.jgroups.org/"
+"manual-3.x/html/index.html[JGroupsマニュアル] を必ずチェックしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-next-infinispan-510-alpha-hits-streets.adoc:36
-msgid "Please keep the http://community.jboss.org/en/infinispan?view=discussions[feedback] coming, and as always, you can http://www.jboss.org/infinispan/downloads[download] the release from here and you get further details on the issues addressed in the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12318064[changelog]."
+#, fuzzy
+msgid ""
+"Please keep the http://community.jboss.org/en/infinispan?view="
+"discussions[feedback] coming, and as always, you can http://www.jboss.org/"
+"infinispan/downloads[download] the release from here and you get further "
+"details on the issues addressed in the https://issues.jboss.org/secure/"
+"ReleaseNote.jspa?projectId=12310799&version=12318064[changelog]."
 msgstr ""
+"link:http://community.jboss.org/en/infinispan?view=discussions[フィードバックを] "
+"お願いします。いつものように、ここからリリースを link:http://www.jboss.org/infinispan/"
+"downloads[ダウンロードする] ことができ、 link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12318064[変更履歴] で対処された問題の詳細を得ることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-21-next-infinispan-510-alpha-hits-streets.adoc:38
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

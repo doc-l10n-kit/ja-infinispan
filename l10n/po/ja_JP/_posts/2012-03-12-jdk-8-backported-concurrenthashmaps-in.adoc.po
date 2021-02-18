@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,56 +18,137 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-03-12-jdk-8-backported-concurrenthashmaps-in.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-12-jdk-8-backported-concurrenthashmaps-in.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: JDK 8 backported ConcurrentHashMaps in Infinispan\n"
 "permalink: /blog/:year/:month/:day/jdk-8-backported-concurrenthashmaps-in\n"
 "date: '2012-03-12T12:12:00.000-07:00'\n"
 "author: msurtani\n"
-"tags: [ \"event\", \"performance\", \"community\", \"garbage collection\", \"concurrency\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5270338356031830164\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/03/jdk-8-backported-concurrenthashmaps-in.html\n"
+"tags: [ \"event\", \"performance\", \"community\", \"garbage collection\", "
+"\"concurrency\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5270338356031830164\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/03/jdk-8-backported-"
+"concurrenthashmaps-in.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: JDK 8 は Infinispan の ConcurrentHashMaps をバックポートしました。\n"
+"permalink: /blog/:year/:month/:day/jdk-8-backported-concurrenthashmaps-in\n"
+"date: '2012-03-12T12:12:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \"event\", \"performance\", \"community\", \"garbage collection\", "
+"\"concurrency\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5270338356031830164\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/03/jdk-8-backported-"
+"concurrenthashmaps-in.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-12-jdk-8-backported-concurrenthashmaps-in.adoc:20
-msgid "http://g.oswego.edu/[Doug Lea] and the folks on the http://altair.cs.oswego.edu/mailman/listinfo/concurrency-interest[concurrency-interest group] have been hard at work on an update of http://jcp.org/en/jsr/detail?id=166[JSR 166] (concurrency utilities) for Java 8 - called http://cs.oswego.edu/pipermail/concurrency-interest/2011-July/008084.html[JSR 166e].  These include some pretty impressive changes in a building-block we've all come to rely pretty heavily on, the http://docs.oracle.com/javase/1.5.0/docs/api/java/util/concurrent/ConcurrentHashMap.html[ConcurrentHashMap]."
+#, fuzzy
+msgid ""
+"http://g.oswego.edu/[Doug Lea] and the folks on the http://altair.cs.oswego."
+"edu/mailman/listinfo/concurrency-interest[concurrency-interest group] have "
+"been hard at work on an update of http://jcp.org/en/jsr/detail?id=166[JSR "
+"166] (concurrency utilities) for Java 8 - called http://cs.oswego.edu/"
+"pipermail/concurrency-interest/2011-July/008084.html[JSR 166e].  These "
+"include some pretty impressive changes in a building-block we've all come to "
+"rely pretty heavily on, the http://docs.oracle.com/javase/1.5.0/docs/api/"
+"java/util/concurrent/ConcurrentHashMap.html[ConcurrentHashMap]."
 msgstr ""
+"link:http://g.oswego.edu/[Doug Lea] と link:http://altair.cs.oswego.edu/"
+"mailman/listinfo/concurrency-interest[concurrency-interest グループ] の人々は、JSR "
+"166e と呼ばれる Java 8 用の link:http://jcp.org/en/jsr/detail?id=166[JSR] 166 "
+"(同時実行ユーティリティ) の更新に懸命に取り組んでいます。 この更新 link:http://cs.oswego.edu/pipermail/"
+"concurrency-interest/2011-July/008084.html[には、] 私たちが皆、 link:http://docs."
+"oracle.com/javase/1.5.0/docs/api/java/util/concurrent/ConcurrentHashMap."
+"html[ConcurrentHashMap] に大きく依存するようになったビルディングブロックに、いくつかの印象的な変更が含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-12-jdk-8-backported-concurrenthashmaps-in.adoc:25
-msgid "One if the big drawbacks in the ConcurrentHashMap, since it was introduced in Java 5, has always been memory footprint.  It is kinda bulky, especially when compared to a regular HashMap - 1.6 kb in memory versus about 100 _bytes_!  Yes, these are for _empty_ maps."
+#, fuzzy
+msgid ""
+"One if the big drawbacks in the ConcurrentHashMap, since it was introduced "
+"in Java 5, has always been memory footprint.  It is kinda bulky, especially "
+"when compared to a regular HashMap - 1.6 kb in memory versus about 100 "
+"_bytes_!  Yes, these are for _empty_ maps."
 msgstr ""
+"Java 5で導入されて以来、ConcurrentHashMapの大きな欠点の一つは、常にメモリフットプリントです。 "
+"特に通常のHashMapと比較すると、メモリが1.6kbなのに対し、約100バイトです _。_ そう、これは空のマップのためのものです _。_"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-12-jdk-8-backported-concurrenthashmaps-in.adoc:34
-msgid "In Java 8, one of the improvements in the ConcurrentHashMap has been memory footprint - now closer to a regular HashMap.  In addition to that, the new Java 8 CHM performs better under concurrent load when compared to its original form.  See http://concurrency.markmail.org/message/kbqxdfapp5n6u7j3?q=JDK8+CHM[this discussion] and http://gee.cs.oswego.edu/cgi-bin/viewcvs.cgi/jsr166/src/jsr166e/ConcurrentHashMapV8.java?revision=1.37&view=markup[comments] in the proposed ConcurrentHashMapV8 sources for more details."
+#, fuzzy
+msgid ""
+"In Java 8, one of the improvements in the ConcurrentHashMap has been memory "
+"footprint - now closer to a regular HashMap.  In addition to that, the new "
+"Java 8 CHM performs better under concurrent load when compared to its "
+"original form.  See http://concurrency.markmail.org/message/"
+"kbqxdfapp5n6u7j3?q=JDK8+CHM[this discussion] and http://gee.cs.oswego.edu/"
+"cgi-bin/viewcvs.cgi/jsr166/src/jsr166e/ConcurrentHashMapV8.java?revision=1."
+"37&view=markup[comments] in the proposed ConcurrentHashMapV8 sources for "
+"more details."
 msgstr ""
+"Java 8では、ConcurrentHashMapの改良点の一つとして、メモリ・フットプリントがあり、通常のHashMapに近くなりました。 "
+"さらに、新しいJava 8 CHMは、元の形式と比較して、同時負荷時のパフォーマンスが向上しています。 詳細については、提案された link:http:/"
+"/gee.cs.oswego.edu/cgi-bin/viewcvs.cgi/jsr166/src/jsr166e/"
+"ConcurrentHashMapV8.java?revision=1.37&view=markup[ConcurrentHashMapV] 8のソース "
+"link:http://concurrency.markmail.org/message/kbqxdfapp5n6u7j3?q="
+"JDK8+CHM[にある] このディスカッションと link:http://concurrency.markmail.org/message/"
+"kbqxdfapp5n6u7j3?q=JDK8+CHM[コメントを] 参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-12-jdk-8-backported-concurrenthashmaps-in.adoc:43
-msgid "So, http://www.jboss.org/infinispan/[Infinispan] makes pretty heavy use of ConcurrentHashMaps internally.  One change in the recently released http://infinispan.blogspot.com/2012/03/infinispan-512final-is-available-now.html[Infinispan 5.1.2.Final] is these internal CHMs are built using a factory, and we've included a version of the Java 8 CHM in Infinispan.  So by default, Infinispan uses the JDK's provided CHM.  But if you wish to force Infinispan to use the backported Java 8 CHM, all you need to do is include the following JVM parameter when you start Infinispan:"
+#, fuzzy
+msgid ""
+"So, http://www.jboss.org/infinispan/[Infinispan] makes pretty heavy use "
+"of ConcurrentHashMaps internally.  One change in the recently released http:/"
+"/infinispan.blogspot.com/2012/03/infinispan-512final-is-available-now."
+"html[Infinispan 5.1.2.Final] is these internal CHMs are built using a "
+"factory, and we've included a version of the Java 8 CHM in Infinispan.  So "
+"by default, Infinispan uses the JDK's provided CHM.  But if you wish to "
+"force Infinispan to use the backported Java 8 CHM, all you need to do is "
+"include the following JVM parameter when you start Infinispan:"
 msgstr ""
+"最近リリースされた link:http://www.jboss.org/infinispan/[Infinispan] link:http://"
+"infinispan.blogspot.com/2012/03/infinispan-512final-is-available-now.html[5."
+"1.2.Final] での変更点は、 link:http://infinispan.blogspot.com/2012/03/infinispan-"
+"512final-is-available-now.html[これらの] 内部 CHM がファクトリーを使用してビルドされること link:http://"
+"infinispan.blogspot.com/2012/03/infinispan-512final-is-available-now."
+"html[です] 。そのため、デフォルトでは、Infinispan は JDK が提供する CHM を使用しますが、もし Infinispan "
+"にバックポートされた Java 8 CHM を強制的に使用させたい場合は、Infinispan の起動時に以下の JVM "
+"パラメータをインクルードするだけです。"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-12-jdk-8-backported-concurrenthashmaps-in.adoc:45
+#, fuzzy
 msgid "-Dinfinispan.unsafe.allow_jdk8_chm=true"
-msgstr ""
+msgstr "-Dinfinispan.unsafe.allow_jdk8_chm=true"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-12-jdk-8-backported-concurrenthashmaps-in.adoc:52
-msgid "We'd love to hear what you have to say about this, in terms of memory footprint, garbage collection and overall performance.  Please use the Infinispan https://community.jboss.org/en/infinispan?view=discussions[user forums] to provide your feedback."
+#, fuzzy
+msgid ""
+"We'd love to hear what you have to say about this, in terms of memory "
+"footprint, garbage collection and overall performance.  Please use the "
+"Infinispan https://community.jboss.org/en/infinispan?view=discussions[user "
+"forums] to provide your feedback."
 msgstr ""
+"メモリフットプリント、ガベージコレクション、全体的なパフォーマンスについてのご意見をお聞かせください。 Infinispanのユーザー link:"
+"https://community.jboss.org/en/infinispan?view=discussions[フォーラム] "
+"を利用して、ご意見をお聞かせください。"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-12-jdk-8-backported-concurrenthashmaps-in.adoc:55
+#, fuzzy
 msgid "Thanks Manik"
-msgstr ""
+msgstr "ありがとうマニク"

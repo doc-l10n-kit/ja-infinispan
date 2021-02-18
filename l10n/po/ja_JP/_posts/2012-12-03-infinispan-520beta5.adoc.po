@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-12-03-infinispan-520beta5.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-12-03-infinispan-520beta5.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: \"  Infinispan 5.2.0.Beta5\"\n"
@@ -34,37 +34,87 @@ msgid ""
 "tags: [ \"beta\",\n"
 "\"release\"\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2575747366422155747\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/12/infinispan-520beta5.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2575747366422155747\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/12/infinispan-520beta5."
+"html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: \"  Infinispan 5.2.0.Beta5 \"\n"
+"permalink: /blog/:year/:month/:day/infinispan-520beta5\n"
+"date: '2012-12-03T01:59:00.002-08:00'\n"
+"author: ttarrant\n"
+"tags: [ \"beta\",\n"
+"\"release\"\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2575747366422155747\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/12/infinispan-520beta5."
+"html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-12-03-infinispan-520beta5.adoc:14
+#, fuzzy
 msgid "Hi Infinispan users,"
-msgstr ""
+msgstr "Infinispanユーザーの皆さん、こんにちは。"
 
 #. type: Plain text
 #: upstream/_posts/2012-12-03-infinispan-520beta5.adoc:17
-msgid "5.2.0.Beta5 contains the usual batch of fixes especially around Non-Blocking state transfer functionality, Map Reduce and the CLI."
-msgstr ""
+#, fuzzy
+msgid ""
+"5.2.0.Beta5 contains the usual batch of fixes especially around Non-Blocking "
+"state transfer functionality, Map Reduce and the CLI."
+msgstr "5.2.0.0.Beta5には、特にノンブロッキング状態の転送機能、Map Reduce、CLIに関する通常の修正が含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2012-12-03-infinispan-520beta5.adoc:27
-msgid "Functionality-wise, it is now possible to read/write data concurrently to the same remote cache both via a RemoteCacheManager and a RemoteCacheStore by enabling \"rawValues\" in the latter. This is the final item that was needed to enable us to implement https://community.jboss.org/wiki/RollingUpgradesInInfinispan[Rolling Upgrades] for remote caches. Because of this feature the HotRod protocol required a couple of extensions and therefore its version has been bumped to https://docs.jboss.org/author/display/ISPN/Hot+Rod+Protocol+-+Version+1.2[1.2]"
+#, fuzzy
+msgid ""
+"Functionality-wise, it is now possible to read/write data concurrently to "
+"the same remote cache both via a RemoteCacheManager and a RemoteCacheStore "
+"by enabling \"rawValues\" in the latter. This is the final item that was "
+"needed to enable us to implement https://community.jboss.org/wiki/"
+"RollingUpgradesInInfinispan[Rolling Upgrades] for remote caches. Because of "
+"this feature the HotRod protocol required a couple of extensions and "
+"therefore its version has been bumped to https://docs.jboss.org/author/"
+"display/ISPN/Hot+Rod+Protocol+-+Version+1.2[1.2]"
 msgstr ""
+"機能的には、後者で\"rawValues\"を有効にすることで、RemoteCacheManagerとRemoteCacheStoreの両方を介して同じリモートキャッシュに同時にデータを読み書きできるようになりました。これは、リモートキャッシュの "
+"link:https://community.jboss.org/wiki/"
+"RollingUpgradesInInfinispan[ローリングアップグレード] "
+"を実装するために必要とされた最後の項目です。この機能のため、HotRodプロトコルはいくつかの拡張を必要とし、そのバージョンは link:https://"
+"docs.jboss.org/author/display/ISPN/Hot+Rod+Protocol+-+Version+1.2[1.2] "
+"にバンプされました。"
 
 #. type: Plain text
 #: upstream/_posts/2012-12-03-infinispan-520beta5.adoc:31
-msgid "For a detailed list of all the issues fixed please refer the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12320689[release notes]."
+#, fuzzy
+msgid ""
+"For a detailed list of all the issues fixed please refer the https://issues."
+"jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
+"12320689[release notes]."
 msgstr ""
+"修正されたすべての問題の詳細なリストは、 link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12320689[リリースノート] を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2012-12-03-infinispan-520beta5.adoc:38
-msgid "You can http://www.jboss.org/infinispan/downloads[download] the distribution or the https://repository.jboss.org/nexus/content/repositories/releases/org/infinispan/[maven artifact]. If you have any questions please check our http://www.jboss.org/infinispan/forums[forums], our mailing lists or ping us directly on irc://irc.freenode.org/infinispan[IRC]!"
+#, fuzzy
+msgid ""
+"You can http://www.jboss.org/infinispan/downloads[download] the distribution "
+"or the https://repository.jboss.org/nexus/content/repositories/releases/org/"
+"infinispan/[maven artifact]. If you have any questions please check our http:"
+"//www.jboss.org/infinispan/forums[forums], our mailing lists or ping us "
+"directly on irc://irc.freenode.org/infinispan[IRC]!"
 msgstr ""
+"ディストリビューションまたは maven アーティファクトを link:http://www.jboss.org/infinispan/"
+"downloads[ダウンロードする] ことができます。質問がある場合は、 link:http://www.jboss.org/infinispan/"
+"forums[フォーラムや] メーリングリストをチェックするか、IRCで直接質問してください!"
 
 #. type: Plain text
 #: upstream/_posts/2012-12-03-infinispan-520beta5.adoc:39
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"

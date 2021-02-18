@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Conflict Management and Partition Handling\n"
@@ -32,149 +32,260 @@ msgid ""
 "date: '2017-07-17T05:09:00.000-07:00'\n"
 "author: remerson\n"
 "tags: [ \"partition handling\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5340222105416259030\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/07/conflict-management-and-partition.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5340222105416259030\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/07/conflict-management-"
+"and-partition.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: コンフリクト管理とパーティション処理\n"
+"permalink: /blog/:year/:month/:day/conflict-management-and-partition\n"
+"date: '2017-07-17T05:09:00.000-07:00'\n"
+"author: remerson\n"
+"tags: [ \"partition handling\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5340222105416259030\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/07/conflict-management-"
+"and-partition.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:21
-msgid "In Infinispan 9.1.0.Final we have overhauled the behaviour and configuration of http://infinispan.org/docs/stable/user_guide/user_guide.html#partition_handling[partition handling] in distributed and replicated caches.  Partition handling is no longer simply enabled/disabled, instead a partition strategy is configured. This allows for more fine-grained control of a cache's behaviour when a split brain occurs. Furthermore, we have created the https://docs.jboss.org/infinispan/9.1/apidocs/org/infinispan/conflict/ConflictManager.html[ConflictManager] component so that conflicts on cache entries can be automatically resolved on-demand by users and/or automatically during partition merges ."
+#, fuzzy
+msgid ""
+"In Infinispan 9.1.0.Final we have overhauled the behaviour and configuration "
+"of http://infinispan.org/docs/stable/user_guide/user_guide."
+"html#partition_handling[partition handling] in distributed and replicated "
+"caches.  Partition handling is no longer simply enabled/disabled, instead a "
+"partition strategy is configured. This allows for more fine-grained control "
+"of a cache's behaviour when a split brain occurs. Furthermore, we have "
+"created the https://docs.jboss.org/infinispan/9.1/apidocs/org/infinispan/"
+"conflict/ConflictManager.html[ConflictManager] component so that conflicts "
+"on cache entries can be automatically resolved on-demand by users and/or "
+"automatically during partition merges ."
 msgstr ""
+"Infinispan 9.1.0.Final では、分散キャッシュとレプリケートキャッシュ link:http://infinispan.org/"
+"docs/stable/user_guide/user_guide.html#partition_handling[におけるパーティション処理] "
+"の動作と設定を大幅に見直しました。 パーティション処理は単に有効/"
+"無効ではなく、代わりにパーティション戦略が設定されます。これにより、スプリットブレインが発生したときのキャッシュの動作をより細かくコントロールできるようになりました。さらに、キャッシュエントリの競合がユーザーによってオンデマンドで自動的に解決されたり、パーティションのマージ中に自動的に解決されたりするように、 "
+"link:https://docs.jboss.org/infinispan/9.1/apidocs/org/infinispan/conflict/"
+"ConflictManager.html[ConflictManager] コンポーネントを作成しました。"
 
 #. type: Title ==
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:24
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Conflict Manager"
-msgstr ""
+msgstr "コンフリクトマネージャー"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:37
-msgid "During a cache's lifecycle it is possible for inconsistencies to appear between replicas of a cache entry  due to a variety of reasons (e.g replication failures, incorrect use of flags etc).  The conflict manager is a tool that allows users to retrieve all stored replica values for a cache entry. In addition to allowing users to process a stream of cache entries whose stored replicas have conflicting values. Furthermore, by utilising implementations of the https://docs.jboss.org/infinispan/9.1/apidocs/org/infinispan/conflict/EntryMergePolicy.html[EntryMergePolicy] interface it is possible for said conflicts to be resolved deterministically."
+#, fuzzy
+msgid ""
+"During a cache's lifecycle it is possible for inconsistencies to appear "
+"between replicas of a cache entry  due to a variety of reasons (e.g "
+"replication failures, incorrect use of flags etc).  The conflict manager is "
+"a tool that allows users to retrieve all stored replica values for a cache "
+"entry. In addition to allowing users to process a stream of cache entries "
+"whose stored replicas have conflicting values. Furthermore, by utilising "
+"implementations of the https://docs.jboss.org/infinispan/9.1/apidocs/org/"
+"infinispan/conflict/EntryMergePolicy.html[EntryMergePolicy] interface it is "
+"possible for said conflicts to be resolved deterministically."
 msgstr ""
+"キャッシュのライフサイクルの間、様々な理由(例えば、レプリケーションの失敗、フラグの不適切な使用など)によりキャッシュエントリのレプリカ間で不整合が発生する可能性があります。コンフリクトマネージャは、ユーザーがキャッシュエントリの全ての保存されたレプリカ値を取得することを可能にするツールです。さらに、保存されたレプリカの値が競合するキャッシュエントリのストリームを処理することができます。さらに、 "
+"link:https://docs.jboss.org/infinispan/9.1/apidocs/org/infinispan/conflict/"
+"EntryMergePolicy.html[EntryMergePolicy] "
+"インターフェースの実装を利用することで、競合を決定論的に解決することが可能です。"
 
 #. type: Title ===
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:41
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "EntryMergePolicy"
-msgstr ""
+msgstr "エントリマージポリシー"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:52
-msgid "In the event of conflicts arising between one or more replicas of a given CacheEntry, it is necessary for a conflict resolution algorithm to be defined, therefore we provide the EntryMergePolicy interface. This interface consists of a single method, \"merge\", whose output is utilised as the \"resolved\" CacheEntry for a given key. A non-null return value is put to all replicas of the CacheEntry in question, whereas a null return value results in all replicas being removed from the cache."
+#, fuzzy
+msgid ""
+"In the event of conflicts arising between one or more replicas of a given "
+"CacheEntry, it is necessary for a conflict resolution algorithm to be "
+"defined, therefore we provide the EntryMergePolicy interface. This interface "
+"consists of a single method, \"merge\", whose output is utilised as the "
+"\"resolved\" CacheEntry for a given key. A non-null return value is put to "
+"all replicas of the CacheEntry in question, whereas a null return value "
+"results in all replicas being removed from the cache."
 msgstr ""
+"指定された CacheEntry の 1 "
+"つ以上のレプリカ間で競合が発生した場合、競合解決アルゴリズムを定義する必要があるため、EntryMergePolicy "
+"インターフェイスを提供します。このインターフェイスは、単一のメソッド \"merge\" で構成され、その出力は、指定されたキーの \"解決済み\" "
+"CacheEntry として利用されます。NULL 以外の戻り値は、問題の CacheEntry のすべてのレプリカに置かれ、NULL "
+"の戻り値は、すべてのレプリカがキャッシュから削除されます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:63
-msgid "The merge method takes two parameters: the \"preferredEntry\" and \"otherEntries\". In the context of a partition merge, the preferredEntry is the CacheEntry associated with the partition whose coordinator is conducting the merge (or if multiple entries exist in this partition, it’s the primary replica). However, in all other contexts, the preferredEntry is simply the primary replica. The second parameter, \"otherEntries\" is simply a list of all other entries associated with the key for which a conflict was detected."
+#, fuzzy
+msgid ""
+"The merge method takes two parameters: the \"preferredEntry\" and "
+"\"otherEntries\". In the context of a partition merge, the preferredEntry is "
+"the CacheEntry associated with the partition whose coordinator is conducting "
+"the merge (or if multiple entries exist in this partition, it’s the primary "
+"replica). However, in all other contexts, the preferredEntry is simply the "
+"primary replica. The second parameter, \"otherEntries\" is simply a list of "
+"all other entries associated with the key for which a conflict was detected."
 msgstr ""
+"マージ・メソッドは、\"preferredEntry\" と \"otherEntries\" という 2 "
+"つのパラメータを取ります。パーティションのマージでは、preferredEntry は、コーディネータがマージを行うパーティションに関連付けられた "
+"CacheEntry です "
+"(このパーティションに複数のエントリが存在する場合は、プライマリ・レプリカです)。しかし、他のすべてのコンテキストでは、preferredEntry "
+"は単にプライマリ・レプリカです。2 番目のパラメータ \"otherEntries\" "
+"は、競合が検出されたキーに関連する他のすべてのエントリのリストです。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:68
-msgid "Currently Infinispan provides the following implementations of EntryMergePolicy:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Currently Infinispan provides the following implementations of "
+"EntryMergePolicy:"
+msgstr "現在、Infinispanは以下のようなEntryMergePolicyの実装を提供しています。"
 
 #. type: Table
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:75
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Policy"
-msgstr ""
+msgstr "方針"
 
 #. type: Table
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:76
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:126
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #. type: Table
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:76
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "MergePolicies.PREFERRED_ALWAYS"
-msgstr ""
+msgstr "MergePolicies.PREFERRED_ALWAYS"
 
 #. type: Table
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:78
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Always utilise the \"preferredEntry\"."
-msgstr ""
+msgstr "常に\"preferredEntry\"を利用してください。"
 
 #. type: Table
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:78
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "MergePolicies.PREFERRED_NON_NULL"
-msgstr ""
+msgstr "MergePolicies.PREFERRED_NON_NULL"
 
 #. type: Table
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:81
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Utilise the \"preferredEntry\" if it is\n"
 "non-null, otherwise utilise the first entry from \"otherEntries\"."
-msgstr ""
+msgstr "NULLでない場合は\"preferredEntry\"を利用し、そうでない場合は\"otherEntries\"の最初のエントリを利用します。"
 
 #. type: Table
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:81
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "MergePolicies.REMOVE_ALL"
-msgstr ""
+msgstr "MergePolicies.REMOVE_ALL"
 
 #. type: Table
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:83
-#, no-wrap
-msgid ""
-"Always remove a key from the cache when a\n"
+#, no-wrap, fuzzy
+msgid "Always remove a key from the cache when a\n"
 "conflict is detected."
-msgstr ""
+msgstr "競合が検出された場合は、常にキャッシュからキーを削除します。"
 
 #. type: Title ===
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:87
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Application Usage"
-msgstr ""
+msgstr "アプリケーションの利用方法"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:97
-msgid "For conflict resolution during partition merges, once an EntryMergePolicy has been configured for the cache, no additional actions are required by the user.  However, if an Infinispan user would like to utilise the ConflictManager explicitly in their application, it should be retrieved by passing an AdvancedCache instance to the https://docs.jboss.org/infinispan/9.1/apidocs/org/infinispan/conflict/ConflictManagerFactory.html[ConflictManagerFactory]. "
+#, fuzzy
+msgid ""
+"For conflict resolution during partition merges, once an EntryMergePolicy "
+"has been configured for the cache, no additional actions are required by the "
+"user.  However, if an Infinispan user would like to utilise the "
+"ConflictManager explicitly in their application, it should be retrieved by "
+"passing an AdvancedCache instance to the https://docs.jboss.org/infinispan/9."
+"1/apidocs/org/infinispan/conflict/ConflictManagerFactory."
+"html[ConflictManagerFactory]. "
 msgstr ""
+"パーティションマージ中のコンフリクト解決のために、EntryMergePolicy "
+"がキャッシュに設定されていれば、ユーザーは追加のアクションを必要としません。 しかし、Infinispan ユーザーがアプリケーションで明示的に "
+"ConflictManager を使用したい場合は、 link:https://docs.jboss.org/infinispan/9.1/"
+"apidocs/org/infinispan/conflict/ConflictManagerFactory."
+"html[ConflictManagerFactory] に AdvancedCache インスタンスを渡すことで ConflictManager "
+"を取得しなければなりません。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:106
-msgid "Note, that depending on the number of entries in the cache, the getConflicts and resolveConflict methods are expensive operations, as they both depend on a spliterator which lazily loads cache entries on a per segment basis. Consequently, when operating in distributed mode, if many conflicts exist, it is possible for an OutOfMemoryException to occur on the node searching for conflicts."
+#, fuzzy
+msgid ""
+"Note, that depending on the number of entries in the cache, the getConflicts "
+"and resolveConflict methods are expensive operations, as they both depend on "
+"a spliterator which lazily loads cache entries on a per segment basis. "
+"Consequently, when operating in distributed mode, if many conflicts exist, "
+"it is possible for an OutOfMemoryException to occur on the node searching "
+"for conflicts."
 msgstr ""
+"キャッシュ内のエントリ数によっては、getConflicts および resolveConflict "
+"メソッドは、どちらもセグメントごとにキャッシュエントリを怠惰にロードするスプリレータに依存しているため、高価な操作であることに注意してください。その結果、分散モードで動作している場合、多くの競合が存在すると、競合を検索しているノードで "
+"OutOfMemoryException が発生する可能性があります。"
 
 #. type: Title ==
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:107
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Partition Handling Strategies"
-msgstr ""
+msgstr "パーティション処理戦略"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:120
-msgid "In 9.1.0.Final the partition handling enabled/disabled option has been deprecated and users must now configure an appropriate PartitionHandling strategy for their application. A partition handling strategy determines what operations can be performed on a cache when a split brain event has occurred. Ultimately, in terms of http://en.wikipedia.org/wiki/CAP_theorem[Brewer’s CAP theorem], the configured strategy determines whether the cache's availability or consistency is sacrificed in the presence of partition(s). Below is a table of the provided strategies and their characteristics:"
+#, fuzzy
+msgid ""
+"In 9.1.0.Final the partition handling enabled/disabled option has been "
+"deprecated and users must now configure an appropriate PartitionHandling "
+"strategy for their application. A partition handling strategy determines "
+"what operations can be performed on a cache when a split brain event has "
+"occurred. Ultimately, in terms of http://en.wikipedia.org/wiki/"
+"CAP_theorem[Brewer’s CAP theorem], the configured strategy determines "
+"whether the cache's availability or consistency is sacrificed in the "
+"presence of partition(s). Below is a table of the provided strategies and "
+"their characteristics:"
 msgstr ""
+"9.1.0.Final では、パーティション処理の有効/無効オプションは廃止され、ユーザーはアプリケーションに適切な PartitionHandling "
+"戦略を設定しなければなりません。パーティション処理戦略は、スプリットブレインイベントが発生したときにキャッシュ上で実行できる操作を決定します。最終的には、 "
+"link:http://en.wikipedia.org/wiki/CAP_theorem[Brewer の CAP 定] "
+"理の観点から、設定された戦略はパーティションの存在下でキャッシュの可用性や一貫性が犠牲になるかどうかを決定します。以下は提供された戦略とその特徴の表です。"
 
 #. type: Table
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:126
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Strategy"
-msgstr ""
+msgstr "戦略"
 
 #. type: Table
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:127
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CAP"
-msgstr ""
+msgstr "キャパ"
 
 #. type: Table
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:127
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "DENY_READ_WRITES"
-msgstr ""
+msgstr "せんにゅうよみとりせんじゅつ"
 
 #. type: Table
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:132
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "If the partition does not have all owners for a given\n"
 "segment, both reads and writes are denied for all keys in that\n"
@@ -182,99 +293,138 @@ msgid ""
 "\n"
 "This is equivalent to setting partition handling to true in Infinispan\n"
 "9.0."
-msgstr ""
+msgstr "パーティションの所有者が全てのセグメントの所有者ではない場合、そのセグメントの全てのキーの読み取りと書き込みが拒否されます。"
 
 #. type: Table
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:134
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Consistency"
-msgstr ""
+msgstr "一貫性"
 
 #. type: Table
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:134
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ALLOW_READS"
-msgstr ""
+msgstr "許可読取り"
 
 #. type: Table
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Allows reads for a given key if it exists in this\n"
 "partition, but only allows writes if this partition contains all owners\n"
 "of a segment."
 msgstr ""
+"指定されたキーがこのパーティションに存在する場合は読み込みを許可しますが、このパーティションにセグメントのすべての所有者が含まれている場合は書き込みのみ許可します。"
 
 #. type: Table
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:138
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:143
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Availability"
-msgstr ""
+msgstr "空室状況"
 
 #. type: Table
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:138
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ALLOW_READ_WRITES"
-msgstr ""
+msgstr "ALLOW_READ_WRITES"
 
 #. type: Table
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:142
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Allow entries on each partition to diverge, with\n"
 "conflicts resolved during merge.\n"
 "\n"
 "This is equivalent to setting partition handling to false in Infinispan\n"
 "9.0."
-msgstr ""
+msgstr "各パーティション上のエントリを分岐させ、マージ時に競合を解決するようにします。"
 
 #. type: Title ===
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:149
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Conflict Resolution on Partition Merge"
-msgstr ""
+msgstr "パーティション統合の紛争解決"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:161
-msgid "When utilising the ALLOW_READ_WRITES partition strategy it is possible for the values of cache entries to diverge between competing partitions.  Therefore, when the two partitions merge, it is necessary for these conflicts to be resolved. Internally Infinispan utilises a cache's ConflictManager to search for cache entry conflicts and then applies the configured EntryMergePolicy to automatically resolve said conflicts before rebalancing the cache. This conflict resolution is completely automatic and does not require any additional code or input from Infinispan users."
+#, fuzzy
+msgid ""
+"When utilising the ALLOW_READ_WRITES partition strategy it is possible for "
+"the values of cache entries to diverge between competing partitions.  "
+"Therefore, when the two partitions merge, it is necessary for these "
+"conflicts to be resolved. Internally Infinispan utilises a cache's "
+"ConflictManager to search for cache entry conflicts and then applies the "
+"configured EntryMergePolicy to automatically resolve said conflicts before "
+"rebalancing the cache. This conflict resolution is completely automatic and "
+"does not require any additional code or input from Infinispan users."
 msgstr ""
+"ALLOW_READ_WRITES "
+"パーティション戦略を使用するとき、キャッシュエントリの値が競合するパーティション間で分岐する可能性があります。したがって、2 "
+"つのパーティションがマージするときは、これらの競合を解決する必要があります。内部的に Infinispan はキャッシュの "
+"ConflictManager を利用してキャッシュエントリの競合を検索し、設定された EntryMergePolicy "
+"を適用して、キャッシュを再バランスする前に競合を自動的に解決します。この競合の解決は完全に自動化されており、Infinispan "
+"ユーザーによる追加のコードや入力は必要ありません。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:167
-msgid "Note, that if you do not want conflicts to be resolved automatically during a partition merge, i.e. the behaviour before 9.1.x, you can set the merge-policy to null (or NONE in xml). "
+#, fuzzy
+msgid ""
+"Note, that if you do not want conflicts to be resolved automatically during "
+"a partition merge, i.e. the behaviour before 9.1.x, you can set the merge-"
+"policy to null (or NONE in xml). "
 msgstr ""
+"パーティションのマージ中にコンフリクトを自動的に解決したくない場合、つまり 9.1.x 以前の挙動では、 merge-policy を null "
+"(xml では NONE) に設定することができることに注意してください。"
 
 #. type: Title ===
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:174
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuration"
-msgstr ""
+msgstr "構成"
 
 #. type: Title =====
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:178
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Programmatic"
-msgstr ""
+msgstr "プログラム"
 
 #. type: Title ====
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:184
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "XML"
-msgstr ""
+msgstr "エックスエムエル"
 
 #. type: Title ==
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:192
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Conclusion"
-msgstr ""
+msgstr "結論"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:201
-msgid "Partition handling has been overhauled in Infinispan 9.1.0.Final to allow for increased control over a cache's behaviour. We have introduced the ConflictManager which enables users to inspect and manage the consistency of their cache entries via custom and provided merge policies."
+#, fuzzy
+msgid ""
+"Partition handling has been overhauled in Infinispan 9.1.0.Final to allow "
+"for increased control over a cache's behaviour. We have introduced the "
+"ConflictManager which enables users to inspect and manage the consistency of "
+"their cache entries via custom and provided merge policies."
 msgstr ""
+"Infinispan 9.1.0."
+"Finalでは、キャッシュの動作をコントロールできるように、パーティションの処理が見直されました。ConflictManagerを導入し、ユーザーがカスタムや提供されたマージポリシーを介して、キャッシュエントリの一貫性を検査し、管理することができるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-17-conflict-management-and-partition.adoc:208
-msgid "If you have any feedback on the partition handling changes, or would like to request some new features/optimisations, let us know via the https://developer.jboss.org/en/infinispan/content[forum], https://issues.jboss.org/projects/ISPN[issue tracker] or the #infinispan channel onhttp://webchat.freenode.net/?channels=%23infinispan[ Freenode]."
+#, fuzzy
+msgid ""
+"If you have any feedback on the partition handling changes, or would like to "
+"request some new features/optimisations, let us know via the https://"
+"developer.jboss.org/en/infinispan/content[forum], https://issues.jboss.org/"
+"projects/ISPN[issue tracker] or the #infinispan channel onhttp://webchat."
+"freenode.net/?channels=%23infinispan[ Freenode]."
 msgstr ""
+"パーティション処理の変更についてフィードバックがあったり、新機能や最適化をリクエストしたい場合は、フォーラム link:https://"
+"developer.jboss.org/en/infinispan/content[、] link:https://issues.jboss.org/"
+"projects/ISPN[イシュートラッカー、#] infinispan チャンネルhttp://webchat.freenode.net/"
+"?channels=%23infinispan[ Freenode] でお知らせください。"

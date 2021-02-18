@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Improved Infinispan Docker image available\n"
@@ -32,158 +32,266 @@ msgid ""
 "date: '2016-07-20T10:14:00.000-07:00'\n"
 "author: gustavonalle\n"
 "tags: [ \" docker\", \"console\", \"domain mode\", \"server\", \"jgroups\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-881422786408302889\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/07/improved-infinispan-docker-image.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"881422786408302889\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/07/improved-infinispan-"
+"docker-image.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan Dockerイメージを改良しました。\n"
+"permalink: /blog/:year/:month/:day/improved-infinispan-docker-image\n"
+"date: '2016-07-20T10:14:00.000-07:00'\n"
+"author: gustavonalle\n"
+"tags: [ \" docker\", \"console\", \"domain mode\", \"server\", \"jgroups\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"881422786408302889\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/07/improved-infinispan-"
+"docker-image.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:12
-msgid "https://www.docker.com/sites/default/files/Engine.png[image:https://www.docker.com/sites/default/files/Engine.png[image,width=200,height=196]]"
-msgstr ""
+#, fuzzy
+msgid ""
+"https://www.docker.com/sites/default/files/Engine.png[image:https://www."
+"docker.com/sites/default/files/Engine.png[image,width=200,height=196]]"
+msgstr "link:https://www.docker.com/sites/default/files/Engine.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:20
-msgid "The https://hub.docker.com/r/jboss/infinispan-server/[Infinispan Docker image] has been improved, making it easier to run Infinispan Servers in clustered, domain and standalone modes, with different protocol stacks."
+#, fuzzy
+msgid ""
+"The https://hub.docker.com/r/jboss/infinispan-server/[Infinispan Docker "
+"image] has been improved, making it easier to run Infinispan Servers in "
+"clustered, domain and standalone modes, with different protocol stacks."
 msgstr ""
+"Infin link:https://hub.docker.com/r/jboss/infinispan-server/[ispan "
+"Dockerイメージが] 改善され、異なるプロトコルスタックを使用して、クラスタ、ドメイン、スタンドアロンモードでInfinispan "
+"Serversを簡単に実行できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:25
-msgid "In this blog post we'll show a few usage scenarios and how to combine it with the https://hub.docker.com/r/jboss/jgroups-gossip/[jgroups-gossip] image to create Infinispan Server clusters in docker based environments."
+#, fuzzy
+msgid ""
+"In this blog post we'll show a few usage scenarios and how to combine it "
+"with the https://hub.docker.com/r/jboss/jgroups-gossip/[jgroups-gossip] "
+"image to create Infinispan Server clusters in docker based environments."
 msgstr ""
+"このブログ記事では、いくつかの利用シーンと、 link:https://hub.docker.com/r/jboss/jgroups-gossip/"
+"[jgroups-gossip] イメージと組み合わせて、docker ベースの環境で Infinispan Server "
+"クラスタを作成する方法を紹介します。"
 
 #. type: Title ====
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:30
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Getting started"
-msgstr ""
+msgstr "始めるには"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:36
-msgid "By default the container runs in clustered mode, and to start a node simply execute:"
-msgstr ""
+#, fuzzy
+msgid ""
+"By default the container runs in clustered mode, and to start a node simply "
+"execute:"
+msgstr "デフォルトではコンテナはクラスタモードで動作し、ノードを起動するには単に実行するだけです。"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:42
-msgid "Bringing a second container will cause it to form a cluster.The membership can be verified by running a command directly in the newly launched container:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Bringing a second container will cause it to form a cluster.The membership "
+"can be verified by running a command directly in the newly launched "
+"container:"
+msgstr "2つ目のコンテナを持ってくると、クラスタを形成することになります。"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:47
+#, fuzzy
 msgid "Example output:"
-msgstr ""
+msgstr "出力例。"
 
 #. type: Title ====
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:53
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using a different JGroups stack"
-msgstr ""
+msgstr "別のJGroupsスタックを使用する"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:60
-msgid "The command above creates a cluster with the default JGroups stack (UDP), but it's possible to pick another one provided it's supported by the server. For example, to use TCP:"
+#, fuzzy
+msgid ""
+"The command above creates a cluster with the default JGroups stack (UDP), "
+"but it's possible to pick another one provided it's supported by the server. "
+"For example, to use TCP:"
 msgstr ""
+"上のコマンドはデフォルトの JGroups スタック (UDP) "
+"でクラスタを作成しますが、サーバがサポートしていれば別のものを選択することも可能です。例えば、TCPを使用するには"
 
 #. type: Title ====
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:64
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Running on cloud environments"
-msgstr ""
+msgstr "クラウド環境での実行"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:70
-msgid "We recently dockerized the JGroups Gossip Router to be used as an alternative discovery mechanism in environments where multicast is not enabled, such as cloud environments."
+#, fuzzy
+msgid ""
+"We recently dockerized the JGroups Gossip Router to be used as an "
+"alternative discovery mechanism in environments where multicast is not "
+"enabled, such as cloud environments."
 msgstr ""
+"先日、JGroups Gossip "
+"RouterをDocker化し、クラウド環境などマルチキャストが有効になっていない環境での代替ディスカバリーの仕組みとして利用できるようにしました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:74
-msgid "Employing  a gossip router will enable discovery via TCP, where the router acts as a registry: each member will register itself in this registry upon start and also discover other members."
-msgstr ""
+#, fuzzy
+msgid ""
+"Employing  a gossip router will enable discovery via TCP, where the router "
+"acts as a registry: each member will register itself in this registry upon "
+"start and also discover other members."
+msgstr "ゴシップルータを使用することで、TCP 経由での発見が可能になり、ルータはレジストリとして機能します。"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:77
+#, fuzzy
 msgid "The gossip router container can be launched by:     "
-msgstr ""
+msgstr "ゴシップルーターのコンテナを起動することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:82
-msgid "Take note of the address where the router will bind to, it's needed by the Infinispan nodes. The address can be easily obtained by:    "
-msgstr ""
+#, fuzzy
+msgid ""
+"Take note of the address where the router will bind to, it's needed by the "
+"Infinispan nodes. The address can be easily obtained by:    "
+msgstr "ルータがバインドするアドレスをメモしておきます。アドレスは以下の方法で簡単に取得できます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:86
-msgid "Finally we can now launch our cluster specifying the tcp-gossip stack with the location of the gossip router:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Finally we can now launch our cluster specifying the tcp-gossip stack with "
+"the location of the gossip router:"
+msgstr "最後に、tcp-gossipスタックとgossipルータの位置を指定してクラスタを起動することができます。"
 
 #. type: Title ====
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:90
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Launching Standalone mode"
-msgstr ""
+msgstr "スタンドアロンモードの起動"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:95
-msgid "Passing an extra parameter allows to run a server in standalone (non-clustered) mode:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Passing an extra parameter allows to run a server in standalone (non-"
+"clustered) mode:"
+msgstr "追加のパラメータを渡すと、スタンドアロン(クラスタ化されていない)モードでサーバを実行することができます。"
 
 #. type: Title ====
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:101
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Server Management Console in Domain mode"
-msgstr ""
+msgstr "ドメインモードのサーバー管理コンソール"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:111
-msgid "Domain mode is a special case of clustered mode (and currently a requirement to use the Server Management Console), that involves launching a domain controller process plus one or more host controller processes. The domain controller does not hold data, it is used as a centralized management process that can replicate configuration and provision servers on the host controllers."
+#, fuzzy
+msgid ""
+"Domain mode is a special case of clustered mode (and currently a requirement "
+"to use the Server Management Console), that involves launching a domain "
+"controller process plus one or more host controller processes. The domain "
+"controller does not hold data, it is used as a centralized management "
+"process that can replicate configuration and provision servers on the host "
+"controllers."
 msgstr ""
+"ドメインモードは、ドメインコントローラプロセスと1つ以上のホストコントローラプロセスの起動を伴うクラスタモードの特殊なケースです（現在は、サーバー管理コンソールを使用するための要件となっています）。ドメインコントローラはデータを保持しませんが、集中管理プロセスとして使用され、ホストコントローラ上の設定とプロビジョニングサーバーを複製することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:113
+#, fuzzy
 msgid "Running a domain controller is easily achievable with a parameter:"
-msgstr ""
+msgstr "ドメインコントローラの実行は、パラメータで簡単に実現できます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:118
-msgid "Once the domain controller is running, it's possible to start one or more host controllers. In the default configuration, each host controller has two Infinispan server instances:"
+#, fuzzy
+msgid ""
+"Once the domain controller is running, it's possible to start one or more "
+"host controllers. In the default configuration, each host controller has two "
+"Infinispan server instances:"
 msgstr ""
+"ドメインコントローラが実行されると、1つまたは複数のホストコントローラを起動することができます。デフォルトの構成では、各ホストコントローラは2つのInfinispanサーバインスタンスを持っています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:123
-msgid "The command line interface can be used to verify the hosts managed in the domain:"
-msgstr ""
+#, fuzzy
+msgid ""
+"The command line interface can be used to verify the hosts managed in the "
+"domain:"
+msgstr "コマンドラインインターフェイスを使用して、ドメインで管理されているホストを確認することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:127
-msgid "It should output all the host names that are part of the domain, including the master (domain controller):"
-msgstr ""
+#, fuzzy
+msgid ""
+"It should output all the host names that are part of the domain, including "
+"the master (domain controller):"
+msgstr "マスター(ドメインコントローラ)を含むドメインの一部であるすべてのホスト名を出力しなければなりません。"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:133
-msgid "To get access to the Management console, use credentials admin/admin and go to port 9990 of the domain controller, for example: http://172.17.0.2:9990/[http://172.17.0.2:9990/]"
+#, fuzzy
+msgid ""
+"To get access to the Management console, use credentials admin/admin and go "
+"to port 9990 of the domain controller, for example: http://172.17.0.2:9990/"
+"[http://172.17.0.2:9990/]"
 msgstr ""
+"管理コンソールにアクセスするには、資格情報admin/adminを使用して、ドメインコントローラのポート9990にアクセスします link:http://"
+"172.17.0.2:9990/[。]"
 
 #. type: Title ====
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Versions"
-msgstr ""
+msgstr "バージョン"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:145
-msgid "The image is built on https://hub.docker.com/r/jboss/infinispan-server/[Dockerhub] shortly after each Infinispan release (stable and unstable), and the improvements presented in this post are available for Infinispan 9.0.0.Alpha3 and Infinispan 8.2.3.Final. As a reminder, make sure to pick the right version when launching containers:"
+#, fuzzy
+msgid ""
+"The image is built on https://hub.docker.com/r/jboss/infinispan-server/"
+"[Dockerhub] shortly after each Infinispan release (stable and unstable), and "
+"the improvements presented in this post are available for Infinispan 9.0.0."
+"Alpha3 and Infinispan 8.2.3.Final. As a reminder, make sure to pick the "
+"right version when launching containers:"
 msgstr ""
+"イメージは、Infinispanの各リリース（安定版と不安定版）の直後に link:https://hub.docker.com/r/jboss/"
+"infinispan-server/[Dockerhub] 上でビルドされており、この記事で紹介した改善点はInfinispan 9.0.0."
+"Alpha3とInfinispan 8.2.3."
+"Finalで利用可能です。注意点として、コンテナを起動する際には正しいバージョンを選択するようにしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:150
+#, fuzzy
 msgid "Getting involved"
-msgstr ""
+msgstr "関わること"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:156
-msgid "The image was created to be flexible and easy to use, but if something is not working for you or if you have any suggestions to improve it, please report it at https://github.com/jboss-dockerfiles/infinispan/issues/"
+#, fuzzy
+msgid ""
+"The image was created to be flexible and easy to use, but if something is "
+"not working for you or if you have any suggestions to improve it, please "
+"report it at https://github.com/jboss-dockerfiles/infinispan/issues/"
 msgstr ""
+"画像は柔軟で使いやすいように作成されていますが、もし何かうまくいかないことがあったり、改善するための提案があれば、 https://github.com/"
+"jboss-dockerfiles/infinispan/issues/ まで報告してください。"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-20-improved-infinispan-docker-image.adoc:158
+#, fuzzy
 msgid "Enjoy!"
-msgstr ""
+msgstr "楽しもう"

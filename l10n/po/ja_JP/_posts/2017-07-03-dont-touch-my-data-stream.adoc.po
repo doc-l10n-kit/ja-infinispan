@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-07-03-dont-touch-my-data-stream.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-03-dont-touch-my-data-stream.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Don't touch my data stream!\n"
@@ -33,52 +33,135 @@ msgid ""
 "author: wburns\n"
 "tags: [ \"streams\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7704139015109544758\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/07/dont-touch-my-data-stream.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7704139015109544758\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/07/dont-touch-my-data-"
+"stream.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 俺のデータストリームに触るな！\n"
+"permalink: /blog/:year/:month/:day/dont-touch-my-data-stream\n"
+"date: '2017-07-03T10:47:00.000-07:00'\n"
+"author: wburns\n"
+"tags: [ \"streams\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7704139015109544758\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/07/dont-touch-my-data-"
+"stream.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-03-dont-touch-my-data-stream.adoc:20
-msgid "In Infinispan 8.0 we were very excited to announce http://blog.infinispan.org/2015/09/distributed-streams.html[Distributed Streams] as we moved to Java 8. This feature allows applying any of the various java.util.stream.Stream operations on the datagrid, which are performed in a distributed nature, providing the highest possible performance as data is processed on the node where it lives, only requiring the terminal operation intermediate results to be returned to the invoker."
+#, fuzzy
+msgid ""
+"In Infinispan 8.0 we were very excited to announce http://blog.infinispan."
+"org/2015/09/distributed-streams.html[Distributed Streams] as we moved to "
+"Java 8. This feature allows applying any of the various java.util.stream."
+"Stream operations on the datagrid, which are performed in a distributed "
+"nature, providing the highest possible performance as data is processed on "
+"the node where it lives, only requiring the terminal operation intermediate "
+"results to be returned to the invoker."
 msgstr ""
+"Infinispan 8.0では、Java 8への移行に伴い、 link:http://blog.infinispan.org/2015/09/"
+"distributed-streams.html[分散ストリームを] 発表しました。この機能により、様々なjava.util.stream.Stream."
+"Stream操作をデータグリッドに適用することができ、分散して実行されます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-03-dont-touch-my-data-stream.adoc:27
-msgid "One problem with distributed streams though is that data is processed without acquiring locks: great for performance, but there is no guarantee that some other process isn't concurrently modifying the cache entry you're working on. Consider the following example which iterates through the entire contents of a cache, modifying each entry based on its existing value:"
+#, fuzzy
+msgid ""
+"One problem with distributed streams though is that data is processed "
+"without acquiring locks: great for performance, but there is no guarantee "
+"that some other process isn't concurrently modifying the cache entry you're "
+"working on. Consider the following example which iterates through the entire "
+"contents of a cache, modifying each entry based on its existing value:"
 msgstr ""
+"分散ストリームの一つの問題点は、データがロックを取得せずに処理されることです。次の例では、キャッシュの全コンテンツを反復処理し、既存の値に基づいて各エントリを修正しています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-03-dont-touch-my-data-stream.adoc:35
-msgid "This works great until you have another cache _put()_ running concurrently that changes a value. In this case the only way to be sure that an update is applied properly is to perform an optional update in the _forEach._ In a transactional cache you could also lock the entry manually (pessimistic) or retry on a _WriteSkewException_ (optimistic).  For example this is how the optional update could be performed."
+#, fuzzy
+msgid ""
+"This works great until you have another cache _put()_ running concurrently "
+"that changes a value. In this case the only way to be sure that an update is "
+"applied properly is to perform an optional update in the _forEach._ In a "
+"transactional cache you could also lock the entry manually (pessimistic) or "
+"retry on a _WriteSkewException_ (optimistic).  For example this is how the "
+"optional update could be performed."
 msgstr ""
+"これは、値を変更する別のキャッシュ _put() が_ "
+"同時に実行されるまではうまく機能します。この場合、更新が適切に適用されていることを確認する唯一の方法は _forEach_ "
+"でオプションの更新を実行することです。トランザクションキャッシュでは、エントリを手動でロックしたり (悲観的に)、 "
+"_WriteSkewException_ で再試行したり (楽観的に) することもできます。例えば、次のようにオプションの更新を実行することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-03-dont-touch-my-data-stream.adoc:39
-msgid "As you can see the code isn't as pretty as it was before, but is still pretty concise."
-msgstr ""
+#, fuzzy
+msgid ""
+"As you can see the code isn't as pretty as it was before, but is still "
+"pretty concise."
+msgstr "見ての通り、コードは以前ほどきれいではありませんが、それでもかなり簡潔になっています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-03-dont-touch-my-data-stream.adoc:45
-msgid "Infinispan 9.1 introduces _locked streams_, which allow you to run your operation knowing that another update cannot be performed while running the _Consumer_. Note this only works in non transactional and pessimistic transactional caches (optimistic transactional caches are not supported)."
+#, fuzzy
+msgid ""
+"Infinispan 9.1 introduces _locked streams_, which allow you to run your "
+"operation knowing that another update cannot be performed while running the "
+"_Consumer_. Note this only works in non transactional and pessimistic "
+"transactional caches (optimistic transactional caches are not supported)."
 msgstr ""
+"Infinispan 9.1 では _ロックされたストリームが_ "
+"導入されました。これは、非トランザクションキャッシュおよび悲観的なトランザクションキャッシュでのみ動作することに注意してください（楽観的なトランザクションキャッシュはサポートされていません）。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-03-dont-touch-my-data-stream.adoc:51
-msgid "If you notice the code looks very similar to the first example. You just have to invoke the _lockedStream_ method on the _AdvancedCache_ and then you can use the stream knowing that data for the given key won't change while performing your update."
+#, fuzzy
+msgid ""
+"If you notice the code looks very similar to the first example. You just "
+"have to invoke the _lockedStream_ method on the _AdvancedCache_ and then you "
+"can use the stream knowing that data for the given key won't change while "
+"performing your update."
 msgstr ""
+"コードは最初の例と非常に似ています。 _AdvancedCache_ で _lockedStream_ "
+"メソッドを呼び出すだけで、更新を実行している間に指定されたキーのデータが変更されないことを知った上でストリームを使用することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-03-dont-touch-my-data-stream.adoc:58
-msgid "This locked stream has a slightly limited API compared to the normal java.util.stream API. Only the _filter_ method is allowed in addition to _forEach._ The _CacheStream_ API is also supported, with a few exceptions. For more details on the API and what methods are supported you should check out the https://docs.jboss.org/infinispan/9.1/apidocs/org/infinispan/LockedStream.html[Javadoc]."
+#, fuzzy
+msgid ""
+"This locked stream has a slightly limited API compared to the normal java."
+"util.stream API. Only the _filter_ method is allowed in addition to _forEach."
+"_ The _CacheStream_ API is also supported, with a few exceptions. For more "
+"details on the API and what methods are supported you should check out the "
+"https://docs.jboss.org/infinispan/9.1/apidocs/org/infinispan/LockedStream."
+"html[Javadoc]."
 msgstr ""
+"このロックされたストリームは、通常のjava.util.stream APIに比べてAPIが少し制限されています。 _forEach_ に加えて "
+"_filter_ メソッドのみが許可されています。 _CacheStream_ API も、いくつかの例外を除いてサポートされています。API "
+"の詳細とサポートされているメソッドについては、 link:https://docs.jboss.org/infinispan/9.1/apidocs/"
+"org/infinispan/LockedStream.html[Javadoc] を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-03-dont-touch-my-data-stream.adoc:64
-msgid "The lock is only acquired for the given key while invoking the _Consumer_, allowing other updates on other keys to be performed concurrently, just like a normal _put_ operation would behave. It is not suggested to perform operations on other keys in the _Consumer,_ as this could cause possible deadlocks."
+#, fuzzy
+msgid ""
+"The lock is only acquired for the given key while invoking the _Consumer_, "
+"allowing other updates on other keys to be performed concurrently, just like "
+"a normal _put_ operation would behave. It is not suggested to perform "
+"operations on other keys in the _Consumer,_ as this could cause possible "
+"deadlocks."
 msgstr ""
+"ロックが取得されるのは、 _コンシューマ_ を起動している間に指定されたキーに対してのみであり、通常の _put_ "
+"操作と同様に、他のキーに対する他の更新を同時に実行することができます。デッドロックの原因となる可能性があるため、 _コンシューマ_ "
+"で他のキーに対する操作を実行することは推奨されません。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-03-dont-touch-my-data-stream.adoc:67
-msgid "Now go forth and perform operations using the data stream knowing that the data underneath has not changed!"
-msgstr ""
+#, fuzzy
+msgid ""
+"Now go forth and perform operations using the data stream knowing that the "
+"data underneath has not changed!"
+msgstr "これで、下のデータが変わっていないことを知って、データストリームを使った操作を実行できるようになりました。"

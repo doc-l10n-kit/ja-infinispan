@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:15
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: In Memory Data Grid Patterns Demos from Devoxx France!\n"
@@ -36,252 +36,484 @@ msgid ""
 "\"streams\",\n"
 "\"query\",\n"
 "]\n"
-"thumbnail: https://1.bp.blogspot.com/-0WwGpCjfU1g/WOdG4rNJ8QI/AAAAAAAAE10/L0bV9eq8RZgIDw-C51UyukbZRuZJUyPCQCLcB/s72-c/Screen%2BShot%2B2017-04-07%2Bat%2B09.58.56.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5441116349842725637\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/04/in-memory-data-grid-patterns-demos-from.html\n"
+"thumbnail: https://1.bp.blogspot.com/-0WwGpCjfU1g/WOdG4rNJ8QI/AAAAAAAAE10/"
+"L0bV9eq8RZgIDw-C51UyukbZRuZJUyPCQCLcB/s72-c/Screen%2BShot%2B2017-04-"
+"07%2Bat%2B09.58.56.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5441116349842725637\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/04/in-memory-data-grid-"
+"patterns-demos-from.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Devoxxフランスからのインメモリデータグリッドパターンのデモ!\n"
+"permalink: /blog/:year/:month/:day/in-memory-data-grid-patterns-demos-from\n"
+"date: '2017-04-07T01:38:00.002-07:00'\n"
+"author: galder\n"
+"tags: [ \" conference\", \"devoxx\",\n"
+"\"demo\",\n"
+"\"streams\",\n"
+"\"query\",\n"
+"]\n"
+"thumbnail: https://1.bp.blogspot.com/-0WwGpCjfU1g/WOdG4rNJ8QI/AAAAAAAAE10/"
+"L0bV9eq8RZgIDw-C51UyukbZRuZJUyPCQCLcB/s72-c/Screen%2BShot%2B2017-04-"
+"07%2Bat%2B09.58.56.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5441116349842725637\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/04/in-memory-data-grid-"
+"patterns-demos-from.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:21
-msgid "http://devoxx.fr/[Devoxx France 2017] was a blast!! Emmanuel and I would like to thank all attendees to our http://cfp.devoxx.fr/2017/talk/UKK-0693/Architecture_par_la_pratique:_patterns_d%E2%80%99utilisation_de_systemes_in-memory_-_WD-40_entre_vos_donnees_et_vos_applis[in-memory data grids patterns] talk. The room was full and we thoroughly enjoyed the experience!"
+#, fuzzy
+msgid ""
+"http://devoxx.fr/[Devoxx France 2017] was a blast!! Emmanuel and I would "
+"like to thank all attendees to our http://cfp.devoxx.fr/2017/talk/UKK-0693/"
+"Architecture_par_la_pratique:_patterns_d%E2%80%99utilisation_de_systemes_in-"
+"memory_-_WD-40_entre_vos_donnees_et_vos_applis[in-memory data grids "
+"patterns] talk. The room was full and we thoroughly enjoyed the experience!"
 msgstr ""
+"link:http://devoxx.fr/[Devoxx France 2017は] 大盛況でした!Emmanuelと私は、私たちの link:"
+"http://cfp.devoxx.fr/2017/talk/UKK-0693/Architecture_par_la_pratique:"
+"_patterns_d%E2%80%99utilisation_de_systemes_in-memory_-_WD-"
+"40_entre_vos_donnees_et_vos_applis[インメモリデータグリッドのパターンの] "
+"話に出席したすべての人に感謝したいと思います。部屋は満員で、私たちは徹底的に経験を楽しみました!"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:28
-msgid "During the talk we presented a couple of small demos that showcased some in-memory data grid use cases. The demos are located https://github.com/galderz/datagrid-patterns[here], but I thought it'd be useful to provide some https://github.com/galderz/datagrid-patterns[step-by-step] here so that you can get them running as quickly as possible."
+#, fuzzy
+msgid ""
+"During the talk we presented a couple of small demos that showcased some in-"
+"memory data grid use cases. The demos are located https://github.com/galderz/"
+"datagrid-patterns[here], but I thought it'd be useful to provide some https:/"
+"/github.com/galderz/datagrid-patterns[step-by-step] here so that you can get "
+"them running as quickly as possible."
 msgstr ""
+"今回の講演では、インメモリデータグリッドのユースケースを紹介する小さなデモをいくつか紹介しました。デモは link:https://github.com/"
+"galderz/datagrid-patterns[こちらに] ありますが、できるだけ早く実行できるように、 link:https://github."
+"com/galderz/datagrid-patterns[ステップバイステップで] 紹介しておくと便利だと思いました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:31
-msgid "Before we start with any of the demos, it's necessary to run some set up steps:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Before we start with any of the demos, it's necessary to run some set up "
+"steps:"
+msgstr "デモを始める前に、いくつかのセットアップを行う必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:33
+#, fuzzy
 msgid "  1. Check out git repository:"
-msgstr ""
+msgstr "1.gitリポジトリを確認します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:35
+#, fuzzy
 msgid "    git clone https://github.com/galderz/datagrid-patterns"
-msgstr ""
+msgstr "git clone https://github.com/galderz/datagrid-patterns"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:39
-msgid "  2. Download http://downloads.jboss.org/infinispan/9.0.0.Final/infinispan-server-9.0.0.Final-bin.zip[Infinispan Server 9.0.0.Final] and at the same level as the git repository."
+#, fuzzy
+msgid ""
+"  2. Download http://downloads.jboss.org/infinispan/9.0.0.Final/infinispan-"
+"server-9.0.0.Final-bin.zip[Infinispan Server 9.0.0.Final] and at the same "
+"level as the git repository."
 msgstr ""
+"2. link:http://downloads.jboss.org/infinispan/9.0.0.Final/infinispan-server-"
+"9.0.0.Final-bin.zip[Infinispan Server 9.0.0.Final] をダウンロードし、gitリポジトリと同じレベル "
+"link:http://downloads.jboss.org/infinispan/9.0.0.Final/infinispan-server-9.0."
+"0.Final-bin.zip[にし] ます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:42
-msgid "  3. Go into the datagrid-patterns directory, start the servers and wait until they've started:"
-msgstr ""
+#, fuzzy
+msgid ""
+"  3. Go into the datagrid-patterns directory, start the servers and wait "
+"until they've started:"
+msgstr "3.datagrid-patternsディレクトリに移動し、サーバを起動し、サーバが起動するまで待つ。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:45
+#, fuzzy
 msgid "    cd datagrid-patterns     ./run-servers.sh"
-msgstr ""
+msgstr "cd datagrid-patterns ./run-servers.sh"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:48
-msgid "  4. Install https://www.continuum.io/downloads[Anaconda for Python 3], this is required to run Jupyter notebook for plotting."
+#, fuzzy
+msgid ""
+"  4. Install https://www.continuum.io/downloads[Anaconda for Python 3], this "
+"is required to run Jupyter notebook for plotting."
 msgstr ""
+"4. link:https://www.continuum.io/downloads[Python 3用のAnacondaを] インストールし、 "
+"link:https://www.continuum.io/downloads[これは] "
+"プロット用のJupyterノートブックを実行するために必要です。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:50
+#, fuzzy
 msgid "  5. Install https://maven.apache.org/download.cgi[Maven 3]."
-msgstr ""
+msgstr "5.Mavenのインストール 3 link:https://maven.apache.org/download.cgi[.]"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:53
-msgid "Once the set up is complete, it's time to start with the individual demos."
-msgstr ""
+#, fuzzy
+msgid ""
+"Once the set up is complete, it's time to start with the individual demos."
+msgstr "セットアップが完了したら、いよいよ個別のデモに取り掛かります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:58
-msgid "Both demos shown below work with the same application domain: rail transport systems. In this domain, we differentiate between physical stations, trains, station boards which are located in stations, and finally stops, which are individual entries in station boards."
+#, fuzzy
+msgid ""
+"Both demos shown below work with the same application domain: rail transport "
+"systems. In this domain, we differentiate between physical stations, trains, "
+"station boards which are located in stations, and finally stops, which are "
+"individual entries in station boards."
 msgstr ""
+"以下に示す両方のデモは、同じアプリケーション・ドメインである鉄道輸送システムで動作します。このドメインでは、物理的な駅、列車、駅内に配置された駅板、そして駅板内の個々のエントリである停留所を区別しています。"
 
 #. type: Title ===
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:60
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Analytics Demo"
-msgstr ""
+msgstr "アナリティクスのデモ"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:66
-msgid "The first demo is focused on how you can use Infinispan for doing offline analytics. In particular, this demo tries to answer the following question:"
+#, fuzzy
+msgid ""
+"The first demo is focused on how you can use Infinispan for doing offline "
+"analytics. In particular, this demo tries to answer the following question:"
 msgstr ""
+"最初のデモは、Infinispanを使ってオフライン分析を行う方法に焦点を当てています。特に、このデモでは以下の質問に答えようとしています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:69
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:165
-msgid "_Q. What is the time of the day when there is the biggest ratio of delayed trains?_"
-msgstr ""
+#, fuzzy
+msgid ""
+"_Q. What is the time of the day when there is the biggest ratio of delayed "
+"trains?_"
+msgstr "_Q.電車の遅延率が一番高い時間帯は？_"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:79
-msgid "To answer this question, Infinispan data grid will be loaded with 3 weeks worth of data from station boards. Once the data is loaded, we will execute a remote server task which will use http://infinispan.org/docs/stable/user_guide/user_guide.html#streams[Infinispan Distributed Java Streams] to calculate the two pieces of information required to answer the question: per hour, how many trains are going through the system, and out of those, how many are delayed."
+#, fuzzy
+msgid ""
+"To answer this question, Infinispan data grid will be loaded with 3 weeks "
+"worth of data from station boards. Once the data is loaded, we will execute "
+"a remote server task which will use http://infinispan.org/docs/stable/"
+"user_guide/user_guide.html#streams[Infinispan Distributed Java Streams] to "
+"calculate the two pieces of information required to answer the question: per "
+"hour, how many trains are going through the system, and out of those, how "
+"many are delayed."
 msgstr ""
+"この質問に答えるために、Infinispanのデータグリッドには、駅板から3週間分のデータが読み込まれます。データがロードされたら、 link:http:"
+"//infinispan.org/docs/stable/user_guide/user_guide."
+"html#streams[Infinispan分散Javaストリームを] "
+"使用して、質問に答えるために必要な2つの情報を計算するリモートサーバーのタスクを実行します：1時間あたり、システムを通過する列車の数、そのうちの何本が遅延しているか。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:89
-msgid "An important aspect to bear in mind about this server tasks is that it will only be executed in one of the nodes in the cluster. It does not matter which one. In turn, this node will will ship the lambdas required to do the computation to each of the nodes so that they can executed against their local data. The other nodes will reply with the results and the node where the server task was invoked will aggregate the results."
+#, fuzzy
+msgid ""
+"An important aspect to bear in mind about this server tasks is that it will "
+"only be executed in one of the nodes in the cluster. It does not matter "
+"which one. In turn, this node will will ship the lambdas required to do the "
+"computation to each of the nodes so that they can executed against their "
+"local data. The other nodes will reply with the results and the node where "
+"the server task was invoked will aggregate the results."
 msgstr ""
+"このサーバータスクについて心に留めておくべき重要な点は、クラスタ内のいずれかのノードでのみ実行されるということです。どのノードであっても構いません。順番に、このノードは計算に必要なラムダを各ノードに出荷し、各ノードがローカルデータに対して実行できるようにします。他のノードは結果を返信し、サーバタスクが呼び出されたノードは結果を集約します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:96
-msgid "Then, these results are sent back to the client, which in turn, stores the results as JSON in an intermediate cache. Once the results are in place, we will use a Jupyter notebook to read those results and plot the result."
+#, fuzzy
+msgid ""
+"Then, these results are sent back to the client, which in turn, stores the "
+"results as JSON in an intermediate cache. Once the results are in place, we "
+"will use a Jupyter notebook to read those results and plot the result."
 msgstr ""
+"そして、これらの結果はクライアントに送られ、クライアントは結果をJSONとして中間キャッシュに保存します。結果が整ったら、Jupyterノートブックを使ってこれらの結果を読み込んで、結果をプロットします。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:100
+#, fuzzy
 msgid "Let's see these steps in action:"
-msgstr ""
+msgstr "これらのステップを実際に見てみましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:105
-msgid "  1. First, we need to install the server tasks in the running servers above:"
-msgstr ""
+#, fuzzy
+msgid ""
+"  1. First, we need to install the server tasks in the running servers above:"
+""
+msgstr "1.まず、上記の稼働中のサーバーにサーバータスクをインストールします。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:109
+#, fuzzy
 msgid "    cd datagrid-patterns/analytics"
-msgstr ""
+msgstr "cd datagrid-patterns/analytics"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:111
+#, fuzzy
 msgid "    mvn clean install package -am -pl analytics-server"
-msgstr ""
+msgstr "mvn クリーンインストールパッケージ -am -pl analytics-server"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:113
+#, fuzzy
 msgid "    mvn wildfly:deploy -pl analytics-server"
-msgstr ""
+msgstr "mvn wildfly:deploy -pl analytics-server"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:115
+#, fuzzy
 msgid "    "
-msgstr ""
+msgstr "    "
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:120
-msgid "  2. Open the datagrid-pattern repo with your favourite IDE and run *delays.java.stream.InjectApp* class located in analytics/analytics-server project. This command will inject the data into the cache. On my environment, it takes between 1 and 2 minutes."
+#, fuzzy
+msgid ""
+"  2. Open the datagrid-pattern repo with your favourite IDE and run *delays."
+"java.stream.InjectApp* class located in analytics/analytics-server project. "
+"This command will inject the data into the cache. On my environment, it "
+"takes between 1 and 2 minutes."
 msgstr ""
+"2.お気に入りのIDEでdatagrid-pattern repoを開き、analytics/analytics-"
+"serverプロジェクトにあるdelays *.java.stream.InjectAppクラスを* "
+"実行します。このコマンドでキャッシュにデータが注入されます。私の環境では、1分から2分ほどかかります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:127
-msgid "  3. With the data loaded, we need to run the remote task that will calculate the total number of trains per hour and how many of those are delayed. To do that, execute *delays.java.stream.AnalyticsApp* class located in analytics/analytics-server project from your IDE."
+#, fuzzy
+msgid ""
+"  3. With the data loaded, we need to run the remote task that will "
+"calculate the total number of trains per hour and how many of those are "
+"delayed. To do that, execute *delays.java.stream.AnalyticsApp* class located "
+"in analytics/analytics-server project from your IDE."
 msgstr ""
+"3."
+"データが読み込まれた状態で、1時間あたりの列車の総数とそのうちの何本が遅延しているかを計算するリモートタスクを実行する必要があります。そのためには、IDEからanalytics/"
+"analytics-serverプロジェクトにある *delays.java.stream.AnalyticsApp* クラスを実行します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:132
-msgid "  4. You can verify that the results have been calculating by going to the following address:"
-msgstr ""
+#, fuzzy
+msgid ""
+"  4. You can verify that the results have been calculating by going to the "
+"following address:"
+msgstr "4.以下のアドレスに行けば計算していることが確認できます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:136
+#, fuzzy
 msgid "    http://localhost:8180/rest/analytics-results/results"
-msgstr ""
+msgstr "http://localhost:8180/rest/analytics-results/results"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:140
-msgid "  5. With the results in place, it's time to start the Jupyter notebook:"
-msgstr ""
+#, fuzzy
+msgid ""
+"  5. With the results in place, it's time to start the Jupyter notebook:"
+msgstr "5.結果が出たところで、いよいよジュピターノートのスタートです。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:144
+#, fuzzy
 msgid "    cd datagrid-patterns/analytics/analytics-jupyter"
-msgstr ""
+msgstr "cd datagrid-patterns/analytics/analytics-jupyter"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:146
+#, fuzzy
 msgid "    ~/anaconda/bin/jupyter notebook"
-msgstr ""
+msgstr "~/anaconda/bin/jupyter ノートブック"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:152
-msgid "  6. Once the notebook opens, click open *live-demo.ipynb* notebook and execute each of the cells in order. You should end up seeing a plot like this:"
+#, fuzzy
+msgid ""
+"  6. Once the notebook opens, click open *live-demo.ipynb* notebook and "
+"execute each of the cells in order. You should end up seeing a plot like "
+"this:"
 msgstr ""
+"6.ノートブックが開いたら、Live- *demo.ipynb* "
+"notebookをクリックして、各セルを順番に実行してください。このようなプロットが表示されるはずです。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:156
-msgid "https://1.bp.blogspot.com/-0WwGpCjfU1g/WOdG4rNJ8QI/AAAAAAAAE10/L0bV9eq8RZgIDw-C51UyukbZRuZJUyPCQCLcB/s1600/Screen%2BShot%2B2017-04-07%2Bat%2B09.58.56.png[image:https://1.bp.blogspot.com/-0WwGpCjfU1g/WOdG4rNJ8QI/AAAAAAAAE10/L0bV9eq8RZgIDw-C51UyukbZRuZJUyPCQCLcB/s320/Screen%2BShot%2B2017-04-07%2Bat%2B09.58.56.png[image,width=320,height=240]]"
+#, fuzzy
+msgid ""
+"https://1.bp.blogspot.com/-0WwGpCjfU1g/WOdG4rNJ8QI/AAAAAAAAE10/"
+"L0bV9eq8RZgIDw-C51UyukbZRuZJUyPCQCLcB/s1600/Screen%2BShot%2B2017-04-"
+"07%2Bat%2B09.58.56.png[image:https://1.bp.blogspot.com/-0WwGpCjfU1g/"
+"WOdG4rNJ8QI/AAAAAAAAE10/L0bV9eq8RZgIDw-C51UyukbZRuZJUyPCQCLcB/s320/"
+"Screen%2BShot%2B2017-04-07%2Bat%2B09.58.56.png[image,width=320,height=240]]"
 msgstr ""
+"link:https://1.bp.blogspot.com/-0WwGpCjfU1g/WOdG4rNJ8QI/AAAAAAAAE10/"
+"L0bV9eq8RZgIDw-C51UyukbZRuZJUyPCQCLcB/s1600/Screen%2BShot%2B2017-04-"
+"07%2Bat%2B09.58.56.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:160
+#, fuzzy
 msgid "So, the answer to the question:"
-msgstr ""
+msgstr "ということで、質問の答えです。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:170
-msgid "is *2am*! That's because last connecting trains of the day wait for each other to avoid leaving passengers stranded."
-msgstr ""
+#, fuzzy
+msgid ""
+"is *2am*! That's because last connecting trains of the day wait for each "
+"other to avoid leaving passengers stranded."
+msgstr "は *午前2時* ！それは、その日の最後の接続列車は、乗客を置き去りにしないように、お互いに待つからです。"
 
 #. type: Title ===
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:173
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Real Time Demo"
-msgstr ""
+msgstr "リアルタイムデモ"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:182
-msgid "The second demo that we presented uses the same application domain as above, but this time we're trying to use our data grid as a way of storing the station board state of each station at a given point in time. So, the idea is to use Infinispan as an in memory data grids for working with real time data."
+#, fuzzy
+msgid ""
+"The second demo that we presented uses the same application domain as above, "
+"but this time we're trying to use our data grid as a way of storing the "
+"station board state of each station at a given point in time. So, the idea "
+"is to use Infinispan as an in memory data grids for working with real time "
+"data."
 msgstr ""
+"2番目に紹介したデモでは、上記と同じアプリケーションドメインを使用していますが、今回は、ある時点での各ステーションのステーションボードの状態を記憶する方法として、データグリッドを使用しようとしています。つまり、インメモリのデータグリッドとしてInfinispanを使用して、リアルタイムのデータを扱うための作業をしようとしているのです。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:192
-msgid "So, what can we do with this type of data? In our demo, we will create a centralised dashboard of delayed trains around the country. To do that, we will take advantage of http://infinispan.org/docs/stable/user_guide/user_guide.html#query.continuous[Infinispan's Continuous Query] functionality which allows us to find those station boards which contain stops that are delayed, and as new delayed trains appeared these will be pushed to our dashboard."
+#, fuzzy
+msgid ""
+"So, what can we do with this type of data? In our demo, we will create a "
+"centralised dashboard of delayed trains around the country. To do that, we "
+"will take advantage of http://infinispan.org/docs/stable/user_guide/"
+"user_guide.html#query.continuous[Infinispan's Continuous Query] "
+"functionality which allows us to find those station boards which contain "
+"stops that are delayed, and as new delayed trains appeared these will be "
+"pushed to our dashboard."
 msgstr ""
+"では、このようなデータを使って何ができるのでしょうか？デモでは、全国の遅延列車の集中ダッシュボードを作成します。そのために、 link:http://"
+"infinispan.org/docs/stable/user_guide/user_guide.html#query."
+"continuous[Infinispan の Continuous Query] "
+"機能を利用して、遅延している停留所を含む駅を検索し、新しい遅延列車が現れるとダッシュボードにプッシュされます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:197
-msgid "To run this demo, keep the same servers running as above and do the following:"
-msgstr ""
+#, fuzzy
+msgid ""
+"To run this demo, keep the same servers running as above and do the "
+"following:"
+msgstr "このデモを実行するには、上記と同じサーバーを実行したまま、以下のようにします。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:204
-msgid "Run *delays.query.continuous.FxApp* application located in real-time project inside the datagrid-patterns demo. This app will inject some live station board data and will launch a JavaFX dashboard that shows delayed trains as they appear. It should look something like this:"
+#, fuzzy
+msgid ""
+"Run *delays.query.continuous.FxApp* application located in real-time project "
+"inside the datagrid-patterns demo. This app will inject some live station "
+"board data and will launch a JavaFX dashboard that shows delayed trains as "
+"they appear. It should look something like this:"
 msgstr ""
+"datagrid-patternsデモ内のリアルタイムプロジェクトにある *delays.query.continuous.FxApp* "
+"アプリケーションを実行してください。このアプリは、いくつかのライブの駅板データを注入し、遅延した列車を表示する JavaFX "
+"ダッシュボードを起動します。以下のように表示されるはずです。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:208
-msgid "https://2.bp.blogspot.com/-vyFHhzmswQg/WOdJ1PnoOJI/AAAAAAAAE2A/Ui1YS1T93JIxPKpwbS6u0p1whsok3nxfwCLcB/s1600/Screen%2BShot%2B2017-04-07%2Bat%2B10.11.40.png[image:https://2.bp.blogspot.com/-vyFHhzmswQg/WOdJ1PnoOJI/AAAAAAAAE2A/Ui1YS1T93JIxPKpwbS6u0p1whsok3nxfwCLcB/s320/Screen%2BShot%2B2017-04-07%2Bat%2B10.11.40.png[image,width=320,height=248]]"
+#, fuzzy
+msgid ""
+"https://2.bp.blogspot.com/-vyFHhzmswQg/WOdJ1PnoOJI/AAAAAAAAE2A/"
+"Ui1YS1T93JIxPKpwbS6u0p1whsok3nxfwCLcB/s1600/Screen%2BShot%2B2017-04-"
+"07%2Bat%2B10.11.40.png[image:https://2.bp.blogspot.com/-vyFHhzmswQg/"
+"WOdJ1PnoOJI/AAAAAAAAE2A/Ui1YS1T93JIxPKpwbS6u0p1whsok3nxfwCLcB/s320/"
+"Screen%2BShot%2B2017-04-07%2Bat%2B10.11.40.png[image,width=320,height=248]]"
 msgstr ""
+"link:https://2.bp.blogspot.com/-vyFHhzmswQg/WOdJ1PnoOJI/AAAAAAAAE2A/"
+"Ui1YS1T93JIxPKpwbS6u0p1whsok3nxfwCLcB/s1600/Screen%2BShot%2B2017-04-"
+"07%2Bat%2B10.11.40.png[]"
 
 #. type: Title ===
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:213
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Conclusion"
-msgstr ""
+msgstr "結論"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:220
-msgid "This has been a summary of the demos that we run in our talk at Devoxx France with the intention of getting you running these demos as quickly as possible. The repository contains more detailed information of these demos. If there's anything unclear or any of the instructions above are not working, please let us know!"
+#, fuzzy
+msgid ""
+"This has been a summary of the demos that we run in our talk at Devoxx "
+"France with the intention of getting you running these demos as quickly as "
+"possible. The repository contains more detailed information of these demos. "
+"If there's anything unclear or any of the instructions above are not "
+"working, please let us know!"
 msgstr ""
+"これは、できるだけ早くこれらのデモを実行してもらうことを意図して、Devoxx "
+"Franceでのトークの中で実行したデモをまとめたものです。リポジトリには、これらのデモのより詳細な情報が含まれています。何か不明な点や、上記の説明がうまくいかない点がありましたら、ぜひ教えてください!"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:227
-msgid "Thanks to Emmanuel Bernard for partnering with me for this Devoxx France talk and for the continuous feedback while developing the demos. Thanks as well to Tristan Tarrant for the input in the demos and many thanks to all Devoxx France attendees who attended our talk :)"
+#, fuzzy
+msgid ""
+"Thanks to Emmanuel Bernard for partnering with me for this Devoxx France "
+"talk and for the continuous feedback while developing the demos. Thanks as "
+"well to Tristan Tarrant for the input in the demos and many thanks to all "
+"Devoxx France attendees who attended our talk :)"
 msgstr ""
+"今回のDevoxx Franceトークのために私とパートナーを組んでくれたEmmanuel "
+"Bernardに感謝し、デモを開発している間も継続的にフィードバックをしてくれました。また、デモのインプットをしてくれたTristan "
+"Tarrantにも感謝します。)"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:235
-msgid "A very special thanks to *Alexandre Masselot* whose https://www.slideshare.net/alexmass/swiss-transport-in-real-time-tribulations-in-the-big-data-stack[\"Swiss Transport in Real Time: Tribulations in the Big] Data Stack\" talk at Soft-Shake 2016 was the inspiration for these demos. @Alex, thanks a lot for sharing the demos and data with me and the rest of the community!!"
+#, fuzzy
+msgid ""
+"A very special thanks to *Alexandre Masselot* whose https://www.slideshare."
+"net/alexmass/swiss-transport-in-real-time-tribulations-in-the-big-data-"
+"stack[\"Swiss Transport in Real Time: Tribulations in the Big] Data Stack\" "
+"talk at Soft-Shake 2016 was the inspiration for these demos. @Alex, thanks a "
+"lot for sharing the demos and data with me and the rest of the community!!"
 msgstr ""
+"Soft-Shake 2016での link:https://www.slideshare.net/alexmass/swiss-transport-"
+"in-real-time-tribulations-in-the-big-data-stack[\"Swiss Transport in Real "
+"Time: Tribulations in the Big Data] Stack\"の講演がこれらのデモのきっかけとなった *Alexandre "
+"Masselot* 氏に特別な感謝の意を表します。Alexandre Masselot氏は、Soft-Shake 2016での「Swiss "
+"Transport Real Time: Tribulations of the Big Data "
+"Stack」の講演をきっかけに、これらのデモを作成してくれました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:241
-msgid "In a just a few weeks I'll be at http://www.developermarch.com/developersummit/[Great Indian Developer Summit] presenting these demos and much more! Stay tuned :)"
+#, fuzzy
+msgid ""
+"In a just a few weeks I'll be at http://www.developermarch.com/"
+"developersummit/[Great Indian Developer Summit] presenting these demos and "
+"much more! Stay tuned :)"
 msgstr ""
+"数週間後には link:http://www.developermarch.com/developersummit/[Great Indian "
+"Developer Summit] でこれらのデモやその他多くのことを紹介する予定です。ご期待ください :)"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:245
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2017-04-07-in-memory-data-grid-patterns-demos-from.adoc:246
+#, fuzzy
 msgid "Galder"
-msgstr ""
+msgstr "ガルダー"

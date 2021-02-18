@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-07-16-infinispan-931final-and-940alpha1.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-16-infinispan-931final-and-940alpha1.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.3.1.Final and 9.4.0.Alpha1\n"
@@ -32,93 +32,183 @@ msgid ""
 "date: '2018-07-16T02:41:00.000-07:00'\n"
 "author: ttarrant\n"
 "tags: [ \" release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1712635983801477210\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/07/infinispan-931final-and-940alpha1.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1712635983801477210\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/07/infinispan-931final-"
+"and-940alpha1.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 9.3.1.Final および 9.4.0.Alpha1\n"
+"permalink: /blog/:year/:month/:day/infinispan-931final-and-940alpha1\n"
+"date: '2018-07-16T02:41:00.000-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \" release\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1712635983801477210\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/07/infinispan-931final-"
+"and-940alpha1.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-16-infinispan-931final-and-940alpha1.adoc:12
+#, fuzzy
 msgid "We have 2 new releases to announce today:"
-msgstr ""
+msgstr "本日は2つの新作を発表します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-16-infinispan-931final-and-940alpha1.adoc:15
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*9.3.1.Final* includes some important bug fixes, and we recommend all\n"
 "users of 9.3.0.Final to upgrade:\n"
 msgstr ""
+"*9.3.1.Finalには* いくつかの重要なバグフィックスが含まれており、9.3.0.Finalをお使いの方にはアップグレードをお勧めします。"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-16-infinispan-931final-and-940alpha1.adoc:18
-msgid "Fix for CVE-2018-1131 that allows unchecked deserialization in the server from binary java , XML and JSON payloads"
+#, fuzzy
+msgid ""
+"Fix for CVE-2018-1131 that allows unchecked deserialization in the server "
+"from binary java , XML and JSON payloads"
 msgstr ""
+"CVE-2018-1131 の修正により、バイナリ java , XML および JSON "
+"ペイロードからのサーバ内でのチェックなしのデシリアライズが可能になりました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-16-infinispan-931final-and-940alpha1.adoc:20
-msgid "Fixed transcoding from JSON/XML to java objects with deployed entities (https://issues.jboss.org/browse/ISPN-9336[ISPN-9336])"
+#, fuzzy
+msgid ""
+"Fixed transcoding from JSON/XML to java objects with deployed entities "
+"(https://issues.jboss.org/browse/ISPN-9336[ISPN-9336])"
 msgstr ""
+"デプロイされたエンティティを持つJSON/XMLからjavaオブジェクトへのトランスコードを修正 link:https://issues.jboss."
+"org/browse/ISPN-9336[(ISPN-9336] )"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-16-infinispan-931final-and-940alpha1.adoc:23
-msgid "Look up key in cache loader if the entry has expired but hasn't yet been removed from the data container (https://issues.jboss.org/browse/ISPN-9370[ISPN-9370])"
+#, fuzzy
+msgid ""
+"Look up key in cache loader if the entry has expired but hasn't yet been "
+"removed from the data container (https://issues.jboss.org/browse/ISPN-"
+"9370[ISPN-9370])"
 msgstr ""
+"エントリの有効期限が切れているが、データコンテナからまだ削除されていない場合、キャッシュローダーのキーをルックアップします（ link:https://"
+"issues.jboss.org/browse/ISPN-9370[ISPN-9370] ）。"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-16-infinispan-931final-and-940alpha1.adoc:26
-msgid "Avoid circular references in exceptions, as they were causing stack overflows with logback 1.2.x (https://issues.jboss.org/browse/ISPN-9362[ISPN-9362])"
+#, fuzzy
+msgid ""
+"Avoid circular references in exceptions, as they were causing stack "
+"overflows with logback 1.2.x (https://issues.jboss.org/browse/ISPN-9362[ISPN-"
+"9362])"
 msgstr ""
+"logback 1.2.x でスタックオーバーフローの原因となっていた例外の循環参照を回避 ( link:https://issues.jboss."
+"org/browse/ISPN-9362[ISPN-9362] )"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-16-infinispan-931final-and-940alpha1.adoc:29
-msgid "See the full list of bug fixes https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12338251[here]."
+#, fuzzy
+msgid ""
+"See the full list of bug fixes https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12338251[here]."
 msgstr ""
+"バグフィックスの全リストは link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12338251[こちら]"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-16-infinispan-931final-and-940alpha1.adoc:33
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*9.4.0.Alpha1* its the first iteration towards our next big release.\n"
 "Highlights include:\n"
-msgstr ""
+msgstr "*9.4.0.0.Alpha1 は* 、次の大きなリリースに向けた最初のイテレーションです。ハイライトは以下の通りです。"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-16-infinispan-931final-and-940alpha1.adoc:38
-msgid "The Spring Cache provider now supports two configuration properties with which you can determine how long to wait for read and write operations respectively (https://issues.jboss.org/browse/ISPN-9301[ISPN-9301])."
+#, fuzzy
+msgid ""
+"The Spring Cache provider now supports two configuration properties with "
+"which you can determine how long to wait for read and write operations "
+"respectively (https://issues.jboss.org/browse/ISPN-9301[ISPN-9301])."
 msgstr ""
+"Spring Cache プロバイダは、読み取り操作と書き込み操作の待ち時間を決定できる 2 つの構成プロパティをサポートするようになりました link:"
+"https://issues.jboss.org/browse/ISPN-9301[(ISPN-9301] )。"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-16-infinispan-931final-and-940alpha1.adoc:41
-msgid "You can now obtain nanosecond-resolution statistics for average read/write/remove time (https://issues.jboss.org/browse/ISPN-9352[ISPN-9352])."
+#, fuzzy
+msgid ""
+"You can now obtain nanosecond-resolution statistics for average read/write/"
+"remove time (https://issues.jboss.org/browse/ISPN-9352[ISPN-9352])."
 msgstr ""
+"これで、平均読み取り/書き込み/削除時間 link:https://issues.jboss.org/browse/ISPN-9352[（ISPN-"
+"9352] ）のナノ秒分解能の統計情報を取得できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-16-infinispan-931final-and-940alpha1.adoc:44
-msgid "Queries now throw an AvailabilityException if the cache is in degraded mode and partition mode isn’t ALLOW_READ_WRITES ([https://issues.jboss.org/browse/ISPN-9340[ISPN-9340])"
+#, fuzzy
+msgid ""
+"Queries now throw an AvailabilityException if the cache is in degraded mode "
+"and partition mode isn’t ALLOW_READ_WRITES ([https://issues.jboss.org/browse/"
+"ISPN-9340[ISPN-9340])"
 msgstr ""
+"キャッシュがデグレードモードでパーティションモードがALLOW_READ_WRITESでない場合に、クエリがAvailabilityExceptionをスローするようになりました "
+"link:https://issues.jboss.org/browse/ISPN-9340[([ISPN-9340] ))。"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-16-infinispan-931final-and-940alpha1.adoc:46
-msgid "Admin Console: You can now delete cache from Administration console (https://issues.jboss.org/browse/ISPN-7291[ISPN-7291])."
+#, fuzzy
+msgid ""
+"Admin Console: You can now delete cache from Administration console (https://"
+"issues.jboss.org/browse/ISPN-7291[ISPN-7291])."
 msgstr ""
+"管理コンソールからキャッシュを削除します。管理コンソール link:https://issues.jboss.org/browse/ISPN-"
+"7291[(ISPN-7291] )からキャッシュを削除できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-16-infinispan-931final-and-940alpha1.adoc:49
-msgid "Following up on the segmented data container in 9.3.0.Final, cache stores can now be segmented as well, allowing for better performance for bulk operations (ie. cache.size(), cache.entrySet().stream())"
+#, fuzzy
+msgid ""
+"Following up on the segmented data container in 9.3.0.Final, cache stores "
+"can now be segmented as well, allowing for better performance for bulk "
+"operations (ie. cache.size(), cache.entrySet().stream())"
 msgstr ""
+"9.3.0.Final "
+"のセグメント化されたデータコンテナに続いて、キャッシュストアもセグメント化できるようになり、バルク処理のパフォーマンスが向上しました（例えば cache."
+"size(), cache.entrySet().stream()）。"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-16-infinispan-931final-and-940alpha1.adoc:51
-msgid "The server-side Hot Rod parser is now generated automatically (https://issues.jboss.org/browse/ISPN-8981[ISPN-8981]) "
+#, fuzzy
+msgid ""
+"The server-side Hot Rod parser is now generated automatically (https://"
+"issues.jboss.org/browse/ISPN-8981[ISPN-8981]) "
 msgstr ""
+"サーバ側のHot Rodパーサが自動生成されるようになりました link:https://issues.jboss.org/browse/ISPN-"
+"8981[(ISPN-8981] )"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-16-infinispan-931final-and-940alpha1.adoc:54
-msgid "The full list of 9.4.0.Alpha1 fixes is https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12337824[here]."
+#, fuzzy
+msgid ""
+"The full list of 9.4.0.Alpha1 fixes is https://issues.jboss.org/secure/"
+"ReleaseNote.jspa?projectId=12310799&version=12337824[here]."
 msgstr ""
+"9.4.0.Alpha1 の全修正リストは link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12337824[こちら] 。"
 
 #. type: Plain text
 #: upstream/_posts/2018-07-16-infinispan-931final-and-940alpha1.adoc:61
-msgid "You can find both releases on our https://infinispan.org/download/[download page]. Please report any issues in our https://issues.jboss.org/projects/ISPN[issue tracker] and join the conversation in our https://infinispan.zulipchat.com/[Zulip Chat] to shape up our next release.   "
+#, fuzzy
+msgid ""
+"You can find both releases on our https://infinispan.org/download/[download "
+"page]. Please report any issues in our https://issues.jboss.org/projects/"
+"ISPN[issue tracker] and join the conversation in our https://infinispan."
+"zulipchat.com/[Zulip Chat] to shape up our next release.   "
 msgstr ""
+"両方のリリースは link:https://infinispan.org/download/[ダウンロードページ] "
+"でご覧いただけます。何か問題があれば、私たちの link:https://issues.jboss.org/projects/"
+"ISPN[イシュートラッカー] に報告し、次のリリースを形作るために link:https://infinispan.zulipchat.com/"
+"[Zulipチャット] で会話に参加してください。"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,161 +18,342 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: First steps with Vert.x and Infinispan PUSH API (Part 2)\n"
-"permalink: /blog/:year/:month/:day/first-steps-with-vertx-and-infinispan-push-api\n"
+"permalink: /blog/:year/:month/:day/first-steps-with-vertx-and-infinispan-"
+"push-api\n"
 "date: '2017-12-14T11:11:00.000-08:00'\n"
 "author: karesti\n"
 "tags: [ \"reactive\", \"listeners\", \"vert.x\", \"push api\", \"react\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-885985137699815698\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/12/first-steps-with-vertx-and-infinispan-push-api.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"885985137699815698\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/12/first-steps-with-vertx-"
+"and-infinispan-push-api.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Vert.xとInfinispan PUSH APIを使った最初の一歩(後編)\n"
+"permalink: /blog/:year/:month/:day/first-steps-with-vertx-and-infinispan-"
+"push-api\n"
+"date: '2017-12-14T11:11:00.000-08:00'\n"
+"author: karesti\n"
+"tags: [ \"reactive\", \"listeners\", \"vert.x\", \"push api\", \"react\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"885985137699815698\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/12/first-steps-with-vertx-"
+"and-infinispan-push-api.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:18
-msgid "Welcome to the second in a multi-part series of blog posts about creating http://vertx.io/[Eclipse Vert.x] applications with http://infinispan.org/[Infinispan]. In the http://blog.infinispan.org/2017/12/first-steps-with-vertx-and-infinispan-rest-api.html[previous blog post] we have seen how to create a REST API. The purpose of this tutorial is to showcase how to create a PUSH API implemented with Vert.x and using Infinispan as a server."
+#, fuzzy
+msgid ""
+"Welcome to the second in a multi-part series of blog posts about "
+"creating http://vertx.io/[Eclipse Vert.x] applications with http://"
+"infinispan.org/[Infinispan]. In the http://blog.infinispan.org/2017/12/first-"
+"steps-with-vertx-and-infinispan-rest-api.html[previous blog post] we have "
+"seen how to create a REST API. The purpose of this tutorial is to showcase "
+"how to create a PUSH API implemented with Vert.x and using Infinispan as a "
+"server."
 msgstr ""
+"Infinispanを使った link:http://vertx.io/[Eclipse Vert.x] "
+"アプリケーションの作成についてのブログ記事の第2回目へようこそ。 link:http://blog.infinispan.org/2017/12/"
+"first-steps-with-vertx-and-infinispan-rest-api.html[前回のブログ記事] では、REST API "
+"の作成方法を見てきました。このチュートリアルの目的は、Vert.xで実装されたPUSH "
+"APIを作成し、Infinispanをサーバーとして使用する方法を紹介することです。"
 
 #. type: delimited block _
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:24
-msgid "_All the code of this tutorial is available in this https://github.com/karesti/cute-names[GitHub repository]. The backend is a Java project using Maven, so all the needed dependencies can be found in the pom.xml. The front is a super simple react application._"
+#, fuzzy
+msgid ""
+"_All the code of this tutorial is available in this https://github.com/"
+"karesti/cute-names[GitHub repository]. The backend is a Java project using "
+"Maven, so all the needed dependencies can be found in the pom.xml. The front "
+"is a super simple react application._"
 msgstr ""
+"_このチュートリアルのすべてのコードは、このGitHubリポジトリ_ "
+"にあります。バックエンドはMavenを使ったJavaプロジェクトなので、必要な依存関係はすべてpom.xmlにあります。フロントエンドは超シンプルな "
+"react アプリケーションです。"
 
 #. type: Title ==
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:26
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PUSH API"
-msgstr ""
+msgstr "プッシュエーピーアイ"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:34
-msgid "Creating a REST API is very straightforward. But today, even if we are heavily using REST, we don't always want to use request/response or polling, but instead we want to push directly from the server to the client. In this example, we are going to create an API that pushes every new value inserted in the default cache of Infinispan. These values are cute names, as we did in the REST API example."
+#, fuzzy
+msgid ""
+"Creating a REST API is very straightforward. But today, even if we are "
+"heavily using REST, we don't always want to use request/response or polling, "
+"but instead we want to push directly from the server to the client. In this "
+"example, we are going to create an API that pushes every new value inserted "
+"in the default cache of Infinispan. These values are cute names, as we did "
+"in the REST API example."
 msgstr ""
+"REST APIを作成するのは非常に簡単です。しかし、今日ではRESTを多用していても、リクエスト/"
+"レスポンスやポーリングを常に使用するのではなく、サーバーからクライアントに直接プッシュしたいと考えています。この例では、Infinispanのデフォルトキャッシュに挿入された新しい値をすべてプッシュするAPIを作成します。これらの値は、REST "
+"API の例で行ったように、かわいい名前です。"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:36
+#, fuzzy
 msgid "We are using two features here :"
-msgstr ""
+msgstr "ここでは2つの機能を使用しています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:38
+#, fuzzy
 msgid "Infinispan client listeners"
-msgstr ""
+msgstr "Infinispan クライアントリスナー"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:41
-msgid "Vert.x bridge between the http://vertx.io/docs/vertx-core/java/#event_bus[Event Bus] and the browser"
+#, fuzzy
+msgid ""
+"Vert.x bridge between the http://vertx.io/docs/vertx-core/java/"
+"#event_bus[Event Bus] and the browser"
 msgstr ""
+"link:http://vertx.io/docs/vertx-core/java/#event_bus[イベントバス] とブラウザ間のVert."
+"xブリッジ"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:45
-msgid "http://infinispan.org/docs/stable/user_guide/user_guide.html#_Listeners_and_notifications_section[Infinispan Listeners] provide a way to the client get notified when something happens in a cache."
+#, fuzzy
+msgid ""
+"http://infinispan.org/docs/stable/user_guide/user_guide."
+"html#_Listeners_and_notifications_section[Infinispan Listeners] provide a "
+"way to the client get notified when something happens in a cache."
 msgstr ""
+"link:http://infinispan.org/docs/stable/user_guide/user_guide."
+"html#_Listeners_and_notifications_section[Infinispanのリスナーは] "
+"、キャッシュに何かが起こったときにクライアントに通知する方法を提供します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:53
-msgid "The http://vertx.io/docs/vertx-web/java/#_sockjs_event_bus_bridge[Event Bus Bridge] that connects to the browser, uses http://sockjs.org/[SockJS]. SockJS is a JavaScript library that provides a WebSocket API, but it can be used with browsers that don't support web-sockets (see the website of the project for more detailed information). Vert.x supports this library and creates a bridge between your browser and your back-end easily through the Event Bus."
+#, fuzzy
+msgid ""
+"The http://vertx.io/docs/vertx-web/java/#_sockjs_event_bus_bridge[Event Bus "
+"Bridge] that connects to the browser, uses http://sockjs.org/[SockJS]. "
+"SockJS is a JavaScript library that provides a WebSocket API, but it can be "
+"used with browsers that don't support web-sockets (see the website of the "
+"project for more detailed information). Vert.x supports this library and "
+"creates a bridge between your browser and your back-end easily through the "
+"Event Bus."
 msgstr ""
+"ブラウザと接続する link:http://vertx.io/docs/vertx-web/java/"
+"#_sockjs_event_bus_bridge[イベントバスブリッジ] では、 link:http://sockjs.org/[SockJS] "
+"を使用しています。SockJSはWebSocket "
+"APIを提供するJavaScriptライブラリですが、WebSocketに対応していないブラウザでも利用できます（詳細はプロジェクトのWebサイトを参照）。Vert."
+"xはこのライブラリをサポートしており、イベントバスを介してブラウザとバックエンドの間のブリッジを簡単に作成します。"
 
 #. type: Title ===
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:55
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Creating an Event Bus bridge"
-msgstr ""
+msgstr "イベントバスブリッジの作成"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:61
-msgid "Vert.x is a reactive framework, which means that uses https://github.com/ReactiveX/RxJava[RxJava] too, and provides a fancy API on top of it."
+#, fuzzy
+msgid ""
+"Vert.x is a reactive framework, which means that uses https://github.com/"
+"ReactiveX/RxJava[RxJava] too, and provides a fancy API on top of it."
 msgstr ""
+"Vert.xはリアクティブフレームワークで、 link:https://github.com/ReactiveX/RxJava[RxJava] "
+"も使用しており、その上に高機能なAPIを提供しています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:69
-msgid "First, we are going to create a new verticle called SendCuteNamesAPI.  This verticle extends the CacheAccessVerticle we created in the http://blog.infinispan.org/2017/12/first-steps-with-vertx-and-infinispan-rest-api.html[previous blog post]. CacheAccessVerticle initialises the connection with Infinispan using the http://infinispan.org/docs/dev/user_guide/user_guide.html#using_hot_rod_server[Hot Rod protocol.]"
+#, fuzzy
+msgid ""
+"First, we are going to create a new verticle called SendCuteNamesAPI.  This "
+"verticle extends the CacheAccessVerticle we created in the http://blog."
+"infinispan.org/2017/12/first-steps-with-vertx-and-infinispan-rest-api."
+"html[previous blog post]. CacheAccessVerticle initialises the connection "
+"with Infinispan using the http://infinispan.org/docs/dev/user_guide/"
+"user_guide.html#using_hot_rod_server[Hot Rod protocol.]"
 msgstr ""
+"まず、SendCuteNamesAPIという新しいバーティクルを作成します。このバーティクルは、前回の link:http://blog."
+"infinispan.org/2017/12/first-steps-with-vertx-and-infinispan-rest-api."
+"html[ブログ記事で] 作成したCacheAccessVerticleを拡張したものです link:http://blog.infinispan."
+"org/2017/12/first-steps-with-vertx-and-infinispan-rest-api.html[。 "
+"CacheAccessVerticle] は、Hot Rodプロトコルを使用してInfinispanとの接続を初期化します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:76
-msgid "Now we need to create a SocketJSHandler. This handler has a method called bridge, where we configure some BridgeOptions. Obviously *we don't want the client to be able to read everything* traveling on the event bus, and this won't happen. We *configure an address*, *'cute-names'*, and we add the permission to read and write to this address."
+#, fuzzy
+msgid ""
+"Now we need to create a SocketJSHandler. This handler has a method called "
+"bridge, where we configure some BridgeOptions. Obviously *we don't want the "
+"client to be able to read everything* traveling on the event bus, and this "
+"won't happen. We *configure an address*, *'cute-names'*, and we add the "
+"permission to read and write to this address."
 msgstr ""
+"ここで、SocketJSHandlerを作成する必要があります。このハンドラには bridge と呼ばれるメソッドがあり、そこでいくつかの "
+"BridgeOptions を設定します。明らかに、 *クライアントが* イベントバス上を移動する *すべてのものを読み取ることができ* "
+"ないようにしたいのですが、これは起こりません。私たちは *'* cute- *name' という* "
+"アドレスを設定し、このアドレスへの読み書き権限を追加します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:79
-msgid "This handler is passed to the event bus route, where the path is /eventbus/*."
-msgstr ""
+#, fuzzy
+msgid ""
+"This handler is passed to the event bus route, where the path is /eventbus/*."
+""
+msgstr "このハンドラはイベントバスルートに渡され、パスは/eventbus/*となります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:83
-msgid "Finally, we create a http server as we did in the REST API example. The difference is that instead of calling listen method, we call *rxListen* and *subscribe*."
+#, fuzzy
+msgid ""
+"Finally, we create a http server as we did in the REST API example. The "
+"difference is that instead of calling listen method, we call *rxListen* "
+"and *subscribe*."
 msgstr ""
+"最後に、REST API の例で行ったように http サーバを作成します。違いは、listenメソッドを呼び出すのではなく、 *rxListen* "
+"を呼び出して *subscribeする* ことです。"
 
 #. type: Title ===
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:88
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Getting notified and publishing"
-msgstr ""
+msgstr "通知を受けて公開する"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:94
-msgid "Using http://infinispan.org/docs/stable/user_guide/user_guide.html#_Listeners_and_notifications_section[Infinispan listeners] is very easy."
+#, fuzzy
+msgid ""
+"Using http://infinispan.org/docs/stable/user_guide/user_guide."
+"html#_Listeners_and_notifications_section[Infinispan listeners] is very easy."
+""
 msgstr ""
+"link:http://infinispan.org/docs/stable/user_guide/user_guide."
+"html#_Listeners_and_notifications_section[Infinispanのリスナーを] 使うのはとても簡単です。"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:102
-msgid "First, we are going to create a class that has the @ClientListener annotation. The client listener has to be added to the cache client configuration. We add a protected method called addConfigToCache that will be called just after the initialisation of the defaultCache in the abstract CacheAccessVerticle.  Verticles extending the abstract class can now add custom configuration to the client."
+#, fuzzy
+msgid ""
+"First, we are going to create a class that has "
+"the @ClientListener annotation. The client listener has to be added to the "
+"cache client configuration. We add a protected method "
+"called addConfigToCache that will be called just after the initialisation of "
+"the defaultCache in the abstract CacheAccessVerticle.  Verticles extending "
+"the abstract class can now add custom configuration to the client."
 msgstr ""
+"まず、@ClientListener "
+"アノテーションを持つクラスを作成します。クライアントリスナーは、キャッシュクライアントの設定に追加する必要があります。抽象 "
+"CacheAccessVerticle の defaultCache の初期化直後に呼び出される addConfigToCache "
+"という保護されたメソッドを追加します。抽象クラスを拡張したバーティクルは、クライアントにカスタム構成を追加できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:108
-msgid "We want to be notified when a new entry is created. In this case, our listener has to contain a method with the @ClientCacheEntryCreated annotation on it. The signature of the method has to include a ClientCacheEntryCreatedEvent<String> parameter. This parameter will hold the 'key' of the entry that has been created."
+#, fuzzy
+msgid ""
+"We want to be notified when a new entry is created. In this case, our "
+"listener has to contain a method with the @ClientCacheEntryCreated "
+"annotation on it. The signature of the method has to include a "
+"ClientCacheEntryCreatedEvent<String> parameter. This parameter will hold the "
+"'key' of the entry that has been created."
 msgstr ""
+"新しいエントリが作成されたときに通知を受けたいとします。この場合、リスナーには @ClientCacheEntryCreated "
+"アノテーションを持つメソッドが必要です。メソッドのシグネチャには、ClientCacheEntryCreatedEvent<String> "
+"パラメータを含める必要があります。このパラメータは、作成されたエントリの「キー」を保持します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:113
-msgid "Finally, we use the key to retrieve the name using the getAsync method and then *publish* the value in the** Vert.x event bus** to the **address **where the *socket listener* is permitted to read *: cute-names*."
+#, fuzzy
+msgid ""
+"Finally, we use the key to retrieve the name using the getAsync method and "
+"then *publish* the value in the** Vert.x event bus** to the "
+"**address **where the *socket listener* is permitted to read *: cute-names*."
 msgstr ""
+"最後に、getAsyncメソッドを使って名前を取得し、その *値を* Vert.xイベント *バスで* *ソケットリスナー* が *読み込める* "
+"*アドレスに* 公開します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:118
-msgid "Now we can run the main method and whenever we post a new name, we will see in the logs that the client listener is notified!"
+#, fuzzy
+msgid ""
+"Now we can run the main method and whenever we post a new name, we will see "
+"in the logs that the client listener is notified!"
 msgstr ""
+"これでメインメソッドを実行できるようになり、新しい名前を投稿するたびに、クライアントリスナーに通知されていることがログに表示されるようになりました"
 
 #. type: Title ===
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:124
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Client code"
-msgstr ""
+msgstr "クライアントコード"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:131
-msgid "We are going to create a super simple react application that will just display hello. React community is *huge*, so there are lot's of tutorials out there to create a hello world client application. This application has a single component that displays \"Hello\"."
+#, fuzzy
+msgid ""
+"We are going to create a super simple react application that will just "
+"display hello. React community is *huge*, so there are lot's of tutorials "
+"out there to create a hello world client application. This application has a "
+"single component that displays \"Hello\"."
 msgstr ""
+"今回は、ただhelloを表示するだけの超シンプルなReactアプリケーションを作成します。Reactのコミュニティは *巨大な* "
+"ので、helloの世界のクライアントアプリケーションを作るためのチュートリアルがたくさんあります。このアプリケーションは、\"Hello\"を表示するための単一のコンポーネントを持っています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:134
-msgid "The react application runs calling npm install and npm start  in http://localhost:9000/."
+#, fuzzy
+msgid ""
+"The react application runs calling npm install and npm start  in http://"
+"localhost:9000/."
 msgstr ""
+"http://localhost:9000/ で npm install と npm start を呼び出して react "
+"アプリケーションを実行します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:144
-msgid "Now we need to connect the client to the backend with *SockJS*.** **Vert.x provides a JavaScript library for that: https://www.npmjs.com/package/vertx3-eventbus-client[vertx3-eventbus-client], built on top of SockJS. We create an EventBus object that will connect to *http://localhost:8082/eventbus* as we configured in the SendCuteNamesAPI. We register a handler on the *'cute-names'* address.  The body of the message will contain the new cute name published in the event bus. Every time the handler is called, we update the component's state, and it will be rendered."
+#, fuzzy
+msgid ""
+"Now we need to connect the client to the backend with *SockJS*.** **Vert.x "
+"provides a JavaScript library for that: https://www.npmjs.com/package/vertx3-"
+"eventbus-client[vertx3-eventbus-client], built on top of SockJS. We create "
+"an EventBus object that will connect to *http://localhost:8082/eventbus* as "
+"we configured in the SendCuteNamesAPI. We register a handler on the *'cute-"
+"names'* address.  The body of the message will contain the new cute name "
+"published in the event bus. Every time the handler is called, we update the "
+"component's state, and it will be rendered."
 msgstr ""
+"ここで、クライアントを *SockJS* でバックエンドに接続する必要がある。 *Vert* ."
+"xはそのためのJavaScriptライブラリを提供している link:https://www.npmjs.com/package/vertx3-"
+"eventbus-client[。] SendCuteNamesAPIで設定した *ように、http://localhost:8082/"
+"eventbus* に接続するEventBusオブジェクトを作成します。 *cute-names'* "
+"アドレスにハンドラを登録します。メッセージの本文には、イベントバスで公開された新しいキュートネームが含まれます。ハンドラが呼ばれるたびにコンポーネントの状態が更新され、レンダリングされます。"
 
 #. type: Title ==
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:149
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Wrap up"
-msgstr ""
+msgstr "ラップアップ"
 
 #. type: Plain text
 #: upstream/_posts/2017-12-14-first-steps-with-vertx-and-infinispan-push-api.adoc:157
-msgid "We have learned how to create PUSH APIs with Vert.x, powered by Infinispan. The repository has some unit tests. Feedback is more than welcome to improve the code and the provided examples. I hope you enjoyed this tutorial ! On the next tutorials we will talk about https://github.com/vert-x3/vertx-infinispan[Infinispan as the cluster manager for Vert.x]. Stay tuned !"
+#, fuzzy
+msgid ""
+"We have learned how to create PUSH APIs with Vert.x, powered by Infinispan. "
+"The repository has some unit tests. Feedback is more than welcome to improve "
+"the code and the provided examples. I hope you enjoyed this tutorial ! On "
+"the next tutorials we will talk about https://github.com/vert-x3/vertx-"
+"infinispan[Infinispan as the cluster manager for Vert.x]. Stay tuned !"
 msgstr ""
+"Vert.x（Vert.x, powered by Infinispan）を使ってPUSH "
+"APIを作成する方法を学びました。リポジトリにはいくつかのユニットテストがあります。コードと提供された例を改善するためにフィードバックを歓迎します。このチュートリアルを楽しんでいただけたでしょうか？次回のチュートリアルでは、Vert."
+" link:https://github.com/vert-x3/vertx-infinispan[xのクラスタマネージャとしての] "
+"Infinispanについてお話します。"

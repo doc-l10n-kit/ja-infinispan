@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,56 +18,113 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-01-26-maniks-take-on-judcon-india.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-26-maniks-take-on-judcon-india.adoc:9
-msgid "layout: blog title: Manik's take on JUDCon India permalink: /blog/:year/:month/:day/maniks-take-on-judcon-india date: '2012-01-26T07:31:00.001-08:00' author: msurtani tags: [ \"event\", \"judcon\","
+#, fuzzy
+msgid ""
+"layout: blog title: Manik's take on JUDCon India permalink: /blog/:year/:"
+"month/:day/maniks-take-on-judcon-india date: '2012-01-26T07:31:00.001-08:00' "
+"author: msurtani tags: [ \"event\", \"judcon\","
 msgstr ""
+"layout: ブログタイトル。Manik's take on JUDCon India パーマリンク./blog/:year/:month/:day/"
+"maniks-take-on-judcon-india date: '2012-01-26T07:31:00.001-08:00' author: "
+"msurtani tags.[ \"イベント\", \"judcon\"."
 
 #. type: Plain text
 #: upstream/_posts/2012-01-26-maniks-take-on-judcon-india.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6248285865035106477\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/01/maniks-take-on-judcon-india.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6248285865035106477\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/01/maniks-take-on-judcon-"
+"india.html\n"
 "---\n"
 msgstr ""
+"] blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6248285865035106477 blogger_orig_url: https://blog.infinispan.org/2012/01/"
+"maniks-take-on-judcon-india.html ---"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-26-maniks-take-on-judcon-india.adoc:19
-msgid "JUDCon has, for the first time ever, spread beyond the western world.  http://www.jboss.org/events/JUDCon/2012/india[JUDCon India], held on Tuesday and Wednesday this week, was a roaring success with over 800 passionate community members flocking to the event held in Bangalore, India's answer to California's silicon valley."
+#, fuzzy
+msgid ""
+"JUDCon has, for the first time ever, spread beyond the western world.  http:/"
+"/www.jboss.org/events/JUDCon/2012/india[JUDCon India], held on Tuesday and "
+"Wednesday this week, was a roaring success with over 800 passionate "
+"community members flocking to the event held in Bangalore, India's answer to "
+"California's silicon valley."
 msgstr ""
+"JUDConは、初めて西欧諸国を超えて開催されました。今週の火曜日と水曜日に開催された link:http://www.jboss.org/events/"
+"JUDCon/2012/india[JUDCon India] "
+"は、カリフォルニア州のシリコンバレーに隣接するインドのバンガロールで開催されたイベントに800人以上の情熱的なコミュニティメンバーが集まり、大成功を収めました。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-26-maniks-take-on-judcon-india.adoc:24
-msgid "[.small]#http://maps.google.co.uk/maps?hl=en&q=bangalore&ie=UTF8&hq=&hnear=Bengaluru,+Bengaluru+Rural,+Karnataka,+India&gl=uk&ll=12.971599,77.594563&spn=23.831638,57.084961&t=m&z=5&source=embed[View Larger Map]#"
+#, fuzzy
+msgid ""
+"[.small]#http://maps.google.co.uk/maps?hl=en&q=bangalore&ie=UTF8&hq=&hnear="
+"Bengaluru,+Bengaluru+Rural,+Karnataka,+India&gl=uk&ll=12.971599,77."
+"594563&spn=23.831638,57.084961&t=m&z=5&source=embed[View Larger Map]#"
 msgstr ""
+"link:http://maps.google.co.uk/maps?hl=en&q=bangalore&ie=UTF8&hq=&hnear="
+"Bengaluru,+Bengaluru+Rural,+Karnataka,+India&gl=uk&ll=12.971599,77."
+"594563&spn=23.831638,57.084961&t=m&z=5&source=embed[大きな地図で見る]"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-26-maniks-take-on-judcon-india.adoc:29
-msgid "One of the themes was developer productivity and engagement, to help community members get more involved in the projects they care about, to help them succeed in their businesses with JBoss technology."
+#, fuzzy
+msgid ""
+"One of the themes was developer productivity and engagement, to help "
+"community members get more involved in the projects they care about, to help "
+"them succeed in their businesses with JBoss technology."
 msgstr ""
+"テーマの一つは、開発者の生産性向上とエンゲージメントで、コミュニティメンバーが気になるプロジェクトにもっと参加してもらい、JBossの技術を使ってビジネスを成功させるための支援をしたいというものでした。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-26-maniks-take-on-judcon-india.adoc:37
-msgid "JBoss AS 7, NoSQL and platform-as-a-service were a few of the popular themes, and there were no less than 6 talks on infinispan in just two days, presented by myself and https://community.jboss.org/people/galder.zamarreno[Galder Zamarreño].  The talks ranged from high level overviews and roadmaps to detailed, hands-on hacking sessions, as well as presenting thoughts and ideas for future development."
+#, fuzzy
+msgid ""
+"JBoss AS 7, NoSQL and platform-as-a-service were a few of the popular "
+"themes, and there were no less than 6 talks on infinispan in just two days, "
+"presented by myself and https://community.jboss.org/people/galder."
+"zamarreno[Galder Zamarreño].  The talks ranged from high level overviews and "
+"roadmaps to detailed, hands-on hacking sessions, as well as presenting "
+"thoughts and ideas for future development."
 msgstr ""
+"JBoss AS 7、NoSQL、プラットフォーム・アズ・ア・サービスなどが人気のテーマで、私と link:https://community."
+"jboss.org/people/galder.zamarreno[ガルダー・ザマレーニョ] "
+"によるinfinispanに関する講演が2日間で6回も行われました。講演は、高レベルの概要やロードマップから、詳細なハンズオンハッキングセッションまで、多岐にわたっており、今後の開発に向けての考えやアイデアを発表しました。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-26-maniks-take-on-judcon-india.adoc:42
-msgid "All in, an excellent community conference, well organised by http://www.saltmarch.com/[Saltmarch Media], and very well received by the community. I for one look forward to another JUDCon in Bangalore in the hopefully not too distant future."
+#, fuzzy
+msgid ""
+"All in, an excellent community conference, well organised by http://www."
+"saltmarch.com/[Saltmarch Media], and very well received by the community. I "
+"for one look forward to another JUDCon in Bangalore in the hopefully not too "
+"distant future."
 msgstr ""
+"全体としては、 link:http://www.saltmarch.com/[Saltmarch Media] "
+"が主催した素晴らしいコミュニティカンファレンスであり、コミュニティからも非常に高い評価を受けました。私はバンガロールで開催されるJUDConに期待しています。"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-26-maniks-take-on-judcon-india.adoc:45
+#, fuzzy
 msgid "Cheers Manik"
-msgstr ""
+msgstr "乾杯 マニク"
 
 #. type: Plain text
 #: upstream/_posts/2012-01-26-maniks-take-on-judcon-india.adoc:49
-msgid "PS: After writing this, I noticed that Galder has blogged about http://infinispan.blogspot.com/2012/01/judcon-india-post-mortem.html[JUDCon India] too!"
+#, fuzzy
+msgid ""
+"PS: After writing this, I noticed that Galder has blogged about http://"
+"infinispan.blogspot.com/2012/01/judcon-india-post-mortem.html[JUDCon India] "
+"too!"
 msgstr ""
+"追記：これを書いていて気づいたのですが、ガルダーさんも link:http://infinispan.blogspot.com/2012/01/"
+"judcon-india-post-mortem.html[JUDCon Indiaの] ことをブログに書いていますね"

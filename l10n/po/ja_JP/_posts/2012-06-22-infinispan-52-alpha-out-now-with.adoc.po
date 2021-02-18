@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,81 +18,132 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-52-alpha-out-now-with.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-52-alpha-out-now-with.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 5.2 alpha out now with Command Line Inteface!\n"
 "permalink: /blog/:year/:month/:day/infinispan-52-alpha-out-now-with\n"
 "date: '2012-06-22T16:24:00.001-07:00'\n"
 "author: galder\n"
-"tags: [ \"release\", \"hbase\", \"alpha\", \"lucene\", \"jgroups\", \"berkeleydb\", \"cli\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5006916479344813207\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/06/infinispan-52-alpha-out-now-with.html\n"
+"tags: [ \"release\", \"hbase\", \"alpha\", \"lucene\", \"jgroups\", "
+"\"berkeleydb\", \"cli\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5006916479344813207\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/06/infinispan-52-alpha-"
+"out-now-with.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 5.2 alphaがコマンドラインインターフェースでリリースされました!\n"
+"permalink: /blog/:year/:month/:day/infinispan-52-alpha-out-now-with\n"
+"date: '2012-06-22T16:24:00.001-07:00'\n"
+"author: galder\n"
+"tags: [ \"release\", \"hbase\", \"alpha\", \"lucene\", \"jgroups\", "
+"\"berkeleydb\", \"cli\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5006916479344813207\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/06/infinispan-52-alpha-"
+"out-now-with.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-52-alpha-out-now-with.adoc:13
-msgid "Infinispan 5.2.0.ALPHA1 has just been released and it comes with a load of new goodies, here's a summary:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Infinispan 5.2.0.ALPHA1 has just been released and it comes with a load of "
+"new goodies, here's a summary:"
+msgstr "Infinispan 5.2.0.ALPHA1がリリースされました。"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-52-alpha-out-now-with.adoc:17
-msgid "Command Line Interface! See http://infinispan.blogspot.ch/2012/06/infinispan-cli.html[Tristan's blog post] for more information."
+#, fuzzy
+msgid ""
+"Command Line Interface! See http://infinispan.blogspot.ch/2012/06/infinispan-"
+"cli.html[Tristan's blog post] for more information."
 msgstr ""
+"コマンドラインインターフェース!詳しくは link:http://infinispan.blogspot.ch/2012/06/infinispan-"
+"cli.html[Tristanさんのブログ記事を] ご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-52-alpha-out-now-with.adoc:19
-msgid "Infinispan based Lucene directory has been upgraded to Apache Lucene 3.6."
-msgstr ""
+#, fuzzy
+msgid ""
+"Infinispan based Lucene directory has been upgraded to Apache Lucene 3.6."
+msgstr "InfinispanベースのLuceneディレクトリをApache Lucene 3.6にアップグレードしました。"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-52-alpha-out-now-with.adoc:21
-msgid "https://issues.jboss.org/browse/ISPN-2084[Lucene Index can be used as a cache loader source]."
+#, fuzzy
+msgid ""
+"https://issues.jboss.org/browse/ISPN-2084[Lucene Index can be used as a "
+"cache loader source]."
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-2084[Lucene "
+"Indexをキャッシュローダーのソースとして使用することができます] 。"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-52-alpha-out-now-with.adoc:23
-msgid "https://issues.jboss.org/browse/ISPN-1949[Allow non-indexed values in indexed caches]."
+#, fuzzy
+msgid ""
+"https://issues.jboss.org/browse/ISPN-1949[Allow non-indexed values in "
+"indexed caches]."
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-"
+"1949[インデックス化されたキャッシュでインデックス化されていない値を許可します] 。"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-52-alpha-out-now-with.adoc:24
+#, fuzzy
 msgid "Make @ProvidedId annotation on @Indexed objects optional."
-msgstr ""
+msgstr "Indexedオブジェクトの@ProvidedIdアノテーションをオプションにしました。"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-52-alpha-out-now-with.adoc:25
+#, fuzzy
 msgid "Upgrade to JGroups 3.1.x."
-msgstr ""
+msgstr "JGroups 3.1.xへのアップグレード。"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-52-alpha-out-now-with.adoc:26
+#, fuzzy
 msgid "Upgrade to Berkeley DB 5.x"
-msgstr ""
+msgstr "Berkeley DB 5.xへのアップグレード"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-52-alpha-out-now-with.adoc:27
+#, fuzzy
 msgid "HBase cache store plugin"
-msgstr ""
+msgstr "HBase キャッシュストアプラグイン"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-52-alpha-out-now-with.adoc:33
-msgid "Full details of all the rest enhancements can be found https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12318882[here].  If you have feedback, please visit our http://community.jboss.org/en/infinispan?view=discussions[forums].  Finally, as always, you can download the release from here."
+#, fuzzy
+msgid ""
+"Full details of all the rest enhancements can be found https://issues.jboss."
+"org/secure/ReleaseNote.jspa?projectId=12310799&version=12318882[here].  If "
+"you have feedback, please visit our http://community.jboss.org/en/"
+"infinispan?view=discussions[forums].  Finally, as always, you can download "
+"the release from here."
 msgstr ""
+"その他の機能強化の詳細については、 link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12318882[こちらを] ご覧ください。ご意見・ご感想がありましたら、 link:"
+"http://community.jboss.org/en/infinispan?view=discussions[フォーラムを] "
+"ご覧ください。最後に、いつものように、ここからリリースをダウンロードすることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-52-alpha-out-now-with.adoc:37
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-52-alpha-out-now-with.adoc:38
+#, fuzzy
 msgid "Galder"
-msgstr ""
+msgstr "ガルダー"

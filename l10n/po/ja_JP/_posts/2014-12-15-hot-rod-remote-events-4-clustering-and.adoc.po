@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-12-15-hot-rod-remote-events-4-clustering-and.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-15-hot-rod-remote-events-4-clustering-and.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: 'Hot Rod Remote Events #4: Clustering and Failover'\n"
@@ -36,80 +36,204 @@ msgid ""
 "\"remote events\",\n"
 "\"failover\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8775425045739573587\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/12/hot-rod-remote-events-4-clustering-and.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8775425045739573587\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/12/hot-rod-remote-events-"
+"4-clustering-and.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 'Hot Rod Remote Events #4: Clustering and Failover'\n"
+"permalink: /blog/:year/:month/:day/hot-rod-remote-events-4-clustering-and\n"
+"date: '2014-12-15T00:27:00.000-08:00'\n"
+"author: galder\n"
+"tags: [ \"hotrod\",\n"
+"\"event\",\n"
+"\"remote events\",\n"
+"\"failover\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8775425045739573587\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/12/hot-rod-remote-events-"
+"4-clustering-and.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-15-hot-rod-remote-events-4-clustering-and.adoc:24
-msgid "This blog post is the last in a series that looks at the forthcoming Hot Rod Remote Events functionality included in Infinispan 7.0.  http://blog.infinispan.org/2014/08/hot-rod-remote-events-1-getting-started.html[First article] focused on how to get started receiving remote events from Hot Rod servers. The http://blog.infinispan.org/2014/08/hot-rod-remote-events-2-filtering-events.html[second article] looked at how Hot Rod remote events can be filtered, and the http://blog.infinispan.org/2014/09/hot-rod-remote-events-3-customizing.html[third one] showed how to customize contents of events."
+#, fuzzy
+msgid ""
+"This blog post is the last in a series that looks at the forthcoming Hot Rod "
+"Remote Events functionality included in Infinispan 7.0.  http://blog."
+"infinispan.org/2014/08/hot-rod-remote-events-1-getting-started.html[First "
+"article] focused on how to get started receiving remote events from Hot Rod "
+"servers. The http://blog.infinispan.org/2014/08/hot-rod-remote-events-2-"
+"filtering-events.html[second article] looked at how Hot Rod remote events "
+"can be filtered, and the http://blog.infinispan.org/2014/09/hot-rod-remote-"
+"events-3-customizing.html[third one] showed how to customize contents of "
+"events."
 msgstr ""
+"このブログ記事は、Infinispan 7.0に搭載される予定のHot Rodリモートイベント機能を見ていくシリーズの最終回です。 link:http:/"
+"/blog.infinispan.org/2014/08/hot-rod-remote-events-1-getting-started."
+"html[最初の記事] では、Hot Rodサーバーからのリモートイベントの受信を開始する方法に焦点を当てました。 link:http://blog."
+"infinispan.org/2014/08/hot-rod-remote-events-2-filtering-events.html[2回目の記事] "
+"ではHot Rodリモートイベントのフィルタリング方法、 link:http://blog.infinispan.org/2014/09/hot-rod-"
+"remote-events-3-customizing.html[3回目の] 記事ではイベントの内容をカスタマイズする方法を紹介しました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-15-hot-rod-remote-events-4-clustering-and.adoc:27
-msgid "In this last article, we'll be focusing on how remote events are fired in a clustered environment and how failover situations are dealt with."
+#, fuzzy
+msgid ""
+"In this last article, we'll be focusing on how remote events are fired in a "
+"clustered environment and how failover situations are dealt with."
 msgstr ""
+"最後の記事では、クラスタ化された環境でリモートイベントがどのように発生するのか、またフェイルオーバーの状況にどのように対処するのかに注目していきます。"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-15-hot-rod-remote-events-4-clustering-and.adoc:33
-msgid "The most important thing to know about remote events in a clustered environment is that *when a client adds a remote listener, this is installed in a single node in the cluster and that this node is in charge of sending events back to the client for all affected operations happening cluster wide*."
+#, fuzzy
+msgid ""
+"The most important thing to know about remote events in a clustered "
+"environment is that *when a client adds a remote listener, this is installed "
+"in a single node in the cluster and that this node is in charge of sending "
+"events back to the client for all affected operations happening cluster "
+"wide*."
 msgstr ""
+"クラスタ環境におけるリモートイベントについて知っておくべき最も重要なことは、 "
+"*クライアントがリモートリスナーを追加した場合、これはクラスタ内の単一のノードにインストールされ、このノードはクラスタ全体で発生しているすべての影響を受ける操作に対して、クライアントにイベントを送信する役割を担っている* "
+"ということです。"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-15-hot-rod-remote-events-4-clustering-and.adoc:45
-msgid "As a result of this, when filtering or event customization is applied, the org.infinispan.notifications.cachelistener.filter.CacheEventFilter and/or org.infinispan.notifications.cachelistener.filter.CacheEventConverter instances must be somehow marshallable. This is necessary because when the client listener is installed in a cluster, the filter and/or converter instances are sent to other nodes in the cluster so that filtering and conversion can happen right where the event originates, hence improving efficiency. These classes can be made marshallable by making them extend Serializable, or http://infinispan.org/docs/7.0.x/user_guide/user_guide.html#_plugging_infinispan_with_user_defined_externalizers[providing and registering a custom Externalizer for them]."
+#, fuzzy
+msgid ""
+"As a result of this, when filtering or event customization is applied, "
+"the org.infinispan.notifications.cachelistener.filter.CacheEventFilter and/"
+"or org.infinispan.notifications.cachelistener.filter.CacheEventConverter "
+"instances must be somehow marshallable. This is necessary because when the "
+"client listener is installed in a cluster, the filter and/or converter "
+"instances are sent to other nodes in the cluster so that filtering and "
+"conversion can happen right where the event originates, hence improving "
+"efficiency. These classes can be made marshallable by making them extend "
+"Serializable, or http://infinispan.org/docs/7.0.x/user_guide/user_guide."
+"html#_plugging_infinispan_with_user_defined_externalizers[providing and "
+"registering a custom Externalizer for them]."
 msgstr ""
+"この結果、フィルタリングまたはイベントのカスタマイズが適用されると、org.infinispan.notifications.cachelistener."
+"filter.CacheEventFilter および/または org.infinispan.notifications.cachelistener."
+"filter.CacheEventConverter "
+"インスタンスは、何らかの方法でマーシャル可能でなければなりません。これは、クライアント・リスナーがクラスタにインストールされているときに、フィルタリングと変換がイベントが発生した場所で行われるように、フィルタリングと変換がクラスタ内の他のノードに送信されるため、効率が向上するために必要です。これらのクラスは、Serializable "
+"を拡張するか、 link:http://infinispan.org/docs/7.0.x/user_guide/user_guide."
+"html#_plugging_infinispan_with_user_defined_externalizers[カスタム Externalizer "
+"を提供して登録する] ことでマーシャル可能にすることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-15-hot-rod-remote-events-4-clustering-and.adoc:56
-msgid "Under normal circumstances, the code and examples showed in previous blog posts work the same way in clustered environment. However, in a clustered environment, a decision needs to be made with regards to how to deal with situations where nodes go down: If a node goes down that does not have the client listener installed, nothing happens. However, when the node containing the client listener goes down, the Hot Rod client implementation transparently fails over the client listener registration to a different node. As a result of this failover, there could be a gap in the event consumption. This gap is solved using one of these solutions:"
+#, fuzzy
+msgid ""
+"Under normal circumstances, the code and examples showed in previous blog "
+"posts work the same way in clustered environment. However, in a clustered "
+"environment, a decision needs to be made with regards to how to deal with "
+"situations where nodes go down: If a node goes down that does not have the "
+"client listener installed, nothing happens. However, when the node "
+"containing the client listener goes down, the Hot Rod client implementation "
+"transparently fails over the client listener registration to a different "
+"node. As a result of this failover, there could be a gap in the event "
+"consumption. This gap is solved using one of these solutions:"
 msgstr ""
+"通常の状況では、以前のブログ記事で示したコードや例はクラスタ環境でも同じように動作します。しかし、クラスタ化された環境では、ノードがダウンした場合の対処法を決定する必要があります。クライアントリスナーがインストールされていないノードがダウンしても何も起こりません。クライアントリスナーがインストールされていないノードがダウンした場合、何も起こりません。しかし、クライアントリスナーを含むノードがダウンした場合、Hot "
+"Rodクライアントの実装は、クライアントリスナーの登録を別のノードへのフェイルオーバーに透過的に失敗します。このフェイルオーバーの結果、イベント消費にギャップが生じる可能性があります。このギャップは、これらのソリューションのいずれかを使用して解決されます。"
 
 #. type: Title ====
 #: upstream/_posts/2014-12-15-hot-rod-remote-events-4-clustering-and.adoc:58
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "State Delivery"
-msgstr ""
+msgstr "ステートデリバリー"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-15-hot-rod-remote-events-4-clustering-and.adoc:75
-msgid "The @ClientListener annotation has an optional parameter called includeCurrentState. When this is enabled and the client listener is registered, before receiving any events for on-going operations, the server sends ClientCacheEntryCreatedEvent event instances (for methods annotated with @ClientCacheEntryCreated) for all existing cache entries to the client. This offers the client an opportunity to construct some state or computation based on the contents of the clustered cache. When the Hot Rod client transparently fails over registered listeners, it re-registers them in a different node and if includeCurrentState is enabled, clients can recompute their state or computation to reinstate it to what it was before the failover. The downside of includeCurrentState is that it's performance is heavily dependant on the cache size, and hence it's disabled by default."
+#, fuzzy
+msgid ""
+"The @ClientListener annotation has an optional parameter "
+"called includeCurrentState. When this is enabled and the client listener is "
+"registered, before receiving any events for on-going operations, the server "
+"sends ClientCacheEntryCreatedEvent event instances (for methods annotated "
+"with @ClientCacheEntryCreated) for all existing cache entries to the client. "
+"This offers the client an opportunity to construct some state or computation "
+"based on the contents of the clustered cache. When the Hot Rod client "
+"transparently fails over registered listeners, it re-registers them in a "
+"different node and if includeCurrentState is enabled, clients can recompute "
+"their state or computation to reinstate it to what it was before the "
+"failover. The downside of includeCurrentState is that it's performance is "
+"heavily dependant on the cache size, and hence it's disabled by default."
 msgstr ""
+"ClientListener アノテーションには、includeCurrentState "
+"というオプションのパラメータがあります。これが有効でクライアントリスナーが登録されている場合、進行中の操作のイベントを受信する前に、サーバーは、すべての既存のキャッシュエントリのClientCacheEntryCreatedEventイベントインスタンス（@ClientCacheEntryCreatedでアノテーションされたメソッド用）をクライアントに送信します。これにより、クライアントは、クラスタ化されたキャッシュのコンテンツに基づいてステートや計算を構築する機会を提供します。Hot "
+"Rod クライアントが登録されたリスナーを透過的にフェイルオーバーすると、別のノードに再登録し、includeCurrentState "
+"が有効になっている場合、クライアントは状態や計算を再計算してフェイルオーバー前の状態に戻すことができます。includeCurrentState "
+"の欠点は、パフォーマンスがキャッシュサイズに大きく依存することで、デフォルトでは無効になっています。"
 
 #. type: Title ====
 #: upstream/_posts/2014-12-15-hot-rod-remote-events-4-clustering-and.adoc:78
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "@ClientCacheFailover"
-msgstr ""
+msgstr "クライアントキャッシュフェイルオーバー"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-15-hot-rod-remote-events-4-clustering-and.adoc:86
-msgid "Alternatively, instead of relying on receiving state, users can define a method with @ClientCacheFailover annotation that receives ClientCacheFailoverEvent as parameter inside the client listener implementation:"
+#, fuzzy
+msgid ""
+"Alternatively, instead of relying on receiving state, users can define a "
+"method with @ClientCacheFailover annotation that "
+"receives ClientCacheFailoverEvent as parameter inside the client listener "
+"implementation:"
 msgstr ""
+"あるいは、状態の受信に依存する代わりに、クライアントリスナー実装内でClientCacheFailoverEventをパラメータとして受信する@ClientCacheFailoverアノテーションを持つメソッドを定義することもできます。"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-15-hot-rod-remote-events-4-clustering-and.adoc:96
-msgid "This method would be called back whenever the node that had this client listener has gone down. This can be handy for situations when the end users just wants to clear up some local state as a result of the failover, e.g. clear a near or L1 cache. When events are received again, the near or L1 cache could be repopulated again."
+#, fuzzy
+msgid ""
+"This method would be called back whenever the node that had this client "
+"listener has gone down. This can be handy for situations when the end users "
+"just wants to clear up some local state as a result of the failover, e.g. "
+"clear a near or L1 cache. When events are received again, the near or L1 "
+"cache could be repopulated again."
 msgstr ""
+"このメソッドは、このクライアントリスナーを持っていたノードがダウンした場合にはいつでもコールバックされます。これは、エンドユーザがフェイルオーバーの結果として、ニアキャッシュやL1キャッシュをクリアするなど、ローカル状態をクリアしたい場合に便利です。イベントが再び受信されると、ニアキャッシュや "
+"L1 キャッシュが再び補充される可能性があります。"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-15-hot-rod-remote-events-4-clustering-and.adoc:103
-msgid "This callback method of dealing with client listener failover offers a simple, efficient solution to dealing with cluster topology changes affecting client listeners. Depending on the remote event use case, this method might be better suited that state delivery."
+#, fuzzy
+msgid ""
+"This callback method of dealing with client listener failover offers a "
+"simple, efficient solution to dealing with cluster topology changes "
+"affecting client listeners. Depending on the remote event use case, this "
+"method might be better suited that state delivery."
 msgstr ""
+"クライアントリスナーのフェイルオーバーを処理するこのコールバックメソッドは、クライアントリスナーに影響を与えるクラスタトポロジーの変更を処理するためのシンプルで効率的なソリューションを提供します。リモートイベントのユースケースによっては、このメソッドはステートデリバリよりも適しているかもしれません。"
 
 #. type: Title ===
 #: upstream/_posts/2014-12-15-hot-rod-remote-events-4-clustering-and.adoc:106
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Final Words"
-msgstr ""
+msgstr "最後の言葉"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-15-hot-rod-remote-events-4-clustering-and.adoc:115
-msgid "This post marks the end of the remote event series. In future Infinispan versions, we'll continue improving the technology adding some extra features, and more importantly, we'll start building higher level abstractions on top of remote events, such as Hot Rod client Near Caches."
+#, fuzzy
+msgid ""
+"This post marks the end of the remote event series. In future Infinispan "
+"versions, we'll continue improving the technology adding some extra "
+"features, and more importantly, we'll start building higher level "
+"abstractions on top of remote events, such as Hot Rod client Near Caches."
 msgstr ""
+"この投稿をもって、リモートイベントシリーズは終了となります。今後の Infinispan "
+"のバージョンでは、いくつかの追加機能を追加して技術の改良を続け、さらに重要なことは、Hot Rod クライアントの Near Caches "
+"のようなリモートイベントの上に、より高レベルの抽象化を構築し始めることです。"
 
 #. type: Plain text
 #: upstream/_posts/2014-12-15-hot-rod-remote-events-4-clustering-and.adoc:118
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

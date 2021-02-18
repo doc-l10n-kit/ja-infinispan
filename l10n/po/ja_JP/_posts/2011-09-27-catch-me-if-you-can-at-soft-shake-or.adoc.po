@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-09-27-catch-me-if-you-can-at-soft-shake-or.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-27-catch-me-if-you-can-at-soft-shake-or.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Catch me if you can... at Soft Shake or JUDCon!\n"
@@ -32,38 +32,94 @@ msgid ""
 "date: '2011-09-27T01:23:00.000-07:00'\n"
 "author: galder\n"
 "tags: []\n"
-"thumbnail: http://1.bp.blogspot.com/-WpVqrsDrEFo/ToGc0e6rWsI/AAAAAAAAC7E/d4T8KztrvJE/s72-c/sos11-speaker-b.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4532457409889596018\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/09/catch-me-if-you-can-at-soft-shake-or.html\n"
+"thumbnail: http://1.bp.blogspot.com/-WpVqrsDrEFo/ToGc0e6rWsI/AAAAAAAAC7E/"
+"d4T8KztrvJE/s72-c/sos11-speaker-b.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4532457409889596018\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/09/catch-me-if-you-can-at-"
+"soft-shake-or.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: ソフトシェイクかJUDConでつかまえてね!\n"
+"permalink: /blog/:year/:month/:day/catch-me-if-you-can-at-soft-shake-or\n"
+"date: '2011-09-27T01:23:00.000-07:00'\n"
+"author: galder\n"
+"tags: []\n"
+"thumbnail: http://1.bp.blogspot.com/-WpVqrsDrEFo/ToGc0e6rWsI/AAAAAAAAC7E/"
+"d4T8KztrvJE/s72-c/sos11-speaker-b.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4532457409889596018\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/09/catch-me-if-you-can-at-"
+"soft-shake-or.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-27-catch-me-if-you-can-at-soft-shake-or.adoc:13
-msgid "http://1.bp.blogspot.com/-WpVqrsDrEFo/ToGc0e6rWsI/AAAAAAAAC7E/d4T8KztrvJE/s1600/sos11-speaker-b.png[image:http://1.bp.blogspot.com/-WpVqrsDrEFo/ToGc0e6rWsI/AAAAAAAAC7E/d4T8KztrvJE/s200/sos11-speaker-b.png[image,width=200,height=101]]"
+#, fuzzy
+msgid ""
+"http://1.bp.blogspot.com/-WpVqrsDrEFo/ToGc0e6rWsI/AAAAAAAAC7E/d4T8KztrvJE/"
+"s1600/sos11-speaker-b.png[image:http://1.bp.blogspot.com/-WpVqrsDrEFo/"
+"ToGc0e6rWsI/AAAAAAAAC7E/d4T8KztrvJE/s200/sos11-speaker-b.png[image,width="
+"200,height=101]]"
 msgstr ""
+"link:http://1.bp.blogspot.com/-WpVqrsDrEFo/ToGc0e6rWsI/AAAAAAAAC7E/"
+"d4T8KztrvJE/s1600/sos11-speaker-b.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-27-catch-me-if-you-can-at-soft-shake-or.adoc:21
-msgid "As you're probably well aware, the Infinispan team is delivering talks all around the world. If you're in the US and you want to find out more Infinispan/EDG, http://infinispan.blogspot.com/2011/09/javaone-2011-and-devoxx-2011.html[Manik will be speaking at JavaOne], but if like me you're staying out in Europe, why not come to http://soft-shake.ch/en/[Soft Shake] in Geneva?"
+#, fuzzy
+msgid ""
+"As you're probably well aware, the Infinispan team is delivering talks all "
+"around the world. If you're in the US and you want to find out more "
+"Infinispan/EDG, http://infinispan.blogspot.com/2011/09/javaone-2011-and-"
+"devoxx-2011.html[Manik will be speaking at JavaOne], but if like me you're "
+"staying out in Europe, why not come to http://soft-shake.ch/en/[Soft Shake] "
+"in Geneva?"
 msgstr ""
+"ご存知のように、Infinispanチームは世界中で講演を行っています。アメリカにいてInfinispan/EDGについてもっと知りたい方は、 link:"
+"http://infinispan.blogspot.com/2011/09/javaone-2011-and-devoxx-2011."
+"html[JavaOneでManikが講演し] ますが、私のようにヨーロッパに滞在している方は、ジュネーブで開催される link:http://soft-"
+"shake.ch/en/[Soft Shake] に来てみてはいかがでしょうか？"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-27-catch-me-if-you-can-at-soft-shake-or.adoc:28
-msgid "http://soft-shake.ch/en/[Soft Shake] is an IT conference being held in Geneva on October 3rd and 4th and http://soft-shake.ch/en/schedule/[I'll be speaking] about data grids and data caching with Infinispan on the 3rd. In fact, I'll be speaking twice! At 1pm you'll see me doing an introduction to data grids and data caching, and at 5pm I'll be delving into the data grid vs database debate."
+#, fuzzy
+msgid ""
+"http://soft-shake.ch/en/[Soft Shake] is an IT conference being held in "
+"Geneva on October 3rd and 4th and http://soft-shake.ch/en/schedule/[I'll be "
+"speaking] about data grids and data caching with Infinispan on the 3rd. In "
+"fact, I'll be speaking twice! At 1pm you'll see me doing an introduction to "
+"data grids and data caching, and at 5pm I'll be delving into the data grid "
+"vs database debate."
 msgstr ""
+"link:http://soft-shake.ch/en/[Soft Shake] は10月3日と4日にジュネーブで開催されるITカンファレンスで、 "
+"link:http://soft-shake.ch/en/schedule/[私は] "
+"3日にInfinispanと一緒にデータグリッドとデータキャッシングについて講演します。3日はInfinispanと一緒にデータグリッドとデータキャッシングについて講演します。午後1時からはデータグリッドとデータキャッシングの紹介をし、午後5時からはデータグリッドとデータベースの議論を掘り下げていきます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-27-catch-me-if-you-can-at-soft-shake-or.adoc:31
-msgid "So, if any of this topics interest you, come and join us at Soft Shake! It's gonna be fun :)"
-msgstr ""
+#, fuzzy
+msgid ""
+"So, if any of this topics interest you, come and join us at Soft Shake! It's "
+"gonna be fun :)"
+msgstr "もし興味のある話題があれば、ぜひソフトシェイクに参加してみてください。きっと楽しいですよ :)"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-27-catch-me-if-you-can-at-soft-shake-or.adoc:37
-msgid "And that is not all! I'll be one of the Infinispan team members speaking in JUDCon London at the end of October. The http://www.jboss.org/events/JUDCon/2011/london/agenda.html[agenda] is now live and you'll see me talking about near caching on the 31st of October. Don't miss it!"
+#, fuzzy
+msgid ""
+"And that is not all! I'll be one of the Infinispan team members speaking in "
+"JUDCon London at the end of October. The http://www.jboss.org/events/JUDCon/"
+"2011/london/agenda.html[agenda] is now live and you'll see me talking about "
+"near caching on the 31st of October. Don't miss it!"
 msgstr ""
+"それだけではありません。10月末にロンドンで開催される JUDCon London で Infinispan のチームメンバーの一人として講演します。 "
+"link:http://www.jboss.org/events/JUDCon/2011/london/agenda.html[アジェンダ] "
+"は現在ライブで、10月31日にニアキャッシングについて話すのを見ることができます。お見逃しなく"
 
 #. type: Plain text
 #: upstream/_posts/2011-09-27-catch-me-if-you-can-at-soft-shake-or.adoc:39
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

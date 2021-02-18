@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-07-28-upcoming-infinispan-700-mapreduce-is.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-28-upcoming-infinispan-700-mapreduce-is.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: 'Upcoming Infinispan 7.0.0 Map/Reduce is blazing fast '\n"
@@ -32,97 +32,261 @@ msgid ""
 "date: '2014-07-28T07:07:00.001-07:00'\n"
 "author: vblagojevic\n"
 "tags: []\n"
-"thumbnail: http://3.bp.blogspot.com/-yudmjmeJ7Bs/U9ZB-sW9KeI/AAAAAAAADZU/TM5T-TxYM2g/s72-c/ISPN-6+Map:Reduce.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4634811328359598568\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/07/upcoming-infinispan-700-mapreduce-is.html\n"
+"thumbnail: http://3.bp.blogspot.com/-yudmjmeJ7Bs/U9ZB-sW9KeI/AAAAAAAADZU/"
+"TM5T-TxYM2g/s72-c/ISPN-6+Map:Reduce.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4634811328359598568\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/07/upcoming-infinispan-"
+"700-mapreduce-is.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 'Upcoming Infinispan 7.0.0 Map/Reduce is blazing fast '\n"
+"permalink: /blog/:year/:month/:day/upcoming-infinispan-700-mapreduce-is\n"
+"date: '2014-07-28T07:07:00.001-07:00'\n"
+"author: vblagojevic\n"
+"tags: []\n"
+"thumbnail: http://3.bp.blogspot.com/-yudmjmeJ7Bs/U9ZB-sW9KeI/AAAAAAAADZU/"
+"TM5T-TxYM2g/s72-c/ISPN-6+Map:Reduce.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4634811328359598568\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/07/upcoming-infinispan-"
+"700-mapreduce-is.html\n"
+"---\n"
 
 #. type: Title ===
 #: upstream/_posts/2014-07-28-upcoming-infinispan-700-mapreduce-is.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Introduction"
-msgstr ""
+msgstr "序章"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-28-upcoming-infinispan-700-mapreduce-is.adoc:24
-msgid "Our enthusiasm about Infinispan Map/Reduce implementation has been a driving impetus for new features and spectacular performance improvements we have achieved in the past months. As we approach the final Infinispan 7 release, we can not keep quiet about these improvements any longer. We wanted to share the most significant new Map/Reduce features as well as a rather important performance improvement along with the details on how we achieved it."
+#, fuzzy
+msgid ""
+"Our enthusiasm about Infinispan Map/Reduce implementation has been a driving "
+"impetus for new features and spectacular performance improvements we have "
+"achieved in the past months. As we approach the final Infinispan 7 release, "
+"we can not keep quiet about these improvements any longer. We wanted to "
+"share the most significant new Map/Reduce features as well as a rather "
+"important performance improvement along with the details on how we achieved "
+"it."
 msgstr ""
+"Infinispan Map/"
+"Reduceの実装に対する私たちの熱意が、この数ヶ月の間に達成した新機能と目を見張るようなパフォーマンスの向上の原動力となっています。Infinispan "
+"7の最終リリースに近づくにつれ、これらの改善点についてはもう黙っているわけにはいきません。最も重要な新機能であるMap/"
+"Reduceと、重要なパフォーマンス改善を、どのようにして実現したのかを詳細に紹介したいと思います。"
 
 #. type: Title ===
 #: upstream/_posts/2014-07-28-upcoming-infinispan-700-mapreduce-is.adoc:26
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "New features"
-msgstr ""
+msgstr "新機能"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-28-upcoming-infinispan-700-mapreduce-is.adoc:42
-msgid "In the new features category, the most notable is a scalability improvement that allows storage of MapReduceTask's results in a distributed cache instead of returning results to the calling application. Infinispan now gives users the option to specify a target cache to store the results of an executed MapReduceTask. The results are available after the execute method (which is synchronous) completes.  This new variant of the execute method prevents the master JVM node from exceeding its allowed maximum heap size.  Users could, for example, utilize the new execute method if objects that are the results of the reduce phase have a large memory footprint or if multiple MapReduceTasks are concurrently executing on the master task node. We have provided two variants of the new execute method:"
+#, fuzzy
+msgid ""
+"In the new features category, the most notable is a scalability improvement "
+"that allows storage of MapReduceTask's results in a distributed cache "
+"instead of returning results to the calling application. Infinispan now "
+"gives users the option to specify a target cache to store the results of an "
+"executed MapReduceTask. The results are available after the execute method "
+"(which is synchronous) completes.  This new variant of the execute method "
+"prevents the master JVM node from exceeding its allowed maximum heap size. "
+" Users could, for example, utilize the new execute method if objects that "
+"are the results of the reduce phase have a large memory footprint or if "
+"multiple MapReduceTasks are concurrently executing on the master task node. "
+"We have provided two variants of the new execute method:"
 msgstr ""
+"新機能のカテゴリでは、最も注目すべきはスケーラビリティの向上で、呼び出し元のアプリケーションに結果を返すのではなく、分散キャッシュにMapReduceTaskの結果を保存できるようになりました。Infinispanでは、実行されたMapReduceTaskの結果を保存するターゲットキャッシュを指定できるようになりました。結果は、execute "
+"メソッド（同期型）が完了した後に利用できるようになりました。例えば、リデュースフェーズの結果であるオブジェクトが大きなメモリフットプリントを持つ場合や、複数のMapReduceTaskがマスタータスクノード上で同時に実行されている場合などに、この新しい実行メソッドを利用することができます。新しい実行メソッドの2つのバリエーションを提供しています。"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-28-upcoming-infinispan-700-mapreduce-is.adoc:47
-msgid "We also enhanced parallel execution of map/reduce functions at each node and improved handling of intermediate results. Users can now specify custom intermediate cache for a particular MapReduceTask."
+#, fuzzy
+msgid ""
+"We also enhanced parallel execution of map/reduce functions at each node and "
+"improved handling of intermediate results. Users can now specify custom "
+"intermediate cache for a particular MapReduceTask."
 msgstr ""
+"また、各ノードでのMap/"
+"Reduce関数の並列実行を強化し、中間結果の取り扱いを改善しました。ユーザーが特定のMapReduceTaskに対してカスタム中間キャッシュを指定できるようになりました。"
 
 #. type: Title ===
 #: upstream/_posts/2014-07-28-upcoming-infinispan-700-mapreduce-is.adoc:49
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Performance improvements"
-msgstr ""
+msgstr "パフォーマンスの向上"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-28-upcoming-infinispan-700-mapreduce-is.adoc:57
-msgid "Infinispan 7 makes a rather big leap from a single threaded to a parallel execution model of both map and reduce phases on each Infinispan grid node. The final result of this change is on average fivefold faster execution of your typical MapReduceTask."
+#, fuzzy
+msgid ""
+"Infinispan 7 makes a rather big leap from a single threaded to a parallel "
+"execution model of both map and reduce phases on each Infinispan grid node. "
+"The final result of this change is on average fivefold faster execution of "
+"your typical MapReduceTask."
 msgstr ""
+"Infinispan 7 は、各 Infinispan "
+"グリッドノード上でのマップとリデュースの両方のフェーズのシングルスレッド実行モデルから並列実行モデルへとかなり大きな飛躍を遂げました。この変更の最終的な結果として、典型的なMapReduceTaskの実行が平均で5倍速くなりました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-28-upcoming-infinispan-700-mapreduce-is.adoc:64
-msgid "Even though map and reduce phases are sequential we can still execute the map and reduce phases themselves in parallel. If you recall, although Infinispan 6 executes map and reduce phases on all nodes in parallel, execution on each node itself is single-threaded. Similarly, reduce phase although executed on multiple nodes in parallel, each node executes its portion of the reduction on a single thread."
+#, fuzzy
+msgid ""
+"Even though map and reduce phases are sequential we can still execute the "
+"map and reduce phases themselves in parallel. If you recall, although "
+"Infinispan 6 executes map and reduce phases on all nodes in parallel, "
+"execution on each node itself is single-threaded. Similarly, reduce phase "
+"although executed on multiple nodes in parallel, each node executes its "
+"portion of the reduction on a single thread."
 msgstr ""
+"マップフェーズとリデュースフェーズがシーケンシャルであっても、マップフェーズとリデュースフェーズ自体を並列に実行することができます。思い起こせば、Infinispan "
+"6 はすべてのノードで map と reduce "
+"フェーズを並列に実行しますが、各ノード自体はシングルスレッドで実行されます。同様に、リダクションフェーズは複数のノードで並列に実行されますが、各ノードはリダクションの一部をシングルスレッドで実行します。"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-28-upcoming-infinispan-700-mapreduce-is.adoc:76
-msgid "Since we baselined Infinispan 7 on JDK 7, we decided to experiment with fork/join threading framework for parallel execution of both map and reduce phases [2]. If you recall fork/join framework enables high performance, parallel, fine-grained task execution in Java. Although parallel, recursively decomposable tasks are well suited for fork/join framework it may come as a surprise that parallel iteration of entries in arrays, maps and other collections represents a good fit as well. And do we have a well-suited candidate for parallel fork/join iteration - cache's data container itself! In fact, most of the work is related to iterating entries from the data container and invoking map/combine and reduce function on those entries."
+#, fuzzy
+msgid ""
+"Since we baselined Infinispan 7 on JDK 7, we decided to experiment with fork/"
+"join threading framework for parallel execution of both map and reduce "
+"phases [2]. If you recall fork/join framework enables high performance, "
+"parallel, fine-grained task execution in Java. Although parallel, "
+"recursively decomposable tasks are well suited for fork/join framework it "
+"may come as a surprise that parallel iteration of entries in arrays, maps "
+"and other collections represents a good fit as well. And do we have a well-"
+"suited candidate for parallel fork/join iteration - cache's data container "
+"itself! In fact, most of the work is related to iterating entries from the "
+"data container and invoking map/combine and reduce function on those entries."
+""
 msgstr ""
+"Infinispan 7 は JDK 7 をベースにしているので、マップフェーズとリダクションフェーズの両方を並列実行するために fork/join "
+"スレッディングフレームワークを試すことにしました[2]。fork/"
+"joinフレームワークを思い出すと、Javaでは、高性能で並列、きめ細かいタスク実行が可能になります。並列で再帰的に分解可能なタスクはフォーク/"
+"ジョインフレームワークに適していますが、配列やマップ、その他のコレクションのエントリの並列反復処理も同様に適していることは意外に思われるかもしれません。そして、並列フォーク/"
+"ジョインの反復に適した候補があるのでしょうか？実際、ほとんどの作業はデータコンテナからのエントリの反復処理と、それらのエントリに対する map/"
+"combine と reduce 関数の呼び出しに関連しています。"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-28-upcoming-infinispan-700-mapreduce-is.adoc:89
-msgid "Map/combine phase is particularly interesting. Even if we use the fork/join framework map and combine phases are distinct and until now - serially executed. Having serial execution of map and combine is not the only downside as map phase can be rather memory intensive. After all, it has to store all intermediate results into provided collectors. Combine phase takes produced intermediate values for a particular key and combines it into a single intermediate value. Therefore, it would very useful to periodically invoke combine on map produced keys/values thus limiting the total amount of memory used for map phase. So the question is how do we execute map/combine in parallel efficiently thus speeding up execution and at the same time limiting the memory used? We found the answer in producer/consumer threading paradigm."
+#, fuzzy
+msgid ""
+"Map/combine phase is particularly interesting. Even if we use the fork/join "
+"framework map and combine phases are distinct and until now - serially "
+"executed. Having serial execution of map and combine is not the only "
+"downside as map phase can be rather memory intensive. After all, it has to "
+"store all intermediate results into provided collectors. Combine phase takes "
+"produced intermediate values for a particular key and combines it into a "
+"single intermediate value. Therefore, it would very useful to periodically "
+"invoke combine on map produced keys/values thus limiting the total amount of "
+"memory used for map phase. So the question is how do we execute map/combine "
+"in parallel efficiently thus speeding up execution and at the same time "
+"limiting the memory used? We found the answer in producer/consumer threading "
+"paradigm."
 msgstr ""
+"マップ/結合フェーズは特に興味深い。fork/"
+"joinフレームワークを使っても、マップとコンバインのフェーズは別々で、今まではシリアルに実行されていました。マップとコンバインをシリアルに実行することの欠点は、マップフェーズがかなりメモリを消費する可能性があることだけではありません。結局のところ、すべての中間結果を提供されたコレクターに保存しなければなりません。Combineフェーズは、特定のキーに対して生成された中間値を取り、それを単一の中間値に結合します。したがって、マップで生成されたキー/"
+"値に対して定期的にcombineを呼び出すことは非常に有用であり、マップフェーズで使用されるメモリの総量を制限することができます。では、どのようにして効率的にマップ/"
+"combineを並列に実行し、実行を高速化すると同時に、使用するメモリを制限するかという問題があります。その答えは、プロデューサ/"
+"コンシューマースレッディングパラダイムにあります。"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-28-upcoming-infinispan-700-mapreduce-is.adoc:100
-msgid "In our case producers are fork/join threads that during map phase iterate key/value data container and invoke Mapper's map function. Map function transformation produces intermediate results stored into the Infinispan provided queue of collectors. Consumers are also fork/join threads that invoke combine function on key/value entries in those collectors. Note that this way map/combine phase execution itself becomes parallel, and phases of mapping and combing are no longer serial. In the end, we have notably lowered memory usage and significantly improved overall speed execution of map/combine algorithm at the same time."
+#, fuzzy
+msgid ""
+"In our case producers are fork/join threads that during map phase iterate "
+"key/value data container and invoke Mapper's map function. Map function "
+"transformation produces intermediate results stored into the Infinispan "
+"provided queue of collectors. Consumers are also fork/join threads that "
+"invoke combine function on key/value entries in those collectors. Note that "
+"this way map/combine phase execution itself becomes parallel, and phases of "
+"mapping and combing are no longer serial. In the end, we have notably "
+"lowered memory usage and significantly improved overall speed execution of "
+"map/combine algorithm at the same time."
 msgstr ""
+"私たちの場合、プロデューサはフォーク/ジョインのスレッドで、マップフェーズの間にキー/"
+"値データコンテナを反復処理し、マッパーのマップ関数を呼び出します。マップ関数の変換は中間結果を生成し、Infinispan "
+"が提供するコレクターのキューに格納します。コンシューマはまた、それらのコレクター内のキー/値エントリに対してコンバイン関数を呼び出すフォーク/ジョイン "
+"スレッドでもあります。この方法では、マップ/"
+"コンバインフェーズの実行自体が並列になり、マッピングとコンバインのフェーズはもはやシリアルではないことに注意してください。最終的には、メモリ使用量を大幅に削減し、同時にマップ/"
+"結合アルゴリズムの全体的な実行速度を大幅に向上させることができました。"
 
 #. type: Title ===
 #: upstream/_posts/2014-07-28-upcoming-infinispan-700-mapreduce-is.adoc:102
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Performance lab results"
-msgstr ""
+msgstr "パフォーマンスラボの結果"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-28-upcoming-infinispan-700-mapreduce-is.adoc:114
-msgid "Although http://blog.infinispan.org/2014/06/mapreduce-performance-improvements.html[initial] performance results were more than promising, we were not satisfied. The throughput peaked for 32KB cache values but was much lower for larger and smaller values in our tests. We went back to the drawing board and devised the above-described map/combine algorithm using fork/join framework and producer/consumer approach. This time the results from the performance lab were excellent. For more details on performance tests and hardware used please refer to [1]."
+#, fuzzy
+msgid ""
+"Although http://blog.infinispan.org/2014/06/mapreduce-performance-"
+"improvements.html[initial] performance results were more than promising, we "
+"were not satisfied. The throughput peaked for 32KB cache values but was much "
+"lower for larger and smaller values in our tests. We went back to the "
+"drawing board and devised the above-described map/combine algorithm using "
+"fork/join framework and producer/consumer approach. This time the results "
+"from the performance lab were excellent. For more details on performance "
+"tests and hardware used please refer to [1]."
 msgstr ""
+"link:http://blog.infinispan.org/2014/06/mapreduce-performance-improvements."
+"html[初期の] 性能結果は期待以上のものでしたが、満足できるものではありませんでした。スループットは、32KB "
+"のキャッシュ値でピークを迎えましたが、私たちのテストでは、より大きな値やより小さな値では、はるかに低かったのです。そこで私たちは初心に戻り、フォーク/"
+"ジョインフレームワークとプロデューサ/コンシューマアプローチを使用して上述のマップ/"
+"結合アルゴリズムを考案しました。今回のパフォーマンス・ラボの結果は素晴らしいものでした。性能テストと使用したハードウェアの詳細については、[1]を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-28-upcoming-infinispan-700-mapreduce-is.adoc:123
-msgid "As you can see from the graphs below we have improved performance for all cache value sizes. We were not able to significantly improve throughput for the largest 1MB and 2MB cache values. For all other cache value sizes, we have seen on average five-fold throughput improvement.  As throughput improvement is directly proportional to MapReduceTask speed of execution improvement, our users should expect their MapReduceTasks to execute, on average, five times faster in Infinispan 7 than in Infinispan 6."
+#, fuzzy
+msgid ""
+"As you can see from the graphs below we have improved performance for all "
+"cache value sizes. We were not able to significantly improve throughput for "
+"the largest 1MB and 2MB cache values. For all other cache value sizes, we "
+"have seen on average five-fold throughput improvement.  As throughput "
+"improvement is directly proportional to MapReduceTask speed of execution "
+"improvement, our users should expect their MapReduceTasks to execute, on "
+"average, five times faster in Infinispan 7 than in Infinispan 6."
 msgstr ""
+"下のグラフからわかるように、すべてのキャッシュ値のサイズでパフォーマンスが向上しました。最大の 1MB と 2MB "
+"のキャッシュ値では、スループットを大幅に改善することはできませんでした。それ以外のすべてのキャッシュ値サイズでは、平均して 5 "
+"倍のスループットの改善が見られました。スループットの向上は MapReduceTask の実行速度の向上に正比例するので、ユーザーは "
+"MapReduceTask の実行速度が Infinispan 6 よりも Infinispan 7 の方が平均して 5 "
+"倍速くなることを期待しています。"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-28-upcoming-infinispan-700-mapreduce-is.adoc:126
-msgid "http://3.bp.blogspot.com/-yudmjmeJ7Bs/U9ZB-sW9KeI/AAAAAAAADZU/TM5T-TxYM2g/s1600/ISPN-6+Map:Reduce.png[image:http://3.bp.blogspot.com/-yudmjmeJ7Bs/U9ZB-sW9KeI/AAAAAAAADZU/TM5T-TxYM2g/s1600/ISPN-6+Map:Reduce.png[image,width=640,height=353]]"
+#, fuzzy
+msgid ""
+"http://3.bp.blogspot.com/-yudmjmeJ7Bs/U9ZB-sW9KeI/AAAAAAAADZU/TM5T-TxYM2g/"
+"s1600/ISPN-6+Map:Reduce.png[image:http://3.bp.blogspot.com/-yudmjmeJ7Bs/U9ZB-"
+"sW9KeI/AAAAAAAADZU/TM5T-TxYM2g/s1600/ISPN-6+Map:Reduce.png[image,width="
+"640,height=353]]"
 msgstr ""
+"link:http://3.bp.blogspot.com/-yudmjmeJ7Bs/U9ZB-sW9KeI/AAAAAAAADZU/TM5T-"
+"TxYM2g/s1600/ISPN-6+Map:Reduce.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-28-upcoming-infinispan-700-mapreduce-is.adoc:130
-msgid "http://1.bp.blogspot.com/-Wtjq1_c4qEk/U9ZRmnnEM3I/AAAAAAAADZs/SHBPLDAthe8/s1600/ISPN-7+MapReduce.png[image:http://1.bp.blogspot.com/-Wtjq1_c4qEk/U9ZRmnnEM3I/AAAAAAAADZs/SHBPLDAthe8/s1600/ISPN-7+MapReduce.png[image,width=640,height=344]]"
+#, fuzzy
+msgid ""
+"http://1.bp.blogspot.com/-Wtjq1_c4qEk/U9ZRmnnEM3I/AAAAAAAADZs/SHBPLDAthe8/"
+"s1600/ISPN-7+MapReduce.png[image:http://1.bp.blogspot.com/-Wtjq1_c4qEk/"
+"U9ZRmnnEM3I/AAAAAAAADZs/SHBPLDAthe8/s1600/ISPN-7+MapReduce.png[image,width="
+"640,height=344]]"
 msgstr ""
+"link:http://1.bp.blogspot.com/-Wtjq1_c4qEk/U9ZRmnnEM3I/AAAAAAAADZs/"
+"SHBPLDAthe8/s1600/ISPN-7+MapReduce.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-28-upcoming-infinispan-700-mapreduce-is.adoc:141
-msgid "[1] http://blog.infinispan.org/2014/06/mapreduce-performance-improvements.html [2] We back ported relevant classes so users can still run Infinispan 7 on JVM 6"
+#, fuzzy
+msgid ""
+"[1] http://blog.infinispan.org/2014/06/mapreduce-performance-improvements."
+"html [2] We back ported relevant classes so users can still run Infinispan 7 "
+"on JVM 6"
 msgstr ""
+"[1 http://blog.infinispan.org/2014/06/mapreduce-performance-improvements."
+"html 関連するクラスをバックポートしたので、ユーザーは JVM 6 で Infinispan 7 を実行できます。"

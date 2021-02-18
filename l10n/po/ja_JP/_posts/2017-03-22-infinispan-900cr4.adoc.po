@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-03-22-infinispan-900cr4.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-22-infinispan-900cr4.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.0.0.CR4\n"
@@ -32,57 +32,95 @@ msgid ""
 "date: '2017-03-22T14:28:00.000-07:00'\n"
 "author: ttarrant\n"
 "tags: [ \"release\", \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3586415713152479945\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3586415713152479945\n"
 "blogger_orig_url: https://blog.infinispan.org/2017/03/infinispan-900cr4.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 9.0.0.0.CR4\n"
+"permalink: /blog/:year/:month/:day/infinispan-900cr4\n"
+"date: '2017-03-22T14:28:00.000-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\", \"release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3586415713152479945\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/03/infinispan-900cr4.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-22-infinispan-900cr4.adoc:15
-msgid "Dear Infinispan users, we thought CR3 was going to be the last candidate release before Final... but we were mistaken!"
-msgstr ""
+#, fuzzy
+msgid ""
+"Dear Infinispan users, we thought CR3 was going to be the last candidate "
+"release before Final... but we were mistaken!"
+msgstr "Infinispanユーザーの皆様、CR3がFinal前の最後の候補リリースになると思っていたのですが......それは大間違いでした!"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-22-infinispan-900cr4.adoc:18
-msgid "The reason for yet another CR is that we decided to make some changes which affect some default behaviours:"
-msgstr ""
+#, fuzzy
+msgid ""
+"The reason for yet another CR is that we decided to make some changes which "
+"affect some default behaviours:"
+msgstr "まだ別のCRがある理由は、いくつかのデフォルトの動作に影響を与える変更を行うことにしたからです。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-22-infinispan-900cr4.adoc:21
-msgid "enabling optimistic transactions with repeatable read now turns on write-skew by default"
-msgstr ""
+#, fuzzy
+msgid ""
+"enabling optimistic transactions with repeatable read now turns on write-"
+"skew by default"
+msgstr "繰り返し可能な読み取りで楽観的なトランザクションを有効にすると、デフォルトで書き込みスキューが有効になります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-22-infinispan-900cr4.adoc:23
-msgid "retrieving an already configured cache by passing in a template doesn't redefine that cache's configuration"
-msgstr ""
+#, fuzzy
+msgid ""
+"retrieving an already configured cache by passing in a template doesn't "
+"redefine that cache's configuration"
+msgstr "テンプレートを渡して既に設定されているキャッシュを取得しても、そのキャッシュの設定は再定義されません。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-22-infinispan-900cr4.adoc:25
+#, fuzzy
 msgid "Other important changes:"
-msgstr ""
+msgstr "その他の重要な変更点"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-22-infinispan-900cr4.adoc:27
+#, fuzzy
 msgid "big improvements to the client/server rolling upgrade process"
-msgstr ""
+msgstr "クライアント/サーバのローリングアップグレードプロセスの大幅な改善"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-22-infinispan-900cr4.adoc:28
+#, fuzzy
 msgid "allow indexes to be stored in off-heap caches"
-msgstr ""
+msgstr "インデックスをオフヒープキャッシュに格納できるようにします。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-22-infinispan-900cr4.adoc:29
+#, fuzzy
 msgid "lots of bug fixes"
-msgstr ""
+msgstr "沢山のバグフィックス"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-22-infinispan-900cr4.adoc:35
-msgid "For the full list of changes check the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12334143[release notes], http://infinispan.org/download/[download] the 9.0.0.CR4 release and http://infinispan.org/community/[let us know] if you have any questions or suggestions."
+#, fuzzy
+msgid ""
+"For the full list of changes check the https://issues.jboss.org/secure/"
+"ReleaseNote.jspa?projectId=12310799&version=12334143[release notes], http://"
+"infinispan.org/download/[download] the 9.0.0.CR4 release and http://"
+"infinispan.org/community/[let us know] if you have any questions or "
+"suggestions."
 msgstr ""
+"変更点の全リストについては、 link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12334143[リリースノートを] 確認し、9.0.0.0.CR4リリースを link:"
+"http://infinispan.org/download/[ダウンロードして] 、ご質問やご提案があれば link:http://"
+"infinispan.org/community/[お知らせください] 。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-22-infinispan-900cr4.adoc:37
+#, fuzzy
 msgid "Cheers, The Infinispan team"
-msgstr ""
+msgstr "乾杯、インフィニスパンチーム"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2019-12-02-image.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-02-image.adoc:8
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan's new image\n"
@@ -34,38 +34,89 @@ msgid ""
 "tags: [ \"docker\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: インフィニスパンの新しいイメージ\n"
+"permalink: /blog/:year/:month/:day/image\n"
+"date: '2019-12-02T12:00:00.000-00:00'\n"
+"author: remerson\n"
+"tags: [ \"docker\" ]\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-02-image.adoc:13
-msgid "Infinispan 10 introduced a https://infinispan.org/blog/2019/11/11/serverng/[new server], which does not utilise the same launch commands and configuration as the legacy 9.4 wildfly based server. Therefore, we decided that this was an excellent opportunity to rewrite our container image from scratch to better suite the capabilities of the new server and to provide all the functionality required by the https://infinispan.org/blog/2019/11/25/infinispan-operator-1/[Infinispan Operator]."
+#, fuzzy
+msgid ""
+"Infinispan 10 introduced a https://infinispan.org/blog/2019/11/11/serverng/"
+"[new server], which does not utilise the same launch commands and "
+"configuration as the legacy 9.4 wildfly based server. Therefore, we decided "
+"that this was an excellent opportunity to rewrite our container image from "
+"scratch to better suite the capabilities of the new server and to provide "
+"all the functionality required by the https://infinispan.org/blog/2019/11/25/"
+"infinispan-operator-1/[Infinispan Operator]."
 msgstr ""
+"Infinispan 10 では link:https://infinispan.org/blog/2019/11/11/serverng/"
+"[新しいサーバーが] 導入されましたが、レガシーの 9.4 wildfly "
+"ベースのサーバーと同じ起動コマンドや設定を利用していません。そのため、これはコンテナイメージを一から書き直す絶好の機会だと判断し、新しいサーバーの機能に合わせて、 "
+"link:https://infinispan.org/blog/2019/11/25/infinispan-operator-1/"
+"[Infinispan オペレータ] が必要とするすべての機能を提供することにしました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-02-image.adoc:16
-msgid "This post focuses on the server image's architecture. Future blog posts will focus on more advanced configurations, as well as example usage and deployment scenarios such as deploying a cluster using Kubernetes StatefulSets."
+#, fuzzy
+msgid ""
+"This post focuses on the server image's architecture. Future blog posts will "
+"focus on more advanced configurations, as well as example usage and "
+"deployment scenarios such as deploying a cluster using Kubernetes "
+"StatefulSets."
 msgstr ""
+"この記事では、サーバーイメージのアーキテクチャに焦点を当てています。今後のブログ記事では、より高度な構成や、Kubernetes "
+"StatefulSets を使用したクラスタのデプロイなどの使用例やデプロイのシナリオに焦点を当てていきます。"
 
 #. type: Title ==
 #: upstream/_posts/2019-12-02-image.adoc:17
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Show me the code!"
-msgstr ""
+msgstr "コードを見せろ！"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-02-image.adoc:21
-msgid "The source code for the Infinispan image has a new home. The image can be found at https://github.com/infinispan/infinispan-images.  Currently this repository only contains the server image, however our intention is for this to also be the home for all future Infinispan related images."
+#, fuzzy
+msgid ""
+"The source code for the Infinispan image has a new home. The image can be "
+"found at https://github.com/infinispan/infinispan-images.  Currently this "
+"repository only contains the server image, however our intention is for this "
+"to also be the home for all future Infinispan related images."
 msgstr ""
+"Infinispan 画像のソースコードに新しいホームができました。イメージは https://github.com/infinispan/"
+"infinispan-images "
+"にあります。現在のところ、このリポジトリにはサーバーイメージのみが含まれていますが、将来的にはInfinispan関連のイメージのホームにもなることを目指しています。"
 
 #. type: Title ===
 #: upstream/_posts/2019-12-02-image.adoc:22
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Where's the Dockerfile?"
-msgstr ""
+msgstr "Dockerfileはどこにあるの？"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-02-image.adoc:28
-msgid "The most noticable change when looking at the repository is that there is no `Dockerfile` in the source tree. This is because we decided to utilise the open-source tool https://cekit.io/[CEKit] to build our images. CEKit is an image creation tool that allows container images to be created using multiple build engines (e.g. docker, https://buildah.io/[Buildah], https://podman.io/[Podman])  with a single configuration. Installation instructions can be found https://docs.cekit.io/en/latest/handbook/installation/instructions.html[here], but the basic command to create a Docker based image is as follows."
+#, fuzzy
+msgid ""
+"The most noticable change when looking at the repository is that there is no "
+"`Dockerfile` in the source tree. This is because we decided to utilise the "
+"open-source tool https://cekit.io/[CEKit] to build our images. CEKit is an "
+"image creation tool that allows container images to be created using "
+"multiple build engines (e.g. docker, https://buildah.io/[Buildah], https://"
+"podman.io/[Podman])  with a single configuration. Installation instructions "
+"can be found https://docs.cekit.io/en/latest/handbook/installation/"
+"instructions.html[here], but the basic command to create a Docker based "
+"image is as follows."
 msgstr ""
+"リポジトリを見たときに最も顕著な変化は、ソースツリーに `Dockerfile` がないことです。これは、画像のビルドにオープンソースのツール link:"
+"https://cekit.io/[CEKit] を利用することにしたからです。CEKit はイメージ作成ツールで、複数のビルドエンジン（docker、 "
+"link:https://buildah.io/[Buildah] 、 link:https://podman.io/[Podman] "
+"など）を使ってコンテナイメージを単一の設定で作成することができます。インストール方法は link:https://docs.cekit.io/en/"
+"latest/handbook/installation/instructions.html[こちらに] "
+"ありますが、Dockerベースのイメージを作成するための基本的なコマンドは以下の通りです。"
 
 #. type: delimited block -
 #: upstream/_posts/2019-12-02-image.adoc:31
@@ -75,46 +126,82 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2019-12-02-image.adoc:36
-msgid "CEKit leverages `.yaml` files for all configuration, opposed to a Dockerfile, as this allows for build time overriding of image properties. For example, with CEKit it's possible to override the server artifact version without modifying any files, instead the following is passed as a build parameter."
+#, fuzzy
+msgid ""
+"CEKit leverages `.yaml` files for all configuration, opposed to a "
+"Dockerfile, as this allows for build time overriding of image properties. "
+"For example, with CEKit it's possible to override the server artifact "
+"version without modifying any files, instead the following is passed as a "
+"build parameter."
 msgstr ""
+"CEKit はすべての設定に `.yaml` ファイルを利用していますが、Dockerfile "
+"とは対照的に、イメージのプロパティをビルド時にオーバーライドすることができます。例えば、CEKit "
+"では、ファイルを変更せずにサーバーのアーティファクトのバージョンをオーバーライドすることができます。"
 
 #. type: delimited block -
 #: upstream/_posts/2019-12-02-image.adoc:39
 #, no-wrap
-msgid "cekit build --overrides '{\"artifacts\": [{\"name\": \"server.zip\", \"path\": \"infinispan-server-10.0.0-SNAPSHOT.zip\"}]}' docker\n"
+msgid ""
+"cekit build --overrides '{\"artifacts\": [{\"name\": \"server.zip\", "
+"\"path\": \"infinispan-server-10.0.0-SNAPSHOT.zip\"}]}' docker\n"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2019-12-02-image.adoc:43
-msgid "More detailed instructions about how to build the server image from source can be found in the https://github.com/infinispan/infinispan-images/tree/10.0.x#creating-images[image's documentation]."
+#, fuzzy
+msgid ""
+"More detailed instructions about how to build the server image from source "
+"can be found in the https://github.com/infinispan/infinispan-images/tree/10."
+"0.x#creating-images[image's documentation]."
 msgstr ""
+"サーバーイメージをソースからビルドする方法についての詳細な説明は、 link:https://github.com/infinispan/"
+"infinispan-images/tree/10.0.x#creating-images[イメージのドキュメントを] 参照してください。"
 
 #. type: Title ==
 #: upstream/_posts/2019-12-02-image.adoc:44
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Ok so where can I get a pre-built image?"
-msgstr ""
+msgstr "OK それで、どこで構築済みの画像を手に入れることができますか？"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-02-image.adoc:47
-msgid "Previously the Infinispan images were deployed exclusively under the `jboss` namespace at https://hub.docker.com/r/jboss/infinispan-server/[jboss/infinispan-server], however this repository has now been deprecated and will be removed eventually."
+#, fuzzy
+msgid ""
+"Previously the Infinispan images were deployed exclusively under the `jboss` "
+"namespace at https://hub.docker.com/r/jboss/infinispan-server/[jboss/"
+"infinispan-server], however this repository has now been deprecated and will "
+"be removed eventually."
 msgstr ""
+"以前は Infinispan イメージは link:https://hub.docker.com/r/jboss/infinispan-server/"
+"[jboss/infinispan-server] の `jboss` "
+"ネームスペースにのみデプロイされていましたが、このリポジトリは現在非推奨となっており、最終的には削除される予定です。"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-02-image.adoc:50
-msgid "Instead, all Infinispan images will now be released under the `infinispan` namespace and are hosted at both https://quay.io/infinispan/server[Quay.io] and https://hub.docker.com/r/infinispan/server[Docker Hub], as `quay.io/infinispan/server` and `infinispan/server`."
+#, fuzzy
+msgid ""
+"Instead, all Infinispan images will now be released under the `infinispan` "
+"namespace and are hosted at both https://quay.io/infinispan/server[Quay.io] "
+"and https://hub.docker.com/r/infinispan/server[Docker Hub], as `quay.io/"
+"infinispan/server` and `infinispan/server`."
 msgstr ""
+"代わりに、すべてのInfinispanイメージは、 `infinispan` ネームスペースでリリースされるようになり、 link:https://"
+"quay.io/infinispan/server[Quay.io] と link:https://hub.docker.com/r/"
+"infinispan/server[Docker Hubの] 両方で、 `quay.io/infinispan/server` と "
+"`infinispan/server` ."
 
 #. type: Title ==
 #: upstream/_posts/2019-12-02-image.adoc:51
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Getting Started"
-msgstr ""
+msgstr "はじめに"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-02-image.adoc:53
-msgid "To get started with infinispan server on your local machine simply execute:"
-msgstr ""
+#, fuzzy
+msgid ""
+"To get started with infinispan server on your local machine simply execute:"
+msgstr "ローカルマシンでinfinispanサーバーを起動するには、単に実行してください。"
 
 #. type: delimited block -
 #: upstream/_posts/2019-12-02-image.adoc:56
@@ -124,30 +211,53 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2019-12-02-image.adoc:62
-msgid "By default the image has authentication enabled on all exposed endpoints. When executing the above command the image automatically generates a username/password combo, prints the values to stdout and then starts the Infinispan server with the authenticated Hotrod and Rest endpoints exposed on port 11222. Therefore, it's necessary to utilise the printed credentials when attempting to access the exposed endpoints via clients."
+#, fuzzy
+msgid ""
+"By default the image has authentication enabled on all exposed endpoints. "
+"When executing the above command the image automatically generates a "
+"username/password combo, prints the values to stdout and then starts the "
+"Infinispan server with the authenticated Hotrod and Rest endpoints exposed "
+"on port 11222. Therefore, it's necessary to utilise the printed credentials "
+"when attempting to access the exposed endpoints via clients."
 msgstr ""
+"デフォルトでは、イメージは公開されているすべてのエンドポイントで認証を有効にしています。上記のコマンドを実行すると、イメージは自動的にユーザ名とパスワードのコンボを生成し、その値を標準出力に印刷し、認証済みの "
+"Hotrod と Rest エンドポイントをポート 11222 で公開した状態で Infinispan "
+"サーバを起動します。したがって、クライアントを介して公開されたエンドポイントにアクセスしようとする場合は、印刷された認証情報を利用する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-02-image.adoc:64
-msgid "It's also possible to provide a username/password combination via environment variables like so:"
-msgstr ""
+#, fuzzy
+msgid ""
+"It's also possible to provide a username/password combination via "
+"environment variables like so:"
+msgstr "また、環境変数でユーザ名とパスワードの組み合わせを指定することも可能です。"
 
 #. type: delimited block -
 #: upstream/_posts/2019-12-02-image.adoc:67
 #, no-wrap
-msgid "docker run -p 11222:11222 -e USER=\"Titus Bramble\" -e PASS=\"Shambles\" infinispan/server\n"
+msgid ""
+"docker run -p 11222:11222 -e USER=\"Titus Bramble\" -e PASS=\"Shambles\" "
+"infinispan/server\n"
 msgstr ""
 
 #. type: Title ===
 #: upstream/_posts/2019-12-02-image.adoc:70
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Connecting via Hotrod"
-msgstr ""
+msgstr "ホットロッド経由での接続"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-02-image.adoc:74
-msgid "Using the credentials passed in the command above, it is now possible to connect via the HotRod client using the following `hotrod-client.properties` file. Note, that the following SASL properties must be configured on your client, with the username and password properties changed as required, otherwise the connection will fail:"
+#, fuzzy
+msgid ""
+"Using the credentials passed in the command above, it is now possible to "
+"connect via the HotRod client using the following `hotrod-client.properties` "
+"file. Note, that the following SASL properties must be configured on your "
+"client, with the username and password properties changed as required, "
+"otherwise the connection will fail:"
 msgstr ""
+"上記のコマンドで渡された資格情報を使用して、以下の `hotrod-client.properties` ファイルを使用して HotRod "
+"クライアントを介して接続することが可能になりました。以下のSASLプロパティをクライアントに設定し、必要に応じてユーザー名とパスワードのプロパティを変更しなければならないことに注意してください。"
 
 #. type: delimited block -
 #: upstream/_posts/2019-12-02-image.adoc:80
@@ -161,33 +271,53 @@ msgstr ""
 
 #. type: Title ===
 #: upstream/_posts/2019-12-02-image.adoc:82
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Connecting via REST"
-msgstr ""
+msgstr "REST経由での接続"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-02-image.adoc:85
-msgid "The REST endpoint is configured to utilise the DIGEST protocol, therefore it's necessary for the HTTP client to authenticate requests. For example, the name of all caches can be retrieved via the following curl command:"
+#, fuzzy
+msgid ""
+"The REST endpoint is configured to utilise the DIGEST protocol, therefore "
+"it's necessary for the HTTP client to authenticate requests. For example, "
+"the name of all caches can be retrieved via the following curl command:"
 msgstr ""
+"REST エンドポイントは DIGEST プロトコルを利用するように構成されているため、HTTP "
+"クライアントがリクエストを認証する必要があります。たとえば、すべてのキャッシュの名前は、次の curl コマンドで取得できます。"
 
 #. type: delimited block -
 #: upstream/_posts/2019-12-02-image.adoc:88
 #, no-wrap
-msgid " curl --digest -u \"Titus Bramble:Shambles\" http://localhost:11222/rest/v2/cache\n"
+msgid ""
+" curl --digest -u \"Titus Bramble:Shambles\" http://localhost:11222/rest/v2/"
+"cache\n"
 msgstr ""
 
 #. type: Title ==
 #: upstream/_posts/2019-12-02-image.adoc:91
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Further Reading"
-msgstr ""
+msgstr "続きを読む"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-02-image.adoc:94
-msgid "For more detailed information abou how to use the image, please consult the https://github.com/infinispan/infinispan-images/blob/10.0.x/README.md[official documentation]."
+#, fuzzy
+msgid ""
+"For more detailed information abou how to use the image, please consult the "
+"https://github.com/infinispan/infinispan-images/blob/10.0.x/README."
+"md[official documentation]."
 msgstr ""
+"画像の使用方法などの詳細については、 link:https://github.com/infinispan/infinispan-images/blob/"
+"10.0.x/README.md[公式ドキュメントを] 参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-02-image.adoc:96
-msgid "In the next blog post we will look at how the server can be configured for more advanced use-cases by supplying configuration and identity `.yaml` files."
+#, fuzzy
+msgid ""
+"In the next blog post we will look at how the server can be configured for "
+"more advanced use-cases by supplying configuration and identity `.yaml` "
+"files."
 msgstr ""
+"次のブログ記事では、設定ファイルと ID `.yaml` "
+"ファイルを提供することで、より高度なユースケースに対応できるようにサーバーを設定する方法を見ていきます。"

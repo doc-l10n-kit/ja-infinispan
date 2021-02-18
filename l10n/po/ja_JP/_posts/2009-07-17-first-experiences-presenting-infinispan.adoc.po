@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-07-17-first-experiences-presenting-infinispan.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-17-first-experiences-presenting-infinispan.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: First experiences presenting Infinispan\n"
@@ -32,32 +32,90 @@ msgid ""
 "date: '2009-07-17T08:09:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \"JUGs\", \"presentations\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-444327310725622633\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/07/first-experiences-presenting-infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"444327310725622633\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/07/first-experiences-"
+"presenting-infinispan.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: インフィニスパンの初体験発表\n"
+"permalink: /blog/:year/:month/:day/first-experiences-presenting-infinispan\n"
+"date: '2009-07-17T08:09:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"JUGs\", \"presentations\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"444327310725622633\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/07/first-experiences-"
+"presenting-infinispan.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-17-first-experiences-presenting-infinispan.adoc:14
-msgid "Last week was one of the most exciting weeks for me since joining the http://www.jboss.org/infinispan[Infinispan] team because for the very first time, I was going to present Infinispan to the world :)"
+#, fuzzy
+msgid ""
+"Last week was one of the most exciting weeks for me since joining the http://"
+"www.jboss.org/infinispan[Infinispan] team because for the very first time, I "
+"was going to present Infinispan to the world :)"
 msgstr ""
+"先週は、 link:http://www.jboss.org/infinispan[Infinispan] "
+"チームに参加して以来、私にとって最もエキサイティングな週の一つでした。)"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-17-first-experiences-presenting-infinispan.adoc:27
-msgid "Firstly last Tuesday, I introduced Infinispan to http://www.jugs.ch/html/events/2009/infinispan.html[Switzerland]http://www.jugs.ch/html/events/2009/infinispan.html['s Java User Group], where a crowd of around 20 people learned about the usability improvements introduced, the performance and memory consumption enhancements, and forthcoming new features. To finish the presentation, I showed the audience a demo of 3 http://www.jboss.org/community/docs/DOC-10278[distributed] Infinispan instances connected to an Amazon S3 cache store via http://www.jclouds.org/[JClouds]. I received some very positive feedback from the attendees who, in particular, were interested in finding out http://www.ibm.com/developerworks/web/library/wa-cloudgrid/?ca=dgr-dth-cloudjw22CloudvsGrid&S_TACT=105AGX59&S_CMP=grsitejw22[the differences between grid and cloud computing]."
+#, fuzzy
+msgid ""
+"Firstly last Tuesday, I introduced Infinispan to http://www.jugs.ch/html/"
+"events/2009/infinispan.html[Switzerland]http://www.jugs.ch/html/events/2009/"
+"infinispan.html['s Java User Group], where a crowd of around 20 people "
+"learned about the usability improvements introduced, the performance and "
+"memory consumption enhancements, and forthcoming new features. To finish the "
+"presentation, I showed the audience a demo of 3 http://www.jboss.org/"
+"community/docs/DOC-10278[distributed] Infinispan instances connected to an "
+"Amazon S3 cache store via http://www.jclouds.org/[JClouds]. I received some "
+"very positive feedback from the attendees who, in particular, were "
+"interested in finding out http://www.ibm.com/developerworks/web/library/wa-"
+"cloudgrid/?ca=dgr-dth-cloudjw22CloudvsGrid&S_TACT=105AGX59&S_CMP="
+"grsitejw22[the differences between grid and cloud computing]."
 msgstr ""
+"まず先週の火曜日、 link:http://www.jugs.ch/html/events/2009/infinispan.html[スイス] http:"
+"//www.jugs.ch/html/events/2009/infinispan.html['s Java User "
+"Group]]にInfinispanを紹介し、約20人の聴衆に使いやすさの向上、パフォーマンスとメモリ消費の向上、今後の新機能について説明しました。プレゼンテーションの最後に、私は3つの "
+"link:http://www.jboss.org/community/docs/DOC-10278[分散型] Infinispanインスタンスを "
+"link:http://www.jclouds.org/[JClouds] 経由でAmazon "
+"S3キャッシュストアに接続したデモを聴衆に見せました。参加者からは、特に link:http://www.ibm.com/developerworks/"
+"web/library/wa-cloudgrid/?ca=dgr-dth-cloudjw22CloudvsGrid&S_TACT="
+"105AGX59&S_CMP=grsitejw22[グリッドとクラウドコンピューティングの違いを] 知りたいという好意的なフィードバックがありました。"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-17-first-experiences-presenting-infinispan.adoc:33
-msgid "Two days later I went to Brussels to do the same presentation for http://jbug.be/index.php?view=details&id=3%3Asummer-talks&option=com_eventlist&Itemid=53[Belgium's JBoss User Group] and the reaction was even better there! A lot of Spring developers attended the presentation who were very keen on integrating Infinispan in their own projects."
+#, fuzzy
+msgid ""
+"Two days later I went to Brussels to do the same presentation for http://"
+"jbug.be/index.php?view=details&id=3%3Asummer-talks&option="
+"com_eventlist&Itemid=53[Belgium's JBoss User Group] and the reaction was "
+"even better there! A lot of Spring developers attended the presentation who "
+"were very keen on integrating Infinispan in their own projects."
 msgstr ""
+"2日後、ブリュッセルで link:http://jbug.be/index.php?view=details&id=3%3Asummer-"
+"talks&option=com_eventlist&Itemid=53[ベルギーのJBoss User Group] "
+"で同じプレゼンテーションを行った。プレゼンテーションには多くのSpring開発者が参加しており、彼らは自分のプロジェクトにInfinispanを統合することにとても熱心でした。"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-17-first-experiences-presenting-infinispan.adoc:38
-msgid "From here I'd like to thank all the people who attended these two sessions and in particular the organizers, Jakob Magun and Phillip Oser from http://www.jugs.ch/index.html[Switzerland's Java User Group] and Joris De Winne from http://jbug.be/[Belgium's JBoss User Group]."
+#, fuzzy
+msgid ""
+"From here I'd like to thank all the people who attended these two sessions "
+"and in particular the organizers, Jakob Magun and Phillip Oser from http://"
+"www.jugs.ch/index.html[Switzerland's Java User Group] and Joris De Winne "
+"from http://jbug.be/[Belgium's JBoss User Group]."
 msgstr ""
+"ここからは、この2つのセッションに参加してくださったすべての方々、特に主催者である link:http://www.jugs.ch/index."
+"html[スイスのJava User Group] のJakob Magun氏とPhillip Oser氏、 link:http://jbug.be/"
+"[ベルギーのJBoss User Group] のJoris De Winne氏に感謝の意を表したいと思います。"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-17-first-experiences-presenting-infinispan.adoc:40
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

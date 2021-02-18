@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-08-15-infinispan-data-grid-platform.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-08-15-infinispan-data-grid-platform.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan - Data Grid Platform\n"
@@ -32,27 +32,76 @@ msgid ""
 "date: '2012-08-15T01:32:00.001-07:00'\n"
 "author: msurtani\n"
 "tags: [ \" infinispan\", \"book\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2289942639038872788\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/08/infinispan-data-grid-platform.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2289942639038872788\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/08/infinispan-data-grid-"
+"platform.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan - データグリッドプラットフォーム\n"
+"permalink: /blog/:year/:month/:day/infinispan-data-grid-platform\n"
+"date: '2012-08-15T01:32:00.001-07:00'\n"
+"author: msurtani\n"
+"tags: [ \" infinispan\", \"book\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2289942639038872788\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/08/infinispan-data-grid-"
+"platform.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-08-15-infinispan-data-grid-platform.adoc:18
-msgid "http://www.packtpub.com/sites/default/files/8222OS_Infinispan%20Data%20Grid%20Platformcov.jpg[image:http://www.packtpub.com/sites/default/files/8222OS_Infinispan%20Data%20Grid%20Platformcov.jpg[image,width=259,height=320]]For the past few months, I have been working with prominent technology http://www.mastertheboss.com/[blogger] and http://www.packtpub.com/authors/profiles/francesco-marchioni[author] Francesco Marchioni on my first book ever.  Unsurprisingly, this is a book on Infinispan, written for http://www.packtpub.com/[Packt Publishing]."
+#, fuzzy
+msgid ""
+"http://www.packtpub.com/sites/default/files/"
+"8222OS_Infinispan%20Data%20Grid%20Platformcov.jpg[image:http://www.packtpub."
+"com/sites/default/files/8222OS_Infinispan%20Data%20Grid%20Platformcov."
+"jpg[image,width=259,height=320]]For the past few months, I have been working "
+"with prominent technology http://www.mastertheboss.com/[blogger] and http://"
+"www.packtpub.com/authors/profiles/francesco-marchioni[author] Francesco "
+"Marchioni on my first book ever.  Unsurprisingly, this is a book on "
+"Infinispan, written for http://www.packtpub.com/[Packt Publishing]."
 msgstr ""
+"link:http://www.packtpub.com/sites/default/files/"
+"8222OS_Infinispan%20Data%20Grid%20Platformcov.jpg[] この数ヶ月間、私は著名な link:http://"
+"www.mastertheboss.com/[テクノロジーブロガーで] あり link:http://www.packtpub.com/authors/"
+"profiles/francesco-marchioni[作家] "
+"でもあるフランチェスコ・マルキオーニと一緒に、私の初めての本の制作に取り組んできました。 当然のことながら、この本はPackt link:http://"
+"www.packtpub.com/[Publishingの] ために書かれたInfinispanに関する本です。"
 
 #. type: Plain text
 #: upstream/_posts/2012-08-15-infinispan-data-grid-platform.adoc:28
-msgid "This is an entry-level book, covering high level concepts of distributed caching and data grids, before diving into practical, hands-on details of setting up, configuring and using Infinispan.  Monitoring a running grid via http://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html[JMX] and http://www.jboss.org/rhq/[RHQ] are also covered, as is a chapter on using Infinispan from http://www.theserverside.com/news/1373391/Dependency-Injection-in-Java-EE-6-Part-1[CDI], the increasingly popular programming model for enterprise Java."
+#, fuzzy
+msgid ""
+"This is an entry-level book, covering high level concepts of distributed "
+"caching and data grids, before diving into practical, hands-on details of "
+"setting up, configuring and using Infinispan.  Monitoring a running grid via "
+"http://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525."
+"html[JMX] and http://www.jboss.org/rhq/[RHQ] are also covered, as is a "
+"chapter on using Infinispan from http://www.theserverside.com/news/1373391/"
+"Dependency-Injection-in-Java-EE-6-Part-1[CDI], the increasingly popular "
+"programming model for enterprise Java."
 msgstr ""
+"本書は、分散キャッシュとデータグリッドの高度な概念をカバーした入門書で、Infinispanのセットアップ、設定、使用方法の実践的な詳細に飛び込む前に、JMX "
+"link:http://www.oracle.com/technetwork/java/javase/tech/javamanagement-"
+"140525.html[と] RHQを介して実行中のグリッドを監視すること link:http://www.jboss.org/rhq/[も] "
+"カバーしています。 また、エンタープライズJavaのプログラミングモデルとして人気が高まっ link:http://www.theserverside."
+"com/news/1373391/Dependency-Injection-in-Java-EE-6-Part-1[て] "
+"いるCDIからInfinispanを使用する章もカバーしています。"
 
 #. type: Plain text
 #: upstream/_posts/2012-08-15-infinispan-data-grid-platform.adoc:32
-msgid "Grab the book - in print or electronic format - from http://www.packtpub.com/infinispan-data-grid-platform/book[Packt's website]."
+#, fuzzy
+msgid ""
+"Grab the book - in print or electronic format - from http://www.packtpub.com/"
+"infinispan-data-grid-platform/book[Packt's website]."
 msgstr ""
+"link:http://www.packtpub.com/infinispan-data-grid-platform/"
+"book[Packtのウェブサイト] から印刷または電子版の本を入手してください。"
 
 #. type: Plain text
 #: upstream/_posts/2012-08-15-infinispan-data-grid-platform.adoc:34
+#, fuzzy
 msgid "Enjoy Manik"
-msgstr ""
+msgstr "マニクを楽しむ"

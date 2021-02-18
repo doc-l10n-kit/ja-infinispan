@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-07-30-cross-site-replication-with-jboss-data.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-30-cross-site-replication-with-jboss-data.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Cross site replication with JBoss Data Grid\n"
@@ -32,23 +32,59 @@ msgid ""
 "date: '2014-07-30T01:17:00.001-07:00'\n"
 "author: ttarrant\n"
 "tags: []\n"
-"thumbnail: http://4.bp.blogspot.com/-c17ZV7mN7-Y/U9iqjm_X92I/AAAAAAAAFZM/2DB9vi1LEWo/s72-c/jdg-earthmoon.jpg\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-723500080017122373\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/07/cross-site-replication-with-jboss-data.html\n"
+"thumbnail: http://4.bp.blogspot.com/-c17ZV7mN7-Y/U9iqjm_X92I/AAAAAAAAFZM/"
+"2DB9vi1LEWo/s72-c/jdg-earthmoon.jpg\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"723500080017122373\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/07/cross-site-replication-"
+"with-jboss-data.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: JBoss Data Gridによるクロスサイトレプリケーション\n"
+"permalink: /blog/:year/:month/:day/cross-site-replication-with-jboss-data\n"
+"date: '2014-07-30T01:17:00.001-07:00'\n"
+"author: ttarrant\n"
+"tags: []\n"
+"thumbnail: http://4.bp.blogspot.com/-c17ZV7mN7-Y/U9iqjm_X92I/AAAAAAAAFZM/"
+"2DB9vi1LEWo/s72-c/jdg-earthmoon.jpg\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"723500080017122373\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/07/cross-site-replication-"
+"with-jboss-data.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-30-cross-site-replication-with-jboss-data.adoc:13
-msgid "http://4.bp.blogspot.com/-c17ZV7mN7-Y/U9iqjm_X92I/AAAAAAAAFZM/2DB9vi1LEWo/s1600/jdg-earthmoon.jpg[image:http://4.bp.blogspot.com/-c17ZV7mN7-Y/U9iqjm_X92I/AAAAAAAAFZM/2DB9vi1LEWo/s1600/jdg-earthmoon.jpg[image,width=320,height=178]]"
+#, fuzzy
+msgid ""
+"http://4.bp.blogspot.com/-c17ZV7mN7-Y/U9iqjm_X92I/AAAAAAAAFZM/2DB9vi1LEWo/"
+"s1600/jdg-earthmoon.jpg[image:http://4.bp.blogspot.com/-c17ZV7mN7-Y/"
+"U9iqjm_X92I/AAAAAAAAFZM/2DB9vi1LEWo/s1600/jdg-earthmoon.jpg[image,width="
+"320,height=178]]"
 msgstr ""
+"link:http://4.bp.blogspot.com/-c17ZV7mN7-Y/U9iqjm_X92I/AAAAAAAAFZM/"
+"2DB9vi1LEWo/s1600/jdg-earthmoon.jpg[]"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-30-cross-site-replication-with-jboss-data.adoc:22
-msgid "Are you afraid the Death Star or the Vogon Constructor Fleet are going to blow up your data on the Earth ?  Navin Surtani has recorded a nice https://www.youtube.com/watch?v=OPOvwBelAlk[video] demonstrating the use of JBoss Data Grid Cross-Site Replication and how it can be used to keep backups of your precious data off-site."
+#, fuzzy
+msgid ""
+"Are you afraid the Death Star or the Vogon Constructor Fleet are going to "
+"blow up your data on the Earth ?  Navin Surtani has recorded a nice https://"
+"www.youtube.com/watch?v=OPOvwBelAlk[video] demonstrating the use of JBoss "
+"Data Grid Cross-Site Replication and how it can be used to keep backups of "
+"your precious data off-site."
 msgstr ""
+"デススターや Vogon Constructor Fleet が地球上のデータを吹き飛ばすのを恐れていませんか？ Navin Surtani "
+"は、JBoss Data Grid Cross-Site Replication "
+"の使用方法と、貴重なデータのバックアップをオフサイトに保持するためにどのように使用できるかを実演する素晴らしいビデオを記録しました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-30-cross-site-replication-with-jboss-data.adoc:24
-msgid "The code for the demo is also https://github.com/tristantarrant/earth-moon[available]. Enjoy."
+#, fuzzy
+msgid ""
+"The code for the demo is also https://github.com/tristantarrant/earth-"
+"moon[available]. Enjoy."
 msgstr ""
+"デモ用のコードも link:https://github.com/tristantarrant/earth-moon[公開] しています。お楽しみに。"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-09-16-want-to-become-full-time-dev-on.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-16-want-to-become-full-time-dev-on.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Want to become a full-time dev on Infinispan?\n"
@@ -32,88 +32,133 @@ msgid ""
 "date: '2010-09-16T07:06:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \" recruit\", \"red hat\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1881581399696432303\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/09/want-to-become-full-time-dev-on.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1881581399696432303\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/09/want-to-become-full-"
+"time-dev-on.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispanでフルタイムの開発者になりませんか？\n"
+"permalink: /blog/:year/:month/:day/want-to-become-full-time-dev-on\n"
+"date: '2010-09-16T07:06:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \" recruit\", \"red hat\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1881581399696432303\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/09/want-to-become-full-"
+"time-dev-on.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-16-want-to-become-full-time-dev-on.adoc:16
-msgid "From time to time, we do recruit active, valuable community members, to work on Infinispan and related projects on a full-time basis.  If you are interested in working for Infinispan full-time, you should email #jobs AT infinispan DOT org# and include the following:"
+#, fuzzy
+msgid ""
+"From time to time, we do recruit active, valuable community members, to work "
+"on Infinispan and related projects on a full-time basis.  If you are "
+"interested in working for Infinispan full-time, you should email #jobs AT "
+"infinispan DOT org# and include the following:"
 msgstr ""
+"Infinispanで働くことに興味のある方は、jobsAT infinispan DOT orgにメールを送り、以下の内容を明記してください。"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-16-want-to-become-full-time-dev-on.adoc:20
-msgid "A résumé, in plain text or as a PDF document (or a link to an online résumé)"
-msgstr ""
+#, fuzzy
+msgid ""
+"A résumé, in plain text or as a PDF document (or a link to an online résumé)"
+msgstr "プレーンテキストまたはPDF文書の履歴書（またはオンライン履歴書へのリンク"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-16-want-to-become-full-time-dev-on.adoc:22
+#, fuzzy
 msgid "Details of your contribution to Infinispan or other JBoss projects"
-msgstr ""
+msgstr "Infinispan またはその他の JBoss プロジェクトへの貢献の詳細"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-16-want-to-become-full-time-dev-on.adoc:24
+#, fuzzy
 msgid "Including links to JIRAs, changelogs if relevant"
-msgstr ""
+msgstr "JIRAへのリンク、関連する場合は変更ログを含む"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-16-want-to-become-full-time-dev-on.adoc:25
 #: upstream/_posts/2010-09-16-want-to-become-full-time-dev-on.adoc:30
+#, fuzzy
 msgid "Links to community documentation, wikis, etc that may be relevant"
-msgstr ""
+msgstr "関連する可能性のあるコミュニティ文書やWikiなどへのリンク"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-16-want-to-become-full-time-dev-on.adoc:27
+#, fuzzy
 msgid "Details of your contribution to other open source projects"
-msgstr ""
+msgstr "他のオープンソースプロジェクトへの貢献の詳細"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-16-want-to-become-full-time-dev-on.adoc:29
+#, fuzzy
 msgid "Including links to issue trackers, source code, etc."
-msgstr ""
+msgstr "課題追跡、ソースコードなどへのリンクを含みます。"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-16-want-to-become-full-time-dev-on.adoc:32
+#, fuzzy
 msgid "Your current time zone"
-msgstr ""
+msgstr "現在のタイムゾーン"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-16-want-to-become-full-time-dev-on.adoc:37
-msgid "Benefits, in addition to the usual corporate benefits of being employed by Red Hat Inc. (One of the http://www.computerworld.com/spring/bp/detail/794[100 best places] to work in IT), include:"
+#, fuzzy
+msgid ""
+"Benefits, in addition to the usual corporate benefits of being employed by "
+"Red Hat Inc. (One of the http://www.computerworld.com/spring/bp/detail/"
+"794[100 best places] to work in IT), include:"
 msgstr ""
+"福利厚生は、Red Hat Inc.(IT業界で働きがいのある link:http://www.computerworld.com/spring/bp/"
+"detail/794[会社100] 選の1つ)に選ばれています。"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-16-want-to-become-full-time-dev-on.adoc:39
+#, fuzzy
 msgid "Working with an extremely active open source community"
-msgstr ""
+msgstr "非常に活発なオープンソースコミュニティでの作業"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-16-want-to-become-full-time-dev-on.adoc:40
+#, fuzzy
 msgid "Ability to work remotely, communicating via email/IRC"
-msgstr ""
+msgstr "リモートワーク、電子メール/IRCを介したコミュニケーション能力"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-16-want-to-become-full-time-dev-on.adoc:42
-msgid "Work on some of the most exciting tech and leading engineers in the Java landscape today"
-msgstr ""
+#, fuzzy
+msgid ""
+"Work on some of the most exciting tech and leading engineers in the Java "
+"landscape today"
+msgstr "今日のJava業界で最もエキサイティングな技術者や一流のエンジニアと一緒に仕事をしてみませんか？"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-16-want-to-become-full-time-dev-on.adoc:44
-msgid "Help shape cloud-based data storage for the next generation of applications"
-msgstr ""
+#, fuzzy
+msgid ""
+"Help shape cloud-based data storage for the next generation of applications"
+msgstr "次世代アプリケーションのためのクラウドベースのデータストレージの開発に貢献"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-16-want-to-become-full-time-dev-on.adoc:47
-msgid "While we don't have specific timescales for any specific positions vacant, do drop us an email if this is of interest to you."
-msgstr ""
+#, fuzzy
+msgid ""
+"While we don't have specific timescales for any specific positions vacant, "
+"do drop us an email if this is of interest to you."
+msgstr "特定のポジションの具体的なタイムスケールはありませんが、ご興味のある方はメールでご連絡ください。"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-16-want-to-become-full-time-dev-on.adoc:51
+#, fuzzy
 msgid "Cheers"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-16-want-to-become-full-time-dev-on.adoc:52
+#, fuzzy
 msgid "Manik"
-msgstr ""
+msgstr "マニク"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-03-08-infinispan-900cr3-is-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-08-infinispan-900cr3-is-out.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.0.0.CR3 is out!\n"
@@ -34,52 +34,89 @@ msgid ""
 "tags: [\n"
 "\"release candidate\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1464267671140472481\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/03/infinispan-900cr3-is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1464267671140472481\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/03/infinispan-900cr3-is-"
+"out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 9.0.0.0.CR3が出ました!\n"
+"permalink: /blog/:year/:month/:day/infinispan-900cr3-is-out\n"
+"date: '2017-03-08T10:47:00.000-08:00'\n"
+"author: gustavonalle\n"
+"tags: [\n"
+"\"release candidate\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1464267671140472481\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/03/infinispan-900cr3-is-"
+"out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-08-infinispan-900cr3-is-out.adoc:14
+#, fuzzy
 msgid "Dear users, the last release candidate for Infinispan 9 is out!"
-msgstr ""
+msgstr "ユーザーの皆様、Infinispan 9 の最後のリリース候補が出ました!"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-08-infinispan-900cr3-is-out.adoc:17
-msgid "This milestone contains mostly bug fixes and documentation improvements ahead of 9.0.0.Final. Noteworthy changes:"
-msgstr ""
+#, fuzzy
+msgid ""
+"This milestone contains mostly bug fixes and documentation improvements "
+"ahead of 9.0.0.Final. Noteworthy changes:"
+msgstr "このマイルストーンには、9.0.0.Finalに向けたバグフィックスとドキュメントの改善が主に含まれています。注目すべき変更点。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-08-infinispan-900cr3-is-out.adoc:19
+#, fuzzy
 msgid "Kubernetes Rolling Updates are fully supported"
-msgstr ""
+msgstr "Kubernetesのローリングアップデートは完全にサポートされています"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-08-infinispan-900cr3-is-out.adoc:20
+#, fuzzy
 msgid "Infinispan Rolling Upgrades on Kubernetes is fully supported"
-msgstr ""
+msgstr "Kubernetes上でのInfinispanのローリングアップグレードは完全にサポートされています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-08-infinispan-900cr3-is-out.adoc:21
+#, fuzzy
 msgid "Library updates: JGroups 4.0.1, Protostream 4.0.0.Alpha9, Log4j2 2.8.1"
-msgstr ""
+msgstr "ライブラリの更新。JGroups 4.0.1、Protostream 4.0.0.0.Alpha9、Log4j2 2.8.1"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-08-infinispan-900cr3-is-out.adoc:23
-msgid "The deadlock detection hasn't keep up with the improvements of our locking algorithm and has been removed."
-msgstr ""
+#, fuzzy
+msgid ""
+"The deadlock detection hasn't keep up with the improvements of our locking "
+"algorithm and has been removed."
+msgstr "デッドロック検出がロックアルゴリズムの改良に追いついておらず、削除されました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-08-infinispan-900cr3-is-out.adoc:24
+#, fuzzy
 msgid "Support for authentication in the Rest endpoint"
-msgstr ""
+msgstr "Restエンドポイントでの認証のサポート"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-08-infinispan-900cr3-is-out.adoc:30
-msgid "For the full list of changes check the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12334065[release notes], http://infinispan.org/download/[download] the 9.0.0.CR3 release and http://stg-ispn.rhcloud.com/community/[let us know] if you have any questions or suggestions."
+#, fuzzy
+msgid ""
+"For the full list of changes check the https://issues.jboss.org/secure/"
+"ReleaseNote.jspa?projectId=12310799&version=12334065[release notes], http://"
+"infinispan.org/download/[download] the 9.0.0.CR3 release and http://stg-ispn."
+"rhcloud.com/community/[let us know] if you have any questions or suggestions."
+""
 msgstr ""
+"変更点の全リストについては、 link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12334065[リリースノートを] 確認し、9.0.0.0.CR3リリースを link:"
+"http://infinispan.org/download/[ダウンロードして] 、質問や提案があれば link:http://stg-ispn."
+"rhcloud.com/community/[私たちに知らせてください] 。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-08-infinispan-900cr3-is-out.adoc:33
+#, fuzzy
 msgid "Cheers, The Infinispan team"
-msgstr ""
+msgstr "乾杯、インフィニスパンチーム"

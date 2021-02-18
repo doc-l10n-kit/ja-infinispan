@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-10-19-infinispan-510beta2-is-out-and.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-19-infinispan-510beta2-is-out-and.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 5.1.0.BETA2 is out and asymmetric clusters are here!\n"
@@ -32,47 +32,114 @@ msgid ""
 "date: '2011-10-19T00:01:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \" asymmetric clusters\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6693568017456752942\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/10/infinispan-510beta2-is-out-and.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6693568017456752942\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/10/infinispan-510beta2-is-"
+"out-and.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 5.1.0.BETA2がリリースされ、非対称クラスターが登場しました。\n"
+"permalink: /blog/:year/:month/:day/infinispan-510beta2-is-out-and\n"
+"date: '2011-10-19T00:01:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \" asymmetric clusters\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6693568017456752942\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/10/infinispan-510beta2-is-"
+"out-and.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-19-infinispan-510beta2-is-out-and.adoc:14
-msgid "The latest beta of the 5.1 '_Brahma_' series, 5.1.0.BETA2, is out now and thanks to Dan Berindei, it comes with support for asymmetric clusters which has been highly demanded."
+#, fuzzy
+msgid ""
+"The latest beta of the 5.1 '_Brahma_' series, 5.1.0.BETA2, is out now and "
+"thanks to Dan Berindei, it comes with support for asymmetric clusters which "
+"has been highly demanded."
 msgstr ""
+"5.1 _「Brahma_ 」シリーズの最新ベータ版「5.1.0.BETA2」が公開されていますが、Dan "
+"Berindei氏のおかげで、要望の多かった非対称クラスタをサポートしています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-19-infinispan-510beta2-is-out-and.adoc:21
-msgid "Before asymmetric clusters were supported, it was required that all Infinispan caches that client code interacted against were defined and running in all nodes in the cluster, otherwise, cluster wide messages for a cache that did not exist in a node would fail. So, imagine this scenario where #c1# and #c2# are user defined caches configured with replication:"
+#, fuzzy
+msgid ""
+"Before asymmetric clusters were supported, it was required that all "
+"Infinispan caches that client code interacted against were defined and "
+"running in all nodes in the cluster, otherwise, cluster wide messages for a "
+"cache that did not exist in a node would fail. So, imagine this scenario "
+"where #c1# and #c2# are user defined caches configured with replication:"
 msgstr ""
+"非対称クラスタがサポートされる前は、クライアントコードがやり取りするすべてのInfinispanキャッシュが定義されており、クラスタ内のすべてのノードで実行されている必要がありました。そこで、c1とc2がレプリケーションで構成されたユーザー定義キャッシュである場合のシナリオを想像してみましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-19-infinispan-510beta2-is-out-and.adoc:24
+#, fuzzy
 msgid "#Node A [c1]# #Node B [c1, c2] #"
-msgstr ""
+msgstr "ノードA [c1] ノードB [c1, c2] ノードB [c1, c2"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-19-infinispan-510beta2-is-out-and.adoc:33
-msgid "Without asymmetric clusters, whenever #c2# cache was modified in Node B, a replication message would be sent to Node A, but the replication would fail indicating that c2 was not defined in Node A.  This failure would get propagated back to Node B which would result in the modification failing. This kind of problems can particularly affect managed environments such as the JBoss Application Server, because often, deployments will be made in a subset of the cluster, so it could well happen that not all nodes have a particular cache started."
+#, fuzzy
+msgid ""
+"Without asymmetric clusters, whenever #c2# cache was modified in Node B, a "
+"replication message would be sent to Node A, but the replication would fail "
+"indicating that c2 was not defined in Node A.  This failure would get "
+"propagated back to Node B which would result in the modification failing. "
+"This kind of problems can particularly affect managed environments such as "
+"the JBoss Application Server, because often, deployments will be made in a "
+"subset of the cluster, so it could well happen that not all nodes have a "
+"particular cache started."
 msgstr ""
+"非対称クラスタがない場合、ノード B でc2キャッシュが変更されるたびに、レプリケーションメッセージがノード A "
+"に送信されますが、レプリケーションはノード A で c2 "
+"が定義されていないことを示して失敗します。多くの場合、デプロイはクラスタのサブセットで行われるため、すべてのノードで特定のキャッシュが開始されているわけではないため、この種の問題は特に "
+"JBoss Application Server のような管理環境に影響を与えます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-19-infinispan-510beta2-is-out-and.adoc:40
-msgid "So, what Infinispan 5.1.0.BETA2 '_Brahma_' brings is support for this type of scenarios by maintaining a view correlating nodes and started caches, hence allowing any node to know which other nodes have a particular cache started. This means that in the above case, Node B would not have sent a replication message to Node A because it would know that #c2# was only started in Node B."
+#, fuzzy
+msgid ""
+"So, what Infinispan 5.1.0.BETA2 '_Brahma_' brings is support for this type "
+"of scenarios by maintaining a view correlating nodes and started caches, "
+"hence allowing any node to know which other nodes have a particular cache "
+"started. This means that in the above case, Node B would not have sent a "
+"replication message to Node A because it would know that #c2# was only "
+"started in Node B."
 msgstr ""
+"Infinispan 5.1.0.0.BETA2 _'Brahma_ "
+"'がもたらすものは、ノードと開始されたキャッシュを関連付けたビューを維持することで、このタイプのシナリオをサポートすることで、どのノードでも他のどのノードが特定のキャッシュを開始したかを知ることができます。これは、上記のケースでは、ノードBはノードBでのみc2が開始されたことを知っているので、ノードBはノードAにレプリケーションメッセージを送信しなかったことを意味します。"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-19-infinispan-510beta2-is-out-and.adoc:47
-msgid "The lack of support for asymmetric clusters is what forced Infinispan servers to only accept invocations for predefined caches because these predefined could be started when the servers were started, hence avoiding the asymmetric cluster problem. Now that asymmetric clusters are supported, it's likely that this limitation go away, but the timeline is to be defined yet."
+#, fuzzy
+msgid ""
+"The lack of support for asymmetric clusters is what forced Infinispan "
+"servers to only accept invocations for predefined caches because these "
+"predefined could be started when the servers were started, hence avoiding "
+"the asymmetric cluster problem. Now that asymmetric clusters are supported, "
+"it's likely that this limitation go away, but the timeline is to be defined "
+"yet."
 msgstr ""
+"非対称クラスタがサポートされていないために、Infinispanサーバは事前に定義されたキャッシュの呼び出しのみを受け付けるようになっていましたが、これはサーバの起動時に事前に定義されたキャッシュを起動することができるため、非対称クラスタの問題を回避することができたからです。非対称クラスタがサポートされた今、この制限はなくなりそうですが、その時期はまだ決まっていません。"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-19-infinispan-510beta2-is-out-and.adoc:54
-msgid "This release also includes a http://goo.gl/s6apG[bunch of other fixes] and as always, please use the http://community.jboss.org/en/infinispan?view=discussions[user forums] to report back, grab the release http://www.jboss.org/infinispan/downloads[here], enjoy and keep the feedback coming."
+#, fuzzy
+msgid ""
+"This release also includes a http://goo.gl/s6apG[bunch of other fixes] and "
+"as always, please use the http://community.jboss.org/en/infinispan?view="
+"discussions[user forums] to report back, grab the release http://www.jboss."
+"org/infinispan/downloads[here], enjoy and keep the feedback coming."
 msgstr ""
+"このリリースには link:http://goo.gl/s6apG[他にも多くの修正が] 含まれており、いつものように、 link:http://"
+"community.jboss.org/en/infinispan?view=discussions[ユーザーフォーラムを] "
+"利用してレポートバックしたり、 link:http://www.jboss.org/infinispan/downloads[ここで] "
+"リリースを掴んだり、楽しんだり、フィードバックを続けたりしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-10-19-infinispan-510beta2-is-out-and.adoc:56
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

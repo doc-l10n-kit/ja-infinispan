@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Defining cache configurations via CacheManager in Beta1\n"
@@ -32,50 +32,102 @@ msgid ""
 "date: '2009-08-21T03:18:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \"configuration\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7730713046943098622\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/08/defining-cache-configurations-via.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7730713046943098622\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/08/defining-cache-"
+"configurations-via.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: ベータ 1 の CacheManager を使用したキャッシュ構成の定義\n"
+"permalink: /blog/:year/:month/:day/defining-cache-configurations-via\n"
+"date: '2009-08-21T03:18:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"configuration\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7730713046943098622\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/08/defining-cache-"
+"configurations-via.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:15
-msgid "Infinispan's first beta release is just around the corner and in preparation, I'd like to introduce to the Infinispan users an important API change in org.infinispan.manager.CacheManager class that will be part of this beta release."
+#, fuzzy
+msgid ""
+"Infinispan's first beta release is just around the corner and in "
+"preparation, I'd like to introduce to the Infinispan users an important API "
+"change in org.infinispan.manager.CacheManager class that will be part of "
+"this beta release."
 msgstr ""
+"Infinispanの最初のベータリリースがすぐそこまで来ていますが、その準備のために、このベータリリースの一部となる org.infinispan."
+"manager.CacheManager クラスの重要なAPI変更をInfinispanユーザーに紹介したいと思います。"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:20
-msgid "As a result of the development of the Infinispan second level cache provider for Hibernate, we have discovered that the CacheManager API for definition and retrieval of Configuration instances was a bit limited.  So, for this coming release, the following method has been deleted:"
+#, fuzzy
+msgid ""
+"As a result of the development of the Infinispan second level cache provider "
+"for Hibernate, we have discovered that the CacheManager API for definition "
+"and retrieval of Configuration instances was a bit limited.  So, for this "
+"coming release, the following method has been deleted:"
 msgstr ""
+"Hibernate 用の Infinispan 第 2 レベル・キャッシュ・プロバイダを開発した結果、Configuration "
+"インスタンスの定義と取得のための CacheManager API "
+"が少し制限されていることがわかりました。そこで、今回のリリースでは、以下のメソッドが削除されました。"
 
 #. type: delimited block -
 #: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:24
 #, no-wrap
-msgid "void defineCache(String cacheName, Configuration configurationOverride)\n"
+msgid ""
+"void defineCache(String cacheName, Configuration configurationOverride)\n"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:28
+#, fuzzy
 msgid "And instead, the following two methods have been added:"
-msgstr ""
+msgstr "そして、その代わりに以下の2つの方法が追加されました。"
 
 #. type: delimited block -
 #: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:34
 #, no-wrap
 msgid ""
-"Configuration defineConfiguration(String cacheName, Configuration configurationOverride);\n"
-"Configuration defineConfiguration(String cacheName, String templateCacheName, \n"
+"Configuration defineConfiguration(String cacheName, Configuration "
+"configurationOverride);\n"
+"Configuration defineConfiguration(String cacheName, String "
+"templateCacheName, \n"
 "   Configuration configurationOverride);\n"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:44
-msgid "The primary driver for this change has been the development of the Infinispan cache provider, where we wanted to enable users to configure or override most commonly modified Infinispan parameters via hibernate configuration file. This would avoid users having to modify different files for the most commonly modified parameters, hence improving usability of the Infinispan cache provider. However, to be able to implement this, we needed CacheManager's API to be enhanced so that:"
+#, fuzzy
+msgid ""
+"The primary driver for this change has been the development of the "
+"Infinispan cache provider, where we wanted to enable users to configure or "
+"override most commonly modified Infinispan parameters via hibernate "
+"configuration file. This would avoid users having to modify different files "
+"for the most commonly modified parameters, hence improving usability of the "
+"Infinispan cache provider. However, to be able to implement this, we needed "
+"CacheManager's API to be enhanced so that:"
 msgstr ""
+"この変更の主な推進力は、Infinispan "
+"キャッシュプロバイダの開発でした。これにより、ユーザーが最も一般的に変更されるパラメータのために異なるファイルを変更する必要がなくなり、Infinispanキャッシュプロバイダの使い勝手が向上しました。しかし、これを実装するためには、CacheManager "
+"の API を強化する必要がありました。"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:51
-msgid "Existing defined cache configurations could be overriden. This enables use cases like this: Sample Infinispan cache provider configuration will contain a generic cache definition to be used for entities. Via hibernate configuration file, users could redefine the maximum number of entries to be allowed before eviction kicks in for all entities. The code would look something like this:"
+#, fuzzy
+msgid ""
+"Existing defined cache configurations could be overriden. This enables use "
+"cases like this: Sample Infinispan cache provider configuration will contain "
+"a generic cache definition to be used for entities. Via hibernate "
+"configuration file, users could redefine the maximum number of entries to be "
+"allowed before eviction kicks in for all entities. The code would look "
+"something like this:"
 msgstr ""
+"既存の定義されたキャッシュ構成をオーバーライドすることができます。これにより、このようなユースケースが可能になります。サンプルの Infinispan "
+"キャッシュプロバイダ設定には、エンティティに使用される一般的なキャッシュ定義が含まれています。ハイバネート設定ファイルを介して、ユーザーはすべてのエンティティに対して退避が開始される前に許可されるエントリの最大数を再定義することができます。コードは次のようになります。"
 
 #. type: delimited block -
 #: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:62
@@ -86,15 +138,24 @@ msgid ""
 "CacheManager cacheManager = new DefaultCacheManager(\n"
 "   \"/home/me/infinispan/cache-provider-configs.xml\");\n"
 "Configuration overridingConfiguration = new Configuration();\n"
-"overridingConfiguration.setEvictionMaxEntries(20000); // max entries to 20.000\n"
-"// Override existing 'entity' configuration so that eviction max entries are 20.000.\n"
+"overridingConfiguration.setEvictionMaxEntries(20000); // max entries to 20."
+"000\n"
+"// Override existing 'entity' configuration so that eviction max entries are "
+"20.000.\n"
 "cacheManager.defineConfiguration(\"entity\", overridingConfiguration);\n"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:70
-msgid "Be able to define new cache configurations based on the configuration of a given cache instance, optionally applying some overrides. This enables uses cases like the following: A user wants to define eviction wake up interval for a specific entity which is different to the wake up interval used for the rest of entities."
+#, fuzzy
+msgid ""
+"Be able to define new cache configurations based on the configuration of a "
+"given cache instance, optionally applying some overrides. This enables uses "
+"cases like the following: A user wants to define eviction wake up interval "
+"for a specific entity which is different to the wake up interval used for "
+"the rest of entities."
 msgstr ""
+"与えられたキャッシュインスタンスの設定に基づいて新しいキャッシュ設定を定義し、オプションでいくつかのオーバーライドを適用できるようにします。これにより、以下のような使用例が可能になります。ユーザーは、特定のエンティティに対して、他のエンティティに使用されるウェイクアップ間隔とは異なる退避ウェイクアップ間隔を定義したいと考えています。"
 
 #. type: delimited block -
 #: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:83
@@ -108,14 +169,27 @@ msgid ""
 "// set wake up interval to 240 seconds\n"
 "overridingConfiguration.setEvictionWakeUpInterval(240000L);\n"
 "// Create a new cache configuration for com.acme.Person entity \n"
-"// based on 'entity' configuration, overriding the wake up interval to be 240 seconds\n"
-"cacheManager.defineConfiguration(\"com.acme.Person\", \"entity\", overridingConfiguration);\n"
+"// based on 'entity' configuration, overriding the wake up interval to be "
+"240 seconds\n"
+"cacheManager.defineConfiguration(\"com.acme.Person\", \"entity\", "
+"overridingConfiguration);\n"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:92
-msgid "Another limitation of the previous API, which we've solved with this API change, is that in the past the only way to get a cache's Configuration required the cache to be started because the only way to get the Configuration instance was from the Cache API. However, with this API change, we can now retrieve a cache's Configuration instance via the CacheManager API. Example:"
+#, fuzzy
+msgid ""
+"Another limitation of the previous API, which we've solved with this API "
+"change, is that in the past the only way to get a cache's Configuration "
+"required the cache to be started because the only way to get the "
+"Configuration instance was from the Cache API. However, with this API "
+"change, we can now retrieve a cache's Configuration instance via the "
+"CacheManager API. Example:"
 msgstr ""
+"以前の API のもう 1 つの制限は、今回の API の変更で解決されましたが、以前はキャッシュの Configuration を取得する唯一の方法は "
+"Cache API からの Configuration インスタンスの取得だけだったため、キャッシュを起動する必要がありました。しかし、この API "
+"の変更により、CacheManager API を介してキャッシュの Configuration "
+"インスタンスを取得できるようになりました。例を示します。"
 
 #. type: delimited block -
 #: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:103
@@ -127,11 +201,18 @@ msgid ""
 "   \"/home/me/infinispan/cache-provider-configs.xml\");\n"
 "// Pass a brand new Configuration instance without overrides \n"
 "// and it will return the given cache name's Configuration\n"
-"Configuration entityConfiguration = cacheManager.defineConfiguration(\"entity\", \n"
+"Configuration entityConfiguration = cacheManager."
+"defineConfiguration(\"entity\", \n"
 "new Configuration());\n"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-defining-cache-configurations-via.adoc:108
-msgid "If you would like to provide any feedback to this post, either respond to this blog entry or go to http://www.jboss.org/infinispan/forums.html[Infinispan's user forums]."
+#, fuzzy
+msgid ""
+"If you would like to provide any feedback to this post, either respond to "
+"this blog entry or go to http://www.jboss.org/infinispan/forums."
+"html[Infinispan's user forums]."
 msgstr ""
+"この記事へのフィードバックを提供したい場合は、このブログエントリーに返信するか、 link:http://www.jboss.org/"
+"infinispan/forums.html[Infinispanのユーザーフォーラム] にアクセスしてください。"

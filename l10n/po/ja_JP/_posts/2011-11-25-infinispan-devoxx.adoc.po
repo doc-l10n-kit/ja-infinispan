@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-11-25-infinispan-devoxx.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-25-infinispan-devoxx.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan @Devoxx\n"
@@ -33,23 +33,57 @@ msgid ""
 "author: mmarkus\n"
 "tags: [ \"event\",\n"
 "]\n"
-"thumbnail: http://4.bp.blogspot.com/-EpIJHmxg8B4/Ts_Y1kcgXBI/AAAAAAAACCI/MML0WZcexWM/s72-c/devoxx.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4071980084153489104\n"
+"thumbnail: http://4.bp.blogspot.com/-EpIJHmxg8B4/Ts_Y1kcgXBI/AAAAAAAACCI/"
+"MML0WZcexWM/s72-c/devoxx.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4071980084153489104\n"
 "blogger_orig_url: https://blog.infinispan.org/2011/11/infinispan-devoxx.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan @Devoxx\n"
+"permalink: /blog/:year/:month/:day/infinispan-devoxx\n"
+"date: '2011-11-25T09:39:00.000-08:00'\n"
+"author: mmarkus\n"
+"tags: [ \"event\",\n"
+"]\n"
+"thumbnail: http://4.bp.blogspot.com/-EpIJHmxg8B4/Ts_Y1kcgXBI/AAAAAAAACCI/"
+"MML0WZcexWM/s72-c/devoxx.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4071980084153489104\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/11/infinispan-devoxx.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-25-infinispan-devoxx.adoc:14
-msgid "http://4.bp.blogspot.com/-EpIJHmxg8B4/Ts_Y1kcgXBI/AAAAAAAACCI/MML0WZcexWM/s1600/devoxx.png[image:http://4.bp.blogspot.com/-EpIJHmxg8B4/Ts_Y1kcgXBI/AAAAAAAACCI/MML0WZcexWM/s400/devoxx.png[image]]"
+#, fuzzy
+msgid ""
+"http://4.bp.blogspot.com/-EpIJHmxg8B4/Ts_Y1kcgXBI/AAAAAAAACCI/MML0WZcexWM/"
+"s1600/devoxx.png[image:http://4.bp.blogspot.com/-EpIJHmxg8B4/Ts_Y1kcgXBI/"
+"AAAAAAAACCI/MML0WZcexWM/s400/devoxx.png[image]]"
 msgstr ""
+"link:http://4.bp.blogspot.com/-EpIJHmxg8B4/Ts_Y1kcgXBI/AAAAAAAACCI/"
+"MML0WZcexWM/s1600/devoxx.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-25-infinispan-devoxx.adoc:27
-msgid "Compared with the previous editions, this year's Devoxx was not that different: well organised, packed with interesting presentations and full rooms. And plenty of Belgian beer :)  Pete Muir, Sanne Grinovero and myself were also given the chance to speak. And we did take our time with a three hours deep dive into the Infinispan ecosystem, plenty of live demos and good discussions.  If you couldn't make it and you can't wait for the video to be published don't worry, the demo is available online https://docs.jboss.org/author/x/IYG_/[here]. Give it a spin and let us know what you think!"
+#, fuzzy
+msgid ""
+"Compared with the previous editions, this year's Devoxx was not that "
+"different: well organised, packed with interesting presentations and full "
+"rooms. And plenty of Belgian beer :)  Pete Muir, Sanne Grinovero and myself "
+"were also given the chance to speak. And we did take our time with a three "
+"hours deep dive into the Infinispan ecosystem, plenty of live demos and good "
+"discussions.  If you couldn't make it and you can't wait for the video to be "
+"published don't worry, the demo is available online https://docs.jboss.org/"
+"author/x/IYG_/[here]. Give it a spin and let us know what you think!"
 msgstr ""
+"今年のDevoxxは、前回と比べても大きな違いはありませんでした。また、ベルギービールもたくさん飲めました。)Pete Muir、Sanne "
+"Grinovero、そして私にも講演の機会が与えられました。Infinispanのエコシステムを3時間かけて深く掘り下げ、たくさんのライブデモやディスカッションを行いました。デモはオンラインでご覧いただけます "
+"link:https://docs.jboss.org/author/x/IYG_/[。] デモはオンラインで見ることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-25-infinispan-devoxx.adoc:29
+#, fuzzy
 msgid "Cheers, Mircea"
-msgstr ""
+msgstr "乾杯、ミルセア"

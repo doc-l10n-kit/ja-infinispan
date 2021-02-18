@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-07-11-infinispan-900alpha3-and-823final.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-11-infinispan-900alpha3-and-823final.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.0.0.Alpha3 (and 8.2.3.Final)\n"
@@ -32,32 +32,74 @@ msgid ""
 "date: '2016-07-11T12:33:00.001-07:00'\n"
 "author: vblagojevic\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7407790835542712103\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/07/infinispan-900alpha3-and-823final.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7407790835542712103\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/07/infinispan-900alpha3-"
+"and-823final.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 9.0.0.0.Alpha3 (および8.2.3.Final)\n"
+"permalink: /blog/:year/:month/:day/infinispan-900alpha3-and-823final\n"
+"date: '2016-07-11T12:33:00.001-07:00'\n"
+"author: vblagojevic\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7407790835542712103\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/07/infinispan-900alpha3-"
+"and-823final.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-11-infinispan-900alpha3-and-823final.adoc:12
+#, fuzzy
 msgid "Dear Infinispan users,"
-msgstr ""
+msgstr "Infinispanユーザーの皆様。"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-11-infinispan-900alpha3-and-823final.adoc:16
-msgid "As we have lately been releasing Infinispan 8 and 9 releases in pairs, today's releases are no different. We have 9.0.0.Alpha3 and 8.2.3.Final ready for you!"
+#, fuzzy
+msgid ""
+"As we have lately been releasing Infinispan 8 and 9 releases in pairs, "
+"today's releases are no different. We have 9.0.0.Alpha3 and 8.2.3.Final "
+"ready for you!"
 msgstr ""
+"最近、Infinispan 8 と 9 のリリースをペアでリリースしていますが、今日のリリースも同様です。9.0.0.0.Alpha3と8.2.3."
+"Finalをご用意しています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-11-infinispan-900alpha3-and-823final.adoc:21
-msgid "A new micro release of our stable 8.2 branch fixes 16 issues. If you are using any other 8.x release, we recommend an upgrade to 8.2.3.Final as this release contains latest bugfixes, performance improvements, and Hibernate Search library update."
+#, fuzzy
+msgid ""
+"A new micro release of our stable 8.2 branch fixes 16 issues. If you are "
+"using any other 8.x release, we recommend an upgrade to 8.2.3.Final as this "
+"release contains latest bugfixes, performance improvements, and Hibernate "
+"Search library update."
 msgstr ""
+"安定版 8.2 ブランチの新しいマイクロリリースでは、16 の問題が修正されています。他の 8.x "
+"リリースをお使いの場合は、最新のバグフィックス、パフォーマンスの改善、Hibernate 検索ライブラリのアップデートが含まれているため、8.2.3."
+"Final へのアップグレードをお勧めします。"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-11-infinispan-900alpha3-and-823final.adoc:26
-msgid "A brand new Alpha release from our development branch: 9.0.0.Alpha3 has more than 50 bug fixes, and many enhancements, among which we single out: improved distributed streams, documentation enhancements, admin console improvements, and various component upgrades."
+#, fuzzy
+msgid ""
+"A brand new Alpha release from our development branch: 9.0.0.Alpha3 has more "
+"than 50 bug fixes, and many enhancements, among which we single out: "
+"improved distributed streams, documentation enhancements, admin console "
+"improvements, and various component upgrades."
 msgstr ""
+"私たちの開発ブランチからの新しいアルファリリースです。9.0.0.0."
+"Alpha3には50以上のバグ修正と多くの機能強化が含まれており、その中でも特に分散ストリームの改善、ドキュメントの強化、管理コンソールの改善、様々なコンポーネントのアップグレードが含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-11-infinispan-900alpha3-and-823final.adoc:31
-msgid "http://infinispan.org/download/[Download] it now, try it and tell us what you think on the infinispan https://developer.jboss.org/en/infinispan/content[forums] or come and meet us on IRC: channel #infinispan on Freenode."
+#, fuzzy
+msgid ""
+"http://infinispan.org/download/[Download] it now, try it and tell us what "
+"you think on the infinispan https://developer.jboss.org/en/infinispan/"
+"content[forums] or come and meet us on IRC: channel #infinispan on Freenode."
 msgstr ""
+"今すぐ link:http://infinispan.org/download/[ダウンロードして] 、試してみて、infinispanの link:"
+"https://developer.jboss.org/en/infinispan/content[フォーラム] "
+"で感想を伝えるか、IRCで私たちに会いに来てください: チャンネル #infinispan on Freenode."

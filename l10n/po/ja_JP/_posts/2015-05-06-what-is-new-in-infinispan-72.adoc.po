@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: What is new in Infinispan 7.2?\n"
@@ -32,20 +32,40 @@ msgid ""
 "date: '2015-05-06T10:49:00.000-07:00'\n"
 "author: pruivo\n"
 "tags: [ \"release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-622029915334608496\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/05/what-is-new-in-infinispan-72.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"622029915334608496\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/05/what-is-new-in-"
+"infinispan-72.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 7.2の新機能は？\n"
+"permalink: /blog/:year/:month/:day/what-is-new-in-infinispan-72\n"
+"date: '2015-05-06T10:49:00.000-07:00'\n"
+"author: pruivo\n"
+"tags: [ \"release\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"622029915334608496\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/05/what-is-new-in-"
+"infinispan-72.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:12
+#, fuzzy
 msgid "Dear community,"
-msgstr ""
+msgstr "地域の皆様へ"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:18
-msgid "We have recently released Infinispan 7.2, and we feel it deserves a more detailed introduction. This release brings important new features, code optimizations and major bug fixes."
+#, fuzzy
+msgid ""
+"We have recently released Infinispan 7.2, and we feel it deserves a more "
+"detailed introduction. This release brings important new features, code "
+"optimizations and major bug fixes."
 msgstr ""
+"私たちは最近 Infinispan 7.2 "
+"をリリースしましたが、より詳細な紹介に値すると感じています。このリリースでは、重要な新機能、コードの最適化、主要なバグ修正が行われました。"
 
 #. type: Bullet: '*
 #. type: '
@@ -56,110 +76,162 @@ msgstr ""
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:59
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:64
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:76
+#, fuzzy
 msgid "*"
-msgstr ""
+msgstr "*"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:23
+#, fuzzy
 msgid "What features can be found?"
-msgstr ""
+msgstr "どのような特徴があるのでしょうか？"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:30
-msgid "We have introduced a new factory for the atomic object. The new factory is based on a replicated state machine, and it allows object creation on top of Infinispan cache e.g. Java collections. "
+#, fuzzy
+msgid ""
+"We have introduced a new factory for the atomic object. The new factory is "
+"based on a replicated state machine, and it allows object creation on top of "
+"Infinispan cache e.g. Java collections. "
 msgstr ""
+"アトミックオブジェクトのための新しいファクトリーを導入しました。新しいファクトリーはレプリケートされたステートマシンをベースにしており、Infinispanキャッシュの上にオブジェクトを作成することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:33
-msgid "Server-side scripting allows custom script installation in Infinispan server and their invocation over Hot Rod. You can now use map/reduce and distributed executor over Hot Rod as well. "
+#, fuzzy
+msgid ""
+"Server-side scripting allows custom script installation in Infinispan server "
+"and their invocation over Hot Rod. You can now use map/reduce and "
+"distributed executor over Hot Rod as well. "
 msgstr ""
+"サーバーサイドスクリプティングにより、Infinispanサーバーにカスタムスクリプトをインストールし、Hot "
+"Rod上で呼び出すことが可能になりました。Hot Rod上でmap/reduceと分散型エグゼキュータを使用できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:34
+#, fuzzy
 msgid "JCache (JSR-107) support over Hot Rod."
-msgstr ""
+msgstr "JCache (JSR-107) のサポートは Hot Rod を超えています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:35
+#, fuzzy
 msgid "Near cache support for Hot Rod Java client."
-msgstr ""
+msgstr "Hot Rod Javaクライアントのニアキャッシュサポート。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:36
+#, fuzzy
 msgid "Support for defining filters using the Query DSL for event listeners."
-msgstr ""
+msgstr "イベントリスナーのためのクエリ DSL を使用したフィルタの定義をサポート。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:37
+#, fuzzy
 msgid "DSL-based filters are indexed for faster and more scalable evaluation."
-msgstr ""
+msgstr "DSLベースのフィルタは、より高速でスケーラブルな評価のためにインデックス化されています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:38
+#, fuzzy
 msgid "Custom cache stores deployment in Infinispan server."
-msgstr ""
+msgstr "カスタムキャッシュは、Infinispanサーバーにデプロイメントを保存します。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:43
+#, fuzzy
 msgid "What optimizations have been made?"
-msgstr ""
+msgstr "どのような最適化が行われたのか？"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:49
-msgid "Eviction improvements with new long size support and more accurate eviction."
-msgstr ""
+#, fuzzy
+msgid ""
+"Eviction improvements with new long size support and more accurate eviction."
+msgstr "新たにロングサイズに対応し、より正確な立ち退きを実現した立ち退き改善。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:50
+#, fuzzy
 msgid "Many indexing improvements."
-msgstr ""
+msgstr "多くのインデックス改善。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:52
-msgid "Faster bulk operations (putAll() and getAll()) for both embedded and Hot Rod client."
+#, fuzzy
+msgid ""
+"Faster bulk operations (putAll() and getAll()) for both embedded and Hot Rod "
+"client."
 msgstr ""
+"組み込みクライアントとHot Rodクライアントの両方で、より高速なバルク操作 (putAll() と getAll() ) が可能になりました。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:54
-msgid "Cache creation and configuration changes do not require Infinispan server restart. "
-msgstr ""
+#, fuzzy
+msgid ""
+"Cache creation and configuration changes do not require Infinispan server "
+"restart. "
+msgstr "キャッシュの作成と構成の変更は、Infinispan サーバーの再起動を必要としません。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:56
-msgid "Faster clear operation. It is now lock-free and non-transactional, and it shouldn't be invoked with other concurrent operations."
-msgstr ""
+#, fuzzy
+msgid ""
+"Faster clear operation. It is now lock-free and non-transactional, and it "
+"shouldn't be invoked with other concurrent operations."
+msgstr "クリア操作が高速化されました。これはロックフリーで非トランザクション的なものになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:61
+#, fuzzy
 msgid "What bugs have been fixed?"
-msgstr ""
+msgstr "どのようなバグが修正されましたか？"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:69
-msgid "DummyTransactionManager has been fixed and made more reliable.  Although we recommend a use of a proper TransactionManager, it can be used for simpler applications which don't involve additional resource enlistments."
+#, fuzzy
+msgid ""
+"DummyTransactionManager has been fixed and made more reliable.  Although we "
+"recommend a use of a proper TransactionManager, it can be used for simpler "
+"applications which don't involve additional resource enlistments."
 msgstr ""
+"DummyTransactionManager "
+"が修正され、より信頼性の高いものになりました。適切なTransactionManagerの使用を推奨しますが、追加のリソースの投入を必要としないシンプルなアプリケーションに使用することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:71
-msgid "Fixed deadlocks and errors during topology changes. Adding and removing nodes works smoothly and faster now."
-msgstr ""
+#, fuzzy
+msgid ""
+"Fixed deadlocks and errors during topology changes. Adding and removing "
+"nodes works smoothly and faster now."
+msgstr "トポロジー変更時のデッドロックとエラーを修正しました。ノードの追加と削除がスムーズかつ高速に動作するようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:72
+#, fuzzy
 msgid "Multiple tweaks in CLI operations."
-msgstr ""
+msgstr "CLI操作で複数の微調整を行う。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:73
+#, fuzzy
 msgid "Other small bug fixes."
-msgstr ""
+msgstr "その他、小さなバグ修正。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:81
-msgid "Finally, we would like thank all community members involved in this release. A special thank you to *Pierre Sutra* (atomic object factory contribution), *Damiano Albani* (dependency fixes) and *Karl von Randow* (configuration fixes) "
+#, fuzzy
+msgid ""
+"Finally, we would like thank all community members involved in this release. "
+"A special thank you to *Pierre Sutra* (atomic object factory contribution), "
+"*Damiano Albani* (dependency fixes) and *Karl von Randow* (configuration "
+"fixes) "
 msgstr ""
+"最後に、このリリースに関わったすべてのコミュニティメンバーに感謝します。 *Pierre Sutra* (atomic object factory "
+"への貢献)、 *Damiano Albani* (依存関係の修正)、 *Karl von Randow* (設定の修正) に特別な感謝の意を表します。"
 
 #. type: Plain text
 #: upstream/_posts/2015-05-06-what-is-new-in-infinispan-72.adoc:85
+#, fuzzy
 msgid "The Infinispan team"
-msgstr ""
+msgstr "インフィニスパンチーム"

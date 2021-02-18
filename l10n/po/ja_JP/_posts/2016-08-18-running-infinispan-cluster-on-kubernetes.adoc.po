@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Running Infinispan cluster on Kubernetes\n"
@@ -32,160 +32,285 @@ msgid ""
 "date: '2016-08-18T02:27:00.000-07:00'\n"
 "author: slaskawiec\n"
 "tags: [ \"kubernetes\" ]\n"
-"thumbnail: https://2.bp.blogspot.com/-SxPVOKzEEH8/V62_FFizzhI/AAAAAAAAHI8/ARH6rBWLOtwwibGis3djKZk9vCDAvFipgCLcB/s72-c/Infinispan%2B%252B%2BKubernetes.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6707507324892990682\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/08/running-infinispan-cluster-on-kubernetes.html\n"
+"thumbnail: https://2.bp.blogspot.com/-SxPVOKzEEH8/V62_FFizzhI/AAAAAAAAHI8/"
+"ARH6rBWLOtwwibGis3djKZk9vCDAvFipgCLcB/s72-c/Infinispan%2B%252B%2BKubernetes."
+"png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6707507324892990682\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/08/running-infinispan-"
+"cluster-on-kubernetes.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Kubernetes上でInfinispanクラスタを実行する\n"
+"permalink: /blog/:year/:month/:day/running-infinispan-cluster-on-kubernetes\n"
+"date: '2016-08-18T02:27:00.000-07:00'\n"
+"author: slaskawiec\n"
+"tags: [ \"kubernetes\" ]\n"
+"thumbnail: https://2.bp.blogspot.com/-SxPVOKzEEH8/V62_FFizzhI/AAAAAAAAHI8/"
+"ARH6rBWLOtwwibGis3djKZk9vCDAvFipgCLcB/s72-c/Infinispan%2B%252B%2BKubernetes."
+"png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6707507324892990682\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/08/running-infinispan-"
+"cluster-on-kubernetes.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:16
-msgid "In the http://blog.infinispan.org/2016/08/running-infinispan-cluster-on-openshift.html[previous post] we looked how to run Infinispan on OpenShift. Today, our goal is exactly the same, but we'll focus on Kubernetes."
+#, fuzzy
+msgid ""
+"In the http://blog.infinispan.org/2016/08/running-infinispan-cluster-on-"
+"openshift.html[previous post] we looked how to run Infinispan on OpenShift. "
+"Today, our goal is exactly the same, but we'll focus on Kubernetes."
 msgstr ""
+"link:http://blog.infinispan.org/2016/08/running-infinispan-cluster-on-"
+"openshift.html[前回の記事] "
+"では、OpenShift上でInfinispanを実行する方法を見ました。今日の目的は全く同じですが、Kubernetesに焦点を当ててみます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:23
-msgid "Running Infinispan on Kubernetes requires using proper discovery protocol. This blog post uses https://github.com/jgroups-extras/jgroups-kubernetes[Kubernetes Ping] but it's also possible to use http://blog.infinispan.org/2016/07/improved-infinispan-docker-image.html[Gossip Router]."
+#, fuzzy
+msgid ""
+"Running Infinispan on Kubernetes requires using proper discovery protocol. "
+"This blog post uses https://github.com/jgroups-extras/jgroups-"
+"kubernetes[Kubernetes Ping] but it's also possible to use http://blog."
+"infinispan.org/2016/07/improved-infinispan-docker-image.html[Gossip Router]."
 msgstr ""
+"Kubernetes上でInfinispanを実行するには、適切なディスカバリープロトコルを使用する必要があります。このブログ記事ではK link:"
+"https://github.com/jgroups-extras/jgroups-kubernetes[ubernetesのPing] "
+"を使用していますが、 link:http://blog.infinispan.org/2016/07/improved-infinispan-"
+"docker-image.html[Gossip Routerを] 使用することも可能です。"
 
 #. type: Title =====
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:24
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Our goal"
-msgstr ""
+msgstr "私たちの目標"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:30
-msgid "We'd like to build Infinispan cluster based on Kubernetes hosted locally (using https://github.com/kubernetes/minikube[Minikube]). We will expose a service and route it to our local machine. Finally, we will use it to put data into the grid."
+#, fuzzy
+msgid ""
+"We'd like to build Infinispan cluster based on Kubernetes hosted locally "
+"(using https://github.com/kubernetes/minikube[Minikube]). We will expose a "
+"service and route it to our local machine. Finally, we will use it to put "
+"data into the grid."
 msgstr ""
+"ローカルでホストされているKubernetesをベースとしたInfinispanクラスタを構築したいと思います（ link:https://github."
+"com/kubernetes/minikube[Minikube] "
+"を使用）。サービスを公開して、それをローカルマシンにルーティングします。最後に、それを利用してグリッドにデータを投入する予定です。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:36
-msgid "https://2.bp.blogspot.com/-SxPVOKzEEH8/V62_FFizzhI/AAAAAAAAHI8/ARH6rBWLOtwwibGis3djKZk9vCDAvFipgCLcB/s1600/Infinispan%2B%252B%2BKubernetes.png[image:https://2.bp.blogspot.com/-SxPVOKzEEH8/V62_FFizzhI/AAAAAAAAHI8/ARH6rBWLOtwwibGis3djKZk9vCDAvFipgCLcB/s320/Infinispan%2B%252B%2BKubernetes.png[image,width=240,height=320]]"
+#, fuzzy
+msgid ""
+"https://2.bp.blogspot.com/-SxPVOKzEEH8/V62_FFizzhI/AAAAAAAAHI8/"
+"ARH6rBWLOtwwibGis3djKZk9vCDAvFipgCLcB/s1600/Infinispan%2B%252B%2BKubernetes."
+"png[image:https://2.bp.blogspot.com/-SxPVOKzEEH8/V62_FFizzhI/AAAAAAAAHI8/"
+"ARH6rBWLOtwwibGis3djKZk9vCDAvFipgCLcB/s320/Infinispan%2B%252B%2BKubernetes."
+"png[image,width=240,height=320]]"
 msgstr ""
+"link:https://2.bp.blogspot.com/-SxPVOKzEEH8/V62_FFizzhI/AAAAAAAAHI8/"
+"ARH6rBWLOtwwibGis3djKZk9vCDAvFipgCLcB/s1600/Infinispan%2B%252B%2BKubernetes."
+"png[]"
 
 #. type: Title =====
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:41
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Spinning local Kubernetes cluster"
-msgstr ""
+msgstr "ローカルKubernetesクラスタの回転"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:55
-msgid "There are many ways to spin up a local Kubernetes cluster. One of my favorites is https://github.com/kubernetes/minikube[Minikube]. At first you will need the 'minikube' binary, which can be downloaded from https://github.com/kubernetes/minikube/releases[Github releases page]. I usually copy it into '/usr/bin' which makes it very convenient to use.  The next step is to download 'kubectl' binary. I usually use Kubernetes https://github.com/kubernetes/kubernetes/releases[Github releases page] for this. The 'kubectl' binary is stored inside the release archive under 'kubernetes/platforms/<your_platform>/<your_architecture>/kubectl'. I'm using linux/amd64 since I'm running Fedora F23. I also copy the binary to '/usr/bin'."
+#, fuzzy
+msgid ""
+"There are many ways to spin up a local Kubernetes cluster. One of my "
+"favorites is https://github.com/kubernetes/minikube[Minikube]. At first you "
+"will need the 'minikube' binary, which can be downloaded from https://github."
+"com/kubernetes/minikube/releases[Github releases page]. I usually copy it "
+"into '/usr/bin' which makes it very convenient to use.  The next step is to "
+"download 'kubectl' binary. I usually use Kubernetes https://github.com/"
+"kubernetes/kubernetes/releases[Github releases page] for this. The 'kubectl' "
+"binary is stored inside the release archive under 'kubernetes/platforms/"
+"<your_platform>/<your_architecture>/kubectl'. I'm using linux/amd64 since "
+"I'm running Fedora F23. I also copy the binary to '/usr/bin'."
 msgstr ""
+"ローカルのKubernetesクラスタをスピンアップする方法はたくさんあります。私のお気に入りの一つは link:https://github.com/"
+"kubernetes/minikube[Minikube] です。最初に必要なのは 'minikube' バイナリで、これは link:https://"
+"github.com/kubernetes/minikube/releases[Github のリリースページ] からダウンロードできます。私はいつも'/"
+"usr/bin'にコピーしています。次のステップは、'kubectl' バイナリをダウンロードすることです。私は通常、Kubernetes link:"
+"https://github.com/kubernetes/kubernetes/releases[Githubのリリースページを] "
+"利用しています。kubectlのバイナリはリリースアーカイブの中の「kubernetes/platforms/<your_platform>/"
+"<your_architecture>/kubectl」に格納されています。私はFedora F23を使っているのでlinux/"
+"amd64を使っています。また、バイナリを/usr/binにコピーしています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:59
+#, fuzzy
 msgid "We are ready to spin up Kubernetes:"
-msgstr ""
+msgstr "Kubernetesをスピンアップする準備ができました。"
 
 #. type: Title =====
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:64
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Deploying Infinispan cluster"
-msgstr ""
+msgstr "Infinispanクラスタの導入"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:69
-msgid "This time we'll focus on automation, so there will be no 'kubectl edit' commands. Below is the yaml file for creating all necessary components in Kubernetes cluster:"
+#, fuzzy
+msgid ""
+"This time we'll focus on automation, so there will be no 'kubectl edit' "
+"commands. Below is the yaml file for creating all necessary components in "
+"Kubernetes cluster:"
 msgstr ""
+"今回は自動化に重点を置いているので、「kubectl "
+"edit」コマンドはありません。以下はKubernetesクラスタで必要なコンポーネントを作成するためのyamlファイルです。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:73
+#, fuzzy
 msgid "(lines 23 - 24) - We added additional arguments to the bootstrap scipt"
-msgstr ""
+msgstr "(23 行目 - 24 行目) - ブートストラップの scipt に追加の引数を追加しました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:75
-msgid "(lines 26 - 30) - We used Downward API for pass the current namespace to the Infinispan"
-msgstr ""
+#, fuzzy
+msgid ""
+"(lines 26 - 30) - We used Downward API for pass the current namespace to the "
+"Infinispan"
+msgstr "(26行目～30行目) - 現在の名前空間をInfinispanに渡すためにDownward APIを使用しました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:76
+#, fuzzy
 msgid "(lines 34 - 45) - We defined all ports used by the Pod"
-msgstr ""
+msgstr "(34行目から45行目) - Podが使用するすべてのポートを定義しました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:78
-msgid "(lines 49 - 66) - We created a service for port 8080 (the REST interface)"
-msgstr ""
+#, fuzzy
+msgid ""
+"(lines 49 - 66) - We created a service for port 8080 (the REST interface)"
+msgstr "(49 行目から 66 行目) - ポート 808080 (REST インターフェイス) 用のサービスを作成しました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:81
-msgid "(line 64) - We used http://kubernetes.io/docs/user-guide/services/#type-nodeport[NodePort service type] which we will expose via Minikube in the next paragraph"
+#, fuzzy
+msgid ""
+"(line 64) - We used http://kubernetes.io/docs/user-guide/services/#type-"
+"nodeport[NodePort service type] which we will expose via Minikube in the "
+"next paragraph"
 msgstr ""
+"(64行目) - 次の段落でMinikubeを介して公開する link:http://kubernetes.io/docs/user-guide/"
+"services/#type-nodeport[NodePortサービスタイプを] 使用しました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:85
+#, fuzzy
 msgid "Save it somewhere on the disk and execute 'kubectl create' command:"
-msgstr ""
+msgstr "ディスクのどこかに保存して、kubectl create コマンドを実行してください。"
 
 #. type: Title =====
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:90
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Exposing the service port"
-msgstr ""
+msgstr "サービスポートの公開"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:102
-msgid "One of the https://github.com/kubernetes/minikube#known-issues[Minikube's limitations] is that it can't use http://kubernetes.io/docs/user-guide/ingress/[Ingress API] and expose services to the outside world. Thankfully there's other way - use Node Port service type. With this simple trick we will be able to access the service using '<minikube_ip>:<node_port_number>'. The port number was specified in the yaml file (we could leave it blank and let Kubernetes assign random one). The node port can easily be checked using the following command:"
+#, fuzzy
+msgid ""
+"One of the https://github.com/kubernetes/minikube#known-issues[Minikube's "
+"limitations] is that it can't use http://kubernetes.io/docs/user-guide/"
+"ingress/[Ingress API] and expose services to the outside world. Thankfully "
+"there's other way - use Node Port service type. With this simple trick we "
+"will be able to access the service using '<minikube_ip>:<node_port_number>'. "
+"The port number was specified in the yaml file (we could leave it blank and "
+"let Kubernetes assign random one). The node port can easily be checked using "
+"the following command:"
 msgstr ""
+"link:https://github.com/kubernetes/minikube#known-issues[Minikubeの限界の] 一つは、 "
+"link:http://kubernetes.io/docs/user-guide/ingress/[Ingress APIを] "
+"利用して外部にサービスを公開できないことです。ありがたいことに、他の方法があります。これは、「<minikube_ip>:"
+"<node_port_number>」を使ってサービスにアクセスする方法です。ポート番号はyamlファイルで指定しています(空欄にしてKubernetesにランダムに割り当てることもできます)。ノードのポートは以下のコマンドで簡単に確認できます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:107
+#, fuzzy
 msgid "In order to obtain the Kubernetes node IP, use the following command:"
-msgstr ""
+msgstr "KubernetesノードのIPを取得するには、以下のコマンドを使用します。"
 
 #. type: Title =====
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:112
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Testing the setup"
-msgstr ""
+msgstr "セットアップのテスト"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:116
-msgid "Testing is quite simple and the only thing to remember is to use the proper address - <minikube_ip>:<node_port>:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Testing is quite simple and the only thing to remember is to use the proper "
+"address - <minikube_ip>:<node_port>:"
+msgstr "テストは非常に簡単で、覚えておくべきことは、適切なアドレス(<minikube_ip>:<node_port>)を使用することだけです。"
 
 #. type: Title =====
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:121
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Clean up"
-msgstr ""
+msgstr "クリーンアップ"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:124
+#, fuzzy
 msgid "Minikube has all-in-one command to do the clean up:"
-msgstr ""
+msgstr "Minikubeはオールインワンコマンドでお掃除をしてくれます。"
 
 #. type: Title =====
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:129
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Conclusion"
-msgstr ""
+msgstr "結論"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:133
-msgid "Kubernetes setup is almost identical to the OpenShift one but there are a couple of differences to keep in mind:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Kubernetes setup is almost identical to the OpenShift one but there are a "
+"couple of differences to keep in mind:"
+msgstr "KubernetesのセットアップはOpenShiftのものとほぼ同じですが、いくつかの違いがあるので注意が必要です。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:136
-msgid "OpenShift's DeploymentConfiguration is similar Kubernetes Deployment with ReplicaSets"
+#, fuzzy
+msgid ""
+"OpenShift's DeploymentConfiguration is similar Kubernetes Deployment with "
+"ReplicaSets"
 msgstr ""
+"OpenShiftのDeploymentConfigurationはReplicaSetsを使った似たようなKubernetes Deployment"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:137
+#, fuzzy
 msgid "OpenShift's Services work the same way as in Kubernetes"
-msgstr ""
+msgstr "OpenShiftのサービスはKubernetesと同じように動作する"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:138
+#, fuzzy
 msgid "OpenShift's Routes are similar to Kubernetes' Ingresses"
-msgstr ""
+msgstr "OpenShiftのRoutesはKubernetesのIngressesと似ている"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-18-running-infinispan-cluster-on-kubernetes.adoc:142
-msgid "Happy scaling and don't forget to check if Infinispan formed a cluster (hint - look into the http://blog.infinispan.org/2016/08/running-infinispan-cluster-on-openshift.html[previous post])."
+#, fuzzy
+msgid ""
+"Happy scaling and don't forget to check if Infinispan formed a cluster (hint "
+"- look into the http://blog.infinispan.org/2016/08/running-infinispan-"
+"cluster-on-openshift.html[previous post])."
 msgstr ""
+"楽しいスケーリングとInfinispanがクラスターを形成したかどうかのチェックを忘れないでください（ヒント - link:http://blog."
+"infinispan.org/2016/08/running-infinispan-cluster-on-openshift.html[前の記事を] "
+"見てください）。"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-03-28-better-hibernate-integration.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-03-28-better-hibernate-integration.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Better Hibernate integration!\n"
@@ -32,32 +32,68 @@ msgid ""
 "date: '2011-03-28T05:26:00.000-07:00'\n"
 "author: mmarkus\n"
 "tags: [ \"hibernate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2876719761694737128\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/03/better-hibernate-integration.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2876719761694737128\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/03/better-hibernate-"
+"integration.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: より良いHibernateの統合\n"
+"permalink: /blog/:year/:month/:day/better-hibernate-integration\n"
+"date: '2011-03-28T05:26:00.000-07:00'\n"
+"author: mmarkus\n"
+"tags: [ \"hibernate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2876719761694737128\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/03/better-hibernate-"
+"integration.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-03-28-better-hibernate-integration.adoc:12
+#, fuzzy
 msgid "Hi,"
-msgstr ""
+msgstr "こんにちは。"
 
 #. type: Plain text
 #: upstream/_posts/2011-03-28-better-hibernate-integration.adoc:21
-msgid "Starting with 5.0 Infinispan's transaction support was https://issues.jboss.org/browse/ISPN-888?focusedCommentId=12592115#comment-12592115[enhanced] to allow Synchronization-based enlistment in transactions (v.s.  XAResource). A main use case for this is Hibernate's second level cache: by using Synchronization the transaction manager doesn't have to write the log on the disk. On the short, better performance!"
+#, fuzzy
+msgid ""
+"Starting with 5.0 Infinispan's transaction support was https://issues.jboss."
+"org/browse/ISPN-888?focusedCommentId=12592115#comment-12592115[enhanced] to "
+"allow Synchronization-based enlistment in transactions (v.s.  XAResource). A "
+"main use case for this is Hibernate's second level cache: by using "
+"Synchronization the transaction manager doesn't have to write the log on the "
+"disk. On the short, better performance!"
 msgstr ""
+"5.0 から、Infinispan のトランザクションのサポートが link:https://issues.jboss.org/browse/ISPN-"
+"888?focusedCommentId=12592115#comment-12592115[強化され、] "
+"トランザクションへの同期化ベースの参加が可能になりました（XAResource "
+"と同様）。これの主な使用例は、Hibernateの第2レベルキャッシュです。同期化を使用することで、トランザクションマネージャはディスクにログを書き込む必要がなくなります。簡単に言えば、パフォーマンスが向上します。"
 
 #. type: Plain text
 #: upstream/_posts/2011-03-28-better-hibernate-integration.adoc:27
-msgid "You can read more about it http://community.jboss.org/wiki/Infinispantransactions#Enlisting_Synchronization[here].  Thanks to Galder Zamarreno, the integration will be released together with http://opensource.atlassian.com/projects/hibernate/browse/HHH-6062[HHH-6062]."
+#, fuzzy
+msgid ""
+"You can read more about it http://community.jboss.org/wiki/"
+"Infinispantransactions#Enlisting_Synchronization[here].  Thanks to Galder "
+"Zamarreno, the integration will be released together with http://opensource."
+"atlassian.com/projects/hibernate/browse/HHH-6062[HHH-6062]."
 msgstr ""
+"それについての詳細は link:http://community.jboss.org/wiki/"
+"Infinispantransactions#Enlisting_Synchronization[こちらで] 読むことができます。Galder "
+"Zamarrenoのおかげで、 link:http://opensource.atlassian.com/projects/hibernate/"
+"browse/HHH-6062[HHHH-6062] と一緒に統合がリリースされます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-03-28-better-hibernate-integration.adoc:31
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2011-03-28-better-hibernate-integration.adoc:32
+#, fuzzy
 msgid "Mircea"
-msgstr ""
+msgstr "ミルチェア"

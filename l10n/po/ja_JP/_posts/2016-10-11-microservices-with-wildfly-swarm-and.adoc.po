@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Microservices with Wildfly Swarm and Infinispan\n"
@@ -32,70 +32,124 @@ msgid ""
 "date: '2016-10-11T00:20:00.001-07:00'\n"
 "author: slaskawiec\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6101441236279944854\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/10/microservices-with-wildfly-swarm-and.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6101441236279944854\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/10/microservices-with-"
+"wildfly-swarm-and.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Wildfly Swarm と Infinispan を使用したマイクロサービス\n"
+"permalink: /blog/:year/:month/:day/microservices-with-wildfly-swarm-and\n"
+"date: '2016-10-11T00:20:00.001-07:00'\n"
+"author: slaskawiec\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6101441236279944854\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/10/microservices-with-"
+"wildfly-swarm-and.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:12
+#, fuzzy
 msgid "Everybody loves Microservices, right?"
-msgstr ""
+msgstr "みんなマイクロサービス大好きだよね？"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:17
-msgid "Today, all of us have slightly different understanding what Microservices are but, among all those definitions and attributes, there's probably one thing that fits them all - they need to be [.underline]#simple#."
+#, fuzzy
+msgid ""
+"Today, all of us have slightly different understanding what Microservices "
+"are but, among all those definitions and attributes, there's probably one "
+"thing that fits them all - they need to be [.underline]#simple#."
 msgstr ""
+"今日では、マイクロサービスとは何かについての理解が少しずつ異なっていますが、それらの定義や属性の中で、おそらく1つだけ当てはまるものがあります。"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:21
-msgid "So let's have a look at some practical example of creating a REST service with Infinispan as a storage wired together using CDI. We will use http://wildfly-swarm.io/[Wildfly Swarm] as a running platform."
+#, fuzzy
+msgid ""
+"So let's have a look at some practical example of creating a REST service "
+"with Infinispan as a storage wired together using CDI. We will use http://"
+"wildfly-swarm.io/[Wildfly Swarm] as a running platform."
 msgstr ""
+"それでは、CDIを使ってInfinispanをストレージとして有線接続してRESTサービスを作成する実践例を見てみましょう。ランニングプラットフォームとして "
+"link:http://wildfly-swarm.io/[Wildfly Swarm] を使用します。"
 
 #. type: Title ==
 #: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:23
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Bootstrapping new project"
-msgstr ""
+msgstr "新しいプロジェクトのブートストラップ"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:30
-msgid "A good way to start a new Wildfly Swarm project is to http://wildfly-swarm.io/generator/[generate it]. The only requirement here is to add \"JAX-RS with CDI\" and \"JPA\" as dependencies."
+#, fuzzy
+msgid ""
+"A good way to start a new Wildfly Swarm project is to http://wildfly-swarm."
+"io/generator/[generate it]. The only requirement here is to add \"JAX-RS "
+"with CDI\" and \"JPA\" as dependencies."
 msgstr ""
+"Wildfly Swarmの新規プロジェクトを立ち上げるには、 link:http://wildfly-swarm.io/generator/"
+"[生成する] のが良いでしょう。ここで必要なのは「JAX-RS with CDI」と「JPA」を依存関係として追加することだけです。"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:35
-msgid "The next step is to add _infinispan-embedded_ artifact. The final _pom.xml_ should look like the following:"
+#, fuzzy
+msgid ""
+"The next step is to add _infinispan-embedded_ artifact. The final _pom.xml_ "
+"should look like the following:"
 msgstr ""
+"次のステップでは、 _infinispan-embedded_ artifact を追加します。最終的な _pom.xml は_ "
+"以下のようになるはずです。"
 
 #. type: Title ==
 #: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:40
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Writing some code"
-msgstr ""
+msgstr "コードを書く"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:47
-msgid "http://infinispan.org/docs/dev/user_guide/user_guide.html#cdi_support[Infinispan CDI Extension] will take care of bootstrapping Infinispan, so we can dive directly into JAX-RS code:"
+#, fuzzy
+msgid ""
+"http://infinispan.org/docs/dev/user_guide/user_guide."
+"html#cdi_support[Infinispan CDI Extension] will take care of bootstrapping "
+"Infinispan, so we can dive directly into JAX-RS code:"
 msgstr ""
+"Infinispan link:http://infinispan.org/docs/dev/user_guide/user_guide."
+"html#cdi_support[CDI Extensionは] 、Infinispanのブートストラップのお世話をしてくれるので、JAX-"
+"RSのコードに直接飛び込むことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:55
+#, fuzzy
 msgid "And that's it!"
-msgstr ""
+msgstr "そして、それはそれ！"
 
 #. type: Title ==
 #: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:58
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What's next?"
-msgstr ""
+msgstr "次は何をするの？"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:67
-msgid "If you'd like to have a look at the complete example, check out https://github.com/slaskawi/infinispan-wf-swarm-example[my repository]. The code is based on fresh build from Infinispan master branch which contains lots of improvements for CDI. You might build it yourself or just wait for _9.0.0.Beta1_."
+#, fuzzy
+msgid ""
+"If you'd like to have a look at the complete example, check out https://"
+"github.com/slaskawi/infinispan-wf-swarm-example[my repository]. The code is "
+"based on fresh build from Infinispan master branch which contains lots of "
+"improvements for CDI. You might build it yourself or just wait for _9.0.0."
+"Beta1_."
 msgstr ""
+"完全な例を見たい場合は、私の link:https://github.com/slaskawi/infinispan-wf-swarm-"
+"example[リポジトリを] チェックしてください。このコードは、CDI のための多くの改善が含まれている Infinispan "
+"マスターブランチからの新しいビルドをベースにしています。自分でビルドするか、 _9.0.0.0.Beta1を_ 待ってください。"
 
 #. type: Plain text
 #: upstream/_posts/2016-10-11-microservices-with-wildfly-swarm-and.adoc:70
+#, fuzzy
 msgid "Have a lot of fun with Microservices!"
-msgstr ""
+msgstr "マイクロサービスで盛り上がろう!"

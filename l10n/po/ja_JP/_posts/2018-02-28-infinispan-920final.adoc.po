@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.2.0.Final\n"
@@ -32,30 +32,49 @@ msgid ""
 "date: '2018-02-28T15:20:00.002-08:00'\n"
 "author: ttarrant\n"
 "tags: [ \" release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6180087022210305887\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/02/infinispan-920final.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6180087022210305887\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/02/infinispan-920final."
+"html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 9.2.0.Final\n"
+"permalink: /blog/:year/:month/:day/infinispan-920final\n"
+"date: '2018-02-28T15:20:00.002-08:00'\n"
+"author: ttarrant\n"
+"tags: [ \" release\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6180087022210305887\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/02/infinispan-920final."
+"html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:13
+#, fuzzy
 msgid "Infinispan 9.2.0.Final \"Gaina\" is out !"
-msgstr ""
+msgstr "Infinispan 9.2.0.Final「ガイナ」が出ました"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:19
-msgid "Our three-month time-boxing for a minor release plan got a little bit skewed this time in order to accommodate for some additional overhauls.  This also means that, for a minor release, this is much meatier than usual."
+#, fuzzy
+msgid ""
+"Our three-month time-boxing for a minor release plan got a little bit skewed "
+"this time in order to accommodate for some additional overhauls.  This also "
+"means that, for a minor release, this is much meatier than usual."
 msgstr ""
+"マイナーリリースのための3ヶ月間のタイムボックス計画は、いくつかの追加オーバーホールに対応するために、今回は少しずれてしまいました。これは、マイナーリリースにしては、通常よりもはるかに肉付きが良いということを意味しています。"
 
 #. type: Title ==
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:21
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Core improvements"
-msgstr ""
+msgstr "核心的な改善"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:28
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Conflict resolution*\n"
 "Automatic conflict resolution after a partition merge is now supported\n"
@@ -63,80 +82,91 @@ msgid ""
 "Furthermore, it is now possible to deploy custom EntryMergePolicy\n"
 "implementations to the server\n"
 msgstr ""
+"競合 *の解決* "
+"パーティションマージ後の競合の自動解決がすべてのパーティション処理ストラテジーでサポートされ、デフォルトで有効になりました。さらに、カスタムの "
+"EntryMergePolicy 実装をサーバーに展開できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:31
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Reactive streams-based distributed Iteration improvements*\n"
 "Distributed iterator now uses less threads and allows for efficient\n"
 "parallel retrieval providing for improved throughput\n"
 msgstr ""
+"*反応性のあるストリームベースの分散型イテレーションの改善* "
+"分散型イテレータは、より少ないスレッド数で効率的な並列検索を可能にし、スループットを向上させます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:35
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Biased reads for scattered caches*\n"
 "Originator can read the ‘backup’ copy locally until the data gets\n"
 "overwritten again. Together with improved read performance this migrates\n"
 "data to nodes that use it. \n"
 msgstr ""
+"散在するキャッシュの *ための偏った読み取り* "
+"Originatorは、データが再び上書きされるまで「バックアップ」コピーをローカルに読み取ることができます。読み取りパフォーマンスの向上とともに、これはデータを使用するノードにデータを移行します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:38
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Off-heap sizing*\n"
 "Off-heap requires less overhead per entry and provides for more accurate\n"
 "sizing allowing you to maximize your memory used\n"
 msgstr ""
+"オフヒープの *サイジング* オフヒープは、エントリごとのオーバーヘッドが少なく、より正確なサイジングが可能なため、使用メモリを最大限に活用できます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:41
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "**Exception based eviction**A new \"eviction\" that instead of removing\n"
 "old entries prevents new entries being inserted (supported by all memory\n"
 "storage and eviction types)\n"
 msgstr ""
+"*例外ベースのeviction* "
+"古いエントリを削除する代わりに新しいエントリの挿入を防ぐ新しい「eviction」（すべてのメモリストレージおよびevictionタイプでサポートされています）。"
 
 #. type: Title ==
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:42
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "API improvements"
-msgstr ""
+msgstr "APIの改善"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:47
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Multimap caches*\n"
 "Available for both Embedded and for Hot Rod, these maps which can store\n"
 "multiple values for the same key\n"
-msgstr ""
+msgstr "*マルチマップキャッシュ* 組み込み用とホットロッド用の両方で利用可能で、同じキーに対して複数の値を保存できるマップです。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:50
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Clustered Counters*\n"
 "Clustered counters are now available for Hot Rod and in non-clustered\n"
 "deployments.\n"
 msgstr ""
+"クラ *スター化* されたカウンター ホットロッドとクラスター化されていないデプロイメントでは、クラスター化されたカウンターが利用可能になりました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:53
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Clustered Locks*\n"
 "Available in embedded mode. They allow concurrent synchronization\n"
 "between nodes in the same cluster\n"
-msgstr ""
+msgstr "*クラスター化されたロック* 組み込みモードで使用可能。同じクラスタ内のノード間の同時同期を可能にします。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:58
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Wildcard configurations*\n"
 "Implicitly use a predefined configuration for all caches whose name\n"
@@ -144,10 +174,12 @@ msgid ""
 "through an API which doesn't allow for additional configuration\n"
 "properties (such as JCache).\n"
 msgstr ""
+"ワイルドカード *設定* "
+"ワイルドカードと一致する名前のすべてのキャッシュに対して、定義済みの設定を暗黙のうちに使用します。これは、追加の設定プロパティ（JCacheなど）を許可していないAPIを介してInfinispanを使用する場合に特に便利です。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:63
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Cluster-wide cache admin with optional persistence*\n"
 "The CacheManager API has been enhanced with methods to create/destroy\n"
@@ -155,51 +187,68 @@ msgid ""
 "will come in 9.3). Optionally, configurations can be made persistent\n"
 "across restarts.\n"
 msgstr ""
+"*オプションの永続化機能を備えたクラスタ全体のキャッシュ管理* CacheManager API "
+"に、組み込みおよびホットロッドの両方のシナリオで、クラスタ全体のキャッシュを作成/破棄するメソッ ドが追加されました (REST は 9.3 "
+"で実装されます)。オプションで、再起動時に構成を永続化することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:66
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Cache Stream*\n"
 "Overloaded collect() method to take Supplier so that collect() in\n"
 "clustered environments is more user-friendly.\n"
 msgstr ""
+"クラスタ化された環境での collect() がよりユーザーフレンドリーになるように、Supplier を取るための *キャッシュ・ストリームの* "
+"オーバーロードされた collect() メソッド。"
 
 #. type: Title ==
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:67
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Data Interoperability"
-msgstr ""
+msgstr "データ相互運用性"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:76
-msgid "Transcoding is a powerful new feature which allows for transparent conversion between a number of formats across different endpoints. For example, it is now possible to write ProtoBuf-encoded data through the Hot Rod endpoint and retrieve that same data as a JSON document through the REST endpoint and vice versa. Additionally, such data is also indexable and queryable."
+#, fuzzy
+msgid ""
+"Transcoding is a powerful new feature which allows for transparent "
+"conversion between a number of formats across different endpoints. For "
+"example, it is now possible to write ProtoBuf-encoded data through the Hot "
+"Rod endpoint and retrieve that same data as a JSON document through the REST "
+"endpoint and vice versa. Additionally, such data is also indexable and "
+"queryable."
 msgstr ""
+"トランスコーディングは強力な新機能で、異なるエンドポイント間で多くのフォーマット間の透過的な変換を可能にします。例えば、Hot "
+"Rodエンドポイントを通してProtoBufでエンコードされたデータを書き込み、RESTエンドポイントを通して同じデータをJSONドキュメントとして取得したり、その逆も可能になりました。さらに、そのようなデータはインデックス化され、クエリ可能です。"
 
 #. type: Title ==
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:77
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Indexing and Query"
-msgstr ""
+msgstr "インデックスとクエリ"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:83
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*POJO queries over Hot Rod*\n"
 "It is now possible to directly use Hibernate Search-annotated objects\n"
 "through JBoss Marshalling/Java serialization without the need for\n"
 "ProtoBuf over Hot Rod.\n"
 msgstr ""
+"*Hot Rod 上の POJO クエリ* Hot Rod 上の ProtoBuf を必要とせずに、JBoss Marshalling/Java "
+"シリアライゼーションを介して Hibernate Search-annotated オブジェクトを直接使用できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:86
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Broadcast queries*\n"
 "Clustered queries have been unified with non-clustered queries under a\n"
 "single API, making their use transparent.\n"
 msgstr ""
+"*ブロードキャストクエリ* クラスタリングされたクエリは、単一のAPIでクラスタリングされていないクエリと統合され、その使用が透過的になりました。"
 
 #. type: Title ==
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:87
@@ -208,156 +257,198 @@ msgstr ""
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:133
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:144
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:160
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " "
-msgstr ""
+msgstr " "
 
 #. type: Title ==
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:89
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Infinispan Server"
-msgstr ""
+msgstr "インフィニスパンサーバー"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:93
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Rebased on WildFly 11*\n"
 "The server baseline has been updated to WildFly 11\n"
-msgstr ""
+msgstr "*WildFly 11* にリベース サーバーのベースラインが WildFly 11 に更新されました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:96
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Async Hot Rod server*\n"
 "The Hot Rod server now uses async ops, sparing CPU cycles from\n"
 "context-switching and reducing the latency.\n"
 msgstr ""
+"非 *同期 Hot Rod* サーバ Hot Rod サーバは非同期オペレーションを使用するようになり、コンテキスト切り替えによる CPU "
+"サイクルを節約し、レイテンシを削減します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:100
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Queries over REST*\n"
 "The REST endpoint now supports running Ickle queries. This is fully\n"
 "integrated with the above-mentioned JSON support, so your results will\n"
 "be returned to you as JSON documents.\n"
 msgstr ""
+"*REST 上のクエリ* REST エンドポイントは、Ickle クエリの実行をサポートするようになりました。これは前述の JSON "
+"サポートと完全に統合されているため、結果は JSON ドキュメントとして返されます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:104
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Netty Hot Rod Client*\n"
 "The Hot Rod Java client network layer has been completely rewritten to\n"
 "use Netty, bringing true asynchronous calls and some performance\n"
 "benefits.\n"
 msgstr ""
+"*Netty Hot Rod Client* Hot Rod "
+"Javaクライアントのネットワーク層は、Nettyを使用するように完全に書き換えられ、真の非同期呼び出しといくつかのパフォーマンス上の利点がもたらされました。"
 
 #. type: Title ==
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:107
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Management, monitoring and logging"
-msgstr ""
+msgstr "管理・監視・伐採"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:110
+#, fuzzy
 msgid "    Console support for counters"
-msgstr ""
+msgstr "カウンターのコンソールサポート"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:111
+#, fuzzy
 msgid "    Improved remote protocol access logging"
-msgstr ""
+msgstr "リモートプロトコルのアクセスログを改善"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:112
+#, fuzzy
 msgid "    Jolokia is now integrated as a part of the server."
-msgstr ""
+msgstr "Jolokiaはサーバーの一部として統合されました。"
 
 #. type: Title ==
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:115
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Infinispan on OpenShift"
-msgstr ""
+msgstr "OpenShift上のInfinispan"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:121
-msgid "We have been doing a lot of work in making Infinispan a first-class citizen of OpenShift. Check out the OpenShift templates for more details."
+#, fuzzy
+msgid ""
+"We have been doing a lot of work in making Infinispan a first-class citizen "
+"of OpenShift. Check out the OpenShift templates for more details."
 msgstr ""
+"InfinispanをOpenShiftの第一級市民にするために、かなりの努力をしています。詳しくはOpenShiftのテンプレートをチェックしてみてください。"
 
 #. type: Title ==
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:122
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Integrations"
-msgstr ""
+msgstr "統合"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:126
-#, no-wrap
-msgid ""
-"*JCache 1.1*\n"
+#, no-wrap, fuzzy
+msgid "*JCache 1.1*\n"
 "This release is now aligned with JCache 1.1.\n"
-msgstr ""
+msgstr "*JCache* 1.1 このリリースはJCache 1.1に合わせています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Hibernate second-level cache provider*\n"
 "Traditionally shipped by our friends on the Hibernate ORM team, this\n"
 "component has now changed ownership over to us. This release includes a\n"
 "provider for both Hibernate 5.1 and 5.2.\n"
 msgstr ""
+"*Hibernate第2レベルキャッシュプロバイダ* 伝統的にHibernate "
+"ORMチームの友人によって出荷されていましたが、このコンポーネントの所有権は私たちに変更されました。このリリースには、Hibernate 5.1 と 5."
+"2 の両方に対応するプロバイダが含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:132
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "**Azure cloud discovery**Courtesy of JGroups' extras, we now support\n"
 "discovery in Azure.\n"
 msgstr ""
+"*Azure クラウドディスカバリー* JGroupsのエクストラのおかげで、Azureでのディスカバリーがサポートされるようになりました。"
 
 #. type: Title ==
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:135
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The codename"
-msgstr ""
+msgstr "コードネーム"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:140
-msgid "In the grand-old tradition of giving major and minor Infinispan releases a beer-themed codename, 9.2 is no exception."
-msgstr ""
+#, fuzzy
+msgid ""
+"In the grand-old tradition of giving major and minor Infinispan releases a "
+"beer-themed codename, 9.2 is no exception."
+msgstr "ビールをテーマにしたコードネームをメジャーとマイナーに分けてリリースするという古くからの伝統の中で、9.2も例外ではありません。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:143
-msgid "\"_Gaina_\", which means \"chicken\" in the milanese dialect, also happens to be one of the great beers of the Birrificio Lambrate in Milan."
-msgstr ""
+#, fuzzy
+msgid ""
+"\"_Gaina_\", which means \"chicken\" in the milanese dialect, also happens "
+"to be one of the great beers of the Birrificio Lambrate in Milan."
+msgstr "\"ミラノの方言で「鶏肉」を意味する「ガ _イナ_ 」は、ミラノのビリフィッチオ・ランブラーテの偉大なビールの一つです。"
 
 #. type: Title ==
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:146
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Onwards to 9.3"
-msgstr ""
+msgstr "9.3に向けて"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:159
-msgid "We have already started working on our next release, 9.3 which should be with you at the end of May. This will continue the work to make Infinispan fully asynchronous inside out, reducing resource usage and increasing performance. We are also working on a new modular API which will improve usability, increase interoperability between embedded and remote scenarios and take advantage of reactive designs. Transactions should finally make their appearance in Hot Rod and security will be greatly enhanced, by taking advantages of the great work done by our friends over on the Elytron team. We have much more planned, so please consult our roadmap for details."
+#, fuzzy
+msgid ""
+"We have already started working on our next release, 9.3 which should be "
+"with you at the end of May. This will continue the work to make Infinispan "
+"fully asynchronous inside out, reducing resource usage and increasing "
+"performance. We are also working on a new modular API which will improve "
+"usability, increase interoperability between embedded and remote scenarios "
+"and take advantage of reactive designs. Transactions should finally make "
+"their appearance in Hot Rod and security will be greatly enhanced, by taking "
+"advantages of the great work done by our friends over on the Elytron team. "
+"We have much more planned, so please consult our roadmap for details."
 msgstr ""
+"私たちはすでに次のリリースである9."
+"3に向けて作業を開始しています。このリリースでは、Infinispanを完全に非同期化し、リソースの使用量を減らし、パフォーマンスを向上させるための作業を継続します。また、新しいモジュラーAPIにも取り組んでおり、ユーザビリティを向上させ、組み込みシナリオとリモートシナリオ間の相互運用性を高め、リアクティブデザインを活用できるようにします。トランザクションはついにHot "
+"Rodに登場し、セキュリティはElytronチームの友人たちが行った素晴らしい作業を活用して大幅に強化されるでしょう。まだまだ多くのことを計画していますので、詳細はロードマップを参照してください。"
 
 #. type: Title ==
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:162
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Download, learn and play"
-msgstr ""
+msgstr "ダウンロード、学習、プレイ"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:167
-msgid "You will find downloads, documentation, tutorials, quickstarts and demos over on our website."
-msgstr ""
+#, fuzzy
+msgid ""
+"You will find downloads, documentation, tutorials, quickstarts and demos "
+"over on our website."
+msgstr "ダウンロード、ドキュメント、チュートリアル、クイックスタートとデモは、当社のウェブサイト上で見つけることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-28-infinispan-920final.adoc:171
-msgid "Please let us know on our forum, on IRC, on our issue tracker if you have any issues with this release, if there is any feature you would like to see in the future, or just to chat."
-msgstr ""
+#, fuzzy
+msgid ""
+"Please let us know on our forum, on IRC, on our issue tracker if you have "
+"any issues with this release, if there is any feature you would like to see "
+"in the future, or just to chat."
+msgstr "このリリースで何か問題があった場合は、フォーラム、IRC、イシュートラッカーでお知らせください。"

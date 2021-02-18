@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.2.0.CR3\n"
@@ -32,82 +32,127 @@ msgid ""
 "date: '2018-02-21T14:30:00.002-08:00'\n"
 "author: ttarrant\n"
 "tags: [ \" release\", \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-510479361083171549\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"510479361083171549\n"
 "blogger_orig_url: https://blog.infinispan.org/2018/02/infinispan-920cr3.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 9.2.0.CR3\n"
+"permalink: /blog/:year/:month/:day/infinispan-920cr3\n"
+"date: '2018-02-21T14:30:00.002-08:00'\n"
+"author: ttarrant\n"
+"tags: [ \" release\", \"release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"510479361083171549\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/02/infinispan-920cr3.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:16
-msgid "This should have been the announcement for Final, but we discovered a number of performance regressions as well as a few important bugs that needed fixing. We also slipped in a few features and improvements. So, without further ado, here's what is new and noteworthy in Infinispan 9.2.0.CR3:"
+#, fuzzy
+msgid ""
+"This should have been the announcement for Final, but we discovered a number "
+"of performance regressions as well as a few important bugs that needed "
+"fixing. We also slipped in a few features and improvements. So, without "
+"further ado, here's what is new and noteworthy in Infinispan 9.2.0.CR3:"
 msgstr ""
+"これがFinalの発表だったはずなのですが、いくつかのパフォーマンスの低下や、修正が必要な重要なバグを発見しました。また、いくつかの機能と改善点を滑り込ませました。それでは、ここで、Infinispan "
+"9.2.0.0.CR3 の新機能と注目すべき点をご紹介します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:18
+#, fuzzy
 msgid "Various component upgrades"
-msgstr ""
+msgstr "各種コンポーネントのアップグレード"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:20
+#, fuzzy
 msgid "Netty 4.1.21"
-msgstr ""
+msgstr "Netty 4.1.21"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:21
+#, fuzzy
 msgid "Hibernate Search 5.9.0.Final"
-msgstr ""
+msgstr "Hibernate Search 5.9.0.Final"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:22
+#, fuzzy
 msgid "Protostream to 4.2.0.CR1"
-msgstr ""
+msgstr "4.2.0.0.CR1へのプロトストリーム"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:24
+#, fuzzy
 msgid "Features/Enhancements"
-msgstr ""
+msgstr "特徴・機能拡張"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:26
+#, fuzzy
 msgid "Azure discovery"
-msgstr ""
+msgstr "アジュールディスカバリー"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:27
+#, fuzzy
 msgid "Use async ops in the Hot Rod server"
-msgstr ""
+msgstr "Hot Rodサーバーでasync opsを使用する"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:28
+#, fuzzy
 msgid "Simplified client configuration when security is enabled"
-msgstr ""
+msgstr "セキュリティを有効にした場合のクライアント設定の簡素化"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:30
+#, fuzzy
 msgid "Lots of documentation updates"
-msgstr ""
+msgstr "たくさんの文書の更新"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:32
+#, fuzzy
 msgid "REST server changes"
-msgstr ""
+msgstr "RESTサーバの変更"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:33
+#, fuzzy
 msgid "Data Encoding"
-msgstr ""
+msgstr "データ符号化"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:34
+#, fuzzy
 msgid "Server tasks"
-msgstr ""
+msgstr "サーバーのタスク"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:36
+#, fuzzy
 msgid "And many bugfixes"
-msgstr ""
+msgstr "そして多くのバグフィックス"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-21-infinispan-920cr3.adoc:44
-msgid "Get your artifacts from maven, the distributions from our http://infinispan.org/download/[download page], the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12336887[fixed issues] from our issue tracker and read the updated http://infinispan.org/docs/dev/index.html[documentation]. Come and talk to us on IRC (#infinispan on Freenode) or ask questions on the https://developer.jboss.org/en/infinispan/content[forum]."
+#, fuzzy
+msgid ""
+"Get your artifacts from maven, the distributions from our http://infinispan."
+"org/download/[download page], the https://issues.jboss.org/secure/"
+"ReleaseNote.jspa?projectId=12310799&version=12336887[fixed issues] from our "
+"issue tracker and read the updated http://infinispan.org/docs/dev/index."
+"html[documentation]. Come and talk to us on IRC (#infinispan on Freenode) or "
+"ask questions on the https://developer.jboss.org/en/infinispan/"
+"content[forum]."
 msgstr ""
+"あなたの成果物は maven から、ディストリビューションは link:http://infinispan.org/download/"
+"[ダウンロードページ] から、 link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12336887[修正された問題は] イシュートラッカーから、そして更新された link:"
+"http://infinispan.org/docs/dev/index.html[ドキュメントを] 読んでください。IRC (#infinispan "
+"on Freenode) に来て話したり、 link:https://developer.jboss.org/en/infinispan/"
+"content[フォーラム] で質問したりしてください。"

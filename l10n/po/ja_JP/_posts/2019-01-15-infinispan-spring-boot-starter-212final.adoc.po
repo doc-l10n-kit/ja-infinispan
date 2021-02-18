@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2019-01-15-infinispan-spring-boot-starter-212final.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-01-15-infinispan-spring-boot-starter-212final.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan Spring Boot Starter 2.1.2.Final is out!\n"
@@ -32,50 +32,83 @@ msgid ""
 "date: '2019-01-15T01:52:00.000-08:00'\n"
 "author: karesti\n"
 "tags: [ \" release\", \"spring\", \"spring boot\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7771937533721817996\n"
-"blogger_orig_url: https://blog.infinispan.org/2019/01/infinispan-spring-boot-starter-212final.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7771937533721817996\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/01/infinispan-spring-boot-"
+"starter-212final.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan Spring Boot Starter 2.1.2.Finalが出ました!\n"
+"permalink: /blog/:year/:month/:day/infinispan-spring-boot-starter-212final\n"
+"date: '2019-01-15T01:52:00.000-08:00'\n"
+"author: karesti\n"
+"tags: [ \" release\", \"spring\", \"spring boot\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7771937533721817996\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/01/infinispan-spring-boot-"
+"starter-212final.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-01-15-infinispan-spring-boot-starter-212final.adoc:12
+#, fuzzy
 msgid "Dear Infinispan and Spring Boot users,"
-msgstr ""
+msgstr "InfinispanとSpring Bootをご利用の皆様。"
 
 #. type: Plain text
 #: upstream/_posts/2019-01-15-infinispan-spring-boot-starter-212final.adoc:16
-msgid "We have just released https://github.com/infinispan/infinispan-spring-boot[Infinispan Spring Boot] *2.1.2.Final*."
+#, fuzzy
+msgid ""
+"We have just released https://github.com/infinispan/infinispan-spring-"
+"boot[Infinispan Spring Boot] *2.1.2.Final*."
 msgstr ""
+"link:https://github.com/infinispan/infinispan-spring-boot[Infinispan Spring "
+"Boot] 2.1.2. *Final* をリリースしました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-01-15-infinispan-spring-boot-starter-212final.adoc:19
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*2.1.2.Final* is using *Spring Boot 2.1.2.RELEASE* and contains some bug\n"
 "fixes related to JCache and Actuator integration.\n"
 msgstr ""
+"*2.1.2.2.Finalは* *Spring Boot 2.1.2.RELEASE* を使用しており *、* "
+"JCacheとActuatorの統合に関連したいくつかのバグ修正が含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2019-01-15-infinispan-spring-boot-starter-212final.adoc:24
-msgid "The starter is now using Infinispan's last stable release: *9.4.5.Final*."
-msgstr ""
+#, fuzzy
+msgid ""
+"The starter is now using Infinispan's last stable release: *9.4.5.Final*."
+msgstr "スターターはInfinispanの最終安定版を使用するようになりました。 *9.4.5.Final* です。"
 
 #. type: Plain text
 #: upstream/_posts/2019-01-15-infinispan-spring-boot-starter-212final.adoc:27
+#, fuzzy
 msgid "You can find this release in the maven central repository."
-msgstr ""
+msgstr "このリリースはmavenのセントラルリポジトリにあります。"
 
 #. type: Plain text
 #: upstream/_posts/2019-01-15-infinispan-spring-boot-starter-212final.adoc:32
-msgid "Please report any issues in our https://issues.jboss.org/projects/ISPN[issue tracker] and join the conversation in our https://infinispan.zulipchat.com/[Zulip Chat] to shape up our next release."
+#, fuzzy
+msgid ""
+"Please report any issues in our https://issues.jboss.org/projects/ISPN[issue "
+"tracker] and join the conversation in our https://infinispan.zulipchat.com/"
+"[Zulip Chat] to shape up our next release."
 msgstr ""
+"私たちの問題 link:https://issues.jboss.org/projects/ISPN[追跡] に問題があれば報告し link:https:"
+"//issues.jboss.org/projects/ISPN[、] 次のリリースを link:https://infinispan."
+"zulipchat.com/[形作る] ためにZulipチャットで会話に参加してください。"
 
 #. type: Plain text
 #: upstream/_posts/2019-01-15-infinispan-spring-boot-starter-212final.adoc:34
+#, fuzzy
 msgid "Enjoy,"
-msgstr ""
+msgstr "楽しんでください。"
 
 #. type: Plain text
 #: upstream/_posts/2019-01-15-infinispan-spring-boot-starter-212final.adoc:35
+#, fuzzy
 msgid "The Infinispan Team"
-msgstr ""
+msgstr "インフィニスパンチーム"

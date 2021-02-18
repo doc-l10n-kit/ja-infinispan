@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-03-19-infinispan-602final-includes-asl2.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-19-infinispan-602final-includes-asl2.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 6.0.2.Final includes ASL2-licensed JBoss Marshalling\n"
@@ -35,22 +35,52 @@ msgid ""
 "\"license\",\n"
 "\"asl2\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3982063140159271891\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/03/infinispan-602final-includes-asl2.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3982063140159271891\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/03/infinispan-602final-"
+"includes-asl2.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 6.0.2.Final には ASL2 ライセンスの JBoss Marshalling が含まれています。\n"
+"permalink: /blog/:year/:month/:day/infinispan-602final-includes-asl2\n"
+"date: '2014-03-19T00:04:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"marshalling\",\n"
+"\"license\",\n"
+"\"asl2\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3982063140159271891\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/03/infinispan-602final-"
+"includes-asl2.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-19-infinispan-602final-includes-asl2.adoc:21
-msgid "We've just released Infinispan 6.0.2.Final to address a licensing issue we were having with JBoss Marshalling. Infinispan switched to ASL2 license when Infinispan 6.0.0 was released, but one of its dependencies, JBoss Marshalling, was still licensed under LGPL. JBoss Marshalling 1.4.4.Final, included in Infinispan 6.0.2.Final, https://github.com/dmlloyd/jboss-marshalling/blob/master/LICENSE.txt[has been licensed under ASL2]."
+#, fuzzy
+msgid ""
+"We've just released Infinispan 6.0.2.Final to address a licensing issue we "
+"were having with JBoss Marshalling. Infinispan switched to ASL2 license when "
+"Infinispan 6.0.0 was released, but one of its dependencies, JBoss "
+"Marshalling, was still licensed under LGPL. JBoss Marshalling 1.4.4.Final, "
+"included in Infinispan 6.0.2.Final, https://github.com/dmlloyd/jboss-"
+"marshalling/blob/master/LICENSE.txt[has been licensed under ASL2]."
 msgstr ""
+"JBoss Marshallingのライセンス問題に対処するため、Infinispan 6.0.2.Finalをリリースしました。Infinispan "
+"6.0.0のリリース時にInfinispanはASL2ライセンスに切り替わりましたが、その依存関係の一つであるJBoss "
+"MarshallingはLGPLライセンスのままでした。Infinispan 6.0.2.Final に含まれる JBoss Marshalling 1."
+"4.4.Final は、 link:https://github.com/dmlloyd/jboss-marshalling/blob/master/"
+"LICENSE.txt[ASL2] ライセンスでライセンスされています。"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-19-infinispan-602final-includes-asl2.adoc:23
+#, fuzzy
 msgid "The release can be found in the usual places."
-msgstr ""
+msgstr "リリースはいつもの場所にあります。"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-19-infinispan-602final-includes-asl2.adoc:25
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

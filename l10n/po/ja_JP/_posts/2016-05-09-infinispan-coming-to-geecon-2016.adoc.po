@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-05-09-infinispan-coming-to-geecon-2016.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-05-09-infinispan-coming-to-geecon-2016.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan coming to GeeCON 2016!\n"
@@ -35,28 +35,73 @@ msgid ""
 "\"presentations\",\n"
 "\"geecon\",\n"
 "]\n"
-"thumbnail: https://3.bp.blogspot.com/-2tpLASsWrUc/VzCYb34SCII/AAAAAAAAEiE/IdZsN0WoYIIazfK0Av0Q3tsQYSZrSrb5ACLcB/s72-c/logo.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1763681735985472899\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/05/infinispan-coming-to-geecon-2016.html\n"
+"thumbnail: https://3.bp.blogspot.com/-2tpLASsWrUc/VzCYb34SCII/AAAAAAAAEiE/"
+"IdZsN0WoYIIazfK0Av0Q3tsQYSZrSrb5ACLcB/s72-c/logo.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1763681735985472899\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/05/infinispan-coming-to-"
+"geecon-2016.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: GeeCON 2016にインフィニスパンがやってくる！？\n"
+"permalink: /blog/:year/:month/:day/infinispan-coming-to-geecon-2016\n"
+"date: '2016-05-09T07:12:00.001-07:00'\n"
+"author: galder\n"
+"tags: [ \"conference\",\n"
+"\"presentations\",\n"
+"\"geecon\",\n"
+"]\n"
+"thumbnail: https://3.bp.blogspot.com/-2tpLASsWrUc/VzCYb34SCII/AAAAAAAAEiE/"
+"IdZsN0WoYIIazfK0Av0Q3tsQYSZrSrb5ACLcB/s72-c/logo.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1763681735985472899\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/05/infinispan-coming-to-"
+"geecon-2016.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-05-09-infinispan-coming-to-geecon-2016.adoc:20
-msgid "https://3.bp.blogspot.com/-rftdURvirH4/VzCYvyGs5jI/AAAAAAAAEiM/G0jLYB92utkXvo1wj5Ese_dZMGx6kqN1wCLcB/s1600/infinispan8_logo_450px.png[] image:https://3.bp.blogspot.com/-2tpLASsWrUc/VzCYb34SCII/AAAAAAAAEiE/IdZsN0WoYIIazfK0Av0Q3tsQYSZrSrb5ACLcB/s200/logo.png[image,width=200,height=95]        image:https://3.bp.blogspot.com/-rftdURvirH4/VzCYvyGs5jI/AAAAAAAAEiM/G0jLYB92utkXvo1wj5Ese_dZMGx6kqN1wCLcB/s200/infinispan8_logo_450px.png[image,width=200,height=58]"
+#, fuzzy
+msgid ""
+"https://3.bp.blogspot.com/-rftdURvirH4/VzCYvyGs5jI/AAAAAAAAEiM/"
+"G0jLYB92utkXvo1wj5Ese_dZMGx6kqN1wCLcB/s1600/infinispan8_logo_450px."
+"png[] image:https://3.bp.blogspot.com/-2tpLASsWrUc/VzCYb34SCII/AAAAAAAAEiE/"
+"IdZsN0WoYIIazfK0Av0Q3tsQYSZrSrb5ACLcB/s200/logo.png[image,width=200,height="
+"95]        image:https://3.bp.blogspot.com/-rftdURvirH4/VzCYvyGs5jI/"
+"AAAAAAAAEiM/G0jLYB92utkXvo1wj5Ese_dZMGx6kqN1wCLcB/s200/"
+"infinispan8_logo_450px.png[image,width=200,height=58]"
 msgstr ""
+"https://3.bp.blogspot.com/-rftdURvirH4/VzCYvyGs5jI/AAAAAAAAEiM/"
+"G0jLYB92utkXvo1wj5Ese_dZMGx6kqN1wCLcB/s1600/infinispan8_logo_450px.png image:"
+"https://3.bp.blogspot.com/-2tpLASsWrUc/VzCYb34SCII/AAAAAAAAEiE/"
+"IdZsN0WoYIIazfK0Av0Q3tsQYSZrSrb5ACLcB/s200/logo.png[alt=\"image\", width="
+"\"200\", height=\"95\"]image:https://3.bp.blogspot.com/-rftdURvirH4/"
+"VzCYvyGs5jI/AAAAAAAAEiM/G0jLYB92utkXvo1wj5Ese_dZMGx6kqN1wCLcB/s200/"
+"infinispan8_logo_450px.png[alt=\"image\", width=\"200\", height=\"58\"]"
 
 #. type: Plain text
 #: upstream/_posts/2016-05-09-infinispan-coming-to-geecon-2016.adoc:29
-msgid "GeeCON 2016 is taking place in Krakow this coming week and I'll be speaking about http://2016.geecon.org/schedule-day2/[data processing with Infinispan's distributed streams] on Thursday, 12th of May. So, if you are interested in how to analyse your data using standard Java Streams API in a distributed environment, make sure you come to my talk! :)"
+#, fuzzy
+msgid ""
+"GeeCON 2016 is taking place in Krakow this coming week and I'll be speaking "
+"about http://2016.geecon.org/schedule-day2/[data processing with "
+"Infinispan's distributed streams] on Thursday, 12th of May. So, if you are "
+"interested in how to analyse your data using standard Java Streams API in a "
+"distributed environment, make sure you come to my talk! :)"
 msgstr ""
+"GeeCON 2016が今週クラクフで開催されていますが、私は5月12日（木）に link:http://2016.geecon.org/"
+"schedule-day2/[Infinispanの分散ストリームを使ったデータ処理] について講演します。分散環境で標準的なJava Streams "
+"APIを使ってデータを分析する方法に興味がある方は、ぜひ私の講演に来てください。:)"
 
 #. type: Plain text
 #: upstream/_posts/2016-05-09-infinispan-coming-to-geecon-2016.adoc:33
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2016-05-09-infinispan-coming-to-geecon-2016.adoc:34
+#, fuzzy
 msgid "Galder"
-msgstr ""
+msgstr "ガルダー"

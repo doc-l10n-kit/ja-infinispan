@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-03-15-kubeping-092-released.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-15-kubeping-092-released.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: KUBE_PING 0.9.2 released!\n"
@@ -34,27 +34,62 @@ msgid ""
 "tags: [ \"kubernetes\",\n"
 "\"jgroups\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7286609347310258197\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/03/kubeping-092-released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7286609347310258197\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/03/kubeping-092-released."
+"html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: KUBE_PING 0.9.2をリリースしました。\n"
+"permalink: /blog/:year/:month/:day/kubeping-092-released\n"
+"date: '2017-03-15T22:53:00.000-07:00'\n"
+"author: slaskawiec\n"
+"tags: [ \"kubernetes\",\n"
+"\"jgroups\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7286609347310258197\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/03/kubeping-092-released."
+"html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-15-kubeping-092-released.adoc:14
+#, fuzzy
 msgid "I'm happy to announce a new release of _KUBE_PING_ JGroups protocol."
-msgstr ""
+msgstr "_KUBE_PING_ JGroupsのプロトコルを公開しました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-15-kubeping-092-released.adoc:18
-msgid "Since this is a minor maintenance release, there are no ground breaking changes but we fixed a couple of issues that prevented our users from using JGroups 3.6.x and KUBE_PING 0.9.1."
+#, fuzzy
+msgid ""
+"Since this is a minor maintenance release, there are no ground breaking "
+"changes but we fixed a couple of issues that prevented our users from using "
+"JGroups 3.6.x and KUBE_PING 0.9.1."
 msgstr ""
+"これはマイナーなメンテナンスリリースなので、画期的な変更はありませんが、JGroups 3.6.x と KUBE_PING 0.9.1 "
+"の使用を妨げていたいくつかの問題を修正しました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-15-kubeping-092-released.adoc:22
-msgid "Have a look at the https://github.com/jgroups-extras/jgroups-kubernetes/releases[release page] to learn more details."
+#, fuzzy
+msgid ""
+"Have a look at the https://github.com/jgroups-extras/jgroups-kubernetes/"
+"releases[release page] to learn more details."
 msgstr ""
+"詳細は link:https://github.com/jgroups-extras/jgroups-kubernetes/"
+"releases[リリースページを] ご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-15-kubeping-092-released.adoc:26
-msgid "The artifacts should be available in Maven Central as soon as the sync completes. In the meantime grab them from https://origin-repository.jboss.org/nexus/content/repositories/public-jboss/org/jgroups/kubernetes/parent/0.9.2/[JBoss Repository]."
+#, fuzzy
+msgid ""
+"The artifacts should be available in Maven Central as soon as the sync "
+"completes. In the meantime grab them from https://origin-repository.jboss."
+"org/nexus/content/repositories/public-jboss/org/jgroups/kubernetes/parent/0."
+"9.2/[JBoss Repository]."
 msgstr ""
+"同期が完了し次第、Maven Centralでアーティファクトを利用できるようになります。それまでの間に link:https://origin-"
+"repository.jboss.org/nexus/content/repositories/public-jboss/org/jgroups/"
+"kubernetes/parent/0.9.2/[JBoss リポジトリ] から取得してください。"

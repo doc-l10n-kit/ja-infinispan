@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,66 +18,126 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-04-17-infinispan-720cr1-released.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-04-17-infinispan-720cr1-released.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 7.2.0.CR1 released\n"
 "permalink: /blog/:year/:month/:day/infinispan-720cr1-released\n"
 "date: '2015-04-17T14:14:00.000-07:00'\n"
 "author: gustavonalle\n"
-"tags: [ \"getAll\", \"hotrod\", \"putAll\", \"listeners\", \"release candidate\", \"DSL\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6177002962039904446\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/04/infinispan-720cr1-released.html\n"
+"tags: [ \"getAll\", \"hotrod\", \"putAll\", \"listeners\", \"release "
+"candidate\", \"DSL\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6177002962039904446\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/04/infinispan-720cr1-"
+"released.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 7.2.0.CR1をリリースしました。\n"
+"permalink: /blog/:year/:month/:day/infinispan-720cr1-released\n"
+"date: '2015-04-17T14:14:00.000-07:00'\n"
+"author: gustavonalle\n"
+"tags: [ \"getAll\", \"hotrod\", \"putAll\", \"listeners\", \"release "
+"candidate\", \"DSL\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6177002962039904446\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/04/infinispan-720cr1-"
+"released.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-04-17-infinispan-720cr1-released.adoc:12
+#, fuzzy
 msgid "Dear community,"
-msgstr ""
+msgstr "地域の皆様へ"
 
 #. type: Plain text
 #: upstream/_posts/2015-04-17-infinispan-720cr1-released.adoc:14
+#, fuzzy
 msgid "We are proud to announce the release of Infinispan 7.2.0.CR1!"
-msgstr ""
+msgstr "Infinispan 7.2.0.CR1のリリースをお知らせします!"
 
 #. type: Plain text
 #: upstream/_posts/2015-04-17-infinispan-720cr1-released.adoc:17
-msgid "This is the first release candidate of 7.2, bringing some exciting new features:"
-msgstr ""
+#, fuzzy
+msgid ""
+"This is the first release candidate of 7.2, bringing some exciting new "
+"features:"
+msgstr "これは7.2の最初のリリース候補であり、いくつかのエキサイティングな新機能をもたらします。"
 
 #. type: Plain text
 #: upstream/_posts/2015-04-17-infinispan-720cr1-released.adoc:23
-msgid "Faster bulk operations, putAll and getAll, for both embedded and HotRod client (https://issues.jboss.org/browse/ISPN-2183[ISPN-2183], https://issues.jboss.org/browse/ISPN-5264[ISPN-5264], https://issues.jboss.org/browse/ISPN-5266[ISPN-5266])"
+#, fuzzy
+msgid ""
+"Faster bulk operations, putAll and getAll, for both embedded and HotRod "
+"client (https://issues.jboss.org/browse/ISPN-2183[ISPN-2183], https://issues."
+"jboss.org/browse/ISPN-5264[ISPN-5264], https://issues.jboss.org/browse/ISPN-"
+"5266[ISPN-5266])"
 msgstr ""
+"組み込みおよびHotRodクライアント link:https://issues.jboss.org/browse/ISPN-2183[(ISPN-"
+"2183] link:https://issues.jboss.org/browse/ISPN-5264[, ISPN-5264] link:https:"
+"//issues.jboss.org/browse/ISPN-5266[, ISPN-5266] "
+")の両方に対応した、putAllとgetAllの高速なバルクオペレーション"
 
 #. type: Plain text
 #: upstream/_posts/2015-04-17-infinispan-720cr1-released.adoc:25
-msgid "Cache creation and configuration changes without the need to restart the server (https://issues.jboss.org/browse/ISPN-5147[ISPN-5147])"
+#, fuzzy
+msgid ""
+"Cache creation and configuration changes without the need to restart the "
+"server (https://issues.jboss.org/browse/ISPN-5147[ISPN-5147])"
 msgstr ""
+"サーバを再起動しなくてもキャッシュの作成と設定変更が可能 link:https://issues.jboss.org/browse/ISPN-"
+"5147[(ISPN-5147] )"
 
 #. type: Plain text
 #: upstream/_posts/2015-04-17-infinispan-720cr1-released.adoc:28
-msgid "Support for defining filters using the Query DSL for event listeners (https://issues.jboss.org/browse/ISPN-5349[ISPN-5349] and https://issues.jboss.org/browse/ISPN-5350[ISPN-5350])"
+#, fuzzy
+msgid ""
+"Support for defining filters using the Query DSL for event listeners (https:/"
+"/issues.jboss.org/browse/ISPN-5349[ISPN-5349] and https://issues.jboss.org/"
+"browse/ISPN-5350[ISPN-5350])"
 msgstr ""
+"イベントリスナー link:https://issues.jboss.org/browse/ISPN-5349[(ISPN-5349] および link:"
+"https://issues.jboss.org/browse/ISPN-5350[ISPN-5350] )のためのQuery "
+"DSLを使用したフィルタ定義のサポート"
 
 #. type: Plain text
 #: upstream/_posts/2015-04-17-infinispan-720cr1-released.adoc:30
-msgid "Lock-free clear() operation (https://issues.jboss.org/browse/ISPN-5370[ISPN-5370])"
+#, fuzzy
+msgid ""
+"Lock-free clear() operation (https://issues.jboss.org/browse/ISPN-5370[ISPN-"
+"5370])"
 msgstr ""
+"ロックフリークリア()動作 link:https://issues.jboss.org/browse/ISPN-5370[(ISPN-5370] )"
 
 #. type: Plain text
 #: upstream/_posts/2015-04-17-infinispan-720cr1-released.adoc:35
-msgid "For the complete list of features and bug fixes, please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12326575[release notes]"
+#, fuzzy
+msgid ""
+"For the complete list of features and bug fixes, please refer to the https://"
+"issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
+"12326575[release notes]"
 msgstr ""
+"機能とバグフィックスの完全なリストについては、 link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12326575[リリースノートを] 参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-04-17-infinispan-720cr1-released.adoc:41
-msgid "Feel free to join us and shape the future releases on our http://www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or our http://webchat.freenode.net/?channels=%23infinispan[#infinispan] IRC channel."
+#, fuzzy
+msgid ""
+"Feel free to join us and shape the future releases on our http://www.jboss."
+"org/infinispan/forums[forums], our https://lists.jboss.org/mailman/listinfo/"
+"infinispan-dev[mailing lists] or our http://webchat.freenode.net/?channels="
+"%23infinispan[#infinispan] IRC channel."
 msgstr ""
+"link:http://www.jboss.org/infinispan/forums[フォーラム] 、 link:https://lists."
+"jboss.org/mailman/listinfo/infinispan-dev[メーリングリスト] 、 link:http://webchat."
+"freenode.net/?channels=%23infinispan[#infinispan] "
+"IRCチャンネルで、気軽に参加して、将来のリリースを形にしてください。"

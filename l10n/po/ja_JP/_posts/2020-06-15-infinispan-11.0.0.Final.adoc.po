@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:8
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 11.0.0.Final\n"
@@ -34,159 +34,265 @@ msgid ""
 "tags: [ \"release\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 11.0.0.Final\n"
+"permalink: /blog/:year/:month/:day/infinispan-11\n"
+"date: '2020-06-15T12:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\" ]\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Infinispan 11.0.0.Final \"Corona Extra\""
-msgstr ""
+msgstr "Infinispan 11.0.0.Final \"Corona Extra\""
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:13
+#, fuzzy
 msgid "Dear Infinispan community,"
-msgstr ""
+msgstr "インフィニスパンのコミュニティへ"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:16
-msgid "We're proud to announce the release of Infinispan 11. In the tradition of assigning beer codenames to our releases, we decided that \"Corona Extra\" would be a significant representation of the period during which most of the development has happened.  We hope that you, your families and friends have not been impacted by the pandemic."
+#, fuzzy
+msgid ""
+"We're proud to announce the release of Infinispan 11. In the tradition of "
+"assigning beer codenames to our releases, we decided that \"Corona Extra\" "
+"would be a significant representation of the period during which most of the "
+"development has happened.  We hope that you, your families and friends have "
+"not been impacted by the pandemic."
 msgstr ""
+"インフィニスパン11のリリースを発表できることを誇りに思います。私たちのリリースにビールのコードネームを付けるという伝統の中で、「コロナ・エクストラ」は、開発のほとんどが行われた期間を象徴するものであると判断しました。皆様、ご家族、ご友人の皆様がパンデミックの影響を受けていないことを願っています。"
 
 #. type: Title ==
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:17
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "But didn't you release 10.x not long ago ?"
-msgstr ""
+msgstr "しかし、10.xは少し前にリリースされていませんでしたか？"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:20
-msgid "Indeed, but version numbers are just that: numbers. We are still continuing our near-quarterly releases, but, from now on, these will be identified by major version numbers."
+#, fuzzy
+msgid ""
+"Indeed, but version numbers are just that: numbers. We are still continuing "
+"our near-quarterly releases, but, from now on, these will be identified by "
+"major version numbers."
 msgstr ""
+"確かにそうですが、バージョン番号はあくまでも番号です。私たちはまだ四半期ごとのリリースを続けていますが、今後はメジャーバージョン番号で識別されるようになります。"
 
 #. type: Title ==
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:22
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "So, what's new in Infinispan 11 ?"
-msgstr ""
+msgstr "Infinispan 11の新機能は？"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:24
-msgid "As usual we added new features, improved existing ones and prepared the groundwork for upcoming features."
-msgstr ""
+#, fuzzy
+msgid ""
+"As usual we added new features, improved existing ones and prepared the "
+"groundwork for upcoming features."
+msgstr "いつものように、新しい機能を追加し、既存の機能を改善し、今後の機能のための下地を準備しました。"
 
 #. type: Title ===
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:26
-#, no-wrap
-msgid "Conflict detection and resolution for Asynchronous Cross-Site Replication"
-msgstr ""
+#, no-wrap, fuzzy
+msgid ""
+"Conflict detection and resolution for Asynchronous Cross-Site Replication"
+msgstr "非同期クロスサイトレプリケーションにおけるコンフリクトの検出と解決"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:28
-msgid "Cross-site replication is one of our most used features, as it enables a number of very useful use-cases such as geographical load distribution, zero-downtime disaster recovery and follow-the-sun data centers."
+#, fuzzy
+msgid ""
+"Cross-site replication is one of our most used features, as it enables a "
+"number of very useful use-cases such as geographical load distribution, zero-"
+"downtime disaster recovery and follow-the-sun data centers."
 msgstr ""
+"クロスサイトレプリケーションは、地理的な負荷分散、ゼロダウンタイムのディザスタリカバリ、日の丸を追うデータセンターなど、多くの有用なユースケースを可能にするため、当社で最も利用されている機能の1つです。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:31
-msgid "In this release we completely overhauled the way we implement asynchronous cross-site replication by introducing conflict resolution, based on vector clocks, as well as multiple site masters to increase throughput and reliability.  This means that you can have multiple active sites safely replicating data between each other."
+#, fuzzy
+msgid ""
+"In this release we completely overhauled the way we implement asynchronous "
+"cross-site replication by introducing conflict resolution, based on vector "
+"clocks, as well as multiple site masters to increase throughput and "
+"reliability.  This means that you can have multiple active sites safely "
+"replicating data between each other."
 msgstr ""
+"このリリースでは、スループットと信頼性を向上させるために、複数のサイトマスターと同様に、ベクトルクロックに基づく競合解決を導入することで、非同期クロスサイトレプリケーションの実装方法を完全にオーバーホールしました。これにより、複数のアクティブなサイトがお互いの間で安全にデータを複製することができるようになりました。"
 
 #. type: Title ===
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:33
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Server security overhaul"
-msgstr ""
+msgstr "サーバーセキュリティのオーバーホール"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:37
-msgid "Infinispan Server's security, while very powerful, was also tricky to set up because of the configuration complexity.  Since we wanted to make the link:/blog/2020/06/04/server-secure-by-default/[server secure by default], we put a lot of work in simplifying the configuration and removing all of the boilerplate.  Additionally, if you are securing the server with https://keycloak.org[Keycloak], accessing the console will correctly obtain credentials through the realm login page."
+#, fuzzy
+msgid ""
+"Infinispan Server's security, while very powerful, was also tricky to set up "
+"because of the configuration complexity.  Since we wanted to make the link:/"
+"blog/2020/06/04/server-secure-by-default/[server secure by default], we put "
+"a lot of work in simplifying the configuration and removing all of the "
+"boilerplate.  Additionally, if you are securing the server with https://"
+"keycloak.org[Keycloak], accessing the console will correctly obtain "
+"credentials through the realm login page."
 msgstr ""
+"Infinispan Server のセキュリティは非常に強力ですが、設定が複雑なため、設定するのが厄介でした。 link:/blog/2020/06/"
+"04/server-secure-by-default/[デフォルトでサーバをセキュアに] "
+"したかったので、設定を単純化し、すべてのボイラプレートを削除することに多くの労力を費やしました。さらに、 link:https://keycloak."
+"org[Keycloak] でサーバを保護している場合、コンソールにアクセスすると、レルムのログインページから認証情報を正しく取得することができます。"
 
 #. type: Title ===
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:39
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Non-blocking internals"
-msgstr ""
+msgstr "ノンブロッキング内部"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:43
-msgid "Our quest to make better use of the available hardware resources in all deployment models (bare-metal, containerized, virtualized) continues as we've now consolidated a lot of thread-pools into just two: non-blocking and blocking.  Most of the code now makes use of the non-blocking pool. Paths which may block, such as certain persistent stores, use the blocking pool so that they don't hold up work that may be processed without blocking.  This release also includes a new non-blocking Store SPI, so that you can take advantage of stores with real non-blocking I/O."
+#, fuzzy
+msgid ""
+"Our quest to make better use of the available hardware resources in all "
+"deployment models (bare-metal, containerized, virtualized) continues as "
+"we've now consolidated a lot of thread-pools into just two: non-blocking and "
+"blocking.  Most of the code now makes use of the non-blocking pool. Paths "
+"which may block, such as certain persistent stores, use the blocking pool so "
+"that they don't hold up work that may be processed without blocking.  This "
+"release also includes a new non-blocking Store SPI, so that you can take "
+"advantage of stores with real non-blocking I/O."
 msgstr ""
+"すべてのデプロイメントモデル（ベアメタル、コンテナ化、仮想化）で利用可能なハードウェアリソースをよりよく利用するための探求は続いており、多くのスレッドプールをノンブロッキングとブロッキングの "
+"2 "
+"つに統合しました。現在、ほとんどのコードはノンブロッキングプールを使用しています。特定の永続的なストアなど、ブロックされる可能性のあるパスは、ブロッキングなしで処理される可能性のある作業を保持しないように、ブロッキングプールを使用します。このリリースには新しいノンブロッキングストア "
+"SPI も含まれており、実際のノンブロッキング I/O でストアを利用できるようになっています。"
 
 #. type: Title ===
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:45
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Clustering"
-msgstr ""
+msgstr "クラスタリング"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:48
-msgid "As Infinispan is participating in https://cloudbutton.eu/[CloudButton], a Serverless Data Analytics Platform which is part of the https://ec.europa.eu/programmes/horizon2020/[European Union's Horizon 2020 research and innovation programme], we have introduced a new optional feature which allows scaling by adding new nodes to a cluster without state-transfer. This means that you can add capacity with zero-impact to your operations. Obviously this comes at the cost of reduced resilience in case of failures, but, for scenarios where high availability is not required, this gives you a highly scalable in-memory storage solution."
+#, fuzzy
+msgid ""
+"As Infinispan is participating in https://cloudbutton.eu/[CloudButton], a "
+"Serverless Data Analytics Platform which is part of the https://ec.europa.eu/"
+"programmes/horizon2020/[European Union's Horizon 2020 research and "
+"innovation programme], we have introduced a new optional feature which "
+"allows scaling by adding new nodes to a cluster without state-transfer. This "
+"means that you can add capacity with zero-impact to your operations. "
+"Obviously this comes at the cost of reduced resilience in case of failures, "
+"but, for scenarios where high availability is not required, this gives you a "
+"highly scalable in-memory storage solution."
 msgstr ""
+"Infinispanは、 link:https://ec.europa.eu/programmes/horizon2020/"
+"[欧州連合（EU）の研究・イノベーションプログラム「Horizon 2020] 」の一環であるサーバーレスデータ分析プラットフォーム「 link:"
+"https://cloudbutton.eu/[CloudButton] "
+"」に参加していることから、状態遷移なしに新しいノードをクラスタに追加してスケーリングを可能にするオプション機能を新たに導入しました。これは、運用への影響をゼロにして容量を追加することができることを意味します。明らかに、これは障害が発生した場合の回復力を低下させるという代償を伴いますが、高可用性を必要としないシナリオでは、拡張性の高いインメモリ・ストレージ・ソリューションを提供します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:50
-msgid "If high availability is your thing, the rebalancing algorithm which decides how segments (our subdivision of the data space) are mapped to nodes has been overhauled to be much more accurate and fairer."
+#, fuzzy
+msgid ""
+"If high availability is your thing, the rebalancing algorithm which decides "
+"how segments (our subdivision of the data space) are mapped to nodes has "
+"been overhauled to be much more accurate and fairer."
 msgstr ""
+"高可用性がお望みなら、セグメント（データ空間の細分化）がどのようにノードにマップされるかを決定するリバランスアルゴリズムが、より正確で公平なものになるように見直されました。"
 
 #. type: Title ===
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:52
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Query/Indexing"
-msgstr ""
+msgstr "クエリ/インデックス"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:55
-msgid "Querying and indexing will be the major focus in Infinispan 12 (with the long awaited upgrade to https://hibernate.org/search/[Hibernate Search 6] and https://lucene.apache.org/[Lucene 8]).  In preparation for that, *a lot* of work has gone into deprecations, usability, clean ups and documentation."
+#, fuzzy
+msgid ""
+"Querying and indexing will be the major focus in Infinispan 12 (with the "
+"long awaited upgrade to https://hibernate.org/search/[Hibernate Search 6] "
+"and https://lucene.apache.org/[Lucene 8]).  In preparation for that, *a lot* "
+"of work has gone into deprecations, usability, clean ups and documentation."
 msgstr ""
+"クエリとインデックス作成は Infinispan 12 の主要な焦点となるでしょう ( link:https://hibernate.org/"
+"search/[Hibernate Search 6] と link:https://lucene.apache.org/[Lucene 8] "
+"への待望のアップグレードもあります)。その準備として、非推奨、ユーザビリティ、クリーンアップ、文書化に多く *の* 作業が行われました。"
 
 #. type: Title ===
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:57
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Hot Rod Client improvements"
-msgstr ""
+msgstr "ホットロッドクライアントの改善"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:59
+#, fuzzy
 msgid "Many usability changes have been added to our Java Hot Rod client:"
-msgstr ""
+msgstr "Java Hot Rodクライアントに多くのユーザビリティの変更が追加されました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:61
+#, fuzzy
 msgid "a Hot Rod URI as a compact way to configure a connection"
-msgstr ""
+msgstr "接続を設定するためのコンパクトな方法としての Hot Rod URI"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:62
-msgid "automatic creation of caches on demand using supplied configurations/templates with support for wildcards"
-msgstr ""
+#, fuzzy
+msgid ""
+"automatic creation of caches on demand using supplied configurations/"
+"templates with support for wildcards"
+msgstr "ワイルドカードをサポートした設定/テンプレートを使用して、オンデマンドでキャッシュを自動生成します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:63
-msgid "improved iteration of entries by concurrently splitting work across segments/nodes"
-msgstr ""
+#, fuzzy
+msgid ""
+"improved iteration of entries by concurrently splitting work across segments/"
+"nodes"
+msgstr "セグメント/ノード間で作業を並行して分割することで、エントリの反復処理が改善されました。"
 
 #. type: Title ===
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:64
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Other Server changes"
-msgstr ""
+msgstr "その他サーバーの変更"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:66
-msgid "If you are using the JDBC cache store to persist your cache entries to a database, Infinispan Server now restores the ability to create shared datasources which was lost when we abandoned the WildFly base."
+#, fuzzy
+msgid ""
+"If you are using the JDBC cache store to persist your cache entries to a "
+"database, Infinispan Server now restores the ability to create shared "
+"datasources which was lost when we abandoned the WildFly base."
 msgstr ""
+"JDBC キャッシュストアを使用してキャッシュエントリをデータベースに永続化する場合、Infinispan Server は WildFly "
+"ベースを放棄したときに失われた共有データソースを作成する機能を復元します。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:67
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:70
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:71
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CLI"
-msgstr ""
+msgstr "CLI"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:69
-msgid "The CLI received a number of new features such as logging manipulation, obtaining sever reports and user management, superseding the `user-tool` script."
-msgstr ""
+#, fuzzy
+msgid ""
+"The CLI received a number of new features such as logging manipulation, "
+"obtaining sever reports and user management, superseding the `user-tool` "
+"script."
+msgstr "CLIには、ログ操作、シビアレポートの取得、ユーザー管理、 `user-tool` スクリプトの上書きなど、多くの新機能が導入されました。"
 
 #. type: Target for macro image
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:71
@@ -197,35 +303,41 @@ msgstr ""
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:73
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:81
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Console"
-msgstr ""
+msgstr "コンソール"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:76
-msgid "Our console overhaul, which started in 10, continues with lots of new features, integrations and polishing.  Highlights are:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Our console overhaul, which started in 10, continues with lots of new "
+"features, integrations and polishing.  Highlights are:"
+msgstr "10年後にスタートした当社のコンソールオーバーホールは、多くの新機能、統合、研磨を続けています。ハイライトは以下の通りです。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:78
+#, fuzzy
 msgid "entry creation dialog box"
-msgstr ""
+msgstr "エントリ作成ダイアログボックス"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:79
+#, fuzzy
 msgid "querying"
-msgstr ""
+msgstr "照会"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:80
+#, fuzzy
 msgid "KeyCloak integration"
-msgstr ""
+msgstr "KeyCloakの統合"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:82
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "onsole"
-msgstr ""
+msgstr "敷き革"
 
 #. type: Target for macro image
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:82
@@ -235,73 +347,114 @@ msgstr ""
 
 #. type: Title ===
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:84
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Clouds, containers and operators"
-msgstr ""
+msgstr "クラウド、コンテナ、オペレータ"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:87
+#, fuzzy
 msgid "Our Infinispan Server image is now based on `ubi-minimal:8.2`."
-msgstr ""
+msgstr "Infinispan サーバーイメージは `ubi-minimal:8.2` に基づいています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:89
-msgid "And thanks to our friends over at https://quarkus.io[Quarkus], Infinispan Server is now also available as a native image built using https://graalvm.org[GraalVM]. This image is available on Quay.io and Docker Hub."
+#, fuzzy
+msgid ""
+"And thanks to our friends over at https://quarkus.io[Quarkus], Infinispan "
+"Server is now also available as a native image built using https://graalvm."
+"org[GraalVM]. This image is available on Quay.io and Docker Hub."
 msgstr ""
+"そして、 link:https://quarkus.io[Quarkus] の友人のおかげで、Infinispan Serverは link:https:"
+"//graalvm.org[GraalVMを] 使ってビルドされたネイティブイメージとしても利用できるようになりました。このイメージはQuay."
+"ioとDocker Hubで利用可能です。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:91
-msgid "The Kubernetes Operator adds a new Cache Custom Resource and the ability to expose services via Ingress and Routes."
+#, fuzzy
+msgid ""
+"The Kubernetes Operator adds a new Cache Custom Resource and the ability to "
+"expose services via Ingress and Routes."
 msgstr ""
+"Kubernetes Operatorでは、新しいCache Custom "
+"ResourceとIngressとRoutes経由でサービスを公開する機能が追加されています。"
 
 #. type: Title ===
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:92
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Documentation"
-msgstr ""
+msgstr "ドキュメント"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:94
+#, fuzzy
 msgid "Documentation has also received a lot of love in all areas:"
-msgstr ""
+msgstr "ドキュメンテーションもすべての分野で多くの愛を受けています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:96
-msgid "Added procedural content for rolling upgrades, Cache CR with the Operator, server patching, misc CLI commands, using RemoteCacheConfigurationBuilder."
+#, fuzzy
+msgid ""
+"Added procedural content for rolling upgrades, Cache CR with the Operator, "
+"server patching, misc CLI commands, using RemoteCacheConfigurationBuilder."
 msgstr ""
+"RemoteCacheConfigurationBuilder を使用した、ローリング・アップグレード、オペレータとの Cache "
+"CR、サーバのパッチ適用、その他 CLI コマンドの手続き的なコンテンツが追加されました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:97
-msgid "Procedural content for different upgrade and migration tasks included in Upgrade Guide."
-msgstr ""
+#, fuzzy
+msgid ""
+"Procedural content for different upgrade and migration tasks included in "
+"Upgrade Guide."
+msgstr "アップグレードガイドに含まれるさまざまなアップグレードおよび移行作業のための手続き内容"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:98
-msgid "Operator and Spring Boot Starter guides now provide stable and development versions from the index page."
-msgstr ""
+#, fuzzy
+msgid ""
+"Operator and Spring Boot Starter guides now provide stable and development "
+"versions from the index page."
+msgstr "OperatorとSpring Boot Starterガイドでは、インデックスページから安定版と開発版を提供するようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:99
-msgid "Updated index.html and throughout documentation to improve high-level context and aid retrievability."
-msgstr ""
+#, fuzzy
+msgid ""
+"Updated index.html and throughout documentation to improve high-level "
+"context and aid retrievability."
+msgstr "index.htmlとドキュメント全体を更新し、高レベルのコンテキストと検索性を向上させました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:100
+#, fuzzy
 msgid "Getting Started content updated and streamlined."
-msgstr ""
+msgstr "はじめに コンテンツが更新され、合理化されました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:101
-msgid "Applied several modifications, additions, and removals to documentation via community feedback."
-msgstr ""
+#, fuzzy
+msgid ""
+"Applied several modifications, additions, and removals to documentation via "
+"community feedback."
+msgstr "コミュニティのフィードバックを介して、いくつかの変更、追加、削除を文書に適用しました。"
 
 #. type: Title ==
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:102
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What's next ?"
-msgstr ""
+msgstr "次は何をするの？"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-infinispan-11.0.0.Final.adoc:105
-msgid "As briefly mentioned above, Infinispan 12 will be our next release, scheduled for this autumn. We will be working on query/index improvements, backup/restore capabilities as well as the usual load of improvements, clean-ups across the board. We will keep you posted with development release and blogs about upcoming highlights. If you'd like to contribute, just get in touch."
+#, fuzzy
+msgid ""
+"As briefly mentioned above, Infinispan 12 will be our next release, "
+"scheduled for this autumn. We will be working on query/index improvements, "
+"backup/restore capabilities as well as the usual load of improvements, clean-"
+"ups across the board. We will keep you posted with development release and "
+"blogs about upcoming highlights. If you'd like to contribute, just get in "
+"touch."
 msgstr ""
+"上記で簡単に述べたように、Infinispan 12 は、この秋に予定されている次のリリースとなります。クエリ/インデックスの改善、バックアップ/"
+"リストア機能、さらには通常の改善やクリーンアップにも取り組んでいく予定です。今後のハイライトについては、開発リリースやブログでお知らせしていきます。貢献したい方は、ご連絡ください。"

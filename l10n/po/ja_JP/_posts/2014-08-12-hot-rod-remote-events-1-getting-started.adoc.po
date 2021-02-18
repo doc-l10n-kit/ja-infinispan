@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-08-12-hot-rod-remote-events-1-getting-started.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-12-hot-rod-remote-events-1-getting-started.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: 'Hot Rod Remote Events #1: Getting started'\n"
@@ -32,63 +32,135 @@ msgid ""
 "date: '2014-08-12T04:11:00.001-07:00'\n"
 "author: galder\n"
 "tags: [ \" hotrod\", \"event\", \"remote events\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8685396984125779082\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/08/hot-rod-remote-events-1-getting-started.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8685396984125779082\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/08/hot-rod-remote-events-"
+"1-getting-started.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 'ホットロッドリモートイベント #1: はじめに'\n"
+"permalink: /blog/:year/:month/:day/hot-rod-remote-events-1-getting-started\n"
+"date: '2014-08-12T04:11:00.001-07:00'\n"
+"author: galder\n"
+"tags: [ \" hotrod\", \"event\", \"remote events\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8685396984125779082\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/08/hot-rod-remote-events-"
+"1-getting-started.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-12-hot-rod-remote-events-1-getting-started.adoc:17
-msgid "Shortly after the first Hot Rod server implementation was released in 2010, https://issues.jboss.org/browse/ISPN-374[ISPN-374] was created requesting cache events to be forwarded back to connected clients. Even though embedded caches have had access to these events since Infinispan's first release, propagating them to remote clients has taken a while, due to the increased complexity involved."
+#, fuzzy
+msgid ""
+"Shortly after the first Hot Rod server implementation was released in 2010, "
+"https://issues.jboss.org/browse/ISPN-374[ISPN-374] was created requesting "
+"cache events to be forwarded back to connected clients. Even though embedded "
+"caches have had access to these events since Infinispan's first release, "
+"propagating them to remote clients has taken a while, due to the increased "
+"complexity involved."
 msgstr ""
+"最初のHot Rodサーバの実装が2010年にリリースされた直後、接続されたクライアントにキャッシュイベントを転送するように要求する link:"
+"https://issues.jboss.org/browse/ISPN-374[ISPN-374] が作成されました。Infinispan "
+"の最初のリリース以来、組み込みキャッシュはこれらのイベントにアクセスできるようになっていましたが、リモートクライアントにイベントを転送するのには複雑さが増したため、しばらく時間がかかりました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-12-hot-rod-remote-events-1-getting-started.adoc:23
-msgid "For Infinispan 7.0, we've finally addressed this. This is the first post in a series that looks at Hot Rod Remote Events and the different functionality we've implemented for this release. On this first post, we show you how to get started with Hot Rod Remote Events with the most basic of examples:"
+#, fuzzy
+msgid ""
+"For Infinispan 7.0, we've finally addressed this. This is the first post in "
+"a series that looks at Hot Rod Remote Events and the different functionality "
+"we've implemented for this release. On this first post, we show you how to "
+"get started with Hot Rod Remote Events with the most basic of examples:"
 msgstr ""
+"Infinispan 7.0では、ついにこれに対応しました。これは、Hot Rod Remote Events "
+"と、このリリースのために実装したさまざまな機能を見ていくシリーズの最初の投稿です。この最初の投稿では、最も基本的な例を使って Hot Rod "
+"Remote Events を使い始める方法を紹介します。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-12-hot-rod-remote-events-1-getting-started.adoc:29
-msgid "Start by downloading the Server distribution for the latest 7.0 (or higher) release from http://infinispan.org/download/[Infinispan's download page]. The server contains the Hot Rod server with which the client will communicate. Once downloaded, start it up running the following from the root of the server:"
+#, fuzzy
+msgid ""
+"Start by downloading the Server distribution for the latest 7.0 (or higher) "
+"release from http://infinispan.org/download/[Infinispan's download page]. "
+"The server contains the Hot Rod server with which the client will "
+"communicate. Once downloaded, start it up running the following from the "
+"root of the server:"
 msgstr ""
+"link:http://infinispan.org/download/[Infinispanのダウンロードページ] から最新の7."
+"0（またはそれ以上）リリースのServerディストリビューションをダウンロードすることから始めます。サーバーには、クライアントが通信するHot "
+"Rodサーバーが含まれています。ダウンロードしたら、サーバーのルートから以下を実行して起動します。"
 
 #. type: Block title
 #: upstream/_posts/2014-08-12-hot-rod-remote-events-1-getting-started.adoc:30
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/bin/standalone.sh"
-msgstr ""
+msgstr "/bin/standalone.sh"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-12-hot-rod-remote-events-1-getting-started.adoc:35
-msgid "Next up, we need to write a little application that interacts with the Hot Rod server. If you're using Maven, create an application with this dependency, changing version to 7.0.0.Beta1 or higher:"
+#, fuzzy
+msgid ""
+"Next up, we need to write a little application that interacts with the Hot "
+"Rod server. If you're using Maven, create an application with this "
+"dependency, changing version to 7.0.0.Beta1 or higher:"
 msgstr ""
+"次は、Hot Rodサーバーと対話する小さなアプリケーションを書く必要があります。Mavenを使っている場合は、バージョンを7.0.0.0."
+"Beta1以上に変更して、この依存関係を持つアプリケーションを作成してください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-12-hot-rod-remote-events-1-getting-started.adoc:39
-msgid "If not using Maven, adjust according to your chosen build tool or download the all distribution with all Infinispan jars."
+#, fuzzy
+msgid ""
+"If not using Maven, adjust according to your chosen build tool or download "
+"the all distribution with all Infinispan jars."
 msgstr ""
+"Mavenを使用していない場合は、選択したビルドツールに合わせて調整するか、Infinispanのすべてのjarを含むすべてのディストリビューションをダウンロードしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-12-hot-rod-remote-events-1-getting-started.adoc:43
-msgid "With the application dependencies in place, we need to start to write the client application. We'll start with a simple remote event listener that simply logs all events received:"
+#, fuzzy
+msgid ""
+"With the application dependencies in place, we need to start to write the "
+"client application. We'll start with a simple remote event listener that "
+"simply logs all events received:"
 msgstr ""
+"アプリケーションの依存関係が整ったので、クライアントアプリケーションを書き始める必要があります。受信したすべてのイベントを単純にログに記録する、シンプルなリモートイベントリスナーから始めます。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-12-hot-rod-remote-events-1-getting-started.adoc:46
-msgid "Now it's time to write a simple main java class which adds the remote event listener and executes some operations against the remote cache:"
+#, fuzzy
+msgid ""
+"Now it's time to write a simple main java class which adds the remote event "
+"listener and executes some operations against the remote cache:"
 msgstr ""
+"さて、リモートイベントリスナーを追加し、リモートキャッシュに対していくつかの操作を実行するシンプルなメインのjavaクラスを書く時が来ました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-12-hot-rod-remote-events-1-getting-started.adoc:49
+#, fuzzy
 msgid "Once executed, we should see a console console output similar to this:"
-msgstr ""
+msgstr "実行すると、このようなコンソール出力が表示されるはずです。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-12-hot-rod-remote-events-1-getting-started.adoc:60
-msgid "As you can see from the output, by default events come with the key and the internal data version associated with the current value. The actual value is not shipped back to the client for performance reasons.  Clearly, receiving remote events has a cost, and as the cache size increases and more operations are executed, more events will be generated. To avoid inundating Hot Rod clients, remote events can either be filtered server side, or the event contents can be customised. In the next blog post in this series, we will see this functionality in action."
+#, fuzzy
+msgid ""
+"As you can see from the output, by default events come with the key and the "
+"internal data version associated with the current value. The actual value is "
+"not shipped back to the client for performance reasons.  Clearly, receiving "
+"remote events has a cost, and as the cache size increases and more "
+"operations are executed, more events will be generated. To avoid inundating "
+"Hot Rod clients, remote events can either be filtered server side, or the "
+"event contents can be customised. In the next blog post in this series, we "
+"will see this functionality in action."
 msgstr ""
+"出力を見ればわかるように、デフォルトでは、イベントはキーと現在の値に関連付けられた内部データのバージョンを持ってきます。実際の値は、パフォーマンス上の理由からクライアントには出荷されません。明らかに、リモートイベントを受信することにはコストがかかり、キャッシュサイズが増加し、より多くの操作が実行されると、より多くのイベントが生成されます。Hot "
+"Rodクライアントが殺到するのを避けるために、リモートイベントはサーバーサイドでフィルタリングするか、イベントの内容をカスタマイズすることができます。このシリーズの次回のブログ記事では、この機能を実際に見ていきます。"
 
 #. type: Plain text
 #: upstream/_posts/2014-08-12-hot-rod-remote-events-1-getting-started.adoc:62
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

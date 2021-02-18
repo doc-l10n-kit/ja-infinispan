@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Running Infinispan cluster on OpenShift\n"
@@ -34,175 +34,305 @@ msgid ""
 "tags: [ \"openshift\",\n"
 "\"kubernetes\",\n"
 "]\n"
-"thumbnail: https://4.bp.blogspot.com/-l9FMkQOGKDQ/V6Q5tFuHkSI/AAAAAAAAHFA/J7eiuzoh3ksnpZ7FGMcixeRVhpgn7-qVgCLcB/s72-c/Infinispan%2B%252B%2BOpenShift.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4588418313803596916\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/08/running-infinispan-cluster-on-openshift.html\n"
+"thumbnail: https://4.bp.blogspot.com/-l9FMkQOGKDQ/V6Q5tFuHkSI/AAAAAAAAHFA/"
+"J7eiuzoh3ksnpZ7FGMcixeRVhpgn7-qVgCLcB/s72-c/Infinispan%2B%252B%2BOpenShift."
+"png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4588418313803596916\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/08/running-infinispan-"
+"cluster-on-openshift.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: OpenShift上でInfinispanクラスタを実行する\n"
+"permalink: /blog/:year/:month/:day/running-infinispan-cluster-on-openshift\n"
+"date: '2016-08-09T01:04:00.000-07:00'\n"
+"author: slaskawiec\n"
+"tags: [ \"openshift\",\n"
+"\"kubernetes\",\n"
+"]\n"
+"thumbnail: https://4.bp.blogspot.com/-l9FMkQOGKDQ/V6Q5tFuHkSI/AAAAAAAAHFA/"
+"J7eiuzoh3ksnpZ7FGMcixeRVhpgn7-qVgCLcB/s72-c/Infinispan%2B%252B%2BOpenShift."
+"png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4588418313803596916\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/08/running-infinispan-"
+"cluster-on-openshift.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:17
-msgid "Did you know that it's extremely easy to run Infinispan in https://www.openshift.com/[OpenShift]? Infinispan 9.0.0.Alpha4 adds out of the box support for OpenShift (and Kubernetes) discovery!"
+#, fuzzy
+msgid ""
+"Did you know that it's extremely easy to run Infinispan in https://www."
+"openshift.com/[OpenShift]? Infinispan 9.0.0.Alpha4 adds out of the box "
+"support for OpenShift (and Kubernetes) discovery!"
 msgstr ""
+"link:https://www.openshift.com/[OpenShift] "
+"でInfinispanを実行するのが非常に簡単だということをご存知ですか？Infinispan 9.0.0.0."
+"Alpha4では、OpenShift（およびKubernetes）ディスカバリーのサポートが追加されました。"
 
 #. type: Title =====
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:18
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Our goal"
-msgstr ""
+msgstr "私たちの目標"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:24
-msgid "We'd like to build an Infinispan cluster on top of OpenShift and expose a _Service_ for it (you may think about _Services_ as Load Balancers).  A _Service_ can be exposed to the outside world using _Routes_. Finally, we will use REST interface to PUT and GET some data from the cluster."
+#, fuzzy
+msgid ""
+"We'd like to build an Infinispan cluster on top of OpenShift and expose "
+"a _Service_ for it (you may think about _Services_ as Load Balancers).  "
+"A _Service_ can be exposed to the outside world using _Routes_. Finally, we "
+"will use REST interface to PUT and GET some data from the cluster."
 msgstr ""
+"OpenShiftの上にInfinispanクラスタを構築して、その上 _にサービスを_ 公開したいと思います（サービスは _ロードバランサーと_ "
+"考えるといいかもしれません）。サービスはRouteを使って外部に公開すること _ができます_ _。_ "
+"最後に、RESTインターフェイスを使ってクラスタからいくつかのデータをPUTしたりGETしたりします。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:28
-msgid "https://4.bp.blogspot.com/-l9FMkQOGKDQ/V6Q5tFuHkSI/AAAAAAAAHFA/J7eiuzoh3ksnpZ7FGMcixeRVhpgn7-qVgCLcB/s1600/Infinispan%2B%252B%2BOpenShift.png[image:https://4.bp.blogspot.com/-l9FMkQOGKDQ/V6Q5tFuHkSI/AAAAAAAAHFA/J7eiuzoh3ksnpZ7FGMcixeRVhpgn7-qVgCLcB/s320/Infinispan%2B%252B%2BOpenShift.png[image,width=240,height=320]]"
+#, fuzzy
+msgid ""
+"https://4.bp.blogspot.com/-l9FMkQOGKDQ/V6Q5tFuHkSI/AAAAAAAAHFA/"
+"J7eiuzoh3ksnpZ7FGMcixeRVhpgn7-qVgCLcB/s1600/Infinispan%2B%252B%2BOpenShift."
+"png[image:https://4.bp.blogspot.com/-l9FMkQOGKDQ/V6Q5tFuHkSI/AAAAAAAAHFA/"
+"J7eiuzoh3ksnpZ7FGMcixeRVhpgn7-qVgCLcB/s320/Infinispan%2B%252B%2BOpenShift."
+"png[image,width=240,height=320]]"
 msgstr ""
+"link:https://4.bp.blogspot.com/-l9FMkQOGKDQ/V6Q5tFuHkSI/AAAAAAAAHFA/"
+"J7eiuzoh3ksnpZ7FGMcixeRVhpgn7-qVgCLcB/s1600/Infinispan%2B%252B%2BOpenShift."
+"png[]"
 
 #. type: Title =====
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:31
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Accessing the OpenShift cloud"
-msgstr ""
+msgstr "OpenShiftクラウドへのアクセス"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:39
-msgid "Of course before playing with Infinispan, you will need an OpenShift cluster. There are https://docs.openshift.org/latest/install_config/index.html[number of options] you can investigate. I will use the simplest path - https://github.com/openshift/origin/blob/master/docs/cluster_up_down.md[OpenShift local cluster]."
+#, fuzzy
+msgid ""
+"Of course before playing with Infinispan, you will need an OpenShift cluster."
+" There are https://docs.openshift.org/latest/install_config/index."
+"html[number of options] you can investigate. I will use the simplest path - "
+"https://github.com/openshift/origin/blob/master/docs/cluster_up_down."
+"md[OpenShift local cluster]."
 msgstr ""
+"もちろんInfinispanで遊ぶ前にはOpenShiftクラスタが必要です。調査できる link:https://docs.openshift.org/"
+"latest/install_config/index.html[オプションはいくつか] あります。私は最もシンプルなパスである link:https:/"
+"/github.com/openshift/origin/blob/master/docs/cluster_up_down."
+"md[OpenShiftローカルクラスタを] 使用します。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:48
-msgid "The first step is to download OpenShift Client Tools for your platform.  You can find them on https://github.com/openshift/origin/releases[OpenShift releases Github page]. Once you download and extract the 'oc' binary, make it accessible in your $PATH. I usually copy such things into my '/usr/bin' directory (I'm using Fedora F23). "
+#, fuzzy
+msgid ""
+"The first step is to download OpenShift Client Tools for your platform.  You "
+"can find them on https://github.com/openshift/origin/releases[OpenShift "
+"releases Github page]. Once you download and extract the 'oc' binary, make "
+"it accessible in your $PATH. I usually copy such things into my '/usr/bin' "
+"directory (I'm using Fedora F23). "
 msgstr ""
+"最初のステップは、お使いのプラットフォーム用のOpenShift Client Toolsをダウンロードすることです。 link:https://"
+"github.com/openshift/origin/releases[OpenShiftのリリースのGithubページ] "
+"で見つけることができます。ダウンロードして'oc'バイナリを展開したら、$PATHにアクセスできるようにします。私は普段からこのようなものを'/usr/"
+"bin'ディレクトリにコピーしています（Fedora F23を使っています）。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:52
+#, fuzzy
 msgid "Once everything is set and done - spin up the cluster:"
-msgstr ""
+msgstr "すべての設定が完了したら、クラスタを回転させます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:59
-msgid "Note that you have been automatically logged in as 'developer' and your project has been automatically set to 'myproject'. "
-msgstr ""
+#, fuzzy
+msgid ""
+"Note that you have been automatically logged in as 'developer' and your "
+"project has been automatically set to 'myproject'. "
+msgstr "開発者」として自動的にログインし、プロジェクトが自動的に「myproject」に設定されていることに注意してください。"
 
 #. type: Title =====
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:60
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Spinning an Infinispan cluster"
-msgstr ""
+msgstr "Infinispanクラスタの回転"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:63
+#, fuzzy
 msgid "The first step is to create an Infinispan app:"
-msgstr ""
+msgstr "まずはInfinispanアプリの作成です。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:75
-msgid "Now you need to modify the Deployment Configuration (use 'oc edit dc/infinispan-server' for this) and tell Infinispan to boot up with Kubernetes' discovery protocol stack by using the proper namespace to look up other nodes (unfortunately this step can not be automated, otherwise a newly created Infinispan node might try to join an existing cluster and this is something you might not want). Here's my modified Deployment Configuration:"
+#, fuzzy
+msgid ""
+"Now you need to modify the Deployment Configuration (use 'oc edit dc/"
+"infinispan-server' for this) and tell Infinispan to boot up with Kubernetes' "
+"discovery protocol stack by using the proper namespace to look up other "
+"nodes (unfortunately this step can not be automated, otherwise a newly "
+"created Infinispan node might try to join an existing cluster and this is "
+"something you might not want). Here's my modified Deployment Configuration:"
 msgstr ""
+"次に、Deployment Configurationを変更し(これには'oc edit dc/infinispan-"
+"server'を使用します)、他のノードを検索するために適切な名前空間を使用してKubernetesのディスカバリプロトコルスタックで起動するようにInfinispanに指示する必要があります(残念ながらこのステップは自動化できません。そうしないと、新しく作成されたInfinispanノードが既存のクラスタに参加しようとする可能性があり、これは望ましくないことかもしれません)。以下に私の修正した配置設定を示します。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:81
-msgid "(lines 58-60) - Modified Infinispan startup parameters by adding http://kubernetes.io/docs/user-guide/containers/[image startup arguments]."
+#, fuzzy
+msgid ""
+"(lines 58-60) - Modified Infinispan startup parameters by adding http://"
+"kubernetes.io/docs/user-guide/containers/[image startup arguments]."
 msgstr ""
+"(58-60行目) - link:http://kubernetes.io/docs/user-guide/containers/[イメージ起動引数を] "
+"追加してInfinispan起動パラメータを変更しました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:86
-msgid "(lines 88-90) - https://github.com/jgroups-extras/jgroups-kubernetes[JGroups Kubernetes Discovery protocol] is instrumented by the http://kubernetes.io/docs/user-guide/downward-api/[Downward API] to use current project's namespace. "
+#, fuzzy
+msgid ""
+"(lines 88-90) - https://github.com/jgroups-extras/jgroups-kubernetes[JGroups "
+"Kubernetes Discovery protocol] is instrumented by the http://kubernetes.io/"
+"docs/user-guide/downward-api/[Downward API] to use current project's "
+"namespace. "
 msgstr ""
+"(88-90行目) - link:https://github.com/jgroups-extras/jgroups-"
+"kubernetes[JGroups Kubernetes Discoveryプロトコルは] 、 link:http://kubernetes.io/"
+"docs/user-guide/downward-api/[Downward API] によって現在のプロジェクトの名前空間を使用する link:"
+"http://kubernetes.io/docs/user-guide/downward-api/[ように] インスツルメントされています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:93
-msgid "There is one final step - Kubernetes' PING protocol uses the API to look up other nodes in the Infinispan cluster. By default API access is disabled in OpenShift and needs to be enabled. This can be done by this simple command:"
+#, fuzzy
+msgid ""
+"There is one final step - Kubernetes' PING protocol uses the API to look up "
+"other nodes in the Infinispan cluster. By default API access is disabled in "
+"OpenShift and needs to be enabled. This can be done by this simple command:"
 msgstr ""
+"最後に1つのステップがあります。KubernetesのPINGプロトコルはAPIを使用してInfinispanクラスタ内の他のノードを検索します。デフォルトではOpenShiftではAPIアクセスは無効になっており、有効にする必要があります。これは次のような簡単なコマンドで行うことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:100
-msgid "Now we can redeploy the application (to ensure that all changes were applied) and scale it out (to 3 nodes):"
+#, fuzzy
+msgid ""
+"Now we can redeploy the application (to ensure that all changes were "
+"applied) and scale it out (to 3 nodes):"
 msgstr ""
+"これで、アプリケーションを再デプロイして（すべての変更が適用されたことを確認するために）、スケールアウトして（3ノードに）スケールアウトすることができるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:108
-msgid "Now let's check if everything looks good - you can do it either through the OpenShift web console or by using 'oc get pods' and 'oc logs' commands:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Now let's check if everything looks good - you can do it either through the "
+"OpenShift web console or by using 'oc get pods' and 'oc logs' commands:"
+msgstr "これはOpenShiftのWebコンソールから行うか、「oc get pods」と「oc logs」コマンドを使用して行うことができます。"
 
 #. type: Title =====
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:111
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Accessing the cluster"
-msgstr ""
+msgstr "クラスタへのアクセス"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:115
-msgid "In order to access the Infinispan cluster from the outside world we need a Route:"
-msgstr ""
+#, fuzzy
+msgid ""
+"In order to access the Infinispan cluster from the outside world we need a "
+"Route:"
+msgstr "外部からInfinispanクラスタにアクセスするためには、Routeが必要です。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:124
-msgid "The newly created Route needs small changes - we need to change the target port to 8080 (this is the REST service). The 'oc edit route/infinispan-server' command is perfect for it. Below is my updated configuration:"
+#, fuzzy
+msgid ""
+"The newly created Route needs small changes - we need to change the target "
+"port to 8080 (this is the REST service). The 'oc edit route/infinispan-"
+"server' command is perfect for it. Below is my updated configuration:"
 msgstr ""
+"新しく作成されたRouteには小さな変更が必要です - ターゲットポートを808080に変更する必要があります (これはRESTサービスです)。oc "
+"edit route/infinispan-server' コマンドはそれに最適です。以下は私の更新された設定です。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:128
+#, fuzzy
 msgid "(line 17) - Modified to 8080 TCP port"
-msgstr ""
+msgstr "(17 行目) - 808080 TCP ポートに変更しました。"
 
 #. type: Title =====
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:129
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Testing the setup"
-msgstr ""
+msgstr "セットアップのテスト"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:132
+#, fuzzy
 msgid "You can easily see how to access the cluster by describing the Route:"
-msgstr ""
+msgstr "クラスタへのアクセス方法は、Routeを記述することで簡単に確認できます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:138
+#, fuzzy
 msgid "Now let's try to play with the data:"
-msgstr ""
+msgstr "では、データで遊んでみましょう。"
 
 #. type: Title =====
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:141
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Cleaning up"
-msgstr ""
+msgstr "掃除の様子"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:145
-msgid "Finally, when you are done with experimenting, you can remove everything using 'oc delete' command:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Finally, when you are done with experimenting, you can remove everything "
+"using 'oc delete' command:"
+msgstr "最後に、実験が終わったら、'oc delete'コマンドを使ってすべてを削除します。"
 
 #. type: Title =====
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:148
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Conclusion"
-msgstr ""
+msgstr "結論"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:152
-msgid "Running Infinispan cluster inside an OpenShift cloud is really simple.  Just 3 steps to remember:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Running Infinispan cluster inside an OpenShift cloud is really simple.  Just "
+"3 steps to remember:"
+msgstr "OpenShiftクラウド内でInfinispanクラスターを実行するのは本当に簡単です。覚えておくべき3つのステップだけです。"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:154
+#, fuzzy
 msgid "Create an Infinispan app ('oc new-app')"
-msgstr ""
+msgstr "Infinispanアプリを作成する ('oc new-app')"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:156
-msgid "Tell it to use Kubernetes JGroups Stack and in which project look for other cluster members ('oc edit dc/infinispan-server')"
+#, fuzzy
+msgid ""
+"Tell it to use Kubernetes JGroups Stack and in which project look for other "
+"cluster members ('oc edit dc/infinispan-server')"
 msgstr ""
+"Kubernetes JGroups Stackを使用し、どのプロジェクトで他のクラスタメンバーを探すかを指示します ('oc edit dc/"
+"infinispan-server')"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:157
+#, fuzzy
 msgid "Allow access to the OpenShift API ('oc policy add-role-to-user')"
-msgstr ""
+msgstr "OpenShift APIへのアクセスを許可する ('oc policy add-role-to-user')"
 
 #. type: Plain text
 #: upstream/_posts/2016-08-09-running-infinispan-cluster-on-openshift.adoc:158
+#, fuzzy
 msgid "Happy scaling!"
-msgstr ""
+msgstr "ハッピースケーリング！（笑）。"

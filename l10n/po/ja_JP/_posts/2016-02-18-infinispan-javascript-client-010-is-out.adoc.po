@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-02-18-infinispan-javascript-client-010-is-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-18-infinispan-javascript-client-010-is-out.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan Javascript client 0.1.0 is out!\n"
@@ -35,87 +35,164 @@ msgid ""
 "\"javascript\",\n"
 "\"js-client\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1146788787774960412\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/02/infinispan-javascript-client-010-is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1146788787774960412\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/02/infinispan-javascript-"
+"client-010-is-out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan Javascriptクライアント0.1.0がリリースされました。\n"
+"permalink: /blog/:year/:month/:day/infinispan-javascript-client-010-is-out\n"
+"date: '2016-02-18T02:54:00.002-08:00'\n"
+"author: galder\n"
+"tags: [ \"release\",\n"
+"\"javascript\",\n"
+"\"js-client\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1146788787774960412\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/02/infinispan-javascript-"
+"client-010-is-out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-18-infinispan-javascript-client-010-is-out.adoc:19
-msgid "Over the past few months we've been working on a https://github.com/infinispan/js-client[Javascript client] based on Node.js which can talk to Infinispan Server instances and today we can announce the first public release, version 0.1.0 which can easily be installed with the following command:"
+#, fuzzy
+msgid ""
+"Over the past few months we've been working on a https://github.com/"
+"infinispan/js-client[Javascript client] based on Node.js which can talk to "
+"Infinispan Server instances and today we can announce the first public "
+"release, version 0.1.0 which can easily be installed with the following "
+"command:"
 msgstr ""
+"ここ数ヶ月間、私たちはInfinispan Serverインスタンスと通信できるNode.jsベースの link:https://github.com/"
+"infinispan/js-client[Javascriptクライアント] に取り組んできましたが、本日、最初の公開リリースであるバージョン0.1."
+"0を発表することができました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-18-infinispan-javascript-client-010-is-out.adoc:23
+#, fuzzy
 msgid "$ npm install infinispan"
-msgstr ""
+msgstr "npm install infinispan"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-18-infinispan-javascript-client-010-is-out.adoc:28
-msgid "The client is still under heavy development but here's a summary of its current capabilities:"
-msgstr ""
+#, fuzzy
+msgid ""
+"The client is still under heavy development but here's a summary of its "
+"current capabilities:"
+msgstr "このクライアントはまだ開発が進んでいませんが、現在の能力をまとめてみました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-18-infinispan-javascript-client-010-is-out.adoc:31
+#, fuzzy
 msgid "Full CRUD operation support, e.g. put, get, remove, containsKey...etc."
-msgstr ""
+msgstr "CRUD操作を完全にサポート（例：put、get、remove、containsKey...など"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-18-infinispan-javascript-client-010-is-out.adoc:34
-msgid "Compare-And-Swap operation support, e.g. putIfAbsent, getWithVersion/getWithMetadata, replace, replaceWithVersion, removeWithVersion...etc."
-msgstr ""
+#, fuzzy
+msgid ""
+"Compare-And-Swap operation support, e.g. putIfAbsent, getWithVersion/"
+"getWithMetadata, replace, replaceWithVersion, removeWithVersion...etc."
+msgstr "比較とスワップ操作をサポートしています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-18-infinispan-javascript-client-010-is-out.adoc:38
-msgid "Expiration with absolute lifespan or relative maximum idle time is supported. This expiration parameters as passed as optional parameters to create/update methods and they support multiple time units, e.g.  \\{lifespan: '1m', maxIdle: '1d'}."
+#, fuzzy
+msgid ""
+"Expiration with absolute lifespan or relative maximum idle time is supported."
+" This expiration parameters as passed as optional parameters to create/"
+"update methods and they support multiple time units, e.g.  \\{lifespan: "
+"'1m', maxIdle: '1d'}."
 msgstr ""
+"絶対的な寿命や相対的な最大アイドル時間での期限切れをサポートしています。この有効期限のパラメータは、メソッドの作成/"
+"更新のためのオプションのパラメータとして渡され、複数の時間単位をサポートしています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-18-infinispan-javascript-client-010-is-out.adoc:40
-msgid "Update and remove operations can optionally return previous values by passing in\\{previous: true} option."
-msgstr ""
+#, fuzzy
+msgid ""
+"Update and remove operations can optionally return previous values by "
+"passing in\\{previous: true} option."
+msgstr "更新・削除操作では、オプションでprevious{previous: true}オプションを渡すことで、前の値を返すことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-18-infinispan-javascript-client-010-is-out.adoc:42
-msgid "Bulk store/retrieve/delete operations are supported, e.g. putAll, getAll, getBulk, getBulkKeys, clear...etc."
+#, fuzzy
+msgid ""
+"Bulk store/retrieve/delete operations are supported, e.g. putAll, getAll, "
+"getBulk, getBulkKeys, clear...etc."
 msgstr ""
+"一括保存/検索/削除操作がサポートされており、例えば putAll, getAll, getBulk, getBulkKeys, clear...など。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-18-infinispan-javascript-client-010-is-out.adoc:43
+#, fuzzy
 msgid "Cache contents can be iterated over using the iterator method."
-msgstr ""
+msgstr "キャッシュの内容は、イテレータ・メソッドを使用して反復処理することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-18-infinispan-javascript-client-010-is-out.adoc:44
+#, fuzzy
 msgid "Cache size can be determined using the size method."
-msgstr ""
+msgstr "キャッシュのサイズは、サイズメソッドを使用して決定することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-18-infinispan-javascript-client-010-is-out.adoc:47
-msgid "Remote cache listeners can be plugged using the addListener method, which takes the event type (create, modify, remove or expiry) and the function callback as parameter."
+#, fuzzy
+msgid ""
+"Remote cache listeners can be plugged using the addListener method, which "
+"takes the event type (create, modify, remove or expiry) and the function "
+"callback as parameter."
 msgstr ""
+"リモートキャッシュリスナーは addListener メソッドを使用してプラグインすることができ、イベントタイプ (create, modify, "
+"remove, expiry) と関数コールバックをパラメータとして受け取ります。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-18-infinispan-javascript-client-010-is-out.adoc:52
-msgid "Sample code showing how to use the Infinispan Javascript client can be found in the https://github.com/infinispan/js-client/blob/master/README.md[client's README file]."
+#, fuzzy
+msgid ""
+"Sample code showing how to use the Infinispan Javascript client can be found "
+"in the https://github.com/infinispan/js-client/blob/master/README."
+"md[client's README file]."
 msgstr ""
+"Infinispan Javascript クライアントの使用方法を示すサンプルコードは、 link:https://github.com/"
+"infinispan/js-client/blob/master/README.md[クライアントの README ファイル] にあります。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-18-infinispan-javascript-client-010-is-out.adoc:58
-msgid "In future versions we'll be adding remote execution support as well as cluster topology handling, including consistent-hash based request routing."
+#, fuzzy
+msgid ""
+"In future versions we'll be adding remote execution support as well as "
+"cluster topology handling, including consistent-hash based request routing."
 msgstr ""
+"将来のバージョンでは、一貫性のあるハッシュベースのリクエストルーティングを含むクラスタトポロジ処理に加えて、リモート実行のサポートを追加する予定です。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-18-infinispan-javascript-client-010-is-out.adoc:67
-msgid "If you're a Javascript user and want to store data remotely in Infinispan Server instances, please give the client a go and tell us what you think of it via our https://developer.jboss.org/en/infinispan/content[forum], via our https://issues.jboss.org/projects/ISPN[issue tracker] or via IRC on the #infinispan channel on https://issues.jboss.org/projects/ISPN[Freenode]."
+#, fuzzy
+msgid ""
+"If you're a Javascript user and want to store data remotely in Infinispan "
+"Server instances, please give the client a go and tell us what you think of "
+"it via our https://developer.jboss.org/en/infinispan/content[forum], via our "
+"https://issues.jboss.org/projects/ISPN[issue tracker] or via IRC on the "
+"#infinispan channel on https://issues.jboss.org/projects/ISPN[Freenode]."
 msgstr ""
+"Javascriptユーザーで、Infinispan Serverインスタンスにリモートでデータを保存したい場合は、クライアントを試してみて、 link:"
+"https://developer.jboss.org/en/infinispan/content[フォーラム] 、 link:https://"
+"issues.jboss.org/projects/ISPN[イシュートラッカー] 、IRC、 link:https://issues.jboss."
+"org/projects/ISPN[Freenode] の#infinispanチャンネルで感想をお聞かせください。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-18-infinispan-javascript-client-010-is-out.adoc:71
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-18-infinispan-javascript-client-010-is-out.adoc:72
+#, fuzzy
 msgid "Galder"
-msgstr ""
+msgstr "ガルダー"

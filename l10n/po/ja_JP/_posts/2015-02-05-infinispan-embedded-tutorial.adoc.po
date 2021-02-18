@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-02-05-infinispan-embedded-tutorial.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-02-05-infinispan-embedded-tutorial.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan Embedded Tutorial\n"
@@ -32,12 +32,38 @@ msgid ""
 "date: '2015-02-05T08:14:00.004-08:00'\n"
 "author: ttarrant\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3602830112570827523\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/02/infinispan-embedded-tutorial.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3602830112570827523\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/02/infinispan-embedded-"
+"tutorial.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan組み込みチュートリアル\n"
+"permalink: /blog/:year/:month/:day/infinispan-embedded-tutorial\n"
+"date: '2015-02-05T08:14:00.004-08:00'\n"
+"author: ttarrant\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3602830112570827523\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/02/infinispan-embedded-"
+"tutorial.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-02-05-infinispan-embedded-tutorial.adoc:18
-msgid "If you want to get your feet wet with Infinispan, but you thought the idea a bit daunting, you should worry no longer ! We have developed a very simple application which starts without Infinispan, and, step by step, grows into a fully-fledged distributed application complete with clustered listeners, externalizers and map/reduce. http://infinispan.org/tutorials/embedded/[Check it out] in our new http://infinispan.org/tutorials/[tutorials section]. We will soon be adding more tutorials exploring different aspects of Infinispan."
+#, fuzzy
+msgid ""
+"If you want to get your feet wet with Infinispan, but you thought the idea a "
+"bit daunting, you should worry no longer ! We have developed a very simple "
+"application which starts without Infinispan, and, step by step, grows into a "
+"fully-fledged distributed application complete with clustered listeners, "
+"externalizers and map/reduce. http://infinispan.org/tutorials/embedded/"
+"[Check it out] in our new http://infinispan.org/tutorials/[tutorials "
+"section]. We will soon be adding more tutorials exploring different aspects "
+"of Infinispan."
 msgstr ""
+"Infinispanを使ってみたいけど、ちょっと敷居が高いと思っていた方、もう心配しなくていいですよ！私たちは非常にシンプルなアプリケーションを開発しました。私たちは、Infinispanを使わずに始めた非常にシンプルなアプリケーションを開発しましたが、一歩ずつ成長して、クラスター化されたリスナー、外部ライザ、マップ/"
+"リデュースを備えた本格的な分散型アプリケーションへと成長していきます。新しいチュートリアルの link:http://infinispan.org/"
+"tutorials/[セクション] をご覧 link:http://infinispan.org/tutorials/embedded/[ください] "
+"。近いうちに、Infinispanの様々な側面を探求するチュートリアルを追加する予定です。"

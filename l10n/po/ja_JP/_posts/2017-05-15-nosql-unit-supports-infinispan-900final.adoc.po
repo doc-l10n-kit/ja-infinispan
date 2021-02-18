@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-05-15-nosql-unit-supports-infinispan-900final.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-15-nosql-unit-supports-infinispan-900final.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: NoSQL Unit supports Infinispan 9.0.0.Final\n"
@@ -34,42 +34,89 @@ msgid ""
 "tags: [ \"testing\",\n"
 "\"nosqlunit\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-246987077921909663\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/05/nosql-unit-supports-infinispan-900final.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"246987077921909663\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/05/nosql-unit-supports-"
+"infinispan-900final.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: NoSQLユニットはInfinispan 9.0.0.Finalをサポートしています。\n"
+"permalink: /blog/:year/:month/:day/nosql-unit-supports-infinispan-900final\n"
+"date: '2017-05-15T01:27:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"testing\",\n"
+"\"nosqlunit\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"246987077921909663\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/05/nosql-unit-supports-"
+"infinispan-900final.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-15-nosql-unit-supports-infinispan-900final.adoc:17
-msgid "https://github.com/lordofthejars/nosql-unit[NoSQL Unit] is a JUnit extension that helps you write NoSQL unit tests, created by https://github.com/lordofthejars[Alex Soto]. It brings the ideas first introduced by DBUnit to the world of NoSQL databases."
+#, fuzzy
+msgid ""
+"https://github.com/lordofthejars/nosql-unit[NoSQL Unit] is a JUnit extension "
+"that helps you write NoSQL unit tests, created by https://github.com/"
+"lordofthejars[Alex Soto]. It brings the ideas first introduced by DBUnit to "
+"the world of NoSQL databases."
 msgstr ""
+"link:https://github.com/lordofthejars/nosql-unit[NoSQL Unit] は、 link:https://"
+"github.com/lordofthejars[Alex Soto] によって作成された NoSQL ユニットテストを書くのに役立つ JUnit "
+"拡張モジュールです。DBUnit で最初に導入されたアイデアを NoSQL データベースの世界にもたらします。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-15-nosql-unit-supports-infinispan-900final.adoc:24
-msgid "The essence of DBUnit or NoSQL Unit is that before running each test, the persistence layer is found in a known state. This makes your test repeatable, independent of other test failures or potential database corruptions."
+#, fuzzy
+msgid ""
+"The essence of DBUnit or NoSQL Unit is that before running each test, the "
+"persistence layer is found in a known state. This makes your test "
+"repeatable, independent of other test failures or potential database "
+"corruptions."
 msgstr ""
+"DBUnit や NoSQL Unit "
+"の本質は、各テストを実行する前に永続化レイヤーが既知の状態であることを発見することにあります。これにより、他のテストの失敗や潜在的なデータベースの破損から独立して、テストの再現性を高めることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-15-nosql-unit-supports-infinispan-900final.adoc:31
-msgid "You can use NoSQL Unit for testing embedded or remote Infinispan instances, and since version 1.0.0-rc.5, which was released a https://twitter.com/alexsotob/status/859814663885910016[few days back], it supports the latest Infinispan 9.0.0.Final."
+#, fuzzy
+msgid ""
+"You can use NoSQL Unit for testing embedded or remote Infinispan instances, "
+"and since version 1.0.0-rc.5, which was released a https://twitter.com/"
+"alexsotob/status/859814663885910016[few days back], it supports the latest "
+"Infinispan 9.0.0.Final."
 msgstr ""
+"組み込みやリモートのInfinispanインスタンスのテストにNoSQL Unitを使うことができ、数日 link:https://twitter."
+"com/alexsotob/status/859814663885910016[前に] リリースされたバージョン1.0.0-rc."
+"5からは、最新のInfinispan 9.0.0.Finalに対応しています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-15-nosql-unit-supports-infinispan-900final.adoc:36
-msgid "We have a created a https://github.com/infinispan-demos/infinispan-nosqlunit-demo[little demo GitHub repository] showing you how to test Infinispan using NoSQL Unit. Go and give it a go! :)"
+#, fuzzy
+msgid ""
+"We have a created a https://github.com/infinispan-demos/infinispan-nosqlunit-"
+"demo[little demo GitHub repository] showing you how to test Infinispan using "
+"NoSQL Unit. Go and give it a go! :)"
 msgstr ""
+"NoSQL Unitを使用してInfinispanをテストする方法を示す link:https://github.com/infinispan-"
+"demos/infinispan-nosqlunit-demo[小さなデモGitHubリポジトリを] 作成しました。行って試してみてください。:)"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-15-nosql-unit-supports-infinispan-900final.adoc:40
+#, fuzzy
 msgid "Thanks Alex bringing NoSQL Unit to my attention!"
-msgstr ""
+msgstr "アレックスがNoSQL Unitを私に知らせてくれたことに感謝します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-15-nosql-unit-supports-infinispan-900final.adoc:44
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-15-nosql-unit-supports-infinispan-900final.adoc:45
+#, fuzzy
 msgid "Galder"
-msgstr ""
+msgstr "ガルダー"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-11-04-beta-is-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-11-04-beta-is-out.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: BETA is out!!\n"
@@ -32,32 +32,93 @@ msgid ""
 "date: '2010-11-04T04:40:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \" beta\", \"release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2360452941743062776\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2360452941743062776\n"
 "blogger_orig_url: https://blog.infinispan.org/2010/11/beta-is-out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: BETAが出ました!\n"
+"permalink: /blog/:year/:month/:day/beta-is-out\n"
+"date: '2010-11-04T04:40:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \" beta\", \"release\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2360452941743062776\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/11/beta-is-out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-11-04-beta-is-out.adoc:23
-msgid "I've just released the long-awaited first beta of Infinispan 4.2.0, codenamed _Ursus_.  The blocker that's been keeping Ursus in Alpha for so long - https://jira.jboss.org/browse/ISPN-180[ISPN-180] - is now complete and ready for you to take out for a spin.  Thanks to the work put in by Mircea and Vladimir, ISPN-180 adds support in the distribution algorithm to detect whether Infinispan instances are co-located on the same physical server (or even the same rack) and pick secondary owners of data with this knowledge in mind. This helps ensure maximum durability of data, so if physical machines - or even an entire rack - were to fail, data is not lost.  For more details on ISPN-180, have a look at http://community.jboss.org/wiki/ServerHinting[this wiki page] which details its use."
+#, fuzzy
+msgid ""
+"I've just released the long-awaited first beta of Infinispan 4.2.0, "
+"codenamed _Ursus_.  The blocker that's been keeping Ursus in Alpha for so "
+"long - https://jira.jboss.org/browse/ISPN-180[ISPN-180] - is now complete "
+"and ready for you to take out for a spin.  Thanks to the work put in by "
+"Mircea and Vladimir, ISPN-180 adds support in the distribution algorithm to "
+"detect whether Infinispan instances are co-located on the same physical "
+"server (or even the same rack) and pick secondary owners of data with this "
+"knowledge in mind. This helps ensure maximum durability of data, so if "
+"physical machines - or even an entire rack - were to fail, data is not lost. "
+" For more details on ISPN-180, have a look at http://community.jboss.org/"
+"wiki/ServerHinting[this wiki page] which details its use."
 msgstr ""
+"_Ursus_ と名付けられた Infinispan 4.2.0 の待望の最初のベータ版をリリースしました。 Ursus "
+"を長い間アルファ版にしていたブロッカー、ISPN link:https://jira.jboss.org/browse/ISPN-180[-180 は] "
+"完成し、あなたが試してみる準備が整いました。Mircea と Vladimir による作業のおかげで、ISPN-180 は、Infinispan "
+"インスタンスが同じ物理サーバ（または同じラック）上に同居しているかどうかを検出し、この知識を念頭に置いてデータのセカンダリーオーナーを選択するための配布アルゴリズムのサポートを追加しました。これにより、物理マシンやラック全体が故障してもデータが失われないように、データの耐久性を最大限に確保することができます。 "
+"ISPN-180の詳細については、その使用方法について詳しく説明した link:http://community.jboss.org/wiki/"
+"ServerHinting[wikiページを] ご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2010-11-04-beta-is-out.adoc:34
-msgid "The JOPR/RHQ plugin now works in multi cache manager environments (https://jira.jboss.org/browse/ISPN-675[ISPN-675]) and thanks to https://jira.jboss.org/browse/ISPN-754[ISPN-754], cache manager instances can be easily identified when using the JOPR/RHQ management GUI.  As a result of ISPN-754, JMX object names follow http://java.sun.com/javase/technologies/core/mntr-mgmt/javamanagement/best-practices.jsp[best practices] as set up by Sun/Oracle and so this means that object names exported to JMX have changed from this version onwards. See http://community.jboss.org/docs/DOC-14865[this wiki page] for detailed information."
+#, fuzzy
+msgid ""
+"The JOPR/RHQ plugin now works in multi cache manager environments (https://"
+"jira.jboss.org/browse/ISPN-675[ISPN-675]) and thanks to https://jira.jboss."
+"org/browse/ISPN-754[ISPN-754], cache manager instances can be easily "
+"identified when using the JOPR/RHQ management GUI.  As a result of ISPN-754, "
+"JMX object names follow http://java.sun.com/javase/technologies/core/mntr-"
+"mgmt/javamanagement/best-practices.jsp[best practices] as set up by Sun/"
+"Oracle and so this means that object names exported to JMX have changed from "
+"this version onwards. See http://community.jboss.org/docs/DOC-14865[this "
+"wiki page] for detailed information."
 msgstr ""
+"JOPR/RHQプラグインは、マルチキャッシュマネージャ環境 link:https://jira.jboss.org/browse/ISPN-"
+"675[（ISPN-675] ）で動作するようになり、 link:https://jira.jboss.org/browse/ISPN-754[ISPN-"
+"754] のおかげで、JOPR/RHQ管理GUIを使用する際にキャッシュマネージャインスタンスを容易に識別できるようになりました。 ISPN-"
+"754の結果、JMXのオブジェクト名はSun/Oracleが設定した link:http://java.sun.com/javase/"
+"technologies/core/mntr-mgmt/javamanagement/best-practices.jsp[ベストプラクティス] "
+"に従うようになったため、このバージョンからJMXにエクスポートされたオブジェクト名が変更されました。詳細は link:http://community."
+"jboss.org/docs/DOC-14865[こちらのwikiページを] 参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2010-11-04-beta-is-out.adoc:42
-msgid "For a list of all fixes since Alpha5, have a look at the https://jira.jboss.org/secure/ConfigureReport.jspa?atl_token=y7xdZj9voL&versions=12315564&sections=all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira.plugin.release-notes-report-plugin:releasenotes&Next=Next[release notes] in JIRA, and as always, download the release http://www.jboss.org/infinispan/downloads[here], and let us know what you think using http://community.jboss.org/en/infinispan?view=discussions[the user forums]."
+#, fuzzy
+msgid ""
+"For a list of all fixes since Alpha5, have a look at the https://jira.jboss."
+"org/secure/ConfigureReport.jspa?atl_token=y7xdZj9voL&versions="
+"12315564&sections=all&style=none&selectedProjectId=12310799&reportKey=org."
+"jboss.labs.jira.plugin.release-notes-report-plugin:releasenotes&Next="
+"Next[release notes] in JIRA, and as always, download the release http://www."
+"jboss.org/infinispan/downloads[here], and let us know what you think using "
+"http://community.jboss.org/en/infinispan?view=discussions[the user forums]."
 msgstr ""
+"Alpha5 以降のすべての修正のリストについては、JIRA の link:https://jira.jboss.org/secure/"
+"ConfigureReport.jspa?atl_token=y7xdZj9voL&versions=12315564&sections="
+"all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira."
+"plugin.release-notes-report-plugin:releasenotes&Next=Next[リリースノート] を見てください "
+"link:http://www.jboss.org/infinispan/downloads[。]"
 
 #. type: Plain text
 #: upstream/_posts/2010-11-04-beta-is-out.adoc:44
+#, fuzzy
 msgid "Onward to release candidate and final release phases!  :-)"
-msgstr ""
+msgstr "リリース候補と最終リリースに向けて!)"
 
 #. type: Plain text
 #: upstream/_posts/2010-11-04-beta-is-out.adoc:47
+#, fuzzy
 msgid "Enjoy, Manik"
-msgstr ""
+msgstr "楽しもう、マニク"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-12-14-maven-archetypes.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-14-maven-archetypes.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Maven Archetypes\n"
@@ -34,37 +34,85 @@ msgid ""
 "tags: [ \"archetype\",\n"
 "\"maven\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5841657906823405007\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5841657906823405007\n"
 "blogger_orig_url: https://blog.infinispan.org/2010/12/maven-archetypes.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: メイヴン・アーキタイプ\n"
+"permalink: /blog/:year/:month/:day/maven-archetypes\n"
+"date: '2010-12-14T10:26:00.000-08:00'\n"
+"author: msurtani\n"
+"tags: [ \"archetype\",\n"
+"\"maven\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5841657906823405007\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/12/maven-archetypes.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-14-maven-archetypes.adoc:20
-msgid "To help you jump-start a new project using Infinispan, we now have Maven Archetypes you can use.  If you don't know what a Maven Archetype is, you should read http://maven.apache.org/guides/introduction/introduction-to-archetypes.html[this article] which explains archetypes in more detail.  Of course, this assumes that you are using http://maven.apache.org/[Maven] as a build tool."
+#, fuzzy
+msgid ""
+"To help you jump-start a new project using Infinispan, we now have Maven "
+"Archetypes you can use.  If you don't know what a Maven Archetype is, you "
+"should read http://maven.apache.org/guides/introduction/introduction-to-"
+"archetypes.html[this article] which explains archetypes in more detail.  Of "
+"course, this assumes that you are using http://maven.apache.org/[Maven] as a "
+"build tool."
 msgstr ""
+"Infinispanを使用して新しいプロジェクトを開始するのに役立つように、使用できるMavenのアーキタイプが用意されています。 "
+"Mavenのアーキタイプがわからない場合は、アーキタイプについて詳しく説明しているこの link:http://maven.apache.org/"
+"guides/introduction/introduction-to-archetypes.html[記事] を読んでください。 "
+"もちろん、ビルドツールとしてMavenを使用していることを前提としています。"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-14-maven-archetypes.adoc:28
-msgid "We've created two separate archetypes for Infinispan.  The first sets you up with a clean, new directory structure and sample code for a new Infinispan project, including sample configuration files and skeleton code, as well as a Maven pom.xml descriptor containing all necessary dependencies."
+#, fuzzy
+msgid ""
+"We've created two separate archetypes for Infinispan.  The first sets you up "
+"with a clean, new directory structure and sample code for a new Infinispan "
+"project, including sample configuration files and skeleton code, as well as "
+"a Maven pom.xml descriptor containing all necessary dependencies."
 msgstr ""
+"最初のものは、サンプルの設定ファイルとスケルトンコード、必要な依存関係をすべて含むMaven pom."
+"xml記述子を含む、クリーンで新しいディレクトリ構造と新しいInfinispanプロジェクトのサンプルコードをセットアップします。"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-14-maven-archetypes.adoc:38
-msgid "The second archetype is targeted towards people using Infinispan and want to report bugs and contribute tests to the project.  It sets up a new project with a skeleton functional test, including all of Infinispan's test helper utilities to simulate network setup and failure from within a test.  More important, the generated skeleton test is structured such that it can easily be assimilated into Infinispan's core test suite if necessary."
+#, fuzzy
+msgid ""
+"The second archetype is targeted towards people using Infinispan and want to "
+"report bugs and contribute tests to the project.  It sets up a new project "
+"with a skeleton functional test, including all of Infinispan's test helper "
+"utilities to simulate network setup and failure from within a test.  More "
+"important, the generated skeleton test is structured such that it can easily "
+"be assimilated into Infinispan's core test suite if necessary."
 msgstr ""
+"2つ目のアーキタイプは、Infinispanを使用していて、バグを報告したり、プロジェクトにテストを貢献したいと考えている人を対象としています。 "
+"これは、テスト内からネットワークの設定や障害をシミュレートするためのInfinispanのテストヘルパーユーティリティをすべて含むスケルトン機能テストで新しいプロジェクトをセットアップします。 "
+"さらに重要なことは、生成されたスケルトンテストは、必要に応じてInfinispanのコアテストスイートに簡単に同化できるように構造化されていることです。"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-14-maven-archetypes.adoc:44
-msgid "For more information on these archetypes, including a simple step-by-step guide, read http://community.jboss.org/wiki/InfinispanMavenArchetypes"
+#, fuzzy
+msgid ""
+"For more information on these archetypes, including a simple step-by-step "
+"guide, read http://community.jboss.org/wiki/InfinispanMavenArchetypes"
 msgstr ""
+"簡単なステップバイステップのガイドを含む、これらのアーキタイプの詳細については、 http://community.jboss.org/wiki/"
+"InfinispanMavenArchetypes を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-14-maven-archetypes.adoc:48
+#, fuzzy
 msgid "Enjoy"
-msgstr ""
+msgstr "楽しむ"
 
 #. type: Plain text
 #: upstream/_posts/2010-12-14-maven-archetypes.adoc:49
+#, fuzzy
 msgid "Manik"
-msgstr ""
+msgstr "マニク"

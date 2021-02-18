@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-01-19-first-candidate-release-for-infinispan.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-19-first-candidate-release-for-infinispan.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: First candidate release for Infinispan 9.2.0 is out!\n"
@@ -32,62 +32,122 @@ msgid ""
 "date: '2018-01-19T06:00:00.001-08:00'\n"
 "author: galder\n"
 "tags: [ \" release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7422966149018611697\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/01/first-candidate-release-for-infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7422966149018611697\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/01/first-candidate-"
+"release-for-infinispan.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 9.2.0の最初の候補リリースが出ました!\n"
+"permalink: /blog/:year/:month/:day/first-candidate-release-for-infinispan\n"
+"date: '2018-01-19T06:00:00.001-08:00'\n"
+"author: galder\n"
+"tags: [ \" release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7422966149018611697\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/01/first-candidate-"
+"release-for-infinispan.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-19-first-candidate-release-for-infinispan.adoc:14
-msgid "Infinispan 9.2.0.CR1 is out! The Infinispan team took time off over the festive period but in spite of that we managed to pack in quite a bit as we approach Infinispan 9.2.0 final release."
+#, fuzzy
+msgid ""
+"Infinispan 9.2.0.CR1 is out! The Infinispan team took time off over the "
+"festive period but in spite of that we managed to pack in quite a bit as we "
+"approach Infinispan 9.2.0 final release."
 msgstr ""
+"Infinispan 9.2.0.CR1 がリリースされました。Infinispanチームはお祭り期間中にお休みをいただきましたが、Infinispan "
+"9.2.0の最終リリースに向けて、かなりの量を詰め込むことができました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-19-first-candidate-release-for-infinispan.adoc:16
+#, fuzzy
 msgid "Here are the highlights:"
-msgstr ""
+msgstr "ここでハイライトをご紹介します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-19-first-candidate-release-for-infinispan.adoc:20
-msgid "Remove listener in embedded only fired when something is actually removed - https://issues.jboss.org/browse/ISPN-8585[ISPN-8585]."
+#, fuzzy
+msgid ""
+"Remove listener in embedded only fired when something is actually removed - "
+"https://issues.jboss.org/browse/ISPN-8585[ISPN-8585]."
 msgstr ""
+"何かが実際に削除されたときにのみ発生する埋め込みリスナーの削除 - link:https://issues.jboss.org/browse/ISPN-"
+"8585[ISPN-858585] 。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-19-first-candidate-release-for-infinispan.adoc:24
-msgid "CacheNotFoundException ERROR message in server was deemed too noisy, so it was changed to DEBUG message. If RemoteCacheManager.getCache()  returns null, the cache does not exist - https://issues.jboss.org/browse/ISPN-8579[ISPN-8579]."
+#, fuzzy
+msgid ""
+"CacheNotFoundException ERROR message in server was deemed too noisy, so it "
+"was changed to DEBUG message. If RemoteCacheManager.getCache()  returns "
+"null, the cache does not exist - https://issues.jboss.org/browse/ISPN-"
+"8579[ISPN-8579]."
 msgstr ""
+"サーバ内のCacheNotFoundException "
+"ERRORメッセージがうるさいと判断したため、DEBUGメッセージに変更した。RemoteCacheManager."
+"getCache()がnullを返すとキャッシュが存在しない - link:https://issues.jboss.org/browse/ISPN-"
+"8579[ISPN-8579]"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-19-first-candidate-release-for-infinispan.adoc:26
-msgid "Infinispan is now compatible with JCache 1.1 - https://issues.jboss.org/browse/ISPN-8571[ISPN-8571]."
+#, fuzzy
+msgid ""
+"Infinispan is now compatible with JCache 1.1 - https://issues.jboss.org/"
+"browse/ISPN-8571[ISPN-8571]."
 msgstr ""
+"InfinispanがJCache 1.1 - link:https://issues.jboss.org/browse/ISPN-8571[ISPN-"
+"8571] に対応しました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-19-first-candidate-release-for-infinispan.adoc:29
-msgid "Hibernate 5.2 compatible Infinispan cache provider (on top of Hibernate 5.1 compatible provider) - https://issues.jboss.org/browse/ISPN-8570[ISPN-8570]."
+#, fuzzy
+msgid ""
+"Hibernate 5.2 compatible Infinispan cache provider (on top of Hibernate 5.1 "
+"compatible provider) - https://issues.jboss.org/browse/ISPN-8570[ISPN-8570]."
 msgstr ""
+"Hibernate 5.2対応のInfinispanキャッシュプロバイダ（Hibernate 5.1対応プロバイダの上） - link:https://"
+"issues.jboss.org/browse/ISPN-8570[ISPN-8570] 。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-19-first-candidate-release-for-infinispan.adoc:32
-msgid "http://infinispan.org/docs/dev/user_guide/user_guide.html#jpa_hibernate_2l_cache[Documentation] added on how to use Hibernate 5.2 and 5.1 Infinispan cache providers shipped with Infinispan 9.2."
+#, fuzzy
+msgid ""
+"http://infinispan.org/docs/dev/user_guide/user_guide."
+"html#jpa_hibernate_2l_cache[Documentation] added on how to use Hibernate 5.2 "
+"and 5.1 Infinispan cache providers shipped with Infinispan 9.2."
 msgstr ""
+"Infinispan 9.2に同梱されているHibernate 5.2および5.1 Infinispanキャッシュプロバイダの使用方法についての "
+"link:http://infinispan.org/docs/dev/user_guide/user_guide."
+"html#jpa_hibernate_2l_cache[ドキュメントを] 追加しました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-19-first-candidate-release-for-infinispan.adoc:36
-msgid "Full details of the new features and enhancements included in this release can be found https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12335609[here]."
+#, fuzzy
+msgid ""
+"Full details of the new features and enhancements included in this release "
+"can be found https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
+"12310799&version=12335609[here]."
 msgstr ""
+"このリリースに含まれる新機能と機能強化の詳細については、 link:https://issues.jboss.org/secure/"
+"ReleaseNote.jspa?projectId=12310799&version=12335609[こちらを] ご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-19-first-candidate-release-for-infinispan.adoc:38
+#, fuzzy
 msgid "Thank you for following us and stay tuned!"
-msgstr ""
+msgstr "フォローしていただきありがとうございます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-19-first-candidate-release-for-infinispan.adoc:42
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2018-01-19-first-candidate-release-for-infinispan.adoc:43
+#, fuzzy
 msgid "Galder"
-msgstr ""
+msgstr "ガルダー"

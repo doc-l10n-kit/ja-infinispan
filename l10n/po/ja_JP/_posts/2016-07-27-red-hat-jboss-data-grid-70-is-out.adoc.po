@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-07-27-red-hat-jboss-data-grid-70-is-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-27-red-hat-jboss-data-grid-70-is-out.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Red Hat JBoss Data Grid 7.0 is out\n"
@@ -36,27 +36,65 @@ msgid ""
 "\"announcement\",\n"
 "\"red hat\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5414685209686838007\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/07/red-hat-jboss-data-grid-70-is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5414685209686838007\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/07/red-hat-jboss-data-"
+"grid-70-is-out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Red Hat JBoss Data Grid 7.0 がリリースされました。\n"
+"permalink: /blog/:year/:month/:day/red-hat-jboss-data-grid-70-is-out\n"
+"date: '2016-07-27T23:51:00.001-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\",\n"
+"\"jdg\",\n"
+"\"announcement\",\n"
+"\"red hat\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5414685209686838007\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/07/red-hat-jboss-data-"
+"grid-70-is-out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-27-red-hat-jboss-data-grid-70-is-out.adoc:16
+#, fuzzy
 msgid "Dear Infinispan community,"
-msgstr ""
+msgstr "インフィニスパンのコミュニティへ"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-27-red-hat-jboss-data-grid-70-is-out.adoc:20
-msgid "Red Hat has just announced the http://red.ht/2avdCCf[general availability of Red Hat JBoss Data Grid 7.0], the commercially supported version of Infinispan."
+#, fuzzy
+msgid ""
+"Red Hat has just announced the http://red.ht/2avdCCf[general availability of "
+"Red Hat JBoss Data Grid 7.0], the commercially supported version of "
+"Infinispan."
 msgstr ""
+"Red Hatは、Infinispanの商用サポート版である link:http://red.ht/2avdCCf[Red Hat JBoss Data "
+"Grid 7.0の一般提供を] 発表したばかりです。"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-27-red-hat-jboss-data-grid-70-is-out.adoc:26
-msgid "Building on the solid foundation of Infinispan 8, JBoss Data Grid integrates with the rest of the Red Hat JBoss middleware platform to deliver top-notch long-term support, dedicated high-quality consulting and training services, and the best open-source expertise in the world."
+#, fuzzy
+msgid ""
+"Building on the solid foundation of Infinispan 8, JBoss Data Grid integrates "
+"with the rest of the Red Hat JBoss middleware platform to deliver top-notch "
+"long-term support, dedicated high-quality consulting and training services, "
+"and the best open-source expertise in the world."
 msgstr ""
+"Infinispan 8 の強固な基盤の上に構築された JBoss Data Grid は、Red Hat JBoss "
+"ミドルウェアプラットフォームの他の部分と統合されており、一流の長期サポート、高品質の専用コンサルティングおよびトレーニングサービス、世界最高のオープンソースの専門知識を提供します。"
 
 #. type: Plain text
 #: upstream/_posts/2016-07-27-red-hat-jboss-data-grid-70-is-out.adoc:31
-msgid "If you want to give it a spin, go to the https://www.redhat.com/en/technologies/jboss-middleware/data-grid[Red Hat JBoss Data Grid product page], where you will find download links for a free trial, documentation and more."
+#, fuzzy
+msgid ""
+"If you want to give it a spin, go to the https://www.redhat.com/en/"
+"technologies/jboss-middleware/data-grid[Red Hat JBoss Data Grid product "
+"page], where you will find download links for a free trial, documentation "
+"and more."
 msgstr ""
+"試してみたい方は、 link:https://www.redhat.com/en/technologies/jboss-middleware/data-"
+"grid[Red Hat JBoss Data Grid 製品ページ] にアクセスしてください。"

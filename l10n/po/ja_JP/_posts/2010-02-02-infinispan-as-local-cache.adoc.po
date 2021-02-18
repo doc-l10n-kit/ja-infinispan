@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:17
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan as a LOCAL cache\n"
@@ -38,66 +38,109 @@ msgid ""
 "\"second level cache provider\",\n"
 "\"ehcache\",\n"
 "]\n"
-"thumbnail: http://3.bp.blogspot.com/_ca0W9t-Ryos/S2hZiNeYXuI/AAAAAAAAA9g/S2x8rzncn4c/s72-c/local_puts_all_included.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5269275166795892814\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/02/infinispan-as-local-cache.html\n"
+"thumbnail: http://3.bp.blogspot.com/_ca0W9t-Ryos/S2hZiNeYXuI/AAAAAAAAA9g/"
+"S2x8rzncn4c/s72-c/local_puts_all_included.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5269275166795892814\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/02/infinispan-as-local-"
+"cache.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: LOCALキャッシュとしてのInfinispan\n"
+"permalink: /blog/:year/:month/:day/infinispan-as-local-cache\n"
+"date: '2010-02-02T08:09:00.000-08:00'\n"
+"author: msurtani\n"
+"tags: [ \"benchmarks\",\n"
+"\"jboss cache\",\n"
+"\"hibernate\",\n"
+"\"local mode\",\n"
+"\"second level cache provider\",\n"
+"\"ehcache\",\n"
+"]\n"
+"thumbnail: http://3.bp.blogspot.com/_ca0W9t-Ryos/S2hZiNeYXuI/AAAAAAAAA9g/"
+"S2x8rzncn4c/s72-c/local_puts_all_included.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5269275166795892814\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/02/infinispan-as-local-"
+"cache.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:21
-msgid "While Infinispan has got the distributed, in-memory data grid market firmly it in its sight, there is also another aspect of Infinispan which I feel people would find interesting."
+#, fuzzy
+msgid ""
+"While Infinispan has got the distributed, in-memory data grid market firmly "
+"it in its sight, there is also another aspect of Infinispan which I feel "
+"people would find interesting."
 msgstr ""
+"Infinispanは、分散型のインメモリデータグリッド市場をしっかりと把握していますが、Infinispanのもう一つの側面として、人々が興味を持ってくれると感じています。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:30
-msgid "At its heart Infinispan is a highly concurrent, extremely performant data structure than can be distributed, or could be used in a standalone, local mode - as a cache. But why would people use Infinispan over, say, a http://java.sun.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html[#ConcurrentHashMap#]? Here are some reasons."
+#, fuzzy
+msgid ""
+"At its heart Infinispan is a highly concurrent, extremely performant data "
+"structure than can be distributed, or could be used in a standalone, local "
+"mode - as a cache. But why would people use Infinispan over, say, a http://"
+"java.sun.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap."
+"html[#ConcurrentHashMap#]? Here are some reasons."
 msgstr ""
+"Infinispanの中核をなすのは、非常に同時実行性が高く、非常にパフォーマンスの高いデータ構造であり、分散することも、スタンドアロンでローカルモードでキャッシュとして使用することもできます。しかし、なぜ "
+"link:http://java.sun.com/javase/6/docs/api/java/util/concurrent/"
+"ConcurrentHashMap.html[ConcurrentHashMap] "
+"よりもInfinispanを使うのでしょうか？その理由をいくつか挙げてみましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:34
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*_#Feature-rich#_*\n"
-msgstr ""
+msgstr "* _機能が豊富_ *"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:36
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Eviction.* Built-in eviction ensures you don't run out of memory.\n"
-msgstr ""
+msgstr "*エビクション。* 内蔵のイビクションにより、メモリを使い切ることがありません。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:41
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Write-through and write-behind caching.* Going beyond memory and onto\n"
 "disk (or any other pluggable\n"
-"http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/loaders/CacheStore.html[#CacheStore#])\n"
+"http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/loaders/"
+"CacheStore.html[#CacheStore#])\n"
 "means that your state survives restarts, and preloaded hot caches can be\n"
 "configured.\n"
 msgstr ""
+"*ライト・スルーおよびライト・ビハインド・キャッシング。* メモリを超えてディスク (または他のプラグイン可能な link:http://docs."
+"jboss.org/infinispan/4.0/apidocs/org/infinispan/loaders/CacheStore."
+"html[CacheStore] ) 上に移動すると、状態が再起動に耐えられるようになり、プリロードされたホット・キャッシュを構成することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:45
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*JTA support and XA compliance.* Participate in ongoing transactions\n"
 "with any\n"
 "http://java.sun.com/javaee/technologies/jta/index.jsp[JTA]-compliant\n"
 "transaction manager.\n"
 msgstr ""
+"*JTAのサポートとXAコンプライアンス。* 任意の link:http://java.sun.com/javaee/technologies/jta/"
+"index.jsp[JTA] 準拠のトランザクションマネージャーとの進行中のトランザクションに参加する。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:47
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*MVCC-based concurrency.* Highly optimized for fast, non-blocking\n"
 "readers.\n"
-msgstr ""
+msgstr "*MVCCベースの同時実行。* 高速でノンブロッキングなリーダーのために高度に最適化されています。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:52
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Manageability.*\n"
 "http://docs.jboss.org/infinispan/4.0/apidocs/jmxComponents.html[Simple\n"
@@ -105,10 +148,13 @@ msgid ""
 "http://community.jboss.org/wiki/MonitoringInfinispanwithJOPR[JOPR], you\n"
 "have a choice.\n"
 msgstr ""
+"*管理性。* link:http://docs.jboss.org/infinispan/4.0/apidocs/jmxComponents."
+"html[シンプルなJMX] または link:http://community.jboss.org/wiki/"
+"MonitoringInfinispanwithJOPR[JOPRを] 介したリッチなGUI管理コンソール、あなたは選択することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:59
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Not just for the JVM.*\n"
 "http://community.jboss.org/wiki/InfinispanRESTserver[RESTful API], and\n"
@@ -118,22 +164,29 @@ msgid ""
 "http://community.jboss.org/wiki/HotRodProtocol[HotRod] protocols help\n"
 "non-JVM platforms use Infinispan.\n"
 msgstr ""
+"*JVMだけではありません。* link:http://community.jboss.org/wiki/"
+"InfinispanRESTserver[RESTful API] 、およびMemcachedと link:http://community.jboss."
+"org/wiki/HotRodProtocol[HotRod] プロトコルを使用した今後の link:http://community.jboss."
+"org/wiki/Clientandservermodules[クライアント/サーバモジュールは] "
+"、非JVMプラットフォームがInfinispanを使用するのに役立ちます。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:60
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Cluster-ready.* Should the need arise.\n"
-msgstr ""
+msgstr "*クラスタの準備ができています。* 必要に応じて。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:62
+#, fuzzy
 msgid "_*#Easy to configure, easy to use#*_"
-msgstr ""
+msgstr "_*設定が簡単で使いやすい_ *。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:64
+#, fuzzy
 msgid "The simplest configuration file containing just"
-msgstr ""
+msgstr "だけを含む最もシンプルな設定ファイルは"
 
 #. type: delimited block -
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:68
@@ -143,70 +196,149 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:74
-msgid "is enough to get you started, with sensible defaults abound. (More detailed documentation is http://docs.jboss.org/infinispan/4.0/apidocs/config.html[also available])."
+#, fuzzy
+msgid ""
+"is enough to get you started, with sensible defaults abound. (More detailed "
+"documentation is http://docs.jboss.org/infinispan/4.0/apidocs/config."
+"html[also available])."
 msgstr ""
+"を使用するだけで十分です。(より詳細なドキュメントもあり link:http://docs.jboss.org/infinispan/4.0/"
+"apidocs/config.html[ます] )。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:88
-msgid "All the features above are exposed via an easy-to-use http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/Cache.html[#Cache#] interface, which extends http://java.sun.com/javase/6/docs/api/java/util/concurrent/ConcurrentMap.html[#ConcurrentMap#] and is compatible with many other cache systems. Infinispan even ships with http://community.jboss.org/wiki/ConfigurationMigrationTools[migration tools] to help you move off other cache solutions onto Infinispan, whether you need a cache to store data retrieved remotely or simply as a http://community.jboss.org/wiki/usinginfinispanasjpahibernatesecondlevelcacheprovider[2nd level cache for Hibernate]."
+#, fuzzy
+msgid ""
+"All the features above are exposed via an easy-to-use http://docs.jboss.org/"
+"infinispan/4.0/apidocs/org/infinispan/Cache.html[#Cache#] interface, which "
+"extends http://java.sun.com/javase/6/docs/api/java/util/concurrent/"
+"ConcurrentMap.html[#ConcurrentMap#] and is compatible with many other cache "
+"systems. Infinispan even ships with http://community.jboss.org/wiki/"
+"ConfigurationMigrationTools[migration tools] to help you move off other "
+"cache solutions onto Infinispan, whether you need a cache to store data "
+"retrieved remotely or simply as a http://community.jboss.org/wiki/"
+"usinginfinispanasjpahibernatesecondlevelcacheprovider[2nd level cache for "
+"Hibernate]."
 msgstr ""
+"上記のすべての機能は、使いやすい link:http://docs.jboss.org/infinispan/4.0/apidocs/org/"
+"infinispan/Cache.html[Cache] インターフェースを介して公開されており、 link:http://java.sun.com/"
+"javase/6/docs/api/java/util/concurrent/ConcurrentMap.html[ConcurrentMap] "
+"を拡張し、他の多くのキャッシュシステムと互換性があります。 link:http://community.jboss.org/wiki/"
+"usinginfinispanasjpahibernatesecondlevelcacheprovider[Infinispan] "
+"には、他のキャッシュソリューションをInfinispanに移行するための link:http://community.jboss.org/wiki/"
+"ConfigurationMigrationTools[移行ツールも] 同梱されています。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:92
+#, fuzzy
 msgid "_*#Performance#*_"
-msgstr ""
+msgstr "_*パフォーマンス_"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:98
-msgid "In the process of testing and tuning Infinispan on very large clusters, we have started to put together a http://cachebenchfwk.sourceforge.net/[benchmarking framework]. As a part of this framework, we have the ability to measure cache performance in standalone, local mode. So in the context of this blog post, I'd"
+#, fuzzy
+msgid ""
+"In the process of testing and tuning Infinispan on very large clusters, we "
+"have started to put together a http://cachebenchfwk.sourceforge.net/"
+"[benchmarking framework]. As a part of this framework, we have the ability "
+"to measure cache performance in standalone, local mode. So in the context of "
+"this blog post, I'd"
 msgstr ""
+"非常に大規模なクラスタ上でInfinispanをテストし、チューニングする過程で、ベンチマークの link:http://cachebenchfwk."
+"sourceforge.net/[フレームワーク] "
+"をまとめ始めました。このフレームワークの一部として、スタンドアロン、ローカルモードでキャッシュ性能を測定する機能を持っています。そこで、このブログ記事の文脈では"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:102
-msgid "like to share some recent performance numbers of Infinispan - a recent snapshot - compared against the latest JBoss Cache release (3.2.2.GA)  and EHCache (1.7.2). Some background on the tests:"
+#, fuzzy
+msgid ""
+"like to share some recent performance numbers of Infinispan - a recent "
+"snapshot - compared against the latest JBoss Cache release (3.2.2.GA)  and "
+"EHCache (1.7.2). Some background on the tests:"
 msgstr ""
+"最新の JBoss Cache リリース (3.2.2.2.GA) と EHCache (1.7.2) と比較した Infinispan - "
+"最近のスナップショット - のパフォーマンス数値を共有したいと思います。テストの背景をいくつか紹介します。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:105
-msgid "Used a latest snapshot of the http://cachebenchfwk.sourceforge.net/[CacheBenchFwk]"
+#, fuzzy
+msgid ""
+"Used a latest snapshot of the http://cachebenchfwk.sourceforge.net/"
+"[CacheBenchFwk]"
 msgstr ""
+"link:http://cachebenchfwk.sourceforge.net/[CacheBenchFwk] "
+"の最新のスナップショットを使用しました。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:107
-msgid "Run on a http://www.redhat.com/rhel/[RHEL] 5 server with 4 Intel Xeon cores, 4GB of RAM"
+#, fuzzy
+msgid ""
+"Run on a http://www.redhat.com/rhel/[RHEL] 5 server with 4 Intel Xeon cores, "
+"4GB of RAM"
 msgstr ""
+"4つのIntel Xeonコア、4GBのRAMを搭載した link:http://www.redhat.com/rhel/[RHEL] "
+"5サーバ上での実行"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:108
+#, fuzzy
 msgid "Sun JDK 1.6.0_18, with #-Xms1g -Xmx1g#"
-msgstr ""
+msgstr "Sun JDK 1.6.0_18,-Xms1g -Xmx1gを使用"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:111
-msgid "Test run on a single node, with 25 concurrent threads, using randomly generated Strings as keys and values and a 1kb payload for each entry, with a 80/20 read/write ratio."
+#, fuzzy
+msgid ""
+"Test run on a single node, with 25 concurrent threads, using randomly "
+"generated Strings as keys and values and a 1kb payload for each entry, with "
+"a 80/20 read/write ratio."
 msgstr ""
+"キーと値としてランダムに生成されたStringsを使用し、各エントリに1kbのペイロードを使用し、80/20の読取り/"
+"書込み比率で、単一ノード上で25のスレッドを同時にテスト実行。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:112
+#, fuzzy
 msgid "Performance measured in transactions per second (higher = better)."
-msgstr ""
+msgstr "パフォーマンスは、1 秒あたりのトランザクション数で測定されます（高い方が良い）。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:114
-msgid "http://lh5.ggpht.com/_ca0W9t-Ryos/S2hZiNeYXuI/AAAAAAAAA9g/S2x8rzncn4c/local_puts_all_included.png[image:http://3.bp.blogspot.com/_ca0W9t-Ryos/S2hZiNeYXuI/AAAAAAAAA9g/S2x8rzncn4c/s400/local_puts_all_included.png[image]]http://lh5.ggpht.com/_ca0W9t-Ryos/S2hhquciCeI/AAAAAAAAA-A/_QV9adRs9pI/local_gets_all_included.png[image:http://4.bp.blogspot.com/_ca0W9t-Ryos/S2hZLhCbDaI/AAAAAAAAA9Y/ofGNnjxmdBw/s400/local_gets_all_included.png[image]]"
+#, fuzzy
+msgid ""
+"http://lh5.ggpht.com/_ca0W9t-Ryos/S2hZiNeYXuI/AAAAAAAAA9g/S2x8rzncn4c/"
+"local_puts_all_included.png[image:http://3.bp.blogspot.com/_ca0W9t-Ryos/"
+"S2hZiNeYXuI/AAAAAAAAA9g/S2x8rzncn4c/s400/local_puts_all_included."
+"png[image]]http://lh5.ggpht.com/_ca0W9t-Ryos/S2hhquciCeI/AAAAAAAAA-A/"
+"_QV9adRs9pI/local_gets_all_included.png[image:http://4.bp.blogspot.com/"
+"_ca0W9t-Ryos/S2hZLhCbDaI/AAAAAAAAA9Y/ofGNnjxmdBw/s400/"
+"local_gets_all_included.png[image]]"
 msgstr ""
+"link:http://lh5.ggpht.com/_ca0W9t-Ryos/S2hZiNeYXuI/AAAAAAAAA9g/S2x8rzncn4c/"
+"local_puts_all_included.png[] http://lh5.ggpht.com/_ca0W9t-Ryos/S2hhquciCeI/"
+"AAAAAAAAA-A/_QV9adRs9pI/local_gets_all_included.png[image:http://4.bp."
+"blogspot.com/_ca0W9t-Ryos/S2hZLhCbDaI/AAAAAAAAA9Y/ofGNnjxmdBw/s400/"
+"local_gets_all_included.png[alt=\"image\"]]"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:120
-msgid "In summary, what we have here is that when run in local mode, Infinispan is a high-performance standalone caching engine which offers a rich set of features while still being trivially simple to configure and use."
+#, fuzzy
+msgid ""
+"In summary, what we have here is that when run in local mode, Infinispan is "
+"a high-performance standalone caching engine which offers a rich set of "
+"features while still being trivially simple to configure and use."
 msgstr ""
+"要約すると、ローカルモードで実行した場合、Infinispan "
+"は高性能なスタンドアロン型キャッシングエンジンであり、豊富な機能を提供する一方で、設定や使用が非常に簡単であるということです。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:124
+#, fuzzy
 msgid "Enjoy,"
-msgstr ""
+msgstr "楽しんでください。"
 
 #. type: Plain text
 #: upstream/_posts/2010-02-02-infinispan-as-local-cache.adoc:126
+#, fuzzy
 msgid "Manik"
-msgstr ""
+msgstr "マニク"

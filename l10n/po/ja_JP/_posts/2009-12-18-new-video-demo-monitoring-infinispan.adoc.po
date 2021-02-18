@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-12-18-new-video-demo-monitoring-infinispan.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-12-18-new-video-demo-monitoring-infinispan.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: 'New video demo: Monitoring Infinispan with Jopr console'\n"
@@ -36,32 +36,83 @@ msgid ""
 "\"video\",\n"
 "\"jopr\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7433893302351223317\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/12/new-video-demo-monitoring-infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7433893302351223317\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/12/new-video-demo-"
+"monitoring-infinispan.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: '新しいビデオデモ。JoprコンソールでInfinispanを監視する\n"
+"permalink: /blog/:year/:month/:day/new-video-demo-monitoring-infinispan\n"
+"date: '2009-12-18T07:43:00.000-08:00'\n"
+"author: galder\n"
+"tags: [ \"monitoring\",\n"
+"\"demo\",\n"
+"\"video\",\n"
+"\"jopr\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7433893302351223317\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/12/new-video-demo-"
+"monitoring-infinispan.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-12-18-new-video-demo-monitoring-infinispan.adoc:19
-msgid "Over the past few weeks, I've been https://jira.jboss.org/jira/secure/IssueNavigator.jspa?reset=true&&fixfor=12314279&fixfor=12314154&fixfor=12313671&pid=12310799&resolution=1&component=12312424&assigneeSelect=issue_current_user&sorter/field=issuekey&sorter/order=DESC[working on improving how Infinispan is managed and/or monitored] and I can finally share some of the results of that effort with you."
+#, fuzzy
+msgid ""
+"Over the past few weeks, I've been https://jira.jboss.org/jira/secure/"
+"IssueNavigator.jspa?reset=true&&fixfor=12314279&fixfor=12314154&fixfor="
+"12313671&pid=12310799&resolution=1&component=12312424&assigneeSelect="
+"issue_current_user&sorter/field=issuekey&sorter/order=DESC[working on "
+"improving how Infinispan is managed and/or monitored] and I can finally "
+"share some of the results of that effort with you."
 msgstr ""
+"ここ数週間、私は link:https://jira.jboss.org/jira/secure/IssueNavigator.jspa?reset="
+"true&&fixfor=12314279&fixfor=12314154&fixfor=12313671&pid="
+"12310799&resolution=1&component=12312424&assigneeSelect="
+"issue_current_user&sorter/field=issuekey&sorter/order="
+"DESC[Infinispanの管理・監視方法の改善に取り組んで] きましたが、ようやくその成果の一部を皆様と共有することができました。"
 
 #. type: Plain text
 #: upstream/_posts/2009-12-18-new-video-demo-monitoring-infinispan.adoc:25
-msgid "In the coming weeks, I'll be sharing some in-depth flash movies explaining everything from installing http://www.jboss.org/jopr[Jopr], our enterprise management solution for JBoss middleware, to installing the Infinispan Jopr plugin, discovering Infinispan instances automatically or manually...etc"
+#, fuzzy
+msgid ""
+"In the coming weeks, I'll be sharing some in-depth flash movies explaining "
+"everything from installing http://www.jboss.org/jopr[Jopr], our enterprise "
+"management solution for JBoss middleware, to installing the Infinispan Jopr "
+"plugin, discovering Infinispan instances automatically or manually...etc"
 msgstr ""
+"今後数週間の間に、JBossミドルウェアのエンタープライズ管理ソリューションである link:http://www.jboss.org/"
+"jopr[Jopr] のインストールから、Infinispan "
+"Joprプラグインのインストール、Infinispanインスタンスの自動または手動での検出まで、詳細なフラッシュムービーを公開していきたいと思います。"
 
 #. type: Plain text
 #: upstream/_posts/2009-12-18-new-video-demo-monitoring-infinispan.adoc:32
-msgid "However, before that, I'd like to share a video demo with you where I briefly show a three-node Infinispan cluster being monitored. It demonstrates graphical measurements, and non-graphical information of running Infinispan instances, addition or removal of monitored metrics and finally, execution of management operations on a Infinispan instance."
+#, fuzzy
+msgid ""
+"However, before that, I'd like to share a video demo with you where I "
+"briefly show a three-node Infinispan cluster being monitored. It "
+"demonstrates graphical measurements, and non-graphical information of "
+"running Infinispan instances, addition or removal of monitored metrics and "
+"finally, execution of management operations on a Infinispan instance."
 msgstr ""
+"しかし、その前に、3ノードのInfinispanクラスタを監視している様子を簡単にビデオデモで紹介したいと思います。グラフィカルな測定値とInfinispanインスタンスの実行中の非グラフィカルな情報、監視するメトリクスの追加や削除、そして最後にInfinispanインスタンス上での管理操作の実行をデモしています。"
 
 #. type: Plain text
 #: upstream/_posts/2009-12-18-new-video-demo-monitoring-infinispan.adoc:39
-msgid "The Infinispan version used in the video was a snapshot of Infinispan 4.0.0, but you should be able to replicate what's shown in the video with Infinispan 4.0.0.CR3 or higher."
+#, fuzzy
+msgid ""
+"The Infinispan version used in the video was a snapshot of Infinispan 4.0.0, "
+"but you should be able to replicate what's shown in the video with "
+"Infinispan 4.0.0.CR3 or higher."
 msgstr ""
+"動画で使用しているInfinispanのバージョンはInfinispan 4.0.0.0のスナップショットですが、Infinispan 4.0.0.0."
+"CR3以上で動画の内容を再現することができるはずです。"
 
 #. type: Plain text
 #: upstream/_posts/2009-12-18-new-video-demo-monitoring-infinispan.adoc:40
+#, fuzzy
 msgid "Enjoy :)"
-msgstr ""
+msgstr "お楽しみに :)"

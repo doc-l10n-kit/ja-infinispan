@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-06-24-infinispan-jazoon.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-24-infinispan-jazoon.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan @ jazoon\n"
@@ -32,32 +32,65 @@ msgid ""
 "date: '2011-06-24T12:28:00.000-07:00'\n"
 "author: mmarkus\n"
 "tags: [ \" conference\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-9133938496004269017\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"9133938496004269017\n"
 "blogger_orig_url: https://blog.infinispan.org/2011/06/infinispan-jazoon.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: インフィニスパン＠ジャズーン\n"
+"permalink: /blog/:year/:month/:day/infinispan-jazoon\n"
+"date: '2011-06-24T12:28:00.000-07:00'\n"
+"author: mmarkus\n"
+"tags: [ \" conference\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"9133938496004269017\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/06/infinispan-jazoon.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-24-infinispan-jazoon.adoc:17
-msgid "I've just returned from Jazoon where I http://jazoon.com/Conference/Wednesday-22-June/Mircea-Markus[spoke about] in-memory data grids/Infinispan and how can they be used to complement or even replace databases. There was a good and enthusiastic crowd, and the discussions ended late in the night - of course cooled down by cold swiss beer :)"
+#, fuzzy
+msgid ""
+"I've just returned from Jazoon where I http://jazoon.com/Conference/"
+"Wednesday-22-June/Mircea-Markus[spoke about] in-memory data grids/Infinispan "
+"and how can they be used to complement or even replace databases. There was "
+"a good and enthusiastic crowd, and the discussions ended late in the night - "
+"of course cooled down by cold swiss beer :)"
 msgstr ""
+"インメモリデータグリッド/Infinispanと、それらをどのようにしてデータベースを補完したり、データベースに置き換えたりすることができるか link:"
+"http://jazoon.com/Conference/Wednesday-22-June/Mircea-Markus[について講演し] "
+"ました。熱心で熱心な参加者がいて、議論は夜遅くに終わりました。)"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-24-infinispan-jazoon.adoc:22
-msgid "Infinispan was also present in Hardy Ferentschik http://jazoon.com/Conference/Wednesday-22-June/Hardy-Ferentschik[presentation] about Hibernate OGM: the bran new JBoss project which exposes the grid ( to be read Infinispan) through Hibernate's API."
+#, fuzzy
+msgid ""
+"Infinispan was also present in Hardy Ferentschik http://jazoon.com/"
+"Conference/Wednesday-22-June/Hardy-Ferentschik[presentation] about Hibernate "
+"OGM: the bran new JBoss project which exposes the grid ( to be read "
+"Infinispan) through Hibernate's API."
 msgstr ""
+"Infinispanはまた、HibernateのAPIを介してグリッド（Infinispanを読むために）を公開する真新しいJBossプロジェクト：Hibernate "
+"OGMについてのHardy Ferentschikの link:http://jazoon.com/Conference/Wednesday-22-"
+"June/Hardy-Ferentschik[プレゼンテーション] に参加しました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-24-infinispan-jazoon.adoc:27
-msgid "Thank to Jazoon organizers for an excellent conference and the chance to meet other enthusiasts from all over the world!"
-msgstr ""
+#, fuzzy
+msgid ""
+"Thank to Jazoon organizers for an excellent conference and the chance to "
+"meet other enthusiasts from all over the world!"
+msgstr "素晴らしいカンファレンスと世界中の愛好家と出会う機会を与えてくれたJazoonの主催者に感謝します。"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-24-infinispan-jazoon.adoc:31
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2011-06-24-infinispan-jazoon.adoc:32
+#, fuzzy
 msgid "Mircea"
-msgstr ""
+msgstr "ミルチェア"

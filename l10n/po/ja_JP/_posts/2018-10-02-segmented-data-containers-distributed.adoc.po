@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: 'Segmented Data Containers: Distributed Stream Performance Boost'\n"
@@ -32,144 +32,312 @@ msgid ""
 "date: '2018-10-02T11:11:00.000-07:00'\n"
 "author: wburns\n"
 "tags: [ \" streams\", \"segmented\", \"data container\", \"performance\" ]\n"
-"thumbnail: https://2.bp.blogspot.com/-5FopP39_Z6k/W7O94C_HrAI/AAAAAAAAeDM/xWnwzer_RP8gQBlZvDI5MOY-Qroof7S_gCLcBGAs/s72-c/NonSegmentedData.jpg\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3069540324882598954\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/10/segmented-data-containers-distributed.html\n"
+"thumbnail: https://2.bp.blogspot.com/-5FopP39_Z6k/W7O94C_HrAI/AAAAAAAAeDM/"
+"xWnwzer_RP8gQBlZvDI5MOY-Qroof7S_gCLcBGAs/s72-c/NonSegmentedData.jpg\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3069540324882598954\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/10/segmented-data-"
+"containers-distributed.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 'セグメント化されたデータコンテナ。分散ストリームのパフォーマンス向上\n"
+"permalink: /blog/:year/:month/:day/segmented-data-containers-distributed\n"
+"date: '2018-10-02T11:11:00.000-07:00'\n"
+"author: wburns\n"
+"tags: [ \" streams\", \"segmented\", \"data container\", \"performance\" ]\n"
+"thumbnail: https://2.bp.blogspot.com/-5FopP39_Z6k/W7O94C_HrAI/AAAAAAAAeDM/"
+"xWnwzer_RP8gQBlZvDI5MOY-Qroof7S_gCLcBGAs/s72-c/NonSegmentedData.jpg\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3069540324882598954\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/10/segmented-data-"
+"containers-distributed.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:19
-msgid "Welcome to the first of several blog posts that describe the segmentation of containers that Infinispan uses to store data. Some of you may have noticed in the previous https://blog.infinispan.org/2018/06/infinispan-930final-is-out.html[9.3.0.Final notes] that we announced a new feature named “Segmented On-Heap Data Container”. We also mentioned that “It improves performance of stream operations”, but what does that really mean?"
+#, fuzzy
+msgid ""
+"Welcome to the first of several blog posts that describe the segmentation of "
+"containers that Infinispan uses to store data. Some of you may have noticed "
+"in the previous https://blog.infinispan.org/2018/06/infinispan-930final-is-"
+"out.html[9.3.0.Final notes] that we announced a new feature named “Segmented "
+"On-Heap Data Container”. We also mentioned that “It improves performance of "
+"stream operations”, but what does that really mean?"
 msgstr ""
+"Infinispanがデータを保存するために使用するコンテナのセグメンテーションについて説明するいくつかのブログ記事の第一回目へようこそ。前回の "
+"link:https://blog.infinispan.org/2018/06/infinispan-930final-is-out.html[9.3."
+"0.Finalノート] "
+"で「セグメント化されたオンヒープデータコンテナ」という新機能を発表したことにお気づきの方もいらっしゃるかもしれません。また、「ストリーム操作のパフォーマンスを向上させる」とも述べましたが、実際にはどういった意味があるのでしょうか？"
 
 #. type: Title ==
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:21
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What is a segmented data container and why does it matter? "
-msgstr ""
+msgstr "セグメント化されたデータコンテナとは何か、なぜそれが重要なのか？"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:26
-msgid "Imagine a cluster of 4 nodes in distributed mode (numOwners = 2) with entries for k0 - k13. It might look like this:"
+#, fuzzy
+msgid ""
+"Imagine a cluster of 4 nodes in distributed mode (numOwners = 2) with "
+"entries for k0 - k13. It might look like this:"
 msgstr ""
+"k0 ～ k13 のエントリを持つ分散モード (numOwners = 2) の 4 "
+"つのノードのクラスタを想像してみてください。このようになるかもしれません。"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:29
-msgid "https://2.bp.blogspot.com/-5FopP39_Z6k/W7O94C_HrAI/AAAAAAAAeDM/xWnwzer_RP8gQBlZvDI5MOY-Qroof7S_gCLcBGAs/s1600/NonSegmentedData.jpg[image:https://2.bp.blogspot.com/-5FopP39_Z6k/W7O94C_HrAI/AAAAAAAAeDM/xWnwzer_RP8gQBlZvDI5MOY-Qroof7S_gCLcBGAs/s640/NonSegmentedData.jpg[image,width=640,height=568]]"
+#, fuzzy
+msgid ""
+"https://2.bp.blogspot.com/-5FopP39_Z6k/W7O94C_HrAI/AAAAAAAAeDM/"
+"xWnwzer_RP8gQBlZvDI5MOY-Qroof7S_gCLcBGAs/s1600/NonSegmentedData.jpg[image:"
+"https://2.bp.blogspot.com/-5FopP39_Z6k/W7O94C_HrAI/AAAAAAAAeDM/"
+"xWnwzer_RP8gQBlZvDI5MOY-Qroof7S_gCLcBGAs/s640/NonSegmentedData."
+"jpg[image,width=640,height=568]]"
 msgstr ""
+"link:https://2.bp.blogspot.com/-5FopP39_Z6k/W7O94C_HrAI/AAAAAAAAeDM/"
+"xWnwzer_RP8gQBlZvDI5MOY-Qroof7S_gCLcBGAs/s1600/NonSegmentedData.jpg[]"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:38
-msgid "The data is distributed between the nodes with only two copies of each entry available. However, the data itself is stored internally in the same Map instance. As a result, when performing operations on all entries in the cache, Infinispan must iterate over the same data multiple times. This degrades performance."
+#, fuzzy
+msgid ""
+"The data is distributed between the nodes with only two copies of each entry "
+"available. However, the data itself is stored internally in the same Map "
+"instance. As a result, when performing operations on all entries in the "
+"cache, Infinispan must iterate over the same data multiple times. This "
+"degrades performance."
 msgstr ""
+"データはノード間で分散され、各エントリのコピーは 2 つしか利用できません。ただし、データ自体は同じ Map "
+"インスタンスに内部的に格納されます。その結果、キャッシュ内のすべてのエントリに対して操作を実行する場合、Infinispan "
+"は同じデータを複数回繰り返し実行する必要があります。これはパフォーマンスを低下させます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:42
-msgid "As of Infinispan 9.3, a segmented data container is available to separate data by segments. Although only on-heap bounded and unbounded implementations are currently available."
+#, fuzzy
+msgid ""
+"As of Infinispan 9.3, a segmented data container is available to separate "
+"data by segments. Although only on-heap bounded and unbounded "
+"implementations are currently available."
 msgstr ""
+"Infinispan 9."
+"3では、セグメント別にデータを分離するためのセグメント化されたデータコンテナが利用できるようになりました。現在はオンヒープのバウンデッドとアンバウンデッドの実装しかありませんが。"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:45
-msgid "With a segmented data container, that same data set might look like this:"
-msgstr ""
+#, fuzzy
+msgid ""
+"With a segmented data container, that same data set might look like this:"
+msgstr "セグメント化されたデータコンテナを使用すると、同じデータセットは次のようになります。"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:48
-msgid "https://2.bp.blogspot.com/-7S1k7hNmrHI/W7O99geUbkI/AAAAAAAAeDQ/k5tbJq0w22ovQxpNG2uXcMIV63HIvz4MQCLcBGAs/s1600/SegmentedData.jpg[image:https://2.bp.blogspot.com/-7S1k7hNmrHI/W7O99geUbkI/AAAAAAAAeDQ/k5tbJq0w22ovQxpNG2uXcMIV63HIvz4MQCLcBGAs/s640/SegmentedData.jpg[image,width=640,height=562]]"
+#, fuzzy
+msgid ""
+"https://2.bp.blogspot.com/-7S1k7hNmrHI/W7O99geUbkI/AAAAAAAAeDQ/"
+"k5tbJq0w22ovQxpNG2uXcMIV63HIvz4MQCLcBGAs/s1600/SegmentedData.jpg[image:https:"
+"//2.bp.blogspot.com/-7S1k7hNmrHI/W7O99geUbkI/AAAAAAAAeDQ/"
+"k5tbJq0w22ovQxpNG2uXcMIV63HIvz4MQCLcBGAs/s640/SegmentedData.jpg[image,width="
+"640,height=562]]"
 msgstr ""
+"link:https://2.bp.blogspot.com/-7S1k7hNmrHI/W7O99geUbkI/AAAAAAAAeDQ/"
+"k5tbJq0w22ovQxpNG2uXcMIV63HIvz4MQCLcBGAs/s1600/SegmentedData.jpg[]"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:56
-msgid "Because Infinispan internally reasons on data in terms of segments, a segmented data container lets Infinispan process data only in specific segments. This allows for operations performed upon all entries to require iteration over the data only once."
+#, fuzzy
+msgid ""
+"Because Infinispan internally reasons on data in terms of segments, a "
+"segmented data container lets Infinispan process data only in specific "
+"segments. This allows for operations performed upon all entries to require "
+"iteration over the data only once."
 msgstr ""
+"Infinispan は内部的にセグメント単位でデータを判断しているため、セグメント化されたデータコンテナを使用することで、Infinispan "
+"は特定のセグメントでのみデータを処理することができます。これにより、すべてのエントリに対して実行される操作は、データの反復処理を一度だけ必要とすることができます。"
 
 #. type: Title ==
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:58
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Actual Performance Difference"
-msgstr ""
+msgstr "実績差"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:67
-msgid "So with the above example you might be thinking that the performance increase maximum is two times throughput, since numOwners is two. This is close, but not quite correct. While iterating on the data we also have to determine what segment an entry belongs to. With a segmented container we know this already, so there is no need to calculate that.  This provides additional performance, as you will see."
+#, fuzzy
+msgid ""
+"So with the above example you might be thinking that the performance "
+"increase maximum is two times throughput, since numOwners is two. This is "
+"close, but not quite correct. While iterating on the data we also have to "
+"determine what segment an entry belongs to. With a segmented container we "
+"know this already, so there is no need to calculate that.  This provides "
+"additional performance, as you will see."
 msgstr ""
+"そのため、上記の例では、numOwnersが2つなので、パフォーマンス向上の最大値はスループットの2倍だと考えているかもしれません。これは近いですが、正確ではありません。データを反復処理する際に、エントリがどのセグメントに属しているかを判断する必要があります。セグメント化されたコンテナの場合はすでにわかっているので、計算する必要はありません。これにより、ご覧のようにパフォーマンスが向上します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:72
-msgid "The following graphs were generated using the benchmark at https://github.com/infinispan/infinispan-benchmarks/tree/master/iteration.  The following command was run: *java -jar target/benchmarks.jar -pvalueObjectSize=1000 -pentryAmount=50000 -pbatchSize=4096*"
+#, fuzzy
+msgid ""
+"The following graphs were generated using the benchmark at https://github."
+"com/infinispan/infinispan-benchmarks/tree/master/iteration.  The following "
+"command was run: *java -jar target/benchmarks.jar -pvalueObjectSize=1000 -"
+"pentryAmount=50000 -pbatchSize=4096*"
 msgstr ""
+"https://github.com/infinispan/infinispan-benchmarks/tree/master/iteration "
+"のベンチマークを使用して、以下のグラフを生成しました。以下のコマンドを実行しました。 *java -jar target/benchmarks.jar -"
+"pvalueObjectSize=1000 -pentryAmount=50000 -pbatchSize=4096*"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:74
-#, no-wrap
-msgid "*[#docs-internal-guid-9b20945e-7fff-7241-2261-95b975ba8902]#image:https://lh6.googleusercontent.com/XMXQWsWISdPTt-93vLV5RgnJld-ASxkiWaXDZ-O1guXkoe87fYj1Ra2mlQHfcnTmVlXKNTZhk5T095pL99PjqlHgCbqlpFLyvQoTSBarR65wO275T7syowLSBxZl8syWKSYF9H43[image,title=\"Chart\",width=624,height=385]#*\n"
-msgstr ""
+#, no-wrap, fuzzy
+msgid ""
+"*[#docs-internal-guid-9b20945e-7fff-7241-2261-95b975ba8902]#image:https://"
+"lh6.googleusercontent.com/XMXQWsWISdPTt-93vLV5RgnJld-ASxkiWaXDZ-"
+"O1guXkoe87fYj1Ra2mlQHfcnTmVlXKNTZhk5T095pL99PjqlHgCbqlpFLyvQoTSBarR65wO275T7syowLSBxZl8syWKSYF9H43[image,title="
+"\"Chart\",width=624,height=385]#*\n"
+msgstr "**"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:77
-msgid "The preceding graph is the result of the iteration methods. As you can notice the performance increase isn’t that much… why not?!?"
-msgstr ""
+#, fuzzy
+msgid ""
+"The preceding graph is the result of the iteration methods. As you can "
+"notice the performance increase isn’t that much… why not?!?"
+msgstr "前述のグラフは、反復処理を行った結果です。お気づきのように、パフォーマンスの向上はそれほどではありません...なぜでしょうか？"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:81
-msgid "Unfortunately, remote iteration requires a lot of network overhead, so we don’t get to see the full benefits of segmentation. But at least it is about 5-12% faster, not too shabby."
+#, fuzzy
+msgid ""
+"Unfortunately, remote iteration requires a lot of network overhead, so we "
+"don’t get to see the full benefits of segmentation. But at least it is about "
+"5-12% faster, not too shabby."
 msgstr ""
+"残念ながら、リモートイテレーションでは多くのネットワークオーバーヘッドを必要とするため、セグメンテーションのメリットを十分に享受することはできません。しかし、少なくとも約5～12%の高速化が可能であり、それほど粗末なものではありません。"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:84
-msgid "Now to show the real improvement, here is the chart showing the performance increase for the Cache#size operation:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Now to show the real improvement, here is the chart showing the performance "
+"increase for the Cache#size operation:"
+msgstr "ここで、実際の改善点を示すために、Cache#size オペレーションのパフォーマンス向上を示すチャートを示します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:86
-msgid "[#docs-internal-guid-413b551a-7fff-9931-559d-9fda906ad6b1]#image:https://lh6.googleusercontent.com/HHbRs5_4t4jE_7j8l3ArlsuPCgFXjh7zZXLGJXo3e9LLOP-matr7qTGzLiH8RpW9at1IimMrtC-LNKSsQmAujhMjVXxj31ruTGfEHeP9J-rTpUIFo0WjoyY_NCezBD6WtUj2NVgy[image,title=\"Chart\",width=624,height=385]#"
+#, fuzzy
+msgid ""
+"[#docs-internal-guid-413b551a-7fff-9931-559d-9fda906ad6b1]#image:https://lh6."
+"googleusercontent.com/HHbRs5_4t4jE_7j8l3ArlsuPCgFXjh7zZXLGJXo3e9LLOP-"
+"matr7qTGzLiH8RpW9at1IimMrtC-LNKSsQmAujhMjVXxj31ruTGfEHeP9J-"
+"rTpUIFo0WjoyY_NCezBD6WtUj2NVgy[image,title=\"Chart\",width=624,height=385]#"
 msgstr ""
+"image:https://lh6.googleusercontent.com/"
+"HHbRs5_4t4jE_7j8l3ArlsuPCgFXjh7zZXLGJXo3e9LLOP-matr7qTGzLiH8RpW9at1IimMrtC-"
+"LNKSsQmAujhMjVXxj31ruTGfEHeP9J-rTpUIFo0WjoyY_NCezBD6WtUj2NVgy[alt=\"image\", "
+"width=\"624\", height=\"385\", title=\"Chart\"]"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:91
-msgid "If you notice there is *huge* increase in performance: almost a three fold increase over the non-segmented container, even though numOwners is only two. The old segment calculation adds a bit of overhead compared to just incrementing a number."
+#, fuzzy
+msgid ""
+"If you notice there is *huge* increase in performance: almost a three fold "
+"increase over the non-segmented container, even though numOwners is only two."
+" The old segment calculation adds a bit of overhead compared to just "
+"incrementing a number."
 msgstr ""
+"numOwnersが2つしかないにもかかわらず、セグメント化されていないコンテナと比較して、ほぼ3倍のパフォーマンス *の* "
+"向上があることに気づくでしょう。古いセグメント計算では、数値をインクリメントするだけの場合と比較して、少しオーバーヘッドが発生します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:95
-msgid "So keep in mind this change will show a larger gain in performance if the result returned is smaller, especially if it is a fixed size, such as a single int for Cache#size."
+#, fuzzy
+msgid ""
+"So keep in mind this change will show a larger gain in performance if the "
+"result returned is smaller, especially if it is a fixed size, such as a "
+"single int for Cache#size."
 msgstr ""
+"したがって、この変更は、返される結果がより小さい場合、特に Cache#size の単一 int "
+"のような固定サイズの場合には、より大きなパフォーマンスの向上を示すことを覚えておいてください。"
 
 #. type: Title ==
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:97
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What about gets and puts?"
-msgstr ""
+msgstr "ゲットアンドプットは？"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:104
-msgid "Having the container segmented should also affect get and put performance as well, right? In testing the difference for get and puts are less than one percent, in favor of segmentation due to some optimizations we were able to add."
+#, fuzzy
+msgid ""
+"Having the container segmented should also affect get and put performance as "
+"well, right? In testing the difference for get and puts are less than one "
+"percent, in favor of segmentation due to some optimizations we were able to "
+"add."
 msgstr ""
+"コンテナがセグメント化されていることは、get と put "
+"のパフォーマンスにも影響しますよね？テストでは、最適化を追加することができたため、セグメンテーションの方が有利で、get と put の差は 1% "
+"以下になりました。"
 
 #. type: Title ==
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:106
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How do I enable this?"
-msgstr ""
+msgstr "これを有効にするにはどうすればいいですか？"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:115
-msgid "So the performance gains are noticeable, especially when the remote operation returns a small data set. But how can a user configure this? This is the nice part, due to no performance loss with other operations the container will always be segmented as long as the cache mode supports segmentation. That is if it is a Distributed, Replicated or Scattered cache."
+#, fuzzy
+msgid ""
+"So the performance gains are noticeable, especially when the remote "
+"operation returns a small data set. But how can a user configure this? This "
+"is the nice part, due to no performance loss with other operations the "
+"container will always be segmented as long as the cache mode supports "
+"segmentation. That is if it is a Distributed, Replicated or Scattered cache."
 msgstr ""
+"そのため、特にリモート操作が小さなデータセットを返す場合には、パフォーマンスの向上が顕著です。しかし、ユーザーはどのようにこれを設定するのでしょうか？これが良いところで、他の操作でパフォーマンスが低下することがないため、キャッシュモードがセグメント化をサポートしている限り、コンテナは常にセグメント化されています。これは分散型、複製型、分散型キャッシュの場合です。"
 
 #. type: Title ==
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:117
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A real-life example and closing"
-msgstr ""
+msgstr "実例とクロージング"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:127
-msgid "Since this feature has been around a while already, we actually have users gaining benefits from this feature. An example can be found at https://developer.jboss.org/message/983837#983837. In this case the user only upgraded to Infinispan 9.3 and received over a three-fold increase in performance when using distributed streams. It actually starts to bring distributed streams performance within range of indexed query for some use cases."
+#, fuzzy
+msgid ""
+"Since this feature has been around a while already, we actually have users "
+"gaining benefits from this feature. An example can be found at https://"
+"developer.jboss.org/message/983837#983837. In this case the user only "
+"upgraded to Infinispan 9.3 and received over a three-fold increase in "
+"performance when using distributed streams. It actually starts to bring "
+"distributed streams performance within range of indexed query for some use "
+"cases."
 msgstr ""
+"この機能はすでにしばらく前からあったので、実際にユーザーがこの機能の恩恵を受けています。その例を https://developer.jboss.org/"
+"message/983837#983837 に掲載します。このケースでは、ユーザは Infinispan 9.3 "
+"にアップグレードしただけで、分散ストリームを使用した場合のパフォーマン スが 3 "
+"倍以上に向上しました。これにより、分散ストリームのパフォーマンスがインデックス化されたクエリの範囲内に収まるようになり、いくつかのユースケースでは、分散ストリームのパフォーマンスが向上しています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-10-02-segmented-data-containers-distributed.adoc:135
-msgid "So, by upgrading your application to Infinispan 9.3 or newer, you will benefit from these improvements. There will be future posts regarding segmentation, including support for stores. Either way please feel free to http://infinispan.org/download/[download Infinispan], https://issues.jboss.org/projects/ISPN[report bugs], https://infinispan.zulipchat.com/[chat with us], ask questions on the https://developer.jboss.org/en/infinispan/content[forum] or on https://stackoverflow.com/questions/tagged/?tagnames=infinispan&sort=newest[StackOverflow]."
+#, fuzzy
+msgid ""
+"So, by upgrading your application to Infinispan 9.3 or newer, you will "
+"benefit from these improvements. There will be future posts regarding "
+"segmentation, including support for stores. Either way please feel free to "
+"http://infinispan.org/download/[download Infinispan], https://issues.jboss."
+"org/projects/ISPN[report bugs], https://infinispan.zulipchat.com/[chat with "
+"us], ask questions on the https://developer.jboss.org/en/infinispan/"
+"content[forum] or on https://stackoverflow.com/questions/tagged/?tagnames="
+"infinispan&sort=newest[StackOverflow]."
 msgstr ""
+"そのため、アプリケーションをInfinispan 9."
+"3以降にアップグレードすることで、これらの改善の恩恵を受けることができます。店舗のサポートを含むセグメンテーションについては、今後の記事でご紹介していきます。いずれにしても、Inf "
+"link:http://infinispan.org/download/[inispanのダウンロード] 、 link:https://issues."
+"jboss.org/projects/ISPN[バグ報告] 、 link:https://infinispan.zulipchat.com/[チャット] "
+"、 link:https://developer.jboss.org/en/infinispan/content[フォーラム] 、 link:https:"
+"//stackoverflow.com/questions/tagged/?tagnames=infinispan&sort="
+"newest[StackOverflow] での質問はお気軽にどうぞ。"

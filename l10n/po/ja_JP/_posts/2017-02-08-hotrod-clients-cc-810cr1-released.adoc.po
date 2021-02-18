@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-02-08-hotrod-clients-cc-810cr1-released.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-08-hotrod-clients-cc-810cr1-released.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Hotrod clients C++/C# 8.1.0.CR1 released!\n"
@@ -32,57 +32,86 @@ msgid ""
 "date: '2017-02-08T23:47:00.002-08:00'\n"
 "author: rigazilla\n"
 "tags: [ \"c++\", \"release\", \"c#\", \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8528236734106190723\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/02/hotrod-clients-cc-810cr1-released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8528236734106190723\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/02/hotrod-clients-cc-"
+"810cr1-released.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Hotrodクライアント C++/C# 8.1.0.CR1をリリースしました。\n"
+"permalink: /blog/:year/:month/:day/hotrod-clients-cc-810cr1-released\n"
+"date: '2017-02-08T23:47:00.002-08:00'\n"
+"author: rigazilla\n"
+"tags: [ \"c++\", \"release\", \"c#\", \"release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8528236734106190723\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/02/hotrod-clients-cc-"
+"810cr1-released.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-08-hotrod-clients-cc-810cr1-released.adoc:12
+#, fuzzy
 msgid "Dears,"
-msgstr ""
+msgstr "ディアーズ"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-08-hotrod-clients-cc-810cr1-released.adoc:15
-msgid "we're pleased to announce that 8.1.0.CR1 release for C++/C# clients is out! Downloading the code you'll find these changes (and may more):"
+#, fuzzy
+msgid ""
+"we're pleased to announce that 8.1.0.CR1 release for C++/C# clients is out! "
+"Downloading the code you'll find these changes (and may more):"
 msgstr ""
+"C++/C#クライアント用の8.1.0.CR1リリースを発表できることを嬉しく思います。コードをダウンロードすると、以下の変更点が見つかります "
+"(さらに多くの変更点があるかもしれません)。"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-08-hotrod-clients-cc-810cr1-released.adoc:17
+#, fuzzy
 msgid "C++11 instead of the old portable custom classes"
-msgstr ""
+msgstr "古いポータブルなカスタムクラスの代わりに C++11"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-08-hotrod-clients-cc-810cr1-released.adoc:18
+#, fuzzy
 msgid "less bugs"
-msgstr ""
+msgstr "虫が少ない"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-08-hotrod-clients-cc-810cr1-released.adoc:19
+#, fuzzy
 msgid "more safety through TLS client authentication"
-msgstr ""
+msgstr "TLSクライアント認証による安全性の向上"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-08-hotrod-clients-cc-810cr1-released.adoc:22
-msgid "We're getting closer to a final release, more updates on what's going on here:"
-msgstr ""
+#, fuzzy
+msgid ""
+"We're getting closer to a final release, more updates on what's going on "
+"here:"
+msgstr "最終的なリリースに近づいてきていますが、ここで何が起こっているのかをもっと詳しくご紹介します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-08-hotrod-clients-cc-810cr1-released.adoc:24
+#, fuzzy
 msgid "https://issues.jboss.org/projects/HRCPP/summary/statistics"
-msgstr ""
+msgstr "https://issues.jboss.org/projects/HRCPP/summary/statistics"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-08-hotrod-clients-cc-810cr1-released.adoc:25
+#, fuzzy
 msgid "https://github.com/infinispan/cpp-client "
-msgstr ""
+msgstr "https://github.com/infinispan/cpp-client"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-08-hotrod-clients-cc-810cr1-released.adoc:26
+#, fuzzy
 msgid "https://github.com/infinispan/dotnet-client "
-msgstr ""
+msgstr "https://github.com/infinispan/dotnet-client"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-08-hotrod-clients-cc-810cr1-released.adoc:30
+#, fuzzy
 msgid "Enjoy!"
-msgstr ""
+msgstr "楽しもう"

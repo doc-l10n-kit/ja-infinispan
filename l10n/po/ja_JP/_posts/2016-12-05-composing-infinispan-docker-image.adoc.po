@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:18
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Composing the Infinispan Docker image\n"
@@ -40,252 +40,428 @@ msgid ""
 "\"oracle\",\n"
 "\"cache store\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4984211490250460785\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/12/composing-infinispan-docker-image.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4984211490250460785\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/12/composing-infinispan-"
+"docker-image.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan Dockerイメージの構成\n"
+"permalink: /blog/:year/:month/:day/composing-infinispan-docker-image\n"
+"date: '2016-12-05T03:42:00.000-08:00'\n"
+"author: gustavonalle\n"
+"tags: [ \"compose\",\n"
+"\"jdbc\",\n"
+"\"docker\",\n"
+"\"persistence\",\n"
+"\"server\",\n"
+"\"modules\",\n"
+"\"oracle\",\n"
+"\"cache store\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4984211490250460785\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/12/composing-infinispan-"
+"docker-image.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:24
-msgid "In the http://blog.infinispan.org/2016/10/infinispan-docker-image-custom.html[previous] post we showed how to manipulate the Infinispan Docker container configuration at both runtime and boot time."
+#, fuzzy
+msgid ""
+"In the http://blog.infinispan.org/2016/10/infinispan-docker-image-custom."
+"html[previous] post we showed how to manipulate the Infinispan Docker "
+"container configuration at both runtime and boot time."
 msgstr ""
+"link:http://blog.infinispan.org/2016/10/infinispan-docker-image-custom."
+"html[前回の] 記事では、実行時と起動時の両方でInfinispan Dockerコンテナの設定を操作する方法を紹介しました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:28
-msgid "Before diving into multi-host Docker usage, in this post we'll explore how to create multi-container Docker applications involving Infinispan with the help of https://docs.docker.com/compose/[Docker Compose]."
+#, fuzzy
+msgid ""
+"Before diving into multi-host Docker usage, in this post we'll explore how "
+"to create multi-container Docker applications involving Infinispan with the "
+"help of https://docs.docker.com/compose/[Docker Compose]."
 msgstr ""
+"マルチホストDockerの使い方に飛び込む前に、この記事では link:https://docs.docker.com/compose/[Docker "
+"Compose] の助けを借りてInfinispanを含むマルチコンテナDockerアプリケーションを作成する方法を探ってみましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:31
-msgid "For this we'll look at a typical scenario of an Infinispan server backed by an Oracle database as a cache store."
+#, fuzzy
+msgid ""
+"For this we'll look at a typical scenario of an Infinispan server backed by "
+"an Oracle database as a cache store."
 msgstr ""
+"このために、キャッシュストアとしてOracleデータベースにバックアップされたInfinispanサーバの典型的なシナリオを見てみましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:34
-msgid "All the code for this sample can be found on https://github.com/gustavonalle/infinispan-docker-compose[github]."
+#, fuzzy
+msgid ""
+"All the code for this sample can be found on https://github.com/gustavonalle/"
+"infinispan-docker-compose[github]."
 msgstr ""
+"このサンプルのコードはすべて link:https://github.com/gustavonalle/infinispan-docker-"
+"compose[github] にあります。"
 
 #. type: Title ===
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:36
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:40
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:170
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " "
-msgstr ""
+msgstr " "
 
 #. type: Title ===
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:38
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Infinispan with Oracle JDBC cache store"
-msgstr ""
+msgstr "Infinispanは、Oracle JDBCのキャッシュストアで"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:47
-msgid "In order to have a cache with persistence with Oracle, we need to do some configuration: configure the driver in the server, create the data source associated with the driver, and configure the cache itself with JDBC persistence."
+#, fuzzy
+msgid ""
+"In order to have a cache with persistence with Oracle, we need to do some "
+"configuration: configure the driver in the server, create the data source "
+"associated with the driver, and configure the cache itself with JDBC "
+"persistence."
 msgstr ""
+"Oracleで永続性を持つキャッシュを持つためには、いくつかの設定を行う必要があります：サーバー内のドライバを設定し、ドライバに関連付けられたデータソースを作成し、JDBCの永続性を持つキャッシュ自体を設定します。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:50
+#, fuzzy
 msgid "Let's take a look at each of those steps:"
-msgstr ""
+msgstr "それぞれのステップを見ていきましょう。"
 
 #. type: Title =====
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:51
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Obtaining and configuring the driver"
-msgstr ""
+msgstr "ドライバの取得と設定"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:56
-msgid "The driver (ojdbc6.jar) should be http://www.oracle.com/technetwork/apps-tech/jdbc-112010-090769.html[downloaded] and placed in the 'driver' folder of the sample project."
+#, fuzzy
+msgid ""
+"The driver (ojdbc6.jar) should be http://www.oracle.com/technetwork/apps-"
+"tech/jdbc-112010-090769.html[downloaded] and placed in the 'driver' folder "
+"of the sample project."
 msgstr ""
+"ドライバ(ojdbc6.jar)を link:http://www.oracle.com/technetwork/apps-tech/jdbc-"
+"112010-090769.html[ダウンロードし] 、サンプルプロジェクトのdriverフォルダに配置してください。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:59
-msgid "The module.xml declaration used to make it available on the server is as follows:"
-msgstr ""
+#, fuzzy
+msgid ""
+"The module.xml declaration used to make it available on the server is as "
+"follows:"
+msgstr "サーバー上で利用できるようにするために使用するmodule.xml宣言は以下のようになります。"
 
 #. type: Title =====
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:63
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring the Data source"
-msgstr ""
+msgstr "データソースの設定"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:67
-msgid "The data source is configured in the \"datasource\" element of the server configuration file as shown below:"
-msgstr ""
+#, fuzzy
+msgid ""
+"The data source is configured in the \"datasource\" element of the server "
+"configuration file as shown below:"
+msgstr "データソースは、以下のようにサーバ設定ファイルの「datasource」要素で設定します。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:72
-msgid "and inside the \"datasource/drivers\" element, we need to declare the driver:"
-msgstr ""
+#, fuzzy
+msgid ""
+"and inside the \"datasource/drivers\" element, we need to declare the driver:"
+""
+msgstr "の中で、\"datasource/drivers\"要素の中でドライバを宣言する必要があります。"
 
 #. type: Title =====
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:76
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Creating the cache"
-msgstr ""
+msgstr "キャッシュの作成"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:79
+#, fuzzy
 msgid "The last piece is to define a cache with the proper JDBC Store:"
-msgstr ""
+msgstr "最後のピースは、適切なJDBCストアでキャッシュを定義することです。"
 
 #. type: Title =====
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:83
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Putting all together"
-msgstr ""
+msgstr "まとめて"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:90
-msgid "From now on, without using Docker we'd be ready to download and install Oracle following the specific instructions for your OS, then download the Infinispan Server, edit the configuration files, copy over the driver jar, figure out how to launch the database and server, taking care not to have any port conflicts."
+#, fuzzy
+msgid ""
+"From now on, without using Docker we'd be ready to download and install "
+"Oracle following the specific instructions for your OS, then download the "
+"Infinispan Server, edit the configuration files, copy over the driver jar, "
+"figure out how to launch the database and server, taking care not to have "
+"any port conflicts."
 msgstr ""
+"次にInfinispan "
+"Serverをダウンロードし、設定ファイルを編集し、ドライバjarをコピーし、データベースとサーバの起動方法を考え、ポートの競合がないように注意しながら、設定ファイルを編集します。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:94
-msgid "If it sounds too much work, it's because it really is. Wouldn't it be nice to have all these wired together and launched with a simple command line? Let's take a look at the Docker way next. "
+#, fuzzy
+msgid ""
+"If it sounds too much work, it's because it really is. Wouldn't it be nice "
+"to have all these wired together and launched with a simple command line? "
+"Let's take a look at the Docker way next. "
 msgstr ""
+"大変そうに聞こえるかもしれませんが、それは本当にそうなのです。これらをすべて一緒に配線して、簡単なコマンドラインで起動できたらいいと思いませんか？次にDockerのやり方を見てみましょう。"
 
 #. type: Title ===
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:95
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Enter Docker Compose"
-msgstr ""
+msgstr "Dockerコンポーズを入力してください。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:100
-msgid "Docker Compose is a tool part of the Docker stack to facilitate configuration, execution and management of related Docker containers."
-msgstr ""
+#, fuzzy
+msgid ""
+"Docker Compose is a tool part of the Docker stack to facilitate "
+"configuration, execution and management of related Docker containers."
+msgstr "Docker Composeは、関連するDockerコンテナの設定、実行、管理を容易にするDockerスタックのツールの一部です。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:105
-msgid "By describing the application aspects in a single yaml file, it allows centralized control of the containers, including custom configuration and parameters, and it also allows runtime interactions with each of the exposed services."
+#, fuzzy
+msgid ""
+"By describing the application aspects in a single yaml file, it allows "
+"centralized control of the containers, including custom configuration and "
+"parameters, and it also allows runtime interactions with each of the exposed "
+"services."
 msgstr ""
+"アプリケーションの側面を1つのyamlファイルに記述することで、カスタム設定やパラメータを含めたコンテナの集中管理が可能になり、公開されている各サービスとのランタイムインタラクションも可能になります。"
 
 #. type: Title =====
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:107
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Composing Infinispan"
-msgstr ""
+msgstr "インフィニスパンの作曲"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:110
+#, fuzzy
 msgid "Our Docker Compose file to assemble the application is given below:"
-msgstr ""
+msgstr "アプリケーションをアセンブルするためのDocker Composeファイルを以下に示します。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:113
+#, fuzzy
 msgid "It contains two services:"
-msgstr ""
+msgstr "2つのサービスが含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:117
-msgid "one called *_oracle_* that uses the https://hub.docker.com/r/wnameless/oracle-xe-11g/[wnameless/oracle-xe-11g] Docker image, with an environment variable to allow remote connections."
+#, fuzzy
+msgid ""
+"one called *_oracle_* that uses the https://hub.docker.com/r/wnameless/"
+"oracle-xe-11g/[wnameless/oracle-xe-11g] Docker image, with an environment "
+"variable to allow remote connections."
 msgstr ""
+"リモート接続を許可するための環境変数を持つ、 link:https://hub.docker.com/r/wnameless/oracle-xe-11g/"
+"[wnameless/oracle-xe-11g] Docker イメージを使用する * _oracle_ * と呼ばれるもの。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:124
-msgid " another one called _*infinispan*_ that uses version 8.2.5.Final of the https://store.docker.com/community/images/jboss/infinispan-server[Infinispan Server image]. It is launched with a custom command pointing to the changed configuration file and it also mounts two volumes in the container: one for the driver and its module.xml and another for the folder holding our server xml configuration."
+#, fuzzy
+msgid ""
+" another one called _*infinispan*_ that uses version 8.2.5.Final of the "
+"https://store.docker.com/community/images/jboss/infinispan-server[Infinispan "
+"Server image]. It is launched with a custom command pointing to the changed "
+"configuration file and it also mounts two volumes in the container: one for "
+"the driver and its module.xml and another for the folder holding our server "
+"xml configuration."
 msgstr ""
+"_これは_ Infin link:https://store.docker.com/community/images/jboss/infinispan-"
+"server[ispan Server イメージの] バージョン 8.2.5.Final "
+"を使用しています。これは、変更された設定ファイルを指すカスタムコマンドで起動され、コンテナ内の2つのボリュームをマウントします：1つはドライバとそのmodule."
+"xml用、もう1つはサーバのxml設定を保持するフォルダ用です。"
 
 #. type: Title =====
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:125
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Launching"
-msgstr ""
+msgstr "打ち上げ"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:128
+#, fuzzy
 msgid "To start the application, just execute"
-msgstr ""
+msgstr "アプリケーションを起動するには"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:132
+#, fuzzy
 msgid "To inspect the status of the containers:"
-msgstr ""
+msgstr "コンテナの状態を検査する。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:136
+#, fuzzy
 msgid "To follow the Infinispan server logs, use:"
-msgstr ""
+msgstr "Infinispan サーバーのログを追うには、以下を使用します。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:144
-msgid "Infinispan usually starts faster than the database, and since the server waits until the database is ready (more on that later), keep an eye in the log output for \"Infinispan Server 8.2.5.Final (WildFly Core 2.0.10.Final) started\". After that, both Infinispan and Oracle are properly initialized."
+#, fuzzy
+msgid ""
+"Infinispan usually starts faster than the database, and since the server "
+"waits until the database is ready (more on that later), keep an eye in the "
+"log output for \"Infinispan Server 8.2.5.Final (WildFly Core 2.0.10.Final) "
+"started\". After that, both Infinispan and Oracle are properly initialized."
 msgstr ""
+"通常、Infinispanの起動はデータベースよりも速く、サーバーはデータベースの準備が整うまで待機しているので（これについては後述）、ログ出力で「Infinispan "
+"Server 8.2.5.Final (WildFly Core 2.0.10.Final) "
+"started」を確認してください。その後、InfinispanとOracleの両方が適切に初期化されています。"
 
 #. type: Title =====
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:145
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Testing it"
-msgstr ""
+msgstr "それをテストする"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:149
-msgid "Let's insert a value using the Rest endpoint from Infinispan and verify it was saved to the Oracle database:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Let's insert a value using the Rest endpoint from Infinispan and verify it "
+"was saved to the Oracle database:"
+msgstr "InfinispanからRestエンドポイントを使って値を挿入し、Oracleデータベースに保存されたことを確認してみましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:154
-msgid "To check the Oracle database, we can attach to the container and use Sqlplus:"
-msgstr ""
+#, fuzzy
+msgid ""
+"To check the Oracle database, we can attach to the container and use Sqlplus:"
+""
+msgstr "Oracleデータベースを確認するには、コンテナにアタッチしてSqlplusを使用することができます。"
 
 #. type: Title =====
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:158
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Other operations"
-msgstr ""
+msgstr "その他の事業"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:163
-msgid "It's also possible to increase and decrease the number of containers for each of the services:"
-msgstr ""
+#, fuzzy
+msgid ""
+"It's also possible to increase and decrease the number of containers for "
+"each of the services:"
+msgstr "また、各サービスのコンテナ数を増減させることも可能です。"
 
 #. type: Title ===
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:168
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A thing or two about startup order"
-msgstr ""
+msgstr "スタートアップの順番について一言二言"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:176
-msgid "When dealing with dependent containers in Docker based environments, it's highly recommended to make the connection obtention between parties robust enough so that the fact that one dependency is not totally initialized doesn't cause the whole application to fail when starting."
+#, fuzzy
+msgid ""
+"When dealing with dependent containers in Docker based environments, it's "
+"highly recommended to make the connection obtention between parties robust "
+"enough so that the fact that one dependency is not totally initialized "
+"doesn't cause the whole application to fail when starting."
 msgstr ""
+"Dockerベースの環境で依存性のあるコンテナを扱う際には、ある依存性が完全に初期化されていなくてもアプリケーション全体が起動時に失敗することがないように、パーティ間の接続を十分に堅牢にすることを強くお勧めします。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:181
-msgid "Although Compose does have a *_depends_on_* instruction, it simply starts the containers in the declared order but it has no means to detected when a certain container is fully initialized and ready to serve requests before launching a dependent one."
+#, fuzzy
+msgid ""
+"Although Compose does have a *_depends_on_* instruction, it simply starts "
+"the containers in the declared order but it has no means to detected when a "
+"certain container is fully initialized and ready to serve requests before "
+"launching a dependent one."
 msgstr ""
+"Compose には * _depends_on_ * "
+"命令がありますが、これは単に宣言された順番でコンテナを起動しますが、あるコンテナが完全に初期化され、依存するコンテナを起動する前にリクエストに対応できる状態になったかどうかを検出する手段がありません。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:186
-msgid "One may be tempted to simply write some glue script to detect if a certain port is open, but that does not work in practice: the network socket may be opened, but the background service could still be in transient initialization state."
-msgstr ""
+#, fuzzy
+msgid ""
+"One may be tempted to simply write some glue script to detect if a certain "
+"port is open, but that does not work in practice: the network socket may be "
+"opened, but the background service could still be in transient "
+"initialization state."
+msgstr "あるポートが開いているかどうかを検出するために、単純にグルースクリプトを書きたいと思うかもしれませんが、実際にはそうはいきません。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:191
-msgid "The recommended solution for this it to make whoever depends on a service to retry periodically until the dependency is ready. On the Infinispan + Oracle case, we specifically configured the data source with retries to avoid failing at once if the database is not ready:"
+#, fuzzy
+msgid ""
+"The recommended solution for this it to make whoever depends on a service to "
+"retry periodically until the dependency is ready. On the Infinispan + Oracle "
+"case, we specifically configured the data source with retries to avoid "
+"failing at once if the database is not ready:"
 msgstr ""
+"これに対する推奨される解決策は、サービスに依存している人が、依存関係の準備が整うまで定期的にリトライするようにすることです。Infinispan + "
+"Oracleのケースでは、データベースの準備ができていない場合に一度に失敗することを避けるために、リトライでデータソースを特別に設定しました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:196
-msgid "When starting the application via Compose you'll notice that Infinispan print some WARN with connection exceptions until Oracle is available: don't panic, this is expected!"
+#, fuzzy
+msgid ""
+"When starting the application via Compose you'll notice that Infinispan "
+"print some WARN with connection exceptions until Oracle is available: don't "
+"panic, this is expected!"
 msgstr ""
+"Compose経由でアプリケーションを起動すると、Oracleが利用可能になるまでの間、Infinispanは接続例外を含むいくつかのWARNを表示することに気づくでしょう:"
+" パニックにならないでください。"
 
 #. type: Title ===
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Conclusion"
-msgstr ""
+msgstr "結論"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:209
-msgid "Docker Compose is a powerful and easy to use tool to launch applications involving multiple containers: in this post it allowed to start Infinispan plus Oracle with custom configurations with a single command.  It's also a handy tool to have during development and testing phase of a project, specially when using/evaluating Infinispan with its many possible integrations."
+#, fuzzy
+msgid ""
+"Docker Compose is a powerful and easy to use tool to launch applications "
+"involving multiple containers: in this post it allowed to start Infinispan "
+"plus Oracle with custom configurations with a single command.  It's also a "
+"handy tool to have during development and testing phase of a project, "
+"specially when using/evaluating Infinispan with its many possible "
+"integrations."
 msgstr ""
+"Docker "
+"Composeは複数のコンテナを含むアプリケーションを起動するための強力で使いやすいツールです。また、プロジェクトの開発やテストの段階で、特に多くの可能性のある統合を伴うInfinispanを使用したり、評価したりする場合には便利なツールです。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-05-composing-infinispan-docker-image.adoc:216
-msgid "Be sure to check other examples of using Docker Compose involving Infinispan: the https://github.com/infinispan/infinispan-spark/tree/master/examples/twitter[Infinispan+Spark Twitter demo], and the https://github.com/infinispan/infinispan-hadoop/tree/master/samples/flink[Infinispan+Apache Flink] demo."
+#, fuzzy
+msgid ""
+"Be sure to check other examples of using Docker Compose involving Infinispan:"
+" the https://github.com/infinispan/infinispan-spark/tree/master/examples/"
+"twitter[Infinispan+Spark Twitter demo], and the https://github.com/"
+"infinispan/infinispan-hadoop/tree/master/samples/flink[Infinispan+Apache "
+"Flink] demo."
 msgstr ""
+"Infinispanを使ったDocker Composeの他の例としては、Infinispan link:https://github.com/"
+"infinispan/infinispan-spark/tree/master/examples/twitter[+Spark Twitterデモ] "
+"やInfinispan link:https://github.com/infinispan/infinispan-hadoop/tree/master/"
+"samples/flink[+Apache Flink] デモなどがあります。"

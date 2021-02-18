@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Introducing distributed execution and MapReduce framework\n"
@@ -32,41 +32,131 @@ msgid ""
 "date: '2011-01-19T07:39:00.000-08:00'\n"
 "author: vblagojevic\n"
 "tags: [ \"distributed executors\", \"map reduce\", \"API\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6571330426716478650\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/01/introducing-distributed-execution-and.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6571330426716478650\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/01/introducing-"
+"distributed-execution-and.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 分散実行とMapReduceフレームワークの紹介\n"
+"permalink: /blog/:year/:month/:day/introducing-distributed-execution-and\n"
+"date: '2011-01-19T07:39:00.000-08:00'\n"
+"author: vblagojevic\n"
+"tags: [ \"distributed executors\", \"map reduce\", \"API\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6571330426716478650\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/01/introducing-"
+"distributed-execution-and.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:20
-msgid "In case you did not pay attention to the area of large scale distributed computing – there is a revolution going on! It is becoming increasingly evident that the software ecosystems built around so called Big Data are at the forefront of cloud computing innovation. Unfortunately, there has been more http://openlife.cc/blogs/2011/january/terabytes-not-big-data-petabytes[debate] around determining how big Big Data actually is rather than defining common set of requirements for the large scale Big Data computational platforms."
+#, fuzzy
+msgid ""
+"In case you did not pay attention to the area of large scale distributed "
+"computing – there is a revolution going on! It is becoming increasingly "
+"evident that the software ecosystems built around so called Big Data are at "
+"the forefront of cloud computing innovation. Unfortunately, there has been "
+"more http://openlife.cc/blogs/2011/january/terabytes-not-big-data-"
+"petabytes[debate] around determining how big Big Data actually is rather "
+"than defining common set of requirements for the large scale Big Data "
+"computational platforms."
 msgstr ""
+"大規模分散コンピューティングの分野に注目していなかった方のために - "
+"革命が起きています!いわゆるビッグデータを中心に構築されたソフトウェア・エコシステムがクラウドコンピューティングのイノベーションの最前線にあることがますます明らかになってきています。残念なことに、大規模ビッグデータ計算プラットフォームのための共通の要件を定義するよりも、実際のビッグデータがどの程度のものなのかを決定することを中心に "
+"link:http://openlife.cc/blogs/2011/january/terabytes-not-big-data-"
+"petabytes[議論が] 行われています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:29
-msgid "Stephen O'Grady of RedMonk http://redmonk.com/sogrady/2011/01/13/apache-hadoop/[summarized] this phenomena succinctly: “Big Data, like NoSQL, has become a liability in most contexts. Setting aside the lack of a consistent definition, the term is of little utility because it is single-dimensional. Larger dataset sizes present unique computational challenges. But the structure, workload, accessibility and even location of the data may prove equally challenging.”"
+#, fuzzy
+msgid ""
+"Stephen O'Grady of RedMonk http://redmonk.com/sogrady/2011/01/13/apache-"
+"hadoop/[summarized] this phenomena succinctly: “Big Data, like NoSQL, has "
+"become a liability in most contexts. Setting aside the lack of a consistent "
+"definition, the term is of little utility because it is single-dimensional. "
+"Larger dataset sizes present unique computational challenges. But the "
+"structure, workload, accessibility and even location of the data may prove "
+"equally challenging.”"
 msgstr ""
+"RedMonkのStephen O'Grady氏は、この現象を簡潔に link:http://redmonk.com/sogrady/2011/01/"
+"13/apache-hadoop/[まとめている] "
+"。\"ビッグデータは、NoSQLと同様に、ほとんどの文脈で負債となっています。一貫性のある定義がないことはさておき、この用語は一次元であるため、あまり意味がありません。データセットのサイズが大きくなればなるほど、独特の計算上の課題が出てきます。しかし、データの構造、ワークロード、アクセシビリティ、さらにはデータの場所さえも同様に困難であることがわかります。\""
 
 #. type: Plain text
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:39
-msgid "Zack Urlocker, an advisor and board member to several startup companies in the area of SaaS was equally vocal in his http://www.theopenforce.com/2010/09/do-we-programming-language-big-data.html[criticism] regarding complexity of the existing systems : “You pretty much gotta be near genius level to build systems on top of Cassandra, Hadoop and the like today. These are powerful tools, but very low-level, equivalent to programming client server applications in assembly language. When it works its [_sic_] great, but the effort is significant and it’s probably beyond the scope of mainstream IT organizations.”"
+#, fuzzy
+msgid ""
+"Zack Urlocker, an advisor and board member to several startup companies in "
+"the area of SaaS was equally vocal in his http://www.theopenforce.com/2010/"
+"09/do-we-programming-language-big-data.html[criticism] regarding complexity "
+"of the existing systems : “You pretty much gotta be near genius level to "
+"build systems on top of Cassandra, Hadoop and the like today. These are "
+"powerful tools, but very low-level, equivalent to programming client server "
+"applications in assembly language. When it works its [_sic_] great, but the "
+"effort is significant and it’s probably beyond the scope of mainstream IT "
+"organizations.”"
 msgstr ""
+"SaaS分野のスタートアップ企業数社の顧問兼役員を務めるザック・アーロッカー氏は、既存のシステムの複雑さについても同様に声高に批判して link:"
+"http://www.theopenforce.com/2010/09/do-we-programming-language-big-data."
+"html[いる] "
+"。これらは強力なツールですが、非常に低レベルで、アセンブリ言語でクライアント・サーバ・アプリケーションをプログラミングするのと同じです。うまくいくときは素晴らしいが、その労力は相当なものであり、主流のIT組織の範囲を超えているだろう。"
 
 #. type: Plain text
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:51
-msgid "This is exactly where we are positioning Infinispan's roadmap as we are announcing initial steps into the area of distributed execution and MapReduce framework built on top of Infinispan. Infinispan's distributed data grid is a most natural fit for such a platform. We have already built an infrastructure for essentially unlimited linear in-memory data scaling. However, having such a data grid without an ability to execute large scale computation on it is like having a Ferrari without a drivers licence. Listening to the criticism regarding the lack of direction in Big Data field and complexity of the existing distributed execution frameworks our focus was primarily on simplicity without sacrificing power and a rich feature set such a framework should have."
+#, fuzzy
+msgid ""
+"This is exactly where we are positioning Infinispan's roadmap as we are "
+"announcing initial steps into the area of distributed execution and "
+"MapReduce framework built on top of Infinispan. Infinispan's distributed "
+"data grid is a most natural fit for such a platform. We have already built "
+"an infrastructure for essentially unlimited linear in-memory data scaling. "
+"However, having such a data grid without an ability to execute large scale "
+"computation on it is like having a Ferrari without a drivers licence. "
+"Listening to the criticism regarding the lack of direction in Big Data field "
+"and complexity of the existing distributed execution frameworks our focus "
+"was primarily on simplicity without sacrificing power and a rich feature set "
+"such a framework should have."
 msgstr ""
+"これはまさにInfinispanのロードマップの位置づけであり、Infinispanの上に構築された分散実行とMapReduceフレームワークの領域への最初のステップを発表しています。Infinispanの分散データグリッドは、このようなプラットフォームに最も自然にフィットしています。我々はすでに、本質的に無制限の線形インメモリデータスケーリングのためのインフラストラクチャを構築している。しかし、大規模な計算を実行する能力のないデータグリッドを持つことは、運転免許証のないフェラーリを持っているようなものです。ビッグデータ分野の方向性の欠如や既存の分散実行フレームワークの複雑さに対する批判に耳を傾け、私たちは、パワーを犠牲にすることなくシンプルにすることと、そのようなフレームワークが持つべき豊富な機能セットに主眼を置きました。"
 
 #. type: Title ==
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:55
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Simple distributed execution model "
-msgstr ""
+msgstr "シンプルな分散実行モデル"
 
 #. type: Plain text
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:74
-msgid "The main interfaces for simple distributed task execution are https://github.com/infinispan/infinispan/blob/master/core/src/main/java/org/infinispan/distexec/DistributedCallable.java[DistributedCallable] and https://github.com/infinispan/infinispan/blob/master/core/src/main/java/org/infinispan/distexec/DistributedExecutorService.java[DistributedExecutorService].  DistributedCallable is essentially a version of the existing Callable from java.util.concurrent package except that DistributedCallable can be executed in remote JVM and receive input from Infinispan cache. Tasks' main algorithm is essentially unchanged, only the input source is changed. Exisiting Callable implementation most likely gets its input in a form of some Java object/primitive while DistributedCallable gets its input from Infinispan cache. Therefore, users who have already implemented Callable interface to describe their task units would simply extend DistributedCallable and use keys from Infinispan execution environment as input for the task. Implentation of DistributedCallable can in fact continue to support implementation of an already existing Callable while simultaneously be ready for distribited execution by extending DistributedCallable."
+#, fuzzy
+msgid ""
+"The main interfaces for simple distributed task execution are https://github."
+"com/infinispan/infinispan/blob/master/core/src/main/java/org/infinispan/"
+"distexec/DistributedCallable.java[DistributedCallable] and https://github."
+"com/infinispan/infinispan/blob/master/core/src/main/java/org/infinispan/"
+"distexec/DistributedExecutorService.java[DistributedExecutorService].  "
+"DistributedCallable is essentially a version of the existing Callable from "
+"java.util.concurrent package except that DistributedCallable can be executed "
+"in remote JVM and receive input from Infinispan cache. Tasks' main algorithm "
+"is essentially unchanged, only the input source is changed. Exisiting "
+"Callable implementation most likely gets its input in a form of some Java "
+"object/primitive while DistributedCallable gets its input from Infinispan "
+"cache. Therefore, users who have already implemented Callable interface to "
+"describe their task units would simply extend DistributedCallable and use "
+"keys from Infinispan execution environment as input for the task. "
+"Implentation of DistributedCallable can in fact continue to support "
+"implementation of an already existing Callable while simultaneously be ready "
+"for distribited execution by extending DistributedCallable."
 msgstr ""
+"単純な分散タスク実行のための主なインターフェースは link:https://github.com/infinispan/infinispan/blob/"
+"master/core/src/main/java/org/infinispan/distexec/DistributedCallable."
+"java[DistributedCallable] と link:https://github.com/infinispan/infinispan/"
+"blob/master/core/src/main/java/org/infinispan/distexec/"
+"DistributedExecutorService.java[DistributedExecutorService] "
+"である。DistributedCallableは本質的にjava.util."
+"concurrentパッケージの既存のCallableのバージョンであるが、DistributedCallableはリモートJVMで実行でき、Infinispanキャッシュからの入力を受け取ることができるという点を除いては、基本的にはDistributedCallableのバージョンである。Tasksのメインアルゴリズムは基本的に変更されておらず、入力ソースだけが変更されています。既存のCallableの実装では、DistributedCallableがInfinispanキャッシュからの入力を受けるのに対し、ほとんどの場合、Javaオブジェクト/"
+"プリミティブの形で入力を受ける。従って、タスクユニットを記述するCallableインターフェースを既に実装しているユーザーは、単にDistributedCallableを拡張してInfinispan実行環境からのキーをタスクの入力として使用するだけである。DistributedCallableの実装は、実際には既に存在するCallableの実装をサポートし続けることができ、同時にDistributedCallableを拡張することで分散実行の準備をすることができる。"
 
 #. type: delimited block -
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:91
@@ -90,29 +180,67 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:102
-msgid "DistributedExecutorService is an simple extension of a familiar ExecutorService from java.util.concurrent package. However, the advantages of DistributedExecutorService are not to be overlooked. For the existing Callable tasks users would submit to ExecutorService there is an option to submit them for an execution on Infinispan cluster.  Infinispan execution environment would migrate this task to an execution node, run the task and return the results to the calling node. Of course, not all Callable task would benefit from this feature. Excellent candidates are long running and computationally intensive tasks."
+#, fuzzy
+msgid ""
+"DistributedExecutorService is an simple extension of a familiar "
+"ExecutorService from java.util.concurrent package. However, the advantages "
+"of DistributedExecutorService are not to be overlooked. For the existing "
+"Callable tasks users would submit to ExecutorService there is an option to "
+"submit them for an execution on Infinispan cluster.  Infinispan execution "
+"environment would migrate this task to an execution node, run the task and "
+"return the results to the calling node. Of course, not all Callable task "
+"would benefit from this feature. Excellent candidates are long running and "
+"computationally intensive tasks."
 msgstr ""
+"DistributedExecutorService は java.util.concurrent パッケージのお馴染みの "
+"ExecutorService "
+"をシンプルに拡張したものです。しかし、DistributedExecutorServiceの利点は見逃せません。ユーザが既存のCallableタスクをExecutorServiceに投入する場合、Infinispanクラスタ上で実行するために投入するオプションがあります。Infinispanの実行環境はこのタスクを実行ノードに移行し、タスクを実行して結果を呼び出し元のノードに返します。もちろん、すべてのCallableタスクがこの機能の恩恵を受けるわけではありません。優れた候補としては、長時間実行され、計算量の多いタスクが挙げられます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:113
-msgid "The second advantage of the DistributedExecutorService is that it allows a quick and simple implementation of tasks that take input from Infinispan cache nodes, execute certain computation and return results to the caller. Users would specify which keys to use as input for specified DistributedCallable and submit that callable for execution on Infinispan cluster. Infinispan runtime would locate the appriate keys, migrate DistributedCallable to target execution node(s) and finally return a list of results for each executed Callable. Of course, users can omit specifying input keys in which case Infinispan would execute DistributedCallable on all keys for a specified cache."
+#, fuzzy
+msgid ""
+"The second advantage of the DistributedExecutorService is that it allows a "
+"quick and simple implementation of tasks that take input from Infinispan "
+"cache nodes, execute certain computation and return results to the caller. "
+"Users would specify which keys to use as input for specified "
+"DistributedCallable and submit that callable for execution on Infinispan "
+"cluster. Infinispan runtime would locate the appriate keys, migrate "
+"DistributedCallable to target execution node(s) and finally return a list of "
+"results for each executed Callable. Of course, users can omit specifying "
+"input keys in which case Infinispan would execute DistributedCallable on all "
+"keys for a specified cache."
 msgstr ""
+"DistributedExecutorServiceの第二の利点は、Infinispanキャッシュノードからの入力を受けて、特定の計算を実行し、呼び出し元に結果を返すタスクを迅速かつ簡単に実装できることである。ユーザーは指定されたDistributedCallableの入力として使用するキーを指定し、Infinispanクラスタ上で実行するためにそのCallableを送信する。Infinispanランタイムは適切なキーを見つけ、DistributedCallableをターゲットの実行ノードに移行し、最終的に実行された各Callableの結果のリストを返す。もちろん、ユーザーは入力キーの指定を省略することができ、その場合、Infinispanは指定されたキャッシュの全てのキーに対してDistributedCallableを実行する。"
 
 #. type: Title ==
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:117
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "MapReduce model"
-msgstr ""
+msgstr "MapReduceモデル"
 
 #. type: Plain text
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:122
-msgid "Infinispan's own MapReduce model is an adaptation of Google's original MapReduce. There are four main components in each map reduce task: Mapper, Reducer, Collator and MapReduceTask."
+#, fuzzy
+msgid ""
+"Infinispan's own MapReduce model is an adaptation of Google's original "
+"MapReduce. There are four main components in each map reduce task: Mapper, "
+"Reducer, Collator and MapReduceTask."
 msgstr ""
+"Infinispan独自のMapReduceモデルは、Google独自のMapReduceを翻案したものです。各MapReduceタスクには大きく分けて4つのコンポーネントがあります。Mapper、Reducer、Collator、MapReduceTaskです。"
 
 #. type: Plain text
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:128
-msgid "[.cm]#Implementation of a Mapper class is a component of a MapReduceTask invoked once for each input entry K,V. Every Mapper instance migrated to an Infinispan node, given a cache entry K,V input pair transforms that input pair into a result T. Intermediate result T is further reduced using a Reducer.#"
+#, fuzzy
+msgid ""
+"[.cm]#Implementation of a Mapper class is a component of a MapReduceTask "
+"invoked once for each input entry K,V. Every Mapper instance migrated to an "
+"Infinispan node, given a cache entry K,V input pair transforms that input "
+"pair into a result T. Intermediate result T is further reduced using a "
+"Reducer.#"
 msgstr ""
+"Mapper クラスの実装は、各入力エントリ K,V に対して一度だけ呼び出される MapReduceTask "
+"のコンポーネントです。InfinispanノードにマイグレートされたすべてのMapperインスタンスは、キャッシュエントリK,Vの入力ペアが与えられると、その入力ペアを結果Tに変換します。"
 
 #. type: delimited block -
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:132
@@ -146,8 +274,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:151
-msgid "[.cm]#Reducer, as its name implies, reduces a list of results T from map phase of MapReduceTask. Infinispan distributed execution environment creates one instance of Reducer per execution node.#"
+#, fuzzy
+msgid ""
+"[.cm]#Reducer, as its name implies, reduces a list of results T from map "
+"phase of MapReduceTask. Infinispan distributed execution environment creates "
+"one instance of Reducer per execution node.#"
 msgstr ""
+"Reducerはその名の通り、MapReduceTaskのマップフェーズから結果Tのリストを削減します。Infinispan分散実行環境では、実行ノードごとに1つのReducerのインスタンスを作成します。"
 
 #. type: delimited block -
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:155
@@ -183,8 +316,14 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:184
-msgid "[.cm]#Collator coordinates results from Reducers executed on Infinispan cluster and assembles a final result returned to an invoker of MapReduceTask. #[.cm]# #"
+#, fuzzy
+msgid ""
+"[.cm]#Collator coordinates results from Reducers executed on Infinispan "
+"cluster and assembles a final result returned to an invoker of MapReduceTask."
+" #[.cm]# #"
 msgstr ""
+"Collatorは、Infinispanクラスタ上で実行されたReducersの結果を調整し、MapReduceTaskのインボーカーに返される最終結果をアセンブルします。#[."
+"cm] #"
 
 #. type: delimited block -
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:188
@@ -225,13 +364,35 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:221
-msgid "[.cm]#Finally, https://github.com/infinispan/infinispan/blob/master/core/src/main/java/org/infinispan/distexec/mapreduce/MapReduceTask.java[MapReduceTask] is a distributed task uniting Mapper, Reducer and Collator into a cohesive large scale computation to be transparently parallelized across Infinispan cluster nodes. Users of MapReduceTask need to provide a cache whose data is used as input for this task. Infinispan execution environment will instantiate and migrate instances of provided mappers and reducers seamlessly across Infinispan nodes. Unless otherwise specified using onKeys method input keys filter all available key value pairs of a specified cache will be used as input data for this task. #"
+#, fuzzy
+msgid ""
+"[.cm]#Finally, https://github.com/infinispan/infinispan/blob/master/core/src/"
+"main/java/org/infinispan/distexec/mapreduce/MapReduceTask."
+"java[MapReduceTask] is a distributed task uniting Mapper, Reducer and "
+"Collator into a cohesive large scale computation to be transparently "
+"parallelized across Infinispan cluster nodes. Users of MapReduceTask need to "
+"provide a cache whose data is used as input for this task. Infinispan "
+"execution environment will instantiate and migrate instances of provided "
+"mappers and reducers seamlessly across Infinispan nodes. Unless otherwise "
+"specified using onKeys method input keys filter all available key value "
+"pairs of a specified cache will be used as input data for this task. #"
 msgstr ""
+"[.cm]#最後に、 link:https://github.com/infinispan/infinispan/blob/master/core/"
+"src/main/java/org/infinispan/distexec/mapreduce/MapReduceTask."
+"java[MapReduceTaskは] "
+"、Mapper、Reducer、Collatorを、Infinispanクラスタノード間で透過的に並列化するためのまとまりのある大規模計算に統合した分散タスクです。MapReduceTaskのユーザーは、このタスクの入力としてデータが使用されるキャッシュを提供する必要があります。Infinispan実行環境は、Infinispanノード間でシームレスに、提供されたマッパーとリデューサのインスタンスをインスタンス化し、移行します。onKeysメソッドのinput "
+"keys filterを使用して特に指定がない限り、指定されたキャッシュのすべての利用可能なキー値のペアがこのタスクの入力データとして使用されます。#"
 
 #. type: Plain text
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:226
-msgid "[.cm]#MapReduceTask implements a slightly different execution model from the original MapReduce proposed by Google. Here is the pseudocode of the MapReduceTask.  #"
+#, fuzzy
+msgid ""
+"[.cm]#MapReduceTask implements a slightly different execution model from the "
+"original MapReduce proposed by Google. Here is the pseudocode of the "
+"MapReduceTask.  #"
 msgstr ""
+"[."
+"cm]#MapReduceTaskは、Googleが提案しているオリジナルのMapReduceとは少し異なる実行モデルを実装しています。以下がMapReduceTaskの擬似コード。#"
 
 #. type: delimited block -
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:233
@@ -258,7 +419,8 @@ msgstr ""
 #, no-wrap
 msgid ""
 "On Infinispan node invoking this task:\n"
-"reduced_results = invoke map reduce task on all nodes, retrieve map{address:result}\n"
+"reduced_results = invoke map reduce task on all nodes, retrieve map{address:"
+"result}\n"
 "for r in reduced_results.entries:\n"
 "remote_address = r.key\n"
 "remote_reduced_result = r.value\n"
@@ -273,14 +435,20 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:250
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Examples"
-msgstr ""
+msgstr "例としては、以下のようなものがあります。"
 
 #. type: Plain text
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:256
-msgid "In order to get a better feel for MapReduce framework lets have a look at the example related to Infinispan's grid file system. How would we calculate total size of all files in the system using MapReduce framework? Easy! Have a look at GridFileSizeExample."
+#, fuzzy
+msgid ""
+"In order to get a better feel for MapReduce framework lets have a look at "
+"the example related to Infinispan's grid file system. How would we calculate "
+"total size of all files in the system using MapReduce framework? Easy! Have "
+"a look at GridFileSizeExample."
 msgstr ""
+"MapReduceフレームワークをよりよく理解するために、Infinispanのグリッドファイルシステムに関連した例を見てみよう。MapReduceフレームワークを使って、システム内のすべてのファイルの合計サイズをどのように計算するのだろうか？簡単だ。GridFileSizeExampleを見てみよう。"
 
 #. type: delimited block -
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:261
@@ -293,8 +461,7 @@ msgstr ""
 #. type: delimited block -
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:264
 #, no-wrap
-msgid ""
-"Cache  cache = null;\n"
+msgid "Cache  cache = null;\n"
 "MapReduceTask task =\n"
 msgstr ""
 
@@ -332,7 +499,8 @@ msgstr ""
 msgid ""
 "@Override\n"
 "public Long reduce(Long mapResult, Long previouslyReduced) {\n"
-"return previouslyReduced == null ? mapResult : mapResult + previouslyReduced;\n"
+"return previouslyReduced == null ? mapResult : mapResult + "
+"previouslyReduced;\n"
 "}\n"
 msgstr ""
 
@@ -351,8 +519,7 @@ msgstr ""
 #. type: delimited block -
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:289
 #, no-wrap
-msgid ""
-"@Override\n"
+msgid "@Override\n"
 "public Long collate() {\n"
 "return result;\n"
 "}\n"
@@ -377,12 +544,19 @@ msgstr ""
 #. type: delimited block -
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:299
 #, no-wrap
-msgid ""
-"}\n"
+msgid "}\n"
 "}\n"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-01-19-introducing-distributed-execution-and.adoc:308
-msgid "In conclusion, this is not a perfect and final distributed execution and MapReduce API that can satisfy requirements of all users but it is a good start. As we push forward and make it more feature rich while keeping it simple we are continuously looking for your feedback.  Together we can reach the ambitious goals set out in the beginning of this article."
+#, fuzzy
+msgid ""
+"In conclusion, this is not a perfect and final distributed execution and "
+"MapReduce API that can satisfy requirements of all users but it is a good "
+"start. As we push forward and make it more feature rich while keeping it "
+"simple we are continuously looking for your feedback.  Together we can reach "
+"the ambitious goals set out in the beginning of this article."
 msgstr ""
+"結論として、これはすべてのユーザーの要求を満たすことができる完全で最終的な分散実行とMapReduce "
+"APIではないが、良いスタート地点である。我々が前進し、シンプルさを維持しつつ、より豊富な機能を持つようにしていく中で、皆さんからのフィードバックを継続的に募集している。共にこの記事の最初に掲げた野心的な目標を達成することができるだろう。"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Configuration management on OpenShift, Kubernetes and Docker\n"
@@ -32,111 +32,183 @@ msgid ""
 "date: '2016-09-02T03:51:00.000-07:00'\n"
 "author: slaskawiec\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-30544979481083473\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/09/configuration-management-on-openshift.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"30544979481083473\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/09/configuration-"
+"management-on-openshift.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: OpenShift、Kubernetes、Dockerでの構成管理\n"
+"permalink: /blog/:year/:month/:day/configuration-management-on-openshift\n"
+"date: '2016-09-02T03:51:00.000-07:00'\n"
+"author: slaskawiec\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"30544979481083473\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/09/configuration-"
+"management-on-openshift.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:14
-msgid "When deploying Infinispan on Docker based Cloud environments, the most critical thing is how to manage configuration. In this blog post we'll explore some of the options."
+#, fuzzy
+msgid ""
+"When deploying Infinispan on Docker based Cloud environments, the most "
+"critical thing is how to manage configuration. In this blog post we'll "
+"explore some of the options."
 msgstr ""
+"Dockerベースのクラウド環境にInfinispanをデプロイする場合、最も重要なのは設定をどのように管理するかということです。このブログ記事では、いくつかの選択肢を探っていきます。"
 
 #. type: Title ==
 #: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:15
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Extending our Docker image"
-msgstr ""
+msgstr "Dockerイメージの拡張"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:24
-msgid "Creating your own Docker image based on jboss/infinispan-server is quite simple. At first you need to prepare a configuration XML file, which is shipped with Infinispan release. Go to http://infinispan.org/download/[Infinispan download section] and grap a server release corresponding to a chosen Docker image tag.  After unpacking it, grab the configuration (I use cloud.xml as a template) and introduce all necessary changes. "
+#, fuzzy
+msgid ""
+"Creating your own Docker image based on jboss/infinispan-server is quite "
+"simple. At first you need to prepare a configuration XML file, which is "
+"shipped with Infinispan release. Go to http://infinispan.org/download/"
+"[Infinispan download section] and grap a server release corresponding to a "
+"chosen Docker image tag.  After unpacking it, grab the configuration (I use "
+"cloud.xml as a template) and introduce all necessary changes. "
 msgstr ""
+"jboss/infinispan-"
+"serverをベースにした独自のDockerイメージを作成するのは非常に簡単です。まず、Infinispanのリリースに同梱されている設定用XMLファイルを準備する必要があります。 "
+"link:http://infinispan.org/download/[Infinispanのダウンロードセクション] "
+"にアクセスして、選択したDockerイメージタグに対応するサーバーリリースを取得し、解凍した後、設定ファイル（私はcloud."
+"xmlをテンプレートとして使用しています）を取得して、必要な変更をすべて導入します。"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:28
+#, fuzzy
 msgid "Finally, build your image:"
-msgstr ""
+msgstr "最後にイメージを構築します。"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:34
+#, fuzzy
 msgid "Now, that was quick! Wasn't it?"
-msgstr ""
+msgstr "今のは早かった！そうだろ？"
 
 #. type: Title =====
 #: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:35
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using ConfigMaps with OpenShift"
-msgstr ""
+msgstr "OpenShiftでConfigMapsを使う"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:42
-msgid "If you're using https://www.openshift.org/[OpenShift], there's a sophisticated tool called https://docs.openshift.org/latest/dev_guide/configmaps.html[ConfigMap].  A ConfigMap can store a configuration file (or a configuration directory) and mount it somewhere in the Pod."
+#, fuzzy
+msgid ""
+"If you're using https://www.openshift.org/[OpenShift], there's a "
+"sophisticated tool called https://docs.openshift.org/latest/dev_guide/"
+"configmaps.html[ConfigMap].  A ConfigMap can store a configuration file (or "
+"a configuration directory) and mount it somewhere in the Pod."
 msgstr ""
+"link:https://www.openshift.org/[OpenShiftを] 使用している場合、 link:https://docs."
+"openshift.org/latest/dev_guide/configmaps.html[ConfigMap] "
+"という洗練されたツールがあります。ConfigMapは設定ファイル（または設定ディレクトリ）を保存し、Podのどこかにマウントすることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:45
-msgid "Use the command below to create a ConfigMap based on a configuration file:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Use the command below to create a ConfigMap based on a configuration file:"
+msgstr "以下のコマンドを使用して、設定ファイルに基づいて ConfigMap を作成します。"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:51
-msgid "Now create Infinispan application based on the configuration below (you can use 'oc create -f <file.yaml>' for this):"
+#, fuzzy
+msgid ""
+"Now create Infinispan application based on the configuration below (you can "
+"use 'oc create -f <file.yaml>' for this):"
 msgstr ""
+"以下の設定に基づいて Infinispan アプリケーションを作成します (これには 'oc create -f <file.yaml>' "
+"を使用できます)。"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:55
+#, fuzzy
 msgid "(lines 50 - 52) - ConfigMap volume declaration"
-msgstr ""
+msgstr "(50 行目 - 52 行目) - ConfigMap ボリューム宣言"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:57
-msgid "(lines 45 - 47) - Mounting configuration into _/opt/jboss/infinispan-server/standalone/configuration/custom_"
+#, fuzzy
+msgid ""
+"(lines 45 - 47) - Mounting configuration into _/opt/jboss/infinispan-server/"
+"standalone/configuration/custom_"
 msgstr ""
+"(45 行目 - 47 行目) - /opt/ _jboss/infinispan-server/standalone/configuration/"
+"custom_ に設定をマウントします。"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:59
-msgid "(line 22) - bootstrapping the Infinispan with custom configuration (note there is no xml extension there)"
-msgstr ""
+#, fuzzy
+msgid ""
+"(line 22) - bootstrapping the Infinispan with custom configuration (note "
+"there is no xml extension there)"
+msgstr "(22 行目) - カスタム設定で Infinispan をブートストラップします (xml 拡張機能はありません)。"
 
 #. type: Title =====
 #: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:60
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using ConfigMaps with Kubernetes"
-msgstr ""
+msgstr "KubernetesでConfigMapsを使う"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:64
-msgid "Kubernetes http://kubernetes.io/docs/user-guide/configmap/[ConfigMaps] work exactly the same way as in OpenShift."
+#, fuzzy
+msgid ""
+"Kubernetes http://kubernetes.io/docs/user-guide/configmap/[ConfigMaps] work "
+"exactly the same way as in OpenShift."
 msgstr ""
+"Kubernetes link:http://kubernetes.io/docs/user-guide/configmap/[ConfigMaps] "
+"はOpenShiftと全く同じように動作します。"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:68
+#, fuzzy
 msgid "The command below creates a ConfigMap:"
-msgstr ""
+msgstr "以下のコマンドで ConfigMap を作成します。"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:72
+#, fuzzy
 msgid "The second step is to create a Deployment with ConfigMap:"
-msgstr ""
+msgstr "2つ目のステップは、ConfigMapを使ったデプロイメントの作成です。"
 
 #. type: Title =====
 #: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:75
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Conclusion"
-msgstr ""
+msgstr "結論"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:79
-msgid "If you're using any Docker orchestration tool - have a look at provided tools. OpenShift and Kubernetes ConfigMaps are really great for this."
+#, fuzzy
+msgid ""
+"If you're using any Docker orchestration tool - have a look at provided "
+"tools. OpenShift and Kubernetes ConfigMaps are really great for this."
 msgstr ""
+"任意のDockerオーケストレーションツールを使用している場合 - 提供されているツールを見てみましょう。OpenShiftとKubernetes "
+"ConfigMapsは本当に素晴らしいです。"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:83
-msgid "However if you need a fine grained control - either extend our Docker image (this is the preferred way) or simply fork and modify it."
-msgstr ""
+#, fuzzy
+msgid ""
+"However if you need a fine grained control - either extend our Docker image "
+"(this is the preferred way) or simply fork and modify it."
+msgstr "しかし、細かい制御が必要な場合は、Dockerイメージを拡張するか（これが好ましい方法です）、フォークして変更するだけです。"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-02-configuration-management-on-openshift.adoc:86
+#, fuzzy
 msgid "Happy configuring and scaling!"
-msgstr ""
+msgstr "設定とスケーリングに満足しています。"

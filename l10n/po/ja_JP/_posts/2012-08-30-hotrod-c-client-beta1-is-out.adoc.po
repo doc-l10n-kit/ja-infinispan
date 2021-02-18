@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-08-30-hotrod-c-client-beta1-is-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-08-30-hotrod-c-client-beta1-is-out.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: HotRod C# client Beta1 is out!\n"
@@ -35,52 +35,101 @@ msgid ""
 "\"hotrod\",\n"
 "\"gsoc\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6420755109991399954\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/08/hotrod-c-client-beta1-is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6420755109991399954\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/08/hotrod-c-client-beta1-"
+"is-out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: HotRodのC#クライアントBeta1が出ました!\n"
+"permalink: /blog/:year/:month/:day/hotrod-c-client-beta1-is-out\n"
+"date: '2012-08-30T13:04:00.000-07:00'\n"
+"author: mmarkus\n"
+"tags: [ \"csharp\",\n"
+"\"hotrod\",\n"
+"\"gsoc\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6420755109991399954\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/08/hotrod-c-client-beta1-"
+"is-out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-08-30-hotrod-c-client-beta1-is-out.adoc:16
-msgid "Thanks to a sustained effort from  http://twitter.com/sunimalr[Sunimal Rathnayake], the C# HotRod client has evolved quite a bit:"
+#, fuzzy
+msgid ""
+"Thanks to a sustained effort from  http://twitter.com/sunimalr[Sunimal "
+"Rathnayake], the C# HotRod client has evolved quite a bit:"
 msgstr ""
+"Sunimal link:http://twitter.com/sunimalr[Rathnayake] 氏の継続的な努力のおかげで、C link:"
+"http://twitter.com/sunimalr[#] HotRodクライアントはかなり進化しました。"
 
 #. type: Plain text
 #: upstream/_posts/2012-08-30-hotrod-c-client-beta1-is-out.adoc:19
+#, fuzzy
 msgid "the public API was polished and finalized"
-msgstr ""
+msgstr "公開APIが洗練され、最終的には"
 
 #. type: Plain text
 #: upstream/_posts/2012-08-30-hotrod-c-client-beta1-is-out.adoc:23
-msgid "the client was upgraded to 2nd level of intelligence: that means that it can automatically piggyback cluster's topology information from the servers. E.g. if a new server is added, the client is made aware of it and can start balancing requests towards that server"
+#, fuzzy
+msgid ""
+"the client was upgraded to 2nd level of intelligence: that means that it can "
+"automatically piggyback cluster's topology information from the servers. E.g."
+" if a new server is added, the client is made aware of it and can start "
+"balancing requests towards that server"
 msgstr ""
+"クライアントは第二レベルのインテリジェンスにアップグレードされました: "
+"これはクラスタのトポロジ情報を自動的にサーバからピギーバックできることを意味します。例えば、新しいサーバが追加された場合、クライアントはそれを認識し、そのサーバへのリクエストのバランシングを開始することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-08-30-hotrod-c-client-beta1-is-out.adoc:24
+#, fuzzy
 msgid "a pluggable load balancing policy was added (defaults to round robin) "
-msgstr ""
+msgstr "プラグイン可能なロードバランシングポリシーが追加されました (デフォルトはラウンドロビン)"
 
 #. type: Plain text
 #: upstream/_posts/2012-08-30-hotrod-c-client-beta1-is-out.adoc:25
+#, fuzzy
 msgid "various other bug fixes backed by an growing test suite"
-msgstr ""
+msgstr "成長するテストスイートに裏打ちされた様々なバグ修正"
 
 #. type: Plain text
 #: upstream/_posts/2012-08-30-hotrod-c-client-beta1-is-out.adoc:30
-msgid "We've also set up https://community.jboss.org/wiki/HotRodCClientDevelopmentSetup[a development setupiv document] to speed you up in case you want to take a look at the code or contribute. "
+#, fuzzy
+msgid ""
+"We've also set up https://community.jboss.org/wiki/"
+"HotRodCClientDevelopmentSetup[a development setupiv document] to speed you "
+"up in case you want to take a look at the code or contribute. "
 msgstr ""
+"また、コードを見てみたい、貢献してみたいという場合に備えて、 link:https://community.jboss.org/wiki/"
+"HotRodCClientDevelopmentSetup[開発のsetupivドキュメントを] 設定して、スピードアップを図っています。"
 
 #. type: Plain text
 #: upstream/_posts/2012-08-30-hotrod-c-client-beta1-is-out.adoc:38
-msgid "You can download it from https://github.com/infinispan/dotnet-client/downloads[here] - please give it a try and don't hesitate to post your comments to our http://www.jboss.org/infinispan/mailinglists[forums], http://www.jboss.org/infinispan/mailinglists[the mailing list]  or irc://irc.freenode.org/infinispan[contact us directly on IRC] for a chat!"
+#, fuzzy
+msgid ""
+"You can download it from https://github.com/infinispan/dotnet-client/"
+"downloads[here] - please give it a try and don't hesitate to post your "
+"comments to our http://www.jboss.org/infinispan/mailinglists[forums], http://"
+"www.jboss.org/infinispan/mailinglists[the mailing list]  or irc://irc."
+"freenode.org/infinispan[contact us directly on IRC] for a chat!"
 msgstr ""
+"link:https://github.com/infinispan/dotnet-client/downloads[ここ] からダウンロードできます -"
+" 試してみて、遠慮なく link:http://www.jboss.org/infinispan/mailinglists[フォーラム] や link:"
+"http://www.jboss.org/infinispan/mailinglists[メーリングリスト] にコメントを投稿して link:irc://"
+"irc.freenode.org/infinispan[ください] 。"
 
 #. type: Plain text
 #: upstream/_posts/2012-08-30-hotrod-c-client-beta1-is-out.adoc:42
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2012-08-30-hotrod-c-client-beta1-is-out.adoc:44
+#, fuzzy
 msgid "Mircea"
-msgstr ""
+msgstr "ミルチェア"

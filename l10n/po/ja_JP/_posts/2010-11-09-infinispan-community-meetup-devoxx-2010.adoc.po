@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-11-09-infinispan-community-meetup-devoxx-2010.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-11-09-infinispan-community-meetup-devoxx-2010.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan Community Meetup @ Devoxx 2010\n"
@@ -32,43 +32,118 @@ msgid ""
 "date: '2010-11-09T15:29:00.000-08:00'\n"
 "author: msurtani\n"
 "tags: [ \" meetup\", \"devoxx\", \"community\" ]\n"
-"thumbnail: http://4.bp.blogspot.com/_ca0W9t-Ryos/TNnY_a6dhNI/AAAAAAAABXg/rODRWTC5VAE/s72-c/kulminator-interior.jpg\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3379598203980503310\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/11/infinispan-community-meetup-devoxx-2010.html\n"
+"thumbnail: http://4.bp.blogspot.com/_ca0W9t-Ryos/TNnY_a6dhNI/AAAAAAAABXg/"
+"rODRWTC5VAE/s72-c/kulminator-interior.jpg\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3379598203980503310\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/11/infinispan-community-"
+"meetup-devoxx-2010.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan Community Meetup @ Devoxx 2010\n"
+"permalink: /blog/:year/:month/:day/infinispan-community-meetup-devoxx-2010\n"
+"date: '2010-11-09T15:29:00.000-08:00'\n"
+"author: msurtani\n"
+"tags: [ \" meetup\", \"devoxx\", \"community\" ]\n"
+"thumbnail: http://4.bp.blogspot.com/_ca0W9t-Ryos/TNnY_a6dhNI/AAAAAAAABXg/"
+"rODRWTC5VAE/s72-c/kulminator-interior.jpg\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3379598203980503310\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/11/infinispan-community-"
+"meetup-devoxx-2010.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-11-09-infinispan-community-meetup-devoxx-2010.adoc:13
-msgid "http://4.bp.blogspot.com/_ca0W9t-Ryos/TNnY_a6dhNI/AAAAAAAABXg/rODRWTC5VAE/s1600/kulminator-interior.jpg[image:http://4.bp.blogspot.com/_ca0W9t-Ryos/TNnY_a6dhNI/AAAAAAAABXg/rODRWTC5VAE/s400/kulminator-interior.jpg[image,width=400,height=300]]"
+#, fuzzy
+msgid ""
+"http://4.bp.blogspot.com/_ca0W9t-Ryos/TNnY_a6dhNI/AAAAAAAABXg/rODRWTC5VAE/"
+"s1600/kulminator-interior.jpg[image:http://4.bp.blogspot.com/_ca0W9t-Ryos/"
+"TNnY_a6dhNI/AAAAAAAABXg/rODRWTC5VAE/s400/kulminator-interior.jpg[image,width="
+"400,height=300]]"
 msgstr ""
+"link:http://4.bp.blogspot.com/_ca0W9t-Ryos/TNnY_a6dhNI/AAAAAAAABXg/"
+"rODRWTC5VAE/s1600/kulminator-interior.jpg[]"
 
 #. type: Plain text
 #: upstream/_posts/2010-11-09-infinispan-community-meetup-devoxx-2010.adoc:29
-msgid "http://www.infinispan.org/[Infinispan] and http://seamframework.org/[Seam] are doing it again, and this year http://jboss.org/arquillian[Arquillian] will be there to keep things in check: a community social in the midst of Europe's premier Java conference, http://www.devoxx.com/display/Devoxx2K10/Home[Devoxx] in Antwerp. If you plan to be at Devoxx - or just happen to be nearby - and fancy an evening of in-depth conversation about three open source projects set to rock the enterprise, come on by and partake in some of the finest beer in the world with the project core developers. Demos, design discussions, architectural questions are all fair game. Join our pilgrimage to http://beeradvocate.com/beer/profile/1232/?view=beerfly&ba=tendermorsel[Kulminator] at 20:00 on Monday the 15th of November (near the http://maps.google.com/maps?q=Groenplaats,+Meir+2000+Antwerp,+Flemish+Region,+Belgium&ie=UTF8&hq=&hnear=Groenplaats&ei=19XZTLyrFZDCswb_nIDkBw&ved=0CBUQ8gEwAA&hl=en&cd=2&geocode=FauIDQMdnClDAA&split=0&sll=37.0625,-95.677068&sspn=23.875,57.630033&z=17[Groenplaats] Station)."
+#, fuzzy
+msgid ""
+"http://www.infinispan.org/[Infinispan] and http://seamframework.org/[Seam] "
+"are doing it again, and this year http://jboss.org/arquillian[Arquillian] "
+"will be there to keep things in check: a community social in the midst of "
+"Europe's premier Java conference, http://www.devoxx.com/display/Devoxx2K10/"
+"Home[Devoxx] in Antwerp. If you plan to be at Devoxx - or just happen to be "
+"nearby - and fancy an evening of in-depth conversation about three open "
+"source projects set to rock the enterprise, come on by and partake in some "
+"of the finest beer in the world with the project core developers. Demos, "
+"design discussions, architectural questions are all fair game. Join our "
+"pilgrimage to http://beeradvocate.com/beer/profile/1232/?view=beerfly&ba="
+"tendermorsel[Kulminator] at 20:00 on Monday the 15th of November (near the "
+"http://maps.google.com/maps?q="
+"Groenplaats,+Meir+2000+Antwerp,+Flemish+Region,+Belgium&ie=UTF8&hq=&hnear="
+"Groenplaats&ei=19XZTLyrFZDCswb_nIDkBw&ved=0CBUQ8gEwAA&hl=en&cd=2&geocode="
+"FauIDQMdnClDAA&split=0&sll=37.0625,-95.677068&sspn=23.875,57.630033&z="
+"17[Groenplaats] Station)."
 msgstr ""
+"link:http://www.infinispan.org/[Infinispan] と link:http://seamframework.org/"
+"[Seam] が今年もやっていますが、今年は link:http://jboss.org/arquillian[Arquillian] "
+"も参加して、ヨーロッパで最も権威のあるJavaカンファレンス、アントワープで開催される link:http://www.devoxx.com/"
+"display/Devoxx2K10/Home[Devoxx] "
+"の最中にコミュニティソーシャルを開催します。Devoxxに参加される予定の方、あるいはお近くにお住まいの方で、企業を揺るがす3つのオープンソースプロジェクトについての綿密な会話を楽しみたい方は、ぜひお立ち寄りいただき、プロジェクトのコア開発者と一緒に世界最高のビールを飲みましょう。デモ、デザインの議論、アーキテクチャに関する質問など、すべてが公平なゲームです。11月15日（月）20:"
+"00に link:http://beeradvocate.com/beer/profile/1232/?view=beerfly&ba="
+"tendermorsel[Kulminator] への巡礼に参加しましょう（ link:http://maps.google.com/maps?q="
+"Groenplaats,+Meir+2000+Antwerp,+Flemish+Region,+Belgium&ie=UTF8&hq=&hnear="
+"Groenplaats&ei=19XZTLyrFZDCswb_nIDkBw&ved=0CBUQ8gEwAA&hl=en&cd=2&geocode="
+"FauIDQMdnClDAA&split=0&sll=37.0625,-95.677068&sspn=23.875,57.630033&z="
+"17[Groenplaats] 駅近く）。"
 
 #. type: Plain text
 #: upstream/_posts/2010-11-09-infinispan-community-meetup-devoxx-2010.adoc:34
-msgid "And a quick note, just because open source is all about Free as in Speech doesn't mean we can't have free beer. Yes, we're sponsoring beer as well as other project-related goodies, but these are limited, first come first served."
+#, fuzzy
+msgid ""
+"And a quick note, just because open source is all about Free as in Speech "
+"doesn't mean we can't have free beer. Yes, we're sponsoring beer as well as "
+"other project-related goodies, but these are limited, first come first "
+"served."
 msgstr ""
+"そして、オープンソースは「Free as in "
+"Speech」ということで、無料のビールが飲めないわけではありません。はい、ビールや他のプロジェクト関連のグッズをスポンサーしていますが、数に限りがありますので、先着順でお願いします。"
 
 #. type: Plain text
 #: upstream/_posts/2010-11-09-infinispan-community-meetup-devoxx-2010.adoc:40
-msgid "[.underline]#*Details*# *Where:* http://beeradvocate.com/beer/profile/1232/[Kulminator], close to Groenplaats Station, Antwerp *When:* Monday the 15th of November, 2010 *What time:* 20:00"
+#, fuzzy
+msgid ""
+"[.underline]#*Details*# *Where:* http://beeradvocate.com/beer/profile/1232/"
+"[Kulminator], close to Groenplaats Station, Antwerp *When:* Monday the 15th "
+"of November, 2010 *What time:* 20:00"
 msgstr ""
+"*詳細* *場所* link:http://beeradvocate.com/beer/profile/1232/[Kulminator] "
+"、Groenplaats駅近く、アントワープい *つ* 。2010年11月15日（月） *時間：* 20:00"
 
 #. type: Plain text
 #: upstream/_posts/2010-11-09-infinispan-community-meetup-devoxx-2010.adoc:45
-msgid "[.small]#http://maps.google.com/maps?q=Kulminator,Vleminckveld+32,Antwerpen,BE,2000&ie=UTF8&hq=Kulminator&hnear=Vleminckveld+32,+2000+Antwerpen,+AN,+Vlaams+Gewest,+Belgium&ll=51.214577,4.403265&spn=0.006295,0.006295&source=embed[View Larger Map]#"
+#, fuzzy
+msgid ""
+"[.small]#http://maps.google.com/maps?q="
+"Kulminator,Vleminckveld+32,Antwerpen,BE,2000&ie=UTF8&hq=Kulminator&hnear="
+"Vleminckveld+32,+2000+Antwerpen,+AN,+Vlaams+Gewest,+Belgium&ll=51.214577,4."
+"403265&spn=0.006295,0.006295&source=embed[View Larger Map]#"
 msgstr ""
+"link:http://maps.google.com/maps?q="
+"Kulminator,Vleminckveld+32,Antwerpen,BE,2000&ie=UTF8&hq=Kulminator&hnear="
+"Vleminckveld+32,+2000+Antwerpen,+AN,+Vlaams+Gewest,+Belgium&ll=51.214577,4."
+"403265&spn=0.006295,0.006295&source=embed[大きな地図で見る]"
 
 #. type: Plain text
 #: upstream/_posts/2010-11-09-infinispan-community-meetup-devoxx-2010.adoc:47
+#, fuzzy
 msgid "Hope to see many of you there!"
-msgstr ""
+msgstr "たくさんの方にお会いできることを楽しみにしています。"
 
 #. type: Plain text
 #: upstream/_posts/2010-11-09-infinispan-community-meetup-devoxx-2010.adoc:49
+#, fuzzy
 msgid "Cheers Manik"
-msgstr ""
+msgstr "乾杯 マニク"

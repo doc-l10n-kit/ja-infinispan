@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-02-01-infinispan-820beta1-and-811final-are-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-01-infinispan-820beta1-and-811final-are-out.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 8.2.0.Beta1 and 8.1.1.Final are out!\n"
@@ -35,45 +35,70 @@ msgid ""
 "\"release\",\n"
 "\"final\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8968219584260881281\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/02/infinispan-820beta1-and-811final-are-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8968219584260881281\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/02/infinispan-820beta1-"
+"and-811final-are-out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 8.2.0.Beta1と8.1.1.Finalが出ました!\n"
+"permalink: /blog/:year/:month/:day/infinispan-820beta1-and-811final-are-out\n"
+"date: '2016-02-01T06:24:00.001-08:00'\n"
+"author: ttarrant\n"
+"tags: [ \"beta\",\n"
+"\"release\",\n"
+"\"final\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8968219584260881281\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/02/infinispan-820beta1-"
+"and-811final-are-out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-01-infinispan-820beta1-and-811final-are-out.adoc:15
+#, fuzzy
 msgid "Dear all,"
-msgstr ""
+msgstr "親愛なる皆様。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-01-infinispan-820beta1-and-811final-are-out.adoc:17
+#, fuzzy
 msgid "We are proud to announce two releases today:"
-msgstr ""
+msgstr "本日は2つのリリースをお知らせします。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-01-infinispan-820beta1-and-811final-are-out.adoc:23
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Infinispan 8.2.0.Beta1* is the first release in the 8.2 cycle. It\n"
 "doesn't have big new features, but there are a few significant changes\n"
 "in addition to the usual\n"
-"https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12328082[bug\n"
+"https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
+"12328082[bug\n"
 "fixes]:\n"
 msgstr ""
+"*Infinispan 8.2.0.Beta1は* 8.2サイクルの最初のリリースです。大きな新機能はありませんが、通常の link:https://"
+"issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
+"12328082[バグ修正に] 加えていくつかの重要な変更があります。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-01-infinispan-820beta1-and-811final-are-out.adoc:28
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*SyncConsistentHashFactory* is now the default consistent hash factory\n"
 "(https://issues.jboss.org/browse/ISPN-4851[ISPN-4851]). This means the\n"
 "owners of a key are going to be the same in all the caches, as long as\n"
 "the caches have the same members and the same number of owners.\n"
 msgstr ""
+"*SyncConsistentHashFactory* はデフォルトの一貫性のあるハッシュファクトリ link:https://issues.jboss."
+"org/browse/ISPN-4851[(ISPN-4851] ) "
+"になりました。これは、キャッシュが同じメンバーと同じ数の所有者を持っている限り、キーの所有者がすべてのキャッシュで同じになることを意味します。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-01-infinispan-820beta1-and-811final-are-out.adoc:34
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "We now have a new way for applications to determine the location of\n"
 "keys: the *KeyPartitioner* interface\n"
@@ -82,18 +107,24 @@ msgid ""
 "segment-aware. Note that none of the HotRod clients support\n"
 "*Keypartitioner* in this release.\n"
 msgstr ""
+"*KeyPartitioner* インターフェース link:https://issues.jboss.org/browse/ISPN-"
+"5465[(ISPN-5465] ) です。精神的には既存の *Grouper* "
+"インターフェイスに非常に似ていますが、セグメントを意識しています。このリリースでは、HotRodクライアントのどれも *Keypartitionerを* "
+"サポートしていないことに注意してください。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-01-infinispan-820beta1-and-811final-are-out.adoc:36
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "We improved the rolling upgrade performance\n"
 "(https://issues.jboss.org/browse/ISPN-6046[ISPN-6046]).\n"
 msgstr ""
+"ローリングアップグレード性能 link:https://issues.jboss.org/browse/ISPN-6046[（ISPN-6046] "
+"）の改善を行いました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-01-infinispan-820beta1-and-811final-are-out.adoc:41
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "We added a new event logger that records cluster membership, cache\n"
 "topology, and cache availability changes\n"
@@ -101,17 +132,33 @@ msgid ""
 "release, it will also be accessible through the server's management\n"
 "console.\n"
 msgstr ""
+"クラスタメンバーシップ、キャッシュトポロジー、キャッシュ可用性の変更を記録するイベントロガーを追加しました link:https://issues."
+"jboss.org/browse/ISPN-5816[（ISPN-5816] "
+"）。次のリリースでは、サーバーの管理コンソールからもアクセスできるようになります。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-01-infinispan-820beta1-and-811final-are-out.adoc:45
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Infinispan 8.1.1.Final* includes a number of\n"
-"https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12329050[bug\n"
+"https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
+"12329050[bug\n"
 "fixes]. All users of 8.1.0.Final are encouraged to upgrade.\n"
 msgstr ""
+"*Infinispan 8.1.1.Final* には多くの link:https://issues.jboss.org/secure/"
+"ReleaseNote.jspa?projectId=12310799&version=12329050[バグフィックスが] 含まれています。8.1.0."
+"Finalをお使いの方は、アップグレードをお勧めします。"
 
 #. type: Plain text
 #: upstream/_posts/2016-02-01-infinispan-820beta1-and-811final-are-out.adoc:51
-msgid "You can get both releases from our http://infinispan.org/download/[download page]. If you are new to Infinispan, you can http://infinispan.org/tutorials/[learn] how to use it, and http://infinispan.org/getinvolved/[help] us continually improve it."
+#, fuzzy
+msgid ""
+"You can get both releases from our http://infinispan.org/download/[download "
+"page]. If you are new to Infinispan, you can http://infinispan.org/tutorials/"
+"[learn] how to use it, and http://infinispan.org/getinvolved/[help] us "
+"continually improve it."
 msgstr ""
+"link:http://infinispan.org/download/[ダウンロードページ] "
+"から両方のリリースを入手することができます。初めてInfinispanをご利用になる方は、使い方を link:http://infinispan.org/"
+"tutorials/[学んで] いただき、継続的な改善にお link:http://infinispan.org/getinvolved/[役立て] "
+"ください。"

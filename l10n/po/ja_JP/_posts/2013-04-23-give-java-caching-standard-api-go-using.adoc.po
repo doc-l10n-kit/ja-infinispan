@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-04-23-give-java-caching-standard-api-go-using.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-23-give-java-caching-standard-api-go-using.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Give Java Caching Standard API a go using Infinispan 5.3.0.Alpha1!\n"
@@ -32,32 +32,84 @@ msgid ""
 "date: '2013-04-23T07:41:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \"jsr 107\",\"cdi\", \"jcache\", \"alpha\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5452805369361325028\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/04/give-java-caching-standard-api-go-using.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5452805369361325028\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/04/give-java-caching-"
+"standard-api-go-using.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 5.3.0.Alpha1を使ってJava Caching Standard APIを試してみましょう!\n"
+"permalink: /blog/:year/:month/:day/give-java-caching-standard-api-go-using\n"
+"date: '2013-04-23T07:41:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"jsr 107\",\"cdi\", \"jcache\", \"alpha\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5452805369361325028\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/04/give-java-caching-"
+"standard-api-go-using.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-23-give-java-caching-standard-api-go-using.adoc:19
-msgid "As part of the recent http://infinispan.blogspot.com.br/2013/04/infinispan-server-530alpha1.html[Infinispan 5.3.0.Alpha1], the first https://github.com/infinispan/infinispan/tree/5.3.0.Alpha1/jcache[Infinispan JCache implementation] was released which implements version 0.6 of the JCache specification as defined by http://www.jcp.org/en/jsr/detail?id=107[JSR-107]. It passes 100% the mandatory TCK including optional transactions TCK."
+#, fuzzy
+msgid ""
+"As part of the recent http://infinispan.blogspot.com.br/2013/04/infinispan-"
+"server-530alpha1.html[Infinispan 5.3.0.Alpha1], the first https://github.com/"
+"infinispan/infinispan/tree/5.3.0.Alpha1/jcache[Infinispan JCache "
+"implementation] was released which implements version 0.6 of the JCache "
+"specification as defined by http://www.jcp.org/en/jsr/detail?id=107[JSR-107]."
+" It passes 100% the mandatory TCK including optional transactions TCK."
 msgstr ""
+"最近のInfinispan link:http://infinispan.blogspot.com.br/2013/04/infinispan-"
+"server-530alpha1.html[5.3.0.Alpha1の] 一部として、 link:http://www.jcp.org/en/jsr/"
+"detail?id=107[JSR] -107で定義されたJCache仕様のバージョン0.6を実装した最初の link:https://github."
+"com/infinispan/infinispan/tree/5.3.0.Alpha1/jcache[Infinispan JCache実装が] "
+"リリースされました。これは、オプションのトランザクションTCKを含む必須TCKを100%パスします。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-23-give-java-caching-standard-api-go-using.adoc:26
-msgid "A https://docs.jboss.org/author/x/IwHhAw[document on how to use Infinispan JCache implementation] has just been released, which explains the basics of using JCache, how it differs with existing APIs provided by the JDK, and how to cluster JCache based cache instances. More information will be added to the document, including quickstarts, as we make further progress in the Infinispan 5.3 series."
+#, fuzzy
+msgid ""
+"A https://docs.jboss.org/author/x/IwHhAw[document on how to use Infinispan "
+"JCache implementation] has just been released, which explains the basics of "
+"using JCache, how it differs with existing APIs provided by the JDK, and how "
+"to cluster JCache based cache instances. More information will be added to "
+"the document, including quickstarts, as we make further progress in the "
+"Infinispan 5.3 series."
 msgstr ""
+"link:https://docs.jboss.org/author/x/IwHhAw[Infinispan "
+"JCache実装の使い方に関するドキュメントが] "
+"リリースされたばかりで、JCacheの使い方の基本、JDKで提供されている既存のAPIとの違い、JCacheベースのキャッシュインスタンスをクラスタリングする方法などが解説されています。Infinispan "
+"5.3シリーズのさらなる進展に合わせて、クイックスタートを含めて、より多くの情報がこのドキュメントに追加される予定です。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-23-give-java-caching-standard-api-go-using.adoc:31
-msgid "Please note that the CDI and annotations part of JCache 0.6 specification is still in flux, and we're not yet able to provide an implementation for it, but we expect the issues stopping the implementation to be resolved in the near future."
+#, fuzzy
+msgid ""
+"Please note that the CDI and annotations part of JCache 0.6 specification is "
+"still in flux, and we're not yet able to provide an implementation for it, "
+"but we expect the issues stopping the implementation to be resolved in the "
+"near future."
 msgstr ""
+"JCache 0."
+"6仕様のCDIとアノテーションの部分はまだ流動的で、実装を提供できていませんが、近いうちに実装を停止している問題が解決されることを期待していますので、ご注意ください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-23-give-java-caching-standard-api-go-using.adoc:37
-msgid "Finally, as it's expected from first releases, some bugs might be present, so if you encounter any misbehaviour, check http://goo.gl/FquL1[the list of issues associated with the JCache component] to see if the issue has already been resolved, or if not, please report it so that it can be fixed ASAP :)."
+#, fuzzy
+msgid ""
+"Finally, as it's expected from first releases, some bugs might be present, "
+"so if you encounter any misbehaviour, check http://goo.gl/FquL1[the list of "
+"issues associated with the JCache component] to see if the issue has already "
+"been resolved, or if not, please report it so that it can be fixed ASAP :)."
 msgstr ""
+"最後に、最初のリリースから予想されるように、いくつかのバグがあるかもしれませんので、もし誤動作が発生した場合は、 link:http://goo.gl/"
+"FquL1[JCacheコンポーネントに関連する問題のリストを] "
+"チェックして、その問題がすでに解決されているかどうかを確認するか、解決されていない場合は、早急に修正できるように報告してください :)。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-23-give-java-caching-standard-api-go-using.adoc:39
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

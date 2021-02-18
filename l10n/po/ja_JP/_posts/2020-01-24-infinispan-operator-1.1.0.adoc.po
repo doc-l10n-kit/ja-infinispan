@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:8
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan Operator 1.1.0 is out!\n"
@@ -34,138 +34,251 @@ msgid ""
 "tags: [ \"release\", \"operator\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan Operator 1.1.0が出ました!\n"
+"permalink: /blog/:year/:month/:day/infinispan-operator-1\n"
+"date: '2020-01-24T12:00:00.000-00:00'\n"
+"author: galder\n"
+"tags: [ \"release\", \"operator\" ]\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:13
-msgid "We're pleased to announce https://operatorhub.io/operator/infinispan[version 1.1.0 of the Infinispan Operator] for Kubernetes and OpenShift."
+#, fuzzy
+msgid ""
+"We're pleased to announce https://operatorhub.io/operator/infinispan[version "
+"1.1.0 of the Infinispan Operator] for Kubernetes and OpenShift."
 msgstr ""
+"Kubernetes と OpenShift 用の link:https://operatorhub.io/operator/"
+"infinispan[Infinispan Operator のバージョン 1.1] .0 を発表します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:15
-msgid "This release includes a bunch of very exciting features! Let's dig into them:"
-msgstr ""
+#, fuzzy
+msgid ""
+"This release includes a bunch of very exciting features! Let's dig into them:"
+""
+msgstr "このリリースには、非常にエキサイティングな機能がたくさん含まれています。それらを掘り下げてみましょう。"
 
 #. type: Title ==
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:16
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Full Lifecycle"
-msgstr ""
+msgstr "フルライフサイクル"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:21
-msgid "Infinispan Operator 1.1.0 is rated at the `Full Lifecycle` capacity level, which means the Operator now provides advanced cluster management capabilities and functionality to handle demanding workloads."
+#, fuzzy
+msgid ""
+"Infinispan Operator 1.1.0 is rated at the `Full Lifecycle` capacity level, "
+"which means the Operator now provides advanced cluster management "
+"capabilities and functionality to handle demanding workloads."
 msgstr ""
+"Infinispan Operator 1.1.0 は `Full Lifecycle` の容量レベルで評価されています。これは、Operator "
+"が高度なクラスタ管理機能と、要求の厳しいワークロードに対応する機能を提供するようになったことを意味します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:24
-msgid "One of the key new features in this release is graceful shutdown, which lets you bring clusters down safely to avoid data loss."
-msgstr ""
+#, fuzzy
+msgid ""
+"One of the key new features in this release is graceful shutdown, which lets "
+"you bring clusters down safely to avoid data loss."
+msgstr "このリリースの主な新機能の1つは、データの損失を避けるためにクラスタを安全に停止させることができる「グレースフルシャットダウン」です。"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:29
-msgid "During cluster shutdown, caches can passivate in-memory entries to persistent storage along with the internal Infinispan state that maps which nodes own which entries. When you bring Infinispan clusters back, all your data is restored to memory."
+#, fuzzy
+msgid ""
+"During cluster shutdown, caches can passivate in-memory entries to "
+"persistent storage along with the internal Infinispan state that maps which "
+"nodes own which entries. When you bring Infinispan clusters back, all your "
+"data is restored to memory."
 msgstr ""
+"クラスタのシャットダウン中、キャッシュは、どのノードがどのエントリを所有しているかをマップするInfinispanの内部状態とともに、メモリ内のエントリを永続的なストレージにパッシブ化することができます。Infinispan "
+"クラスタを戻すと、すべてのデータがメモリに復元されます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:32
-msgid "Check out the https://infinispan.org/infinispan-operator/master/operator.html#shutting_down-start[Graceful Shutdown] docs for more information."
+#, fuzzy
+msgid ""
+"Check out the https://infinispan.org/infinispan-operator/master/operator."
+"html#shutting_down-start[Graceful Shutdown] docs for more information."
 msgstr ""
+"詳細は link:https://infinispan.org/infinispan-operator/master/operator."
+"html#shutting_down-start[Graceful Shutdownの] ドキュメントをチェックしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:35
-msgid "Graceful shutdown also enables the Infinispan Operator to perform reliable upgrades."
-msgstr ""
+#, fuzzy
+msgid ""
+"Graceful shutdown also enables the Infinispan Operator to perform reliable "
+"upgrades."
+msgstr "優雅なシャットダウンにより、Infinispan オペレータは信頼性の高いアップグレードを実行することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:38
-msgid "When a new version of the Infinispan Operator starts, it checks for running Infinispan clusters that were created by an older Operator version."
+#, fuzzy
+msgid ""
+"When a new version of the Infinispan Operator starts, it checks for running "
+"Infinispan clusters that were created by an older Operator version."
 msgstr ""
+"新しいバージョンのInfinispan "
+"Operatorが起動すると、古いバージョンのOperatorで作成されたInfinispanクラスタが実行されているかどうかをチェックします。"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:41
-msgid "If the Operator detects a cluster that requires upgrade, it invokes a graceful shutdown on the cluster and then brings it back with the new Infinispan version."
+#, fuzzy
+msgid ""
+"If the Operator detects a cluster that requires upgrade, it invokes a "
+"graceful shutdown on the cluster and then brings it back with the new "
+"Infinispan version."
 msgstr ""
+"オペレータがアップグレードが必要なクラスタを検出した場合、クラスタを猶予付きでシャットダウンし、新しいバージョンの Infinispan "
+"で復帰させます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:44
-msgid "You can perform upgrade manually or automatically with the https://docs.openshift.com/container-platform/4.3/operators/understanding-olm/olm-understanding-olm.html[Operator Lifecycle Manager] on OpenShift."
+#, fuzzy
+msgid ""
+"You can perform upgrade manually or automatically with the https://docs."
+"openshift.com/container-platform/4.3/operators/understanding-olm/olm-"
+"understanding-olm.html[Operator Lifecycle Manager] on OpenShift."
 msgstr ""
+"OpenShift上の link:https://docs.openshift.com/container-platform/4.3/operators/"
+"understanding-olm/olm-understanding-olm.html[Operator Lifecycle Manager] "
+"で手動または自動でアップグレードを実行できます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:46
-msgid "Note that Operators installed via the OperatorHub on OpenShift Container Platform are managed by the Operator Lifecyle Manager."
+#, fuzzy
+msgid ""
+"Note that Operators installed via the OperatorHub on OpenShift Container "
+"Platform are managed by the Operator Lifecyle Manager."
 msgstr ""
+"OpenShift Container Platform上のOperatorHub経由でインストールされたOperatorは、Operator "
+"Lifecyle Managerによって管理されることに注意してください。"
 
 #. type: Title ==
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:47
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Cache vs DataGrid"
-msgstr ""
+msgstr "キャッシュとデータグリッド"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:50
-msgid "This version of the Infinispan Operator delivers Cache and DataGrid services."
-msgstr ""
+#, fuzzy
+msgid ""
+"This version of the Infinispan Operator delivers Cache and DataGrid services."
+""
+msgstr "このバージョンのInfinispan Operatorは、CacheとDataGridサービスを提供します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:54
-msgid "By default the Operator starts Infinispan clusters as Cache services, which provides a quick way to set up in-memory caching that stores data off-heap and keeps single copies of data in the cluster."
+#, fuzzy
+msgid ""
+"By default the Operator starts Infinispan clusters as Cache services, which "
+"provides a quick way to set up in-memory caching that stores data off-heap "
+"and keeps single copies of data in the cluster."
 msgstr ""
+"デフォルトでは、オペレータはInfinispanクラスタをキャッシュサービスとして起動します。これは、データをオフヒープに保存し、クラスタ内にデータの単一コピーを保持するインメモリキャッシングを素早く設定する方法を提供します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:57
-msgid "DataGrid services, on the other hand, are suited to more advanced use cases where you control and define the configuration that you need."
-msgstr ""
+#, fuzzy
+msgid ""
+"DataGrid services, on the other hand, are suited to more advanced use cases "
+"where you control and define the configuration that you need."
+msgstr "一方、DataGridサービスは、必要な設定を制御して定義する、より高度なユースケースに適しています。"
 
 #. type: Title ==
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:58
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Cross-Site Replication"
-msgstr ""
+msgstr "クロスサイトレプリケーション"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:62
-msgid "The Infinispan Operator simplifies cross-site replication set up with DataGrid services so you can back data up between separate Kubernetes or OpenShift clusters."
+#, fuzzy
+msgid ""
+"The Infinispan Operator simplifies cross-site replication set up with "
+"DataGrid services so you can back data up between separate Kubernetes or "
+"OpenShift clusters."
 msgstr ""
+"Infinispan "
+"Operatorは、DataGridサービスによるクロスサイトレプリケーションのセットアップを簡素化するので、別々のKubernetesまたはOpenShiftクラスタ間でデータをバックアップすることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:65
-msgid "All you need to do is specify which type of external Kubernetes service to expose, the list of all backup locations, access secrets, and the local site name."
-msgstr ""
+#, fuzzy
+msgid ""
+"All you need to do is specify which type of external Kubernetes service to "
+"expose, the list of all backup locations, access secrets, and the local site "
+"name."
+msgstr "公開する外部Kubernetesサービスの種類、全バックアップ先のリスト、アクセスシークレット、ローカルサイト名を指定するだけです。"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:68
-msgid "Find out more at: https://infinispan.org/infinispan-operator/master/operator.html#configuring_backup_sites[Cross-Site Replication]"
+#, fuzzy
+msgid ""
+"Find out more at: https://infinispan.org/infinispan-operator/master/operator."
+"html#configuring_backup_sites[Cross-Site Replication]"
 msgstr ""
+"詳細はこちらをご覧ください。 link:https://infinispan.org/infinispan-operator/master/"
+"operator.html#configuring_backup_sites[クロスサイト・レプリケーション]"
 
 #. type: Title ==
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:69
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Automatic TLS configuration"
-msgstr ""
+msgstr "自動TLS設定"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:74
-msgid "If you're running on Openshift and have a service that serves certificates, the Operator automatically asks for certificates sets up TLS for your endpoint connections. Encrypted by default with zero effort!"
+#, fuzzy
+msgid ""
+"If you're running on Openshift and have a service that serves certificates, "
+"the Operator automatically asks for certificates sets up TLS for your "
+"endpoint connections. Encrypted by default with zero effort!"
 msgstr ""
+"Openshift上で動作していて、証明書を提供するサービスがある場合、オペレータは自動的に証明書を要求し、エンドポイント接続のためのTLSを設定します。デフォルトで暗号化されています。"
 
 #. type: Title ==
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:75
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Operator: Get it, Use it, Ask us!"
-msgstr ""
+msgstr "運営者です。Get it, Use it, Ask us!"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:82
-msgid "Try the https://github.com/infinispan/infinispan-simple-tutorials/tree/master/operator[simple tutorial] for the Operator, which has been updated for this version.  The tutorial shows how to install the Operator manually, but it can also be installed via the Operator Hub on OpenShift."
+#, fuzzy
+msgid ""
+"Try the https://github.com/infinispan/infinispan-simple-tutorials/tree/"
+"master/operator[simple tutorial] for the Operator, which has been updated "
+"for this version.  The tutorial shows how to install the Operator manually, "
+"but it can also be installed via the Operator Hub on OpenShift."
 msgstr ""
+"今回のバージョンで更新された Operator の link:https://github.com/infinispan/infinispan-"
+"simple-tutorials/tree/master/operator[簡単なチュートリアル] "
+"をお試しください。チュートリアルではOperatorを手動でインストールする方法を紹介していますが、OpenShift上のOperator "
+"Hubを経由してインストールすることも可能です。"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:84
-msgid "You can https://github.com/infinispan/infinispan-operator/issues[report bugs]."
+#, fuzzy
+msgid ""
+"You can https://github.com/infinispan/infinispan-operator/issues[report "
+"bugs]."
 msgstr ""
+"link:https://github.com/infinispan/infinispan-operator/issues[バグを報告する] "
+"ことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-24-infinispan-operator-1.1.0.adoc:86
-msgid "Finally, a detailed list of issues and features for this version can be found https://github.com/infinispan/infinispan-operator/issues?q=milestone%3A1.1.0+is%3Aclosed[here]."
+#, fuzzy
+msgid ""
+"Finally, a detailed list of issues and features for this version can be "
+"found https://github.com/infinispan/infinispan-operator/issues?q="
+"milestone%3A1.1.0+is%3Aclosed[here]."
 msgstr ""
+"最後に、このバージョンの問題点と機能の詳細なリストは link:https://github.com/infinispan/infinispan-"
+"operator/issues?q=milestone%3A1.1.0+is%3Aclosed[こちらに] あります。"

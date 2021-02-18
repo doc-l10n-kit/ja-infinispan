@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.1 \"Bastille\"\n"
@@ -34,174 +34,290 @@ msgid ""
 "tags: [ \"release\",\n"
 "\"final\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4317501012346850277\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/07/infinispan-91-bastille.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4317501012346850277\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/07/infinispan-91-bastille."
+"html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: インフィニスパン9.1「バスティーユ\n"
+"permalink: /blog/:year/:month/:day/infinispan-91-bastille\n"
+"date: '2017-07-14T12:41:00.000-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\",\n"
+"\"final\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4317501012346850277\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/07/infinispan-91-bastille."
+"html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:14
+#, fuzzy
 msgid "Dear Infinispan users,"
-msgstr ""
+msgstr "Infinispanユーザーの皆様。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:18
-msgid "after 3½ months, we are proud to present to you our latest stable release, Infinispan 9.1, codenamed \"https://revbrew.com/beer/archive/bastille[Bastille]\"."
+#, fuzzy
+msgid ""
+"after 3½ months, we are proud to present to you our latest stable release, "
+"Infinispan 9.1, codenamed \"https://revbrew.com/beer/archive/"
+"bastille[Bastille]\"."
 msgstr ""
+"3ヶ月半後、私たちは最新の安定版リリースであるInfinispan 9.1、コードネームは link:https://revbrew.com/beer/"
+"archive/bastille[\"Bastille] \"をお届けできることを誇りに思っています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:22
-msgid "While minor releases are traditionally evolutionary instead of revolutionary, this release still comes loaded with a number of great features:"
-msgstr ""
+#, fuzzy
+msgid ""
+"While minor releases are traditionally evolutionary instead of "
+"revolutionary, this release still comes loaded with a number of great "
+"features:"
+msgstr "マイナーなリリースは革命的ではなく、伝統的に進化してきましたが、このリリースにはまだ多くの素晴らしい機能が搭載されています。"
 
 #. type: Title ==
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:23
-#, no-wrap
-msgid "http://infinispan.org/docs/stable/user_guide/user_guide.html#scattered_mode[Scattered cache]"
+#, no-wrap, fuzzy
+msgid ""
+"http://infinispan.org/docs/stable/user_guide/user_guide."
+"html#scattered_mode[Scattered cache]"
 msgstr ""
+"link:http://infinispan.org/docs/stable/user_guide/user_guide."
+"html#scattered_mode[散在するキャッシュ]"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:27
-msgid "A new clustered cache, similar to a distributed cache, but with a higher write throughput."
-msgstr ""
+#, fuzzy
+msgid ""
+"A new clustered cache, similar to a distributed cache, but with a higher "
+"write throughput."
+msgstr "分散型キャッシュに似ているが、書き込みスループットが高い新しいクラスター型キャッシュ。"
 
 #. type: Title ==
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:28
-#, no-wrap
-msgid "http://infinispan.org/docs/stable/user_guide/user_guide.html#conflict-manager[Consistency Checker, Conflict Resolution and Automatic merge policies]"
+#, no-wrap, fuzzy
+msgid ""
+"http://infinispan.org/docs/stable/user_guide/user_guide.html#conflict-"
+"manager[Consistency Checker, Conflict Resolution and Automatic merge "
+"policies]"
 msgstr ""
+"link:http://infinispan.org/docs/stable/user_guide/user_guide.html#conflict-"
+"manager[一貫性チェッカー、コンフリクト解決、自動マージポリシー]"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:33
-msgid "An overhaul to partition handling which allows much finer control about whether to allow reads and writes in split clusters and how data is reconciled when partitions are merged."
+#, fuzzy
+msgid ""
+"An overhaul to partition handling which allows much finer control about "
+"whether to allow reads and writes in split clusters and how data is "
+"reconciled when partitions are merged."
 msgstr ""
+"パーティション処理のオーバーホールにより、スプリットクラスタでの読み書きを許可するかどうかや、パーティションがマージされたときにデータがどのように調整されるかについて、より細かく制御できるようになりました。"
 
 #. type: Title ==
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:34
-#, no-wrap
-msgid "http://infinispan.org/docs/stable/user_guide/user_guide.html#clustered_counters[Clustered Counters]"
+#, no-wrap, fuzzy
+msgid ""
+"http://infinispan.org/docs/stable/user_guide/user_guide."
+"html#clustered_counters[Clustered Counters]"
 msgstr ""
+"link:http://infinispan.org/docs/stable/user_guide/user_guide."
+"html#clustered_counters[クラスタ化されたカウンタ]"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:40
-msgid "An implementation of clustered counters with both strong and weak semantics, threshold events, optional persistence and bounding.  Currently these are only available in embedded mode, but they will be usable over Hot Rod in Infinispan 9.2."
+#, fuzzy
+msgid ""
+"An implementation of clustered counters with both strong and weak semantics, "
+"threshold events, optional persistence and bounding.  Currently these are "
+"only available in embedded mode, but they will be usable over Hot Rod in "
+"Infinispan 9.2."
 msgstr ""
+"強弱セマンティクス、しきい値イベント、オプションの永続性とバウンディングを持つクラスタ化されたカウンタの実装です。現在は組み込みモードでしか利用できませんが、Infinispan "
+"9.2ではHot Rod上で利用できるようになる予定です。"
 
 #. type: Title ==
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:41
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Locked Streams"
-msgstr ""
+msgstr "ロックされたストリーム"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:48
-msgid "Locked streams allow you to run your stream processing operations knowing that another update cannot be performed while the Consumer is executed on an entry. Note this only works in non transactional and pessimistic transactional caches (optimistic transactional caches are not supported)."
+#, fuzzy
+msgid ""
+"Locked streams allow you to run your stream processing operations knowing "
+"that another update cannot be performed while the Consumer is executed on an "
+"entry. Note this only works in non transactional and pessimistic "
+"transactional caches (optimistic transactional caches are not supported)."
 msgstr ""
+"ロックされたストリームを使用すると、コンシューマがエントリに対して実行されている間は、別の更新を実行できないことを知っていながらストリーム処理操作を実行することができます。これは、非トランザクションキャッシュおよび悲観的なトランザクションキャッシュでのみ動作することに注意してください（楽観的なトランザクションキャッシュはサポートされていません）。"
 
 #. type: Title ==
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:49
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "API improvements"
-msgstr ""
+msgstr "APIの改善"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:56
-msgid "The compute(), computeIfPresent() and computeIfAbsent() methods on the Cache interface are now implemented as proper distributed operations so that they run local to the entries.  The DeltaAware interface for supporting granular clustered operations has been deprecated in favour of functional commands."
+#, fuzzy
+msgid ""
+"The compute(), computeIfPresent() and computeIfAbsent() methods on the Cache "
+"interface are now implemented as proper distributed operations so that they "
+"run local to the entries.  The DeltaAware interface for supporting granular "
+"clustered operations has been deprecated in favour of functional commands."
 msgstr ""
+"Cache インタフェースの compute()、computeIfPresent()、および computeIfAbsent() "
+"メソッドが適切な分散操作として実装され、エントリに対してローカルで実行されるようになりました。粒度の高いクラスタ処理をサポートする DeltaAware "
+"インタフェースは、機能コマンドを使用して廃止されました。"
 
 #. type: Title ==
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:57
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Persistence improvements"
-msgstr ""
+msgstr "永続性の改善"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:63
-msgid "The CacheStore SPI now supports write batching. The JDBC, JPA, RocksDB, Remote and File stores have been modified to take advantage of this. You should see great benefits when using write-behind or when using putAll operations."
+#, fuzzy
+msgid ""
+"The CacheStore SPI now supports write batching. The JDBC, JPA, RocksDB, "
+"Remote and File stores have been modified to take advantage of this. You "
+"should see great benefits when using write-behind or when using putAll "
+"operations."
 msgstr ""
+"CacheStore SPI "
+"が書き込みバッチをサポートするようになりました。JDBC、JPA、RocksDB、リモートおよびファイル・ストアは、これを利用するように変更されました。書き込み禁止を使用しているときや "
+"putAll 操作を使用しているときに、大きなメリットを実感できるはずです。"
 
 #. type: Title ==
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:64
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Remote query with JBoss Marshalling"
-msgstr ""
+msgstr "JBoss Marshalling を使用したリモートクエリ"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:68
-msgid "Remote query now also works with Java entities annotated with Hibernate Search annotations and JBoss Marshalling without requiring ProtoBuf."
+#, fuzzy
+msgid ""
+"Remote query now also works with Java entities annotated with Hibernate "
+"Search annotations and JBoss Marshalling without requiring ProtoBuf."
 msgstr ""
+"リモートクエリは、ProtoBuf を必要とせずに、Hibernate Search アノテーションと JBoss Marshalling "
+"でアノテーションされた Java エンティティでも動作するようになりました。"
 
 #. type: Title ==
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:69
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "HTTP/2 and ALPN support on the REST endpoint"
-msgstr ""
+msgstr "REST エンドポイントでの HTTP/2 と ALPN のサポート"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:76
-msgid "The REST endpoint has been completely rewritten so that it now supports both HTTP/1.1 and HTTP/2 as well as https://en.wikipedia.org/wiki/Application-Layer_Protocol_Negotiation[ALPN] (even on Java 8). The new endpoint is also 30% faster during reads and 6% faster during writes."
+#, fuzzy
+msgid ""
+"The REST endpoint has been completely rewritten so that it now supports both "
+"HTTP/1.1 and HTTP/2 as well as https://en.wikipedia.org/wiki/Application-"
+"Layer_Protocol_Negotiation[ALPN] (even on Java 8). The new endpoint is also "
+"30% faster during reads and 6% faster during writes."
 msgstr ""
+"RESTエンドポイントは完全に書き換えられ、HTTP/1.1とHTTP/2の両方に加え、 link:https://en.wikipedia.org/"
+"wiki/Application-Layer_Protocol_Negotiation[ALPN] （Java "
+"8でも）もサポートするようになりました。また、新しいエンドポイントは、読み込み時に30%高速化し、書き込み時に6%高速化しています。"
 
 #. type: Title ==
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:77
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Hot Rod Java client improvements"
-msgstr ""
+msgstr "ホットロッドJavaクライアントの改善"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:84
-msgid "The Java Hot Rod client now has proper entrySet(), keySet() and values()  implementations which iterate over the remote data instead of pulling it all locally.  It is now also finally possible to create and remove caches directly from the client."
+#, fuzzy
+msgid ""
+"The Java Hot Rod client now has proper entrySet(), keySet() and values()  "
+"implementations which iterate over the remote data instead of pulling it all "
+"locally.  It is now also finally possible to create and remove caches "
+"directly from the client."
 msgstr ""
+"Java Hot "
+"Rodクライアントは、すべてのデータをローカルに引っ張ってくるのではなく、リモートデータを反復処理する適切なentrySet()、keySet()、values()の実装を持つようになりました。また、クライアントから直接キャッシュを作成したり削除したりすることも可能になりました。"
 
 #. type: Title ==
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:85
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Server Administration console improvements"
-msgstr ""
+msgstr "サーバー管理コンソールの改善"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:90
-msgid "The console has received a number of updates for usability and consistency. It is also finally possible to configure and manage the remote endpoints."
+#, fuzzy
+msgid ""
+"The console has received a number of updates for usability and consistency. "
+"It is also finally possible to configure and manage the remote endpoints."
 msgstr ""
+"コンソールは、使いやすさと一貫性のために多くのアップデートを受けました。また、リモートエンドポイントの設定や管理もようやく可能になりました。"
 
 #. type: Title ==
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:91
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Component upgrades"
-msgstr ""
+msgstr "コンポーネントのアップグレード"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:94
+#, fuzzy
 msgid "Hibernate Search 5.8, JGroups 4.0.4, KUBE Ping 1.0.0.Beta1"
-msgstr ""
+msgstr "Hibernate Search 5.8、JGroups 4.0.4、KUBE Ping 1.0.0.Beta1"
 
 #. type: Title ==
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:95
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Bug fixes"
-msgstr ""
+msgstr "バグ修正"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:98
+#, fuzzy
 msgid "We have also dropped the guillotine on a large number of bugs."
-msgstr ""
+msgstr "また、大量のバグでギロチンを落としました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:101
-msgid "If all goes well, we plan to release Infinispan 9.2 at the end of October, with lots of great updates."
-msgstr ""
+#, fuzzy
+msgid ""
+"If all goes well, we plan to release Infinispan 9.2 at the end of October, "
+"with lots of great updates."
+msgstr "すべてがうまくいけば、10月末には、たくさんの素晴らしいアップデートを盛り込んだInfinispan 9.2をリリースする予定です。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:107
-msgid "So, head over to our http://infinispan.org/download/[download] page, consult the http://infinispan.org/docs/stable/upgrading/upgrading.html[upgrading guide] and https://developer.jboss.org/en/infinispan/content[let us know] about how you use Infinispan."
+#, fuzzy
+msgid ""
+"So, head over to our http://infinispan.org/download/[download] page, consult "
+"the http://infinispan.org/docs/stable/upgrading/upgrading.html[upgrading "
+"guide] and https://developer.jboss.org/en/infinispan/content[let us know] "
+"about how you use Infinispan."
 msgstr ""
+"そこで、 link:http://infinispan.org/download/[ダウンロード] ページに向かい、 link:http://"
+"infinispan.org/docs/stable/upgrading/upgrading.html[アップグレードガイド] "
+"を参照して、Infinispanの使用方法を link:https://developer.jboss.org/en/infinispan/"
+"content[教えてください] 。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:109
+#, fuzzy
 msgid "Cheers !"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-14-infinispan-91-bastille.adoc:110
+#, fuzzy
 msgid "The Infinispan team"
-msgstr ""
+msgstr "インフィニスパンチーム"

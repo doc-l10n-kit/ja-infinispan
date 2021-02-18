@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-07-10-infinispanjbossworld.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-10-infinispanjbossworld.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan@JBossWorld\n"
@@ -32,32 +32,69 @@ msgid ""
 "date: '2009-07-10T02:59:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"presentations\", \"data grids\", \"jbossworld\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4060370301323098218\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/07/infinispanjbossworld.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4060370301323098218\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/07/infinispanjbossworld."
+"html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan@JBossWorld\n"
+"permalink: /blog/:year/:month/:day/infinispanjbossworld\n"
+"date: '2009-07-10T02:59:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \"presentations\", \"data grids\", \"jbossworld\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4060370301323098218\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/07/infinispanjbossworld."
+"html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-10-infinispanjbossworld.adoc:14
-msgid "http://blog.softwhere.org/wp-content/uploads/2009/02/screenshot2.png[image:http://blog.softwhere.org/wp-content/uploads/2009/02/screenshot2.png[image]]I will be presenting on Infinispan, data grids and the data fabric of clouds at http://www.jbossworld.com/[JBoss World Chicago], in September"
+#, fuzzy
+msgid ""
+"http://blog.softwhere.org/wp-content/uploads/2009/02/screenshot2.png[image:"
+"http://blog.softwhere.org/wp-content/uploads/2009/02/screenshot2."
+"png[image]]I will be presenting on Infinispan, data grids and the data "
+"fabric of clouds at http://www.jbossworld.com/[JBoss World Chicago], in "
+"September"
 msgstr ""
+"link:http://blog.softwhere.org/wp-content/uploads/2009/02/screenshot2.png[] "
+"9月に link:http://www.jbossworld.com/[シカゴ] で開催される link:http://www.jbossworld."
+"com/[JBoss World Chicago] で、Infinispan、データグリッド、クラウドのデータファブリックについて発表します。"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-10-infinispanjbossworld.adoc:18
-msgid "I will cover a brief history of Infinispan and the motivations behind the project, and then talk in a more abstract manner about data grids and the special place they occupy in providing data services for clouds."
+#, fuzzy
+msgid ""
+"I will cover a brief history of Infinispan and the motivations behind the "
+"project, and then talk in a more abstract manner about data grids and the "
+"special place they occupy in providing data services for clouds."
 msgstr ""
+"Infinispanの歴史とプロジェクトの背景にある動機を簡単に説明した後、データグリッドと、クラウド向けのデータサービスを提供する上でデータグリッドが占める特別な場所について、より抽象的にお話しします。"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-10-infinispanjbossworld.adoc:22
-msgid "In addition, I expect to pontificate on my thoughts on clouds and the future of computing in general to anyone who buys me a coffee/beer! :-)"
+#, fuzzy
+msgid ""
+"In addition, I expect to pontificate on my thoughts on clouds and the future "
+"of computing in general to anyone who buys me a coffee/beer! :-)"
 msgstr ""
+"さらに、コーヒーやビールをおごってくれた人に、クラウドやコンピューティングの未来についての私の考えを、一般的にお話しすることを期待しています！ :-)"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-10-infinispanjbossworld.adoc:25
-msgid "So go on, http://www.jbossworld.com/boss/[convince your boss] to let you go, and attend my talk, and hopefully I'll see you there!"
+#, fuzzy
+msgid ""
+"So go on, http://www.jbossworld.com/boss/[convince your boss] to let you go, "
+"and attend my talk, and hopefully I'll see you there!"
 msgstr ""
+"だから行って link:http://www.jbossworld.com/boss/[上司を] 説得して 私の話に参加してください "
+"うまくいけばそこで会いましょう！"
 
 #. type: Plain text
 #: upstream/_posts/2009-07-10-infinispanjbossworld.adoc:27
+#, fuzzy
 msgid "Cheers Manik"
-msgstr ""
+msgstr "乾杯 マニク"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-05-10-infinispan-vs-hazelcast-performance.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-10-infinispan-vs-hazelcast-performance.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan vs Hazelcast Performance\n"
@@ -32,22 +32,47 @@ msgid ""
 "date: '2013-05-10T08:23:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \" performance\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-330409429450209786\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-vs-hazelcast-performance.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"330409429450209786\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-vs-"
+"hazelcast-performance.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: インフィニスパン対ヘーゼルキャストのパフォーマンス\n"
+"permalink: /blog/:year/:month/:day/infinispan-vs-hazelcast-performance\n"
+"date: '2013-05-10T08:23:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \" performance\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"330409429450209786\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-vs-"
+"hazelcast-performance.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-10-infinispan-vs-hazelcast-performance.adoc:16
-msgid "https://bitbucket.org/ssmoot[Sam Smoot] has recently compared the performance of Infinispan versus Hazelcast both with default cache settings and posted https://bitbucket.org/ssmoot/scala-map-benchmarks[some interesting performance results with Infinispan coming on top] :)"
+#, fuzzy
+msgid ""
+"https://bitbucket.org/ssmoot[Sam Smoot] has recently compared the "
+"performance of Infinispan versus Hazelcast both with default cache settings "
+"and posted https://bitbucket.org/ssmoot/scala-map-benchmarks[some "
+"interesting performance results with Infinispan coming on top] :)"
 msgstr ""
+"link:https://bitbucket.org/ssmoot[Sam Smoot] "
+"氏は最近、デフォルトのキャッシュ設定でInfinispanとHazelcastのパフォーマンスを比較し、Infinispan link:https://"
+"bitbucket.org/ssmoot/scala-map-benchmarks[がトップに立った興味深い結果を] 投稿しました。)"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-10-infinispan-vs-hazelcast-performance.adoc:21
-msgid "@Sam, we hear you and we're working on reducing the number of JARs required for standalone, default use case :)"
-msgstr ""
+#, fuzzy
+msgid ""
+"@Sam, we hear you and we're working on reducing the number of JARs required "
+"for standalone, default use case :)"
+msgstr "Samさん、あなたの意見を聞いて、スタンドアロン、デフォルトのユースケースに必要なJARの数を減らす作業をしています :)"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-10-infinispan-vs-hazelcast-performance.adoc:23
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

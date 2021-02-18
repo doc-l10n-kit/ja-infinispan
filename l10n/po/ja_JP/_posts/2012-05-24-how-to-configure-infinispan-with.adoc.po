@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,192 +18,367 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
-"title: How to configure Infinispan with transactions, backed by relational DB on JBoss\n"
+"title: How to configure Infinispan with transactions, backed by relational "
+"DB on JBoss\n"
 "permalink: /blog/:year/:month/:day/how-to-configure-infinispan-with\n"
 "  AS 7 vs. Tomcat 7\n"
 "date: '2012-05-24T06:55:00.002-07:00'\n"
 "author: mgencur\n"
-"tags: [ \" database\", \"transactions\", \"c3p0\", \"as7\", \"cache store\", \"tomcat\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1043800181058532603\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/05/how-to-configure-infinispan-with.html\n"
+"tags: [ \" database\", \"transactions\", \"c3p0\", \"as7\", \"cache store\", "
+"\"tomcat\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1043800181058532603\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/05/how-to-configure-"
+"infinispan-with.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: JBoss上でリレーショナルDBをバックにトランザクションでInfinispanを構成する方法\n"
+"permalink: /blog/:year/:month/:day/how-to-configure-infinispan-with\n"
+"  AS 7 vs. Tomcat 7\n"
+"date: '2012-05-24T06:55:00.002-07:00'\n"
+"author: mgencur\n"
+"tags: [ \" database\", \"transactions\", \"c3p0\", \"as7\", \"cache store\", "
+"\"tomcat\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1043800181058532603\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/05/how-to-configure-"
+"infinispan-with.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:19
-msgid "Migrating projects from one container to another is often problematic.  Not as much with Infinispan. This article is about configuring Infinispan, using Transaction Manager for demarcating transaction boundaries, while keeping the data both in a memory and relational database - stored via JDBC cache store. I'll demonstrate all the features on code snippets. "
+#, fuzzy
+msgid ""
+"Migrating projects from one container to another is often problematic.  Not "
+"as much with Infinispan. This article is about configuring Infinispan, using "
+"Transaction Manager for demarcating transaction boundaries, while keeping "
+"the data both in a memory and relational database - stored via JDBC cache "
+"store. I'll demonstrate all the features on code snippets. "
 msgstr ""
+"プロジェクトをあるコンテナから別のコンテナに移行することは、しばしば問題となります。Infinispan "
+"の場合はそうではありません。この記事では、トランザクションマネージャを使用してトランザクションの境界を区切ることでInfinispanを設定し、データをメモリとリレーショナルデータベースの両方に保持しながら、JDBCキャッシュストアを介して保存することについて説明します。私はコードスニペットですべての機能をデモします。"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:31
-msgid "A complete application is located at https://github.com/mgencur/infinispan-examples and is called carmart-tx-jdbc. It's a web application based on JSF 2, Seam 3 and Infinispan 5.1.4.FINAL, is fully working, tested with JBoss  Application Server 7.1.1.Final and Tomcat 7.0.27. There  is one prerequisite, though. It needs an installed and working MySQL database in your system.  The database name should be carmartdb, accessible by a user with carmart/carmart username/password.    First, look at what we need to configure for JBoss Application Server 7. "
+#, fuzzy
+msgid ""
+"A complete application is located at https://github.com/mgencur/infinispan-"
+"examples and is called carmart-tx-jdbc. It's a web application based on JSF "
+"2, Seam 3 and Infinispan 5.1.4.FINAL, is fully working, tested with JBoss  "
+"Application Server 7.1.1.Final and Tomcat 7.0.27. There  is one "
+"prerequisite, though. It needs an installed and working MySQL database in "
+"your system.  The database name should be carmartdb, accessible by a user "
+"with carmart/carmart username/password.    First, look at what we need to "
+"configure for JBoss Application Server 7. "
 msgstr ""
+"完全なアプリケーションは https://github.com/mgencur/infinispan-examples にあり、carmart-tx-"
+"jdbc という名前です。JSF 2、Seam 3、Infinispan 5.1.4.FINALをベースにしたWebアプリケーションで、JBoss "
+"Application Server 7.1.1.FINALとTomcat 7.0."
+"27でテストされており、完全に動作します。しかし、一つの前提条件があります。それはあなたのシステムにインストールされ、動作するMySQLデータベースが必要です。データベース名は "
+"carmartdb で、carmart/carmart ユーザー名/パスワードを持つユーザーがアクセスできるようになっていなければなりません。 "
+"まず、JBoss Application Server 7 のために何を設定する必要があるかを見てみましょう。"
 
 #. type: Title ==
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:32
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring transactions and JDBC cache store on JBoss AS 7 "
-msgstr ""
+msgstr "JBoss AS 7 でのトランザクションと JDBC キャッシュストアの設定"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:40
-msgid "Infinispan will be configured via new fluent API using builders, hence the call to  .build() method at the end. We need to configure aspects related to  transactions and cache loaders. The configuration API for cache loaders  is likely going to be changed in not-so-far future. It should be fluent  and more intuitive, generally easier to use than current one. "
+#, fuzzy
+msgid ""
+"Infinispan will be configured via new fluent API using builders, hence the "
+"call to  .build() method at the end. We need to configure aspects related "
+"to  transactions and cache loaders. The configuration API for cache loaders  "
+"is likely going to be changed in not-so-far future. It should be fluent  and "
+"more intuitive, generally easier to use than current one. "
 msgstr ""
+"Infinispan は、ビルダーを使用した新しい fluent API "
+"を介して設定されます。トランザクションとキャッシュローダーに関連する部分を設定する必要があります。キャッシュローダーの設定APIは、そう遠くない将来に変更される可能性があります。現在のものよりも流暢で直感的で、一般的には使いやすいものになるはずです。"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:49
-msgid "I purposely do not show XML configuration. Configuration examples can be found at https://github.com/infinispan/infinispan/blob/master/core/src/main/resources/config-samples/sample.xml.  In order to configure transactions and cache loaders, look for tags called  <transaction> and <loaders> and modify that sample file according to below configuration. Tag names and attribute names are very similar for both XML and Java configuration. If that is not enough, there is always a schema in Infinispan distribution."
+#, fuzzy
+msgid ""
+"I purposely do not show XML configuration. Configuration examples can be "
+"found at https://github.com/infinispan/infinispan/blob/master/core/src/main/"
+"resources/config-samples/sample.xml.  In order to configure transactions and "
+"cache loaders, look for tags called  <transaction> and <loaders> and modify "
+"that sample file according to below configuration. Tag names and attribute "
+"names are very similar for both XML and Java configuration. If that is not "
+"enough, there is always a schema in Infinispan distribution."
 msgstr ""
+"私は意図的にXMLの設定を表示しないようにしています。設定例は https://github.com/infinispan/infinispan/"
+"blob/master/core/src/main/resources/config-samples/sample.xml "
+"にあります。トランザクションとキャッシュローダーを設定するには、<transaction>と<loaders>というタグを探して、以下の設定に従ってサンプルファイルを修正します。タグ名や属性名は、XMLとJavaのどちらの設定も非常に似ています。それでも足りない場合は、Infinispanの配布物にスキーマがあります。"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:51
+#, fuzzy
 msgid "The configuration of Infinispan is as follows: "
-msgstr ""
+msgstr "Infinispanの構成は以下の通りです。"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:62
-msgid "Lines marked with red are different in other containers/configurations, as you'll see in a minute. The code above implies that we need to specify proper TransactionManagerLookup implementation which is, in this case, GenericTransactionManagerLookup. We  also need to say: \"Hey, I wanna use ManagedConnectionFactory as a connectionFactoryClass\". OK, here we go. I should, as well, explain how to configure a datasource properly, right? In JBoss AS 7, this is configured as a subsystem in $JBOSS_HOME/standalone/configuration/standalone.xml:"
+#, fuzzy
+msgid ""
+"Lines marked with red are different in other containers/configurations, as "
+"you'll see in a minute. The code above implies that we need to specify "
+"proper TransactionManagerLookup implementation which is, in this case, "
+"GenericTransactionManagerLookup. We  also need to say: \"Hey, I wanna use "
+"ManagedConnectionFactory as a connectionFactoryClass\". OK, here we go. I "
+"should, as well, explain how to configure a datasource properly, right? In "
+"JBoss AS 7, this is configured as a subsystem in $JBOSS_HOME/standalone/"
+"configuration/standalone.xml:"
 msgstr ""
+"赤でマークされた行は、他のコンテナや設定では異なります。上のコードでは、適切なTransactionManagerLookupの実装を指定する必要があることを示していますが、この場合はGenericTransactionManagerLookupになります。また、次のように言う必要があります。\"おい、俺はManagedConnectionFactoryをconnectionFactoryClassとして使いたいんだが」と言う必要があります。OK、これでOKです。そろそろ、データソースの正しい設定方法も説明しないといけませんね。JBoss "
+"AS 7では、$JBOSS_HOME/standalone/configuration/standalone."
+"xml内のサブシステムとして設定されています。"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:67
-msgid "The usage of transactions is very simple as we can obtain a transaction object by injection."
-msgstr ""
+#, fuzzy
+msgid ""
+"The usage of transactions is very simple as we can obtain a transaction "
+"object by injection."
+msgstr "トランザクションの使い方は、インジェクションでトランザクションオブジェクトを取得できるので、非常にシンプルです。"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:72
-msgid "Sources: https://github.com/mgencur/infinispan-examples/blob/master/carmart-tx-jdbc/src/jbossas/java/org/infinispan/examples/carmart/session/CarManager.java"
+#, fuzzy
+msgid ""
+"Sources: https://github.com/mgencur/infinispan-examples/blob/master/carmart-"
+"tx-jdbc/src/jbossas/java/org/infinispan/examples/carmart/session/CarManager."
+"java"
 msgstr ""
+"ソース: https://github.com/mgencur/infinispan-examples/blob/master/carmart-tx-"
+"jdbc/src/jbossas/java/org/infinispan/examples/carmart/session/CarManager."
+"java"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:78
-msgid "Quite easy, isn't it ...if you know how to do it. The only problem is that it does not work (at least not completely) :-) If you deploy the app, you find out that when storing a key-value pair in  the cache, an exception is thrown. This exception indicates that the operation with DB (and JDBC cache store) failed. The exception says:"
+#, fuzzy
+msgid ""
+"Quite easy, isn't it ...if you know how to do it. The only problem is that "
+"it does not work (at least not completely) :-) If you deploy the app, you "
+"find out that when storing a key-value pair in  the cache, an exception is "
+"thrown. This exception indicates that the operation with DB (and JDBC cache "
+"store) failed. The exception says:"
 msgstr ""
+"非常に簡単ではありませんか？唯一の問題は、それが動作しないことです（少なくとも完全ではありません） :-"
+")アプリをデプロイすると、キャッシュにキーと値のペアを保存する際に例外が発生することがわかります。この例外は、DB（およびJDBCキャッシュストア）での操作に失敗したことを示しています。例外にはこう書かれています。"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:85
-msgid "A complete stack trace looks similar to https://gist.github.com/2777348 There's still an open issue in JIRA (ISPN-604) and it is being worked on. "
+#, fuzzy
+msgid ""
+"A complete stack trace looks similar to https://gist.github.com/2777348 "
+"There's still an open issue in JIRA (ISPN-604) and it is being worked on. "
 msgstr ""
+"完全なスタックトレースは https://gist.github.com/2777348 に似ています。 JIRA (ISPN-604) "
+"にはまだ未解決の問題があり、それに取り組んでいます。"
 
 #. type: Title ==
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:86
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring transactions and JDBC cache store on JBoss AS 7 - c3p0"
-msgstr ""
+msgstr "JBoss AS 7 でのトランザクションと JDBC キャッシュストアの設定 - c3p0"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:95
-msgid "But how do we cope with this inconvenience for now... By not using a managed datasource but rather a third party library called c3p0 (JDBC3  Connection and Statement Pooling, more information at http://www.mchange.com/projects/c3p0/index.html) Infinispan allows you to use this library for connecting to the database. If you really want to use it, you need to choose a different connectionFactoryClass which is, in this case, PooledConnectionFactory."
+#, fuzzy
+msgid ""
+"But how do we cope with this inconvenience for now... By not using a managed "
+"datasource but rather a third party library called c3p0 (JDBC3  Connection "
+"and Statement Pooling, more information at http://www.mchange.com/projects/"
+"c3p0/index.html) Infinispan allows you to use this library for connecting to "
+"the database. If you really want to use it, you need to choose a different "
+"connectionFactoryClass which is, in this case, PooledConnectionFactory."
 msgstr ""
+"管理されたデータソースではなく、c3p0 (JDBC3 Connection and Statement Pooling, more "
+"information at http://www.mchange.com/projects/c3p0/index.html "
+"呼ばれるサードパーティのライブラリを使用することで、Infinispan "
+"はデータベースに接続するためにこのライブラリを使用することができます。もし本当に使いたいのであれば、別の connectionFactoryClass "
+"を選択する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:97
+#, fuzzy
 msgid "Infinispan configuration looks like this:"
-msgstr ""
+msgstr "Infinispanの設定は以下のようになります。"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:101
-msgid "Transactions are accessible in the same way as in the previous use case.  Now let's look at configuration for Tomcat servlet container. "
+#, fuzzy
+msgid ""
+"Transactions are accessible in the same way as in the previous use case.  "
+"Now let's look at configuration for Tomcat servlet container. "
 msgstr ""
+"トランザクションへのアクセスは、先ほどのユースケースと同様の方法で行います。それでは、Tomcatサーブレットコンテナの設定を見てみましょう。"
 
 #. type: Title ==
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:103
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring transactions and JDBC cache store on Tomcat 7"
-msgstr ""
+msgstr "Tomcat 7でトランザクションとJDBCキャッシュストアを設定する"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:109
-msgid "Tomcat does not have any Transaction Manager in it so we have to bundle one with the application. For the purpose of this exercise, we choose JBoss Transactions (http://www.jboss.org/jbosstm). See dependencies at the end."
+#, fuzzy
+msgid ""
+"Tomcat does not have any Transaction Manager in it so we have to bundle one "
+"with the application. For the purpose of this exercise, we choose JBoss "
+"Transactions (http://www.jboss.org/jbosstm). See dependencies at the end."
 msgstr ""
+"Tomcat にはトランザクションマネージャーが入っていないので、アプリケーションにバンドルする必要があります。この演習の目的のために、JBoss "
+"Transactions http://www.jboss.org/jbosstm ) を選択します。最後に依存関係を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:111
+#, fuzzy
 msgid "Cache manager and cache configuration is in this form:"
-msgstr ""
+msgstr "キャッシュマネージャとキャッシュの設定はこのような形になっています。"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:119
-msgid "For Tomcat, we need to specify a different transactionManagerLookup implementation and datasourceJndiLocation. Tomcat simply places objects  under a bit different JNDI locations. The datasource is defined in context.xml file which has to be on classpath. This file might look like this:"
+#, fuzzy
+msgid ""
+"For Tomcat, we need to specify a different transactionManagerLookup "
+"implementation and datasourceJndiLocation. Tomcat simply places objects  "
+"under a bit different JNDI locations. The datasource is defined in context."
+"xml file which has to be on classpath. This file might look like this:"
 msgstr ""
+"Tomcat の場合は、別の transactionManagerLookup 実装と datasourceJndiLocation "
+"を指定する必要があります。Tomcatは、オブジェクトを少し異なるJNDIロケーションの下に単純に配置します。データソースは、クラスパス上になければならないcontext."
+"xmlファイルで定義されています。このファイルは次のようになります。"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:124
-msgid "How do we get the transaction manager in the application then? Lets obtain  it directly from a cache. "
-msgstr ""
+#, fuzzy
+msgid ""
+"How do we get the transaction manager in the application then? Lets obtain  "
+"it directly from a cache. "
+msgstr "では、どうやってアプリケーションのトランザクションマネージャを取得するのでしょうか？キャッシュから直接取得してみましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:127
-msgid "Infinispan knows how to find the manager and we need to know how to obtain it from Infinispan."
-msgstr ""
+#, fuzzy
+msgid ""
+"Infinispan knows how to find the manager and we need to know how to obtain "
+"it from Infinispan."
+msgstr "Infinispanはマネージャーの見つけ方を知っているので、Infinispanからの入手方法を知る必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:134
-msgid "Sources: https://github.com/mgencur/infinispan-examples/blob/master/carmart-tx-jdbc/src/tomcat/java/org/infinispan/examples/carmart/session/CarManager.java The transaction manager provides standard methods for transactions, such as begin(), commit() and rollback(). "
+#, fuzzy
+msgid ""
+"Sources: https://github.com/mgencur/infinispan-examples/blob/master/carmart-"
+"tx-jdbc/src/tomcat/java/org/infinispan/examples/carmart/session/CarManager."
+"java The transaction manager provides standard methods for transactions, "
+"such as begin(), commit() and rollback(). "
 msgstr ""
+"出典: https://github.com/mgencur/infinispan-examples/blob/master/carmart-tx-"
+"jdbc/src/tomcat/java/org/infinispan/examples/carmart/session/CarManager.java "
+"トランザクションマネージャは、begin()、commit()、rollback() などのトランザクションの標準メソッドを提供します。"
 
 #. type: Title ==
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Now is the time for dependencies*"
-msgstr ""
+msgstr "*今こそ依存関係の時代*"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:142
-msgid "So...which dependencies do we always need when using Infinispan with JDBC cache stores and transactions? These are infinspan-core, infinispan-cachestore-jdbc and javax.transaction.jta. The scope for jta dependency, as defined in Maven, is different for JBossAS and Tomcat."
+#, fuzzy
+msgid ""
+"So...which dependencies do we always need when using Infinispan with JDBC "
+"cache stores and transactions? These are infinspan-core, infinispan-"
+"cachestore-jdbc and javax.transaction.jta. The scope for jta dependency, as "
+"defined in Maven, is different for JBossAS and Tomcat."
 msgstr ""
+"では..."
+"JDBCキャッシュストアやトランザクションでInfinispanを使用する場合、どのような依存関係が必要になるのでしょうか？それは、infinspan-"
+"core、infinispan-cacheestore-jdbc、javax.transaction."
+"jtaです。Mavenで定義されているjta依存関係のスコープは、JBossASとTomcatで異なります。"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:144
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Common dependencies for JBossAS and Tomcat*\n"
-msgstr ""
+msgstr "*JBossAS と Tomcat の共通の依存関係*"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:152
-msgid "Of course, our application needs a few more dependencies but these are not directly related to Infinispan. Let's ignore them in this article.  JBoss AS 7 provides managed datasource that is accessible from Infinispan. The only specific dependency (related to transactions or Infinispan) is JTA."
+#, fuzzy
+msgid ""
+"Of course, our application needs a few more dependencies but these are not "
+"directly related to Infinispan. Let's ignore them in this article.  JBoss AS "
+"7 provides managed datasource that is accessible from Infinispan. The only "
+"specific dependency (related to transactions or Infinispan) is JTA."
 msgstr ""
+"もちろん、私たちのアプリケーションには、さらにいくつかの依存関係が必要ですが、これらは Infinispan "
+"に直接関連するものではありません。この記事では無視しましょう。JBoss AS 7 は Infinispan "
+"からアクセス可能なマネージドデータソースを提供します。(トランザクションや Infinispan に関連する) 唯一の特定の依存関係は JTA です。"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:155
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Dependencies specific to JBossAS - using managed Datasource (managed by\n"
 "the server)*\n"
-msgstr ""
+msgstr "*JBossAS に固有の依存関係 - 管理された Datasource (サーバーによって管理される) を使用する*"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:159
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Dependencies specific to JBossAS - using c3p0*\n"
-msgstr ""
+msgstr "*JBossAS に固有の依存関係 - c3p0 の使用*"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:167
-msgid "Yes, you need to bundle also MySQL connector. On the other hand, for Tomcat use case and JBossAS with managed datasource, this jar file needs do be deployed to the server separately. For Tomcat, do this simply by copying the jar file to $TOMCAT_HOME/lib.  For JBoss AS 7, copy the jar file into $JBOSS_HOME/standalone/deployments."
+#, fuzzy
+msgid ""
+"Yes, you need to bundle also MySQL connector. On the other hand, for Tomcat "
+"use case and JBossAS with managed datasource, this jar file needs do be "
+"deployed to the server separately. For Tomcat, do this simply by copying the "
+"jar file to $TOMCAT_HOME/lib.  For JBoss AS 7, copy the jar file into "
+"$JBOSS_HOME/standalone/deployments."
 msgstr ""
+"はい、MySQLコネクタもバンドルする必要があります。一方、TomcatのユースケースやJBossASで管理されたデータソースを使用する場合は、このjarファイルを別途サーバーにデプロイする必要がある。Tomcat "
+"の場合は jar ファイルを $TOMCAT_HOME/lib に、JBoss AS 7 の場合は jar ファイルを $JBOSS_HOME/"
+"standalone/deployments にコピーします。"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:169
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Dependencies specific to Tomcat - using JBoss Transactions*\n"
-msgstr ""
+msgstr "*Tomcat に固有の依存関係 - JBoss トランザクションの使用*"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:176
-msgid "That's it. I hope you've found this article helpful. Any feedback is welcome, especially the positive one :-) If you find any problem with the  application, feel free to comment here or participate in Infinispan forums (http://www.jboss.org/infinispan/forums)."
+#, fuzzy
+msgid ""
+"That's it. I hope you've found this article helpful. Any feedback is "
+"welcome, especially the positive one :-) If you find any problem with the  "
+"application, feel free to comment here or participate in Infinispan forums "
+"(http://www.jboss.org/infinispan/forums)."
 msgstr ""
+"以上です。この記事が参考になったでしょうか？どんなフィードバックでも歓迎します。)アプリケーションに問題がある場合は、ここでコメントするか、Infinispanのフォーラム（ "
+"http://www.jboss.org/infinispan/forums に参加してください。"
 
 #. type: Plain text
 #: upstream/_posts/2012-05-24-how-to-configure-infinispan-with.adoc:177
+#, fuzzy
 msgid "Martin"
-msgstr ""
+msgstr "マーティン"

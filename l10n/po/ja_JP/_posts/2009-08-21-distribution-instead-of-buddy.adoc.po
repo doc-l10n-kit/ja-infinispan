@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Distribution instead of Buddy Replication\n"
@@ -32,123 +32,304 @@ msgid ""
 "date: '2009-08-21T03:21:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"buddy replication\", \"partitioning\", \"distribution\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6567008812797414090\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/08/distribution-instead-of-buddy.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6567008812797414090\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/08/distribution-instead-"
+"of-buddy.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: バディ複製の代わりに配布\n"
+"permalink: /blog/:year/:month/:day/distribution-instead-of-buddy\n"
+"date: '2009-08-21T03:21:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \"buddy replication\", \"partitioning\", \"distribution\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6567008812797414090\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/08/distribution-instead-"
+"of-buddy.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:20
-msgid "People have often commented on http://www.jboss.org/community/wiki/JBossCacheBuddyReplication[Buddy Replication] (from http://www.jboss.org/jbosscache[JBoss Cache]) not being available in Infinispan, and have asked how Infinispan's far superior http://www.jboss.org/community/docs/DOC-10278[distribution] mode works. I've decided to write this article to discuss the main differences from a high level. For deeper technical details, please visit the http://www.jboss.org/community/wiki/Infinispan[Infinispan wiki]."
+#, fuzzy
+msgid ""
+"People have often commented on http://www.jboss.org/community/wiki/"
+"JBossCacheBuddyReplication[Buddy Replication] (from http://www.jboss.org/"
+"jbosscache[JBoss Cache]) not being available in Infinispan, and have asked "
+"how Infinispan's far superior http://www.jboss.org/community/docs/DOC-"
+"10278[distribution] mode works. I've decided to write this article to "
+"discuss the main differences from a high level. For deeper technical "
+"details, please visit the http://www.jboss.org/community/wiki/"
+"Infinispan[Infinispan wiki]."
 msgstr ""
+"link:http://www.jboss.org/community/wiki/"
+"JBossCacheBuddyReplication[バディレプリケーション] (from link:http://www.jboss.org/"
+"jbosscache[JBoss Cache] ) が Infinispan で利用できないことについては、よくコメントされていて、Infinispan "
+"のはるかに優れた link:http://www.jboss.org/community/docs/DOC-10278[ディストリビューションモード] "
+"はどのように機能するのかという質問もありました。主な違いを高いレベルから論じるために、この記事を書くことにしました。深い技術的な詳細はInfin "
+"link:http://www.jboss.org/community/wiki/Infinispan[ispanのwiki] をご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:33
-msgid "Scalability versus high availability These two concepts are often at odds with one another, even though they are commonly lumped together. What is usually good for scalability isn't always good for high availability, and vice versa. When it comes to clustering servers, high availability often means simply maintaining more copies, so that if nodes fail - and with commodity hardware, this is expected - state is not lost. An extreme case of this is replicated mode, available in both JBoss Cache and Infinispan, where each node is a clone of its neighbour. This provides very high availability, but unfortunately, this does not scale well. Assume you have 2GB per node.  Discounting overhead, with replicated mode, you can only address 2GB of space, regardless of how large the cluster is. Even if you had 100 nodes"
+#, fuzzy
+msgid ""
+"Scalability versus high availability These two concepts are often at odds "
+"with one another, even though they are commonly lumped together. What is "
+"usually good for scalability isn't always good for high availability, and "
+"vice versa. When it comes to clustering servers, high availability often "
+"means simply maintaining more copies, so that if nodes fail - and with "
+"commodity hardware, this is expected - state is not lost. An extreme case of "
+"this is replicated mode, available in both JBoss Cache and Infinispan, where "
+"each node is a clone of its neighbour. This provides very high availability, "
+"but unfortunately, this does not scale well. Assume you have 2GB per node.  "
+"Discounting overhead, with replicated mode, you can only address 2GB of "
+"space, regardless of how large the cluster is. Even if you had 100 nodes"
 msgstr ""
+"スケーラビリティと高可用性 この 2 "
+"つの概念は、一般的に一括りにされているにもかかわらず、しばしば対立することがある。通常スケーラビリティに優れていることが必ずしも高可用性に優れているとは限らないし、その逆もまた然りである。サーバのクラスタリングに関して言えば、高可用性とは多くの場合、ノードが故障しても（コモディティハードウェアではそれが予想されますが）状態が失われないように、単純に多くのコピーを維持することを意味しています。これの極端な例として、JBoss "
+"Cache と Infinispan "
+"の両方で利用可能なレプリケートモードがあります。これは非常に高い可用性を提供しますが、残念ながら、スケーリングがうまくいきません。1ノードあたり2GBと仮定します。オーバーヘッドを考慮すると、レプリケートモードでは、クラスタの規模に関わらず2GBのスペースしか扱えません。100ノードあったとしても"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:37
-msgid "seemingly 200GB of space! - you'd still only be able to address 2GB since each node maintains a redundant copy. Further, since every node needs a copy, a lot of network traffic is generated as the cluster size grows."
+#, fuzzy
+msgid ""
+"seemingly 200GB of space! - you'd still only be able to address 2GB since "
+"each node maintains a redundant copy. Further, since every node needs a "
+"copy, a lot of network traffic is generated as the cluster size grows."
 msgstr ""
+"200GBのスペースがあるように見えます。- "
+"各ノードが冗長コピーを保持しているので、2GBしか対応できないでしょう。さらに、すべてのノードがコピーを必要とするため、クラスタサイズが大きくなると多くのネットワークトラフィックが発生します。"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:48
-msgid "Enter Buddy Replication Buddy Replication (BR) was originally devised as a solution to this scalability problem. BR does not replicate state to every other node in the cluster. Instead, it chooses a fixed number of 'backup' nodes and only replicates to these backups. The number of backups is configurable, but in general it means that the number of backups is fixed. BR improved scalability significantly and showed near-linear scalability with increasing cluster size. This means that as more nodes are added to a cluster, the space available grows linearly as does the available computing power if measured in transactions per second."
+#, fuzzy
+msgid ""
+"Enter Buddy Replication Buddy Replication (BR) was originally devised as a "
+"solution to this scalability problem. BR does not replicate state to every "
+"other node in the cluster. Instead, it chooses a fixed number of 'backup' "
+"nodes and only replicates to these backups. The number of backups is "
+"configurable, but in general it means that the number of backups is fixed. "
+"BR improved scalability significantly and showed near-linear scalability "
+"with increasing cluster size. This means that as more nodes are added to a "
+"cluster, the space available grows linearly as does the available computing "
+"power if measured in transactions per second."
 msgstr ""
+"バディレプリケーションの登場 "
+"バディレプリケーション(BR)は、もともとこのスケーラビリティの問題を解決するために考案されたものです。BRはクラスタ内の他のすべてのノードに状態をレプリケートしません。その代わりに、一定数の「バックアップ」ノードを選択し、これらのバックアップにのみレプリケーションを行います。バックアップの数は設定可能だが、一般的にはバックアップの数が固定されていることを意味する。BRはスケーラビリティを大幅に向上させ、クラスタサイズの増加に伴ってほぼ直線的なスケーラビリティを示した。これは、クラスタにノードを追加すると、利用可能なスペースは、1秒あたりのトランザクションで測定した場合の利用可能なコンピューティングパワーと同様に直線的に成長することを意味します。"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:60
-msgid "But Buddy Replication doesn't help everybody! BR was specifically designed around the HTTP session caching use-case for the JBoss Application Server, and heavily optimised accordingly. As a result, session affinity is mandated, and applications that do not use session affinity can be prone to a lot of data gravitation and 'thrashing' - data is moved back and forth across a cluster as different nodes attempt to claim 'ownership' of state. Of course this is not a problem with JBoss AS and HTTP session caching - session affinity is recommended, available on most load balancer hardware and/or software, is taken for granted, and is a well-understood and employed paradigm for web-based applications."
+#, fuzzy
+msgid ""
+"But Buddy Replication doesn't help everybody! BR was specifically designed "
+"around the HTTP session caching use-case for the JBoss Application Server, "
+"and heavily optimised accordingly. As a result, session affinity is "
+"mandated, and applications that do not use session affinity can be prone to "
+"a lot of data gravitation and 'thrashing' - data is moved back and forth "
+"across a cluster as different nodes attempt to claim 'ownership' of state. "
+"Of course this is not a problem with JBoss AS and HTTP session caching - "
+"session affinity is recommended, available on most load balancer hardware "
+"and/or software, is taken for granted, and is a well-understood and employed "
+"paradigm for web-based applications."
 msgstr ""
+"しかし、バディレプリケーションがすべての人を助けるわけではない。BRはJBoss Application "
+"ServerのHTTPセッションキャッシングのユースケースに合わせて設計されており、それに合わせて最適化されている。その結果、セッションアフィニティが必須となり、セッションアフィニティを使用していないアプリケーションでは、データがクラスタ内を行ったり来たりして、異なるノードが状態の「所有権」を主張しようとしている間にデータが移動してしまうという「スラッシング」が発生しやすい。もちろん、これは "
+"JBoss AS と HTTP セッションキャッシングの問題ではありません - "
+"セッションアフィニティは推奨されており、ほとんどのロードバランサのハードウェアやソフトウェアで利用可能であり、当たり前のこととして認識されており、ウェブベースのアプリケーションではよく理解されており、採用されているパラダイムです。"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:67
-msgid "So we had to get better Just solving the HTTP session caching use-case wasn't enough. A well-performing data grid needs to to better, and crucially, session affinity cannot be taken for granted. And this was the primary reason for not porting BR to Infinispan. As such, Infinispan does not and will not support BR as it is too restrictive."
+#, fuzzy
+msgid ""
+"So we had to get better Just solving the HTTP session caching use-case "
+"wasn't enough. A well-performing data grid needs to to better, and "
+"crucially, session affinity cannot be taken for granted. And this was the "
+"primary reason for not porting BR to Infinispan. As such, Infinispan does "
+"not and will not support BR as it is too restrictive."
 msgstr ""
+"HTTPセッションキャッシングのユースケースを解決するだけでは十分ではありませんでした。パフォーマンスの高いデータグリッドは、より良いものにする必要があり、重要なことに、セッションの親和性は当然のことではありません。これがBRをInfinispanに移植しなかった最大の理由でした。このように、InfinispanはBRをサポートしていないし、制限が強すぎるため、今後もサポートしません。"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:77
-msgid "Distribution Distribution is a new cache mode in Infinispan. It is also the default clustered mode - as opposed to replication, which isn't scalable.  Distribution makes use of familiar concepts in data grids, such as http://www.spiteful.com/2008/03/17/programmers-toolbox-part-3-consistent-hashing/[consistent hashing], call proxying and local caching of remote lookups. What this leads to is a design that does scale well - fixed number of replicas for each cache entry, just like BR - but no requirement for session affinity."
+#, fuzzy
+msgid ""
+"Distribution Distribution is a new cache mode in Infinispan. It is also the "
+"default clustered mode - as opposed to replication, which isn't scalable.  "
+"Distribution makes use of familiar concepts in data grids, such as http://"
+"www.spiteful.com/2008/03/17/programmers-toolbox-part-3-consistent-hashing/"
+"[consistent hashing], call proxying and local caching of remote lookups. "
+"What this leads to is a design that does scale well - fixed number of "
+"replicas for each cache entry, just like BR - but no requirement for session "
+"affinity."
 msgstr ""
+"Distribution Distribution は Infinispan "
+"の新しいキャッシュモードです。これはデフォルトのクラスタ化モードでもあり、レプリケーションとは対照的にスケーラブルではありません。ディストリビューションは、 "
+"link:http://www.spiteful.com/2008/03/17/programmers-toolbox-part-3-"
+"consistent-hashing/[一貫性のあるハッシュ] "
+"、コールプロキシ、リモートルックアップのローカルキャッシュなど、データグリッドでおなじみの概念を利用しています。これにより、BRのようにキャッシュエントリごとに固定数のレプリカを作成し、セッションのアフィニティを必要としないというスケーラビリティの高い設計になっています。"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:95
-msgid "What about co-locating state? Co-location of state - moving entries about as a single block - was automatic and implicit with BR. Since each node always picked a backup node for all its state, one could visualize all of the state on a given node as a single block. Thus, colocation was trivial and automatic: whatever you put in Node1 will always be together, even if Node1 eventually dies and the state is accessed on Node2. However, this meant that state cannot be evenly balanced across a cluster since the data blocks are very coarse grained.  With distribution, colocation is not implicit. In part due to the use of consistent hashing to determine where each cached entry resides, and also in part due to the finer-grained cache structure of Infinispan - key/value pairs instead of a tree-structure - this leads to individual entries as the granularity of state blocks. This means nodes can be far better balanced across a cluster. However, it does mean that certain optimizations which rely on co-location - such as keeping related entries close together - is a little more tricky."
+#, fuzzy
+msgid ""
+"What about co-locating state? Co-location of state - moving entries about as "
+"a single block - was automatic and implicit with BR. Since each node always "
+"picked a backup node for all its state, one could visualize all of the state "
+"on a given node as a single block. Thus, colocation was trivial and "
+"automatic: whatever you put in Node1 will always be together, even if Node1 "
+"eventually dies and the state is accessed on Node2. However, this meant that "
+"state cannot be evenly balanced across a cluster since the data blocks are "
+"very coarse grained.  With distribution, colocation is not implicit. In part "
+"due to the use of consistent hashing to determine where each cached entry "
+"resides, and also in part due to the finer-grained cache structure of "
+"Infinispan - key/value pairs instead of a tree-structure - this leads to "
+"individual entries as the granularity of state blocks. This means nodes can "
+"be far better balanced across a cluster. However, it does mean that certain "
+"optimizations which rely on co-location - such as keeping related entries "
+"close together - is a little more tricky."
 msgstr ""
+"ステートのコロケーションについてはどうでしょうか？ステートのコロケーション（エントリを単一のブロックとして移動させる）は、BRでは自動的に暗黙のうちに行われていた。各ノードは常にすべてのステートに対してバックアップノードを選択しているので、あるノード上のすべてのステートを一つのブロックとして可視化することができます。したがって、コロケーションは些細なことであり、自動的に行われます。ノード1に入れたものは何であれ、たとえノード1が最終的に死んでノード2でステートにアクセスされたとしても、常に一緒に存在します。しかし、これはデータブロックの粒度が非常に粗いため、クラスタ全体で状態を均等にバランスさせることができないことを意味しています。ディストリビューションでは、コロケーションは暗黙のうちに行われません。これは、キャッシュされた各エントリがどこに存在するかを決定するために一貫性のあるハッシュを使用していることと、Infinispanのキャッシュ構造がツリー構造ではなくキーと値のペアであることに起因します。これは、ノードがクラスタ全体ではるかにバランスが取れていることを意味します。しかし、関連するエントリを近接させておくなど、コロケーションに依存するある種の最適化は少し厄介です。"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:102
-msgid "One approach to co-locate state would be to use containers as values.  For example, put all entries that should be colocated together into a HashMap. Then store the HashMap in the cache. But that is coarse-grained and ugly as an approach, and will mean that the entire HashMap would need to be locked and serialized as a single atomic unit, which can be expensive if this map is large."
+#, fuzzy
+msgid ""
+"One approach to co-locate state would be to use containers as values.  For "
+"example, put all entries that should be colocated together into a HashMap. "
+"Then store the HashMap in the cache. But that is coarse-grained and ugly as "
+"an approach, and will mean that the entire HashMap would need to be locked "
+"and serialized as a single atomic unit, which can be expensive if this map "
+"is large."
 msgstr ""
+"ステートを共配置する1つのアプローチは、コンテナを値として使用することでしょう。例えば、一緒に配置されるべきすべてのエントリを HashMap "
+"に入れます。そして、そのHashMapをキャッシュに格納します。しかし、これはアプローチとしては粗雑で醜く、HashMap "
+"全体を単一の原子単位としてロックしてシリアライズする必要があり、このマップが大きい場合にはコストがかかります。"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:111
-msgid "Another approach is to use Infinispan's http://infinispan.sourceforge.net/4.0/apidocs/org/infinispan/atomic/AtomicMap.html[AtomicMap] API. This powerful API lets you group entries together, so they will always be colocated, locked together, but replication will be much finer-grained, allowing only deltas to the map to be replicated. So that makes replication fast and performant, but it still means everything is locked as a single atomic unit. While this is necessary for certain applications, it isn't always be desirable."
+#, fuzzy
+msgid ""
+"Another approach is to use Infinispan's http://infinispan.sourceforge.net/4."
+"0/apidocs/org/infinispan/atomic/AtomicMap.html[AtomicMap] API. This powerful "
+"API lets you group entries together, so they will always be colocated, "
+"locked together, but replication will be much finer-grained, allowing only "
+"deltas to the map to be replicated. So that makes replication fast and "
+"performant, but it still means everything is locked as a single atomic unit. "
+"While this is necessary for certain applications, it isn't always be "
+"desirable."
 msgstr ""
+"もう一つの方法は、Infinispan の link:http://infinispan.sourceforge.net/4.0/apidocs/org/"
+"infinispan/atomic/AtomicMap.html[AtomicMap] API を使用することです。この強力な API "
+"を使用すると、エントリをグループ化することができるので、それらは常にコロケーションされ、一緒にロックされますが、レプリケーションはより細かくなり、マップへのデルタのみがレプリケーションされるようになります。これによりレプリケーションは高速かつ高性能になりますが、すべてが単一の原子単位としてロックされていることに変わりはありません。これは特定のアプリケーションでは必要なことですが、必ずしも望ましいことではありません。"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:119
-msgid "One more solution is to implement your own http://infinispan.sourceforge.net/4.0/apidocs/org/infinispan/distribution/ConsistentHash.html[ConsistentHash] algorithm - perhaps extending DefaultConsistentHash. This implementation would have knowledge of your object model, and hashes related instances such that they are located together in the hash space. By far the most complex mechanism, but if performance and co-location really is a hard requirement then you cannot get better than this approach."
+#, fuzzy
+msgid ""
+"One more solution is to implement your own http://infinispan.sourceforge.net/"
+"4.0/apidocs/org/infinispan/distribution/ConsistentHash.html[ConsistentHash] "
+"algorithm - perhaps extending DefaultConsistentHash. This implementation "
+"would have knowledge of your object model, and hashes related instances such "
+"that they are located together in the hash space. By far the most complex "
+"mechanism, but if performance and co-location really is a hard requirement "
+"then you cannot get better than this approach."
 msgstr ""
+"もう一つの解決策は、独自の link:http://infinispan.sourceforge.net/4.0/apidocs/org/"
+"infinispan/distribution/ConsistentHash.html[ConsistentHash] アルゴリズムを実装することです -"
+" おそらく DefaultConsistentHash "
+"を拡張したものでしょう。この実装はオブジェクトモデルの知識を持ち、関連するインスタンスをハッシュ空間に一緒に配置するようにハッシュします。遥かに複雑なメカニズムですが、パフォーマンスとコロケーションが本当に難しい要件であれば、このアプローチよりも優れたものはありません。"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:121
+#, fuzzy
 msgid "In summary:"
-msgstr ""
+msgstr "要約すると"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:123
+#, fuzzy
 msgid "Buddy Replication"
-msgstr ""
+msgstr "バディ複製"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:125
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:133
+#, fuzzy
 msgid "Near-linear scalability"
-msgstr ""
+msgstr "ニアリニアなスケーラビリティ"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:126
+#, fuzzy
 msgid "Session affinity mandatory"
-msgstr ""
+msgstr "セッション親和性必須"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:127
+#, fuzzy
 msgid "Co-location automatic"
-msgstr ""
+msgstr "コロケーション自動化"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:129
-msgid "Applicable to a specific set of use cases due to the session affinity requirement"
-msgstr ""
+#, fuzzy
+msgid ""
+"Applicable to a specific set of use cases due to the session affinity "
+"requirement"
+msgstr "セッション親和性の要件により、特定のユースケースのセットに適用可能"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:131
+#, fuzzy
 msgid "Distribution"
-msgstr ""
+msgstr "分布"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:134
+#, fuzzy
 msgid "No session affinity needed"
-msgstr ""
+msgstr "セッションの親和性は必要ありません"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:137
-msgid "Co-location requires special treatment, ranging in complexity based on performance and locking requirements. By default, no co-location is provided"
-msgstr ""
+#, fuzzy
+msgid ""
+"Co-location requires special treatment, ranging in complexity based on "
+"performance and locking requirements. By default, no co-location is provided"
+msgstr "コロケーションには特別な処理が必要で、性能やロック要件に応じて複雑さが異なります。デフォルトでは、コロケーションは提供されません。"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:139
-msgid "Applicable to a far wider range of use cases, and hence the default highly scalable clustered mode in Infinispan"
-msgstr ""
+#, fuzzy
+msgid ""
+"Applicable to a far wider range of use cases, and hence the default highly "
+"scalable clustered mode in Infinispan"
+msgstr "幅広いユースケースに適用可能で、Infinispanのデフォルトの高度にスケーラブルなクラスター化モードになっています。"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:149
-msgid "Hopefully this article has sufficiently interested you in distribution, and has whetted your appetite for more. I would recommend the http://www.jboss.org/community/wiki/Infinispan[Infinispan wiki] which has a wealth of information including interactive tutorials and GUI demos, design documents and API documentation. And of course you can't beat http://www.jboss.org/infinispan/downloads[downloading Infinispan] and trying it out, or grabbing the http://www.jboss.org/infinispan/sourcecode[source code] and looking through the implementation details."
+#, fuzzy
+msgid ""
+"Hopefully this article has sufficiently interested you in distribution, and "
+"has whetted your appetite for more. I would recommend the http://www.jboss."
+"org/community/wiki/Infinispan[Infinispan wiki] which has a wealth of "
+"information including interactive tutorials and GUI demos, design documents "
+"and API documentation. And of course you can't beat http://www.jboss.org/"
+"infinispan/downloads[downloading Infinispan] and trying it out, or grabbing "
+"the http://www.jboss.org/infinispan/sourcecode[source code] and looking "
+"through the implementation details."
 msgstr ""
+"この記事がディストリビューションに十分に興味を持っていただき、もっと知りたいと思っていただけたのではないでしょうか。Infin link:http://"
+"www.jboss.org/community/wiki/Infinispan[ispan wiki] "
+"には、インタラクティブなチュートリアルやGUIデモ、デザインドキュメント、APIドキュメントなどの豊富な情報がありますので、お勧めします。そしてもちろん、 "
+"link:http://www.jboss.org/infinispan/downloads[Infinispanをダウンロードして] 試したり、 "
+"link:http://www.jboss.org/infinispan/sourcecode[ソースコードを] "
+"手に取って実装の詳細に目を通したりすることに勝るものはありません。"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-21-distribution-instead-of-buddy.adoc:151
+#, fuzzy
 msgid "Cheers Manik"
-msgstr ""
+msgstr "乾杯 マニク"

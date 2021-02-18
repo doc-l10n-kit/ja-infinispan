@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,57 +18,147 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-05-20-red-hat-announces-enterprise-data-grid.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-20-red-hat-announces-enterprise-data-grid.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
-"title: Red Hat announces the Enterprise Data Grid - official support for Infinispan\n"
+"title: Red Hat announces the Enterprise Data Grid - official support for "
+"Infinispan\n"
 "permalink: /blog/:year/:month/:day/red-hat-announces-enterprise-data-grid\n"
 "  at last!\n"
 "date: '2011-05-20T14:38:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \" product\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2870012228393162092\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/05/red-hat-announces-enterprise-data-grid.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2870012228393162092\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/05/red-hat-announces-"
+"enterprise-data-grid.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Red HatがEnterprise Data Gridを発表-Infinispanを正式サポート\n"
+"permalink: /blog/:year/:month/:day/red-hat-announces-enterprise-data-grid\n"
+"  at last!\n"
+"date: '2011-05-20T14:38:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \" product\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2870012228393162092\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/05/red-hat-announces-"
+"enterprise-data-grid.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-20-red-hat-announces-enterprise-data-grid.adoc:21
-msgid "One of the http://www.redhat.com/about/news/prarchive/2011/Red-Hat-Introduces-JBoss-Enterprise-Data-Grid[big announcements] at the recently-passed http://www.redhat.com/summit/[JBoss World and Red Hat Summit] conference/trade show held in Boston earlier this month was the new Enterprise Data Grid, abbreviated to EDG.  I mentioned this very briefly in my http://infinispan.blogspot.com/2011/05/jboss-world-and-judcon-2011-recap.html[JBoss World recap], but the subject deserves more in-depth comment."
+#, fuzzy
+msgid ""
+"One of the http://www.redhat.com/about/news/prarchive/2011/Red-Hat-"
+"Introduces-JBoss-Enterprise-Data-Grid[big announcements] at the recently-"
+"passed http://www.redhat.com/summit/[JBoss World and Red Hat Summit] "
+"conference/trade show held in Boston earlier this month was the new "
+"Enterprise Data Grid, abbreviated to EDG.  I mentioned this very briefly in "
+"my http://infinispan.blogspot.com/2011/05/jboss-world-and-judcon-2011-recap."
+"html[JBoss World recap], but the subject deserves more in-depth comment."
 msgstr ""
+"今月初めにボストンで開催された link:http://www.redhat.com/summit/[JBoss World と Red Hat "
+"Summit の] カンファレンス/トレードショーでの link:http://www.redhat.com/about/news/prarchive/"
+"2011/Red-Hat-Introduces-JBoss-Enterprise-Data-Grid[大きな発表の] 一つは、新しい "
+"Enterprise Data Grid（略して EDG）でした。 これについては JBoss link:http://infinispan."
+"blogspot.com/2011/05/jboss-world-and-judcon-2011-recap.html[World のレポート] "
+"で簡単に触れましたが、このテーマについてはもっと深いコメントが必要です。"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-20-red-hat-announces-enterprise-data-grid.adoc:31
-msgid "Firstly, what is EDG?  It is a data grid platform, based on the open source http://www.infinispan.org/[Infinispan] project (and hence the relevance on this blog).  Just as Red Hat only offers support and subscriptions for http://www.jboss.com/products/platforms/application/[JBoss Enterprise Application Platform] (EAP) and not the community http://www.jboss.org/jbossas[JBoss Application Server] (AS) for its Java EE server offering, Red Hat will only offer support and subscriptions for EDG and not the community project, Infinispan."
+#, fuzzy
+msgid ""
+"Firstly, what is EDG?  It is a data grid platform, based on the open source "
+"http://www.infinispan.org/[Infinispan] project (and hence the relevance on "
+"this blog).  Just as Red Hat only offers support and subscriptions for http:/"
+"/www.jboss.com/products/platforms/application/[JBoss Enterprise Application "
+"Platform] (EAP) and not the community http://www.jboss.org/jbossas[JBoss "
+"Application Server] (AS) for its Java EE server offering, Red Hat will only "
+"offer support and subscriptions for EDG and not the community project, "
+"Infinispan."
 msgstr ""
+"まず、EDGとは何かというと、オープンソースの link:http://www.infinispan.org/[Infinispan] "
+"プロジェクトをベースにしたデータグリッドプラットフォームです。 Red HatがJBoss link:http://www.jboss.com/"
+"products/platforms/application/[Enterprise Application Platform (EAP)の] "
+"サポートとサブスクリプションのみを提供し link:http://www.jboss.com/products/platforms/"
+"application/[、] コミュニティのJBoss link:http://www.jboss.org/jbossas[Application "
+"Server (AS)が] Java EEサーバーを提供していないように、Red "
+"HatはEDGのサポートとサブスクリプションのみを提供し、コミュニティのプロジェクトであるInfinispanは提供しません。"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-20-red-hat-announces-enterprise-data-grid.adoc:37
-msgid "I'm not going to go into details on the reasons behind this - this is well documented in other areas (http://www.redhat.com/software/rhelorfedora/[RHEL vs. Fedora], JBoss EAP vs. JBoss AS, etc.) - and instead I'm going to talk about the first release of EDG, labeled EDG 6.0."
+#, fuzzy
+msgid ""
+"I'm not going to go into details on the reasons behind this - this is well "
+"documented in other areas (http://www.redhat.com/software/rhelorfedora/[RHEL "
+"vs. Fedora], JBoss EAP vs. JBoss AS, etc.) - and instead I'm going to talk "
+"about the first release of EDG, labeled EDG 6.0."
 msgstr ""
+"これは他の分野 link:http://www.redhat.com/software/rhelorfedora/[（RHEL vs. Fedora] "
+"、JBoss EAP vs. JBoss AS など）でもよく知られていることですが、その代わりに EDG の最初のリリースである EDG 6.0 "
+"についてお話します。"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-20-red-hat-announces-enterprise-data-grid.adoc:40
-msgid "http://www.stridingedge.net/images/2007/01.%20January/25th%20January%20-%20Striding%20Edge/25.01.07-076.jpg[image:http://www.stridingedge.net/images/2007/01.%20January/25th%20January%20-%20Striding%20Edge/25.01.07-076.jpg[image,width=320,height=240]]"
+#, fuzzy
+msgid ""
+"http://www.stridingedge.net/images/2007/01.%20January/25th%20January%20-"
+"%20Striding%20Edge/25.01.07-076.jpg[image:http://www.stridingedge.net/images/"
+"2007/01.%20January/25th%20January%20-%20Striding%20Edge/25.01.07-076."
+"jpg[image,width=320,height=240]]"
 msgstr ""
+"link:http://www.stridingedge.net/images/2007/01.%20January/25th%20January%20-"
+"%20Striding%20Edge/25.01.07-076.jpg[]"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-20-red-hat-announces-enterprise-data-grid.adoc:52
-msgid "EDG 6.0 - codenamed http://www.stridingedge.net/wainwright%20fells/a-l%20fells/Helvellyn.htm[Striding Edge, after the famous ridge on Helvellyn], in England's Lake District - is based on Infinispan 5.x, and in addition to Infinispan libraries, will also contain a runtime based on EAP 6.0.  A runtime?  Does a data grid really need a runtime?  Well, sometimes, yes.  If you are running a cluster of grid nodes and intend to access this cluster from a separate application tier, over a network, then there needs to be a mechanism to bootstrap that cluster.  Some of the latest innovations in AS 7 - the magic behind EAP 6.0 - give us the ability to efficiently bootstrap an Infinispan node with relevant server endpoints configured and running."
+#, fuzzy
+msgid ""
+"EDG 6.0 - codenamed http://www.stridingedge.net/wainwright%20fells/a-"
+"l%20fells/Helvellyn.htm[Striding Edge, after the famous ridge on Helvellyn], "
+"in England's Lake District - is based on Infinispan 5.x, and in addition to "
+"Infinispan libraries, will also contain a runtime based on EAP 6.0.  A "
+"runtime?  Does a data grid really need a runtime?  Well, sometimes, yes.  If "
+"you are running a cluster of grid nodes and intend to access this cluster "
+"from a separate application tier, over a network, then there needs to be a "
+"mechanism to bootstrap that cluster.  Some of the latest innovations in AS 7 "
+"- the magic behind EAP 6.0 - give us the ability to efficiently bootstrap an "
+"Infinispan node with relevant server endpoints configured and running."
 msgstr ""
+"EDG 6.0 - コードネームは link:http://www.stridingedge.net/wainwright%20fells/a-"
+"l%20fells/Helvellyn.htm[Striding Edge] で、イギリスの湖水地方にある link:http://www."
+"stridingedge.net/wainwright%20fells/a-l%20fells/Helvellyn."
+"htm[Helvellynの有名な尾根にちなんで] 名付けられました - はInfinispan 5."
+"xをベースにしており、Infinispanのライブラリに加えて、EAP 6.0をベースにしたランタイムが含まれています。 ランタイム？ "
+"データグリッドは本当にランタイムが必要なのでしょうか？ "
+"まあ、時々は必要です。グリッドノードのクラスタを実行していて、別のアプリケーション層からネットワーク経由でアクセスする場合は、クラスタをブートストラップするメカニズムが必要です。 "
+"AS 7の最新の技術革新 - EAP 6.0の背後にある魔法 - "
+"は、関連するサーバエンドポイントを設定して実行しているInfinispanノードを効率的にブートストラップする機能を提供しています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-20-red-hat-announces-enterprise-data-grid.adoc:58
-msgid "People have been asking for official support and consultancy around Infinispan for a long while now - over two years.  We finally have this, in the form of EDG.  If you are interested in getting on to an early access programme for EDG, and gain access to alpha and beta releases of EDG, register on http://www.jboss.com/edg6-early-access[this website]."
+#, fuzzy
+msgid ""
+"People have been asking for official support and consultancy around "
+"Infinispan for a long while now - over two years.  We finally have this, in "
+"the form of EDG.  If you are interested in getting on to an early access "
+"programme for EDG, and gain access to alpha and beta releases of EDG, "
+"register on http://www.jboss.com/edg6-early-access[this website]."
 msgstr ""
+"2年以上前から、Infinispanの公式サポートやコンサルティングを求められていましたが、ついにEDGという形で実現しました。 "
+"EDGの早期アクセスプログラムに参加して、EDGのアルファ版やベータ版へのアクセスをご希望の方は、こちらの link:http://www.jboss."
+"com/edg6-early-access[ウェブサイト] から登録してください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-05-20-red-hat-announces-enterprise-data-grid.adoc:60
+#, fuzzy
 msgid "Enjoy Manik"
-msgstr ""
+msgstr "マニクを楽しむ"

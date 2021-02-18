@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.0.3.Final and 8.2.7.Final are out!\n"
@@ -32,163 +32,325 @@ msgid ""
 "date: '2017-06-21T09:07:00.001-07:00'\n"
 "author: rigazilla\n"
 "tags: [ \" release 8.2 9.0 final\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8714417070848939656\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/06/infinispan-903final-and-827final-are-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8714417070848939656\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/06/infinispan-903final-"
+"and-827final-are-out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 9.0.3.Finalと8.2.7.Finalが出ました!\n"
+"permalink: /blog/:year/:month/:day/infinispan-903final-and-827final-are-out\n"
+"date: '2017-06-21T09:07:00.001-07:00'\n"
+"author: rigazilla\n"
+"tags: [ \" release 8.2 9.0 final\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8714417070848939656\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/06/infinispan-903final-"
+"and-827final-are-out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:12
+#, fuzzy
 msgid "Dear Infinispanner,"
-msgstr ""
+msgstr "インフィニスパナー様へ"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:15
-msgid "we're proud to announce the release of two new versions of Infinispan for the 9.0 and 8.2 users."
-msgstr ""
+#, fuzzy
+msgid ""
+"we're proud to announce the release of two new versions of Infinispan for "
+"the 9.0 and 8.2 users."
+msgstr "9.0と8.2のユーザー向けに2つの新しいバージョンのInfinispanのリリースを発表できることを誇りに思います。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:18
-msgid "If you're on these branches please check the list of the bugs we've caught and consider to upgrade."
-msgstr ""
+#, fuzzy
+msgid ""
+"If you're on these branches please check the list of the bugs we've caught "
+"and consider to upgrade."
+msgstr "もしあなたがこれらのブランチにいるのであれば、私たちがキャッチしたバグのリストを確認し、アップグレードを検討してください。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:21
-msgid "Download, docs and more info are available on the http://infinispan.org/[Infinispan Site.]"
+#, fuzzy
+msgid ""
+"Download, docs and more info are available on the http://infinispan.org/"
+"[Infinispan Site.]"
 msgstr ""
+"ダウンロード、ドキュメント、詳細情報は link:http://infinispan.org/[Infinispanサイト] でご覧いただけます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:24
+#, fuzzy
 msgid "Cheers, The Infinispan Team"
-msgstr ""
+msgstr "乾杯、インフィニスパンチーム"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:28
-msgid "Bugs closed in 9.0.3 (https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12334967[full release notes]):"
+#, fuzzy
+msgid ""
+"Bugs closed in 9.0.3 (https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12334967[full release notes]):"
 msgstr ""
+"9.0.3 link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
+"12310799&version=12334967[（フルリリースノート] ）でバグが発生しました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:31
-msgid "[https://issues.jboss.org/browse/ISPN-6730[ISPN-6730]] - EmbeddedCompatContinuousQueryTest.testContinuousQuery fails with CCE"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-6730[ISPN-6730]] - "
+"EmbeddedCompatContinuousQueryTest.testContinuousQuery fails with CCE"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-6730[ISPN-6730] ] - "
+"EmbeddedCompatContinuousQueryTest.testContinuousQueryがCCEで失敗しました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:33
-msgid "[https://issues.jboss.org/browse/ISPN-7710[ISPN-7710]] - CompatibilityProtoStreamMarshaller can't be set in server"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-7710[ISPN-7710]] - "
+"CompatibilityProtoStreamMarshaller can't be set in server"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-7710[ISPN-7710] ] - "
+"CompatibilityProtoStreamMarshallerがサーバで設定できません。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:35
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:82
-msgid "[https://issues.jboss.org/browse/ISPN-7779[ISPN-7779]] - State transfer does not work with protobuf encoded entities"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-7779[ISPN-7779]] - State transfer does "
+"not work with protobuf encoded entities"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-7779[ISPN-7779] ] - 状態の転送が "
+"protobuf エンコードされたエンティティで動作しません。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:37
-msgid "[https://issues.jboss.org/browse/ISPN-7802[ISPN-7802]] - Use chunked reads/writes in TcpTransport"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-7802[ISPN-7802]] - Use chunked reads/"
+"writes in TcpTransport"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-7802[ISPN-7802] ] - "
+"TcpTransportでチャンク化された読み書きを使用します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:39
-msgid "[https://issues.jboss.org/browse/ISPN-7814[ISPN-7814]] - Remove auth check in CacheDecodeContext"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-7814[ISPN-7814]] - Remove auth check "
+"in CacheDecodeContext"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-7814[ISPN-7814] ] - "
+"CacheDecodeContextでの認証チェックを削除します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:41
-msgid "[https://issues.jboss.org/browse/ISPN-7895[ISPN-7895]] - ArrayIndexOutOfBoundsException when using off heap with expiration"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-7895[ISPN-7895]] - "
+"ArrayIndexOutOfBoundsException when using off heap with expiration"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-7895[[ISPN-7895] ] - "
+"有効期限が切れたオフヒープを使用した場合のArrayIndexOutOfBoundsException"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:43
-msgid "[https://issues.jboss.org/browse/ISPN-7901[ISPN-7901]] - Postgres drop-on-exit remove index fails"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-7901[ISPN-7901]] - Postgres drop-on-"
+"exit remove index fails"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-7901[ISPN-7901] ] - Postgres drop-"
+"on-exit remove index に失敗しました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:45
-msgid "[https://issues.jboss.org/browse/ISPN-7906[ISPN-7906]] - Infinispan Query DSL does not handle inheritance of properties/fields correctly"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-7906[ISPN-7906]] - Infinispan Query "
+"DSL does not handle inheritance of properties/fields correctly"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-7906[ISPN-7906] ] - Infinispan "
+"Query DSLでは、プロパティ/フィールドの継承が正しく処理されません。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:47
-msgid "[https://issues.jboss.org/browse/ISPN-7922[ISPN-7922]] - OffHeap stream causes too many entries in memory at once"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-7922[ISPN-7922]] - OffHeap stream "
+"causes too many entries in memory at once"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-7922[ISPN-7922] ] - "
+"OffHeapストリームで、一度にメモリ内のエントリが多すぎるという問題がありました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:49
-msgid "[https://issues.jboss.org/browse/ISPN-7930[ISPN-7930]] - Remove unnecessary provided dependencies"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-7930[ISPN-7930]] - Remove unnecessary "
+"provided dependencies"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-7930[ISPN-7930] ] - 不要な提供依存関係の削除"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:54
-msgid "Bugs closed in 8.2.7 (https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12333501[full release notes]):"
+#, fuzzy
+msgid ""
+"Bugs closed in 8.2.7 (https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12333501[full release notes]):"
 msgstr ""
+"8.2.7のバグは閉鎖されています link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12333501[（フルリリースノート] ）。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:57
-msgid "[https://issues.jboss.org/browse/ISPN-6029[ISPN-6029]] - DDL for JDBC store tables should never allow null"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-6029[ISPN-6029]] - DDL for JDBC store "
+"tables should never allow null"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-6029[ISPN-6029] ] - "
+"JDBCストアテーブルのDDLでは決してNULLを許可しないようにしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:59
-msgid "[https://issues.jboss.org/browse/ISPN-6539[ISPN-6539]] - ClassCastException with Remote Cache Loader and GetWithMetadata"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-6539[ISPN-6539]] - ClassCastException "
+"with Remote Cache Loader and GetWithMetadata"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-6539[ISPN-6539] ] - "
+"リモート・キャッシュ・ローダと GetWithMetadata を使用した ClassCastException"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:62
-msgid "[https://issues.jboss.org/browse/ISPN-6766[ISPN-6766]] - hot rod client: RemoteCache.removeClient method does not remove the listener from the list after server restart"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-6766[ISPN-6766]] - hot rod client: "
+"RemoteCache.removeClient method does not remove the listener from the list "
+"after server restart"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-6766[ISPN-6766] ] - "
+"ホットロッドクライアント。サーバー再起動後にRemoteCache.removeClientメソッドがリストからリスナーを削除しない"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:64
-msgid "[https://issues.jboss.org/browse/ISPN-7430[ISPN-7430]] - Slowdown when using PutAll with transactions"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-7430[ISPN-7430]] - Slowdown when using "
+"PutAll with transactions"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-7430[ISPN-7430] ] - "
+"トランザクションでPutAllを使用した場合の動作が遅くなります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:66
-msgid "[https://issues.jboss.org/browse/ISPN-7480[ISPN-7480]] - JDBC cache store doesn't work on Sybase"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-7480[ISPN-7480]] - JDBC cache store "
+"doesn't work on Sybase"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-7480[ISPN-7480] ] - "
+"Sybase上でJDBCキャッシュストアが動作しません。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:68
-msgid "[https://issues.jboss.org/browse/ISPN-7495[ISPN-7495]] - XSD files missing from infinispan-embedded"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-7495[ISPN-7495]] - XSD files missing "
+"from infinispan-embedded"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-7495[ISPN-7495] ] - infinispan-"
+"embedded から XSD ファイルが見つかりません。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:70
-msgid "[https://issues.jboss.org/browse/ISPN-7535[ISPN-7535]] - Cache creation requires specific permissions when using security manager"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-7535[ISPN-7535]] - Cache creation "
+"requires specific permissions when using security manager"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-7535[ISPN-7535] ] - "
+"セキュリティマネージャを使用している場合、キャッシュの作成には特定の権限が必要です。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:72
-msgid "[https://issues.jboss.org/browse/ISPN-7547[ISPN-7547]] - ISPN-7207 fix swallows JMX exceptions"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-7547[ISPN-7547]] - ISPN-7207 fix "
+"swallows JMX exceptions"
 msgstr ""
+"ISPN- link:https://issues.jboss.org/browse/ISPN-7547[7547] ] - ISPN-"
+"7207でのJMX例外のスワローズを修正しました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:75
-msgid "[https://issues.jboss.org/browse/ISPN-7572[ISPN-7572]] - Infinispan initialization via DirectoryProvider can't use any CacheStore or other extensions"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-7572[ISPN-7572]] - Infinispan "
+"initialization via DirectoryProvider can't use any CacheStore or other "
+"extensions"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-7572[ISPN-7572] ] - "
+"DirectoryProvider経由でInfinispanを初期化すると、CacheStoreなどの拡張機能が使用できないという問題がありました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:78
-msgid "[https://issues.jboss.org/browse/ISPN-7584[ISPN-7584]] - Rolling upgrade fails with \"java.lang.ClassCastException: SimpleClusteredVersion cannot be cast to NumericVersion\""
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-7584[ISPN-7584]] - Rolling upgrade "
+"fails with \"java.lang.ClassCastException: SimpleClusteredVersion cannot be "
+"cast to NumericVersion\""
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-7584[ISPN-7584] ] - \"java.lang."
+"ClassCastException.SimpleClusteredVersion cannot cast to "
+"NumericVersion\"でローリングアップグレードに失敗しました。SimpleClusteredVersionをNumericVersionにキャストできません。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:80
-msgid "[https://issues.jboss.org/browse/ISPN-7622[ISPN-7622]] - Hot Rod Rolling Upgrade throws TimeOutException"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-7622[ISPN-7622]] - Hot Rod Rolling "
+"Upgrade throws TimeOutException"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-7622[ISPN-7622] ] - Hot Rod "
+"Rolling Upgrade throws TimeOutExceptionが発生しました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:84
-msgid "[https://issues.jboss.org/browse/ISPN-7838[ISPN-7838]] - JBoss Modules NPE in Domain mode"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-7838[ISPN-7838]] - JBoss Modules NPE "
+"in Domain mode"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-7838[ISPN-7838] ] - ドメインモードでの "
+"JBoss モジュール NPE"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:87
-msgid "[https://issues.jboss.org/browse/ISPN-7860[ISPN-7860]] - DataContainerFactory doesn't work with MANUAL eviction mode (CacheConfigurationException: Unknown eviction strategy MANUAL)"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-7860[ISPN-7860]] - "
+"DataContainerFactory doesn't work with MANUAL eviction mode "
+"(CacheConfigurationException: Unknown eviction strategy MANUAL)"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-7860[ISPN-7860] ] - "
+"DataContainerFactory が MANUAL エビクションモードで動作しない (CacheConfigurationException: "
+"Unknown eviction strategy MANUAL) - DataContainerFactory が MANUAL "
+"エビクションモードで動作しない (CacheConfigurationException: Unknown eviction strategy "
+"MANUAL)"
 
 #. type: Plain text
 #: upstream/_posts/2017-06-21-infinispan-903final-and-827final-are-out.adoc:89
-msgid "[https://issues.jboss.org/browse/ISPN-7906[ISPN-7906]] - Infinispan Query DSL does not handle inheritance of properties/fields correctly "
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-7906[ISPN-7906]] - Infinispan Query "
+"DSL does not handle inheritance of properties/fields correctly "
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-7906[ISPN-7906] ] - Infinispan "
+"Query DSLでは、プロパティ/フィールドの継承が正しく処理されません。"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-07-24-infinispan-security-2-authorization.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-24-infinispan-security-2-authorization.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: 'Infinispan Security #2: Authorization Reloaded and Auditing'\n"
@@ -32,50 +32,133 @@ msgid ""
 "date: '2014-07-24T13:13:00.001-07:00'\n"
 "author: ttarrant\n"
 "tags: []\n"
-"thumbnail: http://1.bp.blogspot.com/-9APesRwdaS8/U9Ffb9ZwJDI/AAAAAAAAEjs/-bPCvrCgOeI/s72-c/securityperf.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8200654017249164158\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/07/infinispan-security-2-authorization.html\n"
+"thumbnail: http://1.bp.blogspot.com/-9APesRwdaS8/U9Ffb9ZwJDI/AAAAAAAAEjs/-"
+"bPCvrCgOeI/s72-c/securityperf.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8200654017249164158\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/07/infinispan-security-2-"
+"authorization.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan Security #2: Authorization Reloaded and Auditing'\n"
+"permalink: /blog/:year/:month/:day/infinispan-security-2-authorization\n"
+"date: '2014-07-24T13:13:00.001-07:00'\n"
+"author: ttarrant\n"
+"tags: []\n"
+"thumbnail: http://1.bp.blogspot.com/-9APesRwdaS8/U9Ffb9ZwJDI/AAAAAAAAEjs/-"
+"bPCvrCgOeI/s72-c/securityperf.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8200654017249164158\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/07/infinispan-security-2-"
+"authorization.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-24-infinispan-security-2-authorization.adoc:17
-msgid "Since the http://blog.infinispan.org/2014/04/infinispan-security-1-authorization.html[last post] on Infinispan Security, there have been a few changes related to how we handle authorization in Infinispan. All of these are available in the recently released 7.0.0.Alpha5."
+#, fuzzy
+msgid ""
+"Since the http://blog.infinispan.org/2014/04/infinispan-security-1-"
+"authorization.html[last post] on Infinispan Security, there have been a few "
+"changes related to how we handle authorization in Infinispan. All of these "
+"are available in the recently released 7.0.0.Alpha5."
 msgstr ""
+"link:http://blog.infinispan.org/2014/04/infinispan-security-1-authorization."
+"html[前回の] Infinispan Security の link:http://blog.infinispan.org/2014/04/"
+"infinispan-security-1-authorization.html[投稿] 以来、Infinispan "
+"での認証の扱い方に関連して、いくつかの変更がありました。これらはすべて、最近リリースされた 7.0.0.0.Alpha5 で利用可能です。"
 
 #. type: Title ==
 #: upstream/_posts/2014-07-24-infinispan-security-2-authorization.adoc:19
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Authorization Performance"
-msgstr ""
+msgstr "認可パフォーマンス"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-24-infinispan-security-2-authorization.adoc:29
-msgid "Previously we mentioned the need to use a _SecurityManager_ and javax.security.auth.Subject.doAs() in order to achieve authorization in embedded mode. Unfortunately those components have a severe performance impact. In particular, retrieving the current _Subject_ from the _AccessControlContext_ adds, on my test environment, 3.5µs per call.  Since the execution of a _Cache.put_ takes about 0.5µs when authorization is not in use, this means that every invocation is 8x slower."
+#, fuzzy
+msgid ""
+"Previously we mentioned the need to use a _SecurityManager_ and javax."
+"security.auth.Subject.doAs() in order to achieve authorization in embedded "
+"mode. Unfortunately those components have a severe performance impact. In "
+"particular, retrieving the current _Subject_ from the _AccessControlContext_ "
+"adds, on my test environment, 3.5µs per call.  Since the execution of a "
+"_Cache.put_ takes about 0.5µs when authorization is not in use, this means "
+"that every invocation is 8x slower."
 msgstr ""
+"以前、組み込みモードで認証を行うには、 _SecurityManager_ とjavax.security.auth.Subject."
+"doAs()を使用する必要があることを説明しました。残念ながら、これらのコンポーネントはパフォーマンスに深刻な影響を与えます。特に、 "
+"_AccessControlContext_ から現在の _Subject を_ 取得すると、私のテスト環境では、1 回の呼び出しあたり 3.5µs "
+"が追加されます。認証が使用されていない場合、 _Cache.put_ の実行には約 0.5µs がかかるため、これはすべての呼び出しが 8 "
+"倍遅くなることを意味します。"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-24-infinispan-security-2-authorization.adoc:43
-msgid "For this reason we have introduced an alternative for those of you (hopefully the majority), that do not need to use a _SecurityManager_ and can avoid the _AccessControlContext_: invoke your _PrivilegedActions_ using the new org.infinispan.security.Security.doAs() method, which uses a _ThreadLocal_ to store the current _Subject_. Using this new approach, the overhead per invocation falls to 0.5µs: a 7x improvement ! _Security.doAs()_ is actually smart: if it detects that a _SecurityManager_ is in use, it will fallback to retrieving the _Subject_ via the _AccessControlContext_, so you don't need to decide what approach you will be using in production. The following chart shows the impact of using each approach when compared to running without authorization:"
+#, fuzzy
+msgid ""
+"For this reason we have introduced an alternative for those of you "
+"(hopefully the majority), that do not need to use a _SecurityManager_ and "
+"can avoid the _AccessControlContext_: invoke your _PrivilegedActions_ using "
+"the new org.infinispan.security.Security.doAs() method, which uses a "
+"_ThreadLocal_ to store the current _Subject_. Using this new approach, the "
+"overhead per invocation falls to 0.5µs: a 7x improvement ! _Security.doAs()_ "
+"is actually smart: if it detects that a _SecurityManager_ is in use, it will "
+"fallback to retrieving the _Subject_ via the _AccessControlContext_, so you "
+"don't need to decide what approach you will be using in production. The "
+"following chart shows the impact of using each approach when compared to "
+"running without authorization:"
 msgstr ""
+"このため、 _SecurityManager_ を使用する必要がなく、 _AccessControlContext_ "
+"を避けることができる方（大多数の方）のために、別の方法を導入しました：新しい org.infinispan.security.Security."
+"doAs() メソッドを使用して _PrivilegedActions を_ 呼び出し、現在の _Subject_ を保存するために "
+"_ThreadLocal_ を使用します。この新しいアプローチを使用することで、1 回の呼び出しあたりのオーバーヘッドは 0.5µs に減少します。 "
+"_Security.doAs()_ は実際にはスマートです。 _SecurityManager_ が使用中であることを検出すると、 "
+"_AccessControlContext_ を介した _Subject の_ "
+"取得にフォールバックするので、本番で使用するアプローチを決める必要はありません。次の表は、認証なしで実行する場合と比較して、各アプローチを使用した場合の影響を示しています。"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-24-infinispan-security-2-authorization.adoc:45
-msgid "http://1.bp.blogspot.com/-9APesRwdaS8/U9Ffb9ZwJDI/AAAAAAAAEjs/-bPCvrCgOeI/s1600/securityperf.png[image:http://1.bp.blogspot.com/-9APesRwdaS8/U9Ffb9ZwJDI/AAAAAAAAEjs/-bPCvrCgOeI/s1600/securityperf.png[image,width=320,height=180]]"
+#, fuzzy
+msgid ""
+"http://1.bp.blogspot.com/-9APesRwdaS8/U9Ffb9ZwJDI/AAAAAAAAEjs/-bPCvrCgOeI/"
+"s1600/securityperf.png[image:http://1.bp.blogspot.com/-9APesRwdaS8/"
+"U9Ffb9ZwJDI/AAAAAAAAEjs/-bPCvrCgOeI/s1600/securityperf.png[image,width="
+"320,height=180]]"
 msgstr ""
+"link:http://1.bp.blogspot.com/-9APesRwdaS8/U9Ffb9ZwJDI/AAAAAAAAEjs/-"
+"bPCvrCgOeI/s1600/securityperf.png[]"
 
 #. type: Title ==
 #: upstream/_posts/2014-07-24-infinispan-security-2-authorization.adoc:49
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Auditing"
-msgstr ""
+msgstr "監査"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-24-infinispan-security-2-authorization.adoc:59
-msgid "An essential part of an authorization framework, is the ability to track WHO is doing WHAT (or is being prevented from doing it !). Infinispan now offers a pluggable audit framework which you can use to track the execution of cache/container operations. The default audit logger sends audit messages to your logging framework of choice (e.g. Log4J), but you can write your own to take any appropriate actions you deem appropriate for your security policies."
+#, fuzzy
+msgid ""
+"An essential part of an authorization framework, is the ability to track WHO "
+"is doing WHAT (or is being prevented from doing it !). Infinispan now offers "
+"a pluggable audit framework which you can use to track the execution of "
+"cache/container operations. The default audit logger sends audit messages to "
+"your logging framework of choice (e.g. Log4J), but you can write your own to "
+"take any appropriate actions you deem appropriate for your security policies."
+""
 msgstr ""
+"認証フレームワークの重要な部分は、誰が何をしているか（またはそれを阻止されているか）を追跡する機能です。Infinispan は現在、キャッシュ/"
+"コンテナ操作の実行を追跡するために使用できるプラグイン可能な監査フレームワークを提供しています。デフォルトの監査ロガーは、お好みのロギングフレームワーク（例：Log4J）に監査メッセージを送信しますが、セキュリティポリシーに応じて適切なアクションを取るために独自のものを作成することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2014-07-24-infinispan-security-2-authorization.adoc:64
-msgid "As usual, for more details, check out the http://infinispan.org/docs/7.0.x/user_guide/user_guide.html#_security[Security chapter] in the Infinispan documentation and the https://docs.jboss.org/infinispan/7.0/apidocs/org/infinispan/security/package-summary.html[org.infinispan.security] JavaDocs."
+#, fuzzy
+msgid ""
+"As usual, for more details, check out the http://infinispan.org/docs/7.0.x/"
+"user_guide/user_guide.html#_security[Security chapter] in the Infinispan "
+"documentation and the https://docs.jboss.org/infinispan/7.0/apidocs/org/"
+"infinispan/security/package-summary.html[org.infinispan.security] JavaDocs."
 msgstr ""
+"いつものように、詳細はInfinispanドキュメントの link:http://infinispan.org/docs/7.0.x/"
+"user_guide/user_guide.html#_security[セキュリティの章] や、 link:https://docs.jboss."
+"org/infinispan/7.0/apidocs/org/infinispan/security/package-summary.html[org."
+"infinispan.security] JavaDocsをチェックしてみてください。"

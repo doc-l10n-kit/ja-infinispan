@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:17
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 7.1.0.Beta1\n"
@@ -39,77 +39,139 @@ msgid ""
 "\"indexing\",\n"
 "\"annotations\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2672091286286934912\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/01/infinispan-710beta1.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2672091286286934912\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/01/infinispan-710beta1."
+"html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 7.1.0.Beta1\n"
+"permalink: /blog/:year/:month/:day/infinispan-710beta1\n"
+"date: '2015-01-09T15:21:00.000-08:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\",\n"
+"\"near caching\",\n"
+"\"domain mode\",\n"
+"\"performance\",\n"
+"\"Protobuf\",\n"
+"\"indexing\",\n"
+"\"annotations\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2672091286286934912\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/01/infinispan-710beta1."
+"html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:19
+#, fuzzy
 msgid "Dear Infinispan community,"
-msgstr ""
+msgstr "インフィニスパンのコミュニティへ"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:21
+#, fuzzy
 msgid "We're proud to announce the first Beta release of Infinispan 7.1.0."
-msgstr ""
+msgstr "Infinispan 7.1.0の最初のベータリリースを発表できることを誇りに思います。"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:23
+#, fuzzy
 msgid "Infinispan brings the following major improvements:"
-msgstr ""
+msgstr "Infinispanは以下のような大きな改善をもたらします。"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:25
+#, fuzzy
 msgid "Near-Cache support for Remote HotRod caches"
-msgstr ""
+msgstr "リモートHotRodキャッシュのニアキャッシュサポート"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:28
-msgid "Annotation-based generation of ProtoBuf serializers which removes the need to write the schema files by hand and greatly improves usability of Remote Queries"
+#, fuzzy
+msgid ""
+"Annotation-based generation of ProtoBuf serializers which removes the need "
+"to write the schema files by hand and greatly improves usability of Remote "
+"Queries"
 msgstr ""
+"アノテーションベースのProtoBufシリアライザの生成により、スキーマファイルを手書きする必要がなくなり、リモートクエリの使い勝手が大幅に向上します。"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:30
-msgid "Cluster Listener Event Batching, which coalesces events for better performance"
-msgstr ""
+#, fuzzy
+msgid ""
+"Cluster Listener Event Batching, which coalesces events for better "
+"performance"
+msgstr "イベントを統合してパフォーマンスを向上させるクラスターリスナーイベントバッチ"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:31
+#, fuzzy
 msgid "Cluster- and node-wide aggregated statistics"
-msgstr ""
+msgstr "クラスタおよびノード全体の集約された統計情報"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:32
+#, fuzzy
 msgid "Vast improvements to the indexing performance"
-msgstr ""
+msgstr "インデックス性能を大幅に向上"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:33
+#, fuzzy
 msgid "Support for domain mode and the security vault in the server"
-msgstr ""
+msgstr "サーバー内のドメインモードとセキュリティ保管庫のサポート"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:36
-msgid "Further improvements to the Partition Handling with many stability fixes and the removal of the Unavailable mode: a cluster can now be either Available or Degraded."
+#, fuzzy
+msgid ""
+"Further improvements to the Partition Handling with many stability fixes and "
+"the removal of the Unavailable mode: a cluster can now be either Available "
+"or Degraded."
 msgstr ""
+"多くの安定性の修正と利用不可モードの削除により、パーティション処理がさらに改善されました：クラスタは利用可能または劣化のどちらかになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:39
-msgid "Of course there's also the usual slew of bug fixes, performance and memory usage improvements and documentation cleanups."
-msgstr ""
+#, fuzzy
+msgid ""
+"Of course there's also the usual slew of bug fixes, performance and memory "
+"usage improvements and documentation cleanups."
+msgstr "もちろん、バグの修正、パフォーマンスやメモリ使用量の改善、ドキュメントのクリーンアップなども通常通り行われています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:45
-msgid "Feel free to join us and shape the future releases on our http://www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or our http://webchat.freenode.net/?channels=%23infinispan[#infinispan] IRC channel."
+#, fuzzy
+msgid ""
+"Feel free to join us and shape the future releases on our http://www.jboss."
+"org/infinispan/forums[forums], our https://lists.jboss.org/mailman/listinfo/"
+"infinispan-dev[mailing lists] or our http://webchat.freenode.net/?channels="
+"%23infinispan[#infinispan] IRC channel."
 msgstr ""
+"link:http://www.jboss.org/infinispan/forums[フォーラム] 、 link:https://lists."
+"jboss.org/mailman/listinfo/infinispan-dev[メーリングリスト] 、 link:http://webchat."
+"freenode.net/?channels=%23infinispan[#infinispan] "
+"IRCチャンネルで、気軽に参加して、将来のリリースを形にしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:51
-msgid "For a complete list of features and bug fixes included in this release please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12325979[release notes]. Visit our http://infinispan.org/download/[downloads] section to find the latest release."
+#, fuzzy
+msgid ""
+"For a complete list of features and bug fixes included in this release "
+"please refer to the https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12325979[release notes]. Visit our http://"
+"infinispan.org/download/[downloads] section to find the latest release."
 msgstr ""
+"このリリースに含まれる機能とバグフィックスの完全なリストについては、 link:https://issues.jboss.org/secure/"
+"ReleaseNote.jspa?projectId=12310799&version=12325979[リリースノート] "
+"を参照してください。最新のリリースについては、 link:http://infinispan.org/download/[ダウンロード] "
+"セクションをご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-09-infinispan-710beta1.adoc:53
+#, fuzzy
 msgid "Thanks to everyone for their involvement and contribution!"
-msgstr ""
+msgstr "皆様のご参加、ご投稿ありがとうございました"

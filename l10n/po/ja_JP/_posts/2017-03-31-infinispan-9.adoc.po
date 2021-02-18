@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9\n"
@@ -35,238 +35,385 @@ msgid ""
 "\"release\",\n"
 "\"final\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4909829576773072848\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4909829576773072848\n"
 "blogger_orig_url: https://blog.infinispan.org/2017/03/infinispan-9.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: インフィニスパン9\n"
+"permalink: /blog/:year/:month/:day/infinispan-9\n"
+"date: '2017-03-31T01:50:00.000-07:00'\n"
+"author: ttarrant\n"
+"tags: [\n"
+"\"release\",\n"
+"\"final\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4909829576773072848\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/03/infinispan-9.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:17
-msgid "Infinispan 9 is the culmination of nearly a year of work. It is codenamed \"Ruppaner\" in honor of the city of Konstanz, where we designed many of the improvements we've made. Prost!"
+#, fuzzy
+msgid ""
+"Infinispan 9 is the culmination of nearly a year of work. It is codenamed "
+"\"Ruppaner\" in honor of the city of Konstanz, where we designed many of the "
+"improvements we've made. Prost!"
 msgstr ""
+"Infinispan 9は、約1年間の作業の集大成です。コードネームは「Ruppaner」で、コンスタンツ市に敬意を表して命名されました。Prost!"
 
 #. type: Title ==
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:19
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Performance"
-msgstr ""
+msgstr "パフォーマンス"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:26
-msgid "We decided it was time to revisit Infinispan's performance and scalability. So we went back to our internals design and we made a number of improvements. Infinispan 9.0 is faster than any previous release by quite a sizeable margin in a number of key aspects:"
+#, fuzzy
+msgid ""
+"We decided it was time to revisit Infinispan's performance and scalability. "
+"So we went back to our internals design and we made a number of improvements."
+" Infinispan 9.0 is faster than any previous release by quite a sizeable "
+"margin in a number of key aspects:"
 msgstr ""
+"私たちは、Infinispanのパフォーマンスとスケーラビリティを見直す時期に来ていると判断しました。そこで私たちは内部設計に戻り、いくつかの改善を行いました。Infinispan "
+"9.0は、いくつかの重要な点において、以前のどのリリースよりも大幅に速くなっています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:30
-msgid "distributed writes, thanks to a new algorithm which reduces the number of RPCs required to write to the owners"
-msgstr ""
+#, fuzzy
+msgid ""
+"distributed writes, thanks to a new algorithm which reduces the number of "
+"RPCs required to write to the owners"
+msgstr "オーナーへの書き込みに必要な RPC の数を減らす新しいアルゴリズムのおかげで、分散書き込みが可能になりました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:31
+#, fuzzy
 msgid "distributed reads, which scale much better under load"
-msgstr ""
+msgstr "分散型リードは、負荷がかかるとスケールが良くなります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:32
+#, fuzzy
 msgid "replicated writes, also with better scalability under load"
-msgstr ""
+msgstr "レプリケートされた書き込み、負荷時のスケーラビリティも向上"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:33
+#, fuzzy
 msgid "eviction, thanks to a new in-memory container"
-msgstr ""
+msgstr "新しいインメモリコンテナのおかげで、立ち退きが可能になりました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:34
+#, fuzzy
 msgid "internal marshalling, which was completely rewritten"
-msgstr ""
+msgstr "完全に書き換えられた内部マーシャリング"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:38
-msgid "We will have a post dedicated to benchmarks detailing the difference against previous versions and in various scenarios."
-msgstr ""
+#, fuzzy
+msgid ""
+"We will have a post dedicated to benchmarks detailing the difference against "
+"previous versions and in various scenarios."
+msgstr "以前のバージョンとの違いや、様々なシナリオでの違いを詳細に説明するベンチマーク専用の投稿を予定しています。"
 
 #. type: Title ==
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:40
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Marshalling"
-msgstr ""
+msgstr "マーシャリング"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:50
-msgid "We've made several improvements in the cluster and persistent storage marshalling layer which has resulted in increased performance and smaller payloads. Also, the new marshaller layer makes JBoss Marshalling an optional component, which is only used when no Infinispan Externalizers (or AdvancedExternalizers) are available for a given type, hence relying on standard JDK Serializable/Externalizable capabilities to be marshalled."
+#, fuzzy
+msgid ""
+"We've made several improvements in the cluster and persistent storage "
+"marshalling layer which has resulted in increased performance and smaller "
+"payloads. Also, the new marshaller layer makes JBoss Marshalling an optional "
+"component, which is only used when no Infinispan Externalizers (or "
+"AdvancedExternalizers) are available for a given type, hence relying on "
+"standard JDK Serializable/Externalizable capabilities to be marshalled."
 msgstr ""
+"クラスターとパーシステントストレージのマーシャリングレイヤーでいくつかの改善を行い、パフォーマンスの向上とペイロードの小型化を実現しました。また、新しいマーシャラー層は、JBoss "
+"Marshalling をオプションのコンポーネントにしており、これは与えられたタイプで Infinispan Externalizers (または "
+"AdvancedExternalizers) が利用できない場合にのみ使用されるため、標準の JDK Serializable/"
+"Externalizable 機能に依存してマーシャリングされます。"
 
 #. type: Title ==
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:52
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Remote Hot Rod Clients"
-msgstr ""
+msgstr "リモートホットロッドのクライアント"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:57
-msgid "We now ship alternate marshallers for remote clients based on Kryo and ProtoStuff."
-msgstr ""
+#, fuzzy
+msgid ""
+"We now ship alternate marshallers for remote clients based on Kryo and "
+"ProtoStuff."
+msgstr "KryoとProtoStuffをベースにしたリモートクライアント用の代替マーシャラーを出荷するようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:60
-msgid "Additionally, the Hot Rod protocol now supports streaming operations for dealing with large objects."
-msgstr ""
+#, fuzzy
+msgid ""
+"Additionally, the Hot Rod protocol now supports streaming operations for "
+"dealing with large objects."
+msgstr "さらに、Hot Rodプロトコルは今、ラージオブジェクトを扱うためのストリーミング操作をサポートしています。"
 
 #. type: Title ==
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:62
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Off-Heap and data-container changes"
-msgstr ""
+msgstr "オフヒープとデータコンテナの変更"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:71
-msgid "An In-Memory Data Grid likes to eat through your memory (because you want it to be fast!), but in the world of the JVM that is not ideal: that huge chunk of data gives Garbage Collectors a hard time when the heap goes into double-digit gigabyte territory. Long GC pauses can make individual nodes unresponsive, compromising the stability of your cluster."
+#, fuzzy
+msgid ""
+"An In-Memory Data Grid likes to eat through your memory (because you want it "
+"to be fast!), but in the world of the JVM that is not ideal: that huge chunk "
+"of data gives Garbage Collectors a hard time when the heap goes into double-"
+"digit gigabyte territory. Long GC pauses can make individual nodes "
+"unresponsive, compromising the stability of your cluster."
 msgstr ""
+"インメモリデータグリッドはメモリを食い尽くすのが好きですが、JVMの世界ではそれは理想的ではありません: "
+"巨大なデータの塊は、ヒープが二桁のギガバイト領域になると、ガベージコレクタに苦労を強います。長いGCの休止は、個々のノードを応答不能にし、クラスタの安定性を損なう可能性があります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:74
-msgid "Infinispan 9 introduces an improved data container which can optionally store entries off-heap."
-msgstr ""
+#, fuzzy
+msgid ""
+"Infinispan 9 introduces an improved data container which can optionally "
+"store entries off-heap."
+msgstr "Infinispan 9 は、オプションでエントリをオフヒープで保存できる改良されたデータコンテナを導入しました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:79
-msgid "Additionally, our bounded container has been replaced with Ben Manes' excellent Caffeine which provides much better performance. Check out Ben's benchmarks where he compares, among other things, against Infinispan's old bounded container."
+#, fuzzy
+msgid ""
+"Additionally, our bounded container has been replaced with Ben Manes' "
+"excellent Caffeine which provides much better performance. Check out Ben's "
+"benchmarks where he compares, among other things, against Infinispan's old "
+"bounded container."
 msgstr ""
+"さらに、私たちのバウンデッドコンテナはBen "
+"Manesの優れたCaffeineに置き換えられ、より良いパフォーマンスを提供します。ベンのベンチマークでは、特にInfinispanの古いバウンデッドコンテナと比較しています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:83
-msgid "Configuration-wise, the previously separate concepts of eviction, store-as-binary and data-container have been merged into a single 'memory' configuration element."
+#, fuzzy
+msgid ""
+"Configuration-wise, the previously separate concepts of eviction, store-as-"
+"binary and data-container have been merged into a single 'memory' "
+"configuration element."
 msgstr ""
+"コンフィギュレーション上では、以前は別々の概念であったeviction、store-as-binary、data-"
+"containerが1つの'memory'コンフィギュレーション要素にマージされました。"
 
 #. type: Title ==
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:85
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Persistence"
-msgstr ""
+msgstr "永続性"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:89
+#, fuzzy
 msgid "The JDBC cache store received quite an overhaul:"
-msgstr ""
+msgstr "JDBCキャッシュストアはかなりのオーバーホールを受けました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:93
-msgid "The internal connection pool is now based on HikariCP, for improved performance"
-msgstr ""
+#, fuzzy
+msgid ""
+"The internal connection pool is now based on HikariCP, for improved "
+"performance"
+msgstr "内部接続プールがHikariCPをベースとしたものになり、パフォーマンスが向上しました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:95
-msgid "Writes will now use database-specific upsert functionality when available"
-msgstr ""
+#, fuzzy
+msgid ""
+"Writes will now use database-specific upsert functionality when available"
+msgstr "書き込みでは、データベース固有のアップサート機能を使用できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:97
-msgid "Transactional writes to the cache translate to transactional writes to the database"
-msgstr ""
+#, fuzzy
+msgid ""
+"Transactional writes to the cache translate to transactional writes to the "
+"database"
+msgstr "キャッシュへのトランザクション書き込みは、データベースへのトランザクション書き込みに変換されます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:99
-msgid "The JdbcBinaryStore and JdbcMixedStore have been removed as detailed here"
-msgstr ""
+#, fuzzy
+msgid ""
+"The JdbcBinaryStore and JdbcMixedStore have been removed as detailed here"
+msgstr "JdbcBinaryStoreとJdbcMixedStoreが削除されました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:103
-msgid "We have also replaced the LevelDB cache store with the better-maintained and faster RocksDB cache store."
-msgstr ""
+#, fuzzy
+msgid ""
+"We have also replaced the LevelDB cache store with the better-maintained and "
+"faster RocksDB cache store."
+msgstr "また、LevelDBのキャッシュストアを、よりメンテナンスの行き届いた高速なRocksDBのキャッシュストアに置き換えました。"
 
 #. type: Title ==
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:105
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Ickle, our new query language"
-msgstr ""
+msgstr "Ickle、新しいクエリ言語"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:114
-msgid "We decided it was time for Infinispan to have a proper query language, which would take full advantage of our query capabilities. We have therefore grafted Lucene's full-text operators on top of a subset of JP-QL to obtain Ickle. We have already started describing Ickle in a recent blog post. For a taste of Ickle, the following query shows how to combine a traditional boolean clause with a full-text term query:"
+#, fuzzy
+msgid ""
+"We decided it was time for Infinispan to have a proper query language, which "
+"would take full advantage of our query capabilities. We have therefore "
+"grafted Lucene's full-text operators on top of a subset of JP-QL to obtain "
+"Ickle. We have already started describing Ickle in a recent blog post. For a "
+"taste of Ickle, the following query shows how to combine a traditional "
+"boolean clause with a full-text term query:"
 msgstr ""
+"私たちは、Infinispan にとって、私たちのクエリ機能をフルに活用できる適切なクエリ言語を持つ時期に来ていると判断しました。そこで、JP-QL "
+"のサブセットの上に Lucene のフルテキスト演算子をグラフトして、Ickle を開発しました。Ickle "
+"については、すでに最近のブログ記事で説明を始めています。Ickle "
+"を味わうために、次のクエリでは従来のブール型の節とフルテキストの用語クエリを組み合わせる方法を示しています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:118
-msgid "select transactionId, amount, description from com.acme.Transaction where amount > 10 and description : \"coffee\""
+#, fuzzy
+msgid ""
+"select transactionId, amount, description from com.acme.Transaction where "
+"amount > 10 and description : \"coffee\""
 msgstr ""
+"select transactionId, amount, description from com.acme.Transaction where "
+"amount > 10 and description : \"coffee\""
 
 #. type: Title ==
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:120
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Cloud integrations"
-msgstr ""
+msgstr "クラウド統合"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:127
-msgid "Infinispan continues to play nicely in cloud environments thanks to a number of improvements that have been made to discovery (such as KUBE_PING for Kubernetes/OpenShift), health probes and our pre-built Docker images."
+#, fuzzy
+msgid ""
+"Infinispan continues to play nicely in cloud environments thanks to a number "
+"of improvements that have been made to discovery (such as KUBE_PING for "
+"Kubernetes/OpenShift), health probes and our pre-built Docker images."
 msgstr ""
+"Infinispanは、ディスカバリー（Kubernetes/"
+"OpenShift用のKUBE_PINGなど）、ヘルスプローブ、および事前に構築されたDockerイメージの数々の改善のおかげで、クラウド環境でうまくプレイし続けています。"
 
 #. type: Title ==
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:129
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Multi-tenant server and SNI support"
-msgstr ""
+msgstr "マルチテナントサーバーとSNIのサポート"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:137
-msgid "Infinispan Server is now capable of exposing multiple cache containers through a single Hot Rod or REST endpoint. The selection of the container is performed via SNI. This allows you to have a single cluster serve all your applications while maintaining each one's data isolated."
+#, fuzzy
+msgid ""
+"Infinispan Server is now capable of exposing multiple cache containers "
+"through a single Hot Rod or REST endpoint. The selection of the container is "
+"performed via SNI. This allows you to have a single cluster serve all your "
+"applications while maintaining each one's data isolated."
 msgstr ""
+"Infinispan Serverは、単一のHot "
+"RodまたはRESTエンドポイントを介して複数のキャッシュコンテナを公開することができるようになりました。コンテナの選択はSNIを介して行われます。これにより、各アプリケーションのデータを分離した状態で、単一のクラスタですべてのアプリケーションにサービスを提供することができます。"
 
 #. type: Title ==
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:139
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Administration Console"
-msgstr ""
+msgstr "アドミニストレーションコンソール"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:146
-msgid "The adminstration console has been completely rewritten in a more modular fashion using TypeScript to allow for greater extensibility and ease of maintanence. In addition to this refactor, the console now supports the following:"
+#, fuzzy
+msgid ""
+"The adminstration console has been completely rewritten in a more modular "
+"fashion using TypeScript to allow for greater extensibility and ease of "
+"maintanence. In addition to this refactor, the console now supports the "
+"following:"
 msgstr ""
+"管理コンソールは、TypeScript "
+"を使ってよりモジュール化された方法で完全に書き換えられ、より大きな拡張性とメンテナンスの容易さを可能にしました。このリファクタリングに加えて、コンソールは以下をサポートするようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:149
+#, fuzzy
 msgid "Stateless views"
-msgstr ""
+msgstr "ステートレスビュー"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:150
+#, fuzzy
 msgid "HTTP Digest Authentication"
-msgstr ""
+msgstr "ＨＴＴＴＰダイジェスト認証"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:151
+#, fuzzy
 msgid "Management of individual and clustered Standalone server instances"
-msgstr ""
+msgstr "個別およびクラスタ化されたスタンドアロンサーバーインスタンスの管理"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:152
+#, fuzzy
 msgid "Internet Explorer"
-msgstr ""
+msgstr "インターネットエクスプローラ"
 
 #. type: Title ==
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:155
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Documentation overhaul"
-msgstr ""
+msgstr "ドキュメントのオーバーホール"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:161
-msgid "Our http://infinispan.org/docs/stable/index.html[documentation] has been completely overhauled with entire chapters being added or rewritten for readability and consistency."
+#, fuzzy
+msgid ""
+"Our http://infinispan.org/docs/stable/index.html[documentation] has been "
+"completely overhauled with entire chapters being added or rewritten for "
+"readability and consistency."
 msgstr ""
+"私たちの link:http://infinispan.org/docs/stable/index.html[ドキュメントは] "
+"、読みやすさと一貫性のために、章全体が追加または書き換えられ、完全にオーバーホールされました。"
 
 #. type: Title ==
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:163
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What's coming"
-msgstr ""
+msgstr "何が来るのか"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:168
-msgid "We will be blogging in more detail about some of the things above, so watch out for more content coming soon !"
-msgstr ""
+#, fuzzy
+msgid ""
+"We will be blogging in more detail about some of the things above, so watch "
+"out for more content coming soon !"
+msgstr "今後、上記の内容について詳しくブログで紹介していきますので、お楽しみに"
 
 #. type: Plain text
 #: upstream/_posts/2017-03-31-infinispan-9.adoc:173
-msgid "We've already started working on Infinispan 9.1 which will bring a number of new features and improvements, such as clustered counters, consistency checker with merge policies, a new distributed cache for even better write performance, and more."
+#, fuzzy
+msgid ""
+"We've already started working on Infinispan 9.1 which will bring a number of "
+"new features and improvements, such as clustered counters, consistency "
+"checker with merge policies, a new distributed cache for even better write "
+"performance, and more."
 msgstr ""
+"Infinispan 9."
+"1ではすでに作業を開始しており、クラスタ化されたカウンタ、マージポリシーを備えた一貫性チェッカー、書き込みパフォーマンスを向上させる新しい分散キャッシュなど、多くの新機能や改善点がもたらされる予定です。"

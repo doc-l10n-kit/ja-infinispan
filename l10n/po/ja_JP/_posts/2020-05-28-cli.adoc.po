@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,54 +18,83 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-05-28-cli.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-28-cli.adoc:8
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: CLI enhancements\n"
 "permalink: /blog/:year/:month/:day/cli\n"
 "date: '2020-05-28T12:00:00.000-00:00'\n"
 "author: ttarrant\n"
-"tags: [ \"cli\", \"server\", \"management\", \"administration\", \"logging\" ]\n"
+"tags: [ \"cli\", \"server\", \"management\", \"administration\", \"logging\" "
+"]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: CLI の拡張\n"
+"permalink: /blog/:year/:month/:day/cli\n"
+"date: '2020-05-28T12:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"cli\", \"server\", \"management\", \"administration\", \"logging\" "
+"]\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_posts/2020-05-28-cli.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CLI enhancements"
-msgstr ""
+msgstr "CLI の拡張"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-28-cli.adoc:13
-msgid "One of the key aspects of our new server architecture is the management API exposed through the single port."
-msgstr ""
+#, fuzzy
+msgid ""
+"One of the key aspects of our new server architecture is the management API "
+"exposed through the single port."
+msgstr "私たちの新しいサーバーアーキテクチャの重要な側面の1つは、シングルポートを通じて公開される管理APIです。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-28-cli.adoc:16
-msgid "While I'm sure there will be those of you who like to write scripts with plenty of `curl/wget` magic, and those who prefer the comfort of our new web console, the Infinispan CLI offers a powerful tool which combines the power of the former with the usability of the latter."
+#, fuzzy
+msgid ""
+"While I'm sure there will be those of you who like to write scripts with "
+"plenty of `curl/wget` magic, and those who prefer the comfort of our new web "
+"console, the Infinispan CLI offers a powerful tool which combines the power "
+"of the former with the usability of the latter."
 msgstr ""
+"`curl/wget` "
+"マジックをたくさん使ってスクリプトを書くのが好きな人と、新しいウェブコンソールの快適さを好む人がいると思いますが、Infinispan "
+"CLIは前者の力と後者の使いやすさを兼ね備えた強力なツールを提供しています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-28-cli.adoc:18
-msgid "During the Infinispan 11 development cycle, the CLI has received numerous enhancements. Let's look at some of them !"
-msgstr ""
+#, fuzzy
+msgid ""
+"During the Infinispan 11 development cycle, the CLI has received numerous "
+"enhancements. Let's look at some of them !"
+msgstr "Infinispan 11 の開発サイクルの間、CLI は多くの機能強化を受けました。そのいくつかを見てみましょう"
 
 #. type: Title ==
 #: upstream/_posts/2020-05-28-cli.adoc:19
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "User management"
-msgstr ""
+msgstr "ユーザー管理"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-28-cli.adoc:23
-msgid "When using the built-in properties-based security realm, you had to use the `user-tool` script to manage users, passwords and groups. That functionality has now been built into the CLI:"
+#, fuzzy
+msgid ""
+"When using the built-in properties-based security realm, you had to use the "
+"`user-tool` script to manage users, passwords and groups. That functionality "
+"has now been built into the CLI:"
 msgstr ""
+"ビルトインのプロパティベースのセキュリティ領域を使用する場合、ユーザ、パスワード、グループを管理するために `user-tool` "
+"スクリプトを使用しなければなりませんでした。その機能が CLI に組み込まれました。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-05-28-cli.adoc:29
@@ -78,36 +107,52 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_posts/2020-05-28-cli.adoc:31
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Remote logging configuration"
-msgstr ""
+msgstr "リモートロギングの設定"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-28-cli.adoc:35
-msgid "You can now modify the server logging configuration from the CLI.  For example, to enable TRACE logging for the `org.jgroups` category, use the following:"
+#, fuzzy
+msgid ""
+"You can now modify the server logging configuration from the CLI.  For "
+"example, to enable TRACE logging for the `org.jgroups` category, use the "
+"following:"
 msgstr ""
+"これで、CLIからサーバーのロギング設定を変更できるようになりました。たとえば、 `org.jgroups` カテゴリの TRACE "
+"ロギングを有効にするには、次のようにします。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-05-28-cli.adoc:39
 #, no-wrap
-msgid "[infinispan-29934@cluster//containers/default]> logging set --level=TRACE org.jgroups\n"
+msgid ""
+"[infinispan-29934@cluster//containers/default]> logging set --level=TRACE "
+"org.jgroups\n"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-05-28-cli.adoc:42
-msgid "logging configuration changes are volatile, i.e. they will be lost when restarting a node."
-msgstr ""
+#, fuzzy
+msgid ""
+"logging configuration changes are volatile, i.e. they will be lost when "
+"restarting a node."
+msgstr "ロギング設定の変更は揮発性で、ノードを再起動すると失われます。"
 
 #. type: Title ==
 #: upstream/_posts/2020-05-28-cli.adoc:43
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Server report"
-msgstr ""
+msgstr "サーバーレポート"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-28-cli.adoc:46
-msgid "To help with debugging issues, the server now implements an aggregate log which includes information such as a thread dump, memory configuration, open sockets/files, etc."
+#, fuzzy
+msgid ""
+"To help with debugging issues, the server now implements an aggregate log "
+"which includes information such as a thread dump, memory configuration, open "
+"sockets/files, etc."
 msgstr ""
+"問題のデバッグを支援するために、サーバーはスレッドダンプ、メモリ設定、開いているソケットやファイルなどの情報を含む集約ログを実装しています。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-05-28-cli.adoc:51
@@ -119,19 +164,24 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-05-28-cli.adoc:54
+#, fuzzy
 msgid "this feature currently only works on Linux/Unix systems."
-msgstr ""
+msgstr "この機能は現在のところ、Linux/Unix システムでのみ動作します。"
 
 #. type: Title ==
 #: upstream/_posts/2020-05-28-cli.adoc:55
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Real CLI mode"
-msgstr ""
+msgstr "リアルCLIモード"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-28-cli.adoc:58
-msgid "It is now possible to invoke all CLI commands directly from the command-line, without having to resort to interactive mode or a batch. For example:"
+#, fuzzy
+msgid ""
+"It is now possible to invoke all CLI commands directly from the command-"
+"line, without having to resort to interactive mode or a batch. For example:"
 msgstr ""
+"インタラクティブモードやバッチに頼らずに、すべてのCLIコマンドをコマンドラインから直接呼び出すことができるようになりました。例えば、以下のようになります。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-05-28-cli.adoc:62
@@ -141,11 +191,17 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_posts/2020-05-28-cli.adoc:64
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Native CLI"
-msgstr ""
+msgstr "ネイティブＣＬＩ"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-28-cli.adoc:66
-msgid "The CLI can now be built as a native executable, courtesy of https://www.graalvm.org/[GraalVM]'s `native-image` tool. We will soon be shipping binaries/images of this, so look out for an announcement."
+#, fuzzy
+msgid ""
+"The CLI can now be built as a native executable, courtesy of https://www."
+"graalvm.org/[GraalVM]'s `native-image` tool. We will soon be shipping "
+"binaries/images of this, so look out for an announcement."
 msgstr ""
+"CLIは、 link:https://www.graalvm.org/[GraalVM] の `native-image` "
+"ツールの提供により、ネイティブ実行ファイルとしてビルドできるようになりました。まもなく、このバイナリ/イメージを出荷する予定ですので、発表をお楽しみに。"

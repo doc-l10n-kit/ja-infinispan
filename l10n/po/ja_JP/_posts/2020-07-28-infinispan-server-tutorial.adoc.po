@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-07-28-infinispan-server-tutorial.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-28-infinispan-server-tutorial.adoc:8
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan Server Tutorial\n"
@@ -34,69 +34,97 @@ msgid ""
 "tags: [ \"tutorial\", \"learning\", \"server\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispanサーバのチュートリアル\n"
+"permalink: /blog/:year/:month/:day/infinispan-server-tutorial\n"
+"date: '2020-07-28T12:00:00.000-00:00'\n"
+"author: karesti\n"
+"tags: [ \"tutorial\", \"learning\", \"server\" ]\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_posts/2020-07-28-infinispan-server-tutorial.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Infinispan Server Tutorial"
-msgstr ""
+msgstr "Infinispanサーバのチュートリアル"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-28-infinispan-server-tutorial.adoc:13
+#, fuzzy
 msgid "Dear Infinispan community,"
-msgstr ""
+msgstr "インフィニスパンのコミュニティへ"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-28-infinispan-server-tutorial.adoc:18
-msgid "If you are wondering how to start with Infinispan Server from your Java Application, a new https://infinispan.org/infinispan-server-tutorial/[Tutorial] is available.  This tutorial covers the essentials to get started with Infinispan Server and takes around half an hour to complete."
+#, fuzzy
+msgid ""
+"If you are wondering how to start with Infinispan Server from your Java "
+"Application, a new https://infinispan.org/infinispan-server-tutorial/"
+"[Tutorial] is available.  This tutorial covers the essentials to get started "
+"with Infinispan Server and takes around half an hour to complete."
 msgstr ""
+"JavaアプリケーションからInfinispan Serverを起動する方法を知りたい場合は、新しい link:https://infinispan."
+"org/infinispan-server-tutorial/[チュートリアル] をご利用ください。このチュートリアルでは、Infinispan "
+"Serverを使い始めるための基本的なことを説明しており、30分程度で完了します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-28-infinispan-server-tutorial.adoc:20
+#, fuzzy
 msgid "In this tutorial you will learn how to:"
-msgstr ""
+msgstr "このチュートリアルでは、以下の方法を学びます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-28-infinispan-server-tutorial.adoc:22
+#, fuzzy
 msgid "Run Infinispan Server."
-msgstr ""
+msgstr "Infinispan Serverを実行します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-28-infinispan-server-tutorial.adoc:23
+#, fuzzy
 msgid "Access and use the Infinispan Console."
-msgstr ""
+msgstr "Infinispan コンソールにアクセスして使用します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-28-infinispan-server-tutorial.adoc:24
+#, fuzzy
 msgid "Create Infinispan caches."
-msgstr ""
+msgstr "Infinispanのキャッシュを作成します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-28-infinispan-server-tutorial.adoc:25
+#, fuzzy
 msgid "Read and write data as primitive types and Java objects."
-msgstr ""
+msgstr "プリミティブ型やJavaオブジェクトとしてデータを読み書きする。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-28-infinispan-server-tutorial.adoc:26
+#, fuzzy
 msgid "Add lifespans to entries so data expires."
-msgstr ""
+msgstr "データの有効期限が切れるように、エントリに寿命を追加します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-28-infinispan-server-tutorial.adoc:27
+#, fuzzy
 msgid "Deploy client listeners to get event notifications."
-msgstr ""
+msgstr "イベント通知を取得するためのクライアントリスナーを配置します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-28-infinispan-server-tutorial.adoc:28
+#, fuzzy
 msgid "Search the data store for specific values."
-msgstr ""
+msgstr "データストアで特定の値を検索します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-28-infinispan-server-tutorial.adoc:29
+#, fuzzy
 msgid "Use out-of-the-box testing with Junit 5 for verification."
-msgstr ""
+msgstr "検証にはJunit 5でアウトオブボックステストを使用してください。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-28-infinispan-server-tutorial.adoc:31
-msgid "Complete the tutorial, ask us anything about it, give us feedback and feel free to share it!"
-msgstr ""
+#, fuzzy
+msgid ""
+"Complete the tutorial, ask us anything about it, give us feedback and feel "
+"free to share it!"
+msgstr "チュートリアルを完成させて、私たちに何か質問をしたり、フィードバックをしたり、自由に共有してください。"

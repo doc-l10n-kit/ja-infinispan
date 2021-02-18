@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-10-19-welcome-trustin-lee.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-10-19-welcome-trustin-lee.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Welcome Trustin Lee\n"
@@ -33,22 +33,49 @@ msgid ""
 "author: msurtani\n"
 "tags: [ \"community\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4187694004975426280\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/10/welcome-trustin-lee.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4187694004975426280\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/10/welcome-trustin-lee."
+"html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: ウェルカム・トラスティン・リー\n"
+"permalink: /blog/:year/:month/:day/welcome-trustin-lee\n"
+"date: '2010-10-19T02:25:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \"community\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4187694004975426280\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/10/welcome-trustin-lee."
+"html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-10-19-welcome-trustin-lee.adoc:18
-msgid "I'd like to welcome Infinispan's newest full-time core engineer, Trustin Lee.  Trustin's no stranger to open source software, being the founder and project lead of Apache MINA and Netty - the latter of which is used in Infinispan's memcached and Hot Rod server endpoints.  Trustin will be working on all things Infinispan, adding muscle to the core development effort.  Trustin's based in Seoul, South Korea."
+#, fuzzy
+msgid ""
+"I'd like to welcome Infinispan's newest full-time core engineer, Trustin Lee."
+"  Trustin's no stranger to open source software, being the founder and "
+"project lead of Apache MINA and Netty - the latter of which is used in "
+"Infinispan's memcached and Hot Rod server endpoints.  Trustin will be "
+"working on all things Infinispan, adding muscle to the core development "
+"effort.  Trustin's based in Seoul, South Korea."
 msgstr ""
+"Infinispanの最新のフルタイムコアエンジニア、Trustin Leeを歓迎したいと思います。 Trustinは、Apache "
+"MINAとNettyの創設者であり、InfinispanのmemcachedとHot "
+"Rodサーバのエンドポイントで使用されているNettyのプロジェクトリーダーでもあります。 "
+"Trustinは、Infinispanの全てのことに携わり、コア開発に力を入れていきます。 Trustinは、韓国のソウルに拠点を置いています。"
 
 #. type: Plain text
 #: upstream/_posts/2010-10-19-welcome-trustin-lee.adoc:20
+#, fuzzy
 msgid "Welcome aboard, Trustin!  :)"
-msgstr ""
+msgstr "ようこそ、トラスティン！ :)"
 
 #. type: Plain text
 #: upstream/_posts/2010-10-19-welcome-trustin-lee.adoc:22
+#, fuzzy
 msgid "Cheers Manik"
-msgstr ""
+msgstr "乾杯 マニク"

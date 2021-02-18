@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-05-02-keep-it-in-cloud.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-02-keep-it-in-cloud.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Keep it in the cloud\n"
@@ -32,42 +32,104 @@ msgid ""
 "date: '2009-05-02T13:47:00.000-07:00'\n"
 "author: acole\n"
 "tags: [ \" data grids\", \"jclouds\", \"ec2\", \"s3\", \"aws\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1822710931984507566\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1822710931984507566\n"
 "blogger_orig_url: https://blog.infinispan.org/2009/05/keep-it-in-cloud.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: クラウドに保管する\n"
+"permalink: /blog/:year/:month/:day/keep-it-in-cloud\n"
+"date: '2009-05-02T13:47:00.000-07:00'\n"
+"author: acole\n"
+"tags: [ \" data grids\", \"jclouds\", \"ec2\", \"s3\", \"aws\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1822710931984507566\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/05/keep-it-in-cloud.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-02-keep-it-in-cloud.adoc:18
-msgid "Corporate slaves often spend months of paper work only to find their machine obsolete before its powered on.   Forward thinking individuals need playgrounds to try out new ideas.  Enterprise 2.0 projects have to scale with their user base.  In short, there's a lot of demand for flexible infrastructure.   http://en.wikipedia.org/wiki/Cloud_infrastructure#Infrastructure[Cloud infrastructure] is one way to fill that order."
+#, fuzzy
+msgid ""
+"Corporate slaves often spend months of paper work only to find their machine "
+"obsolete before its powered on.   Forward thinking individuals need "
+"playgrounds to try out new ideas.  Enterprise 2.0 projects have to scale "
+"with their user base.  In short, there's a lot of demand for flexible "
+"infrastructure.   http://en.wikipedia.org/wiki/"
+"Cloud_infrastructure#Infrastructure[Cloud infrastructure] is one way to fill "
+"that order."
 msgstr ""
+"企業の奴隷は、電源を入れる前にマシンが陳腐化していることに気づくだけで、紙の作業に何ヶ月も費やすことがよくあります。 "
+"先見の明のある個人は、新しいアイデアを試すための遊び場を必要としています。 Enterprise 2."
+"0プロジェクトは、ユーザーベースに合わせて拡張する必要があります。 つまり、柔軟性のあるインフラストラクチャに対する多くの需要があります。 "
+"クラウド・インフラストラクチャは link:http://en.wikipedia.org/wiki/"
+"Cloud_infrastructure#Infrastructure[、] そのような注文を link:http://en.wikipedia.org/"
+"wiki/Cloud_infrastructure#Infrastructure[満たすための1つの方法です] 。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-02-keep-it-in-cloud.adoc:29
-msgid "One popular cloud infrastructure provider is http://aws.amazon.com/ec2/[Amazon EC2].  EC2 is basically a pay-as-you-go datacenter.  You pay for CPU, storage, and network resources.  Using the open-source http://www.jboss.org/infinispan[Infinispan] data grid, you have a good chance of linear performance as your application needs change.  Using EC2, you can instantly bring on hosts to support that need.  Great match, right?  What's next?"
+#, fuzzy
+msgid ""
+"One popular cloud infrastructure provider is http://aws.amazon.com/ec2/"
+"[Amazon EC2].  EC2 is basically a pay-as-you-go datacenter.  You pay for "
+"CPU, storage, and network resources.  Using the open-source http://www.jboss."
+"org/infinispan[Infinispan] data grid, you have a good chance of linear "
+"performance as your application needs change.  Using EC2, you can instantly "
+"bring on hosts to support that need.  Great match, right?  What's next?"
 msgstr ""
+"人気のあるクラウド・インフラ・プロバイダーに link:http://aws.amazon.com/ec2/[Amazon EC2] があります。 "
+"EC2は基本的に従量課金制のデータセンターで、CPU、ストレージ、ネットワーク・リソースの料金を支払うことになります。 "
+"オープンソースのInfinispanデータ link:http://www.jboss.org/infinispan[グリッド] を使用すること "
+"link:http://www.jboss.org/infinispan[で、] "
+"アプリケーションのニーズの変化に合わせてリニアなパフォーマンスを発揮することができます。 "
+"EC2を使用することで、そのニーズをサポートするためのホストを即座に導入することができます。 相性が良いですよね？ 次は何をするのでしょうか？"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-02-keep-it-in-cloud.adoc:36
-msgid "Assuming your data is important, you will need to persist your Infinispan cluster somewhere.   That said, Amazon charges you for traffic that goes in and out of their network... this could get expensive.  So, the next bit is controlling these costs. "
+#, fuzzy
+msgid ""
+"Assuming your data is important, you will need to persist your Infinispan "
+"cluster somewhere.   That said, Amazon charges you for traffic that goes in "
+"and out of their network... this could get expensive.  So, the next bit is "
+"controlling these costs. "
 msgstr ""
+"データが重要であると仮定すると、Infinispanクラスタをどこかに永続化する必要があります。 "
+"しかし、Amazonはネットワークを出入りするトラフィックの料金を請求してきますので、これは高額になる可能性があります。 "
+"そこで、次はこれらのコストをコントロールすることです。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-02-keep-it-in-cloud.adoc:42
-msgid "Amazon offers a storage service called http://aws.amazon.com/s3/[S3].   Transferring data between EC2 and S3 is free; you only pay for data parking.  In short, there is a way to control these I/O costs: S3. "
+#, fuzzy
+msgid ""
+"Amazon offers a storage service called http://aws.amazon.com/s3/[S3].  "
+" Transferring data between EC2 and S3 is free; you only pay for data parking."
+"  In short, there is a way to control these I/O costs: S3. "
 msgstr ""
+"Amazonには link:http://aws.amazon.com/s3/[S3] というストレージサービスがあります。 "
+"EC2とS3間のデータの転送は無料で、データパーキングの料金を支払うだけです。 要するに、これらのI/Oコストを抑える方法があるということです。S3."
 
 #. type: Plain text
 #: upstream/_posts/2009-05-02-keep-it-in-cloud.adoc:49
-msgid "Infinispan will save your cluster to S3 when configured with its high-performance http://code.google.com/p/jclouds/[JClouds] plug-in.   You specify the S3 Bucket and your AWS credentials and Infinispan does the rest."
+#, fuzzy
+msgid ""
+"Infinispan will save your cluster to S3 when configured with its high-"
+"performance http://code.google.com/p/jclouds/[JClouds] plug-in.   You "
+"specify the S3 Bucket and your AWS credentials and Infinispan does the rest."
 msgstr ""
+"Infinispanは、高性能な link:http://code.google.com/p/jclouds/[JClouds] "
+"プラグインで設定したクラスタをS3に保存します。 S3バケットとAWSの資格情報を指定すると、あとはInfinispanが行います。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-02-keep-it-in-cloud.adoc:54
-msgid "In summary, not only does Infinispan shred your license costs, but we also help cut your persistence costs, too!"
-msgstr ""
+#, fuzzy
+msgid ""
+"In summary, not only does Infinispan shred your license costs, but we also "
+"help cut your persistence costs, too!"
+msgstr "要約すると、Infinispanはライセンスコストを削減するだけでなく、お客様の永続的なコスト削減にも貢献しています。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-02-keep-it-in-cloud.adoc:58
+#, fuzzy
 msgid "So, go ahead: Keep it in the cloud!"
-msgstr ""
+msgstr "では、どうぞ。クラウドに入れておけ！"

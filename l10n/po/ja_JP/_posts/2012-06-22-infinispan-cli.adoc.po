@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:15
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan CLI\n"
@@ -37,164 +37,277 @@ msgid ""
 "\"shell\",\n"
 "\"cli\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7295457461495208487\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7295457461495208487\n"
 "blogger_orig_url: https://blog.infinispan.org/2012/06/infinispan-cli.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: インフィニスパンＣＬＩ\n"
+"permalink: /blog/:year/:month/:day/infinispan-cli\n"
+"date: '2012-06-22T12:44:00.002-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \"command line interface\",\n"
+"\"monitoring\",\n"
+"\"data entry\",\n"
+"\"shell\",\n"
+"\"cli\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7295457461495208487\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/06/infinispan-cli.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:20
-msgid "When using Infinispan, both embedded as a library in an application or as a standalone server, I always longed for a simple standalone tool for interacting with the caches and the data within them. As all itches go, I had to scratch it, and so I present you with Infinispan's own CLI !"
+#, fuzzy
+msgid ""
+"When using Infinispan, both embedded as a library in an application or as a "
+"standalone server, I always longed for a simple standalone tool for "
+"interacting with the caches and the data within them. As all itches go, I "
+"had to scratch it, and so I present you with Infinispan's own CLI !"
 msgstr ""
+"Infinispanを使用しているとき、アプリケーションにライブラリとして組み込まれていても、スタンドアロンサーバとしても、キャッシュとその中のデータを操作するためのシンプルなスタンドアロンツールが欲しいといつも思っていました。痒いところに手が届くように、私はそれを掻きむしらなければならなかったので、Infinispan独自のCLIを紹介します"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:24
-msgid "The CLI allows you to inspect and modify the data within an Infinispan cache and also provides access to some of the more advanced features (such as transactions)."
+#, fuzzy
+msgid ""
+"The CLI allows you to inspect and modify the data within an Infinispan cache "
+"and also provides access to some of the more advanced features (such as "
+"transactions)."
 msgstr ""
+"CLIを使用すると、Infinispanキャッシュ内のデータを検査して変更することができ、より高度な機能（トランザクションなど）にもアクセスすることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:31
-msgid "The CLI is built out of two elements: a server-side module and the client command tool. The server-side module is optional, and provides the actual interpreter for the commands. Currently the server (and the client) use the JMX protocol to communicate, but in a future release we plan to support other communication protocols (in particular our own HotRod)."
+#, fuzzy
+msgid ""
+"The CLI is built out of two elements: a server-side module and the client "
+"command tool. The server-side module is optional, and provides the actual "
+"interpreter for the commands. Currently the server (and the client) use the "
+"JMX protocol to communicate, but in a future release we plan to support "
+"other communication protocols (in particular our own HotRod)."
 msgstr ""
+"CLIは、サーバサイド・モジュールとクライアント・コマンド・ツールの2つの要素で構成されています。サーバ側モジュールはオプションで、コマンドのための実際のインタプリタを提供します。現在、サーバ(とクライアント)はJMXプロトコルを使用して通信していますが、将来のリリースでは他の通信プロトコル(特に独自のHotRod)をサポートする予定です。"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:34
-msgid "To get started, you need at least Infinispan 5.2.0.ALPHA1. Unzip the distribution and start a server:"
-msgstr ""
+#, fuzzy
+msgid ""
+"To get started, you need at least Infinispan 5.2.0.ALPHA1. Unzip the "
+"distribution and start a server:"
+msgstr "始めるには、Infinispan 5.2.0.ALPHA1以上が必要です。ディストリビューションを解凍し、サーバを起動します。"
 
 #. type: Block title
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:36
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/bin/startServer.sh -r hotrod"
-msgstr ""
+msgstr "/bin/startServer.sh -r hotrod"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:42
-msgid "The startServer.sh script automatically enables remote JMX connections and you can discover the port by running the jps command (part of the JDK/JRE) as follows:"
+#, fuzzy
+msgid ""
+"The startServer.sh script automatically enables remote JMX connections and "
+"you can discover the port by running the jps command (part of the JDK/JRE) "
+"as follows:"
 msgstr ""
+"startServer.shスクリプトは自動的にリモートJMX接続を有効にし、以下のようにjpsコマンド（JDK/"
+"JREの一部）を実行することでポートを発見することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:45
+#, fuzzy
 msgid "jps -v"
-msgstr ""
+msgstr "ジェイピーエス -v"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:48
+#, fuzzy
 msgid "which should display something like"
-msgstr ""
+msgstr "のように表示されるはずです。"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:56
-msgid "26532 Jps -Dapplication.home=/usr/lib/jvm/jdk1.7.0_04 -Xms8m 20508 Main -Djava.net.preferIPv4Stack=true -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=50434 -Dsun.nio.ch.bugLevel=\"\" -Dlog4j.configuration=file:////home/tst/Downloads/infinispan-5.2.0-SNAPSHOT/etc/log4j.xml"
+#, fuzzy
+msgid ""
+"26532 Jps -Dapplication.home=/usr/lib/jvm/jdk1.7.0_04 -Xms8m 20508 Main -"
+"Djava.net.preferIPv4Stack=true -Dcom.sun.management.jmxremote.ssl=false -"
+"Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management."
+"jmxremote.port=50434 -Dsun.nio.ch.bugLevel=\"\" -Dlog4j.configuration=file://"
+"//home/tst/Downloads/infinispan-5.2.0-SNAPSHOT/etc/log4j.xml"
 msgstr ""
+"26532 Jps -Dapplication.home=/usr/lib/jvm/jdk1.7.0_04 -Xms8m 20508 Main -"
+"Djava.net.preferIPv4Stack=true -Dcom.sun.management.jmxremote.ssl=false -"
+"Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management."
+"jmxremote.port=50434authenticate=false -Dcom.sun.management.jmxremote.port="
+"50434 -Dsun.nio.ch.bugLevel=\"\" -Dlog4j.configuration=file:////home/tst/"
+"Downloads/infinispan-5.2.0-SNAPSHOT/etc/log4j.xml"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:60
-msgid "Now we can connect to the Infinispan instance using the CLI as follows:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Now we can connect to the Infinispan instance using the CLI as follows:"
+msgstr "これで、以下のようにCLIを使ってInfinispanインスタンスに接続できるようになりました。"
 
 #. type: Block title
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:62
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/bin/ispn-cli.sh -c jmx://localhost:50434"
-msgstr ""
+msgstr "/bin/ispn-cli.sh -c jmx://localhost:50434"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:66
+#, fuzzy
 msgid "You will be presented with a prompt:"
-msgstr ""
+msgstr "あなたにはプロンプトが提示されます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:69
+#, fuzzy
 msgid "[jmx://localhost:50434]MyCacheManager>"
-msgstr ""
+msgstr "[jmx://localhost:50434]MyCacheManager>>の場合"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:73
-msgid "The above prompt shows which host we're currently connected to and which CacheManager is being used (in this case: MyCacheManager)."
+#, fuzzy
+msgid ""
+"The above prompt shows which host we're currently connected to and which "
+"CacheManager is being used (in this case: MyCacheManager)."
 msgstr ""
+"上記のプロンプトには、現在接続しているホストと使用している CacheManager (この場合は MyCacheManager) が表示されます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:75
+#, fuzzy
 msgid "Let's try putting some data in the cache"
-msgstr ""
+msgstr "キャッシュにデータを入れてみる"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:78
+#, fuzzy
 msgid "put a a"
-msgstr ""
+msgstr "付ける"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:82
-msgid "Now let's check that the cache actually contains the entry we've just put"
-msgstr ""
+#, fuzzy
+msgid ""
+"Now let's check that the cache actually contains the entry we've just put"
+msgstr "では、キャッシュに先ほど入れたエントリが実際に含まれているかどうかを確認してみましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:85
+#, fuzzy
 msgid "get a"
-msgstr ""
+msgstr "貰う"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:88
+#, fuzzy
 msgid "Which will display a glorious"
-msgstr ""
+msgstr "それは輝かしいものを表示します"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:91
+#, fuzzy
 msgid "a"
-msgstr ""
+msgstr "a"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:94
+#, fuzzy
 msgid "The CLI understands several commands. Just type"
-msgstr ""
+msgstr "CLIはいくつかのコマンドを理解しています。以下のようにタイプするだけです。"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:96
+#, fuzzy
 msgid "help"
-msgstr ""
+msgstr "助ける"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:98
+#, fuzzy
 msgid "to get a list of them and then"
-msgstr ""
+msgstr "を使用して、それらのリストを取得して"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:100
+#, fuzzy
 msgid "help [commandname]"
-msgstr ""
+msgstr "ヘルプ [コマンド名]"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:102
+#, fuzzy
 msgid "to get help on a specific command's syntax."
-msgstr ""
+msgstr "を使用して、特定のコマンドの構文のヘルプを得ることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:108
-msgid "The CLI uses the wonderful https://github.com/stalep/jreadline[JReadline], so it supports all sorts of fancy buffer editing, history navigation and tab-completion as if you were in your comfortable OS shell (sorry Windows, cmd is not exactly a modern shell)."
+#, fuzzy
+msgid ""
+"The CLI uses the wonderful https://github.com/stalep/jreadline[JReadline], "
+"so it supports all sorts of fancy buffer editing, history navigation and tab-"
+"completion as if you were in your comfortable OS shell (sorry Windows, cmd "
+"is not exactly a modern shell)."
 msgstr ""
+"CLI は素晴らしい link:https://github.com/stalep/jreadline[JReadline] を使用しているので、快適な "
+"OS シェルにいるかのように、あらゆる種類の派手なバッファ編集、履歴ナビゲーション、タブコンプリートをサポートしています (Windows、cmd "
+"は厳密には最新のシェルではありません)。"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:115
-msgid "An important aspect of an Infinispan cache is that you can store whatever data you want in it. The CLI tries to interpret the data from the input you give it. It understands most of the Java native types (int, long, float, double, boolean, String), some additional fancy types (such as UUIDs) and a JSON syntax for mapping any type of Java class, so that you can write:"
+#, fuzzy
+msgid ""
+"An important aspect of an Infinispan cache is that you can store whatever "
+"data you want in it. The CLI tries to interpret the data from the input you "
+"give it. It understands most of the Java native types (int, long, float, "
+"double, boolean, String), some additional fancy types (such as UUIDs) and a "
+"JSON syntax for mapping any type of Java class, so that you can write:"
 msgstr ""
+"Infinispan キャッシュの重要な側面は、好きなデータを保存できることです。CLI "
+"は、与えられた入力からデータを解釈しようとします。ほとんどのJavaネイティブ型(int, long, float, double, boolean, "
+"String)、いくつかの追加のファンシー型(UUIDなど)、および任意の型のJavaクラスをマッピングするためのJSON構文を理解しているので、書くことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:117
-msgid "put user1 \\{ \"package.MyClass\": \\{\"i\": 5, \"x\": null, \"b\": true } };"
-msgstr ""
+#, fuzzy
+msgid "put user1 \\{ \"package.MyClass\": \\{\"i\": 5, \"x\": null, \"b\": true } "
+"};"
+msgstr "put user1 \\{ \"package.MyClass\".\\{\"i\":5, \"x\": null, \"b\": true } }};"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:120
-msgid "Conversely, when performing a get, the interpreter will output a JSON representation of your classes."
-msgstr ""
+#, fuzzy
+msgid ""
+"Conversely, when performing a get, the interpreter will output a JSON "
+"representation of your classes."
+msgstr "逆に、getを実行すると、インタープリタはクラスのJSON表現を出力します。"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:128
-msgid "The CLI is still work in progress and will evolve and mature during Infinispan's 5.2 development cycle. You are all welcome to try it out and provide feedback on the https://community.jboss.org/en/infinispan?view=discussions[forums], on IRC on channel #infinispan and using our https://issues.jboss.org/browse/ISPN[issue tracker] to report bugs and ask for enhancements."
+#, fuzzy
+msgid ""
+"The CLI is still work in progress and will evolve and mature during "
+"Infinispan's 5.2 development cycle. You are all welcome to try it out and "
+"provide feedback on the https://community.jboss.org/en/infinispan?view="
+"discussions[forums], on IRC on channel #infinispan and using our https://"
+"issues.jboss.org/browse/ISPN[issue tracker] to report bugs and ask for "
+"enhancements."
 msgstr ""
+"CLIはまだ進行中であり、Infinispanの5.2開発サイクルの間に進化し、成熟していきます。 link:https://community."
+"jboss.org/en/infinispan?view=discussions[フォーラム] "
+"やIRCのチャンネル#infinispanで試してみたり、 link:https://issues.jboss.org/browse/"
+"ISPN[イシュートラッカーを] 使ってバグを報告したり、機能強化をお願いしたりしてフィードバックを提供することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:131
-msgid "I will soon be blogging again, hopefully with a video which will illustrate some of the more fanciful features of the CLI. Enjoy."
-msgstr ""
+#, fuzzy
+msgid ""
+"I will soon be blogging again, hopefully with a video which will illustrate "
+"some of the more fanciful features of the CLI. Enjoy."
+msgstr "近いうちにまたブログを書く予定ですが、うまくいけばCLIのよりファンシーな機能のいくつかを説明するビデオもあります。お楽しみに。"

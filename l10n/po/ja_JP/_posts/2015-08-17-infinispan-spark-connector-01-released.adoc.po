@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan Spark connector 0.1 released!\n"
@@ -34,153 +34,254 @@ msgid ""
 "tags: [ \"release\",\n"
 "\"spark\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-352085214861141703\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/08/infinispan-spark-connector-01-released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"352085214861141703\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/08/infinispan-spark-"
+"connector-01-released.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan Sparkコネクタ0.1をリリースしました。\n"
+"permalink: /blog/:year/:month/:day/infinispan-spark-connector-01-released\n"
+"date: '2015-08-17T10:01:00.000-07:00'\n"
+"author: gustavonalle\n"
+"tags: [ \"release\",\n"
+"\"spark\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"352085214861141703\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/08/infinispan-spark-"
+"connector-01-released.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:14
+#, fuzzy
 msgid "Dear users,"
-msgstr ""
+msgstr "ユーザーの皆様へ。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:18
-msgid "The Infinispan connector for Apache Spark has just been made available as a http://spark-packages.org/package/infinispan/infinispan-spark[Spark Package]!"
+#, fuzzy
+msgid ""
+"The Infinispan connector for Apache Spark has just been made available as a "
+"http://spark-packages.org/package/infinispan/infinispan-spark[Spark "
+"Package]!"
 msgstr ""
+"Apache Spark用のInfinispanコネクタが link:http://spark-packages.org/package/"
+"infinispan/infinispan-spark[Sparkパッケージ] として利用可能になりました!"
 
 #. type: Title ====
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:20
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What is it?"
-msgstr ""
+msgstr "それは何ですか？"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:29
-msgid "The Infinispan Spark connector allows tight integration with Apache Spark, allowing Spark jobs to be run against data stored in the Infinispan Server, exposing any cache as an RDD, and also writing data from any key/value RDD to a cache. It's also possible to create a DStream backed by cache events and to save any key-value DStream to a cache."
+#, fuzzy
+msgid ""
+"The Infinispan Spark connector allows tight integration with Apache Spark, "
+"allowing Spark jobs to be run against data stored in the Infinispan Server, "
+"exposing any cache as an RDD, and also writing data from any key/value RDD "
+"to a cache. It's also possible to create a DStream backed by cache events "
+"and to save any key-value DStream to a cache."
 msgstr ""
+"Infinispan SparkコネクタはApache Sparkとの緊密な統合を可能にし、Infinispan "
+"Serverに保存されたデータに対してSparkジョブを実行し、任意のキャッシュをRDDとして公開し、任意のキー/"
+"値のRDDからキャッシュにデータを書き込むことができます。また、キャッシュイベントをバックにしたDStreamを作成したり、任意のキー/"
+"値のDStreamをキャッシュに保存することも可能です。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:31
+#, fuzzy
 msgid "The minimum version required is Infinispan 8.0.0.Beta3."
-msgstr ""
+msgstr "必要な最小バージョンはInfinispan 8.0.0.Beta3です。"
 
 #. type: Title ====
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:33
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Giving it a spin with Docker"
-msgstr ""
+msgstr "Dockerを使用してスピンをかける"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:40
-msgid "A handy docker image that contains an Infinispan cluster co-located with an Apache Spark standalone cluster is the fastest way to try the connector. Start by launching the container that hosts the Spark Master:"
+#, fuzzy
+msgid ""
+"A handy docker image that contains an Infinispan cluster co-located with an "
+"Apache Spark standalone cluster is the fastest way to try the connector. "
+"Start by launching the container that hosts the Spark Master:"
 msgstr ""
+"Infinispan クラスタと Apache Spark スタンドアロンクラスタを同居させた便利な docker "
+"イメージは、コネクタを試すための最速の方法です。Spark Master をホストするコンテナを起動することから始めます。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:44
+#, fuzzy
 msgid "And then run as many worker nodes as you want:"
-msgstr ""
+msgstr "そして、必要な数だけワーカーノードを実行します。"
 
 #. type: Title ====
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:48
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using the shell"
-msgstr ""
+msgstr "シェルを使用して"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:55
-msgid "The Apache Spark shell is a convenient way to quickly run jobs in an interactive fashion. Taking advantage of the fact that Spark is already installed in the docker containers (and thus the shell), let's attach to the master:"
+#, fuzzy
+msgid ""
+"The Apache Spark shell is a convenient way to quickly run jobs in an "
+"interactive fashion. Taking advantage of the fact that Spark is already "
+"installed in the docker containers (and thus the shell), let's attach to the "
+"master:"
 msgstr ""
+"Apache Spark "
+"シェルはインタラクティブな方法で素早くジョブを実行する便利な方法です。dockerコンテナにSparkがすでにインストールされていることを利用して（つまりシェルがインストールされていることを利用して）、マスターにアタッチしてみましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:59
+#, fuzzy
 msgid "Once inside, a Spark shell can be launched by:"
-msgstr ""
+msgstr "中に入ると、Sparkシェルを起動することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:65
-msgid "That's all it's needed. The shell grabs the Infinispan connector and its dependencies from spark-packages.org and exposes them in the classpath."
+#, fuzzy
+msgid ""
+"That's all it's needed. The shell grabs the Infinispan connector and its "
+"dependencies from spark-packages.org and exposes them in the classpath."
 msgstr ""
+"必要なのはそれだけです。シェルは Infinispan コネクタとその依存関係を spark-packages.org "
+"から取得し、クラスパスで公開します。"
 
 #. type: Title ====
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:67
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Generating data and writing to Infinispan"
-msgstr ""
+msgstr "データの生成とInfinispanへの書き込み"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:72
-msgid "Let's obtain a list of words from the Linux dictionary, and generate 1k random 4-word phrases. Paste the commands in the shell:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Let's obtain a list of words from the Linux dictionary, and generate 1k "
+"random 4-word phrases. Paste the commands in the shell:"
+msgstr "Linux 辞書から単語のリストを取得し、1k 個のランダムな 4 単語フレーズを生成してみましょう。シェルにコマンドを貼り付けます。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:76
+#, fuzzy
 msgid "From the phrases, we'll create a key value RDD (Long, String):"
-msgstr ""
+msgstr "フレーズから、キー値RDD(Long, String)を作成します。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:80
+#, fuzzy
 msgid "To save to Infinispan:"
-msgstr ""
+msgstr "Infinispanに保存するには"
 
 #. type: Title ====
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:85
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Obtaining facts about data"
-msgstr ""
+msgstr "データに関する事実の取得"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:90
-msgid "To be able to explore data in the cache, the first step is to create an infinispan RDD:"
-msgstr ""
+#, fuzzy
+msgid ""
+"To be able to explore data in the cache, the first step is to create an "
+"infinispan RDD:"
+msgstr "キャッシュ内のデータを探索できるようにするには、まず、インフィニスパンRDDを作成する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:96
-msgid "As an example job, let's calculate a histogram showing the distribution of word lengths in the phrases. This is simply a sequence of transformations expressed by:"
-msgstr ""
+#, fuzzy
+msgid ""
+"As an example job, let's calculate a histogram showing the distribution of "
+"word lengths in the phrases. This is simply a sequence of transformations "
+"expressed by:"
+msgstr "仕事の例として、フレーズに含まれる単語の長さの分布を示すヒストグラムを計算してみましょう。これは単純に、次のように表される一連の変換です。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:100
+#, fuzzy
 msgid "This pipeline yields:"
-msgstr ""
+msgstr "このパイプラインは収量があります。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:113
-msgid "2 chars words: 10 occurrences 3 chars words: 37 occurrences 4 chars words: 133 occurrences 5 chars words: 219 occurrences 6 chars words: 373 occurrences 7 chars words: 428 occurrences 8 chars words: 510 occurrences 9 chars words: 508 occurrences 10 chars words: 471 occurrences 11 chars words: 380 occurrences 12 chars words: 309 occurrences 13 chars words: 238 occurrences"
+#, fuzzy
+msgid ""
+"2 chars words: 10 occurrences 3 chars words: 37 occurrences 4 chars words: "
+"133 occurrences 5 chars words: 219 occurrences 6 chars words: 373 "
+"occurrences 7 chars words: 428 occurrences 8 chars words: 510 occurrences 9 "
+"chars words: 508 occurrences 10 chars words: 471 occurrences 11 chars words: "
+"380 occurrences 12 chars words: 309 occurrences 13 chars words: 238 "
+"occurrences"
 msgstr ""
+"2文字の単語。10件発生 3文字の単語。37 件 4 文字の単語: 133 件133 件 5 chars words.219 件 6 文字の単語: "
+"373 件出現数 373 文字語 7 文字語.出現数: 428 8 文字の単語: 510 件文字列ワード: 510 件 9 文字列ワード: 508 "
+"件発生数 9 文字の単語: 508 文字発生 10 文字の単語: 471 文字発生 11 文字の単語: 133 文字発生発生数 471 文字の単語 11 "
+"文字の単語。380 出現 12 文字の単語: 309 出現 13 文字の単語: 373309 件 13 文字の単語。238 件"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:115
+#, fuzzy
 msgid "..."
-msgstr ""
+msgstr "…"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:120
-msgid "Now let's find similar words using the https://en.wikipedia.org/wiki/Levenshtein_distance[Levenshtein distance algorithm]. For that we need to define a function that will calculate the edit distance between two strings. As usual, paste in the shell:"
+#, fuzzy
+msgid ""
+"Now let's find similar words using the https://en.wikipedia.org/wiki/"
+"Levenshtein_distance[Levenshtein distance algorithm]. For that we need to "
+"define a function that will calculate the edit distance between two strings. "
+"As usual, paste in the shell:"
 msgstr ""
+"それでは、 link:https://en.wikipedia.org/wiki/"
+"Levenshtein_distance[Levenshtein距離アルゴリズム] "
+"を使って似たような単語を探してみましょう。そのためには、2つの文字列間の編集距離を計算する関数を定義する必要があります。いつものようにシェルに貼り付けます。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:127
-msgid "Empowered by the Levenshtein distance implementation, we need another function that given a word, will find in the cache similar words according to the provided maximum edit distance:"
+#, fuzzy
+msgid ""
+"Empowered by the Levenshtein distance implementation, we need another "
+"function that given a word, will find in the cache similar words according "
+"to the provided maximum edit distance:"
 msgstr ""
+"Levenshtein距離の実装によって強化された、我々は、与えられた単語を、与えられた最大編集距離に応じてキャッシュ内の類似した単語を見つける別の関数を必要とします。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:131
+#, fuzzy
 msgid "Sample usage:"
-msgstr ""
+msgstr "使用例。"
 
 #. type: Title ====
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:135
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Where to go from here"
-msgstr ""
+msgstr "ここからどこへ行くのか"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:143
-msgid "And that concludes this first post on Infinispan-Spark integration. Be sure to check the https://github.com/infinispan/infinispan-spark/tree/master/examples/twitter[Twitter demo] for non-shell usages of the connector, including Java and Scala API."
+#, fuzzy
+msgid ""
+"And that concludes this first post on Infinispan-Spark integration. Be sure "
+"to check the https://github.com/infinispan/infinispan-spark/tree/master/"
+"examples/twitter[Twitter demo] for non-shell usages of the connector, "
+"including Java and Scala API."
 msgstr ""
+"以上で、InfinispanとSparkの統合に関する最初の記事を終わります。Java や Scala API "
+"を含むコネクタのシェル以外の使い方については、 link:https://github.com/infinispan/infinispan-spark/"
+"tree/master/examples/twitter[Twitter のデモ] を必ずチェックしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-08-17-infinispan-spark-connector-01-released.adoc:145
+#, fuzzy
 msgid "And it goes without saying, your feedback is much appreciated! :)"
-msgstr ""
+msgstr "そして、言うまでもなく、あなたのフィードバックは非常に高く評価されています!:)"

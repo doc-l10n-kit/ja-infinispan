@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-06-11-introducing-leveldb-cache-store.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-11-introducing-leveldb-cache-store.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Introducing LevelDB Cache Store\n"
@@ -32,32 +32,66 @@ msgid ""
 "date: '2013-06-11T19:09:00.001-07:00'\n"
 "author: infinispan\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4720475059796494355\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/06/introducing-leveldb-cache-store.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4720475059796494355\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/06/introducing-leveldb-"
+"cache-store.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: LevelDBキャッシュストアの紹介\n"
+"permalink: /blog/:year/:month/:day/introducing-leveldb-cache-store\n"
+"date: '2013-06-11T19:09:00.001-07:00'\n"
+"author: infinispan\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4720475059796494355\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/06/introducing-leveldb-"
+"cache-store.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-11-introducing-leveldb-cache-store.adoc:19
-msgid "Infinispan 5.3.0 will be introducing a LevelDB cache store.  This cache store will allow you to store cache entries using a fast filesystem based http://code.google.com/p/leveldb/[LevelDB] key-value store originally developed by Google.  This cache store uses a https://github.com/dain/leveldb[Java implementation] of LevelDB, and maybe one day, it can get even better performance by using the https://github.com/fusesource/leveldbjni[JNI implementation]."
+#, fuzzy
+msgid ""
+"Infinispan 5.3.0 will be introducing a LevelDB cache store.  This cache "
+"store will allow you to store cache entries using a fast filesystem based "
+"http://code.google.com/p/leveldb/[LevelDB] key-value store originally "
+"developed by Google.  This cache store uses a https://github.com/dain/"
+"leveldb[Java implementation] of LevelDB, and maybe one day, it can get even "
+"better performance by using the https://github.com/fusesource/leveldbjni[JNI "
+"implementation]."
 msgstr ""
+"Infinispan 5.3.0ではLevelDBのキャッシュストアが導入されます。 "
+"このキャッシュストアでは、Googleが独自に開発した高速なファイルシステムベースのLevelDB link:http://code.google."
+"com/p/leveldb/[キーバリューストア] を使ってキャッシュエントリを保存できるようになります。 このキャッシュストアは link:https:"
+"//github.com/dain/leveldb[LevelDB] "
+"のJava実装を使っていますが、いつかはJNIの実装を使うことでさらに性能が向上するかもしれません。"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-11-introducing-leveldb-cache-store.adoc:21
+#, fuzzy
 msgid "Configuration is simple:"
-msgstr ""
+msgstr "設定は簡単です。"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-11-introducing-leveldb-cache-store.adoc:26
-msgid "Please see documentations for detailed https://docs.jboss.org/author/display/ISPN/Cache+Loaders+and+Stores[sample usage and configuration]."
+#, fuzzy
+msgid ""
+"Please see documentations for detailed https://docs.jboss.org/author/display/"
+"ISPN/Cache+Loaders+and+Stores[sample usage and configuration]."
 msgstr ""
+"詳しい link:https://docs.jboss.org/author/display/ISPN/"
+"Cache+Loaders+and+Stores[サンプルの使用方法や設定方法] については、ドキュメントをご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-11-introducing-leveldb-cache-store.adoc:28
+#, fuzzy
 msgid "Hope you enjoy this new addition!"
-msgstr ""
+msgstr "この新機能をお楽しみください"
 
 #. type: Plain text
 #: upstream/_posts/2013-06-11-introducing-leveldb-cache-store.adoc:29
+#, fuzzy
 msgid "Ray"
-msgstr ""
+msgstr "レイ"

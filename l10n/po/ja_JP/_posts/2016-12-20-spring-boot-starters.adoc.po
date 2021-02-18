@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-12-20-spring-boot-starters.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-20-spring-boot-starters.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Spring Boot Starters\n"
@@ -33,96 +33,173 @@ msgid ""
 "author: slaskawiec\n"
 "tags: [ \"spring\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8263782875884715019\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/12/spring-boot-starters.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8263782875884715019\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/12/spring-boot-starters."
+"html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: スプリングブートスターター\n"
+"permalink: /blog/:year/:month/:day/spring-boot-starters\n"
+"date: '2016-12-20T07:06:00.000-08:00'\n"
+"author: slaskawiec\n"
+"tags: [ \"spring\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8263782875884715019\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/12/spring-boot-starters."
+"html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-20-spring-boot-starters.adoc:14
-msgid "Ho, ho, hooo! It looks like all members of Infinispan Community have been nice and Santa brought you Spring Boot Starters!"
+#, fuzzy
+msgid ""
+"Ho, ho, hooo! It looks like all members of Infinispan Community have been "
+"nice and Santa brought you Spring Boot Starters!"
 msgstr ""
+"ほっ、ほっ、ほっ、ほっ!Infinispan "
+"Communityのメンバーはみんないい子で、サンタさんが春のブーツスターターを持ってきてくれたみたいだよ!"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-20-spring-boot-starters.adoc:18
-msgid "https://cdn.meme.am/cache/instances/folder65/500x/74064065.jpg[image:https://cdn.meme.am/cache/instances/folder65/500x/74064065.jpg[image,width=320,height=320]]"
-msgstr ""
+#, fuzzy
+msgid ""
+"https://cdn.meme.am/cache/instances/folder65/500x/74064065.jpg[image:https://"
+"cdn.meme.am/cache/instances/folder65/500x/74064065.jpg[image,width="
+"320,height=320]]"
+msgstr "link:https://cdn.meme.am/cache/instances/folder65/500x/74064065.jpg[]"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-20-spring-boot-starters.adoc:22
+#, fuzzy
 msgid "This will make you even more productive and your code less verbose!"
-msgstr ""
+msgstr "これにより、さらに生産性が高まり、コードが冗長にならないようになります。"
 
 #. type: Title ===
 #: upstream/_posts/2016-12-20-spring-boot-starters.adoc:25
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Why do I need starters?"
-msgstr ""
+msgstr "なぜスターターが必要なのか？"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-20-spring-boot-starters.adoc:32
-msgid "Spring Boot Starters make the bootstrapping process much easier and faster. The starter brings you required Maven dependencies as well as some predefined configuration bits."
+#, fuzzy
+msgid ""
+"Spring Boot Starters make the bootstrapping process much easier and faster. "
+"The starter brings you required Maven dependencies as well as some "
+"predefined configuration bits."
 msgstr ""
+"Spring Boot "
+"Startersは、ブートストラッププロセスをより簡単かつ迅速にします。スターターは、必要なMavenの依存関係と定義済みの設定ビットを提供します。"
 
 #. type: Title ===
 #: upstream/_posts/2016-12-20-spring-boot-starters.adoc:35
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What do I need to get started?"
-msgstr ""
+msgstr "何を始めればいいの？"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-20-spring-boot-starters.adoc:45
-msgid "The starter can operate in two modes: client/server (when you connect to a remote Infinispan Server cluster) and embedded (packaged along with your app). The former is the default. It's also possible to use both those modes at the same time (store some data along with your app and connect to a remote Infinispan Server cluster to perform some other type of operations)."
+#, fuzzy
+msgid ""
+"The starter can operate in two modes: client/server (when you connect to a "
+"remote Infinispan Server cluster) and embedded (packaged along with your "
+"app). The former is the default. It's also possible to use both those modes "
+"at the same time (store some data along with your app and connect to a "
+"remote Infinispan Server cluster to perform some other type of operations)."
 msgstr ""
+"スターターは、クライアント/サーバー(リモートのInfinispan "
+"Serverクラスタに接続する場合)と埋め込み(アプリと一緒にパッケージ化されている場合)の2つのモードで動作します。前者がデフォルトです。これらのモードを同時に使用することも可能です（アプリと一緒にデータを保存し、リモートのInfinispan "
+"Serverクラスターに接続して他のタイプの操作を実行する）。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-20-spring-boot-starters.adoc:50
-msgid "Assuming you have an Infinispan Server running on IP address 192.168.0.17, all you need to do is to use the following dependencies:"
+#, fuzzy
+msgid ""
+"Assuming you have an Infinispan Server running on IP address 192.168.0.17, "
+"all you need to do is to use the following dependencies:"
 msgstr ""
+"IP アドレス 192.168.0.17 で Infinispan Server "
+"を実行していると仮定すると、必要なのは以下の依存関係を使用することだけです。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-20-spring-boot-starters.adoc:57
-msgid "By default, the starter will try to locate _hotrod-client.properties_ file. The file should contain at least the server list:"
+#, fuzzy
+msgid ""
+"By default, the starter will try to locate _hotrod-client.properties_ file. "
+"The file should contain at least the server list:"
 msgstr ""
+"デフォルトでは、スターターは _hotrod-client.propertiesファイルを_ "
+"見つけようとします。このファイルには、少なくともサーバーリストが含まれている必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-20-spring-boot-starters.adoc:64
-msgid "It is also possible to create _RemoteCacheManager_'s configuration manually:"
-msgstr ""
+#, fuzzy
+msgid ""
+"It is also possible to create _RemoteCacheManager_'s configuration manually:"
+msgstr "_RemoteCacheManager_ の設定を手動で作成することも可能です。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-20-spring-boot-starters.adoc:71
-msgid "That's it! Your app should successfully connect to a remote cluster and you should be able to inject _RemoteCacheManager_."
-msgstr ""
+#, fuzzy
+msgid ""
+"That's it! Your app should successfully connect to a remote cluster and you "
+"should be able to inject _RemoteCacheManager_."
+msgstr "これで完了です。アプリがリモート クラスタに正常に接続し、 _RemoteCacheManager を_ 注入できるようになるはずです。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-20-spring-boot-starters.adoc:76
-msgid "Using Infinispan embedded is even simpler than that. All you need to do is to add additional dependency to the classpath:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Using Infinispan embedded is even simpler than that. All you need to do is "
+"to add additional dependency to the classpath:"
+msgstr "Infinispan の組み込みを使うのは、それよりももっと簡単です。必要なのは、クラスパスに依存関係を追加することだけです。"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-20-spring-boot-starters.adoc:83
-msgid "The starter will provide you a preconfigured _EmbeddedCacheManager_. In order to customize the configuration, use the following code snippet:"
+#, fuzzy
+msgid ""
+"The starter will provide you a preconfigured _EmbeddedCacheManager_. In "
+"order to customize the configuration, use the following code snippet:"
 msgstr ""
+"スターターは、事前に設定された _EmbeddedCacheManager を_ "
+"提供します。設定をカスタマイズするには、以下のコードスニペットを使用します。"
 
 #. type: Title ===
 #: upstream/_posts/2016-12-20-spring-boot-starters.adoc:86
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Further reading"
-msgstr ""
+msgstr "続きを読む"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-20-spring-boot-starters.adoc:95
-msgid "There are two link I highly recommend you to read. The first is the https://github.com/infinispan/infinispan-simple-tutorials/tree/master/spring-boot[Spring Boot tutorial] and the second is the https://github.com/infinispan/infinispan-spring-boot[Github page of the Starters project]. "
+#, fuzzy
+msgid ""
+"There are two link I highly recommend you to read. The first is the https://"
+"github.com/infinispan/infinispan-simple-tutorials/tree/master/spring-"
+"boot[Spring Boot tutorial] and the second is the https://github.com/"
+"infinispan/infinispan-spring-boot[Github page of the Starters project]. "
 msgstr ""
+"ぜひ読んでいただきたいリンクが2つあります。1つ目は link:https://github.com/infinispan/infinispan-"
+"simple-tutorials/tree/master/spring-boot[Spring Bootのチュートリアル] 、2つ目は link:"
+"https://github.com/infinispan/infinispan-spring-"
+"boot[StartersプロジェクトのGithubページ] です。"
 
 #. type: Title ===
 #: upstream/_posts/2016-12-20-spring-boot-starters.adoc:100
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Kudos"
-msgstr ""
+msgstr "くどくど"
 
 #. type: Plain text
 #: upstream/_posts/2016-12-20-spring-boot-starters.adoc:107
-msgid "Special thanks go to Marco Yuen, who donated us with Spring Boot Starters code and Tomasz Zabłocki, who updated them to current version and Stéphane Nicoll who spent tremendous amount of time reviewing the Starters."
+#, fuzzy
+msgid ""
+"Special thanks go to Marco Yuen, who donated us with Spring Boot Starters "
+"code and Tomasz Zabłocki, who updated them to current version and Stéphane "
+"Nicoll who spent tremendous amount of time reviewing the Starters."
 msgstr ""
+"Spring Boot Starters のコードを提供してくださった Marco Yuen さん、最新バージョンにアップデートしてくださった "
+"Tomasz Zabłocki さん、スターターのレビューに多大な時間を割いてくださった Stéphane Nicoll さんに感謝します。"

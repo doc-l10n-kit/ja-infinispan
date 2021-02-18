@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:8
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Hot Rod URI\n"
@@ -34,111 +34,179 @@ msgid ""
 "tags: [ \"documentation\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: ホットロッド URI\n"
+"permalink: /blog/:year/:month/:day/hotrod-uri\n"
+"date: '2020-05-26T12:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"documentation\" ]\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Hot Rod URI"
-msgstr ""
+msgstr "ホットロッド URI"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:13
-msgid "Traditionally, the Java Hot Rod client has always been configured either via a properties file or through a programmatic builder API."
+#, fuzzy
+msgid ""
+"Traditionally, the Java Hot Rod client has always been configured either via "
+"a properties file or through a programmatic builder API."
 msgstr ""
+"伝統的に、Java Hot Rodクライアントは常にプロパティファイルを介して、またはプログラマティックビルダーAPIを介して設定されてきました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:15
-msgid "While both approaches offer a great amount of flexibility, they always felt a bit too complex for straightforward scenarios."
-msgstr ""
+#, fuzzy
+msgid ""
+"While both approaches offer a great amount of flexibility, they always felt "
+"a bit too complex for straightforward scenarios."
+msgstr "どちらのアプローチも柔軟性に富んでいますが、単純なシナリオには少し複雑すぎると感じていました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:17
-msgid "Starting with Infinispan 11 you will be able to specify the connection to an Infinispan Server via a URI, just like you'd connect to a database via a JDBC driver URL."
+#, fuzzy
+msgid ""
+"Starting with Infinispan 11 you will be able to specify the connection to an "
+"Infinispan Server via a URI, just like you'd connect to a database via a "
+"JDBC driver URL."
 msgstr ""
+"Infinispan 11 からは、JDBC ドライバの URL を介してデータベースに接続するのと同じように、URI を介して Infinispan "
+"サーバへの接続を指定できるようになります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:19
-msgid "The Hot Rod URI allows you to specify the addresses of the server cluster, authentication parameters and any other property in a simple compact String format."
+#, fuzzy
+msgid ""
+"The Hot Rod URI allows you to specify the addresses of the server cluster, "
+"authentication parameters and any other property in a simple compact String "
+"format."
 msgstr ""
+"Hot Rod "
+"URIでは、サーバクラスタのアドレス、認証パラメータ、その他のプロパティをシンプルでコンパクトなString形式で指定することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:21
+#, fuzzy
 msgid "The URI specification is:"
-msgstr ""
+msgstr "URIの指定です。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:23
-msgid "`hotrod[s]://[username:password]@host[:port][,host[:port]...][?property=value[&property=value...]]`"
+#, fuzzy
+msgid ""
+"`hotrod[s]://[username:password]@host[:port][,host[:port]...][?property="
+"value[&property=value...]]`"
 msgstr ""
+"`hotrod[s]://[username:password]@host[:port][,host[:port]…][?property="
+"value[&property=value…]]`"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:25
-msgid "the protocol can be either `hotrod` (plain, unencrypted) or `hotrods` (TLS/SSL, encrypted)"
+#, fuzzy
+msgid ""
+"the protocol can be either `hotrod` (plain, unencrypted) or `hotrods` (TLS/"
+"SSL, encrypted)"
 msgstr ""
+"プロトコルは `hotrod` (プレーン、暗号化されていない) または `hotrods` (TLS/SSL、暗号化されている) のいずれかです。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:26
-msgid "if username and password are specified, they will be used to authenticate with the server"
-msgstr ""
+#, fuzzy
+msgid ""
+"if username and password are specified, they will be used to authenticate "
+"with the server"
+msgstr "ユーザ名とパスワードが指定されている場合は、それらがサーバでの認証に使われます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:27
-msgid "one or more addresses. If a port is not specified, the default `11222` will be used"
-msgstr ""
+#, fuzzy
+msgid ""
+"one or more addresses. If a port is not specified, the default `11222` will "
+"be used"
+msgstr "1 つ以上のアドレスを指定します。ポートを指定しない場合は、デフォルトの `11222` が使用されます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:28
-msgid "zero or more https://docs.jboss.org/infinispan/11.0/apidocs/org/infinispan/client/hotrod/configuration/package-summary.html[properties], without the `infinispan.client.hotrod` prefix, through which you can configure all other aspects such as connection pooling, authentication mechanisms, near caching, etc."
+#, fuzzy
+msgid ""
+"zero or more https://docs.jboss.org/infinispan/11.0/apidocs/org/infinispan/"
+"client/hotrod/configuration/package-summary.html[properties], without the "
+"`infinispan.client.hotrod` prefix, through which you can configure all other "
+"aspects such as connection pooling, authentication mechanisms, near caching, "
+"etc."
 msgstr ""
+"0 個以上の link:https://docs.jboss.org/infinispan/11.0/apidocs/org/infinispan/"
+"client/hotrod/configuration/package-summary.html[プロパティ] で、接頭辞 `infinispan."
+"client.hotrod` を除いたもので、接続プーリングや認証メカニズム、ニアキャッシングなどの他のすべての側面を設定することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:30
+#, fuzzy
 msgid "Here are some examples:"
-msgstr ""
+msgstr "ここでは、いくつかの例をご紹介します。"
 
 #. type: Labeled list
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:31
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`hotrod://localhost`"
-msgstr ""
+msgstr "`hotrod://localhost`"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:33
-msgid "simple connection to a server running on `localhost` using the default port"
-msgstr ""
+#, fuzzy
+msgid ""
+"simple connection to a server running on `localhost` using the default port"
+msgstr "デフォルトのポートを使って `localhost` 上のサーバに単純に接続します。"
 
 #. type: Labeled list
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:34
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`hotrod://joe:secret@infinispan-host-1:11222,infinispan-host-2:11222`"
-msgstr ""
+msgstr "`hotrod://joe:secret@infinispan-host-1:11222,infinispan-host-2:11222`"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:36
-msgid "authenticated connection to `infinispan-host-1` and `infinispan-host-2` with explicit port"
-msgstr ""
+#, fuzzy
+msgid ""
+"authenticated connection to `infinispan-host-1` and `infinispan-host-2` with "
+"explicit port"
+msgstr "`infinispan-host-1` と `infinispan-host-2` への認証済み接続を明示的なポートで行います。"
 
 #. type: Labeled list
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:37
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`hotrods://infinispan-host-1?socket_timeout=1000&connect_timeout=2000`"
 msgstr ""
+"`hotrods://infinispan-host-1?socket_timeout=1000&connect_timeout=2000`"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:39
-msgid "TLS/SSL connection to `infinispan-host-1` using the default port and with custom connection and socket timeouts"
+#, fuzzy
+msgid ""
+"TLS/SSL connection to `infinispan-host-1` using the default port and with "
+"custom connection and socket timeouts"
 msgstr ""
+"デフォルトのポートを使用して `infinispan-host-1` に TLS/SSL 接続し、カスタムの接続とソケットのタイムアウトを使用します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:41
-msgid "The URI format can also be used as a starting point in your usual properties file or API configuration and further enriched using the traditional methods:"
+#, fuzzy
+msgid ""
+"The URI format can also be used as a starting point in your usual properties "
+"file or API configuration and further enriched using the traditional methods:"
+""
 msgstr ""
+"URI形式は、通常のプロパティファイルやAPI設定の出発点として使用することもできますし、従来のメソッドを使用してさらに充実させることもできます。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:48
 #, no-wrap
 msgid ""
-"infinispan.client.hotrod.uri=hotrod://joe:secret@infinispan-host-1:11222,infinispan-host-2:11222\n"
+"infinispan.client.hotrod.uri=hotrod://joe:secret@infinispan-host-1:"
+"11222,infinispan-host-2:11222\n"
 "infinispan.client.hotrod.connect_timeout=100\n"
 "infinispan.client.hotrod.socket_timeout=100\n"
 "infinispan.client.hotrod.tcp_keep_alive=true\n"
@@ -149,7 +217,8 @@ msgstr ""
 #, no-wrap
 msgid ""
 "ConfigurationBuilder builder = new ConfigurationBuilder()\n"
-"    .uri(\"hotrod://joe:secret@infinispan-host-1:11222,infinispan-host-2:11222\")\n"
+"    .uri(\"hotrod://joe:secret@infinispan-host-1:11222,infinispan-host-2:"
+"11222\")\n"
 "    .socketTimeout(100)\n"
 "    .connectionTimeout(100)\n"
 "    tcpKeepAlive(true);\n"
@@ -157,10 +226,12 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:60
+#, fuzzy
 msgid "We hope this makes configuration simpler."
-msgstr ""
+msgstr "これで設定が簡単になることを期待しています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-26-hotrod-uri.adoc:61
+#, fuzzy
 msgid "Happy coding!"
-msgstr ""
+msgstr "コーデが楽しくなる!"

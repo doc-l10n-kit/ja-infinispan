@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-07-06-infinispan-410cr1-is-now-available.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-07-06-infinispan-410cr1-is-now-available.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 4.1.0.CR1 is now available!\n"
@@ -32,57 +32,131 @@ msgid ""
 "date: '2010-07-06T07:31:00.001-07:00'\n"
 "author: galder\n"
 "tags: [ \"release\", \"release candidate\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5188980481863816267\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/07/infinispan-410cr1-is-now-available.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5188980481863816267\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/07/infinispan-410cr1-is-"
+"now-available.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 4.1.0.CR1を公開しました!\n"
+"permalink: /blog/:year/:month/:day/infinispan-410cr1-is-now-available\n"
+"date: '2010-07-06T07:31:00.001-07:00'\n"
+"author: galder\n"
+"tags: [ \"release\", \"release candidate\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5188980481863816267\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/07/infinispan-410cr1-is-"
+"now-available.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-07-06-infinispan-410cr1-is-now-available.adoc:17
-msgid "After very busy last few weeks with http://www.jboss.org/events/JUDCon.html[JUDCon] and http://www.redhat.com/promo/summit/2010/[JBoss World/Red Hat Summit], we're proud to release Infinispan 4.1.0.CR1, the first candidate release of the Infinispan 4.1 series. The release is downloadable in the http://www.jboss.org/infinispan/downloads[usual place]."
+#, fuzzy
+msgid ""
+"After very busy last few weeks with http://www.jboss.org/events/JUDCon."
+"html[JUDCon] and http://www.redhat.com/promo/summit/2010/[JBoss World/Red "
+"Hat Summit], we're proud to release Infinispan 4.1.0.CR1, the first "
+"candidate release of the Infinispan 4.1 series. The release is downloadable "
+"in the http://www.jboss.org/infinispan/downloads[usual place]."
 msgstr ""
+"ここ数週間、 link:http://www.jboss.org/events/JUDCon.html[JUDCon] と link:http://"
+"www.redhat.com/promo/summit/2010/[JBoss World/Red Hat Summit] "
+"で非常に忙しかった後、Infinispan 4.1シリーズの最初の候補リリースであるInfinispan 4.1.0."
+"CR1をリリースできることを誇りに思います。リリースは link:http://www.jboss.org/infinispan/"
+"downloads[いつもの場所で] ダウンロードできます。"
 
 #. type: Plain text
 #: upstream/_posts/2010-07-06-infinispan-410cr1-is-now-available.adoc:23
-msgid "A lot of work has gone into this release primarily with the aim of stabilising new functionality wrote in previous beta/alpha versions.  Here are some of the highlights included in this release:"
+#, fuzzy
+msgid ""
+"A lot of work has gone into this release primarily with the aim of "
+"stabilising new functionality wrote in previous beta/alpha versions.  Here "
+"are some of the highlights included in this release:"
 msgstr ""
+"このリリースでは、以前のベータ版/"
+"アルファ版に書かれた新機能を安定させることを主な目的として、多くの作業が行われました。このリリースに含まれるハイライトをいくつかご紹介します。"
 
 #. type: Plain text
 #: upstream/_posts/2010-07-06-infinispan-410cr1-is-now-available.adoc:27
-msgid "An fantastic demo showing how to run Infinispan in EC2. Check http://infinispan.blogspot.com/2010/05/infinispan-ec2-demo.html[Noel O'Connor's blog last month] for more detailed information."
+#, fuzzy
+msgid ""
+"An fantastic demo showing how to run Infinispan in EC2. Check http://"
+"infinispan.blogspot.com/2010/05/infinispan-ec2-demo.html[Noel O'Connor's "
+"blog last month] for more detailed information."
 msgstr ""
+"EC2でInfinispanを実行する方法を示す素晴らしいデモ。詳細は link:http://infinispan.blogspot.com/2010/"
+"05/infinispan-ec2-demo.html[先月のNoel O'Connorさんのブログを] チェックしてみてください。"
 
 #. type: Plain text
 #: upstream/_posts/2010-07-06-infinispan-410cr1-is-now-available.adoc:31
-msgid "Enable Hot Rod servers to http://community.jboss.org/wiki/UsingHotRodServer[run behind a proxy] in environments such as EC2, and make TCP buffers and TCP no delay flag configurable for both the server and client."
+#, fuzzy
+msgid ""
+"Enable Hot Rod servers to http://community.jboss.org/wiki/"
+"UsingHotRodServer[run behind a proxy] in environments such as EC2, and make "
+"TCP buffers and TCP no delay flag configurable for both the server and "
+"client."
 msgstr ""
+"EC2などの環境でHot Rodサーバを link:http://community.jboss.org/wiki/"
+"UsingHotRodServer[プロキシの後ろで実行できる] "
+"ようにし、TCPバッファとTCP遅延なしフラグをサーバとクライアントの両方で設定できるようにします。"
 
 #. type: Plain text
 #: upstream/_posts/2010-07-06-infinispan-410cr1-is-now-available.adoc:33
-msgid "Important performance improvements for Infinispan based Lucene directory and Hot Rod client and sever."
-msgstr ""
+#, fuzzy
+msgid ""
+"Important performance improvements for Infinispan based Lucene directory and "
+"Hot Rod client and sever."
+msgstr "Infinispan ベースの Lucene ディレクトリと Hot Rod クライアントおよびサーバーの重要なパフォーマンスの改善。"
 
 #. type: Plain text
 #: upstream/_posts/2010-07-06-infinispan-410cr1-is-now-available.adoc:37
-msgid "To avoid confusion, the single jar distribution has been removed. The two remaining distributions are: The bin distribution containing the Infinispan modules and documentation, and the all distribution which adds demos on top of that."
+#, fuzzy
+msgid ""
+"To avoid confusion, the single jar distribution has been removed. The two "
+"remaining distributions are: The bin distribution containing the Infinispan "
+"modules and documentation, and the all distribution which adds demos on top "
+"of that."
 msgstr ""
+"混乱を避けるため、シングルジャーのディストリビューションは削除されました。残りの二つのディストリビューションは以下の通りです。Infinispan "
+"モジュールとドキュメントを含む bin ディストリビューションと、その上にデモを追加する all ディストリビューションです。"
 
 #. type: Plain text
 #: upstream/_posts/2010-07-06-infinispan-410cr1-is-now-available.adoc:40
-msgid "A more detailed changelog can be found https://jira.jboss.org/browse/ISPN/fixforversion/12313672[here]."
+#, fuzzy
+msgid ""
+"A more detailed changelog can be found https://jira.jboss.org/browse/ISPN/"
+"fixforversion/12313672[here]."
 msgstr ""
+"より詳細な変更履歴は link:https://jira.jboss.org/browse/ISPN/fixforversion/"
+"12313672[こちらを] ご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2010-07-06-infinispan-410cr1-is-now-available.adoc:50
-msgid "Finally, if you're a user of Infinispan 4.0 or 4.1, please make sure you download and try this release out so that any outstanding issues are fixed in time for the final release. Also, if you're interested in finding out more about Infinispan's architecture, don't miss Manik's latest article http://community.jboss.org/docs/DOC-15544[explaining] http://community.jboss.org/docs/DOC-15544[Infinispan's] http://community.jboss.org/docs/DOC-15544['nuts and bolts']."
+#, fuzzy
+msgid ""
+"Finally, if you're a user of Infinispan 4.0 or 4.1, please make sure you "
+"download and try this release out so that any outstanding issues are fixed "
+"in time for the final release. Also, if you're interested in finding out "
+"more about Infinispan's architecture, don't miss Manik's latest article http:"
+"//community.jboss.org/docs/DOC-15544[explaining] http://community.jboss.org/"
+"docs/DOC-15544[Infinispan's] http://community.jboss.org/docs/DOC-15544['nuts "
+"and bolts']."
 msgstr ""
+"最後に、もしあなたがInfinispan 4.0または4."
+"1のユーザーであれば、このリリースをダウンロードして試してみて、未解決の問題が最終リリースに間に合うように修正してください。また、Infinispanのアーキテクチャについてもっと知りたい方は、Manik氏の最新の記事でInfinispan "
+"link:http://community.jboss.org/docs/DOC-15544[の] link:http://community."
+"jboss.org/docs/DOC-15544[「ナット＆ボルト」] について link:http://community.jboss.org/"
+"docs/DOC-15544[説明してい] ますので、お見逃しなく。"
 
 #. type: Plain text
 #: upstream/_posts/2010-07-06-infinispan-410cr1-is-now-available.adoc:54
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2010-07-06-infinispan-410cr1-is-now-available.adoc:55
+#, fuzzy
 msgid "Galder Zamarreño"
-msgstr ""
+msgstr "ガルデル・ザマーレニョ"

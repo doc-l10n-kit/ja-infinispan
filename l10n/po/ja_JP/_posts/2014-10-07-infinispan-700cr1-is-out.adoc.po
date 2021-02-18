@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-10-07-infinispan-700cr1-is-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-07-infinispan-700cr1-is-out.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 7.0.0.CR1 is out!\n"
@@ -34,67 +34,138 @@ msgid ""
 "tags: [ \"release\",\n"
 "\"release candidate\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-792753137358739901\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/10/infinispan-700cr1-is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"792753137358739901\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/10/infinispan-700cr1-is-"
+"out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 7.0.0.0.CR1が出ました!\n"
+"permalink: /blog/:year/:month/:day/infinispan-700cr1-is-out\n"
+"date: '2014-10-07T07:15:00.002-07:00'\n"
+"author: infinispan\n"
+"tags: [ \"release\",\n"
+"\"release candidate\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"792753137358739901\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/10/infinispan-700cr1-is-"
+"out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-07-infinispan-700cr1-is-out.adoc:14
+#, fuzzy
 msgid "Dear Community,"
-msgstr ""
+msgstr "コミュニティの皆様へ"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-07-infinispan-700cr1-is-out.adoc:17
-msgid "We are gearing up towards a great Infinispan 7.0.0, and we are happy to announce our first candidate release!"
-msgstr ""
+#, fuzzy
+msgid ""
+"We are gearing up towards a great Infinispan 7.0.0, and we are happy to "
+"announce our first candidate release!"
+msgstr "私たちは偉大なInfinispan 7.0.0に向けて準備を進めており、最初の候補リリースを発表できることを嬉しく思います。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-07-infinispan-700cr1-is-out.adoc:19
+#, fuzzy
 msgid "Notable features and improvements in this release:"
-msgstr ""
+msgstr "このリリースの注目すべき機能と改善点"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-07-infinispan-700cr1-is-out.adoc:23
-msgid "Cross-site state transfer now handles failures  (https://issues.jboss.org/browse/ISPN-4025[ISPN-4025])"
+#, fuzzy
+msgid ""
+"Cross-site state transfer now handles failures  (https://issues.jboss.org/"
+"browse/ISPN-4025[ISPN-4025])"
 msgstr ""
+"クロスサイト状態の転送が失敗を処理するようになりました（ISPN link:https://issues.jboss.org/browse/ISPN-"
+"4025[-4025] ）。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-07-infinispan-700cr1-is-out.adoc:25
-msgid "Easier management of Protobuf schemas (https://issues.jboss.org/browse/ISPN-4357[ISPN-4357])"
+#, fuzzy
+msgid ""
+"Easier management of Protobuf schemas (https://issues.jboss.org/browse/ISPN-"
+"4357[ISPN-4357])"
 msgstr ""
+"Protobufスキーマの管理が容易になりました link:https://issues.jboss.org/browse/ISPN-"
+"4357[（ISPN-4357]"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-07-infinispan-700cr1-is-out.adoc:27
-msgid "New uberjars-based distribution (https://issues.jboss.org/browse/ISPN-4728[ISPN-4728])"
+#, fuzzy
+msgid ""
+"New uberjars-based distribution (https://issues.jboss.org/browse/ISPN-"
+"4728[ISPN-4728])"
 msgstr ""
+"ユーバージャーをベースにした新規配信 link:https://issues.jboss.org/browse/ISPN-4728[(ISPN-"
+"4728] )"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-07-infinispan-700cr1-is-out.adoc:29
-msgid "The HotRod protocol and Java client now have a size() operation (https://issues.jboss.org/browse/ISPN-4736[ISPN-4736])"
+#, fuzzy
+msgid ""
+"The HotRod protocol and Java client now have a size() operation (https://"
+"issues.jboss.org/browse/ISPN-4736[ISPN-4736])"
 msgstr ""
+"HotRodプロトコルおよびJavaクライアントにsize()操作が追加されました link:https://issues.jboss.org/"
+"browse/ISPN-4736[(ISPN-4736] )。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-07-infinispan-700cr1-is-out.adoc:31
-msgid "Cluster listeners' filters and converters can now see the old value and metadata (https://issues.jboss.org/browse/ISPN-4753[ISPN-4753])"
+#, fuzzy
+msgid ""
+"Cluster listeners' filters and converters can now see the old value and "
+"metadata (https://issues.jboss.org/browse/ISPN-4753[ISPN-4753])"
 msgstr ""
+"クラスタリスナーのフィルタとコンバータが古い値とメタデータ link:https://issues.jboss.org/browse/ISPN-"
+"4753[（ISPN-4753] ）を参照できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-07-infinispan-700cr1-is-out.adoc:34
-msgid "A new and promising file store implementation that addresses the scalability issues of our single-file store (https://issues.jboss.org/browse/ISPN-3921[ISPN-3921], thanks Radim!)"
+#, fuzzy
+msgid ""
+"A new and promising file store implementation that addresses the scalability "
+"issues of our single-file store (https://issues.jboss.org/browse/ISPN-"
+"3921[ISPN-3921], thanks Radim!)"
 msgstr ""
+"シングルファイルストアのスケーラビリティの問題を解決する新しい有望なファイルストアの実装 link:https://issues.jboss.org/"
+"browse/ISPN-3921[(ISPN-3921] , thanks Radim!)"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-07-infinispan-700cr1-is-out.adoc:41
-msgid "For a complete list of features and bug fixes included in this release please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12324510[release notes].  Visit our http://infinispan.org/download/[downloads] section to find the latest release."
+#, fuzzy
+msgid ""
+"For a complete list of features and bug fixes included in this release "
+"please refer to the https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12324510[release notes].  Visit our http://"
+"infinispan.org/download/[downloads] section to find the latest release."
 msgstr ""
+"このリリースに含まれる機能とバグフィックスの完全なリストについては、 link:https://issues.jboss.org/secure/"
+"ReleaseNote.jspa?projectId=12310799&version=12324510[リリースノートを] 参照してください link:"
+"https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
+"12324510[。] 最新のリリースを見つける link:http://infinispan.org/download/[ために] "
+"私たちのダウンロード link:http://infinispan.org/download/[セクションを] 参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-07-infinispan-700cr1-is-out.adoc:46
-msgid "If you have any questions please check our http://infinispan.org/community/[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+#, fuzzy
+msgid ""
+"If you have any questions please check our http://infinispan.org/community/"
+"[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-"
+"dev[mailing lists] or ping us directly on irc://irc.freenode.org/"
+"infinispan[IRC]."
 msgstr ""
+"質問がある場合は、 link:http://infinispan.org/community/[フォーラムや] link:https://lists."
+"jboss.org/mailman/listinfo/infinispan-dev[メーリングリストを] チェックする link:https://"
+"lists.jboss.org/mailman/listinfo/infinispan-dev[か、] IRCで直接 link:https://"
+"lists.jboss.org/mailman/listinfo/infinispan-dev[pingし] てください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-10-07-infinispan-700cr1-is-out.adoc:49
+#, fuzzy
 msgid "Cheers, The Infinispan team"
-msgstr ""
+msgstr "乾杯、インフィニスパンチーム"

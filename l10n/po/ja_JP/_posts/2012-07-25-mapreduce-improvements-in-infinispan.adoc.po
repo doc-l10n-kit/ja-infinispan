@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Map/Reduce improvements in Infinispan 5.2.0ALPHA2\n"
@@ -32,121 +32,242 @@ msgid ""
 "date: '2012-07-25T13:14:00.001-07:00'\n"
 "author: vblagojevic\n"
 "tags: [ \"map reduce\" ]\n"
-"thumbnail: http://4.bp.blogspot.com/-XVebeVW0q_4/UBA4EjeD1jI/AAAAAAAADRc/-2fTJvRfYLE/s72-c/mapphase.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5128143110787697988\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/07/mapreduce-improvements-in-infinispan.html\n"
+"thumbnail: http://4.bp.blogspot.com/-XVebeVW0q_4/UBA4EjeD1jI/AAAAAAAADRc/-"
+"2fTJvRfYLE/s72-c/mapphase.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5128143110787697988\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/07/mapreduce-improvements-"
+"in-infinispan.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 5.2.0ALPHA2のマップ/Reduceの改善点\n"
+"permalink: /blog/:year/:month/:day/mapreduce-improvements-in-infinispan\n"
+"date: '2012-07-25T13:14:00.001-07:00'\n"
+"author: vblagojevic\n"
+"tags: [ \"map reduce\" ]\n"
+"thumbnail: http://4.bp.blogspot.com/-XVebeVW0q_4/UBA4EjeD1jI/AAAAAAAADRc/-"
+"2fTJvRfYLE/s72-c/mapphase.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5128143110787697988\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/07/mapreduce-improvements-"
+"in-infinispan.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:17
-msgid "As our MapReduce implementation grew out of the proof of concept phase (and especially after our users had already production tested it), we needed to remove the most prominent impediment to an industrial grade MapReduce solution that we strive for: distributing reduce phase execution."
+#, fuzzy
+msgid ""
+"As our MapReduce implementation grew out of the proof of concept phase (and "
+"especially after our users had already production tested it), we needed to "
+"remove the most prominent impediment to an industrial grade MapReduce "
+"solution that we strive for: distributing reduce phase execution."
 msgstr ""
+"私たちのMapReduceの実装が概念実証の段階から（特にユーザーがすでに実稼働テストを行った後に）成長していくにつれ、私たちが目指している産業用グレードのMapReduceソリューションを実現するためには、リデュースフェーズの実行を分散させるという、最も顕著な障害を取り除く必要があった。"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:29
-msgid "Reduce phase prior to the Infinispan 5.2 release was done on a single Infinispan master task node. Therefore, the size of map reduce problems we could support (data size wise) was effectively shrunk to a working memory of a single Infinispan node. Starting with the Infinispan 5.2 release, we have removed this limitation, and reduce phase execution is distributed across the cluster as well. Of course, users still have an option to use MapReduceTask the old way, and we even recommend that particular approach for smaller sized input tasks. We have achieved distribution of reduce phase by relying on Infinispan's consistent hashing and DeltaAware cache insertion. Here is how we distributed reduce phase execution:"
+#, fuzzy
+msgid ""
+"Reduce phase prior to the Infinispan 5.2 release was done on a single "
+"Infinispan master task node. Therefore, the size of map reduce problems we "
+"could support (data size wise) was effectively shrunk to a working memory of "
+"a single Infinispan node. Starting with the Infinispan 5.2 release, we have "
+"removed this limitation, and reduce phase execution is distributed across "
+"the cluster as well. Of course, users still have an option to use "
+"MapReduceTask the old way, and we even recommend that particular approach "
+"for smaller sized input tasks. We have achieved distribution of reduce phase "
+"by relying on Infinispan's consistent hashing and DeltaAware cache insertion."
+" Here is how we distributed reduce phase execution:"
 msgstr ""
+"Infinispan 5."
+"2リリース以前のリデュースフェーズは、単一のInfinispanマスタータスクノードで行われていました。そのため、サポートできるマップリデュース問題のサイズ(データサイズ)は、事実上、1つのInfinispanノードのワーキングメモリに縮小されていました。Infinispan "
+"5."
+"2リリースからは、この制限を取り除き、リダクションフェーズの実行をクラスタ全体に分散させるようになりました。もちろん、ユーザは従来の方法でMapReduceTaskを使用することもできますし、より小さなサイズの入力タスクには、そのような特定のアプローチを推奨します。私たちは、Infinispanの一貫性のあるハッシュとDeltaAwareキャッシュ挿入に頼ることで、リデュースフェーズの分散を実現しました。リデュースフェーズの実行をどのように分散させたかを紹介します。"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:32
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Map phase*\n"
-msgstr ""
+msgstr "*マップフェーズ*"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:39
-msgid "MapReduceTask, as it currently does, will hash task input keys and group them by execution node N they are hashed to*. After key node mapping, MapReduceTask sends map function and input keys to each node N. Map function is invoked using given keys and locally loaded corresponding values."
+#, fuzzy
+msgid ""
+"MapReduceTask, as it currently does, will hash task input keys and group "
+"them by execution node N they are hashed to*. After key node mapping, "
+"MapReduceTask sends map function and input keys to each node N. Map function "
+"is invoked using given keys and locally loaded corresponding values."
 msgstr ""
+"MapReduceTaskは、現在のところ、タスクの入力キーをハッシュ化し、ハッシュ化された実行ノードNごとにグループ化します*。キーノードマッピング後、MapReduceTaskはマップ関数と入力キーを各ノードNに送信します。"
 
 #. type: Table
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:46
-#, no-wrap
-msgid "http://4.bp.blogspot.com/-XVebeVW0q_4/UBA4EjeD1jI/AAAAAAAADRc/-2fTJvRfYLE/s1600/mapphase.png[image:http://4.bp.blogspot.com/-XVebeVW0q_4/UBA4EjeD1jI/AAAAAAAADRc/-2fTJvRfYLE/s1600/mapphase.png[image]]"
+#, no-wrap, fuzzy
+msgid ""
+"http://4.bp.blogspot.com/-XVebeVW0q_4/UBA4EjeD1jI/AAAAAAAADRc/-2fTJvRfYLE/"
+"s1600/mapphase.png[image:http://4.bp.blogspot.com/-XVebeVW0q_4/UBA4EjeD1jI/"
+"AAAAAAAADRc/-2fTJvRfYLE/s1600/mapphase.png[image]]"
 msgstr ""
+"link:http://4.bp.blogspot.com/-XVebeVW0q_4/UBA4EjeD1jI/AAAAAAAADRc/-"
+"2fTJvRfYLE/s1600/mapphase.png[]"
 
 #. type: Table
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:47
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Map and Combine phase"
-msgstr ""
+msgstr "マップと結合フェーズ"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:58
-msgid "Results are collected with an Infinispan supplied Collector, and combine phase is initiated. A Combiner, if specified, takes KOut keys and immediately invokes reduce phase on keys. The result of mapping phase executed on each node is KOut/VOut map. There will be one resulting map per execution node N per launched MapReduceTask."
+#, fuzzy
+msgid ""
+"Results are collected with an Infinispan supplied Collector, and combine "
+"phase is initiated. A Combiner, if specified, takes KOut keys and "
+"immediately invokes reduce phase on keys. The result of mapping phase "
+"executed on each node is KOut/VOut map. There will be one resulting map per "
+"execution node N per launched MapReduceTask."
 msgstr ""
+"結果は Infinispan "
+"付属のコレクターで収集され、コンバインフェーズが開始されます。コンバイナが指定されている場合は、KOutキーを取り、直ちにキー上でリダクションフェーズを実行します。各ノードで実行されたマッピングフェーズの結果は、KOut/"
+"Voutマップとなります。起動された MapReduceTask ごとに実行ノード N ごとに 1 つのマップが生成されます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:63
-#, no-wrap
-msgid ""
-"*Intermediate KOut/VOut migration phase*\n"
+#, no-wrap, fuzzy
+msgid "*Intermediate KOut/VOut migration phase*\n"
 "**\n"
-msgstr ""
+msgstr "*中間的なKOut/Vout移行フェーズ* **。"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:69
-msgid "In order to proceed with reduce phase, all intermediate keys and values need to be grouped by intermediate KOut keys. More specifically, as map phases around the cluster can produce identical intermediate keys, all those identical intermediate keys and their values need to be grouped before reduce is executed on any particular intermediate key."
+#, fuzzy
+msgid ""
+"In order to proceed with reduce phase, all intermediate keys and values need "
+"to be grouped by intermediate KOut keys. More specifically, as map phases "
+"around the cluster can produce identical intermediate keys, all those "
+"identical intermediate keys and their values need to be grouped before "
+"reduce is executed on any particular intermediate key."
 msgstr ""
+"リデュースフェーズを進めるためには、すべての中間キーとその値を中間のKOutキーでグループ化する必要があります。より具体的には、クラスタの周りのマップフェーズが同一の中間キーを生成する可能性があるため、特定の中間キーに対してリデュースが実行される前に、それらすべての同一の中間キーとその値をグループ化する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:78
-msgid "Therefore at the end of combine phase, instead of returning map with intermediate keys and values to the master task node, we instead hash each intermediate key KOut and migrate it with its VOut values to Infinispan node where keys KOut are hashed to. We achieve this using a temporary DIST cache and underlying consistent hashing mechanism. Using DeltaAware cache insertion we effectively collect all VOut values under each KOut for all executed map functions across the cluster."
+#, fuzzy
+msgid ""
+"Therefore at the end of combine phase, instead of returning map with "
+"intermediate keys and values to the master task node, we instead hash each "
+"intermediate key KOut and migrate it with its VOut values to Infinispan node "
+"where keys KOut are hashed to. We achieve this using a temporary DIST cache "
+"and underlying consistent hashing mechanism. Using DeltaAware cache "
+"insertion we effectively collect all VOut values under each KOut for all "
+"executed map functions across the cluster."
 msgstr ""
+"したがって、コンバインフェーズの最後に、中間キーと値を含むマップをマスタータスクノードに返す代わりに、各中間キーKOutをハッシュ化し、そのVOut値とともにキーKOutがハッシュ化されたInfinispanノードに移行します。これは、一時的なDISTキャッシュと基礎となる一貫性のあるハッシュ機構を使用して実現しています。DeltaAwareキャッシュ挿入を使用して、クラスタ全体で実行されたすべてのマップ関数の各KOutの下にあるすべてのVOut値を効果的に収集します。"
 
 #. type: Table
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:83
-#, no-wrap
-msgid "http://4.bp.blogspot.com/-0lsGH927liI/UBA4OJaq99I/AAAAAAAADRk/A3XqDY25_48/s1600/intermediatephase.png[image:http://4.bp.blogspot.com/-0lsGH927liI/UBA4OJaq99I/AAAAAAAADRk/A3XqDY25_48/s1600/intermediatephase.png[image]]"
+#, no-wrap, fuzzy
+msgid ""
+"http://4.bp.blogspot.com/-0lsGH927liI/UBA4OJaq99I/AAAAAAAADRk/A3XqDY25_48/"
+"s1600/intermediatephase.png[image:http://4.bp.blogspot.com/-0lsGH927liI/"
+"UBA4OJaq99I/AAAAAAAADRk/A3XqDY25_48/s1600/intermediatephase.png[image]]"
 msgstr ""
+"link:http://4.bp.blogspot.com/-0lsGH927liI/UBA4OJaq99I/AAAAAAAADRk/"
+"A3XqDY25_48/s1600/intermediatephase.png[]"
 
 #. type: Table
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:84
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Intermediate KOut/VOut grouping phase"
-msgstr ""
+msgstr "中間KOut/Voutグループ化フェーズ"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:92
-msgid "At this point, map and combine phase have finished its execution; list of KOut keys is returned to a master node and its initiating MapReduceTask. We do not return VOut values as we do not need them at master task node. MapReduceTask is ready to start with reduce phase."
+#, fuzzy
+msgid ""
+"At this point, map and combine phase have finished its execution; list of "
+"KOut keys is returned to a master node and its initiating MapReduceTask. We "
+"do not return VOut values as we do not need them at master task node. "
+"MapReduceTask is ready to start with reduce phase."
 msgstr ""
+"この時点で、マップとコンバインフェーズの実行が終了し、KOutキーのリストがマスターノードとそのイニシエータであるMapReduceTaskに返されます。マスタータスクノードでは必要ないので、VOut値は返さない。MapReduceTaskはリダクションフェーズを開始する準備ができている。"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:95
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Reduce phase*\n"
-msgstr ""
+msgstr "*位相を下げる*"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:106
-msgid "Reduce phase is easy to accomplish now as Infinispan's consistent hashing already finished all the hard lifting for us. To complete reduce phase, MapReduceTask groups KOut keys by execution node N they are hashed to. For each node N and its grouped input KOut keys, MapReduceTask sends a reduce command to a node N where KOut keys are hashed. Once reduce command arrives on target execution node, it looks up temporary cache belonging to MapReduce task - and for each KOut key, grabs a list of VOut values, wraps it with an Iterator and invokes reduce on it."
+#, fuzzy
+msgid ""
+"Reduce phase is easy to accomplish now as Infinispan's consistent hashing "
+"already finished all the hard lifting for us. To complete reduce phase, "
+"MapReduceTask groups KOut keys by execution node N they are hashed to. For "
+"each node N and its grouped input KOut keys, MapReduceTask sends a reduce "
+"command to a node N where KOut keys are hashed. Once reduce command arrives "
+"on target execution node, it looks up temporary cache belonging to MapReduce "
+"task - and for each KOut key, grabs a list of VOut values, wraps it with an "
+"Iterator and invokes reduce on it."
 msgstr ""
+"リデュースフェーズは、Infinispanの一貫性のあるハッシュ処理がすでにすべてのハードリフティングを完了しているので、簡単に達成できます。リデュースフェーズを完了するために、MapReduceTaskは、ハッシュされた実行ノードNによってKOutキーをグループ化します。各ノードNとそのグループ化された入力KOutキーに対して、MapReduceTaskはKOutキーがハッシュされたノードNにreduceコマンドを送信します。reduceコマンドがターゲットの実行ノードに到着すると、MapReduceタスクに属する一時キャッシュを検索し、各KOutキーについて、VOut値のリストを取得し、それをIteratorでラップし、その上でreduceを呼び出します。"
 
 #. type: Table
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:113
-#, no-wrap
-msgid "http://3.bp.blogspot.com/-lHTZdPcBuqU/UBA4Ym5nj4I/AAAAAAAADRs/lreaxwmR_7g/s1600/reducephase.png[image:http://3.bp.blogspot.com/-lHTZdPcBuqU/UBA4Ym5nj4I/AAAAAAAADRs/lreaxwmR_7g/s1600/reducephase.png[image]]"
+#, no-wrap, fuzzy
+msgid ""
+"http://3.bp.blogspot.com/-lHTZdPcBuqU/UBA4Ym5nj4I/AAAAAAAADRs/lreaxwmR_7g/"
+"s1600/reducephase.png[image:http://3.bp.blogspot.com/-lHTZdPcBuqU/"
+"UBA4Ym5nj4I/AAAAAAAADRs/lreaxwmR_7g/s1600/reducephase.png[image]]"
 msgstr ""
+"link:http://3.bp.blogspot.com/-lHTZdPcBuqU/UBA4Ym5nj4I/AAAAAAAADRs/"
+"lreaxwmR_7g/s1600/reducephase.png[]"
 
 #. type: Table
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:114
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Reduce phase"
-msgstr ""
+msgstr "位相を下げる"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:123
-msgid "A result of each reduce is a map where each key is KOut and value is VOut. Each Infinispan execution node N returns one map with KOut/VOut result values. As all initiated reduce commands return to a calling node, MapReduceTask simply combines all resulting maps into map M and returns M as a result of MapReduceTask."
+#, fuzzy
+msgid ""
+"A result of each reduce is a map where each key is KOut and value is VOut. "
+"Each Infinispan execution node N returns one map with KOut/VOut result "
+"values. As all initiated reduce commands return to a calling node, "
+"MapReduceTask simply combines all resulting maps into map M and returns M as "
+"a result of MapReduceTask."
 msgstr ""
+"各リダクションの結果は、各キーが KOut、値が VOut であるマップです。各Infinispan実行ノードNは、KOut/"
+"VOutの結果値を持つ1つのマップを返します。開始されたすべてのリデュースコマンドが呼び出しノードに戻るので、MapReduceTaskは、結果として得られたすべてのマップを単純にマップMに結合し、MapReduceTaskの結果としてMを返します。"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:131
-msgid "Distributed reduce phase is turned on by using a MapReduceTask http://docs.jboss.org/infinispan/5.2/apidocs/org/infinispan/distexec/mapreduce/MapReduceTask.html#MapReduceTask(org.infinispan.Cache,%20boolean)[constructor] specifying cache to use as input data for the task and boolean parameter distributeReducePhase set to true. Map/Reduce API http://docs.jboss.org/infinispan/5.2/apidocs/org/infinispan/distexec/mapreduce/package-summary.html[javadoc] and demos are included in distribution."
+#, fuzzy
+msgid ""
+"Distributed reduce phase is turned on by using a MapReduceTask http://docs."
+"jboss.org/infinispan/5.2/apidocs/org/infinispan/distexec/mapreduce/"
+"MapReduceTask.html#MapReduceTask(org.infinispan."
+"Cache,%20boolean)[constructor] specifying cache to use as input data for the "
+"task and boolean parameter distributeReducePhase set to true. Map/Reduce API "
+"http://docs.jboss.org/infinispan/5.2/apidocs/org/infinispan/distexec/"
+"mapreduce/package-summary.html[javadoc] and demos are included in "
+"distribution."
 msgstr ""
+"タスクの入力データとして使用するキャッシュを指定するMapReduceTaskの link:http://docs.jboss.org/"
+"infinispan/5.2/apidocs/org/infinispan/distexec/mapreduce/MapReduceTask."
+"html#MapReduceTask(org.infinispan.Cache,%20boolean)[コンストラクタを] "
+"使用し、booleanパラメータdistributeReducePhaseをtrueに設定することで、分散リデュースフェーズをオンにします。Map/"
+"Reduce APIの link:http://docs.jboss.org/infinispan/5.2/apidocs/org/infinispan/"
+"distexec/mapreduce/package-summary.html[javadoc] とデモが配布物に含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:142
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Moving forward*\n"
 "*\n"
@@ -158,16 +279,19 @@ msgid ""
 "suggestions - especially if you have large data input sets ready for our\n"
 "latest MapReduceTask.\n"
 msgstr ""
+"Infinispan 5.2.0の最終リリースでは、中間移行キー/"
+"値フェーズの実行が可能な限り効果的であることを確認したいと考えており、機能テストでもそうであったように、大規模な入力タスクでもロックフリーであることが証明されています。特に、最新のMapReduceTaskに対応した大規模なデータ入力セットをお持ちの方は、ぜひご意見やご提案をお待ちしています。"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:147
+#, fuzzy
 msgid "Cheers, Vladimir   "
-msgstr ""
+msgstr "乾杯 ウラジミール"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-25-mapreduce-improvements-in-infinispan.adoc:151
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*If no keys are specified, entire cache key set will be used as in\n"
 "input.\n"
-msgstr ""
+msgstr "*キーが指定されていない場合は、キャッシュキーセット全体が入力時と同じように使用されます。"

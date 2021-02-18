@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-03-27-infinispan-coming-to-alpes-jug.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-27-infinispan-coming-to-alpes-jug.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan coming to Alpes JUG!\n"
@@ -34,17 +34,45 @@ msgid ""
 "tags: [ \"JUGs\",\n"
 "\"event\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1614393595705246858\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/03/infinispan-coming-to-alpes-jug.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1614393595705246858\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/03/infinispan-coming-to-"
+"alpes-jug.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: アルプJUGにインフィニスパンがやってくる！？\n"
+"permalink: /blog/:year/:month/:day/infinispan-coming-to-alpes-jug\n"
+"date: '2012-03-27T00:43:00.003-07:00'\n"
+"author: galder\n"
+"tags: [ \"JUGs\",\n"
+"\"event\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1614393595705246858\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/03/infinispan-coming-to-"
+"alpes-jug.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-27-infinispan-coming-to-alpes-jug.adoc:19
-msgid "I was meant to speak in the http://www.alpesjug.fr/[Alpes JUG] in Grenoble about Infinispan back in December, but due to a health issue, I was unable to attend. http://www.alpesjug.fr/?p=1132[This session] has now been rescheduled for this coming Thursday, 29th of March. As always, I will be speaking about all thing Infinispan, caching, data grids.  Really looking forward to it! :)"
+#, fuzzy
+msgid ""
+"I was meant to speak in the http://www.alpesjug.fr/[Alpes JUG] in Grenoble "
+"about Infinispan back in December, but due to a health issue, I was unable "
+"to attend. http://www.alpesjug.fr/?p=1132[This session] has now been "
+"rescheduled for this coming Thursday, 29th of March. As always, I will be "
+"speaking about all thing Infinispan, caching, data grids.  Really looking "
+"forward to it! :)"
 msgstr ""
+"12月にグルノーブルで開催された link:http://www.alpesjug.fr/[Alpes JUG] "
+"でインフィニスパンについて話す予定でしたが、体調不良のため参加できませんでした。この link:http://www.alpesjug.fr/?p="
+"1132[セッション] "
+"は3月29日（木）に予定を変更しました。いつものように、私はInfinispan、キャッシング、データグリッドについてお話します。本当に楽しみにしています。:"
+")"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-27-infinispan-coming-to-alpes-jug.adoc:21
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

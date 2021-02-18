@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-530beta2-is-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-530beta2-is-out.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 5.3.0.Beta2 is out!\n"
@@ -34,47 +34,89 @@ msgid ""
 "tags: [ \"beta\",\n"
 "\"release\"\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1537320119531490087\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-530beta2-is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1537320119531490087\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-530beta2-is-"
+"out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 5.3.0.Beta2が出ました!\n"
+"permalink: /blog/:year/:month/:day/infinispan-530beta2-is-out\n"
+"date: '2013-05-17T11:39:00.001-07:00'\n"
+"author: mmarkus\n"
+"tags: [ \"beta\",\n"
+"\"release\"\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1537320119531490087\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/05/infinispan-530beta2-is-"
+"out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-530beta2-is-out.adoc:15
+#, fuzzy
 msgid "The highlights of this release are:"
-msgstr ""
+msgstr "今回のリリースのハイライトは"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-530beta2-is-out.adoc:19
-msgid "interoperability between Hot Rod, Memcached, REST and embedded mode.  E.g. it is now possible to write data through an REST interface and read it through Hot Rod or the other way around"
+#, fuzzy
+msgid ""
+"interoperability between Hot Rod, Memcached, REST and embedded mode.  E.g. "
+"it is now possible to write data through an REST interface and read it "
+"through Hot Rod or the other way around"
 msgstr ""
+"Hot Rod、Memcached、REST、組み込みモード間の相互運用性。例えば、REST インターフェイスを介してデータを書き込み、Hot Rod "
+"またはその逆の方法でデータを読み込むことが可能になりました。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-530beta2-is-out.adoc:21
-msgid "the ability to expose the same container over multiple Hot Rod endpoints and the integration of the WebSocket endpoint"
-msgstr ""
+#, fuzzy
+msgid ""
+"the ability to expose the same container over multiple Hot Rod endpoints and "
+"the integration of the WebSocket endpoint"
+msgstr "複数の Hot Rod エンドポイント上で同じコンテナを公開する機能と WebSocket エンドポイントの統合"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-530beta2-is-out.adoc:23
+#, fuzzy
 msgid "Please stay tuned for blogs detailing these features."
-msgstr ""
+msgstr "これらの特徴を詳しく紹介しているブログにご期待ください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-530beta2-is-out.adoc:27
-msgid "For a complete list of features included in this release refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12321177[release notes]."
+#, fuzzy
+msgid ""
+"For a complete list of features included in this release refer to the https:/"
+"/issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
+"12321177[release notes]."
 msgstr ""
+"このリリースに含まれる機能の完全なリストについては、 link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12321177[リリースノートを参照してください。]"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-530beta2-is-out.adoc:33
-msgid "Visit our http://www.jboss.org/infinispan/downloads[downloads] section to find the latest release and if you have any questions please check our http://www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+#, fuzzy
+msgid ""
+"Visit our http://www.jboss.org/infinispan/downloads[downloads] section to "
+"find the latest release and if you have any questions please check our http:/"
+"/www.jboss.org/infinispan/forums[forums], our https://lists.jboss.org/"
+"mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://"
+"irc.freenode.org/infinispan[IRC]."
 msgstr ""
+"最新のリリースは link:http://www.jboss.org/infinispan/downloads[ダウンロード] "
+"セクションをご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-530beta2-is-out.adoc:37
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-17-infinispan-530beta2-is-out.adoc:38
+#, fuzzy
 msgid "Mircea"
-msgstr ""
+msgstr "ミルチェア"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:8
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Secure server by default\n"
@@ -34,38 +34,67 @@ msgid ""
 "tags: [ \"server\", \"security\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: デフォルトでセキュアなサーバ\n"
+"permalink: /blog/:year/:month/:day/server-secure-by-default\n"
+"date: '2020-06-04T12:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"server\", \"security\" ]\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Secure Infinispan server by default"
-msgstr ""
+msgstr "デフォルトでセキュアなInfinispanサーバ"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:13
-msgid "The Infinispan server we introduced in 10.0 exposes a single port through which both Hot Rod and HTTP clients can connect."
-msgstr ""
+#, fuzzy
+msgid ""
+"The Infinispan server we introduced in 10.0 exposes a single port through "
+"which both Hot Rod and HTTP clients can connect."
+msgstr "10.0で導入したInfinispanサーバーは、Hot RodとHTTPクライアントの両方が接続できる単一のポートを公開しています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:15
-msgid "While Infinispan has had *very* extensive security support since 7.0, the out-of-the-box default configuration did not enable authentication."
+#, fuzzy
+msgid ""
+"While Infinispan has had *very* extensive security support since 7.0, the "
+"out-of-the-box default configuration did not enable authentication."
 msgstr ""
+"Infinispanは7.0から *非常に* 広範なセキュリティサポートを提供してきましたが、デフォルトの設定では認証が有効になりませんでした。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:18
-msgid "Infinispan 11.0's server's default configuration, instead, requires authentication.  We have made several improvements to how authentication is configured and the tooling we provide to make the experience as smooth as possible."
+#, fuzzy
+msgid ""
+"Infinispan 11.0's server's default configuration, instead, requires "
+"authentication.  We have made several improvements to how authentication is "
+"configured and the tooling we provide to make the experience as smooth as "
+"possible."
 msgstr ""
+"Infinispan 11."
+"0のサーバーのデフォルト設定では、代わりに認証が必要です。認証の設定方法と提供するツールについて、可能な限りスムーズに体験できるようにいくつかの改善を行いました。"
 
 #. type: Title ==
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:19
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Automatic authentication mechanism selection"
-msgstr ""
+msgstr "認証機構の自動選択"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:22
-msgid "Previously, when enabling authentication, you had to explicitly define which mechanisms had to be enabled per-protocol, with all of the peculiarities specific to each one (i.e. SASL for Hot Rod, HTTP for REST). Here is an example configuration with Infinispan 10.1 that enables DIGEST authentication:"
+#, fuzzy
+msgid ""
+"Previously, when enabling authentication, you had to explicitly define which "
+"mechanisms had to be enabled per-protocol, with all of the peculiarities "
+"specific to each one (i.e. SASL for Hot Rod, HTTP for REST). Here is an "
+"example configuration with Infinispan 10.1 that enables DIGEST "
+"authentication:"
 msgstr ""
+"以前は、認証を有効にする際には、プロトコルごとにどのメカニズムを有効にするかを明示的に定義する必要があり、それぞれに固有の特性がありました (Hot "
+"Rod では SASL、REST では HTTP など)。以下に、DIGEST 認証を有効にする Infinispan 10.1 での設定例を示します。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:35
@@ -85,8 +114,11 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:38
-msgid "In Infinispan 11.0, the mechanisms are automatically selected based on the capabilities of the security realm. Using the following configuration:"
-msgstr ""
+#, fuzzy
+msgid ""
+"In Infinispan 11.0, the mechanisms are automatically selected based on the "
+"capabilities of the security realm. Using the following configuration:"
+msgstr "Infinispan 11.0 では、セキュリティ領域の機能に基づいてメカニズムが自動的に選択されます。以下の構成を使用します。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:45
@@ -100,166 +132,188 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:48
-msgid "together with a properties security realm, will enable DIGEST for HTTP and SCRAM-+*+, DIGEST-+*+ and CRAM-MD5 for Hot Rod. BASIC/PLAIN will only be implicitly enabled when the security realm has a TLS/SSL identity."
+#, fuzzy
+msgid ""
+"together with a properties security realm, will enable DIGEST for HTTP and "
+"SCRAM-+*+, DIGEST-+*+ and CRAM-MD5 for Hot Rod. BASIC/PLAIN will only be "
+"implicitly enabled when the security realm has a TLS/SSL identity."
 msgstr ""
+"プロパティセキュリティレルムと一緒に使用すると、HTTPではDIGEST、ホットロッドではSCRAM-*、DIGEST-*、CRAM-"
+"MD5が有効になります。BASIC/PLAIN が暗黙的に有効になるのは、セキュリティ領域が TLS/SSL ID を持っている場合のみです。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:50
-msgid "The following tables summarize the mapping between realm type and implicitly enabled mechanisms."
-msgstr ""
+#, fuzzy
+msgid ""
+"The following tables summarize the mapping between realm type and implicitly "
+"enabled mechanisms."
+msgstr "以下の表は、レルムタイプと暗黙的に有効化されたメカニズム間のマッピングをまとめたものです。"
 
 #. type: Block title
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:51
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "SASL Authentication Mechanisms (Hot Rod)"
-msgstr ""
+msgstr "SASL認証の仕組み（ホットロッド"
 
 #. type: Table
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:54
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:76
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Security Realm"
-msgstr ""
+msgstr "セキュリティ領域"
 
 #. type: Table
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:56
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "SASL Authentication Mechanism"
-msgstr ""
+msgstr "SASL認証の仕組み"
 
 #. type: Table
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:57
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:79
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Property Realms and LDAP Realms"
-msgstr ""
+msgstr "プロパティ領域とLDAP領域"
 
 #. type: Table
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:59
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "SCRAM-+*+, DIGEST-+*+, CRAM-MD5"
-msgstr ""
+msgstr "SCRAM-*, DIGEST-*, CRAM-MD5"
 
 #. type: Table
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:60
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:82
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Token Realms"
-msgstr ""
+msgstr "トークン界"
 
 #. type: Table
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:62
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "OAUTHBEARER"
-msgstr ""
+msgstr "OAUTHBEARER"
 
 #. type: Table
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:63
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:85
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Trust Realms"
-msgstr ""
+msgstr "信頼領域"
 
 #. type: Table
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:65
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "EXTERNAL"
-msgstr ""
+msgstr "外部"
 
 #. type: Table
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:66
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:88
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Kerberos Identities"
-msgstr ""
+msgstr "Kerberosのアイデンティティ"
 
 #. type: Table
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:68
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GSSAPI, GS2-KRB5"
-msgstr ""
+msgstr "GSSAPI、GS2-KRB5"
 
 #. type: Table
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:69
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:91
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "SSL/TLS Identities"
-msgstr ""
+msgstr "SSL/TLSアイデンティティ"
 
 #. type: Table
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:70
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PLAIN"
-msgstr ""
+msgstr "平易"
 
 #. type: Block title
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:73
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "HTTP Authentication Mechanisms (REST)"
-msgstr ""
+msgstr "HTTP認証機構（REST"
 
 #. type: Table
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:78
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "HTTP Authentication Mechanism"
-msgstr ""
+msgstr "ＨＴＴＰ認証機構"
 
 #. type: Table
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:81
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "DIGEST"
-msgstr ""
+msgstr "ダイジェスト"
 
 #. type: Table
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:84
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "BEARER_TOKEN"
-msgstr ""
+msgstr "ベアラートークン"
 
 #. type: Table
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:87
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CLIENT_CERT"
-msgstr ""
+msgstr "CLIENT_CERT"
 
 #. type: Table
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:90
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "SPNEGO"
-msgstr ""
+msgstr "スプネゴ"
 
 #. type: Table
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:92
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "BASIC"
-msgstr ""
+msgstr "ベーシック"
 
 #. type: Title ==
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:94
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Automatic encryption"
-msgstr ""
+msgstr "自動暗号化"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:97
-msgid "If the security realm has a TLS/SSL identity, the endpoint will automatically enable TLS for all protocols."
-msgstr ""
+#, fuzzy
+msgid ""
+"If the security realm has a TLS/SSL identity, the endpoint will "
+"automatically enable TLS for all protocols."
+msgstr "セキュリティ領域にTLS/SSLのアイデンティティがある場合、エンドポイントは自動的にすべてのプロトコルでTLSを有効にします。"
 
 #. type: Title ==
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:98
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Encrypted properties security realm"
-msgstr ""
+msgstr "暗号化されたプロパティのセキュリティ領域"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:101
-msgid "The properties realm that is part of the default configuration has been greatly improved in Infinispan 11. The passwords are now stored in multiple encrypted formats in order to support the various DIGEST, SCRAM and PLAIN/BASIC mechanisms."
+#, fuzzy
+msgid ""
+"The properties realm that is part of the default configuration has been "
+"greatly improved in Infinispan 11. The passwords are now stored in multiple "
+"encrypted formats in order to support the various DIGEST, SCRAM and PLAIN/"
+"BASIC mechanisms."
 msgstr ""
+"デフォルト設定の一部であるプロパティ領域は、Infinispan 11で大幅に改善されました。パスワードは、さまざまな DIGEST、SCRAM、および "
+"PLAIN/BASIC メカニズムをサポートするために、複数の暗号化された形式で保存されるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:103
-msgid "The `user` functionality that is now built into the CLI allows easy creation and manipulation of users, passwords and groups:"
-msgstr ""
+#, fuzzy
+msgid ""
+"The `user` functionality that is now built into the CLI allows easy creation "
+"and manipulation of users, passwords and groups:"
+msgstr "CLIに組み込まれた `user` 機能により、ユーザー、パスワード、グループの作成や操作が簡単に行えるようになりました。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:116
@@ -279,14 +333,20 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:118
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Authorization: simplified"
-msgstr ""
+msgstr "認可：簡略化"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:121
-msgid "Authorization is another security aspect of Infinispan. In previous versions, setting up authorization was complicated by the need to add all the needed roles to each cache:"
+#, fuzzy
+msgid ""
+"Authorization is another security aspect of Infinispan. In previous "
+"versions, setting up authorization was complicated by the need to add all "
+"the needed roles to each cache:"
 msgstr ""
+"認証は Infinispan "
+"のもう一つのセキュリティの側面です。以前のバージョンでは、各キャッシュに必要なすべてのロールを追加する必要があるため、認証の設定が複雑でした。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:143
@@ -300,12 +360,14 @@ msgid ""
 "            <role name=\"AdminRole\" permissions=\"ALL\"/>\n"
 "            <role name=\"ReaderRole\" permissions=\"READ\"/>\n"
 "            <role name=\"WriterRole\" permissions=\"WRITE\"/>\n"
-"            <role name=\"SupervisorRole\" permissions=\"READ WRITE EXEC BULK_READ\"/>\n"
+"            <role name=\"SupervisorRole\" permissions=\"READ WRITE EXEC "
+"BULK_READ\"/>\n"
 "         </authorization>\n"
 "      </security>\n"
 "      <distributed-cache name=\"secured\">\n"
 "         <security>\n"
-"            <authorization roles=\"AdminRole ReaderRole WriterRole SupervisorRole\"/>\n"
+"            <authorization roles=\"AdminRole ReaderRole WriterRole "
+"SupervisorRole\"/>\n"
 "         </security>\n"
 "      </distributed-cache>\n"
 "   </cache-container>\n"
@@ -315,8 +377,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:146
-msgid "With Infinispan 11 you can avoid specifying all the roles at the cache level: just enable authorization and all roles will implicitly apply. As you can see, the cache definition is much more concise:"
+#, fuzzy
+msgid ""
+"With Infinispan 11 you can avoid specifying all the roles at the cache level:"
+" just enable authorization and all roles will implicitly apply. As you can "
+"see, the cache definition is much more concise:"
 msgstr ""
+"Infinispan 11 では、キャッシュレベルですべてのロールを指定する必要がありません。ご覧のように、キャッシュの定義はより簡潔になりました。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:160
@@ -337,11 +404,19 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:162
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Conclusions"
-msgstr ""
+msgstr "結論"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-04-server-secure-by-default.adoc:165
-msgid "We hope that the changes we've made to improve security will make your servers more secure and easier to configure.  For more information read the https://infinispan.org/docs/dev/titles/server/server.html#security[server security documentation]."
+#, fuzzy
+msgid ""
+"We hope that the changes we've made to improve security will make your "
+"servers more secure and easier to configure.  For more information read the "
+"https://infinispan.org/docs/dev/titles/server/server.html#security[server "
+"security documentation]."
 msgstr ""
+"セキュリティを向上させるために行った変更により、お客様のサーバーがより安全に、より簡単に設定できるようになることを願っています。詳細については、 "
+"link:https://infinispan.org/docs/dev/titles/server/server."
+"html#security[サーバーのセキュリティに関するドキュメント] をお読みください。"

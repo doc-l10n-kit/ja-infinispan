@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-04-13-boston-are-you-ready-for-infinispan.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-04-13-boston-are-you-ready-for-infinispan.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Boston, are you ready for Infinispan?\n"
@@ -35,27 +35,73 @@ msgid ""
 "\"judcon\",\n"
 "\"jbossworld\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5821078966095703721\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/04/boston-are-you-ready-for-infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5821078966095703721\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/04/boston-are-you-ready-"
+"for-infinispan.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: ボストン インフィニスパンの準備は？\n"
+"permalink: /blog/:year/:month/:day/boston-are-you-ready-for-infinispan\n"
+"date: '2010-04-13T02:06:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \"conference\",\n"
+"\"judcon\",\n"
+"\"jbossworld\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5821078966095703721\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/04/boston-are-you-ready-"
+"for-infinispan.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-04-13-boston-are-you-ready-for-infinispan.adoc:21
-msgid "http://www.redhat.com/promo/summit/2010/img/logo-banner-small_new3.png[image:http://www.redhat.com/promo/summit/2010/img/logo-banner-small_new3.png[image]]The http://www.redhat.com/promo/summit/2010/[JBoss World/Red Hat Summit] organisers have asked me to put together http://summitblog.redhat.com/2010/04/12/boston-are-you-ready-for-infinispan/[a short note] on what to expect at the conference with regards to Infinispan, and this has been published on the conference website.  I thought I'd share this with you as well."
+#, fuzzy
+msgid ""
+"http://www.redhat.com/promo/summit/2010/img/logo-banner-small_new3.png[image:"
+"http://www.redhat.com/promo/summit/2010/img/logo-banner-small_new3."
+"png[image]]The http://www.redhat.com/promo/summit/2010/[JBoss World/Red Hat "
+"Summit] organisers have asked me to put together http://summitblog.redhat."
+"com/2010/04/12/boston-are-you-ready-for-infinispan/[a short note] on what to "
+"expect at the conference with regards to Infinispan, and this has been "
+"published on the conference website.  I thought I'd share this with you as "
+"well."
 msgstr ""
+"link:http://www.redhat.com/promo/summit/2010/img/logo-banner-small_new3."
+"png[] link:http://www.redhat.com/promo/summit/2010/[JBoss World/Red Hat "
+"Summit] の主催者から、Infinispan についてカンファレンスで期待されることについての link:http://summitblog."
+"redhat.com/2010/04/12/boston-are-you-ready-for-infinispan/[短いメモを] "
+"まとめるように頼まれ、カンファレンスのウェブサイトに掲載されました。 これをあなたにも共有しようと思いました。"
 
 #. type: Plain text
 #: upstream/_posts/2010-04-13-boston-are-you-ready-for-infinispan.adoc:23
-msgid "http://summitblog.redhat.com/2010/04/12/boston-are-you-ready-for-infinispan/"
+#, fuzzy
+msgid ""
+"http://summitblog.redhat.com/2010/04/12/boston-are-you-ready-for-infinispan/"
 msgstr ""
+"http://summitblog.redhat.com/2010/04/12/boston-are-you-ready-for-infinispan/"
 
 #. type: Plain text
 #: upstream/_posts/2010-04-13-boston-are-you-ready-for-infinispan.adoc:30
-msgid "http://www.jboss.org/events/JUDCon/headerParagraphs/0/image/JUDCon_header.jpg[image:http://www.jboss.org/events/JUDCon/headerParagraphs/0/image/JUDCon_header.jpg[image,width=320,height=60]]In addition to the conference, this is also the first time JBoss is running http://www.jboss.org/events/JUDCon.html[JUDCon] (JBoss Users and Developers Conference), a free event (limited on a first-come first-served basis) for the community, also in Boston.  Be sure to sign up as places are limited!"
+#, fuzzy
+msgid ""
+"http://www.jboss.org/events/JUDCon/headerParagraphs/0/image/JUDCon_header."
+"jpg[image:http://www.jboss.org/events/JUDCon/headerParagraphs/0/image/"
+"JUDCon_header.jpg[image,width=320,height=60]]In addition to the conference, "
+"this is also the first time JBoss is running http://www.jboss.org/events/"
+"JUDCon.html[JUDCon] (JBoss Users and Developers Conference), a free event "
+"(limited on a first-come first-served basis) for the community, also in "
+"Boston.  Be sure to sign up as places are limited!"
 msgstr ""
+"link:http://www.jboss.org/events/JUDCon/headerParagraphs/0/image/"
+"JUDCon_header.jpg[] カンファレンスに加えて、JBossがコミュニティ向けの無料イベント「 link:http://www.jboss."
+"org/events/JUDCon.html[JUDCon] (JBoss Users and Developers "
+"Conference)」をボストンで開催するのは今回が初めてです。 場所に限りがありますので、ぜひお申し込みください。"
 
 #. type: Plain text
 #: upstream/_posts/2010-04-13-boston-are-you-ready-for-infinispan.adoc:32
+#, fuzzy
 msgid "Look forward to seeing you there! Manik"
-msgstr ""
+msgstr "お会いできるのを楽しみにしています。マニク"

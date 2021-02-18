@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:17
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan on Openshift v3\n"
@@ -39,118 +39,234 @@ msgid ""
 "\"jgroups\",\n"
 "\"vagrant\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6642105538994535091\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/03/infinispan-on-openshift-v3.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6642105538994535091\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/03/infinispan-on-"
+"openshift-v3.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan on Openshift v3\n"
+"permalink: /blog/:year/:month/:day/infinispan-on-openshift-v3\n"
+"date: '2015-03-13T09:50:00.000-07:00'\n"
+"author: gustavonalle\n"
+"tags: [ \"docker\",\n"
+"\"openshift\",\n"
+"\"kubernetes\",\n"
+"\"paas\",\n"
+"\"server\",\n"
+"\"jgroups\",\n"
+"\"vagrant\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6642105538994535091\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/03/infinispan-on-"
+"openshift-v3.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:23
-msgid "Openshift v3 is the open source next generation of Paas, where applications run on https://www.docker.com/[Docker] containers and are orchestrated/controlled/scheduled by http://kubernetes.io/[Kubernetes]."
+#, fuzzy
+msgid ""
+"Openshift v3 is the open source next generation of Paas, where applications "
+"run on https://www.docker.com/[Docker] containers and are orchestrated/"
+"controlled/scheduled by http://kubernetes.io/[Kubernetes]."
 msgstr ""
+"Openshift v3はオープンソースの次世代Paasで、アプリケーションは link:https://www.docker.com/[Docker] "
+"コンテナ上で実行され、 link:http://kubernetes.io/[Kubernetes] によってオーケストレーション/制御/"
+"スケジューリングされます。"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:26
-msgid "In this post I'll show how to create an Infinispan cluster on Openshift v3 and resize it with a snap of a finger."
-msgstr ""
+#, fuzzy
+msgid ""
+"In this post I'll show how to create an Infinispan cluster on Openshift v3 "
+"and resize it with a snap of a finger."
+msgstr "この記事では、Openshift v3上にInfinispanクラスタを作成し、指一本でリサイズする方法を紹介します。"
 
 #. type: Title ====
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:28
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Installing Openshift v3"
-msgstr ""
+msgstr "Openshift v3のインストール"
 
 #. type: Title ====
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:30
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:57
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " "
-msgstr ""
+msgstr " "
 
 #. type: Plain text
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:39
-msgid "Openshift v3 has not been released yet, so I'm going to use the code from https://github.com/openshift/origin[origin].  There are http://docs.openshift.org/latest/getting_started/installation.html[many ways] to install Openshift v3, but for simplicity, I'll run a full multinode cluster locally on top of VirtualBoxes using the provided https://www.vagrantup.com/[Vagrant] scripts."
+#, fuzzy
+msgid ""
+"Openshift v3 has not been released yet, so I'm going to use the code from "
+"https://github.com/openshift/origin[origin].  There are http://docs."
+"openshift.org/latest/getting_started/installation.html[many ways] to install "
+"Openshift v3, but for simplicity, I'll run a full multinode cluster locally "
+"on top of VirtualBoxes using the provided https://www.vagrantup.com/"
+"[Vagrant] scripts."
 msgstr ""
+"Openshift v3はまだリリースされていないので、 link:https://github.com/openshift/origin[オリジン] "
+"のコードを使ってみます。Openshift v3をインストールする link:http://docs.openshift.org/latest/"
+"getting_started/installation.html[方法] はいろいろありますが、簡単にするために、提供されている link:https:"
+"//www.vagrantup.com/[Vagrant] "
+"スクリプトを使ってローカルでVirtualBoxの上にフルマルチノードクラスタを実行してみます。"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:41
+#, fuzzy
 msgid "Let's start by checking out and building the sources:"
-msgstr ""
+msgstr "まずはソースを調べて構築することから始めましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:49
-msgid "To boot Openshift, it's a simple matter of starting up the desired number of nodes:"
-msgstr ""
+#, fuzzy
+msgid ""
+"To boot Openshift, it's a simple matter of starting up the desired number of "
+"nodes:"
+msgstr "Openshiftを起動するには、必要な数のノードを起動するだけです。"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:53
-msgid "Grab a beer while the cluster is being provisioned, after a while you should be able to see 3 instances running:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Grab a beer while the cluster is being provisioned, after a while you should "
+"be able to see 3 instances running:"
+msgstr "クラスタがプロビジョニングされている間にビールを飲みながら、しばらくすると3つのインスタンスが動いているのが見えるはずです。"
 
 #. type: Title ====
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:59
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Creating the Infinispan template"
-msgstr ""
+msgstr "Infinispanテンプレートの作成"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:66
-msgid "The following template defines a 2 node Infinispan cluster communicating via TCP, and discovery done using the http://www.jgroups.org/javadoc/org/jgroups/stack/GossipRouter.html[JGroups gossip router]:"
+#, fuzzy
+msgid ""
+"The following template defines a 2 node Infinispan cluster communicating via "
+"TCP, and discovery done using the http://www.jgroups.org/javadoc/org/jgroups/"
+"stack/GossipRouter.html[JGroups gossip router]:"
 msgstr ""
+"以下のテンプレートでは、2ノードのInfinispanクラスタがTCPで通信し、 link:http://www.jgroups.org/javadoc/"
+"org/jgroups/stack/GossipRouter.html[JGroups gossipルータを] "
+"使用してディスカバリを行うことを定義しています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:70
+#, fuzzy
 msgid "There are few different components declared in this template:"
-msgstr ""
+msgstr "このテンプレートでは、いくつかの異なるコンポーネントが宣言されています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:76
-msgid "A service with id _jgroups-gossip-service_ that will expose a JGroups gossip router service on port 11000, around the https://registry.hub.docker.com/u/gustavonalle/jgroups-gossip/[JGroups Gossip container]"
+#, fuzzy
+msgid ""
+"A service with id _jgroups-gossip-service_ that will expose a JGroups gossip "
+"router service on port 11000, around the https://registry.hub.docker.com/u/"
+"gustavonalle/jgroups-gossip/[JGroups Gossip container]"
 msgstr ""
+"JGroup link:https://registry.hub.docker.com/u/gustavonalle/jgroups-gossip/[s "
+"Gossip コンテナの] 周りのポート 11000 で JGroups gossip ルーターサービスを公開する id _jgroups-gossip-"
+"service_ のサービス。"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:82
-msgid "A ReplicationController with id _jgroups-gossip-controller_.  Replication Controllers are used to ensure that, at any moment, there will be a certain number of replicas of a pod (a group of related docker containers) running. If for some reason a node crashes, the ReplicationController will instantiate a new pod elsewhere, keeping the service endpoint address unchanged."
+#, fuzzy
+msgid ""
+"A ReplicationController with id _jgroups-gossip-controller_.  Replication "
+"Controllers are used to ensure that, at any moment, there will be a certain "
+"number of replicas of a pod (a group of related docker containers) running. "
+"If for some reason a node crashes, the ReplicationController will "
+"instantiate a new pod elsewhere, keeping the service endpoint address "
+"unchanged."
 msgstr ""
+"id _jgroups-gossip-controller_ を持つ "
+"ReplicationController。レプリケーションコントローラは、いつでもポッド (関連するドッカーコンテナのグループ) "
+"のレプリカが一定数実行されていることを保証するために使用されます。何らかの理由でノードがクラッシュした場合、 ReplicationController "
+"はサービスのエンドポイントアドレスを変更せずに、別の場所に新しいポッドをインスタンス化します。"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:92
-msgid "Another ReplicationController with id _infinispan-controller_. This controller will start 2 replicas of the _infinispan-pod_. As it happens with the _jgroups-pod_, the _infinispan-pod_ has only one container defined: the infinispan-server container (based on https://registry.hub.docker.com/u/jboss/infinispan-server/[jboss/infinispan-server])  , that is started with the 'clustered.xml' profile and configured with the 'jgroups-gossip-service' address. By defining the gossip router as a service, Openshift guarantees that environment variables such as[.pl-s1]# JGROUPS_GOSSIP_SERVICE_SERVICE_HOST are# available to other pods (consumers)."
+#, fuzzy
+msgid ""
+"Another ReplicationController with id _infinispan-controller_. This "
+"controller will start 2 replicas of the _infinispan-pod_. As it happens with "
+"the _jgroups-pod_, the _infinispan-pod_ has only one container defined: the "
+"infinispan-server container (based on https://registry.hub.docker.com/u/"
+"jboss/infinispan-server/[jboss/infinispan-server])  , that is started with "
+"the 'clustered.xml' profile and configured with the 'jgroups-gossip-service' "
+"address. By defining the gossip router as a service, Openshift guarantees "
+"that environment variables such as[.pl-s1]# "
+"JGROUPS_GOSSIP_SERVICE_SERVICE_HOST are# available to other pods (consumers)."
+""
 msgstr ""
+"もう一つの ReplicationController で、id が _infinispan-controller_ です。このコントローラは、 "
+"_infinispan-pod_ のレプリカを 2 つ起動します。 _jgroups-pod_ と同様に、infinispan- _pod_ には 1 "
+"つのコンテナしか定義されていません。infinispan-server コンテナ ( link:https://registry.hub.docker."
+"com/u/jboss/infinispan-server/[jboss/infinispan] -server をベースにしたもの) "
+"で、'clustered.xml' プロファイルで起動し、'jgroups-gossip-service' "
+"アドレスで設定します。ゴシップルータをサービスとして定義することで、Openshift は[.pl-s1]# "
+"JGROUPS_GOSSIP_SERVICE_SERVICE_HOST のような環境変数が他のポッド (コンシューマ) "
+"から利用可能であることを保証します。"
 
 #. type: Title ====
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:96
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Applying the template"
-msgstr ""
+msgstr "テンプレートの適用"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:101
+#, fuzzy
 msgid "To apply the template via cmd line:"
-msgstr ""
+msgstr "cmdラインでテンプレートを適用するには"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:107
-msgid "Grab another beer, it can take a while since in this case the docker images need to be fetched on each of the minions from the public registry. In the meantime, to inspect the pods, along with their containers and statuses:"
+#, fuzzy
+msgid ""
+"Grab another beer, it can take a while since in this case the docker images "
+"need to be fetched on each of the minions from the public registry. In the "
+"meantime, to inspect the pods, along with their containers and statuses:"
 msgstr ""
+"この場合、公開レジストリから各ミニオンのドッカーイメージを取得する必要があるので、しばらく時間がかかるかもしれません。それまでの間に、ポッドのコンテナとステータスを検査します。"
 
 #. type: Title ====
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:111
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Resizing the cluster"
-msgstr ""
+msgstr "クラスタのサイズ変更"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:118
-msgid "Changing the number of pods (and thus the number of nodes in the Infinispan cluster) is a simple matter of manipulating the number of replicas in the Replication Controller. To increase the number of nodes to 4:"
+#, fuzzy
+msgid ""
+"Changing the number of pods (and thus the number of nodes in the Infinispan "
+"cluster) is a simple matter of manipulating the number of replicas in the "
+"Replication Controller. To increase the number of nodes to 4:"
 msgstr ""
+"ポッドの数(つまりInfinispanクラスタのノード数)を変更するには、レプリケーションコントローラでレプリカの数を操作するだけです。ノード数を4に増やすには"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:123
-msgid "This should take only a few seconds, since the docker images are already present in all the minions."
-msgstr ""
+#, fuzzy
+msgid ""
+"This should take only a few seconds, since the docker images are already "
+"present in all the minions."
+msgstr "これは、すでにすべてのミニオンにドッカーイメージが存在しているので、数秒で済むはずです。"
 
 #. type: Plain text
 #: upstream/_posts/2015-03-13-infinispan-on-openshift-v3.adoc:132
-msgid "And this concludes the post, be sure to check other cool features of Openshift in the http://docs.openshift.org/latest/welcome/index.html#[project documentation] and try out other https://github.com/openshift/origin/tree/master/examples[samples]."
+#, fuzzy
+msgid ""
+"And this concludes the post, be sure to check other cool features of "
+"Openshift in the http://docs.openshift.org/latest/welcome/index."
+"html#[project documentation] and try out other https://github.com/openshift/"
+"origin/tree/master/examples[samples]."
 msgstr ""
+"link:http://docs.openshift.org/latest/welcome/index.html#[プロジェクトのドキュメント] "
+"でOpenshiftの他のクールな機能をチェックして、他の link:https://github.com/openshift/origin/tree/"
+"master/examples[サンプルを] 試してみてください。"

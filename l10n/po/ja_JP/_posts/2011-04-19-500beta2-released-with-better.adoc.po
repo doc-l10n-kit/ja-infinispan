@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-04-19-500beta2-released-with-better.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-19-500beta2-released-with-better.adoc:15
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: 5.0.0.BETA2 released with better distribution!\n"
@@ -37,47 +37,127 @@ msgid ""
 "\"externalizers\",\n"
 "\"distribution\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2582039100844172429\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/04/500beta2-released-with-better.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2582039100844172429\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/04/500beta2-released-with-"
+"better.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 5.0.0.0.BETA2をリリースしました。\n"
+"permalink: /blog/:year/:month/:day/500beta2-released-with-better\n"
+"date: '2011-04-19T02:43:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"beta\",\n"
+"\"marshalling\",\n"
+"\"virtual nodes\",\n"
+"\"externalizers\",\n"
+"\"distribution\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2582039100844172429\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/04/500beta2-released-with-"
+"better.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-19-500beta2-released-with-better.adoc:18
-msgid "A brand new Infinispan 5.0 \"Pagoa\" beta is out now, 5.0.0.BETA2 bringing even more goodies for Infinispan users:"
+#, fuzzy
+msgid ""
+"A brand new Infinispan 5.0 \"Pagoa\" beta is out now, 5.0.0.BETA2 bringing "
+"even more goodies for Infinispan users:"
 msgstr ""
+"新しいInfinispan 5.0 \"Pagoa\"ベータ版がリリースされました。5.0.0.0."
+"BETA2では、Infinispanユーザーの皆様にさらに良いものをお届けします。"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-19-500beta2-released-with-better.adoc:28
-msgid "Initial implementation of virtual nodes for consistent hash algorithm based distribution is included. This means that each Infinispan node can now pick multiple nodes in the hash wheel reducing the standard deviation and so improving the distribution of data. The configuration is done via the http://docs.jboss.org/infinispan/5.0/apidocs/org/infinispan/config/FluentConfiguration.HashConfig.html#numVirtualNodes(java.lang.Integer)[numVirtualNodes] attribute in _http://docs.jboss.org/infinispan/5.0/apidocs/config.html#ce_clustering_hash[hash]_ element."
+#, fuzzy
+msgid ""
+"Initial implementation of virtual nodes for consistent hash algorithm based "
+"distribution is included. This means that each Infinispan node can now pick "
+"multiple nodes in the hash wheel reducing the standard deviation and so "
+"improving the distribution of data. The configuration is done via the http://"
+"docs.jboss.org/infinispan/5.0/apidocs/org/infinispan/config/"
+"FluentConfiguration.HashConfig.html#numVirtualNodes(java.lang."
+"Integer)[numVirtualNodes] attribute in _http://docs.jboss.org/infinispan/5.0/"
+"apidocs/config.html#ce_clustering_hash[hash]_ element."
 msgstr ""
+"一貫性のあるハッシュアルゴリズムに基づく分布のための仮想ノードの初期実装が含まれています。これは、各Infinispanノードがハッシュホイールで複数のノードを選択できるようになったことを意味し、標準偏差を減らし、データの分布を改善することができることを意味します。設定は "
+"_ハッシュ_ 要素の link:http://docs.jboss.org/infinispan/5.0/apidocs/org/infinispan/"
+"config/FluentConfiguration.HashConfig.html#numVirtualNodes(java.lang."
+"Integer)[numVirtualNodes] 属性で行います。"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-19-500beta2-released-with-better.adoc:37
-msgid "The externalizer configuration has been revamped in order to make it more user-friendly! You only need the http://docs.jboss.org/infinispan/5.0/apidocs/org/infinispan/marshall/SerializeWith.html[@SerializeWith] annotation and an http://docs.jboss.org/infinispan/5.0/apidocs/org/infinispan/marshall/Externalizer.html[Externalizer] implementation in its most basic form, but more advanced externalizer configuration is still available for particular use cases. The wiki on plugging externalizers has been rewritten to show http://community.jboss.org/docs/DOC-16198[these changes]."
+#, fuzzy
+msgid ""
+"The externalizer configuration has been revamped in order to make it more "
+"user-friendly! You only need the http://docs.jboss.org/infinispan/5.0/"
+"apidocs/org/infinispan/marshall/SerializeWith.html[@SerializeWith] "
+"annotation and an http://docs.jboss.org/infinispan/5.0/apidocs/org/"
+"infinispan/marshall/Externalizer.html[Externalizer] implementation in its "
+"most basic form, but more advanced externalizer configuration is still "
+"available for particular use cases. The wiki on plugging externalizers has "
+"been rewritten to show http://community.jboss.org/docs/DOC-16198[these "
+"changes]."
 msgstr ""
+"Externalizerの設定をより使いやすくするために改訂されました!必要なのは link:http://docs.jboss.org/"
+"infinispan/5.0/apidocs/org/infinispan/marshall/SerializeWith."
+"html[@SerializeWith] アノテーションと最も基本的な形での link:http://docs.jboss.org/infinispan/"
+"5.0/apidocs/org/infinispan/marshall/Externalizer.html[Externalizer の] "
+"実装だけですが、より高度な Externalizer の設定は特定のユースケースで利用可能です。Externalizerのプラグインに関するwikiは、 "
+"link:http://community.jboss.org/docs/DOC-16198[これらの変更点] を示すために書き直されました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-19-500beta2-released-with-better.adoc:42
-msgid "_lazyDeserialization_ XML element has been renamed to _*http://docs.jboss.org/infinispan/5.0/apidocs/config.html#ce_default_storeAsBinary[storeAsBinary]*_ in order to better represent its function. The previous programmatic configuration for this option has been deprecated to help ease migration but your XML will need changing."
+#, fuzzy
+msgid ""
+"_lazyDeserialization_ XML element has been renamed to _*http://docs.jboss."
+"org/infinispan/5.0/apidocs/config."
+"html#ce_default_storeAsBinary[storeAsBinary]*_ in order to better represent "
+"its function. The previous programmatic configuration for this option has "
+"been deprecated to help ease migration but your XML will need changing."
 msgstr ""
+"_lazyDeserialization_ XML要素は、その機能をより良く表現するために _*http://docs.jboss.org/"
+"infinispan/5.0/apidocs/config.html#ce_default_storeAsBinary[storeAsBinary]*_ "
+"に名前が変更されました。このオプションのための以前のプログラム的な設定は、移行を容易にするために廃止されましたが、XMLの変更が必要になるでしょう。"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-19-500beta2-released-with-better.adoc:45
-msgid "All references to JOPR, including the maven module name have been renamed to RHQ. So bear make sure you plug your RHQ server with _*infinispan-rhq-plugin.jar*_ instead of _infinispan-jopr-plugin.jar_"
+#, fuzzy
+msgid ""
+"All references to JOPR, including the maven module name have been renamed to "
+"RHQ. So bear make sure you plug your RHQ server with _*infinispan-rhq-plugin."
+"jar*_ instead of _infinispan-jopr-plugin.jar_"
 msgstr ""
+"mavenモジュール名を含むJOPRへのすべての参照はRHQに変更されています。そのため、RHQ サーバーには infinispan _-jopr-_ "
+"plugin.jar の代わりに _*infinispan-rhq-plugin.jar* を_ 使用するようにしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-19-500beta2-released-with-better.adoc:53
-msgid "There's some other minor API changes and fixes as show in the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12316193[release notes]. As always, please use the http://community.jboss.org/en/infinispan?view=discussions[user forums] to report back, grab the release http://www.jboss.org/infinispan/downloads[here], enjoy and keep the feedback coming."
+#, fuzzy
+msgid ""
+"There's some other minor API changes and fixes as show in the https://issues."
+"jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
+"12316193[release notes]. As always, please use the http://community.jboss."
+"org/en/infinispan?view=discussions[user forums] to report back, grab the "
+"release http://www.jboss.org/infinispan/downloads[here], enjoy and keep the "
+"feedback coming."
 msgstr ""
+"他にもいくつかのマイナーなAPIの変更や修正が link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12316193[リリースノート] に記載されています。いつものように、 link:"
+"http://community.jboss.org/en/infinispan?view=discussions[ユーザーフォーラム] "
+"を利用して報告したり、リリースを掴んだり、楽しんだり、フィードバックを続けたりしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-19-500beta2-released-with-better.adoc:57
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-19-500beta2-released-with-better.adoc:58
+#, fuzzy
 msgid "Galder"
-msgstr ""
+msgstr "ガルダー"

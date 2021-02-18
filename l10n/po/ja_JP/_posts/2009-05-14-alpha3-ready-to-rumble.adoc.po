@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-05-14-alpha3-ready-to-rumble.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-14-alpha3-ready-to-rumble.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Alpha3 ready to rumble!\n"
@@ -32,32 +32,78 @@ msgid ""
 "date: '2009-05-14T17:57:00.001-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"release\", \"asynchronous\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3917630399504427566\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/05/alpha3-ready-to-rumble.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3917630399504427566\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/05/alpha3-ready-to-rumble."
+"html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: アルファ3はガタガタになる準備ができています\n"
+"permalink: /blog/:year/:month/:day/alpha3-ready-to-rumble\n"
+"date: '2009-05-14T17:57:00.001-07:00'\n"
+"author: msurtani\n"
+"tags: [ \"release\", \"asynchronous\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3917630399504427566\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/05/alpha3-ready-to-rumble."
+"html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-14-alpha3-ready-to-rumble.adoc:15
-msgid "So I've just tagged and cut Infinispan 4.0.0.ALPHA3. (Why are we starting with release 4.0.0? http://www.jboss.org/community/wiki/InfinispanProjectFAQs[Read our FAQs]!)"
+#, fuzzy
+msgid ""
+"So I've just tagged and cut Infinispan 4.0.0.ALPHA3. (Why are we starting "
+"with release 4.0.0? http://www.jboss.org/community/wiki/"
+"InfinispanProjectFAQs[Read our FAQs]!)"
 msgstr ""
+"ということで、Infinispan 4.0.0.ALPHA3をタグ付けしてカットしてみました。(なぜリリース4.0.0から始めるのか？ よく link:"
+"http://www.jboss.org/community/wiki/InfinispanProjectFAQs[ある質問を読んでください] ！)"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-14-alpha3-ready-to-rumble.adoc:26
-msgid "As I mentioned http://infinispan.blogspot.com/2009/05/implementing-performant-thread-safe.html[recently], I've implemented an uber-cool new asynchronous API for the cache and am dying to show it off/get some feedback on it. Yes, Alpha3 contains the async APIs. Why is this so important? Because it allows you to get the best of both worlds when it comes to synchronous and asynchronous network communications, and harnesses the parallelism and scalability you'd naturally expect from a halfway-decent data grid. And, as far as I know, we're the first distributed cache - open or closed source - to offer such an API."
+#, fuzzy
+msgid ""
+"As I mentioned http://infinispan.blogspot.com/2009/05/implementing-"
+"performant-thread-safe.html[recently], I've implemented an uber-cool new "
+"asynchronous API for the cache and am dying to show it off/get some feedback "
+"on it. Yes, Alpha3 contains the async APIs. Why is this so important? "
+"Because it allows you to get the best of both worlds when it comes to "
+"synchronous and asynchronous network communications, and harnesses the "
+"parallelism and scalability you'd naturally expect from a halfway-decent "
+"data grid. And, as far as I know, we're the first distributed cache - open "
+"or closed source - to offer such an API."
 msgstr ""
+"link:http://infinispan.blogspot.com/2009/05/implementing-performant-thread-"
+"safe.html[最近] "
+"述べたように、私はキャッシュのための非常にクールな新しい非同期APIを実装したので、それを披露したり、フィードバックを得たりしたいと思っています。そうです、Alpha3には非同期APIが含まれています。なぜこれがそんなに重要なのでしょうか？それは、同期と非同期のネットワーク通信の両方の世界のベストを得ることができ、中途半端にまともなデータグリッドに期待される並列性とスケーラビリティを利用できるからです。そして、私の知る限りでは、オープンソース、クローズドソースを問わず、このようなAPIを提供した最初の分散キャッシュです。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-14-alpha3-ready-to-rumble.adoc:30
-msgid "The release also contains other fixes, performance and stability improvements, and better javadocs throughout. One step closer to a full release."
+#, fuzzy
+msgid ""
+"The release also contains other fixes, performance and stability "
+"improvements, and better javadocs throughout. One step closer to a full "
+"release."
 msgstr ""
+"このリリースには、その他の修正、パフォーマンスと安定性の向上、そしてより良い javadocs "
+"が全体的に含まれています。完全なリリースに一歩近づきました。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-14-alpha3-ready-to-rumble.adoc:35
-msgid "Enjoy the release - available on our http://www.jboss.org/infinispan/downloads[download page] - and please do post feedback on the http://www.jboss.org/infinispan/forums.html[Infinispan User Forums]."
+#, fuzzy
+msgid ""
+"Enjoy the release - available on our http://www.jboss.org/infinispan/"
+"downloads[download page] - and please do post feedback on the http://www."
+"jboss.org/infinispan/forums.html[Infinispan User Forums]."
 msgstr ""
+"リリースをお楽しみください - link:http://www.jboss.org/infinispan/downloads[ダウンロードページ] "
+"に掲載されています - link:http://www.jboss.org/infinispan/forums."
+"html[Infinispanユーザーフォーラム] にフィードバックを投稿してください。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-14-alpha3-ready-to-rumble.adoc:37
+#, fuzzy
 msgid "Cheers Manik"
-msgstr ""
+msgstr "乾杯 マニク"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-04-29-faster-transaction-protocols-in.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-29-faster-transaction-protocols-in.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Faster transaction protocols in Infinispan!\n"
@@ -32,79 +32,154 @@ msgid ""
 "date: '2013-04-29T02:25:00.000-07:00'\n"
 "author: pruivo\n"
 "tags: []\n"
-"thumbnail: http://4.bp.blogspot.com/-5aEjRD-cQKk/UXqvR762K7I/AAAAAAAAAEk/fs_-b6Z0Lvw/s72-c/contention.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2348375407617276572\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/04/faster-transaction-protocols-in.html\n"
+"thumbnail: http://4.bp.blogspot.com/-5aEjRD-cQKk/UXqvR762K7I/AAAAAAAAAEk/fs_-"
+"b6Z0Lvw/s72-c/contention.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2348375407617276572\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/04/faster-transaction-"
+"protocols-in.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispanのトランザクションプロトコルを高速化!\n"
+"permalink: /blog/:year/:month/:day/faster-transaction-protocols-in\n"
+"date: '2013-04-29T02:25:00.000-07:00'\n"
+"author: pruivo\n"
+"tags: []\n"
+"thumbnail: http://4.bp.blogspot.com/-5aEjRD-cQKk/UXqvR762K7I/AAAAAAAAAEk/fs_-"
+"b6Z0Lvw/s72-c/contention.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2348375407617276572\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/04/faster-transaction-"
+"protocols-in.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-29-faster-transaction-protocols-in.adoc:18
-msgid "The total order based protocol is a lock free commit protocol that relies on the concept of totally ordered delivery of messages which, informally, implies that each node which delivers a set of messages, delivers them in the same order."
-msgstr ""
+#, fuzzy
+msgid ""
+"The total order based protocol is a lock free commit protocol that relies on "
+"the concept of totally ordered delivery of messages which, informally, "
+"implies that each node which delivers a set of messages, delivers them in "
+"the same order."
+msgstr "全順序ベースのプロトコルはロックフリーなコミットプロトコルであり、メッセージの全順序配信の概念に依存しています。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-29-faster-transaction-protocols-in.adoc:20
+#, fuzzy
 msgid "This protocol comes with this advantages."
-msgstr ""
+msgstr "このプロトコルには、このような利点があります。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-29-faster-transaction-protocols-in.adoc:23
-msgid "transactions can be committed in one phase, as they are delivered in the same order by the nodes that receive them."
-msgstr ""
+#, fuzzy
+msgid ""
+"transactions can be committed in one phase, as they are delivered in the "
+"same order by the nodes that receive them."
+msgstr "トランザクションは、それを受け取るノードが同じ順番で配信するため、1つのフェーズでコミットすることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-29-faster-transaction-protocols-in.adoc:24
+#, fuzzy
 msgid "it mitigates distributed deadlocks."
-msgstr ""
+msgstr "分散デッドロックを緩和します。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-29-faster-transaction-protocols-in.adoc:29
-msgid "The weaknesses of this approach are the fact that its implementation relies on a single thread per node which receives the transaction and its modification from other nodes in the cluster, and the slightly higher number of messages exchanged by JGroups."
+#, fuzzy
+msgid ""
+"The weaknesses of this approach are the fact that its implementation relies "
+"on a single thread per node which receives the transaction and its "
+"modification from other nodes in the cluster, and the slightly higher number "
+"of messages exchanged by JGroups."
 msgstr ""
+"このアプローチの弱点は、その実装がクラスタ内の他のノードからトランザクションとその変更を受け取るノードごとの単一のスレッドに依存しているという事実と、JGroupsによって交換されるメッセージの数がやや多いことです。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-29-faster-transaction-protocols-in.adoc:33
-msgid "Thus, this protocol delivers best performance in scenarios of *high contention*, in which it can benefit from the single-phase commit and the thread that delivers/applies transactions is not the bottleneck."
+#, fuzzy
+msgid ""
+"Thus, this protocol delivers best performance in scenarios of *high "
+"contention*, in which it can benefit from the single-phase commit and the "
+"thread that delivers/applies transactions is not the bottleneck."
 msgstr ""
+"したがって、このプロトコルは、シングルフェーズコミットの恩恵を受け、トランザクションの配信/適用を行うスレッドがボトルネックにならないような、 "
+"*競合が* 多いシナリオで最高のパフォーマンスを発揮します。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-29-faster-transaction-protocols-in.adoc:39
-msgid "Currently, the Total Order based protocol is available only in *transactional* caches for *replicated* and *distributed* modes and it is available in http://infinispan.blogspot.com.br/2013/04/infinispan-530alpha1-is-out.html[Infinispan 5.3.0 Alpha1]."
+#, fuzzy
+msgid ""
+"Currently, the Total Order based protocol is available only "
+"in *transactional* caches for *replicated* and *distributed* modes and it is "
+"available in http://infinispan.blogspot.com.br/2013/04/infinispan-530alpha1-"
+"is-out.html[Infinispan 5.3.0 Alpha1]."
 msgstr ""
+"現在、トータルオーダーベースのプロトコルは、レプリケートモードと分散モードの *トランザクション* キャッシュでのみ利用可能で、Infinispan 5."
+"3.0 Alpha1で利用可能 *です* 。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-29-faster-transaction-protocols-in.adoc:46
-msgid "If you are interested in know more, please take a look at the https://docs.jboss.org/author/display/ISPN/Total+Order+based+commit+protocol[user documentation] where it is explained in more detail how it behaves and how you can configure it. Since this is a recent work, if you find any incorrect behavior please create a https://issues.jboss.org/issues/?jql=project%20%3D%20ISPN[JIRA]."
+#, fuzzy
+msgid ""
+"If you are interested in know more, please take a look at the https://docs."
+"jboss.org/author/display/ISPN/Total+Order+based+commit+protocol[user "
+"documentation] where it is explained in more detail how it behaves and how "
+"you can configure it. Since this is a recent work, if you find any incorrect "
+"behavior please create a https://issues.jboss.org/issues/?jql="
+"project%20%3D%20ISPN[JIRA]."
 msgstr ""
+"もしもっと知りたいのであれば、どのように動作し、どのように設定できるのか、より詳細に説明されている link:https://docs.jboss."
+"org/author/display/ISPN/Total+Order+based+commit+protocol[ユーザードキュメント] "
+"を見てください。これは最近の作業なので、もし間違った動作を見つけたら link:https://issues.jboss.org/issues/?jql="
+"project%20%3D%20ISPN[JIRA] を作成してください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-29-faster-transaction-protocols-in.adoc:50
-msgid "Please find below some benchmarks comparing the total order based implementation with the locking based implementation in two different scenarios:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Please find below some benchmarks comparing the total order based "
+"implementation with the locking based implementation in two different "
+"scenarios:"
+msgstr "2つの異なるシナリオでの総順序ベースの実装とロックベースの実装を比較したいくつかのベンチマークを以下に示します。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-29-faster-transaction-protocols-in.adoc:53
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Contention*: 1000 keys in a *shared* pool, 8 threads per node and 5\n"
 "writes (on average) per transaction;\n"
-msgstr ""
+msgstr "*競合* 。 *共有* プールの鍵は1000個、ノードごとに8スレッド、トランザクションごとに5回の書き込み（平均）があります。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-29-faster-transaction-protocols-in.adoc:56
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*No Contention*: 1000 keys in a thread *private* pool, 8 threads per\n"
 "node and 5 writes (on average) per transaction.\n"
 msgstr ""
+"競合は *ありません* 。スレッドの *プライベート* "
+"プールに1000個の鍵、ノードごとに8個のスレッド、トランザクションごとに5個の書き込み(平均)があります。"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-29-faster-transaction-protocols-in.adoc:58
-msgid "http://4.bp.blogspot.com/-5aEjRD-cQKk/UXqvR762K7I/AAAAAAAAAEk/fs_-b6Z0Lvw/s1600/contention.png[image:http://4.bp.blogspot.com/-5aEjRD-cQKk/UXqvR762K7I/AAAAAAAAAEk/fs_-b6Z0Lvw/s1600/contention.png[image,width=640,height=384]]"
+#, fuzzy
+msgid ""
+"http://4.bp.blogspot.com/-5aEjRD-cQKk/UXqvR762K7I/AAAAAAAAAEk/fs_-b6Z0Lvw/"
+"s1600/contention.png[image:http://4.bp.blogspot.com/-5aEjRD-cQKk/UXqvR762K7I/"
+"AAAAAAAAAEk/fs_-b6Z0Lvw/s1600/contention.png[image,width=640,height=384]]"
 msgstr ""
+"link:http://4.bp.blogspot.com/-5aEjRD-cQKk/UXqvR762K7I/AAAAAAAAAEk/fs_-"
+"b6Z0Lvw/s1600/contention.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2013-04-29-faster-transaction-protocols-in.adoc:62
-msgid "http://1.bp.blogspot.com/-wT9K8wvpPcE/UXqvSJmj3bI/AAAAAAAAAEs/XO36wbOzHo0/s1600/no-contention.png[image:http://1.bp.blogspot.com/-wT9K8wvpPcE/UXqvSJmj3bI/AAAAAAAAAEs/XO36wbOzHo0/s1600/no-contention.png[image,width=640,height=384]]"
+#, fuzzy
+msgid ""
+"http://1.bp.blogspot.com/-wT9K8wvpPcE/UXqvSJmj3bI/AAAAAAAAAEs/XO36wbOzHo0/"
+"s1600/no-contention.png[image:http://1.bp.blogspot.com/-wT9K8wvpPcE/"
+"UXqvSJmj3bI/AAAAAAAAAEs/XO36wbOzHo0/s1600/no-contention.png[image,width="
+"640,height=384]]"
 msgstr ""
+"link:http://1.bp.blogspot.com/-wT9K8wvpPcE/UXqvSJmj3bI/AAAAAAAAAEs/"
+"XO36wbOzHo0/s1600/no-contention.png[]"

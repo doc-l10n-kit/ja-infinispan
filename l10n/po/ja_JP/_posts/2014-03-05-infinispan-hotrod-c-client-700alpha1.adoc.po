@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-infinispan-hotrod-c-client-700alpha1.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-infinispan-hotrod-c-client-700alpha1.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan HotRod C# Client 7.0.0.Alpha1 release\n"
@@ -35,17 +35,48 @@ msgid ""
 "\"hotrod\",\n"
 "\"alpha\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-194113991188563377\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/03/infinispan-hotrod-c-client-700alpha1.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"194113991188563377\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/03/infinispan-hotrod-c-"
+"client-700alpha1.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan HotRod C#クライアント 7.0.0.0.Alpha1リリース\n"
+"permalink: /blog/:year/:month/:day/infinispan-hotrod-c-client-700alpha1\n"
+"date: '2014-03-05T04:17:00.000-08:00'\n"
+"author: isavin\n"
+"tags: [ \"csharp\",\n"
+"\"hotrod\",\n"
+"\"alpha\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"194113991188563377\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/03/infinispan-hotrod-c-"
+"client-700alpha1.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-infinispan-hotrod-c-client-700alpha1.adoc:19
-msgid "Infinispan HotRod C# Client 7.0.0.Alpha1 is now available. This new version is a C# wrapper over the native client and brings support for L2 and L3 client intelligence levels in addition to L1. As more features are added to the native client they will make their way into the C# client as well."
+#, fuzzy
+msgid ""
+"Infinispan HotRod C# Client 7.0.0.Alpha1 is now available. This new version "
+"is a C# wrapper over the native client and brings support for L2 and L3 "
+"client intelligence levels in addition to L1. As more features are added to "
+"the native client they will make their way into the C# client as well."
 msgstr ""
+"Infinispan HotRod C# Client 7.0.0."
+"Alpha1をリリースしました。この新バージョンは、ネイティブクライアントの上にC#でラッパーをかけたもので、L1に加えてL2とL3のクライアントインテリジェンスレベルをサポートしています。ネイティブクライアントに追加された機能は、C#クライアントにも追加される予定です。"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-infinispan-hotrod-c-client-700alpha1.adoc:23
-msgid "You can find the the .msi installer on the http://infinispan.org/hotrod-clients/[download] page and the https://github.com/infinispan/dotnet-client/[source code] on GitHub.  Please give it a try and let us know what you think."
+#, fuzzy
+msgid ""
+"You can find the the .msi installer on the http://infinispan.org/hotrod-"
+"clients/[download] page and the https://github.com/infinispan/dotnet-client/"
+"[source code] on GitHub.  Please give it a try and let us know what you "
+"think."
 msgstr ""
+".msiのインストーラは link:http://infinispan.org/hotrod-clients/[ダウンロード] ページに、 link:"
+"https://github.com/infinispan/dotnet-client/[ソースコード] "
+"はGitHubにあります。ぜひ試してみて、感想を聞かせてください。"

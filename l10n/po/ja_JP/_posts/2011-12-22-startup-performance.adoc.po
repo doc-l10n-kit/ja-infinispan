@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-12-22-startup-performance.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-22-startup-performance.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Startup performance\n"
@@ -36,87 +36,184 @@ msgid ""
 "\"memory\",\n"
 "\"performance\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8773782847170679031\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/12/startup-performance.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8773782847170679031\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/12/startup-performance."
+"html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 起動時のパフォーマンス\n"
+"permalink: /blog/:year/:month/:day/startup-performance\n"
+"date: '2011-12-22T08:41:00.000-08:00'\n"
+"author: msurtani\n"
+"tags: [ \"benchmarks\",\n"
+"\"cpu\",\n"
+"\"memory\",\n"
+"\"performance\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8773782847170679031\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/12/startup-performance."
+"html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-22-startup-performance.adoc:20
-msgid "One of the things I've done recently was to benchmark how quickly Infinispan starts up.  Specifically looking at LOCAL mode (where you don't have the delays of opening sockets and discovery protocols you see in clustered mode), I wrote up a very simple test to start up 2000 caches in a loop, using the same cache manager."
+#, fuzzy
+msgid ""
+"One of the things I've done recently was to benchmark how quickly Infinispan "
+"starts up.  Specifically looking at LOCAL mode (where you don't have the "
+"delays of opening sockets and discovery protocols you see in clustered "
+"mode), I wrote up a very simple test to start up 2000 caches in a loop, "
+"using the same cache manager."
 msgstr ""
+"最近、Infinispanの起動の速さをベンチマークすることにしました。 "
+"特にLOCALモード（クラスター化モードで見られるようなソケットやディスカバリープロトコルのオープンの遅延がない）を見て、同じキャッシュマネージャを使って2000個のキャッシュをループで起動するという非常に簡単なテストを書き上げました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-22-startup-performance.adoc:25
-msgid "This is a pretty valid use case, since when used as a non-clustered 2nd level cache in Hibernate, a separate cache instance is created _per entity type_, and in the past this has become somewhat of a bottleneck."
+#, fuzzy
+msgid ""
+"This is a pretty valid use case, since when used as a non-clustered 2nd "
+"level cache in Hibernate, a separate cache instance is created _per entity "
+"type_, and in the past this has become somewhat of a bottleneck."
 msgstr ""
+"これはかなり有効なユースケースです。Hibernateで非クラスタ化された第2レベルキャッシュとして使用する場合、 _エンティティタイプごとに_ "
+"別のキャッシュインスタンスが作成されるため、過去にはこれがややボトルネックになっていました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-22-startup-performance.adoc:31
-msgid "In this test, I compared Infinispan 5.0.1.Final, 5.1.0.CR1 and 5.1.0.CR2.  5.1.0 is significantly quicker, but I used this test (and subsequent profiling) to commit a couple of interesting changes in 5.1.0.CR2, which has improved things even more - both in terms of CPU performance as well as memory footprint."
+#, fuzzy
+msgid ""
+"In this test, I compared Infinispan 5.0.1.Final, 5.1.0.CR1 and 5.1.0.CR2.  5."
+"1.0 is significantly quicker, but I used this test (and subsequent "
+"profiling) to commit a couple of interesting changes in 5.1.0.CR2, which has "
+"improved things even more - both in terms of CPU performance as well as "
+"memory footprint."
 msgstr ""
+"このテストでは、Infinispan 5.0.1.Final、5.1.0.CR1、5.1.0.CR2を比較しました。5.1."
+"0の方がかなり速いですが、このテスト（およびその後のプロファイリング）を使って、5.1.0.CR2にいくつかの興味深い変更を加えました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-22-startup-performance.adoc:41
-msgid "Essentially, 5.1.0.CR1 made use of https://github.com/jbossas/jandex[Jandex] to perform annotation scanning of internal components at build-time, to prevent expensive reflection calls to determine component dependencies and lifecycle at runtime.   5.1.0.CR2 takes this concept a step further - now we don't just cache annotation lookups at build-time, but entire dependency graphs.  And determining and ordering of lifecycle methods are done at build-time too, again making startup times significantly quicker while offering a much tighter memory footprint."
+#, fuzzy
+msgid ""
+"Essentially, 5.1.0.CR1 made use of https://github.com/jbossas/jandex[Jandex] "
+"to perform annotation scanning of internal components at build-time, to "
+"prevent expensive reflection calls to determine component dependencies and "
+"lifecycle at runtime.   5.1.0.CR2 takes this concept a step further - now we "
+"don't just cache annotation lookups at build-time, but entire dependency "
+"graphs.  And determining and ordering of lifecycle methods are done at build-"
+"time too, again making startup times significantly quicker while offering a "
+"much tighter memory footprint."
 msgstr ""
+"本質的には、5.1.0.CR1では link:https://github.com/jbossas/jandex[Jandexを] "
+"利用してビルド時に内部コンポーネントのアノテーションスキャンを行い、実行時にコンポーネントの依存性とライフサイクルを決定するための高価なリフレクションコールを防止していましたが、5."
+"1.0."
+"CR2ではこのコンセプトをさらに発展させています。CR2では、このコンセプトをさらに一歩進めて、ビルド時にアノテーション検索をキャッシュするだけでなく、依存関係グラフ全体をキャッシュするようになりました。 "
+"また、ライフサイクル・メソッドの決定と順序付けもビルド時に行われ、起動時間を大幅に短縮すると同時に、よりタイトなメモリ・フットプリントを提供しています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-22-startup-performance.adoc:46
-msgid "Enough talk.  Here is https://github.com/maniksurtani/InfinispanStartupBenchmark[the test used], and here are the performance numbers, as per my laptop, a 2010 MacBook Pro with an i5 CPU."
+#, fuzzy
+msgid ""
+"Enough talk.  Here is https://github.com/maniksurtani/"
+"InfinispanStartupBenchmark[the test used], and here are the performance "
+"numbers, as per my laptop, a 2010 MacBook Pro with an i5 CPU."
 msgstr ""
+"ここでは、 link:https://github.com/maniksurtani/"
+"InfinispanStartupBenchmark[使用したテストと、] 私のラップトップ、2010年のMacBook Pro、i5 "
+"CPUを搭載したパフォーマンスの数値を示しています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-22-startup-performance.adoc:49
+#, fuzzy
 msgid "Multiverse:InfinispanStartupBenchmark manik [master]$ ./bench.sh "
-msgstr ""
+msgstr "Multiverse:InfinispanStartupBenchmark manik [master]$ ./bench.sh"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-22-startup-performance.adoc:50
+#, fuzzy
 msgid "Starting benchmark ---"
-msgstr ""
+msgstr "ベンチマークの開始"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-22-startup-performance.adoc:53
+#, fuzzy
 msgid "  Please standby ... "
-msgstr ""
+msgstr "待機してください..."
 
 #. type: Plain text
 #: upstream/_posts/2011-12-22-startup-performance.adoc:58
-msgid "Using Infinispan 5.0.1.FINAL (JMX enabled? false)     Created 2000 caches in *10.9 seconds* and consumed *172.32 Mb* of memory."
+#, fuzzy
+msgid ""
+"Using Infinispan 5.0.1.FINAL (JMX enabled? false)     Created 2000 caches in "
+"*10.9 seconds* and consumed *172.32 Mb* of memory."
 msgstr ""
+"Infinispan 5.0.1.FINALを使用して（JMXを有効にした場合はfalse）10.9秒で2000個のキャッシュを作成し *、* 172."
+"32Mbの *メモリを* *消費しました* *。*"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-22-startup-performance.adoc:63
-msgid "Using Infinispan 5.0.1.FINAL (JMX enabled? true)     Created 2000 caches in *56.18 seconds* and consumed *315.21 Mb* of memory."
+#, fuzzy
+msgid ""
+"Using Infinispan 5.0.1.FINAL (JMX enabled? true)     Created 2000 caches in "
+"*56.18 seconds* and consumed *315.21 Mb* of memory."
 msgstr ""
+"Infinispan 5.0.1.FINALを使用して（JMXを有効にした場合はtrue）56.18秒で2000個のキャッシュを作成し *、* 315."
+"21Mbの *メモリを* *消費しました* *。*"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-22-startup-performance.adoc:68
-msgid "Using Infinispan 5.1.0.CR1 (JMX enabled? false)     Created 2000 caches in *7.13 seconds* and consumed *157.5 Mb* of memory."
+#, fuzzy
+msgid ""
+"Using Infinispan 5.1.0.CR1 (JMX enabled? false)     Created 2000 caches in "
+"*7.13 seconds* and consumed *157.5 Mb* of memory."
 msgstr ""
+"Infinispan 5.1.0.CR1 を使用して (JMX を有効にした場合は false) 7.13 秒で 2000 個のキャッシュを作成し "
+"*、* 157.5 Mb の *メモリを* *消費しました* *。*"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-22-startup-performance.adoc:73
-msgid "Using Infinispan 5.1.0.CR1 (JMX enabled? true)     Created 2000 caches in *34.9 seconds* and consumed *243.33 Mb* of memory."
+#, fuzzy
+msgid ""
+"Using Infinispan 5.1.0.CR1 (JMX enabled? true)     Created 2000 caches in "
+"*34.9 seconds* and consumed *243.33 Mb* of memory."
 msgstr ""
+"Infinispan 5.1.0.CR1 を使用して (JMX が有効か？true) 34.9 秒で 2000 個のキャッシュを作成し *、* 243."
+"33 Mb の *メモリを* *消費しました* *。*"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-22-startup-performance.adoc:78
-msgid "Using Infinispan 5.1.0.CR2(JMX enabled? false)     Created 2000 caches in *3.18 seconds* and consumed *142.2 Mb* of memory."
+#, fuzzy
+msgid ""
+"Using Infinispan 5.1.0.CR2(JMX enabled? false)     Created 2000 caches in *3."
+"18 seconds* and consumed *142.2 Mb* of memory."
 msgstr ""
+"Infinispan 5.1.0.CR2を使用して(JMXが有効？false) 3.18秒で2000個のキャッシュを作成し *、* 142.2Mbの "
+"*メモリを* *消費しました* *。*"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-22-startup-performance.adoc:83
-msgid "Using Infinispan 5.1.0.CR2(JMX enabled? true)     Created 2000 caches in *17.62 seconds* and consumed *176.13 Mb* of memory."
+#, fuzzy
+msgid ""
+"Using Infinispan 5.1.0.CR2(JMX enabled? true)     Created 2000 caches in *17."
+"62 seconds* and consumed *176.13 Mb* of memory."
 msgstr ""
+"Infinispan 5.1.0.CR2を使用して(JMXが有効？true) 17.62秒で2000個のキャッシュを作成し *、* 176.13Mbの "
+"*メモリを* *消費しました* *。*"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-22-startup-performance.adoc:87
-msgid "A whopping 3.5 times faster, and significantly more memory-efficient especially when enabling JMX reporting.  :-)"
-msgstr ""
+#, fuzzy
+msgid ""
+"A whopping 3.5 times faster, and significantly more memory-efficient "
+"especially when enabling JMX reporting.  :-)"
+msgstr "3.5倍の速さで、特にJMXレポートを有効にした場合には、メモリ効率が大幅に向上します。)"
 
 #. type: Plain text
 #: upstream/_posts/2011-12-22-startup-performance.adoc:91
+#, fuzzy
 msgid "Enjoy! Manik"
-msgstr ""
+msgstr "楽しもう!マニク"

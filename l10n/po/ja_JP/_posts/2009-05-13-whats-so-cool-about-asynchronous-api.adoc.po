@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: What's so cool about an asynchronous API?\n"
@@ -32,31 +32,65 @@ msgid ""
 "date: '2009-05-13T15:13:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \" asynchronous\", \"future\", \"API\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7174737965854828621\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/05/whats-so-cool-about-asynchronous-api.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7174737965854828621\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/05/whats-so-cool-about-"
+"asynchronous-api.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 非同期APIの何がそんなにかっこいいの？\n"
+"permalink: /blog/:year/:month/:day/whats-so-cool-about-asynchronous-api\n"
+"date: '2009-05-13T15:13:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \" asynchronous\", \"future\", \"API\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7174737965854828621\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/05/whats-so-cool-about-"
+"asynchronous-api.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:16
-msgid "Inspired by some thoughts from a recent conversation with http://jbossfox.blogspot.com/[JBoss Messaging's Tim Fox], I've decided to go ahead and implement a new, https://jira.jboss.org/jira/browse/ISPN-72[asynchronous API] for Infinispan."
+#, fuzzy
+msgid ""
+"Inspired by some thoughts from a recent conversation with http://jbossfox."
+"blogspot.com/[JBoss Messaging's Tim Fox], I've decided to go ahead and "
+"implement a new, https://jira.jboss.org/jira/browse/ISPN-72[asynchronous "
+"API] for Infinispan."
 msgstr ""
+"最近の link:http://jbossfox.blogspot.com/[JBoss MessagingのTim Fox] "
+"との会話からヒントを得て、私はInfinispanのために新しい link:https://jira.jboss.org/jira/browse/"
+"ISPN-72[非同期APIを] 実装することにしました。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:19
-msgid "To sum things up, this new API - additional methods on http://docs.jboss.org/infinispan/4.0/apidocs/org/infinispan/Cache.html[Cache]"
+#, fuzzy
+msgid ""
+"To sum things up, this new API - additional methods on http://docs.jboss.org/"
+"infinispan/4.0/apidocs/org/infinispan/Cache.html[Cache]"
 msgstr ""
+"物事をまとめるために、この新しい API - link:http://docs.jboss.org/infinispan/4.0/apidocs/org/"
+"infinispan/Cache.html[Cache] の追加メソッド"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:25
-msgid "allow for asynchronous versions of put(), putIfAbsent(), putAll(), remove(), replace(), clear() and their various overloaded forms.  Unimaginatively called putAsync(), putIfAbsentAsync(), etc., these new methods return a http://java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/Future.html[Future] rather than the expected return type. E.g.,"
+#, fuzzy
+msgid ""
+"allow for asynchronous versions of put(), putIfAbsent(), putAll(), remove(), "
+"replace(), clear() and their various overloaded forms.  Unimaginatively "
+"called putAsync(), putIfAbsentAsync(), etc., these new methods return a http:"
+"//java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/Future.html[Future] "
+"rather than the expected return type. E.g.,"
 msgstr ""
+"は、put()、putIfAbsent()、putAll()、remove()、replace()、clear()、そしてそれらの様々なオーバーロードされた形の非同期バージョンを可能にします。putAsync()、putIfAbsentAsync()などと呼ばれている想像を絶するこれらの新しいメソッドは、期待される戻り値の型ではなく "
+"link:http://java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/Future."
+"html[Future] を返します。例えば、以下のようになります。"
 
 #. type: delimited block -
 #: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:31
 #, no-wrap
-msgid ""
-"V put(K key, V value);\n"
+msgid "V put(K key, V value);\n"
 "Future<V> putAsync(K key, V value);\n"
 msgstr ""
 
@@ -71,8 +105,7 @@ msgstr ""
 #. type: delimited block -
 #: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:37
 #, no-wrap
-msgid ""
-"void clear();\n"
+msgid "void clear();\n"
 "Future<Void> clearAsync();\n"
 msgstr ""
 
@@ -84,18 +117,40 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:49
-msgid "You guessed it, these methods do not block. They return immediately, and how cool is that! If you care about return values - or indeed simply want to wait until the operation completes - you do a Future.get(), which will block until the call completes. Why is this useful? Mainly because, in the case of clustered caches, it allows you to get the best of both worlds when it comes to synchronous and asynchronous mode transports."
+#, fuzzy
+msgid ""
+"You guessed it, these methods do not block. They return immediately, and how "
+"cool is that! If you care about return values - or indeed simply want to "
+"wait until the operation completes - you do a Future.get(), which will block "
+"until the call completes. Why is this useful? Mainly because, in the case of "
+"clustered caches, it allows you to get the best of both worlds when it comes "
+"to synchronous and asynchronous mode transports."
 msgstr ""
+"あなたはそれを推測した、これらのメソッドはブロックされません。これらのメソッドはすぐに戻ります。返り値を気にしている場合、あるいは単に操作が完了するまで待ちたい場合は、Future."
+"get()を使用します。なぜこれが便利なのでしょうか？主な理由は、クラスタ化されたキャッシュの場合、同期モードと非同期モードのトランスポートの両方の世界のベストを得ることができるからです。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:57
-msgid "Synchronous transports are normally recommended because of the guarantees they offer - the caller always knows that a call has properly propagated across the network, and is aware of any potential exceptions.  However, asynchronous transports give you greater parallelism. You can start on the next operation even before the first one has made it across the network. But this is at a cost: losing out on the knowledge that a call has safely completed."
+#, fuzzy
+msgid ""
+"Synchronous transports are normally recommended because of the guarantees "
+"they offer - the caller always knows that a call has properly propagated "
+"across the network, and is aware of any potential exceptions.  However, "
+"asynchronous transports give you greater parallelism. You can start on the "
+"next operation even before the first one has made it across the network. But "
+"this is at a cost: losing out on the knowledge that a call has safely "
+"completed."
 msgstr ""
+"通常、同期トランスポートが推奨される理由は、呼び出し側は常に呼び出しがネットワーク上で適切に伝搬したことを認識し、潜在的な例外が発生した場合にはそれを認識できるという保証があるからです。しかし、非同期トランスポートはより大きな並列性を提供します。最初の操作がネットワークを通過する前に次の操作を開始することができます。しかし、これには代償があります:"
+" コールが安全に完了したという知識を失うということです。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:60
-msgid "With this powerful new API though, you can have your cake and eat it too. Consider:"
-msgstr ""
+#, fuzzy
+msgid ""
+"With this powerful new API though, you can have your cake and eat it too. "
+"Consider:"
+msgstr "しかし、この強力な新しいAPIを使えば、ケーキを食べたり、食べたりすることもできます。考えてみてください。"
 
 #. type: delimited block -
 #: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:69
@@ -110,18 +165,35 @@ msgstr ""
 #. type: delimited block -
 #: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:73
 #, no-wrap
-msgid ""
-"f1.get();\n"
+msgid "f1.get();\n"
 "f2.get();\n"
 "f3.get();\n"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:87
-msgid "The network calls - possibly the most expensive part of a clustered write - involved for the 3 put calls can now happen in parallel. This is even more useful if the cache is distributed, and k1, k2 and k3 map to different nodes in the cluster - the processing required to handle the put operation on the remote nodes can happen simultaneously, on different nodes. And all the same, when calling Future.get(), we block until the calls have completed successfully. And we are aware of any exceptions thrown. With this approach, elapsed time taken to process all 3 puts should - theoretically, anyway - only be as slow as the single, slowest put()."
+#, fuzzy
+msgid ""
+"The network calls - possibly the most expensive part of a clustered write - "
+"involved for the 3 put calls can now happen in parallel. This is even more "
+"useful if the cache is distributed, and k1, k2 and k3 map to different nodes "
+"in the cluster - the processing required to handle the put operation on the "
+"remote nodes can happen simultaneously, on different nodes. And all the "
+"same, when calling Future.get(), we block until the calls have completed "
+"successfully. And we are aware of any exceptions thrown. With this approach, "
+"elapsed time taken to process all 3 puts should - theoretically, anyway - "
+"only be as slow as the single, slowest put()."
 msgstr ""
+"クラスタ書き込みで最もコストのかかる部分である可能性のあるネットワークコールは、3回のputコールで並行して実行できるようになりました。これはキャッシュが分散されていて、k1、k2、およびk3がクラスタ内の異なるノードにマップされている場合にさらに便利です。そして、すべて同じように、Future."
+"get()を呼び出すとき、呼び出しが正常に完了するまでブロックします。そして、スローされた例外を意識しています。このアプローチでは、3つのputをすべて処理するのにかかる経過時間は、理論的には、いずれにしても、1つの最も遅いput()と同じくらいしか遅くならないはずです。"
 
 #. type: Plain text
 #: upstream/_posts/2009-05-13-whats-so-cool-about-asynchronous-api.adoc:91
-msgid "This new API is now in Infinispan's trunk and yours to enjoy. It will be a main feature of my next release, which should be out in a few days.  Please do give it a spin - I'd love to hear your thoughts and experiences."
+#, fuzzy
+msgid ""
+"This new API is now in Infinispan's trunk and yours to enjoy. It will be a "
+"main feature of my next release, which should be out in a few days.  Please "
+"do give it a spin - I'd love to hear your thoughts and experiences."
 msgstr ""
+"この新しいAPIはInfinispanのトランクに入っています。これは私の次のリリースの主な機能となります。ぜひ試してみてください - "
+"あなたの考えや経験をお聞かせください。"

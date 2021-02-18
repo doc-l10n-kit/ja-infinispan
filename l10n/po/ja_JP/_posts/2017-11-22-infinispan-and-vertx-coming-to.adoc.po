@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-11-22-infinispan-and-vertx-coming-to.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-11-22-infinispan-and-vertx-coming-to.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan and Vert.x coming to Codemotion Spain and Madrid JUG\n"
@@ -32,48 +32,138 @@ msgid ""
 "date: '2017-11-22T10:56:00.001-08:00'\n"
 "author: karesti\n"
 "tags: [ \" conference\", \"JUGs\", \"codemotion\", \"vert.x\" ]\n"
-"thumbnail: https://2.bp.blogspot.com/-VgmjO-qz3XM/WhW-bIxFNnI/AAAAAAAACEc/ezt2bWCNGEYAsTYDHOB9VoonSjSav-RTQCLcBGAs/s72-c/MadridJUG.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3808119601304588038\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/11/infinispan-and-vertx-coming-to.html\n"
+"thumbnail: https://2.bp.blogspot.com/-VgmjO-qz3XM/WhW-bIxFNnI/AAAAAAAACEc/"
+"ezt2bWCNGEYAsTYDHOB9VoonSjSav-RTQCLcBGAs/s72-c/MadridJUG.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3808119601304588038\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/11/infinispan-and-vertx-"
+"coming-to.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: InfinispanとVert.xがCodemotionスペインとマドリッドJUGに登場\n"
+"permalink: /blog/:year/:month/:day/infinispan-and-vertx-coming-to\n"
+"date: '2017-11-22T10:56:00.001-08:00'\n"
+"author: karesti\n"
+"tags: [ \" conference\", \"JUGs\", \"codemotion\", \"vert.x\" ]\n"
+"thumbnail: https://2.bp.blogspot.com/-VgmjO-qz3XM/WhW-bIxFNnI/AAAAAAAACEc/"
+"ezt2bWCNGEYAsTYDHOB9VoonSjSav-RTQCLcBGAs/s72-c/MadridJUG.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3808119601304588038\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/11/infinispan-and-vertx-"
+"coming-to.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-11-22-infinispan-and-vertx-coming-to.adoc:16
-msgid "I'm happy to announce that http://infinispan.org/[Infinispan] and http://vertx.io/[Eclipse Vert.x] team members are in Madrid (Spain)  this week!"
+#, fuzzy
+msgid ""
+"I'm happy to announce that http://infinispan.org/[Infinispan] and http://"
+"vertx.io/[Eclipse Vert.x] team members are in Madrid (Spain)  this week!"
 msgstr ""
+"今週は link:http://infinispan.org/[Infinispan] と link:http://vertx.io/[Eclipse "
+"Vert.xチーム] のメンバーがマドリッド（スペイン）に来ています!"
 
 #. type: Plain text
 #: upstream/_posts/2017-11-22-infinispan-and-vertx-coming-to.adoc:26
-msgid "The 23th of November, https://twitter.com/galderz[Galder] (Infinispan) and https://twitter.com/tsegismont[Thomas] (Vert.x)  will be presenting at https://www.meetup.com/fr-FR/MadridJUG/[Madrid Java User Group] two talks about Infinispan and Ver.x. From https://twitter.com/karesti[my side], I've been invited to give a talk about programming career path to Computer Science and Engineering students in the Universidad San Pablo CEU. "
+#, fuzzy
+msgid ""
+"The 23th of November, https://twitter.com/"
+"galderz[Galder] (Infinispan) and https://twitter.com/"
+"tsegismont[Thomas] (Vert.x)  will be presenting at https://www.meetup.com/fr-"
+"FR/MadridJUG/[Madrid Java User Group] two talks about Infinispan and Ver.x. "
+"From https://twitter.com/karesti[my side], I've been invited to give a talk "
+"about programming career path to Computer Science and Engineering students "
+"in the Universidad San Pablo CEU. "
 msgstr ""
+"11月23日には、 link:https://twitter.com/galderz[ガルダー（Inf] inispan）とトーマス（Vert."
+"x）がマドリッドのJava User Groupで link:https://www.meetup.com/fr-FR/MadridJUG/"
+"[Infinispan] とVer.x link:https://www.meetup.com/fr-FR/MadridJUG/[についての] 2つの "
+"link:https://www.meetup.com/fr-FR/MadridJUG/[講演を] link:https://twitter.com/"
+"karesti[行い] link:https://twitter.com/tsegismont[ます] 。"
 
 #. type: Plain text
 #: upstream/_posts/2017-11-22-infinispan-and-vertx-coming-to.adoc:30
-msgid "https://2.bp.blogspot.com/-VgmjO-qz3XM/WhW-bIxFNnI/AAAAAAAACEc/ezt2bWCNGEYAsTYDHOB9VoonSjSav-RTQCLcBGAs/s1600/MadridJUG.png[image:https://2.bp.blogspot.com/-VgmjO-qz3XM/WhW-bIxFNnI/AAAAAAAACEc/ezt2bWCNGEYAsTYDHOB9VoonSjSav-RTQCLcBGAs/s200/MadridJUG.png[image,width=200,height=189]]"
+#, fuzzy
+msgid ""
+"https://2.bp.blogspot.com/-VgmjO-qz3XM/WhW-bIxFNnI/AAAAAAAACEc/"
+"ezt2bWCNGEYAsTYDHOB9VoonSjSav-RTQCLcBGAs/s1600/MadridJUG.png[image:https://2."
+"bp.blogspot.com/-VgmjO-qz3XM/WhW-bIxFNnI/AAAAAAAACEc/"
+"ezt2bWCNGEYAsTYDHOB9VoonSjSav-RTQCLcBGAs/s200/MadridJUG.png[image,width="
+"200,height=189]]"
 msgstr ""
+"link:https://2.bp.blogspot.com/-VgmjO-qz3XM/WhW-bIxFNnI/AAAAAAAACEc/"
+"ezt2bWCNGEYAsTYDHOB9VoonSjSav-RTQCLcBGAs/s1600/MadridJUG.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2017-11-22-infinispan-and-vertx-coming-to.adoc:39
-msgid "The following days, 24th and 25th of November, https://2017.codemotion.e/[Codemotion] Spain will take place in Madrid.  Codemotion is the biggest developer centric conference in Spain. More than 1.500 people will be attending this year. The conference does not focus on any particular technical stack. You can learn about mobile, web, front-end, back-end, devops and there are some inspirational tracks too during the two days of the conference."
+#, fuzzy
+msgid ""
+"The following days, 24th and 25th of November, https://2017.codemotion.e/"
+"[Codemotion] Spain will take place in Madrid.  Codemotion is the biggest "
+"developer centric conference in Spain. More than 1.500 people will be "
+"attending this year. The conference does not focus on any particular "
+"technical stack. You can learn about mobile, web, front-end, back-end, "
+"devops and there are some inspirational tracks too during the two days of "
+"the conference."
 msgstr ""
+"翌11月24日、25日はマドリードで link:https://2017.codemotion.e/[Codemotion] "
+"Spainが開催されます。Codemotionはスペイン最大の開発者中心のカンファレンスです。今年は1."
+"500人以上が参加する予定です。このカンファレンスは特定の技術スタックに焦点を当てているわけではありません。モバイル、ウェブ、フロントエンド、バックエンド、デバップスなどについて学ぶことができ、2日間のカンファレンスの中にはインスピレーションを与えるトラックもあります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-11-22-infinispan-and-vertx-coming-to.adoc:43
-msgid "image:https://4.bp.blogspot.com/-NnkUIMBPvPA/WhW9eU7xAAI/AAAAAAAACEI/m_caRrwXOkQBIbFq7LRdLoNECFGKcAbEQCLcBGAs/s400/codemotion.png[image,width=400,height=70][#goog_607202256]##https://www.blogger.com/[][#goog_607202257]##"
+#, fuzzy
+msgid ""
+"image:https://4.bp.blogspot.com/-NnkUIMBPvPA/WhW9eU7xAAI/AAAAAAAACEI/"
+"m_caRrwXOkQBIbFq7LRdLoNECFGKcAbEQCLcBGAs/s400/codemotion.png[image,width="
+"400,height=70][#goog_607202256]##https://www.blogger.com/"
+"[][#goog_607202257]##"
 msgstr ""
+"image:https://4.bp.blogspot.com/-NnkUIMBPvPA/WhW9eU7xAAI/AAAAAAAACEI/"
+"m_caRrwXOkQBIbFq7LRdLoNECFGKcAbEQCLcBGAs/s400/codemotion.png[alt=\"image\", "
+"width=\"400\", height=\"70\"] https://www.blogger.com/ goog_607202257]"
 
 #. type: Plain text
 #: upstream/_posts/2017-11-22-infinispan-and-vertx-coming-to.adoc:63
-msgid "On Friday, Galder will be presenting a talk about https://2017.codemotion.es/agenda.html#5649626120060928/5146610086445056[Streaming and BigData architecture]. Thomas will be presenting https://2017.codemotion.es/agenda.html#5649626120060928/5166851730440192[\"Better performance on server side with HTTP/2\"] and I will join a debate around https://2017.codemotion.es/agenda.html#5649626120060928/5769677032652800[Enterprise Culture], where I will give my insights about http://brand.redhat.com/foundations/culture/[RedHat's Culture].  On Saturday we will run our https://2017.codemotion.es/agenda.html#5693168230072320/5176901953912832[Streaming Data Workshop]: a hands on lab that showcases a simplified streaming architecture built on top of http://infinispan.org/[Infinispan] and http://vertx.io/[Vert.x] and running on https://www.openshift.com/[OpenShift]. If you cannot attend any of these events, you can always do the https://github.com/infinispan-demos/streaming-data-workshop[workshop] at your self peace."
+#, fuzzy
+msgid ""
+"On Friday, Galder will be presenting a talk about https://2017.codemotion.es/"
+"agenda.html#5649626120060928/5146610086445056[Streaming and BigData "
+"architecture]. Thomas will be presenting https://2017.codemotion.es/agenda."
+"html#5649626120060928/5166851730440192[\"Better performance on server side "
+"with HTTP/2\"] and I will join a debate around https://2017.codemotion.es/"
+"agenda.html#5649626120060928/5769677032652800[Enterprise Culture], where I "
+"will give my insights about http://brand.redhat.com/foundations/culture/"
+"[RedHat's Culture].  On Saturday we will run our https://2017.codemotion.es/"
+"agenda.html#5693168230072320/5176901953912832[Streaming Data Workshop]: a "
+"hands on lab that showcases a simplified streaming architecture built on top "
+"of http://infinispan.org/[Infinispan] and http://vertx.io/[Vert.x] and "
+"running on https://www.openshift.com/[OpenShift]. If you cannot attend any "
+"of these events, you can always do the https://github.com/infinispan-demos/"
+"streaming-data-workshop[workshop] at your self peace."
 msgstr ""
+"金曜日にはGalderが link:https://2017.codemotion.es/agenda.html#5649626120060928/"
+"5146610086445056[StreamingとBigDataアーキテクチャ] についての講演を行います。Thomasは link:https://"
+"2017.codemotion.es/agenda.html#5649626120060928/5166851730440192[「HTTP/"
+"2でサーバサイドのパフォーマンスを向上させる」を] 発表し、私は link:https://2017.codemotion.es/agenda."
+"html#5649626120060928/5769677032652800[Enterprise Culture] "
+"をテーマにした討論会に参加し、RedHatの link:http://brand.redhat.com/foundations/culture/[文化] "
+"について私なりの見解を述べます。土曜日には link:https://2017.codemotion.es/agenda."
+"html#5693168230072320/5176901953912832[ストリーミングデータワークショップ] を開催します。Infinispan "
+"link:http://infinispan.org/[とVert] .xの上に構築され、OpenShift link:http://vertx.io/"
+"[上で] 動作するシンプルなストリーミングアーキテクチャを紹介するハンズオンラボです。これらのイベントに参加できない場合は、いつでもセルフピースで "
+"link:https://github.com/infinispan-demos/streaming-data-workshop[ワークショップ] "
+"を行うことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-11-22-infinispan-and-vertx-coming-to.adoc:65
+#, fuzzy
 msgid "We hope to see you in Madrid, or anywhere else in 2018!!"
-msgstr ""
+msgstr "2018年はマドリッドでもどこでもお会いできることを楽しみにしています!"
 
 #. type: Plain text
 #: upstream/_posts/2017-11-22-infinispan-and-vertx-coming-to.adoc:67
+#, fuzzy
 msgid "Cheers, Katia "
-msgstr ""
+msgstr "乾杯、カティア"

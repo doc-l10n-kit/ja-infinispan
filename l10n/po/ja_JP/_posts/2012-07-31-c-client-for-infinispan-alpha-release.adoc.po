@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-07-31-c-client-for-infinispan-alpha-release.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-31-c-client-for-infinispan-alpha-release.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: C# client for Infinispan - alpha release\n"
@@ -35,27 +35,77 @@ msgid ""
 "\"hotrod\",\n"
 "\"gsoc\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4328092992363875144\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/07/c-client-for-infinispan-alpha-release.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4328092992363875144\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/07/c-client-for-"
+"infinispan-alpha-release.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan用C#クライアント - アルファ版リリース\n"
+"permalink: /blog/:year/:month/:day/c-client-for-infinispan-alpha-release\n"
+"date: '2012-07-31T17:12:00.000-07:00'\n"
+"author: mmarkus\n"
+"tags: [ \"csharp\",\n"
+"\"hotrod\",\n"
+"\"gsoc\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4328092992363875144\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/07/c-client-for-"
+"infinispan-alpha-release.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-31-c-client-for-infinispan-alpha-release.adoc:28
-msgid "A while ago I was http://infinispan.blogspot.co.uk/search/label/gsoc[announcing] that http://twitter.com/sunimalr[Sunimal Rathnayake] would start the work for a C# Hot Rod  client for Infinispan as part of the http://code.google.com/soc/[Google Summer of Code]. After 2 months of heavy work Sunimal delivered an intelligence-one (basic client, interested in neither cluster nor hash information) implementation.  The release distribution can be downloaded from https://github.com/infinispan/dotnet-client/downloads[here].  Besides the required binaries and doclets, is also contains a sample application showing how the client can be configured and illustrating the basic operations with the server.  This and more are being described in the readme.txt file in the distribution root."
+#, fuzzy
+msgid ""
+"A while ago I was http://infinispan.blogspot.co.uk/search/label/"
+"gsoc[announcing] that http://twitter.com/sunimalr[Sunimal Rathnayake] would "
+"start the work for a C# Hot Rod  client for Infinispan as part of the http://"
+"code.google.com/soc/[Google Summer of Code]. After 2 months of heavy work "
+"Sunimal delivered an intelligence-one (basic client, interested in neither "
+"cluster nor hash information) implementation.  The release distribution can "
+"be downloaded from https://github.com/infinispan/dotnet-client/"
+"downloads[here].  Besides the required binaries and doclets, is also "
+"contains a sample application showing how the client can "
+"be configured and illustrating the basic operations with the server.  This "
+"and more are being described in the readme.txt file in the distribution root."
+""
 msgstr ""
+"少し前に、 link:http://twitter.com/sunimalr[Sunimal Rathnayake] がGoogle link:http:"
+"//code.google.com/soc/[Summer of Code] の一環としてInfinispanのC# Hot "
+"Rodクライアントの作業を開始すると link:http://infinispan.blogspot.co.uk/search/label/"
+"gsoc[発表し] "
+"ていました。2ヶ月間の重労働の後、Sunimalはインテリジェンス・ワン(基本的なクライアントで、クラスタやハッシュ情報には興味がない)の実装を提供しました。リリースの配布物はここからダウンロードできます。必要なバイナリとdocletsのほかに、クライアントがどのように設定することができ、サーバーとの基本的な操作を説明する方法を示すサンプルアプリケーションが含まれています。この他にも、配布ルートの "
+"readme.txt ファイルに記述されています。"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-31-c-client-for-infinispan-alpha-release.adoc:32
-msgid "And there's much more on the way! Sunimal is working on enhancing the client to the intelligence-two level: topology-aware client, interested in cluster information - stay tuned!"
+#, fuzzy
+msgid ""
+"And there's much more on the way! Sunimal is working on enhancing the client "
+"to the intelligence-two level: topology-aware client, interested in cluster "
+"information - stay tuned!"
 msgstr ""
+"さらに多くの機能が追加されています。Sunimalは、クライアントをインテリジェンス2レベルに拡張する作業を行っています：トポロジーを意識したクライアントで、クラスタ情報に興味を持っています。"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-31-c-client-for-infinispan-alpha-release.adoc:38
-msgid "Please give it a try and don't hesitate to post your comments to our https://community.jboss.org/en/infinispan?view=discussions[forums], the http://www.jboss.org/infinispan/mailinglists[mailing list ] or irc://irc.freenode.org/infinispan[contact us directly on IRC] for a chat!"
+#, fuzzy
+msgid ""
+"Please give it a try and don't hesitate to post your comments to our https://"
+"community.jboss.org/en/infinispan?view=discussions[forums], the http://www."
+"jboss.org/infinispan/mailinglists[mailing list ] or irc://irc.freenode.org/"
+"infinispan[contact us directly on IRC] for a chat!"
 msgstr ""
+"ぜひ試してみて、遠慮なく私たちの link:https://community.jboss.org/en/infinispan?view="
+"discussions[フォーラム] や link:http://www.jboss.org/infinispan/"
+"mailinglists[メーリングリスト] link:irc://irc.freenode.org/infinispan[に] "
+"コメントを投稿してください。"
 
 #. type: Plain text
 #: upstream/_posts/2012-07-31-c-client-for-infinispan-alpha-release.adoc:41
+#, fuzzy
 msgid "Cheers, Mircea"
-msgstr ""
+msgstr "乾杯、ミルセア"

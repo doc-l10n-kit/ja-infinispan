@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2010-09-02-410final-is-out-and-announcing-420.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-02-410final-is-out-and-announcing-420.adoc:9
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: 4.1.0.FINAL is out - and announcing 4.2.0\n"
@@ -32,31 +32,100 @@ msgid ""
 "date: '2010-09-02T06:51:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"release\", \"final\", \"radegast\" ]\n"
-"blogger_orig_url: https://blog.infinispan.org/2010/09/410final-is-out-and-announcing-420.html\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/09/410final-is-out-and-"
+"announcing-420.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 4.1.0.FINALが終了し、4.2.0が発表されました。\n"
+"permalink: /blog/:year/:month/:day/410final-is-out-and-announcing-420\n"
+"date: '2010-09-02T06:51:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \"release\", \"final\", \"radegast\" ]\n"
+"blogger_orig_url: https://blog.infinispan.org/2010/09/410final-is-out-and-"
+"announcing-420.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-02-410final-is-out-and-announcing-420.adoc:15
-msgid "Yes, things have been quiet on this blog as of late, but a lot has been going on.  Let's start with the big news.  After much work on feedback reported on the last Radegast release candidate, Infinispan 4.1.0.FINAL is finally ready.  Many thanks to the community who have worked tirelessly in testing stuff, reporting stuff."
+#, fuzzy
+msgid ""
+"Yes, things have been quiet on this blog as of late, but a lot has been "
+"going on.  Let's start with the big news.  After much work on feedback "
+"reported on the last Radegast release candidate, Infinispan 4.1.0.FINAL is "
+"finally ready.  Many thanks to the community who have worked tirelessly in "
+"testing stuff, reporting stuff."
 msgstr ""
+"最近、このブログでは静かな日々が続いていましたが、いろいろなことがありました。 まずは大きなニュースから。 "
+"前回のRadegastのリリース候補で報告されたフィードバックの作業を経て、Infinispan 4.1.0.FINALがついに完成しました。 "
+"テストや報告などで疲れを知らずに働いてくれたコミュニティに感謝しています。"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-02-410final-is-out-and-announcing-420.adoc:28
-msgid "This is a very important release.  If you are using 4.0.0 (Starobrno), I strongly recommend upgrading to Radegast as we have a whole host of big fixes, performance improvements and new features for you.  A full changelog is https://jira.jboss.org/secure/ConfigureReport.jspa?atl_token=jCbk7mSW2a&versions=12313466&sections=all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira.plugin.release-notes-report-plugin:releasenotes&Next=Next[available on JIRA], but a few key features to note are http://infinispan.blogspot.com/2010/05/clientserver-architectures-strike-back.html[server endpoints], a Java-based http://community.jboss.org/wiki/JavaHotRodclient[client] for the Hot Rod protocol, and the new http://infinispan.blogspot.com/2010/03/infinispan-eviction-batching-updates.html[LIRS eviction algorithm]."
+#, fuzzy
+msgid ""
+"This is a very important release.  If you are using 4.0.0 (Starobrno), I "
+"strongly recommend upgrading to Radegast as we have a whole host of big "
+"fixes, performance improvements and new features for you.  A full changelog "
+"is https://jira.jboss.org/secure/ConfigureReport.jspa?atl_token="
+"jCbk7mSW2a&versions=12313466&sections=all&style=none&selectedProjectId="
+"12310799&reportKey=org.jboss.labs.jira.plugin.release-notes-report-plugin:"
+"releasenotes&Next=Next[available on JIRA], but a few key features to note "
+"are http://infinispan.blogspot.com/2010/05/clientserver-architectures-strike-"
+"back.html[server endpoints], a Java-based http://community.jboss.org/wiki/"
+"JavaHotRodclient[client] for the Hot Rod protocol, and the new http://"
+"infinispan.blogspot.com/2010/03/infinispan-eviction-batching-updates."
+"html[LIRS eviction algorithm]."
 msgstr ""
+"これは非常に重要なリリースです。 4.0.0 (Starobrno) "
+"を使用している場合は、大きな修正、パフォーマンスの改善、新機能のホストがあるので、Radegast にアップグレードすることを強くお勧めします。 "
+"完全な変更履歴は link:https://jira.jboss.org/secure/ConfigureReport.jspa?atl_token="
+"jCbk7mSW2a&versions=12313466&sections=all&style=none&selectedProjectId="
+"12310799&reportKey=org.jboss.labs.jira.plugin.release-notes-report-plugin:"
+"releasenotes&Next=Next[JIRA に] あります link:https://jira.jboss.org/secure/"
+"ConfigureReport.jspa?atl_token=jCbk7mSW2a&versions=12313466&sections="
+"all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira."
+"plugin.release-notes-report-plugin:releasenotes&Next=Next[が、] "
+"注意すべきいくつかの重要な機能は、 link:http://infinispan.blogspot.com/2010/05/clientserver-"
+"architectures-strike-back.html[サーバーエンドポイント、] Hot Rod プロトコル用の link:http://"
+"infinispan.blogspot.com/2010/05/clientserver-architectures-strike-back."
+"html[Java] ベースのクライアント、新しい LIRS の退避 link:http://infinispan.blogspot.com/2010/"
+"03/infinispan-eviction-batching-updates.html[アルゴリズム] です。"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-02-410final-is-out-and-announcing-420.adoc:33
-msgid "http://www.jboss.org/infinispan/downloads[Download] it, give it a go, and talk about it on the http://community.jboss.org/en/infinispan?view=discussions[forums].  Tell your friends about it, tweet about it."
+#, fuzzy
+msgid ""
+"http://www.jboss.org/infinispan/downloads[Download] it, give it a go, and "
+"talk about it on the http://community.jboss.org/en/infinispan?view="
+"discussions[forums].  Tell your friends about it, tweet about it."
 msgstr ""
+"link:http://www.jboss.org/infinispan/downloads[ダウンロードして] 、試してみて、 link:http://"
+"community.jboss.org/en/infinispan?view=discussions[フォーラム] で話してみてください。 "
+"友達に教えてあげたり、ツイートしてみてください。"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-02-410final-is-out-and-announcing-420.adoc:40
-msgid "The other interesting piece of news is the announcement of a 4.2.0 release.  We've decided to take a few key new features from 5.0.0 and release them earlier, as 4.2.0 - codenamed _Ursus_.  If you are interested in what's going to be in Ursus, have a look at https://jira.jboss.org/secure/ConfigureReport.jspa?atl_token=jCbk7mSW2a&versions=12315303&sections=all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira.plugin.release-notes-report-plugin:releasenotes&Next=Next[this feature set], and expect a beta on Ursus pretty soon now!"
+#, fuzzy
+msgid ""
+"The other interesting piece of news is the announcement of a 4.2.0 release. "
+" We've decided to take a few key new features from 5.0.0 and release them "
+"earlier, as 4.2.0 - codenamed _Ursus_.  If you are interested in what's "
+"going to be in Ursus, have a look at https://jira.jboss.org/secure/"
+"ConfigureReport.jspa?atl_token=jCbk7mSW2a&versions=12315303&sections="
+"all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira."
+"plugin.release-notes-report-plugin:releasenotes&Next=Next[this feature set], "
+"and expect a beta on Ursus pretty soon now!"
 msgstr ""
+"もう一つの興味深いニュースは、4.2.0のリリースの発表です。 5.0.0.0からいくつかの重要な新機能を取り入れ、4.2.0 - "
+"コードネームはUrsusとして早期リリースすることを決定しました _。_ Ursusに何が含まれるのか興味がある _方は、_ この link:https:"
+"//jira.jboss.org/secure/ConfigureReport.jspa?atl_token=jCbk7mSW2a&versions="
+"12315303&sections=all&style=none&selectedProjectId=12310799&reportKey=org."
+"jboss.labs.jira.plugin.release-notes-report-plugin:releasenotes&Next="
+"Next[機能セット] を見てください。"
 
 #. type: Plain text
 #: upstream/_posts/2010-09-02-410final-is-out-and-announcing-420.adoc:42
+#, fuzzy
 msgid "Enjoy! Manik"
-msgstr ""
+msgstr "楽しもう!マニク"

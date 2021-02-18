@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-07-12-store-data-by-reference-or-by-value.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-12-store-data-by-reference-or-by-value.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Store data by reference or by value?\n"
@@ -32,27 +32,67 @@ msgid ""
 "date: '2013-07-12T06:53:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \"store by reference\", \"faq\", \"store by value\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7084807822718740670\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/07/store-data-by-reference-or-by-value.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7084807822718740670\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/07/store-data-by-"
+"reference-or-by-value.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: データを参照または値で保存するか？\n"
+"permalink: /blog/:year/:month/:day/store-data-by-reference-or-by-value\n"
+"date: '2013-07-12T06:53:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"store by reference\", \"faq\", \"store by value\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7084807822718740670\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/07/store-data-by-"
+"reference-or-by-value.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-12-store-data-by-reference-or-by-value.adoc:17
-msgid "Traditionally, Infinispan has always stored data by-reference. Once clients store some data, clients can still modify entries via original object references. This means that since client references are valid, clients can make changes to entries in the cache using those references, but these modifications are only local and you still need to call one of the cache's put/replace... methods in order for changes to replicate."
+#, fuzzy
+msgid ""
+"Traditionally, Infinispan has always stored data by-reference. Once clients "
+"store some data, clients can still modify entries via original object "
+"references. This means that since client references are valid, clients can "
+"make changes to entries in the cache using those references, but these "
+"modifications are only local and you still need to call one of the cache's "
+"put/replace... methods in order for changes to replicate."
 msgstr ""
+"伝統的に、Infinispan は常に参照によってデータを保存してきました。 "
+"クライアントがデータを保存すると、クライアントはオリジナルのオブジェクト参照を介してエントリを変更することができます。これは、クライアントの参照が有効であるため、クライアントはそれらの参照を使用してキャッシュ内のエントリに変更を加えることができますが、これらの変更はローカルでのみ行われ、変更が複製されるためにはキャッシュの "
+"put/replace... メソッドを呼び出す必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-12-store-data-by-reference-or-by-value.adoc:25
-msgid "Obviously, allowing clients to modify cache contents directly, without any cache invocation, has some risks and that's why starting with Infinispan 5.3.0.Final, it offers the possibility to store data by-value instead. The way store-by-value is enabled is by https://docs.jboss.org/author/x/IgQTB[enabling Infinispan to store data in binary format and forcing it to do these binary transformations eagerly]."
+#, fuzzy
+msgid ""
+"Obviously, allowing clients to modify cache contents directly, without any "
+"cache invocation, has some risks and that's why starting with Infinispan 5.3."
+"0.Final, it offers the possibility to store data by-value instead. The way "
+"store-by-value is enabled is by https://docs.jboss.org/author/x/"
+"IgQTB[enabling Infinispan to store data in binary format and forcing it to "
+"do these binary transformations eagerly]."
 msgstr ""
+"明らかに、クライアントがキャッシュの呼び出しをせずに直接キャッシュの内容を変更できるようにするにはいくつかのリスクがあり、Infinispan 5.3."
+"0.Final からはデータを値で保存することが可能になりました。値による保存を有効にする方法は、 link:https://docs.jboss."
+"org/author/x/IgQTB[Infinispan がバイナリ形式でデータを保存することを有効にして、これらのバイナリ変換を熱心に行うよう] "
+"に強制することです。"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-12-store-data-by-reference-or-by-value.adoc:29
-msgid "We've also added an https://docs.jboss.org/author/pages/viewpage.action?pageId=68454084[FAQ entry] that clarifies this topic."
+#, fuzzy
+msgid ""
+"We've also added an https://docs.jboss.org/author/pages/viewpage."
+"action?pageId=68454084[FAQ entry] that clarifies this topic."
 msgstr ""
+"また、このトピックを明確にする link:https://docs.jboss.org/author/pages/viewpage."
+"action?pageId=68454084[FAQ エントリを] 追加しました。"
 
 #. type: Plain text
 #: upstream/_posts/2013-07-12-store-data-by-reference-or-by-value.adoc:31
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

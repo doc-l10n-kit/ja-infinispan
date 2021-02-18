@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-02-15-spring-boot-starters-100beta1.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-15-spring-boot-starters-100beta1.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Spring Boot Starters 1.0.0.Beta1\n"
@@ -32,47 +32,80 @@ msgid ""
 "date: '2017-02-15T05:25:00.000-08:00'\n"
 "author: slaskawiec\n"
 "tags: [ \"spring boot\", \"release\", \"beta\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-9000287351765777484\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/02/spring-boot-starters-100beta1.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"9000287351765777484\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/02/spring-boot-starters-"
+"100beta1.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Spring Boot Starters 1.0.0.0.Beta1\n"
+"permalink: /blog/:year/:month/:day/spring-boot-starters-100beta1\n"
+"date: '2017-02-15T05:25:00.000-08:00'\n"
+"author: slaskawiec\n"
+"tags: [ \"spring boot\", \"release\", \"beta\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"9000287351765777484\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/02/spring-boot-starters-"
+"100beta1.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-15-spring-boot-starters-100beta1.adoc:14
-msgid "I'm happy to announce https://github.com/infinispan/infinispan-spring-boot/releases/tag/1.0.0.Beta1[Spring Boot Starters 1.0.0.Beta1]."
+#, fuzzy
+msgid ""
+"I'm happy to announce https://github.com/infinispan/infinispan-spring-boot/"
+"releases/tag/1.0.0.Beta1[Spring Boot Starters 1.0.0.Beta1]."
 msgstr ""
+"link:https://github.com/infinispan/infinispan-spring-boot/releases/tag/1.0.0."
+"Beta1[Spring Boot Starters 1.0.0.Beta1を] 発表します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-15-spring-boot-starters-100beta1.adoc:16
+#, fuzzy
 msgid "The changelog includes:"
-msgstr ""
+msgstr "変更履歴には以下が含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-15-spring-boot-starters-100beta1.adoc:20
-msgid "Fixed hotrod-client.properties path (now it uses classpath:hotrod-client.properties) "
+#, fuzzy
+msgid ""
+"Fixed hotrod-client.properties path (now it uses classpath:hotrod-client."
+"properties) "
 msgstr ""
+"hotrod-client.propertiesのパスを修正(classpath:hotrod-client."
+"propertiesを使用するようになりました)"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-15-spring-boot-starters-100beta1.adoc:22
-msgid "https://issues.jboss.org/browse/ISPN-7468[ISPN-7468] Added Spring Cache automatic discovery and creation "
+#, fuzzy
+msgid ""
+"https://issues.jboss.org/browse/ISPN-7468[ISPN-7468] Added Spring Cache "
+"automatic discovery and creation "
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-7468[ISPN-7468] Spring "
+"Cacheの自動検出と作成を追加しました。"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-15-spring-boot-starters-100beta1.adoc:23
+#, fuzzy
 msgid "Fixed typo in artifact name "
-msgstr ""
+msgstr "アーティファクト名のタイプミスを修正"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-15-spring-boot-starters-100beta1.adoc:24
+#, fuzzy
 msgid "Upgraded to the latest artifact versions "
-msgstr ""
+msgstr "最新のアーティファクトにアップグレード"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-15-spring-boot-starters-100beta1.adoc:25
+#, fuzzy
 msgid "Removed deprecated classes from tests"
-msgstr ""
+msgstr "テストから非推奨クラスを削除"
 
 #. type: Plain text
 #: upstream/_posts/2017-02-15-spring-boot-starters-100beta1.adoc:26
+#, fuzzy
 msgid "Grab them while they are hot!"
-msgstr ""
+msgstr "彼らが熱いうちにそれらをつかむ!"

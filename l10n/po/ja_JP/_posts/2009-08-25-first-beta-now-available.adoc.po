@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-08-25-first-beta-now-available.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-25-first-beta-now-available.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: First beta now available!\n"
@@ -32,43 +32,122 @@ msgid ""
 "date: '2009-08-25T09:03:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"beta\" ]\n"
-"thumbnail: http://1.bp.blogspot.com/_ca0W9t-Ryos/SpQPogAYRVI/AAAAAAAAAmk/K3FKxeNqOgA/s72-c/beta1.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6031135286474511126\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/08/first-beta-now-available.html\n"
+"thumbnail: http://1.bp.blogspot.com/_ca0W9t-Ryos/SpQPogAYRVI/AAAAAAAAAmk/"
+"K3FKxeNqOgA/s72-c/beta1.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6031135286474511126\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/08/first-beta-now-"
+"available.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 初のベータ版がリリースされました\n"
+"permalink: /blog/:year/:month/:day/first-beta-now-available\n"
+"date: '2009-08-25T09:03:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \"beta\" ]\n"
+"thumbnail: http://1.bp.blogspot.com/_ca0W9t-Ryos/SpQPogAYRVI/AAAAAAAAAmk/"
+"K3FKxeNqOgA/s72-c/beta1.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6031135286474511126\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/08/first-beta-now-"
+"available.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-25-first-beta-now-available.adoc:17
-msgid "http://1.bp.blogspot.com/_ca0W9t-Ryos/SpQPogAYRVI/AAAAAAAAAmk/K3FKxeNqOgA/s1600-h/beta1.png[image:http://1.bp.blogspot.com/_ca0W9t-Ryos/SpQPogAYRVI/AAAAAAAAAmk/K3FKxeNqOgA/s320/beta1.png[image]] So today I've finally cut the much-awaited Infinispan 4.0.0.BETA1.  Codenamed Starobrno - after the http://farm3.static.flickr.com/2156/2407448703_b6be704417.jpg?v=1208022238[Czech beer] that was omnipresent during early planning sessions of Infinispan"
+#, fuzzy
+msgid ""
+"http://1.bp.blogspot.com/_ca0W9t-Ryos/SpQPogAYRVI/AAAAAAAAAmk/K3FKxeNqOgA/"
+"s1600-h/beta1.png[image:http://1.bp.blogspot.com/_ca0W9t-Ryos/SpQPogAYRVI/"
+"AAAAAAAAAmk/K3FKxeNqOgA/s320/beta1.png[image]] So today I've finally cut the "
+"much-awaited Infinispan 4.0.0.BETA1.  Codenamed Starobrno - after the http://"
+"farm3.static.flickr.com/2156/2407448703_b6be704417.jpg?v=1208022238[Czech "
+"beer] that was omnipresent during early planning sessions of Infinispan"
 msgstr ""
+"link:http://1.bp.blogspot.com/_ca0W9t-Ryos/SpQPogAYRVI/AAAAAAAAAmk/"
+"K3FKxeNqOgA/s1600-h/beta1.png[] というわけで、今日はついに待望のInfinispan 4.0.0."
+"BETA1をカットしました。コードネームはStarobrno - Infinispanの初期の企画セッションでおなじみの link:http://"
+"farm3.static.flickr.com/2156/2407448703_b6be704417.jpg?v=1208022238[チェコビール] "
+"にちなんで。"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-25-first-beta-now-available.adoc:23
-msgid "Beta1 is finally feature-complete. This is also the first release where http://infinispan.blogspot.com/2009/08/distribution-instead-of-buddy.html[distribution] is complete, with rehashing on joins and leaves implemented as well. In addition, a number of bugs reported on previous alpha releases have been tended to."
+#, fuzzy
+msgid ""
+"Beta1 is finally feature-complete. This is also the first release where http:"
+"//infinispan.blogspot.com/2009/08/distribution-instead-of-buddy."
+"html[distribution] is complete, with rehashing on joins and leaves "
+"implemented as well. In addition, a number of bugs reported on previous "
+"alpha releases have been tended to."
 msgstr ""
+"ベータ1がついに機能を完成させました。また、JOINSやLEAVESにもリハッシュが実装されており、 link:http://infinispan."
+"blogspot.com/2009/08/distribution-instead-of-buddy.html[配布が] "
+"完了した初のリリースとなります。また、これまでのアルファリリースで報告されていた多くのバグが修正されています。"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-25-first-beta-now-available.adoc:29
-msgid "This is a hugely important release for Infinispan. No more features will be added to 4.0.0, and all efforts will now focus on stability, performance and squashing bugs. And for this we need your help! Download, try out, feedback. And you will be rewarded with a rock-solid, lightning-fast final release that you can depend on."
+#, fuzzy
+msgid ""
+"This is a hugely important release for Infinispan. No more features will be "
+"added to 4.0.0, and all efforts will now focus on stability, performance and "
+"squashing bugs. And for this we need your help! Download, try out, feedback. "
+"And you will be rewarded with a rock-solid, lightning-fast final release "
+"that you can depend on."
 msgstr ""
+"これはInfinispanにとって非常に重要なリリースです。これ以上の機能は4.0."
+"0には追加されず、すべての努力は安定性、パフォーマンス、バグの撲滅に集中することになります。そのためには、皆様のご協力が必要です。ダウンロードして、試して、フィードバックしてください。そうすれば、あなたが頼りにしているような、強固で雷のように速い最終リリースで報われることでしょう。"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-25-first-beta-now-available.adoc:40
-msgid "Some things that have changed since the alphas include a better mechanism of http://infinispan.blogspot.com/2009/08/defining-cache-configurations-via.html[naming caches and overriding configurations], and a new http://infinispan.sourceforge.net/4.0/apidocs/config.html[configuration XML reference guide]. Don't forget the http://www.jboss.org/community/wiki/5minutetutorialonInfinispan[5-minute guide] for the impatient, and the http://www.jboss.org/community/wiki/Infinispaninteractivetutorial[interactive tutorial] to get you started as well."
+#, fuzzy
+msgid ""
+"Some things that have changed since the alphas include a better mechanism of "
+"http://infinispan.blogspot.com/2009/08/defining-cache-configurations-via."
+"html[naming caches and overriding configurations], and a new http://"
+"infinispan.sourceforge.net/4.0/apidocs/config.html[configuration XML "
+"reference guide]. Don't forget the http://www.jboss.org/community/wiki/"
+"5minutetutorialonInfinispan[5-minute guide] for the impatient, and the http:/"
+"/www.jboss.org/community/wiki/Infinispaninteractivetutorial[interactive "
+"tutorial] to get you started as well."
 msgstr ""
+"アルファから変更された点としては、キャッシュの名前 link:http://infinispan.blogspot.com/2009/08/"
+"defining-cache-configurations-via.html[付けや設定のオーバーライドの] 仕組みが改善されたこと、新しい link:"
+"http://infinispan.sourceforge.net/4.0/apidocs/config.html[設定 XML リファレンスガイド] "
+"があります。せっかちな方のための link:http://www.jboss.org/community/wiki/"
+"5minutetutorialonInfinispan[5 分間のガイド] と、 link:http://www.jboss.org/community/"
+"wiki/Infinispaninteractivetutorial[対話型のチュートリアル] もお忘れなく。"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-25-first-beta-now-available.adoc:45
-msgid "There are a lot of folk to thank - way too many to list here, but you all know who you are. For a full set of release notes, visit https://jira.jboss.org/jira/secure/ConfigureReport.jspa?versions=12313463&sections=.1.7.2.4.10.9.8.3.12.11.5&style=none&selectedProjectId=12310799&reportKey=pl.net.mamut%3Areleasenotes&Next=Next[this JIRA page]."
+#, fuzzy
+msgid ""
+"There are a lot of folk to thank - way too many to list here, but you all "
+"know who you are. For a full set of release notes, visit https://jira.jboss."
+"org/jira/secure/ConfigureReport.jspa?versions=12313463&sections=.1.7.2.4.10."
+"9.8.3.12.11.5&style=none&selectedProjectId=12310799&reportKey=pl.net."
+"mamut%3Areleasenotes&Next=Next[this JIRA page]."
 msgstr ""
+"ここには感謝すべき多くの人々がいます - "
+"あまりにも多すぎてリストアップできませんが、皆さんは自分が誰であるかを知っています。リリースノートの全セットについては、 link:https://"
+"jira.jboss.org/jira/secure/ConfigureReport.jspa?versions=12313463&sections=."
+"1.7.2.4.10.9.8.3.12.11.5&style=none&selectedProjectId=12310799&reportKey=pl."
+"net.mamut%3Areleasenotes&Next=Next[この JIRA のページを] ご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-25-first-beta-now-available.adoc:49
-msgid "http://www.jboss.org/infinispan/downloads[Download], try it out, and http://www.jboss.org/infinispan/forums.html[feedback] as much as possible. We'd love to hear from you!"
+#, fuzzy
+msgid ""
+"http://www.jboss.org/infinispan/downloads[Download], try it out, and http://"
+"www.jboss.org/infinispan/forums.html[feedback] as much as possible. We'd "
+"love to hear from you!"
 msgstr ""
+"link:http://www.jboss.org/infinispan/downloads[ダウンロードして] 、試して、できるだけ link:"
+"http://www.jboss.org/infinispan/forums.html[フィードバックして] "
+"ください。皆様からのご意見をお待ちしております"
 
 #. type: Plain text
 #: upstream/_posts/2009-08-25-first-beta-now-available.adoc:51
+#, fuzzy
 msgid "Enjoy Manik"
-msgstr ""
+msgstr "マニクを楽しむ"

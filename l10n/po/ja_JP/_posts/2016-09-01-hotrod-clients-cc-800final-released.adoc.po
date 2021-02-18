@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-09-01-hotrod-clients-cc-800final-released.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-01-hotrod-clients-cc-800final-released.adoc:16
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Hotrod clients C/C# 8.0.0.Final released!\n"
@@ -38,82 +38,137 @@ msgid ""
 "\"dotnet-client\",\n"
 "\"c#\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-161784789766810714\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/09/hotrod-clients-cc-800final-released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"161784789766810714\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/09/hotrod-clients-cc-"
+"800final-released.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Hotrod clients C/C# 8.0.0.Finalをリリースしました。\n"
+"permalink: /blog/:year/:month/:day/hotrod-clients-cc-800final-released\n"
+"date: '2016-09-01T02:58:00.001-07:00'\n"
+"author: rigazilla\n"
+"tags: [ \"c++\",\n"
+"\"release\",\n"
+"\"hotrod\",\n"
+"\"cpp-client\",\n"
+"\"dotnet-client\",\n"
+"\"c#\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"161784789766810714\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/09/hotrod-clients-cc-"
+"800final-released.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-01-hotrod-clients-cc-800final-released.adoc:20
-msgid "Dear Infinispan community, I'm glad to announce the Final release of the C++ and C# clients version 8.0.0."
+#, fuzzy
+msgid ""
+"Dear Infinispan community, I'm glad to announce the Final release of the C++ "
+"and C# clients version 8.0.0."
 msgstr ""
+"親愛なるInfinispanコミュニティの皆様、C++とC#クライアントのバージョン8.0.0.0の最終リリースを発表できることを嬉しく思います。"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-01-hotrod-clients-cc-800final-released.adoc:22
+#, fuzzy
 msgid "You can find the download on the Infinispan web site:"
-msgstr ""
+msgstr "ダウンロードはInfinispanのホームページで確認できます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-01-hotrod-clients-cc-800final-released.adoc:24
+#, fuzzy
 msgid "http://infinispan.org/hotrod-clients/"
-msgstr ""
+msgstr "http://infinispan.org/hotrod-clients/"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-01-hotrod-clients-cc-800final-released.adoc:26
+#, fuzzy
 msgid "Major new features for this release are:"
-msgstr ""
+msgstr "今回のリリースの主な新機能は以下の通りです。"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-01-hotrod-clients-cc-800final-released.adoc:28
+#, fuzzy
 msgid "queries"
-msgstr ""
+msgstr "問いかけ"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-01-hotrod-clients-cc-800final-released.adoc:29
+#, fuzzy
 msgid "remote script execution"
-msgstr ""
+msgstr "リモートスクリプト実行"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-01-hotrod-clients-cc-800final-released.adoc:30
+#, fuzzy
 msgid "asynchronous operation (C++ only)"
-msgstr ""
+msgstr "ひどうきえんざん"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-01-hotrod-clients-cc-800final-released.adoc:33
-msgid "plus several minor and internal updates that partially fill the gap between C++/C# and the Java client."
-msgstr ""
+#, fuzzy
+msgid ""
+"plus several minor and internal updates that partially fill the gap between "
+"C++/C# and the Java client."
+msgstr "さらに、C++/C#とJavaクライアントの間のギャップを部分的に埋めるいくつかのマイナーアップデートと内部アップデートが行われました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-01-hotrod-clients-cc-800final-released.adoc:37
-msgid "Some posts about the 8 serie of the C++/C# clients have been already published on this blog, you can recall them clicking through the list below."
+#, fuzzy
+msgid ""
+"Some posts about the 8 serie of the C++/C# clients have been already "
+"published on this blog, you can recall them clicking through the list below."
 msgstr ""
+"C++/"
+"C#クライアントの8セリエについてのいくつかの記事は、すでにこのブログで公開されている、あなたは以下のリストをクリックしてそれらを思い出すことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-01-hotrod-clients-cc-800final-released.adoc:41
-msgid "http://blog.infinispan.org/2016/06/hotrod-c-native-client-8-series.html[HotRod C++ Native Client 8 Series]"
+#, fuzzy
+msgid ""
+"http://blog.infinispan.org/2016/06/hotrod-c-native-client-8-series."
+"html[HotRod C++ Native Client 8 Series]"
 msgstr ""
+"link:http://blog.infinispan.org/2016/06/hotrod-c-native-client-8-series."
+"html[HotRod C++ネイティブクライアント 8シリーズ]"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-01-hotrod-clients-cc-800final-released.adoc:43
-msgid "http://blog.infinispan.org/2016/07/remote-execution-with-c-client.html[Remote Execution with C++ client] "
+#, fuzzy
+msgid ""
+"http://blog.infinispan.org/2016/07/remote-execution-with-c-client."
+"html[Remote Execution with C++ client] "
 msgstr ""
+"link:http://blog.infinispan.org/2016/07/remote-execution-with-c-client."
+"html[C++ クライアントによるリモート実行]"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-01-hotrod-clients-cc-800final-released.adoc:45
-msgid "http://blog.infinispan.org/2016/08/infinispan-queries-with-c-client.html[Infinispan queries with C++ client]"
+#, fuzzy
+msgid ""
+"http://blog.infinispan.org/2016/08/infinispan-queries-with-c-client."
+"html[Infinispan queries with C++ client]"
 msgstr ""
+"link:http://blog.infinispan.org/2016/08/infinispan-queries-with-c-client."
+"html[C++クライアントを使用したInfinispanクエリ]"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-01-hotrod-clients-cc-800final-released.adoc:47
+#, fuzzy
 msgid "The equivalent C# examples are collected here:"
-msgstr ""
+msgstr "これに相当するC#の例を集めてみました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-01-hotrod-clients-cc-800final-released.adoc:49
+#, fuzzy
 msgid "https://github.com/rigazilla/dotnet-client-examples"
-msgstr ""
+msgstr "https://github.com/rigazilla/dotnet-client-examples"
 
 #. type: Plain text
 #: upstream/_posts/2016-09-01-hotrod-clients-cc-800final-released.adoc:51
+#, fuzzy
 msgid "Enjoy!"
-msgstr ""
+msgstr "楽しもう"

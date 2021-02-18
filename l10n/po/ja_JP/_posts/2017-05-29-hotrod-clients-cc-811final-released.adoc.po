@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-05-29-hotrod-clients-cc-811final-released.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-29-hotrod-clients-cc-811final-released.adoc:17
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Hotrod clients C++/C# 8.1.1.Final released!\n"
@@ -39,37 +39,79 @@ msgid ""
 "\"dotnet-client\",\n"
 "\"c#\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8393097383037146988\n"
-"blogger_orig_url: https://blog.infinispan.org/2017/05/hotrod-clients-cc-811final-released.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8393097383037146988\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/05/hotrod-clients-cc-"
+"811final-released.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Hotrod clients C++/C# 8.1.1.Finalをリリースしました。\n"
+"permalink: /blog/:year/:month/:day/hotrod-clients-cc-811final-released\n"
+"date: '2017-05-29T03:16:00.001-07:00'\n"
+"author: rigazilla\n"
+"tags: [ \"c++\",\n"
+"\"release\",\n"
+"\"minor release\",\n"
+"\"final\",\n"
+"\"cpp-client\",\n"
+"\"dotnet-client\",\n"
+"\"c#\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8393097383037146988\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/05/hotrod-clients-cc-"
+"811final-released.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-29-hotrod-clients-cc-811final-released.adoc:19
+#, fuzzy
 msgid "Dear Infinispanners,"
-msgstr ""
+msgstr "親愛なるインフィニスパナーの皆様。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-29-hotrod-clients-cc-811final-released.adoc:22
-msgid "we're pleased to announce that 8.1.1.Final release for C++/C# clients is out!"
-msgstr ""
+#, fuzzy
+msgid ""
+"we're pleased to announce that 8.1.1.Final release for C++/C# clients is "
+"out!"
+msgstr "8.1.1.1.C++/C#クライアント向けの最終リリースを発表します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-29-hotrod-clients-cc-811final-released.adoc:29
-msgid "Check the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314125&version=12334600[release notes] and https://github.com/infinispan/cpp-client/tree/8.1.1.Final[browse the source code], effort this time has been put in reducing code complexity."
+#, fuzzy
+msgid ""
+"Check the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
+"12314125&version=12334600[release notes] and https://github.com/infinispan/"
+"cpp-client/tree/8.1.1.Final[browse the source code], effort this time has "
+"been put in reducing code complexity."
 msgstr ""
+"link:https://issues.jboss.org/secure/ReleaseNote.jspa?projectId="
+"12314125&version=12334600[リリースノートを] 確認して link:https://github.com/infinispan/"
+"cpp-client/tree/8.1.1.Final[ソースコードを閲覧し] 、今回は複雑なコードの削減に力を入れています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-29-hotrod-clients-cc-811final-released.adoc:34
-msgid "This is the first release built by our new CI Jenkins environment, this is supposed to not affect the binaries but if you feel that something has gone wrong please fill a https://issues.jboss.org/projects/HRCPP/issues[jira issue]."
+#, fuzzy
+msgid ""
+"This is the first release built by our new CI Jenkins environment, this is "
+"supposed to not affect the binaries but if you feel that something has gone "
+"wrong please fill a https://issues.jboss.org/projects/HRCPP/issues[jira "
+"issue]."
 msgstr ""
+"これは私たちの新しいCI "
+"Jenkins環境によって構築された最初のリリースです。これはバイナリには影響しないと思われますが、何かが間違っていると感じた場合は link:"
+"https://issues.jboss.org/projects/HRCPP/issues[jiraの問題を] 埋めてください。"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-29-hotrod-clients-cc-811final-released.adoc:36
+#, fuzzy
 msgid "Enjoy and thanks for reading!"
-msgstr ""
+msgstr "お楽しみに、そしてお読みいただきありがとうございました"
 
 #. type: Plain text
 #: upstream/_posts/2017-05-29-hotrod-clients-cc-811final-released.adoc:37
+#, fuzzy
 msgid "The Infinispan Team"
-msgstr ""
+msgstr "インフィニスパンチーム"

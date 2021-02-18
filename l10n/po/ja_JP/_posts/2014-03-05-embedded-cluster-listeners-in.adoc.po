@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Embedded Cluster Listeners in Infinispan 7.0.0.Alpha1\n"
@@ -32,169 +32,328 @@ msgid ""
 "date: '2014-03-05T06:54:00.000-08:00'\n"
 "author: infinispan\n"
 "tags: [ \" listeners\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5744590504523514675\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/03/embedded-cluster-listeners-in.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5744590504523514675\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/03/embedded-cluster-"
+"listeners-in.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 7.0.0.0.Alpha1の組み込みクラスタリスナー\n"
+"permalink: /blog/:year/:month/:day/embedded-cluster-listeners-in\n"
+"date: '2014-03-05T06:54:00.000-08:00'\n"
+"author: infinispan\n"
+"tags: [ \" listeners\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5744590504523514675\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/03/embedded-cluster-"
+"listeners-in.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:19
-msgid "If you are following on the dev listing, you may have seen a https://github.com/infinispan/infinispan/wiki/Clustered-listeners[design doc] come through that details adding support for Clustered Listeners to Infinispan.  This features allows for listeners to be used in a distributed cache configuration.  I am happy to say that this feature is now in http://blog.infinispan.org/2014/02/infinispan-700alpha1-release.html[Infinispan 7.0.0.Alpha1] !"
+#, fuzzy
+msgid ""
+"If you are following on the dev listing, you may have seen a https://github."
+"com/infinispan/infinispan/wiki/Clustered-listeners[design doc] come through "
+"that details adding support for Clustered Listeners to Infinispan.  This "
+"features allows for listeners to be used in a distributed cache "
+"configuration.  I am happy to say that this feature is now in http://blog."
+"infinispan.org/2014/02/infinispan-700alpha1-release.html[Infinispan 7.0.0."
+"Alpha1] !"
 msgstr ""
+"もしあなたが開発者リストを見ているならば、Infinispanにクラスターリスナーのサポートを追加するという link:https://github."
+"com/infinispan/infinispan/wiki/Clustered-listeners[設計書] を見たかもしれません。 "
+"この機能はリスナーを分散キャッシュ構成で使用することを可能にします。 この機能がInfinispan link:http://blog."
+"infinispan.org/2014/02/infinispan-700alpha1-release.html[7.0.0.0.Alpha1に] "
+"搭載されたことを喜んでいます。"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:26
-msgid "This feature is needed since local listeners in a distributed cache are only notified of events on the node where the data resides.  Therefore, clustered listeners allow for a single listener to receive any write notification (limited to CacheEntryCreatedEvent, CacheEntryModifiedEvent and CacheEntryRemovedEvent) that occurs in the cluster which is installed on 1 node."
+#, fuzzy
+msgid ""
+"This feature is needed since local listeners in a distributed cache are only "
+"notified of events on the node where the data resides.  Therefore, clustered "
+"listeners allow for a single listener to receive any write notification "
+"(limited to CacheEntryCreatedEvent, CacheEntryModifiedEvent and "
+"CacheEntryRemovedEvent) that occurs in the cluster which is installed on 1 "
+"node."
 msgstr ""
+"分散キャッシュのローカルリスナーは、データが存在するノード上のイベントしか通知されないため、この機能が必要とされています。 "
+"そのため、クラスタ化されたリスナーは、1つのノードに設置されたクラスタ内で発生した任意の書き込み通知（CacheEntryCreatedEvent、CacheEntryModifiedEvent、およびCacheEntryRemovedEventに限定）を1つのリスナーが受信できるようにしています。"
 
 #. type: Title ====
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:28
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Basic Example"
-msgstr ""
+msgstr "基本的な例"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:32
-msgid "Using a cluster listener is just as easy as a regular listener. Here is a simple use case that stores the events as it receives them."
-msgstr ""
+#, fuzzy
+msgid ""
+"Using a cluster listener is just as easy as a regular listener. Here is a "
+"simple use case that stores the events as it receives them."
+msgstr "クラスタリスナーを使うのは、通常のリスナーと同じように簡単です。ここでは、受信したイベントを保存するシンプルなユースケースを紹介します。"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:39
-msgid "That is all that is required is just to set the property of your Listener annotated class to say _clustered = true_. There are other important changes in the rest of the document. Please let us know how you like the new cluster listeners ! Also if any issues are found, it is much appreciated to log those to https://issues.jboss.org/browse/ISPN[JIRA]."
+#, fuzzy
+msgid ""
+"That is all that is required is just to set the property of your Listener "
+"annotated class to say _clustered = true_. There are other important changes "
+"in the rest of the document. Please let us know how you like the new cluster "
+"listeners ! Also if any issues are found, it is much appreciated to log "
+"those to https://issues.jboss.org/browse/ISPN[JIRA]."
 msgstr ""
+"必要なのは、リスナー注釈付きクラスのプロパティに _clustered = true_ "
+"と設定するだけです。このドキュメントの他の部分にも重要な変更点があります。新しいクラスタ・リスナーをどのようにお使いになるか教えてください!また、何か問題が見つかった場合は、 "
+"link:https://issues.jboss.org/browse/ISPN[JIRA] にログを記録していただけるとありがたいです。"
 
 #. type: Title ====
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:41
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Differences between Local and Cluster Listeners"
-msgstr ""
+msgstr "ローカルリスナーとクラスタリスナーの違い"
 
 #. type: Title =====
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:43
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Pre and post Notifications"
-msgstr ""
+msgstr "事前通知と事後通知"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:50
-msgid "In a local cluster listener, the listener is notified twice, before the operation is completed and after the entry is updated.  A cluster listener is *ONLY* notified after the operation is completed while still holding locks.  Therefore, the _isPre_ method always returns false in a cluster listener."
+#, fuzzy
+msgid ""
+"In a local cluster listener, the listener is notified twice, before the "
+"operation is completed and after the entry is updated.  A cluster listener "
+"is *ONLY* notified after the operation is completed while still holding "
+"locks.  Therefore, the _isPre_ method always returns false in a cluster "
+"listener."
 msgstr ""
+"ローカルクラスタリスナーでは、操作が完了する前とエントリが更新された後の2回、リスナーに通知されます。 "
+"クラスタリスナーは、ロックを保持したまま操作が完了した後にのみ通知されます。 したがって、クラスタリスナーでは、isPre _メソッドは_ "
+"常にfalseを返します。"
 
 #. type: Title =====
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:51
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Transaction begin and completion"
-msgstr ""
+msgstr "取引開始と完了"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:59
-msgid "In a transactional cache, local listeners are notified when a transaction begins and when it is completed (either through rollback or commit).  A cluster listener is never notified of anything occurring until after the data has been updated, and thus will only ever be notified of committed entries and also will not receive TransactionRegisteredEvent or TransactionCompletedEvent events."
+#, fuzzy
+msgid ""
+"In a transactional cache, local listeners are notified when a transaction "
+"begins and when it is completed (either through rollback or commit).  A "
+"cluster listener is never notified of anything occurring until after the "
+"data has been updated, and thus will only ever be notified of committed "
+"entries and also will not receive TransactionRegisteredEvent or "
+"TransactionCompletedEvent events."
 msgstr ""
+"トランザクションキャッシュでは、ローカルリスナーはトランザクションが開始されたときと完了したときに通知されます (ロールバックまたはコミットによって)。 "
+"クラスタリスナーは、データが更新されるまで何かが発生したことを通知されることはなく、コミットされたエントリのみが通知され、また "
+"TransactionRegisteredEvent または TransactionCompletedEvent イベントも受信しません。"
 
 #. type: Title ===
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:61
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "API Changes"
-msgstr ""
+msgstr "APIの変更点"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:66
-msgid "There are a few new API classes that have been added to allow for configuration and operation of cluster listeners."
-msgstr ""
+#, fuzzy
+msgid ""
+"There are a few new API classes that have been added to allow for "
+"configuration and operation of cluster listeners."
+msgstr "クラスタリスナーの設定や操作を可能にするAPIクラスがいくつか追加されました。"
 
 #. type: Title ====
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:68
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Listener annotation"
-msgstr ""
+msgstr "リスナー注釈"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:73
-msgid "The existing org.infinispan.notifications.Listener annotation has had a couple properties added to it."
-msgstr ""
+#, fuzzy
+msgid ""
+"The existing org.infinispan.notifications.Listener annotation has had a "
+"couple properties added to it."
+msgstr "既存の org.infinispan.notifications.Listener アノテーションにいくつかのプロパティが追加されました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:77
-msgid "The new clustered property defines whether or not this listener is a cluster listener or not.  This means the listener will be sent all write modification events."
+#, fuzzy
+msgid ""
+"The new clustered property defines whether or not this listener is a cluster "
+"listener or not.  This means the listener will be sent all write "
+"modification events."
 msgstr ""
+"新しいclusteredプロパティは、このリスナーがクラスタリスナーであるかどうかを定義します。 "
+"これは、リスナーがすべての書き込み変更イベントを送信することを意味します。"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:82
-msgid "A cluster listener is not supported in an Invalidation cache.  Local or replicated caches can use a cluster listener though.  They will behave like a local cluster listener, except that replicated will be less performant."
+#, fuzzy
+msgid ""
+"A cluster listener is not supported in an Invalidation cache.  Local or "
+"replicated caches can use a cluster listener though.  They will behave like "
+"a local cluster listener, except that replicated will be less performant."
 msgstr ""
+"クラスタリスナーは無効キャッシュではサポートされていません。 "
+"ローカルまたはレプリケートされたキャッシュはクラスタリスナーを使うことができますが、レプリケートされたキャッシュはパフォーマンスが低くなることを除いてローカルクラスタリスナーと同じように動作します。"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:95
-msgid "The includeCurrentState property is also new and will provide a way for a listener when being registered to immediately be sent a CacheCreatedEvent for every entry in the cache.  This will be supported for both local and cluster listeners.  In a local listener it will only query the local data that is available, so in the case of a Distributed cache this will still only provide a possible subset of data.  However a clustered listener will retrieve the data from all nodes as needed.  A cache will still be available for writes during the includeCurrentState period.  However the notifications will be queued until all state has been first sent. *NOTE: includeCurrentState is currently not implemented but is planned during this release still* see https://issues.jboss.org/browse/ISPN-4068[ISPN-4068]"
+#, fuzzy
+msgid ""
+"The includeCurrentState property is also new and will provide a way for a "
+"listener when being registered to immediately be sent a CacheCreatedEvent "
+"for every entry in the cache.  This will be supported for both local and "
+"cluster listeners.  In a local listener it will only query the local data "
+"that is available, so in the case of a Distributed cache this will still "
+"only provide a possible subset of data.  However a clustered listener will "
+"retrieve the data from all nodes as needed.  A cache will still be available "
+"for writes during the includeCurrentState period.  However the notifications "
+"will be queued until all state has been first sent. *NOTE: "
+"includeCurrentState is currently not implemented but is planned during this "
+"release still* see https://issues.jboss.org/browse/ISPN-4068[ISPN-4068]"
 msgstr ""
+"includeCurrentState プロパティも新しくなり、登録されているリスナーがキャッシュ内のすべてのエントリに対して "
+"CacheCreatedEvent を直ちに送信する方法を提供します。 これはローカルおよびクラスタ・リスナーの両方でサポートされます。 "
+"ローカル・リスナーでは、利用可能なローカル・データのみを照会するので、分散キャッシュの場合、これはまだデータの可能なサブセットのみを提供します。しかし、クラスタ化されたリスナーは必要に応じてすべてのノードからデータを取得します。 "
+"キャッシュはincludeCurrentState期間中も書き込みのために利用可能です。 "
+"しかし、通知はすべての状態が最初に送信されるまでキューに入れられます。 *注: "
+"includeCurrentStateは現在実装されていませんが、このリリースでは計画されています* 。"
 
 #. type: Title ====
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:97
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "KeyValueFilter"
-msgstr ""
+msgstr "キー値フィルタ"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:102
-msgid "This is a new Filter class that can be used to filter events or other operations based on the key value and metadata of the updated object."
-msgstr ""
+#, fuzzy
+msgid ""
+"This is a new Filter class that can be used to filter events or other "
+"operations based on the key value and metadata of the updated object."
+msgstr "更新されたオブジェクトのキー値やメタデータに基づいて、イベントなどの操作をフィルタリングすることができる新しいFilterクラスです。"
 
 #. type: Title ====
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:105
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Converter"
-msgstr ""
+msgstr "コンバータ"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:114
-msgid "A converter is used to convert a given key, value, metadata entry to a resulting value. This is useful if your listener doesn't require the entire value and need just a portion from it. Or if the listener were to do some sort of translation, this would allow it to scale to each node instead of having to run the translation all on the node where the listener is registered."
+#, fuzzy
+msgid ""
+"A converter is used to convert a given key, value, metadata entry to a "
+"resulting value. This is useful if your listener doesn't require the entire "
+"value and need just a portion from it. Or if the listener were to do some "
+"sort of translation, this would allow it to scale to each node instead of "
+"having to run the translation all on the node where the listener is "
+"registered."
 msgstr ""
+"コンバータは、与えられたキー、値、メタデータエントリを結果の値に変換するために使用されます。これは、リスナーが値全体を必要とせず、その一部だけを必要とする場合に便利です。あるいは、リスナーが何らかの変換を行う場合、リスナーが登録されているノード上ですべての変換を実行する代わりに、各ノードに合わせてスケーリングすることができます。"
 
 #. type: Title ====
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:117
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Cache"
-msgstr ""
+msgstr "キャッシュ"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:125
-msgid "The cache interface also has an additional overloaded method to allow for registering the previously mentioned KeyValueFilter and Converter with the Listener provided.  Note that either type of listener, cluster or local, may be used with any of the overloaded addListener methods on the Cache interface."
+#, fuzzy
+msgid ""
+"The cache interface also has an additional overloaded method to allow for "
+"registering the previously mentioned KeyValueFilter and Converter with the "
+"Listener provided.  Note that either type of listener, cluster or local, may "
+"be used with any of the overloaded addListener methods on the Cache "
+"interface."
 msgstr ""
+"キャッシュ・インタフェースには、前述の KeyValueFilter と Converter "
+"を提供されたリスナーに登録できるようにするための追加のオーバーロード・メソッドもあります。 "
+"クラスタまたはローカルのどちらのタイプのリスナーも、Cache インタフェースのオーバーロードされた addListener "
+"メソッドのいずれかと一緒に使用できることに注意してください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:135
-msgid "This new method is similar to the other addListener methods, but is specially optimized for use with cluster listeners in distributed mode.  Whenever a modification occurs which would cause an event to be sent to the cluster notifier the KeyValueFilter is first ran to see if this event should even be sent to the listener. If it is then the converter will be used to convert result into whatever data is desired to send back to the listener. These combined allow for reducing overall network traffic for events that you don't want to get or reduce payload size by sending a different or subset of the value."
+#, fuzzy
+msgid ""
+"This new method is similar to the other addListener methods, but is "
+"specially optimized for use with cluster listeners in distributed mode.  "
+"Whenever a modification occurs which would cause an event to be sent to the "
+"cluster notifier the KeyValueFilter is first ran to see if this event should "
+"even be sent to the listener. If it is then the converter will be used to "
+"convert result into whatever data is desired to send back to the listener. "
+"These combined allow for reducing overall network traffic for events that "
+"you don't want to get or reduce payload size by sending a different or "
+"subset of the value."
 msgstr ""
+"この新しいメソッドは他のaddListenerメソッドと似ていますが、分散モードでのクラスタリスナーでの使用のために特別に最適化されています。クラスタ通知器にイベントが送信されるような変更が発生した場合はいつでも、 "
+"KeyValueFilter "
+"が最初に実行され、このイベントがリスナーに送信されるべきかどうかを確認します。もしそうであれば、結果をリスナーに送信したいデータに変換するためにコンバータが使用されます。これらを組み合わせることで、取得したくないイベントのための全体的なネットワークトラフィックを減らしたり、異なる値やサブセットを送信することでペイロードのサイズを小さくしたりすることができます。"
 
 #. type: Title ====
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Events"
-msgstr ""
+msgstr "イベント情報"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:147
-msgid "There are some cases in Infinispan when it is unclear if a notification was properly raised in a non transactional cache. Due to this we have made available an additional value on the CacheEntryCreatedEvent, CacheEntryModifiedEvent, and CacheEntryRemovedEvent. This is to symbolize that this event could have been possibly duplicated or even changed types (CacheEntryModifiedEvent instead of CacheEntryCreatedEvent)."
+#, fuzzy
+msgid ""
+"There are some cases in Infinispan when it is unclear if a notification was "
+"properly raised in a non transactional cache. Due to this we have made "
+"available an additional value on the CacheEntryCreatedEvent, "
+"CacheEntryModifiedEvent, and CacheEntryRemovedEvent. This is to symbolize "
+"that this event could have been possibly duplicated or even changed types "
+"(CacheEntryModifiedEvent instead of CacheEntryCreatedEvent)."
 msgstr ""
+"Infinispan では、非トランザクション "
+"キャッシュで通知が適切に発生したかどうかが不明な場合があります。このため、CacheEntryCreatedEvent、CacheEntryModifiedEvent、および "
+"CacheEntryRemovedEvent "
+"で追加の値を利用できるようにしました。これは、このイベントが重複している可能性があること、またはタイプが変更されている可能性があることを象徴しています "
+"(CacheEntryCreatedEvent の代わりに CacheEntryModifiedEvent)。"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:150
-msgid "This should only return true if we had a node who was an owner go down while in the middle of processing the write."
-msgstr ""
+#, fuzzy
+msgid ""
+"This should only return true if we had a node who was an owner go down while "
+"in the middle of processing the write."
+msgstr "これは、書き込み処理の途中でオーナーであるノードがダウンした場合にのみtrueを返すべきです。"
 
 #. type: Title ===
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:152
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Functional Changes"
-msgstr ""
+msgstr "機能の変化"
 
 #. type: Title ====
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:156
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CacheEntryModified during creates"
-msgstr ""
+msgstr "作成中に変更された CacheEntry"
 
 #. type: Plain text
 #: upstream/_posts/2014-03-05-embedded-cluster-listeners-in.adoc:163
-msgid "Prior to Infinispan 7.0, whenever a new entry was created, this would generate both CacheEntryCreated and CacheEntryModified events.  This has been changed now so that only a CacheEntryCreated event is raised to more consistently model what has occurred."
+#, fuzzy
+msgid ""
+"Prior to Infinispan 7.0, whenever a new entry was created, this would "
+"generate both CacheEntryCreated and CacheEntryModified events.  This has "
+"been changed now so that only a CacheEntryCreated event is raised to more "
+"consistently model what has occurred."
 msgstr ""
+"Infinispan 7.0 より前のバージョンでは、新しいエントリが作成されるたびに、CacheEntryCreated イベントと "
+"CacheEntryModified イベントの両方が生成されていました。 これが変更され、CacheEntryCreated "
+"イベントのみが発生し、発生した内容をより一貫してモデル化するようになりました。"

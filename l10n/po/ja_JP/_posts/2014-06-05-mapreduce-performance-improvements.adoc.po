@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:15
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Map/Reduce Performance improvements between Infinispan 6 and 7\n"
@@ -36,164 +36,376 @@ msgid ""
 "\"performance\",\n"
 "\"map reduce\"\n"
 "]\n"
-"thumbnail: http://3.bp.blogspot.com/-TZD4uFGgkuc/U5ApZx-8KGI/AAAAAAAAABo/VSJkbhFFnDg/s72-c/ISPN_6_fixed_size_and_30%25_throughput.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1103477400247661206\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/06/mapreduce-performance-improvements.html\n"
+"thumbnail: http://3.bp.blogspot.com/-TZD4uFGgkuc/U5ApZx-8KGI/AAAAAAAAABo/"
+"VSJkbhFFnDg/s72-c/ISPN_6_fixed_size_and_30%25_throughput.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1103477400247661206\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/06/mapreduce-performance-"
+"improvements.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 6と7の間のMap/Reduceパフォーマンスの向上\n"
+"permalink: /blog/:year/:month/:day/mapreduce-performance-improvements\n"
+"date: '2014-06-05T07:59:00.000-07:00'\n"
+"author: infinispan\n"
+"tags: [ \"radargun\",\n"
+"\"benchmarks\",\n"
+"\"performance\",\n"
+"\"map reduce\"\n"
+"]\n"
+"thumbnail: http://3.bp.blogspot.com/-TZD4uFGgkuc/U5ApZx-8KGI/AAAAAAAAABo/"
+"VSJkbhFFnDg/s72-c/ISPN_6_fixed_size_and_30%25_throughput.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1103477400247661206\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/06/mapreduce-performance-"
+"improvements.html\n"
+"---\n"
 
 #. type: Title ==
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:18
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Introduction"
-msgstr ""
+msgstr "序章"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:27
-msgid "There have been a number of recent Infinispan 7.0 Map/Reduce performance related https://issues.jboss.org/browse/ISPN-4241?filter=12321790[improvements] that we were eager to test in our performance lab and subsequently share with you. The results are more than promising. In the word count use case, Map/Reduce task execution speed and throughput improvement is between fourfold and sixfold in certain situations that were tested."
+#, fuzzy
+msgid ""
+"There have been a number of recent Infinispan 7.0 Map/Reduce performance "
+"related https://issues.jboss.org/browse/ISPN-4241?filter="
+"12321790[improvements] that we were eager to test in our performance lab and "
+"subsequently share with you. The results are more than promising. In the "
+"word count use case, Map/Reduce task execution speed and throughput "
+"improvement is between fourfold and sixfold in certain situations that were "
+"tested."
 msgstr ""
+"最近、Infinispan 7.0 Map/Reduceパフォーマンスに関連した link:https://issues.jboss.org/"
+"browse/ISPN-4241?filter=12321790[改善点が] "
+"いくつかあり、パフォーマンス・ラボでテストを行い、その後、皆様と共有したいと考えていました。その結果は期待以上のものでした。ワードカウントのユースケースでは、テストされた特定の状況で、Map/"
+"Reduceタスクの実行速度とスループットが4倍から6倍に向上した。"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:29
+#, fuzzy
 msgid "We have achieved these improvements by focusing on:"
-msgstr ""
+msgstr "を重視したことで、これらの改善を実現しました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:31
+#, fuzzy
 msgid "Optimized mapper/reducer parallel execution on all nodes"
-msgstr ""
+msgstr "全ノードでのマッパー/レデューサーの並列実行を最適化"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:32
+#, fuzzy
 msgid "Improving the handling and processing of larger data sets"
-msgstr ""
+msgstr "より大きなデータセットの取り扱いと処理の改善"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:33
+#, fuzzy
 msgid "Reducing the amount of memory needed for execution of MapReduceTask"
-msgstr ""
+msgstr "MapReduceTaskの実行に必要なメモリ量の削減"
 
 #. type: Title ==
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:36
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Performance Test Results"
-msgstr ""
+msgstr "性能試験結果"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:40
+#, fuzzy
 msgid "The performance tests were run using the following parameters:"
-msgstr ""
+msgstr "性能テストは、以下のパラメータを使用して実行されました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:44
-msgid "An Infinispan 7.0.0-SNAPSHOT build created after the last commits from the list were committed to the Infinispan GIT repo on May 9th vs Infinispan 6.0.1.Final "
+#, fuzzy
+msgid ""
+"An Infinispan 7.0.0-SNAPSHOT build created after the last commits from the "
+"list were committed to the Infinispan GIT repo on May 9th vs Infinispan 6.0."
+"1.Final "
 msgstr ""
+"Infinispan 7.0.0-SNAPSHOT ビルドは、5月9日にリストの最後のコミットが Infinispan GIT "
+"レポにコミットされた後に作成され、Infinispan 6.0.1.Final 対 Infinispan 6.0.1.Final です。"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:46
-msgid "OpenJDK version 1.7.0_55 with 4GB of heap and the following JVM options:"
-msgstr ""
+#, fuzzy
+msgid ""
+"OpenJDK version 1.7.0_55 with 4GB of heap and the following JVM options:"
+msgstr "OpenJDKのバージョン1.7.0_55でヒープが4GBで、以下のJVMオプションがあります。"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:56
-msgid "Random data filled 30% of the Java heap, and 100 random words were used to create the 8 kilobyte cache values. The cache keys were generated using key affinity, so that the generated data would be distributed evenly in the cache. These values were chosen, so that a comparison to Infinispan 6 could be made. Infinispan 7 can handle a final result map with a much larger set of keys than is possible in Infinispan 6. The actual amount of heap size that is used for data will be larger due to backup copies, since the cluster is running in distributed mode."
+#, fuzzy
+msgid ""
+"Random data filled 30% of the Java heap, and 100 random words were used to "
+"create the 8 kilobyte cache values. The cache keys were generated using key "
+"affinity, so that the generated data would be distributed evenly in the "
+"cache. These values were chosen, so that a comparison to Infinispan 6 could "
+"be made. Infinispan 7 can handle a final result map with a much larger set "
+"of keys than is possible in Infinispan 6. The actual amount of heap size "
+"that is used for data will be larger due to backup copies, since the cluster "
+"is running in distributed mode."
 msgstr ""
+"ランダムデータはJavaヒープの30%を埋め、100個のランダムワードを使用して8キロバイトのキャッシュ値を作成した。キャッシュキーは、生成されたデータがキャッシュ内で均等に分散されるように、キーアフィニティを使用して生成されました。これらの値は、Infinispan "
+"6 との比較ができるように選択されました。Infinispan 7 は、Infinispan 6 "
+"で可能なものよりもはるかに大きなキーのセットで最終的な結果マップを扱うことができます。クラスタが分散モードで動作しているため、データに使用される実際のヒープサイズはバックアップコピーのために大きくなります。"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:65
-msgid "The MapReduceTask executes a word count against the cache values using https://github.com/infinispan/infinispan/blob/master/demos/distexec/src/main/java/org/infinispan/demo/mapreduce/WordCountMapperEmitPerValue.java[mapper], https://github.com/infinispan/infinispan/blob/master/demos/distexec/src/main/java/org/infinispan/demo/mapreduce/WordCountReducer.java[reducer, combiner], and https://github.com/infinispan/infinispan/blob/master/demos/distexec/src/main/java/org/infinispan/demo/mapreduce/WordCountCollator.java[collator] implementations.  The collator returns the 10 most frequently occurring words in the cache data. The task used a distributed reduce phase and a shared intermediate cache. The MapReduceTask is executed 10 times against the data in the cache and the values are reported as an average of these durations."
+#, fuzzy
+msgid ""
+"The MapReduceTask executes a word count against the cache values using https:"
+"//github.com/infinispan/infinispan/blob/master/demos/distexec/src/main/java/"
+"org/infinispan/demo/mapreduce/WordCountMapperEmitPerValue.java[mapper], "
+"https://github.com/infinispan/infinispan/blob/master/demos/distexec/src/main/"
+"java/org/infinispan/demo/mapreduce/WordCountReducer.java[reducer, combiner], "
+"and https://github.com/infinispan/infinispan/blob/master/demos/distexec/src/"
+"main/java/org/infinispan/demo/mapreduce/WordCountCollator."
+"java[collator] implementations.  The collator returns the 10 most frequently "
+"occurring words in the cache data. The task used a distributed reduce phase "
+"and a shared intermediate cache. The MapReduceTask is executed 10 times "
+"against the data in the cache and the values are reported as an average of "
+"these durations."
 msgstr ""
+"MapReduceTaskは、 link:https://github.com/infinispan/infinispan/blob/master/"
+"demos/distexec/src/main/java/org/infinispan/demo/mapreduce/"
+"WordCountMapperEmitPerValue.java[マッパー、] レデューサー link:https://github.com/"
+"infinispan/infinispan/blob/master/demos/distexec/src/main/java/org/"
+"infinispan/demo/mapreduce/WordCountReducer.java[、コンバイナー、] link:https://"
+"github.com/infinispan/infinispan/blob/master/demos/distexec/src/main/java/"
+"org/infinispan/demo/mapreduce/WordCountCollator.java[コレータ] "
+"の実装を使用して、キャッシュ値に対してワードカウントを実行します。コレータは、キャッシュデータの中で最も頻繁に発生する10個の単語を返します。このタスクでは、分散リデュースフェーズと共有中間キャッシュを使用しました。MapReduceTaskはキャッシュ内のデータに対して10回実行され、値はこれらの持続時間の平均として報告される。"
 
 #. type: Title ===
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:68
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "From 1 to 8 nodes using a fixed amount of data and 30% of the heap"
-msgstr ""
+msgstr "一定量のデータとヒープの30%を使用して1～8ノードまで"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:81
-msgid "This test executes two word count executions on each cluster with an increasing number of nodes. The first execution uses an increasing amount of data equal to 30% of the total Java heap across the cluster (i.e. With one node, the data consumes 30% of 4 GB. With two nodes, the data consumes 30% of 8 GB, etc.), and the second execution uses a fixed amount of data, (1352 MB which is approximately 30% of 4 GB). Throughput is calculated by dividing the total amount of data processed by the Map/Reduce task by the duration. The following charts show the throughput as nodes are added to the cluster for these two scenarios:"
+#, fuzzy
+msgid ""
+"This test executes two word count executions on each cluster with an "
+"increasing number of nodes. The first execution uses an increasing amount of "
+"data equal to 30% of the total Java heap across the cluster (i.e. With one "
+"node, the data consumes 30% of 4 GB. With two nodes, the data consumes 30% "
+"of 8 GB, etc.), and the second execution uses a fixed amount of data, (1352 "
+"MB which is approximately 30% of 4 GB). Throughput is calculated by dividing "
+"the total amount of data processed by the Map/Reduce task by the duration. "
+"The following charts show the throughput as nodes are added to the cluster "
+"for these two scenarios:"
 msgstr ""
+"このテストでは、ノード数が増加している各クラスタ上で2つのワードカウント実行を実行します。最初の実行では、クラスタ全体の総Javaヒープの30%に相当する増加するデータ量を使用します(すなわち、1つのノードでは、データは4GBの30%を消費します。2 "
+"つのノードでは、データは 8 GB の 30% を消費するなど）、2 回目の実行では一定量のデータを使用します（4 GB の約 30% である 1352 "
+"MB）。スループットは、Map/"
+"Reduceタスクで処理されたデータの総量を持続時間で割って計算されます。次のグラフは、これら2つのシナリオについて、ノードがクラスタに追加されたときのスループットを示しています。"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:83
-msgid "http://3.bp.blogspot.com/-TZD4uFGgkuc/U5ApZx-8KGI/AAAAAAAAABo/VSJkbhFFnDg/s1600/ISPN_6_fixed_size_and_30%25_throughput.png[image:http://3.bp.blogspot.com/-TZD4uFGgkuc/U5ApZx-8KGI/AAAAAAAAABo/VSJkbhFFnDg/s1600/ISPN_6_fixed_size_and_30%25_throughput.png[image]]"
+#, fuzzy
+msgid ""
+"http://3.bp.blogspot.com/-TZD4uFGgkuc/U5ApZx-8KGI/AAAAAAAAABo/VSJkbhFFnDg/"
+"s1600/ISPN_6_fixed_size_and_30%25_throughput.png[image:http://3.bp.blogspot."
+"com/-TZD4uFGgkuc/U5ApZx-8KGI/AAAAAAAAABo/VSJkbhFFnDg/s1600/"
+"ISPN_6_fixed_size_and_30%25_throughput.png[image]]"
 msgstr ""
+"link:http://3.bp.blogspot.com/-TZD4uFGgkuc/U5ApZx-8KGI/AAAAAAAAABo/"
+"VSJkbhFFnDg/s1600/ISPN_6_fixed_size_and_30%25_throughput.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:87
-msgid "http://3.bp.blogspot.com/-pCrAYjE-GF4/U5ApZ1CkjXI/AAAAAAAAABs/5FNXfsU-eBc/s1600/ISPN_7_fixed_size_and_30%25_throughput.png[image:http://3.bp.blogspot.com/-pCrAYjE-GF4/U5ApZ1CkjXI/AAAAAAAAABs/5FNXfsU-eBc/s1600/ISPN_7_fixed_size_and_30%25_throughput.png[image]]"
+#, fuzzy
+msgid ""
+"http://3.bp.blogspot.com/-pCrAYjE-GF4/U5ApZ1CkjXI/AAAAAAAAABs/5FNXfsU-eBc/"
+"s1600/ISPN_7_fixed_size_and_30%25_throughput.png[image:http://3.bp.blogspot."
+"com/-pCrAYjE-GF4/U5ApZ1CkjXI/AAAAAAAAABs/5FNXfsU-eBc/s1600/"
+"ISPN_7_fixed_size_and_30%25_throughput.png[image]]"
 msgstr ""
+"link:http://3.bp.blogspot.com/-pCrAYjE-GF4/U5ApZ1CkjXI/AAAAAAAAABs/5FNXfsU-"
+"eBc/s1600/ISPN_7_fixed_size_and_30%25_throughput.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:93
-msgid "These charts clearly show the increase in throughput that were made in Infinispan 7. The throughput also seems to scale in an almost linear fashion for this word count scenario. With one node, Infinispan 7 processes the 30% of heap data in about 100 MB/sec, two nodes process almost 200 MB/sec, and 8 nodes process over 700 MB/sec."
+#, fuzzy
+msgid ""
+"These charts clearly show the increase in throughput that were made in "
+"Infinispan 7. The throughput also seems to scale in an almost linear fashion "
+"for this word count scenario. With one node, Infinispan 7 processes the 30% "
+"of heap data in about 100 MB/sec, two nodes process almost 200 MB/sec, and 8 "
+"nodes process over 700 MB/sec."
 msgstr ""
+"これらのチャートは、Infinispan 7 で行われたスループットの向上を明確に示しています。 "
+"スループットも、このワード数のシナリオではほぼ直線的に拡大しているようです。1 つのノードでは、Infinispan 7 はヒープデータの 30%を約 "
+"100 MB/秒で処理し、2 つのノードではほぼ 200 MB/秒、8 つのノードでは 700 MB/秒以上の処理を行います。"
 
 #. type: Title ===
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:95
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "From 1 to 8 nodes using different heap size percentages"
-msgstr ""
+msgstr "異なるヒープサイズのパーセンテージを使用した1～8ノード"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:101
-msgid "This test executes the word count task using different percentages of heap size as nodes are added to the cluster. (5%, 10%, 15%, 20%, 25%, and 30%) Here are the throughput results for this test:"
+#, fuzzy
+msgid ""
+"This test executes the word count task using different percentages of heap "
+"size as nodes are added to the cluster. (5%, 10%, 15%, 20%, 25%, and 30%) "
+"Here are the throughput results for this test:"
 msgstr ""
+"このテストでは、ノードがクラスタに追加されると、ヒープサイズの異なるパーセンテージを使用してワードカウントタスクを実行します。(5%, 10%, "
+"15%, 20%, 25%, 30%) このテストのスループットの結果を示します。"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:103
-msgid "http://2.bp.blogspot.com/-exDRqNYcquI/U5AqAFGveiI/AAAAAAAAAB4/Yqn0_j6bL-w/s1600/ISPN6_multi_ram_percent_throughput.png[image:http://2.bp.blogspot.com/-exDRqNYcquI/U5AqAFGveiI/AAAAAAAAAB4/Yqn0_j6bL-w/s1600/ISPN6_multi_ram_percent_throughput.png[image]]http://2.bp.blogspot.com/-fqmkYkxZtyI/U5AqS08Xk9I/AAAAAAAAACA/_wsTOmSbkdc/s1600/ISPN7_multi_ram_percent_throughput.png[image:http://2.bp.blogspot.com/-fqmkYkxZtyI/U5AqS08Xk9I/AAAAAAAAACA/_wsTOmSbkdc/s1600/ISPN7_multi_ram_percent_throughput.png[image]]"
+#, fuzzy
+msgid ""
+"http://2.bp.blogspot.com/-exDRqNYcquI/U5AqAFGveiI/AAAAAAAAAB4/Yqn0_j6bL-w/"
+"s1600/ISPN6_multi_ram_percent_throughput.png[image:http://2.bp.blogspot.com/-"
+"exDRqNYcquI/U5AqAFGveiI/AAAAAAAAAB4/Yqn0_j6bL-w/s1600/"
+"ISPN6_multi_ram_percent_throughput.png[image]]http://2.bp.blogspot.com/-"
+"fqmkYkxZtyI/U5AqS08Xk9I/AAAAAAAAACA/_wsTOmSbkdc/s1600/"
+"ISPN7_multi_ram_percent_throughput.png[image:http://2.bp.blogspot.com/-"
+"fqmkYkxZtyI/U5AqS08Xk9I/AAAAAAAAACA/_wsTOmSbkdc/s1600/"
+"ISPN7_multi_ram_percent_throughput.png[image]]"
 msgstr ""
+"link:http://2.bp.blogspot.com/-exDRqNYcquI/U5AqAFGveiI/AAAAAAAAAB4/Yqn0_j6bL-"
+"w/s1600/ISPN6_multi_ram_percent_throughput.png[] http://2.bp.blogspot.com/-"
+"fqmkYkxZtyI/U5AqS08Xk9I/AAAAAAAAACA/_wsTOmSbkdc/s1600/"
+"ISPN7_multi_ram_percent_throughput.png[image:http://2.bp.blogspot.com/-"
+"fqmkYkxZtyI/U5AqS08Xk9I/AAAAAAAAACA/_wsTOmSbkdc/s1600/"
+"ISPN7_multi_ram_percent_throughput.png[alt=\"image\"]]"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:110
-msgid "Once again, these charts show an increase in throughput when performing the same word count task using Infinispan 7. The chart for Infinispan 7 shows more fluctuation in the throughput across the different percentages of heap size. The throughput plotted in the Infinispan 6 chart is more consistent."
+#, fuzzy
+msgid ""
+"Once again, these charts show an increase in throughput when performing the "
+"same word count task using Infinispan 7. The chart for Infinispan 7 shows "
+"more fluctuation in the throughput across the different percentages of heap "
+"size. The throughput plotted in the Infinispan 6 chart is more consistent."
 msgstr ""
+"繰り返しになりますが、これらのチャートは、Infinispan 7 を使用して同じ単語数タスクを実行した場合のスループットの増加を示しています。 "
+"Infinispan 7 のチャートは、ヒープサイズの異なるパーセンテージの間でスループットがより変動していることを示しています。Infinispan "
+"6 のチャートにプロットされたスループットは、より一貫性があります。"
 
 #. type: Title ===
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:112
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "From 1 to 8 nodes using different value sizes"
-msgstr ""
+msgstr "異なる値のサイズを使用して1～8ノードまで"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:119
-msgid "This test executes the word count task using 30% of the heap size and different cache value sizes as nodes are added to the cluster. (1KB, 2KB, 4KB, 8KB, 16KB, 32KB, 64KB, 128KB, 256KB, 512KB, 1MB, and 2MB) Here are the throughput results for this test:"
+#, fuzzy
+msgid ""
+"This test executes the word count task using 30% of the heap size and "
+"different cache value sizes as nodes are added to the cluster. (1KB, 2KB, "
+"4KB, 8KB, 16KB, 32KB, 64KB, 128KB, 256KB, 512KB, 1MB, and 2MB) Here are the "
+"throughput results for this test:"
 msgstr ""
+"このテストでは、ヒープサイズの30%を使用してワードカウントタスクを実行し、ノードがクラスタに追加されるにつれて異なるキャッシュ値サイズを使用します。(1KB、2KB、4KB、8KB、16KB、32KB、64KB、128KB、256KB、512KB、1MB、2MB) "
+"このテストのスループット結果です。"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:121
-msgid "http://3.bp.blogspot.com/-Roq8XeAB9Tw/U48EUKEGezI/AAAAAAAAABQ/tM3VSPv8iik/s1600/ISPN6_multi_value_size_throughput.png[image:http://3.bp.blogspot.com/-Roq8XeAB9Tw/U48EUKEGezI/AAAAAAAAABQ/tM3VSPv8iik/s1600/ISPN6_multi_value_size_throughput.png[image]]"
+#, fuzzy
+msgid ""
+"http://3.bp.blogspot.com/-Roq8XeAB9Tw/U48EUKEGezI/AAAAAAAAABQ/tM3VSPv8iik/"
+"s1600/ISPN6_multi_value_size_throughput.png[image:http://3.bp.blogspot.com/-"
+"Roq8XeAB9Tw/U48EUKEGezI/AAAAAAAAABQ/tM3VSPv8iik/s1600/"
+"ISPN6_multi_value_size_throughput.png[image]]"
 msgstr ""
+"link:http://3.bp.blogspot.com/-Roq8XeAB9Tw/U48EUKEGezI/AAAAAAAAABQ/"
+"tM3VSPv8iik/s1600/ISPN6_multi_value_size_throughput.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:125
-msgid "http://4.bp.blogspot.com/-GSUDu54xlXg/U48EVvvhcbI/AAAAAAAAABY/bUI1o2YFUpY/s1600/ISPN7_multi_value_size_throughput.png[image:http://4.bp.blogspot.com/-GSUDu54xlXg/U48EVvvhcbI/AAAAAAAAABY/bUI1o2YFUpY/s1600/ISPN7_multi_value_size_throughput.png[image]]"
+#, fuzzy
+msgid ""
+"http://4.bp.blogspot.com/-GSUDu54xlXg/U48EVvvhcbI/AAAAAAAAABY/bUI1o2YFUpY/"
+"s1600/ISPN7_multi_value_size_throughput.png[image:http://4.bp.blogspot.com/-"
+"GSUDu54xlXg/U48EVvvhcbI/AAAAAAAAABY/bUI1o2YFUpY/s1600/"
+"ISPN7_multi_value_size_throughput.png[image]]"
 msgstr ""
+"link:http://4.bp.blogspot.com/-GSUDu54xlXg/U48EVvvhcbI/AAAAAAAAABY/"
+"bUI1o2YFUpY/s1600/ISPN7_multi_value_size_throughput.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:132
-msgid "These results are more interesting. The throughput in Infinispan 7 is higher for certain cache size values, but closer to Infinispan 6 or even slower for other cache size values. The throughput peaks for 32KB cache values, but can be much lower for larger and smaller values. Smaller values require more overhead, but for larger values this behavior is not expected. This result needs to be investigated more closely."
+#, fuzzy
+msgid ""
+"These results are more interesting. The throughput in Infinispan 7 is higher "
+"for certain cache size values, but closer to Infinispan 6 or even slower for "
+"other cache size values. The throughput peaks for 32KB cache values, but can "
+"be much lower for larger and smaller values. Smaller values require more "
+"overhead, but for larger values this behavior is not expected. This result "
+"needs to be investigated more closely."
 msgstr ""
+"これらの結果は、より興味深いものです。Infinispan 7 のスループットは、特定のキャッシュサイズの値では高くなりますが、Infinispan 6 "
+"に近く、他のキャッシュサイズの値ではさらに遅くなります。スループットは32KBのキャッシュ値でピークを迎えますが、それよりも大きい値や小さい値ではかなり低くなります。小さい値ではより多くのオーバーヘッドを必要としますが、大きい値ではこの動作は期待できません。この結果は、より詳細に調査する必要があります。"
 
 #. type: Title ==
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:134
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Conclusion"
-msgstr ""
+msgstr "結論"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:143
-msgid "The performance tests show that Infinispan 7 Map/Reduce improvements have increased the throughput and execution speed four to sixfold in some use cases. The changes have also allowed Infinispan 7 to process data sets that include larger intermediate results and produce larger final result maps. There are still areas of the Map/Reduce algorithm that need to be improved:"
+#, fuzzy
+msgid ""
+"The performance tests show that Infinispan 7 Map/Reduce improvements have "
+"increased the throughput and execution speed four to sixfold in some use "
+"cases. The changes have also allowed Infinispan 7 to process data sets that "
+"include larger intermediate results and produce larger final result maps. "
+"There are still areas of the Map/Reduce algorithm that need to be improved:"
 msgstr ""
+"パフォーマンステストでは、Infinispan 7 の Map/Reduce の改善により、いくつかのユースケースでスループットと実行速度が 4 ～ 6 "
+"倍に向上したことが示されています。また、この変更により、Infinispan 7 "
+"はより大きな中間結果を含むデータセットを処理し、より大きな最終結果マップを生成できるようになりました。Map/"
+"Reduceアルゴリズムには、まだ改善が必要な部分があります。"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:155
-msgid "The Map/Reduce algorithm should be self-tuning.  The https://github.com/infinispan/infinispan/blob/master/core/src/main/java/org/infinispan/distexec/mapreduce/MapReduceTask.java#L400[maxCollectorSize] parameter controls the number of values that the collector holds in memory, and it is not trivial to determine the optimal value for a given scenario. The value is based on the size of the values in the cache and the size of the intermediate results. A user is likely to know the size of the cache values, but currently https://issues.jboss.org/browse/ISPN-4318[Infinispan does not report statistics] about the intermediate results to the user. The Map/Reduce algorithm should analyze the environment at runtime and adjust the size of the collector dynamically."
+#, fuzzy
+msgid ""
+"The Map/Reduce algorithm should be self-tuning.  The https://github.com/"
+"infinispan/infinispan/blob/master/core/src/main/java/org/infinispan/distexec/"
+"mapreduce/MapReduceTask.java#L400[maxCollectorSize] parameter controls the "
+"number of values that the collector holds in memory, and it is not trivial "
+"to determine the optimal value for a given scenario. The value is based on "
+"the size of the values in the cache and the size of the intermediate results."
+" A user is likely to know the size of the cache values, but currently https:/"
+"/issues.jboss.org/browse/ISPN-4318[Infinispan does not report statistics] "
+"about the intermediate results to the user. The Map/Reduce algorithm should "
+"analyze the environment at runtime and adjust the size of the collector "
+"dynamically."
 msgstr ""
+"Map/Reduce アルゴリズムはセルフチューニングされている必要があります。 link:https://github.com/infinispan/"
+"infinispan/blob/master/core/src/main/java/org/infinispan/distexec/mapreduce/"
+"MapReduceTask.java#L400[maxCollectorSize] "
+"パラメータは、コレクタがメモリに保持する値の数を制御し、与えられたシナリオに最適な値を決定することは容易ではありません。この値は、キャッシュ内の値のサイズと中間結果のサイズに基づいています。ユーザーはキャッシュ値のサイズを知っている可能性が高いですが、現在 "
+"link:https://issues.jboss.org/browse/ISPN-4318[Infinispanは] 中間結果に関する link:"
+"https://issues.jboss.org/browse/ISPN-4318[統計情報を] ユーザーに link:https://issues."
+"jboss.org/browse/ISPN-4318[報告していません] 。Map/"
+"Reduceアルゴリズムは、実行時に環境を分析し、コレクターのサイズを動的に調整する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2014-06-05-mapreduce-performance-improvements.adoc:158
-msgid "The fact that the throughput results vary with different value sizes needs to be investigated more closely. This could be due to the fact that the maxCollectorSize value used for these tests is not ideal for all value sizes, but there might be other causes for this behaviour."
+#, fuzzy
+msgid ""
+"The fact that the throughput results vary with different value sizes needs "
+"to be investigated more closely. This could be due to the fact that "
+"the maxCollectorSize value used for these tests is not ideal for all value "
+"sizes, but there might be other causes for this behaviour."
 msgstr ""
+"スループットの結果が異なる値のサイズによって異なるという事実は、より詳細に調査する必要があります。これは、これらのテストに使用されている "
+"maxCollectorSize "
+"値がすべての値サイズに対して理想的ではないという事実に起因している可能性がありますが、この挙動には他の原因があるかもしれません。"

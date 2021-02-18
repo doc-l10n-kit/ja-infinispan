@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-05-30-introducing-jpa-cache-store.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-30-introducing-jpa-cache-store.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Introducing JPA Cache Store\n"
@@ -32,42 +32,90 @@ msgid ""
 "date: '2013-05-30T14:46:00.001-07:00'\n"
 "author: infinispan\n"
 "tags: [ \" jpa\", \"hibernate\", \"cache store\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8593559438865489193\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/05/introducing-jpa-cache-store.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8593559438865489193\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/05/introducing-jpa-cache-"
+"store.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: JPAキャッシュストアのご紹介\n"
+"permalink: /blog/:year/:month/:day/introducing-jpa-cache-store\n"
+"date: '2013-05-30T14:46:00.001-07:00'\n"
+"author: infinispan\n"
+"tags: [ \" jpa\", \"hibernate\", \"cache store\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8593559438865489193\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/05/introducing-jpa-cache-"
+"store.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-30-introducing-jpa-cache-store.adoc:16
-msgid "Good news everyone - Infinispan 5.3.0 will be introducing a https://issues.jboss.org/browse/ISPN-31[long awaited] JPA cache store.   This cache store will allow you to store cache entries in the database using proper schema - so that other applications can read the persisted data as well."
+#, fuzzy
+msgid ""
+"Good news everyone - Infinispan 5.3.0 will be introducing a https://issues."
+"jboss.org/browse/ISPN-31[long awaited] JPA cache store.   This cache store "
+"will allow you to store cache entries in the database using proper schema - "
+"so that other applications can read the persisted data as well."
 msgstr ""
+"皆さんに朗報です - Infinispan 5.3.0では、待望のJPAキャッシュストア link:https://issues.jboss.org/"
+"browse/ISPN-31[が] 導入されます。 "
+"このキャッシュストアは、適切なスキーマを使用してデータベースにキャッシュエントリを保存し、他のアプリケーションが永続化されたデータを読むことができるようにします。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-30-introducing-jpa-cache-store.adoc:22
-msgid "In normal use cases, it's recommended to leverage Infinispan as JPA second level cache and/or query cache. However, if you'd like to use only Infinispan API and you want Infinispan to read from database, or to persist the data into a database with well defined schema, then JPA cache store could be right for you."
+#, fuzzy
+msgid ""
+"In normal use cases, it's recommended to leverage Infinispan as JPA second "
+"level cache and/or query cache. However, if you'd like to use only "
+"Infinispan API and you want Infinispan to read from database, or to persist "
+"the data into a database with well defined schema, then JPA cache store "
+"could be right for you."
 msgstr ""
+"通常のユースケースでは、JPAの第2レベルのキャッシュやクエリキャッシュとしてInfinispanを利用することをお勧めします。しかし、Infinispan "
+"APIのみを使用し、Infinispanにデータベースからデータを読み込ませたい場合や、よく定義されたスキーマを持つデータベースにデータを永続化させたい場合には、JPAキャッシュストアが適しているかもしれません。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-30-introducing-jpa-cache-store.adoc:28
-msgid "Prior to JPA cache store, those who wants to use Infinispan in front of a database to read/write database records would need to write their own cache store implementation.  Now, with JPA cache store, users can use Infinispan in front of a database (write-through or write-behind) with ease by using standard JPA mapping and configurations."
+#, fuzzy
+msgid ""
+"Prior to JPA cache store, those who wants to use Infinispan in front of a "
+"database to read/write database records would need to write their own cache "
+"store implementation.  Now, with JPA cache store, users can use Infinispan "
+"in front of a database (write-through or write-behind) with ease by using "
+"standard JPA mapping and configurations."
 msgstr ""
+"JPAキャッシュストア以前は、データベースの前でInfinispanを使用してデータベースレコードを読み書きする場合は、独自のキャッシュストア実装を記述する必要がありました。 "
+"JPAキャッシュストアでは、標準的なJPAマッピングと設定を使用することで、ユーザーは簡単にデータベースの前でInfinispanを使用することができます（ライトスルーまたはライトビハインド）。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-30-introducing-jpa-cache-store.adoc:32
-msgid "To use the cache store is simple - create the standard JPA configuration (persistence.xml) and entity class, and then configure the cache store:"
+#, fuzzy
+msgid ""
+"To use the cache store is simple - create the standard JPA configuration "
+"(persistence.xml) and entity class, and then configure the cache store:"
 msgstr ""
+"キャッシュストアを使用するには、標準のJPA設定(persistence.xml)とエンティティクラスを作成し、キャッシュストアを設定するだけです。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-30-introducing-jpa-cache-store.adoc:37
-msgid "Please see documentations for detailed https://docs.jboss.org/author/display/ISPN/Cache+Loaders+and+Stores[sample usage and configuration]."
+#, fuzzy
+msgid ""
+"Please see documentations for detailed https://docs.jboss.org/author/display/"
+"ISPN/Cache+Loaders+and+Stores[sample usage and configuration]."
 msgstr ""
+"詳しい link:https://docs.jboss.org/author/display/ISPN/"
+"Cache+Loaders+and+Stores[サンプルの使用方法や設定方法] については、ドキュメントをご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-30-introducing-jpa-cache-store.adoc:39
+#, fuzzy
 msgid "Hope you enjoy this new addition!"
-msgstr ""
+msgstr "この新機能をお楽しみください"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-30-introducing-jpa-cache-store.adoc:40
+#, fuzzy
 msgid "Ray"
-msgstr ""
+msgstr "レイ"

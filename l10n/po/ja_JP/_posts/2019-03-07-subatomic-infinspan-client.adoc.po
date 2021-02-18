@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2019-03-07-subatomic-infinspan-client.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-07-subatomic-infinspan-client.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Subatomic Infinispan Client\n"
@@ -32,92 +32,161 @@ msgid ""
 "date: '2019-03-07T06:08:00.000-08:00'\n"
 "author: wburns\n"
 "tags: [ \"quarkus\", \"graalvm\", \"native\", \"substratevm\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1426255242920105267\n"
-"blogger_orig_url: https://blog.infinispan.org/2019/03/subatomic-infinspan-client.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1426255242920105267\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/03/subatomic-infinspan-"
+"client.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Subatomic Infinispanクライアント\n"
+"permalink: /blog/:year/:month/:day/subatomic-infinspan-client\n"
+"date: '2019-03-07T06:08:00.000-08:00'\n"
+"author: wburns\n"
+"tags: [ \"quarkus\", \"graalvm\", \"native\", \"substratevm\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1426255242920105267\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/03/subatomic-infinspan-"
+"client.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-07-subatomic-infinspan-client.adoc:18
-msgid "Today, the Quarkus project was released as a public beta.  https://quarkus.io/ For those of you not familiar, Quarkus allows you to write your enterprise apps as you have done in the past with Hibernate/JAX-RS, but also to compile these applications to a Graal-VM native image. Running in a native image allows for the application to be started up in mere milliseconds, depending upon the app, all while using much less memory."
+#, fuzzy
+msgid ""
+"Today, the Quarkus project was released as a public beta.  https://quarkus."
+"io/ For those of you not familiar, Quarkus allows you to write your "
+"enterprise apps as you have done in the past with Hibernate/JAX-RS, but also "
+"to compile these applications to a Graal-VM native image. Running in a "
+"native image allows for the application to be started up in mere "
+"milliseconds, depending upon the app, all while using much less memory."
 msgstr ""
+"https://quarkus.io/ ご存知でない方のために、Quarkusを使うと、過去にHibernate/JAX-"
+"RSを使って行ったようにエンタープライズアプリケーションを書くことができますが、これらのアプリケーションをGraal-"
+"VMのネイティブイメージにコンパイルすることもできます。ネイティブイメージで実行すると、アプリによっては数ミリ秒でアプリケーションを起動することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-07-subatomic-infinspan-client.adoc:23
-msgid "The Infinispan team is proud to announce that you can use the HotRod Java client in Quarkus and supports being compiled to a native image as well. This can allow you to startup and connect to a remote Infinispan server faster than ever before."
+#, fuzzy
+msgid ""
+"The Infinispan team is proud to announce that you can use the HotRod Java "
+"client in Quarkus and supports being compiled to a native image as well. "
+"This can allow you to startup and connect to a remote Infinispan server "
+"faster than ever before."
 msgstr ""
+"Infinispanチームは、QuarkusでHotRod "
+"Javaクライアントを使用でき、ネイティブイメージへのコンパイルもサポートしていることを誇りに思っています。これにより、これまで以上に迅速に起動してリモートのInfinispanサーバーに接続することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-07-subatomic-infinspan-client.adoc:29
-msgid "If you want a quick and simple example of how you can get this working you can take a look at the quick start which can be found at https://github.com/quarkusio/quarkus-quickstarts/tree/master/infinispan-client.  This example covers configuring the client connection, cache injection and simple get/put operations as a basis."
+#, fuzzy
+msgid ""
+"If you want a quick and simple example of how you can get this working you "
+"can take a look at the quick start which can be found at https://github.com/"
+"quarkusio/quarkus-quickstarts/tree/master/infinispan-client.  This example "
+"covers configuring the client connection, cache injection and simple get/put "
+"operations as a basis."
 msgstr ""
+"どのようにしてこれを動作させるかの簡単な例を知りたい場合は、 https://github.com/quarkusio/quarkus-"
+"quickstarts/tree/master/infinispan-client "
+"にあるクイックスタートを参照してください。この例では、クライアント接続の設定、キャッシュインジェクション、簡単なget/put操作を基本としています。"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-07-subatomic-infinspan-client.adoc:34
-msgid "The Infinispan Client Quarkus extension in addition to providing an easy way to create a Graal-VM native image with Infinispan Client also provides the following features to help the user get stuff done quicker."
+#, fuzzy
+msgid ""
+"The Infinispan Client Quarkus extension in addition to providing an easy way "
+"to create a Graal-VM native image with Infinispan Client also provides the "
+"following features to help the user get stuff done quicker."
 msgstr ""
+"Infinispan Client Quarkus拡張機能は、Infinispan ClientでGraal-"
+"VMネイティブイメージを簡単に作成する方法を提供するだけでなく、ユーザーがより迅速に作業を進めるのに役立つ以下の機能も提供します。"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-07-subatomic-infinspan-client.adoc:36
+#, fuzzy
 msgid "Automatically Inject Important Resources"
-msgstr ""
+msgstr "重要なリソースを自動的に注入"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-07-subatomic-infinspan-client.adoc:38
+#, fuzzy
 msgid "RemoteCache (named)"
-msgstr ""
+msgstr "リモートキャッシュ (名前付き)"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-07-subatomic-infinspan-client.adoc:39
+#, fuzzy
 msgid "RemoteCacheManger"
-msgstr ""
+msgstr "リモートキャッシュマネージャ"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-07-subatomic-infinspan-client.adoc:40
+#, fuzzy
 msgid "CounterManager"
-msgstr ""
+msgstr "カウンタマネージャ"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-07-subatomic-infinspan-client.adoc:42
+#, fuzzy
 msgid "User based ProtoStream Marshalling"
-msgstr ""
+msgstr "ユーザーベースのProtoStream Marshalling"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-07-subatomic-infinspan-client.adoc:44
+#, fuzzy
 msgid "Querying (Indexed / Non Indexed)"
-msgstr ""
+msgstr "問い合わせ（インデックス付き／インデックスなし"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-07-subatomic-infinspan-client.adoc:46
+#, fuzzy
 msgid "Continuous Query"
-msgstr ""
+msgstr "連続クエリ"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-07-subatomic-infinspan-client.adoc:48
+#, fuzzy
 msgid "Near Cache"
-msgstr ""
+msgstr "キャッシュ付近"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-07-subatomic-infinspan-client.adoc:50
+#, fuzzy
 msgid "Authentication/Authorization"
-msgstr ""
+msgstr "認証/認可"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-07-subatomic-infinspan-client.adoc:52
+#, fuzzy
 msgid "Encryption"
-msgstr ""
+msgstr "暗号化"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-07-subatomic-infinspan-client.adoc:54
+#, fuzzy
 msgid "Counters"
-msgstr ""
+msgstr "カウンター"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-07-subatomic-infinspan-client.adoc:58
-msgid "More details for these features as well as how to configure them can be found at https://quarkus.io/guides/infinispan-client-guide"
+#, fuzzy
+msgid ""
+"More details for these features as well as how to configure them can be "
+"found at https://quarkus.io/guides/infinispan-client-guide"
 msgstr ""
+"これらの機能の詳細や設定方法については、 https://quarkus.io/guides/infinispan-client-guide "
+"を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2019-03-07-subatomic-infinspan-client.adoc:62
-msgid "Please let us know of any questions, concerns or suggestions at the usual places: https://developer.jboss.org/en/infinispan/content[forum] or http://infinispan.zulipchat.com/[chat]. We expect to continue enhancing this extension and would love to have any feedback."
+#, fuzzy
+msgid ""
+"Please let us know of any questions, concerns or suggestions at the usual "
+"places: https://developer.jboss.org/en/infinispan/content[forum] or http://"
+"infinispan.zulipchat.com/[chat]. We expect to continue enhancing this "
+"extension and would love to have any feedback."
 msgstr ""
+"ご質問、ご懸念、ご提案などございましたら、 link:https://developer.jboss.org/en/infinispan/"
+"content[フォーラム] や link:http://infinispan.zulipchat.com/[チャット] "
+"などの通常の場所でお聞かせください。我々は、この拡張機能を継続的に強化していくことを期待しており、どんなフィードバックもお待ちしております。"

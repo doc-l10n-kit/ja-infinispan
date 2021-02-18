@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-12-10-infinispan-944final-and-1000alpha2-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-10-infinispan-944final-and-1000alpha2-out.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.4.4.Final and 10.0.0.Alpha2 out with Spring 5 support!\n"
@@ -32,67 +32,113 @@ msgid ""
 "date: '2018-12-10T00:05:00.000-08:00'\n"
 "author: galder\n"
 "tags: [ \" release\", \"alpha\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3855336788164618890\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/12/infinispan-944final-and-1000alpha2-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3855336788164618890\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/12/infinispan-944final-"
+"and-1000alpha2-out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 9.4.4.Finalと10.0.0.Alpha2がSpring 5に対応しました。\n"
+"permalink: /blog/:year/:month/:day/infinispan-944final-and-1000alpha2-out\n"
+"date: '2018-12-10T00:05:00.000-08:00'\n"
+"author: galder\n"
+"tags: [ \" release\", \"alpha\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3855336788164618890\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/12/infinispan-944final-"
+"and-1000alpha2-out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-10-infinispan-944final-and-1000alpha2-out.adoc:12
+#, fuzzy
 msgid "We've just released completed a couple of releases:"
-msgstr ""
+msgstr "先ほど、いくつかのリリースが完了しました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-10-infinispan-944final-and-1000alpha2-out.adoc:16
-msgid "Infinispan 9.4.4.Final (https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12340019[release notes])"
+#, fuzzy
+msgid ""
+"Infinispan 9.4.4.Final (https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12340019[release notes])"
 msgstr ""
+"Infinispan 9.4.4.Final link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12340019[(リリースノート] )"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-10-infinispan-944final-and-1000alpha2-out.adoc:19
+#, fuzzy
 msgid "Adds Spring 5 and Spring Boot 2.1 support"
-msgstr ""
+msgstr "Spring 5とSpring Boot 2.1のサポートを追加"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-10-infinispan-944final-and-1000alpha2-out.adoc:20
+#, fuzzy
 msgid "Fixes for JDK 11 compatibility. "
-msgstr ""
+msgstr "JDK 11との互換性のための修正。"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-10-infinispan-944final-and-1000alpha2-out.adoc:21
+#, fuzzy
 msgid "Improves Cache#size() performance when using shared cache stores."
-msgstr ""
+msgstr "共有キャッシュ・ストアを使用する場合の Cache#size() のパフォーマンスが改善されました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-10-infinispan-944final-and-1000alpha2-out.adoc:26
-msgid "Infinispan 10.0.0.Alpha2 (https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12339364[release notes]) contains same fixes as 9.4.4.Final plus"
+#, fuzzy
+msgid ""
+"Infinispan 10.0.0.Alpha2 (https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12339364[release notes]) contains same fixes "
+"as 9.4.4.Final plus"
 msgstr ""
+"Infinispan 10.0.0.0.Alpha2 link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12339364[(リリースノート] ) には、9.4.4.4.Final "
+"と同じ修正が含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-10-infinispan-944final-and-1000alpha2-out.adoc:29
+#, fuzzy
 msgid "Removes the CLI cache loader"
-msgstr ""
+msgstr "CLIキャッシュローダーを削除します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-10-infinispan-944final-and-1000alpha2-out.adoc:30
+#, fuzzy
 msgid "RemoteCache#getBulk methods."
-msgstr ""
+msgstr "RemoteCache#getBulkメソッドを使用しています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-10-infinispan-944final-and-1000alpha2-out.adoc:35
-msgid "Don't forget to checkout the Infinispan 10 road map https://blog.infinispan.org/2018/11/the-road-to-infinispan-10-alpha1.html[blog post] to find out all that's coming."
+#, fuzzy
+msgid ""
+"Don't forget to checkout the Infinispan 10 road map https://blog.infinispan."
+"org/2018/11/the-road-to-infinispan-10-alpha1.html[blog post] to find out all "
+"that's coming."
 msgstr ""
+"インフィニスパン10ロードマップの link:https://blog.infinispan.org/2018/11/the-road-to-"
+"infinispan-10-alpha1.html[ブログ記事] を忘れずにチェックしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-10-infinispan-944final-and-1000alpha2-out.adoc:40
-msgid "Please report any issues in our https://issues.jboss.org/browse/ISPN[issue tracker] and join the conversation in our https://infinispan.zulipchat.com/[Zulip Chat] to shape up our next release."
+#, fuzzy
+msgid ""
+"Please report any issues in our https://issues.jboss.org/browse/ISPN[issue "
+"tracker] and join the conversation in our https://infinispan.zulipchat.com/"
+"[Zulip Chat] to shape up our next release."
 msgstr ""
+"私たちの問題 link:https://issues.jboss.org/browse/ISPN[追跡] "
+"に問題があれば報告し、次のリリースを形作るために link:https://infinispan.zulipchat.com/[Zulipチャット] "
+"で会話に参加してください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-10-infinispan-944final-and-1000alpha2-out.adoc:44
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-10-infinispan-944final-and-1000alpha2-out.adoc:45
+#, fuzzy
 msgid "Galder"
-msgstr ""
+msgstr "ガルダー"

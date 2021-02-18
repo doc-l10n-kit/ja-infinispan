@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-05-26-back-from-geecon-2016.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-05-26-back-from-geecon-2016.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Back from GeeCON 2016\n"
@@ -32,38 +32,94 @@ msgid ""
 "date: '2016-05-26T00:44:00.000-07:00'\n"
 "author: galder\n"
 "tags: [ \" conference\" ]\n"
-"thumbnail: https://1.bp.blogspot.com/-2tpLASsWrUc/VzCYb34SCII/AAAAAAAAEiQ/nakLnonh5NIMNWBdHdn2H86PcoeyHxrPgCKgB/s72-c/logo.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-495479634450122858\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/05/back-from-geecon-2016.html\n"
+"thumbnail: https://1.bp.blogspot.com/-2tpLASsWrUc/VzCYb34SCII/AAAAAAAAEiQ/"
+"nakLnonh5NIMNWBdHdn2H86PcoeyHxrPgCKgB/s72-c/logo.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"495479634450122858\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/05/back-from-geecon-2016."
+"html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: GeeCON 2016から戻る\n"
+"permalink: /blog/:year/:month/:day/back-from-geecon-2016\n"
+"date: '2016-05-26T00:44:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \" conference\" ]\n"
+"thumbnail: https://1.bp.blogspot.com/-2tpLASsWrUc/VzCYb34SCII/AAAAAAAAEiQ/"
+"nakLnonh5NIMNWBdHdn2H86PcoeyHxrPgCKgB/s72-c/logo.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"495479634450122858\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/05/back-from-geecon-2016."
+"html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-05-26-back-from-geecon-2016.adoc:13
-msgid "https://1.bp.blogspot.com/-2tpLASsWrUc/VzCYb34SCII/AAAAAAAAEiQ/nakLnonh5NIMNWBdHdn2H86PcoeyHxrPgCKgB/s1600/logo.png[image:https://1.bp.blogspot.com/-2tpLASsWrUc/VzCYb34SCII/AAAAAAAAEiQ/nakLnonh5NIMNWBdHdn2H86PcoeyHxrPgCKgB/s1600/logo.png[image]]"
+#, fuzzy
+msgid ""
+"https://1.bp.blogspot.com/-2tpLASsWrUc/VzCYb34SCII/AAAAAAAAEiQ/"
+"nakLnonh5NIMNWBdHdn2H86PcoeyHxrPgCKgB/s1600/logo.png[image:https://1.bp."
+"blogspot.com/-2tpLASsWrUc/VzCYb34SCII/AAAAAAAAEiQ/"
+"nakLnonh5NIMNWBdHdn2H86PcoeyHxrPgCKgB/s1600/logo.png[image]]"
 msgstr ""
+"link:https://1.bp.blogspot.com/-2tpLASsWrUc/VzCYb34SCII/AAAAAAAAEiQ/"
+"nakLnonh5NIMNWBdHdn2H86PcoeyHxrPgCKgB/s1600/logo.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2016-05-26-back-from-geecon-2016.adoc:22
-msgid "Thanks to everyone who attended the Distributed Streams with Infinispan talk at GeeCON 2016!! It was a blast to give the talk and although there was a small hiccup with one of the demos, I managed to fix it and the both demos were successfully delivered. The code from the demos can be found in https://github.com/galderz/distributed-streams[this git repository], and the slides can be found https://speakerdeck.com/galderz/distributed-java-streams-with-infinispan[here]."
+#, fuzzy
+msgid ""
+"Thanks to everyone who attended the Distributed Streams with Infinispan talk "
+"at GeeCON 2016!! It was a blast to give the talk and although there was a "
+"small hiccup with one of the demos, I managed to fix it and the both demos "
+"were successfully delivered. The code from the demos can be found in https://"
+"github.com/galderz/distributed-streams[this git repository], and the slides "
+"can be found https://speakerdeck.com/galderz/distributed-java-streams-with-"
+"infinispan[here]."
 msgstr ""
+"GeeCON 2016で行われたDistributed Streams with "
+"Infinispanの講演に参加してくれた皆さん、ありがとうございました。講演はとても楽しかったですし、デモの一つにちょっとしたトラブルがありましたが、なんとか修正して、両方のデモを無事に配信することができました。デモのコードはこちら "
+"link:https://github.com/galderz/distributed-streams[の git リポジトリ] に、スライドは "
+"link:https://speakerdeck.com/galderz/distributed-java-streams-with-"
+"infinispan[こちらに] あります。"
 
 #. type: Plain text
 #: upstream/_posts/2016-05-26-back-from-geecon-2016.adoc:29
-msgid "I presented at GeeCON back in 2011 and it was great to be back once again! The organizers keep doing an amazing job and can't wait to come back. I particularly enjoyed how GeeCON was embracing other programming languages outside the Java Virtual Machine. For example, there were talks on Julia and Elm programming languages, both of which were superb and I really enjoyed them :)."
+#, fuzzy
+msgid ""
+"I presented at GeeCON back in 2011 and it was great to be back once again! "
+"The organizers keep doing an amazing job and can't wait to come back. I "
+"particularly enjoyed how GeeCON was embracing other programming languages "
+"outside the Java Virtual Machine. For example, there were talks on Julia and "
+"Elm programming languages, both of which were superb and I really enjoyed "
+"them :)."
 msgstr ""
+"2011年にGeeCONで発表しましたが、再び参加できて本当に良かったです！主催者は素晴らしい仕事をしていて、また来るのが待ち遠しいです。主催者は素晴らしい仕事を続けていて、また来るのが待ち遠しいです。GeeCONでは、Java "
+"Virtual Machine以外のプログラミング言語をどのように取り入れているかが特に面白かったです。例えば、Julia と Elm "
+"プログラミング言語の講演がありましたが、どちらも素晴らしく、とても楽しかったです。)"
 
 #. type: Plain text
 #: upstream/_posts/2016-05-26-back-from-geecon-2016.adoc:34
-msgid "As always I could not attend all the talks I wanted to but heard good things about Tomer's \"How Shit Works: Storage\" and Martin Thompson's final \"Top 10 Performance Mistakes\" keynote. I hope to catch those when the videos are released."
+#, fuzzy
+msgid ""
+"As always I could not attend all the talks I wanted to but heard good things "
+"about Tomer's \"How Shit Works: Storage\" and Martin Thompson's final \"Top "
+"10 Performance Mistakes\" keynote. I hope to catch those when the videos are "
+"released."
 msgstr ""
+"いつものように、私はすべての講演に参加することはできませんでしたが、Tomer氏の\"How Shit Works.Storage\"とMartin "
+"Thompsonの最後の\"Top 10 Performance "
+"Mistakes\"のキーノートについては良い話を聞きました。ビデオが公開されたら、それらを見たいと思っています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-05-26-back-from-geecon-2016.adoc:36
+#, fuzzy
 msgid "Hope to come back to GeeCON next year! :)"
-msgstr ""
+msgstr "来年もまたGeeCONに来たいですね。:)"
 
 #. type: Plain text
 #: upstream/_posts/2016-05-26-back-from-geecon-2016.adoc:38
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

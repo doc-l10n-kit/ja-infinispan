@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-07-07-infinispan-800beta1.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-07-07-infinispan-800beta1.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 8.0.0.Beta1\n"
@@ -34,62 +34,127 @@ msgid ""
 "tags: [ \"beta\",\n"
 "\"release\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-608349606233265162\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/07/infinispan-800beta1.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"608349606233265162\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/07/infinispan-800beta1."
+"html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 8.0.0.0.Beta1\n"
+"permalink: /blog/:year/:month/:day/infinispan-800beta1\n"
+"date: '2015-07-07T00:02:00.000-07:00'\n"
+"author: infinispan\n"
+"tags: [ \"beta\",\n"
+"\"release\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"608349606233265162\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/07/infinispan-800beta1."
+"html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-07-07-infinispan-800beta1.adoc:14
+#, fuzzy
 msgid "Dear Infinispan community,"
-msgstr ""
+msgstr "インフィニスパンのコミュニティへ"
 
 #. type: Plain text
 #: upstream/_posts/2015-07-07-infinispan-800beta1.adoc:17
-msgid "It is with great pleasure that we are announcing the first Beta release of Infinispan 8.0.0."
-msgstr ""
+#, fuzzy
+msgid ""
+"It is with great pleasure that we are announcing the first Beta release of "
+"Infinispan 8.0.0."
+msgstr "Infinispan 8.0.0の初のベータ版リリースを発表したことは、大変喜ばしいことです。"
 
 #. type: Plain text
 #: upstream/_posts/2015-07-07-infinispan-800beta1.adoc:19
+#, fuzzy
 msgid "These are the main changes in this release:"
-msgstr ""
+msgstr "このリリースでの主な変更点は以下の通りです。"
 
 #. type: Plain text
 #: upstream/_posts/2015-07-07-infinispan-800beta1.adoc:22
-msgid "Support for https://issues.jboss.org/browse/ISPN-5393[mixed queries], accessing both indexed and non-indexed fields."
+#, fuzzy
+msgid ""
+"Support for https://issues.jboss.org/browse/ISPN-5393[mixed queries], "
+"accessing both indexed and non-indexed fields."
 msgstr ""
+"インデックス化されたフィールドとインデックス化されていないフィールドの両方にアクセスする link:https://issues.jboss.org/"
+"browse/ISPN-5393[混合クエリ] をサポートします。"
 
 #. type: Plain text
 #: upstream/_posts/2015-07-07-infinispan-800beta1.adoc:24
-msgid "Server rebased on https://issues.jboss.org/browse/ISPN-5536[WildFly 9.0.0.CR2]."
+#, fuzzy
+msgid ""
+"Server rebased on https://issues.jboss.org/browse/ISPN-5536[WildFly 9.0.0."
+"CR2]."
 msgstr ""
+"サーバを link:https://issues.jboss.org/browse/ISPN-5536[WildFly 9.0.0.0.CR2] "
+"にリベース。"
 
 #. type: Plain text
 #: upstream/_posts/2015-07-07-infinispan-800beta1.adoc:27
-msgid "HotRod Java client API exposing the https://issues.jboss.org/browse/ISPN-5528[mapping of segments to servers]."
+#, fuzzy
+msgid ""
+"HotRod Java client API exposing the https://issues.jboss.org/browse/ISPN-"
+"5528[mapping of segments to servers]."
 msgstr ""
+"HotRodのJavaクライアントAPIは、 link:https://issues.jboss.org/browse/ISPN-"
+"5528[セグメントのサーバーへのマッピングを] 公開しています。"
 
 #. type: Plain text
 #: upstream/_posts/2015-07-07-infinispan-800beta1.adoc:30
-msgid "Preventing inconsistencies when the cluster https://issues.jboss.org/browse/ISPN-5046[splits during transaction commit]."
+#, fuzzy
+msgid ""
+"Preventing inconsistencies when the cluster https://issues.jboss.org/browse/"
+"ISPN-5046[splits during transaction commit]."
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-5046[トランザクションのコミット中に] クラスタが link:"
+"https://issues.jboss.org/browse/ISPN-5046[分割された] ときの不整合を防止します。"
 
 #. type: Plain text
 #: upstream/_posts/2015-07-07-infinispan-800beta1.adoc:36
-msgid "https://issues.jboss.org/browse/ISPN-3532[Fixes] https://issues.jboss.org/browse/ISPN-5559[for] https://issues.jboss.org/browse/ISPN-5562[a] https://issues.jboss.org/browse/ISPN-5563[bunch] https://issues.jboss.org/browse/ISPN-5564[of] bugs in our write-behind store support, contributed by https://github.com/kblees[Karsten Blees]."
+#, fuzzy
+msgid ""
+"https://issues.jboss.org/browse/ISPN-3532[Fixes] https://issues.jboss.org/"
+"browse/ISPN-5559[for] https://issues.jboss.org/browse/ISPN-5562[a] https://"
+"issues.jboss.org/browse/ISPN-5563[bunch] https://issues.jboss.org/browse/"
+"ISPN-5564[of] bugs in our write-behind store support, contributed by https://"
+"github.com/kblees[Karsten Blees]."
 msgstr ""
+"link:https://github.com/kblees[Karsten Blees] さんによる、書き込み禁止のストアサポートにおけるバグ "
+"link:https://issues.jboss.org/browse/ISPN-5564[の] link:https://issues.jboss."
+"org/browse/ISPN-5559[修正] link:https://issues.jboss.org/browse/ISPN-5562[。]"
 
 #. type: Plain text
 #: upstream/_posts/2015-07-07-infinispan-800beta1.adoc:39
-msgid "And even more bugfixes, please read the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12327281[release notes] for the whole list."
+#, fuzzy
+msgid ""
+"And even more bugfixes, please read the https://issues.jboss.org/secure/"
+"ReleaseNote.jspa?projectId=12310799&version=12327281[release notes] for the "
+"whole list."
 msgstr ""
+"また、さらに多くのバグフィックスが行われて link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12327281[い] ます。"
 
 #. type: Plain text
 #: upstream/_posts/2015-07-07-infinispan-800beta1.adoc:45
-msgid "http://infinispan.org/download/[Download] it now and tell us what you think on our https://developer.jboss.org/en/infinispan/content[forums] or come and meet us on IRC: channel #infinispan on Freenode. Don't forget to also check-out our http://infinispan.org/roadmap/[roadmap] to see the things we plan to get done during the 8.0 cycle."
+#, fuzzy
+msgid ""
+"http://infinispan.org/download/[Download] it now and tell us what you think "
+"on our https://developer.jboss.org/en/infinispan/content[forums] or come and "
+"meet us on IRC: channel #infinispan on Freenode. Don't forget to also check-"
+"out our http://infinispan.org/roadmap/[roadmap] to see the things we plan to "
+"get done during the 8.0 cycle."
 msgstr ""
+"今すぐ link:http://infinispan.org/download/[ダウンロードして] 、私たちの link:https://"
+"developer.jboss.org/en/infinispan/content[フォーラム] で感想を言ってください。また、8."
+"0サイクルの間に行う予定の link:http://infinispan.org/roadmap/[ロードマップ] も忘れずにチェックしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-07-07-infinispan-800beta1.adoc:47
+#, fuzzy
 msgid "Many thanks to all who contributed to this release!"
-msgstr ""
+msgstr "このリリースにご協力いただいた皆様、ありがとうございました。"

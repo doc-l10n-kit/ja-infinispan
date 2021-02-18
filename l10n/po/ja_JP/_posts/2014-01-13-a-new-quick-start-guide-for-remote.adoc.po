@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,31 +18,78 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-01-13-a-new-quick-start-guide-for-remote.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-01-13-a-new-quick-start-guide-for-remote.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: A new quick start guide for remote queries over Hot Rod\n"
 "permalink: /blog/:year/:month/:day/a-new-quick-start-guide-for-remote\n"
 "date: '2014-01-13T00:31:00.002-08:00'\n"
 "author: infinispan\n"
-"tags: [ \" jdg\", \"hotrod\", \"quick start\", \"cpp-client\", \"remote query\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3504289398438370296\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/01/a-new-quick-start-guide-for-remote.html\n"
+"tags: [ \" jdg\", \"hotrod\", \"quick start\", \"cpp-client\", \"remote "
+"query\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3504289398438370296\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/01/a-new-quick-start-"
+"guide-for-remote.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: ホットロッドを介したリモートクエリのための新しいクイックスタートガイド\n"
+"permalink: /blog/:year/:month/:day/a-new-quick-start-guide-for-remote\n"
+"date: '2014-01-13T00:31:00.002-08:00'\n"
+"author: infinispan\n"
+"tags: [ \" jdg\", \"hotrod\", \"quick start\", \"cpp-client\", \"remote "
+"query\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3504289398438370296\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/01/a-new-quick-start-"
+"guide-for-remote.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-01-13-a-new-quick-start-guide-for-remote.adoc:15
-msgid "Following up on the previous post on http://blog.infinispan.org/2013/09/embedded-and-remote-queries-in.html[Infinispan remote queries], we've prepared a quick start guide to get you up and running with remote queries in minutes."
+#, fuzzy
+msgid ""
+"Following up on the previous post on http://blog.infinispan.org/2013/09/"
+"embedded-and-remote-queries-in.html[Infinispan remote queries], we've "
+"prepared a quick start guide to get you up and running with remote queries "
+"in minutes."
 msgstr ""
+"前回の link:http://blog.infinispan.org/2013/09/embedded-and-remote-queries-in."
+"html[Infinispanリモートクエリ] の記事に続いて、リモートクエリを数分で使えるようにするためのクイックスタートガイドを用意しました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-01-13-a-new-quick-start-guide-for-remote.adoc:35
-msgid "It's a simple Java application that places some data in a remote cache and then retrieves it using queries over Hot Rod. On top of that, the project also contains a C++ companion app contributed by https://github.com/isavin[Ion Savin] that uses the https://github.com/infinispan/cpp-client/[C++ Hot Rod client] and is able to read and write (but not query, yet) the same data, demonstrating interoperability between C++ and Java clients. At this point the Protobuf encoding support comes in a few C++ external helper classes rather than being part of the C++ client, but this is going to improve in the upcoming versions.    The code for this app is hosted on https://github.com/jboss-developer/jboss-jdg-quickstarts/tree/master/remote-query[Github] under the https://github.com/jboss-developer/jboss-jdg-quickstarts[jboss-jdg-quickstarts] project.  Please note this tutorial was written for the JBoss Data Grid (JDG), but it applies to Infinispan as well. We welcome you to try it and let us know what you think!"
+#, fuzzy
+msgid ""
+"It's a simple Java application that places some data in a remote cache and "
+"then retrieves it using queries over Hot Rod. On top of that, the project "
+"also contains a C++ companion app contributed by https://github.com/"
+"isavin[Ion Savin] that uses the https://github.com/infinispan/cpp-client/"
+"[C++ Hot Rod client] and is able to read and write (but not query, yet) the "
+"same data, demonstrating interoperability between C++ and Java clients. At "
+"this point the Protobuf encoding support comes in a few C++ external helper "
+"classes rather than being part of the C++ client, but this is going to "
+"improve in the upcoming versions.    The code for this app is hosted on "
+"https://github.com/jboss-developer/jboss-jdg-quickstarts/tree/master/remote-"
+"query[Github] under the https://github.com/jboss-developer/jboss-jdg-"
+"quickstarts[jboss-jdg-quickstarts] project.  Please note this tutorial was "
+"written for the JBoss Data Grid (JDG), but it applies to Infinispan as well. "
+"We welcome you to try it and let us know what you think!"
 msgstr ""
+"これは、リモートキャッシュにデータを置き、Hot "
+"Rodを介してクエリを使ってデータを取得するシンプルなJavaアプリケーションです。その上、このプロジェクトには https://github.com/"
+"isavin[Ion Savin]が貢献したCのコンパニオンアプリも含まれており、https://github.com/infinispan/cpp-"
+"client/[C Hot "
+"Rodクライアント]を使用して、同じデータを読み書きすることができます(ただし、クエリではありません)。現時点では、ProtobufエンコーディングのサポートはC++クライアントの一部ではなく、いくつかのCの外部ヘルパークラスで提供されています。 "
+"このアプリのコードは link:https://github.com/jboss-developer/jboss-jdg-quickstarts/"
+"tree/master/remote-query[Githubの] jboss link:https://github.com/jboss-"
+"developer/jboss-jdg-quickstarts[-jdg-quickstarts] "
+"プロジェクトでホストされています。このチュートリアルは JBoss Data Grid (JDG) 向けに書かれていますが、Infinispan "
+"にも適用されます。ぜひ試してみて、ご意見をお聞かせください。"

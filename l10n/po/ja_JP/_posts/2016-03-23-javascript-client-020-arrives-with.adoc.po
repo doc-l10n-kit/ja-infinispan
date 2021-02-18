@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-03-23-javascript-client-020-arrives-with.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-23-javascript-client-020-arrives-with.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Javascript client 0.2.0 arrives with Cluster Topology support\n"
@@ -35,52 +35,116 @@ msgid ""
 "\"javascript\",\n"
 "\"js-client\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7655892304422650440\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/03/javascript-client-020-arrives-with.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7655892304422650440\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/03/javascript-client-020-"
+"arrives-with.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Javascript クライアント 0.2.0 はクラスタートポロジーをサポートしています。\n"
+"permalink: /blog/:year/:month/:day/javascript-client-020-arrives-with\n"
+"date: '2016-03-23T04:37:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"release\",\n"
+"\"javascript\",\n"
+"\"js-client\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7655892304422650440\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/03/javascript-client-020-"
+"arrives-with.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-23-javascript-client-020-arrives-with.adoc:16
-msgid "Today https://www.npmjs.com/package/infinispan[Infinispan Javascript client version 0.2.0] was released, which includes:"
+#, fuzzy
+msgid ""
+"Today https://www.npmjs.com/package/infinispan[Infinispan Javascript client "
+"version 0.2.0] was released, which includes:"
 msgstr ""
+"本日、 link:https://www.npmjs.com/package/infinispan[Infinispan "
+"Javascriptクライアントバージョン0.2.0] がリリースされました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-23-javascript-client-020-arrives-with.adoc:21
-msgid "Updated https://github.com/infinispan/js-client/blob/master/README.md[README file] containing simpler individual examples on each main feature set."
+#, fuzzy
+msgid ""
+"Updated https://github.com/infinispan/js-client/blob/master/README.md[README "
+"file] containing simpler individual examples on each main feature set."
 msgstr ""
+"主な機能セットごとに、より簡単な個別の例を含む link:https://github.com/infinispan/js-client/blob/"
+"master/README.md[READMEファイルを] 更新しました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-23-javascript-client-020-arrives-with.adoc:26
-msgid "Remote execution - Users can now load remote scripts into Infinispan Servers using the addScript method and these scripts can be remotely executed via the execute operation. An example of this can be found in the https://github.com/infinispan/js-client/blob/master/README.md[README file]."
+#, fuzzy
+msgid ""
+"Remote execution - Users can now load remote scripts into Infinispan Servers "
+"using the addScript method and these scripts can be remotely executed via "
+"the execute operation. An example of this can be found in the https://github."
+"com/infinispan/js-client/blob/master/README.md[README file]."
 msgstr ""
+"リモート実行 - addScript メソッドを使用してリモートスクリプトを Infinispan Server "
+"にロードし、これらのスクリプトを実行操作でリモートで実行できるようになりました。この例は link:https://github.com/"
+"infinispan/js-client/blob/master/README.md[README ファイル] に記載されています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-23-javascript-client-020-arrives-with.adoc:30
-msgid "Server-side statistic can now be retrieved using the stats operation.  Again, an example can be found in the https://github.com/infinispan/js-client/blob/master/README.md[README file]."
+#, fuzzy
+msgid ""
+"Server-side statistic can now be retrieved using the stats operation.  "
+"Again, an example can be found in the https://github.com/infinispan/js-"
+"client/blob/master/README.md[README file]."
 msgstr ""
+"サーバーサイドの統計情報は、stats操作を使用して取得できるようになりました。ここでも例を README link:https://github."
+"com/infinispan/js-client/blob/master/README.md[ファイル] に記載しています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-23-javascript-client-020-arrives-with.adoc:33
-msgid "The client now supports cluster topology updates, so it can handle remote notifications of server side topology changes, including addition or removal of server-side cluster nodes."
+#, fuzzy
+msgid ""
+"The client now supports cluster topology updates, so it can handle remote "
+"notifications of server side topology changes, including addition or removal "
+"of server-side cluster nodes."
 msgstr ""
+"クライアントがクラスタトポロジーの更新をサポートするようになったので、サーバサイドのクラスタノードの追加や削除など、サーバサイドのトポロジー変更のリモート通知を処理することができるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-23-javascript-client-020-arrives-with.adoc:37
-msgid "Using the cluster topology information and hashing algorithms, the client can now apply the same Consistent-Hash algorithm servers use to distribute data around the cluster, and hence can immediately locate the server where a particular key lives."
+#, fuzzy
+msgid ""
+"Using the cluster topology information and hashing algorithms, the client "
+"can now apply the same Consistent-Hash algorithm servers use to distribute "
+"data around the cluster, and hence can immediately locate the server where a "
+"particular key lives."
 msgstr ""
+"クラスタのトポロジー情報とハッシュアルゴリズムを使用して、クライアントはクラスタの周りにデータを分散させるためにサーバが使用しているのと同じConsistent-"
+"Hashアルゴリズムを適用することができ、特定のキーが存在するサーバをすぐに見つけることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-23-javascript-client-020-arrives-with.adoc:46
-msgid "If you're a Javascript user and want to store data remotely in Infinispan Server instances, please give the client a go and tell us what you think of it via our https://developer.jboss.org/en/infinispan/content[forum], via our https://issues.jboss.org/projects/ISPN[issue tracker] or via IRC on the #infinispan channel on Freenode."
+#, fuzzy
+msgid ""
+"If you're a Javascript user and want to store data remotely in Infinispan "
+"Server instances, please give the client a go and tell us what you think of "
+"it via our https://developer.jboss.org/en/infinispan/content[forum], via our "
+"https://issues.jboss.org/projects/ISPN[issue tracker] or via IRC on the "
+"#infinispan channel on Freenode."
 msgstr ""
+"Javascriptユーザーで、Infinispan Serverインスタンスにリモートでデータを保存したい場合は、クライアントを試してみて、 link:"
+"https://developer.jboss.org/en/infinispan/content[フォーラム] 、 link:https://"
+"issues.jboss.org/projects/ISPN[イシュートラッカー] "
+"、IRC、Freenodeの#infinispanチャンネルで感想をお聞かせください。"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-23-javascript-client-020-arrives-with.adoc:50
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2016-03-23-javascript-client-020-arrives-with.adoc:51
+#, fuzzy
 msgid "Galder"
-msgstr ""
+msgstr "ガルダー"

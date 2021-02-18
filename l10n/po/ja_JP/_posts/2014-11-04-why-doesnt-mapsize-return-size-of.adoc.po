@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Why doesn't Map.size return the size of the entire cluster?\n"
@@ -32,151 +32,289 @@ msgid ""
 "date: '2014-11-04T05:41:00.000-08:00'\n"
 "author: infinispan\n"
 "tags: []\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7688496915197931482\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/11/why-doesnt-mapsize-return-size-of.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7688496915197931482\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/11/why-doesnt-mapsize-"
+"return-size-of.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: なぜ Map.size はクラスタ全体のサイズを返さないのですか？\n"
+"permalink: /blog/:year/:month/:day/why-doesnt-mapsize-return-size-of\n"
+"date: '2014-11-04T05:41:00.000-08:00'\n"
+"author: infinispan\n"
+"tags: []\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7688496915197931482\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/11/why-doesnt-mapsize-"
+"return-size-of.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:14
-msgid "Many people may have been surprised the first time they used Map.size method on a distributed Infinispan cluster.  As was later deduced only the local node size is returned."
+#, fuzzy
+msgid ""
+"Many people may have been surprised the first time they used Map.size method "
+"on a distributed Infinispan cluster.  As was later deduced only the local "
+"node size is returned."
 msgstr ""
+"分散型のInfinispanクラスタでMap.sizeメソッドを初めて使ったときは驚いた人も多いでしょう。 "
+"後でわかったことですが、ローカルのノードサイズだけが返されるということでした。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:19
-msgid "Infinispan had taken this approach to limit the chance that instead of getting the full cluster size you would receive an OutOfMemoryError.  This seems fair to return the local answer only but you secretly always wanted the entire cluster size."
+#, fuzzy
+msgid ""
+"Infinispan had taken this approach to limit the chance that instead of "
+"getting the full cluster size you would receive an OutOfMemoryError.  This "
+"seems fair to return the local answer only but you secretly always wanted "
+"the entire cluster size."
 msgstr ""
+"Infinispanは、クラスタの全サイズを取得する代わりにOutOfMemoryErrorを受け取る可能性を制限するために、このアプローチを取っていました。 "
+"これは、ローカルな答えだけを返すのは公平なように見えますが、あなたは密かにクラスタの全サイズを常に欲していました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:24
-msgid "For the http://blog.infinispan.org/2014/11/infinispan-700final-is-out.html[Infinispan 7.0.0.Final release] forget what you know when using the Map interface with Infinispan."
+#, fuzzy
+msgid ""
+"For the http://blog.infinispan.org/2014/11/infinispan-700final-is-out."
+"html[Infinispan 7.0.0.Final release] forget what you know when using the Map "
+"interface with Infinispan."
 msgstr ""
+"Infinispan link:http://blog.infinispan.org/2014/11/infinispan-700final-is-"
+"out.html[7.0.0.0.Finalリリース] "
+"では、Infinispanでマップインターフェースを使用するときに知っていることを忘れてください。"
 
 #. type: Title ==
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:27
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Enter Distributed Entry Iterator"
-msgstr ""
+msgstr "分散型エントリイテレータを入力します。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:34
-msgid "We already announced this feature a while back at http://blog.infinispan.org/2014/05/iterate-all-entries-in-cache.html.  You can check it out for more details but it is essentially a memory efficient way of retrieving all the entries in the cache by iterating over them."
+#, fuzzy
+msgid ""
+"We already announced this feature a while back at http://blog.infinispan.org/"
+"2014/05/iterate-all-entries-in-cache.html.  You can check it out for more "
+"details but it is essentially a memory efficient way of retrieving all the "
+"entries in the cache by iterating over them."
 msgstr ""
+"この機能は http://blog.infinispan.org/2014/05/iterate-all-entries-in-cache.html. "
+"で既に発表されています。詳細はこちらで確認できますが、基本的にはキャッシュ内の全てのエントリを反復処理することでメモリ効率の良い方法で取得します。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:38
-msgid "This has opened the way to implementing the various bulk methods on the Map interface that we could never do efficiently in the past (ie.  Map.size, Map.keySet, Map.entrySet & Map.values)."
+#, fuzzy
+msgid ""
+"This has opened the way to implementing the various bulk methods on the Map "
+"interface that we could never do efficiently in the past (ie.  Map.size, Map."
+"keySet, Map.entrySet & Map.values)."
 msgstr ""
+"これにより、これまで効率的にできなかった様々なバルクメソッドを Map インターフェースに実装できるようになりました（Map.size, Map."
+"keySet, Map.entrySet, Map.values など）。"
 
 #. type: Title ==
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:40
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Map size"
-msgstr ""
+msgstr "地図サイズ"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:48
-msgid "Okay I admit, size could have been done more efficiently before, but the answer would have contained a very high margin of error.  Now size will give you a size value with consistency semantics just slightly less than ConcurrentHashMap does, but for the entire cluster.  Warning should be given that size may be slower for larger clusters or ones with a lot of data in a stored cache loader."
+#, fuzzy
+msgid ""
+"Okay I admit, size could have been done more efficiently before, but the "
+"answer would have contained a very high margin of error.  Now size will give "
+"you a size value with consistency semantics just slightly less than "
+"ConcurrentHashMap does, but for the entire cluster.  Warning should be given "
+"that size may be slower for larger clusters or ones with a lot of data in a "
+"stored cache loader."
 msgstr ""
+"サイズは以前よりも効率的に行うことができましたが、その答えには非常に大きな誤差が含まれていました。 "
+"現在のサイズは、一貫性のあるセマンティクスを持つサイズ値を、ConcurrentHashMapよりもわずかに小さくして、クラスタ全体のサイズ値を提供します。 "
+"より大きなクラスタや、保存されたキャッシュローダーに多くのデータがあるクラスタでは、サイズが遅くなる可能性があることを警告しておきましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:54
-msgid "The size method behavior can be controlled by using a supplied https://docs.jboss.org/infinispan/7.0/apidocs/org/infinispan/AdvancedCache.html#withFlags%28org.infinispan.context.Flag...%29[Flag] such as SKIP_CACHE_LOAD to not count any configured cache loaders or CACHE_MODE_LOCAL if you want the local count only.  These flags are not exclusive and can be both passed if desired as well."
+#, fuzzy
+msgid ""
+"The size method behavior can be controlled by using a supplied https://docs."
+"jboss.org/infinispan/7.0/apidocs/org/infinispan/AdvancedCache."
+"html#withFlags%28org.infinispan.context.Flag...%29[Flag] such as "
+"SKIP_CACHE_LOAD to not count any configured cache loaders or "
+"CACHE_MODE_LOCAL if you want the local count only.  These flags are not "
+"exclusive and can be both passed if desired as well."
 msgstr ""
+"サイズ・メソッドの動作は、構成されたキャッシュ・ローダをカウントしないようにするには SKIP_CACHE_LOAD のような供給された link:"
+"https://docs.jboss.org/infinispan/7.0/apidocs/org/infinispan/AdvancedCache."
+"html#withFlags%28org.infinispan.context.Flag…%29[フラグを] 使用することで制御できます。 "
+"これらのフラグは排他的ではなく、必要に応じて両方を渡すことができます。"
 
 #. type: Title ==
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:58
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Map Collection Views"
-msgstr ""
+msgstr "マップコレクションの表示"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:63
-msgid "In the past the Map.values, Map.keySet & Map.entrySet methods were only ever in memory copies of the local data at the time they were invoked, similar to Map.size."
+#, fuzzy
+msgid ""
+"In the past the Map.values, Map.keySet & Map.entrySet methods were only ever "
+"in memory copies of the local data at the time they were invoked, similar to "
+"Map.size."
 msgstr ""
+"以前は、Map.values、Map.keySet、および Map.entrySet メソッドは、Map.size と同様に、呼び出されたときにローカル "
+"データのメモリ コピーしかありませんでした。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:69
-msgid "Now these collection views will be cluster wide and an additionally will show updated contents when the cache is updated and your writes to the collection will be reflected in the Cache itself!  The only operations you can't do on these collections are adding values to either the keySet or values collections as they aren't key/value pairs."
+#, fuzzy
+msgid ""
+"Now these collection views will be cluster wide and an additionally will "
+"show updated contents when the cache is updated and your writes to the "
+"collection will be reflected in the Cache itself!  The only operations you "
+"can't do on these collections are adding values to either the keySet or "
+"values collections as they aren't key/value pairs."
 msgstr ""
+"これで、これらのコレクション・ビューはクラスタ全体で表示され、さらに、キャッシュが更新されると更新されたコンテンツが表示され、コレクションへの書き込みはキャッシュ自体に反映されます。 "
+"これらのコレクションでできない操作は、キーセットまたは値のペアではないため、キーセットまたは値のコレクションに値を追加することだけです。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:73
-msgid "If your cache was configured with a Flag such as SKIP_CACHE_LOAD or CACHE_MODE_LOCAL it will also be reflected in the collection view for both reads and writes."
+#, fuzzy
+msgid ""
+"If your cache was configured with a Flag such as SKIP_CACHE_LOAD or "
+"CACHE_MODE_LOCAL it will also be reflected in the collection view for both "
+"reads and writes."
 msgstr ""
+"キャッシュが SKIP_CACHE_LOAD や CACHE_MODE_LOCAL "
+"などのフラグで構成されている場合は、読み取りと書き込みの両方でコレクションビューにも反映されます。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:76
-msgid "Some caution is advised when using toArray, retainAll, or size methods as they will require full iteration to complete."
-msgstr ""
+#, fuzzy
+msgid ""
+"Some caution is advised when using toArray, retainAll, or size methods as "
+"they will require full iteration to complete."
+msgstr "toArray、retainAll、sizeメソッドを使用する際には、完全な反復処理が必要となるため、いくつかの注意が必要です。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:78
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*KeySet Optimization*\n"
-msgstr ""
+msgstr "*キーセット最適化*"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:82
-msgid "The key set collection also has an optimization so it will never pull down the values so it has a lower network and serialization/deserialization overhead (unlike entrySet and values)."
+#, fuzzy
+msgid ""
+"The key set collection also has an optimization so it will never pull down "
+"the values so it has a lower network and serialization/deserialization "
+"overhead (unlike entrySet and values)."
 msgstr ""
+"キーセットコレクションも最適化されているので、値をプルダウンすることはありませんので、ネットワークやシリアライズ/"
+"デシリアライズのオーバーヘッドが低くなります(entrySetやvalueとは異なります)。"
 
 #. type: Title ==
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:84
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Transactionality"
-msgstr ""
+msgstr "トランザクション性"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:91
-msgid "All of the aforementioned methods still support transactions in a way that you would expect.  There is one guarantee we don't provide and that is when using REPEATABLE_READ isolation.  We will not store entries read from an iterator in the transactional context as this could very easily run your local node out of memory with a large enough data set."
+#, fuzzy
+msgid ""
+"All of the aforementioned methods still support transactions in a way that "
+"you would expect.  There is one guarantee we don't provide and that is when "
+"using REPEATABLE_READ isolation.  We will not store entries read from an "
+"iterator in the transactional context as this could very easily run your "
+"local node out of memory with a large enough data set."
 msgstr ""
+"前述のメソッドはすべて、期待される方法でトランザクションをサポートしていますが、1つだけ保証がありません。 "
+"それは、REPEATABLE_READ分離を使用している場合です。 "
+"トランザクションコンテキストでイテレータから読み込んだエントリを保存することはありませんが、十分なデータセットがあるとローカルノードがメモリ不足に陥る可能性があるからです。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:95
-msgid "For reference methods that use an iterator internally are toArray, retainAll, isEmpty & size on the various collections as well as contains and containsAll on the values collection."
+#, fuzzy
+msgid ""
+"For reference methods that use an iterator internally are toArray, "
+"retainAll, isEmpty & size on the various collections as well as contains and "
+"containsAll on the values collection."
 msgstr ""
+"内部的にイテレータを使用する参照メソッドは、様々なコレクションの toArray、retainAll、isEmpty & size、および values "
+"コレクションの contains および containsAll です。"
 
 #. type: Title ==
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:96
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Other API Changes"
-msgstr ""
+msgstr "その他のAPIの変更点"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:100
-msgid "These changes have also loosened some restrictions on other methods as well."
-msgstr ""
+#, fuzzy
+msgid ""
+"These changes have also loosened some restrictions on other methods as well."
+msgstr "これらの変更により、他の方法についてもいくつかの制限が緩和されました。"
 
 #. type: Title ===
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:102
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Map.isEmpty"
-msgstr ""
+msgstr "Map.isEmpty"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:110
-msgid "This method before was only used locally as it used to calculate the size to determine if it was empty.  This method will now use the entry iterator and returns as soon as it finds that even a single value exists.  This is an important change as the old implementation would have to query any configured Cache Loader's complete size before returning."
+#, fuzzy
+msgid ""
+"This method before was only used locally as it used to calculate the size to "
+"determine if it was empty.  This method will now use the entry iterator and "
+"returns as soon as it finds that even a single value exists.  This is an "
+"important change as the old implementation would have to query any "
+"configured Cache Loader's complete size before returning."
 msgstr ""
+"以前のこのメソッドは、空かどうかを判断するためにサイズを計算していたため、ローカルでのみ使用されていました。 "
+"このメソッドは、エントリ・イテレータを使用し、1 つでも値が存在するとすぐに返すようになりました。 "
+"以前の実装では、構成されたキャッシュ・ローダの完全なサイズをクエリしてから返さなければならなかったため、この点は重要な変更点です。"
 
 #. type: Title ===
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:112
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Map.containsValue"
-msgstr ""
+msgstr "Map.containsValue"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:121
-msgid "We never supported this method before (not even locally).  This method will now use the iterator though and if it finds the value at any point point will return immediately so it doesn't have to iterate over the entire contents unless they don't exist.  However if you really want to do this operation often you should really use http://infinispan.org/docs/7.0.x/user_guide/user_guide.html#sid-68355061[Indexing] to make this faster."
+#, fuzzy
+msgid ""
+"We never supported this method before (not even locally).  This method will "
+"now use the iterator though and if it finds the value at any point point "
+"will return immediately so it doesn't have to iterate over the entire "
+"contents unless they don't exist.  However if you really want to do this "
+"operation often you should really use http://infinispan.org/docs/7.0.x/"
+"user_guide/user_guide.html#sid-68355061[Indexing] to make this faster."
 msgstr ""
+"以前はこのメソッドはサポートされていませんでした (ローカルでもサポートされていませんでした)。 "
+"このメソッドはイテレータを使用するようになり、任意のポイントポイントで値を見つけた場合はすぐに戻ります。"
 
 #. type: Title ==
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:123
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Code Examples"
-msgstr ""
+msgstr "コード例"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-why-doesnt-mapsize-return-size-of.adoc:128
-msgid "I could put an example here, but I think some could take it as insult.  You have already seen 100's of examples as to how to use the Map interface and now in Infinispan you can use those in the exact same way and they will work just how you would expect them to."
+#, fuzzy
+msgid ""
+"I could put an example here, but I think some could take it as insult.  You "
+"have already seen 100's of examples as to how to use the Map interface and "
+"now in Infinispan you can use those in the exact same way and they will work "
+"just how you would expect them to."
 msgstr ""
+"ここに例を挙げることもできますが、侮辱と受け取られる方もいるかもしれません。 "
+"地図インターフェースの使い方については、すでにたくさんの例を見てきましたが、Infinispanでは全く同じように使うことができ、期待通りに動作します。"

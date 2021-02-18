@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-01-23-infinispan-is-back-to-fosdem.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-23-infinispan-is-back-to-fosdem.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan is back to FOSDEM!\n"
@@ -34,12 +34,36 @@ msgid ""
 "tags: [ \"conference\",\n"
 "\"Infinispan Query\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8728098444452242174\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/01/infinispan-is-back-to-fosdem.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8728098444452242174\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/01/infinispan-is-back-to-"
+"fosdem.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: インフィニスパンがFOSDEMに戻ってきた！？\n"
+"permalink: /blog/:year/:month/:day/infinispan-is-back-to-fosdem\n"
+"date: '2015-01-23T02:25:00.000-08:00'\n"
+"author: gustavonalle\n"
+"tags: [ \"conference\",\n"
+"\"Infinispan Query\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8728098444452242174\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/01/infinispan-is-back-to-"
+"fosdem.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-01-23-infinispan-is-back-to-fosdem.adoc:19
-msgid "Please join us in Brussels next Saturday, 31st January, to get to know more about Infinispan advanced querying capabilities in the session \"https://fosdem.org/2015/schedule/event/querying_your_datagrid_with_lucene,_hadoop_and_spark/[Querying your datagrid with Lucene, Hadoop and Spark]\""
+#, fuzzy
+msgid ""
+"Please join us in Brussels next Saturday, 31st January, to get to know more "
+"about Infinispan advanced querying capabilities in the session \"https://"
+"fosdem.org/2015/schedule/event/"
+"querying_your_datagrid_with_lucene,_hadoop_and_spark/[Querying your datagrid "
+"with Lucene, Hadoop and Spark]\""
 msgstr ""
+"来週1月31日（土）にブリュッセルで開催されるセッション link:https://fosdem.org/2015/schedule/event/"
+"querying_your_datagrid_with_lucene,_hadoop_and_spark/[「Lucene, Hadoop, "
+"Sparkでデータグリッドにクエリ] をかける」では、Infinispanの高度なクエリ機能についての詳細をご紹介します。"

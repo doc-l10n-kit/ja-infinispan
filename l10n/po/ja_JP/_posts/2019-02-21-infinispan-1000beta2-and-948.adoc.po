@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 10.0.0.Beta2 and 9.4.8\n"
@@ -32,84 +32,162 @@ msgid ""
 "date: '2019-02-21T08:31:00.000-08:00'\n"
 "author: ttarrant\n"
 "tags: [ \" beta\", \"release\", \"final\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2539171124591722906\n"
-"blogger_orig_url: https://blog.infinispan.org/2019/02/infinispan-1000beta2-and-948.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2539171124591722906\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/02/infinispan-1000beta2-"
+"and-948.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 10.0.0.0.Beta2 と 9.4.8\n"
+"permalink: /blog/:year/:month/:day/infinispan-1000beta2-and-948\n"
+"date: '2019-02-21T08:31:00.000-08:00'\n"
+"author: ttarrant\n"
+"tags: [ \" beta\", \"release\", \"final\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2539171124591722906\n"
+"blogger_orig_url: https://blog.infinispan.org/2019/02/infinispan-1000beta2-"
+"and-948.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:12
+#, fuzzy
 msgid "Hello Infinispan users,"
-msgstr ""
+msgstr "Infinispanユーザーの皆さん、こんにちは。"
 
 #. type: Plain text
 #: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:17
-msgid "What ? You're wondering where Beta1 is ? And what happened to 9.4.7 ? Unfortunately, those releases, while tagged and available on your closest Maven Central mirror will only work with Java 11, so we had to rebuild and re-release."
+#, fuzzy
+msgid ""
+"What ? You're wondering where Beta1 is ? And what happened to 9.4.7 ? "
+"Unfortunately, those releases, while tagged and available on your closest "
+"Maven Central mirror will only work with Java 11, so we had to rebuild and "
+"re-release."
 msgstr ""
+"何が？あなたはBeta1がどこにあるか疑問に思っていますか？9.4."
+"7に何が起こったのか？残念ながら、これらのリリースはタグ付けされていて、最寄りのMaven Centralミラーで利用可能ですが、Java "
+"11でしか動作しないため、再構築して再リリースしなければなりませんでした。"
 
 #. type: Plain text
 #: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:19
+#, fuzzy
 msgid "So, without further ado, I give you 10.0.0.Beta2 and 9.4.8.Final."
-msgstr ""
+msgstr "ということで、ここでは、10.0.0.Beta2と9.4.8.Finalをご紹介します。"
 
 #. type: Plain text
 #: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:26
-msgid "The first change I should outline is one that will impact you if you are building Infinispan from source. The previous build structure required having both JDK 8 and JDK 11 in order to compile a release which worked on both. In order to simplify the build process, as well as ensuring that the output is always consistent we now require Java 11 only. Don't worry: the resulting binaries will still work on Java 8 and greater."
+#, fuzzy
+msgid ""
+"The first change I should outline is one that will impact you if you are "
+"building Infinispan from source. The previous build structure required "
+"having both JDK 8 and JDK 11 in order to compile a release which worked on "
+"both. In order to simplify the build process, as well as ensuring that the "
+"output is always consistent we now require Java 11 only. Don't worry: the "
+"resulting binaries will still work on Java 8 and greater."
 msgstr ""
+"最初の変更点は、ソースからInfinispanをビルドしている場合に影響を与えるものです。以前のビルド構造では、両方で動作するリリースをコンパイルするために、JDK "
+"8とJDK 11の両方を必要としていました。ビルドプロセスを簡素化し、出力が常に一貫していることを保証するために、現在ではJava "
+"11のみを必要としています。結果として得られるバイナリは、Java 8 以上でも動作しますのでご安心ください。"
 
 #. type: Title ==
 #: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:28
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "10.0.0.Beta2"
-msgstr ""
+msgstr "10.0.0.0.Beta2"
 
 #. type: Plain text
 #: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:32
-msgid "The first beta of our next major release contains a number of enhancements:"
-msgstr ""
+#, fuzzy
+msgid ""
+"The first beta of our next major release contains a number of enhancements:"
+msgstr "次のメジャーリリースの最初のベータ版には、いくつかの機能強化が含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:39
-msgid "[https://issues.jboss.org/browse/ISPN-9847[ISPN-9847]] - Extend configuration to allow inline JGroups configuration and inheritance [https://issues.jboss.org/browse/ISPN-9699[ISPN-9699]] - Cluster member owning no data [https://issues.jboss.org/browse/ISPN-8124[ISPN-8124]] - ServerNG: Initial implementation"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-9847[ISPN-9847]] - Extend "
+"configuration to allow inline JGroups configuration and inheritance [https://"
+"issues.jboss.org/browse/ISPN-9699[ISPN-9699]] - Cluster member owning no "
+"data [https://issues.jboss.org/browse/ISPN-8124[ISPN-8124]] - ServerNG: "
+"Initial implementation"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-9847[ISPN-9847] ] - "
+"インラインJGroupsの設定と継承を可能にする設定を拡張 [ISP link:https://issues.jboss.org/browse/ISPN-"
+"9699[N-9699] ] - クラスタメンバーがデータを所有しない link:https://issues.jboss.org/browse/"
+"ISPN-8124[[ISPN-8124] ] - ServerNG: 初期実装"
 
 #. type: Plain text
 #: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:41
+#, fuzzy
 msgid "We will soon be posting about these features individually."
-msgstr ""
+msgstr "これらの特徴については、近日中に個別に投稿させていただきます。"
 
 #. type: Plain text
 #: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:46
-msgid "The work on persistent storage long-term compatibility is progressing with [https://issues.jboss.org/browse/ISPN-9845[ISPN-9845]] - Stop exposing InternalMetadata via the persistence SPI"
+#, fuzzy
+msgid ""
+"The work on persistent storage long-term compatibility is progressing with "
+"[https://issues.jboss.org/browse/ISPN-9845[ISPN-9845]] - Stop exposing "
+"InternalMetadata via the persistence SPI"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-9845[ISPN-9845] ] - "
+"永続ストレージの長期互換性に関する作業は link:https://issues.jboss.org/browse/ISPN-9845[[ISPN-"
+"9845] ] - 永続性SPI経由でInternalMetadataを公開するのをやめる"
 
 #. type: Plain text
 #: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:48
+#, fuzzy
 msgid "Notable fixes:"
-msgstr ""
+msgstr "注目すべき修正。"
 
 #. type: Plain text
 #: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:51
-msgid "[https://issues.jboss.org/browse/ISPN-4075[ISPN-4075]] - State transfer should preserve the creation timestamp of entries"
+#, fuzzy
+msgid ""
+"[https://issues.jboss.org/browse/ISPN-4075[ISPN-4075]] - State transfer "
+"should preserve the creation timestamp of entries"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-4075[ISPN-4075] ] - "
+"状態遷移はエントリの作成タイムスタンプを保持する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:56
-msgid "And if you were still using the old Distributed Executor, that has been finally removed in [https://issues.jboss.org/browse/ISPN-9784[ISPN-9784]] - Remove Distributed Executor"
+#, fuzzy
+msgid ""
+"And if you were still using the old Distributed Executor, that has been "
+"finally removed in [https://issues.jboss.org/browse/ISPN-9784[ISPN-9784]] - "
+"Remove Distributed Executor"
 msgstr ""
+"また、古い Distributed Executor を使用していた場合は、 link:https://issues.jboss.org/browse/"
+"ISPN-9784[[ISPN-9784] ] - Remove Distributed Executor で削除されています。"
 
 #. type: Title ==
 #: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:58
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "9.4.8.Final"
-msgstr ""
+msgstr "9.4.8.最終"
 
 #. type: Plain text
 #: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:62
-msgid "Our latest point release contains lots of bug fixes and minor enhancements."
-msgstr ""
+#, fuzzy
+msgid ""
+"Our latest point release contains lots of bug fixes and minor enhancements."
+msgstr "私たちの最新のポイントリリースには、バグフィックスとマイナーな機能強化がたくさん含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2019-02-21-infinispan-1000beta2-and-948.adoc:68
-msgid "As usual you can ask questions on the https://developer.jboss.org/en/infinispan/content[forum], https://stackoverflow.com/questions/tagged/?tagnames=infinispan&sort=newest[StackOverflow] and interactively on our http://infinispan.zulipchat.com/[Zulip Chat].  Please report any bugs you find on our https://issues.jboss.org/projects/ISPN/summary[Issue Tracker]"
+#, fuzzy
+msgid ""
+"As usual you can ask questions on the https://developer.jboss.org/en/"
+"infinispan/content[forum], https://stackoverflow.com/questions/tagged/"
+"?tagnames=infinispan&sort=newest[StackOverflow] and interactively on our "
+"http://infinispan.zulipchat.com/[Zulip Chat].  Please report any bugs you "
+"find on our https://issues.jboss.org/projects/ISPN/summary[Issue Tracker]"
 msgstr ""
+"いつものように link:https://developer.jboss.org/en/infinispan/content[フォーラム] や link:"
+"https://stackoverflow.com/questions/tagged/?tagnames=infinispan&sort="
+"newest[StackOverflow] 、 link:http://infinispan.zulipchat.com/[Zulipチャット] "
+"で質問をすることができます。バグを見つけたら、私たちの link:https://issues.jboss.org/projects/ISPN/"
+"summary[Issue Tracker] で報告してください。"

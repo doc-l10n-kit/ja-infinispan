@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-10-14-infinispan-520beta2-is-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-10-14-infinispan-520beta2-is-out.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 5.2.0.Beta2 is out!\n"
@@ -32,22 +32,54 @@ msgid ""
 "date: '2012-10-14T15:47:00.000-07:00'\n"
 "author: mmarkus\n"
 "tags: [ \"beta\", \"release\", \"state transfer\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-917757550994204766\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/10/infinispan-520beta2-is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"917757550994204766\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/10/infinispan-520beta2-is-"
+"out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 5.2.0.Beta2が出ました!\n"
+"permalink: /blog/:year/:month/:day/infinispan-520beta2-is-out\n"
+"date: '2012-10-14T15:47:00.000-07:00'\n"
+"author: mmarkus\n"
+"tags: [ \"beta\", \"release\", \"state transfer\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"917757550994204766\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/10/infinispan-520beta2-is-"
+"out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-10-14-infinispan-520beta2-is-out.adoc:17
-msgid "Infinispan 5.2.0.Beta2 contains a handful of bugfixes especially around the new Non-Blocking State Transfer functionality. For a detailed view of what has been fixed please https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12320095[refer to JIRA]."
+#, fuzzy
+msgid ""
+"Infinispan 5.2.0.Beta2 contains a handful of bugfixes especially around the "
+"new Non-Blocking State Transfer functionality. For a detailed view of what "
+"has been fixed please https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12320095[refer to JIRA]."
 msgstr ""
+"Infinispan 5.2.0.Beta2 "
+"には、特に新しいノンブロッキング状態転送機能を中心とした多くのバグフィックスが含まれています。何が修正されたかの詳細については link:https://"
+"issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
+"12320095[JIRA を参照して] ください。"
 
 #. type: Plain text
 #: upstream/_posts/2012-10-14-infinispan-520beta2-is-out.adoc:24
-msgid "You can http://www.jboss.org/infinispan/downloads[download] the distribution or the https://repository.jboss.org/nexus/content/repositories/releases/org/infinispan/[maven artifact]. If you have any questions please check our http://www.jboss.org/infinispan/forums[forums], our mailing lists or ping us directly on irc://irc.freenode.org/infinispan[IRC]!"
+#, fuzzy
+msgid ""
+"You can http://www.jboss.org/infinispan/downloads[download] the distribution "
+"or the https://repository.jboss.org/nexus/content/repositories/releases/org/"
+"infinispan/[maven artifact]. If you have any questions please check our http:"
+"//www.jboss.org/infinispan/forums[forums], our mailing lists or ping us "
+"directly on irc://irc.freenode.org/infinispan[IRC]!"
 msgstr ""
+"ディストリビューションまたは maven アーティファクトを link:http://www.jboss.org/infinispan/"
+"downloads[ダウンロードする] ことができます。質問がある場合は、 link:http://www.jboss.org/infinispan/"
+"forums[フォーラムや] メーリングリストをチェックするか、IRCで直接質問してください!"
 
 #. type: Plain text
 #: upstream/_posts/2012-10-14-infinispan-520beta2-is-out.adoc:26
+#, fuzzy
 msgid "Cheers, Mircea"
-msgstr ""
+msgstr "乾杯、ミルセア"

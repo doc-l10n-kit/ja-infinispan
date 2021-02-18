@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-11-12-the-fastest-path-to-running-infinispan.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-12-the-fastest-path-to-running-infinispan.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: The fastest path to running Infinispan on OpenShift!\n"
@@ -32,47 +32,110 @@ msgid ""
 "date: '2018-11-12T00:41:00.000-08:00'\n"
 "author: galder\n"
 "tags: [ \" openshift\", \"minishift\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-9055955096757720557\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/11/the-fastest-path-to-running-infinispan.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"9055955096757720557\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/11/the-fastest-path-to-"
+"running-infinispan.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: OpenShift上でInfinispanを動かすための最速の道！？\n"
+"permalink: /blog/:year/:month/:day/the-fastest-path-to-running-infinispan\n"
+"date: '2018-11-12T00:41:00.000-08:00'\n"
+"author: galder\n"
+"tags: [ \" openshift\", \"minishift\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"9055955096757720557\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/11/the-fastest-path-to-"
+"running-infinispan.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-12-the-fastest-path-to-running-infinispan.adoc:15
-msgid "Creating an Infinispan Server cluster in OpenShift has never been easier! We've just given the OpenShift templates for Infinispan server their biggest makeover yet which should help both Infinispan and OpenShift users:"
+#, fuzzy
+msgid ""
+"Creating an Infinispan Server cluster in OpenShift has never been easier! "
+"We've just given the OpenShift templates for Infinispan server their biggest "
+"makeover yet which should help both Infinispan and OpenShift users:"
 msgstr ""
+"OpenShiftでのInfinispan "
+"Serverクラスタの作成がこれまでになく簡単になりました。Infinispanサーバー用のOpenShiftテンプレートをこれまでで最大規模の改修を行い、InfinispanとOpenShiftユーザーの両方に役立つようにしました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-12-the-fastest-path-to-running-infinispan.adoc:22
-msgid "The https://github.com/infinispan/infinispan-openshift-templates[repository] has been simplified and flattened out to only leave essential information. https://www.okd.io/minishift/[Minishift] is the preferred way to get started with Infinispan and OpenShift, so we've tailored the instructions for this set up."
+#, fuzzy
+msgid ""
+"The https://github.com/infinispan/infinispan-openshift-templates[repository] "
+"has been simplified and flattened out to only leave essential information. "
+"https://www.okd.io/minishift/[Minishift] is the preferred way to get started "
+"with Infinispan and OpenShift, so we've tailored the instructions for this "
+"set up."
 msgstr ""
+"link:https://github.com/infinispan/infinispan-openshift-templates[リポジトリを] "
+"簡素化してフラットにし、必要な情報だけを残すようにしました。InfinispanとOpenShiftを使い始めるには link:https://www."
+"okd.io/minishift/[Minishift] が好ましい方法なので、このセットアップのための指示を調整しました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-12-the-fastest-path-to-running-infinispan.adoc:28
-msgid "OpenShift templates are now https://github.com/infinispan/infinispan-openshift-templates/blob/master/infinispan-ephemeral.yaml[YAML based] which is less verbose, but more importantly, allows Infinispan Server XML configuration to be shown as-is. This makes it easier to directly modify the XML in the template itself."
+#, fuzzy
+msgid ""
+"OpenShift templates are now https://github.com/infinispan/infinispan-"
+"openshift-templates/blob/master/infinispan-ephemeral.yaml[YAML based] which "
+"is less verbose, but more importantly, allows Infinispan Server XML "
+"configuration to be shown as-is. This makes it easier to directly modify the "
+"XML in the template itself."
 msgstr ""
+"OpenShiftテンプレートは link:https://github.com/infinispan/infinispan-openshift-"
+"templates/blob/master/infinispan-ephemeral.yaml[YAMLベースに] "
+"なり、冗長性が少なくなりましたが、より重要なのは、Infinispan "
+"ServerのXML構成をそのまま表示できるようになったことです。これにより、テンプレート自体のXMLを直接変更することが容易になりました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-12-the-fastest-path-to-running-infinispan.adoc:34
-msgid "The fastest way to get started with Infinispan and OpenShift is to simply fire up Minishift, set a profile, checkout our Infinipan OpenShift https://github.com/infinispan/infinispan-openshift-templates[repository] and then call:"
+#, fuzzy
+msgid ""
+"The fastest way to get started with Infinispan and OpenShift is to simply "
+"fire up Minishift, set a profile, checkout our Infinipan OpenShift https://"
+"github.com/infinispan/infinispan-openshift-templates[repository] and then "
+"call:"
 msgstr ""
+"InfinispanとOpenShiftを使い始める最も早い方法は、Minishiftを起動してプロファイルを設定し、Infinipan "
+"OpenShift link:https://github.com/infinispan/infinispan-openshift-"
+"templates[リポジトリを] チェックアウトしてから電話をかけるだけです。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-12-the-fastest-path-to-running-infinispan.adoc:37
+#, fuzzy
 msgid "oc create -f infinispan-ephemeral.yaml oc new-app infinispan-ephemeral"
 msgstr ""
+"oc create -f infinispan-ephemeral.yaml oc new-app infinispan-ephemeral"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-12-the-fastest-path-to-running-infinispan.adoc:43
-msgid "These two simple steps will get you a single node Infinispan Server running! A more detailed getting started guide can be found in the repository's https://github.com/infinispan/infinispan-openshift-templates/blob/master/README.asciidoc[README] file."
+#, fuzzy
+msgid ""
+"These two simple steps will get you a single node Infinispan Server running! "
+"A more detailed getting started guide can be found in the repository's https:"
+"//github.com/infinispan/infinispan-openshift-templates/blob/master/README."
+"asciidoc[README] file."
 msgstr ""
+"この 2 つの簡単なステップで、シングルノードの Infinispan Server "
+"を実行することができます。より詳細なスタートアップガイドは、リポジトリの link:https://github.com/infinispan/"
+"infinispan-openshift-templates/blob/master/README.asciidoc[README] "
+"ファイルにあります。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-12-the-fastest-path-to-running-infinispan.adoc:46
-msgid "Go and try it out and let us know what you think. You can find us on this https://infinispan.zulipchat.com/[Zulip chat] :)"
+#, fuzzy
+msgid ""
+"Go and try it out and let us know what you think. You can find us on this "
+"https://infinispan.zulipchat.com/[Zulip chat] :)"
 msgstr ""
+"行って、それを試してみて、私たちはあなたが何を考えているかを知ってみましょう。あなたはこの link:https://infinispan."
+"zulipchat.com/[Zulipのチャット] で私たちを見つけることができます。)"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-12-the-fastest-path-to-running-infinispan.adoc:48
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

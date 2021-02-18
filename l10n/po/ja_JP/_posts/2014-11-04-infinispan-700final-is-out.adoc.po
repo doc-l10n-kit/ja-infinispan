@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 7.0.0.Final is out!!\n"
@@ -34,266 +34,359 @@ msgid ""
 "tags: [ \"release\",\n"
 "\"final\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7730902732186547984\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/11/infinispan-700final-is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7730902732186547984\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/11/infinispan-700final-is-"
+"out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 7.0.0.Finalが出ました!\n"
+"permalink: /blog/:year/:month/:day/infinispan-700final-is-out\n"
+"date: '2014-11-04T04:09:00.000-08:00'\n"
+"author: galder\n"
+"tags: [ \"release\",\n"
+"\"final\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7730902732186547984\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/11/infinispan-700final-is-"
+"out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:14
+#, fuzzy
 msgid "Hi all,"
-msgstr ""
+msgstr "皆さん、こんにちは。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:17
-msgid "We are really proud to announce the release of *Infinispan 7.0.0.Final*!!"
-msgstr ""
+#, fuzzy
+msgid ""
+"We are really proud to announce the release of *Infinispan 7.0.0.Final*!!"
+msgstr "*Infinispan 7.0.0.Final* のリリースを発表できることを誇りに思います!"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:22
-msgid "This is the culmination of several months of development which has focused on on Security, Cluster Partition handling, JSR-107 JCache 1.0.0 support, Clustered Listeners, Remote Events, Query improvements and brand new XML configuration."
+#, fuzzy
+msgid ""
+"This is the culmination of several months of development which has focused "
+"on on Security, Cluster Partition handling, JSR-107 JCache 1.0.0 support, "
+"Clustered Listeners, Remote Events, Query improvements and brand new XML "
+"configuration."
 msgstr ""
+"これは、セキュリティ、クラスタパーティションの処理、JSR-107 JCache 1.0.0."
+"0のサポート、クラスタ化されたリスナー、リモートイベント、クエリの改善、そして真新しいXML設定に焦点を当てた数ヶ月間の開発の集大成です。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:27
-msgid "To mark the occasion, the team has prepared a http://infinispan.org/infinispan-7.0/[*thorough release notes page*] highlighting all the major features and enhancements implemented in Infinispan 7.0 series."
+#, fuzzy
+msgid ""
+"To mark the occasion, the team has prepared a http://infinispan.org/"
+"infinispan-7.0/[*thorough release notes page*] highlighting all the major "
+"features and enhancements implemented in Infinispan 7.0 series."
 msgstr ""
+"これを記念して、チームはInfinispan 7.0シリーズで実装されたすべての主要な機能と機能強化をハイライトした link:http://"
+"infinispan.org/infinispan-7.0/[*リリースノートページを*] 用意しました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:30
-msgid "The Infinispan team would like to recognise all the community members that have contributed to this release, in no particular order:"
-msgstr ""
+#, fuzzy
+msgid ""
+"The Infinispan team would like to recognise all the community members that "
+"have contributed to this release, in no particular order:"
+msgstr "Infinispanチームは、このリリースに貢献してくれたすべてのコミュニティメンバーに感謝したいと思います。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:35
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Radim Vansa* for his\n"
 "http://blog.infinispan.org/2014/10/soft-index-file-store.html[Soft-Index\n"
 "File Store] and many more enhancements and fixes\n"
 msgstr ""
+"*Radim Vansa* 氏の link:http://blog.infinispan.org/2014/10/soft-index-file-"
+"store.html[ソフトインデックスファイルストア] と多くの機能強化と修正のための"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:38
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Takayoshi Kimura* for fixes such\n"
-"as http://issues.jboss.org/browse/ISPN-3752[ISPN-3752], https://issues.jboss.org/browse/ISPN-4476[ISPN-4476]\n"
+"as http://issues.jboss.org/browse/ISPN-3752[ISPN-3752], https://issues.jboss."
+"org/browse/ISPN-4476[ISPN-4476]\n"
 "and https://issues.jboss.org/browse/ISPN-4477[ISPN-4477]\n"
 msgstr ""
+"ISPN link:http://issues.jboss.org/browse/ISPN-3752[-3752,] ISPN-4476 link:"
+"https://issues.jboss.org/browse/ISPN-4476[, ISPN] -4477 などの修正を担当した *木村孝義* 氏"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:41
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Jiri Holusa* for his tremendous work to improve our test coverage\n"
 "work and fixing issues like\n"
 "https://issues.jboss.org/browse/ISPN-3442[ISPN-3442] \n"
 msgstr ""
+"テストカバレッジ作業の改善と link:https://issues.jboss.org/browse/ISPN-3442[ISPN-3442 の] "
+"ような問題の修正に尽力してくれた *Jiri Holusa* に感謝します。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:45
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Karl von Randow* for his documentation fixes, init.d fixes in\n"
 "https://issues.jboss.org/browse/ISPN-4141[ISPN-4141] and enhancements\n"
 "to putForExternalRead method as part of\n"
 "https://issues.jboss.org/browse/ISPN-3792[ISPN-3792]\n"
 msgstr ""
+"*Karl von Randow* さんによるドキュメントの修正、 link:https://issues.jboss.org/browse/ISPN-"
+"4141[ISPN-4141] の init.d の修正、ISPN link:https://issues.jboss.org/browse/ISPN-"
+"3792[-3792] の一部としての putForExternalRead メソッドの拡張。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:48
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Jakub Markos* for his work to optimise the Infinispan Server\n"
 "testsuite in https://issues.jboss.org/browse/ISPN-4317[ISPN-4317] and\n"
 "many fixes and test suite enhancements\n"
 msgstr ""
+"ISPN- link:https://issues.jboss.org/browse/ISPN-4317[4317] でのInfinispan "
+"Serverテストスイートの最適化と link:https://issues.jboss.org/browse/ISPN-4317[、] "
+"多くの修正とテストスイートの強化に尽力してくれた *Jakub Markos* 氏。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:50
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Michal Linhard* fox his\n"
 "https://issues.jboss.org/browse/ISPN-3750[ISPN-3750] fix\n"
 msgstr ""
+"*Michal Linhardは* link:https://issues.jboss.org/browse/ISPN-3750[ISPN-3750を] "
+"修正するために彼の狐"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:52
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Vitalii Chepeliuk* for his work on extending test coverage and fixes\n"
 "such as https://issues.jboss.org/browse/ISPN-3880[ISPN-3880]\n"
 msgstr ""
+"*Vitalii Chepeliuk* 氏は、テストカバレッジの拡張と ISPN link:https://issues.jboss.org/"
+"browse/ISPN-3880[-3880] のような修正に取り組んでくれました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:55
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Wolf Dieter-Fink* for fixes such as\n"
 "https://issues.jboss.org/browse/ISPN-3916[ISPN-3916] and\n"
 "https://issues.jboss.org/browse/ISPN-3912[ISPN-3912]\n"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-3916[ISPN-3916] や link:https://"
+"issues.jboss.org/browse/ISPN-3912[ISPN-3912] のような修正のための *Wolf Dieter-Fink*"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:58
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Vojtech Juranek* for his continued work to improve Infinispan with\n"
 "fixes such as https://issues.jboss.org/browse/ISPN-4072[ISPN-4072] and\n"
 "his work to increase the test coverage\n"
 msgstr ""
+"*Vojtech Juranek* 氏は、ISPN link:https://issues.jboss.org/browse/ISPN-4072[-"
+"4072の] ような修正でInfinispanを改善するための継続的な作業 link:https://issues.jboss.org/browse/"
+"ISPN-4072[と、] テストカバレッジを高めるための作業に感謝しています。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:61
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Martin Gencur* for the many issues he fixed\n"
-"including https://issues.jboss.org/browse/ISPN-3771[ISPN-3771], https://issues.jboss.org/browse/ISPN-4499[ISPN-4499]\n"
+"including https://issues.jboss.org/browse/ISPN-3771[ISPN-3771], https://"
+"issues.jboss.org/browse/ISPN-4499[ISPN-4499]\n"
 "and others...\n"
 msgstr ""
+"*Martin Gencur* 氏は、ISPN link:https://issues.jboss.org/browse/ISPN-3771[-"
+"3771、] ISPN-4499 link:https://issues.jboss.org/browse/ISPN-4499[など] "
+"多くの問題を修正してくれました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:63
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Norman Maurer* for porting Infinispan Servers to use\n"
 "http://netty.io/[Netty 4]\n"
 msgstr ""
+"Infinispanサーバを link:http://netty.io/[Netty 4] を使用するために移植するための *Norman "
+"Maurer*"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:66
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Alan Field* for fixes such\n"
 "as https://issues.jboss.org/browse/ISPN-4645[ISPN-4645]\n"
 "and https://issues.jboss.org/browse/ISPN-4376[ISPN-4376]\n"
 msgstr ""
+"ISPN- link:https://issues.jboss.org/browse/ISPN-4645[4645 や] ISPN-4376 "
+"のような修正のための *Alan Field*"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:70
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Tomáš Sýkora* for fixes such\n"
 "as https://issues.jboss.org/browse/ISPN-3136[ISPN-3136] and\n"
 "https://issues.jboss.org/browse/ISPN-4076[ISPN-4076], and improved test\n"
 "coverage\n"
 msgstr ""
+"*Tomáš Sýkora* が ISPN-3136 link:https://issues.jboss.org/browse/ISPN-3136[や "
+"ISPN] -4076 などの修正 link:https://issues.jboss.org/browse/ISPN-4076[と] "
+"テストカバレッジの改善を行いました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:73
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Paul Ferraro* for many fixes including fixes such\n"
 "as https://issues.jboss.org/browse/ISPN-4375[ISPN-4375]\n"
 "and https://issues.jboss.org/browse/ISPN-4374[ISPN-4374]\n"
 msgstr ""
+"ISPN- link:https://issues.jboss.org/browse/ISPN-4375[4375 や] ISPN-4374 "
+"のような修正を含む多くの修正に *Paul Ferraro*"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:75
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Nicolas Filotto* for\n"
 "his https://issues.jboss.org/browse/ISPN-3689[ISPN-3689] fix\n"
 msgstr ""
+"*Nicolas Filotto* 氏のISPN link:https://issues.jboss.org/browse/ISPN-3689[-"
+"3689修正の] ために"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:78
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Rajesh Jangam* for\n"
 "his https://issues.jboss.org/browse/ISPN-3877[ISPN-3877]\n"
 "and https://issues.jboss.org/browse/ISPN-3894[ISPN-3894] fixes\n"
 msgstr ""
+"*Rajesh Jangam* さんの ISPN link:https://issues.jboss.org/browse/ISPN-3877[-"
+"3877 と] ISPN-3894 の link:https://issues.jboss.org/browse/ISPN-3894[修正]"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:82
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Brett Meyer* for his amazing work to get Infinispan working in OSGI\n"
 "environments as part\n"
 "of https://issues.jboss.org/browse/ISPN-800[ISPN-800] and many related\n"
 "fixes\n"
 msgstr ""
+"ISPN link:https://issues.jboss.org/browse/ISPN-800[-800の] "
+"一部としてOSGI環境で動作するInfinispanを取得し、多くの関連する修正を行ったBrett *Meyer氏* の素晴らしい仕事に感謝します。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:83
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Radoslav Husar* for his several fixes\n"
-msgstr ""
+msgstr "*ラドスラフ・フザール* の修正"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:85
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*slaskawiec* for his work to improve our CDI integration and\n"
 "moving to Jackson for JSON\n"
-msgstr ""
+msgstr "*slaskawiec* 氏によるCDI統合の改善とJSONのためのJacksonへの移行について"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:86
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Karsten Blees* for his LIRS eviction fixes\n"
-msgstr ""
+msgstr "彼のLIRSの立ち退きのための *Karsten Blees* の修正"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:88
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Niels Bertramn* for\n"
 "his https://issues.jboss.org/browse/ISPN-4679[ISPN-4679] fix\n"
 msgstr ""
+"*Niels Bertramn* が ISPN link:https://issues.jboss.org/browse/ISPN-4679[-4679 "
+"を修正しました] 。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:90
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Duncan Doyle* for his work on\n"
 "https://issues.jboss.org/browse/ISPN-4637[ISPN-4637]\n"
 msgstr ""
+"*Duncan Doyle* 氏の link:https://issues.jboss.org/browse/ISPN-4637[ISPN-4637] "
+"に関する研究に対して"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:91
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Emmanuel Bernard* for his documentation improvements\n"
-msgstr ""
+msgstr "*エマニュエル・ベルナール* 氏のドキュメントの改善について"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:92
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Gabriel Francisco* for his work to revamp the Mongo DB cache store\n"
-msgstr ""
+msgstr "Mongo DBのキャッシュストアを刷新するための作業のための *ガブリエル・フランシスコ*"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:93
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Bilgin Ibryam* for his OSGI fixes\n"
-msgstr ""
+msgstr "*Bilgin Ibryam* 氏のOSGI修正のために"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:95
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "*Erik Salter* for his work on orphaned transactions and fixes such\n"
 "as https://issues.jboss.org/browse/ISPN-4872[ISPN-4872]\n"
 msgstr ""
+"*Erik Salter は* 孤児となったトランザクションと ISPN link:https://issues.jboss.org/browse/"
+"ISPN-4872[-4872] のような修正を担当してくれました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:98
-msgid "Thanks to all contributors for your amazing work and effort! We hope you carry on contributing in future releases."
-msgstr ""
+#, fuzzy
+msgid ""
+"Thanks to all contributors for your amazing work and effort! We hope you "
+"carry on contributing in future releases."
+msgstr "あなたの素晴らしい仕事と努力のためのすべての貢献者に感謝します!今後のリリースでも貢献を続けていただけることを願っています。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:105
-msgid "Finally, during the Infinispan 7.0 series, Gustavo Fernandes has joined the team making outstanding contributions in our Query project, and Tristan Tarrant has joined the team full time taking on Infinispan's Security layer. Thanks to both!!"
+#, fuzzy
+msgid ""
+"Finally, during the Infinispan 7.0 series, Gustavo Fernandes has joined the "
+"team making outstanding contributions in our Query project, and Tristan "
+"Tarrant has joined the team full time taking on Infinispan's Security layer. "
+"Thanks to both!!"
 msgstr ""
+"最後に、Infinispan 7.0シリーズでは、Gustavo "
+"Fernandesがチームに加わり、Queryプロジェクトで素晴らしい貢献をしてくれました。二人に感謝します。"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:109
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2014-11-04-infinispan-700final-is-out.adoc:111
+#, fuzzy
 msgid "Galder"
-msgstr ""
+msgstr "ガルダー"

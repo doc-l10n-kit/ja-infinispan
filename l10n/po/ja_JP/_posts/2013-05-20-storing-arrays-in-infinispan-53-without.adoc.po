@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2013-05-20-storing-arrays-in-infinispan-53-without.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-20-storing-arrays-in-infinispan-53-without.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Storing arrays in Infinispan 5.3 without wrapper objects!\n"
@@ -32,37 +32,97 @@ msgid ""
 "date: '2013-05-20T03:22:00.002-07:00'\n"
 "author: galder\n"
 "tags: [ \"equivalence\", \"memory\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-6616866972702199200\n"
-"blogger_orig_url: https://blog.infinispan.org/2013/05/storing-arrays-in-infinispan-53-without.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6616866972702199200\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/05/storing-arrays-in-"
+"infinispan-53-without.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 5.3でラッパーオブジェクトを使わずに配列を保存する方法\n"
+"permalink: /blog/:year/:month/:day/storing-arrays-in-infinispan-53-without\n"
+"date: '2013-05-20T03:22:00.002-07:00'\n"
+"author: galder\n"
+"tags: [ \"equivalence\", \"memory\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"6616866972702199200\n"
+"blogger_orig_url: https://blog.infinispan.org/2013/05/storing-arrays-in-"
+"infinispan-53-without.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-20-storing-arrays-in-infinispan-53-without.adoc:14
-msgid "As we head towards the latter part of Infinispan 5.3 series, we're doing a series of blog posts where we provide more detailed information of some of the key features in this release."
+#, fuzzy
+msgid ""
+"As we head towards the latter part of Infinispan 5.3 series, we're doing a "
+"series of blog posts where we provide more detailed information of some of "
+"the key features in this release."
 msgstr ""
+"Infinispan 5.3シリーズの後半に向けて、このリリースの主要な機能のいくつかについて、より詳細な情報を提供する一連のブログ記事を行っています。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-20-storing-arrays-in-infinispan-53-without.adoc:21
-msgid "As part of Infinispan 5.3.0.Beta1, we added the ability to store data directly in Infinispan which previously would have required using a custom wrapper object, e.g. arrays. The way Infinispan supports storing these type of objects is by allowing a custom https://github.com/infinispan/infinispan/blob/master/core/src/main/java/org/infinispan/util/Equivalence.java[Equivalence] function to be configured for keys and/or values."
+#, fuzzy
+msgid ""
+"As part of Infinispan 5.3.0.Beta1, we added the ability to store data "
+"directly in Infinispan which previously would have required using a custom "
+"wrapper object, e.g. arrays. The way Infinispan supports storing these type "
+"of objects is by allowing a custom https://github.com/infinispan/infinispan/"
+"blob/master/core/src/main/java/org/infinispan/util/Equivalence."
+"java[Equivalence] function to be configured for keys and/or values."
 msgstr ""
+"Infinispan 5.3.0.0.Beta1 の一部として、従来は配列などのカスタムラッパーオブジェクトを使用する必要があったデータを "
+"Infinispan "
+"に直接格納する機能が追加されました。Infinispanがこれらのタイプのオブジェクトの保存をサポートする方法は、キーや値のためにカスタムの link:"
+"https://github.com/infinispan/infinispan/blob/master/core/src/main/java/org/"
+"infinispan/util/Equivalence.java[等価] 関数を設定できるようにすることです。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-20-storing-arrays-in-infinispan-53-without.adoc:28
-msgid "This is a less cumbersome method that enables object requiring custom equals/hashCode implementations to be stored without incurring on a extra cost per cache entry. We've already been using this internally to store Hot Rod, REST and Memcached data where keys and/or values can be byte arrays, and we've seen some nice improvements in terms of memory consumption."
+#, fuzzy
+msgid ""
+"This is a less cumbersome method that enables object requiring custom equals/"
+"hashCode implementations to be stored without incurring on a extra cost per "
+"cache entry. We've already been using this internally to store Hot Rod, REST "
+"and Memcached data where keys and/or values can be byte arrays, and we've "
+"seen some nice improvements in terms of memory consumption."
 msgstr ""
+"これは、カスタムの等号/"
+"ハッシュコード実装を必要とするオブジェクトを、キャッシュエントリごとに余分なコストをかけずに格納できるようにするための、それほど煩雑ではないメソッドです。私たちは、Hot "
+"Rod、REST、Memcached "
+"のデータを保存するためにすでに内部的にこれを使用しており、キーや値がバイト配列になっている場合には、メモリ消費の面でいくつかの素晴らしい改善が見られました。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-20-storing-arrays-in-infinispan-53-without.adoc:33
-msgid "A nice side effect of being able to store byte arrays natively is that it makes sharing data between multiple endpoints less cumbersome since you're now dealing with byte arrays directly instead of having to wrap/unwrap the byte arrays. More on this topic very shortly."
+#, fuzzy
+msgid ""
+"A nice side effect of being able to store byte arrays natively is that it "
+"makes sharing data between multiple endpoints less cumbersome since you're "
+"now dealing with byte arrays directly instead of having to wrap/unwrap the "
+"byte arrays. More on this topic very shortly."
 msgstr ""
+"バイト配列をネイティブに格納できるようになったことの良い副作用は、バイト配列をラップ/"
+"アンラップする代わりにバイト配列を直接扱うようになったことで、複数のエンドポイント間でのデータの共有がより面倒にならないということです。このトピックの詳細については、まもなく説明します。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-20-storing-arrays-in-infinispan-53-without.adoc:40
-msgid "Full details on how to implement and configure these new https://github.com/infinispan/infinispan/blob/master/core/src/main/java/org/infinispan/util/Equivalence.java[Equivalence] functions can be found in the https://docs.jboss.org/author/x/2oD2Aw[Infinispan community documentation]. To give this a go, make sure you http://www.jboss.org/infinispan/downloads[download the latest Infinispan 5.3 release]."
+#, fuzzy
+msgid ""
+"Full details on how to implement and configure these new https://github.com/"
+"infinispan/infinispan/blob/master/core/src/main/java/org/infinispan/util/"
+"Equivalence.java[Equivalence] functions can be found in the https://docs."
+"jboss.org/author/x/2oD2Aw[Infinispan community documentation]. To give this "
+"a go, make sure you http://www.jboss.org/infinispan/downloads[download the "
+"latest Infinispan 5.3 release]."
 msgstr ""
+"これらの新しい link:https://github.com/infinispan/infinispan/blob/master/core/src/"
+"main/java/org/infinispan/util/Equivalence.java[等価] "
+"関数の実装および設定方法の詳細については、Infinispan link:https://docs.jboss.org/author/x/"
+"2oD2Aw[コミュニティのドキュメントを] 参照してください。これを実行するには、 link:http://www.jboss.org/"
+"infinispan/downloads[最新の Infinispan 5.3 リリースをダウンロードして] ください。"
 
 #. type: Plain text
 #: upstream/_posts/2013-05-20-storing-arrays-in-infinispan-53-without.adoc:42
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

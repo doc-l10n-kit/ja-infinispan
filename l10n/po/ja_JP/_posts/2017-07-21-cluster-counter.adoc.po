@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Cluster Counter\n"
@@ -32,180 +32,278 @@ msgid ""
 "date: '2017-07-21T09:33:00.000-07:00'\n"
 "author: pruivo\n"
 "tags: [ \"counter\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5343955017767092509\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5343955017767092509\n"
 "blogger_orig_url: https://blog.infinispan.org/2017/07/cluster-counter.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: クラスターカウンター\n"
+"permalink: /blog/:year/:month/:day/cluster-counter\n"
+"date: '2017-07-21T09:33:00.000-07:00'\n"
+"author: pruivo\n"
+"tags: [ \"counter\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5343955017767092509\n"
+"blogger_orig_url: https://blog.infinispan.org/2017/07/cluster-counter.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:14
-msgid "In Infinispan 9.1 we introduce the clustered counters. It is a counter distributed and shared among all nodes in the cluster and today we are going to know more about it."
+#, fuzzy
+msgid ""
+"In Infinispan 9.1 we introduce the clustered counters. It is a counter "
+"distributed and shared among all nodes in the cluster and today we are going "
+"to know more about it."
 msgstr ""
+"Infinispan 9.1では、クラスタ化されたカウンタを紹介しています。 "
+"これは、クラスタ内の全ノードに分散して共有されるカウンタで、今日はこれについて詳しく説明します。"
 
 #. type: Title ==
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:16
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Installation"
-msgstr ""
+msgstr "インストール"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:21
-msgid "To use a counter in your Infinispan cluster, first you have to add the maven dependency to your project. As you can see, it is simple as doing:"
+#, fuzzy
+msgid ""
+"To use a counter in your Infinispan cluster, first you have to add the maven "
+"dependency to your project. As you can see, it is simple as doing:"
 msgstr ""
+"Infinispan クラスタでカウンタを使用するには、まずプロジェクトに maven "
+"依存関係を追加する必要があります。ご覧のように、実行するだけで簡単です。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:25
-msgid "After adding the module, you can retrieve the CounterManager and start creating and using counters."
-msgstr ""
+#, fuzzy
+msgid ""
+"After adding the module, you can retrieve the CounterManager and start "
+"creating and using counters."
+msgstr "モジュールを追加したら、CounterManagerを取得して、カウンタの作成と使用を開始することができます。"
 
 #. type: Title ==
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:27
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CounterManager"
-msgstr ""
+msgstr "カウンタマネージャ"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:31
-msgid "Each CounterManager is associated to a CacheManager. But, before showing how to use it, first we have some configuration to be done."
+#, fuzzy
+msgid ""
+"Each CounterManager is associated to a CacheManager. But, before showing how "
+"to use it, first we have some configuration to be done."
 msgstr ""
+"各CounterManagerにはCacheManagerが関連付けられています。しかし、使い方を紹介する前に、まずはいくつかの設定をしておきます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:36
-msgid "There are two attributes that you can configure: The num-owner - that represents the number of copies of the counter's value in a cluster; and the reliability - that represents the behavior of the counters in case of partitions."
+#, fuzzy
+msgid ""
+"There are two attributes that you can configure: The num-owner - that "
+"represents the number of copies of the counter's value in a cluster; and the "
+"reliability - that represents the behavior of the counters in case of "
+"partitions."
 msgstr ""
+"設定できる属性は2つあります。num-owner - クラスタ内のカウンタの値のコピー数を表すもので、信頼性 - "
+"パーティションの場合のカウンタの動作を表すものです。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:39
+#, fuzzy
 msgid "Below, is the configuration example with their default values.  XML:"
-msgstr ""
+msgstr "以下に、それぞれのデフォルト値の設定例を示します。XMLを使用しています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:41
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:74
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:119
+#, fuzzy
 msgid "Programatically:"
-msgstr ""
+msgstr "プログラム的には"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:44
-msgid "Then, you can retrieve the CounterManager from the CacheManager, as shown below, and start using the counters!"
-msgstr ""
+#, fuzzy
+msgid ""
+"Then, you can retrieve the CounterManager from the CacheManager, as shown "
+"below, and start using the counters!"
+msgstr "そして、以下のようにCacheManagerからCounterManagerを取得して、カウンターの使用を開始します!"
 
 #. type: Title ==
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:47
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Counter"
-msgstr ""
+msgstr "カウンター"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:52
-msgid "A counter is identified by its name. Also, it is initialized with an initial value (by default 0) and it can be persisted, if the value needs to survive a cluster restart."
+#, fuzzy
+msgid ""
+"A counter is identified by its name. Also, it is initialized with an initial "
+"value (by default 0) and it can be persisted, if the value needs to survive "
+"a cluster restart."
 msgstr ""
+"カウンタはその名前で識別されます。また、初期値 (デフォルトでは 0) "
+"で初期化され、クラスタの再起動時に値を保持する必要がある場合には、その値を保持することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:56
+#, fuzzy
 msgid "There are 2 types of counters: strong and weak counters."
-msgstr ""
+msgstr "カウンターには強カウンターと弱カウンターの2種類があります。"
 
 #. type: Title ==
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:58
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Strong Counters"
-msgstr ""
+msgstr "強力なカウンター"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:64
-msgid "The strong counter provides higher consistency. Its value is known during the update and its updates are applied atomically. This allows to set boundaries and provides conditional operation (as compare-and-set)."
+#, fuzzy
+msgid ""
+"The strong counter provides higher consistency. Its value is known during "
+"the update and its updates are applied atomically. This allows to set "
+"boundaries and provides conditional operation (as compare-and-set)."
 msgstr ""
+"強力なカウンタは、より高い一貫性を提供します。その値は更新中に既知であり、その更新はアトム単位で適用されます。これにより、境界線を設定することができ、条件付きの操作が可能になります（比較と設定のように）。"
 
 #. type: Title =====
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:65
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:109
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuration"
-msgstr ""
+msgstr "構成"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:70
-msgid "A strong counter can be configured in the configuration file or programatically. They can be also created dynamically at runtime. Below shows us how it can be done:"
-msgstr ""
+#, fuzzy
+msgid ""
+"A strong counter can be configured in the configuration file or "
+"programatically. They can be also created dynamically at runtime. Below "
+"shows us how it can be done:"
+msgstr "強力なカウンタは、設定ファイルやプログラムで設定することができます。また、実行時に動的に作成することもできます。以下にその方法を示します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:72
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:117
+#, fuzzy
 msgid "XML:"
-msgstr ""
+msgstr "XMLを使用しています。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:76
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:121
+#, fuzzy
 msgid "Runtime:"
-msgstr ""
+msgstr "ランタイム。"
 
 #. type: Title =====
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:79
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:124
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Use Case"
-msgstr ""
+msgstr "使用事例"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:82
+#, fuzzy
 msgid "The strong counter fits the following uses cases:"
-msgstr ""
+msgstr "強力なカウンターは、以下のようなユースケースに当てはまります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:84
+#, fuzzy
 msgid "Global Id Generator"
-msgstr ""
+msgstr "グローバルIDジェネレータ"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:87
-msgid "Due to its strong consistency, it can be used as a global identifier generator, as in the example below:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Due to its strong consistency, it can be used as a global identifier "
+"generator, as in the example below:"
+msgstr "強い一貫性があるため、以下の例のようにグローバル識別子生成器として使用することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:91
+#, fuzzy
 msgid "Rate Limiter"
-msgstr ""
+msgstr "レートリミッター"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:94
-msgid "If bounded, it can be used as a simple rate limiter. Just don't forget to invoke reset()..."
-msgstr ""
+#, fuzzy
+msgid ""
+"If bounded, it can be used as a simple rate limiter. Just don't forget to "
+"invoke reset()..."
+msgstr "バインドされていれば、単純なレートリミッターとして使うことができます。ただ、reset()を呼び出すことを忘れないでください...。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:98
+#, fuzzy
 msgid "Simply count \"stuff\""
-msgstr ""
+msgstr "単に「もの」を数える"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:100
+#, fuzzy
 msgid "Well, it is a counter after all..."
-msgstr ""
+msgstr "まあ、結局はカウンターなんですけどね...。"
 
 #. type: Title ==
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:103
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Weak Counters"
-msgstr ""
+msgstr "弱いカウンター"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:108
-msgid "The weak counter provides eventual consistency and its value is not known during updates. It provides faster writes when comparing with the strong counter."
-msgstr ""
+#, fuzzy
+msgid ""
+"The weak counter provides eventual consistency and its value is not known "
+"during updates. It provides faster writes when comparing with the strong "
+"counter."
+msgstr "弱いカウンタは最終的な一貫性を提供し、その値は更新時にはわかりません。強力なカウンタと比較すると、より高速な書き込みが可能になります。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:115
-msgid "As in strong counter, the weak counter can be configure its name and its initial value. In addition, a concurrency-level can be configure to set the number of concurrent updates that can be handled in parallel. Below shows us how to configure it:"
+#, fuzzy
+msgid ""
+"As in strong counter, the weak counter can be configure its name and its "
+"initial value. In addition, a concurrency-level can be configure to set the "
+"number of concurrent updates that can be handled in parallel. Below shows us "
+"how to configure it:"
 msgstr ""
+"弱いカウンタは、強いカウンタと同様に、その名前と初期値を設定することができます。また、並行して扱うことができる同時更新の数を設定するコンカレンシーレベルを設定することができます。以下にその設定方法を示します。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:129
-msgid "The main use case for the weak counter includes all scenarios where its value isn't needed while updating the counter. For example, it can be used to count the number of visits to some resource:"
+#, fuzzy
+msgid ""
+"The main use case for the weak counter includes all scenarios where its "
+"value isn't needed while updating the counter. For example, it can be used "
+"to count the number of visits to some resource:"
 msgstr ""
+"弱いカウンタの主な使用例は、カウンタを更新している間にその値が必要とされないすべてのシナリオを含みます。例えば、あるリソースへの訪問回数をカウントするために使用することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2017-07-21-cluster-counter.adoc:138
-msgid "For more information, take a look at the http://infinispan.org/docs/9.1.x/user_guide/user_guide.html#clustered_counters[documentation].  If you have any feedback, or would like to request some new features, or found some issue, let us know via the https://developer.jboss.org/en/infinispan/content[forum], https://issues.jboss.org/projects/ISPN[issue tracker] or the #infinispan channel onhttp://webchat.freenode.net/?channels=%23infinispan[ Freenode]."
+#, fuzzy
+msgid ""
+"For more information, take a look at the http://infinispan.org/docs/9.1.x/"
+"user_guide/user_guide.html#clustered_counters[documentation].  If you have "
+"any feedback, or would like to request some new features, or found some "
+"issue, let us know via the https://developer.jboss.org/en/infinispan/"
+"content[forum], https://issues.jboss.org/projects/ISPN[issue tracker] or the "
+"#infinispan channel onhttp://webchat.freenode.net/?channels="
+"%23infinispan[ Freenode]."
 msgstr ""
+"詳細については、 link:http://infinispan.org/docs/9.1.x/user_guide/user_guide."
+"html#clustered_counters[ドキュメントを] ご覧ください。フィードバックや新機能のリクエスト、問題点などがあれば、フォーラム "
+"link:https://developer.jboss.org/en/infinispan/content[、] link:https://"
+"issues.jboss.org/projects/ISPN[イシュートラッカー、#] infinispanチャンネルhttp://webchat."
+"freenode.net/?channels=%23infinispan[ Freenode]でお知らせください。"

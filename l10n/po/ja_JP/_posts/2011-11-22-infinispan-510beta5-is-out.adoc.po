@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-11-22-infinispan-510beta5-is-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-22-infinispan-510beta5-is-out.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 5.1.0.BETA5 is out!\n"
@@ -35,52 +35,107 @@ msgid ""
 "\"configuration\",\n"
 "\"demo\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7558807606468412767\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/11/infinispan-510beta5-is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7558807606468412767\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/11/infinispan-510beta5-is-"
+"out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 5.1.0.BETA5が出ました!\n"
+"permalink: /blog/:year/:month/:day/infinispan-510beta5-is-out\n"
+"date: '2011-11-22T00:46:00.001-08:00'\n"
+"author: galder\n"
+"tags: [ \"locking\",\n"
+"\"configuration\",\n"
+"\"demo\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7558807606468412767\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/11/infinispan-510beta5-is-"
+"out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-22-infinispan-510beta5-is-out.adoc:16
-msgid "Infinispan 5.1.0.BETA5 has just been the released with a few interesting additions and important fixes:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Infinispan 5.1.0.BETA5 has just been the released with a few interesting "
+"additions and important fixes:"
+msgstr "Infinispan 5.1.0.BETA5がリリースされたばかりで、いくつかの興味深い追加や重要な修正が行われています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-22-infinispan-510beta5-is-out.adoc:21
-msgid "Locks acquired within a transaction are now reordered in order to avoid deadlocks. There's no new configuration required to take advantage of this feature. More information on how lock reordering works can be found http://community.jboss.org/docs/DOC-16975[here]."
+#, fuzzy
+msgid ""
+"Locks acquired within a transaction are now reordered in order to avoid "
+"deadlocks. There's no new configuration required to take advantage of this "
+"feature. More information on how lock reordering works can be found http://"
+"community.jboss.org/docs/DOC-16975[here]."
 msgstr ""
+"トランザクション内で取得したロックは、デッドロックを避けるために並べ替えられるようになりました。この機能を利用するための新しい設定は必要ありません。ロックの並び替えの仕組みについての詳細は "
+"link:http://community.jboss.org/docs/DOC-16975[こちらを] 参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-22-infinispan-510beta5-is-out.adoc:25
-msgid "One of the aims of Infinispan 5.1 'Brahma' series is to move away from JAXB and instead use Stax based XML parsing. Ahead of that, a new configuration API based on builders has been developed. Expect to hear more about it and examples on using the API in the next few days."
+#, fuzzy
+msgid ""
+"One of the aims of Infinispan 5.1 'Brahma' series is to move away from JAXB "
+"and instead use Stax based XML parsing. Ahead of that, a new configuration "
+"API based on builders has been developed. Expect to hear more about it and "
+"examples on using the API in the next few days."
 msgstr ""
+"Infinispan 5.1 "
+"'Brahma'シリーズの目的の一つは、JAXBから離れ、代わりにStaxベースのXMLパースを使用することです。その前に、ビルダーをベースにした新しいコンフィギュレーションAPIが開発されました。近日中にそれについての詳細とAPIの使用例をお聞きになることを期待しています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-22-infinispan-510beta5-is-out.adoc:27
+#, fuzzy
 msgid "Amongst the fixes included in this release, it's worth mentioning:"
-msgstr ""
+msgstr "このリリースに含まれている修正の中で、それは言及する価値があります。"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-22-infinispan-510beta5-is-out.adoc:29
+#, fuzzy
 msgid "The demo paths that were broken in 5.1.0.BETA4 have now been fixed."
-msgstr ""
+msgstr "5.1.0.BETA4で壊れていたデモパスが修正されました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-22-infinispan-510beta5-is-out.adoc:34
-msgid "Some of the Infinispan jars in 5.1.0.BETA4 were showing duplicate classes. This was the result of an OSGI bundle generation bug, and so to avoid the issue 5.1.0.BETA5 OSGI bundle generation has been disabled.  This functionality will be re-enabled once the issue has been fixed by the Maven Felix plugin."
+#, fuzzy
+msgid ""
+"Some of the Infinispan jars in 5.1.0.BETA4 were showing duplicate classes. "
+"This was the result of an OSGI bundle generation bug, and so to avoid the "
+"issue 5.1.0.BETA5 OSGI bundle generation has been disabled.  This "
+"functionality will be re-enabled once the issue has been fixed by the Maven "
+"Felix plugin."
 msgstr ""
+"5.1.0.0."
+"BETA4のInfinispanのjarの中には、クラスが重複して表示されているものがありました。これはOSGIバンドル生成のバグの結果であり、この問題を回避するために5."
+"1.0.BETA5のOSGIバンドル生成は無効になっています。この機能は、Maven Felix プラグインで問題が修正された後、再び有効になります。"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-22-infinispan-510beta5-is-out.adoc:40
-msgid "As always, please keep the http://community.jboss.org/en/infinispan?view=discussions[feedback] coming.  You can http://www.jboss.org/infinispan/downloads[download] the release from here and you get further details on the issues addressed in the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12318502[changelog]."
+#, fuzzy
+msgid ""
+"As always, please keep the http://community.jboss.org/en/infinispan?view="
+"discussions[feedback] coming.  You can http://www.jboss.org/infinispan/"
+"downloads[download] the release from here and you get further details on the "
+"issues addressed in the https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12318502[changelog]."
 msgstr ""
+"いつものように、 link:http://community.jboss.org/en/infinispan?view="
+"discussions[フィードバックを] お願いします。ここからリリースを link:http://www.jboss.org/infinispan/"
+"downloads[ダウンロードする] ことができ、変更履歴に記載されている問題の詳細を知ることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-22-infinispan-510beta5-is-out.adoc:44
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2011-11-22-infinispan-510beta5-is-out.adoc:45
+#, fuzzy
 msgid "Galder"
-msgstr ""
+msgstr "ガルダー"

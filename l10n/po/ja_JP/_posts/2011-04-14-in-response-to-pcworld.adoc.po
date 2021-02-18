@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-04-14-in-response-to-pcworld.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-14-in-response-to-pcworld.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: In response to PCWorld...\n"
@@ -32,37 +32,116 @@ msgid ""
 "date: '2011-04-14T11:16:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \" jcp\", \"data grids\", \"jsr 107\", \"standards\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-740462165521027600\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/04/in-response-to-pcworld.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"740462165521027600\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/04/in-response-to-pcworld."
+"html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: PCWorldに反応して...。\n"
+"permalink: /blog/:year/:month/:day/in-response-to-pcworld\n"
+"date: '2011-04-14T11:16:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \" jcp\", \"data grids\", \"jsr 107\", \"standards\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"740462165521027600\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/04/in-response-to-pcworld."
+"html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-14-in-response-to-pcworld.adoc:16
-msgid "PCWorld has published http://www.pcworld.com/businesscenter/article/225190/red_hat_cache_move_sparks_standards_spat.html[an article] on the recent data grid JSR that I have submitted.  As a follow-up to PCWorld's article, I would like to make a few comments to clarify a few things."
+#, fuzzy
+msgid ""
+"PCWorld has published http://www.pcworld.com/businesscenter/article/225190/"
+"red_hat_cache_move_sparks_standards_spat.html[an article] on the recent data "
+"grid JSR that I have submitted.  As a follow-up to PCWorld's article, I "
+"would like to make a few comments to clarify a few things."
 msgstr ""
+"PCWorldに最近投稿したデータグリッドJSRについての link:http://www.pcworld.com/businesscenter/"
+"article/225190/red_hat_cache_move_sparks_standards_spat.html[記事が] 掲載されています。 "
+"PCWorldの記事のフォローアップとして、いくつかのことを明確にするためのコメントをしておきたいと思います。"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-14-in-response-to-pcworld.adoc:22
-msgid "I don't quite understand what is meant by Red Hat's approach not being the best solution.  Do people take issue with having a standard in the first place?  Or is it the standards body used in this particular case (the JCP)?  If it is the details of the standard itself, one should keep in mind that this has _yet to be defined_ by an expert group!"
+#, fuzzy
+msgid ""
+"I don't quite understand what is meant by Red Hat's approach not being the "
+"best solution.  Do people take issue with having a standard in the first "
+"place?  Or is it the standards body used in this particular case (the JCP)? "
+" If it is the details of the standard itself, one should keep in mind that "
+"this has _yet to be defined_ by an expert group!"
 msgstr ""
+"Red Hat のアプローチが最良の解決策ではないという意味がよくわかりません。 そもそも標準を持つことに問題があるのでしょうか？ "
+"それとも、このケースで使用されている標準化団体（JCP）が問題なのでしょうか？ 標準自体の詳細であれば、まだ _専門家_ グループ _によって定義され_ "
+"ていないことを念頭に置いておくべきでしょう。"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-14-in-response-to-pcworld.adoc:27
-msgid "It is unfortunate that the _\"others\"_ mentioned in the article - who feel that Red Hat's approach is not the best - were not able to provide any details about their objections. I would love to hear these objections and make sure that the JSR addresses them."
+#, fuzzy
+msgid ""
+"It is unfortunate that the _\"others\"_ mentioned in the article - who feel "
+"that Red Hat's approach is not the best - were not able to provide any "
+"details about their objections. I would love to hear these objections and "
+"make sure that the JSR addresses them."
 msgstr ""
+"記事の中で言及されている _「その他の人」_ - Red Hat のアプローチがベストではないと感じている人 - "
+"が、反対意見についての詳細を提供できなかったのは残念なことです。これらの反対意見を聞いて、JSR "
+"がこれらの反対意見に対応するようにしてほしいと思います。"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-14-in-response-to-pcworld.adoc:41
-msgid "The importance of a standard, to remove vendor lock-in, etc., is pretty well understood, so I won't go into too much detail here.  But with that in mind, I find Pandey's comment regarding a _\"self-beneficial move\"_ an odd one.  A standard makes it easier for people to switch between products (which may explain why no one else may have stepped up to the plate to propose such a standard thus far).  Proposing a standard makes it easier for end-users to _move away_ from Infinispan.  Yes, it may help with awareness of Infinispan, but it also means Red Hat, just like other data grid vendors, will need to work _really hard_ to make sure their products are up to scratch.  The only real beneficiary here is the end-user.  In fact, I'd like to invite Terracotta to participate in this JSR, as participation can only make it stronger, more relevant and eventually even more useful to end-users."
+#, fuzzy
+msgid ""
+"The importance of a standard, to remove vendor lock-in, etc., is pretty well "
+"understood, so I won't go into too much detail here.  But with that in mind, "
+"I find Pandey's comment regarding a _\"self-beneficial move\"_ an odd one. "
+" A standard makes it easier for people to switch between products (which may "
+"explain why no one else may have stepped up to the plate to propose such a "
+"standard thus far).  Proposing a standard makes it easier for end-users to "
+"_move away_ from Infinispan.  Yes, it may help with awareness of Infinispan, "
+"but it also means Red Hat, just like other data grid vendors, will need to "
+"work _really hard_ to make sure their products are up to scratch.  The only "
+"real beneficiary here is the end-user.  In fact, I'd like to invite "
+"Terracotta to participate in this JSR, as participation can only make it "
+"stronger, more relevant and eventually even more useful to end-users."
 msgstr ""
+"ベンダーのロックインなどを取り除くための標準の重要性は、かなり理解されているので、ここではあまり詳しく説明しません。標準化の重要性はよく理解されているので、ここではあまり詳細には触れませんが、それを念頭に置いた上で、「自 "
+"_益的な動き」_ に関する Pandey のコメントは奇妙なものだと思います。 "
+"標準化は人々が製品間の切り替えを容易にします（これが、これまで誰もそのような標準化の提案に踏み切らなかった理由かもしれません）。 "
+"標準化を提案することは、エンドユーザーが _Infinispan_ から離れていくことを容易にします。そう、それは Infinispan "
+"の認知度向上に役立つかもしれませんが、他のデータグリッドベンダーと同様に、Red Hat も自社の製品が最新のものであることを確認する _ために_ "
+"懸命に努力しなければならないことを意味します。 ここでの真の受益者はエンドユーザーだけです。 実際、私は Terracotta にこの JSR "
+"への参加を呼びかけたいと思います。"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-14-in-response-to-pcworld.adoc:53
-msgid "With regards to JSR-107, I believe Pandey has misunderstood the intention in proposing a data grid JSR.  I have proposed extending and building _on top of_ JSR-107 - not throwing it away - and I have expressed this the JSR-107 expert group mailing list, of which Terracotta's Greg Luck is a member.  In fact, without Pandey's actually seeing my http://infinispan.blogspot.com/2011/04/following-up-on-my-previous-response-to.html[data grid proposal blog post] - PCWorld's article was written _before_ I published details of the JSR submission, based on a high-level Red Hat http://www.redhat.com/about/news/prarchive/2011/Red-Hat-Drives-Leadership-in-Java-EE-Innovation[press release] - one has to wonder where such strong words come from!  :-)"
+#, fuzzy
+msgid ""
+"With regards to JSR-107, I believe Pandey has misunderstood the intention in "
+"proposing a data grid JSR.  I have proposed extending and building _on top "
+"of_ JSR-107 - not throwing it away - and I have expressed this the JSR-107 "
+"expert group mailing list, of which Terracotta's Greg Luck is a member.  In "
+"fact, without Pandey's actually seeing my http://infinispan.blogspot.com/"
+"2011/04/following-up-on-my-previous-response-to.html[data grid proposal blog "
+"post] - PCWorld's article was written _before_ I published details of the "
+"JSR submission, based on a high-level Red Hat http://www.redhat.com/about/"
+"news/prarchive/2011/Red-Hat-Drives-Leadership-in-Java-EE-Innovation[press "
+"release] - one has to wonder where such strong words come from!  :-)"
 msgstr ""
+"JSR-107に関しては、Pandey氏がデータグリッドJSRを提案した意図を誤解しているのではないかと思います。 私はJSR-"
+"107を捨てたのではなく、JSR-107を拡張し、その _上に_ 構築することを提案しており、TerracottaのGreg "
+"Luck氏がメンバーであるJSR-107エキスパートグループのメーリングリストでもそのことを表明しています。実際、Pandeyさんが私のデータ link:"
+"http://infinispan.blogspot.com/2011/04/following-up-on-my-previous-response-"
+"to.html[グリッド提案のブログ記事を] 実際に見ていなくても、 link:http://infinispan.blogspot.com/2011/"
+"04/following-up-on-my-previous-response-to.html[PCWorld] の記事は _私が_ "
+"JSR提出の詳細を発表する前に書かれたもので、Red Hatのハイレベルなプレス link:http://www.redhat.com/about/"
+"news/prarchive/2011/Red-Hat-Drives-Leadership-in-Java-EE-Innovation[リリース] "
+"に基づいています - どこからそんな強い言葉が出てきたのか不思議に思わざるを得ません :-)"
 
 #. type: Plain text
 #: upstream/_posts/2011-04-14-in-response-to-pcworld.adoc:55
+#, fuzzy
 msgid "Cheers Manik"
-msgstr ""
+msgstr "乾杯 マニク"

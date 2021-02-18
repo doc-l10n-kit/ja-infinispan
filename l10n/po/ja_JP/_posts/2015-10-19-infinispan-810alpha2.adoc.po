@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2015-10-19-infinispan-810alpha2.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-19-infinispan-810alpha2.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 8.1.0.Alpha2\n"
@@ -35,63 +35,152 @@ msgid ""
 "\"release\",\n"
 "\"alpha\",\n"
 "]\n"
-"thumbnail: http://2.bp.blogspot.com/-4CZ9UIJz6_4/VkIOXDhMo6I/AAAAAAAAOLo/SOdqiC068aE/s72-c/ispn81beta-console-login.png\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7102404044113412821\n"
-"blogger_orig_url: https://blog.infinispan.org/2015/10/infinispan-810alpha2.html\n"
+"thumbnail: http://2.bp.blogspot.com/-4CZ9UIJz6_4/VkIOXDhMo6I/AAAAAAAAOLo/"
+"SOdqiC068aE/s72-c/ispn81beta-console-login.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7102404044113412821\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/10/infinispan-810alpha2."
+"html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 8.1.0.Alpha2\n"
+"permalink: /blog/:year/:month/:day/infinispan-810alpha2\n"
+"date: '2015-10-19T09:30:00.001-07:00'\n"
+"author: vblagojevic\n"
+"tags: [\n"
+"\"release\",\n"
+"\"alpha\",\n"
+"]\n"
+"thumbnail: http://2.bp.blogspot.com/-4CZ9UIJz6_4/VkIOXDhMo6I/AAAAAAAAOLo/"
+"SOdqiC068aE/s72-c/ispn81beta-console-login.png\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7102404044113412821\n"
+"blogger_orig_url: https://blog.infinispan.org/2015/10/infinispan-810alpha2."
+"html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-19-infinispan-810alpha2.adoc:16
+#, fuzzy
 msgid "Dear all,"
-msgstr ""
+msgstr "皆さんへ"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-19-infinispan-810alpha2.adoc:24
-msgid "The second Alpha release of Infinispan 8.1 is now http://infinispan.org/download/[available] for use.  Our new admin https://github.com/infinispan/infinispan-management-console[console] has gone through quite a lot of changes recently.  As mentioned before the new console allows for administration of Infinispan cluster nodes and now we would like to show some screenshots of a running server in the below gallery."
+#, fuzzy
+msgid ""
+"The second Alpha release of Infinispan 8.1 is now http://infinispan.org/"
+"download/[available] for use.  Our new admin https://github.com/infinispan/"
+"infinispan-management-console[console] has gone through quite a lot of "
+"changes recently.  As mentioned before the new console allows for "
+"administration of Infinispan cluster nodes and now we would like to show "
+"some screenshots of a running server in the below gallery."
 msgstr ""
+"Infinispan 8.1の2番目のAlphaリリースが利用 link:http://infinispan.org/download/[可能に] "
+"なりました。 新しい管理 link:https://github.com/infinispan/infinispan-management-"
+"console[コンソールは] 最近多くの変更が加えられました。 "
+"前にも述べたように、新しいコンソールではInfinispanクラスタノードの管理が可能になりました。"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-19-infinispan-810alpha2.adoc:27
-msgid "We would greatly appreciate your feedback regarding the admin console web application, let's shape it together!"
-msgstr ""
+#, fuzzy
+msgid ""
+"We would greatly appreciate your feedback regarding the admin console web "
+"application, let's shape it together!"
+msgstr "管理者コンソールウェブアプリケーションに関するご意見、ご感想をお待ちしております。"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-19-infinispan-810alpha2.adoc:34
-msgid "For all other improvements as well as bug fixes you can see the https://issues.jboss.org/secure/ReleaseNote.jspa?version=12328071&projectId=12310799[release notes]. Infinispan 8.1 Final is still on track for the end of this month. If you are new to Infinispan you can http://infinispan.org/tutorials/[learn] how to use it, and http://infinispan.org/getinvolved/[help] us continually improve it."
+#, fuzzy
+msgid ""
+"For all other improvements as well as bug fixes you can see the https://"
+"issues.jboss.org/secure/ReleaseNote.jspa?version=12328071&projectId="
+"12310799[release notes]. Infinispan 8.1 Final is still on track for the end "
+"of this month. If you are new to Infinispan you can http://infinispan.org/"
+"tutorials/[learn] how to use it, and http://infinispan.org/getinvolved/"
+"[help] us continually improve it."
 msgstr ""
+"その他の改善点やバグフィックスについては、 link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?version=12328071&projectId=12310799[リリースノート] を参照してください。Infinispan 8.1 "
+"Finalは今月末までの予定です。初めてInfinispanをご利用になる方は、使い方を link:http://infinispan.org/"
+"tutorials/[学んで] いただき、継続的な改善にご link:http://infinispan.org/getinvolved/[協力] "
+"ください。"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-19-infinispan-810alpha2.adoc:41
-msgid "http://2.bp.blogspot.com/-4CZ9UIJz6_4/VkIOXDhMo6I/AAAAAAAAOLo/SOdqiC068aE/s1600/ispn81beta-console-login.png[image:http://2.bp.blogspot.com/-4CZ9UIJz6_4/VkIOXDhMo6I/AAAAAAAAOLo/SOdqiC068aE/s1600/ispn81beta-console-login.png[Login Screen]]"
+#, fuzzy
+msgid ""
+"http://2.bp.blogspot.com/-4CZ9UIJz6_4/VkIOXDhMo6I/AAAAAAAAOLo/SOdqiC068aE/"
+"s1600/ispn81beta-console-login.png[image:http://2.bp.blogspot.com/-"
+"4CZ9UIJz6_4/VkIOXDhMo6I/AAAAAAAAOLo/SOdqiC068aE/s1600/ispn81beta-console-"
+"login.png[Login Screen]]"
 msgstr ""
+"link:http://2.bp.blogspot.com/-4CZ9UIJz6_4/VkIOXDhMo6I/AAAAAAAAOLo/"
+"SOdqiC068aE/s1600/ispn81beta-console-login.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-19-infinispan-810alpha2.adoc:43
-msgid "http://3.bp.blogspot.com/-jd2eJslp8bM/VkIOW20Z8VI/AAAAAAAAOLc/SH_5b2NK-p4/s1600/ispn81beta-console-clusters.png[image:http://3.bp.blogspot.com/-jd2eJslp8bM/VkIOW20Z8VI/AAAAAAAAOLc/SH_5b2NK-p4/s1600/ispn81beta-console-clusters.png[Cluster View]]"
+#, fuzzy
+msgid ""
+"http://3.bp.blogspot.com/-jd2eJslp8bM/VkIOW20Z8VI/AAAAAAAAOLc/SH_5b2NK-p4/"
+"s1600/ispn81beta-console-clusters.png[image:http://3.bp.blogspot.com/-"
+"jd2eJslp8bM/VkIOW20Z8VI/AAAAAAAAOLc/SH_5b2NK-p4/s1600/ispn81beta-console-"
+"clusters.png[Cluster View]]"
 msgstr ""
+"link:http://3.bp.blogspot.com/-jd2eJslp8bM/VkIOW20Z8VI/AAAAAAAAOLc/SH_5b2NK-"
+"p4/s1600/ispn81beta-console-clusters.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-19-infinispan-810alpha2.adoc:45
-msgid "http://3.bp.blogspot.com/-wP0h9JgxD5U/VkIOW8wnZAI/AAAAAAAAOLg/_plmNFTrRPo/s1600/ispn81beta-console-caches.png[image:http://3.bp.blogspot.com/-wP0h9JgxD5U/VkIOW8wnZAI/AAAAAAAAOLg/_plmNFTrRPo/s1600/ispn81beta-console-caches.png[Caches View]]"
+#, fuzzy
+msgid ""
+"http://3.bp.blogspot.com/-wP0h9JgxD5U/VkIOW8wnZAI/AAAAAAAAOLg/_plmNFTrRPo/"
+"s1600/ispn81beta-console-caches.png[image:http://3.bp.blogspot.com/-"
+"wP0h9JgxD5U/VkIOW8wnZAI/AAAAAAAAOLg/_plmNFTrRPo/s1600/ispn81beta-console-"
+"caches.png[Caches View]]"
 msgstr ""
+"link:http://3.bp.blogspot.com/-wP0h9JgxD5U/VkIOW8wnZAI/AAAAAAAAOLg/"
+"_plmNFTrRPo/s1600/ispn81beta-console-caches.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-19-infinispan-810alpha2.adoc:47
-msgid "http://2.bp.blogspot.com/-APCMVh0dcnQ/VkIOXYctemI/AAAAAAAAOLw/27RjYRBMfWI/s1600/ispn81beta-console-nodes.png[image:http://2.bp.blogspot.com/-APCMVh0dcnQ/VkIOXYctemI/AAAAAAAAOLw/27RjYRBMfWI/s1600/ispn81beta-console-nodes.png[Nodes View]]"
+#, fuzzy
+msgid ""
+"http://2.bp.blogspot.com/-APCMVh0dcnQ/VkIOXYctemI/AAAAAAAAOLw/27RjYRBMfWI/"
+"s1600/ispn81beta-console-nodes.png[image:http://2.bp.blogspot.com/-"
+"APCMVh0dcnQ/VkIOXYctemI/AAAAAAAAOLw/27RjYRBMfWI/s1600/ispn81beta-console-"
+"nodes.png[Nodes View]]"
 msgstr ""
+"link:http://2.bp.blogspot.com/-APCMVh0dcnQ/VkIOXYctemI/AAAAAAAAOLw/"
+"27RjYRBMfWI/s1600/ispn81beta-console-nodes.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-19-infinispan-810alpha2.adoc:49
-msgid "http://2.bp.blogspot.com/-b5sRFwKAsSw/VkIOWyL5R8I/AAAAAAAAOLk/fJR1MnZ4btI/s1600/ispn81beta-console-addnode.png[image:http://2.bp.blogspot.com/-b5sRFwKAsSw/VkIOWyL5R8I/AAAAAAAAOLk/fJR1MnZ4btI/s1600/ispn81beta-console-addnode.png[Adding a Cache]]"
+#, fuzzy
+msgid ""
+"http://2.bp.blogspot.com/-b5sRFwKAsSw/VkIOWyL5R8I/AAAAAAAAOLk/fJR1MnZ4btI/"
+"s1600/ispn81beta-console-addnode.png[image:http://2.bp.blogspot.com/-"
+"b5sRFwKAsSw/VkIOWyL5R8I/AAAAAAAAOLk/fJR1MnZ4btI/s1600/ispn81beta-console-"
+"addnode.png[Adding a Cache]]"
 msgstr ""
+"link:http://2.bp.blogspot.com/-b5sRFwKAsSw/VkIOWyL5R8I/AAAAAAAAOLk/"
+"fJR1MnZ4btI/s1600/ispn81beta-console-addnode.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-19-infinispan-810alpha2.adoc:51
-msgid "http://3.bp.blogspot.com/-fIhu768hwKE/VkIOXXUYuEI/AAAAAAAAOLs/wWtiM6rN-Jw/s1600/ispn81beta-console-nodedetails.png[image:http://3.bp.blogspot.com/-fIhu768hwKE/VkIOXXUYuEI/AAAAAAAAOLs/wWtiM6rN-Jw/s1600/ispn81beta-console-nodedetails.png[Node Details] ]"
+#, fuzzy
+msgid ""
+"http://3.bp.blogspot.com/-fIhu768hwKE/VkIOXXUYuEI/AAAAAAAAOLs/wWtiM6rN-Jw/"
+"s1600/ispn81beta-console-nodedetails.png[image:http://3.bp.blogspot.com/-"
+"fIhu768hwKE/VkIOXXUYuEI/AAAAAAAAOLs/wWtiM6rN-Jw/s1600/ispn81beta-console-"
+"nodedetails.png[Node Details] ]"
 msgstr ""
+"link:http://3.bp.blogspot.com/-fIhu768hwKE/VkIOXXUYuEI/AAAAAAAAOLs/wWtiM6rN-"
+"Jw/s1600/ispn81beta-console-nodedetails.png[]"
 
 #. type: Plain text
 #: upstream/_posts/2015-10-19-infinispan-810alpha2.adoc:75
+#, fuzzy
 msgid "Cheers! Will"
-msgstr ""
+msgstr "乾杯！ウィル"

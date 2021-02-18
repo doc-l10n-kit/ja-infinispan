@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-03-22-infinispan-513cr1-out-now.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-22-infinispan-513cr1-out-now.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 5.1.3.CR1 out now!\n"
@@ -35,22 +35,65 @@ msgid ""
 "\"release candidate\",\n"
 "\"distribution\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3202680921102608388\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/03/infinispan-513cr1-out-now.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3202680921102608388\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/03/infinispan-513cr1-out-"
+"now.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 5.1.3.CR1がリリースされました。\n"
+"permalink: /blog/:year/:month/:day/infinispan-513cr1-out-now\n"
+"date: '2012-03-22T08:29:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"marshalling\",\n"
+"\"release candidate\",\n"
+"\"distribution\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3202680921102608388\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/03/infinispan-513cr1-out-"
+"now.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-22-infinispan-513cr1-out-now.adoc:24
-msgid "The feedback keeps coming, particularly from AS7 users, so we've decided to do another point release in the 5.1 'Brahma' series. Apart from fixing several issues, including https://issues.jboss.org/browse/ISPN-1915[a critical L1 cache memory leak in active/passive set ups], this version https://issues.jboss.org/browse/ISPN-1367[enables the JBoss Marshaller class resolver to be configured] via both the old and new programmatic configuration API. This enables Infinispan to provide a better solution for https://community.jboss.org/docs/DOC-17244[marshalling/unmarshalling classes in modular environments]."
+#, fuzzy
+msgid ""
+"The feedback keeps coming, particularly from AS7 users, so we've decided to "
+"do another point release in the 5.1 'Brahma' series. Apart from fixing "
+"several issues, including https://issues.jboss.org/browse/ISPN-1915[a "
+"critical L1 cache memory leak in active/passive set ups], this version https:"
+"//issues.jboss.org/browse/ISPN-1367[enables the JBoss Marshaller class "
+"resolver to be configured] via both the old and new programmatic "
+"configuration API. This enables Infinispan to provide a better solution for "
+"https://community.jboss.org/docs/DOC-17244[marshalling/unmarshalling classes "
+"in modular environments]."
 msgstr ""
+"特に AS7 ユーザーからのフィードバックが続いているため、5.1「Brahma」シリーズの別のポイントリリースを行うことにしました。 link:"
+"https://issues.jboss.org/browse/ISPN-1915[アクティブ/パッシブセットアップでの致命的な L1 "
+"キャッシュメモリリーク] を含むいくつかの問題を修正したこととは別に、このバージョンでは、 link:https://issues.jboss.org/"
+"browse/ISPN-1367[JBoss Marshaller クラスリゾルバーを] 新旧両方のプログラマティック設定 API を介して link:"
+"https://issues.jboss.org/browse/ISPN-1367[設定できるようになりまし] た。これにより、Infinispan は "
+"link:https://community.jboss.org/docs/DOC-17244[モジュラー環境でクラスをマーシャル/アンマーシャルする] "
+"ためのより良いソリューションを提供できるようになります。"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-22-infinispan-513cr1-out-now.adoc:31
-msgid "Full details of what has been fixed can be found https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12319263[here], and if you have feedback, please visit http://community.jboss.org/en/infinispan?view=discussions[our forums].  Finally, as always, you can download the release from http://www.jboss.org/infinispan/downloads[here]."
+#, fuzzy
+msgid ""
+"Full details of what has been fixed can be found https://issues.jboss.org/"
+"secure/ReleaseNote.jspa?projectId=12310799&version=12319263[here], and if "
+"you have feedback, please visit http://community.jboss.org/en/"
+"infinispan?view=discussions[our forums].  Finally, as always, you can "
+"download the release from http://www.jboss.org/infinispan/downloads[here]."
 msgstr ""
+"修正された内容の詳細については link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12319263[こちらを] ご覧ください。最後に、いつものように、 link:http:"
+"//www.jboss.org/infinispan/downloads[ここ] からリリースをダウンロードすることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2012-03-22-infinispan-513cr1-out-now.adoc:33
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

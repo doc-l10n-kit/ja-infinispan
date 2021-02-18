@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-12-11-infinispan-spring-boot-211final-and.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-11-infinispan-spring-boot-211final-and.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan Spring Boot Starter 2.1.1.Final and 1.0.4.Final are out!\n"
@@ -32,59 +32,103 @@ msgid ""
 "date: '2018-12-11T04:43:00.000-08:00'\n"
 "author: karesti\n"
 "tags: [ \" release\", \"spring-session\", \"spring\", \"spring boot\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5292806522522359021\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/12/infinispan-spring-boot-211final-and.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5292806522522359021\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/12/infinispan-spring-boot-"
+"211final-and.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan Spring Boot Starter 2.1.1.Finalと1.0.4.Finalが出ました!\n"
+"permalink: /blog/:year/:month/:day/infinispan-spring-boot-211final-and\n"
+"date: '2018-12-11T04:43:00.000-08:00'\n"
+"author: karesti\n"
+"tags: [ \" release\", \"spring-session\", \"spring\", \"spring boot\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5292806522522359021\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/12/infinispan-spring-boot-"
+"211final-and.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-11-infinispan-spring-boot-211final-and.adoc:12
+#, fuzzy
 msgid "Dear Infinispan and Spring Boot users,"
-msgstr ""
+msgstr "InfinispanとSpring Bootをご利用の皆様。"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-11-infinispan-spring-boot-211final-and.adoc:16
-msgid "We have just released https://github.com/infinispan/infinispan-spring-boot[Infinispan Spring Boot] *2.1.1.Final* and *1.0.4.Final*."
+#, fuzzy
+msgid ""
+"We have just released https://github.com/infinispan/infinispan-spring-"
+"boot[Infinispan Spring Boot] *2.1.1.Final* and *1.0.4.Final*."
 msgstr ""
+"link:https://github.com/infinispan/infinispan-spring-boot[Infinispan Spring "
+"Boot] 2.1.1. *Finalと* 1.0.4 *.Final* をリリースしました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-11-infinispan-spring-boot-211final-and.adoc:18
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*1.0.4.Final* is using *Spring Boot 1.5.17.RELEASE*\n"
-msgstr ""
+msgstr "*1.0.4.Finalは* *Spring Bootを* 使用しています *1.5.17.RELEASE*"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-11-infinispan-spring-boot-211final-and.adoc:20
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*2.1.1.Final* is using *Spring Boot 2.1.1.RELEASE* \n"
-msgstr ""
+msgstr "*2.1.1.1.Finalは* *Spring Bootを* 使用しています *2.1.1.1.RELEASE*"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-11-infinispan-spring-boot-211final-and.adoc:26
-msgid "Both starters are now using Infinispan's https://blog.infinispan.org/2018/12/infinispan-944final-and-1000alpha2-out.html[last stable release: 9.4.4.Final]."
+#, fuzzy
+msgid ""
+"Both starters are now using Infinispan's https://blog.infinispan.org/2018/12/"
+"infinispan-944final-and-1000alpha2-out.html[last stable release: 9.4.4."
+"Final]."
 msgstr ""
+"どちらのスターターもInfinispanの最後の link:https://blog.infinispan.org/2018/12/infinispan-"
+"944final-and-1000alpha2-out.html[安定版リリースを] 使用するようになりました link:https://blog."
+"infinispan.org/2018/12/infinispan-944final-and-1000alpha2-out.html[。9.4.4.4."
+"Final] です。"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-11-infinispan-spring-boot-211final-and.adoc:32
-msgid "9.4.4.Final provides full support to *JDK 11,* Spring 4 *[.underline]#and#* 5.  Concerning Spring 5, it includes https://spring.io/projects/spring-session[Spring Session 2.1.2.RELEASE] support."
+#, fuzzy
+msgid ""
+"9.4.4.Final provides full support to *JDK 11,* Spring 4 *[.underline]#and#* "
+"5.  Concerning Spring 5, it includes https://spring.io/projects/spring-"
+"session[Spring Session 2.1.2.RELEASE] support."
 msgstr ""
+"9.4.4.Final は、 *JDK 11、* Spring 4、5 をフルサポートしています *。* Spring 5に関しては、Spring "
+"link:https://spring.io/projects/spring-session[Session 2.1.2.RELEASE] "
+"のサポートが含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-11-infinispan-spring-boot-211final-and.adoc:35
+#, fuzzy
 msgid "You can find these releases in the maven central repository."
-msgstr ""
+msgstr "これらのリリースは、mavenのセントラルリポジトリで見つけることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-11-infinispan-spring-boot-211final-and.adoc:40
-msgid "Please report any issues in our https://issues.jboss.org/projects/ISPN[issue tracker] and join the conversation in our https://infinispan.zulipchat.com/[Zulip Chat] to shape up our next release."
+#, fuzzy
+msgid ""
+"Please report any issues in our https://issues.jboss.org/projects/ISPN[issue "
+"tracker] and join the conversation in our https://infinispan.zulipchat.com/"
+"[Zulip Chat] to shape up our next release."
 msgstr ""
+"私たちの問題 link:https://issues.jboss.org/projects/ISPN[追跡] に問題があれば報告し link:https:"
+"//issues.jboss.org/projects/ISPN[、] 次のリリースを link:https://infinispan."
+"zulipchat.com/[形作る] ためにZulipチャットで会話に参加してください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-11-infinispan-spring-boot-211final-and.adoc:42
+#, fuzzy
 msgid "Enjoy,"
-msgstr ""
+msgstr "楽しんでください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-12-11-infinispan-spring-boot-211final-and.adoc:43
+#, fuzzy
 msgid "The Infinispan Team"
-msgstr ""
+msgstr "インフィニスパンチーム"

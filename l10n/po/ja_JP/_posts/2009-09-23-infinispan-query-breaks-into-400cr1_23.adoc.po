@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,82 +18,167 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan Query breaks into 4.0.0.CR1\n"
 "permalink: /blog/:year/:month/:day/infinispan-query-breaks-into-400cr1_23\n"
 "date: '2009-09-23T02:31:00.001-07:00'\n"
 "author: infinispan\n"
-"tags: [ \" jboss cache\", \"lucene\", \"hibernate\", \"hibernate search\", \"index\", \"query\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-2624603811930835812\n"
-"blogger_orig_url: https://blog.infinispan.org/2009/09/infinispan-query-breaks-into-400cr1_23.html\n"
+"tags: [ \" jboss cache\", \"lucene\", \"hibernate\", \"hibernate search\", "
+"\"index\", \"query\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2624603811930835812\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/09/infinispan-query-"
+"breaks-into-400cr1_23.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan Queryが4.0.0.0.CR1に壊れる\n"
+"permalink: /blog/:year/:month/:day/infinispan-query-breaks-into-400cr1_23\n"
+"date: '2009-09-23T02:31:00.001-07:00'\n"
+"author: infinispan\n"
+"tags: [ \" jboss cache\", \"lucene\", \"hibernate\", \"hibernate search\", "
+"\"index\", \"query\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"2624603811930835812\n"
+"blogger_orig_url: https://blog.infinispan.org/2009/09/infinispan-query-"
+"breaks-into-400cr1_23.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:13
+#, fuzzy
 msgid "Hello all,"
-msgstr ""
+msgstr "皆さん、こんにちは。"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:17
-msgid "Querying is an important feature for Infinispan, so we've decided to include a technology preview of this for 4.0.0.CR1 and 4.0.0.GA, even though it is only really scheduled for Infinispan 4.1.0."
+#, fuzzy
+msgid ""
+"Querying is an important feature for Infinispan, so we've decided to include "
+"a technology preview of this for 4.0.0.CR1 and 4.0.0.GA, even though it is "
+"only really scheduled for Infinispan 4.1.0."
 msgstr ""
+"クエリリングは Infinispan の重要な機能なので、4.0.0.0.CR1 と 4.0.0.GA の技術プレビューを含めることにしました。"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:21
-msgid "Browse to http://www.jboss.org/community/wiki/QueryingInfinispan[this wiki page] to see how the new API works for querying, along with usage examples.#"
+#, fuzzy
+msgid ""
+"Browse to http://www.jboss.org/community/wiki/QueryingInfinispan[this wiki "
+"page] to see how the new API works for querying, along with usage examples.#"
 msgstr ""
+"この link:http://www.jboss.org/community/wiki/QueryingInfinispan[wikiページを] "
+"参照して、新しいAPIがどのようにしてクエリを実行するのか、使用例とともに確認してください。"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:32
-msgid "# Origins# Some of the API has come from http://www.jboss.org/community/wiki/JBossCacheSearchable[JBoss Cache Searchable] but has been enhanced and runs slicker. A lot more work is being done under the hood so it makes it easier for users. For example, the API method on the #QueryFactory.getBasicQuery()# just needs two Strings and builds a basic Lucene #Query# instance, as opposed to forcing the user to create a Lucene query manually. This is still possible however, should a user want to create a more complex query."
+#, fuzzy
+msgid ""
+"# Origins# Some of the API has come from http://www.jboss.org/community/wiki/"
+"JBossCacheSearchable[JBoss Cache Searchable] but has been enhanced and runs "
+"slicker. A lot more work is being done under the hood so it makes it easier "
+"for users. For example, the API method on the #QueryFactory.getBasicQuery()# "
+"just needs two Strings and builds a basic Lucene #Query# instance, as "
+"opposed to forcing the user to create a Lucene query manually. This is still "
+"possible however, should a user want to create a more complex query."
 msgstr ""
+"# Origins# Some of the API has come from http://www.jboss.org/community/wiki/"
+"JBossCacheSearchable[JBoss Cache Searchable] but has been enhanced and runs "
+"slicker. A lot more work is being done under the hood so it makes it easier "
+"for users. For example, the API method on the #QueryFactory.getBasicQuery()# "
+"just needs two Strings and builds a basic Lucene #Query# instance, as "
+"opposed to forcing the user to create a Lucene query manually. This is still "
+"possible however, should a user want to create a more complex query."
 
 #. type: Plain text
 #: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:35
-msgid "The indexing for Lucene is now done through interceptors as opposed to listeners, and hence more tightly integrated into Infinispan's core."
+#, fuzzy
+msgid ""
+"The indexing for Lucene is now done through interceptors as opposed to "
+"listeners, and hence more tightly integrated into Infinispan's core."
 msgstr ""
+"Lucene のインデックス作成はリスナーではなくインターセプターを介して行われるようになり、Infinispan のコアとより緊密に統合されました。"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:46
-msgid "You can also choose how indexes are maintained. If indexes are shared (perhaps stored on a network mounted drive), then you only want nodes to index changes made locally. On the other hand, if each node maintains its own indexes (either in-memory on on a local filesystem) then you want each node to index changes made, regardless of where the changes are made. This behaviour is controlled by a system property - -#Dinfinispan.query.indexLocalOnly=true.# However, this is system property #temporary# and will be replaced with a proper configuration property once the feature is out of technology preview."
+#, fuzzy
+msgid ""
+"You can also choose how indexes are maintained. If indexes are shared "
+"(perhaps stored on a network mounted drive), then you only want nodes to "
+"index changes made locally. On the other hand, if each node maintains its "
+"own indexes (either in-memory on on a local filesystem) then you want each "
+"node to index changes made, regardless of where the changes are made. This "
+"behaviour is controlled by a system property - -#Dinfinispan.query."
+"indexLocalOnly=true.# However, this is system property #temporary# and will "
+"be replaced with a proper configuration property once the feature is out of "
+"technology preview."
 msgstr ""
+"また、インデックスをどのように維持するかを選択することもできます。インデックスが共有されている場合（おそらくネットワークにマウントされたドライブに保存されている）、ローカルで行われた変更のみをインデックス化します。一方、各ノードが独自のインデックスを維持している場合（ローカルファイルシステム上のインメモリまたはインメモリ）、変更がどこで行われたかに関係なく、各ノードが変更のインデックスを作成したいとします。この動作はシステムプロパティ "
+"- -Dinfinispan.query.indexLocalOnly="
+"trueによって制御されます。しかし、これは一時的なシステムプロパティであり、この機能が技術プレビューから外れると、適切な設定プロパティに置き換えられます。"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:55
-msgid "What's coming up? Future releases of Hibernate Search and Infinispan will have improvements that will change the way that querying works. The QueryHelper class - as documented in the wiki - is temporary so that will eventually be removed, as you will not need to provide the class definitions of the types you wish to index upfront. We will be able to detect this on the fly (see http://opensource.atlassian.com/projects/hibernate/browse/HSEARCH-397[HSEARCH-397])"
+#, fuzzy
+msgid ""
+"What's coming up? Future releases of Hibernate Search and Infinispan will "
+"have improvements that will change the way that querying works. The "
+"QueryHelper class - as documented in the wiki - is temporary so that will "
+"eventually be removed, as you will not need to provide the class definitions "
+"of the types you wish to index upfront. We will be able to detect this on "
+"the fly (see http://opensource.atlassian.com/projects/hibernate/browse/"
+"HSEARCH-397[HSEARCH-397])"
 msgstr ""
+"今後の予定は？Hibernate "
+"SearchとInfinispanの将来のリリースでは、クエリの動作方法を変更する改良が行われる予定です。wikiで文書化されているQueryHelperクラスは一時的なものなので、インデックスを作成したい型のクラス定義を前もって提供する必要がないため、最終的には削除されるでしょう。私たちはこれをオンザフライで検出できるようになるでしょう "
+"( link:http://opensource.atlassian.com/projects/hibernate/browse/HSEARCH-"
+"397[HSEARCH-397] を参照してください)"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:59
-msgid "There will be a better system for running distributed queries. And the system properties will disappear in favour of proper configuration attributes."
-msgstr ""
+#, fuzzy
+msgid ""
+"There will be a better system for running distributed queries. And the "
+"system properties will disappear in favour of proper configuration "
+"attributes."
+msgstr "分散クエリを実行するためのより良いシステムがあるでしょう。そして、システムのプロパティは、適切な設定属性の代わりに消えるでしょう。"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:62
 #: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:70
+#, fuzzy
 msgid "## ##"
-msgstr ""
+msgstr "##"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:67
-msgid "And also, http://code.google.com/soc/[GSoC] student Lukasz Moren's work involving an Infinispan-based Lucene Directory implementation will allow indexes to be shared cluster-wide by using Infinispan itself to distribute these indexes. All very clever stuff."
+#, fuzzy
+msgid ""
+"And also, http://code.google.com/soc/[GSoC] student Lukasz Moren's work "
+"involving an Infinispan-based Lucene Directory implementation will allow "
+"indexes to be shared cluster-wide by using Infinispan itself to distribute "
+"these indexes. All very clever stuff."
 msgstr ""
+"また、 link:http://code.google.com/soc/[GSoC] 学生のLukasz "
+"Moren氏の研究では、InfinispanベースのLucene "
+"Directoryの実装に関連して、Infinispan自身を使ってインデックスを配布することで、クラスタ全体でインデックスを共有することができるようになります。どれも非常に巧妙なものです。"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:72
+#, fuzzy
 msgid "Thanks for reading!"
-msgstr ""
+msgstr "読んでくれてありがとうございました!"
 
 #. type: Plain text
 #: upstream/_posts/2009-09-23-infinispan-query-breaks-into-400cr1_23.adoc:74
+#, fuzzy
 msgid "Navin."
-msgstr ""
+msgstr "ナビン"

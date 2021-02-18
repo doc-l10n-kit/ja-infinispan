@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: 5.0.0.ALPHA3 is here with more goodies!\n"
@@ -32,20 +32,59 @@ msgid ""
 "date: '2011-02-18T05:29:00.000-08:00'\n"
 "author: galder\n"
 "tags: [ \"asynchronous\", \"alpha\", \"configuration\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-1447646935341359713\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/02/500alpha3-is-here-with-more-goodies.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1447646935341359713\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/02/500alpha3-is-here-with-"
+"more-goodies.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 5.0.0.0.ALPHA3は、より多くの良いものを持ってここにあります\n"
+"permalink: /blog/:year/:month/:day/500alpha3-is-here-with-more-goodies\n"
+"date: '2011-02-18T05:29:00.000-08:00'\n"
+"author: galder\n"
+"tags: [ \"asynchronous\", \"alpha\", \"configuration\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"1447646935341359713\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/02/500alpha3-is-here-with-"
+"more-goodies.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:14
-msgid "For those who can't wait to get hold on the newest Infinispan features, we've just released the third alpha release of the 5.0 series, called 5.0.0.ALPHA3."
+#, fuzzy
+msgid ""
+"For those who can't wait to get hold on the newest Infinispan features, "
+"we've just released the third alpha release of the 5.0 series, called 5.0.0."
+"ALPHA3."
 msgstr ""
+"Infinispanの最新機能を待ちきれない方のために、5.0シリーズの3番目のアルファリリースである5.0.0.0.ALPHA3をリリースしました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:26
-msgid "Apart from including fixes in https://issues.jboss.org/secure/ConfigureReport.jspa?atl_token=c0ee1b92ed270815b460be3704d78af9ead2f994&versions=12316042&sections=all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira.plugin.release-notes-report-plugin:releasenotes&Next=Next[4.2.1.CR2], it allows users to prefetch data in advance in parallel thanks to the new getAsync() method. Why is this useful? Imagine the following scenario: A cache is configured with distribution and an app that requires values associated with k1, k2, and k3 in order to do its job.  In the worst case scenario assume that all these keys located in remote nodes. Previously, before 5.0.0.ALPHA3, you'd have written something like this:"
+#, fuzzy
+msgid ""
+"Apart from including fixes in https://issues.jboss.org/secure/"
+"ConfigureReport.jspa?atl_token="
+"c0ee1b92ed270815b460be3704d78af9ead2f994&versions=12316042&sections="
+"all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira."
+"plugin.release-notes-report-plugin:releasenotes&Next=Next[4.2.1.CR2], it "
+"allows users to prefetch data in advance in parallel thanks to the new "
+"getAsync() method. Why is this useful? Imagine the following scenario: A "
+"cache is configured with distribution and an app that requires values "
+"associated with k1, k2, and k3 in order to do its job.  In the worst case "
+"scenario assume that all these keys located in remote nodes. Previously, "
+"before 5.0.0.ALPHA3, you'd have written something like this:"
 msgstr ""
+"link:https://issues.jboss.org/secure/ConfigureReport.jspa?atl_token="
+"c0ee1b92ed270815b460be3704d78af9ead2f994&versions=12316042&sections="
+"all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira."
+"plugin.release-notes-report-plugin:releasenotes&Next=Next[4.2.1.CR2] "
+"の修正を含めたこととは別に、新しい getAsync() "
+"メソッドのおかげで、ユーザーが事前にデータを並行してプリフェッチできるようになりました。これはなぜ便利なのでしょうか？次のようなシナリオを想像してみてください。キャッシュがディストリビューションで設定されており、仕事をするために "
+"k1、k2、および k3 "
+"に関連付けられた値を必要とするアプリがあるとします。最悪の場合のシナリオでは、これらのすべてのキーがリモートノードにあると仮定します。5.0.0.0."
+"ALPHA3以前では、以下のように記述していました。"
 
 #. type: delimited block -
 #: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:34
@@ -58,8 +97,16 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:42
-msgid "The problem with this code is that each get() is sequential, so the second get() call must wait for first get() to retrieve data from the remote node before it can execute. This is clearly not very optimal.  From 5.0.0.ALPHA3 onwards, you can do this instead:"
+#, fuzzy
+msgid ""
+"The problem with this code is that each get() is sequential, so the second "
+"get() call must wait for first get() to retrieve data from the remote node "
+"before it can execute. This is clearly not very optimal.  From 5.0.0.ALPHA3 "
+"onwards, you can do this instead:"
 msgstr ""
+"このコードの問題点は、各 get() がシーケンシャルなので、2 回目の get() の呼び出しは、実行する前に最初の get() "
+"がリモートノードからデータを取得するのを待たなければならないということです。これは明らかに最適ではありません。5.0.0.0."
+"ALPHA3以降では、代わりにこれを行うことができます。"
 
 #. type: delimited block -
 #: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:54
@@ -76,13 +123,33 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:62
-msgid "The clear advantage here is that the get requests, via getAsync(), can be fired in parallel and they don't need to wait for each other.  Afterwards, when the value is needed, simply call get() on the future received."
+#, fuzzy
+msgid ""
+"The clear advantage here is that the get requests, via getAsync(), can be "
+"fired in parallel and they don't need to wait for each other.  Afterwards, "
+"when the value is needed, simply call get() on the future received."
 msgstr ""
+"ここでの明確な利点は、getAsync() を介した get "
+"リクエストは並列に実行でき、お互いを待つ必要がないことです。その後、値が必要になったときには、単に将来受信した値で get() を呼び出すだけです。"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:74
-msgid "Amongst other API enhancements, such as https://issues.jboss.org/browse/ISPN-900[RemoteCache implementing size()  and isEmpty()], or https://issues.jboss.org/browse/ISPN-906[the ability to delete AtomicMap instances via AtomicMapLookup], it's worth highlighting that we've taken http://community.jboss.org/thread/161913[your feedback on board with regards to how Infinispan is configured programmatically], and from 5.0.0.ALPHA3 onwards, we provide a more fluent way of configuring Infinispan. For example:"
+#, fuzzy
+msgid ""
+"Amongst other API enhancements, such as https://issues.jboss.org/browse/ISPN-"
+"900[RemoteCache implementing size()  and isEmpty()], or https://issues.jboss."
+"org/browse/ISPN-906[the ability to delete AtomicMap instances via "
+"AtomicMapLookup], it's worth highlighting that we've taken http://community."
+"jboss.org/thread/161913[your feedback on board with regards to how "
+"Infinispan is configured programmatically], and from 5.0.0.ALPHA3 onwards, "
+"we provide a more fluent way of configuring Infinispan. For example:"
 msgstr ""
+"他のAPIの強化の中でも、 link:https://issues.jboss.org/browse/ISPN-"
+"900[RemoteCacheがsize()とisEmpty()を実装し] たり、 link:https://issues.jboss.org/"
+"browse/ISPN-906[AtomicMapLookupを介してAtomicMapインスタンスを削除できるようになった] ことは注目に値しますが、 "
+"link:http://community.jboss.org/thread/"
+"161913[Infinispanがプログラム的にどのように設定されているかに関して、皆様からのフィードバックを] 取り入れ、5.0.0.0."
+"ALPHA3以降では、より流暢なInfinispanの設定方法を提供しています。例えば、以下のようなものです。"
 
 #. type: delimited block -
 #: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:80
@@ -103,15 +170,38 @@ msgstr ""
 #, no-wrap
 msgid ""
 "TransportConfig transport = gc.configureTransport();\n"
-"transport.clusterName(\"blah\").machineId(\"id\").rackId(\"rack\").strictPeerToPeer(true);\n"
+"transport.clusterName(\"blah\").machineId(\"id\").rackId(\"rack\")."
+"strictPeerToPeer(true);\n"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:103
-msgid "You can find more examples of this new configuration https://github.com/infinispan/infinispan/blob/master/core/src/test/java/org/infinispan/config/ProgrammaticConfigurationTest.java[here].  Note that this fluent API is likely to evolve further before we go final with 5.0.0 as shown in this http://community.jboss.org/message/588125#588125[forum discussion], but please keep your feedback coming! Finally, details of what's fixed is in the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12315984[release notes]. As always, please use the http://community.jboss.org/en/infinispan?view=discussions[user forums] to report back, grab the release http://www.jboss.org/infinispan/downloads[here], enjoy and keep the feedback coming."
+#, fuzzy
+msgid ""
+"You can find more examples of this new configuration https://github.com/"
+"infinispan/infinispan/blob/master/core/src/test/java/org/infinispan/config/"
+"ProgrammaticConfigurationTest.java[here].  Note that this fluent API is "
+"likely to evolve further before we go final with 5.0.0 as shown in this http:"
+"//community.jboss.org/message/588125#588125[forum discussion], but please "
+"keep your feedback coming! Finally, details of what's fixed is in the https:/"
+"/issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
+"12315984[release notes]. As always, please use the http://community.jboss."
+"org/en/infinispan?view=discussions[user forums] to report back, grab the "
+"release http://www.jboss.org/infinispan/downloads[here], enjoy and keep the "
+"feedback coming."
 msgstr ""
+"この新しい設定の例は link:https://github.com/infinispan/infinispan/blob/master/core/"
+"src/test/java/org/infinispan/config/ProgrammaticConfigurationTest.java[こちらで] "
+"見ることができます。この流暢なAPIは、この link:http://community.jboss.org/message/"
+"588125#588125[フォーラムのディスカッション] で示されているように、5.0.0."
+"0の最終版が出るまでにさらに進化していく可能性が高いことに注意してください。最後に、修正された内容の詳細は link:https://issues."
+"jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version="
+"12315984[リリースノート] に記載されています。いつものように、 link:http://community.jboss.org/en/"
+"infinispan?view=discussions[ユーザーフォーラムを] 利用してレポートバックしたり、 link:http://www."
+"jboss.org/infinispan/downloads[ここで] リリースを確認したり、楽しんでフィードバックを続けてください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-02-18-500alpha3-is-here-with-more-goodies.adoc:107
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

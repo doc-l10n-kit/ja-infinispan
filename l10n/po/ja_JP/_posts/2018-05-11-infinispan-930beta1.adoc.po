@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 9.3.0.Beta1\n"
@@ -32,77 +32,117 @@ msgid ""
 "date: '2018-05-11T09:07:00.000-07:00'\n"
 "author: ttarrant\n"
 "tags: [ \" beta\", \"release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-5595840981273473609\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/05/infinispan-930beta1.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5595840981273473609\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/05/infinispan-930beta1."
+"html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 9.3.0.Beta1\n"
+"permalink: /blog/:year/:month/:day/infinispan-930beta1\n"
+"date: '2018-05-11T09:07:00.000-07:00'\n"
+"author: ttarrant\n"
+"tags: [ \" beta\", \"release\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"5595840981273473609\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/05/infinispan-930beta1."
+"html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:12
+#, fuzzy
 msgid "Infinispan users,"
-msgstr ""
+msgstr "Infinispanユーザー。"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:16
-msgid "We have just released 9.3.0.Beta1 which includes https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12337255[38 fixes]. Highlights of this release include:"
+#, fuzzy
+msgid ""
+"We have just released 9.3.0.Beta1 which includes https://issues.jboss.org/"
+"secure/ReleaseNote.jspa?projectId=12310799&version=12337255[38 fixes]. "
+"Highlights of this release include:"
 msgstr ""
+"9.3.0.0.Beta1 をリリースしました link:https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12337255[。] このリリースのハイライトは以下の通りです。"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:18
+#, fuzzy
 msgid "Conflict Resolution Improvements"
-msgstr ""
+msgstr "紛争解決の改善"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:20
+#, fuzzy
 msgid "MergePolicy.NONE is now the default merge-policy"
-msgstr ""
+msgstr "MergePolicy.NONE はデフォルトのマージポリシーになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:22
-msgid "Conflict Resolution during a merge is now non-blocking and tolerant of node failures"
-msgstr ""
+#, fuzzy
+msgid ""
+"Conflict Resolution during a merge is now non-blocking and tolerant of node "
+"failures"
+msgstr "マージ中のコンフリクト解決がノンブロッキングになり、ノードの障害を許容するようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:24
+#, fuzzy
 msgid "Reactive Streams based Cache Loader SPI available"
-msgstr ""
+msgstr "リアクティブ・ストリーム・ベースのキャッシュ・ローダSPIが利用可能"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:26
+#, fuzzy
 msgid "Infinispan can now be built and tested with Java 10/11"
-msgstr ""
+msgstr "InfinispanはJava 10/11でビルドしてテストできるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:28
+#, fuzzy
 msgid "Max Idle expiration is now cluster-wide including events"
-msgstr ""
+msgstr "イベントを含むクラスタ全体での最大アイドリング有効期限の設定が可能になりました"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:30
+#, fuzzy
 msgid "The Java Hot Rod client can handle data in multiple formats"
-msgstr ""
+msgstr "Java Hot Rodクライアントは、複数のフォーマットでデータを扱うことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:32
+#, fuzzy
 msgid "Improved merge _after_ long GC pauses avoiding data loss"
-msgstr ""
+msgstr "データの損失を回避するために、長いGCの一時停止 _後の_ マージを改善"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:34
+#, fuzzy
 msgid "Admin console supports counters in standalone mode"
-msgstr ""
+msgstr "管理コンソールはスタンドアロンモードでカウンタをサポートしています。"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:36
+#, fuzzy
 msgid "Lots of bug fixes, test fixes, and documentation improvements"
-msgstr ""
+msgstr "多くのバグ修正、テスト修正、ドキュメントの改善"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:41
-msgid "As usual, you can find all the bits on our http://infinispan.org/download/[website]. If you find any issues, don't hesitate to report them on our https://issues.jboss.org/projects/ISPN[issue tracker.]"
+#, fuzzy
+msgid ""
+"As usual, you can find all the bits on our http://infinispan.org/download/"
+"[website]. If you find any issues, don't hesitate to report them on "
+"our https://issues.jboss.org/projects/ISPN[issue tracker.]"
 msgstr ""
+"いつものように、私たちの link:http://infinispan.org/download/[ウェブサイト] "
+"ですべてのビットを見つけることができます。何か問題を見つけたら、遠慮なく私たちの問題 link:https://issues.jboss.org/"
+"projects/ISPN[追跡] に報告してください。"
 
 #. type: Plain text
 #: upstream/_posts/2018-05-11-infinispan-930beta1.adoc:43
+#, fuzzy
 msgid "Enjoy, The Infinispan Team"
-msgstr ""
+msgstr "お楽しみに、インフィニスパンチーム"

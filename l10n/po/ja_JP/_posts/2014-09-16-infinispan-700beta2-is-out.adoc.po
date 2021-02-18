@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 7.0.0.Beta2 is out!\n"
@@ -32,102 +32,195 @@ msgid ""
 "date: '2014-09-16T12:03:00.001-07:00'\n"
 "author: infinispan\n"
 "tags: [ \"releaase\", \"beta\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-4065421858652334216\n"
-"blogger_orig_url: https://blog.infinispan.org/2014/09/infinispan-700beta2-is-out.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4065421858652334216\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/09/infinispan-700beta2-is-"
+"out.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 7.0.0.0.Beta2が出ました!\n"
+"permalink: /blog/:year/:month/:day/infinispan-700beta2-is-out\n"
+"date: '2014-09-16T12:03:00.001-07:00'\n"
+"author: infinispan\n"
+"tags: [ \"releaase\", \"beta\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"4065421858652334216\n"
+"blogger_orig_url: https://blog.infinispan.org/2014/09/infinispan-700beta2-is-"
+"out.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:13
+#, fuzzy
 msgid "Dear Infinispan Community,"
-msgstr ""
+msgstr "Infinispanコミュニティの皆様へ。"
 
 #. type: Plain text
 #: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:15
+#, fuzzy
 msgid "We are happy to announce the second Beta release of Infinispan 7.0.0!"
-msgstr ""
+msgstr "Infinispan 7.0.0の第2弾ベータリリースを発表します!"
 
 #. type: Plain text
 #: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:17
+#, fuzzy
 msgid "This release brings many improvements and fixes:"
-msgstr ""
+msgstr "このリリースは多くの改善と修正をもたらします。"
 
 #. type: Plain text
 #: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:23
-msgid "Many fixes and performance optimizations for non-indexed queries (https://issues.jboss.org/browse/ISPN-4670[ISPN-4670], https://issues.jboss.org/browse/ISPN-4700[ISPN-4700])"
+#, fuzzy
+msgid ""
+"Many fixes and performance optimizations for non-indexed queries (https://"
+"issues.jboss.org/browse/ISPN-4670[ISPN-4670], https://issues.jboss.org/"
+"browse/ISPN-4700[ISPN-4700])"
 msgstr ""
+"インデックス化されていないクエリに対する多数の修正とパフォーマンスの最適化 link:https://issues.jboss.org/browse/"
+"ISPN-4670[(ISPN-4670] link:https://issues.jboss.org/browse/ISPN-4700[, ISPN-"
+"4700] )"
 
 #. type: Plain text
 #: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:26
-msgid "Significant improvements to the reliability of indexed (i.e. Lucene based) queries:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Significant improvements to the reliability of indexed (i.e. Lucene based) "
+"queries:"
+msgstr "インデックス化された (Lucene ベースの) クエリの信頼性が大幅に向上しました。"
 
 #. type: Plain text
 #: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:29
-msgid "InfinispanIndexManager reworked to handle locking on topology changes (https://issues.jboss.org/browse/ISPN-4599[ISPN-4599])"
+#, fuzzy
+msgid ""
+"InfinispanIndexManager reworked to handle locking on topology changes (https:"
+"//issues.jboss.org/browse/ISPN-4599[ISPN-4599])"
 msgstr ""
+"InfinispanIndexManagerがトポロジ変更時のロックを扱うように修正されました link:https://issues.jboss."
+"org/browse/ISPN-4599[(ISPN-4599] )。"
 
 #. type: Plain text
 #: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:31
-msgid "MassIndexer 20x performance improvement (https://issues.jboss.org/browse/ISPN-4644[ISPN-4644])"
+#, fuzzy
+msgid ""
+"MassIndexer 20x performance improvement (https://issues.jboss.org/browse/"
+"ISPN-4644[ISPN-4644])"
 msgstr ""
+"MassIndexer 20倍の性能向上 link:https://issues.jboss.org/browse/ISPN-4644[(ISPN-"
+"4644] )"
 
 #. type: Plain text
 #: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:33
-msgid "Some race conditions fixed in the Lucene Directory (https://issues.jboss.org/browse/ISPN-2981[ISPN-2981])"
+#, fuzzy
+msgid ""
+"Some race conditions fixed in the Lucene Directory (https://issues.jboss.org/"
+"browse/ISPN-2981[ISPN-2981])"
 msgstr ""
+"Lucene Directory link:https://issues.jboss.org/browse/ISPN-2981[(ISPN-2981)] "
+"で修正されたいくつかのレース条件"
 
 #. type: Plain text
 #: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:35
-msgid "Fixed serialization of indexing messages under high load (https://issues.jboss.org/browse/ISPN-4573[ISPN-4573])"
+#, fuzzy
+msgid ""
+"Fixed serialization of indexing messages under high load (https://issues."
+"jboss.org/browse/ISPN-4573[ISPN-4573])"
 msgstr ""
+"高負荷時のインデックスメッセージのシリアライズを修正 link:https://issues.jboss.org/browse/ISPN-"
+"4573[(ISPN-4573] )"
 
 #. type: Plain text
 #: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:37
-msgid "Resolved a race condition in (indexed) Cache initializations (https://issues.jboss.org/browse/ISPN-4719[ISPN-4719])"
+#, fuzzy
+msgid ""
+"Resolved a race condition in (indexed) Cache initializations (https://issues."
+"jboss.org/browse/ISPN-4719[ISPN-4719])"
 msgstr ""
+"(インデックス付き) キャッシュ初期化での競合状態の解決 link:https://issues.jboss.org/browse/ISPN-"
+"4719[(ISPN-4719] )"
 
 #. type: Plain text
 #: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:40
-msgid "Improved classloading when run in containers (https://issues.jboss.org/browse/ISPN-4226[ISPN-4226], https://issues.jboss.org/browse/ISPN-4667[ISPN-4667])"
+#, fuzzy
+msgid ""
+"Improved classloading when run in containers (https://issues.jboss.org/"
+"browse/ISPN-4226[ISPN-4226], https://issues.jboss.org/browse/ISPN-4667[ISPN-"
+"4667])"
 msgstr ""
+"コンテナでの実行時のクラスロードの改善 link:https://issues.jboss.org/browse/ISPN-4226[(ISPN-"
+"4226] link:https://issues.jboss.org/browse/ISPN-4667[, ISPN-4667] )"
 
 #. type: Plain text
 #: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:42
-msgid "Fixed JBoss modules to use Externalizers when run in containers (https://issues.jboss.org/browse/ISPN-4685[ISPN-4685])"
+#, fuzzy
+msgid ""
+"Fixed JBoss modules to use Externalizers when run in containers (https://"
+"issues.jboss.org/browse/ISPN-4685[ISPN-4685])"
 msgstr ""
+"JBoss モジュールがコンテナで実行される際に Externalizers を使用するように修正 link:https://issues.jboss."
+"org/browse/ISPN-4685[(ISPN-4685] )"
 
 #. type: Plain text
 #: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:43
+#, fuzzy
 msgid "(and many more minor improvements)"
-msgstr ""
+msgstr "(他にも多くの細かい改善点があります)"
 
 #. type: Plain text
 #: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:47
-msgid "https://issues.jboss.org/browse/ISPN-4574[ISPN-4574] - Partition handling improvements for replicated caches and distributed caches with _numOwners_ > cluster size / 2"
+#, fuzzy
+msgid ""
+"https://issues.jboss.org/browse/ISPN-4574[ISPN-4574] - Partition handling "
+"improvements for replicated caches and distributed caches with _numOwners_ > "
+"cluster size / 2"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-4574[ISPN-4574] - _numOwners_ > "
+"クラスタサイズ / 2 のレプリケートキャッシュと分散キャッシュのパーティション処理の改善"
 
 #. type: Plain text
 #: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:49
-msgid "https://issues.jboss.org/browse/ISPN-4646[ISPN-4646] - Eviction performance improvements, thanks to Karsten Blees"
+#, fuzzy
+msgid ""
+"https://issues.jboss.org/browse/ISPN-4646[ISPN-4646] - Eviction performance "
+"improvements, thanks to Karsten Blees"
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-4646[ISPN-4646] - Karsten "
+"Bleesによる退去パフォーマンスの向上"
 
 #. type: Plain text
 #: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:57
-msgid "For a complete list of features and bug fixes included in this release please refer to the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310799&version=12324508[release notes].  Visit our http://infinispan.org/download/[downloads] section to find the latest release."
+#, fuzzy
+msgid ""
+"For a complete list of features and bug fixes included in this release "
+"please refer to the https://issues.jboss.org/secure/ReleaseNote."
+"jspa?projectId=12310799&version=12324508[release notes].  Visit our http://"
+"infinispan.org/download/[downloads] section to find the latest release."
 msgstr ""
+"このリリースに含まれる機能とバグフィックスの完全なリストについては、 link:https://issues.jboss.org/secure/"
+"ReleaseNote.jspa?projectId=12310799&version=12324508[リリースノートを] 参照してください。 "
+"最新のリリースを見つけるために私たちの link:http://infinispan.org/download/[ダウンロード] "
+"セクションを参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:62
-msgid "If you have any questions please check our http://infinispan.org/community/[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-dev[mailing lists] or ping us directly on irc://irc.freenode.org/infinispan[IRC]."
+#, fuzzy
+msgid ""
+"If you have any questions please check our http://infinispan.org/community/"
+"[forums], our https://lists.jboss.org/mailman/listinfo/infinispan-"
+"dev[mailing lists] or ping us directly on irc://irc.freenode.org/"
+"infinispan[IRC]."
 msgstr ""
+"質問がある場合は、 link:http://infinispan.org/community/[フォーラム] や link:https://lists."
+"jboss.org/mailman/listinfo/infinispan-dev[メーリングリストを] チェックするか、 link:irc://irc."
+"freenode.org/infinispan[IRC] で直接pingしてください。"
 
 #. type: Plain text
 #: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:64
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2014-09-16-infinispan-700beta2-is-out.adoc:65
+#, fuzzy
 msgid "The Infinispan team."
-msgstr ""
+msgstr "インフィニスパンチーム。"

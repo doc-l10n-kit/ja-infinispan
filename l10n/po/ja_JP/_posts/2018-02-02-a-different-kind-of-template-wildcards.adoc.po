@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-02-02-a-different-kind-of-template-wildcards.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-02-a-different-kind-of-template-wildcards.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: 'A different kind of template: wildcards'\n"
@@ -32,47 +32,97 @@ msgid ""
 "date: '2018-02-02T00:24:00.001-08:00'\n"
 "author: ttarrant\n"
 "tags: [ \" jcache\", \"configuration\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-870560324254081062\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/02/a-different-kind-of-template-wildcards.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"870560324254081062\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/02/a-different-kind-of-"
+"template-wildcards.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: '異なる種類のテンプレート: ワイルドカード'\n"
+"permalink: /blog/:year/:month/:day/a-different-kind-of-template-wildcards\n"
+"date: '2018-02-02T00:24:00.001-08:00'\n"
+"author: ttarrant\n"
+"tags: [ \" jcache\", \"configuration\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"870560324254081062\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/02/a-different-kind-of-"
+"template-wildcards.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-02-a-different-kind-of-template-wildcards.adoc:15
-msgid "Infinispan's configuration templates are an extremely flexible way to create multiple caches using the same configuration. Configuration inheritance works by explicitly declaring the configuration a specific cache should use."
+#, fuzzy
+msgid ""
+"Infinispan's configuration templates are an extremely flexible way to create "
+"multiple caches using the same configuration. Configuration inheritance "
+"works by explicitly declaring the configuration a specific cache should use."
 msgstr ""
+"Infinispan "
+"のコンフィギュレーションテンプレートは、同じコンフィギュレーションを使用して複数のキャッシュを作成するための非常に柔軟な方法です。コンフィギュレーションの継承は、特定のキャッシュが使用すべきコンフィギュレーションを明示的に宣言することで機能します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-02-a-different-kind-of-template-wildcards.adoc:20
-msgid "This works fine when you know the caches you are going to use upfront, but in more dynamic scenarios, this might not be possible. Additionally, if you are using the JCache API, there is no way for you to specify the configuration template you want to use."
+#, fuzzy
+msgid ""
+"This works fine when you know the caches you are going to use upfront, but "
+"in more dynamic scenarios, this might not be possible. Additionally, if you "
+"are using the JCache API, there is no way for you to specify the "
+"configuration template you want to use."
 msgstr ""
+"これは、使用するキャッシュが前もって分かっている場合には問題なく動作しますが、より動的なシナリオでは、これは不可能かもしれません。さらに、JCache "
+"API を使用している場合は、使用する設定テンプレートを指定する方法がありません。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-02-a-different-kind-of-template-wildcards.adoc:25
-msgid "Infinispan 9.2 introduces an alternative way to apply templates to caches: wildcards. By creating a template with a wildcard in its name, e.g. `basecache*`, any cache whose name matches the template name will inherit that configuration."
+#, fuzzy
+msgid ""
+"Infinispan 9.2 introduces an alternative way to apply templates to caches: "
+"wildcards. By creating a template with a wildcard in its name, e.g. "
+"`basecache*`, any cache whose name matches the template name will inherit "
+"that configuration."
 msgstr ""
+"Infinispan 9.2 "
+"では、キャッシュにテンプレートを適用する別の方法としてワイルドカードが導入されました。ワイルドカードを名前に含むテンプレートを作成することで、例えば "
+"`basecache*` のように、その名前がテンプレート名と一致するキャッシュは、その設定を継承します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-02-a-different-kind-of-template-wildcards.adoc:27
+#, fuzzy
 msgid "Let's show an example:"
-msgstr ""
+msgstr "例を挙げてみましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-02-a-different-kind-of-template-wildcards.adoc:32
-msgid "Above, caches `basecache-1` and `basecache-2` will use the `basecache*` configuration. This behaviour also applies when retrieving caches programmatically:"
+#, fuzzy
+msgid ""
+"Above, caches `basecache-1` and `basecache-2` will use the `basecache*` "
+"configuration. This behaviour also applies when retrieving caches "
+"programmatically:"
 msgstr ""
+"上記の場合、キャッシュ `basecache-1` と `basecache-2` は `basecache*` "
+"の設定を使用します。この動作は、プログラムでキャッシュを取得する場合にも適用されます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-02-a-different-kind-of-template-wildcards.adoc:37
-msgid "When using the JCache API, using the XML file above and the following code will achieve the same result:"
-msgstr ""
+#, fuzzy
+msgid ""
+"When using the JCache API, using the XML file above and the following code "
+"will achieve the same result:"
+msgstr "JCache APIを使用する場合は、上記のXMLファイルと以下のコードを使用しても同じ結果になります。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-02-a-different-kind-of-template-wildcards.adoc:42
-msgid "If a cache name matches multiple wildcards, i.e. it is ambiguous, an exception will be thrown."
-msgstr ""
+#, fuzzy
+msgid ""
+"If a cache name matches multiple wildcards, i.e. it is ambiguous, an "
+"exception will be thrown."
+msgstr "キャッシュ名が複数のワイルドカードにマッチする場合、つまりあいまいな場合は例外がスローされます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-02-02-a-different-kind-of-template-wildcards.adoc:44
-msgid "I will be introducing other new features that Infinispan 9.2 brings to cache configuration in an upcoming blog post. Stay tuned !"
-msgstr ""
+#, fuzzy
+msgid ""
+"I will be introducing other new features that Infinispan 9.2 brings to cache "
+"configuration in an upcoming blog post. Stay tuned !"
+msgstr "次回のブログ記事では、Infinispan 9.2 がキャッシュ設定にもたらしたその他の新機能を紹介します。ご期待ください。"

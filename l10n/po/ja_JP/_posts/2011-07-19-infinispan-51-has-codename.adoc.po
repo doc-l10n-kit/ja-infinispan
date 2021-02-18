@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-07-19-infinispan-51-has-codename.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-19-infinispan-51-has-codename.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 5.1 has a codename\n"
@@ -32,72 +32,167 @@ msgid ""
 "date: '2011-07-19T07:07:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"roadmap\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-8130425627892894763\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/07/infinispan-51-has-codename.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8130425627892894763\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/07/infinispan-51-has-"
+"codename.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 5.1にはコードネームがあります。\n"
+"permalink: /blog/:year/:month/:day/infinispan-51-has-codename\n"
+"date: '2011-07-19T07:07:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \"roadmap\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"8130425627892894763\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/07/infinispan-51-has-"
+"codename.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-19-infinispan-51-has-codename.adoc:15
-msgid "http://www.restaurantetendapaulista.com.br/sistema/image/cache/brahma-500x500.jpg[image:http://www.restaurantetendapaulista.com.br/sistema/image/cache/brahma-500x500.jpg[image,width=320,height=320]]The http://community.jboss.org/polls/1074[polls are in], and Infinispan 5.1, following tradition of naming releases after quality beers around the world, will be codenamed _Brahma_, from Brazil."
+#, fuzzy
+msgid ""
+"http://www.restaurantetendapaulista.com.br/sistema/image/cache/brahma-"
+"500x500.jpg[image:http://www.restaurantetendapaulista.com.br/sistema/image/"
+"cache/brahma-500x500.jpg[image,width=320,height=320]]The http://community."
+"jboss.org/polls/1074[polls are in], and Infinispan 5.1, following tradition "
+"of naming releases after quality beers around the world, will be codenamed "
+"_Brahma_, from Brazil."
 msgstr ""
+"link:http://www.restaurantetendapaulista.com.br/sistema/image/cache/brahma-"
+"500x500.jpg[] Infinispan 5."
+"1では、世界中の高品質なビールにちなんだ伝統的なネーミングが採用されており、コードネームはブラジルの _Brahma_ に決定しまし link:http:"
+"//community.jboss.org/polls/1074[た] 。"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-19-infinispan-51-has-codename.adoc:18
-msgid "Beer aside, _Brahma_ is a continuation of the work started with Infinispan 5.0 _Pagoa._  Some of the key features of _Brahma_ include:"
+#, fuzzy
+msgid ""
+"Beer aside, _Brahma_ is a continuation of the work started with Infinispan 5."
+"0 _Pagoa._  Some of the key features of _Brahma_ include:"
 msgstr ""
+"ビールはさておき、 _Brahmaは_ Infinispan 5.0 Pagoaで始まった仕事の続きです _。_ "
+"Brahmaの主要な機能のいくつかは、次 _のとおり_ です。"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-19-infinispan-51-has-codename.adoc:27
-msgid "Overhaul rehashing and state transfer.  This codebase will be https://issues.jboss.org/browse/ISPN-1194[consolidated] and significantly improved, starting with the https://issues.jboss.org/browse/ISPN-1000[PUSH based rehashing] introduced in _Pagoa_.   https://issues.jboss.org/browse/ISPN-284[Chunking] and parallel transfers will also be supported, which will improve the performance and robustness of rehashing/state transfer."
+#, fuzzy
+msgid ""
+"Overhaul rehashing and state transfer.  This codebase will be https://issues."
+"jboss.org/browse/ISPN-1194[consolidated] and significantly improved, "
+"starting with the https://issues.jboss.org/browse/ISPN-1000[PUSH based "
+"rehashing] introduced in _Pagoa_.   https://issues.jboss.org/browse/ISPN-"
+"284[Chunking] and parallel transfers will also be supported, which will "
+"improve the performance and robustness of rehashing/state transfer."
 msgstr ""
+"このコードベースは、パゴアで導入されたPUSH link:https://issues.jboss.org/browse/ISPN-"
+"1000[ベースのリハッシュを] 皮切りに link:https://issues.jboss.org/browse/ISPN-1194[統合され、] "
+"大幅に改善されます _。_ チャンキング link:https://issues.jboss.org/browse/ISPN-284[と] "
+"並列転送もサポートされ、リハッシュとステート転送の性能とロバスト性が向上します。"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-19-infinispan-51-has-codename.adoc:31
-msgid "Improved locking and JTA interactions, including https://issues.jboss.org/browse/ISPN-1132[deadlock-minimising reordering] and https://issues.jboss.org/browse/ISPN-61[true optimistic and pessimistic] modes."
+#, fuzzy
+msgid ""
+"Improved locking and JTA interactions, including https://issues.jboss.org/"
+"browse/ISPN-1132[deadlock-minimising reordering] and https://issues.jboss."
+"org/browse/ISPN-61[true optimistic and pessimistic] modes."
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-1132[デッドロックを最小化する再順序付け] や、 link:"
+"https://issues.jboss.org/browse/ISPN-61[真の楽観的・悲観的] "
+"モードなど、ロックとJTAの相互作用が改善されました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-19-infinispan-51-has-codename.adoc:40
-msgid "https://issues.jboss.org/browse/ISPN-1116[Versioned entries] and an eventually consistent mode and API.  Infinispan has always leaned towards consistency in the http://www.julianbrowne.com/article/viewer/brewers-cap-theorem[CAP triangle] at the expense of partition tolerance, in line with most Java Data Grids.  However, we can very easily also https://issues.jboss.org/browse/ISPN-999[support eventual consistency with partition tolerance], and in _Brahma_ we intend to introduce the versioned API to support this."
+#, fuzzy
+msgid ""
+"https://issues.jboss.org/browse/ISPN-1116[Versioned entries] and an "
+"eventually consistent mode and API.  Infinispan has always leaned towards "
+"consistency in the http://www.julianbrowne.com/article/viewer/brewers-cap-"
+"theorem[CAP triangle] at the expense of partition tolerance, in line with "
+"most Java Data Grids.  However, we can very easily also https://issues.jboss."
+"org/browse/ISPN-999[support eventual consistency with partition tolerance], "
+"and in _Brahma_ we intend to introduce the versioned API to support this."
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-1116[バージョン管理されたエントリ] "
+"と最終的に一貫性のあるモードとAPI Infinispanは、ほとんどのJavaデータグリッドと同様に、パーティション許容度を犠牲にしてCAP link:"
+"http://www.julianbrowne.com/article/viewer/brewers-cap-theorem[トライアングル] "
+"の一貫性を常に重視してきました。 しかし、 link:https://issues.jboss.org/browse/ISPN-"
+"999[パーティション許容度を用いた最終的な一貫性も] 簡単にサポートすることができ、 link:https://issues.jboss.org/"
+"browse/ISPN-999[Brahmaでは] これをサポートするためにバージョン管理されたAPIを導入する _予定です_ 。"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-19-infinispan-51-has-codename.adoc:44
-msgid "https://issues.jboss.org/browse/ISPN-200[Distributed querying] based on parallelising a query task across all nodes in the cluster should also make an appearance, an additional query mode to add to the Lucene index-based querying supported in _Pagoa_."
+#, fuzzy
+msgid ""
+"https://issues.jboss.org/browse/ISPN-200[Distributed querying] based on "
+"parallelising a query task across all nodes in the cluster should also make "
+"an appearance, an additional query mode to add to the Lucene index-based "
+"querying supported in _Pagoa_."
 msgstr ""
+"クラスタ内のすべてのノードにまたがるクエリタスクの並列化に基づく link:https://issues.jboss.org/browse/ISPN-"
+"200[分散クエリも] 登場し、 _Pagoa_ でサポートされている Lucene インデックスベースのクエリに加えて、クエリモードが追加されます。"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-19-infinispan-51-has-codename.adoc:47
-msgid "In addition to these big features, a number of smaller enhancements and improvements are also planned, including:"
-msgstr ""
+#, fuzzy
+msgid ""
+"In addition to these big features, a number of smaller enhancements and "
+"improvements are also planned, including:"
+msgstr "これらの大きな機能に加えて、以下のような小さな機能強化や改善も予定されています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-19-infinispan-51-has-codename.adoc:51
-msgid "https://issues.jboss.org/browse/ISPN-1115[Fine-grained AtomicHashMaps].  Anyone using AtomicHashMaps - including Hibernate OGM \"will love this!\","
+#, fuzzy
+msgid ""
+"https://issues.jboss.org/browse/ISPN-1115[Fine-grained AtomicHashMaps]. "
+" Anyone using AtomicHashMaps - including Hibernate OGM \"will love this!\","
 msgstr ""
+"きめ細か link:https://issues.jboss.org/browse/ISPN-1115[なAtomicHashMaps] - "
+"Hibernate OGMを含めて、AtomicHashMapsを使っている人なら誰でも\"これは気に入る！\"と思います。"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-19-infinispan-51-has-codename.adoc:54
-msgid "https://issues.jboss.org/browse/ISPN-1103[Top-level support for JSON documents], including fine-grained replication for deltas in JSON documents."
+#, fuzzy
+msgid ""
+"https://issues.jboss.org/browse/ISPN-1103[Top-level support for JSON "
+"documents], including fine-grained replication for deltas in JSON documents."
 msgstr ""
+"JSON ドキュメントのデルタの詳細なレプリケーションを含む、JSON ドキュメントの link:https://issues.jboss.org/"
+"browse/ISPN-1103[トップレベルのサポート] 。"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-19-infinispan-51-has-codename.adoc:56
-msgid "https://issues.jboss.org/browse/ISPN-1065[Moving off JAXB for configuration parsing], JAXB being too slow and cumbersome to deal with."
+#, fuzzy
+msgid ""
+"https://issues.jboss.org/browse/ISPN-1065[Moving off JAXB for configuration "
+"parsing], JAXB being too slow and cumbersome to deal with."
 msgstr ""
+"link:https://issues.jboss.org/browse/ISPN-1065[コンフィグレーション解析のためにJAXBをオフにして] "
+"、JAXBの処理が遅くて面倒なので、JAXBを link:https://issues.jboss.org/browse/ISPN-1065[オフにし] "
+"ました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-19-infinispan-51-has-codename.adoc:60
-msgid "So as we come ever closer to releasing _Pagoa_ in its final form, contributors have already started hacking on code for _Brahma_.  Expect to see alphas of _Brahma_ hit the interwebs very soon!"
+#, fuzzy
+msgid ""
+"So as we come ever closer to releasing _Pagoa_ in its final form, "
+"contributors have already started hacking on code for _Brahma_.  Expect to "
+"see alphas of _Brahma_ hit the interwebs very soon!"
 msgstr ""
+"_Pagoa_ の最終形態でのリリースが近づいてきたので、貢献者たちはすでに _ブラフマの_ コードをハッキングし始めています _。_ "
+"ブラフマのアルファがすぐにウェブ上でヒットするのを期待してください。"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-19-infinispan-51-has-codename.adoc:64
+#, fuzzy
 msgid "Enjoy"
-msgstr ""
+msgstr "楽しむ"
 
 #. type: Plain text
 #: upstream/_posts/2011-07-19-infinispan-51-has-codename.adoc:65
+#, fuzzy
 msgid "Manik"
-msgstr ""
+msgstr "マニク"

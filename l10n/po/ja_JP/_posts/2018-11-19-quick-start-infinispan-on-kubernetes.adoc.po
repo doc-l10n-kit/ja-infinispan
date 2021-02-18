@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2018-11-19-quick-start-infinispan-on-kubernetes.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-19-quick-start-infinispan-on-kubernetes.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Quick start Infinispan on Kubernetes\n"
@@ -32,92 +32,201 @@ msgid ""
 "date: '2018-11-19T04:14:00.001-08:00'\n"
 "author: galder\n"
 "tags: [ \" kubernetes\", \"minikube\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-3096535795736402644\n"
-"blogger_orig_url: https://blog.infinispan.org/2018/11/quick-start-infinispan-on-kubernetes.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3096535795736402644\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/11/quick-start-infinispan-"
+"on-kubernetes.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Kubernetes上でのクイックスタートInfinispan\n"
+"permalink: /blog/:year/:month/:day/quick-start-infinispan-on-kubernetes\n"
+"date: '2018-11-19T04:14:00.001-08:00'\n"
+"author: galder\n"
+"tags: [ \" kubernetes\", \"minikube\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"3096535795736402644\n"
+"blogger_orig_url: https://blog.infinispan.org/2018/11/quick-start-infinispan-"
+"on-kubernetes.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-19-quick-start-infinispan-on-kubernetes.adoc:16
-msgid "Last week we showed you https://blog.infinispan.org/2018/11/the-fastest-path-to-running-infinispan.html[how to easily run Infinispan on top of OpenShift]. This week we're trying to do the same on Minikube, a tool that makes it easy to run vanilla Kubernetes locally."
+#, fuzzy
+msgid ""
+"Last week we showed you https://blog.infinispan.org/2018/11/the-fastest-path-"
+"to-running-infinispan.html[how to easily run Infinispan on top of OpenShift]."
+" This week we're trying to do the same on Minikube, a tool that makes it "
+"easy to run vanilla Kubernetes locally."
 msgstr ""
+"先週は link:https://blog.infinispan.org/2018/11/the-fastest-path-to-running-"
+"infinispan.html[OpenShiftの上でInfinispanを簡単に実行する方法を] "
+"紹介しました。今週は、バニラKubernetesをローカルで簡単に実行できるツールであるMinikubeで同じことをやってみます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-19-quick-start-infinispan-on-kubernetes.adoc:23
-msgid "Although we've already covered the topic in the https://blog.infinispan.org/2016/08/running-infinispan-cluster-on-kubernetes.html[past], we felt the descriptors needed a permanent location and an update to the latest Infinispan releases. Detailed instructions can be found in https://github.com/infinispan-demos/infinispan-kubernetes[this repository]."
+#, fuzzy
+msgid ""
+"Although we've already covered the topic in the https://blog.infinispan.org/"
+"2016/08/running-infinispan-cluster-on-kubernetes.html[past], we felt the "
+"descriptors needed a permanent location and an update to the latest "
+"Infinispan releases. Detailed instructions can be found in https://github."
+"com/infinispan-demos/infinispan-kubernetes[this repository]."
 msgstr ""
+"このトピックは link:https://blog.infinispan.org/2016/08/running-infinispan-cluster-"
+"on-kubernetes.html[過去に] も取り上げましたが、記述子には恒久的な場所と最新の Infinispan "
+"リリースへのアップデートが必要だと感じました。詳しい説明はこちら link:https://github.com/infinispan-demos/"
+"infinispan-kubernetes[のリポジトリ] にあります。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-19-quick-start-infinispan-on-kubernetes.adoc:30
-msgid "With OpenShift, we took advantage of https://docs.openshift.com/container-platform/3.11/dev_guide/templates.html[Templates] which allow a set of objects to be parameterised.  Templates are OpenShift specific, so Kubernetes does not understand them. Instead, we provide you with the individual descriptors required to run Infinispan (Helm chart to come...). This includes:"
+#, fuzzy
+msgid ""
+"With OpenShift, we took advantage of https://docs.openshift.com/container-"
+"platform/3.11/dev_guide/templates.html[Templates] which allow a set of "
+"objects to be parameterised.  Templates are OpenShift specific, so "
+"Kubernetes does not understand them. Instead, we provide you with the "
+"individual descriptors required to run Infinispan (Helm chart to come...). "
+"This includes:"
 msgstr ""
+"OpenShiftでは、オブジェクトのセットをパラメータ化できる link:https://docs.openshift.com/container-"
+"platform/3.11/dev_guide/templates.html[テンプレート] "
+"を活用しました。テンプレートはOpenShift固有のものなので、Kubernetesでは理解できません。代わりに、Infinispanの実行に必要な個別の記述子を提供しています（ヘルムチャートは後ほど."
+"..）。これには以下のものが含まれます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-19-quick-start-infinispan-on-kubernetes.adoc:35
-msgid "A https://github.com/infinispan-demos/infinispan-kubernetes/blob/master/statefulset.yaml[stateful set]"
+#, fuzzy
+msgid ""
+"A https://github.com/infinispan-demos/infinispan-kubernetes/blob/master/"
+"statefulset.yaml[stateful set]"
 msgstr ""
+"link:https://github.com/infinispan-demos/infinispan-kubernetes/blob/master/"
+"statefulset.yaml[ステートフル集合]"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-19-quick-start-infinispan-on-kubernetes.adoc:40
-msgid "Two services, for https://github.com/infinispan-demos/infinispan-kubernetes/blob/master/service-hotrod.yaml[Hot Rod] and https://github.com/infinispan-demos/infinispan-kubernetes/blob/master/service-http.yaml[HTTP REST] endpoints)"
+#, fuzzy
+msgid ""
+"Two services, for https://github.com/infinispan-demos/infinispan-kubernetes/"
+"blob/master/service-hotrod.yaml[Hot Rod] and https://github.com/infinispan-"
+"demos/infinispan-kubernetes/blob/master/service-http.yaml[HTTP "
+"REST] endpoints)"
 msgstr ""
+"2つのサービス、 link:https://github.com/infinispan-demos/infinispan-kubernetes/blob/"
+"master/service-hotrod.yaml[Hot Rod] と link:https://github.com/infinispan-"
+"demos/infinispan-kubernetes/blob/master/service-http.yaml[HTTP REST] "
+"エンドポイント用)"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-19-quick-start-infinispan-on-kubernetes.adoc:43
-msgid "A https://github.com/infinispan-demos/infinispan-kubernetes/blob/master/rolebinding.yaml[rolebinding] so that Kubernetes API can be queried when forming a cluster."
+#, fuzzy
+msgid ""
+"A https://github.com/infinispan-demos/infinispan-kubernetes/blob/master/"
+"rolebinding.yaml[rolebinding] so that Kubernetes API can be queried when "
+"forming a cluster."
 msgstr ""
+"クラスタ形成時にKubernetes APIをクエリできるようにする link:https://github.com/infinispan-demos/"
+"infinispan-kubernetes/blob/master/rolebinding.yaml[ロールバインディング] 。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-19-quick-start-infinispan-on-kubernetes.adoc:46
-msgid "A https://github.com/infinispan-demos/infinispan-kubernetes/blob/master/secret.yaml[secret] for plain authentication."
+#, fuzzy
+msgid ""
+"A https://github.com/infinispan-demos/infinispan-kubernetes/blob/master/"
+"secret.yaml[secret] for plain authentication."
 msgstr ""
+"平易な認証のための link:https://github.com/infinispan-demos/infinispan-kubernetes/"
+"blob/master/secret.yaml[秘密] 。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-19-quick-start-infinispan-on-kubernetes.adoc:52
-msgid "Before applying the descriptors, download and install https://kubernetes.io/docs/setup/minikube/[Minikube]. Then, set a profile, select the VM driver, give it enough CPU and memory for your experiments, and start it."
+#, fuzzy
+msgid ""
+"Before applying the descriptors, download and install https://kubernetes.io/"
+"docs/setup/minikube/[Minikube]. Then, set a profile, select the VM driver, "
+"give it enough CPU and memory for your experiments, and start it."
 msgstr ""
+"記述子を適用する前に、 link:https://kubernetes.io/docs/setup/minikube/[Minikube] "
+"をダウンロードしてインストールします。そして、プロファイルを設定し、VMドライバを選択し、実験に十分なCPUとメモリを与え、起動します。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-19-quick-start-infinispan-on-kubernetes.adoc:55
-msgid "Once Minikube it's running and you have the corresponding kubectl command line tool installed, simply call:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Once Minikube it's running and you have the corresponding kubectl command "
+"line tool installed, simply call:"
+msgstr "Minikubeが起動していて、対応するkubectlコマンドラインツールがインストールされている場合は、単に呼び出すだけです。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-19-quick-start-infinispan-on-kubernetes.adoc:57
+#, fuzzy
 msgid "$ kubectl apply -f ."
-msgstr ""
+msgstr "$ kubectl apply -f ."
 
 #. type: Plain text
 #: upstream/_posts/2018-11-19-quick-start-infinispan-on-kubernetes.adoc:62
-msgid "Once all pods are ready, you should verify the 3-node cluster has formed correctly (find out how in the https://github.com/infinispan-demos/infinispan-kubernetes/blob/master/README.md[README] file)."
+#, fuzzy
+msgid ""
+"Once all pods are ready, you should verify the 3-node cluster has formed "
+"correctly (find out how in the https://github.com/infinispan-demos/"
+"infinispan-kubernetes/blob/master/README.md[README] file)."
 msgstr ""
+"すべてのポッドの準備ができたら、3ノードクラスタが正しく形成されていることを確認してください( link:https://github.com/"
+"infinispan-demos/infinispan-kubernetes/blob/master/README.md[README] "
+"ファイルに方法が書いてあります)。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-19-quick-start-infinispan-on-kubernetes.adoc:66
-msgid "When ready, you can start storing and retrieving data. The HTTP REST endpoint is particularly useful for these initial tests, to verify everything works as expected:"
+#, fuzzy
+msgid ""
+"When ready, you can start storing and retrieving data. The HTTP REST "
+"endpoint is particularly useful for these initial tests, to verify "
+"everything works as expected:"
 msgstr ""
+"準備ができたら、データの保存と取得を開始できます。HTTP REST "
+"エンドポイントは、すべてが期待通りに動作することを確認するために、これらの最初のテストに特に役立ちます。"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-19-quick-start-infinispan-on-kubernetes.adoc:71
-msgid "$ kubectl exec \\   -it infinispan-server-0 \\   -- curl -v -u test:changeme -H 'Content-type: text/plain' -d 'test' infinispan-server-http:8080/rest/default/stuff"
+#, fuzzy
+msgid ""
+"$ kubectl exec \\   -it infinispan-server-0 \\   -- curl -v -u test:changeme "
+"-H 'Content-type: text/plain' -d 'test' infinispan-server-http:8080/rest/"
+"default/stuff"
 msgstr ""
+"$ kubectl exec \\   -it infinispan-server-0 \\   -- curl -v -u test:changeme "
+"-H 'Content-type: text/plain' -d 'test' infinispan-server-http:8080/rest/"
+"default/stuff"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-19-quick-start-infinispan-on-kubernetes.adoc:73
+#, fuzzy
 msgid "Then:"
-msgstr ""
+msgstr "ならば"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-19-quick-start-infinispan-on-kubernetes.adoc:77
-msgid "$ kubectl exec -it infinispan-server-1 \\   -- curl -v -u test:changeme infinispan-server-http:8080/rest/default/stuff"
+#, fuzzy
+msgid ""
+"$ kubectl exec -it infinispan-server-1 \\   -- curl -v -u test:changeme "
+"infinispan-server-http:8080/rest/default/stuff"
 msgstr ""
+"$ kubectl exec -it infinispan-server-1 \\\\ ՞ټ՞Zs_2009-糂汰Zs_2009 ՞ټ՞curl -v -"
+"u test:changeme infinispan-server-http:8080/rest/default/stuff"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-19-quick-start-infinispan-on-kubernetes.adoc:80
-msgid "Go and try it out and let us know what you think. You can find us on https://infinispan.zulipchat.com/[this Zulip chat] :)"
+#, fuzzy
+msgid ""
+"Go and try it out and let us know what you think. You can find us on https://"
+"infinispan.zulipchat.com/[this Zulip chat] :)"
 msgstr ""
+"行って、それを試してみて、私たちはあなたが何を考えているかを知ってみましょう。あなたは link:https://infinispan."
+"zulipchat.com/[このZulipのチャット] で私たちを見つけることができます。)"
 
 #. type: Plain text
 #: upstream/_posts/2018-11-19-quick-start-infinispan-on-kubernetes.adoc:82
+#, fuzzy
 msgid "Cheers, Galder"
-msgstr ""
+msgstr "乾杯、ガルダー"

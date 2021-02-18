@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,16 +18,17 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
-"title: 'DevNation 2016: Galder Zamarreño on “Building reactive applications with Node.js\n"
+"title: 'DevNation 2016: Galder Zamarreño on “Building reactive applications "
+"with Node.js\n"
 "permalink: /blog/:year/:month/:day/devnation-2016-galder-zamarreno-on\n"
 "  and Red Hat JBoss Data Grid”'\n"
 "date: '2016-06-20T06:55:00.000-07:00'\n"
@@ -36,79 +37,182 @@ msgid ""
 "\"javascript\",\n"
 "\"devnation\",\n"
 "]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7332250071342700362\n"
-"blogger_orig_url: https://blog.infinispan.org/2016/06/devnation-2016-galder-zamarreno-on.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7332250071342700362\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/06/devnation-2016-galder-"
+"zamarreno-on.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 'DevNation 2016。Galder Zamarreño 「Node.jsでリアクティブなアプリケーションを構築する」について\n"
+"permalink: /blog/:year/:month/:day/devnation-2016-galder-zamarreno-on\n"
+"  and Red Hat JBoss Data Grid”'\n"
+"date: '2016-06-20T06:55:00.000-07:00'\n"
+"author: galder\n"
+"tags: [ \"conference\",\n"
+"\"javascript\",\n"
+"\"devnation\",\n"
+"]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7332250071342700362\n"
+"blogger_orig_url: https://blog.infinispan.org/2016/06/devnation-2016-galder-"
+"zamarreno-on.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:20
-msgid "Earlier this month I did an interview with the DevNation 2016 organizers to talk about my talk on forthcoming talk on building reactive applications with Node.js and JBoss Data Grid, the Infinispan version for which Red Hat provides professional support, certified integration, patches...etc."
+#, fuzzy
+msgid ""
+"Earlier this month I did an interview with the DevNation 2016 organizers to "
+"talk about my talk on forthcoming talk on building reactive applications "
+"with Node.js and JBoss Data Grid, the Infinispan version for which Red Hat "
+"provides professional support, certified integration, patches...etc."
 msgstr ""
+"今月初め、私はDevNation 2016の主催者とインタビューを行い、Red Hatがプロのサポート、認定された統合、パッチ..."
+"などを提供しているInfinispan版のNode.jsとJBoss Data "
+"Gridを使ったリアクティブなアプリケーションの構築に関する近日中のトークについて話しました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:24
-msgid "The talk will be happen next Tuesday, 28th June at 3:30pm PDT, so if you're in DevNation and want to find out more about Infinispan and our new Node.js Javascript client, make sure you join us then!"
+#, fuzzy
+msgid ""
+"The talk will be happen next Tuesday, 28th June at 3:30pm PDT, so if you're "
+"in DevNation and want to find out more about Infinispan and our new Node.js "
+"Javascript client, make sure you join us then!"
 msgstr ""
+"DevNationに参加していて、Infinispanと新しいNode.js "
+"Javascriptクライアントについてもっと知りたいと思っている方は、ぜひ参加してみてください。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:27
-msgid "Originally posted in: http://developers.redhat.com/blog/2016/06/09/devnation-2016-galder-zamarreno-on-building-reactive-applications-with-node-js-and-red-hat-jboss-data-grid/[http://developers.redhat.com/blog/2016/06/09/devnation-2016-galder-zamarreno-on-building-reactive-applications-with-node-js-and-red-hat-jboss-data-grid]"
+#, fuzzy
+msgid ""
+"Originally posted in: http://developers.redhat.com/blog/2016/06/09/devnation-"
+"2016-galder-zamarreno-on-building-reactive-applications-with-node-js-and-red-"
+"hat-jboss-data-grid/[http://developers.redhat.com/blog/2016/06/09/devnation-"
+"2016-galder-zamarreno-on-building-reactive-applications-with-node-js-and-red-"
+"hat-jboss-data-grid]"
 msgstr ""
+"元々の投稿先: link:http://developers.redhat.com/blog/2016/06/09/devnation-2016-"
+"galder-zamarreno-on-building-reactive-applications-with-node-js-and-red-hat-"
+"jboss-data-grid/[http://developers.redhat.com/blog/2016/06/09/devnation-2016-"
+"galder-zamarreno-on-building-reactive-applications-with-node-js-and-red-hat-"
+"jboss-data-grid]"
 
 #. type: Title ====
 #: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:29
-#, no-wrap
-msgid "Building reactive applications with Node.js and Red Hat JBoss Data Grid"
-msgstr ""
+#, no-wrap, fuzzy
+msgid ""
+"Building reactive applications with Node.js and Red Hat JBoss Data Grid"
+msgstr "Node.js と Red Hat JBoss Data Grid を使用したリアクティブなアプリケーションの構築"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:35
-msgid "JBoss Data Grid is a distributed in-memory key/value data store from Red Hat, which can be used for caching, temporary and permanent storage.  Although Java developers were its primary audience initially, the team has been expanding its appeal to C++, C# and even Javascript developers."
+#, fuzzy
+msgid ""
+"JBoss Data Grid is a distributed in-memory key/value data store from Red "
+"Hat, which can be used for caching, temporary and permanent storage.  "
+"Although Java developers were its primary audience initially, the team has "
+"been expanding its appeal to C++, C# and even Javascript developers."
 msgstr ""
+"JBoss Data Gridは、Red Hatが提供する分散型インメモリキー/"
+"値データストアで、キャッシング、一時記憶、永久記憶に対応している。当初はJava開発者が主な利用者でしたが、チームはC++、C#、さらにはJavascript開発者にまでその魅力を広げています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:40
-msgid "The latest JBoss Data Grid release includes a fully asynchronous Node.js client for interacting with JBoss Data Grid servers and my talk at DevNation is focused on how Javascript developers can make the most of the client to cache or store their data."
+#, fuzzy
+msgid ""
+"The latest JBoss Data Grid release includes a fully asynchronous Node.js "
+"client for interacting with JBoss Data Grid servers and my talk at DevNation "
+"is focused on how Javascript developers can make the most of the client to "
+"cache or store their data."
 msgstr ""
+"最新のJBoss Data Gridのリリースには、JBoss Data Gridサーバーと対話するための完全に非同期なNode."
+"jsクライアントが含まれており、私のDevNationでの講演は、Javascriptの開発者がどのようにしてクライアントを最大限に活用してデータをキャッシュしたり保存したりできるかに焦点を当てています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:50
-msgid "The talk has been designed around a web application that promotes JBoss Data Grid talks in forthcoming conferences, user groups… etc. The application will contain a Node.js component whose job will be to interact with the backend JBoss Data Grid servers to store and retrieve data, as well as receiving events when new information has been added to the backend. Through the live coding of this application, the audience will get an understanding of how to interact with the newly released Node.js JBoss Data Grid client, and after the talk they’ll have access to the code to be able to try it themselves."
+#, fuzzy
+msgid ""
+"The talk has been designed around a web application that promotes JBoss Data "
+"Grid talks in forthcoming conferences, user groups… etc. The application "
+"will contain a Node.js component whose job will be to interact with the "
+"backend JBoss Data Grid servers to store and retrieve data, as well as "
+"receiving events when new information has been added to the backend. Through "
+"the live coding of this application, the audience will get an understanding "
+"of how to interact with the newly released Node.js JBoss Data Grid client, "
+"and after the talk they’ll have access to the code to be able to try it "
+"themselves."
 msgstr ""
+"この講演は、今後開催されるカンファレンスやユーザーグループなどで JBoss Data Grid "
+"の講演を促進するためのウェブアプリケーションを中心に設計されています。このアプリケーションには Node.js "
+"コンポーネントが含まれており、その仕事はバックエンドの JBoss Data Grid "
+"サーバーと対話してデータを保存・取得したり、新しい情報がバックエンドに追加されたときにイベントを受信したりすることです。このアプリケーションのライブコーディングを通して、聴衆は新しくリリースされた "
+"Node.js JBoss Data Grid "
+"クライアントとの対話方法を理解し、トークの後にはコードにアクセスして自分自身で試すことができるようになります。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:54
+#, fuzzy
 msgid "_Tuesday_ _3:30 p.m. to 4:30 p.m._ _Room 133_"
-msgstr ""
+msgstr "_火曜日_ 午後 _3時30分～4時30分_ _133号室_"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:56
-msgid "https://rhdevelopers.files.wordpress.com/2016/05/galder.jpg[image:https://rhdevelopers.files.wordpress.com/2016/05/galder.jpg?w=640[galder]]"
-msgstr ""
+#, fuzzy
+msgid ""
+"https://rhdevelopers.files.wordpress.com/2016/05/galder.jpg[image:https://"
+"rhdevelopers.files.wordpress.com/2016/05/galder.jpg?w=640[galder]]"
+msgstr "link:https://rhdevelopers.files.wordpress.com/2016/05/galder.jpg[]"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:58
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*About the presenter:*\n"
-msgstr ""
+msgstr "*プレゼンターについて。*"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:63
-msgid "This will be my first time speaking at DevNation and I’m really excited about it because it brings together speaks and attendees not only from the Java/JVM space, but from other important developer communities such as Javascript."
+#, fuzzy
+msgid ""
+"This will be my first time speaking at DevNation and I’m really excited "
+"about it because it brings together speaks and attendees not only from the "
+"Java/JVM space, but from other important developer communities such as "
+"Javascript."
 msgstr ""
+"DevNationで講演するのは今回が初めてですが、Java/"
+"JVM空間だけでなく、Javascriptのような他の重要な開発者コミュニティからも講演者や参加者が集まってくるので、とてもワクワクしています。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:68
-msgid "Although I started as a Java developer, over the past decade I’ve become more and more interested in other programming languages, in particular functional programming languages such as Scala and Javascript, which I’ve been able to apply directly at my job."
+#, fuzzy
+msgid ""
+"Although I started as a Java developer, over the past decade I’ve become "
+"more and more interested in other programming languages, in particular "
+"functional programming languages such as Scala and Javascript, which I’ve "
+"been able to apply directly at my job."
 msgstr ""
+"Java開発者としてスタートしましたが、ここ10年ほどで他のプログラミング言語、特にScalaやJavascriptなどの関数型プログラミング言語に興味を持つようになり、仕事でも直接応用できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:75
-msgid "These days I’m hugely interested by the purely functional ones such as Haskell, Elm or Purescript because the lack of mutability makes their solutions both elegant and easier to reason about. I’m also keeping a close eye as well on the Erlang ecosystem, e.g. Elixir, because I feel that the predictable latency offered by the Erlang VM is something that it’s not so easy to achieve in Java Virtual Machine."
+#, fuzzy
+msgid ""
+"These days I’m hugely interested by the purely functional ones such as "
+"Haskell, Elm or Purescript because the lack of mutability makes their "
+"solutions both elegant and easier to reason about. I’m also keeping a close "
+"eye as well on the Erlang ecosystem, e.g. Elixir, because I feel that the "
+"predictable latency offered by the Erlang VM is something that it’s not so "
+"easy to achieve in Java Virtual Machine."
 msgstr ""
+"最近はHaskellやElm、Purescriptのような純粋に機能的なものに非常に興味を持っています。Erlang "
+"VMが提供する予測可能なレイテンシはJava Virtual Machineではなかなか実現できないものだと感じているからです。"
 
 #. type: Plain text
 #: upstream/_posts/2016-06-20-devnation-2016-galder-zamarreno-on.adoc:78
-msgid "I think learning other programming languages is one of the best things a developer can do, because it opens your mind to different points of view, different ways to solve problems, and widens the solution space."
-msgstr ""
+#, fuzzy
+msgid ""
+"I think learning other programming languages is one of the best things a "
+"developer can do, because it opens your mind to different points of view, "
+"different ways to solve problems, and widens the solution space."
+msgstr "他のプログラミング言語を学ぶことは、開発者にとって最高のことの一つだと思います。"

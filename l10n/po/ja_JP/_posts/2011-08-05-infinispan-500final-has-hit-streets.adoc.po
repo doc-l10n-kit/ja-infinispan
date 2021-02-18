@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2011-08-05-infinispan-500final-has-hit-streets.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-08-05-infinispan-500final-has-hit-streets.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan 5.0.0.FINAL has hit the streets!\n"
@@ -32,47 +32,146 @@ msgid ""
 "date: '2011-08-05T13:00:00.000-07:00'\n"
 "author: msurtani\n"
 "tags: [ \"final\", \"release\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-7886904018457220190\n"
-"blogger_orig_url: https://blog.infinispan.org/2011/08/infinispan-500final-has-hit-streets.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7886904018457220190\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/08/infinispan-500final-"
+"has-hit-streets.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 5.0.0.FINALが発売されました。\n"
+"permalink: /blog/:year/:month/:day/infinispan-500final-has-hit-streets\n"
+"date: '2011-08-05T13:00:00.000-07:00'\n"
+"author: msurtani\n"
+"tags: [ \"final\", \"release\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"7886904018457220190\n"
+"blogger_orig_url: https://blog.infinispan.org/2011/08/infinispan-500final-"
+"has-hit-streets.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2011-08-05-infinispan-500final-has-hit-streets.adoc:23
-msgid "So here we have it - Infinispan 5.0 Pagoa has been released.  This is a big, big release over 4.2.x, with over 45 new features (including the much more robust https://issues.jboss.org/browse/ISPN-1000[PUSH-based rehashing], https://issues.jboss.org/browse/ISPN-272[XA recovery], https://issues.jboss.org/browse/ISPN-186[smart L1 invalidation] and https://issues.jboss.org/browse/ISPN-870[virtual nodes]) and over 30 bugs squashed, including several critical performance and stability related ones.  Major new programming models are supported too - from https://docs.jboss.org/author/x/AIF7[Spring] and https://docs.jboss.org/author/x/HYF7[CDI] through to OSGi, https://docs.jboss.org/author/x/CYF7[map/reduce and distributed code execution]."
+#, fuzzy
+msgid ""
+"So here we have it - Infinispan 5.0 Pagoa has been released.  This is a big, "
+"big release over 4.2.x, with over 45 new features (including the much more "
+"robust https://issues.jboss.org/browse/ISPN-1000[PUSH-based rehashing], "
+"https://issues.jboss.org/browse/ISPN-272[XA recovery], https://issues.jboss."
+"org/browse/ISPN-186[smart L1 invalidation] and https://issues.jboss.org/"
+"browse/ISPN-870[virtual nodes]) and over 30 bugs squashed, including several "
+"critical performance and stability related ones.  Major new programming "
+"models are supported too - from https://docs.jboss.org/author/x/AIF7[Spring] "
+"and https://docs.jboss.org/author/x/HYF7[CDI] through to OSGi, https://docs."
+"jboss.org/author/x/CYF7[map/reduce and distributed code execution]."
 msgstr ""
+"Infinispan 5.0 Pagoaがリリースされました。 これは4.2.xを超える大規模なリリースで、45以上の新機能（より強固なPUSH "
+"link:https://issues.jboss.org/browse/ISPN-1000[ベースのリハッシュ、XA] link:https://"
+"issues.jboss.org/browse/ISPN-272[リカバリ、] スマート link:https://issues.jboss.org/"
+"browse/ISPN-186[L1無効化、] link:https://issues.jboss.org/browse/ISPN-"
+"870[仮想ノードを含む）と] 30以上のバグ（パフォーマンスと安定性に関連するいくつかの重要なものを含む）が含まれています。 "
+"主要な新しいプログラミングモデルもサポートされています - Springや link:https://docs.jboss.org/author/x/"
+"AIF7[CDI] link:https://docs.jboss.org/author/x/HYF7[から] OSGi、マップ/リデュース link:"
+"https://docs.jboss.org/author/x/CYF7[、分散コード実行] まで。"
 
 #. type: Plain text
 #: upstream/_posts/2011-08-05-infinispan-500final-has-hit-streets.adoc:33
-msgid "Pagoa has gone through over six months of development, the first alpha being made publicly available in December 2010, and 8 whole release candidates since the end of April this year.  This is the most stable, fastest, feature-rich version of Infinispan to date.  Pagoa has been integrated in other products, projects, frameworks and services - including the lightning-fast http://www.jboss.org/as7[JBoss AS 7] - and we expect to see much, much more in this regard."
+#, fuzzy
+msgid ""
+"Pagoa has gone through over six months of development, the first alpha being "
+"made publicly available in December 2010, and 8 whole release candidates "
+"since the end of April this year.  This is the most stable, fastest, feature-"
+"rich version of Infinispan to date.  Pagoa has been integrated in other "
+"products, projects, frameworks and services - including the lightning-fast "
+"http://www.jboss.org/as7[JBoss AS 7] - and we expect to see much, much more "
+"in this regard."
 msgstr ""
+"Pagoaは6ヶ月以上の開発期間を経て、2010年12月に最初のアルファ版が公開され、今年4月末から8つのリリース候補が出ています。 "
+"これはInfinispanの中で最も安定しており、最速で機能が豊富なバージョンです。 "
+"Pagoaは他の製品、プロジェクト、フレームワーク、サービスに統合されており link:http://www.jboss.org/as7[、] "
+"その中にはJBoss AS 7も含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2011-08-05-infinispan-500final-has-hit-streets.adoc:46
-msgid "Pagoa really is a community-centric release.  I've seen loads of participation, from users, system integrators, extension-authors, http://www.cloudtm.eu/[researchers and academics], framework authors, and PaaS providers.  This participation has taken the form of providing feedback and bug reports through to profiler analysis; from helping with documentation and demos through to contributing major new features; from suggesting ideas and improvements to participating in detailed design meetings.  It is this participation that really helps Infinispan grow and mature, and at the same time innovate, taking us one step closer to becoming the best damn data grid out there."
+#, fuzzy
+msgid ""
+"Pagoa really is a community-centric release.  I've seen loads of "
+"participation, from users, system integrators, extension-authors, http://www."
+"cloudtm.eu/[researchers and academics], framework authors, and PaaS "
+"providers.  This participation has taken the form of providing feedback and "
+"bug reports through to profiler analysis; from helping with documentation "
+"and demos through to contributing major new features; from suggesting ideas "
+"and improvements to participating in detailed design meetings.  It is this "
+"participation that really helps Infinispan grow and mature, and at the same "
+"time innovate, taking us one step closer to becoming the best damn data grid "
+"out there."
 msgstr ""
+"Pagoaは本当にコミュニティ中心のリリースで、ユーザ、システムインテグレータ、拡張機能の作者、 link:http://www.cloudtm.eu/"
+"[研究者や] "
+"学者、フレームワークの作者、PaaSのプロバイダなど、多くの人が参加しています。このような参加は、フィードバックやバグレポートの提供からプロファイラの分析、ドキュメントやデモの支援から主要な新機能の貢献、アイデアや改善点の提案から詳細設計会議への参加という形をとっています。 "
+"このような参加があるからこそ、Infinispanは成長し、成熟し、同時に革新し、最高のデータグリッドに一歩近づくことができるのです。"
 
 #. type: Plain text
 #: upstream/_posts/2011-08-05-infinispan-500final-has-hit-streets.adoc:51
-msgid "So, a big thank you to everyone who participated, this really is _your_ release."
-msgstr ""
+#, fuzzy
+msgid ""
+"So, a big thank you to everyone who participated, this really is "
+"_your_ release."
+msgstr "というわけで、参加して _くれ_ た皆さん、本当にありがとうございました。"
 
 #. type: Plain text
 #: upstream/_posts/2011-08-05-infinispan-500final-has-hit-streets.adoc:61
-msgid "As usual, http://www.jboss.org/infinispan/downloads[download] the release, http://community.jboss.org/en/infinispan?view=discussions[provide feedback], read through the https://issues.jboss.org/secure/ConfigureReport.jspa?atl_token=AQZJ-FV3A-N91S-UDEU%7C830c959e6f913e242bc3c9df8565631d3af3b0e0%7Clin&versions=12313468&sections=all&style=none&selectedProjectId=12310799&reportKey=org.jboss.labs.jira.plugin.release-notes-report-plugin%3Areleasenotes&Next=Next[detailed changelog].  And check out our brand-new https://docs.jboss.org/author/x/iYB7[documentation site] too!!  :-)"
+#, fuzzy
+msgid ""
+"As usual, http://www.jboss.org/infinispan/downloads[download] the release, "
+"http://community.jboss.org/en/infinispan?view=discussions[provide feedback], "
+"read through the https://issues.jboss.org/secure/ConfigureReport."
+"jspa?atl_token=AQZJ-FV3A-N91S-"
+"UDEU%7C830c959e6f913e242bc3c9df8565631d3af3b0e0%7Clin&versions="
+"12313468&sections=all&style=none&selectedProjectId=12310799&reportKey=org."
+"jboss.labs.jira.plugin.release-notes-report-plugin%3Areleasenotes&Next="
+"Next[detailed changelog].  And check out our brand-new https://docs.jboss."
+"org/author/x/iYB7[documentation site] too!!  :-)"
 msgstr ""
+"いつものように、リリースを link:http://www.jboss.org/infinispan/downloads[ダウンロードし] 、 link:"
+"http://community.jboss.org/en/infinispan?view=discussions[フィードバックを提供し] 、 "
+"link:https://issues.jboss.org/secure/ConfigureReport.jspa?atl_token=AQZJ-"
+"FV3A-N91S-UDEU%7C830c959e6f913e242bc3c9df8565631d3af3b0e0%7Clin&versions="
+"12313468&sections=all&style=none&selectedProjectId=12310799&reportKey=org."
+"jboss.labs.jira.plugin.release-notes-report-plugin%3Areleasenotes&Next="
+"Next[詳細な変更履歴を] 読んでください。 そして、私たちの新しい link:https://docs.jboss.org/author/x/"
+"iYB7[ドキュメントサイトも] チェックしてください link:https://docs.jboss.org/author/x/iYB7[！] :-)"
 
 #. type: Plain text
 #: upstream/_posts/2011-08-05-infinispan-500final-has-hit-streets.adoc:72
-msgid "Finally, in other news, http://infinispan.blogspot.com/2011/07/infinispan-51-has-codename.html[I recently blogged about Brahma], the codename for Infinispan 5.1. Yes, work has already started here, expect Brahma to be a real firecracker.   Check out the post, vote for your most desired features.  Brahma will also form the basis of Red Hat's Enterprise Data Grid product, which was http://infinispan.blogspot.com/2011/05/red-hat-announces-enterprise-data-grid.html[announced in May].  You'll finally have a fully supported open source data grid!"
+#, fuzzy
+msgid ""
+"Finally, in other news, http://infinispan.blogspot.com/2011/07/infinispan-51-"
+"has-codename.html[I recently blogged about Brahma], the codename for "
+"Infinispan 5.1. Yes, work has already started here, expect Brahma to be a "
+"real firecracker.   Check out the post, vote for your most desired features. "
+" Brahma will also form the basis of Red Hat's Enterprise Data Grid product, "
+"which was http://infinispan.blogspot.com/2011/05/red-hat-announces-"
+"enterprise-data-grid.html[announced in May].  You'll finally have a fully "
+"supported open source data grid!"
 msgstr ""
+"最後に、他のニュースとして、 link:http://infinispan.blogspot.com/2011/07/infinispan-51-has-"
+"codename.html[私は最近、] Infinispan 5.1のコードネームであるBrah link:http://infinispan."
+"blogspot.com/2011/07/infinispan-51-has-codename.html[maについてブログを書いた] "
+"。この記事をチェックして、一番欲しい機能に投票してみてください。 Brahmaは、 link:http://infinispan.blogspot."
+"com/2011/05/red-hat-announces-enterprise-data-grid.html[5月に] 発表されたRed "
+"HatのEnterprise Data Grid製品の基礎にもなります link:http://infinispan.blogspot.com/2011/"
+"05/red-hat-announces-enterprise-data-grid.html[。] "
+"これで、ついに完全にサポートされたオープンソースのデータグリッドを手に入れることができるでしょう。"
 
 #. type: Plain text
 #: upstream/_posts/2011-08-05-infinispan-500final-has-hit-streets.adoc:76
+#, fuzzy
 msgid "Enjoy!"
-msgstr ""
+msgstr "楽しもう"
 
 #. type: Plain text
 #: upstream/_posts/2011-08-05-infinispan-500final-has-hit-streets.adoc:78
+#, fuzzy
 msgid "Manik"
-msgstr ""
+msgstr "マニク"

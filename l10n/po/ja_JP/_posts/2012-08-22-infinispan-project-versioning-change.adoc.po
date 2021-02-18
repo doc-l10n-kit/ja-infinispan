@@ -2,7 +2,7 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "layout: blog\n"
 "title: Infinispan project versioning change\n"
@@ -32,87 +32,117 @@ msgid ""
 "date: '2012-08-22T05:40:00.002-07:00'\n"
 "author: mmarkus\n"
 "tags: [ \" release\", \"versioning\", \"maven\" ]\n"
-"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-494471917659897797\n"
-"blogger_orig_url: https://blog.infinispan.org/2012/08/infinispan-project-versioning-change.html\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"494471917659897797\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/08/infinispan-project-"
+"versioning-change.html\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan プロジェクトのバージョン変更\n"
+"permalink: /blog/:year/:month/:day/infinispan-project-versioning-change\n"
+"date: '2012-08-22T05:40:00.002-07:00'\n"
+"author: mmarkus\n"
+"tags: [ \" release\", \"versioning\", \"maven\" ]\n"
+"blogger_id: tag:blogger.com,1999:blog-5717179571414330874.post-"
+"494471917659897797\n"
+"blogger_orig_url: https://blog.infinispan.org/2012/08/infinispan-project-"
+"versioning-change.html\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:17
-msgid "Mainly for consistency reason, starting with the next Infinispan releases, we'll switch to https://community.jboss.org/wiki/JBossProjectVersioning[JBoss' release naming conventions]. In practical terms this means that the names of the releases(Maven artifacts, JIRA) would be different.  E.g."
+#, fuzzy
+msgid ""
+"Mainly for consistency reason, starting with the next Infinispan releases, "
+"we'll switch to https://community.jboss.org/wiki/"
+"JBossProjectVersioning[JBoss' release naming conventions]. In practical "
+"terms this means that the names of the releases(Maven artifacts, JIRA) would "
+"be different.  E.g."
 msgstr ""
+"主に一貫性の理由から、次の Infinispan リリースから link:https://community.jboss.org/wiki/"
+"JBossProjectVersioning[JBoss のリリースの命名規則] に変更します。 現実的には、これはリリースの名前(Maven "
+"artifacts, JIRA)が異なることを意味します。例えば、以下のようになります。"
 
 #. type: Table
 #: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:21
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Old release name"
-msgstr ""
+msgstr "旧リリース名"
 
 #. type: Table
 #: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:22
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "New release name"
-msgstr ""
+msgstr "新発売名"
 
 #. type: Table
 #: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:22
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "5.2.0.ALPHA2"
-msgstr ""
+msgstr "5.2.0.ALPHA2"
 
 #. type: Table
 #: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:23
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "5.2.0.Alpha3"
-msgstr ""
+msgstr "5.2.0.0.Alpha3"
 
 #. type: Table
 #: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:23
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "5.1.0.BETA1"
-msgstr ""
+msgstr "5.1.0.0.BETA1"
 
 #. type: Table
 #: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:24
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "5.2.0.Beta1"
-msgstr ""
+msgstr "5.2.0.0.Beta1"
 
 #. type: Table
 #: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:24
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "5.1.0.CR1"
-msgstr ""
+msgstr "5.1.0.CR1"
 
 #. type: Table
 #: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:25
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "5.2.0.CR1"
-msgstr ""
+msgstr "5.2.0.CR1"
 
 #. type: Table
 #: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:25
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "5.1.0.FINAL"
-msgstr ""
+msgstr "5.1.0.FINAL"
 
 #. type: Table
 #: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:26
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "5.2.0.Final"
-msgstr ""
+msgstr "5.2.0.最終"
 
 #. type: Plain text
 #: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:33
-msgid "The names of the releases in JIRA have also https://issues.jboss.org/plugins/servlet/project-config/ISPN/versions[been changed] startting with 5.1.2.Alpha3."
+#, fuzzy
+msgid ""
+"The names of the releases in JIRA have also https://issues.jboss.org/plugins/"
+"servlet/project-config/ISPN/versions[been changed] startting with 5.1.2."
+"Alpha3."
 msgstr ""
+"JIRA のリリース名も 5.1.2.Alpha3 を皮切りに link:https://issues.jboss.org/plugins/"
+"servlet/project-config/ISPN/versions[変更] されました。"
 
 #. type: Plain text
 #: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:37
+#, fuzzy
 msgid "Cheers,"
-msgstr ""
+msgstr "乾杯"
 
 #. type: Plain text
 #: upstream/_posts/2012-08-22-infinispan-project-versioning-change.adoc:38
+#, fuzzy
 msgid "Mircea "
-msgstr ""
+msgstr "ミルチェア"
