@@ -1,6 +1,127 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE tmx SYSTEM "tmx14.dtd">
 <tmx version="1.4">
-  <header creationtool="Translate Toolkit" creationtoolversion="3.3.2" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
-  <body/>
+  <header creationtool="Translate Toolkit" creationtoolversion="3.2.0" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>One of the key aspects of our new server architecture is the management API exposed through the single port.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>私たちの新しいサーバーアーキテクチャの重要な側面の1つは、単一のポートを通じて公開される管理APIです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>While I'm sure there will be those of you who like to write scripts with plenty of `curl/wget` magic, and those who prefer the comfort of our new web console, the Infinispan CLI offers a powerful tool which combines the power of the former with the usability of the latter.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>`curl/wget` マジックをたくさん使ってスクリプトを書くのが好きな人と、新しいウェブコンソールの快適さを好む人がいると思いますが、Infinispan CLIは前者の力と後者の使いやすさを兼ね備えた強力なツールを提供しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>During the Infinispan 11 development cycle, the CLI has received numerous enhancements. Let's look at some of them !</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan 11 の開発サイクルの間、CLI は多くの機能強化を受けました。そのいくつかを見てみましょう</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>User management</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ユーザー管理</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When using the built-in properties-based security realm, you had to use the `user-tool` script to manage users, passwords and groups. That functionality has now been built into the CLI:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ビルトインのプロパティベースのセキュリティ領域を使用する場合、ユーザ、パスワード、グループを管理するために `user-tool` スクリプトを使用しなければなりませんでした。その機能が CLI に組み込まれました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Remote logging configuration</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>リモートロギング設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You can now modify the server logging configuration from the CLI.  For example, to enable TRACE logging for the `org.jgroups` category, use the following:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>これで、CLIからサーバーのロギング設定を変更できるようになりました。たとえば、 `org.jgroups` カテゴリの TRACE ロギングを有効にするには、次のようにします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>logging configuration changes are volatile, i.e. they will be lost when restarting a node.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ロギング設定の変更は揮発性で、ノードを再起動すると失われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Server report</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>サーバーレポート</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>To help with debugging issues, the server now implements an aggregate log which includes information such as a thread dump, memory configuration, open sockets/files, etc.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>問題のデバッグを支援するために、サーバーはスレッドダンプ、メモリ設定、開いているソケットやファイルなどの情報を含む集約ログを実装しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>this feature currently only works on Linux/Unix systems.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>この機能は現在のところ、Linux/Unix システムでのみ動作します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Real CLI mode</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>リアルCLIモード</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>It is now possible to invoke all CLI commands directly from the command-line, without having to resort to interactive mode or a batch. For example:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>インタラクティブモードやバッチに頼らずに、すべてのCLIコマンドをコマンドラインから直接呼び出すことができるようになりました。例えば、以下のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Native CLI</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ネイティブCLI</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The CLI can now be built as a native executable, courtesy of https://www.graalvm.org/[GraalVM]'s `native-image` tool. We will soon be shipping binaries/images of this, so look out for an announcement.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>CLIは、 link:https://www.graalvm.org/[GraalVM] の `native-image` ツールの提供により、ネイティブ実行ファイルとしてビルドできるようになりました。まもなく、このバイナリ/イメージを出荷する予定ですので、発表をお楽しみにお待ちください。</seg>
+      </tuv>
+    </tu>
+  </body>
 </tmx>
