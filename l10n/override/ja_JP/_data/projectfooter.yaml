@@ -1,0 +1,33 @@
+footer_text: "InfinispanはApache 2.0オープンソースライセンスでリリースされています。<a href='https://www.apache.org/licenses/LICENSE-2.0' target='_blank'>Apache Software License 2.0</a>についての詳細はこちらをご覧ください。<br/><br/><a href='https://jekyllrb.com/' target='_blank'>Jekyll</a>で構築されたこのウェブサイトは<a href='https://pages.github.com/' target='_blank'>Github Pages</a>でホストされており、完全にオープンソースです。より良いものにしたいのであれば、<a href='https://github.com/infinispan/infinispan.github.io' target='_blank'>このウェブサイトをフォーク</a>して、あなたが得たいものを私たちに見せてください。"
+
+links:
+  - title: ナビゲーション
+    subfolderitems:
+      - page: Home
+        url: /
+      - page: 機能
+        url: /features
+      - page: ドキュメント
+        url: /documentation
+      - page: チュートリアル
+        url: /tutorials
+      - page: ビデオ
+        url: /videos
+      - page: 使用例
+        url: /use-cases
+      - page: コミュニティ
+        url: /community
+      - page: ダウンロード
+        url: /download
+  - title: 貢献
+    subfolderitems:
+      - page: バグ登録
+        url: https://issues.jboss.org/browse/ISPN
+      - page: コードを書く
+        url: https://github.com/infinispan
+  - title: 私たちをフォロー
+    subfolderitems:
+      - page: Blog
+        url: /blog
+      - page: Twitter
+        url: https://twitter.com/infinispan
