@@ -1,0 +1,66 @@
+---
+layout: base
+---
+
+<h1>{{ page.title }}</h1>
+<h2>{{ page.subtitle }}</h2>
+
+<div class="component-slim homepage-usedby-band">
+  <div class="grid-wrapper">
+    <div class="width-2-12 width-12-12-m">
+      <h2 class="step">Step <span class="step-no">1</span></h2>
+    </div>
+    <div class="width-10-12 width-12-12-m">
+      <h3>Infinispanを取得</h3>
+      <p>ユーザー名とパスワードを入力し、以下のいずれかのコマンドを実行してください:
+        <pre><code>
+podman run -it -p 11222:11222 -e USER="username" -e PASS="password" --net=host quay.io/infinispan/server:{{site.data.ispn.stable.minor_version}}
+        </code></pre></p>
+        <pre><code>
+docker run -it -p 11222:11222 -e USER="username" -e PASS="password" quay.io/infinispan/server:{{site.data.ispn.stable.minor_version}}
+        </code></pre></p>
+    </div>
+
+    <div class="width-2-12 width-12-12-m">
+      <h2 class="step">Step <span class="step-no">2</span></h2>
+    </div>
+    <div class="width-10-12 width-12-12-m">
+      <h3>コンソールを開く</h3>
+      <p>ブラウザで <code>localhost:11222</code> を開き、ログインします。</p>
+      <p><img src="{{site.baseurl}}/assets/images/getting-started/welcome.png" title="Welcome to the Console"></p>
+    </div>
+
+    <div class="width-2-12 width-12-12-m">
+      <h2 class="step">Step <span class="step-no">3</span></h2>
+    </div>
+    <div class="width-10-12 width-12-12-m">
+      <h3>キャッシュを作成</h3>
+      <p>キャッシュに名前をつけて、テンプレートからキャッシュを作成します。</p>
+      <p><img src="{{site.baseurl}}/assets/images/getting-started/create-cache.png" title="Create cache"></p>
+    </div>
+
+    <div class="width-2-12 width-12-12-m">
+      <h2 class="step">Step <span class="step-no">4</span></h2>
+    </div>
+    <div class="width-10-12 width-12-12-m">
+      <h3>データを追加</h3>
+      <ol>
+        <li>キャッシュを選択し、*Add entry（要素を追加）*を押します。</li>
+        <li>キーとして "hello"、バリューとして "world" を指定します。</li>
+        <li>オプションで、生存時間または最大アイドル時間を指定します。</li>
+        <li>要素をキャッシュに追加するには、*Add（追加）* を選択します。</li>
+      </ol>
+      <p>データを追加した後にキーを入力すると、その要素を取り出して表示できます。</p>
+      <p><img src="{{site.baseurl}}/assets/images/getting-started/get-entry.png" title="Get entry"></p>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="component-slim">
+  <div class="grid-wrapper">
+    <div class="width-12-12">
+      <h3>これで完了です。これでInfinispanを使えます。</h3>
+      <p>もし、ベアメタル上で動かしたい場合は、<a href="{{site.data.ispn.stable.docs.quickstart}}">Infinispanサーバを始めよう</a>を訪れてください。自分のアプリケーションで実行したい場合は<a href="{{site.data.ispn.stable.docs.embedded}}">組込みInfinispan</a>へ訪れてください。</p>
+    </div>
+  </div>
+</div>
