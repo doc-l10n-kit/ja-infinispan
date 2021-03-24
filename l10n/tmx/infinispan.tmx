@@ -5,6 +5,22 @@
   <body>
     <tu>
       <tuv xml:lang="en">
+        <seg>layout: tutorials
+title: Tutorials
+subtitle: Infinispan is easy. Let us walk you through it!
+permalink: /tutorials/
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>layout: tutorials
+title: チュートリアル
+subtitle: Infinispanは簡単です。私たちがご案内しましょう！
+permalink: /tutorials/
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>layout: blog
 title: Infinispan 12.0.1.Final
 permalink: /blog/:year/:month/:day/infinispan-12-0-1
@@ -223,22 +239,6 @@ tags: [ "release" ]
       </tuv>
       <tuv xml:lang="ja_JP">
         <seg>CLIは、 link:https://www.graalvm.org/[GraalVM] の `native-image` ツールの提供により、ネイティブ実行ファイルとしてビルドできるようになりました。まもなく、このバイナリ/イメージを出荷する予定ですので、発表をお楽しみにお待ちください。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>layout: tutorials
-title: Tutorials
-subtitle: Infinispan is easy. Let us walk you through it!
-permalink: /tutorials/
-</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>layout: tutorials
-title: チュートリアル
-subtitle: Infinispanは簡単です。私たちがご案内しましょう！
-permalink: /tutorials/
-</seg>
       </tuv>
     </tu>
   </body>
