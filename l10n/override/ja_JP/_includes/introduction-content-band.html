@@ -1,0 +1,102 @@
+<div class="component introduction-content-band">
+  <div class="grid-wrapper">
+    <div class="width-12-12 highlights-alternating-inline-block">
+      <div class="grid-wrapper">
+        <div class="width-8-12 width-12-12-m block-content">
+          <h3>Infinispanとは？</h3>
+          <p>Infinispanは、非常にスケーラブルで可用性の高いキー/バリュー・データ・ストアおよびデータ・グリッド・プラットフォームです。100%オープンソースで、Javaで書かれています。Infinispanの目的は、分散型、高並列型のデータ構造を公開することであり、最新のマルチプロセッサやマルチコア・アーキテクチャを最大限に活用できるように設計されています。Infinispanは、分散型キャッシュとしてだけでなく、NoSQLのキー/バリュー・ストアやオブジェクト・データベースとしても使用されます。</p>
+        </div>
+        <div class="width-4-12 width-12-12-m block-image">
+          <img src="{{site.baseurl}}/assets/images/introduction/icon-what-is.png">
+        </div>
+      </div>
+    </div>
+    <div class="width-12-12 highlights-alternating-inline-block">
+      <div class="grid-wrapper">
+        <div class="width-4-12 width-12-12-m block-image">
+          <img src="{{site.baseurl}}/assets/images/introduction/icon-why-use.png">
+        </div>
+        <div class="width-8-12 width-12-12-m block-content">
+          <h3>なぜ使うのか？</h3>
+          <p>ほとんどの人は、Infinispanを2つの理由のどちらかで使っています。第１に、キャッシュとして。データベースやディスクベースのNoSQLストアなど、ボトルネックとなっているシステム部分の前にInfinispanを置くことで、パフォーマンスの向上に大きく貢献します。しかし、単純なキャッシュでは十分ではないことがよくあります。たとえば、アプリケーションがクラスター化されていて、データの一貫性のためにキャッシュの干渉性が重要な場合などです。そのような場合、分散キャッシュが大いに役立ちます。<br/><br/>Infinispanは、高性能なNoSQLデータストアとしても使用できます。メモリ上だけでなく、Infinispanはデータをより恒久的なストアに永続化できます。これをキャッシュストアと呼びます。キャッシュストアはプラグイン式で、簡単に独自のものを実装できますし、すでに多くのものが存在していますので、利用できます。キャッシュストアの詳細と、現在使用可能な既存の実装については、このウェブサイトのキャッシュストアのセクションを参照してください。<br/><br/>もう１つの一般的な使用例は、フレームワークにクラスタビリティと高可用性を追加することです。Infinispanは分散型のデータ構造を公開しているため、クラスター化を必要とするフレームワークやライブラリは、Infinispanを組み込み、すべての状態管理をInfinispanに委ねることで簡単に実現できます。このように、Infinispanにすべてを任せることで、どんなフレームワークも簡単にクラスター化できます。</p>
+        </div>
+      </div>
+    </div>
+    <div class="width-12-12 highlights-alternating-inline-block">
+      <div class="grid-wrapper">
+        <div class="width-8-12 width-12-12-m block-content">
+          <h3>どこで知ることができますか？</h3>
+          <p>このウェブサイトの <a href="{{site.baseurl}}/documentation">ドキュメンテーション</a> セクションをご覧ください。チュートリアル、クイックスタートガイド、サンプルコード、デモなど、多くのリソースが用意されており、すぐに使いこなせるようになります。
+          </p>
+        </div>
+        <div class="width-4-12 width-12-12-m block-image">
+          <img src="{{site.baseurl}}/assets/images/introduction/icon-learn-more.png">
+        </div>
+      </div>
+    </div>
+    <div class="width-12-12 highlights-alternating-inline-block">
+      <div class="grid-wrapper">
+        <div class="width-4-12 width-12-12-m block-image">
+          <img src="{{site.baseurl}}/assets/images/introduction/icon-how-use.png">
+        </div>
+        <div class="width-8-12 width-12-12-m block-content">
+          <h3>どうやって使うの？</h3>
+          <p>コアとなるInfinispanは、java.util.Mapを拡張したCacheインターフェイスを公開しています。また、オプションとして、サーバーのクラスタに効率的にデータを分散させるためのピアツーピア・ネットワーク・アーキテクチャを備えています。<br><br>コアとなるJava APIに加えて、InfinispanはHot Rodプロトコルを利用することで、JVM以外のプラットフォームでも利用でき、様々なプラットフォーム向けのクライアントライブラリが存在します。</p>
+        </div>
+      </div>
+    </div>
+    <div class="width-12-12 highlights-alternating-inline-block">
+      <div class="grid-wrapper">
+        <div class="width-8-12 width-12-12-m block-content">
+          <h3>トランザクションについては？</h3>
+          <p>多くのNoSQLエンジンの間で加熱している話題です。はい、Infinispanは完全なトランザクションに対応しています。InfinispanはJTAとXAの両方の規格をサポートしており、有効なJTAトランザクション・マネージャによって仲介される分散トランザクションに参加できます。<br><br>ほとんどの分散データストアは、トランザクションがパフォーマンスを低下させると考えています。これはいくつかのケースでは事実ですが、他の多くのケースでは、トランザクションは多くのビジネスアプリケーションに必要であると考えています。そのため、私たちはトランザクションをサポートしていますが、これはオプションであり、パフォーマンスを向上させるために無効にできます。</p>
+        </div>
+        <div class="width-4-12 width-12-12-m block-image">
+          <img src="{{site.baseurl}}/assets/images/introduction/icon-transactions.png">
+        </div>
+      </div>
+    </div>
+    <div class="width-12-12 highlights-alternating-inline-block">
+      <div class="grid-wrapper">
+        <div class="width-4-12 width-12-12-m block-image">
+          <img src="{{site.baseurl}}/assets/images/introduction/icon-hibernate.png">
+        </div>
+        <div class="width-8-12 width-12-12-m block-content">
+          <h3>Hibernateで使用できますか？</h3>
+          <p>コアとなるInfinispanは、java.util.Mapを拡張したCacheインターフェイスを公開しています。また、オプションとして、サーバーのクラスタに効率的にデータを分散させるためのピアツーピア・ネットワーク・アーキテクチャを備えています。<br><br>コアとなるJava APIに加えて、InfinispanはHot Rodプロトコルを利用することで、JVM以外のプラットフォームでも利用でき、様々なプラットフォーム向けのクライアントライブラリが存在します。</p>
+        </div>
+      </div>
+    </div>
+    <div class="width-12-12 highlights-alternating-inline-block">
+      <div class="grid-wrapper">
+        <div class="width-8-12 width-12-12-m block-content">
+          <h3>検索はできますか？</h3>
+          <p>はい、Infinispan の主なデータ検索方法は、キーによる検索 ( Cache.get(key) ) ですが、データセットに対する強力な索引作成および検索もサポートしています。詳細は、ドキュメントをご覧ください。</p>
+        </div>
+        <div class="width-4-12 width-12-12-m block-image">
+          <img src="{{site.baseurl}}/assets/images/introduction/icon-searches.png">
+        </div>
+      </div>
+    </div>
+    <div class="width-12-12 highlights-alternating-inline-block">
+      <div class="grid-wrapper">
+        <div class="width-4-12 width-12-12-m block-image">
+          <img src="{{site.baseurl}}/assets/images/introduction/icon-map-reduce.png">
+        </div>
+        <div class="width-8-12 width-12-12-m block-content">
+          <h3>Map/Reduceについては？</h3>
+          <p>さらに素晴らしいことに Infinispanでは、Javaの非常に強力なStream APIを使用することができ、ローカルおよびクラスター化されたすべてのモードで、データに対してローカルにコードを実行できます。Streamに加えて、Infinispanは分散コード実行もサポートしており、処理をグリッドに移せます。</p>
+        </div>
+      </div>
+    </div>
+    <div class="width-12-12 highlights-alternating-inline-block">
+      <div class="grid-wrapper">
+        <div class="width-12-12 block-content">
+          <h3>標準</h3>
+          <h6 class="margin-tb-sm">JSR 107</h6>
+          <p class="margin-tb-sm">JSR 107 (JCACHE: Javaのための一時的なキャッシング)は、Infinispanの開発チームが積極的に参加している規格で、エキスパート・グループの一員でもあります。Infinispanは、JSR 107のAPIが最終的に決定され次第、実装する予定です。JSR 107 APIのプレビューについては、GitHubのJSR 107をご覧いただくか、InfinispanのJSR 107モジュールをご覧ください。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
