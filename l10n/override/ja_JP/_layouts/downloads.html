@@ -1,0 +1,96 @@
+---
+layout: base
+---
+
+<h1>{{ page.title }}</h1>
+<h2>{{ page.subtitle }}</h2>
+
+<div class="component-slim">
+  <div class="grid-wrapper">
+    <div class="width-12-12 margin-tb-xs">
+      <div class="alert alert-success margin-tb-0">
+        <div class="grid-wrapper">
+          <div class="width-1-12 justify-self-center align-self-center">
+            <i class="fas fa-info-circle text-orange fa-3x"></i>
+          </div>
+          <div class="width-11-12 align-self-center">
+            <b>Infinispan 10以降、組み込み成果物のダウンロード配布は行っておりません。お好みの依存関係管理ツール（Maven / Gradle / Ivy）を使用して、提供されている指示に従ってください。</b>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="width-12-12 callout orange margin-tb-xs">
+      <h3 class="margin-tb-0">現在の安定版リリース: Infinispan {{ site.data.ispn.stable.version}}</h3>
+      <br/>
+      <div class="grid-wrapper">
+        <div class="width-3-12 width-12-12-m">
+          <b>"{{ site.data.ispn.stable.codename}}"</b><br/>
+          <b>リリース日: {{ site.data.ispn.stable.release_date}}</b>
+        </div>
+        <div class="width-3-12 width-12-12-m">
+          <i class="fas fa-download text-orange"></i> <a href="{{ site.data.ispn.stable.download.server}}">サーバ</a> <a href="{{ site.data.ispn.stable.download.server}}.sha1">(SHA-1)</a><br/>
+          <i class="fas fa-download text-orange"></i> <a href="{{ site.data.ispn.stable.download.wfmodules}}">WildFly モジュール</a> <a href="{{ site.data.ispn.stable.download.wfmodules}}.sha1">(SHA-1)</a><br/>
+          <i class="fas fa-download text-orange"></i> <a href="https://github.com/infinispan/infinispan-quarkus/releases/tag/{{ site.data.ispn.stable.version}}">CLI</a>
+        </div>
+        <div class="width-3-12 width-12-12-m">
+          <i class="fas fa-pencil-alt text-orange"></i> <a href="{{site.baseurl}}/release-notes#{{ site.data.ispn.stable.minor_version}}">リリースノート</a><br/>
+          <i class="fas fa-bug text-orange"></i> <a href="{{ site.data.ispn.stable.fixed_issues}}">修正された課題</a>
+        </div>
+        <div class="width-3-12 width-12-12-m">
+          <i class="fas fa-cloud-download-alt text-orange"></i> <a href="{{site.baseurl}}/download/stable/dependency-coordinates.html">依存関係のまとめ</a><br/>
+          <i class="fas fa-cloud-download-alt text-orange"></i> <a href="{{site.baseurl}}/download/stable/container-image.html">コンテナイメージ</a><br/>
+          <i class="fas fa-cloud-download-alt text-orange"></i> <a href="{{site.baseurl}}/download/stable/native-image.html">ネイティブコンテナイメージ</a><br/>
+          <i class="fas fa-cloud-download-alt text-orange"></i> <a href="{{site.baseurl}}/download/stable/cli-image.html">CLIイメージ</a><br/>
+        </div>
+      </div>
+    </div>
+    <div class="width-12-12 width-12-12-m callout-slim blue text-centered margin-tb-xs">
+      <b>Infinispanの完全なサポート版をお探しですか？</b>
+      <b><a href="https://developers.redhat.com/products/datagrid/download">Red Hat Data Gridをダウンロード</a></b>
+    </div>
+    {% if site.data.ispn.unstable %}
+    <div class="width-12-12 callout orange margin-tb-xs">
+      <h3 class="margin-tb-0">最新の開発版リリース: Infinispan {{ site.data.ispn.unstable.version}}</h3>
+      <br/>
+      <div class="grid-wrapper">
+        <div class="width-3-12 width-12-12-m">
+          <b>"{{ site.data.ispn.unstable.codename}}"</b><br/>
+          <b>リリース日: {{ site.data.ispn.unstable.release_date}}</b>
+        </div>
+        <div class="width-3-12 width-12-12-m">
+          <i class="fas fa-download text-orange"></i> <a href="{{ site.data.ispn.unstable.download.server}}">サーバ</a> <a href="{{ site.data.ispn.unstable.download.server}}.sha1">(SHA-1)</a><br/>
+          <i class="fas fa-download text-orange"></i> <a href="{{ site.data.ispn.unstable.download.wfmodules}}">WildFlyモジュール</a> <a href="{{ site.data.ispn.unstable.download.wfmodules}}.sha1">(SHA-1)</a><br/>
+          <i class="fas fa-download text-orange"></i> <a href="https://github.com/infinispan/infinispan-quarkus/releases/tag/{{ site.data.ispn.unstable.version}}">CLI</a>
+        </div>
+        <div class="width-3-12 width-12-12-m">
+          <i class="fas fa-pencil-alt text-orange"></i> <a href="{{site.baseurl}}/release-notes#{{ site.data.ispn.unstable.minor_version}}">リリースノート</a><br/>
+          <i class="fas fa-bug text-orange"></i> <a href="{{ site.data.ispn.unstable.fixed_issues}}">修正された課題</a>
+        </div>
+        <div class="width-3-12 width-12-12-m">
+          <i class="fas fa-cloud-download-alt text-orange"></i> <a href="{{site.baseurl}}/download/dev/dependency-coordinates.html">依存関係のまとめ</a><br/>
+          <i class="fas fa-cloud-download-alt text-orange"></i> <a href="{{site.baseurl}}/download/dev/container-image.html">コンテナイメージ</a><br/>
+          <i class="fas fa-cloud-download-alt text-orange"></i> <a href="{{site.baseurl}}/download/dev/native-image.html">ネイティブコンテナイメージ</a><br/>
+          <i class="fas fa-cloud-download-alt text-orange"></i> <a href="{{site.baseurl}}/download/dev/cli-image.html">CLIイメージ</a><br/>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    <div class="width-12-12 width-12-12-m align-self-center justify-self-center margin-tb-xs">
+      <b>古いバージョンをお探しですか？</b> <i class="fas fa-download text-orange"></i> <a href="{{site.baseurl}}/download-archive">Infinispanダウンロードアーカイブ</a>
+    </div>
+  </div>
+  <div class="grid-wrapper text-centered margin-tb-lg">
+    <div class="width-4-12 width-12-12-m">
+      <h4><a href="{{site.baseurl}}/cache-store-implementations">永続キャッシュストア</a></h4>
+      <p>キャッシュストアはInfinispanのコア配布物の一部であり、Infinispan自体と同期して開発・リリースされています。これらのキャッシュストアのほとんどは、infinispan組み込みJARに含まれています。追加の依存関係を必要とするものは、別の成果物として提供されています。</p>
+    </div>
+    <div class="width-4-12 width-12-12-m">
+      <h4><a href="{{site.baseurl}}/hotrod-clients">Hot Rodクライアント</a></h4>
+      <p>Hot Rodは、Infinispanクライアントがリモートグリッドと通信する際に使用する通信プロトコルです。バイナリでプラットフォームに依存しないプロトコルで、Infinispanの一部としてオープンに開発されました。</p>
+    </div>
+    <div class="width-4-12 width-12-12-m">
+      <h4><a href="{{site.baseurl}}/integrations">統合</a></h4>
+      <p>Infinispanがデータ管理にどのように役立つかをユーザーに理解してもらうために、機能を簡単に説明します。</p>
+    </div>
+  </div>
+</div>
