@@ -1,0 +1,267 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-30 17:44+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: A new Infinispan-based Spring Session implementation\n"
+"permalink: /blog/:year/:month/:day/new-infinispan-spring-session\n"
+"date: '2021-03-16T12:00:00.000-00:00'\n"
+"author: Paul Ferraro\n"
+"tags: [ \"spring\", \"spring session\", \"httpsession\", \"wildfly\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:10
+#, no-wrap
+msgid "Introducing wildfly-clustering-spring-session"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:13
+msgid "Dear Infinispan community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:15
+msgid "Last week I released version 3.0.0.Final of wildfly-clustering-spring-session, a new Spring Session implementation based on WildFly's distributed HttpSession manager and Infinispan."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:16
+#, no-wrap
+msgid "Doesn't Infinispan already provide a Spring Session implementation?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:20
+msgid "https://infinispan.org/docs/stable/titles/integrating/integrating.html#spring_externalize_sessions[Yes.] Infinispan's existing Spring Session implementation stores instances of `org.springframework.session.MapSession` into a Spring cache, which is backed by either an embedded or remote cache."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:22
+msgid "However, like many `MapSession` based `SessionRepository` implementations, it suffers from a common set of problems/limitations:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:24
+msgid "The `MapSession` object, including all session metadata and attributes must be serialized and replicated/persisted on every request, regardless of the extent to which the session was modified."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:25
+msgid "Because Spring Session triggers session persistence from a `ServletFilter`, this cost is borne per request."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:26
+msgid "Since each request for a given session operates on a copy of the `MapSession`, and since the `MapSession` is not persisted/replicated until the end of the request:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:27
+msgid "Session modifications in one requests are not visible to concurrent requests for the same session."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:28
+msgid "A given session modification can be overwritten by a previous modification of the same session from a concurrent request if that request finishes first."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:29
+msgid "Session attributes implementing `HttpSessionActivationListener` are never notified before/after they are marshalled/unmarshalled."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:30
+#, no-wrap
+msgid "How does it work?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:34
+msgid "wildfly-clustering-spring-session is implemented as a Spring `SessionRepository` facade to a container-independent `SessionManager` implementation that persists session attributes and metadata to either an embedded Infinispan cache or a remote Infinispan server cluster via HotRod.  This grants all of the features to Spring Session that one would normally expect when deploying a distributed web application to WildFly, including:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:36
+msgid "Minimal persistence payloads using configurable persistence granularity."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:37
+msgid "Consistent view of a given session from multiple concurrent request threads on a given server"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:38
+msgid "Mutable session attribute semantics (emulates the semantics of local session manager)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:39
+msgid "Ability to treat specific session attributes as immutable"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:40
+msgid "Configurable limit for the number of active sessions to retain in memory"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:41
+msgid "Proper `HttpSessionActivationListener` notifications."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:42
+msgid "Configurable session attribute marshaller (ProtoStream, JBoss Marshalling, or Java Serialization)"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:44
+#, no-wrap
+msgid "How do I use it?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:48
+msgid "In this example, we'll use a remote Infinispan cluster containing a single member, deployed to the localhost, using its default configuration.  See the project https://github.com/wildfly-clustering/wildfly-clustering-spring-session/blob/master/README.md[README] for details on the available configuration annotations and their attributes."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:51
+msgid "Create a class containing the session repository configuration.  e.g."
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:58
+#, no-wrap
+msgid ""
+"@org.wildfly.clustering.web.spring.hotrod.annotation.EnableHotRodHttpSession(@HotRod(uri = \"hotrod://127.0.0.1:11222\"), manager = @SessionManager(granularity = ATTRIBUTE))\n"
+"public class Config {\n"
+"\t// ...\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:61
+msgid "Ensure your `/WEB-INF/applicationContext.xml` will process you configuration annotation:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:70
+#, no-wrap
+msgid ""
+"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+"<beans xmlns=\"http://www.springframework.org/schema/beans\"\n"
+"\t\txmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:context=\"http://www.springframework.org/schema/context\"\n"
+"\t\txsi:schemaLocation=\"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd\">\n"
+"\t<context:annotation-config/>\n"
+"</beans>\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:73
+msgid "Create an application initializer class that will auto-register the requisite servlet filters required by Spring Session:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:81
+#, no-wrap
+msgid ""
+"public class MyHttpSessionApplicationInitializer extends AbstractHttpSessionApplicationInitializer {\n"
+"\tpublic MyHttpSessionApplicationInitializer() {\n"
+"\t\t// Not not call super constructor (see project README for details)\n"
+"\t}\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:84
+msgid "Create a `@WebListener` that bootstraps our session repository configuration:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:93
+#, no-wrap
+msgid ""
+"@javax.servlet.annotation.WebListener\n"
+"public class MyContextLoaderListener extends org.wildfly.clustering.web.spring.context.ContextLoaderListener {\n"
+"\tpublic MyContextLoaderListener() {\n"
+"\t\tsuper(Config.class);\n"
+"\t}\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:96
+msgid "Deploying your application will automatically create a new cache instance in the Infinispan cluster named according to the the host and context of the web application."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:98
+#, no-wrap
+msgid "Can I use wildfly-clustering-spring-session outside of WildFly?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:103
+msgid "Of course! Like most Spring Session repository implementations, it is meant to work with any implementation of the Jakarta Servlet 4.0 specification.  The project https://github.com/wildfly-clustering/wildfly-clustering-spring-session[README] contains sample instructions for installing on Tomcat."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:105
+#, no-wrap
+msgid "Where can I find it?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:109
+msgid "You can find the source code on https://github.com/wildfly-clustering/wildfly-clustering-spring-session[github].  Contributions are always welcome!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:111
+msgid "File any issues with the https://github.com/wildfly-clustering/wildfly-clustering-spring-session/issues[github issue tracker]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:113
+msgid "Checkout the https://github.com/wildfly-clustering/wildfly-clustering-spring-session/blob/master/README.md[README] for more details."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:115
+msgid "Enjoy!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:116
+msgid "Paul Ferraro"
+msgstr ""
