@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: A new Infinispan-based Spring Session implementation\n"
@@ -34,130 +34,157 @@ msgid ""
 "tags: [ \"spring\", \"spring session\", \"httpsession\", \"wildfly\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispanベースの新しいSpring Sessionの実装\n"
+"permalink: /blog/:year/:month/:day/new-infinispan-spring-session\n"
+"date: '2021-03-16T12:00:00.000-00:00'\n"
+"author: Paul Ferraro\n"
+"tags: [ \"spring\", \"spring session\", \"httpsession\", \"wildfly\" ]\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Introducing wildfly-clustering-spring-session"
-msgstr ""
+msgstr "wildfly-clustering-spring-sessionのご紹介です。"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:13
+#, fuzzy
 msgid "Dear Infinispan community,"
-msgstr ""
+msgstr "親愛なるInfinispanコミュニティの皆様。"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:15
+#, fuzzy
 msgid "Last week I released version 3.0.0.Final of wildfly-clustering-spring-session, a new Spring Session implementation based on WildFly's distributed HttpSession manager and Infinispan."
-msgstr ""
+msgstr "先週、WildFlyの分散型HttpSessionマネージャとInfinispanをベースにした新しいSpring Sessionの実装であるwildfly-clustering-spring-sessionのバージョン3.0.0.Finalをリリースしました。"
 
 #. type: Title ==
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:16
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Doesn't Infinispan already provide a Spring Session implementation?"
-msgstr ""
+msgstr "InfinispanはすでにSpring Sessionの実装を提供しているのではないでしょうか？"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:20
+#, fuzzy
 msgid "https://infinispan.org/docs/stable/titles/integrating/integrating.html#spring_externalize_sessions[Yes.] Infinispan's existing Spring Session implementation stores instances of `org.springframework.session.MapSession` into a Spring cache, which is backed by either an embedded or remote cache."
-msgstr ""
+msgstr "Infinispanの既存のSpring Session実装は、 `org.springframework.session.MapSession` のインスタンスをSpringキャッシュに格納し link:https://infinispan.org/docs/stable/titles/integrating/integrating.html#spring_externalize_sessions[ます]。このキャッシュは、組み込みキャッシュまたはリモートキャッシュによってバックアップされます。"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:22
+#, fuzzy
 msgid "However, like many `MapSession` based `SessionRepository` implementations, it suffers from a common set of problems/limitations:"
-msgstr ""
+msgstr "しかし、多くの `MapSession` ベースの `SessionRepository` の実装と同様に、共通の問題/限界に悩まされています。"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:24
+#, fuzzy
 msgid "The `MapSession` object, including all session metadata and attributes must be serialized and replicated/persisted on every request, regardless of the extent to which the session was modified."
-msgstr ""
+msgstr "`MapSession` オブジェクトは、すべてのセッションのメタデータと属性を含めてシリアル化され、セッションがどの程度変更されたかにかかわらず、すべてのリクエストで複製/永続化されなければなりません。"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:25
+#, fuzzy
 msgid "Because Spring Session triggers session persistence from a `ServletFilter`, this cost is borne per request."
-msgstr ""
+msgstr "Spring Sessionは、 `ServletFilter` からセッションの永続化をトリガーするため、このコストはリクエストごとに発生します。"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:26
+#, fuzzy
 msgid "Since each request for a given session operates on a copy of the `MapSession`, and since the `MapSession` is not persisted/replicated until the end of the request:"
-msgstr ""
+msgstr "与えられたセッションの各リクエストは、 `MapSession` のコピーを操作するため、また、 `MapSession` は、リクエストが終了するまで永続化/複製されないためです。"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:27
+#, fuzzy
 msgid "Session modifications in one requests are not visible to concurrent requests for the same session."
-msgstr ""
+msgstr "あるリクエストでのセッションの変更は、同じセッションの同時リクエストでは見えません。"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:28
+#, fuzzy
 msgid "A given session modification can be overwritten by a previous modification of the same session from a concurrent request if that request finishes first."
-msgstr ""
+msgstr "あるセッションの変更は、同時に行われたリクエストによる同じセッションの以前の変更によって上書きされる可能性があります（そのリクエストが先に終了した場合）。"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:29
+#, fuzzy
 msgid "Session attributes implementing `HttpSessionActivationListener` are never notified before/after they are marshalled/unmarshalled."
-msgstr ""
+msgstr "`HttpSessionActivationListener` を実装しているセッション属性は、マーシャリング/アンマーシャリングされる前/後に通知されることはありません。"
 
 #. type: Title ==
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:30
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "How does it work?"
-msgstr ""
+msgstr "どのような仕組みになっているのですか？"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:34
+#, fuzzy
 msgid "wildfly-clustering-spring-session is implemented as a Spring `SessionRepository` facade to a container-independent `SessionManager` implementation that persists session attributes and metadata to either an embedded Infinispan cache or a remote Infinispan server cluster via HotRod.  This grants all of the features to Spring Session that one would normally expect when deploying a distributed web application to WildFly, including:"
-msgstr ""
+msgstr "wildfly-clustering-spring-sessionは、コンテナに依存しない `SessionManager` の実装に対するSpring `SessionRepository` のファサードとして実装されており、セッションの属性やメタデータをHotRod経由で埋め込みのInfinispanキャッシュやリモートのInfinispanサーバクラスタに永続化します。これにより、分散型WebアプリケーションをWildFlyにデプロイする際に通常期待される、以下のようなすべての機能がSpring Sessionに付与されます。"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:36
+#, fuzzy
 msgid "Minimal persistence payloads using configurable persistence granularity."
-msgstr ""
+msgstr "設定可能な永続性の粒度を使用した最小の永続性ペイロード。"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:37
+#, fuzzy
 msgid "Consistent view of a given session from multiple concurrent request threads on a given server"
-msgstr ""
+msgstr "特定のサーバー上で複数の同時リクエストスレッドからの特定のセッションの一貫したビュー"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:38
+#, fuzzy
 msgid "Mutable session attribute semantics (emulates the semantics of local session manager)"
-msgstr ""
+msgstr "変更可能なセッション属性のセマンティクス（ローカルセッションマネージャのセマンティクスを模倣"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:39
+#, fuzzy
 msgid "Ability to treat specific session attributes as immutable"
-msgstr ""
+msgstr "特定のセッション属性を不変のものとして扱う機能"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:40
+#, fuzzy
 msgid "Configurable limit for the number of active sessions to retain in memory"
-msgstr ""
+msgstr "メモリに保持するアクティブなセッションの数を設定可能"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:41
+#, fuzzy
 msgid "Proper `HttpSessionActivationListener` notifications."
-msgstr ""
+msgstr "適切な `HttpSessionActivationListener` の通知。"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:42
+#, fuzzy
 msgid "Configurable session attribute marshaller (ProtoStream, JBoss Marshalling, or Java Serialization)"
-msgstr ""
+msgstr "設定可能なセッション属性マーシャラー（ProtoStream、JBoss Marshalling、またはJava Serialization"
 
 #. type: Title ==
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:44
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "How do I use it?"
-msgstr ""
+msgstr "どうやって使うの？"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:48
+#, fuzzy
 msgid "In this example, we'll use a remote Infinispan cluster containing a single member, deployed to the localhost, using its default configuration.  See the project https://github.com/wildfly-clustering/wildfly-clustering-spring-session/blob/master/README.md[README] for details on the available configuration annotations and their attributes."
-msgstr ""
+msgstr "この例では、1つのメンバーを含むリモートのInfinispanクラスタを使用し、デフォルトの構成を使用してlocalhostにデプロイします。利用可能な構成アノテーションとその属性の詳細については、プロジェクトの link:https://github.com/wildfly-clustering/wildfly-clustering-spring-session/blob/master/README.md[README]を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:51
+#, fuzzy
 msgid "Create a class containing the session repository configuration.  e.g."
-msgstr ""
+msgstr "セッション・リポジトリの設定を含むクラスを作成します。"
 
 #. type: delimited block -
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:58
@@ -171,8 +198,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:61
+#, fuzzy
 msgid "Ensure your `/WEB-INF/applicationContext.xml` will process you configuration annotation:"
-msgstr ""
+msgstr "`/WEB-INF/applicationContext.xml` がコンフィギュレーションアノテーションを処理できることを確認してください。"
 
 #. type: delimited block -
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:70
@@ -188,8 +216,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:73
+#, fuzzy
 msgid "Create an application initializer class that will auto-register the requisite servlet filters required by Spring Session:"
-msgstr ""
+msgstr "Spring Sessionが必要とするサーブレットフィルターを自動登録するアプリケーションイニシャライザークラスを作成します。"
 
 #. type: delimited block -
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:81
@@ -204,8 +233,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:84
+#, fuzzy
 msgid "Create a `@WebListener` that bootstraps our session repository configuration:"
-msgstr ""
+msgstr "セッションリポジトリの構成をブートストラップする `@WebListener` を作成します。"
 
 #. type: delimited block -
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:93
@@ -221,47 +251,54 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:96
+#, fuzzy
 msgid "Deploying your application will automatically create a new cache instance in the Infinispan cluster named according to the the host and context of the web application."
-msgstr ""
+msgstr "アプリケーションをデプロイすると、Webアプリケーションのホストとコンテキストに応じた名前の新しいキャッシュ・インスタンスがInfinispanクラスタに自動的に作成されます。"
 
 #. type: Title ==
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:98
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Can I use wildfly-clustering-spring-session outside of WildFly?"
-msgstr ""
+msgstr "Wildfly-clustering-spring-sessionはWildFly以外でも使用できますか？"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:103
+#, fuzzy
 msgid "Of course! Like most Spring Session repository implementations, it is meant to work with any implementation of the Jakarta Servlet 4.0 specification.  The project https://github.com/wildfly-clustering/wildfly-clustering-spring-session[README] contains sample instructions for installing on Tomcat."
-msgstr ""
+msgstr "もちろんです。ほとんどのSpring Sessionリポジトリの実装と同様に、Jakarta Servlet 4.0仕様のあらゆる実装で動作するようになっています。プロジェクトの link:https://github.com/wildfly-clustering/wildfly-clustering-spring-session[README]には、Tomcatにインストールするためのサンプル手順が記載されています。"
 
 #. type: Title ==
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:105
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Where can I find it?"
-msgstr ""
+msgstr "どこで手に入るの？"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:109
+#, fuzzy
 msgid "You can find the source code on https://github.com/wildfly-clustering/wildfly-clustering-spring-session[github].  Contributions are always welcome!"
-msgstr ""
+msgstr "ソースコードは link:https://github.com/wildfly-clustering/wildfly-clustering-spring-session[github]で公開されています。ご意見・ご感想をお待ちしております。"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:111
+#, fuzzy
 msgid "File any issues with the https://github.com/wildfly-clustering/wildfly-clustering-spring-session/issues[github issue tracker]."
-msgstr ""
+msgstr "問題があれば link:https://github.com/wildfly-clustering/wildfly-clustering-spring-session/issues[github issue tracker]に提出してください。"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:113
+#, fuzzy
 msgid "Checkout the https://github.com/wildfly-clustering/wildfly-clustering-spring-session/blob/master/README.md[README] for more details."
-msgstr ""
+msgstr "詳しくは link:https://github.com/wildfly-clustering/wildfly-clustering-spring-session/blob/master/README.md[README]をご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:115
+#, fuzzy
 msgid "Enjoy!"
-msgstr ""
+msgstr "お楽しみに"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:116
+#, fuzzy
 msgid "Paul Ferraro"
-msgstr ""
+msgstr "ポール・フェラーロ"
