@@ -21,6 +21,86 @@ permalink: /tutorials/
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Infinispan turbocharges applications by storing data closer to processing logic, which reduces latency and increases throughput. 
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispanは、データを処理ロジックの近くに格納し、レイテンシーを減らし、スループットを向上させることで、アプリケーションを加速します。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Available as a Java library, you simply add Infinispan to your application dependencies and then you’re ready to store data in the same memory space as the executing code.
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Javaライブラリとして提供されており、アプリケーションにInfinispanを追加するだけで、実行コードと同じメモリ空間にデータを格納できます。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If you want to provision a data layer that is independent of your applications, you can use Infinispan Server for remote access to data with in-memory performance. Clients are a single network hop away from data through consistent hashing techniques and can make requests over HTTP or with a custom binary TCP protocol called Hot Rod.
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>アプリケーションから独立したデータ・レイヤーを用意したい場合、Infinispan Serverを使ってインメモリ・パフォーマンスでデータにリモート・アクセスできます。クライアントは、一貫したハッシュ技術によってデータからネットワークで１ホスト分離れており、HTTPまたはHot Rodと呼ばれるカスタムバイナリTCPプロトコルでリクエストを行えます。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Infinispan clusters running in different geographical locations can form global clusters to back up your data across sites. If sites go offline clients can immediately switch to an available cluster, making sure data center faults do not cause service interruptions.
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>地理的に異なる場所で動作するInfinispanクラスタは、グローバルクラスタを形成し、拠点間でデータをバックアップできます。拠点がオフラインになっても、クライアントはすぐに利用可能なクラスタに切り替えることができるため、データセンタの障害によるサービスの中断を防げます。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When using the Infinispan Operator with Kubernetes environments such as Red Hat OpenShift,  cross-site replication capabilities make your data ready for hybrid and multi cloud deployments.
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan OperatorをRed Hat OpenShiftなどのKubernetes環境で使用する場合、拠点横断レプリケーション機能により、データをハイブリッドやマルチクラウドの展開に対応できます。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Infinispan also guarantees data consistency when using cross-site replication, even in cases where clients make concurrent writes at different locations that use asynchronous replication. So your data is always there and always accurate, no matter where you’re running.
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>また、Infinispanは拠点横断レプリケーションを使用する際、非同期レプリケーションを使用する異なる場所でクライアントが同時に書き込みを行う場合でも、データの一貫性を保証します。そのため、どこで実行していても、データは常にそこにあり、常に正確です。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>IInfinispan provides trusted open-source technology to deliver scalability to meet workload demands and reduce resource utilization. At the same time, Infinispan distributes your data across clusters so no single point of failure causes data loss.
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>IInfinispanは信頼できるオープンソースの技術を提供し、負荷量の要求を満たす拡張性を実現し、リソースの使用率を低減します。同時に、Infinispanはデータをクラスタに分散させるため、単一障害点によるデータ損失が発生しません。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>One popular use for Infinispan is as a shared store for stateful data, such as user HTTP sessions. Applications can stay lightweight and avoid heap usage by externalizing sessions to Infinispan clusters, which act as an independent data layer.
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispanは、ユーザのHTTPセッションのようなステートフルなデータの共有ストアとしてよく使われます。アプリケーションは、セッションをInfinispanクラスタに外部化し、独立したデータ層として機能させることで、軽量化とヒープの使用を避けられます。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>One of the key aspects of our new server architecture is the management API exposed through the single port.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
