@@ -3,18 +3,19 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "POT-Creation-Date: 2021-02-11 23:24+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-04-07 14:25+0900\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.2\n"
 
 #. type: Plain text
 #: upstream/use-cases/boost-application-performance.md:4
@@ -23,21 +24,23 @@ msgid ""
 "layout: use-case-single\n"
 "title: Boost Application Performance\n"
 msgstr ""
+"layout: use-case-single\n"
+"title: アプリケーションパフォーマンスの向上\n"
 
 #. type: Plain text
 #: upstream/use-cases/boost-application-performance.md:7
 #, no-wrap
 msgid "Infinispan turbocharges applications by storing data closer to processing logic, which reduces latency and increases throughput. \n"
-msgstr ""
+msgstr "Infinispanは、データを処理ロジックの近くに格納し、レイテンシーを減らし、スループットを向上させることで、アプリケーションを加速します。\n"
 
 #. type: Plain text
 #: upstream/use-cases/boost-application-performance.md:9
 #, no-wrap
 msgid "Available as a Java library, you simply add Infinispan to your application dependencies and then you’re ready to store data in the same memory space as the executing code.\n"
-msgstr ""
+msgstr "Javaライブラリとして提供されており、アプリケーションにInfinispanを追加するだけで、実行コードと同じメモリ空間にデータを格納できます。\n"
 
 #. type: Plain text
 #: upstream/use-cases/boost-application-performance.md:11
 #, no-wrap
 msgid "If you want to provision a data layer that is independent of your applications, you can use Infinispan Server for remote access to data with in-memory performance. Clients are a single network hop away from data through consistent hashing techniques and can make requests over HTTP or with a custom binary TCP protocol called Hot Rod.\n"
-msgstr ""
+msgstr "アプリケーションから独立したデータ・レイヤーを用意したい場合、Infinispan Serverを使ってインメモリ・パフォーマンスでデータにリモート・アクセスできます。クライアントは、一貫したハッシュ技術によってデータからネットワークで１ホスト分離れており、HTTPまたはHot Rodと呼ばれるカスタムバイナリTCPプロトコルでリクエストを行えます。\n"
