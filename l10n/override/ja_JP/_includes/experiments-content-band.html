@@ -1,0 +1,38 @@
+<div class="component experiments-content-band">
+  <div class="grid-wrapper">
+    <div class="width-6-12 width-12-12-m">
+      <h3 class="margin-tb-sm">Infinispan Ensemble</h3>
+      <p>Infinispan Ensemble は Infinispan API を公開し、データ・グリッド・クラスターの集合を連合させます。データ・グリッドの集合は、クライアントからは、Infinispan Ensemble が以下のユーザ定義の保証を提供する単一のデータ・グリッドとして認識されます。</p>
+      <ul>
+        <li>地理的保証：あるデータの集合が、地理的に離れた2つのクラスターに重複して存在することが保証されます。</li>
+        <li>信頼性：あるデータの集合が少なくともn個のクラスターに存在することが保証されます。</li>
+      </ul>
+      <p>ユーザーは、Key/Value APIやM/R APIを含む一連のInfinispan APIを使ってデータにアクセスできます。このプロジェクトは、ビジネスで定義された依存性や法的な保証（例えば、領土の制約）を保証しながら、低遅延、ローカルまたはニアローカルな操作への扉を開きます。</p>
+      <p>このプロジェクトは、<a href="http://unine.ch/" target="_blank">Neuchatel大学</a>がLEADSプロジェクトに参加することで貢献しています。</p>
+      <p><i class="fab fa-github"></i>詳細は、このプロジェクトの<a href="https://github.com/leads-project/leads-infinispan" target="_blank">GitHubリポジトリ</a>に掲載されています。</p>
+    </div>
+    <div class="width-6-12 width-12-12-m">
+      <h3 class="margin-tb-sm">Infinispan Atomic Factory</h3>
+      <p>分散システムでは、故障や非同期の可能性がある多数の異種コンポーネントが集約されています。このような気まぐれな性質を制御するために、システム設計者は、ステートマシンレプリケーションのようなノンブロッキング技術に頼っています。この手法は、選抜されたグループのマシンで複製された共有オブジェクトに一貫したノンブロッキング操作を提供します。Atomic Object Factoryは、Infinispan上でステートマシンレプリケーションの枠組みを実装したものです。ファクトリーの使い方は、Javaのsynchronizedキーワードを使うのと同じくらい簡単です。Serializableクラスでファクトリーを呼び出すだけで、複数のInfinispanサーバー上でインスタンス化されたオブジェクトの依存性、一貫性、生きていることが保証されます。ファクトリーは、Infinispanのキャッシュ上に任意の（シリアライズ可能な）クラスのオブジェクトをインスタンス化することができるという意味で普遍的なものであり、同時アクセスにもかかわらず強力な一貫性を確保しつつ、透過的にオブジェクトを複製し、耐久性を持たせられます。</p>
+      <p>このプロジェクトは、従来Apache ZooKeeperなどのプロジェクトが提供していたInfinispanの新しいユースケースへの扉を開くものです。</p>
+      <p>このプロジェクトは、<a href="http://unine.ch/" target="_blank">Neuchatel大学</a>のLEADSプロジェクトへの参加によるものです。</p>
+      <p><i class="fab fa-github"></i>詳細は、このプロジェクトの<a href="https://github.com/leads-project/leads-infinispan" target="_blank">GitHubリポジトリ</a>でご覧いただけます。</p>
+    </div>
+    <div class="width-6-12 width-12-12-m">
+      <h3 class="margin-tb-sm">InfinispanでのApache Gora APIの使用</h3>
+      <p><a href="http://gora.apache.org/" target="_blank">Apache Gora</a>ビッグデータで永続化の抽象化APIでマップ・リデュース操作を実行します。</p>
+      <p>LEADSプロジェクトへの貢献を通じて、<a href="http://unine.ch/" target="_blank">Neuchatel大学</a>はInfinispanでデータを永続化するApache Goraバックエンドを提供しています。<br/>これは、Apache Goraを使用しているプロジェクトを利用して、データを永続化し、マップ/リデュースジョブを実行したい場合に特に有効です。主な例としては、<a href="http://nutch.apache.org/" target="_blank">Apache Nutch</a>、これは非常に人気があり効率的な Web クローラです。 NutchのデータをInfinispanにバックアップされたデータグリッドに保存し、各ノードでM/Rジョブを実行できます。</p>
+      <h6 class="margin-tb-0">次のステップは？</h6>
+      <p>Infinispan Goraの動作を確認するには、Unicrawlのチュートリアルに従うのが良いでしょう。このチュートリアルでは、Infinispanの小さなクラスタで、Apache NutchのデータをApache Goraを通して保存し、InfinispanのAvroシリアライゼーションを使用しています。<a href="https://github.com/leads-project/Unicrawl#unicrawl" target="_blank">チュートリアルをご覧ください</a>。</p>
+      <p><i class="fab fa-github"></i>コードや詳細な情報は寄与された<a href="https://github.com/leads-project/leads-infinispan" target="_blank">GitHubリポジトリ</a>でご覧いただけます。</p>
+    </div>
+    <div class="width-6-12 width-12-12-m">
+      <h3 class="margin-tb-sm">Apache Avroによるデータのシリアライズ</h3>
+      <p><a href="http://avro.apache.org/" target="_blank">Apache Avro</a>は、効率的でコンパクトなシリアル化フォーマットです。</p>
+      <p>LEADSプロジェクトへの貢献を通じて、<a href="http://unine.ch/" target="_blank">Neuchatel大学</a>はHotRodプロトコルを介してAvroで定義された型を保存、取得、照会するためのAvroバックエンドを提供しています。<br/>このバックエンドは、このポータブルなフォーマットでデータを保存したい場合や、Avroを使用するアプリケーションとデータを共有したい場合に特に役立ちます。</p>
+      <h6 class="margin-tb-0">次のステップは？</h6>
+      <p>Apache Avroシリアライゼーションの動作を確認する良い方法は、Unicrawlのチュートリアルに従うことです。このチュートリアルでは、Infinispanの小さなクラスタで、Apache NutchのデータをApache Goraを通して保存し、InfinispanのAvroシリアライゼーションを使用しています。<a href="https://github.com/leads-project/Unicrawl#unicrawl" target="_blank">チュートリアルをご覧ください</a>。</p>
+      <p><i class="fab fa-github"></i>コードや詳細な情報は寄与された<a href="https://github.com/leads-project/infinispan-avro" target="_blank">GitHubリポジトリ</a>でご覧いただけます。</p>
+    </div>
+  </div>
+</div>
