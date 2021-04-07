@@ -1,0 +1,52 @@
+<div class="component-slim documentation-archive-band">
+  <div class="grid-wrapper">
+    <div class="width-12-12">
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="7">Documentation for older Infinispan versions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for versions_hash in site.data.ispn.old %}
+              {% assign version = versions_hash[1] %}
+              {% assign doc = version.docs %}
+              {% assign minor_version = version.minor_version %}
+              <tr>
+                <td>
+                  <b>Version {{minor_version}}</b>
+                </td>
+                <td>
+                  {% if doc.javadocs %}
+                    <a href="{{ doc.javadocs }}">Javadoc</a>
+                  {% endif %}
+                </td>
+                <td>
+                  {% if doc.configdocs %}
+                    <a href="{{ doc.configdocs }}">設定スキーマ</a>
+                  {% endif %}
+                </td>
+                <td>
+                  {% if doc.jmxdocs %}
+                    <a href="{{ doc.jmxdocs }}">JMX参考資料</a>
+                  {% endif %}
+                </td>
+                <td>
+                  {% if doc.home %}
+                    <a href="{{ doc.home }}">ドキュメンテーション索引</a>
+                  {% endif %}
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <p>私たちは、ドキュメントを正確かつ最新の状態に保つよう努力しています。Infinispanユーザが古くなったドキュメントを避けるために、私たちは意図的に古いバージョンのコンテンツを除外しています。</p>
+        <p>すべてのInfinispanのドキュメントは、私たちのリポジトリから、各バージョンの各ブランチの<i>documentation</i>ディレクトリの下にあります。ソースからドキュメントを構築する方法については、READMEファイルを参照してください。</p>
+        <i class="fas fa-comments text-orange"></i> <a href="{{site.baseurl}}/community" target="_blank">お困りの際はご相談ください。</a>
+      </div>
+    </div>
+  </div>
+</div>
