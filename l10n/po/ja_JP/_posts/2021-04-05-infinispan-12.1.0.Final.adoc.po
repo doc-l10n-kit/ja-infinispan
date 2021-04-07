@@ -1,0 +1,256 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-04-07 16:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 12.1.0.Final\n"
+"permalink: /blog/:year/:month/:day/infinispan-12-1-0-final\n"
+"date: '2021-04-07T12:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:10
+#, no-wrap
+msgid "Infinispan 12.1.0.Final"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:13
+msgid "Dear Infinispan community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:16
+msgid "As a belated surprise in your chocolate egg this year is a brand new final release.  Infinispan 12.1 https://en.wikipedia.org/wiki/Taedonggang[Taedonggang] includes a bunch of new features and fixes."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:17
+#, no-wrap
+msgid "Out-of-the-box authorization in the server"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:21
+msgid "The biggest change is the fact that the server now enables authorization right from the start, including a set of predefined roles.  By default this only affects management ops and it can be easily disabled."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:23
+msgid "Head over to https://infinispan.org/docs/stable/titles/server/server.html#authorization for details on this feature and how to tune it to your own needs."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:25
+#, no-wrap
+msgid "Configuration"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:28
+msgid "Infinispan can now load configuration as YAML, as well as XML and JSON."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:29
+#, no-wrap
+msgid "Soft-Index File Store"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:34
+msgid "The Soft-Index File Store (or SIFS for short) is one of our file-based stores, and it has received a number of improvements such as segmentation, non-blocking and requiring no additional threads.  Additionally, if you are lucky enough to have some persistent memory hardware, this file-store can support it via the very awesome https://github.com/jhalliday/mashona[Mashona library].  We hope to make this our default file-store in the future (replacing the Single File Store)."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:35
+#, no-wrap
+msgid "Server protocol management"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:38
+msgid "You can now enable/disable protocol endpoints at runtime or use https://infinispan.org/docs/stable/titles/server/server.html#endpoint_ipfilter[IP filtering] for fine-grained access control."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:39
+#, no-wrap
+msgid "Console"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:42
+msgid "The console is now fully aware of the server authorization roles (if enabled) and many fixes are included."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:43
+#, no-wrap
+msgid "CLI"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:46
+msgid "The CLI is now available as https://github.com/infinispan/infinispan-quarkus/releases[native builds] for Linux and MacOS."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:47
+#, no-wrap
+msgid "Cross Site Replication"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:50
+msgid "You can now enable automatic Cross Site https://infinispan.org/docs/stable/titles/xsite/xsite.html#xsite_state_transfer-xsite[state transfer] for asynchronous backup strategy."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:51
+#, no-wrap
+msgid "Spring"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:55
+msgid "Our Spring Cache and Spring Session integration now allows user keys and values to be stored in https://infinispan.org/docs/stable/titles/developing/developing.html#configuring_protobuf_encoding-data[Protostream] format.  However, full integration with the Infinispan Spring Boot Starter is landing in the next minor release. Stay tuned!"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:56
+#, no-wrap
+msgid "Marshalling/ProtoBuf"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:58
+msgid "The latest ProtoStream release 4.4.0.Beta3 includes support for marshalling arrays and collections, built-in support for several community requested types (UUID, BigDEcimal,...), a new method in ProtobufUtil for computing message size (without actually encoding the message) and a lot of bug fixes. This release also provides it’s own protobuf encoder and removes the dependency on protobuf-java artifact which was previously used for encoding the stream (without being exposed by the API)."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:60
+#, no-wrap
+msgid "Images"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:62
+msgid "We now provide an image containing a natively compiled version of the Infinispan CLI at quay.io/infinispan/cli"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:63
+#, no-wrap
+msgid "Operator"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:65
+msgid "In addition to numerous fixes, the operator has added many new features. Most notably:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:67
+msgid "Grafana Dashboard"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:68
+msgid "Batch CR"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:69
+msgid "Custom library support"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:70
+msgid "Custom labels on Resources created by Operator"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:71
+msgid "Disable Authentication Option"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:72
+msgid "Decouple user and operator endpoint authentication"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:73
+#, no-wrap
+msgid "Documentation"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:76
+msgid "We’ve made a lot of updates to our documentation this release, with lots more task-oriented content for new features and capabilities. Server credential stores, refactored authorization (RBAC) configuration, Operator Batch CR, Backup and Restore CRs, custom code deployments, automatic cross-site state transfer, querying values, configuring Protobuf annotations for marshalling… Hopefully you’ll find all the answers you need for using Infinispan 12.1."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:78
+msgid "One of the big highlights for docs in this release are the new tabbed configuration snippets we’re going to start adding. Right now you can find an example of tabbed configuration in the REST API docs here: https://infinispan.org/docs/dev/titles/rest/rest.html#cache_configuration"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:80
+msgid "We’ve also done a lot of housekeeping in this release to make sure configuration examples are up to date and valid. In the next release you can expect to see more improvements there as well as a new title to improve our documentation around encoding and how Infinispan uses Protobuf."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:82
+msgid "As always, thanks for reading and get in touch if you have comments, feedback, or suggestions on our documentation."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:83
+#, no-wrap
+msgid "Release notes and upgrading"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:87
+msgid "You can look at the detailed https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12353337E[release notes] to see what has changed since CR1.  If you are upgrading from a previous version of Infinispan, please checkout our https://infinispan.org/docs/stable/titles/upgrading/upgrading.html[Upgrading guide]."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:88
+#, no-wrap
+msgid "What's next ?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:90
+msgid "Our next release, 13.0, should happen during the summer, and will hopefully introduce a new API which will make using Infinispan much easier, as well as a number of other improvements across the board. As usual, look out for blog postings about upcoming highlights. If you'd like to contribute, just get in touch."
+msgstr ""
