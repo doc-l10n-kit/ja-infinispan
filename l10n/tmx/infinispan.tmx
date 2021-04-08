@@ -222,6 +222,340 @@ permalink: /tutorials/
     <tu>
       <tuv xml:lang="en">
         <seg>layout: blog
+title: Infinispan 12.1.0.Final
+permalink: /blog/:year/:month/:day/infinispan-12-1-0-final
+date: '2021-04-07T12:00:00.000-00:00'
+author: ttarrant
+tags: [ "release" ]
+---
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>layout: blog
+title: Infinispan 12.1.0.Final
+permalink: /blog/:year/:month/:day/infinispan-12-1-0-final
+date: '2021-04-07T12:00:00.000-00:00'
+author: ttarrant
+tags: [ "release" ]
+---
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Infinispan 12.1.0.Final</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan 12.1.0.Final</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Dear Infinispan community,</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>親愛なるInfinispanコミュニティの皆様。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>As a belated surprise in your chocolate egg this year is a brand new final release.  Infinispan 12.1 https://en.wikipedia.org/wiki/Taedonggang[Taedonggang] includes a bunch of new features and fixes.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>今年のチョコレート・エッグには、遅ればせながら真新しいファイナル・リリースが入っています。Infinispan 12.1 link:https://en.wikipedia.org/wiki/Taedonggang[Taedonggang]には、たくさんの新機能と修正が含まれています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Out-of-the-box authorization in the server</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>サーバーですぐに使える認証</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The biggest change is the fact that the server now enables authorization right from the start, including a set of predefined roles.  By default this only affects management ops and it can be easily disabled.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>最大の変更点は、サーバーが事前に定義された役割を含めて、最初から認証を可能にしたことです。デフォルトでは、この機能は管理業務にのみ影響し、簡単に無効できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Head over to https://infinispan.org/docs/stable/titles/server/server.html#authorization for details on this feature and how to tune it to your own needs.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>この機能の詳細と、自分のニーズに合わせて調整する方法については、 https://infinispan.org/docs/stable/titles/server/server.html#authorization をご覧ください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Configuration</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>構成</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Infinispan can now load configuration as YAML, as well as XML and JSON.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispanは、XMLやJSONだけでなく、YAMLとして設定を読み込みこめるようになりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Soft-Index File Store</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ソフト索引ファイルストア</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The Soft-Index File Store (or SIFS for short) is one of our file-based stores, and it has received a number of improvements such as segmentation, non-blocking and requiring no additional threads.  Additionally, if you are lucky enough to have some persistent memory hardware, this file-store can support it via the very awesome https://github.com/jhalliday/mashona[Mashona library].  We hope to make this our default file-store in the future (replacing the Single File Store).</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ソフト索引ファイルストア（Soft-Index File Store略してSIFS）は、ファイルベースのストアの1つで、セグメント化、ノンブロッキング、追加のスレッドを必要としないなど、数多くの改良が施されています。さらに、もしあなたが幸運にも永続メモリーのハードウェアを持っているなら、このファイルストアは非常に素晴らしい link:https://github.com/jhalliday/mashona[Mashonaライブラリ]を介してそれをサポートできます。将来的には、シングルファイルストアに代わって、このファイルストアをデフォルトのファイルストアにしたいと考えています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Server protocol management</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>サーバーのプロトコル管理</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You can now enable/disable protocol endpoints at runtime or use https://infinispan.org/docs/stable/titles/server/server.html#endpoint_ipfilter[IP filtering] for fine-grained access control.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>稼働時にプロトコルのエンドポイントを有効/無効にしたり、 link:https://infinispan.org/docs/stable/titles/server/server.html#endpoint_ipfilter[IPフィルタリング] を使用してきめ細かなアクセスコントロールをできるようになりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Console</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>コンソール</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The console is now fully aware of the server authorization roles (if enabled) and many fixes are included.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>コンソールは、サーバーの認証ロールを完全に認識するようになり（有効な場合）、多くの修正が含まれています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The CLI is now available as https://github.com/infinispan/infinispan-quarkus/releases[native builds] for Linux and MacOS.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>このCLIは、LinuxおよびMacOSの link:https://github.com/infinispan/infinispan-quarkus/releases[ネイティブビルド]として提供されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Cross Site Replication</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>拠点横断レプリケーション</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You can now enable automatic Cross Site https://infinispan.org/docs/stable/titles/xsite/xsite.html#xsite_state_transfer-xsite[state transfer] for asynchronous backup strategy.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>非同期バックアップ戦略において、拠点横断の自動 link:https://infinispan.org/docs/stable/titles/xsite/xsite.html#xsite_state_transfer-xsite[状態移行]を有効にできるようになりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Spring</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Spring</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Our Spring Cache and Spring Session integration now allows user keys and values to be stored in https://infinispan.org/docs/stable/titles/developing/developing.html#configuring_protobuf_encoding-data[Protostream] format.  However, full integration with the Infinispan Spring Boot Starter is landing in the next minor release. Stay tuned!</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Spring CacheとSpring Sessionの統合により、ユーザがキーとバリューを link:https://infinispan.org/docs/stable/titles/developing/developing.html#configuring_protobuf_encoding-data[Protostream]形式で保存できるようになりました。しかし、Infinispan Spring Boot Starterとの完全な統合は、次のマイナーリリースで着地します。ご期待ください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Marshalling/ProtoBuf</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>マーシャリング/ProtoBuf</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The latest ProtoStream release 4.4.0.Beta3 includes support for marshalling arrays and collections, built-in support for several community requested types (UUID, BigDEcimal,...), a new method in ProtobufUtil for computing message size (without actually encoding the message) and a lot of bug fixes. This release also provides it’s own protobuf encoder and removes the dependency on protobuf-java artifact which was previously used for encoding the stream (without being exposed by the API).</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>最新の ProtoStream リリース 4.4.0.Beta3 には、配列とコレクションのマーシャリングのサポート、コミュニティから要求されたいくつかの型（UUID、BigDEcimal、...）の組込みサポート、（実際にメッセージをエンコードすることなく）メッセージサイズを計算する ProtobufUtil の新しいメソッド、および多くのバグ修正が含まれています。このリリースでは、独自の protobuf エンコーダが提供され、以前はストリームのエンコードに使用されていた protobuf-java アーティファクトへの依存がなくなりました (API では公開されていません)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Images</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>イメージ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>We now provide an image containing a natively compiled version of the Infinispan CLI at quay.io/infinispan/cli</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ネイティブにコンパイルされたInfinispan CLIのイメージをquay.io/infinispan/cliで提供しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Operator</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>オペレータ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In addition to numerous fixes, the operator has added many new features. Most notably:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>数々の修正に加えて、オペレーターは多くの新機能を追加しました。最も注目すべきは</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Batch CR</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>バッチCR</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Custom library support</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>カスタムライブラリ対応</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Custom labels on Resources created by Operator</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>オペレータが作成したリソースのカスタムラベル</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Disable Authentication Option</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>認証オプションの無効化</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Decouple user and operator endpoint authentication</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ユーザとオペレータのエンドポイント認証を分離</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Documentation</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ドキュメンテーション</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>We’ve made a lot of updates to our documentation this release, with lots more task-oriented content for new features and capabilities. Server credential stores, refactored authorization (RBAC) configuration, Operator Batch CR, Backup and Restore CRs, custom code deployments, automatic cross-site state transfer, querying values, configuring Protobuf annotations for marshalling… Hopefully you’ll find all the answers you need for using Infinispan 12.1.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>今回のリリースでは、ドキュメントの更新が多く行われ、新機能や性能に関する職務指向のコンテンツがたくさん追加されました。サーバ・クレデンシャル・ストア、リファクタリングされた認証(RBAC)の構成、オペレータ・バッチCR、バックアップ・リストアCR、カスタム・コード・デプロイメント、自動拠点横断状態転送、値を照会、マーシャリングのためのProtobufアノテーションの構成...Infinispan 12.1を使用するために必要なすべての答えが見つかることを願っています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>One of the big highlights for docs in this release are the new tabbed configuration snippets we’re going to start adding. Right now you can find an example of tabbed configuration in the REST API docs here: https://infinispan.org/docs/dev/titles/rest/rest.html#cache_configuration</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>今回のリリースにおけるdocsの大きな特徴の一つは、タブ付き設定のスニペットを新たに追加することです。現在、REST APIのドキュメントにタブ付き設定の例があります https://infinispan.org/docs/dev/titles/rest/rest.html#cache_configuration</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>We’ve also done a lot of housekeeping in this release to make sure configuration examples are up to date and valid. In the next release you can expect to see more improvements there as well as a new title to improve our documentation around encoding and how Infinispan uses Protobuf.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>また、このリリースでは、設定例が最新で有効であることを確認するために、多くの維持管理を行いました。次のリリースでは、エンコーディングや Infinispan がどのように Protobuf を使用するかについてのドキュメントを改善するための新しいタイトルと同様に、さらなる改善を期待できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>As always, thanks for reading and get in touch if you have comments, feedback, or suggestions on our documentation.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>いつもお読みいただきありがとうございます。また、私たちのドキュメントに関するコメント、フィードバック、提案などがありましたら、ご連絡ください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Release notes and upgrading</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>リリースノートとアップグレード</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You can look at the detailed https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12353337E[release notes] to see what has changed since CR1.  If you are upgrading from a previous version of Infinispan, please checkout our https://infinispan.org/docs/stable/titles/upgrading/upgrading.html[Upgrading guide].</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>CR1からの変更点については、詳細な link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;amp;version=12353337E[リリースノート]をご覧ください。旧バージョンのInfinispanからアップグレードする場合は、 link:https://infinispan.org/docs/stable/titles/upgrading/upgrading.html[アップグレード・ガイド]をご確認ください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>What's next ?</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>次は何？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Our next release, 13.0, should happen during the summer, and will hopefully introduce a new API which will make using Infinispan much easier, as well as a number of other improvements across the board. As usual, look out for blog postings about upcoming highlights. If you'd like to contribute, just get in touch.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>次のリリースである13.0は夏頃に予定されており、Infinispanの使用をより簡単にする新しいAPIを導入するほか、全体的に多くの改良が加えられることを期待しています。いつものように、今後のハイライトについてのブログ投稿をお楽しみに。ご協力いただける方は、ぜひご連絡ください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>layout: blog
 title: Infinispan 12.0.1.Final
 permalink: /blog/:year/:month/:day/infinispan-12-0-1
 date: '2021-02-12T12:00:00.000-00:00'
