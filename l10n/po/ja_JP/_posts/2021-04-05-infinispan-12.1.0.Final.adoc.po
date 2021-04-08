@@ -3,18 +3,18 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "POT-Creation-Date: 2021-04-07 16:32+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-04-08 10:45+0900\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.2\n"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:1
@@ -24,7 +24,7 @@ msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:8
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 12.1.0.Final\n"
@@ -35,7 +35,7 @@ msgid ""
 "---\n"
 msgstr ""
 "layout: blog\n"
-"title: Infinispan 12.1.0.ファイナル\n"
+"title: Infinispan 12.1.0.Final\n"
 "permalink: /blog/:year/:month/:day/infinispan-12-1-0-final\n"
 "date: '2021-04-07T12:00:00.000-00:00'\n"
 "author: ttarrant\n"
@@ -44,246 +44,220 @@ msgstr ""
 
 #. type: Title =
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:10
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Infinispan 12.1.0.Final"
-msgstr "Infinispan 12.1.0.ファイナル"
+msgstr "Infinispan 12.1.0.Final"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:13
-#, fuzzy
 msgid "Dear Infinispan community,"
 msgstr "親愛なるInfinispanコミュニティの皆様。"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:16
-#, fuzzy
 msgid "As a belated surprise in your chocolate egg this year is a brand new final release.  Infinispan 12.1 https://en.wikipedia.org/wiki/Taedonggang[Taedonggang] includes a bunch of new features and fixes."
 msgstr "今年のチョコレート・エッグには、遅ればせながら真新しいファイナル・リリースが入っています。Infinispan 12.1 link:https://en.wikipedia.org/wiki/Taedonggang[Taedonggang]には、たくさんの新機能と修正が含まれています。"
 
 #. type: Title ==
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:17
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Out-of-the-box authorization in the server"
 msgstr "サーバーですぐに使える認証"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:21
-#, fuzzy
 msgid "The biggest change is the fact that the server now enables authorization right from the start, including a set of predefined roles.  By default this only affects management ops and it can be easily disabled."
-msgstr "最大の変更点は、サーバーが事前に定義された役割を含めて、最初から認証を可能にしたことです。デフォルトでは、この機能は管理業務にのみ影響し、簡単に無効にすることができます。"
+msgstr "最大の変更点は、サーバーが事前に定義された役割を含めて、最初から認証を可能にしたことです。デフォルトでは、この機能は管理業務にのみ影響し、簡単に無効できます。"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:23
-#, fuzzy
 msgid "Head over to https://infinispan.org/docs/stable/titles/server/server.html#authorization for details on this feature and how to tune it to your own needs."
 msgstr "この機能の詳細と、自分のニーズに合わせて調整する方法については、 https://infinispan.org/docs/stable/titles/server/server.html#authorization をご覧ください。"
 
 #. type: Title ==
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:25
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Configuration"
 msgstr "構成"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:28
-#, fuzzy
 msgid "Infinispan can now load configuration as YAML, as well as XML and JSON."
-msgstr "Infinispanは、XMLやJSONだけでなく、YAMLとして設定を読み込むことができるようになりました。"
+msgstr "Infinispanは、XMLやJSONだけでなく、YAMLとして設定を読み込みこめるようになりました。"
 
 #. type: Title ==
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:29
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Soft-Index File Store"
-msgstr "ソフトインデックスファイルストア"
+msgstr "ソフト索引ファイルストア"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:34
-#, fuzzy
 msgid "The Soft-Index File Store (or SIFS for short) is one of our file-based stores, and it has received a number of improvements such as segmentation, non-blocking and requiring no additional threads.  Additionally, if you are lucky enough to have some persistent memory hardware, this file-store can support it via the very awesome https://github.com/jhalliday/mashona[Mashona library].  We hope to make this our default file-store in the future (replacing the Single File Store)."
-msgstr "Soft-Index File Store（略してSIFS）は、ファイルベースのストアの1つで、セグメント化、ノンブロッキング、追加のスレッドを必要としないなど、数多くの改良が施されています。さらに、もしあなたが幸運にもパーシステントメモリーのハードウェアを持っているなら、このファイルストアは非常に素晴らしい link:https://github.com/jhalliday/mashona[Mashona]ライブラリを介してそれをサポートすることができます。将来的には、シングルファイルストアに代わって、このファイルストアをデフォルトのファイルストアにしたいと考えています。"
+msgstr "ソフト索引ファイルストア（Soft-Index File Store略してSIFS）は、ファイルベースのストアの1つで、セグメント化、ノンブロッキング、追加のスレッドを必要としないなど、数多くの改良が施されています。さらに、もしあなたが幸運にも永続メモリーのハードウェアを持っているなら、このファイルストアは非常に素晴らしい link:https://github.com/jhalliday/mashona[Mashonaライブラリ]を介してそれをサポートできます。将来的には、シングルファイルストアに代わって、このファイルストアをデフォルトのファイルストアにしたいと考えています。"
 
 #. type: Title ==
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:35
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Server protocol management"
 msgstr "サーバーのプロトコル管理"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:38
-#, fuzzy
 msgid "You can now enable/disable protocol endpoints at runtime or use https://infinispan.org/docs/stable/titles/server/server.html#endpoint_ipfilter[IP filtering] for fine-grained access control."
-msgstr "ランタイムにプロトコルのエンドポイントを有効/無効にしたり、 link:https://infinispan.org/docs/stable/titles/server/server.html#endpoint_ipfilter[IPフィルタリング]を使用してきめ細かなアクセスコントロールを行うことができるようになりました。"
+msgstr "稼働時にプロトコルのエンドポイントを有効/無効にしたり、 link:https://infinispan.org/docs/stable/titles/server/server.html#endpoint_ipfilter[IPフィルタリング] を使用してきめ細かなアクセスコントロールをできるようになりました。"
 
 #. type: Title ==
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:39
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Console"
 msgstr "コンソール"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:42
-#, fuzzy
 msgid "The console is now fully aware of the server authorization roles (if enabled) and many fixes are included."
 msgstr "コンソールは、サーバーの認証ロールを完全に認識するようになり（有効な場合）、多くの修正が含まれています。"
 
 #. type: Title ==
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:43
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "CLI"
 msgstr "CLI"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:46
-#, fuzzy
 msgid "The CLI is now available as https://github.com/infinispan/infinispan-quarkus/releases[native builds] for Linux and MacOS."
 msgstr "このCLIは、LinuxおよびMacOSの link:https://github.com/infinispan/infinispan-quarkus/releases[ネイティブビルド]として提供されています。"
 
 #. type: Title ==
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:47
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Cross Site Replication"
-msgstr "クロスサイトレプリケーション"
+msgstr "拠点横断レプリケーション"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:50
-#, fuzzy
 msgid "You can now enable automatic Cross Site https://infinispan.org/docs/stable/titles/xsite/xsite.html#xsite_state_transfer-xsite[state transfer] for asynchronous backup strategy."
-msgstr "非同期バックアップ戦略において、クロスサイトの自動 link:https://infinispan.org/docs/stable/titles/xsite/xsite.html#xsite_state_transfer-xsite[状態移行]を有効にできるようになりました。"
+msgstr "非同期バックアップ戦略において、拠点横断の自動 link:https://infinispan.org/docs/stable/titles/xsite/xsite.html#xsite_state_transfer-xsite[状態移行]を有効にできるようになりました。"
 
 #. type: Title ==
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:51
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Spring"
-msgstr "春"
+msgstr "Spring"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:55
-#, fuzzy
 msgid "Our Spring Cache and Spring Session integration now allows user keys and values to be stored in https://infinispan.org/docs/stable/titles/developing/developing.html#configuring_protobuf_encoding-data[Protostream] format.  However, full integration with the Infinispan Spring Boot Starter is landing in the next minor release. Stay tuned!"
-msgstr "Spring CacheとSpring Sessionの統合により、ユーザーキーと値を link:https://infinispan.org/docs/stable/titles/developing/developing.html#configuring_protobuf_encoding-data[Protostream]形式で保存できるようになりました。しかし、Infinispan Spring Boot Starterとの完全な統合は、次のマイナーリリースで着地します。ご期待ください。"
+msgstr "Spring CacheとSpring Sessionの統合により、ユーザがキーとバリューを link:https://infinispan.org/docs/stable/titles/developing/developing.html#configuring_protobuf_encoding-data[Protostream]形式で保存できるようになりました。しかし、Infinispan Spring Boot Starterとの完全な統合は、次のマイナーリリースで着地します。ご期待ください。"
 
 #. type: Title ==
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:56
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Marshalling/ProtoBuf"
 msgstr "マーシャリング/ProtoBuf"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:58
-#, fuzzy
 msgid "The latest ProtoStream release 4.4.0.Beta3 includes support for marshalling arrays and collections, built-in support for several community requested types (UUID, BigDEcimal,...), a new method in ProtobufUtil for computing message size (without actually encoding the message) and a lot of bug fixes. This release also provides it’s own protobuf encoder and removes the dependency on protobuf-java artifact which was previously used for encoding the stream (without being exposed by the API)."
-msgstr "最新の ProtoStream リリース 4.4.0.Beta3 には、配列とコレクションのマーシャリングのサポート、コミュニティから要求されたいくつかの型（UUID、BigDEcimal、...）のビルトインサポート、（実際にメッセージをエンコードすることなく）メッセージサイズを計算する ProtobufUtil の新しいメソッド、および多くのバグ修正が含まれています。このリリースでは、独自の protobuf エンコーダが提供され、以前はストリームのエンコードに使用されていた protobuf-java アーティファクトへの依存がなくなりました (API では公開されていません)。"
+msgstr "最新の ProtoStream リリース 4.4.0.Beta3 には、配列とコレクションのマーシャリングのサポート、コミュニティから要求されたいくつかの型（UUID、BigDEcimal、...）の組込みサポート、（実際にメッセージをエンコードすることなく）メッセージサイズを計算する ProtobufUtil の新しいメソッド、および多くのバグ修正が含まれています。このリリースでは、独自の protobuf エンコーダが提供され、以前はストリームのエンコードに使用されていた protobuf-java アーティファクトへの依存がなくなりました (API では公開されていません)。"
 
 #. type: Title ==
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:60
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Images"
 msgstr "イメージ"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:62
-#, fuzzy
 msgid "We now provide an image containing a natively compiled version of the Infinispan CLI at quay.io/infinispan/cli"
 msgstr "ネイティブにコンパイルされたInfinispan CLIのイメージをquay.io/infinispan/cliで提供しています。"
 
 #. type: Title ==
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:63
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Operator"
-msgstr "オペレーター"
+msgstr "オペレータ"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:65
-#, fuzzy
 msgid "In addition to numerous fixes, the operator has added many new features. Most notably:"
 msgstr "数々の修正に加えて、オペレーターは多くの新機能を追加しました。最も注目すべきは"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:67
-#, fuzzy
 msgid "Grafana Dashboard"
 msgstr "Grafanaダッシュボード"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:68
-#, fuzzy
 msgid "Batch CR"
 msgstr "バッチCR"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:69
-#, fuzzy
 msgid "Custom library support"
 msgstr "カスタムライブラリ対応"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:70
-#, fuzzy
 msgid "Custom labels on Resources created by Operator"
-msgstr "オペレーターが作成したリソースのカスタムラベル"
+msgstr "オペレータが作成したリソースのカスタムラベル"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:71
-#, fuzzy
 msgid "Disable Authentication Option"
 msgstr "認証オプションの無効化"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:72
-#, fuzzy
 msgid "Decouple user and operator endpoint authentication"
-msgstr "ユーザーとオペレーターのエンドポイント認証を分離"
+msgstr "ユーザとオペレータのエンドポイント認証を分離"
 
 #. type: Title ==
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:73
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Documentation"
 msgstr "ドキュメンテーション"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:76
-#, fuzzy
 msgid "We’ve made a lot of updates to our documentation this release, with lots more task-oriented content for new features and capabilities. Server credential stores, refactored authorization (RBAC) configuration, Operator Batch CR, Backup and Restore CRs, custom code deployments, automatic cross-site state transfer, querying values, configuring Protobuf annotations for marshalling… Hopefully you’ll find all the answers you need for using Infinispan 12.1."
-msgstr "今回のリリースでは、ドキュメントの更新が多く行われ、新機能や性能に関するタスク指向のコンテンツがたくさん追加されました。サーバ・クレデンシャル・ストア、リファクタリングされた認証(RBAC)の構成、オペレータ・バッチCR、バックアップ・リストアCR、カスタム・コード・デプロイメント、自動クロスサイト・ステート・トランスファー、値のクエリ、マーシャリングのためのProtobufアノテーションの構成...Infinispan 12.1を使用するために必要なすべての答えが見つかることを願っています。"
+msgstr "今回のリリースでは、ドキュメントの更新が多く行われ、新機能や性能に関する職務指向のコンテンツがたくさん追加されました。サーバ・クレデンシャル・ストア、リファクタリングされた認証(RBAC)の構成、オペレータ・バッチCR、バックアップ・リストアCR、カスタム・コード・デプロイメント、自動拠点横断状態転送、値を照会、マーシャリングのためのProtobufアノテーションの構成...Infinispan 12.1を使用するために必要なすべての答えが見つかることを願っています。"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:78
-#, fuzzy
 msgid "One of the big highlights for docs in this release are the new tabbed configuration snippets we’re going to start adding. Right now you can find an example of tabbed configuration in the REST API docs here: https://infinispan.org/docs/dev/titles/rest/rest.html#cache_configuration"
 msgstr "今回のリリースにおけるdocsの大きな特徴の一つは、タブ付き設定のスニペットを新たに追加することです。現在、REST APIのドキュメントにタブ付き設定の例があります https://infinispan.org/docs/dev/titles/rest/rest.html#cache_configuration"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:80
-#, fuzzy
 msgid "We’ve also done a lot of housekeeping in this release to make sure configuration examples are up to date and valid. In the next release you can expect to see more improvements there as well as a new title to improve our documentation around encoding and how Infinispan uses Protobuf."
-msgstr "また、このリリースでは、設定例が最新で有効であることを確認するために、多くのハウスキーピングを行いました。次のリリースでは、エンコーディングや Infinispan がどのように Protobuf を使用するかについてのドキュメントを改善するための新しいタイトルと同様に、さらなる改善を期待することができます。"
+msgstr "また、このリリースでは、設定例が最新で有効であることを確認するために、多くの維持管理を行いました。次のリリースでは、エンコーディングや Infinispan がどのように Protobuf を使用するかについてのドキュメントを改善するための新しいタイトルと同様に、さらなる改善を期待できます。"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:82
-#, fuzzy
 msgid "As always, thanks for reading and get in touch if you have comments, feedback, or suggestions on our documentation."
 msgstr "いつもお読みいただきありがとうございます。また、私たちのドキュメントに関するコメント、フィードバック、提案などがありましたら、ご連絡ください。"
 
 #. type: Title ==
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:83
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Release notes and upgrading"
 msgstr "リリースノートとアップグレード"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:87
-#, fuzzy
 msgid "You can look at the detailed https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12353337E[release notes] to see what has changed since CR1.  If you are upgrading from a previous version of Infinispan, please checkout our https://infinispan.org/docs/stable/titles/upgrading/upgrading.html[Upgrading guide]."
 msgstr "CR1からの変更点については、詳細な link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12353337E[リリースノート]をご覧ください。旧バージョンのInfinispanからアップグレードする場合は、 link:https://infinispan.org/docs/stable/titles/upgrading/upgrading.html[アップグレード・ガイド]をご確認ください。"
 
 #. type: Title ==
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:88
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "What's next ?"
-msgstr "What's next ?"
+msgstr "次は何？"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-05-infinispan-12.1.0.Final.adoc:90
-#, fuzzy
 msgid "Our next release, 13.0, should happen during the summer, and will hopefully introduce a new API which will make using Infinispan much easier, as well as a number of other improvements across the board. As usual, look out for blog postings about upcoming highlights. If you'd like to contribute, just get in touch."
 msgstr "次のリリースである13.0は夏頃に予定されており、Infinispanの使用をより簡単にする新しいAPIを導入するほか、全体的に多くの改良が加えられることを期待しています。いつものように、今後のハイライトについてのブログ投稿をお楽しみに。ご協力いただける方は、ぜひご連絡ください。"
