@@ -3,18 +3,18 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "POT-Creation-Date: 2021-02-11 23:24+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-04-12 17:17+0900\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.2\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-03-infinispan-11.0.1.Final.adoc:1
@@ -24,7 +24,7 @@ msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-03-infinispan-11.0.1.Final.adoc:8
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 11.0.1.Final\n"
@@ -44,69 +44,64 @@ msgstr ""
 
 #. type: Title =
 #: upstream/_posts/2020-07-03-infinispan-11.0.1.Final.adoc:10
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Infinispan 11.0.1.Final \"Corona Extra\""
 msgstr "Infinispan 11.0.1.Final \"Corona Extra\""
 
 #. type: Plain text
 #: upstream/_posts/2020-07-03-infinispan-11.0.1.Final.adoc:13
-#, fuzzy
 msgid "Dear Infinispan community,"
-msgstr "インフィニスパンのコミュニティへ"
+msgstr "親愛なるInfinispanコミュニティへ"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-03-infinispan-11.0.1.Final.adoc:16
-#, fuzzy
 msgid "we hope you've been enjoying all the new goodies included in our latest major release, Infinispan 11.  To show that we care about you, we have a brand new micro release for you which addresses a number of issues."
-msgstr "最新のメジャーリリースである Infinispan 11 に含まれるすべての新機能をお楽しみいただけましたでしょうか。私たちがお客様を大切にしていることを示すために、いくつかの問題を解決するための新しいマイクロリリースをご用意しました。"
+msgstr "最新のメジャーリリースである Infinispan 11 に含まれるすべての新機能をお楽しみいただけましたでしょうか。私たちがみなさんを大切にしていることを示すために、いくつかの問題を解決するための新しいマイクロリリースをご用意しました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-03-infinispan-11.0.1.Final.adoc:18
-#, fuzzy
 msgid "In particular, if you are using HTTP/2 with TLS/SSL, JCache with persistence, Spring Boot or RocksDB, we have fixes for you."
-msgstr "特に、TLS/SSLでHTTP/2を使用している場合、JCache with persistence、Spring Boot、またはRocksDBを使用している場合は、我々はあなたのための修正を用意しています。"
+msgstr "特に、TLS/SSLでHTTP/2を使用している場合、JCacheと永続化、Spring Boot、またはRocksDBを使用している場合は、我々はあなたのための修正を用意しています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-03-infinispan-11.0.1.Final.adoc:20
-#, fuzzy
 msgid "Additionally, the Infinispan Archetypes have been resurrected and are now being maintained as part of the main repository to ensure they won't fall out of sync anymore. Read more about how to link:/docs/stable/titles/getting_started/getting_started.html#mvn_archetypes[get started with a Maven archetype]."
-msgstr "さらに、Infinispan のアーキタイプは復活し、メインリポジトリの一部としてメンテナンスされており、これ以上同期が取れなくなることはありません。 link:/docs/stable/titles/getting_started/getting_started.html#mvn_archetypes[Mavenのアーキタイプを使い] 始める方法の詳細を読む。"
+msgstr "さらに、Infinispan のアーキタイプは復活し、メインリポジトリの一部としてメンテナンスされており、これ以上同期が取れなくなることはありません。 link:/docs/stable/titles/getting_started/getting_started.html#mvn_archetypes[Mavenのアーキタイプを使い始める] 方法の詳細を読んでください。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-03-infinispan-11.0.1.Final.adoc:22
-#, fuzzy
 msgid "The following list shows what we have fixed:"
 msgstr "以下のリストは、修正したものを示しています。"
 
 #. type: Title ==
 #: upstream/_posts/2020-07-03-infinispan-11.0.1.Final.adoc:23
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Component Upgrade"
-msgstr "コンポーネントのアップグレード"
+msgstr "構成要素のアップグレード"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-03-infinispan-11.0.1.Final.adoc:29
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "    https://issues.redhat.com/browse/ISPN-11843[ISPN-11843] - Upgrade SB starter to 2.3\n"
 "    https://issues.redhat.com/browse/ISPN-12009[ISPN-12009] - Upgrade Hibernate to latest micro\n"
 "    https://issues.redhat.com/browse/ISPN-12013[ISPN-12013] - Upgrade H2 database engine to 1.4.200\n"
 "    https://issues.redhat.com/browse/ISPN-12014[ISPN-12014] - Upgrade mojo-executor\n"
 msgstr ""
-"https://issues.redhat.com/browse/ISPN-11843[ISPN-11843] - SB スターターを 2.3 にアップグレードしました。\n"
-"https://issues.redhat.com/browse/ISPN-12009[ISPN-12009] - Hibernate を最新のマイクロにアップグレードしました。\n"
-"https://issues.redhat.com/browse/ISPN-12013[ISPN-12013] - H2 データベースエンジンを 1.4.200 にアップグレードしました。\n"
-"https://issues.redhat.com/browse/ISPN-12014[ISPN-12014] - mojo-execution のアップグレード"
+"    https://issues.redhat.com/browse/ISPN-11843[ISPN-11843] - SB スターターを 2.3 にアップグレード\n"
+"    https://issues.redhat.com/browse/ISPN-12009[ISPN-12009] - Hibernate を最新のマイクロにアップグレード\n"
+"    https://issues.redhat.com/browse/ISPN-12013[ISPN-12013] - H2 データベースエンジンを 1.4.200 にアップグレード\n"
+"    https://issues.redhat.com/browse/ISPN-12014[ISPN-12014] - mojo-execution のアップグレード\n"
 
 #. type: Title ==
 #: upstream/_posts/2020-07-03-infinispan-11.0.1.Final.adoc:30
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Enhancement"
-msgstr "エンハンスメント"
+msgstr "強化"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-03-infinispan-11.0.1.Final.adoc:51
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "    https://issues.redhat.com/browse/ISPN-11151[ISPN-11151] - Migrating some remote tests from jdg-functional-tests to upstream\n"
 "    https://issues.redhat.com/browse/ISPN-11549[ISPN-11549] - Move Infinispan SB starter simple tutorials to simple tutorials repository\n"
@@ -128,35 +123,35 @@ msgid ""
 "    https://issues.redhat.com/browse/ISPN-12065[ISPN-12065] - Add the anchored-keys module to the server\n"
 "    https://issues.redhat.com/browse/ISPN-12068[ISPN-12068] - HTTP/2 pipeline missing chunked handler\n"
 msgstr ""
-"https://issues.redhat.com/browse/ISPN-11151[ISPN-11151] - いくつかのリモートテストを jdg-functional-test からアップストリームに移行する\n"
-"https://issues.redhat.com/browse/ISPN-11549[ISPN-11549] - Infinispan SB スターターの簡易チュートリアルを簡易チュートリアルのリポジトリに移動しました。\n"
-"https://issues.redhat.com/browse/ISPN-11782[ISPN-11782] - Docs.クロスサイト監視\n"
-"https://issues.redhat.com/browse/ISPN-11828[ISPN-11828] - Docs.infinispan.org/documentation に安定したドキュメントを追加しました。\n"
-"https://issues.redhat.com/browse/ISPN-11913[ISPN-11913] - Docs.検索の追加とインデックスページの改善\n"
-"https://issues.redhat.com/browse/ISPN-11996[ISPN-11996] - テストコンテナ画像のメモリとメモリスワップのカスタマイズを許可する\n"
-"https://issues.redhat.com/browse/ISPN-12001[ISPN-12001] - 上流プロジェクトに jboss-parent を追加しました。\n"
-"https://issues.redhat.com/browse/ISPN-12006[ISPN-12006] - CLIによるアップロードスキーマのテスト\n"
-"https://issues.redhat.com/browse/ISPN-12007[ISPN-12007] - Elytron 1.12.1.1.Final\n"
-"https://issues.redhat.com/browse/ISPN-12010[ISPN-12010] - Apache Commons Codec の削除\n"
-"https://issues.redhat.com/browse/ISPN-12012[ISPN-12012] - すべての遷移依存関係において同じバージョンのGuavaを強制する\n"
-"https://issues.redhat.com/browse/ISPN-12021[ISPN-12021] - Docs.キャッシュのリモート作成\n"
-"https://issues.redhat.com/browse/ISPN-12039[ISPN-12039] - Docs: Hot Rod Per-Cache 簡易チュートリアル\n"
-"https://issues.redhat.com/browse/ISPN-12045[ISPN-12045] - jboss-marshalling の非推奨メッセージを明確にしました。\n"
-"https://issues.redhat.com/browse/ISPN-12047[ISPN-12047] - Async属性とSync Cross-Site属性をマージします。\n"
-"https://issues.redhat.com/browse/ISPN-12053[ISPN-12053] - REST testsuite から jetty-client を削除しました。\n"
-"https://issues.redhat.com/browse/ISPN-12059[ISPN-12059] - CliIT は外部モジュールの使用を許可します。\n"
-"https://issues.redhat.com/browse/ISPN-12065[ISPN-12065] - anchored-keysモジュールをサーバに追加します。\n"
-"https://issues.redhat.com/browse/ISPN-12068[ISPN-12068] - HTTP/2 パイプラインにチャンク化されたハンドラがありません。"
+"    https://issues.redhat.com/browse/ISPN-11151[ISPN-11151] - いくつかのリモートテストを jdg-functional-test からアップストリームに移行\n"
+"    https://issues.redhat.com/browse/ISPN-11549[ISPN-11549] - Infinispan SB スターターの簡易チュートリアルを簡易チュートリアルのリポジトリに移動\n"
+"    https://issues.redhat.com/browse/ISPN-11782[ISPN-11782] - Docs.拠点横断監視\n"
+"    https://issues.redhat.com/browse/ISPN-11828[ISPN-11828] - Docs.infinispan.org/documentation に安定版ドキュメントを追加\n"
+"    https://issues.redhat.com/browse/ISPN-11913[ISPN-11913] - Docs.検索の追加と索引ページの改善\n"
+"    https://issues.redhat.com/browse/ISPN-11996[ISPN-11996] - テストコンテナイメージのメモリとメモリスワップのカスタマイズを許可\n"
+"    https://issues.redhat.com/browse/ISPN-12001[ISPN-12001] - 上流プロジェクトに jboss-parent を追加\n"
+"    https://issues.redhat.com/browse/ISPN-12006[ISPN-12006] - CLIによるアップロードスキーマのテスト\n"
+"    https://issues.redhat.com/browse/ISPN-12007[ISPN-12007] - Elytron 1.12.1.1.Final\n"
+"    https://issues.redhat.com/browse/ISPN-12010[ISPN-12010] - Apache Commons Codec の削除\n"
+"    https://issues.redhat.com/browse/ISPN-12012[ISPN-12012] - すべての推移依存関係において同じバージョンのGuavaを強制\n"
+"    https://issues.redhat.com/browse/ISPN-12021[ISPN-12021] - Docs.キャッシュのリモート作成\n"
+"    https://issues.redhat.com/browse/ISPN-12039[ISPN-12039] - Docs: Hot Rod Per-Cache 簡易チュートリアル\n"
+"    https://issues.redhat.com/browse/ISPN-12045[ISPN-12045] - jboss-marshalling の非推奨メッセージを明確化\n"
+"    https://issues.redhat.com/browse/ISPN-12047[ISPN-12047] - 非同期と同期の拠点横断属性をマージ\n"
+"    https://issues.redhat.com/browse/ISPN-12053[ISPN-12053] - RESTテストスイートから jetty-client を削除\n"
+"    https://issues.redhat.com/browse/ISPN-12059[ISPN-12059] - CliIT は外部モジュールの使用を許可\n"
+"    https://issues.redhat.com/browse/ISPN-12065[ISPN-12065] - anchored-keysモジュールをサーバに追加\n"
+"    https://issues.redhat.com/browse/ISPN-12068[ISPN-12068] - HTTP/2 パイプラインにチャンク化されたハンドラが無い\n"
 
 #. type: Title ==
 #: upstream/_posts/2020-07-03-infinispan-11.0.1.Final.adoc:52
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Bug"
-msgstr "虫"
+msgstr "バグ"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-03-infinispan-11.0.1.Final.adoc:71
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "    https://issues.redhat.com/browse/ISPN-11998[ISPN-11998] - Eviction new and legacy attributes should stay in sync\n"
 "    https://issues.redhat.com/browse/ISPN-12017[ISPN-12017] - Explicitly disable the java8-test execution defined in the jboss-parent POM\n"
@@ -176,33 +171,33 @@ msgid ""
 "    https://issues.redhat.com/browse/ISPN-12067[ISPN-12067] - HTTP/2 framing error for invalid requests\n"
 "    https://issues.redhat.com/browse/ISPN-12069[ISPN-12069] - Unable to override the marshaller in SB starter\n"
 msgstr ""
-"https://issues.redhat.com/browse/ISPN-11998[ISPN-11998] - エビクションの新属性とレガシー属性は同期を維持する必要があります。\n"
-"https://issues.redhat.com/browse/ISPN-12017[ISPN-12017] - jboss-parent POM で定義されている java8-test の実行を明示的に無効にします。\n"
-"https://issues.redhat.com/browse/ISPN-12018[ISPN-12018] - JpaStoreCompatibilityTest の失敗を修正しました。\n"
-"https://issues.redhat.com/browse/ISPN-12019[ISPN-12019] - openssl の初期化を常に試みる\n"
-"https://issues.redhat.com/browse/ISPN-12026[ISPN-12026] - NodePort使用時に正しいIP:portを取得する\n"
-"https://issues.redhat.com/browse/ISPN-12027[ISPN-12027] - RemoteCacheContainer の getCache オーバーライドがありません。\n"
-"https://issues.redhat.com/browse/ISPN-12030[ISPN-12030] - BlockHound は JDK 13/14 でアクティブではありません。\n"
-"https://issues.redhat.com/browse/ISPN-12032[ISPN-12032] - JCacheキャッシュローダーはマーシャリングを必要としないはずです。\n"
-"https://issues.redhat.com/browse/ISPN-12038[ISPN-12038] - RocksDB 圧縮オプションが不完全で正しく適用されていません。\n"
-"https://issues.redhat.com/browse/ISPN-12043[ISPN-12043] - 共有ストアでは、(add|remove)Segmentsメソッドが呼び出されないようにしてください。\n"
-"https://issues.redhat.com/browse/ISPN-12046[ISPN-12046] - アウトオブボックスのサーバテストが壊れています。\n"
-"https://issues.redhat.com/browse/ISPN-12056[ISPN-12056] - SingleFileStore を削除しようとすると、いくつかのテストが Windows 上で失敗します。\n"
-"https://issues.redhat.com/browse/ISPN-12058[ISPN-12058] - wildfly/feature-pack モジュールがプロファイル java8-test でビルドしません。\n"
-"https://issues.redhat.com/browse/ISPN-12060[ISPN-12060] - WildFly モジュールの統合テストが WildFly 19 で動作しない\n"
-"https://issues.redhat.com/browse/ISPN-12064[ISPN-12064] - REST サーバが同じオリジンリクエストに対して 403 (forbidden) を返します。\n"
-"https://issues.redhat.com/browse/ISPN-12067[ISPN-12067] - 無効なリクエストに対する HTTP/2 フレーミングエラー\n"
-"https://issues.redhat.com/browse/ISPN-12069[ISPN-12069] - SB スターターでマーシャラーをオーバーライドできない。"
+"    https://issues.redhat.com/browse/ISPN-11998[ISPN-11998] - エビクションの新属性とレガシー属性は同期を維持する必要がある\n"
+"    https://issues.redhat.com/browse/ISPN-12017[ISPN-12017] - jboss-parent POM で定義されている java8-test の実行を明示的に無効化\n"
+"    https://issues.redhat.com/browse/ISPN-12018[ISPN-12018] - JpaStoreCompatibilityTest の失敗を修正\n"
+"    https://issues.redhat.com/browse/ISPN-12019[ISPN-12019] - openssl の初期化を常に試行\n"
+"    https://issues.redhat.com/browse/ISPN-12026[ISPN-12026] - NodePort使用時に正しいIP:portを取得\n"
+"    https://issues.redhat.com/browse/ISPN-12027[ISPN-12027] - RemoteCacheContainer の getCache オーバーライドがない\n"
+"    https://issues.redhat.com/browse/ISPN-12030[ISPN-12030] - BlockHound は JDK 13/14 でアクティブではない\n"
+"    https://issues.redhat.com/browse/ISPN-12032[ISPN-12032] - JCacheキャッシュローダーはマーシャリングを必要としないはず\n"
+"    https://issues.redhat.com/browse/ISPN-12038[ISPN-12038] - RocksDB 圧縮オプションが不完全で正しく適用されない\n"
+"    https://issues.redhat.com/browse/ISPN-12043[ISPN-12043] - 共有ストアでは、(add|remove)Segmentsメソッドが呼び出されないはず\n"
+"    https://issues.redhat.com/browse/ISPN-12046[ISPN-12046] - 直ぐに使えるサーバテストが壊れている\n"
+"    https://issues.redhat.com/browse/ISPN-12056[ISPN-12056] - SingleFileStore を削除しようとすると、いくつかのテストが Windows 上で失敗\n"
+"    https://issues.redhat.com/browse/ISPN-12058[ISPN-12058] - wildfly/feature-pack モジュールがプロファイル java8-test でビルドしない\n"
+"    https://issues.redhat.com/browse/ISPN-12060[ISPN-12060] - WildFly モジュールの統合テストが WildFly 19 で動作しない\n"
+"    https://issues.redhat.com/browse/ISPN-12064[ISPN-12064] - REST サーバが同じオリジンリクエストに対して 403 (forbidden) を返す\n"
+"    https://issues.redhat.com/browse/ISPN-12067[ISPN-12067] - 無効なリクエストに対する HTTP/2 フレーミングエラー\n"
+"    https://issues.redhat.com/browse/ISPN-12069[ISPN-12069] - SB スターターでマーシャラーをオーバーライドできない\n"
 
 #. type: Title ==
 #: upstream/_posts/2020-07-03-infinispan-11.0.1.Final.adoc:72
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Sub-task"
 msgstr "サブタスク"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-03-infinispan-11.0.1.Final.adoc:80
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "    https://issues.redhat.com/browse/ISPN-11953[ISPN-11953] - Create client archetype\n"
 "    https://issues.redhat.com/browse/ISPN-11954[ISPN-11954] - Move archetypes to Infinispan repository\n"
@@ -211,9 +206,9 @@ msgid ""
 "    https://issues.redhat.com/browse/ISPN-11957[ISPN-11957] - Upgrade embedded archetype to 11.0\n"
 "    https://issues.redhat.com/browse/ISPN-11958[ISPN-11958] - Document Archetypes\n"
 msgstr ""
-"https://issues.redhat.com/browse/ISPN-11953[ISPN-11953] - クライアントアーキタイプの作成\n"
-"https://issues.redhat.com/browse/ISPN-11954[ISPN-11954] - アーキタイプをInfinispanリポジトリに移動しました。\n"
-"https://issues.redhat.com/browse/ISPN-11955[ISPN-11955] - testcase-archetypeを削除しました。\n"
-"https://issues.redhat.com/browse/ISPN-11956[ISPN-11956] - 新しい NonBlockingStore SPI を使用するためにストア型をリワークします。\n"
-"https://issues.redhat.com/browse/ISPN-11957[ISPN-11957] - 組み込みアーキタイプを 11.0 にアップグレードする。\n"
-"https://issues.redhat.com/browse/ISPN-11958[ISPN-11958] - ドキュメントアーキタイプ"
+"    https://issues.redhat.com/browse/ISPN-11953[ISPN-11953] - クライアントアーキタイプの作成\n"
+"    https://issues.redhat.com/browse/ISPN-11954[ISPN-11954] - アーキタイプをInfinispanリポジトリに移動\n"
+"    https://issues.redhat.com/browse/ISPN-11955[ISPN-11955] - testcase-archetypeを削除\n"
+"    https://issues.redhat.com/browse/ISPN-11956[ISPN-11956] - 新しい NonBlockingStore SPI を使用するためにストア型を修正\n"
+"    https://issues.redhat.com/browse/ISPN-11957[ISPN-11957] - 組み込みアーキタイプを 11.0 にアップグレード\n"
+"    https://issues.redhat.com/browse/ISPN-11958[ISPN-11958] - ドキュメントアーキタイプ\n"
