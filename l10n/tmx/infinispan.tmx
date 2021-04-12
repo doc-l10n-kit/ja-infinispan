@@ -1431,6 +1431,68 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>layout: blog
+title: Infinispan 11.0.1.Final
+permalink: /blog/:year/:month/:day/infinispan-11
+date: '2020-07-03T12:00:00.000-00:00'
+author: ttarrant
+tags: [ "release" ]
+---
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>layout: blog
+title: Infinispan 11.0.1.Final
+permalink: /blog/:year/:month/:day/infinispan-11
+date: '2020-07-03T12:00:00.000-00:00'
+author: ttarrant
+tags: [ "release" ]
+---
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Infinispan 11.0.1.Final "Corona Extra"</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan 11.0.1.Final "Corona Extra"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>we hope you've been enjoying all the new goodies included in our latest major release, Infinispan 11.  To show that we care about you, we have a brand new micro release for you which addresses a number of issues.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>最新のメジャーリリースである Infinispan 11 に含まれるすべての新機能をお楽しみいただけましたでしょうか。私たちがみなさんを大切にしていることを示すために、いくつかの問題を解決するための新しいマイクロリリースをご用意しました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In particular, if you are using HTTP/2 with TLS/SSL, JCache with persistence, Spring Boot or RocksDB, we have fixes for you.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>特に、TLS/SSLでHTTP/2を使用している場合、JCacheと永続化、Spring Boot、またはRocksDBを使用している場合は、我々はあなたのための修正を用意しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Additionally, the Infinispan Archetypes have been resurrected and are now being maintained as part of the main repository to ensure they won't fall out of sync anymore. Read more about how to link:/docs/stable/titles/getting_started/getting_started.html#mvn_archetypes[get started with a Maven archetype].</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>さらに、Infinispan のアーキタイプは復活し、メインリポジトリの一部としてメンテナンスされており、これ以上同期が取れなくなることはありません。 link:/docs/stable/titles/getting_started/getting_started.html#mvn_archetypes[Mavenのアーキタイプを使い始める] 方法の詳細を読んでください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Sub-task</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>サブタスク</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Infinispan 12.0.0.Dev03</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
