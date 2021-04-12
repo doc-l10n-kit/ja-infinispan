@@ -1399,6 +1399,166 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Infinispan 12.0.0.Dev03</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan 12.0.0.Dev03</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Infinispan 12 development release 03 is here!</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan 12 開発リリース03はこちら！</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>With the new asynchronous cross-site replication algorithm introduced in Infinispan 11, this release brings a long desired feature: *conflict resolution*.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan 11で導入された新しい非同期拠点横断レプリケーションアルゴリズムにより、このリリースでは、長い間望まれていた機能である *競合の解決* が実現しました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>It is possible to configure a merge policy where, in case of conflict between updates of different sites, the value can be merged. Some predefined merge policies can be found https://docs.jboss.org/infinispan/12.0/apidocs/org/infinispan/xsite/spi/XSiteMergePolicy.html[here].</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>異なる拠点の更新が衝突した場合に、バリューをマージするマージ方針を設定できます。いくつかの定義済みマージ方針は、 link:https://docs.jboss.org/infinispan/12.0/apidocs/org/infinispan/xsite/spi/XSiteMergePolicy.html[ここで] 見つけられます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See the docs for more https://infinispan.org/docs/dev/titles/xsite/xsite.html#conflict_resolution-xsite[information about conflict resolution].</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>link:https://infinispan.org/docs/dev/titles/xsite/xsite.html#conflict_resolution-xsite[衝突解決についての情報] は、ドキュメントを参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Performance improvement</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>性能改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Another small improvement has been made to cross-site replication in this release.  When sites get requests targeting caches that don't exist or aren't started, sender sites stop retrying the requests, which takes the backup location offline.  Administrators must then bring the sites back online and perform state transfer to sync possible out-of-date data.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>このリリースでは、拠点横断レプリケーションにも小さな改良が加えられています。拠点が、存在しないまたは起動していないキャッシュをターゲットにしたリクエストを受け取ると、送信元の拠点はリクエストの再試行を停止し、バックアップ先をオフラインにします。管理者は、その後、拠点をオンラインに戻し、古いデータを同期させるために状態遷移を実行しなければなりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This version includes a new version of the web console, including mainly fixes, but also the ability to filter between Strong and Weak counters and to remove counters from the list.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>このバージョンでは、主に修正を含むWebコンソールの新バージョンが追加されていますが、StrongカウンターとWeakカウンターの間でフィルターをかけたり、カウンターをリストから削除したりする機能も追加されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Console: counters list</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>コンソール: カウンタリスト</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Console Counters Filter</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>コンソールカウンタフィルタ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Console: counters remove button</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>コンソール: カウンターはボタンを削除します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Console Counters Remove Button</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>コンソールカウンターはボタンを削除します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Console: counters remove modal</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>コンソール: カウンタはモーダルを削除します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Console Counters Remove Modal</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>コンソールカウンターは、モーダルを削除します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You can look at the https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12347011[release notes] to see what has changed.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>何が変わったのかは、 link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12347011[リリースノート] を見ればわかります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>https://infinispan.org/docs/dev/index.html[Our documentation has been updated] with some additional content as well as improvements for clarity and technical accuracy, notably:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>いくつかの追加コンテンツで link:https://infinispan.org/docs/dev/index.html[ドキュメントが更新]され 、特に分かりやすさと技術的な正確さを向上させています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Server Guide</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>サーバガイド</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Guide to Cross-Site Replication</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>拠点横断レプリケーションガイド</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Security Guide</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>セキュリティガイド</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Release notes</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>リリースノート</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>layout: experiments
 title: Experiments
 subtitle: Any open source project has an experimental side as part of its DNA. Infinispan goes a step further and experiments with academic and research projects.
