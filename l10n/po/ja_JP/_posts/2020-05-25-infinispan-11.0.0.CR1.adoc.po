@@ -3,28 +3,28 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "POT-Creation-Date: 2021-02-11 23:24+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-04-12 17:58+0900\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.2\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:1
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "---\n"
 msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:8
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 11.0.0.CR1\n"
@@ -35,7 +35,7 @@ msgid ""
 "---\n"
 msgstr ""
 "layout: blog\n"
-"title: Infinispan 11.0.0.0.CR1\n"
+"title: Infinispan 11.0.0.CR1\n"
 "permalink: /blog/:year/:month/:day/infinispan-11\n"
 "date: '2020-05-25T12:00:00.000-00:00'\n"
 "author: ttarrant\n"
@@ -44,45 +44,40 @@ msgstr ""
 
 #. type: Title =
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:10
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Infinispan 11.0.0.CR1"
-msgstr "Infinispan 11.0.0.0.CR1"
+msgstr "Infinispan 11.0.0.CR1"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:13
-#, fuzzy
 msgid "Dear Infinispan community,"
-msgstr "インフィニスパンのコミュニティへ"
+msgstr "親愛なるInfinispanのコミュニティへ"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:15
-#, fuzzy
 msgid "we've just released 11.0.0.CR1 which comes loaded with quite a few features and improvements."
-msgstr "11.0.0.0.CR1をリリースしたばかりですが、これにはいくつかの機能や改善点が搭載されています。"
+msgstr "11.0.0.CR1をリリースしたばかりですが、これにはいくつかの機能や改善点が搭載されています。"
 
 #. type: Title ==
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:16
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Cross-Site Replication Improvements"
-msgstr "クロスサイトレプリケーションの改善"
+msgstr "拠点横断レプリケーションの改善"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:19
-#, fuzzy
 msgid "The cross-site replication feature received two major improvements:"
-msgstr "クロスサイトレプリケーション機能には、2つの大きな改善点がありました。"
+msgstr "拠点横断レプリケーション機能には、2つの大きな改善点がありました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:21
-#, fuzzy
 msgid "Support for multiple site masters"
-msgstr "複数のサイトマスターをサポート"
+msgstr "複数の拠点マスターをサポート"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:23
-#, fuzzy
 msgid "The new algorithm is able to take advantage of multiple site masters, distributing load between them. If your environment is capable, increase the number of site masters in RELAY2 configuration:"
-msgstr "新しいアルゴリズムでは、複数のサイトマスターを活用し、それらの間で負荷を分散させることができます。環境が可能であれば、RELAY2の構成でサイトマスターの数を増やしてください。"
+msgstr "新しいアルゴリズムでは、複数の拠点マスターを活用し、それらの間で負荷を分散できます。環境が可能であれば、RELAY2の構成で拠点マスターの数を増やしてください。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:27
@@ -92,240 +87,211 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:30
-#, fuzzy
 msgid "Conflict detection and resolution for Asynchronous Cross-Site Replication"
-msgstr "非同期クロスサイトレプリケーションにおけるコンフリクトの検出と解決"
+msgstr "非同期拠点横断レプリケーションにおける衝突の検出と解決"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:36
-#, fuzzy
 msgid "Taking advantage of vector clocks, in asynchronous mode, Infinispan is able to detect conflicts.  A conflict happens when 2 or more sites update the same key at the same time.  Conflicts are resolved based on the site's names. Updates from the site lexicographically lower, take priority, in case of conflicts.  As an example, if you have 3 sites, LON, NYC and SFO, conflicts between LON and NYC discards updates from NYC and keeps the updates from LON.  You can choose the priority by prepending a number to the site name. For example, if you want updates from NYC to take priority, you can set the site name to “1-NYC”."
-msgstr "ベクトルクロックを利用して、非同期モードでは、Infinispanはコンフリクトを検出することができます。コンフリクトは、2つ以上のサイトが同時に同じキーを更新した場合に発生します。競合はサイト名に基づいて解決されます。競合が発生した場合は、辞書的に下位のサイトからの更新が優先されます。例えば、LON, NYC, SFOの3つのサイトがある場合、LONとNYCが競合した場合、NYCからの更新は破棄され、LONからの更新は保持されます。サイト名の前に数字を付加することで、優先度を選択することができます。例えば、NYCからの更新を優先したい場合は、サイト名を「1-NYC」に設定します。"
+msgstr "ベクトルクロックを利用して、非同期モードでは、Infinispanは衝突を検出できます。衝突は、2つ以上の拠点が同時に同じキーを更新した場合に発生します。競合は拠点名に基づいて解決されます。競合が発生した場合は、辞書的に下位のサイトからの更新が優先されます。例えば、LON（ロンドン）, NYC（ニューヨーク）, SFO（サンフランシスコ）の3つの拠点がある場合、LONとNYCが競合した場合、NYCからの更新は破棄され、LONからの更新は保持されます。拠点名の前に数字を付加することで、優先度を選択できます。例えば、NYCからの更新を優先したい場合は、拠点名を「1-NYC」に設定します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:38
-#, fuzzy
 msgid "In a future update, Infinispan will allow you to set a custom conflict resolution algorithm."
 msgstr "将来のアップデートでは、Infinispanでカスタムの競合解決アルゴリズムを設定できるようになります。"
 
 #. type: Title ==
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:39
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Non-blocking internals"
-msgstr "ノンブロッキング内部"
+msgstr "ノンブロッキングの内部"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:41
-#, fuzzy
 msgid "All thread pools collapsed into two pools: blocking and non-blocking"
-msgstr "すべてのスレッドプールは、ブロッキングとノンブロッキングの2つのプールに崩壊しました。"
+msgstr "すべてのスレッドプールは、ブロッキングとノンブロッキングの2つのプールと化しました。"
 
 #. type: Title ==
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:42
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Persistence"
 msgstr "永続性"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:44
-#, fuzzy
 msgid "A new non-blocking Store SPI"
 msgstr "新しいノンブロッキングストアSPI"
 
 #. type: Title ==
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:45
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Clustering"
 msgstr "クラスタリング"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:47
-#, fuzzy
 msgid "More accurate segment rebalancing"
 msgstr "より正確なセグメントリバランス"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:48
-#, fuzzy
 msgid "Scaling without state-transfer (experimental)"
 msgstr "状態遷移を伴わないスケーリング(実験)"
 
 #. type: Title ==
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:49
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Query/Indexing"
-msgstr "クエリ/インデックス"
+msgstr "問い合せ/索引"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:51
-#, fuzzy
 msgid "SearchManager, CacheQuery are deprecated. Users are encouraged to migrate to Ickle String queries obtained from Search.getQueryFactory"
-msgstr "SearchManager、CacheQuery は非推奨です。ユーザーは、Search.getQueryFactory から取得した Ickle String クエリに移行することをお勧めします。"
+msgstr "SearchManager、CacheQuery は非推奨です。ユーザは、Search.getQueryFactory から取得した Ickle String 問い合せに移行することをお勧めします。"
 
 #. type: Title ==
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:52
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Server Security"
 msgstr "サーバーのセキュリティ"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:54
-#, fuzzy
 msgid "The server is now secure by default"
 msgstr "サーバがデフォルトで安全になりました"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:55
-#, fuzzy
 msgid "New encrypted properties realm"
-msgstr "新しい暗号化されたプロパティの領域"
+msgstr "新しい暗号化されたプロパティのレルム"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:56
-#, fuzzy
 msgid "Simplified authentication and authorization configuration to be as automatic as possible"
 msgstr "認証と認可の設定を簡素化し、可能な限り自動化を実現"
 
 #. type: Title ==
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:57
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Other Server changes"
 msgstr "その他サーバーの変更"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:59
-#, fuzzy
 msgid "Datasources"
 msgstr "データソース"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:60
-#, fuzzy
 msgid "Runtime logging configuration"
 msgstr "ランタイムロギングの設定"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:61
-#, fuzzy
 msgid "Server report"
 msgstr "サーバーレポート"
 
 #. type: Title ==
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:62
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "CLI"
 msgstr "CLI"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:64
-#, fuzzy
 msgid "User Tool merged into CLI"
 msgstr "ユーザツールをCLIに統合"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:65
-#, fuzzy
 msgid "CLI can be compiled natively"
 msgstr "CLIをネイティブでコンパイルできる"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:66
-#, fuzzy
 msgid "Non-interactive usage"
-msgstr "非インタラクティブな使用法"
+msgstr "非対話式な使用法"
 
 #. type: Title ==
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:67
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Console"
 msgstr "コンソール"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:69
-#, fuzzy
 msgid "Lots of UX improvements"
 msgstr "多くのUX改善"
 
 #. type: Title ==
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:70
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Kubernetes/OpenShift operator"
 msgstr "Kubernetes/OpenShiftオペレータ"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:72
-#, fuzzy
 msgid "Cache CR"
 msgstr "キャッシュ CR"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:73
-#, fuzzy
 msgid "Service .Expose with Ingress and Route"
-msgstr "サービス .Expose with Ingress and Route"
+msgstr "IngressとRouteを使ったサービスの公開"
 
 #. type: Title ==
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:74
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Container images"
 msgstr "コンテナイメージ"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:76
-#, fuzzy
 msgid "Images based upon ubi-minimal:8.2"
-msgstr "ubi-minimal:8.2に基づく画像"
+msgstr "ubi-minimal:8.2に基づくイメージ"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:77
-#, fuzzy
 msgid "Native generation of config files in all images"
 msgstr "すべてのイメージで設定ファイルをネイティブに生成"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:78
-#, fuzzy
 msgid "Native server image available at `infinispan/server-native` (Experimental)"
-msgstr "ネイティブサーバイメージは `infinispan/server-native` で利用可能 (Experimental)"
+msgstr "ネイティブサーバイメージは `infinispan/server-native` で利用可能 (実験)"
 
 #. type: Title ==
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:79
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Documentation"
 msgstr "ドキュメント"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:81
-#, fuzzy
 msgid "Added procedural content for rolling upgrades, Cache CR with the Operator, server patching, misc CLI commands, using RemoteCacheConfigurationBuilder."
-msgstr "RemoteCacheConfigurationBuilder を使用した、ローリング・アップグレード、オペレータとの Cache CR、サーバのパッチ適用、その他 CLI コマンドの手続き的なコンテンツが追加されました。"
+msgstr "RemoteCacheConfigurationBuilder を使用した、ローリング・アップグレードの手続き的なコンテンツ、オペレータとの Cache CR、サーバのパッチ適用、その他 CLI コマンドが追加されました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:82
-#, fuzzy
 msgid "Procedural content for different upgrade and migration tasks included in Upgrade Guide."
-msgstr "アップグレードガイドに含まれるさまざまなアップグレードおよび移行作業のための手続き内容"
+msgstr "アップグレードガイドに含まれるさまざまなアップグレードおよび移行作業のための手続き内容です。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:83
-#, fuzzy
 msgid "Operator and Spring Boot Starter guides now provide stable and development versions from the index page."
-msgstr "OperatorとSpring Boot Starterガイドでは、インデックスページから安定版と開発版を提供するようになりました。"
+msgstr "オペレータとSpring Boot Starterガイドでは、索引ページから安定版と開発版を提供するようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:84
-#, fuzzy
 msgid "Updated index.html and throughout documentation to improve high-level context and aid retrievability."
 msgstr "index.htmlとドキュメント全体を更新し、高レベルのコンテキストと検索性を向上させました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:85
-#, fuzzy
 msgid "Getting Started content updated and streamlined."
-msgstr "はじめに コンテンツが更新され、合理化されました。"
+msgstr "入門のコンテンツが更新され、合理化されました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-25-infinispan-11.0.0.CR1.adoc:86
-#, fuzzy
 msgid "Applied several modifications, additions, and removals to documentation via community feedback."
-msgstr "コミュニティのフィードバックを介して、いくつかの変更、追加、削除を文書に適用しました。"
+msgstr "コミュニティのフィードバックを介して、いくつかの変更、追加、削除をドキュメントに適用しました。"
