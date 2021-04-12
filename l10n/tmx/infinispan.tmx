@@ -1493,6 +1493,340 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>layout: blog
+title: Infinispan 11.0.0.CR1
+permalink: /blog/:year/:month/:day/infinispan-11
+date: '2020-05-25T12:00:00.000-00:00'
+author: ttarrant
+tags: [ "release" ]
+---
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>layout: blog
+title: Infinispan 11.0.0.CR1
+permalink: /blog/:year/:month/:day/infinispan-11
+date: '2020-05-25T12:00:00.000-00:00'
+author: ttarrant
+tags: [ "release" ]
+---
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Infinispan 11.0.0.CR1</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan 11.0.0.CR1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>we've just released 11.0.0.CR1 which comes loaded with quite a few features and improvements.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>11.0.0.CR1をリリースしたばかりですが、これにはいくつかの機能や改善点が搭載されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Cross-Site Replication Improvements</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>拠点横断レプリケーションの改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The cross-site replication feature received two major improvements:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>拠点横断レプリケーション機能には、2つの大きな改善点がありました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Support for multiple site masters</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>複数の拠点マスターをサポート</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The new algorithm is able to take advantage of multiple site masters, distributing load between them. If your environment is capable, increase the number of site masters in RELAY2 configuration:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>新しいアルゴリズムでは、複数の拠点マスターを活用し、それらの間で負荷を分散できます。環境が可能であれば、RELAY2の構成で拠点マスターの数を増やしてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Conflict detection and resolution for Asynchronous Cross-Site Replication</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>非同期拠点横断レプリケーションにおける衝突の検出と解決</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Taking advantage of vector clocks, in asynchronous mode, Infinispan is able to detect conflicts.  A conflict happens when 2 or more sites update the same key at the same time.  Conflicts are resolved based on the site's names. Updates from the site lexicographically lower, take priority, in case of conflicts.  As an example, if you have 3 sites, LON, NYC and SFO, conflicts between LON and NYC discards updates from NYC and keeps the updates from LON.  You can choose the priority by prepending a number to the site name. For example, if you want updates from NYC to take priority, you can set the site name to “1-NYC”.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ベクトルクロックを利用して、非同期モードでは、Infinispanは衝突を検出できます。衝突は、2つ以上の拠点が同時に同じキーを更新した場合に発生します。競合は拠点名に基づいて解決されます。競合が発生した場合は、辞書的に下位のサイトからの更新が優先されます。例えば、LON（ロンドン）, NYC（ニューヨーク）, SFO（サンフランシスコ）の3つの拠点がある場合、LONとNYCが競合した場合、NYCからの更新は破棄され、LONからの更新は保持されます。拠点名の前に数字を付加することで、優先度を選択できます。例えば、NYCからの更新を優先したい場合は、拠点名を「1-NYC」に設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In a future update, Infinispan will allow you to set a custom conflict resolution algorithm.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>将来のアップデートでは、Infinispanでカスタムの競合解決アルゴリズムを設定できるようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Non-blocking internals</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ノンブロッキングの内部</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>All thread pools collapsed into two pools: blocking and non-blocking</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>すべてのスレッドプールは、ブロッキングとノンブロッキングの2つのプールと化しました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Persistence</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>永続性</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A new non-blocking Store SPI</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>新しいノンブロッキングストアSPI</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Clustering</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>クラスタリング</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>More accurate segment rebalancing</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>より正確なセグメントリバランス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Scaling without state-transfer (experimental)</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>状態遷移を伴わないスケーリング(実験)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Query/Indexing</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>問い合せ/索引</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>SearchManager, CacheQuery are deprecated. Users are encouraged to migrate to Ickle String queries obtained from Search.getQueryFactory</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>SearchManager、CacheQuery は非推奨です。ユーザは、Search.getQueryFactory から取得した Ickle String 問い合せに移行することをお勧めします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Server Security</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>サーバーのセキュリティ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The server is now secure by default</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>サーバがデフォルトで安全になりました</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>New encrypted properties realm</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>新しい暗号化されたプロパティのレルム</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Simplified authentication and authorization configuration to be as automatic as possible</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>認証と認可の設定を簡素化し、可能な限り自動化を実現</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Other Server changes</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>その他サーバーの変更</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Datasources</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>データソース</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Runtime logging configuration</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ランタイムロギングの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>User Tool merged into CLI</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ユーザツールをCLIに統合</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Non-interactive usage</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>非対話式な使用法</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Lots of UX improvements</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>多くのUX改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Cache CR</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>キャッシュ CR</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Container images</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>コンテナイメージ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Images based upon ubi-minimal:8.2</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ubi-minimal:8.2に基づくイメージ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Native generation of config files in all images</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>すべてのイメージで設定ファイルをネイティブに生成</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Native server image available at `infinispan/server-native` (Experimental)</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ネイティブサーバイメージは `infinispan/server-native` で利用可能 (実験)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Added procedural content for rolling upgrades, Cache CR with the Operator, server patching, misc CLI commands, using RemoteCacheConfigurationBuilder.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>RemoteCacheConfigurationBuilder を使用した、ローリング・アップグレードの手続き的なコンテンツ、オペレータとの Cache CR、サーバのパッチ適用、その他 CLI コマンドが追加されました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Procedural content for different upgrade and migration tasks included in Upgrade Guide.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>アップグレードガイドに含まれるさまざまなアップグレードおよび移行作業のための手続き内容です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Operator and Spring Boot Starter guides now provide stable and development versions from the index page.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>オペレータとSpring Boot Starterガイドでは、索引ページから安定版と開発版を提供するようになりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Updated index.html and throughout documentation to improve high-level context and aid retrievability.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>index.htmlとドキュメント全体を更新し、高レベルのコンテキストと検索性を向上させました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Getting Started content updated and streamlined.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>入門のコンテンツが更新され、合理化されました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Applied several modifications, additions, and removals to documentation via community feedback.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>コミュニティのフィードバックを介して、いくつかの変更、追加、削除をドキュメントに適用しました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Infinispan 12.0.0.Dev03</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
