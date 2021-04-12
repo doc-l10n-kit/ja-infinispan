@@ -1297,6 +1297,38 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Infinispan 12.0.0.Dev01</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan 12.0.0.Dev01</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The first of our development releases of Infinispan 12 is here and it features our upgrade to https://hibernate.org/search/[Hibernate Search 6] which finally allows us to upgrade to https://lucene.apache.org/[Lucene 8.x]. We've had to change a few things in our query implementation to accommodate the latest and greatest and to make the feature simpler to use. As expected, being a development release, there are some rough edges and we'd really love *YOUR* help in making sure that we get everything right for the final release later this year.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan 12 の開発リリースの第一弾はこちらで、 link:https://hibernate.org/search/[Hibernate Search 6] へのアップグレードを行い、ついに link:https://lucene.apache.org/[Lucene 8.x] へのアップグレードが可能になりました。最新の機能に対応し、よりシンプルに使えるようにするために、問い合せの実装をいくつか変更しなければなりませんでした。予想通り、開発リリースであるため、いくつかの荒削りな部分がありますが、 今年後半の最終リリースに向けて、すべてを正しい状態にできるようにするために、 *皆様の* ご協力をお待ちしています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You can look at the https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12346555[release notes] to see what has changed.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>何が変わったのかは、 link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12346555[リリースノート] を見ればわかります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>We're hard at work on new features, improvements and fixes, so watch this space for more announcements!</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>私たちは新機能、改善、修正に取り組んでいます。今後の発表を楽しみにしていてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>layout: blog
 title: Infinispan 12.0.1.Final
 permalink: /blog/:year/:month/:day/infinispan-12-0-1
