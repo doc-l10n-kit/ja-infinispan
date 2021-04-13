@@ -1494,6 +1494,332 @@ tags: [ "release" ]
     <tu>
       <tuv xml:lang="en">
         <seg>layout: blog
+title: Infinispan 11.0.0.Final
+permalink: /blog/:year/:month/:day/infinispan-11
+date: '2020-06-15T12:00:00.000-00:00'
+author: ttarrant
+tags: [ "release" ]
+---
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>layout: blog
+title: Infinispan 11.0.0.Final
+permalink: /blog/:year/:month/:day/infinispan-11
+date: '2020-06-15T12:00:00.000-00:00'
+author: ttarrant
+tags: [ "release" ]
+---
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Infinispan 11.0.0.Final "Corona Extra"</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan 11.0.0.Final "Corona Extra"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>We're proud to announce the release of Infinispan 11. In the tradition of assigning beer codenames to our releases, we decided that "Corona Extra" would be a significant representation of the period during which most of the development has happened.  We hope that you, your families and friends have not been impacted by the pandemic.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan 11のリリースを発表できることを誇りに思います。私たちのリリースにビールのコードネームを付けるという伝統の中で、「コロナ・エクストラ」は、開発のほとんどが行われた期間を象徴するものであると判断しました。皆様、ご家族、ご友人の皆様がパンデミックの影響を受けていないことを願っています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>But didn't you release 10.x not long ago ?</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>しかし、10.xは少し前にリリースされていませんでしたか？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Indeed, but version numbers are just that: numbers. We are still continuing our near-quarterly releases, but, from now on, these will be identified by major version numbers.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>確かにそうですが、バージョン番号はあくまでも番号です。私たちはまだ四半期ごとのリリースを続けていますが、今後はメジャーバージョン番号で識別されるようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>So, what's new in Infinispan 11 ?</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan 11の新機能は？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>As usual we added new features, improved existing ones and prepared the groundwork for upcoming features.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>いつものように、新しい機能を追加し、既存の機能を改善し、今後の機能のための下地を準備しました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Conflict detection and resolution for Asynchronous Cross-Site Replication</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>非同期拠点横断レプリケーションにおける衝突の検出と解決</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Cross-site replication is one of our most used features, as it enables a number of very useful use-cases such as geographical load distribution, zero-downtime disaster recovery and follow-the-sun data centers.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>拠点横断レプリケーションは、地理的な負荷分散、ゼロダウンタイムの災害復旧、地理的に分散して24時間体制のデータセンタなど、多くの有用なユースケースを可能にするため、当社で最も利用されている機能の1つです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In this release we completely overhauled the way we implement asynchronous cross-site replication by introducing conflict resolution, based on vector clocks, as well as multiple site masters to increase throughput and reliability.  This means that you can have multiple active sites safely replicating data between each other.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>このリリースでは、処理性能と信頼性を向上させるために、複数の拠点マスタと同様に、ベクトルクロックに基づく競合解決を導入することで、非同期拠点横断レプリケーションの実装方法を完全に整備しました。これにより、複数のアクティブな拠点がお互いの間で安全にデータを複製できるようになりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Server security overhaul</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>サーバセキュリティの整備</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Infinispan Server's security, while very powerful, was also tricky to set up because of the configuration complexity.  Since we wanted to make the link:/blog/2020/06/04/server-secure-by-default/[server secure by default], we put a lot of work in simplifying the configuration and removing all of the boilerplate.  Additionally, if you are securing the server with https://keycloak.org[Keycloak], accessing the console will correctly obtain credentials through the realm login page.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispanサーバのセキュリティは非常に強力ですが、設定が複雑なため、設定するのが厄介でした。 link:/blog/2020/06/04/server-secure-by-default/[デフォルトでサーバをセキュア] にしたかったので、設定を単純化し、すべての決まり文句を削除することに多くの労力を費やしました。さらに、 link:https://keycloak.org[Keycloak] でサーバを保護している場合、コンソールにアクセスすると、レルムのログインページから認証情報を正しく取得できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Non-blocking internals</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ノンブロッキングの内部</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Our quest to make better use of the available hardware resources in all deployment models (bare-metal, containerized, virtualized) continues as we've now consolidated a lot of thread-pools into just two: non-blocking and blocking.  Most of the code now makes use of the non-blocking pool. Paths which may block, such as certain persistent stores, use the blocking pool so that they don't hold up work that may be processed without blocking.  This release also includes a new non-blocking Store SPI, so that you can take advantage of stores with real non-blocking I/O.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>すべてのデプロイメントモデル（ベアメタル、コンテナ化、仮想化）で利用可能なハードウェアリソースをよりよく利用するための探求は続いており、多くのスレッドプールをノンブロッキングとブロッキングの 2 つに統合しました。現在、ほとんどのコードはノンブロッキングプールを使用しています。特定の永続的なストアなど、ブロックされる可能性のあるパスは、ブロッキングなしで処理される可能性のある作業を保持しないように、ブロッキングプールを使用します。このリリースには新しいノンブロッキングストア SPI も含まれており、実際のノンブロッキング I/O でストアを利用できるようになっています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Clustering</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>クラスタリング</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>As Infinispan is participating in https://cloudbutton.eu/[CloudButton], a Serverless Data Analytics Platform which is part of the https://ec.europa.eu/programmes/horizon2020/[European Union's Horizon 2020 research and innovation programme], we have introduced a new optional feature which allows scaling by adding new nodes to a cluster without state-transfer. This means that you can add capacity with zero-impact to your operations. Obviously this comes at the cost of reduced resilience in case of failures, but, for scenarios where high availability is not required, this gives you a highly scalable in-memory storage solution.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispanは、 link:https://ec.europa.eu/programmes/horizon2020/[欧州連合（EU）の研究・イノベーションプログラムHorizon 2020] 」の一環であるサーバレスデータ分析プラットフォーム link:https://cloudbutton.eu/[CloudButton] 」に参加していることから、状態遷移なしに新しいノードをクラスタに追加して拡張をを可能にするオプション機能を新たに導入しました。これは、運用への影響をゼロにして容量を追加できることを意味します。明らかに、これは障害が発生した場合の回復力を低下させるという代償を伴いますが、高可用性を必要としないシナリオでは、拡張性の高いインメモリ・ストレージ・ソリューションを提供します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If high availability is your thing, the rebalancing algorithm which decides how segments (our subdivision of the data space) are mapped to nodes has been overhauled to be much more accurate and fairer.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>高可用性がお望みなら、セグメント（データ空間の細分化）がどのようにノードにマップされるかを決定する再配置アルゴリズムが、より正確で公平なものになるように見直されました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Query/Indexing</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>問い合わせ/索引</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Querying and indexing will be the major focus in Infinispan 12 (with the long awaited upgrade to https://hibernate.org/search/[Hibernate Search 6] and https://lucene.apache.org/[Lucene 8]).  In preparation for that, *a lot* of work has gone into deprecations, usability, clean ups and documentation.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>問い合わせと索引作成は Infinispan 12 の主要な焦点となるでしょう ( link:https://hibernate.org/search/[Hibernate Search 6] と link:https://lucene.apache.org/[Lucene 8] への待望のアップグレードもあります)。その準備として、非推奨、扱いやすさ、手入れ、文書化に *多くの* 作業が行われました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Many usability changes have been added to our Java Hot Rod client:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Java Hot Rodクライアントに多くの使い勝手の変更が追加されました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>a Hot Rod URI as a compact way to configure a connection</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>接続を設定するためのコンパクトな方法としての Hot Rod URI</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>automatic creation of caches on demand using supplied configurations/templates with support for wildcards</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ワイルドカードに対応した設定/テンプレートを使用して、要求に応じてキャッシュを自動生成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>improved iteration of entries by concurrently splitting work across segments/nodes</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>セグメント/ノード間で作業を並行して分割することで、要素の反復処理が改善されました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Other Server changes</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>その他サーバーの変更</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If you are using the JDBC cache store to persist your cache entries to a database, Infinispan Server now restores the ability to create shared datasources which was lost when we abandoned the WildFly base.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>JDBC キャッシュストアを使用してキャッシュ要素をデータベースに永続化する場合、Infinispanサーバは WildFly ベースを取り除いたときに失われた共有データソースを作成する機能を復元します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The CLI received a number of new features such as logging manipulation, obtaining sever reports and user management, superseding the `user-tool` script.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>CLIには、ログ操作、サーバレポートの取得、ユーザー管理、 `user-tool` スクリプトの上書きなど、多くの新機能が導入されました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Our console overhaul, which started in 10, continues with lots of new features, integrations and polishing.  Highlights are:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>10年前にスタートしたコンソールは、多くの新機能、統合、洗練を続けています。ハイライトは以下の通りです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Clouds, containers and operators</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>クラウド、コンテナ、オペレータ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Our Infinispan Server image is now based on `ubi-minimal:8.2`.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan サーバーイメージは `ubi-minimal:8.2` に基づいています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>And thanks to our friends over at https://quarkus.io[Quarkus], Infinispan Server is now also available as a native image built using https://graalvm.org[GraalVM]. This image is available on Quay.io and Docker Hub.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>そして、 link:https://quarkus.io[Quarkus] という友人のおかげで、Infinispanサーバは link:https://graalvm.org[GraalVMを] 使ってビルドされたネイティブイメージとしても利用できるようになりました。このイメージはQuay.ioとDocker Hubで利用可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The Kubernetes Operator adds a new Cache Custom Resource and the ability to expose services via Ingress and Routes.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Kubernetesオペレータでは、新しいCache Custom ResourceとIngressとRoutes経由でサービスを公開する機能が追加されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Documentation has also received a lot of love in all areas:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ドキュメンテーションもすべての分野で多くの愛を受けています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Added procedural content for rolling upgrades, Cache CR with the Operator, server patching, misc CLI commands, using RemoteCacheConfigurationBuilder.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>RemoteCacheConfigurationBuilder を使用した、ローリング・アップグレードの手続き的なコンテンツ、オペレータとの Cache CR、サーバのパッチ適用、その他 CLI コマンドが追加されました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Procedural content for different upgrade and migration tasks included in Upgrade Guide.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>アップグレードガイドに含まれるさまざまなアップグレードおよび移行作業のための手続き内容です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Operator and Spring Boot Starter guides now provide stable and development versions from the index page.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>オペレータとSpring Boot Starterガイドでは、索引ページから安定版と開発版を提供するようになりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Updated index.html and throughout documentation to improve high-level context and aid retrievability.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>index.htmlとドキュメント全体を更新し、高レベルのコンテキストと検索性を向上させました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Getting Started content updated and streamlined.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>入門のコンテンツが更新され、合理化されました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Applied several modifications, additions, and removals to documentation via community feedback.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>コミュニティのフィードバックを介して、いくつかの変更、追加、削除をドキュメントに適用しました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>As briefly mentioned above, Infinispan 12 will be our next release, scheduled for this autumn. We will be working on query/index improvements, backup/restore capabilities as well as the usual load of improvements, clean-ups across the board. We will keep you posted with development release and blogs about upcoming highlights. If you'd like to contribute, just get in touch.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>上記で簡単に述べたように、Infinispan 12 は、この秋に予定されている次のリリースとなります。問い合わせ/索引の改善、バックアップ/リストア機能、さらには通常の改善や手入れにも取り組んでいく予定です。今後のハイライトについては、開発リリースやブログでお知らせしていきます。貢献したい方は、ご連絡ください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>layout: blog
 title: Infinispan 11.0.0.CR1
 permalink: /blog/:year/:month/:day/infinispan-11
 date: '2020-05-25T12:00:00.000-00:00'
@@ -1563,14 +1889,6 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Conflict detection and resolution for Asynchronous Cross-Site Replication</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>非同期拠点横断レプリケーションにおける衝突の検出と解決</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Taking advantage of vector clocks, in asynchronous mode, Infinispan is able to detect conflicts.  A conflict happens when 2 or more sites update the same key at the same time.  Conflicts are resolved based on the site's names. Updates from the site lexicographically lower, take priority, in case of conflicts.  As an example, if you have 3 sites, LON, NYC and SFO, conflicts between LON and NYC discards updates from NYC and keeps the updates from LON.  You can choose the priority by prepending a number to the site name. For example, if you want updates from NYC to take priority, you can set the site name to “1-NYC”.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
@@ -1583,14 +1901,6 @@ tags: [ "release" ]
       </tuv>
       <tuv xml:lang="ja_JP">
         <seg>将来のアップデートでは、Infinispanでカスタムの競合解決アルゴリズムを設定できるようになります。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Non-blocking internals</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>ノンブロッキングの内部</seg>
       </tuv>
     </tu>
     <tu>
@@ -1619,14 +1929,6 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Clustering</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>クラスタリング</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>More accurate segment rebalancing</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
@@ -1639,14 +1941,6 @@ tags: [ "release" ]
       </tuv>
       <tuv xml:lang="ja_JP">
         <seg>状態遷移を伴わないスケーリング(実験)</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Query/Indexing</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>問い合せ/索引</seg>
       </tuv>
     </tu>
     <tu>
@@ -1687,14 +1981,6 @@ tags: [ "release" ]
       </tuv>
       <tuv xml:lang="ja_JP">
         <seg>認証と認可の設定を簡素化し、可能な限り自動化を実現</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Other Server changes</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>その他サーバーの変更</seg>
       </tuv>
     </tu>
     <tu>
@@ -1775,54 +2061,6 @@ tags: [ "release" ]
       </tuv>
       <tuv xml:lang="ja_JP">
         <seg>ネイティブサーバイメージは `infinispan/server-native` で利用可能 (実験)</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Added procedural content for rolling upgrades, Cache CR with the Operator, server patching, misc CLI commands, using RemoteCacheConfigurationBuilder.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>RemoteCacheConfigurationBuilder を使用した、ローリング・アップグレードの手続き的なコンテンツ、オペレータとの Cache CR、サーバのパッチ適用、その他 CLI コマンドが追加されました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Procedural content for different upgrade and migration tasks included in Upgrade Guide.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>アップグレードガイドに含まれるさまざまなアップグレードおよび移行作業のための手続き内容です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Operator and Spring Boot Starter guides now provide stable and development versions from the index page.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>オペレータとSpring Boot Starterガイドでは、索引ページから安定版と開発版を提供するようになりました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Updated index.html and throughout documentation to improve high-level context and aid retrievability.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>index.htmlとドキュメント全体を更新し、高レベルのコンテキストと検索性を向上させました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Getting Started content updated and streamlined.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>入門のコンテンツが更新され、合理化されました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Applied several modifications, additions, and removals to documentation via community feedback.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>コミュニティのフィードバックを介して、いくつかの変更、追加、削除をドキュメントに適用しました。</seg>
       </tuv>
     </tu>
     <tu>
