@@ -1493,6 +1493,94 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>If you are wondering how to start with Infinispan Server from your Java Application, a new https://infinispan.org/infinispan-server-tutorial/[Tutorial] is available.  This tutorial covers the essentials to get started with Infinispan Server and takes around half an hour to complete.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>JavaアプリケーションからInfinispanサーバを起動する方法を知りたい場合は、新しい link:https://infinispan.org/infinispan-server-tutorial/[チュートリアル] をご利用ください。このチュートリアルでは、Infinispanサーバを使い始めるための基本的なことを説明しており、30分程度で完了します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In this tutorial you will learn how to:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>このチュートリアルでは、以下の方法を学びます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Run Infinispan Server.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispanサーバを実行します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Access and use the Infinispan Console.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispanコンソールにアクセスして使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Create Infinispan caches.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispanのキャッシュを作成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Read and write data as primitive types and Java objects.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>プリミティブ型やJavaオブジェクトとしてデータを読み書きする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Add lifespans to entries so data expires.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>データの有効期限が切れるように、エントリに寿命を追加します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Deploy client listeners to get event notifications.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>イベント通知を取得するためのクライアントリスナを配置します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Search the data store for specific values.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>データストアで特定のバリューを検索します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Use out-of-the-box testing with Junit 5 for verification.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>検証にはJunit 5で直ぐに使えるテストを使用してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Complete the tutorial, ask us anything about it, give us feedback and feel free to share it!</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>チュートリアルを完成させて、私たちに何か質問をしたり、フィードバックをしたり、自由に共有してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>layout: blog
 title: Infinispan 11.0.0.Final
 permalink: /blog/:year/:month/:day/infinispan-11
