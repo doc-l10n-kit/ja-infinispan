@@ -3,18 +3,18 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "POT-Creation-Date: 2021-02-11 23:24+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-04-28 10:07+0900\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.3\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-05-xsite-improvements.adoc:1
@@ -24,7 +24,7 @@ msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-05-xsite-improvements.adoc:8
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Cross Site Replication improvements\n"
@@ -35,7 +35,7 @@ msgid ""
 "---\n"
 msgstr ""
 "layout: blog\n"
-"title: クロスサイト複製の改善\n"
+"title: 拠点横断レプリケーションの改善\n"
 "permalink: /blog/:year/:month/:day/xsite-improvements\n"
 "date: '2020-06-05T12:00:00.000-00:00'\n"
 "author: pruivo\n"
@@ -44,39 +44,35 @@ msgstr ""
 
 #. type: Title =
 #: upstream/_posts/2020-06-05-xsite-improvements.adoc:10
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Cross Site Replication Improvements"
-msgstr "クロスサイト複製の改善"
+msgstr "拠点横断レプリケーションの改善"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-05-xsite-improvements.adoc:16
-#, fuzzy
 msgid "Infinispan introduced Cross Site Replication functionality in version 5.2 and Infinispan 7 extended it to support state transfer.  With an increase of popularity, Infinispan 11 brings two major improvements to Cross Site Replication.  Let's take a look at them."
-msgstr "Infinispan はバージョン 5.2 でクロスサイトレプリケーション機能を導入し、Infinispan 7 ではステート転送をサポートするように拡張しました。人気の高まりに伴い、Infinispan 11では、クロスサイトレプリケーションに2つの大きな改善点がもたらされました。それらを見てみましょう。"
+msgstr "Infinispanはバージョン 5.2 で拠点横断レプリケーション機能を導入し、Infinispan 7 では状態転送をサポートするように拡張しました。人気の高まりに伴い、Infinispan 11では、拠点横断レプリケーションに2つの大きな改善点がもたらされました。それらを見てみましょう。"
 
 #. type: Title ==
 #: upstream/_posts/2020-06-05-xsite-improvements.adoc:18
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Support for multiple site masters"
-msgstr "複数のサイトマスターをサポート"
+msgstr "複数の拠点マスターをサポート"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-05-xsite-improvements.adoc:23
-#, fuzzy
 msgid "Infinispan uses JGroups' http://www.jgroups.org/manual4/index.html#Relay2Advanced[RELAY2] protocol to enable inter-site communication.  Each site has Site Masters: these are nodes with special roles, and are responsible for the communication between sites."
-msgstr "InfinispanはJGroupsの link:http://www.jgroups.org/manual4/index.html#Relay2Advanced[RELAY2] プロトコルを使用して、サイト間通信を可能にします。各サイトにはサイトマスターがいます。これらは特別な役割を持つノードで、サイト間の通信を担当します。"
+msgstr "InfinispanはJGroupsの link:http://www.jgroups.org/manual4/index.html#Relay2Advanced[RELAY2] プロトコルを使用して、拠点間通信を可能にします。各拠点には拠点マスターがいます。これらは特別な役割を持つノードで、拠点間の通信を担当します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-05-xsite-improvements.adoc:26
-#, fuzzy
 msgid "RELAY2 can use more than one Site Master per site allowing load balancing of the inter-site requests.  The new algorithm is now able to take advantage of multiple Site Masters."
-msgstr "RELAY2は、サイト間リクエストのロードバランシングを可能にするために、サイトごとに複数のサイトマスターを使用することができます。新しいアルゴリズムでは、複数のサイトマスターを利用できるようになりました。"
+msgstr "RELAY2は、拠点間リクエストのロードバランシングを可能にするために、拠点ごとに複数の拠点マスターを使用できます。新しいアルゴリズムでは、複数の拠点マスターを利用できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-05-xsite-improvements.adoc:31
-#, fuzzy
 msgid "The attribute `max_site_masters` configures the number of Site Masters, and it defaults to 1.  To take advantage of the new algorithm, increase the number of Site Masters in RELAY2 configuration by changing `max_site_masters` to a value higher than 1.  A number greater than the number of nodes can be used, and it enables the Site Master role in all nodes."
-msgstr "属性 `max_site_masters` はサイト・マスターの数を設定し、デフォルトは 1 です。 新しいアルゴリズムを利用するには、 `max_site_masters` を 1 よりも高い値に変更することで、RELAY2 構成のサイト・マスターの数を増やしてください。 ノードの数よりも大きい数を使用することができ、すべてのノードでサイト・マスターの役割を有効にします。"
+msgstr "属性 `max_site_masters` は拠点マスターの数を設定し、デフォルトは 1 です。 新しいアルゴリズムを利用するには、 `max_site_masters` を 1 よりも高い値に変更することで、RELAY2 構成の拠点マスターの数を増やしてください。 ノードの数よりも大きい数を使用することができ、すべてのノードで拠点マスターの役割を有効にします。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-05-xsite-improvements.adoc:35
@@ -86,21 +82,19 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-06-05-xsite-improvements.adoc:38
-#, fuzzy
 msgid "More information about RELAY2 is available in http://www.jgroups.org/manual4/index.html#RELAY2[JGroups' Manual]."
 msgstr "RELAY2についての詳細は、 link:http://www.jgroups.org/manual4/index.html#RELAY2[JGroupsのマニュアル] に掲載されています。"
 
 #. type: Title ==
 #: upstream/_posts/2020-06-05-xsite-improvements.adoc:40
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Conflict detection and resolution for Asynchronous Cross-Site Replication"
-msgstr "非同期クロスサイトレプリケーションにおけるコンフリクトの検出と解決"
+msgstr "非同期拠点横断レプリケーションにおける衝突の検出と解決"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-05-xsite-improvements.adoc:45
-#, fuzzy
 msgid "Infinispan is able to detect conflicts in asynchronous mode by taking advantage of vector clocks.  A conflict happens when 2 or more sites update the same key at the same time.  Let's look at an example between 2 sites (_LON_ and _NYC_):"
-msgstr "Infinispanは、ベクトルクロックを利用して非同期モードでコンフリクトを検出することができます。コンフリクトは、2つ以上のサイトが同時に同じキーを更新した場合に発生します。2つのサイト _（LON_ と _NYC_ ）間の例を見てみましょう。"
+msgstr "Infinispanは、ベクトルクロックを利用して非同期モードで衝突を検出できます。衝突は、2つ以上の拠点が同時に同じキーを更新した場合に発生します。2つの拠点（_LON_ と _NYC_ ）間の例を見てみましょう。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-05-xsite-improvements.adoc:49
@@ -148,37 +142,31 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-06-05-xsite-improvements.adoc:65
-#, fuzzy
 msgid "_LON_ puts `k1=2`, with vector clock `1,0`, and replicates it to _NYC_."
-msgstr "_LONは_ 、 `k1=2` , ベクトルクロック `1,0` , を入れて、 _NYC_ に複製します。"
+msgstr "_LON_ は 、 `k1=2` , ベクトルクロック `1,0` , を入れて、 _NYC_ に複製します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-05-xsite-improvements.adoc:66
-#, fuzzy
 msgid "_NYC_ puts `k1=3`, with vector clock `1,1`, and replicates it to _LON_."
-msgstr "_NYCは_ 、 `k1=3` , ベクトルクロック `1,1` , を入れて、それを _LON_ に複製します。"
+msgstr "_NYC_ は 、 `k1=3` , ベクトルクロック `1,1` , を入れて、それを _LON_ に複製します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-05-xsite-improvements.adoc:68
-#, fuzzy
 msgid "However if _LON_ puts `k1=5` (with vector `2,1`), and _NYC_ puts `k1=8` in _NYC_ (with vector clock `1,2`)  at the same time, Infinispan detects the conflict since none of the vector clocks are greater than the other."
-msgstr "しかし、 _LON が_ `k1=5` (ベクトルクロック `2,1` ) を、 _NYC が_ `k1=8` を _NYC_ (ベクトルクロック `1,2` ) に同時に置くと、いずれのベクトルクロックも他のベクトルクロックよりも大きいため、Infinispan は競合を検出します。"
+msgstr "しかし、 _LON_ が `k1=5` (ベクトル `2,1` ) を、 _NYC_ が `k1=8` を _NYC_ (ベクトルクロック `1,2` ) に同時に置くと、いずれのベクトルクロックも他よりも大きいため、Infinispan は競合を検出します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-05-xsite-improvements.adoc:72
-#, fuzzy
 msgid "Infinispan resolves the conflicts by comparing using the site names in lexicographical order.  The site's name lower in lexicographical order takes priority.  In the example above, both _LON_ and _NYC_ end up with `k1=5` since _LON_ < _NYC_."
-msgstr "Infinispan は、辞書順にサイト名を使用して比較することで競合を解決します。辞書順で下位のサイト名が優先されます。上の例では、 _LON_ < NYC のため、 _LON_ と _NYC_ の両方が `k1=5` で終わります _。_"
+msgstr "Infinispan は、辞書順に拠点名を使用して比較することで競合を解決します。辞書順で下位のサイト名が優先されます。上の例では、 _LON_ < _NYC_ のため、 _LON_ と _NYC_ の両方が `k1=5` で終わります _。_"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-05-xsite-improvements.adoc:76
-#, fuzzy
 msgid "You can choose the priority by prepending a number to the site name.  For example, if you want updates from _NYC_ to take priority over _LON_ updates, you can prepend a number to the site name, example: _1NYC_, _2LON_ and so on."
-msgstr "サイト名の前に数字を付けることで優先順位を選択できます。例えば、 _NYC_ からの更新を _LON_ _の_ 更新よりも優先したい場合は、サイト名に数字を前置します。"
+msgstr "拠点名の前に数字を付けることで優先順位を選択できます。例えば、 _NYC_ からの更新を _LON_の 更新よりも優先したい場合は、サイト名に数字を前置します。例: _1NYC_ と _2LON_"
 
-#.  TODO! check the document link when the documentation is live!
+#. TODO! check the document link when the documentation is live!
 #. type: Plain text
 #: upstream/_posts/2020-06-05-xsite-improvements.adoc:79
-#, fuzzy
 msgid "For more information check the https://infinispan.org/docs/dev/titles/xsite/xsite.html#conflicting_entries-xsite[Infinispan Documentation]."
 msgstr "詳細は link:https://infinispan.org/docs/dev/titles/xsite/xsite.html#conflicting_entries-xsite[Infinispanのドキュメント] をご覧ください。"
