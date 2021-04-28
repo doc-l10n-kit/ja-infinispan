@@ -1175,6 +1175,158 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Off Heap enhancements</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>オフヒープの強化</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The off heap implementation in Infinispan has become much more widely used since its introduction.  There have been some issues and improvements identified to get this storage type more in line with its heap counterpart.  For those of you that are unware the off-heap setting is actually only "off" the JVM heap and still resides in the native memory of the application.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan のオフヒープ実装は、その導入以来、より広く使用されるようになりました。このストレージタイプをヒープ対応のストレージタイプに近づけるために、いくつかの問題点と改善点が確認されています。ご存知ない方のために、オフヒープ設定は実際にはJVMヒープを「オフ」にしているだけで、アプリケーションのネイティブメモリに存在しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The best part of all the below changes is the user does not need to change anything, other than configuring Off Heap storage.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>以下の変更点の中で最も優れている点は、オフヒープストレージを設定する以外にユーザーが何も変更する必要がないことです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Resizing Off Heap Container</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>オフヒープコンテナのサイズ変更</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>For those of you that have used/configured off heap storage before you may have noticed that there was a configuration option named address count.  This setting allowed you to configure how many address pointers the container had.  You can think of this as essentially how many buckets you have in a HashMap.  Unfortunately the number of pointers was fixed and therefore the user would have to know how many elements they expected to have.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>以前にオフヒープストレージを使用/設定したことがある人は、アドレスカウントという設定オプションがあることに気づいたかもしれません。この設定では、コンテナが持つアドレスポインタの数を設定することができます。これは、基本的には HashMap にあるバケットの数と考えることができます。残念ながら、ポインターの数は固定されていたので、ユーザーはどれだけの要素を持つと予想されるかを知る必要がありました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This setting also had another problem.  If the user required a larger size of elements this would increase startup time as the container can be iterated upon multiple times when it is empty.  Iterating over a container of one million empty pointers would be much slower than iterating over one of only 1024 for example.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>この設定にも問題がありました。ユーザーがより大きなサイズの要素を必要とする場合、コンテナが空になったときに何度も反復処理を行うことができるため、起動時間が長くなってしまいます。例えば、100万個の空のポインタを持つコンテナを反復処理するのは、1024個のコンテナを反復処理するよりもはるかに遅くなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>I am glad to say as of Infinispan 10.0.0.Final this setting and the performance of iteration have been greatly improved.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>嬉しいことに、Infinispan 10.0.0.Finalでは、この設定とイテレーションのパフォーマンスが大幅に改善されました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The address count variable is now ignored and instead the off heap based container will start at smaller amount of "buckets" in the range of 128 or 256.  We then apply a load factor of .75, which means we will automatically increase the size of the underlying "buckets" once we have inserted a number of entries being 75% or larger than the current "bucket" size.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>アドレスカウント変数は無視され、代わりにオフヒープベースのコンテナは128または256の範囲の小さい量の「バケット」から始まります。そして、負荷率を0.75に設定します。これは、現在の「バケット」サイズよりも75%以上大きいエントリを挿入すると、自動的に基礎となる「バケット」のサイズを増加させることを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The resize operation will grow to have double the amount of "buckets" it had prior.  The resize operation will be performed concurrently with other operations, providing minimal blocking as we have locks equal to the number of CPUs times two.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>リサイズ操作は、以前の倍の量の「バケット」を持つようになります。リサイズ操作は他の操作と並行して実行され、CPU数の2倍に相当するロックがあるため、最小限のブロッキングを提供します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This will allow for a cache with off heap to be started significantly faster and relieves some configuration options that were unneeded.  Note that the map, just like a java.util.HashMap, will not decrease the number of "buckets" once it grows to a given size.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>これにより、オフヒープのキャッシュを大幅に高速に起動することが可能になり、不要だったいくつかの設定オプションが解放されます。このMapは、java.util.HashMapのように、マップが一旦所定のサイズに成長すると「バケット」の数は減らないことに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Iteration changes</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>イテレーションの変更</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>I mentioned that iteration was slower during startup of larger number of "buckets".  This was due to it possibly having a large number of them, however it was also plauged by an ineffecient way of iterating over them.  In addition to rewriting the resize operation, we have also optimized the memory layout so that "buckets" can be iterated sequentially which provides more mechanical sympathy.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>私は、より大きな数の「バケット」の起動時に反復処理が遅くなることを述べました。これは、バケットの数が多いことが原因である可能性がありますが、バケットの反復処理の不便さにも悩まされていました。リサイズ操作を書き換えることに加えて、「バケット」を順次反復処理できるようにメモリレイアウトを最適化し、より機械的な共感を得られるようにしました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Hash changes</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ハッシュの変更</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This one is rather short and sweet, but the old hash algorithm we used would cause too many collisions for objects that had hash functions that returned values in a similar range, such as java.lang.Integer and java.util.String (with shared startubg characters).</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>これはかなり要領を得たものですが、私たちが使っていた古いハッシュアルゴリズムでは、似たような範囲の値を返すハッシュ関数を持つオブジェクトの衝突が多すぎました。これは、java.lang.Integerやjava.util.String（共有された開始文字を持つ）のような、類似した範囲の値を返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Therefore it has been changed to provide a bit better spreading. This is part of ISPN 10.0.0.Final.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>そのため、少しだけ広がりが良くなるように変更されています。これは ISPN 10.0.0.Final の一部です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Expiration bugs</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>期限切れのバグ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Unfortunately off heap had a few issues with expiration.  It didn't support max idle and expiration metadata was not properly transferred to new nodes during state transfer.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>残念ながらオフヒープは 期限切れの機能にいくつかの問題を抱えていました。それは最大アイドルをサポートしておらず、状態転送中に新しいノードへの期限切れメタデータの転送が適切に行われませんでした。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In addition to max idle algorithm being rewritten, Off heap now properly supports max idle as of 10.1.4.Final and 11.0.0.Final.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>max idleアルゴリズムの書き換えに加え、10.1.4.Finalおよび11.0.0.Finalでは、オフヒープが正しくmax idleをサポートするようになりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Off heap metadata transferred to new nodes has been fixed in 10.1.8.Final and 11.0.0.Final.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>新しいノードに転送されるオフヒープメタデータが 10.1.8.Final および 11.0.0.Final で修正されました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Infinispan 12.0.0.Dev01</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
