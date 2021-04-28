@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2021-02-11 23:24+0900\n"
-"PO-Revision-Date: 2021-04-28 10:55+0900\n"
+"PO-Revision-Date: 2021-04-28 11:06+0900\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -136,12 +136,12 @@ msgstr "期限切れのバグ"
 #. type: Plain text
 #: upstream/_posts/2020-06-09-offheap-resize.adoc:80
 msgid "Unfortunately off heap had a few issues with expiration.  It didn't support max idle and expiration metadata was not properly transferred to new nodes during state transfer."
-msgstr "残念ながら off heap は 期限切れの機能にいくつかの問題を抱えていました。それは最大アイドルをサポートしておらず、状態転送中に新しいノードへの期限切れメタデータの転送が適切に行われませんでした。"
+msgstr "残念ながらオフヒープは 期限切れの機能にいくつかの問題を抱えていました。それは最大アイドルをサポートしておらず、状態転送中に新しいノードへの期限切れメタデータの転送が適切に行われませんでした。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-09-offheap-resize.adoc:83
 msgid "In addition to max idle algorithm being rewritten, Off heap now properly supports max idle as of 10.1.4.Final and 11.0.0.Final."
-msgstr "max idleアルゴリズムの書き換えに加え、10.1.4.Finalおよび11.0.0.Finalでは、Off heapが正しくmax idleをサポートするようになりました。"
+msgstr "max idleアルゴリズムの書き換えに加え、10.1.4.Finalおよび11.0.0.Finalでは、オフヒープが正しくmax idleをサポートするようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-09-offheap-resize.adoc:85
