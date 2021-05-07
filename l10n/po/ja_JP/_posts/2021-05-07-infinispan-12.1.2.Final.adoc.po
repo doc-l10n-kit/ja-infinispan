@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 12.1.2.Final\n"
@@ -34,12 +34,19 @@ msgid ""
 "tags: [ \"release\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 12.1.2.ファイナル\n"
+"permalink: /blog/:year/:month/:day/infinispan-12-1-2-final\n"
+"date: '2021-05-07T12:00:00.000-00:00'\n"
+"author: karesti\n"
+"tags: [ \"release\" ]\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Infinispan 12.1.2.Final"
-msgstr ""
+msgstr "Infinispan 12.1.2.ファイナル"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:13
@@ -48,40 +55,48 @@ msgstr "親愛なるInfinispanのコミュニティへ"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:16
+#, fuzzy
 msgid "It's been a month since our first 12.1.0.Final release and we already released two additional minors with some bug fixes and upgrades. The latest version is 12.1.2.Final."
-msgstr ""
+msgstr "最初の12.1.0.Finalのリリースから1ヶ月が経ちましたが、すでにいくつかのバグフィックスとアップグレードを含む2つの追加マイナーをリリースしました。その最新版が12.1.2.Finalです。"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:18
+#, fuzzy
 msgid "Highlights of Infinispan 12.1.1 and 12.1.2 include:"
-msgstr ""
+msgstr "Infinispan 12.1.1および12.1.2のハイライトは以下の通りです。"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:20
+#, fuzzy
 msgid "Grafana Dashboards for the Operator https://issues.redhat.com/browse/ISPN-12702[ISPN-12702]."
-msgstr ""
+msgstr "オペレーターのためのGrafanaのダッシュボード link:https://issues.redhat.com/browse/ISPN-12702[ISPN-12702]。"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:21
+#, fuzzy
 msgid "Performance regression fix https://issues.redhat.com/browse/ISPN-13017[ISPN-13017]."
-msgstr ""
+msgstr "パフォーマンスのリグレッションの修正 link:https://issues.redhat.com/browse/ISPN-13017[ISPN-13017]"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:22
+#, fuzzy
 msgid "Index and Query statistics improved in the Infinispan Web Console https://issues.redhat.com/browse/ISPN-12458[ISPN-12458]."
-msgstr ""
+msgstr "Infinispanウェブコンソールでのインデックスとクエリの統計情報の改善 link:https://issues.redhat.com/browse/ISPN-12458[ISPN-12458]"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:23
+#, fuzzy
 msgid "Several component upgrades"
-msgstr ""
+msgstr "いくつかのコンポーネントのアップグレード"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:24
+#, fuzzy
 msgid "Documentation enchancements"
-msgstr ""
+msgstr "ドキュメント・エンチャント"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:28
+#, fuzzy
 msgid "You can find release notes for both versions at: https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12355542[here] and https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12356461[here]"
-msgstr ""
+msgstr "両バージョンのリリースノートは、 link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12355542[こちら]と link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12356461[こちら]をご覧ください。"
