@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-05-07 15:15+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 12.1.2.Final\n"
+"permalink: /blog/:year/:month/:day/infinispan-12-1-2-final\n"
+"date: '2021-05-07T12:00:00.000-00:00'\n"
+"author: karesti\n"
+"tags: [ \"release\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:10
+#, no-wrap
+msgid "Infinispan 12.1.2.Final"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:13
+msgid "Dear Infinispan community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:16
+msgid "It's been a month since our first 12.1.0.Final release and we already released two additional minors with some bug fixes and upgrades. The latest version is 12.1.2.Final."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:18
+msgid "Highlights of Infinispan 12.1.1 and 12.1.2 include:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:20
+msgid "Grafana Dashboards for the Operator https://issues.redhat.com/browse/ISPN-12702[ISPN-12702]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:21
+msgid "Performance regression fix https://issues.redhat.com/browse/ISPN-13017[ISPN-13017]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:22
+msgid "Index and Query statistics improved in the Infinispan Web Console https://issues.redhat.com/browse/ISPN-12458[ISPN-12458]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:23
+msgid "Several component upgrades"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:24
+msgid "Documentation enchancements"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-07-infinispan-12.1.2.Final.adoc:28
+msgid "You can find release notes for both versions at: https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12355542[here] and https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12356461[here]"
+msgstr ""
