@@ -1121,6 +1121,278 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Last week I released version 3.0.0.Final of wildfly-clustering-spring-session, a new Spring Session implementation based on WildFly's distributed HttpSession manager and Infinispan.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>先週、WildFlyの分散型HttpSessionマネージャとInfinispanをベースにした新しいSpring Sessionの実装であるwildfly-clustering-spring-sessionのバージョン3.0.0.Finalをリリースしました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Doesn't Infinispan already provide a Spring Session implementation?</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>InfinispanはすでにSpring Sessionの実装を提供しているのではないでしょうか？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>https://infinispan.org/docs/stable/titles/integrating/integrating.html#spring_externalize_sessions[Yes, it does.]</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>link:https://infinispan.org/docs/stable/titles/integrating/integrating.html#spring_externalize_sessions[その通りです。]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Infinispan's existing Spring Session implementation stores instances of `org.springframework.session.MapSession` into a Spring cache, which is backed by either an embedded or remote cache.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispanの既存のSpring Session実装は、 `org.springframework.session.MapSession` のインスタンスをSpringのキャッシュに格納します。このキャッシュは、組み込みキャッシュまたはリモートキャッシュによって支えられています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>However, like many `MapSession` based `SessionRepository` implementations, it suffers from a common set of problems/limitations:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>しかし、多くの `MapSession` ベースの `SessionRepository` の実装と同様に、共通の問題/限界に悩まされています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The `MapSession` object, including all session metadata and attributes must be serialized and replicated/persisted on every request, regardless of the extent to which the session was modified.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>`MapSession` オブジェクトは、すべてのセッションのメタデータと属性を含めてシリアル化され、セッションがどの程度変更されたかにかかわらず、すべてのリクエストで複製/永続化されなければなりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Because Spring Session triggers session persistence from a `ServletFilter`, this cost is borne per request.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Spring Sessionは、 `ServletFilter` からセッションの永続化をトリガーするため、このコストはリクエストごとに発生します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Since each request for a given session operates on a copy of the `MapSession`, and since the `MapSession` is not persisted/replicated until the end of the request:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>与えられたセッションの各リクエストは、 `MapSession` のコピーを操作するため、また、 `MapSession` は、リクエストが終了するまで永続化/複製されないためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Session modifications in one requests are not visible to concurrent requests for the same session.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>あるリクエストでのセッションの変更は、同じセッションで同時に起こっているリクエストでは見えません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A given session modification can be overwritten by a previous modification of the same session from a concurrent request if that request finishes first.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>あるセッションの変更は、同時に行われたリクエストによる同じセッションの以前の変更によって上書きされる可能性があります（そのリクエストが先に終了した場合）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Session attributes implementing `HttpSessionActivationListener` are never notified before/after they are marshalled/unmarshalled.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>`HttpSessionActivationListener` を実装しているセッション属性は、マーシャリング/アンマーシャリングされる前/後に通知されることはありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>How does it work?</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>どのような仕組みになっているのですか？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>wildfly-clustering-spring-session is implemented as a Spring `SessionRepository` facade to a container-independent `SessionManager` implementation that persists session attributes and metadata to either an embedded Infinispan cache or a remote Infinispan server cluster via HotRod.  This grants all of the features to Spring Session that one would normally expect when deploying a distributed web application to WildFly, including:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>wildfly-clustering-spring-sessionは、Springの `SessionRepository` ファサードとして、コンテナに依存しない `SessionManager` を実装しています。この実装は、セッションの属性とメタデータを、組み込みのInfinispanキャッシュか、HotRod経由でリモートのInfinispanサーバクラスタに永続化します。これにより、Spring Sessionにすべての機能が付与されます。これは、分散型WebアプリケーションをWildFlyにデプロイする際に通常期待される、以下のような機能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Minimal persistence payloads using configurable persistence granularity.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>設定可能な永続性の粒度を使用した最小の永続性ペイロード。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Consistent view of a given session from multiple concurrent request threads on a given server</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>特定のサーバー上で複数の同時に処理されるリクエストスレッドからの特定のセッションの一貫したビュー</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Mutable session attribute semantics (emulates the semantics of local session manager)</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>変更可能なセッション属性の意味（ローカルセッションマネージャの意味を模倣）</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Ability to treat specific session attributes as immutable</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>特定のセッション属性を不変のものとして扱う機能</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Configurable limit for the number of active sessions to retain in memory</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>メモリに保持するアクティブなセッションの数を設定可能</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Proper `HttpSessionActivationListener` notifications.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>適切な `HttpSessionActivationListener` の通知。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Configurable session attribute marshaller (ProtoStream, JBoss Marshalling, or Java Serialization)</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>設定可能なセッション属性マーシャラー（ProtoStream、JBoss Marshalling、またはJava Serialization</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>How do I use it?</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>どうやって使うの？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In this example, we'll use a remote Infinispan cluster containing a single member, deployed to the localhost, using its default configuration.  See the project https://github.com/wildfly-clustering/wildfly-clustering-spring-session/blob/master/README.md[README] for details on the available configuration annotations and their attributes.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>この例では、1つのメンバーを含むリモートのInfinispanクラスタを使用し、デフォルトの構成を使用してlocalhostにデプロイします。利用可能な構成アノテーションとその属性の詳細については、プロジェクトの link:https://github.com/wildfly-clustering/wildfly-clustering-spring-session/blob/master/README.md[README]を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Create a class containing the session repository configuration, for example:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>セッション・リポジトリの設定を含むクラスを作成します。たとえば</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Ensure your `/WEB-INF/applicationContext.xml` will process your configuration annotation:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>`/WEB-INF/applicationContext.xml` が構成アノテーションを処理できることを確認してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Create an application initializer class that will auto-register the requisite servlet filters required by Spring Session:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Spring Sessionが必要とするサーブレットフィルターを自動登録するアプリケーションイニシャライザークラスを作成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Create a `@WebListener` that bootstraps our session repository configuration:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>セッションリポジトリの構成を自動構築する `@WebListener` を作成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Deploying your application will automatically create a new cache instance in the Infinispan cluster named according to the the host and context of the web application.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>アプリケーションをデプロイすると、Webアプリケーションのホストとコンテキストに応じた名前の新しいキャッシュ・インスタンスがInfinispanクラスタに自動的に作成されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Can I use WildFly clustering Spring Session outside of WildFly?</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Wildfly clustering spring sessionはWildFly以外でも使用できますか？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Of course! Like most Spring Session repository implementations, it is meant to work with any implementation of the Jakarta Servlet 4.0 specification.  The project https://github.com/wildfly-clustering/wildfly-clustering-spring-session[README] contains sample instructions for installing on Tomcat.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>もちろんです！ほとんどのSpring Sessionリポジトリの実装と同様に、Jakarta Servlet 4.0仕様のあらゆる実装で動作するようになっています。プロジェクトの link:https://github.com/wildfly-clustering/wildfly-clustering-spring-session[README]には、Tomcatにインストールするためのサンプル手順が記載されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Where can I find it?</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>どこで手に入るの？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You can find the source code on https://github.com/wildfly-clustering/wildfly-clustering-spring-session[github].  Contributions are always welcome!</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ソースコードは link:https://github.com/wildfly-clustering/wildfly-clustering-spring-session[github]で公開されています。貢献をいつでもお待ちしております。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>File any issues with the https://github.com/wildfly-clustering/wildfly-clustering-spring-session/issues[github issue tracker].</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>問題があれば link:https://github.com/wildfly-clustering/wildfly-clustering-spring-session/issues[github課題トラッカー]に提出してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Checkout the https://github.com/wildfly-clustering/wildfly-clustering-spring-session/blob/master/README.md[README] for more details.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>詳しくは link:https://github.com/wildfly-clustering/wildfly-clustering-spring-session/blob/master/README.md[README]をご覧ください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Enjoy!</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>お楽しみに！</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Off Heap enhancements</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
