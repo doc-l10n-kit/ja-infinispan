@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2021-03-30 21:16+0000\n"
-"PO-Revision-Date: 2021-05-13 11:17+0900\n"
+"PO-Revision-Date: 2021-05-13 11:36+0900\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -118,7 +118,7 @@ msgstr "どのような仕組みになっているのですか？"
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:35
 msgid "wildfly-clustering-spring-session is implemented as a Spring `SessionRepository` facade to a container-independent `SessionManager` implementation that persists session attributes and metadata to either an embedded Infinispan cache or a remote Infinispan server cluster via HotRod.  This grants all of the features to Spring Session that one would normally expect when deploying a distributed web application to WildFly, including:"
-msgstr "wildfly-clustering-spring-sessionは、Springの`SessionRepository`ファサードとして、コンテナに依存しない`SessionManager`を実装しています。この実装は、セッションの属性とメタデータを、組み込みのInfinispanキャッシュか、HotRod経由でリモートのInfinispanサーバクラスタに永続化します。これにより、Spring Sessionにすべての機能が付与されます。これは、分散型WebアプリケーションをWildFlyにデプロイする際に通常期待される、以下のような機能です。"
+msgstr "wildfly-clustering-spring-sessionは、Springの `SessionRepository` ファサードとして、コンテナに依存しない `SessionManager` を実装しています。この実装は、セッションの属性とメタデータを、組み込みのInfinispanキャッシュか、HotRod経由でリモートのInfinispanサーバクラスタに永続化します。これにより、Spring Sessionにすべての機能が付与されます。これは、分散型WebアプリケーションをWildFlyにデプロイする際に通常期待される、以下のような機能です。"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-15-wildfly-clustering-spring-session.adoc:37
