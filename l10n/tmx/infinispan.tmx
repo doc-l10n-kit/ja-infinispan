@@ -1623,6 +1623,70 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>It's been a month since our first 12.1.0.Final release and we already released two additional minors with some bug fixes and upgrades. The latest version is 12.1.2.Final.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>最初の12.1.0.Finalのリリースから1ヶ月が経ちましたが、すでにいくつかのバグフィックスとアップグレードを含む2つの追加マイナーをリリースしました。その最新版が12.1.2.Finalです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Highlights of Infinispan 12.1.1 and 12.1.2 include:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan 12.1.1および12.1.2のハイライトは以下の通りです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Grafana Dashboards for the Operator https://issues.redhat.com/browse/ISPN-12702[ISPN-12702].</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>OperatorのためのGrafanaのダッシュボード link:https://issues.redhat.com/browse/ISPN-12702[ISPN-12702]。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Performance regression fix https://issues.redhat.com/browse/ISPN-13017[ISPN-13017].</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>パフォーマンスの退化を修正 link:https://issues.redhat.com/browse/ISPN-13017[ISPN-13017]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Index and Query statistics improved in the Infinispan Web Console https://issues.redhat.com/browse/ISPN-12458[ISPN-12458].</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan Webコンソールでの索引と問い合せの統計情報の改善 link:https://issues.redhat.com/browse/ISPN-12458[ISPN-12458]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Several component upgrades</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>いくつかのコンポーネントのアップグレード</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Documentation enchancements</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ドキュメントの改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You can find release notes for both versions at: https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12355542[here] and https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12356461[here]</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>両バージョンのリリースノートは、 link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;amp;version=12355542[こちら]と link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;amp;version=12356461[こちら]をご覧ください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Infinispan 12.0.0.Dev03</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
