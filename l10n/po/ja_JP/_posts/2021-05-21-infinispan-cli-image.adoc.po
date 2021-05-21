@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-05-21 14:15+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan Native CLI\n"
+"permalink: /blog/:year/:month/:day/infinispan-cli-image\n"
+"date: '2021-05-21T12:00:00.000-00:00'\n"
+"author: remerson\n"
+"tags: [ \"docker\", \"cli\", \"containers\", \"quarkus\", \"native\"]\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:11
+msgid "Starting with Infinispan 12, we provide a natively compiled version of the Infinispan CLI."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:13
+msgid "This can be consumed as a native binary or via a container image."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:14
+#, no-wrap
+msgid "Usage"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:16
+msgid "Start a Infinispan server instance so that the CLI has an endpoint to connect to:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:18
+#, no-wrap
+msgid "docker run -it -p 11222:11222 -e USER=\"user\" -e PASS=\"pass\" quay.io/infinispan/server:12.1\n"
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:20
+#, no-wrap
+msgid "Container"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:23
+msgid "Launch the CLI image and connect to the server image:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:26
+#, no-wrap
+msgid "docker run --net=host -it --rm quay.io/infinispan/cli:12.1 -c http://127.0.0.1:11222\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:29
+msgid "Enter the \"user\" and \"pass\" credentials, for the username and password respectively."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:31
+msgid "The container's endpoint is the CLI binary, which lets you pass CLI arguments straight to the image, e.g. `quay.io/infinispan/cli:12.1 --version`"
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:32
+#, no-wrap
+msgid "Binary"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:34
+msgid "Native CLI binaries for Linux, Mac and Windows can be downloaded https://github.com/infinispan/infinispan-quarkus/releases/tag/12.1.3.Final[here]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:37
+msgid "Download and extract the `.zip` for your desired platform:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:38
+msgid "https://github.com/infinispan/infinispan-quarkus/releases/download/12.1.3.Final/infinispan-cli-12.1.3.Final-linux-amd64.zip[Linux]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:39
+msgid "https://github.com/infinispan/infinispan-quarkus/releases/download/12.1.3.Final/infinispan-cli-12.1.3.Final-darwin-amd64.zip[Mac]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:40
+msgid "https://github.com/infinispan/infinispan-quarkus/releases/download/12.1.3.Final/infinispan-cli-12.1.3.Final-windows-amd64.zip[Windows]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:42
+msgid "Start the CLI and connect to the server container:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:43
+msgid "Linux & Mac: `./ispn-cli -c http://127.0.0.1:11222`"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:43
+msgid "Windows (Powershell): `& \".\\ispn-cli.exe\" -c http://127.0.0.1:11222`"
+msgstr ""
