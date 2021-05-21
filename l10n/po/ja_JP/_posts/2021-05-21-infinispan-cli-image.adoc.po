@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan Native CLI\n"
@@ -34,27 +34,37 @@ msgid ""
 "tags: [ \"docker\", \"cli\", \"containers\", \"quarkus\", \"native\"]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan Native CLI\n"
+"permalink: /blog/:year/:month/:day/infinispan-cli-image\n"
+"date: '2021-05-21T12:00:00.000-00:00'\n"
+"author: remerson\n"
+"tags: [ \"docker\", \"cli\", \"containers\", \"quarkus\", \"native\"]\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:11
+#, fuzzy
 msgid "Starting with Infinispan 12, we provide a natively compiled version of the Infinispan CLI."
-msgstr ""
+msgstr "Infinispan 12からは、ネイティブ・コンパイル版のInfinispan CLIを提供しています。"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:13
+#, fuzzy
 msgid "This can be consumed as a native binary or via a container image."
-msgstr ""
+msgstr "これは、ネイティブ・バイナリとして、またはコンテナ・イメージを介して消費されます。"
 
 #. type: Title ==
 #: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:14
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Usage"
-msgstr ""
+msgstr "使用方法"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:16
+#, fuzzy
 msgid "Start a Infinispan server instance so that the CLI has an endpoint to connect to:"
-msgstr ""
+msgstr "Infinispanサーバ・インスタンスを起動し、CLIが接続するエンドポイントを持つようにします。"
 
 #. type: delimited block -
 #: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:18
@@ -64,14 +74,15 @@ msgstr ""
 
 #. type: Title ====
 #: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:20
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Container"
-msgstr ""
+msgstr "コンテナ"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:23
+#, fuzzy
 msgid "Launch the CLI image and connect to the server image:"
-msgstr ""
+msgstr "CLIイメージを起動し、サーバーイメージに接続します。"
 
 #. type: delimited block -
 #: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:26
@@ -81,56 +92,66 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:29
+#, fuzzy
 msgid "Enter the \"user\" and \"pass\" credentials, for the username and password respectively."
-msgstr ""
+msgstr "\"user \"と \"pass \"の認証情報を入力し、それぞれユーザー名とパスワードを入力します。"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:31
+#, fuzzy
 msgid "The container's endpoint is the CLI binary, which lets you pass CLI arguments straight to the image, e.g. `quay.io/infinispan/cli:12.1 --version`"
-msgstr ""
+msgstr "このコンテナのエンドポイントはCLIバイナリで、CLIの引数をそのままイメージに渡すことができます。 `quay.io/infinispan/cli:12.1 --version`"
 
 #. type: Title ====
 #: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:32
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Binary"
-msgstr ""
+msgstr "バイナリー"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:34
+#, fuzzy
 msgid "Native CLI binaries for Linux, Mac and Windows can be downloaded https://github.com/infinispan/infinispan-quarkus/releases/tag/12.1.3.Final[here]."
-msgstr ""
+msgstr "Linux、Mac、Windows用のネイティブCLIバイナリは、 link:https://github.com/infinispan/infinispan-quarkus/releases/tag/12.1.3.Final[こちらから]ダウンロードできます。"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:37
+#, fuzzy
 msgid "Download and extract the `.zip` for your desired platform:"
-msgstr ""
+msgstr "ご希望のプラットフォーム用の `.zip` をダウンロードして解凍します。"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:38
+#, fuzzy
 msgid "https://github.com/infinispan/infinispan-quarkus/releases/download/12.1.3.Final/infinispan-cli-12.1.3.Final-linux-amd64.zip[Linux]"
-msgstr ""
+msgstr "link:https://github.com/infinispan/infinispan-quarkus/releases/download/12.1.3.Final/infinispan-cli-12.1.3.Final-linux-amd64.zip[Linux]"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:39
+#, fuzzy
 msgid "https://github.com/infinispan/infinispan-quarkus/releases/download/12.1.3.Final/infinispan-cli-12.1.3.Final-darwin-amd64.zip[Mac]"
-msgstr ""
+msgstr "link:https://github.com/infinispan/infinispan-quarkus/releases/download/12.1.3.Final/infinispan-cli-12.1.3.Final-darwin-amd64.zip[Mac]"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:40
+#, fuzzy
 msgid "https://github.com/infinispan/infinispan-quarkus/releases/download/12.1.3.Final/infinispan-cli-12.1.3.Final-windows-amd64.zip[Windows]"
-msgstr ""
+msgstr "link:https://github.com/infinispan/infinispan-quarkus/releases/download/12.1.3.Final/infinispan-cli-12.1.3.Final-windows-amd64.zip[Windows]"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:42
+#, fuzzy
 msgid "Start the CLI and connect to the server container:"
-msgstr ""
+msgstr "CLIを起動し、サーバーコンテナに接続します。"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:43
+#, fuzzy
 msgid "Linux & Mac: `./ispn-cli -c http://127.0.0.1:11222`"
-msgstr ""
+msgstr "Linux &amp; Mac。 `./ispn-cli -c &lt;a href=\"http://127.0.0.1:11222\" class=\"bare\"&gt;http://127.0.0.1:11222&lt;/a&gt;`"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-21-infinispan-cli-image.adoc:43
+#, fuzzy
 msgid "Windows (Powershell): `& \".\\ispn-cli.exe\" -c http://127.0.0.1:11222`"
-msgstr ""
+msgstr "Windows（Powershell）です。 `&amp;amp; \".\\ispn-cli.exe\" -c &lt;a href=\"http://127.0.0.1:11222\" class=\"bare\"&gt;http://127.0.0.1:11222&lt;/a&gt;`"
