@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2021-05-31-infinispan-redhat-summit-quarkus.adoc:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-31-infinispan-redhat-summit-quarkus.adoc:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan (Red Hat Data Grid) featured in Red Hat Developers\n"
@@ -34,59 +34,76 @@ msgid ""
 "tags: [ \"redhat\", \"datagrid\", \"quarkus\", \"cross-site-replication\"]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan（Red Hat Data Grid）がRed Hat Developersで紹介されました。\n"
+"permalink: /blog/:year/:month/:day/infinispan-redhat-summit-quarkus\n"
+"date: '2021-05-31T12:00:00.000-00:00'\n"
+"author: karesti\n"
+"tags: [ \"redhat\", \"datagrid\", \"quarkus\", \"cross-site-replication\"]\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-31-infinispan-redhat-summit-quarkus.adoc:11
+#, fuzzy
 msgid "Dear Infinispan Community,"
-msgstr ""
+msgstr "親愛なるInfinispanコミュニティの皆様。"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-31-infinispan-redhat-summit-quarkus.adoc:13
+#, fuzzy
 msgid "The Infinispan team is pleased to share an article published over on the Red Hat Developer blog."
-msgstr ""
+msgstr "Infinispanチームは、Red Hat Developerブログに掲載された記事をご紹介します。"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-31-infinispan-redhat-summit-quarkus.adoc:16
+#, fuzzy
 msgid "Part one of a two-part series of articles, this blog post focuses on how Data Grid, which is built on Infinispan, was used to create a leaderboard for an online Battleship game that featured at this year's Red Hat Summit Keynote."
-msgstr ""
+msgstr "このブログ記事では、2部構成のうちの1部として、Infinispan上に構築されたData Gridが、今年のRed Hat Summit Keynoteで紹介されたオンラインBattleshipゲームのリーダーボードの作成にどのように使用されたかに焦点を当てています。"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-31-infinispan-redhat-summit-quarkus.adoc:18
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "*You can read the blog post https://developers.redhat.com/articles/2021/05/28/building-real-time-leaderboard-red-hat-data-grid-and-quarkus-hybrid-kubernetes[here]*\n"
-msgstr ""
+msgstr "*&lt;a href=\"https://developers.redhat.com/articles/2021/05/28/building-real-time-leaderboard-red-hat-data-grid-and-quarkus-hybrid-kubernetes\"&gt;この&lt;/a&gt;*ブログ記事はこちらからご覧いただけます。"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-31-infinispan-redhat-summit-quarkus.adoc:20
+#, fuzzy
 msgid "Technologies featured in our keynote demo:"
-msgstr ""
+msgstr "基調講演のデモで紹介された技術"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-31-infinispan-redhat-summit-quarkus.adoc:21
+#, fuzzy
 msgid "Quarkus and Infinispan Client Extension"
-msgstr ""
+msgstr "QuarkusとInfinispanのクライアント拡張"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-31-infinispan-redhat-summit-quarkus.adoc:22
+#, fuzzy
 msgid "Additional Quarkus extensions: RestEasy, Websockets, Scheduler"
-msgstr ""
+msgstr "追加のQuarkusエクステンション。RestEasy、Websocket、Scheduler"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-31-infinispan-redhat-summit-quarkus.adoc:23
+#, fuzzy
 msgid "Infinispan Query"
-msgstr ""
+msgstr "Infinispanクエリ"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-31-infinispan-redhat-summit-quarkus.adoc:24
+#, fuzzy
 msgid "Infinispan Cross-Site Replication"
-msgstr ""
+msgstr "Infinispanのクロスサイトレプリケーション"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-31-infinispan-redhat-summit-quarkus.adoc:25
+#, fuzzy
 msgid "Infinispan Kubernetes Operator"
-msgstr ""
+msgstr "Infinispan Kubernetesオペレーター"
 
 #. type: Plain text
 #: upstream/_posts/2021-05-31-infinispan-redhat-summit-quarkus.adoc:27
+#, fuzzy
 msgid "Enjoy your reading!"
-msgstr ""
+msgstr "読書を楽しんでください。"
