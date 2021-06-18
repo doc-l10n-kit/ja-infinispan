@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-06-18 14:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2021-06-01-dotnet-core-client.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-01-dotnet-core-client.adoc:7
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: An Infinispan .Net Core client over the Hot Rod protocol\n"
+"date:'2021-06-01T12:00:00.000-00:00'\n"
+"author: rigazilla\n"
+"tags: [ \"hotrod\", \".Net Core\", \"client\" \"C#\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-01-dotnet-core-client.adoc:9
+msgid "Dear Infinispanners,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-01-dotnet-core-client.adoc:11
+msgid "The Infinispan team would like to share a new project we're working on: https://github.com/infinispan/Infinispan.Hotrod.Core[Infinispan.Hotrod.Core]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-01-dotnet-core-client.adoc:15
+msgid "Our current .NET client is based on the {cpp} core implementation, which is a solution that has its pros and cons.  It makes it easier to guarantee parity between the {cpp} and C# clients over the time, but has the drawback of tying clients to specific a architecture.  In turn that complicates portability and distribution, making the release lifecycle for those clients more onerous and sluggish."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-01-dotnet-core-client.adoc:18
+msgid "The https://github.com/infinispan/Infinispan.Hotrod.Core[Infinispan.Hotrod.Core] is a 100% C# Hot Rod client designed with the aim of being portable across systems via the .Net Core platform and easier to deploy and consume via the Nuget platform."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-01-dotnet-core-client.adoc:20
+msgid "If you are involved with the .NET Core ecosystem we hope you will find this project of interest. Entry points for the project are:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-01-dotnet-core-client.adoc:22
+msgid "https://github.com/infinispan/Infinispan.Hotrod.Core[Infinispan.Hotrod.Core], current status and news;"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-01-dotnet-core-client.adoc:24
+msgid "https://github.com/infinispan/Infinispan.Hotrod.Core/tree/main/Infinispan.Hotrod.Core.XUnitTest[XUnit test], this will contain the same testsuite of the current https://github.com/infinispan/dotnet-client[.NET client] project with the aim of making it easier to compare with the .NET core client as it matures."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-01-dotnet-core-client.adoc:25
+msgid "https://github.com/infinispan/Infinispan.Hotrod.Core/tree/main/Infinispan.Hotrod.Application[Sample Application], an example of project which uses the client package."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-01-dotnet-core-client.adoc:26
+msgid "https://www.nuget.org/packages/Infinispan.Hotrod.Core/[Nuget] is where the package is published."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-01-dotnet-core-client.adoc:28
+msgid "Hope this will makes C# developers happy!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-01-dotnet-core-client.adoc:30
+msgid "Please let us know your thoughts, a good place for them is the https://github.com/infinispan/Infinispan.Hotrod.Core/issues[issues] page."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-01-dotnet-core-client.adoc:31
+msgid "The Infinispan Team"
+msgstr ""
