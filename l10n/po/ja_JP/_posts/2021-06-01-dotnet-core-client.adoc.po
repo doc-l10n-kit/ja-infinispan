@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2021-06-01-dotnet-core-client.adoc:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-01-dotnet-core-client.adoc:7
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: An Infinispan .Net Core client over the Hot Rod protocol\n"
@@ -33,63 +33,81 @@ msgid ""
 "tags: [ \"hotrod\", \".Net Core\", \"client\" \"C#\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Hot RodプロトコルによるInfinispan .Net Coreクライアント\n"
+"date:'2021-06-01T12:00:00.000-00:00'\n"
+"author: rigazilla\n"
+"tags: [ \"hotrod\", \".Net Core\", \"client\" \"C#\" ]\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-01-dotnet-core-client.adoc:9
+#, fuzzy
 msgid "Dear Infinispanners,"
-msgstr ""
+msgstr "親愛なるInfinispanners。"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-01-dotnet-core-client.adoc:11
+#, fuzzy
 msgid "The Infinispan team would like to share a new project we're working on: https://github.com/infinispan/Infinispan.Hotrod.Core[Infinispan.Hotrod.Core]."
-msgstr ""
+msgstr "Infinispanチームは、私たちが取り組んでいる新しいプロジェクトを紹介したいと思います。 link:https://github.com/infinispan/Infinispan.Hotrod.Core[Infinispan.Hotrod.Core]."
 
 #. type: Plain text
 #: upstream/_posts/2021-06-01-dotnet-core-client.adoc:15
+#, fuzzy
 msgid "Our current .NET client is based on the {cpp} core implementation, which is a solution that has its pros and cons.  It makes it easier to guarantee parity between the {cpp} and C# clients over the time, but has the drawback of tying clients to specific a architecture.  In turn that complicates portability and distribution, making the release lifecycle for those clients more onerous and sluggish."
-msgstr ""
+msgstr "現在の.NETクライアントはC++コアの実装をベースにしていますが、これは長所と短所を併せ持つソリューションです。C++クライアントとC#クライアントの同等性を長期的に保証することは容易ですが、クライアントが特定のアーキテクチャに縛られるという欠点があります。その結果、移植性や配布が複雑になり、これらのクライアントのリリースライフサイクルがより煩雑で遅くなってしまいます。"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-01-dotnet-core-client.adoc:18
+#, fuzzy
 msgid "The https://github.com/infinispan/Infinispan.Hotrod.Core[Infinispan.Hotrod.Core] is a 100% C# Hot Rod client designed with the aim of being portable across systems via the .Net Core platform and easier to deploy and consume via the Nuget platform."
-msgstr ""
+msgstr "link:https://github.com/infinispan/Infinispan.Hotrod.Core[Infinispan.Hotrod.Core]は、100%C#のHot Rodクライアントで、.Net Coreプラットフォームによるシステム間の移植性と、Nugetプラットフォームによる展開と利用のしやすさを目的に設計されています。"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-01-dotnet-core-client.adoc:20
+#, fuzzy
 msgid "If you are involved with the .NET Core ecosystem we hope you will find this project of interest. Entry points for the project are:"
-msgstr ""
+msgstr ".NET Coreのエコシステムに関わっている方は、このプロジェクトに興味を持っていただけると思います。このプロジェクトのエントリーポイントは以下の通りです。"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-01-dotnet-core-client.adoc:22
+#, fuzzy
 msgid "https://github.com/infinispan/Infinispan.Hotrod.Core[Infinispan.Hotrod.Core], current status and news;"
-msgstr ""
+msgstr "link:https://github.com/infinispan/Infinispan.Hotrod.Core[Infinispan.Hotrod.Core]の現状とニュースをご紹介します。"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-01-dotnet-core-client.adoc:24
+#, fuzzy
 msgid "https://github.com/infinispan/Infinispan.Hotrod.Core/tree/main/Infinispan.Hotrod.Core.XUnitTest[XUnit test], this will contain the same testsuite of the current https://github.com/infinispan/dotnet-client[.NET client] project with the aim of making it easier to compare with the .NET core client as it matures."
-msgstr ""
+msgstr "link:https://github.com/infinispan/Infinispan.Hotrod.Core/tree/main/Infinispan.Hotrod.Core.XUnitTest[XUnitテスト]は、現在の link:https://github.com/infinispan/dotnet-client[.NETクライアントプロジェクト]と同じテストスイートを含んでおり、成熟した.NETコアクライアントとの比較を容易にすることを目的としています。"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-01-dotnet-core-client.adoc:25
+#, fuzzy
 msgid "https://github.com/infinispan/Infinispan.Hotrod.Core/tree/main/Infinispan.Hotrod.Application[Sample Application], an example of project which uses the client package."
-msgstr ""
+msgstr "クライアントパッケージを使用したプロジェクトの例である link:https://github.com/infinispan/Infinispan.Hotrod.Core/tree/main/Infinispan.Hotrod.Application[「Sample Application]」。"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-01-dotnet-core-client.adoc:26
+#, fuzzy
 msgid "https://www.nuget.org/packages/Infinispan.Hotrod.Core/[Nuget] is where the package is published."
-msgstr ""
+msgstr "link:https://www.nuget.org/packages/Infinispan.Hotrod.Core/[Nuget]はパッケージが公開されている場所です。"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-01-dotnet-core-client.adoc:28
+#, fuzzy
 msgid "Hope this will makes C# developers happy!"
-msgstr ""
+msgstr "これでC#開発者の皆さんが喜んでくれることを願っています。"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-01-dotnet-core-client.adoc:30
+#, fuzzy
 msgid "Please let us know your thoughts, a good place for them is the https://github.com/infinispan/Infinispan.Hotrod.Core/issues[issues] page."
-msgstr ""
+msgstr "ご意見・ご感想をお聞かせください。ご意見・ご感想は link:https://github.com/infinispan/Infinispan.Hotrod.Core/issues[issue]ページに掲載しています。"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-01-dotnet-core-client.adoc:31
+#, fuzzy
 msgid "The Infinispan Team"
-msgstr ""
+msgstr "Infinispanチーム"
