@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2021-06-29-js-client.adoc:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-29-js-client.adoc:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan Node.js client supports authentication\n"
@@ -34,89 +34,103 @@ msgid ""
 "tags: [ \"hotrod\", \"Node.js\", \"client\", \"javascript\", \"release\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan Node.jsクライアントが認証をサポート\n"
+"permalink: /blog/:year/:month/:day/infinispan-js-client\n"
+"date: '2021-06-29T12:00:00.000-00:00'\n"
+"author: karesti\n"
+"tags: [ \"hotrod\", \"Node.js\", \"client\", \"javascript\", \"release\" ]\n"
+"---\n"
 
 #. type: Title ==
 #: upstream/_posts/2021-06-29-js-client.adoc:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Node.js Client 0.9.0"
-msgstr ""
+msgstr "Node.jsクライアント 0.9.0"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-29-js-client.adoc:14
+#, fuzzy
 msgid "Infinispan Node.js client version 0.9.0 was released last week with added support for different SASL authentication mechanisms.  Up to now, our Node.js client could connect to Infinispan Server security realms with disabled authentication."
-msgstr ""
+msgstr "Infinispan Node.jsクライアントのバージョン0.9.0が先週リリースされ、様々なSASL認証メカニズムのサポートが追加されました。これまで、Node.jsクライアントは、認証を無効にしてInfinispanサーバのセキュリティ・レルムに接続することができました。"
 
 #. type: Title ===
 #: upstream/_posts/2021-06-29-js-client.adoc:15
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "DIGEST-MD5"
-msgstr ""
+msgstr "DIGEST-MD5"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-29-js-client.adoc:17
+#, fuzzy
 msgid "Uses the MD5 hashing algorithm in addition to nonces to encrypt credentials."
-msgstr ""
+msgstr "認証情報の暗号化には、ノンセンスに加えてMD5ハッシングアルゴリズムを使用します。"
 
 #. type: Title ===
 #: upstream/_posts/2021-06-29-js-client.adoc:18
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "SCRAM"
-msgstr ""
+msgstr "SCRAM"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-29-js-client.adoc:20
+#, fuzzy
 msgid "Uses salt values in addition to hashing algorithms and nonce values to encrypt credentials. Hot Rod endpoints support SCRAM-SHA-1, SCRAM-SHA-256, SCRAM-SHA-384, SCRAM-SHA-512 hashing algorithms, in order of strength."
-msgstr ""
+msgstr "認証情報の暗号化には、ハッシュアルゴリズムとnonce値に加えてソルト値を使用します。Hot Rodのエンドポイントは、ハッシュアルゴリズムとしてSCRAM-SHA-1、SCRAM-SHA-256、SCRAM-SHA-384、SCRAM-SHA-512を強度の高い順にサポートしています。"
 
 #. type: Title ===
 #: upstream/_posts/2021-06-29-js-client.adoc:21
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "EXTERNAL"
-msgstr ""
+msgstr "EXTERNAL"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-29-js-client.adoc:23
+#, fuzzy
 msgid "Uses client certificates to provide valid identities to Infinispan Server and enable encryption."
-msgstr ""
+msgstr "クライアント証明書を使用して、Infinispan Serverに有効なIDを提供し、暗号化を可能にします。"
 
 #. type: Title ===
 #: upstream/_posts/2021-06-29-js-client.adoc:24
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "OAUTHBEARER"
-msgstr ""
+msgstr "OAUTHBEARER"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-29-js-client.adoc:26
+#, fuzzy
 msgid "Uses tokens obtained via an OAuth 2.0 provider to securely connect to Infinispan Server."
-msgstr ""
+msgstr "OAuth 2.0プロバイダ経由で取得したトークンを使用して、Infinispan Serverに安全に接続します。"
 
 #. type: Title ===
 #: upstream/_posts/2021-06-29-js-client.adoc:27
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "PLAIN:"
-msgstr ""
+msgstr "PLAINです。"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-29-js-client.adoc:29
+#, fuzzy
 msgid "Sends credentials in plain text (unencrypted) over the wire in a way that is similar to HTTP BASIC authentication."
-msgstr ""
+msgstr "HTTP BASIC認証に似た方法で、認証情報をプレーンテキスト（暗号化されていない）で送信します。"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-29-js-client.adoc:31
+#, fuzzy
 msgid "To secure Infinispan credentials, you should use PLAIN authentication only in combination with TLS encryption."
-msgstr ""
+msgstr "Infinispanの認証情報を保護するためには、PLAIN認証をTLS暗号化と組み合わせてのみ使用する必要があります。"
 
 #. type: Title ==
 #: upstream/_posts/2021-06-29-js-client.adoc:33
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Run the Infinispan Server"
-msgstr ""
+msgstr "Infinispanサーバの起動"
 
 #. type: Block title
 #: upstream/_posts/2021-06-29-js-client.adoc:35
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Run the Infinispan Server with Docker or Podman"
-msgstr ""
+msgstr "InfinispanサーバをDockerまたはPodmanで実行する"
 
 #. type: delimited block -
 #: upstream/_posts/2021-06-29-js-client.adoc:39
@@ -132,14 +146,15 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2021-06-29-js-client.adoc:45
+#, fuzzy
 msgid "If you are using Docker for Mac, there is a known limitation. You will need to https://infinispan.org/download/[download the server distribution] and run the server manually."
-msgstr ""
+msgstr "Docker for Macをお使いの場合、既知の制限があります。 link:https://infinispan.org/download/[サーバーのディストリビューションをダウンロードし]て、手動でサーバーを実行する必要があります。"
 
 #. type: Block title
 #: upstream/_posts/2021-06-29-js-client.adoc:46
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Run the Infinispan Server from the file system"
-msgstr ""
+msgstr "ファイルシステムからのInfinispanサーバの実行"
 
 #. type: delimited block -
 #: upstream/_posts/2021-06-29-js-client.adoc:51
@@ -151,20 +166,21 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_posts/2021-06-29-js-client.adoc:53
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Create a cache from Infinispan Console"
-msgstr ""
+msgstr "Infinispanコンソールからのキャッシュ作成"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-29-js-client.adoc:57
+#, fuzzy
 msgid "Access the Infinispan Console in http://localhost:11222/[http://localhost:11222/] and create a text based cache, named it 'my-cache' with the provided configuration."
-msgstr ""
+msgstr "link:http://localhost:11222/[http://localhost:11222/]で Infinispan コンソールにアクセスし、テキストベースのキャッシュを作成し、提供された設定で「my-cache」と名付けます。"
 
 #. type: Block title
 #: upstream/_posts/2021-06-29-js-client.adoc:58
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Connect to Infinispan"
-msgstr ""
+msgstr "Infinispanへの接続"
 
 #. type: delimited block -
 #: upstream/_posts/2021-06-29-js-client.adoc:70
@@ -183,20 +199,21 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_posts/2021-06-29-js-client.adoc:72
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Use the Node.js client in your application"
-msgstr ""
+msgstr "アプリケーションでNode.jsクライアントを使用する"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-29-js-client.adoc:75
+#, fuzzy
 msgid "Add the dependency to your project."
-msgstr ""
+msgstr "プロジェクトに依存関係を追加します。"
 
 #. type: Block title
 #: upstream/_posts/2021-06-29-js-client.adoc:76
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "package.json"
-msgstr ""
+msgstr "パッケージ.json"
 
 #. type: delimited block -
 #: upstream/_posts/2021-06-29-js-client.adoc:82
@@ -209,14 +226,15 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2021-06-29-js-client.adoc:85
+#, fuzzy
 msgid "Configure the Infinispan Node.js client to connect with authentication and then check the created cache entry from the console."
-msgstr ""
+msgstr "Infinispan Node.jsクライアントを認証で接続するように設定し、作成されたキャッシュエントリをコンソールから確認します。"
 
 #. type: Block title
 #: upstream/_posts/2021-06-29-js-client.adoc:86
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "application.js"
-msgstr ""
+msgstr "application.js"
 
 #. type: delimited block -
 #: upstream/_posts/2021-06-29-js-client.adoc:99
@@ -248,16 +266,18 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_posts/2021-06-29-js-client.adoc:108
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "To go further"
-msgstr ""
+msgstr "さらに進むために"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-29-js-client.adoc:112
+#, fuzzy
 msgid "Full client documentation is now available in the https://infinispan.org/docs/hotrod-clients/js/latest/js_client.html[Hot Rod JS Client Guide]."
-msgstr ""
+msgstr "link:https://infinispan.org/docs/hotrod-clients/js/latest/js_client.html[Hot Rod JSクライアントガイド]では、クライアント向けの完全なドキュメントを提供しています。"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-29-js-client.adoc:113
+#, fuzzy
 msgid "Jira tracker for this client is available https://issues.redhat.com/projects/HRJS[here]."
-msgstr ""
+msgstr "このクライアントのJiraトラッカーは link:https://issues.redhat.com/projects/HRJS[こちら]です。"
