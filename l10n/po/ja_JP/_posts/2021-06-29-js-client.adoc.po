@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-01 11:11+0000\n"
+"POT-Creation-Date: 2021-07-01 13:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,7 @@ msgstr "Node.jsクライアント 0.9.0"
 msgid "Infinispan Node.js client version 0.9.0 was released last week with added support for different SASL authentication mechanisms.  Up to now, our Node.js client could connect to Infinispan Server security realms with disabled authentication."
 msgstr "Infinispan Node.jsクライアントのバージョン0.9.0が先週リリースされ、様々なSASL認証メカニズムのサポートが追加されました。これまで、Node.jsクライアントは、認証を無効にしてInfinispanサーバのセキュリティ・レルムに接続することができました。"
 
-#. type: Title ===
+#. type: Title =====
 #: upstream/_posts/2021-06-29-js-client.adoc:15
 #, fuzzy, no-wrap
 msgid "DIGEST-MD5"
@@ -66,7 +66,7 @@ msgstr "DIGEST-MD5"
 msgid "Uses the MD5 hashing algorithm in addition to nonces to encrypt credentials."
 msgstr "認証情報の暗号化には、ノンセンスに加えてMD5ハッシングアルゴリズムを使用します。"
 
-#. type: Title ===
+#. type: Title =====
 #: upstream/_posts/2021-06-29-js-client.adoc:18
 #, fuzzy, no-wrap
 msgid "SCRAM"
@@ -78,7 +78,7 @@ msgstr "SCRAM"
 msgid "Uses salt values in addition to hashing algorithms and nonce values to encrypt credentials. Hot Rod endpoints support SCRAM-SHA-1, SCRAM-SHA-256, SCRAM-SHA-384, SCRAM-SHA-512 hashing algorithms, in order of strength."
 msgstr "認証情報の暗号化には、ハッシュアルゴリズムとnonce値に加えてソルト値を使用します。Hot Rodのエンドポイントは、ハッシュアルゴリズムとしてSCRAM-SHA-1、SCRAM-SHA-256、SCRAM-SHA-384、SCRAM-SHA-512を強度の高い順にサポートしています。"
 
-#. type: Title ===
+#. type: Title =====
 #: upstream/_posts/2021-06-29-js-client.adoc:21
 #, fuzzy, no-wrap
 msgid "EXTERNAL"
@@ -90,7 +90,7 @@ msgstr "EXTERNAL"
 msgid "Uses client certificates to provide valid identities to Infinispan Server and enable encryption."
 msgstr "クライアント証明書を使用して、Infinispan Serverに有効なIDを提供し、暗号化を可能にします。"
 
-#. type: Title ===
+#. type: Title =====
 #: upstream/_posts/2021-06-29-js-client.adoc:24
 #, fuzzy, no-wrap
 msgid "OAUTHBEARER"
@@ -102,7 +102,7 @@ msgstr "OAUTHBEARER"
 msgid "Uses tokens obtained via an OAuth 2.0 provider to securely connect to Infinispan Server."
 msgstr "OAuth 2.0プロバイダ経由で取得したトークンを使用して、Infinispan Serverに安全に接続します。"
 
-#. type: Title ===
+#. type: Title =====
 #: upstream/_posts/2021-06-29-js-client.adoc:27
 #, fuzzy, no-wrap
 msgid "PLAIN:"
