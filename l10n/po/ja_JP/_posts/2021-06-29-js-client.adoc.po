@@ -1,0 +1,263 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-07-01 11:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2021-06-29-js-client.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-29-js-client.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan Node.js client supports authentication\n"
+"permalink: /blog/:year/:month/:day/infinispan-js-client\n"
+"date: '2021-06-29T12:00:00.000-00:00'\n"
+"author: karesti\n"
+"tags: [ \"hotrod\", \"Node.js\", \"client\", \"javascript\", \"release\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-06-29-js-client.adoc:10
+#, no-wrap
+msgid "Node.js Client 0.9.0"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-29-js-client.adoc:14
+msgid "Infinispan Node.js client version 0.9.0 was released last week with added support for different SASL authentication mechanisms.  Up to now, our Node.js client could connect to Infinispan Server security realms with disabled authentication."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2021-06-29-js-client.adoc:15
+#, no-wrap
+msgid "DIGEST-MD5"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-29-js-client.adoc:17
+msgid "Uses the MD5 hashing algorithm in addition to nonces to encrypt credentials."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2021-06-29-js-client.adoc:18
+#, no-wrap
+msgid "SCRAM"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-29-js-client.adoc:20
+msgid "Uses salt values in addition to hashing algorithms and nonce values to encrypt credentials. Hot Rod endpoints support SCRAM-SHA-1, SCRAM-SHA-256, SCRAM-SHA-384, SCRAM-SHA-512 hashing algorithms, in order of strength."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2021-06-29-js-client.adoc:21
+#, no-wrap
+msgid "EXTERNAL"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-29-js-client.adoc:23
+msgid "Uses client certificates to provide valid identities to Infinispan Server and enable encryption."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2021-06-29-js-client.adoc:24
+#, no-wrap
+msgid "OAUTHBEARER"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-29-js-client.adoc:26
+msgid "Uses tokens obtained via an OAuth 2.0 provider to securely connect to Infinispan Server."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2021-06-29-js-client.adoc:27
+#, no-wrap
+msgid "PLAIN:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-29-js-client.adoc:29
+msgid "Sends credentials in plain text (unencrypted) over the wire in a way that is similar to HTTP BASIC authentication."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-29-js-client.adoc:31
+msgid "To secure Infinispan credentials, you should use PLAIN authentication only in combination with TLS encryption."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-06-29-js-client.adoc:33
+#, no-wrap
+msgid "Run the Infinispan Server"
+msgstr ""
+
+#. type: Block title
+#: upstream/_posts/2021-06-29-js-client.adoc:35
+#, no-wrap
+msgid "Run the Infinispan Server with Docker or Podman"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-06-29-js-client.adoc:39
+#, no-wrap
+msgid "docker run -it -p 11222:11222 -e USER=\"admin\" -e PASS=\"password\" quay.io/infinispan/server:12.1\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-06-29-js-client.adoc:41
+#, no-wrap
+msgid "podman run -it -p 11222:11222 -e USER=\"admin\" -e PASS=\"password\" --net=host quay.io/infinispan/server:12.1\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-29-js-client.adoc:45
+msgid "If you are using Docker for Mac, there is a known limitation. You will need to https://infinispan.org/download/[download the server distribution] and run the server manually."
+msgstr ""
+
+#. type: Block title
+#: upstream/_posts/2021-06-29-js-client.adoc:46
+#, no-wrap
+msgid "Run the Infinispan Server from the file system"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-06-29-js-client.adoc:51
+#, no-wrap
+msgid ""
+"./bin/cli.sh user create admin -p password\n"
+"./bin/server.sh\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-06-29-js-client.adoc:53
+#, no-wrap
+msgid "Create a cache from Infinispan Console"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-29-js-client.adoc:57
+msgid "Access the Infinispan Console in http://localhost:11222/[http://localhost:11222/] and create a text based cache, named it 'my-cache' with the provided configuration."
+msgstr ""
+
+#. type: Block title
+#: upstream/_posts/2021-06-29-js-client.adoc:58
+#, no-wrap
+msgid "Connect to Infinispan"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-06-29-js-client.adoc:70
+#, no-wrap
+msgid ""
+"{\n"
+"  \"distributed-cache\": {\n"
+"    \"mode\": \"SYNC\",\n"
+"    \"encoding\": {\n"
+"      \"media-type\": \"text/plain\"\n"
+"    },\n"
+"    \"statistics\": true\n"
+"  }\n"
+"}\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-06-29-js-client.adoc:72
+#, no-wrap
+msgid "Use the Node.js client in your application"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-29-js-client.adoc:75
+msgid "Add the dependency to your project."
+msgstr ""
+
+#. type: Block title
+#: upstream/_posts/2021-06-29-js-client.adoc:76
+#, no-wrap
+msgid "package.json"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-06-29-js-client.adoc:82
+#, no-wrap
+msgid ""
+"\"dependencies\": {\n"
+"\"infinispan\": \"^0.9.0\"\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-29-js-client.adoc:85
+msgid "Configure the Infinispan Node.js client to connect with authentication and then check the created cache entry from the console."
+msgstr ""
+
+#. type: Block title
+#: upstream/_posts/2021-06-29-js-client.adoc:86
+#, no-wrap
+msgid "application.js"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-06-29-js-client.adoc:99
+#, no-wrap
+msgid ""
+"var connected = infinispan.client({port: 11222, host: '127.0.0.1'},\n"
+"{\n"
+"    cacheName: 'my-cache',\n"
+"    authentication: {\n"
+"        enabled: true,\n"
+"        saslMechanism: 'DIGEST-MD5',\n"
+"        userName: 'admin',\n"
+"        password: 'password'\n"
+"    }\n"
+"});\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-06-29-js-client.adoc:106
+#, no-wrap
+msgid ""
+"connected.then(function (client) {\n"
+"    return client.put('key', 'value')\n"
+"    .finally(function() {\n"
+"    return client.disconnect();\n"
+"  });\n"
+"});\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-06-29-js-client.adoc:108
+#, no-wrap
+msgid "To go further"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-29-js-client.adoc:112
+msgid "Full client documentation is now available in the https://infinispan.org/docs/hotrod-clients/js/latest/js_client.html[Hot Rod JS Client Guide]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-06-29-js-client.adoc:113
+msgid "Jira tracker for this client is available https://issues.redhat.com/projects/HRJS[here]."
+msgstr ""
