@@ -82,7 +82,7 @@ jobs:
       - name: Deploy to GitHub Pages
         # Deploy the site to GitHub Pages by committing and pushing the site
         run: |
-#          echo "ja.infinispan.org" > docs/CNAME #TODO: uncomment
+          #echo "ja.infinispan.org" > docs/CNAME #TODO: uncomment
           git add -f docs
 
           set +e
