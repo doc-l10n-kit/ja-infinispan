@@ -42,37 +42,57 @@ jobs:
       - name: Push changes
         run: bin/push-changes "Update tmx"
 
-
   deploy-ja:
-    name: Deploy Japanese translation to surge.sh
+    name: Deploy Japanese translation to GitHub pages
+    # Deploy a localized site to the GitHub pages
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
+        # Checkout target revision from git repository
         uses: actions/checkout@v2
       - name: Cache bundle directory
+        # Cache ruby bundle directory to speed up build
         uses: actions/cache@v2
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
       - name: Setup build env
+        # Setup build environment(install runtime, library, etc.)
         run: |
           bin/setup-build-env
       - name: Configure git
+        # Setup git configuration
         run: |
           bin/configure-git
 
       - name: Exec po4a-translate
+        # Execute po4a-translate to translate files based on .po files
         run: bin/exec-po4a-translate
 
       - name: Apply override files
+        # Some files cannot be translated by po4a utility.
+        # In that case, the files are copied to `l10n/override/<locale>/` directory and translated manually
+        # This step copies the stored translated files to corresponding location.
         run: bin/exec-override
 
       - name: Exec jekyll
+        # Execute jekyll to build a localized site
         run: bin/exec-jekyll
 
-      - name: Deploy to surge.sh
+      - name: Deploy to GitHub Pages
+        # Deploy the site to GitHub Pages by committing and pushing the site
         run: |
-          bin/deploy
-        env:
-          SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
-          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+#          echo "ja.infinispan.org" > docs/CNAME #TODO: uncomment
+          git add -f docs
+
+          set +e
+          git diff --cached --exit-code --quiet
+
+          if [[ $? -eq 1 ]] ; then
+            set -e
+            git checkout -b docs
+            git commit -m "Update GitHub Pages"
+            git fetch
+            git push -f origin docs
+          fi
+          set -e
