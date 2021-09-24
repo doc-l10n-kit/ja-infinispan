@@ -1,0 +1,201 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-24 17:15+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 13.0.0.CR1\n"
+"permalink: /blog/:year/:month/:day/infinispan-13-cr1\n"
+"date: '2021-09-23T12:00:00.000-00:00'\n"
+"author: karesti\n"
+"tags: [ \"release\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:10
+#, no-wrap
+msgid "Infinispan 13.0.0.CR1"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:13
+msgid "Dear Infinispan community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:16
+msgid "We've just released 13.0.0.CR1 which brings you several new features along with a number of enhancements and bug fixes.  Here is a non-exhaustive list of Infinispan 13 has in store:"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:17
+#, no-wrap
+msgid "Mutable cache configuration"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:19
+msgid "You can now update cache configuration at runtime with the CLI."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:20
+#, no-wrap
+msgid "Improved cluster upgrades"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:22
+msgid "We've done quite a lot of work on rolling upgrade operations in Infinispan 13, making the process smoother from the REST API, CLI, and with our Kubernetes Operator."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:23
+#, no-wrap
+msgid "Re-balancing operations"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:25
+msgid "Control cluster topology re-balancing from the REST API, CLI, and Console."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:26
+#, no-wrap
+msgid "Persistent storage improvements"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:29
+msgid "File-based caches stores now default to SoftIndexFileStore."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:30
+msgid "We've added a new SQL cache store."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:31
+#, no-wrap
+msgid "Cross-site replication"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:34
+msgid "For global Infinispan clusters, this release brings a number of improvements:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:36
+msgid "Cross-site replication operations from the Console."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:37
+msgid "Additional statistics for increased observability."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:38
+msgid "Better logging details for cross-site cluster views."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:39
+#, no-wrap
+msgid "Simplified server cluster security"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:41
+msgid "Infinispan Server can automatically enable SSL for the cluster transport."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:42
+#, no-wrap
+msgid "Queries"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:45
+msgid "Added support for local query operations."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:46
+#, no-wrap
+msgid "Helm charts"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:49
+msgid "We've added an Infinispan Helm chart for deploying clusters to Kubernetes."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:50
+#, no-wrap
+msgid "Documentation and tutorials"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:53
+msgid "We've made a number of documentation improvements this release, including:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:55
+msgid "A new guide for Hot Rod JS clients."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:56
+msgid "Better organization and documentation for Infinispan simple tutorials."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:57
+msgid "Replaced the Integration Guide with a dedicated guide for Spring users as well as a guide for Hibernate caches."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:58
+msgid "A brand new guide for Indexing and Querying."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:59
+msgid "Overhauled and updated Configuration Guide."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-09-23-infinispan-13.0.0.CR1.adoc:60
+msgid "Additional JSON and YAML configuration examples."
+msgstr ""
