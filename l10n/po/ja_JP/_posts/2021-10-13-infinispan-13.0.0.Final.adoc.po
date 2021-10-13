@@ -1,0 +1,599 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-10-13 10:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 13.0.0.Final\n"
+"permalink: /blog/:year/:month/:day/infinispan-13-final\n"
+"date: '2021-10-13T00:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:10
+#, no-wrap
+msgid "Infinispan 13.0.0.Final"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:13
+msgid "Triskaidekaphobia (/ˌtrɪskaɪˌdɛkəˈfoʊbiə/ TRIS-kye-DEK-ə-FOH-bee-ə, /ˌtrɪskə-/ TRIS-kə-; from Ancient Greek τρεισκαίδεκα (treiskaídeka) 'thirteen', and Ancient Greek φόβος (phóbos) 'fear') is fear or avoidance of the number 13."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:15
+msgid "However, as you should know by now, the Infinispan team is fearless, and for this reason we are not afraid to proudly announce “Infinispan 13 (Triskaidekaphobia)”. In the grand tradition of our codenames, this one also happens to be the name of a beer (https://www.thebreweryofbrokendreams.com/triskaidekaphobia)"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:16
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:17
+#, no-wrap
+msgid "Triskaidekaphobia"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:17
+#, no-wrap
+msgid "/assets/images/blog/triskaidekaphobia.jpg"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:20
+msgid "So, don't be scared and let's dive into all the new great things that are in this release."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:22
+#, no-wrap
+msgid "Core"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:24
+#, no-wrap
+msgid "*Polyglot configuration*: XML, JSON and YAML can now be used interchangeably to configure every part of Infinispan. Here is an example of how to configure a cache with eviction and Protobuf encoding:\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:31
+#, no-wrap
+msgid ""
+"<distributed-cache>\n"
+"  <encoding media-type=\"application/x-protostream\"/>\n"
+"  <memory max-size=\"1.5GB\" when-full=\"REMOVE\"/>\n"
+"</distributed-cache>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:46
+#, no-wrap
+msgid ""
+"{\n"
+"  \"distributed-cache\" : {\n"
+"    \"encoding\" : {\n"
+"      \"media-type\" : \"application/x-protostream\"\n"
+"    },\n"
+"    \"memory\" : {\n"
+"      \"max-size\" : \"1.5GB\",\n"
+"      \"when-full\" : \"REMOVE\"\n"
+"    }\n"
+"  }\n"
+"}\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:56
+#, no-wrap
+msgid ""
+"distributedCache:\n"
+"  encoding:\n"
+"    mediaType: \"application/x-protostream\"\n"
+"  memory:\n"
+"    maxSize: \"1.5GB\"\n"
+"    whenFull: \"REMOVE\"\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:59
+#, no-wrap
+msgid "*Max-idle asynchronous touch*: max-idle expiration makes reading an entry behave like a write: all owners must update the last access timestamp. With asynchronous touch the reader does not wait for their confirmation, and reading a max-idle entry is as fast as reading any other entry.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:60
+#, no-wrap
+msgid "*Metrics for cache size are now optional*: calculating the accurate size of a cache is an expensive operation. Starting with this release, `currentNumberOfEntries` and `currentNumberOfEntriesInMemory` and `totalNumberOfEntries` will return `-1` by default. You can re-enable accurate computation of these metrics if you really need them. We will be adding high-performance estimates for these metrics in a future release.\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:61
+#, no-wrap
+msgid "Query"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:64
+#, no-wrap
+msgid "*Delete by query*: Ickle (Infinispan's query language) now supports `DELETE FROM` queries using all of the supported clauses, both for indexed and non-indexed caches:\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:68
+#, no-wrap
+msgid "query.create(\"DELETE FROM books WHERE page_count > 500\").executeStatement();\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:71
+#, no-wrap
+msgid "Persistence"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:74
+msgid "The Soft-index file store is now our default persistent file-based cache store. Compared to the old single-file store, it no longer needs to store all keys in memory, plus it supports persistent memory via the awesome link:https://github.com/jhalliday/mashona[Mashona] library. Old file stores will be automatically migrated on first use."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:75
+#, no-wrap
+msgid "*SQL cache store* which maps database tables and queries to Protobuf, greatly simplifying accessing your existing data. For example, you can expose a single table `books`:\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:84
+#, no-wrap
+msgid ""
+"<table-jdbc-store table-name=\"books\">\n"
+"    <schema message-name=\"books_value\"\n"
+"            key-message-name=\"books_key\"\n"
+"            package=\"library\"\n"
+"            embedded-key=\"true\"/>\n"
+"</table-jdbc-store>\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:87
+msgid "or use your own queries"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:104
+#, no-wrap
+msgid ""
+"<query-jdbc-store>\n"
+"    <queries key-columns=\"isbn\">\n"
+"        <select-single>SELECT isbn, title FROM books WHERE isbn = :isbn</select-single>\n"
+"        <select-all>SELECT isbn, title FROM books</select-all>\n"
+"        <delete>DELETE FROM books WHERE isbn = :key</delete>\n"
+"        <delete-all>DELETE FROM books</delete-all>\n"
+"        <upsert>INSERT INTO books (isbn, title) VALUES (:key, :value) ON CONFLICT (isbn) DO UPDATE SET title = :value</upsert>\n"
+"        <size>SELECT COUNT(*) FROM books</size>\n"
+"    </queries>\n"
+"    <schema message-name=\"books_value\"\n"
+"            key-message-name=\"books_key\"\n"
+"            package=\"library\"\n"
+"            embedded-key=\"true\"/>\n"
+"</query-jdbc-store>\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:106
+#, no-wrap
+msgid "Server"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:109
+#, no-wrap
+msgid "*Configuration overlays*: you can specify multiple configuration files, in any of the supported formats, and they will be combined to form the final configuration. You can even mix formats:\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:113
+#, no-wrap
+msgid "server.sh -c base.xml -c layer.yml -c custom.json\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:116
+#, no-wrap
+msgid "*Mutable cache configuration*: you can now update cache configurations cluster-wide at runtime with the CLI. The following example changes the maximum number of entries of a cache:\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:120
+#, no-wrap
+msgid "alter cache mycache --attribute=memory.max-count --value=10000\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:123
+#, no-wrap
+msgid "*REST listeners*: it’s now possible to listen to cache events over HTTP using Server-Sent Events.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:125
+#, no-wrap
+msgid "*Thread Pool Consolidation*: The prior Infinispan non blocking thread pool has been consolidated with the Netty event loop reducing the number of threads required in the server.\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:134
+#, no-wrap
+msgid ""
+"curl --digest -u user:password -N http://127.0.0.1:11222/rest/v2/caches/mycache?action=listen\n"
+"event: cache-entry-created\n"
+"data: \n"
+"data: {\n"
+"data:    \"_type\": \"string\",\n"
+"data:    \"_value\": \"k1\"\n"
+"data: }\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:141
+#, no-wrap
+msgid ""
+"event: cache-entry-modified\n"
+"data: \n"
+"data: {\n"
+"data:    \"_type\": \"string\",\n"
+"data:    \"_value\": \"k1\"\n"
+"data: }\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:148
+#, no-wrap
+msgid ""
+"event: cache-entry-removed\n"
+"data: \n"
+"data: {\n"
+"data:    \"_type\": \"string\",\n"
+"data:    \"_value\": \"k1\"\n"
+"data: }\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:151
+#, no-wrap
+msgid "*Rebalancing management*: control cluster re-balancing from the REST API, CLI, and Console.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:152
+#, no-wrap
+msgid "*Simple TLS for clustering*: Infinispan Server can automatically enable TLS for the cluster transport simply by specifying a security realm with a keystore/truststore server identity:\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:158
+#, no-wrap
+msgid ""
+"<cache-container name=\"default\" statistics=\"true\">\n"
+"  <transport cluster=\"cluster\" server:security-realm=\"cluster\"/>\n"
+"</cache-container>\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:161
+#, no-wrap
+msgid "*Distributed Security Realm*: a server security realm which can aggregate multiple sub-realms, trying each one in turn. For example, you can use this to support both certificate and password authentication on the same server.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:162
+#, no-wrap
+msgid "*PEM key/trust stores*: Support for PEM files for both keys and certificates without the need to convert them to Java keystores first.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:163
+#, no-wrap
+msgid "Full support for TLSv1.3 via native OpenSSL.\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:164
+#, no-wrap
+msgid "Cluster Migration"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:167
+msgid "We’ve done quite a lot of work on the cluster igration operations, making the process smoother from the REST API, CLI, and with our Kubernetes Operator"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:169
+msgid "Manually changing configurations of the cache(s) is no longer necessary"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:170
+msgid "New methods in the REST API to control the migration"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:171
+msgid "Caches created dynamically are now supported"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:172
+msgid "Simplified configuration"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:173
+#, no-wrap
+msgid "Cross-site replication"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:176
+msgid "Improve cross-site replication observability"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:177
+msgid "The cross-site view (sorted list of site names currently online) and relay-nodes (members who are responsible for relaying messages between sites) are now exposed via CLI/REST/JMX."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:178
+msgid "Detailed metrics exposed per site and per cache (response times, number of messages)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:179
+msgid "Improve some error messages with more details."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:180
+#, no-wrap
+msgid "Infinispan Console"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:183
+msgid "Encoding-aware entry editing"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:184
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:185
+#, no-wrap
+msgid "Text caches"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:185
+#, no-wrap
+msgid "/assets/images/blog/thumb-encodingTextCache.png"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:187
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:188
+#, no-wrap
+msgid "Protobuf caches"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:188
+#, no-wrap
+msgid "/assets/images/blog/thumb-encodingProtobufCache.png"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:191
+msgid "Rebalancing operations per-cache and per-cluster"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:192
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:193
+#, no-wrap
+msgid "Managing rebalancing at the cluster level"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:193
+#, no-wrap
+msgid "/assets/images/blog/thumb-rebalancingOffClusterLevel.png"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:195
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:196
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:198
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:199
+#, no-wrap
+msgid "Managing rebalancing per-cache"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:196
+#, no-wrap
+msgid "/assets/images/blog/thumb-rebalancing-per-cache-1.png"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:199
+#, no-wrap
+msgid "/assets/images/blog/thumb-rebalancing-per-cache-2.png"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:202
+#, no-wrap
+msgid "Cloud"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:205
+#, no-wrap
+msgid "*Helm charts*: create Infinispan clusters with a Helm chart that lets you specify values for build and deployment configuration. Server configuration is declared using Yaml in .Values. This allows the server configuration to be customized entirely without having to update helm-chart templates locally.\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:206
+#, no-wrap
+msgid "*Operator*: many fixes and improvements:\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:207
+#, no-wrap
+msgid "Migrated operator-sdk from v0.18.0 -> v1.3.2\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:208
+#, no-wrap
+msgid "Migrated packagemanifest -> OLM bundle format\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:209
+#, no-wrap
+msgid "K8s 1.22 deprecated APIs removed\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:210
+#, no-wrap
+msgid "Kubernetes CLI"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:213
+msgid "Easily connect a CLI to an operator-managed Infinispan cluster without having to specify connection details:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:218
+#, no-wrap
+msgid ""
+"kubectl infinispan shell -n default mycluster\n"
+"[mycluster-0-37266@mycluster//containers/default]>\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:220
+#, no-wrap
+msgid "Testing"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:223
+msgid "An InfinispanContainer which makes it easy to test your applications via the awesome link:https://www.testcontainers.org/[Testcontainers] library"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:234
+#, no-wrap
+msgid ""
+"try (InfinispanContainer container = new InfinispanContainer()) {\n"
+"  container.start();\n"
+"    try (RemoteCacheManager cacheManager = container.getRemoteCacheManager()) {\n"
+"      RemoteCache<Object, Object> testCache = cacheManager.administration().getOrCreateCache(\"test\", DefaultTemplate.DIST_SYNC);\n"
+"      testCache.put(\"key\", \"value\");\n"
+"      assertEquals(\"value\", testCache.get(\"key\"));\n"
+"    }\n"
+"}\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:236
+#, no-wrap
+msgid "Clustered Counters"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:239
+msgid "Strong counters can now expire (experimental). The counter value is reset to its initial value which may be useful to code a cluster-wide rate limiter."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:240
+#, no-wrap
+msgid "Other"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:243
+msgid "Works with JDK 17 (and still works with JDK 8 and JDK 11)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:244
+msgid "Lots of bug fixes"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:245
+#, no-wrap
+msgid "Documentation and tutorials"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:248
+msgid "Updated cache configuration docs with tabbed examples with JSON and YAML."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:249
+msgid "Added new guides for indexing and querying caches, Hot Rod clients, and Helm charts."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:250
+msgid "Re-organized Infinispan simple tutorials as part of the ongoing effort to clearly separate remote caches from embedded caches in our content. Infinispan simple tutorials now have their own documentation on our site at: https://infinispan.org/tutorials/simple/simple_tutorials.html"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:251
+msgid "Updated documentation for configuring persistent cache stores and JVM memory management, including revisions to improve style, grammar, and provide high-level scanning and readability."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:252
+msgid "Replaced the Integration Guide with a dedicated guide for Spring users as well as a guide for Hibernate caches. We’ve also linked to community projects with Quarkus, Vert.x, Keycloak, Camel, and WildFly. Check out the new Integrations category on the docs home page at: https://infinispan.org/documentation/"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:253
+msgid "Be sure to read through link:https://infinispan.org/docs/13.0.x/titles/upgrading/upgrading.html[Upgrading Infinispan] before getting started with lucky 13."
+msgstr ""
