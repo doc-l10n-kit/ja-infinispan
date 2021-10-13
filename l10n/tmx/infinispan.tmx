@@ -291,6 +291,38 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Persistence</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>永続性</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Server</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>サーバ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Kubernetes CLI</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Kubernetes CLI</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Other</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>その他</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>layout: blog
 title: Infinispan 11.0.0.CR1
 permalink: /blog/:year/:month/:day/infinispan-11
@@ -381,14 +413,6 @@ tags: [ "release" ]
       </tuv>
       <tuv xml:lang="ja_JP">
         <seg>すべてのスレッドプールは、ブロッキングとノンブロッキングの2つのプールと化しました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Persistence</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>永続性</seg>
       </tuv>
     </tu>
     <tu>
@@ -999,14 +1023,6 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Server</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>サーバ</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Backup/Restore</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
@@ -1179,14 +1195,6 @@ tags: [ "release" ]
       </tuv>
       <tuv xml:lang="ja_JP">
         <seg>CLIは link:https://quarkus.io/[Quarkus] のおかげでネイティブビルドで利用できます。Linux、Mac、Windows用のバイナリは link:https://github.com/infinispan/infinispan-quarkus/releases/tag/12.0.0.Final[ここに] あります。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Kubernetes CLI</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>Kubernetes CLI</seg>
       </tuv>
     </tu>
     <tu>
@@ -1499,14 +1507,6 @@ tags: [ "release" ]
       </tuv>
       <tuv xml:lang="ja_JP">
         <seg>いつものように、Infinispanチームは、このドキュメントが有用で完全なものであることをご理解いただけることを願っています。皆様からのご意見をお待ちしており、コミュニティからのフィードバックを本当に大切にしています。ドキュメントに何かが欠けていると思われる場合や、修正点がある場合は、ご連絡ください。私たちはすぐに取り掛かります。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Other</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>その他</seg>
       </tuv>
     </tu>
     <tu>
