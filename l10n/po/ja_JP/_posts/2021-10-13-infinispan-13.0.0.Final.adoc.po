@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-13 10:14+0000\n"
+"POT-Creation-Date: 2021-10-13 15:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,13 +86,13 @@ msgid "Core"
 msgstr "コア"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:24
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:25
 #, fuzzy, no-wrap
 msgid "*Polyglot configuration*: XML, JSON and YAML can now be used interchangeably to configure every part of Infinispan. Here is an example of how to configure a cache with eviction and Protobuf encoding:\n"
 msgstr "*ポリグロット・コンフィギュレーション*。XML、JSON、YAMLは、Infinispanのすべての部分を設定するために互換的に使用することができます。ここでは、evictionとProtobufエンコーディングを使用したキャッシュの設定方法の例を示します。"
 
 #. type: delimited block -
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:31
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:32
 #, no-wrap
 msgid ""
 "<distributed-cache>\n"
@@ -102,7 +102,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:46
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:47
 #, no-wrap
 msgid ""
 "{\n"
@@ -119,7 +119,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:56
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:57
 #, no-wrap
 msgid ""
 "distributedCache:\n"
@@ -131,55 +131,55 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:59
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:60
 #, fuzzy, no-wrap
 msgid "*Max-idle asynchronous touch*: max-idle expiration makes reading an entry behave like a write: all owners must update the last access timestamp. With asynchronous touch the reader does not wait for their confirmation, and reading a max-idle entry is as fast as reading any other entry.\n"
 msgstr "*Max-idle asynchronous touch*: max-idle expirationにより、エントリの読み取りは書き込みと同じようになります：すべてのオーナーは最終アクセスのタイムスタンプを更新しなければなりません。非同期タッチでは、読み手はその確認を待つことなく、max-idleエントリを他のエントリを読むのと同じ速さで読むことができます。"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:60
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:61
 #, fuzzy, no-wrap
 msgid "*Metrics for cache size are now optional*: calculating the accurate size of a cache is an expensive operation. Starting with this release, `currentNumberOfEntries` and `currentNumberOfEntriesInMemory` and `totalNumberOfEntries` will return `-1` by default. You can re-enable accurate computation of these metrics if you really need them. We will be adding high-performance estimates for these metrics in a future release.\n"
 msgstr "*キャッシュ*の正確なサイズを計算するのは高価な処理であるため、 *キャッシュサイズの指標はオプションとなりました*。このリリースから、 `currentNumberOfEntries` と `currentNumberOfEntriesInMemory` と `totalNumberOfEntries` は、デフォルトで `-1` を返すようになりました。本当に必要であれば、これらのメトリクスの正確な計算を再度有効にすることができます。将来のリリースでは、これらのメトリクスの高性能な推定値を追加する予定です。"
 
 #. type: Title ==
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:61
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:62
 #, fuzzy, no-wrap
 msgid "Query"
 msgstr "問い合わせ"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:64
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:65
 #, fuzzy, no-wrap
 msgid "*Delete by query*: Ickle (Infinispan's query language) now supports `DELETE FROM` queries using all of the supported clauses, both for indexed and non-indexed caches:\n"
 msgstr "*クエリによる削除*。Ickle（Infinispanのクエリ言語）は、インデックス付きキャッシュとインデックスなしキャッシュの両方に対して、サポートされているすべての句を使用した `DELETE FROM` クエリをサポートするようになりました。"
 
 #. type: delimited block -
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:68
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:69
 #, no-wrap
 msgid "query.create(\"DELETE FROM books WHERE page_count > 500\").executeStatement();\n"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:71
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:72
 #, no-wrap
 msgid "Persistence"
 msgstr "永続性"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:74
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:75
 #, fuzzy
 msgid "The Soft-index file store is now our default persistent file-based cache store. Compared to the old single-file store, it no longer needs to store all keys in memory, plus it supports persistent memory via the awesome link:https://github.com/jhalliday/mashona[Mashona] library. Old file stores will be automatically migrated on first use."
 msgstr "Soft-index ファイルストアは、デフォルトの永続的なファイルベースのキャッシュストアです。従来のシングルファイルストアと比較して、すべてのキーをメモリに保存する必要がなくなり、さらに素晴らしい link:https://github.com/jhalliday/mashona[Mashona]ライブラリによって永続的なメモリをサポートしています。古いファイルストアは、初回使用時に自動的に移行されます。"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:75
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:76
 #, fuzzy, no-wrap
 msgid "*SQL cache store* which maps database tables and queries to Protobuf, greatly simplifying accessing your existing data. For example, you can expose a single table `books`:\n"
 msgstr "*SQLキャッシュストア*は、データベースのテーブルやクエリをProtobufにマッピングし、既存のデータへのアクセスを大幅に簡素化します。例えば、単一のテーブル `books` を公開することができます。"
 
 #. type: delimited block -
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:84
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:85
 #, no-wrap
 msgid ""
 "<table-jdbc-store table-name=\"books\">\n"
@@ -191,13 +191,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:87
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:88
 #, fuzzy
 msgid "or use your own queries"
 msgstr "または独自のクエリを使用"
 
 #. type: delimited block -
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:104
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:105
 #, no-wrap
 msgid ""
 "<query-jdbc-store>\n"
@@ -217,39 +217,39 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:106
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:107
 #, no-wrap
 msgid "Server"
 msgstr "サーバ"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:109
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:110
 #, fuzzy, no-wrap
 msgid "*Configuration overlays*: you can specify multiple configuration files, in any of the supported formats, and they will be combined to form the final configuration. You can even mix formats:\n"
 msgstr "*設定のオーバーレイ*：サポートされている任意のフォーマットで複数の設定ファイルを指定し、それらを組み合わせて最終的な設定を形成することができます。フォーマットを混在させることも可能です。"
 
 #. type: delimited block -
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:113
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:114
 #, no-wrap
 msgid "server.sh -c base.xml -c layer.yml -c custom.json\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:116
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:117
 #, fuzzy, no-wrap
 msgid "*Mutable cache configuration*: you can now update cache configurations cluster-wide at runtime with the CLI. The following example changes the maximum number of entries of a cache:\n"
 msgstr "*Mutable cache configuration*: クラスタ全体のキャッシュ構成をランタイムにCLIで更新できるようになりました。次の例では、キャッシュの最大エントリ数を変更しています。"
 
 #. type: delimited block -
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:120
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:121
 #, no-wrap
 msgid "alter cache mycache --attribute=memory.max-count --value=10000\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:123
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:124
 #, fuzzy, no-wrap
-msgid "*REST listeners*: it’s now possible to listen to cache events over HTTP using Server-Sent Events.\n"
+msgid "*REST listeners*: It is now possible to listen to cache events over HTTP using Server-Sent Events.\n"
 msgstr "*RESTリスナー*：Server-Sent Eventsを使って、HTTP経由でキャッシュイベントをリッスンできるようになりました。"
 
 #. type: Plain text
@@ -259,12 +259,12 @@ msgid "*Thread Pool Consolidation*: The prior Infinispan non blocking thread poo
 msgstr "*スレッドプールの統合*。従来のInfinispanの非ブロッキング・スレッド・プールは、Nettyのイベント・ループに統合され、サーバーに必要なスレッド数が減少しました。"
 
 #. type: delimited block -
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:134
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:135
 #, no-wrap
 msgid ""
 "curl --digest -u user:password -N http://127.0.0.1:11222/rest/v2/caches/mycache?action=listen\n"
 "event: cache-entry-created\n"
-"data: \n"
+"data:\n"
 "data: {\n"
 "data:    \"_type\": \"string\",\n"
 "data:    \"_value\": \"k1\"\n"
@@ -272,11 +272,11 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:141
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:142
 #, no-wrap
 msgid ""
 "event: cache-entry-modified\n"
-"data: \n"
+"data:\n"
 "data: {\n"
 "data:    \"_type\": \"string\",\n"
 "data:    \"_value\": \"k1\"\n"
@@ -284,11 +284,11 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:148
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:149
 #, no-wrap
 msgid ""
 "event: cache-entry-removed\n"
-"data: \n"
+"data:\n"
 "data: {\n"
 "data:    \"_type\": \"string\",\n"
 "data:    \"_value\": \"k1\"\n"
@@ -296,19 +296,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:151
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:152
 #, fuzzy, no-wrap
 msgid "*Rebalancing management*: control cluster re-balancing from the REST API, CLI, and Console.\n"
 msgstr "*リバランシング管理*：REST API、CLI、コンソールからクラスタのリバランシングを制御します。"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:152
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:153
 #, fuzzy, no-wrap
 msgid "*Simple TLS for clustering*: Infinispan Server can automatically enable TLS for the cluster transport simply by specifying a security realm with a keystore/truststore server identity:\n"
 msgstr "*クラスタリング用のシンプルなTLS*。Infinispan Serverは、キーストア/トラストストア・サーバのアイデンティティを持つセキュリティ・レルムを指定するだけで、クラスタ・トランスポート用のTLSを自動的に有効にすることができます。"
 
 #. type: delimited block -
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:158
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:159
 #, no-wrap
 msgid ""
 "<cache-container name=\"default\" statistics=\"true\">\n"
@@ -317,217 +317,217 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:161
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:162
 #, fuzzy, no-wrap
 msgid "*Distributed Security Realm*: a server security realm which can aggregate multiple sub-realms, trying each one in turn. For example, you can use this to support both certificate and password authentication on the same server.\n"
 msgstr "*Distributed Security Realm*：複数のサブレルムを集約し、それぞれのサブレルムを順番に試すことができるサーバーセキュリティレルム。例えば、同じサーバーで証明書認証とパスワード認証の両方をサポートするために使用することができます。"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:162
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:163
 #, fuzzy, no-wrap
 msgid "*PEM key/trust stores*: Support for PEM files for both keys and certificates without the need to convert them to Java keystores first.\n"
 msgstr "*PEMキー／トラストストア*。鍵と証明書の両方でPEMファイルをサポートし、最初にJavaキーストアに変換する必要がありません。"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:163
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:164
 #, fuzzy, no-wrap
 msgid "Full support for TLSv1.3 via native OpenSSL.\n"
 msgstr "ネイティブのOpenSSLでTLSv1.3に完全対応。"
 
 #. type: Title ==
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:164
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:165
 #, fuzzy, no-wrap
 msgid "Cluster Migration"
 msgstr "クラスタ・マイグレーション"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:167
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:168
 #, fuzzy
-msgid "We’ve done quite a lot of work on the cluster igration operations, making the process smoother from the REST API, CLI, and with our Kubernetes Operator"
+msgid "We’ve done quite a lot of work on the cluster igration operations, making the process smoother from the REST API, CLI, and with our Kubernetes Operator."
 msgstr "REST APIやCLI、Kubernetes Operatorを使って、クラスタの移行作業をスムーズに行えるようにしました。"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:169
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:170
 #, fuzzy
 msgid "Manually changing configurations of the cache(s) is no longer necessary"
 msgstr "キャッシュの設定を手動で変更する必要がなくなったこと"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:170
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:171
 #, fuzzy
 msgid "New methods in the REST API to control the migration"
 msgstr "移行をコントロールするためのREST APIの新しいメソッド"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:171
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:172
 #, fuzzy
 msgid "Caches created dynamically are now supported"
 msgstr "動的に作成されたキャッシュがサポートされました。"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:172
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:173
 #, fuzzy
 msgid "Simplified configuration"
 msgstr "シンプルな構成"
 
 #. type: Title ==
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:173
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:174
 #, fuzzy, no-wrap
 msgid "Cross-site replication"
 msgstr "クロスサイトレプリケーション"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:176
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:177
 #, fuzzy
 msgid "Improve cross-site replication observability"
 msgstr "クロスサイトレプリケーションの観測性向上"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:177
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:178
 #, fuzzy
 msgid "The cross-site view (sorted list of site names currently online) and relay-nodes (members who are responsible for relaying messages between sites) are now exposed via CLI/REST/JMX."
 msgstr "クロスサイトビュー（現在オンラインのサイト名のソートリスト）とリレーノード（サイト間のメッセージ中継を担当するメンバー）をCLI/REST/JMXで公開しました。"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:178
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:179
 #, fuzzy
 msgid "Detailed metrics exposed per site and per cache (response times, number of messages)"
 msgstr "サイトごと、キャッシュごとに公開される詳細なメトリクス（応答時間、メッセージ数"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:179
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:180
 #, fuzzy
 msgid "Improve some error messages with more details."
 msgstr "いくつかのエラーメッセージをより詳細に改善しました。"
 
 #. type: Title ==
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:180
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:181
 #, fuzzy, no-wrap
 msgid "Infinispan Console"
 msgstr "Infinispanコンソール"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:183
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:184
 #, fuzzy
 msgid "Encoding-aware entry editing"
 msgstr "エンコードを意識したエントリー編集"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:184
 #: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:185
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:186
 #, fuzzy, no-wrap
 msgid "Text caches"
 msgstr "テキストキャッシュ"
 
 #. type: Target for macro image
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:185
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:186
 #, no-wrap
 msgid "/assets/images/blog/thumb-encodingTextCache.png"
 msgstr ""
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:187
 #: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:188
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:189
 #, fuzzy, no-wrap
 msgid "Protobuf caches"
 msgstr "Protobufのキャッシュ"
 
 #. type: Target for macro image
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:188
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:189
 #, no-wrap
 msgid "/assets/images/blog/thumb-encodingProtobufCache.png"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:191
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:192
 #, fuzzy
 msgid "Rebalancing operations per-cache and per-cluster"
 msgstr "キャッシュやクラスターごとのリバランシング操作"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:192
 #: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:193
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:194
 #, fuzzy, no-wrap
 msgid "Managing rebalancing at the cluster level"
 msgstr "クラスターレベルでのリバランシングの管理"
 
 #. type: Target for macro image
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:193
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:194
 #, no-wrap
 msgid "/assets/images/blog/thumb-rebalancingOffClusterLevel.png"
 msgstr ""
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:195
 #: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:196
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:198
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:197
 #: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:199
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:200
 #, fuzzy, no-wrap
 msgid "Managing rebalancing per-cache"
 msgstr "キャッシュごとのリバランシングの管理"
 
 #. type: Target for macro image
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:196
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:197
 #, no-wrap
 msgid "/assets/images/blog/thumb-rebalancing-per-cache-1.png"
 msgstr ""
 
 #. type: Target for macro image
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:199
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:200
 #, no-wrap
 msgid "/assets/images/blog/thumb-rebalancing-per-cache-2.png"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:202
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:203
 #, fuzzy, no-wrap
 msgid "Cloud"
 msgstr "クラウド"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:205
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:206
 #, fuzzy, no-wrap
 msgid "*Helm charts*: create Infinispan clusters with a Helm chart that lets you specify values for build and deployment configuration. Server configuration is declared using Yaml in .Values. This allows the server configuration to be customized entirely without having to update helm-chart templates locally.\n"
 msgstr "*Helmチャート*：ビルドやデプロイメントの設定に値を指定できるHelmチャートでInfinispanクラスタを作成します。サーバー構成はYamlを使って.Valuesで宣言されます。これにより、ヘルムチャートのテンプレートをローカルに更新することなく、サーバー構成を完全にカスタマイズすることができます。"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:206
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:207
 #, fuzzy, no-wrap
 msgid "*Operator*: many fixes and improvements:\n"
 msgstr "*Operator*: 多くの修正と改善"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:207
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:208
 #, fuzzy, no-wrap
 msgid "Migrated operator-sdk from v0.18.0 -> v1.3.2\n"
 msgstr "operator-sdk を v0.18.0 から v1.3.2 に移行しました。"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:208
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:209
 #, fuzzy, no-wrap
 msgid "Migrated packagemanifest -> OLM bundle format\n"
 msgstr "移行されたパッケージのマニフェスト → OLMバンドルフォーマット"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:209
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:210
 #, fuzzy, no-wrap
 msgid "K8s 1.22 deprecated APIs removed\n"
 msgstr "K8s 1.22の非推奨APIの削除"
 
 #. type: Title ==
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:210
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:211
 #, no-wrap
 msgid "Kubernetes CLI"
 msgstr "Kubernetes CLI"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:213
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:214
 #, fuzzy
 msgid "Easily connect a CLI to an operator-managed Infinispan cluster without having to specify connection details:"
 msgstr "接続の詳細を指定することなく、CLIをオペレータが管理するInfinispanクラスタに簡単に接続することができます。"
 
 #. type: delimited block -
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:218
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:219
 #, no-wrap
 msgid ""
 "kubectl infinispan shell -n default mycluster\n"
@@ -535,19 +535,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:220
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:221
 #, fuzzy, no-wrap
 msgid "Testing"
 msgstr "テスト"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:223
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:224
 #, fuzzy
 msgid "An InfinispanContainer which makes it easy to test your applications via the awesome link:https://www.testcontainers.org/[Testcontainers] library"
 msgstr "InfinispanContainerは、優れた link:https://www.testcontainers.org/[Testcontainers]ライブラリを使用して、アプリケーションのテストを簡単に行うことができます。"
 
 #. type: delimited block -
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:234
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:235
 #, no-wrap
 msgid ""
 "try (InfinispanContainer container = new InfinispanContainer()) {\n"
@@ -561,73 +561,73 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:236
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:237
 #, fuzzy, no-wrap
 msgid "Clustered Counters"
 msgstr "クラスター型カウンター"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:239
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:240
 #, fuzzy
 msgid "Strong counters can now expire (experimental). The counter value is reset to its initial value which may be useful to code a cluster-wide rate limiter."
 msgstr "ストロングカウンターの有効期限が切れるようになりました（実験的）。カウンタの値は初期値にリセットされます。これはクラスタ全体のレートリミッターをコーディングするのに便利です。"
 
 #. type: Title ==
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:240
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:241
 #, no-wrap
 msgid "Other"
 msgstr "その他"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:243
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:244
 #, fuzzy
 msgid "Works with JDK 17 (and still works with JDK 8 and JDK 11)"
 msgstr "JDK 17で動作（JDK 8とJDK 11でも動作可能"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:244
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:245
 #, fuzzy
 msgid "Lots of bug fixes"
 msgstr "多くのバグフィックス"
 
 #. type: Title ==
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:245
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:246
 #, fuzzy, no-wrap
 msgid "Documentation and tutorials"
 msgstr "ドキュメントとチュートリアル"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:248
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:249
 #, fuzzy
 msgid "Updated cache configuration docs with tabbed examples with JSON and YAML."
 msgstr "JSONとYAMLの例をタブで表示するなど、キャッシュ設定に関するドキュメントを更新しました。"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:249
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:250
 #, fuzzy
 msgid "Added new guides for indexing and querying caches, Hot Rod clients, and Helm charts."
 msgstr "キャッシュ、Hot Rod クライアント、および Helm チャートのインデックス作成とクエリーに関する新しいガイドを追加しました。"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:250
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:251
 #, fuzzy
 msgid "Re-organized Infinispan simple tutorials as part of the ongoing effort to clearly separate remote caches from embedded caches in our content. Infinispan simple tutorials now have their own documentation on our site at: https://infinispan.org/tutorials/simple/simple_tutorials.html"
 msgstr "Infinispanの簡単なチュートリアルを再編成しました。これは、リモート・キャッシュと組み込みキャッシュをコンテンツの中で明確に分けるための継続的な取り組みの一環です。Infinispan の簡単なチュートリアルは、私たちのサイトの https://infinispan.org/tutorials/simple/simple_tutorials.html にある独自のドキュメントになりました。"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:251
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:252
 #, fuzzy
 msgid "Updated documentation for configuring persistent cache stores and JVM memory management, including revisions to improve style, grammar, and provide high-level scanning and readability."
 msgstr "永続的なキャッシュストアとJVMメモリ管理の設定に関するドキュメントを更新し、スタイルや文法の改善、高レベルのスキャンと読みやすさの提供を含む改訂を行いました。"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:252
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:253
 #, fuzzy
 msgid "Replaced the Integration Guide with a dedicated guide for Spring users as well as a guide for Hibernate caches. We’ve also linked to community projects with Quarkus, Vert.x, Keycloak, Camel, and WildFly. Check out the new Integrations category on the docs home page at: https://infinispan.org/documentation/"
 msgstr "インテグレーションガイドを、Springユーザー専用のガイドと、Hibernateキャッシュのガイドに置き換えました。また、Quarkus、Vert.x、Keycloak、Camel、WildFlyのコミュニティプロジェクトにリンクしました。docs home pageの新しいカテゴリ「Integrations」はこちらからご覧いただけます https://infinispan.org/documentation/"
 
 #. type: Plain text
-#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:253
+#: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:254
 #, fuzzy
 msgid "Be sure to read through link:https://infinispan.org/docs/13.0.x/titles/upgrading/upgrading.html[Upgrading Infinispan] before getting started with lucky 13."
 msgstr "lucky 13を始める前に、 link:https://infinispan.org/docs/13.0.x/titles/upgrading/upgrading.html[「Infinispanのアップグレード]」を必ずお読みください。"
