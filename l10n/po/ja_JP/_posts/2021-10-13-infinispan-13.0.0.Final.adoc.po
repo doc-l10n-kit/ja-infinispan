@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-13 15:15+0000\n"
+"POT-Creation-Date: 2021-10-14 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -249,14 +249,14 @@ msgstr ""
 #. type: Plain text
 #: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:124
 #, fuzzy, no-wrap
-msgid "*REST listeners*: It is now possible to listen to cache events over HTTP using Server-Sent Events.\n"
-msgstr "*RESTリスナー*：Server-Sent Eventsを使って、HTTP経由でキャッシュイベントをリッスンできるようになりました。"
+msgid "*Thread Pool Consolidation*: The prior Infinispan non blocking thread pool has been consolidated with the Netty event loop reducing the number of threads required in the server.\n"
+msgstr "*スレッドプールの統合*。従来のInfinispanの非ブロッキング・スレッド・プールは、Nettyのイベント・ループに統合され、サーバーに必要なスレッド数が減少しました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:125
 #, fuzzy, no-wrap
-msgid "*Thread Pool Consolidation*: The prior Infinispan non blocking thread pool has been consolidated with the Netty event loop reducing the number of threads required in the server.\n"
-msgstr "*スレッドプールの統合*。従来のInfinispanの非ブロッキング・スレッド・プールは、Nettyのイベント・ループに統合され、サーバーに必要なスレッド数が減少しました。"
+msgid "*REST listeners*: It is now possible to listen to cache events over HTTP using Server-Sent Events.\n"
+msgstr "*RESTリスナー*：Server-Sent Eventsを使って、HTTP経由でキャッシュイベントをリッスンできるようになりました。"
 
 #. type: delimited block -
 #: upstream/_posts/2021-10-13-infinispan-13.0.0.Final.adoc:135
