@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2021-10-27-operator-2.2.0.adoc:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2021-10-27-operator-2.2.0.adoc:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan Operator 2.2.0.Final\n"
@@ -34,38 +34,52 @@ msgid ""
 "tags: [ \"operator\", \"kubernetes\"]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan オペレータ 2.2.0.Final\n"
+"permalink: /blog/:year/:month/:day/infinispan-operator-2.2.final\n"
+"date: '2021-10-27T12:00:00.000-00:00'\n"
+"author: remerson\n"
+"tags: [ \"operator\", \"kubernetes\"]\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2021-10-27-operator-2.2.0.adoc:13
+#, fuzzy
 msgid "We're pleased to announce https://operatorhub.io/operator/infinispan[version 2.2.0.Final of the Infinispan Operator] for Kubernetes and Red Hat OpenShift."
-msgstr ""
+msgstr "link:https://operatorhub.io/operator/infinispan[Infinispan Operator]for Kubernetes and Red Hat OpenShift link:https://operatorhub.io/operator/infinispan[のバージョン2.2.0.Final]を発表します。"
 
 #. type: Plain text
 #: upstream/_posts/2021-10-27-operator-2.2.0.adoc:15
+#, fuzzy
 msgid "This is the first Operator release based on Infinispan 13."
-msgstr ""
+msgstr "これは、Infinispan 13をベースにした最初のOperatorリリースです。"
 
 #. type: Plain text
 #: upstream/_posts/2021-10-27-operator-2.2.0.adoc:17
+#, fuzzy
 msgid "Release highlights:"
-msgstr ""
+msgstr "リリースのハイライトです。"
 
 #. type: Plain text
 #: upstream/_posts/2021-10-27-operator-2.2.0.adoc:19
+#, fuzzy
 msgid "Custom server configuration. Add custom configuration for Infinispan Server using ConfigMap objects."
-msgstr ""
+msgstr "カスタムサーバ構成。ConfigMapオブジェクトを使用して、Infinispanサーバのカスタム構成を追加します。"
 
 #. type: Plain text
 #: upstream/_posts/2021-10-27-operator-2.2.0.adoc:20
+#, fuzzy
 msgid "Configurable number of relay nodes for cross-site replication. Relay nodes send and receive replication requests from backup locations. You can now increase the number of relay nodes with the `sites.local.maxRelayNodes` field to achieve a better distribution of cross-site replication requests."
-msgstr ""
+msgstr "クロスサイトレプリケーション用のリレーノードの数を設定可能。リレーノードは、バックアップロケーションからのレプリケーション要求を送信および受信します。 `sites.local.maxRelayNodes` フィールドでリレーノードの数を増やすことで、クロスサイトレプリケーション要求のよりよい分散を実現できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-10-27-operator-2.2.0.adoc:21
+#, fuzzy
 msgid "TLS security for cross-site replication traffic. You can now encrypt cross-site connections between Infinispan clusters with TLS by adding keystore secrets and configuring the `sites.local.encryption` field."
-msgstr ""
+msgstr "クロスサイトレプリケーショントラフィックのTLSセキュリティ。キーストア・シークレットを追加し、 `sites.local.encryption` フィールドを設定することで、Infinispan クラスタ間のクロスサイト接続を TLS で暗号化できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-10-27-operator-2.2.0.adoc:21
+#, fuzzy
 msgid "Operator SDK upgraded to v1.3.2"
-msgstr ""
+msgstr "Operator SDKがv1.3.2にアップグレードされました。"
