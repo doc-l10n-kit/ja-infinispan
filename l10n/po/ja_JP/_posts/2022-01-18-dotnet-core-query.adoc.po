@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-01-21 16:19+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2022-01-18-dotnet-core-query.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-01-18-dotnet-core-query.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Querying Infinispan with the new .NET core client\n"
+"permalink: /blog/:year/:month/:day/dotnet-core-query\n"
+"date: '2022-01-21T12:00:00.000-00:00'\n"
+"author: rigazilla\n"
+"tags: [ \"hotrod\", \".Net Core\", \"client\", \"C#\", \"query\", \"query\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-01-18-dotnet-core-query.adoc:11
+msgid "Dear Infinispanners and .NET Core lovers,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-01-18-dotnet-core-query.adoc:15
+msgid "Time has passed, keys have been pressed and features have been implemented since we https://infinispan.org/blog/2021/06/21/infinispan-dotnet-core-client[presented], some months ago, the new .NET core client project."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-01-18-dotnet-core-query.adoc:18
+msgid "To show you our progress with the project we've decided to write a demo/tutorial on how you can run remote queries against Infinispan Server deployments in your .NET Core application."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-01-18-dotnet-core-query.adoc:20
+msgid "The demo aims to prove the overall maturity of the client and highlight some key client features like:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-01-18-dotnet-core-query.adoc:22
+msgid "Shipping as a NuGet package, making it easy to include in C# projects."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-01-18-dotnet-core-query.adoc:23
+msgid "Using [BeetleX's](https://github.com/beetlex-io/BeetleX) non-blocking core to add native support for concurrency."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-01-18-dotnet-core-query.adoc:24
+msgid "Using language-neutral data types with the Protobuf media type for interoperability."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-01-18-dotnet-core-query.adoc:26
+msgid "Want to know more go to the https://github.com/infinispan/Infinispan.Hotrod.Core/tree/query-demo[demo page] and try it!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-01-18-dotnet-core-query.adoc:28
+msgid "We hope this is a good start to 2022 for all Infinispan C# developers!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-01-18-dotnet-core-query.adoc:30
+msgid "Please let us know your thoughts. A good place to share them is the https://github.com/infinispan/Infinispan.Hotrod.Core/issues[issues] page."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-01-18-dotnet-core-query.adoc:31
+msgid "The Infinispan Team"
+msgstr ""
