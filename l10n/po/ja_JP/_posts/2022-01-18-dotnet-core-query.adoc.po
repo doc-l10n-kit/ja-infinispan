@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-01-18-dotnet-core-query.adoc:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2022-01-18-dotnet-core-query.adoc:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Querying Infinispan with the new .NET core client\n"
@@ -34,58 +34,76 @@ msgid ""
 "tags: [ \"hotrod\", \".Net Core\", \"client\", \"C#\", \"query\", \"query\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: 新しい.NETコアクライアントによるInfinispanへの問い合わせ\n"
+"permalink: /blog/:year/:month/:day/dotnet-core-query\n"
+"date: '2022-01-21T12:00:00.000-00:00'\n"
+"author: rigazilla\n"
+"tags: [ \"hotrod\", \".Net Core\", \"client\", \"C#\", \"query\", \"query\" ]\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2022-01-18-dotnet-core-query.adoc:11
+#, fuzzy
 msgid "Dear Infinispanners and .NET Core lovers,"
-msgstr ""
+msgstr "Infinispannersと.NET Coreを愛する皆様。"
 
 #. type: Plain text
 #: upstream/_posts/2022-01-18-dotnet-core-query.adoc:15
+#, fuzzy
 msgid "Time has passed, keys have been pressed and features have been implemented since we https://infinispan.org/blog/2021/06/21/infinispan-dotnet-core-client[presented], some months ago, the new .NET core client project."
-msgstr ""
+msgstr "数ヶ月前に新しい.NET coreクライアントプロジェクト link:https://infinispan.org/blog/2021/06/21/infinispan-dotnet-core-client[を発表し]てから、時間が経過し、キーが押され、機能が実装されました。"
 
 #. type: Plain text
 #: upstream/_posts/2022-01-18-dotnet-core-query.adoc:18
+#, fuzzy
 msgid "To show you our progress with the project we've decided to write a demo/tutorial on how you can run remote queries against Infinispan Server deployments in your .NET Core application."
-msgstr ""
+msgstr "このプロジェクトの進捗状況をお伝えするために、.NET CoreアプリケーションでInfinispan Serverのデプロイメントに対してリモートクエリを実行する方法について、デモ／チュートリアルを作成することにしました。"
 
 #. type: Plain text
 #: upstream/_posts/2022-01-18-dotnet-core-query.adoc:20
+#, fuzzy
 msgid "The demo aims to prove the overall maturity of the client and highlight some key client features like:"
-msgstr ""
+msgstr "このデモは、クライアントの全体的な成熟度を証明し、以下のようなクライアントの主要機能を強調することを目的としています。"
 
 #. type: Plain text
 #: upstream/_posts/2022-01-18-dotnet-core-query.adoc:22
+#, fuzzy
 msgid "Shipping as a NuGet package, making it easy to include in C# projects."
-msgstr ""
+msgstr "NuGetパッケージとして出荷されるので、C#プロジェクトに簡単に組み込むことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2022-01-18-dotnet-core-query.adoc:23
+#, fuzzy
 msgid "Using [BeetleX's](https://github.com/beetlex-io/BeetleX) non-blocking core to add native support for concurrency."
-msgstr ""
+msgstr "BeetleX https://github.com/beetlex-io/BeetleX )のノンブロッキングコアを使用して、コンカレンシーのネイティブサポートを追加しました。"
 
 #. type: Plain text
 #: upstream/_posts/2022-01-18-dotnet-core-query.adoc:24
+#, fuzzy
 msgid "Using language-neutral data types with the Protobuf media type for interoperability."
-msgstr ""
+msgstr "相互運用性のためにProtobufメディアタイプで言語的に中立なデータタイプを使用する。"
 
 #. type: Plain text
 #: upstream/_posts/2022-01-18-dotnet-core-query.adoc:26
+#, fuzzy
 msgid "Want to know more go to the https://github.com/infinispan/Infinispan.Hotrod.Core/tree/query-demo[demo page] and try it!"
-msgstr ""
+msgstr "もっと詳しく知りたい方は、 link:https://github.com/infinispan/Infinispan.Hotrod.Core/tree/query-demo[デモページ]にアクセスして試してみてください。"
 
 #. type: Plain text
 #: upstream/_posts/2022-01-18-dotnet-core-query.adoc:28
+#, fuzzy
 msgid "We hope this is a good start to 2022 for all Infinispan C# developers!"
-msgstr ""
+msgstr "すべてのInfinispan C#開発者にとって、これが2022年の良いスタートとなることを願っています。"
 
 #. type: Plain text
 #: upstream/_posts/2022-01-18-dotnet-core-query.adoc:30
+#, fuzzy
 msgid "Please let us know your thoughts. A good place to share them is the https://github.com/infinispan/Infinispan.Hotrod.Core/issues[issues] page."
-msgstr ""
+msgstr "皆様のご意見をお聞かせください。ご意見・ご感想をお聞かせください。"
 
 #. type: Plain text
 #: upstream/_posts/2022-01-18-dotnet-core-query.adoc:31
+#, fuzzy
 msgid "The Infinispan Team"
-msgstr ""
+msgstr "Infinispanチーム"
