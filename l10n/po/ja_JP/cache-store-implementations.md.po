@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"POT-Creation-Date: 2022-02-11 19:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,5 +33,5 @@ msgstr ""
 #. type: Plain text
 #: upstream/cache-store-implementations.md:8
 #, no-wrap
-msgid "A cache store is how Infinispan optional persists data - either to disk or some other form of durable storage. A number of cache store implementations are available for you to use, and you can even implement your own custom cache store quite easily. A good way to do so is to look at the source code of an existing cache store and modifying it accordingly. Learn more about Cache Stores and how to configure and use them in the docs.\n"
+msgid "Cache stores let Infinispan persist data either to disk or some other form of durable storage. Infinispan offers several default cache store implementations as well as a Persistence SPI that lets you easily create your own cache store.\n"
 msgstr ""
