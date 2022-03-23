@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-03-23 16:21+0000\n"
+"POT-Creation-Date: 2022-03-23 17:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,8 +27,8 @@ msgstr "---\n"
 #, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
-"title: .Net Core Client ver. 0.0.3-beta\n"
-"permalink: /blog/:year/:month/:day/dotnetcore-0.0.3-beta\n"
+"title: .Net Core Client version 0.0.3-beta\n"
+"permalink: /blog/:year/:month/:day/dotnetcore-0-0-3-beta\n"
 "date: '2022-03-22T12:00:00.000-00:00'\n"
 "author: rigazilla\n"
 "tags: [ \"hotrod\", \".Net Core\", \"client\", \"C#\", \"listener\", \"cluster failover\" ]\n"
@@ -49,55 +49,53 @@ msgid "Dear Infinispanners and .NET Core lovers,"
 msgstr "Infinispannerの皆様、.NET Coreを愛する皆様。"
 
 #. type: Plain text
-#: upstream/_posts/2022-03-23-dotnet-core-0.0.3-beta.adoc:13
+#: upstream/_posts/2022-03-23-dotnet-core-0.0.3-beta.adoc:14
 #, fuzzy
-msgid "we're pleased to annouce the new release of the .NET Core client."
+msgid "we're pleased to annouce the new release of the .NET Core client.  Release 0.0.3-beta comes with a bunch of new features:"
 msgstr ".NET Coreクライアントの新しいリリースをお知らせします。"
 
 #. type: Plain text
-#: upstream/_posts/2022-03-23-dotnet-core-0.0.3-beta.adoc:15
-#, fuzzy
-msgid "Release 0.0.3-beta comes with a bunch of new features:"
-msgstr "リリース0.0.3-betaは、多くの新機能を搭載しています。"
-
-#. type: Plain text
-#: upstream/_posts/2022-03-23-dotnet-core-0.0.3-beta.adoc:17
+#: upstream/_posts/2022-03-23-dotnet-core-0.0.3-beta.adoc:16
 #, fuzzy
 msgid "remote event listener."
 msgstr "リモートイベントリスナーです。"
 
 #. type: Plain text
-#: upstream/_posts/2022-03-23-dotnet-core-0.0.3-beta.adoc:18
+#: upstream/_posts/2022-03-23-dotnet-core-0.0.3-beta.adoc:17
 #, fuzzy
 msgid "cluster failover configuration."
 msgstr "クラスターフェールオーバー構成"
 
 #. type: Plain text
-#: upstream/_posts/2022-03-23-dotnet-core-0.0.3-beta.adoc:19
+#: upstream/_posts/2022-03-23-dotnet-core-0.0.3-beta.adoc:18
 #, fuzzy
 msgid "TLS with server cert verification."
 msgstr "サーバー証明書検証を伴うTLS。"
 
 #. type: Plain text
-#: upstream/_posts/2022-03-23-dotnet-core-0.0.3-beta.adoc:20
+#: upstream/_posts/2022-03-23-dotnet-core-0.0.3-beta.adoc:19
 #, fuzzy
 msgid "some new hotrod operations. https://rigazilla.github.io/Infinispan.Hotrod.Core/html/class_infinispan_1_1_hotrod_1_1_core_1_1_cache.html[(Check if your favourite Hotrod op is in!)]"
 msgstr "ホットロッドの新しいオペレーションをいくつかご紹介します。 link:https://rigazilla.github.io/Infinispan.Hotrod.Core/html/class_infinispan_1_1_hotrod_1_1_core_1_1_cache.html[(あなたのお気に入りのHotrodオペがあるかどうかチェックしてみてください！)]"
 
 #. type: Plain text
-#: upstream/_posts/2022-03-23-dotnet-core-0.0.3-beta.adoc:23
+#: upstream/_posts/2022-03-23-dotnet-core-0.0.3-beta.adoc:22
 #, fuzzy
 msgid "Good starting point could be the https://github.com/infinispan/Infinispan.Hotrod.Core/tree/main/Infinispan.Hotrod.Application[sample application].  Documentation is growing up, temporarily placed https://rigazilla.github.io/Infinispan.Hotrod.Core/html/[here]."
 msgstr "link:https://github.com/infinispan/Infinispan.Hotrod.Core/tree/main/Infinispan.Hotrod.Application[サンプルアプリケーション]から始めるとよいでしょう。ドキュメントが育ってきているので、 link:https://rigazilla.github.io/Infinispan.Hotrod.Core/html/[ここに]仮置きしています。"
 
 #. type: Plain text
-#: upstream/_posts/2022-03-23-dotnet-core-0.0.3-beta.adoc:25
+#: upstream/_posts/2022-03-23-dotnet-core-0.0.3-beta.adoc:24
 #, fuzzy
 msgid "Please let us know your thoughts. A good place to share them is the https://github.com/infinispan/Infinispan.Hotrod.Core/issues[issues] page."
 msgstr "ぜひ、ご意見をお聞かせください。共有する場所としては、 link:https://github.com/infinispan/Infinispan.Hotrod.Core/issues[課題]ページがよいでしょう。"
 
 #. type: Plain text
-#: upstream/_posts/2022-03-23-dotnet-core-0.0.3-beta.adoc:26
+#: upstream/_posts/2022-03-23-dotnet-core-0.0.3-beta.adoc:25
 #, fuzzy
 msgid "The Infinispan Team"
 msgstr "Infinispanチーム"
+
+#, fuzzy
+#~ msgid "Release 0.0.3-beta comes with a bunch of new features:"
+#~ msgstr "リリース0.0.3-betaは、多くの新機能を搭載しています。"
