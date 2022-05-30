@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 14.0.0.Dev03\n"
@@ -34,12 +34,19 @@ msgid ""
 "tags: [ \"release\", \"development\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 14.0.0.Dev03\n"
+"permalink: /blog/:year/:month/:day/infinispan-14\n"
+"date: '2022-05-30T12:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\", \"development\" ]\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Infinispan 14.0.0.Dev03"
-msgstr ""
+msgstr "Infinispan 14.0.0.Dev03"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:13
@@ -48,203 +55,231 @@ msgstr "親愛なるInfinispanコミュニティの皆様。"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:15
+#, fuzzy
 msgid "Infinispan 14 development release 03 is here! We plan to release Infinispan 14 Final this summer, so we want to share a preview of what's coming."
-msgstr ""
+msgstr "Infinispan 14 開発リリース 03 が登場!この夏、Infinispan 14 Finalをリリースする予定です。"
 
 #. type: Title ==
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:16
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Java 11"
-msgstr ""
+msgstr "ジャバ11"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:20
+#, fuzzy
 msgid "Infinispan now requires Java 11 to run (it was only needed to build it before). This means we can use and expose all of the great new APIs that were added, such as `java.util.concurrent.Flow` which provides a standard interface for all things reactive.  Which brings us to the..."
-msgstr ""
+msgstr "Infinispanの実行にはJava 11が必要です(以前はビルドにのみ必要でした)。これは、リアクティブなもののための標準インタフェースを提供する `java.util.concurrent.Flow` など、新しく追加されたすばらしい API をすべて使用し、公開できることを意味します。というわけで、次は..."
 
 #. type: Title ==
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:21
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "New API"
-msgstr ""
+msgstr "新規API"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:24
+#, fuzzy
 msgid "We have finalized the design of our new user-facing API, which brings the following, much-needed, features:"
-msgstr ""
+msgstr "新しいユーザー向けAPIの設計が完了し、以下のような必要性の高い機能が追加されました。"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:26
+#, fuzzy
 msgid "a common API for both embedded and remote"
-msgstr ""
+msgstr "組み込み用とリモート用の共通API"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:27
+#, fuzzy
 msgid "clean separation between sync and async APIs, as well as a link:https://smallrye.io/smallrye-mutiny/[Mutiny] variant which blends beautifully with all the great things happening over in link:https://quarkus.io/[Quarkus]."
-msgstr ""
+msgstr "同期APIと非同期APIをきれいに分離し、 link:https://quarkus.io/[Quarkusで起こって]いるすべての素晴らしいことと美しく調和する link:https://smallrye.io/smallrye-mutiny/[Mutinyの]バリアントもあります。"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:28
+#, fuzzy
 msgid "a single entry-point to access all of the data-structures that we support (caches, counters, locks, multimaps, etc)"
-msgstr ""
+msgstr "サポートするすべてのデータ構造（キャッシュ、カウンタ、ロック、マルチマップなど）にアクセスするための単一のエントリポイントです。"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:29
+#, fuzzy
 msgid "our own annotations for indexing entity fields (see below for details)"
-msgstr ""
+msgstr "エンティティフィールドをインデックス化するための独自のアノテーション（詳細は以下を参照）。"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:31
+#, fuzzy
 msgid "We are now working on implementing this API for the remote Hot Rod client, while the implementation for embedded will be available in Infinispan 15."
-msgstr ""
+msgstr "現在、このAPIをリモートのHot Rodクライアント用に実装していますが、組み込み用の実装はInfinispan 15で利用可能になる予定です。"
 
 #. type: Title ==
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:33
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "JGroups 5"
-msgstr ""
+msgstr "JGroups 5"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:36
+#, fuzzy
 msgid "Upgrading to Java 11 also allows us to upgrade to JGroups 5.x, which brings a bunch of improvements:"
-msgstr ""
+msgstr "Java 11にアップグレードすることで、JGroups 5.xにアップグレードすることができ、多くの改良がもたらされます。"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:38
+#, fuzzy
 msgid "Improved failure-detection protocols (`FD_ALL3`, `FD_SOCK2`)"
-msgstr ""
+msgstr "障害検出プロトコルの改善 ( `FD_ALL3`, `FD_SOCK2`)"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:39
+#, fuzzy
 msgid "The Random Early Drop protocol (`RED`), which starts dropping messages on the send side when the queue becomes full to prevent message storms caused by unneeded retransmissions."
-msgstr ""
+msgstr "Random Early Dropプロトコル( `RED`)は、不要な再送によるメッセージストームを防ぐため、キューが満杯になると送信側でメッセージのドロップを開始します。"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:40
+#, fuzzy
 msgid "Lots more."
-msgstr ""
+msgstr "もっとたくさん。"
 
 #. type: Title ==
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:42
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Grouping"
-msgstr ""
+msgstr "グループ化"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:45
+#, fuzzy
 msgid "The grouping API has a small improvement when searching for keys belonging to a group. The old code was inefficient because it iterates over all keys in the local nodes but that was changed in this release by iterating over a single segment."
-msgstr ""
+msgstr "グループ化APIでは、グループに属するキーを検索する際に、ちょっとした改良が加えられています。古いコードはローカルノードにあるすべてのキーに対して反復処理を行うため非効率でしたが、今回のリリースでは単一のセグメントに対して反復処理を行うように変更されました。"
 
 #. type: Title ==
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:47
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Transactional caches"
-msgstr ""
+msgstr "トランザクショナルキャッシュ"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:50
+#, fuzzy
 msgid "The internal codeis now non-blocking, reducing the overall threads spawning and making better use of resources when transactions are committed."
-msgstr ""
+msgstr "内部コードがノンブロッキングになったことで、スレッドの生成を全体的に減らし、トランザクションのコミット時にリソースを有効に活用できるようになりました。"
 
 #. type: Title ==
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:52
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Cross-site replication"
-msgstr ""
+msgstr "クロスサイトレプリケーション"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:55
+#, fuzzy
 msgid "The asynchronous cross-site replication updates are batched in the sender improving the overall resources utilization."
-msgstr ""
+msgstr "非同期クロスサイトレプリケーションの更新は、送信側でバッチ処理され、全体のリソース使用率を向上させます。"
 
 #. type: Title ==
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:57
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Jakarta EE"
-msgstr ""
+msgstr "ジャカルタEE"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:60
+#, fuzzy
 msgid "JavaEE is dead. Long-live link:https://jakarta.ee/[JakartaEE]. Wherever we used to depend on `javax` APIs, we now depend on their `jakarta` equivalent. We still provide compatibility artifacts for legacy deployments."
-msgstr ""
+msgstr "JavaEEは死んだ。 link:https://jakarta.ee/[JakartaEEは]長生きした。 `javax` の API に依存していたところは、今は `jakarta` の同等品に依存しています。私たちは、レガシーなデプロイメントのための互換性のあるアーティファクトをまだ提供しています。"
 
 #. type: Title ==
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:62
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Hibernate ORM 6.0 compatibility"
-msgstr ""
+msgstr "Hibernate ORM 6.0との互換性"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:65
+#, fuzzy
 msgid "Infinispan's Hibernate ORM second-level cache (2LC) implementation has been upgraded to work with Hibernate 6.0."
-msgstr ""
+msgstr "Infinispan の Hibernate ORM のセカンドレベルキャッシュ (2LC) の実装が、Hibernate 6.0 で動作するようにアップグレードされました。"
 
 #. type: Title ==
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:67
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Indexing and Query"
-msgstr ""
+msgstr "インデックスとクエリ"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:70
+#, fuzzy
 msgid "Lots has been happening in the land of indexing and querying."
-msgstr ""
+msgstr "インデックス作成とクエリの世界では、多くのことが起こっています。"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:72
+#, fuzzy
 msgid "Upgraded Hibernate Search to 6.1 and Lucene 8.11."
-msgstr ""
+msgstr "Hibernate Search を 6.1 に、Lucene を 8.11 にアップグレードしました。"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:73
+#, fuzzy
 msgid "Brand-new annotations for indexing annotations in place of the old Hibernate annotations."
-msgstr ""
+msgstr "古いHibernateアノテーションの代わりに、インデックスアノテーションのための真新しいアノテーションを提供します。"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:74
+#, fuzzy
 msgid "Schema index update to acquire ProtoBuf schema backward-compatible changes without touching the pre-existing index data."
-msgstr ""
+msgstr "ProtoBufスキーマの下位互換性のある変更を、既存のインデックスデータに触れることなく取得するためのスキーマインデックスアップデートです。"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:75
+#, fuzzy
 msgid "The removal of the `@ProtoDoc` annotation to wrap indexing annotations for ProtoBuf generation."
-msgstr ""
+msgstr "ProtoBuf生成のためのインデックスアノテーションをラップするための `@ProtoDoc` アノテーションを削除したこと。"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:76
+#, fuzzy
 msgid "New indexing startup mode configuration, to trigger purge or reindex automatically when the cache starts."
-msgstr ""
+msgstr "キャッシュの起動時に自動的にパージまたは再インデックスをトリガーする、新しいインデックス起動モード設定。"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:77
+#, fuzzy
 msgid "Support pagination for unbounded result size queries with the HotRod client."
-msgstr ""
+msgstr "HotRodクライアントで未束縛の結果サイズのクエリに対するページネーションをサポートしました。"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:78
+#, fuzzy
 msgid "Support query parameters for full-text analyzed fields."
-msgstr ""
+msgstr "全文解析されたフィールドのクエリパラメータをサポート。"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:79
+#, fuzzy
 msgid "Support normalizers with the HotRod client."
-msgstr ""
+msgstr "HotRodクライアントでノーマライザーをサポートしました。"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:80
+#, fuzzy
 msgid "Improve the Hybrid query system."
-msgstr ""
+msgstr "ハイブリッドクエリーシステムを改善する。"
 
 #. type: Title ==
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:82
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Micrometer"
-msgstr ""
+msgstr "マイクロメーター"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:85
+#, fuzzy
 msgid "We've replaced our use of SmallRye Metrics (an implementation of Microprofile Metrics), with the much better Micrometer."
-msgstr ""
+msgstr "これまで使用していたスモールライメトリクス（マイクロプロファイルメトリクスの実装）を、より優れたマイクロメーターに変更しました。"
 
 #. type: Title ==
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:87
@@ -254,18 +289,21 @@ msgstr "サーバ"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:90
+#, fuzzy
 msgid "`RESP` endpoint: a Redis-compatible endpoint connector (implementing the RESP 3 protocol) with support for a subset of commands: `set`, `get`, `del`, `mget`, `mset`, `incr`, `decr`, `publish`, `subscribe`, `auth`, `ping`. The connector integrates with our security and protocol auto-detections, so that it is easily usable from our single-port endpoint. The implemented commands should be enough for basic usage. If you would like to see more, reach out via our community."
-msgstr ""
+msgstr "`RESP` endpoint: コマンドのサブセットをサポートする、Redis互換のエンドポイントコネクタ（RESP 3プロトコルを実装）です。 , , , , , , , , , .このコネクタは、セキュリティとプロトコルの自動検出機能を備えており、シングルポートのエンドポイントから簡単に使用することができます。基本的な使い方は、実装されているコマンドで十分です。もし、もっと詳しく知りたい場合は、私たちのコミュニティを通じてご連絡ください。 `set` `get` `del` `mget` `mset` `incr` `decr` `publish` `subscribe` `auth` `ping`"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:91
+#, fuzzy
 msgid "Support for FIPS environments (PKCS#11)"
-msgstr ""
+msgstr "FIPS環境（PKCS#11）対応"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:92
+#, fuzzy
 msgid "Support for masked and external credentials"
-msgstr ""
+msgstr "マスクされたクレデンシャルと外部クレデンシャルをサポート"
 
 #. type: Title ==
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:94
@@ -275,8 +313,9 @@ msgstr "コンソール"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:97
+#, fuzzy
 msgid "The console now sports a cache-creation wizard: a feature-driven approach to configuring caches just the way you need them."
-msgstr ""
+msgstr "コンソールにキャッシュ作成ウィザードが追加され、必要なキャッシュを設定するための機能主導型のアプローチが可能になりました。"
 
 #. type: Title ==
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:99
@@ -297,31 +336,36 @@ msgstr "リリースノート"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:107
+#, fuzzy
 msgid "You can look at the https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12383368[release notes] to see what has changed."
-msgstr ""
+msgstr "何が変わったかは、 link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12383368[リリースノートで]確認できます。"
 
 #. type: Title ==
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:108
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Other releases"
-msgstr ""
+msgstr "その他のリリース"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:111
+#, fuzzy
 msgid "We've also just recently updated our stable releases with important fixes:"
-msgstr ""
+msgstr "また、つい最近、重要な修正を施した安定版リリースを更新しました。"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:113
+#, fuzzy
 msgid "https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12385251[13.0.10.Final release notes]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12385251[13.0.10.Final リリースノート]"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:114
+#, fuzzy
 msgid "https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12379804[12.1.12.Final release notes]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12379804[12.1.12.最終版リリースノート]"
 
 #. type: Plain text
 #: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:116
+#, fuzzy
 msgid "Get them from our https://infinispan.org/download/[download page]."
-msgstr ""
+msgstr "link:https://infinispan.org/download/[ダウンロードページより]入手してください。"
