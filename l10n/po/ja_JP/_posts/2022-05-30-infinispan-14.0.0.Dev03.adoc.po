@@ -1,0 +1,327 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-05-30 12:30+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 14.0.0.Dev03\n"
+"permalink: /blog/:year/:month/:day/infinispan-14\n"
+"date: '2022-05-30T12:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\", \"development\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:10
+#, no-wrap
+msgid "Infinispan 14.0.0.Dev03"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:13
+msgid "Dear Infinispan community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:15
+msgid "Infinispan 14 development release 03 is here! We plan to release Infinispan 14 Final this summer, so we want to share a preview of what's coming."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:16
+#, no-wrap
+msgid "Java 11"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:20
+msgid "Infinispan now requires Java 11 to run (it was only needed to build it before). This means we can use and expose all of the great new APIs that were added, such as `java.util.concurrent.Flow` which provides a standard interface for all things reactive.  Which brings us to the..."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:21
+#, no-wrap
+msgid "New API"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:24
+msgid "We have finalized the design of our new user-facing API, which brings the following, much-needed, features:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:26
+msgid "a common API for both embedded and remote"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:27
+msgid "clean separation between sync and async APIs, as well as a link:https://smallrye.io/smallrye-mutiny/[Mutiny] variant which blends beautifully with all the great things happening over in link:https://quarkus.io/[Quarkus]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:28
+msgid "a single entry-point to access all of the data-structures that we support (caches, counters, locks, multimaps, etc)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:29
+msgid "our own annotations for indexing entity fields (see below for details)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:31
+msgid "We are now working on implementing this API for the remote Hot Rod client, while the implementation for embedded will be available in Infinispan 15."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:33
+#, no-wrap
+msgid "JGroups 5"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:36
+msgid "Upgrading to Java 11 also allows us to upgrade to JGroups 5.x, which brings a bunch of improvements:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:38
+msgid "Improved failure-detection protocols (`FD_ALL3`, `FD_SOCK2`)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:39
+msgid "The Random Early Drop protocol (`RED`), which starts dropping messages on the send side when the queue becomes full to prevent message storms caused by unneeded retransmissions."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:40
+msgid "Lots more."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:42
+#, no-wrap
+msgid "Grouping"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:45
+msgid "The grouping API has a small improvement when searching for keys belonging to a group. The old code was inefficient because it iterates over all keys in the local nodes but that was changed in this release by iterating over a single segment."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:47
+#, no-wrap
+msgid "Transactional caches"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:50
+msgid "The internal codeis now non-blocking, reducing the overall threads spawning and making better use of resources when transactions are committed."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:52
+#, no-wrap
+msgid "Cross-site replication"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:55
+msgid "The asynchronous cross-site replication updates are batched in the sender improving the overall resources utilization."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:57
+#, no-wrap
+msgid "Jakarta EE"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:60
+msgid "JavaEE is dead. Long-live link:https://jakarta.ee/[JakartaEE]. Wherever we used to depend on `javax` APIs, we now depend on their `jakarta` equivalent. We still provide compatibility artifacts for legacy deployments."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:62
+#, no-wrap
+msgid "Hibernate ORM 6.0 compatibility"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:65
+msgid "Infinispan's Hibernate ORM second-level cache (2LC) implementation has been upgraded to work with Hibernate 6.0."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:67
+#, no-wrap
+msgid "Indexing and Query"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:70
+msgid "Lots has been happening in the land of indexing and querying."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:72
+msgid "Upgraded Hibernate Search to 6.1 and Lucene 8.11."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:73
+msgid "Brand-new annotations for indexing annotations in place of the old Hibernate annotations."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:74
+msgid "Schema index update to acquire ProtoBuf schema backward-compatible changes without touching the pre-existing index data."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:75
+msgid "The removal of the `@ProtoDoc` annotation to wrap indexing annotations for ProtoBuf generation."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:76
+msgid "New indexing startup mode configuration, to trigger purge or reindex automatically when the cache starts."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:77
+msgid "Support pagination for unbounded result size queries with the HotRod client."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:78
+msgid "Support query parameters for full-text analyzed fields."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:79
+msgid "Support normalizers with the HotRod client."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:80
+msgid "Improve the Hybrid query system."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:82
+#, no-wrap
+msgid "Micrometer"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:85
+msgid "We've replaced our use of SmallRye Metrics (an implementation of Microprofile Metrics), with the much better Micrometer."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:87
+#, no-wrap
+msgid "Server"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:90
+msgid "`RESP` endpoint: a Redis-compatible endpoint connector (implementing the RESP 3 protocol) with support for a subset of commands: `set`, `get`, `del`, `mget`, `mset`, `incr`, `decr`, `publish`, `subscribe`, `auth`, `ping`. The connector integrates with our security and protocol auto-detections, so that it is easily usable from our single-port endpoint. The implemented commands should be enough for basic usage. If you would like to see more, reach out via our community."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:91
+msgid "Support for FIPS environments (PKCS#11)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:92
+msgid "Support for masked and external credentials"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:94
+#, no-wrap
+msgid "Console"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:97
+msgid "The console now sports a cache-creation wizard: a feature-driven approach to configuring caches just the way you need them."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:99
+#, no-wrap
+msgid "Documentation"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:102
+msgid "As always, the Infinispan team hope you find the documentation useful and complete. We’d love to hear from you and really value feedback from our community. If you think something is missing from the docs or spot a correction, please get in touch and we’ll get on it straight away."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:104
+#, no-wrap
+msgid "Release notes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:107
+msgid "You can look at the https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12383368[release notes] to see what has changed."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:108
+#, no-wrap
+msgid "Other releases"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:111
+msgid "We've also just recently updated our stable releases with important fixes:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:113
+msgid "https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12385251[13.0.10.Final release notes]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:114
+msgid "https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12379804[12.1.12.Final release notes]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-05-30-infinispan-14.0.0.Dev03.adoc:116
+msgid "Get them from our https://infinispan.org/download/[download page]."
+msgstr ""
