@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-02-11 23:24+0900\n"
+"POT-Creation-Date: 2022-06-07 17:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,9 +105,14 @@ msgid "which should display something like"
 msgstr "のように表示されるはずです。"
 
 #. type: Plain text
+#: upstream/_posts/2012-06-22-infinispan-cli.adoc:52
+msgid "26532 Jps -Dapplication.home=/usr/lib/jvm/jdk1.7.0_04 -Xms8m 20508 Main -Djava.net.preferIPv4Stack=true"
+msgstr ""
+
+#. type: Plain text
 #: upstream/_posts/2012-06-22-infinispan-cli.adoc:56
 #, fuzzy
-msgid "26532 Jps -Dapplication.home=/usr/lib/jvm/jdk1.7.0_04 -Xms8m 20508 Main -Djava.net.preferIPv4Stack=true -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=50434 -Dsun.nio.ch.bugLevel=\"\" -Dlog4j.configuration=file:////home/tst/Downloads/infinispan-5.2.0-SNAPSHOT/etc/log4j.xml"
+msgid "-Dcom.sun.management.jmxremote.port=50434 -Dsun.nio.ch.bugLevel=\"\" -Dlog4j.configuration=file:////home/tst/Downloads/infinispan-5.2.0-SNAPSHOT/etc/log4j.xml"
 msgstr "26532 Jps -Dapplication.home=/usr/lib/jvm/jdk1.7.0_04 -Xms8m 20508 Main -Djava.net.preferIPv4Stack=true -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=50434authenticate=false -Dcom.sun.management.jmxremote.port=50434 -Dsun.nio.ch.bugLevel=\"\" -Dlog4j.configuration=file:////home/tst/Downloads/infinispan-5.2.0-SNAPSHOT/etc/log4j.xml"
 
 #. type: Plain text
