@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 14 indexing & query news\n"
@@ -34,12 +34,19 @@ msgid ""
 "tags: [ \"indexing\", \"query\", \"schema\", \"startup\", \"annotations\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 14 インデックスとクエリに関するニュース\n"
+"permalink: /blog/:year/:month/:day/infinispan-14-indexing-query-news\n"
+"date: '2022-06-14T18:00:00.000-00:00'\n"
+"author: fax4ever\n"
+"tags: [ \"indexing\", \"query\", \"schema\", \"startup\", \"annotations\" ]\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Infinispan 14 indexing & query news"
-msgstr ""
+msgstr "Infinispan 14 インデックスとクエリに関するニュース"
 
 #. type: Plain text
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:13
@@ -48,30 +55,33 @@ msgstr "親愛なるInfinispanコミュニティへ"
 
 #. type: Plain text
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:15
+#, fuzzy
 msgid "with the Infinispan 14 development release 03 we introduced some news on indexing and search capabilities."
-msgstr ""
+msgstr "Infinispan 14の開発リリース03で、インデックスと検索機能に関するいくつかのニュースを紹介しました。"
 
 #. type: Title ==
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:16
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Infinispan indexing annotations"
-msgstr ""
+msgstr "Infinispanのインデックスアノテーション"
 
 #. type: Plain text
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:20
+#, fuzzy
 msgid "Hibernate annotations are going to be replaced with the new Infinispan indexing annotations, that will be used in the same exact way for both embedded and remote queries."
-msgstr ""
+msgstr "Hibernateアノテーションは、新しいInfinispanインデックスアノテーションに置き換えられ、埋め込みとリモートクエリの両方で同じように使用されるようになります。"
 
 #. type: Plain text
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:22
+#, fuzzy
 msgid "Here is an example of two annotated POJOs:"
-msgstr ""
+msgstr "以下は、2つのアノテーション付きPOJOの例です。"
 
 #. type: Block title
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:23
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Poem.java"
-msgstr ""
+msgstr "詩.java"
 
 #. type: delimited block -
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:28
@@ -123,9 +133,9 @@ msgstr ""
 
 #. type: Block title
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:50
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Author.java"
-msgstr ""
+msgstr "Author.java"
 
 #. type: delimited block -
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:55
@@ -172,39 +182,45 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:76
+#, fuzzy
 msgid "Indexed fields without any special string/text transformation will be annotated as `@Basic`.  If we need to apply a normalizer to a String field, we will opt for a `@Keyword` annotation.  If we need to apply an analyzer to a String field, we will opt for a `@Text` annotation."
-msgstr ""
+msgstr "特別な文字列/テキスト変換を行わないインデックス付きフィールドは、 `@Basic` というアノテーションを付けます。Stringフィールドにノーマライザーを適用する必要がある場合は、 `@Keyword` アノテーションを選択します。String フィールドにアナライザーを適用する必要がある場合は、 `@Text` アノテーションを選択します。"
 
 #. type: Plain text
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:80
+#, fuzzy
 msgid "The new annotations allow setting with the same annotation if the field should be sortable, or projectable, or its normalizer or its analyzer.  However, not all the combinations will be possible, for instance the attribute sortable is not present on the `@Text` annotation, since an analyzed field cannot be used to sort the result set."
-msgstr ""
+msgstr "新しいアノテーションでは、フィールドがソート可能か、投影可能か、ノーマライザかアナライザかを同じアノテーションで設定できます。しかし、すべての組み合わせが可能なわけではありません。たとえば、 `@Text` のアノテーションには sortable という属性はありません。分析されたフィールドは結果セットのソートに使用できないからです。"
 
 #. type: Plain text
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:82
+#, fuzzy
 msgid "`indexNullAs` attribute allow now to define a default value to use on index in case the corresponding entity values was null."
-msgstr ""
+msgstr "`indexNullAs` 属性で、対応するエンティティ値が NULL であった場合にインデックスで使用するデフォルト値を定義できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:86
+#, fuzzy
 msgid "Embedded indexes are defined using the `@Embedded` annotation, and it is possible to choose between the `NESTED` structure which preserves the original object relationship structure and `FLATTENED` structure which makes the leaf fields multi-valued fields of the parent entity."
-msgstr ""
+msgstr "埋め込みインデックスは、 `@Embedded` アノテーションを使用して定義し、元のオブジェクト関係構造を保持する `NESTED` 構造と、リーフフィールドを親エンティティの多値フィールドにする `FLATTENED` 構造を選択することが可能です。"
 
 #. type: Title ==
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:87
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Index startup mode"
-msgstr ""
+msgstr "インデックス起動モード"
 
 #. type: Plain text
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:91
+#, fuzzy
 msgid "Sometimes indexes can be persistent and cache data not or vice versa, for those cases it can be useful to perform some operations to ensure the index will be consistent with data in the cache."
-msgstr ""
+msgstr "インデックスが永続的でキャッシュデータが永続的でない場合、またはその逆の場合がありますが、そのような場合は、インデックスとキャッシュ内のデータの一貫性を確保するためにいくつかの操作を実行することが有用です。"
 
 #. type: Plain text
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:93
+#, fuzzy
 msgid "We introduced the `startup-mode` configuration. Here is an example:"
-msgstr ""
+msgstr "`startup-mode` の構成を紹介しました。以下はその例です。"
 
 #. type: delimited block -
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:101
@@ -219,29 +235,33 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:106
+#, fuzzy
 msgid "With this configuration every time the cache is started, the indexes will be purged.  Possible values are: `purge`, `reindex`, `none` and `auto`, with the latter Infinispan will decide if and in case which operation to perform according to how indexes ad cache data are configured."
-msgstr ""
+msgstr "この設定では、キャッシュが開始されるたびに、インデックスがパージされます。使用可能な値は以下のとおりです。 `purge` `reindex`, `none`, `auto`, 後者では、Infinispanはインデックスやキャッシュデータの設定に応じて、どの処理を行うか決定します。"
 
 #. type: Title ==
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:107
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Index schema update"
-msgstr ""
+msgstr "インデックススキーマの更新"
 
 #. type: Plain text
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:111
+#, fuzzy
 msgid "This should be considered an advanced feature to be used only in case your model needs to be evolved time to time, and you need to continue to query your cache data without the aid of some data migrations or reindexing."
-msgstr ""
+msgstr "この機能は、モデルを時々変更する必要があり、データ移行や再インデックス化を行わずにキャッシュデータを照会し続ける必要がある場合にのみ使用する高度な機能であると考えるべきです。"
 
 #. type: Plain text
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:113
+#, fuzzy
 msgid "For a comprehensive guide about when to use schema update instead of migrate or reindex the data please refer to the documentation."
-msgstr ""
+msgstr "データの移行や再インデックス化の代わりにスキーマ更新を使用する場合の包括的なガイドについては、ドキュメントを参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:115
+#, fuzzy
 msgid "The command can be triggered from the HotRod remote administration API:"
-msgstr ""
+msgstr "HotRodのリモート管理APIからコマンドを起動することができます。"
 
 #. type: delimited block -
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:119
@@ -251,8 +271,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:122
+#, fuzzy
 msgid "or using the REST API, targeting the uri:"
-msgstr ""
+msgstr "またはREST APIを使用して、uriをターゲットにします。"
 
 #. type: delimited block -
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:126
@@ -262,5 +283,6 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:129
+#, fuzzy
 msgid "or using the Infinispan cli by running `update-schema` on the runtime cache instance."
-msgstr ""
+msgstr "または、ランタイムキャッシュインスタンス上で `update-schema` を実行して、Infinispan cli を使用します。"
