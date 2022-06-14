@@ -1,0 +1,266 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-06-14 17:18+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 14 indexing & query news\n"
+"permalink: /blog/:year/:month/:day/infinispan-14-indexing-query-news\n"
+"date: '2022-06-14T18:00:00.000-00:00'\n"
+"author: fax4ever\n"
+"tags: [ \"indexing\", \"query\", \"schema\", \"startup\", \"annotations\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:10
+#, no-wrap
+msgid "Infinispan 14 indexing & query news"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:13
+msgid "Dear Infinispan community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:15
+msgid "with the Infinispan 14 development release 03 we introduced some news on indexing and search capabilities."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:16
+#, no-wrap
+msgid "Infinispan indexing annotations"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:20
+msgid "Hibernate annotations are going to be replaced with the new Infinispan indexing annotations, that will be used in the same exact way for both embedded and remote queries."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:22
+msgid "Here is an example of two annotated POJOs:"
+msgstr ""
+
+#. type: Block title
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:23
+#, no-wrap
+msgid "Poem.java"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:28
+#, no-wrap
+msgid ""
+"@Indexed\n"
+"public class Poem {\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:32
+#, no-wrap
+msgid ""
+"   private Author author;\n"
+"   private String description;\n"
+"   private Integer year;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:37
+#, no-wrap
+msgid ""
+"   @Embedded(includeDepth = 2, structure = Structure.NESTED)\n"
+"   public Author getAuthor() {\n"
+"      return author;\n"
+"   }\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:42
+#, no-wrap
+msgid ""
+"   @Text(projectable = true, analyzer = \"whitespace\", termVector = TermVector.WITH_OFFSETS)\n"
+"   public String getDescription() {\n"
+"      return description;\n"
+"   }\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:48
+#, no-wrap
+msgid ""
+"   @Basic(projectable = true, sortable = true, indexNullAs = \"1800\")\n"
+"   public Integer getYear() {\n"
+"      return year;\n"
+"   }\n"
+"}\n"
+msgstr ""
+
+#. type: Block title
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:50
+#, no-wrap
+msgid "Author.java"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:55
+#, no-wrap
+msgid ""
+"@Indexed\n"
+"public class Author {\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:57
+#, no-wrap
+msgid "   private String name;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:61
+#, no-wrap
+msgid ""
+"   public Author(String name) {\n"
+"      this.name = name;\n"
+"   }\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:66
+#, no-wrap
+msgid ""
+"   @Keyword(projectable = true, sortable = true, normalizer = \"lowercase\", indexNullAs = \"unnamed\", norms = false)\n"
+"   public String getName() {\n"
+"      return name;\n"
+"   }\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:71
+#, no-wrap
+msgid ""
+"   public void setName(String name) {\n"
+"      this.name = name;\n"
+"   }\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:76
+msgid "Indexed fields without any special string/text transformation will be annotated as `@Basic`.  If we need to apply a normalizer to a String field, we will opt for a `@Keyword` annotation.  If we need to apply an analyzer to a String field, we will opt for a `@Text` annotation."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:80
+msgid "The new annotations allow setting with the same annotation if the field should be sortable, or projectable, or its normalizer or its analyzer.  However, not all the combinations will be possible, for instance the attribute sortable is not present on the `@Text` annotation, since an analyzed field cannot be used to sort the result set."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:82
+msgid "`indexNullAs` attribute allow now to define a default value to use on index in case the corresponding entity values was null."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:86
+msgid "Embedded indexes are defined using the `@Embedded` annotation, and it is possible to choose between the `NESTED` structure which preserves the original object relationship structure and `FLATTENED` structure which makes the leaf fields multi-valued fields of the parent entity."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:87
+#, no-wrap
+msgid "Index startup mode"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:91
+msgid "Sometimes indexes can be persistent and cache data not or vice versa, for those cases it can be useful to perform some operations to ensure the index will be consistent with data in the cache."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:93
+msgid "We introduced the `startup-mode` configuration. Here is an example:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:101
+#, no-wrap
+msgid ""
+"<distributed-cache>\n"
+"  <indexing storage=\"filesystem\" startup-mode=\"purge\">\n"
+"    <!-- Additional indexing configuration goes here. -->\n"
+"  </indexing>\n"
+"</distributed-cache>\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:106
+msgid "With this configuration every time the cache is started, the indexes will be purged.  Possible values are: `purge`, `reindex`, `none` and `auto`, with the latter Infinispan will decide if and in case which operation to perform according to how indexes ad cache data are configured."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:107
+#, no-wrap
+msgid "Index schema update"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:111
+msgid "This should be considered an advanced feature to be used only in case your model needs to be evolved time to time, and you need to continue to query your cache data without the aid of some data migrations or reindexing."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:113
+msgid "For a comprehensive guide about when to use schema update instead of migrate or reindex the data please refer to the documentation."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:115
+msgid "The command can be triggered from the HotRod remote administration API:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:119
+#, no-wrap
+msgid "remoteCacheManager.administration().updateIndexSchema(CACHE_NAME);\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:122
+msgid "or using the REST API, targeting the uri:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:126
+#, no-wrap
+msgid "POST .../v2/caches/{cacheName}/search/indexes?action=updateSchema\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-06-14-infinispan-14-indexing-query-news.adoc:129
+msgid "or using the Infinispan cli by running `update-schema` on the runtime cache instance."
+msgstr ""
