@@ -50,8 +50,9 @@ msgstr "Anchored Keys モジュールの紹介"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:15
+#, fuzzy
 msgid "Infinispan version 11 introduces an experimental module that allows scaling up a cluster and adding new nodes without expensive *state transfer*.  The work was done in the context of the https://cloudbutton.eu[CloudButton] project, which aims to build a serverless platform for quickly deploying workloads to the cloud, but the advantages are available to everyone using Infinispan!"
-msgstr ""
+msgstr "Infinispanバージョン11では、高価な *状態転送を*行わずにクラスタのスケールアップや新しいノードの追加を可能にする実験的なモジュールが導入されています。この作業は、クラウドにワークロードを迅速にデプロイするためのサーバーレスプラットフォームの構築を目指す link:https://cloudbutton.eu[CloudButton]プロジェクトの文脈で行われましたが、その利点はInfinispanを使うすべての人に利用可能です!"
 
 #. type: Title ==
 #: upstream/_posts/2020-07-22-anchored-keys.adoc:16
