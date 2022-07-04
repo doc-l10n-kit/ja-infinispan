@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-07-04 17:19+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2021-12-01-lithops-hotrod.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-12-01-lithops-hotrod.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Anchored keys - scaling up a cluster without transferring values\n"
+"permalink: /blog/:year/:month/:day/anchored-keys\n"
+"date: '2021-12-01T12:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"lithops\", \"python\", \"cloudbutton\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2021-12-01-lithops-hotrod.adoc:10
+#, no-wrap
+msgid "Lithops Hot Rod storage backend"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-12-01-lithops-hotrod.adoc:16
+msgid "We are very happy to announce a Hot Rod storage backend for https://lithops-cloud.github.io/[Lithops], an open source framework for big data analytics and embarrassingly parallel jobs, that provides an universal API for building parallel applications in the cloud.  The work was done in the context of the https://cloudbutton.eu[CloudButton] project, which aims to build a serverless platform for quickly deploying workloads to the cloud, but the advantages are available to everyone using Infinispan!"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-12-01-lithops-hotrod.adoc:17
+#, no-wrap
+msgid "Background"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2021-12-01-lithops-hotrod.adoc:19
+#: upstream/_posts/2021-12-01-lithops-hotrod.adoc:20
+#, no-wrap
+msgid "Lithops"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2021-12-01-lithops-hotrod.adoc:20
+#, no-wrap
+msgid "/assets/images/blog/lithops.png"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-12-01-lithops-hotrod.adoc:25
+msgid "Lithops is a Python multi-cloud distributed computing framework. It allows you to run unmodified local python code at massive scale in the main serverless computing platforms. Lithops delivers the user’s code into the cloud without requiring knowledge of how it is deployed and run. Moreover, its multicloud-agnostic architecture ensures portability across cloud providers."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-12-01-lithops-hotrod.adoc:29
+msgid "Lithops has multiple storage backends and, up until now, it was able to access an Infinispan Server via its REST API.  While the REST API is functional, it doesn't offer all of the advantages that Hot Rod, our native protocol, provides, such as topology awareness and client-side intelligence to automatically locate the owner of an entry, thus avoiding extra network hops."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-12-01-lithops-hotrod.adoc:30
+#, no-wrap
+msgid "The new Hot Rod Python client"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-12-01-lithops-hotrod.adoc:36
+msgid "We used to have a Hot Rod Python client that lied in semi-abandoned state for a long time. We decided it was time to get back on track.  The https://github.com/infinispan/python-client[Hot Rod Python client] repository has been completely overhauled with our brand new implementation, which supports modern Infinispan features such as authentication, cache creation, etc.  This is now installable using PIP, the Python Package Installer. The following is a short example that shows how to connect to a secure Infinispan server and manipulate an entry:"
+msgstr ""
+
+#. type: Block title
+#: upstream/_posts/2021-12-01-lithops-hotrod.adoc:37
+#, no-wrap
+msgid "Example.py"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-12-01-lithops-hotrod.adoc:56
+#, no-wrap
+msgid ""
+"from Infinispan import Infinispan\n"
+"conf=Infinispan.Configuration()\n"
+"conf.addServer(\"localhost\",11222)\n"
+"conf.setProtocol(\"2.4\")\n"
+"conf.setSasl(\"PLAIN\", \"node0\", \"writer\", \"somePassword\")\n"
+"manager=Infinispan.RemoteCacheManager(conf)\n"
+"manager.start()\n"
+"key=Infinispan.UCharVector()\n"
+"key.push_back(56)\n"
+"value=Infinispan.UCharVector()\n"
+"value.push_back(8)\n"
+"cache=Infinispan.RemoteCache(manager)\n"
+"cache.put(key,value)\n"
+"res=cache.get(key)\n"
+"print (res.pop())\n"
+"manager.stop()\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2021-12-01-lithops-hotrod.adoc:58
+#, no-wrap
+msgid "The Lithops backend"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2021-12-01-lithops-hotrod.adoc:62
+msgid "Enabling the Lithops Hot Rod storage backend is very simple, as demonstrated by the code snippet below:"
+msgstr ""
+
+#. type: Block title
+#: upstream/_posts/2021-12-01-lithops-hotrod.adoc:63
+#, no-wrap
+msgid "LithopsStorageHotRod.py"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-12-01-lithops-hotrod.adoc:67
+#, no-wrap
+msgid "from lithops import Storage\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-12-01-lithops-hotrod.adoc:73
+#, no-wrap
+msgid ""
+"if __name__ == \"__main__\":\n"
+"    st = Storage(backend='infinispan_hotrod')\n"
+"    st.put_object(bucket='mybucket',\n"
+"                  key='test.txt',\n"
+"                  body='Hello World')\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2021-12-01-lithops-hotrod.adoc:76
+#, no-wrap
+msgid ""
+"    print(st.get_object(bucket='mybucket',\n"
+"                        key='test.txt'))\n"
+msgstr ""
