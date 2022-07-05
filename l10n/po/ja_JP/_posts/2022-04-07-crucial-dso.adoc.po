@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-04-07-crucial-dso.adoc:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2022-04-07-crucial-dso.adoc:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Crucial DSO Server\n"
@@ -34,39 +34,49 @@ msgid ""
 "tags: [ \"crucial\", \"dso\", \"cloudbutton\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Crucial DSOサーバー\n"
+"permalink: /blog/:year/:month/:day/crucial-dso\n"
+"date: '2022-04-07T12:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"crucial\", \"dso\", \"cloudbutton\" ]\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_posts/2022-04-07-crucial-dso.adoc:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Crucial DSO server"
-msgstr ""
+msgstr "Crucial DSOサーバー"
 
 #. type: Plain text
 #: upstream/_posts/2022-04-07-crucial-dso.adoc:13
+#, fuzzy
 msgid "Traditionally, an object-relational mapping (ORM) converts the data between the application and storage tiers. The ORM materializes the frontier between the two tiers, and it reduces the coupling. However, it also forces to repeatedly convert the objects between their in-memory and their serialized representations back and forth. This negatively impacts performance and increases execution costs."
-msgstr ""
+msgstr "従来、アプリケーション層とストレージ層の間のデータ変換は、ORM（Object-Relational Mapping）が行っていました。ORMは2つの層の間のフロンティアを実体化し、結合を減らすことができます。しかし、インメモリ表現とシリアライズ表現の間でオブジェクトを繰り返し変換することを余儀なくされます。これはパフォーマンスに悪影響を及ぼし、実行コストを増加させます。"
 
 #. type: Plain text
 #: upstream/_posts/2022-04-07-crucial-dso.adoc:18
+#, fuzzy
 msgid "https://github.com/crucial-project/dso[Crucial DSO] is a general-purpose synchronization and data sharing framework. With DSO, instead of fetching objects from storage, the application directly calls them. DSO ensures that the objects are persisted and shared consistently among several client machines.  DSO is built on top of Infinispan and leverages its extensibility.  The work was done in the context of the https://cloudbutton.eu[CloudButton] project, which aims to build a serverless platform for quickly deploying workloads to the cloud, but the advantages are available to everyone using Infinispan!"
-msgstr ""
+msgstr "link:https://github.com/crucial-project/dso[Crucial DSO]は汎用の同期およびデータ共有フレームワークです。DSO を使うと、ストレージからオブジェクトを取得する代わりに、アプリケーションが直接オブジェクトを呼び出します。DSO はオブジェクトが永続化され、複数のクライアントマシン間で一貫して共有されることを保証します。DSO は Infinispan の上に構築され、その拡張性を利用しています。この作業は、クラウドにワークロードを迅速にデプロイするためのサーバーレスプラットフォームを構築することを目的とした link:https://cloudbutton.eu[CloudButton]プロジェクトの文脈で行われましたが、Infinispanを使っている人なら誰でもその利点を利用することができます!"
 
 #. type: Title ==
 #: upstream/_posts/2022-04-07-crucial-dso.adoc:20
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Programming with DSO"
-msgstr ""
+msgstr "DSOを使ったプログラミング"
 
 #. type: Plain text
 #: upstream/_posts/2022-04-07-crucial-dso.adoc:23
+#, fuzzy
 msgid "DSO offers several client-side programming libraries. The most complete one is for the Java language. To declare a DSO object in Java, the programmer uses the `@Shared` keyword on the field of an object. As an example, consider the following two classes."
-msgstr ""
+msgstr "DSO はクライアントサイドのプログラミングライブラリをいくつか提供しています。最も完全なものは Java 言語用のものである。DSO オブジェクトを Java で宣言するには、プログラマはオブジェクトの フィールドに `@Shared` キーワードを使用します。例として、次の二つのクラスを考えてみましょう。"
 
 #. type: Block title
 #: upstream/_posts/2022-04-07-crucial-dso.adoc:24
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Example.py"
-msgstr ""
+msgstr "例.py"
 
 #. type: delimited block -
 #: upstream/_posts/2022-04-07-crucial-dso.adoc:30
@@ -88,29 +98,33 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-04-07-crucial-dso.adoc:37
+#, fuzzy
 msgid "The `Hero` class contains a `location` field annotated with `@Shared`. This tells DSO to push the location to the storage tier, allowing several instances of Hero on several application machines to access the same location object transparently."
-msgstr ""
+msgstr "`Hero` クラスは `@Shared` でアノテーションされた `location` フィールドを含んでいます。これはDSOに場所をストレージ層にプッシュするように指示し、複数のアプリケーションマシン上の複数のHeroのインスタンスが同じ場所オブジェクトに透過的にアクセスすることを可能にします。"
 
 #. type: Plain text
 #: upstream/_posts/2022-04-07-crucial-dso.adoc:39
+#, fuzzy
 msgid "DSO ensures that the objects are strongly consistent over time. In the example above, this means for instance that if two heroes stand in the same room, only one of them may loot the treasure. More precisely, the synchronization contract of every DSO object `o` is that `o` is atomic, aka. linearizable. In Java, this is equivalent to guarding every method `m` of some object `o` with `synchronized(o) { o.m }`."
-msgstr ""
+msgstr "DSOはオブジェクトの時間的な一貫性を強く保証します。上の例では、例えば二人のヒーローが同じ部屋に立っていた場合、一人だけが宝物を略奪できることを意味する。より正確には、すべての DSO オブジェクト `o` の同期契約は `o` がアトミックであること、つまり線形化可能であることです。Java では、これはあるオブジェクト `o` のすべてのメソッド `m` を `synchronized(o) { o.m }` でガードすることと同じである。"
 
 #. type: Plain text
 #: upstream/_posts/2022-04-07-crucial-dso.adoc:41
+#, fuzzy
 msgid "DSO includes a library of shared objects (counter, integer, list, maps, barrier, etc.)."
-msgstr ""
+msgstr "DSOには、共有オブジェクト（カウンタ、整数、リスト、マップ、バリアなど）のライブラリが含まれています。"
 
 #. type: Plain text
 #: upstream/_posts/2022-04-07-crucial-dso.adoc:44
+#, fuzzy
 msgid "DSO follows a standard client-server architecture.  The server component is built as an Infinispan Server extension. To quickly setup a DSO-enabled Infinispan Server on Kubernetes using the Infinispan Operator, we can use the https://infinispan.org/docs/infinispan-operator/2.2.x/operator.html#deploying-code[code deployment capabilities]. Until an official release of DSO is published, you will need to build it yourself and make the generated artifacts available from a local Maven repository or a simple web server."
-msgstr ""
+msgstr "DSO は標準的なクライアント・サーバアーキテクチャに従います。サーバーコンポーネントは、Infinispan Server 拡張として構築されています。Infinispan Operator を使って Kubernetes 上で DSO 対応の Infinispan Server を素早くセットアップするには、 link:https://infinispan.org/docs/infinispan-operator/2.2.x/operator.html#deploying-code[コード展開]機能を使用します。DSO の公式リリースが公開されるまでは、自分でビルドして、生成されたアーティファクトをローカルの Maven リポジトリやシンプルな Web サーバーから利用できるようにする必要があります。"
 
 #. type: Block title
 #: upstream/_posts/2022-04-07-crucial-dso.adoc:45
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "dso.yaml"
-msgstr ""
+msgstr "dso.yaml"
 
 #. type: delimited block -
 #: upstream/_posts/2022-04-07-crucial-dso.adoc:66
@@ -138,20 +152,24 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-04-07-crucial-dso.adoc:69
+#, fuzzy
 msgid "(We will soon make a bundle available for simpler installation)"
-msgstr ""
+msgstr "(より簡単にインストールできるよう、近日中にバンドル版を公開する予定です）"
 
 #. type: Plain text
 #: upstream/_posts/2022-04-07-crucial-dso.adoc:72
+#, fuzzy
 msgid "When the server starts, you should see the following log:"
-msgstr ""
+msgstr "サーバーが起動すると、以下のようなログが表示されるはずです。"
 
 #. type: Plain text
 #: upstream/_posts/2022-04-07-crucial-dso.adoc:78
+#, fuzzy
 msgid "``` INFO (main) [org.crucial.dso.Factory] Factory[Cache '__dso'@kashyyyk-4890] Created INFO (main) [org.crucial.dso.Factory] Factory singleton is Factory[Cache '__dso'@kashyyyk-4890] INFO (main) [org.infinispan.CONTAINER] DSO cache initialized ```"
-msgstr ""
+msgstr "<pre class=\"highlight\"> ``</pre>"
 
 #. type: Plain text
 #: upstream/_posts/2022-04-07-crucial-dso.adoc:81
+#, fuzzy
 msgid "Head over to Crucial's https://github.com/crucial-project/dso[DSO] page for code, examples and more details about this exciting project."
-msgstr ""
+msgstr "コード、サンプル、およびこのエキサイティングなプロジェクトの詳細については、Crucialの link:https://github.com/crucial-project/dso[DSOの]ページをご覧ください。"
