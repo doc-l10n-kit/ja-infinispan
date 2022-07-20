@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 14 OpenTelemetry tracing integration\n"
@@ -34,12 +34,19 @@ msgid ""
 "tags: [ \"opentelemetry\", \"tracing\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 14 OpenTelemetry トレースの統合\n"
+"permalink: /blog/:year/:month/:day/infinispan-14-opentelemetry-tracing\n"
+"date: '2022-07-18T19:37:00.000-00:00'\n"
+"author: fax4ever\n"
+"tags: [ \"opentelemetry\", \"tracing\" ]\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Infinispan 14 OpenTelemetry tracing integration"
-msgstr ""
+msgstr "Infinispan 14 OpenTelemetry トレースの統合"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:13
@@ -48,34 +55,39 @@ msgstr "親愛なるInfinispanコミュニティへ"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:15
+#, fuzzy
 msgid "With the Infinispan 14 development release 04, we started to support tracing with OpenTelemetry."
-msgstr ""
+msgstr "Infinispan 14の開発リリース04で、OpenTelemetryによるトレースのサポートを開始しました。"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:17
+#, fuzzy
 msgid "If configured, Infinispan Server produces cache events tracing spans and sends them to a remote tracing collector server, such as Jaeger or Zipkin."
-msgstr ""
+msgstr "設定された場合、Infinispan Server はキャッシュイベントのトレーススパンを生成し、Jaeger や Zipkin などのリモートトレースコレクターサーバーに送信します。"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:20
+#, fuzzy
 msgid "Moreover, if a Java client application with the HotRot or the Rest client produces some tracing spans, these spans can be correlated as parent spans of the corresponding spans events produced by the Infinispan Server."
-msgstr ""
+msgstr "また、HotRotやRestクライアントによるJavaクライアントアプリケーションが何らかのトレーススパンを生成した場合、これらのスパンはInfinispan Serverが生成する対応するスパンイベントの親スパンとして相関を持つことができる。"
 
 #. type: Title ==
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:21
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Set up tracing on Infinispan Server"
-msgstr ""
+msgstr "Infinispanサーバーにトレースを設定する"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:25
+#, fuzzy
 msgid "The new version of Infinispan Server comes with a gRPC OpenTelemetry Protocol (OTLP) Exporter, which is now supported by the majority of tracing servers."
-msgstr ""
+msgstr "新バージョンの Infinispan Server には、gRPC OpenTelemetry Protocol (OTLP) Exporter が付属しており、現在、大半のトレースサーバーでサポートされています。"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:27
+#, fuzzy
 msgid "For instance, with the newer Jaeger server versions, you can enable data collection through the OTLP protocol with the following option:"
-msgstr ""
+msgstr "例えば、新しいバージョンのJaegerサーバーでは、以下のオプションでOTLPプロトコルによるデータ収集を有効にすることができます。"
 
 #. type: delimited block -
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:31
@@ -85,13 +97,15 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:34
+#, fuzzy
 msgid "The server opens a port to import gRPC OTLP tracing data at port 4317."
-msgstr ""
+msgstr "サーバーは、ポート4317にgRPC OTLPトレースデータをインポートするためのポートをオープンします。"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:36
+#, fuzzy
 msgid "Configure tracing on the Infinispan Server by setting system properties or environment variables:"
-msgstr ""
+msgstr "システムプロパティや環境変数を設定して、Infinispan Serverでトレースを設定する。"
 
 #. type: delimited block -
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:43
@@ -105,13 +119,15 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:49
+#, fuzzy
 msgid "The first property is Infinispan specific and enables the tracing capability of the Infinispan Server.  The further properties belong to the https://github.com/open-telemetry/opentelemetry-java/blob/main/sdk-extensions/autoconfigure/README.md[OpenTelemetry SDK Autoconfigure project] that Infinispan uses to configure the tracing exporter.  In this case, OTLP gRPC Exporter protocol is used and the server runs on the same machine as the Infinispan Server."
-msgstr ""
+msgstr "最初のプロパティは Infinispan 固有のもので、Infinispan Server のトレース機能を有効にするものです。その他のプロパティは、Infinispanがトレースエクスポーターを設定するために使用する link:https://github.com/open-telemetry/opentelemetry-java/blob/main/sdk-extensions/autoconfigure/README.md[OpenTelemetry SDK Autoconfigureプロジェクト]に属しています。この場合、OTLP gRPC Exporter プロトコルが使用され、サーバーは Infinispan Server と同じマシン上で実行されます。"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:51
+#, fuzzy
 msgid "Starting the server with these parameters:"
-msgstr ""
+msgstr "このパラメータでサーバーを起動する。"
 
 #. type: delimited block -
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:55
@@ -123,8 +139,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:58
+#, fuzzy
 msgid "The following log is produced when the server starts:"
-msgstr ""
+msgstr "サーバーの起動時に以下のようなログが出力されます。"
 
 #. type: delimited block -
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:61
@@ -134,24 +151,27 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:64
+#, fuzzy
 msgid "This indicates that the OpenTelemetrySdk is correctly configured."
-msgstr ""
+msgstr "これは、OpenTelemetrySdkが正しく設定されたことを示します。"
 
 #. type: Title ==
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:65
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Tracing from a HotRod client application"
-msgstr ""
+msgstr "HotRodクライアントアプリケーションからのトレース"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:68
+#, fuzzy
 msgid "Any OpenTelemetry tracing context present on HotRot client applications will be automatically propagated by the new Hot Rod v4 client to the server tracing context."
-msgstr ""
+msgstr "HotRotクライアントアプリケーションに存在するOpenTelemetryトレースコンテキストは、新しいHot Rod v4クライアントによって、サーバーのトレースコンテキストに自動的に伝搬されます。"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:70
+#, fuzzy
 msgid "For instance, for a client that defines some tracing spans containing cache operations, such as the following:"
-msgstr ""
+msgstr "例えば、以下のようなキャッシュ操作を含むトレーススパンをいくつか定義しているクライアントの場合。"
 
 #. type: delimited block -
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:74
@@ -184,27 +204,29 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:94
+#, fuzzy
 msgid "The client span `sub-bulk-1` will be correlated to any related server spans, in this case the three put operations."
-msgstr ""
+msgstr "クライアントのスパン（ `sub-bulk-1` ）は、関連するサーバーのスパン（この場合は3つのput操作）に関連付けられます。"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:96
+#, fuzzy
 msgid "Opening the Jaeger console, we can see that client and server spans are correctly aggregated:"
-msgstr ""
+msgstr "Jaegerコンソールを開くと、クライアントとサーバーのスパンが正しく集計されていることが確認できます。"
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:97
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:152
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Jaeger console"
-msgstr ""
+msgstr "イェーガーコンソール"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:98
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:153
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Tracing output"
-msgstr ""
+msgstr "トレース出力"
 
 #. type: Target for macro image
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:98
@@ -214,19 +236,21 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:101
+#, fuzzy
 msgid "You can find a complete application example here: https://github.com/fax4ever/infinispan-play/tree/main/tracing-hotrod-client"
-msgstr ""
+msgstr "完全なアプリケーションの例はこちらでご覧いただけます https://github.com/fax4ever/infinispan-play/tree/main/tracing-hotrod-client"
 
 #. type: Title ==
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:102
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Tracing from a REST client application"
-msgstr ""
+msgstr "RESTクライアントアプリケーションからのトレース"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:105
+#, fuzzy
 msgid "You can achieve the same with a REST client by putting manually in the HTTP headers the requests to provide information about the current tracing context using a standard OpenTelemetry instance of `W3CTraceContextPropagator`."
-msgstr ""
+msgstr "REST クライアントでも、標準の OpenTelemetry インスタンス `W3CTraceContextPropagator` を使って、現在のトレースコンテキストに関する情報を提供するリクエストを HTTP ヘッダに手動で入れることで、同じことを実現することができます。"
 
 #. type: delimited block -
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:123
@@ -303,8 +327,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:151
+#, fuzzy
 msgid "Opening the Jaeger console, you can see that client and server spans are correctly aggregated:"
-msgstr ""
+msgstr "Jaegerのコンソールを開くと、クライアントとサーバーのスパンが正しく集計されていることが確認できます。"
 
 #. type: Target for macro image
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:153
@@ -314,5 +339,6 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:155
+#, fuzzy
 msgid "You can find a complete application example here: https://github.com/fax4ever/infinispan-play/tree/main/tracing-rest-client"
-msgstr ""
+msgstr "完全なアプリケーションの例はこちらでご覧いただけます https://github.com/fax4ever/infinispan-play/tree/main/tracing-rest-client"
