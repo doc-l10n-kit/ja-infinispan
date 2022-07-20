@@ -1,0 +1,318 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-07-20 10:17+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 14 OpenTelemetry tracing integration\n"
+"permalink: /blog/:year/:month/:day/infinispan-14-opentelemetry-tracing\n"
+"date: '2022-07-18T19:37:00.000-00:00'\n"
+"author: fax4ever\n"
+"tags: [ \"opentelemetry\", \"tracing\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:10
+#, no-wrap
+msgid "Infinispan 14 OpenTelemetry tracing integration"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:13
+msgid "Dear Infinispan community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:15
+msgid "With the Infinispan 14 development release 04, we started to support tracing with OpenTelemetry."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:17
+msgid "If configured, Infinispan Server produces cache events tracing spans and sends them to a remote tracing collector server, such as Jaeger or Zipkin."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:20
+msgid "Moreover, if a Java client application with the HotRot or the Rest client produces some tracing spans, these spans can be correlated as parent spans of the corresponding spans events produced by the Infinispan Server."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:21
+#, no-wrap
+msgid "Set up tracing on Infinispan Server"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:25
+msgid "The new version of Infinispan Server comes with a gRPC OpenTelemetry Protocol (OTLP) Exporter, which is now supported by the majority of tracing servers."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:27
+msgid "For instance, with the newer Jaeger server versions, you can enable data collection through the OTLP protocol with the following option:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:31
+#, no-wrap
+msgid "./jaeger-all-in-one --collector.otlp.enabled\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:34
+msgid "The server opens a port to import gRPC OTLP tracing data at port 4317."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:36
+msgid "Configure tracing on the Infinispan Server by setting system properties or environment variables:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:43
+#, no-wrap
+msgid ""
+"infinispan.tracing.enabled=true\n"
+"otel.service.name=infinispan-server-service\n"
+"otel.exporter.otlp.endpoint=http://localhost:4317\n"
+"otel.metrics.exporter=none\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:49
+msgid "The first property is Infinispan specific and enables the tracing capability of the Infinispan Server.  The further properties belong to the https://github.com/open-telemetry/opentelemetry-java/blob/main/sdk-extensions/autoconfigure/README.md[OpenTelemetry SDK Autoconfigure project] that Infinispan uses to configure the tracing exporter.  In this case, OTLP gRPC Exporter protocol is used and the server runs on the same machine as the Infinispan Server."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:51
+msgid "Starting the server with these parameters:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:55
+#, no-wrap
+msgid ""
+"export JAVA_OPTS=\"-Dinfinispan.tracing.enabled=true -Dotel.service.name=infinispan-server-service -Dotel.exporter.otlp.endpoint=http://localhost:4317 -Dotel.metrics.exporter=none\"\n"
+"./server.sh\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:58
+msgid "The following log is produced when the server starts:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:61
+#, no-wrap
+msgid "(ForkJoinPool.commonPool-worker-2) [org.infinispan.server.core.telemetry.TelemetryServiceFactory] ISPN000952: OpenTelemetry instance loaded: OpenTelemetrySdk{...\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:64
+msgid "This indicates that the OpenTelemetrySdk is correctly configured."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:65
+#, no-wrap
+msgid "Tracing from a HotRod client application"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:68
+msgid "Any OpenTelemetry tracing context present on HotRot client applications will be automatically propagated by the new Hot Rod v4 client to the server tracing context."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:70
+msgid "For instance, for a client that defines some tracing spans containing cache operations, such as the following:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:74
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:109
+#, no-wrap
+msgid "public class MyRestClient {\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:91
+#, no-wrap
+msgid ""
+"    public void putSomeValues(RemoteCache cache) {\n"
+"        Span span = tracer.spanBuilder(\"sub-bulk-1\").setSpanKind(SpanKind.CLIENT).startSpan();\n"
+"        // put the span into the current Context\n"
+"        try (Scope scope = span.makeCurrent()) {\n"
+"            cache.put(1, \"A\");\n"
+"            cache.put(2, \"B\");\n"
+"            cache.put(3, \"C\");\n"
+"        } catch (Throwable throwable) {\n"
+"            span.setStatus(StatusCode.ERROR, \"Something bad happened!\");\n"
+"            span.recordException(throwable);\n"
+"            throw throwable;\n"
+"        } finally {\n"
+"            span.end(); // Cannot set a span after this call\n"
+"        }\n"
+"    }\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:94
+msgid "The client span `sub-bulk-1` will be correlated to any related server spans, in this case the three put operations."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:96
+msgid "Opening the Jaeger console, we can see that client and server spans are correctly aggregated:"
+msgstr ""
+
+#. type: Named 'caption' AttributeList argument for style 'caption'
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:97
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:152
+#, no-wrap
+msgid "Jaeger console"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:98
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:153
+#, no-wrap
+msgid "Tracing output"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:98
+#, no-wrap
+msgid "/assets/images/blog/tracing-hotrod-client.png"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:101
+msgid "You can find a complete application example here: https://github.com/fax4ever/infinispan-play/tree/main/tracing-hotrod-client"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:102
+#, no-wrap
+msgid "Tracing from a REST client application"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:105
+msgid "You can achieve the same with a REST client by putting manually in the HTTP headers the requests to provide information about the current tracing context using a standard OpenTelemetry instance of `W3CTraceContextPropagator`."
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:123
+#, no-wrap
+msgid ""
+"    public void putSomeValues(RestCacheClient cache) {\n"
+"        Span span = tracer.spanBuilder(\"sub-bulk-1\").setSpanKind(SpanKind.CLIENT).startSpan();\n"
+"        // put the span into the current Context\n"
+"        try (Scope scope = span.makeCurrent()) {\n"
+"            putSomeEntries(cache);\n"
+"        } catch (Throwable throwable) {\n"
+"            span.setStatus(StatusCode.ERROR, \"Something bad happened!\");\n"
+"            span.recordException(throwable);\n"
+"            throw throwable;\n"
+"        } finally {\n"
+"            span.end(); // Cannot set a span after this call\n"
+"        }\n"
+"    }\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:126
+#, no-wrap
+msgid ""
+"    private void putSomeEntries(RestCacheClient cache) {\n"
+"        Map<String, String> contextMap = getContextMap();\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:128
+#, no-wrap
+msgid "        CompletableFuture[] futures = new CompletableFuture[3];\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:135
+#, no-wrap
+msgid ""
+"        futures[0] = cache.put(\"1\", MediaType.TEXT_PLAIN.toString(),\n"
+"            RestEntity.create(MediaType.TEXT_PLAIN, \"A\"), contextMap).toCompletableFuture();\n"
+"        futures[1] = cache.put(\"2\", MediaType.TEXT_PLAIN.toString(),\n"
+"            RestEntity.create(MediaType.TEXT_PLAIN, \"B\"), contextMap).toCompletableFuture();\n"
+"        futures[2] = cache.put(\"3\", MediaType.TEXT_PLAIN.toString(),\n"
+"            RestEntity.create(MediaType.TEXT_PLAIN, \"C\"), contextMap).toCompletableFuture();\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:138
+#, no-wrap
+msgid ""
+"        CompletableFuture.allOf(futures).join();\n"
+"    }\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:141
+#, no-wrap
+msgid ""
+"    public static Map<String, String> getContextMap() {\n"
+"        HashMap<String, String> result = new HashMap<>();\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:148
+#, no-wrap
+msgid ""
+"        // Inject the request with the *current* Context, which contains our current Span.\n"
+"        W3CTraceContextPropagator.getInstance().inject(Context.current(), result,\n"
+"          (carrier, key, value) -> carrier.put(key, value));\n"
+"        return result;\n"
+"    }\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:151
+msgid "Opening the Jaeger console, you can see that client and server spans are correctly aggregated:"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:153
+#, no-wrap
+msgid "/assets/images/blog/tracing-rest-client.png"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-07-18-infinispan-14-opentelemetry-tracing.adoc:155
+msgid "You can find a complete application example here: https://github.com/fax4ever/infinispan-play/tree/main/tracing-rest-client"
+msgstr ""
