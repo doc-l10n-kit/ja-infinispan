@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-08-09 12:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 14.0.0.CR1\n"
+"permalink: /blog/:year/:month/:day/infinispan-14\n"
+"date: '2022-08-09T12:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\", \"development\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:10
+#, no-wrap
+msgid "Infinispan 14.0.0.CR1"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:13
+msgid "Dear Infinispan community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:15
+msgid "Infinispan 14 candidate release 1 is here! Here is your chance to verify your application against our latest and greatest and tell us if things are working as expected or if there are any showstoppers we should address before tagging the final release."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:16
+#, no-wrap
+msgid "AArch64 images"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:19
+msgid "We are now building images for AArch64 (aka ARM64) by default, which allow you to run Infinispan on Apple Silicon, Amazon Graviton and other ARM CPU platforms without resorting to emulation."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:20
+#, no-wrap
+msgid "Protobuf oneof support"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:23
+msgid "Protostream has been updated to support ProtoBuf 3's `oneof` keyword."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:24
+#, no-wrap
+msgid "Console"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:27
+msgid "When creating a new cache, it's now possible to choose the key/value types from the list of available protobuf schemas."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:28
+#, no-wrap
+msgid "CLI"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:31
+msgid "The CLI can now connect to a server secured with client certificate authentication. The `config` command now supports the `keystore` and `keystore-password` to persist the client certificate configuration. Additionally, the new `config reset` command offers a quick way to reset all configuration properties to their default values."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:32
+#, no-wrap
+msgid "Release notes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:35
+msgid "You can look at the https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12391864[release notes] to see what has changed."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:37
+msgid "Get them from our https://infinispan.org/download/[download page]."
+msgstr ""
