@@ -21,6 +21,38 @@ permalink: /tutorials/
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Dear Infinispan community,</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>親愛なるInfinispanコミュニティへ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Documentation</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ドキュメンテーション</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>As always, the Infinispan team hope you find the documentation useful and complete. We’d love to hear from you and really value feedback from our community. If you think something is missing from the docs or spot a correction, please get in touch and we’ll get on it straight away.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>いつものように、Infinispanチームは、このドキュメントが有用で完全なものであることをご理解いただけることを願っています。皆様からのご意見をお待ちしており、コミュニティからのフィードバックを本当に大切にしています。ドキュメントに何かが欠けていると思われる場合や、修正点がある場合は、ご連絡ください。私たちはすぐに取り掛かります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Release notes</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>リリースノート</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Cross Site Replication Improvements</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
@@ -149,14 +181,6 @@ permalink: /tutorials/
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Dear Infinispan community,</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>親愛なるInfinispanコミュニティへ</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>The first of our development releases of Infinispan 12 is here and it features our upgrade to https://hibernate.org/search/[Hibernate Search 6] which finally allows us to upgrade to https://lucene.apache.org/[Lucene 8.x]. We've had to change a few things in our query implementation to accommodate the latest and greatest and to make the feature simpler to use. As expected, being a development release, there are some rough edges and we'd really love *YOUR* help in making sure that we get everything right for the final release later this year.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
@@ -193,30 +217,6 @@ permalink: /tutorials/
       </tuv>
       <tuv xml:lang="ja_JP">
         <seg>コンソール</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Documentation</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>ドキュメンテーション</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>As always, the Infinispan team hope you find the documentation useful and complete. We’d love to hear from you and really value feedback from our community. If you think something is missing from the docs or spot a correction, please get in touch and we’ll get on it straight away.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>いつものように、Infinispanチームは、このドキュメントが有用で完全なものであることをご理解いただけることを願っています。皆様からのご意見をお待ちしており、コミュニティからのフィードバックを本当に大切にしています。ドキュメントに何かが欠けていると思われる場合や、修正点がある場合は、ご連絡ください。私たちはすぐに取り掛かります。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Release notes</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>リリースノート</seg>
       </tuv>
     </tu>
     <tu>
