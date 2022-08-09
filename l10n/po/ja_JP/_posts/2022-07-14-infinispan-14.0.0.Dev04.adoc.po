@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 14.0.0.Dev04\n"
@@ -34,12 +34,19 @@ msgid ""
 "tags: [ \"release\", \"development\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 14.0.0.Dev04\n"
+"permalink: /blog/:year/:month/:day/infinispan-14\n"
+"date: '2022-07-14T12:00:00.000-00:00'\n"
+"author: wburns\n"
+"tags: [ \"release\", \"development\" ]\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Infinispan 14.0.0.Dev04"
-msgstr ""
+msgstr "Infinispan 14.0.0.Dev04"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:13
@@ -48,96 +55,105 @@ msgstr "親愛なるInfinispanコミュニティへ"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:15
+#, fuzzy
 msgid "Infinispan 14 development release 04 is here! We are nearing the final release of Infinispan 14 Final, so we want to share a preview of what's coming."
-msgstr ""
+msgstr "Infinispan 14 開発リリース 04 が登場!Infinispan 14 Final の最終リリースが近づいてきましたので、そのプレビューをご紹介したいと思います。"
 
 #. type: Title ==
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:16
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "HotRod 4.0 Protocol"
-msgstr ""
+msgstr "HotRod 4.0プロトコル"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:20
+#, fuzzy
 msgid "With the addition of the new API that was released in the previous Dev03 build of Infinispan we have had to update the HotRod protocol to satisfy the requirements of that API.  The new protocol changes many of the operations to return additional information to include entry metadata as well as adding new header information to support the OpenTelemetry feature described below."
-msgstr ""
+msgstr "Infinispanの以前のDev03ビルドでリリースされた新しいAPIが追加されたため、そのAPIの要件を満たすためにHotRodプロトコルを更新する必要がありました。新しいプロトコルは、エントリーのメタデータを含む追加情報を返すように多くのオペレーションを変更し、後述のOpenTelemetry機能をサポートするために新しいヘッダー情報を追加しています。"
 
 #. type: Title ==
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:21
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "OpenTelemetry"
-msgstr ""
+msgstr "オープンテレメトリー"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:25
+#, fuzzy
 msgid "Support OpenTelemetry tracing, for tracing cache operations executed by the Infinispan server, correlated with client requests (using both Hot Rod and REST APIs).  Look out for a separate blog post describing this is in more detail later!"
-msgstr ""
+msgstr "OpenTelemetryトレースをサポートし、Infinispanサーバーが実行したキャッシュ操作とクライアントリクエスト（Hot RodとREST APIの両方を使用）の相関をトレースできるようになりました。これについては、後ほど別のブログ記事で詳しく説明します。"
 
 #. type: Title ==
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:26
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Rest Endpoint"
-msgstr ""
+msgstr "レストエンドポイント"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:29
+#, fuzzy
 msgid "New distribution endpoint to provide exposing the data distribution information about the node and cluster. Includes node name, number of entries and total number of entries in the cluster"
-msgstr ""
+msgstr "ノードとクラスタに関するデータ配布情報を公開するための新しい配布エンドポイントです。ノード名、エントリ数、クラスタ内の総エントリ数が含まれます。"
 
 #. type: Title ==
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:30
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "RESP Server Connector"
-msgstr ""
+msgstr "RESP サーバコネクタ"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:33
+#, fuzzy
 msgid "The RESP connector is now exposed by default on the single port with the other protocols. If not explicitly configured a Replicated cache is used for its cache."
-msgstr ""
+msgstr "RESPコネクタは、デフォルトで他のプロトコルと共に単一ポートで公開されるようになりました。明示的に設定されていない場合、そのキャッシュには複製されたキャッシュが使用されます。"
 
 #. type: Title ==
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:34
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "IOUring Server Compatibility"
-msgstr ""
+msgstr "IOUリングサーバーの互換性"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:37
+#, fuzzy
 msgid "Our server can now utilize IOUring for its network socket connections. This requires a compatible Linux kernel to work properly. This can be enabled by setting the JVM property `infinispan.server.channel.iouring` to `true`."
-msgstr ""
+msgstr "私たちのサーバーは、ネットワークソケット接続に IOUring を利用できるようになりました。これは、適切に動作するために、互換性のあるLinuxカーネルを必要とします。これは、JVM プロパティ `infinispan.server.channel.iouring` を `true` に設定することで有効にすることができます。"
 
 #. type: Title ==
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:38
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Command Line Interface"
-msgstr ""
+msgstr "コマンドラインインターフェース"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:41
+#, fuzzy
 msgid "It is now possible to access the entry value information for data in the cache. Previously only the key information was available."
-msgstr ""
+msgstr "キャッシュ内のデータのエントリバリュー情報にアクセスできるようになりました。従来はキー情報のみ利用可能でした。"
 
 #. type: Title ==
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:42
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Multimap duplicates"
-msgstr ""
+msgstr "マルチマップの重複"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:46
+#, fuzzy
 msgid "The Multimap API has been enhanced to now support duplicate values for a given key. This is an optional configuration as you can still allow only distinct values for a given key.  For example, your data may be `A = [1,2,3,3,5]` when duplicates are allowed."
-msgstr ""
+msgstr "Multimap APIが改良され、与えられたキーに対して重複した値をサポートするようになりました。これはオプションの設定であり、与えられたキーに対して明確な値のみを許可することができます。例えば、重複を許可した場合、データは `A = [1,2,3,3,5]` になる可能性があります。"
 
 #. type: Title ==
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:47
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Size Command optimizations"
-msgstr ""
+msgstr "サイズ コマンドの最適化"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:50
+#, fuzzy
 msgid "Size command has received some optimizations to increase performance under certain circumstances. This includes cases of shared stores and not having expiration for data."
-msgstr ""
+msgstr "Sizeコマンドは、特定の状況下でパフォーマンスを向上させるために、いくつかの最適化が行われました。これには、共有ストアの場合や、データの有効期限がない場合などが含まれます。"
 
 #. type: Title ==
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:51
@@ -158,10 +174,12 @@ msgstr "リリースノート"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:59
+#, fuzzy
 msgid "You can look at the https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12388164[release notes] to see what has changed."
-msgstr ""
+msgstr "何が変わったかは、 link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12388164[リリースノートで]確認できます。"
 
 #. type: Plain text
 #: upstream/_posts/2022-07-14-infinispan-14.0.0.Dev04.adoc:61
+#, fuzzy
 msgid "Get them from our https://infinispan.org/download/[download page]."
-msgstr ""
+msgstr "link:https://infinispan.org/download/[ダウンロードページより]入手してください。"

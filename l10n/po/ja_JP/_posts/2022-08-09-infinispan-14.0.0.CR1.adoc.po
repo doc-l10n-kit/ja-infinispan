@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 14.0.0.CR1\n"
@@ -34,12 +34,19 @@ msgid ""
 "tags: [ \"release\", \"development\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 14.0.0.CR1\n"
+"permalink: /blog/:year/:month/:day/infinispan-14\n"
+"date: '2022-08-09T12:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\", \"development\" ]\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Infinispan 14.0.0.CR1"
-msgstr ""
+msgstr "Infinispan 14.0.0.CR1"
 
 #. type: Plain text
 #: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:13
@@ -48,30 +55,33 @@ msgstr "親愛なるInfinispanコミュニティへ"
 
 #. type: Plain text
 #: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:15
+#, fuzzy
 msgid "Infinispan 14 candidate release 1 is here! Here is your chance to verify your application against our latest and greatest and tell us if things are working as expected or if there are any showstoppers we should address before tagging the final release."
-msgstr ""
+msgstr "Infinispan 14 の候補リリース 1 が登場しました!あなたのアプリケーションを最新かつ最高の状態で検証し、期待通りに動作しているか、あるいは最終リリースに至る前に解決すべき問題点がないか、私たちに教えてください。"
 
 #. type: Title ==
 #: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:16
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "AArch64 images"
-msgstr ""
+msgstr "AArch64の画像"
 
 #. type: Plain text
 #: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:19
+#, fuzzy
 msgid "We are now building images for AArch64 (aka ARM64) by default, which allow you to run Infinispan on Apple Silicon, Amazon Graviton and other ARM CPU platforms without resorting to emulation."
-msgstr ""
+msgstr "現在、デフォルトでAArch64（別名ARM64）用のイメージを構築しており、Apple SiliconやAmazon GravitonなどのARM CPUプラットフォームで、エミュレーションに頼らずにInfinispanを動作させることができます。"
 
 #. type: Title ==
 #: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:20
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Protobuf oneof support"
-msgstr ""
+msgstr "プロトブーフ・ワンオフ・サポート"
 
 #. type: Plain text
 #: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:23
+#, fuzzy
 msgid "Protostream has been updated to support ProtoBuf 3's `oneof` keyword."
-msgstr ""
+msgstr "Protostream がアップデートされ、ProtoBuf 3 の `oneof` キーワードをサポートしました。"
 
 #. type: Title ==
 #: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:24
@@ -81,19 +91,21 @@ msgstr "コンソール"
 
 #. type: Plain text
 #: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:27
+#, fuzzy
 msgid "When creating a new cache, it's now possible to choose the key/value types from the list of available protobuf schemas."
-msgstr ""
+msgstr "新しいキャッシュを作成する際に、利用可能なprotobufスキーマのリストからキー/バリュータイプを選択できるようになりました。"
 
 #. type: Title ==
 #: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:28
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "CLI"
-msgstr ""
+msgstr "コマンドラインインタフェース"
 
 #. type: Plain text
 #: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:31
+#, fuzzy
 msgid "The CLI can now connect to a server secured with client certificate authentication. The `config` command now supports the `keystore` and `keystore-password` to persist the client certificate configuration. Additionally, the new `config reset` command offers a quick way to reset all configuration properties to their default values."
-msgstr ""
+msgstr "CLIは、クライアント証明書認証で保護されたサーバーに接続できるようになりました。 `config` コマンドが `keystore` と `keystore-password` に対応し、クライアント証明書の設定を永続化できるようになりました。さらに、新しい `config reset` コマンドは、すべての構成プロパティをデフォルト値にリセットする迅速な方法を提供します。"
 
 #. type: Title ==
 #: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:32
@@ -103,10 +115,12 @@ msgstr "リリースノート"
 
 #. type: Plain text
 #: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:35
+#, fuzzy
 msgid "You can look at the https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12391864[release notes] to see what has changed."
-msgstr ""
+msgstr "何が変わったかは、 link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12391864[リリースノートで]確認できます。"
 
 #. type: Plain text
 #: upstream/_posts/2022-08-09-infinispan-14.0.0.CR1.adoc:37
+#, fuzzy
 msgid "Get them from our https://infinispan.org/download/[download page]."
-msgstr ""
+msgstr "link:https://infinispan.org/download/[ダウンロードページより]入手してください。"
