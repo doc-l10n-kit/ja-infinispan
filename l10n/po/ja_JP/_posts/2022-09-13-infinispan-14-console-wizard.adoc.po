@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 14 creating a cache by wizard\n"
@@ -34,66 +34,79 @@ msgid ""
 "tags: [ \"console\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 14 ウィザードによるキャッシュの作成\n"
+"permalink: /blog/:year/:month/:day/infinispan-14-console-wizard\n"
+"date: '2022-09-13T00:00:00.000-00:00'\n"
+"author: dpanshug\n"
+"tags: [ \"console\" ]\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Creating cache with wizard - Infinispan 14"
-msgstr ""
+msgstr "ウィザードでキャッシュを作成する - Infinispan 14"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:13
+#, fuzzy
 msgid "Dear Infinispan Community,"
-msgstr ""
+msgstr "Infinispan コミュニティの皆様へ。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:16
+#, fuzzy
 msgid "An effective and concise way to create a cache with Infinispan Console is here.  Creating a cache will now be effortless and user-centric with a wizard based intuitive approach."
-msgstr ""
+msgstr "Infinispanコンソールでキャッシュを作成するための効果的で簡潔な方法がここにあります。キャッシュの作成は、ウィザードベースの直感的なアプローチで、楽に、ユーザー中心で行えるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:18
+#, fuzzy
 msgid "With the series of prompts, now user can create a cache just by selecting configuration."
-msgstr ""
+msgstr "一連のプロンプトが表示されるので、ユーザーは設定を選択するだけでキャッシュを作成できるようになりました。"
 
 #. type: Title ==
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:19
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Choose your method"
-msgstr ""
+msgstr "方法を選択する"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:22
+#, fuzzy
 msgid "Enter a unique name for the cache and choose your desired way to create it."
-msgstr ""
+msgstr "キャッシュのユニークな名前を入力し、お好きな作成方法をお選びください。"
 
 #. type: Block title
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:23
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Two options to create a cache are:"
-msgstr ""
+msgstr "キャッシュの作成方法には、次の2つがあります。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:25
+#, fuzzy
 msgid "Manually Adding JSON/YAML/XML configuration"
-msgstr ""
+msgstr "JSON/YAML/XMLの設定を手動で追加する"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:26
+#, fuzzy
 msgid "Wizard based selection of configuration"
-msgstr ""
+msgstr "ウィザードによる構成選択"
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:27
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Console wizard: getting started"
-msgstr ""
+msgstr "コンソールウィザード：はじめに"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:28
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Getting started"
-msgstr ""
+msgstr "はじめに"
 
 #. type: Target for macro image
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:28
@@ -103,20 +116,21 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:31
+#, fuzzy
 msgid "If the user already has a JSON/YAML/XML file then it is preferable to go with the first option and directly edit the file."
-msgstr ""
+msgstr "ユーザーがすでにJSON/YAML/XMLファイルを持っている場合、最初のオプションに進み、ファイルを直接編集することが望ましいです。"
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:32
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Console wizard: add configuration"
-msgstr ""
+msgstr "コンソールウィザード：設定の追加"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:33
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Add configuration"
-msgstr ""
+msgstr "コンフィギュレーションの追加"
 
 #. type: Target for macro image
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:33
@@ -126,32 +140,34 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:36
+#, fuzzy
 msgid "But in case you are looking to create a cache from scratch then Wizard based cache creation is the best way to go ahead. This blog talks in detail about the Wizard based method."
-msgstr ""
+msgstr "しかし、ゼロからキャッシュを作成するのであれば、ウィザードベースのキャッシュ作成が最適な方法です。このブログでは、ウィザードベースの方法について詳しく説明します。"
 
 #. type: Title ==
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:37
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Build configuration"
-msgstr ""
+msgstr "ビルド構成"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:39
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:44
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Basic options"
-msgstr ""
+msgstr "基本オプション"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:42
+#, fuzzy
 msgid "Selecting “Build cache configuration” will land on the below page containing a series of prompts or options to create your cache."
-msgstr ""
+msgstr "Build cache configuration \"を選択すると、キャッシュを作成するための一連のプロンプトやオプションが含まれる以下のページが表示されます。"
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:43
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Console wizard: basic options"
-msgstr ""
+msgstr "コンソールウィザード：基本オプション"
 
 #. type: Target for macro image
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:44
@@ -161,20 +177,21 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:47
+#, fuzzy
 msgid "Every option has a default value selected beforehand with tooltips providing brief information about each option."
-msgstr ""
+msgstr "各オプションには、あらかじめデフォルト値が設定されており、ツールチップで各オプションの簡単な情報が表示されます。"
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:48
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Console wizard: tooltip"
-msgstr ""
+msgstr "コンソールウィザード：ツールチップ"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:49
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Tooltip"
-msgstr ""
+msgstr "ツールチップ"
 
 #. type: Target for macro image
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:49
@@ -184,34 +201,39 @@ msgstr ""
 
 #. type: Title ====
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:51
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Infinispan capabilities"
-msgstr ""
+msgstr "Infinispanの機能"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:54
+#, fuzzy
 msgid "In this step, we select features and configure basic options for the cache."
-msgstr ""
+msgstr "このステップでは、キャッシュの機能選択と基本的なオプションの設定を行います。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:56
+#, fuzzy
 msgid "The following features can be selected:"
-msgstr ""
+msgstr "以下の機能を選択することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:58
+#, fuzzy
 msgid "Bounded"
-msgstr ""
+msgstr "バウンド"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:59
+#, fuzzy
 msgid "Indexed"
-msgstr ""
+msgstr "インデックス付き"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:60
+#, fuzzy
 msgid "Authorization"
-msgstr ""
+msgstr "オーソライズ"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:61
@@ -220,25 +242,27 @@ msgstr "永続性"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:62
+#, fuzzy
 msgid "Transactional"
-msgstr ""
+msgstr "トランザクショナル"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:63
+#, fuzzy
 msgid "Backups"
-msgstr ""
+msgstr "バックアップ"
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:64
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Console wizard: features"
-msgstr ""
+msgstr "コンソールウィザード：機能"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:65
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Features"
-msgstr ""
+msgstr "特徴"
 
 #. type: Target for macro image
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:65
@@ -248,25 +272,27 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:68
+#, fuzzy
 msgid "Selecting a feature will provide basic options for that feature. Some fields are marked mandatory in order to move to the next step."
-msgstr ""
+msgstr "機能を選択すると、その機能に関する基本的なオプションが表示されます。次のステップに進むために、いくつかのフィールドは必須とマークされています。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:70
+#, fuzzy
 msgid "If the required details are not filled in, a warning will be displayed at the top."
-msgstr ""
+msgstr "必要事項が記入されていない場合、上部に警告が表示されます。"
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:71
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Console wizard: feature bounded warning"
-msgstr ""
+msgstr "コンソールウィザード：フィーチャーバウンドの警告"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:72
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Feature Bounded warning"
-msgstr ""
+msgstr "フィーチャーバウンド警告"
 
 #. type: Target for macro image
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:72
@@ -276,20 +302,21 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:75
+#, fuzzy
 msgid "After providing the required details, you can move to the next step."
-msgstr ""
+msgstr "必要な情報を入力したら、次のステップに進みます。"
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:76
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Console wizard: feature bounded"
-msgstr ""
+msgstr "コンソールウィザード：フィーチャーバインド"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:77
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Feature Bounded"
-msgstr ""
+msgstr "フィーチャーバウンド"
 
 #. type: Target for macro image
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:77
@@ -299,20 +326,21 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:80
+#, fuzzy
 msgid "More than one feature can be selected and each feature's availability is checked. If the feature is disabled, a warning is displayed and the user can not go ahead. In such a scenario, the user can either remove that feature completely or make changes to the server."
-msgstr ""
+msgstr "複数の機能を選択することができ、それぞれの機能の有効性が確認されます。もし、その機能が無効であれば、警告が表示され、ユーザーは先に進むことができない。このような場合、ユーザーはその機能を完全に削除するか、サーバーに変更を加えるかのどちらかを選択することができます。"
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:81
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Console wizard: invalid feature"
-msgstr ""
+msgstr "コンソールウィザード：無効な機能"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:82
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Invalid Feature"
-msgstr ""
+msgstr "無効な機能"
 
 #. type: Target for macro image
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:82
@@ -323,20 +351,21 @@ msgstr ""
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:84
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:89
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Cache tuning"
-msgstr ""
+msgstr "キャッシュのチューニング"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:87
+#, fuzzy
 msgid "Last step in configuring the cache allows the user to tweak advanced options."
-msgstr ""
+msgstr "キャッシュの設定の最後のステップでは、ユーザーが高度なオプションを微調整することができます。"
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:88
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Console wizard: cache tuning"
-msgstr ""
+msgstr "コンソールウィザード：キャッシュチューニング"
 
 #. type: Target for macro image
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:89
@@ -346,20 +375,21 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:92
+#, fuzzy
 msgid "On selecting a certain feature, its advanced configurations can be added."
-msgstr ""
+msgstr "ある機能を選択すると、その機能の詳細設定を追加することができます。"
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:93
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Console wizard: feature advance option"
-msgstr ""
+msgstr "コンソールウィザード：機能拡張オプション"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:94
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Feature advance option"
-msgstr ""
+msgstr "機能先行オプション"
 
 #. type: Target for macro image
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:94
@@ -369,26 +399,27 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:96
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Review configuration"
-msgstr ""
+msgstr "レビュー構成"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:99
+#, fuzzy
 msgid "The configurations selected earlier are reviewed."
-msgstr ""
+msgstr "先に選択したコンフィギュレーションを見直す。"
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:100
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Console wizard: review config"
-msgstr ""
+msgstr "コンソールウィザード：コンフィグレーションの確認"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:101
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Review Config"
-msgstr ""
+msgstr "レビュー構成"
 
 #. type: Target for macro image
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:101
@@ -398,30 +429,33 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:104
+#, fuzzy
 msgid "The JSON configuration is presented inside a code editor, which can be modified by the user."
-msgstr ""
+msgstr "JSONの設定はコードエディター内に表示され、ユーザーが変更することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:106
+#, fuzzy
 msgid "Cache will be created on clicking the \"Create\" button and user will land on the Data distribution page."
-msgstr ""
+msgstr "Create \"ボタンをクリックするとキャッシュが作成され、データ配布ページに移動します。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:108
+#, fuzzy
 msgid "The user can also download this configuration in JSON, YAML, or XML format."
-msgstr ""
+msgstr "また、ユーザーはこの設定をJSON、YAML、またはXML形式でダウンロードすることができます。"
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:109
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Console wizard: download cache config"
-msgstr ""
+msgstr "コンソールウィザード：キャッシュ設定のダウンロード"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:110
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Download cache config"
-msgstr ""
+msgstr "キャッシュコンフィグをダウンロードする"
 
 #. type: Target for macro image
 #: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:110
