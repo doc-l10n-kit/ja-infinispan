@@ -1,0 +1,430 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-13 15:19+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 14 creating a cache by wizard\n"
+"permalink: /blog/:year/:month/:day/infinispan-14-console-wizard\n"
+"date: '2022-09-13T00:00:00.000-00:00'\n"
+"author: dpanshug\n"
+"tags: [ \"console\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:10
+#, no-wrap
+msgid "Creating cache with wizard - Infinispan 14"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:13
+msgid "Dear Infinispan Community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:16
+msgid "An effective and concise way to create a cache with Infinispan Console is here.  Creating a cache will now be effortless and user-centric with a wizard based intuitive approach."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:18
+msgid "With the series of prompts, now user can create a cache just by selecting configuration."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:19
+#, no-wrap
+msgid "Choose your method"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:22
+msgid "Enter a unique name for the cache and choose your desired way to create it."
+msgstr ""
+
+#. type: Block title
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:23
+#, no-wrap
+msgid "Two options to create a cache are:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:25
+msgid "Manually Adding JSON/YAML/XML configuration"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:26
+msgid "Wizard based selection of configuration"
+msgstr ""
+
+#. type: Named 'caption' AttributeList argument for style 'caption'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:27
+#, no-wrap
+msgid "Console wizard: getting started"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:28
+#, no-wrap
+msgid "Getting started"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:28
+#, no-wrap
+msgid "/assets/images/blog/cache-wizard/wizard1.png"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:31
+msgid "If the user already has a JSON/YAML/XML file then it is preferable to go with the first option and directly edit the file."
+msgstr ""
+
+#. type: Named 'caption' AttributeList argument for style 'caption'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:32
+#, no-wrap
+msgid "Console wizard: add configuration"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:33
+#, no-wrap
+msgid "Add configuration"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:33
+#, no-wrap
+msgid "/assets/images/blog/cache-wizard/wizard2.png"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:36
+msgid "But in case you are looking to create a cache from scratch then Wizard based cache creation is the best way to go ahead. This blog talks in detail about the Wizard based method."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:37
+#, no-wrap
+msgid "Build configuration"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:39
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:44
+#, no-wrap
+msgid "Basic options"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:42
+msgid "Selecting “Build cache configuration” will land on the below page containing a series of prompts or options to create your cache."
+msgstr ""
+
+#. type: Named 'caption' AttributeList argument for style 'caption'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:43
+#, no-wrap
+msgid "Console wizard: basic options"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:44
+#, no-wrap
+msgid "/assets/images/blog/cache-wizard/wizard3.png"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:47
+msgid "Every option has a default value selected beforehand with tooltips providing brief information about each option."
+msgstr ""
+
+#. type: Named 'caption' AttributeList argument for style 'caption'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:48
+#, no-wrap
+msgid "Console wizard: tooltip"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:49
+#, no-wrap
+msgid "Tooltip"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:49
+#, no-wrap
+msgid "/assets/images/blog/cache-wizard/wizard11.png"
+msgstr ""
+
+#. type: Title ====
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:51
+#, no-wrap
+msgid "Infinispan capabilities"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:54
+msgid "In this step, we select features and configure basic options for the cache."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:56
+msgid "The following features can be selected:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:58
+msgid "Bounded"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:59
+msgid "Indexed"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:60
+msgid "Authorization"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:61
+msgid "Persistence"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:62
+msgid "Transactional"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:63
+msgid "Backups"
+msgstr ""
+
+#. type: Named 'caption' AttributeList argument for style 'caption'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:64
+#, no-wrap
+msgid "Console wizard: features"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:65
+#, no-wrap
+msgid "Features"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:65
+#, no-wrap
+msgid "/assets/images/blog/cache-wizard/wizard4.png"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:68
+msgid "Selecting a feature will provide basic options for that feature. Some fields are marked mandatory in order to move to the next step."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:70
+msgid "If the required details are not filled in, a warning will be displayed at the top."
+msgstr ""
+
+#. type: Named 'caption' AttributeList argument for style 'caption'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:71
+#, no-wrap
+msgid "Console wizard: feature bounded warning"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:72
+#, no-wrap
+msgid "Feature Bounded warning"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:72
+#, no-wrap
+msgid "/assets/images/blog/cache-wizard/wizard5.1.png"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:75
+msgid "After providing the required details, you can move to the next step."
+msgstr ""
+
+#. type: Named 'caption' AttributeList argument for style 'caption'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:76
+#, no-wrap
+msgid "Console wizard: feature bounded"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:77
+#, no-wrap
+msgid "Feature Bounded"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:77
+#, no-wrap
+msgid "/assets/images/blog/cache-wizard/wizard5.2.png"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:80
+msgid "More than one feature can be selected and each feature's availability is checked. If the feature is disabled, a warning is displayed and the user can not go ahead. In such a scenario, the user can either remove that feature completely or make changes to the server."
+msgstr ""
+
+#. type: Named 'caption' AttributeList argument for style 'caption'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:81
+#, no-wrap
+msgid "Console wizard: invalid feature"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:82
+#, no-wrap
+msgid "Invalid Feature"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:82
+#, no-wrap
+msgid "/assets/images/blog/cache-wizard/wizard6.png"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:84
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:89
+#, no-wrap
+msgid "Cache tuning"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:87
+msgid "Last step in configuring the cache allows the user to tweak advanced options."
+msgstr ""
+
+#. type: Named 'caption' AttributeList argument for style 'caption'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:88
+#, no-wrap
+msgid "Console wizard: cache tuning"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:89
+#, no-wrap
+msgid "/assets/images/blog/cache-wizard/wizard7.png"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:92
+msgid "On selecting a certain feature, its advanced configurations can be added."
+msgstr ""
+
+#. type: Named 'caption' AttributeList argument for style 'caption'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:93
+#, no-wrap
+msgid "Console wizard: feature advance option"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:94
+#, no-wrap
+msgid "Feature advance option"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:94
+#, no-wrap
+msgid "/assets/images/blog/cache-wizard/wizard8.png"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:96
+#, no-wrap
+msgid "Review configuration"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:99
+msgid "The configurations selected earlier are reviewed."
+msgstr ""
+
+#. type: Named 'caption' AttributeList argument for style 'caption'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:100
+#, no-wrap
+msgid "Console wizard: review config"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:101
+#, no-wrap
+msgid "Review Config"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:101
+#, no-wrap
+msgid "/assets/images/blog/cache-wizard/wizard9.png"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:104
+msgid "The JSON configuration is presented inside a code editor, which can be modified by the user."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:106
+msgid "Cache will be created on clicking the \"Create\" button and user will land on the Data distribution page."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:108
+msgid "The user can also download this configuration in JSON, YAML, or XML format."
+msgstr ""
+
+#. type: Named 'caption' AttributeList argument for style 'caption'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:109
+#, no-wrap
+msgid "Console wizard: download cache config"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:110
+#, no-wrap
+msgid "Download cache config"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2022-09-13-infinispan-14-console-wizard.adoc:110
+#, no-wrap
+msgid "/assets/images/blog/cache-wizard/wizard10.png"
+msgstr ""
