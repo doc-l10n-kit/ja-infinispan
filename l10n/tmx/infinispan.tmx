@@ -1657,6 +1657,14 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Persistence</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>永続性</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Off Heap enhancements</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
@@ -2043,14 +2051,6 @@ tags: [ "release" ]
       </tuv>
       <tuv xml:lang="ja_JP">
         <seg>すべてのスレッドプールは、ブロッキングとノンブロッキングの2つのプールと化しました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Persistence</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>永続性</seg>
       </tuv>
     </tu>
     <tu>
