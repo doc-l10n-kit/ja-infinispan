@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-09-25-nodejs-010-query.adoc:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-25-nodejs-010-query.adoc:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan Node.js client supports query\n"
@@ -34,62 +34,76 @@ msgid ""
 "tags: [ \"hotrod\", \"Node.js\", \"client\", \"javascript\", \"release\", \"Protobuf\", \"query\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan Node.jsクライアントがクエリに対応\n"
+"permalink: /blog/:year/:month/:day/infinispan-js-client\n"
+"date: '2022-09-25T12:00:00.000-00:00'\n"
+"author: neerajg\n"
+"tags: [ \"hotrod\", \"Node.js\", \"client\", \"javascript\", \"release\", \"Protobuf\", \"query\" ]\n"
+"---\n"
 
 #. type: Title ==
 #: upstream/_posts/2022-09-25-nodejs-010-query.adoc:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Node.js Client 0.9.0"
-msgstr ""
+msgstr "Node.jsクライアント 0.9.0"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-25-nodejs-010-query.adoc:14
+#, fuzzy
 msgid "Infinispan Node.js client version 0.10.0 was released last week with added support of query with `application/x-protostream` data format.  Up until now, our Node.js client only supported `text/plain` and `application/json` data formats."
-msgstr ""
+msgstr "先週リリースされたInfinispan Node.jsクライアントバージョン0.10.0では、 `application/x-protostream` データ形式でのクエリをサポートするようになりました。これまで、Node.jsクライアントは、 `text/plain` と `application/json` のデータ形式のみをサポートしていました。"
 
 #. type: Title ====
 #: upstream/_posts/2022-09-25-nodejs-010-query.adoc:15
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`application/x-protostream` data format"
-msgstr ""
+msgstr "`application/x-protostream` データ形式"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-25-nodejs-010-query.adoc:17
+#, fuzzy
 msgid "You can now use the `application/x-protostream` data format for all the Hot Rod operations supported in js-client. To make the Node.js client backwards compatible, the client still treats key/value pairs as String by default."
-msgstr ""
+msgstr "js-clientでサポートされているすべてのHot Rod操作で、 `application/x-protostream` データ形式を使用できるようになりました。Node.jsクライアントの後方互換性を保つために、クライアントはデフォルトでキー/バリューペアをStringとして扱います。"
 
 #. type: Title ====
 #: upstream/_posts/2022-09-25-nodejs-010-query.adoc:18
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "query"
-msgstr ""
+msgstr "クエリ"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-25-nodejs-010-query.adoc:20
+#, fuzzy
 msgid "The Hot Rod js-client now also supports query method to perform queries on caches. For more information about querying infinispan caches, refer to https://infinispan.org/docs/stable/titles/query/query.html[the query documentation]."
-msgstr ""
+msgstr "Hot Rod js-clientは、キャッシュにクエリを実行するためのqueryメソッドもサポートするようになりました。infinispanキャッシュのクエリの詳細については、 link:https://infinispan.org/docs/stable/titles/query/query.html[クエリのドキュメントを]参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-25-nodejs-010-query.adoc:22
+#, fuzzy
 msgid "You must set the data-format as `application/x-protostream` to perform queries on your cache."
-msgstr ""
+msgstr "キャッシュに対してクエリを実行するには、data-format を `application/x-protostream` に設定する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-25-nodejs-010-query.adoc:24
+#, fuzzy
 msgid "For the working code example of the query feature, please refer to https://infinispan.org/docs/hotrod-clients/js/latest/js_client.html#_working_with_queries[this]."
-msgstr ""
+msgstr "クエリ機能の動作コード例については、 link:https://infinispan.org/docs/hotrod-clients/js/latest/js_client.html#_working_with_queries[こちらを]ご参照ください。"
 
 #. type: Title ==
 #: upstream/_posts/2022-09-25-nodejs-010-query.adoc:26
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "To go further"
-msgstr ""
+msgstr "さらに上を目指すために"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-25-nodejs-010-query.adoc:30
+#, fuzzy
 msgid "Full client documentation is now available in the https://infinispan.org/docs/hotrod-clients/js/latest/js_client.html[Hot Rod JS Client Guide]."
-msgstr ""
+msgstr "link:https://infinispan.org/docs/hotrod-clients/js/latest/js_client.html[Hot Rod JSクライアントガイドで]、完全なクライアントドキュメントが公開されました。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-25-nodejs-010-query.adoc:31
+#, fuzzy
 msgid "Jira tracker for this client is available https://issues.redhat.com/projects/HRJS[here]."
-msgstr ""
+msgstr "本クライアントのJiraトラッカーは link:https://issues.redhat.com/projects/HRJS[こちらで]公開しています。"
