@@ -1,0 +1,481 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-30 07:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 14.0.0.Final\n"
+"permalink: /blog/:year/:month/:day/infinispan-14\n"
+"date: '2022-09-29T12:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\", \"development\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:10
+#, no-wrap
+msgid "Infinispan 14.0.0.Final"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:15
+msgid "Flying saucers are probably the most common type of UFO. They are sleek and shiny and, most importantly, they come in peace bringing lots of goodies from outer space! Just like Infinispan 14! Oh, and the fact that it’s also the https://untappd.com/b/kinnegar-brewing-flying-saucer-foreign-export-stout/1415125[name of a beer] is no sheer coincidence."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:16
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:17
+#, no-wrap
+msgid "Flying Saucer"
+msgstr ""
+
+#. type: Target for macro image
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:17
+#, no-wrap
+msgid "/assets/images/blog/flying-saucer.jpg"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:20
+#, no-wrap
+msgid "JDK requirements"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:22
+msgid "You will need at least JDK 11 in order to use Infinispan 14. Infinispan also supports JDK 17 LTS and the recently released JDK 19."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:23
+#, no-wrap
+msgid "Jakarta EE"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:25
+msgid "We now ship https://jakarta.ee[Jakarta EE] variants of most of our modules: just append `-jakarta` to the artifact name:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:33
+#, no-wrap
+msgid ""
+"<dependency>\n"
+"   <groupId>org.infinispan</groupId>\n"
+"   <artifactId>infinispan-core-jakarta</artifactId>\n"
+"   <version>14.0.0.Final</version>\n"
+"</dependency>\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:35
+#, no-wrap
+msgid "Core"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:37
+msgid "Cluster Listener using `includeCurrentState`` will have better memory and performance performance. Every key no longer requires calculating its segment while iterating and memory is freed much earlier and is closed as each segment completes transfer"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:38
+msgid "State Transfer reduces how long memory is required to be held therefore reducing required memory overheads when configuring your server."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:39
+msgid "State transfer metrics are exposed through JMX. Expose the number of segments during transfer."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:40
+msgid "Size method when invoked on a cache has been optimized in various cases to be an `O(1)` operation instead of `O(N)`. Involves if expiration and if stores are configured, please check https://issues.redhat.com/browse/ISPN-9366[ISPN-9366] for more information."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:41
+msgid "Reduced some cases of blocking threads being over utilized, therefore reducing how large the blocking thread pool would need to grow."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:42
+msgid "Dynamic RBAC: a dynamic, clustered role mapper that can be modified at runtime to grant/deny access to specific principals."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:43
+#, no-wrap
+msgid "Query "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:45
+msgid "Native Infinispan indexing annotations which finally replace the legacy Hibernate Query annotations we've used in past versions (see https://infinispan.org/blog/2022/06/14/infinispan-14-indexing-query-news)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:46
+msgid "Index startup mode to determine what happens to indexes on cache start (see https://infinispan.org/blog/2022/06/14/infinispan-14-indexing-query-news)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:47
+msgid "Dynamic index schema updates allow you to evolve your schema at runtime with near-zero impact to your queries (see https://infinispan.org/blog/2022/06/14/infinispan-14-indexing-query-news)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:48
+msgid "Support Protobuf's `oneof`"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:49
+msgid "We improved the hybrid query system"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:50
+msgid "Support normalizers with the HotRod client"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:51
+#, no-wrap
+msgid "Persistence"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:53
+msgid "`SoftIndexFileStore` (default file store) segmentation performance has been improved significantly. This also reduces the number of Index segments required which reduces the number of open files and threads required on the server."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:54
+msgid "`JDBCStringBasedStore` no longer requires configuring the database min and max version as this is dynamically configured when checking the JDBC connection."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:55
+msgid "`JPAStore` has been removed. It had been deprecated for quite a while, but the move to support Hibernate 6 prompted its removal as `JPAStore` only worked with Hibernate 5."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:56
+#, no-wrap
+msgid "Hot Rod client"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:58
+msgid "A new Hot Rod client with a completely redesigned API."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:59
+msgid "Sync (blocking), Async (non-blocking) and https://smallrye.io/smallrye-mutiny/[Mutiny] sub-APIs that fit with your programming model of choice."
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:69
+#, no-wrap
+msgid ""
+"try (SyncContainer infinispan = Infinispan.create(\"hotrod://localhost\")) {\n"
+"    // Sync\n"
+"    SyncCache<String, String> mycache = infinispan.sync().caches().get(\"mycache\");\n"
+"    mycache.set(\"key\", \"value\");\n"
+"    String value = mycache.get(\"key\");\n"
+"    // set with options\n"
+"    mycache.set(\"key\", \"anothervalue\", writeOptions().lifespan(Duration.ofHours(1)).timeout(Duration.ofMillis(500)).build());\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:78
+#, no-wrap
+msgid ""
+"    // Async\n"
+"    infinispan.async().caches()\n"
+"    .get(\"mycache\").thenApply(c -> \n"
+"        c.set(\"key\", \"value\").thenApply(ignore -> \n"
+"            c.get(\"key\").thenApply(value -> \n"
+"                c.set(\"key\", \"anothervalue\", \n"
+"                writeOptions().lifespan(Duration.ofHours(1)).timeout(Duration.ofMillis(500)).build()))\n"
+"            ));\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:85
+#, no-wrap
+msgid ""
+"    // Mutiny\n"
+"    infinispan.mutiny().caches()\n"
+"    .get(\"mycache\").map(c -> \n"
+"        c.query(\"age > :age\").param(\"age\", 80).skip(5).limit(10).find())\n"
+"            .subscribe().with(System.out::println);\n"
+"}\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:87
+#, no-wrap
+msgid "Server"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:90
+msgid "RESP endpoint: a Redis-compatible endpoint connector (implementing the RESP 3 protocol) with support for a subset of commands: `set`, `get`, `del`, `mget`, `mset`, `incr`, `decr`, `publish`, `subscribe`, `auth`, `ping`. The connector integrates with our security and protocol auto-detections, so that it is easily usable from our single-port endpoint. The implemented commands should be enough for typical caching usage. If you would like to see more, reach out via our community."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:91
+msgid "If you need to use https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips[FIPS], it's now possible to use https://docs.oracle.com/en/java/javase/17/security/pkcs11-reference-guide1.html[PKCS#11 keystores]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:92
+msgid "Masked and external credentials, to avoid the use of secrets in your configuration files"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:93
+msgid "Custom security providers, such as BouncyCastle, can now be used. Just drop your provider implementation in the `server/lib` and configure:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:99
+#, no-wrap
+msgid ""
+"<ssl>\n"
+"    <keystore path=\"server.bcfks\" password=\"secret\" alias=\"server\" provider=\"BC\" type=\"BCFKS\"/>\n"
+"</ssl>\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:102
+msgid "Improved TLS engine configuration, allowing fine-grained ciphersuites selection for both TLSv1.3 and TLSv1.2:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:106
+#, no-wrap
+msgid "<engine enabled-protocols=\"TLSv1.3 TLSv1.2\" enabled-ciphersuites=\"TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384\" enabled-ciphersuites-tls13=\"TLS_AES_256_GCM_SHA384\"/>\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:109
+msgid "Endpoint worker threads configuration has been removed. With the rewrite in Infinispan 13 to utilize non blocking threads, this configuration was unused and deprecated."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:110
+msgid "https://docs.oracle.com/en/java/javase/17/management/monitoring-and-management-using-jmx-technology.html[JMX] integration with our security realms for authentication and authorization."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:111
+msgid "Experimental https://kernel.dk/io_uring.pdf[IO_Uring] support"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:112
+msgid "REST endpoints expose distribution information for caches and clusters. For more information, see https://issues.redhat.com/browse/ISPN-12192[ISPN-12192] and https://issues.redhat.com/browse/ISPN-12193[ISPN-12193]."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:113
+#, no-wrap
+msgid "Console"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:115
+msgid "Cache creation wizard. See our recent https://infinispan.org/blog/2022/09/12/infinispan-14-console-wizard[blog post] about it"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:117
+#, no-wrap
+msgid "CLI"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:119
+msgid "List cache entries, including metadata, using different formats (table, JSON, CSV)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:120
+msgid "Configuration converter"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:121
+msgid "Schema command to upload, delete, modify protobuf schema"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:122
+msgid "Index command to manage indexes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:123
+msgid "Client certificate authentication"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:124
+#, no-wrap
+msgid "Image"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:126
+msgid "Now based upon https://catalog.redhat.com/software/containers/ubi8/openjdk-17/618bdbf34ae3739687568813[ubi8/openjdk-17-runtime]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:127
+msgid "Images provided for both amd64 and arm64 architectures"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:128
+msgid "`SERVER_LIBS` environment variable added to allow dependencies to be downloaded prior to server startup"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:129
+msgid "The `config-generator` has been removed. Its functionality can be replaced by using configuration overlays"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:130
+#, no-wrap
+msgid "Operator"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:132
+msgid "Multi-Operand support, which means a single operator can managed different versions of Infinispan"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:133
+msgid "FIPS support"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:134
+msgid "Custom user configuration refactored to allow greater control of Infinispan configuration"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:135
+msgid "Image based upon https://catalog.redhat.com/software/containers/ubi9/ubi-micro/615bdf943f6014fa45ae1b58[ubi9/ubi-micro]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:136
+msgid "Bundle provided for both amd64 and arm64 architectures"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:137
+msgid "Admin service is now headless"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:138
+#, no-wrap
+msgid "Hibernate ORM second-level cache"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:140
+msgid "Hibernate caching implementation supporting Hibernate 6. Note that Hibernate 5 caching support is no longer provided due to Jakarta EE migration."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:142
+#, no-wrap
+msgid "Observability"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:144
+msgid "Integration with OpenTelemetry tracing (see https://infinispan.org/blog/2022/07/18/infinispan-14-opentelemetry-tracing)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:145
+msgid "Client / server request tracing correlations on both Hot Rod and REST APIs (see https://infinispan.org/blog/2022/07/18/infinispan-14-opentelemetry-tracing)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:146
+msgid "Integration with Micrometer to produce Prometheus and OpenMetrics metrics"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:147
+#, no-wrap
+msgid "Other"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:149
+msgid "Infinispan Quarkus server now supports the same command line arguments as the normal JVM Infinispan server. In addition the Infinispan Quarkus native binary can be used in an existing unzipped Infinispan Server zip file for ease of use."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:150
+#, no-wrap
+msgid "Documentation"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:152
+msgid "Many improvements, updates and fixes."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:154
+#, no-wrap
+msgid "Release notes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:157
+msgid "You can look at the https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12352858[release notes] to see what has changed since our latest CR."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:159
+msgid "Get them from our https://infinispan.org/download/[download page]."
+msgstr ""
