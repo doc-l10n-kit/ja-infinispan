@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 14.0.0.Final\n"
@@ -34,24 +34,32 @@ msgid ""
 "tags: [ \"release\", \"development\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 14.0.0.ファイナル\n"
+"permalink: /blog/:year/:month/:day/infinispan-14\n"
+"date: '2022-09-29T12:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\", \"development\" ]\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Infinispan 14.0.0.Final"
-msgstr ""
+msgstr "Infinispan 14.0.0.ファイナル"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:15
+#, fuzzy
 msgid "Flying saucers are probably the most common type of UFO. They are sleek and shiny and, most importantly, they come in peace bringing lots of goodies from outer space! Just like Infinispan 14! Oh, and the fact that it’s also the https://untappd.com/b/kinnegar-brewing-flying-saucer-foreign-export-stout/1415125[name of a beer] is no sheer coincidence."
-msgstr ""
+msgstr "空飛ぶ円盤は、おそらく最も一般的なUFOの一種です。つやつやと輝いていて、何より、宇宙からたくさんのお土産を持って平和にやってくるのです!ちょうどInfinispan 14のようにね。そして、この link:https://untappd.com/b/kinnegar-brewing-flying-saucer-foreign-export-stout/1415125[名前がビールの名前にもなって]いるのは、単なる偶然ではありません。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:16
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:17
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Flying Saucer"
-msgstr ""
+msgstr "フライングソーサー"
 
 #. type: Target for macro image
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:17
@@ -61,25 +69,27 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:20
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "JDK requirements"
-msgstr ""
+msgstr "JDKの要件"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:22
+#, fuzzy
 msgid "You will need at least JDK 11 in order to use Infinispan 14. Infinispan also supports JDK 17 LTS and the recently released JDK 19."
-msgstr ""
+msgstr "Infinispan 14 を使用するためには、少なくとも JDK 11 が必要です。Infinispan は JDK 17 LTS と最近リリースされた JDK 19 もサポートしています。"
 
 #. type: Title ==
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:23
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Jakarta EE"
-msgstr ""
+msgstr "ジャカルタEE"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:25
+#, fuzzy
 msgid "We now ship https://jakarta.ee[Jakarta EE] variants of most of our modules: just append `-jakarta` to the artifact name:"
-msgstr ""
+msgstr "私たちは、ほとんどのモジュールの link:https://jakarta.ee[Jakarta EE]バージョンを出荷しています。アーティファクトの名前に `-jakarta` を追加するだけです。"
 
 #. type: delimited block -
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:33
@@ -94,75 +104,87 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:35
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Core"
-msgstr ""
+msgstr "コア"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:37
+#, fuzzy
 msgid "Cluster Listener using `includeCurrentState`` will have better memory and performance performance. Every key no longer requires calculating its segment while iterating and memory is freed much earlier and is closed as each segment completes transfer"
-msgstr ""
+msgstr "`includeCurrentState`` を使用する Cluster Listener は、メモリとパフォーマンスの性能が向上します。各キーは反復処理中にそのセグメントを計算する必要がなくなり、メモリはより早く解放され、各セグメントが転送を完了すると閉じられます。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:38
+#, fuzzy
 msgid "State Transfer reduces how long memory is required to be held therefore reducing required memory overheads when configuring your server."
-msgstr ""
+msgstr "状態遷移は、メモリの保持時間を短縮するため、サーバー構成時に必要なメモリのオーバーヘッドを削減します。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:39
+#, fuzzy
 msgid "State transfer metrics are exposed through JMX. Expose the number of segments during transfer."
-msgstr ""
+msgstr "状態遷移のメトリクスをJMXで公開する。転送中のセグメント数を公開する。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:40
+#, fuzzy
 msgid "Size method when invoked on a cache has been optimized in various cases to be an `O(1)` operation instead of `O(N)`. Involves if expiration and if stores are configured, please check https://issues.redhat.com/browse/ISPN-9366[ISPN-9366] for more information."
-msgstr ""
+msgstr "キャッシュに対して呼び出される Size メソッドは、様々なケースで最適化され、 `O(N)` の代わりに `O(1)` の操作となりました。有効期限やストアが設定されている場合、より詳細な情報は link:https://issues.redhat.com/browse/ISPN-9366[ISPN-9366]を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:41
+#, fuzzy
 msgid "Reduced some cases of blocking threads being over utilized, therefore reducing how large the blocking thread pool would need to grow."
-msgstr ""
+msgstr "ブロッキングスレッドが過剰に使用されるケースを減らし、ブロッキングスレッドプールの規模を拡大する必要性を低減しました。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:42
+#, fuzzy
 msgid "Dynamic RBAC: a dynamic, clustered role mapper that can be modified at runtime to grant/deny access to specific principals."
-msgstr ""
+msgstr "Dynamic RBAC: クラスタ化された動的なロールマッパーで、実行時に修正して特定のプリンシパルにアクセスを許可/拒否することができます。"
 
 #. type: Title ==
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:43
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Query "
-msgstr ""
+msgstr "クエリ"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:45
+#, fuzzy
 msgid "Native Infinispan indexing annotations which finally replace the legacy Hibernate Query annotations we've used in past versions (see https://infinispan.org/blog/2022/06/14/infinispan-14-indexing-query-news)"
-msgstr ""
+msgstr "Infinispanのネイティブなインデックスアノテーションは、過去のバージョンで使用していたレガシーなHibernate Queryアノテーションを最終的に置き換えるものです（ https://infinispan.org/blog/2022/06/14/infinispan-14-indexing-query-news ください）。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:46
+#, fuzzy
 msgid "Index startup mode to determine what happens to indexes on cache start (see https://infinispan.org/blog/2022/06/14/infinispan-14-indexing-query-news)"
-msgstr ""
+msgstr "キャッシュ起動時にインデックスをどうするかを決めるインデックス起動モード ( https://infinispan.org/blog/2022/06/14/infinispan-14-indexing-query-news )"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:47
+#, fuzzy
 msgid "Dynamic index schema updates allow you to evolve your schema at runtime with near-zero impact to your queries (see https://infinispan.org/blog/2022/06/14/infinispan-14-indexing-query-news)"
-msgstr ""
+msgstr "動的なインデックススキーマの更新により、クエリにほとんど影響を与えることなく、実行時にスキーマを進化させることができます（ https://infinispan.org/blog/2022/06/14/infinispan-14-indexing-query-news ）。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:48
+#, fuzzy
 msgid "Support Protobuf's `oneof`"
-msgstr ""
+msgstr "Protobufのサポート `oneof`"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:49
+#, fuzzy
 msgid "We improved the hybrid query system"
-msgstr ""
+msgstr "ハイブリッドクエリシステムを改良しました"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:50
+#, fuzzy
 msgid "Support normalizers with the HotRod client"
-msgstr ""
+msgstr "HotRodクライアントでのノーマライザーのサポート"
 
 #. type: Title ==
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:51
@@ -172,34 +194,39 @@ msgstr "永続性"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:53
+#, fuzzy
 msgid "`SoftIndexFileStore` (default file store) segmentation performance has been improved significantly. This also reduces the number of Index segments required which reduces the number of open files and threads required on the server."
-msgstr ""
+msgstr "`SoftIndexFileStore` (デフォルトのファイルストア) のセグメンテーションのパフォーマンスが大幅に改善されました。また、必要な Index セグメントの数が減少し、サーバー上で必要なオープンファイルやスレッドの数が減少します。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:54
+#, fuzzy
 msgid "`JDBCStringBasedStore` no longer requires configuring the database min and max version as this is dynamically configured when checking the JDBC connection."
-msgstr ""
+msgstr "`JDBCStringBasedStore` JDBC接続をチェックするときに動的に設定されるため、データベースの最小バージョンと最大バージョンを設定する必要がなくなりました。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:55
+#, fuzzy
 msgid "`JPAStore` has been removed. It had been deprecated for quite a while, but the move to support Hibernate 6 prompted its removal as `JPAStore` only worked with Hibernate 5."
-msgstr ""
+msgstr "`JPAStore` が削除されました。かなり前から非推奨だったのですが、Hibernate 6 をサポートするようになったことで、 が Hibernate 5 でしか動作しなかったため、削除されたのです。 `JPAStore`"
 
 #. type: Title ==
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:56
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Hot Rod client"
-msgstr ""
+msgstr "ホットロッドクライアント"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:58
+#, fuzzy
 msgid "A new Hot Rod client with a completely redesigned API."
-msgstr ""
+msgstr "APIを完全に再設計した新しいHot Rodクライアントです。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:59
+#, fuzzy
 msgid "Sync (blocking), Async (non-blocking) and https://smallrye.io/smallrye-mutiny/[Mutiny] sub-APIs that fit with your programming model of choice."
-msgstr ""
+msgstr "Sync（ブロッキング）、Async（ノンブロッキング）、 link:https://smallrye.io/smallrye-mutiny/[Mutinyの]サブAPIがあり、お好みのプログラミングモデルにフィットします。"
 
 #. type: delimited block -
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:69
@@ -248,23 +275,27 @@ msgstr "サーバ"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:90
+#, fuzzy
 msgid "RESP endpoint: a Redis-compatible endpoint connector (implementing the RESP 3 protocol) with support for a subset of commands: `set`, `get`, `del`, `mget`, `mset`, `incr`, `decr`, `publish`, `subscribe`, `auth`, `ping`. The connector integrates with our security and protocol auto-detections, so that it is easily usable from our single-port endpoint. The implemented commands should be enough for typical caching usage. If you would like to see more, reach out via our community."
-msgstr ""
+msgstr "RESPエンドポイント：Redis互換のエンドポイントコネクタ（RESP 3プロトコルを実装）で、コマンドのサブセットをサポートします。 `set` `get`, `del`, `mget`, `mset`, `incr`, `decr`, `publish`, `subscribe`, `auth`, `ping`.このコネクタは、セキュリティとプロトコルの自動検出機能を備えており、シングルポートのエンドポイントから簡単に使用することができます。実装されているコマンドは、一般的なキャッシュの使用には十分でしょう。もし、もっと詳しく知りたい場合は、私たちのコミュニティを通じてご連絡ください。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:91
+#, fuzzy
 msgid "If you need to use https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips[FIPS], it's now possible to use https://docs.oracle.com/en/java/javase/17/security/pkcs11-reference-guide1.html[PKCS#11 keystores]"
-msgstr ""
+msgstr "link:https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips[FIPSを]使用する必要がある場合、 link:https://docs.oracle.com/en/java/javase/17/security/pkcs11-reference-guide1.html[PKCS#11キーストアを]使用することが可能になりました"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:92
+#, fuzzy
 msgid "Masked and external credentials, to avoid the use of secrets in your configuration files"
-msgstr ""
+msgstr "マスクされた外部認証情報、設定ファイルでのシークレットの使用を避けることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:93
+#, fuzzy
 msgid "Custom security providers, such as BouncyCastle, can now be used. Just drop your provider implementation in the `server/lib` and configure:"
-msgstr ""
+msgstr "BouncyCastleのようなカスタムセキュリティプロバイダが使用できるようになりました。プロバイダの実装を `server/lib` にドロップして設定するだけです。"
 
 #. type: delimited block -
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:99
@@ -277,8 +308,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:102
+#, fuzzy
 msgid "Improved TLS engine configuration, allowing fine-grained ciphersuites selection for both TLSv1.3 and TLSv1.2:"
-msgstr ""
+msgstr "TLSエンジンの設定を改善し、TLSv1.3とTLSv1.2の両方で暗号スイートをきめ細かく選択できるようになりました。"
 
 #. type: delimited block -
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:106
@@ -288,23 +320,27 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:109
+#, fuzzy
 msgid "Endpoint worker threads configuration has been removed. With the rewrite in Infinispan 13 to utilize non blocking threads, this configuration was unused and deprecated."
-msgstr ""
+msgstr "エンドポイントワーカスレッドの設定は削除されました。Infinispan 13 でノンブロッキングスレッドを使用するように書き直されたため、この設定は使用されず、非推奨となりました。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:110
+#, fuzzy
 msgid "https://docs.oracle.com/en/java/javase/17/management/monitoring-and-management-using-jmx-technology.html[JMX] integration with our security realms for authentication and authorization."
-msgstr ""
+msgstr "認証と認可のためのセキュリティ領域と link:https://docs.oracle.com/en/java/javase/17/management/monitoring-and-management-using-jmx-technology.html[JMXの]統合。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:111
+#, fuzzy
 msgid "Experimental https://kernel.dk/io_uring.pdf[IO_Uring] support"
-msgstr ""
+msgstr "実験的な link:https://kernel.dk/io_uring.pdf[IO_Uringの]サポート"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:112
+#, fuzzy
 msgid "REST endpoints expose distribution information for caches and clusters. For more information, see https://issues.redhat.com/browse/ISPN-12192[ISPN-12192] and https://issues.redhat.com/browse/ISPN-12193[ISPN-12193]."
-msgstr ""
+msgstr "RESTエンドポイントは、キャッシュとクラスタの配布情報を公開します。詳しくは、 link:https://issues.redhat.com/browse/ISPN-12192[ISPN-12192と]  link:https://issues.redhat.com/browse/ISPN-12193[ISPN-12193を]参照してください。"
 
 #. type: Title ==
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:113
@@ -314,65 +350,75 @@ msgstr "コンソール"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:115
+#, fuzzy
 msgid "Cache creation wizard. See our recent https://infinispan.org/blog/2022/09/12/infinispan-14-console-wizard[blog post] about it"
-msgstr ""
+msgstr "キャッシュ作成ウィザード。最近の link:https://infinispan.org/blog/2022/09/12/infinispan-14-console-wizard[ブログ記事も]ご覧ください"
 
 #. type: Title ==
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:117
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "CLI"
-msgstr ""
+msgstr "コマンドラインインタフェース"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:119
+#, fuzzy
 msgid "List cache entries, including metadata, using different formats (table, JSON, CSV)"
-msgstr ""
+msgstr "異なるフォーマット（テーブル、JSON、CSV）を使用して、メタデータを含むキャッシュエントリーを一覧表示することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:120
+#, fuzzy
 msgid "Configuration converter"
-msgstr ""
+msgstr "コンフィギュレーションコンバータ"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:121
+#, fuzzy
 msgid "Schema command to upload, delete, modify protobuf schema"
-msgstr ""
+msgstr "Protobufスキーマのアップロード、削除、変更を行うSchemaコマンド"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:122
+#, fuzzy
 msgid "Index command to manage indexes"
-msgstr ""
+msgstr "インデックスを管理するIndexコマンド"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:123
+#, fuzzy
 msgid "Client certificate authentication"
-msgstr ""
+msgstr "クライアント証明書認証"
 
 #. type: Title ==
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:124
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Image"
-msgstr ""
+msgstr "画像"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:126
+#, fuzzy
 msgid "Now based upon https://catalog.redhat.com/software/containers/ubi8/openjdk-17/618bdbf34ae3739687568813[ubi8/openjdk-17-runtime]"
-msgstr ""
+msgstr "現在は link:https://catalog.redhat.com/software/containers/ubi8/openjdk-17/618bdbf34ae3739687568813[ubi8/openjdk-17-runtime]をベースにしています。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:127
+#, fuzzy
 msgid "Images provided for both amd64 and arm64 architectures"
-msgstr ""
+msgstr "amd64とarm64の両アーキテクチャに対応したイメージを提供します。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:128
+#, fuzzy
 msgid "`SERVER_LIBS` environment variable added to allow dependencies to be downloaded prior to server startup"
-msgstr ""
+msgstr "`SERVER_LIBS` サーバ起動前に依存関係をダウンロードできるようにするための環境変数が追加されました。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:129
+#, fuzzy
 msgid "The `config-generator` has been removed. Its functionality can be replaced by using configuration overlays"
-msgstr ""
+msgstr "`config-generator` は削除されました。その機能は、コンフィギュレーションオーバーレイを使用することで置き換えることができます。"
 
 #. type: Title ==
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:130
@@ -382,65 +428,75 @@ msgstr "オペレータ"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:132
+#, fuzzy
 msgid "Multi-Operand support, which means a single operator can managed different versions of Infinispan"
-msgstr ""
+msgstr "マルチオペランドサポート：1人のオペレータが異なるバージョンのInfinispanを管理できます。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:133
+#, fuzzy
 msgid "FIPS support"
-msgstr ""
+msgstr "FIPS対応"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:134
+#, fuzzy
 msgid "Custom user configuration refactored to allow greater control of Infinispan configuration"
-msgstr ""
+msgstr "カスタムユーザー設定のリファクタリングにより、Infinispanの設定をより詳細に制御できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:135
+#, fuzzy
 msgid "Image based upon https://catalog.redhat.com/software/containers/ubi9/ubi-micro/615bdf943f6014fa45ae1b58[ubi9/ubi-micro]"
-msgstr ""
+msgstr "画像はubi9/ubi-microを元に作成。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:136
+#, fuzzy
 msgid "Bundle provided for both amd64 and arm64 architectures"
-msgstr ""
+msgstr "amd64とarm64の両アーキテクチャに対応したバンドルを提供"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:137
+#, fuzzy
 msgid "Admin service is now headless"
-msgstr ""
+msgstr "Adminサービスがヘッドレスになりました"
 
 #. type: Title ==
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:138
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Hibernate ORM second-level cache"
-msgstr ""
+msgstr "Hibernate ORMの第2レベルキャッシュ"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:140
+#, fuzzy
 msgid "Hibernate caching implementation supporting Hibernate 6. Note that Hibernate 5 caching support is no longer provided due to Jakarta EE migration."
-msgstr ""
+msgstr "Hibernate 6に対応したHibernateキャッシュ実装です。なお、Hibernate 5 のキャッシングサポートは Jakarta EE への移行により提供されなくなりました。"
 
 #. type: Title ==
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:142
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Observability"
-msgstr ""
+msgstr "観測可能性"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:144
+#, fuzzy
 msgid "Integration with OpenTelemetry tracing (see https://infinispan.org/blog/2022/07/18/infinispan-14-opentelemetry-tracing)"
-msgstr ""
+msgstr "OpenTelemetryトレースとの統合 ( https://infinispan.org/blog/2022/07/18/infinispan-14-opentelemetry-tracing )"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:145
+#, fuzzy
 msgid "Client / server request tracing correlations on both Hot Rod and REST APIs (see https://infinispan.org/blog/2022/07/18/infinispan-14-opentelemetry-tracing)"
-msgstr ""
+msgstr "Hot RodとREST APIの両方におけるクライアント/サーバーリクエストのトレース相関関係（ https://infinispan.org/blog/2022/07/18/infinispan-14-opentelemetry-tracing"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:146
+#, fuzzy
 msgid "Integration with Micrometer to produce Prometheus and OpenMetrics metrics"
-msgstr ""
+msgstr "PrometheusとOpenMetricsのメトリクスを生成するためのMicrometerとの統合"
 
 #. type: Title ==
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:147
@@ -450,8 +506,9 @@ msgstr "その他"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:149
+#, fuzzy
 msgid "Infinispan Quarkus server now supports the same command line arguments as the normal JVM Infinispan server. In addition the Infinispan Quarkus native binary can be used in an existing unzipped Infinispan Server zip file for ease of use."
-msgstr ""
+msgstr "Infinispan Quarkus サーバーは、通常の JVM Infinispan サーバーと同じコマンドライン引数をサポートするようになりました。さらに、Infinispan Quarkusのネイティブバイナリは、既存の解凍済みInfinispan Server zipファイルで使用できるため、使い勝手が良くなりました。"
 
 #. type: Title ==
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:150
@@ -461,8 +518,9 @@ msgstr "ドキュメンテーション"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:152
+#, fuzzy
 msgid "Many improvements, updates and fixes."
-msgstr ""
+msgstr "多くの改良、アップデート、修正を行いました。"
 
 #. type: Title ==
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:154
@@ -472,10 +530,12 @@ msgstr "リリースノート"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:157
+#, fuzzy
 msgid "You can look at the https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12352858[release notes] to see what has changed since our latest CR."
-msgstr ""
+msgstr "最新のCRから何が変わったかは、 link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12352858[リリースノートを]ご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2022-09-29-infinispan-14.0.0.Final.adoc:159
+#, fuzzy
 msgid "Get them from our https://infinispan.org/download/[download page]."
-msgstr ""
+msgstr "link:https://infinispan.org/download/[ダウンロードページより]入手してください。"
