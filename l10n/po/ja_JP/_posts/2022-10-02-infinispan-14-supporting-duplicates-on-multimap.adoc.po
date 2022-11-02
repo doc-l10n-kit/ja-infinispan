@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 14 supporting duplicates on multimap\n"
@@ -34,12 +34,19 @@ msgid ""
 "tags: [ \"multimap\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 14 は multimap の重複をサポートします。\n"
+"permalink: /blog/:year/:month/:day/infinispan-14-supporting-duplicates-on-multimap\n"
+"date: '2022-10-2T00:00:00.000-00:00'\n"
+"author: miador\n"
+"tags: [ \"multimap\" ]\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Infinispan 14 supporting duplicates on multimap"
-msgstr ""
+msgstr "Infinispan 14 は multimap の重複をサポートします。"
 
 #. type: Plain text
 #: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:13
@@ -48,18 +55,21 @@ msgstr "親愛なるInfinispanのコミュニティへ"
 
 #. type: Plain text
 #: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:15
+#, fuzzy
 msgid "With the Infinispan 14 development release 04 multimap cache supports duplicates."
-msgstr ""
+msgstr "Infinispan 14開発リリース04のマルチマップキャッシュは、重複をサポートします。"
 
 #. type: Plain text
 #: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:17
+#, fuzzy
 msgid "By default `supportsDuplicates` is set to false and can be configured during initialization."
-msgstr ""
+msgstr "デフォルトでは、 `supportsDuplicates` は false に設定されており、初期化時に設定することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:19
+#, fuzzy
 msgid "The following is an example on how you can set multimap to support duplicate key-value pairs:"
-msgstr ""
+msgstr "以下は、マルチマップがキーと値のペアの重複をサポートするように設定する方法の例です。"
 
 #. type: delimited block -
 #: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:23
@@ -134,11 +144,12 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:60
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Further reading"
-msgstr ""
+msgstr "さらに詳しく"
 
 #. type: Plain text
 #: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:63
+#, fuzzy
 msgid "Check out for available documentation https://infinispan.org/docs/14.0.x/titles/embedding/embedding.html#multimap-cache[Infinispan MultimapCache Guide]."
-msgstr ""
+msgstr "link:https://infinispan.org/docs/14.0.x/titles/embedding/embedding.html#multimap-cache[Infinispan MultimapCache ガイドを]参照してください。"
