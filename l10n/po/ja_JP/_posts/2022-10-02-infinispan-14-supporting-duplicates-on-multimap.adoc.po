@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-11-02 10:19+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 14 supporting duplicates on multimap\n"
+"permalink: /blog/:year/:month/:day/infinispan-14-supporting-duplicates-on-multimap\n"
+"date: '2022-10-2T00:00:00.000-00:00'\n"
+"author: miador\n"
+"tags: [ \"multimap\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:10
+#, no-wrap
+msgid "Infinispan 14 supporting duplicates on multimap"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:13
+msgid "Dear Infinispan community,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:15
+msgid "With the Infinispan 14 development release 04 multimap cache supports duplicates."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:17
+msgid "By default `supportsDuplicates` is set to false and can be configured during initialization."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:19
+msgid "The following is an example on how you can set multimap to support duplicate key-value pairs:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:23
+#, no-wrap
+msgid "public class MyEmbeddedMultimapCacheExmaple {\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:26
+#, no-wrap
+msgid ""
+"public static void main(String[] args) {\n"
+"      DefaultCacheManager cacheManager = new DefaultCacheManager();\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:28
+#, no-wrap
+msgid "      MultimapCacheManager multimapCacheManager = EmbeddedMultimapCacheManagerFactory.from(cacheManager);\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:30
+#, no-wrap
+msgid "      multimapCacheManager.defineConfiguration(\"multimap\", new ConfigurationBuilder().build());\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:33
+#, no-wrap
+msgid ""
+"      // Get the MultimapCache with duplicates support\n"
+"      MultimapCache<String, String> multimap = multimapCacheManager.get(\"multimap\", true);\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:44
+#, no-wrap
+msgid ""
+"      // Store duplicate values in a key\n"
+"      CompletableFuture.allOf(\n"
+"            multimap.put(\"key\", \"value1\"),\n"
+"            multimap.put(\"key\", \"value1\"),\n"
+"            multimap.put(\"key\", \"value3\"))\n"
+"            .whenComplete((nil, ex) -> {\n"
+"               // Retrieve the values\n"
+"               multimap.get(\"key\").whenComplete((values, ex2) -> {\n"
+"                  // Print them out\n"
+"                  System.out.println(values);\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:52
+#, no-wrap
+msgid ""
+"                  System.out.println(\"Multimap size:\" + values.size());\n"
+"                  // Stop the cache manager and release all resources\n"
+"                  cacheManager.stop();\n"
+"               });\n"
+"            });\n"
+"   }\n"
+"}\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:58
+#, no-wrap
+msgid ""
+"[value1, value1, value3]\n"
+"Multimap size: 3\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:60
+#, no-wrap
+msgid "Further reading"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-10-02-infinispan-14-supporting-duplicates-on-multimap.adoc:63
+msgid "Check out for available documentation https://infinispan.org/docs/14.0.x/titles/embedding/embedding.html#multimap-cache[Infinispan MultimapCache Guide]."
+msgstr ""
