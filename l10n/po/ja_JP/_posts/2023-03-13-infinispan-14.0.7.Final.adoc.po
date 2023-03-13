@@ -1,0 +1,363 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2023-03-13 07:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 14.0.7.Final\n"
+"permalink: /blog/:year/:month/:day/infinispan-14\n"
+"date: '2023-03-13T12:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\", \"spring\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:10
+#, no-wrap
+msgid "Infinispan 14.0.7.Final"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:13
+msgid "We rarely do announcements for micro-releases, but 14.0.7.Final is a bit special, because it finally adds support for Spring 6 and Spring Boot 3."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:14
+#, no-wrap
+msgid "Spring Framework 6 and Spring Boot 3"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:16
+msgid "We now ship components to support Spring Framework 6 and Spring Boot 3:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:23
+#, no-wrap
+msgid ""
+"<dependency>\n"
+"   <groupId>org.infinispan</groupId>\n"
+"   <artifactId>infinispan-spring-boot3-starter-embedded</artifactId>\n"
+"   <version>14.0.7.Final</version>\n"
+"</dependency>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:32
+#, no-wrap
+msgid ""
+"<dependency>\n"
+"   <groupId>org.infinispan</groupId>\n"
+"   <artifactId>infinispan-spring-boot3-starter-remote</artifactId>\n"
+"   <version>14.0.7.Final</version>\n"
+"</dependency>\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:34
+#, no-wrap
+msgid "Important SIFS fixes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:38
+msgid "This release also includes very important fixes to the Soft-Index File Store (SIFS), which is our default file-store implementation: if you use it for your persistent caches you should really upgrade !"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:39
+#, no-wrap
+msgid "Release Notes"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:41
+#, no-wrap
+msgid "Feature Request"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:43
+msgid "https://issues.redhat.com/browse/ISPN-13424[ISPN-13424 - Spring 6 integration]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:44
+msgid "https://issues.redhat.com/browse/ISPN-14447[ISPN-14447 - Handle RBAC on counters]"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:45
+#, no-wrap
+msgid "Bug"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:47
+msgid "https://issues.redhat.com/browse/ISPN-13877[ISPN-13877 - NullPointerException in MetricsCollector.java]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:48
+msgid "https://issues.redhat.com/browse/ISPN-14280[ISPN-14280 - JSON parser doesn&#39;t report error locations correctly]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:49
+msgid "https://issues.redhat.com/browse/ISPN-14453[ISPN-14453 - Ickle Queries should support BigInteger and BigDecimal]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:50
+msgid "https://issues.redhat.com/browse/ISPN-14470[ISPN-14470 - REST cache configuration comparison returns 204 for different caches]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:51
+msgid "https://issues.redhat.com/browse/ISPN-14477[ISPN-14477 - Concurrent Spring session access results in lost session attributes]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:52
+msgid "https://issues.redhat.com/browse/ISPN-14479[ISPN-14479 - SQL Cache store initiation fails on Sql type CHAR]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:53
+msgid "https://issues.redhat.com/browse/ISPN-14491[ISPN-14491 - Adding entries with putAll does not add metadata version - following replaceWithVersion will end with a timeout]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:54
+msgid "https://issues.redhat.com/browse/ISPN-14495[ISPN-14495 - RESP endpoint cannot parse request larger than packet size]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:55
+msgid "https://issues.redhat.com/browse/ISPN-14496[ISPN-14496 - Implement CONFIG command for RESP endpoint]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:56
+msgid "https://issues.redhat.com/browse/ISPN-14497[ISPN-14497 - RESP endpoint needs to release ByteBuf objects it creates]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:57
+msgid "https://issues.redhat.com/browse/ISPN-14500[ISPN-14500 - REST API blocking when retrieving keys and entries]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:58
+msgid "https://issues.redhat.com/browse/ISPN-14509[ISPN-14509 - JdbcStringBasedStore bulk operations don&#39;t work when more than 128 segments worth of values are provided]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:59
+msgid "https://issues.redhat.com/browse/ISPN-14510[ISPN-14510 - org.infinispan.server.cli.CliIT.testCliInteractive failure]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:60
+msgid "https://issues.redhat.com/browse/ISPN-14511[ISPN-14511 - RestOperations.testCounter HTTP_20 failure]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:61
+msgid "https://issues.redhat.com/browse/ISPN-14512[ISPN-14512 - Fix *-jakarta modules]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:62
+msgid "https://issues.redhat.com/browse/ISPN-14516[ISPN-14516 - Wrong versions in spring-boot-3-tests module]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:63
+msgid "https://issues.redhat.com/browse/ISPN-14532[ISPN-14532 - Multimap failing with huge value]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:64
+msgid "https://issues.redhat.com/browse/ISPN-14535[ISPN-14535 - GetCounterNameOperation can fail replay]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:65
+msgid "https://issues.redhat.com/browse/ISPN-14536[ISPN-14536 - Fix HotRod client commands failing on replay]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:66
+msgid "https://issues.redhat.com/browse/ISPN-14540[ISPN-14540 - DocsFix JSON example for Off-heap storage]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:67
+msgid "https://issues.redhat.com/browse/ISPN-14542[ISPN-14542 - AsyncStore needs to use SecurityAction when retrieving ComponentRegistry]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:68
+msgid "https://issues.redhat.com/browse/ISPN-14543[ISPN-14543 - Build resource filtering corrupts binary files]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:69
+msgid "https://issues.redhat.com/browse/ISPN-14544[ISPN-14544 - RESP endpoint cache shouldn&#39;t require no expiration configured]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:70
+msgid "https://issues.redhat.com/browse/ISPN-14545[ISPN-14545 - SIFS Compactor does not properly shut down but the index thinks it is okay]"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:71
+#, no-wrap
+msgid "Task"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:73
+msgid "https://issues.redhat.com/browse/ISPN-14083[ISPN-14083 - Infinispan cache configuration cheat sheet]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:74
+msgid "https://issues.redhat.com/browse/ISPN-14492[ISPN-14492 - Build Infinispan with JDK 17]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:75
+msgid "https://issues.redhat.com/browse/ISPN-14541[ISPN-14541 - Use Java serialization or JBoss Marshalling with cyclic objects]"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:76
+#, no-wrap
+msgid "Component Upgrade"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:78
+msgid "https://issues.redhat.com/browse/ISPN-14270[ISPN-14270 - Update to Spring Boot 3]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:79
+msgid "https://issues.redhat.com/browse/ISPN-14444[ISPN-14444 - Update Patternfly to 2022.16 Release]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:80
+msgid "https://issues.redhat.com/browse/ISPN-14462[ISPN-14462 - Upgrade assertj-core to 3.24.1]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:81
+msgid "https://issues.redhat.com/browse/ISPN-14476[ISPN-14476 - Bump JGroups to 5.2.12.Final]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:82
+msgid "https://issues.redhat.com/browse/ISPN-14513[ISPN-14513 - Upgrade Narayana to 5.13.1.Final]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:83
+msgid "https://issues.redhat.com/browse/ISPN-14520[ISPN-14520 - Upgrade Protostream to 4.6.1.Final]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:84
+msgid "https://issues.redhat.com/browse/ISPN-14553[ISPN-14553 - Spring and Spring Boot dependencies]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:85
+msgid "https://issues.redhat.com/browse/ISPN-14565[ISPN-14565 - Update Console to 14.0.7.Final]"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:86
+#, no-wrap
+msgid "Enhancement"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:88
+msgid "https://issues.redhat.com/browse/ISPN-14244[ISPN-14244 - Don't pretty print XML/JSON by default]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:89
+msgid "https://issues.redhat.com/browse/ISPN-14423[ISPN-14423 - Improve configuration parser error reporting]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:90
+msgid "https://issues.redhat.com/browse/ISPN-14472[ISPN-14472 - Maven Shade 3.4.1]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:91
+msgid "https://issues.redhat.com/browse/ISPN-14473[ISPN-14473 - Improve REST API error reporting]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:92
+msgid "https://issues.redhat.com/browse/ISPN-14507[ISPN-14507 - REST updates]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:93
+msgid "https://issues.redhat.com/browse/ISPN-14522[ISPN-14522 - Migration of segmented cache stores]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:94
+msgid "https://issues.redhat.com/browse/ISPN-14528[ISPN-14528 - Configuration conversion should support templates]"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:95
+#, no-wrap
+msgid "Release notes"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:98
+msgid "You can look at the https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12352858[release notes] to see what has changed since our latest CR.]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:100
+msgid "Get them from our https://infinispan.org/download/[download page].]"
+msgstr ""
