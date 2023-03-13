@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 14.0.7.Final\n"
@@ -34,28 +34,37 @@ msgid ""
 "tags: [ \"release\", \"spring\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 14.0.7.ファイナル\n"
+"permalink: /blog/:year/:month/:day/infinispan-14\n"
+"date: '2023-03-13T12:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\", \"spring\" ]\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Infinispan 14.0.7.Final"
-msgstr ""
+msgstr "Infinispan 14.0.7.ファイナル"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:13
+#, fuzzy
 msgid "We rarely do announcements for micro-releases, but 14.0.7.Final is a bit special, because it finally adds support for Spring 6 and Spring Boot 3."
-msgstr ""
+msgstr "マイクロリリースのアナウンスはほとんど行いませんが、14.0.7.Finalは少し特別で、Spring 6とSpring Boot 3のサポートがようやく追加されたからです。"
 
 #. type: Title ==
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:14
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Spring Framework 6 and Spring Boot 3"
-msgstr ""
+msgstr "Spring Framework 6とSpring Boot 3"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:16
+#, fuzzy
 msgid "We now ship components to support Spring Framework 6 and Spring Boot 3:"
-msgstr ""
+msgstr "Spring Framework 6とSpring Boot 3に対応したコンポーネントを出荷するようになりました。"
 
 #. type: delimited block -
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:23
@@ -81,20 +90,21 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:34
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Important SIFS fixes"
-msgstr ""
+msgstr "SIFSの重要な修正"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:38
+#, fuzzy
 msgid "This release also includes very important fixes to the Soft-Index File Store (SIFS), which is our default file-store implementation: if you use it for your persistent caches you should really upgrade !"
-msgstr ""
+msgstr "このリリースでは、デフォルトのファイルストア実装であるSIFS（Soft-Index File Store）に対する非常に重要な修正も含まれています：もし、永続キャッシュにこれを使用しているならば、本当にアップグレードすべきです"
 
 #. type: Title ==
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:39
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Release Notes"
-msgstr ""
+msgstr "リリースノート"
 
 #. type: Title ===
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:41
@@ -104,13 +114,15 @@ msgstr "機能リクエスト"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:43
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-13424[ISPN-13424 - Spring 6 integration]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-13424[ISPN-13424 - スプリング6インテグレーション]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:44
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14447[ISPN-14447 - Handle RBAC on counters]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14447[ISPN-14447 - カウンターでRBACを処理する。]"
 
 #. type: Title ===
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:45
@@ -120,123 +132,147 @@ msgstr "バグ"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:47
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-13877[ISPN-13877 - NullPointerException in MetricsCollector.java]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-13877[ISPN-13877 - MetricsCollector.java で NullPointerException が発生。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:48
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14280[ISPN-14280 - JSON parser doesn&#39;t report error locations correctly]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14280[ISPN-14280 - JSONパーサーでエラー位置が正しく報告されない]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:49
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14453[ISPN-14453 - Ickle Queries should support BigInteger and BigDecimal]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14453[ISPN-14453 - Ickle クエリは BigInteger と BigDecimal をサポートすべきである。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:50
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14470[ISPN-14470 - REST cache configuration comparison returns 204 for different caches]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14470[ISPN-14470 - RESTのキャッシュ構成の比較で、異なるキャッシュの場合は204を返す。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:51
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14477[ISPN-14477 - Concurrent Spring session access results in lost session attributes]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14477[ISPN-14477 - Springのセッションに同時にアクセスすると、セッションの属性が失われる。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:52
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14479[ISPN-14479 - SQL Cache store initiation fails on Sql type CHAR]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14479[ISPN-14479 - Sql タイプ CHAR で SQL Cache のストア開始が失敗する。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:53
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14491[ISPN-14491 - Adding entries with putAll does not add metadata version - following replaceWithVersion will end with a timeout]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14491[ISPN-14491 - putAllでエントリーを追加してもメタデータのバージョンが追加されない - replaceWithVersionに続くとタイムアウトで終了します。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:54
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14495[ISPN-14495 - RESP endpoint cannot parse request larger than packet size]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14495[ISPN-14495 - RESPエンドポイントがパケットサイズより大きいリクエストを解析できない。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:55
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14496[ISPN-14496 - Implement CONFIG command for RESP endpoint]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14496[ISPN-14496 - RESPエンドポイントにCONFIGコマンドを実装する。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:56
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14497[ISPN-14497 - RESP endpoint needs to release ByteBuf objects it creates]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14497[ISPN-14497 - RESPエンドポイントは、作成したByteBufオブジェクトを解放する必要があります。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:57
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14500[ISPN-14500 - REST API blocking when retrieving keys and entries]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14500[ISPN-14500 - REST API がキーとエントリーを取得する際にブロックする。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:58
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14509[ISPN-14509 - JdbcStringBasedStore bulk operations don&#39;t work when more than 128 segments worth of values are provided]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14509[ISPN-14509 - JdbcStringBasedStoreのバルク操作は、128セグメント以上の値が提供された場合に動作しません。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:59
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14510[ISPN-14510 - org.infinispan.server.cli.CliIT.testCliInteractive failure]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14510[ISPN-14510 - org.infinispan.server.cli.CliIT.testCliInteractive 失敗。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:60
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14511[ISPN-14511 - RestOperations.testCounter HTTP_20 failure]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14511[ISPN-14511 - RestOperations.testCounter HTTP_20 の失敗。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:61
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14512[ISPN-14512 - Fix *-jakarta modules]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14512[ISPN-14512 - *-jakarta モジュールを修正する。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:62
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14516[ISPN-14516 - Wrong versions in spring-boot-3-tests module]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14516[ISPN-14516 - spring-boot-3-tests モジュールに誤ったバージョンがある。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:63
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14532[ISPN-14532 - Multimap failing with huge value]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14532[ISPN-14532 - マルチマップが巨大な値で失敗する。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:64
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14535[ISPN-14535 - GetCounterNameOperation can fail replay]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14535[ISPN-14535 - GetCounterNameOperationがリプレイに失敗することがある。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:65
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14536[ISPN-14536 - Fix HotRod client commands failing on replay]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14536[ISPN-14536 - HotRod クライアントコマンドが再生時に失敗するのを修正しました。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:66
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14540[ISPN-14540 - DocsFix JSON example for Off-heap storage]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14540[ISPN-14540 - オフヒープストレージに関する DocsFix JSON の例。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:67
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14542[ISPN-14542 - AsyncStore needs to use SecurityAction when retrieving ComponentRegistry]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14542[ISPN-14542 - AsyncStore は ComponentRegistry を取得する際に SecurityAction を使用する必要があります。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:68
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14543[ISPN-14543 - Build resource filtering corrupts binary files]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14543[ISPN-14543 - ビルドリソースフィルタリングがバイナリファイルを破損する。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:69
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14544[ISPN-14544 - RESP endpoint cache shouldn&#39;t require no expiration configured]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14544[ISPN-14544 - RESPエンドポイントキャッシュは、有効期限を設定する必要はありません。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:70
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14545[ISPN-14545 - SIFS Compactor does not properly shut down but the index thinks it is okay]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14545[ISPN-14545 - SIFS Compactorが正しくシャットダウンされないが、インデックスは問題ないと考えている。]"
 
 #. type: Title ===
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:71
@@ -246,18 +282,21 @@ msgstr "タスク"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:73
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14083[ISPN-14083 - Infinispan cache configuration cheat sheet]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14083[ISPN-14083 - Infinispanキャッシュ設定チートシート]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:74
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14492[ISPN-14492 - Build Infinispan with JDK 17]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14492[ISPN-14492 - JDK 17 で Infinispan をビルドする。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:75
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14541[ISPN-14541 - Use Java serialization or JBoss Marshalling with cyclic objects]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14541[ISPN-14541 - 循環するオブジェクトで Java のシリアライズまたは JBoss Marshalling を使用する。]"
 
 #. type: Title ===
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:76
@@ -267,43 +306,51 @@ msgstr "コンポーネントのアップグレード"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:78
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14270[ISPN-14270 - Update to Spring Boot 3]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14270[ISPN-14270 - Spring Boot 3へのアップデート]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:79
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14444[ISPN-14444 - Update Patternfly to 2022.16 Release]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14444[ISPN-14444 - Patternflyを2022.16リリースに更新する。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:80
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14462[ISPN-14462 - Upgrade assertj-core to 3.24.1]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14462[ISPN-14462 - assertj-core を 3.24.1 にアップグレードする。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:81
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14476[ISPN-14476 - Bump JGroups to 5.2.12.Final]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14476[ISPN-14476 - JGroups を 5.2.12.Final にバンプする。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:82
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14513[ISPN-14513 - Upgrade Narayana to 5.13.1.Final]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14513[ISPN-14513 - Narayana を 5.13.1.Final にアップグレードする。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:83
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14520[ISPN-14520 - Upgrade Protostream to 4.6.1.Final]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14520[ISPN-14520 - Protostream を 4.6.1.Final にアップグレードする。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:84
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14553[ISPN-14553 - Spring and Spring Boot dependencies]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14553[ISPN-14553 - SpringとSpring Bootの依存関係]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:85
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14565[ISPN-14565 - Update Console to 14.0.7.Final]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14565[ISPN-14565 - コンソールを 14.0.7.Final にアップデートする。]"
 
 #. type: Title ===
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:86
@@ -313,38 +360,45 @@ msgstr "改善"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:88
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14244[ISPN-14244 - Don't pretty print XML/JSON by default]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14244[ISPN-14244 - デフォルトでXML/JSONをきれいに印刷しない。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:89
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14423[ISPN-14423 - Improve configuration parser error reporting]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14423[ISPN-14423 - コンフィギュレーションパーサーのエラーレポートを改善しました。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:90
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14472[ISPN-14472 - Maven Shade 3.4.1]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14472[ISPN-14472 - Maven Shade 3.4.1]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:91
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14473[ISPN-14473 - Improve REST API error reporting]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14473[ISPN-14473 - REST API のエラーレポートを改善しました。]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:92
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14507[ISPN-14507 - REST updates]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14507[ISPN-14507 - RESTのアップデート]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:93
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14522[ISPN-14522 - Migration of segmented cache stores]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14522[ISPN-14522 - セグメント化されたキャッシュストアのマイグレーション]"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:94
+#, fuzzy
 msgid "https://issues.redhat.com/browse/ISPN-14528[ISPN-14528 - Configuration conversion should support templates]"
-msgstr ""
+msgstr "link:https://issues.redhat.com/browse/ISPN-14528[ISPN-14528 - コンフィギュレーション変換はテンプレートをサポートする必要があります。]"
 
 #. type: Title ==
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:95
@@ -354,10 +408,12 @@ msgstr "リリースノート"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:98
+#, fuzzy
 msgid "You can look at the https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&version=12352858[release notes] to see what has changed since our latest CR.]"
-msgstr ""
+msgstr "最新のCRから何が変わったかは、 link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12352858[リリースノートを]ご覧ください]。"
 
 #. type: Plain text
 #: upstream/_posts/2023-03-13-infinispan-14.0.7.Final.adoc:100
+#, fuzzy
 msgid "Get them from our https://infinispan.org/download/[download page].]"
-msgstr ""
+msgstr "link:https://infinispan.org/download/[ダウンロード]ページから入手してください。］"
