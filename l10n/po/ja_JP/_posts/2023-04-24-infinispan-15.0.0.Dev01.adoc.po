@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Infinispan 15.0.0.Dev01\n"
@@ -34,135 +34,157 @@ msgid ""
 "tags: [ \"release\", \"development\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: Infinispan 15.0.0.Dev01\n"
+"permalink: /blog/:year/:month/:day/infinispan-15.0.0.Dev01\n"
+"date: '2023-04-24T00:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\", \"development\" ]\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Infinispan 15.0.0.Dev01"
-msgstr ""
+msgstr "Infinispan 15.0.0.Dev01"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:14
+#, fuzzy
 msgid "Infinispan 15.0.0.Dev01 marks the beginning of a new development cycle, and there are a number of notable changes that we are making that deserve a detailed post."
-msgstr ""
+msgstr "Infinispan 15.0.0.Dev01は、新しい開発サイクルの始まりであり、詳細な記事に値する注目すべき変更が数多くあります。"
 
 #. type: Title ==
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:15
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Bye bye, Java EE, Hello Jakarta EE"
-msgstr ""
+msgstr "バイバイ、Java EE、ハローJakarta EE"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:21
+#, fuzzy
 msgid "We've made the decision to drop Java EE support completely and focus solely on https://jakarta.ee[Jakarta EE].  For 14.0 we provided artifacts for both, but we believe the time has come to move on. All of the leading application servers (like https://wildfly.org[WildFly] and https://openliberty.io[OpenLiberty]) as well as the most important stacks (like https://quarkus.io[Quarkus] and https://spring.io[Spring]) have adopted Jakarta EE, so we've decided it was time for us to make the move too."
-msgstr ""
+msgstr "私たちは、Java EEのサポートを完全に終了し、 link:https://jakarta.ee[Jakarta EEのみに]集中することを決定しました。14.0では、両方のアーティファクトを提供しましたが、移行する時期が来たと信じています。主要なアプリケーションサーバー（ link:https://wildfly.org[WildFlyや]  link:https://openliberty.io[OpenLibertyなど]）や最も重要なスタック（ link:https://quarkus.io[Quarkusや]  link:https://spring.io[Springなど]）はすべてJakarta EEを採用しており、私たちも移行する時が来たと判断しました。"
 
 #. type: Title ==
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:22
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "JCache changes"
-msgstr ""
+msgstr "JCacheの変更点"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:29
+#, fuzzy
 msgid "The choice to drop Java EE directly impacts our JCache provider implementation.  The JCache API (aka JSR 107) is essentially in maintenance mode: it was never adopted by Java EE and there are a number of obstacles (mostly legal) that prevent it from moving to Jakarta EE. We understand the need to have an implementation agnostic caching API, so we are going to continue supporting our JCache provider, but we will drop those parts which require Java EE, most notably the `javax.cache.annotation` package. Hopefully a modern caching API will emerge as part of Jakarta EE."
-msgstr ""
+msgstr "Java EEをやめるという選択は、私たちのJCacheプロバイダの実装に直接影響します。JCache API (別名JSR 107)は、基本的にメンテナンスモードです。Java EEに採用されることはなく、Jakarta EEへの移行を阻む多くの障害（主に法的）があります。私たちは、実装にとらわれないキャッシュAPIの必要性を理解しているので、JCacheプロバイダのサポートを続けるつもりですが、Java EEを必要とする部分、特に `javax.cache.annotation` パッケージは削除する予定です。Jakarta EEの一部として、最新のキャッシュAPIが登場することを期待しています。"
 
 #. type: Title ==
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:30
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Dropping Spring 5 / Spring Boot 2 support"
-msgstr ""
+msgstr "Spring 5 / Spring Boot 2のサポートを取りやめる。"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:33
+#, fuzzy
 msgid "Dropping Java EE also means having to drop Spring 5 and Spring Boot 2 support."
-msgstr ""
+msgstr "Java EEをやめるということは、Spring 5とSpring Boot 2のサポートをやめなければならないということでもある。"
 
 #. type: Title ==
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:34
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Quarkus"
-msgstr ""
+msgstr "クアッカス"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:38
+#, fuzzy
 msgid "We've merged our Quarkus components (embedded, CLI and server) into the main repository and have upgraded them to Quarkus 3.0.  Our https://quarkus.io/extensions/io.quarkus/quarkus-infinispan-client[client extension] continues to be part of the Quarkus ecosystem."
-msgstr ""
+msgstr "Quarkusのコンポーネント（組み込み、CLI、サーバー）をメインリポジトリに統合し、Quarkus 3.0にアップグレードしました。当社の link:https://quarkus.io/extensions/io.quarkus/quarkus-infinispan-client[クライアントエクステンションは]、引き続きQuarkusエコシステムの一部です。"
 
 #. type: Title ==
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:39
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Security Manager"
-msgstr ""
+msgstr "セキュリティマネージャー"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:45
+#, fuzzy
 msgid "The Java Security Manager has been https://openjdk.org/jeps/411[deprecated for removal].  It was designed mostly for sandboxing Java applets, but it was somehow (wrongly) co-opted as a way to implement similar functionality for normal Java applications. It was slow and cumbersome, and we're glad to see it go. Luckily, the removal of SecurityManager support from Infinispan does not affect its authentication and authorization capabilities."
-msgstr ""
+msgstr "Javaセキュリティマネージャは、 link:https://openjdk.org/jeps/411[削除のため非推奨と]なりました。これは主にJavaアプレットをサンドボックス化するために設計されましたが、通常のJavaアプリケーションに同様の機能を実装する方法として、何らかの形で（間違って）採用されました。これは遅くて面倒なもので、私たちはこれがなくなるのをうれしく思っています。幸いなことに、InfinispanからSecurityManagerのサポートが削除されても、認証や認可の機能には影響しない。"
 
 #. type: Title ==
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:46
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Java 17 and 21"
-msgstr ""
+msgstr "ジャバ17、ジャバ21"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:49
+#, fuzzy
 msgid "Starting with Infinispan 15, we will baseline on JDK 17 and also offer support for JDK 21, including virtual threads."
-msgstr ""
+msgstr "Infinispan 15から、JDK 17をベースラインとし、仮想スレッドを含むJDK 21のサポートも提供する予定です。"
 
 #. type: Title ==
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:50
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "But what if I rely on JavaEE, Spring 5, Spring Boot 2 and JCache annotations ?"
-msgstr ""
+msgstr "しかし、JavaEE、Spring 5、Spring Boot 2、JCacheアノテーションに依存している場合はどうでしょうか？"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:54
+#, fuzzy
 msgid "Don't worry, we have you covered for quite some time, as we will continue to support Infinispan 14.0 for quite a while, with security patches, bug fixes and improvements that we can backport."
-msgstr ""
+msgstr "Infinispan 14.0は、セキュリティパッチ、バグフィックス、バックポート可能な改善など、かなり長い間サポートし続けますので、ご安心ください。"
 
 #. type: Title ==
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:55
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Other features and tentative release date"
-msgstr ""
+msgstr "その他の機能、および暫定的な発売日"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:58
+#, fuzzy
 msgid "What you can expect to see in Infinispan 15:"
-msgstr ""
+msgstr "Infinispan 15で期待できること："
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:60
+#, fuzzy
 msgid "many improvements to our Redis-compatible https://redis.io/docs/reference/protocol-spec/[RESP] endpoint, including many more commands"
-msgstr ""
+msgstr "Redis互換の link:https://redis.io/docs/reference/protocol-spec/[RESP]エンドポイントに多くの改良を加え、多くのコマンドを追加しました。"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:61
+#, fuzzy
 msgid "a completely overhauled https://memcached.org/[Memcached] endpoint with support for authentication and the binary protocol"
-msgstr ""
+msgstr "認証とバイナリプロトコルをサポートし、完全にオーバーホールされた link:https://memcached.org/[Memcached]エンドポイント。"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:62
+#, fuzzy
 msgid "improved performance across the board, with particular focus on the remote endpoints and clustering"
-msgstr ""
+msgstr "特にリモートエンドポイントとクラスタリングに重点を置いて、全体的にパフォーマンスを向上させました。"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:63
+#, fuzzy
 msgid "CDC integration, courtesy of our friends over at https://debezium.io/[Debezium]"
-msgstr ""
+msgstr "link:https://debezium.io/[Debeziumの]友人によるCDC統合。"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:64
+#, fuzzy
 msgid "Much more!"
-msgstr ""
+msgstr "もっともっと！"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:66
+#, fuzzy
 msgid "We hope to have the final release of Infinispan 15 ready for consumption by the end of the year and we will be making regular development releases."
-msgstr ""
+msgstr "Infinispan 15の最終リリースは年内に消費できるようにしたいと考えており、定期的に開発リリースを行う予定です。"
 
 #. type: Title ==
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:67
@@ -178,13 +200,17 @@ msgstr "サブタスク"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:75
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "    https://issues.redhat.com/browse/ISPN-12152[ISPN-12152] - Remove the Kryo and Protostuff Marshallers\n"
 "    https://issues.redhat.com/browse/ISPN-13985[ISPN-13985] - Test AsyncCache new API.\n"
 "    https://issues.redhat.com/browse/ISPN-13994[ISPN-13994] - Pass added SerialAllowList to configuration\n"
 "    https://issues.redhat.com/browse/ISPN-14016[ISPN-14016] - Implement HotRodMutinyCaches methods\n"
 msgstr ""
+"<pre>https://issues.redhat.com/browse/ISPN-12152[ISPN-12152] - KryoとProtostuff Marshallersを削除する。\n"
+"https://issues.redhat.com/browse/ISPN-13985[ISPN-13985] - AsyncCacheの新しいAPIをテストする。\n"
+"https://issues.redhat.com/browse/ISPN-13994[ISPN-13994] - 設定に追加された SerialAllowList を渡す。\n"
+"https://issues.redhat.com/browse/ISPN-14016[ISPN-14016] - HotRodMutinyCachesのメソッドを実装する。</pre>"
 
 #. type: Title ===
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:76
@@ -194,7 +220,7 @@ msgstr "機能リクエスト"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:92
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "    https://issues.redhat.com/browse/ISPN-12081[ISPN-12081] - Weak counter creation\n"
 "    https://issues.redhat.com/browse/ISPN-13424[ISPN-13424] - Spring 6 integration\n"
@@ -211,6 +237,20 @@ msgid ""
 "    https://issues.redhat.com/browse/ISPN-14731[ISPN-14731] - Hot Rod client should support alternate resolution strategies\n"
 "    https://issues.redhat.com/browse/ISPN-14758[ISPN-14758] - Add cli command alternative to /rest/v2/caches/{cacheName}/{cacheKey}?extended endpoint\n"
 msgstr ""
+"<pre>https://issues.redhat.com/browse/ISPN-12081[ISPN-12081] - 弱いカウンターの生成\n"
+"https://issues.redhat.com/browse/ISPN-13424【ISPN-13424】 - 春6統合。\n"
+"https://issues.redhat.com/browse/ISPN-13946[ISPN-13946] - インデックスメタモデルを公開する。\n"
+"https://issues.redhat.com/browse/ISPN-14085[ISPN-14085] - スキーマの更新 API でインデックスされたエンティティの新しいリストを渡すことができるようにする。\n"
+"https://issues.redhat.com/browse/ISPN-14233[ISPN-14233] - REST APIで任意のサーバレポートをダウンロード可能に。\n"
+"https://issues.redhat.com/browse/ISPN-14298[ISPN-14298] - カウンターを削除する。\n"
+"https://issues.redhat.com/browse/ISPN-14300[ISPN-14300] - 値にデルタを追加する。\n"
+"https://issues.redhat.com/browse/ISPN-14303[ISPN-14303] - リセットカウンタ\n"
+"https://issues.redhat.com/browse/ISPN-14309[ISPN-14309] - カウンターテーブルのフィルタリングの改善\n"
+"https://issues.redhat.com/browse/ISPN-14344[ISPN-14344] - StoreMigrator がセグメント化された SingleFileStore の読み込みをサポートする。\n"
+"https://issues.redhat.com/browse/ISPN-14361[ISPN-14361] - Hibernate 6.2.x用のHibernate 2LC実装を作成します。\n"
+"https://issues.redhat.com/browse/ISPN-14577[ISPN-14577] - 代替JDKでテストを実行する。\n"
+"https://issues.redhat.com/browse/ISPN-14731[ISPN-14731] - Hot Rodクライアントは代替解決策をサポートすべきである。\n"
+"https://issues.redhat.com/browse/ISPN-14758[ISPN-14758] - /rest/v2/caches/{cacheName}/{cacheKey}?extended endpoint に代わる cli コマンドを追加する。</pre>"
 
 #. type: Title ===
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:93
@@ -220,7 +260,7 @@ msgstr "バグ"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:176
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "    https://issues.redhat.com/browse/ISPN-12224[ISPN-12224] - Cluster in a confusing state after restarted from graceful shutdown - no hint for waiting on complete restarted\n"
 "    https://issues.redhat.com/browse/ISPN-13877[ISPN-13877] - NullPointerException in MetricsCollector.java\n"
@@ -304,6 +344,87 @@ msgid ""
 "    https://issues.redhat.com/browse/ISPN-14763[ISPN-14763] - Users unable to configure StoreMigrator marshaller allow-list via properties\n"
 "    https://issues.redhat.com/browse/ISPN-14767[ISPN-14767] - CLI table printer breaks when values have line breaks\n"
 msgstr ""
+"<pre>https://issues.redhat.com/browse/ISPN-12224[ISPN-12224] - 優雅なシャットダウンから再起動した後、クラスタが混乱した状態になる - 再起動完了を待つためのヒントがない\n"
+"https://issues.redhat.com/browse/ISPN-13877[ISPN-13877] - MetricsCollector.java で NullPointerException が発生する。\n"
+"https://issues.redhat.com/browse/ISPN-14090[ISPN-14090] - カウンタークライアント14はサーバー13と互換性がない。\n"
+"https://issues.redhat.com/browse/ISPN-14112[ISPN-14112] - REST/CLIコマンドは、与えられたファイルが存在しない場合、'upload'でスキーマ定義を追加します。\n"
+"https://issues.redhat.com/browse/ISPN-14119[ISPN-14119] - キャッシュの詳細ページ：エントリーの有効期限が切れた後に実行すると、クエリーがエラーになる\n"
+"https://issues.redhat.com/browse/ISPN-14210[ISPN-14210] - EXPIRATION Characteristicを返さない店舗は、有効期限を認めないようにする。\n"
+"https://issues.redhat.com/browse/ISPN-14238[ISPN-14238] - Memcached サーバー: 破損した応答。\n"
+"https://issues.redhat.com/browse/ISPN-14240[ISPN-14240] - HTTP/2でクライアント証明書認証が動作しない。\n"
+"https://issues.redhat.com/browse/ISPN-14256[ISPN-14256] - CLI が `-` ファイル名を拡張して stdin バッチを破壊する。\n"
+"https://issues.redhat.com/browse/ISPN-14264[ISPN-14264] - [Console] カウンターページ - 強い/弱いの選択をダブルクリックすると、すべてのカウンターがロードされます。\n"
+"https://issues.redhat.com/browse/ISPN-14271[ISPN-14271] - キャッシュウィザードの戻るボタンが動作しない。\n"
+"https://issues.redhat.com/browse/ISPN-14278[ISPN-14278] - [Doc] sql-store の例を更新する必要があります。\n"
+"https://issues.redhat.com/browse/ISPN-14279[ISPN-14279] - Cache.getStats() で \"Divide by 0\" - 例外が発生する。\n"
+"https://issues.redhat.com/browse/ISPN-14280[ISPN-14280] - JSONパーサーがエラー位置を正しく報告しない。\n"
+"https://issues.redhat.com/browse/ISPN-14282[ISPN-14282] - Spring Bootアクチュエータ組み込みメトリクスは非推奨のコードを使用します。\n"
+"https://issues.redhat.com/browse/ISPN-14290[ISPN-14290] - [Docs] YAML コンフィギュレーションの例にtypoがある。\n"
+"https://issues.redhat.com/browse/ISPN-14313[ISPN-14313] - クロスサイトテストドライバに異なるプロパティとポートを設定する。\n"
+"https://issues.redhat.com/browse/ISPN-14315[ISPN-14315] - RESTでサーバーの設定を取得することはできません。\n"
+"https://issues.redhat.com/browse/ISPN-14316[ISPN-14316] - '/rest/v2/server/report' は、ホスト上に1つ以上のインスタンスがある場合、例外をスローします。\n"
+"https://issues.redhat.com/browse/ISPN-14317[ISPN-14317] - RESTでクラスタのバックアップを作成することはできません。\n"
+"https://issues.redhat.com/browse/ISPN-14319[ISPN-14319] - getHostName() の代わりに InetSocketAddress.getHostString() を使用する。\n"
+"https://issues.redhat.com/browse/ISPN-14323[ISPN-14323] - text/plain キャッシュにあるコマンドブロックを取得する。\n"
+"https://issues.redhat.com/browse/ISPN-14329[ISPN-14329] - \"shutdown cluster \"の後、クラスタが完了するまでキャッシュの利用を防止する必要がある。\n"
+"https://issues.redhat.com/browse/ISPN-14348[ISPN-14348] - BytesObjectOutput.writeUTF のパフォーマンスが向上しました。\n"
+"https://issues.redhat.com/browse/ISPN-14356[ISPN-14356] - データソース接続プールの maxSize を設定しないと NPE が発生する。\n"
+"https://issues.redhat.com/browse/ISPN-14362[ISPN-14362] - JsonエスケープはHashMapルックアップの代わりに2つの等式チェックを使用すべきである。\n"
+"https://issues.redhat.com/browse/ISPN-14364[ISPN-14364] - Yaml パーサーはリストを誤処理する。\n"
+"https://issues.redhat.com/browse/ISPN-14368[ISPN-14368] - CacheInputEntryStreamは、値の各バイトをエスケープします。\n"
+"https://issues.redhat.com/browse/ISPN-14376[ISPN-14376] - キャッシュ名にドットがあるとWebコンソールがクラッシュする。\n"
+"https://issues.redhat.com/browse/ISPN-14377[ISPN-14377] - Statsコマンドの結果が不正確。\n"
+"https://issues.redhat.com/browse/ISPN-14390[ISPN-14390] - 読み取り専用ストアからエントリーを読み取る際に、有効期限を適用する。\n"
+"https://issues.redhat.com/browse/ISPN-14399[ISPN-14399] - リードオンリーとパッシベーションを一緒に設定できないようにする。\n"
+"https://issues.redhat.com/browse/ISPN-14406[ISPN-14406] - 明示的なキーの再インデックスから返されたステージが予想より早く完了する。\n"
+"https://issues.redhat.com/browse/ISPN-14416[ISPN-14416] - データ配布チャートのサイズに関する問題\n"
+"https://issues.redhat.com/browse/ISPN-14417[ISPN-14417] - ミスおよびリトリーブのメトリクスは、ページのリロード後に更新されます。\n"
+"https://issues.redhat.com/browse/ISPN-14421[ISPN-14421] - CVE-2022-41881 codec-haproxy：HAProxyMessageDecoder のスタック枯渇による DoS [jdg-8] について\n"
+"https://issues.redhat.com/browse/ISPN-14435[ISPN-14435] - InvalidMagicIdExceptionで後方互換性が失われる。\n"
+"https://issues.redhat.com/browse/ISPN-14440[ISPN-14440] - AsyncCache#keys または MutinyCache#keys を呼び出すと、ToEmptyBytesKeyValueFilterConverter が見つからないため、例外が発生する。\n"
+"https://issues.redhat.com/browse/ISPN-14453[ISPN-14453] - IcklクエリはBigIntegerとBigDecimalをサポートする必要があります。\n"
+"https://issues.redhat.com/browse/ISPN-14461[ISPN-14461] - 足りないライセンスを追加する：MPL-1.1\n"
+"https://issues.redhat.com/browse/ISPN-14466[ISPN-14466] - キャッシュ構成の更新に失敗した原因が http 本文で返されない。\n"
+"https://issues.redhat.com/browse/ISPN-14468[ISPN-14468] - REST: カウンターの作成に失敗した場合はエラーを返す。\n"
+"https://issues.redhat.com/browse/ISPN-14470[ISPN-14470] - RESTのキャッシュ構成の比較で、異なるキャッシュの場合は204を返す。\n"
+"https://issues.redhat.com/browse/ISPN-14477[ISPN-14477] - Springのセッションに同時にアクセスすると、セッションの属性が失われる。\n"
+"https://issues.redhat.com/browse/ISPN-14479[ISPN-14479] - Sql型CHARでSQL Cacheのストア開始が失敗する。\n"
+"https://issues.redhat.com/browse/ISPN-14491[ISPN-14491] - putAllでエントリーを追加してもメタデータのバージョンが追加されない - replaceWithVersionに続くとタイムアウトで終了してしまう\n"
+"https://issues.redhat.com/browse/ISPN-14510[ISPN-14510] - org.infinispan.server.cli.CliIT.testCliInteractive の失敗。\n"
+"https://issues.redhat.com/browse/ISPN-14511[ISPN-14511] - RestOperations.testCounter[HTTP_20] の失敗。\n"
+"https://issues.redhat.com/browse/ISPN-14512[ISPN-14512] - *-jakarta モジュールを修正する。\n"
+"https://issues.redhat.com/browse/ISPN-14516[ISPN-14516] - spring-boot-3-tests モジュールで間違ったバージョンがある。\n"
+"https://issues.redhat.com/browse/ISPN-14527[ISPN-14527] - メタモデルは一部のスキーマの変更を反映していない可能性があります。\n"
+"https://issues.redhat.com/browse/ISPN-14535[ISPN-14535] - GetCounterNameOperationがリプレイに失敗することがある。\n"
+"https://issues.redhat.com/browse/ISPN-14540[ISPN-14540] - [Docs]Fix JSON example for Off-heap storage.\n"
+"https://issues.redhat.com/browse/ISPN-14542[ISPN-14542] - AsyncStore は ComponentRegistry を取得する際に SecurityAction を使用する必要がある。\n"
+"https://issues.redhat.com/browse/ISPN-14543[ISPN-14543] - ビルドリソースフィルタリングがバイナリファイルを破損する。\n"
+"https://issues.redhat.com/browse/ISPN-14544[ISPN-14544] - RESPエンドポイントキャッシュは、有効期限が設定されていないことを必要としないはずです。\n"
+"https://issues.redhat.com/browse/ISPN-14545[ISPN-14545] - SIFS Compactorが正しくシャットダウンされないが、インデックスは問題ないと考えている。\n"
+"https://issues.redhat.com/browse/ISPN-14569[ISPN-14569] - switch文またはif/elseのすべての分岐にthrow句が含まれる場合、プロトコルパーサがNPEを投げる。\n"
+"https://issues.redhat.com/browse/ISPN-14573[ISPN-14573] - AbstractAuthorization.testRestServerNodeReport が失敗します。\n"
+"https://issues.redhat.com/browse/ISPN-14574[ISPN-14574] - [CLI] クラスタの取得 -s オプションで ClassCastException が発生する。\n"
+"https://issues.redhat.com/browse/ISPN-14578[ISPN-14578] - CompletableFuture.completionStageを使うべきではありません。\n"
+"https://issues.redhat.com/browse/ISPN-14579[ISPN-14579] - さまざまな RESP コマンドで、バッファのサイズが正しく要求されない。\n"
+"https://issues.redhat.com/browse/ISPN-14580[ISPN-14580] - 未来を使わないすべてのコンテキスト書き込みにvoidPromiseを使うべき。\n"
+"https://issues.redhat.com/browse/ISPN-14583[ISPN-14583] - RESPエンドポイントはパイプラインを可能にするためにフラッシュコールをバンドルする必要があります。\n"
+"https://issues.redhat.com/browse/ISPN-14589[ISPN-14589] - JdbcStringBasedCacheStorePassivation.testFailoverWithPassivation の失敗。\n"
+"https://issues.redhat.com/browse/ISPN-14683[ISPN-14683] - リゾルバがNULLの場合、設定リーダーでNPEが発生する。\n"
+"https://issues.redhat.com/browse/ISPN-14685[ISPN-14685] - EncodingConfigurationのマッチングが厳しすぎる。\n"
+"https://issues.redhat.com/browse/ISPN-14687[ISPN-14687] - マーシャリング時の循環参照を検出する。\n"
+"https://issues.redhat.com/browse/ISPN-14691[ISPN-14691] - Actuator Metrics BindingのAuthorizationエラーを修正する。\n"
+"https://issues.redhat.com/browse/ISPN-14730[ISPN-14730] - jakarta commons 以外の依存関係を完全に除外する。\n"
+"https://issues.redhat.com/browse/ISPN-14732[ISPN-14732] - ClasspathURLStreamHandlerProviderは、リソースが見つからない場合、FileNotFoundExceptionを投げるべきである。\n"
+"https://issues.redhat.com/browse/ISPN-14733[ISPN-14733] - Quarkus モジュールを Infinispan の親から継承するようにする。\n"
+"https://issues.redhat.com/browse/ISPN-14737[ISPN-14737] - SoftIndexFileStoreのインデックスが破損することがある。\n"
+"https://issues.redhat.com/browse/ISPN-14738[ISPN-14738] - RESPエンドポイントコマンドは前の値を必要としない\n"
+"https://issues.redhat.com/browse/ISPN-14739[ISPN-14739] - OffHeapConcurrentMapは、put時に前の値を読む必要がないはずです。\n"
+"https://issues.redhat.com/browse/ISPN-14744[ISPN-14744] - RemoteCacheManagerAdmin のドキュメントは、サポートされる設定フォーマットについて言及する必要があります。\n"
+"https://issues.redhat.com/browse/ISPN-14753[ISPN-14753] - SoftIndexFileStore Compactorが複数回実行されないようにする。\n"
+"https://issues.redhat.com/browse/ISPN-14755[ISPN-14755] - JSONとしてシリアライズされた空の認証ロールは解析できない。\n"
+"https://issues.redhat.com/browse/ISPN-14759[ISPN-14759] - SoftIndexFileStore Indexは、高負荷時にLogAppenderより遅れることがある。\n"
+"https://issues.redhat.com/browse/ISPN-14763[ISPN-14763] - StoreMigrator のマーシャラーの allow-list をプロパティで設定できない。\n"
+"https://issues.redhat.com/browse/ISPN-14767[ISPN-14767] - 値に改行がある場合、CLIテーブルプリンタが壊れる。</pre>"
 
 #. type: Title ===
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:177
@@ -313,7 +434,7 @@ msgstr "タスク"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:201
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "    https://issues.redhat.com/browse/ISPN-11701[ISPN-11701] - Add store migration capabilities to the CLI\n"
 "    https://issues.redhat.com/browse/ISPN-14263[ISPN-14263] - Restrict most JGroupsTransport INFO logging when using a ForkChannel.\n"
@@ -338,6 +459,28 @@ msgid ""
 "    https://issues.redhat.com/browse/ISPN-14789[ISPN-14789] - Fix port number in exam,ples of property files in SB starter docs\n"
 "    https://issues.redhat.com/browse/ISPN-14792[ISPN-14792] - Remove Security Integration tests with WildFly\n"
 msgstr ""
+"<pre>https://issues.redhat.com/browse/ISPN-11701[ISPN-11701] - CLIに店舗移行機能を追加する。\n"
+"https://issues.redhat.com/browse/ISPN-14263[ISPN-14263] - ForkChannelを使用するときに、ほとんどのJGroupsTransport INFOロギングを制限する。\n"
+"https://issues.redhat.com/browse/ISPN-14287[ISPN-14287] - extended-statistics モジュールを削除する。\n"
+"https://issues.redhat.com/browse/ISPN-14288[ISPN-14288] - kryo と protostuff のマーシャラーを削除する。\n"
+"https://issues.redhat.com/browse/ISPN-14375[ISPN-14375] - SecurityManager/AccessControlContext のすべての使用を削除する。\n"
+"https://issues.redhat.com/browse/ISPN-14414[ISPN-14414] - REST APIが初期化状態のキャッシュを取得する。\n"
+"https://issues.redhat.com/browse/ISPN-14424[ISPN-14424] - [Docs] RESTガイドのエラーを修正する。\n"
+"https://issues.redhat.com/browse/ISPN-14426[ISPN-14426] - システムプロパティを使用してHotRodクライアントのトレース伝搬を無効にする\n"
+"https://issues.redhat.com/browse/ISPN-14492[ISPN-14492] - JDK 17でInfinispanをビルドする。\n"
+"https://issues.redhat.com/browse/ISPN-14541[ISPN-14541] - [Docs] サイクリックオブジェクトでJavaシリアライズまたはJBoss Marshallingを使用する。\n"
+"https://issues.redhat.com/browse/ISPN-14575[ISPN-14575] - インデックス設定から properties 属性を削除する。\n"
+"https://issues.redhat.com/browse/ISPN-14591[ISPN-14591] - プロトファイルの登録に関するBlockHoundへの例外の追加\n"
+"https://issues.redhat.com/browse/ISPN-14705[ISPN-14705] - Infinispanのインデックス失敗ハンドラを使ってインデックス失敗の統計情報を公開する。\n"
+"https://issues.redhat.com/browse/ISPN-14713[ISPN-14713] - Spring Boot 3 のモジュールに新しい api の依存性を含める。\n"
+"https://issues.redhat.com/browse/ISPN-14742[ISPN-14742] - GeronimoTransactionManager を削除する。\n"
+"https://issues.redhat.com/browse/ISPN-14756[ISPN-14756] - JCacheのサポートを削除する。\n"
+"https://issues.redhat.com/browse/ISPN-14769[ISPN-14769] - completedExceptionFuture を failedFuture に置き換える。\n"
+"https://issues.redhat.com/browse/ISPN-14771[ISPN-14771] - OffHeap の PrivateMetadata を変更し、長さの 4 バイトの代わりに存在のフラグを使用するようにした。\n"
+"https://issues.redhat.com/browse/ISPN-14786[ISPN-14786] - Wildfly モジュールを削除する。\n"
+"https://issues.redhat.com/browse/ISPN-14787[ISPN-14787] - Spring5 と Spring Boot 2 のサポートを削除する。\n"
+"https://issues.redhat.com/browse/ISPN-14789[ISPN-14789] - SB starter のドキュメントにあるプロパティファイルの検査でポート番号を修正する。\n"
+"https://issues.redhat.com/browse/ISPN-14792[ISPN-14792] - WildFlyによるセキュリティ統合テストを削除する。</pre>"
 
 #. type: Title ===
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:202
@@ -347,7 +490,7 @@ msgstr "コンポーネントのアップグレード"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:231
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "    https://issues.redhat.com/browse/ISPN-14270[ISPN-14270] - Update to Spring Boot 3\n"
 "    https://issues.redhat.com/browse/ISPN-14320[ISPN-14320] - Update Patternfly to 2022.14 Release\n"
@@ -377,6 +520,33 @@ msgid ""
 "    https://issues.redhat.com/browse/ISPN-14747[ISPN-14747] - jboss-threads 3.5.0.Final\n"
 "    https://issues.redhat.com/browse/ISPN-14764[ISPN-14764] - Upgrade to plexus-utils 3.5.1\n"
 msgstr ""
+"<pre>https://issues.redhat.com/browse/ISPN-14270[ISPN-14270] - Spring Boot 3にアップデートしました。\n"
+"https://issues.redhat.com/browse/ISPN-14320[ISPN-14320] - Patternflyを2022.14リリースにアップデートする。\n"
+"https://issues.redhat.com/browse/ISPN-14342[ISPN-14342] - Apache SSHD 2.9.2\n"
+"https://issues.redhat.com/browse/ISPN-14343[ISPN-14343] - Jackson 2.14.1\n"
+"https://issues.redhat.com/browse/ISPN-14346[ISPN-14346] - JGroups を 5.2.10.Final にアップグレードする。\n"
+"https://issues.redhat.com/browse/ISPN-14365[ISPN-14365] - JBoss Marshalling 2.1.1\n"
+"https://issues.redhat.com/browse/ISPN-14372[ISPN-14372] - Patternfly を 2022.15 Release に更新する。\n"
+"https://issues.redhat.com/browse/ISPN-14401[ISPN-14401] - Protostream 4.6.0.Final\n"
+"https://issues.redhat.com/browse/ISPN-14437[ISPN-14437] - XStream を 1.4.20 に更新して CVE を修正した。\n"
+"https://issues.redhat.com/browse/ISPN-14442[ISPN-14442] - 2.19.0 log4j にアップデートする。\n"
+"https://issues.redhat.com/browse/ISPN-14444[ISPN-14444] - Patternflyを2022.16リリースに更新する。\n"
+"https://issues.redhat.com/browse/ISPN-14448[ISPN-14448] - シュアファイア 3.0.0-M8\n"
+"https://issues.redhat.com/browse/ISPN-14462[ISPN-14462] - assertj-core を 3.24.1 にアップグレードする。\n"
+"https://issues.redhat.com/browse/ISPN-14476[ISPN-14476] - JGroups を 5.2.12.Final にバンプする。\n"
+"https://issues.redhat.com/browse/ISPN-14513[ISPN-14513] - Narayana を 5.13.1.Final にアップグレードする。\n"
+"https://issues.redhat.com/browse/ISPN-14523[ISPN-14523] - Log4j 2.20.0\n"
+"https://issues.redhat.com/browse/ISPN-14525[ISPN-14525] - Elytron 2.1.0.Final\n"
+"https://issues.redhat.com/browse/ISPN-14550[ISPN-14550] - Patternfly の依存関係をリリース 2023.01 にアップグレードする (2023-02-02)\n"
+"https://issues.redhat.com/browse/ISPN-14553[ISPN-14553] - SpringとSpring Bootの依存関係\n"
+"https://issues.redhat.com/browse/ISPN-14681[ISPN-14681] - Surefire 3.0.0\n"
+"https://issues.redhat.com/browse/ISPN-14694[ISPN-14694] - Patternfly の依存関係をリリース 2023.02 にアップグレードする (2023-03-24)\n"
+"https://issues.redhat.com/browse/ISPN-14711[ISPN-14711] - 最新のSB 3と2を更新しました。\n"
+"https://issues.redhat.com/browse/ISPN-14734[ISPN-14734] - Quarkus 3.0.0.CR2\n"
+"https://issues.redhat.com/browse/ISPN-14745[ISPN-14745] - Narayana 6.0.0.Final\n"
+"https://issues.redhat.com/browse/ISPN-14746[ISPN-14746] - Fabric8 kubernetes-client 6.5.1\n"
+"https://issues.redhat.com/browse/ISPN-14747[ISPN-14747] - jboss-threads 3.5.0.Final\n"
+"https://issues.redhat.com/browse/ISPN-14764[ISPN-14764] - plexus-utils 3.5.1 にアップグレードする。</pre>"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:233
@@ -385,7 +555,7 @@ msgstr "改善"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:279
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "    https://issues.redhat.com/browse/ISPN-12106[ISPN-12106] - Add a refresh button in the cache detail\n"
 "    https://issues.redhat.com/browse/ISPN-12223[ISPN-12223] - Confusing behaviour in case of joining nodes if a partition is DEGRADED\n"
@@ -433,8 +603,54 @@ msgid ""
 "    https://issues.redhat.com/browse/ISPN-14765[ISPN-14765] - Java serialization to JSON transcoder\n"
 "    https://issues.redhat.com/browse/ISPN-14784[ISPN-14784] - Build with JDK 21\n"
 msgstr ""
+"<pre>https://issues.redhat.com/browse/ISPN-12106[ISPN-12106] - キャッシュの詳細で更新ボタンを追加する。\n"
+"https://issues.redhat.com/browse/ISPN-12223[ISPN-12223] - パーティションがDEGRADEDの場合にノードに参加する場合の混乱した動作について。\n"
+"https://issues.redhat.com/browse/ISPN-12484[ISPN-12484] - ClusterPartition中にタイムアウトではなく、Explicit LocksでAvailabilityExceptionを投げるようにする。\n"
+"https://issues.redhat.com/browse/ISPN-14092[ISPN-14092] - キャッシュコンフィグレーションウィザード ダイレクトリンク\n"
+"https://issues.redhat.com/browse/ISPN-14142[ISPN-14142] - トランスポート：フロー制御をスキップするオプションの追加\n"
+"https://issues.redhat.com/browse/ISPN-14204[ISPN-14204] - XSiteのテストにNYCとLONを標準化する。\n"
+"https://issues.redhat.com/browse/ISPN-14205[ISPN-14205] - InfinispanGenericContainer::getNetworkIpAddress はコンテナが実行されていない場合、高速に失敗する。\n"
+"https://issues.redhat.com/browse/ISPN-14213[ISPN-14213] - [Docs]：パフォーマンスナンバーを提供しない理由の記述を追加\n"
+"https://issues.redhat.com/browse/ISPN-14223[ISPN-14223] - 初回アクセス時にRedisキャッシュを作成する。\n"
+"https://issues.redhat.com/browse/ISPN-14244[ISPN-14244] - デフォルトでXML/JSONをきれいに印刷しないようにする。\n"
+"https://issues.redhat.com/browse/ISPN-14246[ISPN-14246] - クエリ統計情報ツールチップ\n"
+"https://issues.redhat.com/browse/ISPN-14247[ISPN-14247] - snakeyaml の依存関係を削除する。\n"
+"https://issues.redhat.com/browse/ISPN-14259[ISPN-14259] - バッチコマンドとしてベンチマークCLIをサポートする。\n"
+"https://issues.redhat.com/browse/ISPN-14322[ISPN-14322] - 所有者数はデフォルトで2人です。\n"
+"https://issues.redhat.com/browse/ISPN-14327[ISPN-14327] - オーバーレイはエンドポイント設定を置き換えることができるようにすべきである。\n"
+"https://issues.redhat.com/browse/ISPN-14341[ISPN-14341] - InfinispanへのMeterRegistryインスタンスの注入を許可する。\n"
+"https://issues.redhat.com/browse/ISPN-14374[ISPN-14374] - max_site_masters の Env 変数。\n"
+"https://issues.redhat.com/browse/ISPN-14394[ISPN-14394] - キャッシュコンフィグレーションウィザードのインデックス作成スタートアップモードについて\n"
+"https://issues.redhat.com/browse/ISPN-14415[ISPN-14415] - 2つのキャッシュ構成を比較するためのRESTエンドポイントを公開する。\n"
+"https://issues.redhat.com/browse/ISPN-14423[ISPN-14423] - コンフィギュレーションパーサーのエラーレポートを改善する\n"
+"https://issues.redhat.com/browse/ISPN-14451[ISPN-14451] - プロパティで Hot Rod プロトコルバージョンを AUTO に設定する。\n"
+"https://issues.redhat.com/browse/ISPN-14456[ISPN-14456] - デルタ（カウンター）のバリデーション\n"
+"https://issues.redhat.com/browse/ISPN-14467[ISPN-14467] - 抑制された例外は無線で送信されるべきである。\n"
+"https://issues.redhat.com/browse/ISPN-14472[ISPN-14472] - Maven Shade 3.4.1について\n"
+"https://issues.redhat.com/browse/ISPN-14473[ISPN-14473] - REST API のエラー報告を改善する。\n"
+"https://issues.redhat.com/browse/ISPN-14474[ISPN-14474] - 'application/x-www-form-urlencoded' 用のトランスコーダを追加する。\n"
+"https://issues.redhat.com/browse/ISPN-14482[ISPN-14482] - インデックス作成コマンドを実行するために、すべてのキャッシュに単一の実行者を提供する。\n"
+"https://issues.redhat.com/browse/ISPN-14490[ISPN-14490] - BlockingManagerにブロックするスケジュールタスクを追加する。\n"
+"https://issues.redhat.com/browse/ISPN-14507[ISPN-14507] - [docs] RESTの更新。\n"
+"https://issues.redhat.com/browse/ISPN-14517[ISPN-14517] - コードからテスト証明書を生成する。\n"
+"https://issues.redhat.com/browse/ISPN-14528[ISPN-14528] - コンフィギュレーション変換はテンプレートをサポートすべきである。\n"
+"https://issues.redhat.com/browse/ISPN-14552[ISPN-14552] - 統計情報リセットREST API\n"
+"https://issues.redhat.com/browse/ISPN-14570[ISPN-14570] - プロトコルパーサーは、デコードが呼び出される前にコードを提供することを可能にすべきである。\n"
+"https://issues.redhat.com/browse/ISPN-14585[ISPN-14585] - RESPエンドポイントをパーサージェネレータを使用するように変換する。\n"
+"https://issues.redhat.com/browse/ISPN-14680[ISPN-14680] - Server testsuiteで画像を再利用する。\n"
+"https://issues.redhat.com/browse/ISPN-14689[ISPN-14689] - RESP SETのオプション引数を処理する。\n"
+"https://issues.redhat.com/browse/ISPN-14690[ISPN-14690] - 仮想スレッドの検出を見直し、オプションにする。\n"
+"https://issues.redhat.com/browse/ISPN-14720[ISPN-14720] - RESPエンドポイントは、enumとしてコマンドを解析できるようにすべきである。\n"
+"https://issues.redhat.com/browse/ISPN-14722[ISPN-14722] - オート/マニュアルインデックスモードを公開する。\n"
+"https://issues.redhat.com/browse/ISPN-14723[ISPN-14723] - インデックスシャーディングを設定できるようにする。\n"
+"https://issues.redhat.com/browse/ISPN-14724[ISPN-14724] - プロトコルバッファのスキーマを構築するためのシンプルなDSLを作成する。\n"
+"https://issues.redhat.com/browse/ISPN-14735[ISPN-14735] - JakartaEEのパッケージへ移動します。\n"
+"https://issues.redhat.com/browse/ISPN-14761[ISPN-14761] - プロトストリームでない場合のマーシャリング情報をエントリタブに追加する。\n"
+"https://issues.redhat.com/browse/ISPN-14765[ISPN-14765] - JavaシリアライゼーションからJSONへのトランスコーダ\n"
+"https://issues.redhat.com/browse/ISPN-14784[ISPN-14784] - JDK 21でビルドする。</pre>"
 
 #. type: Plain text
 #: upstream/_posts/2023-04-24-infinispan-15.0.0.Dev01.adoc:281
+#, fuzzy
 msgid "Get them from our https://infinispan.org/download/[download page].]"
-msgstr ""
+msgstr "link:https://infinispan.org/download/[ダウンロード]ページから入手してください。］"
