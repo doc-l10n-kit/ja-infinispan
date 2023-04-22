@@ -1107,6 +1107,54 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Sub-task</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>サブタスク</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Feature Request</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>機能リクエスト</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Bug</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>バグ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Task</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>タスク</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Component Upgrade</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>コンポーネントのアップグレード</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Enhancement</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Off Heap enhancements</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
@@ -2337,46 +2385,6 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Feature Request</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>機能リクエスト</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Bug</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>バグ</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Task</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>タスク</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Component Upgrade</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>コンポーネントのアップグレード</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Enhancement</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>改善</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>layout: blog
 title: Infinispan 11.0.0.CR1
 permalink: /blog/:year/:month/:day/infinispan-11
@@ -2727,14 +2735,6 @@ tags: [ "release" ]
       </tuv>
       <tuv xml:lang="ja_JP">
         <seg>さらに、Infinispan のアーキタイプは復活し、メインリポジトリの一部としてメンテナンスされており、これ以上同期が取れなくなることはありません。 link:/docs/stable/titles/getting_started/getting_started.html#mvn_archetypes[Mavenのアーキタイプを使い始める] 方法の詳細を読んでください。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Sub-task</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>サブタスク</seg>
       </tuv>
     </tu>
     <tu>
