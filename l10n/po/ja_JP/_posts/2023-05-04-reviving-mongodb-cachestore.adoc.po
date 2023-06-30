@@ -18,13 +18,13 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "layout: blog\n"
 "title: Reviving MongoDB cache store\n"
@@ -34,44 +34,55 @@ msgid ""
 "tags: [ \"cache store\", \"mongodb\", \"persistence\" ]\n"
 "---\n"
 msgstr ""
+"layout: blog\n"
+"title: MongoDBキャッシュストアの復活\n"
+"permalink: /blog/:year/:month/:day/reviving-mongodb-cachestore\n"
+"date: '2023-05-04T00:00:00.000-00:00'\n"
+"author: antoniomacri\n"
+"tags: [ \"cache store\", \"mongodb\", \"persistence\" ]\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Reviving MongoDB cache store"
-msgstr ""
+msgstr "MongoDBキャッシュストアの復活"
 
 #. type: Plain text
 #: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:14
+#, fuzzy
 msgid "After a long period of inactivity, the MongoDB store is now back to life.  It has been upgraded to work with Infinispan 15."
-msgstr ""
+msgstr "長い間休止していたMongoDBストアが復活しました。Infinispan 15で動作するようにアップグレードされました。"
 
 #. type: Title ==
 #: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:15
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Reactive MongoDB driver"
-msgstr ""
+msgstr "リアクティブ MongoDB ドライバ"
 
 #. type: Plain text
 #: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:18
+#, fuzzy
 msgid "Since the Infinispan cache store API is now fully reactive, the store has also been modified to use the reactive MongoDB driver."
-msgstr ""
+msgstr "InfinispanキャッシュストアAPIが完全にリアクティブになったので、ストアもリアクティブなMongoDBドライバを使うように変更された。"
 
 #. type: Title ==
 #: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:19
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Database formats"
-msgstr ""
+msgstr "データベース形式"
 
 #. type: Plain text
 #: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:24
+#, fuzzy
 msgid "The older MongoDB cache store worked by persisting keys and values as binary blobs.  This should be the most efficient way, but it makes it harder to inspect the documents stored in Mongo.  Therefore, the new implementation allows choosing between two formats:"
-msgstr ""
+msgstr "古いMongoDBのキャッシュストアは、キーと値をバイナリー・ブロブとして永続化する仕組みだった。これは最も効率的な方法ですが、Mongo に保存されたドキュメントを検査するのが難しくなります。そこで、新しい実装では2つの形式を選べるようにしました："
 
 #. type: Plain text
 #: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:26
+#, fuzzy
 msgid "`binary`: the binary format similar to that used with the previous MongoDB store:"
-msgstr ""
+msgstr "`binary`以前の MongoDB ストアと同様のバイナリ形式です："
 
 #. type: delimited block -
 #: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:36
@@ -88,8 +99,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:39
+#, fuzzy
 msgid "`structured`: a structured BSON representation of the objects:"
-msgstr ""
+msgstr "`structured`オブジェクトの構造化されたBSON表現："
 
 #. type: delimited block -
 #: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:62
@@ -119,11 +131,12 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:66
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Expiration"
-msgstr ""
+msgstr "有効期限"
 
 #. type: Plain text
 #: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:68
+#, fuzzy
 msgid "The MongoDB store supports expiration. However, in order to ensure correctness the expired entries are removed from the database one by one, instead of using a bulk operation. Therefore, make sure this does not have a negative impact on MongoDB instances."
-msgstr ""
+msgstr "MongoDB ストアは期限切れをサポートしています。しかし、有効期限切れのエントリをデータベースからひとつずつ削除するようにします。そのため、MongoDB インスタンスに悪影響を与えないようにしてください。"
