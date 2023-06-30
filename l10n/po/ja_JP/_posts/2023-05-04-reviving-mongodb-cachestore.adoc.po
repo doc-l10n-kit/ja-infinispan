@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2023-06-30 10:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Reviving MongoDB cache store\n"
+"permalink: /blog/:year/:month/:day/reviving-mongodb-cachestore\n"
+"date: '2023-05-04T00:00:00.000-00:00'\n"
+"author: antoniomacri\n"
+"tags: [ \"cache store\", \"mongodb\", \"persistence\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:10
+#, no-wrap
+msgid "Reviving MongoDB cache store"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:14
+msgid "After a long period of inactivity, the MongoDB store is now back to life.  It has been upgraded to work with Infinispan 15."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:15
+#, no-wrap
+msgid "Reactive MongoDB driver"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:18
+msgid "Since the Infinispan cache store API is now fully reactive, the store has also been modified to use the reactive MongoDB driver."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:19
+#, no-wrap
+msgid "Database formats"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:24
+msgid "The older MongoDB cache store worked by persisting keys and values as binary blobs.  This should be the most efficient way, but it makes it harder to inspect the documents stored in Mongo.  Therefore, the new implementation allows choosing between two formats:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:26
+msgid "`binary`: the binary format similar to that used with the previous MongoDB store:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:36
+#, no-wrap
+msgid ""
+"[\n"
+"  {\n"
+"    \"_id\": {\"$binary\": {\"base64\": \"mAEBigERCg9KDTAtNjc5LTc3NTQzLTk=\", \"subType\": \"00\"}},\n"
+"    \"value\": {\"$binary\": {\"base64\": \"mAELigFLCkmCARBib29rX3NhbXBsZS5Cb29rigEzChpUaGUgV2luZC1VcCBCaXJkIENocm9uaWNsZRjNDyISCgZIYXJ1a2kSCE11cmFrYW1p\", \"subType\": \"00\"}}\n"
+"    ...\n"
+"  }\n"
+"]\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:39
+msgid "`structured`: a structured BSON representation of the objects:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:62
+#, no-wrap
+msgid ""
+"[\n"
+"  {\n"
+"    \"_id\": {\n"
+"      \"_type\": \"string\",\n"
+"      \"_value\": \"0-679-77543-9\"\n"
+"    },\n"
+"    \"value\": {\n"
+"      \"_type\": \"book_sample.Book\",\n"
+"      \"title\": \"The Wind-Up Bird Chronicle\",\n"
+"      \"publicationYear\": 1997,\n"
+"      \"authors\": [\n"
+"        {\n"
+"          \"name\": \"Haruki\",\n"
+"          \"surname\": \"Murakami\"\n"
+"        }\n"
+"      ]\n"
+"    },\n"
+"    ...\n"
+"  }\n"
+"]\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:66
+#, no-wrap
+msgid "Expiration"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-05-04-reviving-mongodb-cachestore.adoc:68
+msgid "The MongoDB store supports expiration. However, in order to ensure correctness the expired entries are removed from the database one by one, instead of using a bulk operation. Therefore, make sure this does not have a negative impact on MongoDB instances."
+msgstr ""
