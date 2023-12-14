@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-12-13 16:15+0000\n"
+"POT-Creation-Date: 2023-12-14 12:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,110 +87,110 @@ msgstr ""
 msgid "We support `byte[]` embeddings. Here is an example of mapping:"
 msgstr ""
 
-#. type: Plain text
+#. type: delimited block -
 #: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:37
 #, no-wrap
 msgid ""
-"```` [source, java]\n"
 "@Vector(dimension = 3)\n"
 "@ProtoField(2)\n"
 "public byte[] getByteVector() {\n"
 "   return byteVector;\n"
 "}\n"
-"````\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:39
-#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:58
+#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:40
+#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:61
 msgid "That corresponds to the Proto schema:"
 msgstr ""
 
-#. type: Plain text
-#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:42
-#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:61
-msgid "```` [source, protobuf] /**"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:43
-#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:62
-msgid "@Vector(dimension=3)"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:46
+#. type: delimited block -
+#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:47
 #, no-wrap
 msgid ""
-"*/\n"
+"/**\n"
+" * @Vector(dimension=3)\n"
+" */\n"
 "optional bytes byteVector = 2;\n"
-"````\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:48
-msgid "We also support float[] embeddings. Here is an example of mapping:"
+#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:50
+msgid "We also support `float[]` embeddings. Here is an example of mapping:"
 msgstr ""
 
-#. type: Plain text
-#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:56
+#. type: delimited block -
+#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:58
 #, no-wrap
 msgid ""
-"```` [source, java]\n"
 "@Vector(dimension = 3)\n"
 "@ProtoField(3)\n"
 "public float[] getFloatVector() {\n"
 "   return floatVector;\n"
 "}\n"
-"````\n"
 msgstr ""
 
-#. type: Plain text
-#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:65
+#. type: delimited block -
+#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:68
 #, no-wrap
 msgid ""
-"*/\n"
+"/**\n"
+" * @Vector(dimension=3)\n"
+" */\n"
 "repeated float floatVector = 3;\n"
-"````\n"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:66
+#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:70
 #, no-wrap
 msgid "Searching the embeddings"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:69
+#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:73
 msgid "The following query shows how to perform a kNN search using a supplied vector and a specific distance"
 msgstr ""
 
-#. type: Plain text
-#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:73
-msgid "```` [source, sql] from Item i where i.byteVector <-> [7,7,7]~3 ````"
+#. type: delimited block -
+#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:77
+#, no-wrap
+msgid "from Item i where i.byteVector <-> [7,7,7]~3\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:75
+#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:80
 msgid "The query can be parameterized in several ways:"
 msgstr ""
 
-#. type: Plain text
-#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:84
-msgid "```` [source, java] query = cache.query(\"from org.infinispan.query.model.Item i where i.byteVector <-> [:a,:b,:c]~3\"); query.setParameter(\"a\", 0); query.setParameter(\"b\", 2); query.setParameter(\"c\", 3); hits = query.list(); assertThat(hits).extracting(\"code\").containsExactly(\"c2\", \"c1\", \"c3\"); // the order matters ````"
+#. type: delimited block -
+#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:89
+#, no-wrap
+msgid ""
+"query = cache.query(\"from org.infinispan.query.model.Item i where i.byteVector <-> [:a,:b,:c]~3\");\n"
+"query.setParameter(\"a\", 0);\n"
+"query.setParameter(\"b\", 2);\n"
+"query.setParameter(\"c\", 3);\n"
+"hits = query.list();\n"
+"assertThat(hits).extracting(\"code\").containsExactly(\"c2\", \"c1\", \"c3\"); // the order matters\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:86
+#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:92
 msgid "Or you can pass the entire vector as a single parameter:"
 msgstr ""
 
-#. type: Plain text
-#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:94
-msgid "```` [source, java] query = cache.query(\"from org.infinispan.query.model.Item i where i.floatVector <-> [:a]~:b\"); query.setParameter(\"a\", new float[]{7.1f, 7.0f, 3.1f}); query.setParameter(\"b\", 3); hits = query.list(); assertThat(hits).extracting(\"code\").containsExactly(\"c5\", \"c6\", \"c4\"); ````"
+#. type: delimited block -
+#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:100
+#, no-wrap
+msgid ""
+"query = cache.query(\"from org.infinispan.query.model.Item i where i.floatVector <-> [:a]~:b\");\n"
+"query.setParameter(\"a\", new float[]{7.1f, 7.0f, 3.1f});\n"
+"query.setParameter(\"b\", 3);\n"
+"hits = query.list();\n"
+"assertThat(hits).extracting(\"code\").containsExactly(\"c5\", \"c6\", \"c4\");\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:96
+#: upstream/_posts/2023-12-13-infinispan-vector-search.adoc:103
 msgid "If the cache is distributed, the query will be a broadcast query, and it will aggregate all the results from all the nodes that contain shards of the indexes that are related to the search.  When we get the result as usual we get all the metadata from the corresponding entities, so that the returning items can easily relate to the application domain."
 msgstr ""
