@@ -21,6 +21,86 @@ permalink: /tutorials/
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Infinispan turbocharges applications by storing data closer to processing logic, which reduces latency and increases throughput. 
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispanは、データを処理ロジックの近くに格納し、レイテンシーを減らし、スループットを向上させることで、アプリケーションを加速します。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Available as a Java library, you simply add Infinispan to your application dependencies and then you’re ready to store data in the same memory space as the executing code.
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Javaライブラリとして提供されており、アプリケーションにInfinispanを追加するだけで、実行コードと同じメモリ空間にデータを格納できます。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If you want to provision a data layer that is independent of your applications, you can use Infinispan Server for remote access to data with in-memory performance. Clients are a single network hop away from data through consistent hashing techniques and can make requests over HTTP or with a custom binary TCP protocol called Hot Rod.
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>アプリケーションから独立したデータ・レイヤーを用意したい場合、Infinispan Serverを使ってインメモリ・パフォーマンスでデータにリモート・アクセスできます。クライアントは、一貫したハッシュ技術によってデータからネットワークで１ホスト分離れており、HTTPまたはHot Rodと呼ばれるカスタムバイナリTCPプロトコルでリクエストを行えます。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>IInfinispan provides trusted open-source technology to deliver scalability to meet workload demands and reduce resource utilization. At the same time, Infinispan distributes your data across clusters so no single point of failure causes data loss.
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>IInfinispanは信頼できるオープンソースの技術を提供し、負荷量の要求を満たす拡張性を実現し、リソースの使用率を低減します。同時に、Infinispanはデータをクラスタに分散させるため、単一障害点によるデータ損失が発生しません。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>One popular use for Infinispan is as a shared store for stateful data, such as user HTTP sessions. Applications can stay lightweight and avoid heap usage by externalizing sessions to Infinispan clusters, which act as an independent data layer.
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispanは、ユーザのHTTPセッションのようなステートフルなデータの共有ストアとしてよく使われます。アプリケーションは、セッションをInfinispanクラスタに外部化し、独立したデータ層として機能させることで、軽量化とヒープの使用を避けられます。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Infinispan clusters running in different geographical locations can form global clusters to back up your data across sites. If sites go offline clients can immediately switch to an available cluster, making sure data center faults do not cause service interruptions.
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>地理的に異なる場所で動作するInfinispanクラスタは、グローバルクラスタを形成し、拠点間でデータをバックアップできます。拠点がオフラインになっても、クライアントはすぐに利用可能なクラスタに切り替えることができるため、データセンタの障害によるサービスの中断を防げます。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When using the Infinispan Operator with Kubernetes environments such as Red Hat OpenShift,  cross-site replication capabilities make your data ready for hybrid and multi cloud deployments.
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan OperatorをRed Hat OpenShiftなどのKubernetes環境で使用する場合、拠点横断レプリケーション機能により、データをハイブリッドやマルチクラウドの展開に対応できます。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Infinispan also guarantees data consistency when using cross-site replication, even in cases where clients make concurrent writes at different locations that use asynchronous replication. So your data is always there and always accurate, no matter where you’re running.
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>また、Infinispanは拠点横断レプリケーションを使用する際、非同期レプリケーションを使用する異なる場所でクライアントが同時に書き込みを行う場合でも、データの一貫性を保証します。そのため、どこで実行していても、データは常にそこにあり、常に正確です。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>layout: experiments
 title: Experiments
 subtitle: Any open source project has an experimental side as part of its DNA. Infinispan goes a step further and experiments with academic and research projects.
@@ -37,66 +117,32 @@ permalink: /experiments/
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Persistence</seg>
+        <seg>layout: blog
+title: Infinispan 11.0.1.Final
+permalink: /blog/:year/:month/:day/infinispan-11
+date: '2020-07-03T12:00:00.000-00:00'
+author: ttarrant
+tags: [ "release" ]
+---
+</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>永続性</seg>
+        <seg>layout: blog
+title: Infinispan 11.0.1.Final
+permalink: /blog/:year/:month/:day/infinispan-11
+date: '2020-07-03T12:00:00.000-00:00'
+author: ttarrant
+tags: [ "release" ]
+---
+</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Server</seg>
+        <seg>Infinispan 11.0.1.Final "Corona Extra"</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>サーバ</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Console</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>コンソール</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Operator</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>オペレータ</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Other</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>その他</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Documentation</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>ドキュメンテーション</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Release notes</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>リリースノート</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>The Developer Conference Sao Paulo</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>開発者会議 サンパウロ</seg>
+        <seg>Infinispan 11.0.1.Final "Corona Extra"</seg>
       </tuv>
     </tu>
     <tu>
@@ -104,451 +150,7 @@ permalink: /experiments/
         <seg>Dear Infinispan community,</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>親愛なるInfinispanのコミュニティへ</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>What is The Developer’s Conference?</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>開発者会議とは？</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>The Developer’s Conference (TDC) is the largest event related to software development in Brazil connecting meetup and event organizers, speakers, companies and sponsors on a single platform, empowering the local ecosystem of each region it's realized.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>開発者会議（TDC）は、それを実現している各地域の業界全体の収益構造に力を与え、単一のプラットフォーム上でミートアップやイベント主催者、スピーカー、企業やスポンサーを接続するブラジルのソフトウェア開発に関連する最大のイベントです。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>TDC is a very dynamic conference aimed to present the most important topics according to local and international needs and, for this reason, there are more than ten parallel tracks a day.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>TDCは、地域や国際的なニーズに応じて最も重要なトピックを発表することを目的とした非常にダイナミックな会議であり、そのため、1日に10以上のトラックが並行して行われます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>This event takes place once a year in some cities in Brazil, but this year the event will be totally online due to COVID-19 impact.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>このイベントはブラジルの一部の都市で年に一度行われますが、今年はCOVID-19の影響で完全にオンラインでの開催となります。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Red Hat will be present on this event with 6 principal lectures and one room occurring simultaneously throughout the event.  We will have an Infinispan presentation showing some important features, what's new, demos and Quarkus integration at Red Hat sponsor room.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>このイベントにはRed Hatが参加し、6つの主要な講演と1つの部屋がイベント全体で同時開催されます。Red Hatのスポンサールームでは、重要な機能、最新情報、デモ、Quarkusの統合などを紹介するInfinispanのプレゼンテーションを行います。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>When the Infinispan presentation will happen?</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>Infinispanの発表はいつ？</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Hour</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>時間</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Timezone</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>タイムゾーン</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>BRT (GMT-3)</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>ブラジル時間（グリニッジ標準時-3）</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>EDT (UTC-4)</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>米国東部標準時(夏時間)（協定世界時-4）</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>BST (UTC+1)</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>英国(夏時間)（協定世界時+1）</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>CEST (UTC+2)</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>中央ヨーロッパ時間(夏時間)（協定世界時+2）</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Sub-task</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>サブタスク</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Feature Request</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>機能リクエスト</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Bug</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>バグ</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Task</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>タスク</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Component Upgrade</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>コンポーネントのアップグレード</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Enhancement</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>改善</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Non Blocking Journey</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>ノンブロッキングの旅</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>As many you are probably aware recent trends have shown that making applications non blocking provides quite a few benefits allowing for greater scalability with less resources. Infinispan has been written and rewriting parts to take advantage of this as we can for both embedded and server use cases.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>ご存知の方も多いと思いますが、最近の傾向として、アプリケーションをノンブロッキングにすることで、より少ないリソースでより大きな拡張性が得られることがわかってきました。Infinispan は、組み込みとサーバーの両方の使用例でこの利点を活用できるように書き換えられています。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>The Infinispan Server has always utilized netty, however we may not have been the best about ensuring we didn't block the event loop.  The HotRod Client in 9.2.0 also utilizes netty to provide for non blocking operations.  The internal embedded interceptors were rewritten in 9.0.0 to provide for non blocking support for internal cache operations, which include put/get.  Cache store operations in 10.0.0 were offloaded to a blocking thread pool to provide non blocking support.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>Infinispanサーバは常にnettyを利用してきましたが、イベントループをブロックしないようにすることについてはベストではなかったかもしれません。9.2.0のHotRodクライアントもnettyを利用してノンブロッキング操作を提供しています。内部に埋め込まれたインターセプターは9.0.0で書き換えられ、put/getを含む内部キャッシュ操作のノンブロッキングサポートを提供しています。10.0.0 のキャッシュストア操作は、ノンブロッキングサポートを提供するために、ブロッキングスレッドプールに受けわたされました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>With the newest release we have rewritten lots of the internals of Infinispan to take advantage of non blocking as much as possible.  The amount of changes is quite large and a bit hard to describe them all in this blog post.  The various JIRA can be seen from https://issues.redhat.com/browse/ISPN-10309, which isn't even complete yet despite how many different changes we have done.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>最新のリリースでは、可能な限りノンブロッキングを活用するために、Infinispan の内部を多く書き換えました。変更点の量は非常に多く、このブログ記事ですべてを説明するのは少し難しいです。様々な JIRA は https://issues.redhat.com/browse/ISPN-10309 から見ることができますが、これはどれだけ多くの変更を行ったにもかかわらず、まだ完成していません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>The persistence SPI was completely rewritten in 11 with non blocking in mind as well and this will be covered in a future post as it has much more detailing it.  For now you can rest assure that all prior stores will still work, however they may have or can be optimized to take into account non blocking support.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>永続性SPIは11でノンブロッキングを考慮して完全に書き直されました。これについては、より詳細な情報があるため、今後の記事で取り上げます。今のところ、以前のストアはすべて動作しますが、非ブロックサポートを考慮して最適化されている可能性がありますので、ご安心ください。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Conversions</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>改装</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Pretty much every module in the Infinispan code base has been changed to support non blocking.  If code relies upon an API that is blocking that is known to be blocking, we offload those calls to a blocking thread pool to ensure we never block the non blocking thread.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>Infinispan のコードベースのほとんどすべてのモジュールが、ノンブロッキングをサポートするように変更されました。コードがブロッキングされていることがわかっている API に依存している場合、ブロッキングされていないスレッドを決してブロッキングしないようにするために、ブロッキングスレッドプールにそれらの呼び出しを受け渡します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Unfortunately some modules have not yet been updated and those are ones related to query.  Query is in the middle of a giant refactoring and doing so would have caused massive conflicts and thus has been delayed to Infinispan 12.  The server works around this by ensuring write operations performed upon a cache with query are always done in a blocking thread to ensure safety.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>残念ながら、まだアップデートされていないモジュールがあり、それは問い合わせに関するものです。問い合わせは大規模なリファクタリングの真っ最中であり、それを行うと大規模なコンフリクトが発生するため、Infinispan 12 に延期されました。サーバーはこの問題を回避するために、問い合わせ付きのキャッシュに対して行われる書き込み操作は、安全性を確保するために常にブロッキングスレッドで行われるようにしています。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Thread Pools</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>スレッドプール</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Infinispan utilizes various thread pools for handling of operations.  This table details how many thread pools each version of Infinispan can have.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>Infinispan は、操作を処理するためにさまざまなスレッドプールを利用します。この表は、Infinispan の各バージョンが持てるスレッドプールの数を詳細に示しています。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Version</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>バージョン</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Embedded</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>組み込み</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>As you can see there is more than a 50 percent reduction of the number of thread pools in both embedded and server modes. This in turn has allowed for a reduction of the default number of threads as well as seen in the next table. Note that N is how many cores that are available to the JVM.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>ご覧のように、組み込みモードとサーバモードの両方でスレッドプールの数が50%以上削減されています。これにより、次の表に示すように、デフォルトのスレッド数を削減することができました。Nは、JVMで利用可能なコア数であることに注意してください。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Maximum Default Thread Count</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>最大デフォルトのスレッド数</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>After this consolidation we have non blocking and blocking thread pools.  As you can see this allows us to reduce the maximum number of threads in embedded by about half and the server to a third of what it used to be before.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>この統合の後、私たちはノンブロッキングとブロッキングのスレッドプールを持つようになりました。ご覧のように、これにより、組み込みの最大スレッド数を約半分に減らすことができ、サーバは以前の3分の1になりました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>The server has an additional thread pool for the netty event loop and unfortunately we cannot consolidate this thread pool, but it is planned for Infinispan 12, which will get us to the same number of threads and thread pools for both embedded and server modes.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>サーバーにはnettyイベントループ用の追加スレッドプールがあり、残念ながらこのスレッドプールを統合することはできませんが、Infinispan 12で計画されており、組み込みモードとサーバーモードの両方で同じ数のスレッドとスレッドプールを利用できるようになります。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Note that this doesn't talk about the JGroups thread pool as this is unchanged and is the same.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>JGroups スレッドプールは変更されておらず同じなので、これは JGroups スレッドプールについての話ではないことに注意してください。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>BlockHound</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>BlockHound</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>If you are familiar with making code non blocking it can be a very difficult task as even the most mundane call can be hiding something blocking, even if it is very brief.  We could write something to do detect such calls, but there is already an open source tool that does exactly what we needed.  This tool is BlockHound, which can detect blocking calls at runtime.  More information about it can be found at https://github.com/reactor/BlockHound.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>コードをノンブロッキングにすることに慣れていると、非常に難しい作業になります。というのも、ごく普通の呼び出しであっても、たとえそれが非常に短いものであっても、ブロッキングなものを隠してしまうことがあるからです。そのような呼び出しを検出するために何かを書くことができますが、私たちが必要としていたことを正確に行うオープンソースのツールがすでに存在します。このツールはBlockHoundで、実行時にブロッキングの呼び出しを検出することができます。このツールについての詳細は https://github.com/reactor/BlockHound を参照してください。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Infinispan takes advantage of blockhound in that we configure it at the module level.  This allows the end user to even add block hound with Infinispan in embedded mode and it should work to test out to ensure that interactions with Infinispan are not blocking when needed.  Note that we do not yet support block hound for the client, despite many methods are not blocking today.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>Infinispanでは、モジュール・レベルで設定するという点で、BlockHound を活用しています。 これにより、エンドユーザは埋め込みモードのInfinispanでもブロックハウンドを追加することができ、必要なときにInfinispanとのやりとりがブロックされていないことを確認するテストを行えます。 今日、多くのメソッドがブロックされていないにもかかわらず、私たちはまだクライアントのBlockHoundをサポートしていないことに注意してください。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Infinispan 12 should bring the entire non blocking saga to its hopfully final completion.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>Infinispan 12は、ノンブロッキングの物語全体をその希望に満ちた最終的な完成に持ってくるはずです。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>The aforementioned query modules need to be revamped</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>前述の問い合わせモジュールを改良する必要があります。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Existing supported cache stores need to be rewritten to directly support non blocking</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>既存のサポートされているキャッシュストアは、ノンブロッキングを直接サポートするように書き換える必要があります。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Cache retrieval needs to be offloaded to a blocking thread</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>キャッシュの検索はブロッキングスレッドに受け渡する必要があります。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Combine server event loop with non blocking thread pool</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>サーバイベントループとノンブロッキングスレッドプールの組み合わせ</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Also if time permits the Infinispan Client would be ensured to be fully non blocking and integrate with BlockHound to ensure client apps behave properly.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>また、時間が許せば、Infinispanクライアントは完全にノンブロッキングであることが保証され、クライアントアプリが適切に動作することを保証するためにBlockHoundと統合されます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>layout: blog
-title: Infinispan 12.0.1.Final
-permalink: /blog/:year/:month/:day/infinispan-12-0-1
-date: '2021-02-12T12:00:00.000-00:00'
-author: remerson
-tags: [ "release" ]
----
-</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>layout: blog
-title: Infinispan 12.0.1.Final
-permalink: /blog/:year/:month/:day/infinispan-12-0-1
-date: '2021-02-12T12:00:00.000-00:00'
-author: remerson
-tags: [ "release" ]
----
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Infinispan 12.0.1.Final "Lockdown"</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>Infinispan 12.0.1.Final "Lockdown"</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>we hope you've been enjoying all the new goodies included in our latest major release, Infinispan 12.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>最新のメジャーリリースである「Infinispan 12」に収録されている新しい素敵な機能をお楽しみいただけていますでしょうか。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>We now have a brand new micro release for you which addresses a number of issues.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>私たちは今、多くの問題に対処するための新しいマイクロリリースが出来ました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>The following list shows what we have fixed:</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>以下のリストは、修正したものを示しています。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>link:https://issues.redhat.com/browse/ISPN-12661[ISPN-12661] - Licenses are not properly generated in console</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>link:https://issues.redhat.com/browse/ISPN-12661[ISPN-12661] - コンソールでライセンスが正しく生成されません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>layout: blog
-title: Infinispan 11.0.1.Final
-permalink: /blog/:year/:month/:day/infinispan-11
-date: '2020-07-03T12:00:00.000-00:00'
-author: ttarrant
-tags: [ "release" ]
----
-</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>layout: blog
-title: Infinispan 11.0.1.Final
-permalink: /blog/:year/:month/:day/infinispan-11
-date: '2020-07-03T12:00:00.000-00:00'
-author: ttarrant
-tags: [ "release" ]
----
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Infinispan 11.0.1.Final "Corona Extra"</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>Infinispan 11.0.1.Final "Corona Extra"</seg>
+        <seg>親愛なるInfinispanコミュニティへ</seg>
       </tuv>
     </tu>
     <tu>
@@ -577,42 +179,408 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>As always, the Infinispan team hope you find the documentation useful and complete. We’d love to hear from you and really value feedback from our community. If you think something is missing from the docs or spot a correction, please get in touch and we’ll get on it straight away.</seg>
+        <seg>The following list shows what we have fixed:</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>いつものように、Infinispanチームは、このドキュメントが有用で完全なものであることをご理解いただけることを願っています。皆様からのご意見をお待ちしており、コミュニティからのフィードバックを本当に大切にしています。ドキュメントに何かが欠けていると思われる場合や、修正点がある場合は、ご連絡ください。私たちはすぐに取り掛かります。</seg>
+        <seg>以下のリストは、修正したものを示しています。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Infinispan 12.0.0.Dev01</seg>
+        <seg>Component Upgrade</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>Infinispan 12.0.0.Dev01</seg>
+        <seg>構成要素のアップグレード</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>The first of our development releases of Infinispan 12 is here and it features our upgrade to https://hibernate.org/search/[Hibernate Search 6] which finally allows us to upgrade to https://lucene.apache.org/[Lucene 8.x]. We've had to change a few things in our query implementation to accommodate the latest and greatest and to make the feature simpler to use. As expected, being a development release, there are some rough edges and we'd really love *YOUR* help in making sure that we get everything right for the final release later this year.</seg>
+        <seg>Enhancement</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>Infinispan 12 の開発リリースの第一弾はこちらで、 link:https://hibernate.org/search/[Hibernate Search 6] へのアップグレードを行い、ついに link:https://lucene.apache.org/[Lucene 8.x] へのアップグレードが可能になりました。最新の機能に対応し、よりシンプルに使えるようにするために、問い合せの実装をいくつか変更しなければなりませんでした。予想通り、開発リリースであるため、いくつかの荒削りな部分がありますが、 今年後半の最終リリースに向けて、すべてを正しい状態にできるようにするために、 *皆様の* ご協力をお待ちしています。</seg>
+        <seg>強化</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>You can look at the https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12346555[release notes] to see what has changed.</seg>
+        <seg>Bug</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>何が変わったのかは、 link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12346555[リリースノート] を見ればわかります。</seg>
+        <seg>バグ</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>We're hard at work on new features, improvements and fixes, so watch this space for more announcements!</seg>
+        <seg>Sub-task</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>私たちは新機能、改善、修正に取り組んでいます。今後の発表を楽しみにしていてください。</seg>
+        <seg>サブタスク</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Console</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>コンソール</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Release notes</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>リリースノート</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>layout: blog
+title: Infinispan 11.0.0.CR1
+permalink: /blog/:year/:month/:day/infinispan-11
+date: '2020-05-25T12:00:00.000-00:00'
+author: ttarrant
+tags: [ "release" ]
+---
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>layout: blog
+title: Infinispan 11.0.0.CR1
+permalink: /blog/:year/:month/:day/infinispan-11
+date: '2020-05-25T12:00:00.000-00:00'
+author: ttarrant
+tags: [ "release" ]
+---
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Infinispan 11.0.0.CR1</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan 11.0.0.CR1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>we've just released 11.0.0.CR1 which comes loaded with quite a few features and improvements.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>11.0.0.CR1をリリースしたばかりですが、これにはいくつかの機能や改善点が搭載されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Cross-Site Replication Improvements</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>拠点横断レプリケーションの改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The cross-site replication feature received two major improvements:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>拠点横断レプリケーション機能には、2つの大きな改善点がありました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Support for multiple site masters</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>複数の拠点マスターをサポート</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The new algorithm is able to take advantage of multiple site masters, distributing load between them. If your environment is capable, increase the number of site masters in RELAY2 configuration:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>新しいアルゴリズムでは、複数の拠点マスターを活用し、それらの間で負荷を分散できます。環境が可能であれば、RELAY2の構成で拠点マスターの数を増やしてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Conflict detection and resolution for Asynchronous Cross-Site Replication</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>非同期拠点横断レプリケーションにおける衝突の検出と解決</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Taking advantage of vector clocks, in asynchronous mode, Infinispan is able to detect conflicts.  A conflict happens when 2 or more sites update the same key at the same time.  Conflicts are resolved based on the site's names. Updates from the site lexicographically lower, take priority, in case of conflicts.  As an example, if you have 3 sites, LON, NYC and SFO, conflicts between LON and NYC discards updates from NYC and keeps the updates from LON.  You can choose the priority by prepending a number to the site name. For example, if you want updates from NYC to take priority, you can set the site name to “1-NYC”.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ベクトルクロックを利用して、非同期モードでは、Infinispanは衝突を検出できます。衝突は、2つ以上の拠点が同時に同じキーを更新した場合に発生します。競合は拠点名に基づいて解決されます。競合が発生した場合は、辞書的に下位のサイトからの更新が優先されます。例えば、LON（ロンドン）, NYC（ニューヨーク）, SFO（サンフランシスコ）の3つの拠点がある場合、LONとNYCが競合した場合、NYCからの更新は破棄され、LONからの更新は保持されます。拠点名の前に数字を付加することで、優先度を選択できます。例えば、NYCからの更新を優先したい場合は、拠点名を「1-NYC」に設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In a future update, Infinispan will allow you to set a custom conflict resolution algorithm.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>将来のアップデートでは、Infinispanでカスタムの競合解決アルゴリズムを設定できるようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Non-blocking internals</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ノンブロッキングの内部</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>All thread pools collapsed into two pools: blocking and non-blocking</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>すべてのスレッドプールは、ブロッキングとノンブロッキングの2つのプールと化しました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Persistence</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>永続性</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A new non-blocking Store SPI</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>新しいノンブロッキングストアSPI</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Clustering</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>クラスタリング</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>More accurate segment rebalancing</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>より正確なセグメントリバランス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Scaling without state-transfer (experimental)</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>状態遷移を伴わないスケーリング(実験)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Query/Indexing</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>問い合せ/索引</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>SearchManager, CacheQuery are deprecated. Users are encouraged to migrate to Ickle String queries obtained from Search.getQueryFactory</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>SearchManager、CacheQuery は非推奨です。ユーザは、Search.getQueryFactory から取得した Ickle String 問い合せに移行することをお勧めします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Server Security</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>サーバーのセキュリティ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The server is now secure by default</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>サーバがデフォルトで安全になりました</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>New encrypted properties realm</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>新しい暗号化されたプロパティのレルム</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Simplified authentication and authorization configuration to be as automatic as possible</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>認証と認可の設定を簡素化し、可能な限り自動化を実現</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Other Server changes</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>その他サーバーの変更</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Datasources</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>データソース</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Runtime logging configuration</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ランタイムロギングの設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Server report</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>サーバーレポート</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>User Tool merged into CLI</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ユーザツールをCLIに統合</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Non-interactive usage</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>非対話式な使用法</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Lots of UX improvements</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>多くのUX改善</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Cache CR</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>キャッシュ CR</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Container images</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>コンテナイメージ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Images based upon ubi-minimal:8.2</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ubi-minimal:8.2に基づくイメージ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Native generation of config files in all images</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>すべてのイメージで設定ファイルをネイティブに生成</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Native server image available at `infinispan/server-native` (Experimental)</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ネイティブサーバイメージは `infinispan/server-native` で利用可能 (実験)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Documentation</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ドキュメント</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Added procedural content for rolling upgrades, Cache CR with the Operator, server patching, misc CLI commands, using RemoteCacheConfigurationBuilder.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>RemoteCacheConfigurationBuilder を使用した、ローリング・アップグレードの手続き的なコンテンツ、オペレータとの Cache CR、サーバのパッチ適用、その他 CLI コマンドが追加されました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Procedural content for different upgrade and migration tasks included in Upgrade Guide.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>アップグレードガイドに含まれるさまざまなアップグレードおよび移行作業のための手続き内容です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Operator and Spring Boot Starter guides now provide stable and development versions from the index page.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>オペレータとSpring Boot Starterガイドでは、索引ページから安定版と開発版を提供するようになりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Updated index.html and throughout documentation to improve high-level context and aid retrievability.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>index.htmlとドキュメント全体を更新し、高レベルのコンテキストと検索性を向上させました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Getting Started content updated and streamlined.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>入門のコンテンツが更新され、合理化されました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Applied several modifications, additions, and removals to documentation via community feedback.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>コミュニティのフィードバックを介して、いくつかの変更、追加、削除をドキュメントに適用しました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -701,6 +669,866 @@ tags: [ "release" ]
       </tuv>
       <tuv xml:lang="ja_JP">
         <seg>チュートリアルを完成させて、私たちに何か質問をしたり、フィードバックをしたり、自由に共有してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Last week I released version 3.0.0.Final of wildfly-clustering-spring-session, a new Spring Session implementation based on WildFly's distributed HttpSession manager and Infinispan.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>先週、WildFlyの分散型HttpSessionマネージャとInfinispanをベースにした新しいSpring Sessionの実装であるwildfly-clustering-spring-sessionのバージョン3.0.0.Finalをリリースしました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Doesn't Infinispan already provide a Spring Session implementation?</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>InfinispanはすでにSpring Sessionの実装を提供しているのではないでしょうか？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>https://infinispan.org/docs/stable/titles/integrating/integrating.html#spring_externalize_sessions[Yes, it does.]</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>link:https://infinispan.org/docs/stable/titles/integrating/integrating.html#spring_externalize_sessions[その通りです。]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Infinispan's existing Spring Session implementation stores instances of `org.springframework.session.MapSession` into a Spring cache, which is backed by either an embedded or remote cache.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispanの既存のSpring Session実装は、 `org.springframework.session.MapSession` のインスタンスをSpringのキャッシュに格納します。このキャッシュは、組み込みキャッシュまたはリモートキャッシュによって支えられています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>However, like many `MapSession` based `SessionRepository` implementations, it suffers from a common set of problems/limitations:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>しかし、多くの `MapSession` ベースの `SessionRepository` の実装と同様に、共通の問題/限界に悩まされています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The `MapSession` object, including all session metadata and attributes must be serialized and replicated/persisted on every request, regardless of the extent to which the session was modified.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>`MapSession` オブジェクトは、すべてのセッションのメタデータと属性を含めてシリアル化され、セッションがどの程度変更されたかにかかわらず、すべてのリクエストで複製/永続化されなければなりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Because Spring Session triggers session persistence from a `ServletFilter`, this cost is borne per request.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Spring Sessionは、 `ServletFilter` からセッションの永続化をトリガーするため、このコストはリクエストごとに発生します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Since each request for a given session operates on a copy of the `MapSession`, and since the `MapSession` is not persisted/replicated until the end of the request:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>与えられたセッションの各リクエストは、 `MapSession` のコピーを操作するため、また、 `MapSession` は、リクエストが終了するまで永続化/複製されないためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Session modifications in one requests are not visible to concurrent requests for the same session.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>あるリクエストでのセッションの変更は、同じセッションで同時に起こっているリクエストでは見えません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A given session modification can be overwritten by a previous modification of the same session from a concurrent request if that request finishes first.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>あるセッションの変更は、同時に行われたリクエストによる同じセッションの以前の変更によって上書きされる可能性があります（そのリクエストが先に終了した場合）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Session attributes implementing `HttpSessionActivationListener` are never notified before/after they are marshalled/unmarshalled.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>`HttpSessionActivationListener` を実装しているセッション属性は、マーシャリング/アンマーシャリングされる前/後に通知されることはありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>How does it work?</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>どのような仕組みになっているのですか？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>wildfly-clustering-spring-session is implemented as a Spring `SessionRepository` facade to a container-independent `SessionManager` implementation that persists session attributes and metadata to either an embedded Infinispan cache or a remote Infinispan server cluster via HotRod.  This grants all of the features to Spring Session that one would normally expect when deploying a distributed web application to WildFly, including:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>wildfly-clustering-spring-sessionは、Springの `SessionRepository` ファサードとして、コンテナに依存しない `SessionManager` を実装しています。この実装は、セッションの属性とメタデータを、組み込みのInfinispanキャッシュか、HotRod経由でリモートのInfinispanサーバクラスタに永続化します。これにより、Spring Sessionにすべての機能が付与されます。これは、分散型WebアプリケーションをWildFlyにデプロイする際に通常期待される、以下のような機能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Minimal persistence payloads using configurable persistence granularity.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>設定可能な永続性の粒度を使用した最小の永続性ペイロード。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Consistent view of a given session from multiple concurrent request threads on a given server</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>特定のサーバー上で複数の同時に処理されるリクエストスレッドからの特定のセッションの一貫したビュー</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Mutable session attribute semantics (emulates the semantics of local session manager)</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>変更可能なセッション属性の意味（ローカルセッションマネージャの意味を模倣）</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Ability to treat specific session attributes as immutable</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>特定のセッション属性を不変のものとして扱う機能</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Configurable limit for the number of active sessions to retain in memory</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>メモリに保持するアクティブなセッションの数を設定可能</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Proper `HttpSessionActivationListener` notifications.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>適切な `HttpSessionActivationListener` の通知。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Configurable session attribute marshaller (ProtoStream, JBoss Marshalling, or Java Serialization)</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>設定可能なセッション属性マーシャラー（ProtoStream、JBoss Marshalling、またはJava Serialization</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>How do I use it?</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>どうやって使うの？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In this example, we'll use a remote Infinispan cluster containing a single member, deployed to the localhost, using its default configuration.  See the project https://github.com/wildfly-clustering/wildfly-clustering-spring-session/blob/master/README.md[README] for details on the available configuration annotations and their attributes.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>この例では、1つのメンバーを含むリモートのInfinispanクラスタを使用し、デフォルトの構成を使用してlocalhostにデプロイします。利用可能な構成アノテーションとその属性の詳細については、プロジェクトの link:https://github.com/wildfly-clustering/wildfly-clustering-spring-session/blob/master/README.md[README]を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Create a class containing the session repository configuration, for example:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>セッション・リポジトリの設定を含むクラスを作成します。たとえば</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Ensure your `/WEB-INF/applicationContext.xml` will process your configuration annotation:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>`/WEB-INF/applicationContext.xml` が構成アノテーションを処理できることを確認してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Create an application initializer class that will auto-register the requisite servlet filters required by Spring Session:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Spring Sessionが必要とするサーブレットフィルターを自動登録するアプリケーションイニシャライザークラスを作成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Create a `@WebListener` that bootstraps our session repository configuration:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>セッションリポジトリの構成を自動構築する `@WebListener` を作成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Deploying your application will automatically create a new cache instance in the Infinispan cluster named according to the the host and context of the web application.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>アプリケーションをデプロイすると、Webアプリケーションのホストとコンテキストに応じた名前の新しいキャッシュ・インスタンスがInfinispanクラスタに自動的に作成されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Can I use WildFly clustering Spring Session outside of WildFly?</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Wildfly clustering spring sessionはWildFly以外でも使用できますか？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Of course! Like most Spring Session repository implementations, it is meant to work with any implementation of the Jakarta Servlet 4.0 specification.  The project https://github.com/wildfly-clustering/wildfly-clustering-spring-session[README] contains sample instructions for installing on Tomcat.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>もちろんです！ほとんどのSpring Sessionリポジトリの実装と同様に、Jakarta Servlet 4.0仕様のあらゆる実装で動作するようになっています。プロジェクトの link:https://github.com/wildfly-clustering/wildfly-clustering-spring-session[README]には、Tomcatにインストールするためのサンプル手順が記載されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Where can I find it?</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>どこで手に入るの？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You can find the source code on https://github.com/wildfly-clustering/wildfly-clustering-spring-session[github].  Contributions are always welcome!</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ソースコードは link:https://github.com/wildfly-clustering/wildfly-clustering-spring-session[github]で公開されています。貢献をいつでもお待ちしております。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>File any issues with the https://github.com/wildfly-clustering/wildfly-clustering-spring-session/issues[github issue tracker].</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>問題があれば link:https://github.com/wildfly-clustering/wildfly-clustering-spring-session/issues[github課題トラッカー]に提出してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Checkout the https://github.com/wildfly-clustering/wildfly-clustering-spring-session/blob/master/README.md[README] for more details.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>詳しくは link:https://github.com/wildfly-clustering/wildfly-clustering-spring-session/blob/master/README.md[README]をご覧ください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Enjoy!</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>お楽しみに！</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>layout: blog
+title: Infinispan 12.0.1.Final
+permalink: /blog/:year/:month/:day/infinispan-12-0-1
+date: '2021-02-12T12:00:00.000-00:00'
+author: remerson
+tags: [ "release" ]
+---
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>layout: blog
+title: Infinispan 12.0.1.Final
+permalink: /blog/:year/:month/:day/infinispan-12-0-1
+date: '2021-02-12T12:00:00.000-00:00'
+author: remerson
+tags: [ "release" ]
+---
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Infinispan 12.0.1.Final "Lockdown"</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan 12.0.1.Final "Lockdown"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>we hope you've been enjoying all the new goodies included in our latest major release, Infinispan 12.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>最新のメジャーリリースである「Infinispan 12」に収録されている新しい素敵な機能をお楽しみいただけていますでしょうか。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>We now have a brand new micro release for you which addresses a number of issues.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>私たちは今、多くの問題に対処するための新しいマイクロリリースが出来ました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Feature Request</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>機能リクエスト</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>link:https://issues.redhat.com/browse/ISPN-12661[ISPN-12661] - Licenses are not properly generated in console</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>link:https://issues.redhat.com/browse/ISPN-12661[ISPN-12661] - コンソールでライセンスが正しく生成されません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Task</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>タスク</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Server</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>サーバ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Operator</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>オペレータ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Other</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>その他</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>layout: blog
+title: Infinispan 12.1.0.Final
+permalink: /blog/:year/:month/:day/infinispan-12-1-0-final
+date: '2021-04-07T12:00:00.000-00:00'
+author: ttarrant
+tags: [ "release" ]
+---
+</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>layout: blog
+title: Infinispan 12.1.0.Final
+permalink: /blog/:year/:month/:day/infinispan-12-1-0-final
+date: '2021-04-07T12:00:00.000-00:00'
+author: ttarrant
+tags: [ "release" ]
+---
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Infinispan 12.1.0.Final</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan 12.1.0.Final</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>As a belated surprise in your chocolate egg this year is a brand new final release.  Infinispan 12.1 https://en.wikipedia.org/wiki/Taedonggang[Taedonggang] includes a bunch of new features and fixes.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>今年のチョコレート・エッグには、遅ればせながら真新しいファイナル・リリースが入っています。Infinispan 12.1 link:https://en.wikipedia.org/wiki/Taedonggang[Taedonggang]には、たくさんの新機能と修正が含まれています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Out-of-the-box authorization in the server</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>サーバーですぐに使える認証</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The biggest change is the fact that the server now enables authorization right from the start, including a set of predefined roles.  By default this only affects management ops and it can be easily disabled.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>最大の変更点は、サーバーが事前に定義された役割を含めて、最初から認証を可能にしたことです。デフォルトでは、この機能は管理業務にのみ影響し、簡単に無効できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Head over to https://infinispan.org/docs/stable/titles/server/server.html#authorization for details on this feature and how to tune it to your own needs.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>この機能の詳細と、自分のニーズに合わせて調整する方法については、 https://infinispan.org/docs/stable/titles/server/server.html#authorization をご覧ください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Configuration</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>構成</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Infinispan can now load configuration as YAML, as well as XML and JSON.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispanは、XMLやJSONだけでなく、YAMLとして設定を読み込みこめるようになりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Soft-Index File Store</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ソフト索引ファイルストア</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The Soft-Index File Store (or SIFS for short) is one of our file-based stores, and it has received a number of improvements such as segmentation, non-blocking and requiring no additional threads.  Additionally, if you are lucky enough to have some persistent memory hardware, this file-store can support it via the very awesome https://github.com/jhalliday/mashona[Mashona library].  We hope to make this our default file-store in the future (replacing the Single File Store).</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ソフト索引ファイルストア（Soft-Index File Store略してSIFS）は、ファイルベースのストアの1つで、セグメント化、ノンブロッキング、追加のスレッドを必要としないなど、数多くの改良が施されています。さらに、もしあなたが幸運にも永続メモリーのハードウェアを持っているなら、このファイルストアは非常に素晴らしい link:https://github.com/jhalliday/mashona[Mashonaライブラリ]を介してそれをサポートできます。将来的には、シングルファイルストアに代わって、このファイルストアをデフォルトのファイルストアにしたいと考えています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Server protocol management</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>サーバーのプロトコル管理</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You can now enable/disable protocol endpoints at runtime or use https://infinispan.org/docs/stable/titles/server/server.html#endpoint_ipfilter[IP filtering] for fine-grained access control.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>稼働時にプロトコルのエンドポイントを有効/無効にしたり、 link:https://infinispan.org/docs/stable/titles/server/server.html#endpoint_ipfilter[IPフィルタリング] を使用してきめ細かなアクセスコントロールをできるようになりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The console is now fully aware of the server authorization roles (if enabled) and many fixes are included.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>コンソールは、サーバーの認証ロールを完全に認識するようになり（有効な場合）、多くの修正が含まれています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The CLI is now available as https://github.com/infinispan/infinispan-quarkus/releases[native builds] for Linux and MacOS.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>このCLIは、LinuxおよびMacOSの link:https://github.com/infinispan/infinispan-quarkus/releases[ネイティブビルド]として提供されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Cross Site Replication</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>拠点横断レプリケーション</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You can now enable automatic Cross Site https://infinispan.org/docs/stable/titles/xsite/xsite.html#xsite_state_transfer-xsite[state transfer] for asynchronous backup strategy.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>非同期バックアップ戦略において、拠点横断の自動 link:https://infinispan.org/docs/stable/titles/xsite/xsite.html#xsite_state_transfer-xsite[状態移行]を有効にできるようになりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Spring</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Spring</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Our Spring Cache and Spring Session integration now allows user keys and values to be stored in https://infinispan.org/docs/stable/titles/developing/developing.html#configuring_protobuf_encoding-data[Protostream] format.  However, full integration with the Infinispan Spring Boot Starter is landing in the next minor release. Stay tuned!</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Spring CacheとSpring Sessionの統合により、ユーザがキーとバリューを link:https://infinispan.org/docs/stable/titles/developing/developing.html#configuring_protobuf_encoding-data[Protostream]形式で保存できるようになりました。しかし、Infinispan Spring Boot Starterとの完全な統合は、次のマイナーリリースで着地します。ご期待ください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Marshalling/ProtoBuf</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>マーシャリング/ProtoBuf</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The latest ProtoStream release 4.4.0.Beta3 includes support for marshalling arrays and collections, built-in support for several community requested types (UUID, BigDEcimal,...), a new method in ProtobufUtil for computing message size (without actually encoding the message) and a lot of bug fixes. This release also provides it’s own protobuf encoder and removes the dependency on protobuf-java artifact which was previously used for encoding the stream (without being exposed by the API).</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>最新の ProtoStream リリース 4.4.0.Beta3 には、配列とコレクションのマーシャリングのサポート、コミュニティから要求されたいくつかの型（UUID、BigDEcimal、...）の組込みサポート、（実際にメッセージをエンコードすることなく）メッセージサイズを計算する ProtobufUtil の新しいメソッド、および多くのバグ修正が含まれています。このリリースでは、独自の protobuf エンコーダが提供され、以前はストリームのエンコードに使用されていた protobuf-java アーティファクトへの依存がなくなりました (API では公開されていません)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Images</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>イメージ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>We now provide an image containing a natively compiled version of the Infinispan CLI at quay.io/infinispan/cli</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ネイティブにコンパイルされたInfinispan CLIのイメージをquay.io/infinispan/cliで提供しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In addition to numerous fixes, the operator has added many new features. Most notably:</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>数々の修正に加えて、オペレーターは多くの新機能を追加しました。最も注目すべきは</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Batch CR</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>バッチCR</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Custom library support</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>カスタムライブラリ対応</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Custom labels on Resources created by Operator</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>オペレータが作成したリソースのカスタムラベル</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Disable Authentication Option</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>認証オプションの無効化</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Decouple user and operator endpoint authentication</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ユーザとオペレータのエンドポイント認証を分離</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>We’ve made a lot of updates to our documentation this release, with lots more task-oriented content for new features and capabilities. Server credential stores, refactored authorization (RBAC) configuration, Operator Batch CR, Backup and Restore CRs, custom code deployments, automatic cross-site state transfer, querying values, configuring Protobuf annotations for marshalling… Hopefully you’ll find all the answers you need for using Infinispan 12.1.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>今回のリリースでは、ドキュメントの更新が多く行われ、新機能や性能に関する職務指向のコンテンツがたくさん追加されました。サーバ・クレデンシャル・ストア、リファクタリングされた認証(RBAC)の構成、オペレータ・バッチCR、バックアップ・リストアCR、カスタム・コード・デプロイメント、自動拠点横断状態転送、値を照会、マーシャリングのためのProtobufアノテーションの構成...Infinispan 12.1を使用するために必要なすべての答えが見つかることを願っています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>One of the big highlights for docs in this release are the new tabbed configuration snippets we’re going to start adding. Right now you can find an example of tabbed configuration in the REST API docs here: https://infinispan.org/docs/dev/titles/rest/rest.html#cache_configuration</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>今回のリリースにおけるdocsの大きな特徴の一つは、タブ付き設定のスニペットを新たに追加することです。現在、REST APIのドキュメントにタブ付き設定の例があります https://infinispan.org/docs/dev/titles/rest/rest.html#cache_configuration</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>We’ve also done a lot of housekeeping in this release to make sure configuration examples are up to date and valid. In the next release you can expect to see more improvements there as well as a new title to improve our documentation around encoding and how Infinispan uses Protobuf.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>また、このリリースでは、設定例が最新で有効であることを確認するために、多くの維持管理を行いました。次のリリースでは、エンコーディングや Infinispan がどのように Protobuf を使用するかについてのドキュメントを改善するための新しいタイトルと同様に、さらなる改善を期待できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>As always, thanks for reading and get in touch if you have comments, feedback, or suggestions on our documentation.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>いつもお読みいただきありがとうございます。また、私たちのドキュメントに関するコメント、フィードバック、提案などがありましたら、ご連絡ください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Release notes and upgrading</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>リリースノートとアップグレード</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You can look at the detailed https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12353337E[release notes] to see what has changed since CR1.  If you are upgrading from a previous version of Infinispan, please checkout our https://infinispan.org/docs/stable/titles/upgrading/upgrading.html[Upgrading guide].</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>CR1からの変更点については、詳細な link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;amp;version=12353337E[リリースノート]をご覧ください。旧バージョンのInfinispanからアップグレードする場合は、 link:https://infinispan.org/docs/stable/titles/upgrading/upgrading.html[アップグレード・ガイド]をご確認ください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>What's next ?</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>次は何？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Our next release, 13.0, should happen during the summer, and will hopefully introduce a new API which will make using Infinispan much easier, as well as a number of other improvements across the board. As usual, look out for blog postings about upcoming highlights. If you'd like to contribute, just get in touch.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>次のリリースである13.0は夏頃に予定されており、Infinispanの使用をより簡単にする新しいAPIを導入するほか、全体的に多くの改良が加えられることを期待しています。いつものように、今後のハイライトについてのブログ投稿をお楽しみに。ご協力いただける方は、ぜひご連絡ください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>As always, the Infinispan team hope you find the documentation useful and complete. We’d love to hear from you and really value feedback from our community. If you think something is missing from the docs or spot a correction, please get in touch and we’ll get on it straight away.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>いつものように、Infinispanチームは、このドキュメントが有用で完全なものであることをご理解いただけることを願っています。皆様からのご意見をお待ちしており、コミュニティからのフィードバックを本当に大切にしています。ドキュメントに何かが欠けていると思われる場合や、修正点がある場合は、ご連絡ください。私たちはすぐに取り掛かります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Off Heap enhancements</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>オフヒープの強化</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The off heap implementation in Infinispan has become much more widely used since its introduction.  There have been some issues and improvements identified to get this storage type more in line with its heap counterpart.  For those of you that are unware the off-heap setting is actually only "off" the JVM heap and still resides in the native memory of the application.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan のオフヒープ実装は、その導入以来、より広く使用されるようになりました。このストレージタイプをヒープ対応のストレージタイプに近づけるために、いくつかの問題点と改善点が確認されています。ご存知ない方のために、オフヒープ設定は実際にはJVMヒープを「オフ」にしているだけで、アプリケーションのネイティブメモリに存在しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The best part of all the below changes is the user does not need to change anything, other than configuring Off Heap storage.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>以下の変更点の中で最も優れている点は、オフヒープストレージを設定する以外にユーザーが何も変更する必要がないことです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Resizing Off Heap Container</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>オフヒープコンテナのサイズ変更</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>For those of you that have used/configured off heap storage before you may have noticed that there was a configuration option named address count.  This setting allowed you to configure how many address pointers the container had.  You can think of this as essentially how many buckets you have in a HashMap.  Unfortunately the number of pointers was fixed and therefore the user would have to know how many elements they expected to have.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>以前にオフヒープストレージを使用/設定したことがある人は、アドレスカウントという設定オプションがあることに気づいたかもしれません。この設定では、コンテナが持つアドレスポインタの数を設定することができます。これは、基本的には HashMap にあるバケットの数と考えることができます。残念ながら、ポインターの数は固定されていたので、ユーザーはどれだけの要素を持つと予想されるかを知る必要がありました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This setting also had another problem.  If the user required a larger size of elements this would increase startup time as the container can be iterated upon multiple times when it is empty.  Iterating over a container of one million empty pointers would be much slower than iterating over one of only 1024 for example.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>この設定にも問題がありました。ユーザーがより大きなサイズの要素を必要とする場合、コンテナが空になったときに何度も反復処理を行うことができるため、起動時間が長くなってしまいます。例えば、100万個の空のポインタを持つコンテナを反復処理するのは、1024個のコンテナを反復処理するよりもはるかに遅くなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>I am glad to say as of Infinispan 10.0.0.Final this setting and the performance of iteration have been greatly improved.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>嬉しいことに、Infinispan 10.0.0.Finalでは、この設定とイテレーションのパフォーマンスが大幅に改善されました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The address count variable is now ignored and instead the off heap based container will start at smaller amount of "buckets" in the range of 128 or 256.  We then apply a load factor of .75, which means we will automatically increase the size of the underlying "buckets" once we have inserted a number of entries being 75% or larger than the current "bucket" size.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>アドレスカウント変数は無視され、代わりにオフヒープベースのコンテナは128または256の範囲の小さい量の「バケット」から始まります。そして、負荷率を0.75に設定します。これは、現在の「バケット」サイズよりも75%以上大きいエントリを挿入すると、自動的に基礎となる「バケット」のサイズを増加させることを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The resize operation will grow to have double the amount of "buckets" it had prior.  The resize operation will be performed concurrently with other operations, providing minimal blocking as we have locks equal to the number of CPUs times two.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>リサイズ操作は、以前の倍の量の「バケット」を持つようになります。リサイズ操作は他の操作と並行して実行され、CPU数の2倍に相当するロックがあるため、最小限のブロッキングを提供します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This will allow for a cache with off heap to be started significantly faster and relieves some configuration options that were unneeded.  Note that the map, just like a java.util.HashMap, will not decrease the number of "buckets" once it grows to a given size.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>これにより、オフヒープのキャッシュを大幅に高速に起動することが可能になり、不要だったいくつかの設定オプションが解放されます。このMapは、java.util.HashMapのように、マップが一旦所定のサイズに成長すると「バケット」の数は減らないことに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Iteration changes</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>イテレーションの変更</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>I mentioned that iteration was slower during startup of larger number of "buckets".  This was due to it possibly having a large number of them, however it was also plauged by an ineffecient way of iterating over them.  In addition to rewriting the resize operation, we have also optimized the memory layout so that "buckets" can be iterated sequentially which provides more mechanical sympathy.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>私は、より大きな数の「バケット」の起動時に反復処理が遅くなることを述べました。これは、バケットの数が多いことが原因である可能性がありますが、バケットの反復処理の不便さにも悩まされていました。リサイズ操作を書き換えることに加えて、「バケット」を順次反復処理できるようにメモリレイアウトを最適化し、より機械的な共感を得られるようにしました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Hash changes</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>ハッシュの変更</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This one is rather short and sweet, but the old hash algorithm we used would cause too many collisions for objects that had hash functions that returned values in a similar range, such as java.lang.Integer and java.util.String (with shared startubg characters).</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>これはかなり要領を得たものですが、私たちが使っていた古いハッシュアルゴリズムでは、似たような範囲の値を返すハッシュ関数を持つオブジェクトの衝突が多すぎました。これは、java.lang.Integerやjava.util.String（共有された開始文字を持つ）のような、類似した範囲の値を返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Therefore it has been changed to provide a bit better spreading. This is part of ISPN 10.0.0.Final.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>そのため、少しだけ広がりが良くなるように変更されています。これは ISPN 10.0.0.Final の一部です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Expiration bugs</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>期限切れのバグ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Unfortunately off heap had a few issues with expiration.  It didn't support max idle and expiration metadata was not properly transferred to new nodes during state transfer.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>残念ながらオフヒープは 期限切れの機能にいくつかの問題を抱えていました。それは最大アイドルをサポートしておらず、状態転送中に新しいノードへの期限切れメタデータの転送が適切に行われませんでした。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In addition to max idle algorithm being rewritten, Off heap now properly supports max idle as of 10.1.4.Final and 11.0.0.Final.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>max idleアルゴリズムの書き換えに加え、10.1.4.Finalおよび11.0.0.Finalでは、オフヒープが正しくmax idleをサポートするようになりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Off heap metadata transferred to new nodes has been fixed in 10.1.8.Final and 11.0.0.Final.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>新しいノードに転送されるオフヒープメタデータが 10.1.8.Final および 11.0.0.Final で修正されました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Infinispan 12.0.0.Dev01</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan 12.0.0.Dev01</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The first of our development releases of Infinispan 12 is here and it features our upgrade to https://hibernate.org/search/[Hibernate Search 6] which finally allows us to upgrade to https://lucene.apache.org/[Lucene 8.x]. We've had to change a few things in our query implementation to accommodate the latest and greatest and to make the feature simpler to use. As expected, being a development release, there are some rough edges and we'd really love *YOUR* help in making sure that we get everything right for the final release later this year.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan 12 の開発リリースの第一弾はこちらで、 link:https://hibernate.org/search/[Hibernate Search 6] へのアップグレードを行い、ついに link:https://lucene.apache.org/[Lucene 8.x] へのアップグレードが可能になりました。最新の機能に対応し、よりシンプルに使えるようにするために、問い合せの実装をいくつか変更しなければなりませんでした。予想通り、開発リリースであるため、いくつかの荒削りな部分がありますが、 今年後半の最終リリースに向けて、すべてを正しい状態にできるようにするために、 *皆様の* ご協力をお待ちしています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You can look at the https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12346555[release notes] to see what has changed.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>何が変わったのかは、 link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12346555[リリースノート] を見ればわかります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>We're hard at work on new features, improvements and fixes, so watch this space for more announcements!</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>私たちは新機能、改善、修正に取り組んでいます。今後の発表を楽しみにしていてください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -799,14 +1627,6 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Configuration</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>設定</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>We introduced a couple of improvements to the configuration API:</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
@@ -859,14 +1679,6 @@ tags: [ "release" ]
       </tuv>
       <tuv xml:lang="ja_JP">
         <seg>ユーザータイプがInfinispan内部のコンテキストから完全に分離されました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Cross Site Replication</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>拠点横断レプリケーション</seg>
       </tuv>
     </tu>
     <tu>
@@ -1247,14 +2059,6 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Images</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>イメージ</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>A natively compiled version of the CLI is now available as a container via the https://quay.io/repository/infinispan/cli[infinispan/cli] image.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
@@ -1431,14 +2235,6 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Release notes and upgrading</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>リリースノートとアップグレード</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>You can look at the detailed https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12345018[release notes] to see what has changed since CR1.  If you are upgrading from a previous version of Infinispan, please checkout our https://infinispan.org/docs/stable/titles/upgrading/upgrading.html[Upgrading guide].</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
@@ -1447,290 +2243,10 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>What's next ?</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>次は何をするの？</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Our next release, 12.1, will be a quick one, mostly focused on polishing and small API improvemnets, before we move on to bigger things. As usual, look out for blog postings about upcoming highlights. If you'd like to contribute, just get in touch.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
         <seg>次のリリースである 12.1 は、より大きなものに移る前に、主に洗練と小さな API の改善に焦点を当てた短いリリースになる予定です。いつものように、今後のハイライトについてのブログ記事に注目してください。貢献したい方は、ご連絡ください。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Last week I released version 3.0.0.Final of wildfly-clustering-spring-session, a new Spring Session implementation based on WildFly's distributed HttpSession manager and Infinispan.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>先週、WildFlyの分散型HttpSessionマネージャとInfinispanをベースにした新しいSpring Sessionの実装であるwildfly-clustering-spring-sessionのバージョン3.0.0.Finalをリリースしました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Doesn't Infinispan already provide a Spring Session implementation?</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>InfinispanはすでにSpring Sessionの実装を提供しているのではないでしょうか？</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>https://infinispan.org/docs/stable/titles/integrating/integrating.html#spring_externalize_sessions[Yes, it does.]</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>link:https://infinispan.org/docs/stable/titles/integrating/integrating.html#spring_externalize_sessions[その通りです。]</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Infinispan's existing Spring Session implementation stores instances of `org.springframework.session.MapSession` into a Spring cache, which is backed by either an embedded or remote cache.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>Infinispanの既存のSpring Session実装は、 `org.springframework.session.MapSession` のインスタンスをSpringのキャッシュに格納します。このキャッシュは、組み込みキャッシュまたはリモートキャッシュによって支えられています。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>However, like many `MapSession` based `SessionRepository` implementations, it suffers from a common set of problems/limitations:</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>しかし、多くの `MapSession` ベースの `SessionRepository` の実装と同様に、共通の問題/限界に悩まされています。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>The `MapSession` object, including all session metadata and attributes must be serialized and replicated/persisted on every request, regardless of the extent to which the session was modified.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>`MapSession` オブジェクトは、すべてのセッションのメタデータと属性を含めてシリアル化され、セッションがどの程度変更されたかにかかわらず、すべてのリクエストで複製/永続化されなければなりません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Because Spring Session triggers session persistence from a `ServletFilter`, this cost is borne per request.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>Spring Sessionは、 `ServletFilter` からセッションの永続化をトリガーするため、このコストはリクエストごとに発生します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Since each request for a given session operates on a copy of the `MapSession`, and since the `MapSession` is not persisted/replicated until the end of the request:</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>与えられたセッションの各リクエストは、 `MapSession` のコピーを操作するため、また、 `MapSession` は、リクエストが終了するまで永続化/複製されないためです。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Session modifications in one requests are not visible to concurrent requests for the same session.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>あるリクエストでのセッションの変更は、同じセッションで同時に起こっているリクエストでは見えません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>A given session modification can be overwritten by a previous modification of the same session from a concurrent request if that request finishes first.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>あるセッションの変更は、同時に行われたリクエストによる同じセッションの以前の変更によって上書きされる可能性があります（そのリクエストが先に終了した場合）。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Session attributes implementing `HttpSessionActivationListener` are never notified before/after they are marshalled/unmarshalled.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>`HttpSessionActivationListener` を実装しているセッション属性は、マーシャリング/アンマーシャリングされる前/後に通知されることはありません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>How does it work?</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>どのような仕組みになっているのですか？</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>wildfly-clustering-spring-session is implemented as a Spring `SessionRepository` facade to a container-independent `SessionManager` implementation that persists session attributes and metadata to either an embedded Infinispan cache or a remote Infinispan server cluster via HotRod.  This grants all of the features to Spring Session that one would normally expect when deploying a distributed web application to WildFly, including:</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>wildfly-clustering-spring-sessionは、Springの `SessionRepository` ファサードとして、コンテナに依存しない `SessionManager` を実装しています。この実装は、セッションの属性とメタデータを、組み込みのInfinispanキャッシュか、HotRod経由でリモートのInfinispanサーバクラスタに永続化します。これにより、Spring Sessionにすべての機能が付与されます。これは、分散型WebアプリケーションをWildFlyにデプロイする際に通常期待される、以下のような機能です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Minimal persistence payloads using configurable persistence granularity.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>設定可能な永続性の粒度を使用した最小の永続性ペイロード。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Consistent view of a given session from multiple concurrent request threads on a given server</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>特定のサーバー上で複数の同時に処理されるリクエストスレッドからの特定のセッションの一貫したビュー</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Mutable session attribute semantics (emulates the semantics of local session manager)</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>変更可能なセッション属性の意味（ローカルセッションマネージャの意味を模倣）</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Ability to treat specific session attributes as immutable</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>特定のセッション属性を不変のものとして扱う機能</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Configurable limit for the number of active sessions to retain in memory</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>メモリに保持するアクティブなセッションの数を設定可能</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Proper `HttpSessionActivationListener` notifications.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>適切な `HttpSessionActivationListener` の通知。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Configurable session attribute marshaller (ProtoStream, JBoss Marshalling, or Java Serialization)</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>設定可能なセッション属性マーシャラー（ProtoStream、JBoss Marshalling、またはJava Serialization</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>How do I use it?</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>どうやって使うの？</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>In this example, we'll use a remote Infinispan cluster containing a single member, deployed to the localhost, using its default configuration.  See the project https://github.com/wildfly-clustering/wildfly-clustering-spring-session/blob/master/README.md[README] for details on the available configuration annotations and their attributes.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>この例では、1つのメンバーを含むリモートのInfinispanクラスタを使用し、デフォルトの構成を使用してlocalhostにデプロイします。利用可能な構成アノテーションとその属性の詳細については、プロジェクトの link:https://github.com/wildfly-clustering/wildfly-clustering-spring-session/blob/master/README.md[README]を参照してください。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Create a class containing the session repository configuration, for example:</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>セッション・リポジトリの設定を含むクラスを作成します。たとえば</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Ensure your `/WEB-INF/applicationContext.xml` will process your configuration annotation:</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>`/WEB-INF/applicationContext.xml` が構成アノテーションを処理できることを確認してください。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Create an application initializer class that will auto-register the requisite servlet filters required by Spring Session:</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>Spring Sessionが必要とするサーブレットフィルターを自動登録するアプリケーションイニシャライザークラスを作成します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Create a `@WebListener` that bootstraps our session repository configuration:</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>セッションリポジトリの構成を自動構築する `@WebListener` を作成します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Deploying your application will automatically create a new cache instance in the Infinispan cluster named according to the the host and context of the web application.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>アプリケーションをデプロイすると、Webアプリケーションのホストとコンテキストに応じた名前の新しいキャッシュ・インスタンスがInfinispanクラスタに自動的に作成されます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Can I use WildFly clustering Spring Session outside of WildFly?</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>Wildfly clustering spring sessionはWildFly以外でも使用できますか？</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Of course! Like most Spring Session repository implementations, it is meant to work with any implementation of the Jakarta Servlet 4.0 specification.  The project https://github.com/wildfly-clustering/wildfly-clustering-spring-session[README] contains sample instructions for installing on Tomcat.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>もちろんです！ほとんどのSpring Sessionリポジトリの実装と同様に、Jakarta Servlet 4.0仕様のあらゆる実装で動作するようになっています。プロジェクトの link:https://github.com/wildfly-clustering/wildfly-clustering-spring-session[README]には、Tomcatにインストールするためのサンプル手順が記載されています。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Where can I find it?</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>どこで手に入るの？</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>You can find the source code on https://github.com/wildfly-clustering/wildfly-clustering-spring-session[github].  Contributions are always welcome!</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>ソースコードは link:https://github.com/wildfly-clustering/wildfly-clustering-spring-session[github]で公開されています。貢献をいつでもお待ちしております。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>File any issues with the https://github.com/wildfly-clustering/wildfly-clustering-spring-session/issues[github issue tracker].</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>問題があれば link:https://github.com/wildfly-clustering/wildfly-clustering-spring-session/issues[github課題トラッカー]に提出してください。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Checkout the https://github.com/wildfly-clustering/wildfly-clustering-spring-session/blob/master/README.md[README] for more details.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>詳しくは link:https://github.com/wildfly-clustering/wildfly-clustering-spring-session/blob/master/README.md[README]をご覧ください。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Enjoy!</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>お楽しみに！</seg>
       </tuv>
     </tu>
     <tu>
@@ -1805,14 +2321,6 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Conflict detection and resolution for Asynchronous Cross-Site Replication</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>非同期拠点横断レプリケーションにおける衝突の検出と解決</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Cross-site replication is one of our most used features, as it enables a number of very useful use-cases such as geographical load distribution, zero-downtime disaster recovery and follow-the-sun data centers.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
@@ -1845,26 +2353,10 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Non-blocking internals</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>ノンブロッキングの内部</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Our quest to make better use of the available hardware resources in all deployment models (bare-metal, containerized, virtualized) continues as we've now consolidated a lot of thread-pools into just two: non-blocking and blocking.  Most of the code now makes use of the non-blocking pool. Paths which may block, such as certain persistent stores, use the blocking pool so that they don't hold up work that may be processed without blocking.  This release also includes a new non-blocking Store SPI, so that you can take advantage of stores with real non-blocking I/O.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
         <seg>すべてのデプロイメントモデル（ベアメタル、コンテナ化、仮想化）で利用可能なハードウェアリソースをよりよく利用するための探求は続いており、多くのスレッドプールをノンブロッキングとブロッキングの 2 つに統合しました。現在、ほとんどのコードはノンブロッキングプールを使用しています。特定の永続的なストアなど、ブロックされる可能性のあるパスは、ブロッキングなしで処理される可能性のある作業を保持しないように、ブロッキングプールを使用します。このリリースには新しいノンブロッキングストア SPI も含まれており、実際のノンブロッキング I/O でストアを利用できるようになっています。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Clustering</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>クラスタリング</seg>
       </tuv>
     </tu>
     <tu>
@@ -1881,14 +2373,6 @@ tags: [ "release" ]
       </tuv>
       <tuv xml:lang="ja_JP">
         <seg>高可用性がお望みなら、セグメント（データ空間の細分化）がどのようにノードにマップされるかを決定する再配置アルゴリズムが、より正確で公平なものになるように見直されました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Query/Indexing</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>問い合わせ/索引</seg>
       </tuv>
     </tu>
     <tu>
@@ -1929,14 +2413,6 @@ tags: [ "release" ]
       </tuv>
       <tuv xml:lang="ja_JP">
         <seg>セグメント/ノード間で作業を並行して分割することで、要素の反復処理が改善されました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Other Server changes</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>その他サーバーの変更</seg>
       </tuv>
     </tu>
     <tu>
@@ -2005,54 +2481,6 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Added procedural content for rolling upgrades, Cache CR with the Operator, server patching, misc CLI commands, using RemoteCacheConfigurationBuilder.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>RemoteCacheConfigurationBuilder を使用した、ローリング・アップグレードの手続き的なコンテンツ、オペレータとの Cache CR、サーバのパッチ適用、その他 CLI コマンドが追加されました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Procedural content for different upgrade and migration tasks included in Upgrade Guide.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>アップグレードガイドに含まれるさまざまなアップグレードおよび移行作業のための手続き内容です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Operator and Spring Boot Starter guides now provide stable and development versions from the index page.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>オペレータとSpring Boot Starterガイドでは、索引ページから安定版と開発版を提供するようになりました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Updated index.html and throughout documentation to improve high-level context and aid retrievability.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>index.htmlとドキュメント全体を更新し、高レベルのコンテキストと検索性を向上させました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Getting Started content updated and streamlined.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>入門のコンテンツが更新され、合理化されました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Applied several modifications, additions, and removals to documentation via community feedback.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>コミュニティのフィードバックを介して、いくつかの変更、追加、削除をドキュメントに適用しました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>As briefly mentioned above, Infinispan 12 will be our next release, scheduled for this autumn. We will be working on query/index improvements, backup/restore capabilities as well as the usual load of improvements, clean-ups across the board. We will keep you posted with development release and blogs about upcoming highlights. If you'd like to contribute, just get in touch.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
@@ -2061,264 +2489,210 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>layout: blog
-title: Infinispan 12.1.0.Final
-permalink: /blog/:year/:month/:day/infinispan-12-1-0-final
-date: '2021-04-07T12:00:00.000-00:00'
-author: ttarrant
-tags: [ "release" ]
----
-</seg>
+        <seg>The Developer Conference Sao Paulo</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>layout: blog
-title: Infinispan 12.1.0.Final
-permalink: /blog/:year/:month/:day/infinispan-12-1-0-final
-date: '2021-04-07T12:00:00.000-00:00'
-author: ttarrant
-tags: [ "release" ]
----
-</seg>
+        <seg>開発者会議 サンパウロ</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Infinispan 12.1.0.Final</seg>
+        <seg>What is The Developer’s Conference?</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>Infinispan 12.1.0.Final</seg>
+        <seg>開発者会議とは？</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>As a belated surprise in your chocolate egg this year is a brand new final release.  Infinispan 12.1 https://en.wikipedia.org/wiki/Taedonggang[Taedonggang] includes a bunch of new features and fixes.</seg>
+        <seg>The Developer’s Conference (TDC) is the largest event related to software development in Brazil connecting meetup and event organizers, speakers, companies and sponsors on a single platform, empowering the local ecosystem of each region it's realized.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>今年のチョコレート・エッグには、遅ればせながら真新しいファイナル・リリースが入っています。Infinispan 12.1 link:https://en.wikipedia.org/wiki/Taedonggang[Taedonggang]には、たくさんの新機能と修正が含まれています。</seg>
+        <seg>開発者会議（TDC）は、それを実現している各地域の業界全体の収益構造に力を与え、単一のプラットフォーム上でミートアップやイベント主催者、スピーカー、企業やスポンサーを接続するブラジルのソフトウェア開発に関連する最大のイベントです。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Out-of-the-box authorization in the server</seg>
+        <seg>TDC is a very dynamic conference aimed to present the most important topics according to local and international needs and, for this reason, there are more than ten parallel tracks a day.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>サーバーですぐに使える認証</seg>
+        <seg>TDCは、地域や国際的なニーズに応じて最も重要なトピックを発表することを目的とした非常にダイナミックな会議であり、そのため、1日に10以上のトラックが並行して行われます。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>The biggest change is the fact that the server now enables authorization right from the start, including a set of predefined roles.  By default this only affects management ops and it can be easily disabled.</seg>
+        <seg>This event takes place once a year in some cities in Brazil, but this year the event will be totally online due to COVID-19 impact.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>最大の変更点は、サーバーが事前に定義された役割を含めて、最初から認証を可能にしたことです。デフォルトでは、この機能は管理業務にのみ影響し、簡単に無効できます。</seg>
+        <seg>このイベントはブラジルの一部の都市で年に一度行われますが、今年はCOVID-19の影響で完全にオンラインでの開催となります。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Head over to https://infinispan.org/docs/stable/titles/server/server.html#authorization for details on this feature and how to tune it to your own needs.</seg>
+        <seg>Red Hat will be present on this event with 6 principal lectures and one room occurring simultaneously throughout the event.  We will have an Infinispan presentation showing some important features, what's new, demos and Quarkus integration at Red Hat sponsor room.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>この機能の詳細と、自分のニーズに合わせて調整する方法については、 https://infinispan.org/docs/stable/titles/server/server.html#authorization をご覧ください。</seg>
+        <seg>このイベントにはRed Hatが参加し、6つの主要な講演と1つの部屋がイベント全体で同時開催されます。Red Hatのスポンサールームでは、重要な機能、最新情報、デモ、Quarkusの統合などを紹介するInfinispanのプレゼンテーションを行います。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Infinispan can now load configuration as YAML, as well as XML and JSON.</seg>
+        <seg>When the Infinispan presentation will happen?</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>Infinispanは、XMLやJSONだけでなく、YAMLとして設定を読み込みこめるようになりました。</seg>
+        <seg>Infinispanの発表はいつ？</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Soft-Index File Store</seg>
+        <seg>Hour</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>ソフト索引ファイルストア</seg>
+        <seg>時間</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>The Soft-Index File Store (or SIFS for short) is one of our file-based stores, and it has received a number of improvements such as segmentation, non-blocking and requiring no additional threads.  Additionally, if you are lucky enough to have some persistent memory hardware, this file-store can support it via the very awesome https://github.com/jhalliday/mashona[Mashona library].  We hope to make this our default file-store in the future (replacing the Single File Store).</seg>
+        <seg>Timezone</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>ソフト索引ファイルストア（Soft-Index File Store略してSIFS）は、ファイルベースのストアの1つで、セグメント化、ノンブロッキング、追加のスレッドを必要としないなど、数多くの改良が施されています。さらに、もしあなたが幸運にも永続メモリーのハードウェアを持っているなら、このファイルストアは非常に素晴らしい link:https://github.com/jhalliday/mashona[Mashonaライブラリ]を介してそれをサポートできます。将来的には、シングルファイルストアに代わって、このファイルストアをデフォルトのファイルストアにしたいと考えています。</seg>
+        <seg>タイムゾーン</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Server protocol management</seg>
+        <seg>BRT (GMT-3)</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>サーバーのプロトコル管理</seg>
+        <seg>ブラジル時間（グリニッジ標準時-3）</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>You can now enable/disable protocol endpoints at runtime or use https://infinispan.org/docs/stable/titles/server/server.html#endpoint_ipfilter[IP filtering] for fine-grained access control.</seg>
+        <seg>EDT (UTC-4)</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>稼働時にプロトコルのエンドポイントを有効/無効にしたり、 link:https://infinispan.org/docs/stable/titles/server/server.html#endpoint_ipfilter[IPフィルタリング] を使用してきめ細かなアクセスコントロールをできるようになりました。</seg>
+        <seg>米国東部標準時(夏時間)（協定世界時-4）</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>The console is now fully aware of the server authorization roles (if enabled) and many fixes are included.</seg>
+        <seg>BST (UTC+1)</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>コンソールは、サーバーの認証ロールを完全に認識するようになり（有効な場合）、多くの修正が含まれています。</seg>
+        <seg>英国(夏時間)（協定世界時+1）</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>The CLI is now available as https://github.com/infinispan/infinispan-quarkus/releases[native builds] for Linux and MacOS.</seg>
+        <seg>CEST (UTC+2)</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>このCLIは、LinuxおよびMacOSの link:https://github.com/infinispan/infinispan-quarkus/releases[ネイティブビルド]として提供されています。</seg>
+        <seg>中央ヨーロッパ時間(夏時間)（協定世界時+2）</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>You can now enable automatic Cross Site https://infinispan.org/docs/stable/titles/xsite/xsite.html#xsite_state_transfer-xsite[state transfer] for asynchronous backup strategy.</seg>
+        <seg>Cross Site Replication Improvements</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>非同期バックアップ戦略において、拠点横断の自動 link:https://infinispan.org/docs/stable/titles/xsite/xsite.html#xsite_state_transfer-xsite[状態移行]を有効にできるようになりました。</seg>
+        <seg>拠点横断レプリケーションの改善</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Spring</seg>
+        <seg>Infinispan introduced Cross Site Replication functionality in version 5.2 and Infinispan 7 extended it to support state transfer.  With an increase of popularity, Infinispan 11 brings two major improvements to Cross Site Replication.  Let's take a look at them.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>Spring</seg>
+        <seg>Infinispanはバージョン 5.2 で拠点横断レプリケーション機能を導入し、Infinispan 7 では状態転送をサポートするように拡張しました。人気の高まりに伴い、Infinispan 11では、拠点横断レプリケーションに2つの大きな改善点がもたらされました。それらを見てみましょう。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Our Spring Cache and Spring Session integration now allows user keys and values to be stored in https://infinispan.org/docs/stable/titles/developing/developing.html#configuring_protobuf_encoding-data[Protostream] format.  However, full integration with the Infinispan Spring Boot Starter is landing in the next minor release. Stay tuned!</seg>
+        <seg>Infinispan uses JGroups' http://www.jgroups.org/manual4/index.html#Relay2Advanced[RELAY2] protocol to enable inter-site communication.  Each site has Site Masters: these are nodes with special roles, and are responsible for the communication between sites.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>Spring CacheとSpring Sessionの統合により、ユーザがキーとバリューを link:https://infinispan.org/docs/stable/titles/developing/developing.html#configuring_protobuf_encoding-data[Protostream]形式で保存できるようになりました。しかし、Infinispan Spring Boot Starterとの完全な統合は、次のマイナーリリースで着地します。ご期待ください。</seg>
+        <seg>InfinispanはJGroupsの link:http://www.jgroups.org/manual4/index.html#Relay2Advanced[RELAY2] プロトコルを使用して、拠点間通信を可能にします。各拠点には拠点マスターがいます。これらは特別な役割を持つノードで、拠点間の通信を担当します。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Marshalling/ProtoBuf</seg>
+        <seg>RELAY2 can use more than one Site Master per site allowing load balancing of the inter-site requests.  The new algorithm is now able to take advantage of multiple Site Masters.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>マーシャリング/ProtoBuf</seg>
+        <seg>RELAY2は、拠点間リクエストのロードバランシングを可能にするために、拠点ごとに複数の拠点マスターを使用できます。新しいアルゴリズムでは、複数の拠点マスターを利用できるようになりました。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>The latest ProtoStream release 4.4.0.Beta3 includes support for marshalling arrays and collections, built-in support for several community requested types (UUID, BigDEcimal,...), a new method in ProtobufUtil for computing message size (without actually encoding the message) and a lot of bug fixes. This release also provides it’s own protobuf encoder and removes the dependency on protobuf-java artifact which was previously used for encoding the stream (without being exposed by the API).</seg>
+        <seg>The attribute `max_site_masters` configures the number of Site Masters, and it defaults to 1.  To take advantage of the new algorithm, increase the number of Site Masters in RELAY2 configuration by changing `max_site_masters` to a value higher than 1.  A number greater than the number of nodes can be used, and it enables the Site Master role in all nodes.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>最新の ProtoStream リリース 4.4.0.Beta3 には、配列とコレクションのマーシャリングのサポート、コミュニティから要求されたいくつかの型（UUID、BigDEcimal、...）の組込みサポート、（実際にメッセージをエンコードすることなく）メッセージサイズを計算する ProtobufUtil の新しいメソッド、および多くのバグ修正が含まれています。このリリースでは、独自の protobuf エンコーダが提供され、以前はストリームのエンコードに使用されていた protobuf-java アーティファクトへの依存がなくなりました (API では公開されていません)。</seg>
+        <seg>属性 `max_site_masters` は拠点マスターの数を設定し、デフォルトは 1 です。 新しいアルゴリズムを利用するには、 `max_site_masters` を 1 よりも高い値に変更することで、RELAY2 構成の拠点マスターの数を増やしてください。 ノードの数よりも大きい数を使用することができ、すべてのノードで拠点マスターの役割を有効にします。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>We now provide an image containing a natively compiled version of the Infinispan CLI at quay.io/infinispan/cli</seg>
+        <seg>More information about RELAY2 is available in http://www.jgroups.org/manual4/index.html#RELAY2[JGroups' Manual].</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>ネイティブにコンパイルされたInfinispan CLIのイメージをquay.io/infinispan/cliで提供しています。</seg>
+        <seg>RELAY2についての詳細は、 link:http://www.jgroups.org/manual4/index.html#RELAY2[JGroupsのマニュアル] に掲載されています。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>In addition to numerous fixes, the operator has added many new features. Most notably:</seg>
+        <seg>Infinispan is able to detect conflicts in asynchronous mode by taking advantage of vector clocks.  A conflict happens when 2 or more sites update the same key at the same time.  Let's look at an example between 2 sites (_LON_ and _NYC_):</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>数々の修正に加えて、オペレーターは多くの新機能を追加しました。最も注目すべきは</seg>
+        <seg>Infinispanは、ベクトルクロックを利用して非同期モードで衝突を検出できます。衝突は、2つ以上の拠点が同時に同じキーを更新した場合に発生します。2つの拠点（_LON_ と _NYC_ ）間の例を見てみましょう。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Batch CR</seg>
+        <seg>_LON_ puts `k1=2`, with vector clock `1,0`, and replicates it to _NYC_.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>バッチCR</seg>
+        <seg>_LON_ は 、 `k1=2` , ベクトルクロック `1,0` , を入れて、 _NYC_ に複製します。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Custom library support</seg>
+        <seg>_NYC_ puts `k1=3`, with vector clock `1,1`, and replicates it to _LON_.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>カスタムライブラリ対応</seg>
+        <seg>_NYC_ は 、 `k1=3` , ベクトルクロック `1,1` , を入れて、それを _LON_ に複製します。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Custom labels on Resources created by Operator</seg>
+        <seg>However if _LON_ puts `k1=5` (with vector `2,1`), and _NYC_ puts `k1=8` in _NYC_ (with vector clock `1,2`)  at the same time, Infinispan detects the conflict since none of the vector clocks are greater than the other.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>オペレータが作成したリソースのカスタムラベル</seg>
+        <seg>しかし、 _LON_ が `k1=5` (ベクトル `2,1` ) を、 _NYC_ が `k1=8` を _NYC_ (ベクトルクロック `1,2` ) に同時に置くと、いずれのベクトルクロックも他よりも大きいため、Infinispan は競合を検出します。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Disable Authentication Option</seg>
+        <seg>Infinispan resolves the conflicts by comparing using the site names in lexicographical order.  The site's name lower in lexicographical order takes priority.  In the example above, both _LON_ and _NYC_ end up with `k1=5` since _LON_ &lt; _NYC_.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>認証オプションの無効化</seg>
+        <seg>Infinispan は、辞書順に拠点名を使用して比較することで競合を解決します。辞書順で下位のサイト名が優先されます。上の例では、 _LON_ &lt; _NYC_ のため、 _LON_ と _NYC_ の両方が `k1=5` で終わります _。_</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Decouple user and operator endpoint authentication</seg>
+        <seg>You can choose the priority by prepending a number to the site name.  For example, if you want updates from _NYC_ to take priority over _LON_ updates, you can prepend a number to the site name, example: _1NYC_, _2LON_ and so on.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>ユーザとオペレータのエンドポイント認証を分離</seg>
+        <seg>拠点名の前に数字を付けることで優先順位を選択できます。例えば、 _NYC_ からの更新を _LON_の 更新よりも優先したい場合は、サイト名に数字を前置します。例: _1NYC_ と _2LON_</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>We’ve made a lot of updates to our documentation this release, with lots more task-oriented content for new features and capabilities. Server credential stores, refactored authorization (RBAC) configuration, Operator Batch CR, Backup and Restore CRs, custom code deployments, automatic cross-site state transfer, querying values, configuring Protobuf annotations for marshalling… Hopefully you’ll find all the answers you need for using Infinispan 12.1.</seg>
+        <seg>For more information check the https://infinispan.org/docs/dev/titles/xsite/xsite.html#conflicting_entries-xsite[Infinispan Documentation].</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>今回のリリースでは、ドキュメントの更新が多く行われ、新機能や性能に関する職務指向のコンテンツがたくさん追加されました。サーバ・クレデンシャル・ストア、リファクタリングされた認証(RBAC)の構成、オペレータ・バッチCR、バックアップ・リストアCR、カスタム・コード・デプロイメント、自動拠点横断状態転送、値を照会、マーシャリングのためのProtobufアノテーションの構成...Infinispan 12.1を使用するために必要なすべての答えが見つかることを願っています。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>One of the big highlights for docs in this release are the new tabbed configuration snippets we’re going to start adding. Right now you can find an example of tabbed configuration in the REST API docs here: https://infinispan.org/docs/dev/titles/rest/rest.html#cache_configuration</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>今回のリリースにおけるdocsの大きな特徴の一つは、タブ付き設定のスニペットを新たに追加することです。現在、REST APIのドキュメントにタブ付き設定の例があります https://infinispan.org/docs/dev/titles/rest/rest.html#cache_configuration</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>We’ve also done a lot of housekeeping in this release to make sure configuration examples are up to date and valid. In the next release you can expect to see more improvements there as well as a new title to improve our documentation around encoding and how Infinispan uses Protobuf.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>また、このリリースでは、設定例が最新で有効であることを確認するために、多くの維持管理を行いました。次のリリースでは、エンコーディングや Infinispan がどのように Protobuf を使用するかについてのドキュメントを改善するための新しいタイトルと同様に、さらなる改善を期待できます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>As always, thanks for reading and get in touch if you have comments, feedback, or suggestions on our documentation.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>いつもお読みいただきありがとうございます。また、私たちのドキュメントに関するコメント、フィードバック、提案などがありましたら、ご連絡ください。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>You can look at the detailed https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;version=12353337E[release notes] to see what has changed since CR1.  If you are upgrading from a previous version of Infinispan, please checkout our https://infinispan.org/docs/stable/titles/upgrading/upgrading.html[Upgrading guide].</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>CR1からの変更点については、詳細な link:https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;amp;version=12353337E[リリースノート]をご覧ください。旧バージョンのInfinispanからアップグレードする場合は、 link:https://infinispan.org/docs/stable/titles/upgrading/upgrading.html[アップグレード・ガイド]をご確認ください。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Our next release, 13.0, should happen during the summer, and will hopefully introduce a new API which will make using Infinispan much easier, as well as a number of other improvements across the board. As usual, look out for blog postings about upcoming highlights. If you'd like to contribute, just get in touch.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>次のリリースである13.0は夏頃に予定されており、Infinispanの使用をより簡単にする新しいAPIを導入するほか、全体的に多くの改良が加えられることを期待しています。いつものように、今後のハイライトについてのブログ投稿をお楽しみに。ご協力いただける方は、ぜひご連絡ください。</seg>
+        <seg>詳細は link:https://infinispan.org/docs/dev/titles/xsite/xsite.html#conflicting_entries-xsite[Infinispanのドキュメント] をご覧ください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2387,122 +2761,210 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>One of the key aspects of our new server architecture is the management API exposed through the single port.</seg>
+        <seg>Non Blocking Journey</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>私たちの新しいサーバーアーキテクチャの重要な側面の1つは、単一のポートを通じて公開される管理APIです。</seg>
+        <seg>ノンブロッキングの旅</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>While I'm sure there will be those of you who like to write scripts with plenty of `curl/wget` magic, and those who prefer the comfort of our new web console, the Infinispan CLI offers a powerful tool which combines the power of the former with the usability of the latter.</seg>
+        <seg>As many you are probably aware recent trends have shown that making applications non blocking provides quite a few benefits allowing for greater scalability with less resources. Infinispan has been written and rewriting parts to take advantage of this as we can for both embedded and server use cases.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>`curl/wget` マジックをたくさん使ってスクリプトを書くのが好きな人と、新しいウェブコンソールの快適さを好む人がいると思いますが、Infinispan CLIは前者の力と後者の使いやすさを兼ね備えた強力なツールを提供しています。</seg>
+        <seg>ご存知の方も多いと思いますが、最近の傾向として、アプリケーションをノンブロッキングにすることで、より少ないリソースでより大きな拡張性が得られることがわかってきました。Infinispan は、組み込みとサーバーの両方の使用例でこの利点を活用できるように書き換えられています。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>During the Infinispan 11 development cycle, the CLI has received numerous enhancements. Let's look at some of them !</seg>
+        <seg>The Infinispan Server has always utilized netty, however we may not have been the best about ensuring we didn't block the event loop.  The HotRod Client in 9.2.0 also utilizes netty to provide for non blocking operations.  The internal embedded interceptors were rewritten in 9.0.0 to provide for non blocking support for internal cache operations, which include put/get.  Cache store operations in 10.0.0 were offloaded to a blocking thread pool to provide non blocking support.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>Infinispan 11 の開発サイクルの間、CLI は多くの機能強化を受けました。そのいくつかを見てみましょう</seg>
+        <seg>Infinispanサーバは常にnettyを利用してきましたが、イベントループをブロックしないようにすることについてはベストではなかったかもしれません。9.2.0のHotRodクライアントもnettyを利用してノンブロッキング操作を提供しています。内部に埋め込まれたインターセプターは9.0.0で書き換えられ、put/getを含む内部キャッシュ操作のノンブロッキングサポートを提供しています。10.0.0 のキャッシュストア操作は、ノンブロッキングサポートを提供するために、ブロッキングスレッドプールに受けわたされました。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>User management</seg>
+        <seg>With the newest release we have rewritten lots of the internals of Infinispan to take advantage of non blocking as much as possible.  The amount of changes is quite large and a bit hard to describe them all in this blog post.  The various JIRA can be seen from https://issues.redhat.com/browse/ISPN-10309, which isn't even complete yet despite how many different changes we have done.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>ユーザー管理</seg>
+        <seg>最新のリリースでは、可能な限りノンブロッキングを活用するために、Infinispan の内部を多く書き換えました。変更点の量は非常に多く、このブログ記事ですべてを説明するのは少し難しいです。様々な JIRA は https://issues.redhat.com/browse/ISPN-10309 から見ることができますが、これはどれだけ多くの変更を行ったにもかかわらず、まだ完成していません。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>When using the built-in properties-based security realm, you had to use the `user-tool` script to manage users, passwords and groups. That functionality has now been built into the CLI:</seg>
+        <seg>The persistence SPI was completely rewritten in 11 with non blocking in mind as well and this will be covered in a future post as it has much more detailing it.  For now you can rest assure that all prior stores will still work, however they may have or can be optimized to take into account non blocking support.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>ビルトインのプロパティベースのセキュリティ領域を使用する場合、ユーザ、パスワード、グループを管理するために `user-tool` スクリプトを使用しなければなりませんでした。その機能が CLI に組み込まれました。</seg>
+        <seg>永続性SPIは11でノンブロッキングを考慮して完全に書き直されました。これについては、より詳細な情報があるため、今後の記事で取り上げます。今のところ、以前のストアはすべて動作しますが、非ブロックサポートを考慮して最適化されている可能性がありますので、ご安心ください。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Remote logging configuration</seg>
+        <seg>Conversions</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>リモートロギング設定</seg>
+        <seg>改装</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>You can now modify the server logging configuration from the CLI.  For example, to enable TRACE logging for the `org.jgroups` category, use the following:</seg>
+        <seg>Pretty much every module in the Infinispan code base has been changed to support non blocking.  If code relies upon an API that is blocking that is known to be blocking, we offload those calls to a blocking thread pool to ensure we never block the non blocking thread.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>これで、CLIからサーバーのロギング設定を変更できるようになりました。たとえば、 `org.jgroups` カテゴリの TRACE ロギングを有効にするには、次のようにします。</seg>
+        <seg>Infinispan のコードベースのほとんどすべてのモジュールが、ノンブロッキングをサポートするように変更されました。コードがブロッキングされていることがわかっている API に依存している場合、ブロッキングされていないスレッドを決してブロッキングしないようにするために、ブロッキングスレッドプールにそれらの呼び出しを受け渡します。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>logging configuration changes are volatile, i.e. they will be lost when restarting a node.</seg>
+        <seg>Unfortunately some modules have not yet been updated and those are ones related to query.  Query is in the middle of a giant refactoring and doing so would have caused massive conflicts and thus has been delayed to Infinispan 12.  The server works around this by ensuring write operations performed upon a cache with query are always done in a blocking thread to ensure safety.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>ロギング設定の変更は揮発性で、ノードを再起動すると失われます。</seg>
+        <seg>残念ながら、まだアップデートされていないモジュールがあり、それは問い合わせに関するものです。問い合わせは大規模なリファクタリングの真っ最中であり、それを行うと大規模なコンフリクトが発生するため、Infinispan 12 に延期されました。サーバーはこの問題を回避するために、問い合わせ付きのキャッシュに対して行われる書き込み操作は、安全性を確保するために常にブロッキングスレッドで行われるようにしています。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Server report</seg>
+        <seg>Thread Pools</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>サーバーレポート</seg>
+        <seg>スレッドプール</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>To help with debugging issues, the server now implements an aggregate log which includes information such as a thread dump, memory configuration, open sockets/files, etc.</seg>
+        <seg>Infinispan utilizes various thread pools for handling of operations.  This table details how many thread pools each version of Infinispan can have.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>問題のデバッグを支援するために、サーバーはスレッドダンプ、メモリ設定、開いているソケットやファイルなどの情報を含む集約ログを実装しています。</seg>
+        <seg>Infinispan は、操作を処理するためにさまざまなスレッドプールを利用します。この表は、Infinispan の各バージョンが持てるスレッドプールの数を詳細に示しています。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>this feature currently only works on Linux/Unix systems.</seg>
+        <seg>Version</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>この機能は現在のところ、Linux/Unix システムでのみ動作します。</seg>
+        <seg>バージョン</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Real CLI mode</seg>
+        <seg>Embedded</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>リアルCLIモード</seg>
+        <seg>組み込み</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>It is now possible to invoke all CLI commands directly from the command-line, without having to resort to interactive mode or a batch. For example:</seg>
+        <seg>As you can see there is more than a 50 percent reduction of the number of thread pools in both embedded and server modes. This in turn has allowed for a reduction of the default number of threads as well as seen in the next table. Note that N is how many cores that are available to the JVM.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>インタラクティブモードやバッチに頼らずに、すべてのCLIコマンドをコマンドラインから直接呼び出すことができるようになりました。例えば、以下のようになります。</seg>
+        <seg>ご覧のように、組み込みモードとサーバモードの両方でスレッドプールの数が50%以上削減されています。これにより、次の表に示すように、デフォルトのスレッド数を削減することができました。Nは、JVMで利用可能なコア数であることに注意してください。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Native CLI</seg>
+        <seg>Maximum Default Thread Count</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>ネイティブCLI</seg>
+        <seg>最大デフォルトのスレッド数</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>The CLI can now be built as a native executable, courtesy of https://www.graalvm.org/[GraalVM]'s `native-image` tool. We will soon be shipping binaries/images of this, so look out for an announcement.</seg>
+        <seg>After this consolidation we have non blocking and blocking thread pools.  As you can see this allows us to reduce the maximum number of threads in embedded by about half and the server to a third of what it used to be before.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>CLIは、 link:https://www.graalvm.org/[GraalVM] の `native-image` ツールの提供により、ネイティブ実行ファイルとしてビルドできるようになりました。まもなく、このバイナリ/イメージを出荷する予定ですので、発表をお楽しみにお待ちください。</seg>
+        <seg>この統合の後、私たちはノンブロッキングとブロッキングのスレッドプールを持つようになりました。ご覧のように、これにより、組み込みの最大スレッド数を約半分に減らすことができ、サーバは以前の3分の1になりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The server has an additional thread pool for the netty event loop and unfortunately we cannot consolidate this thread pool, but it is planned for Infinispan 12, which will get us to the same number of threads and thread pools for both embedded and server modes.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>サーバーにはnettyイベントループ用の追加スレッドプールがあり、残念ながらこのスレッドプールを統合することはできませんが、Infinispan 12で計画されており、組み込みモードとサーバーモードの両方で同じ数のスレッドとスレッドプールを利用できるようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Note that this doesn't talk about the JGroups thread pool as this is unchanged and is the same.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>JGroups スレッドプールは変更されておらず同じなので、これは JGroups スレッドプールについての話ではないことに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>BlockHound</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>BlockHound</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If you are familiar with making code non blocking it can be a very difficult task as even the most mundane call can be hiding something blocking, even if it is very brief.  We could write something to do detect such calls, but there is already an open source tool that does exactly what we needed.  This tool is BlockHound, which can detect blocking calls at runtime.  More information about it can be found at https://github.com/reactor/BlockHound.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>コードをノンブロッキングにすることに慣れていると、非常に難しい作業になります。というのも、ごく普通の呼び出しであっても、たとえそれが非常に短いものであっても、ブロッキングなものを隠してしまうことがあるからです。そのような呼び出しを検出するために何かを書くことができますが、私たちが必要としていたことを正確に行うオープンソースのツールがすでに存在します。このツールはBlockHoundで、実行時にブロッキングの呼び出しを検出することができます。このツールについての詳細は https://github.com/reactor/BlockHound を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Infinispan takes advantage of blockhound in that we configure it at the module level.  This allows the end user to even add block hound with Infinispan in embedded mode and it should work to test out to ensure that interactions with Infinispan are not blocking when needed.  Note that we do not yet support block hound for the client, despite many methods are not blocking today.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispanでは、モジュール・レベルで設定するという点で、BlockHound を活用しています。 これにより、エンドユーザは埋め込みモードのInfinispanでもブロックハウンドを追加することができ、必要なときにInfinispanとのやりとりがブロックされていないことを確認するテストを行えます。 今日、多くのメソッドがブロックされていないにもかかわらず、私たちはまだクライアントのBlockHoundをサポートしていないことに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Infinispan 12 should bring the entire non blocking saga to its hopfully final completion.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>Infinispan 12は、ノンブロッキングの物語全体をその希望に満ちた最終的な完成に持ってくるはずです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The aforementioned query modules need to be revamped</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>前述の問い合わせモジュールを改良する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Existing supported cache stores need to be rewritten to directly support non blocking</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>既存のサポートされているキャッシュストアは、ノンブロッキングを直接サポートするように書き換える必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Cache retrieval needs to be offloaded to a blocking thread</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>キャッシュの検索はブロッキングスレッドに受け渡する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Combine server event loop with non blocking thread pool</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>サーバイベントループとノンブロッキングスレッドプールの組み合わせ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Also if time permits the Infinispan Client would be ensured to be fully non blocking and integrate with BlockHound to ensure client apps behave properly.</seg>
+      </tuv>
+      <tuv xml:lang="ja_JP">
+        <seg>また、時間が許せば、Infinispanクライアントは完全にノンブロッキングであることが保証され、クライアントアプリが適切に動作することを保証するためにBlockHoundと統合されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2659,576 +3121,114 @@ tags: [ "release" ]
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>layout: blog
-title: Infinispan 11.0.0.CR1
-permalink: /blog/:year/:month/:day/infinispan-11
-date: '2020-05-25T12:00:00.000-00:00'
-author: ttarrant
-tags: [ "release" ]
----
-</seg>
+        <seg>One of the key aspects of our new server architecture is the management API exposed through the single port.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>layout: blog
-title: Infinispan 11.0.0.CR1
-permalink: /blog/:year/:month/:day/infinispan-11
-date: '2020-05-25T12:00:00.000-00:00'
-author: ttarrant
-tags: [ "release" ]
----
-</seg>
+        <seg>私たちの新しいサーバーアーキテクチャの重要な側面の1つは、単一のポートを通じて公開される管理APIです。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Infinispan 11.0.0.CR1</seg>
+        <seg>While I'm sure there will be those of you who like to write scripts with plenty of `curl/wget` magic, and those who prefer the comfort of our new web console, the Infinispan CLI offers a powerful tool which combines the power of the former with the usability of the latter.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>Infinispan 11.0.0.CR1</seg>
+        <seg>`curl/wget` マジックをたくさん使ってスクリプトを書くのが好きな人と、新しいウェブコンソールの快適さを好む人がいると思いますが、Infinispan CLIは前者の力と後者の使いやすさを兼ね備えた強力なツールを提供しています。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>we've just released 11.0.0.CR1 which comes loaded with quite a few features and improvements.</seg>
+        <seg>During the Infinispan 11 development cycle, the CLI has received numerous enhancements. Let's look at some of them !</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>11.0.0.CR1をリリースしたばかりですが、これにはいくつかの機能や改善点が搭載されています。</seg>
+        <seg>Infinispan 11 の開発サイクルの間、CLI は多くの機能強化を受けました。そのいくつかを見てみましょう</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Cross-Site Replication Improvements</seg>
+        <seg>User management</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>拠点横断レプリケーションの改善</seg>
+        <seg>ユーザー管理</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>The cross-site replication feature received two major improvements:</seg>
+        <seg>When using the built-in properties-based security realm, you had to use the `user-tool` script to manage users, passwords and groups. That functionality has now been built into the CLI:</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>拠点横断レプリケーション機能には、2つの大きな改善点がありました。</seg>
+        <seg>ビルトインのプロパティベースのセキュリティ領域を使用する場合、ユーザ、パスワード、グループを管理するために `user-tool` スクリプトを使用しなければなりませんでした。その機能が CLI に組み込まれました。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Support for multiple site masters</seg>
+        <seg>Remote logging configuration</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>複数の拠点マスターをサポート</seg>
+        <seg>リモートロギング設定</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>The new algorithm is able to take advantage of multiple site masters, distributing load between them. If your environment is capable, increase the number of site masters in RELAY2 configuration:</seg>
+        <seg>You can now modify the server logging configuration from the CLI.  For example, to enable TRACE logging for the `org.jgroups` category, use the following:</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>新しいアルゴリズムでは、複数の拠点マスターを活用し、それらの間で負荷を分散できます。環境が可能であれば、RELAY2の構成で拠点マスターの数を増やしてください。</seg>
+        <seg>これで、CLIからサーバーのロギング設定を変更できるようになりました。たとえば、 `org.jgroups` カテゴリの TRACE ロギングを有効にするには、次のようにします。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Taking advantage of vector clocks, in asynchronous mode, Infinispan is able to detect conflicts.  A conflict happens when 2 or more sites update the same key at the same time.  Conflicts are resolved based on the site's names. Updates from the site lexicographically lower, take priority, in case of conflicts.  As an example, if you have 3 sites, LON, NYC and SFO, conflicts between LON and NYC discards updates from NYC and keeps the updates from LON.  You can choose the priority by prepending a number to the site name. For example, if you want updates from NYC to take priority, you can set the site name to “1-NYC”.</seg>
+        <seg>logging configuration changes are volatile, i.e. they will be lost when restarting a node.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>ベクトルクロックを利用して、非同期モードでは、Infinispanは衝突を検出できます。衝突は、2つ以上の拠点が同時に同じキーを更新した場合に発生します。競合は拠点名に基づいて解決されます。競合が発生した場合は、辞書的に下位のサイトからの更新が優先されます。例えば、LON（ロンドン）, NYC（ニューヨーク）, SFO（サンフランシスコ）の3つの拠点がある場合、LONとNYCが競合した場合、NYCからの更新は破棄され、LONからの更新は保持されます。拠点名の前に数字を付加することで、優先度を選択できます。例えば、NYCからの更新を優先したい場合は、拠点名を「1-NYC」に設定します。</seg>
+        <seg>ロギング設定の変更は揮発性で、ノードを再起動すると失われます。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>In a future update, Infinispan will allow you to set a custom conflict resolution algorithm.</seg>
+        <seg>To help with debugging issues, the server now implements an aggregate log which includes information such as a thread dump, memory configuration, open sockets/files, etc.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>将来のアップデートでは、Infinispanでカスタムの競合解決アルゴリズムを設定できるようになります。</seg>
+        <seg>問題のデバッグを支援するために、サーバーはスレッドダンプ、メモリ設定、開いているソケットやファイルなどの情報を含む集約ログを実装しています。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>All thread pools collapsed into two pools: blocking and non-blocking</seg>
+        <seg>this feature currently only works on Linux/Unix systems.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>すべてのスレッドプールは、ブロッキングとノンブロッキングの2つのプールと化しました。</seg>
+        <seg>この機能は現在のところ、Linux/Unix システムでのみ動作します。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>A new non-blocking Store SPI</seg>
+        <seg>Real CLI mode</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>新しいノンブロッキングストアSPI</seg>
+        <seg>リアルCLIモード</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>More accurate segment rebalancing</seg>
+        <seg>It is now possible to invoke all CLI commands directly from the command-line, without having to resort to interactive mode or a batch. For example:</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>より正確なセグメントリバランス</seg>
+        <seg>インタラクティブモードやバッチに頼らずに、すべてのCLIコマンドをコマンドラインから直接呼び出すことができるようになりました。例えば、以下のようになります。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Scaling without state-transfer (experimental)</seg>
+        <seg>Native CLI</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>状態遷移を伴わないスケーリング(実験)</seg>
+        <seg>ネイティブCLI</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>SearchManager, CacheQuery are deprecated. Users are encouraged to migrate to Ickle String queries obtained from Search.getQueryFactory</seg>
+        <seg>The CLI can now be built as a native executable, courtesy of https://www.graalvm.org/[GraalVM]'s `native-image` tool. We will soon be shipping binaries/images of this, so look out for an announcement.</seg>
       </tuv>
       <tuv xml:lang="ja_JP">
-        <seg>SearchManager、CacheQuery は非推奨です。ユーザは、Search.getQueryFactory から取得した Ickle String 問い合せに移行することをお勧めします。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Server Security</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>サーバーのセキュリティ</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>The server is now secure by default</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>サーバがデフォルトで安全になりました</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>New encrypted properties realm</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>新しい暗号化されたプロパティのレルム</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Simplified authentication and authorization configuration to be as automatic as possible</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>認証と認可の設定を簡素化し、可能な限り自動化を実現</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Datasources</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>データソース</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Runtime logging configuration</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>ランタイムロギングの設定</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>User Tool merged into CLI</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>ユーザツールをCLIに統合</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Non-interactive usage</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>非対話式な使用法</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Lots of UX improvements</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>多くのUX改善</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Cache CR</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>キャッシュ CR</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Container images</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>コンテナイメージ</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Images based upon ubi-minimal:8.2</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>ubi-minimal:8.2に基づくイメージ</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Native generation of config files in all images</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>すべてのイメージで設定ファイルをネイティブに生成</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Native server image available at `infinispan/server-native` (Experimental)</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>ネイティブサーバイメージは `infinispan/server-native` で利用可能 (実験)</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Off Heap enhancements</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>オフヒープの強化</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>The off heap implementation in Infinispan has become much more widely used since its introduction.  There have been some issues and improvements identified to get this storage type more in line with its heap counterpart.  For those of you that are unware the off-heap setting is actually only "off" the JVM heap and still resides in the native memory of the application.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>Infinispan のオフヒープ実装は、その導入以来、より広く使用されるようになりました。このストレージタイプをヒープ対応のストレージタイプに近づけるために、いくつかの問題点と改善点が確認されています。ご存知ない方のために、オフヒープ設定は実際にはJVMヒープを「オフ」にしているだけで、アプリケーションのネイティブメモリに存在しています。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>The best part of all the below changes is the user does not need to change anything, other than configuring Off Heap storage.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>以下の変更点の中で最も優れている点は、オフヒープストレージを設定する以外にユーザーが何も変更する必要がないことです。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Resizing Off Heap Container</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>オフヒープコンテナのサイズ変更</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>For those of you that have used/configured off heap storage before you may have noticed that there was a configuration option named address count.  This setting allowed you to configure how many address pointers the container had.  You can think of this as essentially how many buckets you have in a HashMap.  Unfortunately the number of pointers was fixed and therefore the user would have to know how many elements they expected to have.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>以前にオフヒープストレージを使用/設定したことがある人は、アドレスカウントという設定オプションがあることに気づいたかもしれません。この設定では、コンテナが持つアドレスポインタの数を設定することができます。これは、基本的には HashMap にあるバケットの数と考えることができます。残念ながら、ポインターの数は固定されていたので、ユーザーはどれだけの要素を持つと予想されるかを知る必要がありました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>This setting also had another problem.  If the user required a larger size of elements this would increase startup time as the container can be iterated upon multiple times when it is empty.  Iterating over a container of one million empty pointers would be much slower than iterating over one of only 1024 for example.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>この設定にも問題がありました。ユーザーがより大きなサイズの要素を必要とする場合、コンテナが空になったときに何度も反復処理を行うことができるため、起動時間が長くなってしまいます。例えば、100万個の空のポインタを持つコンテナを反復処理するのは、1024個のコンテナを反復処理するよりもはるかに遅くなります。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>I am glad to say as of Infinispan 10.0.0.Final this setting and the performance of iteration have been greatly improved.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>嬉しいことに、Infinispan 10.0.0.Finalでは、この設定とイテレーションのパフォーマンスが大幅に改善されました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>The address count variable is now ignored and instead the off heap based container will start at smaller amount of "buckets" in the range of 128 or 256.  We then apply a load factor of .75, which means we will automatically increase the size of the underlying "buckets" once we have inserted a number of entries being 75% or larger than the current "bucket" size.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>アドレスカウント変数は無視され、代わりにオフヒープベースのコンテナは128または256の範囲の小さい量の「バケット」から始まります。そして、負荷率を0.75に設定します。これは、現在の「バケット」サイズよりも75%以上大きいエントリを挿入すると、自動的に基礎となる「バケット」のサイズを増加させることを意味します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>The resize operation will grow to have double the amount of "buckets" it had prior.  The resize operation will be performed concurrently with other operations, providing minimal blocking as we have locks equal to the number of CPUs times two.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>リサイズ操作は、以前の倍の量の「バケット」を持つようになります。リサイズ操作は他の操作と並行して実行され、CPU数の2倍に相当するロックがあるため、最小限のブロッキングを提供します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>This will allow for a cache with off heap to be started significantly faster and relieves some configuration options that were unneeded.  Note that the map, just like a java.util.HashMap, will not decrease the number of "buckets" once it grows to a given size.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>これにより、オフヒープのキャッシュを大幅に高速に起動することが可能になり、不要だったいくつかの設定オプションが解放されます。このMapは、java.util.HashMapのように、マップが一旦所定のサイズに成長すると「バケット」の数は減らないことに注意してください。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Iteration changes</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>イテレーションの変更</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>I mentioned that iteration was slower during startup of larger number of "buckets".  This was due to it possibly having a large number of them, however it was also plauged by an ineffecient way of iterating over them.  In addition to rewriting the resize operation, we have also optimized the memory layout so that "buckets" can be iterated sequentially which provides more mechanical sympathy.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>私は、より大きな数の「バケット」の起動時に反復処理が遅くなることを述べました。これは、バケットの数が多いことが原因である可能性がありますが、バケットの反復処理の不便さにも悩まされていました。リサイズ操作を書き換えることに加えて、「バケット」を順次反復処理できるようにメモリレイアウトを最適化し、より機械的な共感を得られるようにしました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Hash changes</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>ハッシュの変更</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>This one is rather short and sweet, but the old hash algorithm we used would cause too many collisions for objects that had hash functions that returned values in a similar range, such as java.lang.Integer and java.util.String (with shared startubg characters).</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>これはかなり要領を得たものですが、私たちが使っていた古いハッシュアルゴリズムでは、似たような範囲の値を返すハッシュ関数を持つオブジェクトの衝突が多すぎました。これは、java.lang.Integerやjava.util.String（共有された開始文字を持つ）のような、類似した範囲の値を返します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Therefore it has been changed to provide a bit better spreading. This is part of ISPN 10.0.0.Final.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>そのため、少しだけ広がりが良くなるように変更されています。これは ISPN 10.0.0.Final の一部です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Expiration bugs</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>期限切れのバグ</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Unfortunately off heap had a few issues with expiration.  It didn't support max idle and expiration metadata was not properly transferred to new nodes during state transfer.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>残念ながらオフヒープは 期限切れの機能にいくつかの問題を抱えていました。それは最大アイドルをサポートしておらず、状態転送中に新しいノードへの期限切れメタデータの転送が適切に行われませんでした。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>In addition to max idle algorithm being rewritten, Off heap now properly supports max idle as of 10.1.4.Final and 11.0.0.Final.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>max idleアルゴリズムの書き換えに加え、10.1.4.Finalおよび11.0.0.Finalでは、オフヒープが正しくmax idleをサポートするようになりました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Off heap metadata transferred to new nodes has been fixed in 10.1.8.Final and 11.0.0.Final.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>新しいノードに転送されるオフヒープメタデータが 10.1.8.Final および 11.0.0.Final で修正されました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Cross Site Replication Improvements</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>拠点横断レプリケーションの改善</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Infinispan introduced Cross Site Replication functionality in version 5.2 and Infinispan 7 extended it to support state transfer.  With an increase of popularity, Infinispan 11 brings two major improvements to Cross Site Replication.  Let's take a look at them.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>Infinispanはバージョン 5.2 で拠点横断レプリケーション機能を導入し、Infinispan 7 では状態転送をサポートするように拡張しました。人気の高まりに伴い、Infinispan 11では、拠点横断レプリケーションに2つの大きな改善点がもたらされました。それらを見てみましょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Infinispan uses JGroups' http://www.jgroups.org/manual4/index.html#Relay2Advanced[RELAY2] protocol to enable inter-site communication.  Each site has Site Masters: these are nodes with special roles, and are responsible for the communication between sites.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>InfinispanはJGroupsの link:http://www.jgroups.org/manual4/index.html#Relay2Advanced[RELAY2] プロトコルを使用して、拠点間通信を可能にします。各拠点には拠点マスターがいます。これらは特別な役割を持つノードで、拠点間の通信を担当します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>RELAY2 can use more than one Site Master per site allowing load balancing of the inter-site requests.  The new algorithm is now able to take advantage of multiple Site Masters.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>RELAY2は、拠点間リクエストのロードバランシングを可能にするために、拠点ごとに複数の拠点マスターを使用できます。新しいアルゴリズムでは、複数の拠点マスターを利用できるようになりました。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>The attribute `max_site_masters` configures the number of Site Masters, and it defaults to 1.  To take advantage of the new algorithm, increase the number of Site Masters in RELAY2 configuration by changing `max_site_masters` to a value higher than 1.  A number greater than the number of nodes can be used, and it enables the Site Master role in all nodes.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>属性 `max_site_masters` は拠点マスターの数を設定し、デフォルトは 1 です。 新しいアルゴリズムを利用するには、 `max_site_masters` を 1 よりも高い値に変更することで、RELAY2 構成の拠点マスターの数を増やしてください。 ノードの数よりも大きい数を使用することができ、すべてのノードで拠点マスターの役割を有効にします。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>More information about RELAY2 is available in http://www.jgroups.org/manual4/index.html#RELAY2[JGroups' Manual].</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>RELAY2についての詳細は、 link:http://www.jgroups.org/manual4/index.html#RELAY2[JGroupsのマニュアル] に掲載されています。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Infinispan is able to detect conflicts in asynchronous mode by taking advantage of vector clocks.  A conflict happens when 2 or more sites update the same key at the same time.  Let's look at an example between 2 sites (_LON_ and _NYC_):</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>Infinispanは、ベクトルクロックを利用して非同期モードで衝突を検出できます。衝突は、2つ以上の拠点が同時に同じキーを更新した場合に発生します。2つの拠点（_LON_ と _NYC_ ）間の例を見てみましょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>_LON_ puts `k1=2`, with vector clock `1,0`, and replicates it to _NYC_.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>_LON_ は 、 `k1=2` , ベクトルクロック `1,0` , を入れて、 _NYC_ に複製します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>_NYC_ puts `k1=3`, with vector clock `1,1`, and replicates it to _LON_.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>_NYC_ は 、 `k1=3` , ベクトルクロック `1,1` , を入れて、それを _LON_ に複製します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>However if _LON_ puts `k1=5` (with vector `2,1`), and _NYC_ puts `k1=8` in _NYC_ (with vector clock `1,2`)  at the same time, Infinispan detects the conflict since none of the vector clocks are greater than the other.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>しかし、 _LON_ が `k1=5` (ベクトル `2,1` ) を、 _NYC_ が `k1=8` を _NYC_ (ベクトルクロック `1,2` ) に同時に置くと、いずれのベクトルクロックも他よりも大きいため、Infinispan は競合を検出します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Infinispan resolves the conflicts by comparing using the site names in lexicographical order.  The site's name lower in lexicographical order takes priority.  In the example above, both _LON_ and _NYC_ end up with `k1=5` since _LON_ &lt; _NYC_.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>Infinispan は、辞書順に拠点名を使用して比較することで競合を解決します。辞書順で下位のサイト名が優先されます。上の例では、 _LON_ &lt; _NYC_ のため、 _LON_ と _NYC_ の両方が `k1=5` で終わります _。_</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>You can choose the priority by prepending a number to the site name.  For example, if you want updates from _NYC_ to take priority over _LON_ updates, you can prepend a number to the site name, example: _1NYC_, _2LON_ and so on.</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>拠点名の前に数字を付けることで優先順位を選択できます。例えば、 _NYC_ からの更新を _LON_の 更新よりも優先したい場合は、サイト名に数字を前置します。例: _1NYC_ と _2LON_</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>For more information check the https://infinispan.org/docs/dev/titles/xsite/xsite.html#conflicting_entries-xsite[Infinispan Documentation].</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>詳細は link:https://infinispan.org/docs/dev/titles/xsite/xsite.html#conflicting_entries-xsite[Infinispanのドキュメント] をご覧ください。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Infinispan clusters running in different geographical locations can form global clusters to back up your data across sites. If sites go offline clients can immediately switch to an available cluster, making sure data center faults do not cause service interruptions.
-</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>地理的に異なる場所で動作するInfinispanクラスタは、グローバルクラスタを形成し、拠点間でデータをバックアップできます。拠点がオフラインになっても、クライアントはすぐに利用可能なクラスタに切り替えることができるため、データセンタの障害によるサービスの中断を防げます。
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>When using the Infinispan Operator with Kubernetes environments such as Red Hat OpenShift,  cross-site replication capabilities make your data ready for hybrid and multi cloud deployments.
-</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>Infinispan OperatorをRed Hat OpenShiftなどのKubernetes環境で使用する場合、拠点横断レプリケーション機能により、データをハイブリッドやマルチクラウドの展開に対応できます。
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Infinispan also guarantees data consistency when using cross-site replication, even in cases where clients make concurrent writes at different locations that use asynchronous replication. So your data is always there and always accurate, no matter where you’re running.
-</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>また、Infinispanは拠点横断レプリケーションを使用する際、非同期レプリケーションを使用する異なる場所でクライアントが同時に書き込みを行う場合でも、データの一貫性を保証します。そのため、どこで実行していても、データは常にそこにあり、常に正確です。
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Infinispan turbocharges applications by storing data closer to processing logic, which reduces latency and increases throughput. 
-</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>Infinispanは、データを処理ロジックの近くに格納し、レイテンシーを減らし、スループットを向上させることで、アプリケーションを加速します。
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Available as a Java library, you simply add Infinispan to your application dependencies and then you’re ready to store data in the same memory space as the executing code.
-</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>Javaライブラリとして提供されており、アプリケーションにInfinispanを追加するだけで、実行コードと同じメモリ空間にデータを格納できます。
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>If you want to provision a data layer that is independent of your applications, you can use Infinispan Server for remote access to data with in-memory performance. Clients are a single network hop away from data through consistent hashing techniques and can make requests over HTTP or with a custom binary TCP protocol called Hot Rod.
-</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>アプリケーションから独立したデータ・レイヤーを用意したい場合、Infinispan Serverを使ってインメモリ・パフォーマンスでデータにリモート・アクセスできます。クライアントは、一貫したハッシュ技術によってデータからネットワークで１ホスト分離れており、HTTPまたはHot Rodと呼ばれるカスタムバイナリTCPプロトコルでリクエストを行えます。
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>IInfinispan provides trusted open-source technology to deliver scalability to meet workload demands and reduce resource utilization. At the same time, Infinispan distributes your data across clusters so no single point of failure causes data loss.
-</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>IInfinispanは信頼できるオープンソースの技術を提供し、負荷量の要求を満たす拡張性を実現し、リソースの使用率を低減します。同時に、Infinispanはデータをクラスタに分散させるため、単一障害点によるデータ損失が発生しません。
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>One popular use for Infinispan is as a shared store for stateful data, such as user HTTP sessions. Applications can stay lightweight and avoid heap usage by externalizing sessions to Infinispan clusters, which act as an independent data layer.
-</seg>
-      </tuv>
-      <tuv xml:lang="ja_JP">
-        <seg>Infinispanは、ユーザのHTTPセッションのようなステートフルなデータの共有ストアとしてよく使われます。アプリケーションは、セッションをInfinispanクラスタに外部化し、独立したデータ層として機能させることで、軽量化とヒープの使用を避けられます。
-</seg>
+        <seg>CLIは、 link:https://www.graalvm.org/[GraalVM] の `native-image` ツールの提供により、ネイティブ実行ファイルとしてビルドできるようになりました。まもなく、このバイナリ/イメージを出荷する予定ですので、発表をお楽しみにお待ちください。</seg>
       </tuv>
     </tu>
   </body>
