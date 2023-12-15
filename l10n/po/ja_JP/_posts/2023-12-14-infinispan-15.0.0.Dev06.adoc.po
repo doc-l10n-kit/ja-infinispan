@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2023-12-15 13:16+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2023-12-14-infinispan-15.0.0.Dev06.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-12-14-infinispan-15.0.0.Dev06.adoc:8
+#, no-wrap
+msgid ""
+"layout: blog\n"
+"title: Infinispan 15.0.0.Dev06\n"
+"permalink: /blog/:year/:month/:day/infinispan-15dev06\n"
+"date: '2023-12-14T00:00:00.000-00:00'\n"
+"author: ttarrant\n"
+"tags: [ \"release\", \"development\" ]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: upstream/_posts/2023-12-14-infinispan-15.0.0.Dev06.adoc:10
+#, no-wrap
+msgid "Infinispan 15.0.0.Dev06"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2023-12-14-infinispan-15.0.0.Dev06.adoc:13
+#, no-wrap
+msgid "Redis endpoint"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-12-14-infinispan-15.0.0.Dev06.adoc:17
+msgid "The Redis endpoint now implements most of the core Redis commands and data structures (strings, sets, lists, hashes and sorted sets), as well as implementing clustering and CRC16 slots."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2023-12-14-infinispan-15.0.0.Dev06.adoc:18
+#, no-wrap
+msgid "kNN Vector search"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-12-14-infinispan-15.0.0.Dev06.adoc:21
+msgid "Infinispan can now perform indexed kNN vector searches. See our recent https://infinispan.org/blog/2023/12/13/infinispan-vector-search[blog post] for more information."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2023-12-14-infinispan-15.0.0.Dev06.adoc:22
+#, no-wrap
+msgid "Infinispan Web Console"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-12-14-infinispan-15.0.0.Dev06.adoc:25
+msgid "The console has gained an access management section that lets you create, update, and delete roles, as well as assign access to principal mappers."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2023-12-14-infinispan-15.0.0.Dev06.adoc:26
+#, no-wrap
+msgid "GraalVM feature"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-12-14-infinispan-15.0.0.Dev06.adoc:30
+msgid "A GraalVM native-image https://www.graalvm.org/sdk/javadoc/org/graalvm/nativeimage/hosted/Feature.html[Feature] is now available via the dedicated modules `infinispan-hotrod-graalvm` and `infinispan-embedded-graalvm`."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2023-12-14-infinispan-15.0.0.Dev06.adoc:31
+#, no-wrap
+msgid "Hibernate ORM 6.3 2LC"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-12-14-infinispan-15.0.0.Dev06.adoc:34
+msgid "Our second-level cache provider now supports Hibernate ORM 6.3."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2023-12-14-infinispan-15.0.0.Dev06.adoc:35
+#, no-wrap
+msgid "JCache is back!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-12-14-infinispan-15.0.0.Dev06.adoc:39
+msgid "While working on the Jakarta migration, we temporarily removed the JCache provider because of its optional dependency on CDI conflicting with the migration to Jakarta EE.  As of 15.0.0.Dev06, the JCache component is back, albeit without the CDI integration."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_posts/2023-12-14-infinispan-15.0.0.Dev06.adoc:41
+#, no-wrap
+msgid "When is the Final release coming?"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-12-14-infinispan-15.0.0.Dev06.adoc:44
+msgid "We hope to have the final release of Infinispan 15 ready for consumption by the end of the year and we will be making regular development releases."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-12-14-infinispan-15.0.0.Dev06.adoc:47
+msgid "Get them from our https://infinispan.org/download/[download page].]"
+msgstr ""
