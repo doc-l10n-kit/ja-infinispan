@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ノンブロッキングの旅</title>
+  <!-- <script id="adobe_dtm" src="//www.redhat.com/dtm.js" type="text/javascript"></script> -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Infinispan is a distributed in-memory key/value data store with optional schema, available under the Apache License 2.0.">
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" >
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/github-dark.min.css">
+  <link rel="alternate" type="application/rss+xml"
+        title="Infinispan's RSS Feed"
+        href="/feed.xml" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+          
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<!--   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125236544-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-125236544-1');
+  </script> -->
+
+
+</head>
+
+<body class="blog">
+  <div class="nav-wrapper">
+  <div class="grid-wrapper">
+    <div class="width-12-12">
+      <input type="checkbox" id="checkbox" />
+      <nav id="main-nav" class="main-nav">
+  <div class="container">
+    <div class="logo-wrapper">
+        <a href="/"><img src="/assets/images/infinispan-logo-white.png" class="project-logo" title="Infinispan Logo"></a>
+    </div>
+    <label class="nav-toggle" for="checkbox">
+      <i class="fa fa-bars"></i>
+    </label>
+    <ul id="menu" class="menu">
+      <li class="dropdown">
+        <span href="/learn/">学ぶ <i class="fas fa-chevron-down"></i></span>
+        <ul class="submenu">
+          <li><a href="/introduction" class="">入門</a></li>
+          <li><a href="/features" class="">機能</a></li>
+          <li><a href="/documentation" class="">ドキュメンテーション</a></li>
+          <li><a href="/tutorials" class="">チュートリアル</a></li>
+          <li><a href="/videos" class="">ビデオ</a></li>
+          <li><a href="/references" class="">参考資料</a></li>
+          <li><a href="/experiments" class="">実験</a></li>
+          <li><a href="/roadmap" class="">ロードマップ</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="/use-cases/" class="">使用事例</a>
+      </li>
+      <li>
+        <a href="/community/" class="">コミュニティ</a>
+      </li>
+      <li>
+        <a href="/blog/" class="active">Blog</a>
+      </li>
+      <li>
+        <a href="/download/" class="">ダウンロード</a>
+      </li>
+    </ul>
+  </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+  <div class="content">
+    
+<div class="component-slim full-width-bg dark-bg light-blue">
+  <div class="grid-wrapper">
+    <div class="width-12-12">
+      <a href="/blog">Blogs</a>  <i class="fas fa-chevron-right"></i> ノンブロッキングの旅
+    </div>
+  </div>
+</div>
+
+<div class="post-page grid-wrapper">
+  <div class="grid__item width-10-12 width-12-12-m doc-content">
+    <h1>ノンブロッキングの旅</h1>
+    <div class="post-date">August 31, 2020
+      Tags: <a href="/blog/tag/non-blocking">non-blocking</a> <a href="/blog/tag/server">server</a> <a href="/blog/tag/embedded">embedded</a> 
+    </div>
+    <div class="grid-wrapper">
+      <div class="grid__item width-8-12 width-12-12-m margin-tb-sm">
+        <div class="grid-wrapper">
+          <div class="width-2-12 justify-self-center align-self-center">
+            <img src="/assets/images/blog/authors/wburns.jpg">
+          </div>
+          <div class="width-10-12 align-self-center">
+            <p class="byline">By William Burns</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid__item width-12-12">
+          <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>ご存知の方も多いと思いますが、最近の傾向として、アプリケーションをノンブロッキングにすることで、より少ないリソースでより大きな拡張性が得られることがわかってきました。Infinispan
+は、組み込みとサーバーの両方の使用例でこの利点を活用できるように書き換えられています。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="infinispan-11以前">Infinispan 11以前</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Infinispanサーバは常にnettyを利用してきましたが、イベントループをブロックしないようにすることについてはベストではなかったかもしれません。9.2.0のHotRodクライアントもnettyを利用してノンブロッキング操作を提供しています。内部に埋め込まれたインターセプターは9.0.0で書き換えられ、put/getを含む内部キャッシュ操作のノンブロッキングサポートを提供しています。10.0.0
+のキャッシュストア操作は、ノンブロッキングサポートを提供するために、ブロッキングスレッドプールに受けわたされました。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="infinispan-11-ノンブロッキングの変更点">Infinispan 11 ノンブロッキングの変更点</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>最新のリリースでは、可能な限りノンブロッキングを活用するために、Infinispan
+の内部を多く書き換えました。変更点の量は非常に多く、このブログ記事ですべてを説明するのは少し難しいです。様々な JIRA は
+<a href="https://issues.redhat.com/browse/ISPN-10309" class="bare">https://issues.redhat.com/browse/ISPN-10309</a>
+から見ることができますが、これはどれだけ多くの変更を行ったにもかかわらず、まだ完成していません。</p>
+</div>
+<div class="paragraph">
+<p>永続性SPIは11でノンブロッキングを考慮して完全に書き直されました。これについては、より詳細な情報があるため、今後の記事で取り上げます。今のところ、以前のストアはすべて動作しますが、非ブロックサポートを考慮して最適化されている可能性がありますので、ご安心ください。</p>
+</div>
+<div class="sect2">
+<h3 id="改装">改装</h3>
+<div class="paragraph">
+<p>Infinispan
+のコードベースのほとんどすべてのモジュールが、ノンブロッキングをサポートするように変更されました。コードがブロッキングされていることがわかっている
+API
+に依存している場合、ブロッキングされていないスレッドを決してブロッキングしないようにするために、ブロッキングスレッドプールにそれらの呼び出しを受け渡します。</p>
+</div>
+<div class="paragraph">
+<p>残念ながら、まだアップデートされていないモジュールがあり、それは問い合わせに関するものです。問い合わせは大規模なリファクタリングの真っ最中であり、それを行うと大規模なコンフリクトが発生するため、Infinispan
+12
+に延期されました。サーバーはこの問題を回避するために、問い合わせ付きのキャッシュに対して行われる書き込み操作は、安全性を確保するために常にブロッキングスレッドで行われるようにしています。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="スレッドプール">スレッドプール</h3>
+<div class="paragraph">
+<p>Infinispan は、操作を処理するためにさまざまなスレッドプールを利用します。この表は、Infinispan
+の各バージョンが持てるスレッドプールの数を詳細に示しています。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. スレッドプール</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Version</th>
+<th class="tableblock halign-left valign-top">Embedded</th>
+<th class="tableblock halign-left valign-top">Server</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISPN 10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISPN 11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>ご覧のように、組み込みモードとサーバモードの両方でスレッドプールの数が50%以上削減されています。これにより、次の表に示すように、デフォルトのスレッド数を削減することができました。Nは、JVMで利用可能なコア数であることに注意してください。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. 最大デフォルトのスレッド数</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Version</th>
+<th class="tableblock halign-left valign-top">Embedded</th>
+<th class="tableblock halign-left valign-top">Server</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISPN 10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">310 + N</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">470 + (2 * N)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISPN 11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">150 + (2 * N)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">150 + (4 * N)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>この統合の後、私たちはノンブロッキングとブロッキングのスレッドプールを持つようになりました。ご覧のように、これにより、組み込みの最大スレッド数を約半分に減らすことができ、サーバは以前の3分の1になりました。</p>
+</div>
+<div class="paragraph">
+<p>サーバーにはnettyイベントループ用の追加スレッドプールがあり、残念ながらこのスレッドプールを統合することはできませんが、Infinispan
+12で計画されており、組み込みモードとサーバーモードの両方で同じ数のスレッドとスレッドプールを利用できるようになります。</p>
+</div>
+<div class="paragraph">
+<p>JGroups スレッドプールは変更されておらず同じなので、これは JGroups スレッドプールについての話ではないことに注意してください。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="blockhound">BlockHound</h3>
+<div class="paragraph">
+<p>コードをノンブロッキングにすることに慣れていると、非常に難しい作業になります。というのも、ごく普通の呼び出しであっても、たとえそれが非常に短いものであっても、ブロッキングなものを隠してしまうことがあるからです。そのような呼び出しを検出するために何かを書くことができますが、私たちが必要としていたことを正確に行うオープンソースのツールがすでに存在します。このツールはBlockHoundで、実行時にブロッキングの呼び出しを検出することができます。このツールについての詳細は
+<a href="https://github.com/reactor/BlockHound" class="bare">https://github.com/reactor/BlockHound</a> を参照してください。</p>
+</div>
+<div class="paragraph">
+<p>Infinispanでは、モジュール・レベルで設定するという点で、BlockHound を活用しています。
+これにより、エンドユーザは埋め込みモードのInfinispanでもブロックハウンドを追加することができ、必要なときにInfinispanとのやりとりがブロックされていないことを確認するテストを行えます。
+今日、多くのメソッドがブロックされていないにもかかわらず、私たちはまだクライアントのBlockHoundをサポートしていないことに注意してください。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="infinispan-12のために残っているもの">Infinispan 12のために残っているもの</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Infinispan 12は、ノンブロッキングの物語全体をその希望に満ちた最終的な完成に持ってくるはずです。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>前述の問い合わせモジュールを改良する必要があります。</p>
+</li>
+<li>
+<p>既存のサポートされているキャッシュストアは、ノンブロッキングを直接サポートするように書き換える必要があります。</p>
+</li>
+<li>
+<p>キャッシュの検索はブロッキングスレッドに受け渡する必要があります。</p>
+</li>
+<li>
+<p>サーバイベントループとノンブロッキングスレッドプールの組み合わせ</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>また、時間が許せば、Infinispanクライアントは完全にノンブロッキングであることが保証され、クライアントアプリが適切に動作することを保証するためにBlockHoundと統合されます。</p>
+</div>
+</div>
+</div>
+          
+      </div>
+      <div class="grid__item width-12-12">
+        <h2>手に入れて、使って、尋ねて！ </h2>
+現在、新機能、改善、修正に取り組んでいますので、今後の発表にご期待ください。
+<div class="paragraph">
+    <p>最新のリリースを<a href="/download" target="_blank">ダウンロード</a>してお試しください。</p>
+</div>
+<div class="paragraph">
+    <p>ソースコードは<a href="" target="_blank">GitHub</a>でホストされています。
+        バグを報告したり、新機能を要求したりする必要がある場合は、<a href="https://issues.jboss.org/browse/ISPN" target="_blank">JIRA課題監視</a>で同様のものを探してください。
+        見つからない場合は、<a href="https://issues.jboss.org/browse/ISPN" target="_blank">新しい課題を作成してください</a>。</p>
+</div>
+<div class="paragraph">
+    <p>質問があったり、バグが発生していたり、Infinispanを使う上でのアドバイスが欲しい場合は、
+        <a href="https://stackoverflow.com/questions/tagged/?tagnames=infinispan&sort=newest"
+                       target="_blank">StackOverflow</a>をご利用ください。
+        できる限り早く回答するように努めます。</p>
+</div>
+<div class="paragraph">
+    <p>Infinispanのコミュニティでは、リアルタイムのコミュニケーションに<a href="https://zulipchat.com/"
+                                        target="_blank">Zulip</a>を使用しています。
+        Webブラウザまたは<a href="https://infinispan.zulipchat.com/" target="_blank">Infinispanチャット</a>上の
+         <a href="https://infinispan.zulipchat.com/apps/" target="_blank">専用のアプリケーション</a>を使って参加してください。</p>
+</div>
+      </div>
+      
+      <div class="width-12-12 callout orange margin-tb-xs">
+    <div class="grid-wrapper">
+        <div class="width-4-12 width-12-12-m block-image">
+            <img src="/assets/images/blog/authors/wburns.jpg" class="author-img">
+        </div>
+        <div class="width-8-12 width-12-12-m block-content">
+            <h5>William Burns</h5>
+            <p>Willは2013年からRed Hatで働いているInfinispanのコア・エンジニアです。趣味は、データのストリーミングとリアクティブなコードを書くこと。</p>
+            <div class="width-3-12 width-6-12-m bio-block">
+                <a href="http://github.com/wburns"><img src="/assets/images/community/icon-github.png"></a>
+                
+                <a href="https://twitter.com/mudokonman"><img src="/assets/images/community/icon-twitter.png"></a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+      
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <div class="content project-footer">
+  <div class="footer-section">
+    <div class="logo-wrapper">
+      <a href="/"><img src="/assets/images/infinispan-logo.png" class="project-logo" title="Infinispan Logo"></a>
+    </div>
+  </div>
+  <div class="grid-wrapper">
+    <p class="grid__item width-3-12">InfinispanはApache 2.0オープンソースライセンスでリリースされています。<a href='https://www.apache.org/licenses/LICENSE-2.0' target='_blank'>Apache Software License 2.0</a>についての詳細はこちらをご覧ください。<br/><br/><a href='https://jekyllrb.com/' target='_blank'>Jekyll</a>で構築されたこのウェブサイトは<a href='https://pages.github.com/' target='_blank'>Github Pages</a>でホストされており、完全にオープンソースです。より良いものにしたいのであれば、<a href='https://github.com/infinispan/infinispan.github.io' target='_blank'>このウェブサイトをフォーク</a>して、あなたが得たいものを私たちに見せてください。</p>
+
+    
+      <div class="width-1-12 project-links">
+        <b>ナビゲーション</b>
+        <ul class="footer-links width-1-12">
+          
+            
+            <li><a href="/" >Home</a></li>
+          
+            
+            <li><a href="/features" >機能</a></li>
+          
+            
+            <li><a href="/documentation" >ドキュメント</a></li>
+          
+            
+            <li><a href="/tutorials" >チュートリアル</a></li>
+          
+            
+            <li><a href="/videos" >ビデオ</a></li>
+          
+            
+            <li><a href="/use-cases" >使用例</a></li>
+          
+            
+            <li><a href="/community" >コミュニティ</a></li>
+          
+            
+            <li><a href="/download" >ダウンロード</a></li>
+          
+        </ul>
+      </div>
+    
+      <div class="width-1-12 project-links">
+        <b>貢献</b>
+        <ul class="footer-links width-1-12">
+          
+            
+            <li><a href="https://issues.jboss.org/browse/ISPN" target="_blank">バグ登録</a></li>
+          
+            
+            <li><a href="https://github.com/infinispan" target="_blank">コードを書く</a></li>
+          
+        </ul>
+      </div>
+    
+      <div class="width-1-12 project-links">
+        <b>私たちをフォロー</b>
+        <ul class="footer-links width-1-12">
+          
+            
+            <li><a href="/blog" >Blog</a></li>
+          
+            
+            <li><a href="https://twitter.com/infinispan" target="_blank">Twitter</a></li>
+          
+        </ul>
+      </div>
+    
+
+    <div class="width-6-12 more-links">
+      <div class="grid-wrapper">
+        <div class="width-6-12">
+          <b>A Member of</b><br/>
+          <a href="http://www.cloudtm.eu/" target="_blank"><img src="/assets/images/footer/cloud-tm.png"></a>
+          <img src="/assets/images/footer/leads.png">
+          <br/>
+          <a href="http://cloudbutton.eu/" target="_blank"><img src="/assets/images/footer/cloud-button.png"></a>
+
+        </div>
+        <div class="width-6-12">
+
+          <b>Thanks to</b><br/>
+          <a href="https://www.jetbrains.com/idea/" target="_blank"><img src="/assets/images/footer/jetbrains.png" title="JetBrains Intellj IDEA"></a>
+          <a href="https://weblate.org" target="_blank"><img src="/assets/images/footer/weblate.png" title="Weblate"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="content-slim redhat-footer">
+  <div class="grid-wrapper">
+    <span class="licence">
+      <i class="fab fa-creative-commons"></i><i class="fab fa-creative-commons-by"></i> <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC by 3.0</a>
+      | <a href="https://www.redhat.com/en/about/privacy-policy">Red Hat Privacy Policy</a>
+    </span>
+    <span class="redhat">
+      a Red Hat sponsored project   
+    </span>
+    <span class="redhat-logo">
+      <a href="https://www.redhat.com/" target="_blank"><img src="/assets/images/redhat_reversed.svg"></a>
+    </span>
+  </div>
+</div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="/assets/javascript/mobile-nav.js"></script>
+  <script type="text/javascript" src="/assets/javascript/truncate-list.js"></script>
+
+  <script src="/assets/javascript/clipboard.min.js" type="text/javascript"></script>
+  <script src="/assets/javascript/copy.js" type="text/javascript"></script>
+
+<!--   <script type="text/javascript">
+    if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+        _satellite.pageBottom();
+    }
+  </script> -->
+</body>
+
+</html>

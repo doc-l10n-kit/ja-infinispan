@@ -1,0 +1,1717 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://infinispan.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://infinispan.org/" rel="alternate" type="text/html" /><updated>2023-12-15T13:23:01+00:00</updated><id>https://infinispan.org/feed.xml</id><title type="html">Infinispan</title><subtitle>Infinispan is a distributed in-memory key/value data store with optional schema, available under the Apache License 2.0.</subtitle><entry><title type="html">Infinispan 15.0.0.Dev06</title><link href="https://infinispan.org/blog/2023/12/14/infinispan-15dev06" rel="alternate" type="text/html" title="Infinispan 15.0.0.Dev06" /><published>2023-12-14T00:00:00+00:00</published><updated>2023-12-14T00:00:00+00:00</updated><id>https://infinispan.org/blog/2023/12/14/infinispan-15.0.0.Dev06</id><content type="html" xml:base="https://infinispan.org/blog/2023/12/14/infinispan-15dev06">&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;redis-endpoint&quot;&gt;Redis endpoint&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Redis endpoint now implements most of the core Redis commands and data
+structures (strings, sets, lists, hashes and sorted sets), as well as
+implementing clustering and CRC16 slots.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;knn-vector-search&quot;&gt;kNN Vector search&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Infinispan can now perform indexed kNN vector searches. See our recent
+&lt;a href=&quot;https://infinispan.org/blog/2023/12/13/infinispan-vector-search&quot;&gt;blog post&lt;/a&gt;
+for more information.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;infinispan-web-console&quot;&gt;Infinispan Web Console&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The console has gained an access management section that lets you create,
+update, and delete roles, as well as assign access to principal mappers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;graalvm-feature&quot;&gt;GraalVM feature&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;A GraalVM native-image
+&lt;a href=&quot;https://www.graalvm.org/sdk/javadoc/org/graalvm/nativeimage/hosted/Feature.html&quot;&gt;Feature&lt;/a&gt;
+is now available via the dedicated modules &lt;code&gt;infinispan-hotrod-graalvm&lt;/code&gt; and
+&lt;code&gt;infinispan-embedded-graalvm&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;hibernate-orm-6-3-2lc&quot;&gt;Hibernate ORM 6.3 2LC&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Our second-level cache provider now supports Hibernate ORM 6.3.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;jcache-is-back&quot;&gt;JCache is back!&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;While working on the Jakarta migration, we temporarily removed the JCache
+provider because of its optional dependency on CDI conflicting with the
+migration to Jakarta EE.  As of 15.0.0.Dev06, the JCache component is back,
+albeit without the CDI integration.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;when-is-the-final-release-coming&quot;&gt;When is the Final release coming?&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We hope to have the final release of Infinispan 15 ready for consumption by
+the end of the year and we will be making regular development releases.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Get them from our &lt;a href=&quot;https://infinispan.org/download/&quot;&gt;download page&lt;/a&gt;.]&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content><author><name>Tristan Tarrant</name></author><category term="release" /><category term="development" /><summary type="html">Redis endpoint</summary></entry><entry><title type="html">Infinispan kNN Vector Search</title><link href="https://infinispan.org/blog/2023/12/13/infinispan-vector-search" rel="alternate" type="text/html" title="Infinispan kNN Vector Search" /><published>2023-12-13T19:37:00+00:00</published><updated>2023-12-13T19:37:00+00:00</updated><id>https://infinispan.org/blog/2023/12/13/infinispan-vector-search</id><content type="html" xml:base="https://infinispan.org/blog/2023/12/13/infinispan-vector-search">&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;With Infinispan 15.0.0.Dev06, we have started to expose vector search
+capabilities using Infinispan&amp;#8217;s indexed queries.  Using the newly introduced
+kNN predicate, it is possible to find and order results by the k nearest
+neighbors of a given vector.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;mapping-the-embeddings&quot;&gt;Mapping the embeddings&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The new &lt;code&gt;@Vector&lt;/code&gt; indexing annotation is used to mark a field as an
+embedding. Embeddings are vector representations of data, according to a
+defined model.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The vector dimension is mandatory and should be defined at mapping time.
+Other options that can be specified during mapping are:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;the similarity (distance) function&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;the beam width&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;the maximum number of connections.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Bear in mind that these values affect the performance of the approximation
+algorithm that is used to compute the kNN search.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We support &lt;code&gt;byte[]&lt;/code&gt; embeddings. Here is an example of mapping:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-java hljs&quot; data-lang=&quot;java&quot;&gt;@Vector(dimension = 3)
+@ProtoField(2)
+public byte[] getByteVector() {
+   return byteVector;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;That corresponds to the Proto schema:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-proto hljs&quot; data-lang=&quot;proto&quot;&gt;/**
+ * @Vector(dimension=3)
+ */
+optional bytes byteVector = 2;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We also support &lt;code&gt;float[]&lt;/code&gt; embeddings. Here is an example of mapping:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-java hljs&quot; data-lang=&quot;java&quot;&gt;@Vector(dimension = 3)
+@ProtoField(3)
+public float[] getFloatVector() {
+   return floatVector;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;That corresponds to the Proto schema:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-proto hljs&quot; data-lang=&quot;proto&quot;&gt;/**
+ * @Vector(dimension=3)
+ */
+repeated float floatVector = 3;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;searching-the-embeddings&quot;&gt;Searching the embeddings&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The following query shows how to perform a kNN search using a supplied
+vector and a specific distance&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-sql hljs&quot; data-lang=&quot;sql&quot;&gt;from Item i where i.byteVector &amp;lt;-&amp;gt; [7,7,7]~3&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The query can be parameterized in several ways:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-java hljs&quot; data-lang=&quot;java&quot;&gt;query = cache.query(&quot;from org.infinispan.query.model.Item i where i.byteVector &amp;lt;-&amp;gt; [:a,:b,:c]~3&quot;);
+query.setParameter(&quot;a&quot;, 0);
+query.setParameter(&quot;b&quot;, 2);
+query.setParameter(&quot;c&quot;, 3);
+hits = query.list();
+assertThat(hits).extracting(&quot;code&quot;).containsExactly(&quot;c2&quot;, &quot;c1&quot;, &quot;c3&quot;); // the order matters&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Or you can pass the entire vector as a single parameter:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-java hljs&quot; data-lang=&quot;java&quot;&gt;query = cache.query(&quot;from org.infinispan.query.model.Item i where i.floatVector &amp;lt;-&amp;gt; [:a]~:b&quot;);
+query.setParameter(&quot;a&quot;, new float[]{7.1f, 7.0f, 3.1f});
+query.setParameter(&quot;b&quot;, 3);
+hits = query.list();
+assertThat(hits).extracting(&quot;code&quot;).containsExactly(&quot;c5&quot;, &quot;c6&quot;, &quot;c4&quot;);&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If the cache is distributed, the query will be a broadcast query, and it
+will aggregate all the results from all the nodes that contain shards of the
+indexes that are related to the search.  When we get the result as usual we
+get all the metadata from the corresponding entities, so that the returning
+items can easily relate to the application domain.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content><author><name>fax4ever</name></author><category term="search" /><category term="vector" /><category term="knn" /><category term="indexing" /><category term="embeddings" /><summary type="html">With Infinispan 15.0.0.Dev06, we have started to expose vector search capabilities using Infinispan&amp;#8217;s indexed queries. Using the newly introduced kNN predicate, it is possible to find and order results by the k nearest neighbors of a given vector.</summary></entry><entry><title type="html">Reviving MongoDB cache store</title><link href="https://infinispan.org/blog/2023/05/04/reviving-mongodb-cachestore" rel="alternate" type="text/html" title="Reviving MongoDB cache store" /><published>2023-05-04T00:00:00+00:00</published><updated>2023-05-04T00:00:00+00:00</updated><id>https://infinispan.org/blog/2023/05/04/reviving-mongodb-cachestore</id><content type="html" xml:base="https://infinispan.org/blog/2023/05/04/reviving-mongodb-cachestore">&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;After a long period of inactivity, the MongoDB store is now back to life.
+It has been upgraded to work with Infinispan 15.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;reactive-mongodb-driver&quot;&gt;Reactive MongoDB driver&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Since the Infinispan cache store API is now fully reactive, the store has
+also been modified to use the reactive MongoDB driver.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;database-formats&quot;&gt;Database formats&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The older MongoDB cache store worked by persisting keys and values as binary
+blobs.  This should be the most efficient way, but it makes it harder to
+inspect the documents stored in Mongo.  Therefore, the new implementation
+allows choosing between two formats:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;binary&lt;/code&gt;: the binary format similar to that used with the previous MongoDB
+store:&lt;/p&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-json hljs&quot; data-lang=&quot;json&quot;&gt;[
+  {
+    &quot;_id&quot;: {&quot;$binary&quot;: {&quot;base64&quot;: &quot;mAEBigERCg9KDTAtNjc5LTc3NTQzLTk=&quot;, &quot;subType&quot;: &quot;00&quot;}},
+    &quot;value&quot;: {&quot;$binary&quot;: {&quot;base64&quot;: &quot;mAELigFLCkmCARBib29rX3NhbXBsZS5Cb29rigEzChpUaGUgV2luZC1VcCBCaXJkIENocm9uaWNsZRjNDyISCgZIYXJ1a2kSCE11cmFrYW1p&quot;, &quot;subType&quot;: &quot;00&quot;}}
+    ...
+  }
+]&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;structured&lt;/code&gt;: a structured BSON representation of the objects:&lt;/p&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-json hljs&quot; data-lang=&quot;json&quot;&gt;[
+  {
+    &quot;_id&quot;: {
+      &quot;_type&quot;: &quot;string&quot;,
+      &quot;_value&quot;: &quot;0-679-77543-9&quot;
+    },
+    &quot;value&quot;: {
+      &quot;_type&quot;: &quot;book_sample.Book&quot;,
+      &quot;title&quot;: &quot;The Wind-Up Bird Chronicle&quot;,
+      &quot;publicationYear&quot;: 1997,
+      &quot;authors&quot;: [
+        {
+          &quot;name&quot;: &quot;Haruki&quot;,
+          &quot;surname&quot;: &quot;Murakami&quot;
+        }
+      ]
+    },
+    ...
+  }
+]&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;expiration&quot;&gt;Expiration&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The MongoDB store supports expiration. However, in order to ensure
+correctness the expired entries are removed from the database one by one,
+instead of using a bulk operation. Therefore, make sure this does not have a
+negative impact on MongoDB instances.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content><author><name>antoniomacri</name></author><category term="cache store" /><category term="mongodb" /><category term="persistence" /><summary type="html">After a long period of inactivity, the MongoDB store is now back to life. It has been upgraded to work with Infinispan 15.</summary></entry><entry><title type="html">Infinispan 15.0.0.Dev01</title><link href="https://infinispan.org/blog/2023/04/24/infinispan-15dev01" rel="alternate" type="text/html" title="Infinispan 15.0.0.Dev01" /><published>2023-04-24T00:00:00+00:00</published><updated>2023-04-24T00:00:00+00:00</updated><id>https://infinispan.org/blog/2023/04/24/infinispan-15.0.0.Dev01</id><content type="html" xml:base="https://infinispan.org/blog/2023/04/24/infinispan-15dev01">&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Infinispan 15.0.0.Dev01 marks the beginning of a new development cycle, and
+there are a number of notable changes that we are making that deserve a
+detailed post.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;bye-bye-java-ee-hello-jakarta-ee&quot;&gt;Bye bye, Java EE, Hello Jakarta EE&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We&amp;#8217;ve made the decision to drop Java EE support completely and focus solely
+on &lt;a href=&quot;https://jakarta.ee&quot;&gt;Jakarta EE&lt;/a&gt;.  For 14.0 we provided artifacts for both,
+but we believe the time has come to move on. All of the leading application
+servers (like &lt;a href=&quot;https://wildfly.org&quot;&gt;WildFly&lt;/a&gt; and
+&lt;a href=&quot;https://openliberty.io&quot;&gt;OpenLiberty&lt;/a&gt;) as well as the most important stacks
+(like &lt;a href=&quot;https://quarkus.io&quot;&gt;Quarkus&lt;/a&gt; and &lt;a href=&quot;https://spring.io&quot;&gt;Spring&lt;/a&gt;) have
+adopted Jakarta EE, so we&amp;#8217;ve decided it was time for us to make the move
+too.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;jcache-changes&quot;&gt;JCache changes&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The choice to drop Java EE directly impacts our JCache provider
+implementation.  The JCache API (aka JSR 107) is essentially in maintenance
+mode: it was never adopted by Java EE and there are a number of obstacles
+(mostly legal) that prevent it from moving to Jakarta EE. We understand the
+need to have an implementation agnostic caching API, so we are going to
+continue supporting our JCache provider, but we will drop those parts which
+require Java EE, most notably the &lt;code&gt;javax.cache.annotation&lt;/code&gt;
+package. Hopefully a modern caching API will emerge as part of Jakarta EE.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;dropping-spring-5-spring-boot-2-support&quot;&gt;Dropping Spring 5 / Spring Boot 2 support&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Dropping Java EE also means having to drop Spring 5 and Spring Boot 2
+support.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;quarkus&quot;&gt;Quarkus&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We&amp;#8217;ve merged our Quarkus components (embedded, CLI and server) into the main
+repository and have upgraded them to Quarkus 3.0.  Our
+&lt;a href=&quot;https://quarkus.io/extensions/io.quarkus/quarkus-infinispan-client&quot;&gt;client
+extension&lt;/a&gt; continues to be part of the Quarkus ecosystem.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;security-manager&quot;&gt;Security Manager&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Java Security Manager has been &lt;a href=&quot;https://openjdk.org/jeps/411&quot;&gt;deprecated
+for removal&lt;/a&gt;.  It was designed mostly for sandboxing Java applets, but it
+was somehow (wrongly) co-opted as a way to implement similar functionality
+for normal Java applications. It was slow and cumbersome, and we&amp;#8217;re glad to
+see it go. Luckily, the removal of SecurityManager support from Infinispan
+does not affect its authentication and authorization capabilities.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;java-17-and-21&quot;&gt;Java 17 and 21&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Starting with Infinispan 15, we will baseline on JDK 17 and also offer
+support for JDK 21, including virtual threads.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;but-what-if-i-rely-on-javaee-spring-5-spring-boot-2-and-jcache-annotations&quot;&gt;But what if I rely on JavaEE, Spring 5, Spring Boot 2 and JCache annotations ?&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Don&amp;#8217;t worry, we have you covered for quite some time, as we will continue to
+support Infinispan 14.0 for quite a while, with security patches, bug fixes
+and improvements that we can backport.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;other-features-and-tentative-release-date&quot;&gt;Other features and tentative release date&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;What you can expect to see in Infinispan 15:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;many improvements to our Redis-compatible
+&lt;a href=&quot;https://redis.io/docs/reference/protocol-spec/&quot;&gt;RESP&lt;/a&gt; endpoint, including
+many more commands&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;a completely overhauled &lt;a href=&quot;https://memcached.org/&quot;&gt;Memcached&lt;/a&gt; endpoint with
+support for authentication and the binary protocol&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;improved performance across the board, with particular focus on the remote
+endpoints and clustering&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CDC integration, courtesy of our friends over at
+&lt;a href=&quot;https://debezium.io/&quot;&gt;Debezium&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Much more!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We hope to have the final release of Infinispan 15 ready for consumption by
+the end of the year and we will be making regular development releases.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;リリースノート&quot;&gt;リリースノート&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;サブタスク&quot;&gt;サブタスク&lt;/h3&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;https://issues.redhat.com/browse/ISPN-12152[ISPN-12152] - Remove the Kryo and Protostuff Marshallers
+https://issues.redhat.com/browse/ISPN-13985[ISPN-13985] - Test AsyncCache new API.
+https://issues.redhat.com/browse/ISPN-13994[ISPN-13994] - Pass added SerialAllowList to configuration
+https://issues.redhat.com/browse/ISPN-14016[ISPN-14016] - Implement HotRodMutinyCaches methods&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;機能リクエスト&quot;&gt;機能リクエスト&lt;/h3&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;https://issues.redhat.com/browse/ISPN-12081[ISPN-12081] - Weak counter creation
+https://issues.redhat.com/browse/ISPN-13424[ISPN-13424] - Spring 6 integration
+https://issues.redhat.com/browse/ISPN-13946[ISPN-13946] - Expose indexes metamodel
+https://issues.redhat.com/browse/ISPN-14085[ISPN-14085] - Allow to pass new list of indexed entities in update schema API
+https://issues.redhat.com/browse/ISPN-14233[ISPN-14233] - REST API makes it possible to download any server report
+https://issues.redhat.com/browse/ISPN-14298[ISPN-14298] - Delete a counter
+https://issues.redhat.com/browse/ISPN-14300[ISPN-14300] - Add a delta in a value
+https://issues.redhat.com/browse/ISPN-14303[ISPN-14303] - Reset counter
+https://issues.redhat.com/browse/ISPN-14309[ISPN-14309] - Improve Counters Table Filtering
+https://issues.redhat.com/browse/ISPN-14344[ISPN-14344] - StoreMigrator support reading segmented SingleFileStores
+https://issues.redhat.com/browse/ISPN-14361[ISPN-14361] - Create Hibernate 2LC implementation for Hibernate 6.2.x.
+https://issues.redhat.com/browse/ISPN-14577[ISPN-14577] - Running tests with alternate JDK
+https://issues.redhat.com/browse/ISPN-14731[ISPN-14731] - Hot Rod client should support alternate resolution strategies
+https://issues.redhat.com/browse/ISPN-14758[ISPN-14758] - Add cli command alternative to /rest/v2/caches/{cacheName}/{cacheKey}?extended endpoint&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;バグ&quot;&gt;バグ&lt;/h3&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;https://issues.redhat.com/browse/ISPN-12224[ISPN-12224] - Cluster in a confusing state after restarted from graceful shutdown - no hint for waiting on complete restarted
+https://issues.redhat.com/browse/ISPN-13877[ISPN-13877] - NullPointerException in MetricsCollector.java
+https://issues.redhat.com/browse/ISPN-14090[ISPN-14090] - Counters client 14 are incompatible with Server 13
+https://issues.redhat.com/browse/ISPN-14112[ISPN-14112] - REST/CLI command will add a schema definition with 'upload' if the given file does not exists
+https://issues.redhat.com/browse/ISPN-14119[ISPN-14119] - Cache details page: Queries give error in case of running after entries expiration
+https://issues.redhat.com/browse/ISPN-14210[ISPN-14210] - Stores that do not return the EXPIRATION Characteristic should not allow expiration
+https://issues.redhat.com/browse/ISPN-14238[ISPN-14238] - Memcached server: corrupted response
+https://issues.redhat.com/browse/ISPN-14240[ISPN-14240] - Client certificate authentication doesn't work with HTTP/2
+https://issues.redhat.com/browse/ISPN-14256[ISPN-14256] - CLI expands `-` filename breaking stdin batch
+https://issues.redhat.com/browse/ISPN-14264[ISPN-14264] - [Console] Counters page - double click on Strong/Weak select loads all counters
+https://issues.redhat.com/browse/ISPN-14271[ISPN-14271] - Cache wizard back button not working
+https://issues.redhat.com/browse/ISPN-14278[ISPN-14278] - [Doc] sql-store examples should be updated
+https://issues.redhat.com/browse/ISPN-14279[ISPN-14279] - &quot;Divide by 0&quot;-Exception on Cache.getStats()
+https://issues.redhat.com/browse/ISPN-14280[ISPN-14280] - JSON parser doesn't report error locations correctly
+https://issues.redhat.com/browse/ISPN-14282[ISPN-14282] - Spring Boot actuator embedded metrics use deprecated code
+https://issues.redhat.com/browse/ISPN-14290[ISPN-14290] - [Docs] YAML Configuration example with typos
+https://issues.redhat.com/browse/ISPN-14313[ISPN-14313] - Set different properties and port for cross-site testdriver
+https://issues.redhat.com/browse/ISPN-14315[ISPN-14315] - Not possible to get server config over REST
+https://issues.redhat.com/browse/ISPN-14316[ISPN-14316] - '/rest/v2/server/report' throws exception if there are 1+ instances on the host
+https://issues.redhat.com/browse/ISPN-14317[ISPN-14317] - Not possible to create cluster backup over REST
+https://issues.redhat.com/browse/ISPN-14319[ISPN-14319] - Use InetSocketAddress.getHostString() instead of getHostName()
+https://issues.redhat.com/browse/ISPN-14323[ISPN-14323] - Get command blocks in text/plain caches
+https://issues.redhat.com/browse/ISPN-14329[ISPN-14329] - Availability of caches should be prevented until a cluster is complete after &quot;shutdown cluster&quot;
+https://issues.redhat.com/browse/ISPN-14348[ISPN-14348] - BytesObjectOutput.writeUTF performance improvements
+https://issues.redhat.com/browse/ISPN-14356[ISPN-14356] - NPE if not configuring datasource connection pool maxSize
+https://issues.redhat.com/browse/ISPN-14362[ISPN-14362] - Json escape should use two equality checks instead of HashMap lookup
+https://issues.redhat.com/browse/ISPN-14364[ISPN-14364] - Yaml parser mishandles lists
+https://issues.redhat.com/browse/ISPN-14368[ISPN-14368] - CacheInputEntryStream escapes the value for every byte in the value
+https://issues.redhat.com/browse/ISPN-14376[ISPN-14376] - Web console crashes when cache name has a dot
+https://issues.redhat.com/browse/ISPN-14377[ISPN-14377] - Stats command inaccurate results
+https://issues.redhat.com/browse/ISPN-14390[ISPN-14390] - When reading entries from read only store apply expiration
+https://issues.redhat.com/browse/ISPN-14399[ISPN-14399] - Do not allow read only and passivation to be configured together
+https://issues.redhat.com/browse/ISPN-14406[ISPN-14406] - Stage returned from reindexing on explicit keys completes earlier than expected
+https://issues.redhat.com/browse/ISPN-14416[ISPN-14416] - Data Distribution chart size issue
+https://issues.redhat.com/browse/ISPN-14417[ISPN-14417] - The metrics for misses and retrievals are updated after page reload
+https://issues.redhat.com/browse/ISPN-14421[ISPN-14421] - CVE-2022-41881 codec-haproxy: HAProxyMessageDecoder Stack Exhaustion DoS [jdg-8]
+https://issues.redhat.com/browse/ISPN-14435[ISPN-14435] - Backwards compatibility broken with InvalidMagicIdException
+https://issues.redhat.com/browse/ISPN-14440[ISPN-14440] - calling AsyncCache#keys or MutinyCache#keys throws an exception because the ToEmptyBytesKeyValueFilterConverter cannot be found.
+https://issues.redhat.com/browse/ISPN-14453[ISPN-14453] - Ickl Queries should support BigInteger and BigDecimal
+https://issues.redhat.com/browse/ISPN-14461[ISPN-14461] - Add missing licence: MPL-1.1
+https://issues.redhat.com/browse/ISPN-14466[ISPN-14466] - Cache configuration update failure cause not returned in http body
+https://issues.redhat.com/browse/ISPN-14468[ISPN-14468] - REST: return error if failed to create counter
+https://issues.redhat.com/browse/ISPN-14470[ISPN-14470] - REST cache configuration comparison returns 204 for different caches
+https://issues.redhat.com/browse/ISPN-14477[ISPN-14477] - Concurrent Spring session access results in lost session attributes
+https://issues.redhat.com/browse/ISPN-14479[ISPN-14479] - SQL Cache store initiation fails on Sql type CHAR
+https://issues.redhat.com/browse/ISPN-14491[ISPN-14491] - Adding entries with putAll does not add metadata version - following replaceWithVersion will end with a timout
+https://issues.redhat.com/browse/ISPN-14510[ISPN-14510] - org.infinispan.server.cli.CliIT.testCliInteractive failure
+https://issues.redhat.com/browse/ISPN-14511[ISPN-14511] - RestOperations.testCounter[HTTP_20] failure
+https://issues.redhat.com/browse/ISPN-14512[ISPN-14512] - Fix *-jakarta modules
+https://issues.redhat.com/browse/ISPN-14516[ISPN-14516] - Wrong versions in spring-boot-3-tests module
+https://issues.redhat.com/browse/ISPN-14527[ISPN-14527] - Meta model may not reflect some schema changes
+https://issues.redhat.com/browse/ISPN-14535[ISPN-14535] - GetCounterNameOperation can fail replay
+https://issues.redhat.com/browse/ISPN-14540[ISPN-14540] - [Docs]Fix JSON example for Off-heap storage
+https://issues.redhat.com/browse/ISPN-14542[ISPN-14542] - AsyncStore needs to use SecurityAction when retrieving ComponentRegistry
+https://issues.redhat.com/browse/ISPN-14543[ISPN-14543] - Build resource filtering corrupts binary files
+https://issues.redhat.com/browse/ISPN-14544[ISPN-14544] - RESP endpoint cache shouldn't require no expiration configured
+https://issues.redhat.com/browse/ISPN-14545[ISPN-14545] - SIFS Compactor does not properly shut down but the index thinks it is okay
+https://issues.redhat.com/browse/ISPN-14569[ISPN-14569] - Protocol parser throws a NPE if all branches of a switch statement or if/else contain a throw clause
+https://issues.redhat.com/browse/ISPN-14573[ISPN-14573] - AbstractAuthorization.testRestServerNodeReport is failing
+https://issues.redhat.com/browse/ISPN-14574[ISPN-14574] - [CLI] ClassCastException with get clusters -s option
+https://issues.redhat.com/browse/ISPN-14578[ISPN-14578] - We should never be using CompletableFuture.completionStage
+https://issues.redhat.com/browse/ISPN-14579[ISPN-14579] - Various RESP commands are requesting wrong size for buffer
+https://issues.redhat.com/browse/ISPN-14580[ISPN-14580] - We should use voidPromise for all context writes that don't use a future
+https://issues.redhat.com/browse/ISPN-14583[ISPN-14583] - RESP endpoint should bundle flush calls to allow pipelining
+https://issues.redhat.com/browse/ISPN-14589[ISPN-14589] - JdbcStringBasedCacheStorePassivation.testFailoverWithPassivation failures
+https://issues.redhat.com/browse/ISPN-14683[ISPN-14683] - NPE in configuration reader if resolver is null
+https://issues.redhat.com/browse/ISPN-14685[ISPN-14685] - EncodingConfiguration matching is too strict
+https://issues.redhat.com/browse/ISPN-14687[ISPN-14687] - Detect circular references on marshalling
+https://issues.redhat.com/browse/ISPN-14691[ISPN-14691] - Fix Authorization error in Actuator Metrics Binding
+https://issues.redhat.com/browse/ISPN-14730[ISPN-14730] - Exclude completely the non jakarta commons dependency
+https://issues.redhat.com/browse/ISPN-14732[ISPN-14732] - ClasspathURLStreamHandlerProvider should throw FileNotFoundException if it cannot find a resource
+https://issues.redhat.com/browse/ISPN-14733[ISPN-14733] - Make quarkus modules inherit from Infinispan parent
+https://issues.redhat.com/browse/ISPN-14737[ISPN-14737] - SoftIndexFileStore Index can become corrupted
+https://issues.redhat.com/browse/ISPN-14738[ISPN-14738] - RESP endpoint commands don't require previous value
+https://issues.redhat.com/browse/ISPN-14739[ISPN-14739] - OffHeapConcurrentMap shouldn't require reading previous value on put
+https://issues.redhat.com/browse/ISPN-14744[ISPN-14744] - RemoteCacheManagerAdmin docs should mention supported config formats
+https://issues.redhat.com/browse/ISPN-14753[ISPN-14753] - Prevent SoftIndexFileStore Compactor from running multiple times
+https://issues.redhat.com/browse/ISPN-14755[ISPN-14755] - Empty authorization roles serialized as JSON cannot be parsed
+https://issues.redhat.com/browse/ISPN-14759[ISPN-14759] - SoftIndexFileStore Index can lag behind LogAppender under heavy load
+https://issues.redhat.com/browse/ISPN-14763[ISPN-14763] - Users unable to configure StoreMigrator marshaller allow-list via properties
+https://issues.redhat.com/browse/ISPN-14767[ISPN-14767] - CLI table printer breaks when values have line breaks&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;タスク&quot;&gt;タスク&lt;/h3&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;https://issues.redhat.com/browse/ISPN-11701[ISPN-11701] - Add store migration capabilities to the CLI
+https://issues.redhat.com/browse/ISPN-14263[ISPN-14263] - Restrict most JGroupsTransport INFO logging when using a ForkChannel.
+https://issues.redhat.com/browse/ISPN-14287[ISPN-14287] - Remove extended-statistics module
+https://issues.redhat.com/browse/ISPN-14288[ISPN-14288] - Remove kryo and protostuff marshallers
+https://issues.redhat.com/browse/ISPN-14375[ISPN-14375] - Remove all uses of SecurityManager/AccessControlContext
+https://issues.redhat.com/browse/ISPN-14414[ISPN-14414] - REST API retrieve caches in initializing state
+https://issues.redhat.com/browse/ISPN-14424[ISPN-14424] - [Docs] Fix errors in the REST guide
+https://issues.redhat.com/browse/ISPN-14426[ISPN-14426] - Disable tracing propagation on HotRod client using a system property
+https://issues.redhat.com/browse/ISPN-14492[ISPN-14492] - Build Infinispan with JDK 17
+https://issues.redhat.com/browse/ISPN-14541[ISPN-14541] - [Docs] Use Java serialization or JBoss Marshalling with cyclic objects
+https://issues.redhat.com/browse/ISPN-14575[ISPN-14575] - Remove properties attribute from indexing configuration
+https://issues.redhat.com/browse/ISPN-14591[ISPN-14591] - Add exception to the BlockHound for the registering of a proto file
+https://issues.redhat.com/browse/ISPN-14705[ISPN-14705] - Expose indexing failures statistics using Infinispan indexing failure handler
+https://issues.redhat.com/browse/ISPN-14713[ISPN-14713] - Include new api dependency in Spring Boot 3 modules
+https://issues.redhat.com/browse/ISPN-14742[ISPN-14742] - Remove GeronimoTransactionManager
+https://issues.redhat.com/browse/ISPN-14756[ISPN-14756] - Remove JCache support
+https://issues.redhat.com/browse/ISPN-14769[ISPN-14769] - Replace completedExceptionFuture with failedFuture
+https://issues.redhat.com/browse/ISPN-14771[ISPN-14771] - Change PrivateMetadata in OffHeap to use a flag for presence instead of 4 bytes for length
+https://issues.redhat.com/browse/ISPN-14786[ISPN-14786] - Remove Wildfly modules
+https://issues.redhat.com/browse/ISPN-14787[ISPN-14787] - Remove Spring5 and Spring Boot 2 support
+https://issues.redhat.com/browse/ISPN-14789[ISPN-14789] - Fix port number in exam,ples of property files in SB starter docs
+https://issues.redhat.com/browse/ISPN-14792[ISPN-14792] - Remove Security Integration tests with WildFly&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;コンポーネントのアップグレード&quot;&gt;コンポーネントのアップグレード&lt;/h3&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;https://issues.redhat.com/browse/ISPN-14270[ISPN-14270] - Update to Spring Boot 3
+https://issues.redhat.com/browse/ISPN-14320[ISPN-14320] - Update Patternfly to 2022.14 Release
+https://issues.redhat.com/browse/ISPN-14342[ISPN-14342] - Apache SSHD 2.9.2
+https://issues.redhat.com/browse/ISPN-14343[ISPN-14343] - Jackson 2.14.1
+https://issues.redhat.com/browse/ISPN-14346[ISPN-14346] - Upgrade JGroups to 5.2.10.Final
+https://issues.redhat.com/browse/ISPN-14365[ISPN-14365] - JBoss Marshalling 2.1.1
+https://issues.redhat.com/browse/ISPN-14372[ISPN-14372] - Update Patternfly to 2022.15 Release
+https://issues.redhat.com/browse/ISPN-14401[ISPN-14401] - Protostream 4.6.0.Final
+https://issues.redhat.com/browse/ISPN-14437[ISPN-14437] - Update XStream to 1.4.20 to fix CVEs
+https://issues.redhat.com/browse/ISPN-14442[ISPN-14442] - Update to 2.19.0 log4j
+https://issues.redhat.com/browse/ISPN-14444[ISPN-14444] - Update Patternfly to 2022.16 Release
+https://issues.redhat.com/browse/ISPN-14448[ISPN-14448] - Surefire 3.0.0-M8
+https://issues.redhat.com/browse/ISPN-14462[ISPN-14462] - Upgrade assertj-core to 3.24.1
+https://issues.redhat.com/browse/ISPN-14476[ISPN-14476] - Bump JGroups to 5.2.12.Final
+https://issues.redhat.com/browse/ISPN-14513[ISPN-14513] - Upgrade Narayana to 5.13.1.Final
+https://issues.redhat.com/browse/ISPN-14523[ISPN-14523] - Log4j 2.20.0
+https://issues.redhat.com/browse/ISPN-14525[ISPN-14525] - Elytron 2.1.0.Final
+https://issues.redhat.com/browse/ISPN-14550[ISPN-14550] - Upgrade Patternfly Dependencies to Release 2023.01 (2023-02-02)
+https://issues.redhat.com/browse/ISPN-14553[ISPN-14553] - Spring and Spring Boot dependencies
+https://issues.redhat.com/browse/ISPN-14681[ISPN-14681] - Surefire 3.0.0
+https://issues.redhat.com/browse/ISPN-14694[ISPN-14694] - Upgrade Patternfly Dependencies to Release 2023.02 (2023-03-24)
+https://issues.redhat.com/browse/ISPN-14711[ISPN-14711] - Updates latests SB 3 and 2
+https://issues.redhat.com/browse/ISPN-14734[ISPN-14734] - Quarkus 3.0.0.CR2
+https://issues.redhat.com/browse/ISPN-14745[ISPN-14745] - Narayana 6.0.0.Final
+https://issues.redhat.com/browse/ISPN-14746[ISPN-14746] - Fabric8 kubernetes-client 6.5.1
+https://issues.redhat.com/browse/ISPN-14747[ISPN-14747] - jboss-threads 3.5.0.Final
+https://issues.redhat.com/browse/ISPN-14764[ISPN-14764] - Upgrade to plexus-utils 3.5.1&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;改善&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;https://issues.redhat.com/browse/ISPN-12106[ISPN-12106] - Add a refresh button in the cache detail
+https://issues.redhat.com/browse/ISPN-12223[ISPN-12223] - Confusing behaviour in case of joining nodes if a partition is DEGRADED
+https://issues.redhat.com/browse/ISPN-12484[ISPN-12484] - Explicit Locks should throw AvailabilityException during ClusterPartition instead of Timeouts
+https://issues.redhat.com/browse/ISPN-14092[ISPN-14092] - Cache Configuration Wizard Direct Link
+https://issues.redhat.com/browse/ISPN-14142[ISPN-14142] - Transport: add option to skip flow control
+https://issues.redhat.com/browse/ISPN-14204[ISPN-14204] - Standardize NYC and LON for XSite tests
+https://issues.redhat.com/browse/ISPN-14205[ISPN-14205] - InfinispanGenericContainer::getNetworkIpAddress fail fast if container is not running
+https://issues.redhat.com/browse/ISPN-14213[ISPN-14213] - [Docs]: Add a statement why we provide no performance numbers
+https://issues.redhat.com/browse/ISPN-14223[ISPN-14223] - Create Redis cache on first access
+https://issues.redhat.com/browse/ISPN-14244[ISPN-14244] - Don't pretty print XML/JSON by default
+https://issues.redhat.com/browse/ISPN-14246[ISPN-14246] - Query Statistics Tooltip
+https://issues.redhat.com/browse/ISPN-14247[ISPN-14247] - Drop snakeyaml dependency
+https://issues.redhat.com/browse/ISPN-14259[ISPN-14259] - Support benchmark CLI as a batch command
+https://issues.redhat.com/browse/ISPN-14322[ISPN-14322] - Number of owners is 2 by default
+https://issues.redhat.com/browse/ISPN-14327[ISPN-14327] - Overlays should be able to replace endpoint configuration
+https://issues.redhat.com/browse/ISPN-14341[ISPN-14341] - Allow injecting a MeterRegistry instance into Infinispan
+https://issues.redhat.com/browse/ISPN-14374[ISPN-14374] - Env variable for max_site_masters
+https://issues.redhat.com/browse/ISPN-14394[ISPN-14394] - Cache Configuration Wizard indexing startup mode
+https://issues.redhat.com/browse/ISPN-14415[ISPN-14415] - Expose REST endpoint to compare two cache configurations
+https://issues.redhat.com/browse/ISPN-14423[ISPN-14423] - Improve configuration parser error reporting
+https://issues.redhat.com/browse/ISPN-14451[ISPN-14451] - Set Hot Rod protocol version to AUTO via properties
+https://issues.redhat.com/browse/ISPN-14456[ISPN-14456] - Validation for delta (counter)
+https://issues.redhat.com/browse/ISPN-14467[ISPN-14467] - Suppressed exceptions should be sent over the wire
+https://issues.redhat.com/browse/ISPN-14472[ISPN-14472] - Maven Shade 3.4.1
+https://issues.redhat.com/browse/ISPN-14473[ISPN-14473] - Improve REST API error reporting
+https://issues.redhat.com/browse/ISPN-14474[ISPN-14474] - Add a transcoder for 'application/x-www-form-urlencoded'
+https://issues.redhat.com/browse/ISPN-14482[ISPN-14482] - Provide a single executor for all caches to execute indexing commands
+https://issues.redhat.com/browse/ISPN-14490[ISPN-14490] - Add blocking scheduled tasks to BlockingManager
+https://issues.redhat.com/browse/ISPN-14507[ISPN-14507] - [docs] REST updates
+https://issues.redhat.com/browse/ISPN-14517[ISPN-14517] - Generate test certificates from code
+https://issues.redhat.com/browse/ISPN-14528[ISPN-14528] - Configuration conversion should support templates
+https://issues.redhat.com/browse/ISPN-14552[ISPN-14552] - Statistics reset REST API
+https://issues.redhat.com/browse/ISPN-14570[ISPN-14570] - Protocol Parser should allow for code to be provided before the decode is invoked
+https://issues.redhat.com/browse/ISPN-14585[ISPN-14585] - Convert RESP endpoint to use parser generator
+https://issues.redhat.com/browse/ISPN-14680[ISPN-14680] - Reuse image in Server testsuite
+https://issues.redhat.com/browse/ISPN-14689[ISPN-14689] - Handle RESP SET optional arguments
+https://issues.redhat.com/browse/ISPN-14690[ISPN-14690] - Rework virtual thread detection and make it optional
+https://issues.redhat.com/browse/ISPN-14720[ISPN-14720] - RESP endpoint should be able to parse commands as enum
+https://issues.redhat.com/browse/ISPN-14722[ISPN-14722] - Expose auto/manual indexing mode
+https://issues.redhat.com/browse/ISPN-14723[ISPN-14723] - Allow to configure index sharding
+https://issues.redhat.com/browse/ISPN-14724[ISPN-14724] - Create a simple DSL to build Protocol Buffers schema
+https://issues.redhat.com/browse/ISPN-14735[ISPN-14735] - Move to JakartaEE packages
+https://issues.redhat.com/browse/ISPN-14761[ISPN-14761] - Add marshalling info in the entries tab for not protostream
+https://issues.redhat.com/browse/ISPN-14765[ISPN-14765] - Java serialization to JSON transcoder
+https://issues.redhat.com/browse/ISPN-14784[ISPN-14784] - Build with JDK 21&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Get them from our &lt;a href=&quot;https://infinispan.org/download/&quot;&gt;download page&lt;/a&gt;.]&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content><author><name>Tristan Tarrant</name></author><category term="release" /><category term="development" /><summary type="html">Infinispan 15.0.0.Dev01 marks the beginning of a new development cycle, and there are a number of notable changes that we are making that deserve a detailed post.</summary></entry><entry><title type="html">Infinispan 14.0.7.Final</title><link href="https://infinispan.org/blog/2023/03/13/infinispan-14" rel="alternate" type="text/html" title="Infinispan 14.0.7.Final" /><published>2023-03-13T00:00:00+00:00</published><updated>2023-03-13T00:00:00+00:00</updated><id>https://infinispan.org/blog/2023/03/13/infinispan-14.0.7.Final</id><content type="html" xml:base="https://infinispan.org/blog/2023/03/13/infinispan-14">&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We rarely do announcements for micro-releases, but 14.0.7.Final is a bit
+special, because it finally adds support for Spring 6 and Spring Boot 3.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;spring-framework-6-and-spring-boot-3&quot;&gt;Spring Framework 6 and Spring Boot 3&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We now ship components to support Spring Framework 6 and Spring Boot 3:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-xml hljs&quot; data-lang=&quot;xml&quot;&gt;&amp;lt;dependency&amp;gt;
+   &amp;lt;groupId&amp;gt;org.infinispan&amp;lt;/groupId&amp;gt;
+   &amp;lt;artifactId&amp;gt;infinispan-spring-boot3-starter-embedded&amp;lt;/artifactId&amp;gt;
+   &amp;lt;version&amp;gt;14.0.7.Final&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-xml hljs&quot; data-lang=&quot;xml&quot;&gt;&amp;lt;dependency&amp;gt;
+   &amp;lt;groupId&amp;gt;org.infinispan&amp;lt;/groupId&amp;gt;
+   &amp;lt;artifactId&amp;gt;infinispan-spring-boot3-starter-remote&amp;lt;/artifactId&amp;gt;
+   &amp;lt;version&amp;gt;14.0.7.Final&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;important-sifs-fixes&quot;&gt;Important SIFS fixes&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This release also includes very important fixes to the Soft-Index File Store
+(SIFS), which is our default file-store implementation: if you use it for
+your persistent caches you should really upgrade !&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;release-notes&quot;&gt;Release Notes&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;機能リクエスト&quot;&gt;機能リクエスト&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-13424&quot;&gt;ISPN-13424 - Spring 6
+integration&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14447&quot;&gt;ISPN-14447 - Handle RBAC on
+counters&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;バグ&quot;&gt;バグ&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-13877&quot;&gt;ISPN-13877 -
+NullPointerException in MetricsCollector.java&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14280&quot;&gt;ISPN-14280 - JSON parser
+doesn&amp;#39;t report error locations correctly&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14453&quot;&gt;ISPN-14453 - Ickle Queries
+should support BigInteger and BigDecimal&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14470&quot;&gt;ISPN-14470 - REST cache
+configuration comparison returns 204 for different caches&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14477&quot;&gt;ISPN-14477 - Concurrent Spring
+session access results in lost session attributes&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14479&quot;&gt;ISPN-14479 - SQL Cache store
+initiation fails on Sql type CHAR&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14491&quot;&gt;ISPN-14491 - Adding entries with
+putAll does not add metadata version - following replaceWithVersion will end
+with a timeout&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14495&quot;&gt;ISPN-14495 - RESP endpoint
+cannot parse request larger than packet size&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14496&quot;&gt;ISPN-14496 - Implement CONFIG
+command for RESP endpoint&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14497&quot;&gt;ISPN-14497 - RESP endpoint needs
+to release ByteBuf objects it creates&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14500&quot;&gt;ISPN-14500 - REST API blocking
+when retrieving keys and entries&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14509&quot;&gt;ISPN-14509 -
+JdbcStringBasedStore bulk operations don&amp;#39;t work when more than 128
+segments worth of values are provided&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14510&quot;&gt;ISPN-14510 -
+org.infinispan.server.cli.CliIT.testCliInteractive failure&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14511&quot;&gt;ISPN-14511 -
+RestOperations.testCounter HTTP_20 failure&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14512&quot;&gt;ISPN-14512 - Fix *-jakarta
+modules&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14516&quot;&gt;ISPN-14516 - Wrong versions in
+spring-boot-3-tests module&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14532&quot;&gt;ISPN-14532 - Multimap failing
+with huge value&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14535&quot;&gt;ISPN-14535 -
+GetCounterNameOperation can fail replay&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14536&quot;&gt;ISPN-14536 - Fix HotRod client
+commands failing on replay&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14540&quot;&gt;ISPN-14540 - DocsFix JSON
+example for Off-heap storage&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14542&quot;&gt;ISPN-14542 - AsyncStore needs to
+use SecurityAction when retrieving ComponentRegistry&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14543&quot;&gt;ISPN-14543 - Build resource
+filtering corrupts binary files&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14544&quot;&gt;ISPN-14544 - RESP endpoint cache
+shouldn&amp;#39;t require no expiration configured&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14545&quot;&gt;ISPN-14545 - SIFS Compactor does
+not properly shut down but the index thinks it is okay&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;タスク&quot;&gt;タスク&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14083&quot;&gt;ISPN-14083 - Infinispan cache
+configuration cheat sheet&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14492&quot;&gt;ISPN-14492 - Build Infinispan
+with JDK 17&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14541&quot;&gt;ISPN-14541 - Use Java
+serialization or JBoss Marshalling with cyclic objects&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;コンポーネントのアップグレード&quot;&gt;コンポーネントのアップグレード&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14270&quot;&gt;ISPN-14270 - Update to Spring
+Boot 3&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14444&quot;&gt;ISPN-14444 - Update Patternfly
+to 2022.16 Release&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14462&quot;&gt;ISPN-14462 - Upgrade
+assertj-core to 3.24.1&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14476&quot;&gt;ISPN-14476 - Bump JGroups to
+5.2.12.Final&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14513&quot;&gt;ISPN-14513 - Upgrade Narayana to
+5.13.1.Final&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14520&quot;&gt;ISPN-14520 - Upgrade Protostream
+to 4.6.1.Final&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14553&quot;&gt;ISPN-14553 - Spring and Spring
+Boot dependencies&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14565&quot;&gt;ISPN-14565 - Update Console to
+14.0.7.Final&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;改善&quot;&gt;改善&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14244&quot;&gt;ISPN-14244 - Don&amp;#8217;t pretty print
+XML/JSON by default&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14423&quot;&gt;ISPN-14423 - Improve
+configuration parser error reporting&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14472&quot;&gt;ISPN-14472 - Maven Shade 3.4.1&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14473&quot;&gt;ISPN-14473 - Improve REST API
+error reporting&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14507&quot;&gt;ISPN-14507 - REST updates&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14522&quot;&gt;ISPN-14522 - Migration of
+segmented cache stores&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-14528&quot;&gt;ISPN-14528 - Configuration
+conversion should support templates&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;リリースノート&quot;&gt;リリースノート&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can look at the
+&lt;a href=&quot;https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;amp;version=12352858&quot;&gt;release
+notes&lt;/a&gt; to see what has changed since our latest CR.]&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Get them from our &lt;a href=&quot;https://infinispan.org/download/&quot;&gt;download page&lt;/a&gt;.]&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content><author><name>Tristan Tarrant</name></author><category term="release" /><category term="development" /><summary type="html">We rarely do announcements for micro-releases, but 14.0.7.Final is a bit special, because it finally adds support for Spring 6 and Spring Boot 3.</summary></entry><entry><title type="html">Infinispan 14 supporting duplicates on multimap</title><link href="https://infinispan.org/blog/2022/10/02/infinispan-14-supporting-duplicates-on-multimap" rel="alternate" type="text/html" title="Infinispan 14 supporting duplicates on multimap" /><published>2022-10-02T00:00:00+00:00</published><updated>2022-10-02T00:00:00+00:00</updated><id>https://infinispan.org/blog/2022/10/02/infinispan-14-supporting-duplicates-on-multimap</id><content type="html" xml:base="https://infinispan.org/blog/2022/10/02/infinispan-14-supporting-duplicates-on-multimap">&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;親愛なるInfinispanのコミュニティへ&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;With the Infinispan 14 development release 04 multimap cache supports
+duplicates.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;By default &lt;code&gt;supportsDuplicates&lt;/code&gt; is set to false and can be configured during
+initialization.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The following is an example on how you can set multimap to support duplicate
+key-value pairs:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-java hljs&quot; data-lang=&quot;java&quot;&gt;public class MyEmbeddedMultimapCacheExmaple {
+
+public static void main(String[] args) {
+      DefaultCacheManager cacheManager = new DefaultCacheManager();
+
+      MultimapCacheManager multimapCacheManager = EmbeddedMultimapCacheManagerFactory.from(cacheManager);
+
+      multimapCacheManager.defineConfiguration(&quot;multimap&quot;, new ConfigurationBuilder().build());
+
+      // Get the MultimapCache with duplicates support
+      MultimapCache&amp;lt;String, String&amp;gt; multimap = multimapCacheManager.get(&quot;multimap&quot;, true);
+
+      // Store duplicate values in a key
+      CompletableFuture.allOf(
+            multimap.put(&quot;key&quot;, &quot;value1&quot;),
+            multimap.put(&quot;key&quot;, &quot;value1&quot;),
+            multimap.put(&quot;key&quot;, &quot;value3&quot;))
+            .whenComplete((nil, ex) -&amp;gt; {
+               // Retrieve the values
+               multimap.get(&quot;key&quot;).whenComplete((values, ex2) -&amp;gt; {
+                  // Print them out
+                  System.out.println(values);
+
+                  System.out.println(&quot;Multimap size:&quot; + values.size());
+                  // Stop the cache manager and release all resources
+                  cacheManager.stop();
+               });
+            });
+   }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-none hljs&quot;&gt;[value1, value1, value3]
+Multimap size: 3&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;further-reading&quot;&gt;Further reading&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Check out for available documentation
+&lt;a href=&quot;https://infinispan.org/docs/14.0.x/titles/embedding/embedding.html#multimap-cache&quot;&gt;Infinispan
+MultimapCache Guide&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content><author><name>miador</name></author><category term="multimap" /><summary type="html">親愛なるInfinispanのコミュニティへ</summary></entry><entry><title type="html">Infinispan 14.0.0.Final</title><link href="https://infinispan.org/blog/2022/09/29/infinispan-14" rel="alternate" type="text/html" title="Infinispan 14.0.0.Final" /><published>2022-09-29T12:00:00+00:00</published><updated>2022-09-29T12:00:00+00:00</updated><id>https://infinispan.org/blog/2022/09/29/infinispan-14.0.0.Final</id><content type="html" xml:base="https://infinispan.org/blog/2022/09/29/infinispan-14">&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Flying saucers are probably the most common type of UFO. They are sleek and
+shiny and, most importantly, they come in peace bringing lots of goodies
+from outer space! Just like Infinispan 14! Oh, and the fact that it’s also
+the
+&lt;a href=&quot;https://untappd.com/b/kinnegar-brewing-flying-saucer-foreign-export-stout/1415125&quot;&gt;name
+of a beer&lt;/a&gt; is no sheer coincidence.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/images/blog/flying-saucer.jpg&quot; alt=&quot;Flying Saucer&quot; width=&quot;1230&quot; height=&quot;1220&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;jdk-requirements&quot;&gt;JDK requirements&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You will need at least JDK 11 in order to use Infinispan 14. Infinispan also
+supports JDK 17 LTS and the recently released JDK 19.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;jakarta-ee&quot;&gt;Jakarta EE&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We now ship &lt;a href=&quot;https://jakarta.ee&quot;&gt;Jakarta EE&lt;/a&gt; variants of most of our modules:
+just append &lt;code&gt;-jakarta&lt;/code&gt; to the artifact name:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-xml hljs&quot; data-lang=&quot;xml&quot;&gt;&amp;lt;dependency&amp;gt;
+   &amp;lt;groupId&amp;gt;org.infinispan&amp;lt;/groupId&amp;gt;
+   &amp;lt;artifactId&amp;gt;infinispan-core-jakarta&amp;lt;/artifactId&amp;gt;
+   &amp;lt;version&amp;gt;14.0.0.Final&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;core&quot;&gt;Core&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Cluster Listener using &lt;code&gt;includeCurrentState`&lt;/code&gt; will have better memory and
+performance performance. Every key no longer requires calculating its
+segment while iterating and memory is freed much earlier and is closed as
+each segment completes transfer&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;State Transfer reduces how long memory is required to be held therefore
+reducing required memory overheads when configuring your server.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;State transfer metrics are exposed through JMX. Expose the number of
+segments during transfer.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Size method when invoked on a cache has been optimized in various cases to
+be an &lt;code&gt;O(1)&lt;/code&gt; operation instead of &lt;code&gt;O(N)&lt;/code&gt;. Involves if expiration and if
+stores are configured, please check
+&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-9366&quot;&gt;ISPN-9366&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reduced some cases of blocking threads being over utilized, therefore
+reducing how large the blocking thread pool would need to grow.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dynamic RBAC: a dynamic, clustered role mapper that can be modified at
+runtime to grant/deny access to specific principals.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;query&quot;&gt;Query&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Native Infinispan indexing annotations which finally replace the legacy
+Hibernate Query annotations we&amp;#8217;ve used in past versions (see
+&lt;a href=&quot;https://infinispan.org/blog/2022/06/14/infinispan-14-indexing-query-news&quot; class=&quot;bare&quot;&gt;https://infinispan.org/blog/2022/06/14/infinispan-14-indexing-query-news&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Index startup mode to determine what happens to indexes on cache start (see
+&lt;a href=&quot;https://infinispan.org/blog/2022/06/14/infinispan-14-indexing-query-news&quot; class=&quot;bare&quot;&gt;https://infinispan.org/blog/2022/06/14/infinispan-14-indexing-query-news&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dynamic index schema updates allow you to evolve your schema at runtime with
+near-zero impact to your queries (see
+&lt;a href=&quot;https://infinispan.org/blog/2022/06/14/infinispan-14-indexing-query-news&quot; class=&quot;bare&quot;&gt;https://infinispan.org/blog/2022/06/14/infinispan-14-indexing-query-news&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Support Protobuf&amp;#8217;s &lt;code&gt;oneof&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We improved the hybrid query system&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Support normalizers with the HotRod client&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;永続性&quot;&gt;永続性&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;SoftIndexFileStore&lt;/code&gt; (default file store) segmentation performance has been
+improved significantly. This also reduces the number of Index segments
+required which reduces the number of open files and threads required on the
+server.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;JDBCStringBasedStore&lt;/code&gt; no longer requires configuring the database min and
+max version as this is dynamically configured when checking the JDBC
+connection.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;JPAStore&lt;/code&gt; has been removed. It had been deprecated for quite a while, but
+the move to support Hibernate 6 prompted its removal as &lt;code&gt;JPAStore&lt;/code&gt; only
+worked with Hibernate 5.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;hot-rod-client&quot;&gt;Hot Rod client&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A new Hot Rod client with a completely redesigned API.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sync (blocking), Async (non-blocking) and
+&lt;a href=&quot;https://smallrye.io/smallrye-mutiny/&quot;&gt;Mutiny&lt;/a&gt; sub-APIs that fit with your
+programming model of choice.&lt;/p&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-java hljs&quot; data-lang=&quot;java&quot;&gt;try (SyncContainer infinispan = Infinispan.create(&quot;hotrod://localhost&quot;)) {
+    // Sync
+    SyncCache&amp;lt;String, String&amp;gt; mycache = infinispan.sync().caches().get(&quot;mycache&quot;);
+    mycache.set(&quot;key&quot;, &quot;value&quot;);
+    String value = mycache.get(&quot;key&quot;);
+    // set with options
+    mycache.set(&quot;key&quot;, &quot;anothervalue&quot;, writeOptions().lifespan(Duration.ofHours(1)).timeout(Duration.ofMillis(500)).build());
+
+    // Async
+    infinispan.async().caches()
+    .get(&quot;mycache&quot;).thenApply(c -&amp;gt;
+        c.set(&quot;key&quot;, &quot;value&quot;).thenApply(ignore -&amp;gt;
+            c.get(&quot;key&quot;).thenApply(value -&amp;gt;
+                c.set(&quot;key&quot;, &quot;anothervalue&quot;,
+                writeOptions().lifespan(Duration.ofHours(1)).timeout(Duration.ofMillis(500)).build()))
+            ));
+
+    // Mutiny
+    infinispan.mutiny().caches()
+    .get(&quot;mycache&quot;).map(c -&amp;gt;
+        c.query(&quot;age &amp;gt; :age&quot;).param(&quot;age&quot;, 80).skip(5).limit(10).find())
+            .subscribe().with(System.out::println);
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;サーバ&quot;&gt;サーバ&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;RESP endpoint: a Redis-compatible endpoint connector (implementing the RESP
+3 protocol) with support for a subset of commands: &lt;code&gt;set&lt;/code&gt;, &lt;code&gt;get&lt;/code&gt;, &lt;code&gt;del&lt;/code&gt;,
+&lt;code&gt;mget&lt;/code&gt;, &lt;code&gt;mset&lt;/code&gt;, &lt;code&gt;incr&lt;/code&gt;, &lt;code&gt;decr&lt;/code&gt;, &lt;code&gt;publish&lt;/code&gt;, &lt;code&gt;subscribe&lt;/code&gt;, &lt;code&gt;auth&lt;/code&gt;, &lt;code&gt;ping&lt;/code&gt;. The
+connector integrates with our security and protocol auto-detections, so that
+it is easily usable from our single-port endpoint. The implemented commands
+should be enough for typical caching usage. If you would like to see more,
+reach out via our community.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you need to use
+&lt;a href=&quot;https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips&quot;&gt;FIPS&lt;/a&gt;,
+it&amp;#8217;s now possible to use
+&lt;a href=&quot;https://docs.oracle.com/en/java/javase/17/security/pkcs11-reference-guide1.html&quot;&gt;PKCS#11
+keystores&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Masked and external credentials, to avoid the use of secrets in your
+configuration files&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Custom security providers, such as BouncyCastle, can now be used. Just drop
+your provider implementation in the &lt;code&gt;server/lib&lt;/code&gt; and configure:&lt;/p&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-xml hljs&quot; data-lang=&quot;xml&quot;&gt;&amp;lt;ssl&amp;gt;
+    &amp;lt;keystore path=&quot;server.bcfks&quot; password=&quot;secret&quot; alias=&quot;server&quot; provider=&quot;BC&quot; type=&quot;BCFKS&quot;/&amp;gt;
+&amp;lt;/ssl&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Improved TLS engine configuration, allowing fine-grained ciphersuites
+selection for both TLSv1.3 and TLSv1.2:&lt;/p&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-xml hljs&quot; data-lang=&quot;xml&quot;&gt;&amp;lt;engine enabled-protocols=&quot;TLSv1.3 TLSv1.2&quot; enabled-ciphersuites=&quot;TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384&quot; enabled-ciphersuites-tls13=&quot;TLS_AES_256_GCM_SHA384&quot;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Endpoint worker threads configuration has been removed. With the rewrite in
+Infinispan 13 to utilize non blocking threads, this configuration was unused
+and deprecated.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.oracle.com/en/java/javase/17/management/monitoring-and-management-using-jmx-technology.html&quot;&gt;JMX&lt;/a&gt;
+integration with our security realms for authentication and authorization.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Experimental &lt;a href=&quot;https://kernel.dk/io_uring.pdf&quot;&gt;IO_Uring&lt;/a&gt; support&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;REST endpoints expose distribution information for caches and clusters. For
+more information, see
+&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-12192&quot;&gt;ISPN-12192&lt;/a&gt; and
+&lt;a href=&quot;https://issues.redhat.com/browse/ISPN-12193&quot;&gt;ISPN-12193&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;コンソール&quot;&gt;コンソール&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Cache creation wizard. See our recent
+&lt;a href=&quot;https://infinispan.org/blog/2022/09/12/infinispan-14-console-wizard&quot;&gt;blog
+post&lt;/a&gt; about it&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;cli&quot;&gt;CLI&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;List cache entries, including metadata, using different formats (table,
+JSON, CSV)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Configuration converter&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Schema command to upload, delete, modify protobuf schema&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Index command to manage indexes&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Client certificate authentication&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;image&quot;&gt;Image&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Now based upon
+&lt;a href=&quot;https://catalog.redhat.com/software/containers/ubi8/openjdk-17/618bdbf34ae3739687568813&quot;&gt;ubi8/openjdk-17-runtime&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Images provided for both amd64 and arm64 architectures&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;SERVER_LIBS&lt;/code&gt; environment variable added to allow dependencies to be
+downloaded prior to server startup&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;code&gt;config-generator&lt;/code&gt; has been removed. Its functionality can be replaced
+by using configuration overlays&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;オペレータ&quot;&gt;オペレータ&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Multi-Operand support, which means a single operator can managed different
+versions of Infinispan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;FIPS support&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Custom user configuration refactored to allow greater control of Infinispan
+configuration&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Image based upon
+&lt;a href=&quot;https://catalog.redhat.com/software/containers/ubi9/ubi-micro/615bdf943f6014fa45ae1b58&quot;&gt;ubi9/ubi-micro&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bundle provided for both amd64 and arm64 architectures&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Admin service is now headless&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;hibernate-orm-second-level-cache&quot;&gt;Hibernate ORM second-level cache&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Hibernate caching implementation supporting Hibernate 6. Note that Hibernate
+5 caching support is no longer provided due to Jakarta EE migration.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;observability&quot;&gt;Observability&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Integration with OpenTelemetry tracing (see
+&lt;a href=&quot;https://infinispan.org/blog/2022/07/18/infinispan-14-opentelemetry-tracing&quot; class=&quot;bare&quot;&gt;https://infinispan.org/blog/2022/07/18/infinispan-14-opentelemetry-tracing&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Client / server request tracing correlations on both Hot Rod and REST APIs
+(see
+&lt;a href=&quot;https://infinispan.org/blog/2022/07/18/infinispan-14-opentelemetry-tracing&quot; class=&quot;bare&quot;&gt;https://infinispan.org/blog/2022/07/18/infinispan-14-opentelemetry-tracing&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Integration with Micrometer to produce Prometheus and OpenMetrics metrics&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;その他&quot;&gt;その他&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Infinispan Quarkus server now supports the same command line arguments as
+the normal JVM Infinispan server. In addition the Infinispan Quarkus native
+binary can be used in an existing unzipped Infinispan Server zip file for
+ease of use.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;ドキュメンテーション&quot;&gt;ドキュメンテーション&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Many improvements, updates and fixes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;リリースノート&quot;&gt;リリースノート&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can look at the
+&lt;a href=&quot;https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;amp;version=12352858&quot;&gt;release
+notes&lt;/a&gt; to see what has changed since our latest CR.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Get them from our &lt;a href=&quot;https://infinispan.org/download/&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content><author><name>Tristan Tarrant</name></author><category term="release" /><category term="development" /><summary type="html">Flying saucers are probably the most common type of UFO. They are sleek and shiny and, most importantly, they come in peace bringing lots of goodies from outer space! Just like Infinispan 14! Oh, and the fact that it’s also the name of a beer is no sheer coincidence.</summary></entry><entry><title type="html">Infinispan Node.js client supports query</title><link href="https://infinispan.org/blog/2022/09/25/infinispan-js-client" rel="alternate" type="text/html" title="Infinispan Node.js client supports query" /><published>2022-09-25T12:00:00+00:00</published><updated>2022-09-25T12:00:00+00:00</updated><id>https://infinispan.org/blog/2022/09/25/nodejs-010-query</id><content type="html" xml:base="https://infinispan.org/blog/2022/09/25/infinispan-js-client">&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;node-js-client-0-10-0&quot;&gt;Node.js Client 0.10.0&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Infinispan Node.js client version 0.10.0 was released last week with added
+support of query with &lt;code&gt;application/x-protostream&lt;/code&gt; data format.  Up until
+now, our Node.js client only supported &lt;code&gt;text/plain&lt;/code&gt; and &lt;code&gt;application/json&lt;/code&gt;
+data formats.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;applicationx-protostream-data-format&quot;&gt;&lt;code&gt;application/x-protostream&lt;/code&gt; data format&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can now use the &lt;code&gt;application/x-protostream&lt;/code&gt; data format for all the Hot
+Rod operations supported in js-client. To make the Node.js client backwards
+compatible, the client still treats key/value pairs as String by default.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;query&quot;&gt;query&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Hot Rod js-client now also supports query method to perform queries on
+caches. For more information about querying infinispan caches, refer to
+&lt;a href=&quot;https://infinispan.org/docs/stable/titles/query/query.html&quot;&gt;the query
+documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;admonitionblock important&quot;&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class=&quot;icon&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;Important&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;
+You must set the data-format as &lt;code&gt;application/x-protostream&lt;/code&gt; to perform
+queries on your cache.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For the working code example of the query feature, please refer to
+&lt;a href=&quot;https://infinispan.org/docs/hotrod-clients/js/latest/js_client.html#_working_with_queries&quot;&gt;this&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;to-go-further&quot;&gt;To go further&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Full client documentation is now available in the
+&lt;a href=&quot;https://infinispan.org/docs/hotrod-clients/js/latest/js_client.html&quot;&gt;Hot Rod
+JS Client Guide&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Jira tracker for this client is available
+&lt;a href=&quot;https://issues.redhat.com/projects/HRJS&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content><author><name>neerajg</name></author><category term="hotrod" /><category term="Node.js" /><category term="client" /><category term="javascript" /><category term="release" /><category term="Protobuf" /><category term="query" /><summary type="html">Node.js Client 0.10.0</summary></entry><entry><title type="html">Creating cache with wizard - Infinispan 14</title><link href="https://infinispan.org/blog/2022/09/13/infinispan-14-console-wizard" rel="alternate" type="text/html" title="Creating cache with wizard - Infinispan 14" /><published>2022-09-13T00:00:00+00:00</published><updated>2022-09-13T00:00:00+00:00</updated><id>https://infinispan.org/blog/2022/09/13/infinispan-14-console-wizard</id><content type="html" xml:base="https://infinispan.org/blog/2022/09/13/infinispan-14-console-wizard">&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Dear Infinispan Community,&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;An effective and concise way to create a cache with Infinispan Console is
+here.  Creating a cache will now be effortless and user-centric with a
+wizard based intuitive approach.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;With the series of prompts, now user can create a cache just by selecting
+configuration.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;choose-your-method&quot;&gt;Choose your method&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Enter a unique name for the cache and choose your desired way to create it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;olist arabic&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;Two options to create a cache are:&lt;/div&gt;
+&lt;ol class=&quot;arabic&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;Manually Adding JSON/YAML/XML configuration&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wizard based selection of configuration&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;/assets/images/blog/cache-wizard/wizard1.png&quot;&gt;&lt;img src=&quot;/assets/images/blog/cache-wizard/wizard1.png&quot; alt=&quot;Getting started&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If the user already has a JSON/YAML/XML file then it is preferable to go
+with the first option and directly edit the file.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;/assets/images/blog/cache-wizard/wizard2.png&quot;&gt;&lt;img src=&quot;/assets/images/blog/cache-wizard/wizard2.png&quot; alt=&quot;Add configuration&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;But in case you are looking to create a cache from scratch then Wizard based
+cache creation is the best way to go ahead. This blog talks in detail about
+the Wizard based method.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;build-configuration&quot;&gt;Build configuration&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;basic-options&quot;&gt;Basic options&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Selecting “Build cache configuration” will land on the below page containing
+a series of prompts or options to create your cache.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;/assets/images/blog/cache-wizard/wizard3.png&quot;&gt;&lt;img src=&quot;/assets/images/blog/cache-wizard/wizard3.png&quot; alt=&quot;Basic options&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Every option has a default value selected beforehand with tooltips providing
+brief information about each option.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;/assets/images/blog/cache-wizard/wizard11.png&quot;&gt;&lt;img src=&quot;/assets/images/blog/cache-wizard/wizard11.png&quot; alt=&quot;Tooltip&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;infinispan-capabilities&quot;&gt;Infinispan capabilities&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In this step, we select features and configure basic options for the cache.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The following features can be selected:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;olist arabic&quot;&gt;
+&lt;ol class=&quot;arabic&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;Bounded&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Indexed&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Authorization&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;永続性&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Transactional&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Backups&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;/assets/images/blog/cache-wizard/wizard4.png&quot;&gt;&lt;img src=&quot;/assets/images/blog/cache-wizard/wizard4.png&quot; alt=&quot;Features&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Selecting a feature will provide basic options for that feature. Some fields
+are marked mandatory in order to move to the next step.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If the required details are not filled in, a warning will be displayed at
+the top.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;/assets/images/blog/cache-wizard/wizard5.1.png&quot;&gt;&lt;img src=&quot;/assets/images/blog/cache-wizard/wizard5.1.png&quot; alt=&quot;Feature Bounded warning&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;After providing the required details, you can move to the next step.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;/assets/images/blog/cache-wizard/wizard5.2.png&quot;&gt;&lt;img src=&quot;/assets/images/blog/cache-wizard/wizard5.2.png&quot; alt=&quot;Feature Bounded&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;More than one feature can be selected and each feature&amp;#8217;s availability is
+checked. If the feature is disabled, a warning is displayed and the user can
+not go ahead. In such a scenario, the user can either remove that feature
+completely or make changes to the server.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;/assets/images/blog/cache-wizard/wizard6.png&quot;&gt;&lt;img src=&quot;/assets/images/blog/cache-wizard/wizard6.png&quot; alt=&quot;Invalid Feature&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;cache-tuning&quot;&gt;Cache tuning&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Last step in configuring the cache allows the user to tweak advanced
+options.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;/assets/images/blog/cache-wizard/wizard7.png&quot;&gt;&lt;img src=&quot;/assets/images/blog/cache-wizard/wizard7.png&quot; alt=&quot;Cache tuning&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;On selecting a certain feature, its advanced configurations can be added.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;/assets/images/blog/cache-wizard/wizard8.png&quot;&gt;&lt;img src=&quot;/assets/images/blog/cache-wizard/wizard8.png&quot; alt=&quot;Feature advance option&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;review-configuration&quot;&gt;Review configuration&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The configurations selected earlier are reviewed.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;/assets/images/blog/cache-wizard/wizard9.png&quot;&gt;&lt;img src=&quot;/assets/images/blog/cache-wizard/wizard9.png&quot; alt=&quot;Review Config&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The JSON configuration is presented inside a code editor, which can be
+modified by the user.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Cache will be created on clicking the &quot;Create&quot; button and user will land on
+the Data distribution page.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The user can also download this configuration in JSON, YAML, or XML format.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;/assets/images/blog/cache-wizard/wizard10.png&quot;&gt;&lt;img src=&quot;/assets/images/blog/cache-wizard/wizard10.png&quot; alt=&quot;Download cache config&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content><author><name>dpanshug</name></author><category term="console" /><summary type="html">Dear Infinispan Community,</summary></entry><entry><title type="html">Infinispan 14.0.0.CR1</title><link href="https://infinispan.org/blog/2022/08/09/infinispan-14" rel="alternate" type="text/html" title="Infinispan 14.0.0.CR1" /><published>2022-08-09T12:00:00+00:00</published><updated>2022-08-09T12:00:00+00:00</updated><id>https://infinispan.org/blog/2022/08/09/infinispan-14.0.0.CR1</id><content type="html" xml:base="https://infinispan.org/blog/2022/08/09/infinispan-14">&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;親愛なるInfinispanコミュニティへ&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Infinispan 14 candidate release 1 is here! Here is your chance to verify
+your application against our latest and greatest and tell us if things are
+working as expected or if there are any showstoppers we should address
+before tagging the final release.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;aarch64-images&quot;&gt;AArch64 images&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We are now building images for AArch64 (aka ARM64) by default, which allow
+you to run Infinispan on Apple Silicon, Amazon Graviton and other ARM CPU
+platforms without resorting to emulation.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;protobuf-oneof-support&quot;&gt;Protobuf oneof support&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Protostream has been updated to support ProtoBuf 3&amp;#8217;s &lt;code&gt;oneof&lt;/code&gt; keyword.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;コンソール&quot;&gt;コンソール&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;When creating a new cache, it&amp;#8217;s now possible to choose the key/value types
+from the list of available protobuf schemas.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;cli&quot;&gt;CLI&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The CLI can now connect to a server secured with client certificate
+authentication. The &lt;code&gt;config&lt;/code&gt; command now supports the &lt;code&gt;keystore&lt;/code&gt; and
+&lt;code&gt;keystore-password&lt;/code&gt; to persist the client certificate
+configuration. Additionally, the new &lt;code&gt;config reset&lt;/code&gt; command offers a quick
+way to reset all configuration properties to their default values.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;リリースノート&quot;&gt;リリースノート&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can look at the
+&lt;a href=&quot;https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12310799&amp;amp;version=12391864&quot;&gt;release
+notes&lt;/a&gt; to see what has changed.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Get them from our &lt;a href=&quot;https://infinispan.org/download/&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content><author><name>Tristan Tarrant</name></author><category term="release" /><category term="development" /><summary type="html">親愛なるInfinispanコミュニティへ</summary></entry></feed>
