@@ -21,7 +21,7 @@ on:
 jobs:
   build-tmx:
     name: Build tmx
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -45,7 +45,7 @@ jobs:
   deploy-ja:
     name: Deploy Japanese translation to GitHub pages
     # Deploy a localized site to the GitHub pages
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         # Checkout target revision from git repository
